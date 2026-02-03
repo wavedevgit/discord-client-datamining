@@ -8,25 +8,25 @@ import java.io.Closeable;
 public final class AppLifecycleIntegration implements io.sentry.k1, Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final io.sentry.util.a f28365d = new io.sentry.util.a();
+    private final io.sentry.util.a f28726d = new io.sentry.util.a();
 
     /* renamed from: e  reason: collision with root package name */
-    volatile z1 f28366e;
+    volatile z1 f28727e;
 
     /* renamed from: i  reason: collision with root package name */
-    private SentryAndroidOptions f28367i;
+    private SentryAndroidOptions f28728i;
 
     private void a() {
-        io.sentry.a1 a10 = this.f28365d.a();
+        io.sentry.a1 a10 = this.f28726d.a();
         try {
-            z1 z1Var = this.f28366e;
-            this.f28366e = null;
+            z1 z1Var = this.f28727e;
+            this.f28727e = null;
             if (a10 != null) {
                 a10.close();
             }
             if (z1Var != null) {
                 w0.E().N(z1Var);
-                SentryAndroidOptions sentryAndroidOptions = this.f28367i;
+                SentryAndroidOptions sentryAndroidOptions = this.f28728i;
                 if (sentryAndroidOptions != null) {
                     sentryAndroidOptions.getLogger().c(SentryLevel.DEBUG, "AppLifecycleIntegration removed.", new Object[0]);
                 }
@@ -46,7 +46,7 @@ public final class AppLifecycleIntegration implements io.sentry.k1, Closeable {
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
         a();
-        w0.E().D0();
+        w0.E().C0();
     }
 
     @Override // io.sentry.k1
@@ -59,23 +59,23 @@ public final class AppLifecycleIntegration implements io.sentry.k1, Closeable {
             sentryAndroidOptions = null;
         }
         SentryAndroidOptions sentryAndroidOptions2 = (SentryAndroidOptions) io.sentry.util.y.c(sentryAndroidOptions, "SentryAndroidOptions is required");
-        this.f28367i = sentryAndroidOptions2;
+        this.f28728i = sentryAndroidOptions2;
         ILogger logger = sentryAndroidOptions2.getLogger();
         SentryLevel sentryLevel = SentryLevel.DEBUG;
-        logger.c(sentryLevel, "enableSessionTracking enabled: %s", Boolean.valueOf(this.f28367i.isEnableAutoSessionTracking()));
-        this.f28367i.getLogger().c(sentryLevel, "enableAppLifecycleBreadcrumbs enabled: %s", Boolean.valueOf(this.f28367i.isEnableAppLifecycleBreadcrumbs()));
-        if (this.f28367i.isEnableAutoSessionTracking() || this.f28367i.isEnableAppLifecycleBreadcrumbs()) {
-            io.sentry.a1 a10 = this.f28365d.a();
+        logger.c(sentryLevel, "enableSessionTracking enabled: %s", Boolean.valueOf(this.f28728i.isEnableAutoSessionTracking()));
+        this.f28728i.getLogger().c(sentryLevel, "enableAppLifecycleBreadcrumbs enabled: %s", Boolean.valueOf(this.f28728i.isEnableAppLifecycleBreadcrumbs()));
+        if (this.f28728i.isEnableAutoSessionTracking() || this.f28728i.isEnableAppLifecycleBreadcrumbs()) {
+            io.sentry.a1 a10 = this.f28726d.a();
             try {
-                if (this.f28366e != null) {
+                if (this.f28727e != null) {
                     if (a10 != null) {
                         a10.close();
                         return;
                     }
                     return;
                 }
-                this.f28366e = new z1(w0Var, this.f28367i.getSessionTrackingIntervalMillis(), this.f28367i.isEnableAutoSessionTracking(), this.f28367i.isEnableAppLifecycleBreadcrumbs());
-                w0.E().n(this.f28366e);
+                this.f28727e = new z1(w0Var, this.f28728i.getSessionTrackingIntervalMillis(), this.f28728i.isEnableAutoSessionTracking(), this.f28728i.isEnableAppLifecycleBreadcrumbs());
+                w0.E().n(this.f28727e);
                 if (a10 != null) {
                     a10.close();
                 }

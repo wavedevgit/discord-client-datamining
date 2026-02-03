@@ -8,14 +8,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var10;
     var _closure1_slot1 = var9;
     var3 = function arg0() {
-        _fun16641: for (var _fun16641_ip = 0;;) switch (_fun16641_ip) {
+        _fun16642: for (var _fun16642_ip = 0;;) switch (_fun16642_ip) {
             case 0:
                 var3 = arg0;
                 var1 = 'number';
                 var0 = typeof var3;
                 if (!(var1 !== var0)) {
-                    _fun16641_ip = 38;
-                    continue _fun16641
+                    _fun16642_ip = 38;
+                    continue _fun16642
                 }
             case 14:
                 var0 = global;
@@ -24,8 +24,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.bind(var1)(var3);
                 var0 = var3;
                 if (!var1) {
-                    _fun16641_ip = 56;
-                    continue _fun16641
+                    _fun16642_ip = 56;
+                    continue _fun16642
                 }
             case 38:
                 var2 = _closure1_slot2;

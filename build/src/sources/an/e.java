@@ -1,154 +1,194 @@
 package an;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.util.SparseArray;
+import android.view.View;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Set;
+import kotlin.Pair;
+import kotlin.collections.CollectionsKt;
 import kotlin.collections.o0;
+import kotlin.collections.x0;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Lambda;
+import kotlin.jvm.internal.TypeIntrinsics;
+import kotlin.sequences.k;
+import lr.v;
+import org.jetbrains.annotations.NotNull;
+import ym.n;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f729a;
+    private final Map f726a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f730b;
+    private final zm.f f727b;
 
-    /* renamed from: c  reason: collision with root package name */
-    private final String f731c;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class b extends Lambda implements Function1 {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final boolean f732d;
+        /* renamed from: d  reason: collision with root package name */
+        public static final b f729d = new b();
 
-    /* renamed from: e  reason: collision with root package name */
-    private final Function1 f733e;
+        b() {
+            super(1);
+        }
+
+        @Override // kotlin.jvm.functions.Function1
+        /* renamed from: a */
+        public final String invoke(n it) {
+            Intrinsics.checkNotNullParameter(it, "it");
+            return it.c();
+        }
+    }
+
+    public e(Map viewStates) {
+        Intrinsics.checkNotNullParameter(viewStates, "viewStates");
+        this.f726a = viewStates;
+        this.f727b = new zm.f();
+    }
+
+    private final void e(Collection collection) {
+        CollectionsKt.I(this.f726a.keySet(), x0.j(this.f726a.keySet(), collection));
+        this.f727b.j(collection);
+    }
+
+    public final void a(String key, u3.f parentOwner) {
+        Intrinsics.checkNotNullParameter(key, "key");
+        Intrinsics.checkNotNullParameter(parentOwner, "parentOwner");
+        this.f727b.f(key, parentOwner);
+    }
+
+    public final void b() {
+        this.f727b.g();
+    }
+
+    public final Map c() {
+        return this.f726a;
+    }
+
+    public final void d(Collection retaining) {
+        Intrinsics.checkNotNullParameter(retaining, "retaining");
+        Collection<n> collection = retaining;
+        ArrayList arrayList = new ArrayList(CollectionsKt.w(collection, 10));
+        for (n nVar : collection) {
+            arrayList.add(nVar.c());
+        }
+        e(arrayList);
+    }
+
+    public final void f(a from) {
+        Intrinsics.checkNotNullParameter(from, "from");
+        this.f726a.clear();
+        this.f726a.putAll(from.a());
+    }
+
+    public final a g() {
+        return new a(this);
+    }
+
+    public final void h(Collection retainedRenderings, View view, View newView) {
+        String b10;
+        String b11;
+        Intrinsics.checkNotNullParameter(retainedRenderings, "retainedRenderings");
+        Intrinsics.checkNotNullParameter(newView, "newView");
+        b10 = f.b(newView);
+        Set a02 = k.a0(k.R(CollectionsKt.b0(retainedRenderings), b.f729d));
+        if (retainedRenderings.size() == a02.size()) {
+            this.f727b.h(newView, b10);
+            g gVar = (g) this.f726a.remove(b10);
+            if (gVar != null) {
+                newView.restoreHierarchyState(gVar.a());
+            }
+            if (view != null) {
+                b11 = f.b(view);
+                if (!a02.contains(b11)) {
+                    b11 = null;
+                }
+                if (b11 != null) {
+                    SparseArray<Parcelable> sparseArray = new SparseArray<>();
+                    view.saveHierarchyState(sparseArray);
+                    Map c10 = c();
+                    Pair a10 = v.a(b11, new g(b11, sparseArray));
+                    c10.put(a10.c(), a10.d());
+                    this.f727b.m(b11);
+                }
+            }
+            e(x0.m(a02, b10));
+            return;
+        }
+        throw new IllegalArgumentException(("Duplicate entries not allowed in " + retainedRenderings + '.').toString());
+    }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public enum a {
-        POSITIVE,
-        NEGATIVE,
-        NEUTRAL
-    }
+    public static final class a implements Parcelable {
+        @NotNull
+        public static final C0012a CREATOR = new C0012a(null);
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static abstract class b {
+        /* renamed from: d  reason: collision with root package name */
+        private final Map f728d;
 
+        /* renamed from: an.e$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class a extends b {
-
-            /* renamed from: a  reason: collision with root package name */
-            private final a f738a;
-
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            public a(a button) {
-                super(null);
-                Intrinsics.checkNotNullParameter(button, "button");
-                this.f738a = button;
+        public static final class C0012a implements Parcelable.Creator {
+            public /* synthetic */ C0012a(DefaultConstructorMarker defaultConstructorMarker) {
+                this();
             }
 
-            public boolean equals(Object obj) {
-                if (this == obj) {
-                    return true;
-                }
-                if ((obj instanceof a) && this.f738a == ((a) obj).f738a) {
-                    return true;
-                }
-                return false;
+            @Override // android.os.Parcelable.Creator
+            /* renamed from: a */
+            public a createFromParcel(Parcel source) {
+                Intrinsics.checkNotNullParameter(source, "source");
+                return new a(source);
             }
 
-            public int hashCode() {
-                return this.f738a.hashCode();
+            @Override // android.os.Parcelable.Creator
+            /* renamed from: b */
+            public a[] newArray(int i10) {
+                return new a[i10];
             }
 
-            public String toString() {
-                return "ButtonClicked(button=" + this.f738a + ')';
+            private C0012a() {
             }
         }
 
-        /* renamed from: an.e$b$b  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0014b extends b {
-
-            /* renamed from: a  reason: collision with root package name */
-            public static final C0014b f739a = new C0014b();
-
-            private C0014b() {
-                super(null);
-            }
+        public a(e viewStateCache) {
+            Intrinsics.checkNotNullParameter(viewStateCache, "viewStateCache");
+            this.f728d = o0.w(viewStateCache.c());
         }
 
-        public /* synthetic */ b(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
+        public final Map a() {
+            return this.f728d;
         }
 
-        private b() {
+        @Override // android.os.Parcelable
+        public int describeContents() {
+            return 0;
+        }
+
+        @Override // android.os.Parcelable
+        public void writeToParcel(Parcel out, int i10) {
+            Intrinsics.checkNotNullParameter(out, "out");
+            out.writeMap(this.f728d);
+        }
+
+        public a(Parcel source) {
+            Intrinsics.checkNotNullParameter(source, "source");
+            LinkedHashMap linkedHashMap = new LinkedHashMap();
+            source.readMap(TypeIntrinsics.asMutableMap(linkedHashMap), e.class.getClassLoader());
+            this.f728d = o0.w(linkedHashMap);
         }
     }
 
-    public e(Map buttons, String message, String title, boolean z10, Function1 onEvent) {
-        Intrinsics.checkNotNullParameter(buttons, "buttons");
-        Intrinsics.checkNotNullParameter(message, "message");
-        Intrinsics.checkNotNullParameter(title, "title");
-        Intrinsics.checkNotNullParameter(onEvent, "onEvent");
-        this.f729a = buttons;
-        this.f730b = message;
-        this.f731c = title;
-        this.f732d = z10;
-        this.f733e = onEvent;
-    }
-
-    public final Map a() {
-        return this.f729a;
-    }
-
-    public final boolean b() {
-        return this.f732d;
-    }
-
-    public final String c() {
-        return this.f730b;
-    }
-
-    public final Function1 d() {
-        return this.f733e;
-    }
-
-    public final String e() {
-        return this.f731c;
-    }
-
-    public boolean equals(Object obj) {
-        Class<?> cls;
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            cls = null;
-        } else {
-            cls = obj.getClass();
-        }
-        if (!Intrinsics.areEqual(e.class, cls)) {
-            return false;
-        }
-        if (obj != null) {
-            e eVar = (e) obj;
-            if (Intrinsics.areEqual(this.f729a, eVar.f729a) && Intrinsics.areEqual(this.f730b, eVar.f730b) && Intrinsics.areEqual(this.f731c, eVar.f731c) && this.f732d == eVar.f732d) {
-                return true;
-            }
-            return false;
-        }
-        throw new NullPointerException("null cannot be cast to non-null type com.squareup.workflow1.ui.modal.AlertScreen");
-    }
-
-    public int hashCode() {
-        return (((((this.f729a.hashCode() * 31) + this.f730b.hashCode()) * 31) + this.f731c.hashCode()) * 31) + Boolean.hashCode(this.f732d);
-    }
-
-    public String toString() {
-        return "AlertScreen(buttons=" + this.f729a + ", message=" + this.f730b + ", title=" + this.f731c + ", cancelable=" + this.f732d + ", onEvent=" + this.f733e + ')';
-    }
-
-    public /* synthetic */ e(Map map, String str, String str2, boolean z10, Function1 function1, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this((i10 & 1) != 0 ? o0.i() : map, (i10 & 2) != 0 ? "" : str, (i10 & 4) != 0 ? "" : str2, (i10 & 8) != 0 ? true : z10, function1);
+    public e() {
+        this(new LinkedHashMap());
     }
 }

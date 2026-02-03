@@ -14,15 +14,15 @@ public abstract class c0 {
     public class a extends e {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ int f31803a;
+        final /* synthetic */ int f31599a;
 
         a(int i10) {
-            this.f31803a = i10;
+            this.f31599a = i10;
         }
 
         @Override // ji.c0.e
         Map c() {
-            return j0.c(this.f31803a);
+            return j0.c(this.f31599a);
         }
     }
 
@@ -31,15 +31,15 @@ public abstract class c0 {
     public class b extends e {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Comparator f31804a;
+        final /* synthetic */ Comparator f31600a;
 
         b(Comparator comparator) {
-            this.f31804a = comparator;
+            this.f31600a = comparator;
         }
 
         @Override // ji.c0.e
         Map c() {
-            return new TreeMap(this.f31804a);
+            return new TreeMap(this.f31600a);
         }
     }
 
@@ -47,16 +47,16 @@ public abstract class c0 {
     private static final class c implements ii.r, Serializable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f31805d;
+        private final int f31601d;
 
         c(int i10) {
-            this.f31805d = h.b(i10, "expectedValuesPerKey");
+            this.f31601d = h.b(i10, "expectedValuesPerKey");
         }
 
         @Override // ii.r
         /* renamed from: a */
         public List get() {
-            return new ArrayList(this.f31805d);
+            return new ArrayList(this.f31601d);
         }
     }
 
@@ -77,15 +77,15 @@ public abstract class c0 {
         public class a extends d {
 
             /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ int f31806a;
+            final /* synthetic */ int f31602a;
 
             a(int i10) {
-                this.f31806a = i10;
+                this.f31602a = i10;
             }
 
             @Override // ji.c0.d
             public x e() {
-                return d0.b(e.this.c(), new c(this.f31806a));
+                return d0.b(e.this.c(), new c(this.f31602a));
             }
         }
 

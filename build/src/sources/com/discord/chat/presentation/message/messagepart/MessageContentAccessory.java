@@ -177,7 +177,7 @@ public final class MessageContentAccessory extends MessageAccessory {
         }
         if (obj instanceof MessageContentAccessory) {
             MessageContentAccessory messageContentAccessory = (MessageContentAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, messageContentAccessory.messageId) && Intrinsics.areEqual(this.margins, messageContentAccessory.margins) && Intrinsics.areEqual(this.messageContent, messageContentAccessory.messageContent) && this.shouldAnimateEmoji == messageContentAccessory.shouldAnimateEmoji && this.shouldShowLinkDecorations == messageContentAccessory.shouldShowLinkDecorations && this.shouldShowRoleDot == messageContentAccessory.shouldShowRoleDot && this.shouldShowRoleOnName == messageContentAccessory.shouldShowRoleOnName && this.bottomSpacingPx == messageContentAccessory.bottomSpacingPx && this.linkColor == messageContentAccessory.linkColor && this.messageTextColor == messageContentAccessory.messageTextColor && this.messageFont == messageContentAccessory.messageFont && this.textSizeSp == messageContentAccessory.textSizeSp && this.boldLinkText == messageContentAccessory.boldLinkText && this.constrainedWidth == messageContentAccessory.constrainedWidth && Intrinsics.areEqual(this.editedLabel, messageContentAccessory.editedLabel) && Intrinsics.areEqual(this.editedLabelTextColor, messageContentAccessory.editedLabelTextColor) && this.isForwardedContent == messageContentAccessory.isForwardedContent && Intrinsics.areEqual(this.truncation, messageContentAccessory.truncation) && Intrinsics.areEqual(this.theme, messageContentAccessory.theme);
+            return MessageId.m1089equalsimpl0(this.messageId, messageContentAccessory.messageId) && Intrinsics.areEqual(this.margins, messageContentAccessory.margins) && Intrinsics.areEqual(this.messageContent, messageContentAccessory.messageContent) && this.shouldAnimateEmoji == messageContentAccessory.shouldAnimateEmoji && this.shouldShowLinkDecorations == messageContentAccessory.shouldShowLinkDecorations && this.shouldShowRoleDot == messageContentAccessory.shouldShowRoleDot && this.shouldShowRoleOnName == messageContentAccessory.shouldShowRoleOnName && this.bottomSpacingPx == messageContentAccessory.bottomSpacingPx && this.linkColor == messageContentAccessory.linkColor && this.messageTextColor == messageContentAccessory.messageTextColor && this.messageFont == messageContentAccessory.messageFont && this.textSizeSp == messageContentAccessory.textSizeSp && this.boldLinkText == messageContentAccessory.boldLinkText && this.constrainedWidth == messageContentAccessory.constrainedWidth && Intrinsics.areEqual(this.editedLabel, messageContentAccessory.editedLabel) && Intrinsics.areEqual(this.editedLabelTextColor, messageContentAccessory.editedLabelTextColor) && this.isForwardedContent == messageContentAccessory.isForwardedContent && Intrinsics.areEqual(this.truncation, messageContentAccessory.truncation) && Intrinsics.areEqual(this.theme, messageContentAccessory.theme);
         }
         return false;
     }
@@ -262,9 +262,9 @@ public final class MessageContentAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        int m1091hashCodeimpl = ((((((((((((((((((((((((((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + this.messageContent.hashCode()) * 31) + Boolean.hashCode(this.shouldAnimateEmoji)) * 31) + Boolean.hashCode(this.shouldShowLinkDecorations)) * 31) + Boolean.hashCode(this.shouldShowRoleDot)) * 31) + Boolean.hashCode(this.shouldShowRoleOnName)) * 31) + Integer.hashCode(this.bottomSpacingPx)) * 31) + Integer.hashCode(this.linkColor)) * 31) + Integer.hashCode(this.messageTextColor)) * 31) + this.messageFont.hashCode()) * 31) + Integer.hashCode(this.textSizeSp)) * 31) + Boolean.hashCode(this.boldLinkText)) * 31) + Integer.hashCode(this.constrainedWidth)) * 31;
+        int m1090hashCodeimpl = ((((((((((((((((((((((((((MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + this.messageContent.hashCode()) * 31) + Boolean.hashCode(this.shouldAnimateEmoji)) * 31) + Boolean.hashCode(this.shouldShowLinkDecorations)) * 31) + Boolean.hashCode(this.shouldShowRoleDot)) * 31) + Boolean.hashCode(this.shouldShowRoleOnName)) * 31) + Integer.hashCode(this.bottomSpacingPx)) * 31) + Integer.hashCode(this.linkColor)) * 31) + Integer.hashCode(this.messageTextColor)) * 31) + this.messageFont.hashCode()) * 31) + Integer.hashCode(this.textSizeSp)) * 31) + Boolean.hashCode(this.boldLinkText)) * 31) + Integer.hashCode(this.constrainedWidth)) * 31;
         String str = this.editedLabel;
-        int hashCode = (m1091hashCodeimpl + (str == null ? 0 : str.hashCode())) * 31;
+        int hashCode = (m1090hashCodeimpl + (str == null ? 0 : str.hashCode())) * 31;
         Integer num = this.editedLabelTextColor;
         int hashCode2 = (((hashCode + (num == null ? 0 : num.hashCode())) * 31) + Boolean.hashCode(this.isForwardedContent)) * 31;
         Truncation truncation = this.truncation;
@@ -277,7 +277,7 @@ public final class MessageContentAccessory extends MessageAccessory {
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         MessageMargins messageMargins = this.margins;
         StructurableText structurableText = this.messageContent;
         boolean z10 = this.shouldAnimateEmoji;
@@ -296,7 +296,7 @@ public final class MessageContentAccessory extends MessageAccessory {
         boolean z15 = this.isForwardedContent;
         Truncation truncation = this.truncation;
         DiscordThemeObject discordThemeObject = this.theme;
-        return "MessageContentAccessory(messageId=" + m1093toStringimpl + ", margins=" + messageMargins + ", messageContent=" + structurableText + ", shouldAnimateEmoji=" + z10 + ", shouldShowLinkDecorations=" + z11 + ", shouldShowRoleDot=" + z12 + ", shouldShowRoleOnName=" + z13 + ", bottomSpacingPx=" + i10 + ", linkColor=" + i11 + ", messageTextColor=" + i12 + ", messageFont=" + discordFont + ", textSizeSp=" + i13 + ", boldLinkText=" + z14 + ", constrainedWidth=" + i14 + ", editedLabel=" + str + ", editedLabelTextColor=" + num + ", isForwardedContent=" + z15 + ", truncation=" + truncation + ", theme=" + discordThemeObject + ")";
+        return "MessageContentAccessory(messageId=" + m1092toStringimpl + ", margins=" + messageMargins + ", messageContent=" + structurableText + ", shouldAnimateEmoji=" + z10 + ", shouldShowLinkDecorations=" + z11 + ", shouldShowRoleDot=" + z12 + ", shouldShowRoleOnName=" + z13 + ", bottomSpacingPx=" + i10 + ", linkColor=" + i11 + ", messageTextColor=" + i12 + ", messageFont=" + discordFont + ", textSizeSp=" + i13 + ", boldLinkText=" + z14 + ", constrainedWidth=" + i14 + ", editedLabel=" + str + ", editedLabelTextColor=" + num + ", isForwardedContent=" + z15 + ", truncation=" + truncation + ", theme=" + discordThemeObject + ")";
     }
 
     public /* synthetic */ MessageContentAccessory(String str, MessageMargins messageMargins, StructurableText structurableText, boolean z10, boolean z11, boolean z12, boolean z13, int i10, int i11, int i12, DiscordFont discordFont, int i13, boolean z14, int i14, String str2, Integer num, boolean z15, Truncation truncation, DiscordThemeObject discordThemeObject, int i15, DefaultConstructorMarker defaultConstructorMarker) {

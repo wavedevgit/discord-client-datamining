@@ -1,11 +1,10 @@
 package hv;
+
+import gv.o;
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface b {
-    boolean a();
+    o a(String str);
 
-    int b();
-
-    boolean c();
-
-    int length();
+    List b();
 }

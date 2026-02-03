@@ -15,7 +15,7 @@ public final class a extends c {
     public int h(int i10) {
         int b10 = b(16);
         if (b10 != 0) {
-            return this.f7968b.getInt(d(b10) + (i10 * 4));
+            return this.f6955b.getInt(d(b10) + (i10 * 4));
         }
         return 0;
     }
@@ -30,7 +30,7 @@ public final class a extends c {
 
     public boolean j() {
         int b10 = b(6);
-        if (b10 == 0 || this.f7968b.get(b10 + this.f7967a) == 0) {
+        if (b10 == 0 || this.f6955b.get(b10 + this.f6954a) == 0) {
             return false;
         }
         return true;
@@ -39,7 +39,7 @@ public final class a extends c {
     public short k() {
         int b10 = b(14);
         if (b10 != 0) {
-            return this.f7968b.getShort(b10 + this.f7967a);
+            return this.f6955b.getShort(b10 + this.f6954a);
         }
         return (short) 0;
     }
@@ -47,7 +47,7 @@ public final class a extends c {
     public int l() {
         int b10 = b(4);
         if (b10 != 0) {
-            return this.f7968b.getInt(b10 + this.f7967a);
+            return this.f6955b.getInt(b10 + this.f6954a);
         }
         return 0;
     }
@@ -55,7 +55,7 @@ public final class a extends c {
     public short m() {
         int b10 = b(8);
         if (b10 != 0) {
-            return this.f7968b.getShort(b10 + this.f7967a);
+            return this.f6955b.getShort(b10 + this.f6954a);
         }
         return (short) 0;
     }
@@ -63,7 +63,7 @@ public final class a extends c {
     public short n() {
         int b10 = b(12);
         if (b10 != 0) {
-            return this.f7968b.getShort(b10 + this.f7967a);
+            return this.f6955b.getShort(b10 + this.f6954a);
         }
         return (short) 0;
     }

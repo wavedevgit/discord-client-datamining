@@ -9,10 +9,10 @@ import java.util.RandomAccess;
 public abstract class z extends w implements List, RandomAccess {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final d0 f32973e = new x(a0.f32947p, 0);
+    private static final d0 f32371e = new x(a0.f32345p, 0);
 
     public static z i() {
-        return a0.f32947p;
+        return a0.f32345p;
     }
 
     public static z j(Collection collection) {
@@ -39,7 +39,7 @@ public abstract class z extends w implements List, RandomAccess {
 
     static z k(Object[] objArr, int i10) {
         if (i10 == 0) {
-            return a0.f32947p;
+            return a0.f32345p;
         }
         return new a0(objArr, i10);
     }
@@ -144,7 +144,7 @@ public abstract class z extends w implements List, RandomAccess {
             return this;
         }
         if (i12 == 0) {
-            return a0.f32947p;
+            return a0.f32345p;
         }
         return new y(this, i10, i12);
     }
@@ -201,7 +201,7 @@ public abstract class z extends w implements List, RandomAccess {
     public final d0 listIterator(int i10) {
         t.b(i10, size(), "index");
         if (isEmpty()) {
-            return f32973e;
+            return f32371e;
         }
         return new x(this, i10);
     }

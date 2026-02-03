@@ -251,7 +251,7 @@ public final class DefaultReactHost {
         return getDefaultReactHost(context, reactNativeHost, jSRuntimeFactory);
     }
 
-    @jr.c
+    @lr.c
     @NotNull
     public static final ReactHost getDefaultReactHost(@NotNull Context context, @NotNull List<? extends ReactPackage> packageList, @NotNull String jsMainModulePath, @NotNull String jsBundleAssetPath, String str, boolean z10, boolean z11, @NotNull List<? extends Function1<? super ReactContext, ? extends CxxReactPackage>> cxxReactPackageProviders, @NotNull Function1<? super Exception, Unit> exceptionHandler, BindingsInstaller bindingsInstaller) {
         Intrinsics.checkNotNullParameter(context, "context");
@@ -270,7 +270,7 @@ public final class DefaultReactHost {
         }, jsMainModulePath, jsBundleAssetPath, str, new HermesInstance(), z11, cxxReactPackageProviders, exceptionHandler, bindingsInstaller);
     }
 
-    @jr.c
+    @lr.c
     @NotNull
     public static final ReactHost getDefaultReactHost(@NotNull Context context, @NotNull List<? extends ReactPackage> packageList, @NotNull String jsMainModulePath, @NotNull String jsBundleAssetPath, String str, boolean z10, boolean z11, @NotNull List<? extends Function1<? super ReactContext, ? extends CxxReactPackage>> cxxReactPackageProviders) {
         Intrinsics.checkNotNullParameter(context, "context");

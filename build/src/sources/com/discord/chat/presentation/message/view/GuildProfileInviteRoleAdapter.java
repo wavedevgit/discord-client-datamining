@@ -50,7 +50,7 @@ public final class GuildProfileInviteRoleAdapter extends RecyclerView.Adapter {
         Intrinsics.checkNotNullParameter(newRoles, "newRoles");
         List<InviteRole> list = this.roles;
         this.roles = newRoles;
-        e.C0069e c10 = androidx.recyclerview.widget.e.c(new ItemDiffer(list, newRoles), false);
+        e.C0067e c10 = androidx.recyclerview.widget.e.c(new ItemDiffer(list, newRoles), false);
         Intrinsics.checkNotNullExpressionValue(c10, "calculateDiff(...)");
         c10.c(this);
     }

@@ -1,200 +1,86 @@
 package st;
 
-import ht.d;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
-import java.text.DateFormatSymbols;
-import java.util.Collections;
-import java.util.EnumMap;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
 import java.util.Locale;
-import java.util.Map;
 import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import net.time4j.tz.s;
-import qt.e;
+import mt.p;
+import mt.q;
+import mt.s;
+import net.time4j.f0;
+import net.time4j.history.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public class b implements s {
-
-    /* renamed from: a  reason: collision with root package name */
-    private static final ConcurrentMap f49438a = new ConcurrentHashMap();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final Set f49439b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final Map f49440c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final Map f49441d;
-
-    static {
-        HashSet hashSet = new HashSet();
-        hashSet.add("Z");
-        hashSet.add("GMT");
-        hashSet.add("GMT0");
-        hashSet.add("Greenwich");
-        hashSet.add("UCT");
-        hashSet.add("UTC");
-        hashSet.add("UTC0");
-        hashSet.add("Universal");
-        hashSet.add("Zulu");
-        f49439b = Collections.unmodifiableSet(hashSet);
-        HashMap hashMap = new HashMap();
-        g(hashMap, "data/zone1970.tab");
-        f49440c = Collections.unmodifiableMap(hashMap);
-        HashMap hashMap2 = new HashMap();
-        a(hashMap2, "CL", "America/Santiago");
-        a(hashMap2, "CN", "Asia/Shanghai");
-        a(hashMap2, "DE", "Europe/Berlin");
-        a(hashMap2, "EC", "America/Guayaquil");
-        a(hashMap2, "ES", "Europe/Madrid");
-        a(hashMap2, "MH", "Pacific/Majuro");
-        a(hashMap2, "MY", "Asia/Kuala_Lumpur");
-        a(hashMap2, "NZ", "Pacific/Auckland");
-        a(hashMap2, "PT", "Europe/Lisbon");
-        a(hashMap2, "UA", "Europe/Kiev");
-        a(hashMap2, "UZ", "Asia/Tashkent");
-        f49441d = Collections.unmodifiableMap(hashMap2);
-    }
-
-    private static void a(Map map, String str, String str2) {
-        map.put(str, str2);
-    }
-
-    private static void c(Map map, String str, String str2) {
-        Set set = (Set) map.get(str);
-        if (set == null) {
-            set = new LinkedHashSet();
-            map.put(str, set);
+    private static net.time4j.history.d e(Locale locale, mt.d dVar) {
+        mt.c cVar = nt.a.f42027b;
+        if (((String) dVar.b(cVar, "iso8601")).equals("julian")) {
+            return net.time4j.history.d.C;
         }
-        set.add(str2);
-    }
-
-    private static e e(Locale locale) {
-        return e.h("olson/zones/tzname", locale);
-    }
-
-    static void g(Map map, String str) {
-        InputStream e10 = d.c().e(d.c().f("olson", b.class, str), true);
-        if (e10 == null) {
-            e10 = b.class.getClassLoader().getResourceAsStream(str);
+        mt.c cVar2 = rt.a.f49113a;
+        if (dVar.a(cVar2)) {
+            return (net.time4j.history.d) dVar.c(cVar2);
         }
-        try {
-            if (e10 != null) {
-                try {
-                    try {
-                        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(e10, "UTF-8"));
-                        while (true) {
-                            String readLine = bufferedReader.readLine();
-                            if (readLine != null) {
-                                if (!readLine.startsWith("#") && !readLine.isEmpty()) {
-                                    String[] split = readLine.split("\t");
-                                    if (split.length >= 3) {
-                                        for (String str2 : split[0].split(",")) {
-                                            c(map, str2, split[2]);
-                                        }
-                                    }
-                                }
-                            } else {
-                                try {
-                                    e10.close();
-                                    return;
-                                } catch (IOException e11) {
-                                    e11.printStackTrace(System.err);
-                                    return;
-                                }
-                            }
-                        }
-                    } catch (IOException e12) {
-                        throw new IllegalStateException(e12);
-                    }
-                } catch (UnsupportedEncodingException e13) {
-                    throw new AssertionError(e13);
-                }
-            } else {
-                System.err.println("Warning: File \"" + str + "\" not found.");
-            }
-        } catch (Throwable th2) {
-            try {
-                e10.close();
-            } catch (IOException e14) {
-                e14.printStackTrace(System.err);
-            }
-            throw th2;
-        }
-    }
-
-    @Override // net.time4j.tz.s
-    public Set b(Locale locale, boolean z10) {
-        String country = locale.getCountry();
-        if (z10) {
-            if (country.equals("US")) {
-                LinkedHashSet linkedHashSet = new LinkedHashSet();
-                linkedHashSet.add("America/New_York");
-                linkedHashSet.add("America/Chicago");
-                linkedHashSet.add("America/Denver");
-                linkedHashSet.add("America/Los_Angeles");
-                linkedHashSet.add("America/Anchorage");
-                linkedHashSet.add("Pacific/Honolulu");
-                return Collections.unmodifiableSet(linkedHashSet);
-            }
-            String str = (String) f49441d.get(country);
-            if (str != null) {
-                return Collections.singleton(str);
+        if (((String) dVar.b(cVar, "iso8601")).equals("historic")) {
+            mt.c cVar3 = nt.a.f42045t;
+            if (dVar.a(cVar3)) {
+                return net.time4j.history.d.j((String) dVar.c(cVar3));
             }
         }
-        Set set = (Set) f49440c.get(country);
-        if (set == null) {
-            return Collections.EMPTY_SET;
-        }
-        return set;
+        return net.time4j.history.d.D(locale);
     }
 
-    @Override // net.time4j.tz.s
-    public String d(boolean z10, Locale locale) {
-        String str;
-        e e10 = e(locale);
-        if (z10) {
-            str = "utc-literal";
+    @Override // mt.s
+    public boolean a(p pVar) {
+        return pVar instanceof rt.c;
+    }
+
+    @Override // mt.s
+    public Set b(Locale locale, mt.d dVar) {
+        return e(locale, dVar).n();
+    }
+
+    @Override // mt.s
+    public q c(q qVar, Locale locale, mt.d dVar) {
+        return f(qVar, e(locale, dVar), dVar);
+    }
+
+    @Override // mt.s
+    public boolean d(Class cls) {
+        if (cls == f0.class) {
+            return true;
+        }
+        return false;
+    }
+
+    public q f(q qVar, net.time4j.history.d dVar, mt.d dVar2) {
+        j jVar;
+        j jVar2;
+        if (qVar.q(dVar.i())) {
+            jVar2 = (j) qVar.o(dVar.i());
+        } else if (((nt.g) dVar2.b(nt.a.f42031f, nt.g.SMART)).a()) {
+            jVar2 = j.AD;
         } else {
-            str = "offset-pattern";
-        }
-        return e10.f(str);
-    }
-
-    @Override // net.time4j.tz.s
-    public String f(String str, net.time4j.tz.d dVar, Locale locale) {
-        if (f49439b.contains(str)) {
-            return "";
-        }
-        Map map = (Map) f49438a.get(locale);
-        if (map == null) {
-            String[][] zoneStrings = DateFormatSymbols.getInstance(locale).getZoneStrings();
-            HashMap hashMap = new HashMap();
-            for (String[] strArr : zoneStrings) {
-                EnumMap enumMap = new EnumMap(net.time4j.tz.d.class);
-                enumMap.put((EnumMap) net.time4j.tz.d.LONG_STANDARD_TIME, (net.time4j.tz.d) strArr[1]);
-                enumMap.put((EnumMap) net.time4j.tz.d.SHORT_STANDARD_TIME, (net.time4j.tz.d) strArr[2]);
-                enumMap.put((EnumMap) net.time4j.tz.d.LONG_DAYLIGHT_TIME, (net.time4j.tz.d) strArr[3]);
-                enumMap.put((EnumMap) net.time4j.tz.d.SHORT_DAYLIGHT_TIME, (net.time4j.tz.d) strArr[4]);
-                hashMap.put(strArr[0], enumMap);
-            }
-            map = (Map) f49438a.putIfAbsent(locale, hashMap);
-            if (map == null) {
-                map = hashMap;
+            jVar = null;
+            if (jVar == null && qVar.q(dVar.M())) {
+                int j10 = qVar.j(dVar.M());
+                if (qVar.q(dVar.C()) && qVar.q(dVar.g())) {
+                    f0 d10 = dVar.d(net.time4j.history.h.j(jVar, j10, qVar.j(dVar.C()), qVar.j(dVar.g()), (qt.a) dVar2.b(net.time4j.history.d.A, qt.a.DUAL_DATING), dVar.v()));
+                    qVar.E(dVar.i(), null);
+                    qVar.E(dVar.M(), null);
+                    qVar.E(dVar.C(), null);
+                    qVar.E(dVar.g(), null);
+                    return qVar.E(f0.f40491z, d10);
+                } else if (qVar.q(dVar.h())) {
+                    int j11 = qVar.j(dVar.h());
+                    p pVar = rt.c.f49124p;
+                    if (qVar.q(pVar)) {
+                        j10 = qVar.j(pVar);
+                    }
+                    return qVar.E(f0.f40491z, (f0) dVar.d(dVar.m(jVar, j10)).C(dVar.h(), j11));
+                } else {
+                    return qVar;
+                }
             }
         }
-        Map map2 = (Map) map.get(str);
-        if (map2 == null) {
-            return "";
-        }
-        return (String) map2.get(dVar);
+        jVar = jVar2;
+        return jVar == null ? qVar : qVar;
     }
 }

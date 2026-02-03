@@ -40,11 +40,11 @@ public class Intl {
 
     @fb.a
     public static String toLocaleLowerCase(List<String> list, String str) {
-        return UCharacter.toLowerCase((ULocale) e.c((String[]) list.toArray(new String[list.size()])).f11032a.h(), str);
+        return UCharacter.toLowerCase((ULocale) e.c((String[]) list.toArray(new String[list.size()])).f10000a.h(), str);
     }
 
     @fb.a
     public static String toLocaleUpperCase(List<String> list, String str) {
-        return UCharacter.toUpperCase((ULocale) e.c((String[]) list.toArray(new String[list.size()])).f11032a.h(), str);
+        return UCharacter.toUpperCase((ULocale) e.c((String[]) list.toArray(new String[list.size()])).f10000a.h(), str);
     }
 }

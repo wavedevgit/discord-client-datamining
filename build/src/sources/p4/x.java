@@ -5,6 +5,6 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class x {
     public static final m a(u uVar) {
         Intrinsics.checkNotNullParameter(uVar, "<this>");
-        return new m(uVar.f45000a, uVar.f());
+        return new m(uVar.f44958a, uVar.f());
     }
 }

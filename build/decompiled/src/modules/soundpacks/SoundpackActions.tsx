@@ -64,4 +64,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setSoundpack = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8401, 660, 795, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8406, 660, 795, 806, 2]);

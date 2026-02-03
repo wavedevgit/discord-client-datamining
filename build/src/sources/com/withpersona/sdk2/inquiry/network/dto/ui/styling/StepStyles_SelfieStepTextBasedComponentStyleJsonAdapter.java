@@ -45,15 +45,15 @@ public final class StepStyles_SelfieStepTextBasedComponentStyleJsonAdapter exten
         StepStyles.StepTextBasedComponentStyleContainer stepTextBasedComponentStyleContainer2 = null;
         StepStyles.StepTextBasedComponentStyleContainer stepTextBasedComponentStyleContainer3 = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 stepTextBasedComponentStyleContainer = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 stepTextBasedComponentStyleContainer2 = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
-            } else if (t02 == 2) {
+            } else if (A0 == 2) {
                 stepTextBasedComponentStyleContainer3 = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
             }
         }
@@ -66,11 +66,11 @@ public final class StepStyles_SelfieStepTextBasedComponentStyleJsonAdapter exten
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (selfieStepTextBasedComponentStyle != null) {
             writer.l();
-            writer.t0("base");
+            writer.A0("base");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, selfieStepTextBasedComponentStyle.getBase());
-            writer.t0("selfieProcessingText");
+            writer.A0("selfieProcessingText");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, selfieStepTextBasedComponentStyle.getSelfieProcessingText());
-            writer.t0("selfieCaptureHintText");
+            writer.A0("selfieCaptureHintText");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, selfieStepTextBasedComponentStyle.getSelfieCaptureHintText());
             writer.E();
             return;

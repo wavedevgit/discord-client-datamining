@@ -1327,7 +1327,7 @@ public class ReactViewGroup extends ViewGroup implements ReactInterceptingViewGr
         BackgroundStyleApplicator.setBorderColor(this, (LogicalEdge) LogicalEdge.getEntries().get(i10), num);
     }
 
-    @jr.c
+    @lr.c
     public final void setBorderRadius(float f10) {
         BackgroundStyleApplicator.setBorderRadius(this, BorderRadiusProp.BORDER_RADIUS, Float.isNaN(f10) ? null : new LengthPercentage(f10, LengthPercentageType.POINT));
     }
@@ -1447,7 +1447,7 @@ public class ReactViewGroup extends ViewGroup implements ReactInterceptingViewGr
         throw new IllegalStateException("Required value was null.");
     }
 
-    @jr.c
+    @lr.c
     public final void setTranslucentBackgroundDrawable(Drawable drawable) {
         BackgroundStyleApplicator.setFeedbackUnderlay(this, drawable);
     }
@@ -1480,7 +1480,7 @@ public class ReactViewGroup extends ViewGroup implements ReactInterceptingViewGr
         }
     }
 
-    @jr.c
+    @lr.c
     public final void setBorderRadius(float f10, int i10) {
         BackgroundStyleApplicator.setBorderRadius(this, (BorderRadiusProp) BorderRadiusProp.getEntries().get(i10), Float.isNaN(f10) ? null : new LengthPercentage(f10, LengthPercentageType.POINT));
     }

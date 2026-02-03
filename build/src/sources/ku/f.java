@@ -1,31 +1,52 @@
 package ku;
+
+import kotlin.jvm.internal.Intrinsics;
+import okio.Buffer;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class f {
+public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f36730a;
+    public static final f f36226a = new f();
 
-    /* renamed from: b  reason: collision with root package name */
-    private final long f36731b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final int f36732c;
-
-    public f(long j10, long j11, int i10) {
-        this.f36730a = j10;
-        this.f36731b = j11;
-        this.f36732c = i10;
+    private f() {
     }
 
-    public final long a() {
-        return this.f36731b;
+    public final String a(int i10) {
+        if (i10 >= 1000 && i10 < 5000) {
+            if ((1004 <= i10 && i10 < 1007) || (1015 <= i10 && i10 < 3000)) {
+                return "Code " + i10 + " is reserved and may not be used.";
+            }
+            return null;
+        }
+        return "Code must be in range [1000,5000): " + i10;
     }
 
-    public final int b() {
-        return this.f36732c;
+    public final void b(Buffer.a cursor, byte[] key) {
+        Intrinsics.checkNotNullParameter(cursor, "cursor");
+        Intrinsics.checkNotNullParameter(key, "key");
+        int length = key.length;
+        int i10 = 0;
+        do {
+            byte[] bArr = cursor.f44302p;
+            int i11 = cursor.f44303q;
+            int i12 = cursor.f44304r;
+            if (bArr != null) {
+                while (i11 < i12) {
+                    int i13 = i10 % length;
+                    bArr[i11] = (byte) (bArr[i11] ^ key[i13]);
+                    i11++;
+                    i10 = i13 + 1;
+                }
+            }
+        } while (cursor.h() != -1);
     }
 
-    public final long c() {
-        return this.f36730a;
+    public final void c(int i10) {
+        String a10 = a(i10);
+        if (a10 == null) {
+            return;
+        }
+        Intrinsics.checkNotNull(a10);
+        throw new IllegalArgumentException(a10.toString());
     }
 }

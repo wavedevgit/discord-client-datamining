@@ -126,9 +126,9 @@ public final class NextStep_Selfie_ConfigJsonAdapter extends h {
             Boolean bool7 = bool2;
             if (reader.hasNext()) {
                 Boolean bool8 = bool3;
-                switch (reader.t0(this.options)) {
+                switch (reader.A0(this.options)) {
                     case -1:
-                        reader.F0();
+                        reader.E0();
                         reader.P();
                         bool = bool6;
                         bool3 = bool8;
@@ -141,7 +141,7 @@ public final class NextStep_Selfie_ConfigJsonAdapter extends h {
                             bool3 = bool8;
                             break;
                         } else {
-                            throw tm.c.x("selfieType", "selfieType", reader);
+                            throw vm.c.x("selfieType", "selfieType", reader);
                         }
                     case 1:
                         bool2 = (Boolean) this.nullableBooleanAdapter.fromJson(reader);
@@ -157,7 +157,7 @@ public final class NextStep_Selfie_ConfigJsonAdapter extends h {
                     case 3:
                         localizations = (NextStep.Selfie.Localizations) this.localizationsAdapter.fromJson(reader);
                         if (localizations == null) {
-                            throw tm.c.x("localizations", "localizations", reader);
+                            throw vm.c.x("localizations", "localizations", reader);
                         }
                         bool = bool6;
                         bool3 = bool8;
@@ -166,7 +166,7 @@ public final class NextStep_Selfie_ConfigJsonAdapter extends h {
                     case 4:
                         str = (String) this.stringAdapter.fromJson(reader);
                         if (str == null) {
-                            throw tm.c.x("fieldKeySelfie", "fieldKeySelfie", reader);
+                            throw vm.c.x("fieldKeySelfie", "fieldKeySelfie", reader);
                         }
                         bool = bool6;
                         bool3 = bool8;
@@ -175,7 +175,7 @@ public final class NextStep_Selfie_ConfigJsonAdapter extends h {
                     case 5:
                         bool = (Boolean) this.booleanAdapter.fromJson(reader);
                         if (bool == null) {
-                            throw tm.c.x("requireStrictSelfieCapture", "requireStrictSelfieCapture", reader);
+                            throw vm.c.x("requireStrictSelfieCapture", "requireStrictSelfieCapture", reader);
                         }
                         bool3 = bool8;
                         captureMethod = captureMethod2;
@@ -201,7 +201,7 @@ public final class NextStep_Selfie_ConfigJsonAdapter extends h {
                     case 9:
                         assetConfig = (NextStep.Selfie.AssetConfig) this.assetConfigAdapter.fromJson(reader);
                         if (assetConfig == null) {
-                            throw tm.c.x("assets", "assets", reader);
+                            throw vm.c.x("assets", "assets", reader);
                         }
                         bool = bool6;
                         bool3 = bool8;
@@ -261,15 +261,15 @@ public final class NextStep_Selfie_ConfigJsonAdapter extends h {
                                 if (assetConfig != null) {
                                     return new NextStep.Selfie.Config(captureMethod2, bool7, bool9, localizations, str, booleanValue, bool4, list, list2, assetConfig, str2, list3, pendingPageTextPosition, bool5, list4, num);
                                 }
-                                throw tm.c.o("assets", "assets", reader);
+                                throw vm.c.o("assets", "assets", reader);
                             }
-                            throw tm.c.o("requireStrictSelfieCapture", "requireStrictSelfieCapture", reader);
+                            throw vm.c.o("requireStrictSelfieCapture", "requireStrictSelfieCapture", reader);
                         }
-                        throw tm.c.o("fieldKeySelfie", "fieldKeySelfie", reader);
+                        throw vm.c.o("fieldKeySelfie", "fieldKeySelfie", reader);
                     }
-                    throw tm.c.o("localizations", "localizations", reader);
+                    throw vm.c.o("localizations", "localizations", reader);
                 }
-                throw tm.c.o("selfieType", "selfieType", reader);
+                throw vm.c.o("selfieType", "selfieType", reader);
             }
         }
     }
@@ -279,37 +279,37 @@ public final class NextStep_Selfie_ConfigJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (config != null) {
             writer.l();
-            writer.t0("selfieType");
+            writer.A0("selfieType");
             this.captureMethodAdapter.toJson(writer, config.getSelfieType());
-            writer.t0("backStepEnabled");
+            writer.A0("backStepEnabled");
             this.nullableBooleanAdapter.toJson(writer, config.getBackStepEnabled());
-            writer.t0("cancelButtonEnabled");
+            writer.A0("cancelButtonEnabled");
             this.nullableBooleanAdapter.toJson(writer, config.getCancelButtonEnabled());
-            writer.t0("localizations");
+            writer.A0("localizations");
             this.localizationsAdapter.toJson(writer, config.getLocalizations());
-            writer.t0("fieldKeySelfie");
+            writer.A0("fieldKeySelfie");
             this.stringAdapter.toJson(writer, config.getFieldKeySelfie());
-            writer.t0("requireStrictSelfieCapture");
+            writer.A0("requireStrictSelfieCapture");
             this.booleanAdapter.toJson(writer, Boolean.valueOf(config.getRequireStrictSelfieCapture()));
-            writer.t0("skipPromptPage");
+            writer.A0("skipPromptPage");
             this.nullableBooleanAdapter.toJson(writer, config.getSkipPromptPage());
-            writer.t0("enabledCaptureFileTypes");
+            writer.A0("enabledCaptureFileTypes");
             this.nullableListOfCaptureFileTypeAdapter.toJson(writer, config.getEnabledCaptureFileTypes());
-            writer.t0("videoCaptureMethods");
+            writer.A0("videoCaptureMethods");
             this.nullableListOfVideoCaptureMethodAdapter.toJson(writer, config.getVideoCaptureMethods());
-            writer.t0("assets");
+            writer.A0("assets");
             this.assetConfigAdapter.toJson(writer, config.getAssets());
-            writer.t0("videoSessionJWT");
+            writer.A0("videoSessionJWT");
             this.nullableStringAdapter.toJson(writer, config.getVideoSessionJwt());
-            writer.t0("orderedPoses");
+            writer.A0("orderedPoses");
             this.nullableListOfSelfiePoseAdapter.toJson(writer, config.getOrderedPoses());
-            writer.t0("pendingPageTextVerticalPosition");
+            writer.A0("pendingPageTextVerticalPosition");
             this.nullablePendingPageTextPositionAdapter.toJson(writer, config.getPendingPageTextVerticalPosition());
-            writer.t0("audioEnabled");
+            writer.A0("audioEnabled");
             this.nullableBooleanAdapter.toJson(writer, config.getAudioEnabled());
-            writer.t0("poseConfigs");
+            writer.A0("poseConfigs");
             this.nullableListOfPoseConfigAdapter.toJson(writer, config.getPoseConfigs());
-            writer.t0("designVersion");
+            writer.A0("designVersion");
             this.nullableIntAdapter.toJson(writer, config.getDesignVersion());
             writer.E();
             return;

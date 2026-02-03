@@ -1,34 +1,34 @@
 package kotlinx.coroutines;
 
-import hs.z0;
+import js.z0;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class g extends z0 implements hs.n {
+public final class g extends z0 implements js.n {
 
     /* renamed from: p  reason: collision with root package name */
-    public final hs.o f36121p;
+    public final js.o f35511p;
 
-    public g(hs.o oVar) {
-        this.f36121p = oVar;
+    public g(js.o oVar) {
+        this.f35511p = oVar;
     }
 
-    @Override // hs.n
+    @Override // js.n
     public boolean d(Throwable th2) {
         return u().O(th2);
     }
 
-    @Override // hs.n
+    @Override // js.n
     public Job getParent() {
         return u();
     }
 
-    @Override // hs.z0
+    @Override // js.z0
     public boolean v() {
         return true;
     }
 
-    @Override // hs.z0
+    @Override // js.z0
     public void w(Throwable th2) {
-        this.f36121p.Y0(u());
+        this.f35511p.B1(u());
     }
 }

@@ -14,86 +14,86 @@ import sun.misc.Unsafe;
 final class r0 implements d1 {
 
     /* renamed from: r  reason: collision with root package name */
-    private static final int[] f3798r = new int[0];
+    private static final int[] f3767r = new int[0];
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Unsafe f3799s = o1.B();
+    private static final Unsafe f3768s = o1.B();
 
     /* renamed from: a  reason: collision with root package name */
-    private final int[] f3800a;
+    private final int[] f3769a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object[] f3801b;
+    private final Object[] f3770b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f3802c;
+    private final int f3771c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f3803d;
+    private final int f3772d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final o0 f3804e;
+    private final o0 f3773e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final boolean f3805f;
+    private final boolean f3774f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f3806g;
+    private final boolean f3775g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final boolean f3807h;
+    private final boolean f3776h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f3808i;
+    private final boolean f3777i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final int[] f3809j;
+    private final int[] f3778j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final int f3810k;
+    private final int f3779k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final int f3811l;
+    private final int f3780l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final t0 f3812m;
+    private final t0 f3781m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final e0 f3813n;
+    private final e0 f3782n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final k1 f3814o;
+    private final k1 f3783o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final p f3815p;
+    private final p f3784p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final j0 f3816q;
+    private final j0 f3785q;
 
     private r0(int[] iArr, Object[] objArr, int i10, int i11, o0 o0Var, boolean z10, boolean z11, int[] iArr2, int i12, int i13, t0 t0Var, e0 e0Var, k1 k1Var, p pVar, j0 j0Var) {
         boolean z12;
-        this.f3800a = iArr;
-        this.f3801b = objArr;
-        this.f3802c = i10;
-        this.f3803d = i11;
-        this.f3806g = o0Var instanceof w;
-        this.f3807h = z10;
+        this.f3769a = iArr;
+        this.f3770b = objArr;
+        this.f3771c = i10;
+        this.f3772d = i11;
+        this.f3775g = o0Var instanceof w;
+        this.f3776h = z10;
         if (pVar != null && pVar.e(o0Var)) {
             z12 = true;
         } else {
             z12 = false;
         }
-        this.f3805f = z12;
-        this.f3808i = z11;
-        this.f3809j = iArr2;
-        this.f3810k = i12;
-        this.f3811l = i13;
-        this.f3812m = t0Var;
-        this.f3813n = e0Var;
-        this.f3814o = k1Var;
-        this.f3815p = pVar;
-        this.f3804e = o0Var;
-        this.f3816q = j0Var;
+        this.f3774f = z12;
+        this.f3777i = z11;
+        this.f3778j = iArr2;
+        this.f3779k = i12;
+        this.f3780l = i13;
+        this.f3781m = t0Var;
+        this.f3782n = e0Var;
+        this.f3783o = k1Var;
+        this.f3784p = pVar;
+        this.f3773e = o0Var;
+        this.f3785q = j0Var;
     }
 
     private boolean A(Object obj, int i10, int i11) {
@@ -111,11 +111,11 @@ final class r0 implements d1 {
     }
 
     private boolean B(Object obj, int i10, int i11) {
-        Map e10 = this.f3816q.e(o1.A(obj, Q(i10)));
+        Map e10 = this.f3785q.e(o1.A(obj, Q(i10)));
         if (e10.isEmpty()) {
             return true;
         }
-        if (this.f3816q.b(q(i11)).f3696c.a() != q1.c.MESSAGE) {
+        if (this.f3785q.b(q(i11)).f3665c.a() != q1.c.MESSAGE) {
             return true;
         }
         d1 d1Var = null;
@@ -167,13 +167,13 @@ final class r0 implements d1 {
         return;
      */
     /* JADX WARN: Code restructure failed: missing block: B:43:0x0082, code lost:
-        r0 = r14.f3810k;
+        r0 = r14.f3779k;
      */
     /* JADX WARN: Code restructure failed: missing block: B:45:0x0086, code lost:
-        if (r0 >= r14.f3811l) goto L215;
+        if (r0 >= r14.f3780l) goto L215;
      */
     /* JADX WARN: Code restructure failed: missing block: B:46:0x0088, code lost:
-        r7 = n(r9, r14.f3809j[r0], r7, r15);
+        r7 = n(r9, r14.f3778j[r0], r7, r15);
         r0 = r0 + 1;
      */
     /* JADX WARN: Code restructure failed: missing block: B:47:0x0093, code lost:
@@ -199,15 +199,15 @@ final class r0 implements d1 {
         long Q = Q(h0(i10));
         Object A = o1.A(obj, Q);
         if (A == null) {
-            A = this.f3816q.d(obj2);
+            A = this.f3785q.d(obj2);
             o1.O(obj, Q, A);
-        } else if (this.f3816q.h(A)) {
-            Object d10 = this.f3816q.d(obj2);
-            this.f3816q.a(d10, A);
+        } else if (this.f3785q.h(A)) {
+            Object d10 = this.f3785q.d(obj2);
+            this.f3785q.a(d10, A);
             o1.O(obj, Q, d10);
             A = d10;
         }
-        c1Var.z(this.f3816q.c(A), this.f3816q.b(obj2), oVar);
+        c1Var.z(this.f3785q.c(A), this.f3785q.b(obj2), oVar);
     }
 
     private void J(Object obj, Object obj2, int i10) {
@@ -397,10 +397,10 @@ final class r0 implements d1 {
             case ChatViewRecyclerTypes.REACTION_ADD_REACTION /* 47 */:
             case 48:
             case ChatViewRecyclerTypes.MEDIA_ATTACHMENT_MOSAIC_IMAGE /* 49 */:
-                this.f3813n.d(obj, obj2, Q);
+                this.f3782n.d(obj, obj2, Q);
                 return;
             case 50:
-                f1.E(this.f3816q, obj, obj2, Q);
+                f1.E(this.f3785q, obj, obj2, Q);
                 return;
             case ChatViewRecyclerTypes.MEDIA_ATTACHMENT_MOSAIC_VISUAL_PLACEHOLDER /* 51 */:
             case ChatViewRecyclerTypes.REFERRAL /* 52 */:
@@ -473,7 +473,7 @@ final class r0 implements d1 {
     }
 
     private int P(int i10) {
-        return this.f3800a[i10];
+        return this.f3769a[i10];
     }
 
     private static long Q(int i10) {
@@ -501,28 +501,28 @@ final class r0 implements d1 {
     }
 
     private int W(int i10) {
-        if (i10 >= this.f3802c && i10 <= this.f3803d) {
+        if (i10 >= this.f3771c && i10 <= this.f3772d) {
             return f0(i10, 0);
         }
         return -1;
     }
 
     private int X(int i10) {
-        return this.f3800a[i10 + 2];
+        return this.f3769a[i10 + 2];
     }
 
     private void Y(Object obj, long j10, c1 c1Var, d1 d1Var, o oVar) {
-        c1Var.G(this.f3813n.e(obj, j10), d1Var, oVar);
+        c1Var.G(this.f3782n.e(obj, j10), d1Var, oVar);
     }
 
     private void Z(Object obj, int i10, c1 c1Var, d1 d1Var, o oVar) {
-        c1Var.q(this.f3813n.e(obj, Q(i10)), d1Var, oVar);
+        c1Var.q(this.f3782n.e(obj, Q(i10)), d1Var, oVar);
     }
 
     private void a0(Object obj, int i10, c1 c1Var) {
         if (w(i10)) {
             o1.O(obj, Q(i10), c1Var.M());
-        } else if (this.f3806g) {
+        } else if (this.f3775g) {
             o1.O(obj, Q(i10), c1Var.C());
         } else {
             o1.O(obj, Q(i10), c1Var.o());
@@ -531,9 +531,9 @@ final class r0 implements d1 {
 
     private void b0(Object obj, int i10, c1 c1Var) {
         if (w(i10)) {
-            c1Var.n(this.f3813n.e(obj, Q(i10)));
+            c1Var.n(this.f3782n.e(obj, Q(i10)));
         } else {
-            c1Var.E(this.f3813n.e(obj, Q(i10)));
+            c1Var.E(this.f3782n.e(obj, Q(i10)));
         }
     }
 
@@ -552,7 +552,7 @@ final class r0 implements d1 {
     }
 
     private void d0(Object obj, int i10) {
-        if (this.f3807h) {
+        if (this.f3776h) {
             return;
         }
         int X = X(i10);
@@ -565,7 +565,7 @@ final class r0 implements d1 {
     }
 
     private int f0(int i10, int i11) {
-        int length = (this.f3800a.length / 3) - 1;
+        int length = (this.f3769a.length / 3) - 1;
         while (i11 <= length) {
             int i12 = (length + i11) >>> 1;
             int i13 = i12 * 3;
@@ -587,7 +587,7 @@ final class r0 implements d1 {
     }
 
     private int h0(int i10) {
-        return this.f3800a[i10 + 1];
+        return this.f3769a[i10 + 1];
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
@@ -650,7 +650,7 @@ final class r0 implements d1 {
 
     private void l0(r1 r1Var, int i10, Object obj, int i11) {
         if (obj != null) {
-            r1Var.r(i10, this.f3816q.b(q(i11)), this.f3816q.e(obj));
+            r1Var.r(i10, this.f3785q.b(q(i11)), this.f3785q.e(obj));
         }
     }
 
@@ -836,22 +836,22 @@ final class r0 implements d1 {
     }
 
     private y.a p(int i10) {
-        android.support.v4.media.session.b.a(this.f3801b[((i10 / 3) * 2) + 1]);
+        android.support.v4.media.session.b.a(this.f3770b[((i10 / 3) * 2) + 1]);
         return null;
     }
 
     private Object q(int i10) {
-        return this.f3801b[(i10 / 3) * 2];
+        return this.f3770b[(i10 / 3) * 2];
     }
 
     private d1 r(int i10) {
         int i11 = (i10 / 3) * 2;
-        d1 d1Var = (d1) this.f3801b[i11];
+        d1 d1Var = (d1) this.f3770b[i11];
         if (d1Var != null) {
             return d1Var;
         }
-        d1 c10 = z0.a().c((Class) this.f3801b[i11 + 1]);
-        this.f3801b[i11] = c10;
+        d1 c10 = z0.a().c((Class) this.f3770b[i11 + 1]);
+        this.f3770b[i11] = c10;
         return c10;
     }
 
@@ -866,17 +866,17 @@ final class r0 implements d1 {
         int i12;
         int P;
         int R;
-        Unsafe unsafe = f3799s;
+        Unsafe unsafe = f3768s;
         int i13 = -1;
         int i14 = 0;
         int i15 = 0;
         int i16 = 0;
-        while (i14 < this.f3800a.length) {
+        while (i14 < this.f3769a.length) {
             int h02 = h0(i14);
             int P2 = P(i14);
             int g02 = g0(h02);
             if (g02 <= 17) {
-                i10 = this.f3800a[i14 + 2];
+                i10 = this.f3769a[i14 + 2];
                 int i17 = 1048575 & i10;
                 int i18 = 1 << (i10 >>> 20);
                 if (i17 != i13) {
@@ -885,8 +885,8 @@ final class r0 implements d1 {
                 }
                 i11 = i18;
             } else {
-                if (this.f3808i && g02 >= t.Z.a() && g02 <= t.f3842m0.a()) {
-                    i10 = this.f3800a[i14 + 2] & 1048575;
+                if (this.f3777i && g02 >= t.Z.a() && g02 <= t.f3811m0.a()) {
+                    i10 = this.f3769a[i14 + 2] & 1048575;
                 } else {
                     i10 = 0;
                 }
@@ -1104,7 +1104,7 @@ final class r0 implements d1 {
                 case ChatViewRecyclerTypes.INFO_LINK /* 35 */:
                     i12 = f1.i((List) unsafe.getObject(obj, Q));
                     if (i12 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i12);
                         }
                         P = j.P(P2);
@@ -1115,7 +1115,7 @@ final class r0 implements d1 {
                 case ChatViewRecyclerTypes.SAFETY_POLICY_NOTICE /* 36 */:
                     i12 = f1.g((List) unsafe.getObject(obj, Q));
                     if (i12 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i12);
                         }
                         P = j.P(P2);
@@ -1126,7 +1126,7 @@ final class r0 implements d1 {
                 case ChatViewRecyclerTypes.POLL_TEXT_AND_IMAGE /* 37 */:
                     i12 = f1.n((List) unsafe.getObject(obj, Q));
                     if (i12 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i12);
                         }
                         P = j.P(P2);
@@ -1137,7 +1137,7 @@ final class r0 implements d1 {
                 case ChatViewRecyclerTypes.POLL_IMAGE_ONLY /* 38 */:
                     i12 = f1.y((List) unsafe.getObject(obj, Q));
                     if (i12 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i12);
                         }
                         P = j.P(P2);
@@ -1148,7 +1148,7 @@ final class r0 implements d1 {
                 case ChatViewRecyclerTypes.SAFETY_SYSTEM_NOTIFICATION /* 39 */:
                     i12 = f1.l((List) unsafe.getObject(obj, Q));
                     if (i12 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i12);
                         }
                         P = j.P(P2);
@@ -1159,7 +1159,7 @@ final class r0 implements d1 {
                 case 40:
                     i12 = f1.i((List) unsafe.getObject(obj, Q));
                     if (i12 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i12);
                         }
                         P = j.P(P2);
@@ -1170,7 +1170,7 @@ final class r0 implements d1 {
                 case 41:
                     i12 = f1.g((List) unsafe.getObject(obj, Q));
                     if (i12 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i12);
                         }
                         P = j.P(P2);
@@ -1181,7 +1181,7 @@ final class r0 implements d1 {
                 case 42:
                     i12 = f1.b((List) unsafe.getObject(obj, Q));
                     if (i12 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i12);
                         }
                         P = j.P(P2);
@@ -1192,7 +1192,7 @@ final class r0 implements d1 {
                 case ChatViewRecyclerTypes.FORWARD_HEADER /* 43 */:
                     i12 = f1.w((List) unsafe.getObject(obj, Q));
                     if (i12 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i12);
                         }
                         P = j.P(P2);
@@ -1203,7 +1203,7 @@ final class r0 implements d1 {
                 case ChatViewRecyclerTypes.FORWARD_BREADCRUMB /* 44 */:
                     i12 = f1.e((List) unsafe.getObject(obj, Q));
                     if (i12 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i12);
                         }
                         P = j.P(P2);
@@ -1214,7 +1214,7 @@ final class r0 implements d1 {
                 case ChatViewRecyclerTypes.REACTION_BURST_REACTION /* 45 */:
                     i12 = f1.g((List) unsafe.getObject(obj, Q));
                     if (i12 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i12);
                         }
                         P = j.P(P2);
@@ -1225,7 +1225,7 @@ final class r0 implements d1 {
                 case 46:
                     i12 = f1.i((List) unsafe.getObject(obj, Q));
                     if (i12 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i12);
                         }
                         P = j.P(P2);
@@ -1236,7 +1236,7 @@ final class r0 implements d1 {
                 case ChatViewRecyclerTypes.REACTION_ADD_REACTION /* 47 */:
                     i12 = f1.r((List) unsafe.getObject(obj, Q));
                     if (i12 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i12);
                         }
                         P = j.P(P2);
@@ -1247,7 +1247,7 @@ final class r0 implements d1 {
                 case 48:
                     i12 = f1.t((List) unsafe.getObject(obj, Q));
                     if (i12 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i12);
                         }
                         P = j.P(P2);
@@ -1260,7 +1260,7 @@ final class r0 implements d1 {
                     i15 += c10;
                     break;
                 case 50:
-                    c10 = this.f3816q.g(P2, unsafe.getObject(obj, Q), q(i14));
+                    c10 = this.f3785q.g(P2, unsafe.getObject(obj, Q), q(i14));
                     i15 += c10;
                     break;
                 case ChatViewRecyclerTypes.MEDIA_ATTACHMENT_MOSAIC_VISUAL_PLACEHOLDER /* 51 */:
@@ -1380,9 +1380,9 @@ final class r0 implements d1 {
             i14 += 3;
             i13 = i19;
         }
-        int u10 = i15 + u(this.f3814o, obj);
-        if (this.f3805f) {
-            return u10 + this.f3815p.c(obj).h();
+        int u10 = i15 + u(this.f3783o, obj);
+        if (this.f3774f) {
+            return u10 + this.f3784p.c(obj).h();
         }
         return u10;
     }
@@ -1393,15 +1393,15 @@ final class r0 implements d1 {
         int i11;
         int P;
         int R;
-        Unsafe unsafe = f3799s;
+        Unsafe unsafe = f3768s;
         int i12 = 0;
-        for (int i13 = 0; i13 < this.f3800a.length; i13 += 3) {
+        for (int i13 = 0; i13 < this.f3769a.length; i13 += 3) {
             int h02 = h0(i13);
             int g02 = g0(h02);
             int P2 = P(i13);
             long Q = Q(h02);
-            if (g02 >= t.Z.a() && g02 <= t.f3842m0.a()) {
-                i10 = this.f3800a[i13 + 2] & 1048575;
+            if (g02 >= t.Z.a() && g02 <= t.f3811m0.a()) {
+                i10 = this.f3769a[i13 + 2] & 1048575;
             } else {
                 i10 = 0;
             }
@@ -1592,7 +1592,7 @@ final class r0 implements d1 {
                 case ChatViewRecyclerTypes.INFO_LINK /* 35 */:
                     i11 = f1.i((List) unsafe.getObject(obj, Q));
                     if (i11 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i11);
                         }
                         P = j.P(P2);
@@ -1605,7 +1605,7 @@ final class r0 implements d1 {
                 case ChatViewRecyclerTypes.SAFETY_POLICY_NOTICE /* 36 */:
                     i11 = f1.g((List) unsafe.getObject(obj, Q));
                     if (i11 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i11);
                         }
                         P = j.P(P2);
@@ -1618,7 +1618,7 @@ final class r0 implements d1 {
                 case ChatViewRecyclerTypes.POLL_TEXT_AND_IMAGE /* 37 */:
                     i11 = f1.n((List) unsafe.getObject(obj, Q));
                     if (i11 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i11);
                         }
                         P = j.P(P2);
@@ -1631,7 +1631,7 @@ final class r0 implements d1 {
                 case ChatViewRecyclerTypes.POLL_IMAGE_ONLY /* 38 */:
                     i11 = f1.y((List) unsafe.getObject(obj, Q));
                     if (i11 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i11);
                         }
                         P = j.P(P2);
@@ -1644,7 +1644,7 @@ final class r0 implements d1 {
                 case ChatViewRecyclerTypes.SAFETY_SYSTEM_NOTIFICATION /* 39 */:
                     i11 = f1.l((List) unsafe.getObject(obj, Q));
                     if (i11 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i11);
                         }
                         P = j.P(P2);
@@ -1657,7 +1657,7 @@ final class r0 implements d1 {
                 case 40:
                     i11 = f1.i((List) unsafe.getObject(obj, Q));
                     if (i11 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i11);
                         }
                         P = j.P(P2);
@@ -1670,7 +1670,7 @@ final class r0 implements d1 {
                 case 41:
                     i11 = f1.g((List) unsafe.getObject(obj, Q));
                     if (i11 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i11);
                         }
                         P = j.P(P2);
@@ -1683,7 +1683,7 @@ final class r0 implements d1 {
                 case 42:
                     i11 = f1.b((List) unsafe.getObject(obj, Q));
                     if (i11 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i11);
                         }
                         P = j.P(P2);
@@ -1696,7 +1696,7 @@ final class r0 implements d1 {
                 case ChatViewRecyclerTypes.FORWARD_HEADER /* 43 */:
                     i11 = f1.w((List) unsafe.getObject(obj, Q));
                     if (i11 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i11);
                         }
                         P = j.P(P2);
@@ -1709,7 +1709,7 @@ final class r0 implements d1 {
                 case ChatViewRecyclerTypes.FORWARD_BREADCRUMB /* 44 */:
                     i11 = f1.e((List) unsafe.getObject(obj, Q));
                     if (i11 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i11);
                         }
                         P = j.P(P2);
@@ -1722,7 +1722,7 @@ final class r0 implements d1 {
                 case ChatViewRecyclerTypes.REACTION_BURST_REACTION /* 45 */:
                     i11 = f1.g((List) unsafe.getObject(obj, Q));
                     if (i11 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i11);
                         }
                         P = j.P(P2);
@@ -1735,7 +1735,7 @@ final class r0 implements d1 {
                 case 46:
                     i11 = f1.i((List) unsafe.getObject(obj, Q));
                     if (i11 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i11);
                         }
                         P = j.P(P2);
@@ -1748,7 +1748,7 @@ final class r0 implements d1 {
                 case ChatViewRecyclerTypes.REACTION_ADD_REACTION /* 47 */:
                     i11 = f1.r((List) unsafe.getObject(obj, Q));
                     if (i11 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i11);
                         }
                         P = j.P(P2);
@@ -1761,7 +1761,7 @@ final class r0 implements d1 {
                 case 48:
                     i11 = f1.t((List) unsafe.getObject(obj, Q));
                     if (i11 > 0) {
-                        if (this.f3808i) {
+                        if (this.f3777i) {
                             unsafe.putInt(obj, i10, i11);
                         }
                         P = j.P(P2);
@@ -1775,7 +1775,7 @@ final class r0 implements d1 {
                     h10 = f1.j(P2, F(obj, Q), r(i13));
                     break;
                 case 50:
-                    h10 = this.f3816q.g(P2, o1.A(obj, Q), q(i13));
+                    h10 = this.f3785q.g(P2, o1.A(obj, Q), q(i13));
                     break;
                 case ChatViewRecyclerTypes.MEDIA_ATTACHMENT_MOSAIC_VISUAL_PLACEHOLDER /* 51 */:
                     if (D(obj, P2, i13)) {
@@ -1913,7 +1913,7 @@ final class r0 implements d1 {
             }
             i12 += h10;
         }
-        return i12 + u(this.f3814o, obj);
+        return i12 + u(this.f3783o, obj);
     }
 
     private int u(k1 k1Var, Object obj) {
@@ -1930,7 +1930,7 @@ final class r0 implements d1 {
 
     private boolean x(Object obj, int i10) {
         boolean equals;
-        if (this.f3807h) {
+        if (this.f3776h) {
             int h02 = h0(i10);
             long Q = Q(h02);
             switch (g0(h02)) {
@@ -1977,7 +1977,7 @@ final class r0 implements d1 {
                         equals = ((String) A).isEmpty();
                         break;
                     } else if (A instanceof g) {
-                        equals = g.f3635e.equals(A);
+                        equals = g.f3604e.equals(A);
                         break;
                     } else {
                         throw new IllegalArgumentException();
@@ -1988,7 +1988,7 @@ final class r0 implements d1 {
                     }
                     return true;
                 case 10:
-                    equals = g.f3635e.equals(o1.A(obj, Q));
+                    equals = g.f3604e.equals(o1.A(obj, Q));
                     break;
                 case 11:
                     if (o1.x(obj, Q) == 0) {
@@ -2038,7 +2038,7 @@ final class r0 implements d1 {
     }
 
     private boolean y(Object obj, int i10, int i11, int i12) {
-        if (this.f3807h) {
+        if (this.f3776h) {
             return x(obj, i10);
         }
         if ((i11 & i12) != 0) {
@@ -2054,13 +2054,13 @@ final class r0 implements d1 {
     @Override // androidx.datastore.preferences.protobuf.d1
     public void a(Object obj, Object obj2) {
         obj2.getClass();
-        for (int i10 = 0; i10 < this.f3800a.length; i10 += 3) {
+        for (int i10 = 0; i10 < this.f3769a.length; i10 += 3) {
             L(obj, obj2, i10);
         }
-        if (!this.f3807h) {
-            f1.F(this.f3814o, obj, obj2);
-            if (this.f3805f) {
-                f1.D(this.f3815p, obj, obj2);
+        if (!this.f3776h) {
+            f1.F(this.f3783o, obj, obj2);
+            if (this.f3774f) {
+                f1.D(this.f3784p, obj, obj2);
             }
         }
     }
@@ -2068,33 +2068,33 @@ final class r0 implements d1 {
     @Override // androidx.datastore.preferences.protobuf.d1
     public void b(Object obj, c1 c1Var, o oVar) {
         oVar.getClass();
-        H(this.f3814o, this.f3815p, obj, c1Var, oVar);
+        H(this.f3783o, this.f3784p, obj, c1Var, oVar);
     }
 
     @Override // androidx.datastore.preferences.protobuf.d1
     public void c(Object obj) {
         int i10;
-        int i11 = this.f3810k;
+        int i11 = this.f3779k;
         while (true) {
-            i10 = this.f3811l;
+            i10 = this.f3780l;
             if (i11 >= i10) {
                 break;
             }
-            long Q = Q(h0(this.f3809j[i11]));
+            long Q = Q(h0(this.f3778j[i11]));
             Object A = o1.A(obj, Q);
             if (A != null) {
-                o1.O(obj, Q, this.f3816q.f(A));
+                o1.O(obj, Q, this.f3785q.f(A));
             }
             i11++;
         }
-        int length = this.f3809j.length;
+        int length = this.f3778j.length;
         while (i10 < length) {
-            this.f3813n.c(obj, this.f3809j[i10]);
+            this.f3782n.c(obj, this.f3778j[i10]);
             i10++;
         }
-        this.f3814o.j(obj);
-        if (this.f3805f) {
-            this.f3815p.f(obj);
+        this.f3783o.j(obj);
+        if (this.f3774f) {
+            this.f3784p.f(obj);
         }
     }
 
@@ -2103,16 +2103,16 @@ final class r0 implements d1 {
         int i10;
         int i11 = -1;
         int i12 = 0;
-        for (int i13 = 0; i13 < this.f3810k; i13++) {
-            int i14 = this.f3809j[i13];
+        for (int i13 = 0; i13 < this.f3779k; i13++) {
+            int i14 = this.f3778j[i13];
             int P = P(i14);
             int h02 = h0(i14);
-            if (!this.f3807h) {
-                int i15 = this.f3800a[i14 + 2];
+            if (!this.f3776h) {
+                int i15 = this.f3769a[i14 + 2];
                 int i16 = 1048575 & i15;
                 i10 = 1 << (i15 >>> 20);
                 if (i16 != i11) {
-                    i12 = f3799s.getInt(obj, i16);
+                    i12 = f3768s.getInt(obj, i16);
                     i11 = i16;
                 }
             } else {
@@ -2141,7 +2141,7 @@ final class r0 implements d1 {
                 return false;
             }
         }
-        if (this.f3805f && !this.f3815p.c(obj).k()) {
+        if (this.f3774f && !this.f3784p.c(obj).k()) {
             return false;
         }
         return true;
@@ -2149,7 +2149,7 @@ final class r0 implements d1 {
 
     @Override // androidx.datastore.preferences.protobuf.d1
     public int e(Object obj) {
-        if (this.f3807h) {
+        if (this.f3776h) {
             return t(obj);
         }
         return s(obj);
@@ -2157,14 +2157,14 @@ final class r0 implements d1 {
 
     @Override // androidx.datastore.preferences.protobuf.d1
     public Object f() {
-        return this.f3812m.a(this.f3804e);
+        return this.f3781m.a(this.f3773e);
     }
 
     @Override // androidx.datastore.preferences.protobuf.d1
     public int g(Object obj) {
         int i10;
         int f10;
-        int length = this.f3800a.length;
+        int length = this.f3769a.length;
         int i11 = 0;
         for (int i12 = 0; i12 < length; i12 += 3) {
             int h02 = h0(i12);
@@ -2471,9 +2471,9 @@ final class r0 implements d1 {
                     }
             }
         }
-        int hashCode = (i11 * 53) + this.f3814o.g(obj).hashCode();
-        if (this.f3805f) {
-            return (hashCode * 53) + this.f3815p.c(obj).hashCode();
+        int hashCode = (i11 * 53) + this.f3783o.g(obj).hashCode();
+        if (this.f3774f) {
+            return (hashCode * 53) + this.f3784p.c(obj).hashCode();
         }
         return hashCode;
     }
@@ -2482,7 +2482,7 @@ final class r0 implements d1 {
     public void h(Object obj, r1 r1Var) {
         if (r1Var.y() == r1.a.DESCENDING) {
             k0(obj, r1Var);
-        } else if (this.f3807h) {
+        } else if (this.f3776h) {
             j0(obj, r1Var);
         } else {
             i0(obj, r1Var);
@@ -2491,17 +2491,17 @@ final class r0 implements d1 {
 
     @Override // androidx.datastore.preferences.protobuf.d1
     public boolean i(Object obj, Object obj2) {
-        int length = this.f3800a.length;
+        int length = this.f3769a.length;
         for (int i10 = 0; i10 < length; i10 += 3) {
             if (!m(obj, obj2, i10)) {
                 return false;
             }
         }
-        if (!this.f3814o.g(obj).equals(this.f3814o.g(obj2))) {
+        if (!this.f3783o.g(obj).equals(this.f3783o.g(obj2))) {
             return false;
         }
-        if (this.f3805f) {
-            return this.f3815p.c(obj).equals(this.f3815p.c(obj2));
+        if (this.f3774f) {
+            return this.f3784p.c(obj).equals(this.f3784p.c(obj2));
         }
         return true;
     }

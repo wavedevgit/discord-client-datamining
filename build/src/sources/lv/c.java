@@ -1,11 +1,32 @@
 package lv;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-@Retention(RetentionPolicy.RUNTIME)
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.concurrent.Executor;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public @interface c {
-    boolean encoded() default false;
+class c {
 
-    String value();
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static final class a extends c {
+        @Override // lv.c
+        List a(Executor executor) {
+            return Arrays.asList(new g(), new i(executor));
+        }
+
+        @Override // lv.c
+        List b() {
+            return Collections.singletonList(new t());
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public List a(Executor executor) {
+        return Collections.singletonList(new i(executor));
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public List b() {
+        return Collections.EMPTY_LIST;
+    }
 }

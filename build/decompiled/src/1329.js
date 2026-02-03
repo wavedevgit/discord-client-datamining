@@ -17,42 +17,42 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.clearOneofValue = var0;
     var2.getSelectedOneofValue = var0;
     var3 = function arg0() {
-        _fun14933: for (var _fun14933_ip = 0;;) switch (_fun14933_ip) {
+        _fun14934: for (var _fun14934_ip = 0;;) switch (_fun14934_ip) {
             case 0:
                 var3 = arg0;
                 var1 = 'object';
                 var0 = typeof var3;
                 if (!(var1 === var0)) {
-                    _fun14933_ip = 156;
-                    continue _fun14933
+                    _fun14934_ip = 156;
+                    continue _fun14934
                 }
             case 17:
                 var0 = null;
                 if (!(var0 !== var3)) {
-                    _fun14933_ip = 156;
-                    continue _fun14933
+                    _fun14934_ip = 156;
+                    continue _fun14934
                 }
             case 26:
                 var1 = var3.hasOwnProperty;
                 var0 = 'oneofKind';
                 var0 = var1.bind(var3)(var0);
                 if (!var0) {
-                    _fun14933_ip = 156;
-                    continue _fun14933
+                    _fun14934_ip = 156;
+                    continue _fun14934
                 }
             case 44:
                 var0 = var3.oneofKind;
                 var1 = typeof var0;
                 var0 = 'string';
                 if (!(var0 !== var1)) {
-                    _fun14933_ip = 105;
-                    continue _fun14933
+                    _fun14934_ip = 105;
+                    continue _fun14934
                 }
             case 61:
                 var0 = 'undefined';
                 if (!(var0 !== var1)) {
-                    _fun14933_ip = 73;
-                    continue _fun14933
+                    _fun14934_ip = 73;
+                    continue _fun14934
                 }
             case 69:
                 var0 = false;
@@ -72,8 +72,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = undefined;
                 var0 = var0 !== var1;
                 if (!var0) {
-                    _fun14933_ip = 154;
-                    continue _fun14933
+                    _fun14934_ip = 154;
+                    continue _fun14934
                 }
             case 124:
                 var1 = global;
@@ -99,34 +99,6 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.getOneofValue = var3;
     var3 = function arg0, arg1, arg2() {
-        _fun14935: for (var _fun14935_ip = 0;;) switch (_fun14935_ip) {
-            case 0:
-                var3 = arg0;
-                var2 = arg1;
-                var1 = arg2;
-                var4 = var3.oneofKind;
-                var0 = undefined;
-                if (!(var0 !== var4)) {
-                    _fun14935_ip = 31;
-                    continue _fun14935
-                }
-            case 21:
-                var4 = var3.oneofKind;
-                var4 = delete var3[var4];
-            case 31:
-                var3.oneofKind = var2;
-                if (!(var0 !== var1)) {
-                    _fun14935_ip = 45;
-                    continue _fun14935
-                }
-            case 41:
-                var3[var2] = var1;
-            case 45:
-                return var0;
-        }
-    };
-    var2.setOneofValue = var3;
-    var3 = function arg0, arg1, arg2() {
         _fun14936: for (var _fun14936_ip = 0;;) switch (_fun14936_ip) {
             case 0:
                 var3 = arg0;
@@ -143,17 +115,45 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = delete var3[var4];
             case 31:
                 var3.oneofKind = var2;
+                if (!(var0 !== var1)) {
+                    _fun14936_ip = 45;
+                    continue _fun14936
+                }
+            case 41:
+                var3[var2] = var1;
+            case 45:
+                return var0;
+        }
+    };
+    var2.setOneofValue = var3;
+    var3 = function arg0, arg1, arg2() {
+        _fun14937: for (var _fun14937_ip = 0;;) switch (_fun14937_ip) {
+            case 0:
+                var3 = arg0;
+                var2 = arg1;
+                var1 = arg2;
+                var4 = var3.oneofKind;
+                var0 = undefined;
+                if (!(var0 !== var4)) {
+                    _fun14937_ip = 31;
+                    continue _fun14937
+                }
+            case 21:
+                var4 = var3.oneofKind;
+                var4 = delete var3[var4];
+            case 31:
+                var3.oneofKind = var2;
                 var4 = var0 !== var1;
                 if (!var4) {
-                    _fun14936_ip = 48;
-                    continue _fun14936
+                    _fun14937_ip = 48;
+                    continue _fun14937
                 }
             case 44:
                 var4 = var0 !== var2;
             case 48:
                 if (!var4) {
-                    _fun14936_ip = 55;
-                    continue _fun14936
+                    _fun14937_ip = 55;
+                    continue _fun14937
                 }
             case 51:
                 var3[var2] = var1;
@@ -163,14 +163,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.setUnknownOneofValue = var3;
     var3 = function arg0() {
-        _fun14937: for (var _fun14937_ip = 0;;) switch (_fun14937_ip) {
+        _fun14938: for (var _fun14938_ip = 0;;) switch (_fun14938_ip) {
             case 0:
                 var1 = arg0;
                 var2 = var1.oneofKind;
                 var0 = undefined;
                 if (!(var0 !== var2)) {
-                    _fun14937_ip = 25;
-                    continue _fun14937
+                    _fun14938_ip = 25;
+                    continue _fun14938
                 }
             case 15:
                 var2 = var1.oneofKind;
@@ -182,14 +182,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.clearOneofValue = var3;
     var1 = function arg0() {
-        _fun14938: for (var _fun14938_ip = 0;;) switch (_fun14938_ip) {
+        _fun14939: for (var _fun14939_ip = 0;;) switch (_fun14939_ip) {
             case 0:
                 var1 = arg0;
                 var2 = var1.oneofKind;
                 var0 = undefined;
                 if (!(var0 === var2)) {
-                    _fun14938_ip = 17;
-                    continue _fun14938
+                    _fun14939_ip = 17;
+                    continue _fun14939
                 }
             case 15:
                 return var0;

@@ -70,9 +70,9 @@ public final class NextStep_Selfie_PromptPageJsonAdapter extends h {
             String str21 = str8;
             if (reader.hasNext()) {
                 String str22 = str9;
-                switch (reader.t0(this.options)) {
+                switch (reader.A0(this.options)) {
                     case -1:
-                        reader.F0();
+                        reader.E0();
                         reader.P();
                         str9 = str22;
                         str = str14;
@@ -95,7 +95,7 @@ public final class NextStep_Selfie_PromptPageJsonAdapter extends h {
                             str7 = str20;
                             break;
                         } else {
-                            throw tm.c.x("title", "selfieTitle", reader);
+                            throw vm.c.x("title", "selfieTitle", reader);
                         }
                     case 1:
                         String str23 = (String) this.stringAdapter.fromJson(reader);
@@ -110,7 +110,7 @@ public final class NextStep_Selfie_PromptPageJsonAdapter extends h {
                             str7 = str20;
                             break;
                         } else {
-                            throw tm.c.x("prompt", "selfiePrompt", reader);
+                            throw vm.c.x("prompt", "selfiePrompt", reader);
                         }
                     case 2:
                         String str24 = (String) this.stringAdapter.fromJson(reader);
@@ -125,7 +125,7 @@ public final class NextStep_Selfie_PromptPageJsonAdapter extends h {
                             str7 = str20;
                             break;
                         } else {
-                            throw tm.c.x("promptCenter", "selfiePromptCenter", reader);
+                            throw vm.c.x("promptCenter", "selfiePromptCenter", reader);
                         }
                     case 3:
                         str4 = (String) this.stringAdapter.fromJson(reader);
@@ -139,7 +139,7 @@ public final class NextStep_Selfie_PromptPageJsonAdapter extends h {
                             str7 = str20;
                             break;
                         } else {
-                            throw tm.c.x("disclosure", "agreeToPolicy", reader);
+                            throw vm.c.x("disclosure", "agreeToPolicy", reader);
                         }
                     case 4:
                         str5 = (String) this.stringAdapter.fromJson(reader);
@@ -153,7 +153,7 @@ public final class NextStep_Selfie_PromptPageJsonAdapter extends h {
                             str7 = str20;
                             break;
                         } else {
-                            throw tm.c.x("buttonSubmit", "btnSubmit", reader);
+                            throw vm.c.x("buttonSubmit", "btnSubmit", reader);
                         }
                     case 5:
                         str6 = (String) this.nullableStringAdapter.fromJson(reader);
@@ -262,15 +262,15 @@ public final class NextStep_Selfie_PromptPageJsonAdapter extends h {
                                 if (str18 != null) {
                                     return new NextStep.Selfie.PromptPage(str14, str15, str16, str17, str18, str19, str20, str21, str25, str10, str11, str12, str13);
                                 }
-                                throw tm.c.o("buttonSubmit", "btnSubmit", reader);
+                                throw vm.c.o("buttonSubmit", "btnSubmit", reader);
                             }
-                            throw tm.c.o("disclosure", "agreeToPolicy", reader);
+                            throw vm.c.o("disclosure", "agreeToPolicy", reader);
                         }
-                        throw tm.c.o("promptCenter", "selfiePromptCenter", reader);
+                        throw vm.c.o("promptCenter", "selfiePromptCenter", reader);
                     }
-                    throw tm.c.o("prompt", "selfiePrompt", reader);
+                    throw vm.c.o("prompt", "selfiePrompt", reader);
                 }
-                throw tm.c.o("title", "selfieTitle", reader);
+                throw vm.c.o("title", "selfieTitle", reader);
             }
         }
     }
@@ -280,31 +280,31 @@ public final class NextStep_Selfie_PromptPageJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (promptPage != null) {
             writer.l();
-            writer.t0("selfieTitle");
+            writer.A0("selfieTitle");
             this.stringAdapter.toJson(writer, promptPage.getTitle());
-            writer.t0("selfiePrompt");
+            writer.A0("selfiePrompt");
             this.stringAdapter.toJson(writer, promptPage.getPrompt());
-            writer.t0("selfiePromptCenter");
+            writer.A0("selfiePromptCenter");
             this.stringAdapter.toJson(writer, promptPage.getPromptCenter());
-            writer.t0("agreeToPolicy");
+            writer.A0("agreeToPolicy");
             this.stringAdapter.toJson(writer, promptPage.getDisclosure());
-            writer.t0("btnSubmit");
+            writer.A0("btnSubmit");
             this.stringAdapter.toJson(writer, promptPage.getButtonSubmit());
-            writer.t0("cameraPermissionsTitle");
+            writer.A0("cameraPermissionsTitle");
             this.nullableStringAdapter.toJson(writer, promptPage.getCameraPermissionsTitle());
-            writer.t0("cameraPermissionsPrompt");
+            writer.A0("cameraPermissionsPrompt");
             this.nullableStringAdapter.toJson(writer, promptPage.getCameraPermissionsPrompt());
-            writer.t0("cameraPermissionsBtnContinueMobile");
+            writer.A0("cameraPermissionsBtnContinueMobile");
             this.nullableStringAdapter.toJson(writer, promptPage.getCameraPermissionsAllowButtonText());
-            writer.t0("cameraPermissionsBtnCancel");
+            writer.A0("cameraPermissionsBtnCancel");
             this.nullableStringAdapter.toJson(writer, promptPage.getCameraPermissionsCancelButtonText());
-            writer.t0("microphonePermissionsBtnCancel");
+            writer.A0("microphonePermissionsBtnCancel");
             this.nullableStringAdapter.toJson(writer, promptPage.getMicrophonePermissionsBtnCancel());
-            writer.t0("microphonePermissionsBtnContinueMobile");
+            writer.A0("microphonePermissionsBtnContinueMobile");
             this.nullableStringAdapter.toJson(writer, promptPage.getMicrophonePermissionsBtnContinueMobile());
-            writer.t0("microphonePermissionsPrompt");
+            writer.A0("microphonePermissionsPrompt");
             this.nullableStringAdapter.toJson(writer, promptPage.getMicrophonePermissionsPrompt());
-            writer.t0("microphonePermissionsTitle");
+            writer.A0("microphonePermissionsTitle");
             this.nullableStringAdapter.toJson(writer, promptPage.getMicrophonePermissionsTitle());
             writer.E();
             return;

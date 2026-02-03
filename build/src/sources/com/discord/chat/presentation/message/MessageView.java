@@ -173,7 +173,7 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
         static {
             ChainPart[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = qr.a.a($values);
+            $ENTRIES = sr.a.a($values);
         }
 
         private ChainPart(String str, int i10) {
@@ -343,7 +343,7 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
             roleDot3.setVisibility(8);
         }
         if (message.getClanTag() != null && message.m237getClanTagGuildIdqOKuAAo() != null) {
-            ClanTagChipletView.m503configureD0ylKIU$default(this.binding.clanTagChiplet, message.getClanTag(), message.getClanBadgeUrl(), message.m237getClanTagGuildIdqOKuAAo().m1082unboximpl(), chatEventHandler, 0.0f, 16, null);
+            ClanTagChipletView.m503configureD0ylKIU$default(this.binding.clanTagChiplet, message.getClanTag(), message.getClanBadgeUrl(), message.m237getClanTagGuildIdqOKuAAo().m1081unboximpl(), chatEventHandler, 0.0f, 16, null);
             ClanTagChipletView clanTagChiplet = this.binding.clanTagChiplet;
             Intrinsics.checkNotNullExpressionValue(clanTagChiplet, "clanTagChiplet");
             clanTagChiplet.setVisibility(0);
@@ -373,7 +373,7 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
             gameIcon2.setVisibility(8);
         }
         if (message.getConnectionsRoleTag() != null) {
-            this.binding.connectionsRoleTag.m505configureConnectionsRoleTaguESh2Cg(message.m235getAuthorIdwUX8bhU(), message.m238getGuildIdqOKuAAo(), ChannelId.m1060boximpl(message.m236getChannelIdo4g7jtM()), message.getConnectionsRoleTag(), chatEventHandler);
+            this.binding.connectionsRoleTag.m505configureConnectionsRoleTaguESh2Cg(message.m235getAuthorIdwUX8bhU(), message.m238getGuildIdqOKuAAo(), ChannelId.m1059boximpl(message.m236getChannelIdo4g7jtM()), message.getConnectionsRoleTag(), chatEventHandler);
             ConnectionsRoleTagView connectionsRoleTag = this.binding.connectionsRoleTag;
             Intrinsics.checkNotNullExpressionValue(connectionsRoleTag, "connectionsRoleTag");
             connectionsRoleTag.setVisibility(0);
@@ -397,14 +397,14 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
     /* JADX INFO: Access modifiers changed from: private */
     public static final void configureAuthor$lambda$49$lambda$47(Message message, ChatEventHandler chatEventHandler, View view) {
         if (message.m235getAuthorIdwUX8bhU() != null) {
-            chatEventHandler.mo450onTapAvatarx5gers8(message.m239getId3Eiw7ao(), message.m235getAuthorIdwUX8bhU().m1147unboximpl());
+            chatEventHandler.mo450onTapAvatarx5gers8(message.m239getId3Eiw7ao(), message.m235getAuthorIdwUX8bhU().m1146unboximpl());
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final boolean configureAuthor$lambda$49$lambda$48(Message message, ChatEventHandler chatEventHandler, View view) {
         if (message.m235getAuthorIdwUX8bhU() != null) {
-            chatEventHandler.mo441onLongPressAvatarx5gers8(message.m239getId3Eiw7ao(), message.m235getAuthorIdwUX8bhU().m1147unboximpl());
+            chatEventHandler.mo441onLongPressAvatarx5gers8(message.m239getId3Eiw7ao(), message.m235getAuthorIdwUX8bhU().m1146unboximpl());
             return true;
         }
         return true;
@@ -430,14 +430,14 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
     /* JADX INFO: Access modifiers changed from: private */
     public static final void configureAuthorClickListeners$lambda$16(Message message, ChatEventHandler chatEventHandler, View view) {
         if (message.m235getAuthorIdwUX8bhU() != null) {
-            chatEventHandler.mo487onTapUsernamex5gers8(message.m239getId3Eiw7ao(), message.m235getAuthorIdwUX8bhU().m1147unboximpl());
+            chatEventHandler.mo487onTapUsernamex5gers8(message.m239getId3Eiw7ao(), message.m235getAuthorIdwUX8bhU().m1146unboximpl());
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final boolean configureAuthorClickListeners$lambda$17(Message message, ChatEventHandler chatEventHandler, View view) {
         if (message.m235getAuthorIdwUX8bhU() != null) {
-            chatEventHandler.mo444onLongPressUsernamex5gers8(message.m239getId3Eiw7ao(), message.m235getAuthorIdwUX8bhU().m1147unboximpl());
+            chatEventHandler.mo444onLongPressUsernamex5gers8(message.m239getId3Eiw7ao(), message.m235getAuthorIdwUX8bhU().m1146unboximpl());
             return true;
         }
         return true;
@@ -739,7 +739,7 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
                 this.accessories.add(new PostPreviewEmbedMessageAccessory(message2.m239getId3Eiw7ao(), postPreviewEmbed, i18, SpoilerAttributes.Companion.forMediaPostPreviewEmbed(postPreviewEmbed, message2, i18, postPreviewEmbed.getVerifyAge()), null));
                 i18 = i19;
             }
-            Unit unit = Unit.f33074a;
+            Unit unit = Unit.f32464a;
         }
         List<Embed> embeds = message2.getEmbeds();
         if (embeds != null) {
@@ -774,7 +774,7 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
                 }
                 i20 = i21;
             }
-            Unit unit2 = Unit.f33074a;
+            Unit unit2 = Unit.f32464a;
         }
         List<GiftEmbed> giftCodes = message2.getGiftCodes();
         if (giftCodes != null) {
@@ -787,7 +787,7 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
                 this.accessories.add(new GiftMessageAccessory(message2.m239getId3Eiw7ao(), i22, (GiftEmbed) obj4, null));
                 i22 = i23;
             }
-            Unit unit3 = Unit.f33074a;
+            Unit unit3 = Unit.f32464a;
         }
         GiftEmbed referralTrialOffer = message2.getReferralTrialOffer();
         if (referralTrialOffer != null) {
@@ -833,21 +833,21 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
                     } else if (codedLinkEmbed instanceof GuildProfileInviteEmbedImpl) {
                         guildProfileInviteMessageAccessory = new GuildProfileInviteMessageAccessory(message2.m239getId3Eiw7ao(), i24, (GuildProfileInviteEmbedImpl) codedLinkEmbed, null);
                     } else {
-                        throw new jr.p();
+                        throw new lr.p();
                     }
                     arrayList10.add(guildProfileInviteMessageAccessory);
-                    Unit unit4 = Unit.f33074a;
+                    Unit unit4 = Unit.f32464a;
                 }
                 i24 = i25;
             }
-            Unit unit5 = Unit.f33074a;
+            Unit unit5 = Unit.f32464a;
         }
         List<Sticker> stickers = message2.getStickers();
         if (stickers != null) {
             for (Sticker sticker : stickers) {
                 this.accessories.add(new StickerMessageAccessory(message2.m239getId3Eiw7ao(), sticker, null));
             }
-            Unit unit6 = Unit.f33074a;
+            Unit unit6 = Unit.f32464a;
         }
         if (message2.getComponents() != null) {
             defaultConstructorMarker = null;
@@ -966,7 +966,7 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final boolean generateMessageAccessories$getLongClickListener$lambda$19$lambda$18(Function6 function6, Message message, int i10, MediaType mediaType, View view) {
-        function6.invoke(MessageId.m1086boximpl(message.m239getId3Eiw7ao()), ChannelId.m1060boximpl(message.m236getChannelIdo4g7jtM()), Integer.valueOf(i10), mediaType, null, null);
+        function6.invoke(MessageId.m1085boximpl(message.m239getId3Eiw7ao()), ChannelId.m1059boximpl(message.m236getChannelIdo4g7jtM()), Integer.valueOf(i10), mediaType, null, null);
         return true;
     }
 
@@ -1064,42 +1064,42 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void setMessage$lambda$11$lambda$10(Function2 function2, Message message, View view) {
-        function2.invoke(MessageId.m1086boximpl(message.m239getId3Eiw7ao()), ChannelId.m1060boximpl(message.m236getChannelIdo4g7jtM()));
+        function2.invoke(MessageId.m1085boximpl(message.m239getId3Eiw7ao()), ChannelId.m1059boximpl(message.m236getChannelIdo4g7jtM()));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final boolean setMessage$lambda$13$lambda$12(Function6 function6, Message message, View view) {
-        function6.invoke(MessageId.m1086boximpl(message.m239getId3Eiw7ao()), ChannelId.m1060boximpl(message.m236getChannelIdo4g7jtM()), null, null, null, null);
+        function6.invoke(MessageId.m1085boximpl(message.m239getId3Eiw7ao()), ChannelId.m1059boximpl(message.m236getChannelIdo4g7jtM()), null, null, null, null);
         return true;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void setMessage$lambda$15$lambda$14(Function2 function2, Message message, View view) {
-        function2.invoke(MessageId.m1086boximpl(message.m239getId3Eiw7ao()), ChannelId.m1060boximpl(message.m236getChannelIdo4g7jtM()));
+        function2.invoke(MessageId.m1085boximpl(message.m239getId3Eiw7ao()), ChannelId.m1059boximpl(message.m236getChannelIdo4g7jtM()));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setMessage$lambda$5(ChatEventHandler chatEventHandler, Message message) {
         ChatEventHandler.DefaultImpls.m490onInitiateReply8a0ehIg$default(chatEventHandler, message.m239getId3Eiw7ao(), message.m236getChannelIdo4g7jtM(), null, null, 12, null);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setMessage$lambda$6(ChatEventHandler chatEventHandler, Message message) {
         chatEventHandler.mo438onInitiateThreadpfaIj0E(message.m239getId3Eiw7ao(), message.m236getChannelIdo4g7jtM());
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setMessage$lambda$7(ChatEventHandler chatEventHandler, Message message) {
         chatEventHandler.mo436onInitiateEditpfaIj0E(message.m239getId3Eiw7ao(), message.m236getChannelIdo4g7jtM());
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setMessage$lambda$9(ChatEventHandler chatEventHandler, Message message) {
         chatEventHandler.mo469onTapMessageReply0eiqbug(message.m236getChannelIdo4g7jtM(), message.m239getId3Eiw7ao());
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     @Override // com.discord.chat.presentation.list.SwipeReplyInitiator
@@ -1196,7 +1196,7 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
     }
 
     public final void setMessage(@NotNull final Message message, @NotNull MessageContext messageContext, @NotNull final ChatEventHandler eventHandler, ComponentProvider componentProvider, @NotNull Function0<? extends ChainPart> onChainPart, boolean z10, boolean z11) {
-        boolean m1090equalsimpl0;
+        boolean m1089equalsimpl0;
         View.OnClickListener onClickListener;
         View.OnLongClickListener onLongClickListener;
         View.OnLongClickListener onLongClickListener2;
@@ -1205,17 +1205,17 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
         Intrinsics.checkNotNullParameter(messageContext, "messageContext");
         Intrinsics.checkNotNullParameter(eventHandler, "eventHandler");
         Intrinsics.checkNotNullParameter(onChainPart, "onChainPart");
-        bindKey(MessageId.m1086boximpl(message.m239getId3Eiw7ao()));
+        bindKey(MessageId.m1085boximpl(message.m239getId3Eiw7ao()));
         String str = this.messageId;
         String m239getId3Eiw7ao = message.m239getId3Eiw7ao();
         if (str == null) {
-            m1090equalsimpl0 = false;
+            m1089equalsimpl0 = false;
         } else {
-            m1090equalsimpl0 = MessageId.m1090equalsimpl0(str, m239getId3Eiw7ao);
+            m1089equalsimpl0 = MessageId.m1089equalsimpl0(str, m239getId3Eiw7ao);
         }
         this.messageId = message.m239getId3Eiw7ao();
         View.OnClickListener onClickListener2 = null;
-        if (!m1090equalsimpl0 && messageContext.getContextType() == MessageContextType.SEARCH) {
+        if (!m1089equalsimpl0 && messageContext.getContextType() == MessageContextType.SEARCH) {
             MessageAccessoriesView.clear$default(this.binding.accessoriesView, false, 1, null);
         }
         this.onChainPart = onChainPart;
@@ -1383,7 +1383,7 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
         int i10 = WhenMappings.$EnumSwitchMapping$1[((ChainPart) this.onChainPart.invoke()).ordinal()];
         if (i10 != 1 && i10 != 2) {
             if (i10 != 3 && i10 != 4) {
-                throw new jr.p();
+                throw new lr.p();
             }
             dpToPx = 0;
         } else {
@@ -1440,7 +1440,7 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
                 return unit;
             }
         };
@@ -1448,7 +1448,7 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
                 return unit;
             }
         };
@@ -1456,7 +1456,7 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
                 return unit;
             }
         };

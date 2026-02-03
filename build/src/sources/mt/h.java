@@ -1,18 +1,71 @@
 package mt;
 
-import java.util.Set;
-/* JADX INFO: Access modifiers changed from: package-private */
+import java.io.Serializable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface h {
-    h a(kt.p pVar);
+public final class h implements Comparable, Serializable {
 
-    int d(kt.o oVar, Appendable appendable, kt.d dVar, Set set, boolean z10);
+    /* renamed from: d  reason: collision with root package name */
+    public static final h f39411d = new h(0);
 
-    h e(c cVar, kt.d dVar, int i10);
+    /* renamed from: e  reason: collision with root package name */
+    public static final h f39412e = new h(1);
+    private final long days;
 
-    void f(CharSequence charSequence, s sVar, kt.d dVar, t tVar, boolean z10);
+    private h(long j10) {
+        this.days = j10;
+    }
 
-    boolean g();
+    public static h e(long j10) {
+        if (j10 == 0) {
+            return f39411d;
+        }
+        if (j10 == 1) {
+            return f39412e;
+        }
+        return new h(j10);
+    }
 
-    kt.p getElement();
+    @Override // java.lang.Comparable
+    /* renamed from: a */
+    public int compareTo(h hVar) {
+        long j10 = this.days;
+        long j11 = hVar.days;
+        if (j10 < j11) {
+            return -1;
+        }
+        if (j10 > j11) {
+            return 1;
+        }
+        return 0;
+    }
+
+    public long d() {
+        return this.days;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if ((obj instanceof h) && this.days == ((h) obj).days) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        long j10 = this.days;
+        return (int) (j10 ^ (j10 >>> 32));
+    }
+
+    public String toString() {
+        StringBuilder sb2 = new StringBuilder();
+        if (this.days < 0) {
+            sb2.append('-');
+        }
+        sb2.append('P');
+        sb2.append(Math.abs(this.days));
+        sb2.append('D');
+        return sb2.toString();
+    }
 }

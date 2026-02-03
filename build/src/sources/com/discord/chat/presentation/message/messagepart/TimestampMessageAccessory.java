@@ -73,7 +73,7 @@ public final class TimestampMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof TimestampMessageAccessory) {
             TimestampMessageAccessory timestampMessageAccessory = (TimestampMessageAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, timestampMessageAccessory.messageId) && Intrinsics.areEqual(this.timestamp, timestampMessageAccessory.timestamp) && this.textColor == timestampMessageAccessory.textColor && this.discordFont == timestampMessageAccessory.discordFont;
+            return MessageId.m1089equalsimpl0(this.messageId, timestampMessageAccessory.messageId) && Intrinsics.areEqual(this.timestamp, timestampMessageAccessory.timestamp) && this.textColor == timestampMessageAccessory.textColor && this.discordFont == timestampMessageAccessory.discordFont;
         }
         return false;
     }
@@ -100,16 +100,16 @@ public final class TimestampMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (((((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.timestamp.hashCode()) * 31) + Integer.hashCode(this.textColor)) * 31) + this.discordFont.hashCode();
+        return (((((MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.timestamp.hashCode()) * 31) + Integer.hashCode(this.textColor)) * 31) + this.discordFont.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         String str = this.timestamp;
         int i10 = this.textColor;
         DiscordFont discordFont = this.discordFont;
-        return "TimestampMessageAccessory(messageId=" + m1093toStringimpl + ", timestamp=" + str + ", textColor=" + i10 + ", discordFont=" + discordFont + ")";
+        return "TimestampMessageAccessory(messageId=" + m1092toStringimpl + ", timestamp=" + str + ", textColor=" + i10 + ", discordFont=" + discordFont + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

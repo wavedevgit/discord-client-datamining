@@ -5,7 +5,7 @@ import ui.c;
 final class sa implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final sa f38628a = new sa();
+    static final sa f38425a = new sa();
 
     static {
         c.b a10 = ui.c.a("identifiedLanguage");

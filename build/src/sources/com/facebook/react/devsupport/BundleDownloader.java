@@ -138,10 +138,10 @@ public final class BundleDownloader {
 
         /* JADX INFO: Access modifiers changed from: private */
         public final boolean storePlainJSInFile(BufferedSource bufferedSource, File file) {
-            Sink c10 = ju.b.a().c(file);
+            Sink c10 = lu.b.a().c(file);
             try {
                 bufferedSource.e2(c10);
-                ur.c.a(c10, null);
+                wr.c.a(c10, null);
                 return true;
             } finally {
             }
@@ -214,7 +214,7 @@ public final class BundleDownloader {
                         if (headers.containsKey("X-Http-Status")) {
                             h11 = Integer.parseInt(headers.getOrDefault("X-Http-Status", "0"));
                         }
-                        this.processBundleResult(str, h11, Headers.f44189e.a(headers), body, file, bundleInfo, devBundleDownloadListener);
+                        this.processBundleResult(str, h11, Headers.f43989e.a(headers), body, file, bundleInfo, devBundleDownloadListener);
                     } else if (headers.containsKey("Content-Type") && Intrinsics.areEqual(headers.get("Content-Type"), "application/json")) {
                         try {
                             JSONObject jSONObject = new JSONObject(body.T1());
@@ -272,11 +272,11 @@ public final class BundleDownloader {
             Call a10 = this.client.a(requestBuilder.l(str).a("Accept", "multipart/mixed").b());
             this.downloadBundleFromURLCall = a10;
             if (a10 != null) {
-                a10.t0(new ut.b() { // from class: com.facebook.react.devsupport.BundleDownloader$downloadBundleFromURL$1
+                a10.M0(new wt.b() { // from class: com.facebook.react.devsupport.BundleDownloader$downloadBundleFromURL$1
                     /* JADX WARN: Code restructure failed: missing block: B:4:0x0013, code lost:
                         r0 = r4.this$0.downloadBundleFromURLCall;
                      */
-                    @Override // ut.b
+                    @Override // wt.b
                     /*
                         Code decompiled incorrectly, please refer to instructions dump.
                         To view partially-correct add '--show-bad-code' argument
@@ -333,7 +333,7 @@ public final class BundleDownloader {
                     /* JADX WARN: Type inference failed for: r11v2 */
                     /* JADX WARN: Type inference failed for: r11v4 */
                     /* JADX WARN: Type inference failed for: r11v5, types: [okhttp3.Call] */
-                    @Override // ut.b
+                    @Override // wt.b
                     /*
                         Code decompiled incorrectly, please refer to instructions dump.
                         To view partially-correct add '--show-bad-code' argument
@@ -374,7 +374,7 @@ public final class BundleDownloader {
                             java.lang.String r11 = r11.toString()     // Catch: java.lang.Throwable -> L79
                             java.lang.String r2 = "content-type"
                             r3 = 2
-                            java.lang.String r2 = okhttp3.Response.E0(r12, r2, r8, r3, r8)     // Catch: java.lang.Throwable -> L79
+                            java.lang.String r2 = okhttp3.Response.D0(r12, r2, r8, r3, r8)     // Catch: java.lang.Throwable -> L79
                             if (r2 != 0) goto L4a
                             java.lang.String r2 = ""
                         L4a:
@@ -423,11 +423,11 @@ public final class BundleDownloader {
                             r1 = r0
                             goto La7
                         L9a:
-                            kotlin.Unit r0 = kotlin.Unit.f33074a     // Catch: java.lang.Throwable -> L97
-                            ur.c.a(r12, r8)     // Catch: java.lang.Throwable -> La5
+                            kotlin.Unit r0 = kotlin.Unit.f32464a     // Catch: java.lang.Throwable -> L97
+                            wr.c.a(r12, r8)     // Catch: java.lang.Throwable -> La5
                         L9f:
-                            kotlin.Unit r12 = kotlin.Unit.f33074a     // Catch: java.lang.Throwable -> La5
-                            ur.c.a(r11, r8)
+                            kotlin.Unit r12 = kotlin.Unit.f32464a     // Catch: java.lang.Throwable -> La5
+                            wr.c.a(r11, r8)
                             return
                         La5:
                             r0 = move-exception
@@ -436,17 +436,17 @@ public final class BundleDownloader {
                             throw r1     // Catch: java.lang.Throwable -> La8
                         La8:
                             r0 = move-exception
-                            ur.c.a(r12, r1)     // Catch: java.lang.Throwable -> La5
+                            wr.c.a(r12, r1)     // Catch: java.lang.Throwable -> La5
                             throw r0     // Catch: java.lang.Throwable -> La5
                         Lad:
                             com.facebook.react.devsupport.BundleDownloader.access$setDownloadBundleFromURLCall$p(r0, r8)     // Catch: java.lang.Throwable -> La5
-                            ur.c.a(r11, r8)
+                            wr.c.a(r11, r8)
                             return
                         Lb4:
                             throw r12     // Catch: java.lang.Throwable -> Lb5
                         Lb5:
                             r0 = move-exception
-                            ur.c.a(r11, r12)
+                            wr.c.a(r11, r12)
                             throw r0
                         */
                         throw new UnsupportedOperationException("Method not decompiled: com.facebook.react.devsupport.BundleDownloader$downloadBundleFromURL$1.onResponse(okhttp3.Call, okhttp3.Response):void");

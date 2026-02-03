@@ -13,59 +13,59 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private io.sentry.util.r f28492a;
+    private io.sentry.util.r f28853a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final SentryAndroidOptions f28493b;
+    private final SentryAndroidOptions f28854b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f28494c;
+    private final Map f28855c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f28495d;
+    private final Map f28856d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final a2 f28496e;
+    private final a2 f28857e;
 
     /* renamed from: f  reason: collision with root package name */
-    protected io.sentry.util.a f28497f;
+    protected io.sentry.util.a f28858f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final io.sentry.util.r f28498g;
+    private final io.sentry.util.r f28859g;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f28499a;
+        private final int f28860a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f28500b;
+        private final int f28861b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int f28501c;
+        private final int f28862c;
 
         private b(int i10, int i11, int i12) {
-            this.f28499a = i10;
-            this.f28500b = i11;
-            this.f28501c = i12;
+            this.f28860a = i10;
+            this.f28861b = i11;
+            this.f28862c = i12;
         }
     }
 
     public i(io.sentry.util.u uVar, SentryAndroidOptions sentryAndroidOptions, a2 a2Var) {
-        this.f28494c = new ConcurrentHashMap();
-        this.f28495d = new WeakHashMap();
-        this.f28497f = new io.sentry.util.a();
-        this.f28498g = uVar.e("androidx.core.app.FrameMetricsAggregator", sentryAndroidOptions.getLogger());
-        this.f28492a = new io.sentry.util.r(new r.a() { // from class: io.sentry.android.core.d
+        this.f28855c = new ConcurrentHashMap();
+        this.f28856d = new WeakHashMap();
+        this.f28858f = new io.sentry.util.a();
+        this.f28859g = uVar.e("androidx.core.app.FrameMetricsAggregator", sentryAndroidOptions.getLogger());
+        this.f28853a = new io.sentry.util.r(new r.a() { // from class: io.sentry.android.core.d
             @Override // io.sentry.util.r.a
             public final Object a() {
                 return i.e();
             }
         });
-        this.f28493b = sentryAndroidOptions;
-        this.f28496e = a2Var;
+        this.f28854b = sentryAndroidOptions;
+        this.f28857e = a2Var;
     }
 
     public static /* synthetic */ void c(i iVar, Runnable runnable, String str) {
@@ -74,7 +74,7 @@ public final class i {
             runnable.run();
         } catch (Throwable unused) {
             if (str != null) {
-                ILogger logger = iVar.f28493b.getLogger();
+                ILogger logger = iVar.f28854b.getLogger();
                 SentryLevel sentryLevel = SentryLevel.WARNING;
                 logger.c(sentryLevel, "Failed to execute " + str, new Object[0]);
             }
@@ -89,10 +89,10 @@ public final class i {
         int i10;
         int i11;
         SparseIntArray sparseIntArray;
-        if (!i() || !((Boolean) this.f28498g.a()).booleanValue()) {
+        if (!i() || !((Boolean) this.f28859g.a()).booleanValue()) {
             return null;
         }
-        SparseIntArray[] b10 = ((FrameMetricsAggregator) this.f28492a.a()).b();
+        SparseIntArray[] b10 = ((FrameMetricsAggregator) this.f28853a.a()).b();
         int i12 = 0;
         if (b10 != null && b10.length > 0 && (sparseIntArray = b10[0]) != null) {
             int i13 = 0;
@@ -119,11 +119,11 @@ public final class i {
 
     private b h(Activity activity) {
         b g10;
-        b bVar = (b) this.f28495d.remove(activity);
+        b bVar = (b) this.f28856d.remove(activity);
         if (bVar == null || (g10 = g()) == null) {
             return null;
         }
-        return new b(g10.f28499a - bVar.f28499a, g10.f28500b - bVar.f28500b, g10.f28501c - bVar.f28501c);
+        return new b(g10.f28860a - bVar.f28860a, g10.f28861b - bVar.f28861b, g10.f28862c - bVar.f28862c);
     }
 
     private void j(final Runnable runnable, final String str) {
@@ -131,7 +131,7 @@ public final class i {
             if (io.sentry.android.core.internal.util.j.e().a()) {
                 runnable.run();
             } else {
-                this.f28496e.b(new Runnable() { // from class: io.sentry.android.core.g
+                this.f28857e.b(new Runnable() { // from class: io.sentry.android.core.g
                     @Override // java.lang.Runnable
                     public final void run() {
                         i.c(i.this, runnable, str);
@@ -140,7 +140,7 @@ public final class i {
             }
         } catch (Throwable unused) {
             if (str != null) {
-                ILogger logger = this.f28493b.getLogger();
+                ILogger logger = this.f28854b.getLogger();
                 SentryLevel sentryLevel = SentryLevel.WARNING;
                 logger.c(sentryLevel, "Failed to execute " + str, new Object[0]);
             }
@@ -150,12 +150,12 @@ public final class i {
     private void l(Activity activity) {
         b g10 = g();
         if (g10 != null) {
-            this.f28495d.put(activity, g10);
+            this.f28856d.put(activity, g10);
         }
     }
 
     public void f(final Activity activity) {
-        io.sentry.a1 a10 = this.f28497f.a();
+        io.sentry.a1 a10 = this.f28858f.a();
         try {
             if (!i()) {
                 if (a10 != null) {
@@ -167,7 +167,7 @@ public final class i {
             j(new Runnable() { // from class: io.sentry.android.core.e
                 @Override // java.lang.Runnable
                 public final void run() {
-                    ((FrameMetricsAggregator) i.this.f28492a.a()).a(activity);
+                    ((FrameMetricsAggregator) i.this.f28853a.a()).a(activity);
                 }
             }, "FrameMetricsAggregator.add");
             l(activity);
@@ -187,7 +187,7 @@ public final class i {
     }
 
     public boolean i() {
-        if (((Boolean) this.f28498g.a()).booleanValue() && this.f28493b.isEnableFramesTracking() && !this.f28493b.isEnablePerformanceV2()) {
+        if (((Boolean) this.f28859g.a()).booleanValue() && this.f28854b.isEnableFramesTracking() && !this.f28854b.isEnablePerformanceV2()) {
             return true;
         }
         return false;
@@ -207,7 +207,7 @@ public final class i {
         /*
             r5 = this;
             java.lang.String r0 = "none"
-            io.sentry.util.a r1 = r5.f28497f
+            io.sentry.util.a r1 = r5.f28858f
             io.sentry.a1 r1 = r1.a()
             boolean r2 = r5.i()     // Catch: java.lang.Throwable -> L36
             if (r2 != 0) goto L14
@@ -252,7 +252,7 @@ public final class i {
             r6.put(r0, r3)     // Catch: java.lang.Throwable -> L36
             java.lang.String r0 = "frames_frozen"
             r6.put(r0, r4)     // Catch: java.lang.Throwable -> L36
-            java.util.Map r0 = r5.f28494c     // Catch: java.lang.Throwable -> L36
+            java.util.Map r0 = r5.f28855c     // Catch: java.lang.Throwable -> L36
             r0.put(r7, r6)     // Catch: java.lang.Throwable -> L36
             if (r1 == 0) goto L83
             r1.close()
@@ -276,18 +276,18 @@ public final class i {
     }
 
     public void m() {
-        io.sentry.a1 a10 = this.f28497f.a();
+        io.sentry.a1 a10 = this.f28858f.a();
         try {
             if (i()) {
                 j(new Runnable() { // from class: io.sentry.android.core.f
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ((FrameMetricsAggregator) i.this.f28492a.a()).e();
+                        ((FrameMetricsAggregator) i.this.f28853a.a()).e();
                     }
                 }, "FrameMetricsAggregator.stop");
-                ((FrameMetricsAggregator) this.f28492a.a()).d();
+                ((FrameMetricsAggregator) this.f28853a.a()).d();
             }
-            this.f28494c.clear();
+            this.f28855c.clear();
             if (a10 != null) {
                 a10.close();
             }
@@ -304,7 +304,7 @@ public final class i {
     }
 
     public Map n(io.sentry.protocol.x xVar) {
-        io.sentry.a1 a10 = this.f28497f.a();
+        io.sentry.a1 a10 = this.f28858f.a();
         try {
             if (!i()) {
                 if (a10 != null) {
@@ -312,8 +312,8 @@ public final class i {
                 }
                 return null;
             }
-            Map map = (Map) this.f28494c.get(xVar);
-            this.f28494c.remove(xVar);
+            Map map = (Map) this.f28855c.get(xVar);
+            this.f28855c.remove(xVar);
             if (a10 != null) {
                 a10.close();
             }

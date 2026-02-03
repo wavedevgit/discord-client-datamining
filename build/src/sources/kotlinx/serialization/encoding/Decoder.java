@@ -20,7 +20,7 @@ public interface Decoder {
 
     byte H();
 
-    et.b a();
+    gt.b a();
 
     c b(SerialDescriptor serialDescriptor);
 

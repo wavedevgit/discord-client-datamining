@@ -10,28 +10,28 @@ import androidx.annotation.NonNull;
 public class ContentFrameLayout extends FrameLayout {
 
     /* renamed from: d  reason: collision with root package name */
-    private TypedValue f1510d;
+    private TypedValue f1479d;
 
     /* renamed from: e  reason: collision with root package name */
-    private TypedValue f1511e;
+    private TypedValue f1480e;
 
     /* renamed from: i  reason: collision with root package name */
-    private TypedValue f1512i;
+    private TypedValue f1481i;
 
     /* renamed from: o  reason: collision with root package name */
-    private TypedValue f1513o;
+    private TypedValue f1482o;
 
     /* renamed from: p  reason: collision with root package name */
-    private TypedValue f1514p;
+    private TypedValue f1483p;
 
     /* renamed from: q  reason: collision with root package name */
-    private TypedValue f1515q;
+    private TypedValue f1484q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final Rect f1516r;
+    private final Rect f1485r;
 
     /* renamed from: s  reason: collision with root package name */
-    private a f1517s;
+    private a f1486s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface a {
@@ -45,58 +45,58 @@ public class ContentFrameLayout extends FrameLayout {
     }
 
     public void a(int i10, int i11, int i12, int i13) {
-        this.f1516r.set(i10, i11, i12, i13);
+        this.f1485r.set(i10, i11, i12, i13);
         if (isLaidOut()) {
             requestLayout();
         }
     }
 
     public TypedValue getFixedHeightMajor() {
-        if (this.f1514p == null) {
-            this.f1514p = new TypedValue();
+        if (this.f1483p == null) {
+            this.f1483p = new TypedValue();
         }
-        return this.f1514p;
+        return this.f1483p;
     }
 
     public TypedValue getFixedHeightMinor() {
-        if (this.f1515q == null) {
-            this.f1515q = new TypedValue();
+        if (this.f1484q == null) {
+            this.f1484q = new TypedValue();
         }
-        return this.f1515q;
+        return this.f1484q;
     }
 
     public TypedValue getFixedWidthMajor() {
-        if (this.f1512i == null) {
-            this.f1512i = new TypedValue();
+        if (this.f1481i == null) {
+            this.f1481i = new TypedValue();
         }
-        return this.f1512i;
+        return this.f1481i;
     }
 
     public TypedValue getFixedWidthMinor() {
-        if (this.f1513o == null) {
-            this.f1513o = new TypedValue();
+        if (this.f1482o == null) {
+            this.f1482o = new TypedValue();
         }
-        return this.f1513o;
+        return this.f1482o;
     }
 
     public TypedValue getMinWidthMajor() {
-        if (this.f1510d == null) {
-            this.f1510d = new TypedValue();
+        if (this.f1479d == null) {
+            this.f1479d = new TypedValue();
         }
-        return this.f1510d;
+        return this.f1479d;
     }
 
     public TypedValue getMinWidthMinor() {
-        if (this.f1511e == null) {
-            this.f1511e = new TypedValue();
+        if (this.f1480e == null) {
+            this.f1480e = new TypedValue();
         }
-        return this.f1511e;
+        return this.f1480e;
     }
 
     @Override // android.view.ViewGroup, android.view.View
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
-        a aVar = this.f1517s;
+        a aVar = this.f1486s;
         if (aVar != null) {
             aVar.a();
         }
@@ -105,7 +105,7 @@ public class ContentFrameLayout extends FrameLayout {
     @Override // android.view.ViewGroup, android.view.View
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        a aVar = this.f1517s;
+        a aVar = this.f1486s;
         if (aVar != null) {
             aVar.onDetachedFromWindow();
         }
@@ -136,7 +136,7 @@ public class ContentFrameLayout extends FrameLayout {
     }
 
     public void setAttachListener(a aVar) {
-        this.f1517s = aVar;
+        this.f1486s = aVar;
     }
 
     public ContentFrameLayout(@NonNull Context context, AttributeSet attributeSet) {
@@ -145,6 +145,6 @@ public class ContentFrameLayout extends FrameLayout {
 
     public ContentFrameLayout(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        this.f1516r = new Rect();
+        this.f1485r = new Rect();
     }
 }

@@ -112,7 +112,7 @@ public abstract class AbstractClassTypeConstructor extends AbstractTypeConstruct
         if (classifierDescriptor == null) {
             A(2);
         }
-        if ((classifierDescriptor instanceof ClassDescriptor) && a(mo1200getDeclarationDescriptor(), classifierDescriptor)) {
+        if ((classifierDescriptor instanceof ClassDescriptor) && a(mo1197getDeclarationDescriptor(), classifierDescriptor)) {
             return true;
         }
         return false;
@@ -121,7 +121,7 @@ public abstract class AbstractClassTypeConstructor extends AbstractTypeConstruct
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
     @NotNull
     public KotlinBuiltIns getBuiltIns() {
-        KotlinBuiltIns builtIns = DescriptorUtilsKt.getBuiltIns(mo1200getDeclarationDescriptor());
+        KotlinBuiltIns builtIns = DescriptorUtilsKt.getBuiltIns(mo1197getDeclarationDescriptor());
         if (builtIns == null) {
             A(1);
         }
@@ -131,11 +131,11 @@ public abstract class AbstractClassTypeConstructor extends AbstractTypeConstruct
     @Override // kotlin.reflect.jvm.internal.impl.types.ClassifierBasedTypeConstructor, kotlin.reflect.jvm.internal.impl.types.TypeConstructor
     @NotNull
     /* renamed from: getDeclarationDescriptor */
-    public abstract ClassDescriptor mo1200getDeclarationDescriptor();
+    public abstract ClassDescriptor mo1197getDeclarationDescriptor();
 
     @Override // kotlin.reflect.jvm.internal.impl.types.AbstractTypeConstructor
     protected KotlinType m() {
-        if (KotlinBuiltIns.isSpecialClassWithNoSupertypes(mo1200getDeclarationDescriptor())) {
+        if (KotlinBuiltIns.isSpecialClassWithNoSupertypes(mo1197getDeclarationDescriptor())) {
             return null;
         }
         return getBuiltIns().getAnyType();
@@ -143,7 +143,7 @@ public abstract class AbstractClassTypeConstructor extends AbstractTypeConstruct
 
     @Override // kotlin.reflect.jvm.internal.impl.types.AbstractTypeConstructor
     protected Collection n(boolean z10) {
-        DeclarationDescriptor containingDeclaration = mo1200getDeclarationDescriptor().getContainingDeclaration();
+        DeclarationDescriptor containingDeclaration = mo1197getDeclarationDescriptor().getContainingDeclaration();
         if (!(containingDeclaration instanceof ClassDescriptor)) {
             List list = Collections.EMPTY_LIST;
             if (list == null) {
@@ -154,9 +154,9 @@ public abstract class AbstractClassTypeConstructor extends AbstractTypeConstruct
         SmartList smartList = new SmartList();
         ClassDescriptor classDescriptor = (ClassDescriptor) containingDeclaration;
         smartList.add(classDescriptor.getDefaultType());
-        ClassDescriptor mo1194getCompanionObjectDescriptor = classDescriptor.mo1194getCompanionObjectDescriptor();
-        if (z10 && mo1194getCompanionObjectDescriptor != null) {
-            smartList.add(mo1194getCompanionObjectDescriptor.getDefaultType());
+        ClassDescriptor mo1191getCompanionObjectDescriptor = classDescriptor.mo1191getCompanionObjectDescriptor();
+        if (z10 && mo1191getCompanionObjectDescriptor != null) {
+            smartList.add(mo1191getCompanionObjectDescriptor.getDefaultType());
         }
         return smartList;
     }

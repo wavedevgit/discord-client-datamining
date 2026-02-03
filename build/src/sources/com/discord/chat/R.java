@@ -20,13 +20,13 @@ public final class R {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class color {
-        public static int chat_media_view_stroke = 0x7f0600e6;
-        public static int chat_mentions_background_dark = 0x7f0600e7;
-        public static int chat_mentions_background_light = 0x7f0600e8;
-        public static int chat_mentions_foreground_dark = 0x7f0600e9;
-        public static int chat_mentions_foreground_light = 0x7f0600ea;
-        public static int message_divider_dark = 0x7f060463;
-        public static int message_divider_light = 0x7f060464;
+        public static int chat_media_view_stroke = 0x7f0600ea;
+        public static int chat_mentions_background_dark = 0x7f0600eb;
+        public static int chat_mentions_background_light = 0x7f0600ec;
+        public static int chat_mentions_foreground_dark = 0x7f0600ed;
+        public static int chat_mentions_foreground_light = 0x7f0600ee;
+        public static int message_divider_dark = 0x7f060467;
+        public static int message_divider_light = 0x7f060468;
 
         private color() {
         }

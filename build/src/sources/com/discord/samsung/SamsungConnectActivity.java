@@ -41,7 +41,7 @@ public final class SamsungConnectActivity extends AppCompatActivity {
         public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
             ISACallback iSACallback;
             SamsungConnectActivity.this.serviceBound = true;
-            com.msc.sa.aidl.a e10 = a.AbstractBinderC0209a.e(iBinder);
+            com.msc.sa.aidl.a e10 = a.AbstractBinderC0190a.e(iBinder);
             Log log = Log.INSTANCE;
             Log.i$default(log, "Samsung", "Samsung Account service connection established", (Throwable) null, 4, (Object) null);
             try {
@@ -58,7 +58,7 @@ public final class SamsungConnectActivity extends AppCompatActivity {
                 }
                 Bundle bundle = new Bundle();
                 bundle.putStringArray("additional", new String[]{"api_server_url", "auth_server_url"});
-                Unit unit = Unit.f33074a;
+                Unit unit = Unit.f32464a;
                 Log.i$default(log, "Samsung", "Samsung Account service connection established: isReqSucc? " + e10.D0(1221, n02, bundle), (Throwable) null, 4, (Object) null);
             } catch (Throwable th2) {
                 Log.INSTANCE.e("Samsung", "Unable to connect to Samsung", th2);
@@ -355,7 +355,7 @@ public final class SamsungConnectActivity extends AppCompatActivity {
             Intent intent = new Intent();
             intent.putExtra(EXTRA_REQ_AUTH_PARAM_AUTH_CODE, str);
             intent.putExtra(EXTRA_REQ_AUTH_PARAM_AUTH_SERVER_URL, str2);
-            Unit unit = Unit.f33074a;
+            Unit unit = Unit.f32464a;
             setResult(-1, intent);
         } else {
             setResult(0);

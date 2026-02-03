@@ -14,35 +14,35 @@ public abstract class h {
     class a extends h {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ h f18533a;
+        final /* synthetic */ h f17515a;
 
         a(h hVar) {
-            this.f18533a = hVar;
+            this.f17515a = hVar;
         }
 
         @Override // com.squareup.moshi.h
         public Object fromJson(m mVar) {
-            return this.f18533a.fromJson(mVar);
+            return this.f17515a.fromJson(mVar);
         }
 
         @Override // com.squareup.moshi.h
         boolean isLenient() {
-            return this.f18533a.isLenient();
+            return this.f17515a.isLenient();
         }
 
         @Override // com.squareup.moshi.h
         public void toJson(t tVar, Object obj) {
             boolean L = tVar.L();
-            tVar.O0(true);
+            tVar.R0(true);
             try {
-                this.f18533a.toJson(tVar, obj);
+                this.f17515a.toJson(tVar, obj);
             } finally {
-                tVar.O0(L);
+                tVar.R0(L);
             }
         }
 
         public String toString() {
-            return this.f18533a + ".serializeNulls()";
+            return this.f17515a + ".serializeNulls()";
         }
     }
 
@@ -51,10 +51,10 @@ public abstract class h {
     public class b extends h {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ h f18535a;
+        final /* synthetic */ h f17517a;
 
         b(h hVar) {
-            this.f18535a = hVar;
+            this.f17517a = hVar;
         }
 
         @Override // com.squareup.moshi.h
@@ -62,7 +62,7 @@ public abstract class h {
             boolean h10 = mVar.h();
             mVar.v(true);
             try {
-                return this.f18535a.fromJson(mVar);
+                return this.f17517a.fromJson(mVar);
             } finally {
                 mVar.v(h10);
             }
@@ -78,14 +78,14 @@ public abstract class h {
             boolean N = tVar.N();
             tVar.v(true);
             try {
-                this.f18535a.toJson(tVar, obj);
+                this.f17517a.toJson(tVar, obj);
             } finally {
                 tVar.v(N);
             }
         }
 
         public String toString() {
-            return this.f18535a + ".lenient()";
+            return this.f17517a + ".lenient()";
         }
     }
 
@@ -93,35 +93,35 @@ public abstract class h {
     class c extends h {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ h f18537a;
+        final /* synthetic */ h f17519a;
 
         c(h hVar) {
-            this.f18537a = hVar;
+            this.f17519a = hVar;
         }
 
         @Override // com.squareup.moshi.h
         public Object fromJson(m mVar) {
             boolean a10 = mVar.a();
-            mVar.E0(true);
+            mVar.D0(true);
             try {
-                return this.f18537a.fromJson(mVar);
+                return this.f17519a.fromJson(mVar);
             } finally {
-                mVar.E0(a10);
+                mVar.D0(a10);
             }
         }
 
         @Override // com.squareup.moshi.h
         boolean isLenient() {
-            return this.f18537a.isLenient();
+            return this.f17519a.isLenient();
         }
 
         @Override // com.squareup.moshi.h
         public void toJson(t tVar, Object obj) {
-            this.f18537a.toJson(tVar, obj);
+            this.f17519a.toJson(tVar, obj);
         }
 
         public String toString() {
-            return this.f18537a + ".failOnUnknown()";
+            return this.f17519a + ".failOnUnknown()";
         }
     }
 
@@ -129,39 +129,39 @@ public abstract class h {
     class d extends h {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ h f18539a;
+        final /* synthetic */ h f17521a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ String f18540b;
+        final /* synthetic */ String f17522b;
 
         d(h hVar, String str) {
-            this.f18539a = hVar;
-            this.f18540b = str;
+            this.f17521a = hVar;
+            this.f17522b = str;
         }
 
         @Override // com.squareup.moshi.h
         public Object fromJson(m mVar) {
-            return this.f18539a.fromJson(mVar);
+            return this.f17521a.fromJson(mVar);
         }
 
         @Override // com.squareup.moshi.h
         boolean isLenient() {
-            return this.f18539a.isLenient();
+            return this.f17521a.isLenient();
         }
 
         @Override // com.squareup.moshi.h
         public void toJson(t tVar, Object obj) {
             String F = tVar.F();
-            tVar.L0(this.f18540b);
+            tVar.M0(this.f17522b);
             try {
-                this.f18539a.toJson(tVar, obj);
+                this.f17521a.toJson(tVar, obj);
             } finally {
-                tVar.L0(F);
+                tVar.M0(F);
             }
         }
 
         public String toString() {
-            return this.f18539a + ".indent(\"" + this.f18540b + "\")";
+            return this.f17521a + ".indent(\"" + this.f17522b + "\")";
         }
     }
 
@@ -204,17 +204,17 @@ public abstract class h {
     }
 
     public final h nonNull() {
-        if (this instanceof tm.a) {
+        if (this instanceof vm.a) {
             return this;
         }
-        return new tm.a(this);
+        return new vm.a(this);
     }
 
     public final h nullSafe() {
-        if (this instanceof tm.b) {
+        if (this instanceof vm.b) {
             return this;
         }
-        return new tm.b(this);
+        return new vm.b(this);
     }
 
     public final h serializeNulls() {
@@ -224,7 +224,7 @@ public abstract class h {
     public abstract void toJson(t tVar, Object obj);
 
     public final void toJson(BufferedSink bufferedSink, Object obj) {
-        toJson(t.E0(bufferedSink), obj);
+        toJson(t.D0(bufferedSink), obj);
     }
 
     public final Object toJsonValue(Object obj) {
@@ -238,7 +238,7 @@ public abstract class h {
     }
 
     public final Object fromJson(String str) {
-        m B = m.B(new Buffer().o0(str));
+        m B = m.B(new Buffer().n0(str));
         Object fromJson = fromJson(B);
         if (isLenient() || B.E() == m.c.END_DOCUMENT) {
             return fromJson;

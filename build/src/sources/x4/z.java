@@ -4,7 +4,7 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.RectF;
 import android.graphics.drawable.BitmapDrawable;
-import hs.x0;
+import js.x0;
 import kotlin.Pair;
 import kotlin.coroutines.Continuation;
 import kotlin.jvm.functions.Function0;
@@ -16,16 +16,16 @@ import x4.k;
 public final class z implements k {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f53435d = new a(null);
+    public static final a f53156d = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final r f53436a;
+    private final r f53157a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final g5.m f53437b;
+    private final g5.m f53158b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f53438c;
+    private final boolean f53159c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -38,9 +38,9 @@ public final class z implements k {
     }
 
     public z(r rVar, g5.m mVar, boolean z10) {
-        this.f53436a = rVar;
-        this.f53437b = mVar;
-        this.f53438c = z10;
+        this.f53157a = rVar;
+        this.f53158b = mVar;
+        this.f53159c = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -49,59 +49,59 @@ public final class z implements k {
         float f10;
         int c10;
         int c11;
-        BufferedSource h11 = zVar.f53436a.h();
+        BufferedSource h11 = zVar.f53157a.h();
         try {
             f6.g l10 = f6.g.l(h11.n2());
             f6.f fVar = null;
-            ur.c.a(h11, null);
+            wr.c.a(h11, null);
             RectF g10 = l10.g();
-            if (zVar.f53438c && g10 != null) {
+            if (zVar.f53159c && g10 != null) {
                 h10 = g10.width();
                 f10 = g10.height();
             } else {
                 h10 = l10.h();
                 f10 = l10.f();
             }
-            Pair d10 = zVar.d(h10, f10, zVar.f53437b.n());
+            Pair d10 = zVar.d(h10, f10, zVar.f53158b.n());
             float floatValue = ((Number) d10.a()).floatValue();
             float floatValue2 = ((Number) d10.b()).floatValue();
             int i10 = (h10 > 0.0f ? 1 : (h10 == 0.0f ? 0 : -1));
             if (i10 > 0 && f10 > 0.0f) {
-                float d11 = j.d(h10, f10, floatValue, floatValue2, zVar.f53437b.n());
+                float d11 = j.d(h10, f10, floatValue, floatValue2, zVar.f53158b.n());
                 c10 = (int) (d11 * h10);
                 c11 = (int) (d11 * f10);
             } else {
-                c10 = yr.a.c(floatValue);
-                c11 = yr.a.c(floatValue2);
+                c10 = as.a.c(floatValue);
+                c11 = as.a.c(floatValue2);
             }
             if (g10 == null && i10 > 0 && f10 > 0.0f) {
                 l10.s(0.0f, 0.0f, h10, f10);
             }
             l10.t("100%");
             l10.r("100%");
-            Bitmap createBitmap = Bitmap.createBitmap(c10, c11, k5.j.d(zVar.f53437b.f()));
-            String a10 = g5.r.a(zVar.f53437b.l());
+            Bitmap createBitmap = Bitmap.createBitmap(c10, c11, k5.j.d(zVar.f53158b.f()));
+            String a10 = g5.r.a(zVar.f53158b.l());
             if (a10 != null) {
                 fVar = new f6.f().a(a10);
             }
             l10.o(new Canvas(createBitmap), fVar);
-            return new i(new BitmapDrawable(zVar.f53437b.g().getResources(), createBitmap), true);
+            return new i(new BitmapDrawable(zVar.f53158b.g().getResources(), createBitmap), true);
         } finally {
         }
     }
 
     private final Pair d(float f10, float f11, h5.h hVar) {
-        if (h5.b.b(this.f53437b.o())) {
+        if (h5.b.b(this.f53158b.o())) {
             if (f10 <= 0.0f) {
                 f10 = 512.0f;
             }
             if (f11 <= 0.0f) {
                 f11 = 512.0f;
             }
-            return jr.v.a(Float.valueOf(f10), Float.valueOf(f11));
+            return lr.v.a(Float.valueOf(f10), Float.valueOf(f11));
         }
-        h5.i o10 = this.f53437b.o();
-        return jr.v.a(Float.valueOf(k5.j.c(o10.a(), hVar)), Float.valueOf(k5.j.c(o10.b(), hVar)));
+        h5.i o10 = this.f53158b.o();
+        return lr.v.a(Float.valueOf(k5.j.c(o10.a(), hVar)), Float.valueOf(k5.j.c(o10.b(), hVar)));
     }
 
     @Override // x4.k
@@ -120,14 +120,14 @@ public final class z implements k {
     public static final class b implements k.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final boolean f53439a;
+        private final boolean f53160a;
 
         public b(boolean z10) {
-            this.f53439a = z10;
+            this.f53160a = z10;
         }
 
         private final boolean b(a5.l lVar) {
-            if (!Intrinsics.areEqual(lVar.b(), "image/svg+xml") && !x.a(j.f53398a, lVar.c().h())) {
+            if (!Intrinsics.areEqual(lVar.b(), "image/svg+xml") && !x.a(j.f53119a, lVar.c().h())) {
                 return false;
             }
             return true;
@@ -138,21 +138,21 @@ public final class z implements k {
             if (!b(lVar)) {
                 return null;
             }
-            return new z(lVar.c(), mVar, this.f53439a);
+            return new z(lVar.c(), mVar, this.f53160a);
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof b) && this.f53439a == ((b) obj).f53439a) {
+            if ((obj instanceof b) && this.f53160a == ((b) obj).f53160a) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return Boolean.hashCode(this.f53439a);
+            return Boolean.hashCode(this.f53160a);
         }
 
         public /* synthetic */ b(boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {

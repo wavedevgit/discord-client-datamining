@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/virtual_currency/native/OrbCheckoutAmountTag.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun86991: for (var _fun86991_ip = 0;;) switch (_fun86991_ip) {
+        _fun87101: for (var _fun87101_ip = 0;;) switch (_fun87101_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.orbAmount;
@@ -95,8 +95,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.variant = var8;
                 var8 = null;
                 if (!(var8 != var9)) {
-                    _fun86991_ip = 208;
-                    continue _fun86991
+                    _fun87101_ip = 208;
+                    continue _fun87101
                 }
             case 143:
                 var12 = _closure1_slot0;
@@ -113,8 +113,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = {};
                 var10.orbAmount = var9;
                 var10 = var13.bind(var14)(var12, var10);
-                _fun86991_ip = 263;
-                continue _fun86991;
+                _fun87101_ip = 263;
+                continue _fun87101;
             case 208:
                 var14 = _closure1_slot0;
                 var15 = _closure1_slot1;
@@ -133,8 +133,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var8 == var9;
                 var8 = '--';
                 if (var10) {
-                    _fun86991_ip = 283;
-                    continue _fun86991
+                    _fun87101_ip = 283;
+                    continue _fun87101
                 }
             case 280:
                 var8 = var9;
@@ -149,4 +149,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 671, 9548, 3932, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 671, 9567, 3941, 1234, 2]);

@@ -18,12 +18,16 @@ public abstract class NativeKeyboardControllerSpec extends ReactContextBaseJavaM
 
     @ReactMethod
     @fb.a
-    public abstract void dismiss(boolean z10);
+    public abstract void dismiss(boolean z10, boolean z11);
 
     @Override // com.facebook.react.bridge.NativeModule
     public String getName() {
         return NAME;
     }
+
+    @ReactMethod
+    @fb.a
+    public abstract void preload();
 
     @ReactMethod
     @fb.a

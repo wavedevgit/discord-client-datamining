@@ -3,14 +3,14 @@ package com.budiyev.android.codescanner;
 public abstract class j {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f9118a = 2131231377;
+    public static int f8086a = 2131231377;
 
     /* renamed from: b  reason: collision with root package name */
-    public static int f9119b = 2131231378;
+    public static int f8087b = 2131231378;
 
     /* renamed from: c  reason: collision with root package name */
-    public static int f9120c = 2131231379;
+    public static int f8088c = 2131231379;
 
     /* renamed from: d  reason: collision with root package name */
-    public static int f9121d = 2131231380;
+    public static int f8089d = 2131231380;
 }

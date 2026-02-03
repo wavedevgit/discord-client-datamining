@@ -20,12 +20,12 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.atomic.AtomicLong;
-import jr.p;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import la.j;
 import la.k;
 import la.w;
+import lr.p;
 import na.q0;
 import na.r;
 import ua.c;
@@ -35,55 +35,55 @@ import w8.f;
 public final class ImagePipeline {
 
     /* renamed from: n  reason: collision with root package name */
-    public static final a f11115n = new a(null);
+    public static final a f10083n = new a(null);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final CancellationException f11116o = new CancellationException("Prefetching is not enabled");
+    private static final CancellationException f10084o = new CancellationException("Prefetching is not enabled");
 
     /* renamed from: p  reason: collision with root package name */
-    private static final CancellationException f11117p = new CancellationException("ImageRequest is null");
+    private static final CancellationException f10085p = new CancellationException("ImageRequest is null");
 
     /* renamed from: q  reason: collision with root package name */
-    private static final CancellationException f11118q = new CancellationException("Modified URL is null");
+    private static final CancellationException f10086q = new CancellationException("Modified URL is null");
 
     /* renamed from: a  reason: collision with root package name */
-    private final q0 f11119a;
+    private final q0 f10087a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Supplier f11120b;
+    private final Supplier f10088b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Supplier f11121c;
+    private final Supplier f10089c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final RequestListener f11122d;
+    private final RequestListener f10090d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final d f11123e;
+    private final d f10091e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final w f11124f;
+    private final w f10092f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final w f11125g;
+    private final w f10093g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final k f11126h;
+    private final k f10094h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final h1 f11127i;
+    private final h1 f10095i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final Supplier f11128j;
+    private final Supplier f10096j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final AtomicLong f11129k;
+    private final AtomicLong f10097k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final Supplier f11130l;
+    private final Supplier f10098l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final r f11131m;
+    private final r f10099m;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -99,7 +99,7 @@ public final class ImagePipeline {
     public /* synthetic */ class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f11132a;
+        public static final /* synthetic */ int[] f10100a;
 
         static {
             int[] iArr = new int[ImageRequest.CacheChoice.values().length];
@@ -115,7 +115,7 @@ public final class ImagePipeline {
                 iArr[ImageRequest.CacheChoice.DYNAMIC.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f11132a = iArr;
+            f10100a = iArr;
         }
     }
 
@@ -132,19 +132,19 @@ public final class ImagePipeline {
         Intrinsics.checkNotNullParameter(suppressBitmapPrefetchingSupplier, "suppressBitmapPrefetchingSupplier");
         Intrinsics.checkNotNullParameter(lazyDataSource, "lazyDataSource");
         Intrinsics.checkNotNullParameter(config, "config");
-        this.f11119a = producerSequenceFactory;
-        this.f11120b = isPrefetchEnabledSupplier;
-        this.f11121c = diskCachesStoreSupplier;
-        this.f11122d = new c(requestListeners);
-        this.f11123e = new ua.b(requestListener2s);
-        this.f11129k = new AtomicLong();
-        this.f11124f = bitmapMemoryCache;
-        this.f11125g = encodedMemoryCache;
-        this.f11126h = cacheKeyFactory;
-        this.f11127i = threadHandoffProducerQueue;
-        this.f11128j = suppressBitmapPrefetchingSupplier;
-        this.f11130l = lazyDataSource;
-        this.f11131m = config;
+        this.f10087a = producerSequenceFactory;
+        this.f10088b = isPrefetchEnabledSupplier;
+        this.f10089c = diskCachesStoreSupplier;
+        this.f10090d = new c(requestListeners);
+        this.f10091e = new ua.b(requestListener2s);
+        this.f10097k = new AtomicLong();
+        this.f10092f = bitmapMemoryCache;
+        this.f10093g = encodedMemoryCache;
+        this.f10094h = cacheKeyFactory;
+        this.f10095i = threadHandoffProducerQueue;
+        this.f10096j = suppressBitmapPrefetchingSupplier;
+        this.f10098l = lazyDataSource;
+        this.f10099m = config;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -165,20 +165,20 @@ public final class ImagePipeline {
         boolean z10;
         boolean z11;
         if (!ya.b.d()) {
-            d0 d0Var = new d0(s(imageRequest, requestListener), this.f11123e);
+            d0 d0Var = new d0(s(imageRequest, requestListener), this.f10091e);
             try {
                 ImageRequest.RequestLevel a11 = ImageRequest.RequestLevel.a(imageRequest.getLowestPermittedRequestLevel(), requestLevel);
                 Intrinsics.checkNotNullExpressionValue(a11, "getMax(...)");
                 String p11 = p();
                 if (!imageRequest.getProgressiveRenderingEnabled() && f.p(imageRequest.getSourceUri())) {
                     z11 = false;
-                    d1 d1Var = new d1(imageRequest, p11, str, d0Var, obj, a11, false, z11, imageRequest.getPriority(), this.f11131m);
-                    d1Var.t0(map);
+                    d1 d1Var = new d1(imageRequest, p11, str, d0Var, obj, a11, false, z11, imageRequest.getPriority(), this.f10099m);
+                    d1Var.A0(map);
                     return oa.c.F(w0Var, d1Var, d0Var);
                 }
                 z11 = true;
-                d1 d1Var2 = new d1(imageRequest, p11, str, d0Var, obj, a11, false, z11, imageRequest.getPriority(), this.f11131m);
-                d1Var2.t0(map);
+                d1 d1Var2 = new d1(imageRequest, p11, str, d0Var, obj, a11, false, z11, imageRequest.getPriority(), this.f10099m);
+                d1Var2.A0(map);
                 return oa.c.F(w0Var, d1Var2, d0Var);
             } catch (Exception e10) {
                 return y8.c.b(e10);
@@ -186,7 +186,7 @@ public final class ImagePipeline {
         }
         ya.b.a("ImagePipeline#submitFetchRequest");
         try {
-            d0 d0Var2 = new d0(s(imageRequest, requestListener), this.f11123e);
+            d0 d0Var2 = new d0(s(imageRequest, requestListener), this.f10091e);
             try {
                 a10 = ImageRequest.RequestLevel.a(imageRequest.getLowestPermittedRequestLevel(), requestLevel);
                 Intrinsics.checkNotNullExpressionValue(a10, "getMax(...)");
@@ -196,15 +196,15 @@ public final class ImagePipeline {
             }
             if (!imageRequest.getProgressiveRenderingEnabled() && f.p(imageRequest.getSourceUri())) {
                 z10 = false;
-                d1 d1Var3 = new d1(imageRequest, p10, str, d0Var2, obj, a10, false, z10, imageRequest.getPriority(), this.f11131m);
-                d1Var3.t0(map);
+                d1 d1Var3 = new d1(imageRequest, p10, str, d0Var2, obj, a10, false, z10, imageRequest.getPriority(), this.f10099m);
+                d1Var3.A0(map);
                 b10 = oa.c.F(w0Var, d1Var3, d0Var2);
                 ya.b.b();
                 return b10;
             }
             z10 = true;
-            d1 d1Var32 = new d1(imageRequest, p10, str, d0Var2, obj, a10, false, z10, imageRequest.getPriority(), this.f11131m);
-            d1Var32.t0(map);
+            d1 d1Var32 = new d1(imageRequest, p10, str, d0Var2, obj, a10, false, z10, imageRequest.getPriority(), this.f10099m);
+            d1Var32.A0(map);
             b10 = oa.c.F(w0Var, d1Var32, d0Var2);
             ya.b.b();
             return b10;
@@ -227,7 +227,7 @@ public final class ImagePipeline {
             com.facebook.imagepipeline.producers.d0 r3 = new com.facebook.imagepipeline.producers.d0
             r0 = r16
             com.facebook.imagepipeline.listener.RequestListener r0 = r10.s(r12, r0)
-            ua.d r1 = r10.f11123e
+            ua.d r1 = r10.f10091e
             r3.<init>(r0, r1)
             android.net.Uri r0 = r12.getSourceUri()
             java.lang.String r1 = "getSourceUri(...)"
@@ -235,7 +235,7 @@ public final class ImagePipeline {
             aa.c r1 = aa.b.f445b
             android.net.Uri r1 = r1.a(r0, r14)
             if (r1 != 0) goto L2a
-            java.util.concurrent.CancellationException r11 = com.facebook.imagepipeline.core.ImagePipeline.f11118q
+            java.util.concurrent.CancellationException r11 = com.facebook.imagepipeline.core.ImagePipeline.f10086q
             com.facebook.datasource.DataSource r11 = y8.c.b(r11)
             java.lang.String r12 = "immediateFailedDataSource(...)"
             kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(r11, r12)
@@ -258,7 +258,7 @@ public final class ImagePipeline {
             kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(r5, r12)     // Catch: java.lang.Exception -> L69
             com.facebook.imagepipeline.producers.d1 r0 = new com.facebook.imagepipeline.producers.d1     // Catch: java.lang.Exception -> L69
             java.lang.String r2 = r10.p()     // Catch: java.lang.Exception -> L69
-            na.r r12 = r10.f11131m     // Catch: java.lang.Exception -> L69
+            na.r r12 = r10.f10099m     // Catch: java.lang.Exception -> L69
             com.facebook.imagepipeline.core.a r12 = r12.G()     // Catch: java.lang.Exception -> L69
             if (r12 == 0) goto L6c
             boolean r12 = r12.b()     // Catch: java.lang.Exception -> L69
@@ -277,12 +277,12 @@ public final class ImagePipeline {
             r13 = 0
             goto L67
         L6e:
-            na.r r9 = r10.f11131m     // Catch: java.lang.Exception -> L69
+            na.r r9 = r10.f10099m     // Catch: java.lang.Exception -> L69
             r6 = 1
             r4 = r14
             r8 = r15
             r0.<init>(r1, r2, r3, r4, r5, r6, r7, r8, r9)     // Catch: java.lang.Exception -> L69
-            oa.d$a r12 = oa.d.f42648j     // Catch: java.lang.Exception -> L69
+            oa.d$a r12 = oa.d.f42448j     // Catch: java.lang.Exception -> L69
             com.facebook.datasource.DataSource r11 = r12.a(r11, r0, r3)     // Catch: java.lang.Exception -> L69
             return r11
         L7d:
@@ -312,10 +312,10 @@ public final class ImagePipeline {
     }
 
     private final boolean y(ImageRequest imageRequest) {
-        Object obj = this.f11121c.get();
+        Object obj = this.f10089c.get();
         Intrinsics.checkNotNullExpressionValue(obj, "get(...)");
         na.b bVar = (na.b) obj;
-        CacheKey encodedCacheKey = this.f11126h.getEncodedCacheKey(imageRequest, null);
+        CacheKey encodedCacheKey = this.f10094h.getEncodedCacheKey(imageRequest, null);
         String diskCacheId = imageRequest.getDiskCacheId();
         if (diskCacheId != null) {
             j jVar = (j) bVar.c().get(diskCacheId);
@@ -347,13 +347,13 @@ public final class ImagePipeline {
     }
 
     public final DataSource B(ImageRequest imageRequest, Object obj) {
-        return C(imageRequest, obj, Priority.f11089i, null);
+        return C(imageRequest, obj, Priority.f10057i, null);
     }
 
     public final DataSource C(ImageRequest imageRequest, Object obj, Priority priority, RequestListener requestListener) {
         Intrinsics.checkNotNullParameter(priority, "priority");
-        if (!((Boolean) this.f11120b.get()).booleanValue()) {
-            DataSource b10 = y8.c.b(f11116o);
+        if (!((Boolean) this.f10088b.get()).booleanValue()) {
+            DataSource b10 = y8.c.b(f10084o);
             Intrinsics.checkNotNullExpressionValue(b10, "immediateFailedDataSource(...)");
             return b10;
         } else if (imageRequest == null) {
@@ -362,7 +362,7 @@ public final class ImagePipeline {
             return b11;
         } else {
             try {
-                return F(this.f11119a.G(imageRequest), imageRequest, ImageRequest.RequestLevel.FULL_FETCH, obj, priority, requestListener);
+                return F(this.f10087a.G(imageRequest), imageRequest, ImageRequest.RequestLevel.FULL_FETCH, obj, priority, requestListener);
             } catch (Exception e10) {
                 return y8.c.b(e10);
             }
@@ -375,7 +375,7 @@ public final class ImagePipeline {
     }
 
     public final void d() {
-        Object obj = this.f11121c.get();
+        Object obj = this.f10089c.get();
         Intrinsics.checkNotNullExpressionValue(obj, "get(...)");
         na.b bVar = (na.b) obj;
         bVar.b().h();
@@ -395,8 +395,8 @@ public final class ImagePipeline {
                 return f10;
             }
         };
-        this.f11124f.f(kVar);
-        this.f11125g.f(kVar);
+        this.f10092f.f(kVar);
+        this.f10093g.f(kVar);
     }
 
     public final void g(Uri uri) {
@@ -416,8 +416,8 @@ public final class ImagePipeline {
 
     public final void i(ImageRequest imageRequest) {
         if (imageRequest != null) {
-            CacheKey encodedCacheKey = this.f11126h.getEncodedCacheKey(imageRequest, null);
-            Object obj = this.f11121c.get();
+            CacheKey encodedCacheKey = this.f10094h.getEncodedCacheKey(imageRequest, null);
+            Object obj = this.f10089c.get();
             Intrinsics.checkNotNullExpressionValue(obj, "get(...)");
             na.b bVar = (na.b) obj;
             j b10 = bVar.b();
@@ -434,8 +434,8 @@ public final class ImagePipeline {
     public final void j(Uri uri) {
         Intrinsics.checkNotNullParameter(uri, "uri");
         o8.k z10 = z(uri);
-        this.f11124f.f(z10);
-        this.f11125g.f(z10);
+        this.f10092f.f(z10);
+        this.f10093g.f(z10);
     }
 
     public final DataSource k(ImageRequest imageRequest, Object obj) {
@@ -454,7 +454,7 @@ public final class ImagePipeline {
             return b10;
         }
         try {
-            w0 E = this.f11119a.E(imageRequest);
+            w0 E = this.f10087a.E(imageRequest);
             if (requestLevel == null) {
                 requestLevel = ImageRequest.RequestLevel.FULL_FETCH;
             }
@@ -470,28 +470,28 @@ public final class ImagePipeline {
     }
 
     public final String p() {
-        return String.valueOf(this.f11129k.getAndIncrement());
+        return String.valueOf(this.f10097k.getAndIncrement());
     }
 
     public final w q() {
-        return this.f11124f;
+        return this.f10092f;
     }
 
     public final k r() {
-        return this.f11126h;
+        return this.f10094h;
     }
 
     public final RequestListener s(ImageRequest imageRequest, RequestListener requestListener) {
         if (imageRequest != null) {
             if (requestListener == null) {
                 if (imageRequest.getRequestListener() == null) {
-                    return this.f11122d;
+                    return this.f10090d;
                 }
-                return new c(this.f11122d, imageRequest.getRequestListener());
+                return new c(this.f10090d, imageRequest.getRequestListener());
             } else if (imageRequest.getRequestListener() == null) {
-                return new c(this.f11122d, requestListener);
+                return new c(this.f10090d, requestListener);
             } else {
-                return new c(this.f11122d, requestListener, imageRequest.getRequestListener());
+                return new c(this.f10090d, requestListener, imageRequest.getRequestListener());
             }
         }
         throw new IllegalStateException("Required value was null.");
@@ -501,19 +501,19 @@ public final class ImagePipeline {
         if (uri == null) {
             return false;
         }
-        return this.f11124f.e(z(uri));
+        return this.f10092f.e(z(uri));
     }
 
     public final boolean u(ImageRequest imageRequest) {
         if (imageRequest == null) {
             return false;
         }
-        CacheKey bitmapCacheKey = this.f11126h.getBitmapCacheKey(imageRequest, null);
-        w wVar = this.f11124f;
+        CacheKey bitmapCacheKey = this.f10094h.getBitmapCacheKey(imageRequest, null);
+        w wVar = this.f10092f;
         Intrinsics.checkNotNull(bitmapCacheKey);
         CloseableReference closeableReference = wVar.get(bitmapCacheKey);
         try {
-            return CloseableReference.K0(closeableReference);
+            return CloseableReference.F0(closeableReference);
         } finally {
             CloseableReference.N(closeableReference);
         }
@@ -535,15 +535,15 @@ public final class ImagePipeline {
     public final boolean x(ImageRequest imageRequest) {
         boolean k10;
         Intrinsics.checkNotNullParameter(imageRequest, "imageRequest");
-        Object obj = this.f11121c.get();
+        Object obj = this.f10089c.get();
         Intrinsics.checkNotNullExpressionValue(obj, "get(...)");
         na.b bVar = (na.b) obj;
-        CacheKey encodedCacheKey = this.f11126h.getEncodedCacheKey(imageRequest, null);
+        CacheKey encodedCacheKey = this.f10094h.getEncodedCacheKey(imageRequest, null);
         ImageRequest.CacheChoice cacheChoice = imageRequest.getCacheChoice();
         Intrinsics.checkNotNullExpressionValue(cacheChoice, "getCacheChoice(...)");
         StrictMode.ThreadPolicy allowThreadDiskReads = StrictMode.allowThreadDiskReads();
         try {
-            int i10 = b.f11132a[cacheChoice.ordinal()];
+            int i10 = b.f10100a[cacheChoice.ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 == 3) {

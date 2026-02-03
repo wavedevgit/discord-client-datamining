@@ -48,19 +48,19 @@ public final class StepStyles_DocumentStepFillColorJsonAdapter extends h {
         StyleElements.SimpleElementColor simpleElementColor4 = null;
         StyleElements.SimpleElementColor simpleElementColor5 = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 simpleElementColor2 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (t02 == 2) {
+            } else if (A0 == 2) {
                 simpleElementColor3 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (t02 == 3) {
+            } else if (A0 == 3) {
                 simpleElementColor4 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (t02 == 4) {
+            } else if (A0 == 4) {
                 simpleElementColor5 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
             }
         }
@@ -73,15 +73,15 @@ public final class StepStyles_DocumentStepFillColorJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (documentStepFillColor != null) {
             writer.l();
-            writer.t0("base");
+            writer.A0("base");
             this.nullableSimpleElementColorAdapter.toJson(writer, documentStepFillColor.getBase());
-            writer.t0("imagePreviewPlusIcon");
+            writer.A0("imagePreviewPlusIcon");
             this.nullableSimpleElementColorAdapter.toJson(writer, documentStepFillColor.getImagePreviewPlusIcon());
-            writer.t0("imagePreviewXIcon");
+            writer.A0("imagePreviewXIcon");
             this.nullableSimpleElementColorAdapter.toJson(writer, documentStepFillColor.getImagePreviewXIcon());
-            writer.t0("imagePreviewMainArea");
+            writer.A0("imagePreviewMainArea");
             this.nullableSimpleElementColorAdapter.toJson(writer, documentStepFillColor.getImagePreviewMainArea());
-            writer.t0("imagePreviewCropArea");
+            writer.A0("imagePreviewCropArea");
             this.nullableSimpleElementColorAdapter.toJson(writer, documentStepFillColor.getImagePreviewCropArea());
             writer.E();
             return;

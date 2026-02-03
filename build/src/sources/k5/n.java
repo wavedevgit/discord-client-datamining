@@ -10,7 +10,7 @@ import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 public final class n {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final n f32788a = new n();
+    public static final n f32186a = new n();
 
     private n() {
     }
@@ -76,8 +76,8 @@ public final class n {
             A2 = k.A(iVar.c(), hVar);
         }
         double c10 = x4.j.c(p10, i10, A, A2, hVar);
-        int b10 = yr.a.b(p10 * c10);
-        int b11 = yr.a.b(c10 * i10);
+        int b10 = as.a.b(p10 * c10);
+        int b11 = as.a.b(c10 * i10);
         Bitmap createBitmap = Bitmap.createBitmap(b10, b11, a.e(config));
         Rect bounds = mutate.getBounds();
         int i12 = bounds.left;

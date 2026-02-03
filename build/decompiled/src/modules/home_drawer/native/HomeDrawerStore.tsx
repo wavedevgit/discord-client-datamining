@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.gestureState = var3;
         var0.maxX = var2;
         var2 = function arg0() {
-            _fun100674: for (var _fun100674_ip = 0;;) switch (_fun100674_ip) {
+            _fun100734: for (var _fun100734_ip = 0;;) switch (_fun100734_ip) {
                 case 0:
                     var1 = _closure2_slot1;
                     var0 = undefined;
@@ -69,15 +69,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = 'open';
                     var1 = arg0;
                     if (!(var5 !== var1)) {
-                        _fun100674_ip = 56;
-                        continue _fun100674
+                        _fun100734_ip = 56;
+                        continue _fun100734
                     }
                 case 42:
                     var5 = var4.set;
                     var1 = 0;
                     var1 = var5.bind(var4)(var1);
-                    _fun100674_ip = 66;
-                    continue _fun100674;
+                    _fun100734_ip = 66;
+                    continue _fun100734;
                 case 56:
                     var1 = var4.set;
                     var1 = var1.bind(var4)(var2);
@@ -128,4 +128,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 797, 3711, 3067, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 797, 3720, 3076, 2]);

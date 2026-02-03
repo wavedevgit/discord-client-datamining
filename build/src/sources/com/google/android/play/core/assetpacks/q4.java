@@ -5,10 +5,10 @@ import android.content.Context;
 public final class q4 implements th.t {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m4 f16612a;
+    private final m4 f15580a;
 
     public q4(m4 m4Var) {
-        this.f16612a = m4Var;
+        this.f15580a = m4Var;
     }
 
     public static Context c(m4 m4Var) {
@@ -19,10 +19,10 @@ public final class q4 implements th.t {
 
     @Override // th.w
     public final /* synthetic */ Object a() {
-        return c(this.f16612a);
+        return c(this.f15580a);
     }
 
     public final Context b() {
-        return c(this.f16612a);
+        return c(this.f15580a);
     }
 }

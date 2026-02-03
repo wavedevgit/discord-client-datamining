@@ -43,7 +43,7 @@ public final class ForwardBreadcrumbView extends ConstraintLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void configure_JjTCmh4$lambda$0(Function3 function3, ForwardInfo forwardInfo, long j10, String str, View view) {
-        function3.invoke(Integer.valueOf(forwardInfo.getSnapshotIndex()), ChannelId.m1060boximpl(j10), MessageId.m1086boximpl(str));
+        function3.invoke(Integer.valueOf(forwardInfo.getSnapshotIndex()), ChannelId.m1059boximpl(j10), MessageId.m1085boximpl(str));
     }
 
     /* renamed from: configure-JjTCmh4  reason: not valid java name */

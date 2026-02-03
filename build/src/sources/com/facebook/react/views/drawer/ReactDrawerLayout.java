@@ -117,7 +117,7 @@ public final class ReactDrawerLayout extends DrawerLayout {
             ViewGroup.LayoutParams layoutParams = childAt.getLayoutParams();
             Intrinsics.checkNotNull(layoutParams, "null cannot be cast to non-null type androidx.drawerlayout.widget.DrawerLayout.LayoutParams");
             DrawerLayout.d dVar = (DrawerLayout.d) layoutParams;
-            dVar.f3907a = this.drawerPosition;
+            dVar.f3876a = this.drawerPosition;
             ((ViewGroup.MarginLayoutParams) dVar).width = this.drawerWidth;
             childAt.setLayoutParams(dVar);
             childAt.setClickable(true);

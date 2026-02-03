@@ -6,15 +6,15 @@ import android.os.Parcelable;
 import androidx.collection.SimpleArrayMap;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class a extends u2.a {
-    public static final Parcelable.Creator<a> CREATOR = new C0582a();
+    public static final Parcelable.Creator<a> CREATOR = new C0577a();
 
     /* renamed from: i  reason: collision with root package name */
-    public final SimpleArrayMap f47666i;
+    public final SimpleArrayMap f47816i;
 
     /* renamed from: qh.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    class C0582a implements Parcelable.ClassLoaderCreator {
-        C0582a() {
+    class C0577a implements Parcelable.ClassLoaderCreator {
+        C0577a() {
         }
 
         @Override // android.os.Parcelable.Creator
@@ -36,24 +36,24 @@ public class a extends u2.a {
         }
     }
 
-    /* synthetic */ a(Parcel parcel, ClassLoader classLoader, C0582a c0582a) {
+    /* synthetic */ a(Parcel parcel, ClassLoader classLoader, C0577a c0577a) {
         this(parcel, classLoader);
     }
 
     public String toString() {
-        return "ExtendableSavedState{" + Integer.toHexString(System.identityHashCode(this)) + " states=" + this.f47666i + "}";
+        return "ExtendableSavedState{" + Integer.toHexString(System.identityHashCode(this)) + " states=" + this.f47816i + "}";
     }
 
     @Override // u2.a, android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
         super.writeToParcel(parcel, i10);
-        int size = this.f47666i.size();
+        int size = this.f47816i.size();
         parcel.writeInt(size);
         String[] strArr = new String[size];
         Bundle[] bundleArr = new Bundle[size];
         for (int i11 = 0; i11 < size; i11++) {
-            strArr[i11] = (String) this.f47666i.f(i11);
-            bundleArr[i11] = (Bundle) this.f47666i.j(i11);
+            strArr[i11] = (String) this.f47816i.f(i11);
+            bundleArr[i11] = (Bundle) this.f47816i.j(i11);
         }
         parcel.writeStringArray(strArr);
         parcel.writeTypedArray(bundleArr, 0);
@@ -61,7 +61,7 @@ public class a extends u2.a {
 
     public a(Parcelable parcelable) {
         super(parcelable);
-        this.f47666i = new SimpleArrayMap();
+        this.f47816i = new SimpleArrayMap();
     }
 
     private a(Parcel parcel, ClassLoader classLoader) {
@@ -71,9 +71,9 @@ public class a extends u2.a {
         parcel.readStringArray(strArr);
         Bundle[] bundleArr = new Bundle[readInt];
         parcel.readTypedArray(bundleArr, Bundle.CREATOR);
-        this.f47666i = new SimpleArrayMap(readInt);
+        this.f47816i = new SimpleArrayMap(readInt);
         for (int i10 = 0; i10 < readInt; i10++) {
-            this.f47666i.put(strArr[i10], bundleArr[i10]);
+            this.f47816i.put(strArr[i10], bundleArr[i10]);
         }
     }
 }

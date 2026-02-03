@@ -1,41 +1,45 @@
 package ls;
 
 import kotlin.coroutines.Continuation;
-import kotlin.jvm.functions.Function3;
-import kotlin.jvm.internal.FunctionReferenceImpl;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.TypeIntrinsics;
-import kotlinx.coroutines.flow.FlowCollector;
+import kotlin.jvm.functions.Function1;
+import os.d0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class w {
-
-    /* renamed from: a  reason: collision with root package name */
-    private static final Function3 f37623a;
+public interface w {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    /* synthetic */ class a extends FunctionReferenceImpl implements Function3 {
-
-        /* renamed from: d  reason: collision with root package name */
-        public static final a f37624d = new a();
-
-        a() {
-            super(3, FlowCollector.class, "emit", "emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", 0);
+    public static final class a {
+        public static /* synthetic */ boolean a(w wVar, Throwable th2, int i10, Object obj) {
+            if (obj == null) {
+                if ((i10 & 1) != 0) {
+                    th2 = null;
+                }
+                return wVar.s(th2);
+            }
+            throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: close");
         }
 
-        @Override // kotlin.jvm.functions.Function3
-        /* renamed from: a */
-        public final Object invoke(FlowCollector flowCollector, Object obj, Continuation continuation) {
-            return flowCollector.emit(obj, continuation);
+        public static boolean b(w wVar, Object obj) {
+            Object i10 = wVar.i(obj);
+            if (k.i(i10)) {
+                return true;
+            }
+            Throwable e10 = k.e(i10);
+            if (e10 == null) {
+                return false;
+            }
+            throw d0.a(e10);
         }
     }
 
-    static {
-        a aVar = a.f37624d;
-        Intrinsics.checkNotNull(aVar, "null cannot be cast to non-null type kotlin.Function3<kotlinx.coroutines.flow.FlowCollector<kotlin.Any?>, kotlin.Any?, kotlin.coroutines.Continuation<kotlin.Unit>, kotlin.Any?>");
-        f37623a = (Function3) TypeIntrinsics.beforeCheckcastToFunctionOfArity(aVar, 3);
-    }
+    void d(Function1 function1);
 
-    public static final /* synthetic */ Function3 a() {
-        return f37623a;
-    }
+    Object i(Object obj);
+
+    boolean offer(Object obj);
+
+    boolean s(Throwable th2);
+
+    Object u(Object obj, Continuation continuation);
+
+    boolean v();
 }

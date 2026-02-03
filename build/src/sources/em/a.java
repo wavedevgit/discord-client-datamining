@@ -5,10 +5,10 @@ import android.os.Build;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f22952a = new a();
+    public static final a f21643a = new a();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final boolean f22953b;
+    private static final boolean f21644b;
 
     static {
         boolean z10;
@@ -17,13 +17,13 @@ public final class a {
         } else {
             z10 = false;
         }
-        f22953b = z10;
+        f21644b = z10;
     }
 
     private a() {
     }
 
     public final boolean a() {
-        return f22953b;
+        return f21644b;
     }
 }

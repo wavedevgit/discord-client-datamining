@@ -7,13 +7,12 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.ParcelFileDescriptor;
 import com.discord.crash_reporting.CrashReporting;
-import hs.g;
-import hs.m0;
 import id.zelory.compressor.constraint.Compression;
 import java.io.File;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
-import jr.v;
+import js.g;
+import js.m0;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.o0;
@@ -22,6 +21,7 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
+import lr.v;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000X\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\u0010\u0002\n\u0002\b\u0007\n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\r\n\u0002\u0010$\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0007\u0018\u0000 ?2\u00020\u0001:\u0001?B)\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0018\u0010\b\u001a\u0014\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00070\u0004¢\u0006\u0004\b\t\u0010\nJ\u0010\u0010\u000b\u001a\u00020\u0007H\u0083@¢\u0006\u0004\b\u000b\u0010\fJ)\u0010\u0011\u001a\u0004\u0018\u00010\u00052\u0006\u0010\r\u001a\u00020\u00052\u0006\u0010\u000e\u001a\u00020\u00052\u0006\u0010\u0010\u001a\u00020\u000fH\u0002¢\u0006\u0004\b\u0011\u0010\u0012J*\u0010\u0017\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\u00052\u0006\u0010\u0014\u001a\u00020\u00132\b\u0010\u0016\u001a\u0004\u0018\u00010\u0015H\u0082@¢\u0006\u0004\b\u0017\u0010\u0018J0\u0010\u001c\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\u00052\u0006\u0010\u0019\u001a\u00020\u00062\u0006\u0010\u001a\u001a\u00020\u00132\u0006\u0010\u001b\u001a\u00020\u0013H\u0082@¢\u0006\u0004\b\u001c\u0010\u001dJ$\u0010!\u001a\u00020\u00052\u0006\u0010\u001e\u001a\u00020\u00052\n\b\u0002\u0010 \u001a\u0004\u0018\u00010\u001fH\u0082@¢\u0006\u0004\b!\u0010\"J/\u0010'\u001a\u00020\u00072\u0006\u0010$\u001a\u00020#2\u0006\u0010%\u001a\u00020#2\u0006\u0010\r\u001a\u00020\u00052\u0006\u0010&\u001a\u00020\u0005H\u0002¢\u0006\u0004\b'\u0010(J\u0017\u0010)\u001a\u0004\u0018\u00010#2\u0006\u0010\u001e\u001a\u00020\u0005¢\u0006\u0004\b)\u0010*J\u0015\u0010+\u001a\u00020\u00072\u0006\u0010\r\u001a\u00020\u0005¢\u0006\u0004\b+\u0010,JD\u00100\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\u00052\b\b\u0001\u0010-\u001a\u00020\u00062\u0006\u0010\u001a\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u00132\u0006\u0010\u001b\u001a\u00020\u00132\b\u0010\u0016\u001a\u0004\u0018\u00010\u0015H\u0080@¢\u0006\u0004\b.\u0010/J!\u00102\u001a\u000e\u0012\u0004\u0012\u00020#\u0012\u0004\u0012\u00020\u0001012\u0006\u0010\r\u001a\u00020\u0005¢\u0006\u0004\b2\u00103R\u0014\u0010\u0003\u001a\u00020\u00028\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0003\u00104R&\u0010\b\u001a\u0014\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00070\u00048\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\b\u00105R\u001c\u00107\u001a\n 6*\u0004\u0018\u00010\u001f0\u001f8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b7\u00108R\u0014\u0010<\u001a\u0002098BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b:\u0010;R\u0018\u0010>\u001a\u00020#*\u00020\u00058BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b=\u0010*¨\u0006@"}, d2 = {"Lcom/discord/media/utils/MediaResolver;", "", "Landroid/content/Context;", "context", "Lkotlin/Function2;", "Landroid/net/Uri;", "", "", "onProgress", "<init>", "(Landroid/content/Context;Lkotlin/jvm/functions/Function2;)V", "checkFreeSpace", "(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "inputUri", "compressedUri", "", "mediaSourceSize", "createMP4FastStartUri", "(Landroid/net/Uri;Landroid/net/Uri;J)Landroid/net/Uri;", "", "skipVideoTranscode", "Lcom/discord/media/utils/EncodingConfig;", "encodingConfig", "handleVideo", "(Landroid/net/Uri;ZLcom/discord/media/utils/EncodingConfig;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "compressionQuality", "isLowQuality", "useOriginalIfSmaller", "handleImage", "(Landroid/net/Uri;IZZLkotlin/coroutines/Continuation;)Ljava/lang/Object;", "uri", "Ljava/io/File;", "targetFile", "copyToFile", "(Landroid/net/Uri;Ljava/io/File;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "", "tag", "message", "outputUri", "logMediaError", "(Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;Landroid/net/Uri;)V", "getMimeType", "(Landroid/net/Uri;)Ljava/lang/String;", "cancel", "(Landroid/net/Uri;)V", "imageCompressionQuality", "resolveToUri$media_release", "(Landroid/net/Uri;IZZZLcom/discord/media/utils/EncodingConfig;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "resolveToUri", "", "handleVideoMetadata", "(Landroid/net/Uri;)Ljava/util/Map;", "Landroid/content/Context;", "Lkotlin/jvm/functions/Function2;", "kotlin.jvm.PlatformType", "cacheDir", "Ljava/io/File;", "Landroid/content/ContentResolver;", "getResolver", "()Landroid/content/ContentResolver;", "resolver", "getRequestId", "requestId", "Companion", "media_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nMediaResolver.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MediaResolver.kt\ncom/discord/media/utils/MediaResolver\n+ 2 Uri.kt\nandroidx/core/net/UriKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,260:1\n36#2:261\n36#2:262\n36#2:264\n36#2:265\n36#2:266\n1#3:263\n*S KotlinDebug\n*F\n+ 1 MediaResolver.kt\ncom/discord/media/utils/MediaResolver\n*L\n111#1:261\n135#1:262\n207#1:264\n216#1:265\n219#1:266\n*E\n"})
@@ -67,10 +67,10 @@ public final class MediaResolver {
     @SuppressLint({"UsableSpace"})
     public final Object checkFreeSpace(Continuation<? super Unit> continuation) {
         Object g10 = g.g(m0.b(), new MediaResolver$checkFreeSpace$2(this, null), continuation);
-        if (g10 == pr.b.f()) {
+        if (g10 == rr.b.f()) {
             return g10;
         }
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -105,7 +105,7 @@ public final class MediaResolver {
         File createTempFile$default = ContentResolverUtils.createTempFile$default(ContentResolverUtils.INSTANCE, getResolver(), uri3, null, "mp4", 2, null);
         boolean z10 = false;
         try {
-            z10 = tt.a.a(openFileDescriptor.getFileDescriptor(), createTempFile$default);
+            z10 = vt.a.a(openFileDescriptor.getFileDescriptor(), createTempFile$default);
             if (z10) {
                 uri4 = Uri.fromFile(createTempFile$default);
             } else {
@@ -171,9 +171,9 @@ public final class MediaResolver {
     public static final Unit handleImage$lambda$7(int i10, boolean z10, MediaResolver mediaResolver, Uri uri, Compression compress) {
         Intrinsics.checkNotNullParameter(compress, "$this$compress");
         compress.a(new QualityAndResolutionConstraint(i10, z10));
-        ar.g.a(compress, Bitmap.CompressFormat.JPEG);
-        ar.e.a(compress, ContentResolverUtils.createTempFile$default(ContentResolverUtils.INSTANCE, mediaResolver.getResolver(), uri, null, "jpeg", 2, null));
-        return Unit.f33074a;
+        cr.g.a(compress, Bitmap.CompressFormat.JPEG);
+        cr.e.a(compress, ContentResolverUtils.createTempFile$default(ContentResolverUtils.INSTANCE, mediaResolver.getResolver(), uri, null, "jpeg", 2, null));
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -207,7 +207,7 @@ public final class MediaResolver {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit handleVideo$lambda$4$lambda$3(MediaResolver mediaResolver, Uri uri, float f10) {
         mediaResolver.onProgress.invoke(uri, Integer.valueOf((int) (f10 * 100)));
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     private final void logMediaError(String str, String str2, Uri uri, Uri uri2) {

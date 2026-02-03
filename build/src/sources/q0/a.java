@@ -10,46 +10,46 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a {
 
     /* renamed from: k  reason: collision with root package name */
-    public static final C0572a f47058k = new C0572a(null);
+    public static final C0567a f47208k = new C0567a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f47059a;
+    private final Context f47209a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f47060b;
+    private final int f47210b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f47061c;
+    private final int f47211c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final b f47062d;
+    private final b f47212d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f47063e;
+    private boolean f47213e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f47064f;
+    private boolean f47214f;
 
     /* renamed from: g  reason: collision with root package name */
-    private float f47065g;
+    private float f47215g;
 
     /* renamed from: h  reason: collision with root package name */
-    private float f47066h;
+    private float f47216h;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f47067i;
+    private int f47217i;
 
     /* renamed from: j  reason: collision with root package name */
-    private GestureDetector f47068j;
+    private GestureDetector f47218j;
 
     /* renamed from: q0.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0572a {
-        public /* synthetic */ C0572a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0567a {
+        public /* synthetic */ C0567a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
-        private C0572a() {
+        private C0567a() {
         }
     }
 
@@ -65,9 +65,9 @@ public final class a {
         @Override // android.view.GestureDetector.SimpleOnGestureListener, android.view.GestureDetector.OnDoubleTapListener
         public boolean onDoubleTap(MotionEvent e10) {
             Intrinsics.checkNotNullParameter(e10, "e");
-            a.this.f47065g = e10.getX();
-            a.this.f47066h = e10.getY();
-            a.this.f47067i = 1;
+            a.this.f47215g = e10.getX();
+            a.this.f47216h = e10.getY();
+            a.this.f47217i = 1;
             return true;
         }
     }
@@ -82,13 +82,13 @@ public final class a {
     public a(Context context, int i10, int i11, b listener) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(listener, "listener");
-        this.f47059a = context;
-        this.f47060b = i10;
-        this.f47061c = i11;
-        this.f47062d = listener;
-        this.f47063e = true;
-        this.f47064f = true;
-        this.f47068j = new GestureDetector(context, new c());
+        this.f47209a = context;
+        this.f47210b = i10;
+        this.f47211c = i11;
+        this.f47212d = listener;
+        this.f47213e = true;
+        this.f47214f = true;
+        this.f47218j = new GestureDetector(context, new c());
     }
 
     public /* synthetic */ a(Context context, int i10, int i11, b bVar, int i12, DefaultConstructorMarker defaultConstructorMarker) {

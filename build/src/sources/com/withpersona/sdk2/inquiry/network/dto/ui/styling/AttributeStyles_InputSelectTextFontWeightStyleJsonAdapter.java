@@ -46,15 +46,15 @@ public final class AttributeStyles_InputSelectTextFontWeightStyleJsonAdapter ext
         StyleElements.FontWeightContainer fontWeightContainer2 = null;
         StyleElements.FontWeightContainer fontWeightContainer3 = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 fontWeightContainer = (StyleElements.FontWeightContainer) this.nullableFontWeightContainerAdapter.fromJson(reader);
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 fontWeightContainer2 = (StyleElements.FontWeightContainer) this.nullableFontWeightContainerAdapter.fromJson(reader);
-            } else if (t02 == 2) {
+            } else if (A0 == 2) {
                 fontWeightContainer3 = (StyleElements.FontWeightContainer) this.nullableFontWeightContainerAdapter.fromJson(reader);
             }
         }
@@ -67,11 +67,11 @@ public final class AttributeStyles_InputSelectTextFontWeightStyleJsonAdapter ext
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputSelectTextFontWeightStyle != null) {
             writer.l();
-            writer.t0("base");
+            writer.A0("base");
             this.nullableFontWeightContainerAdapter.toJson(writer, inputSelectTextFontWeightStyle.getBase());
-            writer.t0("label");
+            writer.A0("label");
             this.nullableFontWeightContainerAdapter.toJson(writer, inputSelectTextFontWeightStyle.getLabel());
-            writer.t0("error");
+            writer.A0("error");
             this.nullableFontWeightContainerAdapter.toJson(writer, inputSelectTextFontWeightStyle.getError());
             writer.E();
             return;

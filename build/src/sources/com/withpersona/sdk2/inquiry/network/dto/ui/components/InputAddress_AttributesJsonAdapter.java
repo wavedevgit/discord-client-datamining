@@ -73,9 +73,9 @@ public final class InputAddress_AttributesJsonAdapter extends h {
         JsonLogicBoolean jsonLogicBoolean = null;
         JsonLogicBoolean jsonLogicBoolean2 = null;
         while (reader.hasNext()) {
-            switch (reader.t0(this.options)) {
+            switch (reader.A0(this.options)) {
                 case -1:
-                    reader.F0();
+                    reader.E0();
                     reader.P();
                     break;
                 case 0:
@@ -158,51 +158,51 @@ public final class InputAddress_AttributesJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
             writer.l();
-            writer.t0("label");
+            writer.A0("label");
             this.nullableStringAdapter.toJson(writer, attributes.getLabel());
-            writer.t0("editAddressManuallyPrompt");
+            writer.A0("editAddressManuallyPrompt");
             this.nullableStringAdapter.toJson(writer, attributes.getEditAddressManuallyPrompt());
-            writer.t0("placeholderAutocomplete");
+            writer.A0("placeholderAutocomplete");
             this.nullableStringAdapter.toJson(writer, attributes.getPlaceholderAutocomplete());
-            writer.t0("fieldKeyAddressStreet1");
+            writer.A0("fieldKeyAddressStreet1");
             this.nullableStringAdapter.toJson(writer, attributes.getFieldKeyAddressStreet1());
-            writer.t0("prefillAddressStreet1");
+            writer.A0("prefillAddressStreet1");
             this.nullableStringAdapter.toJson(writer, attributes.getPrefillAddressStreet1());
-            writer.t0("placeholderAddressStreet1");
+            writer.A0("placeholderAddressStreet1");
             this.nullableStringAdapter.toJson(writer, attributes.getPlaceholderAddressStreet1());
-            writer.t0("fieldKeyAddressStreet2");
+            writer.A0("fieldKeyAddressStreet2");
             this.nullableStringAdapter.toJson(writer, attributes.getFieldKeyAddressStreet2());
-            writer.t0("prefillAddressStreet2");
+            writer.A0("prefillAddressStreet2");
             this.nullableStringAdapter.toJson(writer, attributes.getPrefillAddressStreet2());
-            writer.t0("placeholderAddressStreet2");
+            writer.A0("placeholderAddressStreet2");
             this.nullableStringAdapter.toJson(writer, attributes.getPlaceholderAddressStreet2());
-            writer.t0("fieldKeyAddressCity");
+            writer.A0("fieldKeyAddressCity");
             this.nullableStringAdapter.toJson(writer, attributes.getFieldKeyAddressCity());
-            writer.t0("prefillAddressCity");
+            writer.A0("prefillAddressCity");
             this.nullableStringAdapter.toJson(writer, attributes.getPrefillAddressCity());
-            writer.t0("placeholderAddressCity");
+            writer.A0("placeholderAddressCity");
             this.nullableStringAdapter.toJson(writer, attributes.getPlaceholderAddressCity());
-            writer.t0("fieldKeyAddressSubdivision");
+            writer.A0("fieldKeyAddressSubdivision");
             this.nullableStringAdapter.toJson(writer, attributes.getFieldKeyAddressSubdivision());
-            writer.t0("prefillAddressSubdivision");
+            writer.A0("prefillAddressSubdivision");
             this.nullableStringAdapter.toJson(writer, attributes.getPrefillAddressSubdivision());
-            writer.t0("placeholderAddressSubdivision");
+            writer.A0("placeholderAddressSubdivision");
             this.nullableStringAdapter.toJson(writer, attributes.getPlaceholderAddressSubdivision());
-            writer.t0("placeholderAddressSubdivisionUs");
+            writer.A0("placeholderAddressSubdivisionUs");
             this.nullableStringAdapter.toJson(writer, attributes.getPlaceholderAddressSubdivisionUs());
-            writer.t0("fieldKeyAddressPostalCode");
+            writer.A0("fieldKeyAddressPostalCode");
             this.nullableStringAdapter.toJson(writer, attributes.getFieldKeyAddressPostalCode());
-            writer.t0("prefillAddressPostalCode");
+            writer.A0("prefillAddressPostalCode");
             this.nullableStringAdapter.toJson(writer, attributes.getPrefillAddressPostalCode());
-            writer.t0("placeholderAddressPostalCode");
+            writer.A0("placeholderAddressPostalCode");
             this.nullableStringAdapter.toJson(writer, attributes.getPlaceholderAddressPostalCode());
-            writer.t0("placeholderAddressPostalCodeUs");
+            writer.A0("placeholderAddressPostalCodeUs");
             this.nullableStringAdapter.toJson(writer, attributes.getPlaceholderAddressPostalCodeUs());
-            writer.t0("selectedCountryCode");
+            writer.A0("selectedCountryCode");
             this.nullableStringAdapter.toJson(writer, attributes.getSelectedCountryCode());
-            writer.t0(ViewProps.HIDDEN);
+            writer.A0(ViewProps.HIDDEN);
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getHidden());
-            writer.t0("disabled");
+            writer.A0("disabled");
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getDisabled());
             writer.E();
             return;

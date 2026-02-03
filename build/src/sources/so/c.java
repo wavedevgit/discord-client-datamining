@@ -1,42 +1,50 @@
 package so;
 
 import android.content.Context;
-import kotlinx.coroutines.CoroutineDispatcher;
-import uq.h;
-import wo.e;
+import java.util.List;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c implements uq.d {
+public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f49217a;
+    private static b f49572a;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final h f49218b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final h f49219c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final h f49220d;
-
-    public c(h hVar, h hVar2, h hVar3, h hVar4) {
-        this.f49217a = hVar;
-        this.f49218b = hVar2;
-        this.f49219c = hVar3;
-        this.f49220d = hVar4;
+    public static final void a(Context context) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        c(context).b();
     }
 
-    public static c a(h hVar, h hVar2, h hVar3, h hVar4) {
-        return new c(hVar, hVar2, hVar3, hVar4);
+    private static final synchronized b b(Context context) {
+        synchronized (c.class) {
+            b bVar = f49572a;
+            if (bVar != null) {
+                return bVar;
+            }
+            b bVar2 = new b(context);
+            f49572a = bVar2;
+            return bVar2;
+        }
     }
 
-    public static a c(Context context, e.a aVar, f fVar, CoroutineDispatcher coroutineDispatcher) {
-        return new a(context, aVar, fVar, coroutineDispatcher);
+    public static final b c(Context context) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        b bVar = f49572a;
+        if (bVar == null) {
+            return b(context);
+        }
+        return bVar;
     }
 
-    @Override // javax.inject.Provider
-    /* renamed from: b */
-    public a get() {
-        return c((Context) this.f49217a.get(), (e.a) this.f49218b.get(), (f) this.f49219c.get(), (CoroutineDispatcher) this.f49220d.get());
+    public static final void d(Context context, List directoriesToDeleteOnError) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        Intrinsics.checkNotNullParameter(directoriesToDeleteOnError, "directoriesToDeleteOnError");
+        b c10 = c(context);
+        c10.d();
+        c10.f(directoriesToDeleteOnError);
+    }
+
+    public static final void e(Context context) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        c(context).g();
     }
 }

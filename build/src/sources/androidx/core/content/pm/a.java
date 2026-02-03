@@ -7,7 +7,7 @@ public abstract class a {
 
     /* renamed from: androidx.core.content.pm.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static class C0037a extends a {
+    public static class C0035a extends a {
         @Override // androidx.core.content.pm.a
         /* renamed from: e */
         public Void a(List list) {

@@ -4,11 +4,10 @@ import com.discord.app_database.DatabaseVersions;
 import com.discord.app_database.GuildVersion;
 import com.discord.app_database.NonGuildVersion;
 import com.discord.logging.Log;
-import ct.h;
+import et.h;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Result;
@@ -22,6 +21,7 @@ import kotlinx.serialization.json.Json;
 import kotlinx.serialization.json.JsonElement;
 import kotlinx.serialization.json.JsonObject;
 import kotlinx.serialization.json.JsonPrimitive;
+import lr.v;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0000\bÀ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u0016\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\bJ\f\u0010\t\u001a\u00020\n*\u00020\u000bH\u0002J$\u0010\f\u001a\u00020\r*\u00020\r2\f\u0010\u000e\u001a\b\u0012\u0004\u0012\u00020\u00050\u000f2\b\u0010\u0010\u001a\u0004\u0018\u00010\u0011H\u0002¨\u0006\u0012"}, d2 = {"Lcom/discord/fast_connect/IdentifyPayload;", "", "<init>", "()V", "withGuildVersions", "", "json", "versions", "Lcom/discord/app_database/DatabaseVersions;", "toJson", "Lkotlinx/serialization/json/JsonPrimitive;", "Lcom/discord/app_database/NonGuildVersion;", "put", "Lkotlinx/serialization/json/JsonObject;", "path", "", "value", "Lkotlinx/serialization/json/JsonElement;", "fast_connect_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nIdentifyPayload.kt\nKotlin\n*S Kotlin\n*F\n+ 1 IdentifyPayload.kt\ncom/discord/fast_connect/IdentifyPayload\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,82:1\n1#2:83\n8569#3,2:84\n9251#3,4:86\n13472#3,2:90\n*S KotlinDebug\n*F\n+ 1 IdentifyPayload.kt\ncom/discord/fast_connect/IdentifyPayload\n*L\n24#1:84,2\n24#1:86,4\n27#1:90,2\n*E\n"})
@@ -71,10 +71,10 @@ public final class IdentifyPayload {
         Intrinsics.checkNotNullParameter(json, "json");
         Intrinsics.checkNotNullParameter(versions, "versions");
         try {
-            Result.a aVar = Result.f33071e;
-            b10 = Result.b(Json.f36186d.g(json));
+            Result.a aVar = Result.f32461e;
+            b10 = Result.b(Json.f35576d.g(json));
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f33071e;
+            Result.a aVar2 = Result.f32461e;
             b10 = Result.b(c.a(th2));
         }
         if (Result.g(b10)) {

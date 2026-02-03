@@ -5,17 +5,17 @@ import java.util.List;
 final class a extends l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f55845a;
+    private final String f55983a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f55846b;
+    private final List f55984b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(String str, List list) {
         if (str != null) {
-            this.f55845a = str;
+            this.f55983a = str;
             if (list != null) {
-                this.f55846b = list;
+                this.f55984b = list;
                 return;
             }
             throw new NullPointerException("Null usedDates");
@@ -25,12 +25,12 @@ final class a extends l {
 
     @Override // zi.l
     public List b() {
-        return this.f55846b;
+        return this.f55984b;
     }
 
     @Override // zi.l
     public String c() {
-        return this.f55845a;
+        return this.f55983a;
     }
 
     public boolean equals(Object obj) {
@@ -39,7 +39,7 @@ final class a extends l {
         }
         if (obj instanceof l) {
             l lVar = (l) obj;
-            if (this.f55845a.equals(lVar.c()) && this.f55846b.equals(lVar.b())) {
+            if (this.f55983a.equals(lVar.c()) && this.f55984b.equals(lVar.b())) {
                 return true;
             }
         }
@@ -47,10 +47,10 @@ final class a extends l {
     }
 
     public int hashCode() {
-        return ((this.f55845a.hashCode() ^ 1000003) * 1000003) ^ this.f55846b.hashCode();
+        return ((this.f55983a.hashCode() ^ 1000003) * 1000003) ^ this.f55984b.hashCode();
     }
 
     public String toString() {
-        return "HeartBeatResult{userAgent=" + this.f55845a + ", usedDates=" + this.f55846b + "}";
+        return "HeartBeatResult{userAgent=" + this.f55983a + ", usedDates=" + this.f55984b + "}";
     }
 }

@@ -11,32 +11,32 @@ public class SignInAccount extends hf.a implements ReflectedParcelable {
     public static final Parcelable.Creator<SignInAccount> CREATOR = new g();
 
     /* renamed from: d  reason: collision with root package name */
-    final String f14375d;
+    final String f13343d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final GoogleSignInAccount f14376e;
+    private final GoogleSignInAccount f13344e;
 
     /* renamed from: i  reason: collision with root package name */
-    final String f14377i;
+    final String f13345i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public SignInAccount(String str, GoogleSignInAccount googleSignInAccount, String str2) {
-        this.f14376e = googleSignInAccount;
-        this.f14375d = q.g(str, "8.3 and 8.4 SDKs require non-null email");
-        this.f14377i = q.g(str2, "8.3 and 8.4 SDKs require non-null userId");
+        this.f13344e = googleSignInAccount;
+        this.f13343d = q.g(str, "8.3 and 8.4 SDKs require non-null email");
+        this.f13345i = q.g(str2, "8.3 and 8.4 SDKs require non-null userId");
     }
 
     public final GoogleSignInAccount b() {
-        return this.f14376e;
+        return this.f13344e;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
-        String str = this.f14375d;
+        String str = this.f13343d;
         int a10 = hf.c.a(parcel);
         hf.c.s(parcel, 4, str, false);
-        hf.c.q(parcel, 7, this.f14376e, i10, false);
-        hf.c.s(parcel, 8, this.f14377i, false);
+        hf.c.q(parcel, 7, this.f13344e, i10, false);
+        hf.c.s(parcel, 8, this.f13345i, false);
         hf.c.b(parcel, a10);
     }
 }

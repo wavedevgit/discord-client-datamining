@@ -6,14 +6,14 @@ import wd.g;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public final g f13523a;
+    public final g f12491a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final f f13524b;
+    public final f f12492b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(g gVar, f fVar) {
-        this.f13523a = gVar;
-        this.f13524b = fVar;
+        this.f12491a = gVar;
+        this.f12492b = fVar;
     }
 }

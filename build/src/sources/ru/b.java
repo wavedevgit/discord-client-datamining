@@ -1,23 +1,63 @@
 package ru;
 
+import java.util.List;
 import kotlin.collections.CollectionsKt;
-import uu.d;
+import sv.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b implements lu.b, uu.d {
+public final class b implements nu.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f48717a = new b();
+    public static final b f49129a = new b();
 
     private b() {
     }
 
-    @Override // lu.b
-    /* renamed from: a */
-    public Boolean f(Object obj, Object obj2) {
-        return Boolean.valueOf(b(CollectionsKt.firstOrNull(qv.a.c(obj))));
-    }
-
-    public boolean b(Object obj) {
-        return d.a.a(this, obj);
+    @Override // nu.b
+    public Object f(Object obj, Object obj2) {
+        List list;
+        long j10;
+        List list2;
+        Object obj3;
+        List list3;
+        Object firstOrNull;
+        String obj4;
+        boolean z10 = obj instanceof List;
+        List list4 = null;
+        if (z10) {
+            list = (List) obj;
+        } else {
+            list = null;
+        }
+        if (list != null && (firstOrNull = CollectionsKt.firstOrNull(list)) != null && (obj4 = firstOrNull.toString()) != null) {
+            j10 = d.c(obj4);
+        } else {
+            j10 = 0;
+        }
+        if (z10) {
+            list2 = (List) obj;
+        } else {
+            list2 = null;
+        }
+        if (list2 != null) {
+            obj3 = sv.c.b(list2);
+        } else {
+            obj3 = null;
+        }
+        if (obj3 instanceof List) {
+            list3 = (List) obj3;
+        } else {
+            list3 = null;
+        }
+        if (list3 == null) {
+            list3 = CollectionsKt.l();
+        }
+        List f10 = a.f49128a.f(list3, obj2);
+        if (list3.size() - f10.size() < j10) {
+            list4 = f10;
+        }
+        if (list4 == null) {
+            return CollectionsKt.l();
+        }
+        return list4;
     }
 }

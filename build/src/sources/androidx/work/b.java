@@ -14,61 +14,61 @@ import k4.m;
 public final class b {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final String f5541b = m.i("Data");
+    private static final String f5510b = m.i("Data");
 
     /* renamed from: c  reason: collision with root package name */
-    public static final b f5542c = new a().a();
+    public static final b f5511c = new a().a();
 
     /* renamed from: a  reason: collision with root package name */
-    Map f5543a;
+    Map f5512a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private Map f5544a = new HashMap();
+        private Map f5513a = new HashMap();
 
         public b a() {
-            b bVar = new b(this.f5544a);
+            b bVar = new b(this.f5513a);
             b.o(bVar);
             return bVar;
         }
 
         public a b(String str, Object obj) {
             if (obj == null) {
-                this.f5544a.put(str, null);
+                this.f5513a.put(str, null);
                 return this;
             }
             Class<?> cls = obj.getClass();
             if (cls != Boolean.class && cls != Byte.class && cls != Integer.class && cls != Long.class && cls != Float.class && cls != Double.class && cls != String.class && cls != Boolean[].class && cls != Byte[].class && cls != Integer[].class && cls != Long[].class && cls != Float[].class && cls != Double[].class && cls != String[].class) {
                 if (cls == boolean[].class) {
-                    this.f5544a.put(str, b.a((boolean[]) obj));
+                    this.f5513a.put(str, b.a((boolean[]) obj));
                     return this;
                 } else if (cls == byte[].class) {
-                    this.f5544a.put(str, b.b((byte[]) obj));
+                    this.f5513a.put(str, b.b((byte[]) obj));
                     return this;
                 } else if (cls == int[].class) {
-                    this.f5544a.put(str, b.e((int[]) obj));
+                    this.f5513a.put(str, b.e((int[]) obj));
                     return this;
                 } else if (cls == long[].class) {
-                    this.f5544a.put(str, b.f((long[]) obj));
+                    this.f5513a.put(str, b.f((long[]) obj));
                     return this;
                 } else if (cls == float[].class) {
-                    this.f5544a.put(str, b.d((float[]) obj));
+                    this.f5513a.put(str, b.d((float[]) obj));
                     return this;
                 } else if (cls == double[].class) {
-                    this.f5544a.put(str, b.c((double[]) obj));
+                    this.f5513a.put(str, b.c((double[]) obj));
                     return this;
                 } else {
                     throw new IllegalArgumentException("Key " + str + " has invalid type " + cls);
                 }
             }
-            this.f5544a.put(str, obj);
+            this.f5513a.put(str, obj);
             return this;
         }
 
         public a c(b bVar) {
-            d(bVar.f5543a);
+            d(bVar.f5512a);
             return this;
         }
 
@@ -80,33 +80,33 @@ public final class b {
         }
 
         public a e(String str, boolean z10) {
-            this.f5544a.put(str, Boolean.valueOf(z10));
+            this.f5513a.put(str, Boolean.valueOf(z10));
             return this;
         }
 
         public a f(String str, int i10) {
-            this.f5544a.put(str, Integer.valueOf(i10));
+            this.f5513a.put(str, Integer.valueOf(i10));
             return this;
         }
 
         public a g(String str, long j10) {
-            this.f5544a.put(str, Long.valueOf(j10));
+            this.f5513a.put(str, Long.valueOf(j10));
             return this;
         }
 
         public a h(String str, String str2) {
-            this.f5544a.put(str, str2);
+            this.f5513a.put(str, str2);
             return this;
         }
 
         public a i(String str, String[] strArr) {
-            this.f5544a.put(str, strArr);
+            this.f5513a.put(str, strArr);
             return this;
         }
     }
 
     public b(b bVar) {
-        this.f5543a = new HashMap(bVar.f5543a);
+        this.f5512a = new HashMap(bVar.f5512a);
     }
 
     public static Boolean[] a(boolean[] zArr) {
@@ -200,14 +200,14 @@ public final class b {
             goto L3b
         L35:
             r7 = move-exception
-            java.lang.String r3 = androidx.work.b.f5541b
+            java.lang.String r3 = androidx.work.b.f5510b
             android.util.Log.e(r3, r0, r7)
         L3b:
             r2.close()     // Catch: java.io.IOException -> L3f
             goto L59
         L3f:
             r7 = move-exception
-            java.lang.String r2 = androidx.work.b.f5541b
+            java.lang.String r2 = androidx.work.b.f5510b
             android.util.Log.e(r2, r0, r7)
             goto L59
         L46:
@@ -226,7 +226,7 @@ public final class b {
             r3 = move-exception
             goto L4b
         L51:
-            java.lang.String r4 = androidx.work.b.f5541b     // Catch: java.lang.Throwable -> L2b
+            java.lang.String r4 = androidx.work.b.f5510b     // Catch: java.lang.Throwable -> L2b
             android.util.Log.e(r4, r0, r7)     // Catch: java.lang.Throwable -> L2b
             if (r3 == 0) goto L3b
             goto L31
@@ -240,14 +240,14 @@ public final class b {
             goto L6b
         L65:
             r1 = move-exception
-            java.lang.String r3 = androidx.work.b.f5541b
+            java.lang.String r3 = androidx.work.b.f5510b
             android.util.Log.e(r3, r0, r1)
         L6b:
             r2.close()     // Catch: java.io.IOException -> L6f
             goto L75
         L6f:
             r1 = move-exception
-            java.lang.String r2 = androidx.work.b.f5541b
+            java.lang.String r2 = androidx.work.b.f5510b
             android.util.Log.e(r2, r0, r1)
         L75:
             throw r7
@@ -275,19 +275,19 @@ public final class b {
         }
         try {
             objectOutputStream.writeInt(bVar.n());
-            for (Map.Entry entry : bVar.f5543a.entrySet()) {
+            for (Map.Entry entry : bVar.f5512a.entrySet()) {
                 objectOutputStream.writeUTF((String) entry.getKey());
                 objectOutputStream.writeObject(entry.getValue());
             }
             try {
                 objectOutputStream.close();
             } catch (IOException e11) {
-                Log.e(f5541b, "Error in Data#toByteArray: ", e11);
+                Log.e(f5510b, "Error in Data#toByteArray: ", e11);
             }
             try {
                 byteArrayOutputStream.close();
             } catch (IOException e12) {
-                Log.e(f5541b, "Error in Data#toByteArray: ", e12);
+                Log.e(f5510b, "Error in Data#toByteArray: ", e12);
             }
             if (byteArrayOutputStream.size() <= 10240) {
                 return byteArrayOutputStream.toByteArray();
@@ -296,19 +296,19 @@ public final class b {
         } catch (IOException e13) {
             e = e13;
             objectOutputStream2 = objectOutputStream;
-            Log.e(f5541b, "Error in Data#toByteArray: ", e);
+            Log.e(f5510b, "Error in Data#toByteArray: ", e);
             byte[] byteArray = byteArrayOutputStream.toByteArray();
             if (objectOutputStream2 != null) {
                 try {
                     objectOutputStream2.close();
                 } catch (IOException e14) {
-                    Log.e(f5541b, "Error in Data#toByteArray: ", e14);
+                    Log.e(f5510b, "Error in Data#toByteArray: ", e14);
                 }
             }
             try {
                 byteArrayOutputStream.close();
             } catch (IOException e15) {
-                Log.e(f5541b, "Error in Data#toByteArray: ", e15);
+                Log.e(f5510b, "Error in Data#toByteArray: ", e15);
             }
             return byteArray;
         } catch (Throwable th3) {
@@ -318,13 +318,13 @@ public final class b {
                 try {
                     objectOutputStream2.close();
                 } catch (IOException e16) {
-                    Log.e(f5541b, "Error in Data#toByteArray: ", e16);
+                    Log.e(f5510b, "Error in Data#toByteArray: ", e16);
                 }
             }
             try {
                 byteArrayOutputStream.close();
             } catch (IOException e17) {
-                Log.e(f5541b, "Error in Data#toByteArray: ", e17);
+                Log.e(f5510b, "Error in Data#toByteArray: ", e17);
             }
             throw th;
         }
@@ -339,13 +339,13 @@ public final class b {
             return false;
         }
         b bVar = (b) obj;
-        Set<String> keySet = this.f5543a.keySet();
-        if (!keySet.equals(bVar.f5543a.keySet())) {
+        Set<String> keySet = this.f5512a.keySet();
+        if (!keySet.equals(bVar.f5512a.keySet())) {
             return false;
         }
         for (String str : keySet) {
-            Object obj2 = this.f5543a.get(str);
-            Object obj3 = bVar.f5543a.get(str);
+            Object obj2 = this.f5512a.get(str);
+            Object obj3 = bVar.f5512a.get(str);
             if (obj2 != null && obj3 != null) {
                 if ((obj2 instanceof Object[]) && (obj3 instanceof Object[])) {
                     z10 = Arrays.deepEquals((Object[]) obj2, (Object[]) obj3);
@@ -369,7 +369,7 @@ public final class b {
     }
 
     public boolean h(String str, boolean z10) {
-        Object obj = this.f5543a.get(str);
+        Object obj = this.f5512a.get(str);
         if (obj instanceof Boolean) {
             return ((Boolean) obj).booleanValue();
         }
@@ -377,11 +377,11 @@ public final class b {
     }
 
     public int hashCode() {
-        return this.f5543a.hashCode() * 31;
+        return this.f5512a.hashCode() * 31;
     }
 
     public int i(String str, int i10) {
-        Object obj = this.f5543a.get(str);
+        Object obj = this.f5512a.get(str);
         if (obj instanceof Integer) {
             return ((Integer) obj).intValue();
         }
@@ -389,11 +389,11 @@ public final class b {
     }
 
     public Map j() {
-        return Collections.unmodifiableMap(this.f5543a);
+        return Collections.unmodifiableMap(this.f5512a);
     }
 
     public long k(String str, long j10) {
-        Object obj = this.f5543a.get(str);
+        Object obj = this.f5512a.get(str);
         if (obj instanceof Long) {
             return ((Long) obj).longValue();
         }
@@ -401,7 +401,7 @@ public final class b {
     }
 
     public String l(String str) {
-        Object obj = this.f5543a.get(str);
+        Object obj = this.f5512a.get(str);
         if (obj instanceof String) {
             return (String) obj;
         }
@@ -409,7 +409,7 @@ public final class b {
     }
 
     public String[] m(String str) {
-        Object obj = this.f5543a.get(str);
+        Object obj = this.f5512a.get(str);
         if (obj instanceof String[]) {
             return (String[]) obj;
         }
@@ -417,16 +417,16 @@ public final class b {
     }
 
     public int n() {
-        return this.f5543a.size();
+        return this.f5512a.size();
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder("Data {");
-        if (!this.f5543a.isEmpty()) {
-            for (String str : this.f5543a.keySet()) {
+        if (!this.f5512a.isEmpty()) {
+            for (String str : this.f5512a.keySet()) {
                 sb2.append(str);
                 sb2.append(" : ");
-                Object obj = this.f5543a.get(str);
+                Object obj = this.f5512a.get(str);
                 if (obj instanceof Object[]) {
                     sb2.append(Arrays.toString((Object[]) obj));
                 } else {
@@ -440,6 +440,6 @@ public final class b {
     }
 
     public b(Map map) {
-        this.f5543a = new HashMap(map);
+        this.f5512a = new HashMap(map);
     }
 }

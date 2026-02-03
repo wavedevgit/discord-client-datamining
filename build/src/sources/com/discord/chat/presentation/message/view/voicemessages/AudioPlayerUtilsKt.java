@@ -17,7 +17,7 @@ public final class AudioPlayerUtilsKt {
     @NotNull
     public static final AudioPlayerManager.AudioSource toAudioSource(@NotNull AudioAttachmentMessageAccessory audioAttachmentMessageAccessory) {
         Intrinsics.checkNotNullParameter(audioAttachmentMessageAccessory, "<this>");
-        return new AudioPlayerManager.AudioSource(ChannelId.m1060boximpl(audioAttachmentMessageAccessory.m551getChannelIdo4g7jtM()), audioAttachmentMessageAccessory.mo538getMessageId3Eiw7ao(), audioAttachmentMessageAccessory.getAttachment().getUrl(), Integer.valueOf(audioAttachmentMessageAccessory.getAttachmentIndex()), null);
+        return new AudioPlayerManager.AudioSource(ChannelId.m1059boximpl(audioAttachmentMessageAccessory.m551getChannelIdo4g7jtM()), audioAttachmentMessageAccessory.mo538getMessageId3Eiw7ao(), audioAttachmentMessageAccessory.getAttachment().getUrl(), Integer.valueOf(audioAttachmentMessageAccessory.getAttachmentIndex()), null);
     }
 
     @NotNull

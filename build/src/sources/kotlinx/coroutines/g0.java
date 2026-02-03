@@ -5,18 +5,18 @@ import kotlin.Unit;
 final class g0 implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final CoroutineDispatcher f36122d;
+    private final CoroutineDispatcher f35512d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final CancellableContinuation f36123e;
+    private final CancellableContinuation f35513e;
 
     public g0(CoroutineDispatcher coroutineDispatcher, CancellableContinuation cancellableContinuation) {
-        this.f36122d = coroutineDispatcher;
-        this.f36123e = cancellableContinuation;
+        this.f35512d = coroutineDispatcher;
+        this.f35513e = cancellableContinuation;
     }
 
     @Override // java.lang.Runnable
     public void run() {
-        this.f36123e.q(this.f36122d, Unit.f33074a);
+        this.f35513e.q(this.f35512d, Unit.f32464a);
     }
 }

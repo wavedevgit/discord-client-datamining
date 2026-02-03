@@ -118,7 +118,7 @@ public final class ChatListView extends RecyclerView {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
                 return unit;
             }
         };
@@ -164,13 +164,13 @@ public final class ChatListView extends RecyclerView {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit _init_$lambda$5(ChatListView chatListView) {
         chatListView.setClipToPadding(false);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit _init_$lambda$6(ChatListView chatListView) {
         chatListView.setClipToPadding(true);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     private final void addScrollStateListener() {
@@ -180,7 +180,7 @@ public final class ChatListView extends RecyclerView {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit chatListAdapter$lambda$0(ChatListView chatListView) {
         chatListView.measureAndLayout();
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -230,7 +230,7 @@ public final class ChatListView extends RecyclerView {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit forceRecreateAllViewHolders$lambda$12(ChatListView chatListView) {
         chatListView.measureAndLayout();
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -273,7 +273,7 @@ public final class ChatListView extends RecyclerView {
                 @Override // kotlin.jvm.functions.Function1
                 public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                     invoke(((Boolean) obj).booleanValue());
-                    return Unit.f33074a;
+                    return Unit.f32464a;
                 }
 
                 public final void invoke(boolean z10) {
@@ -300,7 +300,7 @@ public final class ChatListView extends RecyclerView {
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
                     m497invoke();
-                    return Unit.f33074a;
+                    return Unit.f32464a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
@@ -380,7 +380,7 @@ public final class ChatListView extends RecyclerView {
                             chatScrollStateObserver.startWatching(this, ChatScrollStateObserver.EmitMode.YES);
                             return;
                         }
-                        throw new jr.p();
+                        throw new lr.p();
                     }
                 }
             }, null, 16, null);
@@ -405,7 +405,7 @@ public final class ChatListView extends RecyclerView {
             }
             chatEventHandler.onScrollStateChanged(scrollState, chatListView.currentChangesetUpdateId);
         }
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -419,19 +419,19 @@ public final class ChatListView extends RecyclerView {
                 findViewByPosition.sendAccessibilityEvent(8);
             }
         }
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit scrollToPosition$lambda$11(ChatListView chatListView) {
         chatListView.measureAndLayout();
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit scrollToPosition$lambda$9(ChatListView chatListView) {
         chatListView.scrollStateObserver.stopWatching();
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     private final void sync() {
@@ -439,7 +439,7 @@ public final class ChatListView extends RecyclerView {
         if (job != null) {
             Job.a.a(job, null, 1, null);
         }
-        this.updateSubscriptionJob = hs.g.d(CoroutineViewUtilsKt.attachedScope(this, true), null, null, new ChatListView$sync$1(this, null), 3, null);
+        this.updateSubscriptionJob = js.g.d(CoroutineViewUtilsKt.attachedScope(this, true), null, null, new ChatListView$sync$1(this, null), 3, null);
     }
 
     public final void cleanup() {

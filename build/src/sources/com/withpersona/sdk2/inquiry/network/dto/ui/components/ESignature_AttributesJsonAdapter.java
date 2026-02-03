@@ -59,9 +59,9 @@ public final class ESignature_AttributesJsonAdapter extends h {
         String str6 = null;
         String str7 = null;
         while (reader.hasNext()) {
-            switch (reader.t0(this.options)) {
+            switch (reader.A0(this.options)) {
                 case -1:
-                    reader.F0();
+                    reader.E0();
                     reader.P();
                     break;
                 case 0:
@@ -102,23 +102,23 @@ public final class ESignature_AttributesJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
             writer.l();
-            writer.t0("label");
+            writer.A0("label");
             this.nullableStringAdapter.toJson(writer, attributes.getLabel());
-            writer.t0(ViewProps.HIDDEN);
+            writer.A0(ViewProps.HIDDEN);
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getHidden());
-            writer.t0("disabled");
+            writer.A0("disabled");
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getDisabled());
-            writer.t0(ReactTextInputShadowNode.PROP_PLACEHOLDER);
+            writer.A0(ReactTextInputShadowNode.PROP_PLACEHOLDER);
             this.nullableStringAdapter.toJson(writer, attributes.getPlaceholder());
-            writer.t0("saveButtonText");
+            writer.A0("saveButtonText");
             this.nullableStringAdapter.toJson(writer, attributes.getSaveButtonText());
-            writer.t0("clearButtonText");
+            writer.A0("clearButtonText");
             this.nullableStringAdapter.toJson(writer, attributes.getClearButtonText());
-            writer.t0("dialogTitle");
+            writer.A0("dialogTitle");
             this.nullableStringAdapter.toJson(writer, attributes.getDialogTitle());
-            writer.t0("dialogText");
+            writer.A0("dialogText");
             this.nullableStringAdapter.toJson(writer, attributes.getDialogText());
-            writer.t0("prefill");
+            writer.A0("prefill");
             this.nullableStringAdapter.toJson(writer, attributes.getPrefill());
             writer.E();
             return;

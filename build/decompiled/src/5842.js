@@ -1,58 +1,50 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var2 = exports;
-    var3 = dependencyMap;
-    var0 = metroImportDefault;
-    var _closure1_slot0 = var0;
-    var _closure1_slot1 = var3;
+    var1 = exports;
     var0 = global;
-    var6 = var0.Object;
-    var5 = var6.defineProperty;
-    var4 = {};
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
     var0 = true;
-    var4.value = var0;
+    var2.value = var0;
     var0 = '__esModule';
-    var0 = var5.bind(var6)(var2, var0, var4);
-    var0 = 0;
-    var4 = var3[var0];
-    var3 = metroImportAll;
-    var0 = undefined;
-    var3 = var3.bind(var0)(var4);
-    var _closure1_slot2 = var3;
-    var1 = function() {
-        _fun51484: for (var _fun51484_ip = 0;;) switch (_fun51484_ip) {
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = function arg0, arg1() {
+        _fun51513: for (var _fun51513_ip = 0;;) switch (_fun51513_ip) {
             case 0:
-                var3 = _closure1_slot2;
-                var2 = var3.useContext;
-                var4 = _closure1_slot0;
-                var1 = _closure1_slot1;
+                var5 = arg0;
+                var4 = arg1;
+                var1 = var5.length;
                 var0 = 1;
-                var0 = var1[var0];
+                var3 = var1 - var0;
+                var2 = 0;
                 var1 = undefined;
-                var0 = var4.bind(var1)(var0);
-                var0 = var2.bind(var3)(var0);
-                if (!(var1 !== var0)) {
-                    _fun51484_ip = 46;
-                    continue _fun51484
+                if (!(var3 >= var2)) {
+                    _fun51513_ip = 48;
+                    continue _fun51513
                 }
-            case 44:
+            case 26:
+                var0 = var5[var3];
+                var6 = var4.bind(var1)(var0);
+                var0 = var3;
+                if (var6) {
+                    _fun51513_ip = 56;
+                    continue _fun51513
+                }
+            case 41:
+                var3 = var0 - 1;
+                if (var3 >= var2) {
+                    _fun51513_ip = 26;
+                    continue _fun51513
+                }
+            case 48:
+                var1 = -1;
+                return var1;
+            case 56:
                 return var0;
-            case 46:
-                var0 = global;
-                var2 = var0.Error;
-                var0 = var2.prototype;
-                var1 = Object.create(var0, {
-                    constructor: {
-                        value: var2
-                    }
-                });
-                var5 = "Couldn't find a ref for gesture handler. Are you inside a screen in Stack?";
-                var6 = var1;
-                var0 = new var6[var2](var5, var4);
-                var0 = var0 instanceof Object ? var0 : var1;
-                throw var0;
         }
     };
-    var2.default = var1;
+    var1.default = var0;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5788]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

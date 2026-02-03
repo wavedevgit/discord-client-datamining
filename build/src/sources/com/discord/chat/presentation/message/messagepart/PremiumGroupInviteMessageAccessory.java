@@ -54,7 +54,7 @@ public final class PremiumGroupInviteMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof PremiumGroupInviteMessageAccessory) {
             PremiumGroupInviteMessageAccessory premiumGroupInviteMessageAccessory = (PremiumGroupInviteMessageAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, premiumGroupInviteMessageAccessory.messageId) && Intrinsics.areEqual(this.premiumGroupInvite, premiumGroupInviteMessageAccessory.premiumGroupInvite);
+            return MessageId.m1089equalsimpl0(this.messageId, premiumGroupInviteMessageAccessory.messageId) && Intrinsics.areEqual(this.premiumGroupInvite, premiumGroupInviteMessageAccessory.premiumGroupInvite);
         }
         return false;
     }
@@ -72,14 +72,14 @@ public final class PremiumGroupInviteMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.premiumGroupInvite.hashCode();
+        return (MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.premiumGroupInvite.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         PremiumGroupInviteEmbed premiumGroupInviteEmbed = this.premiumGroupInvite;
-        return "PremiumGroupInviteMessageAccessory(messageId=" + m1093toStringimpl + ", premiumGroupInvite=" + premiumGroupInviteEmbed + ")";
+        return "PremiumGroupInviteMessageAccessory(messageId=" + m1092toStringimpl + ", premiumGroupInvite=" + premiumGroupInviteEmbed + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

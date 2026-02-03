@@ -11,25 +11,25 @@ import org.jetbrains.annotations.NotNull;
 public final class c extends hf.a {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f53533d;
+    private final String f53254d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Bundle f53534e;
+    private final Bundle f53255e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Bundle f53535i;
+    private final Bundle f53256i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f53536o;
+    private final String f53257o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final String f53537p;
+    private final String f53258p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final String f53538q;
+    private final String f53259q;
 
     /* renamed from: r  reason: collision with root package name */
-    public static final a f53532r = new a(null);
+    public static final a f53253r = new a(null);
     @NotNull
     public static final Parcelable.Creator<c> CREATOR = new d();
 
@@ -51,12 +51,12 @@ public final class c extends hf.a {
         Intrinsics.checkNotNullParameter(requestMatcher, "requestMatcher");
         Intrinsics.checkNotNullParameter(requestType, "requestType");
         Intrinsics.checkNotNullParameter(protocolType, "protocolType");
-        this.f53533d = type;
-        this.f53534e = credentialRetrievalData;
-        this.f53535i = candidateQueryData;
-        this.f53536o = requestMatcher;
-        this.f53537p = requestType;
-        this.f53538q = protocolType;
+        this.f53254d = type;
+        this.f53255e = credentialRetrievalData;
+        this.f53256i = candidateQueryData;
+        this.f53257o = requestMatcher;
+        this.f53258p = requestType;
+        this.f53259q = protocolType;
         boolean z11 = true;
         if (!StringsKt.k0(requestType) && !StringsKt.k0(protocolType)) {
             z10 = true;
@@ -70,27 +70,27 @@ public final class c extends hf.a {
     }
 
     public final Bundle b() {
-        return this.f53535i;
+        return this.f53256i;
     }
 
     public final Bundle c() {
-        return this.f53534e;
+        return this.f53255e;
     }
 
     public final String d() {
-        return this.f53538q;
+        return this.f53259q;
     }
 
     public final String e() {
-        return this.f53536o;
+        return this.f53257o;
     }
 
     public final String f() {
-        return this.f53537p;
+        return this.f53258p;
     }
 
     public final String g() {
-        return this.f53533d;
+        return this.f53254d;
     }
 
     @Override // android.os.Parcelable

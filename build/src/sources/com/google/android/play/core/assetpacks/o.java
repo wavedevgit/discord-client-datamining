@@ -7,24 +7,24 @@ import java.util.List;
 abstract class o extends th.c0 {
 
     /* renamed from: c  reason: collision with root package name */
-    final wg.k f16574c;
+    final wg.k f15542c;
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ x f16575d;
+    final /* synthetic */ x f15543d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public o(x xVar, wg.k kVar) {
-        this.f16575d = xVar;
-        this.f16574c = kVar;
+        this.f15543d = xVar;
+        this.f15542c = kVar;
     }
 
     @Override // th.d0
     public final void E(Bundle bundle, Bundle bundle2) {
         th.v0 v0Var;
         th.k0 k0Var;
-        v0Var = this.f16575d.f16724d;
-        v0Var.u(this.f16574c);
-        k0Var = x.f16719g;
+        v0Var = this.f15543d.f15692d;
+        v0Var.u(this.f15542c);
+        k0Var = x.f15687g;
         k0Var.d("onNotifySessionFailed(%d)", Integer.valueOf(bundle.getInt(SharedPreferencesKey.SESSION_ID)));
     }
 
@@ -32,9 +32,9 @@ abstract class o extends th.c0 {
     public final void F(Bundle bundle, Bundle bundle2) {
         th.v0 v0Var;
         th.k0 k0Var;
-        v0Var = this.f16575d.f16724d;
-        v0Var.u(this.f16574c);
-        k0Var = x.f16719g;
+        v0Var = this.f15543d.f15692d;
+        v0Var.u(this.f15542c);
+        k0Var = x.f15687g;
         k0Var.d("onRemoveModule()", new Object[0]);
     }
 
@@ -42,9 +42,9 @@ abstract class o extends th.c0 {
     public void J0(Bundle bundle, Bundle bundle2) {
         th.v0 v0Var;
         th.k0 k0Var;
-        v0Var = this.f16575d.f16724d;
-        v0Var.u(this.f16574c);
-        k0Var = x.f16719g;
+        v0Var = this.f15543d.f15692d;
+        v0Var.u(this.f15542c);
+        k0Var = x.f15687g;
         k0Var.d("onGetChunkFileDescriptor", new Object[0]);
     }
 
@@ -52,9 +52,9 @@ abstract class o extends th.c0 {
     public void K(Bundle bundle, Bundle bundle2) {
         th.v0 v0Var;
         th.k0 k0Var;
-        v0Var = this.f16575d.f16724d;
-        v0Var.u(this.f16574c);
-        k0Var = x.f16719g;
+        v0Var = this.f15543d.f15692d;
+        v0Var.u(this.f15542c);
+        k0Var = x.f15687g;
         k0Var.d("onRequestDownloadInfo()", new Object[0]);
     }
 
@@ -62,9 +62,9 @@ abstract class o extends th.c0 {
     public final void U(int i10, Bundle bundle) {
         th.v0 v0Var;
         th.k0 k0Var;
-        v0Var = this.f16575d.f16724d;
-        v0Var.u(this.f16574c);
-        k0Var = x.f16719g;
+        v0Var = this.f15543d.f15692d;
+        v0Var.u(this.f15542c);
+        k0Var = x.f15687g;
         k0Var.d("onGetSession(%d)", Integer.valueOf(i10));
     }
 
@@ -72,9 +72,9 @@ abstract class o extends th.c0 {
     public void b0(Bundle bundle, Bundle bundle2) {
         th.v0 v0Var;
         th.k0 k0Var;
-        v0Var = this.f16575d.f16725e;
-        v0Var.u(this.f16574c);
-        k0Var = x.f16719g;
+        v0Var = this.f15543d.f15693e;
+        v0Var.u(this.f15542c);
+        k0Var = x.f15687g;
         k0Var.d("onKeepAlive(%b)", Boolean.valueOf(bundle.getBoolean("keep_alive")));
     }
 
@@ -82,9 +82,9 @@ abstract class o extends th.c0 {
     public final void c(Bundle bundle) {
         th.v0 v0Var;
         th.k0 k0Var;
-        v0Var = this.f16575d.f16724d;
-        v0Var.u(this.f16574c);
-        k0Var = x.f16719g;
+        v0Var = this.f15543d.f15692d;
+        v0Var.u(this.f15542c);
+        k0Var = x.f15687g;
         k0Var.d("onCancelDownloads()", new Object[0]);
     }
 
@@ -92,21 +92,21 @@ abstract class o extends th.c0 {
     public void g(Bundle bundle) {
         th.v0 v0Var;
         th.k0 k0Var;
-        v0Var = this.f16575d.f16724d;
-        v0Var.u(this.f16574c);
+        v0Var = this.f15543d.f15692d;
+        v0Var.u(this.f15542c);
         int i10 = bundle.getInt("error_code");
-        k0Var = x.f16719g;
+        k0Var = x.f15687g;
         k0Var.b("onError(%d)", Integer.valueOf(i10));
-        this.f16574c.d(new a(i10));
+        this.f15542c.d(new a(i10));
     }
 
     @Override // th.d0
     public final void h0(Bundle bundle, Bundle bundle2) {
         th.v0 v0Var;
         th.k0 k0Var;
-        v0Var = this.f16575d.f16724d;
-        v0Var.u(this.f16574c);
-        k0Var = x.f16719g;
+        v0Var = this.f15543d.f15692d;
+        v0Var.u(this.f15542c);
+        k0Var = x.f15687g;
         k0Var.d("onNotifyChunkTransferred(%s, %s, %d, session=%d)", bundle.getString("module_name"), bundle.getString("slice_id"), Integer.valueOf(bundle.getInt("chunk_number")), Integer.valueOf(bundle.getInt(SharedPreferencesKey.SESSION_ID)));
     }
 
@@ -114,9 +114,9 @@ abstract class o extends th.c0 {
     public final void k0(Bundle bundle, Bundle bundle2) {
         th.v0 v0Var;
         th.k0 k0Var;
-        v0Var = this.f16575d.f16724d;
-        v0Var.u(this.f16574c);
-        k0Var = x.f16719g;
+        v0Var = this.f15543d.f15692d;
+        v0Var.u(this.f15542c);
+        k0Var = x.f15687g;
         k0Var.d("onNotifyModuleCompleted(%s, sessionId=%d)", bundle.getString("module_name"), Integer.valueOf(bundle.getInt(SharedPreferencesKey.SESSION_ID)));
     }
 
@@ -124,9 +124,9 @@ abstract class o extends th.c0 {
     public final void p0(int i10, Bundle bundle) {
         th.v0 v0Var;
         th.k0 k0Var;
-        v0Var = this.f16575d.f16724d;
-        v0Var.u(this.f16574c);
-        k0Var = x.f16719g;
+        v0Var = this.f15543d.f15692d;
+        v0Var.u(this.f15542c);
+        k0Var = x.f15687g;
         k0Var.d("onCancelDownload(%d)", Integer.valueOf(i10));
     }
 
@@ -134,9 +134,9 @@ abstract class o extends th.c0 {
     public void q(int i10, Bundle bundle) {
         th.v0 v0Var;
         th.k0 k0Var;
-        v0Var = this.f16575d.f16724d;
-        v0Var.u(this.f16574c);
-        k0Var = x.f16719g;
+        v0Var = this.f15543d.f15692d;
+        v0Var.u(this.f15542c);
+        k0Var = x.f15687g;
         k0Var.d("onStartDownload(%d)", Integer.valueOf(i10));
     }
 
@@ -144,9 +144,9 @@ abstract class o extends th.c0 {
     public void t(List list) {
         th.v0 v0Var;
         th.k0 k0Var;
-        v0Var = this.f16575d.f16724d;
-        v0Var.u(this.f16574c);
-        k0Var = x.f16719g;
+        v0Var = this.f15543d.f15692d;
+        v0Var.u(this.f15542c);
+        k0Var = x.f15687g;
         k0Var.d("onGetSessionStates", new Object[0]);
     }
 }

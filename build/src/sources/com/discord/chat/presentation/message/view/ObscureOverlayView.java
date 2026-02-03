@@ -50,7 +50,7 @@ public final class ObscureOverlayView extends FrameLayout implements SpoilerView
     public static final Unit configure$lambda$2(Function0 function0, ObscureOverlayView obscureOverlayView) {
         function0.invoke();
         obscureOverlayView.binding.revealButton.requestFocus();
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     private final void handleRevealedState(boolean z10) {

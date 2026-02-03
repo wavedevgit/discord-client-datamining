@@ -42,7 +42,7 @@ final class RiveUIKt$RiveUI$10 extends Lambda implements Function2<a, Integer, U
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
         b.a(obj);
         invoke((a) null, ((Number) obj2).intValue());
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public final void invoke(a aVar, int i10) {

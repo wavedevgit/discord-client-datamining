@@ -9,26 +9,26 @@ import org.jetbrains.annotations.NotNull;
 public final class JavaClassDataFinder implements ClassDataFinder {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KotlinClassFinder f34281a;
+    private final KotlinClassFinder f33671a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final DeserializedDescriptorResolver f34282b;
+    private final DeserializedDescriptorResolver f33672b;
 
     public JavaClassDataFinder(@NotNull KotlinClassFinder kotlinClassFinder, @NotNull DeserializedDescriptorResolver deserializedDescriptorResolver) {
         Intrinsics.checkNotNullParameter(kotlinClassFinder, "kotlinClassFinder");
         Intrinsics.checkNotNullParameter(deserializedDescriptorResolver, "deserializedDescriptorResolver");
-        this.f34281a = kotlinClassFinder;
-        this.f34282b = deserializedDescriptorResolver;
+        this.f33671a = kotlinClassFinder;
+        this.f33672b = deserializedDescriptorResolver;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.ClassDataFinder
     public ClassData findClassData(@NotNull ClassId classId) {
         Intrinsics.checkNotNullParameter(classId, "classId");
-        KotlinJvmBinaryClass findKotlinClass = KotlinClassFinderKt.findKotlinClass(this.f34281a, classId, this.f34282b.getComponents().getConfiguration().getMetadataVersion());
+        KotlinJvmBinaryClass findKotlinClass = KotlinClassFinderKt.findKotlinClass(this.f33671a, classId, this.f33672b.getComponents().getConfiguration().getMetadataVersion());
         if (findKotlinClass == null) {
             return null;
         }
         Intrinsics.areEqual(findKotlinClass.getClassId(), classId);
-        return this.f34282b.readClassData$descriptors_jvm(findKotlinClass);
+        return this.f33672b.readClassData$descriptors_jvm(findKotlinClass);
     }
 }

@@ -36,4 +36,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openStageChannelAudienceNoticeModal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5907, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5912, 2]);

@@ -51,21 +51,21 @@ public final class OverlayViewProvider<T extends OverlayView> {
     public static final Unit removeViewFromOverlay$lambda$0(OverlayView v10) {
         Intrinsics.checkNotNullParameter(v10, "v");
         v10.removeFromWindowManager();
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setAssets$lambda$1(MobileVoiceOverlayAssets mobileVoiceOverlayAssets, OverlayView view) {
         Intrinsics.checkNotNullParameter(view, "view");
         view.setAssets(mobileVoiceOverlayAssets);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setData$lambda$2(MobileVoiceOverlayData mobileVoiceOverlayData, OverlayView view) {
         Intrinsics.checkNotNullParameter(view, "view");
         view.setData(mobileVoiceOverlayData);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     private final void withViewOptional(Function1<? super T, Unit> function1) {

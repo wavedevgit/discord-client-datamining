@@ -237,8 +237,8 @@ public class MessageContentView extends SimpleDraweeSpanTextView implements Vert
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit truncate_l3ndG_o$lambda$3(Function1 function1, String str, View it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        function1.invoke(MessageId.m1086boximpl(str));
-        return Unit.f33074a;
+        function1.invoke(MessageId.m1085boximpl(str));
+        return Unit.f32464a;
     }
 
     public final void setMessageContent(@NotNull MessageMargins margins, @NotNull StructurableText messageContent, @NotNull MarkdownTextRenderOptions options, @NotNull MarkdownTextRenderEventHandlers eventHandlers, Float f10, boolean z10) {
@@ -246,11 +246,11 @@ public class MessageContentView extends SimpleDraweeSpanTextView implements Vert
         Intrinsics.checkNotNullParameter(messageContent, "messageContent");
         Intrinsics.checkNotNullParameter(options, "options");
         Intrinsics.checkNotNullParameter(eventHandlers, "eventHandlers");
-        m700setMessageContent4q5Jro$default(this, margins, messageContent, MessageId.m1087constructorimpl(options.getContainerId()), options.getShouldAnimateEmoji(), options.getShouldShowLinkDecorations(), options.getShouldShowRoleDot(), options.getShouldShowRoleOnName(), eventHandlers.getOnLinkClicked(), eventHandlers.getOnLinkLongClicked(), eventHandlers.getOnTapChannel(), eventHandlers.getOnLongPressChannel(), eventHandlers.getOnTapAttachmentLink(), eventHandlers.getOnLongPressAttachmentLink(), eventHandlers.getOnTapMention(), eventHandlers.getOnTapCommand(), eventHandlers.getOnLongPressCommand(), eventHandlers.getOnTapSpoiler(), eventHandlers.getOnTapTimestamp(), eventHandlers.getOnTapInlineCode(), eventHandlers.getOnTapEmoji(), new Function1<MessageId, Unit>() { // from class: com.discord.chat.presentation.message.view.MessageContentView$setMessageContent$1
+        m700setMessageContent4q5Jro$default(this, margins, messageContent, MessageId.m1086constructorimpl(options.getContainerId()), options.getShouldAnimateEmoji(), options.getShouldShowLinkDecorations(), options.getShouldShowRoleDot(), options.getShouldShowRoleOnName(), eventHandlers.getOnLinkClicked(), eventHandlers.getOnLinkLongClicked(), eventHandlers.getOnTapChannel(), eventHandlers.getOnLongPressChannel(), eventHandlers.getOnTapAttachmentLink(), eventHandlers.getOnLongPressAttachmentLink(), eventHandlers.getOnTapMention(), eventHandlers.getOnTapCommand(), eventHandlers.getOnLongPressCommand(), eventHandlers.getOnTapSpoiler(), eventHandlers.getOnTapTimestamp(), eventHandlers.getOnTapInlineCode(), eventHandlers.getOnTapEmoji(), new Function1<MessageId, Unit>() { // from class: com.discord.chat.presentation.message.view.MessageContentView$setMessageContent$1
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
-                m703invoke1xi1bu0(((MessageId) obj).m1095unboximpl());
-                return Unit.f33074a;
+                m703invoke1xi1bu0(((MessageId) obj).m1094unboximpl());
+                return Unit.f32464a;
             }
 
             /* renamed from: invoke-1xi1bu0  reason: not valid java name */
@@ -338,7 +338,7 @@ public class MessageContentView extends SimpleDraweeSpanTextView implements Vert
     public MessageContentView(@NotNull Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
         Intrinsics.checkNotNullParameter(context, "context");
-        this.shadowView$delegate = jr.l.b(new Function0() { // from class: com.discord.chat.presentation.message.view.r2
+        this.shadowView$delegate = lr.l.a(new Function0() { // from class: com.discord.chat.presentation.message.view.r2
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 SimpleDraweeSpanTextView shadowView_delegate$lambda$0;

@@ -1,193 +1,179 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun22050: for (var _fun22050_ip = 0;;) switch (_fun22050_ip) {
-        case 0:
-            var1 = exports;
-            var0 = global;
-            var4 = var0.Object;
-            var3 = var4.defineProperty;
-            var2 = {};
-            var0 = true;
-            var2.value = var0;
-            var0 = '__esModule';
-            var0 = var3.bind(var4)(var1, var0, var2);
-            var0 = undefined;
-            var1.default = var0;
-            var3 = dependencyMap;
-            var2 = 0;
-            var3 = var3[var2];
-            var2 = require;
-            var4 = var2.bind(var0)(var3);
-            if (!var4) {
-                _fun22050_ip = 77;
-                continue _fun22050
-            }
-        case 65:
-            var2 = var4.__esModule;
-            var3 = var4;
-            if (var2) {
-                _fun22050_ip = 86;
-                continue _fun22050
-            }
-        case 77:
-            var2 = {};
-            var2.default = var4;
-            var3 = var2;
-        case 86:
-            var2 = {};
-            var4 = function arg0, arg1() {
-                var0 = global;
-                var3 = var0.Number;
+    var1 = exports;
+    var0 = global;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var1, var0, var3);
+    var0 = undefined;
+    var1.default = var0;
+    var3 = {
+        'about': 'körülbelül',
+        'over': 'több mint',
+        'almost': 'majdnem',
+        'lessthan': 'kevesebb mint'
+    };
+    var _closure1_slot0 = var3;
+    var3 = {
+        'xseconds': ' másodperc',
+        'halfaminute': 'fél perc',
+        'xminutes': ' perc',
+        'xhours': ' óra',
+        'xdays': ' nap',
+        'xweeks': ' hét',
+        'xmonths': ' hónap',
+        'xyears': ' év'
+    };
+    var _closure1_slot1 = var3;
+    var3 = {};
+    var4 = {
+        '-1': ' másodperccel ezelőtt',
+        1: ' másodperc múlva',
+        0: ' másodperce'
+    };
+    var3.xseconds = var4;
+    var4 = {
+        '-1': 'fél perccel ezelőtt',
+        1: 'fél perc múlva',
+        0: 'fél perce'
+    };
+    var3.halfaminute = var4;
+    var4 = {
+        '-1': ' perccel ezelőtt',
+        1: ' perc múlva',
+        0: ' perce'
+    };
+    var3.xminutes = var4;
+    var4 = {
+        '-1': ' órával ezelőtt',
+        1: ' óra múlva',
+        0: ' órája'
+    };
+    var3.xhours = var4;
+    var4 = {
+        '-1': ' nappal ezelőtt',
+        1: ' nap múlva',
+        0: ' napja'
+    };
+    var3.xdays = var4;
+    var4 = {
+        '-1': ' héttel ezelőtt',
+        1: ' hét múlva',
+        0: ' hete'
+    };
+    var3.xweeks = var4;
+    var4 = {
+        '-1': ' hónappal ezelőtt',
+        1: ' hónap múlva',
+        0: ' hónapja'
+    };
+    var3.xmonths = var4;
+    var4 = {
+        '-1': ' évvel ezelőtt',
+        1: ' év múlva',
+        0: ' éve'
+    };
+    var3.xyears = var4;
+    var _closure1_slot2 = var3;
+    var2 = function arg0, arg1, arg2() {
+        _fun22114: for (var _fun22114_ip = 0;;) switch (_fun22114_ip) {
+            case 0:
+                var5 = arg0;
+                var0 = arg2;
+                var2 = var5.match;
+                var1 = /about|over|almost|lessthan/i;
+                var3 = var2.bind(var5)(var1);
+                var6 = var5;
+                if (!var3) {
+                    _fun22114_ip = 58;
+                    continue _fun22114
+                }
+            case 37:
+                var4 = var5.replace;
+                var1 = 0;
+                var2 = var3[var1];
+                var1 = '';
+                var6 = var4.bind(var5)(var2, var1);
+            case 58:
+                var5 = null;
+                var4 = var5 == var0;
+                var1 = undefined;
+                if (var4) {
+                    _fun22114_ip = 75;
+                    continue _fun22114
+                }
+            case 69:
+                var1 = var0.addSuffix;
+            case 75:
+                var4 = var6.toLowerCase;
+                var4 = var4.bind(var6)();
+                var5 = var5 == var0;
                 var2 = undefined;
-                var1 = arg0;
-                var1 = var3.bind(var2)(var1);
-                var0 = var0.String;
-                var0 = var0.bind(var2)(var1);
+                if (var5) {
+                    _fun22114_ip = 100;
+                    continue _fun22114
+                }
+            case 94:
+                var2 = var0.comparison;
+            case 100:
+                if (var2) {
+                    _fun22114_ip = 105;
+                    continue _fun22114
+                }
+            case 103:
+                var2 = 0;
+            case 105:
+                var0 = true;
+                if (!(var0 !== var1)) {
+                    _fun22114_ip = 124;
+                    continue _fun22114
+                }
+            case 111:
+                var0 = _closure1_slot1;
+                var1 = var0[var4];
+                _fun22114_ip = 139;
+                continue _fun22114;
+            case 124:
+                var0 = _closure1_slot2;
+                var0 = var0[var4];
+                var1 = var0[var2];
+            case 139:
+                var0 = 'halfaminute';
+                var2 = var1;
+                if (!(var0 !== var4)) {
+                    _fun22114_ip = 157;
+                    continue _fun22114
+                }
+            case 150:
+                var0 = arg1;
+                var2 = var0 + var1;
+            case 157:
+                var0 = var2;
+                if (!var3) {
+                    _fun22114_ip = 204;
+                    continue _fun22114
+                }
+            case 163:
+                var1 = 0;
+                var3 = var3[var1];
+                var1 = var3.toLowerCase;
+                var3 = var1.bind(var3)();
+                var1 = _closure1_slot0;
+                var3 = var1[var3];
+                var1 = ' ';
+                var1 = var3 + var1;
+                var0 = var1 + var2;
+            case 204:
                 return var0;
-            };
-            var2.ordinalNumber = var4;
-            var6 = var3.default;
-            var4 = {};
-            var5 = {};
-            var8 = ['aC', 'dC'];
-            var5.narrow = var8;
-            var8 = ['a.C.', 'd.C.'];
-            var5.abbreviated = var8;
-            var8 = ['avanti Cristo', 'dopo Cristo'];
-            var5.wide = var8;
-            var4.values = var5;
-            var5 = 'wide';
-            var4.defaultWidth = var5;
-            var4 = var6.bind(var0)(var4);
-            var2.era = var4;
-            var6 = var3.default;
-            var4 = {};
-            var8 = {};
-            var9 = ['1', '2', '3', '4'];
-            var8.narrow = var9;
-            var9 = ['T1', 'T2', 'T3', 'T4'];
-            var8.abbreviated = var9;
-            var9 = ['1º trimestre', '2º trimestre', '3º trimestre', '4º trimestre'];
-            var8.wide = var9;
-            var4.values = var8;
-            var4.defaultWidth = var5;
-            var7 = function arg0() {
-                var1 = arg0;
-                var0 = 1;
-                var0 = var1 - var0;
-                return var0;
-            };
-            var4.argumentCallback = var7;
-            var4 = var6.bind(var0)(var4);
-            var2.quarter = var4;
-            var6 = var3.default;
-            var4 = {};
-            var7 = {};
-            var8 = ['G', 'F', 'M', 'A', 'M', 'G', 'L', 'A', 'S', 'O', 'N', 'D'];
-            var7.narrow = var8;
-            var8 = ['gen', 'feb', 'mar', 'apr', 'mag', 'giu', 'lug', 'ago', 'set', 'ott', 'nov', 'dic'];
-            var7.abbreviated = var8;
-            var8 = ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'];
-            var7.wide = var8;
-            var4.values = var7;
-            var4.defaultWidth = var5;
-            var4 = var6.bind(var0)(var4);
-            var2.month = var4;
-            var6 = var3.default;
-            var4 = {};
-            var7 = {};
-            var8 = ['D', 'L', 'M', 'M', 'G', 'V', 'S'];
-            var7.narrow = var8;
-            var8 = ['dom', 'lun', 'mar', 'mer', 'gio', 'ven', 'sab'];
-            var7.short = var8;
-            var8 = ['dom', 'lun', 'mar', 'mer', 'gio', 'ven', 'sab'];
-            var7.abbreviated = var8;
-            var8 = ['domenica', 'lunedì', 'martedì', 'mercoledì', 'giovedì', 'venerdì', 'sabato'];
-            var7.wide = var8;
-            var4.values = var7;
-            var4.defaultWidth = var5;
-            var4 = var6.bind(var0)(var4);
-            var2.day = var4;
-            var4 = var3.default;
-            var3 = {};
-            var6 = {};
-            var7 = {
-                'am': 'm.',
-                'pm': 'p.',
-                'midnight': 'mezzanotte',
-                'noon': 'mezzogiorno',
-                'morning': 'mattina',
-                'afternoon': 'pomeriggio',
-                'evening': 'sera',
-                'night': 'notte'
-            };
-            var6.narrow = var7;
-            var7 = {
-                'am': 'AM',
-                'pm': 'PM',
-                'midnight': 'mezzanotte',
-                'noon': 'mezzogiorno',
-                'morning': 'mattina',
-                'afternoon': 'pomeriggio',
-                'evening': 'sera',
-                'night': 'notte'
-            };
-            var6.abbreviated = var7;
-            var7 = {
-                'am': 'AM',
-                'pm': 'PM',
-                'midnight': 'mezzanotte',
-                'noon': 'mezzogiorno',
-                'morning': 'mattina',
-                'afternoon': 'pomeriggio',
-                'evening': 'sera',
-                'night': 'notte'
-            };
-            var6.wide = var7;
-            var3.values = var6;
-            var3.defaultWidth = var5;
-            var6 = {};
-            var7 = {
-                'am': 'm.',
-                'pm': 'p.',
-                'midnight': 'mezzanotte',
-                'noon': 'mezzogiorno',
-                'morning': 'di mattina',
-                'afternoon': 'del pomeriggio',
-                'evening': 'di sera',
-                'night': 'di notte'
-            };
-            var6.narrow = var7;
-            var7 = {
-                'am': 'AM',
-                'pm': 'PM',
-                'midnight': 'mezzanotte',
-                'noon': 'mezzogiorno',
-                'morning': 'di mattina',
-                'afternoon': 'del pomeriggio',
-                'evening': 'di sera',
-                'night': 'di notte'
-            };
-            var6.abbreviated = var7;
-            var7 = {
-                'am': 'AM',
-                'pm': 'PM',
-                'midnight': 'mezzanotte',
-                'noon': 'mezzogiorno',
-                'morning': 'di mattina',
-                'afternoon': 'del pomeriggio',
-                'evening': 'di sera',
-                'night': 'di notte'
-            };
-            var6.wide = var7;
-            var3.formattingValues = var6;
-            var3.defaultFormattingWidth = var5;
-            var3 = var4.bind(var0)(var3);
-            var2.dayPeriod = var3;
-            var1.default = var2;
-            var2 = var1.default;
-            var1 = arg4;
-            var1.exports = var2;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1684]);
+        }
+    };
+    var1.default = var2;
+    var2 = var1.default;
+    var1 = arg4;
+    var1.exports = var2;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

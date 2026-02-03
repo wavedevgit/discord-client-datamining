@@ -12,26 +12,26 @@ public interface b0 {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final byte[] f48326a;
+        private final byte[] f48635a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f48327b;
+        private final String f48636b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int f48328c;
+        private final int f48637c;
 
         public a(byte[] bArr, String str, int i10) {
-            this.f48326a = bArr;
-            this.f48327b = str;
-            this.f48328c = i10;
+            this.f48635a = bArr;
+            this.f48636b = str;
+            this.f48637c = i10;
         }
 
         public byte[] a() {
-            return this.f48326a;
+            return this.f48635a;
         }
 
         public String b() {
-            return this.f48327b;
+            return this.f48636b;
         }
     }
 
@@ -49,22 +49,22 @@ public interface b0 {
     public static final class d {
 
         /* renamed from: a  reason: collision with root package name */
-        private final byte[] f48329a;
+        private final byte[] f48638a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f48330b;
+        private final String f48639b;
 
         public d(byte[] bArr, String str) {
-            this.f48329a = bArr;
-            this.f48330b = str;
+            this.f48638a = bArr;
+            this.f48639b = str;
         }
 
         public byte[] a() {
-            return this.f48329a;
+            return this.f48638a;
         }
 
         public String b() {
-            return this.f48330b;
+            return this.f48639b;
         }
     }
 

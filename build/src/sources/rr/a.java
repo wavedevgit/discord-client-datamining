@@ -1,81 +1,44 @@
 package rr;
 
-import java.lang.reflect.Method;
-import kotlin.collections.i;
-import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
+import kotlin.enums.EnumEntries;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class a {
+public final class a {
 
-    /* renamed from: rr.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    private static final class C0603a {
-        @NotNull
+    /* renamed from: d  reason: collision with root package name */
+    public static final a f49055d = new a("COROUTINE_SUSPENDED", 0);
 
-        /* renamed from: a  reason: collision with root package name */
-        public static final C0603a f48652a = new C0603a();
+    /* renamed from: e  reason: collision with root package name */
+    public static final a f49056e = new a("UNDECIDED", 1);
 
-        /* renamed from: b  reason: collision with root package name */
-        public static final Method f48653b;
+    /* renamed from: i  reason: collision with root package name */
+    public static final a f49057i = new a("RESUMED", 2);
 
-        /* renamed from: c  reason: collision with root package name */
-        public static final Method f48654c;
+    /* renamed from: o  reason: collision with root package name */
+    private static final /* synthetic */ a[] f49058o;
 
-        static {
-            Method method;
-            Method method2;
-            Method[] methods = Throwable.class.getMethods();
-            Intrinsics.checkNotNull(methods);
-            int length = methods.length;
-            int i10 = 0;
-            int i11 = 0;
-            while (true) {
-                method = null;
-                if (i11 < length) {
-                    method2 = methods[i11];
-                    if (Intrinsics.areEqual(method2.getName(), "addSuppressed")) {
-                        Class<?>[] parameterTypes = method2.getParameterTypes();
-                        Intrinsics.checkNotNullExpressionValue(parameterTypes, "getParameterTypes(...)");
-                        if (Intrinsics.areEqual(i.D0(parameterTypes), Throwable.class)) {
-                            break;
-                        }
-                    }
-                    i11++;
-                } else {
-                    method2 = null;
-                    break;
-                }
-            }
-            f48653b = method2;
-            int length2 = methods.length;
-            while (true) {
-                if (i10 >= length2) {
-                    break;
-                }
-                Method method3 = methods[i10];
-                if (Intrinsics.areEqual(method3.getName(), "getSuppressed")) {
-                    method = method3;
-                    break;
-                }
-                i10++;
-            }
-            f48654c = method;
-        }
+    /* renamed from: p  reason: collision with root package name */
+    private static final /* synthetic */ EnumEntries f49059p;
 
-        private C0603a() {
-        }
+    static {
+        a[] a10 = a();
+        f49058o = a10;
+        f49059p = sr.a.a(a10);
     }
 
-    public void a(Throwable cause, Throwable exception) {
-        Intrinsics.checkNotNullParameter(cause, "cause");
-        Intrinsics.checkNotNullParameter(exception, "exception");
-        Method method = C0603a.f48653b;
-        if (method != null) {
-            method.invoke(cause, exception);
-        }
+    private a(String str, int i10) {
     }
 
-    public kotlin.random.c b() {
-        return new kotlin.random.b();
+    private static final /* synthetic */ a[] a() {
+        return new a[]{f49055d, f49056e, f49057i};
+    }
+
+    public static a valueOf(String str) {
+        return (a) Enum.valueOf(a.class, str);
+    }
+
+    public static a[] values() {
+        return (a[]) f49058o.clone();
     }
 }

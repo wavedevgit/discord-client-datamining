@@ -1,6 +1,6 @@
 package com.discord.chat.bridge.gift;
 
-import ct.h;
+import et.h;
 import kotlin.Metadata;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.StringsKt;

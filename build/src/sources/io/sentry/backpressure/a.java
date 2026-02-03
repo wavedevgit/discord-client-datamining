@@ -11,38 +11,38 @@ import java.util.concurrent.RejectedExecutionException;
 public final class a implements b, Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final k7 f29345d;
+    private final k7 f29706d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final w0 f29346e;
+    private final w0 f29707e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f29347i = 0;
+    private int f29708i = 0;
 
     /* renamed from: o  reason: collision with root package name */
-    private volatile Future f29348o = null;
+    private volatile Future f29709o = null;
 
     /* renamed from: p  reason: collision with root package name */
-    private final io.sentry.util.a f29349p = new io.sentry.util.a();
+    private final io.sentry.util.a f29710p = new io.sentry.util.a();
 
     public a(k7 k7Var, w0 w0Var) {
-        this.f29345d = k7Var;
-        this.f29346e = w0Var;
+        this.f29706d = k7Var;
+        this.f29707e = w0Var;
     }
 
     private boolean c() {
-        return this.f29346e.f();
+        return this.f29707e.f();
     }
 
     private void d(int i10) {
-        z0 executorService = this.f29345d.getExecutorService();
+        z0 executorService = this.f29706d.getExecutorService();
         if (!executorService.isClosed()) {
-            a1 a10 = this.f29349p.a();
+            a1 a10 = this.f29710p.a();
             try {
                 try {
-                    this.f29348o = executorService.c(this, i10);
+                    this.f29709o = executorService.c(this, i10);
                 } catch (RejectedExecutionException e10) {
-                    this.f29345d.getLogger().b(SentryLevel.WARNING, "Backpressure monitor reschedule task rejected", e10);
+                    this.f29706d.getLogger().b(SentryLevel.WARNING, "Backpressure monitor reschedule task rejected", e10);
                 }
                 if (a10 != null) {
                     a10.close();
@@ -62,29 +62,29 @@ public final class a implements b, Runnable {
 
     @Override // io.sentry.backpressure.b
     public int a() {
-        return this.f29347i;
+        return this.f29708i;
     }
 
     void b() {
         if (c()) {
-            if (this.f29347i > 0) {
-                this.f29345d.getLogger().c(SentryLevel.DEBUG, "Health check positive, reverting to normal sampling.", new Object[0]);
+            if (this.f29708i > 0) {
+                this.f29706d.getLogger().c(SentryLevel.DEBUG, "Health check positive, reverting to normal sampling.", new Object[0]);
             }
-            this.f29347i = 0;
+            this.f29708i = 0;
             return;
         }
-        int i10 = this.f29347i;
+        int i10 = this.f29708i;
         if (i10 < 10) {
-            this.f29347i = i10 + 1;
-            this.f29345d.getLogger().c(SentryLevel.DEBUG, "Health check negative, downsampling with a factor of %d", Integer.valueOf(this.f29347i));
+            this.f29708i = i10 + 1;
+            this.f29706d.getLogger().c(SentryLevel.DEBUG, "Health check negative, downsampling with a factor of %d", Integer.valueOf(this.f29708i));
         }
     }
 
     @Override // io.sentry.backpressure.b
     public void close() {
-        Future future = this.f29348o;
+        Future future = this.f29709o;
         if (future != null) {
-            a1 a10 = this.f29349p.a();
+            a1 a10 = this.f29710p.a();
             try {
                 future.cancel(true);
                 if (a10 != null) {

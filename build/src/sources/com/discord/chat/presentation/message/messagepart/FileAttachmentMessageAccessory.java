@@ -99,7 +99,7 @@ public final class FileAttachmentMessageAccessory extends MessageAttachmentAcces
         }
         if (obj instanceof FileAttachmentMessageAccessory) {
             FileAttachmentMessageAccessory fileAttachmentMessageAccessory = (FileAttachmentMessageAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, fileAttachmentMessageAccessory.messageId) && Intrinsics.areEqual(this.attachment, fileAttachmentMessageAccessory.attachment) && this.attachmentIndex == fileAttachmentMessageAccessory.attachmentIndex && Intrinsics.areEqual((Object) this.attachmentsOpacity, (Object) fileAttachmentMessageAccessory.attachmentsOpacity) && Intrinsics.areEqual(this.spoilerAttributes, fileAttachmentMessageAccessory.spoilerAttributes) && Intrinsics.areEqual(this.uploaderId, fileAttachmentMessageAccessory.uploaderId) && Intrinsics.areEqual(this.uploaderItemId, fileAttachmentMessageAccessory.uploaderItemId);
+            return MessageId.m1089equalsimpl0(this.messageId, fileAttachmentMessageAccessory.messageId) && Intrinsics.areEqual(this.attachment, fileAttachmentMessageAccessory.attachment) && this.attachmentIndex == fileAttachmentMessageAccessory.attachmentIndex && Intrinsics.areEqual((Object) this.attachmentsOpacity, (Object) fileAttachmentMessageAccessory.attachmentsOpacity) && Intrinsics.areEqual(this.spoilerAttributes, fileAttachmentMessageAccessory.spoilerAttributes) && Intrinsics.areEqual(this.uploaderId, fileAttachmentMessageAccessory.uploaderId) && Intrinsics.areEqual(this.uploaderItemId, fileAttachmentMessageAccessory.uploaderItemId);
         }
         return false;
     }
@@ -140,9 +140,9 @@ public final class FileAttachmentMessageAccessory extends MessageAttachmentAcces
     }
 
     public int hashCode() {
-        int m1091hashCodeimpl = ((((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.attachment.hashCode()) * 31) + Integer.hashCode(this.attachmentIndex)) * 31;
+        int m1090hashCodeimpl = ((((MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.attachment.hashCode()) * 31) + Integer.hashCode(this.attachmentIndex)) * 31;
         Float f10 = this.attachmentsOpacity;
-        int hashCode = (m1091hashCodeimpl + (f10 == null ? 0 : f10.hashCode())) * 31;
+        int hashCode = (m1090hashCodeimpl + (f10 == null ? 0 : f10.hashCode())) * 31;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
         int hashCode2 = (hashCode + (spoilerAttributes == null ? 0 : spoilerAttributes.hashCode())) * 31;
         String str = this.uploaderId;
@@ -153,14 +153,14 @@ public final class FileAttachmentMessageAccessory extends MessageAttachmentAcces
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         Attachment attachment = this.attachment;
         int i10 = this.attachmentIndex;
         Float f10 = this.attachmentsOpacity;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
         String str = this.uploaderId;
         String str2 = this.uploaderItemId;
-        return "FileAttachmentMessageAccessory(messageId=" + m1093toStringimpl + ", attachment=" + attachment + ", attachmentIndex=" + i10 + ", attachmentsOpacity=" + f10 + ", spoilerAttributes=" + spoilerAttributes + ", uploaderId=" + str + ", uploaderItemId=" + str2 + ")";
+        return "FileAttachmentMessageAccessory(messageId=" + m1092toStringimpl + ", attachment=" + attachment + ", attachmentIndex=" + i10 + ", attachmentsOpacity=" + f10 + ", spoilerAttributes=" + spoilerAttributes + ", uploaderId=" + str + ", uploaderItemId=" + str2 + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

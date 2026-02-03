@@ -9,60 +9,60 @@ import android.view.View;
 final class o extends View {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Paint f9156d;
+    private final Paint f8124d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Paint f9157e;
+    private final Paint f8125e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Path f9158i;
+    private final Path f8126i;
 
     /* renamed from: o  reason: collision with root package name */
-    private l f9159o;
+    private l f8127o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f9160p;
+    private int f8128p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f9161q;
+    private int f8129q;
 
     /* renamed from: r  reason: collision with root package name */
-    private float f9162r;
+    private float f8130r;
 
     /* renamed from: s  reason: collision with root package name */
-    private float f9163s;
+    private float f8131s;
 
     /* renamed from: t  reason: collision with root package name */
-    private float f9164t;
+    private float f8132t;
 
     /* renamed from: u  reason: collision with root package name */
-    private float f9165u;
+    private float f8133u;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f9166v;
+    private boolean f8134v;
 
     /* renamed from: w  reason: collision with root package name */
-    private boolean f9167w;
+    private boolean f8135w;
 
     public o(Context context) {
         super(context);
-        this.f9160p = 0;
-        this.f9161q = 0;
-        this.f9162r = 1.0f;
-        this.f9163s = 1.0f;
-        this.f9164t = 0.75f;
-        this.f9165u = 0.5f;
-        this.f9166v = true;
-        this.f9167w = true;
+        this.f8128p = 0;
+        this.f8129q = 0;
+        this.f8130r = 1.0f;
+        this.f8131s = 1.0f;
+        this.f8132t = 0.75f;
+        this.f8133u = 0.5f;
+        this.f8134v = true;
+        this.f8135w = true;
         Paint paint = new Paint(1);
-        this.f9156d = paint;
+        this.f8124d = paint;
         paint.setStyle(Paint.Style.FILL);
         Paint paint2 = new Paint(1);
-        this.f9157e = paint2;
+        this.f8125e = paint2;
         paint2.setStyle(Paint.Style.STROKE);
         Path path = new Path();
         path.setFillType(Path.FillType.EVEN_ODD);
-        this.f9158i = path;
+        this.f8126i = path;
     }
 
     private void k() {
@@ -75,8 +75,8 @@ final class o extends View {
         if (i10 > 0 && i11 > 0) {
             float f10 = i10;
             float f11 = i11;
-            float f12 = this.f9162r / this.f9163s;
-            float f13 = this.f9164t;
+            float f12 = this.f8130r / this.f8131s;
+            float f13 = this.f8132t;
             if (f10 / f11 <= f12) {
                 round2 = Math.round(f10 * f13);
                 round = Math.round(round2 / f12);
@@ -85,63 +85,63 @@ final class o extends View {
                 round2 = Math.round(round * f12);
             }
             int i12 = (i10 - round2) / 2;
-            int round3 = Math.round((i11 - round) * this.f9165u);
-            this.f9159o = new l(i12, round3, round2 + i12, round + round3);
+            int round3 = Math.round((i11 - round) * this.f8133u);
+            this.f8127o = new l(i12, round3, round2 + i12, round + round3);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float a() {
-        return this.f9163s;
+        return this.f8131s;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float b() {
-        return this.f9162r;
+        return this.f8130r;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int c() {
-        return this.f9157e.getColor();
+        return this.f8125e.getColor();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int d() {
-        return this.f9161q;
+        return this.f8129q;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int e() {
-        return this.f9160p;
+        return this.f8128p;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public l f() {
-        return this.f9159o;
+        return this.f8127o;
     }
 
     public float g() {
-        return this.f9164t;
+        return this.f8132t;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int h() {
-        return (int) this.f9157e.getStrokeWidth();
+        return (int) this.f8125e.getStrokeWidth();
     }
 
     public float i() {
-        return this.f9165u;
+        return this.f8133u;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int j() {
-        return this.f9156d.getColor();
+        return this.f8124d.getColor();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void m(float f10, float f11) {
-        this.f9162r = f10;
-        this.f9163s = f11;
+        this.f8130r = f10;
+        this.f8131s = f11;
         k();
         if (isLaidOut()) {
             invalidate();
@@ -150,7 +150,7 @@ final class o extends View {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void n(float f10) {
-        this.f9163s = f10;
+        this.f8131s = f10;
         k();
         if (isLaidOut()) {
             invalidate();
@@ -159,7 +159,7 @@ final class o extends View {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void o(float f10) {
-        this.f9162r = f10;
+        this.f8130r = f10;
         k();
         if (isLaidOut()) {
             invalidate();
@@ -168,7 +168,7 @@ final class o extends View {
 
     @Override // android.view.View
     protected void onDraw(Canvas canvas) {
-        l lVar = this.f9159o;
+        l lVar = this.f8127o;
         if (lVar != null) {
             int width = getWidth();
             int height = getHeight();
@@ -176,11 +176,11 @@ final class o extends View {
             float e10 = lVar.e();
             float f10 = lVar.f();
             float c10 = lVar.c();
-            float f11 = this.f9160p;
-            float f12 = this.f9161q;
-            boolean z10 = this.f9166v;
-            boolean z11 = this.f9167w;
-            Path path = this.f9158i;
+            float f11 = this.f8128p;
+            float f12 = this.f8129q;
+            boolean z10 = this.f8134v;
+            boolean z11 = this.f8135w;
+            Path path = this.f8126i;
             if (f12 > 0.0f) {
                 float min = Math.min(f12, Math.max(f11 - 1.0f, 0.0f));
                 if (z10) {
@@ -205,7 +205,7 @@ final class o extends View {
                     path.lineTo(f17, f18);
                     path.lineTo(0.0f, f18);
                     path.lineTo(0.0f, 0.0f);
-                    canvas.drawPath(path, this.f9156d);
+                    canvas.drawPath(path, this.f8124d);
                 }
                 if (z11) {
                     path.reset();
@@ -233,7 +233,7 @@ final class o extends View {
                     path.lineTo(f21, c10);
                     path.quadTo(e10, c10, e10, f26);
                     path.lineTo(e10, f25);
-                    canvas.drawPath(path, this.f9157e);
+                    canvas.drawPath(path, this.f8125e);
                     return;
                 }
                 return;
@@ -252,7 +252,7 @@ final class o extends View {
                 path.lineTo(f27, f28);
                 path.lineTo(0.0f, f28);
                 path.lineTo(0.0f, 0.0f);
-                canvas.drawPath(path, this.f9156d);
+                canvas.drawPath(path, this.f8124d);
             }
             if (z11) {
                 path.reset();
@@ -272,7 +272,7 @@ final class o extends View {
                 path.moveTo(f30, c10);
                 path.lineTo(e10, c10);
                 path.lineTo(e10, f32);
-                canvas.drawPath(path, this.f9157e);
+                canvas.drawPath(path, this.f8125e);
             }
         }
     }
@@ -290,7 +290,7 @@ final class o extends View {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void p(int i10) {
-        this.f9157e.setColor(i10);
+        this.f8125e.setColor(i10);
         if (isLaidOut()) {
             invalidate();
         }
@@ -299,7 +299,7 @@ final class o extends View {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void q(boolean z10) {
         Paint.Cap cap;
-        Paint paint = this.f9157e;
+        Paint paint = this.f8125e;
         if (z10) {
             cap = Paint.Cap.ROUND;
         } else {
@@ -311,7 +311,7 @@ final class o extends View {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void r(int i10) {
-        this.f9161q = i10;
+        this.f8129q = i10;
         if (isLaidOut()) {
             invalidate();
         }
@@ -319,7 +319,7 @@ final class o extends View {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void s(int i10) {
-        this.f9160p = i10;
+        this.f8128p = i10;
         if (isLaidOut()) {
             invalidate();
         }
@@ -327,7 +327,7 @@ final class o extends View {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void t(float f10) {
-        this.f9164t = f10;
+        this.f8132t = f10;
         k();
         if (isLaidOut()) {
             invalidate();
@@ -336,14 +336,14 @@ final class o extends View {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void u(int i10) {
-        this.f9157e.setStrokeWidth(i10);
+        this.f8125e.setStrokeWidth(i10);
         if (isLaidOut()) {
             invalidate();
         }
     }
 
     public void v(float f10) {
-        this.f9165u = f10;
+        this.f8133u = f10;
         k();
         if (isLaidOut()) {
             invalidate();
@@ -352,12 +352,12 @@ final class o extends View {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void w(boolean z10) {
-        this.f9167w = z10;
+        this.f8135w = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void x(int i10) {
-        this.f9156d.setColor(i10);
+        this.f8124d.setColor(i10);
         if (isLaidOut()) {
             invalidate();
         }
@@ -365,7 +365,7 @@ final class o extends View {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void y(boolean z10) {
-        this.f9166v = z10;
+        this.f8134v = z10;
         if (isLaidOut()) {
             invalidate();
         }

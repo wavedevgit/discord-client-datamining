@@ -8,32 +8,32 @@ import android.content.IntentFilter;
 public class a extends BroadcastReceiver {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f22673a;
+    private final Context f21364a;
 
     /* renamed from: b  reason: collision with root package name */
-    private b f22674b = b.f22675b;
+    private b f21365b = b.f21366b;
 
     public a(Context context) {
-        this.f22673a = context.getApplicationContext();
+        this.f21364a = context.getApplicationContext();
     }
 
     public void a() {
-        this.f22674b = b.f22675b;
+        this.f21365b = b.f21366b;
         try {
-            this.f22673a.unregisterReceiver(this);
+            this.f21364a.unregisterReceiver(this);
         } catch (Exception unused) {
         }
     }
 
     public void b(b bVar) {
-        this.f22674b = bVar;
-        androidx.core.content.a.l(this.f22673a, this, new IntentFilter("android.media.AUDIO_BECOMING_NOISY"), 4);
+        this.f21365b = bVar;
+        androidx.core.content.a.l(this.f21364a, this, new IntentFilter("android.media.AUDIO_BECOMING_NOISY"), 4);
     }
 
     @Override // android.content.BroadcastReceiver
     public void onReceive(Context context, Intent intent) {
         if ("android.media.AUDIO_BECOMING_NOISY".equals(intent.getAction())) {
-            this.f22674b.g();
+            this.f21365b.g();
         }
     }
 }

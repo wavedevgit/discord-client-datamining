@@ -35,7 +35,7 @@ public final class ImageResizeMode {
 
     @NotNull
     public static final ScalingUtils$ScaleType defaultValue() {
-        ScalingUtils$ScaleType CENTER_CROP = ScalingUtils$ScaleType.f10670i;
+        ScalingUtils$ScaleType CENTER_CROP = ScalingUtils$ScaleType.f9638i;
         Intrinsics.checkNotNullExpressionValue(CENTER_CROP, "CENTER_CROP");
         return CENTER_CROP;
     }
@@ -46,14 +46,14 @@ public final class ImageResizeMode {
             switch (str.hashCode()) {
                 case -1881872635:
                     if (str.equals(RESIZE_MODE_STRETCH)) {
-                        ScalingUtils$ScaleType FIT_XY = ScalingUtils$ScaleType.f10662a;
+                        ScalingUtils$ScaleType FIT_XY = ScalingUtils$ScaleType.f9630a;
                         Intrinsics.checkNotNullExpressionValue(FIT_XY, "FIT_XY");
                         return FIT_XY;
                     }
                     break;
                 case -1364013995:
                     if (str.equals(RESIZE_MODE_CENTER)) {
-                        ScalingUtils$ScaleType CENTER_INSIDE = ScalingUtils$ScaleType.f10669h;
+                        ScalingUtils$ScaleType CENTER_INSIDE = ScalingUtils$ScaleType.f9637h;
                         Intrinsics.checkNotNullExpressionValue(CENTER_INSIDE, "CENTER_INSIDE");
                         return CENTER_INSIDE;
                     }
@@ -70,14 +70,14 @@ public final class ImageResizeMode {
                     break;
                 case 94852023:
                     if (str.equals(RESIZE_MODE_COVER)) {
-                        ScalingUtils$ScaleType CENTER_CROP = ScalingUtils$ScaleType.f10670i;
+                        ScalingUtils$ScaleType CENTER_CROP = ScalingUtils$ScaleType.f9638i;
                         Intrinsics.checkNotNullExpressionValue(CENTER_CROP, "CENTER_CROP");
                         return CENTER_CROP;
                     }
                     break;
                 case 951526612:
                     if (str.equals(RESIZE_MODE_CONTAIN)) {
-                        ScalingUtils$ScaleType FIT_CENTER = ScalingUtils$ScaleType.f10666e;
+                        ScalingUtils$ScaleType FIT_CENTER = ScalingUtils$ScaleType.f9634e;
                         Intrinsics.checkNotNullExpressionValue(FIT_CENTER, "FIT_CENTER");
                         return FIT_CENTER;
                     }

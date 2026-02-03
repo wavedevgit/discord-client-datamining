@@ -6,21 +6,21 @@ import java.util.Map;
 final class i extends th.l0 {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ Map f16429e;
+    final /* synthetic */ Map f15397e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ wg.k f16430i;
+    final /* synthetic */ wg.k f15398i;
 
     /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ x f16431o;
+    final /* synthetic */ x f15399o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public i(x xVar, wg.k kVar, Map map, wg.k kVar2) {
         super(kVar);
-        this.f16429e = map;
-        this.f16430i = kVar2;
-        this.f16431o = xVar;
+        this.f15397e = map;
+        this.f15398i = kVar2;
+        this.f15399o = xVar;
     }
 
     @Override // th.l0
@@ -29,13 +29,13 @@ final class i extends th.l0 {
         th.v0 v0Var;
         String str;
         try {
-            v0Var = this.f16431o.f16724d;
-            str = this.f16431o.f16721a;
-            ((th.b0) v0Var.e()).s(str, x.o(this.f16429e), new r(this.f16431o, this.f16430i));
+            v0Var = this.f15399o.f15692d;
+            str = this.f15399o.f15689a;
+            ((th.b0) v0Var.e()).s(str, x.o(this.f15397e), new r(this.f15399o, this.f15398i));
         } catch (RemoteException e10) {
-            k0Var = x.f16719g;
+            k0Var = x.f15687g;
             k0Var.c(e10, "syncPacks", new Object[0]);
-            this.f16430i.d(new RuntimeException(e10));
+            this.f15398i.d(new RuntimeException(e10));
         }
     }
 }

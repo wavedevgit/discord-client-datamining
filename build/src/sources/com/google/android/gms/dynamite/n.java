@@ -18,7 +18,7 @@ public final class n extends hg.a implements IInterface {
         f10.writeInt(i10);
         hg.f.c(f10, aVar2);
         Parcel e10 = e(3, f10);
-        sf.a f11 = a.AbstractBinderC0608a.f(e10.readStrongBinder());
+        sf.a f11 = a.AbstractBinderC0612a.f(e10.readStrongBinder());
         e10.recycle();
         return f11;
     }
@@ -30,7 +30,7 @@ public final class n extends hg.a implements IInterface {
         f10.writeInt(i10);
         hg.f.c(f10, aVar2);
         Parcel e10 = e(2, f10);
-        sf.a f11 = a.AbstractBinderC0608a.f(e10.readStrongBinder());
+        sf.a f11 = a.AbstractBinderC0612a.f(e10.readStrongBinder());
         e10.recycle();
         return f11;
     }

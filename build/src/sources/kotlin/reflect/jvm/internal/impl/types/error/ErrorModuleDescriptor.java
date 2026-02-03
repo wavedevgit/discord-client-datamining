@@ -3,7 +3,6 @@ package kotlin.reflect.jvm.internal.impl.types.error;
 import java.util.Collection;
 import java.util.List;
 import java.util.Set;
-import jr.l;
 import kotlin.Lazy;
 import kotlin.collections.CollectionsKt;
 import kotlin.collections.x0;
@@ -19,6 +18,7 @@ import kotlin.reflect.jvm.internal.impl.descriptors.PackageViewDescriptor;
 import kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations;
 import kotlin.reflect.jvm.internal.impl.name.FqName;
 import kotlin.reflect.jvm.internal.impl.name.Name;
+import lr.l;
 import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class ErrorModuleDescriptor implements ModuleDescriptor {
@@ -26,28 +26,28 @@ public final class ErrorModuleDescriptor implements ModuleDescriptor {
     public static final ErrorModuleDescriptor INSTANCE = new ErrorModuleDescriptor();
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Name f35764d;
+    private static final Name f35154d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final List f35765e;
+    private static final List f35155e;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final List f35766i;
+    private static final List f35156i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final Set f35767o;
+    private static final Set f35157o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final Lazy f35768p;
+    private static final Lazy f35158p;
 
     static {
         Name special = Name.special(ErrorEntity.ERROR_MODULE.getDebugText());
         Intrinsics.checkNotNullExpressionValue(special, "special(...)");
-        f35764d = special;
-        f35765e = CollectionsKt.l();
-        f35766i = CollectionsKt.l();
-        f35767o = x0.d();
-        f35768p = l.b(a.f35795d);
+        f35154d = special;
+        f35155e = CollectionsKt.l();
+        f35156i = CollectionsKt.l();
+        f35157o = x0.d();
+        f35158p = l.a(a.f35185d);
     }
 
     private ErrorModuleDescriptor() {
@@ -73,7 +73,7 @@ public final class ErrorModuleDescriptor implements ModuleDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ModuleDescriptor
     @NotNull
     public KotlinBuiltIns getBuiltIns() {
-        return (KotlinBuiltIns) f35768p.getValue();
+        return (KotlinBuiltIns) f35158p.getValue();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ModuleDescriptor
@@ -90,7 +90,7 @@ public final class ErrorModuleDescriptor implements ModuleDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ModuleDescriptor
     @NotNull
     public List<ModuleDescriptor> getExpectedByModules() {
-        return f35766i;
+        return f35156i;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.Named
@@ -114,7 +114,7 @@ public final class ErrorModuleDescriptor implements ModuleDescriptor {
 
     @NotNull
     public Name getStableName() {
-        return f35764d;
+        return f35154d;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ModuleDescriptor

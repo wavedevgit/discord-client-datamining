@@ -14,7 +14,7 @@ import java.util.Objects;
 public abstract class k0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static Method f3419a;
+    private static Method f3388a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static class a {
@@ -52,7 +52,7 @@ public abstract class k0 {
     static {
         if (Build.VERSION.SDK_INT == 25) {
             try {
-                f3419a = ViewConfiguration.class.getDeclaredMethod("getScaledScrollFactor", null);
+                f3388a = ViewConfiguration.class.getDeclaredMethod("getScaledScrollFactor", null);
             } catch (Exception unused) {
                 Log.i("ViewConfigCompat", "Could not find method getScaledScrollFactor() on ViewConfiguration");
             }
@@ -72,7 +72,7 @@ public abstract class k0 {
 
     private static float b(ViewConfiguration viewConfiguration, Context context) {
         Method method;
-        if (Build.VERSION.SDK_INT >= 25 && (method = f3419a) != null) {
+        if (Build.VERSION.SDK_INT >= 25 && (method = f3388a) != null) {
             try {
                 return ((Integer) method.invoke(viewConfiguration, null)).intValue();
             } catch (Exception unused) {

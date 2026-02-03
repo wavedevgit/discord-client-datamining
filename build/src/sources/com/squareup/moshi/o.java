@@ -13,41 +13,41 @@ import okio.ByteString;
 public final class o extends m {
 
     /* renamed from: r  reason: collision with root package name */
-    private final BufferedSource f18564r;
+    private final BufferedSource f17546r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final Buffer f18565s;
+    private final Buffer f17547s;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f18566t;
+    private int f17548t;
 
     /* renamed from: u  reason: collision with root package name */
-    private long f18567u;
+    private long f17549u;
 
     /* renamed from: v  reason: collision with root package name */
-    private int f18568v;
+    private int f17550v;
 
     /* renamed from: w  reason: collision with root package name */
-    private String f18569w;
+    private String f17551w;
 
     /* renamed from: x  reason: collision with root package name */
-    private r f18570x;
+    private r f17552x;
 
     /* renamed from: y  reason: collision with root package name */
-    private static final ByteString f18562y = ByteString.h("'\\");
+    private static final ByteString f17544y = ByteString.h("'\\");
 
     /* renamed from: z  reason: collision with root package name */
-    private static final ByteString f18563z = ByteString.h("\"\\");
+    private static final ByteString f17545z = ByteString.h("\"\\");
     private static final ByteString A = ByteString.h("{}[]:, \n\t\r\f/\\;#=");
     private static final ByteString B = ByteString.h("\n\r");
     private static final ByteString C = ByteString.h("*/");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public o(BufferedSource bufferedSource) {
-        this.f18566t = 0;
+        this.f17548t = 0;
         if (bufferedSource != null) {
-            this.f18564r = bufferedSource;
-            this.f18565s = bufferedSource.e();
+            this.f17546r = bufferedSource;
+            this.f17547s = bufferedSource.e();
             N(6);
             return;
         }
@@ -82,9 +82,9 @@ public final class o extends m {
         r8 = -r8;
      */
     /* JADX WARN: Code restructure failed: missing block: B:56:0x00a1, code lost:
-        r19.f18567u = r8;
-        r19.f18565s.skip(r5);
-        r19.f18566t = 16;
+        r19.f17549u = r8;
+        r19.f17547s.skip(r5);
+        r19.f17548t = 16;
      */
     /* JADX WARN: Code restructure failed: missing block: B:57:0x00ad, code lost:
         return 16;
@@ -102,8 +102,8 @@ public final class o extends m {
         return r18;
      */
     /* JADX WARN: Code restructure failed: missing block: B:64:0x00b7, code lost:
-        r19.f18568v = r5;
-        r19.f18566t = 17;
+        r19.f17550v = r5;
+        r19.f17548t = 17;
      */
     /* JADX WARN: Code restructure failed: missing block: B:65:0x00bd, code lost:
         return 17;
@@ -125,8 +125,8 @@ public final class o extends m {
 
     private char B1() {
         int i10;
-        if (this.f18564r.C0(1L)) {
-            byte readByte = this.f18565s.readByte();
+        if (this.f17546r.B0(1L)) {
+            byte readByte = this.f17547s.readByte();
             if (readByte != 10 && readByte != 34 && readByte != 39 && readByte != 47 && readByte != 92) {
                 if (readByte != 98) {
                     if (readByte != 102) {
@@ -136,27 +136,27 @@ public final class o extends m {
                         if (readByte != 114) {
                             if (readByte != 116) {
                                 if (readByte != 117) {
-                                    if (this.f18546p) {
+                                    if (this.f17528p) {
                                         return (char) readByte;
                                     }
-                                    throw G0("Invalid escape sequence: \\" + ((char) readByte));
-                                } else if (this.f18564r.C0(4L)) {
+                                    throw F0("Invalid escape sequence: \\" + ((char) readByte));
+                                } else if (this.f17546r.B0(4L)) {
                                     char c10 = 0;
                                     for (int i11 = 0; i11 < 4; i11++) {
-                                        byte G0 = this.f18565s.G0(i11);
+                                        byte D0 = this.f17547s.D0(i11);
                                         char c11 = (char) (c10 << 4);
-                                        if (G0 >= 48 && G0 <= 57) {
-                                            i10 = G0 - 48;
-                                        } else if (G0 >= 97 && G0 <= 102) {
-                                            i10 = G0 - 87;
-                                        } else if (G0 < 65 || G0 > 70) {
-                                            throw G0("\\u" + this.f18565s.c1(4L));
+                                        if (D0 >= 48 && D0 <= 57) {
+                                            i10 = D0 - 48;
+                                        } else if (D0 >= 97 && D0 <= 102) {
+                                            i10 = D0 - 87;
+                                        } else if (D0 < 65 || D0 > 70) {
+                                            throw F0("\\u" + this.f17547s.c1(4L));
                                         } else {
-                                            i10 = G0 - 55;
+                                            i10 = D0 - 55;
                                         }
                                         c10 = (char) (c11 + i10);
                                     }
-                                    this.f18565s.skip(4L);
+                                    this.f17547s.skip(4L);
                                     return c10;
                                 } else {
                                     throw new EOFException("Unterminated escape sequence at path " + q());
@@ -172,179 +172,185 @@ public final class o extends m {
             }
             return (char) readByte;
         }
-        throw G0("Unterminated escape sequence");
+        throw F0("Unterminated escape sequence");
     }
 
     private void E1(ByteString byteString) {
         while (true) {
-            long d02 = this.f18564r.d0(byteString);
-            if (d02 != -1) {
-                if (this.f18565s.G0(d02) == 92) {
-                    this.f18565s.skip(d02 + 1);
+            long c02 = this.f17546r.c0(byteString);
+            if (c02 != -1) {
+                if (this.f17547s.D0(c02) == 92) {
+                    this.f17547s.skip(c02 + 1);
                     B1();
                 } else {
-                    this.f18565s.skip(d02 + 1);
+                    this.f17547s.skip(c02 + 1);
                     return;
                 }
             } else {
-                throw G0("Unterminated string");
+                throw F0("Unterminated string");
             }
         }
     }
 
-    private void K0() {
-        if (this.f18546p) {
+    private void J0() {
+        if (this.f17528p) {
             return;
         }
-        throw G0("Use JsonReader.setLenient(true) to accept malformed JSON");
+        throw F0("Use JsonReader.setLenient(true) to accept malformed JSON");
     }
 
-    private int L0() {
-        int[] iArr = this.f18543e;
-        int i10 = this.f18542d;
+    private int M0() {
+        int[] iArr = this.f17525e;
+        int i10 = this.f17524d;
         int i11 = iArr[i10 - 1];
         if (i11 == 1) {
             iArr[i10 - 1] = 2;
         } else if (i11 == 2) {
             int Z0 = Z0(true);
-            this.f18565s.readByte();
+            this.f17547s.readByte();
             if (Z0 != 44) {
                 if (Z0 != 59) {
                     if (Z0 == 93) {
-                        this.f18566t = 4;
+                        this.f17548t = 4;
                         return 4;
                     }
-                    throw G0("Unterminated array");
+                    throw F0("Unterminated array");
                 }
-                K0();
+                J0();
             }
-        } else if (i11 == 3 || i11 == 5) {
+        } else if (i11 != 3 && i11 != 5) {
+            if (i11 == 4) {
+                iArr[i10 - 1] = 5;
+                int Z02 = Z0(true);
+                this.f17547s.readByte();
+                if (Z02 != 58) {
+                    if (Z02 == 61) {
+                        J0();
+                        if (this.f17546r.B0(1L) && this.f17547s.D0(0L) == 62) {
+                            this.f17547s.readByte();
+                        }
+                    } else {
+                        throw F0("Expected ':'");
+                    }
+                }
+            } else if (i11 == 6) {
+                iArr[i10 - 1] = 7;
+            } else if (i11 == 7) {
+                if (Z0(false) == -1) {
+                    this.f17548t = 18;
+                    return 18;
+                }
+                J0();
+            } else if (i11 == 9) {
+                this.f17552x.h();
+                this.f17552x = null;
+                this.f17524d--;
+                return M0();
+            } else if (i11 == 8) {
+                throw new IllegalStateException("JsonReader is closed");
+            }
+        } else {
             iArr[i10 - 1] = 4;
             if (i11 == 5) {
-                int Z02 = Z0(true);
-                this.f18565s.readByte();
-                if (Z02 != 44) {
-                    if (Z02 != 59) {
-                        if (Z02 == 125) {
-                            this.f18566t = 2;
+                int Z03 = Z0(true);
+                this.f17547s.readByte();
+                if (Z03 != 44) {
+                    if (Z03 != 59) {
+                        if (Z03 == 125) {
+                            this.f17548t = 2;
                             return 2;
                         }
-                        throw G0("Unterminated object");
+                        throw F0("Unterminated object");
                     }
-                    K0();
+                    J0();
                 }
             }
-            int Z03 = Z0(true);
-            if (Z03 == 34) {
-                this.f18565s.readByte();
-                this.f18566t = 13;
-                return 13;
-            } else if (Z03 == 39) {
-                this.f18565s.readByte();
-                K0();
-                this.f18566t = 12;
-                return 12;
-            } else if (Z03 != 125) {
-                K0();
-                if (Y0((char) Z03)) {
-                    this.f18566t = 14;
-                    return 14;
-                }
-                throw G0("Expected name");
-            } else if (i11 != 5) {
-                this.f18565s.readByte();
-                this.f18566t = 2;
-                return 2;
-            } else {
-                throw G0("Expected name");
-            }
-        } else if (i11 == 4) {
-            iArr[i10 - 1] = 5;
             int Z04 = Z0(true);
-            this.f18565s.readByte();
-            if (Z04 != 58) {
-                if (Z04 == 61) {
-                    K0();
-                    if (this.f18564r.C0(1L) && this.f18565s.G0(0L) == 62) {
-                        this.f18565s.readByte();
+            if (Z04 != 34) {
+                if (Z04 != 39) {
+                    if (Z04 != 125) {
+                        J0();
+                        if (Y0((char) Z04)) {
+                            this.f17548t = 14;
+                            return 14;
+                        }
+                        throw F0("Expected name");
+                    } else if (i11 != 5) {
+                        this.f17547s.readByte();
+                        this.f17548t = 2;
+                        return 2;
+                    } else {
+                        throw F0("Expected name");
                     }
-                } else {
-                    throw G0("Expected ':'");
                 }
+                this.f17547s.readByte();
+                J0();
+                this.f17548t = 12;
+                return 12;
             }
-        } else if (i11 == 6) {
-            iArr[i10 - 1] = 7;
-        } else if (i11 == 7) {
-            if (Z0(false) == -1) {
-                this.f18566t = 18;
-                return 18;
-            }
-            K0();
-        } else if (i11 == 9) {
-            this.f18570x.h();
-            this.f18570x = null;
-            this.f18542d--;
-            return L0();
-        } else if (i11 == 8) {
-            throw new IllegalStateException("JsonReader is closed");
+            this.f17547s.readByte();
+            this.f17548t = 13;
+            return 13;
         }
         int Z05 = Z0(true);
-        if (Z05 == 34) {
-            this.f18565s.readByte();
-            this.f18566t = 9;
-            return 9;
-        } else if (Z05 == 39) {
-            K0();
-            this.f18565s.readByte();
-            this.f18566t = 8;
-            return 8;
-        } else {
-            if (Z05 != 44 && Z05 != 59) {
-                if (Z05 == 91) {
-                    this.f18565s.readByte();
-                    this.f18566t = 3;
-                    return 3;
-                } else if (Z05 != 93) {
-                    if (Z05 != 123) {
-                        int y12 = y1();
-                        if (y12 != 0) {
-                            return y12;
+        if (Z05 != 34) {
+            if (Z05 != 39) {
+                if (Z05 != 44 && Z05 != 59) {
+                    if (Z05 != 91) {
+                        if (Z05 != 93) {
+                            if (Z05 != 123) {
+                                int y12 = y1();
+                                if (y12 != 0) {
+                                    return y12;
+                                }
+                                int A1 = A1();
+                                if (A1 != 0) {
+                                    return A1;
+                                }
+                                if (Y0(this.f17547s.D0(0L))) {
+                                    J0();
+                                    this.f17548t = 10;
+                                    return 10;
+                                }
+                                throw F0("Expected value");
+                            }
+                            this.f17547s.readByte();
+                            this.f17548t = 1;
+                            return 1;
+                        } else if (i11 == 1) {
+                            this.f17547s.readByte();
+                            this.f17548t = 4;
+                            return 4;
                         }
-                        int A1 = A1();
-                        if (A1 != 0) {
-                            return A1;
-                        }
-                        if (Y0(this.f18565s.G0(0L))) {
-                            K0();
-                            this.f18566t = 10;
-                            return 10;
-                        }
-                        throw G0("Expected value");
+                    } else {
+                        this.f17547s.readByte();
+                        this.f17548t = 3;
+                        return 3;
                     }
-                    this.f18565s.readByte();
-                    this.f18566t = 1;
-                    return 1;
-                } else if (i11 == 1) {
-                    this.f18565s.readByte();
-                    this.f18566t = 4;
-                    return 4;
                 }
+                if (i11 != 1 && i11 != 2) {
+                    throw F0("Unexpected value");
+                }
+                J0();
+                this.f17548t = 7;
+                return 7;
             }
-            if (i11 != 1 && i11 != 2) {
-                throw G0("Unexpected value");
-            }
-            K0();
-            this.f18566t = 7;
-            return 7;
+            J0();
+            this.f17547s.readByte();
+            this.f17548t = 8;
+            return 8;
         }
+        this.f17547s.readByte();
+        this.f17548t = 9;
+        return 9;
     }
 
-    private int O0(String str, m.b bVar) {
-        int length = bVar.f18549a.length;
+    private int R0(String str, m.b bVar) {
+        int length = bVar.f17531a.length;
         for (int i10 = 0; i10 < length; i10++) {
-            if (str.equals(bVar.f18549a[i10])) {
-                this.f18566t = 0;
-                this.f18544i[this.f18542d - 1] = str;
+            if (str.equals(bVar.f17531a[i10])) {
+                this.f17548t = 0;
+                this.f17526i[this.f17524d - 1] = str;
                 return i10;
             }
         }
@@ -354,7 +360,7 @@ public final class o extends m {
     private boolean U1() {
         boolean z10;
         long size;
-        BufferedSource bufferedSource = this.f18564r;
+        BufferedSource bufferedSource = this.f17546r;
         ByteString byteString = C;
         long U = bufferedSource.U(byteString);
         if (U != -1) {
@@ -362,7 +368,7 @@ public final class o extends m {
         } else {
             z10 = false;
         }
-        Buffer buffer = this.f18565s;
+        Buffer buffer = this.f17547s;
         if (z10) {
             size = U + byteString.G();
         } else {
@@ -373,12 +379,12 @@ public final class o extends m {
     }
 
     private int V0(String str, m.b bVar) {
-        int length = bVar.f18549a.length;
+        int length = bVar.f17531a.length;
         for (int i10 = 0; i10 < length; i10++) {
-            if (str.equals(bVar.f18549a[i10])) {
-                this.f18566t = 0;
-                int[] iArr = this.f18545o;
-                int i11 = this.f18542d - 1;
+            if (str.equals(bVar.f17531a[i10])) {
+                this.f17548t = 0;
+                int[] iArr = this.f17527o;
+                int i11 = this.f17524d - 1;
                 iArr[i11] = iArr[i11] + 1;
                 return i10;
             }
@@ -388,10 +394,10 @@ public final class o extends m {
 
     private void W1() {
         long size;
-        long d02 = this.f18564r.d0(B);
-        Buffer buffer = this.f18565s;
-        if (d02 != -1) {
-            size = d02 + 1;
+        long c02 = this.f17546r.c0(B);
+        Buffer buffer = this.f17547s;
+        if (c02 != -1) {
+            size = c02 + 1;
         } else {
             size = buffer.size();
         }
@@ -423,33 +429,33 @@ public final class o extends m {
                     return false;
                 }
             }
-            K0();
+            J0();
             return false;
         }
         return false;
     }
 
     private void Y1() {
-        long d02 = this.f18564r.d0(A);
-        Buffer buffer = this.f18565s;
-        if (d02 == -1) {
-            d02 = buffer.size();
+        long c02 = this.f17546r.c0(A);
+        Buffer buffer = this.f17547s;
+        if (c02 == -1) {
+            c02 = buffer.size();
         }
-        buffer.skip(d02);
+        buffer.skip(c02);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:15:0x0025, code lost:
-        r6.f18565s.skip(r1);
+        r6.f17547s.skip(r1);
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x002d, code lost:
         if (r2 != 47) goto L16;
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x0037, code lost:
-        if (r6.f18564r.C0(2) != false) goto L28;
+        if (r6.f17546r.B0(2) != false) goto L28;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x003a, code lost:
-        K0();
-        r3 = r6.f18565s.G0(1);
+        J0();
+        r3 = r6.f17547s.D0(1);
      */
     /* JADX WARN: Code restructure failed: missing block: B:21:0x0047, code lost:
         if (r3 == 42) goto L30;
@@ -458,25 +464,25 @@ public final class o extends m {
         if (r3 == 47) goto L39;
      */
     /* JADX WARN: Code restructure failed: missing block: B:24:0x004c, code lost:
-        r6.f18565s.readByte();
-        r6.f18565s.readByte();
+        r6.f17547s.readByte();
+        r6.f17547s.readByte();
         W1();
      */
     /* JADX WARN: Code restructure failed: missing block: B:25:0x005a, code lost:
-        r6.f18565s.readByte();
-        r6.f18565s.readByte();
+        r6.f17547s.readByte();
+        r6.f17547s.readByte();
      */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x0068, code lost:
         if (U1() == false) goto L33;
      */
     /* JADX WARN: Code restructure failed: missing block: B:29:0x0071, code lost:
-        throw G0("Unterminated comment");
+        throw F0("Unterminated comment");
      */
     /* JADX WARN: Code restructure failed: missing block: B:31:0x0074, code lost:
         if (r2 != 35) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:32:0x0076, code lost:
-        K0();
+        J0();
         W1();
      */
     /*
@@ -490,14 +496,14 @@ public final class o extends m {
         L1:
             r1 = r0
         L2:
-            okio.BufferedSource r2 = r6.f18564r
+            okio.BufferedSource r2 = r6.f17546r
             int r3 = r1 + 1
             long r4 = (long) r3
-            boolean r2 = r2.C0(r4)
+            boolean r2 = r2.B0(r4)
             if (r2 == 0) goto L80
-            okio.Buffer r2 = r6.f18565s
+            okio.Buffer r2 = r6.f17547s
             long r4 = (long) r1
-            byte r2 = r2.G0(r4)
+            byte r2 = r2.D0(r4)
             r4 = 10
             if (r2 == r4) goto L7e
             r4 = 32
@@ -508,48 +514,48 @@ public final class o extends m {
             if (r2 != r4) goto L25
             goto L7e
         L25:
-            okio.Buffer r3 = r6.f18565s
+            okio.Buffer r3 = r6.f17547s
             long r4 = (long) r1
             r3.skip(r4)
             r1 = 47
             if (r2 != r1) goto L72
-            okio.BufferedSource r3 = r6.f18564r
+            okio.BufferedSource r3 = r6.f17546r
             r4 = 2
-            boolean r3 = r3.C0(r4)
+            boolean r3 = r3.B0(r4)
             if (r3 != 0) goto L3a
             goto L7d
         L3a:
-            r6.K0()
-            okio.Buffer r3 = r6.f18565s
+            r6.J0()
+            okio.Buffer r3 = r6.f17547s
             r4 = 1
-            byte r3 = r3.G0(r4)
+            byte r3 = r3.D0(r4)
             r4 = 42
             if (r3 == r4) goto L5a
             if (r3 == r1) goto L4c
             goto L7d
         L4c:
-            okio.Buffer r1 = r6.f18565s
+            okio.Buffer r1 = r6.f17547s
             r1.readByte()
-            okio.Buffer r1 = r6.f18565s
+            okio.Buffer r1 = r6.f17547s
             r1.readByte()
             r6.W1()
             goto L1
         L5a:
-            okio.Buffer r1 = r6.f18565s
+            okio.Buffer r1 = r6.f17547s
             r1.readByte()
-            okio.Buffer r1 = r6.f18565s
+            okio.Buffer r1 = r6.f17547s
             r1.readByte()
             boolean r1 = r6.U1()
             if (r1 == 0) goto L6b
             goto L1
         L6b:
             java.lang.String r7 = "Unterminated comment"
-            com.squareup.moshi.k r7 = r6.G0(r7)
+            com.squareup.moshi.k r7 = r6.F0(r7)
             throw r7
         L72:
             r1 = 35
             if (r2 != r1) goto L7d
-            r6.K0()
+            r6.J0()
             r6.W1()
             goto L1
         L7d:
@@ -573,46 +579,46 @@ public final class o extends m {
     private String e1(ByteString byteString) {
         StringBuilder sb2 = null;
         while (true) {
-            long d02 = this.f18564r.d0(byteString);
-            if (d02 != -1) {
-                if (this.f18565s.G0(d02) == 92) {
+            long c02 = this.f17546r.c0(byteString);
+            if (c02 != -1) {
+                if (this.f17547s.D0(c02) == 92) {
                     if (sb2 == null) {
                         sb2 = new StringBuilder();
                     }
-                    sb2.append(this.f18565s.c1(d02));
-                    this.f18565s.readByte();
+                    sb2.append(this.f17547s.c1(c02));
+                    this.f17547s.readByte();
                     sb2.append(B1());
                 } else if (sb2 == null) {
-                    String c12 = this.f18565s.c1(d02);
-                    this.f18565s.readByte();
+                    String c12 = this.f17547s.c1(c02);
+                    this.f17547s.readByte();
                     return c12;
                 } else {
-                    sb2.append(this.f18565s.c1(d02));
-                    this.f18565s.readByte();
+                    sb2.append(this.f17547s.c1(c02));
+                    this.f17547s.readByte();
                     return sb2.toString();
                 }
             } else {
-                throw G0("Unterminated string");
+                throw F0("Unterminated string");
             }
         }
     }
 
     private String x1() {
-        long d02 = this.f18564r.d0(A);
-        if (d02 != -1) {
-            return this.f18565s.c1(d02);
+        long c02 = this.f17546r.c0(A);
+        if (c02 != -1) {
+            return this.f17547s.c1(c02);
         }
-        return this.f18565s.T1();
+        return this.f17547s.T1();
     }
 
     private int y1() {
         String str;
         String str2;
         int i10;
-        byte G0 = this.f18565s.G0(0L);
-        if (G0 != 116 && G0 != 84) {
-            if (G0 != 102 && G0 != 70) {
-                if (G0 != 110 && G0 != 78) {
+        byte D0 = this.f17547s.D0(0L);
+        if (D0 != 116 && D0 != 84) {
+            if (D0 != 102 && D0 != 70) {
+                if (D0 != 110 && D0 != 78) {
                     return 0;
                 }
                 str = "null";
@@ -632,60 +638,89 @@ public final class o extends m {
         int i11 = 1;
         while (i11 < length) {
             int i12 = i11 + 1;
-            if (!this.f18564r.C0(i12)) {
+            if (!this.f17546r.B0(i12)) {
                 return 0;
             }
-            byte G02 = this.f18565s.G0(i11);
-            if (G02 != str.charAt(i11) && G02 != str2.charAt(i11)) {
+            byte D02 = this.f17547s.D0(i11);
+            if (D02 != str.charAt(i11) && D02 != str2.charAt(i11)) {
                 return 0;
             }
             i11 = i12;
         }
-        if (this.f18564r.C0(length + 1) && Y0(this.f18565s.G0(length))) {
+        if (this.f17546r.B0(length + 1) && Y0(this.f17547s.D0(length))) {
             return 0;
         }
-        this.f18565s.skip(length);
-        this.f18566t = i10;
+        this.f17547s.skip(length);
+        this.f17548t = i10;
         return i10;
     }
 
     @Override // com.squareup.moshi.m
-    public int D0(m.b bVar) {
+    public int A0(m.b bVar) {
+        int i10 = this.f17548t;
+        if (i10 == 0) {
+            i10 = M0();
+        }
+        if (i10 < 12 || i10 > 15) {
+            return -1;
+        }
+        if (i10 == 15) {
+            return R0(this.f17551w, bVar);
+        }
+        int U0 = this.f17546r.U0(bVar.f17532b);
+        if (U0 != -1) {
+            this.f17548t = 0;
+            this.f17526i[this.f17524d - 1] = bVar.f17531a[U0];
+            return U0;
+        }
+        String str = this.f17526i[this.f17524d - 1];
+        String l02 = l0();
+        int R0 = R0(l02, bVar);
+        if (R0 == -1) {
+            this.f17548t = 15;
+            this.f17551w = l02;
+            this.f17526i[this.f17524d - 1] = str;
+        }
+        return R0;
+    }
+
+    @Override // com.squareup.moshi.m
+    public int C0(m.b bVar) {
         int[] iArr;
         int i10;
-        int i11 = this.f18566t;
+        int i11 = this.f17548t;
         if (i11 == 0) {
-            i11 = L0();
+            i11 = M0();
         }
         if (i11 < 8 || i11 > 11) {
             return -1;
         }
         if (i11 == 11) {
-            return V0(this.f18569w, bVar);
+            return V0(this.f17551w, bVar);
         }
-        int Y = this.f18564r.Y(bVar.f18550b);
-        if (Y != -1) {
-            this.f18566t = 0;
-            int[] iArr2 = this.f18545o;
-            int i12 = this.f18542d - 1;
+        int U0 = this.f17546r.U0(bVar.f17532b);
+        if (U0 != -1) {
+            this.f17548t = 0;
+            int[] iArr2 = this.f17527o;
+            int i12 = this.f17524d - 1;
             iArr2[i12] = iArr2[i12] + 1;
-            return Y;
+            return U0;
         }
         String f12 = f1();
         int V0 = V0(f12, bVar);
         if (V0 == -1) {
-            this.f18566t = 11;
-            this.f18569w = f12;
-            this.f18545o[this.f18542d - 1] = iArr[i10] - 1;
+            this.f17548t = 11;
+            this.f17551w = f12;
+            this.f17527o[this.f17524d - 1] = iArr[i10] - 1;
         }
         return V0;
     }
 
     @Override // com.squareup.moshi.m
     public m.c E() {
-        int i10 = this.f18566t;
+        int i10 = this.f17548t;
         if (i10 == 0) {
-            i10 = L0();
+            i10 = M0();
         }
         switch (i10) {
             case 1:
@@ -722,51 +757,51 @@ public final class o extends m {
     }
 
     @Override // com.squareup.moshi.m
+    public void E0() {
+        if (!this.f17529q) {
+            int i10 = this.f17548t;
+            if (i10 == 0) {
+                i10 = M0();
+            }
+            if (i10 == 14) {
+                Y1();
+            } else if (i10 == 13) {
+                E1(f17545z);
+            } else if (i10 == 12) {
+                E1(f17544y);
+            } else if (i10 != 15) {
+                throw new j("Expected a name but was " + E() + " at path " + q());
+            }
+            this.f17548t = 0;
+            this.f17526i[this.f17524d - 1] = "null";
+            return;
+        }
+        m.c E = E();
+        l0();
+        throw new j("Cannot skip unexpected " + E + " at " + q());
+    }
+
+    @Override // com.squareup.moshi.m
     public m F() {
         return new o(this);
     }
 
     @Override // com.squareup.moshi.m
-    public void F0() {
-        if (!this.f18547q) {
-            int i10 = this.f18566t;
-            if (i10 == 0) {
-                i10 = L0();
-            }
-            if (i10 == 14) {
-                Y1();
-            } else if (i10 == 13) {
-                E1(f18563z);
-            } else if (i10 == 12) {
-                E1(f18562y);
-            } else if (i10 != 15) {
-                throw new j("Expected a name but was " + E() + " at path " + q());
-            }
-            this.f18566t = 0;
-            this.f18544i[this.f18542d - 1] = "null";
-            return;
-        }
-        m.c E = E();
-        m0();
-        throw new j("Cannot skip unexpected " + E + " at " + q());
-    }
-
-    @Override // com.squareup.moshi.m
     public void L() {
         if (hasNext()) {
-            this.f18569w = m0();
-            this.f18566t = 11;
+            this.f17551w = l0();
+            this.f17548t = 11;
         }
     }
 
     @Override // com.squareup.moshi.m
     public void P() {
-        if (!this.f18547q) {
+        if (!this.f17529q) {
             int i10 = 0;
             do {
-                int i11 = this.f18566t;
+                int i11 = this.f17548t;
                 if (i11 == 0) {
-                    i11 = L0();
+                    i11 = M0();
                 }
                 if (i11 == 3) {
                     N(1);
@@ -776,14 +811,14 @@ public final class o extends m {
                     if (i11 == 4) {
                         i10--;
                         if (i10 >= 0) {
-                            this.f18542d--;
+                            this.f17524d--;
                         } else {
                             throw new j("Expected a value but was " + E() + " at path " + q());
                         }
                     } else if (i11 == 2) {
                         i10--;
                         if (i10 >= 0) {
-                            this.f18542d--;
+                            this.f17524d--;
                         } else {
                             throw new j("Expected a value but was " + E() + " at path " + q());
                         }
@@ -791,29 +826,29 @@ public final class o extends m {
                         if (i11 != 9 && i11 != 13) {
                             if (i11 != 8 && i11 != 12) {
                                 if (i11 == 17) {
-                                    this.f18565s.skip(this.f18568v);
+                                    this.f17547s.skip(this.f17550v);
                                 } else if (i11 == 18) {
                                     throw new j("Expected a value but was " + E() + " at path " + q());
                                 }
                             } else {
-                                E1(f18562y);
+                                E1(f17544y);
                             }
                         } else {
-                            E1(f18563z);
+                            E1(f17545z);
                         }
                     } else {
                         Y1();
                     }
-                    this.f18566t = 0;
+                    this.f17548t = 0;
                 }
                 i10++;
-                this.f18566t = 0;
+                this.f17548t = 0;
             } while (i10 != 0);
-            int[] iArr = this.f18545o;
-            int i12 = this.f18542d;
+            int[] iArr = this.f17527o;
+            int i12 = this.f17524d;
             int i13 = i12 - 1;
             iArr[i13] = iArr[i13] + 1;
-            this.f18544i[i12 - 1] = "null";
+            this.f17526i[i12 - 1] = "null";
             return;
         }
         throw new j("Cannot skip unexpected " + E() + " at " + q());
@@ -821,48 +856,48 @@ public final class o extends m {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f18566t = 0;
-        this.f18543e[0] = 8;
-        this.f18542d = 1;
-        this.f18565s.l();
-        this.f18564r.close();
+        this.f17548t = 0;
+        this.f17525e[0] = 8;
+        this.f17524d = 1;
+        this.f17547s.l();
+        this.f17546r.close();
     }
 
     @Override // com.squareup.moshi.m
     public String f1() {
         String c12;
-        int i10 = this.f18566t;
+        int i10 = this.f17548t;
         if (i10 == 0) {
-            i10 = L0();
+            i10 = M0();
         }
         if (i10 == 10) {
             c12 = x1();
         } else if (i10 == 9) {
-            c12 = e1(f18563z);
+            c12 = e1(f17545z);
         } else if (i10 == 8) {
-            c12 = e1(f18562y);
+            c12 = e1(f17544y);
         } else if (i10 == 11) {
-            c12 = this.f18569w;
-            this.f18569w = null;
+            c12 = this.f17551w;
+            this.f17551w = null;
         } else if (i10 == 16) {
-            c12 = Long.toString(this.f18567u);
+            c12 = Long.toString(this.f17549u);
         } else if (i10 == 17) {
-            c12 = this.f18565s.c1(this.f18568v);
+            c12 = this.f17547s.c1(this.f17550v);
         } else {
             throw new j("Expected a string but was " + E() + " at path " + q());
         }
-        this.f18566t = 0;
-        int[] iArr = this.f18545o;
-        int i11 = this.f18542d - 1;
+        this.f17548t = 0;
+        int[] iArr = this.f17527o;
+        int i11 = this.f17524d - 1;
         iArr[i11] = iArr[i11] + 1;
         return c12;
     }
 
     @Override // com.squareup.moshi.m
     public boolean hasNext() {
-        int i10 = this.f18566t;
+        int i10 = this.f17548t;
         if (i10 == 0) {
-            i10 = L0();
+            i10 = M0();
         }
         if (i10 != 2 && i10 != 4 && i10 != 18) {
             return true;
@@ -872,20 +907,20 @@ public final class o extends m {
 
     @Override // com.squareup.moshi.m
     public boolean l() {
-        int i10 = this.f18566t;
+        int i10 = this.f17548t;
         if (i10 == 0) {
-            i10 = L0();
+            i10 = M0();
         }
         if (i10 == 5) {
-            this.f18566t = 0;
-            int[] iArr = this.f18545o;
-            int i11 = this.f18542d - 1;
+            this.f17548t = 0;
+            int[] iArr = this.f17527o;
+            int i11 = this.f17524d - 1;
             iArr[i11] = iArr[i11] + 1;
             return true;
         } else if (i10 == 6) {
-            this.f18566t = 0;
-            int[] iArr2 = this.f18545o;
-            int i12 = this.f18542d - 1;
+            this.f17548t = 0;
+            int[] iArr2 = this.f17527o;
+            int i12 = this.f17524d - 1;
             iArr2[i12] = iArr2[i12] + 1;
             return false;
         } else {
@@ -894,39 +929,39 @@ public final class o extends m {
     }
 
     @Override // com.squareup.moshi.m
-    public String m0() {
+    public String l0() {
         String str;
-        int i10 = this.f18566t;
+        int i10 = this.f17548t;
         if (i10 == 0) {
-            i10 = L0();
+            i10 = M0();
         }
         if (i10 == 14) {
             str = x1();
         } else if (i10 == 13) {
-            str = e1(f18563z);
+            str = e1(f17545z);
         } else if (i10 == 12) {
-            str = e1(f18562y);
+            str = e1(f17544y);
         } else if (i10 == 15) {
-            str = this.f18569w;
-            this.f18569w = null;
+            str = this.f17551w;
+            this.f17551w = null;
         } else {
             throw new j("Expected a name but was " + E() + " at path " + q());
         }
-        this.f18566t = 0;
-        this.f18544i[this.f18542d - 1] = str;
+        this.f17548t = 0;
+        this.f17526i[this.f17524d - 1] = str;
         return str;
     }
 
     @Override // com.squareup.moshi.m
     public Object n() {
-        int i10 = this.f18566t;
+        int i10 = this.f17548t;
         if (i10 == 0) {
-            i10 = L0();
+            i10 = M0();
         }
         if (i10 == 7) {
-            this.f18566t = 0;
-            int[] iArr = this.f18545o;
-            int i11 = this.f18542d - 1;
+            this.f17548t = 0;
+            int[] iArr = this.f17527o;
+            int i11 = this.f17524d - 1;
             iArr[i11] = iArr[i11] + 1;
             return null;
         }
@@ -935,165 +970,165 @@ public final class o extends m {
 
     @Override // com.squareup.moshi.m
     public double nextDouble() {
-        int i10 = this.f18566t;
+        int i10 = this.f17548t;
         if (i10 == 0) {
-            i10 = L0();
+            i10 = M0();
         }
         if (i10 == 16) {
-            this.f18566t = 0;
-            int[] iArr = this.f18545o;
-            int i11 = this.f18542d - 1;
+            this.f17548t = 0;
+            int[] iArr = this.f17527o;
+            int i11 = this.f17524d - 1;
             iArr[i11] = iArr[i11] + 1;
-            return this.f18567u;
+            return this.f17549u;
         }
         if (i10 == 17) {
-            this.f18569w = this.f18565s.c1(this.f18568v);
+            this.f17551w = this.f17547s.c1(this.f17550v);
         } else if (i10 == 9) {
-            this.f18569w = e1(f18563z);
+            this.f17551w = e1(f17545z);
         } else if (i10 == 8) {
-            this.f18569w = e1(f18562y);
+            this.f17551w = e1(f17544y);
         } else if (i10 == 10) {
-            this.f18569w = x1();
+            this.f17551w = x1();
         } else if (i10 != 11) {
             throw new j("Expected a double but was " + E() + " at path " + q());
         }
-        this.f18566t = 11;
+        this.f17548t = 11;
         try {
-            double parseDouble = Double.parseDouble(this.f18569w);
-            if (!this.f18546p && (Double.isNaN(parseDouble) || Double.isInfinite(parseDouble))) {
+            double parseDouble = Double.parseDouble(this.f17551w);
+            if (!this.f17528p && (Double.isNaN(parseDouble) || Double.isInfinite(parseDouble))) {
                 throw new k("JSON forbids NaN and infinities: " + parseDouble + " at path " + q());
             }
-            this.f18569w = null;
-            this.f18566t = 0;
-            int[] iArr2 = this.f18545o;
-            int i12 = this.f18542d - 1;
+            this.f17551w = null;
+            this.f17548t = 0;
+            int[] iArr2 = this.f17527o;
+            int i12 = this.f17524d - 1;
             iArr2[i12] = iArr2[i12] + 1;
             return parseDouble;
         } catch (NumberFormatException unused) {
-            throw new j("Expected a double but was " + this.f18569w + " at path " + q());
+            throw new j("Expected a double but was " + this.f17551w + " at path " + q());
         }
     }
 
     @Override // com.squareup.moshi.m
     public int nextInt() {
         String e12;
-        int i10 = this.f18566t;
+        int i10 = this.f17548t;
         if (i10 == 0) {
-            i10 = L0();
+            i10 = M0();
         }
         if (i10 == 16) {
-            long j10 = this.f18567u;
+            long j10 = this.f17549u;
             int i11 = (int) j10;
             if (j10 == i11) {
-                this.f18566t = 0;
-                int[] iArr = this.f18545o;
-                int i12 = this.f18542d - 1;
+                this.f17548t = 0;
+                int[] iArr = this.f17527o;
+                int i12 = this.f17524d - 1;
                 iArr[i12] = iArr[i12] + 1;
                 return i11;
             }
-            throw new j("Expected an int but was " + this.f18567u + " at path " + q());
+            throw new j("Expected an int but was " + this.f17549u + " at path " + q());
         }
         if (i10 == 17) {
-            this.f18569w = this.f18565s.c1(this.f18568v);
+            this.f17551w = this.f17547s.c1(this.f17550v);
         } else if (i10 != 9 && i10 != 8) {
             if (i10 != 11) {
                 throw new j("Expected an int but was " + E() + " at path " + q());
             }
         } else {
             if (i10 == 9) {
-                e12 = e1(f18563z);
+                e12 = e1(f17545z);
             } else {
-                e12 = e1(f18562y);
+                e12 = e1(f17544y);
             }
-            this.f18569w = e12;
+            this.f17551w = e12;
             try {
                 int parseInt = Integer.parseInt(e12);
-                this.f18566t = 0;
-                int[] iArr2 = this.f18545o;
-                int i13 = this.f18542d - 1;
+                this.f17548t = 0;
+                int[] iArr2 = this.f17527o;
+                int i13 = this.f17524d - 1;
                 iArr2[i13] = iArr2[i13] + 1;
                 return parseInt;
             } catch (NumberFormatException unused) {
             }
         }
-        this.f18566t = 11;
+        this.f17548t = 11;
         try {
-            double parseDouble = Double.parseDouble(this.f18569w);
+            double parseDouble = Double.parseDouble(this.f17551w);
             int i14 = (int) parseDouble;
             if (i14 == parseDouble) {
-                this.f18569w = null;
-                this.f18566t = 0;
-                int[] iArr3 = this.f18545o;
-                int i15 = this.f18542d - 1;
+                this.f17551w = null;
+                this.f17548t = 0;
+                int[] iArr3 = this.f17527o;
+                int i15 = this.f17524d - 1;
                 iArr3[i15] = iArr3[i15] + 1;
                 return i14;
             }
-            throw new j("Expected an int but was " + this.f18569w + " at path " + q());
+            throw new j("Expected an int but was " + this.f17551w + " at path " + q());
         } catch (NumberFormatException unused2) {
-            throw new j("Expected an int but was " + this.f18569w + " at path " + q());
+            throw new j("Expected an int but was " + this.f17551w + " at path " + q());
         }
     }
 
     @Override // com.squareup.moshi.m
     public long nextLong() {
         String e12;
-        int i10 = this.f18566t;
+        int i10 = this.f17548t;
         if (i10 == 0) {
-            i10 = L0();
+            i10 = M0();
         }
         if (i10 == 16) {
-            this.f18566t = 0;
-            int[] iArr = this.f18545o;
-            int i11 = this.f18542d - 1;
+            this.f17548t = 0;
+            int[] iArr = this.f17527o;
+            int i11 = this.f17524d - 1;
             iArr[i11] = iArr[i11] + 1;
-            return this.f18567u;
+            return this.f17549u;
         }
         if (i10 == 17) {
-            this.f18569w = this.f18565s.c1(this.f18568v);
+            this.f17551w = this.f17547s.c1(this.f17550v);
         } else if (i10 != 9 && i10 != 8) {
             if (i10 != 11) {
                 throw new j("Expected a long but was " + E() + " at path " + q());
             }
         } else {
             if (i10 == 9) {
-                e12 = e1(f18563z);
+                e12 = e1(f17545z);
             } else {
-                e12 = e1(f18562y);
+                e12 = e1(f17544y);
             }
-            this.f18569w = e12;
+            this.f17551w = e12;
             try {
                 long parseLong = Long.parseLong(e12);
-                this.f18566t = 0;
-                int[] iArr2 = this.f18545o;
-                int i12 = this.f18542d - 1;
+                this.f17548t = 0;
+                int[] iArr2 = this.f17527o;
+                int i12 = this.f17524d - 1;
                 iArr2[i12] = iArr2[i12] + 1;
                 return parseLong;
             } catch (NumberFormatException unused) {
             }
         }
-        this.f18566t = 11;
+        this.f17548t = 11;
         try {
-            long longValueExact = new BigDecimal(this.f18569w).longValueExact();
-            this.f18569w = null;
-            this.f18566t = 0;
-            int[] iArr3 = this.f18545o;
-            int i13 = this.f18542d - 1;
+            long longValueExact = new BigDecimal(this.f17551w).longValueExact();
+            this.f17551w = null;
+            this.f17548t = 0;
+            int[] iArr3 = this.f17527o;
+            int i13 = this.f17524d - 1;
             iArr3[i13] = iArr3[i13] + 1;
             return longValueExact;
         } catch (ArithmeticException | NumberFormatException unused2) {
-            throw new j("Expected a long but was " + this.f18569w + " at path " + q());
+            throw new j("Expected a long but was " + this.f17551w + " at path " + q());
         }
     }
 
     @Override // com.squareup.moshi.m
     public void r() {
-        int i10 = this.f18566t;
+        int i10 = this.f17548t;
         if (i10 == 0) {
-            i10 = L0();
+            i10 = M0();
         }
         if (i10 == 1) {
             N(3);
-            this.f18566t = 0;
+            this.f17548t = 0;
             return;
         }
         throw new j("Expected BEGIN_OBJECT but was " + E() + " at path " + q());
@@ -1101,65 +1136,36 @@ public final class o extends m {
 
     @Override // com.squareup.moshi.m
     public void s() {
-        int i10 = this.f18566t;
+        int i10 = this.f17548t;
         if (i10 == 0) {
-            i10 = L0();
+            i10 = M0();
         }
         if (i10 == 4) {
-            int i11 = this.f18542d;
-            this.f18542d = i11 - 1;
-            int[] iArr = this.f18545o;
+            int i11 = this.f17524d;
+            this.f17524d = i11 - 1;
+            int[] iArr = this.f17527o;
             int i12 = i11 - 2;
             iArr[i12] = iArr[i12] + 1;
-            this.f18566t = 0;
+            this.f17548t = 0;
             return;
         }
         throw new j("Expected END_ARRAY but was " + E() + " at path " + q());
     }
 
-    @Override // com.squareup.moshi.m
-    public int t0(m.b bVar) {
-        int i10 = this.f18566t;
-        if (i10 == 0) {
-            i10 = L0();
-        }
-        if (i10 < 12 || i10 > 15) {
-            return -1;
-        }
-        if (i10 == 15) {
-            return O0(this.f18569w, bVar);
-        }
-        int Y = this.f18564r.Y(bVar.f18550b);
-        if (Y != -1) {
-            this.f18566t = 0;
-            this.f18544i[this.f18542d - 1] = bVar.f18549a[Y];
-            return Y;
-        }
-        String str = this.f18544i[this.f18542d - 1];
-        String m02 = m0();
-        int O0 = O0(m02, bVar);
-        if (O0 == -1) {
-            this.f18566t = 15;
-            this.f18569w = m02;
-            this.f18544i[this.f18542d - 1] = str;
-        }
-        return O0;
-    }
-
     public String toString() {
-        return "JsonReader(" + this.f18564r + ")";
+        return "JsonReader(" + this.f17546r + ")";
     }
 
     @Override // com.squareup.moshi.m
     public void u() {
-        int i10 = this.f18566t;
+        int i10 = this.f17548t;
         if (i10 == 0) {
-            i10 = L0();
+            i10 = M0();
         }
         if (i10 == 3) {
             N(1);
-            this.f18545o[this.f18542d - 1] = 0;
-            this.f18566t = 0;
+            this.f17527o[this.f17524d - 1] = 0;
+            this.f17548t = 0;
             return;
         }
         throw new j("Expected BEGIN_ARRAY but was " + E() + " at path " + q());
@@ -1181,19 +1187,19 @@ public final class o extends m {
 
     @Override // com.squareup.moshi.m
     public void y() {
-        int i10 = this.f18566t;
+        int i10 = this.f17548t;
         if (i10 == 0) {
-            i10 = L0();
+            i10 = M0();
         }
         if (i10 == 2) {
-            int i11 = this.f18542d;
+            int i11 = this.f17524d;
             int i12 = i11 - 1;
-            this.f18542d = i12;
-            this.f18544i[i12] = null;
-            int[] iArr = this.f18545o;
+            this.f17524d = i12;
+            this.f17526i[i12] = null;
+            int[] iArr = this.f17527o;
             int i13 = i11 - 2;
             iArr[i13] = iArr[i13] + 1;
-            this.f18566t = 0;
+            this.f17548t = 0;
             return;
         }
         throw new j("Expected END_OBJECT but was " + E() + " at path " + q());
@@ -1201,16 +1207,16 @@ public final class o extends m {
 
     o(o oVar) {
         super(oVar);
-        this.f18566t = 0;
-        BufferedSource peek = oVar.f18564r.peek();
-        this.f18564r = peek;
-        this.f18565s = peek.e();
-        this.f18566t = oVar.f18566t;
-        this.f18567u = oVar.f18567u;
-        this.f18568v = oVar.f18568v;
-        this.f18569w = oVar.f18569w;
+        this.f17548t = 0;
+        BufferedSource peek = oVar.f17546r.peek();
+        this.f17546r = peek;
+        this.f17547s = peek.e();
+        this.f17548t = oVar.f17548t;
+        this.f17549u = oVar.f17549u;
+        this.f17550v = oVar.f17550v;
+        this.f17551w = oVar.f17551w;
         try {
-            peek.U0(oVar.f18565s.size());
+            peek.T0(oVar.f17547s.size());
         } catch (IOException unused) {
             throw new AssertionError();
         }

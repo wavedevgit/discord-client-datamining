@@ -40,7 +40,7 @@ public final class MediaResolver$copyToFile$2 extends k implements Function2<Cor
     public final Object invokeSuspend(Object obj) {
         ContentResolver resolver;
         ContentResolver resolver2;
-        pr.b.f();
+        rr.b.f();
         if (this.label == 0) {
             kotlin.c.b(obj);
             File file = this.$targetFile;
@@ -56,8 +56,8 @@ public final class MediaResolver$copyToFile$2 extends k implements Function2<Cor
             if (openInputStream != null) {
                 try {
                     FileUtilsKt.writeTo(openInputStream, file);
-                    Unit unit = Unit.f33074a;
-                    ur.c.a(openInputStream, null);
+                    Unit unit = Unit.f32464a;
+                    wr.c.a(openInputStream, null);
                 } finally {
                 }
             }
@@ -68,6 +68,6 @@ public final class MediaResolver$copyToFile$2 extends k implements Function2<Cor
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Uri> continuation) {
-        return ((MediaResolver$copyToFile$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        return ((MediaResolver$copyToFile$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
     }
 }

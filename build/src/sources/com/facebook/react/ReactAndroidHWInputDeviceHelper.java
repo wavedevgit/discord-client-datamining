@@ -16,7 +16,7 @@ public final class ReactAndroidHWInputDeviceHelper {
     @NotNull
     private static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Map<Integer, String> KEY_EVENTS_ACTIONS = o0.m(jr.v.a(23, "select"), jr.v.a(66, "select"), jr.v.a(62, "select"), jr.v.a(85, "playPause"), jr.v.a(89, "rewind"), jr.v.a(90, "fastForward"), jr.v.a(86, "stop"), jr.v.a(87, "next"), jr.v.a(88, "previous"), jr.v.a(19, "up"), jr.v.a(22, ViewProps.RIGHT), jr.v.a(20, "down"), jr.v.a(21, ViewProps.LEFT), jr.v.a(165, "info"), jr.v.a(82, "menu"));
+    private static final Map<Integer, String> KEY_EVENTS_ACTIONS = o0.m(lr.v.a(23, "select"), lr.v.a(66, "select"), lr.v.a(62, "select"), lr.v.a(85, "playPause"), lr.v.a(89, "rewind"), lr.v.a(90, "fastForward"), lr.v.a(86, "stop"), lr.v.a(87, "next"), lr.v.a(88, "previous"), lr.v.a(19, "up"), lr.v.a(22, ViewProps.RIGHT), lr.v.a(20, "down"), lr.v.a(21, ViewProps.LEFT), lr.v.a(165, "info"), lr.v.a(82, "menu"));
     private int lastFocusedViewId;
     @NotNull
     private final ReactRootView reactRootView;

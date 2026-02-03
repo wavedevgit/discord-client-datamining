@@ -1,36 +1,82 @@
 package vu;
 
 import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.Intrinsics;
-import xu.a;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Lambda;
+import vu.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b implements lu.b, xu.a {
+public final class b implements nu.b, c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f51539a = new b();
+    public static final b f51768a = new b();
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a extends Lambda implements Function2 {
+
+        /* renamed from: d  reason: collision with root package name */
+        public static final a f51769d = new a();
+
+        a() {
+            super(2);
+        }
+
+        public final Boolean a(int i10, int i11) {
+            boolean z10;
+            if (i10 == i11) {
+                z10 = true;
+            } else {
+                z10 = false;
+            }
+            return Boolean.valueOf(z10);
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
+            return a(((Number) obj).intValue(), ((Number) obj2).intValue());
+        }
+    }
 
     private b() {
     }
 
-    @Override // lu.b
-    /* renamed from: a */
-    public Double f(Object obj, Object obj2) {
-        List b10 = b(obj);
-        if (b10.size() < 2) {
-            b10 = null;
-        }
-        if (b10 != null) {
-            Double d10 = (Double) b10.get(1);
-            Double d11 = (Double) CollectionsKt.o0(b10);
-            if (d11 != null && d10 != null && !Intrinsics.areEqual(d10, 0.0d)) {
-                return Double.valueOf(d11.doubleValue() / d10.doubleValue());
-            }
-        }
-        return null;
+    @Override // vu.c, wu.a
+    public Object a(Object obj) {
+        return c.a.f(this, obj);
     }
 
-    public List b(Object obj) {
-        return a.C0754a.c(this, obj);
+    @Override // ou.c
+    public boolean b(List list, Function2 function2) {
+        return c.a.b(this, list, function2);
+    }
+
+    @Override // ou.a
+    public Boolean c(Object obj) {
+        return c.a.g(this, obj);
+    }
+
+    @Override // ou.b
+    public List d(Comparable comparable, Comparable comparable2) {
+        return c.a.d(this, comparable, comparable2);
+    }
+
+    @Override // wu.c
+    public Object e(Object obj) {
+        return c.a.e(this, obj);
+    }
+
+    @Override // ou.b
+    public List g(Comparable comparable, Comparable comparable2) {
+        return c.a.c(this, comparable, comparable2);
+    }
+
+    public boolean h(Object obj, Function2 function2) {
+        return c.a.a(this, obj, function2);
+    }
+
+    @Override // nu.b
+    /* renamed from: i */
+    public Boolean f(Object obj, Object obj2) {
+        return Boolean.valueOf(h(obj, a.f51769d));
     }
 }

@@ -13,7 +13,7 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineScope;
 import org.jetbrains.annotations.NotNull;
-import pr.b;
+import rr.b;
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @e(c = "app.rive.RiveUIView$onAttachedToWindow$1", f = "RiveUIView.kt", l = {ChatViewRecyclerTypes.PREMIUM_GROUP_INVITE}, m = "invokeSuspend")
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -60,7 +60,7 @@ final class RiveUIView$onAttachedToWindow$1 extends k implements Function2<Corou
             /*
                 r20 = this;
                 r0 = r20
-                java.lang.Object r1 = pr.b.f()
+                java.lang.Object r1 = rr.b.f()
                 int r2 = r0.label
                 r3 = 1
                 if (r2 == 0) goto L23
@@ -109,26 +109,26 @@ final class RiveUIView$onAttachedToWindow$1 extends k implements Function2<Corou
                 app.rive.RiveUIView r7 = r0.this$0
                 app.rive.core.ArtboardHandle r7 = app.rive.RiveUIView.access$getArtboardHandle$p(r7)
                 if (r7 == 0) goto L34
-                long r9 = r7.m100unboximpl()
+                long r9 = r7.m98unboximpl()
                 app.rive.RiveUIView r7 = r0.this$0
                 app.rive.core.StateMachineHandle r7 = app.rive.RiveUIView.access$getStateMachineHandle$p(r7)
                 if (r7 == 0) goto L34
-                long r11 = r7.m198unboximpl()
+                long r11 = r7.m196unboximpl()
                 app.rive.RiveUIView r7 = r0.this$0
                 app.rive.core.RiveSurface r15 = app.rive.RiveUIView.access$getRiveSurface$p(r7)
                 if (r15 != 0) goto L80
                 goto L34
             L80:
-                r8.m110advanceStateMachineOFH3VyA(r11, r5)
+                r8.m108advanceStateMachineOFH3VyA(r11, r5)
                 app.rive.runtime.kotlin.core.Fit r13 = app.rive.runtime.kotlin.core.Fit.CONTAIN
                 app.rive.runtime.kotlin.core.Alignment r14 = app.rive.runtime.kotlin.core.Alignment.CENTER
                 r17 = 32
                 r18 = 0
                 r16 = 0
-                app.rive.core.CommandQueue.m108drawPOUf8go$default(r8, r9, r11, r13, r14, r15, r16, r17, r18)
+                app.rive.core.CommandQueue.m106drawPOUf8go$default(r8, r9, r11, r13, r14, r15, r16, r17, r18)
                 goto L34
             L91:
-                kotlin.Unit r1 = kotlin.Unit.f33074a
+                kotlin.Unit r1 = kotlin.Unit.f32464a
                 return r1
             */
             throw new UnsupportedOperationException("Method not decompiled: app.rive.RiveUIView$onAttachedToWindow$1.AnonymousClass1.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -136,7 +136,7 @@ final class RiveUIView$onAttachedToWindow$1 extends k implements Function2<Corou
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
         }
     }
 
@@ -167,18 +167,18 @@ final class RiveUIView$onAttachedToWindow$1 extends k implements Function2<Corou
         } else {
             c.b(obj);
             Lifecycle lifecycle = this.$owner.getLifecycle();
-            Lifecycle.State state = Lifecycle.State.f4440p;
+            Lifecycle.State state = Lifecycle.State.f4409p;
             AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.this$0, null);
             this.label = 1;
             if (z.a(lifecycle, state, anonymousClass1, this) == f10) {
                 return f10;
             }
         }
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((RiveUIView$onAttachedToWindow$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        return ((RiveUIView$onAttachedToWindow$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
     }
 }

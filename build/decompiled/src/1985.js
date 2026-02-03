@@ -9,10 +9,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/.cache/intl/bW9kdWxlcy9vdmVybGF5L3dlYi92Mw==',
+        'httpServerLocation': '/assets/modules/voice_filters',
         'scales': null,
-        'hash': '6438b4d838c68981e85b5519bccf847b',
-        'name': 'en-GB.messages.6438b4d838c68981e85b5519bccf847b.compiled.messages',
+        'hash': '3a9eda9274b0cfb6849bbeac59a0bcf5',
+        'name': 'VoiceFilterNames.compiled.messages',
         'type': 'jsona'
     };
     var4 = [1];

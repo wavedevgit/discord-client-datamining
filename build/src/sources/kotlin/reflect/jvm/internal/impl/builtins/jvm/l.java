@@ -7,7 +7,7 @@ import kotlin.reflect.jvm.internal.impl.utils.DFS;
 public class l implements DFS.Neighbors {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final l f33361a = new l();
+    public static final l f32751a = new l();
 
     @Override // kotlin.reflect.jvm.internal.impl.utils.DFS.Neighbors
     public Iterable getNeighbors(Object obj) {

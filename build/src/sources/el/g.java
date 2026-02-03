@@ -11,24 +11,24 @@ import java.util.Locale;
 public abstract class g {
 
     /* renamed from: a  reason: collision with root package name */
-    protected final n f22945a;
+    protected final n f21636a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Calendar f22946b;
+    private Calendar f21637b;
 
     /* renamed from: c  reason: collision with root package name */
-    private ArrayList f22947c = new ArrayList();
+    private ArrayList f21638c = new ArrayList();
 
     /* renamed from: d  reason: collision with root package name */
-    public com.henninghall.date_picker.pickers.a f22948d;
+    public com.henninghall.date_picker.pickers.a f21639d;
 
     /* renamed from: e  reason: collision with root package name */
-    public SimpleDateFormat f22949e;
+    public SimpleDateFormat f21640e;
 
     public g(com.henninghall.date_picker.pickers.a aVar, n nVar) {
-        this.f22945a = nVar;
-        this.f22948d = aVar;
-        this.f22949e = new SimpleDateFormat(e(), nVar.u());
+        this.f21636a = nVar;
+        this.f21639d = aVar;
+        this.f21640e = new SimpleDateFormat(e(), nVar.u());
         aVar.setTextAlign(k());
         aVar.setWrapSelectorWheel(v());
     }
@@ -47,12 +47,12 @@ public abstract class g {
     }
 
     private int f() {
-        return this.f22948d.getValue();
+        return this.f21639d.getValue();
     }
 
     private int g(Calendar calendar) {
-        this.f22949e.setTimeZone(this.f22945a.D());
-        return this.f22947c.indexOf(this.f22949e.format(calendar.getTime()));
+        this.f21640e.setTimeZone(this.f21636a.D());
+        return this.f21638c.indexOf(this.f21640e.format(calendar.getTime()));
     }
 
     private String j(Calendar calendar, Locale locale) {
@@ -60,16 +60,16 @@ public abstract class g {
     }
 
     private void o() {
-        this.f22948d.setMinValue(0);
-        this.f22948d.setMaxValue(0);
+        this.f21639d.setMinValue(0);
+        this.f21639d.setMaxValue(0);
         ArrayList n10 = n();
-        this.f22947c = n10;
-        this.f22948d.setDisplayedValues(c(n10));
-        this.f22948d.setMaxValue(this.f22947c.size() - 1);
+        this.f21638c = n10;
+        this.f21639d.setDisplayedValues(c(n10));
+        this.f21639d.setMaxValue(this.f21638c.size() - 1);
     }
 
     public void a(Calendar calendar) {
-        this.f22948d.b(g(calendar));
+        this.f21639d.b(g(calendar));
     }
 
     public String b() {
@@ -80,14 +80,14 @@ public abstract class g {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public String h(Calendar calendar) {
-        return j(calendar, this.f22945a.u());
+        return j(calendar, this.f21636a.u());
     }
 
     public String i(int i10) {
         if (!u()) {
-            return this.f22949e.format(this.f22946b.getTime());
+            return this.f21640e.format(this.f21637b.getTime());
         }
-        int size = this.f22947c.size();
+        int size = this.f21638c.size();
         return m(((f() + size) - i10) % size);
     }
 
@@ -95,19 +95,19 @@ public abstract class g {
 
     public String l() {
         if (!u()) {
-            return this.f22949e.format(this.f22946b.getTime());
+            return this.f21640e.format(this.f21637b.getTime());
         }
         return m(f());
     }
 
     public String m(int i10) {
-        return (String) this.f22947c.get(i10);
+        return (String) this.f21638c.get(i10);
     }
 
     public abstract ArrayList n();
 
     public void p() {
-        this.f22949e = new SimpleDateFormat(e(), this.f22945a.u());
+        this.f21640e = new SimpleDateFormat(e(), this.f21636a.u());
         if (!u()) {
             return;
         }
@@ -115,18 +115,18 @@ public abstract class g {
     }
 
     public void q(String str) {
-        this.f22948d.setDividerColor(str);
+        this.f21639d.setDividerColor(str);
     }
 
     public void r(Calendar calendar) {
-        this.f22949e.setTimeZone(this.f22945a.D());
-        this.f22946b = calendar;
+        this.f21640e.setTimeZone(this.f21636a.D());
+        this.f21637b = calendar;
         int g10 = g(calendar);
         if (g10 > -1) {
-            if (this.f22948d.getValue() == 0) {
-                this.f22948d.setValue(g10);
+            if (this.f21639d.getValue() == 0) {
+                this.f21639d.setValue(g10);
             } else {
-                this.f22948d.b(g10);
+                this.f21639d.b(g10);
             }
         }
     }
@@ -138,7 +138,7 @@ public abstract class g {
         } else {
             i10 = 8;
         }
-        this.f22948d.setVisibility(i10);
+        this.f21639d.setVisibility(i10);
     }
 
     public abstract boolean u();

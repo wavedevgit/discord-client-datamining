@@ -5,44 +5,44 @@ import ui.c;
 final class h6 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final h6 f43238a = new h6();
+    static final h6 f43038a = new h6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43239b;
+    private static final ui.c f43039b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43240c;
+    private static final ui.c f43040c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43241d;
+    private static final ui.c f43041d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f43242e;
+    private static final ui.c f43042e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f43243f;
+    private static final ui.c f43043f;
 
     static {
         c.b a10 = ui.c.a("inferenceCommonLogEvent");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43239b = a10.b(s1Var.b()).a();
+        f43039b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("options");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43240c = a11.b(s1Var2.b()).a();
+        f43040c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("detectedBarcodeFormats");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43241d = a12.b(s1Var3.b()).a();
+        f43041d = a12.b(s1Var3.b()).a();
         c.b a13 = ui.c.a("detectedBarcodeValueTypes");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f43242e = a13.b(s1Var4.b()).a();
+        f43042e = a13.b(s1Var4.b()).a();
         c.b a14 = ui.c.a("imageInfo");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f43243f = a14.b(s1Var5.b()).a();
+        f43043f = a14.b(s1Var5.b()).a();
     }
 
     private h6() {

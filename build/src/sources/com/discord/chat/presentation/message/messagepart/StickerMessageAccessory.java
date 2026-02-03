@@ -54,7 +54,7 @@ public final class StickerMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof StickerMessageAccessory) {
             StickerMessageAccessory stickerMessageAccessory = (StickerMessageAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, stickerMessageAccessory.messageId) && Intrinsics.areEqual(this.sticker, stickerMessageAccessory.sticker);
+            return MessageId.m1089equalsimpl0(this.messageId, stickerMessageAccessory.messageId) && Intrinsics.areEqual(this.sticker, stickerMessageAccessory.sticker);
         }
         return false;
     }
@@ -72,14 +72,14 @@ public final class StickerMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.sticker.hashCode();
+        return (MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.sticker.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         Sticker sticker = this.sticker;
-        return "StickerMessageAccessory(messageId=" + m1093toStringimpl + ", sticker=" + sticker + ")";
+        return "StickerMessageAccessory(messageId=" + m1092toStringimpl + ", sticker=" + sticker + ")";
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

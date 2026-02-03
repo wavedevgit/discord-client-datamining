@@ -5,37 +5,37 @@ import ui.c;
 final class z4 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final z4 f43941a = new z4();
+    static final z4 f43741a = new z4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43942b;
+    private static final ui.c f43742b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43943c;
+    private static final ui.c f43743c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43944d;
+    private static final ui.c f43744d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f43945e;
+    private static final ui.c f43745e;
 
     static {
         c.b a10 = ui.c.a("supportedFormats");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43942b = a10.b(s1Var.b()).a();
+        f43742b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("durationMs");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43943c = a11.b(s1Var2.b()).a();
+        f43743c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("errorCode");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43944d = a12.b(s1Var3.b()).a();
+        f43744d = a12.b(s1Var3.b()).a();
         c.b a13 = ui.c.a("allowManualInput");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f43945e = a13.b(s1Var4.b()).a();
+        f43745e = a13.b(s1Var4.b()).a();
     }
 
     private z4() {

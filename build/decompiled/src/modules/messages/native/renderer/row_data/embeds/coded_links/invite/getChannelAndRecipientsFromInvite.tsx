@@ -25,26 +25,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/row_data/embeds/coded_links/invite/getChannelAndRecipientsFromInvite.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun92308: for (var _fun92308_ip = 0;;) switch (_fun92308_ip) {
+        _fun92367: for (var _fun92367_ip = 0;;) switch (_fun92367_ip) {
             case 0:
                 var2 = arg0;
                 var0 = var2.channel;
                 var1 = null;
                 if (!(var1 != var0)) {
-                    _fun92308_ip = 29;
-                    continue _fun92308
+                    _fun92367_ip = 29;
+                    continue _fun92367
                 }
             case 14:
                 var0 = var2.channel;
                 var0 = var0.recipients;
                 if (!(var1 == var0)) {
-                    _fun92308_ip = 35;
-                    continue _fun92308
+                    _fun92367_ip = 35;
+                    continue _fun92367
                 }
             case 29:
                 var5 = new Array(0);
-                _fun92308_ip = 55;
-                continue _fun92308;
+                _fun92367_ip = 55;
+                continue _fun92367;
             case 35:
                 var0 = var2.channel;
                 var3 = var0.recipients;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var1 != var3;
                 var1 = null;
                 if (!var3) {
-                    _fun92308_ip = 113;
-                    continue _fun92308
+                    _fun92367_ip = 113;
+                    continue _fun92367
                 }
             case 76:
                 var4 = _closure1_slot0;

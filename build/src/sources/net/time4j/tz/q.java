@@ -106,15 +106,15 @@ public final class q implements Comparable, Serializable {
         return this.total - this.previous;
     }
 
-    public int k() {
+    public int j() {
         return this.total - f();
     }
 
-    public int l() {
+    public int k() {
         return this.total;
     }
 
-    public boolean m() {
+    public boolean l() {
         if (this.total > this.previous) {
             return true;
         }

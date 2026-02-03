@@ -110,13 +110,13 @@ public final class SpoilerAttributes {
         public final SpoilerAttributes forAttachment(@NotNull Attachment attachment, @NotNull Message message, int i10, Boolean bool) {
             Intrinsics.checkNotNullParameter(attachment, "attachment");
             Intrinsics.checkNotNullParameter(message, "message");
-            return forItem(attachment, "messageId(" + MessageId.m1093toStringimpl(message.m239getId3Eiw7ao()) + ")", attachment.type().getIndexLabel() + "(" + i10 + ")", bool);
+            return forItem(attachment, "messageId(" + MessageId.m1092toStringimpl(message.m239getId3Eiw7ao()) + ")", attachment.type().getIndexLabel() + "(" + i10 + ")", bool);
         }
 
         public final SpoilerAttributes forEmbed(@NotNull Embed embed, @NotNull Message message, int i10, Boolean bool) {
             Intrinsics.checkNotNullParameter(embed, "embed");
             Intrinsics.checkNotNullParameter(message, "message");
-            return forItem(embed, "messageId(" + MessageId.m1093toStringimpl(message.m239getId3Eiw7ao()) + ")", "embedIndex(" + i10 + ")", bool);
+            return forItem(embed, "messageId(" + MessageId.m1092toStringimpl(message.m239getId3Eiw7ao()) + ")", "embedIndex(" + i10 + ")", bool);
         }
 
         public final SpoilerAttributes forGenericMedia(@NotNull SpoilerableData spoilerableData, @NotNull String containerId, @NotNull String itemType, @NotNull String itemKey, Boolean bool) {
@@ -130,7 +130,7 @@ public final class SpoilerAttributes {
         public final SpoilerAttributes forMediaPostPreviewEmbed(@NotNull PostPreviewEmbed embed, @NotNull Message message, int i10, Boolean bool) {
             Intrinsics.checkNotNullParameter(embed, "embed");
             Intrinsics.checkNotNullParameter(message, "message");
-            return forItem(embed, "messageId(" + MessageId.m1093toStringimpl(message.m239getId3Eiw7ao()) + ")", "mediaPostPreviewEmbed(" + i10 + ")", bool);
+            return forItem(embed, "messageId(" + MessageId.m1092toStringimpl(message.m239getId3Eiw7ao()) + ")", "mediaPostPreviewEmbed(" + i10 + ")", bool);
         }
 
         private Companion() {
@@ -148,7 +148,7 @@ public final class SpoilerAttributes {
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit unit;
-                    unit = Unit.f33074a;
+                    unit = Unit.f32464a;
                     return unit;
                 }
             };
@@ -168,7 +168,7 @@ public final class SpoilerAttributes {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit configure$lambda$1(boolean z10) {
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* renamed from: copy-5Uv3usY$default  reason: not valid java name */
@@ -243,7 +243,7 @@ public final class SpoilerAttributes {
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 m412invokeV2PEE7g(((SpoilerIdentifier) obj).m420unboximpl());
-                return Unit.f33074a;
+                return Unit.f32464a;
             }
 
             /* renamed from: invoke-V2PEE7g  reason: not valid java name */
@@ -256,7 +256,7 @@ public final class SpoilerAttributes {
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 m413invokeV2PEE7g(((SpoilerIdentifier) obj).m420unboximpl());
-                return Unit.f33074a;
+                return Unit.f32464a;
             }
 
             /* renamed from: invoke-V2PEE7g  reason: not valid java name */

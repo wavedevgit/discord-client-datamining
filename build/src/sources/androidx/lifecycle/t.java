@@ -16,13 +16,13 @@ import kotlin.text.StringsKt;
 public final class t {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final t f4565a = new t();
+    public static final t f4534a = new t();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Map f4566b = new HashMap();
+    private static final Map f4535b = new HashMap();
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Map f4567c = new HashMap();
+    private static final Map f4536c = new HashMap();
 
     private t() {
     }
@@ -83,7 +83,7 @@ public final class t {
     }
 
     private final int d(Class cls) {
-        Map map = f4566b;
+        Map map = f4535b;
         Integer num = (Integer) map.get(cls);
         if (num != null) {
             return num.intValue();
@@ -114,9 +114,9 @@ public final class t {
             return (m) object;
         }
         Class<?> cls = object.getClass();
-        t tVar = f4565a;
+        t tVar = f4534a;
         if (tVar.d(cls) == 2) {
-            Object obj = f4567c.get(cls);
+            Object obj = f4536c.get(cls);
             Intrinsics.checkNotNull(obj);
             List list = (List) obj;
             if (list.size() == 1) {
@@ -126,7 +126,7 @@ public final class t {
             int size = list.size();
             g[] gVarArr = new g[size];
             for (int i10 = 0; i10 < size; i10++) {
-                f4565a.a((Constructor) list.get(i10), object);
+                f4534a.a((Constructor) list.get(i10), object);
                 gVarArr[i10] = null;
             }
             return new d(gVarArr);
@@ -141,9 +141,9 @@ public final class t {
         }
         Constructor b10 = b(cls);
         if (b10 != null) {
-            f4567c.put(cls, CollectionsKt.e(b10));
+            f4536c.put(cls, CollectionsKt.e(b10));
             return 2;
-        } else if (c.f4510c.d(cls)) {
+        } else if (c.f4479c.d(cls)) {
             return 1;
         } else {
             Class superclass = cls.getSuperclass();
@@ -152,7 +152,7 @@ public final class t {
                 if (d(superclass) == 1) {
                     return 1;
                 }
-                Object obj = f4567c.get(superclass);
+                Object obj = f4536c.get(superclass);
                 Intrinsics.checkNotNull(obj);
                 arrayList = new ArrayList((Collection) obj);
             } else {
@@ -169,7 +169,7 @@ public final class t {
                     if (arrayList == null) {
                         arrayList = new ArrayList();
                     }
-                    Object obj2 = f4567c.get(cls2);
+                    Object obj2 = f4536c.get(cls2);
                     Intrinsics.checkNotNull(obj2);
                     arrayList.addAll((Collection) obj2);
                 }
@@ -177,7 +177,7 @@ public final class t {
             if (arrayList == null) {
                 return 1;
             }
-            f4567c.put(cls, arrayList);
+            f4536c.put(cls, arrayList);
             return 2;
         }
     }

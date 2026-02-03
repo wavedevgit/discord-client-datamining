@@ -9,9 +9,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var0;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = 'switch';
-    var1.DEFAULT_STACK_BEHAVIOR = var2;
-    var1.DEFAULT_ENABLE_DISMISS_ON_CLOSE = var0;
+    var1.DEFAULT_ACCESSIBLE = var0;
+    var0 = 'adjustable';
+    var1.DEFAULT_ACCESSIBILITY_ROLE = var0;
+    var0 = 'Bottom sheet handle';
+    var1.DEFAULT_ACCESSIBILITY_LABEL = var0;
+    var0 = 'Drag up or down to extend or minimize the bottom sheet';
+    var1.DEFAULT_ACCESSIBILITY_HINT = var0;
     var0 = undefined;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

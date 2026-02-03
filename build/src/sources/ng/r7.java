@@ -14,14 +14,14 @@ public enum r7 implements h {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f41473d;
+    private final int f41512d;
 
     r7(int i10) {
-        this.f41473d = i10;
+        this.f41512d = i10;
     }
 
     @Override // ng.h
     public final int zza() {
-        return this.f41473d;
+        return this.f41512d;
     }
 }

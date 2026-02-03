@@ -34,7 +34,7 @@ public final class ActivityRichPresenceInviteEmbedViewHolder extends MessagePart
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind$lambda$0(Function1 function1, ActivityRichPresenceInviteEmbedMessageAccessory activityRichPresenceInviteEmbedMessageAccessory, View view) {
-        function1.invoke(MessageId.m1086boximpl(activityRichPresenceInviteEmbedMessageAccessory.mo538getMessageId3Eiw7ao()));
+        function1.invoke(MessageId.m1085boximpl(activityRichPresenceInviteEmbedMessageAccessory.mo538getMessageId3Eiw7ao()));
     }
 
     public final void bind(@NotNull final ActivityRichPresenceInviteEmbedMessageAccessory accessory, @NotNull final Function1<? super MessageId, Unit> onTapJoinRichPresence) {
@@ -95,7 +95,7 @@ public final class ActivityRichPresenceInviteEmbedViewHolder extends MessagePart
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
                 return unit;
             }
         }, new ActivityRichPresenceInviteEmbedViewHolder$bind$12(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$13(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$14(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$15(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$16(this.eventHandler));

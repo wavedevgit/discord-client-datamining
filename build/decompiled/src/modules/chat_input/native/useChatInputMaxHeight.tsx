@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
     var3 = function() {
-        _fun89243: for (var _fun89243_ip = 0;;) switch (_fun89243_ip) {
+        _fun89335: for (var _fun89335_ip = 0;;) switch (_fun89335_ip) {
             case 0:
                 var6 = _closure1_slot0;
                 var7 = _closure1_slot2;
@@ -35,8 +35,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.KeyboardTypes;
                 var4 = var4.SYSTEM;
                 if (!(var5 !== var4)) {
-                    _fun89243_ip = 110;
-                    continue _fun89243
+                    _fun89335_ip = 110;
+                    continue _fun89335
                 }
             case 107:
                 var1 = var2;
@@ -119,23 +119,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure2_slot1;
                 var0 = undefined;
                 var1 = function(arg0) { // Environment: var1
-                    _fun89247: for (var _fun89247_ip = 0;;) switch (_fun89247_ip) {
+                    _fun89339: for (var _fun89339_ip = 0;;) switch (_fun89339_ip) {
                         case 0:
                             var0 = arg0;
                             var1 = _closure1_slot6;
                             var3 = undefined;
                             var1 = var1.bind(var3)();
                             if (!(var0 !== var1)) {
-                                _fun89247_ip = 47;
-                                continue _fun89247
+                                _fun89339_ip = 47;
+                                continue _fun89339
                             }
                         case 20:
                             var5 = _closure2_slot0;
                             var4 = null;
                             var0 = var1;
                             if (!(var4 != var5)) {
-                                _fun89247_ip = 47;
-                                continue _fun89247
+                                _fun89339_ip = 47;
+                                continue _fun89339
                             }
                         case 36:
                             var2 = _closure2_slot0;
@@ -211,4 +211,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getChatInputHeightAnimationTiming = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1466, 1585, 4891, 3905, 1567, 1464, 5251, 4088, 4876, 3711, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1466, 1585, 4896, 3914, 1567, 1464, 5256, 4097, 4881, 3720, 2]);

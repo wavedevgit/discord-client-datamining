@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/ArrowAngleLeftUpIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun78315: for (var _fun78315_ip = 0;;) switch (_fun78315_ip) {
+        _fun78425: for (var _fun78425_ip = 0;;) switch (_fun78425_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun78315_ip = 53;
-                    continue _fun78315
+                    _fun78425_ip = 53;
+                    continue _fun78425
                 }
             case 19:
                 var1 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ArrowAngleLeftUpIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3141, 9677, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3150, 9696, 2]);

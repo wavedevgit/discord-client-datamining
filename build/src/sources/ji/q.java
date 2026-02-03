@@ -8,36 +8,36 @@ import java.util.Collection;
 public abstract class q extends AbstractCollection implements Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Object[] f31906d = new Object[0];
+    private static final Object[] f31702d = new Object[0];
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static abstract class a extends b {
 
         /* renamed from: a  reason: collision with root package name */
-        Object[] f31907a;
+        Object[] f31703a;
 
         /* renamed from: b  reason: collision with root package name */
-        int f31908b;
+        int f31704b;
 
         /* renamed from: c  reason: collision with root package name */
-        boolean f31909c;
+        boolean f31705c;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public a(int i10) {
             h.b(i10, "initialCapacity");
-            this.f31907a = new Object[i10];
-            this.f31908b = 0;
+            this.f31703a = new Object[i10];
+            this.f31704b = 0;
         }
 
         private void g(int i10) {
-            Object[] objArr = this.f31907a;
+            Object[] objArr = this.f31703a;
             if (objArr.length < i10) {
-                this.f31907a = Arrays.copyOf(objArr, b.c(objArr.length, i10));
-                this.f31909c = false;
-            } else if (this.f31909c) {
-                this.f31907a = (Object[]) objArr.clone();
-                this.f31909c = false;
+                this.f31703a = Arrays.copyOf(objArr, b.c(objArr.length, i10));
+                this.f31705c = false;
+            } else if (this.f31705c) {
+                this.f31703a = (Object[]) objArr.clone();
+                this.f31705c = false;
             }
         }
 
@@ -45,9 +45,9 @@ public abstract class q extends AbstractCollection implements Serializable {
         public b b(Iterable iterable) {
             if (iterable instanceof Collection) {
                 Collection collection = (Collection) iterable;
-                g(this.f31908b + collection.size());
+                g(this.f31704b + collection.size());
                 if (collection instanceof q) {
-                    this.f31908b = ((q) collection).c(this.f31907a, this.f31908b);
+                    this.f31704b = ((q) collection).c(this.f31703a, this.f31704b);
                     return this;
                 }
             }
@@ -57,10 +57,10 @@ public abstract class q extends AbstractCollection implements Serializable {
 
         public a d(Object obj) {
             ii.m.j(obj);
-            g(this.f31908b + 1);
-            Object[] objArr = this.f31907a;
-            int i10 = this.f31908b;
-            this.f31908b = i10 + 1;
+            g(this.f31704b + 1);
+            Object[] objArr = this.f31703a;
+            int i10 = this.f31704b;
+            this.f31704b = i10 + 1;
             objArr[i10] = obj;
             return this;
         }
@@ -72,9 +72,9 @@ public abstract class q extends AbstractCollection implements Serializable {
 
         final void f(Object[] objArr, int i10) {
             h0.c(objArr, i10);
-            g(this.f31908b + i10);
-            System.arraycopy(objArr, 0, this.f31907a, this.f31908b, i10);
-            this.f31908b += i10;
+            g(this.f31704b + i10);
+            System.arraycopy(objArr, 0, this.f31703a, this.f31704b, i10);
+            this.f31704b += i10;
         }
     }
 
@@ -164,7 +164,7 @@ public abstract class q extends AbstractCollection implements Serializable {
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public final Object[] toArray() {
-        return toArray(f31906d);
+        return toArray(f31702d);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection

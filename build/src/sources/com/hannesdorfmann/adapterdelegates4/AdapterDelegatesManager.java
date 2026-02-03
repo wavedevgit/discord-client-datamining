@@ -9,21 +9,21 @@ import java.util.List;
 public class AdapterDelegatesManager {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final List f17218c = Collections.EMPTY_LIST;
+    private static final List f16186c = Collections.EMPTY_LIST;
 
     /* renamed from: a  reason: collision with root package name */
-    protected SparseArrayCompat f17219a = new SparseArrayCompat();
+    protected SparseArrayCompat f16187a = new SparseArrayCompat();
 
     /* renamed from: b  reason: collision with root package name */
-    protected b f17220b;
+    protected b f16188b;
 
     public AdapterDelegatesManager a(int i10, boolean z10, b bVar) {
         if (bVar != null) {
             if (i10 != 2147483646) {
-                if (!z10 && this.f17219a.e(i10) != null) {
-                    throw new IllegalArgumentException("An AdapterDelegate is already registered for the viewType = " + i10 + ". Already registered AdapterDelegate is " + this.f17219a.e(i10));
+                if (!z10 && this.f16187a.e(i10) != null) {
+                    throw new IllegalArgumentException("An AdapterDelegate is already registered for the viewType = " + i10 + ". Already registered AdapterDelegate is " + this.f16187a.e(i10));
                 }
-                this.f17219a.k(i10, bVar);
+                this.f16187a.k(i10, bVar);
                 return this;
             }
             throw new IllegalArgumentException("The view type = 2147483646 is reserved for fallback adapter delegate (see setFallbackDelegate() ). Please use another view type.");
@@ -32,8 +32,8 @@ public class AdapterDelegatesManager {
     }
 
     public AdapterDelegatesManager b(b bVar) {
-        int l10 = this.f17219a.l();
-        while (this.f17219a.e(l10) != null) {
+        int l10 = this.f16187a.l();
+        while (this.f16187a.e(l10) != null) {
             l10++;
             if (l10 == 2147483646) {
                 throw new IllegalArgumentException("Oops, we are very close to Integer.MAX_VALUE. It seems that there are no more free and unused view type integers left to add another AdapterDelegate.");
@@ -43,19 +43,19 @@ public class AdapterDelegatesManager {
     }
 
     public b c(int i10) {
-        return (b) this.f17219a.f(i10, this.f17220b);
+        return (b) this.f16187a.f(i10, this.f16188b);
     }
 
     public int d(Object obj, int i10) {
         String str;
         if (obj != null) {
-            int l10 = this.f17219a.l();
+            int l10 = this.f16187a.l();
             for (int i11 = 0; i11 < l10; i11++) {
-                if (((b) this.f17219a.m(i11)).isForViewType(obj, i10)) {
-                    return this.f17219a.j(i11);
+                if (((b) this.f16187a.m(i11)).isForViewType(obj, i10)) {
+                    return this.f16187a.j(i11);
                 }
             }
-            if (this.f17220b != null) {
+            if (this.f16188b != null) {
                 return 2147483646;
             }
             if (obj instanceof List) {
@@ -70,11 +70,11 @@ public class AdapterDelegatesManager {
 
     public int e(b bVar) {
         if (bVar != null) {
-            int i10 = this.f17219a.i(bVar);
+            int i10 = this.f16187a.i(bVar);
             if (i10 == -1) {
                 return -1;
             }
-            return this.f17219a.j(i10);
+            return this.f16187a.j(i10);
         }
         throw new NullPointerException("Delegate is null");
     }
@@ -83,7 +83,7 @@ public class AdapterDelegatesManager {
         b c10 = c(viewHolder.getItemViewType());
         if (c10 != null) {
             if (list == null) {
-                list = f17218c;
+                list = f16186c;
             }
             c10.onBindViewHolder(obj, i10, viewHolder, list);
             return;

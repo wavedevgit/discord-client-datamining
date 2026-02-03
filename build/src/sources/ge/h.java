@@ -8,38 +8,38 @@ import ne.w0;
 final class h implements zd.g {
 
     /* renamed from: d  reason: collision with root package name */
-    private final d f26832d;
+    private final d f26045d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final long[] f26833e;
+    private final long[] f26046e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Map f26834i;
+    private final Map f26047i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Map f26835o;
+    private final Map f26048o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Map f26836p;
+    private final Map f26049p;
 
     public h(d dVar, Map map, Map map2, Map map3) {
         Map map4;
-        this.f26832d = dVar;
-        this.f26835o = map2;
-        this.f26836p = map3;
+        this.f26045d = dVar;
+        this.f26048o = map2;
+        this.f26049p = map3;
         if (map != null) {
             map4 = Collections.unmodifiableMap(map);
         } else {
             map4 = Collections.EMPTY_MAP;
         }
-        this.f26834i = map4;
-        this.f26833e = dVar.j();
+        this.f26047i = map4;
+        this.f26046e = dVar.j();
     }
 
     @Override // zd.g
     public int a(long j10) {
-        int e10 = w0.e(this.f26833e, j10, false, false);
-        if (e10 < this.f26833e.length) {
+        int e10 = w0.e(this.f26046e, j10, false, false);
+        if (e10 < this.f26046e.length) {
             return e10;
         }
         return -1;
@@ -47,16 +47,16 @@ final class h implements zd.g {
 
     @Override // zd.g
     public List d(long j10) {
-        return this.f26832d.h(j10, this.f26834i, this.f26835o, this.f26836p);
+        return this.f26045d.h(j10, this.f26047i, this.f26048o, this.f26049p);
     }
 
     @Override // zd.g
     public long e(int i10) {
-        return this.f26833e[i10];
+        return this.f26046e[i10];
     }
 
     @Override // zd.g
     public int f() {
-        return this.f26833e.length;
+        return this.f26046e.length;
     }
 }

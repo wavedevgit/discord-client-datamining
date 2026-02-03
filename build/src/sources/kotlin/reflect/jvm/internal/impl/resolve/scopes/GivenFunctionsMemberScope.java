@@ -34,19 +34,19 @@ import org.jetbrains.annotations.NotNull;
 public abstract class GivenFunctionsMemberScope extends MemberScopeImpl {
 
     /* renamed from: c  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f35281c = {Reflection.property1(new PropertyReference1Impl(GivenFunctionsMemberScope.class, "allDescriptors", "getAllDescriptors()Ljava/util/List;", 0))};
+    static final /* synthetic */ KProperty[] f34671c = {Reflection.property1(new PropertyReference1Impl(GivenFunctionsMemberScope.class, "allDescriptors", "getAllDescriptors()Ljava/util/List;", 0))};
 
     /* renamed from: a  reason: collision with root package name */
-    private final ClassDescriptor f35282a;
+    private final ClassDescriptor f34672a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final NotNullLazyValue f35283b;
+    private final NotNullLazyValue f34673b;
 
     public GivenFunctionsMemberScope(@NotNull StorageManager storageManager, @NotNull ClassDescriptor containingClass) {
         Intrinsics.checkNotNullParameter(storageManager, "storageManager");
         Intrinsics.checkNotNullParameter(containingClass, "containingClass");
-        this.f35282a = containingClass;
-        this.f35283b = storageManager.createLazyValue(new a(this));
+        this.f34672a = containingClass;
+        this.f34673b = storageManager.createLazyValue(new a(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -58,7 +58,7 @@ public abstract class GivenFunctionsMemberScope extends MemberScopeImpl {
     private final List d(List list) {
         Collection<? extends CallableMemberDescriptor> l10;
         final ArrayList arrayList = new ArrayList(3);
-        Collection<KotlinType> supertypes = this.f35282a.getTypeConstructor().getSupertypes();
+        Collection<KotlinType> supertypes = this.f34672a.getTypeConstructor().getSupertypes();
         Intrinsics.checkNotNullExpressionValue(supertypes, "getSupertypes(...)");
         ArrayList arrayList2 = new ArrayList();
         for (KotlinType kotlinType : supertypes) {
@@ -108,7 +108,7 @@ public abstract class GivenFunctionsMemberScope extends MemberScopeImpl {
                 } else {
                     l10 = CollectionsKt.l();
                 }
-                overridingUtil.generateOverridesInFunctionGroup(name2, list2, l10, this.f35282a, new NonReportingOverrideStrategy() { // from class: kotlin.reflect.jvm.internal.impl.resolve.scopes.GivenFunctionsMemberScope$createFakeOverrides$4
+                overridingUtil.generateOverridesInFunctionGroup(name2, list2, l10, this.f34672a, new NonReportingOverrideStrategy() { // from class: kotlin.reflect.jvm.internal.impl.resolve.scopes.GivenFunctionsMemberScope$createFakeOverrides$4
                     @Override // kotlin.reflect.jvm.internal.impl.resolve.NonReportingOverrideStrategy
                     protected void a(CallableMemberDescriptor fromSuper, CallableMemberDescriptor fromCurrent) {
                         Intrinsics.checkNotNullParameter(fromSuper, "fromSuper");
@@ -129,14 +129,14 @@ public abstract class GivenFunctionsMemberScope extends MemberScopeImpl {
     }
 
     private final List e() {
-        return (List) StorageKt.getValue(this.f35283b, this, f35281c[0]);
+        return (List) StorageKt.getValue(this.f34673b, this, f34671c[0]);
     }
 
     protected abstract List c();
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final ClassDescriptor f() {
-        return this.f35282a;
+        return this.f34672a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScopeImpl, kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope

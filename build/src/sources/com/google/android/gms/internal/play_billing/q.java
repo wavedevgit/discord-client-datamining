@@ -6,11 +6,11 @@ import java.util.Objects;
 final class q extends j {
 
     /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ r f14993o;
+    final /* synthetic */ r f13961o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public q(r rVar) {
-        this.f14993o = rVar;
+        this.f13961o = rVar;
     }
 
     @Override // com.google.android.gms.internal.play_billing.g
@@ -23,13 +23,13 @@ final class q extends j {
         int i11;
         Object[] objArr;
         Object[] objArr2;
-        i11 = this.f14993o.f14996p;
+        i11 = this.f13961o.f13964p;
         b.a(i10, i11, "index");
-        objArr = this.f14993o.f14995o;
+        objArr = this.f13961o.f13963o;
         int i12 = i10 + i10;
         Object obj = objArr[i12];
         Objects.requireNonNull(obj);
-        objArr2 = this.f14993o.f14995o;
+        objArr2 = this.f13961o.f13963o;
         Object obj2 = objArr2[i12 + 1];
         Objects.requireNonNull(obj2);
         return new AbstractMap.SimpleImmutableEntry(obj, obj2);
@@ -38,7 +38,7 @@ final class q extends j {
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public final int size() {
         int i10;
-        i10 = this.f14993o.f14996p;
+        i10 = this.f13961o.f13964p;
         return i10;
     }
 }

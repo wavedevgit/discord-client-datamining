@@ -15,11 +15,11 @@ import org.jetbrains.annotations.NotNull;
 public final class ReflectJavaPackage extends ReflectJavaElement implements JavaPackage {
 
     /* renamed from: a  reason: collision with root package name */
-    private final FqName f33721a;
+    private final FqName f33111a;
 
     public ReflectJavaPackage(@NotNull FqName fqName) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
-        this.f33721a = fqName;
+        this.f33111a = fqName;
     }
 
     public boolean equals(Object obj) {
@@ -45,7 +45,7 @@ public final class ReflectJavaPackage extends ReflectJavaElement implements Java
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaPackage
     @NotNull
     public FqName getFqName() {
-        return this.f33721a;
+        return this.f33111a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaPackage

@@ -1,105 +1,73 @@
 package op;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.widget.NestedScrollView;
+import androidx.viewbinding.ViewBinding;
+import com.withpersona.sdk2.inquiry.shared.ui.Pi2NavigationBar;
+import mp.m;
+import mp.n;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface b {
+public final class b implements ViewBinding {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a implements b {
+    /* renamed from: a  reason: collision with root package name */
+    private final ConstraintLayout f44390a;
 
-        /* renamed from: a  reason: collision with root package name */
-        public static final a f44594a = new a();
+    /* renamed from: b  reason: collision with root package name */
+    public final FrameLayout f44391b;
 
-        private a() {
-        }
+    /* renamed from: c  reason: collision with root package name */
+    public final NestedScrollView f44392c;
 
-        public boolean equals(Object obj) {
-            if (this == obj || (obj instanceof a)) {
-                return true;
-            }
-            return false;
-        }
+    /* renamed from: d  reason: collision with root package name */
+    public final FrameLayout f44393d;
 
-        public int hashCode() {
-            return -1611120582;
-        }
+    /* renamed from: e  reason: collision with root package name */
+    public final Pi2NavigationBar f44394e;
 
-        public String toString() {
-            return "Pending";
-        }
+    private b(ConstraintLayout constraintLayout, FrameLayout frameLayout, NestedScrollView nestedScrollView, FrameLayout frameLayout2, Pi2NavigationBar pi2NavigationBar) {
+        this.f44390a = constraintLayout;
+        this.f44391b = frameLayout;
+        this.f44392c = nestedScrollView;
+        this.f44393d = frameLayout2;
+        this.f44394e = pi2NavigationBar;
     }
 
-    /* renamed from: op.b$b  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0553b implements b {
-
-        /* renamed from: a  reason: collision with root package name */
-        public static final C0553b f44595a = new C0553b();
-
-        private C0553b() {
-        }
-
-        public boolean equals(Object obj) {
-            if (this == obj || (obj instanceof C0553b)) {
-                return true;
+    public static b a(View view) {
+        int i10 = m.f38990b;
+        FrameLayout frameLayout = (FrameLayout) e4.a.a(view, i10);
+        if (frameLayout != null) {
+            i10 = m.f38991c;
+            NestedScrollView nestedScrollView = (NestedScrollView) e4.a.a(view, i10);
+            if (nestedScrollView != null) {
+                i10 = m.f38992d;
+                FrameLayout frameLayout2 = (FrameLayout) e4.a.a(view, i10);
+                if (frameLayout2 != null) {
+                    i10 = m.f38995g;
+                    Pi2NavigationBar pi2NavigationBar = (Pi2NavigationBar) e4.a.a(view, i10);
+                    if (pi2NavigationBar != null) {
+                        return new b((ConstraintLayout) view, frameLayout, nestedScrollView, frameLayout2, pi2NavigationBar);
+                    }
+                }
             }
-            return false;
         }
-
-        public int hashCode() {
-            return -39927199;
-        }
-
-        public String toString() {
-            return "Prompt";
-        }
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class c implements b {
-
-        /* renamed from: a  reason: collision with root package name */
-        public static final c f44596a = new c();
-
-        private c() {
+    public static b c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
+        View inflate = layoutInflater.inflate(n.f39003b, viewGroup, false);
+        if (z10) {
+            viewGroup.addView(inflate);
         }
-
-        public boolean equals(Object obj) {
-            if (this == obj || (obj instanceof c)) {
-                return true;
-            }
-            return false;
-        }
-
-        public int hashCode() {
-            return 5529685;
-        }
-
-        public String toString() {
-            return "Review";
-        }
+        return a(inflate);
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class d implements b {
-
-        /* renamed from: a  reason: collision with root package name */
-        public static final d f44597a = new d();
-
-        private d() {
-        }
-
-        public boolean equals(Object obj) {
-            if (this == obj || (obj instanceof d)) {
-                return true;
-            }
-            return false;
-        }
-
-        public int hashCode() {
-            return -1776980018;
-        }
-
-        public String toString() {
-            return "TakePhoto";
-        }
+    @Override // androidx.viewbinding.ViewBinding
+    /* renamed from: b */
+    public ConstraintLayout getRoot() {
+        return this.f44390a;
     }
 }

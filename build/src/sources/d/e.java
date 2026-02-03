@@ -11,19 +11,19 @@ import org.jetbrains.annotations.NotNull;
 public final class e implements Parcelable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final IntentSender f21036d;
+    private final IntentSender f19895d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Intent f21037e;
+    private final Intent f19896e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f21038i;
+    private final int f19897i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f21039o;
+    private final int f19898o;
 
     /* renamed from: p  reason: collision with root package name */
-    public static final c f21035p = new c(null);
+    public static final c f19894p = new c(null);
     @NotNull
     public static final Parcelable.Creator<e> CREATOR = new b();
 
@@ -31,34 +31,34 @@ public final class e implements Parcelable {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final IntentSender f21040a;
+        private final IntentSender f19899a;
 
         /* renamed from: b  reason: collision with root package name */
-        private Intent f21041b;
+        private Intent f19900b;
 
         /* renamed from: c  reason: collision with root package name */
-        private int f21042c;
+        private int f19901c;
 
         /* renamed from: d  reason: collision with root package name */
-        private int f21043d;
+        private int f19902d;
 
         public a(IntentSender intentSender) {
             Intrinsics.checkNotNullParameter(intentSender, "intentSender");
-            this.f21040a = intentSender;
+            this.f19899a = intentSender;
         }
 
         public final e a() {
-            return new e(this.f21040a, this.f21041b, this.f21042c, this.f21043d);
+            return new e(this.f19899a, this.f19900b, this.f19901c, this.f19902d);
         }
 
         public final a b(Intent intent) {
-            this.f21041b = intent;
+            this.f19900b = intent;
             return this;
         }
 
         public final a c(int i10, int i11) {
-            this.f21043d = i10;
-            this.f21042c = i11;
+            this.f19902d = i10;
+            this.f19901c = i11;
             return this;
         }
 
@@ -113,26 +113,26 @@ public final class e implements Parcelable {
 
     public e(IntentSender intentSender, Intent intent, int i10, int i11) {
         Intrinsics.checkNotNullParameter(intentSender, "intentSender");
-        this.f21036d = intentSender;
-        this.f21037e = intent;
-        this.f21038i = i10;
-        this.f21039o = i11;
+        this.f19895d = intentSender;
+        this.f19896e = intent;
+        this.f19897i = i10;
+        this.f19898o = i11;
     }
 
     public final Intent a() {
-        return this.f21037e;
+        return this.f19896e;
     }
 
     public final int b() {
-        return this.f21038i;
+        return this.f19897i;
     }
 
     public final int c() {
-        return this.f21039o;
+        return this.f19898o;
     }
 
     public final IntentSender d() {
-        return this.f21036d;
+        return this.f19895d;
     }
 
     @Override // android.os.Parcelable
@@ -143,10 +143,10 @@ public final class e implements Parcelable {
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeParcelable(this.f21036d, i10);
-        dest.writeParcelable(this.f21037e, i10);
-        dest.writeInt(this.f21038i);
-        dest.writeInt(this.f21039o);
+        dest.writeParcelable(this.f19895d, i10);
+        dest.writeParcelable(this.f19896e, i10);
+        dest.writeInt(this.f19897i);
+        dest.writeInt(this.f19898o);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

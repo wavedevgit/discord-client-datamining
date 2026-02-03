@@ -5,19 +5,19 @@ import java.util.Objects;
 final class t extends j {
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient Object[] f15011o;
+    private final transient Object[] f13979o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient int f15012p;
+    private final transient int f13980p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient int f15013q;
+    private final transient int f13981q;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public t(Object[] objArr, int i10, int i11) {
-        this.f15011o = objArr;
-        this.f15012p = i10;
-        this.f15013q = i11;
+        this.f13979o = objArr;
+        this.f13980p = i10;
+        this.f13981q = i11;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -28,14 +28,14 @@ final class t extends j {
 
     @Override // java.util.List
     public final Object get(int i10) {
-        b.a(i10, this.f15013q, "index");
-        Object obj = this.f15011o[i10 + i10 + this.f15012p];
+        b.a(i10, this.f13981q, "index");
+        Object obj = this.f13979o[i10 + i10 + this.f13980p];
         Objects.requireNonNull(obj);
         return obj;
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public final int size() {
-        return this.f15013q;
+        return this.f13981q;
     }
 }

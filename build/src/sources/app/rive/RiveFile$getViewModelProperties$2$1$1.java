@@ -11,7 +11,7 @@ import kotlin.coroutines.jvm.internal.e;
 import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function1;
 import org.jetbrains.annotations.NotNull;
-import pr.b;
+import rr.b;
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\u0010\u0000\u001a\b\u0012\u0004\u0012\u00020\u00020\u0001H\u008a@"}, d2 = {"<anonymous>", "", "Lapp/rive/runtime/kotlin/core/ViewModel$Property;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @e(c = "app.rive.RiveFile$getViewModelProperties$2$1$1", f = "RiveFile.kt", l = {125}, m = "invokeSuspend")
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -47,18 +47,18 @@ final class RiveFile$getViewModelProperties$2$1$1 extends k implements Function1
         }
         c.b(obj);
         CommandQueue commandQueue$kotlin_release = this.this$0.getCommandQueue$kotlin_release();
-        long m33getFileHandleENT3xMk$kotlin_release = this.this$0.m33getFileHandleENT3xMk$kotlin_release();
+        long m31getFileHandleENT3xMk$kotlin_release = this.this$0.m31getFileHandleENT3xMk$kotlin_release();
         String str = this.$viewModel;
         this.label = 1;
-        Object m139getViewModelPropertiesmgMojzc = commandQueue$kotlin_release.m139getViewModelPropertiesmgMojzc(m33getFileHandleENT3xMk$kotlin_release, str, this);
-        if (m139getViewModelPropertiesmgMojzc == f10) {
+        Object m137getViewModelPropertiesmgMojzc = commandQueue$kotlin_release.m137getViewModelPropertiesmgMojzc(m31getFileHandleENT3xMk$kotlin_release, str, this);
+        if (m137getViewModelPropertiesmgMojzc == f10) {
             return f10;
         }
-        return m139getViewModelPropertiesmgMojzc;
+        return m137getViewModelPropertiesmgMojzc;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public final Object invoke(Continuation<? super List<ViewModel.Property>> continuation) {
-        return ((RiveFile$getViewModelProperties$2$1$1) create(continuation)).invokeSuspend(Unit.f33074a);
+        return ((RiveFile$getViewModelProperties$2$1$1) create(continuation)).invokeSuspend(Unit.f32464a);
     }
 }

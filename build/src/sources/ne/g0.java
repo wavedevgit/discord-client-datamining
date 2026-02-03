@@ -7,26 +7,26 @@ import java.nio.charset.Charset;
 public final class g0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public byte[] f40067a;
+    public byte[] f40106a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f40068b;
+    private int f40107b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f40069c;
+    private int f40108c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f40070d;
+    private int f40109d;
 
     public g0() {
-        this.f40067a = w0.f40163f;
+        this.f40106a = w0.f40202f;
     }
 
     private void a() {
         boolean z10;
         int i10;
-        int i11 = this.f40068b;
-        if (i11 >= 0 && (i11 < (i10 = this.f40070d) || (i11 == i10 && this.f40069c == 0))) {
+        int i11 = this.f40107b;
+        if (i11 >= 0 && (i11 < (i10 = this.f40109d) || (i11 == i10 && this.f40108c == 0))) {
             z10 = true;
         } else {
             z10 = false;
@@ -35,54 +35,54 @@ public final class g0 {
     }
 
     public int b() {
-        return ((this.f40070d - this.f40068b) * 8) - this.f40069c;
+        return ((this.f40109d - this.f40107b) * 8) - this.f40108c;
     }
 
     public void c() {
-        if (this.f40069c == 0) {
+        if (this.f40108c == 0) {
             return;
         }
-        this.f40069c = 0;
-        this.f40068b++;
+        this.f40108c = 0;
+        this.f40107b++;
         a();
     }
 
     public int d() {
         boolean z10;
-        if (this.f40069c == 0) {
+        if (this.f40108c == 0) {
             z10 = true;
         } else {
             z10 = false;
         }
         a.g(z10);
-        return this.f40068b;
+        return this.f40107b;
     }
 
     public int e() {
-        return (this.f40068b * 8) + this.f40069c;
+        return (this.f40107b * 8) + this.f40108c;
     }
 
     public void f(int i10, int i11) {
         if (i11 < 32) {
             i10 &= (1 << i11) - 1;
         }
-        int min = Math.min(8 - this.f40069c, i11);
-        int i12 = this.f40069c;
+        int min = Math.min(8 - this.f40108c, i11);
+        int i12 = this.f40108c;
         int i13 = (8 - i12) - min;
-        byte[] bArr = this.f40067a;
-        int i14 = this.f40068b;
+        byte[] bArr = this.f40106a;
+        int i14 = this.f40107b;
         byte b10 = (byte) (((65280 >> i12) | ((1 << i13) - 1)) & bArr[i14]);
         bArr[i14] = b10;
         int i15 = i11 - min;
         bArr[i14] = (byte) (b10 | ((i10 >>> i15) << i13));
         int i16 = i14 + 1;
         while (i15 > 8) {
-            this.f40067a[i16] = (byte) (i10 >>> (i15 - 8));
+            this.f40106a[i16] = (byte) (i10 >>> (i15 - 8));
             i15 -= 8;
             i16++;
         }
         int i17 = 8 - i15;
-        byte[] bArr2 = this.f40067a;
+        byte[] bArr2 = this.f40106a;
         byte b11 = (byte) (bArr2[i16] & ((1 << i17) - 1));
         bArr2[i16] = b11;
         bArr2[i16] = (byte) (((i10 & ((1 << i15) - 1)) << i17) | b11);
@@ -92,7 +92,7 @@ public final class g0 {
 
     public boolean g() {
         boolean z10;
-        if ((this.f40067a[this.f40068b] & (IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT >> this.f40069c)) != 0) {
+        if ((this.f40106a[this.f40107b] & (IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT >> this.f40108c)) != 0) {
             z10 = true;
         } else {
             z10 = false;
@@ -106,26 +106,26 @@ public final class g0 {
         if (i10 == 0) {
             return 0;
         }
-        this.f40069c += i10;
+        this.f40108c += i10;
         int i12 = 0;
         while (true) {
-            i11 = this.f40069c;
+            i11 = this.f40108c;
             if (i11 <= 8) {
                 break;
             }
             int i13 = i11 - 8;
-            this.f40069c = i13;
-            byte[] bArr = this.f40067a;
-            int i14 = this.f40068b;
-            this.f40068b = i14 + 1;
+            this.f40108c = i13;
+            byte[] bArr = this.f40106a;
+            int i14 = this.f40107b;
+            this.f40107b = i14 + 1;
             i12 |= (bArr[i14] & 255) << i13;
         }
-        byte[] bArr2 = this.f40067a;
-        int i15 = this.f40068b;
+        byte[] bArr2 = this.f40106a;
+        int i15 = this.f40107b;
         int i16 = ((-1) >>> (32 - i10)) & (i12 | ((bArr2[i15] & 255) >> (8 - i11)));
         if (i11 == 8) {
-            this.f40069c = 0;
-            this.f40068b = i15 + 1;
+            this.f40108c = 0;
+            this.f40107b = i15 + 1;
         }
         a();
         return i16;
@@ -134,12 +134,12 @@ public final class g0 {
     public void i(byte[] bArr, int i10, int i11) {
         int i12 = (i11 >> 3) + i10;
         while (i10 < i12) {
-            byte[] bArr2 = this.f40067a;
-            int i13 = this.f40068b;
+            byte[] bArr2 = this.f40106a;
+            int i13 = this.f40107b;
             int i14 = i13 + 1;
-            this.f40068b = i14;
+            this.f40107b = i14;
             byte b10 = bArr2[i13];
-            int i15 = this.f40069c;
+            int i15 = this.f40108c;
             byte b11 = (byte) (b10 << i15);
             bArr[i10] = b11;
             bArr[i10] = (byte) (((255 & bArr2[i14]) >> (8 - i15)) | b11);
@@ -151,22 +151,22 @@ public final class g0 {
         }
         byte b12 = (byte) (bArr[i12] & (SetSpanOperation.SPAN_MAX_PRIORITY >> i16));
         bArr[i12] = b12;
-        int i17 = this.f40069c;
+        int i17 = this.f40108c;
         if (i17 + i16 > 8) {
-            byte[] bArr3 = this.f40067a;
-            int i18 = this.f40068b;
-            this.f40068b = i18 + 1;
+            byte[] bArr3 = this.f40106a;
+            int i18 = this.f40107b;
+            this.f40107b = i18 + 1;
             bArr[i12] = (byte) (b12 | ((bArr3[i18] & 255) << i17));
-            this.f40069c = i17 - 8;
+            this.f40108c = i17 - 8;
         }
-        int i19 = this.f40069c + i16;
-        this.f40069c = i19;
-        byte[] bArr4 = this.f40067a;
-        int i20 = this.f40068b;
+        int i19 = this.f40108c + i16;
+        this.f40108c = i19;
+        byte[] bArr4 = this.f40106a;
+        int i20 = this.f40107b;
         bArr[i12] = (byte) (((byte) (((255 & bArr4[i20]) >> (8 - i19)) << (8 - i16))) | bArr[i12]);
         if (i19 == 8) {
-            this.f40069c = 0;
-            this.f40068b = i20 + 1;
+            this.f40108c = 0;
+            this.f40107b = i20 + 1;
         }
         a();
     }
@@ -180,14 +180,14 @@ public final class g0 {
 
     public void k(byte[] bArr, int i10, int i11) {
         boolean z10;
-        if (this.f40069c == 0) {
+        if (this.f40108c == 0) {
             z10 = true;
         } else {
             z10 = false;
         }
         a.g(z10);
-        System.arraycopy(this.f40067a, this.f40068b, bArr, i10, i11);
-        this.f40068b += i11;
+        System.arraycopy(this.f40106a, this.f40107b, bArr, i10, i11);
+        this.f40107b += i11;
         a();
     }
 
@@ -207,51 +207,51 @@ public final class g0 {
     }
 
     public void o(byte[] bArr, int i10) {
-        this.f40067a = bArr;
-        this.f40068b = 0;
-        this.f40069c = 0;
-        this.f40070d = i10;
+        this.f40106a = bArr;
+        this.f40107b = 0;
+        this.f40108c = 0;
+        this.f40109d = i10;
     }
 
     public void p(int i10) {
         int i11 = i10 / 8;
-        this.f40068b = i11;
-        this.f40069c = i10 - (i11 * 8);
+        this.f40107b = i11;
+        this.f40108c = i10 - (i11 * 8);
         a();
     }
 
     public void q() {
-        int i10 = this.f40069c + 1;
-        this.f40069c = i10;
+        int i10 = this.f40108c + 1;
+        this.f40108c = i10;
         if (i10 == 8) {
-            this.f40069c = 0;
-            this.f40068b++;
+            this.f40108c = 0;
+            this.f40107b++;
         }
         a();
     }
 
     public void r(int i10) {
         int i11 = i10 / 8;
-        int i12 = this.f40068b + i11;
-        this.f40068b = i12;
-        int i13 = this.f40069c + (i10 - (i11 * 8));
-        this.f40069c = i13;
+        int i12 = this.f40107b + i11;
+        this.f40107b = i12;
+        int i13 = this.f40108c + (i10 - (i11 * 8));
+        this.f40108c = i13;
         if (i13 > 7) {
-            this.f40068b = i12 + 1;
-            this.f40069c = i13 - 8;
+            this.f40107b = i12 + 1;
+            this.f40108c = i13 - 8;
         }
         a();
     }
 
     public void s(int i10) {
         boolean z10;
-        if (this.f40069c == 0) {
+        if (this.f40108c == 0) {
             z10 = true;
         } else {
             z10 = false;
         }
         a.g(z10);
-        this.f40068b += i10;
+        this.f40107b += i10;
         a();
     }
 
@@ -260,7 +260,7 @@ public final class g0 {
     }
 
     public g0(byte[] bArr, int i10) {
-        this.f40067a = bArr;
-        this.f40070d = i10;
+        this.f40106a = bArr;
+        this.f40109d = i10;
     }
 }

@@ -5,16 +5,16 @@ import java.util.concurrent.Executor;
 public class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final bj.b f46076a;
+    private final bj.b f46034a;
 
     public d(bj.b bVar) {
-        this.f46076a = bVar;
+        this.f46034a = bVar;
     }
 
     public Executor a(Executor executor) {
         if (executor != null) {
             return executor;
         }
-        return (Executor) this.f46076a.get();
+        return (Executor) this.f46034a.get();
     }
 }

@@ -15,25 +15,25 @@ import java.util.Map;
 public final class h implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f29930d;
+    private String f30291d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f29931e;
+    private String f30292e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f29932i;
+    private String f30293i;
 
     /* renamed from: o  reason: collision with root package name */
-    private x f29933o;
+    private x f30294o;
 
     /* renamed from: p  reason: collision with root package name */
-    private x f29934p;
+    private x f30295p;
 
     /* renamed from: q  reason: collision with root package name */
-    private String f29935q;
+    private String f30296q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Map f29936r;
+    private Map f30297r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -49,42 +49,42 @@ public final class h implements w1 {
             String str4 = null;
             HashMap hashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String m02 = e3Var.m0();
-                m02.getClass();
+                String l02 = e3Var.l0();
+                l02.getClass();
                 char c10 = 65535;
-                switch (m02.hashCode()) {
+                switch (l02.hashCode()) {
                     case -964729863:
-                        if (m02.equals("associated_event_id")) {
+                        if (l02.equals("associated_event_id")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case -454767501:
-                        if (m02.equals("replay_id")) {
+                        if (l02.equals("replay_id")) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case 116079:
-                        if (m02.equals("url")) {
+                        if (l02.equals("url")) {
                             c10 = 2;
                             break;
                         }
                         break;
                     case 3373707:
-                        if (m02.equals(StackTraceHelper.NAME_KEY)) {
+                        if (l02.equals(StackTraceHelper.NAME_KEY)) {
                             c10 = 3;
                             break;
                         }
                         break;
                     case 947010237:
-                        if (m02.equals("contact_email")) {
+                        if (l02.equals("contact_email")) {
                             c10 = 4;
                             break;
                         }
                         break;
                     case 954925063:
-                        if (m02.equals("message")) {
+                        if (l02.equals("message")) {
                             c10 = 5;
                             break;
                         }
@@ -113,19 +113,19 @@ public final class h implements w1 {
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.v1(iLogger, hashMap, m02);
+                        e3Var.v1(iLogger, hashMap, l02);
                         break;
                 }
             }
             e3Var.y();
             if (str != null) {
                 h hVar = new h(str);
-                hVar.f29931e = str2;
-                hVar.f29932i = str3;
-                hVar.f29933o = xVar;
-                hVar.f29934p = xVar2;
-                hVar.f29935q = str4;
-                hVar.f29936r = hashMap;
+                hVar.f30292e = str2;
+                hVar.f30293i = str3;
+                hVar.f30294o = xVar;
+                hVar.f30295p = xVar2;
+                hVar.f30296q = str4;
+                hVar.f30297r = hashMap;
                 return hVar;
             }
             IllegalStateException illegalStateException = new IllegalStateException("Missing required field \"message\"");
@@ -146,7 +146,7 @@ public final class h implements w1 {
             return false;
         }
         h hVar = (h) obj;
-        if (io.sentry.util.y.a(this.f29930d, hVar.f29930d) && io.sentry.util.y.a(this.f29931e, hVar.f29931e) && io.sentry.util.y.a(this.f29932i, hVar.f29932i) && io.sentry.util.y.a(this.f29933o, hVar.f29933o) && io.sentry.util.y.a(this.f29934p, hVar.f29934p) && io.sentry.util.y.a(this.f29935q, hVar.f29935q) && io.sentry.util.y.a(this.f29936r, hVar.f29936r)) {
+        if (io.sentry.util.y.a(this.f30291d, hVar.f30291d) && io.sentry.util.y.a(this.f30292e, hVar.f30292e) && io.sentry.util.y.a(this.f30293i, hVar.f30293i) && io.sentry.util.y.a(this.f30294o, hVar.f30294o) && io.sentry.util.y.a(this.f30295p, hVar.f30295p) && io.sentry.util.y.a(this.f30296q, hVar.f30296q) && io.sentry.util.y.a(this.f30297r, hVar.f30297r)) {
             return true;
         }
         return false;
@@ -154,57 +154,57 @@ public final class h implements w1 {
 
     public void g(String str) {
         if (str.length() > 4096) {
-            this.f29930d = str.substring(0, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT);
+            this.f30291d = str.substring(0, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT);
         } else {
-            this.f29930d = str;
+            this.f30291d = str;
         }
     }
 
     public int hashCode() {
-        return io.sentry.util.y.b(this.f29930d, this.f29931e, this.f29932i, this.f29933o, this.f29934p, this.f29935q, this.f29936r);
+        return io.sentry.util.y.b(this.f30291d, this.f30292e, this.f30293i, this.f30294o, this.f30295p, this.f30296q, this.f30297r);
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        f3Var.e("message").f(this.f29930d);
-        if (this.f29931e != null) {
-            f3Var.e("contact_email").f(this.f29931e);
+        f3Var.e("message").f(this.f30291d);
+        if (this.f30292e != null) {
+            f3Var.e("contact_email").f(this.f30292e);
         }
-        if (this.f29932i != null) {
-            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f29932i);
+        if (this.f30293i != null) {
+            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f30293i);
         }
-        if (this.f29933o != null) {
+        if (this.f30294o != null) {
             f3Var.e("associated_event_id");
-            this.f29933o.serialize(f3Var, iLogger);
+            this.f30294o.serialize(f3Var, iLogger);
         }
-        if (this.f29934p != null) {
+        if (this.f30295p != null) {
             f3Var.e("replay_id");
-            this.f29934p.serialize(f3Var, iLogger);
+            this.f30295p.serialize(f3Var, iLogger);
         }
-        if (this.f29935q != null) {
-            f3Var.e("url").f(this.f29935q);
+        if (this.f30296q != null) {
+            f3Var.e("url").f(this.f30296q);
         }
-        Map map = this.f29936r;
+        Map map = this.f30297r;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f29936r.get(str));
+                f3Var.e(str).j(iLogger, this.f30297r.get(str));
             }
         }
         f3Var.y();
     }
 
     public String toString() {
-        return "Feedback{message='" + this.f29930d + "', contactEmail='" + this.f29931e + "', name='" + this.f29932i + "', associatedEventId=" + this.f29933o + ", replayId=" + this.f29934p + ", url='" + this.f29935q + "', unknown=" + this.f29936r + '}';
+        return "Feedback{message='" + this.f30291d + "', contactEmail='" + this.f30292e + "', name='" + this.f30293i + "', associatedEventId=" + this.f30294o + ", replayId=" + this.f30295p + ", url='" + this.f30296q + "', unknown=" + this.f30297r + '}';
     }
 
     public h(h hVar) {
-        this.f29930d = hVar.f29930d;
-        this.f29931e = hVar.f29931e;
-        this.f29932i = hVar.f29932i;
-        this.f29933o = hVar.f29933o;
-        this.f29934p = hVar.f29934p;
-        this.f29935q = hVar.f29935q;
-        this.f29936r = io.sentry.util.c.b(hVar.f29936r);
+        this.f30291d = hVar.f30291d;
+        this.f30292e = hVar.f30292e;
+        this.f30293i = hVar.f30293i;
+        this.f30294o = hVar.f30294o;
+        this.f30295p = hVar.f30295p;
+        this.f30296q = hVar.f30296q;
+        this.f30297r = io.sentry.util.c.b(hVar.f30297r);
     }
 }

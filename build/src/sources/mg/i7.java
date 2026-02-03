@@ -5,7 +5,7 @@ import ui.c;
 final class i7 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final i7 f38259a = new i7();
+    static final i7 f38056a = new i7();
 
     static {
         c.b a10 = ui.c.a("useCases");

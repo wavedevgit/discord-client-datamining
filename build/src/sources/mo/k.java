@@ -1,0 +1,86 @@
+package mo;
+
+import com.withpersona.sdk2.inquiry.governmentid.video_capture.VideoCaptureConfig;
+import eo.g3;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.internal.Intrinsics;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public final class k {
+    public k(oq.a aVar) {
+    }
+
+    public final oq.a b() {
+        return null;
+    }
+
+    public final boolean c(g3.a renderProps) {
+        Intrinsics.checkNotNullParameter(renderProps, "renderProps");
+        vn.a e10 = e(renderProps);
+        if (e10 != vn.a.f51700d && e10 != vn.a.f51701e) {
+            return false;
+        }
+        return true;
+    }
+
+    public final boolean d() {
+        return false;
+    }
+
+    public final vn.a e(g3.a renderProps) {
+        Intrinsics.checkNotNullParameter(renderProps, "renderProps");
+        VideoCaptureConfig v10 = renderProps.v();
+        List c10 = v10.c();
+        if (!v10.e()) {
+            return vn.a.f51702i;
+        }
+        if (CollectionsKt.firstOrNull(v10.c()) == vn.a.f51700d && !oq.c.d()) {
+            List c11 = v10.c();
+            vn.a aVar = vn.a.f51701e;
+            if (c11.contains(aVar)) {
+                return aVar;
+            }
+            return vn.a.f51702i;
+        }
+        vn.a aVar2 = vn.a.f51701e;
+        if (c10.contains(aVar2)) {
+            return aVar2;
+        }
+        vn.a aVar3 = (vn.a) CollectionsKt.firstOrNull(c10);
+        if (aVar3 == null) {
+            return vn.a.f51702i;
+        }
+        return aVar3;
+    }
+
+    public final boolean f(g3.a renderProps) {
+        Intrinsics.checkNotNullParameter(renderProps, "renderProps");
+        List c10 = renderProps.v().c();
+        if (renderProps.v().e() && CollectionsKt.firstOrNull(c10) == vn.a.f51700d && !oq.c.d()) {
+            return false;
+        }
+        return true;
+    }
+
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public /* synthetic */ k(oq.a r1, int r2, kotlin.jvm.internal.DefaultConstructorMarker r3) {
+        /*
+            r0 = this;
+            r2 = r2 & 1
+            if (r2 == 0) goto L8
+            oq.c.b()
+            r1 = 0
+        L8:
+            r0.<init>(r1)
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: mo.k.<init>(oq.a, int, kotlin.jvm.internal.DefaultConstructorMarker):void");
+    }
+
+    public final void a() {
+    }
+}

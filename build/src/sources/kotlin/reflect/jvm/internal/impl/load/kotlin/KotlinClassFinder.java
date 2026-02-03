@@ -17,11 +17,11 @@ public interface KotlinClassFinder extends KotlinMetadataFinder {
         public static final class ClassFileContent extends Result {
 
             /* renamed from: a  reason: collision with root package name */
-            private final byte[] f34305a;
+            private final byte[] f33695a;
 
             @NotNull
             public final byte[] getContent() {
-                return this.f34305a;
+                return this.f33695a;
             }
         }
 
@@ -29,22 +29,22 @@ public interface KotlinClassFinder extends KotlinMetadataFinder {
         public static final class KotlinClass extends Result {
 
             /* renamed from: a  reason: collision with root package name */
-            private final KotlinJvmBinaryClass f34306a;
+            private final KotlinJvmBinaryClass f33696a;
 
             /* renamed from: b  reason: collision with root package name */
-            private final byte[] f34307b;
+            private final byte[] f33697b;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public KotlinClass(@NotNull KotlinJvmBinaryClass kotlinJvmBinaryClass, byte[] bArr) {
                 super(null);
                 Intrinsics.checkNotNullParameter(kotlinJvmBinaryClass, "kotlinJvmBinaryClass");
-                this.f34306a = kotlinJvmBinaryClass;
-                this.f34307b = bArr;
+                this.f33696a = kotlinJvmBinaryClass;
+                this.f33697b = bArr;
             }
 
             @NotNull
             public final KotlinJvmBinaryClass getKotlinJvmBinaryClass() {
-                return this.f34306a;
+                return this.f33696a;
             }
 
             public /* synthetic */ KotlinClass(KotlinJvmBinaryClass kotlinJvmBinaryClass, byte[] bArr, int i10, DefaultConstructorMarker defaultConstructorMarker) {

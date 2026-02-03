@@ -25,14 +25,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/isActivityParticipantCurrentUserCurrentSession.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun96618: for (var _fun96618_ip = 0;;) switch (_fun96618_ip) {
+        _fun96678: for (var _fun96678_ip = 0;;) switch (_fun96678_ip) {
             case 0:
                 var2 = arg0;
                 var3 = arguments[1];
                 var5 = undefined;
                 if (!(var3 === var5)) {
-                    _fun96618_ip = 19;
-                    continue _fun96618
+                    _fun96678_ip = 19;
+                    continue _fun96678
                 }
             case 12:
                 var3 = _closure1_slot0;
@@ -44,24 +44,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.userId;
                 var0 = var0 === var1;
                 if (!var0) {
-                    _fun96618_ip = 92;
-                    continue _fun96618
+                    _fun96678_ip = 92;
+                    continue _fun96678
                 }
             case 51:
                 var4 = var2.sessionId;
                 var1 = null;
                 var1 = var1 == var4;
                 if (var1) {
-                    _fun96618_ip = 76;
-                    continue _fun96618
+                    _fun96678_ip = 76;
+                    continue _fun96678
                 }
             case 66:
                 var4 = var2.sessionId;
                 var1 = var5 === var4;
             case 76:
                 if (var1) {
-                    _fun96618_ip = 89;
-                    continue _fun96618
+                    _fun96678_ip = 89;
+                    continue _fun96678
                 }
             case 79:
                 var2 = var2.sessionId;

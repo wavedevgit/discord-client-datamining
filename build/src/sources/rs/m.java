@@ -1,143 +1,74 @@
 package rs;
 
-import j$.time.DateTimeException;
-import j$.time.ZoneOffset;
-import j$.time.format.DateTimeFormatter;
-import j$.time.format.DateTimeFormatterBuilder;
-import j$.time.temporal.TemporalAccessor;
-import j$.time.temporal.TemporalQuery;
-import kotlin.Lazy;
-import kotlin.jvm.functions.Function0;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Lambda;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function3;
+import kotlinx.coroutines.CancellableContinuation;
+import os.e0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Lazy f48693a = jr.l.b(c.f48698d);
+    private static final Function3 f49100a = a.f49106d;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Lazy f48694b = jr.l.b(b.f48697d);
+    private static final e0 f49101b = new e0("STATE_REG");
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Lazy f48695c = jr.l.b(a.f48696d);
+    private static final e0 f49102c = new e0("STATE_COMPLETED");
+
+    /* renamed from: d  reason: collision with root package name */
+    private static final e0 f49103d = new e0("STATE_CANCELLED");
+
+    /* renamed from: e  reason: collision with root package name */
+    private static final e0 f49104e = new e0("NO_RESULT");
+
+    /* renamed from: f  reason: collision with root package name */
+    private static final e0 f49105f = new e0("PARAM_CLAUSE_0");
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class a extends Lambda implements Function0 {
+    static final class a implements Function3 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f48696d = new a();
+        public static final a f49106d = new a();
 
         a() {
-            super(0);
         }
 
-        @Override // kotlin.jvm.functions.Function0
+        @Override // kotlin.jvm.functions.Function3
         /* renamed from: a */
-        public final DateTimeFormatter invoke() {
-            return new DateTimeFormatterBuilder().parseCaseInsensitive().appendOffset("+HHMM", "+0000").toFormatter();
+        public final Void invoke(Object obj, Object obj2, Object obj3) {
+            return null;
         }
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class b extends Lambda implements Function0 {
-
-        /* renamed from: d  reason: collision with root package name */
-        public static final b f48697d = new b();
-
-        b() {
-            super(0);
-        }
-
-        @Override // kotlin.jvm.functions.Function0
-        /* renamed from: a */
-        public final DateTimeFormatter invoke() {
-            return new DateTimeFormatterBuilder().parseCaseInsensitive().appendOffset("+HHmmss", "Z").toFormatter();
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class c extends Lambda implements Function0 {
-
-        /* renamed from: d  reason: collision with root package name */
-        public static final c f48698d = new c();
-
-        c() {
-            super(0);
-        }
-
-        @Override // kotlin.jvm.functions.Function0
-        /* renamed from: a */
-        public final DateTimeFormatter invoke() {
-            return new DateTimeFormatterBuilder().parseCaseInsensitive().appendOffsetId().toFormatter();
-        }
-    }
-
-    public static final k a(Integer num, Integer num2, Integer num3) {
-        int i10;
-        int i11 = 0;
-        try {
-            if (num != null) {
-                int intValue = num.intValue();
-                if (num2 != null) {
-                    i10 = num2.intValue();
-                } else {
-                    i10 = 0;
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final o a(int i10) {
+        if (i10 != 0) {
+            if (i10 != 1) {
+                if (i10 != 2) {
+                    if (i10 == 3) {
+                        return o.f49110o;
+                    }
+                    throw new IllegalStateException(("Unexpected internal result: " + i10).toString());
                 }
-                if (num3 != null) {
-                    i11 = num3.intValue();
-                }
-                ZoneOffset ofHoursMinutesSeconds = ZoneOffset.ofHoursMinutesSeconds(intValue, i10, i11);
-                Intrinsics.checkNotNullExpressionValue(ofHoursMinutesSeconds, "ofHoursMinutesSeconds(...)");
-                return new k(ofHoursMinutesSeconds);
-            } else if (num2 != null) {
-                int intValue2 = num2.intValue() / 60;
-                int intValue3 = num2.intValue() % 60;
-                if (num3 != null) {
-                    i11 = num3.intValue();
-                }
-                ZoneOffset ofHoursMinutesSeconds2 = ZoneOffset.ofHoursMinutesSeconds(intValue2, intValue3, i11);
-                Intrinsics.checkNotNullExpressionValue(ofHoursMinutesSeconds2, "ofHoursMinutesSeconds(...)");
-                return new k(ofHoursMinutesSeconds2);
-            } else {
-                if (num3 != null) {
-                    i11 = num3.intValue();
-                }
-                ZoneOffset ofTotalSeconds = ZoneOffset.ofTotalSeconds(i11);
-                Intrinsics.checkNotNullExpressionValue(ofTotalSeconds, "ofTotalSeconds(...)");
-                return new k(ofTotalSeconds);
+                return o.f49109i;
             }
-        } catch (DateTimeException e10) {
-            throw new IllegalArgumentException(e10);
+            return o.f49108e;
         }
+        return o.f49107d;
+    }
+
+    public static final e0 i() {
+        return f49105f;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final DateTimeFormatter f() {
-        return (DateTimeFormatter) f48695c.getValue();
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final DateTimeFormatter g() {
-        return (DateTimeFormatter) f48694b.getValue();
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final DateTimeFormatter h() {
-        return (DateTimeFormatter) f48693a.getValue();
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final k i(CharSequence charSequence, DateTimeFormatter dateTimeFormatter) {
-        try {
-            return new k((ZoneOffset) dateTimeFormatter.parse(charSequence, new TemporalQuery() { // from class: rs.l
-                @Override // j$.time.temporal.TemporalQuery
-                public final Object queryFrom(TemporalAccessor temporalAccessor) {
-                    return ZoneOffset.from(temporalAccessor);
-                }
-            }));
-        } catch (DateTimeException e10) {
-            throw new rs.b(e10);
+    public static final boolean j(CancellableContinuation cancellableContinuation, Function3 function3) {
+        Object t10 = cancellableContinuation.t(Unit.f32464a, null, function3);
+        if (t10 == null) {
+            return false;
         }
+        cancellableContinuation.w(t10);
+        return true;
     }
 }

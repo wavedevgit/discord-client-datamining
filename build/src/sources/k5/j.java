@@ -12,35 +12,35 @@ public abstract class j {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f32778a;
+        public static final /* synthetic */ int[] f32176a;
 
         static {
             int[] iArr = new int[h5.h.values().length];
             try {
-                iArr[h5.h.f27542d.ordinal()] = 1;
+                iArr[h5.h.f26827d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[h5.h.f27543e.ordinal()] = 2;
+                iArr[h5.h.f26828e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
-            f32778a = iArr;
+            f32176a = iArr;
         }
     }
 
     public static final long a(BufferedSource bufferedSource, ByteString byteString, long j10, long j11) {
         if (byteString.G() > 0) {
-            byte k10 = byteString.k(0);
+            byte j12 = byteString.j(0);
             long G = j11 - byteString.G();
-            long j12 = j10;
-            while (j12 < G) {
+            long j13 = j10;
+            while (j13 < G) {
                 BufferedSource bufferedSource2 = bufferedSource;
-                long c02 = bufferedSource2.c0(k10, j12, G);
-                if (c02 != -1 && !bufferedSource2.q0(c02, byteString)) {
-                    j12 = c02 + 1;
+                long b02 = bufferedSource2.b0(j12, j13, G);
+                if (b02 != -1 && !bufferedSource2.p0(b02, byteString)) {
+                    j13 = b02 + 1;
                     bufferedSource = bufferedSource2;
                 } else {
-                    return c02;
+                    return b02;
                 }
             }
             return -1L;
@@ -62,14 +62,14 @@ public abstract class j {
 
     public static final float c(h5.c cVar, h5.h hVar) {
         if (cVar instanceof c.a) {
-            return ((c.a) cVar).f27531a;
+            return ((c.a) cVar).f26816a;
         }
-        int i10 = a.f32778a[hVar.ordinal()];
+        int i10 = a.f32176a[hVar.ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
                 return Float.MAX_VALUE;
             }
-            throw new jr.p();
+            throw new lr.p();
         }
         return Float.MIN_VALUE;
     }

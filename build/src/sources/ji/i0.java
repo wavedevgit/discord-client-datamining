@@ -11,7 +11,7 @@ public abstract class i0 implements Comparator {
     }
 
     public static i0 b() {
-        return f0.f31847d;
+        return f0.f31643d;
     }
 
     public i0 c(ii.f fVar) {
@@ -21,7 +21,7 @@ public abstract class i0 implements Comparator {
     @Override // java.util.Comparator
     public abstract int compare(Object obj, Object obj2);
 
-    public i0 g() {
+    public i0 h() {
         return new o0(this);
     }
 }

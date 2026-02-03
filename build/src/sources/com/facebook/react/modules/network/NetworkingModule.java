@@ -26,14 +26,14 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-import jr.c;
-import ju.m;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.StringsKt;
+import lr.c;
+import lu.m;
 import okhttp3.Call;
 import okhttp3.CookieJar;
 import okhttp3.Headers;
@@ -47,8 +47,8 @@ import okhttp3.Response;
 import okhttp3.ResponseBody;
 import okio.ByteString;
 import org.jetbrains.annotations.NotNull;
-import ut.b;
-import ut.i;
+import wt.b;
+import wt.i;
 @ReactModule(name = "Networking")
 @Metadata(d1 = {"\u0000\u009e\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010#\n\u0002\u0010\b\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0012\n\u0002\u0010\u0006\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\b\b\u0007\u0018\u0000 `2\u00020\u0001:\u0005\\]^_`B1\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u000e\u0010\b\u001a\n\u0012\u0004\u0012\u00020\n\u0018\u00010\t¢\u0006\u0004\b\u000b\u0010\fB#\b\u0010\u0012\u0006\u0010\r\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007¢\u0006\u0004\b\u000b\u0010\u000eB\u0011\b\u0016\u0012\u0006\u0010\r\u001a\u00020\u0003¢\u0006\u0004\b\u000b\u0010\u000fB!\b\u0016\u0012\u0006\u0010\r\u001a\u00020\u0003\u0012\u000e\u0010\b\u001a\n\u0012\u0004\u0012\u00020\n\u0018\u00010\t¢\u0006\u0004\b\u000b\u0010\u0010B\u001b\b\u0016\u0012\u0006\u0010\r\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\u0004\b\u000b\u0010\u0011J\b\u0010\"\u001a\u00020#H\u0016J\b\u0010$\u001a\u00020#H\u0016J\u0015\u0010%\u001a\u00020#2\u0006\u0010&\u001a\u00020\u001dH\u0000¢\u0006\u0002\b'J\u0015\u0010(\u001a\u00020#2\u0006\u0010&\u001a\u00020\u001bH\u0000¢\u0006\u0002\b)J\u0015\u0010*\u001a\u00020#2\u0006\u0010&\u001a\u00020\u001fH\u0000¢\u0006\u0002\b+J\u0015\u0010,\u001a\u00020#2\u0006\u0010&\u001a\u00020\u001dH\u0000¢\u0006\u0002\b-J\u0015\u0010.\u001a\u00020#2\u0006\u0010&\u001a\u00020\u001bH\u0000¢\u0006\u0002\b/J\u0015\u00100\u001a\u00020#2\u0006\u0010&\u001a\u00020\u001fH\u0000¢\u0006\u0002\b1JT\u00102\u001a\u00020#2\u0006\u00103\u001a\u00020\u00052\u0006\u00104\u001a\u00020\u00052\u0006\u00105\u001a\u0002062\b\u00107\u001a\u0004\u0018\u0001082\b\u00109\u001a\u0004\u0018\u00010:2\u0006\u0010;\u001a\u00020\u00052\u0006\u0010<\u001a\u00020!2\u0006\u0010=\u001a\u0002062\u0006\u0010>\u001a\u00020!H\u0016JT\u0010?\u001a\u00020#2\u0006\u00103\u001a\u00020\u00052\b\u00104\u001a\u0004\u0018\u00010\u00052\u0006\u0010@\u001a\u00020\u00182\b\u00107\u001a\u0004\u0018\u0001082\b\u00109\u001a\u0004\u0018\u00010:2\u0006\u0010;\u001a\u00020\u00052\u0006\u0010<\u001a\u00020!2\u0006\u0010A\u001a\u00020\u00182\u0006\u0010>\u001a\u00020!J\u001c\u0010B\u001a\u0004\u0018\u00010C2\b\u0010D\u001a\u0004\u0018\u00010C2\u0006\u0010@\u001a\u00020\u0018H\u0002J\u0018\u0010E\u001a\u00020#2\u0006\u0010@\u001a\u00020\u00182\u0006\u0010F\u001a\u00020GH\u0002J\u0010\u0010H\u001a\u00020#2\u0006\u0010@\u001a\u00020\u0018H\u0002J\u0010\u0010I\u001a\u00020#2\u0006\u0010@\u001a\u00020\u0018H\u0002J\b\u0010J\u001a\u00020#H\u0002J\u0010\u0010K\u001a\u00020#2\u0006\u00105\u001a\u000206H\u0016J\u0010\u0010L\u001a\u00020#2\u0006\u0010@\u001a\u00020\u0018H\u0002J\u0010\u0010M\u001a\u00020#2\u0006\u0010N\u001a\u00020OH\u0017J\u0012\u0010P\u001a\u00020#2\b\u0010Q\u001a\u0004\u0018\u00010\u0005H\u0016J\u0010\u0010R\u001a\u00020#2\u0006\u0010S\u001a\u000206H\u0016J\"\u0010T\u001a\u0004\u0018\u00010U2\u0006\u0010V\u001a\u0002082\u0006\u0010W\u001a\u00020\u00052\u0006\u0010@\u001a\u00020\u0018H\u0002J\u001e\u0010X\u001a\u0004\u0018\u00010Y2\b\u0010Z\u001a\u0004\u0018\u0001082\b\u0010[\u001a\u0004\u0018\u00010:H\u0002R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0013X\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u0004\u001a\u0004\u0018\u00010\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u0014\u001a\u0004\u0018\u00010\u0015X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00180\u0017X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u001b0\u001aX\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u001c\u001a\b\u0012\u0004\u0012\u00020\u001d0\u001aX\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u001e\u001a\b\u0012\u0004\u0012\u00020\u001f0\u001aX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010 \u001a\u00020!X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006a"}, d2 = {"Lcom/facebook/react/modules/network/NetworkingModule;", "Lcom/facebook/fbreact/specs/NativeNetworkingAndroidSpec;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "defaultUserAgent", "", "client", "Lokhttp3/OkHttpClient;", "networkInterceptorCreators", "", "Lcom/facebook/react/modules/network/NetworkInterceptorCreator;", "<init>", "(Lcom/facebook/react/bridge/ReactApplicationContext;Ljava/lang/String;Lokhttp3/OkHttpClient;Ljava/util/List;)V", "context", "(Lcom/facebook/react/bridge/ReactApplicationContext;Ljava/lang/String;Lokhttp3/OkHttpClient;)V", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "(Lcom/facebook/react/bridge/ReactApplicationContext;Ljava/util/List;)V", "(Lcom/facebook/react/bridge/ReactApplicationContext;Ljava/lang/String;)V", "cookieHandler", "Lcom/facebook/react/modules/network/ForwardingCookieHandler;", "cookieJarContainer", "Lcom/facebook/react/modules/network/CookieJarContainer;", "requestIds", "", "", "requestBodyHandlers", "", "Lcom/facebook/react/modules/network/NetworkingModule$RequestBodyHandler;", "uriHandlers", "Lcom/facebook/react/modules/network/NetworkingModule$UriHandler;", "responseHandlers", "Lcom/facebook/react/modules/network/NetworkingModule$ResponseHandler;", "shuttingDown", "", "initialize", "", "invalidate", "addUriHandler", "handler", "addUriHandler$ReactAndroid_release", "addRequestBodyHandler", "addRequestBodyHandler$ReactAndroid_release", "addResponseHandler", "addResponseHandler$ReactAndroid_release", "removeUriHandler", "removeUriHandler$ReactAndroid_release", "removeRequestBodyHandler", "removeRequestBodyHandler$ReactAndroid_release", "removeResponseHandler", "removeResponseHandler$ReactAndroid_release", "sendRequest", "method", "url", "requestIdAsDouble", "", "headers", "Lcom/facebook/react/bridge/ReadableArray;", "data", "Lcom/facebook/react/bridge/ReadableMap;", "responseType", "useIncrementalUpdates", "timeoutAsDouble", "withCredentials", "sendRequestInternal", "requestId", "timeout", "wrapRequestBodyWithProgressEmitter", "Lokhttp3/RequestBody;", "requestBody", "readWithProgress", "responseBody", "Lokhttp3/ResponseBody;", "addRequest", "removeRequest", "cancelAllRequests", "abortRequest", "cancelRequest", "clearCookies", "callback", "Lcom/facebook/react/bridge/Callback;", "addListener", "eventName", "removeListeners", "count", "constructMultipartBody", "Lokhttp3/MultipartBody$Builder;", "body", "contentType", "extractHeaders", "Lokhttp3/Headers;", "headersArray", "requestData", "UriHandler", "RequestBodyHandler", "ResponseHandler", "CustomClientBuilder", "Companion", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nNetworkingModule.kt\nKotlin\n*S Kotlin\n*F\n+ 1 NetworkingModule.kt\ncom/facebook/react/modules/network/NetworkingModule\n+ 2 OkHttpClient.kt\nokhttp3/OkHttpClient$Builder\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,847:1\n578#2:848\n1#3:849\n*S KotlinDebug\n*F\n+ 1 NetworkingModule.kt\ncom/facebook/react/modules/network/NetworkingModule\n*L\n296#1:848\n*E\n"})
@@ -140,8 +140,8 @@ public final class NetworkingModule extends NativeNetworkingAndroidSpec {
         }
     }
 
-    @c
     @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\bg\u0018\u00002\u00020\u0001ø\u0001\u0000\u0082\u0002\u0006\n\u0004\b!0\u0001¨\u0006\u0002À\u0006\u0001"}, d2 = {"Lcom/facebook/react/modules/network/NetworkingModule$CustomClientBuilder;", "Lcom/facebook/react/modules/network/CustomClientBuilder;", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+    @c
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface CustomClientBuilder extends com.facebook.react.modules.network.CustomClientBuilder {
     }
@@ -218,7 +218,7 @@ public final class NetworkingModule extends NativeNetworkingAndroidSpec {
         MediaType mediaType;
         ReactApplicationContext reactApplicationContextIfActiveOrWarn = getReactApplicationContextIfActiveOrWarn();
         MultipartBody.Builder builder = new MultipartBody.Builder(null, 1, null);
-        MediaType a10 = MediaType.f44213e.a(str);
+        MediaType a10 = MediaType.f44013e.a(str);
         if (a10 == null) {
             ResponseUtil.onRequestError(reactApplicationContextIfActiveOrWarn, i10, "Invalid media type.", null);
             return null;
@@ -238,7 +238,7 @@ public final class NetworkingModule extends NativeNetworkingAndroidSpec {
             }
             String c10 = extractHeaders.c(CONTENT_TYPE_HEADER_NAME);
             if (c10 != null) {
-                mediaType = MediaType.f44213e.a(c10);
+                mediaType = MediaType.f44013e.a(c10);
                 extractHeaders = extractHeaders.g().i(CONTENT_TYPE_HEADER_NAME).f();
             } else {
                 mediaType = null;
@@ -269,7 +269,7 @@ public final class NetworkingModule extends NativeNetworkingAndroidSpec {
                 builder.b(extractHeaders, RequestBodyUtil.create(mediaType, fileInputStream));
             } else {
                 ResponseUtil.onRequestError(reactApplicationContextIfActiveOrWarn, i10, "Unrecognized FormData part.", null);
-                Unit unit = Unit.f33074a;
+                Unit unit = Unit.f32464a;
             }
         }
         return builder;
@@ -518,7 +518,7 @@ public final class NetworkingModule extends NativeNetworkingAndroidSpec {
                 OkHttpClient.Builder D = this.client.D();
                 Companion.applyCustomBuilder(D);
                 if (!z11) {
-                    D.g(CookieJar.f44180b);
+                    D.g(CookieJar.f43980b);
                 }
                 if (z10) {
                     D.b(new Interceptor() { // from class: com.facebook.react.modules.network.NetworkingModule$sendRequestInternal$$inlined$-addNetworkInterceptor$1
@@ -532,7 +532,7 @@ public final class NetworkingModule extends NativeNetworkingAndroidSpec {
                                 final String str3 = responseType;
                                 final ReactApplicationContext reactApplicationContext = reactApplicationContextIfActiveOrWarn;
                                 final int i12 = i10;
-                                return a10.L0().b(new ProgressResponseBody(a11, new ProgressListener() { // from class: com.facebook.react.modules.network.NetworkingModule$sendRequestInternal$1$responseBody$1
+                                return a10.M0().b(new ProgressResponseBody(a11, new ProgressListener() { // from class: com.facebook.react.modules.network.NetworkingModule$sendRequestInternal$1$responseBody$1
                                     private long last = System.nanoTime();
 
                                     public final long getLast() {
@@ -603,7 +603,7 @@ public final class NetworkingModule extends NativeNetworkingAndroidSpec {
                                     return;
                                 }
                                 String string = readableMap.getString("string");
-                                MediaType a10 = MediaType.f44213e.a(c12);
+                                MediaType a10 = MediaType.f44013e.a(c12);
                                 if (RequestBodyUtil.isGzipEncoding(c13)) {
                                     if (a10 != null && string != null) {
                                         emptyBody = RequestBodyUtil.createGzip(a10, string);
@@ -640,12 +640,12 @@ public final class NetworkingModule extends NativeNetworkingAndroidSpec {
                                 }
                                 String string2 = readableMap.getString(REQUEST_BODY_KEY_BASE64);
                                 if (string2 != null) {
-                                    MediaType a11 = MediaType.f44213e.a(c12);
+                                    MediaType a11 = MediaType.f44013e.a(c12);
                                     if (a11 == null) {
                                         ResponseUtil.onRequestError(reactApplicationContextIfActiveOrWarn, i10, "Invalid content type specified: " + c12, null);
                                         return;
                                     }
-                                    ByteString a12 = ByteString.f44507o.a(string2);
+                                    ByteString a12 = ByteString.f44307o.a(string2);
                                     if (a12 == null) {
                                         ResponseUtil.onRequestError(reactApplicationContextIfActiveOrWarn, i10, "Request body base64 string was invalid", null);
                                         return;
@@ -671,7 +671,7 @@ public final class NetworkingModule extends NativeNetworkingAndroidSpec {
                                     ResponseUtil.onRequestError(reactApplicationContextIfActiveOrWarn, i10, "Could not retrieve file for uri " + string3, null);
                                     return;
                                 }
-                                emptyBody = RequestBodyUtil.create(MediaType.f44213e.a(c12), fileInputStream);
+                                emptyBody = RequestBodyUtil.create(MediaType.f44013e.a(c12), fileInputStream);
                             } else if (readableMap.hasKey(REQUEST_BODY_KEY_FORMDATA)) {
                                 if (c12 == null) {
                                     c12 = "multipart/form-data";
@@ -691,8 +691,8 @@ public final class NetworkingModule extends NativeNetworkingAndroidSpec {
                             }
                             l10.g(method, wrapRequestBodyWithProgressEmitter(emptyBody, i10));
                             addRequest(i10);
-                            c11.a(l10.b()).t0(new b() { // from class: com.facebook.react.modules.network.NetworkingModule$sendRequestInternal$2
-                                @Override // ut.b
+                            c11.a(l10.b()).M0(new b() { // from class: com.facebook.react.modules.network.NetworkingModule$sendRequestInternal$2
+                                @Override // wt.b
                                 public void onFailure(Call call, IOException e10) {
                                     boolean z12;
                                     Intrinsics.checkNotNullParameter(call, "call");
@@ -708,7 +708,7 @@ public final class NetworkingModule extends NativeNetworkingAndroidSpec {
                                     }
                                 }
 
-                                @Override // ut.b
+                                @Override // wt.b
                                 public void onResponse(Call call, Response response) {
                                     boolean z12;
                                     WritableMap translateHeaders;
@@ -730,13 +730,13 @@ public final class NetworkingModule extends NativeNetworkingAndroidSpec {
                                                 ResponseUtil.onRequestError(reactApplicationContextIfActiveOrWarn, i10, "Response body is null", null);
                                                 return;
                                             }
-                                            if (StringsKt.A("gzip", Response.E0(response, "Content-Encoding", null, 2, null), true)) {
+                                            if (StringsKt.A("gzip", Response.D0(response, "Content-Encoding", null, 2, null), true)) {
                                                 m mVar = new m(a13.source());
-                                                String E0 = Response.E0(response, "Content-Type", null, 2, null);
-                                                if (E0 != null) {
-                                                    mediaType = MediaType.f44213e.a(E0);
+                                                String D0 = Response.D0(response, "Content-Type", null, 2, null);
+                                                if (D0 != null) {
+                                                    mediaType = MediaType.f44013e.a(D0);
                                                 }
-                                                a13 = ResponseBody.Companion.b(mediaType, -1L, ju.b.a().b(mVar));
+                                                a13 = ResponseBody.Companion.b(mediaType, -1L, lu.b.a().b(mVar));
                                             }
                                             if (a13 != null) {
                                                 list = NetworkingModule.this.responseHandlers;
@@ -781,8 +781,8 @@ public final class NetworkingModule extends NativeNetworkingAndroidSpec {
                 emptyBody = RequestBodyUtil.getEmptyBody(method);
                 l10.g(method, wrapRequestBodyWithProgressEmitter(emptyBody, i10));
                 addRequest(i10);
-                c11.a(l10.b()).t0(new b() { // from class: com.facebook.react.modules.network.NetworkingModule$sendRequestInternal$2
-                    @Override // ut.b
+                c11.a(l10.b()).M0(new b() { // from class: com.facebook.react.modules.network.NetworkingModule$sendRequestInternal$2
+                    @Override // wt.b
                     public void onFailure(Call call, IOException e10) {
                         boolean z12;
                         Intrinsics.checkNotNullParameter(call, "call");
@@ -798,7 +798,7 @@ public final class NetworkingModule extends NativeNetworkingAndroidSpec {
                         }
                     }
 
-                    @Override // ut.b
+                    @Override // wt.b
                     public void onResponse(Call call, Response response) {
                         boolean z12;
                         WritableMap translateHeaders;
@@ -820,13 +820,13 @@ public final class NetworkingModule extends NativeNetworkingAndroidSpec {
                                     ResponseUtil.onRequestError(reactApplicationContextIfActiveOrWarn, i10, "Response body is null", null);
                                     return;
                                 }
-                                if (StringsKt.A("gzip", Response.E0(response, "Content-Encoding", null, 2, null), true)) {
+                                if (StringsKt.A("gzip", Response.D0(response, "Content-Encoding", null, 2, null), true)) {
                                     m mVar = new m(a13.source());
-                                    String E0 = Response.E0(response, "Content-Type", null, 2, null);
-                                    if (E0 != null) {
-                                        mediaType = MediaType.f44213e.a(E0);
+                                    String D0 = Response.D0(response, "Content-Type", null, 2, null);
+                                    if (D0 != null) {
+                                        mediaType = MediaType.f44013e.a(D0);
                                     }
-                                    a13 = ResponseBody.Companion.b(mediaType, -1L, ju.b.a().b(mVar));
+                                    a13 = ResponseBody.Companion.b(mediaType, -1L, lu.b.a().b(mVar));
                                 }
                                 if (a13 != null) {
                                     list = NetworkingModule.this.responseHandlers;

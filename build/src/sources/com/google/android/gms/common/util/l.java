@@ -11,24 +11,24 @@ import java.io.IOException;
 public abstract class l {
 
     /* renamed from: a  reason: collision with root package name */
-    private static String f14475a;
+    private static String f13443a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static int f14476b;
+    private static int f13444b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static Boolean f14477c;
+    private static Boolean f13445c;
 
     public static String a() {
         BufferedReader bufferedReader;
-        if (f14475a == null) {
+        if (f13443a == null) {
             if (Build.VERSION.SDK_INT >= 28) {
-                f14475a = Application.getProcessName();
+                f13443a = Application.getProcessName();
             } else {
-                int i10 = f14476b;
+                int i10 = f13444b;
                 if (i10 == 0) {
                     i10 = Process.myPid();
-                    f14476b = i10;
+                    f13444b = i10;
                 }
                 String str = null;
                 str = null;
@@ -61,14 +61,14 @@ public abstract class l {
                     }
                     j.a(bufferedReader);
                 }
-                f14475a = str;
+                f13443a = str;
             }
         }
-        return f14475a;
+        return f13443a;
     }
 
     public static boolean b() {
-        Boolean bool = f14477c;
+        Boolean bool = f13445c;
         if (bool == null) {
             if (k.f()) {
                 bool = Boolean.valueOf(Process.isIsolated());
@@ -85,7 +85,7 @@ public abstract class l {
                     bool = Boolean.FALSE;
                 }
             }
-            f14477c = bool;
+            f13445c = bool;
         }
         return bool.booleanValue();
     }

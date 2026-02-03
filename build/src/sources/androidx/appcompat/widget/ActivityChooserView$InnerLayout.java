@@ -7,11 +7,11 @@ import android.widget.LinearLayout;
 public class ActivityChooserView$InnerLayout extends LinearLayout {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final int[] f1464d = {16842964};
+    private static final int[] f1433d = {16842964};
 
     public ActivityChooserView$InnerLayout(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        v0 u10 = v0.u(context, attributeSet, f1464d);
+        v0 u10 = v0.u(context, attributeSet, f1433d);
         setBackgroundDrawable(u10.g(0));
         u10.x();
     }

@@ -12,25 +12,25 @@ import kotlin.text.StringsKt;
 public final class MediaType {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f44213e = new a(null);
+    public static final a f44013e = new a(null);
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Pattern f44214f = Pattern.compile("([a-zA-Z0-9-!#$%&'*+.^_`{|}~]+)/([a-zA-Z0-9-!#$%&'*+.^_`{|}~]+)");
+    private static final Pattern f44014f = Pattern.compile("([a-zA-Z0-9-!#$%&'*+.^_`{|}~]+)/([a-zA-Z0-9-!#$%&'*+.^_`{|}~]+)");
 
     /* renamed from: g  reason: collision with root package name */
-    private static final Pattern f44215g = Pattern.compile(";\\s*(?:([a-zA-Z0-9-!#$%&'*+.^_`{|}~]+)=(?:([a-zA-Z0-9-!#$%&'*+.^_`{|}~]+)|\"([^\"]*)\"))?");
+    private static final Pattern f44015g = Pattern.compile(";\\s*(?:([a-zA-Z0-9-!#$%&'*+.^_`{|}~]+)=(?:([a-zA-Z0-9-!#$%&'*+.^_`{|}~]+)|\"([^\"]*)\"))?");
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f44216a;
+    private final String f44016a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f44217b;
+    private final String f44017b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f44218c;
+    private final String f44018c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String[] f44219d;
+    private final String[] f44019d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -45,7 +45,7 @@ public final class MediaType {
 
         public final MediaType b(String str) {
             Intrinsics.checkNotNullParameter(str, "<this>");
-            Matcher matcher = MediaType.f44214f.matcher(str);
+            Matcher matcher = MediaType.f44014f.matcher(str);
             if (matcher.lookingAt()) {
                 String group = matcher.group(1);
                 Intrinsics.checkNotNullExpressionValue(group, "typeSubtype.group(1)");
@@ -59,7 +59,7 @@ public final class MediaType {
                 String lowerCase2 = group2.toLowerCase(US);
                 Intrinsics.checkNotNullExpressionValue(lowerCase2, "this as java.lang.String).toLowerCase(locale)");
                 ArrayList arrayList = new ArrayList();
-                Matcher matcher2 = MediaType.f44215g.matcher(str);
+                Matcher matcher2 = MediaType.f44015g.matcher(str);
                 int end = matcher.end();
                 while (end < str.length()) {
                     matcher2.region(end, str.length());
@@ -121,7 +121,7 @@ public final class MediaType {
     }
 
     public static final MediaType e(String str) {
-        return f44213e.b(str);
+        return f44013e.b(str);
     }
 
     public final Charset c(Charset charset) {
@@ -137,7 +137,7 @@ public final class MediaType {
     }
 
     public boolean equals(Object obj) {
-        if ((obj instanceof MediaType) && Intrinsics.areEqual(((MediaType) obj).f44216a, this.f44216a)) {
+        if ((obj instanceof MediaType) && Intrinsics.areEqual(((MediaType) obj).f44016a, this.f44016a)) {
             return true;
         }
         return false;
@@ -146,40 +146,40 @@ public final class MediaType {
     public final String f(String name) {
         Intrinsics.checkNotNullParameter(name, "name");
         int i10 = 0;
-        int c10 = rr.c.c(0, this.f44219d.length - 1, 2);
+        int c10 = tr.c.c(0, this.f44019d.length - 1, 2);
         if (c10 >= 0) {
-            while (!StringsKt.A(this.f44219d[i10], name, true)) {
+            while (!StringsKt.A(this.f44019d[i10], name, true)) {
                 if (i10 != c10) {
                     i10 += 2;
                 } else {
                     return null;
                 }
             }
-            return this.f44219d[i10 + 1];
+            return this.f44019d[i10 + 1];
         }
         return null;
     }
 
     public final String g() {
-        return this.f44218c;
+        return this.f44018c;
     }
 
     public final String h() {
-        return this.f44217b;
+        return this.f44017b;
     }
 
     public int hashCode() {
-        return this.f44216a.hashCode();
+        return this.f44016a.hashCode();
     }
 
     public String toString() {
-        return this.f44216a;
+        return this.f44016a;
     }
 
     private MediaType(String str, String str2, String str3, String[] strArr) {
-        this.f44216a = str;
-        this.f44217b = str2;
-        this.f44218c = str3;
-        this.f44219d = strArr;
+        this.f44016a = str;
+        this.f44017b = str2;
+        this.f44018c = str3;
+        this.f44019d = strArr;
     }
 }

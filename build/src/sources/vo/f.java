@@ -1,37 +1,32 @@
 package vo;
 
-import kotlin.coroutines.Continuation;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlinx.coroutines.flow.FlowCollector;
-import kotlinx.coroutines.flow.MutableSharedFlow;
+import com.withpersona.sdk2.inquiry.internal.fallbackmode.FallbackModeService;
+import lv.a0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class f implements ks.a0 {
+public final class f implements wq.d {
 
-    /* renamed from: e  reason: collision with root package name */
-    public static final a f51477e = new a(null);
+    /* renamed from: a  reason: collision with root package name */
+    private final com.withpersona.sdk2.inquiry.internal.network.f f51725a;
 
-    /* renamed from: i  reason: collision with root package name */
-    private static final MutableSharedFlow f51478i = ks.c0.b(0, 1, js.a.f32205e, 1, null);
+    /* renamed from: b  reason: collision with root package name */
+    private final wq.h f51726b;
 
-    /* renamed from: d  reason: collision with root package name */
-    private final /* synthetic */ MutableSharedFlow f51479d = f51478i;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
-
-        private a() {
-        }
+    public f(com.withpersona.sdk2.inquiry.internal.network.f fVar, wq.h hVar) {
+        this.f51725a = fVar;
+        this.f51726b = hVar;
     }
 
-    public final boolean a(int i10) {
-        return f51478i.b(Integer.valueOf(i10));
+    public static f a(com.withpersona.sdk2.inquiry.internal.network.f fVar, wq.h hVar) {
+        return new f(fVar, hVar);
     }
 
-    @Override // ks.a0, kotlinx.coroutines.flow.Flow
-    public Object collect(FlowCollector flowCollector, Continuation continuation) {
-        return this.f51479d.collect(flowCollector, continuation);
+    public static FallbackModeService b(com.withpersona.sdk2.inquiry.internal.network.f fVar, a0 a0Var) {
+        return (FallbackModeService) wq.g.d(fVar.b(a0Var));
+    }
+
+    @Override // javax.inject.Provider
+    /* renamed from: c */
+    public FallbackModeService get() {
+        return b(this.f51725a, (a0) this.f51726b.get());
     }
 }

@@ -5,30 +5,30 @@ import ui.c;
 final class za implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final za f46048a = new za();
+    static final za f46006a = new za();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f46049b;
+    private static final ui.c f46007b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f46050c;
+    private static final ui.c f46008c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f46051d;
+    private static final ui.c f46009d;
 
     static {
         c.b a10 = ui.c.a("languageOption");
         v1 v1Var = new v1();
         v1Var.a(3);
-        f46049b = a10.b(v1Var.b()).a();
+        f46007b = a10.b(v1Var.b()).a();
         c.b a11 = ui.c.a("isUsingLegacyApi");
         v1 v1Var2 = new v1();
         v1Var2.a(4);
-        f46050c = a11.b(v1Var2.b()).a();
+        f46008c = a11.b(v1Var2.b()).a();
         c.b a12 = ui.c.a("sdkVersion");
         v1 v1Var3 = new v1();
         v1Var3.a(5);
-        f46051d = a12.b(v1Var3.b()).a();
+        f46009d = a12.b(v1Var3.b()).a();
     }
 
     private za() {
@@ -37,8 +37,8 @@ final class za implements ui.d {
     @Override // ui.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         ui.e eVar = (ui.e) obj2;
-        eVar.b(f46049b, ((wh) obj).a());
-        eVar.b(f46050c, null);
-        eVar.b(f46051d, null);
+        eVar.b(f46007b, ((wh) obj).a());
+        eVar.b(f46008c, null);
+        eVar.b(f46009d, null);
     }
 }

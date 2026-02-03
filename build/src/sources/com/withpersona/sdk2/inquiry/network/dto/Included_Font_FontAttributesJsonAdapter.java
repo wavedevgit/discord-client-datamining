@@ -52,15 +52,15 @@ public final class Included_Font_FontAttributesJsonAdapter extends h {
         StyleElements.FontWeight fontWeight = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 fontWeight = (StyleElements.FontWeight) this.nullableFontWeightAdapter.fromJson(reader);
-            } else if (t02 == 2) {
+            } else if (A0 == 2) {
                 str2 = (String) this.nullableStringAdapter.fromJson(reader);
             }
         }
@@ -73,11 +73,11 @@ public final class Included_Font_FontAttributesJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (fontAttributes != null) {
             writer.l();
-            writer.t0("fontFamilyName");
+            writer.A0("fontFamilyName");
             this.nullableStringAdapter.toJson(writer, fontAttributes.getFontFamilyName());
-            writer.t0(ViewProps.FONT_WEIGHT);
+            writer.A0(ViewProps.FONT_WEIGHT);
             this.nullableFontWeightAdapter.toJson(writer, fontAttributes.getFontWeight());
-            writer.t0("url");
+            writer.A0("url");
             this.nullableStringAdapter.toJson(writer, fontAttributes.getUrl());
             writer.E();
             return;

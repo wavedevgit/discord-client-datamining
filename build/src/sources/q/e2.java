@@ -13,10 +13,10 @@ import java.util.Set;
 public final class e2 implements a0.b0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f46564a;
+    private final Map f46714a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final f f46565b;
+    private final f f46715b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements f {
@@ -43,14 +43,14 @@ public final class e2 implements a0.b0 {
         Iterator it = set.iterator();
         while (it.hasNext()) {
             String str = (String) it.next();
-            this.f46564a.put(str, new f4(context, str, n0Var, this.f46565b));
+            this.f46714a.put(str, new f4(context, str, n0Var, this.f46715b));
         }
     }
 
     @Override // a0.b0
     public Pair a(int i10, String str, List list, Map map, boolean z10, boolean z11) {
         b2.e.b(!map.isEmpty(), "No new use cases to be bound.");
-        f4 f4Var = (f4) this.f46564a.get(str);
+        f4 f4Var = (f4) this.f46714a.get(str);
         if (f4Var != null) {
             return f4Var.A(i10, list, map, z10, z11);
         }
@@ -59,7 +59,7 @@ public final class e2 implements a0.b0 {
 
     @Override // a0.b0
     public a0.o2 b(int i10, String str, int i11, Size size) {
-        f4 f4Var = (f4) this.f46564a.get(str);
+        f4 f4Var = (f4) this.f46714a.get(str);
         if (f4Var != null) {
             return f4Var.M(i10, i11, size);
         }
@@ -68,9 +68,9 @@ public final class e2 implements a0.b0 {
 
     e2(Context context, f fVar, Object obj, Set set) {
         r.n0 a10;
-        this.f46564a = new HashMap();
+        this.f46714a = new HashMap();
         b2.e.g(fVar);
-        this.f46565b = fVar;
+        this.f46715b = fVar;
         if (obj instanceof r.n0) {
             a10 = (r.n0) obj;
         } else {

@@ -23,7 +23,7 @@ public final class EmojiPickerRow {
         private final boolean disabled;
 
         /* renamed from: id  reason: collision with root package name */
-        private final String f9956id;
+        private final String f8924id;
         @NotNull
         private final String name;
         @NotNull
@@ -32,7 +32,7 @@ public final class EmojiPickerRow {
         public Emoji(String str, @NotNull String name, @NotNull String url, boolean z10, boolean z11) {
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(url, "url");
-            this.f9956id = str;
+            this.f8924id = str;
             this.name = name;
             this.url = url;
             this.animated = z10;
@@ -41,7 +41,7 @@ public final class EmojiPickerRow {
 
         public static /* synthetic */ Emoji copy$default(Emoji emoji, String str, String str2, String str3, boolean z10, boolean z11, int i10, Object obj) {
             if ((i10 & 1) != 0) {
-                str = emoji.f9956id;
+                str = emoji.f8924id;
             }
             if ((i10 & 2) != 0) {
                 str2 = emoji.name;
@@ -61,7 +61,7 @@ public final class EmojiPickerRow {
         }
 
         public final String component1() {
-            return this.f9956id;
+            return this.f8924id;
         }
 
         @NotNull
@@ -95,7 +95,7 @@ public final class EmojiPickerRow {
             }
             if (obj instanceof Emoji) {
                 Emoji emoji = (Emoji) obj;
-                return Intrinsics.areEqual(this.f9956id, emoji.f9956id) && Intrinsics.areEqual(this.name, emoji.name) && Intrinsics.areEqual(this.url, emoji.url) && this.animated == emoji.animated && this.disabled == emoji.disabled;
+                return Intrinsics.areEqual(this.f8924id, emoji.f8924id) && Intrinsics.areEqual(this.name, emoji.name) && Intrinsics.areEqual(this.url, emoji.url) && this.animated == emoji.animated && this.disabled == emoji.disabled;
             }
             return false;
         }
@@ -109,7 +109,7 @@ public final class EmojiPickerRow {
         }
 
         public final String getId() {
-            return this.f9956id;
+            return this.f8924id;
         }
 
         @NotNull
@@ -123,13 +123,13 @@ public final class EmojiPickerRow {
         }
 
         public int hashCode() {
-            String str = this.f9956id;
+            String str = this.f8924id;
             return ((((((((str == null ? 0 : str.hashCode()) * 31) + this.name.hashCode()) * 31) + this.url.hashCode()) * 31) + Boolean.hashCode(this.animated)) * 31) + Boolean.hashCode(this.disabled);
         }
 
         @NotNull
         public String toString() {
-            String str = this.f9956id;
+            String str = this.f8924id;
             String str2 = this.name;
             String str3 = this.url;
             boolean z10 = this.animated;

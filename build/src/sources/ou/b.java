@@ -1,64 +1,47 @@
 package ou;
 
 import java.util.List;
-import java.util.Map;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Intrinsics;
-import ou.d;
+import kotlin.collections.CollectionsKt;
+import kotlin.text.StringsKt;
+import ou.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b implements lu.a, d {
+public interface b extends ou.a {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final b f44863a = new b();
-
-    private b() {
-    }
-
-    @Override // nu.f
-    public Object b(Object obj, Object obj2, h hVar, Function2 function2) {
-        return d.a.f(this, obj, obj2, hVar, function2);
-    }
-
-    @Override // nu.a
-    public nu.b c(List list, Object obj, h hVar) {
-        return d.a.c(this, list, obj, hVar);
-    }
-
-    @Override // ou.d
-    public Object d(c data, h evaluator) {
-        Intrinsics.checkNotNullParameter(data, "data");
-        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-        for (Object obj : data.b()) {
-            if (f44863a.i(evaluator.a(data.a(), obj))) {
-                return Boolean.FALSE;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public static List a(b bVar, Comparable comparable, Comparable comparable2) {
+            boolean z10 = comparable instanceof Number;
+            if (z10 && (comparable2 instanceof Number)) {
+                return CollectionsKt.o(Double.valueOf(((Number) comparable).doubleValue()), Double.valueOf(((Number) comparable2).doubleValue()));
             }
+            if ((comparable instanceof String) && (comparable2 instanceof Number)) {
+                return CollectionsKt.o(StringsKt.p((String) comparable), Double.valueOf(((Number) comparable2).doubleValue()));
+            }
+            if (z10 && (comparable2 instanceof String)) {
+                return CollectionsKt.o(Double.valueOf(((Number) comparable).doubleValue()), StringsKt.p((String) comparable2));
+            }
+            if (!(comparable instanceof Boolean) && !(comparable2 instanceof Boolean)) {
+                return bVar.d(comparable, comparable2);
+            }
+            return CollectionsKt.o(bVar.c(comparable), bVar.c(comparable2));
         }
-        return data.c();
+
+        public static List b(b bVar, Comparable comparable, Comparable comparable2) {
+            if (comparable != null && comparable2 != null && comparable.getClass() == comparable2.getClass()) {
+                return CollectionsKt.o(comparable, comparable2);
+            }
+            if (comparable == null && comparable2 == null) {
+                return CollectionsKt.o((Void) comparable, (Void) comparable2);
+            }
+            return null;
+        }
+
+        public static Boolean c(b bVar, Object obj) {
+            return a.C0553a.a(bVar, obj);
+        }
     }
 
-    @Override // lu.a
-    public Object e(Object obj, Object obj2, h evaluator) {
-        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-        return g(obj, obj2, evaluator);
-    }
+    List d(Comparable comparable, Comparable comparable2);
 
-    @Override // pv.a
-    public List f(List list, Object obj, h hVar) {
-        return d.a.h(this, list, obj, hVar);
-    }
-
-    public Object g(Object obj, Object obj2, h hVar) {
-        return d.a.b(this, obj, obj2, hVar);
-    }
-
-    @Override // nu.a
-    /* renamed from: h */
-    public Boolean a(Map map, List expressionValues) {
-        Intrinsics.checkNotNullParameter(expressionValues, "expressionValues");
-        return Boolean.TRUE;
-    }
-
-    public boolean i(Object obj) {
-        return d.a.i(this, obj);
-    }
+    List g(Comparable comparable, Comparable comparable2);
 }

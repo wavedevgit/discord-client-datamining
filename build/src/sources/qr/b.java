@@ -1,77 +1,17 @@
 package qr;
 
-import java.io.Serializable;
-import kotlin.collections.d;
-import kotlin.collections.i;
-import kotlin.enums.EnumEntries;
+import kotlin.Result;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
-/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b extends d implements EnumEntries, Serializable {
-
-    /* renamed from: e  reason: collision with root package name */
-    private final Enum[] f47829e;
-
-    public b(Enum[] entries) {
-        Intrinsics.checkNotNullParameter(entries, "entries");
-        this.f47829e = entries;
-    }
-
-    @Override // kotlin.collections.b
-    public int c() {
-        return this.f47829e.length;
-    }
-
-    @Override // kotlin.collections.b, java.util.Collection, java.util.List
-    public final /* bridge */ boolean contains(Object obj) {
-        if (!(obj instanceof Enum)) {
-            return false;
-        }
-        return e((Enum) obj);
-    }
-
-    public boolean e(Enum element) {
-        Intrinsics.checkNotNullParameter(element, "element");
-        if (((Enum) i.c0(this.f47829e, element.ordinal())) == element) {
-            return true;
-        }
-        return false;
-    }
-
-    @Override // kotlin.collections.d, java.util.List
-    /* renamed from: f */
-    public Enum get(int i10) {
-        d.f33108d.b(i10, this.f47829e.length);
-        return this.f47829e[i10];
-    }
-
-    public int g(Enum element) {
-        Intrinsics.checkNotNullParameter(element, "element");
-        int ordinal = element.ordinal();
-        if (((Enum) i.c0(this.f47829e, ordinal)) == element) {
-            return ordinal;
-        }
-        return -1;
-    }
-
-    public int h(Enum element) {
-        Intrinsics.checkNotNullParameter(element, "element");
-        return indexOf(element);
-    }
-
-    @Override // kotlin.collections.d, java.util.List
-    public final /* bridge */ int indexOf(Object obj) {
-        if (!(obj instanceof Enum)) {
-            return -1;
-        }
-        return g((Enum) obj);
-    }
-
-    @Override // kotlin.collections.d, java.util.List
-    public final /* bridge */ int lastIndexOf(Object obj) {
-        if (!(obj instanceof Enum)) {
-            return -1;
-        }
-        return h((Enum) obj);
+public abstract class b {
+    public static final void a(Function2 function2, Object obj, Continuation completion) {
+        Intrinsics.checkNotNullParameter(function2, "<this>");
+        Intrinsics.checkNotNullParameter(completion, "completion");
+        Continuation c10 = rr.b.c(rr.b.a(function2, obj, completion));
+        Result.a aVar = Result.f32461e;
+        c10.resumeWith(Result.b(Unit.f32464a));
     }
 }

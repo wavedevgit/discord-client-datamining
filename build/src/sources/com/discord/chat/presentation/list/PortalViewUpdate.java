@@ -25,7 +25,7 @@ public final class PortalViewUpdate extends ChannelChatListAdapterUpdate {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
                 return unit;
             }
         }, null);
@@ -35,7 +35,7 @@ public final class PortalViewUpdate extends ChannelChatListAdapterUpdate {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit _init_$lambda$0(boolean z10) {
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public static /* synthetic */ PortalViewUpdate copy$default(PortalViewUpdate portalViewUpdate, PortalViewChatListItem portalViewChatListItem, int i10, int i11, Object obj) {

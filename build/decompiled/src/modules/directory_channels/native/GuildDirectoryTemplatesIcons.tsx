@@ -51,4 +51,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.GUILD_TEMPLATE_ICONS = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8936, 8937, 8938, 8939, 8940, 8941, 8942, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8955, 8956, 8957, 8958, 8959, 8960, 8961, 2]);

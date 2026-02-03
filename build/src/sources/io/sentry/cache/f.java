@@ -37,23 +37,23 @@ import java.util.concurrent.TimeUnit;
 public class f extends c implements g {
 
     /* renamed from: q  reason: collision with root package name */
-    private final CountDownLatch f29378q;
+    private final CountDownLatch f29739q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final Map f29379r;
+    private final Map f29740r;
 
     /* renamed from: s  reason: collision with root package name */
-    protected final io.sentry.util.a f29380s;
+    protected final io.sentry.util.a f29741s;
 
     /* renamed from: t  reason: collision with root package name */
-    protected final io.sentry.util.a f29381t;
+    protected final io.sentry.util.a f29742t;
 
     public f(k7 k7Var, String str, int i10) {
         super(k7Var, str, i10);
-        this.f29379r = new WeakHashMap();
-        this.f29380s = new io.sentry.util.a();
-        this.f29381t = new io.sentry.util.a();
-        this.f29378q = new CountDownLatch(1);
+        this.f29740r = new WeakHashMap();
+        this.f29741s = new io.sentry.util.a();
+        this.f29742t = new io.sentry.util.a();
+        this.f29739q = new CountDownLatch(1);
     }
 
     private void A(File file, l5 l5Var) {
@@ -62,51 +62,51 @@ public class f extends c implements g {
             l6 l6Var = (l6) c10.iterator().next();
             if (v6.Session.equals(l6Var.K().b())) {
                 try {
-                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(l6Var.I()), c.f29372p));
-                    z7 z7Var = (z7) ((b1) this.f29374e.a()).c(bufferedReader, z7.class);
+                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(l6Var.I()), c.f29733p));
+                    z7 z7Var = (z7) ((b1) this.f29735e.a()).c(bufferedReader, z7.class);
                     if (z7Var == null) {
-                        this.f29373d.getLogger().c(SentryLevel.ERROR, "Item of type %s returned null by the parser.", l6Var.K().b());
+                        this.f29734d.getLogger().c(SentryLevel.ERROR, "Item of type %s returned null by the parser.", l6Var.K().b());
                     } else {
                         H(file, z7Var);
                     }
                     bufferedReader.close();
                     return;
                 } catch (Throwable th2) {
-                    this.f29373d.getLogger().b(SentryLevel.ERROR, "Item failed to process.", th2);
+                    this.f29734d.getLogger().b(SentryLevel.ERROR, "Item failed to process.", th2);
                     return;
                 }
             }
-            this.f29373d.getLogger().c(SentryLevel.INFO, "Current envelope has a different envelope type %s", l6Var.K().b());
+            this.f29734d.getLogger().c(SentryLevel.INFO, "Current envelope has a different envelope type %s", l6Var.K().b());
             return;
         }
-        this.f29373d.getLogger().c(SentryLevel.INFO, "Current envelope %s is empty", file.getAbsolutePath());
+        this.f29734d.getLogger().c(SentryLevel.INFO, "Current envelope %s is empty", file.getAbsolutePath());
     }
 
     private void D() {
         try {
-            FileOutputStream fileOutputStream = new FileOutputStream(new File(this.f29373d.getCacheDirPath(), "last_crash"));
-            fileOutputStream.write(io.sentry.k.h(io.sentry.k.d()).getBytes(c.f29372p));
+            FileOutputStream fileOutputStream = new FileOutputStream(new File(this.f29734d.getCacheDirPath(), "last_crash"));
+            fileOutputStream.write(io.sentry.k.h(io.sentry.k.d()).getBytes(c.f29733p));
             fileOutputStream.flush();
             fileOutputStream.close();
         } catch (Throwable th2) {
-            this.f29373d.getLogger().b(SentryLevel.ERROR, "Error writing the crash marker file to the disk", th2);
+            this.f29734d.getLogger().b(SentryLevel.ERROR, "Error writing the crash marker file to the disk", th2);
         }
     }
 
     private boolean G(File file, l5 l5Var) {
         if (file.exists()) {
-            this.f29373d.getLogger().c(SentryLevel.DEBUG, "Overwriting envelope to offline storage: %s", file.getAbsolutePath());
+            this.f29734d.getLogger().c(SentryLevel.DEBUG, "Overwriting envelope to offline storage: %s", file.getAbsolutePath());
             if (!file.delete()) {
-                this.f29373d.getLogger().c(SentryLevel.ERROR, "Failed to delete: %s", file.getAbsolutePath());
+                this.f29734d.getLogger().c(SentryLevel.ERROR, "Failed to delete: %s", file.getAbsolutePath());
             }
         }
         try {
             FileOutputStream fileOutputStream = new FileOutputStream(file);
-            ((b1) this.f29374e.a()).b(l5Var, fileOutputStream);
+            ((b1) this.f29735e.a()).b(l5Var, fileOutputStream);
             fileOutputStream.close();
             return true;
         } catch (Throwable th2) {
-            this.f29373d.getLogger().a(SentryLevel.ERROR, th2, "Error writing Envelope %s to offline storage", file.getAbsolutePath());
+            this.f29734d.getLogger().a(SentryLevel.ERROR, th2, "Error writing Envelope %s to offline storage", file.getAbsolutePath());
             return false;
         }
     }
@@ -114,10 +114,10 @@ public class f extends c implements g {
     private void H(File file, z7 z7Var) {
         try {
             FileOutputStream fileOutputStream = new FileOutputStream(file);
-            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(fileOutputStream, c.f29372p));
+            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(fileOutputStream, c.f29733p));
             try {
-                this.f29373d.getLogger().c(SentryLevel.DEBUG, "Overwriting session to offline storage: %s", z7Var.j());
-                ((b1) this.f29374e.a()).a(z7Var, bufferedWriter);
+                this.f29734d.getLogger().c(SentryLevel.DEBUG, "Overwriting session to offline storage: %s", z7Var.j());
+                ((b1) this.f29735e.a()).a(z7Var, bufferedWriter);
                 bufferedWriter.close();
                 fileOutputStream.close();
             } catch (Throwable th2) {
@@ -129,13 +129,13 @@ public class f extends c implements g {
                 throw th2;
             }
         } catch (Throwable th4) {
-            this.f29373d.getLogger().a(SentryLevel.ERROR, th4, "Error writing Session to offline storage: %s", z7Var.j());
+            this.f29734d.getLogger().a(SentryLevel.ERROR, th4, "Error writing Session to offline storage: %s", z7Var.j());
         }
     }
 
     private File[] r() {
         File[] listFiles;
-        if (f() && (listFiles = this.f29375i.listFiles(new FilenameFilter() { // from class: io.sentry.cache.e
+        if (f() && (listFiles = this.f29736i.listFiles(new FilenameFilter() { // from class: io.sentry.cache.e
             @Override // java.io.FilenameFilter
             public final boolean accept(File file, String str) {
                 boolean endsWith;
@@ -164,16 +164,16 @@ public class f extends c implements g {
 
     private File v(l5 l5Var) {
         String str;
-        a1 a10 = this.f29380s.a();
+        a1 a10 = this.f29741s.a();
         try {
-            if (this.f29379r.containsKey(l5Var)) {
-                str = (String) this.f29379r.get(l5Var);
+            if (this.f29740r.containsKey(l5Var)) {
+                str = (String) this.f29740r.get(l5Var);
             } else {
                 String str2 = x7.a() + ".envelope";
-                this.f29379r.put(l5Var, str2);
+                this.f29740r.put(l5Var, str2);
                 str = str2;
             }
-            File file = new File(this.f29375i.getAbsolutePath(), str);
+            File file = new File(this.f29736i.getAbsolutePath(), str);
             if (a10 != null) {
                 a10.close();
             }
@@ -197,10 +197,10 @@ public class f extends c implements g {
     private boolean y(l5 l5Var, Hint hint) {
         y.c(l5Var, "Envelope is required.");
         n(r());
-        File u10 = u(this.f29375i.getAbsolutePath());
-        File w10 = w(this.f29375i.getAbsolutePath());
+        File u10 = u(this.f29736i.getAbsolutePath());
+        File w10 = w(this.f29736i.getAbsolutePath());
         if (io.sentry.util.n.h(hint, io.sentry.hints.l.class) && !u10.delete()) {
-            this.f29373d.getLogger().c(SentryLevel.WARNING, "Current envelope doesn't exist.", new Object[0]);
+            this.f29734d.getLogger().c(SentryLevel.WARNING, "Current envelope doesn't exist.", new Object[0]);
         }
         if (io.sentry.util.n.h(hint, io.sentry.hints.a.class)) {
             z(hint);
@@ -208,13 +208,13 @@ public class f extends c implements g {
         if (io.sentry.util.n.h(hint, io.sentry.hints.n.class)) {
             x(u10, w10);
             A(u10, l5Var);
-            boolean exists = new File(this.f29373d.getCacheDirPath(), ".sentry-native/last_crash").exists();
+            boolean exists = new File(this.f29734d.getCacheDirPath(), ".sentry-native/last_crash").exists();
             if (!exists) {
-                File file = new File(this.f29373d.getCacheDirPath(), "last_crash");
+                File file = new File(this.f29734d.getCacheDirPath(), "last_crash");
                 if (file.exists()) {
-                    this.f29373d.getLogger().c(SentryLevel.INFO, "Crash marker file exists, crashedLastRun will return true.", new Object[0]);
+                    this.f29734d.getLogger().c(SentryLevel.INFO, "Crash marker file exists, crashedLastRun will return true.", new Object[0]);
                     if (!file.delete()) {
-                        this.f29373d.getLogger().c(SentryLevel.ERROR, "Failed to delete the crash marker file. %s.", file.getAbsolutePath());
+                        this.f29734d.getLogger().c(SentryLevel.ERROR, "Failed to delete the crash marker file. %s.", file.getAbsolutePath());
                     }
                     exists = true;
                 }
@@ -224,10 +224,10 @@ public class f extends c implements g {
         }
         File v10 = v(l5Var);
         if (v10.exists()) {
-            this.f29373d.getLogger().c(SentryLevel.WARNING, "Not adding Envelope to offline storage because it already exists: %s", v10.getAbsolutePath());
+            this.f29734d.getLogger().c(SentryLevel.WARNING, "Not adding Envelope to offline storage because it already exists: %s", v10.getAbsolutePath());
             return true;
         }
-        this.f29373d.getLogger().c(SentryLevel.DEBUG, "Adding Envelope to offline storage: %s", v10.getAbsolutePath());
+        this.f29734d.getLogger().c(SentryLevel.DEBUG, "Adding Envelope to offline storage: %s", v10.getAbsolutePath());
         boolean G = G(v10, l5Var);
         if (io.sentry.util.n.h(hint, UncaughtExceptionHandlerIntegration.a.class)) {
             D();
@@ -239,14 +239,14 @@ public class f extends c implements g {
         Date date;
         Object g10 = io.sentry.util.n.g(hint);
         if (g10 instanceof io.sentry.hints.a) {
-            File w10 = w(this.f29375i.getAbsolutePath());
+            File w10 = w(this.f29736i.getAbsolutePath());
             if (w10.exists()) {
-                ILogger logger = this.f29373d.getLogger();
+                ILogger logger = this.f29734d.getLogger();
                 SentryLevel sentryLevel = SentryLevel.WARNING;
                 logger.c(sentryLevel, "Previous session is not ended, we'd need to end it.", new Object[0]);
                 try {
-                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(w10), c.f29372p));
-                    z7 z7Var = (z7) ((b1) this.f29374e.a()).c(bufferedReader, z7.class);
+                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(w10), c.f29733p));
+                    z7 z7Var = (z7) ((b1) this.f29735e.a()).c(bufferedReader, z7.class);
                     if (z7Var != null) {
                         io.sentry.hints.a aVar = (io.sentry.hints.a) g10;
                         Long e10 = aVar.e();
@@ -257,7 +257,7 @@ public class f extends c implements g {
                                 if (date.before(k10)) {
                                 }
                             }
-                            this.f29373d.getLogger().c(sentryLevel, "Abnormal exit happened before previous session start, not ending the session.", new Object[0]);
+                            this.f29734d.getLogger().c(sentryLevel, "Abnormal exit happened before previous session start, not ending the session.", new Object[0]);
                         } else {
                             date = null;
                         }
@@ -268,20 +268,20 @@ public class f extends c implements g {
                     bufferedReader.close();
                     return;
                 } catch (Throwable th2) {
-                    this.f29373d.getLogger().b(SentryLevel.ERROR, "Error processing previous session.", th2);
+                    this.f29734d.getLogger().b(SentryLevel.ERROR, "Error processing previous session.", th2);
                     return;
                 }
             }
-            this.f29373d.getLogger().c(SentryLevel.DEBUG, "No previous session file to end.", new Object[0]);
+            this.f29734d.getLogger().c(SentryLevel.DEBUG, "No previous session file to end.", new Object[0]);
         }
     }
 
     public boolean C() {
         try {
-            return this.f29378q.await(this.f29373d.getSessionFlushTimeoutMillis(), TimeUnit.MILLISECONDS);
+            return this.f29739q.await(this.f29734d.getSessionFlushTimeoutMillis(), TimeUnit.MILLISECONDS);
         } catch (InterruptedException unused) {
             Thread.currentThread().interrupt();
-            this.f29373d.getLogger().c(SentryLevel.DEBUG, "Timed out waiting for previous session to flush.", new Object[0]);
+            this.f29734d.getLogger().c(SentryLevel.DEBUG, "Timed out waiting for previous session to flush.", new Object[0]);
             return false;
         }
     }
@@ -291,13 +291,13 @@ public class f extends c implements g {
         y.c(l5Var, "Envelope is required.");
         File v10 = v(l5Var);
         if (v10.delete()) {
-            this.f29373d.getLogger().c(SentryLevel.DEBUG, "Discarding envelope from cache: %s", v10.getAbsolutePath());
+            this.f29734d.getLogger().c(SentryLevel.DEBUG, "Discarding envelope from cache: %s", v10.getAbsolutePath());
         } else {
-            this.f29373d.getLogger().c(SentryLevel.DEBUG, "Envelope was not cached or could not be deleted: %s", v10.getAbsolutePath());
+            this.f29734d.getLogger().c(SentryLevel.DEBUG, "Envelope was not cached or could not be deleted: %s", v10.getAbsolutePath());
         }
     }
 
-    public boolean L0(l5 l5Var, Hint hint) {
+    public boolean J0(l5 l5Var, Hint hint) {
         return y(l5Var, hint);
     }
 
@@ -309,7 +309,7 @@ public class f extends c implements g {
             try {
                 BufferedInputStream bufferedInputStream = new BufferedInputStream(new FileInputStream(file));
                 try {
-                    arrayList.add(((b1) this.f29374e.a()).d(bufferedInputStream));
+                    arrayList.add(((b1) this.f29735e.a()).d(bufferedInputStream));
                     bufferedInputStream.close();
                 } catch (Throwable th2) {
                     try {
@@ -321,31 +321,31 @@ public class f extends c implements g {
                     break;
                 }
             } catch (FileNotFoundException unused) {
-                this.f29373d.getLogger().c(SentryLevel.DEBUG, "Envelope file '%s' disappeared while converting all cached files to envelopes.", file.getAbsolutePath());
+                this.f29734d.getLogger().c(SentryLevel.DEBUG, "Envelope file '%s' disappeared while converting all cached files to envelopes.", file.getAbsolutePath());
             } catch (IOException e10) {
-                this.f29373d.getLogger().b(SentryLevel.ERROR, String.format("Error while reading cached envelope from file %s", file.getAbsolutePath()), e10);
+                this.f29734d.getLogger().b(SentryLevel.ERROR, String.format("Error while reading cached envelope from file %s", file.getAbsolutePath()), e10);
             }
         }
         return arrayList.iterator();
     }
 
     public void t() {
-        this.f29378q.countDown();
+        this.f29739q.countDown();
     }
 
     public void x(File file, File file2) {
-        a1 a10 = this.f29381t.a();
+        a1 a10 = this.f29742t.a();
         try {
             if (file2.exists()) {
-                this.f29373d.getLogger().c(SentryLevel.DEBUG, "Previous session file already exists, deleting it.", new Object[0]);
+                this.f29734d.getLogger().c(SentryLevel.DEBUG, "Previous session file already exists, deleting it.", new Object[0]);
                 if (!file2.delete()) {
-                    this.f29373d.getLogger().c(SentryLevel.WARNING, "Unable to delete previous session file: %s", file2);
+                    this.f29734d.getLogger().c(SentryLevel.WARNING, "Unable to delete previous session file: %s", file2);
                 }
             }
             if (file.exists()) {
-                this.f29373d.getLogger().c(SentryLevel.INFO, "Moving current session to previous session.", new Object[0]);
+                this.f29734d.getLogger().c(SentryLevel.INFO, "Moving current session to previous session.", new Object[0]);
                 if (!file.renameTo(file2)) {
-                    this.f29373d.getLogger().c(SentryLevel.WARNING, "Unable to move current session to previous session.", new Object[0]);
+                    this.f29734d.getLogger().c(SentryLevel.WARNING, "Unable to move current session to previous session.", new Object[0]);
                 }
             }
             if (a10 != null) {

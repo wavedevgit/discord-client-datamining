@@ -17,11 +17,11 @@ import org.jetbrains.annotations.NotNull;
 
     @Override // kotlin.jvm.functions.Function3
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
-        return m51invokeiFQtAB8(((ViewModelInstanceHandle) obj).m205unboximpl(), (String) obj2, (Continuation) obj3);
+        return m49invokeiFQtAB8(((ViewModelInstanceHandle) obj).m203unboximpl(), (String) obj2, (Continuation) obj3);
     }
 
     /* renamed from: invoke-iFQtAB8  reason: not valid java name */
-    public final Object m51invokeiFQtAB8(long j10, @NotNull String str, @NotNull Continuation<? super Integer> continuation) {
-        return ((CommandQueue) this.receiver).m131getColorPropertyiFQtAB8(j10, str, continuation);
+    public final Object m49invokeiFQtAB8(long j10, @NotNull String str, @NotNull Continuation<? super Integer> continuation) {
+        return ((CommandQueue) this.receiver).m129getColorPropertyiFQtAB8(j10, str, continuation);
     }
 }

@@ -10,7 +10,7 @@ import java.util.Set;
 public class FlashAvailabilityBufferUnderflowQuirk implements y1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Set f1948a = new HashSet();
+    private static final Set f1917a = new HashSet();
 
     static {
         c("sprd", "lemp");
@@ -18,14 +18,14 @@ public class FlashAvailabilityBufferUnderflowQuirk implements y1 {
     }
 
     private static void c(String str, String str2) {
-        Set set = f1948a;
+        Set set = f1917a;
         Locale locale = Locale.US;
         set.add(new Pair(str.toLowerCase(locale), str2.toLowerCase(locale)));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean d() {
-        Set set = f1948a;
+        Set set = f1917a;
         String str = Build.MANUFACTURER;
         Locale locale = Locale.US;
         return set.contains(new Pair(str.toLowerCase(locale), Build.MODEL.toLowerCase(locale)));

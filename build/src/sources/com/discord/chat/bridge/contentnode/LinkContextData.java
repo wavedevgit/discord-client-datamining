@@ -1,10 +1,5 @@
 package com.discord.chat.bridge.contentnode;
 
-import at.e;
-import bt.n2;
-import bt.o1;
-import bt.p0;
-import bt.v1;
 import com.discord.chat.bridge.MessageType;
 import com.discord.chat.bridge.contentnode.LinkContextData;
 import com.discord.chat.bridge.rolecolors.RoleColors;
@@ -20,6 +15,11 @@ import com.discord.primitives.UserId;
 import com.discord.primitives.UserId$$serializer;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
+import ct.e;
+import dt.n2;
+import dt.o1;
+import dt.p0;
+import dt.v1;
 import java.lang.annotation.Annotation;
 import kotlin.Lazy;
 import kotlin.Metadata;
@@ -36,14 +36,14 @@ import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.jetbrains.annotations.NotNull;
-@ys.m(with = LinkContextDataSerializer.class)
+@at.m(with = LinkContextDataSerializer.class)
 @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0016\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b7\u0018\u0000 \u00172\u00020\u0001:\u0014\u0004\u0005\u0006\u0007\b\t\n\u000b\f\r\u000e\u000f\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017B\t\b\u0004¢\u0006\u0004\b\u0002\u0010\u0003\u0082\u0001\u0002\u0018\u0019¨\u0006\u001a"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData;", "", "<init>", "()V", "LinkUrl", "LinkContext", "BindUserMenu", "BindJoinStream", "BindTapUsername", "BindTapCommandName", "BindTapActivityText", "BindOpenThreadChannel", "BindOpenInviteSheet", "BindOpenPins", "BindGuildMenu", "BindDismissMessage", "BindOpenRoleSubscriptionOverview", "BindUserSurvey", "BindJumpToMessage", "BindOpenGdmCustomizeActionSheet", "BindOpenUrl", "BindInsertText", "BindDoNothing", "Companion", "Lcom/discord/chat/bridge/contentnode/LinkContextData$LinkContext;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$LinkUrl;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public abstract class LinkContextData {
     @NotNull
     public static final Companion Companion = new Companion(null);
 
-    @ys.m
+    @at.m
     @Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\b\u0087\b\u0018\u0000 #2\u00020\u0001:\u0004 !\"#B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005B9\b\u0010\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\u0004\b\u0004\u0010\u000eJ\t\u0010\u0011\u001a\u00020\u0003HÆ\u0003J\u0013\u0010\u0012\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u0003HÆ\u0001J\u0013\u0010\u0013\u001a\u00020\u000b2\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015HÖ\u0003J\t\u0010\u0016\u001a\u00020\u0007HÖ\u0001J\t\u0010\u0017\u001a\u00020\tHÖ\u0001J%\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u00002\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001eH\u0001¢\u0006\u0002\b\u001fR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010¨\u0006$"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindDismissMessage;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$LinkContext;", "message", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindDismissMessage$DismissedMessage;", "<init>", "(Lcom/discord/chat/bridge/contentnode/LinkContextData$BindDismissMessage$DismissedMessage;)V", "seen0", "", "action", "", "medium", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/Boolean;Lcom/discord/chat/bridge/contentnode/LinkContextData$BindDismissMessage$DismissedMessage;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getMessage", "()Lcom/discord/chat/bridge/contentnode/LinkContextData$BindDismissMessage$DismissedMessage;", "component1", "copy", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "DismissedMessage", "DismissedMessageAuthor", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class BindDismissMessage extends LinkContext {
@@ -68,7 +68,7 @@ public abstract class LinkContextData {
             }
         }
 
-        @ys.m
+        @at.m
         @Metadata(d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0016\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 32\u00020\u0001:\u000223B+\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\u0006\u0010\b\u001a\u00020\t¢\u0006\u0004\b\n\u0010\u000bBC\b\u0010\u0012\u0006\u0010\f\u001a\u00020\r\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000f¢\u0006\u0004\b\n\u0010\u0010J\u0010\u0010\u001c\u001a\u00020\u0003HÆ\u0003¢\u0006\u0004\b\u001d\u0010\u0012J\u0010\u0010\u001e\u001a\u00020\u0005HÆ\u0003¢\u0006\u0004\b\u001f\u0010\u0017J\u000b\u0010 \u001a\u0004\u0018\u00010\u0007HÆ\u0003J\t\u0010!\u001a\u00020\tHÆ\u0003J:\u0010\"\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00072\b\b\u0002\u0010\b\u001a\u00020\tHÆ\u0001¢\u0006\u0004\b#\u0010$J\u0013\u0010%\u001a\u00020&2\b\u0010'\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010(\u001a\u00020\rHÖ\u0001J\t\u0010)\u001a\u00020\u0007HÖ\u0001J%\u0010*\u001a\u00020+2\u0006\u0010,\u001a\u00020\u00002\u0006\u0010-\u001a\u00020.2\u0006\u0010/\u001a\u000200H\u0001¢\u0006\u0002\b1R\u0013\u0010\u0002\u001a\u00020\u0003¢\u0006\n\n\u0002\u0010\u0013\u001a\u0004\b\u0011\u0010\u0012R\u001e\u0010\u0004\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010\u0018\u0012\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017R\u0013\u0010\u0006\u001a\u0004\u0018\u00010\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u0012R\u0011\u0010\b\u001a\u00020\t¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u001b¨\u00064"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindDismissMessage$DismissedMessage;", "", StackTraceHelper.ID_KEY, "Lcom/discord/primitives/MessageId;", "channelId", "Lcom/discord/primitives/ChannelId;", "loggingName", "", "author", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindDismissMessage$DismissedMessageAuthor;", "<init>", "(Ljava/lang/String;JLjava/lang/String;Lcom/discord/chat/bridge/contentnode/LinkContextData$BindDismissMessage$DismissedMessageAuthor;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Lcom/discord/primitives/ChannelId;Ljava/lang/String;Lcom/discord/chat/bridge/contentnode/LinkContextData$BindDismissMessage$DismissedMessageAuthor;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getId-3Eiw7ao", "()Ljava/lang/String;", "Ljava/lang/String;", "getChannelId-o4g7jtM$annotations", "()V", "getChannelId-o4g7jtM", "()J", "J", "getLoggingName", "getAuthor", "()Lcom/discord/chat/bridge/contentnode/LinkContextData$BindDismissMessage$DismissedMessageAuthor;", "component1", "component1-3Eiw7ao", "component2", "component2-o4g7jtM", "component3", "component4", "copy", "copy-8a0ehIg", "(Ljava/lang/String;JLjava/lang/String;Lcom/discord/chat/bridge/contentnode/LinkContextData$BindDismissMessage$DismissedMessageAuthor;)Lcom/discord/chat/bridge/contentnode/LinkContextData$BindDismissMessage$DismissedMessage;", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static final class DismissedMessage {
@@ -80,7 +80,7 @@ public abstract class LinkContextData {
             @NotNull
 
             /* renamed from: id  reason: collision with root package name */
-            private final String f9294id;
+            private final String f8262id;
             private final String loggingName;
 
             @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¨\u0006\u0007"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindDismissMessage$DismissedMessage$Companion;", "", "<init>", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindDismissMessage$DismissedMessage;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
@@ -106,7 +106,7 @@ public abstract class LinkContextData {
             /* renamed from: copy-8a0ehIg$default  reason: not valid java name */
             public static /* synthetic */ DismissedMessage m302copy8a0ehIg$default(DismissedMessage dismissedMessage, String str, long j10, String str2, DismissedMessageAuthor dismissedMessageAuthor, int i10, Object obj) {
                 if ((i10 & 1) != 0) {
-                    str = dismissedMessage.f9294id;
+                    str = dismissedMessage.f8262id;
                 }
                 if ((i10 & 2) != 0) {
                     j10 = dismissedMessage.channelId;
@@ -125,18 +125,18 @@ public abstract class LinkContextData {
             }
 
             public static final /* synthetic */ void write$Self$chat_release(DismissedMessage dismissedMessage, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-                compositeEncoder.m(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1086boximpl(dismissedMessage.f9294id));
-                compositeEncoder.m(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, ChannelId.m1060boximpl(dismissedMessage.channelId));
-                if (compositeEncoder.y(serialDescriptor, 2) || dismissedMessage.loggingName != null) {
-                    compositeEncoder.B(serialDescriptor, 2, n2.f7662a, dismissedMessage.loggingName);
+                compositeEncoder.D(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1085boximpl(dismissedMessage.f8262id));
+                compositeEncoder.D(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, ChannelId.m1059boximpl(dismissedMessage.channelId));
+                if (compositeEncoder.z(serialDescriptor, 2) || dismissedMessage.loggingName != null) {
+                    compositeEncoder.s(serialDescriptor, 2, n2.f20978a, dismissedMessage.loggingName);
                 }
-                compositeEncoder.m(serialDescriptor, 3, LinkContextData$BindDismissMessage$DismissedMessageAuthor$$serializer.INSTANCE, dismissedMessage.author);
+                compositeEncoder.D(serialDescriptor, 3, LinkContextData$BindDismissMessage$DismissedMessageAuthor$$serializer.INSTANCE, dismissedMessage.author);
             }
 
             @NotNull
             /* renamed from: component1-3Eiw7ao  reason: not valid java name */
             public final String m304component13Eiw7ao() {
-                return this.f9294id;
+                return this.f8262id;
             }
 
             /* renamed from: component2-o4g7jtM  reason: not valid java name */
@@ -167,7 +167,7 @@ public abstract class LinkContextData {
                 }
                 if (obj instanceof DismissedMessage) {
                     DismissedMessage dismissedMessage = (DismissedMessage) obj;
-                    return MessageId.m1090equalsimpl0(this.f9294id, dismissedMessage.f9294id) && ChannelId.m1064equalsimpl0(this.channelId, dismissedMessage.channelId) && Intrinsics.areEqual(this.loggingName, dismissedMessage.loggingName) && Intrinsics.areEqual(this.author, dismissedMessage.author);
+                    return MessageId.m1089equalsimpl0(this.f8262id, dismissedMessage.f8262id) && ChannelId.m1063equalsimpl0(this.channelId, dismissedMessage.channelId) && Intrinsics.areEqual(this.loggingName, dismissedMessage.loggingName) && Intrinsics.areEqual(this.author, dismissedMessage.author);
                 }
                 return false;
             }
@@ -185,7 +185,7 @@ public abstract class LinkContextData {
             @NotNull
             /* renamed from: getId-3Eiw7ao  reason: not valid java name */
             public final String m308getId3Eiw7ao() {
-                return this.f9294id;
+                return this.f8262id;
             }
 
             public final String getLoggingName() {
@@ -193,18 +193,18 @@ public abstract class LinkContextData {
             }
 
             public int hashCode() {
-                int m1091hashCodeimpl = ((MessageId.m1091hashCodeimpl(this.f9294id) * 31) + ChannelId.m1065hashCodeimpl(this.channelId)) * 31;
+                int m1090hashCodeimpl = ((MessageId.m1090hashCodeimpl(this.f8262id) * 31) + ChannelId.m1064hashCodeimpl(this.channelId)) * 31;
                 String str = this.loggingName;
-                return ((m1091hashCodeimpl + (str == null ? 0 : str.hashCode())) * 31) + this.author.hashCode();
+                return ((m1090hashCodeimpl + (str == null ? 0 : str.hashCode())) * 31) + this.author.hashCode();
             }
 
             @NotNull
             public String toString() {
-                String m1093toStringimpl = MessageId.m1093toStringimpl(this.f9294id);
-                String m1067toStringimpl = ChannelId.m1067toStringimpl(this.channelId);
+                String m1092toStringimpl = MessageId.m1092toStringimpl(this.f8262id);
+                String m1066toStringimpl = ChannelId.m1066toStringimpl(this.channelId);
                 String str = this.loggingName;
                 DismissedMessageAuthor dismissedMessageAuthor = this.author;
-                return "DismissedMessage(id=" + m1093toStringimpl + ", channelId=" + m1067toStringimpl + ", loggingName=" + str + ", author=" + dismissedMessageAuthor + ")";
+                return "DismissedMessage(id=" + m1092toStringimpl + ", channelId=" + m1066toStringimpl + ", loggingName=" + str + ", author=" + dismissedMessageAuthor + ")";
             }
 
             public /* synthetic */ DismissedMessage(String str, long j10, String str2, DismissedMessageAuthor dismissedMessageAuthor, DefaultConstructorMarker defaultConstructorMarker) {
@@ -215,8 +215,8 @@ public abstract class LinkContextData {
                 if (11 != (i10 & 11)) {
                     v1.b(i10, 11, LinkContextData$BindDismissMessage$DismissedMessage$$serializer.INSTANCE.getDescriptor());
                 }
-                this.f9294id = str;
-                this.channelId = channelId.m1069unboximpl();
+                this.f8262id = str;
+                this.channelId = channelId.m1068unboximpl();
                 if ((i10 & 4) == 0) {
                     this.loggingName = null;
                 } else {
@@ -228,7 +228,7 @@ public abstract class LinkContextData {
             private DismissedMessage(String id2, long j10, String str, DismissedMessageAuthor author) {
                 Intrinsics.checkNotNullParameter(id2, "id");
                 Intrinsics.checkNotNullParameter(author, "author");
-                this.f9294id = id2;
+                this.f8262id = id2;
                 this.channelId = j10;
                 this.loggingName = str;
                 this.author = author;
@@ -239,7 +239,7 @@ public abstract class LinkContextData {
             }
         }
 
-        @ys.m
+        @at.m
         @Metadata(d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 \u001d2\u00020\u0001:\u0002\u001c\u001dB\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005B%\b\u0010\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t¢\u0006\u0004\b\u0004\u0010\nJ\t\u0010\r\u001a\u00020\u0003HÆ\u0003J\u0013\u0010\u000e\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u0003HÆ\u0001J\u0013\u0010\u000f\u001a\u00020\u00102\b\u0010\u0011\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0012\u001a\u00020\u0007HÖ\u0001J\t\u0010\u0013\u001a\u00020\u0003HÖ\u0001J%\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00002\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001aH\u0001¢\u0006\u0002\b\u001bR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\f¨\u0006\u001e"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindDismissMessage$DismissedMessageAuthor;", "", NotificationRenderer.USERNAME, "", "<init>", "(Ljava/lang/String;)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getUsername", "()Ljava/lang/String;", "component1", "copy", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static final class DismissedMessageAuthor {
@@ -335,7 +335,7 @@ public abstract class LinkContextData {
 
         public static final /* synthetic */ void write$Self$chat_release(BindDismissMessage bindDismissMessage, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             LinkContext.write$Self(bindDismissMessage, compositeEncoder, serialDescriptor);
-            compositeEncoder.m(serialDescriptor, 2, LinkContextData$BindDismissMessage$DismissedMessage$$serializer.INSTANCE, bindDismissMessage.message);
+            compositeEncoder.D(serialDescriptor, 2, LinkContextData$BindDismissMessage$DismissedMessage$$serializer.INSTANCE, bindDismissMessage.message);
         }
 
         @NotNull
@@ -379,13 +379,13 @@ public abstract class LinkContextData {
         }
     }
 
-    @ys.m
+    @at.m
     @Metadata(d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\bÇ\n\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u0013\u0010\u0004\u001a\u00020\u00052\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007HÖ\u0003J\t\u0010\b\u001a\u00020\tHÖ\u0001J\f\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00000\u000bJ\t\u0010\f\u001a\u00020\rHÖ\u0001¨\u0006\u000e"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindDoNothing;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$LinkContext;", "<init>", "()V", "equals", "", "other", "", "hashCode", "", "serializer", "Lkotlinx/serialization/KSerializer;", "toString", "", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class BindDoNothing extends LinkContext {
         @NotNull
         public static final BindDoNothing INSTANCE = new BindDoNothing();
-        private static final /* synthetic */ Lazy $cachedSerializer$delegate = jr.l.a(jr.o.f32182e, new Function0() { // from class: com.discord.chat.bridge.contentnode.n
+        private static final /* synthetic */ Lazy $cachedSerializer$delegate = lr.l.b(lr.o.f37120e, new Function0() { // from class: com.discord.chat.bridge.contentnode.n
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _init_$_anonymous_;
@@ -426,7 +426,7 @@ public abstract class LinkContextData {
         }
     }
 
-    @ys.m
+    @at.m
     @Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0087\b\u0018\u0000 \"2\u00020\u0001:\u0003 !\"B\u0013\u0012\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003¢\u0006\u0004\b\u0004\u0010\u0005B9\b\u0010\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\u0004\b\u0004\u0010\u000eJ\u000b\u0010\u0011\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0015\u0010\u0012\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003HÆ\u0001J\u0013\u0010\u0013\u001a\u00020\u000b2\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015HÖ\u0003J\t\u0010\u0016\u001a\u00020\u0007HÖ\u0001J\t\u0010\u0017\u001a\u00020\tHÖ\u0001J%\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u00002\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001eH\u0001¢\u0006\u0002\b\u001fR\u0013\u0010\u0002\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010¨\u0006#"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindGuildMenu;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$LinkContext;", "messageReference", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindGuildMenu$MessageReference;", "<init>", "(Lcom/discord/chat/bridge/contentnode/LinkContextData$BindGuildMenu$MessageReference;)V", "seen0", "", "action", "", "medium", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/Boolean;Lcom/discord/chat/bridge/contentnode/LinkContextData$BindGuildMenu$MessageReference;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getMessageReference", "()Lcom/discord/chat/bridge/contentnode/LinkContextData$BindGuildMenu$MessageReference;", "component1", "copy", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "MessageReference", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class BindGuildMenu extends LinkContext {
@@ -450,7 +450,7 @@ public abstract class LinkContextData {
             }
         }
 
-        @ys.m
+        @at.m
         @Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0011\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 +2\u00020\u0001:\u0002*+B\u001b\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\u0004\b\u0006\u0010\u0007B/\b\u0010\u0012\u0006\u0010\b\u001a\u00020\t\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b¢\u0006\u0004\b\u0006\u0010\fJ\u0010\u0010\u0015\u001a\u00020\u0003HÆ\u0003¢\u0006\u0004\b\u0016\u0010\u0010J\u0010\u0010\u0017\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\b\u0018J&\u0010\u0019\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005HÆ\u0001¢\u0006\u0004\b\u001a\u0010\u001bJ\u0013\u0010\u001c\u001a\u00020\u001d2\b\u0010\u001e\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001f\u001a\u00020\tHÖ\u0001J\t\u0010 \u001a\u00020!HÖ\u0001J%\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020\u00002\u0006\u0010%\u001a\u00020&2\u0006\u0010'\u001a\u00020(H\u0001¢\u0006\u0002\b)R\u001e\u0010\u0002\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010\u0011\u0012\u0004\b\r\u0010\u000e\u001a\u0004\b\u000f\u0010\u0010R\u001e\u0010\u0004\u001a\u0004\u0018\u00010\u00058\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\u0012\u0010\u000e\u001a\u0004\b\u0013\u0010\u0014¨\u0006,"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindGuildMenu$MessageReference;", "", "channelId", "Lcom/discord/primitives/ChannelId;", "guildId", "Lcom/discord/primitives/GuildId;", "<init>", "(JLcom/discord/primitives/GuildId;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILcom/discord/primitives/ChannelId;Lcom/discord/primitives/GuildId;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getChannelId-o4g7jtM$annotations", "()V", "getChannelId-o4g7jtM", "()J", "J", "getGuildId-qOKuAAo$annotations", "getGuildId-qOKuAAo", "()Lcom/discord/primitives/GuildId;", "component1", "component1-o4g7jtM", "component2", "component2-qOKuAAo", "copy", "copy-2_zTmBg", "(JLcom/discord/primitives/GuildId;)Lcom/discord/chat/bridge/contentnode/LinkContextData$BindGuildMenu$MessageReference;", "equals", "", "other", "hashCode", "toString", "", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static final class MessageReference {
@@ -499,9 +499,9 @@ public abstract class LinkContextData {
             }
 
             public static final /* synthetic */ void write$Self$chat_release(MessageReference messageReference, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-                compositeEncoder.m(serialDescriptor, 0, ChannelId$$serializer.INSTANCE, ChannelId.m1060boximpl(messageReference.channelId));
-                if (compositeEncoder.y(serialDescriptor, 1) || messageReference.guildId != null) {
-                    compositeEncoder.B(serialDescriptor, 1, GuildId$$serializer.INSTANCE, messageReference.guildId);
+                compositeEncoder.D(serialDescriptor, 0, ChannelId$$serializer.INSTANCE, ChannelId.m1059boximpl(messageReference.channelId));
+                if (compositeEncoder.z(serialDescriptor, 1) || messageReference.guildId != null) {
+                    compositeEncoder.s(serialDescriptor, 1, GuildId$$serializer.INSTANCE, messageReference.guildId);
                 }
             }
 
@@ -527,7 +527,7 @@ public abstract class LinkContextData {
                 }
                 if (obj instanceof MessageReference) {
                     MessageReference messageReference = (MessageReference) obj;
-                    return ChannelId.m1064equalsimpl0(this.channelId, messageReference.channelId) && Intrinsics.areEqual(this.guildId, messageReference.guildId);
+                    return ChannelId.m1063equalsimpl0(this.channelId, messageReference.channelId) && Intrinsics.areEqual(this.guildId, messageReference.guildId);
                 }
                 return false;
             }
@@ -543,16 +543,16 @@ public abstract class LinkContextData {
             }
 
             public int hashCode() {
-                int m1065hashCodeimpl = ChannelId.m1065hashCodeimpl(this.channelId) * 31;
+                int m1064hashCodeimpl = ChannelId.m1064hashCodeimpl(this.channelId) * 31;
                 GuildId guildId = this.guildId;
-                return m1065hashCodeimpl + (guildId == null ? 0 : GuildId.m1078hashCodeimpl(guildId.m1082unboximpl()));
+                return m1064hashCodeimpl + (guildId == null ? 0 : GuildId.m1077hashCodeimpl(guildId.m1081unboximpl()));
             }
 
             @NotNull
             public String toString() {
-                String m1067toStringimpl = ChannelId.m1067toStringimpl(this.channelId);
+                String m1066toStringimpl = ChannelId.m1066toStringimpl(this.channelId);
                 GuildId guildId = this.guildId;
-                return "MessageReference(channelId=" + m1067toStringimpl + ", guildId=" + guildId + ")";
+                return "MessageReference(channelId=" + m1066toStringimpl + ", guildId=" + guildId + ")";
             }
 
             public /* synthetic */ MessageReference(long j10, GuildId guildId, DefaultConstructorMarker defaultConstructorMarker) {
@@ -563,7 +563,7 @@ public abstract class LinkContextData {
                 if (1 != (i10 & 1)) {
                     v1.b(i10, 1, LinkContextData$BindGuildMenu$MessageReference$$serializer.INSTANCE.getDescriptor());
                 }
-                this.channelId = channelId.m1069unboximpl();
+                this.channelId = channelId.m1068unboximpl();
                 if ((i10 & 2) == 0) {
                     this.guildId = null;
                 } else {
@@ -594,8 +594,8 @@ public abstract class LinkContextData {
 
         public static final /* synthetic */ void write$Self$chat_release(BindGuildMenu bindGuildMenu, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             LinkContext.write$Self(bindGuildMenu, compositeEncoder, serialDescriptor);
-            if (compositeEncoder.y(serialDescriptor, 2) || bindGuildMenu.messageReference != null) {
-                compositeEncoder.B(serialDescriptor, 2, LinkContextData$BindGuildMenu$MessageReference$$serializer.INSTANCE, bindGuildMenu.messageReference);
+            if (compositeEncoder.z(serialDescriptor, 2) || bindGuildMenu.messageReference != null) {
+                compositeEncoder.s(serialDescriptor, 2, LinkContextData$BindGuildMenu$MessageReference$$serializer.INSTANCE, bindGuildMenu.messageReference);
             }
         }
 
@@ -656,7 +656,7 @@ public abstract class LinkContextData {
         }
     }
 
-    @ys.m
+    @at.m
     @Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 &2\u00020\u0001:\u0002%&B\u001b\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\u0004\b\u0006\u0010\u0007BC\b\u0010\u0012\u0006\u0010\b\u001a\u00020\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\u0004\b\u0006\u0010\u000eJ\t\u0010\u0014\u001a\u00020\u0003HÆ\u0003J\u0010\u0010\u0015\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u0010\u0012J$\u0010\u0016\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005HÆ\u0001¢\u0006\u0002\u0010\u0017J\u0013\u0010\u0018\u001a\u00020\u00052\b\u0010\u0019\u001a\u0004\u0018\u00010\u001aHÖ\u0003J\t\u0010\u001b\u001a\u00020\tHÖ\u0001J\t\u0010\u001c\u001a\u00020\u0003HÖ\u0001J%\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u00002\u0006\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020#H\u0001¢\u0006\u0002\b$R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0015\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\n\n\u0002\u0010\u0013\u001a\u0004\b\u0011\u0010\u0012¨\u0006'"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindInsertText;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$LinkContext;", "text", "", "addSpace", "", "<init>", "(Ljava/lang/String;Ljava/lang/Boolean;)V", "seen0", "", "action", "medium", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getText", "()Ljava/lang/String;", "getAddSpace", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "component1", "component2", "copy", "(Ljava/lang/String;Ljava/lang/Boolean;)Lcom/discord/chat/bridge/contentnode/LinkContextData$BindInsertText;", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class BindInsertText extends LinkContext {
@@ -708,9 +708,9 @@ public abstract class LinkContextData {
 
         public static final /* synthetic */ void write$Self$chat_release(BindInsertText bindInsertText, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             LinkContext.write$Self(bindInsertText, compositeEncoder, serialDescriptor);
-            compositeEncoder.x(serialDescriptor, 2, bindInsertText.text);
-            if (compositeEncoder.y(serialDescriptor, 3) || bindInsertText.addSpace != null) {
-                compositeEncoder.B(serialDescriptor, 3, bt.h.f7626a, bindInsertText.addSpace);
+            compositeEncoder.y(serialDescriptor, 2, bindInsertText.text);
+            if (compositeEncoder.z(serialDescriptor, 3) || bindInsertText.addSpace != null) {
+                compositeEncoder.s(serialDescriptor, 3, dt.h.f20942a, bindInsertText.addSpace);
             }
         }
 
@@ -775,7 +775,7 @@ public abstract class LinkContextData {
         }
     }
 
-    @ys.m
+    @at.m
     @Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0087\b\u0018\u0000 \"2\u00020\u0001:\u0003 !\"B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005B9\b\u0010\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\u0004\b\u0004\u0010\u000eJ\t\u0010\u0011\u001a\u00020\u0003HÆ\u0003J\u0013\u0010\u0012\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u0003HÆ\u0001J\u0013\u0010\u0013\u001a\u00020\u000b2\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015HÖ\u0003J\t\u0010\u0016\u001a\u00020\u0007HÖ\u0001J\t\u0010\u0017\u001a\u00020\tHÖ\u0001J%\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u00002\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001eH\u0001¢\u0006\u0002\b\u001fR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010¨\u0006#"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindJoinStream;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$LinkContext;", "stream", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindJoinStream$ApplicationStream;", "<init>", "(Lcom/discord/chat/bridge/contentnode/LinkContextData$BindJoinStream$ApplicationStream;)V", "seen0", "", "action", "", "medium", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/Boolean;Lcom/discord/chat/bridge/contentnode/LinkContextData$BindJoinStream$ApplicationStream;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getStream", "()Lcom/discord/chat/bridge/contentnode/LinkContextData$BindJoinStream$ApplicationStream;", "component1", "copy", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "ApplicationStream", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class BindJoinStream extends LinkContext {
@@ -784,7 +784,7 @@ public abstract class LinkContextData {
         @NotNull
         private final ApplicationStream stream;
 
-        @ys.m
+        @at.m
         @Metadata(d1 = {"\u0000N\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u001c\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 62\u00020\u0001:\u000256B7\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\u0006\u0010\b\u001a\u00020\t\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b¢\u0006\u0004\b\f\u0010\rBM\b\u0010\u0012\u0006\u0010\u000e\u001a\u00020\u000f\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u0010\u001a\u0004\u0018\u00010\u0011¢\u0006\u0004\b\f\u0010\u0012J\u0010\u0010\u001e\u001a\u00020\u0003HÆ\u0003¢\u0006\u0004\b\u001f\u0010\u0014J\u0010\u0010 \u001a\u00020\u0005HÆ\u0003¢\u0006\u0004\b!\u0010\u0014J\u0010\u0010\"\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\b#J\t\u0010$\u001a\u00020\tHÆ\u0003J\u0010\u0010%\u001a\u0004\u0018\u00010\u000bHÆ\u0003¢\u0006\u0002\u0010\u001cJF\u0010&\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u000bHÆ\u0001¢\u0006\u0004\b'\u0010(J\u0013\u0010)\u001a\u00020\u000b2\b\u0010*\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010+\u001a\u00020\u000fHÖ\u0001J\t\u0010,\u001a\u00020\tHÖ\u0001J%\u0010-\u001a\u00020.2\u0006\u0010/\u001a\u00020\u00002\u0006\u00100\u001a\u0002012\u0006\u00102\u001a\u000203H\u0001¢\u0006\u0002\b4R\u0013\u0010\u0002\u001a\u00020\u0003¢\u0006\n\n\u0002\u0010\u0015\u001a\u0004\b\u0013\u0010\u0014R\u0013\u0010\u0004\u001a\u00020\u0005¢\u0006\n\n\u0002\u0010\u0015\u001a\u0004\b\u0016\u0010\u0014R\u0013\u0010\u0006\u001a\u0004\u0018\u00010\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R\u0011\u0010\b\u001a\u00020\t¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u001aR\u0015\u0010\n\u001a\u0004\u0018\u00010\u000b¢\u0006\n\n\u0002\u0010\u001d\u001a\u0004\b\u001b\u0010\u001c¨\u00067"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindJoinStream$ApplicationStream;", "", "ownerId", "Lcom/discord/primitives/UserId;", "channelId", "Lcom/discord/primitives/ChannelId;", "guildId", "Lcom/discord/primitives/GuildId;", "streamType", "", "discoverable", "", "<init>", "(JJLcom/discord/primitives/GuildId;Ljava/lang/String;Ljava/lang/Boolean;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILcom/discord/primitives/UserId;Lcom/discord/primitives/ChannelId;Lcom/discord/primitives/GuildId;Ljava/lang/String;Ljava/lang/Boolean;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getOwnerId-re6GcUE", "()J", "J", "getChannelId-o4g7jtM", "getGuildId-qOKuAAo", "()Lcom/discord/primitives/GuildId;", "getStreamType", "()Ljava/lang/String;", "getDiscoverable", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "component1", "component1-re6GcUE", "component2", "component2-o4g7jtM", "component3", "component3-qOKuAAo", "component4", "component5", "copy", "copy-t0eeQLs", "(JJLcom/discord/primitives/GuildId;Ljava/lang/String;Ljava/lang/Boolean;)Lcom/discord/chat/bridge/contentnode/LinkContextData$BindJoinStream$ApplicationStream;", "equals", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static final class ApplicationStream {
@@ -842,14 +842,14 @@ public abstract class LinkContextData {
             }
 
             public static final /* synthetic */ void write$Self$chat_release(ApplicationStream applicationStream, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-                compositeEncoder.m(serialDescriptor, 0, UserId$$serializer.INSTANCE, UserId.m1138boximpl(applicationStream.ownerId));
-                compositeEncoder.m(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, ChannelId.m1060boximpl(applicationStream.channelId));
-                if (compositeEncoder.y(serialDescriptor, 2) || applicationStream.guildId != null) {
-                    compositeEncoder.B(serialDescriptor, 2, GuildId$$serializer.INSTANCE, applicationStream.guildId);
+                compositeEncoder.D(serialDescriptor, 0, UserId$$serializer.INSTANCE, UserId.m1137boximpl(applicationStream.ownerId));
+                compositeEncoder.D(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, ChannelId.m1059boximpl(applicationStream.channelId));
+                if (compositeEncoder.z(serialDescriptor, 2) || applicationStream.guildId != null) {
+                    compositeEncoder.s(serialDescriptor, 2, GuildId$$serializer.INSTANCE, applicationStream.guildId);
                 }
-                compositeEncoder.x(serialDescriptor, 3, applicationStream.streamType);
-                if (compositeEncoder.y(serialDescriptor, 4) || applicationStream.discoverable != null) {
-                    compositeEncoder.B(serialDescriptor, 4, bt.h.f7626a, applicationStream.discoverable);
+                compositeEncoder.y(serialDescriptor, 3, applicationStream.streamType);
+                if (compositeEncoder.z(serialDescriptor, 4) || applicationStream.discoverable != null) {
+                    compositeEncoder.s(serialDescriptor, 4, dt.h.f20942a, applicationStream.discoverable);
                 }
             }
 
@@ -890,7 +890,7 @@ public abstract class LinkContextData {
                 }
                 if (obj instanceof ApplicationStream) {
                     ApplicationStream applicationStream = (ApplicationStream) obj;
-                    return UserId.m1142equalsimpl0(this.ownerId, applicationStream.ownerId) && ChannelId.m1064equalsimpl0(this.channelId, applicationStream.channelId) && Intrinsics.areEqual(this.guildId, applicationStream.guildId) && Intrinsics.areEqual(this.streamType, applicationStream.streamType) && Intrinsics.areEqual(this.discoverable, applicationStream.discoverable);
+                    return UserId.m1141equalsimpl0(this.ownerId, applicationStream.ownerId) && ChannelId.m1063equalsimpl0(this.channelId, applicationStream.channelId) && Intrinsics.areEqual(this.guildId, applicationStream.guildId) && Intrinsics.areEqual(this.streamType, applicationStream.streamType) && Intrinsics.areEqual(this.discoverable, applicationStream.discoverable);
                 }
                 return false;
             }
@@ -920,21 +920,21 @@ public abstract class LinkContextData {
             }
 
             public int hashCode() {
-                int m1143hashCodeimpl = ((UserId.m1143hashCodeimpl(this.ownerId) * 31) + ChannelId.m1065hashCodeimpl(this.channelId)) * 31;
+                int m1142hashCodeimpl = ((UserId.m1142hashCodeimpl(this.ownerId) * 31) + ChannelId.m1064hashCodeimpl(this.channelId)) * 31;
                 GuildId guildId = this.guildId;
-                int m1078hashCodeimpl = (((m1143hashCodeimpl + (guildId == null ? 0 : GuildId.m1078hashCodeimpl(guildId.m1082unboximpl()))) * 31) + this.streamType.hashCode()) * 31;
+                int m1077hashCodeimpl = (((m1142hashCodeimpl + (guildId == null ? 0 : GuildId.m1077hashCodeimpl(guildId.m1081unboximpl()))) * 31) + this.streamType.hashCode()) * 31;
                 Boolean bool = this.discoverable;
-                return m1078hashCodeimpl + (bool != null ? bool.hashCode() : 0);
+                return m1077hashCodeimpl + (bool != null ? bool.hashCode() : 0);
             }
 
             @NotNull
             public String toString() {
-                String m1145toStringimpl = UserId.m1145toStringimpl(this.ownerId);
-                String m1067toStringimpl = ChannelId.m1067toStringimpl(this.channelId);
+                String m1144toStringimpl = UserId.m1144toStringimpl(this.ownerId);
+                String m1066toStringimpl = ChannelId.m1066toStringimpl(this.channelId);
                 GuildId guildId = this.guildId;
                 String str = this.streamType;
                 Boolean bool = this.discoverable;
-                return "ApplicationStream(ownerId=" + m1145toStringimpl + ", channelId=" + m1067toStringimpl + ", guildId=" + guildId + ", streamType=" + str + ", discoverable=" + bool + ")";
+                return "ApplicationStream(ownerId=" + m1144toStringimpl + ", channelId=" + m1066toStringimpl + ", guildId=" + guildId + ", streamType=" + str + ", discoverable=" + bool + ")";
             }
 
             public /* synthetic */ ApplicationStream(long j10, long j11, GuildId guildId, String str, Boolean bool, DefaultConstructorMarker defaultConstructorMarker) {
@@ -945,8 +945,8 @@ public abstract class LinkContextData {
                 if (11 != (i10 & 11)) {
                     v1.b(i10, 11, LinkContextData$BindJoinStream$ApplicationStream$$serializer.INSTANCE.getDescriptor());
                 }
-                this.ownerId = userId.m1147unboximpl();
-                this.channelId = channelId.m1069unboximpl();
+                this.ownerId = userId.m1146unboximpl();
+                this.channelId = channelId.m1068unboximpl();
                 if ((i10 & 4) == 0) {
                     this.guildId = null;
                 } else {
@@ -1008,7 +1008,7 @@ public abstract class LinkContextData {
 
         public static final /* synthetic */ void write$Self$chat_release(BindJoinStream bindJoinStream, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             LinkContext.write$Self(bindJoinStream, compositeEncoder, serialDescriptor);
-            compositeEncoder.m(serialDescriptor, 2, LinkContextData$BindJoinStream$ApplicationStream$$serializer.INSTANCE, bindJoinStream.stream);
+            compositeEncoder.D(serialDescriptor, 2, LinkContextData$BindJoinStream$ApplicationStream$$serializer.INSTANCE, bindJoinStream.stream);
         }
 
         @NotNull
@@ -1052,7 +1052,7 @@ public abstract class LinkContextData {
         }
     }
 
-    @ys.m
+    @at.m
     @Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 #2\u00020\u0001:\u0002\"#B\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003¢\u0006\u0004\b\u0005\u0010\u0006BC\b\u0010\u0012\u0006\u0010\u0007\u001a\u00020\b\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\u0004\b\u0005\u0010\u000eJ\t\u0010\u0012\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0013\u001a\u00020\u0003HÆ\u0003J\u001d\u0010\u0014\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u0003HÆ\u0001J\u0013\u0010\u0015\u001a\u00020\u000b2\b\u0010\u0016\u001a\u0004\u0018\u00010\u0017HÖ\u0003J\t\u0010\u0018\u001a\u00020\bHÖ\u0001J\t\u0010\u0019\u001a\u00020\u0003HÖ\u0001J%\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u00002\u0006\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020 H\u0001¢\u0006\u0002\b!R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0010¨\u0006$"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindJumpToMessage;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$LinkContext;", "targetChannelId", "", "targetMessageId", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", "seen0", "", "action", "medium", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getTargetChannelId", "()Ljava/lang/String;", "getTargetMessageId", "component1", "component2", "copy", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class BindJumpToMessage extends LinkContext {
@@ -1101,8 +1101,8 @@ public abstract class LinkContextData {
 
         public static final /* synthetic */ void write$Self$chat_release(BindJumpToMessage bindJumpToMessage, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             LinkContext.write$Self(bindJumpToMessage, compositeEncoder, serialDescriptor);
-            compositeEncoder.x(serialDescriptor, 2, bindJumpToMessage.targetChannelId);
-            compositeEncoder.x(serialDescriptor, 3, bindJumpToMessage.targetMessageId);
+            compositeEncoder.y(serialDescriptor, 2, bindJumpToMessage.targetChannelId);
+            compositeEncoder.y(serialDescriptor, 3, bindJumpToMessage.targetMessageId);
         }
 
         @NotNull
@@ -1164,7 +1164,7 @@ public abstract class LinkContextData {
         }
     }
 
-    @ys.m
+    @at.m
     @Metadata(d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 &2\u00020\u0001:\u0002%&B\u001b\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\u0004\b\u0006\u0010\u0007BC\b\u0010\u0012\u0006\u0010\b\u001a\u00020\u0005\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\u0004\b\u0006\u0010\u000eJ\t\u0010\u0014\u001a\u00020\u0003HÆ\u0003J\u0010\u0010\u0015\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u0010\u0012J$\u0010\u0016\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005HÆ\u0001¢\u0006\u0002\u0010\u0017J\u0013\u0010\u0018\u001a\u00020\u000b2\b\u0010\u0019\u001a\u0004\u0018\u00010\u001aHÖ\u0003J\t\u0010\u001b\u001a\u00020\u0005HÖ\u0001J\t\u0010\u001c\u001a\u00020\u0003HÖ\u0001J%\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u00002\u0006\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020#H\u0001¢\u0006\u0002\b$R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0015\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\n\n\u0002\u0010\u0013\u001a\u0004\b\u0011\u0010\u0012¨\u0006'"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindOpenGdmCustomizeActionSheet;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$LinkContext;", "messageChannelId", "", "linkColor", "", "<init>", "(Ljava/lang/String;Ljava/lang/Integer;)V", "seen0", "action", "medium", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Integer;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getMessageChannelId", "()Ljava/lang/String;", "getLinkColor", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "component1", "component2", "copy", "(Ljava/lang/String;Ljava/lang/Integer;)Lcom/discord/chat/bridge/contentnode/LinkContextData$BindOpenGdmCustomizeActionSheet;", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class BindOpenGdmCustomizeActionSheet extends LinkContext {
@@ -1216,9 +1216,9 @@ public abstract class LinkContextData {
 
         public static final /* synthetic */ void write$Self$chat_release(BindOpenGdmCustomizeActionSheet bindOpenGdmCustomizeActionSheet, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             LinkContext.write$Self(bindOpenGdmCustomizeActionSheet, compositeEncoder, serialDescriptor);
-            compositeEncoder.x(serialDescriptor, 2, bindOpenGdmCustomizeActionSheet.messageChannelId);
-            if (compositeEncoder.y(serialDescriptor, 3) || bindOpenGdmCustomizeActionSheet.linkColor != null) {
-                compositeEncoder.B(serialDescriptor, 3, p0.f7678a, bindOpenGdmCustomizeActionSheet.linkColor);
+            compositeEncoder.y(serialDescriptor, 2, bindOpenGdmCustomizeActionSheet.messageChannelId);
+            if (compositeEncoder.z(serialDescriptor, 3) || bindOpenGdmCustomizeActionSheet.linkColor != null) {
+                compositeEncoder.s(serialDescriptor, 3, p0.f20994a, bindOpenGdmCustomizeActionSheet.linkColor);
             }
         }
 
@@ -1283,7 +1283,7 @@ public abstract class LinkContextData {
         }
     }
 
-    @ys.m
+    @at.m
     @Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 %2\u00020\u0001:\u0002$%B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005B9\b\u0010\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\u0004\b\u0004\u0010\u000eJ\u0010\u0010\u0012\u001a\u00020\u0003HÆ\u0003¢\u0006\u0004\b\u0013\u0010\u0010J\u001a\u0010\u0014\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u0003HÆ\u0001¢\u0006\u0004\b\u0015\u0010\u0016J\u0013\u0010\u0017\u001a\u00020\u000b2\b\u0010\u0018\u001a\u0004\u0018\u00010\u0019HÖ\u0003J\t\u0010\u001a\u001a\u00020\u0007HÖ\u0001J\t\u0010\u001b\u001a\u00020\tHÖ\u0001J%\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u00002\u0006\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020\"H\u0001¢\u0006\u0002\b#R\u0013\u0010\u0002\u001a\u00020\u0003¢\u0006\n\n\u0002\u0010\u0011\u001a\u0004\b\u000f\u0010\u0010¨\u0006&"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindOpenInviteSheet;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$LinkContext;", "messageChannelId", "Lcom/discord/primitives/ChannelId;", "<init>", "(JLkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "", "action", "", "medium", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/Boolean;Lcom/discord/primitives/ChannelId;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getMessageChannelId-o4g7jtM", "()J", "J", "component1", "component1-o4g7jtM", "copy", "copy-R7gqayM", "(J)Lcom/discord/chat/bridge/contentnode/LinkContextData$BindOpenInviteSheet;", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class BindOpenInviteSheet extends LinkContext {
@@ -1321,7 +1321,7 @@ public abstract class LinkContextData {
 
         public static final /* synthetic */ void write$Self$chat_release(BindOpenInviteSheet bindOpenInviteSheet, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             LinkContext.write$Self(bindOpenInviteSheet, compositeEncoder, serialDescriptor);
-            compositeEncoder.m(serialDescriptor, 2, ChannelId$$serializer.INSTANCE, ChannelId.m1060boximpl(bindOpenInviteSheet.messageChannelId));
+            compositeEncoder.D(serialDescriptor, 2, ChannelId$$serializer.INSTANCE, ChannelId.m1059boximpl(bindOpenInviteSheet.messageChannelId));
         }
 
         /* renamed from: component1-o4g7jtM  reason: not valid java name */
@@ -1339,7 +1339,7 @@ public abstract class LinkContextData {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof BindOpenInviteSheet) && ChannelId.m1064equalsimpl0(this.messageChannelId, ((BindOpenInviteSheet) obj).messageChannelId);
+            return (obj instanceof BindOpenInviteSheet) && ChannelId.m1063equalsimpl0(this.messageChannelId, ((BindOpenInviteSheet) obj).messageChannelId);
         }
 
         /* renamed from: getMessageChannelId-o4g7jtM  reason: not valid java name */
@@ -1348,13 +1348,13 @@ public abstract class LinkContextData {
         }
 
         public int hashCode() {
-            return ChannelId.m1065hashCodeimpl(this.messageChannelId);
+            return ChannelId.m1064hashCodeimpl(this.messageChannelId);
         }
 
         @NotNull
         public String toString() {
-            String m1067toStringimpl = ChannelId.m1067toStringimpl(this.messageChannelId);
-            return "BindOpenInviteSheet(messageChannelId=" + m1067toStringimpl + ")";
+            String m1066toStringimpl = ChannelId.m1066toStringimpl(this.messageChannelId);
+            return "BindOpenInviteSheet(messageChannelId=" + m1066toStringimpl + ")";
         }
 
         public /* synthetic */ BindOpenInviteSheet(long j10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -1367,7 +1367,7 @@ public abstract class LinkContextData {
             if (5 != (i10 & 5)) {
                 v1.b(i10, 5, LinkContextData$BindOpenInviteSheet$$serializer.INSTANCE.getDescriptor());
             }
-            this.messageChannelId = channelId.m1069unboximpl();
+            this.messageChannelId = channelId.m1068unboximpl();
         }
 
         private BindOpenInviteSheet(long j10) {
@@ -1376,7 +1376,7 @@ public abstract class LinkContextData {
         }
     }
 
-    @ys.m
+    @at.m
     @Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 %2\u00020\u0001:\u0002$%B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005B9\b\u0010\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\u0004\b\u0004\u0010\u000eJ\u0010\u0010\u0012\u001a\u00020\u0003HÆ\u0003¢\u0006\u0004\b\u0013\u0010\u0010J\u001a\u0010\u0014\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u0003HÆ\u0001¢\u0006\u0004\b\u0015\u0010\u0016J\u0013\u0010\u0017\u001a\u00020\u000b2\b\u0010\u0018\u001a\u0004\u0018\u00010\u0019HÖ\u0003J\t\u0010\u001a\u001a\u00020\u0007HÖ\u0001J\t\u0010\u001b\u001a\u00020\tHÖ\u0001J%\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u00002\u0006\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020\"H\u0001¢\u0006\u0002\b#R\u0013\u0010\u0002\u001a\u00020\u0003¢\u0006\n\n\u0002\u0010\u0011\u001a\u0004\b\u000f\u0010\u0010¨\u0006&"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindOpenPins;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$LinkContext;", "messageChannelId", "Lcom/discord/primitives/ChannelId;", "<init>", "(JLkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "", "action", "", "medium", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/Boolean;Lcom/discord/primitives/ChannelId;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getMessageChannelId-o4g7jtM", "()J", "J", "component1", "component1-o4g7jtM", "copy", "copy-R7gqayM", "(J)Lcom/discord/chat/bridge/contentnode/LinkContextData$BindOpenPins;", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class BindOpenPins extends LinkContext {
@@ -1414,7 +1414,7 @@ public abstract class LinkContextData {
 
         public static final /* synthetic */ void write$Self$chat_release(BindOpenPins bindOpenPins, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             LinkContext.write$Self(bindOpenPins, compositeEncoder, serialDescriptor);
-            compositeEncoder.m(serialDescriptor, 2, ChannelId$$serializer.INSTANCE, ChannelId.m1060boximpl(bindOpenPins.messageChannelId));
+            compositeEncoder.D(serialDescriptor, 2, ChannelId$$serializer.INSTANCE, ChannelId.m1059boximpl(bindOpenPins.messageChannelId));
         }
 
         /* renamed from: component1-o4g7jtM  reason: not valid java name */
@@ -1432,7 +1432,7 @@ public abstract class LinkContextData {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof BindOpenPins) && ChannelId.m1064equalsimpl0(this.messageChannelId, ((BindOpenPins) obj).messageChannelId);
+            return (obj instanceof BindOpenPins) && ChannelId.m1063equalsimpl0(this.messageChannelId, ((BindOpenPins) obj).messageChannelId);
         }
 
         /* renamed from: getMessageChannelId-o4g7jtM  reason: not valid java name */
@@ -1441,13 +1441,13 @@ public abstract class LinkContextData {
         }
 
         public int hashCode() {
-            return ChannelId.m1065hashCodeimpl(this.messageChannelId);
+            return ChannelId.m1064hashCodeimpl(this.messageChannelId);
         }
 
         @NotNull
         public String toString() {
-            String m1067toStringimpl = ChannelId.m1067toStringimpl(this.messageChannelId);
-            return "BindOpenPins(messageChannelId=" + m1067toStringimpl + ")";
+            String m1066toStringimpl = ChannelId.m1066toStringimpl(this.messageChannelId);
+            return "BindOpenPins(messageChannelId=" + m1066toStringimpl + ")";
         }
 
         public /* synthetic */ BindOpenPins(long j10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -1460,7 +1460,7 @@ public abstract class LinkContextData {
             if (5 != (i10 & 5)) {
                 v1.b(i10, 5, LinkContextData$BindOpenPins$$serializer.INSTANCE.getDescriptor());
             }
-            this.messageChannelId = channelId.m1069unboximpl();
+            this.messageChannelId = channelId.m1068unboximpl();
         }
 
         private BindOpenPins(long j10) {
@@ -1469,7 +1469,7 @@ public abstract class LinkContextData {
         }
     }
 
-    @ys.m
+    @at.m
     @Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 )2\u00020\u0001:\u0002()B-\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0003¢\u0006\u0004\b\u0007\u0010\bBW\b\u0010\u0012\u0006\u0010\t\u001a\u00020\n\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000f¢\u0006\u0004\b\u0007\u0010\u0010J\t\u0010\u0016\u001a\u00020\u0003HÆ\u0003J\u000b\u0010\u0017\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u0010\u0018\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u0010\u0019\u001a\u0004\u0018\u00010\u0003HÆ\u0003J7\u0010\u001a\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0003HÆ\u0001J\u0013\u0010\u001b\u001a\u00020\r2\b\u0010\u001c\u001a\u0004\u0018\u00010\u001dHÖ\u0003J\t\u0010\u001e\u001a\u00020\nHÖ\u0001J\t\u0010\u001f\u001a\u00020\u0003HÖ\u0001J%\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020\u00002\u0006\u0010#\u001a\u00020$2\u0006\u0010%\u001a\u00020&H\u0001¢\u0006\u0002\b'R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0012R\u0013\u0010\u0005\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0012R\u0013\u0010\u0006\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0012¨\u0006*"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindOpenRoleSubscriptionOverview;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$LinkContext;", "guildId", "", "messageId", "channelId", "roleSubscriptionListingId", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "seen0", "", "action", "medium", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getGuildId", "()Ljava/lang/String;", "getMessageId", "getChannelId", "getRoleSubscriptionListingId", "component1", "component2", "component3", "component4", "copy", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class BindOpenRoleSubscriptionOverview extends LinkContext {
@@ -1527,11 +1527,11 @@ public abstract class LinkContextData {
 
         public static final /* synthetic */ void write$Self$chat_release(BindOpenRoleSubscriptionOverview bindOpenRoleSubscriptionOverview, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             LinkContext.write$Self(bindOpenRoleSubscriptionOverview, compositeEncoder, serialDescriptor);
-            compositeEncoder.x(serialDescriptor, 2, bindOpenRoleSubscriptionOverview.guildId);
-            n2 n2Var = n2.f7662a;
-            compositeEncoder.B(serialDescriptor, 3, n2Var, bindOpenRoleSubscriptionOverview.messageId);
-            compositeEncoder.B(serialDescriptor, 4, n2Var, bindOpenRoleSubscriptionOverview.channelId);
-            compositeEncoder.B(serialDescriptor, 5, n2Var, bindOpenRoleSubscriptionOverview.roleSubscriptionListingId);
+            compositeEncoder.y(serialDescriptor, 2, bindOpenRoleSubscriptionOverview.guildId);
+            n2 n2Var = n2.f20978a;
+            compositeEncoder.s(serialDescriptor, 3, n2Var, bindOpenRoleSubscriptionOverview.messageId);
+            compositeEncoder.s(serialDescriptor, 4, n2Var, bindOpenRoleSubscriptionOverview.channelId);
+            compositeEncoder.s(serialDescriptor, 5, n2Var, bindOpenRoleSubscriptionOverview.roleSubscriptionListingId);
         }
 
         @NotNull
@@ -1615,7 +1615,7 @@ public abstract class LinkContextData {
         }
     }
 
-    @ys.m
+    @at.m
     @Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 %2\u00020\u0001:\u0002$%B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005B9\b\u0010\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\u0004\b\u0004\u0010\u000eJ\u0010\u0010\u0012\u001a\u00020\u0003HÆ\u0003¢\u0006\u0004\b\u0013\u0010\u0010J\u001a\u0010\u0014\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u0003HÆ\u0001¢\u0006\u0004\b\u0015\u0010\u0016J\u0013\u0010\u0017\u001a\u00020\u000b2\b\u0010\u0018\u001a\u0004\u0018\u00010\u0019HÖ\u0003J\t\u0010\u001a\u001a\u00020\u0007HÖ\u0001J\t\u0010\u001b\u001a\u00020\tHÖ\u0001J%\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u00002\u0006\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020\"H\u0001¢\u0006\u0002\b#R\u0013\u0010\u0002\u001a\u00020\u0003¢\u0006\n\n\u0002\u0010\u0011\u001a\u0004\b\u000f\u0010\u0010¨\u0006&"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindOpenThreadChannel;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$LinkContext;", "threadId", "Lcom/discord/primitives/ChannelId;", "<init>", "(JLkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "", "action", "", "medium", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/Boolean;Lcom/discord/primitives/ChannelId;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getThreadId-o4g7jtM", "()J", "J", "component1", "component1-o4g7jtM", "copy", "copy-R7gqayM", "(J)Lcom/discord/chat/bridge/contentnode/LinkContextData$BindOpenThreadChannel;", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class BindOpenThreadChannel extends LinkContext {
@@ -1653,7 +1653,7 @@ public abstract class LinkContextData {
 
         public static final /* synthetic */ void write$Self$chat_release(BindOpenThreadChannel bindOpenThreadChannel, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             LinkContext.write$Self(bindOpenThreadChannel, compositeEncoder, serialDescriptor);
-            compositeEncoder.m(serialDescriptor, 2, ChannelId$$serializer.INSTANCE, ChannelId.m1060boximpl(bindOpenThreadChannel.threadId));
+            compositeEncoder.D(serialDescriptor, 2, ChannelId$$serializer.INSTANCE, ChannelId.m1059boximpl(bindOpenThreadChannel.threadId));
         }
 
         /* renamed from: component1-o4g7jtM  reason: not valid java name */
@@ -1671,7 +1671,7 @@ public abstract class LinkContextData {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof BindOpenThreadChannel) && ChannelId.m1064equalsimpl0(this.threadId, ((BindOpenThreadChannel) obj).threadId);
+            return (obj instanceof BindOpenThreadChannel) && ChannelId.m1063equalsimpl0(this.threadId, ((BindOpenThreadChannel) obj).threadId);
         }
 
         /* renamed from: getThreadId-o4g7jtM  reason: not valid java name */
@@ -1680,13 +1680,13 @@ public abstract class LinkContextData {
         }
 
         public int hashCode() {
-            return ChannelId.m1065hashCodeimpl(this.threadId);
+            return ChannelId.m1064hashCodeimpl(this.threadId);
         }
 
         @NotNull
         public String toString() {
-            String m1067toStringimpl = ChannelId.m1067toStringimpl(this.threadId);
-            return "BindOpenThreadChannel(threadId=" + m1067toStringimpl + ")";
+            String m1066toStringimpl = ChannelId.m1066toStringimpl(this.threadId);
+            return "BindOpenThreadChannel(threadId=" + m1066toStringimpl + ")";
         }
 
         public /* synthetic */ BindOpenThreadChannel(long j10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -1699,7 +1699,7 @@ public abstract class LinkContextData {
             if (5 != (i10 & 5)) {
                 v1.b(i10, 5, LinkContextData$BindOpenThreadChannel$$serializer.INSTANCE.getDescriptor());
             }
-            this.threadId = channelId.m1069unboximpl();
+            this.threadId = channelId.m1068unboximpl();
         }
 
         private BindOpenThreadChannel(long j10) {
@@ -1708,7 +1708,7 @@ public abstract class LinkContextData {
         }
     }
 
-    @ys.m
+    @at.m
     @Metadata(d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 &2\u00020\u0001:\u0002%&B\u001b\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\u0004\b\u0006\u0010\u0007BC\b\u0010\u0012\u0006\u0010\b\u001a\u00020\u0005\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\u0004\b\u0006\u0010\u000eJ\t\u0010\u0014\u001a\u00020\u0003HÆ\u0003J\u0010\u0010\u0015\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u0010\u0012J$\u0010\u0016\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005HÆ\u0001¢\u0006\u0002\u0010\u0017J\u0013\u0010\u0018\u001a\u00020\u000b2\b\u0010\u0019\u001a\u0004\u0018\u00010\u001aHÖ\u0003J\t\u0010\u001b\u001a\u00020\u0005HÖ\u0001J\t\u0010\u001c\u001a\u00020\u0003HÖ\u0001J%\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u00002\u0006\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020#H\u0001¢\u0006\u0002\b$R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0015\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\n\n\u0002\u0010\u0013\u001a\u0004\b\u0011\u0010\u0012¨\u0006'"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindOpenUrl;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$LinkContext;", "url", "", "linkColor", "", "<init>", "(Ljava/lang/String;Ljava/lang/Integer;)V", "seen0", "action", "medium", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Integer;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getUrl", "()Ljava/lang/String;", "getLinkColor", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "component1", "component2", "copy", "(Ljava/lang/String;Ljava/lang/Integer;)Lcom/discord/chat/bridge/contentnode/LinkContextData$BindOpenUrl;", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class BindOpenUrl extends LinkContext {
@@ -1760,9 +1760,9 @@ public abstract class LinkContextData {
 
         public static final /* synthetic */ void write$Self$chat_release(BindOpenUrl bindOpenUrl, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             LinkContext.write$Self(bindOpenUrl, compositeEncoder, serialDescriptor);
-            compositeEncoder.x(serialDescriptor, 2, bindOpenUrl.url);
-            if (compositeEncoder.y(serialDescriptor, 3) || bindOpenUrl.linkColor != null) {
-                compositeEncoder.B(serialDescriptor, 3, p0.f7678a, bindOpenUrl.linkColor);
+            compositeEncoder.y(serialDescriptor, 2, bindOpenUrl.url);
+            if (compositeEncoder.z(serialDescriptor, 3) || bindOpenUrl.linkColor != null) {
+                compositeEncoder.s(serialDescriptor, 3, p0.f20994a, bindOpenUrl.linkColor);
             }
         }
 
@@ -1827,7 +1827,7 @@ public abstract class LinkContextData {
         }
     }
 
-    @ys.m
+    @at.m
     @Metadata(d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 *2\u00020\u0001:\u0002)*B\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0004\b\u0006\u0010\u0007BC\b\u0010\u0012\u0006\u0010\b\u001a\u00020\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000f¢\u0006\u0004\b\u0006\u0010\u0010J\u0010\u0010\u0015\u001a\u00020\u0003HÆ\u0003¢\u0006\u0004\b\u0016\u0010\u0012J\u0010\u0010\u0017\u001a\u00020\u0005HÆ\u0003¢\u0006\u0004\b\u0018\u0010\u0012J$\u0010\u0019\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u0005HÆ\u0001¢\u0006\u0004\b\u001a\u0010\u001bJ\u0013\u0010\u001c\u001a\u00020\r2\b\u0010\u001d\u001a\u0004\u0018\u00010\u001eHÖ\u0003J\t\u0010\u001f\u001a\u00020\tHÖ\u0001J\t\u0010 \u001a\u00020\u000bHÖ\u0001J%\u0010!\u001a\u00020\"2\u0006\u0010#\u001a\u00020\u00002\u0006\u0010$\u001a\u00020%2\u0006\u0010&\u001a\u00020'H\u0001¢\u0006\u0002\b(R\u0013\u0010\u0002\u001a\u00020\u0003¢\u0006\n\n\u0002\u0010\u0013\u001a\u0004\b\u0011\u0010\u0012R\u0013\u0010\u0004\u001a\u00020\u0005¢\u0006\n\n\u0002\u0010\u0013\u001a\u0004\b\u0014\u0010\u0012¨\u0006+"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindTapActivityText;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$LinkContext;", "applicationUserId", "Lcom/discord/primitives/UserId;", "messageChannelId", "Lcom/discord/primitives/ChannelId;", "<init>", "(JJLkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "", "action", "", "medium", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/Boolean;Lcom/discord/primitives/UserId;Lcom/discord/primitives/ChannelId;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getApplicationUserId-re6GcUE", "()J", "J", "getMessageChannelId-o4g7jtM", "component1", "component1-re6GcUE", "component2", "component2-o4g7jtM", "copy", "copy-mgJWFPo", "(JJ)Lcom/discord/chat/bridge/contentnode/LinkContextData$BindTapActivityText;", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class BindTapActivityText extends LinkContext {
@@ -1869,8 +1869,8 @@ public abstract class LinkContextData {
 
         public static final /* synthetic */ void write$Self$chat_release(BindTapActivityText bindTapActivityText, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             LinkContext.write$Self(bindTapActivityText, compositeEncoder, serialDescriptor);
-            compositeEncoder.m(serialDescriptor, 2, UserId$$serializer.INSTANCE, UserId.m1138boximpl(bindTapActivityText.applicationUserId));
-            compositeEncoder.m(serialDescriptor, 3, ChannelId$$serializer.INSTANCE, ChannelId.m1060boximpl(bindTapActivityText.messageChannelId));
+            compositeEncoder.D(serialDescriptor, 2, UserId$$serializer.INSTANCE, UserId.m1137boximpl(bindTapActivityText.applicationUserId));
+            compositeEncoder.D(serialDescriptor, 3, ChannelId$$serializer.INSTANCE, ChannelId.m1059boximpl(bindTapActivityText.messageChannelId));
         }
 
         /* renamed from: component1-re6GcUE  reason: not valid java name */
@@ -1895,7 +1895,7 @@ public abstract class LinkContextData {
             }
             if (obj instanceof BindTapActivityText) {
                 BindTapActivityText bindTapActivityText = (BindTapActivityText) obj;
-                return UserId.m1142equalsimpl0(this.applicationUserId, bindTapActivityText.applicationUserId) && ChannelId.m1064equalsimpl0(this.messageChannelId, bindTapActivityText.messageChannelId);
+                return UserId.m1141equalsimpl0(this.applicationUserId, bindTapActivityText.applicationUserId) && ChannelId.m1063equalsimpl0(this.messageChannelId, bindTapActivityText.messageChannelId);
             }
             return false;
         }
@@ -1911,14 +1911,14 @@ public abstract class LinkContextData {
         }
 
         public int hashCode() {
-            return (UserId.m1143hashCodeimpl(this.applicationUserId) * 31) + ChannelId.m1065hashCodeimpl(this.messageChannelId);
+            return (UserId.m1142hashCodeimpl(this.applicationUserId) * 31) + ChannelId.m1064hashCodeimpl(this.messageChannelId);
         }
 
         @NotNull
         public String toString() {
-            String m1145toStringimpl = UserId.m1145toStringimpl(this.applicationUserId);
-            String m1067toStringimpl = ChannelId.m1067toStringimpl(this.messageChannelId);
-            return "BindTapActivityText(applicationUserId=" + m1145toStringimpl + ", messageChannelId=" + m1067toStringimpl + ")";
+            String m1144toStringimpl = UserId.m1144toStringimpl(this.applicationUserId);
+            String m1066toStringimpl = ChannelId.m1066toStringimpl(this.messageChannelId);
+            return "BindTapActivityText(applicationUserId=" + m1144toStringimpl + ", messageChannelId=" + m1066toStringimpl + ")";
         }
 
         public /* synthetic */ BindTapActivityText(long j10, long j11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -1931,8 +1931,8 @@ public abstract class LinkContextData {
             if (13 != (i10 & 13)) {
                 v1.b(i10, 13, LinkContextData$BindTapActivityText$$serializer.INSTANCE.getDescriptor());
             }
-            this.applicationUserId = userId.m1147unboximpl();
-            this.messageChannelId = channelId.m1069unboximpl();
+            this.applicationUserId = userId.m1146unboximpl();
+            this.messageChannelId = channelId.m1068unboximpl();
         }
 
         private BindTapActivityText(long j10, long j11) {
@@ -1942,7 +1942,7 @@ public abstract class LinkContextData {
         }
     }
 
-    @ys.m
+    @at.m
     @Metadata(d1 = {"\u0000^\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0019\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 :2\u00020\u0001:\u00029:B/\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\u0006\u0010\u0007\u001a\u00020\b\u0012\u0006\u0010\t\u001a\u00020\n¢\u0006\u0004\b\u000b\u0010\fBa\b\u0010\u0012\u0006\u0010\r\u001a\u00020\u000e\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u0012\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\b\u0010\t\u001a\u0004\u0018\u00010\n\u0012\b\u0010\u0013\u001a\u0004\u0018\u00010\u0014¢\u0006\u0004\b\u000b\u0010\u0015J\u0010\u0010 \u001a\u00020\u0003HÆ\u0003¢\u0006\u0004\b!\u0010\u0017J\u0010\u0010\"\u001a\u00020\u0005HÆ\u0003¢\u0006\u0004\b#\u0010\u001aJ\u0010\u0010$\u001a\u00020\u0003HÆ\u0003¢\u0006\u0004\b%\u0010\u0017J\t\u0010&\u001a\u00020\bHÆ\u0003J\u0010\u0010'\u001a\u00020\nHÆ\u0003¢\u0006\u0004\b(\u0010\u0017JB\u0010)\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00032\b\b\u0002\u0010\u0007\u001a\u00020\b2\b\b\u0002\u0010\t\u001a\u00020\nHÆ\u0001¢\u0006\u0004\b*\u0010+J\u0013\u0010,\u001a\u00020\u00122\b\u0010-\u001a\u0004\u0018\u00010.HÖ\u0003J\t\u0010/\u001a\u00020\u000eHÖ\u0001J\t\u00100\u001a\u00020\u0010HÖ\u0001J%\u00101\u001a\u0002022\u0006\u00103\u001a\u00020\u00002\u0006\u00104\u001a\u0002052\u0006\u00106\u001a\u000207H\u0001¢\u0006\u0002\b8R\u0013\u0010\u0002\u001a\u00020\u0003¢\u0006\n\n\u0002\u0010\u0018\u001a\u0004\b\u0016\u0010\u0017R\u0013\u0010\u0004\u001a\u00020\u0005¢\u0006\n\n\u0002\u0010\u001b\u001a\u0004\b\u0019\u0010\u001aR\u0013\u0010\u0006\u001a\u00020\u0003¢\u0006\n\n\u0002\u0010\u0018\u001a\u0004\b\u001c\u0010\u0017R\u0011\u0010\u0007\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u001eR\u0013\u0010\t\u001a\u00020\n¢\u0006\n\n\u0002\u0010\u0018\u001a\u0004\b\u001f\u0010\u0017¨\u0006;"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindTapCommandName;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$LinkContext;", "userId", "Lcom/discord/primitives/UserId;", "messageId", "Lcom/discord/primitives/MessageId;", "applicationUserId", "messageType", "Lcom/discord/chat/bridge/MessageType;", "messageChannelId", "Lcom/discord/primitives/ChannelId;", "<init>", "(JLjava/lang/String;JLcom/discord/chat/bridge/MessageType;JLkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "", "action", "", "medium", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/Boolean;Lcom/discord/primitives/UserId;Ljava/lang/String;Lcom/discord/primitives/UserId;Lcom/discord/chat/bridge/MessageType;Lcom/discord/primitives/ChannelId;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getUserId-re6GcUE", "()J", "J", "getMessageId-3Eiw7ao", "()Ljava/lang/String;", "Ljava/lang/String;", "getApplicationUserId-re6GcUE", "getMessageType", "()Lcom/discord/chat/bridge/MessageType;", "getMessageChannelId-o4g7jtM", "component1", "component1-re6GcUE", "component2", "component2-3Eiw7ao", "component3", "component3-re6GcUE", "component4", "component5", "component5-o4g7jtM", "copy", "copy-7bunf98", "(JLjava/lang/String;JLcom/discord/chat/bridge/MessageType;J)Lcom/discord/chat/bridge/contentnode/LinkContextData$BindTapCommandName;", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class BindTapCommandName extends LinkContext {
@@ -1999,11 +1999,11 @@ public abstract class LinkContextData {
         public static final /* synthetic */ void write$Self$chat_release(BindTapCommandName bindTapCommandName, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             LinkContext.write$Self(bindTapCommandName, compositeEncoder, serialDescriptor);
             UserId$$serializer userId$$serializer = UserId$$serializer.INSTANCE;
-            compositeEncoder.m(serialDescriptor, 2, userId$$serializer, UserId.m1138boximpl(bindTapCommandName.userId));
-            compositeEncoder.m(serialDescriptor, 3, MessageId$$serializer.INSTANCE, MessageId.m1086boximpl(bindTapCommandName.messageId));
-            compositeEncoder.m(serialDescriptor, 4, userId$$serializer, UserId.m1138boximpl(bindTapCommandName.applicationUserId));
-            compositeEncoder.m(serialDescriptor, 5, MessageType.Serializer.INSTANCE, bindTapCommandName.messageType);
-            compositeEncoder.m(serialDescriptor, 6, ChannelId$$serializer.INSTANCE, ChannelId.m1060boximpl(bindTapCommandName.messageChannelId));
+            compositeEncoder.D(serialDescriptor, 2, userId$$serializer, UserId.m1137boximpl(bindTapCommandName.userId));
+            compositeEncoder.D(serialDescriptor, 3, MessageId$$serializer.INSTANCE, MessageId.m1085boximpl(bindTapCommandName.messageId));
+            compositeEncoder.D(serialDescriptor, 4, userId$$serializer, UserId.m1137boximpl(bindTapCommandName.applicationUserId));
+            compositeEncoder.D(serialDescriptor, 5, MessageType.Serializer.INSTANCE, bindTapCommandName.messageType);
+            compositeEncoder.D(serialDescriptor, 6, ChannelId$$serializer.INSTANCE, ChannelId.m1059boximpl(bindTapCommandName.messageChannelId));
         }
 
         /* renamed from: component1-re6GcUE  reason: not valid java name */
@@ -2046,7 +2046,7 @@ public abstract class LinkContextData {
             }
             if (obj instanceof BindTapCommandName) {
                 BindTapCommandName bindTapCommandName = (BindTapCommandName) obj;
-                return UserId.m1142equalsimpl0(this.userId, bindTapCommandName.userId) && MessageId.m1090equalsimpl0(this.messageId, bindTapCommandName.messageId) && UserId.m1142equalsimpl0(this.applicationUserId, bindTapCommandName.applicationUserId) && this.messageType == bindTapCommandName.messageType && ChannelId.m1064equalsimpl0(this.messageChannelId, bindTapCommandName.messageChannelId);
+                return UserId.m1141equalsimpl0(this.userId, bindTapCommandName.userId) && MessageId.m1089equalsimpl0(this.messageId, bindTapCommandName.messageId) && UserId.m1141equalsimpl0(this.applicationUserId, bindTapCommandName.applicationUserId) && this.messageType == bindTapCommandName.messageType && ChannelId.m1063equalsimpl0(this.messageChannelId, bindTapCommandName.messageChannelId);
             }
             return false;
         }
@@ -2078,17 +2078,17 @@ public abstract class LinkContextData {
         }
 
         public int hashCode() {
-            return (((((((UserId.m1143hashCodeimpl(this.userId) * 31) + MessageId.m1091hashCodeimpl(this.messageId)) * 31) + UserId.m1143hashCodeimpl(this.applicationUserId)) * 31) + this.messageType.hashCode()) * 31) + ChannelId.m1065hashCodeimpl(this.messageChannelId);
+            return (((((((UserId.m1142hashCodeimpl(this.userId) * 31) + MessageId.m1090hashCodeimpl(this.messageId)) * 31) + UserId.m1142hashCodeimpl(this.applicationUserId)) * 31) + this.messageType.hashCode()) * 31) + ChannelId.m1064hashCodeimpl(this.messageChannelId);
         }
 
         @NotNull
         public String toString() {
-            String m1145toStringimpl = UserId.m1145toStringimpl(this.userId);
-            String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
-            String m1145toStringimpl2 = UserId.m1145toStringimpl(this.applicationUserId);
+            String m1144toStringimpl = UserId.m1144toStringimpl(this.userId);
+            String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
+            String m1144toStringimpl2 = UserId.m1144toStringimpl(this.applicationUserId);
             MessageType messageType = this.messageType;
-            String m1067toStringimpl = ChannelId.m1067toStringimpl(this.messageChannelId);
-            return "BindTapCommandName(userId=" + m1145toStringimpl + ", messageId=" + m1093toStringimpl + ", applicationUserId=" + m1145toStringimpl2 + ", messageType=" + messageType + ", messageChannelId=" + m1067toStringimpl + ")";
+            String m1066toStringimpl = ChannelId.m1066toStringimpl(this.messageChannelId);
+            return "BindTapCommandName(userId=" + m1144toStringimpl + ", messageId=" + m1092toStringimpl + ", applicationUserId=" + m1144toStringimpl2 + ", messageType=" + messageType + ", messageChannelId=" + m1066toStringimpl + ")";
         }
 
         public /* synthetic */ BindTapCommandName(long j10, String str, long j11, MessageType messageType, long j12, DefaultConstructorMarker defaultConstructorMarker) {
@@ -2101,11 +2101,11 @@ public abstract class LinkContextData {
             if (125 != (i10 & 125)) {
                 v1.b(i10, 125, LinkContextData$BindTapCommandName$$serializer.INSTANCE.getDescriptor());
             }
-            this.userId = userId.m1147unboximpl();
+            this.userId = userId.m1146unboximpl();
             this.messageId = str2;
-            this.applicationUserId = userId2.m1147unboximpl();
+            this.applicationUserId = userId2.m1146unboximpl();
             this.messageType = messageType;
-            this.messageChannelId = channelId.m1069unboximpl();
+            this.messageChannelId = channelId.m1068unboximpl();
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -2121,7 +2121,7 @@ public abstract class LinkContextData {
         }
     }
 
-    @ys.m
+    @at.m
     @Metadata(d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 *2\u00020\u0001:\u0002)*B\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0004\b\u0006\u0010\u0007BC\b\u0010\u0012\u0006\u0010\b\u001a\u00020\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000f¢\u0006\u0004\b\u0006\u0010\u0010J\u0010\u0010\u0015\u001a\u00020\u0003HÆ\u0003¢\u0006\u0004\b\u0016\u0010\u0012J\u0010\u0010\u0017\u001a\u00020\u0005HÆ\u0003¢\u0006\u0004\b\u0018\u0010\u0012J$\u0010\u0019\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u0005HÆ\u0001¢\u0006\u0004\b\u001a\u0010\u001bJ\u0013\u0010\u001c\u001a\u00020\r2\b\u0010\u001d\u001a\u0004\u0018\u00010\u001eHÖ\u0003J\t\u0010\u001f\u001a\u00020\tHÖ\u0001J\t\u0010 \u001a\u00020\u000bHÖ\u0001J%\u0010!\u001a\u00020\"2\u0006\u0010#\u001a\u00020\u00002\u0006\u0010$\u001a\u00020%2\u0006\u0010&\u001a\u00020'H\u0001¢\u0006\u0002\b(R\u0013\u0010\u0002\u001a\u00020\u0003¢\u0006\n\n\u0002\u0010\u0013\u001a\u0004\b\u0011\u0010\u0012R\u0013\u0010\u0004\u001a\u00020\u0005¢\u0006\n\n\u0002\u0010\u0013\u001a\u0004\b\u0014\u0010\u0012¨\u0006+"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindTapUsername;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$LinkContext;", "userId", "Lcom/discord/primitives/UserId;", "messageChannelId", "Lcom/discord/primitives/ChannelId;", "<init>", "(JJLkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "", "action", "", "medium", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/Boolean;Lcom/discord/primitives/UserId;Lcom/discord/primitives/ChannelId;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getUserId-re6GcUE", "()J", "J", "getMessageChannelId-o4g7jtM", "component1", "component1-re6GcUE", "component2", "component2-o4g7jtM", "copy", "copy-mgJWFPo", "(JJ)Lcom/discord/chat/bridge/contentnode/LinkContextData$BindTapUsername;", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class BindTapUsername extends LinkContext {
@@ -2163,8 +2163,8 @@ public abstract class LinkContextData {
 
         public static final /* synthetic */ void write$Self$chat_release(BindTapUsername bindTapUsername, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             LinkContext.write$Self(bindTapUsername, compositeEncoder, serialDescriptor);
-            compositeEncoder.m(serialDescriptor, 2, UserId$$serializer.INSTANCE, UserId.m1138boximpl(bindTapUsername.userId));
-            compositeEncoder.m(serialDescriptor, 3, ChannelId$$serializer.INSTANCE, ChannelId.m1060boximpl(bindTapUsername.messageChannelId));
+            compositeEncoder.D(serialDescriptor, 2, UserId$$serializer.INSTANCE, UserId.m1137boximpl(bindTapUsername.userId));
+            compositeEncoder.D(serialDescriptor, 3, ChannelId$$serializer.INSTANCE, ChannelId.m1059boximpl(bindTapUsername.messageChannelId));
         }
 
         /* renamed from: component1-re6GcUE  reason: not valid java name */
@@ -2189,7 +2189,7 @@ public abstract class LinkContextData {
             }
             if (obj instanceof BindTapUsername) {
                 BindTapUsername bindTapUsername = (BindTapUsername) obj;
-                return UserId.m1142equalsimpl0(this.userId, bindTapUsername.userId) && ChannelId.m1064equalsimpl0(this.messageChannelId, bindTapUsername.messageChannelId);
+                return UserId.m1141equalsimpl0(this.userId, bindTapUsername.userId) && ChannelId.m1063equalsimpl0(this.messageChannelId, bindTapUsername.messageChannelId);
             }
             return false;
         }
@@ -2205,14 +2205,14 @@ public abstract class LinkContextData {
         }
 
         public int hashCode() {
-            return (UserId.m1143hashCodeimpl(this.userId) * 31) + ChannelId.m1065hashCodeimpl(this.messageChannelId);
+            return (UserId.m1142hashCodeimpl(this.userId) * 31) + ChannelId.m1064hashCodeimpl(this.messageChannelId);
         }
 
         @NotNull
         public String toString() {
-            String m1145toStringimpl = UserId.m1145toStringimpl(this.userId);
-            String m1067toStringimpl = ChannelId.m1067toStringimpl(this.messageChannelId);
-            return "BindTapUsername(userId=" + m1145toStringimpl + ", messageChannelId=" + m1067toStringimpl + ")";
+            String m1144toStringimpl = UserId.m1144toStringimpl(this.userId);
+            String m1066toStringimpl = ChannelId.m1066toStringimpl(this.messageChannelId);
+            return "BindTapUsername(userId=" + m1144toStringimpl + ", messageChannelId=" + m1066toStringimpl + ")";
         }
 
         public /* synthetic */ BindTapUsername(long j10, long j11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -2225,8 +2225,8 @@ public abstract class LinkContextData {
             if (13 != (i10 & 13)) {
                 v1.b(i10, 13, LinkContextData$BindTapUsername$$serializer.INSTANCE.getDescriptor());
             }
-            this.userId = userId.m1147unboximpl();
-            this.messageChannelId = channelId.m1069unboximpl();
+            this.userId = userId.m1146unboximpl();
+            this.messageChannelId = channelId.m1068unboximpl();
         }
 
         private BindTapUsername(long j10, long j11) {
@@ -2236,7 +2236,7 @@ public abstract class LinkContextData {
         }
     }
 
-    @ys.m
+    @at.m
     @Metadata(d1 = {"\u0000Z\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u001e\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 @2\u00020\u0001:\u0002?@BW\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\u0004\b\u000e\u0010\u000fBu\b\u0010\u0012\u0006\u0010\u0010\u001a\u00020\u0005\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u0012\u0012\b\u0010\u0013\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r\u0012\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015¢\u0006\u0004\b\u000e\u0010\u0016J\u0010\u0010&\u001a\u00020\u0003HÆ\u0003¢\u0006\u0004\b'\u0010\u0018J\u0010\u0010(\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u0010\u001bJ\u0010\u0010)\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u0010\u001bJ\u0010\u0010*\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u0010\u001bJ\u000b\u0010+\u001a\u0004\u0018\u00010\tHÆ\u0003J\u0010\u0010,\u001a\u0004\u0018\u00010\u000bHÆ\u0003¢\u0006\u0002\u0010\"J\u0010\u0010-\u001a\u0004\u0018\u00010\rHÆ\u0003¢\u0006\u0002\b.Jb\u0010/\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\rHÆ\u0001¢\u0006\u0004\b0\u00101J\u0013\u00102\u001a\u00020\u000b2\b\u00103\u001a\u0004\u0018\u000104HÖ\u0003J\t\u00105\u001a\u00020\u0005HÖ\u0001J\t\u00106\u001a\u00020\u0012HÖ\u0001J%\u00107\u001a\u0002082\u0006\u00109\u001a\u00020\u00002\u0006\u0010:\u001a\u00020;2\u0006\u0010<\u001a\u00020=H\u0001¢\u0006\u0002\b>R\u0013\u0010\u0002\u001a\u00020\u0003¢\u0006\n\n\u0002\u0010\u0019\u001a\u0004\b\u0017\u0010\u0018R\u0015\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\n\n\u0002\u0010\u001c\u001a\u0004\b\u001a\u0010\u001bR\u0015\u0010\u0006\u001a\u0004\u0018\u00010\u0005¢\u0006\n\n\u0002\u0010\u001c\u001a\u0004\b\u001d\u0010\u001bR\u0015\u0010\u0007\u001a\u0004\u0018\u00010\u0005¢\u0006\n\n\u0002\u0010\u001c\u001a\u0004\b\u001e\u0010\u001bR\u0013\u0010\b\u001a\u0004\u0018\u00010\t¢\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010 R\u0015\u0010\n\u001a\u0004\u0018\u00010\u000b¢\u0006\n\n\u0002\u0010#\u001a\u0004\b!\u0010\"R\u0013\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\b\n\u0000\u001a\u0004\b$\u0010%¨\u0006A"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindUserMenu;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$LinkContext;", "userId", "Lcom/discord/primitives/UserId;", "colorString", "", "linkColor", "roleColor", "roleColors", "Lcom/discord/chat/bridge/rolecolors/RoleColors;", "shouldShowRoleDot", "", "messageChannelId", "Lcom/discord/primitives/ChannelId;", "<init>", "(JLjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/discord/chat/bridge/rolecolors/RoleColors;Ljava/lang/Boolean;Lcom/discord/primitives/ChannelId;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "action", "", "medium", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/Boolean;Lcom/discord/primitives/UserId;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/discord/chat/bridge/rolecolors/RoleColors;Ljava/lang/Boolean;Lcom/discord/primitives/ChannelId;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getUserId-re6GcUE", "()J", "J", "getColorString", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "getLinkColor", "getRoleColor", "getRoleColors", "()Lcom/discord/chat/bridge/rolecolors/RoleColors;", "getShouldShowRoleDot", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getMessageChannelId-qMVnFVQ", "()Lcom/discord/primitives/ChannelId;", "component1", "component1-re6GcUE", "component2", "component3", "component4", "component5", "component6", "component7", "component7-qMVnFVQ", "copy", "copy-wSCuitM", "(JLjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Lcom/discord/chat/bridge/rolecolors/RoleColors;Ljava/lang/Boolean;Lcom/discord/primitives/ChannelId;)Lcom/discord/chat/bridge/contentnode/LinkContextData$BindUserMenu;", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class BindUserMenu extends LinkContext {
@@ -2296,24 +2296,24 @@ public abstract class LinkContextData {
 
         public static final /* synthetic */ void write$Self$chat_release(BindUserMenu bindUserMenu, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             LinkContext.write$Self(bindUserMenu, compositeEncoder, serialDescriptor);
-            compositeEncoder.m(serialDescriptor, 2, UserId$$serializer.INSTANCE, UserId.m1138boximpl(bindUserMenu.userId));
-            if (compositeEncoder.y(serialDescriptor, 3) || bindUserMenu.colorString != null) {
-                compositeEncoder.B(serialDescriptor, 3, p0.f7678a, bindUserMenu.colorString);
+            compositeEncoder.D(serialDescriptor, 2, UserId$$serializer.INSTANCE, UserId.m1137boximpl(bindUserMenu.userId));
+            if (compositeEncoder.z(serialDescriptor, 3) || bindUserMenu.colorString != null) {
+                compositeEncoder.s(serialDescriptor, 3, p0.f20994a, bindUserMenu.colorString);
             }
-            if (compositeEncoder.y(serialDescriptor, 4) || bindUserMenu.linkColor != null) {
-                compositeEncoder.B(serialDescriptor, 4, p0.f7678a, bindUserMenu.linkColor);
+            if (compositeEncoder.z(serialDescriptor, 4) || bindUserMenu.linkColor != null) {
+                compositeEncoder.s(serialDescriptor, 4, p0.f20994a, bindUserMenu.linkColor);
             }
-            if (compositeEncoder.y(serialDescriptor, 5) || bindUserMenu.roleColor != null) {
-                compositeEncoder.B(serialDescriptor, 5, p0.f7678a, bindUserMenu.roleColor);
+            if (compositeEncoder.z(serialDescriptor, 5) || bindUserMenu.roleColor != null) {
+                compositeEncoder.s(serialDescriptor, 5, p0.f20994a, bindUserMenu.roleColor);
             }
-            if (compositeEncoder.y(serialDescriptor, 6) || bindUserMenu.roleColors != null) {
-                compositeEncoder.B(serialDescriptor, 6, RoleColors$$serializer.INSTANCE, bindUserMenu.roleColors);
+            if (compositeEncoder.z(serialDescriptor, 6) || bindUserMenu.roleColors != null) {
+                compositeEncoder.s(serialDescriptor, 6, RoleColors$$serializer.INSTANCE, bindUserMenu.roleColors);
             }
-            if (compositeEncoder.y(serialDescriptor, 7) || bindUserMenu.shouldShowRoleDot != null) {
-                compositeEncoder.B(serialDescriptor, 7, bt.h.f7626a, bindUserMenu.shouldShowRoleDot);
+            if (compositeEncoder.z(serialDescriptor, 7) || bindUserMenu.shouldShowRoleDot != null) {
+                compositeEncoder.s(serialDescriptor, 7, dt.h.f20942a, bindUserMenu.shouldShowRoleDot);
             }
-            if (compositeEncoder.y(serialDescriptor, 8) || bindUserMenu.messageChannelId != null) {
-                compositeEncoder.B(serialDescriptor, 8, ChannelId$$serializer.INSTANCE, bindUserMenu.messageChannelId);
+            if (compositeEncoder.z(serialDescriptor, 8) || bindUserMenu.messageChannelId != null) {
+                compositeEncoder.s(serialDescriptor, 8, ChannelId$$serializer.INSTANCE, bindUserMenu.messageChannelId);
             }
         }
 
@@ -2359,7 +2359,7 @@ public abstract class LinkContextData {
             }
             if (obj instanceof BindUserMenu) {
                 BindUserMenu bindUserMenu = (BindUserMenu) obj;
-                return UserId.m1142equalsimpl0(this.userId, bindUserMenu.userId) && Intrinsics.areEqual(this.colorString, bindUserMenu.colorString) && Intrinsics.areEqual(this.linkColor, bindUserMenu.linkColor) && Intrinsics.areEqual(this.roleColor, bindUserMenu.roleColor) && Intrinsics.areEqual(this.roleColors, bindUserMenu.roleColors) && Intrinsics.areEqual(this.shouldShowRoleDot, bindUserMenu.shouldShowRoleDot) && Intrinsics.areEqual(this.messageChannelId, bindUserMenu.messageChannelId);
+                return UserId.m1141equalsimpl0(this.userId, bindUserMenu.userId) && Intrinsics.areEqual(this.colorString, bindUserMenu.colorString) && Intrinsics.areEqual(this.linkColor, bindUserMenu.linkColor) && Intrinsics.areEqual(this.roleColor, bindUserMenu.roleColor) && Intrinsics.areEqual(this.roleColors, bindUserMenu.roleColors) && Intrinsics.areEqual(this.shouldShowRoleDot, bindUserMenu.shouldShowRoleDot) && Intrinsics.areEqual(this.messageChannelId, bindUserMenu.messageChannelId);
             }
             return false;
         }
@@ -2395,9 +2395,9 @@ public abstract class LinkContextData {
         }
 
         public int hashCode() {
-            int m1143hashCodeimpl = UserId.m1143hashCodeimpl(this.userId) * 31;
+            int m1142hashCodeimpl = UserId.m1142hashCodeimpl(this.userId) * 31;
             Integer num = this.colorString;
-            int hashCode = (m1143hashCodeimpl + (num == null ? 0 : num.hashCode())) * 31;
+            int hashCode = (m1142hashCodeimpl + (num == null ? 0 : num.hashCode())) * 31;
             Integer num2 = this.linkColor;
             int hashCode2 = (hashCode + (num2 == null ? 0 : num2.hashCode())) * 31;
             Integer num3 = this.roleColor;
@@ -2407,19 +2407,19 @@ public abstract class LinkContextData {
             Boolean bool = this.shouldShowRoleDot;
             int hashCode5 = (hashCode4 + (bool == null ? 0 : bool.hashCode())) * 31;
             ChannelId channelId = this.messageChannelId;
-            return hashCode5 + (channelId != null ? ChannelId.m1065hashCodeimpl(channelId.m1069unboximpl()) : 0);
+            return hashCode5 + (channelId != null ? ChannelId.m1064hashCodeimpl(channelId.m1068unboximpl()) : 0);
         }
 
         @NotNull
         public String toString() {
-            String m1145toStringimpl = UserId.m1145toStringimpl(this.userId);
+            String m1144toStringimpl = UserId.m1144toStringimpl(this.userId);
             Integer num = this.colorString;
             Integer num2 = this.linkColor;
             Integer num3 = this.roleColor;
             RoleColors roleColors = this.roleColors;
             Boolean bool = this.shouldShowRoleDot;
             ChannelId channelId = this.messageChannelId;
-            return "BindUserMenu(userId=" + m1145toStringimpl + ", colorString=" + num + ", linkColor=" + num2 + ", roleColor=" + num3 + ", roleColors=" + roleColors + ", shouldShowRoleDot=" + bool + ", messageChannelId=" + channelId + ")";
+            return "BindUserMenu(userId=" + m1144toStringimpl + ", colorString=" + num + ", linkColor=" + num2 + ", roleColor=" + num3 + ", roleColors=" + roleColors + ", shouldShowRoleDot=" + bool + ", messageChannelId=" + channelId + ")";
         }
 
         public /* synthetic */ BindUserMenu(long j10, Integer num, Integer num2, Integer num3, RoleColors roleColors, Boolean bool, ChannelId channelId, DefaultConstructorMarker defaultConstructorMarker) {
@@ -2432,7 +2432,7 @@ public abstract class LinkContextData {
             if (5 != (i10 & 5)) {
                 v1.b(i10, 5, LinkContextData$BindUserMenu$$serializer.INSTANCE.getDescriptor());
             }
-            this.userId = userId.m1147unboximpl();
+            this.userId = userId.m1146unboximpl();
             if ((i10 & 8) == 0) {
                 this.colorString = null;
             } else {
@@ -2481,7 +2481,7 @@ public abstract class LinkContextData {
         }
     }
 
-    @ys.m
+    @at.m
     @Metadata(d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0087\b\u0018\u0000 &2\u00020\u0001:\u0003$%&B\u001b\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\u0004\b\u0006\u0010\u0007BC\b\u0010\u0012\u0006\u0010\b\u001a\u00020\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u000e¢\u0006\u0004\b\u0006\u0010\u000fJ\t\u0010\u0014\u001a\u00020\u0003HÆ\u0003J\u000b\u0010\u0015\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u001f\u0010\u0016\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005HÆ\u0001J\u0013\u0010\u0017\u001a\u00020\f2\b\u0010\u0018\u001a\u0004\u0018\u00010\u0019HÖ\u0003J\t\u0010\u001a\u001a\u00020\tHÖ\u0001J\t\u0010\u001b\u001a\u00020\u0005HÖ\u0001J%\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u00002\u0006\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020\"H\u0001¢\u0006\u0002\b#R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011R\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0013¨\u0006'"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindUserSurvey;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$LinkContext;", "message", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindUserSurvey$SurveyMessage;", "notificationType", "", "<init>", "(Lcom/discord/chat/bridge/contentnode/LinkContextData$BindUserSurvey$SurveyMessage;Ljava/lang/String;)V", "seen0", "", "action", "medium", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/Boolean;Lcom/discord/chat/bridge/contentnode/LinkContextData$BindUserSurvey$SurveyMessage;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getMessage", "()Lcom/discord/chat/bridge/contentnode/LinkContextData$BindUserSurvey$SurveyMessage;", "getNotificationType", "()Ljava/lang/String;", "component1", "component2", "copy", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "SurveyMessage", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class BindUserSurvey extends LinkContext {
@@ -2507,7 +2507,7 @@ public abstract class LinkContextData {
             }
         }
 
-        @ys.m
+        @at.m
         @Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0013\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 .2\u00020\u0001:\u0002-.B#\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007¢\u0006\u0004\b\b\u0010\tB9\b\u0010\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\u0004\b\b\u0010\u000eJ\u0010\u0010\u0018\u001a\u00020\u0003HÆ\u0003¢\u0006\u0004\b\u0019\u0010\u0010J\u0010\u0010\u001a\u001a\u00020\u0005HÆ\u0003¢\u0006\u0004\b\u001b\u0010\u0015J\u000b\u0010\u001c\u001a\u0004\u0018\u00010\u0007HÆ\u0003J0\u0010\u001d\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007HÆ\u0001¢\u0006\u0004\b\u001e\u0010\u001fJ\u0013\u0010 \u001a\u00020!2\b\u0010\"\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010#\u001a\u00020\u000bHÖ\u0001J\t\u0010$\u001a\u00020\u0007HÖ\u0001J%\u0010%\u001a\u00020&2\u0006\u0010'\u001a\u00020\u00002\u0006\u0010(\u001a\u00020)2\u0006\u0010*\u001a\u00020+H\u0001¢\u0006\u0002\b,R\u0013\u0010\u0002\u001a\u00020\u0003¢\u0006\n\n\u0002\u0010\u0011\u001a\u0004\b\u000f\u0010\u0010R\u001e\u0010\u0004\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\u0010\n\u0002\u0010\u0016\u0012\u0004\b\u0012\u0010\u0013\u001a\u0004\b\u0014\u0010\u0015R\u0013\u0010\u0006\u001a\u0004\u0018\u00010\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0010¨\u0006/"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindUserSurvey$SurveyMessage;", "", StackTraceHelper.ID_KEY, "Lcom/discord/primitives/MessageId;", "channelId", "Lcom/discord/primitives/ChannelId;", "loggingName", "", "<init>", "(Ljava/lang/String;JLjava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Lcom/discord/primitives/ChannelId;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getId-3Eiw7ao", "()Ljava/lang/String;", "Ljava/lang/String;", "getChannelId-o4g7jtM$annotations", "()V", "getChannelId-o4g7jtM", "()J", "J", "getLoggingName", "component1", "component1-3Eiw7ao", "component2", "component2-o4g7jtM", "component3", "copy", "copy-Eqy5D80", "(Ljava/lang/String;JLjava/lang/String;)Lcom/discord/chat/bridge/contentnode/LinkContextData$BindUserSurvey$SurveyMessage;", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static final class SurveyMessage {
@@ -2517,7 +2517,7 @@ public abstract class LinkContextData {
             @NotNull
 
             /* renamed from: id  reason: collision with root package name */
-            private final String f9295id;
+            private final String f8263id;
             private final String loggingName;
 
             @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¨\u0006\u0007"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindUserSurvey$SurveyMessage$Companion;", "", "<init>", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindUserSurvey$SurveyMessage;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
@@ -2543,7 +2543,7 @@ public abstract class LinkContextData {
             /* renamed from: copy-Eqy5D80$default  reason: not valid java name */
             public static /* synthetic */ SurveyMessage m365copyEqy5D80$default(SurveyMessage surveyMessage, String str, long j10, String str2, int i10, Object obj) {
                 if ((i10 & 1) != 0) {
-                    str = surveyMessage.f9295id;
+                    str = surveyMessage.f8263id;
                 }
                 if ((i10 & 2) != 0) {
                     j10 = surveyMessage.channelId;
@@ -2559,17 +2559,17 @@ public abstract class LinkContextData {
             }
 
             public static final /* synthetic */ void write$Self$chat_release(SurveyMessage surveyMessage, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-                compositeEncoder.m(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1086boximpl(surveyMessage.f9295id));
-                compositeEncoder.m(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, ChannelId.m1060boximpl(surveyMessage.channelId));
-                if (compositeEncoder.y(serialDescriptor, 2) || surveyMessage.loggingName != null) {
-                    compositeEncoder.B(serialDescriptor, 2, n2.f7662a, surveyMessage.loggingName);
+                compositeEncoder.D(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1085boximpl(surveyMessage.f8263id));
+                compositeEncoder.D(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, ChannelId.m1059boximpl(surveyMessage.channelId));
+                if (compositeEncoder.z(serialDescriptor, 2) || surveyMessage.loggingName != null) {
+                    compositeEncoder.s(serialDescriptor, 2, n2.f20978a, surveyMessage.loggingName);
                 }
             }
 
             @NotNull
             /* renamed from: component1-3Eiw7ao  reason: not valid java name */
             public final String m367component13Eiw7ao() {
-                return this.f9295id;
+                return this.f8263id;
             }
 
             /* renamed from: component2-o4g7jtM  reason: not valid java name */
@@ -2594,7 +2594,7 @@ public abstract class LinkContextData {
                 }
                 if (obj instanceof SurveyMessage) {
                     SurveyMessage surveyMessage = (SurveyMessage) obj;
-                    return MessageId.m1090equalsimpl0(this.f9295id, surveyMessage.f9295id) && ChannelId.m1064equalsimpl0(this.channelId, surveyMessage.channelId) && Intrinsics.areEqual(this.loggingName, surveyMessage.loggingName);
+                    return MessageId.m1089equalsimpl0(this.f8263id, surveyMessage.f8263id) && ChannelId.m1063equalsimpl0(this.channelId, surveyMessage.channelId) && Intrinsics.areEqual(this.loggingName, surveyMessage.loggingName);
                 }
                 return false;
             }
@@ -2607,7 +2607,7 @@ public abstract class LinkContextData {
             @NotNull
             /* renamed from: getId-3Eiw7ao  reason: not valid java name */
             public final String m371getId3Eiw7ao() {
-                return this.f9295id;
+                return this.f8263id;
             }
 
             public final String getLoggingName() {
@@ -2615,17 +2615,17 @@ public abstract class LinkContextData {
             }
 
             public int hashCode() {
-                int m1091hashCodeimpl = ((MessageId.m1091hashCodeimpl(this.f9295id) * 31) + ChannelId.m1065hashCodeimpl(this.channelId)) * 31;
+                int m1090hashCodeimpl = ((MessageId.m1090hashCodeimpl(this.f8263id) * 31) + ChannelId.m1064hashCodeimpl(this.channelId)) * 31;
                 String str = this.loggingName;
-                return m1091hashCodeimpl + (str == null ? 0 : str.hashCode());
+                return m1090hashCodeimpl + (str == null ? 0 : str.hashCode());
             }
 
             @NotNull
             public String toString() {
-                String m1093toStringimpl = MessageId.m1093toStringimpl(this.f9295id);
-                String m1067toStringimpl = ChannelId.m1067toStringimpl(this.channelId);
+                String m1092toStringimpl = MessageId.m1092toStringimpl(this.f8263id);
+                String m1066toStringimpl = ChannelId.m1066toStringimpl(this.channelId);
                 String str = this.loggingName;
-                return "SurveyMessage(id=" + m1093toStringimpl + ", channelId=" + m1067toStringimpl + ", loggingName=" + str + ")";
+                return "SurveyMessage(id=" + m1092toStringimpl + ", channelId=" + m1066toStringimpl + ", loggingName=" + str + ")";
             }
 
             public /* synthetic */ SurveyMessage(String str, long j10, String str2, DefaultConstructorMarker defaultConstructorMarker) {
@@ -2636,8 +2636,8 @@ public abstract class LinkContextData {
                 if (3 != (i10 & 3)) {
                     v1.b(i10, 3, LinkContextData$BindUserSurvey$SurveyMessage$$serializer.INSTANCE.getDescriptor());
                 }
-                this.f9295id = str;
-                this.channelId = channelId.m1069unboximpl();
+                this.f8263id = str;
+                this.channelId = channelId.m1068unboximpl();
                 if ((i10 & 4) == 0) {
                     this.loggingName = null;
                 } else {
@@ -2647,7 +2647,7 @@ public abstract class LinkContextData {
 
             private SurveyMessage(String id2, long j10, String str) {
                 Intrinsics.checkNotNullParameter(id2, "id");
-                this.f9295id = id2;
+                this.f8263id = id2;
                 this.channelId = j10;
                 this.loggingName = str;
             }
@@ -2683,9 +2683,9 @@ public abstract class LinkContextData {
 
         public static final /* synthetic */ void write$Self$chat_release(BindUserSurvey bindUserSurvey, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             LinkContext.write$Self(bindUserSurvey, compositeEncoder, serialDescriptor);
-            compositeEncoder.m(serialDescriptor, 2, LinkContextData$BindUserSurvey$SurveyMessage$$serializer.INSTANCE, bindUserSurvey.message);
-            if (compositeEncoder.y(serialDescriptor, 3) || bindUserSurvey.notificationType != null) {
-                compositeEncoder.B(serialDescriptor, 3, n2.f7662a, bindUserSurvey.notificationType);
+            compositeEncoder.D(serialDescriptor, 2, LinkContextData$BindUserSurvey$SurveyMessage$$serializer.INSTANCE, bindUserSurvey.message);
+            if (compositeEncoder.z(serialDescriptor, 3) || bindUserSurvey.notificationType != null) {
+                compositeEncoder.s(serialDescriptor, 3, n2.f20978a, bindUserSurvey.notificationType);
             }
         }
 
@@ -2766,8 +2766,8 @@ public abstract class LinkContextData {
         }
     }
 
-    @ys.m
-    @ct.c(discriminator = "action")
+    @et.c(discriminator = "action")
+    @at.m
     @Metadata(d1 = {"\u0000\u0080\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b7\u0018\u0000 \u00192\u00020\u0001:\u0001\u0019B\u001d\b\u0004\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\u0004\b\u0006\u0010\u0007B/\b\u0016\u0012\u0006\u0010\b\u001a\u00020\t\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b¢\u0006\u0004\b\u0006\u0010\fJ \u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u00002\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0018H\u0007R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0015\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\n\n\u0002\u0010\u0011\u001a\u0004\b\u000f\u0010\u0010\u0082\u0001\u0011\u001a\u001b\u001c\u001d\u001e\u001f !\"#$%&'()*¨\u0006+"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$LinkContext;", "Lcom/discord/chat/bridge/contentnode/LinkContextData;", "action", "", "medium", "", "<init>", "(Ljava/lang/String;Ljava/lang/Boolean;)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/Boolean;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getAction", "()Ljava/lang/String;", "getMedium", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "Companion", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindDismissMessage;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindDoNothing;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindGuildMenu;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindInsertText;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindJoinStream;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindJumpToMessage;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindOpenGdmCustomizeActionSheet;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindOpenInviteSheet;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindOpenPins;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindOpenRoleSubscriptionOverview;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindOpenThreadChannel;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindOpenUrl;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindTapActivityText;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindTapCommandName;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindTapUsername;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindUserMenu;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindUserSurvey;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static abstract class LinkContext extends LinkContextData {
@@ -2777,7 +2777,7 @@ public abstract class LinkContextData {
         @NotNull
         public static final Companion Companion = new Companion(null);
         @NotNull
-        private static final Lazy $cachedSerializer$delegate = jr.l.a(jr.o.f32182e, new Function0() { // from class: com.discord.chat.bridge.contentnode.o
+        private static final Lazy $cachedSerializer$delegate = lr.l.b(lr.o.f37120e, new Function0() { // from class: com.discord.chat.bridge.contentnode.o
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _init_$_anonymous_;
@@ -2816,9 +2816,9 @@ public abstract class LinkContextData {
         }
 
         public static final /* synthetic */ void write$Self(LinkContext linkContext, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-            compositeEncoder.x(serialDescriptor, 0, linkContext.action);
-            if (compositeEncoder.y(serialDescriptor, 1) || linkContext.medium != null) {
-                compositeEncoder.B(serialDescriptor, 1, bt.h.f7626a, linkContext.medium);
+            compositeEncoder.y(serialDescriptor, 0, linkContext.action);
+            if (compositeEncoder.z(serialDescriptor, 1) || linkContext.medium != null) {
+                compositeEncoder.s(serialDescriptor, 1, dt.h.f20942a, linkContext.medium);
             }
         }
 
@@ -2852,7 +2852,7 @@ public abstract class LinkContextData {
         }
     }
 
-    @ys.m(with = LinkUrlSerializer.class)
+    @at.m(with = LinkUrlSerializer.class)
     @Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0007\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\b\u0087\b\u0018\u0000 \u00122\u00020\u0001:\u0002\u0011\u0012B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\t\u0010\b\u001a\u00020\u0003HÆ\u0003J\u0013\u0010\t\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u0003HÆ\u0001J\u0013\u0010\n\u001a\u00020\u000b2\b\u0010\f\u001a\u0004\u0018\u00010\rHÖ\u0003J\t\u0010\u000e\u001a\u00020\u000fHÖ\u0001J\t\u0010\u0010\u001a\u00020\u0003HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007¨\u0006\u0013"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$LinkUrl;", "Lcom/discord/chat/bridge/contentnode/LinkContextData;", "url", "", "<init>", "(Ljava/lang/String;)V", "getUrl", "()Ljava/lang/String;", "component1", "copy", "equals", "", "other", "", "hashCode", "", "toString", "LinkUrlSerializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class LinkUrl extends LinkContextData {
@@ -2886,10 +2886,10 @@ public abstract class LinkContextData {
             private LinkUrlSerializer() {
             }
 
-            @Override // kotlinx.serialization.KSerializer, ys.o, kotlinx.serialization.DeserializationStrategy
+            @Override // kotlinx.serialization.KSerializer, at.o, kotlinx.serialization.DeserializationStrategy
             @NotNull
             public SerialDescriptor getDescriptor() {
-                return at.j.b("LinkUrl", e.i.f6078a);
+                return ct.j.b("LinkUrl", e.i.f19842a);
             }
 
             @Override // kotlinx.serialization.DeserializationStrategy
@@ -2897,8 +2897,8 @@ public abstract class LinkContextData {
             public LinkUrl deserialize(@NotNull Decoder decoder) {
                 Intrinsics.checkNotNullParameter(decoder, "decoder");
                 try {
-                    if (decoder instanceof ct.f) {
-                        return new LinkUrl(ct.h.o(((ct.f) decoder).g()).b());
+                    if (decoder instanceof et.f) {
+                        return new LinkUrl(et.h.o(((et.f) decoder).g()).b());
                     }
                     throw new IllegalArgumentException("Failed requirement.");
                 } catch (Exception unused) {
@@ -2906,7 +2906,7 @@ public abstract class LinkContextData {
                 }
             }
 
-            @Override // ys.o
+            @Override // at.o
             public void serialize(@NotNull Encoder encoder, @NotNull LinkUrl value) {
                 Intrinsics.checkNotNullParameter(encoder, "encoder");
                 Intrinsics.checkNotNullParameter(value, "value");

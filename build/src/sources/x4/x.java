@@ -6,19 +6,19 @@ import okio.ByteString;
 public abstract class x {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ByteString f53432a;
+    private static final ByteString f53153a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ByteString f53433b;
+    private static final ByteString f53154b;
 
     static {
-        ByteString.a aVar = ByteString.f44507o;
-        f53432a = aVar.g("<svg");
-        f53433b = aVar.g("<");
+        ByteString.a aVar = ByteString.f44307o;
+        f53153a = aVar.g("<svg");
+        f53154b = aVar.g("<");
     }
 
     public static final boolean a(j jVar, BufferedSource bufferedSource) {
-        if (bufferedSource.q0(0L, f53433b) && k5.j.a(bufferedSource, f53432a, 0L, 1024L) != -1) {
+        if (bufferedSource.p0(0L, f53154b) && k5.j.a(bufferedSource, f53153a, 0L, 1024L) != -1) {
             return true;
         }
         return false;

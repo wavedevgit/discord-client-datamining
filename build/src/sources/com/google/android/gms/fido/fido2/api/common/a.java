@@ -12,39 +12,39 @@ public class a extends hf.a {
     public static final Parcelable.Creator<a> CREATOR = new f();
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f14577i = new a(EnumC0181a.SUPPORTED.toString(), null);
+    public static final a f13545i = new a(EnumC0162a.SUPPORTED.toString(), null);
 
     /* renamed from: o  reason: collision with root package name */
-    public static final a f14578o = new a(EnumC0181a.NOT_SUPPORTED.toString(), null);
+    public static final a f13546o = new a(EnumC0162a.NOT_SUPPORTED.toString(), null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final EnumC0181a f14579d;
+    private final EnumC0162a f13547d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f14580e;
+    private final String f13548e;
 
     /* renamed from: com.google.android.gms.fido.fido2.api.common.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public enum EnumC0181a implements Parcelable {
+    public enum EnumC0162a implements Parcelable {
         PRESENT("present"),
         SUPPORTED("supported"),
         NOT_SUPPORTED("not-supported");
         
         @NonNull
-        public static final Parcelable.Creator<EnumC0181a> CREATOR = new e();
+        public static final Parcelable.Creator<EnumC0162a> CREATOR = new e();
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f14585d;
+        private final String f13553d;
 
-        EnumC0181a(String str) {
-            this.f14585d = str;
+        EnumC0162a(String str) {
+            this.f13553d = str;
         }
 
-        public static EnumC0181a a(String str) {
-            EnumC0181a[] values;
-            for (EnumC0181a enumC0181a : values()) {
-                if (str.equals(enumC0181a.f14585d)) {
-                    return enumC0181a;
+        public static EnumC0162a a(String str) {
+            EnumC0162a[] values;
+            for (EnumC0162a enumC0162a : values()) {
+                if (str.equals(enumC0162a.f13553d)) {
+                    return enumC0162a;
                 }
             }
             throw new b(str);
@@ -57,12 +57,12 @@ public class a extends hf.a {
 
         @Override // java.lang.Enum
         public String toString() {
-            return this.f14585d;
+            return this.f13553d;
         }
 
         @Override // android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
-            parcel.writeString(this.f14585d);
+            parcel.writeString(this.f13553d);
         }
     }
 
@@ -77,19 +77,19 @@ public class a extends hf.a {
     public a(String str, String str2) {
         q.l(str);
         try {
-            this.f14579d = EnumC0181a.a(str);
-            this.f14580e = str2;
+            this.f13547d = EnumC0162a.a(str);
+            this.f13548e = str2;
         } catch (b e10) {
             throw new IllegalArgumentException(e10);
         }
     }
 
     public String b() {
-        return this.f14580e;
+        return this.f13548e;
     }
 
     public String c() {
-        return this.f14579d.toString();
+        return this.f13547d.toString();
     }
 
     public boolean equals(Object obj) {
@@ -97,14 +97,14 @@ public class a extends hf.a {
             return false;
         }
         a aVar = (a) obj;
-        if (!i0.a(this.f14579d, aVar.f14579d) || !i0.a(this.f14580e, aVar.f14580e)) {
+        if (!i0.a(this.f13547d, aVar.f13547d) || !i0.a(this.f13548e, aVar.f13548e)) {
             return false;
         }
         return true;
     }
 
     public int hashCode() {
-        return Arrays.hashCode(new Object[]{this.f14579d, this.f14580e});
+        return Arrays.hashCode(new Object[]{this.f13547d, this.f13548e});
     }
 
     @Override // android.os.Parcelable

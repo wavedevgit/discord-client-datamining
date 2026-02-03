@@ -5,26 +5,26 @@ import java.util.Iterator;
 final class o extends j {
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient i f37454i;
+    private final transient i f36923i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient f f37455o;
+    private final transient f f36924o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public o(i iVar, f fVar) {
-        this.f37454i = iVar;
-        this.f37455o = fVar;
+        this.f36923i = iVar;
+        this.f36924o = fVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // lg.c
     public final int b(Object[] objArr, int i10) {
-        return this.f37455o.b(objArr, 0);
+        return this.f36924o.b(objArr, 0);
     }
 
     @Override // lg.c, java.util.AbstractCollection, java.util.Collection
     public final boolean contains(Object obj) {
-        if (this.f37454i.get(obj) != null) {
+        if (this.f36923i.get(obj) != null) {
             return true;
         }
         return false;
@@ -32,11 +32,11 @@ final class o extends j {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
     public final /* synthetic */ Iterator iterator() {
-        return this.f37455o.listIterator(0);
+        return this.f36924o.listIterator(0);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final int size() {
-        return this.f37454i.size();
+        return this.f36923i.size();
     }
 }

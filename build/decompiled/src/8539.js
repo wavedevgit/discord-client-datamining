@@ -1,122 +1,182 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
-    var7 = metroImportDefault;
-    var2 = exports;
-    var5 = dependencyMap;
-    var _closure1_slot0 = var7;
-    var _closure1_slot1 = var5;
-    var0 = global;
-    var8 = var0.Object;
-    var6 = var8.defineProperty;
+    var1 = exports;
+    var2 = require;
+    var _closure1_slot0 = var2;
+    var2 = dependencyMap;
+    var _closure1_slot1 = var2;
+    var2 = global;
+    var5 = var2.Object;
+    var4 = var5.defineProperty;
     var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var6.bind(var8)(var2, var0, var3);
-    var3 = 0;
-    var6 = var5[var3];
-    var0 = undefined;
-    var6 = var7.bind(var0)(var6);
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.useMemo;
-    var _closure1_slot2 = var3;
-    var3 = 1;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var6 = var3.Platform;
-    var6 = var3.TouchableNativeFeedback;
-    var _closure1_slot3 = var6;
-    var6 = var3.TouchableOpacity;
-    var3 = var3.View;
-    var _closure1_slot4 = var3;
-    var3 = 2;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.jsx;
-    var _closure1_slot5 = var3;
-    var1 = function arg0() {
-        _fun68509: for (var _fun68509_ip = 0;;) switch (_fun68509_ip) {
-            case 0:
-                var2 = arg0;
-                var6 = var2.children;
-                var5 = var2.onPress;
-                var1 = var2.disabled;
-                var _closure2_slot0 = var1;
-                var11 = var2.accessibilityLabel;
-                var12 = var2.accessibilityHint;
-                var8 = var2.testID;
-                var4 = var2.rippleRadius;
-                var13 = 18;
-                var3 = undefined;
-                if (!(var3 !== var4)) {
-                    _fun68509_ip = 59;
-                    continue _fun68509
-                }
-            case 56:
-                var13 = var4;
-            case 59:
-                var _closure2_slot1 = var13;
-                var7 = var2.style;
-                var9 = var2.theme;
-                var _closure2_slot2 = var9;
-                var10 = _closure1_slot0;
-                var14 = _closure1_slot1;
-                var2 = 3;
-                var2 = var14[var2];
-                var2 = var10.bind(var3)(var2);
-                var14 = var2.bind(var3)();
-                var _closure2_slot3 = var14;
-                var2 = _closure1_slot2;
-                var10 = new Array(1);
-                var10[0] = var1;
-                var1 = function() { // Environment: var0
-                    var0 = {};
-                    var1 = _closure2_slot0;
-                    var0.disabled = var1;
-                    return var0;
-                };
-                var10 = var2.bind(var3)(var1, var10);
-                var1 = new Array(3);
-                var1[0] = var14;
-                var1[1] = var13;
-                var1[2] = var9;
-                var0 = function() { // Environment: var0
-                    var4 = _closure1_slot3;
-                    var3 = var4.Ripple;
-                    var2 = _closure2_slot2;
-                    var1 = _closure2_slot3;
-                    var1 = var2[var1];
-                    var2 = var1.ripple;
-                    var1 = _closure2_slot1;
-                    var0 = true;
-                    var0 = var3.bind(var4)(var2, var0, var1);
-                    return var0;
-                };
-                var9 = var2.bind(var3)(var0, var1);
-                var2 = _closure1_slot5;
-                var1 = _closure1_slot3;
-                var0 = {};
-                var0.accessibilityHint = var12;
-                var0.accessibilityLabel = var11;
-                var11 = 'button';
-                var0.accessibilityRole = var11;
-                var0.accessibilityState = var10;
-                var0.background = var9;
-                var0.style = var7;
-                var0.testID = var8;
-                var0.onPress = var5;
-                var5 = _closure1_slot4;
-                var4 = {};
-                var4.style = var7;
-                var4.children = var6;
-                var4 = var2.bind(var3)(var5, var4);
-                var0.children = var4;
-                var0 = var2.bind(var3)(var1, var0);
-                return var0;
-        }
+    var2 = true;
+    var3.value = var2;
+    var2 = '__esModule';
+    var2 = var4.bind(var5)(var1, var2, var3);
+    var2 = {
+        'UNKNOWN': 0,
+        'OPENING': 1,
+        'OPEN': 2,
+        'CLOSING': 3,
+        'CLOSED': 4
     };
-    var2.default = var1;
+    var _closure1_slot2 = var2;
+    var3 = {};
+    var4 = 'function pnpm_compatTs1(e){const{state,KeyboardState}=this.__closure;state.set(e.height>0?KeyboardState.OPENING:KeyboardState.CLOSING);}';
+    var3.code = var4;
+    var _closure1_slot3 = var3;
+    var3 = {};
+    var4 = 'function pnpm_compatTs2(e){const{height}=this.__closure;height.set(e.height);}';
+    var3.code = var4;
+    var _closure1_slot4 = var3;
+    var3 = {};
+    var4 = 'function pnpm_compatTs3(e){const{height}=this.__closure;height.set(e.height);}';
+    var3.code = var4;
+    var _closure1_slot5 = var3;
+    var3 = {};
+    var4 = 'function pnpm_compatTs4(e){const{state,KeyboardState,height}=this.__closure;state.set(e.height>0?KeyboardState.OPEN:KeyboardState.CLOSED);height.set(e.height);}';
+    var3.code = var4;
+    var _closure1_slot6 = var3;
+    var1.KeyboardState = var2;
+    var0 = function() {
+        var5 = _closure1_slot0;
+        var7 = _closure1_slot1;
+        var1 = 0;
+        var2 = var7[var1];
+        var4 = undefined;
+        var3 = var5.bind(var4)(var2);
+        var2 = var3.useSharedValue;
+        var2 = var2.bind(var3)(var1);
+        var _closure2_slot0 = var2;
+        var1 = var7[var1];
+        var9 = var5.bind(var4)(var1);
+        var3 = var9.useSharedValue;
+        var8 = _closure1_slot2;
+        var1 = var8.UNKNOWN;
+        var1 = var3.bind(var9)(var1);
+        var _closure2_slot1 = var1;
+        var3 = 1;
+        var3 = var7[var3];
+        var5 = var5.bind(var4)(var3);
+        var4 = var5.useKeyboardHandler;
+        var3 = {};
+        var7 = function arg0() {
+            _fun68517: for (var _fun68517_ip = 0;;) switch (_fun68517_ip) {
+                case 0:
+                    var2 = _closure2_slot1;
+                    var1 = var2.set;
+                    var0 = arg0;
+                    var3 = var0.height;
+                    var0 = 0;
+                    if (!(!(var3 > var0))) {
+                        _fun68517_ip = 41;
+                        continue _fun68517
+                    }
+                case 26:
+                    var0 = _closure1_slot2;
+                    var0 = var0.CLOSING;
+                    _fun68517_ip = 54;
+                    continue _fun68517;
+                case 41:
+                    var3 = _closure1_slot2;
+                    var0 = var3.OPENING;
+                case 54:
+                    var0 = var1.bind(var2)(var0);
+                    var0 = undefined;
+                    return var0;
+            }
+        };
+        var9 = {};
+        var9.state = var1;
+        var9.KeyboardState = var8;
+        var7.__closure = var9;
+        var9 = 14565322463725.0;
+        var7.__workletHash = var9;
+        var9 = _closure1_slot3;
+        var7.__initData = var9;
+        var3.onStart = var7;
+        var7 = function arg0() {
+            var2 = _closure2_slot0;
+            var1 = var2.set;
+            var0 = arg0;
+            var0 = var0.height;
+            var0 = var1.bind(var2)(var0);
+            var0 = undefined;
+            return var0;
+        };
+        var9 = {};
+        var9.height = var2;
+        var7.__closure = var9;
+        var9 = 10176723030164.0;
+        var7.__workletHash = var9;
+        var9 = _closure1_slot4;
+        var7.__initData = var9;
+        var3.onMove = var7;
+        var7 = function arg0() {
+            var2 = _closure2_slot0;
+            var1 = var2.set;
+            var0 = arg0;
+            var0 = var0.height;
+            var0 = var1.bind(var2)(var0);
+            var0 = undefined;
+            return var0;
+        };
+        var9 = {};
+        var9.height = var2;
+        var7.__closure = var9;
+        var9 = 5410731249621.0;
+        var7.__workletHash = var9;
+        var9 = _closure1_slot5;
+        var7.__initData = var9;
+        var3.onInteractive = var7;
+        var0 = function arg0() {
+            _fun68520: for (var _fun68520_ip = 0;;) switch (_fun68520_ip) {
+                case 0:
+                    var0 = arg0;
+                    var4 = _closure2_slot1;
+                    var3 = var4.set;
+                    var5 = var0.height;
+                    var2 = 0;
+                    if (!(!(var5 > var2))) {
+                        _fun68520_ip = 41;
+                        continue _fun68520
+                    }
+                case 26:
+                    var2 = _closure1_slot2;
+                    var2 = var2.CLOSED;
+                    _fun68520_ip = 54;
+                    continue _fun68520;
+                case 41:
+                    var5 = _closure1_slot2;
+                    var2 = var5.OPEN;
+                case 54:
+                    var2 = var3.bind(var4)(var2);
+                    var2 = _closure2_slot0;
+                    var1 = var2.set;
+                    var0 = var0.height;
+                    var0 = var1.bind(var2)(var0);
+                    var0 = undefined;
+                    return var0;
+            }
+        };
+        var7 = {};
+        var7.state = var1;
+        var7.KeyboardState = var8;
+        var7.height = var2;
+        var0.__closure = var7;
+        var7 = 1401367954247.0;
+        var0.__workletHash = var7;
+        var6 = _closure1_slot6;
+        var0.__initData = var6;
+        var3.onEnd = var0;
+        var0 = new Array(0);
+        var0 = var4.bind(var5)(var3, var0);
+        var0 = {};
+        var0.height = var2;
+        var0.state = var1;
+        return var0;
+    };
+    var1.useAnimatedKeyboard = var0;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 8538]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3721, 8529]);

@@ -1,37 +1,113 @@
 package ls;
 
-import kotlin.Unit;
+import java.util.concurrent.CancellationException;
+import js.y0;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.CoroutineContext;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlinx.coroutines.flow.Flow;
-import kotlinx.coroutines.flow.FlowCollector;
+import kotlin.jvm.functions.Function1;
+import kotlinx.coroutines.b0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class h extends g {
-    public /* synthetic */ h(Flow flow, CoroutineContext coroutineContext, int i10, js.a aVar, int i11, DefaultConstructorMarker defaultConstructorMarker) {
-        this(flow, (i11 & 2) != 0 ? kotlin.coroutines.e.f33148d : coroutineContext, (i11 & 4) != 0 ? -3 : i10, (i11 & 8) != 0 ? js.a.f32204d : aVar);
+public abstract class h extends kotlinx.coroutines.a implements g {
+
+    /* renamed from: o  reason: collision with root package name */
+    private final g f37205o;
+
+    public h(CoroutineContext coroutineContext, g gVar, boolean z10, boolean z11) {
+        super(coroutineContext, z10, z11);
+        this.f37205o = gVar;
     }
 
-    @Override // ls.e
-    protected e f(CoroutineContext coroutineContext, int i10, js.a aVar) {
-        return new h(this.f37558o, coroutineContext, i10, aVar);
+    @Override // kotlinx.coroutines.b0
+    public void I(Throwable th2) {
+        CancellationException G0 = b0.G0(this, th2, null, 1, null);
+        this.f37205o.h(G0);
+        G(G0);
     }
 
-    @Override // ls.e
-    public Flow j() {
-        return this.f37558o;
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final g X0() {
+        return this.f37205o;
     }
 
-    @Override // ls.g
-    protected Object q(FlowCollector flowCollector, Continuation continuation) {
-        Object collect = this.f37558o.collect(flowCollector, continuation);
-        if (collect == pr.b.f()) {
-            return collect;
+    @Override // ls.v
+    public boolean b() {
+        return this.f37205o.b();
+    }
+
+    @Override // ls.w
+    public void d(Function1 function1) {
+        this.f37205o.d(function1);
+    }
+
+    @Override // kotlinx.coroutines.b0, kotlinx.coroutines.Job
+    public final void h(CancellationException cancellationException) {
+        if (isCancelled()) {
+            return;
         }
-        return Unit.f33074a;
+        if (cancellationException == null) {
+            cancellationException = new y0(M(), null, this);
+        }
+        I(cancellationException);
     }
 
-    public h(Flow flow, CoroutineContext coroutineContext, int i10, js.a aVar) {
-        super(flow, coroutineContext, i10, aVar);
+    @Override // ls.w
+    public Object i(Object obj) {
+        return this.f37205o.i(obj);
+    }
+
+    @Override // ls.v
+    public i iterator() {
+        return this.f37205o.iterator();
+    }
+
+    @Override // ls.v
+    public rs.h j() {
+        return this.f37205o.j();
+    }
+
+    @Override // ls.v
+    public rs.h k() {
+        return this.f37205o.k();
+    }
+
+    @Override // ls.v
+    public Object m() {
+        return this.f37205o.m();
+    }
+
+    @Override // ls.v
+    public Object o(Continuation continuation) {
+        Object o10 = this.f37205o.o(continuation);
+        rr.b.f();
+        return o10;
+    }
+
+    @Override // ls.w
+    public boolean offer(Object obj) {
+        return this.f37205o.offer(obj);
+    }
+
+    @Override // ls.v
+    public Object r(Continuation continuation) {
+        return this.f37205o.r(continuation);
+    }
+
+    @Override // ls.w
+    public boolean s(Throwable th2) {
+        return this.f37205o.s(th2);
+    }
+
+    @Override // ls.w
+    public Object u(Object obj, Continuation continuation) {
+        return this.f37205o.u(obj, continuation);
+    }
+
+    @Override // ls.w
+    public boolean v() {
+        return this.f37205o.v();
+    }
+
+    public final g W0() {
+        return this;
     }
 }

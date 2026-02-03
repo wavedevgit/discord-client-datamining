@@ -15,16 +15,16 @@ import sa.k;
 public final class g implements c {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f55565d = new a(null);
+    public static final a f55703d = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f55566a;
+    private final boolean f55704a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f55567b;
+    private final int f55705b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f55568c = "SimpleImageTranscoder";
+    private final String f55706c = "SimpleImageTranscoder";
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -37,10 +37,10 @@ public final class g implements c {
             if (cVar == null) {
                 return Bitmap.CompressFormat.JPEG;
             }
-            if (cVar == fa.b.f24079b) {
+            if (cVar == fa.b.f23671b) {
                 return Bitmap.CompressFormat.JPEG;
             }
-            if (cVar == fa.b.f24080c) {
+            if (cVar == fa.b.f23672c) {
                 return Bitmap.CompressFormat.PNG;
             }
             if (fa.b.a(cVar)) {
@@ -54,29 +54,29 @@ public final class g implements c {
     }
 
     public g(boolean z10, int i10) {
-        this.f55566a = z10;
-        this.f55567b = i10;
+        this.f55704a = z10;
+        this.f55705b = i10;
     }
 
     private final int e(k kVar, RotationOptions rotationOptions, ResizeOptions resizeOptions) {
-        if (!this.f55566a) {
+        if (!this.f55704a) {
             return 1;
         }
-        return za.a.b(rotationOptions, resizeOptions, kVar, this.f55567b);
+        return za.a.b(rotationOptions, resizeOptions, kVar, this.f55705b);
     }
 
     @Override // za.c
     public String a() {
-        return this.f55568c;
+        return this.f55706c;
     }
 
     @Override // za.c
     public boolean b(k encodedImage, RotationOptions rotationOptions, ResizeOptions resizeOptions) {
         Intrinsics.checkNotNullParameter(encodedImage, "encodedImage");
         if (rotationOptions == null) {
-            rotationOptions = RotationOptions.f11098c.a();
+            rotationOptions = RotationOptions.f10066c.a();
         }
-        if (this.f55566a && za.a.b(rotationOptions, resizeOptions, encodedImage, this.f55567b) > 1) {
+        if (this.f55704a && za.a.b(rotationOptions, resizeOptions, encodedImage, this.f55705b) > 1) {
             return true;
         }
         return false;
@@ -95,7 +95,7 @@ public final class g implements c {
             num2 = num;
         }
         if (rotationOptions == null) {
-            rotationOptions2 = RotationOptions.f11098c.a();
+            rotationOptions2 = RotationOptions.f10066c.a();
         } else {
             rotationOptions2 = rotationOptions;
         }
@@ -135,7 +135,7 @@ public final class g implements c {
             }
             try {
                 try {
-                    bitmap.compress(f55565d.b(cVar), num2.intValue(), outputStream);
+                    bitmap.compress(f55703d.b(cVar), num2.intValue(), outputStream);
                     int i10 = 1;
                     if (e10 > 1) {
                         i10 = 0;
@@ -167,7 +167,7 @@ public final class g implements c {
     @Override // za.c
     public boolean d(fa.c imageFormat) {
         Intrinsics.checkNotNullParameter(imageFormat, "imageFormat");
-        if (imageFormat != fa.b.f24089l && imageFormat != fa.b.f24079b) {
+        if (imageFormat != fa.b.f23681l && imageFormat != fa.b.f23671b) {
             return false;
         }
         return true;

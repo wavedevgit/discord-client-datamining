@@ -1,260 +1,81 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var6 = require;
-    var1 = exports;
-    var7 = dependencyMap;
-    var5 = function arg0() {
-        _fun24040: for (var _fun24040_ip = 0;;) switch (_fun24040_ip) {
-            case 0:
-                var2 = arg0;
-                if (!var2) {
-                    _fun24040_ip = 18;
-                    continue _fun24040
-                }
-            case 6:
-                var1 = var2.__esModule;
-                var0 = var2;
-                if (var1) {
-                    _fun24040_ip = 27;
-                    continue _fun24040
-                }
-            case 18:
-                var1 = {};
-                var1.default = var2;
-                var0 = var1;
-            case 27:
-                return var0;
-        }
-    };
-    var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var2 = {};
-    var0 = true;
-    var2.value = var0;
-    var0 = '__esModule';
-    var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = undefined;
-    var1.default = var0;
-    var2 = 0;
-    var2 = var7[var2];
-    var2 = var6.bind(var0)(var2);
-    var3 = var5.bind(var0)(var2);
-    var2 = {};
-    var4 = 1;
-    var4 = var7[var4];
-    var4 = var6.bind(var0)(var4);
-    var4 = var5.bind(var0)(var4);
-    var5 = var4.default;
-    var4 = {};
-    var6 = /^(第\s*)?\d+(日|时|分|秒)?/i;
-    var4.matchPattern = var6;
-    var6 = /\d+/i;
-    var4.parsePattern = var6;
-    var6 = function arg0() {
-        var0 = global;
-        var3 = var0.parseInt;
-        var2 = undefined;
-        var1 = arg0;
-        var0 = 10;
-        var0 = var3.bind(var2)(var1, var0);
-        return var0;
-    };
-    var4.valueCallback = var6;
-    var4 = var5.bind(var0)(var4);
-    var2.ordinalNumber = var4;
-    var6 = var3.default;
-    var4 = {};
-    var5 = {};
-    var7 = /^(前)/i;
-    var5.narrow = var7;
-    var7 = /^(前)/i;
-    var5.abbreviated = var7;
-    var7 = /^(公元前|公元)/i;
-    var5.wide = var7;
-    var4.matchPatterns = var5;
-    var7 = 'wide';
-    var4.defaultMatchWidth = var7;
-    var5 = {};
-    var9 = new Array(2);
-    var10 = /^(前)/i;
-    var9[0] = var10;
-    var10 = /^(公元)/i;
-    var9[1] = var10;
-    var5.any = var9;
-    var4.parsePatterns = var5;
-    var5 = 'any';
-    var4.defaultParseWidth = var5;
-    var4 = var6.bind(var0)(var4);
-    var2.era = var4;
-    var6 = var3.default;
-    var4 = {};
-    var9 = {};
-    var10 = /^[1234]/i;
-    var9.narrow = var10;
-    var10 = /^第[一二三四]刻/i;
-    var9.abbreviated = var10;
-    var10 = /^第[一二三四]刻钟/i;
-    var9.wide = var10;
-    var4.matchPatterns = var9;
-    var4.defaultMatchWidth = var7;
-    var9 = {};
-    var10 = new Array(4);
-    var11 = /(1|一)/i;
-    var10[0] = var11;
-    var11 = /(2|二)/i;
-    var10[1] = var11;
-    var11 = /(3|三)/i;
-    var10[2] = var11;
-    var11 = /(4|四)/i;
-    var10[3] = var11;
-    var9.any = var10;
-    var4.parsePatterns = var9;
-    var4.defaultParseWidth = var5;
-    var8 = function arg0() {
-        var1 = arg0;
-        var0 = 1;
-        var0 = var1 + var0;
-        return var0;
-    };
-    var4.valueCallback = var8;
-    var4 = var6.bind(var0)(var4);
-    var2.quarter = var4;
-    var6 = var3.default;
-    var4 = {};
-    var8 = {};
-    var9 = /^(一|二|三|四|五|六|七|八|九|十[二一])/i;
-    var8.narrow = var9;
-    var9 = /^(一|二|三|四|五|六|七|八|九|十[二一]|\d|1[12])月/i;
-    var8.abbreviated = var9;
-    var9 = /^(一|二|三|四|五|六|七|八|九|十[二一])月/i;
-    var8.wide = var9;
-    var4.matchPatterns = var8;
-    var4.defaultMatchWidth = var7;
-    var8 = {};
-    var9 = new Array(12);
-    var10 = /^一/i;
-    var9[0] = var10;
-    var10 = /^二/i;
-    var9[1] = var10;
-    var10 = /^三/i;
-    var9[2] = var10;
-    var10 = /^四/i;
-    var9[3] = var10;
-    var10 = /^五/i;
-    var9[4] = var10;
-    var10 = /^六/i;
-    var9[5] = var10;
-    var10 = /^七/i;
-    var9[6] = var10;
-    var10 = /^八/i;
-    var9[7] = var10;
-    var10 = /^九/i;
-    var9[8] = var10;
-    var10 = /^十(?!(一|二))/i;
-    var9[9] = var10;
-    var10 = /^十一/i;
-    var9[10] = var10;
-    var10 = /^十二/i;
-    var9[11] = var10;
-    var8.narrow = var9;
-    var9 = new Array(12);
-    var10 = /^一|1/i;
-    var9[0] = var10;
-    var10 = /^二|2/i;
-    var9[1] = var10;
-    var10 = /^三|3/i;
-    var9[2] = var10;
-    var10 = /^四|4/i;
-    var9[3] = var10;
-    var10 = /^五|5/i;
-    var9[4] = var10;
-    var10 = /^六|6/i;
-    var9[5] = var10;
-    var10 = /^七|7/i;
-    var9[6] = var10;
-    var10 = /^八|8/i;
-    var9[7] = var10;
-    var10 = /^九|9/i;
-    var9[8] = var10;
-    var10 = /^十(?!(一|二))|10/i;
-    var9[9] = var10;
-    var10 = /^十一|11/i;
-    var9[10] = var10;
-    var10 = /^十二|12/i;
-    var9[11] = var10;
-    var8.any = var9;
-    var4.parsePatterns = var8;
-    var4.defaultParseWidth = var5;
-    var4 = var6.bind(var0)(var4);
-    var2.month = var4;
-    var6 = var3.default;
-    var4 = {};
-    var8 = {};
-    var9 = /^[一二三四五六日]/i;
-    var8.narrow = var9;
-    var9 = /^[一二三四五六日]/i;
-    var8.short = var9;
-    var9 = /^周[一二三四五六日]/i;
-    var8.abbreviated = var9;
-    var9 = /^星期[一二三四五六日]/i;
-    var8.wide = var9;
-    var4.matchPatterns = var8;
-    var4.defaultMatchWidth = var7;
-    var7 = {};
-    var8 = new Array(7);
-    var9 = /日/i;
-    var8[0] = var9;
-    var9 = /一/i;
-    var8[1] = var9;
-    var9 = /二/i;
-    var8[2] = var9;
-    var9 = /三/i;
-    var8[3] = var9;
-    var9 = /四/i;
-    var8[4] = var9;
-    var9 = /五/i;
-    var8[5] = var9;
-    var9 = /六/i;
-    var8[6] = var9;
-    var7.any = var8;
-    var4.parsePatterns = var7;
-    var4.defaultParseWidth = var5;
-    var4 = var6.bind(var0)(var4);
-    var2.day = var4;
-    var4 = var3.default;
-    var3 = {};
-    var6 = {};
-    var7 = /^(上午?|下午?|午夜|[中正]午|早上?|下午|晚上?|凌晨|)/i;
-    var6.any = var7;
-    var3.matchPatterns = var6;
-    var3.defaultMatchWidth = var5;
-    var6 = {};
-    var7 = {};
-    var8 = /^上午?/i;
-    var7.am = var8;
-    var8 = /^下午?/i;
-    var7.pm = var8;
-    var8 = /^午夜/i;
-    var7.midnight = var8;
-    var8 = /^[中正]午/i;
-    var7.noon = var8;
-    var8 = /^早上/i;
-    var7.morning = var8;
-    var8 = /^下午/i;
-    var7.afternoon = var8;
-    var8 = /^晚上?/i;
-    var7.evening = var8;
-    var8 = /^凌晨/i;
-    var7.night = var8;
-    var6.any = var7;
-    var3.parsePatterns = var6;
-    var3.defaultParseWidth = var5;
-    var3 = var4.bind(var0)(var3);
-    var2.dayPeriod = var3;
-    var1.default = var2;
-    var2 = var1.default;
-    var1 = arg4;
-    var1.exports = var2;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1686, 1687]);
+    _fun24105: for (var _fun24105_ip = 0;;) switch (_fun24105_ip) {
+        case 0:
+            var1 = exports;
+            var0 = global;
+            var4 = var0.Object;
+            var3 = var4.defineProperty;
+            var2 = {};
+            var0 = true;
+            var2.value = var0;
+            var0 = '__esModule';
+            var0 = var3.bind(var4)(var1, var0, var2);
+            var0 = undefined;
+            var1.default = var0;
+            var3 = dependencyMap;
+            var2 = 0;
+            var3 = var3[var2];
+            var2 = require;
+            var4 = var2.bind(var0)(var3);
+            if (!var4) {
+                _fun24105_ip = 75;
+                continue _fun24105
+            }
+        case 63:
+            var2 = var4.__esModule;
+            var3 = var4;
+            if (var2) {
+                _fun24105_ip = 84;
+                continue _fun24105
+            }
+        case 75:
+            var2 = {};
+            var2.default = var4;
+            var3 = var2;
+        case 84:
+            var2 = {};
+            var6 = var3.default;
+            var4 = {};
+            var5 = {
+                'full': "EEEE, 'ngày' d MMMM 'năm' y",
+                'long': "'ngày' d MMMM 'năm' y",
+                'medium': "d MMM 'năm' y",
+                'short': 'dd/MM/y'
+            };
+            var4.formats = var5;
+            var5 = 'full';
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.date = var4;
+            var6 = var3.default;
+            var4 = {};
+            var7 = {
+                'full': 'HH:mm:ss zzzz',
+                'long': 'HH:mm:ss z',
+                'medium': 'HH:mm:ss',
+                'short': 'HH:mm'
+            };
+            var4.formats = var7;
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.time = var4;
+            var4 = var3.default;
+            var3 = {};
+            var6 = {
+                'full': '{{date}} {{time}}',
+                'long': '{{date}} {{time}}',
+                'medium': '{{date}} {{time}}',
+                'short': '{{date}} {{time}}'
+            };
+            var3.formats = var6;
+            var3.defaultWidth = var5;
+            var3 = var4.bind(var0)(var3);
+            var2.dateTime = var3;
+            var1.default = var2;
+            var2 = var1.default;
+            var1 = module;
+            var1.exports = var2;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1690]);

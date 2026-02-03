@@ -63,6 +63,6 @@ final class MediaManagerModule$calculateImageQualityMetrics$1 extends k implemen
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaManagerModule$calculateImageQualityMetrics$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        return ((MediaManagerModule$calculateImageQualityMetrics$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
     }
 }

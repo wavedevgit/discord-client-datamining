@@ -6,10 +6,10 @@ import com.facebook.react.views.text.internal.span.SetSpanOperation;
 public class c implements TypeEvaluator {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c f55811a = new c();
+    private static final c f55949a = new c();
 
     public static c b() {
-        return f55811a;
+        return f55949a;
     }
 
     @Override // android.animation.TypeEvaluator

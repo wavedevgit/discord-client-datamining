@@ -1,271 +1,82 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun22249: for (var _fun22249_ip = 0;;) switch (_fun22249_ip) {
-        case 0:
-            var4 = require;
-            var1 = exports;
-            var5 = dependencyMap;
-            var _closure1_slot0 = var4;
-            var _closure1_slot1 = var5;
-            var0 = function arg0() {
-                var1 = _closure1_slot3;
-                var0 = arg0;
-                var1 = var1[var0];
-                var0 = "'у ";
-                var1 = var0 + var1;
-                var0 = " о' p";
-                var0 = var1 + var0;
+    var8 = require;
+    var1 = exports;
+    var9 = dependencyMap;
+    var3 = function arg0() {
+        _fun22314: for (var _fun22314_ip = 0;;) switch (_fun22314_ip) {
+            case 0:
+                var2 = arg0;
+                if (!var2) {
+                    _fun22314_ip = 18;
+                    continue _fun22314
+                }
+            case 6:
+                var1 = var2.__esModule;
+                var0 = var2;
+                if (var1) {
+                    _fun22314_ip = 27;
+                    continue _fun22314
+                }
+            case 18:
+                var1 = {};
+                var1.default = var2;
+                var0 = var1;
+            case 27:
                 return var0;
-            };
-            var _closure1_slot5 = var0;
-            var0 = global;
-            var7 = var0.Object;
-            var6 = var7.defineProperty;
-            var3 = {};
-            var0 = true;
-            var3.value = var0;
-            var0 = '__esModule';
-            var0 = var6.bind(var7)(var1, var0, var3);
-            var0 = undefined;
-            var1.default = var0;
-            var3 = 0;
-            var3 = var5[var3];
-            var5 = var4.bind(var0)(var3);
-            if (!var5) {
-                _fun22249_ip = 94;
-                continue _fun22249
-            }
-        case 82:
-            var4 = var5.__esModule;
-            var3 = var5;
-            if (var4) {
-                _fun22249_ip = 103;
-                continue _fun22249
-            }
-        case 94:
-            var4 = {};
-            var4.default = var5;
-            var3 = var4;
-        case 103:
-            var _closure1_slot2 = var3;
-            var3 = ['неділю', 'понеділок', 'вівторок', 'середу', 'четвер', 'п’ятницю', 'суботу'];
-            var _closure1_slot3 = var3;
-            var3 = {
-                'lastWeek': null,
-                'yesterday': "'вчора о' p",
-                'today': "'сьогодні о' p",
-                'tomorrow': "'завтра о' p",
-                'nextWeek': null,
-                'other': 'P'
-            };
-            var4 = function arg0, arg1, arg2() {
-                _fun22251: for (var _fun22251_ip = 0;;) switch (_fun22251_ip) {
-                    case 0:
-                        var4 = _closure1_slot0;
-                        var2 = _closure1_slot1;
-                        var0 = 1;
-                        var2 = var2[var0];
-                        var3 = undefined;
-                        var2 = var4.bind(var3)(var2);
-                        var4 = var2.toDate;
-                        var2 = arg0;
-                        var7 = var4.bind(var3)(var2);
-                        var2 = var7.getUTCDay;
-                        var2 = var2.bind(var7)();
-                        var4 = _closure1_slot2;
-                        var6 = var4.default;
-                        var5 = arg1;
-                        var4 = arg2;
-                        var4 = var6.bind(var3)(var7, var5, var4);
-                        if (var4) {
-                            _fun22251_ip = 173;
-                            continue _fun22251
-                        }
-                    case 74:
-                        var4 = _closure1_slot3;
-                        var5 = var4[var2];
-                        var4 = 0;
-                        if (!(var4 !== var2)) {
-                            _fun22251_ip = 151;
-                            continue _fun22251
-                        }
-                    case 88:
-                        var4 = 3;
-                        if (!(var4 !== var2)) {
-                            _fun22251_ip = 151;
-                            continue _fun22251
-                        }
-                    case 95:
-                        var4 = 5;
-                        if (!(var4 !== var2)) {
-                            _fun22251_ip = 151;
-                            continue _fun22251
-                        }
-                    case 102:
-                        var4 = 6;
-                        if (!(var4 !== var2)) {
-                            _fun22251_ip = 151;
-                            continue _fun22251
-                        }
-                    case 109:
-                        if (!(var0 !== var2)) {
-                            _fun22251_ip = 129;
-                            continue _fun22251
-                        }
-                    case 113:
-                        var0 = 2;
-                        if (!(var0 !== var2)) {
-                            _fun22251_ip = 129;
-                            continue _fun22251
-                        }
-                    case 120:
-                        var4 = 4;
-                        var0 = undefined;
-                        if (!(var4 === var2)) {
-                            _fun22251_ip = 171;
-                            continue _fun22251
-                        }
-                    case 129:
-                        var4 = "'у минулий ";
-                        var6 = var4 + var5;
-                        var4 = " о' p";
-                        var0 = var6 + var4;
-                        _fun22251_ip = 171;
-                        continue _fun22251;
-                    case 151:
-                        var4 = "'у минулу ";
-                        var5 = var4 + var5;
-                        var4 = " о' p";
-                        var0 = var5 + var4;
-                    case 171:
-                        _fun22251_ip = 182;
-                        continue _fun22251;
-                    case 173:
-                        var1 = _closure1_slot5;
-                        var0 = var1.bind(var3)(var2);
-                    case 182:
-                        return var0;
-                }
-            };
-            var3.lastWeek = var4;
-            var4 = function arg0, arg1, arg2() {
-                _fun22252: for (var _fun22252_ip = 0;;) switch (_fun22252_ip) {
-                    case 0:
-                        var4 = _closure1_slot0;
-                        var2 = _closure1_slot1;
-                        var0 = 1;
-                        var2 = var2[var0];
-                        var3 = undefined;
-                        var2 = var4.bind(var3)(var2);
-                        var4 = var2.toDate;
-                        var2 = arg0;
-                        var7 = var4.bind(var3)(var2);
-                        var2 = var7.getUTCDay;
-                        var2 = var2.bind(var7)();
-                        var4 = _closure1_slot2;
-                        var6 = var4.default;
-                        var5 = arg1;
-                        var4 = arg2;
-                        var4 = var6.bind(var3)(var7, var5, var4);
-                        if (var4) {
-                            _fun22252_ip = 173;
-                            continue _fun22252
-                        }
-                    case 74:
-                        var4 = _closure1_slot3;
-                        var5 = var4[var2];
-                        var4 = 0;
-                        if (!(var4 !== var2)) {
-                            _fun22252_ip = 151;
-                            continue _fun22252
-                        }
-                    case 88:
-                        var4 = 3;
-                        if (!(var4 !== var2)) {
-                            _fun22252_ip = 151;
-                            continue _fun22252
-                        }
-                    case 95:
-                        var4 = 5;
-                        if (!(var4 !== var2)) {
-                            _fun22252_ip = 151;
-                            continue _fun22252
-                        }
-                    case 102:
-                        var4 = 6;
-                        if (!(var4 !== var2)) {
-                            _fun22252_ip = 151;
-                            continue _fun22252
-                        }
-                    case 109:
-                        if (!(var0 !== var2)) {
-                            _fun22252_ip = 129;
-                            continue _fun22252
-                        }
-                    case 113:
-                        var0 = 2;
-                        if (!(var0 !== var2)) {
-                            _fun22252_ip = 129;
-                            continue _fun22252
-                        }
-                    case 120:
-                        var4 = 4;
-                        var0 = undefined;
-                        if (!(var4 === var2)) {
-                            _fun22252_ip = 171;
-                            continue _fun22252
-                        }
-                    case 129:
-                        var4 = "'у наступний ";
-                        var6 = var4 + var5;
-                        var4 = " о' p";
-                        var0 = var6 + var4;
-                        _fun22252_ip = 171;
-                        continue _fun22252;
-                    case 151:
-                        var4 = "'у наступну ";
-                        var5 = var4 + var5;
-                        var4 = " о' p";
-                        var0 = var5 + var4;
-                    case 171:
-                        _fun22252_ip = 182;
-                        continue _fun22252;
-                    case 173:
-                        var1 = _closure1_slot5;
-                        var0 = var1.bind(var3)(var2);
-                    case 182:
-                        return var0;
-                }
-            };
-            var3.nextWeek = var4;
-            var _closure1_slot4 = var3;
-            var2 = function arg0, arg1, arg2, arg3() {
-                _fun22253: for (var _fun22253_ip = 0;;) switch (_fun22253_ip) {
-                    case 0:
-                        var1 = _closure1_slot4;
-                        var0 = arg0;
-                        var5 = var1[var0];
-                        var2 = 'function';
-                        var1 = typeof var5;
-                        var0 = var5;
-                        if (!(var2 === var1)) {
-                            _fun22253_ip = 46;
-                            continue _fun22253
-                        }
-                    case 28:
-                        var4 = undefined;
-                        var3 = arg1;
-                        var2 = arg2;
-                        var1 = arg3;
-                        var0 = var5.bind(var4)(var3, var2, var1);
-                    case 46:
-                        return var0;
-                }
-            };
-            var1.default = var2;
-            var2 = var1.default;
-            var1 = arg4;
-            var1.exports = var2;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2566, 2710]);
+        }
+    };
+    var0 = global;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var1, var0, var2);
+    var0 = undefined;
+    var1.default = var0;
+    var2 = 0;
+    var2 = var9[var2];
+    var2 = var8.bind(var0)(var2);
+    var7 = var3.bind(var0)(var2);
+    var2 = 1;
+    var2 = var9[var2];
+    var2 = var8.bind(var0)(var2);
+    var6 = var3.bind(var0)(var2);
+    var2 = 2;
+    var2 = var9[var2];
+    var2 = var8.bind(var0)(var2);
+    var5 = var3.bind(var0)(var2);
+    var2 = 3;
+    var2 = var9[var2];
+    var2 = var8.bind(var0)(var2);
+    var4 = var3.bind(var0)(var2);
+    var2 = 4;
+    var2 = var9[var2];
+    var2 = var8.bind(var0)(var2);
+    var3 = var3.bind(var0)(var2);
+    var2 = {};
+    var8 = 'tr';
+    var2.code = var8;
+    var7 = var7.default;
+    var2.formatDistance = var7;
+    var6 = var6.default;
+    var2.formatLong = var6;
+    var5 = var5.default;
+    var2.formatRelative = var5;
+    var4 = var4.default;
+    var2.localize = var4;
+    var3 = var3.default;
+    var2.match = var3;
+    var3 = {
+        'weekStartsOn': 1,
+        'firstWeekContainsDate': 1
+    };
+    var2.options = var3;
+    var1.default = var2;
+    var2 = var1.default;
+    var1 = arg4;
+    var1.exports = var2;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2710, 2711, 2712, 2713, 2714]);

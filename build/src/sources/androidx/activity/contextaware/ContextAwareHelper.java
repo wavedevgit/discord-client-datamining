@@ -8,38 +8,38 @@ import kotlin.jvm.internal.Intrinsics;
 public final class ContextAwareHelper {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Set f884a = new CopyOnWriteArraySet();
+    private final Set f853a = new CopyOnWriteArraySet();
 
     /* renamed from: b  reason: collision with root package name */
-    private volatile Context f885b;
+    private volatile Context f854b;
 
     public final void a(OnContextAvailableListener listener) {
         Intrinsics.checkNotNullParameter(listener, "listener");
-        Context context = this.f885b;
+        Context context = this.f854b;
         if (context != null) {
             listener.a(context);
         }
-        this.f884a.add(listener);
+        this.f853a.add(listener);
     }
 
     public final void b() {
-        this.f885b = null;
+        this.f854b = null;
     }
 
     public final void c(Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f885b = context;
-        for (OnContextAvailableListener onContextAvailableListener : this.f884a) {
+        this.f854b = context;
+        for (OnContextAvailableListener onContextAvailableListener : this.f853a) {
             onContextAvailableListener.a(context);
         }
     }
 
     public final Context d() {
-        return this.f885b;
+        return this.f854b;
     }
 
     public final void e(OnContextAvailableListener listener) {
         Intrinsics.checkNotNullParameter(listener, "listener");
-        this.f884a.remove(listener);
+        this.f853a.remove(listener);
     }
 }

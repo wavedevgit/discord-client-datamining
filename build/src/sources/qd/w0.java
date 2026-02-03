@@ -7,13 +7,13 @@ import java.util.ArrayList;
 public final class w0 implements com.google.android.exoplayer2.g {
 
     /* renamed from: o  reason: collision with root package name */
-    public static final w0 f47627o = new w0(new u0[0]);
+    public static final w0 f47777o = new w0(new u0[0]);
 
     /* renamed from: p  reason: collision with root package name */
-    private static final String f47628p = ne.w0.B0(0);
+    private static final String f47778p = ne.w0.B0(0);
 
     /* renamed from: q  reason: collision with root package name */
-    public static final g.a f47629q = new g.a() { // from class: qd.v0
+    public static final g.a f47779q = new g.a() { // from class: qd.v0
         @Override // com.google.android.exoplayer2.g.a
         public final com.google.android.exoplayer2.g a(Bundle bundle) {
             return w0.a(bundle);
@@ -21,34 +21,34 @@ public final class w0 implements com.google.android.exoplayer2.g {
     };
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f47630d;
+    public final int f47780d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ji.s f47631e;
+    private final ji.s f47781e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f47632i;
+    private int f47782i;
 
     public w0(u0... u0VarArr) {
-        this.f47631e = ji.s.n(u0VarArr);
-        this.f47630d = u0VarArr.length;
+        this.f47781e = ji.s.n(u0VarArr);
+        this.f47780d = u0VarArr.length;
         d();
     }
 
     public static /* synthetic */ w0 a(Bundle bundle) {
-        ArrayList parcelableArrayList = bundle.getParcelableArrayList(f47628p);
+        ArrayList parcelableArrayList = bundle.getParcelableArrayList(f47778p);
         if (parcelableArrayList == null) {
             return new w0(new u0[0]);
         }
-        return new w0((u0[]) ne.d.d(u0.f47613s, parcelableArrayList).toArray(new u0[0]));
+        return new w0((u0[]) ne.d.d(u0.f47763s, parcelableArrayList).toArray(new u0[0]));
     }
 
     private void d() {
         int i10 = 0;
-        while (i10 < this.f47631e.size()) {
+        while (i10 < this.f47781e.size()) {
             int i11 = i10 + 1;
-            for (int i12 = i11; i12 < this.f47631e.size(); i12++) {
-                if (((u0) this.f47631e.get(i10)).equals(this.f47631e.get(i12))) {
+            for (int i12 = i11; i12 < this.f47781e.size(); i12++) {
+                if (((u0) this.f47781e.get(i10)).equals(this.f47781e.get(i12))) {
                     ne.y.d("TrackGroupArray", "", new IllegalArgumentException("Multiple identical TrackGroups added to one TrackGroupArray."));
                 }
             }
@@ -57,11 +57,11 @@ public final class w0 implements com.google.android.exoplayer2.g {
     }
 
     public u0 b(int i10) {
-        return (u0) this.f47631e.get(i10);
+        return (u0) this.f47781e.get(i10);
     }
 
     public int c(u0 u0Var) {
-        int indexOf = this.f47631e.indexOf(u0Var);
+        int indexOf = this.f47781e.indexOf(u0Var);
         if (indexOf >= 0) {
             return indexOf;
         }
@@ -74,7 +74,7 @@ public final class w0 implements com.google.android.exoplayer2.g {
         }
         if (obj != null && w0.class == obj.getClass()) {
             w0 w0Var = (w0) obj;
-            if (this.f47630d == w0Var.f47630d && this.f47631e.equals(w0Var.f47631e)) {
+            if (this.f47780d == w0Var.f47780d && this.f47781e.equals(w0Var.f47781e)) {
                 return true;
             }
         }
@@ -82,9 +82,9 @@ public final class w0 implements com.google.android.exoplayer2.g {
     }
 
     public int hashCode() {
-        if (this.f47632i == 0) {
-            this.f47632i = this.f47631e.hashCode();
+        if (this.f47782i == 0) {
+            this.f47782i = this.f47781e.hashCode();
         }
-        return this.f47632i;
+        return this.f47782i;
     }
 }

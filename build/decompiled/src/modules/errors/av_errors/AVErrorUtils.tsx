@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/errors/av_errors/AVErrorUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function() {
-        _fun117494: for (var _fun117494_ip = 0;;) switch (_fun117494_ip) {
+        _fun117555: for (var _fun117555_ip = 0;;) switch (_fun117555_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var0 = _closure1_slot1;
@@ -47,8 +47,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.isIncomingVideoEnabled;
                 var0 = var0.bind(var2)();
                 if (!var0) {
-                    _fun117494_ip = 108;
-                    continue _fun117494
+                    _fun117555_ip = 108;
+                    continue _fun117555
                 }
             case 44:
                 var2 = global;
@@ -71,15 +71,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getReportInboundErrors = var3;
     var3 = function arg0, arg1() {
-        _fun117495: for (var _fun117495_ip = 0;;) switch (_fun117495_ip) {
+        _fun117556: for (var _fun117556_ip = 0;;) switch (_fun117556_ip) {
             case 0:
                 var6 = arg0;
                 var4 = arg1;
                 var5 = arguments[2];
                 var0 = undefined;
                 if (!(var5 === var0)) {
-                    _fun117495_ip = 18;
-                    continue _fun117495
+                    _fun117556_ip = 18;
+                    continue _fun117556
                 }
             case 15:
                 var5 = 15;
@@ -95,31 +95,31 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4 == var3;
                 var0 = null;
                 if (var1) {
-                    _fun117495_ip = 124;
-                    continue _fun117495
+                    _fun117556_ip = 124;
+                    continue _fun117556
                 }
             case 70:
                 var1 = var4 == var2;
                 var0 = null;
                 if (var1) {
-                    _fun117495_ip = 124;
-                    continue _fun117495
+                    _fun117556_ip = 124;
+                    continue _fun117556
                 }
             case 79:
                 var1 = var3.numDatapoints;
                 var1 = var1 < var5;
                 var0 = null;
                 if (var1) {
-                    _fun117495_ip = 124;
-                    continue _fun117495
+                    _fun117556_ip = 124;
+                    continue _fun117556
                 }
             case 94:
                 var1 = var2.numDatapoints;
                 var1 = var1 < var5;
                 var0 = null;
                 if (var1) {
-                    _fun117495_ip = 124;
-                    continue _fun117495
+                    _fun117556_ip = 124;
+                    continue _fun117556
                 }
             case 109:
                 var1 = {};
@@ -132,13 +132,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getAccumulatedStatsWithMinDatapoints = var3;
     var1 = function() {
-        _fun117496: for (var _fun117496_ip = 0;;) switch (_fun117496_ip) {
+        _fun117557: for (var _fun117557_ip = 0;;) switch (_fun117557_ip) {
             case 0:
                 var4 = arguments[0];
                 var0 = undefined;
                 if (!(var4 === var0)) {
-                    _fun117496_ip = 12;
-                    continue _fun117496
+                    _fun117557_ip = 12;
+                    continue _fun117557
                 }
             case 9:
                 var4 = 30;
@@ -147,23 +147,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4 <= var0;
                 var0 = 3;
                 if (var1) {
-                    _fun117496_ip = 57;
-                    continue _fun117496
+                    _fun117557_ip = 57;
+                    continue _fun117557
                 }
             case 25:
                 var3 = 15;
                 var2 = var4 <= var3;
                 var1 = 8;
                 if (var2) {
-                    _fun117496_ip = 54;
-                    continue _fun117496
+                    _fun117557_ip = 54;
+                    continue _fun117557
                 }
             case 38:
                 var2 = 30;
                 var4 = var4 <= var2;
                 if (!var4) {
-                    _fun117496_ip = 51;
-                    continue _fun117496
+                    _fun117557_ip = 51;
+                    continue _fun117557
                 }
             case 48:
                 var2 = var3;
@@ -177,4 +177,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getWarningFrameRate = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3599, 667, 8027, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3608, 667, 8032, 2]);

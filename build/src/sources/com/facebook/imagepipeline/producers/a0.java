@@ -6,11 +6,11 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a0 implements h1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Executor f11319a;
+    private final Executor f10287a;
 
     public a0(Executor executor) {
         if (executor != null) {
-            this.f11319a = executor;
+            this.f10287a = executor;
             return;
         }
         throw new IllegalStateException("Required value was null.");
@@ -24,6 +24,6 @@ public final class a0 implements h1 {
     @Override // com.facebook.imagepipeline.producers.h1
     public void b(Runnable runnable) {
         Intrinsics.checkNotNullParameter(runnable, "runnable");
-        this.f11319a.execute(runnable);
+        this.f10287a.execute(runnable);
     }
 }

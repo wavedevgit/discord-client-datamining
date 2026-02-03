@@ -14,7 +14,7 @@ import java.util.List;
 public abstract class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Comparator f15836a = new a();
+    private static final Comparator f14804a = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements Comparator {
@@ -52,7 +52,7 @@ public abstract class m {
         if (d10.isEmpty()) {
             return null;
         }
-        return (TextView) Collections.max(d10, f15836a);
+        return (TextView) Collections.max(d10, f14804a);
     }
 
     private static List d(Toolbar toolbar, CharSequence charSequence) {
@@ -74,6 +74,6 @@ public abstract class m {
         if (d10.isEmpty()) {
             return null;
         }
-        return (TextView) Collections.min(d10, f15836a);
+        return (TextView) Collections.min(d10, f14804a);
     }
 }

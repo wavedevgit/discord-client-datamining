@@ -51,4 +51,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.handleTapPreviewSharedClientTheme = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3269, 11583, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3278, 11596, 1307, 2]);

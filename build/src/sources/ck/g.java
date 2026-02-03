@@ -3,29 +3,29 @@ package ck;
 public final class g extends n {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final g f8272i;
+    private static final g f7259i;
 
     static {
         g gVar = new g();
-        f8272i = gVar;
-        gVar.setStackTrace(n.f8286e);
+        f7259i = gVar;
+        gVar.setStackTrace(n.f7273e);
     }
 
     private g() {
     }
 
     public static g a() {
-        if (n.f8285d) {
+        if (n.f7272d) {
             return new g();
         }
-        return f8272i;
+        return f7259i;
     }
 
     public static g b(Throwable th2) {
-        if (n.f8285d) {
+        if (n.f7272d) {
             return new g(th2);
         }
-        return f8272i;
+        return f7259i;
     }
 
     private g(Throwable th2) {

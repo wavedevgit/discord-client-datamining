@@ -5,7 +5,7 @@ import ui.c;
 final class r8 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final r8 f38608a = new r8();
+    static final r8 f38405a = new r8();
 
     static {
         c.b a10 = ui.c.a("eventType");

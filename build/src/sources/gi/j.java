@@ -12,7 +12,7 @@ import java.util.Iterator;
 public abstract class j {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final t0 f27037a = new t0("PhoneskyVerificationUtils");
+    private static final t0 f26250a = new t0("PhoneskyVerificationUtils");
 
     public static int a(Context context) {
         try {
@@ -30,18 +30,18 @@ public abstract class j {
     public static boolean b(Context context) {
         try {
             if (!context.getPackageManager().getApplicationInfo("com.android.vending", 0).enabled) {
-                f27037a.d("Play Store package is disabled.", new Object[0]);
+                f26250a.d("Play Store package is disabled.", new Object[0]);
             } else {
                 try {
                     if (c(context.getPackageManager().getPackageInfo("com.android.vending", 64).signatures)) {
                         return true;
                     }
                 } catch (PackageManager.NameNotFoundException unused) {
-                    f27037a.d("Play Store package is not found.", new Object[0]);
+                    f26250a.d("Play Store package is not found.", new Object[0]);
                 }
             }
         } catch (PackageManager.NameNotFoundException unused2) {
-            f27037a.d("Play Store package is not found.", new Object[0]);
+            f26250a.d("Play Store package is not found.", new Object[0]);
         }
         return false;
     }
@@ -61,7 +61,7 @@ public abstract class j {
                     return true;
                 }
             }
-            t0 t0Var = f27037a;
+            t0 t0Var = f26250a;
             StringBuilder sb2 = new StringBuilder();
             Iterator it = arrayList.iterator();
             if (it.hasNext()) {
@@ -76,7 +76,7 @@ public abstract class j {
             t0Var.d(String.format("Play Store package certs are not valid. Found these sha256 certs: [%s].", sb2.toString()), new Object[0]);
             return false;
         }
-        f27037a.d("Play Store package is not signed -- possibly self-built package. Could not verify.", new Object[0]);
+        f26250a.d("Play Store package is not signed -- possibly self-built package. Could not verify.", new Object[0]);
         return false;
     }
 }

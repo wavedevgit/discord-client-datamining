@@ -34,7 +34,7 @@ public final class RiveFileRequest extends n {
         byte[] bArr;
         if (kVar != null) {
             try {
-                bArr = kVar.f8822b;
+                bArr = kVar.f7790b;
             } catch (UnsupportedEncodingException e10) {
                 p a10 = p.a(new m(e10));
                 Intrinsics.checkNotNull(a10);

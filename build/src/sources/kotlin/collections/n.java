@@ -25,15 +25,15 @@ public class n extends l {
     public static final class a implements Iterable, KMappedMarker {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Object[] f33126d;
+        final /* synthetic */ Object[] f32516d;
 
         public a(Object[] objArr) {
-            this.f33126d = objArr;
+            this.f32516d = objArr;
         }
 
         @Override // java.lang.Iterable
         public Iterator iterator() {
-            return ArrayIteratorKt.iterator(this.f33126d);
+            return ArrayIteratorKt.iterator(this.f32516d);
         }
     }
 
@@ -41,15 +41,15 @@ public class n extends l {
     public static final class b implements Sequence {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Object[] f33127a;
+        final /* synthetic */ Object[] f32517a;
 
         public b(Object[] objArr) {
-            this.f33127a = objArr;
+            this.f32517a = objArr;
         }
 
         @Override // kotlin.sequences.Sequence
         public Iterator iterator() {
-            return ArrayIteratorKt.iterator(this.f33127a);
+            return ArrayIteratorKt.iterator(this.f32517a);
         }
     }
 
@@ -642,7 +642,7 @@ public class n extends l {
             if (i10 >= length) {
                 break;
             }
-            arrayList.add(jr.v.a(objArr[i10], obj));
+            arrayList.add(lr.v.a(objArr[i10], obj));
             i10++;
         }
         return arrayList;
@@ -684,7 +684,7 @@ public class n extends l {
         int min = Math.min(objArr.length, other.length);
         ArrayList arrayList = new ArrayList(min);
         for (int i10 = 0; i10 < min; i10++) {
-            arrayList.add(jr.v.a(objArr[i10], other[i10]));
+            arrayList.add(lr.v.a(objArr[i10], other[i10]));
         }
         return arrayList;
     }

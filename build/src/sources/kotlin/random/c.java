@@ -8,10 +8,10 @@ public abstract class c {
     @NotNull
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f33164d = new a(null);
+    public static final a f32554d = new a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final c f33165e = rr.b.f48655a.b();
+    private static final c f32555e = tr.b.f50235a.b();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends c implements Serializable {
@@ -21,27 +21,27 @@ public abstract class c {
 
         @Override // kotlin.random.c
         public int b(int i10) {
-            return c.f33165e.b(i10);
+            return c.f32555e.b(i10);
         }
 
         @Override // kotlin.random.c
         public float c() {
-            return c.f33165e.c();
+            return c.f32555e.c();
         }
 
         @Override // kotlin.random.c
         public int d() {
-            return c.f33165e.d();
+            return c.f32555e.d();
         }
 
         @Override // kotlin.random.c
         public int e(int i10) {
-            return c.f33165e.e(i10);
+            return c.f32555e.e(i10);
         }
 
         @Override // kotlin.random.c
         public int f(int i10, int i11) {
-            return c.f33165e.f(i10, i11);
+            return c.f32555e.f(i10, i11);
         }
 
         private a() {

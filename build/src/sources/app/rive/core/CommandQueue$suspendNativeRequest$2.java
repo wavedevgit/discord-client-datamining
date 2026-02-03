@@ -16,7 +16,7 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CoroutineScope;
 import org.jetbrains.annotations.NotNull;
-import pr.b;
+import rr.b;
 /* JADX INFO: Add missing generic type declarations: [T] */
 @Metadata(d1 = {"\u0000\b\n\u0002\b\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u0002H\u0001\"\u0006\b\u0000\u0010\u0001\u0018\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "T", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @e(c = "app.rive.core.CommandQueue$suspendNativeRequest$2", f = "CommandQueue.kt", l = {2460}, m = "invokeSuspend")
@@ -105,7 +105,7 @@ public final class CommandQueue$suspendNativeRequest$2<T> extends k implements F
         concurrentHashMap.put(valueOf, eVar);
         eVar.c(new CommandQueue$suspendNativeRequest$2$1$1(commandQueue, andIncrement));
         function1.invoke(Long.valueOf(andIncrement));
-        Unit unit = Unit.f33074a;
+        Unit unit = Unit.f32464a;
         Object B = eVar.B();
         if (B == b.f()) {
             g.c(this);
@@ -115,6 +115,6 @@ public final class CommandQueue$suspendNativeRequest$2<T> extends k implements F
     }
 
     public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super T> continuation) {
-        return ((CommandQueue$suspendNativeRequest$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        return ((CommandQueue$suspendNativeRequest$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
     }
 }

@@ -10,13 +10,13 @@ import org.jetbrains.annotations.NotNull;
 public final class AnnotationUseSiteTarget {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ AnnotationUseSiteTarget[] f33411e;
+    private static final /* synthetic */ AnnotationUseSiteTarget[] f32801e;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f33412i;
+    private static final /* synthetic */ EnumEntries f32802i;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f33413d;
+    private final String f32803d;
     public static final AnnotationUseSiteTarget ALL = new AnnotationUseSiteTarget("ALL", 0, null, 1, null);
     public static final AnnotationUseSiteTarget FIELD = new AnnotationUseSiteTarget("FIELD", 1, null, 1, null);
     public static final AnnotationUseSiteTarget FILE = new AnnotationUseSiteTarget("FILE", 2, null, 1, null);
@@ -30,12 +30,12 @@ public final class AnnotationUseSiteTarget {
 
     static {
         AnnotationUseSiteTarget[] a10 = a();
-        f33411e = a10;
-        f33412i = qr.a.a(a10);
+        f32801e = a10;
+        f32802i = sr.a.a(a10);
     }
 
     private AnnotationUseSiteTarget(String str, int i10, String str2) {
-        this.f33413d = str2 == null ? CapitalizeDecapitalizeKt.toLowerCaseAsciiOnly(name()) : str2;
+        this.f32803d = str2 == null ? CapitalizeDecapitalizeKt.toLowerCaseAsciiOnly(name()) : str2;
     }
 
     private static final /* synthetic */ AnnotationUseSiteTarget[] a() {
@@ -47,12 +47,12 @@ public final class AnnotationUseSiteTarget {
     }
 
     public static AnnotationUseSiteTarget[] values() {
-        return (AnnotationUseSiteTarget[]) f33411e.clone();
+        return (AnnotationUseSiteTarget[]) f32801e.clone();
     }
 
     @NotNull
     public final String getRenderName() {
-        return this.f33413d;
+        return this.f32803d;
     }
 
     /* synthetic */ AnnotationUseSiteTarget(String str, int i10, String str2, int i11, DefaultConstructorMarker defaultConstructorMarker) {

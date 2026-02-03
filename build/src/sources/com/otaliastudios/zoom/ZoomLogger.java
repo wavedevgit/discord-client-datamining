@@ -9,19 +9,19 @@ import kotlin.jvm.internal.Intrinsics;
 public final class ZoomLogger {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f17939b = new a(null);
+    public static final a f16907b = new a(null);
 
     /* renamed from: c  reason: collision with root package name */
-    private static int f17940c = 3;
+    private static int f16908c = 3;
 
     /* renamed from: d  reason: collision with root package name */
-    private static String f17941d;
+    private static String f16909d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static String f17942e;
+    private static String f16910e;
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f17943a;
+    private final String f16911a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -43,7 +43,7 @@ public final class ZoomLogger {
     }
 
     private final boolean c(int i10) {
-        if (f17940c <= i10) {
+        if (f16908c <= i10) {
             return true;
         }
         return false;
@@ -59,9 +59,9 @@ public final class ZoomLogger {
     public final void a(String message) {
         Intrinsics.checkNotNullParameter(message, "message");
         if (c(1)) {
-            Log.i(this.f17943a, message);
-            f17941d = message;
-            f17942e = this.f17943a;
+            Log.i(this.f16911a, message);
+            f16909d = message;
+            f16910e = this.f16911a;
         }
     }
 
@@ -73,9 +73,9 @@ public final class ZoomLogger {
     public final void e(String message) {
         Intrinsics.checkNotNullParameter(message, "message");
         if (c(0)) {
-            Log.v(this.f17943a, message);
-            f17941d = message;
-            f17942e = this.f17943a;
+            Log.v(this.f16911a, message);
+            f16909d = message;
+            f16910e = this.f16911a;
         }
     }
 
@@ -87,9 +87,9 @@ public final class ZoomLogger {
     public final void g(String message) {
         Intrinsics.checkNotNullParameter(message, "message");
         if (c(2)) {
-            Log.w(this.f17943a, message);
-            f17941d = message;
-            f17942e = this.f17943a;
+            Log.w(this.f16911a, message);
+            f16909d = message;
+            f16910e = this.f16911a;
         }
     }
 
@@ -99,6 +99,6 @@ public final class ZoomLogger {
     }
 
     private ZoomLogger(String str) {
-        this.f17943a = str;
+        this.f16911a = str;
     }
 }

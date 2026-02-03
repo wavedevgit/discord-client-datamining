@@ -5,50 +5,66 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function arg0, arg1() {
-        _fun29113: for (var _fun29113_ip = 0;;) switch (_fun29113_ip) {
+        _fun29181: for (var _fun29181_ip = 0;;) switch (_fun29181_ip) {
             case 0:
-                var4 = arg0;
-                var3 = arg1;
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 0;
-                var0 = var1[var0];
-                var1 = undefined;
-                var0 = var2.bind(var1)(var0);
-                var0 = var0.bind(var1)(var3);
-                if (!var0) {
-                    _fun29113_ip = 46;
-                    continue _fun29113
+                var1 = arg0;
+                var0 = arg1;
+                var5 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var3 = 0;
+                var3 = var4[var3];
+                var4 = undefined;
+                var3 = var5.bind(var4)(var3);
+                var3 = var3.bind(var4)(var1);
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                if (var3) {
+                    _fun29181_ip = 86;
+                    continue _fun29181
                 }
-            case 38:
-                var1 = '[[Enumerable]]';
-                var0 = var1 in var3;
             case 46:
-                if (!var0) {
-                    _fun29113_ip = 57;
-                    continue _fun29113
+                var3 = 1;
+                var3 = var6[var3];
+                var8 = var5.bind(var4)(var3);
+                var3 = var8.prototype;
+                var7 = Object.create(var3, {
+                    constructor: {
+                        value: var8
+                    }
+                });
+                var9 = 'Assertion failed: `O` must be an Object';
+                var10 = var7;
+                var3 = new var10[var8](var9, var8);
+                var3 = var3 instanceof Object ? var3 : var7;
+                throw var3;
+            case 86:
+                var3 = 2;
+                var3 = var6[var3];
+                var3 = var5.bind(var4)(var3);
+                var3 = var3.bind(var4)(var0);
+                if (var3) {
+                    _fun29181_ip = 154;
+                    continue _fun29181
                 }
-            case 49:
-                var1 = '[[Configurable]]';
-                var0 = var1 in var3;
-            case 57:
-                if (!var0) {
-                    _fun29113_ip = 88;
-                    continue _fun29113
-                }
-            case 60:
-                var1 = var4.IsAccessorDescriptor;
-                var1 = var1.bind(var4)(var3);
-                if (var1) {
-                    _fun29113_ip = 85;
-                    continue _fun29113
-                }
-            case 74:
-                var2 = var4.IsDataDescriptor;
-                var1 = var2.bind(var4)(var3);
-            case 85:
-                var0 = var1;
-            case 88:
+            case 106:
+                var3 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var2 = 1;
+                var2 = var5[var2];
+                var4 = var3.bind(var4)(var2);
+                var2 = var4.prototype;
+                var3 = Object.create(var2, {
+                    constructor: {
+                        value: var4
+                    }
+                });
+                var9 = 'Assertion failed: `P` must be a Property Key';
+                var10 = var3;
+                var2 = new var10[var4](var9, var8);
+                var2 = var2 instanceof Object ? var2 : var3;
+                throw var2;
+            case 154:
+                var0 = var0 in var1;
                 return var0;
         }
     };
@@ -56,4 +72,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3410]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3368, 518, 3415]);

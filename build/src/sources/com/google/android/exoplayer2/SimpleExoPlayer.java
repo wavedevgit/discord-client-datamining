@@ -12,37 +12,37 @@ import com.google.android.exoplayer2.video.VideoSize;
 public class SimpleExoPlayer extends e implements Player {
 
     /* renamed from: b  reason: collision with root package name */
-    private final i0 f12609b;
+    private final i0 f11577b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ne.h f12610c;
+    private final ne.h f11578c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final k f12611a;
+        private final k f11579a;
 
         public a(Context context, lc.s0 s0Var) {
-            this.f12611a = new k(context, s0Var);
+            this.f11579a = new k(context, s0Var);
         }
 
         public SimpleExoPlayer a() {
-            return this.f12611a.h();
+            return this.f11579a.h();
         }
 
         public a b(le.e eVar) {
-            this.f12611a.i(eVar);
+            this.f11579a.i(eVar);
             return this;
         }
 
         public a c(lc.a0 a0Var) {
-            this.f12611a.j(a0Var);
+            this.f11579a.j(a0Var);
             return this;
         }
 
         public a d(je.q qVar) {
-            this.f12611a.k(qVar);
+            this.f11579a.k(qVar);
             return this;
         }
     }
@@ -50,328 +50,328 @@ public class SimpleExoPlayer extends e implements Player {
     /* JADX INFO: Access modifiers changed from: package-private */
     public SimpleExoPlayer(k kVar) {
         ne.h hVar = new ne.h();
-        this.f12610c = hVar;
+        this.f11578c = hVar;
         try {
-            this.f12609b = new i0(kVar, this);
+            this.f11577b = new i0(kVar, this);
             hVar.e();
         } catch (Throwable th2) {
-            this.f12610c.e();
+            this.f11578c.e();
             throw th2;
         }
     }
 
     private void s0() {
-        this.f12610c.b();
+        this.f11578c.b();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public Player.Commands A() {
         s0();
-        return this.f12609b.A();
+        return this.f11577b.A();
     }
 
     public void A0(qd.r rVar, boolean z10, boolean z11) {
         s0();
-        this.f12609b.W1(rVar, z10, z11);
+        this.f11577b.W1(rVar, z10, z11);
     }
 
     @Override // com.google.android.exoplayer2.Player
     public boolean B() {
         s0();
-        return this.f12609b.B();
+        return this.f11577b.B();
     }
 
     public void B0() {
         s0();
-        this.f12609b.X1();
+        this.f11577b.X1();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public void C(boolean z10) {
         s0();
-        this.f12609b.C(z10);
+        this.f11577b.C(z10);
     }
 
     public void C0(qd.r rVar) {
         s0();
-        this.f12609b.d2(rVar);
+        this.f11577b.d2(rVar);
     }
 
     @Override // com.google.android.exoplayer2.Player
     public long D() {
         s0();
-        return this.f12609b.D();
+        return this.f11577b.D();
     }
 
     public void D0(PlaybackParameters playbackParameters) {
         s0();
-        this.f12609b.j2(playbackParameters);
+        this.f11577b.j2(playbackParameters);
     }
 
     @Override // com.google.android.exoplayer2.Player
     public int E() {
         s0();
-        return this.f12609b.E();
+        return this.f11577b.E();
     }
 
     public void E0(int i10) {
         s0();
-        this.f12609b.m2(i10);
+        this.f11577b.m2(i10);
     }
 
     @Override // com.google.android.exoplayer2.Player
     public void F(TextureView textureView) {
         s0();
-        this.f12609b.F(textureView);
+        this.f11577b.F(textureView);
     }
 
     public void F0(float f10) {
         s0();
-        this.f12609b.o2(f10);
+        this.f11577b.o2(f10);
     }
 
     @Override // com.google.android.exoplayer2.Player
     public VideoSize G() {
         s0();
-        return this.f12609b.G();
+        return this.f11577b.G();
     }
 
     public void G0() {
         s0();
-        this.f12609b.p2();
+        this.f11577b.p2();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public int I() {
         s0();
-        return this.f12609b.I();
+        return this.f11577b.I();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public long J() {
         s0();
-        return this.f12609b.J();
+        return this.f11577b.J();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public long K() {
         s0();
-        return this.f12609b.K();
+        return this.f11577b.K();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public void L(Player.b bVar) {
         s0();
-        this.f12609b.L(bVar);
+        this.f11577b.L(bVar);
     }
 
     @Override // com.google.android.exoplayer2.Player
     public long M() {
         s0();
-        return this.f12609b.M();
+        return this.f11577b.M();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public int O() {
         s0();
-        return this.f12609b.O();
+        return this.f11577b.O();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public int Q() {
         s0();
-        return this.f12609b.Q();
+        return this.f11577b.Q();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public void R(int i10) {
         s0();
-        this.f12609b.R(i10);
+        this.f11577b.R(i10);
     }
 
     @Override // com.google.android.exoplayer2.Player
     public void S(SurfaceView surfaceView) {
         s0();
-        this.f12609b.S(surfaceView);
+        this.f11577b.S(surfaceView);
     }
 
     @Override // com.google.android.exoplayer2.Player
     public int T() {
         s0();
-        return this.f12609b.T();
+        return this.f11577b.T();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public boolean U() {
         s0();
-        return this.f12609b.U();
+        return this.f11577b.U();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public long V() {
         s0();
-        return this.f12609b.V();
+        return this.f11577b.V();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public MediaMetadata Y() {
         s0();
-        return this.f12609b.Y();
+        return this.f11577b.Y();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public long Z() {
         s0();
-        return this.f12609b.Z();
+        return this.f11577b.Z();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public long a0() {
         s0();
-        return this.f12609b.a0();
+        return this.f11577b.a0();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public PlaybackParameters c() {
         s0();
-        return this.f12609b.c();
+        return this.f11577b.c();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public void d() {
         s0();
-        this.f12609b.d();
+        this.f11577b.d();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public boolean f() {
         s0();
-        return this.f12609b.f();
+        return this.f11577b.f();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public long g() {
         s0();
-        return this.f12609b.g();
+        return this.f11577b.g();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public long getDuration() {
         s0();
-        return this.f12609b.getDuration();
+        return this.f11577b.getDuration();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public void h(Player.b bVar) {
         s0();
-        this.f12609b.h(bVar);
+        this.f11577b.h(bVar);
     }
 
     @Override // com.google.android.exoplayer2.Player
     public void j(SurfaceView surfaceView) {
         s0();
-        this.f12609b.j(surfaceView);
+        this.f11577b.j(surfaceView);
     }
 
     @Override // com.google.android.exoplayer2.Player
     public void k(int i10, int i11) {
         s0();
-        this.f12609b.k(i10, i11);
+        this.f11577b.k(i10, i11);
     }
 
     @Override // com.google.android.exoplayer2.e
     public void k0(int i10, long j10, int i11, boolean z10) {
         s0();
-        this.f12609b.k0(i10, j10, i11, z10);
+        this.f11577b.k0(i10, j10, i11, z10);
     }
 
     @Override // com.google.android.exoplayer2.Player
     public void n(boolean z10) {
         s0();
-        this.f12609b.n(z10);
+        this.f11577b.n(z10);
     }
 
     @Override // com.google.android.exoplayer2.Player
     public Tracks o() {
         s0();
-        return this.f12609b.o();
+        return this.f11577b.o();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public CueGroup q() {
         s0();
-        return this.f12609b.q();
+        return this.f11577b.q();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public int r() {
         s0();
-        return this.f12609b.r();
+        return this.f11577b.r();
     }
 
     public void r0(AnalyticsListener analyticsListener) {
         s0();
-        this.f12609b.q1(analyticsListener);
+        this.f11577b.q1(analyticsListener);
     }
 
     public je.m t0() {
         s0();
-        return this.f12609b.D1();
+        return this.f11577b.D1();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public int u() {
         s0();
-        return this.f12609b.u();
+        return this.f11577b.u();
     }
 
     @Override // com.google.android.exoplayer2.Player
     /* renamed from: u0 */
     public j m() {
         s0();
-        return this.f12609b.m();
+        return this.f11577b.m();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public Timeline v() {
         s0();
-        return this.f12609b.v();
+        return this.f11577b.v();
     }
 
     public int v0() {
         s0();
-        return this.f12609b.K1();
+        return this.f11577b.K1();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public Looper w() {
         s0();
-        return this.f12609b.w();
+        return this.f11577b.w();
     }
 
     public int w0(int i10) {
         s0();
-        return this.f12609b.L1(i10);
+        return this.f11577b.L1(i10);
     }
 
     public je.q x0() {
         s0();
-        return this.f12609b.N1();
+        return this.f11577b.N1();
     }
 
     @Override // com.google.android.exoplayer2.Player
     public void y(TextureView textureView) {
         s0();
-        this.f12609b.y(textureView);
+        this.f11577b.y(textureView);
     }
 
     public Format y0() {
         s0();
-        return this.f12609b.O1();
+        return this.f11577b.O1();
     }
 
     public float z0() {
         s0();
-        return this.f12609b.P1();
+        return this.f11577b.P1();
     }
 }

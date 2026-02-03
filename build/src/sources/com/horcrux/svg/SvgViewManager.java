@@ -31,21 +31,21 @@ class SvgViewManager extends ReactViewManager implements RNSVGSvgViewAndroidMana
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f17405a;
+        static final /* synthetic */ int[] f16373a;
 
         static {
             int[] iArr = new int[ReadableType.values().length];
-            f17405a = iArr;
+            f16373a = iArr;
             try {
                 iArr[ReadableType.Map.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f17405a[ReadableType.Number.ordinal()] = 2;
+                f16373a[ReadableType.Number.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f17405a[ReadableType.Null.ordinal()] = 3;
+                f16373a[ReadableType.Null.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
@@ -264,7 +264,7 @@ class SvgViewManager extends ReactViewManager implements RNSVGSvgViewAndroidMana
 
     @Override // com.facebook.react.viewmanagers.RNSVGSvgViewAndroidManagerInterface
     public void setHitSlop(SvgView svgView, Dynamic dynamic) {
-        int i10 = a.f17405a[dynamic.getType().ordinal()];
+        int i10 = a.f16373a[dynamic.getType().ordinal()];
         if (i10 == 1) {
             ReadableMap asMap = dynamic.asMap();
             svgView.setHitSlopRect(new Rect(asMap.hasKey(ViewProps.LEFT) ? (int) PixelUtil.toPixelFromDIP(asMap.getDouble(ViewProps.LEFT)) : 0, asMap.hasKey(ViewProps.TOP) ? (int) PixelUtil.toPixelFromDIP(asMap.getDouble(ViewProps.TOP)) : 0, asMap.hasKey(ViewProps.RIGHT) ? (int) PixelUtil.toPixelFromDIP(asMap.getDouble(ViewProps.RIGHT)) : 0, asMap.hasKey(ViewProps.BOTTOM) ? (int) PixelUtil.toPixelFromDIP(asMap.getDouble(ViewProps.BOTTOM)) : 0));

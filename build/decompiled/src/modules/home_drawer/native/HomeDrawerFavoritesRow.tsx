@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/home_drawer/native/HomeDrawerFavoritesRow.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun100939: for (var _fun100939_ip = 0;;) switch (_fun100939_ip) {
+        _fun100999: for (var _fun100999_ip = 0;;) switch (_fun100999_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.unread;
@@ -53,8 +53,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.variant = var7;
                 var7 = 'text-muted';
                 if (!var8) {
-                    _fun100939_ip = 88;
-                    continue _fun100939
+                    _fun100999_ip = 88;
+                    continue _fun100999
                 }
             case 82:
                 var7 = 'mobile-text-heading-primary';
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.HomeDrawerFavoritesRowExpandedChildren = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 13143, 3932, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 13154, 3941, 1234, 2]);

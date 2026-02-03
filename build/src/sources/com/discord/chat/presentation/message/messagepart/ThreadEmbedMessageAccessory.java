@@ -54,7 +54,7 @@ public final class ThreadEmbedMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof ThreadEmbedMessageAccessory) {
             ThreadEmbedMessageAccessory threadEmbedMessageAccessory = (ThreadEmbedMessageAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, threadEmbedMessageAccessory.messageId) && Intrinsics.areEqual(this.threadEmbed, threadEmbedMessageAccessory.threadEmbed);
+            return MessageId.m1089equalsimpl0(this.messageId, threadEmbedMessageAccessory.messageId) && Intrinsics.areEqual(this.threadEmbed, threadEmbedMessageAccessory.threadEmbed);
         }
         return false;
     }
@@ -72,14 +72,14 @@ public final class ThreadEmbedMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.threadEmbed.hashCode();
+        return (MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.threadEmbed.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         ThreadEmbed threadEmbed = this.threadEmbed;
-        return "ThreadEmbedMessageAccessory(messageId=" + m1093toStringimpl + ", threadEmbed=" + threadEmbed + ")";
+        return "ThreadEmbedMessageAccessory(messageId=" + m1092toStringimpl + ", threadEmbed=" + threadEmbed + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

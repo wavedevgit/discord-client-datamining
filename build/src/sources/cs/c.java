@@ -1,80 +1,49 @@
 package cs;
 
-import ds.a0;
-import ds.j2;
-import ds.j3;
-import ds.t2;
-import es.h;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
-import java.lang.reflect.Member;
-import java.lang.reflect.Method;
-import java.lang.reflect.Type;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.reflect.KFunction;
-import kotlin.reflect.KProperty;
-import kotlin.reflect.KType;
-import kotlin.reflect.e;
-import kotlin.reflect.p;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class c {
-    public static final Constructor a(KFunction kFunction) {
-        Member member;
-        h A;
-        Intrinsics.checkNotNullParameter(kFunction, "<this>");
-        a0 b10 = j3.b(kFunction);
-        if (b10 != null && (A = b10.A()) != null) {
-            member = A.b();
-        } else {
-            member = null;
+import java.util.NoSuchElementException;
+import kotlin.collections.n0;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public final class c extends n0 {
+
+    /* renamed from: d  reason: collision with root package name */
+    private final long f19818d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final long f19819e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private boolean f19820i;
+
+    /* renamed from: o  reason: collision with root package name */
+    private long f19821o;
+
+    public c(long j10, long j11, long j12) {
+        this.f19818d = j12;
+        this.f19819e = j11;
+        boolean z10 = false;
+        if (j12 <= 0 ? j10 >= j11 : j10 <= j11) {
+            z10 = true;
         }
-        if (!(member instanceof Constructor)) {
-            return null;
-        }
-        return (Constructor) member;
+        this.f19820i = z10;
+        this.f19821o = z10 ? j10 : j11;
     }
 
-    public static final Field b(KProperty kProperty) {
-        Intrinsics.checkNotNullParameter(kProperty, "<this>");
-        j2 d10 = j3.d(kProperty);
-        if (d10 != null) {
-            return d10.R();
-        }
-        return null;
+    @Override // java.util.Iterator
+    public boolean hasNext() {
+        return this.f19820i;
     }
 
-    public static final Method c(KProperty kProperty) {
-        Intrinsics.checkNotNullParameter(kProperty, "<this>");
-        return d(kProperty.getGetter());
-    }
-
-    public static final Method d(KFunction kFunction) {
-        Member member;
-        h A;
-        Intrinsics.checkNotNullParameter(kFunction, "<this>");
-        a0 b10 = j3.b(kFunction);
-        if (b10 != null && (A = b10.A()) != null) {
-            member = A.b();
-        } else {
-            member = null;
+    @Override // kotlin.collections.n0
+    public long nextLong() {
+        long j10 = this.f19821o;
+        if (j10 == this.f19819e) {
+            if (this.f19820i) {
+                this.f19820i = false;
+                return j10;
+            }
+            throw new NoSuchElementException();
         }
-        if (!(member instanceof Method)) {
-            return null;
-        }
-        return (Method) member;
-    }
-
-    public static final Method e(e eVar) {
-        Intrinsics.checkNotNullParameter(eVar, "<this>");
-        return d(eVar.getSetter());
-    }
-
-    public static final Type f(KType kType) {
-        Intrinsics.checkNotNullParameter(kType, "<this>");
-        Type javaType = ((t2) kType).getJavaType();
-        if (javaType == null) {
-            return p.f(kType);
-        }
-        return javaType;
+        this.f19821o = this.f19818d + j10;
+        return j10;
     }
 }

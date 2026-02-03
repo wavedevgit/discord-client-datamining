@@ -3,50 +3,50 @@ package og;
 public final class ea {
 
     /* renamed from: a  reason: collision with root package name */
-    private hc f43140a;
+    private hc f42940a;
 
     /* renamed from: b  reason: collision with root package name */
-    private da f43141b;
+    private da f42941b;
 
     /* renamed from: c  reason: collision with root package name */
-    private ba f43142c;
+    private ba f42942c;
 
     /* renamed from: d  reason: collision with root package name */
-    private wa f43143d;
+    private wa f42943d;
 
     /* renamed from: e  reason: collision with root package name */
-    private za f43144e;
+    private za f42944e;
 
     /* renamed from: f  reason: collision with root package name */
-    private s2 f43145f;
+    private s2 f42945f;
 
     public final ea d(s2 s2Var) {
-        this.f43145f = s2Var;
+        this.f42945f = s2Var;
         return this;
     }
 
     public final ea e(ba baVar) {
-        this.f43142c = baVar;
+        this.f42942c = baVar;
         return this;
     }
 
     public final ea f(da daVar) {
-        this.f43141b = daVar;
+        this.f42941b = daVar;
         return this;
     }
 
     public final ea g(wa waVar) {
-        this.f43143d = waVar;
+        this.f42943d = waVar;
         return this;
     }
 
     public final ea h(za zaVar) {
-        this.f43144e = zaVar;
+        this.f42944e = zaVar;
         return this;
     }
 
     public final ea i(hc hcVar) {
-        this.f43140a = hcVar;
+        this.f42940a = hcVar;
         return this;
     }
 

@@ -646,9 +646,9 @@ public class DescriptorUtils {
         if (declarationDescriptor == null) {
             a(31);
         }
-        ClassifierDescriptor mo1200getDeclarationDescriptor = kotlinType.getConstructor().mo1200getDeclarationDescriptor();
-        if (mo1200getDeclarationDescriptor != null) {
-            DeclarationDescriptor original = mo1200getDeclarationDescriptor.getOriginal();
+        ClassifierDescriptor mo1197getDeclarationDescriptor = kotlinType.getConstructor().mo1197getDeclarationDescriptor();
+        if (mo1197getDeclarationDescriptor != null) {
+            DeclarationDescriptor original = mo1197getDeclarationDescriptor.getOriginal();
             if ((original instanceof ClassifierDescriptor) && (declarationDescriptor instanceof ClassifierDescriptor) && ((ClassifierDescriptor) declarationDescriptor).getTypeConstructor().equals(((ClassifierDescriptor) original).getTypeConstructor())) {
                 return true;
             }
@@ -680,7 +680,7 @@ public class DescriptorUtils {
         if (typeConstructor == null) {
             a(46);
         }
-        ClassDescriptor classDescriptor = (ClassDescriptor) typeConstructor.mo1200getDeclarationDescriptor();
+        ClassDescriptor classDescriptor = (ClassDescriptor) typeConstructor.mo1197getDeclarationDescriptor();
         if (classDescriptor == null) {
             a(47);
         }
@@ -703,11 +703,11 @@ public class DescriptorUtils {
         if (kotlinType == null) {
             a(20);
         }
-        ClassifierDescriptor mo1200getDeclarationDescriptor = kotlinType.getConstructor().mo1200getDeclarationDescriptor();
-        if (mo1200getDeclarationDescriptor == null) {
+        ClassifierDescriptor mo1197getDeclarationDescriptor = kotlinType.getConstructor().mo1197getDeclarationDescriptor();
+        if (mo1197getDeclarationDescriptor == null) {
             return null;
         }
-        return getContainingModuleOrNull(mo1200getDeclarationDescriptor);
+        return getContainingModuleOrNull(mo1197getDeclarationDescriptor);
     }
 
     @NotNull

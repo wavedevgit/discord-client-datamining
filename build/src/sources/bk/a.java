@@ -9,36 +9,36 @@ import zj.d;
 public class a implements d {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f6572d = new C0114a().a();
+    public static final a f6618d = new C0105a().a();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Executor f6574b;
+    private final Executor f6620b;
 
     /* renamed from: a  reason: collision with root package name */
-    final AtomicReference f6573a = new AtomicReference();
+    final AtomicReference f6619a = new AtomicReference();
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f6575c = "taser_tflite_gocrlatin_mbv2_scriptid_aksara_layout_gcn_mobile";
+    private final String f6621c = "taser_tflite_gocrlatin_mbv2_scriptid_aksara_layout_gcn_mobile";
 
     /* renamed from: bk.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static class C0114a {
+    public static class C0105a {
 
         /* renamed from: a  reason: collision with root package name */
-        private Executor f6576a;
+        private Executor f6622a;
 
         public a a() {
-            return new a(this.f6576a, "taser_tflite_gocrlatin_mbv2_scriptid_aksara_layout_gcn_mobile");
+            return new a(this.f6622a, "taser_tflite_gocrlatin_mbv2_scriptid_aksara_layout_gcn_mobile");
         }
     }
 
     public a(Executor executor, String str) {
-        this.f6574b = executor;
+        this.f6620b = executor;
     }
 
     @Override // zj.d
     public final Executor a() {
-        return this.f6574b;
+        return this.f6620b;
     }
 
     @Override // zj.d
@@ -51,12 +51,12 @@ public class a implements d {
 
     @Override // zj.d
     public final String c() {
-        return this.f6575c;
+        return this.f6621c;
     }
 
     @Override // zj.d
     public final boolean d() {
-        return c.a(this.f6573a, "com.google.mlkit.dynamite.text.latin");
+        return c.a(this.f6619a, "com.google.mlkit.dynamite.text.latin");
     }
 
     @Override // zj.d
@@ -74,7 +74,7 @@ public class a implements d {
         if (!(obj instanceof a)) {
             return false;
         }
-        return o.a(this.f6574b, ((a) obj).f6574b);
+        return o.a(this.f6620b, ((a) obj).f6620b);
     }
 
     @Override // zj.d
@@ -96,7 +96,7 @@ public class a implements d {
     }
 
     public int hashCode() {
-        return o.b(this.f6574b);
+        return o.b(this.f6620b);
     }
 
     @Override // zj.d

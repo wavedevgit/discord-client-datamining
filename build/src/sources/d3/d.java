@@ -12,24 +12,24 @@ import java.lang.ref.WeakReference;
 final class d implements InputFilter {
 
     /* renamed from: a  reason: collision with root package name */
-    private final TextView f21226a;
+    private final TextView f20085a;
 
     /* renamed from: b  reason: collision with root package name */
-    private e.f f21227b;
+    private e.f f20086b;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a extends e.f {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Reference f21228a;
+        private final Reference f20087a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Reference f21229b;
+        private final Reference f20088b;
 
         a(TextView textView, d dVar) {
-            this.f21228a = new WeakReference(textView);
-            this.f21229b = new WeakReference(dVar);
+            this.f20087a = new WeakReference(textView);
+            this.f20088b = new WeakReference(dVar);
         }
 
         private boolean c(TextView textView, InputFilter inputFilter) {
@@ -50,8 +50,8 @@ final class d implements InputFilter {
             CharSequence text;
             CharSequence p10;
             super.b();
-            TextView textView = (TextView) this.f21228a.get();
-            if (c(textView, (InputFilter) this.f21229b.get()) && textView.isAttachedToWindow() && text != (p10 = androidx.emoji2.text.e.c().p((text = textView.getText())))) {
+            TextView textView = (TextView) this.f20087a.get();
+            if (c(textView, (InputFilter) this.f20088b.get()) && textView.isAttachedToWindow() && text != (p10 = androidx.emoji2.text.e.c().p((text = textView.getText())))) {
                 int selectionStart = Selection.getSelectionStart(p10);
                 int selectionEnd = Selection.getSelectionEnd(p10);
                 textView.setText(p10);
@@ -64,14 +64,14 @@ final class d implements InputFilter {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d(TextView textView) {
-        this.f21226a = textView;
+        this.f20085a = textView;
     }
 
     private e.f a() {
-        if (this.f21227b == null) {
-            this.f21227b = new a(this.f21226a, this);
+        if (this.f20086b == null) {
+            this.f20086b = new a(this.f20085a, this);
         }
-        return this.f21227b;
+        return this.f20086b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -87,14 +87,14 @@ final class d implements InputFilter {
 
     @Override // android.text.InputFilter
     public CharSequence filter(CharSequence charSequence, int i10, int i11, Spanned spanned, int i12, int i13) {
-        if (!this.f21226a.isInEditMode()) {
+        if (!this.f20085a.isInEditMode()) {
             int e10 = androidx.emoji2.text.e.c().e();
             if (e10 != 0) {
                 if (e10 != 1) {
                     if (e10 != 3) {
                         return charSequence;
                     }
-                } else if (i13 == 0 && i12 == 0 && spanned.length() == 0 && charSequence == this.f21226a.getText()) {
+                } else if (i13 == 0 && i12 == 0 && spanned.length() == 0 && charSequence == this.f20085a.getText()) {
                     return charSequence;
                 } else {
                     if (charSequence != null) {

@@ -22,26 +22,26 @@ import kotlin.jvm.internal.Lambda;
 public final class d implements x3.h, g {
 
     /* renamed from: d  reason: collision with root package name */
-    private final x3.h f48066d;
+    private final x3.h f48375d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final r3.c f48067e;
+    public final r3.c f48376e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final a f48068i;
+    private final a f48377i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a implements x3.g {
 
         /* renamed from: d  reason: collision with root package name */
-        private final r3.c f48069d;
+        private final r3.c f48378d;
 
         /* renamed from: r3.d$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         static final class C0590a extends Lambda implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final C0590a f48070d = new C0590a();
+            public static final C0590a f48379d = new C0590a();
 
             C0590a() {
                 super(1);
@@ -59,19 +59,19 @@ public final class d implements x3.h, g {
         static final class b extends Lambda implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ String f48071d;
+            final /* synthetic */ String f48380d;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             b(String str) {
                 super(1);
-                this.f48071d = str;
+                this.f48380d = str;
             }
 
             @Override // kotlin.jvm.functions.Function1
             /* renamed from: a */
             public final Object invoke(x3.g db2) {
                 Intrinsics.checkNotNullParameter(db2, "db");
-                db2.K(this.f48071d);
+                db2.K(this.f48380d);
                 return null;
             }
         }
@@ -80,23 +80,23 @@ public final class d implements x3.h, g {
         static final class c extends Lambda implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ String f48072d;
+            final /* synthetic */ String f48381d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ Object[] f48073e;
+            final /* synthetic */ Object[] f48382e;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             c(String str, Object[] objArr) {
                 super(1);
-                this.f48072d = str;
-                this.f48073e = objArr;
+                this.f48381d = str;
+                this.f48382e = objArr;
             }
 
             @Override // kotlin.jvm.functions.Function1
             /* renamed from: a */
             public final Object invoke(x3.g db2) {
                 Intrinsics.checkNotNullParameter(db2, "db");
-                db2.i0(this.f48072d, this.f48073e);
+                db2.h0(this.f48381d, this.f48382e);
                 return null;
             }
         }
@@ -106,7 +106,7 @@ public final class d implements x3.h, g {
         /* synthetic */ class C0591d extends FunctionReferenceImpl implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final C0591d f48074d = new C0591d();
+            public static final C0591d f48383d = new C0591d();
 
             C0591d() {
                 super(1, x3.g.class, "inTransaction", "inTransaction()Z", 0);
@@ -124,7 +124,7 @@ public final class d implements x3.h, g {
         static final class e extends Lambda implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final e f48075d = new e();
+            public static final e f48384d = new e();
 
             e() {
                 super(1);
@@ -142,7 +142,7 @@ public final class d implements x3.h, g {
         static final class f extends Lambda implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final f f48076d = new f();
+            public static final f f48385d = new f();
 
             f() {
                 super(1);
@@ -161,7 +161,7 @@ public final class d implements x3.h, g {
         public static final class g extends Lambda implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final g f48077d = new g();
+            public static final g f48386d = new g();
 
             g() {
                 super(1);
@@ -179,65 +179,65 @@ public final class d implements x3.h, g {
         static final class h extends Lambda implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ String f48078d;
+            final /* synthetic */ String f48387d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ int f48079e;
+            final /* synthetic */ int f48388e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ ContentValues f48080i;
+            final /* synthetic */ ContentValues f48389i;
 
             /* renamed from: o  reason: collision with root package name */
-            final /* synthetic */ String f48081o;
+            final /* synthetic */ String f48390o;
 
             /* renamed from: p  reason: collision with root package name */
-            final /* synthetic */ Object[] f48082p;
+            final /* synthetic */ Object[] f48391p;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             h(String str, int i10, ContentValues contentValues, String str2, Object[] objArr) {
                 super(1);
-                this.f48078d = str;
-                this.f48079e = i10;
-                this.f48080i = contentValues;
-                this.f48081o = str2;
-                this.f48082p = objArr;
+                this.f48387d = str;
+                this.f48388e = i10;
+                this.f48389i = contentValues;
+                this.f48390o = str2;
+                this.f48391p = objArr;
             }
 
             @Override // kotlin.jvm.functions.Function1
             /* renamed from: a */
             public final Integer invoke(x3.g db2) {
                 Intrinsics.checkNotNullParameter(db2, "db");
-                return Integer.valueOf(db2.z1(this.f48078d, this.f48079e, this.f48080i, this.f48081o, this.f48082p));
+                return Integer.valueOf(db2.z1(this.f48387d, this.f48388e, this.f48389i, this.f48390o, this.f48391p));
             }
         }
 
         public a(r3.c autoCloser) {
             Intrinsics.checkNotNullParameter(autoCloser, "autoCloser");
-            this.f48069d = autoCloser;
+            this.f48378d = autoCloser;
         }
 
         @Override // x3.g
         public void D() {
             try {
-                this.f48069d.j().D();
+                this.f48378d.j().D();
             } catch (Throwable th2) {
-                this.f48069d.e();
+                this.f48378d.e();
                 throw th2;
             }
         }
 
         @Override // x3.g
         public List H() {
-            return (List) this.f48069d.g(C0590a.f48070d);
+            return (List) this.f48378d.g(C0590a.f48379d);
         }
 
         @Override // x3.g
         public Cursor H1(String query) {
             Intrinsics.checkNotNullParameter(query, "query");
             try {
-                return new c(this.f48069d.j().H1(query), this.f48069d);
+                return new c(this.f48378d.j().H1(query), this.f48378d);
             } catch (Throwable th2) {
-                this.f48069d.e();
+                this.f48378d.e();
                 throw th2;
             }
         }
@@ -246,9 +246,9 @@ public final class d implements x3.h, g {
         public Cursor J(x3.j query, CancellationSignal cancellationSignal) {
             Intrinsics.checkNotNullParameter(query, "query");
             try {
-                return new c(this.f48069d.j().J(query, cancellationSignal), this.f48069d);
+                return new c(this.f48378d.j().J(query, cancellationSignal), this.f48378d);
             } catch (Throwable th2) {
-                this.f48069d.e();
+                this.f48378d.e();
                 throw th2;
             }
         }
@@ -256,49 +256,49 @@ public final class d implements x3.h, g {
         @Override // x3.g
         public void K(String sql) {
             Intrinsics.checkNotNullParameter(sql, "sql");
-            this.f48069d.g(new b(sql));
+            this.f48378d.g(new b(sql));
         }
 
         @Override // x3.g
-        public Cursor S0(x3.j query) {
+        public Cursor Q0(x3.j query) {
             Intrinsics.checkNotNullParameter(query, "query");
             try {
-                return new c(this.f48069d.j().S0(query), this.f48069d);
+                return new c(this.f48378d.j().Q0(query), this.f48378d);
             } catch (Throwable th2) {
-                this.f48069d.e();
+                this.f48378d.e();
                 throw th2;
             }
         }
 
         @Override // x3.g
         public boolean S1() {
-            if (this.f48069d.h() == null) {
+            if (this.f48378d.h() == null) {
                 return false;
             }
-            return ((Boolean) this.f48069d.g(C0591d.f48074d)).booleanValue();
+            return ((Boolean) this.f48378d.g(C0591d.f48383d)).booleanValue();
         }
 
         public final void a() {
-            this.f48069d.g(g.f48077d);
+            this.f48378d.g(g.f48386d);
         }
 
         @Override // java.io.Closeable, java.lang.AutoCloseable
         public void close() {
-            this.f48069d.d();
+            this.f48378d.d();
         }
 
         @Override // x3.g
         public boolean d2() {
-            return ((Boolean) this.f48069d.g(e.f48075d)).booleanValue();
+            return ((Boolean) this.f48378d.g(e.f48384d)).booleanValue();
         }
 
         @Override // x3.g
-        public void h0() {
+        public void g0() {
             Unit unit;
-            x3.g h10 = this.f48069d.h();
+            x3.g h10 = this.f48378d.h();
             if (h10 != null) {
-                h10.h0();
-                unit = Unit.f33074a;
+                h10.g0();
+                unit = Unit.f32464a;
             } else {
                 unit = null;
             }
@@ -309,15 +309,25 @@ public final class d implements x3.h, g {
         }
 
         @Override // x3.g
-        public void i0(String sql, Object[] bindArgs) {
+        public void h0(String sql, Object[] bindArgs) {
             Intrinsics.checkNotNullParameter(sql, "sql");
             Intrinsics.checkNotNullParameter(bindArgs, "bindArgs");
-            this.f48069d.g(new c(sql, bindArgs));
+            this.f48378d.g(new c(sql, bindArgs));
+        }
+
+        @Override // x3.g
+        public void i0() {
+            try {
+                this.f48378d.j().i0();
+            } catch (Throwable th2) {
+                this.f48378d.e();
+                throw th2;
+            }
         }
 
         @Override // x3.g
         public boolean isOpen() {
-            x3.g h10 = this.f48069d.h();
+            x3.g h10 = this.f48378d.h();
             if (h10 == null) {
                 return false;
             }
@@ -325,36 +335,26 @@ public final class d implements x3.h, g {
         }
 
         @Override // x3.g
-        public void j0() {
-            try {
-                this.f48069d.j().j0();
-            } catch (Throwable th2) {
-                this.f48069d.e();
-                throw th2;
-            }
-        }
-
-        @Override // x3.g
         public x3.k l1(String sql) {
             Intrinsics.checkNotNullParameter(sql, "sql");
-            return new b(sql, this.f48069d);
+            return new b(sql, this.f48378d);
         }
 
         @Override // x3.g
         public String q() {
-            return (String) this.f48069d.g(f.f48076d);
+            return (String) this.f48378d.g(f.f48385d);
         }
 
         @Override // x3.g
-        public void u0() {
-            if (this.f48069d.h() != null) {
+        public void s0() {
+            if (this.f48378d.h() != null) {
                 try {
-                    x3.g h10 = this.f48069d.h();
+                    x3.g h10 = this.f48378d.h();
                     Intrinsics.checkNotNull(h10);
-                    h10.u0();
+                    h10.s0();
                     return;
                 } finally {
-                    this.f48069d.e();
+                    this.f48378d.e();
                 }
             }
             throw new IllegalStateException("End transaction called but delegateDb is null");
@@ -364,7 +364,7 @@ public final class d implements x3.h, g {
         public int z1(String table, int i10, ContentValues values, String str, Object[] objArr) {
             Intrinsics.checkNotNullParameter(table, "table");
             Intrinsics.checkNotNullParameter(values, "values");
-            return ((Number) this.f48069d.g(new h(table, i10, values, str, objArr))).intValue();
+            return ((Number) this.f48378d.g(new h(table, i10, values, str, objArr))).intValue();
         }
     }
 
@@ -372,271 +372,271 @@ public final class d implements x3.h, g {
     private static final class c implements Cursor {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Cursor f48090d;
+        private final Cursor f48399d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final r3.c f48091e;
+        private final r3.c f48400e;
 
         public c(Cursor delegate, r3.c autoCloser) {
             Intrinsics.checkNotNullParameter(delegate, "delegate");
             Intrinsics.checkNotNullParameter(autoCloser, "autoCloser");
-            this.f48090d = delegate;
-            this.f48091e = autoCloser;
+            this.f48399d = delegate;
+            this.f48400e = autoCloser;
         }
 
         @Override // android.database.Cursor, java.io.Closeable, java.lang.AutoCloseable
         public void close() {
-            this.f48090d.close();
-            this.f48091e.e();
+            this.f48399d.close();
+            this.f48400e.e();
         }
 
         @Override // android.database.Cursor
         public void copyStringToBuffer(int i10, CharArrayBuffer charArrayBuffer) {
-            this.f48090d.copyStringToBuffer(i10, charArrayBuffer);
+            this.f48399d.copyStringToBuffer(i10, charArrayBuffer);
         }
 
         @Override // android.database.Cursor
         public void deactivate() {
-            this.f48090d.deactivate();
+            this.f48399d.deactivate();
         }
 
         @Override // android.database.Cursor
         public byte[] getBlob(int i10) {
-            return this.f48090d.getBlob(i10);
+            return this.f48399d.getBlob(i10);
         }
 
         @Override // android.database.Cursor
         public int getColumnCount() {
-            return this.f48090d.getColumnCount();
+            return this.f48399d.getColumnCount();
         }
 
         @Override // android.database.Cursor
         public int getColumnIndex(String str) {
-            return this.f48090d.getColumnIndex(str);
+            return this.f48399d.getColumnIndex(str);
         }
 
         @Override // android.database.Cursor
         public int getColumnIndexOrThrow(String str) {
-            return this.f48090d.getColumnIndexOrThrow(str);
+            return this.f48399d.getColumnIndexOrThrow(str);
         }
 
         @Override // android.database.Cursor
         public String getColumnName(int i10) {
-            return this.f48090d.getColumnName(i10);
+            return this.f48399d.getColumnName(i10);
         }
 
         @Override // android.database.Cursor
         public String[] getColumnNames() {
-            return this.f48090d.getColumnNames();
+            return this.f48399d.getColumnNames();
         }
 
         @Override // android.database.Cursor
         public int getCount() {
-            return this.f48090d.getCount();
+            return this.f48399d.getCount();
         }
 
         @Override // android.database.Cursor
         public double getDouble(int i10) {
-            return this.f48090d.getDouble(i10);
+            return this.f48399d.getDouble(i10);
         }
 
         @Override // android.database.Cursor
         public Bundle getExtras() {
-            return this.f48090d.getExtras();
+            return this.f48399d.getExtras();
         }
 
         @Override // android.database.Cursor
         public float getFloat(int i10) {
-            return this.f48090d.getFloat(i10);
+            return this.f48399d.getFloat(i10);
         }
 
         @Override // android.database.Cursor
         public int getInt(int i10) {
-            return this.f48090d.getInt(i10);
+            return this.f48399d.getInt(i10);
         }
 
         @Override // android.database.Cursor
         public long getLong(int i10) {
-            return this.f48090d.getLong(i10);
+            return this.f48399d.getLong(i10);
         }
 
         @Override // android.database.Cursor
         public Uri getNotificationUri() {
-            return x3.c.a(this.f48090d);
+            return x3.c.a(this.f48399d);
         }
 
         @Override // android.database.Cursor
         public List getNotificationUris() {
-            return x3.f.a(this.f48090d);
+            return x3.f.a(this.f48399d);
         }
 
         @Override // android.database.Cursor
         public int getPosition() {
-            return this.f48090d.getPosition();
+            return this.f48399d.getPosition();
         }
 
         @Override // android.database.Cursor
         public short getShort(int i10) {
-            return this.f48090d.getShort(i10);
+            return this.f48399d.getShort(i10);
         }
 
         @Override // android.database.Cursor
         public String getString(int i10) {
-            return this.f48090d.getString(i10);
+            return this.f48399d.getString(i10);
         }
 
         @Override // android.database.Cursor
         public int getType(int i10) {
-            return this.f48090d.getType(i10);
+            return this.f48399d.getType(i10);
         }
 
         @Override // android.database.Cursor
         public boolean getWantsAllOnMoveCalls() {
-            return this.f48090d.getWantsAllOnMoveCalls();
+            return this.f48399d.getWantsAllOnMoveCalls();
         }
 
         @Override // android.database.Cursor
         public boolean isAfterLast() {
-            return this.f48090d.isAfterLast();
+            return this.f48399d.isAfterLast();
         }
 
         @Override // android.database.Cursor
         public boolean isBeforeFirst() {
-            return this.f48090d.isBeforeFirst();
+            return this.f48399d.isBeforeFirst();
         }
 
         @Override // android.database.Cursor
         public boolean isClosed() {
-            return this.f48090d.isClosed();
+            return this.f48399d.isClosed();
         }
 
         @Override // android.database.Cursor
         public boolean isFirst() {
-            return this.f48090d.isFirst();
+            return this.f48399d.isFirst();
         }
 
         @Override // android.database.Cursor
         public boolean isLast() {
-            return this.f48090d.isLast();
+            return this.f48399d.isLast();
         }
 
         @Override // android.database.Cursor
         public boolean isNull(int i10) {
-            return this.f48090d.isNull(i10);
+            return this.f48399d.isNull(i10);
         }
 
         @Override // android.database.Cursor
         public boolean move(int i10) {
-            return this.f48090d.move(i10);
+            return this.f48399d.move(i10);
         }
 
         @Override // android.database.Cursor
         public boolean moveToFirst() {
-            return this.f48090d.moveToFirst();
+            return this.f48399d.moveToFirst();
         }
 
         @Override // android.database.Cursor
         public boolean moveToLast() {
-            return this.f48090d.moveToLast();
+            return this.f48399d.moveToLast();
         }
 
         @Override // android.database.Cursor
         public boolean moveToNext() {
-            return this.f48090d.moveToNext();
+            return this.f48399d.moveToNext();
         }
 
         @Override // android.database.Cursor
         public boolean moveToPosition(int i10) {
-            return this.f48090d.moveToPosition(i10);
+            return this.f48399d.moveToPosition(i10);
         }
 
         @Override // android.database.Cursor
         public boolean moveToPrevious() {
-            return this.f48090d.moveToPrevious();
+            return this.f48399d.moveToPrevious();
         }
 
         @Override // android.database.Cursor
         public void registerContentObserver(ContentObserver contentObserver) {
-            this.f48090d.registerContentObserver(contentObserver);
+            this.f48399d.registerContentObserver(contentObserver);
         }
 
         @Override // android.database.Cursor
         public void registerDataSetObserver(DataSetObserver dataSetObserver) {
-            this.f48090d.registerDataSetObserver(dataSetObserver);
+            this.f48399d.registerDataSetObserver(dataSetObserver);
         }
 
         @Override // android.database.Cursor
         public boolean requery() {
-            return this.f48090d.requery();
+            return this.f48399d.requery();
         }
 
         @Override // android.database.Cursor
         public Bundle respond(Bundle bundle) {
-            return this.f48090d.respond(bundle);
+            return this.f48399d.respond(bundle);
         }
 
         @Override // android.database.Cursor
         public void setExtras(Bundle extras) {
             Intrinsics.checkNotNullParameter(extras, "extras");
-            x3.e.a(this.f48090d, extras);
+            x3.e.a(this.f48399d, extras);
         }
 
         @Override // android.database.Cursor
         public void setNotificationUri(ContentResolver contentResolver, Uri uri) {
-            this.f48090d.setNotificationUri(contentResolver, uri);
+            this.f48399d.setNotificationUri(contentResolver, uri);
         }
 
         @Override // android.database.Cursor
         public void setNotificationUris(ContentResolver cr2, List uris) {
             Intrinsics.checkNotNullParameter(cr2, "cr");
             Intrinsics.checkNotNullParameter(uris, "uris");
-            x3.f.b(this.f48090d, cr2, uris);
+            x3.f.b(this.f48399d, cr2, uris);
         }
 
         @Override // android.database.Cursor
         public void unregisterContentObserver(ContentObserver contentObserver) {
-            this.f48090d.unregisterContentObserver(contentObserver);
+            this.f48399d.unregisterContentObserver(contentObserver);
         }
 
         @Override // android.database.Cursor
         public void unregisterDataSetObserver(DataSetObserver dataSetObserver) {
-            this.f48090d.unregisterDataSetObserver(dataSetObserver);
+            this.f48399d.unregisterDataSetObserver(dataSetObserver);
         }
     }
 
     public d(x3.h delegate, r3.c autoCloser) {
         Intrinsics.checkNotNullParameter(delegate, "delegate");
         Intrinsics.checkNotNullParameter(autoCloser, "autoCloser");
-        this.f48066d = delegate;
-        this.f48067e = autoCloser;
+        this.f48375d = delegate;
+        this.f48376e = autoCloser;
         autoCloser.k(getDelegate());
-        this.f48068i = new a(autoCloser);
+        this.f48377i = new a(autoCloser);
     }
 
     @Override // x3.h, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f48068i.close();
+        this.f48377i.close();
     }
 
     @Override // x3.h
     public String getDatabaseName() {
-        return this.f48066d.getDatabaseName();
+        return this.f48375d.getDatabaseName();
     }
 
     @Override // r3.g
     public x3.h getDelegate() {
-        return this.f48066d;
+        return this.f48375d;
     }
 
     @Override // x3.h
     public x3.g getWritableDatabase() {
-        this.f48068i.a();
-        return this.f48068i;
+        this.f48377i.a();
+        return this.f48377i;
     }
 
     @Override // x3.h
     public void setWriteAheadLoggingEnabled(boolean z10) {
-        this.f48066d.setWriteAheadLoggingEnabled(z10);
+        this.f48375d.setWriteAheadLoggingEnabled(z10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -644,19 +644,19 @@ public final class d implements x3.h, g {
     public static final class b implements x3.k {
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f48083d;
+        private final String f48392d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final r3.c f48084e;
+        private final r3.c f48393e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final ArrayList f48085i;
+        private final ArrayList f48394i;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         static final class a extends Lambda implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final a f48086d = new a();
+            public static final a f48395d = new a();
 
             a() {
                 super(1);
@@ -676,21 +676,21 @@ public final class d implements x3.h, g {
         public static final class C0592b extends Lambda implements Function1 {
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ Function1 f48088e;
+            final /* synthetic */ Function1 f48397e;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             C0592b(Function1 function1) {
                 super(1);
-                this.f48088e = function1;
+                this.f48397e = function1;
             }
 
             @Override // kotlin.jvm.functions.Function1
             /* renamed from: a */
             public final Object invoke(x3.g db2) {
                 Intrinsics.checkNotNullParameter(db2, "db");
-                x3.k l12 = db2.l1(b.this.f48083d);
+                x3.k l12 = db2.l1(b.this.f48392d);
                 b.this.l(l12);
-                return this.f48088e.invoke(l12);
+                return this.f48397e.invoke(l12);
             }
         }
 
@@ -698,7 +698,7 @@ public final class d implements x3.h, g {
         static final class c extends Lambda implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final c f48089d = new c();
+            public static final c f48398d = new c();
 
             c() {
                 super(1);
@@ -715,14 +715,14 @@ public final class d implements x3.h, g {
         public b(String sql, r3.c autoCloser) {
             Intrinsics.checkNotNullParameter(sql, "sql");
             Intrinsics.checkNotNullParameter(autoCloser, "autoCloser");
-            this.f48083d = sql;
-            this.f48084e = autoCloser;
-            this.f48085i = new ArrayList();
+            this.f48392d = sql;
+            this.f48393e = autoCloser;
+            this.f48394i = new ArrayList();
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public final void l(x3.k kVar) {
-            Iterator it = this.f48085i.iterator();
+            Iterator it = this.f48394i.iterator();
             int i10 = 0;
             while (it.hasNext()) {
                 it.next();
@@ -730,7 +730,7 @@ public final class d implements x3.h, g {
                 if (i10 < 0) {
                     CollectionsKt.v();
                 }
-                Object obj = this.f48085i.get(i10);
+                Object obj = this.f48394i.get(i10);
                 if (obj == null) {
                     kVar.P1(i11);
                 } else if (obj instanceof Long) {
@@ -747,22 +747,22 @@ public final class d implements x3.h, g {
         }
 
         private final Object n(Function1 function1) {
-            return this.f48084e.g(new C0592b(function1));
+            return this.f48393e.g(new C0592b(function1));
         }
 
         private final void x(int i10, Object obj) {
             int size;
             int i11 = i10 - 1;
-            if (i11 >= this.f48085i.size() && (size = this.f48085i.size()) <= i11) {
+            if (i11 >= this.f48394i.size() && (size = this.f48394i.size()) <= i11) {
                 while (true) {
-                    this.f48085i.add(null);
+                    this.f48394i.add(null);
                     if (size == i11) {
                         break;
                     }
                     size++;
                 }
             }
-            this.f48085i.set(i11, obj);
+            this.f48394i.set(i11, obj);
         }
 
         @Override // x3.i
@@ -778,7 +778,7 @@ public final class d implements x3.h, g {
 
         @Override // x3.k
         public int R() {
-            return ((Number) n(c.f48089d)).intValue();
+            return ((Number) n(c.f48398d)).intValue();
         }
 
         @Override // x3.i
@@ -788,7 +788,7 @@ public final class d implements x3.h, g {
 
         @Override // x3.k
         public long X0() {
-            return ((Number) n(a.f48086d)).longValue();
+            return ((Number) n(a.f48395d)).longValue();
         }
 
         @Override // x3.i

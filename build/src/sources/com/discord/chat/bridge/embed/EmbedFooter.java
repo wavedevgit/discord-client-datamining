@@ -1,7 +1,7 @@
 package com.discord.chat.bridge.embed;
 
-import bt.n2;
-import jr.l;
+import at.m;
+import dt.n2;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
@@ -11,8 +11,8 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
+import lr.l;
 import org.jetbrains.annotations.NotNull;
-import ys.m;
 @m
 @Metadata(d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 '2\u00020\u0001:\u0002&'B+\u0012\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0003¢\u0006\u0004\b\u0006\u0010\u0007B9\b\u0010\u0012\u0006\u0010\b\u001a\u00020\t\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b¢\u0006\u0004\b\u0006\u0010\fJ\u000b\u0010\u0015\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u0010\u0016\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u0010\u0017\u001a\u0004\u0018\u00010\u0003HÆ\u0003J-\u0010\u0018\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0003HÆ\u0001J\u0013\u0010\u0019\u001a\u00020\u001a2\b\u0010\u001b\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001c\u001a\u00020\tHÖ\u0001J\t\u0010\u001d\u001a\u00020\u0003HÖ\u0001J%\u0010\u001e\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020\u00002\u0006\u0010!\u001a\u00020\"2\u0006\u0010#\u001a\u00020$H\u0001¢\u0006\u0002\b%R\u0013\u0010\u0002\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u000eR\u0013\u0010\u0005\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u000eR\u001d\u0010\u0011\u001a\u0004\u0018\u00010\u00038FX\u0086\u0084\u0002¢\u0006\f\n\u0004\b\u0013\u0010\u0014\u001a\u0004\b\u0012\u0010\u000e¨\u0006("}, d2 = {"Lcom/discord/chat/bridge/embed/EmbedFooter;", "", "iconURL", "", "iconProxyURL", "content", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getIconURL", "()Ljava/lang/String;", "getIconProxyURL", "getContent", "imageUrl", "getImageUrl", "imageUrl$delegate", "Lkotlin/Lazy;", "component1", "component2", "component3", "copy", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -59,14 +59,14 @@ public final class EmbedFooter {
     }
 
     public static final /* synthetic */ void write$Self$chat_release(EmbedFooter embedFooter, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        if (compositeEncoder.y(serialDescriptor, 0) || embedFooter.iconURL != null) {
-            compositeEncoder.B(serialDescriptor, 0, n2.f7662a, embedFooter.iconURL);
+        if (compositeEncoder.z(serialDescriptor, 0) || embedFooter.iconURL != null) {
+            compositeEncoder.s(serialDescriptor, 0, n2.f20978a, embedFooter.iconURL);
         }
-        if (compositeEncoder.y(serialDescriptor, 1) || embedFooter.iconProxyURL != null) {
-            compositeEncoder.B(serialDescriptor, 1, n2.f7662a, embedFooter.iconProxyURL);
+        if (compositeEncoder.z(serialDescriptor, 1) || embedFooter.iconProxyURL != null) {
+            compositeEncoder.s(serialDescriptor, 1, n2.f20978a, embedFooter.iconProxyURL);
         }
-        if (compositeEncoder.y(serialDescriptor, 2) || embedFooter.content != null) {
-            compositeEncoder.B(serialDescriptor, 2, n2.f7662a, embedFooter.content);
+        if (compositeEncoder.z(serialDescriptor, 2) || embedFooter.content != null) {
+            compositeEncoder.s(serialDescriptor, 2, n2.f20978a, embedFooter.content);
         }
     }
 
@@ -147,7 +147,7 @@ public final class EmbedFooter {
         } else {
             this.content = str3;
         }
-        this.imageUrl$delegate = l.b(new Function0() { // from class: com.discord.chat.bridge.embed.f
+        this.imageUrl$delegate = l.a(new Function0() { // from class: com.discord.chat.bridge.embed.f
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 String str4;
@@ -161,7 +161,7 @@ public final class EmbedFooter {
         this.iconURL = str;
         this.iconProxyURL = str2;
         this.content = str3;
-        this.imageUrl$delegate = l.b(new Function0() { // from class: com.discord.chat.bridge.embed.g
+        this.imageUrl$delegate = l.a(new Function0() { // from class: com.discord.chat.bridge.embed.g
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 String str4;

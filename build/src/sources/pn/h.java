@@ -1,34 +1,68 @@
 package pn;
 
-import android.content.Context;
-import com.withpersona.sdk2.camera.camera2.Camera2PreviewView;
+import android.media.Image;
+import java.nio.ByteBuffer;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final uq.h f46342a;
+    public static final h f46268a = new h();
 
-    /* renamed from: b  reason: collision with root package name */
-    private final uq.h f46343b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final uq.h f46344c;
-
-    public h(uq.h hVar, uq.h hVar2, uq.h hVar3) {
-        this.f46342a = hVar;
-        this.f46343b = hVar2;
-        this.f46344c = hVar3;
+    private h() {
     }
 
-    public static h a(uq.h hVar, uq.h hVar2, uq.h hVar3) {
-        return new h(hVar, hVar2, hVar3);
+    private final boolean a(Image.Plane[] planeArr, int i10, int i11) {
+        int i12 = i10 * i11;
+        boolean z10 = true;
+        ByteBuffer buffer = planeArr[1].getBuffer();
+        ByteBuffer buffer2 = planeArr[2].getBuffer();
+        int position = buffer2.position();
+        int limit = buffer.limit();
+        buffer2.position(position + 1);
+        buffer.limit(limit - 1);
+        z10 = (buffer2.remaining() == ((i12 * 2) / 4) - 2 && buffer2.compareTo(buffer) == 0) ? false : false;
+        buffer2.position(position);
+        buffer.limit(limit);
+        return z10;
     }
 
-    public static g c(Context context, sn.a aVar, pp.c cVar, m mVar, Camera2PreviewView camera2PreviewView, b bVar, tn.a aVar2, mq.a aVar3, boolean z10) {
-        return new g(context, aVar, cVar, mVar, camera2PreviewView, bVar, aVar2, aVar3, z10);
+    private final void b(Image.Plane plane, int i10, int i11, byte[] bArr, int i12, int i13) {
+        ByteBuffer buffer = plane.getBuffer();
+        buffer.rewind();
+        int limit = ((buffer.limit() + plane.getRowStride()) - 1) / plane.getRowStride();
+        if (limit != 0) {
+            int i14 = i10 / (i11 / limit);
+            int i15 = 0;
+            for (int i16 = 0; i16 < limit; i16++) {
+                int i17 = i15;
+                for (int i18 = 0; i18 < i14; i18++) {
+                    bArr[i12] = buffer.get(i17);
+                    i12 += i13;
+                    i17 += plane.getPixelStride();
+                }
+                i15 += plane.getRowStride();
+            }
+        }
     }
 
-    public g b(m mVar, Camera2PreviewView camera2PreviewView, b bVar, tn.a aVar, mq.a aVar2, boolean z10) {
-        return c((Context) this.f46342a.get(), (sn.a) this.f46343b.get(), (pp.c) this.f46344c.get(), mVar, camera2PreviewView, bVar, aVar, aVar2, z10);
+    public final ByteBuffer c(Image.Plane[] yuv420888planes, int i10, int i11) {
+        Intrinsics.checkNotNullParameter(yuv420888planes, "yuv420888planes");
+        int i12 = i10 * i11;
+        byte[] bArr = new byte[((i12 / 4) * 2) + i12];
+        if (a(yuv420888planes, i10, i11)) {
+            yuv420888planes[0].getBuffer().rewind();
+            yuv420888planes[0].getBuffer().get(bArr, 0, i12);
+            ByteBuffer buffer = yuv420888planes[1].getBuffer();
+            yuv420888planes[2].getBuffer().get(bArr, i12, 1);
+            buffer.get(bArr, i12 + 1, ((i12 * 2) / 4) - 1);
+        } else {
+            b(yuv420888planes[0], i10, i11, bArr, 0, 1);
+            b(yuv420888planes[1], i10, i11, bArr, i12 + 1, 2);
+            b(yuv420888planes[2], i10, i11, bArr, i12, 2);
+        }
+        ByteBuffer wrap = ByteBuffer.wrap(bArr);
+        Intrinsics.checkNotNullExpressionValue(wrap, "wrap(...)");
+        return wrap;
     }
 }

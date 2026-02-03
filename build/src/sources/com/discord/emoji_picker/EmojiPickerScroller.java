@@ -67,10 +67,10 @@ public final class EmojiPickerScroller {
         private int width;
 
         /* renamed from: x  reason: collision with root package name */
-        private int f9957x;
+        private int f8925x;
 
         /* renamed from: y  reason: collision with root package name */
-        private int f9958y;
+        private int f8926y;
 
         public ScrollEvent() {
             this(0, 0, 0, 0, 0, 0, 63, null);
@@ -78,10 +78,10 @@ public final class EmojiPickerScroller {
 
         public static /* synthetic */ ScrollEvent copy$default(ScrollEvent scrollEvent, int i10, int i11, int i12, int i13, int i14, int i15, int i16, Object obj) {
             if ((i16 & 1) != 0) {
-                i10 = scrollEvent.f9957x;
+                i10 = scrollEvent.f8925x;
             }
             if ((i16 & 2) != 0) {
-                i11 = scrollEvent.f9958y;
+                i11 = scrollEvent.f8926y;
             }
             if ((i16 & 4) != 0) {
                 i12 = scrollEvent.width;
@@ -101,11 +101,11 @@ public final class EmojiPickerScroller {
         }
 
         public final int component1() {
-            return this.f9957x;
+            return this.f8925x;
         }
 
         public final int component2() {
-            return this.f9958y;
+            return this.f8926y;
         }
 
         public final int component3() {
@@ -135,7 +135,7 @@ public final class EmojiPickerScroller {
             }
             if (obj instanceof ScrollEvent) {
                 ScrollEvent scrollEvent = (ScrollEvent) obj;
-                return this.f9957x == scrollEvent.f9957x && this.f9958y == scrollEvent.f9958y && this.width == scrollEvent.width && this.height == scrollEvent.height && this.contentWidth == scrollEvent.contentWidth && this.contentHeight == scrollEvent.contentHeight;
+                return this.f8925x == scrollEvent.f8925x && this.f8926y == scrollEvent.f8926y && this.width == scrollEvent.width && this.height == scrollEvent.height && this.contentWidth == scrollEvent.contentWidth && this.contentHeight == scrollEvent.contentHeight;
             }
             return false;
         }
@@ -157,15 +157,15 @@ public final class EmojiPickerScroller {
         }
 
         public final int getX() {
-            return this.f9957x;
+            return this.f8925x;
         }
 
         public final int getY() {
-            return this.f9958y;
+            return this.f8926y;
         }
 
         public int hashCode() {
-            return (((((((((Integer.hashCode(this.f9957x) * 31) + Integer.hashCode(this.f9958y)) * 31) + Integer.hashCode(this.width)) * 31) + Integer.hashCode(this.height)) * 31) + Integer.hashCode(this.contentWidth)) * 31) + Integer.hashCode(this.contentHeight);
+            return (((((((((Integer.hashCode(this.f8925x) * 31) + Integer.hashCode(this.f8926y)) * 31) + Integer.hashCode(this.width)) * 31) + Integer.hashCode(this.height)) * 31) + Integer.hashCode(this.contentWidth)) * 31) + Integer.hashCode(this.contentHeight);
         }
 
         public final void setContentHeight(int i10) {
@@ -185,17 +185,17 @@ public final class EmojiPickerScroller {
         }
 
         public final void setX(int i10) {
-            this.f9957x = i10;
+            this.f8925x = i10;
         }
 
         public final void setY(int i10) {
-            this.f9958y = i10;
+            this.f8926y = i10;
         }
 
         @NotNull
         public String toString() {
-            int i10 = this.f9957x;
-            int i11 = this.f9958y;
+            int i10 = this.f8925x;
+            int i11 = this.f8926y;
             int i12 = this.width;
             int i13 = this.height;
             int i14 = this.contentWidth;
@@ -204,8 +204,8 @@ public final class EmojiPickerScroller {
         }
 
         public ScrollEvent(int i10, int i11, int i12, int i13, int i14, int i15) {
-            this.f9957x = i10;
-            this.f9958y = i11;
+            this.f8925x = i10;
+            this.f8926y = i11;
             this.width = i12;
             this.height = i13;
             this.contentWidth = i14;
@@ -342,19 +342,19 @@ public final class EmojiPickerScroller {
                 return scrollListenerDebounced$lambda$2$lambda$1;
             }
         });
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit scrollListenerDebounced$lambda$2$lambda$1(Function2 function2, EmojiPickerScroller emojiPickerScroller, int i10) {
         function2.invoke(emojiPickerScroller.recyclerView, Integer.valueOf(i10));
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit scrollListenerDebounced$lambda$3(Function2 function2, EmojiPickerScroller emojiPickerScroller, boolean z10) {
         function2.invoke(emojiPickerScroller.computeScrollEvent(emojiPickerScroller.recyclerView), Boolean.valueOf(z10));
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -362,13 +362,13 @@ public final class EmojiPickerScroller {
         Intrinsics.checkNotNullParameter(recyclerView, "<unused var>");
         emojiPickerScroller.onScrollVelocityChanged(f10);
         function0.invoke();
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit scrollToItemAtIndex$lambda$8(EmojiPickerScroller emojiPickerScroller) {
         emojiPickerScroller.scrollVelocityTrackingPaused = false;
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -386,7 +386,7 @@ public final class EmojiPickerScroller {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit scrollViewLayoutChanged$lambda$5$lambda$4(Function2 function2, EmojiPickerScroller emojiPickerScroller, int i10) {
         function2.invoke(emojiPickerScroller.recyclerView, Integer.valueOf(i10));
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public final void bind() {
@@ -410,7 +410,7 @@ public final class EmojiPickerScroller {
                 this.scrollVelocityTrackingPaused = true;
                 this.emojiPickerViewAdapter.setScrollingFast(true);
                 this.emojiPickerLayoutManager.scrollToPositionWithOffset(itemPositionAtIndex, height);
-                Unit unit = Unit.f33074a;
+                Unit unit = Unit.f32464a;
                 ViewMeasureExtensionsKt.measureAndLayout(this.recyclerView);
             }
             this.scrollJumpingToPosition = true;

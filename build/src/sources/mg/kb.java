@@ -5,7 +5,7 @@ import ui.c;
 final class kb implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final kb f38393a = new kb();
+    static final kb f38190a = new kb();
 
     static {
         c.b a10 = ui.c.a("errorCode");

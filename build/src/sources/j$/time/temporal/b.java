@@ -22,7 +22,7 @@ public enum b implements p {
     
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f31389a;
+    public final String f31185a;
 
     static {
         j$.time.a.t(1L);
@@ -44,7 +44,7 @@ public enum b implements p {
     }
 
     b(String str) {
-        this.f31389a = str;
+        this.f31185a = str;
     }
 
     @Override // j$.time.temporal.p
@@ -54,6 +54,6 @@ public enum b implements p {
 
     @Override // java.lang.Enum
     public final String toString() {
-        return this.f31389a;
+        return this.f31185a;
     }
 }

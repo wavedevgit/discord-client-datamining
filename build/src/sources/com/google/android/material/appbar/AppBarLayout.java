@@ -36,7 +36,7 @@ import yg.j;
 import yg.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
-    private static final int K = j.f54494f;
+    private static final int K = j.f54252f;
     private ValueAnimator A;
     private ValueAnimator.AnimatorUpdateListener B;
     private final List C;
@@ -49,87 +49,87 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
     private Behavior J;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f15100d;
+    private int f14068d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f15101e;
+    private int f14069e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f15102i;
+    private int f14070i;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f15103o;
+    private int f14071o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f15104p;
+    private boolean f14072p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f15105q;
+    private int f14073q;
 
     /* renamed from: r  reason: collision with root package name */
-    private WindowInsetsCompat f15106r;
+    private WindowInsetsCompat f14074r;
 
     /* renamed from: s  reason: collision with root package name */
-    private List f15107s;
+    private List f14075s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f15108t;
+    private boolean f14076t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f15109u;
+    private boolean f14077u;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f15110v;
+    private boolean f14078v;
 
     /* renamed from: w  reason: collision with root package name */
-    private boolean f15111w;
+    private boolean f14079w;
 
     /* renamed from: x  reason: collision with root package name */
-    private int f15112x;
+    private int f14080x;
 
     /* renamed from: y  reason: collision with root package name */
-    private WeakReference f15113y;
+    private WeakReference f14081y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final boolean f15114z;
+    private final boolean f14082z;
 
     /* JADX INFO: Access modifiers changed from: protected */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class BaseBehavior<T extends AppBarLayout> extends com.google.android.material.appbar.c {
 
         /* renamed from: v  reason: collision with root package name */
-        private int f15115v;
+        private int f14083v;
 
         /* renamed from: w  reason: collision with root package name */
-        private int f15116w;
+        private int f14084w;
 
         /* renamed from: x  reason: collision with root package name */
-        private ValueAnimator f15117x;
+        private ValueAnimator f14085x;
 
         /* renamed from: y  reason: collision with root package name */
-        private c f15118y;
+        private c f14086y;
 
         /* renamed from: z  reason: collision with root package name */
-        private WeakReference f15119z;
+        private WeakReference f14087z;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public class a implements ValueAnimator.AnimatorUpdateListener {
 
             /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ CoordinatorLayout f15120a;
+            final /* synthetic */ CoordinatorLayout f14088a;
 
             /* renamed from: b  reason: collision with root package name */
-            final /* synthetic */ AppBarLayout f15121b;
+            final /* synthetic */ AppBarLayout f14089b;
 
             a(CoordinatorLayout coordinatorLayout, AppBarLayout appBarLayout) {
-                this.f15120a = coordinatorLayout;
-                this.f15121b = appBarLayout;
+                this.f14088a = coordinatorLayout;
+                this.f14089b = appBarLayout;
             }
 
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public void onAnimationUpdate(ValueAnimator valueAnimator) {
-                BaseBehavior.this.T(this.f15120a, this.f15121b, ((Integer) valueAnimator.getAnimatedValue()).intValue());
+                BaseBehavior.this.T(this.f14088a, this.f14089b, ((Integer) valueAnimator.getAnimatedValue()).intValue());
             }
         }
 
@@ -138,14 +138,14 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
         public class b extends androidx.core.view.a {
 
             /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ AppBarLayout f15123a;
+            final /* synthetic */ AppBarLayout f14091a;
 
             /* renamed from: b  reason: collision with root package name */
-            final /* synthetic */ CoordinatorLayout f15124b;
+            final /* synthetic */ CoordinatorLayout f14092b;
 
             b(AppBarLayout appBarLayout, CoordinatorLayout coordinatorLayout) {
-                this.f15123a = appBarLayout;
-                this.f15124b = coordinatorLayout;
+                this.f14091a = appBarLayout;
+                this.f14092b = coordinatorLayout;
             }
 
             @Override // androidx.core.view.a
@@ -153,21 +153,21 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
                 View j02;
                 super.onInitializeAccessibilityNodeInfo(view, accessibilityNodeInfoCompat);
                 accessibilityNodeInfoCompat.w0(ScrollView.class.getName());
-                if (this.f15123a.getTotalScrollRange() != 0 && (j02 = BaseBehavior.this.j0(this.f15124b)) != null && BaseBehavior.this.f0(this.f15123a)) {
-                    if (BaseBehavior.this.Q() != (-this.f15123a.getTotalScrollRange())) {
-                        accessibilityNodeInfoCompat.b(AccessibilityNodeInfoCompat.a.f3355q);
+                if (this.f14091a.getTotalScrollRange() != 0 && (j02 = BaseBehavior.this.j0(this.f14092b)) != null && BaseBehavior.this.f0(this.f14091a)) {
+                    if (BaseBehavior.this.Q() != (-this.f14091a.getTotalScrollRange())) {
+                        accessibilityNodeInfoCompat.b(AccessibilityNodeInfoCompat.a.f3324q);
                         accessibilityNodeInfoCompat.V0(true);
                     }
                     if (BaseBehavior.this.Q() != 0) {
                         if (j02.canScrollVertically(-1)) {
-                            if ((-this.f15123a.getDownNestedPreScrollRange()) != 0) {
-                                accessibilityNodeInfoCompat.b(AccessibilityNodeInfoCompat.a.f3356r);
+                            if ((-this.f14091a.getDownNestedPreScrollRange()) != 0) {
+                                accessibilityNodeInfoCompat.b(AccessibilityNodeInfoCompat.a.f3325r);
                                 accessibilityNodeInfoCompat.V0(true);
                                 return;
                             }
                             return;
                         }
-                        accessibilityNodeInfoCompat.b(AccessibilityNodeInfoCompat.a.f3356r);
+                        accessibilityNodeInfoCompat.b(AccessibilityNodeInfoCompat.a.f3325r);
                         accessibilityNodeInfoCompat.V0(true);
                     }
                 }
@@ -176,19 +176,19 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
             @Override // androidx.core.view.a
             public boolean performAccessibilityAction(View view, int i10, Bundle bundle) {
                 if (i10 == 4096) {
-                    this.f15123a.setExpanded(false);
+                    this.f14091a.setExpanded(false);
                     return true;
                 } else if (i10 == 8192) {
                     if (BaseBehavior.this.Q() != 0) {
-                        View j02 = BaseBehavior.this.j0(this.f15124b);
+                        View j02 = BaseBehavior.this.j0(this.f14092b);
                         if (j02.canScrollVertically(-1)) {
-                            int i11 = -this.f15123a.getDownNestedPreScrollRange();
+                            int i11 = -this.f14091a.getDownNestedPreScrollRange();
                             if (i11 != 0) {
-                                BaseBehavior.this.u(this.f15124b, this.f15123a, j02, 0, i11, new int[]{0, 0}, 1);
+                                BaseBehavior.this.u(this.f14092b, this.f14091a, j02, 0, i11, new int[]{0, 0}, 1);
                                 return true;
                             }
                         } else {
-                            this.f15123a.setExpanded(true);
+                            this.f14091a.setExpanded(true);
                             return true;
                         }
                     }
@@ -285,25 +285,25 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
         private void a0(CoordinatorLayout coordinatorLayout, AppBarLayout appBarLayout, int i10, int i11) {
             int Q = Q();
             if (Q == i10) {
-                ValueAnimator valueAnimator = this.f15117x;
+                ValueAnimator valueAnimator = this.f14085x;
                 if (valueAnimator != null && valueAnimator.isRunning()) {
-                    this.f15117x.cancel();
+                    this.f14085x.cancel();
                     return;
                 }
                 return;
             }
-            ValueAnimator valueAnimator2 = this.f15117x;
+            ValueAnimator valueAnimator2 = this.f14085x;
             if (valueAnimator2 == null) {
                 ValueAnimator valueAnimator3 = new ValueAnimator();
-                this.f15117x = valueAnimator3;
-                valueAnimator3.setInterpolator(zg.a.f55810e);
-                this.f15117x.addUpdateListener(new a(coordinatorLayout, appBarLayout));
+                this.f14085x = valueAnimator3;
+                valueAnimator3.setInterpolator(zg.a.f55948e);
+                this.f14085x.addUpdateListener(new a(coordinatorLayout, appBarLayout));
             } else {
                 valueAnimator2.cancel();
             }
-            this.f15117x.setDuration(Math.min(i11, 600));
-            this.f15117x.setIntValues(Q, i10);
-            this.f15117x.start();
+            this.f14085x.setDuration(Math.min(i11, 600));
+            this.f14085x.setIntValues(Q, i10);
+            this.f14085x.start();
         }
 
         private int b0(int i10, int i11, int i12) {
@@ -328,7 +328,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
         public boolean f0(AppBarLayout appBarLayout) {
             int childCount = appBarLayout.getChildCount();
             for (int i10 = 0; i10 < childCount; i10++) {
-                if (((d) appBarLayout.getChildAt(i10).getLayoutParams()).f15134a != 0) {
+                if (((d) appBarLayout.getChildAt(i10).getLayoutParams()).f14102a != 0) {
                     return true;
                 }
             }
@@ -442,14 +442,14 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
 
         @Override // com.google.android.material.appbar.c
         int Q() {
-            return I() + this.f15115v;
+            return I() + this.f14083v;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         @Override // com.google.android.material.appbar.c
         /* renamed from: c0 */
         public boolean L(AppBarLayout appBarLayout) {
-            WeakReference weakReference = this.f15119z;
+            WeakReference weakReference = this.f14087z;
             if (weakReference == null) {
                 return true;
             }
@@ -491,19 +491,19 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
             int round;
             boolean p10 = super.p(coordinatorLayout, appBarLayout, i10);
             int pendingAction = appBarLayout.getPendingAction();
-            c cVar = this.f15118y;
+            c cVar = this.f14086y;
             if (cVar != null && (pendingAction & 8) == 0) {
-                if (cVar.f15126i) {
+                if (cVar.f14094i) {
                     T(coordinatorLayout, appBarLayout, -appBarLayout.getTotalScrollRange());
-                } else if (cVar.f15127o) {
+                } else if (cVar.f14095o) {
                     T(coordinatorLayout, appBarLayout, 0);
                 } else {
-                    View childAt = appBarLayout.getChildAt(cVar.f15128p);
+                    View childAt = appBarLayout.getChildAt(cVar.f14096p);
                     int i11 = -childAt.getBottom();
-                    if (this.f15118y.f15130r) {
+                    if (this.f14086y.f14098r) {
                         round = h0.A(childAt) + appBarLayout.getTopInset();
                     } else {
-                        round = Math.round(childAt.getHeight() * this.f15118y.f15129q);
+                        round = Math.round(childAt.getHeight() * this.f14086y.f14097q);
                     }
                     T(coordinatorLayout, appBarLayout, i11 + round);
                 }
@@ -529,7 +529,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
                 }
             }
             appBarLayout.s();
-            this.f15118y = null;
+            this.f14086y = null;
             K(u1.a.b(I(), -appBarLayout.getTotalScrollRange(), 0));
             B0(coordinatorLayout, appBarLayout, I(), 0, true);
             appBarLayout.q(I());
@@ -622,11 +622,11 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
         public void B(CoordinatorLayout coordinatorLayout, AppBarLayout appBarLayout, Parcelable parcelable) {
             if (parcelable instanceof c) {
                 w0((c) parcelable, true);
-                super.B(coordinatorLayout, appBarLayout, this.f15118y.a());
+                super.B(coordinatorLayout, appBarLayout, this.f14086y.a());
                 return;
             }
             super.B(coordinatorLayout, appBarLayout, parcelable);
-            this.f15118y = null;
+            this.f14086y = null;
         }
 
         @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.c
@@ -650,31 +650,31 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
             } else {
                 z10 = false;
             }
-            if (z10 && (valueAnimator = this.f15117x) != null) {
+            if (z10 && (valueAnimator = this.f14085x) != null) {
                 valueAnimator.cancel();
             }
-            this.f15119z = null;
-            this.f15116w = i11;
+            this.f14087z = null;
+            this.f14084w = i11;
             return z10;
         }
 
         @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.c
         /* renamed from: v0 */
         public void G(CoordinatorLayout coordinatorLayout, AppBarLayout appBarLayout, View view, int i10) {
-            if (this.f15116w == 0 || i10 == 1) {
+            if (this.f14084w == 0 || i10 == 1) {
                 A0(coordinatorLayout, appBarLayout);
                 if (appBarLayout.o()) {
                     appBarLayout.w(appBarLayout.z(view));
                 }
             }
-            this.f15119z = new WeakReference(view);
+            this.f14087z = new WeakReference(view);
         }
 
         void w0(c cVar, boolean z10) {
-            if (this.f15118y != null && !z10) {
+            if (this.f14086y != null && !z10) {
                 return;
             }
-            this.f15118y = cVar;
+            this.f14086y = cVar;
         }
 
         c x0(Parcelable parcelable, AppBarLayout appBarLayout) {
@@ -688,7 +688,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
                 int bottom = childAt.getBottom() + I;
                 if (childAt.getTop() + I <= 0 && bottom >= 0) {
                     if (parcelable == null) {
-                        parcelable = u2.a.f50101e;
+                        parcelable = u2.a.f50388e;
                     }
                     c cVar = new c(parcelable);
                     if (I == 0) {
@@ -696,19 +696,19 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
                     } else {
                         z10 = false;
                     }
-                    cVar.f15127o = z10;
+                    cVar.f14095o = z10;
                     if (!z10 && (-I) >= appBarLayout.getTotalScrollRange()) {
                         z11 = true;
                     } else {
                         z11 = false;
                     }
-                    cVar.f15126i = z11;
-                    cVar.f15128p = i10;
+                    cVar.f14094i = z11;
+                    cVar.f14096p = i10;
                     if (bottom == h0.A(childAt) + appBarLayout.getTopInset()) {
                         z12 = true;
                     }
-                    cVar.f15130r = z12;
-                    cVar.f15129q = bottom / childAt.getHeight();
+                    cVar.f14098r = z12;
+                    cVar.f14097q = bottom / childAt.getHeight();
                     return cVar;
                 }
             }
@@ -734,7 +734,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
                     }
                     boolean K = K(i13);
                     int i15 = Q - b10;
-                    this.f15115v = b10 - i13;
+                    this.f14083v = b10 - i13;
                     int i16 = 1;
                     if (K) {
                         while (i14 < appBarLayout.getChildCount()) {
@@ -764,7 +764,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
             } else {
                 coordinatorLayout2 = coordinatorLayout;
                 appBarLayout2 = appBarLayout;
-                this.f15115v = 0;
+                this.f14083v = 0;
             }
             Y(coordinatorLayout2, appBarLayout2);
             return i14;
@@ -780,19 +780,19 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
             public static final Parcelable.Creator<c> CREATOR = new a();
 
             /* renamed from: i  reason: collision with root package name */
-            boolean f15126i;
+            boolean f14094i;
 
             /* renamed from: o  reason: collision with root package name */
-            boolean f15127o;
+            boolean f14095o;
 
             /* renamed from: p  reason: collision with root package name */
-            int f15128p;
+            int f14096p;
 
             /* renamed from: q  reason: collision with root package name */
-            float f15129q;
+            float f14097q;
 
             /* renamed from: r  reason: collision with root package name */
-            boolean f15130r;
+            boolean f14098r;
 
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
             class a implements Parcelable.ClassLoaderCreator {
@@ -820,21 +820,21 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
 
             public c(Parcel parcel, ClassLoader classLoader) {
                 super(parcel, classLoader);
-                this.f15126i = parcel.readByte() != 0;
-                this.f15127o = parcel.readByte() != 0;
-                this.f15128p = parcel.readInt();
-                this.f15129q = parcel.readFloat();
-                this.f15130r = parcel.readByte() != 0;
+                this.f14094i = parcel.readByte() != 0;
+                this.f14095o = parcel.readByte() != 0;
+                this.f14096p = parcel.readInt();
+                this.f14097q = parcel.readFloat();
+                this.f14098r = parcel.readByte() != 0;
             }
 
             @Override // u2.a, android.os.Parcelable
             public void writeToParcel(Parcel parcel, int i10) {
                 super.writeToParcel(parcel, i10);
-                parcel.writeByte(this.f15126i ? (byte) 1 : (byte) 0);
-                parcel.writeByte(this.f15127o ? (byte) 1 : (byte) 0);
-                parcel.writeInt(this.f15128p);
-                parcel.writeFloat(this.f15129q);
-                parcel.writeByte(this.f15130r ? (byte) 1 : (byte) 0);
+                parcel.writeByte(this.f14094i ? (byte) 1 : (byte) 0);
+                parcel.writeByte(this.f14095o ? (byte) 1 : (byte) 0);
+                parcel.writeInt(this.f14096p);
+                parcel.writeFloat(this.f14097q);
+                parcel.writeByte(this.f14098r ? (byte) 1 : (byte) 0);
             }
 
             public c(Parcelable parcelable) {
@@ -929,7 +929,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
         private void W(View view, View view2) {
             CoordinatorLayout.c f10 = ((CoordinatorLayout.f) view2.getLayoutParams()).f();
             if (f10 instanceof BaseBehavior) {
-                h0.Y(view, (((view2.getBottom() - view.getTop()) + ((BaseBehavior) f10).f15115v) + Q()) - M(view2));
+                h0.Y(view, (((view2.getBottom() - view.getTop()) + ((BaseBehavior) f10).f14083v) + Q()) - M(view2));
             }
         }
 
@@ -948,7 +948,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
             if (L != null) {
                 Rect rect2 = new Rect(rect);
                 rect2.offset(view.getLeft(), view.getTop());
-                Rect rect3 = this.f15161o;
+                Rect rect3 = this.f14129o;
                 rect3.set(0, 0, coordinatorLayout.getWidth(), coordinatorLayout.getHeight());
                 if (!rect3.contains(rect2)) {
                     L.t(false, !z10);
@@ -1027,8 +1027,8 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
 
         public ScrollingViewBehavior(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, k.f54650n5);
-            S(obtainStyledAttributes.getDimensionPixelSize(k.f54659o5, 0));
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, k.f54408n5);
+            S(obtainStyledAttributes.getDimensionPixelSize(k.f54417o5, 0));
             obtainStyledAttributes.recycle();
         }
     }
@@ -1053,10 +1053,10 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
     public static class c extends b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Rect f15132a = new Rect();
+        private final Rect f14100a = new Rect();
 
         /* renamed from: b  reason: collision with root package name */
-        private final Rect f15133b = new Rect();
+        private final Rect f14101b = new Rect();
 
         private static void b(Rect rect, AppBarLayout appBarLayout, View view) {
             view.getDrawingRect(rect);
@@ -1066,20 +1066,20 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
 
         @Override // com.google.android.material.appbar.AppBarLayout.b
         public void a(AppBarLayout appBarLayout, View view, float f10) {
-            b(this.f15132a, appBarLayout, view);
-            float abs = this.f15132a.top - Math.abs(f10);
+            b(this.f14100a, appBarLayout, view);
+            float abs = this.f14100a.top - Math.abs(f10);
             if (abs <= 0.0f) {
-                float a10 = 1.0f - u1.a.a(Math.abs(abs / this.f15132a.height()), 0.0f, 1.0f);
-                float height = (-abs) - ((this.f15132a.height() * 0.3f) * (1.0f - (a10 * a10)));
+                float a10 = 1.0f - u1.a.a(Math.abs(abs / this.f14100a.height()), 0.0f, 1.0f);
+                float height = (-abs) - ((this.f14100a.height() * 0.3f) * (1.0f - (a10 * a10)));
                 view.setTranslationY(height);
-                view.getDrawingRect(this.f15133b);
-                this.f15133b.offset(0, (int) (-height));
-                if (height >= this.f15133b.height()) {
+                view.getDrawingRect(this.f14101b);
+                this.f14101b.offset(0, (int) (-height));
+                if (height >= this.f14101b.height()) {
                     view.setVisibility(4);
                 } else {
                     view.setVisibility(0);
                 }
-                h0.u0(view, this.f15133b);
+                h0.u0(view, this.f14101b);
                 return;
             }
             h0.u0(view, null);
@@ -1158,11 +1158,11 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
     }
 
     private void c() {
-        WeakReference weakReference = this.f15113y;
+        WeakReference weakReference = this.f14081y;
         if (weakReference != null) {
             weakReference.clear();
         }
-        this.f15113y = null;
+        this.f14081y = null;
     }
 
     private Integer d() {
@@ -1180,20 +1180,20 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
     private View e(View view) {
         int i10;
         View view2;
-        if (this.f15113y == null && (i10 = this.f15112x) != -1) {
+        if (this.f14081y == null && (i10 = this.f14080x) != -1) {
             if (view != null) {
                 view2 = view.findViewById(i10);
             } else {
                 view2 = null;
             }
             if (view2 == null && (getParent() instanceof ViewGroup)) {
-                view2 = ((ViewGroup) getParent()).findViewById(this.f15112x);
+                view2 = ((ViewGroup) getParent()).findViewById(this.f14080x);
             }
             if (view2 != null) {
-                this.f15113y = new WeakReference(view2);
+                this.f14081y = new WeakReference(view2);
             }
         }
-        WeakReference weakReference = this.f15113y;
+        WeakReference weakReference = this.f14081y;
         if (weakReference == null) {
             return null;
         }
@@ -1211,7 +1211,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
     }
 
     private void l(final oh.g gVar, final ColorStateList colorStateList, final ColorStateList colorStateList2) {
-        final Integer f10 = eh.a.f(getContext(), yg.b.f54345o);
+        final Integer f10 = eh.a.f(getContext(), yg.b.f54103o);
         this.B = new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.material.appbar.a
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
@@ -1235,14 +1235,14 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
     private void n() {
         BaseBehavior.c cVar;
         Behavior behavior = this.J;
-        if (behavior != null && this.f15101e != -1 && this.f15105q == 0) {
-            cVar = behavior.x0(u2.a.f50101e, this);
+        if (behavior != null && this.f14069e != -1 && this.f14073q == 0) {
+            cVar = behavior.x0(u2.a.f50388e, this);
         } else {
             cVar = null;
         }
-        this.f15101e = -1;
-        this.f15102i = -1;
-        this.f15103o = -1;
+        this.f14069e = -1;
+        this.f14070i = -1;
+        this.f14071o = -1;
         if (cVar != null) {
             this.J.w0(cVar, false);
         }
@@ -1270,13 +1270,13 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
         if (z12) {
             i12 = 8;
         }
-        this.f15105q = i13 | i12;
+        this.f14073q = i13 | i12;
         requestLayout();
     }
 
     private boolean v(boolean z10) {
-        if (this.f15109u != z10) {
-            this.f15109u = z10;
+        if (this.f14077u != z10) {
+            this.f14077u = z10;
             refreshDrawableState();
             return true;
         }
@@ -1300,7 +1300,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
         super.draw(canvas);
         if (y()) {
             int save = canvas.save();
-            canvas.translate(0.0f, -this.f15100d);
+            canvas.translate(0.0f, -this.f14068d);
             this.G.draw(canvas);
             canvas.restoreToCount(save);
         }
@@ -1340,7 +1340,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
     int getDownNestedPreScrollRange() {
         int i10;
         int A;
-        int i11 = this.f15102i;
+        int i11 = this.f14070i;
         if (i11 != -1) {
             return i11;
         }
@@ -1350,7 +1350,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
             if (childAt.getVisibility() != 8) {
                 d dVar = (d) childAt.getLayoutParams();
                 int measuredHeight = childAt.getMeasuredHeight();
-                int i13 = dVar.f15134a;
+                int i13 = dVar.f14102a;
                 if ((i13 & 5) == 5) {
                     int i14 = ((LinearLayout.LayoutParams) dVar).topMargin + ((LinearLayout.LayoutParams) dVar).bottomMargin;
                     if ((i13 & 8) != 0) {
@@ -1375,12 +1375,12 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
             }
         }
         int max = Math.max(0, i12);
-        this.f15102i = max;
+        this.f14070i = max;
         return max;
     }
 
     int getDownNestedScrollRange() {
-        int i10 = this.f15103o;
+        int i10 = this.f14071o;
         if (i10 != -1) {
             return i10;
         }
@@ -1395,7 +1395,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
             if (childAt.getVisibility() != 8) {
                 d dVar = (d) childAt.getLayoutParams();
                 int measuredHeight = childAt.getMeasuredHeight() + ((LinearLayout.LayoutParams) dVar).topMargin + ((LinearLayout.LayoutParams) dVar).bottomMargin;
-                int i13 = dVar.f15134a;
+                int i13 = dVar.f14102a;
                 if ((i13 & 1) == 0) {
                     break;
                 }
@@ -1408,12 +1408,12 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
             i11++;
         }
         int max = Math.max(0, i12);
-        this.f15103o = max;
+        this.f14071o = max;
         return max;
     }
 
     public int getLiftOnScrollTargetViewId() {
-        return this.f15112x;
+        return this.f14080x;
     }
 
     public oh.g getMaterialShapeBackground() {
@@ -1442,7 +1442,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
     }
 
     int getPendingAction() {
-        return this.f15105q;
+        return this.f14073q;
     }
 
     public Drawable getStatusBarForeground() {
@@ -1455,7 +1455,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
     }
 
     final int getTopInset() {
-        WindowInsetsCompat windowInsetsCompat = this.f15106r;
+        WindowInsetsCompat windowInsetsCompat = this.f14074r;
         if (windowInsetsCompat != null) {
             return windowInsetsCompat.q();
         }
@@ -1463,7 +1463,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
     }
 
     public final int getTotalScrollRange() {
-        int i10 = this.f15101e;
+        int i10 = this.f14069e;
         if (i10 != -1) {
             return i10;
         }
@@ -1478,7 +1478,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
             if (childAt.getVisibility() != 8) {
                 d dVar = (d) childAt.getLayoutParams();
                 int measuredHeight = childAt.getMeasuredHeight();
-                int i13 = dVar.f15134a;
+                int i13 = dVar.f14102a;
                 if ((i13 & 1) == 0) {
                     break;
                 }
@@ -1494,7 +1494,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
             i11++;
         }
         int max = Math.max(0, i12);
-        this.f15101e = max;
+        this.f14069e = max;
         return max;
     }
 
@@ -1516,7 +1516,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
     }
 
     boolean i() {
-        return this.f15104p;
+        return this.f14072p;
     }
 
     boolean k() {
@@ -1527,7 +1527,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
     }
 
     public boolean o() {
-        return this.f15111w;
+        return this.f14079w;
     }
 
     @Override // android.view.ViewGroup, android.view.View
@@ -1545,16 +1545,16 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
         }
         int[] iArr = this.F;
         int[] onCreateDrawableState = super.onCreateDrawableState(i10 + iArr.length);
-        boolean z10 = this.f15109u;
-        int i13 = yg.b.f54328d0;
+        boolean z10 = this.f14077u;
+        int i13 = yg.b.f54086d0;
         if (!z10) {
             i13 = -i13;
         }
         iArr[0] = i13;
-        if (z10 && this.f15110v) {
-            i11 = yg.b.f54330e0;
+        if (z10 && this.f14078v) {
+            i11 = yg.b.f54088e0;
         } else {
-            i11 = -yg.b.f54330e0;
+            i11 = -yg.b.f54088e0;
         }
         iArr[1] = i11;
         int i14 = yg.b.Z;
@@ -1562,7 +1562,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
             i14 = -i14;
         }
         iArr[2] = i14;
-        if (z10 && this.f15110v) {
+        if (z10 && this.f14078v) {
             i12 = yg.b.Y;
         } else {
             i12 = -yg.b.Y;
@@ -1588,14 +1588,14 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
             }
         }
         n();
-        this.f15104p = false;
+        this.f14072p = false;
         int childCount2 = getChildCount();
         int i14 = 0;
         while (true) {
             if (i14 >= childCount2) {
                 break;
             } else if (((d) getChildAt(i14).getLayoutParams()).d() != null) {
-                this.f15104p = true;
+                this.f14072p = true;
                 break;
             } else {
                 i14++;
@@ -1605,8 +1605,8 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
         if (drawable != null) {
             drawable.setBounds(0, 0, getWidth(), getTopInset());
         }
-        if (!this.f15108t) {
-            if (!this.f15111w && !j()) {
+        if (!this.f14076t) {
+            if (!this.f14079w && !j()) {
                 z11 = false;
             }
             v(z11);
@@ -1632,15 +1632,15 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
     }
 
     void q(int i10) {
-        this.f15100d = i10;
+        this.f14068d = i10;
         if (!willNotDraw()) {
             h0.e0(this);
         }
-        List list = this.f15107s;
+        List list = this.f14075s;
         if (list != null) {
             int size = list.size();
             for (int i11 = 0; i11 < size; i11++) {
-                android.support.v4.media.session.b.a(this.f15107s.get(i11));
+                android.support.v4.media.session.b.a(this.f14075s.get(i11));
             }
         }
     }
@@ -1652,8 +1652,8 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
         } else {
             windowInsetsCompat2 = null;
         }
-        if (!b2.b.a(this.f15106r, windowInsetsCompat2)) {
-            this.f15106r = windowInsetsCompat2;
+        if (!b2.b.a(this.f14074r, windowInsetsCompat2)) {
+            this.f14074r = windowInsetsCompat2;
             C();
             requestLayout();
         }
@@ -1661,7 +1661,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
     }
 
     void s() {
-        this.f15105q = 0;
+        this.f14073q = 0;
     }
 
     @Override // android.view.View
@@ -1675,25 +1675,25 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
     }
 
     public void setLiftOnScroll(boolean z10) {
-        this.f15111w = z10;
+        this.f14079w = z10;
     }
 
     public void setLiftOnScrollTargetView(View view) {
-        this.f15112x = -1;
+        this.f14080x = -1;
         if (view == null) {
             c();
         } else {
-            this.f15113y = new WeakReference(view);
+            this.f14081y = new WeakReference(view);
         }
     }
 
     public void setLiftOnScrollTargetViewId(int i10) {
-        this.f15112x = i10;
+        this.f14080x = i10;
         c();
     }
 
     public void setLiftableOverrideEnabled(boolean z10) {
-        this.f15108t = z10;
+        this.f14076t = z10;
     }
 
     @Override // android.widget.LinearLayout
@@ -1779,18 +1779,18 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
     }
 
     boolean w(boolean z10) {
-        return x(z10, !this.f15108t);
+        return x(z10, !this.f14076t);
     }
 
     boolean x(boolean z10, boolean z11) {
         float f10;
         float f11;
-        if (z11 && this.f15110v != z10) {
-            this.f15110v = z10;
+        if (z11 && this.f14078v != z10) {
+            this.f14078v = z10;
             refreshDrawableState();
             if (p()) {
                 float f12 = 0.0f;
-                if (this.f15114z) {
+                if (this.f14082z) {
                     if (z10) {
                         f11 = 0.0f;
                     } else {
@@ -1801,7 +1801,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
                     }
                     B(f11, f12);
                     return true;
-                } else if (this.f15111w) {
+                } else if (this.f14079w) {
                     if (z10) {
                         f10 = 0.0f;
                     } else {
@@ -1836,7 +1836,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
     }
 
     public AppBarLayout(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, yg.b.f54321a);
+        this(context, attributeSet, yg.b.f54079a);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */
@@ -1856,22 +1856,22 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
     public static class d extends LinearLayout.LayoutParams {
 
         /* renamed from: a  reason: collision with root package name */
-        int f15134a;
+        int f14102a;
 
         /* renamed from: b  reason: collision with root package name */
-        private b f15135b;
+        private b f14103b;
 
         /* renamed from: c  reason: collision with root package name */
-        Interpolator f15136c;
+        Interpolator f14104c;
 
         public d(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
-            this.f15134a = 1;
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, k.f54716v);
-            this.f15134a = obtainStyledAttributes.getInt(k.f54734x, 0);
-            f(obtainStyledAttributes.getInt(k.f54725w, 0));
-            if (obtainStyledAttributes.hasValue(k.f54743y)) {
-                this.f15136c = AnimationUtils.loadInterpolator(context, obtainStyledAttributes.getResourceId(k.f54743y, 0));
+            this.f14102a = 1;
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, k.f54474v);
+            this.f14102a = obtainStyledAttributes.getInt(k.f54492x, 0);
+            f(obtainStyledAttributes.getInt(k.f54483w, 0));
+            if (obtainStyledAttributes.hasValue(k.f54501y)) {
+                this.f14104c = AnimationUtils.loadInterpolator(context, obtainStyledAttributes.getResourceId(k.f54501y, 0));
             }
             obtainStyledAttributes.recycle();
         }
@@ -1884,19 +1884,19 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
         }
 
         public b b() {
-            return this.f15135b;
+            return this.f14103b;
         }
 
         public int c() {
-            return this.f15134a;
+            return this.f14102a;
         }
 
         public Interpolator d() {
-            return this.f15136c;
+            return this.f14104c;
         }
 
         boolean e() {
-            int i10 = this.f15134a;
+            int i10 = this.f14102a;
             if ((i10 & 1) == 1 && (i10 & 10) != 0) {
                 return true;
             }
@@ -1904,31 +1904,31 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
         }
 
         public void f(int i10) {
-            this.f15135b = a(i10);
+            this.f14103b = a(i10);
         }
 
         public void g(int i10) {
-            this.f15134a = i10;
+            this.f14102a = i10;
         }
 
         public d(int i10, int i11) {
             super(i10, i11);
-            this.f15134a = 1;
+            this.f14102a = 1;
         }
 
         public d(ViewGroup.LayoutParams layoutParams) {
             super(layoutParams);
-            this.f15134a = 1;
+            this.f14102a = 1;
         }
 
         public d(ViewGroup.MarginLayoutParams marginLayoutParams) {
             super(marginLayoutParams);
-            this.f15134a = 1;
+            this.f14102a = 1;
         }
 
         public d(LinearLayout.LayoutParams layoutParams) {
             super(layoutParams);
-            this.f15134a = 1;
+            this.f14102a = 1;
         }
     }
 }

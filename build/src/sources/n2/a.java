@@ -13,12 +13,12 @@ import ve.a;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final C0513a f39544a = new C0513a(null);
+    public static final C0510a f39583a = new C0510a(null);
 
     /* renamed from: n2.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0513a {
-        public /* synthetic */ C0513a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0510a {
+        public /* synthetic */ C0510a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
@@ -38,28 +38,28 @@ public abstract class a {
         public final ve.a a(c0 request, Context context) {
             Intrinsics.checkNotNullParameter(request, "request");
             Intrinsics.checkNotNullParameter(context, "context");
-            a.C0686a c0686a = new a.C0686a();
+            a.C0677a c0677a = new a.C0677a();
             long b10 = b(context);
             boolean z10 = false;
             for (l lVar : request.a()) {
                 if ((lVar instanceof e0) && !z10) {
                     if (c(b10)) {
-                        c0686a.e(k.f42493a.g((e0) lVar));
+                        c0677a.e(k.f42293a.g((e0) lVar));
                     } else {
-                        c0686a.d(k.f42493a.f((e0) lVar));
+                        c0677a.d(k.f42293a.f((e0) lVar));
                     }
                     z10 = true;
                 }
             }
             if (b10 > 241217000) {
-                c0686a.g(request.e());
+                c0677a.g(request.e());
             }
-            ve.a a10 = c0686a.b(false).a();
+            ve.a a10 = c0677a.b(false).a();
             Intrinsics.checkNotNullExpressionValue(a10, "build(...)");
             return a10;
         }
 
-        private C0513a() {
+        private C0510a() {
         }
     }
 }

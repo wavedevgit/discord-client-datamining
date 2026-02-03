@@ -87,7 +87,7 @@ public class f extends e {
         throw new IllegalArgumentException("Cannot coerce value to an empty range: maximum " + i12 + " is less than minimum " + i11 + '.');
     }
 
-    public static int n(int i10, as.a range) {
+    public static int n(int i10, cs.a range) {
         Intrinsics.checkNotNullParameter(range, "range");
         if (!range.isEmpty()) {
             if (i10 < ((Number) range.b()).intValue()) {
@@ -115,7 +115,7 @@ public class f extends e {
     }
 
     public static a p(int i10, int i11) {
-        return a.f33168o.a(i10, i11, -1);
+        return a.f32558o.a(i10, i11, -1);
     }
 
     public static int q(IntRange intRange, kotlin.random.c random) {
@@ -130,7 +130,7 @@ public class f extends e {
 
     public static a r(a aVar) {
         Intrinsics.checkNotNullParameter(aVar, "<this>");
-        return a.f33168o.a(aVar.e(), aVar.d(), -aVar.f());
+        return a.f32558o.a(aVar.e(), aVar.d(), -aVar.f());
     }
 
     public static a s(a aVar, int i10) {
@@ -142,13 +142,13 @@ public class f extends e {
             z10 = false;
         }
         e.a(z10, Integer.valueOf(i10));
-        a.C0442a c0442a = a.f33168o;
+        a.C0438a c0438a = a.f32558o;
         int d10 = aVar.d();
         int e10 = aVar.e();
         if (aVar.f() <= 0) {
             i10 = -i10;
         }
-        return c0442a.a(d10, e10, i10);
+        return c0438a.a(d10, e10, i10);
     }
 
     public static b t(b bVar, long j10) {
@@ -160,7 +160,7 @@ public class f extends e {
             z10 = false;
         }
         e.a(z10, Long.valueOf(j10));
-        b.a aVar = b.f33172o;
+        b.a aVar = b.f32562o;
         long d10 = bVar.d();
         long e10 = bVar.e();
         if (bVar.f() <= 0) {
@@ -171,21 +171,21 @@ public class f extends e {
 
     public static IntRange u(int i10, int i11) {
         if (i11 <= Integer.MIN_VALUE) {
-            return IntRange.f33166p.a();
+            return IntRange.f32556p.a();
         }
         return new IntRange(i10, i11 - 1);
     }
 
     public static c v(int i10, long j10) {
         if (j10 <= Long.MIN_VALUE) {
-            return c.f33176p.a();
+            return c.f32566p.a();
         }
         return new c(i10, j10 - 1);
     }
 
     public static c w(long j10, long j11) {
         if (j11 <= Long.MIN_VALUE) {
-            return c.f33176p.a();
+            return c.f32566p.a();
         }
         return new c(j10, j11 - 1);
     }

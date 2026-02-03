@@ -5,37 +5,37 @@ import ui.c;
 final class n4 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final n4 f41355a = new n4();
+    static final n4 f41394a = new n4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41356b;
+    private static final ui.c f41395b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41357c;
+    private static final ui.c f41396c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41358d;
+    private static final ui.c f41397d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f41359e;
+    private static final ui.c f41398e;
 
     static {
         c.b a10 = ui.c.a("inferenceCommonLogEvent");
         f fVar = new f();
         fVar.a(1);
-        f41356b = a10.b(fVar.b()).a();
+        f41395b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("detectorOptions");
         f fVar2 = new f();
         fVar2.a(2);
-        f41357c = a11.b(fVar2.b()).a();
+        f41396c = a11.b(fVar2.b()).a();
         c.b a12 = ui.c.a("imageInfo");
         f fVar3 = new f();
         fVar3.a(3);
-        f41358d = a12.b(fVar3.b()).a();
+        f41397d = a12.b(fVar3.b()).a();
         c.b a13 = ui.c.a("detectedFaces");
         f fVar4 = new f();
         fVar4.a(4);
-        f41359e = a13.b(fVar4.b()).a();
+        f41398e = a13.b(fVar4.b()).a();
     }
 
     private n4() {

@@ -44,11 +44,11 @@ public final class AttributeStyles_QRCodeFillColorStyleJsonAdapter extends h {
         reader.r();
         StyleElements.SimpleElementColor simpleElementColor = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
             }
         }
@@ -61,7 +61,7 @@ public final class AttributeStyles_QRCodeFillColorStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (qRCodeFillColorStyle != null) {
             writer.l();
-            writer.t0("base");
+            writer.A0("base");
             this.nullableSimpleElementColorAdapter.toJson(writer, qRCodeFillColorStyle.getBase());
             writer.E();
             return;

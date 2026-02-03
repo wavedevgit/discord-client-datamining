@@ -11,10 +11,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class CreateDocumentResponse {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Data f19112a;
+    private final Data f18094a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f19113b;
+    private final List f18095b;
 
     @i(generateAdapter = true)
     @Metadata(d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0002\b\u0007\b\u0007\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005R\u0017\u0010\u0003\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u0006\u0010\u0007\u001a\u0004\b\u0006\u0010\b¨\u0006\t"}, d2 = {"Lcom/withpersona/sdk2/inquiry/document/network/CreateDocumentResponse$Data;", "", "", StackTraceHelper.ID_KEY, "<init>", "(Ljava/lang/String;)V", "a", "Ljava/lang/String;", "()Ljava/lang/String;", "document_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -22,29 +22,29 @@ public final class CreateDocumentResponse {
     public static final class Data {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f19114a;
+        private final String f18096a;
 
         public Data(String id2) {
             Intrinsics.checkNotNullParameter(id2, "id");
-            this.f19114a = id2;
+            this.f18096a = id2;
         }
 
         public final String a() {
-            return this.f19114a;
+            return this.f18096a;
         }
     }
 
     public CreateDocumentResponse(Data data, List list) {
         Intrinsics.checkNotNullParameter(data, "data");
-        this.f19112a = data;
-        this.f19113b = list;
+        this.f18094a = data;
+        this.f18095b = list;
     }
 
     public final Data a() {
-        return this.f19112a;
+        return this.f18094a;
     }
 
     public final List b() {
-        return this.f19113b;
+        return this.f18095b;
     }
 }

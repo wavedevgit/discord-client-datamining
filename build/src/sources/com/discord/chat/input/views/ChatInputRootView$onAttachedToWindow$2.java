@@ -24,18 +24,18 @@ final class ChatInputRootView$onAttachedToWindow$2 extends kotlin.coroutines.jvm
     }
 
     public final Object invoke(int i10, Continuation<? super Unit> continuation) {
-        return ((ChatInputRootView$onAttachedToWindow$2) create(Integer.valueOf(i10), continuation)).invokeSuspend(Unit.f33074a);
+        return ((ChatInputRootView$onAttachedToWindow$2) create(Integer.valueOf(i10), continuation)).invokeSuspend(Unit.f32464a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
         ChatInputRootViewMeasurer chatInputRootViewMeasurer;
-        pr.b.f();
+        rr.b.f();
         if (this.label == 0) {
             kotlin.c.b(obj);
             chatInputRootViewMeasurer = this.this$0.lineHeightMeasurer;
             chatInputRootViewMeasurer.measure(true);
-            return Unit.f33074a;
+            return Unit.f32464a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

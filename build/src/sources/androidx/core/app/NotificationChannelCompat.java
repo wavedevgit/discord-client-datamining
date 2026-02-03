@@ -10,125 +10,125 @@ import android.provider.Settings;
 public class NotificationChannelCompat {
 
     /* renamed from: a  reason: collision with root package name */
-    final String f2926a;
+    final String f2895a;
 
     /* renamed from: b  reason: collision with root package name */
-    CharSequence f2927b;
+    CharSequence f2896b;
 
     /* renamed from: c  reason: collision with root package name */
-    int f2928c;
+    int f2897c;
 
     /* renamed from: d  reason: collision with root package name */
-    String f2929d;
+    String f2898d;
 
     /* renamed from: e  reason: collision with root package name */
-    String f2930e;
+    String f2899e;
 
     /* renamed from: f  reason: collision with root package name */
-    boolean f2931f;
+    boolean f2900f;
 
     /* renamed from: g  reason: collision with root package name */
-    Uri f2932g;
+    Uri f2901g;
 
     /* renamed from: h  reason: collision with root package name */
-    AudioAttributes f2933h;
+    AudioAttributes f2902h;
 
     /* renamed from: i  reason: collision with root package name */
-    boolean f2934i;
+    boolean f2903i;
 
     /* renamed from: j  reason: collision with root package name */
-    int f2935j;
+    int f2904j;
 
     /* renamed from: k  reason: collision with root package name */
-    boolean f2936k;
+    boolean f2905k;
 
     /* renamed from: l  reason: collision with root package name */
-    long[] f2937l;
+    long[] f2906l;
 
     /* renamed from: m  reason: collision with root package name */
-    String f2938m;
+    String f2907m;
 
     /* renamed from: n  reason: collision with root package name */
-    String f2939n;
+    String f2908n;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f2940o;
+    private boolean f2909o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f2941p;
+    private int f2910p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f2942q;
+    private boolean f2911q;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f2943r;
+    private boolean f2912r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class Builder {
 
         /* renamed from: a  reason: collision with root package name */
-        private final NotificationChannelCompat f2944a;
+        private final NotificationChannelCompat f2913a;
 
         public Builder(String str, int i10) {
-            this.f2944a = new NotificationChannelCompat(str, i10);
+            this.f2913a = new NotificationChannelCompat(str, i10);
         }
 
         public NotificationChannelCompat a() {
-            return this.f2944a;
+            return this.f2913a;
         }
 
         public Builder b(String str) {
-            this.f2944a.f2929d = str;
+            this.f2913a.f2898d = str;
             return this;
         }
 
         public Builder c(String str) {
-            this.f2944a.f2930e = str;
+            this.f2913a.f2899e = str;
             return this;
         }
 
         public Builder d(int i10) {
-            this.f2944a.f2935j = i10;
+            this.f2913a.f2904j = i10;
             return this;
         }
 
         public Builder e(boolean z10) {
-            this.f2944a.f2934i = z10;
+            this.f2913a.f2903i = z10;
             return this;
         }
 
         public Builder f(CharSequence charSequence) {
-            this.f2944a.f2927b = charSequence;
+            this.f2913a.f2896b = charSequence;
             return this;
         }
 
         public Builder g(boolean z10) {
-            this.f2944a.f2931f = z10;
+            this.f2913a.f2900f = z10;
             return this;
         }
 
         public Builder h(Uri uri, AudioAttributes audioAttributes) {
-            NotificationChannelCompat notificationChannelCompat = this.f2944a;
-            notificationChannelCompat.f2932g = uri;
-            notificationChannelCompat.f2933h = audioAttributes;
+            NotificationChannelCompat notificationChannelCompat = this.f2913a;
+            notificationChannelCompat.f2901g = uri;
+            notificationChannelCompat.f2902h = audioAttributes;
             return this;
         }
 
         public Builder i(boolean z10) {
-            this.f2944a.f2936k = z10;
+            this.f2913a.f2905k = z10;
             return this;
         }
 
         public Builder j(long[] jArr) {
             boolean z10;
-            NotificationChannelCompat notificationChannelCompat = this.f2944a;
+            NotificationChannelCompat notificationChannelCompat = this.f2913a;
             if (jArr != null && jArr.length > 0) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            notificationChannelCompat.f2936k = z10;
-            notificationChannelCompat.f2937l = jArr;
+            notificationChannelCompat.f2905k = z10;
+            notificationChannelCompat.f2906l = jArr;
             return this;
         }
     }
@@ -255,28 +255,28 @@ public class NotificationChannelCompat {
     }
 
     NotificationChannelCompat(String str, int i10) {
-        this.f2931f = true;
-        this.f2932g = Settings.System.DEFAULT_NOTIFICATION_URI;
-        this.f2935j = 0;
-        this.f2926a = (String) b2.e.g(str);
-        this.f2928c = i10;
-        this.f2933h = Notification.AUDIO_ATTRIBUTES_DEFAULT;
+        this.f2900f = true;
+        this.f2901g = Settings.System.DEFAULT_NOTIFICATION_URI;
+        this.f2904j = 0;
+        this.f2895a = (String) b2.e.g(str);
+        this.f2897c = i10;
+        this.f2902h = Notification.AUDIO_ATTRIBUTES_DEFAULT;
     }
 
     public boolean a() {
-        return this.f2931f;
+        return this.f2900f;
     }
 
     public String b() {
-        return this.f2926a;
+        return this.f2895a;
     }
 
     public int c() {
-        return this.f2928c;
+        return this.f2897c;
     }
 
     public CharSequence d() {
-        return this.f2927b;
+        return this.f2896b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -287,54 +287,54 @@ public class NotificationChannelCompat {
         if (i10 < 26) {
             return null;
         }
-        NotificationChannel c10 = a.c(this.f2926a, this.f2927b, this.f2928c);
-        a.p(c10, this.f2929d);
-        a.q(c10, this.f2930e);
-        a.s(c10, this.f2931f);
-        a.t(c10, this.f2932g, this.f2933h);
-        a.d(c10, this.f2934i);
-        a.r(c10, this.f2935j);
-        a.u(c10, this.f2937l);
-        a.e(c10, this.f2936k);
-        if (i10 >= 30 && (str = this.f2938m) != null && (str2 = this.f2939n) != null) {
+        NotificationChannel c10 = a.c(this.f2895a, this.f2896b, this.f2897c);
+        a.p(c10, this.f2898d);
+        a.q(c10, this.f2899e);
+        a.s(c10, this.f2900f);
+        a.t(c10, this.f2901g, this.f2902h);
+        a.d(c10, this.f2903i);
+        a.r(c10, this.f2904j);
+        a.u(c10, this.f2906l);
+        a.e(c10, this.f2905k);
+        if (i10 >= 30 && (str = this.f2907m) != null && (str2 = this.f2908n) != null) {
             c.d(c10, str, str2);
         }
         return c10;
     }
 
     public boolean f() {
-        return this.f2934i;
+        return this.f2903i;
     }
 
     public boolean g() {
-        return this.f2936k;
+        return this.f2905k;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public NotificationChannelCompat(NotificationChannel notificationChannel) {
         this(a.i(notificationChannel), a.j(notificationChannel));
-        this.f2927b = a.m(notificationChannel);
-        this.f2929d = a.g(notificationChannel);
-        this.f2930e = a.h(notificationChannel);
-        this.f2931f = a.b(notificationChannel);
-        this.f2932g = a.n(notificationChannel);
-        this.f2933h = a.f(notificationChannel);
-        this.f2934i = a.v(notificationChannel);
-        this.f2935j = a.k(notificationChannel);
-        this.f2936k = a.w(notificationChannel);
-        this.f2937l = a.o(notificationChannel);
+        this.f2896b = a.m(notificationChannel);
+        this.f2898d = a.g(notificationChannel);
+        this.f2899e = a.h(notificationChannel);
+        this.f2900f = a.b(notificationChannel);
+        this.f2901g = a.n(notificationChannel);
+        this.f2902h = a.f(notificationChannel);
+        this.f2903i = a.v(notificationChannel);
+        this.f2904j = a.k(notificationChannel);
+        this.f2905k = a.w(notificationChannel);
+        this.f2906l = a.o(notificationChannel);
         int i10 = Build.VERSION.SDK_INT;
         if (i10 >= 30) {
-            this.f2938m = c.b(notificationChannel);
-            this.f2939n = c.a(notificationChannel);
+            this.f2907m = c.b(notificationChannel);
+            this.f2908n = c.a(notificationChannel);
         }
-        this.f2940o = a.a(notificationChannel);
-        this.f2941p = a.l(notificationChannel);
+        this.f2909o = a.a(notificationChannel);
+        this.f2910p = a.l(notificationChannel);
         if (i10 >= 29) {
-            this.f2942q = b.a(notificationChannel);
+            this.f2911q = b.a(notificationChannel);
         }
         if (i10 >= 30) {
-            this.f2943r = c.c(notificationChannel);
+            this.f2912r = c.c(notificationChannel);
         }
     }
 }

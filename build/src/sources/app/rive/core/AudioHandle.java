@@ -12,38 +12,38 @@ public final class AudioHandle {
     }
 
     /* renamed from: box-impl  reason: not valid java name */
-    public static final /* synthetic */ AudioHandle m101boximpl(long j10) {
+    public static final /* synthetic */ AudioHandle m99boximpl(long j10) {
         return new AudioHandle(j10);
     }
 
     /* renamed from: constructor-impl  reason: not valid java name */
-    public static long m102constructorimpl(long j10) {
+    public static long m100constructorimpl(long j10) {
         return j10;
     }
 
     /* renamed from: equals-impl  reason: not valid java name */
-    public static boolean m103equalsimpl(long j10, Object obj) {
-        return (obj instanceof AudioHandle) && j10 == ((AudioHandle) obj).m107unboximpl();
+    public static boolean m101equalsimpl(long j10, Object obj) {
+        return (obj instanceof AudioHandle) && j10 == ((AudioHandle) obj).m105unboximpl();
     }
 
     /* renamed from: equals-impl0  reason: not valid java name */
-    public static final boolean m104equalsimpl0(long j10, long j11) {
+    public static final boolean m102equalsimpl0(long j10, long j11) {
         return j10 == j11;
     }
 
     /* renamed from: hashCode-impl  reason: not valid java name */
-    public static int m105hashCodeimpl(long j10) {
+    public static int m103hashCodeimpl(long j10) {
         return Long.hashCode(j10);
     }
 
     @NotNull
     /* renamed from: toString-impl  reason: not valid java name */
-    public static String m106toStringimpl(long j10) {
+    public static String m104toStringimpl(long j10) {
         return "AudioHandle(" + j10 + ")";
     }
 
     public boolean equals(Object obj) {
-        return m103equalsimpl(this.handle, obj);
+        return m101equalsimpl(this.handle, obj);
     }
 
     public final long getHandle() {
@@ -51,16 +51,16 @@ public final class AudioHandle {
     }
 
     public int hashCode() {
-        return m105hashCodeimpl(this.handle);
+        return m103hashCodeimpl(this.handle);
     }
 
     @NotNull
     public String toString() {
-        return m106toStringimpl(this.handle);
+        return m104toStringimpl(this.handle);
     }
 
     /* renamed from: unbox-impl  reason: not valid java name */
-    public final /* synthetic */ long m107unboximpl() {
+    public final /* synthetic */ long m105unboximpl() {
         return this.handle;
     }
 }

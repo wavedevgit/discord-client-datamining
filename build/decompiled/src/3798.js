@@ -1,178 +1,180 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = global;
-    var6 = var2.Object;
-    var5 = var6.defineProperty;
-    var4 = {};
-    var3 = true;
-    var4.value = var3;
-    var3 = '__esModule';
-    var3 = var5.bind(var6)(var1, var3, var4);
-    var2 = var2.WeakMap;
-    var3 = var2.prototype;
-    var3 = Object.create(var3, {
-        constructor: {
-            value: var2
-        }
-    });
-    var10 = var3;
-    var2 = new var10[var2](var9);
-    var2 = var2 instanceof Object ? var2 : var3;
-    var1.snapshots = var2;
-    var2 = function arg0, arg1() {
-        _fun33940: for (var _fun33940_ip = 0;;) switch (_fun33940_ip) {
-            case 0:
-                var3 = arg0;
-                var4 = arg1;
-                var _closure2_slot0 = var3;
-                var1 = 0;
-                if (!(var1 !== var4)) {
-                    _fun33940_ip = 51;
-                    continue _fun33940
-                }
-            case 18:
-                var2 = global;
-                var5 = var2.setTimeout;
-                var2 = 1000;
-                var4 = var2 * var4;
-                var2 = undefined;
-                var0 = function() { // Environment: var0
-                    var2 = _closure1_slot0;
-                    var1 = _closure1_slot1;
-                    var0 = 0;
-                    var1 = var1[var0];
-                    var0 = undefined;
-                    var4 = var2.bind(var0)(var1);
-                    var3 = var4._updatePropsJS;
-                    var2 = {};
-                    var1 = 'initial';
-                    var2.visibility = var1;
-                    var1 = _closure2_slot0;
-                    var1 = var3.bind(var4)(var2, var1);
+    var2 = exports;
+    var1 = require;
+    var _closure1_slot0 = var1;
+    var1 = dependencyMap;
+    var _closure1_slot1 = var1;
+    var1 = global;
+    var5 = var1.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var1 = true;
+    var3.value = var1;
+    var1 = '__esModule';
+    var1 = var4.bind(var5)(var2, var1, var3);
+    var1 = {};
+    var3 = 'function rubberBandDecay_Pnpm_rubberBandDecayTs1(animation,now,config){const{SLOPE_FACTOR,DERIVATIVE_EPS,VELOCITY_EPS}=this.__closure;const{lastTimestamp:lastTimestamp,startTimestamp:startTimestamp,current:current,velocity:velocity}=animation;const deltaTime=Math.min(now-lastTimestamp,64);const clampIndex=Math.abs(current-config.clamp[0])<Math.abs(current-config.clamp[1])?0:1;let derivative=0;if(current<config.clamp[0]||current>config.clamp[1]){derivative=current-config.clamp[clampIndex];}const v=velocity*Math.exp(-(1-config.deceleration)*(now-startTimestamp)*SLOPE_FACTOR)-derivative*config.rubberBandFactor;if(Math.abs(derivative)>DERIVATIVE_EPS){animation.springActive=true;}else if(animation.springActive){animation.current=config.clamp[clampIndex];return true;}else if(Math.abs(v)<VELOCITY_EPS){return true;}animation.current=current+v*config.velocityFactor*deltaTime/1000;animation.velocity=v;animation.lastTimestamp=now;return false;}';
+    var1.code = var3;
+    var _closure1_slot2 = var1;
+    var1 = function() { // Environment: var0
+        var0 = function arg0, arg1, arg2() {
+            _fun33907: for (var _fun33907_ip = 0;;) switch (_fun33907_ip) {
+                case 0:
+                    var1 = arg0;
+                    var0 = arg1;
+                    var3 = arg2;
+                    var2 = var1.lastTimestamp;
+                    var6 = var1.startTimestamp;
+                    var4 = var1.current;
+                    var9 = var1.velocity;
+                    var8 = global;
+                    var10 = var8.Math;
+                    var7 = var10.min;
+                    var5 = var0 - var2;
+                    var2 = 64;
+                    var5 = var7.bind(var10)(var5, var2);
+                    var10 = var8.Math;
+                    var7 = var10.abs;
+                    var2 = var3.clamp;
+                    var11 = 0;
+                    var2 = var2[var11];
+                    var2 = var4 - var2;
+                    var7 = var7.bind(var10)(var2);
+                    var13 = var8.Math;
+                    var12 = var13.abs;
+                    var2 = var3.clamp;
+                    var10 = 1;
+                    var2 = var2[var10];
+                    var2 = var4 - var2;
+                    var2 = var12.bind(var13)(var2);
+                    var2 = var7 < var2;
+                    var7 = var10;
+                    if (!var2) {
+                        _fun33907_ip = 137;
+                        continue _fun33907
+                    }
+                case 135:
+                    var7 = 0;
+                case 137:
+                    var2 = var3.clamp;
+                    var2 = var2[var11];
+                    var2 = var4 < var2;
+                    if (var2) {
+                        _fun33907_ip = 168;
+                        continue _fun33907
+                    }
+                case 154:
+                    var12 = var3.clamp;
+                    var12 = var12[var10];
+                    var2 = var4 > var12;
+                case 168:
+                    var13 = 0;
+                    if (!var2) {
+                        _fun33907_ip = 187;
+                        continue _fun33907
+                    }
+                case 173:
+                    var2 = var3.clamp;
+                    var2 = var2[var7];
+                    var13 = var4 - var2;
+                case 187:
+                    var14 = var8.Math;
+                    var12 = var14.exp;
+                    var2 = var3.deceleration;
+                    var2 = var10 - var2;
+                    var6 = var0 - var6;
+                    var2 = -var2;
+                    var15 = var2 * var6;
+                    var16 = _closure1_slot0;
+                    var2 = _closure1_slot1;
+                    var2 = var2[var11];
+                    var10 = undefined;
+                    var2 = var16.bind(var10)(var2);
+                    var2 = var2.SLOPE_FACTOR;
+                    var2 = var15 * var2;
+                    var2 = var12.bind(var14)(var2);
+                    var9 = var9 * var2;
+                    var2 = var3.rubberBandFactor;
+                    var2 = var13 * var2;
+                    var2 = var9 - var2;
+                    var12 = var8.Math;
+                    var9 = var12.abs;
+                    var12 = var9.bind(var12)(var13);
+                    var9 = 0.1;
+                    if (!(!(var12 > var9))) {
+                        _fun33907_ip = 383;
+                        continue _fun33907
+                    }
+                case 306:
+                    var9 = var1.springActive;
+                    if (var9) {
+                        _fun33907_ip = 363;
+                        continue _fun33907
+                    }
+                case 315:
+                    var9 = var8.Math;
+                    var8 = var9.abs;
+                    var8 = var8.bind(var9)(var2);
+                    var9 = _closure1_slot0;
+                    var6 = _closure1_slot1;
+                    var6 = var6[var11];
+                    var6 = var9.bind(var10)(var6);
+                    var6 = var6.VELOCITY_EPS;
+                    if (!(var8 < var6)) {
+                        _fun33907_ip = 391;
+                        continue _fun33907
+                    }
+                case 359:
+                    var6 = true;
+                    return var6;
+                case 363:
+                    var6 = var3.clamp;
+                    var6 = var6[var7];
+                    var1.current = var6;
+                    var6 = true;
+                    return var6;
+                case 383:
+                    var6 = true;
+                    var1.springActive = var6;
+                case 391:
+                    var3 = var3.velocityFactor;
+                    var3 = var2 * var3;
+                    var5 = var3 * var5;
+                    var3 = 1000;
+                    var3 = var5 / var3;
+                    var3 = var4 + var3;
+                    var1.current = var3;
+                    var1.velocity = var2;
+                    var1.lastTimestamp = var0;
+                    var0 = false;
                     return var0;
-                };
-                var0 = var5.bind(var2)(var0, var4);
-                _fun33940_ip = 96;
-                continue _fun33940;
-            case 51:
-                var2 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var1 = var0[var1];
-                var0 = undefined;
-                var2 = var2.bind(var0)(var1);
-                var1 = var2._updatePropsJS;
-                var0 = {};
-                var4 = 'initial';
-                var0.visibility = var4;
-                var0 = var1.bind(var2)(var0, var3);
-            case 96:
-                var0 = undefined;
-                return var0;
-        }
+            }
+        };
+        var2 = {};
+        var5 = _closure1_slot0;
+        var6 = _closure1_slot1;
+        var3 = 0;
+        var7 = var6[var3];
+        var4 = undefined;
+        var7 = var5.bind(var4)(var7);
+        var7 = var7.SLOPE_FACTOR;
+        var2.SLOPE_FACTOR = var7;
+        var7 = 0.1;
+        var2.DERIVATIVE_EPS = var7;
+        var3 = var6[var3];
+        var3 = var5.bind(var4)(var3);
+        var3 = var3.VELOCITY_EPS;
+        var2.VELOCITY_EPS = var3;
+        var0.__closure = var2;
+        var2 = 5389749401303.0;
+        var0.__workletHash = var2;
+        var1 = _closure1_slot2;
+        var0.__initData = var1;
+        return var0;
     };
-    var1.makeElementVisible = var2;
-    var0 = function arg0, arg1() {
-        _fun33942: for (var _fun33942_ip = 0;;) switch (_fun33942_ip) {
-            case 0:
-                var1 = arg0;
-                var4 = arg1;
-                var0 = var1.style;
-                var7 = '';
-                var0.transform = var7;
-                var2 = var1.style;
-                var0 = 'absolute';
-                var2.position = var0;
-                var5 = var1.style;
-                var6 = var4.top;
-                var3 = global;
-                var0 = var3.HermesInternal;
-                var0 = var0.concat;
-                var2 = 'px';
-                var0 = var0.bind(var7)(var6, var2);
-                var5.top = var0;
-                var5 = var1.style;
-                var6 = var4.left;
-                var0 = var3.HermesInternal;
-                var0 = var0.concat;
-                var0 = var0.bind(var7)(var6, var2);
-                var5.left = var0;
-                var5 = var1.style;
-                var6 = var4.width;
-                var0 = var3.HermesInternal;
-                var0 = var0.concat;
-                var0 = var0.bind(var7)(var6, var2);
-                var5.width = var0;
-                var5 = var1.style;
-                var6 = var4.height;
-                var0 = var3.HermesInternal;
-                var0 = var0.concat;
-                var0 = var0.bind(var7)(var6, var2);
-                var5.height = var0;
-                var5 = var1.style;
-                var0 = '0px';
-                var5.margin = var0;
-                var0 = var1.parentElement;
-                if (!var0) {
-                    _fun33942_ip = 381;
-                    continue _fun33942
-                }
-            case 203:
-                var7 = var1.parentElement;
-                var0 = var7.getBoundingClientRect;
-                var0 = var0.bind(var7)();
-                var8 = var3.parseInt;
-                var5 = var3.getComputedStyle;
-                var6 = undefined;
-                var5 = var5.bind(var6)(var7);
-                var5 = var5.borderTopWidth;
-                var8 = var8.bind(var6)(var5);
-                var5 = var3.parseInt;
-                var3 = var3.getComputedStyle;
-                var3 = var3.bind(var6)(var7);
-                var3 = var3.borderLeftWidth;
-                var3 = var5.bind(var6)(var3);
-                var5 = var1.getBoundingClientRect;
-                var5 = var5.bind(var1)();
-                var7 = var5.top;
-                var6 = var4.top;
-                if (!(var7 !== var6)) {
-                    _fun33942_ip = 334;
-                    continue _fun33942
-                }
-            case 301:
-                var7 = var1.style;
-                var9 = var4.top;
-                var6 = var0.top;
-                var6 = var9 - var6;
-                var6 = var6 - var8;
-                var6 = var6 + var2;
-                var7.top = var6;
-            case 334:
-                var6 = var5.left;
-                var5 = var4.left;
-                if (!(var6 !== var5)) {
-                    _fun33942_ip = 381;
-                    continue _fun33942
-                }
-            case 348:
-                var1 = var1.style;
-                var4 = var4.left;
-                var0 = var0.left;
-                var0 = var4 - var0;
-                var0 = var0 - var3;
-                var0 = var0 + var2;
-                var1.left = var0;
-            case 381:
-                var0 = undefined;
-                return var0;
-        }
-    };
-    var1.setElementPosition = var0;
     var0 = undefined;
+    var1 = var1.bind(var0)();
+    var2.rubberBandDecay = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3722]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3797]);

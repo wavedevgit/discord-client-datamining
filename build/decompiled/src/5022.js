@@ -1,13 +1,55 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var8 = require;
+    var4 = require;
     var6 = metroImportDefault;
     var2 = exports;
-    var9 = dependencyMap;
-    var _closure1_slot0 = var6;
-    var _closure1_slot1 = var9;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var5;
+    var0 = function arg0, arg1, arg2() {
+        _fun45167: for (var _fun45167_ip = 0;;) switch (_fun45167_ip) {
+            case 0:
+                var3 = arg0;
+                var5 = arg2;
+                var1 = _closure1_slot5;
+                var2 = undefined;
+                var0 = arg1;
+                var8 = var1.bind(var2)(var0);
+                var1 = _closure1_slot4;
+                var0 = _closure1_slot9;
+                var0 = var0.bind(var2)();
+                if (var0) {
+                    _fun45167_ip = 51;
+                    continue _fun45167
+                }
+            case 38:
+                var0 = var8.apply;
+                var0 = var0.bind(var8)(var3, var5);
+                _fun45167_ip = 92;
+                continue _fun45167;
+            case 51:
+                var6 = global;
+                var7 = var6.Reflect;
+                var6 = var7.construct;
+                if (var5) {
+                    _fun45167_ip = 71;
+                    continue _fun45167
+                }
+            case 67:
+                var5 = new Array(0);
+            case 71:
+                var4 = _closure1_slot5;
+                var4 = var4.bind(var2)(var3);
+                var4 = var4.constructor;
+                var0 = var6.bind(var7)(var8, var5, var4);
+            case 92:
+                var0 = var1.bind(var2)(var3, var0);
+                return var0;
+        }
+    };
+    var _closure1_slot8 = var0;
     var0 = function() {
-        _fun45162: for (var _fun45162_ip = 0;;) switch (_fun45162_ip) {
+        _fun45168: for (var _fun45168_ip = 0;;) switch (_fun45168_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -28,8 +70,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun45162_ip = 74;
-                continue _fun45162;
+                _fun45168_ip = 74;
+                continue _fun45168;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -39,266 +81,449 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = !var0;
                     return var0;
                 };
-                _closure1_slot11 = var1;
+                _closure1_slot9 = var1;
                 var0 = undefined;
                 var0 = var1.bind(var0)();
                 return var0;
         }
     };
-    var _closure1_slot11 = var0;
-    var0 = ['style'];
-    var _closure1_slot2 = var0;
-    var5 = global;
-    var10 = var5.Object;
-    var7 = var10.defineProperty;
-    var1 = {};
-    var4 = true;
-    var1.value = var4;
+    var _closure1_slot9 = var0;
+    var0 = function arg0, arg1() {
+        _fun45171: for (var _fun45171_ip = 0;;) switch (_fun45171_ip) {
+            case 0:
+                var6 = arg0;
+                var3 = arg1;
+                var2 = undefined;
+                if (!(var2 !== var6)) {
+                    _fun45171_ip = 50;
+                    continue _fun45171
+                }
+            case 12:
+                var5 = new Array(0);
+                var4 = var5.concat;
+                var1 = _closure1_slot7;
+                var1 = var1.bind(var2)(var6);
+                var0 = _closure1_slot7;
+                var0 = var0.bind(var2)(var3);
+                var0 = var4.bind(var5)(var1, var0);
+                _fun45171_ip = 62;
+                continue _fun45171;
+            case 50:
+                var1 = _closure1_slot7;
+                var0 = var1.bind(var2)(var3);
+            case 62:
+                return var0;
+        }
+    };
+    var _closure1_slot10 = var0;
+    var0 = global;
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
     var0 = '__esModule';
-    var0 = var7.bind(var10)(var2, var0, var1);
+    var0 = var7.bind(var8)(var2, var0, var3);
     var0 = 0;
-    var1 = var9[var0];
+    var3 = var5[var0];
     var0 = undefined;
-    var1 = var6.bind(var0)(var1);
-    var _closure1_slot3 = var1;
-    var1 = 1;
-    var1 = var9[var1];
-    var1 = var6.bind(var0)(var1);
-    var _closure1_slot4 = var1;
-    var1 = 2;
-    var1 = var9[var1];
-    var1 = var6.bind(var0)(var1);
-    var _closure1_slot5 = var1;
-    var1 = 3;
-    var1 = var9[var1];
-    var1 = var6.bind(var0)(var1);
-    var _closure1_slot6 = var1;
-    var1 = 4;
-    var1 = var9[var1];
-    var1 = var6.bind(var0)(var1);
-    var _closure1_slot7 = var1;
-    var1 = 5;
-    var1 = var9[var1];
-    var1 = var6.bind(var0)(var1);
-    var _closure1_slot8 = var1;
-    var1 = 6;
-    var1 = var9[var1];
-    var1 = var8.bind(var0)(var1);
-    var1 = var1.Platform;
-    var _closure1_slot9 = var1;
-    var1 = 7;
-    var10 = var9[var1];
-    var7 = arg3;
-    var7 = var7.bind(var0)(var10);
-    var1 = var9[var1];
-    var1 = var8.bind(var0)(var1);
-    var7 = var1.Component;
-    var1 = 8;
-    var1 = var9[var1];
-    var1 = var8.bind(var0)(var1);
-    var1 = var1.jsx;
-    var _closure1_slot10 = var1;
-    var1 = function(arg0) { // Environment: var3
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot2 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot4 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot5 = var3;
+    var3 = 4;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot6 = var3;
+    var3 = 5;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot7 = var3;
+    var3 = 6;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var4 = var3.Gesture;
+    var3 = function(arg0) { // Environment: var1
         var3 = function() {
-            _fun45166: for (var _fun45166_ip = 0;;) switch (_fun45166_ip) {
+            _fun45173: for (var _fun45173_ip = 0;;) switch (_fun45173_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
                     var4 = undefined;
-                    var0 = _closure1_slot4;
+                    var5 = _closure1_slot2;
                     var1 = _closure2_slot0;
+                    var5 = var5.bind(var2)(var3, var1);
+                    var0 = _closure1_slot8;
                     var0 = var0.bind(var2)(var3, var1);
-                    var0 = _closure1_slot7;
-                    var8 = var0.bind(var2)(var1);
-                    var1 = _closure1_slot6;
-                    var0 = _closure1_slot11;
-                    var0 = var0.bind(var2)();
-                    if (var0) {
-                        _fun45166_ip = 69;
-                        continue _fun45166
+                    var1 = new Array(0);
+                    var0.gestures = var1;
+                    var1 = new Array(0);
+                    var0.simultaneousGestures = var1;
+                    var1 = new Array(0);
+                    var0.requireGesturesToFail = var1;
+                    var3 = arguments.length;
+                    var1 = global;
+                    var1 = var1.Array;
+                    var2 = var1.prototype;
+                    var2 = Object.create(var2, {
+                        constructor: {
+                            value: var1
+                        }
+                    });
+                    var8 = var2;
+                    var7 = var3;
+                    var1 = new var8[var1](var7, var6);
+                    var1 = var1 instanceof Object ? var1 : var2;
+                    var2 = 0;
+                    var5 = var2 < var3;
+                    if (!var5) {
+                        _fun45173_ip = 125;
+                        continue _fun45173
                     }
-                case 51:
-                    var6 = var8.apply;
-                    var4 = arguments;
-                    var0 = var4;
-                    var0 = var6.bind(var8)(var3, var0);
-                    _fun45166_ip = 105;
-                    continue _fun45166;
-                case 69:
-                    var6 = global;
-                    var7 = var6.Reflect;
-                    var6 = var7.construct;
-                    var5 = _closure1_slot7;
-                    var5 = var5.bind(var2)(var3);
-                    var5 = var5.constructor;
-                    var4 = arguments;
-                    var0 = var6.bind(var7)(var8, var4, var5);
-                case 105:
-                    var0 = var1.bind(var2)(var3, var0);
+                case 110:
+                    var5 = arguments[var2];
+                    var1[var2] = var5;
+                    var2 = var2 + 1;
+                    if (var2 < var3) {
+                        _fun45173_ip = 110;
+                        continue _fun45173
+                    }
+                case 125:
+                    var0.gestures = var1;
                     return var0;
             }
         };
         var _closure2_slot0 = var3;
-        var4 = _closure1_slot8;
+        var4 = _closure1_slot6;
         var2 = undefined;
         var1 = arg0;
         var1 = var4.bind(var2)(var3, var1);
-        var1 = _closure1_slot5;
+        var1 = _closure1_slot3;
         var4 = {};
-        var0 = 'getExtraButtonProps';
+        var0 = 'prepareSingleGesture';
         var4.key = var0;
-        var0 = function() {
-            _fun45167: for (var _fun45167_ip = 0;;) switch (_fun45167_ip) {
+        var0 = function arg0, arg1, arg2() {
+            _fun45174: for (var _fun45174_ip = 0;;) switch (_fun45174_ip) {
                 case 0:
-                    var1 = this;
-                    var0 = {};
-                    var2 = var1.props;
-                    var2 = var2.background;
-                    if (!var2) {
-                        _fun45167_ip = 108;
-                        continue _fun45167
+                    var2 = arg0;
+                    var6 = arg1;
+                    var5 = arg2;
+                    var4 = _closure1_slot0;
+                    var1 = _closure1_slot1;
+                    var0 = 6;
+                    var1 = var1[var0];
+                    var0 = undefined;
+                    var1 = var4.bind(var0)(var1);
+                    var1 = var1.BaseGesture;
+                    var1 = var2 instanceof var1;
+                    if (var1) {
+                        _fun45174_ip = 85;
+                        continue _fun45174
                     }
-                case 19:
-                    var4 = var2.type;
-                    var3 = 'RippleAndroid';
-                    if (!(var3 !== var4)) {
-                        _fun45167_ip = 73;
-                        continue _fun45167
+                case 47:
+                    var1 = _closure2_slot0;
+                    var1 = var2 instanceof var1;
+                    if (!var1) {
+                        _fun45174_ip = 157;
+                        continue _fun45174
                     }
-                case 34:
-                    var4 = var2.type;
-                    var3 = 'ThemeAttrAndroid';
-                    if (!(var3 === var4)) {
-                        _fun45167_ip = 96;
-                        continue _fun45167
-                    }
-                case 49:
-                    var4 = var2.attribute;
-                    var3 = 'selectableItemBackgroundBorderless';
-                    var3 = var3 === var4;
-                    var0.borderless = var3;
-                    _fun45167_ip = 96;
-                    continue _fun45167;
-                case 73:
-                    var3 = var2.borderless;
-                    var0.borderless = var3;
-                    var3 = var2.color;
-                    var0.rippleColor = var3;
-                case 96:
-                    var2 = var2.rippleRadius;
-                    var0.rippleRadius = var2;
-                case 108:
-                    var1 = var1.props;
-                    var1 = var1.useForeground;
-                    var0.foreground = var1;
+                case 61:
+                    var2.simultaneousGestures = var6;
+                    var2.requireGesturesToFail = var5;
+                    var1 = var2.prepare;
+                    var1 = var1.bind(var2)();
+                    _fun45174_ip = 157;
+                    continue _fun45174;
+                case 85:
+                    var1 = global;
+                    var8 = var1.Object;
+                    var7 = var8.assign;
+                    var4 = var2.config;
+                    var1 = {};
+                    var1 = var7.bind(var8)(var1, var4);
+                    var4 = _closure1_slot10;
+                    var3 = var1.simultaneousWith;
+                    var3 = var4.bind(var0)(var3, var6);
+                    var1.simultaneousWith = var3;
+                    var3 = var1.requireToFail;
+                    var3 = var4.bind(var0)(var3, var5);
+                    var1.requireToFail = var3;
+                    var2.config = var1;
+                case 157:
                     return var0;
             }
         };
         var4.value = var0;
-        var0 = new Array(2);
+        var0 = new Array(4);
         var0[0] = var4;
         var4 = {};
-        var6 = 'render';
+        var6 = 'prepare';
         var4.key = var6;
-        var5 = function() {
-            _fun45168: for (var _fun45168_ip = 0;;) switch (_fun45168_ip) {
+        var6 = function() {
+            _fun45175: for (var _fun45175_ip = 0;;) switch (_fun45175_ip) {
                 case 0:
-                    var8 = this;
-                    var5 = var8.props;
-                    var0 = var5.style;
-                    var3 = undefined;
-                    if (!(var3 === var0)) {
-                        _fun45168_ip = 21;
-                        continue _fun45168
+                    var3 = this;
+                    var0 = var3.gestures;
+                    var1 = var0;
+                    var2 = var1[Symbol.iterator];
+                    var1 = var2().next;
+                    var0 = undefined;
+                case 17:
+                    var7 = var1().value;
+                    var4 = var2;
+                    if (!(var4 !== var0)) {
+                        _fun45175_ip = 62;
+                        continue _fun45175
                     }
-                case 19:
-                    var0 = {};
-                case 21:
-                    var4 = _closure1_slot3;
-                    var2 = _closure1_slot2;
-                    var7 = var4.bind(var3)(var5, var2);
-                    var2 = _closure1_slot10;
-                    var4 = _closure1_slot0;
-                    var5 = _closure1_slot1;
-                    var1 = 9;
-                    var1 = var5[var1];
-                    var1 = var4.bind(var3)(var1);
-                    var4 = global;
-                    var6 = var4.Object;
-                    var5 = var6.assign;
-                    var4 = {};
-                    var4.style = var0;
-                    var0 = var8.getExtraButtonProps;
-                    var0 = var0.bind(var8)();
-                    var4.extraButtonProps = var0;
-                    var0 = {};
-                    var0 = var5.bind(var6)(var0, var7, var4);
-                    var0 = var2.bind(var3)(var1, var0);
+                case 28: // try_start_0
+                    var6 = var3.prepareSingleGesture;
+                    var5 = var3.simultaneousGestures;
+                    var4 = var3.requireGesturesToFail;
+                    var4 = var6.bind(var3)(var7, var5, var4);
+                case 53: // try_end0
+                    _fun45175_ip = 17;
+                    continue _fun45175;
+                case 55: // catch_target0
+                    CatchBlockStart(arg_register = 1);
+                    var2.return();
+                    throw var1;
+                case 62:
                     return var0;
             }
         };
-        var4.value = var5;
+        var4.value = var6;
         var0[1] = var4;
+        var4 = {};
+        var6 = 'initialize';
+        var4.key = var6;
+        var6 = function() {
+            _fun45176: for (var _fun45176_ip = 0;;) switch (_fun45176_ip) {
+                case 0:
+                    var0 = this;
+                    var0 = var0.gestures;
+                    var1 = var0;
+                    var2 = var1[Symbol.iterator];
+                    var1 = var2().next;
+                    var0 = undefined;
+                case 17:
+                    var4 = var1().value;
+                    var3 = var2;
+                    if (!(var3 !== var0)) {
+                        _fun45176_ip = 47;
+                        continue _fun45176
+                    }
+                case 28: // try_start_0
+                    var3 = var4.initialize;
+                    var3 = var3.bind(var4)();
+                case 38: // try_end0
+                    _fun45176_ip = 17;
+                    continue _fun45176;
+                case 40: // catch_target0
+                    CatchBlockStart(arg_register = 1);
+                    var2.return();
+                    throw var1;
+                case 47:
+                    return var0;
+            }
+        };
+        var4.value = var6;
+        var0[2] = var4;
+        var4 = {};
+        var6 = 'toGestureArray';
+        var4.key = var6;
+        var5 = function() {
+            var0 = this;
+            var2 = var0.gestures;
+            var1 = var2.flatMap;
+            var0 = function(arg0) { // Environment: var0
+                var1 = arg0;
+                var0 = var1.toGestureArray;
+                var0 = var0.bind(var1)();
+                return var0;
+            };
+            var0 = var1.bind(var2)(var0);
+            return var0;
+        };
+        var4.value = var5;
+        var0[3] = var4;
         var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var1 = var1.bind(var0)(var7);
-    var8 = var5.Object;
-    var7 = var8.assign;
-    var5 = 9;
-    var5 = var9[var5];
-    var5 = var6.bind(var0)(var5);
-    var6 = var5.defaultProps;
-    var5 = {};
-    var5.useForeground = var4;
-    var4 = {};
-    var9 = null;
-    var4.rippleColor = var9;
-    var5.extraButtonProps = var4;
-    var4 = {};
-    var4 = var7.bind(var8)(var4, var6, var5);
-    var1.defaultProps = var4;
-    var4 = function(arg0) { // Environment: var3
-        var0 = {
-            'type': 'ThemeAttrAndroid',
-            'attribute': 'selectableItemBackground'
+    var4 = var3.bind(var0)(var4);
+    var3 = function(arg0) { // Environment: var1
+        var3 = function() {
+            var4 = this;
+            var3 = undefined;
+            var0 = undefined;
+            var5 = _closure1_slot2;
+            var2 = _closure2_slot0;
+            var5 = var5.bind(var3)(var4, var2);
+            var1 = _closure1_slot8;
+            var0 = arguments;
+            var0 = var1.bind(var3)(var4, var2, var0);
+            return var0;
         };
-        var1 = arg0;
-        var0.rippleRadius = var1;
-        return var0;
-    };
-    var1.SelectableBackground = var4;
-    var4 = function(arg0) { // Environment: var3
-        var0 = {
-            'type': 'ThemeAttrAndroid',
-            'attribute': 'selectableItemBackgroundBorderless'
+        var _closure2_slot0 = var3;
+        var5 = _closure1_slot6;
+        var2 = undefined;
+        var4 = arg0;
+        var4 = var5.bind(var2)(var3, var4);
+        var1 = _closure1_slot3;
+        var4 = {};
+        var5 = 'prepare';
+        var4.key = var5;
+        var0 = function() {
+            _fun45181: for (var _fun45181_ip = 0;;) switch (_fun45181_ip) {
+                case 0:
+                    var3 = this;
+                    var _closure3_slot0 = var3;
+                    var2 = var3.gestures;
+                    var1 = var2.map;
+                    var0 = function(arg0) { // Environment: var0
+                        var1 = arg0;
+                        var _closure4_slot0 = var1;
+                        var1 = _closure3_slot0;
+                        var3 = var1.gestures;
+                        var2 = var3.filter;
+                        var1 = function(arg0) { // Environment: var0
+                            var1 = _closure4_slot0;
+                            var0 = arg0;
+                            var0 = var0 !== var1;
+                            return var0;
+                        };
+                        var2 = var2.bind(var3)(var1);
+                        var1 = var2.flatMap;
+                        var0 = function(arg0) { // Environment: var0
+                            var1 = arg0;
+                            var0 = var1.toGestureArray;
+                            var0 = var0.bind(var1)();
+                            return var0;
+                        };
+                        var0 = var1.bind(var2)(var0);
+                        return var0;
+                    };
+                    var2 = var1.bind(var2)(var0);
+                    var0 = var3.gestures;
+                    var0 = var0.length;
+                    var1 = 0;
+                    var0 = var1 < var0;
+                    if (!var0) {
+                        _fun45181_ip = 101;
+                        continue _fun45181
+                    }
+                case 50:
+                    var6 = var3.prepareSingleGesture;
+                    var0 = var3.gestures;
+                    var5 = var0[var1];
+                    var4 = var2[var1];
+                    var0 = var3.requireGesturesToFail;
+                    var0 = var6.bind(var3)(var5, var4, var0);
+                    var1 = var1 + 1;
+                    var0 = var3.gestures;
+                    var0 = var0.length;
+                    if (var1 < var0) {
+                        _fun45181_ip = 50;
+                        continue _fun45181
+                    }
+                case 101:
+                    var0 = undefined;
+                    return var0;
+            }
         };
-        var1 = arg0;
-        var0.rippleRadius = var1;
+        var4.value = var0;
+        var0 = new Array(1);
+        var0[0] = var4;
+        var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var1.SelectableBackgroundBorderless = var4;
-    var4 = function(arg0, arg1, arg2) { // Environment: var3
-        var0 = {};
-        var1 = 'RippleAndroid';
-        var0.type = var1;
-        var1 = arg0;
-        var0.color = var1;
-        var1 = arg1;
-        var0.borderless = var1;
-        var1 = arg2;
-        var0.rippleRadius = var1;
+    var3 = var3.bind(var0)(var4);
+    var1 = function(arg0) { // Environment: var1
+        var3 = function() {
+            var4 = this;
+            var3 = undefined;
+            var0 = undefined;
+            var5 = _closure1_slot2;
+            var2 = _closure2_slot0;
+            var5 = var5.bind(var3)(var4, var2);
+            var1 = _closure1_slot8;
+            var0 = arguments;
+            var0 = var1.bind(var3)(var4, var2, var0);
+            return var0;
+        };
+        var _closure2_slot0 = var3;
+        var5 = _closure1_slot6;
+        var2 = undefined;
+        var4 = arg0;
+        var4 = var5.bind(var2)(var3, var4);
+        var1 = _closure1_slot3;
+        var4 = {};
+        var5 = 'prepare';
+        var4.key = var5;
+        var0 = function() {
+            _fun45187: for (var _fun45187_ip = 0;;) switch (_fun45187_ip) {
+                case 0:
+                    var4 = this;
+                    var2 = var4.gestures;
+                    var1 = var2.map;
+                    var0 = function(arg0) { // Environment: var0
+                        var1 = arg0;
+                        var0 = var1.toGestureArray;
+                        var0 = var0.bind(var1)();
+                        return var0;
+                    };
+                    var3 = var1.bind(var2)(var0);
+                    var2 = new Array(0);
+                    var0 = var4.gestures;
+                    var0 = var0.length;
+                    var1 = 0;
+                    var0 = var1 < var0;
+                    if (!var0) {
+                        _fun45187_ip = 127;
+                        continue _fun45187
+                    }
+                case 50:
+                    var7 = var4.prepareSingleGesture;
+                    var0 = var4.gestures;
+                    var6 = var0[var1];
+                    var5 = var4.simultaneousGestures;
+                    var8 = var4.requireGesturesToFail;
+                    var0 = var8.concat;
+                    var0 = var0.bind(var8)(var2);
+                    var0 = var7.bind(var4)(var6, var5, var0);
+                    var5 = var2.concat;
+                    var0 = var3[var1];
+                    var2 = var5.bind(var2)(var0);
+                    var1 = var1 + 1;
+                    var0 = var4.gestures;
+                    var0 = var0.length;
+                    if (var1 < var0) {
+                        _fun45187_ip = 50;
+                        continue _fun45187
+                    }
+                case 127:
+                    var0 = undefined;
+                    return var0;
+            }
+        };
+        var4.value = var0;
+        var0 = new Array(1);
+        var0[0] = var4;
+        var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var1.Ripple = var4;
-    var3 = function() { // Environment: var3
-        var0 = _closure1_slot9;
-        var1 = var0.Version;
-        var0 = 23;
-        var0 = var1 >= var0;
-        return var0;
-    };
-    var1.canUseNativeForeground = var3;
-    var2.default = var1;
+    var1 = var1.bind(var0)(var4);
+    var2.ComposedGesture = var4;
+    var2.SimultaneousGesture = var3;
+    var2.ExclusiveGesture = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 6, 7, 15, 17, 18, 27, 31, 33, 5023]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 65, 5000]);

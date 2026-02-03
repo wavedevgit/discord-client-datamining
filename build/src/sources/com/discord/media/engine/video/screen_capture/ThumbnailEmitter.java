@@ -90,10 +90,10 @@ public final class ThumbnailEmitter {
         int i11 = this.height;
         if (rotatedWidth / rotatedHeight < i10 / i11) {
             float f10 = rotatedWidth * (i11 / rotatedHeight);
-            this.frameDrawer.drawFrame(videoFrame, this.rectDrawer, renderMatrix, yr.a.c((i10 - f10) / 2.0f), 0, yr.a.c(f10), this.height);
+            this.frameDrawer.drawFrame(videoFrame, this.rectDrawer, renderMatrix, as.a.c((i10 - f10) / 2.0f), 0, as.a.c(f10), this.height);
         } else {
             float f11 = rotatedHeight * (i10 / rotatedWidth);
-            this.frameDrawer.drawFrame(videoFrame, this.rectDrawer, renderMatrix, 0, yr.a.c((i11 - f11) / 2.0f), this.width, yr.a.c(f11));
+            this.frameDrawer.drawFrame(videoFrame, this.rectDrawer, renderMatrix, 0, as.a.c((i11 - f11) / 2.0f), this.width, as.a.c(f11));
         }
         this.outputByteBuffer.rewind();
         GLES20.glReadPixels(0, 0, glTextureFrameBuffer.getWidth(), glTextureFrameBuffer.getHeight(), 6408, 5121, this.outputByteBuffer);

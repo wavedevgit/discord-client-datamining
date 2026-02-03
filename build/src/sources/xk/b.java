@@ -5,14 +5,14 @@ import xk.j;
 final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f53627a;
+    private final int f53348a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final byte[] f53628b;
+    private final byte[] f53349b;
 
     private b(int i10, byte[] bArr) {
-        this.f53627a = i10;
-        this.f53628b = bArr;
+        this.f53348a = i10;
+        this.f53349b = bArr;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -36,9 +36,9 @@ final class b {
                     i12++;
                 }
             }
-            int length = bVarArr[0].f53628b.length;
+            int length = bVarArr[0].f53349b.length;
             int i14 = i11 - 1;
-            while (i14 >= 0 && bVarArr[i14].f53628b.length != length) {
+            while (i14 >= 0 && bVarArr[i14].f53349b.length != length) {
                 i14--;
             }
             int i15 = i14 + 1;
@@ -47,18 +47,18 @@ final class b {
             for (int i17 = 0; i17 < b11; i17++) {
                 int i18 = 0;
                 while (i18 < i12) {
-                    bVarArr[i18].f53628b[i17] = bArr[i16];
+                    bVarArr[i18].f53349b[i17] = bArr[i16];
                     i18++;
                     i16++;
                 }
             }
             int i19 = i15;
             while (i19 < i12) {
-                bVarArr[i19].f53628b[b11] = bArr[i16];
+                bVarArr[i19].f53349b[b11] = bArr[i16];
                 i19++;
                 i16++;
             }
-            int length2 = bVarArr[0].f53628b.length;
+            int length2 = bVarArr[0].f53349b.length;
             while (b11 < length2) {
                 int i20 = 0;
                 while (i20 < i12) {
@@ -67,7 +67,7 @@ final class b {
                     } else {
                         i10 = b11 + 1;
                     }
-                    bVarArr[i20].f53628b[i10] = bArr[i16];
+                    bVarArr[i20].f53349b[i10] = bArr[i16];
                     i20++;
                     i16++;
                 }
@@ -80,11 +80,11 @@ final class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public byte[] a() {
-        return this.f53628b;
+        return this.f53349b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int c() {
-        return this.f53627a;
+        return this.f53348a;
     }
 }

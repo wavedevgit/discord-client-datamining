@@ -10,29 +10,29 @@ import kotlin.Metadata;
 public final class AuthorizeWebRtcResponse {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f20485a;
+    private final String f19467a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f20486b;
+    private final String f19468b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f20487c;
+    private final String f19469c;
 
     public AuthorizeWebRtcResponse(String str, String str2, @g(name = "server_url") String str3) {
-        this.f20485a = str;
-        this.f20486b = str2;
-        this.f20487c = str3;
+        this.f19467a = str;
+        this.f19468b = str2;
+        this.f19469c = str3;
     }
 
     public final String a() {
-        return this.f20486b;
+        return this.f19468b;
     }
 
     public final String b() {
-        return this.f20487c;
+        return this.f19469c;
     }
 
     public final String c() {
-        return this.f20485a;
+        return this.f19467a;
     }
 }

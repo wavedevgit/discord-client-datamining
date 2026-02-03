@@ -13,31 +13,31 @@ import oh.n;
 public class a extends Drawable implements n {
 
     /* renamed from: d  reason: collision with root package name */
-    private b f39058d;
+    private b f38855d;
 
     @Override // android.graphics.drawable.Drawable
     /* renamed from: a */
     public a mutate() {
-        this.f39058d = new b(this.f39058d);
+        this.f38855d = new b(this.f38855d);
         return this;
     }
 
     @Override // android.graphics.drawable.Drawable
     public void draw(Canvas canvas) {
-        b bVar = this.f39058d;
-        if (bVar.f39060b) {
-            bVar.f39059a.draw(canvas);
+        b bVar = this.f38855d;
+        if (bVar.f38857b) {
+            bVar.f38856a.draw(canvas);
         }
     }
 
     @Override // android.graphics.drawable.Drawable
     public Drawable.ConstantState getConstantState() {
-        return this.f39058d;
+        return this.f38855d;
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getOpacity() {
-        return this.f39058d.f39059a.getOpacity();
+        return this.f38855d.f38856a.getOpacity();
     }
 
     @Override // android.graphics.drawable.Drawable
@@ -48,19 +48,19 @@ public class a extends Drawable implements n {
     @Override // android.graphics.drawable.Drawable
     protected void onBoundsChange(Rect rect) {
         super.onBoundsChange(rect);
-        this.f39058d.f39059a.setBounds(rect);
+        this.f38855d.f38856a.setBounds(rect);
     }
 
     @Override // android.graphics.drawable.Drawable
     protected boolean onStateChange(int[] iArr) {
         boolean onStateChange = super.onStateChange(iArr);
-        if (this.f39058d.f39059a.setState(iArr)) {
+        if (this.f38855d.f38856a.setState(iArr)) {
             onStateChange = true;
         }
         boolean b10 = mh.b.b(iArr);
-        b bVar = this.f39058d;
-        if (bVar.f39060b != b10) {
-            bVar.f39060b = b10;
+        b bVar = this.f38855d;
+        if (bVar.f38857b != b10) {
+            bVar.f38857b = b10;
             return true;
         }
         return onStateChange;
@@ -68,32 +68,32 @@ public class a extends Drawable implements n {
 
     @Override // android.graphics.drawable.Drawable
     public void setAlpha(int i10) {
-        this.f39058d.f39059a.setAlpha(i10);
+        this.f38855d.f38856a.setAlpha(i10);
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setColorFilter(ColorFilter colorFilter) {
-        this.f39058d.f39059a.setColorFilter(colorFilter);
+        this.f38855d.f38856a.setColorFilter(colorFilter);
     }
 
     @Override // oh.n
     public void setShapeAppearanceModel(k kVar) {
-        this.f39058d.f39059a.setShapeAppearanceModel(kVar);
+        this.f38855d.f38856a.setShapeAppearanceModel(kVar);
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setTint(int i10) {
-        this.f39058d.f39059a.setTint(i10);
+        this.f38855d.f38856a.setTint(i10);
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setTintList(ColorStateList colorStateList) {
-        this.f39058d.f39059a.setTintList(colorStateList);
+        this.f38855d.f38856a.setTintList(colorStateList);
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setTintMode(PorterDuff.Mode mode) {
-        this.f39058d.f39059a.setTintMode(mode);
+        this.f38855d.f38856a.setTintMode(mode);
     }
 
     public a(k kVar) {
@@ -105,14 +105,14 @@ public class a extends Drawable implements n {
     public static final class b extends Drawable.ConstantState {
 
         /* renamed from: a  reason: collision with root package name */
-        g f39059a;
+        g f38856a;
 
         /* renamed from: b  reason: collision with root package name */
-        boolean f39060b;
+        boolean f38857b;
 
         public b(g gVar) {
-            this.f39059a = gVar;
-            this.f39060b = false;
+            this.f38856a = gVar;
+            this.f38857b = false;
         }
 
         @Override // android.graphics.drawable.Drawable.ConstantState
@@ -127,12 +127,12 @@ public class a extends Drawable implements n {
         }
 
         public b(b bVar) {
-            this.f39059a = (g) bVar.f39059a.getConstantState().newDrawable();
-            this.f39060b = bVar.f39060b;
+            this.f38856a = (g) bVar.f38856a.getConstantState().newDrawable();
+            this.f38857b = bVar.f38857b;
         }
     }
 
     private a(b bVar) {
-        this.f39058d = bVar;
+        this.f38855d = bVar;
     }
 }

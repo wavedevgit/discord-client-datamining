@@ -3,17 +3,17 @@ package th;
 final class s0 extends l0 {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ t0 f49864e;
+    final /* synthetic */ t0 f50075e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public s0(t0 t0Var) {
-        this.f49864e = t0Var;
+        this.f50075e = t0Var;
     }
 
     @Override // th.l0
     public final void a() {
-        v0.s(this.f49864e.f49865d);
-        this.f49864e.f49865d.f49880m = null;
-        this.f49864e.f49865d.f49874g = false;
+        v0.s(this.f50075e.f50076d);
+        this.f50075e.f50076d.f50091m = null;
+        this.f50075e.f50076d.f50085g = false;
     }
 }

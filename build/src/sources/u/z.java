@@ -11,22 +11,22 @@ import java.util.Map;
 public class z {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f50049a;
+    private final boolean f50336a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f50050b;
+    private final boolean f50337b;
 
     public z(d2 d2Var) {
-        this.f50049a = CaptureIntentPreviewQuirk.b(d2Var);
-        this.f50050b = d2Var.a(ImageCaptureFailedForVideoSnapshotQuirk.class);
+        this.f50336a = CaptureIntentPreviewQuirk.b(d2Var);
+        this.f50337b = d2Var.a(ImageCaptureFailedForVideoSnapshotQuirk.class);
     }
 
     public Map a(int i10) {
-        if (i10 == 3 && this.f50049a) {
+        if (i10 == 3 && this.f50336a) {
             HashMap hashMap = new HashMap();
             hashMap.put(CaptureRequest.CONTROL_CAPTURE_INTENT, 1);
             return Collections.unmodifiableMap(hashMap);
-        } else if (i10 == 4 && this.f50050b) {
+        } else if (i10 == 4 && this.f50337b) {
             HashMap hashMap2 = new HashMap();
             hashMap2.put(CaptureRequest.CONTROL_CAPTURE_INTENT, 2);
             return Collections.unmodifiableMap(hashMap2);

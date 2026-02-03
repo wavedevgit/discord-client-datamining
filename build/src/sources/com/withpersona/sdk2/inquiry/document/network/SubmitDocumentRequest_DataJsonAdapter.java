@@ -15,22 +15,22 @@ import org.jetbrains.annotations.NotNull;
 public final class SubmitDocumentRequest_DataJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19145a;
+    private final m.b f18127a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19146b;
+    private final h f18128b;
 
     /* renamed from: c  reason: collision with root package name */
-    private volatile Constructor f19147c;
+    private volatile Constructor f18129c;
 
     public SubmitDocumentRequest_DataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("type");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19145a = a10;
+        this.f18127a = a10;
         h f10 = moshi.f(String.class, x0.d(), "type");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19146b = f10;
+        this.f18128b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -41,20 +41,20 @@ public final class SubmitDocumentRequest_DataJsonAdapter extends h {
         String str = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.f19145a);
-            if (t02 != -1) {
-                if (t02 == 0) {
-                    str = (String) this.f19146b.fromJson(reader);
+            int A0 = reader.A0(this.f18127a);
+            if (A0 != -1) {
+                if (A0 == 0) {
+                    str = (String) this.f18128b.fromJson(reader);
                     if (str != null) {
                         i10 = -2;
                     } else {
-                        throw tm.c.x("type", "type", reader);
+                        throw vm.c.x("type", "type", reader);
                     }
                 } else {
                     continue;
                 }
             } else {
-                reader.F0();
+                reader.E0();
                 reader.P();
             }
         }
@@ -63,10 +63,10 @@ public final class SubmitDocumentRequest_DataJsonAdapter extends h {
             Intrinsics.checkNotNull(str, "null cannot be cast to non-null type kotlin.String");
             return new SubmitDocumentRequest.Data(str);
         }
-        Constructor constructor = this.f19147c;
+        Constructor constructor = this.f18129c;
         if (constructor == null) {
-            constructor = SubmitDocumentRequest.Data.class.getDeclaredConstructor(String.class, Integer.TYPE, tm.c.f49935c);
-            this.f19147c = constructor;
+            constructor = SubmitDocumentRequest.Data.class.getDeclaredConstructor(String.class, Integer.TYPE, vm.c.f51691c);
+            this.f18129c = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
         Object newInstance = constructor.newInstance(str, Integer.valueOf(i10), null);
@@ -80,8 +80,8 @@ public final class SubmitDocumentRequest_DataJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (data != null) {
             writer.l();
-            writer.t0("type");
-            this.f19146b.toJson(writer, data.a());
+            writer.A0("type");
+            this.f18128b.toJson(writer, data.a());
             writer.E();
             return;
         }

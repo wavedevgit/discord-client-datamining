@@ -1,64 +1,44 @@
 package us;
 
-import java.util.List;
-import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
+import us.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c implements s {
+public interface c extends o.a {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final o f50638a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final List f50639b;
-
-    public c(o mainFormat, List formats) {
-        Intrinsics.checkNotNullParameter(mainFormat, "mainFormat");
-        Intrinsics.checkNotNullParameter(formats, "formats");
-        this.f50638a = mainFormat;
-        this.f50639b = formats;
-    }
-
-    @Override // us.o
-    public vs.e a() {
-        return this.f50638a.a();
-    }
-
-    @Override // us.o
-    public ws.q b() {
-        List l10 = CollectionsKt.l();
-        List c10 = CollectionsKt.c();
-        c10.add(this.f50638a.b());
-        for (o oVar : this.f50639b) {
-            c10.add(oVar.b());
-        }
-        return new ws.q(l10, CollectionsKt.a(c10));
-    }
-
-    public final List c() {
-        return this.f50639b;
-    }
-
-    public final o d() {
-        return this.f50638a;
-    }
-
-    public boolean equals(Object obj) {
-        if (obj instanceof c) {
-            c cVar = (c) obj;
-            if (Intrinsics.areEqual(this.f50638a, cVar.f50638a) && Intrinsics.areEqual(this.f50639b, cVar.f50639b)) {
-                return true;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public static void a(c cVar, n format) {
+            Intrinsics.checkNotNullParameter(format, "format");
+            if (format instanceof y) {
+                cVar.h(((y) format).b());
             }
-            return false;
         }
-        return false;
+
+        public static void b(c cVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            cVar.h(new ws.e(new q(padding)));
+        }
+
+        public static void c(c cVar, s names) {
+            Intrinsics.checkNotNullParameter(names, "names");
+            cVar.h(new ws.e(new r(names)));
+        }
+
+        public static void d(c cVar, f0 names) {
+            Intrinsics.checkNotNullParameter(names, "names");
+            cVar.h(new ws.e(new e0(names)));
+        }
+
+        public static void e(c cVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            cVar.h(new ws.e(new d0(padding)));
+        }
+
+        public static void f(c cVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            cVar.h(new ws.e(new t0(padding, false, 2, null)));
+        }
     }
 
-    public int hashCode() {
-        return (this.f50638a.hashCode() * 31) + this.f50639b.hashCode();
-    }
-
-    public String toString() {
-        return "AlternativesParsing(" + this.f50639b + ')';
-    }
+    void h(ws.o oVar);
 }

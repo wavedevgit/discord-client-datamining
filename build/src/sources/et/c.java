@@ -1,7 +1,9 @@
 package et;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+@Retention(RetentionPolicy.RUNTIME)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class c {
-    public static final b a() {
-        return e.a();
-    }
+public @interface c {
+    String discriminator();
 }

@@ -13,10 +13,10 @@ import o8.j;
 public class GifImage implements c, ha.c {
 
     /* renamed from: b  reason: collision with root package name */
-    private static volatile boolean f10557b;
+    private static volatile boolean f9525b;
 
     /* renamed from: a  reason: collision with root package name */
-    private Bitmap.Config f10558a = null;
+    private Bitmap.Config f9526a = null;
     @d
     private long mNativeContext;
 
@@ -27,8 +27,8 @@ public class GifImage implements c, ha.c {
     public static GifImage f(ByteBuffer byteBuffer, ImageDecodeOptions imageDecodeOptions) {
         h();
         byteBuffer.rewind();
-        GifImage nativeCreateFromDirectByteBuffer = nativeCreateFromDirectByteBuffer(byteBuffer, imageDecodeOptions.f11076b, imageDecodeOptions.f11081g);
-        nativeCreateFromDirectByteBuffer.f10558a = imageDecodeOptions.f11083i;
+        GifImage nativeCreateFromDirectByteBuffer = nativeCreateFromDirectByteBuffer(byteBuffer, imageDecodeOptions.f10044b, imageDecodeOptions.f10049g);
+        nativeCreateFromDirectByteBuffer.f9526a = imageDecodeOptions.f10051i;
         return nativeCreateFromDirectByteBuffer;
     }
 
@@ -41,34 +41,34 @@ public class GifImage implements c, ha.c {
             z10 = false;
         }
         j.b(Boolean.valueOf(z10));
-        GifImage nativeCreateFromNativeMemory = nativeCreateFromNativeMemory(j10, i10, imageDecodeOptions.f11076b, imageDecodeOptions.f11081g);
-        nativeCreateFromNativeMemory.f10558a = imageDecodeOptions.f11083i;
+        GifImage nativeCreateFromNativeMemory = nativeCreateFromNativeMemory(j10, i10, imageDecodeOptions.f10044b, imageDecodeOptions.f10049g);
+        nativeCreateFromNativeMemory.f9526a = imageDecodeOptions.f10051i;
         return nativeCreateFromNativeMemory;
     }
 
     private static synchronized void h() {
         synchronized (GifImage.class) {
-            if (!f10557b) {
-                f10557b = true;
+            if (!f9525b) {
+                f9525b = true;
                 a.d("gifimage");
             }
         }
     }
 
-    private static b.EnumC0350b i(int i10) {
+    private static b.EnumC0336b i(int i10) {
         if (i10 == 0) {
-            return b.EnumC0350b.DISPOSE_DO_NOT;
+            return b.EnumC0336b.DISPOSE_DO_NOT;
         }
         if (i10 == 1) {
-            return b.EnumC0350b.DISPOSE_DO_NOT;
+            return b.EnumC0336b.DISPOSE_DO_NOT;
         }
         if (i10 == 2) {
-            return b.EnumC0350b.DISPOSE_TO_BACKGROUND;
+            return b.EnumC0336b.DISPOSE_TO_BACKGROUND;
         }
         if (i10 == 3) {
-            return b.EnumC0350b.DISPOSE_TO_PREVIOUS;
+            return b.EnumC0336b.DISPOSE_TO_PREVIOUS;
         }
-        return b.EnumC0350b.DISPOSE_DO_NOT;
+        return b.EnumC0336b.DISPOSE_DO_NOT;
     }
 
     @d
@@ -182,7 +182,7 @@ public class GifImage implements c, ha.c {
 
     @Override // ga.c
     public Bitmap.Config v() {
-        return this.f10558a;
+        return this.f9526a;
     }
 
     @Override // ga.c

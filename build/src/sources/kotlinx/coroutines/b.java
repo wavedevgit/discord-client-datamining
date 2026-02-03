@@ -1,11 +1,11 @@
 package kotlinx.coroutines;
 
-import hs.f1;
+import js.f1;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 final class b implements f1 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final b f36086d = new b();
+    public static final b f35476d = new b();
 
     private b() {
     }

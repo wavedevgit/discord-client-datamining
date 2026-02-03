@@ -13,7 +13,7 @@ import timber.log.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class LoggingLineNumberTree extends a.c {
     @NotNull
-    private final List<String> ignoreClasses = CollectionsKt.o(a.class.getName(), a.b.class.getName(), a.c.class.getName(), a.C0650a.class.getName(), LoggingLineNumberTree.class.getName(), Log.class.getName());
+    private final List<String> ignoreClasses = CollectionsKt.o(a.class.getName(), a.b.class.getName(), a.c.class.getName(), a.C0623a.class.getName(), LoggingLineNumberTree.class.getName(), Log.class.getName());
 
     private final StackTraceElement getCalleStackTraceElement() {
         StackTraceElement[] stackTrace = new Throwable().getStackTrace();

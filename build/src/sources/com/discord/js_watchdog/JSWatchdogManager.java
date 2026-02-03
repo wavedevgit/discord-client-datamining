@@ -5,11 +5,11 @@ import com.discord.logging.Log;
 import com.facebook.react.bridge.BaseJavaModule;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.uimanager.ViewProps;
-import hs.g;
-import hs.v0;
 import java.io.File;
 import java.util.Timer;
 import java.util.TimerTask;
+import js.g;
+import js.v0;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.internal.Intrinsics;
@@ -133,7 +133,7 @@ public final class JSWatchdogManager {
         synchronized (this) {
             storage = JSWatchdogStorage.Companion.getInstance(context);
             cacheDir = context.getCacheDir();
-            Unit unit = Unit.f33074a;
+            Unit unit = Unit.f32464a;
         }
     }
 
@@ -141,6 +141,6 @@ public final class JSWatchdogManager {
         Intrinsics.checkNotNullParameter(sessionId, "sessionId");
         Intrinsics.checkNotNullParameter(promise, "promise");
         cancelExistingJobs();
-        pingCoroutineJob = g.d(v0.f27954d, null, null, new JSWatchdogManager$ping$1(z10, j10, promise, sessionId, z11, null), 3, null);
+        pingCoroutineJob = g.d(v0.f31994d, null, null, new JSWatchdogManager$ping$1(z10, j10, promise, sessionId, z11, null), 3, null);
     }
 }

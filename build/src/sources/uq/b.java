@@ -1,35 +1,21 @@
 package uq;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.LinkedHashMap;
-import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class b {
-    private static int a(int i10) {
-        if (i10 < 3) {
-            return i10 + 1;
+    public static float a(float f10, float f11, float f12, float f13) {
+        float f14;
+        float f15 = f10 / (f13 / 2.0f);
+        float f16 = f12 / 2.0f;
+        if (f15 < 1.0f) {
+            f14 = f16 * f15 * f15 * f15;
+        } else {
+            float f17 = f15 - 2.0f;
+            f14 = f16 * ((f17 * f17 * f17) + 2.0f);
         }
-        if (i10 < 1073741824) {
-            return (int) ((i10 / 0.75f) + 1.0f);
-        }
-        return Integer.MAX_VALUE;
+        return f14 + f11;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static HashSet b(int i10) {
-        return new HashSet(a(i10));
-    }
-
-    public static LinkedHashMap c(int i10) {
-        return new LinkedHashMap(a(i10));
-    }
-
-    public static List d(int i10) {
-        if (i10 == 0) {
-            return Collections.EMPTY_LIST;
-        }
-        return new ArrayList(i10);
+    public static float b(float f10, float f11, float f12, float f13) {
+        float f14 = (f10 / f13) - 1.0f;
+        return (f12 * ((f14 * f14 * f14) + 1.0f)) + f11;
     }
 }

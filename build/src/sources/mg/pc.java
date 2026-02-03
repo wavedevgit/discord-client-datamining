@@ -5,7 +5,7 @@ import ui.c;
 final class pc implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final pc f38561a = new pc();
+    static final pc f38358a = new pc();
 
     static {
         c.b a10 = ui.c.a("numSamples");

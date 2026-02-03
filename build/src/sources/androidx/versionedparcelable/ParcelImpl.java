@@ -9,7 +9,7 @@ public class ParcelImpl implements Parcelable {
     public static final Parcelable.Creator<ParcelImpl> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final d4.a f5469d;
+    private final d4.a f5438d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static class a implements Parcelable.Creator {
@@ -30,7 +30,7 @@ public class ParcelImpl implements Parcelable {
     }
 
     protected ParcelImpl(Parcel parcel) {
-        this.f5469d = new b(parcel).u();
+        this.f5438d = new b(parcel).u();
     }
 
     @Override // android.os.Parcelable
@@ -40,6 +40,6 @@ public class ParcelImpl implements Parcelable {
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        new b(parcel).L(this.f5469d);
+        new b(parcel).L(this.f5438d);
     }
 }

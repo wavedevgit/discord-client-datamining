@@ -13,50 +13,50 @@ import p4.x;
 public class c {
 
     /* renamed from: f  reason: collision with root package name */
-    private static final String f5581f = m.i("ConstraintsCmdHandler");
+    private static final String f5550f = m.i("ConstraintsCmdHandler");
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f5582a;
+    private final Context f5551a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final k4.b f5583b;
+    private final k4.b f5552b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f5584c;
+    private final int f5553c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final g f5585d;
+    private final g f5554d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final m4.e f5586e;
+    private final m4.e f5555e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(Context context, k4.b bVar, int i10, g gVar) {
-        this.f5582a = context;
-        this.f5583b = bVar;
-        this.f5584c = i10;
-        this.f5585d = gVar;
-        this.f5586e = new m4.e(gVar.g().o());
+        this.f5551a = context;
+        this.f5552b = bVar;
+        this.f5553c = i10;
+        this.f5554d = gVar;
+        this.f5555e = new m4.e(gVar.g().o());
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void a() {
-        List<u> f10 = this.f5585d.g().p().H().f();
-        ConstraintProxy.a(this.f5582a, f10);
+        List<u> f10 = this.f5554d.g().p().H().f();
+        ConstraintProxy.a(this.f5551a, f10);
         ArrayList<u> arrayList = new ArrayList(f10.size());
-        long a10 = this.f5583b.a();
+        long a10 = this.f5552b.a();
         for (u uVar : f10) {
-            if (a10 >= uVar.c() && (!uVar.k() || this.f5586e.a(uVar))) {
+            if (a10 >= uVar.c() && (!uVar.k() || this.f5555e.a(uVar))) {
                 arrayList.add(uVar);
             }
         }
         for (u uVar2 : arrayList) {
-            String str = uVar2.f45000a;
-            Intent c10 = b.c(this.f5582a, x.a(uVar2));
+            String str = uVar2.f44958a;
+            Intent c10 = b.c(this.f5551a, x.a(uVar2));
             m e10 = m.e();
-            String str2 = f5581f;
+            String str2 = f5550f;
             e10.a(str2, "Creating a delay_met command for workSpec with id (" + str + ")");
-            this.f5585d.f().a().execute(new g.b(this.f5585d, c10, this.f5584c));
+            this.f5554d.f().a().execute(new g.b(this.f5554d, c10, this.f5553c));
         }
     }
 }

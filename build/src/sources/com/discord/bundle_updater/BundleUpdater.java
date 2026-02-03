@@ -16,8 +16,6 @@ import com.discord.shortcuts.ShortcutData;
 import com.discord.shortcuts.ShortcutUtilsKt;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.WritableNativeMap;
-import hs.j1;
-import hs.m0;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -35,7 +33,8 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import javax.net.ssl.SSLException;
-import jr.v;
+import js.j1;
+import js.m0;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Pair;
@@ -54,6 +53,7 @@ import kotlin.time.Duration;
 import kotlin.time.TimeMark;
 import kotlin.time.g;
 import kotlinx.coroutines.CoroutineScope;
+import lr.v;
 import okhttp3.Cookie;
 import okhttp3.CookieJar;
 import okhttp3.Headers;
@@ -411,7 +411,7 @@ public final class BundleUpdater {
             Pair a13 = v.a("bytesReceived", this.bytesReceived);
             Duration duration = this.duration;
             if (duration != null) {
-                d10 = Double.valueOf(Duration.J(duration.O(), fs.b.f25570p));
+                d10 = Double.valueOf(Duration.J(duration.O(), hs.b.f28135p));
             } else {
                 d10 = null;
             }
@@ -462,7 +462,7 @@ public final class BundleUpdater {
         static {
             OtaAssetDownloadAttemptResult[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = qr.a.a($values);
+            $ENTRIES = sr.a.a($values);
         }
 
         private OtaAssetDownloadAttemptResult(String str, int i10, String str2) {
@@ -655,7 +655,7 @@ public final class BundleUpdater {
         @Override // com.discord.bundle_updater.BundleUpdater.OtaMetric
         @NotNull
         public ReadableMap toNativeMap() {
-            return NativeMapExtensionsKt.nativeMapOf(v.a("type", "OtaCheckAttempt"), v.a("result", this.result.getValue()), v.a("durationSeconds", Double.valueOf(Duration.J(this.duration, fs.b.f25570p))), v.a("bytesReceived", Long.valueOf(this.totalBytesReceived)), v.a("error", this.error));
+            return NativeMapExtensionsKt.nativeMapOf(v.a("type", "OtaCheckAttempt"), v.a("result", this.result.getValue()), v.a("durationSeconds", Double.valueOf(Duration.J(this.duration, hs.b.f28135p))), v.a("bytesReceived", Long.valueOf(this.totalBytesReceived)), v.a("error", this.error));
         }
 
         @NotNull
@@ -700,7 +700,7 @@ public final class BundleUpdater {
         static {
             OtaCheckAttemptResult[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = qr.a.a($values);
+            $ENTRIES = sr.a.a($values);
         }
 
         private OtaCheckAttemptResult(String str, int i10, String str2) {
@@ -804,7 +804,7 @@ public final class BundleUpdater {
         this.filesDirectory = file;
         this.assetManager = assetManager;
         this.executor = executorService;
-        this.cookieManager$delegate = jr.l.b(new Function0() { // from class: com.discord.bundle_updater.f
+        this.cookieManager$delegate = lr.l.a(new Function0() { // from class: com.discord.bundle_updater.f
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 CookieManager cookieManager_delegate$lambda$0;
@@ -812,8 +812,8 @@ public final class BundleUpdater {
                 return cookieManager_delegate$lambda$0;
             }
         });
-        this.coroutineScope = kotlinx.coroutines.i.a(m0.c().Z0(j1.b(null, 1, null)));
-        this.client$delegate = jr.l.b(new Function0() { // from class: com.discord.bundle_updater.g
+        this.coroutineScope = kotlinx.coroutines.i.a(m0.c().V0(j1.b(null, 1, null)));
+        this.client$delegate = lr.l.a(new Function0() { // from class: com.discord.bundle_updater.g
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 OkHttpClient client_delegate$lambda$1;
@@ -821,7 +821,7 @@ public final class BundleUpdater {
                 return client_delegate$lambda$1;
             }
         });
-        this.otasRootDirectory$delegate = jr.l.b(new Function0() { // from class: com.discord.bundle_updater.h
+        this.otasRootDirectory$delegate = lr.l.a(new Function0() { // from class: com.discord.bundle_updater.h
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 File otasRootDirectory_delegate$lambda$2;
@@ -830,7 +830,7 @@ public final class BundleUpdater {
             }
         });
         this.otaMetrics = new ArrayList();
-        this.otaCheckTimeMark = g.a.d(kotlin.time.g.f36080a.a());
+        this.otaCheckTimeMark = g.a.d(kotlin.time.g.f35470a.a());
     }
 
     private final OtaCheckAttempt attemptOtaUpdate() {
@@ -915,7 +915,7 @@ public final class BundleUpdater {
         Thread.sleep(i10 * 1000);
         try {
             bundleUpdater.otaMetrics.clear();
-            bundleUpdater.otaCheckTimeMark = g.a.d(kotlin.time.g.f36080a.a());
+            bundleUpdater.otaCheckTimeMark = g.a.d(kotlin.time.g.f35470a.a());
             bundleUpdater.totalBytesReceived = 0L;
             OtaCheckAttempt attemptOtaUpdate = bundleUpdater.attemptOtaUpdate();
             if (function0 != null) {
@@ -947,7 +947,7 @@ public final class BundleUpdater {
         setBundle(null);
         setManifestETag("");
         createOtaCheckAttempt$default(this, OtaCheckAttemptResult.CLEARED, null, 2, null);
-        hs.i.d(this.coroutineScope, null, null, new BundleUpdater$clearBundle$1(context, null), 3, null);
+        js.i.d(this.coroutineScope, null, null, new BundleUpdater$clearBundle$1(context, null), 3, null);
     }
 
     public static final OkHttpClient client_delegate$lambda$1(BundleUpdater bundleUpdater) {
@@ -1016,7 +1016,7 @@ public final class BundleUpdater {
                 if (!kotlin.collections.i.N(strArr, file.getName())) {
                     CrashReporting.addBreadcrumb$default(CrashReporting.INSTANCE, TAG + " - Deleting outdated/unknown OTA at " + file.getName() + "...", null, null, null, false, 30, null);
                     Intrinsics.checkNotNull(file);
-                    ur.j.r(file);
+                    wr.j.r(file);
                 }
             }
         }
@@ -1078,9 +1078,9 @@ public final class BundleUpdater {
                         Intrinsics.checkNotNull(open);
                         assetStatus = assetStatus2;
                         uri = build2;
-                        ur.b.b(open, fileOutputStream, 0, 2, null);
-                        ur.c.a(fileOutputStream, null);
-                        ur.c.a(open, null);
+                        wr.b.b(open, fileOutputStream, 0, 2, null);
+                        wr.c.a(fileOutputStream, null);
+                        wr.c.a(open, null);
                         String uri2 = build.buildUpon().appendEncodedPath(str5).build().toString();
                         Intrinsics.checkNotNullExpressionValue(uri2, "toString(...)");
                         patch2 = new Patch(uri2, otaTempFile, otaTempFile2);
@@ -1169,11 +1169,11 @@ public final class BundleUpdater {
                 Intrinsics.checkNotNullExpressionValue(uri2, "toString(...)");
                 kotlin.c.b(m214downloadSingleFilehUnOzRk$default(bundleUpdater, uri2, null, appManifest.getHashes().get(str3), patch, file, 0, 34, null));
             } else {
-                throw new jr.p();
+                throw new lr.p();
             }
         } else {
             Intrinsics.checkNotNull(str);
-            ur.j.q(bundleUpdater.otaFile(str, str2), file, true, 0, 4, null);
+            wr.j.q(bundleUpdater.otaFile(str, str2), file, true, 0, 4, null);
         }
         bundleUpdater.moveFile(file, file2);
     }
@@ -1287,7 +1287,7 @@ public final class BundleUpdater {
         String y10;
         List L0;
         OtaBundle bundle = getBundle();
-        if (bundle != null && (location = bundle.getLocation()) != null && (y10 = ur.j.y(location, getOtasRootDirectory())) != null && (L0 = StringsKt.L0(y10, new char[]{File.separatorChar}, false, 0, 6, null)) != null) {
+        if (bundle != null && (location = bundle.getLocation()) != null && (y10 = wr.j.y(location, getOtasRootDirectory())) != null && (L0 = StringsKt.L0(y10, new char[]{File.separatorChar}, false, 0, 6, null)) != null) {
             return (String) CollectionsKt.firstOrNull(L0);
         }
         return null;
@@ -1400,7 +1400,7 @@ public final class BundleUpdater {
     }
 
     public final Cookie getBuildOverrideCookie() {
-        return Cookie.f44156j.c(BASE_OTA_URL, getBuildOverrideCookieHeader());
+        return Cookie.f43956j.c(BASE_OTA_URL, getBuildOverrideCookieHeader());
     }
 
     @NotNull

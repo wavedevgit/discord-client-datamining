@@ -46,7 +46,7 @@ public class PackageList {
     }
 
     public ArrayList<ReactPackage> getPackages() {
-        return new ArrayList<>(Arrays.asList(new MainReactPackage(this.mConfig), new d6.c(), new KvStoragePackage(), new LibDiscorePackage(), new RTNCodegenPackage(), new zl.b(), new yl.b(), new am.c(), new com.reactnativecommunity.slider.d(), new dm.j(), new r(), new com.shopify.reactnative.flash_list.f(), new com.airbnb.android.react.lottie.i(), new com.henninghall.date_picker.c(), new com.rnfs.f(), new cn.d(), new iv.a(), new com.mkuczera.a(), new a0(), new xl.d(), new com.imagepicker.e(), new com.reactnativekeyboardcontroller.b(), new com.rnlineargradient.a(), new sl.c(), new com.github.yamill.orientation.d(), new nq.a(), new ReanimatedPackage(), new rm.b(), new com.th3rdwave.safeareacontext.e(), new com.swmansion.rnscreens.s(), new SvgPackage(), new yq.b(), new d1(), new com.rivereactnative.s()));
+        return new ArrayList<>(Arrays.asList(new MainReactPackage(this.mConfig), new d6.c(), new KvStoragePackage(), new LibDiscorePackage(), new RTNCodegenPackage(), new zl.b(), new yl.b(), new am.c(), new com.reactnativecommunity.slider.d(), new dm.j(), new r(), new com.shopify.reactnative.flash_list.f(), new com.airbnb.android.react.lottie.i(), new com.henninghall.date_picker.c(), new com.rnfs.f(), new en.d(), new kv.a(), new com.mkuczera.a(), new a0(), new xl.d(), new com.imagepicker.e(), new com.reactnativekeyboardcontroller.b(), new com.rnlineargradient.a(), new sl.c(), new com.github.yamill.orientation.d(), new pq.a(), new ReanimatedPackage(), new tm.b(), new com.th3rdwave.safeareacontext.e(), new com.swmansion.rnscreens.s(), new SvgPackage(), new ar.b(), new d1(), new com.rivereactnative.s()));
     }
 
     public PackageList(Application application) {

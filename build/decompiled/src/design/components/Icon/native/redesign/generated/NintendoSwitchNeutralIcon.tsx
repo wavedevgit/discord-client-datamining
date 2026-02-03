@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/NintendoSwitchNeutralIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun117999: for (var _fun117999_ip = 0;;) switch (_fun117999_ip) {
+        _fun118089: for (var _fun118089_ip = 0;;) switch (_fun118089_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun117999_ip = 53;
-                    continue _fun117999
+                    _fun118089_ip = 53;
+                    continue _fun118089
                 }
             case 19:
                 var1 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.NintendoSwitchNeutralIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3141, 15041, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3150, 15056, 2]);

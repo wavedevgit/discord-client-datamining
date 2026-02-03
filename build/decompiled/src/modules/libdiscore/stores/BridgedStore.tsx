@@ -22,13 +22,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/libdiscore/stores/BridgedStore.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun91800: for (var _fun91800_ip = 0;;) switch (_fun91800_ip) {
+        _fun17891: for (var _fun17891_ip = 0;;) switch (_fun17891_ip) {
             case 0:
                 var1 = arg0;
                 var0 = 'typescript';
                 if (!(var0 !== var1)) {
-                    _fun91800_ip = 48;
-                    continue _fun91800
+                    _fun17891_ip = 48;
+                    continue _fun17891
                 }
             case 11:
                 var4 = _closure1_slot0;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.hasFluxApi;
                 var2 = var2.bind(var3)();
                 if (!var2) {
-                    _fun91800_ip = 51;
-                    continue _fun91800
+                    _fun17891_ip = 51;
+                    continue _fun17891
                 }
             case 48:
                 var0 = var1;
@@ -51,4 +51,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ensureValidMode = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [11938, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1615, 2]);

@@ -50,13 +50,13 @@ public final class AttributeStyles_ESignatureBackgroundColorStyleJsonAdapter ext
         StyleElements.ComplexElementColor complexElementColor = null;
         StyleElements.SimpleElementColor simpleElementColor = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 complexElementColor = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
             }
         }
@@ -69,9 +69,9 @@ public final class AttributeStyles_ESignatureBackgroundColorStyleJsonAdapter ext
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (eSignatureBackgroundColorStyle != null) {
             writer.l();
-            writer.t0("base");
+            writer.A0("base");
             this.nullableComplexElementColorAdapter.toJson(writer, eSignatureBackgroundColorStyle.getBase());
-            writer.t0("signaturePreview");
+            writer.A0("signaturePreview");
             this.nullableSimpleElementColorAdapter.toJson(writer, eSignatureBackgroundColorStyle.getSignaturePreview());
             writer.E();
             return;

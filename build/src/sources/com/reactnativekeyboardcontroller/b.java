@@ -16,14 +16,14 @@ public final class b extends BaseReactPackage {
     public static final Map b() {
         HashMap hashMap = new HashMap();
         hashMap.put(NativeKeyboardControllerSpec.NAME, new ReactModuleInfo(NativeKeyboardControllerSpec.NAME, NativeKeyboardControllerSpec.NAME, false, false, false, true));
-        hashMap.put(NativeStatusBarManagerCompatSpec.NAME, new ReactModuleInfo(NativeStatusBarManagerCompatSpec.NAME, NativeStatusBarManagerCompatSpec.NAME, false, false, false, true));
+        hashMap.put("StatusBarManager", new ReactModuleInfo("StatusBarManager", "StatusBarManager", true, false, false, true));
         return hashMap;
     }
 
     @Override // com.facebook.react.BaseReactPackage, com.facebook.react.ReactPackage
     public List createViewManagers(ReactApplicationContext reactContext) {
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
-        return CollectionsKt.o(new KeyboardControllerViewManager(reactContext), new KeyboardGestureAreaViewManager(reactContext), new OverKeyboardViewManager(reactContext));
+        return CollectionsKt.o(new KeyboardControllerViewManager(), new KeyboardGestureAreaViewManager(), new OverKeyboardViewManager(), new KeyboardBackgroundViewManager());
     }
 
     @Override // com.facebook.react.BaseReactPackage, com.facebook.react.ReactPackage
@@ -33,7 +33,7 @@ public final class b extends BaseReactPackage {
         if (Intrinsics.areEqual(name, NativeKeyboardControllerSpec.NAME)) {
             return new KeyboardControllerModule(reactContext);
         }
-        if (Intrinsics.areEqual(name, NativeStatusBarManagerCompatSpec.NAME)) {
+        if (Intrinsics.areEqual(name, "StatusBarManager")) {
             return new StatusBarManagerCompatModule(reactContext);
         }
         return null;

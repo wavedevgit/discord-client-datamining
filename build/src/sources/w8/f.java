@@ -16,7 +16,7 @@ import o8.j;
 public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Uri f51831a = Uri.withAppendedPath((Uri) db.a.e(ContactsContract.AUTHORITY_URI), "display_photo");
+    private static final Uri f52053a = Uri.withAppendedPath((Uri) db.a.e(ContactsContract.AUTHORITY_URI), "display_photo");
 
     public static AssetFileDescriptor a(ContentResolver contentResolver, Uri uri) {
         if (m(uri)) {
@@ -121,7 +121,7 @@ public abstract class f {
     }
 
     public static boolean l(Uri uri) {
-        if (uri.getPath() == null || !m(uri) || !"com.android.contacts".equals(uri.getAuthority()) || uri.getPath().startsWith((String) db.a.e(f51831a.getPath()))) {
+        if (uri.getPath() == null || !m(uri) || !"com.android.contacts".equals(uri.getAuthority()) || uri.getPath().startsWith((String) db.a.e(f52053a.getPath()))) {
             return false;
         }
         return true;

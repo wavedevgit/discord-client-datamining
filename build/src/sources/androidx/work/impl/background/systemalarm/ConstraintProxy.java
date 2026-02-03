@@ -13,7 +13,7 @@ import p4.u;
 public abstract class ConstraintProxy extends BroadcastReceiver {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f5564a = m.i("ConstraintProxy");
+    private static final String f5533a = m.i("ConstraintProxy");
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class BatteryChargingProxy extends ConstraintProxy {
@@ -59,7 +59,7 @@ public abstract class ConstraintProxy extends BroadcastReceiver {
         boolean z13 = false;
         boolean z14 = false;
         while (it.hasNext()) {
-            k4.d dVar = ((u) it.next()).f45009j;
+            k4.d dVar = ((u) it.next()).f44967j;
             z11 |= dVar.f();
             z12 |= dVar.g();
             z13 |= dVar.i();
@@ -79,7 +79,7 @@ public abstract class ConstraintProxy extends BroadcastReceiver {
     @Override // android.content.BroadcastReceiver
     public void onReceive(Context context, Intent intent) {
         m e10 = m.e();
-        String str = f5564a;
+        String str = f5533a;
         e10.a(str, "onReceive : " + intent);
         context.startService(b.a(context));
     }

@@ -1,36 +1,8 @@
 package at;
 
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+@Retention(RetentionPolicy.RUNTIME)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class d extends k {
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a extends d {
-
-        /* renamed from: a  reason: collision with root package name */
-        public static final a f6068a = new a();
-
-        private a() {
-            super(null);
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class b extends d {
-
-        /* renamed from: a  reason: collision with root package name */
-        public static final b f6069a = new b();
-
-        private b() {
-            super(null);
-        }
-    }
-
-    public /* synthetic */ d(DefaultConstructorMarker defaultConstructorMarker) {
-        this();
-    }
-
-    private d() {
-        super(null);
-    }
+public @interface d {
 }

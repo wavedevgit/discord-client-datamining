@@ -6,33 +6,33 @@ import android.os.RemoteException;
 final class m extends th.l0 {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ int f16537e;
+    final /* synthetic */ int f15505e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ String f16538i;
+    final /* synthetic */ String f15506i;
 
     /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ String f16539o;
+    final /* synthetic */ String f15507o;
 
     /* renamed from: p  reason: collision with root package name */
-    final /* synthetic */ int f16540p;
+    final /* synthetic */ int f15508p;
 
     /* renamed from: q  reason: collision with root package name */
-    final /* synthetic */ wg.k f16541q;
+    final /* synthetic */ wg.k f15509q;
 
     /* renamed from: r  reason: collision with root package name */
-    final /* synthetic */ x f16542r;
+    final /* synthetic */ x f15510r;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public m(x xVar, wg.k kVar, int i10, String str, String str2, int i11, wg.k kVar2) {
         super(kVar);
-        this.f16537e = i10;
-        this.f16538i = str;
-        this.f16539o = str2;
-        this.f16540p = i11;
-        this.f16541q = kVar2;
-        this.f16542r = xVar;
+        this.f15505e = i10;
+        this.f15506i = str;
+        this.f15507o = str2;
+        this.f15508p = i11;
+        this.f15509q = kVar2;
+        this.f15510r = xVar;
     }
 
     @Override // th.l0
@@ -42,16 +42,16 @@ final class m extends th.l0 {
         String str;
         Bundle h10;
         try {
-            v0Var = this.f16542r.f16724d;
-            str = this.f16542r.f16721a;
-            Bundle l10 = x.l(this.f16537e, this.f16538i, this.f16539o, this.f16540p);
+            v0Var = this.f15510r.f15692d;
+            str = this.f15510r.f15689a;
+            Bundle l10 = x.l(this.f15505e, this.f15506i, this.f15507o, this.f15508p);
             h10 = x.h();
-            ((th.b0) v0Var.e()).r(str, l10, h10, new q(this.f16542r, this.f16541q));
+            ((th.b0) v0Var.e()).r(str, l10, h10, new q(this.f15510r, this.f15509q));
         } catch (RemoteException e10) {
-            String str2 = this.f16538i;
-            k0Var = x.f16719g;
-            k0Var.b("getChunkFileDescriptor(%s, %s, %d, session=%d)", str2, this.f16539o, Integer.valueOf(this.f16540p), Integer.valueOf(this.f16537e));
-            this.f16541q.d(new RuntimeException(e10));
+            String str2 = this.f15506i;
+            k0Var = x.f15687g;
+            k0Var.b("getChunkFileDescriptor(%s, %s, %d, session=%d)", str2, this.f15507o, Integer.valueOf(this.f15508p), Integer.valueOf(this.f15505e));
+            this.f15509q.d(new RuntimeException(e10));
         }
     }
 }

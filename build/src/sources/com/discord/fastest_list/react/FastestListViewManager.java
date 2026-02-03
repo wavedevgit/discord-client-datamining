@@ -22,13 +22,13 @@ import com.facebook.react.uimanager.annotations.ReactProp;
 import com.facebook.react.viewmanagers.FastestListManagerDelegate;
 import com.facebook.react.viewmanagers.FastestListManagerInterface;
 import java.util.Map;
-import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 import kotlin.jvm.internal.SourceDebugExtension;
+import lr.v;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000p\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010%\n\u0002\u0010\u000e\n\u0002\u0010\u0000\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0011\b\u0001\u0018\u0000 82\b\u0012\u0004\u0012\u00020\u00020\u00012\b\u0012\u0004\u0012\u00020\u00020\u0003:\u00018B\u0007¢\u0006\u0004\b\u0004\u0010\u0005J\u0014\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u000e0\fH\u0016J\b\u0010\u000f\u001a\u00020\rH\u0016J$\u0010\u0010\u001a\u001e\u0012\f\u0012\n \b*\u0004\u0018\u00010\u00020\u0002\u0012\f\u0012\n \b*\u0004\u0018\u00010\u00000\u00000\u0007H\u0014J\u0018\u0010\u0011\u001a\u00020\u00022\u0006\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0015H\u0016J\b\u0010\u0016\u001a\u00020\u0017H\u0016J\u0010\u0010\u0018\u001a\n\u0012\u0006\b\u0001\u0012\u00020\u00170\u0019H\u0016J\u0010\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u0002H\u0016J\u0018\u0010\u001d\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u00022\u0006\u0010\u001e\u001a\u00020\u001fH\u0017J\u0018\u0010 \u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u00022\u0006\u0010\u001e\u001a\u00020!H\u0017J\u0018\u0010\"\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u00022\u0006\u0010\u001e\u001a\u00020!H\u0017J\u0018\u0010#\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u00022\u0006\u0010\u001e\u001a\u00020\u001fH\u0017J\u001a\u0010$\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u00022\b\u0010\u001e\u001a\u0004\u0018\u00010%H\u0017J\u001a\u0010&\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u00022\b\u0010\u001e\u001a\u0004\u0018\u00010\rH\u0017J\u0018\u0010'\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u00022\u0006\u0010\u001e\u001a\u00020(H\u0017J\u001a\u0010)\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u00022\b\u0010\u001e\u001a\u0004\u0018\u00010%H\u0017J\u0018\u0010*\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u00022\u0006\u0010\u001e\u001a\u00020\u001fH\u0017J\u0018\u0010+\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u00022\u0006\u0010\u001e\u001a\u00020\u001fH\u0017J\u0010\u0010,\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u0002H\u0014J0\u0010-\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u00022\u0006\u0010.\u001a\u00020(2\u0006\u0010/\u001a\u00020(2\u0006\u00100\u001a\u00020\u001f2\u0006\u00101\u001a\u00020(H\u0016J\u0018\u00102\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u00022\u0006\u00100\u001a\u00020\u001fH\u0016J0\u00103\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u00022\u0006\u00104\u001a\u00020(2\u0006\u00105\u001a\u00020(2\u0006\u00106\u001a\u00020(2\u0006\u00107\u001a\u00020(H\u0016R*\u0010\u0006\u001a\u001e\u0012\f\u0012\n \b*\u0004\u0018\u00010\u00020\u0002\u0012\f\u0012\n \b*\u0004\u0018\u00010\u00000\u00000\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000¨\u00069"}, d2 = {"Lcom/discord/fastest_list/react/FastestListViewManager;", "Lcom/discord/react/utilities/InitialPropsViewGroupManager;", "Lcom/discord/fastest_list/android/FastestListView;", "Lcom/facebook/react/viewmanagers/FastestListManagerInterface;", "<init>", "()V", "delegate", "Lcom/facebook/react/viewmanagers/FastestListManagerDelegate;", "kotlin.jvm.PlatformType", "reactEvents", "Lcom/discord/reactevents/ReactEvents;", "getExportedCustomDirectEventTypeConstants", "", "", "", "getName", "getDelegate", "createViewInstance", "reactContext", "Lcom/facebook/react/uimanager/ThemedReactContext;", "initialProps", "Lcom/facebook/react/uimanager/ReactStylesDiffMap;", "createShadowNodeInstance", "Lcom/facebook/react/uimanager/LayoutShadowNode;", "getShadowNodeClass", "Ljava/lang/Class;", "onDropViewInstance", "", "view", "setHorizontal", "value", "", "setInsetEnd", "", "setInsetStart", "setKeyboardDismissOnDrag", "setPlaceholderConfig", "Lcom/facebook/react/bridge/ReadableMap;", "setRenderAhead", "setScrollEventThrottle", "", "setSectionsVersioned", "setShowsHorizontalScrollIndicator", "setShowsVerticalScrollIndicator", "onAfterUpdateTransaction", "scrollToLocation", "section", "item", "animated", ViewProps.PADDING_START, "scrollToTop", "setPadding", ViewProps.LEFT, ViewProps.TOP, ViewProps.RIGHT, ViewProps.BOTTOM, "Companion", "fastest_list_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @ReactModule(name = FastestListViewManager.NAME)
@@ -79,7 +79,7 @@ public final class FastestListViewManager extends InitialPropsViewGroupManager<F
     public static final Unit createViewInstance$lambda$0(FastestListViewManager fastestListViewManager, FastestListView view, int i10, int i11, int i12, int i13) {
         Intrinsics.checkNotNullParameter(view, "view");
         fastestListViewManager.reactEvents.emitEvent(view, new OnLayoutEvent(SizeUtilsKt.getPxToDp(i10), SizeUtilsKt.getPxToDp(i11), SizeUtilsKt.getPxToDp(i12), SizeUtilsKt.getPxToDp(i13)));
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -87,7 +87,7 @@ public final class FastestListViewManager extends InitialPropsViewGroupManager<F
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(data, "data");
         fastestListViewManager.reactEvents.emitEvent(view, new OnScrollEvent(data));
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -95,7 +95,7 @@ public final class FastestListViewManager extends InitialPropsViewGroupManager<F
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(data, "data");
         fastestListViewManager.reactEvents.emitEvent(view, new OnScrollBeginDragEvent(data));
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -103,7 +103,7 @@ public final class FastestListViewManager extends InitialPropsViewGroupManager<F
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(data, "data");
         fastestListViewManager.reactEvents.emitEvent(view, new OnScrollEndDragEvent(data));
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -111,7 +111,7 @@ public final class FastestListViewManager extends InitialPropsViewGroupManager<F
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(entry, "entry");
         fastestListViewManager.reactEvents.emitEvent(view, new OnUnexpectedItemSizeEvent(entry, i10));
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -119,7 +119,7 @@ public final class FastestListViewManager extends InitialPropsViewGroupManager<F
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(sectionsId, "sectionsId");
         fastestListViewManager.reactEvents.emitEvent(view, new OnVisibleItemsChangedEvent(sectionsId, i10, i11, i12, i13));
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     @Override // com.facebook.react.uimanager.BaseViewManager, com.facebook.react.uimanager.ViewManager

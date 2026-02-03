@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/voice_panel/native/hooks/useSoundboardConfig.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0, arg1() {
-        _fun110633: for (var _fun110633_ip = 0;;) switch (_fun110633_ip) {
+        _fun110693: for (var _fun110693_ip = 0;;) switch (_fun110693_ip) {
             case 0:
                 var6 = arg0;
                 var3 = arg1;
@@ -84,16 +84,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.showInHeader;
                 var0 = {};
                 if (!var5) {
-                    _fun110633_ip = 258;
-                    continue _fun110633
+                    _fun110693_ip = 258;
+                    continue _fun110693
                 }
             case 163:
                 var7 = _closure1_slot5;
                 var7 = var7.VOICE_CONTROLS;
                 var7 = var3 === var7;
                 if (var7) {
-                    _fun110633_ip = 194;
-                    continue _fun110633
+                    _fun110693_ip = 194;
+                    continue _fun110693
                 }
             case 180:
                 var10 = _closure1_slot5;
@@ -101,21 +101,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var3 === var10;
             case 194:
                 if (var7) {
-                    _fun110633_ip = 226;
-                    continue _fun110633
+                    _fun110693_ip = 226;
+                    continue _fun110693
                 }
             case 197:
                 var10 = var8;
                 if (!var8) {
-                    _fun110633_ip = 206;
-                    continue _fun110633
+                    _fun110693_ip = 206;
+                    continue _fun110693
                 }
             case 203:
                 var10 = !var9;
             case 206:
                 if (!var10) {
-                    _fun110633_ip = 223;
-                    continue _fun110633
+                    _fun110693_ip = 223;
+                    continue _fun110693
                 }
             case 209:
                 var11 = _closure1_slot5;
@@ -125,20 +125,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var10;
             case 226:
                 if (var7) {
-                    _fun110633_ip = 255;
-                    continue _fun110633
+                    _fun110693_ip = 255;
+                    continue _fun110693
                 }
             case 229:
                 if (!var8) {
-                    _fun110633_ip = 235;
-                    continue _fun110633
+                    _fun110693_ip = 235;
+                    continue _fun110693
                 }
             case 232:
                 var8 = var9;
             case 235:
                 if (!var8) {
-                    _fun110633_ip = 252;
-                    continue _fun110633
+                    _fun110693_ip = 252;
+                    continue _fun110693
                 }
             case 238:
                 var9 = _closure1_slot5;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[0] = var6;
                 var4[1] = var3;
                 var3 = function() { // Environment: var2
-                    _fun110634: for (var _fun110634_ip = 0;;) switch (_fun110634_ip) {
+                    _fun110694: for (var _fun110694_ip = 0;;) switch (_fun110694_ip) {
                         case 0:
                             var4 = _closure1_slot4;
                             var2 = var4.getChannel;
@@ -164,8 +164,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var2.bind(var4)(var1);
                             var1 = null;
                             if (!(var1 != var4)) {
-                                _fun110634_ip = 78;
-                                continue _fun110634
+                                _fun110694_ip = 78;
+                                continue _fun110694
                             }
                         case 30:
                             var2 = _closure1_slot0;
@@ -214,4 +214,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.SoundboardButtonLocation = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 14210, 3203, 1358, 14234, 8500, 5715, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 14221, 3212, 1358, 14245, 8505, 5720, 2]);

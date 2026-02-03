@@ -21,14 +21,14 @@ import java.util.concurrent.atomic.AtomicIntegerArray;
 public final class v1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Set f30416a = new HashSet();
+    private final Set f30777a = new HashSet();
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f30417b;
+    private final int f30778b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public v1(int i10) {
-        this.f30417b = i10;
+        this.f30778b = i10;
     }
 
     private List a(Collection collection, ILogger iLogger) {
@@ -104,14 +104,14 @@ public final class v1 {
         if (obj.getClass().isEnum()) {
             return obj.toString();
         }
-        if (this.f30416a.contains(obj)) {
+        if (this.f30777a.contains(obj)) {
             iLogger.c(SentryLevel.INFO, "Cyclic reference detected. Calling toString() on object.", new Object[0]);
             return obj.toString();
         }
-        this.f30416a.add(obj);
+        this.f30777a.add(obj);
         try {
-            if (this.f30416a.size() > this.f30417b) {
-                this.f30416a.remove(obj);
+            if (this.f30777a.size() > this.f30778b) {
+                this.f30777a.remove(obj);
                 iLogger.c(SentryLevel.INFO, "Max depth exceeded. Calling toString() on object.", new Object[0]);
                 return obj.toString();
             }
@@ -130,15 +130,15 @@ public final class v1 {
                         obj2 = e10;
                     }
                 }
-                this.f30416a.remove(obj);
+                this.f30777a.remove(obj);
                 return obj2;
             } catch (Exception e11) {
                 iLogger.b(SentryLevel.INFO, "Not serializing object due to throwing sub-path.", e11);
-                this.f30416a.remove(obj);
+                this.f30777a.remove(obj);
                 return null;
             }
         } catch (Throwable th2) {
-            this.f30416a.remove(obj);
+            this.f30777a.remove(obj);
             throw th2;
         }
     }

@@ -6,9 +6,9 @@ import io.sentry.k5;
 public abstract class x {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final k5 f28881a = new l2();
+    private static final k5 f29242a = new l2();
 
     public static j5 a() {
-        return f28881a.now();
+        return f29242a.now();
     }
 }

@@ -17,14 +17,14 @@ public enum lf implements n2 {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f38445d;
+    private final int f38242d;
 
     lf(int i10) {
-        this.f38445d = i10;
+        this.f38242d = i10;
     }
 
     @Override // mg.n2
     public final int zza() {
-        return this.f38445d;
+        return this.f38242d;
     }
 }

@@ -1,136 +1,89 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = metroImportDefault;
+    var5 = require;
     var2 = exports;
-    var4 = dependencyMap;
+    var7 = dependencyMap;
     var0 = global;
-    var6 = var0.Object;
-    var5 = var6.defineProperty;
+    var8 = var0.Object;
+    var6 = var8.defineProperty;
+    var4 = {};
+    var13 = true;
+    var4.value = var13;
+    var1 = '__esModule';
+    var1 = var6.bind(var8)(var2, var1, var4);
     var1 = {};
-    var0 = true;
-    var1.value = var0;
-    var0 = '__esModule';
-    var0 = var5.bind(var6)(var2, var0, var1);
+    var6 = 'RNSVGUse';
+    var1.uiViewClassName = var6;
+    var4 = {};
+    var8 = {};
+    var9 = 'onSvgLayout';
+    var8.registrationName = var9;
+    var4.topSvgLayout = var8;
+    var1.directEventTypes = var4;
+    var10 = var0.Object;
+    var9 = var10.assign;
+    var8 = {
+        'name': true,
+        'opacity': true,
+        'matrix': true,
+        'mask': true,
+        'markerStart': true,
+        'markerMid': true,
+        'markerEnd': true,
+        'clipPath': true,
+        'clipRule': true,
+        'responsible': true,
+        'display': true,
+        'pointerEvents': true,
+        'color': null,
+        'fill': true,
+        'fillOpacity': true,
+        'fillRule': true,
+        'stroke': true,
+        'strokeOpacity': true,
+        'strokeWidth': true,
+        'strokeLinecap': true,
+        'strokeLinejoin': true,
+        'strokeDasharray': true,
+        'strokeDashoffset': true,
+        'strokeMiterlimit': true,
+        'vectorEffect': true,
+        'propList': true,
+        'filter': true,
+        'href': true,
+        'x': true,
+        'y': true,
+        'height': true,
+        'width': true
+    };
+    var4 = {};
     var0 = 0;
-    var1 = var4[var0];
+    var11 = var7[var0];
     var0 = undefined;
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGCircle = var1;
-    var1 = 1;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGClipPath = var1;
-    var1 = 2;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGDefs = var1;
-    var1 = 3;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGEllipse = var1;
-    var1 = 4;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGForeignObject = var1;
-    var1 = 5;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGGroup = var1;
-    var1 = 6;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGImage = var1;
-    var1 = 7;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGLinearGradient = var1;
-    var1 = 8;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGLine = var1;
-    var1 = 9;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGMarker = var1;
-    var1 = 10;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGMask = var1;
-    var1 = 11;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGPath = var1;
-    var1 = 12;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGPattern = var1;
-    var1 = 13;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGRadialGradient = var1;
-    var1 = 14;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGRect = var1;
-    var1 = 15;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGSvgAndroid = var1;
-    var1 = 16;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGSvgIOS = var1;
-    var1 = 17;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGSymbol = var1;
-    var1 = 18;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGText = var1;
-    var1 = 19;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGTextPath = var1;
-    var1 = 20;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGTSpan = var1;
-    var1 = 21;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGUse = var1;
-    var1 = 22;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGFilter = var1;
-    var1 = 23;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGFeBlend = var1;
-    var1 = 24;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGFeColorMatrix = var1;
-    var1 = 25;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGFeComposite = var1;
-    var1 = 26;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGFeFlood = var1;
-    var1 = 27;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGFeGaussianBlur = var1;
-    var1 = 28;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGFeMerge = var1;
-    var1 = 29;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.RNSVGFeOffset = var1;
+    var11 = var5.bind(var0)(var11);
+    var11 = var11.default;
+    var4.process = var11;
+    var8.color = var4;
+    var4 = 1;
+    var4 = var7[var4];
+    var12 = var5.bind(var0)(var4);
+    var11 = var12.ConditionallyIgnoredEventHandlers;
+    var4 = {};
+    var4.onSvgLayout = var13;
+    var4 = var11.bind(var12)(var4);
+    var4 = var9.bind(var10)(var8, var4);
+    var1.validAttributes = var4;
+    var _closure1_slot0 = var1;
+    var4 = 2;
+    var4 = var7[var4];
+    var5 = var5.bind(var0)(var4);
+    var4 = var5.get;
+    var3 = function() { // Environment: var3
+        var0 = _closure1_slot0;
+        return var0;
+    };
+    var3 = var4.bind(var5)(var6, var3);
+    var2.default = var3;
+    var2.__INTERNAL_VIEW_CONFIG = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5484, 5486, 5488, 5490, 5525, 5478, 5527, 5531, 5529, 5535, 5538, 5540, 5542, 5547, 5549, 5467, 5566, 5552, 5556, 5558, 5555, 5560, 5523, 5492, 5496, 5499, 5510, 5506, 5512, 5508]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [38, 110, 42]);

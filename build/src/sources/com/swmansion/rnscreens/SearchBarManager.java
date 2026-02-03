@@ -148,19 +148,19 @@ public final class SearchBarManager extends ViewGroupManager<d1> implements RNSS
             java.lang.String r0 = "characters"
             boolean r3 = r3.equals(r0)
             if (r3 == 0) goto L39
-            com.swmansion.rnscreens.d1$a r3 = com.swmansion.rnscreens.d1.a.f18875o
+            com.swmansion.rnscreens.d1$a r3 = com.swmansion.rnscreens.d1.a.f17857o
             goto L43
         L1a:
             java.lang.String r0 = "sentences"
             boolean r3 = r3.equals(r0)
             if (r3 == 0) goto L39
-            com.swmansion.rnscreens.d1$a r3 = com.swmansion.rnscreens.d1.a.f18874i
+            com.swmansion.rnscreens.d1$a r3 = com.swmansion.rnscreens.d1.a.f17856i
             goto L43
         L25:
             java.lang.String r0 = "words"
             boolean r3 = r3.equals(r0)
             if (r3 == 0) goto L39
-            com.swmansion.rnscreens.d1$a r3 = com.swmansion.rnscreens.d1.a.f18873e
+            com.swmansion.rnscreens.d1$a r3 = com.swmansion.rnscreens.d1.a.f17855e
             goto L43
         L30:
             java.lang.String r0 = "none"
@@ -173,7 +173,7 @@ public final class SearchBarManager extends ViewGroupManager<d1> implements RNSS
             r2.<init>(r3)
             throw r2
         L41:
-            com.swmansion.rnscreens.d1$a r3 = com.swmansion.rnscreens.d1.a.f18872d
+            com.swmansion.rnscreens.d1$a r3 = com.swmansion.rnscreens.d1.a.f17854d
         L43:
             r2.setAutoCapitalize(r3)
             return
@@ -253,13 +253,13 @@ public final class SearchBarManager extends ViewGroupManager<d1> implements RNSS
             java.lang.String r0 = "phone"
             boolean r3 = r3.equals(r0)
             if (r3 == 0) goto L39
-            com.swmansion.rnscreens.d1$b r3 = com.swmansion.rnscreens.d1.b.f18879e
+            com.swmansion.rnscreens.d1$b r3 = com.swmansion.rnscreens.d1.b.f17861e
             goto L43
         L1a:
             java.lang.String r0 = "email"
             boolean r3 = r3.equals(r0)
             if (r3 == 0) goto L39
-            com.swmansion.rnscreens.d1$b r3 = com.swmansion.rnscreens.d1.b.f18881o
+            com.swmansion.rnscreens.d1$b r3 = com.swmansion.rnscreens.d1.b.f17863o
             goto L43
         L25:
             java.lang.String r0 = "text"
@@ -270,7 +270,7 @@ public final class SearchBarManager extends ViewGroupManager<d1> implements RNSS
             java.lang.String r0 = "number"
             boolean r3 = r3.equals(r0)
             if (r3 == 0) goto L39
-            com.swmansion.rnscreens.d1$b r3 = com.swmansion.rnscreens.d1.b.f18880i
+            com.swmansion.rnscreens.d1$b r3 = com.swmansion.rnscreens.d1.b.f17862i
             goto L43
         L39:
             com.facebook.react.bridge.JSApplicationIllegalArgumentException r2 = new com.facebook.react.bridge.JSApplicationIllegalArgumentException
@@ -278,7 +278,7 @@ public final class SearchBarManager extends ViewGroupManager<d1> implements RNSS
             r2.<init>(r3)
             throw r2
         L41:
-            com.swmansion.rnscreens.d1$b r3 = com.swmansion.rnscreens.d1.b.f18878d
+            com.swmansion.rnscreens.d1$b r3 = com.swmansion.rnscreens.d1.b.f17860d
         L43:
             r2.setInputType(r3)
             return

@@ -62,7 +62,7 @@ public final class GuildProfileInviteMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof GuildProfileInviteMessageAccessory) {
             GuildProfileInviteMessageAccessory guildProfileInviteMessageAccessory = (GuildProfileInviteMessageAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, guildProfileInviteMessageAccessory.messageId) && this.codedLinkIndex == guildProfileInviteMessageAccessory.codedLinkIndex && Intrinsics.areEqual(this.invite, guildProfileInviteMessageAccessory.invite);
+            return MessageId.m1089equalsimpl0(this.messageId, guildProfileInviteMessageAccessory.messageId) && this.codedLinkIndex == guildProfileInviteMessageAccessory.codedLinkIndex && Intrinsics.areEqual(this.invite, guildProfileInviteMessageAccessory.invite);
         }
         return false;
     }
@@ -84,15 +84,15 @@ public final class GuildProfileInviteMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (((MessageId.m1091hashCodeimpl(this.messageId) * 31) + Integer.hashCode(this.codedLinkIndex)) * 31) + this.invite.hashCode();
+        return (((MessageId.m1090hashCodeimpl(this.messageId) * 31) + Integer.hashCode(this.codedLinkIndex)) * 31) + this.invite.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         int i10 = this.codedLinkIndex;
         GuildProfileInviteEmbedImpl guildProfileInviteEmbedImpl = this.invite;
-        return "GuildProfileInviteMessageAccessory(messageId=" + m1093toStringimpl + ", codedLinkIndex=" + i10 + ", invite=" + guildProfileInviteEmbedImpl + ")";
+        return "GuildProfileInviteMessageAccessory(messageId=" + m1092toStringimpl + ", codedLinkIndex=" + i10 + ", invite=" + guildProfileInviteEmbedImpl + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

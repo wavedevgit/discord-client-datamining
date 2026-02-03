@@ -14,7 +14,7 @@ public interface TypeConstructor extends TypeConstructorMarker {
     KotlinBuiltIns getBuiltIns();
 
     /* renamed from: getDeclarationDescriptor */
-    ClassifierDescriptor mo1200getDeclarationDescriptor();
+    ClassifierDescriptor mo1197getDeclarationDescriptor();
 
     @NotNull
     List<TypeParameterDescriptor> getParameters();

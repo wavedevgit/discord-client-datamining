@@ -1,43 +1,53 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = metroImportDefault;
-    var2 = exports;
-    var11 = dependencyMap;
-    var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var1 = {};
-    var7 = true;
-    var1.value = var7;
-    var0 = '__esModule';
-    var0 = var4.bind(var5)(var2, var0, var1);
-    var0 = 0;
-    var1 = var11[var0];
-    var0 = undefined;
-    var10 = var3.bind(var0)(var1);
-    var4 = ['minDurationMs', 'maxDist', 'numberOfPointers'];
-    var1 = 1;
-    var1 = var11[var1];
-    var5 = var3.bind(var0)(var1);
-    var1 = {};
-    var3 = 'LongPressGestureHandler';
-    var1.name = var3;
-    var9 = new Array(0);
-    var8 = var9.concat;
-    var6 = 2;
-    var11 = var11[var6];
-    var6 = require;
-    var6 = var6.bind(var0)(var11);
-    var6 = var6.baseGestureHandlerProps;
-    var6 = var10.bind(var0)(var6);
-    var6 = var8.bind(var9)(var6, var4);
-    var1.allowedProps = var6;
-    var6 = {};
-    var6.shouldCancelWhenOutside = var7;
-    var1.config = var6;
-    var1 = var5.bind(var0)(var1);
-    var2.longPressGestureHandlerProps = var4;
-    var2.longPressHandlerName = var3;
-    var2.LongPressGestureHandler = var1;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [65, 4975, 4973]);
+    _fun44884: for (var _fun44884_ip = 0;;) switch (_fun44884_ip) {
+        case 0:
+            var1 = exports;
+            var2 = global;
+            var5 = var2.Object;
+            var4 = var5.defineProperty;
+            var3 = {};
+            var0 = true;
+            var3.value = var0;
+            var0 = '__esModule';
+            var0 = var4.bind(var5)(var1, var0, var3);
+            var0 = var2.setImmediate;
+            var3 = 'function';
+            var0 = typeof var0;
+            if (!(var3 !== var0)) {
+                _fun44884_ip = 105;
+                continue _fun44884
+            }
+        case 52:
+            var0 = var2.requestAnimationFrame;
+            var0 = typeof var0;
+            if (!(var3 !== var0)) {
+                _fun44884_ip = 85;
+                continue _fun44884
+            }
+        case 65:
+            var4 = var2.queueMicrotask;
+            var3 = var4.bind;
+            var0 = null;
+            var0 = var3.bind(var4)(var0);
+            _fun44884_ip = 103;
+            continue _fun44884;
+        case 85:
+            var5 = var2.requestAnimationFrame;
+            var4 = var5.bind;
+            var3 = null;
+            var0 = var4.bind(var5)(var3);
+        case 103:
+            _fun44884_ip = 123;
+            continue _fun44884;
+        case 105:
+            var4 = var2.setImmediate;
+            var3 = var4.bind;
+            var2 = null;
+            var0 = var3.bind(var4)(var2);
+        case 123:
+            var1.ghQueueMicrotask = var0;
+            var0 = undefined;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

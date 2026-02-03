@@ -12,22 +12,22 @@ import java.util.concurrent.TimeUnit;
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f28767a;
+    private final String f29128a;
 
     /* renamed from: b  reason: collision with root package name */
-    private j5 f28768b = null;
+    private j5 f29129b = null;
 
     /* renamed from: c  reason: collision with root package name */
-    private j5 f28769c = null;
+    private j5 f29130c = null;
 
     /* renamed from: d  reason: collision with root package name */
-    private ISpan f28770d = null;
+    private ISpan f29131d = null;
 
     /* renamed from: e  reason: collision with root package name */
-    private ISpan f28771e = null;
+    private ISpan f29132e = null;
 
     public b(String str) {
-        this.f28767a = str;
+        this.f29128a = str;
     }
 
     private ISpan d(ISpan iSpan, String str, j5 j5Var) {
@@ -45,60 +45,60 @@ public class b {
     }
 
     public void a() {
-        ISpan iSpan = this.f28770d;
+        ISpan iSpan = this.f29131d;
         if (iSpan != null && !iSpan.isFinished()) {
-            this.f28770d.k(l8.CANCELLED);
+            this.f29131d.k(l8.CANCELLED);
         }
-        this.f28770d = null;
-        ISpan iSpan2 = this.f28771e;
+        this.f29131d = null;
+        ISpan iSpan2 = this.f29132e;
         if (iSpan2 != null && !iSpan2.isFinished()) {
-            this.f28771e.k(l8.CANCELLED);
+            this.f29132e.k(l8.CANCELLED);
         }
-        this.f28771e = null;
+        this.f29132e = null;
     }
 
     public void b(ISpan iSpan) {
-        if (this.f28768b != null && iSpan != null) {
-            ISpan d10 = d(iSpan, this.f28767a + ".onCreate", this.f28768b);
-            this.f28770d = d10;
+        if (this.f29129b != null && iSpan != null) {
+            ISpan d10 = d(iSpan, this.f29128a + ".onCreate", this.f29129b);
+            this.f29131d = d10;
             d10.d();
         }
     }
 
     public void c(ISpan iSpan) {
-        if (this.f28769c != null && iSpan != null) {
-            ISpan d10 = d(iSpan, this.f28767a + ".onStart", this.f28769c);
-            this.f28771e = d10;
+        if (this.f29130c != null && iSpan != null) {
+            ISpan d10 = d(iSpan, this.f29128a + ".onStart", this.f29130c);
+            this.f29132e = d10;
             d10.d();
         }
     }
 
     public void e() {
-        ISpan iSpan = this.f28770d;
-        if (iSpan != null && this.f28771e != null) {
+        ISpan iSpan = this.f29131d;
+        if (iSpan != null && this.f29132e != null) {
             j5 r10 = iSpan.r();
-            j5 r11 = this.f28771e.r();
+            j5 r11 = this.f29132e.r();
             if (r10 != null && r11 != null) {
                 long uptimeMillis = SystemClock.uptimeMillis();
                 j5 a10 = x.a();
                 TimeUnit timeUnit = TimeUnit.NANOSECONDS;
-                long millis = timeUnit.toMillis(a10.d(this.f28770d.t()));
+                long millis = timeUnit.toMillis(a10.d(this.f29131d.t()));
                 long millis2 = timeUnit.toMillis(a10.d(r10));
-                long millis3 = timeUnit.toMillis(a10.d(this.f28771e.t()));
+                long millis3 = timeUnit.toMillis(a10.d(this.f29132e.t()));
                 long millis4 = timeUnit.toMillis(a10.d(r11));
                 c cVar = new c();
-                cVar.d().u(this.f28770d.getDescription(), timeUnit.toMillis(this.f28770d.t().h()), uptimeMillis - millis, uptimeMillis - millis2);
-                cVar.e().u(this.f28771e.getDescription(), timeUnit.toMillis(this.f28771e.t().h()), uptimeMillis - millis3, uptimeMillis - millis4);
+                cVar.d().u(this.f29131d.getDescription(), timeUnit.toMillis(this.f29131d.t().h()), uptimeMillis - millis, uptimeMillis - millis2);
+                cVar.e().u(this.f29132e.getDescription(), timeUnit.toMillis(this.f29132e.t().h()), uptimeMillis - millis3, uptimeMillis - millis4);
                 h.q().e(cVar);
             }
         }
     }
 
     public void g(j5 j5Var) {
-        this.f28768b = j5Var;
+        this.f29129b = j5Var;
     }
 
     public void h(j5 j5Var) {
-        this.f28769c = j5Var;
+        this.f29130c = j5Var;
     }
 }

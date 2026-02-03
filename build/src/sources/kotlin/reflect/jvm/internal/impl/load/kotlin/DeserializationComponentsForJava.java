@@ -42,7 +42,7 @@ public final class DeserializationComponentsForJava {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final DeserializationComponents f34273a;
+    private final DeserializationComponents f33663a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -51,26 +51,26 @@ public final class DeserializationComponentsForJava {
         public static final class ModuleData {
 
             /* renamed from: a  reason: collision with root package name */
-            private final DeserializationComponentsForJava f34274a;
+            private final DeserializationComponentsForJava f33664a;
 
             /* renamed from: b  reason: collision with root package name */
-            private final DeserializedDescriptorResolver f34275b;
+            private final DeserializedDescriptorResolver f33665b;
 
             public ModuleData(@NotNull DeserializationComponentsForJava deserializationComponentsForJava, @NotNull DeserializedDescriptorResolver deserializedDescriptorResolver) {
                 Intrinsics.checkNotNullParameter(deserializationComponentsForJava, "deserializationComponentsForJava");
                 Intrinsics.checkNotNullParameter(deserializedDescriptorResolver, "deserializedDescriptorResolver");
-                this.f34274a = deserializationComponentsForJava;
-                this.f34275b = deserializedDescriptorResolver;
+                this.f33664a = deserializationComponentsForJava;
+                this.f33665b = deserializedDescriptorResolver;
             }
 
             @NotNull
             public final DeserializationComponentsForJava getDeserializationComponentsForJava() {
-                return this.f34274a;
+                return this.f33664a;
             }
 
             @NotNull
             public final DeserializedDescriptorResolver getDeserializedDescriptorResolver() {
-                return this.f34275b;
+                return this.f33665b;
             }
         }
 
@@ -131,11 +131,11 @@ public final class DeserializationComponentsForJava {
         Intrinsics.checkNotNullParameter(typeAttributeTranslators, "typeAttributeTranslators");
         KotlinBuiltIns builtIns = moduleDescriptor.getBuiltIns();
         JvmBuiltIns jvmBuiltIns = builtIns instanceof JvmBuiltIns ? (JvmBuiltIns) builtIns : null;
-        this.f34273a = new DeserializationComponents(storageManager, moduleDescriptor, configuration, classDataFinder, annotationAndConstantLoader, packageFragmentProvider, LocalClassifierTypeSettings.Default.INSTANCE, errorReporter, lookupTracker, JavaFlexibleTypeDeserializer.INSTANCE, CollectionsKt.l(), notFoundClasses, contractDeserializer, (jvmBuiltIns == null || (additionalClassPartsProvider = jvmBuiltIns.getCustomizer()) == null) ? AdditionalClassPartsProvider.None.INSTANCE : additionalClassPartsProvider, (jvmBuiltIns == null || (platformDependentDeclarationFilter = jvmBuiltIns.getCustomizer()) == null) ? PlatformDependentDeclarationFilter.NoPlatformDependent.INSTANCE : platformDependentDeclarationFilter, JvmProtoBufUtil.INSTANCE.getEXTENSION_REGISTRY(), kotlinTypeChecker, new SamConversionResolverImpl(storageManager, CollectionsKt.l()), typeAttributeTranslators.getTranslators(), JvmEnumEntriesDeserializationSupport.INSTANCE);
+        this.f33663a = new DeserializationComponents(storageManager, moduleDescriptor, configuration, classDataFinder, annotationAndConstantLoader, packageFragmentProvider, LocalClassifierTypeSettings.Default.INSTANCE, errorReporter, lookupTracker, JavaFlexibleTypeDeserializer.INSTANCE, CollectionsKt.l(), notFoundClasses, contractDeserializer, (jvmBuiltIns == null || (additionalClassPartsProvider = jvmBuiltIns.getCustomizer()) == null) ? AdditionalClassPartsProvider.None.INSTANCE : additionalClassPartsProvider, (jvmBuiltIns == null || (platformDependentDeclarationFilter = jvmBuiltIns.getCustomizer()) == null) ? PlatformDependentDeclarationFilter.NoPlatformDependent.INSTANCE : platformDependentDeclarationFilter, JvmProtoBufUtil.INSTANCE.getEXTENSION_REGISTRY(), kotlinTypeChecker, new SamConversionResolverImpl(storageManager, CollectionsKt.l()), typeAttributeTranslators.getTranslators(), JvmEnumEntriesDeserializationSupport.INSTANCE);
     }
 
     @NotNull
     public final DeserializationComponents getComponents() {
-        return this.f34273a;
+        return this.f33663a;
     }
 }

@@ -7,13 +7,13 @@ public enum YogaOverflow {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f12188d;
+    private final int f11156d;
 
     YogaOverflow(int i10) {
-        this.f12188d = i10;
+        this.f11156d = i10;
     }
 
     public int d() {
-        return this.f12188d;
+        return this.f11156d;
     }
 }

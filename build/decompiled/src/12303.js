@@ -1,42 +1,33 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
-    var1 = function arg0, arg1() {
-        _fun94024: for (var _fun94024_ip = 0;;) switch (_fun94024_ip) {
-            case 0:
-                var1 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var0 = 0;
-                var0 = var2[var0];
-                var3 = undefined;
-                var2 = var1.bind(var3)(var0);
-                var1 = arg0;
-                var0 = arg1;
-                var1 = var2.bind(var3)(var1, var0);
-                var0 = null;
-                if (!var1) {
-                    _fun94024_ip = 63;
-                    continue _fun94024
-                }
-            case 41:
-                var2 = var1.prerelease;
-                var2 = var2.length;
-                var0 = null;
-                if (!var2) {
-                    _fun94024_ip = 63;
-                    continue _fun94024
-                }
-            case 57:
-                var0 = var1.prerelease;
-            case 63:
-                return var0;
-        }
-    };
-    var0 = arg4;
-    var0.exports = var1;
-    var0 = undefined;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12289]);
+    _fun94060: for (var _fun94060_ip = 0;;) switch (_fun94060_ip) {
+        case 0:
+            var0 = global;
+            var0 = var0.Number;
+            var0 = var0.MAX_SAFE_INTEGER;
+            if (var0) {
+                _fun94060_ip = 27;
+                continue _fun94060
+            }
+        case 17:
+            var0 = 9007199254740991.0;
+        case 27:
+            var1 = {
+                'MAX_LENGTH': 256,
+                'MAX_SAFE_COMPONENT_LENGTH': 16,
+                'MAX_SAFE_BUILD_LENGTH': 250,
+                'MAX_SAFE_INTEGER': null,
+                'RELEASE_TYPES': null,
+                'SEMVER_SPEC_VERSION': '2.0.0',
+                'FLAG_INCLUDE_PRERELEASE': 1,
+                'FLAG_LOOSE': 2
+            };
+            var1.MAX_SAFE_INTEGER = var0;
+            var0 = ['major', 'premajor', 'minor', 'preminor', 'patch', 'prepatch', 'prerelease'];
+            var1.RELEASE_TYPES = var0;
+            var0 = module;
+            var0.exports = var1;
+            var0 = undefined;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

@@ -81,9 +81,9 @@ public final class InputCheckboxGroup_InputCheckboxComponentStyleJsonAdapter ext
         AttributeStyles.InputCheckboxTextColorStyle inputCheckboxTextColorStyle = null;
         AttributeStyles.TextBasedTextColorStyle textBasedTextColorStyle = null;
         while (reader.hasNext()) {
-            switch (reader.t0(this.options)) {
+            switch (reader.A0(this.options)) {
                 case -1:
-                    reader.F0();
+                    reader.E0();
                     reader.P();
                     break;
                 case 0:
@@ -118,19 +118,19 @@ public final class InputCheckboxGroup_InputCheckboxComponentStyleJsonAdapter ext
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputCheckboxComponentStyle != null) {
             writer.l();
-            writer.t0(ViewProps.FONT_FAMILY);
+            writer.A0(ViewProps.FONT_FAMILY);
             this.nullableInputCheckboxFontFamilyStyleAdapter.toJson(writer, inputCheckboxComponentStyle.getFontFamily());
-            writer.t0(ViewProps.FONT_SIZE);
+            writer.A0(ViewProps.FONT_SIZE);
             this.nullableInputCheckboxFontSizeStyleAdapter.toJson(writer, inputCheckboxComponentStyle.getFontSize());
-            writer.t0(ViewProps.FONT_WEIGHT);
+            writer.A0(ViewProps.FONT_WEIGHT);
             this.nullableInputCheckboxFontWeightStyleAdapter.toJson(writer, inputCheckboxComponentStyle.getFontWeight());
-            writer.t0(ViewProps.LETTER_SPACING);
+            writer.A0(ViewProps.LETTER_SPACING);
             this.nullableInputCheckboxLetterSpacingStyleAdapter.toJson(writer, inputCheckboxComponentStyle.getLetterSpacing());
-            writer.t0(ViewProps.LINE_HEIGHT);
+            writer.A0(ViewProps.LINE_HEIGHT);
             this.nullableInputCheckboxLineHeightStyleAdapter.toJson(writer, inputCheckboxComponentStyle.getLineHeight());
-            writer.t0("textColor");
+            writer.A0("textColor");
             this.nullableInputCheckboxTextColorStyleAdapter.toJson(writer, inputCheckboxComponentStyle.getTextColor());
-            writer.t0("textColorHighlight");
+            writer.A0("textColorHighlight");
             this.nullableTextBasedTextColorStyleAdapter.toJson(writer, inputCheckboxComponentStyle.getTextColorHighlight());
             writer.E();
             return;

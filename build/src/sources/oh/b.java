@@ -6,23 +6,23 @@ import java.util.Arrays;
 public final class b implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f43962a;
+    private final c f43762a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final float f43963b;
+    private final float f43763b;
 
     public b(float f10, c cVar) {
         while (cVar instanceof b) {
-            cVar = ((b) cVar).f43962a;
-            f10 += ((b) cVar).f43963b;
+            cVar = ((b) cVar).f43762a;
+            f10 += ((b) cVar).f43763b;
         }
-        this.f43962a = cVar;
-        this.f43963b = f10;
+        this.f43762a = cVar;
+        this.f43763b = f10;
     }
 
     @Override // oh.c
     public float a(RectF rectF) {
-        return Math.max(0.0f, this.f43962a.a(rectF) + this.f43963b);
+        return Math.max(0.0f, this.f43762a.a(rectF) + this.f43763b);
     }
 
     public boolean equals(Object obj) {
@@ -33,13 +33,13 @@ public final class b implements c {
             return false;
         }
         b bVar = (b) obj;
-        if (this.f43962a.equals(bVar.f43962a) && this.f43963b == bVar.f43963b) {
+        if (this.f43762a.equals(bVar.f43762a) && this.f43763b == bVar.f43763b) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return Arrays.hashCode(new Object[]{this.f43962a, Float.valueOf(this.f43963b)});
+        return Arrays.hashCode(new Object[]{this.f43762a, Float.valueOf(this.f43763b)});
     }
 }

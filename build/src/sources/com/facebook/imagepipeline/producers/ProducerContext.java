@@ -4,13 +4,13 @@ import com.facebook.imagepipeline.common.Priority;
 import com.facebook.imagepipeline.request.ImageRequest;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public interface ProducerContext extends y9.a {
-    boolean D0();
+    boolean C0();
 
     void E(String str);
 
-    y0 F();
+    ImageRequest.RequestLevel E0();
 
-    ImageRequest.RequestLevel F0();
+    y0 F();
 
     boolean L();
 

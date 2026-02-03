@@ -6,7 +6,7 @@ import android.util.Log;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String[] f14464a = {"android.", "com.android.", "dalvik.", "java.", "javax."};
+    private static final String[] f13432a = {"android.", "com.android.", "dalvik.", "java.", "javax."};
 
     public static boolean a(Context context, Throwable th2) {
         try {

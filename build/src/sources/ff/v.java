@@ -10,19 +10,19 @@ import java.util.WeakHashMap;
 public final class v {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f24376a = Collections.synchronizedMap(new WeakHashMap());
+    private final Map f23968a = Collections.synchronizedMap(new WeakHashMap());
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f24377b = Collections.synchronizedMap(new WeakHashMap());
+    private final Map f23969b = Collections.synchronizedMap(new WeakHashMap());
 
     private final void h(boolean z10, Status status) {
         HashMap hashMap;
         HashMap hashMap2;
-        synchronized (this.f24376a) {
-            hashMap = new HashMap(this.f24376a);
+        synchronized (this.f23968a) {
+            hashMap = new HashMap(this.f23968a);
         }
-        synchronized (this.f24377b) {
-            hashMap2 = new HashMap(this.f24377b);
+        synchronized (this.f23969b) {
+            hashMap2 = new HashMap(this.f23969b);
         }
         for (Map.Entry entry : hashMap.entrySet()) {
             if (z10 || ((Boolean) entry.getValue()).booleanValue()) {
@@ -38,13 +38,13 @@ public final class v {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void c(BasePendingResult basePendingResult, boolean z10) {
-        this.f24376a.put(basePendingResult, Boolean.valueOf(z10));
+        this.f23968a.put(basePendingResult, Boolean.valueOf(z10));
         basePendingResult.addStatusListener(new t(this, basePendingResult));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void d(wg.k kVar, boolean z10) {
-        this.f24377b.put(kVar, Boolean.valueOf(z10));
+        this.f23969b.put(kVar, Boolean.valueOf(z10));
         kVar.a().addOnCompleteListener(new u(this, kVar));
     }
 
@@ -69,7 +69,7 @@ public final class v {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final boolean g() {
-        if (this.f24376a.isEmpty() && this.f24377b.isEmpty()) {
+        if (this.f23968a.isEmpty() && this.f23969b.isEmpty()) {
             return false;
         }
         return true;

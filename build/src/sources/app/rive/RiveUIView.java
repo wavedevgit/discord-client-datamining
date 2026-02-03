@@ -13,11 +13,11 @@ import app.rive.core.ArtboardHandle;
 import app.rive.core.CommandQueue;
 import app.rive.core.RiveSurface;
 import app.rive.core.StateMachineHandle;
-import hs.i;
-import jr.q;
+import js.i;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
+import lr.q;
 import org.jetbrains.annotations.NotNull;
 @ExperimentalRiveComposeAPI
 @Metadata(d1 = {"\u0000\\\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0007\u0018\u00002\u00020\u0001B%\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\b\u0010\u001c\u001a\u00020\u001dH\u0014J\b\u0010\u001e\u001a\u00020\u001dH\u0014J&\u0010\u001f\u001a\u00020\u001d2\u0006\u0010 \u001a\u00020\f2\n\b\u0002\u0010!\u001a\u0004\u0018\u00010\"2\n\b\u0002\u0010#\u001a\u0004\u0018\u00010$R\u0016\u0010\t\u001a\u0004\u0018\u00010\nX\u0082\u000eø\u0001\u0000ø\u0001\u0001¢\u0006\u0002\n\u0000R\u0010\u0010\u000b\u001a\u0004\u0018\u00010\fX\u0082\u000e¢\u0006\u0002\n\u0000R\"\u0010\u000f\u001a\u0004\u0018\u00010\u000e2\b\u0010\r\u001a\u0004\u0018\u00010\u000e@BX\u0082\u000e¢\u0006\b\n\u0000\"\u0004\b\u0010\u0010\u0011R\u0016\u0010\u0012\u001a\u0004\u0018\u00010\u0013X\u0082\u000eø\u0001\u0000ø\u0001\u0001¢\u0006\u0002\n\u0000R\u0010\u0010\u0014\u001a\u0004\u0018\u00010\u0015X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0007X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u0007X\u0082\u000e¢\u0006\u0002\n\u0000R\u0011\u0010\u0018\u001a\u00020\u0019¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u001b\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006%"}, d2 = {"Lapp/rive/RiveUIView;", "Landroid/widget/FrameLayout;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyle", "", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "artboardHandle", "Lapp/rive/core/ArtboardHandle;", "riveFile", "Lapp/rive/RiveFile;", "value", "Lapp/rive/core/RiveSurface;", "riveSurface", "setRiveSurface", "(Lapp/rive/core/RiveSurface;)V", "stateMachineHandle", "Lapp/rive/core/StateMachineHandle;", "surface", "Landroid/view/Surface;", "surfaceHeight", "surfaceWidth", "textureView", "Landroid/view/TextureView;", "getTextureView", "()Landroid/view/TextureView;", "onAttachedToWindow", "", "onDetachedFromWindow", "setRiveFile", "file", "artboard", "Lapp/rive/Artboard;", "stateMachineName", "", "kotlin_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
@@ -91,28 +91,28 @@ public final class RiveUIView extends FrameLayout {
     }
 
     public final void setRiveFile(@NotNull RiveFile file, Artboard artboard, String str) {
-        long m113createDefaultArtboard6NrLy0M;
-        StateMachineHandle m192boximpl;
+        long m111createDefaultArtboard6NrLy0M;
+        StateMachineHandle m190boximpl;
         Intrinsics.checkNotNullParameter(file, "file");
         this.riveFile = file;
         if (artboard != null) {
-            m113createDefaultArtboard6NrLy0M = artboard.m17getArtboardHandlenSTdbJo$kotlin_release();
+            m111createDefaultArtboard6NrLy0M = artboard.m15getArtboardHandlenSTdbJo$kotlin_release();
         } else {
-            m113createDefaultArtboard6NrLy0M = file.getCommandQueue$kotlin_release().m113createDefaultArtboard6NrLy0M(file.m33getFileHandleENT3xMk$kotlin_release());
+            m111createDefaultArtboard6NrLy0M = file.getCommandQueue$kotlin_release().m111createDefaultArtboard6NrLy0M(file.m31getFileHandleENT3xMk$kotlin_release());
         }
-        this.artboardHandle = ArtboardHandle.m94boximpl(m113createDefaultArtboard6NrLy0M);
+        this.artboardHandle = ArtboardHandle.m92boximpl(m111createDefaultArtboard6NrLy0M);
         if (str != null) {
             CommandQueue commandQueue$kotlin_release = file.getCommandQueue$kotlin_release();
             ArtboardHandle artboardHandle = this.artboardHandle;
             Intrinsics.checkNotNull(artboardHandle);
-            m192boximpl = StateMachineHandle.m192boximpl(commandQueue$kotlin_release.m115createStateMachineByNameItmKBmM(artboardHandle.m100unboximpl(), str));
+            m190boximpl = StateMachineHandle.m190boximpl(commandQueue$kotlin_release.m113createStateMachineByNameItmKBmM(artboardHandle.m98unboximpl(), str));
         } else {
             CommandQueue commandQueue$kotlin_release2 = file.getCommandQueue$kotlin_release();
             ArtboardHandle artboardHandle2 = this.artboardHandle;
             Intrinsics.checkNotNull(artboardHandle2);
-            m192boximpl = StateMachineHandle.m192boximpl(commandQueue$kotlin_release2.m114createDefaultStateMachinexY8vNfM(artboardHandle2.m100unboximpl()));
+            m190boximpl = StateMachineHandle.m190boximpl(commandQueue$kotlin_release2.m112createDefaultStateMachinexY8vNfM(artboardHandle2.m98unboximpl()));
         }
-        this.stateMachineHandle = m192boximpl;
+        this.stateMachineHandle = m190boximpl;
         if (this.surface != null && this.riveSurface == null) {
             CommandQueue commandQueue$kotlin_release3 = file.getCommandQueue$kotlin_release();
             Surface surface = this.surface;

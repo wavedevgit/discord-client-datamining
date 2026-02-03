@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/BotIllocon.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52370: for (var _fun52370_ip = 0;;) switch (_fun52370_ip) {
+        _fun52428: for (var _fun52428_ip = 0;;) switch (_fun52428_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.size;
                 var3 = undefined;
                 if (!(var7 === var3)) {
-                    _fun52370_ip = 32;
-                    continue _fun52370
+                    _fun52428_ip = 32;
+                    continue _fun52428
                 }
             case 29:
                 var7 = 64;
@@ -73,4 +73,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.BotIllocon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4699, 6009, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6014, 2]);

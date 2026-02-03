@@ -7,16 +7,16 @@ import kotlin.jvm.internal.markers.KMutableIterator;
 public abstract class f implements Iterator, KMutableIterator {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f50068d;
+    private int f50355d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f50069e;
+    private int f50356e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f50070i;
+    private boolean f50357i;
 
     public f(int i10) {
-        this.f50068d = i10;
+        this.f50355d = i10;
     }
 
     protected abstract Object a(int i10);
@@ -25,7 +25,7 @@ public abstract class f implements Iterator, KMutableIterator {
 
     @Override // java.util.Iterator
     public boolean hasNext() {
-        if (this.f50069e < this.f50068d) {
+        if (this.f50356e < this.f50355d) {
             return true;
         }
         return false;
@@ -34,9 +34,9 @@ public abstract class f implements Iterator, KMutableIterator {
     @Override // java.util.Iterator
     public Object next() {
         if (hasNext()) {
-            Object a10 = a(this.f50069e);
-            this.f50069e++;
-            this.f50070i = true;
+            Object a10 = a(this.f50356e);
+            this.f50356e++;
+            this.f50357i = true;
             return a10;
         }
         throw new NoSuchElementException();
@@ -44,13 +44,13 @@ public abstract class f implements Iterator, KMutableIterator {
 
     @Override // java.util.Iterator
     public void remove() {
-        if (!this.f50070i) {
+        if (!this.f50357i) {
             v0.d.b("Call next() before removing an element.");
         }
-        int i10 = this.f50069e - 1;
-        this.f50069e = i10;
+        int i10 = this.f50356e - 1;
+        this.f50356e = i10;
         b(i10);
-        this.f50068d--;
-        this.f50070i = false;
+        this.f50355d--;
+        this.f50357i = false;
     }
 }

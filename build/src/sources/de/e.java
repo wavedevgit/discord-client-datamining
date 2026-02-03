@@ -3,17 +3,17 @@ package de;
 public final class e implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    public int f21681a;
+    public int f20540a;
 
     /* renamed from: b  reason: collision with root package name */
-    public int f21682b;
+    public int f20541b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f21683c;
+    public final int f20542c;
 
     public e(int i10, int i11, int i12) {
-        this.f21681a = i10;
-        this.f21682b = i11;
-        this.f21683c = i12;
+        this.f20540a = i10;
+        this.f20541b = i11;
+        this.f20542c = i12;
     }
 }

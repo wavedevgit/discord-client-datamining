@@ -5,43 +5,43 @@ import android.graphics.PointF;
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public String f47247a;
+    public String f47397a;
 
     /* renamed from: b  reason: collision with root package name */
-    public String f47248b;
+    public String f47398b;
 
     /* renamed from: c  reason: collision with root package name */
-    public float f47249c;
+    public float f47399c;
 
     /* renamed from: d  reason: collision with root package name */
-    public a f47250d;
+    public a f47400d;
 
     /* renamed from: e  reason: collision with root package name */
-    public int f47251e;
+    public int f47401e;
 
     /* renamed from: f  reason: collision with root package name */
-    public float f47252f;
+    public float f47402f;
 
     /* renamed from: g  reason: collision with root package name */
-    public float f47253g;
+    public float f47403g;
 
     /* renamed from: h  reason: collision with root package name */
-    public int f47254h;
+    public int f47404h;
 
     /* renamed from: i  reason: collision with root package name */
-    public int f47255i;
+    public int f47405i;
 
     /* renamed from: j  reason: collision with root package name */
-    public float f47256j;
+    public float f47406j;
 
     /* renamed from: k  reason: collision with root package name */
-    public boolean f47257k;
+    public boolean f47407k;
 
     /* renamed from: l  reason: collision with root package name */
-    public PointF f47258l;
+    public PointF f47408l;
 
     /* renamed from: m  reason: collision with root package name */
-    public PointF f47259m;
+    public PointF f47409m;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public enum a {
@@ -55,25 +55,25 @@ public class b {
     }
 
     public void a(String str, String str2, float f10, a aVar, int i10, float f11, float f12, int i11, int i12, float f13, boolean z10, PointF pointF, PointF pointF2) {
-        this.f47247a = str;
-        this.f47248b = str2;
-        this.f47249c = f10;
-        this.f47250d = aVar;
-        this.f47251e = i10;
-        this.f47252f = f11;
-        this.f47253g = f12;
-        this.f47254h = i11;
-        this.f47255i = i12;
-        this.f47256j = f13;
-        this.f47257k = z10;
-        this.f47258l = pointF;
-        this.f47259m = pointF2;
+        this.f47397a = str;
+        this.f47398b = str2;
+        this.f47399c = f10;
+        this.f47400d = aVar;
+        this.f47401e = i10;
+        this.f47402f = f11;
+        this.f47403g = f12;
+        this.f47404h = i11;
+        this.f47405i = i12;
+        this.f47406j = f13;
+        this.f47407k = z10;
+        this.f47408l = pointF;
+        this.f47409m = pointF2;
     }
 
     public int hashCode() {
-        int hashCode = (((((int) ((((this.f47247a.hashCode() * 31) + this.f47248b.hashCode()) * 31) + this.f47249c)) * 31) + this.f47250d.ordinal()) * 31) + this.f47251e;
-        long floatToRawIntBits = Float.floatToRawIntBits(this.f47252f);
-        return (((hashCode * 31) + ((int) (floatToRawIntBits ^ (floatToRawIntBits >>> 32)))) * 31) + this.f47254h;
+        int hashCode = (((((int) ((((this.f47397a.hashCode() * 31) + this.f47398b.hashCode()) * 31) + this.f47399c)) * 31) + this.f47400d.ordinal()) * 31) + this.f47401e;
+        long floatToRawIntBits = Float.floatToRawIntBits(this.f47402f);
+        return (((hashCode * 31) + ((int) (floatToRawIntBits ^ (floatToRawIntBits >>> 32)))) * 31) + this.f47404h;
     }
 
     public b() {

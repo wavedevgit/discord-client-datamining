@@ -5,17 +5,17 @@ import android.net.Uri;
 public abstract class p1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Uri f26972a;
+    private static final Uri f26185a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Uri f26973b;
+    private static final Uri f26186b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final /* synthetic */ int f26974c = 0;
+    public static final /* synthetic */ int f26187c = 0;
 
     static {
         Uri parse = Uri.parse("https://plus.google.com/");
-        f26972a = parse;
-        f26973b = parse.buildUpon().appendPath("circles").appendPath("find").build();
+        f26185a = parse;
+        f26186b = parse.buildUpon().appendPath("circles").appendPath("find").build();
     }
 }

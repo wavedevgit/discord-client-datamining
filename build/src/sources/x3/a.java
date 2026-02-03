@@ -6,18 +6,18 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a implements j {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final C0736a f53353i = new C0736a(null);
+    public static final C0717a f53074i = new C0717a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f53354d;
+    private final String f53075d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Object[] f53355e;
+    private final Object[] f53076e;
 
     /* renamed from: x3.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0736a {
-        public /* synthetic */ C0736a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0717a {
+        public /* synthetic */ C0717a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
@@ -66,25 +66,25 @@ public final class a implements j {
             }
         }
 
-        private C0736a() {
+        private C0717a() {
         }
     }
 
     public a(String query, Object[] objArr) {
         Intrinsics.checkNotNullParameter(query, "query");
-        this.f53354d = query;
-        this.f53355e = objArr;
+        this.f53075d = query;
+        this.f53076e = objArr;
     }
 
     @Override // x3.j
     public String a() {
-        return this.f53354d;
+        return this.f53075d;
     }
 
     @Override // x3.j
     public void h(i statement) {
         Intrinsics.checkNotNullParameter(statement, "statement");
-        f53353i.b(statement, this.f53355e);
+        f53074i.b(statement, this.f53076e);
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */

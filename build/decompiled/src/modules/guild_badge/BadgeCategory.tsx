@@ -52,43 +52,43 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.BadgeCategory = var3;
     var1 = function arg0() {
-        _fun59790: for (var _fun59790_ip = 0;;) switch (_fun59790_ip) {
+        _fun59848: for (var _fun59848_ip = 0;;) switch (_fun59848_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.staff;
                 if (var1) {
-                    _fun59790_ip = 201;
-                    continue _fun59790
+                    _fun59848_ip = 201;
+                    continue _fun59848
                 }
             case 15:
                 var1 = var0.verified;
                 if (!var1) {
-                    _fun59790_ip = 36;
-                    continue _fun59790
+                    _fun59848_ip = 36;
+                    continue _fun59848
                 }
             case 24:
                 var1 = var0.partnered;
                 if (var1) {
-                    _fun59790_ip = 186;
-                    continue _fun59790
+                    _fun59848_ip = 186;
+                    continue _fun59848
                 }
             case 36:
                 var1 = var0.verified;
                 if (var1) {
-                    _fun59790_ip = 171;
-                    continue _fun59790
+                    _fun59848_ip = 171;
+                    continue _fun59848
                 }
             case 48:
                 var1 = var0.partnered;
                 if (var1) {
-                    _fun59790_ip = 156;
-                    continue _fun59790
+                    _fun59848_ip = 156;
+                    continue _fun59848
                 }
             case 57:
                 var1 = var0.community;
                 if (!var1) {
-                    _fun59790_ip = 112;
-                    continue _fun59790
+                    _fun59848_ip = 112;
+                    continue _fun59848
                 }
             case 66:
                 var3 = var0.visibility;
@@ -101,49 +101,49 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.GuildVisibility;
                 var2 = var2.PUBLIC;
                 if (!(var3 !== var2)) {
-                    _fun59790_ip = 144;
-                    continue _fun59790
+                    _fun59848_ip = 144;
+                    continue _fun59848
                 }
             case 112:
                 var0 = var0.community;
                 var2 = _closure1_slot2;
                 if (var0) {
-                    _fun59790_ip = 136;
-                    continue _fun59790
+                    _fun59848_ip = 136;
+                    continue _fun59848
                 }
             case 128:
                 var0 = var2.NONE;
-                _fun59790_ip = 142;
-                continue _fun59790;
+                _fun59848_ip = 142;
+                continue _fun59848;
             case 136:
                 var0 = var2.COMMUNITY;
             case 142:
-                _fun59790_ip = 154;
-                continue _fun59790;
+                _fun59848_ip = 154;
+                continue _fun59848;
             case 144:
                 var1 = _closure1_slot2;
                 var0 = var1.DISCOVERABLE;
             case 154:
-                _fun59790_ip = 169;
-                continue _fun59790;
+                _fun59848_ip = 169;
+                continue _fun59848;
             case 156:
                 var1 = _closure1_slot2;
                 var0 = var1.PARTNERED;
             case 169:
-                _fun59790_ip = 184;
-                continue _fun59790;
+                _fun59848_ip = 184;
+                continue _fun59848;
             case 171:
                 var1 = _closure1_slot2;
                 var0 = var1.VERIFIED;
             case 184:
-                _fun59790_ip = 199;
-                continue _fun59790;
+                _fun59848_ip = 199;
+                continue _fun59848;
             case 186:
                 var1 = _closure1_slot2;
                 var0 = var1.VERIFIED_AND_PARTNERED;
             case 199:
-                _fun59790_ip = 214;
-                continue _fun59790;
+                _fun59848_ip = 214;
+                continue _fun59848;
             case 201:
                 var1 = _closure1_slot2;
                 var0 = var1.STAFF;
@@ -153,4 +153,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getBadgeCategory = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7386, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7391, 2]);

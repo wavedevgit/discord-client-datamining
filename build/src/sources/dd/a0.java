@@ -11,7 +11,7 @@ import tc.z;
 public final class a0 implements tc.k {
 
     /* renamed from: l  reason: collision with root package name */
-    public static final tc.p f21317l = new tc.p() { // from class: dd.z
+    public static final tc.p f20176l = new tc.p() { // from class: dd.z
         @Override // tc.p
         public final tc.k[] b() {
             return a0.b();
@@ -19,113 +19,113 @@ public final class a0 implements tc.k {
     };
 
     /* renamed from: a  reason: collision with root package name */
-    private final s0 f21318a;
+    private final s0 f20177a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final SparseArray f21319b;
+    private final SparseArray f20178b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ne.h0 f21320c;
+    private final ne.h0 f20179c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final y f21321d;
+    private final y f20180d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f21322e;
+    private boolean f20181e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f21323f;
+    private boolean f20182f;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f21324g;
+    private boolean f20183g;
 
     /* renamed from: h  reason: collision with root package name */
-    private long f21325h;
+    private long f20184h;
 
     /* renamed from: i  reason: collision with root package name */
-    private x f21326i;
+    private x f20185i;
 
     /* renamed from: j  reason: collision with root package name */
-    private tc.m f21327j;
+    private tc.m f20186j;
 
     /* renamed from: k  reason: collision with root package name */
-    private boolean f21328k;
+    private boolean f20187k;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final m f21329a;
+        private final m f20188a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final s0 f21330b;
+        private final s0 f20189b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final ne.g0 f21331c = new ne.g0(new byte[64]);
+        private final ne.g0 f20190c = new ne.g0(new byte[64]);
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f21332d;
+        private boolean f20191d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f21333e;
+        private boolean f20192e;
 
         /* renamed from: f  reason: collision with root package name */
-        private boolean f21334f;
+        private boolean f20193f;
 
         /* renamed from: g  reason: collision with root package name */
-        private int f21335g;
+        private int f20194g;
 
         /* renamed from: h  reason: collision with root package name */
-        private long f21336h;
+        private long f20195h;
 
         public a(m mVar, s0 s0Var) {
-            this.f21329a = mVar;
-            this.f21330b = s0Var;
+            this.f20188a = mVar;
+            this.f20189b = s0Var;
         }
 
         private void b() {
-            this.f21331c.r(8);
-            this.f21332d = this.f21331c.g();
-            this.f21333e = this.f21331c.g();
-            this.f21331c.r(6);
-            this.f21335g = this.f21331c.h(8);
+            this.f20190c.r(8);
+            this.f20191d = this.f20190c.g();
+            this.f20192e = this.f20190c.g();
+            this.f20190c.r(6);
+            this.f20194g = this.f20190c.h(8);
         }
 
         private void c() {
-            this.f21336h = 0L;
-            if (this.f21332d) {
-                this.f21331c.r(4);
-                this.f21331c.r(1);
-                this.f21331c.r(1);
-                long h10 = (this.f21331c.h(3) << 30) | (this.f21331c.h(15) << 15) | this.f21331c.h(15);
-                this.f21331c.r(1);
-                if (!this.f21334f && this.f21333e) {
-                    this.f21331c.r(4);
-                    this.f21331c.r(1);
-                    this.f21331c.r(1);
-                    this.f21331c.r(1);
-                    this.f21330b.b((this.f21331c.h(3) << 30) | (this.f21331c.h(15) << 15) | this.f21331c.h(15));
-                    this.f21334f = true;
+            this.f20195h = 0L;
+            if (this.f20191d) {
+                this.f20190c.r(4);
+                this.f20190c.r(1);
+                this.f20190c.r(1);
+                long h10 = (this.f20190c.h(3) << 30) | (this.f20190c.h(15) << 15) | this.f20190c.h(15);
+                this.f20190c.r(1);
+                if (!this.f20193f && this.f20192e) {
+                    this.f20190c.r(4);
+                    this.f20190c.r(1);
+                    this.f20190c.r(1);
+                    this.f20190c.r(1);
+                    this.f20189b.b((this.f20190c.h(3) << 30) | (this.f20190c.h(15) << 15) | this.f20190c.h(15));
+                    this.f20193f = true;
                 }
-                this.f21336h = this.f21330b.b(h10);
+                this.f20195h = this.f20189b.b(h10);
             }
         }
 
         public void a(ne.h0 h0Var) {
-            h0Var.l(this.f21331c.f40067a, 0, 3);
-            this.f21331c.p(0);
+            h0Var.l(this.f20190c.f40106a, 0, 3);
+            this.f20190c.p(0);
             b();
-            h0Var.l(this.f21331c.f40067a, 0, this.f21335g);
-            this.f21331c.p(0);
+            h0Var.l(this.f20190c.f40106a, 0, this.f20194g);
+            this.f20190c.p(0);
             c();
-            this.f21329a.e(this.f21336h, 4);
-            this.f21329a.b(h0Var);
-            this.f21329a.d();
+            this.f20188a.e(this.f20195h, 4);
+            this.f20188a.b(h0Var);
+            this.f20188a.d();
         }
 
         public void d() {
-            this.f21334f = false;
-            this.f21329a.c();
+            this.f20193f = false;
+            this.f20188a.c();
         }
     }
 
@@ -138,15 +138,15 @@ public final class a0 implements tc.k {
     }
 
     private void e(long j10) {
-        if (!this.f21328k) {
-            this.f21328k = true;
-            if (this.f21321d.c() != -9223372036854775807L) {
-                x xVar = new x(this.f21321d.d(), this.f21321d.c(), j10);
-                this.f21326i = xVar;
-                this.f21327j.q(xVar.b());
+        if (!this.f20187k) {
+            this.f20187k = true;
+            if (this.f20180d.c() != -9223372036854775807L) {
+                x xVar = new x(this.f20180d.d(), this.f20180d.c(), j10);
+                this.f20185i = xVar;
+                this.f20186j.q(xVar.b());
                 return;
             }
-            this.f21327j.q(new z.b(this.f21321d.c()));
+            this.f20186j.q(new z.b(this.f20180d.c()));
         }
     }
 
@@ -154,30 +154,30 @@ public final class a0 implements tc.k {
     public void a(long j10, long j11) {
         boolean z10;
         boolean z11 = true;
-        if (this.f21318a.e() == -9223372036854775807L) {
+        if (this.f20177a.e() == -9223372036854775807L) {
             z10 = true;
         } else {
             z10 = false;
         }
         if (!z10) {
-            long c10 = this.f21318a.c();
+            long c10 = this.f20177a.c();
             z10 = (c10 == -9223372036854775807L || c10 == 0 || c10 == j11) ? false : false;
         }
         if (z10) {
-            this.f21318a.h(j11);
+            this.f20177a.h(j11);
         }
-        x xVar = this.f21326i;
+        x xVar = this.f20185i;
         if (xVar != null) {
             xVar.h(j11);
         }
-        for (int i10 = 0; i10 < this.f21319b.size(); i10++) {
-            ((a) this.f21319b.valueAt(i10)).d();
+        for (int i10 = 0; i10 < this.f20178b.size(); i10++) {
+            ((a) this.f20178b.valueAt(i10)).d();
         }
     }
 
     @Override // tc.k
     public void c(tc.m mVar) {
-        this.f21327j = mVar;
+        this.f20186j = mVar;
     }
 
     @Override // tc.k
@@ -185,16 +185,16 @@ public final class a0 implements tc.k {
         long j10;
         long j11;
         m mVar;
-        ne.a.i(this.f21327j);
+        ne.a.i(this.f20186j);
         long length = lVar.getLength();
         int i10 = (length > (-1L) ? 1 : (length == (-1L) ? 0 : -1));
-        if (i10 != 0 && !this.f21321d.e()) {
-            return this.f21321d.g(lVar, yVar);
+        if (i10 != 0 && !this.f20180d.e()) {
+            return this.f20180d.g(lVar, yVar);
         }
         e(length);
-        x xVar = this.f21326i;
+        x xVar = this.f20185i;
         if (xVar != null && xVar.d()) {
-            return this.f21326i.c(lVar, yVar);
+            return this.f20185i.c(lVar, yVar);
         }
         lVar.e();
         if (i10 != 0) {
@@ -202,74 +202,74 @@ public final class a0 implements tc.k {
         } else {
             j10 = -1;
         }
-        if ((j10 != -1 && j10 < 4) || !lVar.c(this.f21320c.e(), 0, 4, true)) {
+        if ((j10 != -1 && j10 < 4) || !lVar.c(this.f20179c.e(), 0, 4, true)) {
             return -1;
         }
-        this.f21320c.U(0);
-        int q10 = this.f21320c.q();
+        this.f20179c.U(0);
+        int q10 = this.f20179c.q();
         if (q10 == 441) {
             return -1;
         }
         if (q10 == 442) {
-            lVar.n(this.f21320c.e(), 0, 10);
-            this.f21320c.U(9);
-            lVar.k((this.f21320c.H() & 7) + 14);
+            lVar.n(this.f20179c.e(), 0, 10);
+            this.f20179c.U(9);
+            lVar.k((this.f20179c.H() & 7) + 14);
             return 0;
         } else if (q10 == 443) {
-            lVar.n(this.f21320c.e(), 0, 2);
-            this.f21320c.U(0);
-            lVar.k(this.f21320c.N() + 6);
+            lVar.n(this.f20179c.e(), 0, 2);
+            this.f20179c.U(0);
+            lVar.k(this.f20179c.N() + 6);
             return 0;
         } else if (((q10 & (-256)) >> 8) != 1) {
             lVar.k(1);
             return 0;
         } else {
             int i11 = q10 & SetSpanOperation.SPAN_MAX_PRIORITY;
-            a aVar = (a) this.f21319b.get(i11);
-            if (!this.f21322e) {
+            a aVar = (a) this.f20178b.get(i11);
+            if (!this.f20181e) {
                 if (aVar == null) {
                     if (i11 == 189) {
                         mVar = new c();
-                        this.f21323f = true;
-                        this.f21325h = lVar.getPosition();
+                        this.f20182f = true;
+                        this.f20184h = lVar.getPosition();
                     } else if ((q10 & 224) == 192) {
                         mVar = new t();
-                        this.f21323f = true;
-                        this.f21325h = lVar.getPosition();
+                        this.f20182f = true;
+                        this.f20184h = lVar.getPosition();
                     } else if ((q10 & 240) == 224) {
                         mVar = new n();
-                        this.f21324g = true;
-                        this.f21325h = lVar.getPosition();
+                        this.f20183g = true;
+                        this.f20184h = lVar.getPosition();
                     } else {
                         mVar = null;
                     }
                     if (mVar != null) {
-                        mVar.f(this.f21327j, new i0.d(i11, IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER));
-                        aVar = new a(mVar, this.f21318a);
-                        this.f21319b.put(i11, aVar);
+                        mVar.f(this.f20186j, new i0.d(i11, IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER));
+                        aVar = new a(mVar, this.f20177a);
+                        this.f20178b.put(i11, aVar);
                     }
                 }
-                if (this.f21323f && this.f21324g) {
-                    j11 = this.f21325h + 8192;
+                if (this.f20182f && this.f20183g) {
+                    j11 = this.f20184h + 8192;
                 } else {
                     j11 = 1048576;
                 }
                 if (lVar.getPosition() > j11) {
-                    this.f21322e = true;
-                    this.f21327j.s();
+                    this.f20181e = true;
+                    this.f20186j.s();
                 }
             }
-            lVar.n(this.f21320c.e(), 0, 2);
-            this.f21320c.U(0);
-            int N = this.f21320c.N() + 6;
+            lVar.n(this.f20179c.e(), 0, 2);
+            this.f20179c.U(0);
+            int N = this.f20179c.N() + 6;
             if (aVar == null) {
                 lVar.k(N);
             } else {
-                this.f21320c.Q(N);
-                lVar.readFully(this.f21320c.e(), 0, N);
-                this.f21320c.U(6);
-                aVar.a(this.f21320c);
-                ne.h0 h0Var = this.f21320c;
+                this.f20179c.Q(N);
+                lVar.readFully(this.f20179c.e(), 0, N);
+                this.f20179c.U(6);
+                aVar.a(this.f20179c);
+                ne.h0 h0Var = this.f20179c;
                 h0Var.T(h0Var.b());
             }
             return 0;
@@ -292,10 +292,10 @@ public final class a0 implements tc.k {
     }
 
     public a0(s0 s0Var) {
-        this.f21318a = s0Var;
-        this.f21320c = new ne.h0((int) RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT);
-        this.f21319b = new SparseArray();
-        this.f21321d = new y();
+        this.f20177a = s0Var;
+        this.f20179c = new ne.h0((int) RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT);
+        this.f20178b = new SparseArray();
+        this.f20180d = new y();
     }
 
     @Override // tc.k

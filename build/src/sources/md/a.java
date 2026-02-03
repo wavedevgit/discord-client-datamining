@@ -7,24 +7,24 @@ import java.util.Arrays;
 import ne.w0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class a implements Metadata.b {
-    public static final Parcelable.Creator<a> CREATOR = new C0506a();
+    public static final Parcelable.Creator<a> CREATOR = new C0485a();
 
     /* renamed from: d  reason: collision with root package name */
-    public final String f38008d;
+    public final String f37805d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final byte[] f38009e;
+    public final byte[] f37806e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final int f38010i;
+    public final int f37807i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final int f38011o;
+    public final int f37808o;
 
     /* renamed from: md.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    class C0506a implements Parcelable.Creator {
-        C0506a() {
+    class C0485a implements Parcelable.Creator {
+        C0485a() {
         }
 
         @Override // android.os.Parcelable.Creator
@@ -40,7 +40,7 @@ public final class a implements Metadata.b {
         }
     }
 
-    /* synthetic */ a(Parcel parcel, C0506a c0506a) {
+    /* synthetic */ a(Parcel parcel, C0485a c0485a) {
         this(parcel);
     }
 
@@ -55,7 +55,7 @@ public final class a implements Metadata.b {
         }
         if (obj != null && a.class == obj.getClass()) {
             a aVar = (a) obj;
-            if (this.f38008d.equals(aVar.f38008d) && Arrays.equals(this.f38009e, aVar.f38009e) && this.f38010i == aVar.f38010i && this.f38011o == aVar.f38011o) {
+            if (this.f37805d.equals(aVar.f37805d) && Arrays.equals(this.f37806e, aVar.f37806e) && this.f37807i == aVar.f37807i && this.f37808o == aVar.f37808o) {
                 return true;
             }
         }
@@ -63,47 +63,47 @@ public final class a implements Metadata.b {
     }
 
     public int hashCode() {
-        return ((((((527 + this.f38008d.hashCode()) * 31) + Arrays.hashCode(this.f38009e)) * 31) + this.f38010i) * 31) + this.f38011o;
+        return ((((((527 + this.f37805d.hashCode()) * 31) + Arrays.hashCode(this.f37806e)) * 31) + this.f37807i) * 31) + this.f37808o;
     }
 
     public String toString() {
         String E;
-        int i10 = this.f38011o;
+        int i10 = this.f37808o;
         if (i10 != 1) {
             if (i10 != 23) {
                 if (i10 != 67) {
-                    E = w0.k1(this.f38009e);
+                    E = w0.k1(this.f37806e);
                 } else {
-                    E = String.valueOf(w0.l1(this.f38009e));
+                    E = String.valueOf(w0.l1(this.f37806e));
                 }
             } else {
-                E = String.valueOf(w0.j1(this.f38009e));
+                E = String.valueOf(w0.j1(this.f37806e));
             }
         } else {
-            E = w0.E(this.f38009e);
+            E = w0.E(this.f37806e);
         }
-        return "mdta: key=" + this.f38008d + ", value=" + E;
+        return "mdta: key=" + this.f37805d + ", value=" + E;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f38008d);
-        parcel.writeByteArray(this.f38009e);
-        parcel.writeInt(this.f38010i);
-        parcel.writeInt(this.f38011o);
+        parcel.writeString(this.f37805d);
+        parcel.writeByteArray(this.f37806e);
+        parcel.writeInt(this.f37807i);
+        parcel.writeInt(this.f37808o);
     }
 
     public a(String str, byte[] bArr, int i10, int i11) {
-        this.f38008d = str;
-        this.f38009e = bArr;
-        this.f38010i = i10;
-        this.f38011o = i11;
+        this.f37805d = str;
+        this.f37806e = bArr;
+        this.f37807i = i10;
+        this.f37808o = i11;
     }
 
     private a(Parcel parcel) {
-        this.f38008d = (String) w0.j(parcel.readString());
-        this.f38009e = (byte[]) w0.j(parcel.createByteArray());
-        this.f38010i = parcel.readInt();
-        this.f38011o = parcel.readInt();
+        this.f37805d = (String) w0.j(parcel.readString());
+        this.f37806e = (byte[]) w0.j(parcel.createByteArray());
+        this.f37807i = parcel.readInt();
+        this.f37808o = parcel.readInt();
     }
 }

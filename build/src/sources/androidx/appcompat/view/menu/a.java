@@ -11,45 +11,45 @@ import java.util.ArrayList;
 public abstract class a implements j {
 
     /* renamed from: d  reason: collision with root package name */
-    protected Context f1282d;
+    protected Context f1251d;
 
     /* renamed from: e  reason: collision with root package name */
-    protected Context f1283e;
+    protected Context f1252e;
 
     /* renamed from: i  reason: collision with root package name */
-    protected e f1284i;
+    protected e f1253i;
 
     /* renamed from: o  reason: collision with root package name */
-    protected LayoutInflater f1285o;
+    protected LayoutInflater f1254o;
 
     /* renamed from: p  reason: collision with root package name */
-    protected LayoutInflater f1286p;
+    protected LayoutInflater f1255p;
 
     /* renamed from: q  reason: collision with root package name */
-    private j.a f1287q;
+    private j.a f1256q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f1288r;
+    private int f1257r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f1289s;
+    private int f1258s;
 
     /* renamed from: t  reason: collision with root package name */
-    protected k f1290t;
+    protected k f1259t;
 
     /* renamed from: u  reason: collision with root package name */
-    private int f1291u;
+    private int f1260u;
 
     public a(Context context, int i10, int i11) {
-        this.f1282d = context;
-        this.f1285o = LayoutInflater.from(context);
-        this.f1288r = i10;
-        this.f1289s = i11;
+        this.f1251d = context;
+        this.f1254o = LayoutInflater.from(context);
+        this.f1257r = i10;
+        this.f1258s = i11;
     }
 
     @Override // androidx.appcompat.view.menu.j
     public void a(e eVar, boolean z10) {
-        j.a aVar = this.f1287q;
+        j.a aVar = this.f1256q;
         if (aVar != null) {
             aVar.a(eVar, z10);
         }
@@ -62,18 +62,18 @@ public abstract class a implements j {
 
     @Override // androidx.appcompat.view.menu.j
     public void c(j.a aVar) {
-        this.f1287q = aVar;
+        this.f1256q = aVar;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r2v4, types: [androidx.appcompat.view.menu.e] */
     @Override // androidx.appcompat.view.menu.j
     public boolean d(m mVar) {
-        j.a aVar = this.f1287q;
+        j.a aVar = this.f1256q;
         m mVar2 = mVar;
         if (aVar != null) {
             if (mVar == null) {
-                mVar2 = this.f1284i;
+                mVar2 = this.f1253i;
             }
             return aVar.b(mVar2);
         }
@@ -83,13 +83,13 @@ public abstract class a implements j {
     @Override // androidx.appcompat.view.menu.j
     public void e(boolean z10) {
         g gVar;
-        ViewGroup viewGroup = (ViewGroup) this.f1290t;
+        ViewGroup viewGroup = (ViewGroup) this.f1259t;
         if (viewGroup != null) {
-            e eVar = this.f1284i;
+            e eVar = this.f1253i;
             int i10 = 0;
             if (eVar != null) {
                 eVar.r();
-                ArrayList E = this.f1284i.E();
+                ArrayList E = this.f1253i.E();
                 int size = E.size();
                 int i11 = 0;
                 for (int i12 = 0; i12 < size; i12++) {
@@ -129,9 +129,9 @@ public abstract class a implements j {
 
     @Override // androidx.appcompat.view.menu.j
     public void h(Context context, e eVar) {
-        this.f1283e = context;
-        this.f1286p = LayoutInflater.from(context);
-        this.f1284i = eVar;
+        this.f1252e = context;
+        this.f1255p = LayoutInflater.from(context);
+        this.f1253i = eVar;
     }
 
     protected void i(View view, int i10) {
@@ -139,13 +139,13 @@ public abstract class a implements j {
         if (viewGroup != null) {
             viewGroup.removeView(view);
         }
-        ((ViewGroup) this.f1290t).addView(view, i10);
+        ((ViewGroup) this.f1259t).addView(view, i10);
     }
 
     public abstract void j(g gVar, k.a aVar);
 
     public k.a k(ViewGroup viewGroup) {
-        return (k.a) this.f1285o.inflate(this.f1289s, viewGroup, false);
+        return (k.a) this.f1254o.inflate(this.f1258s, viewGroup, false);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -155,7 +155,7 @@ public abstract class a implements j {
     }
 
     public j.a m() {
-        return this.f1287q;
+        return this.f1256q;
     }
 
     public View n(g gVar, View view, ViewGroup viewGroup) {
@@ -170,17 +170,17 @@ public abstract class a implements j {
     }
 
     public k o(ViewGroup viewGroup) {
-        if (this.f1290t == null) {
-            k kVar = (k) this.f1285o.inflate(this.f1288r, viewGroup, false);
-            this.f1290t = kVar;
-            kVar.a(this.f1284i);
+        if (this.f1259t == null) {
+            k kVar = (k) this.f1254o.inflate(this.f1257r, viewGroup, false);
+            this.f1259t = kVar;
+            kVar.a(this.f1253i);
             e(true);
         }
-        return this.f1290t;
+        return this.f1259t;
     }
 
     public void p(int i10) {
-        this.f1291u = i10;
+        this.f1260u = i10;
     }
 
     public abstract boolean q(int i10, g gVar);

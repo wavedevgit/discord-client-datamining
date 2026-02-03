@@ -3,12 +3,12 @@ package io.sentry.android.core;
 final class d2 implements q1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final d2 f28458a = new d2();
+    private static final d2 f28819a = new d2();
 
     private d2() {
     }
 
     public static d2 a() {
-        return f28458a;
+        return f28819a;
     }
 }

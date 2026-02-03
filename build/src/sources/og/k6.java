@@ -5,23 +5,23 @@ import ui.c;
 final class k6 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k6 f43359a = new k6();
+    static final k6 f43159a = new k6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43360b;
+    private static final ui.c f43160b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43361c;
+    private static final ui.c f43161c;
 
     static {
         c.b a10 = ui.c.a("inferenceCommonLogEvent");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43360b = a10.b(s1Var.b()).a();
+        f43160b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("imageInfo");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43361c = a11.b(s1Var2.b()).a();
+        f43161c = a11.b(s1Var2.b()).a();
     }
 
     private k6() {

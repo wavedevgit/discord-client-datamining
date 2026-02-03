@@ -10,24 +10,24 @@ import ze.x;
 final class a implements LoaderManager.a {
 
     /* renamed from: a  reason: collision with root package name */
-    final /* synthetic */ SignInHubActivity f14388a;
+    final /* synthetic */ SignInHubActivity f13356a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ a(SignInHubActivity signInHubActivity, x xVar) {
-        this.f14388a = signInHubActivity;
+        this.f13356a = signInHubActivity;
     }
 
     @Override // androidx.loader.app.LoaderManager.a
     public final /* bridge */ /* synthetic */ void b(b bVar, Object obj) {
         Void r32 = (Void) obj;
-        SignInHubActivity signInHubActivity = this.f14388a;
+        SignInHubActivity signInHubActivity = this.f13356a;
         signInHubActivity.setResult(SignInHubActivity.x(signInHubActivity), SignInHubActivity.y(signInHubActivity));
-        this.f14388a.finish();
+        this.f13356a.finish();
     }
 
     @Override // androidx.loader.app.LoaderManager.a
     public final b c(int i10, Bundle bundle) {
-        return new g(this.f14388a, e.b());
+        return new g(this.f13356a, e.b());
     }
 
     @Override // androidx.loader.app.LoaderManager.a

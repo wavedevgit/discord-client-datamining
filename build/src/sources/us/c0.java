@@ -1,72 +1,53 @@
 package us;
-
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.FunctionReferenceImpl;
-import kotlin.jvm.internal.Intrinsics;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class c0 implements l {
+public final class c0 extends ws.c0 {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final b0 f50640a;
+    /* renamed from: e  reason: collision with root package name */
+    private final h0 f50870e;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final int f50641b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final Integer f50642c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final int f50643d;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    /* synthetic */ class a extends FunctionReferenceImpl implements Function1 {
-        a(Object obj) {
-            super(1, obj, b.class, "getterNotNull", "getterNotNull(Ljava/lang/Object;)Ljava/lang/Object;", 0);
-        }
-
-        @Override // kotlin.jvm.functions.Function1
-        /* renamed from: a */
-        public final Integer invoke(Object obj) {
-            return (Integer) ((b) this.receiver).b(obj);
-        }
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public c0(us.h0 r5) {
+        /*
+            r4 = this;
+            java.lang.String r0 = "padding"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r5, r0)
+            us.l0 r0 = us.l0.f50946a
+            ws.b0 r0 = r0.c()
+            us.h0 r1 = us.h0.f50893e
+            r2 = 2
+            if (r5 != r1) goto L12
+            r1 = r2
+            goto L13
+        L12:
+            r1 = 1
+        L13:
+            us.h0 r3 = us.h0.f50894i
+            if (r5 != r3) goto L1c
+            java.lang.Integer r2 = java.lang.Integer.valueOf(r2)
+            goto L1d
+        L1c:
+            r2 = 0
+        L1d:
+            r4.<init>(r0, r1, r2)
+            r4.f50870e = r5
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: us.c0.<init>(us.h0):void");
     }
 
-    public c0(b0 field, int i10, Integer num) {
-        Intrinsics.checkNotNullParameter(field, "field");
-        this.f50640a = field;
-        this.f50641b = i10;
-        this.f50642c = num;
-        int e10 = field.e();
-        this.f50643d = e10;
-        if (i10 >= 0) {
-            if (e10 >= i10) {
-                if (num == null || num.intValue() > i10) {
-                    return;
-                }
-                throw new IllegalArgumentException(("The space padding (" + num + ") should be more than the minimum number of digits (" + i10 + ')').toString());
-            }
-            throw new IllegalArgumentException(("The maximum number of digits (" + e10 + ") is less than the minimum number of digits (" + i10 + ')').toString());
+    public boolean equals(Object obj) {
+        if ((obj instanceof c0) && this.f50870e == ((c0) obj).f50870e) {
+            return true;
         }
-        throw new IllegalArgumentException(("The minimum number of digits (" + i10 + ") is negative").toString());
+        return false;
     }
 
-    @Override // us.l
-    public vs.e a() {
-        vs.j jVar = new vs.j(new a(this.f50640a.b()), this.f50641b);
-        Integer num = this.f50642c;
-        if (num != null) {
-            return new vs.h(jVar, num.intValue());
-        }
-        return jVar;
-    }
-
-    @Override // us.l
-    public ws.q b() {
-        return ws.p.e(Integer.valueOf(this.f50641b), Integer.valueOf(this.f50643d), this.f50642c, this.f50640a.b(), this.f50640a.getName(), false, 32, null);
-    }
-
-    @Override // us.l
-    public /* bridge */ /* synthetic */ n c() {
-        return this.f50640a;
+    public int hashCode() {
+        return this.f50870e.hashCode();
     }
 }

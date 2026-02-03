@@ -6,14 +6,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var5 = dependencyMap;
     var0 = function arg0() {
-        _fun71017: for (var _fun71017_ip = 0;;) switch (_fun71017_ip) {
+        _fun71127: for (var _fun71127_ip = 0;;) switch (_fun71127_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.isPrivate;
                 var1 = var1.bind(var0)();
                 if (var1) {
-                    _fun71017_ip = 75;
-                    continue _fun71017
+                    _fun71127_ip = 75;
+                    continue _fun71127
                 }
             case 16:
                 var4 = _closure1_slot1;
@@ -23,8 +23,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = null;
                 var1 = var1 != var3;
                 if (!var1) {
-                    _fun71017_ip = 73;
-                    continue _fun71017
+                    _fun71127_ip = 73;
+                    continue _fun71127
                 }
             case 47:
                 var4 = var3.features;
@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.recipients;
                 var1 = var2.every;
                 var0 = function(arg0) { // Environment: var0
-                    _fun71018: for (var _fun71018_ip = 0;;) switch (_fun71018_ip) {
+                    _fun71128: for (var _fun71128_ip = 0;;) switch (_fun71128_ip) {
                         case 0:
                             var2 = _closure1_slot2;
                             var1 = var2.getUser;
@@ -47,8 +47,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = null;
                             var0 = var0 != var2;
                             if (!var0) {
-                                _fun71018_ip = 40;
-                                continue _fun71018
+                                _fun71128_ip = 40;
+                                continue _fun71128
                             }
                         case 30:
                             var1 = var2.isStaff;
@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/forwarding/isStaffToNonStaffForward.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun71019: for (var _fun71019_ip = 0;;) switch (_fun71019_ip) {
+        _fun71129: for (var _fun71129_ip = 0;;) switch (_fun71129_ip) {
             case 0:
                 var4 = arg1;
                 var2 = _closure1_slot2;
@@ -103,15 +103,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0.bind(var2)();
                 var0 = null;
                 if (!(var0 != var3)) {
-                    _fun71019_ip = 112;
-                    continue _fun71019
+                    _fun71129_ip = 112;
+                    continue _fun71129
                 }
             case 25:
                 var2 = var3.isStaff;
                 var2 = var2.bind(var3)();
                 if (!var2) {
-                    _fun71019_ip = 112;
-                    continue _fun71019
+                    _fun71129_ip = 112;
+                    continue _fun71129
                 }
             case 38:
                 var5 = _closure1_slot0;
@@ -121,8 +121,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.bind(var5)(var2);
                 var0 = var0 != var3;
                 if (!var0) {
-                    _fun71019_ip = 110;
-                    continue _fun71019
+                    _fun71129_ip = 110;
+                    continue _fun71129
                 }
             case 67:
                 var2 = _closure1_slot4;
@@ -131,13 +131,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = !var1;
                 var1 = !var2;
                 if (var2) {
-                    _fun71019_ip = 107;
-                    continue _fun71019
+                    _fun71129_ip = 107;
+                    continue _fun71129
                 }
             case 87:
                 var3 = var4.some;
                 var2 = function(arg0) { // Environment: var2
-                    _fun71020: for (var _fun71020_ip = 0;;) switch (_fun71020_ip) {
+                    _fun71130: for (var _fun71130_ip = 0;;) switch (_fun71130_ip) {
                         case 0:
                             var3 = _closure1_slot0;
                             var1 = var3.getChannel;
@@ -146,16 +146,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = null;
                             var0 = var0 != var4;
                             if (!var0) {
-                                _fun71020_ip = 62;
-                                continue _fun71020
+                                _fun71130_ip = 62;
+                                continue _fun71130
                             }
                         case 29:
                             var1 = var4.isPrivate;
                             var1 = var1.bind(var4)();
                             var1 = !var1;
                             if (!var1) {
-                                _fun71020_ip = 59;
-                                continue _fun71020
+                                _fun71130_ip = 59;
+                                continue _fun71130
                             }
                         case 45:
                             var3 = _closure1_slot4;
@@ -180,4 +180,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1410, 1613, 660, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1410, 1621, 660, 2]);

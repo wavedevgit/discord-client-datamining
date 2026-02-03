@@ -13,10 +13,10 @@ public interface e {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Handler f12872a;
+        private final Handler f11840a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final e f12873b;
+        private final e f11841b;
 
         public a(Handler handler, e eVar) {
             Handler handler2;
@@ -25,64 +25,64 @@ public interface e {
             } else {
                 handler2 = null;
             }
-            this.f12872a = handler2;
-            this.f12873b = eVar;
+            this.f11840a = handler2;
+            this.f11841b = eVar;
         }
 
         public static /* synthetic */ void d(a aVar, Format format, DecoderReuseEvaluation decoderReuseEvaluation) {
-            ((e) w0.j(aVar.f12873b)).C(format);
-            ((e) w0.j(aVar.f12873b)).n(format, decoderReuseEvaluation);
+            ((e) w0.j(aVar.f11841b)).C(format);
+            ((e) w0.j(aVar.f11841b)).n(format, decoderReuseEvaluation);
         }
 
         public static /* synthetic */ void i(a aVar, DecoderCounters decoderCounters) {
             aVar.getClass();
             decoderCounters.c();
-            ((e) w0.j(aVar.f12873b)).l(decoderCounters);
+            ((e) w0.j(aVar.f11841b)).l(decoderCounters);
         }
 
         public void k(final Exception exc) {
-            Handler handler = this.f12872a;
+            Handler handler = this.f11840a;
             if (handler != null) {
                 handler.post(new Runnable() { // from class: nc.j
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f12873b)).q(exc);
+                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f11841b)).q(exc);
                     }
                 });
             }
         }
 
         public void l(final Exception exc) {
-            Handler handler = this.f12872a;
+            Handler handler = this.f11840a;
             if (handler != null) {
                 handler.post(new Runnable() { // from class: nc.o
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f12873b)).a(exc);
+                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f11841b)).a(exc);
                     }
                 });
             }
         }
 
         public void m(final String str, final long j10, final long j11) {
-            Handler handler = this.f12872a;
+            Handler handler = this.f11840a;
             if (handler != null) {
                 handler.post(new Runnable() { // from class: nc.i
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f12873b)).f(str, j10, j11);
+                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f11841b)).f(str, j10, j11);
                     }
                 });
             }
         }
 
         public void n(final String str) {
-            Handler handler = this.f12872a;
+            Handler handler = this.f11840a;
             if (handler != null) {
                 handler.post(new Runnable() { // from class: nc.f
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f12873b)).e(str);
+                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f11841b)).e(str);
                     }
                 });
             }
@@ -90,7 +90,7 @@ public interface e {
 
         public void o(final DecoderCounters decoderCounters) {
             decoderCounters.c();
-            Handler handler = this.f12872a;
+            Handler handler = this.f11840a;
             if (handler != null) {
                 handler.post(new Runnable() { // from class: nc.m
                     @Override // java.lang.Runnable
@@ -102,19 +102,19 @@ public interface e {
         }
 
         public void p(final DecoderCounters decoderCounters) {
-            Handler handler = this.f12872a;
+            Handler handler = this.f11840a;
             if (handler != null) {
                 handler.post(new Runnable() { // from class: nc.l
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f12873b)).c(decoderCounters);
+                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f11841b)).c(decoderCounters);
                     }
                 });
             }
         }
 
         public void q(final Format format, final DecoderReuseEvaluation decoderReuseEvaluation) {
-            Handler handler = this.f12872a;
+            Handler handler = this.f11840a;
             if (handler != null) {
                 handler.post(new Runnable() { // from class: nc.n
                     @Override // java.lang.Runnable
@@ -126,36 +126,36 @@ public interface e {
         }
 
         public void r(final long j10) {
-            Handler handler = this.f12872a;
+            Handler handler = this.f11840a;
             if (handler != null) {
                 handler.post(new Runnable() { // from class: nc.k
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f12873b)).i(j10);
+                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f11841b)).i(j10);
                     }
                 });
             }
         }
 
         public void s(final boolean z10) {
-            Handler handler = this.f12872a;
+            Handler handler = this.f11840a;
             if (handler != null) {
                 handler.post(new Runnable() { // from class: nc.h
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f12873b)).onSkipSilenceEnabledChanged(z10);
+                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f11841b)).onSkipSilenceEnabledChanged(z10);
                     }
                 });
             }
         }
 
         public void t(final int i10, final long j10, final long j11) {
-            Handler handler = this.f12872a;
+            Handler handler = this.f11840a;
             if (handler != null) {
                 handler.post(new Runnable() { // from class: nc.g
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f12873b)).r(i10, j10, j11);
+                        ((com.google.android.exoplayer2.audio.e) w0.j(e.a.this.f11841b)).r(i10, j10, j11);
                     }
                 });
             }

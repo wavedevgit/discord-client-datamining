@@ -1,94 +1,88 @@
 package pu;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
-import qu.a;
-import qv.d;
+import pu.f;
+import wu.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c implements lu.b, qu.a {
+public final class c implements nu.a, f, wu.d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f46494a = new c();
+    public static final c f46629a = new c();
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    /* synthetic */ class a extends FunctionReferenceImpl implements Function2 {
+        a(Object obj) {
+            super(2, obj, c.class, "filterOrEmptyList", "filterOrEmptyList(Loperations/array/ArrayOperationInputData;LLogicEvaluator;)Ljava/util/List;", 0);
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        /* renamed from: a */
+        public final List invoke(b p02, h p12) {
+            Intrinsics.checkNotNullParameter(p02, "p0");
+            Intrinsics.checkNotNullParameter(p12, "p1");
+            return ((c) this.receiver).h(p02, p12);
+        }
+    }
 
     private c() {
     }
 
-    private final Object a(List list, Object obj, Object obj2) {
-        List list2;
-        if (!list.isEmpty()) {
-            obj2 = b(obj2, list);
+    /* JADX INFO: Access modifiers changed from: private */
+    public final List h(b bVar, h hVar) {
+        List b10 = bVar.b();
+        if (b10 == null) {
+            b10 = CollectionsKt.l();
         }
-        if (d(obj2, obj)) {
-            obj2 = null;
-            if (obj instanceof List) {
-                list2 = (List) obj;
-            } else {
-                list2 = null;
-            }
-            if (list2 != null) {
-                return qv.c.b(list2);
+        ArrayList arrayList = new ArrayList();
+        for (Object obj : b10) {
+            if (f46629a.i(hVar, obj, bVar.a(), bVar.c())) {
+                arrayList.add(obj);
             }
         }
-        return obj2;
+        return arrayList;
     }
 
-    private final Object b(Object obj, List list) {
-        Map map;
-        if (obj instanceof List) {
-            if (list.size() == 1) {
-                return ((List) obj).get(d.b((String) CollectionsKt.o0(list)));
-            }
-            return c(list, (List) obj);
+    private final boolean i(h hVar, Object obj, Map map, Object obj2) {
+        Object a10;
+        if (map != null && (a10 = hVar.a(map, obj)) != null) {
+            obj2 = a10;
         }
-        if (obj instanceof Map) {
-            obj = ((Map) obj).get(CollectionsKt.o0(list));
-            for (String str : CollectionsKt.f0(list, 1)) {
-                if (obj instanceof Map) {
-                    map = (Map) obj;
-                } else {
-                    map = null;
-                }
-                if (map != null) {
-                    obj = map.get(str);
-                } else {
-                    obj = null;
-                }
-            }
-        }
-        return obj;
+        return j(obj2);
     }
 
-    private final Object c(List list, List list2) {
-        String str = (String) CollectionsKt.firstOrNull(list);
-        if (str != null) {
-            Object q02 = CollectionsKt.q0(list2, d.b(str));
-            if (q02 instanceof List) {
-                return f46494a.c(list.subList(1, list.size()), (List) q02);
-            }
-            return CollectionsKt.q0(list2, d.b(str));
-        }
-        return null;
+    @Override // pu.a
+    public Object a(Map map, List list) {
+        return f.a.b(this, map, list);
     }
 
-    private final boolean d(Object obj, Object obj2) {
-        if ((Intrinsics.areEqual(obj, obj2) || obj == null) && (obj2 instanceof List) && ((List) obj2).size() > 1) {
-            return true;
-        }
-        return false;
+    @Override // pu.f
+    public Object b(Object obj, Object obj2, h hVar, Function2 function2) {
+        return f.a.c(this, obj, obj2, hVar, function2);
     }
 
-    public List e(Object obj) {
-        return a.C0585a.b(this, obj);
+    @Override // pu.a
+    public b c(List list, Object obj, h hVar) {
+        return f.a.a(this, list, obj, hVar);
     }
 
-    @Override // lu.b
-    public Object f(Object obj, Object obj2) {
-        List e10 = e(qv.a.c(obj));
-        if (e10 != null) {
-            return a(e10, obj, obj2);
-        }
-        return null;
+    @Override // nu.a
+    public Object d(Object obj, Object obj2, h evaluator) {
+        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
+        return b(obj, obj2, evaluator, new a(this));
+    }
+
+    @Override // rv.a
+    public List e(List list, Object obj, h hVar) {
+        return f.a.d(this, list, obj, hVar);
+    }
+
+    public boolean j(Object obj) {
+        return d.a.a(this, obj);
     }
 }

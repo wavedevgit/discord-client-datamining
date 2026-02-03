@@ -12,16 +12,16 @@ import java.security.NoSuchAlgorithmException;
 public class y implements x {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Runtime f12122a = null;
+    private final Runtime f11090a = null;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Method f12123b = null;
+    private final Method f11091b = null;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f12124c = null;
+    private final String f11092c = null;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f12125d = null;
+    private final String f11093d = null;
 
     private String b(String str) {
         try {

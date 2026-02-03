@@ -9,28 +9,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var9;
     var0 = function arg0, arg1() {
-        _fun66565: for (var _fun66565_ip = 0;;) switch (_fun66565_ip) {
+        _fun66623: for (var _fun66623_ip = 0;;) switch (_fun66623_ip) {
             case 0:
                 var5 = arg0;
                 var4 = arg1;
                 var0 = var5 === var4;
                 if (var0) {
-                    _fun66565_ip = 63;
-                    continue _fun66565
+                    _fun66623_ip = 63;
+                    continue _fun66623
                 }
             case 13:
                 var2 = null;
                 var1 = var2 != var5;
                 if (!var1) {
-                    _fun66565_ip = 26;
-                    continue _fun66565
+                    _fun66623_ip = 26;
+                    continue _fun66623
                 }
             case 22:
                 var1 = var2 != var4;
             case 26:
                 if (!var1) {
-                    _fun66565_ip = 60;
-                    continue _fun66565
+                    _fun66623_ip = 60;
+                    continue _fun66623
                 }
             case 29:
                 var6 = _closure1_slot1;
@@ -69,13 +69,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[1] = var6;
         var8 = _closure1_slot7;
         var10 = function() { // Environment: var0
-            _fun66567: for (var _fun66567_ip = 0;;) switch (_fun66567_ip) {
+            _fun66625: for (var _fun66625_ip = 0;;) switch (_fun66625_ip) {
                 case 0:
                     var2 = _closure2_slot0;
                     var0 = null;
                     if (!(var0 != var2)) {
-                        _fun66567_ip = 44;
-                        continue _fun66567
+                        _fun66625_ip = 44;
+                        continue _fun66625
                     }
                 case 13:
                     var5 = _closure1_slot4;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = _closure2_slot0;
                     var1 = var4.bind(var5)(var3, var1);
                     if (!(var0 == var1)) {
-                        _fun66567_ip = 48;
-                        continue _fun66567
+                        _fun66625_ip = 48;
+                        continue _fun66625
                     }
                 case 44:
                     var0 = undefined;
@@ -136,15 +136,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[0] = var6;
         var1[1] = var5;
         var0 = function() { // Environment: var0
-            _fun66569: for (var _fun66569_ip = 0;;) switch (_fun66569_ip) {
+            _fun66627: for (var _fun66627_ip = 0;;) switch (_fun66627_ip) {
                 case 0:
                     var2 = _closure2_slot0;
                     var1 = null;
                     var3 = var1 != var2;
                     var2 = undefined;
                     if (!var3) {
-                        _fun66569_ip = 45;
-                        continue _fun66569
+                        _fun66627_ip = 45;
+                        continue _fun66627
                     }
                 case 18:
                     var6 = _closure1_slot4;
@@ -155,13 +155,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 45:
                     var0 = _closure2_slot0;
                     if (!(var1 != var0)) {
-                        _fun66569_ip = 139;
-                        continue _fun66569
+                        _fun66627_ip = 139;
+                        continue _fun66627
                     }
                 case 53:
                     if (!(var1 != var2)) {
-                        _fun66569_ip = 139;
-                        continue _fun66569
+                        _fun66627_ip = 139;
+                        continue _fun66627
                     }
                 case 57:
                     var5 = _closure1_slot3;
@@ -173,8 +173,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.selfVideo = var5;
                     var1 = null;
                     if (!var4) {
-                        _fun66569_ip = 132;
-                        continue _fun66569
+                        _fun66627_ip = 132;
+                        continue _fun66627
                     }
                 case 98:
                     var4 = _closure1_slot3;
@@ -183,8 +183,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var3.bind(var4)(var2);
                     var2 = 'manual';
                     if (!var3) {
-                        _fun66569_ip = 129;
-                        continue _fun66569
+                        _fun66627_ip = 129;
+                        continue _fun66627
                     }
                 case 125:
                     var2 = 'auto';
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.VideoIconState = var5;
     var2.useStableVoiceParticipant = var4;
     var4 = function arg0, arg1() {
-        _fun66570: for (var _fun66570_ip = 0;;) switch (_fun66570_ip) {
+        _fun66628: for (var _fun66628_ip = 0;;) switch (_fun66628_ip) {
             case 0:
                 var4 = _closure1_slot8;
                 var3 = undefined;
@@ -273,64 +273,64 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var1 == var3;
                 var0 = null;
                 if (var4) {
-                    _fun66570_ip = 140;
-                    continue _fun66570
+                    _fun66628_ip = 140;
+                    continue _fun66628
                 }
             case 32:
                 var4 = var3.deaf;
                 if (var4) {
-                    _fun66570_ip = 127;
-                    continue _fun66570
+                    _fun66628_ip = 127;
+                    continue _fun66628
                 }
             case 41:
                 var4 = var3.selfDeaf;
                 if (var4) {
-                    _fun66570_ip = 115;
-                    continue _fun66570
+                    _fun66628_ip = 115;
+                    continue _fun66628
                 }
             case 50:
                 var4 = var3.mute;
                 if (var4) {
-                    _fun66570_ip = 103;
-                    continue _fun66570
+                    _fun66628_ip = 103;
+                    continue _fun66628
                 }
             case 59:
                 var4 = var3.isLocalMute;
                 if (var4) {
-                    _fun66570_ip = 91;
-                    continue _fun66570
+                    _fun66628_ip = 91;
+                    continue _fun66628
                 }
             case 68:
                 var3 = var3.selfMute;
                 var1 = null;
                 if (!var3) {
-                    _fun66570_ip = 89;
-                    continue _fun66570
+                    _fun66628_ip = 89;
+                    continue _fun66628
                 }
             case 79:
                 var3 = _closure1_slot5;
                 var1 = var3.MUTED;
             case 89:
-                _fun66570_ip = 101;
-                continue _fun66570;
+                _fun66628_ip = 101;
+                continue _fun66628;
             case 91:
                 var3 = _closure1_slot5;
                 var1 = var3.MUTED_LOCAL;
             case 101:
-                _fun66570_ip = 113;
-                continue _fun66570;
+                _fun66628_ip = 113;
+                continue _fun66628;
             case 103:
                 var3 = _closure1_slot5;
                 var1 = var3.MUTED_SERVER;
             case 113:
-                _fun66570_ip = 125;
-                continue _fun66570;
+                _fun66628_ip = 125;
+                continue _fun66628;
             case 115:
                 var3 = _closure1_slot5;
                 var1 = var3.DEAFENED;
             case 125:
-                _fun66570_ip = 137;
-                continue _fun66570;
+                _fun66628_ip = 137;
+                continue _fun66628;
             case 127:
                 var2 = _closure1_slot5;
                 var1 = var2.DEAFENED_SERVER;
@@ -343,7 +343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useMuteDeafenIconState = var4;
     var2.useStableVideoState = var3;
     var1 = function arg0, arg1() {
-        _fun66571: for (var _fun66571_ip = 0;;) switch (_fun66571_ip) {
+        _fun66629: for (var _fun66629_ip = 0;;) switch (_fun66629_ip) {
             case 0:
                 var4 = _closure1_slot9;
                 var2 = undefined;
@@ -354,41 +354,41 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var1 == var2;
                 var0 = null;
                 if (var4) {
-                    _fun66571_ip = 111;
-                    continue _fun66571
+                    _fun66629_ip = 111;
+                    continue _fun66629
                 }
             case 32:
                 var4 = var2.selfVideo;
                 var1 = null;
                 if (!var4) {
-                    _fun66571_ip = 108;
-                    continue _fun66571
+                    _fun66629_ip = 108;
+                    continue _fun66629
                 }
             case 43:
                 var5 = var2.localVideoDisabledState;
                 var4 = 'auto';
                 if (!(var4 !== var5)) {
-                    _fun66571_ip = 95;
-                    continue _fun66571
+                    _fun66629_ip = 95;
+                    continue _fun66629
                 }
             case 57:
                 var4 = var2.localVideoDisabledState;
                 var2 = 'manual';
                 if (!(var2 !== var4)) {
-                    _fun66571_ip = 83;
-                    continue _fun66571
+                    _fun66629_ip = 83;
+                    continue _fun66629
                 }
             case 71:
                 var2 = _closure1_slot6;
                 var2 = var2.VIDEO_ACTIVE;
-                _fun66571_ip = 93;
-                continue _fun66571;
+                _fun66629_ip = 93;
+                continue _fun66629;
             case 83:
                 var4 = _closure1_slot6;
                 var2 = var4.VIDEO_DISABLED_LOCAL;
             case 93:
-                _fun66571_ip = 105;
-                continue _fun66571;
+                _fun66629_ip = 105;
+                continue _fun66629;
             case 95:
                 var3 = _closure1_slot6;
                 var2 = var3.VIDEO_DISABLED_LOCAL_AUTO;
@@ -402,4 +402,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useVideoIconState = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3467, 3512, 628, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3476, 3521, 628, 566, 2]);

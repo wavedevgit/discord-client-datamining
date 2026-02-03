@@ -49,7 +49,7 @@ public final class ConnectionsRoleTagView extends FrameLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void configureConnectionsRoleTag_uESh2Cg$lambda$0(ChatEventHandler chatEventHandler, UserId userId, GuildId guildId, ChannelId channelId, ConnectionsRoleTag connectionsRoleTag, View view) {
-        chatEventHandler.onTapConnectionsRoleTag(UserId.m1145toStringimpl(userId.m1147unboximpl()), GuildId.m1080toStringimpl(guildId.m1082unboximpl()), ChannelId.m1067toStringimpl(channelId.m1069unboximpl()), connectionsRoleTag.getId());
+        chatEventHandler.onTapConnectionsRoleTag(UserId.m1144toStringimpl(userId.m1146unboximpl()), GuildId.m1079toStringimpl(guildId.m1081unboximpl()), ChannelId.m1066toStringimpl(channelId.m1068unboximpl()), connectionsRoleTag.getId());
     }
 
     /* renamed from: configureConnectionsRoleTag-uESh2Cg  reason: not valid java name */

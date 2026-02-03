@@ -47,4 +47,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createGlobalBinder = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12339, 12340, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12350, 12351, 2]);

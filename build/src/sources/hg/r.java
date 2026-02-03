@@ -3,13 +3,13 @@ package hg;
 final class r extends u {
 
     /* renamed from: s  reason: collision with root package name */
-    final /* synthetic */ o f27708s;
+    final /* synthetic */ o f26993s;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public r(s sVar, b bVar, CharSequence charSequence, o oVar) {
         super(bVar, charSequence);
-        this.f27708s = oVar;
+        this.f26993s = oVar;
     }
 
     @Override // hg.u
@@ -19,11 +19,11 @@ final class r extends u {
 
     @Override // hg.u
     final int d(int i10) {
-        CharSequence charSequence = this.f27712i;
+        CharSequence charSequence = this.f26997i;
         int length = charSequence.length();
         q.a(i10, length, "index");
         while (i10 < length) {
-            if (this.f27708s.a(charSequence.charAt(i10))) {
+            if (this.f26993s.a(charSequence.charAt(i10))) {
                 return i10;
             }
             i10++;

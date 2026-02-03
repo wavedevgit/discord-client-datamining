@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/native/SubscriptionAccountHoldNotice.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun59415: for (var _fun59415_ip = 0;;) switch (_fun59415_ip) {
+        _fun59473: for (var _fun59473_ip = 0;;) switch (_fun59473_ip) {
             case 0:
                 var0 = arg0;
                 var19 = var0.subscription;
@@ -90,8 +90,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.ACCOUNT_HOLD;
                 var0 = null;
                 if (!(var2 === var1)) {
-                    _fun59415_ip = 462;
-                    continue _fun59415
+                    _fun59473_ip = 462;
+                    continue _fun59473
                 }
             case 52:
                 var3 = _closure1_slot7;
@@ -207,4 +207,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 4077, 7286, 3932, 1234, 3100, 4868, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 4086, 7291, 3941, 1234, 3109, 4873, 2]);

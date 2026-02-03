@@ -13,16 +13,16 @@ import java.util.Set;
 final class f {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final String[] f14059c = {StackTraceHelper.NAME_KEY, "length", "last_touch_timestamp"};
+    private static final String[] f13027c = {StackTraceHelper.NAME_KEY, "length", "last_touch_timestamp"};
 
     /* renamed from: a  reason: collision with root package name */
-    private final pc.b f14060a;
+    private final pc.b f13028a;
 
     /* renamed from: b  reason: collision with root package name */
-    private String f14061b;
+    private String f13029b;
 
     public f(pc.b bVar) {
-        this.f14060a = bVar;
+        this.f13028a = bVar;
     }
 
     private static void a(SQLiteDatabase sQLiteDatabase, String str) {
@@ -30,8 +30,8 @@ final class f {
     }
 
     private Cursor c() {
-        ne.a.e(this.f14061b);
-        return this.f14060a.getReadableDatabase().query(this.f14061b, f14059c, null, null, null, null, null);
+        ne.a.e(this.f13029b);
+        return this.f13028a.getReadableDatabase().query(this.f13029b, f13027c, null, null, null, null, null);
     }
 
     private static String d(String str) {
@@ -55,13 +55,13 @@ final class f {
     public void e(long j10) {
         try {
             String hexString = Long.toHexString(j10);
-            this.f14061b = d(hexString);
-            if (pc.e.b(this.f14060a.getReadableDatabase(), 2, hexString) != 1) {
-                SQLiteDatabase writableDatabase = this.f14060a.getWritableDatabase();
+            this.f13029b = d(hexString);
+            if (pc.e.b(this.f13028a.getReadableDatabase(), 2, hexString) != 1) {
+                SQLiteDatabase writableDatabase = this.f13028a.getWritableDatabase();
                 writableDatabase.beginTransactionNonExclusive();
                 pc.e.d(writableDatabase, 2, hexString, 1);
-                a(writableDatabase, this.f14061b);
-                writableDatabase.execSQL("CREATE TABLE " + this.f14061b + " (name TEXT PRIMARY KEY NOT NULL,length INTEGER NOT NULL,last_touch_timestamp INTEGER NOT NULL)");
+                a(writableDatabase, this.f13029b);
+                writableDatabase.execSQL("CREATE TABLE " + this.f13029b + " (name TEXT PRIMARY KEY NOT NULL,length INTEGER NOT NULL,last_touch_timestamp INTEGER NOT NULL)");
                 writableDatabase.setTransactionSuccessful();
                 writableDatabase.endTransaction();
             }
@@ -71,22 +71,22 @@ final class f {
     }
 
     public void f(String str) {
-        ne.a.e(this.f14061b);
+        ne.a.e(this.f13029b);
         try {
-            this.f14060a.getWritableDatabase().delete(this.f14061b, "name = ?", new String[]{str});
+            this.f13028a.getWritableDatabase().delete(this.f13029b, "name = ?", new String[]{str});
         } catch (SQLException e10) {
             throw new pc.a(e10);
         }
     }
 
     public void g(Set set) {
-        ne.a.e(this.f14061b);
+        ne.a.e(this.f13029b);
         try {
-            SQLiteDatabase writableDatabase = this.f14060a.getWritableDatabase();
+            SQLiteDatabase writableDatabase = this.f13028a.getWritableDatabase();
             writableDatabase.beginTransactionNonExclusive();
             Iterator it = set.iterator();
             while (it.hasNext()) {
-                writableDatabase.delete(this.f14061b, "name = ?", new String[]{(String) it.next()});
+                writableDatabase.delete(this.f13029b, "name = ?", new String[]{(String) it.next()});
             }
             writableDatabase.setTransactionSuccessful();
             writableDatabase.endTransaction();
@@ -96,14 +96,14 @@ final class f {
     }
 
     public void h(String str, long j10, long j11) {
-        ne.a.e(this.f14061b);
+        ne.a.e(this.f13029b);
         try {
-            SQLiteDatabase writableDatabase = this.f14060a.getWritableDatabase();
+            SQLiteDatabase writableDatabase = this.f13028a.getWritableDatabase();
             ContentValues contentValues = new ContentValues();
             contentValues.put(StackTraceHelper.NAME_KEY, str);
             contentValues.put("length", Long.valueOf(j10));
             contentValues.put("last_touch_timestamp", Long.valueOf(j11));
-            writableDatabase.replaceOrThrow(this.f14061b, null, contentValues);
+            writableDatabase.replaceOrThrow(this.f13029b, null, contentValues);
         } catch (SQLException e10) {
             throw new pc.a(e10);
         }

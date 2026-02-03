@@ -3,13 +3,13 @@ package gf;
 public final class r {
 
     /* renamed from: b  reason: collision with root package name */
-    private static r f26978b;
+    private static r f26191b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final s f26979c = new s(0, false, false, 0, 0);
+    private static final s f26192c = new s(0, false, false, 0, 0);
 
     /* renamed from: a  reason: collision with root package name */
-    private s f26980a;
+    private s f26193a;
 
     private r() {
     }
@@ -18,10 +18,10 @@ public final class r {
         r rVar;
         synchronized (r.class) {
             try {
-                if (f26978b == null) {
-                    f26978b = new r();
+                if (f26191b == null) {
+                    f26191b = new r();
                 }
-                rVar = f26978b;
+                rVar = f26191b;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -30,18 +30,18 @@ public final class r {
     }
 
     public s a() {
-        return this.f26980a;
+        return this.f26193a;
     }
 
     public final synchronized void c(s sVar) {
         if (sVar == null) {
-            this.f26980a = f26979c;
+            this.f26193a = f26192c;
             return;
         }
-        s sVar2 = this.f26980a;
+        s sVar2 = this.f26193a;
         if (sVar2 != null && sVar2.f() >= sVar.f()) {
             return;
         }
-        this.f26980a = sVar;
+        this.f26193a = sVar;
     }
 }

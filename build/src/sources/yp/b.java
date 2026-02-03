@@ -1,14 +1,39 @@
 package yp;
 
-import com.withpersona.sdk2.inquiry.network.dto.ui.components.Button;
-import com.withpersona.sdk2.inquiry.shared.ui.ButtonWithLoadingIndicator;
+import android.os.Parcelable;
+import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StepStyles;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import kotlin.collections.o0;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b {
-    public static final ButtonWithLoadingIndicator a(a aVar, m5 uiComponentHelper, Button config) {
-        Intrinsics.checkNotNullParameter(aVar, "<this>");
-        Intrinsics.checkNotNullParameter(uiComponentHelper, "uiComponentHelper");
-        Intrinsics.checkNotNullParameter(config, "config");
-        return com.withpersona.sdk2.inquiry.steps.ui.components.f.f(aVar, uiComponentHelper, config);
+public interface b extends Parcelable {
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final Map f55160a = new LinkedHashMap();
+
+        public final a a(String str, Function1 cb2) {
+            Intrinsics.checkNotNullParameter(cb2, "cb");
+            if (str == null) {
+                return this;
+            }
+            this.f55160a.put(str, cb2);
+            return this;
+        }
+
+        public final List b() {
+            return o0.A(this.f55160a);
+        }
     }
+
+    List C0();
+
+    List getComponents();
+
+    StepStyles.UiStepStyle getStyles();
 }

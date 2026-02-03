@@ -29,76 +29,76 @@ import org.jetbrains.annotations.NotNull;
 public final class JavaResolverComponents {
 
     /* renamed from: a  reason: collision with root package name */
-    private final StorageManager f33908a;
+    private final StorageManager f33298a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final JavaClassFinder f33909b;
+    private final JavaClassFinder f33299b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final KotlinClassFinder f33910c;
+    private final KotlinClassFinder f33300c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final DeserializedDescriptorResolver f33911d;
+    private final DeserializedDescriptorResolver f33301d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final SignaturePropagator f33912e;
+    private final SignaturePropagator f33302e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final ErrorReporter f33913f;
+    private final ErrorReporter f33303f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final JavaResolverCache f33914g;
+    private final JavaResolverCache f33304g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final JavaPropertyInitializerEvaluator f33915h;
+    private final JavaPropertyInitializerEvaluator f33305h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final SamConversionResolver f33916i;
+    private final SamConversionResolver f33306i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final JavaSourceElementFactory f33917j;
+    private final JavaSourceElementFactory f33307j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final ModuleClassResolver f33918k;
+    private final ModuleClassResolver f33308k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final PackagePartProvider f33919l;
+    private final PackagePartProvider f33309l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final SupertypeLoopChecker f33920m;
+    private final SupertypeLoopChecker f33310m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final LookupTracker f33921n;
+    private final LookupTracker f33311n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final ModuleDescriptor f33922o;
+    private final ModuleDescriptor f33312o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final ReflectionTypes f33923p;
+    private final ReflectionTypes f33313p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final AnnotationTypeQualifierResolver f33924q;
+    private final AnnotationTypeQualifierResolver f33314q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final SignatureEnhancement f33925r;
+    private final SignatureEnhancement f33315r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final JavaClassesTracker f33926s;
+    private final JavaClassesTracker f33316s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final JavaResolverSettings f33927t;
+    private final JavaResolverSettings f33317t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final NewKotlinTypeChecker f33928u;
+    private final NewKotlinTypeChecker f33318u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final JavaTypeEnhancementState f33929v;
+    private final JavaTypeEnhancementState f33319v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final JavaModuleAnnotationsProvider f33930w;
+    private final JavaModuleAnnotationsProvider f33320w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final SyntheticJavaPartsProvider f33931x;
+    private final SyntheticJavaPartsProvider f33321x;
 
     public JavaResolverComponents(@NotNull StorageManager storageManager, @NotNull JavaClassFinder finder, @NotNull KotlinClassFinder kotlinClassFinder, @NotNull DeserializedDescriptorResolver deserializedDescriptorResolver, @NotNull SignaturePropagator signaturePropagator, @NotNull ErrorReporter errorReporter, @NotNull JavaResolverCache javaResolverCache, @NotNull JavaPropertyInitializerEvaluator javaPropertyInitializerEvaluator, @NotNull SamConversionResolver samConversionResolver, @NotNull JavaSourceElementFactory sourceElementFactory, @NotNull ModuleClassResolver moduleClassResolver, @NotNull PackagePartProvider packagePartProvider, @NotNull SupertypeLoopChecker supertypeLoopChecker, @NotNull LookupTracker lookupTracker, @NotNull ModuleDescriptor module, @NotNull ReflectionTypes reflectionTypes, @NotNull AnnotationTypeQualifierResolver annotationTypeQualifierResolver, @NotNull SignatureEnhancement signatureEnhancement, @NotNull JavaClassesTracker javaClassesTracker, @NotNull JavaResolverSettings settings, @NotNull NewKotlinTypeChecker kotlinTypeChecker, @NotNull JavaTypeEnhancementState javaTypeEnhancementState, @NotNull JavaModuleAnnotationsProvider javaModuleResolver, @NotNull SyntheticJavaPartsProvider syntheticPartsProvider) {
         Intrinsics.checkNotNullParameter(storageManager, "storageManager");
@@ -125,151 +125,151 @@ public final class JavaResolverComponents {
         Intrinsics.checkNotNullParameter(javaTypeEnhancementState, "javaTypeEnhancementState");
         Intrinsics.checkNotNullParameter(javaModuleResolver, "javaModuleResolver");
         Intrinsics.checkNotNullParameter(syntheticPartsProvider, "syntheticPartsProvider");
-        this.f33908a = storageManager;
-        this.f33909b = finder;
-        this.f33910c = kotlinClassFinder;
-        this.f33911d = deserializedDescriptorResolver;
-        this.f33912e = signaturePropagator;
-        this.f33913f = errorReporter;
-        this.f33914g = javaResolverCache;
-        this.f33915h = javaPropertyInitializerEvaluator;
-        this.f33916i = samConversionResolver;
-        this.f33917j = sourceElementFactory;
-        this.f33918k = moduleClassResolver;
-        this.f33919l = packagePartProvider;
-        this.f33920m = supertypeLoopChecker;
-        this.f33921n = lookupTracker;
-        this.f33922o = module;
-        this.f33923p = reflectionTypes;
-        this.f33924q = annotationTypeQualifierResolver;
-        this.f33925r = signatureEnhancement;
-        this.f33926s = javaClassesTracker;
-        this.f33927t = settings;
-        this.f33928u = kotlinTypeChecker;
-        this.f33929v = javaTypeEnhancementState;
-        this.f33930w = javaModuleResolver;
-        this.f33931x = syntheticPartsProvider;
+        this.f33298a = storageManager;
+        this.f33299b = finder;
+        this.f33300c = kotlinClassFinder;
+        this.f33301d = deserializedDescriptorResolver;
+        this.f33302e = signaturePropagator;
+        this.f33303f = errorReporter;
+        this.f33304g = javaResolverCache;
+        this.f33305h = javaPropertyInitializerEvaluator;
+        this.f33306i = samConversionResolver;
+        this.f33307j = sourceElementFactory;
+        this.f33308k = moduleClassResolver;
+        this.f33309l = packagePartProvider;
+        this.f33310m = supertypeLoopChecker;
+        this.f33311n = lookupTracker;
+        this.f33312o = module;
+        this.f33313p = reflectionTypes;
+        this.f33314q = annotationTypeQualifierResolver;
+        this.f33315r = signatureEnhancement;
+        this.f33316s = javaClassesTracker;
+        this.f33317t = settings;
+        this.f33318u = kotlinTypeChecker;
+        this.f33319v = javaTypeEnhancementState;
+        this.f33320w = javaModuleResolver;
+        this.f33321x = syntheticPartsProvider;
     }
 
     @NotNull
     public final AnnotationTypeQualifierResolver getAnnotationTypeQualifierResolver() {
-        return this.f33924q;
+        return this.f33314q;
     }
 
     @NotNull
     public final DeserializedDescriptorResolver getDeserializedDescriptorResolver() {
-        return this.f33911d;
+        return this.f33301d;
     }
 
     @NotNull
     public final ErrorReporter getErrorReporter() {
-        return this.f33913f;
+        return this.f33303f;
     }
 
     @NotNull
     public final JavaClassFinder getFinder() {
-        return this.f33909b;
+        return this.f33299b;
     }
 
     @NotNull
     public final JavaClassesTracker getJavaClassesTracker() {
-        return this.f33926s;
+        return this.f33316s;
     }
 
     @NotNull
     public final JavaModuleAnnotationsProvider getJavaModuleResolver() {
-        return this.f33930w;
+        return this.f33320w;
     }
 
     @NotNull
     public final JavaPropertyInitializerEvaluator getJavaPropertyInitializerEvaluator() {
-        return this.f33915h;
+        return this.f33305h;
     }
 
     @NotNull
     public final JavaResolverCache getJavaResolverCache() {
-        return this.f33914g;
+        return this.f33304g;
     }
 
     @NotNull
     public final JavaTypeEnhancementState getJavaTypeEnhancementState() {
-        return this.f33929v;
+        return this.f33319v;
     }
 
     @NotNull
     public final KotlinClassFinder getKotlinClassFinder() {
-        return this.f33910c;
+        return this.f33300c;
     }
 
     @NotNull
     public final NewKotlinTypeChecker getKotlinTypeChecker() {
-        return this.f33928u;
+        return this.f33318u;
     }
 
     @NotNull
     public final LookupTracker getLookupTracker() {
-        return this.f33921n;
+        return this.f33311n;
     }
 
     @NotNull
     public final ModuleDescriptor getModule() {
-        return this.f33922o;
+        return this.f33312o;
     }
 
     @NotNull
     public final ModuleClassResolver getModuleClassResolver() {
-        return this.f33918k;
+        return this.f33308k;
     }
 
     @NotNull
     public final PackagePartProvider getPackagePartProvider() {
-        return this.f33919l;
+        return this.f33309l;
     }
 
     @NotNull
     public final ReflectionTypes getReflectionTypes() {
-        return this.f33923p;
+        return this.f33313p;
     }
 
     @NotNull
     public final JavaResolverSettings getSettings() {
-        return this.f33927t;
+        return this.f33317t;
     }
 
     @NotNull
     public final SignatureEnhancement getSignatureEnhancement() {
-        return this.f33925r;
+        return this.f33315r;
     }
 
     @NotNull
     public final SignaturePropagator getSignaturePropagator() {
-        return this.f33912e;
+        return this.f33302e;
     }
 
     @NotNull
     public final JavaSourceElementFactory getSourceElementFactory() {
-        return this.f33917j;
+        return this.f33307j;
     }
 
     @NotNull
     public final StorageManager getStorageManager() {
-        return this.f33908a;
+        return this.f33298a;
     }
 
     @NotNull
     public final SupertypeLoopChecker getSupertypeLoopChecker() {
-        return this.f33920m;
+        return this.f33310m;
     }
 
     @NotNull
     public final SyntheticJavaPartsProvider getSyntheticPartsProvider() {
-        return this.f33931x;
+        return this.f33321x;
     }
 
     @NotNull
     public final JavaResolverComponents replace(@NotNull JavaResolverCache javaResolverCache) {
         Intrinsics.checkNotNullParameter(javaResolverCache, "javaResolverCache");
-        return new JavaResolverComponents(this.f33908a, this.f33909b, this.f33910c, this.f33911d, this.f33912e, this.f33913f, javaResolverCache, this.f33915h, this.f33916i, this.f33917j, this.f33918k, this.f33919l, this.f33920m, this.f33921n, this.f33922o, this.f33923p, this.f33924q, this.f33925r, this.f33926s, this.f33927t, this.f33928u, this.f33929v, this.f33930w, null, 8388608, null);
+        return new JavaResolverComponents(this.f33298a, this.f33299b, this.f33300c, this.f33301d, this.f33302e, this.f33303f, javaResolverCache, this.f33305h, this.f33306i, this.f33307j, this.f33308k, this.f33309l, this.f33310m, this.f33311n, this.f33312o, this.f33313p, this.f33314q, this.f33315r, this.f33316s, this.f33317t, this.f33318u, this.f33319v, this.f33320w, null, 8388608, null);
     }
 
     public /* synthetic */ JavaResolverComponents(StorageManager storageManager, JavaClassFinder javaClassFinder, KotlinClassFinder kotlinClassFinder, DeserializedDescriptorResolver deserializedDescriptorResolver, SignaturePropagator signaturePropagator, ErrorReporter errorReporter, JavaResolverCache javaResolverCache, JavaPropertyInitializerEvaluator javaPropertyInitializerEvaluator, SamConversionResolver samConversionResolver, JavaSourceElementFactory javaSourceElementFactory, ModuleClassResolver moduleClassResolver, PackagePartProvider packagePartProvider, SupertypeLoopChecker supertypeLoopChecker, LookupTracker lookupTracker, ModuleDescriptor moduleDescriptor, ReflectionTypes reflectionTypes, AnnotationTypeQualifierResolver annotationTypeQualifierResolver, SignatureEnhancement signatureEnhancement, JavaClassesTracker javaClassesTracker, JavaResolverSettings javaResolverSettings, NewKotlinTypeChecker newKotlinTypeChecker, JavaTypeEnhancementState javaTypeEnhancementState, JavaModuleAnnotationsProvider javaModuleAnnotationsProvider, SyntheticJavaPartsProvider syntheticJavaPartsProvider, int i10, DefaultConstructorMarker defaultConstructorMarker) {

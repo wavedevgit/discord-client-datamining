@@ -83,7 +83,7 @@ public final class AppMessageEmbedAccessory extends MessageAccessory {
         }
         if (obj instanceof AppMessageEmbedAccessory) {
             AppMessageEmbedAccessory appMessageEmbedAccessory = (AppMessageEmbedAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, appMessageEmbedAccessory.messageId) && Intrinsics.areEqual(this.margins, appMessageEmbedAccessory.margins) && this.codedLinkIndex == appMessageEmbedAccessory.codedLinkIndex && Intrinsics.areEqual(this.appMessageEmbed, appMessageEmbedAccessory.appMessageEmbed) && this.constrainedWidth == appMessageEmbedAccessory.constrainedWidth;
+            return MessageId.m1089equalsimpl0(this.messageId, appMessageEmbedAccessory.messageId) && Intrinsics.areEqual(this.margins, appMessageEmbedAccessory.margins) && this.codedLinkIndex == appMessageEmbedAccessory.codedLinkIndex && Intrinsics.areEqual(this.appMessageEmbed, appMessageEmbedAccessory.appMessageEmbed) && this.constrainedWidth == appMessageEmbedAccessory.constrainedWidth;
         }
         return false;
     }
@@ -114,17 +114,17 @@ public final class AppMessageEmbedAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (((((((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + Integer.hashCode(this.codedLinkIndex)) * 31) + this.appMessageEmbed.hashCode()) * 31) + Integer.hashCode(this.constrainedWidth);
+        return (((((((MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + Integer.hashCode(this.codedLinkIndex)) * 31) + this.appMessageEmbed.hashCode()) * 31) + Integer.hashCode(this.constrainedWidth);
     }
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         MessageMargins messageMargins = this.margins;
         int i10 = this.codedLinkIndex;
         AppMessageEmbedImpl appMessageEmbedImpl = this.appMessageEmbed;
         int i11 = this.constrainedWidth;
-        return "AppMessageEmbedAccessory(messageId=" + m1093toStringimpl + ", margins=" + messageMargins + ", codedLinkIndex=" + i10 + ", appMessageEmbed=" + appMessageEmbedImpl + ", constrainedWidth=" + i11 + ")";
+        return "AppMessageEmbedAccessory(messageId=" + m1092toStringimpl + ", margins=" + messageMargins + ", codedLinkIndex=" + i10 + ", appMessageEmbed=" + appMessageEmbedImpl + ", constrainedWidth=" + i11 + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

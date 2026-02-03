@@ -1,33 +1,44 @@
 package mv;
 
-import kotlin.jvm.internal.Intrinsics;
-/* JADX INFO: Access modifiers changed from: package-private */
+import com.squareup.moshi.j;
+import com.squareup.moshi.m;
+import lv.h;
+import okhttp3.ResponseBody;
+import okio.BufferedSource;
+import okio.ByteString;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c extends k {
+final class c implements h {
 
-    /* renamed from: e  reason: collision with root package name */
-    private final j f39447e;
+    /* renamed from: b  reason: collision with root package name */
+    private static final ByteString f39510b = ByteString.f("EFBBBF");
 
-    /* renamed from: i  reason: collision with root package name */
-    private final int f39448i;
+    /* renamed from: a  reason: collision with root package name */
+    private final com.squareup.moshi.h f39511a;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public c(j replaceData, int i10) {
-        super(null);
-        Intrinsics.checkNotNullParameter(replaceData, "replaceData");
-        this.f39447e = replaceData;
-        this.f39448i = i10;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c(com.squareup.moshi.h hVar) {
+        this.f39511a = hVar;
     }
 
-    public j a() {
-        return this.f39447e;
-    }
-
-    @Override // kotlin.jvm.functions.Function0
+    @Override // lv.h
     /* renamed from: b */
-    public String invoke() {
-        String b10;
-        b10 = l.b(a().c(), a().b(), a().a(), this.f39448i);
-        return b10;
+    public Object a(ResponseBody responseBody) {
+        BufferedSource source = responseBody.source();
+        try {
+            ByteString byteString = f39510b;
+            if (source.p0(0L, byteString)) {
+                source.skip(byteString.G());
+            }
+            m B = m.B(source);
+            Object fromJson = this.f39511a.fromJson(B);
+            if (B.E() == m.c.END_DOCUMENT) {
+                responseBody.close();
+                return fromJson;
+            }
+            throw new j("JSON document was not fully consumed.");
+        } catch (Throwable th2) {
+            responseBody.close();
+            throw th2;
+        }
     }
 }

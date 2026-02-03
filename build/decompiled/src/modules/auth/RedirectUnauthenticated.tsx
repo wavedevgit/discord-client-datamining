@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var1 = function() {
-        _fun107042: for (var _fun107042_ip = 0;;) switch (_fun107042_ip) {
+        _fun107102: for (var _fun107102_ip = 0;;) switch (_fun107102_ip) {
             case 0:
                 var0 = global;
                 var1 = var0.location;
@@ -17,8 +17,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var1 + var0;
                 var0 = _closure1_slot3;
                 if (var0) {
-                    _fun107042_ip = 78;
-                    continue _fun107042
+                    _fun107102_ip = 78;
+                    continue _fun107102
                 }
             case 40:
                 var3 = _closure1_slot0;
@@ -30,8 +30,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.getLoginPath;
                 var0 = false;
                 var0 = var2.bind(var3)(var4, var0);
-                _fun107042_ip = 88;
-                continue _fun107042;
+                _fun107102_ip = 88;
+                continue _fun107102;
             case 78:
                 var1 = _closure1_slot2;
                 var0 = var1.REGISTER;
@@ -93,4 +93,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.getRedirectPath = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 662, 33, 485, 3209, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 662, 33, 485, 3218, 2]);

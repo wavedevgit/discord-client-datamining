@@ -5,7 +5,7 @@ import ui.c;
 final class ga implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ga f45345a = new ga();
+    static final ga f45303a = new ga();
 
     static {
         c.b a10 = ui.c.a("detectorMode");

@@ -1,9 +1,9 @@
 package net.time4j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class h extends kt.e implements e {
+final class h extends mt.e implements e {
 
     /* renamed from: d  reason: collision with root package name */
-    static final h f40501d = new h();
+    static final h f40540d = new h();
     private static final long serialVersionUID = -6519899440006935829L;
 
     private h() {
@@ -11,37 +11,37 @@ final class h extends kt.e implements e {
     }
 
     private Object readResolve() {
-        return f40501d;
+        return f40540d;
     }
 
-    @Override // kt.p
+    @Override // mt.p
     public boolean C() {
         return false;
     }
 
-    @Override // kt.e
+    @Override // mt.e
     protected boolean E() {
         return true;
     }
 
-    @Override // kt.p
+    @Override // mt.p
     /* renamed from: F */
-    public f0 e() {
-        return f0.f40442p;
+    public f0 f() {
+        return f0.f40481p;
     }
 
-    @Override // kt.p
+    @Override // mt.p
     /* renamed from: G */
     public f0 A() {
-        return f0.f40441o;
+        return f0.f40480o;
     }
 
-    @Override // kt.p
+    @Override // mt.p
     public Class getType() {
         return f0.class;
     }
 
-    @Override // kt.p
+    @Override // mt.p
     public boolean y() {
         return true;
     }

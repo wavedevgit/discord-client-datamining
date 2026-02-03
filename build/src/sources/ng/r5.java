@@ -5,30 +5,30 @@ import ui.c;
 final class r5 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final r5 f41458a = new r5();
+    static final r5 f41497a = new r5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41459b;
+    private static final ui.c f41498b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41460c;
+    private static final ui.c f41499c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41461d;
+    private static final ui.c f41500d;
 
     static {
         c.b a10 = ui.c.a("languageOption");
         f fVar = new f();
         fVar.a(3);
-        f41459b = a10.b(fVar.b()).a();
+        f41498b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("isUsingLegacyApi");
         f fVar2 = new f();
         fVar2.a(4);
-        f41460c = a11.b(fVar2.b()).a();
+        f41499c = a11.b(fVar2.b()).a();
         c.b a12 = ui.c.a("sdkVersion");
         f fVar3 = new f();
         fVar3.a(5);
-        f41461d = a12.b(fVar3.b()).a();
+        f41500d = a12.b(fVar3.b()).a();
     }
 
     private r5() {

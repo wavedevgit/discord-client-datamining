@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
-import jr.h;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
 import kotlin.collections.m0;
@@ -44,6 +43,7 @@ import kotlin.reflect.jvm.internal.impl.types.TypeProjectionImpl;
 import kotlin.reflect.jvm.internal.impl.types.Variance;
 import kotlin.reflect.jvm.internal.impl.types.checker.KotlinTypeRefiner;
 import kotlin.reflect.jvm.internal.impl.utils.addToStdlib.AddToStdlibKt;
+import lr.h;
 import org.jetbrains.annotations.NotNull;
 @SourceDebugExtension({"SMAP\nFunctionClassDescriptor.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FunctionClassDescriptor.kt\norg/jetbrains/kotlin/builtins/functions/FunctionClassDescriptor\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,146:1\n1563#2:147\n1634#2,3:148\n*S KotlinDebug\n*F\n+ 1 FunctionClassDescriptor.kt\norg/jetbrains/kotlin/builtins/functions/FunctionClassDescriptor\n*L\n54#1:147\n54#1:148,3\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -52,34 +52,34 @@ public final class FunctionClassDescriptor extends AbstractClassDescriptor {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: x  reason: collision with root package name */
-    private static final ClassId f33258x;
+    private static final ClassId f32648x;
 
     /* renamed from: y  reason: collision with root package name */
-    private static final ClassId f33259y;
+    private static final ClassId f32649y;
 
     /* renamed from: p  reason: collision with root package name */
-    private final StorageManager f33260p;
+    private final StorageManager f32650p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final PackageFragmentDescriptor f33261q;
+    private final PackageFragmentDescriptor f32651q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final FunctionTypeKind f33262r;
+    private final FunctionTypeKind f32652r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final int f33263s;
+    private final int f32653s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final a f33264t;
+    private final a f32654t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final FunctionClassScope f33265u;
+    private final FunctionClassScope f32655u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final List f33266v;
+    private final List f32656v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final FunctionClassKind f33267w;
+    private final FunctionClassKind f32657w;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -94,18 +94,18 @@ public final class FunctionClassDescriptor extends AbstractClassDescriptor {
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private final class a extends AbstractClassTypeConstructor {
         public a() {
-            super(FunctionClassDescriptor.this.f33260p);
+            super(FunctionClassDescriptor.this.f32650p);
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.types.AbstractClassTypeConstructor, kotlin.reflect.jvm.internal.impl.types.ClassifierBasedTypeConstructor, kotlin.reflect.jvm.internal.impl.types.TypeConstructor
         /* renamed from: B */
-        public FunctionClassDescriptor mo1200getDeclarationDescriptor() {
+        public FunctionClassDescriptor mo1197getDeclarationDescriptor() {
             return FunctionClassDescriptor.this;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
         public List getParameters() {
-            return FunctionClassDescriptor.this.f33266v;
+            return FunctionClassDescriptor.this.f32656v;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
@@ -119,21 +119,21 @@ public final class FunctionClassDescriptor extends AbstractClassDescriptor {
             FunctionTypeKind functionTypeKind = FunctionClassDescriptor.this.getFunctionTypeKind();
             FunctionTypeKind.Function function = FunctionTypeKind.Function.INSTANCE;
             if (Intrinsics.areEqual(functionTypeKind, function)) {
-                o10 = CollectionsKt.e(FunctionClassDescriptor.f33258x);
+                o10 = CollectionsKt.e(FunctionClassDescriptor.f32648x);
             } else if (Intrinsics.areEqual(functionTypeKind, FunctionTypeKind.KFunction.INSTANCE)) {
-                o10 = CollectionsKt.o(FunctionClassDescriptor.f33259y, new ClassId(StandardNames.BUILT_INS_PACKAGE_FQ_NAME, function.numberedClassName(FunctionClassDescriptor.this.getArity())));
+                o10 = CollectionsKt.o(FunctionClassDescriptor.f32649y, new ClassId(StandardNames.BUILT_INS_PACKAGE_FQ_NAME, function.numberedClassName(FunctionClassDescriptor.this.getArity())));
             } else {
                 FunctionTypeKind.SuspendFunction suspendFunction = FunctionTypeKind.SuspendFunction.INSTANCE;
                 if (Intrinsics.areEqual(functionTypeKind, suspendFunction)) {
-                    o10 = CollectionsKt.e(FunctionClassDescriptor.f33258x);
+                    o10 = CollectionsKt.e(FunctionClassDescriptor.f32648x);
                 } else if (Intrinsics.areEqual(functionTypeKind, FunctionTypeKind.KSuspendFunction.INSTANCE)) {
-                    o10 = CollectionsKt.o(FunctionClassDescriptor.f33259y, new ClassId(StandardNames.COROUTINES_PACKAGE_FQ_NAME, suspendFunction.numberedClassName(FunctionClassDescriptor.this.getArity())));
+                    o10 = CollectionsKt.o(FunctionClassDescriptor.f32649y, new ClassId(StandardNames.COROUTINES_PACKAGE_FQ_NAME, suspendFunction.numberedClassName(FunctionClassDescriptor.this.getArity())));
                 } else {
                     AddToStdlibKt.shouldNotBeCalled$default(null, 1, null);
                     throw new h();
                 }
             }
-            ModuleDescriptor containingDeclaration = FunctionClassDescriptor.this.f33261q.getContainingDeclaration();
+            ModuleDescriptor containingDeclaration = FunctionClassDescriptor.this.f32651q.getContainingDeclaration();
             List<ClassId> list = o10;
             ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
             for (ClassId classId : list) {
@@ -158,7 +158,7 @@ public final class FunctionClassDescriptor extends AbstractClassDescriptor {
         }
 
         public String toString() {
-            return mo1200getDeclarationDescriptor().toString();
+            return mo1197getDeclarationDescriptor().toString();
         }
     }
 
@@ -166,11 +166,11 @@ public final class FunctionClassDescriptor extends AbstractClassDescriptor {
         FqName fqName = StandardNames.BUILT_INS_PACKAGE_FQ_NAME;
         Name identifier = Name.identifier("Function");
         Intrinsics.checkNotNullExpressionValue(identifier, "identifier(...)");
-        f33258x = new ClassId(fqName, identifier);
+        f32648x = new ClassId(fqName, identifier);
         FqName fqName2 = StandardNames.KOTLIN_REFLECT_FQ_NAME;
         Name identifier2 = Name.identifier("KFunction");
         Intrinsics.checkNotNullExpressionValue(identifier2, "identifier(...)");
-        f33259y = new ClassId(fqName2, identifier2);
+        f32649y = new ClassId(fqName2, identifier2);
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -179,12 +179,12 @@ public final class FunctionClassDescriptor extends AbstractClassDescriptor {
         Intrinsics.checkNotNullParameter(storageManager, "storageManager");
         Intrinsics.checkNotNullParameter(containingDeclaration, "containingDeclaration");
         Intrinsics.checkNotNullParameter(functionTypeKind, "functionTypeKind");
-        this.f33260p = storageManager;
-        this.f33261q = containingDeclaration;
-        this.f33262r = functionTypeKind;
-        this.f33263s = i10;
-        this.f33264t = new a();
-        this.f33265u = new FunctionClassScope(storageManager, this);
+        this.f32650p = storageManager;
+        this.f32651q = containingDeclaration;
+        this.f32652r = functionTypeKind;
+        this.f32653s = i10;
+        this.f32654t = new a();
+        this.f32655u = new FunctionClassScope(storageManager, this);
         ArrayList arrayList = new ArrayList();
         IntRange intRange = new IntRange(1, i10);
         ArrayList arrayList2 = new ArrayList(CollectionsKt.w(intRange, 10));
@@ -196,15 +196,15 @@ public final class FunctionClassDescriptor extends AbstractClassDescriptor {
             sb2.append('P');
             sb2.append(nextInt);
             b(arrayList, this, variance, sb2.toString());
-            arrayList2.add(Unit.f33074a);
+            arrayList2.add(Unit.f32464a);
         }
         b(arrayList, this, Variance.OUT_VARIANCE, "R");
-        this.f33266v = CollectionsKt.h1(arrayList);
-        this.f33267w = FunctionClassKind.Companion.getFunctionClassKind(this.f33262r);
+        this.f32656v = CollectionsKt.h1(arrayList);
+        this.f32657w = FunctionClassKind.Companion.getFunctionClassKind(this.f32652r);
     }
 
     private static final void b(ArrayList arrayList, FunctionClassDescriptor functionClassDescriptor, Variance variance, String str) {
-        arrayList.add(TypeParameterDescriptorImpl.createWithDefaultBound(functionClassDescriptor, Annotations.Companion.getEMPTY(), false, variance, Name.identifier(str), arrayList.size(), functionClassDescriptor.f33260p));
+        arrayList.add(TypeParameterDescriptorImpl.createWithDefaultBound(functionClassDescriptor, Annotations.Companion.getEMPTY(), false, variance, Name.identifier(str), arrayList.size(), functionClassDescriptor.f32650p));
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -212,7 +212,7 @@ public final class FunctionClassDescriptor extends AbstractClassDescriptor {
     /* renamed from: c */
     public FunctionClassScope getUnsubstitutedMemberScope(KotlinTypeRefiner kotlinTypeRefiner) {
         Intrinsics.checkNotNullParameter(kotlinTypeRefiner, "kotlinTypeRefiner");
-        return this.f33265u;
+        return this.f32655u;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotated
@@ -222,7 +222,7 @@ public final class FunctionClassDescriptor extends AbstractClassDescriptor {
     }
 
     public final int getArity() {
-        return this.f33263s;
+        return this.f32653s;
     }
 
     public Void getCompanionObjectDescriptor() {
@@ -232,12 +232,12 @@ public final class FunctionClassDescriptor extends AbstractClassDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptorWithTypeParameters
     @NotNull
     public List<TypeParameterDescriptor> getDeclaredTypeParameters() {
-        return this.f33266v;
+        return this.f32656v;
     }
 
     @NotNull
     public final FunctionTypeKind getFunctionTypeKind() {
-        return this.f33262r;
+        return this.f32652r;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
@@ -263,7 +263,7 @@ public final class FunctionClassDescriptor extends AbstractClassDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptor
     @NotNull
     public TypeConstructor getTypeConstructor() {
-        return this.f33264t;
+        return this.f32654t;
     }
 
     public Void getUnsubstitutedPrimaryConstructor() {
@@ -337,7 +337,7 @@ public final class FunctionClassDescriptor extends AbstractClassDescriptor {
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     /* renamed from: getCompanionObjectDescriptor  reason: collision with other method in class */
-    public /* bridge */ /* synthetic */ ClassDescriptor mo1194getCompanionObjectDescriptor() {
+    public /* bridge */ /* synthetic */ ClassDescriptor mo1191getCompanionObjectDescriptor() {
         return (ClassDescriptor) getCompanionObjectDescriptor();
     }
 
@@ -350,7 +350,7 @@ public final class FunctionClassDescriptor extends AbstractClassDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorNonRoot, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor
     @NotNull
     public PackageFragmentDescriptor getContainingDeclaration() {
-        return this.f33261q;
+        return this.f32651q;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
@@ -367,7 +367,7 @@ public final class FunctionClassDescriptor extends AbstractClassDescriptor {
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     /* renamed from: getUnsubstitutedPrimaryConstructor  reason: collision with other method in class */
-    public /* bridge */ /* synthetic */ ClassConstructorDescriptor mo1195getUnsubstitutedPrimaryConstructor() {
+    public /* bridge */ /* synthetic */ ClassConstructorDescriptor mo1192getUnsubstitutedPrimaryConstructor() {
         return (ClassConstructorDescriptor) getUnsubstitutedPrimaryConstructor();
     }
 }

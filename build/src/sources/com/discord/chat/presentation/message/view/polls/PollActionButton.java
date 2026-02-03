@@ -59,28 +59,28 @@ public final class PollActionButton extends FrameLayout {
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind_urJ__Hs$lambda$1$lambda$0(PollAction pollAction, Function3 function3, long j10, String str, View view) {
         if (pollAction.getType() != null) {
-            function3.invoke(ChannelId.m1060boximpl(j10), MessageId.m1086boximpl(str), pollAction.getType());
+            function3.invoke(ChannelId.m1059boximpl(j10), MessageId.m1085boximpl(str), pollAction.getType());
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind_urJ__Hs$lambda$3$lambda$2(PollAction pollAction, Function3 function3, long j10, String str, View view) {
         if (pollAction.getType() != null) {
-            function3.invoke(ChannelId.m1060boximpl(j10), MessageId.m1086boximpl(str), pollAction.getType());
+            function3.invoke(ChannelId.m1059boximpl(j10), MessageId.m1085boximpl(str), pollAction.getType());
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind_urJ__Hs$lambda$5$lambda$4(PollAction pollAction, Function3 function3, long j10, String str, View view) {
         if (pollAction.getType() != null) {
-            function3.invoke(ChannelId.m1060boximpl(j10), MessageId.m1086boximpl(str), pollAction.getType());
+            function3.invoke(ChannelId.m1059boximpl(j10), MessageId.m1085boximpl(str), pollAction.getType());
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind_urJ__Hs$lambda$7$lambda$6(PollAction pollAction, Function3 function3, long j10, String str, View view) {
         if (pollAction.getType() != null) {
-            function3.invoke(ChannelId.m1060boximpl(j10), MessageId.m1086boximpl(str), pollAction.getType());
+            function3.invoke(ChannelId.m1059boximpl(j10), MessageId.m1085boximpl(str), pollAction.getType());
         }
     }
 

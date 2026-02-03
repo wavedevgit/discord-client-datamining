@@ -3,30 +3,30 @@ package b0;
 class j {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f6182a;
+    public final int f6228a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final String f6183b;
+    public final String f6229b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f6184c;
+    public final int f6230c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f6185d;
+    public final int f6231d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j(String str, int i10, int i11) {
-        this.f6183b = str;
-        this.f6182a = i10;
-        this.f6184c = i11;
-        this.f6185d = -1;
+        this.f6229b = str;
+        this.f6228a = i10;
+        this.f6230c = i11;
+        this.f6231d = -1;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j(String str, int i10, int i11, int i12) {
-        this.f6183b = str;
-        this.f6182a = i10;
-        this.f6184c = i11;
-        this.f6185d = i12;
+        this.f6229b = str;
+        this.f6228a = i10;
+        this.f6230c = i11;
+        this.f6231d = i12;
     }
 }

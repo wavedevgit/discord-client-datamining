@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun45902: for (var _fun45902_ip = 0;;) switch (_fun45902_ip) {
+    _fun45909: for (var _fun45909_ip = 0;;) switch (_fun45909_ip) {
         case 0:
             var2 = exports;
             var3 = this;
@@ -10,26 +10,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot1 = var0;
             var0 = var3;
             if (!var0) {
-                _fun45902_ip = 34;
-                continue _fun45902
+                _fun45909_ip = 34;
+                continue _fun45909
             }
         case 28:
             var0 = var3.__extends;
         case 34:
             if (var0) {
-                _fun45902_ip = 51;
-                continue _fun45902
+                _fun45909_ip = 51;
+                continue _fun45909
             }
         case 37:
             var3 = function arg0, arg1() {
-                _fun45903: for (var _fun45903_ip = 0;;) switch (_fun45903_ip) {
+                _fun45910: for (var _fun45910_ip = 0;;) switch (_fun45910_ip) {
                     case 0:
                         var1 = global;
                         var2 = var1.Object;
                         var3 = var2.setPrototypeOf;
                         if (var3) {
-                            _fun45903_ip = 47;
-                            continue _fun45903
+                            _fun45910_ip = 47;
+                            continue _fun45910
                         }
                     case 19:
                         var2 = var1.Array;
@@ -37,8 +37,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = Object.create(var1);
                         var1 = var1 instanceof var2;
                         if (!var1) {
-                            _fun45903_ip = 44;
-                            continue _fun45903
+                            _fun45910_ip = 44;
+                            continue _fun45910
                         }
                     case 39:
                         var1 = function(arg0, arg1) { // Environment: var0
@@ -52,12 +52,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = var1;
                     case 47:
                         if (var3) {
-                            _fun45903_ip = 55;
-                            continue _fun45903
+                            _fun45910_ip = 55;
+                            continue _fun45910
                         }
                     case 50:
                         var3 = function(arg0, arg1) { // Environment: var0
-                            _fun45905: for (var _fun45905_ip = 0;;) switch (_fun45905_ip) {
+                            _fun45912: for (var _fun45912_ip = 0;;) switch (_fun45912_ip) {
                                 case 0:
                                     var7 = arg0;
                                     var6 = arg1;
@@ -72,13 +72,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var8 = var10.call;
                                             var8 = var8.bind(var10)(var6, var9);
                                             if (!var8) {
-                                                _fun45905_ip = 19;
-                                                continue _fun45905
+                                                _fun45912_ip = 19;
+                                                continue _fun45912
                                             }
                                             case 62: var8 = var6[var9];
                                             var7[var9] = var8;
-                                            _fun45905_ip = 19;
-                                            continue _fun45905;
+                                            _fun45912_ip = 19;
+                                            continue _fun45912;
                                         }
                                 case 72:
                                     var0 = undefined;
@@ -96,7 +96,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var _closure1_slot2 = var3;
             var0 = function(arg0, arg1) { // Environment: var1
-                _fun45906: for (var _fun45906_ip = 0;;) switch (_fun45906_ip) {
+                _fun45913: for (var _fun45913_ip = 0;;) switch (_fun45913_ip) {
                     case 0:
                         var2 = arg0;
                         var3 = arg1;
@@ -111,14 +111,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var4 = 'function';
                         var0 = typeof var3;
                         if (!(var4 !== var0)) {
-                            _fun45906_ip = 34;
-                            continue _fun45906
+                            _fun45913_ip = 34;
+                            continue _fun45913
                         }
                     case 28:
                         var0 = null;
                         if (!(var0 === var3)) {
-                            _fun45906_ip = 114;
-                            continue _fun45906
+                            _fun45913_ip = 114;
+                            continue _fun45913
                         }
                     case 34:
                         var4 = _closure1_slot2;
@@ -126,8 +126,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var4 = var4.bind(var0)(var2, var3);
                         var4 = null;
                         if (!(var4 !== var3)) {
-                            _fun45906_ip = 88;
-                            continue _fun45906
+                            _fun45913_ip = 88;
+                            continue _fun45913
                         }
                     case 55:
                         var4 = var3.prototype;
@@ -141,8 +141,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var8 = var4;
                         var1 = new var8[var1](var7);
                         var1 = var1 instanceof Object ? var1 : var4;
-                        _fun45906_ip = 106;
-                        continue _fun45906;
+                        _fun45913_ip = 106;
+                        continue _fun45913;
                     case 88:
                         var4 = global;
                         var5 = var4.Object;
@@ -184,692 +184,258 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = '__esModule';
             var0 = var4.bind(var5)(var2, var0, var3);
             var0 = undefined;
-            var2.LayoutManager = var0;
-            var2.WrapGridLayoutManager = var0;
+            var2.BaseDataProvider = var0;
             var3 = function() { // Environment: var1
-                var0 = function() {
-                    var0 = undefined;
-                    return var0;
-                };
-                var3 = var0.prototype;
-                var2 = function(arg0) { // Environment: var1
-                    _fun45910: for (var _fun45910_ip = 0;;) switch (_fun45910_ip) {
-                        case 0:
-                            var2 = arg0;
-                            var1 = this;
-                            var0 = var1.getLayouts;
-                            var1 = var0.bind(var1)();
-                            var0 = var1.length;
-                            if (!(!(var0 > var2))) {
-                                _fun45910_ip = 105;
-                                continue _fun45910
-                            }
-                        case 25:
-                            var4 = _closure1_slot0;
-                            var3 = _closure1_slot1;
-                            var0 = 0;
-                            var3 = var3[var0];
-                            var0 = undefined;
-                            var0 = var4.bind(var0)(var3);
-                            var4 = var0.default;
-                            var0 = {};
-                            var3 = 'No layout available for index: ';
-                            var3 = var3 + var2;
-                            var0.message = var3;
-                            var3 = 'LayoutUnavailableException';
-                            var0.type = var3;
-                            var3 = var4.prototype;
-                            var3 = Object.create(var3, {
-                                constructor: {
-                                    value: var4
-                                }
-                            });
-                            var6 = var3;
-                            var5 = var0;
-                            var0 = new var6[var4](var5, var4);
-                            var0 = var0 instanceof Object ? var0 : var3;
-                            throw var0;
-                        case 105:
-                            var0 = {};
-                            var3 = var1[var2];
-                            var3 = var3.x;
-                            var0.x = var3;
-                            var1 = var1[var2];
-                            var1 = var1.y;
-                            var0.y = var1;
-                            return var0;
-                    }
-                };
-                var3.getOffsetForIndex = var2;
-                var3 = var0.prototype;
-                var2 = function(arg0) { // Environment: var1
-                    var0 = undefined;
-                    return var0;
-                };
-                var3.getStyleOverridesForIndex = var2;
-                var2 = var0.prototype;
-                var1 = function(arg0) { // Environment: var1
-                    _fun45912: for (var _fun45912_ip = 0;;) switch (_fun45912_ip) {
-                        case 0:
-                            var2 = arg0;
-                            var1 = this;
-                            var0 = var1.getLayouts;
-                            var0 = var0.bind(var1)();
-                            var1 = var0.length;
-                            if (!(var2 < var1)) {
-                                _fun45912_ip = 40;
-                                continue _fun45912
-                            }
-                        case 25:
-                            var3 = var0.splice;
-                            var1 = 1;
-                            var1 = var3.bind(var0)(var2, var1);
-                        case 40:
-                            var1 = 0;
-                            if (!(var1 === var2)) {
-                                _fun45912_ip = 71;
-                                continue _fun45912
-                            }
-                        case 46:
-                            var2 = var0.length;
-                            if (!(var2 > var1)) {
-                                _fun45912_ip = 71;
-                                continue _fun45912
-                            }
-                        case 55:
-                            var0 = var0[var1];
-                            var0.x = var1;
-                            var0.y = var1;
-                        case 71:
-                            var0 = undefined;
-                            return var0;
-                    }
-                };
-                var2.removeLayout = var1;
-                return var0;
-            };
-            var3 = var3.bind(var0)();
-            var2.LayoutManager = var3;
-            var1 = function(arg0) { // Environment: var1
-                var4 = arg0;
-                var _closure2_slot0 = var4;
-                var0 = function arg0, arg1, arg2, arg3() {
-                    _fun45914: for (var _fun45914_ip = 0;;) switch (_fun45914_ip) {
-                        case 0:
-                            var2 = arg2;
-                            var1 = arg3;
-                            var3 = this;
-                            var0 = undefined;
-                            if (!(var0 === var2)) {
-                                _fun45914_ip = 17;
-                                continue _fun45914
-                            }
-                        case 15:
-                            var2 = false;
-                        case 17:
-                            var4 = _closure2_slot0;
-                            var0 = var4.call;
-                            var0 = var0.bind(var4)(var3);
-                            if (var0) {
-                                _fun45914_ip = 40;
-                                continue _fun45914
-                            }
-                        case 37:
-                            var0 = var3;
-                        case 40:
-                            var3 = arg0;
-                            var0._layoutProvider = var3;
-                            var3 = arg1;
-                            var0._window = var3;
-                            var3 = 0;
-                            var0._totalHeight = var3;
-                            var0._totalWidth = var3;
-                            var2 = !var2;
-                            var2 = !var2;
-                            var0._isHorizontal = var2;
-                            if (var1) {
-                                _fun45914_ip = 91;
-                                continue _fun45914
-                            }
-                        case 87:
-                            var1 = new Array(0);
-                        case 91:
-                            var0._layouts = var1;
-                            return var0;
-                    }
-                };
-                var3 = _closure1_slot3;
-                var2 = undefined;
-                var2 = var3.bind(var2)(var0, var4);
-                var3 = var0.prototype;
-                var2 = function() { // Environment: var1
-                    var1 = this;
-                    var0 = {};
-                    var2 = var1._totalHeight;
-                    var0.height = var2;
-                    var1 = var1._totalWidth;
-                    var0.width = var1;
-                    return var0;
-                };
-                var3.getContentDimension = var2;
-                var3 = var0.prototype;
-                var2 = function(arg0) { // Environment: var1
+                var0 = function arg0, arg1() {
                     _fun45916: for (var _fun45916_ip = 0;;) switch (_fun45916_ip) {
-                        case 0:
-                            var1 = this;
-                            var0 = _closure2_slot0;
-                            var0 = var0.prototype;
-                            var3 = var0.removeLayout;
-                            var2 = var3.call;
-                            var0 = arg0;
-                            var0 = var2.bind(var3)(var1, var0);
-                            var0 = var1._layouts;
-                            var2 = var0.length;
-                            var0 = 0;
-                            if (!(var0 === var2)) {
-                                _fun45916_ip = 64;
-                                continue _fun45916
-                            }
-                        case 52:
-                            var1._totalHeight = var0;
-                            var1._totalWidth = var0;
-                        case 64:
-                            var0 = undefined;
-                            return var0;
-                    }
-                };
-                var3.removeLayout = var2;
-                var3 = var0.prototype;
-                var2 = function() { // Environment: var1
-                    var0 = this;
-                    var0 = var0._layouts;
-                    return var0;
-                };
-                var3.getLayouts = var2;
-                var3 = var0.prototype;
-                var2 = function(arg0) { // Environment: var1
-                    _fun45918: for (var _fun45918_ip = 0;;) switch (_fun45918_ip) {
-                        case 0:
-                            var2 = arg0;
-                            var1 = this;
-                            var0 = var1._layouts;
-                            var0 = var0.length;
-                            if (!(!(var0 > var2))) {
-                                _fun45918_ip = 101;
-                                continue _fun45918
-                            }
-                        case 21:
-                            var4 = _closure1_slot0;
-                            var3 = _closure1_slot1;
-                            var0 = 0;
-                            var3 = var3[var0];
-                            var0 = undefined;
-                            var0 = var4.bind(var0)(var3);
-                            var4 = var0.default;
-                            var0 = {};
-                            var3 = 'No layout available for index: ';
-                            var3 = var3 + var2;
-                            var0.message = var3;
-                            var3 = 'LayoutUnavailableException';
-                            var0.type = var3;
-                            var3 = var4.prototype;
-                            var3 = Object.create(var3, {
-                                constructor: {
-                                    value: var4
-                                }
-                            });
-                            var6 = var3;
-                            var5 = var0;
-                            var0 = new var6[var4](var5, var4);
-                            var0 = var0 instanceof Object ? var0 : var3;
-                            throw var0;
-                        case 101:
-                            var0 = {};
-                            var3 = var1._layouts;
-                            var3 = var3[var2];
-                            var3 = var3.x;
-                            var0.x = var3;
-                            var1 = var1._layouts;
-                            var1 = var1[var2];
-                            var1 = var1.y;
-                            var0.y = var1;
-                            return var0;
-                    }
-                };
-                var3.getOffsetForIndex = var2;
-                var3 = var0.prototype;
-                var2 = function(arg0, arg1) { // Environment: var1
-                    _fun45919: for (var _fun45919_ip = 0;;) switch (_fun45919_ip) {
                         case 0:
                             var0 = arg1;
                             var1 = this;
-                            var2 = var1._layouts;
-                            var1 = arg0;
-                            var1 = var2[var1];
-                            if (!var1) {
-                                _fun45919_ip = 52;
-                                continue _fun45919
-                            }
-                        case 22:
-                            var2 = true;
-                            var1.isOverridden = var2;
-                            var2 = var0.width;
-                            var1.width = var2;
-                            var0 = var0.height;
-                            var1.height = var0;
-                        case 52:
-                            var0 = true;
-                            return var0;
-                    }
-                };
-                var3.overrideLayout = var2;
-                var3 = var0.prototype;
-                var2 = function(arg0) { // Environment: var1
-                    _fun45920: for (var _fun45920_ip = 0;;) switch (_fun45920_ip) {
-                        case 0:
-                            var1 = arg0;
-                            var0 = this;
-                            var2 = var0._isHorizontal;
-                            var3 = global;
-                            var4 = var3.Math;
-                            var3 = var4.min;
-                            var0 = var0._window;
-                            if (var2) {
-                                _fun45920_ip = 58;
-                                continue _fun45920
-                            }
-                        case 34:
-                            var5 = var0.width;
-                            var2 = var1.width;
-                            var2 = var3.bind(var4)(var5, var2);
-                            var1.width = var2;
-                            _fun45920_ip = 80;
-                            continue _fun45920;
-                        case 58:
-                            var2 = var0.height;
-                            var0 = var1.height;
-                            var0 = var3.bind(var4)(var2, var0);
-                            var1.height = var0;
-                        case 80:
-                            var0 = undefined;
-                            return var0;
-                    }
-                };
-                var3.setMaxBounds = var2;
-                var3 = var0.prototype;
-                var2 = function(arg0, arg1) { // Environment: var1
-                    _fun45921: for (var _fun45921_ip = 0;;) switch (_fun45921_ip) {
-                        case 0:
-                            var5 = arg1;
-                            var2 = this;
-                            var1 = var2._locateFirstNeighbourIndex;
-                            var0 = arg0;
-                            var1 = var1.bind(var2)(var0);
-                            var0 = var2._layouts;
-                            var6 = var0[var1];
-                            var10 = 0;
-                            var9 = 0;
-                            if (!var6) {
-                                _fun45921_ip = 58;
-                                continue _fun45921
-                            }
-                        case 37:
-                            var10 = var6.x;
-                            var9 = var6.y;
-                            var4 = var2._pointDimensionsToRect;
-                            var4 = var4.bind(var2)(var6);
-                        case 58:
-                            var0 = var2._layouts;
-                            var0 = var0.length;
-                            var8 = {
-                                'height': 0,
-                                'width': 0
-                            };
-                            var12 = var1 < var5;
-                            var7 = 1;
-                            var6 = global;
-                            var4 = 0;
-                            var3 = var1;
-                            var1 = 0;
-                            if (!var12) {
-                                _fun45921_ip = 560;
-                                continue _fun45921
-                            }
-                        case 101:
-                            var12 = var2._layouts;
-                            var12 = var12[var3];
-                            var14 = var2._layoutProvider;
-                            var13 = var14.getLayoutTypeForIndex;
-                            var19 = var13.bind(var14)(var3);
-                            var13 = var3;
-                            if (!var12) {
-                                _fun45921_ip = 152;
-                                continue _fun45921
-                            }
-                        case 134:
-                            var14 = var12.isOverridden;
-                            if (!var14) {
-                                _fun45921_ip = 152;
-                                continue _fun45921
-                            }
-                        case 143:
-                            var14 = var12.type;
-                            if (!(var14 !== var19)) {
-                                _fun45921_ip = 173;
-                                continue _fun45921
-                            }
-                        case 152:
-                            var15 = var2._layoutProvider;
-                            var14 = var15.setComputedLayout;
-                            var14 = var14.bind(var15)(var19, var8, var13);
-                            _fun45921_ip = 195;
-                            continue _fun45921;
-                        case 173:
-                            var14 = var12.height;
-                            var8.height = var14;
-                            var12 = var12.width;
-                            var8.width = var12;
-                        case 195:
-                            var12 = var2.setMaxBounds;
-                            var12 = var12.bind(var2)(var8);
-                            var14 = var2._checkBounds;
-                            var24 = var2._isHorizontal;
-                            var28 = var2;
-                            var27 = var10;
-                            var26 = var9;
-                            var25 = var8;
-                            var12 = var28[var14](var27, var26, var25, var24, var23);
-                            var18 = var10;
-                            var17 = var9;
-                            var14 = var4;
-                            var15 = var18;
-                            var16 = var17;
-                            var20 = var14;
-                            if (var12) {
-                                _fun45921_ip = 357;
-                                continue _fun45921
-                            }
-                        case 255:
-                            var12 = var2._isHorizontal;
-                            if (var12) {
-                                _fun45921_ip = 288;
-                                continue _fun45921
-                            }
-                        case 264:
-                            var21 = var17 + var14;
-                            var12 = var2._totalHeight;
-                            var12 = var12 + var14;
-                            var2._totalHeight = var12;
-                            var22 = 0;
-                            _fun45921_ip = 310;
-                            continue _fun45921;
-                        case 288:
-                            var22 = var18 + var14;
-                            var23 = var2._totalWidth;
-                            var23 = var23 + var14;
-                            var2._totalWidth = var23;
-                            var21 = 0;
-                        case 310:
-                            var23 = var2._checkBounds;
-                            var24 = var2._isHorizontal;
-                            var28 = var2;
-                            var27 = var22;
-                            var26 = var21;
-                            var25 = var8;
-                            var12 = var28[var23](var27, var26, var25, var24, var23);
-                            var18 = var22;
-                            var17 = var21;
-                            var14 = 0;
-                            var15 = var18;
-                            var16 = var17;
-                            var20 = 0;
-                            if (!var12) {
-                                _fun45921_ip = 255;
-                                continue _fun45921
-                            }
-                        case 357:
-                            var12 = var2._isHorizontal;
-                            var18 = var6.Math;
-                            var17 = var18.max;
-                            if (var12) {
-                                _fun45921_ip = 390;
-                                continue _fun45921
-                            }
-                        case 377:
-                            var12 = var8.height;
-                            var12 = var17.bind(var18)(var20, var12);
-                            _fun45921_ip = 401;
-                            continue _fun45921;
-                        case 390:
-                            var14 = var8.width;
-                            var12 = var17.bind(var18)(var20, var14);
-                        case 401:
-                            var14 = var0 - var7;
-                            if (!(!(var13 > var14))) {
-                                _fun45921_ip = 461;
-                                continue _fun45921
-                            }
-                        case 409:
-                            var14 = var2._layouts;
-                            var17 = var14[var13];
-                            var17.x = var15;
-                            var17.y = var16;
-                            var17.type = var19;
-                            var14 = var8.width;
-                            var17.width = var14;
-                            var14 = var8.height;
-                            var17.height = var14;
-                            _fun45921_ip = 509;
-                            continue _fun45921;
-                        case 461:
-                            var18 = var2._layouts;
-                            var17 = var18.push;
-                            var14 = {};
-                            var14.x = var15;
-                            var14.y = var16;
-                            var20 = var8.height;
-                            var14.height = var20;
-                            var20 = var8.width;
-                            var14.width = var20;
-                            var14.type = var19;
-                            var14 = var17.bind(var18)(var14);
-                        case 509:
-                            var14 = var2._isHorizontal;
-                            if (var14) {
-                                _fun45921_ip = 532;
-                                continue _fun45921
-                            }
-                        case 518:
-                            var14 = var8.width;
-                            var10 = var15 + var14;
-                            var9 = var16;
-                            _fun45921_ip = 544;
-                            continue _fun45921;
-                        case 532:
-                            var14 = var8.height;
-                            var9 = var16 + var14;
-                            var10 = var15;
-                        case 544:
-                            var3 = var13 + 1;
-                            var4 = var12;
-                            var1 = var4;
-                            if (var3 < var5) {
-                                _fun45921_ip = 101;
-                                continue _fun45921
-                            }
-                        case 560:
-                            if (!(var0 > var5)) {
-                                _fun45921_ip = 586;
-                                continue _fun45921
-                            }
-                        case 564:
-                            var4 = var2._layouts;
-                            var3 = var4.splice;
-                            var0 = var0 - var5;
-                            var0 = var3.bind(var4)(var5, var0);
-                        case 586:
-                            var0 = var2._setFinalDimensions;
-                            var0 = var0.bind(var2)(var1);
-                            var0 = undefined;
-                            return var0;
-                    }
-                };
-                var3.relayoutFromIndex = var2;
-                var3 = var0.prototype;
-                var2 = function(arg0) { // Environment: var1
-                    _fun45922: for (var _fun45922_ip = 0;;) switch (_fun45922_ip) {
-                        case 0:
-                            var0 = arg0;
-                            var1 = this;
-                            var2 = var1._isHorizontal;
-                            if (var2) {
-                                _fun45922_ip = 28;
-                                continue _fun45922
-                            }
-                        case 15:
-                            var2 = var0.y;
-                            var1._totalHeight = var2;
-                            _fun45922_ip = 39;
-                            continue _fun45922;
-                        case 28:
-                            var0 = var0.x;
-                            var1._totalWidth = var0;
-                        case 39:
-                            var0 = undefined;
-                            return var0;
-                    }
-                };
-                var3._pointDimensionsToRect = var2;
-                var3 = var0.prototype;
-                var2 = function(arg0) { // Environment: var1
-                    _fun45923: for (var _fun45923_ip = 0;;) switch (_fun45923_ip) {
-                        case 0:
+                            var2 = 0;
+                            var1._firstIndexToProcess = var2;
+                            var1._size = var2;
+                            var2 = new Array(0);
+                            var1._data = var2;
+                            var2 = false;
+                            var1._hasStableIds = var2;
+                            var1._requiresDataChangeHandling = var2;
                             var2 = arg0;
-                            var1 = this;
-                            var3 = var1._isHorizontal;
-                            var0 = var1._window;
-                            if (var3) {
-                                _fun45923_ip = 50;
-                                continue _fun45923
+                            var1.rowHasChanged = var2;
+                            if (var0) {
+                                _fun45916_ip = 71;
+                                continue _fun45916
                             }
-                        case 21:
-                            var3 = var0.width;
-                            var1._totalWidth = var3;
-                            var3 = var1._totalHeight;
-                            var3 = var3 + var2;
-                            var1._totalHeight = var3;
-                            _fun45923_ip = 77;
-                            continue _fun45923;
-                        case 50:
-                            var0 = var0.height;
-                            var1._totalHeight = var0;
-                            var0 = var1._totalWidth;
-                            var0 = var0 + var2;
-                            var1._totalWidth = var0;
-                        case 77:
+                        case 56:
+                            var2 = function(arg0) { // Environment: var2
+                                var1 = arg0;
+                                var0 = var1.toString;
+                                var0 = var0.bind(var1)();
+                                return var0;
+                            };
+                            var1.getStableId = var2;
+                            _fun45916_ip = 85;
+                            continue _fun45916;
+                        case 71:
+                            var1.getStableId = var0;
+                            var0 = true;
+                            var1._hasStableIds = var0;
+                        case 85:
                             var0 = undefined;
                             return var0;
                     }
                 };
-                var3._setFinalDimensions = var2;
                 var3 = var0.prototype;
                 var2 = function(arg0) { // Environment: var1
+                    var0 = this;
+                    var1 = var0._data;
+                    var0 = arg0;
+                    var0 = var1[var0];
+                    return var0;
+                };
+                var3.getDataForIndex = var2;
+                var3 = var0.prototype;
+                var2 = function() { // Environment: var1
+                    var0 = this;
+                    var0 = var0._data;
+                    return var0;
+                };
+                var3.getAllData = var2;
+                var3 = var0.prototype;
+                var2 = function() { // Environment: var1
+                    var0 = this;
+                    var0 = var0._size;
+                    return var0;
+                };
+                var3.getSize = var2;
+                var3 = var0.prototype;
+                var2 = function() { // Environment: var1
+                    var0 = this;
+                    var0 = var0._hasStableIds;
+                    return var0;
+                };
+                var3.hasStableIds = var2;
+                var3 = var0.prototype;
+                var2 = function() { // Environment: var1
+                    var0 = this;
+                    var0 = var0._requiresDataChangeHandling;
+                    return var0;
+                };
+                var3.requiresDataChangeHandling = var2;
+                var3 = var0.prototype;
+                var2 = function() { // Environment: var1
+                    var0 = this;
+                    var0 = var0._firstIndexToProcess;
+                    return var0;
+                };
+                var3.getFirstIndexToProcessInternal = var2;
+                var2 = var0.prototype;
+                var1 = function(arg0, arg1) { // Environment: var1
                     _fun45924: for (var _fun45924_ip = 0;;) switch (_fun45924_ip) {
                         case 0:
                             var2 = arg0;
+                            var11 = arg1;
                             var3 = this;
-                            var0 = 0;
-                            if (!(var0 !== var2)) {
-                                _fun45924_ip = 83;
+                            var4 = var3.newInstance;
+                            var1 = var3.rowHasChanged;
+                            var5 = var3._hasStableIds;
+                            var9 = undefined;
+                            var0 = undefined;
+                            if (!var5) {
+                                _fun45924_ip = 40;
                                 continue _fun45924
                             }
-                        case 12:
-                            var1 = 1;
-                            var2 = var2 - var1;
-                            var1 = var2;
-                            if (!(var1 >= var0)) {
-                                _fun45924_ip = 81;
-                                continue _fun45924
-                            }
-                        case 26:
-                            var5 = var3._isHorizontal;
-                            var4 = var3._layouts;
-                            var4 = var4[var2];
+                        case 34:
+                            var0 = var3.getStableId;
+                        case 40:
+                            var0 = var4.bind(var3)(var1, var0);
+                            var1 = var2.length;
+                            var4 = global;
+                            var7 = var4.Math;
+                            var6 = var7.min;
+                            var5 = var3._size;
+                            var7 = var6.bind(var7)(var5, var1);
+                            var6 = _closure1_slot0;
+                            var5 = _closure1_slot1;
+                            var8 = 0;
+                            var5 = var5[var8];
+                            var5 = var6.bind(var9)(var5);
+                            var6 = var5.ObjectUtil;
+                            var5 = var6.isNullOrUndefined;
+                            var5 = var5.bind(var6)(var11);
                             if (var5) {
-                                _fun45924_ip = 59;
+                                _fun45924_ip = 171;
                                 continue _fun45924
                             }
-                        case 45:
-                            var5 = var4.x;
-                            var1 = var2;
-                            if (!(var0 !== var5)) {
-                                _fun45924_ip = 81;
-                                continue _fun45924
-                            }
-                        case 57:
-                            _fun45924_ip = 71;
+                        case 118:
+                            var6 = var4.Math;
+                            var5 = var6.max;
+                            var10 = var4.Math;
+                            var9 = var10.min;
+                            var4 = var3._data;
+                            var4 = var4.length;
+                            var4 = var9.bind(var10)(var11, var4);
+                            var4 = var5.bind(var6)(var4, var8);
+                            var0._firstIndexToProcess = var4;
+                            _fun45924_ip = 264;
                             continue _fun45924;
-                        case 59:
-                            var4 = var4.y;
-                            var1 = var2;
-                            if (!(var0 !== var4)) {
-                                _fun45924_ip = 81;
+                        case 171:
+                            var5 = var8 < var7;
+                            var4 = 0;
+                            if (!var5) {
+                                _fun45924_ip = 258;
                                 continue _fun45924
                             }
-                        case 71:
-                            var2 = var2 - 1;
-                            var1 = var2;
-                            if (var1 >= var0) {
-                                _fun45924_ip = 26;
+                        case 180:
+                            var9 = var3.rowHasChanged;
+                            var5 = var3._data;
+                            var6 = var5[var8];
+                            var5 = var2[var8];
+                            var5 = var9.bind(var3)(var6, var5);
+                            var6 = 0;
+                            var4 = 0;
+                            if (var5) {
+                                _fun45924_ip = 258;
                                 continue _fun45924
                             }
-                        case 81:
-                            return var1;
-                        case 83:
+                        case 213:
+                            var8 = var6 + 1;
+                            var4 = var8;
+                            if (!(var8 < var7)) {
+                                _fun45924_ip = 258;
+                                continue _fun45924
+                            }
+                        case 223:
+                            var10 = var3.rowHasChanged;
+                            var5 = var3._data;
+                            var9 = var5[var8];
+                            var5 = var2[var8];
+                            var5 = var10.bind(var3)(var9, var5);
+                            var6 = var8;
+                            var4 = var6;
+                            if (!var5) {
+                                _fun45924_ip = 213;
+                                continue _fun45924
+                            }
+                        case 258:
+                            var0._firstIndexToProcess = var4;
+                        case 264:
+                            var4 = var0._firstIndexToProcess;
+                            var3 = var3._data;
+                            var3 = var3.length;
+                            if (!(var4 !== var3)) {
+                                _fun45924_ip = 293;
+                                continue _fun45924
+                            }
+                        case 285:
+                            var3 = true;
+                            var0._requiresDataChangeHandling = var3;
+                        case 293:
+                            var0._data = var2;
+                            var0._size = var1;
                             return var0;
                     }
                 };
-                var3._locateFirstNeighbourIndex = var2;
-                var2 = var0.prototype;
-                var1 = function(arg0, arg1, arg2, arg3) { // Environment: var1
-                    _fun45925: for (var _fun45925_ip = 0;;) switch (_fun45925_ip) {
+                var2.cloneWithRows = var1;
+                return var0;
+            };
+            var3 = var3.bind(var0)();
+            var2.BaseDataProvider = var3;
+            var1 = function(arg0) { // Environment: var1
+                var4 = arg0;
+                var _closure2_slot0 = var4;
+                var0 = function() {
+                    _fun45926: for (var _fun45926_ip = 0;;) switch (_fun45926_ip) {
                         case 0:
-                            var2 = arg2;
                             var1 = this;
-                            var0 = arg3;
-                            if (var0) {
-                                _fun45925_ip = 55;
-                                continue _fun45925
+                            var2 = undefined;
+                            var4 = _closure2_slot0;
+                            var0 = null;
+                            var0 = var0 !== var4;
+                            if (!var0) {
+                                _fun45926_ip = 38;
+                                continue _fun45926
                             }
-                        case 12:
-                            var3 = var2.width;
-                            var0 = arg0;
-                            var3 = var0 + var3;
-                            var0 = var1._window;
-                            var4 = var0.width;
-                            var0 = 0.9;
-                            var0 = var4 + var0;
-                            var0 = var3 <= var0;
-                            _fun45925_ip = 96;
-                            continue _fun45925;
-                        case 55:
-                            var3 = var2.height;
-                            var2 = arg1;
-                            var2 = var2 + var3;
-                            var1 = var1._window;
-                            var3 = var1.height;
-                            var1 = 0.9;
-                            var1 = var3 + var1;
-                            var0 = var2 <= var1;
-                        case 96:
+                        case 21:
+                            var4 = _closure2_slot0;
+                            var3 = var4.apply;
+                            var2 = arguments;
+                            var0 = var3.bind(var4)(var1, var2);
+                        case 38:
+                            if (var0) {
+                                _fun45926_ip = 44;
+                                continue _fun45926
+                            }
+                        case 41:
+                            var0 = var1;
+                        case 44:
                             return var0;
                     }
                 };
-                var2._checkBounds = var1;
+                var _closure2_slot1 = var0;
+                var3 = _closure1_slot3;
+                var2 = undefined;
+                var2 = var3.bind(var2)(var0, var4);
+                var2 = var0.prototype;
+                var1 = function(arg0, arg1) { // Environment: var1
+                    var3 = _closure2_slot1;
+                    var0 = var3.prototype;
+                    var1 = Object.create(var0, {
+                        constructor: {
+                            value: var3
+                        }
+                    });
+                    var5 = arg0;
+                    var4 = arg1;
+                    var6 = var1;
+                    var0 = new var6[var3](var5, var4, var3);
+                    var0 = var0 instanceof Object ? var0 : var1;
+                    return var0;
+                };
+                var2.newInstance = var1;
                 return var0;
             };
             var1 = var1.bind(var0)(var3);
-            var2.WrapGridLayoutManager = var1;
+            var2.default = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5130]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5148]);

@@ -6,41 +6,41 @@ import androidx.work.c;
 final class u1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final th.k0 f16685d = new th.k0("ExtractionWorker");
+    private static final th.k0 f15653d = new th.k0("ExtractionWorker");
 
     /* renamed from: a  reason: collision with root package name */
-    private final r2 f16686a;
+    private final r2 f15654a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final y1 f16687b;
+    private final y1 f15655b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final m3 f16688c;
+    private final m3 f15656c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public u1(r2 r2Var, y1 y1Var, m3 m3Var) {
-        this.f16686a = r2Var;
-        this.f16687b = y1Var;
-        this.f16688c = m3Var;
+        this.f15654a = r2Var;
+        this.f15655b = y1Var;
+        this.f15656c = m3Var;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final k4.g a(androidx.work.b bVar) {
-        m3 m3Var = this.f16688c;
+        m3 m3Var = this.f15656c;
         Bundle a10 = b1.a(bVar);
         m3Var.b(a10);
-        return new k4.g(-1883842196, this.f16688c.a(a10));
+        return new k4.g(-1883842196, this.f15656c.a(a10));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final c.a b(androidx.work.b bVar) {
         try {
-            if (this.f16686a.p(b1.b(bVar))) {
-                this.f16687b.a();
+            if (this.f15654a.p(b1.b(bVar))) {
+                this.f15655b.a();
             }
             return c.a.c();
         } catch (w1 e10) {
-            f16685d.b("Error while updating ExtractorSessionStoreView: %s", e10.getMessage());
+            f15653d.b("Error while updating ExtractorSessionStoreView: %s", e10.getMessage());
             return c.a.a();
         }
     }

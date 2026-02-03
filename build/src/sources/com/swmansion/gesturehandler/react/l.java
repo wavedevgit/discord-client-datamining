@@ -13,16 +13,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class l extends Event {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f18735c = new a(null);
+    public static final a f17717c = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Pools$SynchronizedPool f18736d = new Pools$SynchronizedPool(7);
+    private static final Pools$SynchronizedPool f17718d = new Pools$SynchronizedPool(7);
 
     /* renamed from: a  reason: collision with root package name */
-    private WritableMap f18737a;
+    private WritableMap f17719a;
 
     /* renamed from: b  reason: collision with root package name */
-    private short f18738b;
+    private short f17720b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -30,7 +30,7 @@ public final class l extends Event {
             this();
         }
 
-        public final WritableMap a(dn.d handler) {
+        public final WritableMap a(fn.d handler) {
             Intrinsics.checkNotNullParameter(handler, "handler");
             WritableMap createMap = Arguments.createMap();
             Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
@@ -53,9 +53,9 @@ public final class l extends Event {
             return createMap;
         }
 
-        public final l b(dn.d handler) {
+        public final l b(fn.d handler) {
             Intrinsics.checkNotNullParameter(handler, "handler");
-            l lVar = (l) l.f18736d.acquire();
+            l lVar = (l) l.f17718d.acquire();
             if (lVar == null) {
                 lVar = new l(null);
             }
@@ -72,12 +72,12 @@ public final class l extends Event {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final void b(dn.d dVar) {
+    public final void b(fn.d dVar) {
         View W = dVar.W();
         Intrinsics.checkNotNull(W);
         super.init(UIManagerHelper.getSurfaceId(W), W.getId());
-        this.f18737a = f18735c.a(dVar);
-        this.f18738b = dVar.I();
+        this.f17719a = f17717c.a(dVar);
+        this.f17720b = dVar.I();
     }
 
     @Override // com.facebook.react.uimanager.events.Event
@@ -87,12 +87,12 @@ public final class l extends Event {
 
     @Override // com.facebook.react.uimanager.events.Event
     public short getCoalescingKey() {
-        return this.f18738b;
+        return this.f17720b;
     }
 
     @Override // com.facebook.react.uimanager.events.Event
     protected WritableMap getEventData() {
-        return this.f18737a;
+        return this.f17719a;
     }
 
     @Override // com.facebook.react.uimanager.events.Event
@@ -102,8 +102,8 @@ public final class l extends Event {
 
     @Override // com.facebook.react.uimanager.events.Event
     public void onDispose() {
-        this.f18737a = null;
-        f18736d.release(this);
+        this.f17719a = null;
+        f17718d.release(this);
     }
 
     private l() {

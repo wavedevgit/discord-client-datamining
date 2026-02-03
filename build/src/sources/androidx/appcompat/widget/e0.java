@@ -12,34 +12,34 @@ import java.lang.reflect.Method;
 public abstract class e0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int[] f1656a = {16842912};
+    private static final int[] f1625a = {16842912};
 
     /* renamed from: b  reason: collision with root package name */
-    private static final int[] f1657b = new int[0];
+    private static final int[] f1626b = new int[0];
 
     /* renamed from: c  reason: collision with root package name */
-    public static final Rect f1658c = new Rect();
+    public static final Rect f1627c = new Rect();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private static final boolean f1659a;
+        private static final boolean f1628a;
 
         /* renamed from: b  reason: collision with root package name */
-        private static final Method f1660b;
+        private static final Method f1629b;
 
         /* renamed from: c  reason: collision with root package name */
-        private static final Field f1661c;
+        private static final Field f1630c;
 
         /* renamed from: d  reason: collision with root package name */
-        private static final Field f1662d;
+        private static final Field f1631d;
 
         /* renamed from: e  reason: collision with root package name */
-        private static final Field f1663e;
+        private static final Field f1632e;
 
         /* renamed from: f  reason: collision with root package name */
-        private static final Field f1664f;
+        private static final Field f1633f;
 
         /* JADX WARN: Removed duplicated region for block: B:25:0x004a  */
         /* JADX WARN: Removed duplicated region for block: B:26:0x0057  */
@@ -109,20 +109,20 @@ public abstract class e0 {
                 r8 = r2
             L48:
                 if (r8 == 0) goto L57
-                androidx.appcompat.widget.e0.a.f1660b = r4
-                androidx.appcompat.widget.e0.a.f1661c = r5
-                androidx.appcompat.widget.e0.a.f1662d = r6
-                androidx.appcompat.widget.e0.a.f1663e = r7
-                androidx.appcompat.widget.e0.a.f1664f = r3
-                androidx.appcompat.widget.e0.a.f1659a = r0
+                androidx.appcompat.widget.e0.a.f1629b = r4
+                androidx.appcompat.widget.e0.a.f1630c = r5
+                androidx.appcompat.widget.e0.a.f1631d = r6
+                androidx.appcompat.widget.e0.a.f1632e = r7
+                androidx.appcompat.widget.e0.a.f1633f = r3
+                androidx.appcompat.widget.e0.a.f1628a = r0
                 goto L63
             L57:
-                androidx.appcompat.widget.e0.a.f1660b = r1
-                androidx.appcompat.widget.e0.a.f1661c = r1
-                androidx.appcompat.widget.e0.a.f1662d = r1
-                androidx.appcompat.widget.e0.a.f1663e = r1
-                androidx.appcompat.widget.e0.a.f1664f = r1
-                androidx.appcompat.widget.e0.a.f1659a = r2
+                androidx.appcompat.widget.e0.a.f1629b = r1
+                androidx.appcompat.widget.e0.a.f1630c = r1
+                androidx.appcompat.widget.e0.a.f1631d = r1
+                androidx.appcompat.widget.e0.a.f1632e = r1
+                androidx.appcompat.widget.e0.a.f1633f = r1
+                androidx.appcompat.widget.e0.a.f1628a = r2
             L63:
                 return
             */
@@ -130,16 +130,16 @@ public abstract class e0 {
         }
 
         static Rect a(Drawable drawable) {
-            if (Build.VERSION.SDK_INT < 29 && f1659a) {
+            if (Build.VERSION.SDK_INT < 29 && f1628a) {
                 try {
-                    Object invoke = f1660b.invoke(drawable, null);
+                    Object invoke = f1629b.invoke(drawable, null);
                     if (invoke != null) {
-                        return new Rect(f1661c.getInt(invoke), f1662d.getInt(invoke), f1663e.getInt(invoke), f1664f.getInt(invoke));
+                        return new Rect(f1630c.getInt(invoke), f1631d.getInt(invoke), f1632e.getInt(invoke), f1633f.getInt(invoke));
                     }
                 } catch (IllegalAccessException | InvocationTargetException unused) {
                 }
             }
-            return e0.f1658c;
+            return e0.f1627c;
         }
     }
 
@@ -166,9 +166,9 @@ public abstract class e0 {
     private static void c(Drawable drawable) {
         int[] state = drawable.getState();
         if (state != null && state.length != 0) {
-            drawable.setState(f1657b);
+            drawable.setState(f1626b);
         } else {
-            drawable.setState(f1656a);
+            drawable.setState(f1625a);
         }
         drawable.setState(state);
     }

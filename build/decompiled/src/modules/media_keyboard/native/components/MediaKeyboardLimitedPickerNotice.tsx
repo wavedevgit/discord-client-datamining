@@ -7,23 +7,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function() {
-        _fun75716: for (var _fun75716_ip = 0;;) switch (_fun75716_ip) {
+        _fun75826: for (var _fun75826_ip = 0;;) switch (_fun75826_ip) {
             case 0:
                 var0 = _closure1_slot3;
                 var1 = var0.NativePermissionManager;
                 var3 = null;
                 var0 = var3 == var1;
                 if (var0) {
-                    _fun75716_ip = 32;
-                    continue _fun75716
+                    _fun75826_ip = 32;
+                    continue _fun75826
                 }
             case 22:
                 var2 = var1.presentLimitedLibraryPicker;
                 var0 = var3 == var2;
             case 32:
                 if (var0) {
-                    _fun75716_ip = 45;
-                    continue _fun75716
+                    _fun75826_ip = 45;
+                    continue _fun75826
                 }
             case 35:
                 var0 = var1.presentLimitedLibraryPicker;
@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/media_keyboard/native/components/MediaKeyboardLimitedPickerNotice.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun75717: for (var _fun75717_ip = 0;;) switch (_fun75717_ip) {
+        _fun75827: for (var _fun75827_ip = 0;;) switch (_fun75827_ip) {
             case 0:
                 var1 = arg0;
                 var7 = var1.onHeightChange;
@@ -107,13 +107,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var7;
                 var0 = function(arg0) { // Environment: var0
-                    _fun75718: for (var _fun75718_ip = 0;;) switch (_fun75718_ip) {
+                    _fun75828: for (var _fun75828_ip = 0;;) switch (_fun75828_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var1 = null;
                             if (!(var1 != var2)) {
-                                _fun75718_ip = 44;
-                                continue _fun75718
+                                _fun75828_ip = 44;
+                                continue _fun75828
                             }
                         case 13:
                             var2 = _closure2_slot0;
@@ -139,8 +139,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var6 != var7;
                 var6 = undefined;
                 if (!var7) {
-                    _fun75717_ip = 98;
-                    continue _fun75717
+                    _fun75827_ip = 98;
+                    continue _fun75827
                 }
             case 92:
                 var6 = var8.absoluteContainer;
@@ -209,4 +209,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 3932, 1234, 4075, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 3941, 1234, 4084, 2]);

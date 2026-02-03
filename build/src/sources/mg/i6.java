@@ -5,7 +5,7 @@ import ui.c;
 final class i6 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final i6 f38258a = new i6();
+    static final i6 f38055a = new i6();
 
     static {
         c.b a10 = ui.c.a("durationMs");

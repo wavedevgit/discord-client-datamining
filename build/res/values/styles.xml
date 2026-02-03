@@ -6761,11 +6761,26 @@
     <style name="android_native_small" parent="@style/android_native">
         <item name="android:layout_width">40.0dip</item>
     </style>
+    <style name="aosp_light">
+        <item name="color">#ffebeff1</item>
+    </style>
     <style name="fastest_list" parent="@android:style/Widget">
         <item name="android:scrollbars">vertical</item>
     </style>
     <style name="fastest_list_horizontal" parent="@android:style/Widget">
         <item name="android:scrollbars">horizontal</item>
+    </style>
+    <style name="gboard_dark">
+        <item name="color">#ff1c1c2c</item>
+    </style>
+    <style name="gboard_light">
+        <item name="color">#ffebeff1</item>
+    </style>
+    <style name="gboard_tts_dark">
+        <item name="color">#ff202124</item>
+    </style>
+    <style name="gboard_tts_light">
+        <item name="color">#fff8f9fa</item>
     </style>
     <style name="redboxButton">
         <item name="android:textSize">14.0sp</item>
@@ -6776,6 +6791,18 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">4.0dip</item>
         <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="samsung_dark">
+        <item name="color">#ff080808</item>
+    </style>
+    <style name="samsung_light">
+        <item name="color">#ffe4e4e4</item>
+    </style>
+    <style name="swiftkey_dark">
+        <item name="color">#ff141414</item>
+    </style>
+    <style name="swiftkey_light">
+        <item name="color">#fff1f1f1</item>
     </style>
     <style name="ucrop_ImageViewWidgetIcon">
         <item name="android:layout_gravity">center</item>
@@ -6823,5 +6850,11 @@
         <item name="android:clickable">true</item>
         <item name="android:layout_width">@dimen/ucrop_size_wrapper_rotate_button</item>
         <item name="android:layout_height">@dimen/ucrop_size_wrapper_rotate_button</item>
+    </style>
+    <style name="yandex_dark">
+        <item name="color">#ff1a1b20</item>
+    </style>
+    <style name="yandex_light">
+        <item name="color">#ffeeedf4</item>
     </style>
 </resources>

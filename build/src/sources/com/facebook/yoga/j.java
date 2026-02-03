@@ -7,16 +7,16 @@ public class j extends YogaNodeJNIBase {
 
     protected void finalize() {
         try {
-            u0();
+            t0();
         } finally {
             super.finalize();
         }
     }
 
-    public void u0() {
-        long j10 = this.f12180q;
+    public void t0() {
+        long j10 = this.f11148q;
         if (j10 != 0) {
-            this.f12180q = 0L;
+            this.f11148q = 0L;
             YogaNative.jni_YGNodeFinalizeJNI(j10);
         }
     }

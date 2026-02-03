@@ -15,14 +15,14 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f48038a = new c(null);
+    public static final c f48347a = new c(null);
 
     /* renamed from: r2.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class C0587a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final C0588a f48039a = new C0588a(null);
+        public static final C0588a f48348a = new C0588a(null);
 
         /* renamed from: r2.a$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -33,7 +33,7 @@ public abstract class a {
 
             public final m a(Intent intent) {
                 Intrinsics.checkNotNullParameter(intent, "intent");
-                m.a aVar = m.f27514i;
+                m.a aVar = m.f26799i;
                 Bundle bundleExtra = intent.getBundleExtra("android.service.credentials.extra.GET_CREDENTIAL_EXCEPTION");
                 if (bundleExtra == null) {
                     return null;
@@ -43,7 +43,7 @@ public abstract class a {
 
             public final d0 b(Intent intent) {
                 Intrinsics.checkNotNullParameter(intent, "intent");
-                d0.a aVar = d0.f25683b;
+                d0.a aVar = d0.f24880b;
                 Bundle bundleExtra = intent.getBundleExtra("android.service.credentials.extra.GET_CREDENTIAL_RESPONSE");
                 if (bundleExtra == null) {
                     return null;
@@ -60,7 +60,7 @@ public abstract class a {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final C0589a f48040a = new C0589a(null);
+        public static final C0589a f48349a = new C0589a(null);
 
         /* renamed from: r2.a$b$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -86,7 +86,7 @@ public abstract class a {
                 if (getCredentialResponse == null) {
                     return null;
                 }
-                h.a aVar = h.f25697c;
+                h.a aVar = h.f24894c;
                 Credential credential = getCredentialResponse.getCredential();
                 Intrinsics.checkNotNullExpressionValue(credential, "response.credential");
                 return new d0(aVar.a(credential));
@@ -106,17 +106,17 @@ public abstract class a {
         public final m a(Intent intent) {
             Intrinsics.checkNotNullParameter(intent, "intent");
             if (Build.VERSION.SDK_INT >= 34) {
-                return b.f48040a.a(intent);
+                return b.f48349a.a(intent);
             }
-            return C0587a.f48039a.a(intent);
+            return C0587a.f48348a.a(intent);
         }
 
         public final d0 b(Intent intent) {
             Intrinsics.checkNotNullParameter(intent, "intent");
             if (Build.VERSION.SDK_INT >= 34) {
-                return b.f48040a.b(intent);
+                return b.f48349a.b(intent);
             }
-            return C0587a.f48039a.b(intent);
+            return C0587a.f48348a.b(intent);
         }
 
         private c() {

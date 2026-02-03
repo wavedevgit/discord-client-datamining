@@ -8,7 +8,7 @@ import android.view.inputmethod.InputContentInfo;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f22570a;
+    private final c f21261a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private interface c {
@@ -25,9 +25,9 @@ public final class f {
 
     public f(Uri uri, ClipDescription clipDescription, Uri uri2) {
         if (Build.VERSION.SDK_INT >= 25) {
-            this.f22570a = new a(uri, clipDescription, uri2);
+            this.f21261a = new a(uri, clipDescription, uri2);
         } else {
-            this.f22570a = new b(uri, clipDescription, uri2);
+            this.f21261a = new b(uri, clipDescription, uri2);
         }
     }
 
@@ -39,90 +39,90 @@ public final class f {
     }
 
     public Uri a() {
-        return this.f22570a.c();
+        return this.f21261a.c();
     }
 
     public ClipDescription b() {
-        return this.f22570a.getDescription();
+        return this.f21261a.getDescription();
     }
 
     public Uri c() {
-        return this.f22570a.a();
+        return this.f21261a.a();
     }
 
     public void d() {
-        this.f22570a.d();
+        this.f21261a.d();
     }
 
     public Object e() {
-        return this.f22570a.b();
+        return this.f21261a.b();
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static final class a implements c {
 
         /* renamed from: a  reason: collision with root package name */
-        final InputContentInfo f22571a;
+        final InputContentInfo f21262a;
 
         a(Object obj) {
-            this.f22571a = (InputContentInfo) obj;
+            this.f21262a = (InputContentInfo) obj;
         }
 
         @Override // e2.f.c
         public Uri a() {
-            return this.f22571a.getLinkUri();
+            return this.f21262a.getLinkUri();
         }
 
         @Override // e2.f.c
         public Object b() {
-            return this.f22571a;
+            return this.f21262a;
         }
 
         @Override // e2.f.c
         public Uri c() {
-            return this.f22571a.getContentUri();
+            return this.f21262a.getContentUri();
         }
 
         @Override // e2.f.c
         public void d() {
-            this.f22571a.requestPermission();
+            this.f21262a.requestPermission();
         }
 
         @Override // e2.f.c
         public ClipDescription getDescription() {
-            return this.f22571a.getDescription();
+            return this.f21262a.getDescription();
         }
 
         a(Uri uri, ClipDescription clipDescription, Uri uri2) {
-            this.f22571a = new InputContentInfo(uri, clipDescription, uri2);
+            this.f21262a = new InputContentInfo(uri, clipDescription, uri2);
         }
     }
 
     private f(c cVar) {
-        this.f22570a = cVar;
+        this.f21261a = cVar;
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static final class b implements c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Uri f22572a;
+        private final Uri f21263a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final ClipDescription f22573b;
+        private final ClipDescription f21264b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Uri f22574c;
+        private final Uri f21265c;
 
         b(Uri uri, ClipDescription clipDescription, Uri uri2) {
-            this.f22572a = uri;
-            this.f22573b = clipDescription;
-            this.f22574c = uri2;
+            this.f21263a = uri;
+            this.f21264b = clipDescription;
+            this.f21265c = uri2;
         }
 
         @Override // e2.f.c
         public Uri a() {
-            return this.f22574c;
+            return this.f21265c;
         }
 
         @Override // e2.f.c
@@ -132,12 +132,12 @@ public final class f {
 
         @Override // e2.f.c
         public Uri c() {
-            return this.f22572a;
+            return this.f21263a;
         }
 
         @Override // e2.f.c
         public ClipDescription getDescription() {
-            return this.f22573b;
+            return this.f21264b;
         }
 
         @Override // e2.f.c

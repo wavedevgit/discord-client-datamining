@@ -50,7 +50,7 @@ public final class RenderableEmojiKt {
 
     public static final Unit renderEmoji$lambda$2(GenericDraweeHierarchyBuilder genericDraweeHierarchyBuilder) {
         Intrinsics.checkNotNullParameter(genericDraweeHierarchyBuilder, "<this>");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public static final void renderEmojiInto(@NotNull DraweeSpanStringBuilder builder, @NotNull RenderableEmoji emoji, @NotNull Context context, int i10, boolean z10, int i11, @NotNull Function1<? super GenericDraweeHierarchyBuilder, Unit> additionalBuilderActions) {
@@ -62,7 +62,7 @@ public final class RenderableEmojiKt {
         RenderableEmoji.Unicode unicode = emoji instanceof RenderableEmoji.Unicode ? (RenderableEmoji.Unicode) emoji : null;
         if (unicode == null || (exception = unicode.getException()) == null || builder.append((CharSequence) exception) == null) {
             renderEmojiInto(builder, emoji.getUrl(z10, i10), emoji.getContentDescription(), context, i10, z10, i11, additionalBuilderActions);
-            Unit unit = Unit.f33074a;
+            Unit unit = Unit.f32464a;
         }
     }
 
@@ -86,19 +86,19 @@ public final class RenderableEmojiKt {
 
     public static final Unit renderEmojiInto$lambda$0(GenericDraweeHierarchyBuilder genericDraweeHierarchyBuilder) {
         Intrinsics.checkNotNullParameter(genericDraweeHierarchyBuilder, "<this>");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public static final Unit renderEmojiInto$lambda$4(GenericDraweeHierarchyBuilder genericDraweeHierarchyBuilder) {
         Intrinsics.checkNotNullParameter(genericDraweeHierarchyBuilder, "<this>");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public static final void renderEmojiInto(DraweeSpanStringBuilder draweeSpanStringBuilder, String str, String str2, Context context, int i10, boolean z10, int i11, Function1<? super GenericDraweeHierarchyBuilder, Unit> function1) {
         int length = draweeSpanStringBuilder.length();
         draweeSpanStringBuilder.append((char) 8203);
         com.facebook.drawee.controller.a build = ((PipelineDraweeControllerBuilder) ((PipelineDraweeControllerBuilder) ((PipelineDraweeControllerBuilder) e9.d.g().A(z10)).E(ImageRequestBuilder.x(Uri.parse(str)).N(new ResizeOptions(i10, i10, 0.0f, 0.0f, 12, null)).I(ImageRequest.RequestLevel.FULL_FETCH).a())).C(str2)).build();
-        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(context.getResources()).w(ScalingUtils$ScaleType.f10666e);
+        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(context.getResources()).w(ScalingUtils$ScaleType.f9634e);
         function1.invoke(w10);
         draweeSpanStringBuilder.j(context, w10.a(), build, length, i10, i10, false, i11);
     }

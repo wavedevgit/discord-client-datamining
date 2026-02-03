@@ -11,58 +11,58 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class u implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Supplier f11577a;
+    private final Supplier f10545a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final la.k f11578b;
+    private final la.k f10546b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final w0 f11579c;
+    private final w0 f10547c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public class a implements u4.d {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ y0 f11580a;
+        final /* synthetic */ y0 f10548a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ ProducerContext f11581b;
+        final /* synthetic */ ProducerContext f10549b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ Consumer f11582c;
+        final /* synthetic */ Consumer f10550c;
 
         a(y0 y0Var, ProducerContext producerContext, Consumer consumer) {
-            this.f11580a = y0Var;
-            this.f11581b = producerContext;
-            this.f11582c = consumer;
+            this.f10548a = y0Var;
+            this.f10549b = producerContext;
+            this.f10550c = consumer;
         }
 
         @Override // u4.d
         /* renamed from: b */
         public Void a(u4.f fVar) {
             if (u.f(fVar)) {
-                this.f11580a.c(this.f11581b, "DiskCacheProducer", null);
-                this.f11582c.a();
+                this.f10548a.c(this.f10549b, "DiskCacheProducer", null);
+                this.f10550c.a();
             } else if (fVar.n()) {
-                this.f11580a.k(this.f11581b, "DiskCacheProducer", fVar.i(), null);
-                u.this.f11579c.b(this.f11582c, this.f11581b);
+                this.f10548a.k(this.f10549b, "DiskCacheProducer", fVar.i(), null);
+                u.this.f10547c.b(this.f10550c, this.f10549b);
             } else {
                 sa.k kVar = (sa.k) fVar.j();
                 if (kVar != null) {
-                    y0 y0Var = this.f11580a;
-                    ProducerContext producerContext = this.f11581b;
-                    y0Var.j(producerContext, "DiskCacheProducer", u.e(y0Var, producerContext, true, kVar.D0()));
-                    this.f11580a.b(this.f11581b, "DiskCacheProducer", true);
-                    this.f11581b.E("disk");
-                    this.f11582c.c(1.0f);
-                    this.f11582c.b(kVar, 1);
+                    y0 y0Var = this.f10548a;
+                    ProducerContext producerContext = this.f10549b;
+                    y0Var.j(producerContext, "DiskCacheProducer", u.e(y0Var, producerContext, true, kVar.C0()));
+                    this.f10548a.b(this.f10549b, "DiskCacheProducer", true);
+                    this.f10549b.E("disk");
+                    this.f10550c.c(1.0f);
+                    this.f10550c.b(kVar, 1);
                     kVar.close();
                 } else {
-                    y0 y0Var2 = this.f11580a;
-                    ProducerContext producerContext2 = this.f11581b;
+                    y0 y0Var2 = this.f10548a;
+                    ProducerContext producerContext2 = this.f10549b;
                     y0Var2.j(producerContext2, "DiskCacheProducer", u.e(y0Var2, producerContext2, false, 0));
-                    u.this.f11579c.b(this.f11582c, this.f11581b);
+                    u.this.f10547c.b(this.f10550c, this.f10549b);
                 }
             }
             return null;
@@ -74,22 +74,22 @@ public class u implements w0 {
     public class b extends f {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ AtomicBoolean f11584a;
+        final /* synthetic */ AtomicBoolean f10552a;
 
         b(AtomicBoolean atomicBoolean) {
-            this.f11584a = atomicBoolean;
+            this.f10552a = atomicBoolean;
         }
 
         @Override // com.facebook.imagepipeline.producers.x0
         public void b() {
-            this.f11584a.set(true);
+            this.f10552a.set(true);
         }
     }
 
     public u(Supplier supplier, la.k kVar, w0 w0Var) {
-        this.f11577a = supplier;
-        this.f11578b = kVar;
-        this.f11579c = w0Var;
+        this.f10545a = supplier;
+        this.f10546b = kVar;
+        this.f10547c = w0Var;
     }
 
     static Map e(y0 y0Var, ProducerContext producerContext, boolean z10, int i10) {
@@ -114,12 +114,12 @@ public class u implements w0 {
     }
 
     private void g(Consumer consumer, ProducerContext producerContext) {
-        if (producerContext.F0().d() >= ImageRequest.RequestLevel.DISK_CACHE.d()) {
+        if (producerContext.E0().d() >= ImageRequest.RequestLevel.DISK_CACHE.d()) {
             producerContext.n("disk", "nil-result_read");
             consumer.b(null, 1);
             return;
         }
-        this.f11579c.b(consumer, producerContext);
+        this.f10547c.b(consumer, producerContext);
     }
 
     private u4.d h(Consumer consumer, ProducerContext producerContext) {
@@ -138,8 +138,8 @@ public class u implements w0 {
             return;
         }
         producerContext.F().d(producerContext, "DiskCacheProducer");
-        CacheKey encodedCacheKey = this.f11578b.getEncodedCacheKey(V, producerContext.a());
-        na.b bVar = (na.b) this.f11577a.get();
+        CacheKey encodedCacheKey = this.f10546b.getEncodedCacheKey(V, producerContext.a());
+        na.b bVar = (na.b) this.f10545a.get();
         la.j a10 = t.a(V, bVar.a(), bVar.b(), bVar.c());
         if (a10 == null) {
             y0 F = producerContext.F();

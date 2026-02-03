@@ -7,27 +7,27 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a implements Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f49604d;
+    private int f49815d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final CloseableReference f49605e;
+    private final CloseableReference f49816e;
 
     public a(int i10, CloseableReference bitmap) {
         Intrinsics.checkNotNullParameter(bitmap, "bitmap");
-        this.f49604d = i10;
-        this.f49605e = bitmap;
+        this.f49815d = i10;
+        this.f49816e = bitmap;
     }
 
     public final CloseableReference a() {
-        return this.f49605e;
+        return this.f49816e;
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f49605e.close();
+        this.f49816e.close();
     }
 
     public final int h() {
-        return this.f49604d;
+        return this.f49815d;
     }
 }

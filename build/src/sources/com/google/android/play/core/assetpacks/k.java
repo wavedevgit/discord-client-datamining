@@ -7,29 +7,29 @@ import android.os.RemoteException;
 public final class k extends th.l0 {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ int f16479e;
+    final /* synthetic */ int f15447e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ String f16480i;
+    final /* synthetic */ String f15448i;
 
     /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ wg.k f16481o;
+    final /* synthetic */ wg.k f15449o;
 
     /* renamed from: p  reason: collision with root package name */
-    final /* synthetic */ int f16482p;
+    final /* synthetic */ int f15450p;
 
     /* renamed from: q  reason: collision with root package name */
-    final /* synthetic */ x f16483q;
+    final /* synthetic */ x f15451q;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public k(x xVar, wg.k kVar, int i10, String str, wg.k kVar2, int i11) {
         super(kVar);
-        this.f16479e = i10;
-        this.f16480i = str;
-        this.f16481o = kVar2;
-        this.f16482p = i11;
-        this.f16483q = xVar;
+        this.f15447e = i10;
+        this.f15448i = str;
+        this.f15449o = kVar2;
+        this.f15450p = i11;
+        this.f15451q = xVar;
     }
 
     @Override // th.l0
@@ -40,13 +40,13 @@ public final class k extends th.l0 {
         Bundle A;
         Bundle h10;
         try {
-            v0Var = this.f16483q.f16724d;
-            str = this.f16483q.f16721a;
-            A = x.A(this.f16479e, this.f16480i);
+            v0Var = this.f15451q.f15692d;
+            str = this.f15451q.f15689a;
+            A = x.A(this.f15447e, this.f15448i);
             h10 = x.h();
-            ((th.b0) v0Var.e()).F0(str, A, h10, new u(this.f16483q, this.f16481o, this.f16479e, this.f16480i, this.f16482p));
+            ((th.b0) v0Var.e()).F0(str, A, h10, new u(this.f15451q, this.f15449o, this.f15447e, this.f15448i, this.f15450p));
         } catch (RemoteException e10) {
-            k0Var = x.f16719g;
+            k0Var = x.f15687g;
             k0Var.c(e10, "notifyModuleCompleted", new Object[0]);
         }
     }

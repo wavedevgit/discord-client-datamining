@@ -5,30 +5,30 @@ import ui.c;
 final class w0 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final w0 f41652a = new w0();
+    static final w0 f41691a = new w0();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41653b;
+    private static final ui.c f41692b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41654c;
+    private static final ui.c f41693c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41655d;
+    private static final ui.c f41694d;
 
     static {
         c.b a10 = ui.c.a("logEventKey");
         f fVar = new f();
         fVar.a(1);
-        f41653b = a10.b(fVar.b()).a();
+        f41692b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("eventCount");
         f fVar2 = new f();
         fVar2.a(2);
-        f41654c = a11.b(fVar2.b()).a();
+        f41693c = a11.b(fVar2.b()).a();
         c.b a12 = ui.c.a("inferenceDurationStats");
         f fVar3 = new f();
         fVar3.a(3);
-        f41655d = a12.b(fVar3.b()).a();
+        f41694d = a12.b(fVar3.b()).a();
     }
 
     private w0() {

@@ -1,16 +1,37 @@
 package dp;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import androidx.viewbinding.ViewBinding;
+import cp.n1;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
+public final class a implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f22033a = 2131362094;
+    private final View f20714a;
 
-    /* renamed from: b  reason: collision with root package name */
-    public static int f22034b = 2131362355;
+    private a(View view) {
+        this.f20714a = view;
+    }
 
-    /* renamed from: c  reason: collision with root package name */
-    public static int f22035c = 2131362392;
+    public static a a(View view) {
+        if (view != null) {
+            return new a(view);
+        }
+        throw new NullPointerException("rootView");
+    }
 
-    /* renamed from: d  reason: collision with root package name */
-    public static int f22036d = 2131363161;
+    public static a b(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
+        View inflate = layoutInflater.inflate(n1.f19742a, viewGroup, false);
+        if (z10) {
+            viewGroup.addView(inflate);
+        }
+        return a(inflate);
+    }
+
+    @Override // androidx.viewbinding.ViewBinding
+    public View getRoot() {
+        return this.f20714a;
+    }
 }

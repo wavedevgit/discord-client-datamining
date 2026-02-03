@@ -10,28 +10,28 @@ import java.util.concurrent.Executor;
 public class g {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Object f46080b = new Object();
+    private static final Object f46038b = new Object();
 
     /* renamed from: c  reason: collision with root package name */
-    private static g f46081c;
+    private static g f46039c;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Handler f46082a;
+    private final Handler f46040a;
 
     private g(Looper looper) {
-        this.f46082a = new lg.a(looper);
+        this.f46040a = new lg.a(looper);
     }
 
     public static g a() {
         g gVar;
-        synchronized (f46080b) {
+        synchronized (f46038b) {
             try {
-                if (f46081c == null) {
+                if (f46039c == null) {
                     HandlerThread handlerThread = new HandlerThread("MLHandler", 9);
                     handlerThread.start();
-                    f46081c = new g(handlerThread.getLooper());
+                    f46039c = new g(handlerThread.getLooper());
                 }
-                gVar = f46081c;
+                gVar = f46039c;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -40,7 +40,7 @@ public class g {
     }
 
     public static Executor d() {
-        return t.f46132d;
+        return t.f46090d;
     }
 
     public Task b(final Callable callable) {

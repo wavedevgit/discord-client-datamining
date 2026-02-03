@@ -5,7 +5,7 @@ import ui.c;
 final class o7 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final o7 f45703a = new o7();
+    static final o7 f45661a = new o7();
 
     static {
         c.b a10 = ui.c.a("modelType");

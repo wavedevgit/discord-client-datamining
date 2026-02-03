@@ -1,37 +1,31 @@
 package vo;
 
-import androidx.activity.result.ActivityResultLauncher;
-import kotlin.jvm.internal.Intrinsics;
+import lv.a0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class g {
+public final class g implements wq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ActivityResultLauncher f51483a;
+    private final com.withpersona.sdk2.inquiry.internal.network.f f51727a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ActivityResultLauncher f51484b;
+    private final wq.h f51728b;
 
-    /* renamed from: c  reason: collision with root package name */
-    private final ActivityResultLauncher f51485c;
-
-    public g(ActivityResultLauncher pictureLaunchResultLauncher, ActivityResultLauncher openDocumentsResultLauncher, ActivityResultLauncher selectFromPhotoLibraryLauncher) {
-        Intrinsics.checkNotNullParameter(pictureLaunchResultLauncher, "pictureLaunchResultLauncher");
-        Intrinsics.checkNotNullParameter(openDocumentsResultLauncher, "openDocumentsResultLauncher");
-        Intrinsics.checkNotNullParameter(selectFromPhotoLibraryLauncher, "selectFromPhotoLibraryLauncher");
-        this.f51483a = pictureLaunchResultLauncher;
-        this.f51484b = openDocumentsResultLauncher;
-        this.f51485c = selectFromPhotoLibraryLauncher;
+    public g(com.withpersona.sdk2.inquiry.internal.network.f fVar, wq.h hVar) {
+        this.f51727a = fVar;
+        this.f51728b = hVar;
     }
 
-    public final ActivityResultLauncher a() {
-        return this.f51484b;
+    public static g a(com.withpersona.sdk2.inquiry.internal.network.f fVar, wq.h hVar) {
+        return new g(fVar, hVar);
     }
 
-    public final ActivityResultLauncher b() {
-        return this.f51485c;
+    public static com.withpersona.sdk2.inquiry.governmentid.network.a c(com.withpersona.sdk2.inquiry.internal.network.f fVar, a0 a0Var) {
+        return (com.withpersona.sdk2.inquiry.governmentid.network.a) wq.g.d(fVar.c(a0Var));
     }
 
-    public final ActivityResultLauncher c() {
-        return this.f51483a;
+    @Override // javax.inject.Provider
+    /* renamed from: b */
+    public com.withpersona.sdk2.inquiry.governmentid.network.a get() {
+        return c(this.f51727a, (a0) this.f51728b.get());
     }
 }

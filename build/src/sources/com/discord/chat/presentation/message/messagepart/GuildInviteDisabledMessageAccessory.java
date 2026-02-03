@@ -62,7 +62,7 @@ public final class GuildInviteDisabledMessageAccessory extends MessageAccessory 
         }
         if (obj instanceof GuildInviteDisabledMessageAccessory) {
             GuildInviteDisabledMessageAccessory guildInviteDisabledMessageAccessory = (GuildInviteDisabledMessageAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, guildInviteDisabledMessageAccessory.messageId) && this.codedLinkIndex == guildInviteDisabledMessageAccessory.codedLinkIndex && Intrinsics.areEqual(this.invite, guildInviteDisabledMessageAccessory.invite);
+            return MessageId.m1089equalsimpl0(this.messageId, guildInviteDisabledMessageAccessory.messageId) && this.codedLinkIndex == guildInviteDisabledMessageAccessory.codedLinkIndex && Intrinsics.areEqual(this.invite, guildInviteDisabledMessageAccessory.invite);
         }
         return false;
     }
@@ -84,15 +84,15 @@ public final class GuildInviteDisabledMessageAccessory extends MessageAccessory 
     }
 
     public int hashCode() {
-        return (((MessageId.m1091hashCodeimpl(this.messageId) * 31) + Integer.hashCode(this.codedLinkIndex)) * 31) + this.invite.hashCode();
+        return (((MessageId.m1090hashCodeimpl(this.messageId) * 31) + Integer.hashCode(this.codedLinkIndex)) * 31) + this.invite.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         int i10 = this.codedLinkIndex;
         GuildInviteDisabledEmbedImpl guildInviteDisabledEmbedImpl = this.invite;
-        return "GuildInviteDisabledMessageAccessory(messageId=" + m1093toStringimpl + ", codedLinkIndex=" + i10 + ", invite=" + guildInviteDisabledEmbedImpl + ")";
+        return "GuildInviteDisabledMessageAccessory(messageId=" + m1092toStringimpl + ", codedLinkIndex=" + i10 + ", invite=" + guildInviteDisabledEmbedImpl + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

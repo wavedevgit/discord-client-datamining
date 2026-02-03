@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'utils/native/openChannelCallModalForChannelId.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun64081: for (var _fun64081_ip = 0;;) switch (_fun64081_ip) {
+        _fun64139: for (var _fun64139_ip = 0;;) switch (_fun64139_ip) {
             case 0:
                 var1 = arg1;
                 var4 = _closure1_slot2;
@@ -36,21 +36,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var4)(var2);
                 var3 = null;
                 if (!(var3 != var2)) {
-                    _fun64081_ip = 120;
-                    continue _fun64081
+                    _fun64139_ip = 120;
+                    continue _fun64139
                 }
             case 29:
                 if (!var1) {
-                    _fun64081_ip = 42;
-                    continue _fun64081
+                    _fun64139_ip = 42;
+                    continue _fun64139
                 }
             case 32:
                 var3 = var2.isGuildStageVoice;
                 var1 = var3.bind(var2)();
             case 42:
                 if (!var1) {
-                    _fun64081_ip = 84;
-                    continue _fun64081
+                    _fun64139_ip = 84;
+                    continue _fun64139
                 }
             case 45:
                 var5 = _closure1_slot0;
@@ -65,8 +65,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3 === var4;
             case 84:
                 if (var1) {
-                    _fun64081_ip = 120;
-                    continue _fun64081
+                    _fun64139_ip = 120;
+                    continue _fun64139
                 }
             case 87:
                 var3 = _closure1_slot0;
@@ -84,4 +84,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 5906, 7871, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 5911, 7876, 2]);

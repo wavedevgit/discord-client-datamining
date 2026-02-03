@@ -9,10 +9,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/modules/overlay/web/v3',
+        'httpServerLocation': '/assets/.cache/intl/bW9kdWxlcy9vdmVybGF5L3dlYi92Mw==',
         'scales': null,
-        'hash': '2e86a5a95914e461be603d0424f3df57',
-        'name': 'OverlayWidgets.compiled.messages',
+        'hash': '4f2f32644cfa16e36b2577f0eb0325d2',
+        'name': 'ro.messages.4f2f32644cfa16e36b2577f0eb0325d2.compiled.messages',
         'type': 'jsona'
     };
     var4 = [1];

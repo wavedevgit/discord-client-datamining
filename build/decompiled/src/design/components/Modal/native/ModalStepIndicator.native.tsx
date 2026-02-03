@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
-        _fun88255: for (var _fun88255_ip = 0;;) switch (_fun88255_ip) {
+        _fun88347: for (var _fun88347_ip = 0;;) switch (_fun88347_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.isActive;
@@ -17,8 +17,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var0.activeColor;
                 var3 = undefined;
                 if (!(var14 === var3)) {
-                    _fun88255_ip = 61;
-                    continue _fun88255
+                    _fun88347_ip = 61;
+                    continue _fun88347
                 }
             case 27:
                 var4 = _closure1_slot1;
@@ -31,8 +31,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 61:
                 var11 = var0.inactiveColor;
                 if (!(var11 === var3)) {
-                    _fun88255_ip = 105;
-                    continue _fun88255
+                    _fun88347_ip = 105;
+                    continue _fun88347
                 }
             case 71:
                 var4 = _closure1_slot1;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 105:
                 var9 = var0.inactiveOpacity;
                 if (!(var9 === var3)) {
-                    _fun88255_ip = 118;
-                    continue _fun88255
+                    _fun88347_ip = 118;
+                    continue _fun88347
                 }
             case 115:
                 var9 = 1;
@@ -65,8 +65,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var8.useSharedValue;
                 var0 = 0;
                 if (!var6) {
-                    _fun88255_ip = 179;
-                    continue _fun88255
+                    _fun88347_ip = 179;
+                    continue _fun88347
                 }
             case 176:
                 var0 = 1;
@@ -92,13 +92,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7[0] = var6;
                 var7[1] = var12;
                 var6 = function() { // Environment: var2
-                    _fun88256: for (var _fun88256_ip = 0;;) switch (_fun88256_ip) {
+                    _fun88348: for (var _fun88348_ip = 0;;) switch (_fun88348_ip) {
                         case 0:
                             var1 = _closure2_slot0;
                             var6 = 0;
                             if (!var1) {
-                                _fun88256_ip = 15;
-                                continue _fun88256
+                                _fun88348_ip = 15;
+                                continue _fun88348
                             }
                         case 12:
                             var6 = 1;
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Modal/native/ModalStepIndicator.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun88258: for (var _fun88258_ip = 0;;) switch (_fun88258_ip) {
+        _fun88350: for (var _fun88350_ip = 0;;) switch (_fun88350_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.currentStep;
@@ -277,8 +277,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 0;
                 var10 = var1 < var8;
                 if (!var10) {
-                    _fun88258_ip = 117;
-                    continue _fun88258
+                    _fun88350_ip = 117;
+                    continue _fun88350
                 }
             case 59:
                 var11 = var4.push;
@@ -294,8 +294,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var11.bind(var4)(var10);
                 var1 = var1 + 1;
                 if (var1 < var8) {
-                    _fun88258_ip = 59;
-                    continue _fun88258
+                    _fun88350_ip = 59;
+                    continue _fun88350
                 }
             case 117:
                 var2 = _closure1_slot5;
@@ -310,4 +310,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ModalStepIndicator = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3711, 3142, 4072, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3720, 3151, 4081, 2]);

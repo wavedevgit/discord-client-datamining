@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var3.useFocusEffect;
         var5 = var6.useCallback;
         var4 = function() { // Environment: var1
-            _fun43613: for (var _fun43613_ip = 0;;) switch (_fun43613_ip) {
+            _fun43669: for (var _fun43669_ip = 0;;) switch (_fun43669_ip) {
                 case 0:
                     var4 = _closure1_slot0;
                     var3 = _closure1_slot1;
@@ -67,8 +67,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var4.isIOS;
                     var3 = var3.bind(var4)();
                     if (var3) {
-                        _fun43613_ip = 78;
-                        continue _fun43613
+                        _fun43669_ip = 78;
+                        continue _fun43669
                     }
                 case 40:
                     var5 = _closure1_slot3;

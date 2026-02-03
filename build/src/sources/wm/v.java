@@ -1,37 +1,39 @@
 package wm;
 
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.coroutines.flow.Flow;
-import kotlinx.coroutines.flow.MutableStateFlow;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class v implements t {
+public final class v {
 
     /* renamed from: a  reason: collision with root package name */
-    private final MutableStateFlow f52419a;
+    private final Object f52593a;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final Flow f52420b;
-
-    public v(String initialValue) {
-        Intrinsics.checkNotNullParameter(initialValue, "initialValue");
-        MutableStateFlow a10 = ks.l0.a(initialValue);
-        this.f52419a = a10;
-        this.f52420b = ks.g.m(a10, 1);
+    public v(Object obj) {
+        this.f52593a = obj;
     }
 
-    @Override // wm.t
-    public Flow a() {
-        return this.f52420b;
+    public final Object a() {
+        return this.f52593a;
     }
 
-    @Override // wm.t
-    public String b() {
-        return (String) this.f52419a.getValue();
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof v)) {
+            return false;
+        }
+        return Intrinsics.areEqual(this.f52593a, ((v) obj).f52593a);
     }
 
-    @Override // wm.t
-    public void c(String value) {
-        Intrinsics.checkNotNullParameter(value, "value");
-        this.f52419a.setValue(value);
+    public int hashCode() {
+        Object obj = this.f52593a;
+        if (obj == null) {
+            return 0;
+        }
+        return obj.hashCode();
+    }
+
+    public String toString() {
+        return "WorkflowOutput(" + this.f52593a + ')';
     }
 }

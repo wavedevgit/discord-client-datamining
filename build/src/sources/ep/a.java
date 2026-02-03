@@ -1,58 +1,64 @@
 package ep;
-
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.viewbinding.ViewBinding;
-import com.google.android.material.appbar.MaterialToolbar;
-import com.google.android.material.materialswitch.MaterialSwitch;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements ViewBinding {
+public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f23076a;
+    public static int f22453a = 2130969440;
 
     /* renamed from: b  reason: collision with root package name */
-    public final MaterialSwitch f23077b;
+    public static int f22454b = 2130969619;
 
     /* renamed from: c  reason: collision with root package name */
-    public final MaterialToolbar f23078c;
+    public static int f22455c = 2130969622;
 
-    private a(ConstraintLayout constraintLayout, MaterialSwitch materialSwitch, MaterialToolbar materialToolbar) {
-        this.f23076a = constraintLayout;
-        this.f23077b = materialSwitch;
-        this.f23078c = materialToolbar;
-    }
+    /* renamed from: d  reason: collision with root package name */
+    public static int f22456d = 2130969623;
 
-    public static a a(View view) {
-        int i10 = dp.a.f22035c;
-        MaterialSwitch materialSwitch = (MaterialSwitch) e4.a.a(view, i10);
-        if (materialSwitch != null) {
-            i10 = dp.a.f22036d;
-            MaterialToolbar materialToolbar = (MaterialToolbar) e4.a.a(view, i10);
-            if (materialToolbar != null) {
-                return new a((ConstraintLayout) view, materialSwitch, materialToolbar);
-            }
-        }
-        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
-    }
+    /* renamed from: e  reason: collision with root package name */
+    public static int f22457e = 2130969624;
 
-    public static a c(LayoutInflater layoutInflater) {
-        return d(layoutInflater, null, false);
-    }
+    /* renamed from: f  reason: collision with root package name */
+    public static int f22458f = 2130969625;
 
-    public static a d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(dp.b.f22037a, viewGroup, false);
-        if (z10) {
-            viewGroup.addView(inflate);
-        }
-        return a(inflate);
-    }
+    /* renamed from: g  reason: collision with root package name */
+    public static int f22459g = 2130969626;
 
-    @Override // androidx.viewbinding.ViewBinding
-    /* renamed from: b */
-    public ConstraintLayout getRoot() {
-        return this.f23076a;
-    }
+    /* renamed from: h  reason: collision with root package name */
+    public static int f22460h = 2130969627;
+
+    /* renamed from: i  reason: collision with root package name */
+    public static int f22461i = 2130969628;
+
+    /* renamed from: j  reason: collision with root package name */
+    public static int f22462j = 2130969629;
+
+    /* renamed from: k  reason: collision with root package name */
+    public static int f22463k = 2130969630;
+
+    /* renamed from: l  reason: collision with root package name */
+    public static int f22464l = 2130969631;
+
+    /* renamed from: m  reason: collision with root package name */
+    public static int f22465m = 2130969632;
+
+    /* renamed from: n  reason: collision with root package name */
+    public static int f22466n = 2130969635;
+
+    /* renamed from: o  reason: collision with root package name */
+    public static int f22467o = 2130969637;
+
+    /* renamed from: p  reason: collision with root package name */
+    public static int f22468p = 2130969639;
+
+    /* renamed from: q  reason: collision with root package name */
+    public static int f22469q = 2130969641;
+
+    /* renamed from: r  reason: collision with root package name */
+    public static int f22470r = 2130969642;
+
+    /* renamed from: s  reason: collision with root package name */
+    public static int f22471s = 2130969643;
+
+    /* renamed from: t  reason: collision with root package name */
+    public static int f22472t = 2130969645;
 }

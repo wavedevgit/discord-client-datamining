@@ -1,17 +1,17 @@
 package kotlin.reflect.jvm.internal.impl.load.kotlin;
 
-import jr.p;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.reflect.jvm.internal.impl.builtins.PrimitiveType;
 import kotlin.reflect.jvm.internal.impl.load.kotlin.JvmType;
 import kotlin.reflect.jvm.internal.impl.resolve.jvm.JvmClassName;
 import kotlin.reflect.jvm.internal.impl.resolve.jvm.JvmPrimitiveType;
 import kotlin.text.StringsKt;
+import lr.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 final class JvmTypeFactoryImpl implements JvmTypeFactory {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final JvmTypeFactoryImpl f34304a = new JvmTypeFactoryImpl();
+    public static final JvmTypeFactoryImpl f33694a = new JvmTypeFactoryImpl();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public /* synthetic */ class WhenMappings {

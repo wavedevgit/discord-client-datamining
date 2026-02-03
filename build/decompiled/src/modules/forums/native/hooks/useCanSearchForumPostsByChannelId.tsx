@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = _closure1_slot3;
         var1[1] = var4;
         var0 = function() { // Environment: var0
-            _fun72062: for (var _fun72062_ip = 0;;) switch (_fun72062_ip) {
+            _fun72172: for (var _fun72172_ip = 0;;) switch (_fun72172_ip) {
                 case 0:
                     var3 = _closure1_slot2;
                     var2 = var3.getChannel;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = null;
                     var0 = var0 != var4;
                     if (!var0) {
-                        _fun72062_ip = 59;
-                        continue _fun72062
+                        _fun72172_ip = 59;
+                        continue _fun72172
                     }
                 case 33:
                     var3 = _closure1_slot3;
@@ -78,4 +78,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useCanSearchForumPostsByChannelId = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3082, 660, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3091, 660, 566, 2]);

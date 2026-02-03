@@ -7,15 +7,15 @@ import kotlin.jvm.internal.markers.KMappedMarker;
 public abstract class c implements Iterator, KMappedMarker {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f33090d;
+    private int f32480d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Object f33091e;
+    private Object f32481e;
 
     private final boolean d() {
-        this.f33090d = 3;
+        this.f32480d = 3;
         a();
-        if (this.f33090d == 1) {
+        if (this.f32480d == 1) {
             return true;
         }
         return false;
@@ -25,18 +25,18 @@ public abstract class c implements Iterator, KMappedMarker {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void b() {
-        this.f33090d = 2;
+        this.f32480d = 2;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void c(Object obj) {
-        this.f33091e = obj;
-        this.f33090d = 1;
+        this.f32481e = obj;
+        this.f32480d = 1;
     }
 
     @Override // java.util.Iterator
     public boolean hasNext() {
-        int i10 = this.f33090d;
+        int i10 = this.f32480d;
         if (i10 != 0) {
             if (i10 == 1) {
                 return true;
@@ -51,13 +51,13 @@ public abstract class c implements Iterator, KMappedMarker {
 
     @Override // java.util.Iterator
     public Object next() {
-        int i10 = this.f33090d;
+        int i10 = this.f32480d;
         if (i10 == 1) {
-            this.f33090d = 0;
-            return this.f33091e;
+            this.f32480d = 0;
+            return this.f32481e;
         } else if (i10 != 2 && d()) {
-            this.f33090d = 0;
-            return this.f33091e;
+            this.f32480d = 0;
+            return this.f32481e;
         } else {
             throw new NoSuchElementException();
         }

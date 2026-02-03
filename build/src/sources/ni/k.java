@@ -10,35 +10,35 @@ import gf.t;
 public final class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f41837a;
+    private final String f41876a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f41838b;
+    private final String f41877b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f41839c;
+    private final String f41878c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f41840d;
+    private final String f41879d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f41841e;
+    private final String f41880e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f41842f;
+    private final String f41881f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f41843g;
+    private final String f41882g;
 
     private k(String str, String str2, String str3, String str4, String str5, String str6, String str7) {
         q.o(!m.a(str), "ApplicationId must be set.");
-        this.f41838b = str;
-        this.f41837a = str2;
-        this.f41839c = str3;
-        this.f41840d = str4;
-        this.f41841e = str5;
-        this.f41842f = str6;
-        this.f41843g = str7;
+        this.f41877b = str;
+        this.f41876a = str2;
+        this.f41878c = str3;
+        this.f41879d = str4;
+        this.f41880e = str5;
+        this.f41881f = str6;
+        this.f41882g = str7;
     }
 
     public static k a(Context context) {
@@ -51,19 +51,19 @@ public final class k {
     }
 
     public String b() {
-        return this.f41837a;
+        return this.f41876a;
     }
 
     public String c() {
-        return this.f41838b;
+        return this.f41877b;
     }
 
     public String d() {
-        return this.f41841e;
+        return this.f41880e;
     }
 
     public String e() {
-        return this.f41843g;
+        return this.f41882g;
     }
 
     public boolean equals(Object obj) {
@@ -71,17 +71,17 @@ public final class k {
             return false;
         }
         k kVar = (k) obj;
-        if (!o.a(this.f41838b, kVar.f41838b) || !o.a(this.f41837a, kVar.f41837a) || !o.a(this.f41839c, kVar.f41839c) || !o.a(this.f41840d, kVar.f41840d) || !o.a(this.f41841e, kVar.f41841e) || !o.a(this.f41842f, kVar.f41842f) || !o.a(this.f41843g, kVar.f41843g)) {
+        if (!o.a(this.f41877b, kVar.f41877b) || !o.a(this.f41876a, kVar.f41876a) || !o.a(this.f41878c, kVar.f41878c) || !o.a(this.f41879d, kVar.f41879d) || !o.a(this.f41880e, kVar.f41880e) || !o.a(this.f41881f, kVar.f41881f) || !o.a(this.f41882g, kVar.f41882g)) {
             return false;
         }
         return true;
     }
 
     public int hashCode() {
-        return o.b(this.f41838b, this.f41837a, this.f41839c, this.f41840d, this.f41841e, this.f41842f, this.f41843g);
+        return o.b(this.f41877b, this.f41876a, this.f41878c, this.f41879d, this.f41880e, this.f41881f, this.f41882g);
     }
 
     public String toString() {
-        return o.c(this).a("applicationId", this.f41838b).a("apiKey", this.f41837a).a("databaseUrl", this.f41839c).a("gcmSenderId", this.f41841e).a("storageBucket", this.f41842f).a("projectId", this.f41843g).toString();
+        return o.c(this).a("applicationId", this.f41877b).a("apiKey", this.f41876a).a("databaseUrl", this.f41878c).a("gcmSenderId", this.f41880e).a("storageBucket", this.f41881f).a("projectId", this.f41882g).toString();
     }
 }

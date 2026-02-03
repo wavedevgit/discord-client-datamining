@@ -2,8 +2,6 @@ package kotlin.reflect.jvm.internal.impl.types.checker;
 
 import java.util.ArrayList;
 import java.util.List;
-import jr.l;
-import jr.o;
 import kotlin.Lazy;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.functions.Function0;
@@ -18,33 +16,35 @@ import kotlin.reflect.jvm.internal.impl.types.KotlinType;
 import kotlin.reflect.jvm.internal.impl.types.TypeProjection;
 import kotlin.reflect.jvm.internal.impl.types.UnwrappedType;
 import kotlin.reflect.jvm.internal.impl.types.typeUtil.TypeUtilsKt;
+import lr.l;
+import lr.o;
 import org.jetbrains.annotations.NotNull;
 @SourceDebugExtension({"SMAP\nNewCapturedType.kt\nKotlin\n*S Kotlin\n*F\n+ 1 NewCapturedType.kt\norg/jetbrains/kotlin/types/checker/NewCapturedTypeConstructor\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,290:1\n1563#2:291\n1634#2,3:292\n*S KotlinDebug\n*F\n+ 1 NewCapturedType.kt\norg/jetbrains/kotlin/types/checker/NewCapturedTypeConstructor\n*L\n271#1:291\n271#1:292,3\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class NewCapturedTypeConstructor implements CapturedTypeConstructor {
 
     /* renamed from: a  reason: collision with root package name */
-    private final TypeProjection f35731a;
+    private final TypeProjection f35121a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Function0 f35732b;
+    private Function0 f35122b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final NewCapturedTypeConstructor f35733c;
+    private final NewCapturedTypeConstructor f35123c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final TypeParameterDescriptor f35734d;
+    private final TypeParameterDescriptor f35124d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Lazy f35735e;
+    private final Lazy f35125e;
 
     public NewCapturedTypeConstructor(@NotNull TypeProjection projection, Function0<? extends List<? extends UnwrappedType>> function0, NewCapturedTypeConstructor newCapturedTypeConstructor, TypeParameterDescriptor typeParameterDescriptor) {
         Intrinsics.checkNotNullParameter(projection, "projection");
-        this.f35731a = projection;
-        this.f35732b = function0;
-        this.f35733c = newCapturedTypeConstructor;
-        this.f35734d = typeParameterDescriptor;
-        this.f35735e = l.a(o.f32182e, new a(this));
+        this.f35121a = projection;
+        this.f35122b = function0;
+        this.f35123c = newCapturedTypeConstructor;
+        this.f35124d = typeParameterDescriptor;
+        this.f35125e = l.b(o.f37120e, new a(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -54,7 +54,7 @@ public final class NewCapturedTypeConstructor implements CapturedTypeConstructor
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final List b(NewCapturedTypeConstructor newCapturedTypeConstructor) {
-        Function0 function0 = newCapturedTypeConstructor.f35732b;
+        Function0 function0 = newCapturedTypeConstructor.f35122b;
         if (function0 != null) {
             return (List) function0.invoke();
         }
@@ -62,7 +62,7 @@ public final class NewCapturedTypeConstructor implements CapturedTypeConstructor
     }
 
     private final List g() {
-        return (List) this.f35735e.getValue();
+        return (List) this.f35125e.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -95,11 +95,11 @@ public final class NewCapturedTypeConstructor implements CapturedTypeConstructor
         }
         Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type org.jetbrains.kotlin.types.checker.NewCapturedTypeConstructor");
         NewCapturedTypeConstructor newCapturedTypeConstructor = (NewCapturedTypeConstructor) obj;
-        NewCapturedTypeConstructor newCapturedTypeConstructor2 = this.f35733c;
+        NewCapturedTypeConstructor newCapturedTypeConstructor2 = this.f35123c;
         if (newCapturedTypeConstructor2 == null) {
             newCapturedTypeConstructor2 = this;
         }
-        NewCapturedTypeConstructor newCapturedTypeConstructor3 = newCapturedTypeConstructor.f35733c;
+        NewCapturedTypeConstructor newCapturedTypeConstructor3 = newCapturedTypeConstructor.f35123c;
         if (newCapturedTypeConstructor3 != null) {
             obj = newCapturedTypeConstructor3;
         }
@@ -119,7 +119,7 @@ public final class NewCapturedTypeConstructor implements CapturedTypeConstructor
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
     /* renamed from: getDeclarationDescriptor */
-    public ClassifierDescriptor mo1200getDeclarationDescriptor() {
+    public ClassifierDescriptor mo1197getDeclarationDescriptor() {
         return null;
     }
 
@@ -132,11 +132,11 @@ public final class NewCapturedTypeConstructor implements CapturedTypeConstructor
     @Override // kotlin.reflect.jvm.internal.impl.resolve.calls.inference.CapturedTypeConstructor
     @NotNull
     public TypeProjection getProjection() {
-        return this.f35731a;
+        return this.f35121a;
     }
 
     public int hashCode() {
-        NewCapturedTypeConstructor newCapturedTypeConstructor = this.f35733c;
+        NewCapturedTypeConstructor newCapturedTypeConstructor = this.f35123c;
         if (newCapturedTypeConstructor != null) {
             return newCapturedTypeConstructor.hashCode();
         }
@@ -145,7 +145,7 @@ public final class NewCapturedTypeConstructor implements CapturedTypeConstructor
 
     public final void initializeSupertypes(@NotNull List<? extends UnwrappedType> supertypes) {
         Intrinsics.checkNotNullParameter(supertypes, "supertypes");
-        this.f35732b = new c(supertypes);
+        this.f35122b = new c(supertypes);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
@@ -171,12 +171,12 @@ public final class NewCapturedTypeConstructor implements CapturedTypeConstructor
         Intrinsics.checkNotNullParameter(kotlinTypeRefiner, "kotlinTypeRefiner");
         TypeProjection refine = getProjection().refine(kotlinTypeRefiner);
         Intrinsics.checkNotNullExpressionValue(refine, "refine(...)");
-        d dVar = this.f35732b != null ? new d(this, kotlinTypeRefiner) : null;
-        NewCapturedTypeConstructor newCapturedTypeConstructor = this.f35733c;
+        d dVar = this.f35122b != null ? new d(this, kotlinTypeRefiner) : null;
+        NewCapturedTypeConstructor newCapturedTypeConstructor = this.f35123c;
         if (newCapturedTypeConstructor == null) {
             newCapturedTypeConstructor = this;
         }
-        return new NewCapturedTypeConstructor(refine, dVar, newCapturedTypeConstructor, this.f35734d);
+        return new NewCapturedTypeConstructor(refine, dVar, newCapturedTypeConstructor, this.f35124d);
     }
 
     public /* synthetic */ NewCapturedTypeConstructor(TypeProjection typeProjection, Function0 function0, NewCapturedTypeConstructor newCapturedTypeConstructor, TypeParameterDescriptor typeParameterDescriptor, int i10, DefaultConstructorMarker defaultConstructorMarker) {

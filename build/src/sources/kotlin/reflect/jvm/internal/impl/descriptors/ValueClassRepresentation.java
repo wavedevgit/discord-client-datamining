@@ -3,8 +3,6 @@ package kotlin.reflect.jvm.internal.impl.descriptors;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import jr.p;
-import jr.v;
 import kotlin.Pair;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.functions.Function1;
@@ -14,6 +12,8 @@ import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.reflect.jvm.internal.impl.name.Name;
 import kotlin.reflect.jvm.internal.impl.types.model.RigidTypeMarker;
 import kotlin.reflect.jvm.internal.impl.types.model.SimpleTypeMarker;
+import lr.p;
+import lr.v;
 import org.jetbrains.annotations.NotNull;
 @SourceDebugExtension({"SMAP\nValueClassRepresentation.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ValueClassRepresentation.kt\norg/jetbrains/kotlin/descriptors/ValueClassRepresentation\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,51:1\n1563#2:52\n1634#2,3:53\n*S KotlinDebug\n*F\n+ 1 ValueClassRepresentation.kt\norg/jetbrains/kotlin/descriptors/ValueClassRepresentation\n*L\n23#1:52\n23#1:53,3\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */

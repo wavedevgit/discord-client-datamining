@@ -52,16 +52,16 @@ public final class InquiryField_FloatFieldJsonAdapter extends h {
         String str = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 f10 = (Float) this.nullableFloatAdapter.fromJson(reader);
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
-                    throw tm.c.x("type", "type", reader);
+                    throw vm.c.x("type", "type", reader);
                 }
                 i10 = -3;
             } else {
@@ -75,7 +75,7 @@ public final class InquiryField_FloatFieldJsonAdapter extends h {
         }
         Constructor<InquiryField.FloatField> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = InquiryField.FloatField.class.getDeclaredConstructor(Float.class, String.class, Integer.TYPE, tm.c.f49935c);
+            constructor = InquiryField.FloatField.class.getDeclaredConstructor(Float.class, String.class, Integer.TYPE, vm.c.f51691c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -89,9 +89,9 @@ public final class InquiryField_FloatFieldJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (floatField != null) {
             writer.l();
-            writer.t0("value");
+            writer.A0("value");
             this.nullableFloatAdapter.toJson(writer, floatField.getValue());
-            writer.t0("type");
+            writer.A0("type");
             this.stringAdapter.toJson(writer, floatField.getType());
             writer.E();
             return;

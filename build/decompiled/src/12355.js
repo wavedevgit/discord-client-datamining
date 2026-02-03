@@ -1,50 +1,28 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Environment: var0
-        _fun94324: for (var _fun94324_ip = 0;;) switch (_fun94324_ip) {
+    var1 = function(arg0, arg1) { // Environment: var0
+        _fun94363: for (var _fun94363_ip = 0;;) switch (_fun94363_ip) {
             case 0:
-                var1 = arg0;
-                var0 = new Array(0);
-                var2 = var1.shiftKey;
-                if (!var2) {
-                    _fun94324_ip = 30;
-                    continue _fun94324
+                var4 = arg0;
+                var2 = arg1;
+                var0 = this;
+                var5 = var0.directMap;
+                var1 = ':';
+                var3 = var4 + var1;
+                var3 = var3 + var2;
+                var3 = var5[var3];
+                if (!var3) {
+                    _fun94363_ip = 60;
+                    continue _fun94363
                 }
-            case 16:
-                var3 = var0.push;
-                var2 = 'shift';
-                var2 = var3.bind(var0)(var2);
-            case 30:
-                var2 = var1.altKey;
-                if (!var2) {
-                    _fun94324_ip = 53;
-                    continue _fun94324
-                }
-            case 39:
-                var3 = var0.push;
-                var2 = 'alt';
-                var2 = var3.bind(var0)(var2);
-            case 53:
-                var2 = var1.ctrlKey;
-                if (!var2) {
-                    _fun94324_ip = 76;
-                    continue _fun94324
-                }
-            case 62:
-                var3 = var0.push;
-                var2 = 'ctrl';
-                var2 = var3.bind(var0)(var2);
-            case 76:
-                var1 = var1.metaKey;
-                if (!var1) {
-                    _fun94324_ip = 99;
-                    continue _fun94324
-                }
-            case 85:
-                var2 = var0.push;
-                var1 = 'meta';
-                var1 = var2.bind(var0)(var1);
-            case 99:
+            case 34:
+                var3 = var0.directMap;
+                var1 = var4 + var1;
+                var1 = var1 + var2;
+                var2 = var3[var1];
+                var1 = {};
+                var1 = var2.bind(var3)(var1, var4);
+            case 60:
                 return var0;
         }
     };

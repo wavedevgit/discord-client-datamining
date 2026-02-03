@@ -124,10 +124,10 @@ public final class IconUrlUtils {
         }
         if (str != null && str.length() != 0) {
             try {
-                Result.a aVar = Result.f33071e;
+                Result.a aVar = Result.f32461e;
                 b10 = Result.b(MediaProxy.INSTANCE.withSize(Hosts.INSTANCE.getCDN() + "/channel-icons/" + channelId + "/" + str, false, num, str));
             } catch (Throwable th2) {
-                Result.a aVar2 = Result.f33071e;
+                Result.a aVar2 = Result.f32461e;
                 b10 = Result.b(c.a(th2));
             }
             if (Result.e(b10) != null) {
@@ -165,10 +165,10 @@ public final class IconUrlUtils {
         if (str != null && str.length() != 0 && guildId != null) {
             MediaProxy mediaProxy = MediaProxy.INSTANCE;
             try {
-                Result.a aVar = Result.f33071e;
+                Result.a aVar = Result.f32461e;
                 b10 = Result.b(Hosts.INSTANCE.getCDN() + "/icons/" + guildId + "/" + str);
             } catch (Throwable th2) {
-                Result.a aVar2 = Result.f33071e;
+                Result.a aVar2 = Result.f32461e;
                 b10 = Result.b(c.a(th2));
             }
             if (Result.e(b10) != null) {
@@ -185,7 +185,7 @@ public final class IconUrlUtils {
     @NotNull
     /* renamed from: getForGuildMember-2tNb6hE */
     public final String m921getForGuildMember2tNb6hE(String str, GuildId guildId, UserId userId, Integer num, boolean z10) {
-        if (str != null && !StringsKt.k0(str) && guildId != null && GuildId.m1079isValidimpl(guildId.m1082unboximpl()) && userId != null && UserId.m1144isValidimpl(userId.m1147unboximpl())) {
+        if (str != null && !StringsKt.k0(str) && guildId != null && GuildId.m1078isValidimpl(guildId.m1081unboximpl()) && userId != null && UserId.m1143isValidimpl(userId.m1146unboximpl())) {
             String cdn = Hosts.INSTANCE.getCDN();
             return MediaProxy.INSTANCE.withSize(cdn + "/guilds/" + guildId + "/users/" + userId + "/avatars/" + str, z10, num, str);
         }
@@ -198,17 +198,17 @@ public final class IconUrlUtils {
         String b10;
         Intrinsics.checkNotNullParameter(context, "context");
         if (userId != null) {
-            if (UserId.m1141equalsimpl(UserId.m1139constructorimpl(-1L), userId)) {
+            if (UserId.m1140equalsimpl(UserId.m1138constructorimpl(-1L), userId)) {
                 if (str == null) {
                     return "";
                 }
                 return str;
             } else if (str != null) {
                 try {
-                    Result.a aVar = Result.f33071e;
+                    Result.a aVar = Result.f32461e;
                     b10 = Result.b(MediaProxy.INSTANCE.withSize(Hosts.INSTANCE.getCDN() + "/avatars/" + userId + "/" + str, z10, num2, str));
                 } catch (Throwable th2) {
-                    Result.a aVar2 = Result.f33071e;
+                    Result.a aVar2 = Result.f32461e;
                     b10 = Result.b(c.a(th2));
                 }
                 if (Result.e(b10) != null) {

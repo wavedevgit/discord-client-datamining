@@ -8,17 +8,17 @@ import java.util.TreeMap;
 public final class a extends d {
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f29644e;
+    private final List f30005e;
 
     public a(List list, ILogger iLogger) {
         super(iLogger);
-        this.f29644e = list;
+        this.f30005e = list;
     }
 
     @Override // io.sentry.internal.modules.d
     protected Map b() {
         TreeMap treeMap = new TreeMap();
-        for (b bVar : this.f29644e) {
+        for (b bVar : this.f30005e) {
             Map a10 = bVar.a();
             if (a10 != null) {
                 treeMap.putAll(a10);

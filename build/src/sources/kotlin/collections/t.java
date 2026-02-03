@@ -47,7 +47,7 @@ public class t extends s {
         int i12 = i11 - 1;
         while (i10 <= i12) {
             int i13 = (i10 + i12) >>> 1;
-            int d10 = mr.a.d((Comparable) list.get(i13), comparable);
+            int d10 = or.a.d((Comparable) list.get(i13), comparable);
             if (d10 < 0) {
                 i10 = i13 + 1;
             } else if (d10 > 0) {
@@ -70,7 +70,7 @@ public class t extends s {
     }
 
     public static List l() {
-        return f0.f33116d;
+        return f0.f32506d;
     }
 
     public static IntRange m(Collection collection) {

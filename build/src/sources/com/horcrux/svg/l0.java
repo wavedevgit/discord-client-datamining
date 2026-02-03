@@ -16,34 +16,34 @@ public class l0 extends c0 {
     private Matrix C;
 
     /* renamed from: q  reason: collision with root package name */
-    private SVGLength f17615q;
+    private SVGLength f16583q;
 
     /* renamed from: r  reason: collision with root package name */
-    private SVGLength f17616r;
+    private SVGLength f16584r;
 
     /* renamed from: s  reason: collision with root package name */
-    private SVGLength f17617s;
+    private SVGLength f16585s;
 
     /* renamed from: t  reason: collision with root package name */
-    private SVGLength f17618t;
+    private SVGLength f16586t;
 
     /* renamed from: u  reason: collision with root package name */
-    private a.b f17619u;
+    private a.b f16587u;
 
     /* renamed from: v  reason: collision with root package name */
-    private a.b f17620v;
+    private a.b f16588v;
 
     /* renamed from: w  reason: collision with root package name */
-    private float f17621w;
+    private float f16589w;
 
     /* renamed from: x  reason: collision with root package name */
-    private float f17622x;
+    private float f16590x;
 
     /* renamed from: y  reason: collision with root package name */
-    private float f17623y;
+    private float f16591y;
 
     /* renamed from: z  reason: collision with root package name */
-    private float f17624z;
+    private float f16592z;
 
     public l0(ReactContext reactContext) {
         super(reactContext);
@@ -52,24 +52,24 @@ public class l0 extends c0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public RectF getViewBox() {
-        float f10 = this.f17621w;
+        float f10 = this.f16589w;
         float f11 = this.mScale;
-        float f12 = this.f17622x;
-        return new RectF(f10 * f11, f12 * f11, (f10 + this.f17623y) * f11, (f12 + this.f17624z) * f11);
+        float f12 = this.f16590x;
+        return new RectF(f10 * f11, f12 * f11, (f10 + this.f16591y) * f11, (f12 + this.f16592z) * f11);
     }
 
     public void n(Dynamic dynamic) {
-        this.f17618t = SVGLength.b(dynamic);
+        this.f16586t = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void o(int i10) {
         if (i10 != 0) {
             if (i10 == 1) {
-                this.f17620v = a.b.USER_SPACE_ON_USE;
+                this.f16588v = a.b.USER_SPACE_ON_USE;
             }
         } else {
-            this.f17620v = a.b.OBJECT_BOUNDING_BOX;
+            this.f16588v = a.b.OBJECT_BOUNDING_BOX;
         }
         invalidate();
     }
@@ -95,21 +95,21 @@ public class l0 extends c0 {
     public void q(int i10) {
         if (i10 != 0) {
             if (i10 == 1) {
-                this.f17619u = a.b.USER_SPACE_ON_USE;
+                this.f16587u = a.b.USER_SPACE_ON_USE;
             }
         } else {
-            this.f17619u = a.b.OBJECT_BOUNDING_BOX;
+            this.f16587u = a.b.OBJECT_BOUNDING_BOX;
         }
         invalidate();
     }
 
     public void r(Dynamic dynamic) {
-        this.f17617s = SVGLength.b(dynamic);
+        this.f16585s = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void s(Dynamic dynamic) {
-        this.f17615q = SVGLength.b(dynamic);
+        this.f16583q = SVGLength.b(dynamic);
         invalidate();
     }
 
@@ -117,17 +117,17 @@ public class l0 extends c0 {
     @Override // com.horcrux.svg.c0, com.horcrux.svg.VirtualView
     public void saveDefinition() {
         if (this.mName != null) {
-            a aVar = new a(a.EnumC0206a.PATTERN, new SVGLength[]{this.f17615q, this.f17616r, this.f17617s, this.f17618t}, this.f17619u);
-            aVar.d(this.f17620v);
+            a aVar = new a(a.EnumC0187a.PATTERN, new SVGLength[]{this.f16583q, this.f16584r, this.f16585s, this.f16586t}, this.f16587u);
+            aVar.d(this.f16588v);
             aVar.g(this);
             Matrix matrix = this.C;
             if (matrix != null) {
                 aVar.f(matrix);
             }
             SvgView svgView = getSvgView();
-            a.b bVar = this.f17619u;
+            a.b bVar = this.f16587u;
             a.b bVar2 = a.b.USER_SPACE_ON_USE;
-            if (bVar == bVar2 || this.f17620v == bVar2) {
+            if (bVar == bVar2 || this.f16588v == bVar2) {
                 aVar.h(svgView.getCanvasBounds());
             }
             svgView.defineBrush(aVar, this.mName);
@@ -145,27 +145,27 @@ public class l0 extends c0 {
     }
 
     public void setMinX(float f10) {
-        this.f17621w = f10;
+        this.f16589w = f10;
         invalidate();
     }
 
     public void setMinY(float f10) {
-        this.f17622x = f10;
+        this.f16590x = f10;
         invalidate();
     }
 
     public void setVbHeight(float f10) {
-        this.f17624z = f10;
+        this.f16592z = f10;
         invalidate();
     }
 
     public void setVbWidth(float f10) {
-        this.f17623y = f10;
+        this.f16591y = f10;
         invalidate();
     }
 
     public void t(Dynamic dynamic) {
-        this.f17616r = SVGLength.b(dynamic);
+        this.f16584r = SVGLength.b(dynamic);
         invalidate();
     }
 }

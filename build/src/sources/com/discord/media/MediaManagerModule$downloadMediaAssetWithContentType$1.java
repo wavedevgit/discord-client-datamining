@@ -5,7 +5,6 @@ import com.discord.file_downloader.PublicFileDownloader;
 import com.discord.media.utils.MediaAssetUtils;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
-import jr.p;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.c;
@@ -17,7 +16,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
-import pr.b;
+import lr.p;
+import rr.b;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.media.MediaManagerModule$downloadMediaAssetWithContentType$1", f = "MediaManagerModule.kt", l = {193}, m = "invokeSuspend")
@@ -77,7 +77,7 @@ public final class MediaManagerModule$downloadMediaAssetWithContentType$1 extend
                     } else if (!(downloadState instanceof DownloadState.InProgress)) {
                         throw new p();
                     }
-                    return Unit.f33074a;
+                    return Unit.f32464a;
                 }
             };
             this.label = 1;
@@ -85,11 +85,11 @@ public final class MediaManagerModule$downloadMediaAssetWithContentType$1 extend
                 return f10;
             }
         }
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaManagerModule$downloadMediaAssetWithContentType$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        return ((MediaManagerModule$downloadMediaAssetWithContentType$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
     }
 }

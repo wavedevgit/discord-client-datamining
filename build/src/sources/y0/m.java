@@ -3,8 +3,8 @@ package y0;
 public final class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private int[] f53875a = new int[16];
+    private int[] f53633a = new int[16];
 
     /* renamed from: b  reason: collision with root package name */
-    private x0.g[] f53876b = new x0.g[16];
+    private x0.g[] f53634b = new x0.g[16];
 }

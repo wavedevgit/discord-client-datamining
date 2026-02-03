@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/ThemeContextProvider/native/getGradientThemeFromFlags.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun27334: for (var _fun27334_ip = 0;;) switch (_fun27334_ip) {
+        _fun27421: for (var _fun27421_ip = 0;;) switch (_fun27421_ip) {
             case 0:
                 var4 = arg0;
                 var6 = _closure1_slot0;
@@ -47,14 +47,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.bind(var3)(var4, var0);
                 var0 = 'dark';
                 if (var1) {
-                    _fun27334_ip = 121;
-                    continue _fun27334
+                    _fun27421_ip = 121;
+                    continue _fun27421
                 }
             case 109:
                 var1 = null;
                 if (!var2) {
-                    _fun27334_ip = 118;
-                    continue _fun27334
+                    _fun27421_ip = 118;
+                    continue _fun27421
                 }
             case 114:
                 var1 = 'light';
@@ -66,4 +66,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getGradientThemeFromFlags = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3150, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3159, 2]);

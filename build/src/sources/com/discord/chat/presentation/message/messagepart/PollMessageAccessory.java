@@ -175,7 +175,7 @@ public final class PollMessageAccessory extends MessageAccessory implements IPol
         }
         if (obj instanceof PollMessageAccessory) {
             PollMessageAccessory pollMessageAccessory = (PollMessageAccessory) obj;
-            return ChannelId.m1064equalsimpl0(this.channelId, pollMessageAccessory.channelId) && MessageId.m1090equalsimpl0(this.messageId, pollMessageAccessory.messageId) && Intrinsics.areEqual(this.myAvatarUrl, pollMessageAccessory.myAvatarUrl) && Intrinsics.areEqual(this.data, pollMessageAccessory.data) && Intrinsics.areEqual(this.answers, pollMessageAccessory.answers) && Intrinsics.areEqual(this.containerStyleSet, pollMessageAccessory.containerStyleSet);
+            return ChannelId.m1063equalsimpl0(this.channelId, pollMessageAccessory.channelId) && MessageId.m1089equalsimpl0(this.messageId, pollMessageAccessory.messageId) && Intrinsics.areEqual(this.myAvatarUrl, pollMessageAccessory.myAvatarUrl) && Intrinsics.areEqual(this.data, pollMessageAccessory.data) && Intrinsics.areEqual(this.answers, pollMessageAccessory.answers) && Intrinsics.areEqual(this.containerStyleSet, pollMessageAccessory.containerStyleSet);
         }
         return false;
     }
@@ -252,20 +252,20 @@ public final class PollMessageAccessory extends MessageAccessory implements IPol
     }
 
     public int hashCode() {
-        int m1065hashCodeimpl = ((ChannelId.m1065hashCodeimpl(this.channelId) * 31) + MessageId.m1091hashCodeimpl(this.messageId)) * 31;
+        int m1064hashCodeimpl = ((ChannelId.m1064hashCodeimpl(this.channelId) * 31) + MessageId.m1090hashCodeimpl(this.messageId)) * 31;
         String str = this.myAvatarUrl;
-        return ((((((m1065hashCodeimpl + (str == null ? 0 : str.hashCode())) * 31) + this.data.hashCode()) * 31) + this.answers.hashCode()) * 31) + this.containerStyleSet.hashCode();
+        return ((((((m1064hashCodeimpl + (str == null ? 0 : str.hashCode())) * 31) + this.data.hashCode()) * 31) + this.answers.hashCode()) * 31) + this.containerStyleSet.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1067toStringimpl = ChannelId.m1067toStringimpl(this.channelId);
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1066toStringimpl = ChannelId.m1066toStringimpl(this.channelId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         String str = this.myAvatarUrl;
         PollData pollData = this.data;
         List<PollAnswerAccessory> list = this.answers;
         IPollStyleSet iPollStyleSet = this.containerStyleSet;
-        return "PollMessageAccessory(channelId=" + m1067toStringimpl + ", messageId=" + m1093toStringimpl + ", myAvatarUrl=" + str + ", data=" + pollData + ", answers=" + list + ", containerStyleSet=" + iPollStyleSet + ")";
+        return "PollMessageAccessory(channelId=" + m1066toStringimpl + ", messageId=" + m1092toStringimpl + ", myAvatarUrl=" + str + ", data=" + pollData + ", answers=" + list + ", containerStyleSet=" + iPollStyleSet + ")";
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

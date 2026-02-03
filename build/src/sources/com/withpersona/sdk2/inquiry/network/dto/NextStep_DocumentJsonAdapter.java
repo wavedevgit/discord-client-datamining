@@ -57,19 +57,19 @@ public final class NextStep_DocumentJsonAdapter extends h {
         StepStyles.DocumentStepStyle documentStepStyle = null;
         NextStep.Document.Config config = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
-                    throw tm.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+                    throw vm.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
                 }
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 documentStepStyle = (StepStyles.DocumentStepStyle) this.nullableDocumentStepStyleAdapter.fromJson(reader);
-            } else if (t02 == 2 && (config = (NextStep.Document.Config) this.configAdapter.fromJson(reader)) == null) {
-                throw tm.c.x("config", "config", reader);
+            } else if (A0 == 2 && (config = (NextStep.Document.Config) this.configAdapter.fromJson(reader)) == null) {
+                throw vm.c.x("config", "config", reader);
             }
         }
         reader.y();
@@ -77,9 +77,9 @@ public final class NextStep_DocumentJsonAdapter extends h {
             if (config != null) {
                 return new NextStep.Document(str, documentStepStyle, config);
             }
-            throw tm.c.o("config", "config", reader);
+            throw vm.c.o("config", "config", reader);
         }
-        throw tm.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+        throw vm.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -87,11 +87,11 @@ public final class NextStep_DocumentJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (document != null) {
             writer.l();
-            writer.t0(StackTraceHelper.NAME_KEY);
+            writer.A0(StackTraceHelper.NAME_KEY);
             this.stringAdapter.toJson(writer, document.getName());
-            writer.t0("styles");
+            writer.A0("styles");
             this.nullableDocumentStepStyleAdapter.toJson(writer, document.getStyles());
-            writer.t0("config");
+            writer.A0("config");
             this.configAdapter.toJson(writer, document.getConfig());
             writer.E();
             return;

@@ -33,7 +33,7 @@ public final class MosaicItemMessageAttachmentVideoViewHolder extends MediaVideo
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bindGalleryItem$lambda$0(MediaPlayFinishedAnalytics it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public final void bindAttachment(@NotNull ChatEventHandler eventHandler, @NotNull VideoAttachmentMessageAccessory item, boolean z10, @NotNull View.OnClickListener onClicked, View.OnLongClickListener onLongClickListener, @NotNull Function0<Unit> onTapSpoiler, @NotNull Function1<? super Boolean, Unit> onTapObscureToggle) {
@@ -90,7 +90,7 @@ public final class MosaicItemMessageAttachmentVideoViewHolder extends MediaVideo
         if (obscureIsOpaque != null) {
             z15 = obscureIsOpaque.booleanValue();
         }
-        super.m729bindl_cVQvE(ChannelId.m1060boximpl(m675getChannelIdo4g7jtM), mo538getMessageId3Eiw7ao, Integer.valueOf(attachmentIndex), videoUrl, url, height, width, placeholder, placeholderVersion, isSpoiler, spoilerConfig, z11, z12, z13, z15, attachment.getShowDescription(), attachment.getDescription(), attachment.getHint(), item.getUseNewAltTextButton(), new MosaicItemMessageAttachmentVideoViewHolder$bindAttachment$1(eventHandler), radiusPx, z14, uploadItemProps, z10, item.getHideMediaPlayButton(), attachment.getAttachmentTagText(), attachment.getAttachmentTagIcon(), attachment.getAttachmentTagBackgroundColor(), attachment.getAttachmentTagTextColor(), attachment.getRole(), item.getPortal(), onClicked, onLongClickListener, new MosaicItemMessageAttachmentVideoViewHolder$bindAttachment$2(eventHandler), attachment.getPlayerSettings());
+        super.m729bindl_cVQvE(ChannelId.m1059boximpl(m675getChannelIdo4g7jtM), mo538getMessageId3Eiw7ao, Integer.valueOf(attachmentIndex), videoUrl, url, height, width, placeholder, placeholderVersion, isSpoiler, spoilerConfig, z11, z12, z13, z15, attachment.getShowDescription(), attachment.getDescription(), attachment.getHint(), item.getUseNewAltTextButton(), new MosaicItemMessageAttachmentVideoViewHolder$bindAttachment$1(eventHandler), radiusPx, z14, uploadItemProps, z10, item.getHideMediaPlayButton(), attachment.getAttachmentTagText(), attachment.getAttachmentTagIcon(), attachment.getAttachmentTagBackgroundColor(), attachment.getAttachmentTagTextColor(), attachment.getRole(), item.getPortal(), onClicked, onLongClickListener, new MosaicItemMessageAttachmentVideoViewHolder$bindAttachment$2(eventHandler), attachment.getPlayerSettings());
     }
 
     public final void bindGalleryItem(@NotNull String containerId, @NotNull String componentId, @NotNull MediaGalleryItem mediaGalleryItem, boolean z10, @NotNull View.OnClickListener onClicked, View.OnLongClickListener onLongClickListener, @NotNull Function0<Unit> onTapSpoiler, @NotNull Function1<? super Boolean, Unit> onTapObscureToggle, @NotNull Function1<? super String, Unit> onAltTextButtonClicked) {

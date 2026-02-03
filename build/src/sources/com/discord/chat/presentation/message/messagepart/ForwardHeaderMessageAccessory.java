@@ -40,7 +40,7 @@ public final class ForwardHeaderMessageAccessory extends MessageAccessory {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof ForwardHeaderMessageAccessory) && MessageId.m1090equalsimpl0(this.messageId, ((ForwardHeaderMessageAccessory) obj).messageId);
+        return (obj instanceof ForwardHeaderMessageAccessory) && MessageId.m1089equalsimpl0(this.messageId, ((ForwardHeaderMessageAccessory) obj).messageId);
     }
 
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
@@ -51,13 +51,13 @@ public final class ForwardHeaderMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return MessageId.m1091hashCodeimpl(this.messageId);
+        return MessageId.m1090hashCodeimpl(this.messageId);
     }
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
-        return "ForwardHeaderMessageAccessory(messageId=" + m1093toStringimpl + ")";
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
+        return "ForwardHeaderMessageAccessory(messageId=" + m1092toStringimpl + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

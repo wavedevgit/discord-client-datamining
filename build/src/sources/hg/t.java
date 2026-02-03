@@ -7,21 +7,21 @@ import java.util.Iterator;
 public final class t implements Iterable {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ CharSequence f27710d;
+    final /* synthetic */ CharSequence f26995d;
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ b f27711e;
+    final /* synthetic */ b f26996e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public t(b bVar, CharSequence charSequence) {
-        this.f27710d = charSequence;
-        this.f27711e = bVar;
+        this.f26995d = charSequence;
+        this.f26996e = bVar;
     }
 
     @Override // java.lang.Iterable
     public final Iterator iterator() {
         Iterator h10;
-        h10 = this.f27711e.h(this.f27710d);
+        h10 = this.f26996e.h(this.f26995d);
         return h10;
     }
 

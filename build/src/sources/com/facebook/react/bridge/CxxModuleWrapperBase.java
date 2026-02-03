@@ -40,7 +40,7 @@ public class CxxModuleWrapperBase implements NativeModule {
     }
 
     @Override // com.facebook.react.bridge.NativeModule
-    @jr.c
+    @lr.c
     public boolean canOverrideExistingModule() {
         return false;
     }

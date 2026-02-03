@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function0;
 public class b implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final IntegerLiteralTypeConstructor f35222d;
+    private final IntegerLiteralTypeConstructor f34612d;
 
     public b(IntegerLiteralTypeConstructor integerLiteralTypeConstructor) {
-        this.f35222d = integerLiteralTypeConstructor;
+        this.f34612d = integerLiteralTypeConstructor;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         List e10;
-        e10 = IntegerLiteralTypeConstructor.e(this.f35222d);
+        e10 = IntegerLiteralTypeConstructor.e(this.f34612d);
         return e10;
     }
 }

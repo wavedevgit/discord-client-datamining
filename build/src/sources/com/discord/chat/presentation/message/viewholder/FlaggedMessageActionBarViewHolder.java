@@ -26,12 +26,12 @@ public final class FlaggedMessageActionBarViewHolder extends MessagePartViewHold
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind$lambda$0(Function2 function2, String str, long j10, View view) {
-        function2.invoke(MessageId.m1086boximpl(str), ChannelId.m1060boximpl(j10));
+        function2.invoke(MessageId.m1085boximpl(str), ChannelId.m1059boximpl(j10));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind$lambda$1(Function2 function2, String str, long j10, View view) {
-        function2.invoke(MessageId.m1086boximpl(str), ChannelId.m1060boximpl(j10));
+        function2.invoke(MessageId.m1085boximpl(str), ChannelId.m1059boximpl(j10));
     }
 
     public final void bind(@NotNull FlaggedMessageActionBarAccessory messageActionBarAccessory, @NotNull final Function2<? super MessageId, ? super ChannelId, Unit> onTapAutoModerationActions, @NotNull final Function2<? super MessageId, ? super ChannelId, Unit> onTapAutoModerationFeedback) {

@@ -255,7 +255,7 @@ public final class TurboModuleManager implements TurboModuleRegistry {
                 } else {
                     z11 = false;
                 }
-                Unit unit = Unit.f33074a;
+                Unit unit = Unit.f32464a;
                 if (z11) {
                     TurboModulePerfLogger.moduleCreateConstructStart(str, moduleHolder.getModuleId());
                     NativeModule module2 = this.turboModuleProvider.getModule(str);
@@ -371,7 +371,7 @@ public final class TurboModuleManager implements TurboModuleRegistry {
                 this.moduleHolders.put(moduleName, new ModuleHolder());
             }
             ModuleHolder moduleHolder = this.moduleHolders.get(moduleName);
-            Unit unit = Unit.f33074a;
+            Unit unit = Unit.f32464a;
             if (moduleHolder == null) {
                 p8.a.o(TAG, "getModule(): Tried to get module \"%s\", but moduleHolder was null", moduleName);
                 return null;
@@ -432,7 +432,7 @@ public final class TurboModuleManager implements TurboModuleRegistry {
     public void invalidate() {
         synchronized (this.moduleCleanupLock) {
             this.moduleCleanupStarted = true;
-            Unit unit = Unit.f33074a;
+            Unit unit = Unit.f32464a;
         }
         for (Map.Entry<String, ModuleHolder> entry : this.moduleHolders.entrySet()) {
             NativeModule orCreateModule = getOrCreateModule(entry.getKey(), entry.getValue(), false);

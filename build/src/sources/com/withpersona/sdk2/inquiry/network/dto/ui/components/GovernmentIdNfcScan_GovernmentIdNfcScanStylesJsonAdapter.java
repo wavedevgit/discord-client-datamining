@@ -56,15 +56,15 @@ public final class GovernmentIdNfcScan_GovernmentIdNfcScanStylesJsonAdapter exte
         AttributeStyles.GovernmentIdNfcScanInputTextStyles governmentIdNfcScanInputTextStyles = null;
         AttributeStyles.GovernmentIdNfcScanInputDateStyles governmentIdNfcScanInputDateStyles = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 governmentIdNfcScanPrimaryButtonStyles = (AttributeStyles.GovernmentIdNfcScanPrimaryButtonStyles) this.nullableGovernmentIdNfcScanPrimaryButtonStylesAdapter.fromJson(reader);
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 governmentIdNfcScanInputTextStyles = (AttributeStyles.GovernmentIdNfcScanInputTextStyles) this.nullableGovernmentIdNfcScanInputTextStylesAdapter.fromJson(reader);
-            } else if (t02 == 2) {
+            } else if (A0 == 2) {
                 governmentIdNfcScanInputDateStyles = (AttributeStyles.GovernmentIdNfcScanInputDateStyles) this.nullableGovernmentIdNfcScanInputDateStylesAdapter.fromJson(reader);
             }
         }
@@ -77,11 +77,11 @@ public final class GovernmentIdNfcScan_GovernmentIdNfcScanStylesJsonAdapter exte
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdNfcScanStyles != null) {
             writer.l();
-            writer.t0("buttonPrimaryStyle");
+            writer.A0("buttonPrimaryStyle");
             this.nullableGovernmentIdNfcScanPrimaryButtonStylesAdapter.toJson(writer, governmentIdNfcScanStyles.getButtonPrimaryStyle());
-            writer.t0("inputTextStyle");
+            writer.A0("inputTextStyle");
             this.nullableGovernmentIdNfcScanInputTextStylesAdapter.toJson(writer, governmentIdNfcScanStyles.getInputTextStyle());
-            writer.t0("inputDateStyle");
+            writer.A0("inputDateStyle");
             this.nullableGovernmentIdNfcScanInputDateStylesAdapter.toJson(writer, governmentIdNfcScanStyles.getInputDateStyle());
             writer.E();
             return;

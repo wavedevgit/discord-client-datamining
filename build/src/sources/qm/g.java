@@ -1,16 +1,15 @@
 package qm;
 
-import android.view.MotionEvent;
-import com.facebook.react.uimanager.RootView;
-import kotlin.jvm.internal.Intrinsics;
+import java.util.Map;
+import kotlin.collections.o0;
+import lr.v;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface g extends RootView {
+public abstract class g {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
-        public static void a(g gVar, MotionEvent ev2) {
-            Intrinsics.checkNotNullParameter(ev2, "ev");
-            gVar.onChildStartedNativeGesture(null, ev2);
-        }
+    /* renamed from: a  reason: collision with root package name */
+    private static final Map f47976a = o0.m(v.a("linear", new im.c()), v.a("ios", new im.b()));
+
+    public static final Map a() {
+        return f47976a;
     }
 }

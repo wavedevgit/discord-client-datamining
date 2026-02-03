@@ -4,39 +4,75 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = global;
-    var2 = var1.Math;
-    var2 = var2.max;
-    var _closure1_slot2 = var2;
-    var1 = var1.Math;
-    var1 = var1.min;
-    var _closure1_slot3 = var1;
-    var1 = function(arg0, arg1) { // Environment: var0
-        _fun96871: for (var _fun96871_ip = 0;;) switch (_fun96871_ip) {
+    var1 = function(arg0, arg1, arg2) { // Environment: var0
+        _fun96910: for (var _fun96910_ip = 0;;) switch (_fun96910_ip) {
             case 0:
-                var5 = arg1;
-                var1 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var4 = 0;
-                var0 = var0[var4];
-                var3 = undefined;
-                var1 = var1.bind(var3)(var0);
-                var0 = arg0;
-                var1 = var1.bind(var3)(var0);
-                if (!(!(var1 < var4))) {
-                    _fun96871_ip = 51;
-                    continue _fun96871
+                var10 = arg0;
+                var9 = arg1;
+                var8 = arg2;
+                var2 = _closure1_slot0;
+                var3 = _closure1_slot1;
+                var6 = 0;
+                var1 = var3[var6];
+                var0 = undefined;
+                var1 = var2.bind(var0)(var1);
+                var5 = var1.bind(var0)(var9);
+                var1 = 1;
+                var1 = var3[var1];
+                var1 = var2.bind(var0)(var1);
+                var4 = var1.f;
+                var1 = 2;
+                var1 = var3[var1];
+                var1 = var2.bind(var0)(var1);
+                var3 = var1.f;
+                var1 = var5.length;
+                var1 = var6 < var1;
+                var2 = 3;
+                if (!var1) {
+                    _fun96910_ip = 179;
+                    continue _fun96910
                 }
-            case 39:
-                var0 = _closure1_slot3;
-                var0 = var0.bind(var3)(var1, var5);
-                _fun96871_ip = 65;
-                continue _fun96871;
-            case 51:
-                var2 = _closure1_slot2;
-                var1 = var1 + var5;
-                var0 = var2.bind(var3)(var1, var4);
-            case 65:
+            case 89:
+                var11 = var5[var6];
+                var12 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var2];
+                var1 = var12.bind(var0)(var1);
+                var1 = var1.bind(var0)(var10, var11);
+                if (var1) {
+                    _fun96910_ip = 151;
+                    continue _fun96910
+                }
+            case 119:
+                var12 = var8;
+                if (!var12) {
+                    _fun96910_ip = 148;
+                    continue _fun96910
+                }
+            case 125:
+                var14 = _closure1_slot0;
+                var13 = _closure1_slot1;
+                var13 = var13[var2];
+                var13 = var14.bind(var0)(var13);
+                var12 = var13.bind(var0)(var8, var11);
+            case 148:
+                var1 = var12;
+            case 151:
+                if (var1) {
+                    _fun96910_ip = 167;
+                    continue _fun96910
+                }
+            case 154:
+                var1 = var3.bind(var0)(var9, var11);
+                var1 = var4.bind(var0)(var10, var11, var1);
+            case 167:
+                var6 = var6 + 1;
+                var1 = var5.length;
+                if (var6 < var1) {
+                    _fun96910_ip = 89;
+                    continue _fun96910
+                }
+            case 179:
                 return var0;
         }
     };
@@ -44,4 +80,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12678]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12681, 12694, 12642, 12663]);

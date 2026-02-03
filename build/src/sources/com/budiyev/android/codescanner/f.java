@@ -8,28 +8,28 @@ import java.util.Map;
 final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ck.j f9091a;
+    private final ck.j f8059a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final a f9092b;
+    private final a f8060b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final c f9093c;
+    private final c f8061c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f9094d;
+    private final Map f8062d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Object f9095e = new Object();
+    private final Object f8063e = new Object();
 
     /* renamed from: f  reason: collision with root package name */
-    private volatile d f9096f;
+    private volatile d f8064f;
 
     /* renamed from: g  reason: collision with root package name */
-    private volatile e f9097g;
+    private volatile e f8065g;
 
     /* renamed from: h  reason: collision with root package name */
-    private volatile b f9098h;
+    private volatile b f8066h;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private final class a extends Thread {
@@ -126,31 +126,31 @@ final class f {
 
     public f(c cVar, Thread.UncaughtExceptionHandler uncaughtExceptionHandler, List list, d dVar) {
         ck.j jVar = new ck.j();
-        this.f9091a = jVar;
+        this.f8059a = jVar;
         a aVar = new a();
-        this.f9092b = aVar;
+        this.f8060b = aVar;
         aVar.setUncaughtExceptionHandler(uncaughtExceptionHandler);
         EnumMap enumMap = new EnumMap(ck.e.class);
-        this.f9094d = enumMap;
+        this.f8062d = enumMap;
         enumMap.put((EnumMap) ck.e.POSSIBLE_FORMATS, (ck.e) list);
         jVar.d(enumMap);
-        this.f9096f = dVar;
-        this.f9093c = cVar;
-        this.f9098h = b.INITIALIZED;
+        this.f8064f = dVar;
+        this.f8061c = cVar;
+        this.f8066h = b.INITIALIZED;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public boolean k(b bVar) {
-        this.f9098h = bVar;
-        return this.f9093c.a(bVar);
+        this.f8066h = bVar;
+        return this.f8061c.a(bVar);
     }
 
     public void g(e eVar) {
-        synchronized (this.f9095e) {
+        synchronized (this.f8063e) {
             try {
-                if (this.f9098h != b.STOPPED) {
-                    this.f9097g = eVar;
-                    this.f9095e.notify();
+                if (this.f8066h != b.STOPPED) {
+                    this.f8065g = eVar;
+                    this.f8063e.notify();
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -159,26 +159,26 @@ final class f {
     }
 
     public b h() {
-        return this.f9098h;
+        return this.f8066h;
     }
 
     public void i(d dVar) {
-        this.f9096f = dVar;
+        this.f8064f = dVar;
     }
 
     public void j(List list) {
-        this.f9094d.put(ck.e.POSSIBLE_FORMATS, list);
-        this.f9091a.d(this.f9094d);
+        this.f8062d.put(ck.e.POSSIBLE_FORMATS, list);
+        this.f8059a.d(this.f8062d);
     }
 
     public void l() {
-        this.f9092b.interrupt();
-        this.f9097g = null;
+        this.f8060b.interrupt();
+        this.f8065g = null;
     }
 
     public void m() {
-        if (this.f9098h == b.INITIALIZED) {
-            this.f9092b.start();
+        if (this.f8066h == b.INITIALIZED) {
+            this.f8060b.start();
             return;
         }
         throw new IllegalStateException("Illegal decoder state");

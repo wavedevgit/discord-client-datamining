@@ -8,22 +8,22 @@ import java.util.Locale;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class j extends l implements m {
-    private static final j G = new j(p.f40787v);
+    private static final j G = new j(p.f40826v);
     private static final long serialVersionUID = 7807230388259573234L;
     private final p offset;
 
     private j(p pVar) {
-        if (pVar.l() == 0) {
+        if (pVar.k() == 0) {
             this.offset = pVar;
             return;
         }
-        int m10 = pVar.m();
-        this.offset = p.t(pVar.l() < 0 ? m10 - 1 : m10);
+        int l10 = pVar.l();
+        this.offset = p.t(pVar.k() < 0 ? l10 - 1 : l10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static j R(p pVar) {
-        if (pVar.m() == 0 && pVar.l() == 0) {
+        if (pVar.l() == 0 && pVar.k() == 0) {
             return G;
         }
         return new j(pVar);
@@ -31,29 +31,29 @@ public final class j extends l implements m {
 
     private void readObject(ObjectInputStream objectInputStream) {
         objectInputStream.defaultReadObject();
-        if (this.offset.l() == 0) {
+        if (this.offset.k() == 0) {
             return;
         }
         throw new InvalidObjectException("Fractional offset is invalid.");
     }
 
     @Override // net.time4j.tz.l
-    public p A(ht.a aVar, ht.g gVar) {
+    public p A(kt.a aVar, kt.g gVar) {
         return this.offset;
     }
 
     @Override // net.time4j.tz.l
-    public p B(ht.f fVar) {
+    public p B(kt.f fVar) {
         return this.offset;
     }
 
     @Override // net.time4j.tz.l
     public o E() {
-        return l.f40725o;
+        return l.f40764o;
     }
 
     @Override // net.time4j.tz.l
-    public boolean I(ht.f fVar) {
+    public boolean I(kt.f fVar) {
         return false;
     }
 
@@ -63,7 +63,7 @@ public final class j extends l implements m {
     }
 
     @Override // net.time4j.tz.l
-    public boolean K(ht.a aVar, ht.g gVar) {
+    public boolean K(kt.a aVar, kt.g gVar) {
         return false;
     }
 
@@ -73,28 +73,28 @@ public final class j extends l implements m {
     }
 
     @Override // net.time4j.tz.m
-    public boolean a() {
-        return false;
-    }
-
-    @Override // net.time4j.tz.m
-    public q b(ht.f fVar) {
+    public q a(kt.f fVar) {
         return null;
     }
 
     @Override // net.time4j.tz.m
-    public p c() {
-        return this.offset;
-    }
-
-    @Override // net.time4j.tz.m
-    public List d(ht.a aVar, ht.g gVar) {
+    public List b(kt.a aVar, kt.g gVar) {
         return Collections.singletonList(this.offset);
     }
 
     @Override // net.time4j.tz.m
-    public q e(ht.a aVar, ht.g gVar) {
+    public boolean c() {
+        return false;
+    }
+
+    @Override // net.time4j.tz.m
+    public q d(kt.a aVar, kt.g gVar) {
         return null;
+    }
+
+    @Override // net.time4j.tz.m
+    public p e() {
+        return this.offset;
     }
 
     public boolean equals(Object obj) {

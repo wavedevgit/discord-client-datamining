@@ -9,24 +9,24 @@ import java.util.Map;
 public final class d extends k {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final char[] f44093c = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ-. $/+%abcd*".toCharArray();
+    private static final char[] f43893c = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ-. $/+%abcd*".toCharArray();
 
     /* renamed from: d  reason: collision with root package name */
-    static final int[] f44094d;
+    static final int[] f43894d;
 
     /* renamed from: e  reason: collision with root package name */
-    static final int f44095e;
+    static final int f43895e;
 
     /* renamed from: a  reason: collision with root package name */
-    private final StringBuilder f44096a = new StringBuilder(20);
+    private final StringBuilder f43896a = new StringBuilder(20);
 
     /* renamed from: b  reason: collision with root package name */
-    private final int[] f44097b = new int[6];
+    private final int[] f43897b = new int[6];
 
     static {
         int[] iArr = {276, 328, 324, 322, 296, 292, 290, 336, 274, 266, 424, 420, 418, HttpStatusCode.NOT_FOUND_404, 402, 394, 360, 356, 354, 308, 282, 344, 332, 326, ReactImageView.REMOTE_IMAGE_FADE_DURATION_MS, 278, 436, 434, 428, HttpStatusCode.UNPROCESSABLE_ENTITY_422, 406, 410, 364, 358, 310, 314, 302, 468, 466, 458, 366, 374, 430, 294, 474, 470, 306, 350};
-        f44094d = iArr;
-        f44095e = iArr[47];
+        f43894d = iArr;
+        f43895e = iArr[47];
     }
 
     private static void g(CharSequence charSequence) {
@@ -45,7 +45,7 @@ public final class d extends k {
                 i13 = 1;
             }
         }
-        if (charSequence.charAt(i10) == f44093c[i12 % 47]) {
+        if (charSequence.charAt(i10) == f43893c[i12 % 47]) {
             return;
         }
         throw ck.d.a();
@@ -140,8 +140,8 @@ public final class d extends k {
     private int[] j(gk.a aVar) {
         int l10 = aVar.l();
         int j10 = aVar.j(0);
-        Arrays.fill(this.f44097b, 0);
-        int[] iArr = this.f44097b;
+        Arrays.fill(this.f43897b, 0);
+        int[] iArr = this.f43897b;
         int length = iArr.length;
         boolean z10 = false;
         int i10 = 0;
@@ -151,7 +151,7 @@ public final class d extends k {
                 iArr[i10] = iArr[i10] + 1;
             } else {
                 if (i10 == length - 1) {
-                    if (l(iArr) == f44095e) {
+                    if (l(iArr) == f43895e) {
                         return new int[]{i11, j10};
                     }
                     i11 += iArr[0] + iArr[1];
@@ -174,10 +174,10 @@ public final class d extends k {
     private static char k(int i10) {
         int i11 = 0;
         while (true) {
-            int[] iArr = f44094d;
+            int[] iArr = f43894d;
             if (i11 < iArr.length) {
                 if (iArr[i11] == i10) {
-                    return f44093c[i11];
+                    return f43893c[i11];
                 }
                 i11++;
             } else {
@@ -215,9 +215,9 @@ public final class d extends k {
         int[] j10;
         int j11 = aVar.j(j(aVar)[1]);
         int l10 = aVar.l();
-        int[] iArr = this.f44097b;
+        int[] iArr = this.f43897b;
         Arrays.fill(iArr, 0);
-        StringBuilder sb2 = this.f44096a;
+        StringBuilder sb2 = this.f43896a;
         sb2.setLength(0);
         while (true) {
             k.e(aVar, j11, iArr);

@@ -6,12 +6,12 @@ public interface a extends TimeMark, Comparable {
 
     /* renamed from: kotlin.time.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0453a {
+    public static final class C0449a {
         public static int a(a aVar, a other) {
             Intrinsics.checkNotNullParameter(other, "other");
-            return Duration.k(aVar.j(other), Duration.f36073e.c());
+            return Duration.j(aVar.m(other), Duration.f35463e.c());
         }
     }
 
-    long j(a aVar);
+    long m(a aVar);
 }

@@ -1,49 +1,32 @@
 package nn;
 
-import kotlin.Result;
+import com.facebook.react.views.view.WindowUtilKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f41926a;
+    public static final b f41910a = new b();
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f41927b;
+    private static final boolean f41911b;
 
-    public b(Object obj, boolean z10) {
-        this.f41926a = obj;
-        this.f41927b = z10;
-    }
-
-    public final Object a() {
-        return this.f41926a;
-    }
-
-    public final boolean b() {
-        return this.f41927b;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    static {
+        boolean z10;
+        if (!WindowUtilKt.isEdgeToEdgeFeatureFlagOn()) {
+            try {
+                Class.forName("com.zoontek.rnedgetoedge.EdgeToEdgePackage");
+            } catch (ClassNotFoundException unused) {
+                z10 = false;
+            }
         }
-        if (!(obj instanceof b)) {
-            return false;
-        }
-        b bVar = (b) obj;
-        if (Result.d(this.f41926a, bVar.f41926a) && this.f41927b == bVar.f41927b) {
-            return true;
-        }
-        return false;
+        z10 = true;
+        f41911b = z10;
     }
 
-    public int hashCode() {
-        return (Result.f(this.f41926a) * 31) + Boolean.hashCode(this.f41927b);
+    private b() {
     }
 
-    public String toString() {
-        String i10 = Result.i(this.f41926a);
-        boolean z10 = this.f41927b;
-        return "AnalyzerResult(result=" + i10 + ", isActiveAnalyzer=" + z10 + ")";
+    public final boolean a() {
+        return f41911b;
     }
 }

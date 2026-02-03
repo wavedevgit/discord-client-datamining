@@ -46,15 +46,15 @@ public final class AttributeStyles_InputSelectTextFontFamilyStyleJsonAdapter ext
         StyleElements.FontName fontName2 = null;
         StyleElements.FontName fontName3 = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 fontName = (StyleElements.FontName) this.nullableFontNameAdapter.fromJson(reader);
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 fontName2 = (StyleElements.FontName) this.nullableFontNameAdapter.fromJson(reader);
-            } else if (t02 == 2) {
+            } else if (A0 == 2) {
                 fontName3 = (StyleElements.FontName) this.nullableFontNameAdapter.fromJson(reader);
             }
         }
@@ -67,11 +67,11 @@ public final class AttributeStyles_InputSelectTextFontFamilyStyleJsonAdapter ext
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputSelectTextFontFamilyStyle != null) {
             writer.l();
-            writer.t0("base");
+            writer.A0("base");
             this.nullableFontNameAdapter.toJson(writer, inputSelectTextFontFamilyStyle.getBase());
-            writer.t0("label");
+            writer.A0("label");
             this.nullableFontNameAdapter.toJson(writer, inputSelectTextFontFamilyStyle.getLabel());
-            writer.t0("error");
+            writer.A0("error");
             this.nullableFontNameAdapter.toJson(writer, inputSelectTextFontFamilyStyle.getError());
             writer.E();
             return;

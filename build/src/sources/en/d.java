@@ -1,46 +1,137 @@
 package en;
 
-import com.facebook.react.bridge.WritableMap;
-import com.facebook.react.uimanager.PixelUtil;
-import dn.o;
+import com.facebook.react.BaseReactPackage;
+import com.facebook.react.ViewManagerOnDemandReactPackage;
+import com.facebook.react.bridge.ModuleSpec;
+import com.facebook.react.bridge.NativeModule;
+import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.module.annotations.ReactModule;
+import com.facebook.react.module.model.ReactModuleInfo;
+import com.facebook.react.module.model.ReactModuleInfoProvider;
+import com.facebook.react.uimanager.ViewManager;
+import com.swmansion.gesturehandler.react.RNGestureHandlerButtonViewManager;
+import com.swmansion.gesturehandler.react.RNGestureHandlerModule;
+import java.lang.annotation.Annotation;
+import java.util.List;
+import java.util.Map;
+import javax.inject.Provider;
+import kotlin.Lazy;
+import kotlin.collections.CollectionsKt;
+import kotlin.collections.o0;
+import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
+import lr.l;
+import lr.v;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d extends b {
+public final class d extends BaseReactPackage implements ViewManagerOnDemandReactPackage {
 
-    /* renamed from: e  reason: collision with root package name */
-    private final float f22967e;
+    /* renamed from: a  reason: collision with root package name */
+    private final Lazy f21647a = l.a(new Function0() { // from class: en.a
+        @Override // kotlin.jvm.functions.Function0
+        public final Object invoke() {
+            Map e10;
+            e10 = d.e();
+            return e10;
+        }
+    });
 
-    /* renamed from: f  reason: collision with root package name */
-    private final float f22968f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private final float f22969g;
-
-    /* renamed from: h  reason: collision with root package name */
-    private final float f22970h;
-
-    /* renamed from: i  reason: collision with root package name */
-    private final int f22971i;
-
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public d(o handler) {
-        super(handler);
-        Intrinsics.checkNotNullParameter(handler, "handler");
-        this.f22967e = handler.L();
-        this.f22968f = handler.M();
-        this.f22969g = handler.J();
-        this.f22970h = handler.K();
-        this.f22971i = handler.Y0();
+    private final Map d() {
+        return (Map) this.f21647a.getValue();
     }
 
-    @Override // en.b
-    public void a(WritableMap eventData) {
-        Intrinsics.checkNotNullParameter(eventData, "eventData");
-        super.a(eventData);
-        eventData.putDouble("x", PixelUtil.toDIPFromPixel(this.f22967e));
-        eventData.putDouble("y", PixelUtil.toDIPFromPixel(this.f22968f));
-        eventData.putDouble("absoluteX", PixelUtil.toDIPFromPixel(this.f22969g));
-        eventData.putDouble("absoluteY", PixelUtil.toDIPFromPixel(this.f22970h));
-        eventData.putInt("duration", this.f22971i);
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Map e() {
+        return o0.f(v.a(RNGestureHandlerButtonViewManager.REACT_CLASS, ModuleSpec.Companion.viewManagerSpec(new Provider() { // from class: en.c
+            @Override // javax.inject.Provider
+            public final Object get() {
+                NativeModule f10;
+                f10 = d.f();
+                return f10;
+            }
+        })));
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final NativeModule f() {
+        return new RNGestureHandlerButtonViewManager();
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Map getReactModuleInfoProvider$lambda$2() {
+        Annotation annotation = RNGestureHandlerModule.class.getAnnotation(ReactModule.class);
+        Intrinsics.checkNotNull(annotation);
+        ReactModule reactModule = (ReactModule) annotation;
+        String name = reactModule.name();
+        String name2 = RNGestureHandlerModule.class.getName();
+        Intrinsics.checkNotNullExpressionValue(name2, "getName(...)");
+        return o0.n(v.a("RNGestureHandlerModule", new ReactModuleInfo(name, name2, reactModule.canOverrideExistingModule(), reactModule.needsEagerInit(), reactModule.isCxxModule(), true)));
+    }
+
+    @Override // com.facebook.react.ViewManagerOnDemandReactPackage
+    public ViewManager createViewManager(ReactApplicationContext reactContext, String viewManagerName) {
+        NativeModule nativeModule;
+        Provider provider;
+        Intrinsics.checkNotNullParameter(reactContext, "reactContext");
+        Intrinsics.checkNotNullParameter(viewManagerName, "viewManagerName");
+        ModuleSpec moduleSpec = (ModuleSpec) d().get(viewManagerName);
+        if (moduleSpec != null && (provider = moduleSpec.provider()) != null) {
+            nativeModule = (NativeModule) provider.get();
+        } else {
+            nativeModule = null;
+        }
+        if (!(nativeModule instanceof ViewManager)) {
+            return null;
+        }
+        return (ViewManager) nativeModule;
+    }
+
+    @Override // com.facebook.react.BaseReactPackage, com.facebook.react.ReactPackage
+    public List createViewManagers(ReactApplicationContext reactContext) {
+        Intrinsics.checkNotNullParameter(reactContext, "reactContext");
+        return CollectionsKt.e(new RNGestureHandlerButtonViewManager());
+    }
+
+    @Override // com.facebook.react.BaseReactPackage, com.facebook.react.ReactPackage
+    public NativeModule getModule(String name, ReactApplicationContext reactContext) {
+        Intrinsics.checkNotNullParameter(name, "name");
+        Intrinsics.checkNotNullParameter(reactContext, "reactContext");
+        if (Intrinsics.areEqual(name, "RNGestureHandlerModule")) {
+            return new RNGestureHandlerModule(reactContext);
+        }
+        return null;
+    }
+
+    @Override // com.facebook.react.BaseReactPackage
+    public ReactModuleInfoProvider getReactModuleInfoProvider() {
+        try {
+            Object newInstance = Class.forName("com.swmansion.gesturehandler.RNGestureHandlerPackage$$ReactModuleInfoProvider").getDeclaredConstructor(null).newInstance(null);
+            Intrinsics.checkNotNull(newInstance, "null cannot be cast to non-null type com.facebook.react.module.model.ReactModuleInfoProvider");
+            return (ReactModuleInfoProvider) newInstance;
+        } catch (ClassNotFoundException unused) {
+            return new ReactModuleInfoProvider() { // from class: en.b
+                @Override // com.facebook.react.module.model.ReactModuleInfoProvider
+                public final Map getReactModuleInfos() {
+                    Map reactModuleInfoProvider$lambda$2;
+                    reactModuleInfoProvider$lambda$2 = d.getReactModuleInfoProvider$lambda$2();
+                    return reactModuleInfoProvider$lambda$2;
+                }
+            };
+        } catch (IllegalAccessException e10) {
+            throw new RuntimeException("No ReactModuleInfoProvider for RNGestureHandlerPackage$$ReactModuleInfoProvider", e10);
+        } catch (InstantiationException e11) {
+            throw new RuntimeException("No ReactModuleInfoProvider for RNGestureHandlerPackage$$ReactModuleInfoProvider", e11);
+        }
+    }
+
+    @Override // com.facebook.react.BaseReactPackage
+    protected List getViewManagers(ReactApplicationContext reactContext) {
+        Intrinsics.checkNotNullParameter(reactContext, "reactContext");
+        return CollectionsKt.j1(d().values());
+    }
+
+    @Override // com.facebook.react.ViewManagerOnDemandReactPackage
+    public List getViewManagerNames(ReactApplicationContext reactContext) {
+        Intrinsics.checkNotNullParameter(reactContext, "reactContext");
+        return CollectionsKt.h1(d().keySet());
     }
 }

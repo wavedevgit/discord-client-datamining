@@ -7,7 +7,7 @@ public abstract class b implements ChronoLocalDate, j$.time.temporal.k, l, Seria
     public static ChronoLocalDate r(j jVar, j$.time.temporal.k kVar) {
         ChronoLocalDate chronoLocalDate = (ChronoLocalDate) kVar;
         chronoLocalDate.f();
-        if (((a) jVar).equals(k.f31296a)) {
+        if (((a) jVar).equals(k.f31092a)) {
             return chronoLocalDate;
         }
         chronoLocalDate.f();

@@ -10,13 +10,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class CreateDocumentRequest {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f19093c = new a(null);
+    public static final a f18075c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Data f19094a;
+    private final Data f18076a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Meta f19095b;
+    private final Meta f18077b;
 
     @i(generateAdapter = true)
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\n\b\u0007\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004¢\u0006\u0004\b\u0006\u0010\u0007R\u0017\u0010\u0003\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\b\u0010\t\u001a\u0004\b\n\u0010\u000bR\u0017\u0010\u0005\u001a\u00020\u00048\u0006¢\u0006\f\n\u0004\b\n\u0010\f\u001a\u0004\b\b\u0010\r¨\u0006\u000e"}, d2 = {"Lcom/withpersona/sdk2/inquiry/document/network/CreateDocumentRequest$Attributes;", "", "", "kind", "", "fileLimit", "<init>", "(Ljava/lang/String;I)V", "a", "Ljava/lang/String;", "b", "()Ljava/lang/String;", "I", "()I", "document_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -24,23 +24,23 @@ public final class CreateDocumentRequest {
     public static final class Attributes {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f19096a;
+        private final String f18078a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f19097b;
+        private final int f18079b;
 
         public Attributes(String kind, int i10) {
             Intrinsics.checkNotNullParameter(kind, "kind");
-            this.f19096a = kind;
-            this.f19097b = i10;
+            this.f18078a = kind;
+            this.f18079b = i10;
         }
 
         public final int a() {
-            return this.f19097b;
+            return this.f18079b;
         }
 
         public final String b() {
-            return this.f19096a;
+            return this.f18078a;
         }
     }
 
@@ -50,24 +50,24 @@ public final class CreateDocumentRequest {
     public static final class Data {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f19098a;
+        private final String f18080a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Attributes f19099b;
+        private final Attributes f18081b;
 
         public Data(String type, Attributes attributes) {
             Intrinsics.checkNotNullParameter(type, "type");
             Intrinsics.checkNotNullParameter(attributes, "attributes");
-            this.f19098a = type;
-            this.f19099b = attributes;
+            this.f18080a = type;
+            this.f18081b = attributes;
         }
 
         public final Attributes a() {
-            return this.f19099b;
+            return this.f18081b;
         }
 
         public final String b() {
-            return this.f19098a;
+            return this.f18080a;
         }
     }
 
@@ -77,15 +77,15 @@ public final class CreateDocumentRequest {
     public static final class Meta {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f19100a;
+        private final String f18082a;
 
         public Meta(String fieldKeyDocument) {
             Intrinsics.checkNotNullParameter(fieldKeyDocument, "fieldKeyDocument");
-            this.f19100a = fieldKeyDocument;
+            this.f18082a = fieldKeyDocument;
         }
 
         public final String a() {
-            return this.f19100a;
+            return this.f18082a;
         }
     }
 
@@ -109,15 +109,15 @@ public final class CreateDocumentRequest {
     public CreateDocumentRequest(Data data, Meta meta) {
         Intrinsics.checkNotNullParameter(data, "data");
         Intrinsics.checkNotNullParameter(meta, "meta");
-        this.f19094a = data;
-        this.f19095b = meta;
+        this.f18076a = data;
+        this.f18077b = meta;
     }
 
     public final Data a() {
-        return this.f19094a;
+        return this.f18076a;
     }
 
     public final Meta b() {
-        return this.f19095b;
+        return this.f18077b;
     }
 }

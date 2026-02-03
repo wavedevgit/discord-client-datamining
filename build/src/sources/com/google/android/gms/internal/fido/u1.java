@@ -5,62 +5,62 @@ import java.util.Iterator;
 final class u1 extends h1 {
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Object[] f14762s;
+    private static final Object[] f13730s;
 
     /* renamed from: t  reason: collision with root package name */
-    static final u1 f14763t;
+    static final u1 f13731t;
 
     /* renamed from: i  reason: collision with root package name */
-    final transient Object[] f14764i;
+    final transient Object[] f13732i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient int f14765o;
+    private final transient int f13733o;
 
     /* renamed from: p  reason: collision with root package name */
-    final transient Object[] f14766p;
+    final transient Object[] f13734p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient int f14767q;
+    private final transient int f13735q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final transient int f14768r;
+    private final transient int f13736r;
 
     static {
         Object[] objArr = new Object[0];
-        f14762s = objArr;
-        f14763t = new u1(objArr, 0, objArr, 0, 0);
+        f13730s = objArr;
+        f13731t = new u1(objArr, 0, objArr, 0, 0);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public u1(Object[] objArr, int i10, Object[] objArr2, int i11, int i12) {
-        this.f14764i = objArr;
-        this.f14765o = i10;
-        this.f14766p = objArr2;
-        this.f14767q = i11;
-        this.f14768r = i12;
+        this.f13732i = objArr;
+        this.f13733o = i10;
+        this.f13734p = objArr2;
+        this.f13735q = i11;
+        this.f13736r = i12;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.gms.internal.fido.z0
     public final int b(Object[] objArr, int i10) {
-        System.arraycopy(this.f14764i, 0, objArr, 0, this.f14768r);
-        return this.f14768r;
+        System.arraycopy(this.f13732i, 0, objArr, 0, this.f13736r);
+        return this.f13736r;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.gms.internal.fido.z0
     public final int c() {
-        return this.f14768r;
+        return this.f13736r;
     }
 
     @Override // com.google.android.gms.internal.fido.z0, java.util.AbstractCollection, java.util.Collection, java.util.List
     public final boolean contains(Object obj) {
         if (obj != null) {
-            Object[] objArr = this.f14766p;
+            Object[] objArr = this.f13734p;
             if (objArr.length != 0) {
                 int a10 = y0.a(obj.hashCode());
                 while (true) {
-                    int i10 = a10 & this.f14767q;
+                    int i10 = a10 & this.f13735q;
                     Object obj2 = objArr[i10];
                     if (obj2 == null) {
                         return false;
@@ -89,7 +89,7 @@ final class u1 extends h1 {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.gms.internal.fido.z0
     public final Object[] f() {
-        return this.f14764i;
+        return this.f13732i;
     }
 
     @Override // com.google.android.gms.internal.fido.h1
@@ -99,7 +99,7 @@ final class u1 extends h1 {
 
     @Override // com.google.android.gms.internal.fido.h1, java.util.Collection, java.util.Set
     public final int hashCode() {
-        return this.f14765o;
+        return this.f13733o;
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
@@ -109,11 +109,11 @@ final class u1 extends h1 {
 
     @Override // com.google.android.gms.internal.fido.h1
     final e1 k() {
-        return e1.i(this.f14764i, this.f14768r);
+        return e1.i(this.f13732i, this.f13736r);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final int size() {
-        return this.f14768r;
+        return this.f13736r;
     }
 }

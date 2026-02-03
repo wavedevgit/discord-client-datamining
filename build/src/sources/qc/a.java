@@ -3,53 +3,53 @@ package qc;
 public abstract class a {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f47333d;
+    private int f47483d;
 
     public final void g(int i10) {
-        this.f47333d = i10 | this.f47333d;
+        this.f47483d = i10 | this.f47483d;
     }
 
     public void h() {
-        this.f47333d = 0;
+        this.f47483d = 0;
     }
 
     public final void i(int i10) {
-        this.f47333d = (~i10) & this.f47333d;
+        this.f47483d = (~i10) & this.f47483d;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public final boolean k(int i10) {
-        if ((this.f47333d & i10) == i10) {
+    public final boolean j(int i10) {
+        if ((this.f47483d & i10) == i10) {
             return true;
         }
         return false;
     }
 
-    public final boolean l() {
-        return k(268435456);
+    public final boolean k() {
+        return j(268435456);
     }
 
-    public final boolean m() {
-        return k(Integer.MIN_VALUE);
+    public final boolean l() {
+        return j(Integer.MIN_VALUE);
     }
 
     public final boolean o() {
-        return k(4);
+        return j(4);
     }
 
     public final boolean p() {
-        return k(134217728);
+        return j(134217728);
     }
 
     public final boolean q() {
-        return k(1);
+        return j(1);
     }
 
     public final boolean r() {
-        return k(536870912);
+        return j(536870912);
     }
 
     public final void s(int i10) {
-        this.f47333d = i10;
+        this.f47483d = i10;
     }
 }

@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/routing/getChannelIdForGuildTransition.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun49726: for (var _fun49726_ip = 0;;) switch (_fun49726_ip) {
+        _fun49784: for (var _fun49784_ip = 0;;) switch (_fun49784_ip) {
             case 0:
                 var7 = arg0;
                 var1 = _closure1_slot5;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = undefined;
                 var2 = undefined;
                 if (var5) {
-                    _fun49726_ip = 54;
-                    continue _fun49726
+                    _fun49784_ip = 54;
+                    continue _fun49784
                 }
             case 49:
                 var2 = var4.id;
@@ -67,16 +67,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = _closure1_slot6;
                 var4 = var4.GUILD_ONBOARDING;
                 if (!(var0 === var4)) {
-                    _fun49726_ip = 88;
-                    continue _fun49726
+                    _fun49784_ip = 88;
+                    continue _fun49784
                 }
             case 68:
                 var5 = _closure1_slot2;
                 var4 = var5.shouldShowOnboarding;
                 var4 = var4.bind(var5)(var7);
                 if (var4) {
-                    _fun49726_ip = 88;
-                    continue _fun49726
+                    _fun49784_ip = 88;
+                    continue _fun49784
                 }
             case 86:
                 return var2;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = _closure1_slot6;
                 var4 = var4.GUILD_HOME;
                 if (!(var0 === var4)) {
-                    _fun49726_ip = 138;
-                    continue _fun49726
+                    _fun49784_ip = 138;
+                    continue _fun49784
                 }
             case 102:
                 var5 = _closure1_slot0;
@@ -96,8 +96,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5.canSeeOnboardingHome;
                 var4 = var4.bind(var5)(var7);
                 if (var4) {
-                    _fun49726_ip = 138;
-                    continue _fun49726
+                    _fun49784_ip = 138;
+                    continue _fun49784
                 }
             case 136:
                 return var2;
@@ -105,8 +105,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = _closure1_slot6;
                 var4 = var4.GAME_SHOP;
                 if (!(var0 === var4)) {
-                    _fun49726_ip = 191;
-                    continue _fun49726
+                    _fun49784_ip = 191;
+                    continue _fun49784
                 }
             case 152:
                 var5 = _closure1_slot0;
@@ -118,24 +118,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = 'getChannelIdForGuildTransition';
                 var4 = var5.bind(var6)(var7, var4);
                 if (var4) {
-                    _fun49726_ip = 230;
-                    continue _fun49726
+                    _fun49784_ip = 230;
+                    continue _fun49784
                 }
             case 191:
                 var4 = _closure1_slot3;
                 var3 = var4.getChannel;
                 var3 = var3.bind(var4)(var0);
                 if (!(var1 != var3)) {
-                    _fun49726_ip = 225;
-                    continue _fun49726
+                    _fun49784_ip = 225;
+                    continue _fun49784
                 }
             case 209:
                 var1 = var3.isGuildVocal;
                 var3 = var1.bind(var3)();
                 var1 = var0;
                 if (!var3) {
-                    _fun49726_ip = 228;
-                    continue _fun49726
+                    _fun49784_ip = 228;
+                    continue _fun49784
                 }
             case 225:
                 var1 = var2;
@@ -147,4 +147,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getChannelIdForGuildTransition = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4679, 1372, 1662, 1661, 1379, 4576, 3485, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4684, 1372, 1671, 1670, 1379, 4580, 3494, 2]);

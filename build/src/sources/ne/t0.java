@@ -4,7 +4,7 @@ import android.os.Trace;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class t0 {
     public static void a(String str) {
-        if (w0.f40158a >= 18) {
+        if (w0.f40197a >= 18) {
             b(str);
         }
     }
@@ -14,7 +14,7 @@ public abstract class t0 {
     }
 
     public static void c() {
-        if (w0.f40158a >= 18) {
+        if (w0.f40197a >= 18) {
             d();
         }
     }

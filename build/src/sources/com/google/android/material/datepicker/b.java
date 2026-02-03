@@ -13,34 +13,34 @@ import androidx.core.view.h0;
 final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Rect f15523a;
+    private final Rect f14491a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ColorStateList f15524b;
+    private final ColorStateList f14492b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ColorStateList f15525c;
+    private final ColorStateList f14493c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ColorStateList f15526d;
+    private final ColorStateList f14494d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f15527e;
+    private final int f14495e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final oh.k f15528f;
+    private final oh.k f14496f;
 
     private b(ColorStateList colorStateList, ColorStateList colorStateList2, ColorStateList colorStateList3, int i10, oh.k kVar, Rect rect) {
         b2.e.d(rect.left);
         b2.e.d(rect.top);
         b2.e.d(rect.right);
         b2.e.d(rect.bottom);
-        this.f15523a = rect;
-        this.f15524b = colorStateList2;
-        this.f15525c = colorStateList;
-        this.f15526d = colorStateList3;
-        this.f15527e = i10;
-        this.f15528f = kVar;
+        this.f14491a = rect;
+        this.f14492b = colorStateList2;
+        this.f14493c = colorStateList;
+        this.f14494d = colorStateList3;
+        this.f14495e = i10;
+        this.f14496f = kVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -52,8 +52,8 @@ final class b {
             z10 = false;
         }
         b2.e.b(z10, "Cannot create a CalendarItemStyle with a styleResId of 0");
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(i10, yg.k.f54747y3);
-        Rect rect = new Rect(obtainStyledAttributes.getDimensionPixelOffset(yg.k.f54756z3, 0), obtainStyledAttributes.getDimensionPixelOffset(yg.k.B3, 0), obtainStyledAttributes.getDimensionPixelOffset(yg.k.A3, 0), obtainStyledAttributes.getDimensionPixelOffset(yg.k.C3, 0));
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(i10, yg.k.f54505y3);
+        Rect rect = new Rect(obtainStyledAttributes.getDimensionPixelOffset(yg.k.f54514z3, 0), obtainStyledAttributes.getDimensionPixelOffset(yg.k.B3, 0), obtainStyledAttributes.getDimensionPixelOffset(yg.k.A3, 0), obtainStyledAttributes.getDimensionPixelOffset(yg.k.C3, 0));
         ColorStateList a10 = lh.c.a(context, obtainStyledAttributes, yg.k.D3);
         ColorStateList a11 = lh.c.a(context, obtainStyledAttributes, yg.k.I3);
         ColorStateList a12 = lh.c.a(context, obtainStyledAttributes, yg.k.G3);
@@ -71,19 +71,19 @@ final class b {
     void c(TextView textView, ColorStateList colorStateList, ColorStateList colorStateList2) {
         oh.g gVar = new oh.g();
         oh.g gVar2 = new oh.g();
-        gVar.setShapeAppearanceModel(this.f15528f);
-        gVar2.setShapeAppearanceModel(this.f15528f);
+        gVar.setShapeAppearanceModel(this.f14496f);
+        gVar2.setShapeAppearanceModel(this.f14496f);
         if (colorStateList == null) {
-            colorStateList = this.f15525c;
+            colorStateList = this.f14493c;
         }
         gVar.X(colorStateList);
-        gVar.e0(this.f15527e, this.f15526d);
+        gVar.e0(this.f14495e, this.f14494d);
         if (colorStateList2 == null) {
-            colorStateList2 = this.f15524b;
+            colorStateList2 = this.f14492b;
         }
         textView.setTextColor(colorStateList2);
-        RippleDrawable rippleDrawable = new RippleDrawable(this.f15524b.withAlpha(30), gVar, gVar2);
-        Rect rect = this.f15523a;
+        RippleDrawable rippleDrawable = new RippleDrawable(this.f14492b.withAlpha(30), gVar, gVar2);
+        Rect rect = this.f14491a;
         h0.r0(textView, new InsetDrawable((Drawable) rippleDrawable, rect.left, rect.top, rect.right, rect.bottom));
     }
 }

@@ -1,93 +1,133 @@
 package dt;
 
+import ct.l;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
+import kotlinx.serialization.descriptors.SerialDescriptor;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class c1 {
+public abstract class c1 implements SerialDescriptor {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String[] f22391a;
+    private final String f20914a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final byte[] f22392b;
+    private final SerialDescriptor f20915b;
 
-    static {
-        String[] strArr = new String[93];
-        for (int i10 = 0; i10 < 32; i10++) {
-            strArr[i10] = "\\u" + e(i10 >> 12) + e(i10 >> 8) + e(i10 >> 4) + e(i10);
+    /* renamed from: c  reason: collision with root package name */
+    private final SerialDescriptor f20916c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final int f20917d;
+
+    public /* synthetic */ c1(String str, SerialDescriptor serialDescriptor, SerialDescriptor serialDescriptor2, DefaultConstructorMarker defaultConstructorMarker) {
+        this(str, serialDescriptor, serialDescriptor2);
+    }
+
+    @Override // kotlinx.serialization.descriptors.SerialDescriptor
+    public boolean b() {
+        return SerialDescriptor.a.c(this);
+    }
+
+    @Override // kotlinx.serialization.descriptors.SerialDescriptor
+    public int c(String name) {
+        Intrinsics.checkNotNullParameter(name, "name");
+        Integer intOrNull = StringsKt.toIntOrNull(name);
+        if (intOrNull != null) {
+            return intOrNull.intValue();
         }
-        strArr[34] = "\\\"";
-        strArr[92] = "\\\\";
-        strArr[9] = "\\t";
-        strArr[8] = "\\b";
-        strArr[10] = "\\n";
-        strArr[13] = "\\r";
-        strArr[12] = "\\f";
-        f22391a = strArr;
-        byte[] bArr = new byte[93];
-        for (int i11 = 0; i11 < 32; i11++) {
-            bArr[i11] = 1;
+        throw new IllegalArgumentException(name + " is not a valid map index");
+    }
+
+    @Override // kotlinx.serialization.descriptors.SerialDescriptor
+    public int d() {
+        return this.f20917d;
+    }
+
+    @Override // kotlinx.serialization.descriptors.SerialDescriptor
+    public String e(int i10) {
+        return String.valueOf(i10);
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-        bArr[34] = 34;
-        bArr[92] = 92;
-        bArr[9] = 116;
-        bArr[8] = 98;
-        bArr[10] = 110;
-        bArr[13] = 114;
-        bArr[12] = 102;
-        f22392b = bArr;
+        if (!(obj instanceof c1)) {
+            return false;
+        }
+        c1 c1Var = (c1) obj;
+        if (Intrinsics.areEqual(h(), c1Var.h()) && Intrinsics.areEqual(this.f20915b, c1Var.f20915b) && Intrinsics.areEqual(this.f20916c, c1Var.f20916c)) {
+            return true;
+        }
+        return false;
     }
 
-    public static final byte[] a() {
-        return f22392b;
+    @Override // kotlinx.serialization.descriptors.SerialDescriptor
+    public List f(int i10) {
+        if (i10 >= 0) {
+            return CollectionsKt.l();
+        }
+        throw new IllegalArgumentException(("Illegal index " + i10 + ", " + h() + " expects only non-negative indices").toString());
     }
 
-    public static final String[] b() {
-        return f22391a;
-    }
-
-    public static final void c(StringBuilder sb2, String value) {
-        Intrinsics.checkNotNullParameter(sb2, "<this>");
-        Intrinsics.checkNotNullParameter(value, "value");
-        sb2.append('\"');
-        int length = value.length();
-        int i10 = 0;
-        for (int i11 = 0; i11 < length; i11++) {
-            char charAt = value.charAt(i11);
-            String[] strArr = f22391a;
-            if (charAt < strArr.length && strArr[charAt] != null) {
-                sb2.append((CharSequence) value, i10, i11);
-                sb2.append(strArr[charAt]);
-                i10 = i11 + 1;
+    @Override // kotlinx.serialization.descriptors.SerialDescriptor
+    public SerialDescriptor g(int i10) {
+        if (i10 >= 0) {
+            int i11 = i10 % 2;
+            if (i11 != 0) {
+                if (i11 == 1) {
+                    return this.f20916c;
+                }
+                throw new IllegalStateException("Unreached");
             }
+            return this.f20915b;
         }
-        if (i10 != 0) {
-            sb2.append((CharSequence) value, i10, value.length());
-        } else {
-            sb2.append(value);
-        }
-        sb2.append('\"');
+        throw new IllegalArgumentException(("Illegal index " + i10 + ", " + h() + " expects only non-negative indices").toString());
     }
 
-    public static final Boolean d(String str) {
-        Intrinsics.checkNotNullParameter(str, "<this>");
-        if (StringsKt.A(str, "true", true)) {
-            return Boolean.TRUE;
-        }
-        if (StringsKt.A(str, "false", true)) {
-            return Boolean.FALSE;
-        }
-        return null;
+    @Override // kotlinx.serialization.descriptors.SerialDescriptor
+    public List getAnnotations() {
+        return SerialDescriptor.a.a(this);
     }
 
-    private static final char e(int i10) {
-        int i11;
-        int i12 = i10 & 15;
-        if (i12 < 10) {
-            i11 = i12 + 48;
-        } else {
-            i11 = i12 + 87;
+    @Override // kotlinx.serialization.descriptors.SerialDescriptor
+    public ct.k getKind() {
+        return l.c.f19855a;
+    }
+
+    @Override // kotlinx.serialization.descriptors.SerialDescriptor
+    public String h() {
+        return this.f20914a;
+    }
+
+    public int hashCode() {
+        return (((h().hashCode() * 31) + this.f20915b.hashCode()) * 31) + this.f20916c.hashCode();
+    }
+
+    @Override // kotlinx.serialization.descriptors.SerialDescriptor
+    public boolean i(int i10) {
+        if (i10 >= 0) {
+            return false;
         }
-        return (char) i11;
+        throw new IllegalArgumentException(("Illegal index " + i10 + ", " + h() + " expects only non-negative indices").toString());
+    }
+
+    @Override // kotlinx.serialization.descriptors.SerialDescriptor
+    public boolean isInline() {
+        return SerialDescriptor.a.b(this);
+    }
+
+    public String toString() {
+        return h() + '(' + this.f20915b + ", " + this.f20916c + ')';
+    }
+
+    private c1(String str, SerialDescriptor serialDescriptor, SerialDescriptor serialDescriptor2) {
+        this.f20914a = str;
+        this.f20915b = serialDescriptor;
+        this.f20916c = serialDescriptor2;
+        this.f20917d = 2;
     }
 }

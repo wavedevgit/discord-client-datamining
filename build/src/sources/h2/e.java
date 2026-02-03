@@ -5,13 +5,13 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public abstract class e extends Exception {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f27504i = new a(null);
+    public static final a f26789i = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f27505d;
+    private final String f26790d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final CharSequence f27506e;
+    private final CharSequence f26791e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -40,8 +40,8 @@ public abstract class e extends Exception {
             r0 = 0
         Ld:
             r1.<init>(r0)
-            r1.f27505d = r2
-            r1.f27506e = r3
+            r1.f26790d = r2
+            r1.f26791e = r3
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: h2.e.<init>(java.lang.String, java.lang.CharSequence):void");

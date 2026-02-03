@@ -8,7 +8,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class e extends o3.e {
 
     /* renamed from: r  reason: collision with root package name */
-    private final o3.b f4670r;
+    private final o3.b f4639r;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public e(JankStats jankStats, View view, Window window) {
@@ -16,7 +16,7 @@ public final class e extends o3.e {
         Intrinsics.checkNotNullParameter(jankStats, "jankStats");
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(window, "window");
-        this.f4670r = new o3.b(0L, 0L, 0L, 0L, 0L, false, h());
+        this.f4639r = new o3.b(0L, 0L, 0L, 0L, 0L, false, h());
     }
 
     @Override // androidx.metrics.performance.d
@@ -42,7 +42,7 @@ public final class e extends o3.e {
             z10 = false;
         }
         long metric2 = frameMetrics.getMetric(8);
-        this.f4670r.h(j10, metric, (metric2 - frameMetrics.getMetric(12)) + frameMetrics.getMetric(7), metric2, metric2 - frameMetrics.getMetric(13), z10);
-        return this.f4670r;
+        this.f4639r.h(j10, metric, (metric2 - frameMetrics.getMetric(12)) + frameMetrics.getMetric(7), metric2, metric2 - frameMetrics.getMetric(13), z10);
+        return this.f4639r;
     }
 }

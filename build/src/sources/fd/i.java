@@ -6,16 +6,16 @@ import java.nio.ByteBuffer;
 final class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private long f24176a;
+    private long f23768a;
 
     /* renamed from: b  reason: collision with root package name */
-    private long f24177b;
+    private long f23769b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f24178c;
+    private boolean f23770c;
 
     private long a(long j10) {
-        return this.f24176a + Math.max(0L, ((this.f24177b - 529) * 1000000) / j10);
+        return this.f23768a + Math.max(0L, ((this.f23769b - 529) * 1000000) / j10);
     }
 
     public long b(Format format) {
@@ -23,33 +23,33 @@ final class i {
     }
 
     public void c() {
-        this.f24176a = 0L;
-        this.f24177b = 0L;
-        this.f24178c = false;
+        this.f23768a = 0L;
+        this.f23769b = 0L;
+        this.f23770c = false;
     }
 
     public long d(Format format, qc.f fVar) {
-        if (this.f24177b == 0) {
-            this.f24176a = fVar.f47349p;
+        if (this.f23769b == 0) {
+            this.f23768a = fVar.f47499p;
         }
-        if (this.f24178c) {
-            return fVar.f47349p;
+        if (this.f23770c) {
+            return fVar.f47499p;
         }
-        ByteBuffer byteBuffer = (ByteBuffer) ne.a.e(fVar.f47347i);
+        ByteBuffer byteBuffer = (ByteBuffer) ne.a.e(fVar.f47497i);
         int i10 = 0;
         for (int i11 = 0; i11 < 4; i11++) {
             i10 = (i10 << 8) | (byteBuffer.get(i11) & 255);
         }
         int m10 = nc.u.m(i10);
         if (m10 == -1) {
-            this.f24178c = true;
-            this.f24177b = 0L;
-            this.f24176a = fVar.f47349p;
+            this.f23770c = true;
+            this.f23769b = 0L;
+            this.f23768a = fVar.f47499p;
             ne.y.i("C2Mp3TimestampTracker", "MPEG audio header is invalid.");
-            return fVar.f47349p;
+            return fVar.f47499p;
         }
         long a10 = a(format.K);
-        this.f24177b += m10;
+        this.f23769b += m10;
         return a10;
     }
 }

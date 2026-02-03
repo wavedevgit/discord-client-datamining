@@ -17,20 +17,20 @@ import org.jetbrains.annotations.NotNull;
 public final class ReflectKotlinClassFinder implements KotlinClassFinder {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ClassLoader f33673a;
+    private final ClassLoader f33063a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final BuiltInsResourceLoader f33674b;
+    private final BuiltInsResourceLoader f33064b;
 
     public ReflectKotlinClassFinder(@NotNull ClassLoader classLoader) {
         Intrinsics.checkNotNullParameter(classLoader, "classLoader");
-        this.f33673a = classLoader;
-        this.f33674b = new BuiltInsResourceLoader();
+        this.f33063a = classLoader;
+        this.f33064b = new BuiltInsResourceLoader();
     }
 
     private final KotlinClassFinder.Result a(String str) {
         ReflectKotlinClass create;
-        Class<?> tryLoadClass = ReflectJavaClassFinderKt.tryLoadClass(this.f33673a, str);
+        Class<?> tryLoadClass = ReflectJavaClassFinderKt.tryLoadClass(this.f33063a, str);
         if (tryLoadClass == null || (create = ReflectKotlinClass.Factory.create(tryLoadClass)) == null) {
             return null;
         }
@@ -43,7 +43,7 @@ public final class ReflectKotlinClassFinder implements KotlinClassFinder {
         if (!packageFqName.startsWith(StandardNames.BUILT_INS_PACKAGE_NAME)) {
             return null;
         }
-        return this.f33674b.loadResource(BuiltInSerializerProtocol.INSTANCE.getBuiltInsFilePath(packageFqName));
+        return this.f33064b.loadResource(BuiltInSerializerProtocol.INSTANCE.getBuiltInsFilePath(packageFqName));
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.kotlin.KotlinClassFinder

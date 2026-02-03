@@ -67,7 +67,7 @@ public final class ActivityUtilities {
         }
         try {
             activity.startActivityForResult(intent, i10, bundle);
-            completableFuture.complete(Unit.f33074a);
+            completableFuture.complete(Unit.f32464a);
         } catch (Exception e10) {
             completableFuture.completeExceptionally(e10);
         }
@@ -96,7 +96,7 @@ public final class ActivityUtilities {
         if (ThreadUtilsKt.isOnMainThread()) {
             try {
                 context.startActivity(intent, bundle);
-                completableFuture.complete(Unit.f33074a);
+                completableFuture.complete(Unit.f32464a);
             } catch (Exception e10) {
                 completableFuture.completeExceptionally(e10);
             }
@@ -107,7 +107,7 @@ public final class ActivityUtilities {
             public final void run() {
                 try {
                     context.startActivity(intent, bundle);
-                    completableFuture.complete(Unit.f33074a);
+                    completableFuture.complete(Unit.f32464a);
                 } catch (Exception e11) {
                     completableFuture.completeExceptionally(e11);
                 }

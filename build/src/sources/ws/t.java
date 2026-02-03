@@ -1,247 +1,183 @@
 package ws;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.Iterator;
 import java.util.List;
-import kotlin.Pair;
+import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
-import kotlin.jvm.internal.Ref;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class t implements o {
+public final class t implements s {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ws.a f53032a;
+    private final String f52727a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f53033b;
+    private final o f52728b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final a f53034c;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class b implements Comparator {
-        @Override // java.util.Comparator
-        public final int compare(Object obj, Object obj2) {
-            return mr.a.d((String) ((Pair) obj).c(), (String) ((Pair) obj2).c());
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class c extends Lambda implements Function0 {
-
-        /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ CharSequence f53038e;
-
-        /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ int f53039i;
-
-        /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ Ref.IntRef f53040o;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        c(CharSequence charSequence, int i10, Ref.IntRef intRef) {
-            super(0);
-            this.f53038e = charSequence;
-            this.f53039i = i10;
-            this.f53040o = intRef;
-        }
-
-        @Override // kotlin.jvm.functions.Function0
-        public final String invoke() {
-            return "Expected " + t.this.f53033b + " but got " + this.f53038e.subSequence(this.f53039i, this.f53040o.element).toString();
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class d extends Lambda implements Function1 {
-
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Comparable f53041d;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public d(Comparable comparable) {
-            super(1);
-            this.f53041d = comparable;
-        }
-
-        @Override // kotlin.jvm.functions.Function1
-        /* renamed from: a */
-        public final Integer invoke(Object obj) {
-            return Integer.valueOf(mr.a.d((String) ((Pair) obj).c(), this.f53041d));
-        }
-    }
-
-    public t(Collection strings, ws.a setter, String whatThisExpects) {
-        Intrinsics.checkNotNullParameter(strings, "strings");
-        Intrinsics.checkNotNullParameter(setter, "setter");
-        Intrinsics.checkNotNullParameter(whatThisExpects, "whatThisExpects");
-        this.f53032a = setter;
-        this.f53033b = whatThisExpects;
-        this.f53034c = new a(null, false, 3, null);
-        Iterator it = strings.iterator();
-        while (it.hasNext()) {
-            String str = (String) it.next();
-            if (str.length() > 0) {
-                a aVar = this.f53034c;
-                int length = str.length();
-                for (int i10 = 0; i10 < length; i10++) {
-                    char charAt = str.charAt(i10);
-                    List a10 = aVar.a();
-                    int i11 = CollectionsKt.i(a10, 0, a10.size(), new d(String.valueOf(charAt)));
-                    if (i11 < 0) {
-                        a aVar2 = new a(null, false, 3, null);
-                        aVar.a().add((-i11) - 1, jr.v.a(String.valueOf(charAt), aVar2));
-                        aVar = aVar2;
-                    } else {
-                        aVar = (a) ((Pair) aVar.a().get(i11)).d();
-                    }
-                }
-                if (!aVar.b()) {
-                    aVar.c(true);
-                } else {
-                    throw new IllegalArgumentException(("The string '" + str + "' was passed several times").toString());
-                }
-            } else {
-                throw new IllegalArgumentException(("Found an empty string in " + this.f53033b).toString());
-            }
-        }
-        b(this.f53034c);
-    }
-
-    private static final void b(a aVar) {
-        for (Pair pair : aVar.a()) {
-            b((a) pair.b());
-        }
-        ArrayList arrayList = new ArrayList();
-        for (Pair pair2 : aVar.a()) {
-            String str = (String) pair2.a();
-            a aVar2 = (a) pair2.b();
-            if (!aVar2.b() && aVar2.a().size() == 1) {
-                Pair pair3 = (Pair) CollectionsKt.Q0(aVar2.a());
-                arrayList.add(jr.v.a(str + ((String) pair3.a()), (a) pair3.b()));
-            } else {
-                arrayList.add(jr.v.a(str, aVar2));
-            }
-        }
-        aVar.a().clear();
-        aVar.a().addAll(CollectionsKt.W0(arrayList, new b()));
-    }
-
-    /* JADX WARN: Code restructure failed: missing block: B:13:0x0050, code lost:
-        r1.element += r6.length();
-        r0 = r3;
-        r13 = r5;
-     */
-    @Override // ws.o
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public java.lang.Object a(java.lang.Object r12, java.lang.CharSequence r13, int r14) {
-        /*
-            r11 = this;
-            java.lang.String r0 = "input"
-            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r13, r0)
-            ws.t$a r0 = r11.f53034c
-            kotlin.jvm.internal.Ref$IntRef r1 = new kotlin.jvm.internal.Ref$IntRef
-            r1.<init>()
-            r1.element = r14
-            r2 = 0
-        Lf:
-            int r3 = r1.element
-            int r4 = r13.length()
-            if (r3 > r4) goto L5e
-            boolean r3 = r0.b()
-            if (r3 == 0) goto L23
-            int r2 = r1.element
-            java.lang.Integer r2 = java.lang.Integer.valueOf(r2)
-        L23:
-            java.util.List r0 = r0.a()
-            java.util.Iterator r0 = r0.iterator()
-        L2b:
-            boolean r3 = r0.hasNext()
-            if (r3 == 0) goto L5e
-            java.lang.Object r3 = r0.next()
-            kotlin.Pair r3 = (kotlin.Pair) r3
-            java.lang.Object r4 = r3.a()
-            r6 = r4
-            java.lang.String r6 = (java.lang.String) r6
-            java.lang.Object r3 = r3.b()
-            ws.t$a r3 = (ws.t.a) r3
-            int r7 = r1.element
-            r9 = 4
-            r10 = 0
-            r8 = 0
-            r5 = r13
-            boolean r13 = kotlin.text.StringsKt.Q0(r5, r6, r7, r8, r9, r10)
-            if (r13 == 0) goto L5c
-            int r13 = r1.element
-            int r0 = r6.length()
-            int r13 = r13 + r0
-            r1.element = r13
-            r0 = r3
-            r13 = r5
-            goto Lf
-        L5c:
-            r13 = r5
-            goto L2b
-        L5e:
-            r5 = r13
-            if (r2 == 0) goto L78
-            ws.a r13 = r11.f53032a
-            int r0 = r2.intValue()
-            java.lang.CharSequence r0 = r5.subSequence(r14, r0)
-            java.lang.String r0 = r0.toString()
-            int r1 = r2.intValue()
-            java.lang.Object r12 = ws.p.b(r13, r12, r0, r14, r1)
-            return r12
-        L78:
-            ws.k$a r12 = ws.k.f53010a
-            ws.t$c r13 = new ws.t$c
-            r13.<init>(r5, r14, r1)
-            java.lang.Object r12 = r12.a(r14, r13)
-            return r12
-        */
-        throw new UnsupportedOperationException("Method not decompiled: ws.t.a(java.lang.Object, java.lang.CharSequence, int):java.lang.Object");
-    }
+    private final List f52729c;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
 
+        /* renamed from: c  reason: collision with root package name */
+        public static final C0711a f52730c = new C0711a(null);
+
         /* renamed from: a  reason: collision with root package name */
-        private final List f53035a;
+        private final ws.b f52731a;
 
         /* renamed from: b  reason: collision with root package name */
-        private boolean f53036b;
+        private final Object f52732b;
 
-        public a(List children, boolean z10) {
-            Intrinsics.checkNotNullParameter(children, "children");
-            this.f53035a = children;
-            this.f53036b = z10;
+        /* renamed from: ws.t$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+        public static final class C0711a {
+            public /* synthetic */ C0711a(DefaultConstructorMarker defaultConstructorMarker) {
+                this();
+            }
+
+            public final a a(n field) {
+                Intrinsics.checkNotNullParameter(field, "field");
+                Object a10 = field.a();
+                if (a10 != null) {
+                    return new a(field.b(), a10, null);
+                }
+                throw new IllegalArgumentException(("The field '" + field.getName() + "' does not define a default value").toString());
+            }
+
+            private C0711a() {
+            }
         }
 
-        public final List a() {
-            return this.f53035a;
+        public /* synthetic */ a(ws.b bVar, Object obj, DefaultConstructorMarker defaultConstructorMarker) {
+            this(bVar, obj);
         }
 
-        public final boolean b() {
-            return this.f53036b;
+        private a(ws.b bVar, Object obj) {
+            this.f52731a = bVar;
+            this.f52732b = obj;
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    /* synthetic */ class b extends FunctionReferenceImpl implements Function1 {
+        b(Object obj) {
+            super(1, obj, v.class, "test", "test(Ljava/lang/Object;)Z", 0);
         }
 
-        public final void c(boolean z10) {
-            this.f53036b = z10;
+        @Override // kotlin.jvm.functions.Function1
+        /* renamed from: a */
+        public final Boolean invoke(Object obj) {
+            return Boolean.valueOf(((v) this.receiver).test(obj));
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    /* synthetic */ class c extends FunctionReferenceImpl implements Function1 {
+        c(Object obj) {
+            super(1, obj, a0.class, "test", "test(Ljava/lang/Object;)Z", 0);
         }
 
-        public /* synthetic */ a(List list, boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-            this((i10 & 1) != 0 ? new ArrayList() : list, (i10 & 2) != 0 ? false : z10);
+        @Override // kotlin.jvm.functions.Function1
+        /* renamed from: a */
+        public final Boolean invoke(Object obj) {
+            return Boolean.valueOf(((a0) this.receiver).test(obj));
         }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static final class d extends Lambda implements Function1 {
+        d() {
+            super(1);
+        }
+
+        public final void a(Object obj) {
+            for (a aVar : t.this.f52729c) {
+                aVar.f52731a.c(obj, aVar.f52732b);
+            }
+        }
+
+        @Override // kotlin.jvm.functions.Function1
+        public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+            a(obj);
+            return Unit.f32464a;
+        }
+    }
+
+    public t(String onZero, o format) {
+        List b10;
+        Intrinsics.checkNotNullParameter(onZero, "onZero");
+        Intrinsics.checkNotNullParameter(format, "format");
+        this.f52727a = onZero;
+        this.f52728b = format;
+        b10 = p.b(format);
+        List<l> list = b10;
+        ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
+        for (l lVar : list) {
+            arrayList.add(lVar.c());
+        }
+        List<n> e02 = CollectionsKt.e0(arrayList);
+        ArrayList arrayList2 = new ArrayList(CollectionsKt.w(e02, 10));
+        for (n nVar : e02) {
+            arrayList2.add(a.f52730c.a(nVar));
+        }
+        this.f52729c = arrayList2;
+    }
+
+    @Override // ws.o
+    public xs.e a() {
+        xs.e a10 = this.f52728b.a();
+        List<a> list = this.f52729c;
+        ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
+        for (a aVar : list) {
+            arrayList.add(new g(aVar.f52732b, new u(aVar.f52731a)));
+        }
+        v a11 = w.a(arrayList);
+        if (a11 instanceof a0) {
+            return new xs.c(this.f52727a);
+        }
+        return new xs.b(CollectionsKt.o(lr.v.a(new b(a11), new xs.c(this.f52727a)), lr.v.a(new c(a0.f52692a), a10)));
+    }
+
+    @Override // ws.o
+    public ys.q b() {
+        List e10;
+        List l10 = CollectionsKt.l();
+        ys.q b10 = this.f52728b.b();
+        ys.q b11 = new j(this.f52727a).b();
+        if (this.f52729c.isEmpty()) {
+            e10 = CollectionsKt.l();
+        } else {
+            e10 = CollectionsKt.e(new ys.u(new d()));
+        }
+        return new ys.q(l10, CollectionsKt.o(b10, ys.n.b(CollectionsKt.o(b11, new ys.q(e10, CollectionsKt.l())))));
+    }
+
+    public final o d() {
+        return this.f52728b;
+    }
+
+    public boolean equals(Object obj) {
+        if (obj instanceof t) {
+            t tVar = (t) obj;
+            if (Intrinsics.areEqual(this.f52727a, tVar.f52727a) && Intrinsics.areEqual(this.f52728b, tVar.f52728b)) {
+                return true;
+            }
+            return false;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return (this.f52727a.hashCode() * 31) + this.f52728b.hashCode();
+    }
+
+    public String toString() {
+        return "Optional(" + this.f52727a + ", " + this.f52728b + ')';
     }
 }

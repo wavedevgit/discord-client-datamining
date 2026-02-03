@@ -14,9 +14,9 @@ public enum b {
     
 
     /* renamed from: d  reason: collision with root package name */
-    public final String f6594d;
+    public final String f6640d;
 
     b(String str) {
-        this.f6594d = str;
+        this.f6640d = str;
     }
 }

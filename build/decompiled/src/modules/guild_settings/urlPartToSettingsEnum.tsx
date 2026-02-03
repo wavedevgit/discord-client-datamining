@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/guild_settings/urlPartToSettingsEnum.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function arg0, arg1() {
-        _fun29897: for (var _fun29897_ip = 0;;) switch (_fun29897_ip) {
+        _fun29984: for (var _fun29984_ip = 0;;) switch (_fun29984_ip) {
             case 0:
                 var1 = arg0;
                 var7 = arg1;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = undefined;
                 var0 = undefined;
                 if (var4) {
-                    _fun29897_ip = 67;
-                    continue _fun29897
+                    _fun29984_ip = 67;
+                    continue _fun29984
                 }
             case 19:
                 var6 = var7.replace;
@@ -40,22 +40,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var3 == var5;
                 var0 = undefined;
                 if (var4) {
-                    _fun29897_ip = 67;
-                    continue _fun29897
+                    _fun29984_ip = 67;
+                    continue _fun29984
                 }
             case 57:
                 var4 = var5.toUpperCase;
                 var0 = var4.bind(var5)();
             case 67:
                 if (!(var3 != var0)) {
-                    _fun29897_ip = 78;
-                    continue _fun29897
+                    _fun29984_ip = 78;
+                    continue _fun29984
                 }
             case 71:
                 var3 = var0 in var1;
                 if (var3) {
-                    _fun29897_ip = 80;
-                    continue _fun29897
+                    _fun29984_ip = 80;
+                    continue _fun29984
                 }
             case 78:
                 return var2;

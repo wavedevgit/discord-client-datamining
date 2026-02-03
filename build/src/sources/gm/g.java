@@ -1,16 +1,14 @@
 package gm;
 
-import android.app.UiModeManager;
-import android.content.Context;
-import android.os.Build;
+import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.bridge.WritableArray;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.UIManagerHelper;
 import com.facebook.react.uimanager.events.Event;
 import com.facebook.react.uimanager.events.EventDispatcher;
-import jm.p;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class g {
@@ -31,37 +29,23 @@ public abstract class g {
         if (themedReactContext != null && (reactApplicationContext = themedReactContext.getReactApplicationContext()) != null && (rCTDeviceEventEmitter = (DeviceEventManagerModule.RCTDeviceEventEmitter) reactApplicationContext.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)) != null) {
             rCTDeviceEventEmitter.emit(event, params);
         }
-        km.a.c(km.a.f33029a, "ThemedReactContext", event, null, 4, null);
+        km.a.c(km.a.f32427a, "ThemedReactContext", event, null, 4, null);
     }
 
     public static final String c(ThemedReactContext themedReactContext) {
-        if (themedReactContext == null) {
-            return "default";
+        if (themedReactContext == null || !a.c(themedReactContext)) {
+            return "light";
         }
-        if (d(themedReactContext)) {
-            return "dark";
-        }
-        return "light";
+        return "dark";
     }
 
-    private static final boolean d(Context context) {
-        UiModeManager uiModeManager;
-        if (Build.VERSION.SDK_INT >= 29) {
-            Object systemService = context.getSystemService("uimode");
-            if (systemService instanceof UiModeManager) {
-                uiModeManager = (UiModeManager) systemService;
-            } else {
-                uiModeManager = null;
-            }
-            if (uiModeManager != null && uiModeManager.getNightMode() == 2) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public static final void e(ThemedReactContext themedReactContext) {
-        Intrinsics.checkNotNullParameter(themedReactContext, "<this>");
-        new p(themedReactContext);
+    public static final void d(ThemedReactContext themedReactContext, int i10) {
+        WritableArray createArray = Arguments.createArray();
+        Intrinsics.checkNotNullExpressionValue(createArray, "createArray(...)");
+        createArray.pushInt(new int[]{i10}[0]);
+        WritableMap createMap = Arguments.createMap();
+        Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
+        createMap.putArray("tags", createArray);
+        b(themedReactContext, "onUserDrivenAnimationEnded", createMap);
     }
 }

@@ -17,45 +17,45 @@ import io.sentry.android.core.x0;
 public class s extends FragmentManager.l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final x0 f30196a;
+    private final x0 f30557a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Runnable f30197b;
+    private final Runnable f30558b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ILogger f30198c;
+    private final ILogger f30559c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements EventDispatcherListener {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ EventDispatcher f30199a;
+        final /* synthetic */ EventDispatcher f30560a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ View f30200b;
+        final /* synthetic */ View f30561b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ Runnable f30201c;
+        final /* synthetic */ Runnable f30562c;
 
         a(EventDispatcher eventDispatcher, View view, Runnable runnable) {
-            this.f30199a = eventDispatcher;
-            this.f30200b = view;
-            this.f30201c = runnable;
+            this.f30560a = eventDispatcher;
+            this.f30561b = view;
+            this.f30562c = runnable;
         }
 
         @Override // com.facebook.react.uimanager.events.EventDispatcherListener
         public void onEventDispatch(Event event) {
-            if ("gn.f".equals(event.getClass().getCanonicalName())) {
-                this.f30199a.removeListener(this);
-                io.sentry.android.core.internal.util.r.e(this.f30200b, this.f30201c, s.this.f30196a);
+            if ("in.f".equals(event.getClass().getCanonicalName())) {
+                this.f30560a.removeListener(this);
+                io.sentry.android.core.internal.util.r.e(this.f30561b, this.f30562c, s.this.f30557a);
             }
         }
     }
 
     public s(x0 x0Var, Runnable runnable, ILogger iLogger) {
-        this.f30196a = x0Var;
-        this.f30197b = runnable;
-        this.f30198c = iLogger;
+        this.f30557a = x0Var;
+        this.f30558b = runnable;
+        this.f30559c = iLogger;
     }
 
     private static EventDispatcher b(View view, int i10) {
@@ -65,32 +65,32 @@ public class s extends FragmentManager.l {
     @Override // androidx.fragment.app.FragmentManager.l
     public void onFragmentViewCreated(FragmentManager fragmentManager, Fragment fragment, View view, Bundle bundle) {
         if (!"com.swmansion.rnscreens.n0".equals(fragment.getClass().getCanonicalName())) {
-            this.f30198c.c(SentryLevel.DEBUG, "Fragment is not a ScreenStackFragment, won't listen for the first draw.", new Object[0]);
+            this.f30559c.c(SentryLevel.DEBUG, "Fragment is not a ScreenStackFragment, won't listen for the first draw.", new Object[0]);
         } else if (!(view instanceof ViewGroup)) {
-            this.f30198c.c(SentryLevel.WARNING, "Fragment view is not a ViewGroup, won't listen for the first draw.", new Object[0]);
+            this.f30559c.c(SentryLevel.WARNING, "Fragment view is not a ViewGroup, won't listen for the first draw.", new Object[0]);
         } else {
             ViewGroup viewGroup = (ViewGroup) view;
             if (viewGroup.getChildCount() == 0) {
-                this.f30198c.c(SentryLevel.WARNING, "Fragment view has no children, won't listen for the first draw.", new Object[0]);
+                this.f30559c.c(SentryLevel.WARNING, "Fragment view has no children, won't listen for the first draw.", new Object[0]);
                 return;
             }
             View childAt = viewGroup.getChildAt(0);
             if (childAt != null && (childAt.getContext() instanceof ReactContext)) {
                 int id2 = childAt.getId();
                 if (id2 == -1) {
-                    this.f30198c.c(SentryLevel.WARNING, "Screen has no id, won't listen for the first draw.", new Object[0]);
+                    this.f30559c.c(SentryLevel.WARNING, "Screen has no id, won't listen for the first draw.", new Object[0]);
                     return;
                 }
                 EventDispatcher b10 = b(childAt, id2);
                 if (b10 == null) {
-                    this.f30198c.c(SentryLevel.WARNING, "Screen has no event dispatcher, won't listen for the first draw.", new Object[0]);
+                    this.f30559c.c(SentryLevel.WARNING, "Screen has no event dispatcher, won't listen for the first draw.", new Object[0]);
                     return;
                 } else {
-                    b10.addListener(new a(b10, view, this.f30197b));
+                    b10.addListener(new a(b10, view, this.f30558b));
                     return;
                 }
             }
-            this.f30198c.c(SentryLevel.WARNING, "Fragment view has no ReactContext, won't listen for the first draw.", new Object[0]);
+            this.f30559c.c(SentryLevel.WARNING, "Fragment view has no ReactContext, won't listen for the first draw.", new Object[0]);
         }
     }
 }

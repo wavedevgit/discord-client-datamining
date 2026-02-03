@@ -35,13 +35,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = _closure1_slot3;
         var1 = function*() { // Environment: var1
             var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun80863: for (var _fun80863_ip = 0;;) switch (_fun80863_ip) {
+                _fun80973: for (var _fun80973_ip = 0;;) switch (_fun80973_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun80863_ip = 101;
-                            continue _fun80863
+                            _fun80973_ip = 101;
+                            continue _fun80973
                         }
                     case 7:
                         var3 = _closure1_slot0;
@@ -60,16 +60,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 54:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun80863_ip = 98;
-                            continue _fun80863
+                            _fun80973_ip = 98;
+                            continue _fun80973
                         }
                     case 60:
                         var2 = var1.default;
                         var5 = _closure2_slot0;
                         var3 = null;
                         if (!(var3 != var5)) {
-                            _fun80863_ip = 95;
-                            continue _fun80863
+                            _fun80973_ip = 95;
+                            continue _fun80973
                         }
                     case 78:
                         var3 = {};
@@ -114,4 +114,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 4557, 10272, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 4561, 10291, 1307, 2]);

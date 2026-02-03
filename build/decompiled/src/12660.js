@@ -1,53 +1,144 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
-    var1 = global;
-    var1 = var1.TypeError;
-    var _closure1_slot2 = var1;
-    var1 = function(arg0) { // Environment: var0
-        _fun96830: for (var _fun96830_ip = 0;;) switch (_fun96830_ip) {
-            case 0:
-                var0 = arg0;
-                var4 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var2 = 0;
-                var3 = var3[var2];
-                var2 = undefined;
-                var3 = var4.bind(var2)(var3);
-                var3 = var3.bind(var2)(var0);
-                if (var3) {
-                    _fun96830_ip = 96;
-                    continue _fun96830
-                }
-            case 35:
-                var3 = _closure1_slot2;
-                var4 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var1 = 1;
-                var1 = var5[var1];
-                var1 = var4.bind(var2)(var1);
-                var2 = var1.bind(var2)(var0);
-                var1 = ' is not a function';
-                var6 = var2 + var1;
-                var2 = var3.prototype;
-                var2 = Object.create(var2, {
-                    constructor: {
-                        value: var3
-                    }
-                });
-                var7 = var2;
-                var1 = new var7[var3](var6, var5);
-                var1 = var1 instanceof Object ? var1 : var2;
-                throw var1;
-            case 96:
-                return var0;
-        }
-    };
-    var0 = arg4;
-    var0.exports = var1;
-    var0 = undefined;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12655, 12661]);
+    _fun96868: for (var _fun96868_ip = 0;;) switch (_fun96868_ip) {
+        case 0:
+            var5 = require;
+            var6 = dependencyMap;
+            var7 = 0;
+            var1 = var6[var7];
+            var0 = undefined;
+            var1 = var5.bind(var0)(var1);
+            var1 = var1.process;
+            if (!var1) {
+                _fun96868_ip = 49;
+                continue _fun96868
+            }
+        case 28:
+            var2 = var6[var7];
+            var2 = var5.bind(var0)(var2);
+            var2 = var2.process;
+            var1 = var2.versions;
+        case 49:
+            if (var1) {
+                _fun96868_ip = 94;
+                continue _fun96868
+            }
+        case 52:
+            var2 = var6[var7];
+            var2 = var5.bind(var0)(var2);
+            var2 = var2.Deno;
+            if (!var2) {
+                _fun96868_ip = 91;
+                continue _fun96868
+            }
+        case 70:
+            var3 = var6[var7];
+            var3 = var5.bind(var0)(var3);
+            var3 = var3.Deno;
+            var2 = var3.version;
+        case 91:
+            var1 = var2;
+        case 94:
+            var8 = var1;
+            if (!var8) {
+                _fun96868_ip = 108;
+                continue _fun96868
+            }
+        case 100:
+            var8 = var1.v8;
+        case 108:
+            var3 = undefined;
+            var2 = undefined;
+            if (!var8) {
+                _fun96868_ip = 178;
+                continue _fun96868
+            }
+        case 115:
+            var4 = var8.split;
+            var1 = '.';
+            var4 = var4.bind(var8)(var1);
+            var1 = var4[var7];
+            if (!(var1 > var7)) {
+                _fun96868_ip = 154;
+                continue _fun96868
+            }
+        case 137:
+            var8 = var4[var7];
+            var1 = 4;
+            var8 = var8 < var1;
+            var1 = 1;
+            if (var8) {
+                _fun96868_ip = 172;
+                continue _fun96868
+            }
+        case 154:
+            var8 = var4[var7];
+            var7 = 1;
+            var7 = var4[var7];
+            var7 = var8 + var7;
+            var1 = var7 - 0;
+        case 172:
+            var2 = var1;
+            var3 = var4;
+        case 178:
+            var1 = !var2;
+            if (var2) {
+                _fun96868_ip = 196;
+                continue _fun96868
+            }
+        case 184:
+            var4 = 1;
+            var4 = var6[var4];
+            var1 = var5.bind(var0)(var4);
+        case 196:
+            if (!var1) {
+                _fun96868_ip = 259;
+                continue _fun96868
+            }
+        case 199:
+            var8 = 1;
+            var4 = var6[var8];
+            var9 = var5.bind(var0)(var4);
+            var7 = var9.match;
+            var4 = /Edge\\/(\d + ) / ;
+            var4 = var7.bind(var9)(var4);
+            var7 = !var4;
+            if (var7) {
+                _fun96868_ip = 253;
+                continue _fun96868
+            }
+        case 242:
+            var9 = var4[var8];
+            var8 = 74;
+            var7 = var9 >= var8;
+        case 253:
+            var1 = var7;
+            var3 = var4;
+        case 259:
+            if (!var1) {
+                _fun96868_ip = 302;
+                continue _fun96868
+            }
+        case 262:
+            var4 = 1;
+            var4 = var6[var4];
+            var6 = var5.bind(var0)(var4);
+            var5 = var6.match;
+            var4 = /Chrome\\/(\d + ) / ;
+            var1 = var5.bind(var6)(var4);
+            var3 = var1;
+        case 302:
+            if (!var1) {
+                _fun96868_ip = 315;
+                continue _fun96868
+            }
+        case 305:
+            var1 = 1;
+            var1 = var3[var1];
+            var2 = var1 - 0;
+        case 315:
+            var1 = module;
+            var1.exports = var2;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12640, 12661]);

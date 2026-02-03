@@ -49,7 +49,7 @@ public final class AFd1hSDK extends AFd1dSDK {
         Intrinsics.checkNotNullParameter(str4, "");
         String mediationNetwork = AFa1tSDK.getMediationNetwork(str, str2, str3);
         String valueOf = String.valueOf(System.currentTimeMillis());
-        AFd1hSDK aFd1hSDK = new AFd1hSDK(mediationNetwork, o0.m(jr.v.a("Connection", "close"), jr.v.a("af_request_epoch_ms", valueOf), jr.v.a("af_sig", AFa1tSDK.AFAdRevenueData(str, str3, str2, str4, valueOf))), null, null, false, 28, null);
+        AFd1hSDK aFd1hSDK = new AFd1hSDK(mediationNetwork, o0.m(lr.v.a("Connection", "close"), lr.v.a("af_request_epoch_ms", valueOf), lr.v.a("af_sig", AFa1tSDK.AFAdRevenueData(str, str3, str2, str4, valueOf))), null, null, false, 28, null);
         aFd1hSDK.component3 = 10000;
         return aFd1hSDK;
     }

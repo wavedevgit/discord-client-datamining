@@ -11,17 +11,17 @@ public interface a extends IInterface {
 
     /* renamed from: com.msc.sa.aidl.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static abstract class AbstractBinderC0209a extends Binder implements a {
+    public static abstract class AbstractBinderC0190a extends Binder implements a {
 
         /* renamed from: com.msc.sa.aidl.a$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        private static class C0210a implements a {
+        private static class C0191a implements a {
 
             /* renamed from: c  reason: collision with root package name */
-            private IBinder f17898c;
+            private IBinder f16866c;
 
-            C0210a(IBinder iBinder) {
-                this.f17898c = iBinder;
+            C0191a(IBinder iBinder) {
+                this.f16866c = iBinder;
             }
 
             @Override // com.msc.sa.aidl.a
@@ -34,7 +34,7 @@ public interface a extends IInterface {
                     obtain.writeString(str);
                     boolean z10 = false;
                     b.b(obtain, bundle, 0);
-                    this.f17898c.transact(6, obtain, obtain2, 0);
+                    this.f16866c.transact(6, obtain, obtain2, 0);
                     obtain2.readException();
                     if (obtain2.readInt() != 0) {
                         z10 = true;
@@ -48,7 +48,7 @@ public interface a extends IInterface {
 
             @Override // android.os.IInterface
             public IBinder asBinder() {
-                return this.f17898c;
+                return this.f16866c;
             }
 
             @Override // com.msc.sa.aidl.a
@@ -61,7 +61,7 @@ public interface a extends IInterface {
                     obtain.writeString(str2);
                     obtain.writeString(str3);
                     obtain.writeStrongInterface(iSACallback);
-                    this.f17898c.transact(1, obtain, obtain2, 0);
+                    this.f16866c.transact(1, obtain, obtain2, 0);
                     obtain2.readException();
                     return obtain2.readString();
                 } finally {
@@ -79,7 +79,7 @@ public interface a extends IInterface {
             if (queryLocalInterface != null && (queryLocalInterface instanceof a)) {
                 return (a) queryLocalInterface;
             }
-            return new C0210a(iBinder);
+            return new C0191a(iBinder);
         }
     }
 

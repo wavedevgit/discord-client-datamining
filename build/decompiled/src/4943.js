@@ -19,8 +19,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.useContext;
     var _closure1_slot2 = var3;
-    var1 = function arg0() {
-        _fun44696: for (var _fun44696_ip = 0;;) switch (_fun44696_ip) {
+    var1 = function() {
+        _fun44746: for (var _fun44746_ip = 0;;) switch (_fun44746_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var3 = _closure1_slot0;
@@ -29,27 +29,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var1[var0];
                 var1 = undefined;
                 var0 = var3.bind(var1)(var0);
-                var0 = var0.BottomSheetModalInternalContext;
+                var0 = var0.BottomSheetModalContext;
                 var0 = var2.bind(var1)(var0);
-                var2 = true;
-                var1 = arg0;
-                if (!(var2 !== var1)) {
-                    _fun44696_ip = 55;
-                    continue _fun44696
-                }
-            case 49:
                 var1 = null;
                 if (!(var1 !== var0)) {
-                    _fun44696_ip = 57;
-                    continue _fun44696
+                    _fun44746_ip = 48;
+                    continue _fun44746
                 }
-            case 55:
+            case 46:
                 return var0;
-            case 57:
-                var0 = "'BottomSheetModalInternalContext' cannot be null!";
+            case 48:
+                var0 = "'BottomSheetModalContext' cannot be null!";
                 throw var0;
         }
     };
-    var2.useBottomSheetModalInternal = var1;
+    var2.useBottomSheetModal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4939]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4944]);

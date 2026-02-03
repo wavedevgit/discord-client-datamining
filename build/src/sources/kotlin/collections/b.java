@@ -32,7 +32,7 @@ public abstract class b implements Collection, KMappedMarker {
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
 
-    @Override // java.util.Collection, java.util.List
+    @Override // java.util.Collection
     public boolean contains(Object obj) {
         if (isEmpty()) {
             return false;

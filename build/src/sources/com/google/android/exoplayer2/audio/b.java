@@ -17,32 +17,32 @@ import org.webrtc.MediaStreamTrack;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f12847a;
+    private final Context f11815a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final f f12848b;
+    private final f f11816b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Handler f12849c;
+    private final Handler f11817c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final c f12850d;
+    private final c f11818d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final BroadcastReceiver f12851e;
+    private final BroadcastReceiver f11819e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final d f12852f;
+    private final d f11820f;
 
     /* renamed from: g  reason: collision with root package name */
-    com.google.android.exoplayer2.audio.a f12853g;
+    com.google.android.exoplayer2.audio.a f11821g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f12854h;
+    private boolean f11822h;
 
     /* renamed from: com.google.android.exoplayer2.audio.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    private static final class C0169b {
+    private static final class C0150b {
         public static void a(Context context, AudioDeviceCallback audioDeviceCallback, Handler handler) {
             ((AudioManager) ne.a.e((AudioManager) context.getSystemService(MediaStreamTrack.AUDIO_TRACK_KIND))).registerAudioDeviceCallback(audioDeviceCallback, handler);
         }
@@ -60,13 +60,13 @@ public final class b {
         @Override // android.media.AudioDeviceCallback
         public void onAudioDevicesAdded(AudioDeviceInfo[] audioDeviceInfoArr) {
             b bVar = b.this;
-            bVar.c(com.google.android.exoplayer2.audio.a.c(bVar.f12847a));
+            bVar.c(com.google.android.exoplayer2.audio.a.c(bVar.f11815a));
         }
 
         @Override // android.media.AudioDeviceCallback
         public void onAudioDevicesRemoved(AudioDeviceInfo[] audioDeviceInfoArr) {
             b bVar = b.this;
-            bVar.c(com.google.android.exoplayer2.audio.a.c(bVar.f12847a));
+            bVar.c(com.google.android.exoplayer2.audio.a.c(bVar.f11815a));
         }
     }
 
@@ -74,29 +74,29 @@ public final class b {
     private final class d extends ContentObserver {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ContentResolver f12856a;
+        private final ContentResolver f11824a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Uri f12857b;
+        private final Uri f11825b;
 
         public d(Handler handler, ContentResolver contentResolver, Uri uri) {
             super(handler);
-            this.f12856a = contentResolver;
-            this.f12857b = uri;
+            this.f11824a = contentResolver;
+            this.f11825b = uri;
         }
 
         public void a() {
-            this.f12856a.registerContentObserver(this.f12857b, false, this);
+            this.f11824a.registerContentObserver(this.f11825b, false, this);
         }
 
         public void b() {
-            this.f12856a.unregisterContentObserver(this);
+            this.f11824a.unregisterContentObserver(this);
         }
 
         @Override // android.database.ContentObserver
         public void onChange(boolean z10) {
             b bVar = b.this;
-            bVar.c(com.google.android.exoplayer2.audio.a.c(bVar.f12847a));
+            bVar.c(com.google.android.exoplayer2.audio.a.c(bVar.f11815a));
         }
     }
 
@@ -122,74 +122,74 @@ public final class b {
         c cVar;
         e eVar;
         Context applicationContext = context.getApplicationContext();
-        this.f12847a = applicationContext;
-        this.f12848b = (f) ne.a.e(fVar);
+        this.f11815a = applicationContext;
+        this.f11816b = (f) ne.a.e(fVar);
         Handler y10 = w0.y();
-        this.f12849c = y10;
-        int i10 = w0.f40158a;
+        this.f11817c = y10;
+        int i10 = w0.f40197a;
         if (i10 >= 23) {
             cVar = new c();
         } else {
             cVar = null;
         }
-        this.f12850d = cVar;
+        this.f11818d = cVar;
         if (i10 >= 21) {
             eVar = new e();
         } else {
             eVar = null;
         }
-        this.f12851e = eVar;
+        this.f11819e = eVar;
         Uri g10 = com.google.android.exoplayer2.audio.a.g();
-        this.f12852f = g10 != null ? new d(y10, applicationContext.getContentResolver(), g10) : null;
+        this.f11820f = g10 != null ? new d(y10, applicationContext.getContentResolver(), g10) : null;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void c(com.google.android.exoplayer2.audio.a aVar) {
-        if (this.f12854h && !aVar.equals(this.f12853g)) {
-            this.f12853g = aVar;
-            this.f12848b.a(aVar);
+        if (this.f11822h && !aVar.equals(this.f11821g)) {
+            this.f11821g = aVar;
+            this.f11816b.a(aVar);
         }
     }
 
     public com.google.android.exoplayer2.audio.a d() {
         c cVar;
-        if (this.f12854h) {
-            return (com.google.android.exoplayer2.audio.a) ne.a.e(this.f12853g);
+        if (this.f11822h) {
+            return (com.google.android.exoplayer2.audio.a) ne.a.e(this.f11821g);
         }
-        this.f12854h = true;
-        d dVar = this.f12852f;
+        this.f11822h = true;
+        d dVar = this.f11820f;
         if (dVar != null) {
             dVar.a();
         }
-        if (w0.f40158a >= 23 && (cVar = this.f12850d) != null) {
-            C0169b.a(this.f12847a, cVar, this.f12849c);
+        if (w0.f40197a >= 23 && (cVar = this.f11818d) != null) {
+            C0150b.a(this.f11815a, cVar, this.f11817c);
         }
         Intent intent = null;
-        if (this.f12851e != null) {
-            intent = this.f12847a.registerReceiver(this.f12851e, new IntentFilter("android.media.action.HDMI_AUDIO_PLUG"), null, this.f12849c);
+        if (this.f11819e != null) {
+            intent = this.f11815a.registerReceiver(this.f11819e, new IntentFilter("android.media.action.HDMI_AUDIO_PLUG"), null, this.f11817c);
         }
-        com.google.android.exoplayer2.audio.a d10 = com.google.android.exoplayer2.audio.a.d(this.f12847a, intent);
-        this.f12853g = d10;
+        com.google.android.exoplayer2.audio.a d10 = com.google.android.exoplayer2.audio.a.d(this.f11815a, intent);
+        this.f11821g = d10;
         return d10;
     }
 
     public void e() {
         c cVar;
-        if (!this.f12854h) {
+        if (!this.f11822h) {
             return;
         }
-        this.f12853g = null;
-        if (w0.f40158a >= 23 && (cVar = this.f12850d) != null) {
-            C0169b.b(this.f12847a, cVar);
+        this.f11821g = null;
+        if (w0.f40197a >= 23 && (cVar = this.f11818d) != null) {
+            C0150b.b(this.f11815a, cVar);
         }
-        BroadcastReceiver broadcastReceiver = this.f12851e;
+        BroadcastReceiver broadcastReceiver = this.f11819e;
         if (broadcastReceiver != null) {
-            this.f12847a.unregisterReceiver(broadcastReceiver);
+            this.f11815a.unregisterReceiver(broadcastReceiver);
         }
-        d dVar = this.f12852f;
+        d dVar = this.f11820f;
         if (dVar != null) {
             dVar.b();
         }
-        this.f12854h = false;
+        this.f11822h = false;
     }
 }

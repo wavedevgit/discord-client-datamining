@@ -12,17 +12,17 @@ import java.util.Set;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f21747a;
+    private final long f20606a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Context f21748b;
+    private final Context f20607b;
 
     /* renamed from: c  reason: collision with root package name */
-    private File f21749c;
+    private File f20608c;
 
     public f(Context context) {
-        this.f21748b = context;
-        this.f21747a = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionCode;
+        this.f20607b = context;
+        this.f20606a = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionCode;
     }
 
     public static void l(File file) {
@@ -90,21 +90,21 @@ public final class f {
     }
 
     private final File v() {
-        if (this.f21749c == null) {
-            Context context = this.f21748b;
+        if (this.f20608c == null) {
+            Context context = this.f20607b;
             if (context != null) {
-                this.f21749c = context.getFilesDir();
+                this.f20608c = context.getFilesDir();
             } else {
                 throw new IllegalStateException("context must be non-null to populate null filesDir");
             }
         }
-        File file = new File(this.f21749c, "splitcompat");
+        File file = new File(this.f20608c, "splitcompat");
         u(file);
         return file;
     }
 
     private final File w() {
-        File file = new File(v(), Long.toString(this.f21747a));
+        File file = new File(v(), Long.toString(this.f20606a));
         u(file);
         return file;
     }
@@ -196,9 +196,9 @@ public final class f {
         String[] list = v10.list();
         if (list != null) {
             for (String str : list) {
-                if (!str.equals(Long.toString(this.f21747a))) {
+                if (!str.equals(Long.toString(this.f20606a))) {
                     File file = new File(v10, str);
-                    Log.d("SplitCompat", "FileStorage: removing directory for different version code (directory = " + file.toString() + ", current version code = " + this.f21747a + ")");
+                    Log.d("SplitCompat", "FileStorage: removing directory for different version code (directory = " + file.toString() + ", current version code = " + this.f20606a + ")");
                     l(file);
                 }
             }

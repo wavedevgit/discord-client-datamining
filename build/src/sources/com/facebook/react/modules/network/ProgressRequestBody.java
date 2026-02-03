@@ -2,9 +2,9 @@ package com.facebook.react.modules.network;
 
 import java.io.FilterOutputStream;
 import java.io.OutputStream;
-import ju.b;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
+import lu.b;
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
 import okio.BufferedSink;
@@ -27,7 +27,7 @@ public final class ProgressRequestBody extends RequestBody {
     }
 
     private final Sink outputStreamSink(BufferedSink bufferedSink) {
-        ju.a a10 = b.a();
+        lu.a a10 = b.a();
         final OutputStream k22 = bufferedSink.k2();
         return a10.d(new FilterOutputStream(k22) { // from class: com.facebook.react.modules.network.ProgressRequestBody$outputStreamSink$1
             private long count;

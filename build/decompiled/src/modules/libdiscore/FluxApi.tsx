@@ -34,4 +34,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.hasFluxApi = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4114, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1616, 2]);

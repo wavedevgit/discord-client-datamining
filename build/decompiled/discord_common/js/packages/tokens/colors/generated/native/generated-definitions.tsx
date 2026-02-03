@@ -845,6 +845,33 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7.category = var9;
     var14 = var8.DARK;
     var13 = {
+        'raw': 'PRIMARY_500',
+        'opacity': 0.16
+    };
+    var7[var14] = var13;
+    var14 = var8.LIGHT;
+    var13 = {
+        'raw': 'PRIMARY_400',
+        'opacity': 0.16
+    };
+    var7[var14] = var13;
+    var14 = var8.MIDNIGHT;
+    var13 = {
+        'raw': 'PLUM_11',
+        'opacity': 0.2
+    };
+    var7[var14] = var13;
+    var14 = var8.DARKER;
+    var13 = {
+        'raw': 'PLUM_11',
+        'opacity': 0.16
+    };
+    var7[var14] = var13;
+    var6.BADGE_BACKGROUND_DEFAULT = var7;
+    var7 = {};
+    var7.category = var9;
+    var14 = var8.DARK;
+    var13 = {
         'raw': 'RED_400',
         'opacity': 1
     };
@@ -868,6 +895,33 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var7[var14] = var13;
     var6.BADGE_NOTIFICATION_BACKGROUND = var7;
+    var7 = {};
+    var7.category = var9;
+    var14 = var8.DARK;
+    var13 = {
+        'raw': 'PRIMARY_230',
+        'opacity': 1
+    };
+    var7[var14] = var13;
+    var14 = var8.LIGHT;
+    var13 = {
+        'raw': 'PRIMARY_600',
+        'opacity': 1
+    };
+    var7[var14] = var13;
+    var14 = var8.MIDNIGHT;
+    var13 = {
+        'raw': 'PLUM_4',
+        'opacity': 1
+    };
+    var7[var14] = var13;
+    var14 = var8.DARKER;
+    var13 = {
+        'raw': 'PLUM_6',
+        'opacity': 1
+    };
+    var7[var14] = var13;
+    var6.BADGE_TEXT_DEFAULT = var7;
     var7 = {};
     var7.category = var11;
     var14 = var8.DARK;

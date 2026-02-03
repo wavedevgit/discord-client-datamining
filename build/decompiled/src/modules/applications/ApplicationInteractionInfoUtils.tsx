@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.canViewInteractionInfo = var3;
     var1 = function arg0() {
-        _fun56254: for (var _fun56254_ip = 0;;) switch (_fun56254_ip) {
+        _fun56312: for (var _fun56312_ip = 0;;) switch (_fun56312_ip) {
             case 0:
                 var3 = arg0;
                 var0 = var3.interactionMetadata;
@@ -39,8 +39,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = undefined;
                 var6 = undefined;
                 if (var1) {
-                    _fun56254_ip = 27;
-                    continue _fun56254
+                    _fun56312_ip = 27;
+                    continue _fun56312
                 }
             case 22:
                 var6 = var0.type;
@@ -54,16 +54,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.APPLICATION_COMMAND;
                 var0 = var6 === var0;
                 if (!var0) {
-                    _fun56254_ip = 122;
-                    continue _fun56254
+                    _fun56312_ip = 122;
+                    continue _fun56312
                 }
             case 68:
                 var3 = var3.interactionMetadata;
                 var6 = var2 == var3;
                 var2 = undefined;
                 if (var6) {
-                    _fun56254_ip = 89;
-                    continue _fun56254
+                    _fun56312_ip = 89;
+                    continue _fun56312
                 }
             case 83:
                 var2 = var3.command_type;
@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isPrimaryEntryPointCommandMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1636, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1645, 2]);

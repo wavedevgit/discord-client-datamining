@@ -8,19 +8,19 @@ import java.util.RandomAccess;
 public abstract class y {
 
     /* renamed from: a  reason: collision with root package name */
-    static final Charset f3886a = Charset.forName("UTF-8");
+    static final Charset f3855a = Charset.forName("UTF-8");
 
     /* renamed from: b  reason: collision with root package name */
-    static final Charset f3887b = Charset.forName("ISO-8859-1");
+    static final Charset f3856b = Charset.forName("ISO-8859-1");
 
     /* renamed from: c  reason: collision with root package name */
-    public static final byte[] f3888c;
+    public static final byte[] f3857c;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final ByteBuffer f3889d;
+    public static final ByteBuffer f3858d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final h f3890e;
+    public static final h f3859e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface a {
@@ -29,18 +29,18 @@ public abstract class y {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface b extends List, RandomAccess {
-        boolean F0();
+        boolean C0();
 
-        b J0(int i10);
+        b E0(int i10);
 
         void N();
     }
 
     static {
         byte[] bArr = new byte[0];
-        f3888c = bArr;
-        f3889d = ByteBuffer.wrap(bArr);
-        f3890e = h.h(bArr);
+        f3857c = bArr;
+        f3858d = ByteBuffer.wrap(bArr);
+        f3859e = h.h(bArr);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -83,7 +83,7 @@ public abstract class y {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Object h(Object obj, Object obj2) {
-        return ((o0) obj).toBuilder().L((o0) obj2).D0();
+        return ((o0) obj).toBuilder().L((o0) obj2).A0();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -95,6 +95,6 @@ public abstract class y {
     }
 
     public static String j(byte[] bArr) {
-        return new String(bArr, f3886a);
+        return new String(bArr, f3855a);
     }
 }

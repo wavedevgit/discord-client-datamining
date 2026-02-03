@@ -6,33 +6,33 @@ import android.os.RemoteException;
 final class j extends th.l0 {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ int f16441e;
+    final /* synthetic */ int f15409e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ String f16442i;
+    final /* synthetic */ String f15410i;
 
     /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ String f16443o;
+    final /* synthetic */ String f15411o;
 
     /* renamed from: p  reason: collision with root package name */
-    final /* synthetic */ int f16444p;
+    final /* synthetic */ int f15412p;
 
     /* renamed from: q  reason: collision with root package name */
-    final /* synthetic */ wg.k f16445q;
+    final /* synthetic */ wg.k f15413q;
 
     /* renamed from: r  reason: collision with root package name */
-    final /* synthetic */ x f16446r;
+    final /* synthetic */ x f15414r;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public j(x xVar, wg.k kVar, int i10, String str, String str2, int i11, wg.k kVar2) {
         super(kVar);
-        this.f16441e = i10;
-        this.f16442i = str;
-        this.f16443o = str2;
-        this.f16444p = i11;
-        this.f16445q = kVar2;
-        this.f16446r = xVar;
+        this.f15409e = i10;
+        this.f15410i = str;
+        this.f15411o = str2;
+        this.f15412p = i11;
+        this.f15413q = kVar2;
+        this.f15414r = xVar;
     }
 
     @Override // th.l0
@@ -42,13 +42,13 @@ final class j extends th.l0 {
         String str;
         Bundle h10;
         try {
-            v0Var = this.f16446r.f16724d;
-            str = this.f16446r.f16721a;
-            Bundle l10 = x.l(this.f16441e, this.f16442i, this.f16443o, this.f16444p);
+            v0Var = this.f15414r.f15692d;
+            str = this.f15414r.f15689a;
+            Bundle l10 = x.l(this.f15409e, this.f15410i, this.f15411o, this.f15412p);
             h10 = x.h();
-            ((th.b0) v0Var.e()).x0(str, l10, h10, new t(this.f16446r, this.f16445q));
+            ((th.b0) v0Var.e()).x0(str, l10, h10, new t(this.f15414r, this.f15413q));
         } catch (RemoteException e10) {
-            k0Var = x.f16719g;
+            k0Var = x.f15687g;
             k0Var.c(e10, "notifyChunkTransferred", new Object[0]);
         }
     }

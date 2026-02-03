@@ -9,31 +9,31 @@ import android.view.ViewParent;
 public abstract class h0 implements View.OnTouchListener, View.OnAttachStateChangeListener {
 
     /* renamed from: d  reason: collision with root package name */
-    private final float f1711d;
+    private final float f1680d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f1712e;
+    private final int f1681e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f1713i;
+    private final int f1682i;
 
     /* renamed from: o  reason: collision with root package name */
-    final View f1714o;
+    final View f1683o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Runnable f1715p;
+    private Runnable f1684p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Runnable f1716q;
+    private Runnable f1685q;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f1717r;
+    private boolean f1686r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f1718s;
+    private int f1687s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final int[] f1719t = new int[2];
+    private final int[] f1688t = new int[2];
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -43,7 +43,7 @@ public abstract class h0 implements View.OnTouchListener, View.OnAttachStateChan
 
         @Override // java.lang.Runnable
         public void run() {
-            ViewParent parent = h0.this.f1714o.getParent();
+            ViewParent parent = h0.this.f1683o.getParent();
             if (parent != null) {
                 parent.requestDisallowInterceptTouchEvent(true);
             }
@@ -63,36 +63,36 @@ public abstract class h0 implements View.OnTouchListener, View.OnAttachStateChan
     }
 
     public h0(View view) {
-        this.f1714o = view;
+        this.f1683o = view;
         view.setLongClickable(true);
         view.addOnAttachStateChangeListener(this);
-        this.f1711d = ViewConfiguration.get(view.getContext()).getScaledTouchSlop();
+        this.f1680d = ViewConfiguration.get(view.getContext()).getScaledTouchSlop();
         int tapTimeout = ViewConfiguration.getTapTimeout();
-        this.f1712e = tapTimeout;
-        this.f1713i = (tapTimeout + ViewConfiguration.getLongPressTimeout()) / 2;
+        this.f1681e = tapTimeout;
+        this.f1682i = (tapTimeout + ViewConfiguration.getLongPressTimeout()) / 2;
     }
 
     private void a() {
-        Runnable runnable = this.f1716q;
+        Runnable runnable = this.f1685q;
         if (runnable != null) {
-            this.f1714o.removeCallbacks(runnable);
+            this.f1683o.removeCallbacks(runnable);
         }
-        Runnable runnable2 = this.f1715p;
+        Runnable runnable2 = this.f1684p;
         if (runnable2 != null) {
-            this.f1714o.removeCallbacks(runnable2);
+            this.f1683o.removeCallbacks(runnable2);
         }
     }
 
     private boolean f(MotionEvent motionEvent) {
         f0 f0Var;
         boolean z10;
-        View view = this.f1714o;
+        View view = this.f1683o;
         k.e b10 = b();
         if (b10 != null && b10.isShowing() && (f0Var = (f0) b10.n()) != null && f0Var.isShown()) {
             MotionEvent obtainNoHistory = MotionEvent.obtainNoHistory(motionEvent);
             i(view, obtainNoHistory);
             j(f0Var, obtainNoHistory);
-            boolean e10 = f0Var.e(obtainNoHistory, this.f1718s);
+            boolean e10 = f0Var.e(obtainNoHistory, this.f1687s);
             obtainNoHistory.recycle();
             int actionMasked = motionEvent.getActionMasked();
             if (actionMasked != 1 && actionMasked != 3) {
@@ -117,7 +117,7 @@ public abstract class h0 implements View.OnTouchListener, View.OnAttachStateChan
     private boolean g(android.view.MotionEvent r6) {
         /*
             r5 = this;
-            android.view.View r0 = r5.f1714o
+            android.view.View r0 = r5.f1683o
             boolean r1 = r0.isEnabled()
             r2 = 0
             if (r1 != 0) goto La
@@ -133,12 +133,12 @@ public abstract class h0 implements View.OnTouchListener, View.OnAttachStateChan
             if (r1 == r6) goto L3d
             goto L6d
         L1a:
-            int r1 = r5.f1718s
+            int r1 = r5.f1687s
             int r1 = r6.findPointerIndex(r1)
             if (r1 < 0) goto L6d
             float r4 = r6.getX(r1)
             float r6 = r6.getY(r1)
-            float r1 = r5.f1711d
+            float r1 = r5.f1680d
             boolean r6 = h(r0, r4, r6, r1)
             if (r6 != 0) goto L6d
             r5.a()
@@ -150,25 +150,25 @@ public abstract class h0 implements View.OnTouchListener, View.OnAttachStateChan
             goto L6d
         L41:
             int r6 = r6.getPointerId(r2)
-            r5.f1718s = r6
-            java.lang.Runnable r6 = r5.f1715p
+            r5.f1687s = r6
+            java.lang.Runnable r6 = r5.f1684p
             if (r6 != 0) goto L52
             androidx.appcompat.widget.h0$a r6 = new androidx.appcompat.widget.h0$a
             r6.<init>()
-            r5.f1715p = r6
+            r5.f1684p = r6
         L52:
-            java.lang.Runnable r6 = r5.f1715p
-            int r1 = r5.f1712e
+            java.lang.Runnable r6 = r5.f1684p
+            int r1 = r5.f1681e
             long r3 = (long) r1
             r0.postDelayed(r6, r3)
-            java.lang.Runnable r6 = r5.f1716q
+            java.lang.Runnable r6 = r5.f1685q
             if (r6 != 0) goto L65
             androidx.appcompat.widget.h0$b r6 = new androidx.appcompat.widget.h0$b
             r6.<init>()
-            r5.f1716q = r6
+            r5.f1685q = r6
         L65:
-            java.lang.Runnable r6 = r5.f1716q
-            int r1 = r5.f1713i
+            java.lang.Runnable r6 = r5.f1685q
+            int r1 = r5.f1682i
             long r3 = (long) r1
             r0.postDelayed(r6, r3)
         L6d:
@@ -186,14 +186,14 @@ public abstract class h0 implements View.OnTouchListener, View.OnAttachStateChan
     }
 
     private boolean i(View view, MotionEvent motionEvent) {
-        int[] iArr = this.f1719t;
+        int[] iArr = this.f1688t;
         view.getLocationOnScreen(iArr);
         motionEvent.offsetLocation(iArr[0], iArr[1]);
         return true;
     }
 
     private boolean j(View view, MotionEvent motionEvent) {
-        int[] iArr = this.f1719t;
+        int[] iArr = this.f1688t;
         view.getLocationOnScreen(iArr);
         motionEvent.offsetLocation(-iArr[0], -iArr[1]);
         return true;
@@ -214,21 +214,21 @@ public abstract class h0 implements View.OnTouchListener, View.OnAttachStateChan
 
     void e() {
         a();
-        View view = this.f1714o;
+        View view = this.f1683o;
         if (view.isEnabled() && !view.isLongClickable() && c()) {
             view.getParent().requestDisallowInterceptTouchEvent(true);
             long uptimeMillis = SystemClock.uptimeMillis();
             MotionEvent obtain = MotionEvent.obtain(uptimeMillis, uptimeMillis, 3, 0.0f, 0.0f, 0);
             view.onTouchEvent(obtain);
             obtain.recycle();
-            this.f1717r = true;
+            this.f1686r = true;
         }
     }
 
     @Override // android.view.View.OnTouchListener
     public boolean onTouch(View view, MotionEvent motionEvent) {
         boolean z10;
-        boolean z11 = this.f1717r;
+        boolean z11 = this.f1686r;
         if (z11) {
             if (!f(motionEvent) && d()) {
                 z10 = false;
@@ -244,11 +244,11 @@ public abstract class h0 implements View.OnTouchListener, View.OnAttachStateChan
             if (z10) {
                 long uptimeMillis = SystemClock.uptimeMillis();
                 MotionEvent obtain = MotionEvent.obtain(uptimeMillis, uptimeMillis, 3, 0.0f, 0.0f, 0);
-                this.f1714o.onTouchEvent(obtain);
+                this.f1683o.onTouchEvent(obtain);
                 obtain.recycle();
             }
         }
-        this.f1717r = z10;
+        this.f1686r = z10;
         if (z10 || z11) {
             return true;
         }
@@ -261,11 +261,11 @@ public abstract class h0 implements View.OnTouchListener, View.OnAttachStateChan
 
     @Override // android.view.View.OnAttachStateChangeListener
     public void onViewDetachedFromWindow(View view) {
-        this.f1717r = false;
-        this.f1718s = -1;
-        Runnable runnable = this.f1715p;
+        this.f1686r = false;
+        this.f1687s = -1;
+        Runnable runnable = this.f1684p;
         if (runnable != null) {
-            this.f1714o.removeCallbacks(runnable);
+            this.f1683o.removeCallbacks(runnable);
         }
     }
 }

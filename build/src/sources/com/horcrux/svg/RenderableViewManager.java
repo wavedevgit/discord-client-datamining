@@ -1667,7 +1667,7 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @ReactProp(name = ViewProps.FONT_SIZE)
         public void setFontSize(U u10, Dynamic dynamic) {
             JavaOnlyMap javaOnlyMap = new JavaOnlyMap();
-            int i10 = a.f17371a[dynamic.getType().ordinal()];
+            int i10 = a.f16339a[dynamic.getType().ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     return;
@@ -1682,7 +1682,7 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
         @ReactProp(name = ViewProps.FONT_WEIGHT)
         public void setFontWeight(U u10, Dynamic dynamic) {
             JavaOnlyMap javaOnlyMap = new JavaOnlyMap();
-            int i10 = a.f17371a[dynamic.getType().ordinal()];
+            int i10 = a.f16339a[dynamic.getType().ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     return;
@@ -4597,17 +4597,17 @@ class RenderableViewManager<T extends RenderableView> extends VirtualViewManager
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f17371a;
+        static final /* synthetic */ int[] f16339a;
 
         static {
             int[] iArr = new int[ReadableType.values().length];
-            f17371a = iArr;
+            f16339a = iArr;
             try {
                 iArr[ReadableType.Number.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f17371a[ReadableType.String.ordinal()] = 2;
+                f16339a[ReadableType.String.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
         }

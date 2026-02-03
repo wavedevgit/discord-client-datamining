@@ -1,52 +1,52 @@
 package net.time4j.calendar;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class m extends kt.e {
+final class m extends mt.e {
 
     /* renamed from: d  reason: collision with root package name */
-    static final m f40343d = new m();
+    static final m f40382d = new m();
     private static final long serialVersionUID = -1117064522468823402L;
 
     private m() {
         super("RELATED_GREGORIAN_YEAR");
     }
 
-    @Override // kt.p
+    @Override // mt.p
     public boolean C() {
         return false;
     }
 
-    @Override // kt.e
+    @Override // mt.e
     protected boolean E() {
         return true;
     }
 
-    @Override // kt.p
+    @Override // mt.p
     /* renamed from: F */
-    public Integer e() {
+    public Integer f() {
         return 999999999;
     }
 
-    @Override // kt.p
+    @Override // mt.p
     /* renamed from: G */
     public Integer A() {
         return -999999999;
     }
 
-    @Override // kt.e, kt.p
+    @Override // mt.e, mt.p
     public char d() {
         return 'r';
     }
 
-    @Override // kt.p
+    @Override // mt.p
     public Class getType() {
         return Integer.class;
     }
 
     protected Object readResolve() {
-        return f40343d;
+        return f40382d;
     }
 
-    @Override // kt.p
+    @Override // mt.p
     public boolean y() {
         return true;
     }

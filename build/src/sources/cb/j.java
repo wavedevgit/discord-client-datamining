@@ -5,16 +5,16 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Collection;
 import java.util.Iterator;
-import jr.e0;
 import kotlin.Pair;
 import kotlin.collections.m0;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.ranges.IntRange;
+import lr.e0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class j {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final j f8045a = new j();
+    public static final j f7032a = new j();
 
     private j() {
     }
@@ -39,7 +39,7 @@ public final class j {
 
     public static final int b(InputStream stream) {
         Intrinsics.checkNotNullParameter(stream, "stream");
-        j jVar = f8045a;
+        j jVar = f7032a;
         return (jVar.e(stream) << 8) | jVar.e(stream);
     }
 
@@ -71,7 +71,7 @@ public final class j {
         try {
             try {
                 stream.read(bArr);
-                jVar = f8045a;
+                jVar = f7032a;
             } catch (IOException e10) {
                 e10.printStackTrace();
             }

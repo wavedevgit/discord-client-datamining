@@ -4,19 +4,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = exports;
     var6 = dependencyMap;
     var4 = function arg0() {
-        _fun23879: for (var _fun23879_ip = 0;;) switch (_fun23879_ip) {
+        _fun23933: for (var _fun23933_ip = 0;;) switch (_fun23933_ip) {
             case 0:
                 var2 = arg0;
                 if (!var2) {
-                    _fun23879_ip = 18;
-                    continue _fun23879
+                    _fun23933_ip = 18;
+                    continue _fun23933
                 }
             case 6:
                 var1 = var2.__esModule;
                 var0 = var2;
                 if (var1) {
-                    _fun23879_ip = 27;
-                    continue _fun23879
+                    _fun23933_ip = 27;
+                    continue _fun23933
                 }
             case 18:
                 var1 = {};
@@ -37,17 +37,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = function arg0() {
         var3 = undefined;
         var1 = undefined;
-        var2 = _closure1_slot0;
+        var2 = _closure1_slot1;
         var4 = var2.default;
         var1 = arguments;
-        var2 = var1;
-        var1 = 1;
-        var1 = var4.bind(var3)(var1, var2);
-        var0 = _closure1_slot1;
-        var2 = var0.default;
-        var1 = arg0;
-        var0 = 5;
-        var0 = var2.bind(var3)(var1, var0);
+        var2 = 1;
+        var1 = var4.bind(var3)(var2, var1);
+        var0 = _closure1_slot0;
+        var1 = var0.default;
+        var0 = arg0;
+        var0 = var1.bind(var3)(var0, var2);
         return var0;
     };
     var1.default = var0;
@@ -66,4 +64,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = arg4;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2565, 2962]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2961, 2574]);

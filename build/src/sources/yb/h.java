@@ -3,34 +3,34 @@ package yb;
 final class h extends n {
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f54180a;
+    private final long f53938a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h(long j10) {
-        this.f54180a = j10;
+        this.f53938a = j10;
     }
 
     @Override // yb.n
     public long c() {
-        return this.f54180a;
+        return this.f53938a;
     }
 
     public boolean equals(Object obj) {
         if (obj == this) {
             return true;
         }
-        if ((obj instanceof n) && this.f54180a == ((n) obj).c()) {
+        if ((obj instanceof n) && this.f53938a == ((n) obj).c()) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        long j10 = this.f54180a;
+        long j10 = this.f53938a;
         return ((int) (j10 ^ (j10 >>> 32))) ^ 1000003;
     }
 
     public String toString() {
-        return "LogResponse{nextRequestWaitMillis=" + this.f54180a + "}";
+        return "LogResponse{nextRequestWaitMillis=" + this.f53938a + "}";
     }
 }

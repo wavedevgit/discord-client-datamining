@@ -5,7 +5,7 @@ import ui.c;
 final class i8 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final i8 f38260a = new i8();
+    static final i8 f38057a = new i8();
 
     static {
         c.b a10 = ui.c.a("cameraId");

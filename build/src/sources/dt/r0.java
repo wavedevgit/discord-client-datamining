@@ -1,74 +1,84 @@
 package dt;
 
-import at.k;
-import java.lang.annotation.Annotation;
+import java.util.List;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.SealedClassSerializer;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.json.Json;
+import kotlin.reflect.KClass;
+import kotlin.reflect.KType;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class r0 {
+final class r0 implements KType {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public /* synthetic */ class a {
+    /* renamed from: d  reason: collision with root package name */
+    private final KType f21006d;
 
-        /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f22461a;
-
-        static {
-            int[] iArr = new int[ct.a.values().length];
-            try {
-                iArr[ct.a.f20795d.ordinal()] = 1;
-            } catch (NoSuchFieldError unused) {
-            }
-            try {
-                iArr[ct.a.f20797i.ordinal()] = 2;
-            } catch (NoSuchFieldError unused2) {
-            }
-            try {
-                iArr[ct.a.f20796e.ordinal()] = 3;
-            } catch (NoSuchFieldError unused3) {
-            }
-            f22461a = iArr;
-        }
+    public r0(KType origin) {
+        Intrinsics.checkNotNullParameter(origin, "origin");
+        this.f21006d = origin;
     }
 
-    public static final /* synthetic */ void a(ys.o oVar, ys.o oVar2, String str) {
-        d(oVar, oVar2, str);
-    }
-
-    public static final void b(at.k kind) {
-        Intrinsics.checkNotNullParameter(kind, "kind");
-        if (!(kind instanceof k.b)) {
-            if (!(kind instanceof at.e)) {
-                if (!(kind instanceof at.d)) {
-                    return;
-                }
-                throw new IllegalStateException("Actual serializer for polymorphic cannot be polymorphic itself");
+    public boolean equals(Object obj) {
+        r0 r0Var;
+        KType kType;
+        KType kType2;
+        if (obj == null) {
+            return false;
+        }
+        KType kType3 = this.f21006d;
+        kotlin.reflect.d dVar = null;
+        if (obj instanceof r0) {
+            r0Var = (r0) obj;
+        } else {
+            r0Var = null;
+        }
+        if (r0Var != null) {
+            kType = r0Var.f21006d;
+        } else {
+            kType = null;
+        }
+        if (!Intrinsics.areEqual(kType3, kType)) {
+            return false;
+        }
+        kotlin.reflect.d classifier = getClassifier();
+        if (classifier instanceof KClass) {
+            if (obj instanceof KType) {
+                kType2 = (KType) obj;
+            } else {
+                kType2 = null;
             }
-            throw new IllegalStateException("Primitives cannot be serialized polymorphically with 'type' parameter. You can use 'JsonBuilder.useArrayPolymorphism' instead");
-        }
-        throw new IllegalStateException("Enums cannot be serialized polymorphically with 'type' parameter. You can use 'JsonBuilder.useArrayPolymorphism' instead");
-    }
-
-    public static final String c(SerialDescriptor serialDescriptor, Json json) {
-        Intrinsics.checkNotNullParameter(serialDescriptor, "<this>");
-        Intrinsics.checkNotNullParameter(json, "json");
-        for (Annotation annotation : serialDescriptor.getAnnotations()) {
-            if (annotation instanceof ct.c) {
-                return ((ct.c) annotation).discriminator();
+            if (kType2 != null) {
+                dVar = kType2.getClassifier();
+            }
+            if (dVar != null && (dVar instanceof KClass)) {
+                return Intrinsics.areEqual(yr.a.b((KClass) classifier), yr.a.b((KClass) dVar));
             }
         }
-        return json.e().e();
+        return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void d(ys.o oVar, ys.o oVar2, String str) {
-        if (!(oVar instanceof SealedClassSerializer) || !bt.q0.a(oVar2.getDescriptor()).contains(str)) {
-            return;
-        }
-        String h10 = ((SealedClassSerializer) oVar).getDescriptor().h();
-        String h11 = oVar2.getDescriptor().h();
-        throw new IllegalStateException(("Sealed class '" + h11 + "' cannot be serialized as base class '" + h10 + "' because it has property name that conflicts with JSON class discriminator '" + str + "'. You can either change class discriminator in JsonConfiguration, rename property with @SerialName annotation or fall back to array polymorphism").toString());
+    @Override // kotlin.reflect.b
+    public List getAnnotations() {
+        return this.f21006d.getAnnotations();
+    }
+
+    @Override // kotlin.reflect.KType
+    public List getArguments() {
+        return this.f21006d.getArguments();
+    }
+
+    @Override // kotlin.reflect.KType
+    public kotlin.reflect.d getClassifier() {
+        return this.f21006d.getClassifier();
+    }
+
+    public int hashCode() {
+        return this.f21006d.hashCode();
+    }
+
+    @Override // kotlin.reflect.KType
+    public boolean isMarkedNullable() {
+        return this.f21006d.isMarkedNullable();
+    }
+
+    public String toString() {
+        return "KTypeWrapper: " + this.f21006d;
     }
 }

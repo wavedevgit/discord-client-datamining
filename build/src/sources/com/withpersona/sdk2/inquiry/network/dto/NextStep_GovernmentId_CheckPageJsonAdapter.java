@@ -50,21 +50,21 @@ public final class NextStep_GovernmentId_CheckPageJsonAdapter extends h {
         String str2 = null;
         String str3 = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
-                    throw tm.c.x("buttonSubmit", "btnSubmit", reader);
+                    throw vm.c.x("buttonSubmit", "btnSubmit", reader);
                 }
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 str2 = (String) this.stringAdapter.fromJson(reader);
                 if (str2 == null) {
-                    throw tm.c.x("buttonRetake", "btnRetake", reader);
+                    throw vm.c.x("buttonRetake", "btnRetake", reader);
                 }
-            } else if (t02 == 2) {
+            } else if (A0 == 2) {
                 str3 = (String) this.nullableStringAdapter.fromJson(reader);
             }
         }
@@ -73,9 +73,9 @@ public final class NextStep_GovernmentId_CheckPageJsonAdapter extends h {
             if (str2 != null) {
                 return new NextStep.GovernmentId.CheckPage(str, str2, str3);
             }
-            throw tm.c.o("buttonRetake", "btnRetake", reader);
+            throw vm.c.o("buttonRetake", "btnRetake", reader);
         }
-        throw tm.c.o("buttonSubmit", "btnSubmit", reader);
+        throw vm.c.o("buttonSubmit", "btnSubmit", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -83,11 +83,11 @@ public final class NextStep_GovernmentId_CheckPageJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (checkPage != null) {
             writer.l();
-            writer.t0("btnSubmit");
+            writer.A0("btnSubmit");
             this.stringAdapter.toJson(writer, checkPage.getButtonSubmit());
-            writer.t0("btnRetake");
+            writer.A0("btnRetake");
             this.stringAdapter.toJson(writer, checkPage.getButtonRetake());
-            writer.t0("titleConfirmCapture");
+            writer.A0("titleConfirmCapture");
             this.nullableStringAdapter.toJson(writer, checkPage.getTitleConfirmCapture());
             writer.E();
             return;

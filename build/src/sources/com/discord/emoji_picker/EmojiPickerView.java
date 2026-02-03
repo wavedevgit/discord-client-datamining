@@ -160,7 +160,7 @@ public final class EmojiPickerView extends RecyclerView implements EmojiPickerCa
         Intrinsics.checkNotNullParameter(onStickyHeaderRender, "onStickyHeaderRender");
         Intrinsics.checkNotNullParameter(onShowNitroUpsell, "onShowNitroUpsell");
         Intrinsics.checkNotNullParameter(config, "config");
-        this.visibilityTracker$delegate = jr.l.b(new Function0() { // from class: com.discord.emoji_picker.o
+        this.visibilityTracker$delegate = lr.l.a(new Function0() { // from class: com.discord.emoji_picker.o
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 EmojiPickerVisibilityTracker visibilityTracker_delegate$lambda$1;
@@ -168,7 +168,7 @@ public final class EmojiPickerView extends RecyclerView implements EmojiPickerCa
                 return visibilityTracker_delegate$lambda$1;
             }
         });
-        this.scroller$delegate = jr.l.b(new Function0() { // from class: com.discord.emoji_picker.p
+        this.scroller$delegate = lr.l.a(new Function0() { // from class: com.discord.emoji_picker.p
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 EmojiPickerScroller scroller_delegate$lambda$5;
@@ -224,21 +224,21 @@ public final class EmojiPickerView extends RecyclerView implements EmojiPickerCa
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit _init_$lambda$7(EmojiPickerView emojiPickerView, Integer num, Integer num2) {
         emojiPickerView.onItemsChanged(num, num2);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit _init_$lambda$8(Function3 function3, EmojiPickerView emojiPickerView, Long l10, String emojiName) {
         Intrinsics.checkNotNullParameter(emojiName, "emojiName");
         function3.invoke(emojiPickerView, l10, emojiName);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit _init_$lambda$9(Function3 function3, EmojiPickerView emojiPickerView, Long l10, String emojiName) {
         Intrinsics.checkNotNullParameter(emojiName, "emojiName");
         function3.invoke(emojiPickerView, l10, emojiName);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     private final void configureMountedChild(View view) {
@@ -274,7 +274,7 @@ public final class EmojiPickerView extends RecyclerView implements EmojiPickerCa
     private final int getSpanSize(EmojiPickerItem emojiPickerItem) {
         if (!(emojiPickerItem instanceof EmojiPickerItem.EmojiPlaceholder) && !(emojiPickerItem instanceof EmojiPickerItem.Emoji)) {
             if (!(emojiPickerItem instanceof EmojiPickerItem.Category) && !(emojiPickerItem instanceof EmojiPickerItem.Spacer) && !(emojiPickerItem instanceof EmojiPickerItem.FooterUpsell) && !(emojiPickerItem instanceof EmojiPickerItem.PremiumInlineRoadblockHeader) && !(emojiPickerItem instanceof EmojiPickerItem.PremiumInlineRoadblockFooter)) {
-                throw new jr.p();
+                throw new lr.p();
             }
             return getTypedLayoutManager().getSpanCount();
         }
@@ -320,18 +320,18 @@ public final class EmojiPickerView extends RecyclerView implements EmojiPickerCa
             ViewMeasureExtensionsKt.measureAndLayout(this);
         } catch (Exception e10) {
             CrashReporting crashReporting = CrashReporting.INSTANCE;
-            Pair a10 = jr.v.a("isInViewTransition", String.valueOf(this.isInViewTransition));
-            Pair a11 = jr.v.a("isAttached", String.valueOf(isAttachedToWindow()));
-            Pair a12 = jr.v.a("wasComputingLayoutBeforeAdapter", String.valueOf(isComputingLayout));
-            Pair a13 = jr.v.a("isComputingLayoutAfterAdapter", String.valueOf(isComputingLayout2));
-            Pair a14 = jr.v.a("isComputingLayoutNow", String.valueOf(isComputingLayout()));
-            Pair a15 = jr.v.a("adapterTypeChange", str2);
+            Pair a10 = lr.v.a("isInViewTransition", String.valueOf(this.isInViewTransition));
+            Pair a11 = lr.v.a("isAttached", String.valueOf(isAttachedToWindow()));
+            Pair a12 = lr.v.a("wasComputingLayoutBeforeAdapter", String.valueOf(isComputingLayout));
+            Pair a13 = lr.v.a("isComputingLayoutAfterAdapter", String.valueOf(isComputingLayout2));
+            Pair a14 = lr.v.a("isComputingLayoutNow", String.valueOf(isComputingLayout()));
+            Pair a15 = lr.v.a("adapterTypeChange", str2);
             String str3 = "null";
-            Pair a16 = jr.v.a(ViewProps.POSITION, (num == null || (r2 = num.toString()) == null) ? "null" : "null");
+            Pair a16 = lr.v.a(ViewProps.POSITION, (num == null || (r2 = num.toString()) == null) ? "null" : "null");
             if (num2 != null && (num3 = num2.toString()) != null) {
                 str3 = num3;
             }
-            CrashReporting.addBreadcrumb$default(crashReporting, "About to crash from EmojiPickerView.", o0.m(a10, a11, a12, a13, a14, a15, a16, jr.v.a("count", str3)), null, null, false, 28, null);
+            CrashReporting.addBreadcrumb$default(crashReporting, "About to crash from EmojiPickerView.", o0.m(a10, a11, a12, a13, a14, a15, a16, lr.v.a("count", str3)), null, null, false, 28, null);
             throw e10;
         }
     }
@@ -366,13 +366,13 @@ public final class EmojiPickerView extends RecyclerView implements EmojiPickerCa
     public static final Unit scroller_delegate$lambda$5$lambda$2(Function2 function2, EmojiPickerView emojiPickerView, EmojiPickerScroller.ScrollEvent scrollEvent) {
         Intrinsics.checkNotNullParameter(scrollEvent, "scrollEvent");
         function2.invoke(emojiPickerView, scrollEvent);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit scroller_delegate$lambda$5$lambda$3(EmojiPickerView emojiPickerView) {
         emojiPickerView.configureMountedChildren();
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -383,7 +383,7 @@ public final class EmojiPickerView extends RecyclerView implements EmojiPickerCa
         } else {
             function22.invoke(emojiPickerView, scrollEvent);
         }
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -401,7 +401,7 @@ public final class EmojiPickerView extends RecyclerView implements EmojiPickerCa
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit visibilityTracker_delegate$lambda$1$lambda$0(Function2 function2, EmojiPickerView emojiPickerView, boolean z10) {
         function2.invoke(emojiPickerView, Boolean.valueOf(z10));
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     @Override // android.view.ViewGroup

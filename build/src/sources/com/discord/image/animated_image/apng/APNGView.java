@@ -7,10 +7,10 @@ import com.discord.image.animated_image.animated_image_utils.AnimatedImageStateM
 import com.discord.image.animated_image.apng.APNGView;
 import com.discord.misc.utilities.coroutines.CoroutineViewUtilsKt;
 import com.linecorp.apng.ApngDrawable;
-import hs.i;
-import hs.m0;
 import java.security.MessageDigest;
 import java.util.Arrays;
+import js.i;
+import js.m0;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
@@ -112,23 +112,23 @@ public final class APNGView extends m {
 
     public static final Unit apngStateManager$lambda$0(APNGView aPNGView) {
         aPNGView.playApngAnimation();
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public static final Unit apngStateManager$lambda$1(APNGView aPNGView) {
         aPNGView.pauseApngAnimation();
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public static final Unit apngStateManager$lambda$2(APNGView aPNGView) {
         aPNGView.stopApngAnimation();
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public static final Unit apngStateManager$lambda$3(APNGView aPNGView, Config config) {
         Intrinsics.checkNotNullParameter(config, "<unused var>");
         recycle$default(aPNGView, false, false, 2, null);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public static final boolean apngStateManager$lambda$4(APNGView aPNGView, Config config) {
@@ -142,7 +142,7 @@ public final class APNGView extends m {
     public static final Unit apngStateManager$lambda$5(APNGView aPNGView, Config config) {
         Intrinsics.checkNotNullParameter(config, "config");
         aPNGView.fetchAPNG(config);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     private final void fetchAPNG(Config config) {

@@ -8,15 +8,15 @@ import rc.u;
 public final class a0 implements n {
 
     /* renamed from: a  reason: collision with root package name */
-    private final n.a f48324a;
+    private final n.a f48633a;
 
     public a0(n.a aVar) {
-        this.f48324a = (n.a) ne.a.e(aVar);
+        this.f48633a = (n.a) ne.a.e(aVar);
     }
 
     @Override // rc.n
     public final UUID a() {
-        return lc.d.f37183a;
+        return lc.d.f36652a;
     }
 
     @Override // rc.n
@@ -36,7 +36,7 @@ public final class a0 implements n {
 
     @Override // rc.n
     public n.a getError() {
-        return this.f48324a;
+        return this.f48633a;
     }
 
     @Override // rc.n

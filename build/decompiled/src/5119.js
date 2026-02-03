@@ -1,20 +1,59 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var0 = module;
-    var1 = function() {
-        var0 = global;
-        var2 = var0.TypeError;
-        var0 = var2.prototype;
-        var1 = Object.create(var0, {
-            constructor: {
-                value: var2
-            }
-        });
-        var3 = 'Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.';
-        var4 = var1;
-        var0 = new var4[var2](var3, var2);
-        var0 = var0 instanceof Object ? var0 : var1;
-        throw var0;
+    var2 = require;
+    var _closure1_slot0 = var2;
+    var2 = dependencyMap;
+    var _closure1_slot1 = var2;
+    var1 = function arg0() {
+        _fun45724: for (var _fun45724_ip = 0;;) switch (_fun45724_ip) {
+            case 0:
+                var4 = arg0;
+                var3 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var0 = 0;
+                var0 = var2[var0];
+                var2 = undefined;
+                var0 = var3.bind(var2)(var0);
+                var0 = var0.bind(var2)(var4);
+                if (var0) {
+                    _fun45724_ip = 60;
+                    continue _fun45724
+                }
+            case 35:
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var3 = 1;
+                var3 = var6[var3];
+                var3 = var5.bind(var2)(var3);
+                var0 = var3.bind(var2)(var4);
+            case 60:
+                if (var0) {
+                    _fun45724_ip = 88;
+                    continue _fun45724
+                }
+            case 63:
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var3 = 2;
+                var3 = var6[var3];
+                var3 = var5.bind(var2)(var3);
+                var0 = var3.bind(var2)(var4);
+            case 88:
+                if (var0) {
+                    _fun45724_ip = 115;
+                    continue _fun45724
+                }
+            case 91:
+                var3 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var1 = 3;
+                var1 = var4[var1];
+                var1 = var3.bind(var2)(var1);
+                var0 = var1.bind(var2)();
+            case 115:
+                return var0;
+        }
     };
     var0.exports = var1;
     var2 = var0.exports;
@@ -25,4 +64,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.default = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5120, 5122, 5123, 5124]);

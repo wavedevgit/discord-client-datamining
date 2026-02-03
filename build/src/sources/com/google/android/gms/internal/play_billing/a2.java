@@ -5,11 +5,11 @@ import java.io.IOException;
 public class a2 extends IOException {
 
     /* renamed from: d  reason: collision with root package name */
-    private v2 f14810d;
+    private v2 f13778d;
 
     public a2(IOException iOException) {
         super(iOException.getMessage(), iOException);
-        this.f14810d = null;
+        this.f13778d = null;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -43,12 +43,12 @@ public class a2 extends IOException {
     }
 
     public final a2 f(v2 v2Var) {
-        this.f14810d = v2Var;
+        this.f13778d = v2Var;
         return this;
     }
 
     public a2(String str) {
         super(str);
-        this.f14810d = null;
+        this.f13778d = null;
     }
 }

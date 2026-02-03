@@ -7,7 +7,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class l {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final l f55547a = new l();
+    public static final l f55685a = new l();
 
     private l() {
     }

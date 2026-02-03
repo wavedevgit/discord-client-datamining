@@ -44,13 +44,13 @@ public final class StepStyles_StepPrimaryButtonComponentStyleJsonAdapter extends
         StepStyles.StepSubmitButtonComponentStyleContainer stepSubmitButtonComponentStyleContainer = null;
         StepStyles.StepSubmitButtonComponentStyleContainer stepSubmitButtonComponentStyleContainer2 = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 stepSubmitButtonComponentStyleContainer = (StepStyles.StepSubmitButtonComponentStyleContainer) this.nullableStepSubmitButtonComponentStyleContainerAdapter.fromJson(reader);
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 stepSubmitButtonComponentStyleContainer2 = (StepStyles.StepSubmitButtonComponentStyleContainer) this.nullableStepSubmitButtonComponentStyleContainerAdapter.fromJson(reader);
             }
         }
@@ -63,9 +63,9 @@ public final class StepStyles_StepPrimaryButtonComponentStyleJsonAdapter extends
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (stepPrimaryButtonComponentStyle != null) {
             writer.l();
-            writer.t0("base");
+            writer.A0("base");
             this.nullableStepSubmitButtonComponentStyleContainerAdapter.toJson(writer, stepPrimaryButtonComponentStyle.getBase());
-            writer.t0("cancelDialogClose");
+            writer.A0("cancelDialogClose");
             this.nullableStepSubmitButtonComponentStyleContainerAdapter.toJson(writer, stepPrimaryButtonComponentStyle.getCancelDialogClose());
             writer.E();
             return;

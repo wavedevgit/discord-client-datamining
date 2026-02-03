@@ -5,30 +5,30 @@ import ui.c;
 final class h2 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final h2 f41126a = new h2();
+    static final h2 f41165a = new h2();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41127b;
+    private static final ui.c f41166b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41128c;
+    private static final ui.c f41167c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41129d;
+    private static final ui.c f41168d;
 
     static {
         c.b a10 = ui.c.a("inferenceCommonLogEvent");
         f fVar = new f();
         fVar.a(1);
-        f41127b = a10.b(fVar.b()).a();
+        f41166b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("options");
         f fVar2 = new f();
         fVar2.a(2);
-        f41128c = a11.b(fVar2.b()).a();
+        f41167c = a11.b(fVar2.b()).a();
         c.b a12 = ui.c.a("imageInfo");
         f fVar3 = new f();
         fVar3.a(3);
-        f41129d = a12.b(fVar3.b()).a();
+        f41168d = a12.b(fVar3.b()).a();
     }
 
     private h2() {

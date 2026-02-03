@@ -5,10 +5,10 @@ import ck.p;
 public final class d extends p {
 
     /* renamed from: c  reason: collision with root package name */
-    private final float f54811c;
+    private final float f54569c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f54812d;
+    private final int f54570d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d(float f10, float f11, float f12) {
@@ -20,8 +20,8 @@ public final class d extends p {
         if (Math.abs(f11 - d()) > f10 || Math.abs(f12 - c()) > f10) {
             return false;
         }
-        float abs = Math.abs(f10 - this.f54811c);
-        if (abs > 1.0f && abs > this.f54811c) {
+        float abs = Math.abs(f10 - this.f54569c);
+        if (abs > 1.0f && abs > this.f54569c) {
             return false;
         }
         return true;
@@ -29,24 +29,24 @@ public final class d extends p {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d g(float f10, float f11, float f12) {
-        int i10 = this.f54812d;
+        int i10 = this.f54570d;
         int i11 = i10 + 1;
         float c10 = (i10 * c()) + f11;
         float f13 = i11;
-        return new d(c10 / f13, ((this.f54812d * d()) + f10) / f13, ((this.f54812d * this.f54811c) + f12) / f13, i11);
+        return new d(c10 / f13, ((this.f54570d * d()) + f10) / f13, ((this.f54570d * this.f54569c) + f12) / f13, i11);
     }
 
     public int h() {
-        return this.f54812d;
+        return this.f54570d;
     }
 
     public float i() {
-        return this.f54811c;
+        return this.f54569c;
     }
 
     private d(float f10, float f11, float f12, int i10) {
         super(f10, f11);
-        this.f54811c = f12;
-        this.f54812d = i10;
+        this.f54569c = f12;
+        this.f54570d = i10;
     }
 }

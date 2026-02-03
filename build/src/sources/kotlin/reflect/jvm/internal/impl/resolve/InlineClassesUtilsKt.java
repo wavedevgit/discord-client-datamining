@@ -27,15 +27,15 @@ import org.jetbrains.annotations.NotNull;
 public final class InlineClassesUtilsKt {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final FqName f35160a;
+    private static final FqName f34550a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ClassId f35161b;
+    private static final ClassId f34551b;
 
     static {
         FqName fqName = new FqName("kotlin.jvm.JvmInline");
-        f35160a = fqName;
-        f35161b = ClassId.Companion.topLevel(fqName);
+        f34550a = fqName;
+        f34551b = ClassId.Companion.topLevel(fqName);
     }
 
     public static final boolean isGetterOfUnderlyingPropertyOfValueClass(@NotNull CallableDescriptor callableDescriptor) {
@@ -61,9 +61,9 @@ public final class InlineClassesUtilsKt {
 
     public static final boolean isInlineClassType(@NotNull KotlinType kotlinType) {
         Intrinsics.checkNotNullParameter(kotlinType, "<this>");
-        ClassifierDescriptor mo1200getDeclarationDescriptor = kotlinType.getConstructor().mo1200getDeclarationDescriptor();
-        if (mo1200getDeclarationDescriptor != null) {
-            return isInlineClass(mo1200getDeclarationDescriptor);
+        ClassifierDescriptor mo1197getDeclarationDescriptor = kotlinType.getConstructor().mo1197getDeclarationDescriptor();
+        if (mo1197getDeclarationDescriptor != null) {
+            return isInlineClass(mo1197getDeclarationDescriptor);
         }
         return false;
     }
@@ -133,17 +133,17 @@ public final class InlineClassesUtilsKt {
 
     public static final boolean isValueClassType(@NotNull KotlinType kotlinType) {
         Intrinsics.checkNotNullParameter(kotlinType, "<this>");
-        ClassifierDescriptor mo1200getDeclarationDescriptor = kotlinType.getConstructor().mo1200getDeclarationDescriptor();
-        if (mo1200getDeclarationDescriptor != null) {
-            return isValueClass(mo1200getDeclarationDescriptor);
+        ClassifierDescriptor mo1197getDeclarationDescriptor = kotlinType.getConstructor().mo1197getDeclarationDescriptor();
+        if (mo1197getDeclarationDescriptor != null) {
+            return isValueClass(mo1197getDeclarationDescriptor);
         }
         return false;
     }
 
     public static final boolean needsMfvcFlattening(@NotNull KotlinType kotlinType) {
         Intrinsics.checkNotNullParameter(kotlinType, "<this>");
-        ClassifierDescriptor mo1200getDeclarationDescriptor = kotlinType.getConstructor().mo1200getDeclarationDescriptor();
-        if (mo1200getDeclarationDescriptor == null || !isMultiFieldValueClass(mo1200getDeclarationDescriptor) || SimpleClassicTypeSystemContext.INSTANCE.isNullableType(kotlinType)) {
+        ClassifierDescriptor mo1197getDeclarationDescriptor = kotlinType.getConstructor().mo1197getDeclarationDescriptor();
+        if (mo1197getDeclarationDescriptor == null || !isMultiFieldValueClass(mo1197getDeclarationDescriptor) || SimpleClassicTypeSystemContext.INSTANCE.isNullableType(kotlinType)) {
             return false;
         }
         return true;
@@ -162,9 +162,9 @@ public final class InlineClassesUtilsKt {
         ClassDescriptor classDescriptor;
         InlineClassRepresentation<SimpleType> inlineClassRepresentation;
         Intrinsics.checkNotNullParameter(kotlinType, "<this>");
-        ClassifierDescriptor mo1200getDeclarationDescriptor = kotlinType.getConstructor().mo1200getDeclarationDescriptor();
-        if (mo1200getDeclarationDescriptor instanceof ClassDescriptor) {
-            classDescriptor = (ClassDescriptor) mo1200getDeclarationDescriptor;
+        ClassifierDescriptor mo1197getDeclarationDescriptor = kotlinType.getConstructor().mo1197getDeclarationDescriptor();
+        if (mo1197getDeclarationDescriptor instanceof ClassDescriptor) {
+            classDescriptor = (ClassDescriptor) mo1197getDeclarationDescriptor;
         } else {
             classDescriptor = null;
         }

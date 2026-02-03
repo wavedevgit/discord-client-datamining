@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = _closure1_slot3;
         var5[1] = var0;
         var2 = function() { // Environment: var0
-            _fun110405: for (var _fun110405_ip = 0;;) switch (_fun110405_ip) {
+            _fun110465: for (var _fun110465_ip = 0;;) switch (_fun110465_ip) {
                 case 0:
                     var1 = _closure1_slot4;
                     var0 = var1.getActivityPanelMode;
@@ -67,8 +67,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var3 == var5;
                     var4 = undefined;
                     if (var0) {
-                        _fun110405_ip = 43;
-                        continue _fun110405
+                        _fun110465_ip = 43;
+                        continue _fun110465
                     }
                 case 38:
                     var4 = var5.applicationId;
@@ -81,8 +81,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var3 != var4;
                     var5 = undefined;
                     if (!var6) {
-                        _fun110405_ip = 87;
-                        continue _fun110405
+                        _fun110465_ip = 87;
+                        continue _fun110465
                     }
                 case 72:
                     var7 = _closure1_slot3;
@@ -93,8 +93,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var3 == var4;
                     var1 = undefined;
                     if (var3) {
-                        _fun110405_ip = 116;
-                        continue _fun110405
+                        _fun110465_ip = 116;
+                        continue _fun110465
                     }
                 case 101:
                     var3 = _closure1_slot4;
@@ -139,4 +139,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3445, 7911, 33, 566, 14186, 14214, 7933, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3454, 7916, 33, 566, 14197, 14225, 7938, 2]);

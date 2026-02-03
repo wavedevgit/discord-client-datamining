@@ -89,4 +89,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isChannelMetadataIntegrityCheckEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1301, 2, 12422]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1301, 2, 12433]);

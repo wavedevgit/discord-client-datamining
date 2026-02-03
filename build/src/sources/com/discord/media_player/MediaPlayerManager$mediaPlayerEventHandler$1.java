@@ -52,6 +52,6 @@ public final class MediaPlayerManager$mediaPlayerEventHandler$1 extends k implem
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaPlayerManager$mediaPlayerEventHandler$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        return ((MediaPlayerManager$mediaPlayerEventHandler$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
     }
 }

@@ -37,197 +37,197 @@ import x3.h;
 public abstract class u {
 
     /* renamed from: o  reason: collision with root package name */
-    public static final c f48170o = new c(null);
+    public static final c f48479o = new c(null);
 
     /* renamed from: a  reason: collision with root package name */
-    protected volatile x3.g f48171a;
+    protected volatile x3.g f48480a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Executor f48172b;
+    private Executor f48481b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Executor f48173c;
+    private Executor f48482c;
 
     /* renamed from: d  reason: collision with root package name */
-    private x3.h f48174d;
+    private x3.h f48483d;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f48176f;
+    private boolean f48485f;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f48177g;
+    private boolean f48486g;
 
     /* renamed from: h  reason: collision with root package name */
-    protected List f48178h;
+    protected List f48487h;
 
     /* renamed from: k  reason: collision with root package name */
-    private r3.c f48181k;
+    private r3.c f48490k;
 
     /* renamed from: m  reason: collision with root package name */
-    private final Map f48183m;
+    private final Map f48492m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final Map f48184n;
+    private final Map f48493n;
 
     /* renamed from: e  reason: collision with root package name */
-    private final o f48175e = g();
+    private final o f48484e = g();
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f48179i = new LinkedHashMap();
+    private Map f48488i = new LinkedHashMap();
 
     /* renamed from: j  reason: collision with root package name */
-    private final ReentrantReadWriteLock f48180j = new ReentrantReadWriteLock();
+    private final ReentrantReadWriteLock f48489j = new ReentrantReadWriteLock();
 
     /* renamed from: l  reason: collision with root package name */
-    private final ThreadLocal f48182l = new ThreadLocal();
+    private final ThreadLocal f48491l = new ThreadLocal();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Context f48185a;
+        private final Context f48494a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Class f48186b;
+        private final Class f48495b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f48187c;
+        private final String f48496c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final List f48188d;
+        private final List f48497d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final List f48189e;
+        private final List f48498e;
 
         /* renamed from: f  reason: collision with root package name */
-        private List f48190f;
+        private List f48499f;
 
         /* renamed from: g  reason: collision with root package name */
-        private Executor f48191g;
+        private Executor f48500g;
 
         /* renamed from: h  reason: collision with root package name */
-        private Executor f48192h;
+        private Executor f48501h;
 
         /* renamed from: i  reason: collision with root package name */
-        private h.c f48193i;
+        private h.c f48502i;
 
         /* renamed from: j  reason: collision with root package name */
-        private boolean f48194j;
+        private boolean f48503j;
 
         /* renamed from: k  reason: collision with root package name */
-        private d f48195k;
+        private d f48504k;
 
         /* renamed from: l  reason: collision with root package name */
-        private Intent f48196l;
+        private Intent f48505l;
 
         /* renamed from: m  reason: collision with root package name */
-        private boolean f48197m;
+        private boolean f48506m;
 
         /* renamed from: n  reason: collision with root package name */
-        private boolean f48198n;
+        private boolean f48507n;
 
         /* renamed from: o  reason: collision with root package name */
-        private long f48199o;
+        private long f48508o;
 
         /* renamed from: p  reason: collision with root package name */
-        private TimeUnit f48200p;
+        private TimeUnit f48509p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final e f48201q;
+        private final e f48510q;
 
         /* renamed from: r  reason: collision with root package name */
-        private Set f48202r;
+        private Set f48511r;
 
         /* renamed from: s  reason: collision with root package name */
-        private Set f48203s;
+        private Set f48512s;
 
         /* renamed from: t  reason: collision with root package name */
-        private String f48204t;
+        private String f48513t;
 
         /* renamed from: u  reason: collision with root package name */
-        private File f48205u;
+        private File f48514u;
 
         /* renamed from: v  reason: collision with root package name */
-        private Callable f48206v;
+        private Callable f48515v;
 
         public a(Context context, Class klass, String str) {
             Intrinsics.checkNotNullParameter(context, "context");
             Intrinsics.checkNotNullParameter(klass, "klass");
-            this.f48185a = context;
-            this.f48186b = klass;
-            this.f48187c = str;
-            this.f48188d = new ArrayList();
-            this.f48189e = new ArrayList();
-            this.f48190f = new ArrayList();
-            this.f48195k = d.AUTOMATIC;
-            this.f48197m = true;
-            this.f48199o = -1L;
-            this.f48201q = new e();
-            this.f48202r = new LinkedHashSet();
+            this.f48494a = context;
+            this.f48495b = klass;
+            this.f48496c = str;
+            this.f48497d = new ArrayList();
+            this.f48498e = new ArrayList();
+            this.f48499f = new ArrayList();
+            this.f48504k = d.AUTOMATIC;
+            this.f48506m = true;
+            this.f48508o = -1L;
+            this.f48510q = new e();
+            this.f48511r = new LinkedHashSet();
         }
 
         public a a(b callback) {
             Intrinsics.checkNotNullParameter(callback, "callback");
-            this.f48188d.add(callback);
+            this.f48497d.add(callback);
             return this;
         }
 
         public a b(s3.b... migrations) {
             Intrinsics.checkNotNullParameter(migrations, "migrations");
-            if (this.f48203s == null) {
-                this.f48203s = new HashSet();
+            if (this.f48512s == null) {
+                this.f48512s = new HashSet();
             }
             for (s3.b bVar : migrations) {
-                Set set = this.f48203s;
+                Set set = this.f48512s;
                 Intrinsics.checkNotNull(set);
-                set.add(Integer.valueOf(bVar.f48766a));
-                Set set2 = this.f48203s;
+                set.add(Integer.valueOf(bVar.f49176a));
+                Set set2 = this.f48512s;
                 Intrinsics.checkNotNull(set2);
-                set2.add(Integer.valueOf(bVar.f48767b));
+                set2.add(Integer.valueOf(bVar.f49177b));
             }
-            this.f48201q.b((s3.b[]) Arrays.copyOf(migrations, migrations.length));
+            this.f48510q.b((s3.b[]) Arrays.copyOf(migrations, migrations.length));
             return this;
         }
 
         public a c() {
-            this.f48194j = true;
+            this.f48503j = true;
             return this;
         }
 
         public u d() {
             int i10;
             int i11;
-            Executor executor = this.f48191g;
-            if (executor == null && this.f48192h == null) {
+            Executor executor = this.f48500g;
+            if (executor == null && this.f48501h == null) {
                 Executor f10 = l.c.f();
-                this.f48192h = f10;
-                this.f48191g = f10;
-            } else if (executor != null && this.f48192h == null) {
-                this.f48192h = executor;
+                this.f48501h = f10;
+                this.f48500g = f10;
+            } else if (executor != null && this.f48501h == null) {
+                this.f48501h = executor;
             } else if (executor == null) {
-                this.f48191g = this.f48192h;
+                this.f48500g = this.f48501h;
             }
-            Set<Number> set = this.f48203s;
+            Set<Number> set = this.f48512s;
             if (set != null) {
                 Intrinsics.checkNotNull(set);
                 for (Number number : set) {
                     int intValue = number.intValue();
-                    if (this.f48202r.contains(Integer.valueOf(intValue))) {
+                    if (this.f48511r.contains(Integer.valueOf(intValue))) {
                         throw new IllegalArgumentException(("Inconsistency detected. A Migration was supplied to addMigration(Migration... migrations) that has a start or end version equal to a start version supplied to fallbackToDestructiveMigrationFrom(int... startVersions). Start version: " + intValue).toString());
                     }
                 }
             }
-            r3.e eVar = this.f48193i;
+            r3.e eVar = this.f48502i;
             if (eVar == null) {
                 eVar = new y3.f();
             }
             if (eVar != null) {
-                if (this.f48199o > 0) {
-                    if (this.f48187c != null) {
-                        long j10 = this.f48199o;
-                        TimeUnit timeUnit = this.f48200p;
+                if (this.f48508o > 0) {
+                    if (this.f48496c != null) {
+                        long j10 = this.f48508o;
+                        TimeUnit timeUnit = this.f48509p;
                         if (timeUnit != null) {
-                            Executor executor2 = this.f48191g;
+                            Executor executor2 = this.f48500g;
                             if (executor2 != null) {
                                 eVar = new r3.e(eVar, new r3.c(j10, timeUnit, executor2));
                             } else {
@@ -240,22 +240,22 @@ public abstract class u {
                         throw new IllegalArgumentException("Cannot create auto-closing database for an in-memory database.");
                     }
                 }
-                String str = this.f48204t;
-                if (str != null || this.f48205u != null || this.f48206v != null) {
-                    if (this.f48187c != null) {
+                String str = this.f48513t;
+                if (str != null || this.f48514u != null || this.f48515v != null) {
+                    if (this.f48496c != null) {
                         int i12 = 0;
                         if (str == null) {
                             i10 = 0;
                         } else {
                             i10 = 1;
                         }
-                        File file = this.f48205u;
+                        File file = this.f48514u;
                         if (file == null) {
                             i11 = 0;
                         } else {
                             i11 = 1;
                         }
-                        Callable callable = this.f48206v;
+                        Callable callable = this.f48515v;
                         if (callable != null) {
                             i12 = 1;
                         }
@@ -273,18 +273,18 @@ public abstract class u {
             }
             z zVar = eVar;
             if (zVar != null) {
-                Context context = this.f48185a;
-                String str2 = this.f48187c;
-                e eVar2 = this.f48201q;
-                List list = this.f48188d;
-                boolean z10 = this.f48194j;
-                d e10 = this.f48195k.e(context);
-                Executor executor3 = this.f48191g;
+                Context context = this.f48494a;
+                String str2 = this.f48496c;
+                e eVar2 = this.f48510q;
+                List list = this.f48497d;
+                boolean z10 = this.f48503j;
+                d e10 = this.f48504k.e(context);
+                Executor executor3 = this.f48500g;
                 if (executor3 != null) {
-                    Executor executor4 = this.f48192h;
+                    Executor executor4 = this.f48501h;
                     if (executor4 != null) {
-                        r3.f fVar = new r3.f(context, str2, zVar, eVar2, list, z10, e10, executor3, executor4, this.f48196l, this.f48197m, this.f48198n, this.f48202r, this.f48204t, this.f48205u, this.f48206v, null, this.f48189e, this.f48190f);
-                        u uVar = (u) t.b(this.f48186b, "_Impl");
+                        r3.f fVar = new r3.f(context, str2, zVar, eVar2, list, z10, e10, executor3, executor4, this.f48505l, this.f48506m, this.f48507n, this.f48511r, this.f48513t, this.f48514u, this.f48515v, null, this.f48498e, this.f48499f);
+                        u uVar = (u) t.b(this.f48495b, "_Impl");
                         uVar.r(fVar);
                         return uVar;
                     }
@@ -296,19 +296,19 @@ public abstract class u {
         }
 
         public a e() {
-            this.f48197m = false;
-            this.f48198n = true;
+            this.f48506m = false;
+            this.f48507n = true;
             return this;
         }
 
         public a f(h.c cVar) {
-            this.f48193i = cVar;
+            this.f48502i = cVar;
             return this;
         }
 
         public a g(Executor executor) {
             Intrinsics.checkNotNullParameter(executor, "executor");
-            this.f48191g = executor;
+            this.f48500g = executor;
             return this;
         }
     }
@@ -366,12 +366,12 @@ public abstract class u {
     public static class e {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Map f48211a = new LinkedHashMap();
+        private final Map f48520a = new LinkedHashMap();
 
         private final void a(s3.b bVar) {
-            int i10 = bVar.f48766a;
-            int i11 = bVar.f48767b;
-            Map map = this.f48211a;
+            int i10 = bVar.f49176a;
+            int i11 = bVar.f49177b;
+            Map map = this.f48520a;
             Integer valueOf = Integer.valueOf(i10);
             Object obj = map.get(valueOf);
             if (obj == null) {
@@ -396,7 +396,7 @@ public abstract class u {
                 } else if (i10 <= i11) {
                     return list;
                 }
-                TreeMap treeMap = (TreeMap) this.f48211a.get(Integer.valueOf(i10));
+                TreeMap treeMap = (TreeMap) this.f48520a.get(Integer.valueOf(i10));
                 if (treeMap == null) {
                     return null;
                 }
@@ -472,7 +472,7 @@ public abstract class u {
         }
 
         public Map f() {
-            return this.f48211a;
+            return this.f48520a;
         }
     }
 
@@ -515,8 +515,8 @@ public abstract class u {
     public u() {
         Map synchronizedMap = Collections.synchronizedMap(new LinkedHashMap());
         Intrinsics.checkNotNullExpressionValue(synchronizedMap, "synchronizedMap(mutableMapOf())");
-        this.f48183m = synchronizedMap;
-        this.f48184n = new LinkedHashMap();
+        this.f48492m = synchronizedMap;
+        this.f48493n = new LinkedHashMap();
     }
 
     private final Object B(Class cls, x3.h hVar) {
@@ -535,7 +535,7 @@ public abstract class u {
         x3.g writableDatabase = m().getWritableDatabase();
         l().t(writableDatabase);
         if (writableDatabase.d2()) {
-            writableDatabase.j0();
+            writableDatabase.i0();
         } else {
             writableDatabase.D();
         }
@@ -543,7 +543,7 @@ public abstract class u {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void t() {
-        m().getWritableDatabase().u0();
+        m().getWritableDatabase().s0();
         if (!q()) {
             l().l();
         }
@@ -560,25 +560,25 @@ public abstract class u {
     }
 
     public void A() {
-        m().getWritableDatabase().h0();
+        m().getWritableDatabase().g0();
     }
 
     public void c() {
-        if (this.f48176f || !v()) {
+        if (this.f48485f || !v()) {
             return;
         }
         throw new IllegalStateException("Cannot access database on the main thread since it may potentially lock the UI for a long period of time.");
     }
 
     public void d() {
-        if (!q() && this.f48182l.get() != null) {
+        if (!q() && this.f48491l.get() != null) {
             throw new IllegalStateException("Cannot access database on a different coroutine context inherited from a suspending transaction.");
         }
     }
 
     public void e() {
         c();
-        r3.c cVar = this.f48181k;
+        r3.c cVar = this.f48490k;
         if (cVar == null) {
             s();
         } else {
@@ -598,7 +598,7 @@ public abstract class u {
     protected abstract x3.h h(r3.f fVar);
 
     public void i() {
-        r3.c cVar = this.f48181k;
+        r3.c cVar = this.f48490k;
         if (cVar == null) {
             t();
         } else {
@@ -612,17 +612,17 @@ public abstract class u {
     }
 
     public final Lock k() {
-        ReentrantReadWriteLock.ReadLock readLock = this.f48180j.readLock();
+        ReentrantReadWriteLock.ReadLock readLock = this.f48489j.readLock();
         Intrinsics.checkNotNullExpressionValue(readLock, "readWriteLock.readLock()");
         return readLock;
     }
 
     public o l() {
-        return this.f48175e;
+        return this.f48484e;
     }
 
     public x3.h m() {
-        x3.h hVar = this.f48174d;
+        x3.h hVar = this.f48483d;
         if (hVar == null) {
             Intrinsics.throwUninitializedPropertyAccessException("internalOpenHelper");
             return null;
@@ -631,7 +631,7 @@ public abstract class u {
     }
 
     public Executor n() {
-        Executor executor = this.f48172b;
+        Executor executor = this.f48481b;
         if (executor == null) {
             Intrinsics.throwUninitializedPropertyAccessException("internalQueryExecutor");
             return null;
@@ -654,7 +654,7 @@ public abstract class u {
     public void r(r3.f configuration) {
         boolean z10;
         Intrinsics.checkNotNullParameter(configuration, "configuration");
-        this.f48174d = h(configuration);
+        this.f48483d = h(configuration);
         Set o10 = o();
         BitSet bitSet = new BitSet();
         Iterator it = o10.iterator();
@@ -662,11 +662,11 @@ public abstract class u {
             int i10 = -1;
             if (it.hasNext()) {
                 Class cls = (Class) it.next();
-                int size = configuration.f48111r.size() - 1;
+                int size = configuration.f48420r.size() - 1;
                 if (size >= 0) {
                     while (true) {
                         int i11 = size - 1;
-                        if (cls.isAssignableFrom(configuration.f48111r.get(size).getClass())) {
+                        if (cls.isAssignableFrom(configuration.f48420r.get(size).getClass())) {
                             bitSet.set(size);
                             i10 = size;
                             break;
@@ -678,12 +678,12 @@ public abstract class u {
                     }
                 }
                 if (i10 >= 0) {
-                    this.f48179i.put(cls, configuration.f48111r.get(i10));
+                    this.f48488i.put(cls, configuration.f48420r.get(i10));
                 } else {
                     throw new IllegalArgumentException(("A required auto migration spec (" + cls.getCanonicalName() + ") is missing in the database configuration.").toString());
                 }
             } else {
-                int size2 = configuration.f48111r.size() - 1;
+                int size2 = configuration.f48420r.size() - 1;
                 if (size2 >= 0) {
                     while (true) {
                         int i12 = size2 - 1;
@@ -697,9 +697,9 @@ public abstract class u {
                         }
                     }
                 }
-                for (s3.b bVar : j(this.f48179i)) {
-                    if (!configuration.f48097d.c(bVar.f48766a, bVar.f48767b)) {
-                        configuration.f48097d.b(bVar);
+                for (s3.b bVar : j(this.f48488i)) {
+                    if (!configuration.f48406d.c(bVar.f49176a, bVar.f49177b)) {
+                        configuration.f48406d.b(bVar);
                     }
                 }
                 y yVar = (y) B(y.class, m());
@@ -708,23 +708,23 @@ public abstract class u {
                 }
                 r3.d dVar = (r3.d) B(r3.d.class, m());
                 if (dVar != null) {
-                    this.f48181k = dVar.f48067e;
-                    l().o(dVar.f48067e);
+                    this.f48490k = dVar.f48376e;
+                    l().o(dVar.f48376e);
                 }
-                if (configuration.f48100g == d.WRITE_AHEAD_LOGGING) {
+                if (configuration.f48409g == d.WRITE_AHEAD_LOGGING) {
                     z10 = true;
                 } else {
                     z10 = false;
                 }
                 m().setWriteAheadLoggingEnabled(z10);
-                this.f48178h = configuration.f48098e;
-                this.f48172b = configuration.f48101h;
-                this.f48173c = new c0(configuration.f48102i);
-                this.f48176f = configuration.f48099f;
-                this.f48177g = z10;
-                if (configuration.f48103j != null) {
-                    if (configuration.f48095b != null) {
-                        l().p(configuration.f48094a, configuration.f48095b, configuration.f48103j);
+                this.f48487h = configuration.f48407e;
+                this.f48481b = configuration.f48410h;
+                this.f48482c = new c0(configuration.f48411i);
+                this.f48485f = configuration.f48408f;
+                this.f48486g = z10;
+                if (configuration.f48412j != null) {
+                    if (configuration.f48404b != null) {
+                        l().p(configuration.f48403a, configuration.f48404b, configuration.f48412j);
                     } else {
                         throw new IllegalArgumentException("Required value was null.");
                     }
@@ -734,11 +734,11 @@ public abstract class u {
                 for (Map.Entry entry : p10.entrySet()) {
                     Class cls2 = (Class) entry.getKey();
                     for (Class cls3 : (List) entry.getValue()) {
-                        int size3 = configuration.f48110q.size() - 1;
+                        int size3 = configuration.f48419q.size() - 1;
                         if (size3 >= 0) {
                             while (true) {
                                 int i13 = size3 - 1;
-                                if (cls3.isAssignableFrom(configuration.f48110q.get(size3).getClass())) {
+                                if (cls3.isAssignableFrom(configuration.f48419q.get(size3).getClass())) {
                                     bitSet2.set(size3);
                                     break;
                                 } else if (i13 < 0) {
@@ -750,13 +750,13 @@ public abstract class u {
                         }
                         size3 = -1;
                         if (size3 >= 0) {
-                            this.f48184n.put(cls3, configuration.f48110q.get(size3));
+                            this.f48493n.put(cls3, configuration.f48419q.get(size3));
                         } else {
                             throw new IllegalArgumentException(("A required type converter (" + cls3 + ") for " + cls2.getCanonicalName() + " is missing in the database configuration.").toString());
                         }
                     }
                 }
-                int size4 = configuration.f48110q.size() - 1;
+                int size4 = configuration.f48419q.size() - 1;
                 if (size4 < 0) {
                     return;
                 }
@@ -769,7 +769,7 @@ public abstract class u {
                             return;
                         }
                     } else {
-                        throw new IllegalArgumentException("Unexpected type converter " + configuration.f48110q.get(size4) + ". Annotate TypeConverter class with @ProvidedTypeConverter annotation or remove this converter from the builder.");
+                        throw new IllegalArgumentException("Unexpected type converter " + configuration.f48419q.get(size4) + ". Annotate TypeConverter class with @ProvidedTypeConverter annotation or remove this converter from the builder.");
                     }
                 }
             }
@@ -792,11 +792,11 @@ public abstract class u {
     public boolean w() {
         Boolean bool;
         boolean isOpen;
-        r3.c cVar = this.f48181k;
+        r3.c cVar = this.f48490k;
         if (cVar != null) {
             isOpen = cVar.l();
         } else {
-            x3.g gVar = this.f48171a;
+            x3.g gVar = this.f48480a;
             if (gVar != null) {
                 isOpen = gVar.isOpen();
             } else {
@@ -815,7 +815,7 @@ public abstract class u {
         if (cancellationSignal != null) {
             return m().getWritableDatabase().J(query, cancellationSignal);
         }
-        return m().getWritableDatabase().S0(query);
+        return m().getWritableDatabase().Q0(query);
     }
 
     public Object z(Callable body) {

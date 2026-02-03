@@ -8,25 +8,25 @@ import kotlin.jvm.internal.Intrinsics;
 public final class Metadata {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f20438a;
+    private final String f19420a;
 
     public Metadata(String str) {
-        this.f20438a = str;
+        this.f19420a = str;
     }
 
     public final String a() {
-        return this.f20438a;
+        return this.f19420a;
     }
 
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof Metadata) && Intrinsics.areEqual(this.f20438a, ((Metadata) obj).f20438a);
+        return (obj instanceof Metadata) && Intrinsics.areEqual(this.f19420a, ((Metadata) obj).f19420a);
     }
 
     public int hashCode() {
-        String str = this.f20438a;
+        String str = this.f19420a;
         if (str == null) {
             return 0;
         }
@@ -34,7 +34,7 @@ public final class Metadata {
     }
 
     public String toString() {
-        String str = this.f20438a;
+        String str = this.f19420a;
         return "Metadata(oneTimeLinkCode=" + str + ")";
     }
 }

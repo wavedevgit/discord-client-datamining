@@ -1,7 +1,7 @@
 package com.discord.misc.utilities.coroutines;
 
-import hs.j1;
-import hs.m0;
+import js.j1;
+import js.m0;
 import kotlin.Metadata;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.i;
@@ -11,6 +11,6 @@ import org.jetbrains.annotations.NotNull;
 public final class MainImmediateScopeKt {
     @NotNull
     public static final CoroutineScope MainImmediateScope() {
-        return i.a(j1.b(null, 1, null).Z0(m0.c().f2()));
+        return i.a(j1.b(null, 1, null).V0(m0.c().f2()));
     }
 }

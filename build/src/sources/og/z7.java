@@ -5,23 +5,23 @@ import ui.c;
 final class z7 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final z7 f43957a = new z7();
+    static final z7 f43757a = new z7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43958b;
+    private static final ui.c f43758b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43959c;
+    private static final ui.c f43759c;
 
     static {
         c.b a10 = ui.c.a("language");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43958b = a10.b(s1Var.b()).a();
+        f43758b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("inferenceCommonLogEvent");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43959c = a11.b(s1Var2.b()).a();
+        f43759c = a11.b(s1Var2.b()).a();
     }
 
     private z7() {

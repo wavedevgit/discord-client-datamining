@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var3;
     var3 = var6.memo;
     var1 = function arg0() {
-        _fun74235: for (var _fun74235_ip = 0;;) switch (_fun74235_ip) {
+        _fun74345: for (var _fun74345_ip = 0;;) switch (_fun74345_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.onClickSuggestion;
@@ -104,8 +104,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 0;
                 var0 = null;
                 if (!(var1 !== var2)) {
-                    _fun74235_ip = 290;
-                    continue _fun74235
+                    _fun74345_ip = 290;
+                    continue _fun74345
                 }
             case 95:
                 var3 = _closure1_slot6;
@@ -198,4 +198,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 9189, 33, 1297, 671, 566, 3932, 1234, 4075, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 9208, 33, 1297, 671, 566, 3941, 1234, 4084, 2]);

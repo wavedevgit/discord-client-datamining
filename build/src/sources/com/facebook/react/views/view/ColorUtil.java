@@ -13,7 +13,7 @@ public final class ColorUtil {
     }
 
     private final int clamp255(double d10) {
-        return Math.max(0, Math.min((int) SetSpanOperation.SPAN_MAX_PRIORITY, yr.a.b(d10)));
+        return Math.max(0, Math.min((int) SetSpanOperation.SPAN_MAX_PRIORITY, as.a.b(d10)));
     }
 
     public static final int normalize(double d10, double d11, double d12, double d13) {

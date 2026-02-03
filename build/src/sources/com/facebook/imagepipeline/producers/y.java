@@ -8,35 +8,35 @@ import java.util.Map;
 public class y implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final la.w f11609a;
+    private final la.w f10577a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final la.k f11610b;
+    private final la.k f10578b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final w0 f11611c;
+    private final w0 f10579c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static class a extends s {
 
         /* renamed from: c  reason: collision with root package name */
-        private final la.w f11612c;
+        private final la.w f10580c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final CacheKey f11613d;
+        private final CacheKey f10581d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final boolean f11614e;
+        private final boolean f10582e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final boolean f11615f;
+        private final boolean f10583f;
 
         public a(Consumer consumer, la.w wVar, CacheKey cacheKey, boolean z10, boolean z11) {
             super(consumer);
-            this.f11612c = wVar;
-            this.f11613d = cacheKey;
-            this.f11614e = z10;
-            this.f11615f = z11;
+            this.f10580c = wVar;
+            this.f10581d = cacheKey;
+            this.f10582e = z10;
+            this.f10583f = z11;
         }
 
         @Override // com.facebook.imagepipeline.producers.c
@@ -47,11 +47,11 @@ public class y implements w0 {
                 if (ya.b.d()) {
                     ya.b.a("EncodedMemoryCacheProducer#onNewResultImpl");
                 }
-                if (!c.e(i10) && kVar != null && !c.l(i10, 10) && kVar.L() != fa.c.f24095d) {
+                if (!c.e(i10) && kVar != null && !c.l(i10, 10) && kVar.L() != fa.c.f23687d) {
                     CloseableReference x10 = kVar.x();
                     if (x10 != null) {
-                        if (this.f11615f && this.f11614e) {
-                            closeableReference = this.f11612c.c(this.f11613d, x10);
+                        if (this.f10583f && this.f10582e) {
+                            closeableReference = this.f10580c.c(this.f10581d, x10);
                         } else {
                             closeableReference = null;
                         }
@@ -91,9 +91,9 @@ public class y implements w0 {
     }
 
     public y(la.w wVar, la.k kVar, w0 w0Var) {
-        this.f11609a = wVar;
-        this.f11610b = kVar;
-        this.f11611c = w0Var;
+        this.f10577a = wVar;
+        this.f10578b = kVar;
+        this.f10579c = w0Var;
     }
 
     @Override // com.facebook.imagepipeline.producers.w0
@@ -106,10 +106,10 @@ public class y implements w0 {
             }
             y0 F = producerContext.F();
             F.d(producerContext, "EncodedMemoryCacheProducer");
-            CacheKey encodedCacheKey = this.f11610b.getEncodedCacheKey(producerContext.V(), producerContext.a());
+            CacheKey encodedCacheKey = this.f10578b.getEncodedCacheKey(producerContext.V(), producerContext.a());
             Map map2 = null;
             if (producerContext.V().isCacheEnabled(4)) {
-                closeableReference = this.f11609a.get(encodedCacheKey);
+                closeableReference = this.f10577a.get(encodedCacheKey);
             } else {
                 closeableReference = null;
             }
@@ -128,7 +128,7 @@ public class y implements w0 {
                 if (ya.b.d()) {
                     ya.b.b();
                 }
-            } else if (producerContext.F0().d() >= ImageRequest.RequestLevel.ENCODED_MEMORY_CACHE.d()) {
+            } else if (producerContext.E0().d() >= ImageRequest.RequestLevel.ENCODED_MEMORY_CACHE.d()) {
                 if (F.f(producerContext, "EncodedMemoryCacheProducer")) {
                     map = o8.f.of("cached_value_found", "false");
                 } else {
@@ -143,12 +143,12 @@ public class y implements w0 {
                     ya.b.b();
                 }
             } else {
-                a aVar = new a(consumer, this.f11609a, encodedCacheKey, producerContext.V().isCacheEnabled(8), producerContext.l().G().D());
+                a aVar = new a(consumer, this.f10577a, encodedCacheKey, producerContext.V().isCacheEnabled(8), producerContext.l().G().D());
                 if (F.f(producerContext, "EncodedMemoryCacheProducer")) {
                     map2 = o8.f.of("cached_value_found", "false");
                 }
                 F.j(producerContext, "EncodedMemoryCacheProducer", map2);
-                this.f11611c.b(aVar, producerContext);
+                this.f10579c.b(aVar, producerContext);
                 CloseableReference.N(closeableReference);
                 if (ya.b.d()) {
                     ya.b.b();

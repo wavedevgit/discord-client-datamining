@@ -6,19 +6,19 @@ import java.util.Map;
 public final class n3 implements Map.Entry, Comparable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Comparable f14964d;
+    private final Comparable f13932d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Object f14965e;
+    private Object f13933e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ t3 f14966i;
+    final /* synthetic */ t3 f13934i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n3(t3 t3Var, Comparable comparable, Object obj) {
-        this.f14966i = t3Var;
-        this.f14964d = comparable;
-        this.f14965e = obj;
+        this.f13934i = t3Var;
+        this.f13932d = comparable;
+        this.f13933e = obj;
     }
 
     private static final boolean d(Object obj, Object obj2) {
@@ -32,12 +32,12 @@ public final class n3 implements Map.Entry, Comparable {
     }
 
     public final Comparable a() {
-        return this.f14964d;
+        return this.f13932d;
     }
 
     @Override // java.lang.Comparable
     public final /* bridge */ /* synthetic */ int compareTo(Object obj) {
-        return this.f14964d.compareTo(((n3) obj).f14964d);
+        return this.f13932d.compareTo(((n3) obj).f13932d);
     }
 
     @Override // java.util.Map.Entry
@@ -49,7 +49,7 @@ public final class n3 implements Map.Entry, Comparable {
             return false;
         }
         Map.Entry entry = (Map.Entry) obj;
-        if (d(this.f14964d, entry.getKey()) && d(this.f14965e, entry.getValue())) {
+        if (d(this.f13932d, entry.getKey()) && d(this.f13933e, entry.getValue())) {
             return true;
         }
         return false;
@@ -57,25 +57,25 @@ public final class n3 implements Map.Entry, Comparable {
 
     @Override // java.util.Map.Entry
     public final /* synthetic */ Object getKey() {
-        return this.f14964d;
+        return this.f13932d;
     }
 
     @Override // java.util.Map.Entry
     public final Object getValue() {
-        return this.f14965e;
+        return this.f13933e;
     }
 
     @Override // java.util.Map.Entry
     public final int hashCode() {
         int hashCode;
-        Comparable comparable = this.f14964d;
+        Comparable comparable = this.f13932d;
         int i10 = 0;
         if (comparable == null) {
             hashCode = 0;
         } else {
             hashCode = comparable.hashCode();
         }
-        Object obj = this.f14965e;
+        Object obj = this.f13933e;
         if (obj != null) {
             i10 = obj.hashCode();
         }
@@ -84,15 +84,15 @@ public final class n3 implements Map.Entry, Comparable {
 
     @Override // java.util.Map.Entry
     public final Object setValue(Object obj) {
-        this.f14966i.n();
-        Object obj2 = this.f14965e;
-        this.f14965e = obj;
+        this.f13934i.n();
+        Object obj2 = this.f13933e;
+        this.f13933e = obj;
         return obj2;
     }
 
     public final String toString() {
-        String valueOf = String.valueOf(this.f14964d);
-        String valueOf2 = String.valueOf(this.f14965e);
+        String valueOf = String.valueOf(this.f13932d);
+        String valueOf2 = String.valueOf(this.f13933e);
         return valueOf + "=" + valueOf2;
     }
 }

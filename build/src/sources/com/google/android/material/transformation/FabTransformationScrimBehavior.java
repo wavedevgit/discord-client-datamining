@@ -19,52 +19,52 @@ import zg.h;
 public class FabTransformationScrimBehavior extends ExpandableTransformationBehavior {
 
     /* renamed from: i  reason: collision with root package name */
-    private final h f16294i;
+    private final h f15262i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final h f16295o;
+    private final h f15263o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends AnimatorListenerAdapter {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ boolean f16296a;
+        final /* synthetic */ boolean f15264a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ View f16297b;
+        final /* synthetic */ View f15265b;
 
         a(boolean z10, View view) {
-            this.f16296a = z10;
-            this.f16297b = view;
+            this.f15264a = z10;
+            this.f15265b = view;
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            if (!this.f16296a) {
-                this.f16297b.setVisibility(4);
+            if (!this.f15264a) {
+                this.f15265b.setVisibility(4);
             }
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationStart(Animator animator) {
-            if (this.f16296a) {
-                this.f16297b.setVisibility(0);
+            if (this.f15264a) {
+                this.f15265b.setVisibility(0);
             }
         }
     }
 
     public FabTransformationScrimBehavior() {
-        this.f16294i = new h(75L, 150L);
-        this.f16295o = new h(0L, 150L);
+        this.f15262i = new h(75L, 150L);
+        this.f15263o = new h(0L, 150L);
     }
 
     private void O(View view, boolean z10, boolean z11, List list, List list2) {
         h hVar;
         ObjectAnimator ofFloat;
         if (z10) {
-            hVar = this.f16294i;
+            hVar = this.f15262i;
         } else {
-            hVar = this.f16295o;
+            hVar = this.f15263o;
         }
         if (z10) {
             if (!z11) {
@@ -100,7 +100,7 @@ public class FabTransformationScrimBehavior extends ExpandableTransformationBeha
 
     public FabTransformationScrimBehavior(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f16294i = new h(75L, 150L);
-        this.f16295o = new h(0L, 150L);
+        this.f15262i = new h(75L, 150L);
+        this.f15263o = new h(0L, 150L);
     }
 }

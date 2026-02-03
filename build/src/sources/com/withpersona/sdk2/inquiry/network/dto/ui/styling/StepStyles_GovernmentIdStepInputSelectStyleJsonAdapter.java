@@ -43,11 +43,11 @@ public final class StepStyles_GovernmentIdStepInputSelectStyleJsonAdapter extend
         reader.r();
         StepStyles.InputSelectStyleContainer inputSelectStyleContainer = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 inputSelectStyleContainer = (StepStyles.InputSelectStyleContainer) this.nullableInputSelectStyleContainerAdapter.fromJson(reader);
             }
         }
@@ -60,7 +60,7 @@ public final class StepStyles_GovernmentIdStepInputSelectStyleJsonAdapter extend
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepInputSelectStyle != null) {
             writer.l();
-            writer.t0("base");
+            writer.A0("base");
             this.nullableInputSelectStyleContainerAdapter.toJson(writer, governmentIdStepInputSelectStyle.getBase());
             writer.E();
             return;

@@ -12,28 +12,28 @@ import java.util.Iterator;
 public final class g0 extends androidx.lifecycle.n0 {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final ViewModelProvider.Factory f4297i = new a();
+    private static final ViewModelProvider.Factory f4266i = new a();
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f4301e;
+    private final boolean f4270e;
 
     /* renamed from: b  reason: collision with root package name */
-    private final HashMap f4298b = new HashMap();
+    private final HashMap f4267b = new HashMap();
 
     /* renamed from: c  reason: collision with root package name */
-    private final HashMap f4299c = new HashMap();
+    private final HashMap f4268c = new HashMap();
 
     /* renamed from: d  reason: collision with root package name */
-    private final HashMap f4300d = new HashMap();
+    private final HashMap f4269d = new HashMap();
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f4302f = false;
+    private boolean f4271f = false;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f4303g = false;
+    private boolean f4272g = false;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f4304h = false;
+    private boolean f4273h = false;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements ViewModelProvider.Factory {
@@ -48,33 +48,33 @@ public final class g0 extends androidx.lifecycle.n0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g0(boolean z10) {
-        this.f4301e = z10;
+        this.f4270e = z10;
     }
 
     private void h(String str, boolean z10) {
-        g0 g0Var = (g0) this.f4299c.get(str);
+        g0 g0Var = (g0) this.f4268c.get(str);
         if (g0Var != null) {
             if (z10) {
                 ArrayList arrayList = new ArrayList();
-                arrayList.addAll(g0Var.f4299c.keySet());
+                arrayList.addAll(g0Var.f4268c.keySet());
                 Iterator it = arrayList.iterator();
                 while (it.hasNext()) {
                     g0Var.g((String) it.next(), true);
                 }
             }
             g0Var.d();
-            this.f4299c.remove(str);
+            this.f4268c.remove(str);
         }
-        ViewModelStore viewModelStore = (ViewModelStore) this.f4300d.get(str);
+        ViewModelStore viewModelStore = (ViewModelStore) this.f4269d.get(str);
         if (viewModelStore != null) {
             viewModelStore.a();
-            this.f4300d.remove(str);
+            this.f4269d.remove(str);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static g0 k(ViewModelStore viewModelStore) {
-        return (g0) new ViewModelProvider(viewModelStore, f4297i).a(g0.class);
+        return (g0) new ViewModelProvider(viewModelStore, f4266i).a(g0.class);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -83,17 +83,17 @@ public final class g0 extends androidx.lifecycle.n0 {
         if (FragmentManager.O0(3)) {
             Log.d("FragmentManager", "onCleared called for " + this);
         }
-        this.f4302f = true;
+        this.f4271f = true;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void e(Fragment fragment) {
-        if (this.f4304h) {
+        if (this.f4273h) {
             if (FragmentManager.O0(2)) {
                 Log.v("FragmentManager", "Ignoring addRetainedFragment as the state is already saved");
             }
-        } else if (!this.f4298b.containsKey(fragment.mWho)) {
-            this.f4298b.put(fragment.mWho, fragment);
+        } else if (!this.f4267b.containsKey(fragment.mWho)) {
+            this.f4267b.put(fragment.mWho, fragment);
             if (FragmentManager.O0(2)) {
                 Log.v("FragmentManager", "Updating retained Fragments: Added " + fragment);
             }
@@ -106,7 +106,7 @@ public final class g0 extends androidx.lifecycle.n0 {
         }
         if (obj != null && g0.class == obj.getClass()) {
             g0 g0Var = (g0) obj;
-            if (this.f4298b.equals(g0Var.f4298b) && this.f4299c.equals(g0Var.f4299c) && this.f4300d.equals(g0Var.f4300d)) {
+            if (this.f4267b.equals(g0Var.f4267b) && this.f4268c.equals(g0Var.f4268c) && this.f4269d.equals(g0Var.f4269d)) {
                 return true;
             }
         }
@@ -130,20 +130,20 @@ public final class g0 extends androidx.lifecycle.n0 {
     }
 
     public int hashCode() {
-        return (((this.f4298b.hashCode() * 31) + this.f4299c.hashCode()) * 31) + this.f4300d.hashCode();
+        return (((this.f4267b.hashCode() * 31) + this.f4268c.hashCode()) * 31) + this.f4269d.hashCode();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Fragment i(String str) {
-        return (Fragment) this.f4298b.get(str);
+        return (Fragment) this.f4267b.get(str);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g0 j(Fragment fragment) {
-        g0 g0Var = (g0) this.f4299c.get(fragment.mWho);
+        g0 g0Var = (g0) this.f4268c.get(fragment.mWho);
         if (g0Var == null) {
-            g0 g0Var2 = new g0(this.f4301e);
-            this.f4299c.put(fragment.mWho, g0Var2);
+            g0 g0Var2 = new g0(this.f4270e);
+            this.f4268c.put(fragment.mWho, g0Var2);
             return g0Var2;
         }
         return g0Var;
@@ -151,15 +151,15 @@ public final class g0 extends androidx.lifecycle.n0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Collection l() {
-        return new ArrayList(this.f4298b.values());
+        return new ArrayList(this.f4267b.values());
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public ViewModelStore m(Fragment fragment) {
-        ViewModelStore viewModelStore = (ViewModelStore) this.f4300d.get(fragment.mWho);
+        ViewModelStore viewModelStore = (ViewModelStore) this.f4269d.get(fragment.mWho);
         if (viewModelStore == null) {
             ViewModelStore viewModelStore2 = new ViewModelStore();
-            this.f4300d.put(fragment.mWho, viewModelStore2);
+            this.f4269d.put(fragment.mWho, viewModelStore2);
             return viewModelStore2;
         }
         return viewModelStore;
@@ -167,41 +167,41 @@ public final class g0 extends androidx.lifecycle.n0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean n() {
-        return this.f4302f;
+        return this.f4271f;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void o(Fragment fragment) {
-        if (this.f4304h) {
+        if (this.f4273h) {
             if (FragmentManager.O0(2)) {
                 Log.v("FragmentManager", "Ignoring removeRetainedFragment as the state is already saved");
             }
-        } else if (this.f4298b.remove(fragment.mWho) != null && FragmentManager.O0(2)) {
+        } else if (this.f4267b.remove(fragment.mWho) != null && FragmentManager.O0(2)) {
             Log.v("FragmentManager", "Updating retained Fragments: Removed " + fragment);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void p(boolean z10) {
-        this.f4304h = z10;
+        this.f4273h = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean q(Fragment fragment) {
-        if (!this.f4298b.containsKey(fragment.mWho)) {
+        if (!this.f4267b.containsKey(fragment.mWho)) {
             return true;
         }
-        if (this.f4301e) {
-            return this.f4302f;
+        if (this.f4270e) {
+            return this.f4271f;
         }
-        return !this.f4303g;
+        return !this.f4272g;
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder("FragmentManagerViewModel{");
         sb2.append(Integer.toHexString(System.identityHashCode(this)));
         sb2.append("} Fragments (");
-        Iterator it = this.f4298b.values().iterator();
+        Iterator it = this.f4267b.values().iterator();
         while (it.hasNext()) {
             sb2.append(it.next());
             if (it.hasNext()) {
@@ -209,7 +209,7 @@ public final class g0 extends androidx.lifecycle.n0 {
             }
         }
         sb2.append(") Child Non Config (");
-        Iterator it2 = this.f4299c.keySet().iterator();
+        Iterator it2 = this.f4268c.keySet().iterator();
         while (it2.hasNext()) {
             sb2.append((String) it2.next());
             if (it2.hasNext()) {
@@ -217,7 +217,7 @@ public final class g0 extends androidx.lifecycle.n0 {
             }
         }
         sb2.append(") ViewModelStores (");
-        Iterator it3 = this.f4300d.keySet().iterator();
+        Iterator it3 = this.f4269d.keySet().iterator();
         while (it3.hasNext()) {
             sb2.append((String) it3.next());
             if (it3.hasNext()) {

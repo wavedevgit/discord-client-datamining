@@ -5,21 +5,21 @@ import org.jetbrains.annotations.NotNull;
 public abstract class TypeRefinementSupport {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f35748a;
+    private final boolean f35138a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Enabled extends TypeRefinementSupport {
 
         /* renamed from: b  reason: collision with root package name */
-        private final KotlinTypeRefiner f35749b;
+        private final KotlinTypeRefiner f35139b;
 
         @NotNull
         public final KotlinTypeRefiner getTypeRefiner() {
-            return this.f35749b;
+            return this.f35139b;
         }
     }
 
     public final boolean isEnabled() {
-        return this.f35748a;
+        return this.f35138a;
     }
 }

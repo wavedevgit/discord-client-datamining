@@ -73,8 +73,8 @@ public class ReadableNativeArray extends NativeArray implements ReadableArray {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public ReadableNativeArray() {
-        jr.o oVar = jr.o.f32181d;
-        this.localArray$delegate = jr.l.a(oVar, new Function0() { // from class: com.facebook.react.bridge.t
+        lr.o oVar = lr.o.f37119d;
+        this.localArray$delegate = lr.l.b(oVar, new Function0() { // from class: com.facebook.react.bridge.t
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Object[] localArray_delegate$lambda$0;
@@ -82,7 +82,7 @@ public class ReadableNativeArray extends NativeArray implements ReadableArray {
                 return localArray_delegate$lambda$0;
             }
         });
-        this.localTypeArray$delegate = jr.l.a(oVar, new Function0() { // from class: com.facebook.react.bridge.u
+        this.localTypeArray$delegate = lr.l.b(oVar, new Function0() { // from class: com.facebook.react.bridge.u
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 ReadableType[] localTypeArray_delegate$lambda$1;
@@ -232,7 +232,7 @@ public class ReadableNativeArray extends NativeArray implements ReadableArray {
                     arrayList.add(obj);
                     break;
                 default:
-                    throw new jr.p();
+                    throw new lr.p();
             }
         }
         return arrayList;

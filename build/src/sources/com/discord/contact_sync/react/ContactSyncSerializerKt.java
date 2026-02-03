@@ -1,8 +1,5 @@
 package com.discord.contact_sync.react;
 
-import bt.f;
-import bt.n2;
-import bt.u0;
 import com.discord.contact_sync.ContactSyncBlobEntry;
 import com.discord.contact_sync.ContactSyncPayloadEntry;
 import com.discord.contact_sync.ContactSyncProvider;
@@ -13,6 +10,9 @@ import com.facebook.react.bridge.BaseJavaModule;
 import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactContext;
+import dt.f;
+import dt.n2;
+import dt.u0;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Locale;
@@ -66,7 +66,7 @@ public final class ContactSyncSerializerKt {
                     return serializeHasContactPermissionsResult$lambda$0;
                 }
             }, null, 4, null));
-            return Unit.f33074a;
+            return Unit.f32464a;
         }
         return null;
     }
@@ -90,9 +90,9 @@ public final class ContactSyncSerializerKt {
         Intrinsics.checkNotNullParameter(callback, "callback");
         try {
             Map<String, ContactSyncBlobEntry> contactsMap = ContactSyncProvider.INSTANCE.getContactsMap(reactContext);
-            Json.a aVar = Json.f36186d;
+            Json.a aVar = Json.f35576d;
             aVar.a();
-            String c10 = aVar.c(new u0(n2.f7662a, ContactSyncBlobEntry.Companion.serializer()), contactsMap);
+            String c10 = aVar.c(new u0(n2.f20978a, ContactSyncBlobEntry.Companion.serializer()), contactsMap);
             Collection<ContactSyncBlobEntry> values = contactsMap.values();
             ArrayList arrayList = new ArrayList(CollectionsKt.w(values, 10));
             for (ContactSyncBlobEntry contactSyncBlobEntry : values) {

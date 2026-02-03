@@ -1,47 +1,44 @@
 package zo;
 
-import kotlin.enums.EnumEntries;
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+import java.util.List;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c {
+public final class c implements cn.f, ym.g {
+
+    /* renamed from: b  reason: collision with root package name */
+    private final Object f56114b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final List f56115c;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final c f55942d = new c("Dg1", 0);
+    private final String f56116d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final c f55943e = new c("Dg2", 1);
+    private final Object f56117e;
 
-    /* renamed from: i  reason: collision with root package name */
-    public static final c f55944i = new c("Dg14", 2);
-
-    /* renamed from: o  reason: collision with root package name */
-    public static final c f55945o = new c("Sod", 3);
-
-    /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ c[] f55946p;
-
-    /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f55947q;
-
-    static {
-        c[] a10 = a();
-        f55946p = a10;
-        f55947q = qr.a.a(a10);
+    public c(Object baseScreen, List modals, String compatibilityKey) {
+        Intrinsics.checkNotNullParameter(baseScreen, "baseScreen");
+        Intrinsics.checkNotNullParameter(modals, "modals");
+        Intrinsics.checkNotNullParameter(compatibilityKey, "compatibilityKey");
+        this.f56114b = baseScreen;
+        this.f56115c = modals;
+        this.f56116d = compatibilityKey;
+        this.f56117e = baseScreen;
     }
 
-    private c(String str, int i10) {
+    @Override // cn.f
+    public List a() {
+        return this.f56115c;
     }
 
-    private static final /* synthetic */ c[] a() {
-        return new c[]{f55942d, f55943e, f55944i, f55945o};
+    @Override // cn.f
+    public Object b() {
+        return this.f56117e;
     }
 
-    public static c valueOf(String str) {
-        return (c) Enum.valueOf(c.class, str);
-    }
-
-    public static c[] values() {
-        return (c[]) f55946p.clone();
+    @Override // ym.g
+    public String c() {
+        return this.f56116d;
     }
 }

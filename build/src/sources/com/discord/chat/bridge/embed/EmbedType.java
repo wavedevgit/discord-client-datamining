@@ -1,18 +1,18 @@
 package com.discord.chat.bridge.embed;
 
-import bt.e0;
+import at.m;
+import dt.e0;
 import java.lang.annotation.Annotation;
-import jr.l;
-import jr.o;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.enums.EnumEntries;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.serialization.KSerializer;
+import lr.l;
+import lr.o;
 import org.jetbrains.annotations.NotNull;
 import org.webrtc.MediaStreamTrack;
-import ys.m;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 @m
@@ -68,9 +68,9 @@ public final class EmbedType {
     static {
         EmbedType[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = qr.a.a($values);
+        $ENTRIES = sr.a.a($values);
         Companion = new Companion(null);
-        $cachedSerializer$delegate = l.a(o.f32182e, new Function0() { // from class: com.discord.chat.bridge.embed.h
+        $cachedSerializer$delegate = l.b(o.f37120e, new Function0() { // from class: com.discord.chat.bridge.embed.h
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _init_$_anonymous_;

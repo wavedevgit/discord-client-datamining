@@ -6,20 +6,20 @@ import kotlin.jvm.functions.Function1;
 public class b implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final TypeEnhancementInfo f34164d;
+    private final TypeEnhancementInfo f33554d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final JavaTypeQualifiers[] f34165e;
+    private final JavaTypeQualifiers[] f33555e;
 
     public b(TypeEnhancementInfo typeEnhancementInfo, JavaTypeQualifiers[] javaTypeQualifiersArr) {
-        this.f34164d = typeEnhancementInfo;
-        this.f34165e = javaTypeQualifiersArr;
+        this.f33554d = typeEnhancementInfo;
+        this.f33555e = javaTypeQualifiersArr;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         JavaTypeQualifiers d10;
-        d10 = AbstractSignatureParts.d(this.f34164d, this.f34165e, ((Number) obj).intValue());
+        d10 = AbstractSignatureParts.d(this.f33554d, this.f33555e, ((Number) obj).intValue());
         return d10;
     }
 }

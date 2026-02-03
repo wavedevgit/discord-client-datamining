@@ -95,7 +95,7 @@ public final class ForumPostActionBar extends MessageAccessory {
         }
         if (obj instanceof ForumPostActionBar) {
             ForumPostActionBar forumPostActionBar = (ForumPostActionBar) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, forumPostActionBar.messageId) && Intrinsics.areEqual(this.postActions, forumPostActionBar.postActions) && Intrinsics.areEqual(this.reactions, forumPostActionBar.reactions) && this.canAddNewReactions == forumPostActionBar.canAddNewReactions && Intrinsics.areEqual(this.addNewReactionAccessibilityLabel, forumPostActionBar.addNewReactionAccessibilityLabel) && Intrinsics.areEqual(this.reactionsTheme, forumPostActionBar.reactionsTheme);
+            return MessageId.m1089equalsimpl0(this.messageId, forumPostActionBar.messageId) && Intrinsics.areEqual(this.postActions, forumPostActionBar.postActions) && Intrinsics.areEqual(this.reactions, forumPostActionBar.reactions) && this.canAddNewReactions == forumPostActionBar.canAddNewReactions && Intrinsics.areEqual(this.addNewReactionAccessibilityLabel, forumPostActionBar.addNewReactionAccessibilityLabel) && Intrinsics.areEqual(this.reactionsTheme, forumPostActionBar.reactionsTheme);
         }
         return false;
     }
@@ -130,22 +130,22 @@ public final class ForumPostActionBar extends MessageAccessory {
     }
 
     public int hashCode() {
-        int m1091hashCodeimpl = ((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.postActions.hashCode()) * 31;
+        int m1090hashCodeimpl = ((MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.postActions.hashCode()) * 31;
         List<MessageReaction> list = this.reactions;
-        int hashCode = (((((m1091hashCodeimpl + (list == null ? 0 : list.hashCode())) * 31) + Boolean.hashCode(this.canAddNewReactions)) * 31) + this.addNewReactionAccessibilityLabel.hashCode()) * 31;
+        int hashCode = (((((m1090hashCodeimpl + (list == null ? 0 : list.hashCode())) * 31) + Boolean.hashCode(this.canAddNewReactions)) * 31) + this.addNewReactionAccessibilityLabel.hashCode()) * 31;
         ReactionsTheme reactionsTheme = this.reactionsTheme;
         return hashCode + (reactionsTheme != null ? reactionsTheme.hashCode() : 0);
     }
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         ForumPostActions forumPostActions = this.postActions;
         List<MessageReaction> list = this.reactions;
         boolean z10 = this.canAddNewReactions;
         String str = this.addNewReactionAccessibilityLabel;
         ReactionsTheme reactionsTheme = this.reactionsTheme;
-        return "ForumPostActionBar(messageId=" + m1093toStringimpl + ", postActions=" + forumPostActions + ", reactions=" + list + ", canAddNewReactions=" + z10 + ", addNewReactionAccessibilityLabel=" + str + ", reactionsTheme=" + reactionsTheme + ")";
+        return "ForumPostActionBar(messageId=" + m1092toStringimpl + ", postActions=" + forumPostActions + ", reactions=" + list + ", canAddNewReactions=" + z10 + ", addNewReactionAccessibilityLabel=" + str + ", reactionsTheme=" + reactionsTheme + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

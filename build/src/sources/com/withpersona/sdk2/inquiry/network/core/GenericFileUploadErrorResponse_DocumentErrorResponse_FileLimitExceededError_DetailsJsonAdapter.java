@@ -28,8 +28,8 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_FileLimi
     public GenericFileUploadErrorResponse.DocumentErrorResponse.FileLimitExceededError.Details fromJson(@NotNull m mVar) {
         mVar.r();
         while (mVar.hasNext()) {
-            if (mVar.t0(this.options) == -1) {
-                mVar.F0();
+            if (mVar.A0(this.options) == -1) {
+                mVar.E0();
                 mVar.P();
             }
         }

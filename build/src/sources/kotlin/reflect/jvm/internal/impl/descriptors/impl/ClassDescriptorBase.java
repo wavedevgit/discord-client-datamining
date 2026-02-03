@@ -10,13 +10,13 @@ import org.jetbrains.annotations.NotNull;
 public abstract class ClassDescriptorBase extends AbstractClassDescriptor {
 
     /* renamed from: p  reason: collision with root package name */
-    private final DeclarationDescriptor f33491p;
+    private final DeclarationDescriptor f32881p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final SourceElement f33492q;
+    private final SourceElement f32882q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final boolean f33493r;
+    private final boolean f32883r;
 
     /* JADX INFO: Access modifiers changed from: protected */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -34,9 +34,9 @@ public abstract class ClassDescriptorBase extends AbstractClassDescriptor {
         if (sourceElement == null) {
             a(3);
         }
-        this.f33491p = declarationDescriptor;
-        this.f33492q = sourceElement;
-        this.f33493r = z10;
+        this.f32881p = declarationDescriptor;
+        this.f32882q = sourceElement;
+        this.f32883r = z10;
     }
 
     private static /* synthetic */ void a(int i10) {
@@ -73,7 +73,7 @@ public abstract class ClassDescriptorBase extends AbstractClassDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorNonRoot, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor
     @NotNull
     public DeclarationDescriptor getContainingDeclaration() {
-        DeclarationDescriptor declarationDescriptor = this.f33491p;
+        DeclarationDescriptor declarationDescriptor = this.f32881p;
         if (declarationDescriptor == null) {
             a(4);
         }
@@ -83,7 +83,7 @@ public abstract class ClassDescriptorBase extends AbstractClassDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorWithSource
     @NotNull
     public SourceElement getSource() {
-        SourceElement sourceElement = this.f33492q;
+        SourceElement sourceElement = this.f32882q;
         if (sourceElement == null) {
             a(5);
         }
@@ -91,6 +91,6 @@ public abstract class ClassDescriptorBase extends AbstractClassDescriptor {
     }
 
     public boolean isExternal() {
-        return this.f33493r;
+        return this.f32883r;
     }
 }

@@ -53,21 +53,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getMobileStatusContainerRect = var3;
     var1 = function arg0() {
-        _fun49056: for (var _fun49056_ip = 0;;) switch (_fun49056_ip) {
+        _fun49114: for (var _fun49114_ip = 0;;) switch (_fun49114_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot1;
                 var1 = var1.SMALL;
                 if (!(var1 !== var2)) {
-                    _fun49056_ip = 54;
-                    continue _fun49056
+                    _fun49114_ip = 54;
+                    continue _fun49114
                 }
             case 20:
                 var1 = _closure1_slot1;
                 var1 = var1.XSMALL;
                 if (!(var1 !== var2)) {
-                    _fun49056_ip = 54;
-                    continue _fun49056
+                    _fun49114_ip = 54;
+                    continue _fun49114
                 }
             case 34:
                 var0 = _closure1_slot1;
@@ -75,8 +75,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = 28;
                 var1 = 6;
                 if (!(var0 === var2)) {
-                    _fun49056_ip = 60;
-                    continue _fun49056
+                    _fun49114_ip = 60;
+                    continue _fun49114
                 }
             case 54:
                 var5 = 22;
@@ -97,4 +97,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getStatusTypingDimensions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5448, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5453, 2]);

@@ -3,26 +3,26 @@ package lg;
 final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f37421a;
+    private final Object f36890a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object f37422b;
+    private final Object f36891b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Object f37423c;
+    private final Object f36892c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g(Object obj, Object obj2, Object obj3) {
-        this.f37421a = obj;
-        this.f37422b = obj2;
-        this.f37423c = obj3;
+        this.f36890a = obj;
+        this.f36891b = obj2;
+        this.f36892c = obj3;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final IllegalArgumentException a() {
-        Object obj = this.f37423c;
-        Object obj2 = this.f37422b;
-        Object obj3 = this.f37421a;
+        Object obj = this.f36892c;
+        Object obj2 = this.f36891b;
+        Object obj3 = this.f36890a;
         String valueOf = String.valueOf(obj3);
         String valueOf2 = String.valueOf(obj2);
         String valueOf3 = String.valueOf(obj3);

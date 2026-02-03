@@ -1,175 +1,235 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var4.bind(var5)(var1, var0, var3);
-    var0 = undefined;
-    var1.default = var0;
-    var3 = {};
-    var4 = {
-        'one': 'minder dan een seconde',
-        'other': 'minder dan {{count}} seconden'
-    };
-    var3.lessThanXSeconds = var4;
-    var4 = {
-        'one': '1 seconde',
-        'other': '{{count}} seconden'
-    };
-    var3.xSeconds = var4;
-    var4 = 'een halve minuut';
-    var3.halfAMinute = var4;
-    var4 = {
-        'one': 'minder dan een minuut',
-        'other': 'minder dan {{count}} minuten'
-    };
-    var3.lessThanXMinutes = var4;
-    var4 = {
-        'one': 'een minuut',
-        'other': '{{count}} minuten'
-    };
-    var3.xMinutes = var4;
-    var4 = {
-        'one': 'ongeveer 1 uur',
-        'other': 'ongeveer {{count}} uur'
-    };
-    var3.aboutXHours = var4;
-    var4 = {
-        'one': '1 uur',
-        'other': '{{count}} uur'
-    };
-    var3.xHours = var4;
-    var4 = {
-        'one': '1 dag',
-        'other': '{{count}} dagen'
-    };
-    var3.xDays = var4;
-    var4 = {
-        'one': 'ongeveer 1 week',
-        'other': 'ongeveer {{count}} weken'
-    };
-    var3.aboutXWeeks = var4;
-    var4 = {
-        'one': '1 week',
-        'other': '{{count}} weken'
-    };
-    var3.xWeeks = var4;
-    var4 = {
-        'one': 'ongeveer 1 maand',
-        'other': 'ongeveer {{count}} maanden'
-    };
-    var3.aboutXMonths = var4;
-    var4 = {
-        'one': '1 maand',
-        'other': '{{count}} maanden'
-    };
-    var3.xMonths = var4;
-    var4 = {
-        'one': 'ongeveer 1 jaar',
-        'other': 'ongeveer {{count}} jaar'
-    };
-    var3.aboutXYears = var4;
-    var4 = {
-        'one': '1 jaar',
-        'other': '{{count}} jaar'
-    };
-    var3.xYears = var4;
-    var4 = {
-        'one': 'meer dan 1 jaar',
-        'other': 'meer dan {{count}} jaar'
-    };
-    var3.overXYears = var4;
-    var4 = {
-        'one': 'bijna 1 jaar',
-        'other': 'bijna {{count}} jaar'
-    };
-    var3.almostXYears = var4;
-    var _closure1_slot0 = var3;
-    var2 = function arg0, arg1, arg2() {
-        _fun22107: for (var _fun22107_ip = 0;;) switch (_fun22107_ip) {
-            case 0:
-                var7 = arg1;
-                var1 = arg2;
-                var2 = _closure1_slot0;
-                var0 = arg0;
-                var2 = var2[var0];
-                var4 = 'string';
-                var0 = typeof var2;
-                var3 = var2;
-                if (!(var4 !== var0)) {
-                    _fun22107_ip = 90;
-                    continue _fun22107
+    _fun22165: for (var _fun22165_ip = 0;;) switch (_fun22165_ip) {
+        case 0:
+            var1 = exports;
+            var0 = global;
+            var4 = var0.Object;
+            var3 = var4.defineProperty;
+            var2 = {};
+            var0 = true;
+            var2.value = var0;
+            var0 = '__esModule';
+            var0 = var3.bind(var4)(var1, var0, var2);
+            var0 = undefined;
+            var1.default = var0;
+            var3 = dependencyMap;
+            var2 = 0;
+            var3 = var3[var2];
+            var2 = require;
+            var4 = var2.bind(var0)(var3);
+            if (!var4) {
+                _fun22165_ip = 77;
+                continue _fun22165
+            }
+        case 65:
+            var2 = var4.__esModule;
+            var3 = var4;
+            if (var2) {
+                _fun22165_ip = 86;
+                continue _fun22165
+            }
+        case 77:
+            var2 = {};
+            var2.default = var4;
+            var3 = var2;
+        case 86:
+            var2 = {};
+            var4 = function arg0, arg1() {
+                _fun22166: for (var _fun22166_ip = 0;;) switch (_fun22166_ip) {
+                    case 0:
+                        var5 = arg1;
+                        var0 = global;
+                        var3 = var0.Number;
+                        var2 = undefined;
+                        var1 = arg0;
+                        var1 = var3.bind(var2)(var1);
+                        var4 = var0.String;
+                        var3 = null;
+                        var6 = var3 == var5;
+                        var3 = undefined;
+                        if (var6) {
+                            _fun22166_ip = 44;
+                            continue _fun22166
+                        }
+                    case 38:
+                        var3 = var5.unit;
+                    case 44:
+                        var4 = var4.bind(var2)(var3);
+                        var3 = 'minute';
+                        if (!(var3 !== var4)) {
+                            _fun22166_ip = 97;
+                            continue _fun22166
+                        }
+                    case 57:
+                        var3 = 'second';
+                        if (!(var3 !== var4)) {
+                            _fun22166_ip = 97;
+                            continue _fun22166
+                        }
+                    case 65:
+                        var3 = 'date';
+                        if (!(var3 !== var4)) {
+                            _fun22166_ip = 85;
+                            continue _fun22166
+                        }
+                    case 73:
+                        var3 = '번째';
+                        var3 = var1 + var3;
+                        return var3;
+                    case 85:
+                        var3 = '일';
+                        var3 = var1 + var3;
+                        return var3;
+                    case 97:
+                        var0 = var0.String;
+                        var0 = var0.bind(var2)(var1);
+                        return var0;
                 }
-            case 34:
+            };
+            var2.ordinalNumber = var4;
+            var6 = var3.default;
+            var4 = {};
+            var5 = {};
+            var8 = ['BC', 'AD'];
+            var5.narrow = var8;
+            var8 = ['BC', 'AD'];
+            var5.abbreviated = var8;
+            var8 = ['기원전', '서기'];
+            var5.wide = var8;
+            var4.values = var5;
+            var5 = 'wide';
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.era = var4;
+            var6 = var3.default;
+            var4 = {};
+            var8 = {};
+            var9 = ['1', '2', '3', '4'];
+            var8.narrow = var9;
+            var9 = ['Q1', 'Q2', 'Q3', 'Q4'];
+            var8.abbreviated = var9;
+            var9 = ['1분기', '2분기', '3분기', '4분기'];
+            var8.wide = var9;
+            var4.values = var8;
+            var4.defaultWidth = var5;
+            var7 = function arg0() {
+                var1 = arg0;
                 var0 = 1;
-                if (!(var0 !== var7)) {
-                    _fun22107_ip = 81;
-                    continue _fun22107
-                }
-            case 41:
-                var6 = var2.other;
-                var5 = var6.replace;
-                var0 = global;
-                var4 = var0.String;
-                var0 = undefined;
-                var4 = var4.bind(var0)(var7);
-                var0 = '{{count}}';
-                var0 = var5.bind(var6)(var0, var4);
-                _fun22107_ip = 87;
-                continue _fun22107;
-            case 81:
-                var0 = var2.one;
-            case 87:
-                var3 = var0;
-            case 90:
-                var2 = null;
-                var0 = var3;
-                if (!(var2 != var1)) {
-                    _fun22107_ip = 157;
-                    continue _fun22107
-                }
-            case 99:
-                var2 = var1.addSuffix;
-                var0 = var3;
-                if (!var2) {
-                    _fun22107_ip = 157;
-                    continue _fun22107
-                }
-            case 111:
-                var2 = var1.comparison;
-                if (!var2) {
-                    _fun22107_ip = 132;
-                    continue _fun22107
-                }
-            case 120:
-                var2 = var1.comparison;
-                var1 = 0;
-                if (!(!(var2 > var1))) {
-                    _fun22107_ip = 144;
-                    continue _fun22107
-                }
-            case 132:
-                var1 = ' geleden';
-                var1 = var3 + var1;
-                _fun22107_ip = 154;
-                continue _fun22107;
-            case 144:
-                var2 = 'over ';
-                var1 = var2 + var3;
-            case 154:
-                var0 = var1;
-            case 157:
+                var0 = var1 - var0;
                 return var0;
-        }
-    };
-    var1.default = var2;
-    var2 = var1.default;
-    var1 = arg4;
-    var1.exports = var2;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+            };
+            var4.argumentCallback = var7;
+            var4 = var6.bind(var0)(var4);
+            var2.quarter = var4;
+            var6 = var3.default;
+            var4 = {};
+            var7 = {};
+            var8 = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
+            var7.narrow = var8;
+            var8 = ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'];
+            var7.abbreviated = var8;
+            var8 = ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'];
+            var7.wide = var8;
+            var4.values = var7;
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.month = var4;
+            var6 = var3.default;
+            var4 = {};
+            var7 = {};
+            var8 = ['일', '월', '화', '수', '목', '금', '토'];
+            var7.narrow = var8;
+            var8 = ['일', '월', '화', '수', '목', '금', '토'];
+            var7.short = var8;
+            var8 = ['일', '월', '화', '수', '목', '금', '토'];
+            var7.abbreviated = var8;
+            var8 = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'];
+            var7.wide = var8;
+            var4.values = var7;
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.day = var4;
+            var4 = var3.default;
+            var3 = {};
+            var6 = {};
+            var7 = {
+                'am': '오전',
+                'pm': '오후',
+                'midnight': '자정',
+                'noon': '정오',
+                'morning': '아침',
+                'afternoon': '오후',
+                'evening': '저녁',
+                'night': '밤'
+            };
+            var6.narrow = var7;
+            var7 = {
+                'am': '오전',
+                'pm': '오후',
+                'midnight': '자정',
+                'noon': '정오',
+                'morning': '아침',
+                'afternoon': '오후',
+                'evening': '저녁',
+                'night': '밤'
+            };
+            var6.abbreviated = var7;
+            var7 = {
+                'am': '오전',
+                'pm': '오후',
+                'midnight': '자정',
+                'noon': '정오',
+                'morning': '아침',
+                'afternoon': '오후',
+                'evening': '저녁',
+                'night': '밤'
+            };
+            var6.wide = var7;
+            var3.values = var6;
+            var3.defaultWidth = var5;
+            var6 = {};
+            var7 = {
+                'am': '오전',
+                'pm': '오후',
+                'midnight': '자정',
+                'noon': '정오',
+                'morning': '아침',
+                'afternoon': '오후',
+                'evening': '저녁',
+                'night': '밤'
+            };
+            var6.narrow = var7;
+            var7 = {
+                'am': '오전',
+                'pm': '오후',
+                'midnight': '자정',
+                'noon': '정오',
+                'morning': '아침',
+                'afternoon': '오후',
+                'evening': '저녁',
+                'night': '밤'
+            };
+            var6.abbreviated = var7;
+            var7 = {
+                'am': '오전',
+                'pm': '오후',
+                'midnight': '자정',
+                'noon': '정오',
+                'morning': '아침',
+                'afternoon': '오후',
+                'evening': '저녁',
+                'night': '밤'
+            };
+            var6.wide = var7;
+            var3.formattingValues = var6;
+            var3.defaultFormattingWidth = var5;
+            var3 = var4.bind(var0)(var3);
+            var2.dayPeriod = var3;
+            var1.default = var2;
+            var2 = var1.default;
+            var1 = arg4;
+            var1.exports = var2;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1693]);

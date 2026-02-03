@@ -17,16 +17,16 @@ import org.jetbrains.annotations.NotNull;
 public final class CapturedType extends SimpleType implements CapturedTypeMarker {
 
     /* renamed from: e  reason: collision with root package name */
-    private final TypeProjection f35191e;
+    private final TypeProjection f34581e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final CapturedTypeConstructor f35192i;
+    private final CapturedTypeConstructor f34582i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean f35193o;
+    private final boolean f34583o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final TypeAttributes f35194p;
+    private final TypeAttributes f34584p;
 
     public /* synthetic */ CapturedType(TypeProjection typeProjection, CapturedTypeConstructor capturedTypeConstructor, boolean z10, TypeAttributes typeAttributes, int i10, DefaultConstructorMarker defaultConstructorMarker) {
         this(typeProjection, (i10 & 2) != 0 ? new CapturedTypeConstructorImpl(typeProjection) : capturedTypeConstructor, (i10 & 4) != 0 ? false : z10, (i10 & 8) != 0 ? TypeAttributes.Companion.getEmpty() : typeAttributes);
@@ -41,7 +41,7 @@ public final class CapturedType extends SimpleType implements CapturedTypeMarker
     @Override // kotlin.reflect.jvm.internal.impl.types.KotlinType
     @NotNull
     public TypeAttributes getAttributes() {
-        return this.f35194p;
+        return this.f34584p;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.KotlinType
@@ -52,7 +52,7 @@ public final class CapturedType extends SimpleType implements CapturedTypeMarker
 
     @Override // kotlin.reflect.jvm.internal.impl.types.KotlinType
     public boolean isMarkedNullable() {
-        return this.f35193o;
+        return this.f34583o;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.SimpleType
@@ -61,7 +61,7 @@ public final class CapturedType extends SimpleType implements CapturedTypeMarker
         String str;
         StringBuilder sb2 = new StringBuilder();
         sb2.append("Captured(");
-        sb2.append(this.f35191e);
+        sb2.append(this.f34581e);
         sb2.append(')');
         if (isMarkedNullable()) {
             str = "?";
@@ -75,27 +75,27 @@ public final class CapturedType extends SimpleType implements CapturedTypeMarker
     @Override // kotlin.reflect.jvm.internal.impl.types.KotlinType
     @NotNull
     public CapturedTypeConstructor getConstructor() {
-        return this.f35192i;
+        return this.f34582i;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.UnwrappedType
     @NotNull
     public SimpleType replaceAttributes(@NotNull TypeAttributes newAttributes) {
         Intrinsics.checkNotNullParameter(newAttributes, "newAttributes");
-        return new CapturedType(this.f35191e, getConstructor(), isMarkedNullable(), newAttributes);
+        return new CapturedType(this.f34581e, getConstructor(), isMarkedNullable(), newAttributes);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.UnwrappedType
     @NotNull
     public CapturedType makeNullableAsSpecified(boolean z10) {
-        return z10 == isMarkedNullable() ? this : new CapturedType(this.f35191e, getConstructor(), z10, getAttributes());
+        return z10 == isMarkedNullable() ? this : new CapturedType(this.f34581e, getConstructor(), z10, getAttributes());
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.UnwrappedType, kotlin.reflect.jvm.internal.impl.types.KotlinType
     @NotNull
     public CapturedType refine(@NotNull KotlinTypeRefiner kotlinTypeRefiner) {
         Intrinsics.checkNotNullParameter(kotlinTypeRefiner, "kotlinTypeRefiner");
-        TypeProjection refine = this.f35191e.refine(kotlinTypeRefiner);
+        TypeProjection refine = this.f34581e.refine(kotlinTypeRefiner);
         Intrinsics.checkNotNullExpressionValue(refine, "refine(...)");
         return new CapturedType(refine, getConstructor(), isMarkedNullable(), getAttributes());
     }
@@ -104,9 +104,9 @@ public final class CapturedType extends SimpleType implements CapturedTypeMarker
         Intrinsics.checkNotNullParameter(typeProjection, "typeProjection");
         Intrinsics.checkNotNullParameter(constructor, "constructor");
         Intrinsics.checkNotNullParameter(attributes, "attributes");
-        this.f35191e = typeProjection;
-        this.f35192i = constructor;
-        this.f35193o = z10;
-        this.f35194p = attributes;
+        this.f34581e = typeProjection;
+        this.f34582i = constructor;
+        this.f34583o = z10;
+        this.f34584p = attributes;
     }
 }

@@ -21,7 +21,7 @@ final class o8 extends n8 implements Queue {
 
     @Override // java.util.Queue
     public Object element() {
-        a1 a10 = this.f29821e.a();
+        a1 a10 = this.f30182e.a();
         try {
             Object element = b().element();
             if (a10 != null) {
@@ -45,7 +45,7 @@ final class o8 extends n8 implements Queue {
         if (obj == this) {
             return true;
         }
-        a1 a10 = this.f29821e.a();
+        a1 a10 = this.f30182e.a();
         try {
             boolean equals = b().equals(obj);
             if (a10 != null) {
@@ -66,7 +66,7 @@ final class o8 extends n8 implements Queue {
 
     @Override // java.util.Collection
     public int hashCode() {
-        a1 a10 = this.f29821e.a();
+        a1 a10 = this.f30182e.a();
         try {
             int hashCode = b().hashCode();
             if (a10 != null) {
@@ -87,7 +87,7 @@ final class o8 extends n8 implements Queue {
 
     @Override // java.util.Queue
     public boolean offer(Object obj) {
-        a1 a10 = this.f29821e.a();
+        a1 a10 = this.f30182e.a();
         try {
             boolean offer = b().offer(obj);
             if (a10 != null) {
@@ -108,7 +108,7 @@ final class o8 extends n8 implements Queue {
 
     @Override // java.util.Queue
     public Object peek() {
-        a1 a10 = this.f29821e.a();
+        a1 a10 = this.f30182e.a();
         try {
             Object peek = b().peek();
             if (a10 != null) {
@@ -129,7 +129,7 @@ final class o8 extends n8 implements Queue {
 
     @Override // java.util.Queue
     public Object poll() {
-        a1 a10 = this.f29821e.a();
+        a1 a10 = this.f30182e.a();
         try {
             Object poll = b().poll();
             if (a10 != null) {
@@ -150,7 +150,7 @@ final class o8 extends n8 implements Queue {
 
     @Override // java.util.Queue
     public Object remove() {
-        a1 a10 = this.f29821e.a();
+        a1 a10 = this.f30182e.a();
         try {
             Object remove = b().remove();
             if (a10 != null) {
@@ -171,7 +171,7 @@ final class o8 extends n8 implements Queue {
 
     @Override // java.util.Collection
     public Object[] toArray() {
-        a1 a10 = this.f29821e.a();
+        a1 a10 = this.f30182e.a();
         try {
             Object[] array = b().toArray();
             if (a10 != null) {
@@ -192,7 +192,7 @@ final class o8 extends n8 implements Queue {
 
     @Override // java.util.Collection
     public Object[] toArray(Object[] objArr) {
-        a1 a10 = this.f29821e.a();
+        a1 a10 = this.f30182e.a();
         try {
             Object[] array = b().toArray(objArr);
             if (a10 != null) {

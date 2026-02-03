@@ -5,7 +5,7 @@ import android.database.Cursor;
 final class k {
 
     /* renamed from: a  reason: collision with root package name */
-    public Cursor f14520a;
+    public Cursor f13488a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ k(tf.e eVar) {

@@ -4,34 +4,35 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function() {
-        _fun31611: for (var _fun31611_ip = 0;;) switch (_fun31611_ip) {
+    var1 = function arg0, arg1, arg2() {
+        _fun31677: for (var _fun31677_ip = 0;;) switch (_fun31677_ip) {
             case 0:
-                var2 = this;
-                var5 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var1 = 0;
-                var3 = var0[var1];
+                var5 = arg0;
+                var1 = arg2;
+                var0 = null;
+                var3 = var0 == var5;
+                var2 = undefined;
                 var0 = undefined;
-                var3 = var5.bind(var0)(var3);
                 if (var3) {
-                    _fun31611_ip = 33;
-                    continue _fun31611
+                    _fun31677_ip = 50;
+                    continue _fun31677
                 }
-            case 29:
-                var3 = {};
-                _fun31611_ip = 57;
-                continue _fun31611;
-            case 33:
-                var5 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var4 = var4[var1];
-                var5 = var5.bind(var0)(var4);
-                var4 = null;
-                var3 = var5.bind(var0)(var4);
+            case 19:
+                var4 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var3 = 0;
+                var3 = var6[var3];
+                var4 = var4.bind(var2)(var3);
+                var3 = arg1;
+                var0 = var4.bind(var2)(var5, var3);
+            case 50:
+                if (!(var2 === var0)) {
+                    _fun31677_ip = 57;
+                    continue _fun31677
+                }
+            case 54:
+                var0 = var1;
             case 57:
-                var2.__data__ = var3;
-                var2.size = var1;
                 return var0;
         }
     };

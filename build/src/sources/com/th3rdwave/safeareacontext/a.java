@@ -3,38 +3,38 @@ package com.th3rdwave.safeareacontext;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final float f19046a;
+    private final float f18028a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final float f19047b;
+    private final float f18029b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final float f19048c;
+    private final float f18030c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final float f19049d;
+    private final float f18031d;
 
     public a(float f10, float f11, float f12, float f13) {
-        this.f19046a = f10;
-        this.f19047b = f11;
-        this.f19048c = f12;
-        this.f19049d = f13;
+        this.f18028a = f10;
+        this.f18029b = f11;
+        this.f18030c = f12;
+        this.f18031d = f13;
     }
 
     public final float a() {
-        return this.f19048c;
+        return this.f18030c;
     }
 
     public final float b() {
-        return this.f19049d;
+        return this.f18031d;
     }
 
     public final float c() {
-        return this.f19047b;
+        return this.f18029b;
     }
 
     public final float d() {
-        return this.f19046a;
+        return this.f18028a;
     }
 
     public boolean equals(Object obj) {
@@ -43,20 +43,20 @@ public final class a {
         }
         if (obj instanceof a) {
             a aVar = (a) obj;
-            return Float.compare(this.f19046a, aVar.f19046a) == 0 && Float.compare(this.f19047b, aVar.f19047b) == 0 && Float.compare(this.f19048c, aVar.f19048c) == 0 && Float.compare(this.f19049d, aVar.f19049d) == 0;
+            return Float.compare(this.f18028a, aVar.f18028a) == 0 && Float.compare(this.f18029b, aVar.f18029b) == 0 && Float.compare(this.f18030c, aVar.f18030c) == 0 && Float.compare(this.f18031d, aVar.f18031d) == 0;
         }
         return false;
     }
 
     public int hashCode() {
-        return (((((Float.hashCode(this.f19046a) * 31) + Float.hashCode(this.f19047b)) * 31) + Float.hashCode(this.f19048c)) * 31) + Float.hashCode(this.f19049d);
+        return (((((Float.hashCode(this.f18028a) * 31) + Float.hashCode(this.f18029b)) * 31) + Float.hashCode(this.f18030c)) * 31) + Float.hashCode(this.f18031d);
     }
 
     public String toString() {
-        float f10 = this.f19046a;
-        float f11 = this.f19047b;
-        float f12 = this.f19048c;
-        float f13 = this.f19049d;
+        float f10 = this.f18028a;
+        float f11 = this.f18029b;
+        float f12 = this.f18030c;
+        float f13 = this.f18031d;
         return "EdgeInsets(top=" + f10 + ", right=" + f11 + ", bottom=" + f12 + ", left=" + f13 + ")";
     }
 }

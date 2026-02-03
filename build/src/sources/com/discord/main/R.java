@@ -5,26 +5,26 @@ public final class R {
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class color {
         public static int angry_background = 0x7f06001d;
-        public static int beanie_background = 0x7f06003d;
-        public static int blurple_twilight_background = 0x7f0600a2;
-        public static int blush_background = 0x7f0600a3;
-        public static int brand_dark_background = 0x7f0600c7;
-        public static int brand_inverted_background = 0x7f0600c8;
-        public static int camo_background = 0x7f0600df;
-        public static int circuit_background = 0x7f060145;
-        public static int color_wave_background = 0x7f060149;
-        public static int controller_background = 0x7f060169;
-        public static int holowaves_background = 0x7f0601cb;
-        public static int in_rainbows_background = 0x7f0601fa;
-        public static int manga_background = 0x7f0603bc;
-        public static int matte_dark_background = 0x7f060461;
-        public static int matte_light_background = 0x7f060462;
-        public static int midnight_prism_background = 0x7f060469;
-        public static int mushroom_background = 0x7f0604a5;
-        public static int pastel_background = 0x7f0604c5;
-        public static int pirate_background = 0x7f060534;
-        public static int sunset_background = 0x7f0605dc;
-        public static int y2k_background = 0x7f060621;
+        public static int beanie_background = 0x7f060041;
+        public static int blurple_twilight_background = 0x7f0600a6;
+        public static int blush_background = 0x7f0600a7;
+        public static int brand_dark_background = 0x7f0600cb;
+        public static int brand_inverted_background = 0x7f0600cc;
+        public static int camo_background = 0x7f0600e3;
+        public static int circuit_background = 0x7f060149;
+        public static int color_wave_background = 0x7f06014d;
+        public static int controller_background = 0x7f06016d;
+        public static int holowaves_background = 0x7f0601cf;
+        public static int in_rainbows_background = 0x7f0601fe;
+        public static int manga_background = 0x7f0603c0;
+        public static int matte_dark_background = 0x7f060465;
+        public static int matte_light_background = 0x7f060466;
+        public static int midnight_prism_background = 0x7f06046d;
+        public static int mushroom_background = 0x7f0604a9;
+        public static int pastel_background = 0x7f0604c9;
+        public static int pirate_background = 0x7f060538;
+        public static int sunset_background = 0x7f0605e0;
+        public static int y2k_background = 0x7f060625;
 
         private color() {
         }

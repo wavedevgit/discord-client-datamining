@@ -980,4 +980,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createAnimatedThemedStyles = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 1298, 3200, 3150, 478, 671, 3143, 3711, 4088, 4876, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 1298, 3209, 3159, 478, 671, 3152, 3720, 4097, 4881, 2]);

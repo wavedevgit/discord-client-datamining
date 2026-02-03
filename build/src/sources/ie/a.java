@@ -9,16 +9,16 @@ import zd.b;
 public final class a extends zd.f {
 
     /* renamed from: o  reason: collision with root package name */
-    private final h0 f28109o;
+    private final h0 f28332o;
 
     public a() {
         super("Mp4WebvttDecoder");
-        this.f28109o = new h0();
+        this.f28332o = new h0();
     }
 
     private static zd.b B(h0 h0Var, int i10) {
         CharSequence charSequence = null;
-        b.C0790b c0790b = null;
+        b.C0784b c0784b = null;
         while (i10 > 0) {
             if (i10 >= 8) {
                 int q10 = h0Var.q();
@@ -28,7 +28,7 @@ public final class a extends zd.f {
                 h0Var.V(i11);
                 i10 = (i10 - 8) - i11;
                 if (q11 == 1937011815) {
-                    c0790b = f.o(F);
+                    c0784b = f.o(F);
                 } else if (q11 == 1885436268) {
                     charSequence = f.q(null, F.trim(), Collections.EMPTY_LIST);
                 }
@@ -39,23 +39,23 @@ public final class a extends zd.f {
         if (charSequence == null) {
             charSequence = "";
         }
-        if (c0790b != null) {
-            return c0790b.o(charSequence).a();
+        if (c0784b != null) {
+            return c0784b.o(charSequence).a();
         }
         return f.l(charSequence);
     }
 
     @Override // zd.f
     protected zd.g z(byte[] bArr, int i10, boolean z10) {
-        this.f28109o.S(bArr, i10);
+        this.f28332o.S(bArr, i10);
         ArrayList arrayList = new ArrayList();
-        while (this.f28109o.a() > 0) {
-            if (this.f28109o.a() >= 8) {
-                int q10 = this.f28109o.q();
-                if (this.f28109o.q() == 1987343459) {
-                    arrayList.add(B(this.f28109o, q10 - 8));
+        while (this.f28332o.a() > 0) {
+            if (this.f28332o.a() >= 8) {
+                int q10 = this.f28332o.q();
+                if (this.f28332o.q() == 1987343459) {
+                    arrayList.add(B(this.f28332o, q10 - 8));
                 } else {
-                    this.f28109o.V(q10 - 8);
+                    this.f28332o.V(q10 - 8);
                 }
             } else {
                 throw new zd.i("Incomplete Mp4Webvtt Top Level box header found.");

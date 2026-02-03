@@ -12,45 +12,45 @@ import androidx.annotation.NonNull;
 public class f extends CheckBox implements androidx.core.widget.k {
 
     /* renamed from: d  reason: collision with root package name */
-    private final i f1672d;
+    private final i f1641d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final AppCompatBackgroundHelper f1673e;
+    private final AppCompatBackgroundHelper f1642e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final AppCompatTextHelper f1674i;
+    private final AppCompatTextHelper f1643i;
 
     /* renamed from: o  reason: collision with root package name */
-    private AppCompatEmojiTextHelper f1675o;
+    private AppCompatEmojiTextHelper f1644o;
 
     public f(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, f.a.f23294o);
+        this(context, attributeSet, f.a.f22886o);
     }
 
     @NonNull
     private AppCompatEmojiTextHelper getEmojiTextViewHelper() {
-        if (this.f1675o == null) {
-            this.f1675o = new AppCompatEmojiTextHelper(this);
+        if (this.f1644o == null) {
+            this.f1644o = new AppCompatEmojiTextHelper(this);
         }
-        return this.f1675o;
+        return this.f1644o;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // android.widget.CompoundButton, android.widget.TextView, android.view.View
     public void drawableStateChanged() {
         super.drawableStateChanged();
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1673e;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1642e;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.b();
         }
-        AppCompatTextHelper appCompatTextHelper = this.f1674i;
+        AppCompatTextHelper appCompatTextHelper = this.f1643i;
         if (appCompatTextHelper != null) {
             appCompatTextHelper.b();
         }
     }
 
     public ColorStateList getSupportBackgroundTintList() {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1673e;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1642e;
         if (appCompatBackgroundHelper != null) {
             return appCompatBackgroundHelper.c();
         }
@@ -58,7 +58,7 @@ public class f extends CheckBox implements androidx.core.widget.k {
     }
 
     public PorterDuff.Mode getSupportBackgroundTintMode() {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1673e;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1642e;
         if (appCompatBackgroundHelper != null) {
             return appCompatBackgroundHelper.d();
         }
@@ -67,7 +67,7 @@ public class f extends CheckBox implements androidx.core.widget.k {
 
     @Override // androidx.core.widget.k
     public ColorStateList getSupportButtonTintList() {
-        i iVar = this.f1672d;
+        i iVar = this.f1641d;
         if (iVar != null) {
             return iVar.b();
         }
@@ -75,7 +75,7 @@ public class f extends CheckBox implements androidx.core.widget.k {
     }
 
     public PorterDuff.Mode getSupportButtonTintMode() {
-        i iVar = this.f1672d;
+        i iVar = this.f1641d;
         if (iVar != null) {
             return iVar.c();
         }
@@ -83,11 +83,11 @@ public class f extends CheckBox implements androidx.core.widget.k {
     }
 
     public ColorStateList getSupportCompoundDrawablesTintList() {
-        return this.f1674i.j();
+        return this.f1643i.j();
     }
 
     public PorterDuff.Mode getSupportCompoundDrawablesTintMode() {
-        return this.f1674i.k();
+        return this.f1643i.k();
     }
 
     @Override // android.widget.TextView
@@ -99,7 +99,7 @@ public class f extends CheckBox implements androidx.core.widget.k {
     @Override // android.view.View
     public void setBackgroundDrawable(Drawable drawable) {
         super.setBackgroundDrawable(drawable);
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1673e;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1642e;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.f(drawable);
         }
@@ -108,7 +108,7 @@ public class f extends CheckBox implements androidx.core.widget.k {
     @Override // android.view.View
     public void setBackgroundResource(int i10) {
         super.setBackgroundResource(i10);
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1673e;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1642e;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.g(i10);
         }
@@ -117,7 +117,7 @@ public class f extends CheckBox implements androidx.core.widget.k {
     @Override // android.widget.CompoundButton
     public void setButtonDrawable(Drawable drawable) {
         super.setButtonDrawable(drawable);
-        i iVar = this.f1672d;
+        i iVar = this.f1641d;
         if (iVar != null) {
             iVar.e();
         }
@@ -126,7 +126,7 @@ public class f extends CheckBox implements androidx.core.widget.k {
     @Override // android.widget.TextView
     public void setCompoundDrawables(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
         super.setCompoundDrawables(drawable, drawable2, drawable3, drawable4);
-        AppCompatTextHelper appCompatTextHelper = this.f1674i;
+        AppCompatTextHelper appCompatTextHelper = this.f1643i;
         if (appCompatTextHelper != null) {
             appCompatTextHelper.p();
         }
@@ -135,7 +135,7 @@ public class f extends CheckBox implements androidx.core.widget.k {
     @Override // android.widget.TextView
     public void setCompoundDrawablesRelative(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
         super.setCompoundDrawablesRelative(drawable, drawable2, drawable3, drawable4);
-        AppCompatTextHelper appCompatTextHelper = this.f1674i;
+        AppCompatTextHelper appCompatTextHelper = this.f1643i;
         if (appCompatTextHelper != null) {
             appCompatTextHelper.p();
         }
@@ -151,14 +151,14 @@ public class f extends CheckBox implements androidx.core.widget.k {
     }
 
     public void setSupportBackgroundTintList(ColorStateList colorStateList) {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1673e;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1642e;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.i(colorStateList);
         }
     }
 
     public void setSupportBackgroundTintMode(PorterDuff.Mode mode) {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1673e;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1642e;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.j(mode);
         }
@@ -166,7 +166,7 @@ public class f extends CheckBox implements androidx.core.widget.k {
 
     @Override // androidx.core.widget.k
     public void setSupportButtonTintList(ColorStateList colorStateList) {
-        i iVar = this.f1672d;
+        i iVar = this.f1641d;
         if (iVar != null) {
             iVar.f(colorStateList);
         }
@@ -174,33 +174,33 @@ public class f extends CheckBox implements androidx.core.widget.k {
 
     @Override // androidx.core.widget.k
     public void setSupportButtonTintMode(PorterDuff.Mode mode) {
-        i iVar = this.f1672d;
+        i iVar = this.f1641d;
         if (iVar != null) {
             iVar.g(mode);
         }
     }
 
     public void setSupportCompoundDrawablesTintList(ColorStateList colorStateList) {
-        this.f1674i.w(colorStateList);
-        this.f1674i.b();
+        this.f1643i.w(colorStateList);
+        this.f1643i.b();
     }
 
     public void setSupportCompoundDrawablesTintMode(PorterDuff.Mode mode) {
-        this.f1674i.x(mode);
-        this.f1674i.b();
+        this.f1643i.x(mode);
+        this.f1643i.b();
     }
 
     public f(Context context, AttributeSet attributeSet, int i10) {
         super(s0.b(context), attributeSet, i10);
         r0.a(this, getContext());
         i iVar = new i(this);
-        this.f1672d = iVar;
+        this.f1641d = iVar;
         iVar.d(attributeSet, i10);
         AppCompatBackgroundHelper appCompatBackgroundHelper = new AppCompatBackgroundHelper(this);
-        this.f1673e = appCompatBackgroundHelper;
+        this.f1642e = appCompatBackgroundHelper;
         appCompatBackgroundHelper.e(attributeSet, i10);
         AppCompatTextHelper appCompatTextHelper = new AppCompatTextHelper(this);
-        this.f1674i = appCompatTextHelper;
+        this.f1643i = appCompatTextHelper;
         appCompatTextHelper.m(attributeSet, i10);
         getEmojiTextViewHelper().c(attributeSet, i10);
     }

@@ -28,12 +28,12 @@ public final class a extends l {
     }
 
     @Override // net.time4j.tz.l
-    public p A(ht.a aVar, ht.g gVar) {
+    public p A(kt.a aVar, kt.g gVar) {
         return this.fallback.A(aVar, gVar);
     }
 
     @Override // net.time4j.tz.l
-    public p B(ht.f fVar) {
+    public p B(kt.f fVar) {
         return this.fallback.B(fVar);
     }
 
@@ -43,7 +43,7 @@ public final class a extends l {
     }
 
     @Override // net.time4j.tz.l
-    public boolean I(ht.f fVar) {
+    public boolean I(kt.f fVar) {
         return this.fallback.I(fVar);
     }
 
@@ -53,7 +53,7 @@ public final class a extends l {
     }
 
     @Override // net.time4j.tz.l
-    public boolean K(ht.a aVar, ht.g gVar) {
+    public boolean K(kt.a aVar, kt.g gVar) {
         return this.fallback.K(aVar, gVar);
     }
 

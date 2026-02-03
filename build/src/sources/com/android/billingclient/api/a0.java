@@ -5,15 +5,15 @@ import org.json.JSONObject;
 public final class a0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f8642a;
+    private final String f7610a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f8643b;
+    private final String f7611b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a0(JSONObject jSONObject) {
-        this.f8642a = jSONObject.getString("rentalPeriod");
+        this.f7610a = jSONObject.getString("rentalPeriod");
         String optString = jSONObject.optString("rentalExpirationPeriod");
-        this.f8643b = true == optString.isEmpty() ? null : optString;
+        this.f7611b = true == optString.isEmpty() ? null : optString;
     }
 }

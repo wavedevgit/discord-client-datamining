@@ -8,7 +8,7 @@ import com.facebook.drawee.view.SimpleDraweeView;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.facebook.react.modules.appstate.AppStateModule;
 import com.facebook.react.views.textinput.ReactTextInputShadowNode;
-import hs.i;
+import js.i;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;

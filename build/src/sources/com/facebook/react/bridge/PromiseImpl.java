@@ -169,7 +169,7 @@ public final class PromiseImpl implements Promise {
     }
 
     @Override // com.facebook.react.bridge.Promise
-    @jr.c
+    @lr.c
     public void reject(@NotNull String message) {
         Intrinsics.checkNotNullParameter(message, "message");
         reject(null, message, null, null);

@@ -1,147 +1,189 @@
 package st;
 
-import java.io.ByteArrayInputStream;
-import java.io.DataInputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.util.Collections;
+import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
-import java.util.Set;
-import net.time4j.f0;
-import net.time4j.tz.m;
-import net.time4j.tz.r;
-import net.time4j.tz.s;
-import rt.c;
+import nt.k;
+import nt.o;
+import nt.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public class a implements r, c {
+public final class a implements o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f49432a;
+    private static final Map f49623a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f49433b;
+    private static final p f49624b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f49434c;
+    private static final Map f49625c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f49435d;
+    private static final p f49626d;
 
-    /* renamed from: e  reason: collision with root package name */
-    private final f0 f49436e;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* renamed from: st.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static /* synthetic */ class C0614a {
 
-    /* renamed from: f  reason: collision with root package name */
-    private final Map f49437f;
+        /* renamed from: a  reason: collision with root package name */
+        static final /* synthetic */ int[] f49627a;
 
-    /* JADX WARN: Removed duplicated region for block: B:79:0x0208  */
-    /* JADX WARN: Removed duplicated region for block: B:81:0x021b  */
-    /* JADX WARN: Removed duplicated region for block: B:92:0x0200 A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Removed duplicated region for block: B:96:0x021f A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public a() {
-        /*
-            Method dump skipped, instructions count: 547
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: st.a.<init>():void");
-    }
-
-    private static void i(DataInputStream dataInputStream, String str) {
-        byte readByte = dataInputStream.readByte();
-        byte readByte2 = dataInputStream.readByte();
-        byte readByte3 = dataInputStream.readByte();
-        byte readByte4 = dataInputStream.readByte();
-        byte readByte5 = dataInputStream.readByte();
-        byte readByte6 = dataInputStream.readByte();
-        if (readByte == 116 && readByte2 == 122 && readByte3 == 114 && readByte4 == 101 && readByte5 == 112 && readByte6 == 111) {
-            return;
-        }
-        throw new IOException("Invalid tz-repository: " + str);
-    }
-
-    private static Class k() {
-        if (Boolean.getBoolean("test.environment")) {
+        static {
+            int[] iArr = new int[k.values().length];
+            f49627a = iArr;
             try {
-                return Class.forName("net.time4j.tz.spi.RepositoryTest");
-            } catch (ClassNotFoundException e10) {
-                throw new AssertionError(e10);
+                iArr[k.CARDINALS.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            try {
+                f49627a[k.ORDINALS.ordinal()] = 2;
+            } catch (NoSuchFieldError unused2) {
             }
         }
-        return a.class;
     }
 
-    @Override // net.time4j.tz.r
-    public s a() {
-        return null;
-    }
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static class b extends p {
 
-    @Override // rt.c
-    public boolean b() {
-        return !this.f49437f.isEmpty();
-    }
+        /* renamed from: g  reason: collision with root package name */
+        private final int f49628g;
 
-    @Override // net.time4j.tz.r
-    public Map c() {
-        return this.f49435d;
-    }
+        /* synthetic */ b(int i10, C0614a c0614a) {
+            this(i10);
+        }
 
-    @Override // net.time4j.tz.r
-    public String e() {
-        return this.f49432a;
-    }
-
-    @Override // rt.c
-    public Map f() {
-        return Collections.unmodifiableMap(this.f49437f);
-    }
-
-    @Override // net.time4j.tz.r
-    public Set g() {
-        return this.f49434c.keySet();
-    }
-
-    @Override // net.time4j.tz.r
-    public String getLocation() {
-        return this.f49433b;
-    }
-
-    @Override // net.time4j.tz.r
-    public String getName() {
-        return "TZDB";
-    }
-
-    @Override // net.time4j.tz.r
-    public String h() {
-        return "";
-    }
-
-    @Override // rt.c
-    /* renamed from: j */
-    public f0 d() {
-        return this.f49436e;
-    }
-
-    @Override // net.time4j.tz.r
-    public m load(String str) {
-        try {
-            byte[] bArr = (byte[]) this.f49434c.get(str);
-            if (bArr != null) {
-                return (m) new ObjectInputStream(new ByteArrayInputStream(bArr)).readObject();
-            }
-            return null;
-        } catch (IOException e10) {
-            e10.printStackTrace();
-            return null;
-        } catch (ClassNotFoundException e11) {
-            e11.printStackTrace();
-            return null;
+        private b(int i10) {
+            this.f49628g = i10;
         }
     }
 
-    public String toString() {
-        return "TZ-REPOSITORY(" + this.f49432a + ")";
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static class c extends p {
+
+        /* renamed from: g  reason: collision with root package name */
+        private final int f49629g;
+
+        /* synthetic */ c(int i10, C0614a c0614a) {
+            this(i10);
+        }
+
+        private c(int i10) {
+            this.f49629g = i10;
+        }
+    }
+
+    static {
+        HashMap hashMap = new HashMap(140);
+        f49623a = hashMap;
+        f49624b = new b(0, null);
+        HashMap hashMap2 = new HashMap();
+        b(hashMap2, "bm bo dz id ig ii in ja jbo jv jw kde kea km ko lkt", -1);
+        b(hashMap2, "lo ms my nqo root sah ses sg th to vi wo yo zh", -1);
+        b(hashMap2, "pt_PT", 0);
+        b(hashMap2, "am as bn fa gu hi kn zu", 1);
+        b(hashMap2, "ff fr hy kab pt", 1);
+        b(hashMap2, "si", 1);
+        b(hashMap2, "ak bh guw ln mg nso pa ti wa", 1);
+        b(hashMap2, "tzm", 2);
+        b(hashMap2, "is", 3);
+        b(hashMap2, "mk", 4);
+        b(hashMap2, "ceb fil tl", 5);
+        b(hashMap2, "lv prg", 6);
+        b(hashMap2, "lag ksh", 7);
+        b(hashMap2, "iu naq se sma smi smj smn sms", 8);
+        b(hashMap2, "shi", 9);
+        b(hashMap2, "mo ro", 10);
+        b(hashMap2, "bs hr sh sr", 11);
+        b(hashMap2, "gd", 12);
+        b(hashMap2, "sl", 13);
+        b(hashMap2, "he iw", 14);
+        b(hashMap2, "cs sk", 15);
+        b(hashMap2, "pl", 16);
+        b(hashMap2, "be", 17);
+        b(hashMap2, "lt", 18);
+        b(hashMap2, "mt", 19);
+        b(hashMap2, "ru uk", 17);
+        b(hashMap2, "br", 20);
+        b(hashMap2, "ga", 21);
+        b(hashMap2, "gv", 22);
+        b(hashMap2, "ar", 23);
+        b(hashMap2, "cy", 24);
+        b(hashMap2, "dsb hsb", 25);
+        b(hashMap2, "kw", 26);
+        hashMap.putAll(hashMap2);
+        HashMap hashMap3 = new HashMap(140);
+        f49625c = hashMap3;
+        f49626d = new c(0, null);
+        HashMap hashMap4 = new HashMap();
+        c(hashMap4, "sv", 1);
+        c(hashMap4, "fil fr ga hy lo mo ms ro tl vi", 2);
+        c(hashMap4, "hu", 3);
+        c(hashMap4, "ne", 4);
+        c(hashMap4, "kk", 5);
+        c(hashMap4, "it sc scn", 6);
+        c(hashMap4, "ka", 7);
+        c(hashMap4, "sq", 8);
+        c(hashMap4, "en", 9);
+        c(hashMap4, "mr", 10);
+        c(hashMap4, "ca", 11);
+        c(hashMap4, "mk", 12);
+        c(hashMap4, "az", 13);
+        c(hashMap4, "gu hi", 14);
+        c(hashMap4, "as bn", 15);
+        c(hashMap4, "cy", 16);
+        c(hashMap4, "be", 17);
+        c(hashMap4, "uk", 18);
+        c(hashMap4, "tk", 19);
+        c(hashMap4, "or", 20);
+        c(hashMap4, "gd", 21);
+        c(hashMap4, "kw", 22);
+        hashMap3.putAll(hashMap4);
+    }
+
+    private static void b(Map map, String str, int i10) {
+        for (String str2 : str.split(" ")) {
+            map.put(str2, new b(i10, null));
+        }
+    }
+
+    private static void c(Map map, String str, int i10) {
+        for (String str2 : str.split(" ")) {
+            map.put(str2, new c(i10, null));
+        }
+    }
+
+    @Override // nt.o
+    public p a(Locale locale, k kVar) {
+        Map map;
+        p pVar;
+        p pVar2;
+        int i10 = C0614a.f49627a[kVar.ordinal()];
+        if (i10 != 1) {
+            if (i10 == 2) {
+                map = f49625c;
+                pVar = f49626d;
+            } else {
+                throw new UnsupportedOperationException(kVar.name());
+            }
+        } else {
+            map = f49623a;
+            pVar = f49624b;
+        }
+        String country = locale.getCountry();
+        if (!country.isEmpty()) {
+            pVar2 = (p) map.get(locale.getLanguage() + '_' + country);
+        } else {
+            pVar2 = null;
+        }
+        if (pVar2 == null) {
+            pVar2 = (p) map.get(locale.getLanguage());
+        }
+        if (pVar2 == null) {
+            return pVar;
+        }
+        return pVar2;
     }
 }

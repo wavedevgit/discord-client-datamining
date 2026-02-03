@@ -5,52 +5,52 @@ import java.io.InputStream;
 final class l1 extends t2 {
 
     /* renamed from: c  reason: collision with root package name */
-    final int f16509c;
+    final int f15477c;
 
     /* renamed from: d  reason: collision with root package name */
-    final long f16510d;
+    final long f15478d;
 
     /* renamed from: e  reason: collision with root package name */
-    final String f16511e;
+    final String f15479e;
 
     /* renamed from: f  reason: collision with root package name */
-    final String f16512f;
+    final String f15480f;
 
     /* renamed from: g  reason: collision with root package name */
-    final int f16513g;
+    final int f15481g;
 
     /* renamed from: h  reason: collision with root package name */
-    final int f16514h;
+    final int f15482h;
 
     /* renamed from: i  reason: collision with root package name */
-    final int f16515i;
+    final int f15483i;
 
     /* renamed from: j  reason: collision with root package name */
-    final long f16516j;
+    final long f15484j;
 
     /* renamed from: k  reason: collision with root package name */
-    final int f16517k;
+    final int f15485k;
 
     /* renamed from: l  reason: collision with root package name */
-    final InputStream f16518l;
+    final InputStream f15486l;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public l1(int i10, String str, int i11, long j10, String str2, String str3, int i12, int i13, int i14, long j11, int i15, InputStream inputStream) {
         super(i10, str);
-        this.f16509c = i11;
-        this.f16510d = j10;
-        this.f16511e = str2;
-        this.f16512f = str3;
-        this.f16513g = i12;
-        this.f16514h = i13;
-        this.f16515i = i14;
-        this.f16516j = j11;
-        this.f16517k = i15;
-        this.f16518l = inputStream;
+        this.f15477c = i11;
+        this.f15478d = j10;
+        this.f15479e = str2;
+        this.f15480f = str3;
+        this.f15481g = i12;
+        this.f15482h = i13;
+        this.f15483i = i14;
+        this.f15484j = j11;
+        this.f15485k = i15;
+        this.f15486l = inputStream;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final boolean a() {
-        return this.f16514h + 1 == this.f16515i;
+        return this.f15482h + 1 == this.f15483i;
     }
 }

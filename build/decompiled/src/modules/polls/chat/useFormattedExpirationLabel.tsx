@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var4;
     var1 = function arg0() {
-        _fun56198: for (var _fun56198_ip = 0;;) switch (_fun56198_ip) {
+        _fun56256: for (var _fun56256_ip = 0;;) switch (_fun56256_ip) {
             case 0:
                 var7 = arg0;
                 var3 = _closure1_slot1;
@@ -20,8 +20,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var0)(var2);
                 var4 = var2.bind(var0)();
                 if (!(!(var7 <= var4))) {
-                    _fun56198_ip = 292;
-                    continue _fun56198
+                    _fun56256_ip = 292;
+                    continue _fun56256
                 }
             case 38:
                 var3 = var7.diff;
@@ -29,16 +29,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3.bind(var7)(var4, var2);
                 var6 = 1;
                 if (!(!(var5 > var6))) {
-                    _fun56198_ip = 228;
-                    continue _fun56198
+                    _fun56256_ip = 228;
+                    continue _fun56256
                 }
             case 64:
                 var3 = var7.diff;
                 var2 = 'hours';
                 var8 = var3.bind(var7)(var4, var2);
                 if (!(!(var8 > var6))) {
-                    _fun56198_ip = 164;
-                    continue _fun56198
+                    _fun56256_ip = 164;
+                    continue _fun56256
                 }
             case 84:
                 var3 = var7.diff;
@@ -109,13 +109,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/polls/chat/useFormattedExpirationLabel.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun56199: for (var _fun56199_ip = 0;;) switch (_fun56199_ip) {
+        _fun56257: for (var _fun56257_ip = 0;;) switch (_fun56257_ip) {
             case 0:
                 var2 = arg0;
                 var0 = null;
                 if (!(var0 == var2)) {
-                    _fun56199_ip = 13;
-                    continue _fun56199
+                    _fun56257_ip = 13;
+                    continue _fun56257
                 }
             case 9:
                 var0 = undefined;
@@ -130,4 +130,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.formatExpirationLabel = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3036, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3045, 1234, 2]);

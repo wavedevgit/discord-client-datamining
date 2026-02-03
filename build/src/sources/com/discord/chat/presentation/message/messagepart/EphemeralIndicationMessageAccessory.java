@@ -54,7 +54,7 @@ public final class EphemeralIndicationMessageAccessory extends MessageAccessory 
         }
         if (obj instanceof EphemeralIndicationMessageAccessory) {
             EphemeralIndicationMessageAccessory ephemeralIndicationMessageAccessory = (EphemeralIndicationMessageAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, ephemeralIndicationMessageAccessory.messageId) && Intrinsics.areEqual(this.ephemeralIndication, ephemeralIndicationMessageAccessory.ephemeralIndication);
+            return MessageId.m1089equalsimpl0(this.messageId, ephemeralIndicationMessageAccessory.messageId) && Intrinsics.areEqual(this.ephemeralIndication, ephemeralIndicationMessageAccessory.ephemeralIndication);
         }
         return false;
     }
@@ -72,14 +72,14 @@ public final class EphemeralIndicationMessageAccessory extends MessageAccessory 
     }
 
     public int hashCode() {
-        return (MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.ephemeralIndication.hashCode();
+        return (MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.ephemeralIndication.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         EphemeralIndication ephemeralIndication = this.ephemeralIndication;
-        return "EphemeralIndicationMessageAccessory(messageId=" + m1093toStringimpl + ", ephemeralIndication=" + ephemeralIndication + ")";
+        return "EphemeralIndicationMessageAccessory(messageId=" + m1092toStringimpl + ", ephemeralIndication=" + ephemeralIndication + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

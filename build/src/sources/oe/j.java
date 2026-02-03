@@ -15,72 +15,72 @@ import ne.t;
 public final class j extends GLSurfaceView implements k {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final /* synthetic */ int f42770e = 0;
+    public static final /* synthetic */ int f42570e = 0;
 
     /* renamed from: d  reason: collision with root package name */
-    private final a f42771d;
+    private final a f42571d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static final class a implements GLSurfaceView.Renderer {
 
         /* renamed from: u  reason: collision with root package name */
-        private static final float[] f42772u = {1.164f, 1.164f, 1.164f, 0.0f, -0.392f, 2.017f, 1.596f, -0.813f, 0.0f};
+        private static final float[] f42572u = {1.164f, 1.164f, 1.164f, 0.0f, -0.392f, 2.017f, 1.596f, -0.813f, 0.0f};
 
         /* renamed from: v  reason: collision with root package name */
-        private static final float[] f42773v = {1.164f, 1.164f, 1.164f, 0.0f, -0.213f, 2.112f, 1.793f, -0.533f, 0.0f};
+        private static final float[] f42573v = {1.164f, 1.164f, 1.164f, 0.0f, -0.213f, 2.112f, 1.793f, -0.533f, 0.0f};
 
         /* renamed from: w  reason: collision with root package name */
-        private static final float[] f42774w = {1.168f, 1.168f, 1.168f, 0.0f, -0.188f, 2.148f, 1.683f, -0.652f, 0.0f};
+        private static final float[] f42574w = {1.168f, 1.168f, 1.168f, 0.0f, -0.188f, 2.148f, 1.683f, -0.652f, 0.0f};
 
         /* renamed from: x  reason: collision with root package name */
-        private static final String[] f42775x = {"y_tex", "u_tex", "v_tex"};
+        private static final String[] f42575x = {"y_tex", "u_tex", "v_tex"};
 
         /* renamed from: y  reason: collision with root package name */
-        private static final FloatBuffer f42776y = ne.t.e(new float[]{-1.0f, 1.0f, -1.0f, -1.0f, 1.0f, 1.0f, 1.0f, -1.0f});
+        private static final FloatBuffer f42576y = ne.t.e(new float[]{-1.0f, 1.0f, -1.0f, -1.0f, 1.0f, 1.0f, 1.0f, -1.0f});
 
         /* renamed from: d  reason: collision with root package name */
-        private final GLSurfaceView f42777d;
+        private final GLSurfaceView f42577d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final int[] f42778e = new int[3];
+        private final int[] f42578e = new int[3];
 
         /* renamed from: i  reason: collision with root package name */
-        private final int[] f42779i = new int[3];
+        private final int[] f42579i = new int[3];
 
         /* renamed from: o  reason: collision with root package name */
-        private final int[] f42780o = new int[3];
+        private final int[] f42580o = new int[3];
 
         /* renamed from: p  reason: collision with root package name */
-        private final int[] f42781p = new int[3];
+        private final int[] f42581p = new int[3];
 
         /* renamed from: q  reason: collision with root package name */
-        private final AtomicReference f42782q = new AtomicReference();
+        private final AtomicReference f42582q = new AtomicReference();
 
         /* renamed from: r  reason: collision with root package name */
-        private final FloatBuffer[] f42783r = new FloatBuffer[3];
+        private final FloatBuffer[] f42583r = new FloatBuffer[3];
 
         /* renamed from: s  reason: collision with root package name */
-        private ne.s f42784s;
+        private ne.s f42584s;
 
         /* renamed from: t  reason: collision with root package name */
-        private int f42785t;
+        private int f42585t;
 
         public a(GLSurfaceView gLSurfaceView) {
-            this.f42777d = gLSurfaceView;
+            this.f42577d = gLSurfaceView;
             for (int i10 = 0; i10 < 3; i10++) {
-                int[] iArr = this.f42780o;
-                this.f42781p[i10] = -1;
+                int[] iArr = this.f42580o;
+                this.f42581p[i10] = -1;
                 iArr[i10] = -1;
             }
         }
 
         private void b() {
             try {
-                GLES20.glGenTextures(3, this.f42778e, 0);
+                GLES20.glGenTextures(3, this.f42578e, 0);
                 for (int i10 = 0; i10 < 3; i10++) {
-                    GLES20.glUniform1i(this.f42784s.j(f42775x[i10]), i10);
+                    GLES20.glUniform1i(this.f42584s.j(f42575x[i10]), i10);
                     GLES20.glActiveTexture(33984 + i10);
-                    ne.t.a(3553, this.f42778e[i10]);
+                    ne.t.a(3553, this.f42578e[i10]);
                 }
                 ne.t.b();
             } catch (t.a e10) {
@@ -89,13 +89,13 @@ public final class j extends GLSurfaceView implements k {
         }
 
         public void a(qc.i iVar) {
-            android.support.v4.media.session.b.a(this.f42782q.getAndSet(iVar));
-            this.f42777d.requestRender();
+            android.support.v4.media.session.b.a(this.f42582q.getAndSet(iVar));
+            this.f42577d.requestRender();
         }
 
         @Override // android.opengl.GLSurfaceView.Renderer
         public void onDrawFrame(GL10 gl10) {
-            android.support.v4.media.session.b.a(this.f42782q.getAndSet(null));
+            android.support.v4.media.session.b.a(this.f42582q.getAndSet(null));
         }
 
         @Override // android.opengl.GLSurfaceView.Renderer
@@ -107,12 +107,12 @@ public final class j extends GLSurfaceView implements k {
         public void onSurfaceCreated(GL10 gl10, EGLConfig eGLConfig) {
             try {
                 ne.s sVar = new ne.s("varying vec2 interp_tc_y;\nvarying vec2 interp_tc_u;\nvarying vec2 interp_tc_v;\nattribute vec4 in_pos;\nattribute vec2 in_tc_y;\nattribute vec2 in_tc_u;\nattribute vec2 in_tc_v;\nvoid main() {\n  gl_Position = in_pos;\n  interp_tc_y = in_tc_y;\n  interp_tc_u = in_tc_u;\n  interp_tc_v = in_tc_v;\n}\n", "precision mediump float;\nvarying vec2 interp_tc_y;\nvarying vec2 interp_tc_u;\nvarying vec2 interp_tc_v;\nuniform sampler2D y_tex;\nuniform sampler2D u_tex;\nuniform sampler2D v_tex;\nuniform mat3 mColorConversion;\nvoid main() {\n  vec3 yuv;\n  yuv.x = texture2D(y_tex, interp_tc_y).r - 0.0625;\n  yuv.y = texture2D(u_tex, interp_tc_u).r - 0.5;\n  yuv.z = texture2D(v_tex, interp_tc_v).r - 0.5;\n  gl_FragColor = vec4(mColorConversion * yuv, 1.0);\n}\n");
-                this.f42784s = sVar;
-                GLES20.glVertexAttribPointer(sVar.e("in_pos"), 2, 5126, false, 0, (Buffer) f42776y);
-                this.f42779i[0] = this.f42784s.e("in_tc_y");
-                this.f42779i[1] = this.f42784s.e("in_tc_u");
-                this.f42779i[2] = this.f42784s.e("in_tc_v");
-                this.f42785t = this.f42784s.j("mColorConversion");
+                this.f42584s = sVar;
+                GLES20.glVertexAttribPointer(sVar.e("in_pos"), 2, 5126, false, 0, (Buffer) f42576y);
+                this.f42579i[0] = this.f42584s.e("in_tc_y");
+                this.f42579i[1] = this.f42584s.e("in_tc_u");
+                this.f42579i[2] = this.f42584s.e("in_tc_v");
+                this.f42585t = this.f42584s.j("mColorConversion");
                 ne.t.b();
                 b();
                 ne.t.b();
@@ -127,13 +127,13 @@ public final class j extends GLSurfaceView implements k {
     }
 
     public void setOutputBuffer(qc.i iVar) {
-        this.f42771d.a(iVar);
+        this.f42571d.a(iVar);
     }
 
     public j(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         a aVar = new a(this);
-        this.f42771d = aVar;
+        this.f42571d = aVar;
         setPreserveEGLContextOnPause(true);
         setEGLContextClientVersion(2);
         setRenderer(aVar);

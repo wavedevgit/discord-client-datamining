@@ -11,29 +11,29 @@ import android.os.Bundle;
 public class c extends DialogFragment {
 
     /* renamed from: d  reason: collision with root package name */
-    private Dialog f14436d;
+    private Dialog f13404d;
 
     /* renamed from: e  reason: collision with root package name */
-    private DialogInterface.OnCancelListener f14437e;
+    private DialogInterface.OnCancelListener f13405e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Dialog f14438i;
+    private Dialog f13406i;
 
     public static c a(Dialog dialog, DialogInterface.OnCancelListener onCancelListener) {
         c cVar = new c();
         Dialog dialog2 = (Dialog) gf.q.m(dialog, "Cannot display null dialog");
         dialog2.setOnCancelListener(null);
         dialog2.setOnDismissListener(null);
-        cVar.f14436d = dialog2;
+        cVar.f13404d = dialog2;
         if (onCancelListener != null) {
-            cVar.f14437e = onCancelListener;
+            cVar.f13405e = onCancelListener;
         }
         return cVar;
     }
 
     @Override // android.app.DialogFragment, android.content.DialogInterface.OnCancelListener
     public void onCancel(DialogInterface dialogInterface) {
-        DialogInterface.OnCancelListener onCancelListener = this.f14437e;
+        DialogInterface.OnCancelListener onCancelListener = this.f13405e;
         if (onCancelListener != null) {
             onCancelListener.onCancel(dialogInterface);
         }
@@ -41,13 +41,13 @@ public class c extends DialogFragment {
 
     @Override // android.app.DialogFragment
     public Dialog onCreateDialog(Bundle bundle) {
-        Dialog dialog = this.f14436d;
+        Dialog dialog = this.f13404d;
         if (dialog == null) {
             setShowsDialog(false);
-            if (this.f14438i == null) {
-                this.f14438i = new AlertDialog.Builder((Context) gf.q.l(getActivity())).create();
+            if (this.f13406i == null) {
+                this.f13406i = new AlertDialog.Builder((Context) gf.q.l(getActivity())).create();
             }
-            return this.f14438i;
+            return this.f13406i;
         }
         return dialog;
     }

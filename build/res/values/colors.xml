@@ -40,6 +40,10 @@
     <color name="background_scrim_lightbox_light">#eb000000</color>
     <color name="background_scrim_lightbox_midnight">#eb000000</color>
     <color name="background_scrim_midnight">#bf212229</color>
+    <color name="badge_background_default_dark">#294e5058</color>
+    <color name="badge_background_default_darker">#296c6f7c</color>
+    <color name="badge_background_default_light">#2980848e</color>
+    <color name="badge_background_default_midnight">#336c6f7c</color>
     <color name="battlenet">#ff009ae5</color>
     <color name="beanie_background">#ffc1c5f4</color>
     <color name="bg_animated_gradient_background_indigo_1">#ff201e6e</color>

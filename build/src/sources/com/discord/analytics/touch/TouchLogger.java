@@ -44,8 +44,6 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
-import jr.p;
-import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
@@ -56,6 +54,8 @@ import kotlin.jvm.internal.Ref;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.jvm.internal.StringCompanionObject;
 import kotlin.text.StringsKt;
+import lr.p;
+import lr.v;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000Ì\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010#\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0014\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0007\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u000e\bÆ\u0002\u0018\u00002\u00020\u0001:\u0004nopqB\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u000e\u00104\u001a\u0002052\u0006\u00106\u001a\u00020\u000bJ\u000e\u00107\u001a\u0002052\u0006\u00106\u001a\u00020\u000bJ\u0006\u00107\u001a\u000205J\u000e\u00108\u001a\u0002052\u0006\u00109\u001a\u00020\"J\u000e\u0010:\u001a\u0002052\u0006\u00109\u001a\u00020\"J\u0006\u0010;\u001a\u000205J\u0006\u0010<\u001a\u00020=J\u0015\u0010>\u001a\u0002052\u0006\u0010?\u001a\u00020@H\u0000¢\u0006\u0002\bAJ\u0010\u0010B\u001a\u0002052\u0006\u00106\u001a\u00020\u000bH\u0002J\b\u0010C\u001a\u000205H\u0002J\u0010\u0010D\u001a\u0002052\u0006\u0010E\u001a\u00020FH\u0002J\u0010\u0010G\u001a\u0002052\u0006\u00106\u001a\u00020\u000bH\u0002J\u0018\u0010H\u001a\u0002052\u0006\u0010I\u001a\u00020\u00162\u0006\u0010J\u001a\u00020\u0005H\u0002J\u0015\u0010K\u001a\u00020\u00052\u0006\u0010I\u001a\u00020\u0016H\u0000¢\u0006\u0002\bLJ \u0010M\u001a\u0002052\u0006\u0010?\u001a\u00020N2\u0006\u0010O\u001a\u00020F2\u0006\u0010P\u001a\u00020\u0005H\u0002J\u001f\u0010Q\u001a\u0004\u0018\u00010\u001f2\u0006\u0010R\u001a\u00020.2\u0006\u0010S\u001a\u00020\u001fH\u0000¢\u0006\u0002\bTJ\u001a\u0010U\u001a\u0004\u0018\u00010\u001f2\u0006\u0010R\u001a\u00020.2\u0006\u0010S\u001a\u00020\u001fH\u0002J\u001a\u0010V\u001a\u0004\u0018\u00010\u001f2\u0006\u0010R\u001a\u00020.2\u0006\u0010S\u001a\u00020\u001fH\u0002J\u001a\u0010W\u001a\u0004\u0018\u00010\u001f2\u0006\u0010R\u001a\u00020.2\u0006\u0010S\u001a\u00020\u001fH\u0002J\u001a\u0010X\u001a\u0004\u0018\u00010\u001f2\u0006\u0010R\u001a\u00020.2\u0006\u0010Y\u001a\u00020FH\u0002J\u0014\u0010Z\u001a\u0002032\n\u0010[\u001a\u0006\u0012\u0002\b\u000302H\u0002J\u0010\u0010\\\u001a\u00020]2\u0006\u0010S\u001a\u00020\u001fH\u0002J\u0018\u0010^\u001a\u00020=2\u0006\u0010Y\u001a\u00020F2\u0006\u0010_\u001a\u00020=H\u0002J \u0010`\u001a\u00020\u00072\u0006\u0010a\u001a\u00020%2\u0006\u0010b\u001a\u00020%2\u0006\u0010S\u001a\u00020\u001fH\u0002J\u0012\u0010c\u001a\u0004\u0018\u00010d2\u0006\u0010S\u001a\u00020\u001fH\u0002J0\u0010e\u001a\u0002052\u0006\u0010f\u001a\u00020%2\u0006\u0010g\u001a\u00020%2\u0006\u0010h\u001a\u00020F2\u0006\u0010i\u001a\u00020\u001f2\u0006\u0010j\u001a\u00020,H\u0002J\u0017\u0010k\u001a\u00020\u00052\b\u0010S\u001a\u0004\u0018\u00010\u001fH\u0000¢\u0006\u0002\blJ\u0012\u0010m\u001a\u0004\u0018\u00010\u00052\u0006\u0010S\u001a\u00020\u001fH\u0002R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\u0007X\u0082\u000e¢\u0006\u0002\n\u0000R\"\u0010\t\u001a\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\nX\u0080\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\f\u0010\r\"\u0004\b\u000e\u0010\u000fR\u0010\u0010\u0010\u001a\u0004\u0018\u00010\u0011X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0012\u001a\u0004\u0018\u00010\u0013X\u0082\u000e¢\u0006\u0002\n\u0000R\u001a\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u00020\u0016\u0012\u0004\u0012\u00020\u00170\u0015X\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u0018\u001a\u0004\u0018\u00010\u0019X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u001a\u001a\u0004\u0018\u00010\u001bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u001c\u001a\u0004\u0018\u00010\u001dX\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010\u001e\u001a\n\u0012\u0004\u0012\u00020\u001f\u0018\u00010\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010 \u001a\b\u0012\u0004\u0012\u00020\"0!X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010#\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010$\u001a\u00020%X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010&\u001a\u00020%X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010'\u001a\u00020(X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010)\u001a\u00020*X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010+\u001a\u00020,X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010-\u001a\u00020.X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010/\u001a\u000200X\u0082\u0004¢\u0006\u0002\n\u0000R\u001e\u00101\u001a\u0012\u0012\b\u0012\u0006\u0012\u0002\b\u000302\u0012\u0004\u0012\u0002030\u0015X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006r"}, d2 = {"Lcom/discord/analytics/touch/TouchLogger;", "", "<init>", "()V", "TAG", "", "VERBOSE_LOGGING", "", "isEnabled", "activityRef", "Ljava/lang/ref/WeakReference;", "Landroid/app/Activity;", "getActivityRef$analytics_release", "()Ljava/lang/ref/WeakReference;", "setActivityRef$analytics_release", "(Ljava/lang/ref/WeakReference;)V", "application", "Landroid/app/Application;", "scaleGestureDetector", "Landroid/view/ScaleGestureDetector;", "trackedWindows", "", "Landroid/view/Window;", "Landroid/view/Window$Callback;", "windowFocusListener", "Lcom/discord/analytics/touch/TouchLogger$WindowFocusListener;", "windowFocusChangeListener", "Landroid/view/ViewTreeObserver$OnWindowFocusChangeListener;", "globalLayoutListener", "Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;", "monitoredDecorView", "Landroid/view/View;", "eventListeners", "", "Lcom/discord/analytics/touch/OnEventRecognizedListener;", "listenerLock", "initialX", "", "initialY", "startTime", "", "callbackHandler", "Landroid/os/Handler;", "tempPoint", "Landroid/graphics/PointF;", "matrixTransformCoords", "", "inverseMatrix", "Landroid/graphics/Matrix;", "viewClassInfoCache", "Ljava/lang/Class;", "Lcom/discord/analytics/touch/TouchLogger$ViewClassInfo;", "enable", "", "activity", "disable", "registerListener", "listener", "unregisterListener", "clearListeners", "getListenerCount", "", "notifyListeners", "event", "Lcom/discord/analytics/touch/TouchEventDetails;", "notifyListeners$analytics_release", "startWindowMonitoring", "stopWindowMonitoring", "detectPortalsAndBottomSheets", "decorView", "Landroid/view/ViewGroup;", "scanForNewWindows", "trackWindow", "window", StackTraceHelper.NAME_KEY, "identifyWindow", "identifyWindow$analytics_release", "handleTouchEvent", "Landroid/view/MotionEvent;", "rootView", "windowName", "findTouchTargetView", "eventCoords", "view", "findTouchTargetView$analytics_release", "findTouchTargetChildrenOnly", "findTouchTargetSelfOnly", "findTouchTargetChildrenThenSelf", "findTouchTargetInChildren", "viewGroup", "getViewClassInfo", "viewClass", "getPointerEvents", "Lcom/discord/analytics/touch/TouchLogger$PointerEvents;", "getZIndexMappedChildIndex", "reverseIndex", "isTouchPointInView", "x", "y", "getHitSlopRect", "Landroid/graphics/Rect;", "getChildPoint", "parentX", "parentY", "parent", "child", "outLocalPoint", "formatViewHierarchy", "formatViewHierarchy$analytics_release", "getNativeID", "ViewClassInfo", "PointerEvents", "WindowFocusListener", "ScaleGestureListener", "analytics_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nTouchLogger.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TouchLogger.kt\ncom/discord/analytics/touch/TouchLogger\n+ 2 _Maps.kt\nkotlin/collections/MapsKt___MapsKt\n+ 3 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n+ 4 Maps.kt\nkotlin/collections/MapsKt__MapsKt\n+ 5 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,970:1\n216#2,2:971\n13472#3,2:973\n384#4,7:975\n1869#5,2:982\n*S KotlinDebug\n*F\n+ 1 TouchLogger.kt\ncom/discord/analytics/touch/TouchLogger\n*L\n109#1:971,2\n291#1:973,2\n593#1:975,7\n190#1:982,2\n*E\n"})
@@ -114,7 +114,7 @@ public final class TouchLogger {
         static {
             PointerEvents[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = qr.a.a($values);
+            $ENTRIES = sr.a.a($values);
         }
 
         private PointerEvents(String str, int i10) {
@@ -1086,7 +1086,7 @@ public final class TouchLogger {
             set.clear();
             Log log = Log.INSTANCE;
             Log.i$default(log, TAG, "✅ Cleared " + size + " listeners", (Throwable) null, 4, (Object) null);
-            Unit unit = Unit.f33074a;
+            Unit unit = Unit.f32464a;
         }
     }
 
@@ -1303,7 +1303,7 @@ public final class TouchLogger {
             String simpleName = listener.getClass().getSimpleName();
             int size = set.size();
             Log.i$default(log, TAG, "✅ Registered listener: " + simpleName + " (total: " + size + ")", (Throwable) null, 4, (Object) null);
-            Unit unit = Unit.f33074a;
+            Unit unit = Unit.f32464a;
         }
     }
 
@@ -1322,7 +1322,7 @@ public final class TouchLogger {
                     int size = set.size();
                     Log.i$default(log, TAG, "✅ Unregistered listener: " + simpleName + " (total: " + size + ")", (Throwable) null, 4, (Object) null);
                 }
-                Unit unit = Unit.f33074a;
+                Unit unit = Unit.f32464a;
             } catch (Throwable th2) {
                 throw th2;
             }

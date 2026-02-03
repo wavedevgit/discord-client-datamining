@@ -5,30 +5,30 @@ import ui.c;
 final class t5 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final t5 f43699a = new t5();
+    static final t5 f43499a = new t5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43700b;
+    private static final ui.c f43500b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43701c;
+    private static final ui.c f43501c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43702d;
+    private static final ui.c f43502d;
 
     static {
         c.b a10 = ui.c.a("options");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43700b = a10.b(s1Var.b()).a();
+        f43500b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("eventType");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43701c = a11.b(s1Var2.b()).a();
+        f43501c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("errorCode");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43702d = a12.b(s1Var3.b()).a();
+        f43502d = a12.b(s1Var3.b()).a();
     }
 
     private t5() {

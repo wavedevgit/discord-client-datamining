@@ -7,14 +7,14 @@ import com.discord.chatreplay.logger.RowLogger;
 import com.discord.codegen.NativeChatModuleSpec;
 import com.discord.tti_manager.TTIMetrics;
 import com.facebook.react.bridge.ReactApplicationContext;
-import hs.i;
-import hs.j1;
-import hs.u0;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import js.i;
+import js.j1;
+import js.u0;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -113,7 +113,7 @@ public final class ChatModule extends NativeChatModuleSpec {
         CompletableJob b10 = j1.b(null, 1, null);
         ExecutorService newSingleThreadExecutor = Executors.newSingleThreadExecutor();
         Intrinsics.checkNotNullExpressionValue(newSingleThreadExecutor, "newSingleThreadExecutor(...)");
-        moduleScope = kotlinx.coroutines.i.a(b10.Z0(u0.c(newSingleThreadExecutor)));
+        moduleScope = kotlinx.coroutines.i.a(b10.V0(u0.c(newSingleThreadExecutor)));
         listManagers = new LinkedHashMap();
         previousRowUpdateTag = -1;
         rowUpdateLoggers = new LinkedHashMap();
@@ -130,7 +130,7 @@ public final class ChatModule extends NativeChatModuleSpec {
     public static final Unit json$lambda$0(JsonBuilder Json) {
         Intrinsics.checkNotNullParameter(Json, "$this$Json");
         Json.c(true);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     @Override // com.discord.codegen.NativeChatModuleSpec

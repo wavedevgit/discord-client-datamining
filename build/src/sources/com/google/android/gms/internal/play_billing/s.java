@@ -5,26 +5,26 @@ import java.util.Iterator;
 final class s extends n {
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient m f15008i;
+    private final transient m f13976i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient j f15009o;
+    private final transient j f13977o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public s(m mVar, j jVar) {
-        this.f15008i = mVar;
-        this.f15009o = jVar;
+        this.f13976i = mVar;
+        this.f13977o = jVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.gms.internal.play_billing.g
     public final int b(Object[] objArr, int i10) {
-        return this.f15009o.b(objArr, 0);
+        return this.f13977o.b(objArr, 0);
     }
 
     @Override // com.google.android.gms.internal.play_billing.g, java.util.AbstractCollection, java.util.Collection
     public final boolean contains(Object obj) {
-        if (this.f15008i.get(obj) != null) {
+        if (this.f13976i.get(obj) != null) {
             return true;
         }
         return false;
@@ -32,16 +32,16 @@ final class s extends n {
 
     @Override // com.google.android.gms.internal.play_billing.n, com.google.android.gms.internal.play_billing.g
     public final j e() {
-        return this.f15009o;
+        return this.f13977o;
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
     public final /* synthetic */ Iterator iterator() {
-        return this.f15009o.listIterator(0);
+        return this.f13977o.listIterator(0);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final int size() {
-        return this.f15008i.size();
+        return this.f13976i.size();
     }
 }

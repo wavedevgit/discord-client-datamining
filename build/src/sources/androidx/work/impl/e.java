@@ -6,15 +6,15 @@ import android.os.Looper;
 public class e implements k4.u {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Handler f5649a = w1.g.a(Looper.getMainLooper());
+    private final Handler f5618a = w1.g.a(Looper.getMainLooper());
 
     @Override // k4.u
     public void a(Runnable runnable) {
-        this.f5649a.removeCallbacks(runnable);
+        this.f5618a.removeCallbacks(runnable);
     }
 
     @Override // k4.u
     public void b(long j10, Runnable runnable) {
-        this.f5649a.postDelayed(runnable, j10);
+        this.f5618a.postDelayed(runnable, j10);
     }
 }

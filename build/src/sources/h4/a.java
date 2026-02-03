@@ -6,22 +6,22 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f27527a;
+    private final int f26812a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f27528b;
+    private final int f26813b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f27529c;
+    private final int f26814c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f27530d;
+    private final int f26815d;
 
     public a(int i10, int i11, int i12, int i13) {
-        this.f27527a = i10;
-        this.f27528b = i11;
-        this.f27529c = i12;
-        this.f27530d = i13;
+        this.f26812a = i10;
+        this.f26813b = i11;
+        this.f26814c = i12;
+        this.f26815d = i13;
         if (i10 > i12) {
             throw new IllegalArgumentException(("Left must be less than or equal to right, left: " + i10 + ", right: " + i12).toString());
         } else if (i11 <= i13) {
@@ -31,7 +31,7 @@ public final class a {
     }
 
     public final Rect a() {
-        return new Rect(this.f27527a, this.f27528b, this.f27529c, this.f27530d);
+        return new Rect(this.f26812a, this.f26813b, this.f26814c, this.f26815d);
     }
 
     public boolean equals(Object obj) {
@@ -49,18 +49,18 @@ public final class a {
         }
         Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type androidx.window.core.Bounds");
         a aVar = (a) obj;
-        if (this.f27527a == aVar.f27527a && this.f27528b == aVar.f27528b && this.f27529c == aVar.f27529c && this.f27530d == aVar.f27530d) {
+        if (this.f26812a == aVar.f26812a && this.f26813b == aVar.f26813b && this.f26814c == aVar.f26814c && this.f26815d == aVar.f26815d) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (((((this.f27527a * 31) + this.f27528b) * 31) + this.f27529c) * 31) + this.f27530d;
+        return (((((this.f26812a * 31) + this.f26813b) * 31) + this.f26814c) * 31) + this.f26815d;
     }
 
     public String toString() {
-        return a.class.getSimpleName() + " { [" + this.f27527a + ',' + this.f27528b + ',' + this.f27529c + ',' + this.f27530d + "] }";
+        return a.class.getSimpleName() + " { [" + this.f26812a + ',' + this.f26813b + ',' + this.f26814c + ',' + this.f26815d + "] }";
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */

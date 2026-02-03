@@ -22,25 +22,25 @@ public final class j extends PlaybackException {
     private static final String G = ne.w0.B0(1006);
 
     /* renamed from: t  reason: collision with root package name */
-    public final int f13251t;
+    public final int f12219t;
 
     /* renamed from: u  reason: collision with root package name */
-    public final String f13252u;
+    public final String f12220u;
 
     /* renamed from: v  reason: collision with root package name */
-    public final int f13253v;
+    public final int f12221v;
 
     /* renamed from: w  reason: collision with root package name */
-    public final Format f13254w;
+    public final Format f12222w;
 
     /* renamed from: x  reason: collision with root package name */
-    public final int f13255x;
+    public final int f12223x;
 
     /* renamed from: y  reason: collision with root package name */
-    public final qd.q f13256y;
+    public final qd.q f12224y;
 
     /* renamed from: z  reason: collision with root package name */
-    final boolean f13257z;
+    final boolean f12225z;
 
     private j(int i10, Throwable th2, int i11) {
         this(i10, th2, null, i11, null, -1, null, 4, false);
@@ -92,12 +92,12 @@ public final class j extends PlaybackException {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j e(qd.q qVar) {
-        return new j((String) ne.w0.j(getMessage()), getCause(), this.f12578d, this.f13251t, this.f13252u, this.f13253v, this.f13254w, this.f13255x, qVar, this.f12579e, this.f13257z);
+        return new j((String) ne.w0.j(getMessage()), getCause(), this.f11546d, this.f12219t, this.f12220u, this.f12221v, this.f12222w, this.f12223x, qVar, this.f11547e, this.f12225z);
     }
 
     public Exception k() {
         boolean z10 = true;
-        if (this.f13251t != 1) {
+        if (this.f12219t != 1) {
             z10 = false;
         }
         ne.a.g(z10);
@@ -106,7 +106,7 @@ public final class j extends PlaybackException {
 
     public IOException l() {
         boolean z10;
-        if (this.f13251t == 0) {
+        if (this.f12219t == 0) {
             z10 = true;
         } else {
             z10 = false;
@@ -121,14 +121,14 @@ public final class j extends PlaybackException {
 
     private j(Bundle bundle) {
         super(bundle);
-        this.f13251t = bundle.getInt(B, 2);
-        this.f13252u = bundle.getString(C);
-        this.f13253v = bundle.getInt(D, -1);
+        this.f12219t = bundle.getInt(B, 2);
+        this.f12220u = bundle.getString(C);
+        this.f12221v = bundle.getInt(D, -1);
         Bundle bundle2 = bundle.getBundle(E);
-        this.f13254w = bundle2 == null ? null : (Format) Format.A0.a(bundle2);
-        this.f13255x = bundle.getInt(F, 4);
-        this.f13257z = bundle.getBoolean(G, false);
-        this.f13256y = null;
+        this.f12222w = bundle2 == null ? null : (Format) Format.A0.a(bundle2);
+        this.f12223x = bundle.getInt(F, 4);
+        this.f12225z = bundle.getBoolean(G, false);
+        this.f12224y = null;
     }
 
     private j(String str, Throwable th2, int i10, int i11, String str2, int i12, Format format, int i13, qd.q qVar, long j10, boolean z10) {
@@ -136,12 +136,12 @@ public final class j extends PlaybackException {
         boolean z11 = false;
         ne.a.a(!z10 || i11 == 1);
         ne.a.a((th2 != null || i11 == 3) ? true : z11);
-        this.f13251t = i11;
-        this.f13252u = str2;
-        this.f13253v = i12;
-        this.f13254w = format;
-        this.f13255x = i13;
-        this.f13256y = qVar;
-        this.f13257z = z10;
+        this.f12219t = i11;
+        this.f12220u = str2;
+        this.f12221v = i12;
+        this.f12222w = format;
+        this.f12223x = i13;
+        this.f12224y = qVar;
+        this.f12225z = z10;
     }
 }

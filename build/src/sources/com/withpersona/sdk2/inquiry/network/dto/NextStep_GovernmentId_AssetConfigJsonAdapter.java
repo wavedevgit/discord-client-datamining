@@ -72,23 +72,23 @@ public final class NextStep_GovernmentId_AssetConfigJsonAdapter extends h {
         NextStep.GovernmentId.AssetConfig.PendingPage pendingPage = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 selectPage = (NextStep.GovernmentId.AssetConfig.SelectPage) this.nullableSelectPageAdapter.fromJson(reader);
                 i10 &= -2;
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 promptPage = (NextStep.GovernmentId.AssetConfig.PromptPage) this.nullablePromptPageAdapter.fromJson(reader);
                 i10 &= -3;
-            } else if (t02 == 2) {
+            } else if (A0 == 2) {
                 capturePage = (NextStep.GovernmentId.AssetConfig.CapturePage) this.nullableCapturePageAdapter.fromJson(reader);
                 i10 &= -5;
-            } else if (t02 == 3) {
+            } else if (A0 == 3) {
                 checkPage = (NextStep.GovernmentId.AssetConfig.CheckPage) this.nullableCheckPageAdapter.fromJson(reader);
                 i10 &= -9;
-            } else if (t02 == 4) {
+            } else if (A0 == 4) {
                 pendingPage = (NextStep.GovernmentId.AssetConfig.PendingPage) this.nullablePendingPageAdapter.fromJson(reader);
                 i10 &= -17;
             }
@@ -106,7 +106,7 @@ public final class NextStep_GovernmentId_AssetConfigJsonAdapter extends h {
         NextStep.GovernmentId.AssetConfig.SelectPage selectPage2 = selectPage;
         Constructor<NextStep.GovernmentId.AssetConfig> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.GovernmentId.AssetConfig.class.getDeclaredConstructor(NextStep.GovernmentId.AssetConfig.SelectPage.class, NextStep.GovernmentId.AssetConfig.PromptPage.class, NextStep.GovernmentId.AssetConfig.CapturePage.class, NextStep.GovernmentId.AssetConfig.CheckPage.class, NextStep.GovernmentId.AssetConfig.PendingPage.class, Integer.TYPE, tm.c.f49935c);
+            constructor = NextStep.GovernmentId.AssetConfig.class.getDeclaredConstructor(NextStep.GovernmentId.AssetConfig.SelectPage.class, NextStep.GovernmentId.AssetConfig.PromptPage.class, NextStep.GovernmentId.AssetConfig.CapturePage.class, NextStep.GovernmentId.AssetConfig.CheckPage.class, NextStep.GovernmentId.AssetConfig.PendingPage.class, Integer.TYPE, vm.c.f51691c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -120,15 +120,15 @@ public final class NextStep_GovernmentId_AssetConfigJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (assetConfig != null) {
             writer.l();
-            writer.t0("selectPage");
+            writer.A0("selectPage");
             this.nullableSelectPageAdapter.toJson(writer, assetConfig.getSelectPage());
-            writer.t0("promptPage");
+            writer.A0("promptPage");
             this.nullablePromptPageAdapter.toJson(writer, assetConfig.getPromptPage());
-            writer.t0("capturePage");
+            writer.A0("capturePage");
             this.nullableCapturePageAdapter.toJson(writer, assetConfig.getCapturePage());
-            writer.t0("checkPage");
+            writer.A0("checkPage");
             this.nullableCheckPageAdapter.toJson(writer, assetConfig.getCheckPage());
-            writer.t0("pendingPage");
+            writer.A0("pendingPage");
             this.nullablePendingPageAdapter.toJson(writer, assetConfig.getPendingPage());
             writer.E();
             return;

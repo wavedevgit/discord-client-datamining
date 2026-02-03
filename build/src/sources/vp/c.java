@@ -1,17 +1,20 @@
 package vp;
 
-import android.content.Context;
-import android.content.res.Resources;
 import kotlin.jvm.internal.Intrinsics;
-import kp.n;
+import ym.a0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class c {
-    public static final void a(Context context) {
-        Intrinsics.checkNotNullParameter(context, "context");
-        try {
-            context.getResources().getLayout(n.f36277c);
-        } catch (Resources.NotFoundException unused) {
-            di.a.b(context);
+    public static final void a(a0 a0Var, int i10) {
+        a aVar;
+        Intrinsics.checkNotNullParameter(a0Var, "<this>");
+        Object obj = a0Var.b().get(b.f51746b);
+        if (obj instanceof a) {
+            aVar = (a) obj;
+        } else {
+            aVar = null;
+        }
+        if (aVar != null) {
+            aVar.a(i10);
         }
     }
 }

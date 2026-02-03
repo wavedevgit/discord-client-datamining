@@ -3,13 +3,13 @@ package com.facebook.imagepipeline.nativecode;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private static boolean f11297a;
+    private static boolean f10265a;
 
     public static synchronized void a() {
         synchronized (e.class) {
-            if (!f11297a) {
+            if (!f10265a) {
                 nb.a.d("native-imagetranscoder");
-                f11297a = true;
+                f10265a = true;
             }
         }
     }

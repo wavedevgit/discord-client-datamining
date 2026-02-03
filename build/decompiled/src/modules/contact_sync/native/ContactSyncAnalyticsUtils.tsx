@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'Onboarding';
     var2.CONTACT_SYNC_ONBOARDING_LOCATION = var3;
     var3 = function arg0() {
-        _fun81863: for (var _fun81863_ip = 0;;) switch (_fun81863_ip) {
+        _fun81973: for (var _fun81973_ip = 0;;) switch (_fun81973_ip) {
             case 0:
                 var0 = arg0;
                 var _closure2_slot0 = var0;
@@ -91,8 +91,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 var3 = undefined;
                 if (var6) {
-                    _fun81863_ip = 79;
-                    continue _fun81863
+                    _fun81973_ip = 79;
+                    continue _fun81973
                 }
             case 73:
                 var3 = var5.phone;
@@ -108,23 +108,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2.bind(var3)();
                 var2 = var3.then;
                 var1 = function(arg0) { // Environment: var1
-                    _fun81864: for (var _fun81864_ip = 0;;) switch (_fun81864_ip) {
+                    _fun81974: for (var _fun81974_ip = 0;;) switch (_fun81974_ip) {
                         case 0:
                             var2 = arg0;
                             var0 = _closure1_slot5;
                             var0 = var0.NOT_DETERMINED;
                             var6 = null;
                             if (!(var2 !== var0)) {
-                                _fun81864_ip = 49;
-                                continue _fun81864
+                                _fun81974_ip = 49;
+                                continue _fun81974
                             }
                         case 22:
                             var0 = _closure1_slot5;
                             var1 = var0.AUTHORIZED;
                             var0 = 'denied';
                             if (!(var2 === var1)) {
-                                _fun81864_ip = 46;
-                                continue _fun81864
+                                _fun81974_ip = 46;
+                                continue _fun81974
                             }
                         case 42:
                             var0 = 'accepted';
@@ -177,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackFlowStart = var3;
     var3 = function arg0, arg1, arg2, arg3() {
-        _fun81865: for (var _fun81865_ip = 0;;) switch (_fun81865_ip) {
+        _fun81975: for (var _fun81975_ip = 0;;) switch (_fun81975_ip) {
             case 0:
                 var2 = arg0;
                 var8 = arg1;
@@ -207,16 +207,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = copyDataProperties(var17, var16);
                 var12 = 'Onboarding';
                 if (var4) {
-                    _fun81865_ip = 132;
-                    continue _fun81865
+                    _fun81975_ip = 132;
+                    continue _fun81975
                 }
             case 113:
                 var10 = null;
                 var14 = var10 == var13;
                 var10 = undefined;
                 if (var14) {
-                    _fun81865_ip = 129;
-                    continue _fun81865
+                    _fun81975_ip = 129;
+                    continue _fun81975
                 }
             case 124:
                 var10 = var13.location;
@@ -242,8 +242,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[var10] = var11;
                 var5 = var7.bind(var9)(var6, var5);
                 if (!var4) {
-                    _fun81865_ip = 263;
-                    continue _fun81865
+                    _fun81975_ip = 263;
+                    continue _fun81975
                 }
             case 219:
                 var5 = _closure1_slot0;
@@ -264,7 +264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackFlowStep = var3;
     var1 = function arg0, arg1() {
-        _fun81866: for (var _fun81866_ip = 0;;) switch (_fun81866_ip) {
+        _fun81976: for (var _fun81976_ip = 0;;) switch (_fun81976_ip) {
             case 0:
                 var9 = arg1;
                 var1 = _closure1_slot4;
@@ -288,16 +288,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = copyDataProperties(var12, var11);
                 var8 = 'Onboarding';
                 if (var6) {
-                    _fun81866_ip = 108;
-                    continue _fun81866
+                    _fun81976_ip = 108;
+                    continue _fun81976
                 }
             case 89:
                 var6 = null;
                 var10 = var6 == var9;
                 var6 = undefined;
                 if (var10) {
-                    _fun81866_ip = 105;
-                    continue _fun81866
+                    _fun81976_ip = 105;
+                    continue _fun81976
                 }
             case 100:
                 var6 = var9.location;
@@ -336,4 +336,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackFlowEnd = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1613, 10293, 10294, 660, 10302, 795, 10246, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 10312, 10313, 660, 10321, 795, 10265, 2]);

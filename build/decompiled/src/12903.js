@@ -1,75 +1,45 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
-    var2 = exports;
-    var3 = dependencyMap;
-    var _closure1_slot0 = var4;
-    var _closure1_slot1 = var3;
-    var0 = function() {
-        var4 = undefined;
-        var0 = undefined;
-        var3 = _closure1_slot2;
-        var2 = function*(arg0, arg1) { // Environment: var2
-            var0 = function*(arg0, arg1) { // Original name: ?anon_0_, environment: var0
-                _fun99018: for (var _fun99018_ip = 0;;) switch (_fun99018_ip) {
-                    case 0:
-                        StartGenerator();
-                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
-                        if (var1) {
-                            _fun99018_ip = 53;
-                            continue _fun99018
-                        }
-                    case 7:
-                        var3 = _closure1_slot0;
-                        var2 = _closure1_slot1;
-                        var1 = 1;
-                        var2 = var2[var1];
-                        var1 = undefined;
-                        var4 = var3.bind(var1)(var2);
-                        var3 = var4._nullishCoalesce;
-                        var2 = arg0;
-                        var1 = arg1;
-                        var1 = var3.bind(var4)(var2, var1);
-                        return var1;
-                    case 53:
-                        return var0;
+    var1 = exports;
+    var0 = global;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var1, var0, var3);
+    var0 = ['fatal', 'error', 'warning', 'log', 'info', 'debug'];
+    var _closure1_slot0 = var0;
+    var2 = function arg0() {
+        _fun98993: for (var _fun98993_ip = 0;;) switch (_fun98993_ip) {
+            case 0:
+                var2 = arg0;
+                var0 = 'warning';
+                var1 = 'warn';
+                if (!(var1 !== var2)) {
+                    _fun98993_ip = 45;
+                    continue _fun98993
                 }
-            };
-            return var0;
-        };
-        var3 = var3.bind(var4)(var2);
-        _closure1_slot3 = var3;
-        var2 = var3.apply;
-        var0 = arguments;
-        var1 = var0;
-        var0 = this;
-        var0 = var2.bind(var3)(var0, var1);
-        return var0;
+            case 15:
+                var3 = _closure1_slot0;
+                var1 = var3.includes;
+                var3 = var1.bind(var3)(var2);
+                var1 = 'log';
+                if (!var3) {
+                    _fun98993_ip = 42;
+                    continue _fun98993
+                }
+            case 39:
+                var1 = var2;
+            case 42:
+                var0 = var1;
+            case 45:
+                return var0;
+        }
     };
-    var _closure1_slot3 = var0;
-    var0 = 0;
-    var3 = var3[var0];
+    var1.severityLevelFromString = var2;
+    var1.validSeverityLevels = var0;
     var0 = undefined;
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot2 = var3;
-    var3 = global;
-    var6 = var3.Object;
-    var5 = var6.defineProperty;
-    var4 = {};
-    var3 = true;
-    var4.value = var3;
-    var3 = '__esModule';
-    var3 = var5.bind(var6)(var2, var3, var4);
-    var1 = function arg0, arg1() {
-        var0 = undefined;
-        var3 = _closure1_slot3;
-        var2 = var3.apply;
-        var0 = arguments;
-        var1 = var0;
-        var0 = this;
-        var0 = var2.bind(var3)(var0, var1);
-        return var0;
-    };
-    var2._asyncNullishCoalesce = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 12904]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

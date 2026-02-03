@@ -19,61 +19,61 @@ public final class j extends h {
     private b.a L;
 
     /* renamed from: s  reason: collision with root package name */
-    private String f55533s;
+    private String f55671s;
 
     /* renamed from: t  reason: collision with root package name */
-    private String f55534t;
+    private String f55672t;
 
     /* renamed from: u  reason: collision with root package name */
-    private Object f55535u;
+    private Object f55673u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Object f55536v;
+    private Object f55674v;
 
     /* renamed from: w  reason: collision with root package name */
-    private Object f55537w;
+    private Object f55675w;
 
     /* renamed from: x  reason: collision with root package name */
-    private long f55538x;
+    private long f55676x;
 
     /* renamed from: y  reason: collision with root package name */
-    private long f55539y;
+    private long f55677y;
 
     /* renamed from: z  reason: collision with root package name */
-    private long f55540z;
+    private long f55678z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public j(k infra) {
         super(infra);
         Intrinsics.checkNotNullParameter(infra, "infra");
-        this.f55538x = -1L;
-        this.f55539y = -1L;
-        this.f55540z = -1L;
+        this.f55676x = -1L;
+        this.f55677y = -1L;
+        this.f55678z = -1L;
         this.A = -1L;
         this.B = -1L;
         this.C = -1L;
         this.E = -1;
         this.F = -1;
-        this.H = e.f55478o;
-        this.I = n.f55550o;
+        this.H = e.f55616o;
+        this.I = n.f55688o;
         this.J = -1L;
         this.K = -1L;
     }
 
     public final void A(long j10) {
-        this.f55540z = j10;
+        this.f55678z = j10;
     }
 
     public final void B(String str) {
-        this.f55533s = str;
+        this.f55671s = str;
     }
 
     public final void C(long j10) {
-        this.f55539y = j10;
+        this.f55677y = j10;
     }
 
     public final void D(long j10) {
-        this.f55538x = j10;
+        this.f55676x = j10;
     }
 
     public final void E(Throwable th2) {
@@ -85,7 +85,7 @@ public final class j extends h {
     }
 
     public final void G(Object obj) {
-        this.f55537w = obj;
+        this.f55675w = obj;
     }
 
     public final void H(e eVar) {
@@ -94,7 +94,7 @@ public final class j extends h {
     }
 
     public final void I(Object obj) {
-        this.f55535u = obj;
+        this.f55673u = obj;
     }
 
     public final void J(long j10) {
@@ -122,7 +122,7 @@ public final class j extends h {
     }
 
     public final void P(String str) {
-        this.f55534t = str;
+        this.f55672t = str;
     }
 
     public final void Q(long j10) {
@@ -132,28 +132,28 @@ public final class j extends h {
     public final void R(boolean z10) {
         n nVar;
         if (z10) {
-            nVar = n.f55551p;
+            nVar = n.f55689p;
         } else {
-            nVar = n.f55552q;
+            nVar = n.f55690q;
         }
         this.I = nVar;
     }
 
     public final f S() {
-        return new f(j(), this.f55533s, this.f55534t, this.f55535u, this.f55536v, this.f55537w, this.f55538x, this.f55539y, this.f55540z, this.A, this.B, this.C, f(), n(), this.D, this.E, this.F, this.G, this.I, this.J, this.K, null, this.L, a(), o(), c(), d(), b(), r(), q(), l(), p(), CollectionsKt.h1(k()), m(), h(), i(), g(), e());
+        return new f(j(), this.f55671s, this.f55672t, this.f55673u, this.f55674v, this.f55675w, this.f55676x, this.f55677y, this.f55678z, this.A, this.B, this.C, f(), n(), this.D, this.E, this.F, this.G, this.I, this.J, this.K, null, this.L, a(), o(), c(), d(), b(), r(), q(), l(), p(), CollectionsKt.h1(k()), m(), h(), i(), g(), e());
     }
 
     public final void w() {
-        this.f55534t = null;
-        this.f55535u = null;
-        this.f55536v = null;
-        this.f55537w = null;
+        this.f55672t = null;
+        this.f55673u = null;
+        this.f55674v = null;
+        this.f55675w = null;
         this.D = false;
         this.E = -1;
         this.F = -1;
         this.G = null;
-        this.H = e.f55478o;
-        this.I = n.f55550o;
+        this.H = e.f55616o;
+        this.I = n.f55688o;
         this.L = null;
         x();
         s();
@@ -162,8 +162,8 @@ public final class j extends h {
     public final void x() {
         this.B = -1L;
         this.C = -1L;
-        this.f55538x = -1L;
-        this.f55540z = -1L;
+        this.f55676x = -1L;
+        this.f55678z = -1L;
         this.A = -1L;
         this.J = -1L;
         this.K = -1L;
@@ -174,7 +174,7 @@ public final class j extends h {
     }
 
     public final void y(Object obj) {
-        this.f55536v = obj;
+        this.f55674v = obj;
     }
 
     public final void z(long j10) {

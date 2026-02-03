@@ -5,16 +5,16 @@ import android.graphics.Bitmap;
 public class e implements s8.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static e f32825a;
+    private static e f32223a;
 
     private e() {
     }
 
     public static e a() {
-        if (f32825a == null) {
-            f32825a = new e();
+        if (f32223a == null) {
+            f32223a = new e();
         }
-        return f32825a;
+        return f32223a;
     }
 
     @Override // s8.c

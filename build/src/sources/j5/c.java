@@ -9,19 +9,19 @@ public interface c {
     public interface a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final C0423a f31613a = C0423a.f31615a;
+        public static final C0413a f31409a = C0413a.f31411a;
 
         /* renamed from: b  reason: collision with root package name */
-        public static final a f31614b = new b.a();
+        public static final a f31410b = new b.a();
 
         /* renamed from: j5.c$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        public static final class C0423a {
+        public static final class C0413a {
 
             /* renamed from: a  reason: collision with root package name */
-            static final /* synthetic */ C0423a f31615a = new C0423a();
+            static final /* synthetic */ C0413a f31411a = new C0413a();
 
-            private C0423a() {
+            private C0413a() {
             }
         }
 

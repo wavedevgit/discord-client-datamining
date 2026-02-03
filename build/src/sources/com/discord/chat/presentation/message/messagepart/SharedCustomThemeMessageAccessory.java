@@ -96,7 +96,7 @@ public final class SharedCustomThemeMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof SharedCustomThemeMessageAccessory) {
             SharedCustomThemeMessageAccessory sharedCustomThemeMessageAccessory = (SharedCustomThemeMessageAccessory) obj;
-            return ChannelId.m1064equalsimpl0(this.channelId, sharedCustomThemeMessageAccessory.channelId) && MessageId.m1090equalsimpl0(this.messageId, sharedCustomThemeMessageAccessory.messageId) && Intrinsics.areEqual(this.data, sharedCustomThemeMessageAccessory.data) && Intrinsics.areEqual(this.author, sharedCustomThemeMessageAccessory.author);
+            return ChannelId.m1063equalsimpl0(this.channelId, sharedCustomThemeMessageAccessory.channelId) && MessageId.m1089equalsimpl0(this.messageId, sharedCustomThemeMessageAccessory.messageId) && Intrinsics.areEqual(this.data, sharedCustomThemeMessageAccessory.data) && Intrinsics.areEqual(this.author, sharedCustomThemeMessageAccessory.author);
         }
         return false;
     }
@@ -123,18 +123,18 @@ public final class SharedCustomThemeMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        int m1065hashCodeimpl = ((((ChannelId.m1065hashCodeimpl(this.channelId) * 31) + MessageId.m1091hashCodeimpl(this.messageId)) * 31) + this.data.hashCode()) * 31;
+        int m1064hashCodeimpl = ((((ChannelId.m1064hashCodeimpl(this.channelId) * 31) + MessageId.m1090hashCodeimpl(this.messageId)) * 31) + this.data.hashCode()) * 31;
         String str = this.author;
-        return m1065hashCodeimpl + (str == null ? 0 : str.hashCode());
+        return m1064hashCodeimpl + (str == null ? 0 : str.hashCode());
     }
 
     @NotNull
     public String toString() {
-        String m1067toStringimpl = ChannelId.m1067toStringimpl(this.channelId);
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1066toStringimpl = ChannelId.m1066toStringimpl(this.channelId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         SharedCustomThemeData sharedCustomThemeData = this.data;
         String str = this.author;
-        return "SharedCustomThemeMessageAccessory(channelId=" + m1067toStringimpl + ", messageId=" + m1093toStringimpl + ", data=" + sharedCustomThemeData + ", author=" + str + ")";
+        return "SharedCustomThemeMessageAccessory(channelId=" + m1066toStringimpl + ", messageId=" + m1092toStringimpl + ", data=" + sharedCustomThemeData + ", author=" + str + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

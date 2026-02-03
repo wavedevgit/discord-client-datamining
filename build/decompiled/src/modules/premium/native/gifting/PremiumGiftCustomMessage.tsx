@@ -170,4 +170,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.GiftCustomMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1615, 33, 1297, 671, 1234, 5383, 9402, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1623, 33, 1297, 671, 1234, 5388, 9421, 2]);

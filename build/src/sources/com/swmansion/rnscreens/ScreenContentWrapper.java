@@ -7,7 +7,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class ScreenContentWrapper extends ReactViewGroup {
 
     /* renamed from: d  reason: collision with root package name */
-    private a f18814d;
+    private a f17796d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -21,19 +21,19 @@ public final class ScreenContentWrapper extends ReactViewGroup {
     }
 
     public final a getDelegate$react_native_screens_release() {
-        return this.f18814d;
+        return this.f17796d;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // com.facebook.react.views.view.ReactViewGroup, android.view.ViewGroup, android.view.View
     public void onLayout(boolean z10, int i10, int i11, int i12, int i13) {
-        a aVar = this.f18814d;
+        a aVar = this.f17796d;
         if (aVar != null) {
             aVar.onContentWrapperLayout(z10, i10, i11, i12, i13);
         }
     }
 
     public final void setDelegate$react_native_screens_release(a aVar) {
-        this.f18814d = aVar;
+        this.f17796d = aVar;
     }
 }

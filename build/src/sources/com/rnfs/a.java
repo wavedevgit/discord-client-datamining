@@ -8,38 +8,38 @@ import java.util.Map;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public URL f18419a;
+    public URL f17401a;
 
     /* renamed from: b  reason: collision with root package name */
-    public File f18420b;
+    public File f17402b;
 
     /* renamed from: c  reason: collision with root package name */
-    public ReadableMap f18421c;
+    public ReadableMap f17403c;
 
     /* renamed from: d  reason: collision with root package name */
-    public int f18422d;
+    public int f17404d;
 
     /* renamed from: e  reason: collision with root package name */
-    public float f18423e;
+    public float f17405e;
 
     /* renamed from: f  reason: collision with root package name */
-    public int f18424f;
+    public int f17406f;
 
     /* renamed from: g  reason: collision with root package name */
-    public int f18425g;
+    public int f17407g;
 
     /* renamed from: h  reason: collision with root package name */
-    public c f18426h;
+    public c f17408h;
 
     /* renamed from: i  reason: collision with root package name */
-    public InterfaceC0223a f18427i;
+    public InterfaceC0204a f17409i;
 
     /* renamed from: j  reason: collision with root package name */
-    public b f18428j;
+    public b f17410j;
 
     /* renamed from: com.rnfs.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public interface InterfaceC0223a {
+    public interface InterfaceC0204a {
         void a(int i10, long j10, Map map);
     }
 

@@ -6,19 +6,19 @@ import ne.a;
 public final class DecoderReuseEvaluation {
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f13126a;
+    public final String f12094a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final Format f13127b;
+    public final Format f12095b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final Format f13128c;
+    public final Format f12096c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f13129d;
+    public final int f12097d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f13130e;
+    public final int f12098e;
 
     public DecoderReuseEvaluation(String str, Format format, Format format2, int i10, int i11) {
         boolean z10;
@@ -28,11 +28,11 @@ public final class DecoderReuseEvaluation {
             z10 = true;
         }
         a.a(z10);
-        this.f13126a = a.d(str);
-        this.f13127b = (Format) a.e(format);
-        this.f13128c = (Format) a.e(format2);
-        this.f13129d = i10;
-        this.f13130e = i11;
+        this.f12094a = a.d(str);
+        this.f12095b = (Format) a.e(format);
+        this.f12096c = (Format) a.e(format2);
+        this.f12097d = i10;
+        this.f12098e = i11;
     }
 
     public boolean equals(Object obj) {
@@ -41,7 +41,7 @@ public final class DecoderReuseEvaluation {
         }
         if (obj != null && DecoderReuseEvaluation.class == obj.getClass()) {
             DecoderReuseEvaluation decoderReuseEvaluation = (DecoderReuseEvaluation) obj;
-            if (this.f13129d == decoderReuseEvaluation.f13129d && this.f13130e == decoderReuseEvaluation.f13130e && this.f13126a.equals(decoderReuseEvaluation.f13126a) && this.f13127b.equals(decoderReuseEvaluation.f13127b) && this.f13128c.equals(decoderReuseEvaluation.f13128c)) {
+            if (this.f12097d == decoderReuseEvaluation.f12097d && this.f12098e == decoderReuseEvaluation.f12098e && this.f12094a.equals(decoderReuseEvaluation.f12094a) && this.f12095b.equals(decoderReuseEvaluation.f12095b) && this.f12096c.equals(decoderReuseEvaluation.f12096c)) {
                 return true;
             }
         }
@@ -49,6 +49,6 @@ public final class DecoderReuseEvaluation {
     }
 
     public int hashCode() {
-        return ((((((((527 + this.f13129d) * 31) + this.f13130e) * 31) + this.f13126a.hashCode()) * 31) + this.f13127b.hashCode()) * 31) + this.f13128c.hashCode();
+        return ((((((((527 + this.f12097d) * 31) + this.f12098e) * 31) + this.f12094a.hashCode()) * 31) + this.f12095b.hashCode()) * 31) + this.f12096c.hashCode();
     }
 }

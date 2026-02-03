@@ -1,88 +1,66 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var0 = exports;
-    var1 = global;
-    var4 = var1.Object;
-    var3 = var4.defineProperty;
-    var2 = {};
-    var1 = true;
-    var2.value = var1;
-    var1 = '__esModule';
-    var1 = var3.bind(var4)(var0, var1, var2);
-    var1 = function arg0, arg1, arg2() {
-        _fun22996: for (var _fun22996_ip = 0;;) switch (_fun22996_ip) {
-            case 0:
-                var2 = arg0;
-                var5 = arg1;
-                var3 = arg2;
-                var0 = undefined;
-                var4 = arguments.length;
-                var1 = 3;
-                if (!(!(var4 < var1))) {
-                    _fun22996_ip = 108;
-                    continue _fun22996
-                }
-            case 21:
+    _fun23059: for (var _fun23059_ip = 0;;) switch (_fun23059_ip) {
+        case 0:
+            var4 = require;
+            var1 = exports;
+            var2 = dependencyMap;
+            var _closure1_slot0 = var4;
+            var _closure1_slot1 = var2;
+            var0 = global;
+            var7 = var0.Object;
+            var6 = var7.defineProperty;
+            var5 = {};
+            var0 = true;
+            var5.value = var0;
+            var0 = '__esModule';
+            var0 = var6.bind(var7)(var1, var0, var5);
+            var0 = function arg0() {
+                var4 = undefined;
+                var1 = undefined;
+                var2 = _closure1_slot2;
+                var2 = var2.default;
+                var1 = arguments;
+                var5 = 1;
+                var1 = var2.bind(var4)(var5, var1);
                 var1 = global;
-                var1 = var1.Date;
-                var4 = var1.prototype;
-                var4 = Object.create(var4, {
-                    constructor: {
-                        value: var1
-                    }
-                });
-                var9 = var4;
-                var8 = var2;
-                var7 = var5;
-                var6 = var3;
-                var1 = new var9[var1](var8, var7, var6, var5);
-                var4 = var1 instanceof Object ? var1 : var4;
-                var1 = var4.getFullYear;
-                var1 = var1.bind(var4)();
-                var1 = var1 === var2;
-                if (!var1) {
-                    _fun22996_ip = 89;
-                    continue _fun22996
-                }
-            case 75:
-                var2 = var4.getMonth;
-                var2 = var2.bind(var4)();
-                var1 = var2 === var5;
-            case 89:
-                if (!var1) {
-                    _fun22996_ip = 106;
-                    continue _fun22996
-                }
-            case 92:
-                var2 = var4.getDate;
-                var2 = var2.bind(var4)();
-                var1 = var2 === var3;
-            case 106:
-                return var1;
-            case 108:
-                var1 = global;
-                var2 = var1.TypeError;
-                var1 = arguments.length;
-                var0 = '3 argument required, but only ';
-                var3 = var0 + var1;
-                var0 = var2.prototype;
-                var1 = Object.create(var0, {
-                    constructor: {
-                        value: var2
-                    }
-                });
-                var0 = ' present';
-                var8 = var3 + var0;
-                var9 = var1;
-                var0 = new var9[var2](var8, var7);
-                var0 = var0 instanceof Object ? var0 : var1;
-                throw var0;
-        }
-    };
-    var0.default = var1;
-    var1 = var0.default;
-    var0 = arg4;
-    var0.exports = var1;
-    var0 = undefined;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+                var2 = var1.Math;
+                var1 = var2.floor;
+                var3 = _closure1_slot0;
+                var0 = _closure1_slot1;
+                var0 = var0[var5];
+                var0 = var3.bind(var4)(var0);
+                var3 = var0.millisecondsInHour;
+                var0 = arg0;
+                var0 = var0 * var3;
+                var0 = var1.bind(var2)(var0);
+                return var0;
+            };
+            var1.default = var0;
+            var0 = 0;
+            var2 = var2[var0];
+            var0 = undefined;
+            var5 = var4.bind(var0)(var2);
+            if (!var5) {
+                _fun23059_ip = 90;
+                continue _fun23059
+            }
+        case 78:
+            var4 = var5.__esModule;
+            var2 = var5;
+            if (var4) {
+                _fun23059_ip = 99;
+                continue _fun23059
+            }
+        case 90:
+            var4 = {};
+            var4.default = var5;
+            var2 = var4;
+        case 99:
+            var _closure1_slot2 = var2;
+            var2 = var1.default;
+            var1 = arg4;
+            var1.exports = var2;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2574, 2752]);

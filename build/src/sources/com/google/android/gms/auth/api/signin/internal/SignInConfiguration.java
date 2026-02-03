@@ -15,18 +15,18 @@ public final class SignInConfiguration extends hf.a implements ReflectedParcelab
     public static final Parcelable.Creator<SignInConfiguration> CREATOR = new w();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f14380d;
+    private final String f13348d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final GoogleSignInOptions f14381e;
+    private final GoogleSignInOptions f13349e;
 
     public SignInConfiguration(String str, GoogleSignInOptions googleSignInOptions) {
-        this.f14380d = q.f(str);
-        this.f14381e = googleSignInOptions;
+        this.f13348d = q.f(str);
+        this.f13349e = googleSignInOptions;
     }
 
     public final GoogleSignInOptions b() {
-        return this.f14381e;
+        return this.f13349e;
     }
 
     public final boolean equals(Object obj) {
@@ -34,9 +34,9 @@ public final class SignInConfiguration extends hf.a implements ReflectedParcelab
             return false;
         }
         SignInConfiguration signInConfiguration = (SignInConfiguration) obj;
-        if (this.f14380d.equals(signInConfiguration.f14380d)) {
-            GoogleSignInOptions googleSignInOptions = this.f14381e;
-            GoogleSignInOptions googleSignInOptions2 = signInConfiguration.f14381e;
+        if (this.f13348d.equals(signInConfiguration.f13348d)) {
+            GoogleSignInOptions googleSignInOptions = this.f13349e;
+            GoogleSignInOptions googleSignInOptions2 = signInConfiguration.f13349e;
             if (googleSignInOptions == null) {
                 if (googleSignInOptions2 == null) {
                     return true;
@@ -49,15 +49,15 @@ public final class SignInConfiguration extends hf.a implements ReflectedParcelab
     }
 
     public final int hashCode() {
-        return new b().a(this.f14380d).a(this.f14381e).b();
+        return new b().a(this.f13348d).a(this.f13349e).b();
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
-        String str = this.f14380d;
+        String str = this.f13348d;
         int a10 = c.a(parcel);
         c.s(parcel, 2, str, false);
-        c.q(parcel, 5, this.f14381e, i10, false);
+        c.q(parcel, 5, this.f13349e, i10, false);
         c.b(parcel, a10);
     }
 }

@@ -18,22 +18,22 @@ import java.util.concurrent.TimeoutException;
 public abstract class n {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Function f21086a = new b();
+    private static final Function f19945a = new b();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public class a implements d0.a {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Function f21087a;
+        final /* synthetic */ Function f19946a;
 
         a(Function function) {
-            this.f21087a = function;
+            this.f19946a = function;
         }
 
         @Override // d0.a
         public ListenableFuture apply(Object obj) {
-            return n.p(this.f21087a.apply(obj));
+            return n.p(this.f19946a.apply(obj));
         }
     }
 
@@ -42,27 +42,27 @@ public abstract class n {
     public class c implements d0.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ c.a f21088a;
+        final /* synthetic */ c.a f19947a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ Function f21089b;
+        final /* synthetic */ Function f19948b;
 
         c(c.a aVar, Function function) {
-            this.f21088a = aVar;
-            this.f21089b = function;
+            this.f19947a = aVar;
+            this.f19948b = function;
         }
 
         @Override // d0.c
         public void onFailure(Throwable th2) {
-            this.f21088a.f(th2);
+            this.f19947a.f(th2);
         }
 
         @Override // d0.c
         public void onSuccess(Object obj) {
             try {
-                this.f21088a.c(this.f21089b.apply(obj));
+                this.f19947a.c(this.f19948b.apply(obj));
             } catch (Throwable th2) {
-                this.f21088a.f(th2);
+                this.f19947a.f(th2);
             }
         }
     }
@@ -72,15 +72,15 @@ public abstract class n {
     public class d implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ ListenableFuture f21090d;
+        final /* synthetic */ ListenableFuture f19949d;
 
         d(ListenableFuture listenableFuture) {
-            this.f21090d = listenableFuture;
+            this.f19949d = listenableFuture;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            this.f21090d.cancel(true);
+            this.f19949d.cancel(true);
         }
     }
 
@@ -89,38 +89,38 @@ public abstract class n {
     public static final class e implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final Future f21091d;
+        final Future f19950d;
 
         /* renamed from: e  reason: collision with root package name */
-        final d0.c f21092e;
+        final d0.c f19951e;
 
         e(Future future, d0.c cVar) {
-            this.f21091d = future;
-            this.f21092e = cVar;
+            this.f19950d = future;
+            this.f19951e = cVar;
         }
 
         @Override // java.lang.Runnable
         public void run() {
             try {
-                this.f21092e.onSuccess(n.l(this.f21091d));
+                this.f19951e.onSuccess(n.l(this.f19950d));
             } catch (Error e10) {
                 e = e10;
-                this.f21092e.onFailure(e);
+                this.f19951e.onFailure(e);
             } catch (RuntimeException e11) {
                 e = e11;
-                this.f21092e.onFailure(e);
+                this.f19951e.onFailure(e);
             } catch (ExecutionException e12) {
                 Throwable cause = e12.getCause();
                 if (cause == null) {
-                    this.f21092e.onFailure(e12);
+                    this.f19951e.onFailure(e12);
                 } else {
-                    this.f21092e.onFailure(cause);
+                    this.f19951e.onFailure(cause);
                 }
             }
         }
 
         public String toString() {
-            return e.class.getSimpleName() + "," + this.f21092e;
+            return e.class.getSimpleName() + "," + this.f19951e;
         }
     }
 
@@ -144,7 +144,7 @@ public abstract class n {
     }
 
     public static /* synthetic */ Object c(ListenableFuture listenableFuture, c.a aVar) {
-        v(false, listenableFuture, f21086a, aVar, c0.a.a());
+        v(false, listenableFuture, f19945a, aVar, c0.a.a());
         return "nonCancellationPropagating[" + listenableFuture + "]";
     }
 
@@ -239,8 +239,8 @@ public abstract class n {
     }
 
     public static ListenableFuture q(final long j10, final ScheduledExecutorService scheduledExecutorService, final ListenableFuture listenableFuture) {
-        return androidx.concurrent.futures.c.a(new c.InterfaceC0030c() { // from class: d0.e
-            @Override // androidx.concurrent.futures.c.InterfaceC0030c
+        return androidx.concurrent.futures.c.a(new c.InterfaceC0028c() { // from class: d0.e
+            @Override // androidx.concurrent.futures.c.InterfaceC0028c
             public final Object a(c.a aVar) {
                 return n.d(ListenableFuture.this, scheduledExecutorService, j10, aVar);
             }
@@ -248,8 +248,8 @@ public abstract class n {
     }
 
     public static ListenableFuture r(final long j10, final ScheduledExecutorService scheduledExecutorService, final Object obj, final boolean z10, final ListenableFuture listenableFuture) {
-        return androidx.concurrent.futures.c.a(new c.InterfaceC0030c() { // from class: d0.j
-            @Override // androidx.concurrent.futures.c.InterfaceC0030c
+        return androidx.concurrent.futures.c.a(new c.InterfaceC0028c() { // from class: d0.j
+            @Override // androidx.concurrent.futures.c.InterfaceC0028c
             public final Object a(c.a aVar) {
                 return n.a(ListenableFuture.this, scheduledExecutorService, obj, z10, j10, aVar);
             }
@@ -261,8 +261,8 @@ public abstract class n {
         if (listenableFuture.isDone()) {
             return listenableFuture;
         }
-        return androidx.concurrent.futures.c.a(new c.InterfaceC0030c() { // from class: d0.m
-            @Override // androidx.concurrent.futures.c.InterfaceC0030c
+        return androidx.concurrent.futures.c.a(new c.InterfaceC0028c() { // from class: d0.m
+            @Override // androidx.concurrent.futures.c.InterfaceC0028c
             public final Object a(c.a aVar) {
                 return n.c(ListenableFuture.this, aVar);
             }
@@ -270,7 +270,7 @@ public abstract class n {
     }
 
     public static void t(ListenableFuture listenableFuture, c.a aVar) {
-        u(listenableFuture, f21086a, aVar, c0.a.a());
+        u(listenableFuture, f19945a, aVar, c0.a.a());
     }
 
     public static void u(ListenableFuture listenableFuture, Function function, c.a aVar, Executor executor) {
@@ -304,8 +304,8 @@ public abstract class n {
     }
 
     public static ListenableFuture z(final ListenableFuture listenableFuture) {
-        return androidx.concurrent.futures.c.a(new c.InterfaceC0030c() { // from class: d0.h
-            @Override // androidx.concurrent.futures.c.InterfaceC0030c
+        return androidx.concurrent.futures.c.a(new c.InterfaceC0028c() { // from class: d0.h
+            @Override // androidx.concurrent.futures.c.InterfaceC0028c
             public final Object a(c.a aVar) {
                 return n.f(ListenableFuture.this, aVar);
             }

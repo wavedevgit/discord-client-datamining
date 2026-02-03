@@ -1,105 +1,211 @@
 package wm;
 
-import android.view.View;
 import kotlin.Unit;
-import kotlin.jvm.functions.Function0;
+import kotlin.coroutines.Continuation;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.functions.Function4;
-import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
-import kotlin.jvm.internal.Reflection;
+import kotlinx.coroutines.CoroutineScope;
+import wm.t;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d implements wm.b {
+public final class d implements wm.a, h {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final Object f52304d;
+    /* renamed from: a  reason: collision with root package name */
+    private final wm.a f52524a;
 
-    /* renamed from: e  reason: collision with root package name */
-    private final boolean f52305e;
-
-    /* renamed from: i  reason: collision with root package name */
-    private final Function0 f52306i;
-
-    /* renamed from: o  reason: collision with root package name */
-    private final c0 f52307o;
+    /* renamed from: b  reason: collision with root package name */
+    private final t.b f52525b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static final class a extends Lambda implements Function1 {
-
-        /* renamed from: d  reason: collision with root package name */
-        public static final a f52308d = new a();
-
+    static final class a extends Lambda implements Function4 {
         a() {
-            super(1);
-        }
-
-        @Override // kotlin.jvm.functions.Function1
-        /* renamed from: a */
-        public final Object invoke(d outer) {
-            Intrinsics.checkNotNullParameter(outer, "outer");
-            return outer.d();
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static final class b extends Lambda implements Function4 {
-
-        /* renamed from: d  reason: collision with root package name */
-        public static final b f52309d = new b();
-
-        b() {
             super(4);
         }
 
-        public final void a(View view, Function2 innerShowRendering, d outerRendering, a0 viewEnvironment) {
-            Intrinsics.checkNotNullParameter(view, "view");
-            Intrinsics.checkNotNullParameter(innerShowRendering, "innerShowRendering");
-            Intrinsics.checkNotNullParameter(outerRendering, "outerRendering");
-            Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-            if (!outerRendering.c()) {
-                e.c(view, outerRendering.b());
-            }
-            innerShowRendering.invoke(outerRendering.d(), viewEnvironment);
-            if (outerRendering.c()) {
-                e.c(view, outerRendering.b());
-            }
-        }
-
         @Override // kotlin.jvm.functions.Function4
-        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
-            a((View) obj, (Function2) obj2, (d) obj3, (a0) obj4);
-            return Unit.f33074a;
+        /* renamed from: a */
+        public final Object invoke(q iChild, Object obj, String iKey, Function1 iHandler) {
+            Intrinsics.checkNotNullParameter(iChild, "iChild");
+            Intrinsics.checkNotNullParameter(iKey, "iKey");
+            Intrinsics.checkNotNullParameter(iHandler, "iHandler");
+            return d.this.f52524a.b(iChild, obj, iKey, iHandler);
         }
     }
 
-    public d(Object wrapped, boolean z10, Function0 function0) {
-        Intrinsics.checkNotNullParameter(wrapped, "wrapped");
-        this.f52304d = wrapped;
-        this.f52305e = z10;
-        this.f52306i = function0;
-        this.f52307o = new i(Reflection.getOrCreateKotlinClass(d.class), a.f52308d, null, b.f52309d, 4, null);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    static final class b extends Lambda implements Function2 {
+
+        /* JADX INFO: Access modifiers changed from: package-private */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
+
+            /* renamed from: d  reason: collision with root package name */
+            int f52528d;
+
+            /* renamed from: e  reason: collision with root package name */
+            final /* synthetic */ Function1 f52529e;
+
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            a(Function1 function1, Continuation continuation) {
+                super(2, continuation);
+                this.f52529e = function1;
+            }
+
+            @Override // kotlin.coroutines.jvm.internal.a
+            public final Continuation create(Object obj, Continuation continuation) {
+                return new a(this.f52529e, continuation);
+            }
+
+            @Override // kotlin.coroutines.jvm.internal.a
+            public final Object invokeSuspend(Object obj) {
+                Object f10 = rr.b.f();
+                int i10 = this.f52528d;
+                if (i10 != 0) {
+                    if (i10 == 1) {
+                        kotlin.c.b(obj);
+                    } else {
+                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                    }
+                } else {
+                    kotlin.c.b(obj);
+                    Function1 function1 = this.f52529e;
+                    this.f52528d = 1;
+                    if (function1.invoke(this) == f10) {
+                        return f10;
+                    }
+                }
+                return Unit.f32464a;
+            }
+
+            @Override // kotlin.jvm.functions.Function2
+            public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
+            }
+        }
+
+        b() {
+            super(2);
+        }
+
+        public final void a(String iKey, Function1 iSideEffect) {
+            Intrinsics.checkNotNullParameter(iKey, "iKey");
+            Intrinsics.checkNotNullParameter(iSideEffect, "iSideEffect");
+            d.this.f52524a.a(iKey, new a(iSideEffect, null));
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
+            a((String) obj, (Function1) obj2);
+            return Unit.f32464a;
+        }
     }
 
-    @Override // wm.b
-    public c0 a() {
-        return this.f52307o;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    static final class c extends kotlin.coroutines.jvm.internal.k implements Function1 {
+
+        /* renamed from: d  reason: collision with root package name */
+        int f52530d;
+
+        /* renamed from: e  reason: collision with root package name */
+        final /* synthetic */ Function2 f52531e;
+
+        /* renamed from: i  reason: collision with root package name */
+        final /* synthetic */ d f52532i;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        c(Function2 function2, d dVar, Continuation continuation) {
+            super(1, continuation);
+            this.f52531e = function2;
+            this.f52532i = dVar;
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Continuation create(Continuation continuation) {
+            return new c(this.f52531e, this.f52532i, continuation);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Object invokeSuspend(Object obj) {
+            Object f10 = rr.b.f();
+            int i10 = this.f52530d;
+            if (i10 != 0) {
+                if (i10 == 1) {
+                    kotlin.c.b(obj);
+                } else {
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                }
+            } else {
+                kotlin.c.b(obj);
+                Function2 function2 = this.f52531e;
+                CoroutineScope a10 = kotlinx.coroutines.i.a(getContext());
+                this.f52530d = 1;
+                if (function2.invoke(a10, this) == f10) {
+                    return f10;
+                }
+            }
+            return Unit.f32464a;
+        }
+
+        @Override // kotlin.jvm.functions.Function1
+        public final Object invoke(Continuation continuation) {
+            return ((c) create(continuation)).invokeSuspend(Unit.f32464a);
+        }
     }
 
-    public final Function0 b() {
-        return this.f52306i;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* renamed from: wm.d$d  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0702d extends Lambda implements Function1 {
+        C0702d() {
+            super(1);
+        }
+
+        public final void a(r interceptedAction) {
+            Intrinsics.checkNotNullParameter(interceptedAction, "interceptedAction");
+            d.this.f52524a.c().d(interceptedAction);
+        }
+
+        @Override // kotlin.jvm.functions.Function1
+        public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+            a((r) obj);
+            return Unit.f32464a;
+        }
     }
 
-    public final boolean c() {
-        return this.f52305e;
+    public d(wm.a baseRenderContext, t.b interceptor) {
+        Intrinsics.checkNotNullParameter(baseRenderContext, "baseRenderContext");
+        Intrinsics.checkNotNullParameter(interceptor, "interceptor");
+        this.f52524a = baseRenderContext;
+        this.f52525b = interceptor;
     }
 
-    public final Object d() {
-        return this.f52304d;
+    @Override // wm.a
+    public void a(String key, Function2 sideEffect) {
+        Intrinsics.checkNotNullParameter(key, "key");
+        Intrinsics.checkNotNullParameter(sideEffect, "sideEffect");
+        this.f52525b.c(key, new c(sideEffect, this, null), new b());
     }
 
-    public /* synthetic */ d(Object obj, boolean z10, Function0 function0, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this(obj, (i10 & 2) != 0 ? false : z10, (i10 & 4) != 0 ? null : function0);
+    @Override // wm.a
+    public Object b(q child, Object obj, String key, Function1 handler) {
+        Intrinsics.checkNotNullParameter(child, "child");
+        Intrinsics.checkNotNullParameter(key, "key");
+        Intrinsics.checkNotNullParameter(handler, "handler");
+        return this.f52525b.a(child, obj, key, handler, new a());
+    }
+
+    @Override // wm.h
+    /* renamed from: f */
+    public void d(r value) {
+        Intrinsics.checkNotNullParameter(value, "value");
+        this.f52525b.b(value, new C0702d());
+    }
+
+    @Override // wm.a
+    public h c() {
+        return this;
     }
 }

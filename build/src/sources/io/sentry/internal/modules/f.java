@@ -10,7 +10,7 @@ import java.util.TreeMap;
 public final class f extends d {
 
     /* renamed from: e  reason: collision with root package name */
-    private final ClassLoader f29655e;
+    private final ClassLoader f30016e;
 
     public f(ILogger iLogger) {
         this(iLogger, f.class.getClassLoader());
@@ -21,7 +21,7 @@ public final class f extends d {
         InputStream resourceAsStream;
         TreeMap treeMap = new TreeMap();
         try {
-            resourceAsStream = this.f29655e.getResourceAsStream("sentry-external-modules.txt");
+            resourceAsStream = this.f30016e.getResourceAsStream("sentry-external-modules.txt");
             try {
             } catch (Throwable th2) {
                 if (resourceAsStream != null) {
@@ -34,12 +34,12 @@ public final class f extends d {
                 throw th2;
             }
         } catch (IOException e10) {
-            this.f29651a.b(SentryLevel.INFO, "Access to resources failed.", e10);
+            this.f30012a.b(SentryLevel.INFO, "Access to resources failed.", e10);
         } catch (SecurityException e11) {
-            this.f29651a.b(SentryLevel.INFO, "Access to resources denied.", e11);
+            this.f30012a.b(SentryLevel.INFO, "Access to resources denied.", e11);
         }
         if (resourceAsStream == null) {
-            this.f29651a.c(SentryLevel.INFO, "%s file was not found.", "sentry-external-modules.txt");
+            this.f30012a.c(SentryLevel.INFO, "%s file was not found.", "sentry-external-modules.txt");
             if (resourceAsStream != null) {
                 resourceAsStream.close();
                 return treeMap;
@@ -53,6 +53,6 @@ public final class f extends d {
 
     f(ILogger iLogger, ClassLoader classLoader) {
         super(iLogger);
-        this.f29655e = io.sentry.util.b.a(classLoader);
+        this.f30016e = io.sentry.util.b.a(classLoader);
     }
 }

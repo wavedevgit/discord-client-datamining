@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var3;
     var1 = function() { // Environment: var1
         var4 = function arg0() {
-            _fun42542: for (var _fun42542_ip = 0;;) switch (_fun42542_ip) {
+            _fun42595: for (var _fun42595_ip = 0;;) switch (_fun42595_ip) {
                 case 0:
                     var1 = arg0;
                     var2 = this;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = null;
                     var5 = var4 != var5;
                     if (!var5) {
-                        _fun42542_ip = 195;
-                        continue _fun42542
+                        _fun42595_ip = 195;
+                        continue _fun42595
                     }
                 case 161:
                     var5 = global;
@@ -154,4 +154,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.RewardHeroBlockRecord = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 3307, 4595, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 3316, 4599, 2]);

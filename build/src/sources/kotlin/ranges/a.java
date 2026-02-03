@@ -9,21 +9,21 @@ public class a implements Iterable, KMappedMarker {
     @NotNull
 
     /* renamed from: o  reason: collision with root package name */
-    public static final C0442a f33168o = new C0442a(null);
+    public static final C0438a f32558o = new C0438a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f33169d;
+    private final int f32559d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f33170e;
+    private final int f32560e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f33171i;
+    private final int f32561i;
 
     /* renamed from: kotlin.ranges.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0442a {
-        public /* synthetic */ C0442a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0438a {
+        public /* synthetic */ C0438a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
@@ -31,16 +31,16 @@ public class a implements Iterable, KMappedMarker {
             return new a(i10, i11, i12);
         }
 
-        private C0442a() {
+        private C0438a() {
         }
     }
 
     public a(int i10, int i11, int i12) {
         if (i12 != 0) {
             if (i12 != Integer.MIN_VALUE) {
-                this.f33169d = i10;
-                this.f33170e = rr.c.c(i10, i11, i12);
-                this.f33171i = i12;
+                this.f32559d = i10;
+                this.f32560e = tr.c.c(i10, i11, i12);
+                this.f32561i = i12;
                 return;
             }
             throw new IllegalArgumentException("Step must be greater than Int.MIN_VALUE to avoid overflow on negation.");
@@ -49,18 +49,18 @@ public class a implements Iterable, KMappedMarker {
     }
 
     public final int d() {
-        return this.f33169d;
+        return this.f32559d;
     }
 
     public final int e() {
-        return this.f33170e;
+        return this.f32560e;
     }
 
     public boolean equals(Object obj) {
         if (obj instanceof a) {
             if (!isEmpty() || !((a) obj).isEmpty()) {
                 a aVar = (a) obj;
-                if (this.f33169d == aVar.f33169d && this.f33170e == aVar.f33170e && this.f33171i == aVar.f33171i) {
+                if (this.f32559d == aVar.f32559d && this.f32560e == aVar.f32560e && this.f32561i == aVar.f32561i) {
                     return true;
                 }
                 return false;
@@ -71,29 +71,29 @@ public class a implements Iterable, KMappedMarker {
     }
 
     public final int f() {
-        return this.f33171i;
+        return this.f32561i;
     }
 
     @Override // java.lang.Iterable
     /* renamed from: g */
     public m0 iterator() {
-        return new as.b(this.f33169d, this.f33170e, this.f33171i);
+        return new cs.b(this.f32559d, this.f32560e, this.f32561i);
     }
 
     public int hashCode() {
         if (isEmpty()) {
             return -1;
         }
-        return (((this.f33169d * 31) + this.f33170e) * 31) + this.f33171i;
+        return (((this.f32559d * 31) + this.f32560e) * 31) + this.f32561i;
     }
 
     public boolean isEmpty() {
-        if (this.f33171i > 0) {
-            if (this.f33169d <= this.f33170e) {
+        if (this.f32561i > 0) {
+            if (this.f32559d <= this.f32560e) {
                 return false;
             }
             return true;
-        } else if (this.f33169d >= this.f33170e) {
+        } else if (this.f32559d >= this.f32560e) {
             return false;
         } else {
             return true;
@@ -103,20 +103,20 @@ public class a implements Iterable, KMappedMarker {
     public String toString() {
         StringBuilder sb2;
         int i10;
-        if (this.f33171i > 0) {
+        if (this.f32561i > 0) {
             sb2 = new StringBuilder();
-            sb2.append(this.f33169d);
+            sb2.append(this.f32559d);
             sb2.append("..");
-            sb2.append(this.f33170e);
+            sb2.append(this.f32560e);
             sb2.append(" step ");
-            i10 = this.f33171i;
+            i10 = this.f32561i;
         } else {
             sb2 = new StringBuilder();
-            sb2.append(this.f33169d);
+            sb2.append(this.f32559d);
             sb2.append(" downTo ");
-            sb2.append(this.f33170e);
+            sb2.append(this.f32560e);
             sb2.append(" step ");
-            i10 = -this.f33171i;
+            i10 = -this.f32561i;
         }
         sb2.append(i10);
         return sb2.toString();

@@ -5,44 +5,44 @@ import ui.c;
 final class q6 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final q6 f43585a = new q6();
+    static final q6 f43385a = new q6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43586b;
+    private static final ui.c f43386b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43587c;
+    private static final ui.c f43387c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43588d;
+    private static final ui.c f43388d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f43589e;
+    private static final ui.c f43389e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f43590f;
+    private static final ui.c f43390f;
 
     static {
         c.b a10 = ui.c.a("detectorOptions");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43586b = a10.b(s1Var.b()).a();
+        f43386b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("errorCodes");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43587c = a11.b(s1Var2.b()).a();
+        f43387c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("totalInitializationMs");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43588d = a12.b(s1Var3.b()).a();
+        f43388d = a12.b(s1Var3.b()).a();
         c.b a13 = ui.c.a("loggingInitializationMs");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f43589e = a13.b(s1Var4.b()).a();
+        f43389e = a13.b(s1Var4.b()).a();
         c.b a14 = ui.c.a("otherErrors");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f43590f = a14.b(s1Var5.b()).a();
+        f43390f = a14.b(s1Var5.b()).a();
     }
 
     private q6() {

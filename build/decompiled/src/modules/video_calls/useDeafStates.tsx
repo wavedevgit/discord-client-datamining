@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var1 = function arg0() {
-        _fun68643: for (var _fun68643_ip = 0;;) switch (_fun68643_ip) {
+        _fun68753: for (var _fun68753_ip = 0;;) switch (_fun68753_ip) {
             case 0:
                 var4 = arg0;
                 var7 = arguments[1];
@@ -16,22 +16,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = arguments[3];
                 var2 = undefined;
                 if (!(var7 === var2)) {
-                    _fun68643_ip = 25;
-                    continue _fun68643
+                    _fun68753_ip = 25;
+                    continue _fun68753
                 }
             case 18:
                 var7 = _closure1_slot4;
             case 25:
                 if (!(var5 === var2)) {
-                    _fun68643_ip = 36;
-                    continue _fun68643
+                    _fun68753_ip = 36;
+                    continue _fun68753
                 }
             case 29:
                 var5 = _closure1_slot3;
             case 36:
                 if (!(var8 === var2)) {
-                    _fun68643_ip = 47;
-                    continue _fun68643
+                    _fun68753_ip = 47;
+                    continue _fun68753
                 }
             case 40:
                 var8 = _closure1_slot2;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1 != var4;
                 var3 = null;
                 if (!var0) {
-                    _fun68643_ip = 90;
-                    continue _fun68643
+                    _fun68753_ip = 90;
+                    continue _fun68753
                 }
             case 58:
                 var6 = var7.getVoiceState;
@@ -58,16 +58,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var1 == var3;
                 var2 = undefined;
                 if (var4) {
-                    _fun68643_ip = 122;
-                    continue _fun68643
+                    _fun68753_ip = 122;
+                    continue _fun68753
                 }
             case 116:
                 var2 = var3.deaf;
             case 122:
                 var1 = var1 != var2;
                 if (!var1) {
-                    _fun68643_ip = 132;
-                    continue _fun68643
+                    _fun68753_ip = 132;
+                    continue _fun68753
                 }
             case 129:
                 var1 = var2;
@@ -139,4 +139,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.getDeafStates = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1216, 3467, 3512, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1216, 3476, 3521, 566, 2]);

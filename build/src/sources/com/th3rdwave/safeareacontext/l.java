@@ -7,31 +7,31 @@ import kotlin.enums.EnumEntries;
 public final class l {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final l f19070d = new l("OFF", 0);
+    public static final l f18052d = new l("OFF", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final l f19071e = new l("ADDITIVE", 1);
+    public static final l f18053e = new l("ADDITIVE", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final l f19072i = new l("MAXIMUM", 2);
+    public static final l f18054i = new l("MAXIMUM", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ l[] f19073o;
+    private static final /* synthetic */ l[] f18055o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f19074p;
+    private static final /* synthetic */ EnumEntries f18056p;
 
     static {
         l[] a10 = a();
-        f19073o = a10;
-        f19074p = qr.a.a(a10);
+        f18055o = a10;
+        f18056p = sr.a.a(a10);
     }
 
     private l(String str, int i10) {
     }
 
     private static final /* synthetic */ l[] a() {
-        return new l[]{f19070d, f19071e, f19072i};
+        return new l[]{f18052d, f18053e, f18054i};
     }
 
     public static l valueOf(String str) {
@@ -39,6 +39,6 @@ public final class l {
     }
 
     public static l[] values() {
-        return (l[]) f19073o.clone();
+        return (l[]) f18055o.clone();
     }
 }

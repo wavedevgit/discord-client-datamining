@@ -1,48 +1,211 @@
 package vo;
 
-import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
-import androidx.activity.result.ActivityResultCallback;
-import androidx.activity.result.contract.ActivityResultContract;
+import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
+import java.util.Map;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class d {
+public final class d {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a extends ActivityResultContract {
-        a() {
-        }
+    /* renamed from: a  reason: collision with root package name */
+    private final String f51712a;
 
-        @Override // androidx.activity.result.contract.ActivityResultContract
-        /* renamed from: a */
-        public Intent createIntent(Context context, vo.a input) {
-            Intrinsics.checkNotNullParameter(context, "context");
-            Intrinsics.checkNotNullParameter(input, "input");
-            Intent intent = input.a().f1925a;
-            Intrinsics.checkNotNullExpressionValue(intent, "intent");
-            intent.setData(Uri.parse(input.b()));
-            return intent;
-        }
+    /* renamed from: b  reason: collision with root package name */
+    private final String f51713b;
 
-        @Override // androidx.activity.result.contract.ActivityResultContract
-        /* renamed from: b */
-        public Integer parseResult(int i10, Intent intent) {
-            return Integer.valueOf(i10);
-        }
+    /* renamed from: c  reason: collision with root package name */
+    private final String f51714c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final String f51715d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final po.f f51716e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private final String f51717f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private final String f51718g;
+
+    /* renamed from: h  reason: collision with root package name */
+    private final String f51719h;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final String f51720i;
+
+    /* renamed from: j  reason: collision with root package name */
+    private final Map f51721j;
+
+    /* renamed from: k  reason: collision with root package name */
+    private final String f51722k;
+
+    public d(String str, String str2, String str3, String str4, po.f environment, String str5, String str6, String str7, String str8, Map map, String str9) {
+        Intrinsics.checkNotNullParameter(environment, "environment");
+        this.f51712a = str;
+        this.f51713b = str2;
+        this.f51714c = str3;
+        this.f51715d = str4;
+        this.f51716e = environment;
+        this.f51717f = str5;
+        this.f51718g = str6;
+        this.f51719h = str7;
+        this.f51720i = str8;
+        this.f51721j = map;
+        this.f51722k = str9;
     }
 
-    public static final f0 b() {
-        return new f0(new a(), new ActivityResultCallback() { // from class: vo.c
-            @Override // androidx.activity.result.ActivityResultCallback
-            public final void a(Object obj) {
-                d.c(((Integer) obj).intValue());
-            }
-        });
+    public final String a() {
+        return this.f51718g;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void c(int i10) {
-        new f().a(i10);
+    public final po.f b() {
+        return this.f51716e;
+    }
+
+    public final String c() {
+        return this.f51717f;
+    }
+
+    public final Map d() {
+        return this.f51721j;
+    }
+
+    public final String e() {
+        return this.f51714c;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof d)) {
+            return false;
+        }
+        d dVar = (d) obj;
+        if (Intrinsics.areEqual(this.f51712a, dVar.f51712a) && Intrinsics.areEqual(this.f51713b, dVar.f51713b) && Intrinsics.areEqual(this.f51714c, dVar.f51714c) && Intrinsics.areEqual(this.f51715d, dVar.f51715d) && this.f51716e == dVar.f51716e && Intrinsics.areEqual(this.f51717f, dVar.f51717f) && Intrinsics.areEqual(this.f51718g, dVar.f51718g) && Intrinsics.areEqual(this.f51719h, dVar.f51719h) && Intrinsics.areEqual(this.f51720i, dVar.f51720i) && Intrinsics.areEqual(this.f51721j, dVar.f51721j) && Intrinsics.areEqual(this.f51722k, dVar.f51722k)) {
+            return true;
+        }
+        return false;
+    }
+
+    public final String f() {
+        return this.f51719h;
+    }
+
+    public final String g() {
+        return this.f51715d;
+    }
+
+    public final String h() {
+        return this.f51712a;
+    }
+
+    public int hashCode() {
+        int hashCode;
+        int hashCode2;
+        int hashCode3;
+        int hashCode4;
+        int hashCode5;
+        int hashCode6;
+        int hashCode7;
+        int hashCode8;
+        int hashCode9;
+        String str = this.f51712a;
+        int i10 = 0;
+        if (str == null) {
+            hashCode = 0;
+        } else {
+            hashCode = str.hashCode();
+        }
+        int i11 = hashCode * 31;
+        String str2 = this.f51713b;
+        if (str2 == null) {
+            hashCode2 = 0;
+        } else {
+            hashCode2 = str2.hashCode();
+        }
+        int i12 = (i11 + hashCode2) * 31;
+        String str3 = this.f51714c;
+        if (str3 == null) {
+            hashCode3 = 0;
+        } else {
+            hashCode3 = str3.hashCode();
+        }
+        int i13 = (i12 + hashCode3) * 31;
+        String str4 = this.f51715d;
+        if (str4 == null) {
+            hashCode4 = 0;
+        } else {
+            hashCode4 = str4.hashCode();
+        }
+        int hashCode10 = (((i13 + hashCode4) * 31) + this.f51716e.hashCode()) * 31;
+        String str5 = this.f51717f;
+        if (str5 == null) {
+            hashCode5 = 0;
+        } else {
+            hashCode5 = str5.hashCode();
+        }
+        int i14 = (hashCode10 + hashCode5) * 31;
+        String str6 = this.f51718g;
+        if (str6 == null) {
+            hashCode6 = 0;
+        } else {
+            hashCode6 = str6.hashCode();
+        }
+        int i15 = (i14 + hashCode6) * 31;
+        String str7 = this.f51719h;
+        if (str7 == null) {
+            hashCode7 = 0;
+        } else {
+            hashCode7 = str7.hashCode();
+        }
+        int i16 = (i15 + hashCode7) * 31;
+        String str8 = this.f51720i;
+        if (str8 == null) {
+            hashCode8 = 0;
+        } else {
+            hashCode8 = str8.hashCode();
+        }
+        int i17 = (i16 + hashCode8) * 31;
+        Map map = this.f51721j;
+        if (map == null) {
+            hashCode9 = 0;
+        } else {
+            hashCode9 = map.hashCode();
+        }
+        int i18 = (i17 + hashCode9) * 31;
+        String str9 = this.f51722k;
+        if (str9 != null) {
+            i10 = str9.hashCode();
+        }
+        return i18 + i10;
+    }
+
+    public final String i() {
+        return this.f51713b;
+    }
+
+    public final String j() {
+        return this.f51722k;
+    }
+
+    public String toString() {
+        String str = this.f51712a;
+        String str2 = this.f51713b;
+        String str3 = this.f51714c;
+        String str4 = this.f51715d;
+        po.f fVar = this.f51716e;
+        String str5 = this.f51717f;
+        String str6 = this.f51718g;
+        String str7 = this.f51719h;
+        String str8 = this.f51720i;
+        Map map = this.f51721j;
+        String str9 = this.f51722k;
+        return "InquiryAttributes(templateId=" + str + ", templateVersion=" + str2 + ", inquiryId=" + str3 + ", sessionToken=" + str4 + ", environment=" + fVar + ", environmentId=" + str5 + ", accountId=" + str6 + ", referenceId=" + str7 + ", note=" + str8 + ", fields=" + map + ", themeSetId=" + str9 + ")";
+    }
+
+    public /* synthetic */ d(String str, String str2, String str3, String str4, po.f fVar, String str5, String str6, String str7, String str8, Map map, String str9, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this((i10 & 1) != 0 ? null : str, (i10 & 2) != 0 ? null : str2, (i10 & 4) != 0 ? null : str3, (i10 & 8) != 0 ? null : str4, fVar, (i10 & 32) != 0 ? null : str5, (i10 & 64) != 0 ? null : str6, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? null : str7, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0 ? null : str8, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 ? null : map, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0 ? null : str9);
     }
 }

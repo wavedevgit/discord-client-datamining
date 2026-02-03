@@ -1,11 +1,10 @@
 package com.discord.chat.bridge.polls;
 
-import bt.n2;
-import bt.v1;
+import at.m;
 import com.discord.chat.bridge.polls.PollAction;
 import com.facebook.react.uimanager.ViewProps;
-import jr.l;
-import jr.o;
+import dt.n2;
+import dt.v1;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
@@ -15,8 +14,9 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
+import lr.l;
+import lr.o;
 import org.jetbrains.annotations.NotNull;
-import ys.m;
 @m
 @Metadata(d1 = {"\u0000B\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0006\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0017\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 02\u00020\u0001:\u0002/0BC\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u0003¢\u0006\u0004\b\u000b\u0010\fBU\b\u0010\u0012\u0006\u0010\r\u001a\u00020\u000e\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010¢\u0006\u0004\b\u000b\u0010\u0011J\u0006\u0010\u001b\u001a\u00020\u0003J\t\u0010\u001c\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001d\u001a\u00020\u0005HÆ\u0003J\t\u0010\u001e\u001a\u00020\u0007HÆ\u0003J\u000b\u0010\u001f\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u0010 \u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u0010!\u001a\u0004\u0018\u00010\u0003HÆ\u0003JK\u0010\"\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u0003HÆ\u0001J\u0013\u0010#\u001a\u00020\u00072\b\u0010$\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010%\u001a\u00020\u000eHÖ\u0001J\t\u0010&\u001a\u00020\u0003HÖ\u0001J%\u0010'\u001a\u00020(2\u0006\u0010)\u001a\u00020\u00002\u0006\u0010*\u001a\u00020+2\u0006\u0010,\u001a\u00020-H\u0001¢\u0006\u0002\b.R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0013R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0015R\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0017R\u0013\u0010\b\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0013R\u0013\u0010\t\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u0013R\u0013\u0010\n\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0013¨\u00061"}, d2 = {"Lcom/discord/chat/bridge/polls/PollAction;", "", "label", "", "presentation", "Lcom/discord/chat/bridge/polls/PollActionPresentation;", ViewProps.ENABLED, "", "type", "secondaryLabel", ViewProps.ACCESSIBILITY_HINT, "<init>", "(Ljava/lang/String;Lcom/discord/chat/bridge/polls/PollActionPresentation;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Lcom/discord/chat/bridge/polls/PollActionPresentation;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getLabel", "()Ljava/lang/String;", "getPresentation", "()Lcom/discord/chat/bridge/polls/PollActionPresentation;", "getEnabled", "()Z", "getType", "getSecondaryLabel", "getAccessibilityHint", "getFullTextLabel", "component1", "component2", "component3", "component4", "component5", "component6", "copy", "equals", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -32,7 +32,7 @@ public final class PollAction {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, l.a(o.f32182e, new Function0() { // from class: n6.a
+    private static final Lazy[] $childSerializers = {null, l.b(o.f37120e, new Function0() { // from class: n6.a
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -112,17 +112,17 @@ public final class PollAction {
 
     public static final /* synthetic */ void write$Self$chat_release(PollAction pollAction, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         Lazy[] lazyArr = $childSerializers;
-        compositeEncoder.x(serialDescriptor, 0, pollAction.label);
-        compositeEncoder.m(serialDescriptor, 1, (ys.o) lazyArr[1].getValue(), pollAction.presentation);
-        compositeEncoder.w(serialDescriptor, 2, pollAction.enabled);
-        if (compositeEncoder.y(serialDescriptor, 3) || pollAction.type != null) {
-            compositeEncoder.B(serialDescriptor, 3, n2.f7662a, pollAction.type);
+        compositeEncoder.y(serialDescriptor, 0, pollAction.label);
+        compositeEncoder.D(serialDescriptor, 1, (at.o) lazyArr[1].getValue(), pollAction.presentation);
+        compositeEncoder.x(serialDescriptor, 2, pollAction.enabled);
+        if (compositeEncoder.z(serialDescriptor, 3) || pollAction.type != null) {
+            compositeEncoder.s(serialDescriptor, 3, n2.f20978a, pollAction.type);
         }
-        if (compositeEncoder.y(serialDescriptor, 4) || pollAction.secondaryLabel != null) {
-            compositeEncoder.B(serialDescriptor, 4, n2.f7662a, pollAction.secondaryLabel);
+        if (compositeEncoder.z(serialDescriptor, 4) || pollAction.secondaryLabel != null) {
+            compositeEncoder.s(serialDescriptor, 4, n2.f20978a, pollAction.secondaryLabel);
         }
-        if (compositeEncoder.y(serialDescriptor, 5) || pollAction.accessibilityHint != null) {
-            compositeEncoder.B(serialDescriptor, 5, n2.f7662a, pollAction.accessibilityHint);
+        if (compositeEncoder.z(serialDescriptor, 5) || pollAction.accessibilityHint != null) {
+            compositeEncoder.s(serialDescriptor, 5, n2.f20978a, pollAction.accessibilityHint);
         }
     }
 

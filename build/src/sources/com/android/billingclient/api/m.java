@@ -6,25 +6,25 @@ import java.util.concurrent.Callable;
 public final class m implements Callable {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ String f8727d;
+    final /* synthetic */ String f7695d;
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ a6.i f8728e;
+    final /* synthetic */ a6.i f7696e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ b f8729i;
+    final /* synthetic */ b f7697i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m(b bVar, String str, a6.i iVar) {
-        this.f8727d = str;
-        this.f8728e = iVar;
-        this.f8729i = bVar;
+        this.f7695d = str;
+        this.f7696e = iVar;
+        this.f7697i = bVar;
     }
 
     @Override // java.util.concurrent.Callable
     public final /* bridge */ /* synthetic */ Object call() {
-        r h02 = b.h0(this.f8729i, this.f8727d);
-        this.f8728e.a(h02.a(), h02.b());
+        r h02 = b.h0(this.f7697i, this.f7695d);
+        this.f7696e.a(h02.a(), h02.b());
         return null;
     }
 }

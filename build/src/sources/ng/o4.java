@@ -5,23 +5,23 @@ import ui.c;
 final class o4 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final o4 f41389a = new o4();
+    static final o4 f41428a = new o4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41390b;
+    private static final ui.c f41429b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41391c;
+    private static final ui.c f41430c;
 
     static {
         c.b a10 = ui.c.a("isFaceMeshEnabled");
         f fVar = new f();
         fVar.a(1);
-        f41390b = a10.b(fVar.b()).a();
+        f41429b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("useCase");
         f fVar2 = new f();
         fVar2.a(2);
-        f41391c = a11.b(fVar2.b()).a();
+        f41430c = a11.b(fVar2.b()).a();
     }
 
     private o4() {

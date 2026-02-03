@@ -1,59 +1,38 @@
 package wm;
 
+import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
+import kotlin.reflect.KType;
+import kotlinx.coroutines.flow.Flow;
+import wm.o;
+@Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0007\b\u0001\u0018\u0000*\u0004\b\u0000\u0010\u00012\b\u0012\u0004\u0012\u00028\u00000\u0002B\u001d\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00028\u00000\u0005¢\u0006\u0004\b\u0007\u0010\bJ\u0015\u0010\t\u001a\b\u0012\u0004\u0012\u00028\u00000\u0005H\u0016¢\u0006\u0004\b\t\u0010\nJ\u000f\u0010\f\u001a\u00020\u000bH\u0016¢\u0006\u0004\b\f\u0010\rR\u0014\u0010\u0004\u001a\u00020\u00038\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u000e\u0010\u000fR\u001a\u0010\u0006\u001a\b\u0012\u0004\u0012\u00028\u00000\u00058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0010\u0010\u0011¨\u0006\u0012"}, d2 = {"Lwm/n;", "OutputT", "Lwm/o;", "Lkotlin/reflect/KType;", "outputType", "Lkotlinx/coroutines/flow/Flow;", "work", "<init>", "(Lkotlin/reflect/KType;Lkotlinx/coroutines/flow/Flow;)V", "run", "()Lkotlinx/coroutines/flow/Flow;", "", "toString", "()Ljava/lang/String;", "b", "Lkotlin/reflect/KType;", "c", "Lkotlinx/coroutines/flow/Flow;", "wf1-workflow-core"}, k = 1, mv = {1, 6, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class n implements g {
+public final class n<OutputT> implements o<OutputT> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object f52365b;
+    private final KType f52560b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f52366c;
+    private final Flow f52561c;
 
-    /* renamed from: d  reason: collision with root package name */
-    private final String f52367d;
-
-    public n(Object wrapped, String name) {
-        Intrinsics.checkNotNullParameter(wrapped, "wrapped");
-        Intrinsics.checkNotNullParameter(name, "name");
-        this.f52365b = wrapped;
-        this.f52366c = name;
-        if (!StringsKt.k0(name)) {
-            this.f52367d = g.f52321a.a(wrapped, name);
-            return;
-        }
-        throw new IllegalArgumentException("name must not be blank.");
+    public n(KType outputType, Flow work) {
+        Intrinsics.checkNotNullParameter(outputType, "outputType");
+        Intrinsics.checkNotNullParameter(work, "work");
+        this.f52560b = outputType;
+        this.f52561c = work;
     }
 
-    public final Object a() {
-        return this.f52365b;
+    @Override // wm.o
+    public boolean a(o oVar) {
+        return o.b.a(this, oVar);
     }
 
-    @Override // wm.g
-    public String c() {
-        return this.f52367d;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof n)) {
-            return false;
-        }
-        n nVar = (n) obj;
-        if (Intrinsics.areEqual(this.f52365b, nVar.f52365b) && Intrinsics.areEqual(this.f52366c, nVar.f52366c)) {
-            return true;
-        }
-        return false;
-    }
-
-    public int hashCode() {
-        return (this.f52365b.hashCode() * 31) + this.f52366c.hashCode();
+    @Override // wm.o
+    public Flow run() {
+        return this.f52561c;
     }
 
     public String toString() {
-        return super.toString() + ": " + c();
+        return "TypedWorker(" + this.f52560b + ')';
     }
 }

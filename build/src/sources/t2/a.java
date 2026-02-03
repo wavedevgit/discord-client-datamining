@@ -9,10 +9,10 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int f49466a = c.f49470b;
+    private static final int f49677a = c.f49681b;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final int f49467b = c.f49469a;
+    private static final int f49678b = c.f49680a;
 
     public static final void a(View view) {
         Intrinsics.checkNotNullParameter(view, "<this>");
@@ -29,7 +29,7 @@ public abstract class a {
     }
 
     private static final b c(View view) {
-        int i10 = f49466a;
+        int i10 = f49677a;
         b bVar = (b) view.getTag(i10);
         if (bVar == null) {
             b bVar2 = new b();
@@ -41,6 +41,6 @@ public abstract class a {
 
     public static final void d(View view, boolean z10) {
         Intrinsics.checkNotNullParameter(view, "<this>");
-        view.setTag(f49467b, Boolean.valueOf(z10));
+        view.setTag(f49678b, Boolean.valueOf(z10));
     }
 }

@@ -9,16 +9,16 @@ import kotlin.reflect.jvm.internal.impl.types.KotlinType;
 public class y0 implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ValueParameterDescriptor f34224d;
+    private final ValueParameterDescriptor f33614d;
 
     public y0(ValueParameterDescriptor valueParameterDescriptor) {
-        this.f34224d = valueParameterDescriptor;
+        this.f33614d = valueParameterDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         KotlinType o10;
-        o10 = SignatureEnhancement.o(this.f34224d, (CallableMemberDescriptor) obj);
+        o10 = SignatureEnhancement.o(this.f33614d, (CallableMemberDescriptor) obj);
         return o10;
     }
 }

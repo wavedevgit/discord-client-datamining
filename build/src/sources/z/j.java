@@ -3,16 +3,16 @@ package z;
 public class j implements j0.y {
 
     /* renamed from: a  reason: collision with root package name */
-    private final j0.w f55258a;
+    private final j0.w f55396a;
 
     j(j0.w wVar) {
-        this.f55258a = wVar;
+        this.f55396a = wVar;
     }
 
     @Override // j0.y
     /* renamed from: a */
     public j0.z apply(j0.z zVar) {
-        this.f55258a.a(new j0.v(new t0(zVar), 1));
+        this.f55396a.a(new j0.v(new t0(zVar), 1));
         throw null;
     }
 }

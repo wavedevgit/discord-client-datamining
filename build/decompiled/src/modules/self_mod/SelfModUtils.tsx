@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/self_mod/SelfModUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Environment: var1
-        _fun39154: for (var _fun39154_ip = 0;;) switch (_fun39154_ip) {
+        _fun39206: for (var _fun39206_ip = 0;;) switch (_fun39206_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var0 = var1.getCurrentUser;
@@ -34,8 +34,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1 == var0;
                 var1 = undefined;
                 if (var2) {
-                    _fun39154_ip = 33;
-                    continue _fun39154
+                    _fun39206_ip = 33;
+                    continue _fun39206
                 }
             case 27:
                 var1 = var0.nsfwAllowed;
@@ -47,4 +47,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isCurrentUserTeen = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1613, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 2]);

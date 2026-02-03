@@ -6,43 +6,43 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class c5 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    boolean f29353d;
+    boolean f29714d;
 
     /* renamed from: e  reason: collision with root package name */
-    Double f29354e;
+    Double f29715e;
 
     /* renamed from: i  reason: collision with root package name */
-    boolean f29355i;
+    boolean f29716i;
 
     /* renamed from: o  reason: collision with root package name */
-    Double f29356o;
+    Double f29717o;
 
     /* renamed from: p  reason: collision with root package name */
-    String f29357p;
+    String f29718p;
 
     /* renamed from: q  reason: collision with root package name */
-    boolean f29358q;
+    boolean f29719q;
 
     /* renamed from: r  reason: collision with root package name */
-    boolean f29359r;
+    boolean f29720r;
 
     /* renamed from: s  reason: collision with root package name */
-    int f29360s;
+    int f29721s;
 
     /* renamed from: t  reason: collision with root package name */
-    boolean f29361t;
+    boolean f29722t;
 
     /* renamed from: u  reason: collision with root package name */
-    boolean f29362u;
+    boolean f29723u;
 
     /* renamed from: v  reason: collision with root package name */
-    boolean f29363v;
+    boolean f29724v;
 
     /* renamed from: w  reason: collision with root package name */
-    o3 f29364w;
+    o3 f29725w;
 
     /* renamed from: x  reason: collision with root package name */
-    private Map f29365x;
+    private Map f29726x;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -53,78 +53,78 @@ public final class c5 implements w1 {
             c5 c5Var = new c5();
             ConcurrentHashMap concurrentHashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String m02 = e3Var.m0();
-                m02.getClass();
+                String l02 = e3Var.l0();
+                l02.getClass();
                 char c10 = 65535;
-                switch (m02.hashCode()) {
+                switch (l02.hashCode()) {
                     case -801141276:
-                        if (m02.equals("is_enable_app_start_profiling")) {
+                        if (l02.equals("is_enable_app_start_profiling")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case -566246656:
-                        if (m02.equals("trace_sampled")) {
+                        if (l02.equals("trace_sampled")) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case -450071601:
-                        if (m02.equals("profiling_traces_dir_path")) {
+                        if (l02.equals("profiling_traces_dir_path")) {
                             c10 = 2;
                             break;
                         }
                         break;
                     case -436975123:
-                        if (m02.equals("is_continuous_profiling_enabled")) {
+                        if (l02.equals("is_continuous_profiling_enabled")) {
                             c10 = 3;
                             break;
                         }
                         break;
                     case -116896685:
-                        if (m02.equals("is_profiling_enabled")) {
+                        if (l02.equals("is_profiling_enabled")) {
                             c10 = 4;
                             break;
                         }
                         break;
                     case -104146616:
-                        if (m02.equals("is_start_profiler_on_app_start")) {
+                        if (l02.equals("is_start_profiler_on_app_start")) {
                             c10 = 5;
                             break;
                         }
                         break;
                     case -69617820:
-                        if (m02.equals("profile_sampled")) {
+                        if (l02.equals("profile_sampled")) {
                             c10 = 6;
                             break;
                         }
                         break;
                     case 401419348:
-                        if (m02.equals("profile_lifecycle")) {
+                        if (l02.equals("profile_lifecycle")) {
                             c10 = 7;
                             break;
                         }
                         break;
                     case 1401020980:
-                        if (m02.equals("continuous_profile_sampled")) {
+                        if (l02.equals("continuous_profile_sampled")) {
                             c10 = '\b';
                             break;
                         }
                         break;
                     case 1583866442:
-                        if (m02.equals("profiling_traces_hz")) {
+                        if (l02.equals("profiling_traces_hz")) {
                             c10 = '\t';
                             break;
                         }
                         break;
                     case 1653938779:
-                        if (m02.equals("trace_sample_rate")) {
+                        if (l02.equals("trace_sample_rate")) {
                             c10 = '\n';
                             break;
                         }
                         break;
                     case 2140552383:
-                        if (m02.equals("profile_sample_rate")) {
+                        if (l02.equals("profile_sample_rate")) {
                             c10 = 11;
                             break;
                         }
@@ -132,19 +132,19 @@ public final class c5 implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        Boolean x02 = e3Var.x0();
-                        if (x02 == null) {
+                        Boolean v02 = e3Var.v0();
+                        if (v02 == null) {
                             break;
                         } else {
-                            c5Var.f29362u = x02.booleanValue();
+                            c5Var.f29723u = v02.booleanValue();
                             break;
                         }
                     case 1:
-                        Boolean x03 = e3Var.x0();
-                        if (x03 == null) {
+                        Boolean v03 = e3Var.v0();
+                        if (v03 == null) {
                             break;
                         } else {
-                            c5Var.f29355i = x03.booleanValue();
+                            c5Var.f29716i = v03.booleanValue();
                             break;
                         }
                     case 2:
@@ -152,39 +152,39 @@ public final class c5 implements w1 {
                         if (r12 == null) {
                             break;
                         } else {
-                            c5Var.f29357p = r12;
+                            c5Var.f29718p = r12;
                             break;
                         }
                     case 3:
-                        Boolean x04 = e3Var.x0();
-                        if (x04 == null) {
+                        Boolean v04 = e3Var.v0();
+                        if (v04 == null) {
                             break;
                         } else {
-                            c5Var.f29359r = x04.booleanValue();
+                            c5Var.f29720r = v04.booleanValue();
                             break;
                         }
                     case 4:
-                        Boolean x05 = e3Var.x0();
-                        if (x05 == null) {
+                        Boolean v05 = e3Var.v0();
+                        if (v05 == null) {
                             break;
                         } else {
-                            c5Var.f29358q = x05.booleanValue();
+                            c5Var.f29719q = v05.booleanValue();
                             break;
                         }
                     case 5:
-                        Boolean x06 = e3Var.x0();
-                        if (x06 == null) {
+                        Boolean v06 = e3Var.v0();
+                        if (v06 == null) {
                             break;
                         } else {
-                            c5Var.f29363v = x06.booleanValue();
+                            c5Var.f29724v = v06.booleanValue();
                             break;
                         }
                     case 6:
-                        Boolean x07 = e3Var.x0();
-                        if (x07 == null) {
+                        Boolean v07 = e3Var.v0();
+                        if (v07 == null) {
                             break;
                         } else {
-                            c5Var.f29353d = x07.booleanValue();
+                            c5Var.f29714d = v07.booleanValue();
                             break;
                         }
                     case 7:
@@ -193,7 +193,7 @@ public final class c5 implements w1 {
                             break;
                         } else {
                             try {
-                                c5Var.f29364w = o3.valueOf(r13);
+                                c5Var.f29725w = o3.valueOf(r13);
                                 break;
                             } catch (IllegalArgumentException unused) {
                                 iLogger.c(SentryLevel.ERROR, "Error when deserializing ProfileLifecycle: " + r13, new Object[0]);
@@ -201,11 +201,11 @@ public final class c5 implements w1 {
                             }
                         }
                     case '\b':
-                        Boolean x08 = e3Var.x0();
-                        if (x08 == null) {
+                        Boolean v08 = e3Var.v0();
+                        if (v08 == null) {
                             break;
                         } else {
-                            c5Var.f29361t = x08.booleanValue();
+                            c5Var.f29722t = v08.booleanValue();
                             break;
                         }
                     case '\t':
@@ -213,30 +213,30 @@ public final class c5 implements w1 {
                         if (k12 == null) {
                             break;
                         } else {
-                            c5Var.f29360s = k12.intValue();
+                            c5Var.f29721s = k12.intValue();
                             break;
                         }
                     case '\n':
-                        Double l02 = e3Var.l0();
-                        if (l02 == null) {
+                        Double k02 = e3Var.k0();
+                        if (k02 == null) {
                             break;
                         } else {
-                            c5Var.f29356o = l02;
+                            c5Var.f29717o = k02;
                             break;
                         }
                     case 11:
-                        Double l03 = e3Var.l0();
-                        if (l03 == null) {
+                        Double k03 = e3Var.k0();
+                        if (k03 == null) {
                             break;
                         } else {
-                            c5Var.f29354e = l03;
+                            c5Var.f29715e = k03;
                             break;
                         }
                     default:
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.v1(iLogger, concurrentHashMap, m02);
+                        e3Var.v1(iLogger, concurrentHashMap, l02);
                         break;
                 }
             }
@@ -247,91 +247,91 @@ public final class c5 implements w1 {
     }
 
     public c5() {
-        this.f29355i = false;
-        this.f29356o = null;
-        this.f29353d = false;
-        this.f29354e = null;
-        this.f29361t = false;
-        this.f29357p = null;
-        this.f29358q = false;
-        this.f29359r = false;
-        this.f29364w = o3.MANUAL;
-        this.f29360s = 0;
-        this.f29362u = true;
-        this.f29363v = false;
+        this.f29716i = false;
+        this.f29717o = null;
+        this.f29714d = false;
+        this.f29715e = null;
+        this.f29722t = false;
+        this.f29718p = null;
+        this.f29719q = false;
+        this.f29720r = false;
+        this.f29725w = o3.MANUAL;
+        this.f29721s = 0;
+        this.f29723u = true;
+        this.f29724v = false;
     }
 
     public o3 a() {
-        return this.f29364w;
+        return this.f29725w;
     }
 
     public Double b() {
-        return this.f29354e;
+        return this.f29715e;
     }
 
     public String c() {
-        return this.f29357p;
+        return this.f29718p;
     }
 
     public int d() {
-        return this.f29360s;
+        return this.f29721s;
     }
 
     public Double e() {
-        return this.f29356o;
+        return this.f29717o;
     }
 
     public boolean f() {
-        return this.f29361t;
+        return this.f29722t;
     }
 
     public boolean g() {
-        return this.f29359r;
+        return this.f29720r;
     }
 
     public boolean h() {
-        return this.f29362u;
+        return this.f29723u;
     }
 
     public boolean i() {
-        return this.f29353d;
+        return this.f29714d;
     }
 
     public boolean j() {
-        return this.f29358q;
+        return this.f29719q;
     }
 
     public boolean k() {
-        return this.f29363v;
+        return this.f29724v;
     }
 
     public boolean l() {
-        return this.f29355i;
+        return this.f29716i;
     }
 
     public void m(Map map) {
-        this.f29365x = map;
+        this.f29726x = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        f3Var.e("profile_sampled").j(iLogger, Boolean.valueOf(this.f29353d));
-        f3Var.e("profile_sample_rate").j(iLogger, this.f29354e);
-        f3Var.e("continuous_profile_sampled").j(iLogger, Boolean.valueOf(this.f29361t));
-        f3Var.e("trace_sampled").j(iLogger, Boolean.valueOf(this.f29355i));
-        f3Var.e("trace_sample_rate").j(iLogger, this.f29356o);
-        f3Var.e("profiling_traces_dir_path").j(iLogger, this.f29357p);
-        f3Var.e("is_profiling_enabled").j(iLogger, Boolean.valueOf(this.f29358q));
-        f3Var.e("is_continuous_profiling_enabled").j(iLogger, Boolean.valueOf(this.f29359r));
-        f3Var.e("profile_lifecycle").j(iLogger, this.f29364w.name());
-        f3Var.e("profiling_traces_hz").j(iLogger, Integer.valueOf(this.f29360s));
-        f3Var.e("is_enable_app_start_profiling").j(iLogger, Boolean.valueOf(this.f29362u));
-        f3Var.e("is_start_profiler_on_app_start").j(iLogger, Boolean.valueOf(this.f29363v));
-        Map map = this.f29365x;
+        f3Var.e("profile_sampled").j(iLogger, Boolean.valueOf(this.f29714d));
+        f3Var.e("profile_sample_rate").j(iLogger, this.f29715e);
+        f3Var.e("continuous_profile_sampled").j(iLogger, Boolean.valueOf(this.f29722t));
+        f3Var.e("trace_sampled").j(iLogger, Boolean.valueOf(this.f29716i));
+        f3Var.e("trace_sample_rate").j(iLogger, this.f29717o);
+        f3Var.e("profiling_traces_dir_path").j(iLogger, this.f29718p);
+        f3Var.e("is_profiling_enabled").j(iLogger, Boolean.valueOf(this.f29719q));
+        f3Var.e("is_continuous_profiling_enabled").j(iLogger, Boolean.valueOf(this.f29720r));
+        f3Var.e("profile_lifecycle").j(iLogger, this.f29725w.name());
+        f3Var.e("profiling_traces_hz").j(iLogger, Integer.valueOf(this.f29721s));
+        f3Var.e("is_enable_app_start_profiling").j(iLogger, Boolean.valueOf(this.f29723u));
+        f3Var.e("is_start_profiler_on_app_start").j(iLogger, Boolean.valueOf(this.f29724v));
+        Map map = this.f29726x;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f29365x.get(str);
+                Object obj = this.f29726x.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -341,17 +341,17 @@ public final class c5 implements w1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c5(k7 k7Var, s8 s8Var) {
-        this.f29355i = s8Var.e().booleanValue();
-        this.f29356o = s8Var.d();
-        this.f29353d = s8Var.b().booleanValue();
-        this.f29354e = s8Var.a();
-        this.f29361t = k7Var.getInternalTracesSampler().c(io.sentry.util.d0.a().c());
-        this.f29357p = k7Var.getProfilingTracesDirPath();
-        this.f29358q = k7Var.isProfilingEnabled();
-        this.f29359r = k7Var.isContinuousProfilingEnabled();
-        this.f29364w = k7Var.getProfileLifecycle();
-        this.f29360s = k7Var.getProfilingTracesHz();
-        this.f29362u = k7Var.isEnableAppStartProfiling();
-        this.f29363v = k7Var.isStartProfilerOnAppStart();
+        this.f29716i = s8Var.e().booleanValue();
+        this.f29717o = s8Var.d();
+        this.f29714d = s8Var.b().booleanValue();
+        this.f29715e = s8Var.a();
+        this.f29722t = k7Var.getInternalTracesSampler().c(io.sentry.util.d0.a().c());
+        this.f29718p = k7Var.getProfilingTracesDirPath();
+        this.f29719q = k7Var.isProfilingEnabled();
+        this.f29720r = k7Var.isContinuousProfilingEnabled();
+        this.f29725w = k7Var.getProfileLifecycle();
+        this.f29721s = k7Var.getProfilingTracesHz();
+        this.f29723u = k7Var.isEnableAppStartProfiling();
+        this.f29724v = k7Var.isStartProfilerOnAppStart();
     }
 }

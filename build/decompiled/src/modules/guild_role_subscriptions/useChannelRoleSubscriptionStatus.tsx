@@ -8,29 +8,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var1 = function arg0() {
-        _fun44135: for (var _fun44135_ip = 0;;) switch (_fun44135_ip) {
+        _fun44191: for (var _fun44191_ip = 0;;) switch (_fun44191_ip) {
             case 0:
                 var2 = arguments[1];
                 var3 = arguments[2];
                 var6 = arguments[3];
                 var0 = undefined;
                 if (!(var2 === var0)) {
-                    _fun44135_ip = 22;
-                    continue _fun44135
+                    _fun44191_ip = 22;
+                    continue _fun44191
                 }
             case 15:
                 var2 = _closure1_slot3;
             case 22:
                 if (!(var3 === var0)) {
-                    _fun44135_ip = 33;
-                    continue _fun44135
+                    _fun44191_ip = 33;
+                    continue _fun44191
                 }
             case 26:
                 var3 = _closure1_slot2;
             case 33:
                 if (!(var6 === var0)) {
-                    _fun44135_ip = 44;
-                    continue _fun44135
+                    _fun44191_ip = 44;
+                    continue _fun44191
                 }
             case 37:
                 var6 = _closure1_slot4;
@@ -40,20 +40,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var1.bind(var2)(var0);
                 var0 = null;
                 if (!(var0 != var5)) {
-                    _fun44135_ip = 76;
-                    continue _fun44135
+                    _fun44191_ip = 76;
+                    continue _fun44191
                 }
             case 63:
                 var1 = var5.isRoleSubscriptionTemplatePreviewChannel;
                 var1 = var1.bind(var5)();
                 if (var1) {
-                    _fun44135_ip = 191;
-                    continue _fun44135
+                    _fun44191_ip = 191;
+                    continue _fun44191
                 }
             case 76:
                 if (!(var0 != var5)) {
-                    _fun44135_ip = 105;
-                    continue _fun44135
+                    _fun44191_ip = 105;
+                    continue _fun44191
                 }
             case 80:
                 var2 = var3.isChannelGated;
@@ -61,13 +61,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var5.id;
                 var0 = var2.bind(var3)(var1, var0);
                 if (var0) {
-                    _fun44135_ip = 114;
-                    continue _fun44135
+                    _fun44191_ip = 114;
+                    continue _fun44191
                 }
             case 105:
                 var0 = _closure1_slot6;
-                _fun44135_ip = 189;
-                continue _fun44135;
+                _fun44191_ip = 189;
+                continue _fun44191;
             case 114:
                 var1 = {};
                 var2 = true;
@@ -77,15 +77,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var6.can;
                 var3 = _closure1_slot5;
                 if (var2) {
-                    _fun44135_ip = 166;
-                    continue _fun44135
+                    _fun44191_ip = 166;
+                    continue _fun44191
                 }
             case 149:
                 var2 = var3.VIEW_CHANNEL;
                 var2 = var4.bind(var6)(var2, var5);
                 var2 = !var2;
-                _fun44135_ip = 181;
-                continue _fun44135;
+                _fun44191_ip = 181;
+                continue _fun44191;
             case 166:
                 var3 = var3.CONNECT;
                 var3 = var4.bind(var6)(var3, var5);
@@ -94,8 +94,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.needSubscriptionToAccess = var2;
                 var0 = var1;
             case 189:
-                _fun44135_ip = 205;
-                continue _fun44135;
+                _fun44191_ip = 205;
+                continue _fun44191;
             case 191:
                 var0 = {
                     'isSubscriptionGated': true,
@@ -178,4 +178,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.getChannelRoleSubscriptionStatus = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1663, 1372, 3082, 660, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1672, 1372, 3091, 660, 566, 2]);

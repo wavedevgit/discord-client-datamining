@@ -242,6 +242,6 @@ public final class FastestListDeserializerSectionsKt {
             list2.add(Integer.valueOf(intRef.element));
             intRef.element += entry.getSize();
         }
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 }

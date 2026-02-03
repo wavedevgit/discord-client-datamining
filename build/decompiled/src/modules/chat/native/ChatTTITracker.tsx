@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/chat/native/ChatTTITracker.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun89157: for (var _fun89157_ip = 0;;) switch (_fun89157_ip) {
+        _fun89249: for (var _fun89249_ip = 0;;) switch (_fun89249_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.messages;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4 > var0;
                 var4 = null;
                 if (!var0) {
-                    _fun89157_ip = 104;
-                    continue _fun89157
+                    _fun89249_ip = 104;
+                    continue _fun89249
                 }
             case 40:
                 var12 = _closure1_slot3;
@@ -82,22 +82,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0[0] = var4;
                 var4 = var6.hasFetched;
                 if (var4) {
-                    _fun89157_ip = 143;
-                    continue _fun89157
+                    _fun89249_ip = 143;
+                    continue _fun89249
                 }
             case 121:
                 var8 = var6.ready;
                 var4 = null;
                 if (!var8) {
-                    _fun89157_ip = 207;
-                    continue _fun89157
+                    _fun89249_ip = 207;
+                    continue _fun89249
                 }
             case 132:
                 var6 = var6.cached;
                 var4 = null;
                 if (var6) {
-                    _fun89157_ip = 207;
-                    continue _fun89157
+                    _fun89249_ip = 207;
+                    continue _fun89249
                 }
             case 143:
                 var9 = _closure1_slot3;
@@ -138,4 +138,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ChatTTITracker = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 9692, 14, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 9711, 14, 2]);

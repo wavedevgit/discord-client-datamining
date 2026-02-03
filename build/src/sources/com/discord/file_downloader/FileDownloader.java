@@ -5,7 +5,6 @@ import com.discord.resource_usage.DeviceResourceUsageRecorder;
 import java.io.File;
 import java.util.Iterator;
 import java.util.Map;
-import jr.l;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.collections.o0;
@@ -13,7 +12,8 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.flow.Flow;
-import ks.g;
+import lr.l;
+import ms.g;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -26,7 +26,7 @@ public final class FileDownloader {
     @NotNull
     public static final FileDownloader INSTANCE = new FileDownloader();
     @NotNull
-    private static final Lazy defaultClient$delegate = l.b(new Function0() { // from class: com.discord.file_downloader.a
+    private static final Lazy defaultClient$delegate = l.a(new Function0() { // from class: com.discord.file_downloader.a
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             OkHttpClient defaultClient_delegate$lambda$0;

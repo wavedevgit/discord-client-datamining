@@ -99,7 +99,7 @@ public final class AudioAttachmentMessageAccessory extends MessageAttachmentAcce
         }
         if (obj instanceof AudioAttachmentMessageAccessory) {
             AudioAttachmentMessageAccessory audioAttachmentMessageAccessory = (AudioAttachmentMessageAccessory) obj;
-            return ChannelId.m1064equalsimpl0(this.channelId, audioAttachmentMessageAccessory.channelId) && MessageId.m1090equalsimpl0(this.messageId, audioAttachmentMessageAccessory.messageId) && Intrinsics.areEqual(this.attachment, audioAttachmentMessageAccessory.attachment) && this.attachmentIndex == audioAttachmentMessageAccessory.attachmentIndex && Intrinsics.areEqual((Object) this.attachmentsOpacity, (Object) audioAttachmentMessageAccessory.attachmentsOpacity) && Intrinsics.areEqual(this.authorId, audioAttachmentMessageAccessory.authorId) && Intrinsics.areEqual(this.color, audioAttachmentMessageAccessory.color) && this.isVoiceMessage == audioAttachmentMessageAccessory.isVoiceMessage;
+            return ChannelId.m1063equalsimpl0(this.channelId, audioAttachmentMessageAccessory.channelId) && MessageId.m1089equalsimpl0(this.messageId, audioAttachmentMessageAccessory.messageId) && Intrinsics.areEqual(this.attachment, audioAttachmentMessageAccessory.attachment) && this.attachmentIndex == audioAttachmentMessageAccessory.attachmentIndex && Intrinsics.areEqual((Object) this.attachmentsOpacity, (Object) audioAttachmentMessageAccessory.attachmentsOpacity) && Intrinsics.areEqual(this.authorId, audioAttachmentMessageAccessory.authorId) && Intrinsics.areEqual(this.color, audioAttachmentMessageAccessory.color) && this.isVoiceMessage == audioAttachmentMessageAccessory.isVoiceMessage;
         }
         return false;
     }
@@ -142,13 +142,13 @@ public final class AudioAttachmentMessageAccessory extends MessageAttachmentAcce
     }
 
     public int hashCode() {
-        int m1065hashCodeimpl = ((((((ChannelId.m1065hashCodeimpl(this.channelId) * 31) + MessageId.m1091hashCodeimpl(this.messageId)) * 31) + this.attachment.hashCode()) * 31) + Integer.hashCode(this.attachmentIndex)) * 31;
+        int m1064hashCodeimpl = ((((((ChannelId.m1064hashCodeimpl(this.channelId) * 31) + MessageId.m1090hashCodeimpl(this.messageId)) * 31) + this.attachment.hashCode()) * 31) + Integer.hashCode(this.attachmentIndex)) * 31;
         Float f10 = this.attachmentsOpacity;
-        int hashCode = (m1065hashCodeimpl + (f10 == null ? 0 : f10.hashCode())) * 31;
+        int hashCode = (m1064hashCodeimpl + (f10 == null ? 0 : f10.hashCode())) * 31;
         UserId userId = this.authorId;
-        int m1143hashCodeimpl = (hashCode + (userId == null ? 0 : UserId.m1143hashCodeimpl(userId.m1147unboximpl()))) * 31;
+        int m1142hashCodeimpl = (hashCode + (userId == null ? 0 : UserId.m1142hashCodeimpl(userId.m1146unboximpl()))) * 31;
         Integer num = this.color;
-        return ((m1143hashCodeimpl + (num != null ? num.hashCode() : 0)) * 31) + Boolean.hashCode(this.isVoiceMessage);
+        return ((m1142hashCodeimpl + (num != null ? num.hashCode() : 0)) * 31) + Boolean.hashCode(this.isVoiceMessage);
     }
 
     public final boolean isVoiceMessage() {
@@ -157,15 +157,15 @@ public final class AudioAttachmentMessageAccessory extends MessageAttachmentAcce
 
     @NotNull
     public String toString() {
-        String m1067toStringimpl = ChannelId.m1067toStringimpl(this.channelId);
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1066toStringimpl = ChannelId.m1066toStringimpl(this.channelId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         Attachment attachment = this.attachment;
         int i10 = this.attachmentIndex;
         Float f10 = this.attachmentsOpacity;
         UserId userId = this.authorId;
         Integer num = this.color;
         boolean z10 = this.isVoiceMessage;
-        return "AudioAttachmentMessageAccessory(channelId=" + m1067toStringimpl + ", messageId=" + m1093toStringimpl + ", attachment=" + attachment + ", attachmentIndex=" + i10 + ", attachmentsOpacity=" + f10 + ", authorId=" + userId + ", color=" + num + ", isVoiceMessage=" + z10 + ")";
+        return "AudioAttachmentMessageAccessory(channelId=" + m1066toStringimpl + ", messageId=" + m1092toStringimpl + ", attachment=" + attachment + ", attachmentIndex=" + i10 + ", attachmentsOpacity=" + f10 + ", authorId=" + userId + ", color=" + num + ", isVoiceMessage=" + z10 + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

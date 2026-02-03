@@ -5,32 +5,32 @@ import android.content.Context;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private volatile Object f28842a = null;
+    private volatile Object f29203a = null;
 
     /* renamed from: b  reason: collision with root package name */
-    private final InterfaceC0383a f28843b;
+    private final InterfaceC0382a f29204b;
 
     /* renamed from: io.sentry.android.core.util.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public interface InterfaceC0383a {
+    public interface InterfaceC0382a {
         Object a(Context context);
     }
 
-    public a(InterfaceC0383a interfaceC0383a) {
-        this.f28843b = interfaceC0383a;
+    public a(InterfaceC0382a interfaceC0382a) {
+        this.f29204b = interfaceC0382a;
     }
 
     public Object a(Context context) {
-        if (this.f28842a == null) {
+        if (this.f29203a == null) {
             synchronized (this) {
                 try {
-                    if (this.f28842a == null) {
-                        this.f28842a = this.f28843b.a(context);
+                    if (this.f29203a == null) {
+                        this.f29203a = this.f29204b.a(context);
                     }
                 } finally {
                 }
             }
         }
-        return this.f28842a;
+        return this.f29203a;
     }
 }

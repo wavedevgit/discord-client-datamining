@@ -3,9 +3,9 @@ package pj;
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f46073a;
+    private final a f46031a;
 
     public b(a aVar) {
-        this.f46073a = aVar;
+        this.f46031a = aVar;
     }
 }

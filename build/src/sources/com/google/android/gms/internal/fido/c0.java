@@ -7,7 +7,7 @@ import java.util.Objects;
 public final class c0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f14607a = ",\n  ";
+    private final String f13575a = ",\n  ";
 
     private c0(String str) {
     }
@@ -30,7 +30,7 @@ public final class c0 {
             if (it.hasNext()) {
                 sb2.append(d(it.next()));
                 while (it.hasNext()) {
-                    sb2.append((CharSequence) this.f14607a);
+                    sb2.append((CharSequence) this.f13575a);
                     sb2.append(d(it.next()));
                 }
             }

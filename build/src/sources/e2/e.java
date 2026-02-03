@@ -24,17 +24,17 @@ public abstract class e {
     public class a extends InputConnectionWrapper {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ c f22568a;
+        final /* synthetic */ c f21259a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(InputConnection inputConnection, boolean z10, c cVar) {
             super(inputConnection, z10);
-            this.f22568a = cVar;
+            this.f21259a = cVar;
         }
 
         @Override // android.view.inputmethod.InputConnectionWrapper, android.view.inputmethod.InputConnection
         public boolean commitContent(InputContentInfo inputContentInfo, int i10, Bundle bundle) {
-            if (this.f22568a.a(f.f(inputContentInfo), i10, bundle)) {
+            if (this.f21259a.a(f.f(inputContentInfo), i10, bundle)) {
                 return true;
             }
             return super.commitContent(inputContentInfo, i10, bundle);
@@ -46,17 +46,17 @@ public abstract class e {
     public class b extends InputConnectionWrapper {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ c f22569a;
+        final /* synthetic */ c f21260a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(InputConnection inputConnection, boolean z10, c cVar) {
             super(inputConnection, z10);
-            this.f22569a = cVar;
+            this.f21260a = cVar;
         }
 
         @Override // android.view.inputmethod.InputConnectionWrapper, android.view.inputmethod.InputConnection
         public boolean performPrivateCommand(String str, Bundle bundle) {
-            if (e.e(str, bundle, this.f22569a)) {
+            if (e.e(str, bundle, this.f21260a)) {
                 return true;
             }
             return super.performPrivateCommand(str, bundle);

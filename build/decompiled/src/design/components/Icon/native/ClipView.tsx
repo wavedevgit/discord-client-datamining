@@ -1,7 +1,7 @@
 // design/components/Icon/native/ClipView.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun48306: for (var _fun48306_ip = 0;;) switch (_fun48306_ip) {
+    _fun48364: for (var _fun48364_ip = 0;;) switch (_fun48364_ip) {
         case 0:
             var6 = require;
             var5 = metroImportDefault;
@@ -31,14 +31,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var8.isAndroid;
             var3 = var3.bind(var8)();
             if (var3) {
-                _fun48306_ip = 125;
-                continue _fun48306
+                _fun48364_ip = 125;
+                continue _fun48364
             }
         case 112:
             var3 = 'ClipView';
             var4 = var4.bind(var0)(var3);
-            _fun48306_ip = 137;
-            continue _fun48306;
+            _fun48364_ip = 137;
+            continue _fun48364;
         case 125:
             var3 = 2;
             var3 = var7[var3];
@@ -60,4 +60,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.CutoutShape = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 478, 5453, 3711, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 478, 5458, 3720, 2]);

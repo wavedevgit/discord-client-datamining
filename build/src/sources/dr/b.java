@@ -1,11 +1,18 @@
 package dr;
 
-import br.q;
-import br.s;
+import dr.l;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class b implements s {
-    @Override // br.s
-    public Object a(br.g gVar, q qVar) {
-        return new er.c(gVar.e());
+public class b implements l.a {
+    @Override // dr.l.a
+    public void a(l lVar, gv.r rVar) {
+        if (lVar.r(rVar)) {
+            lVar.B();
+            lVar.A();
+        }
+    }
+
+    @Override // dr.l.a
+    public void b(l lVar, gv.r rVar) {
+        lVar.B();
     }
 }

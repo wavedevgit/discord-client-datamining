@@ -1,163 +1,110 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = global;
-    var5 = var2.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
     var2 = {};
-    var3 = 'function pnpm_ViewDescriptorsSetTs1(descriptors){const{item}=this.__closure;const index=descriptors.findIndex(function(descriptor){return descriptor.tag===item.tag;});if(index!==-1){descriptors[index]=item;}else{descriptors.push(item);}return descriptors;}';
-    var2.code = var3;
-    var _closure1_slot2 = var2;
-    var2 = {};
-    var3 = 'function pnpm_ViewDescriptorsSetTs2(descriptors){const{viewTag}=this.__closure;const index=descriptors.findIndex(function(descriptor){return descriptor.tag===viewTag;});if(index!==-1){descriptors.splice(index,1);}return descriptors;}';
-    var2.code = var3;
-    var _closure1_slot3 = var2;
-    var0 = function() {
-        var3 = _closure1_slot0;
-        var2 = _closure1_slot1;
-        var0 = 0;
-        var2 = var2[var0];
-        var0 = undefined;
-        var3 = var3.bind(var0)(var2);
-        var2 = var3.makeMutable;
-        var0 = new Array(0);
-        var2 = var2.bind(var3)(var0);
-        var _closure2_slot0 = var2;
-        var0 = global;
-        var0 = var0.Set;
-        var3 = var0.prototype;
-        var3 = Object.create(var3, {
-            constructor: {
-                value: var0
-            }
-        });
-        var5 = var3;
-        var0 = new var5[var0](var4);
-        var0 = var0 instanceof Object ? var0 : var3;
-        var _closure2_slot1 = var0;
-        var0 = {};
-        var0.shareableViewDescriptors = var2;
-        var2 = function arg0() {
-            var4 = arg0;
-            var _closure3_slot0 = var4;
-            var5 = _closure2_slot1;
-            var3 = var5.add;
-            var2 = var4.tag;
-            var2 = var3.bind(var5)(var2);
-            var3 = _closure2_slot0;
-            var2 = var3.modify;
-            var1 = function arg0() {
-                _fun34027: for (var _fun34027_ip = 0;;) switch (_fun34027_ip) {
-                    case 0:
-                        var0 = arg0;
-                        var2 = var0.findIndex;
-                        var1 = function(arg0) { // Environment: var1
-                            var0 = arg0;
-                            var1 = var0.tag;
-                            var0 = _closure3_slot0;
-                            var0 = var0.tag;
-                            var0 = var1 === var0;
-                            return var0;
-                        };
-                        var2 = var2.bind(var0)(var1);
-                        var1 = -1;
-                        if (!(var1 === var2)) {
-                            _fun34027_ip = 50;
-                            continue _fun34027
-                        }
-                    case 31:
-                        var3 = var0.push;
-                        var1 = _closure3_slot0;
-                        var1 = var3.bind(var0)(var1);
-                        _fun34027_ip = 61;
-                        continue _fun34027;
-                    case 50:
-                        var1 = _closure3_slot0;
-                        var0[var2] = var1;
-                    case 61:
-                        return var0;
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = function arg0, arg1() {
+        _fun34053: for (var _fun34053_ip = 0;;) switch (_fun34053_ip) {
+            case 0:
+                var0 = arg1;
+                var14 = var0.translateX;
+                var12 = var0.translateY;
+                var7 = var0.scaleX;
+                var8 = var0.scaleY;
+                var3 = var0.reversed;
+                var0 = {};
+                var1 = arg0;
+                var0.name = var1;
+                var1 = {};
+                var2 = {};
+                var9 = {};
+                var6 = global;
+                var4 = var6.HermesInternal;
+                var4 = var4.concat;
+                var5 = '';
+                var11 = 'px';
+                var4 = var4.bind(var5)(var14, var11);
+                var9.translateX = var4;
+                var4 = var6.HermesInternal;
+                var4 = var4.concat;
+                var4 = var4.bind(var5)(var12, var11);
+                var9.translateY = var4;
+                var4 = var6.HermesInternal;
+                var10 = var4.concat;
+                var4 = ',';
+                var4 = var10.bind(var5)(var7, var4, var8);
+                var9.scale = var4;
+                var4 = new Array(1);
+                var4[0] = var9;
+                var2.transform = var4;
+                var1[0] = var2;
+                var2 = {};
+                var4 = {};
+                var9 = '0px';
+                var10 = var9;
+                if (!var3) {
+                    _fun34053_ip = 178;
+                    continue _fun34053
                 }
-            };
-            var0 = {};
-            var0.item = var4;
-            var1.__closure = var0;
-            var0 = 8747402369132.0;
-            var1.__workletHash = var0;
-            var0 = _closure1_slot2;
-            var1.__initData = var0;
-            var0 = false;
-            var0 = var2.bind(var3)(var1, var0);
-            var0 = undefined;
-            return var0;
-        };
-        var0.add = var2;
-        var2 = function arg0() {
-            var4 = arg0;
-            var _closure3_slot0 = var4;
-            var3 = _closure2_slot1;
-            var2 = var3.delete;
-            var2 = var2.bind(var3)(var4);
-            var3 = _closure2_slot0;
-            var2 = var3.modify;
-            var1 = function arg0() {
-                _fun34030: for (var _fun34030_ip = 0;;) switch (_fun34030_ip) {
-                    case 0:
-                        var0 = arg0;
-                        var2 = var0.findIndex;
-                        var1 = function(arg0) { // Environment: var1
-                            var0 = arg0;
-                            var1 = var0.tag;
-                            var0 = _closure3_slot0;
-                            var0 = var1 === var0;
-                            return var0;
-                        };
-                        var3 = var2.bind(var0)(var1);
-                        var1 = -1;
-                        if (!(var1 !== var3)) {
-                            _fun34030_ip = 46;
-                            continue _fun34030
-                        }
-                    case 31:
-                        var2 = var0.splice;
-                        var1 = 1;
-                        var1 = var2.bind(var0)(var3, var1);
-                    case 46:
-                        return var0;
+            case 161:
+                var13 = var6.HermesInternal;
+                var13 = var13.concat;
+                var10 = var13.bind(var5)(var14, var11);
+            case 178:
+                var4.translateX = var10;
+                if (var3) {
+                    _fun34053_ip = 203;
+                    continue _fun34053
                 }
-            };
-            var0 = {};
-            var0.viewTag = var4;
-            var1.__closure = var0;
-            var0 = 5508648561577.0;
-            var1.__workletHash = var0;
-            var0 = _closure1_slot3;
-            var1.__initData = var0;
-            var0 = false;
-            var0 = var2.bind(var3)(var1, var0);
-            var0 = undefined;
-            return var0;
-        };
-        var0.remove = var2;
-        var1 = function arg0() {
-            var2 = _closure2_slot1;
-            var1 = var2.has;
-            var0 = arg0;
-            var0 = var1.bind(var2)(var0);
-            return var0;
-        };
-        var0.has = var1;
-        return var0;
+            case 186:
+                var10 = var6.HermesInternal;
+                var10 = var10.concat;
+                var9 = var10.bind(var5)(var12, var11);
+            case 203:
+                var4.translateY = var9;
+                var6 = var6.HermesInternal;
+                var6 = var6.concat;
+                if (var3) {
+                    _fun34053_ip = 236;
+                    continue _fun34053
+                }
+            case 222:
+                var3 = ',1';
+                var3 = var6.bind(var5)(var8, var3);
+                _fun34053_ip = 247;
+                continue _fun34053;
+            case 236:
+                var5 = '1,';
+                var3 = var6.bind(var5)(var7);
+            case 247:
+                var4.scale = var3;
+                var3 = new Array(1);
+                var3[0] = var4;
+                var2.transform = var3;
+                var1[50] = var2;
+                var2 = {};
+                var3 = new Array(1);
+                var4 = {
+                    'translateX': '0px',
+                    'translateY': '0px',
+                    'scale': '1,1'
+                };
+                var3[0] = var4;
+                var2.transform = var3;
+                var1[100] = var2;
+                var0.style = var1;
+                var1 = 300;
+                var0.duration = var1;
+                return var0;
+        }
     };
-    var1.makeViewDescriptorsSet = var0;
+    var1.SequencedTransition = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3756]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

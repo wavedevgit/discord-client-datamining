@@ -7,42 +7,42 @@ import kotlin.enums.EnumEntries;
 public final class b {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final b f25790i = new b("ENABLED", 0, true, true);
+    public static final b f24987i = new b("ENABLED", 0, true, true);
 
     /* renamed from: o  reason: collision with root package name */
-    public static final b f25791o = new b("READ_ONLY", 1, true, false);
+    public static final b f24988o = new b("READ_ONLY", 1, true, false);
 
     /* renamed from: p  reason: collision with root package name */
-    public static final b f25792p = new b("WRITE_ONLY", 2, false, true);
+    public static final b f24989p = new b("WRITE_ONLY", 2, false, true);
 
     /* renamed from: q  reason: collision with root package name */
-    public static final b f25793q = new b("DISABLED", 3, false, false);
+    public static final b f24990q = new b("DISABLED", 3, false, false);
 
     /* renamed from: r  reason: collision with root package name */
-    private static final /* synthetic */ b[] f25794r;
+    private static final /* synthetic */ b[] f24991r;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f25795s;
+    private static final /* synthetic */ EnumEntries f24992s;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f25796d;
+    private final boolean f24993d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f25797e;
+    private final boolean f24994e;
 
     static {
         b[] a10 = a();
-        f25794r = a10;
-        f25795s = qr.a.a(a10);
+        f24991r = a10;
+        f24992s = sr.a.a(a10);
     }
 
     private b(String str, int i10, boolean z10, boolean z11) {
-        this.f25796d = z10;
-        this.f25797e = z11;
+        this.f24993d = z10;
+        this.f24994e = z11;
     }
 
     private static final /* synthetic */ b[] a() {
-        return new b[]{f25790i, f25791o, f25792p, f25793q};
+        return new b[]{f24987i, f24988o, f24989p, f24990q};
     }
 
     public static b valueOf(String str) {
@@ -50,14 +50,14 @@ public final class b {
     }
 
     public static b[] values() {
-        return (b[]) f25794r.clone();
+        return (b[]) f24991r.clone();
     }
 
     public final boolean d() {
-        return this.f25796d;
+        return this.f24993d;
     }
 
     public final boolean e() {
-        return this.f25797e;
+        return this.f24994e;
     }
 }

@@ -10,11 +10,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = {
         '__packager_asset': true,
         'httpServerLocation': '/assets/images/native/premium/illustrations',
-        'width': 218.5,
-        'height': 126.5,
+        'width': 180,
+        'height': 101.5,
         'scales': null,
-        'hash': '9848ee06b371032f5a5c789cab987d6c',
-        'name': 'img_tier_0_perk_bigger_files',
+        'hash': 'e7c47aa4983bcda8af147e4a2811c93e',
+        'name': 'img_what_you_lose_boost',
         'type': 'png'
     };
     var4 = [2, 3];

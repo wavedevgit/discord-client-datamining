@@ -5,22 +5,22 @@ import java.util.Locale;
 public final class n {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String[] f50306a;
+    private final String[] f50593a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int[] f50307b;
+    private final int[] f50594b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String[] f50308c;
+    private final String[] f50595c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f50309d;
+    private final int f50596d;
 
     private n(String[] strArr, int[] iArr, String[] strArr2, int i10) {
-        this.f50306a = strArr;
-        this.f50307b = iArr;
-        this.f50308c = strArr2;
-        this.f50309d = i10;
+        this.f50593a = strArr;
+        this.f50594b = iArr;
+        this.f50595c = strArr2;
+        this.f50596d = i10;
     }
 
     public static n b(String str) {
@@ -112,22 +112,22 @@ public final class n {
         StringBuilder sb2 = new StringBuilder();
         int i11 = 0;
         while (true) {
-            int i12 = this.f50309d;
+            int i12 = this.f50596d;
             if (i11 < i12) {
-                sb2.append(this.f50306a[i11]);
-                int i13 = this.f50307b[i11];
+                sb2.append(this.f50593a[i11]);
+                int i13 = this.f50594b[i11];
                 if (i13 == 1) {
                     sb2.append(str);
                 } else if (i13 == 2) {
-                    sb2.append(String.format(Locale.US, this.f50308c[i11], Long.valueOf(j10)));
+                    sb2.append(String.format(Locale.US, this.f50595c[i11], Long.valueOf(j10)));
                 } else if (i13 == 3) {
-                    sb2.append(String.format(Locale.US, this.f50308c[i11], Integer.valueOf(i10)));
+                    sb2.append(String.format(Locale.US, this.f50595c[i11], Integer.valueOf(i10)));
                 } else if (i13 == 4) {
-                    sb2.append(String.format(Locale.US, this.f50308c[i11], Long.valueOf(j11)));
+                    sb2.append(String.format(Locale.US, this.f50595c[i11], Long.valueOf(j11)));
                 }
                 i11++;
             } else {
-                sb2.append(this.f50306a[i12]);
+                sb2.append(this.f50593a[i12]);
                 return sb2.toString();
             }
         }

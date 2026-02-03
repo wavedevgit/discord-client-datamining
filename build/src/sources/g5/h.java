@@ -39,82 +39,82 @@ public final class h {
     private final c M;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f25833a;
+    private final Context f25030a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object f25834b;
+    private final Object f25031b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final i5.c f25835c;
+    private final i5.c f25032c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final b f25836d;
+    private final b f25033d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final c.b f25837e;
+    private final c.b f25034e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f25838f;
+    private final String f25035f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Bitmap.Config f25839g;
+    private final Bitmap.Config f25036g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final ColorSpace f25840h;
+    private final ColorSpace f25037h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final h5.e f25841i;
+    private final h5.e f25038i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final Pair f25842j;
+    private final Pair f25039j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final k.a f25843k;
+    private final k.a f25040k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final List f25844l;
+    private final List f25041l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final c.a f25845m;
+    private final c.a f25042m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final Headers f25846n;
+    private final Headers f25043n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final s f25847o;
+    private final s f25044o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final boolean f25848p;
+    private final boolean f25045p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final boolean f25849q;
+    private final boolean f25046q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final boolean f25850r;
+    private final boolean f25047r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final boolean f25851s;
+    private final boolean f25048s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final g5.b f25852t;
+    private final g5.b f25049t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final g5.b f25853u;
+    private final g5.b f25050u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final g5.b f25854v;
+    private final g5.b f25051v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final CoroutineDispatcher f25855w;
+    private final CoroutineDispatcher f25052w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final CoroutineDispatcher f25856x;
+    private final CoroutineDispatcher f25053x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final CoroutineDispatcher f25857y;
+    private final CoroutineDispatcher f25054y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final CoroutineDispatcher f25858z;
+    private final CoroutineDispatcher f25055z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface b {
@@ -133,25 +133,25 @@ public final class h {
 
     public static /* synthetic */ a R(h hVar, Context context, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            context = hVar.f25833a;
+            context = hVar.f25030a;
         }
         return hVar.Q(context);
     }
 
     public final b A() {
-        return this.f25836d;
+        return this.f25033d;
     }
 
     public final c.b B() {
-        return this.f25837e;
+        return this.f25034e;
     }
 
     public final g5.b C() {
-        return this.f25852t;
+        return this.f25049t;
     }
 
     public final g5.b D() {
-        return this.f25854v;
+        return this.f25051v;
     }
 
     public final n E() {
@@ -167,11 +167,11 @@ public final class h {
     }
 
     public final h5.e H() {
-        return this.f25841i;
+        return this.f25038i;
     }
 
     public final boolean I() {
-        return this.f25851s;
+        return this.f25048s;
     }
 
     public final h5.h J() {
@@ -183,23 +183,23 @@ public final class h {
     }
 
     public final s L() {
-        return this.f25847o;
+        return this.f25044o;
     }
 
     public final i5.c M() {
-        return this.f25835c;
+        return this.f25032c;
     }
 
     public final CoroutineDispatcher N() {
-        return this.f25858z;
+        return this.f25055z;
     }
 
     public final List O() {
-        return this.f25844l;
+        return this.f25041l;
     }
 
     public final c.a P() {
-        return this.f25845m;
+        return this.f25042m;
     }
 
     public final a Q(Context context) {
@@ -212,8 +212,8 @@ public final class h {
         }
         if (obj instanceof h) {
             h hVar = (h) obj;
-            if (Intrinsics.areEqual(this.f25833a, hVar.f25833a) && Intrinsics.areEqual(this.f25834b, hVar.f25834b) && Intrinsics.areEqual(this.f25835c, hVar.f25835c) && Intrinsics.areEqual(this.f25836d, hVar.f25836d) && Intrinsics.areEqual(this.f25837e, hVar.f25837e) && Intrinsics.areEqual(this.f25838f, hVar.f25838f) && this.f25839g == hVar.f25839g) {
-                if ((Build.VERSION.SDK_INT < 26 || Intrinsics.areEqual(this.f25840h, hVar.f25840h)) && this.f25841i == hVar.f25841i && Intrinsics.areEqual(this.f25842j, hVar.f25842j) && Intrinsics.areEqual(this.f25843k, hVar.f25843k) && Intrinsics.areEqual(this.f25844l, hVar.f25844l) && Intrinsics.areEqual(this.f25845m, hVar.f25845m) && Intrinsics.areEqual(this.f25846n, hVar.f25846n) && Intrinsics.areEqual(this.f25847o, hVar.f25847o) && this.f25848p == hVar.f25848p && this.f25849q == hVar.f25849q && this.f25850r == hVar.f25850r && this.f25851s == hVar.f25851s && this.f25852t == hVar.f25852t && this.f25853u == hVar.f25853u && this.f25854v == hVar.f25854v && Intrinsics.areEqual(this.f25855w, hVar.f25855w) && Intrinsics.areEqual(this.f25856x, hVar.f25856x) && Intrinsics.areEqual(this.f25857y, hVar.f25857y) && Intrinsics.areEqual(this.f25858z, hVar.f25858z) && Intrinsics.areEqual(this.E, hVar.E) && Intrinsics.areEqual(this.F, hVar.F) && Intrinsics.areEqual(this.G, hVar.G) && Intrinsics.areEqual(this.H, hVar.H) && Intrinsics.areEqual(this.I, hVar.I) && Intrinsics.areEqual(this.J, hVar.J) && Intrinsics.areEqual(this.K, hVar.K) && Intrinsics.areEqual(this.A, hVar.A) && Intrinsics.areEqual(this.B, hVar.B) && this.C == hVar.C && Intrinsics.areEqual(this.D, hVar.D) && Intrinsics.areEqual(this.L, hVar.L) && Intrinsics.areEqual(this.M, hVar.M)) {
+            if (Intrinsics.areEqual(this.f25030a, hVar.f25030a) && Intrinsics.areEqual(this.f25031b, hVar.f25031b) && Intrinsics.areEqual(this.f25032c, hVar.f25032c) && Intrinsics.areEqual(this.f25033d, hVar.f25033d) && Intrinsics.areEqual(this.f25034e, hVar.f25034e) && Intrinsics.areEqual(this.f25035f, hVar.f25035f) && this.f25036g == hVar.f25036g) {
+                if ((Build.VERSION.SDK_INT < 26 || Intrinsics.areEqual(this.f25037h, hVar.f25037h)) && this.f25038i == hVar.f25038i && Intrinsics.areEqual(this.f25039j, hVar.f25039j) && Intrinsics.areEqual(this.f25040k, hVar.f25040k) && Intrinsics.areEqual(this.f25041l, hVar.f25041l) && Intrinsics.areEqual(this.f25042m, hVar.f25042m) && Intrinsics.areEqual(this.f25043n, hVar.f25043n) && Intrinsics.areEqual(this.f25044o, hVar.f25044o) && this.f25045p == hVar.f25045p && this.f25046q == hVar.f25046q && this.f25047r == hVar.f25047r && this.f25048s == hVar.f25048s && this.f25049t == hVar.f25049t && this.f25050u == hVar.f25050u && this.f25051v == hVar.f25051v && Intrinsics.areEqual(this.f25052w, hVar.f25052w) && Intrinsics.areEqual(this.f25053x, hVar.f25053x) && Intrinsics.areEqual(this.f25054y, hVar.f25054y) && Intrinsics.areEqual(this.f25055z, hVar.f25055z) && Intrinsics.areEqual(this.E, hVar.E) && Intrinsics.areEqual(this.F, hVar.F) && Intrinsics.areEqual(this.G, hVar.G) && Intrinsics.areEqual(this.H, hVar.H) && Intrinsics.areEqual(this.I, hVar.I) && Intrinsics.areEqual(this.J, hVar.J) && Intrinsics.areEqual(this.K, hVar.K) && Intrinsics.areEqual(this.A, hVar.A) && Intrinsics.areEqual(this.B, hVar.B) && this.C == hVar.C && Intrinsics.areEqual(this.D, hVar.D) && Intrinsics.areEqual(this.L, hVar.L) && Intrinsics.areEqual(this.M, hVar.M)) {
                     return true;
                 }
                 return false;
@@ -224,11 +224,11 @@ public final class h {
     }
 
     public final boolean g() {
-        return this.f25848p;
+        return this.f25045p;
     }
 
     public final boolean h() {
-        return this.f25849q;
+        return this.f25046q;
     }
 
     public int hashCode() {
@@ -245,8 +245,8 @@ public final class h {
         int i20;
         int i21;
         int i22;
-        int hashCode = ((this.f25833a.hashCode() * 31) + this.f25834b.hashCode()) * 31;
-        i5.c cVar = this.f25835c;
+        int hashCode = ((this.f25030a.hashCode() * 31) + this.f25031b.hashCode()) * 31;
+        i5.c cVar = this.f25032c;
         int i23 = 0;
         if (cVar != null) {
             i10 = cVar.hashCode();
@@ -254,48 +254,48 @@ public final class h {
             i10 = 0;
         }
         int i24 = (hashCode + i10) * 31;
-        b bVar = this.f25836d;
+        b bVar = this.f25033d;
         if (bVar != null) {
             i11 = bVar.hashCode();
         } else {
             i11 = 0;
         }
         int i25 = (i24 + i11) * 31;
-        c.b bVar2 = this.f25837e;
+        c.b bVar2 = this.f25034e;
         if (bVar2 != null) {
             i12 = bVar2.hashCode();
         } else {
             i12 = 0;
         }
         int i26 = (i25 + i12) * 31;
-        String str = this.f25838f;
+        String str = this.f25035f;
         if (str != null) {
             i13 = str.hashCode();
         } else {
             i13 = 0;
         }
-        int hashCode2 = (((i26 + i13) * 31) + this.f25839g.hashCode()) * 31;
-        ColorSpace colorSpace = this.f25840h;
+        int hashCode2 = (((i26 + i13) * 31) + this.f25036g.hashCode()) * 31;
+        ColorSpace colorSpace = this.f25037h;
         if (colorSpace != null) {
             i14 = colorSpace.hashCode();
         } else {
             i14 = 0;
         }
-        int hashCode3 = (((hashCode2 + i14) * 31) + this.f25841i.hashCode()) * 31;
-        Pair pair = this.f25842j;
+        int hashCode3 = (((hashCode2 + i14) * 31) + this.f25038i.hashCode()) * 31;
+        Pair pair = this.f25039j;
         if (pair != null) {
             i15 = pair.hashCode();
         } else {
             i15 = 0;
         }
         int i27 = (hashCode3 + i15) * 31;
-        k.a aVar = this.f25843k;
+        k.a aVar = this.f25040k;
         if (aVar != null) {
             i16 = aVar.hashCode();
         } else {
             i16 = 0;
         }
-        int hashCode4 = (((((((((((((((((((((((((((((((((((((((i27 + i16) * 31) + this.f25844l.hashCode()) * 31) + this.f25845m.hashCode()) * 31) + this.f25846n.hashCode()) * 31) + this.f25847o.hashCode()) * 31) + Boolean.hashCode(this.f25848p)) * 31) + Boolean.hashCode(this.f25849q)) * 31) + Boolean.hashCode(this.f25850r)) * 31) + Boolean.hashCode(this.f25851s)) * 31) + this.f25852t.hashCode()) * 31) + this.f25853u.hashCode()) * 31) + this.f25854v.hashCode()) * 31) + this.f25855w.hashCode()) * 31) + this.f25856x.hashCode()) * 31) + this.f25857y.hashCode()) * 31) + this.f25858z.hashCode()) * 31) + this.A.hashCode()) * 31) + this.B.hashCode()) * 31) + this.C.hashCode()) * 31) + this.D.hashCode()) * 31;
+        int hashCode4 = (((((((((((((((((((((((((((((((((((((((i27 + i16) * 31) + this.f25041l.hashCode()) * 31) + this.f25042m.hashCode()) * 31) + this.f25043n.hashCode()) * 31) + this.f25044o.hashCode()) * 31) + Boolean.hashCode(this.f25045p)) * 31) + Boolean.hashCode(this.f25046q)) * 31) + Boolean.hashCode(this.f25047r)) * 31) + Boolean.hashCode(this.f25048s)) * 31) + this.f25049t.hashCode()) * 31) + this.f25050u.hashCode()) * 31) + this.f25051v.hashCode()) * 31) + this.f25052w.hashCode()) * 31) + this.f25053x.hashCode()) * 31) + this.f25054y.hashCode()) * 31) + this.f25055z.hashCode()) * 31) + this.A.hashCode()) * 31) + this.B.hashCode()) * 31) + this.C.hashCode()) * 31) + this.D.hashCode()) * 31;
         c.b bVar3 = this.E;
         if (bVar3 != null) {
             i17 = bVar3.hashCode();
@@ -346,31 +346,31 @@ public final class h {
     }
 
     public final boolean i() {
-        return this.f25850r;
+        return this.f25047r;
     }
 
     public final Bitmap.Config j() {
-        return this.f25839g;
+        return this.f25036g;
     }
 
     public final ColorSpace k() {
-        return this.f25840h;
+        return this.f25037h;
     }
 
     public final Context l() {
-        return this.f25833a;
+        return this.f25030a;
     }
 
     public final Object m() {
-        return this.f25834b;
+        return this.f25031b;
     }
 
     public final CoroutineDispatcher n() {
-        return this.f25857y;
+        return this.f25054y;
     }
 
     public final k.a o() {
-        return this.f25843k;
+        return this.f25040k;
     }
 
     public final c p() {
@@ -382,11 +382,11 @@ public final class h {
     }
 
     public final String r() {
-        return this.f25838f;
+        return this.f25035f;
     }
 
     public final g5.b s() {
-        return this.f25853u;
+        return this.f25050u;
     }
 
     public final Drawable t() {
@@ -398,19 +398,19 @@ public final class h {
     }
 
     public final CoroutineDispatcher v() {
-        return this.f25856x;
+        return this.f25053x;
     }
 
     public final Pair w() {
-        return this.f25842j;
+        return this.f25039j;
     }
 
     public final Headers x() {
-        return this.f25846n;
+        return this.f25043n;
     }
 
     public final CoroutineDispatcher y() {
-        return this.f25855w;
+        return this.f25052w;
     }
 
     public final Lifecycle z() {
@@ -418,32 +418,32 @@ public final class h {
     }
 
     private h(Context context, Object obj, i5.c cVar, b bVar, c.b bVar2, String str, Bitmap.Config config, ColorSpace colorSpace, h5.e eVar, Pair pair, k.a aVar, List list, c.a aVar2, Headers headers, s sVar, boolean z10, boolean z11, boolean z12, boolean z13, g5.b bVar3, g5.b bVar4, g5.b bVar5, CoroutineDispatcher coroutineDispatcher, CoroutineDispatcher coroutineDispatcher2, CoroutineDispatcher coroutineDispatcher3, CoroutineDispatcher coroutineDispatcher4, Lifecycle lifecycle, h5.j jVar, h5.h hVar, n nVar, c.b bVar6, Integer num, Drawable drawable, Integer num2, Drawable drawable2, Integer num3, Drawable drawable3, d dVar, c cVar2) {
-        this.f25833a = context;
-        this.f25834b = obj;
-        this.f25835c = cVar;
-        this.f25836d = bVar;
-        this.f25837e = bVar2;
-        this.f25838f = str;
-        this.f25839g = config;
-        this.f25840h = colorSpace;
-        this.f25841i = eVar;
-        this.f25842j = pair;
-        this.f25843k = aVar;
-        this.f25844l = list;
-        this.f25845m = aVar2;
-        this.f25846n = headers;
-        this.f25847o = sVar;
-        this.f25848p = z10;
-        this.f25849q = z11;
-        this.f25850r = z12;
-        this.f25851s = z13;
-        this.f25852t = bVar3;
-        this.f25853u = bVar4;
-        this.f25854v = bVar5;
-        this.f25855w = coroutineDispatcher;
-        this.f25856x = coroutineDispatcher2;
-        this.f25857y = coroutineDispatcher3;
-        this.f25858z = coroutineDispatcher4;
+        this.f25030a = context;
+        this.f25031b = obj;
+        this.f25032c = cVar;
+        this.f25033d = bVar;
+        this.f25034e = bVar2;
+        this.f25035f = str;
+        this.f25036g = config;
+        this.f25037h = colorSpace;
+        this.f25038i = eVar;
+        this.f25039j = pair;
+        this.f25040k = aVar;
+        this.f25041l = list;
+        this.f25042m = aVar2;
+        this.f25043n = headers;
+        this.f25044o = sVar;
+        this.f25045p = z10;
+        this.f25046q = z11;
+        this.f25047r = z12;
+        this.f25048s = z13;
+        this.f25049t = bVar3;
+        this.f25050u = bVar4;
+        this.f25051v = bVar5;
+        this.f25052w = coroutineDispatcher;
+        this.f25053x = coroutineDispatcher2;
+        this.f25054y = coroutineDispatcher3;
+        this.f25055z = coroutineDispatcher4;
         this.A = lifecycle;
         this.B = jVar;
         this.C = hVar;
@@ -478,112 +478,112 @@ public final class h {
         private h5.h O;
 
         /* renamed from: a  reason: collision with root package name */
-        private final Context f25859a;
+        private final Context f25056a;
 
         /* renamed from: b  reason: collision with root package name */
-        private c f25860b;
+        private c f25057b;
 
         /* renamed from: c  reason: collision with root package name */
-        private Object f25861c;
+        private Object f25058c;
 
         /* renamed from: d  reason: collision with root package name */
-        private i5.c f25862d;
+        private i5.c f25059d;
 
         /* renamed from: e  reason: collision with root package name */
-        private b f25863e;
+        private b f25060e;
 
         /* renamed from: f  reason: collision with root package name */
-        private c.b f25864f;
+        private c.b f25061f;
 
         /* renamed from: g  reason: collision with root package name */
-        private String f25865g;
+        private String f25062g;
 
         /* renamed from: h  reason: collision with root package name */
-        private Bitmap.Config f25866h;
+        private Bitmap.Config f25063h;
 
         /* renamed from: i  reason: collision with root package name */
-        private ColorSpace f25867i;
+        private ColorSpace f25064i;
 
         /* renamed from: j  reason: collision with root package name */
-        private h5.e f25868j;
+        private h5.e f25065j;
 
         /* renamed from: k  reason: collision with root package name */
-        private Pair f25869k;
+        private Pair f25066k;
 
         /* renamed from: l  reason: collision with root package name */
-        private k.a f25870l;
+        private k.a f25067l;
 
         /* renamed from: m  reason: collision with root package name */
-        private List f25871m;
+        private List f25068m;
 
         /* renamed from: n  reason: collision with root package name */
-        private c.a f25872n;
+        private c.a f25069n;
 
         /* renamed from: o  reason: collision with root package name */
-        private Headers.a f25873o;
+        private Headers.a f25070o;
 
         /* renamed from: p  reason: collision with root package name */
-        private Map f25874p;
+        private Map f25071p;
 
         /* renamed from: q  reason: collision with root package name */
-        private boolean f25875q;
+        private boolean f25072q;
 
         /* renamed from: r  reason: collision with root package name */
-        private Boolean f25876r;
+        private Boolean f25073r;
 
         /* renamed from: s  reason: collision with root package name */
-        private Boolean f25877s;
+        private Boolean f25074s;
 
         /* renamed from: t  reason: collision with root package name */
-        private boolean f25878t;
+        private boolean f25075t;
 
         /* renamed from: u  reason: collision with root package name */
-        private g5.b f25879u;
+        private g5.b f25076u;
 
         /* renamed from: v  reason: collision with root package name */
-        private g5.b f25880v;
+        private g5.b f25077v;
 
         /* renamed from: w  reason: collision with root package name */
-        private g5.b f25881w;
+        private g5.b f25078w;
 
         /* renamed from: x  reason: collision with root package name */
-        private CoroutineDispatcher f25882x;
+        private CoroutineDispatcher f25079x;
 
         /* renamed from: y  reason: collision with root package name */
-        private CoroutineDispatcher f25883y;
+        private CoroutineDispatcher f25080y;
 
         /* renamed from: z  reason: collision with root package name */
-        private CoroutineDispatcher f25884z;
+        private CoroutineDispatcher f25081z;
 
         public a(Context context) {
-            this.f25859a = context;
-            this.f25860b = k5.i.b();
-            this.f25861c = null;
-            this.f25862d = null;
-            this.f25863e = null;
-            this.f25864f = null;
-            this.f25865g = null;
-            this.f25866h = null;
+            this.f25056a = context;
+            this.f25057b = k5.i.b();
+            this.f25058c = null;
+            this.f25059d = null;
+            this.f25060e = null;
+            this.f25061f = null;
+            this.f25062g = null;
+            this.f25063h = null;
             if (Build.VERSION.SDK_INT >= 26) {
-                this.f25867i = null;
+                this.f25064i = null;
             }
-            this.f25868j = null;
-            this.f25869k = null;
-            this.f25870l = null;
-            this.f25871m = CollectionsKt.l();
-            this.f25872n = null;
-            this.f25873o = null;
-            this.f25874p = null;
-            this.f25875q = true;
-            this.f25876r = null;
-            this.f25877s = null;
-            this.f25878t = true;
-            this.f25879u = null;
-            this.f25880v = null;
-            this.f25881w = null;
-            this.f25882x = null;
-            this.f25883y = null;
-            this.f25884z = null;
+            this.f25065j = null;
+            this.f25066k = null;
+            this.f25067l = null;
+            this.f25068m = CollectionsKt.l();
+            this.f25069n = null;
+            this.f25070o = null;
+            this.f25071p = null;
+            this.f25072q = true;
+            this.f25073r = null;
+            this.f25074s = null;
+            this.f25075t = true;
+            this.f25076u = null;
+            this.f25077v = null;
+            this.f25078w = null;
+            this.f25079x = null;
+            this.f25080y = null;
+            this.f25081z = null;
             this.A = null;
             this.B = null;
             this.C = null;
@@ -613,15 +613,15 @@ public final class h {
 
         private final Lifecycle l() {
             Context context;
-            i5.c cVar = this.f25862d;
+            i5.c cVar = this.f25059d;
             if (cVar instanceof i5.d) {
                 context = ((i5.d) cVar).getView().getContext();
             } else {
-                context = this.f25859a;
+                context = this.f25056a;
             }
             Lifecycle c10 = k5.d.c(context);
             if (c10 == null) {
-                return g.f25831b;
+                return g.f25028b;
             }
             return c10;
         }
@@ -640,7 +640,7 @@ public final class h {
             if (lVar != null && (view = lVar.getView()) != null) {
                 view2 = view;
             } else {
-                i5.c cVar = this.f25862d;
+                i5.c cVar = this.f25059d;
                 if (cVar instanceof i5.d) {
                     dVar = (i5.d) cVar;
                 } else {
@@ -653,20 +653,20 @@ public final class h {
             if (view2 instanceof ImageView) {
                 return k5.k.n((ImageView) view2);
             }
-            return h5.h.f27543e;
+            return h5.h.f26828e;
         }
 
         private final h5.j n() {
             ImageView.ScaleType scaleType;
-            i5.c cVar = this.f25862d;
+            i5.c cVar = this.f25059d;
             if (cVar instanceof i5.d) {
                 View view = ((i5.d) cVar).getView();
                 if ((view instanceof ImageView) && ((scaleType = ((ImageView) view).getScaleType()) == ImageView.ScaleType.CENTER || scaleType == ImageView.ScaleType.MATRIX)) {
-                    return h5.k.a(h5.i.f27547d);
+                    return h5.k.a(h5.i.f26832d);
                 }
                 return h5.m.b(view, false, 2, null);
             }
-            return new h5.d(this.f25859a);
+            return new h5.d(this.f25056a);
         }
 
         public final h a() {
@@ -675,98 +675,98 @@ public final class h {
             boolean c10;
             boolean d10;
             n nVar;
-            Context context = this.f25859a;
-            Object obj = this.f25861c;
+            Context context = this.f25056a;
+            Object obj = this.f25058c;
             if (obj == null) {
-                obj = j.f25885a;
+                obj = j.f25082a;
             }
             Object obj2 = obj;
-            i5.c cVar = this.f25862d;
-            b bVar = this.f25863e;
-            c.b bVar2 = this.f25864f;
-            String str = this.f25865g;
-            Bitmap.Config config = this.f25866h;
+            i5.c cVar = this.f25059d;
+            b bVar = this.f25060e;
+            c.b bVar2 = this.f25061f;
+            String str = this.f25062g;
+            Bitmap.Config config = this.f25063h;
             if (config == null) {
-                config = this.f25860b.e();
+                config = this.f25057b.e();
             }
             Bitmap.Config config2 = config;
-            ColorSpace colorSpace = this.f25867i;
-            h5.e eVar = this.f25868j;
+            ColorSpace colorSpace = this.f25064i;
+            h5.e eVar = this.f25065j;
             if (eVar == null) {
-                eVar = this.f25860b.o();
+                eVar = this.f25057b.o();
             }
             h5.e eVar2 = eVar;
-            Pair pair = this.f25869k;
-            k.a aVar = this.f25870l;
-            List list = this.f25871m;
-            c.a aVar2 = this.f25872n;
+            Pair pair = this.f25066k;
+            k.a aVar = this.f25067l;
+            List list = this.f25068m;
+            c.a aVar2 = this.f25069n;
             if (aVar2 == null) {
-                aVar2 = this.f25860b.q();
+                aVar2 = this.f25057b.q();
             }
             c.a aVar3 = aVar2;
-            Headers.a aVar4 = this.f25873o;
+            Headers.a aVar4 = this.f25070o;
             if (aVar4 != null) {
                 headers = aVar4.f();
             } else {
                 headers = null;
             }
             Headers x10 = k5.k.x(headers);
-            Map map = this.f25874p;
+            Map map = this.f25071p;
             if (map != null) {
-                sVar = s.f25916b.a(map);
+                sVar = s.f25113b.a(map);
             } else {
                 sVar = null;
             }
             s w10 = k5.k.w(sVar);
-            boolean z10 = this.f25875q;
-            Boolean bool = this.f25876r;
+            boolean z10 = this.f25072q;
+            Boolean bool = this.f25073r;
             if (bool != null) {
                 c10 = bool.booleanValue();
             } else {
-                c10 = this.f25860b.c();
+                c10 = this.f25057b.c();
             }
             boolean z11 = c10;
-            Boolean bool2 = this.f25877s;
+            Boolean bool2 = this.f25074s;
             if (bool2 != null) {
                 d10 = bool2.booleanValue();
             } else {
-                d10 = this.f25860b.d();
+                d10 = this.f25057b.d();
             }
             boolean z12 = d10;
-            boolean z13 = this.f25878t;
-            g5.b bVar3 = this.f25879u;
+            boolean z13 = this.f25075t;
+            g5.b bVar3 = this.f25076u;
             if (bVar3 == null) {
-                bVar3 = this.f25860b.l();
+                bVar3 = this.f25057b.l();
             }
             g5.b bVar4 = bVar3;
-            g5.b bVar5 = this.f25880v;
+            g5.b bVar5 = this.f25077v;
             if (bVar5 == null) {
-                bVar5 = this.f25860b.g();
+                bVar5 = this.f25057b.g();
             }
             g5.b bVar6 = bVar5;
-            g5.b bVar7 = this.f25881w;
+            g5.b bVar7 = this.f25078w;
             if (bVar7 == null) {
-                bVar7 = this.f25860b.m();
+                bVar7 = this.f25057b.m();
             }
             g5.b bVar8 = bVar7;
-            CoroutineDispatcher coroutineDispatcher = this.f25882x;
+            CoroutineDispatcher coroutineDispatcher = this.f25079x;
             if (coroutineDispatcher == null) {
-                coroutineDispatcher = this.f25860b.k();
+                coroutineDispatcher = this.f25057b.k();
             }
             CoroutineDispatcher coroutineDispatcher2 = coroutineDispatcher;
-            CoroutineDispatcher coroutineDispatcher3 = this.f25883y;
+            CoroutineDispatcher coroutineDispatcher3 = this.f25080y;
             if (coroutineDispatcher3 == null) {
-                coroutineDispatcher3 = this.f25860b.j();
+                coroutineDispatcher3 = this.f25057b.j();
             }
             CoroutineDispatcher coroutineDispatcher4 = coroutineDispatcher3;
-            CoroutineDispatcher coroutineDispatcher5 = this.f25884z;
+            CoroutineDispatcher coroutineDispatcher5 = this.f25081z;
             if (coroutineDispatcher5 == null) {
-                coroutineDispatcher5 = this.f25860b.f();
+                coroutineDispatcher5 = this.f25057b.f();
             }
             CoroutineDispatcher coroutineDispatcher6 = coroutineDispatcher5;
             CoroutineDispatcher coroutineDispatcher7 = this.A;
             if (coroutineDispatcher7 == null) {
-                coroutineDispatcher7 = this.f25860b.p();
+                coroutineDispatcher7 = this.f25057b.p();
             }
             CoroutineDispatcher coroutineDispatcher8 = coroutineDispatcher7;
             Lifecycle lifecycle = this.J;
@@ -790,15 +790,15 @@ public final class h {
             } else {
                 nVar = null;
             }
-            return new h(context, obj2, cVar, bVar, bVar2, str, config2, colorSpace, eVar2, pair, aVar, list, aVar3, x10, w10, z10, z11, z12, z13, bVar4, bVar6, bVar8, coroutineDispatcher2, coroutineDispatcher4, coroutineDispatcher6, coroutineDispatcher8, lifecycle2, jVar2, hVar2, k5.k.v(nVar), this.C, this.D, this.E, this.F, this.G, this.H, this.I, new d(this.J, this.K, this.L, this.f25882x, this.f25883y, this.f25884z, this.A, this.f25872n, this.f25868j, this.f25866h, this.f25876r, this.f25877s, this.f25879u, this.f25880v, this.f25881w), this.f25860b, null);
+            return new h(context, obj2, cVar, bVar, bVar2, str, config2, colorSpace, eVar2, pair, aVar, list, aVar3, x10, w10, z10, z11, z12, z13, bVar4, bVar6, bVar8, coroutineDispatcher2, coroutineDispatcher4, coroutineDispatcher6, coroutineDispatcher8, lifecycle2, jVar2, hVar2, k5.k.v(nVar), this.C, this.D, this.E, this.F, this.G, this.H, this.I, new d(this.J, this.K, this.L, this.f25079x, this.f25080y, this.f25081z, this.A, this.f25069n, this.f25065j, this.f25063h, this.f25073r, this.f25074s, this.f25076u, this.f25077v, this.f25078w), this.f25057b, null);
         }
 
         public final a b(int i10) {
             c.a aVar;
             if (i10 > 0) {
-                aVar = new a.C0422a(i10, false, 2, null);
+                aVar = new a.C0412a(i10, false, 2, null);
             } else {
-                aVar = c.a.f31614b;
+                aVar = c.a.f31410b;
             }
             t(aVar);
             return this;
@@ -815,23 +815,23 @@ public final class h {
         }
 
         public final a d(Object obj) {
-            this.f25861c = obj;
+            this.f25058c = obj;
             return this;
         }
 
         public final a e(k.a aVar) {
-            this.f25870l = aVar;
+            this.f25067l = aVar;
             return this;
         }
 
         public final a f(c cVar) {
-            this.f25860b = cVar;
+            this.f25057b = cVar;
             j();
             return this;
         }
 
         public final a g(c.b bVar) {
-            this.f25864f = bVar;
+            this.f25061f = bVar;
             return this;
         }
 
@@ -868,45 +868,45 @@ public final class h {
         }
 
         public final a s(i5.c cVar) {
-            this.f25862d = cVar;
+            this.f25059d = cVar;
             k();
             return this;
         }
 
         public final a t(c.a aVar) {
-            this.f25872n = aVar;
+            this.f25069n = aVar;
             return this;
         }
 
         public a(h hVar, Context context) {
-            this.f25859a = context;
-            this.f25860b = hVar.p();
-            this.f25861c = hVar.m();
-            this.f25862d = hVar.M();
-            this.f25863e = hVar.A();
-            this.f25864f = hVar.B();
-            this.f25865g = hVar.r();
-            this.f25866h = hVar.q().c();
+            this.f25056a = context;
+            this.f25057b = hVar.p();
+            this.f25058c = hVar.m();
+            this.f25059d = hVar.M();
+            this.f25060e = hVar.A();
+            this.f25061f = hVar.B();
+            this.f25062g = hVar.r();
+            this.f25063h = hVar.q().c();
             if (Build.VERSION.SDK_INT >= 26) {
-                this.f25867i = hVar.k();
+                this.f25064i = hVar.k();
             }
-            this.f25868j = hVar.q().k();
-            this.f25869k = hVar.w();
-            this.f25870l = hVar.o();
-            this.f25871m = hVar.O();
-            this.f25872n = hVar.q().o();
-            this.f25873o = hVar.x().g();
-            this.f25874p = o0.y(hVar.L().a());
-            this.f25875q = hVar.g();
-            this.f25876r = hVar.q().a();
-            this.f25877s = hVar.q().b();
-            this.f25878t = hVar.I();
-            this.f25879u = hVar.q().i();
-            this.f25880v = hVar.q().e();
-            this.f25881w = hVar.q().j();
-            this.f25882x = hVar.q().g();
-            this.f25883y = hVar.q().f();
-            this.f25884z = hVar.q().d();
+            this.f25065j = hVar.q().k();
+            this.f25066k = hVar.w();
+            this.f25067l = hVar.o();
+            this.f25068m = hVar.O();
+            this.f25069n = hVar.q().o();
+            this.f25070o = hVar.x().g();
+            this.f25071p = o0.y(hVar.L().a());
+            this.f25072q = hVar.g();
+            this.f25073r = hVar.q().a();
+            this.f25074s = hVar.q().b();
+            this.f25075t = hVar.I();
+            this.f25076u = hVar.q().i();
+            this.f25077v = hVar.q().e();
+            this.f25078w = hVar.q().j();
+            this.f25079x = hVar.q().g();
+            this.f25080y = hVar.q().f();
+            this.f25081z = hVar.q().d();
             this.A = hVar.q().n();
             this.B = hVar.E().d();
             this.C = hVar.G();

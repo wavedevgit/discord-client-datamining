@@ -4,31 +4,41 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import java.util.ArrayList;
 import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class a implements Parcelable {
     @NotNull
-    public static final Parcelable.Creator<a> CREATOR = new C0434a();
+    public static final Parcelable.Creator<a> CREATOR = new C0424a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f32045d;
+    private final String f31839d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final String f31840e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final String f31841i;
+
+    /* renamed from: o  reason: collision with root package name */
+    private final List f31842o;
 
     /* renamed from: jo.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0434a implements Parcelable.Creator {
+    public static final class C0424a implements Parcelable.Creator {
         @Override // android.os.Parcelable.Creator
         /* renamed from: a */
         public final a createFromParcel(Parcel parcel) {
             Intrinsics.checkNotNullParameter(parcel, "parcel");
+            String readString = parcel.readString();
+            String readString2 = parcel.readString();
+            String readString3 = parcel.readString();
             int readInt = parcel.readInt();
             ArrayList arrayList = new ArrayList(readInt);
             for (int i10 = 0; i10 != readInt; i10++) {
-                arrayList.add(parcel.readParcelable(a.class.getClassLoader()));
+                arrayList.add(b.CREATOR.createFromParcel(parcel));
             }
-            return new a(arrayList);
+            return new a(readString, readString2, readString3, arrayList);
         }
 
         @Override // android.os.Parcelable.Creator
@@ -38,18 +48,15 @@ public final class a implements Parcelable {
         }
     }
 
-    public a(List previousFramesMetadata) {
-        Intrinsics.checkNotNullParameter(previousFramesMetadata, "previousFramesMetadata");
-        this.f32045d = previousFramesMetadata;
-    }
-
-    public final a a(List previousFramesMetadata) {
-        Intrinsics.checkNotNullParameter(previousFramesMetadata, "previousFramesMetadata");
-        return new a(previousFramesMetadata);
-    }
-
-    public final List b() {
-        return this.f32045d;
+    public a(String merchantId, String nonce, String fieldKeyMobileDriversLicense, List digitalIdRequests) {
+        Intrinsics.checkNotNullParameter(merchantId, "merchantId");
+        Intrinsics.checkNotNullParameter(nonce, "nonce");
+        Intrinsics.checkNotNullParameter(fieldKeyMobileDriversLicense, "fieldKeyMobileDriversLicense");
+        Intrinsics.checkNotNullParameter(digitalIdRequests, "digitalIdRequests");
+        this.f31839d = merchantId;
+        this.f31840e = nonce;
+        this.f31841i = fieldKeyMobileDriversLicense;
+        this.f31842o = digitalIdRequests;
     }
 
     @Override // android.os.Parcelable
@@ -57,36 +64,16 @@ public final class a implements Parcelable {
         return 0;
     }
 
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if ((obj instanceof a) && Intrinsics.areEqual(this.f32045d, ((a) obj).f32045d)) {
-            return true;
-        }
-        return false;
-    }
-
-    public int hashCode() {
-        return this.f32045d.hashCode();
-    }
-
-    public String toString() {
-        List list = this.f32045d;
-        return "AutocaptureState(previousFramesMetadata=" + list + ")";
-    }
-
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        List<Parcelable> list = this.f32045d;
+        dest.writeString(this.f31839d);
+        dest.writeString(this.f31840e);
+        dest.writeString(this.f31841i);
+        List<b> list = this.f31842o;
         dest.writeInt(list.size());
-        for (Parcelable parcelable : list) {
-            dest.writeParcelable(parcelable, i10);
+        for (b bVar : list) {
+            bVar.writeToParcel(dest, i10);
         }
-    }
-
-    public /* synthetic */ a(List list, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this((i10 & 1) != 0 ? CollectionsKt.l() : list);
     }
 }

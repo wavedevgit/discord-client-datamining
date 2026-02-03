@@ -49,19 +49,19 @@ public final class AttributeStyles_ComplexTextBasedLetterSpacingStyleJsonAdapter
         StyleElements.Measurement measurement4 = null;
         StyleElements.Measurement measurement5 = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 measurement = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 measurement2 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (t02 == 2) {
+            } else if (A0 == 2) {
                 measurement3 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (t02 == 3) {
+            } else if (A0 == 3) {
                 measurement4 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (t02 == 4) {
+            } else if (A0 == 4) {
                 measurement5 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
             }
         }
@@ -74,15 +74,15 @@ public final class AttributeStyles_ComplexTextBasedLetterSpacingStyleJsonAdapter
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (complexTextBasedLetterSpacingStyle != null) {
             writer.l();
-            writer.t0("base");
+            writer.A0("base");
             this.nullableMeasurementAdapter.toJson(writer, complexTextBasedLetterSpacingStyle.getBase());
-            writer.t0("value");
+            writer.A0("value");
             this.nullableMeasurementAdapter.toJson(writer, complexTextBasedLetterSpacingStyle.getValue());
-            writer.t0(ReactTextInputShadowNode.PROP_PLACEHOLDER);
+            writer.A0(ReactTextInputShadowNode.PROP_PLACEHOLDER);
             this.nullableMeasurementAdapter.toJson(writer, complexTextBasedLetterSpacingStyle.getPlaceholder());
-            writer.t0("label");
+            writer.A0("label");
             this.nullableMeasurementAdapter.toJson(writer, complexTextBasedLetterSpacingStyle.getLabel());
-            writer.t0("error");
+            writer.A0("error");
             this.nullableMeasurementAdapter.toJson(writer, complexTextBasedLetterSpacingStyle.getError());
             writer.E();
             return;

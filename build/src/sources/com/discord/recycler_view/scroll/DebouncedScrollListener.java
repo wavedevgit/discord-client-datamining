@@ -152,7 +152,7 @@ public class DebouncedScrollListener extends RecyclerView.OnScrollListener {
         if (function3 != null) {
             function3.invoke(component1, Integer.valueOf(component2), Integer.valueOf(component3));
         }
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -165,7 +165,7 @@ public class DebouncedScrollListener extends RecyclerView.OnScrollListener {
         if (function3 != null) {
             function3.invoke(component1, Integer.valueOf(component2), Integer.valueOf(component3));
         }
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public final void cancel() {

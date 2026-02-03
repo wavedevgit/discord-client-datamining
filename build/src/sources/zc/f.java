@@ -7,15 +7,15 @@ import tc.l;
 final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h0 f55729a = new h0(8);
+    private final h0 f55867a = new h0(8);
 
     /* renamed from: b  reason: collision with root package name */
-    private int f55730b;
+    private int f55868b;
 
     private long a(l lVar) {
         int i10 = 0;
-        lVar.n(this.f55729a.e(), 0, 1);
-        int i11 = this.f55729a.e()[0] & 255;
+        lVar.n(this.f55867a.e(), 0, 1);
+        int i11 = this.f55867a.e()[0] & 255;
         if (i11 == 0) {
             return Long.MIN_VALUE;
         }
@@ -26,12 +26,12 @@ final class f {
             i13++;
         }
         int i14 = i11 & (~i12);
-        lVar.n(this.f55729a.e(), 1, i13);
+        lVar.n(this.f55867a.e(), 1, i13);
         while (i10 < i13) {
             i10++;
-            i14 = (this.f55729a.e()[i10] & 255) + (i14 << 8);
+            i14 = (this.f55867a.e()[i10] & 255) + (i14 << 8);
         }
-        this.f55730b += i13 + 1;
+        this.f55868b += i13 + 1;
         return i14;
     }
 
@@ -45,30 +45,30 @@ final class f {
             j10 = length;
         }
         int i12 = (int) j10;
-        lVar.n(this.f55729a.e(), 0, 4);
-        long J = this.f55729a.J();
-        this.f55730b = 4;
+        lVar.n(this.f55867a.e(), 0, 4);
+        long J = this.f55867a.J();
+        this.f55868b = 4;
         while (J != 440786851) {
-            int i13 = this.f55730b + 1;
-            this.f55730b = i13;
+            int i13 = this.f55868b + 1;
+            this.f55868b = i13;
             if (i13 == i12) {
                 return false;
             }
-            lVar.n(this.f55729a.e(), 0, 1);
-            J = ((J << 8) & (-256)) | (this.f55729a.e()[0] & 255);
+            lVar.n(this.f55867a.e(), 0, 1);
+            J = ((J << 8) & (-256)) | (this.f55867a.e()[0] & 255);
         }
         long a11 = a(lVar);
-        long j11 = this.f55730b;
+        long j11 = this.f55868b;
         if (a11 != Long.MIN_VALUE && (i11 == 0 || j11 + a11 < length)) {
             while (true) {
-                int i14 = this.f55730b;
+                int i14 = this.f55868b;
                 long j12 = j11 + a11;
                 if (i14 < j12) {
                     if (a(lVar) != Long.MIN_VALUE && (a(lVar)) >= 0 && a10 <= 2147483647L) {
                         if (i10 != 0) {
                             int i15 = (int) a10;
                             lVar.h(i15);
-                            this.f55730b += i15;
+                            this.f55868b += i15;
                         }
                     }
                 } else if (i14 == j12) {

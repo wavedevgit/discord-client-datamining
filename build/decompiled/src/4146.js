@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5.value = var2;
     var2 = '__esModule';
     var2 = var6.bind(var7)(var1, var2, var5);
-    var1.OtherTypes = var0;
+    var1.AudioTypes = var0;
     var2 = function() {
         var3 = _closure1_slot0;
         var2 = _closure1_slot1;
@@ -30,244 +30,110 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot1 = var2;
     var2 = var3.bind(var0)(var2);
-    var1.OtherTypes = var2;
+    var1.AudioTypes = var2;
     var1 = {
-        'extension': 'blend',
-        'mimeType': 'application/x-blender',
-        'description': 'Blender File Format'
+        'extension': 'aac',
+        'mimeType': 'audio/aac',
+        'description': 'Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio compression'
     };
     var4 = {};
-    var3 = [66, 76, 69, 78, 68, 69, 82];
+    var3 = [255, 241];
     var4.sequence = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var1.signatures = var3;
-    var2.BLEND = var1;
-    var1 = {
-        'extension': 'doc',
-        'mimeType': 'application/msword',
-        'description': 'Old Microsoft Word documents'
-    };
-    var4 = {};
-    var3 = [208, 207, 17, 224, 161, 177, 26, 225];
-    var4.sequence = var3;
-    var3 = ['xls', 'ppt', 'msi', 'msg', 'dot', 'pps', 'xla', 'wiz'];
-    var4.compatibleExtensions = var3;
-    var3 = 'An Object Linking and Embedding (OLE) Compound File (CF) (i.e., OLECF) file format, known as Compound Binary File format by Microsoft, used by Microsoft Office 97-2003 applications';
+    var3 = 'MPEG-4 Advanced Audio Coding (AAC) Low Complexity (LC) audio file';
     var4.description = var3;
     var3 = new Array(2);
     var3[0] = var4;
     var4 = {};
-    var5 = [219, 165, 45, 0];
+    var5 = [255, 249];
     var4.sequence = var5;
-    var5 = 'Microsoft Word 2.0 file format';
+    var5 = 'MPEG-2 Advanced Audio Coding (AAC) Low Complexity (LC) audio file';
     var4.description = var5;
     var3[1] = var4;
     var1.signatures = var3;
-    var2.DOC = var1;
+    var2.AAC = var1;
     var1 = {
-        'extension': 'elf',
-        'mimeType': 'application/x-executable',
-        'description': 'Executable and Linking Format executable file (Linux/Unix)'
+        'extension': 'amr',
+        'mimeType': 'audio/amr',
+        'description': 'Adaptive Multi-Rate ACELP (Algebraic Code Excited Linear Prediction) Codec, commonly audio format with GSM cell phones'
     };
     var4 = {};
-    var3 = [127, 69, 76, 70];
+    var3 = [35, 33, 65, 77, 82];
     var4.sequence = var3;
     var3 = new Array(1);
     var3[0] = var4;
     var1.signatures = var3;
-    var2.ELF = var1;
+    var2.AMR = var1;
     var1 = {
-        'extension': 'exe',
-        'mimeType': 'application/x-msdownload',
-        'description': 'Windows/DOS executable file and its descendants'
+        'extension': 'flac',
+        'mimeType': 'audio/x-flac',
+        'description': 'Free Lossless Audio Codec file'
     };
     var4 = {};
-    var3 = [77, 90];
+    var3 = [102, 76, 97, 67, 0, 0, 0, 34];
     var4.sequence = var3;
-    var3 = ['acm', 'ax', 'cpl', 'com', 'dll', 'drv', 'efi', 'fon', 'iec', 'ime', 'mui', 'ocx', 'olb', 'pif', 'qts', 'qtx', 'rs', 'sys', 'scr', 'tsp', 'vbx', 'vxd'];
-    var4.compatibleExtensions = var3;
-    var3 = new Array(2);
+    var3 = new Array(1);
     var3[0] = var4;
-    var4 = {};
-    var5 = [90, 77];
-    var4.sequence = var5;
-    var5 = 'DOS ZM executable (rare)';
-    var4.description = var5;
-    var3[1] = var4;
     var1.signatures = var3;
-    var2.EXE = var1;
+    var2.FLAC = var1;
     var1 = {
-        'extension': 'indd',
-        'mimeType': 'application/x-indesign',
-        'description': 'Adobe InDesign document'
+        'extension': 'm4a',
+        'mimeType': 'audio/x-m4a',
+        'description': 'Apple Lossless Audio Codec file'
     };
     var4 = {};
-    var3 = [6, 6, 237, 245, 216, 29, 70, 229, 189, 49, 239, 231, 254, 116, 183, 29];
+    var3 = [102, 116, 121, 112, 77, 52, 65, 32];
     var4.sequence = var3;
-    var3 = ['indt'];
+    var3 = 4;
+    var4.offset = var3;
+    var3 = ['aac'];
     var4.compatibleExtensions = var3;
     var3 = new Array(1);
     var3[0] = var4;
     var1.signatures = var3;
-    var2.INDD = var1;
+    var2.M4A = var1;
     var1 = {
-        'extension': 'macho',
-        'mimeType': 'application/x-mach-binary',
-        'description': 'Apple OS X ABI Mach-O binary file'
+        'extension': 'mp3',
+        'mimeType': 'audio/mpeg',
+        'description': 'A digital audio file format that uses compression to reduce file size while maintaining high quality sound'
     };
     var4 = {};
-    var3 = [254, 237, 250, 206];
+    var3 = [255, 251];
     var4.sequence = var3;
-    var3 = '32-bit';
-    var4.description = var3;
-    var3 = new Array(5);
+    var5 = 'MPEG-1 Layer 3 file without an ID3 tag or with an ID3v1 tag (which is appended at the end of the file)';
+    var4.description = var5;
+    var3 = new Array(4);
     var3[0] = var4;
     var4 = {};
-    var5 = [206, 250, 237, 254];
-    var4.sequence = var5;
-    var5 = '32-bit, where target system has reverse byte ordering from host running compiler';
+    var6 = [255, 243];
+    var4.sequence = var6;
     var4.description = var5;
     var3[1] = var4;
     var4 = {};
-    var5 = [254, 237, 250, 207];
-    var4.sequence = var5;
-    var5 = '64-bit';
+    var6 = [255, 242];
+    var4.sequence = var6;
     var4.description = var5;
     var3[2] = var4;
     var4 = {};
-    var5 = [207, 250, 237, 254];
+    var5 = [73, 68, 51];
     var4.sequence = var5;
-    var5 = '64-bit, where target system has reverse byte ordering from host running compiler';
+    var5 = 'MP3 file with an ID3v2 container';
     var4.description = var5;
     var3[3] = var4;
-    var4 = {};
-    var5 = [202, 254, 186, 190];
-    var4.sequence = var5;
-    var5 = 'Mach-O Fat Binary';
-    var4.description = var5;
-    var3[4] = var4;
     var1.signatures = var3;
-    var2.MACHO = var1;
+    var2.MP3 = var1;
     var1 = {
-        'extension': 'pdf',
-        'mimeType': 'application/pdf',
-        'description': 'Portable Document Format'
+        'extension': 'wav',
+        'mimeType': 'audio/wav',
+        'description': 'Waveform Audio File Format'
     };
     var4 = {};
-    var3 = [37, 80, 68, 70, 45];
+    var3 = [82, 73, 70, 70, 87, 65, 86, 69, 102, 109, 116, 32];
     var4.sequence = var3;
+    var3 = [4, 5, 6, 7];
+    var4.skippedBytes = var3;
     var3 = new Array(1);
     var3[0] = var4;
     var1.signatures = var3;
-    var2.PDF = var1;
-    var1 = {
-        'extension': 'orc',
-        'mimeType': 'application/x-orc',
-        'description': 'Apache ORC (Optimized Row Columnar) file format for columnar storage'
-    };
-    var4 = {};
-    var3 = [79, 82, 67];
-    var4.sequence = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var1.signatures = var3;
-    var2.ORC = var1;
-    var1 = {
-        'extension': 'parquet',
-        'mimeType': 'application/vnd.apache.parquet',
-        'description': 'Apache Parquet file format for columnar storage'
-    };
-    var4 = {};
-    var3 = [80, 65, 82, 49];
-    var4.sequence = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var1.signatures = var3;
-    var2.PARQUET = var1;
-    var1 = {
-        'extension': 'ps',
-        'mimeType': 'application/postscript',
-        'description': 'PostScript document'
-    };
-    var4 = {};
-    var3 = [37, 33, 80, 83];
-    var4.sequence = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var1.signatures = var3;
-    var2.PS = var1;
-    var1 = {
-        'extension': 'rtf',
-        'mimeType': 'application/rtf',
-        'description': 'Rich Text Format word processing file'
-    };
-    var4 = {};
-    var3 = [123, 92, 114, 116, 102, 49];
-    var4.sequence = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var1.signatures = var3;
-    var2.RTF = var1;
-    var1 = {
-        'extension': 'sqlite',
-        'mimeType': 'application/x-sqlite3',
-        'description': 'SQLite database file'
-    };
-    var4 = {};
-    var3 = [83, 81, 76, 105, 116, 101, 32, 102, 111, 114, 109, 97, 116, 32, 51, 0];
-    var4.sequence = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var1.signatures = var3;
-    var2.SQLITE = var1;
-    var1 = {
-        'extension': 'stl',
-        'mimeType': 'application/sla',
-        'description': 'ASCII STL (STereoLithography) file for 3D printing'
-    };
-    var4 = {};
-    var3 = [115, 111, 108, 105, 100];
-    var4.sequence = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var1.signatures = var3;
-    var2.STL = var1;
-    var1 = {
-        'extension': 'ttf',
-        'mimeType': 'application/x-font-ttf',
-        'description': 'TrueType font file'
-    };
-    var4 = {};
-    var3 = [116, 114, 117, 101, 0];
-    var4.sequence = var3;
-    var3 = new Array(2);
-    var3[0] = var4;
-    var4 = {};
-    var5 = [0, 1, 0, 0, 0];
-    var4.sequence = var5;
-    var5 = ['tte, dfont'];
-    var4.compatibleExtensions = var5;
-    var3[1] = var4;
-    var1.signatures = var3;
-    var2.TTF = var1;
-    var1 = {
-        'extension': 'pcap',
-        'mimeType': 'application/vnd.tcpdump.pcap',
-        'description': 'Libpcap File Format'
-    };
-    var4 = {};
-    var3 = [212, 195, 178, 161];
-    var4.sequence = var3;
-    var3 = new Array(2);
-    var3[0] = var4;
-    var4 = {};
-    var5 = [77, 60, 178, 161];
-    var4.sequence = var5;
-    var5 = 'Nanosecond resolution';
-    var4.description = var5;
-    var3[1] = var4;
-    var1.signatures = var3;
-    var2.PCAP = var1;
+    var2.WAV = var1;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6]);

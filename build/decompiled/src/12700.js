@@ -1,121 +1,77 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun96921: for (var _fun96921_ip = 0;;) switch (_fun96921_ip) {
+    _fun96953: for (var _fun96953_ip = 0;;) switch (_fun96953_ip) {
         case 0:
-            var3 = require;
-            var2 = exports;
-            var4 = dependencyMap;
+            var9 = require;
+            var10 = dependencyMap;
             var1 = global;
-            var8 = var1.Object;
-            var7 = var8.defineProperty;
-            var6 = {};
-            var0 = true;
-            var6.value = var0;
-            var0 = '__esModule';
-            var0 = var7.bind(var8)(var2, var0, var6);
-            var0 = 0;
-            var6 = var4[var0];
+            var0 = var1.Function;
+            var8 = var0.prototype;
+            var5 = 0;
+            var2 = var10[var5];
             var0 = undefined;
-            var6 = var3.bind(var0)(var6);
-            var6 = var6.NativeModules;
-            var7 = null;
-            var _closure1_slot0 = var7;
-            var7 = var6.BlobModule;
-            var6 = var7;
-            if (!var6) {
-                _fun96921_ip = 97;
-                continue _fun96921
+            var7 = var9.bind(var0)(var2);
+            if (!var7) {
+                _fun96953_ip = 47;
+                continue _fun96953
             }
-        case 80:
-            var8 = var7.BLOB_URI_SCHEME;
-            var9 = 'string';
-            var8 = typeof var8;
-            var6 = var9 === var8;
-        case 97:
-            if (!var6) {
-                _fun96921_ip = 176;
-                continue _fun96921
-            }
-        case 100:
-            var8 = var7.BLOB_URI_SCHEME;
-            var6 = ':';
-            var6 = var8 + var6;
-            _closure1_slot0 = var6;
-            var8 = var7.BLOB_URI_HOST;
-            var9 = 'string';
-            var8 = typeof var8;
-            if (!(var9 === var8)) {
-                _fun96921_ip = 176;
-                continue _fun96921
-            }
-        case 135:
-            var9 = var7.BLOB_URI_HOST;
-            var1 = var1.HermesInternal;
-            var8 = var1.concat;
-            var7 = '//';
-            var1 = '/';
-            var1 = var8.bind(var7)(var9, var1);
-            var1 = var6 + var1;
-            _closure1_slot0 = var1;
-        case 176:
+        case 35:
+            var1 = var1.Object;
+            var7 = var1.getOwnPropertyDescriptor;
+        case 47:
             var1 = 1;
-            var6 = var4[var1];
-            var6 = var3.bind(var0)(var6);
-            var7 = var6.URL;
-            var6 = function arg0() {
-                _fun96922: for (var _fun96922_ip = 0;;) switch (_fun96922_ip) {
-                    case 0:
-                        var0 = arg0;
-                        var3 = _closure1_slot0;
-                        var2 = null;
-                        if (!(var2 !== var3)) {
-                            _fun96922_ip = 82;
-                            continue _fun96922
-                        }
-                    case 16:
-                        var13 = _closure1_slot0;
-                        var1 = var0.data;
-                        var12 = var1.blobId;
-                        var1 = var0.data;
-                        var10 = var1.offset;
-                        var8 = var0.size;
-                        var0 = global;
-                        var0 = var0.HermesInternal;
-                        var3 = var0.concat;
-                        var14 = '';
-                        var11 = '?offset=';
-                        var9 = '&size=';
-                        var0 = var14[var3](var13, var12, var11, var10, var9, var8, var7);
-                        return var0;
-                    case 82:
-                        var0 = global;
-                        var2 = var0.Error;
-                        var0 = var2.prototype;
-                        var1 = Object.create(var0, {
-                            constructor: {
-                                value: var2
-                            }
-                        });
-                        var13 = 'Cannot create URL for blob!';
-                        var14 = var1;
-                        var0 = new var14[var2](var13, var12);
-                        var0 = var0 instanceof Object ? var0 : var1;
-                        throw var0;
-                }
-            };
-            var7.createObjectURL = var6;
-            var6 = var4[var1];
-            var6 = var3.bind(var0)(var6);
-            var6 = var6.URL;
-            var5 = function arg0() {
+            var1 = var10[var1];
+            var1 = var9.bind(var0)(var1);
+            var6 = 'name';
+            var4 = var1.bind(var0)(var8, var6);
+            var3 = var4;
+            if (!var4) {
+                _fun96953_ip = 99;
+                continue _fun96953
+            }
+        case 75:
+            var1 = function() {
                 var0 = undefined;
                 return var0;
             };
-            var6.revokeObjectURL = var5;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.URL;
-            var2.URL = var1;
+            var2 = var1.name;
+            var1 = 'something';
+            var3 = var1 === var2;
+        case 99:
+            var1 = var4;
+            if (!var1) {
+                _fun96953_ip = 150;
+                continue _fun96953
+            }
+        case 105:
+            var2 = var10[var5];
+            var2 = var9.bind(var0)(var2);
+            var2 = !var2;
+            if (var2) {
+                _fun96953_ip = 147;
+                continue _fun96953
+            }
+        case 120:
+            var5 = var10[var5];
+            var5 = var9.bind(var0)(var5);
+            if (!var5) {
+                _fun96953_ip = 144;
+                continue _fun96953
+            }
+        case 132:
+            var6 = var7.bind(var0)(var8, var6);
+            var5 = var6.configurable;
+        case 144:
+            var2 = var5;
+        case 147:
+            var1 = var2;
+        case 150:
+            var2 = {};
+            var2.EXISTS = var4;
+            var2.PROPER = var3;
+            var2.CONFIGURABLE = var1;
+            var1 = arg4;
+            var1.exports = var2;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 12701]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12643, 12663]);

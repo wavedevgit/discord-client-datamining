@@ -5,18 +5,18 @@ import android.os.Parcelable;
 import com.google.android.exoplayer2.metadata.Metadata;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class a implements Metadata.b {
-    public static final Parcelable.Creator<a> CREATOR = new C0360a();
+    public static final Parcelable.Creator<a> CREATOR = new C0347a();
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f27685d;
+    public final int f26970d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final String f27686e;
+    public final String f26971e;
 
     /* renamed from: hd.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    class C0360a implements Parcelable.Creator {
-        C0360a() {
+    class C0347a implements Parcelable.Creator {
+        C0347a() {
         }
 
         @Override // android.os.Parcelable.Creator
@@ -33,8 +33,8 @@ public final class a implements Metadata.b {
     }
 
     public a(int i10, String str) {
-        this.f27685d = i10;
-        this.f27686e = str;
+        this.f26970d = i10;
+        this.f26971e = str;
     }
 
     @Override // android.os.Parcelable
@@ -43,12 +43,12 @@ public final class a implements Metadata.b {
     }
 
     public String toString() {
-        return "Ait(controlCode=" + this.f27685d + ",url=" + this.f27686e + ")";
+        return "Ait(controlCode=" + this.f26970d + ",url=" + this.f26971e + ")";
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f27686e);
-        parcel.writeInt(this.f27685d);
+        parcel.writeString(this.f26971e);
+        parcel.writeInt(this.f26970d);
     }
 }

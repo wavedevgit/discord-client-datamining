@@ -10,16 +10,16 @@ import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface ContractDeserializer {
     @NotNull
-    public static final Companion Companion = Companion.f35358a;
+    public static final Companion Companion = Companion.f34748a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ Companion f35358a = new Companion();
+        static final /* synthetic */ Companion f34748a = new Companion();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final ContractDeserializer f35359b = new ContractDeserializer() { // from class: kotlin.reflect.jvm.internal.impl.serialization.deserialization.ContractDeserializer$Companion$DEFAULT$1
+        private static final ContractDeserializer f34749b = new ContractDeserializer() { // from class: kotlin.reflect.jvm.internal.impl.serialization.deserialization.ContractDeserializer$Companion$DEFAULT$1
             @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.ContractDeserializer
             public Pair deserializeContractFromFunction(ProtoBuf.Function proto, FunctionDescriptor ownerFunction, TypeTable typeTable, TypeDeserializer typeDeserializer) {
                 Intrinsics.checkNotNullParameter(proto, "proto");
@@ -35,7 +35,7 @@ public interface ContractDeserializer {
 
         @NotNull
         public final ContractDeserializer getDEFAULT() {
-            return f35359b;
+            return f34749b;
         }
     }
 

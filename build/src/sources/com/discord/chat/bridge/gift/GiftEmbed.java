@@ -1,10 +1,11 @@
 package com.discord.chat.bridge.gift;
 
 import androidx.recyclerview.widget.RecyclerView;
-import bt.n2;
-import bt.v1;
+import at.m;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import com.facebook.react.uimanager.ViewProps;
+import dt.n2;
+import dt.v1;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -14,7 +15,6 @@ import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.jetbrains.annotations.NotNull;
 import org.webrtc.PeerConnection;
-import ys.m;
 @m(with = GiftEmbedSerializer.class)
 @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\bw\u0018\u0000 \u00102\u00020\u0001:\u0003\u000e\u000f\u0010R\u0012\u0010\u0002\u001a\u00020\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0004\u0010\u0005R\u0012\u0010\u0006\u001a\u00020\u0007X¦\u0004¢\u0006\u0006\u001a\u0004\b\b\u0010\tR\u0012\u0010\n\u001a\u00020\u0007X¦\u0004¢\u0006\u0006\u001a\u0004\b\u000b\u0010\tR\u0012\u0010\f\u001a\u00020\u0007X¦\u0004¢\u0006\u0006\u001a\u0004\b\r\u0010\t\u0082\u0001\u0002\u0011\u0012¨\u0006\u0013"}, d2 = {"Lcom/discord/chat/bridge/gift/GiftEmbed;", "", "headerText", "", "getHeaderText", "()Ljava/lang/String;", "headerColor", "", "getHeaderColor", "()I", ViewProps.BACKGROUND_COLOR, "getBackgroundColor", "thumbnailCornerRadius", "getThumbnailCornerRadius", "Resolving", "Resolved", "Companion", "Lcom/discord/chat/bridge/gift/GiftEmbed$Resolved;", "Lcom/discord/chat/bridge/gift/GiftEmbed$Resolving;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -134,16 +134,16 @@ public interface GiftEmbed {
             }
 
             public static final /* synthetic */ void write$Self$chat_release(Invalid invalid, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-                compositeEncoder.x(serialDescriptor, 0, invalid.getHeaderText());
-                compositeEncoder.v(serialDescriptor, 1, invalid.getHeaderColor());
-                compositeEncoder.v(serialDescriptor, 2, invalid.getBackgroundColor());
-                compositeEncoder.v(serialDescriptor, 3, invalid.getThumbnailCornerRadius());
-                compositeEncoder.x(serialDescriptor, 4, invalid.getThumbnailUrl());
-                compositeEncoder.x(serialDescriptor, 5, invalid.getTitleText());
-                compositeEncoder.v(serialDescriptor, 6, invalid.getTitleColor());
-                compositeEncoder.x(serialDescriptor, 7, invalid.getSubtitle());
-                compositeEncoder.v(serialDescriptor, 8, invalid.getSubtitleColor());
-                compositeEncoder.v(serialDescriptor, 9, invalid.thumbnailBackgroundColor);
+                compositeEncoder.y(serialDescriptor, 0, invalid.getHeaderText());
+                compositeEncoder.w(serialDescriptor, 1, invalid.getHeaderColor());
+                compositeEncoder.w(serialDescriptor, 2, invalid.getBackgroundColor());
+                compositeEncoder.w(serialDescriptor, 3, invalid.getThumbnailCornerRadius());
+                compositeEncoder.y(serialDescriptor, 4, invalid.getThumbnailUrl());
+                compositeEncoder.y(serialDescriptor, 5, invalid.getTitleText());
+                compositeEncoder.w(serialDescriptor, 6, invalid.getTitleColor());
+                compositeEncoder.y(serialDescriptor, 7, invalid.getSubtitle());
+                compositeEncoder.w(serialDescriptor, 8, invalid.getSubtitleColor());
+                compositeEncoder.w(serialDescriptor, 9, invalid.thumbnailBackgroundColor);
             }
 
             @NotNull
@@ -423,36 +423,36 @@ public interface GiftEmbed {
             }
 
             public static final /* synthetic */ void write$Self$chat_release(Valid valid, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-                compositeEncoder.x(serialDescriptor, 0, valid.getHeaderText());
-                compositeEncoder.v(serialDescriptor, 1, valid.getHeaderColor());
-                compositeEncoder.v(serialDescriptor, 2, valid.getBackgroundColor());
-                compositeEncoder.v(serialDescriptor, 3, valid.getThumbnailCornerRadius());
-                if (compositeEncoder.y(serialDescriptor, 4) || valid.getThumbnailUrl() != null) {
-                    compositeEncoder.B(serialDescriptor, 4, n2.f7662a, valid.getThumbnailUrl());
+                compositeEncoder.y(serialDescriptor, 0, valid.getHeaderText());
+                compositeEncoder.w(serialDescriptor, 1, valid.getHeaderColor());
+                compositeEncoder.w(serialDescriptor, 2, valid.getBackgroundColor());
+                compositeEncoder.w(serialDescriptor, 3, valid.getThumbnailCornerRadius());
+                if (compositeEncoder.z(serialDescriptor, 4) || valid.getThumbnailUrl() != null) {
+                    compositeEncoder.s(serialDescriptor, 4, n2.f20978a, valid.getThumbnailUrl());
                 }
-                if (compositeEncoder.y(serialDescriptor, 5) || valid.getTitleText() != null) {
-                    compositeEncoder.B(serialDescriptor, 5, n2.f7662a, valid.getTitleText());
+                if (compositeEncoder.z(serialDescriptor, 5) || valid.getTitleText() != null) {
+                    compositeEncoder.s(serialDescriptor, 5, n2.f20978a, valid.getTitleText());
                 }
-                compositeEncoder.v(serialDescriptor, 6, valid.getTitleColor());
-                if (compositeEncoder.y(serialDescriptor, 7) || valid.getSubtitle() != null) {
-                    compositeEncoder.B(serialDescriptor, 7, n2.f7662a, valid.getSubtitle());
+                compositeEncoder.w(serialDescriptor, 6, valid.getTitleColor());
+                if (compositeEncoder.z(serialDescriptor, 7) || valid.getSubtitle() != null) {
+                    compositeEncoder.s(serialDescriptor, 7, n2.f20978a, valid.getSubtitle());
                 }
-                compositeEncoder.v(serialDescriptor, 8, valid.getSubtitleColor());
-                if (compositeEncoder.y(serialDescriptor, 9) || valid.bodyText != null) {
-                    compositeEncoder.B(serialDescriptor, 9, n2.f7662a, valid.bodyText);
+                compositeEncoder.w(serialDescriptor, 8, valid.getSubtitleColor());
+                if (compositeEncoder.z(serialDescriptor, 9) || valid.bodyText != null) {
+                    compositeEncoder.s(serialDescriptor, 9, n2.f20978a, valid.bodyText);
                 }
-                compositeEncoder.v(serialDescriptor, 10, valid.bodyTextColor);
-                if (compositeEncoder.y(serialDescriptor, 11) || valid.acceptLabelText != null) {
-                    compositeEncoder.B(serialDescriptor, 11, n2.f7662a, valid.acceptLabelText);
+                compositeEncoder.w(serialDescriptor, 10, valid.bodyTextColor);
+                if (compositeEncoder.z(serialDescriptor, 11) || valid.acceptLabelText != null) {
+                    compositeEncoder.s(serialDescriptor, 11, n2.f20978a, valid.acceptLabelText);
                 }
-                compositeEncoder.v(serialDescriptor, 12, valid.acceptLabelColor);
-                compositeEncoder.v(serialDescriptor, 13, valid.acceptLabelBackgroundColor);
-                if (compositeEncoder.y(serialDescriptor, 14) || valid.splashUrl != null) {
-                    compositeEncoder.B(serialDescriptor, 14, n2.f7662a, valid.splashUrl);
+                compositeEncoder.w(serialDescriptor, 12, valid.acceptLabelColor);
+                compositeEncoder.w(serialDescriptor, 13, valid.acceptLabelBackgroundColor);
+                if (compositeEncoder.z(serialDescriptor, 14) || valid.splashUrl != null) {
+                    compositeEncoder.s(serialDescriptor, 14, n2.f20978a, valid.splashUrl);
                 }
                 compositeEncoder.r(serialDescriptor, 15, valid.splashOpacity);
-                compositeEncoder.w(serialDescriptor, 16, valid.canBeAccepted);
-                compositeEncoder.x(serialDescriptor, 17, valid.giftCode);
+                compositeEncoder.x(serialDescriptor, 16, valid.canBeAccepted);
+                compositeEncoder.y(serialDescriptor, 17, valid.giftCode);
             }
 
             @NotNull
@@ -775,12 +775,12 @@ public interface GiftEmbed {
         }
 
         public static final /* synthetic */ void write$Self$chat_release(Resolving resolving, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-            compositeEncoder.x(serialDescriptor, 0, resolving.getHeaderText());
-            compositeEncoder.v(serialDescriptor, 1, resolving.getHeaderColor());
-            compositeEncoder.v(serialDescriptor, 2, resolving.getBackgroundColor());
-            compositeEncoder.v(serialDescriptor, 3, resolving.getThumbnailCornerRadius());
-            compositeEncoder.v(serialDescriptor, 4, resolving.resolvingGradientStart);
-            compositeEncoder.v(serialDescriptor, 5, resolving.resolvingGradientEnd);
+            compositeEncoder.y(serialDescriptor, 0, resolving.getHeaderText());
+            compositeEncoder.w(serialDescriptor, 1, resolving.getHeaderColor());
+            compositeEncoder.w(serialDescriptor, 2, resolving.getBackgroundColor());
+            compositeEncoder.w(serialDescriptor, 3, resolving.getThumbnailCornerRadius());
+            compositeEncoder.w(serialDescriptor, 4, resolving.resolvingGradientStart);
+            compositeEncoder.w(serialDescriptor, 5, resolving.resolvingGradientEnd);
         }
 
         @NotNull

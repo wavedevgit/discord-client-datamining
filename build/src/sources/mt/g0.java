@@ -1,186 +1,146 @@
 package mt;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-class g0 {
+public final class g0 implements v {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final b f39310a;
+    /* renamed from: d  reason: collision with root package name */
+    private final int f39408d;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static class b {
+    /* renamed from: e  reason: collision with root package name */
+    private final p f39409e;
 
-        /* renamed from: a  reason: collision with root package name */
-        private final char f39311a;
+    /* renamed from: i  reason: collision with root package name */
+    private final Object f39410i;
 
-        /* renamed from: b  reason: collision with root package name */
-        private final b f39312b;
+    private g0(int i10, p pVar) {
+        this(i10, pVar, null);
+    }
 
-        /* renamed from: c  reason: collision with root package name */
-        private final b f39313c;
+    private static k0 a(k0 k0Var, p pVar, boolean z10) {
+        Object N = k0Var.H().N(pVar);
+        if (z10) {
+            return k0Var.K(1L, N);
+        }
+        return k0Var.J(1L, N);
+    }
 
-        /* renamed from: d  reason: collision with root package name */
-        private final b f39314d;
+    public static v c(p pVar) {
+        return new g0(4, pVar);
+    }
 
-        /* renamed from: e  reason: collision with root package name */
-        private final List f39315e;
+    public static v d(p pVar) {
+        return new g0(3, pVar);
+    }
 
-        /* JADX INFO: Access modifiers changed from: private */
-        public b j(net.time4j.tz.k kVar) {
-            ArrayList arrayList = new ArrayList();
-            List list = this.f39315e;
-            if (list != null) {
-                arrayList.addAll(list);
+    private q e(q qVar, p pVar) {
+        q x10 = qVar.x();
+        while (true) {
+            pVar = x10.w().D(pVar).a(x10);
+            if (pVar != null) {
+                x10 = q(x10, pVar);
+            } else {
+                return x10;
             }
-            arrayList.add(kVar);
-            return new b(this.f39311a, this.f39312b, this.f39313c, this.f39314d, arrayList);
-        }
-
-        /* JADX INFO: Access modifiers changed from: private */
-        public b k(b bVar) {
-            return new b(this.f39311a, bVar, this.f39313c, this.f39314d, this.f39315e);
-        }
-
-        /* JADX INFO: Access modifiers changed from: private */
-        public b l(b bVar) {
-            return new b(this.f39311a, this.f39312b, bVar, this.f39314d, this.f39315e);
-        }
-
-        /* JADX INFO: Access modifiers changed from: private */
-        public b m(b bVar) {
-            return new b(this.f39311a, this.f39312b, this.f39313c, bVar, this.f39315e);
-        }
-
-        private b(char c10) {
-            this(c10, null, null, null, null);
-        }
-
-        private b(char c10, b bVar, b bVar2, b bVar3, List list) {
-            this.f39311a = c10;
-            this.f39312b = bVar;
-            this.f39313c = bVar2;
-            this.f39314d = bVar3;
-            this.f39315e = list;
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public g0(b bVar) {
-        this.f39310a = bVar;
+    public static v f(p pVar) {
+        return new g0(6, pVar);
     }
 
-    private void a(b bVar, StringBuilder sb2, List list) {
-        if (bVar == null) {
+    private q g(q qVar, p pVar) {
+        q x10 = qVar.x();
+        while (true) {
+            pVar = x10.w().D(pVar).h(x10);
+            if (pVar != null) {
+                x10 = r(x10, pVar);
+            } else {
+                return x10;
+            }
+        }
+    }
+
+    public static v h(p pVar) {
+        return new g0(7, pVar);
+    }
+
+    private q i(q qVar, p pVar) {
+        return qVar.E(pVar, qVar.u(pVar));
+    }
+
+    public static v j(p pVar) {
+        return new g0(2, pVar);
+    }
+
+    private q k(q qVar, p pVar) {
+        return qVar.E(pVar, qVar.v(pVar));
+    }
+
+    public static v l(p pVar) {
+        return new g0(1, pVar);
+    }
+
+    private q m(q qVar, boolean z10) {
+        if (qVar instanceof k0) {
+            return (q) qVar.w().r().cast(a((k0) k0.class.cast(qVar), this.f39409e, z10));
+        }
+        throw new r("Base units not supported by: " + qVar.w().r());
+    }
+
+    public static v n(Object obj, p pVar) {
+        return new g0(0, pVar, obj);
+    }
+
+    public static v o(Object obj, p pVar) {
+        return new g0(5, pVar, obj);
+    }
+
+    private q p(q qVar, p pVar, Object obj, boolean z10) {
+        q x10 = qVar.x();
+        return (q) x10.w().D(pVar).x(x10, pVar.getType().cast(obj), z10);
+    }
+
+    private q q(q qVar, p pVar) {
+        z D = qVar.w().D(pVar);
+        return (q) D.x(qVar, D.l(qVar), pVar.k());
+    }
+
+    private q r(q qVar, p pVar) {
+        z D = qVar.w().D(pVar);
+        return (q) D.x(qVar, D.r(qVar), pVar.k());
+    }
+
+    @Override // mt.v
+    /* renamed from: b */
+    public q apply(q qVar) {
+        switch (this.f39408d) {
+            case 0:
+                return p(qVar, this.f39409e, this.f39410i, false);
+            case 1:
+                return k(qVar, this.f39409e);
+            case 2:
+                return i(qVar, this.f39409e);
+            case 3:
+                return g(qVar, this.f39409e);
+            case 4:
+                return e(qVar, this.f39409e);
+            case 5:
+                return p(qVar, this.f39409e, this.f39410i, true);
+            case 6:
+                return m(qVar, false);
+            case 7:
+                return m(qVar, true);
+            default:
+                throw new UnsupportedOperationException("Unknown mode: " + this.f39408d);
+        }
+    }
+
+    private g0(int i10, p pVar, Object obj) {
+        if (pVar != null) {
+            this.f39408d = i10;
+            this.f39409e = pVar;
+            this.f39410i = obj;
             return;
         }
-        a(bVar.f39312b, sb2, list);
-        if (bVar.f39315e != null) {
-            list.add(sb2.toString() + bVar.f39311a);
-        }
-        b bVar2 = bVar.f39313c;
-        sb2.append(bVar.f39311a);
-        a(bVar2, sb2, list);
-        sb2.deleteCharAt(sb2.length() - 1);
-        a(bVar.f39314d, sb2, list);
-    }
-
-    private static b c(b bVar, String str, int i10) {
-        if (bVar == null) {
-            return null;
-        }
-        char charAt = str.charAt(i10);
-        if (charAt < bVar.f39311a) {
-            return c(bVar.f39312b, str, i10);
-        }
-        if (charAt > bVar.f39311a) {
-            return c(bVar.f39314d, str, i10);
-        }
-        if (i10 < str.length() - 1) {
-            return c(bVar.f39313c, str, i10 + 1);
-        }
-        return bVar;
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static b d(b bVar, String str, net.time4j.tz.k kVar) {
-        if (!str.isEmpty()) {
-            if (kVar != null) {
-                return e(bVar, str, kVar, 0);
-            }
-            throw new NullPointerException("Missing timezone id.");
-        }
-        throw new IllegalArgumentException("Empty key cannot be inserted.");
-    }
-
-    private static b e(b bVar, String str, net.time4j.tz.k kVar, int i10) {
-        char charAt = str.charAt(i10);
-        if (bVar == null) {
-            bVar = new b(charAt);
-        }
-        if (charAt < bVar.f39311a) {
-            return bVar.k(e(bVar.f39312b, str, kVar, i10));
-        }
-        if (charAt > bVar.f39311a) {
-            return bVar.m(e(bVar.f39314d, str, kVar, i10));
-        }
-        return i10 < str.length() + (-1) ? bVar.l(e(bVar.f39313c, str, kVar, i10 + 1)) : bVar.j(kVar);
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public List b(String str) {
-        if (str.isEmpty()) {
-            return Collections.EMPTY_LIST;
-        }
-        b c10 = c(this.f39310a, str, 0);
-        if (c10 == null) {
-            return Collections.EMPTY_LIST;
-        }
-        return Collections.unmodifiableList(c10.f39315e);
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public String f(CharSequence charSequence, int i10) {
-        b bVar = this.f39310a;
-        int length = charSequence.length();
-        int i11 = i10;
-        int i12 = i11;
-        while (bVar != null && i11 < length) {
-            char charAt = charSequence.charAt(i11);
-            if (charAt < bVar.f39311a) {
-                bVar = bVar.f39312b;
-            } else if (charAt > bVar.f39311a) {
-                bVar = bVar.f39314d;
-            } else {
-                i11++;
-                if (bVar.f39315e != null) {
-                    i12 = i11;
-                }
-                bVar = bVar.f39313c;
-            }
-        }
-        if (i10 >= i12) {
-            return "";
-        }
-        return charSequence.subSequence(i10, i12).toString();
-    }
-
-    public String toString() {
-        ArrayList<String> arrayList = new ArrayList();
-        a(this.f39310a, new StringBuilder(), arrayList);
-        StringBuilder sb2 = new StringBuilder();
-        sb2.append("count=");
-        sb2.append(arrayList.size());
-        sb2.append(",labels={");
-        for (String str : arrayList) {
-            sb2.append(str);
-            sb2.append("=>");
-            sb2.append(b(str));
-            sb2.append(',');
-        }
-        sb2.deleteCharAt(sb2.length() - 1).append('}');
-        return sb2.toString();
+        throw new NullPointerException("Missing chronological element.");
     }
 }

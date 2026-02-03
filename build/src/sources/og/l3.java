@@ -5,37 +5,37 @@ import ui.c;
 final class l3 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final l3 f43375a = new l3();
+    static final l3 f43175a = new l3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43376b;
+    private static final ui.c f43176b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43377c;
+    private static final ui.c f43177c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43378d;
+    private static final ui.c f43178d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f43379e;
+    private static final ui.c f43179e;
 
     static {
         c.b a10 = ui.c.a("errorCode");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43376b = a10.b(s1Var.b()).a();
+        f43176b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("isColdCall");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43377c = a11.b(s1Var2.b()).a();
+        f43177c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("imageInfo");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43378d = a12.b(s1Var3.b()).a();
+        f43178d = a12.b(s1Var3.b()).a();
         c.b a13 = ui.c.a("options");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f43379e = a13.b(s1Var4.b()).a();
+        f43179e = a13.b(s1Var4.b()).a();
     }
 
     private l3() {

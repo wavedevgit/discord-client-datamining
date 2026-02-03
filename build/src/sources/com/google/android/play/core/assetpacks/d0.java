@@ -14,61 +14,61 @@ import java.util.concurrent.Executor;
 public final class d0 extends th.j0 {
 
     /* renamed from: g  reason: collision with root package name */
-    private final r2 f16359g;
+    private final r2 f15327g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final y1 f16360h;
+    private final y1 f15328h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final g1 f16361i;
+    private final g1 f15329i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final b2 f16362j;
+    private final b2 f15330j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final o3 f16363k;
+    private final o3 f15331k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final Handler f16364l;
+    private final Handler f15332l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final th.r f16365m;
+    private final th.r f15333m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final th.r f16366n;
+    private final th.r f15334n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final th.r f16367o;
+    private final th.r f15335o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d0(Context context, r2 r2Var, y1 y1Var, th.r rVar, b2 b2Var, g1 g1Var, th.r rVar2, th.r rVar3, o3 o3Var) {
         super(new th.k0("AssetPackServiceListenerRegistry"), new IntentFilter("com.google.android.play.core.assetpacks.receiver.ACTION_SESSION_UPDATE"), context);
-        this.f16364l = new Handler(Looper.getMainLooper());
-        this.f16359g = r2Var;
-        this.f16360h = y1Var;
-        this.f16365m = rVar;
-        this.f16362j = b2Var;
-        this.f16361i = g1Var;
-        this.f16366n = rVar2;
-        this.f16367o = rVar3;
-        this.f16363k = o3Var;
+        this.f15332l = new Handler(Looper.getMainLooper());
+        this.f15327g = r2Var;
+        this.f15328h = y1Var;
+        this.f15333m = rVar;
+        this.f15330j = b2Var;
+        this.f15329i = g1Var;
+        this.f15334n = rVar2;
+        this.f15335o = rVar3;
+        this.f15331k = o3Var;
     }
 
     public static /* synthetic */ void g(d0 d0Var, Bundle bundle) {
-        if (d0Var.f16359g.p(bundle)) {
-            d0Var.f16360h.a();
+        if (d0Var.f15327g.p(bundle)) {
+            d0Var.f15328h.a();
         }
     }
 
     public static /* synthetic */ void h(final d0 d0Var, Bundle bundle, final AssetPackState assetPackState) {
-        if (d0Var.f16359g.o(bundle)) {
-            d0Var.f16364l.post(new Runnable() { // from class: com.google.android.play.core.assetpacks.z
+        if (d0Var.f15327g.o(bundle)) {
+            d0Var.f15332l.post(new Runnable() { // from class: com.google.android.play.core.assetpacks.z
                 @Override // java.lang.Runnable
                 public final void run() {
                     d0.this.e(assetPackState);
                 }
             });
-            ((t4) d0Var.f16365m.a()).f();
+            ((t4) d0Var.f15333m.a()).f();
         }
     }
 
@@ -81,24 +81,24 @@ public final class d0 extends th.j0 {
         }
         final Bundle bundleExtra2 = intent.getBundleExtra("com.google.android.play.core.assetpacks.receiver.EXTRA_SESSION_STATE");
         if (bundleExtra2 == null) {
-            this.f49840a.b("Empty bundle received from broadcast.", new Object[0]);
+            this.f50051a.b("Empty bundle received from broadcast.", new Object[0]);
             return;
         }
         ArrayList<String> stringArrayList = bundleExtra2.getStringArrayList("pack_names");
         if (stringArrayList != null && stringArrayList.size() == 1) {
-            final AssetPackState c10 = AssetPackState.c(bundleExtra2, stringArrayList.get(0), this.f16362j, this.f16363k);
-            this.f49840a.a("ListenerRegistryBroadcastReceiver.onReceive: %s", c10);
+            final AssetPackState c10 = AssetPackState.c(bundleExtra2, stringArrayList.get(0), this.f15330j, this.f15331k);
+            this.f50051a.a("ListenerRegistryBroadcastReceiver.onReceive: %s", c10);
             PendingIntent pendingIntent = (PendingIntent) bundleExtra2.getParcelable("confirmation_intent");
             if (pendingIntent != null) {
-                this.f16361i.a(pendingIntent);
+                this.f15329i.a(pendingIntent);
             }
-            ((Executor) this.f16367o.a()).execute(new Runnable() { // from class: com.google.android.play.core.assetpacks.b0
+            ((Executor) this.f15335o.a()).execute(new Runnable() { // from class: com.google.android.play.core.assetpacks.b0
                 @Override // java.lang.Runnable
                 public final void run() {
                     d0.h(d0.this, bundleExtra2, c10);
                 }
             });
-            ((Executor) this.f16366n.a()).execute(new Runnable() { // from class: com.google.android.play.core.assetpacks.c0
+            ((Executor) this.f15334n.a()).execute(new Runnable() { // from class: com.google.android.play.core.assetpacks.c0
                 @Override // java.lang.Runnable
                 public final void run() {
                     d0.g(d0.this, bundleExtra2);
@@ -106,6 +106,6 @@ public final class d0 extends th.j0 {
             });
             return;
         }
-        this.f49840a.b("Corrupt bundle received from broadcast.", new Object[0]);
+        this.f50051a.b("Corrupt bundle received from broadcast.", new Object[0]);
     }
 }

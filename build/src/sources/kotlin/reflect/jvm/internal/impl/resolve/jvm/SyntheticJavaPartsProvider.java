@@ -13,23 +13,23 @@ import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface SyntheticJavaPartsProvider {
     @NotNull
-    public static final Companion Companion = Companion.f35257a;
+    public static final Companion Companion = Companion.f34647a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ Companion f35257a = new Companion();
+        static final /* synthetic */ Companion f34647a = new Companion();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final CompositeSyntheticJavaPartsProvider f35258b = new CompositeSyntheticJavaPartsProvider(CollectionsKt.l());
+        private static final CompositeSyntheticJavaPartsProvider f34648b = new CompositeSyntheticJavaPartsProvider(CollectionsKt.l());
 
         private Companion() {
         }
 
         @NotNull
         public final CompositeSyntheticJavaPartsProvider getEMPTY() {
-            return f35258b;
+            return f34648b;
         }
     }
 

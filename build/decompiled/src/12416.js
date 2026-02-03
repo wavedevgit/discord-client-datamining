@@ -1,35 +1,27 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = {
-        'Z_NO_FLUSH': 0,
-        'Z_PARTIAL_FLUSH': 1,
-        'Z_SYNC_FLUSH': 2,
-        'Z_FULL_FLUSH': 3,
-        'Z_FINISH': 4,
-        'Z_BLOCK': 5,
-        'Z_TREES': 6,
-        'Z_OK': 0,
-        'Z_STREAM_END': 1,
-        'Z_NEED_DICT': 2,
-        'Z_ERRNO': 4294967295,
-        'Z_STREAM_ERROR': 4294967294,
-        'Z_DATA_ERROR': 4294967293,
-        'Z_BUF_ERROR': 4294967291,
-        'Z_NO_COMPRESSION': 0,
-        'Z_BEST_SPEED': 1,
-        'Z_BEST_COMPRESSION': 9,
-        'Z_DEFAULT_COMPRESSION': 4294967295,
-        'Z_FILTERED': 1,
-        'Z_HUFFMAN_ONLY': 2,
-        'Z_RLE': 3,
-        'Z_FIXED': 4,
-        'Z_DEFAULT_STRATEGY': 0,
-        'Z_BINARY': 0,
-        'Z_TEXT': 1,
-        'Z_UNKNOWN': 2,
-        'Z_DEFLATED': 8
+    var1 = function() {
+        var1 = this;
+        var2 = null;
+        var1.input = var2;
+        var0 = 0;
+        var1.next_in = var0;
+        var1.avail_in = var0;
+        var1.total_in = var0;
+        var1.output = var2;
+        var1.next_out = var0;
+        var1.avail_out = var0;
+        var1.total_out = var0;
+        var3 = '';
+        var1.msg = var3;
+        var1.state = var2;
+        var2 = 2;
+        var1.data_type = var2;
+        var1.adler = var0;
+        var0 = undefined;
+        return var0;
     };
-    var0 = module;
+    var0 = arg4;
     var0.exports = var1;
     var0 = undefined;
     return var0;

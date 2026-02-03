@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/native/UserProfileConfirmThreadRemove.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun72215: for (var _fun72215_ip = 0;;) switch (_fun72215_ip) {
+        _fun72325: for (var _fun72325_ip = 0;;) switch (_fun72325_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.isForumPost;
@@ -67,13 +67,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var12.bind(var3)(var4);
                 var12 = var4.t;
                 if (var5) {
-                    _fun72215_ip = 141;
-                    continue _fun72215
+                    _fun72325_ip = 141;
+                    continue _fun72325
                 }
             case 131:
                 var4 = var12.ZPm8jN;
-                _fun72215_ip = 149;
-                continue _fun72215;
+                _fun72325_ip = 149;
+                continue _fun72325;
             case 141:
                 var4 = var12["8sKSjm"];
             case 149:
@@ -91,13 +91,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var12.bind(var3)(var4);
                 var4 = var4.t;
                 if (var5) {
-                    _fun72215_ip = 220;
-                    continue _fun72215
+                    _fun72325_ip = 220;
+                    continue _fun72325
                 }
             case 210:
                 var5 = var4["hL+Znb"];
-                _fun72215_ip = 228;
-                continue _fun72215;
+                _fun72325_ip = 228;
+                continue _fun72325;
             case 220:
                 var5 = var4["6UGfnx"];
             case 228:
@@ -163,4 +163,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3227, 4018, 1234, 4018, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3236, 4027, 1234, 4027, 2]);

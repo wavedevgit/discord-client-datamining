@@ -10,76 +10,76 @@ import ud.k;
 public abstract class j {
 
     /* renamed from: a  reason: collision with root package name */
-    public final long f50269a;
+    public final long f50556a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final Format f50270b;
+    public final Format f50557b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final s f50271c;
+    public final s f50558c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final long f50272d;
+    public final long f50559d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final List f50273e;
+    public final List f50560e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final List f50274f;
+    public final List f50561f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final List f50275g;
+    public final List f50562g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final i f50276h;
+    private final i f50563h;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class c extends j {
 
         /* renamed from: i  reason: collision with root package name */
-        public final Uri f50278i;
+        public final Uri f50565i;
 
         /* renamed from: j  reason: collision with root package name */
-        public final long f50279j;
+        public final long f50566j;
 
         /* renamed from: k  reason: collision with root package name */
-        private final String f50280k;
+        private final String f50567k;
 
         /* renamed from: l  reason: collision with root package name */
-        private final i f50281l;
+        private final i f50568l;
 
         /* renamed from: m  reason: collision with root package name */
-        private final m f50282m;
+        private final m f50569m;
 
         public c(long j10, Format format, List list, k.e eVar, List list2, List list3, List list4, String str, long j11) {
             super(j10, format, list, eVar, list2, list3, list4);
             m mVar;
-            this.f50278i = Uri.parse(((ud.b) list.get(0)).f50216a);
+            this.f50565i = Uri.parse(((ud.b) list.get(0)).f50503a);
             i c10 = eVar.c();
-            this.f50281l = c10;
-            this.f50280k = str;
-            this.f50279j = j11;
+            this.f50568l = c10;
+            this.f50567k = str;
+            this.f50566j = j11;
             if (c10 != null) {
                 mVar = null;
             } else {
                 mVar = new m(new i(null, 0L, j11));
             }
-            this.f50282m = mVar;
+            this.f50569m = mVar;
         }
 
         @Override // ud.j
         public String k() {
-            return this.f50280k;
+            return this.f50567k;
         }
 
         @Override // ud.j
         public td.f l() {
-            return this.f50282m;
+            return this.f50569m;
         }
 
         @Override // ud.j
         public i m() {
-            return this.f50281l;
+            return this.f50568l;
         }
     }
 
@@ -100,86 +100,86 @@ public abstract class j {
     public abstract i m();
 
     public i n() {
-        return this.f50276h;
+        return this.f50563h;
     }
 
     private j(long j10, Format format, List list, k kVar, List list2, List list3, List list4) {
         List unmodifiableList;
         ne.a.a(!list.isEmpty());
-        this.f50269a = j10;
-        this.f50270b = format;
-        this.f50271c = s.m(list);
+        this.f50556a = j10;
+        this.f50557b = format;
+        this.f50558c = s.m(list);
         if (list2 == null) {
             unmodifiableList = Collections.EMPTY_LIST;
         } else {
             unmodifiableList = Collections.unmodifiableList(list2);
         }
-        this.f50273e = unmodifiableList;
-        this.f50274f = list3;
-        this.f50275g = list4;
-        this.f50276h = kVar.a(this);
-        this.f50272d = kVar.b();
+        this.f50560e = unmodifiableList;
+        this.f50561f = list3;
+        this.f50562g = list4;
+        this.f50563h = kVar.a(this);
+        this.f50559d = kVar.b();
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class b extends j implements td.f {
 
         /* renamed from: i  reason: collision with root package name */
-        final k.a f50277i;
+        final k.a f50564i;
 
         public b(long j10, Format format, List list, k.a aVar, List list2, List list3, List list4) {
             super(j10, format, list, aVar, list2, list3, list4);
-            this.f50277i = aVar;
+            this.f50564i = aVar;
         }
 
         @Override // td.f
         public long a(long j10, long j11) {
-            return this.f50277i.h(j10, j11);
+            return this.f50564i.h(j10, j11);
         }
 
         @Override // td.f
         public long b(long j10) {
-            return this.f50277i.j(j10);
+            return this.f50564i.j(j10);
         }
 
         @Override // td.f
         public long c(long j10, long j11) {
-            return this.f50277i.d(j10, j11);
+            return this.f50564i.d(j10, j11);
         }
 
         @Override // td.f
         public long d(long j10, long j11) {
-            return this.f50277i.f(j10, j11);
+            return this.f50564i.f(j10, j11);
         }
 
         @Override // td.f
         public i e(long j10) {
-            return this.f50277i.k(this, j10);
+            return this.f50564i.k(this, j10);
         }
 
         @Override // td.f
         public long f(long j10, long j11) {
-            return this.f50277i.i(j10, j11);
+            return this.f50564i.i(j10, j11);
         }
 
         @Override // td.f
         public long g(long j10) {
-            return this.f50277i.g(j10);
+            return this.f50564i.g(j10);
         }
 
         @Override // td.f
         public boolean h() {
-            return this.f50277i.l();
+            return this.f50564i.l();
         }
 
         @Override // td.f
         public long i() {
-            return this.f50277i.e();
+            return this.f50564i.e();
         }
 
         @Override // td.f
         public long j(long j10, long j11) {
-            return this.f50277i.c(j10, j11);
+            return this.f50564i.c(j10, j11);
         }
 
         @Override // ud.j

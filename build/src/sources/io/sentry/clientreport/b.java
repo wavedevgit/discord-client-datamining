@@ -11,7 +11,7 @@ import java.util.concurrent.atomic.AtomicLong;
 final class b implements i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r f29438a = new r(new r.a() { // from class: io.sentry.clientreport.a
+    private final r f29799a = new r(new r.a() { // from class: io.sentry.clientreport.a
         @Override // io.sentry.util.r.a
         public final Object a() {
             return b.c();
@@ -31,7 +31,7 @@ final class b implements i {
 
     @Override // io.sentry.clientreport.i
     public void a(d dVar, Long l10) {
-        AtomicLong atomicLong = (AtomicLong) ((Map) this.f29438a.a()).get(dVar);
+        AtomicLong atomicLong = (AtomicLong) ((Map) this.f29799a.a()).get(dVar);
         if (atomicLong != null) {
             atomicLong.addAndGet(l10.longValue());
         }
@@ -40,7 +40,7 @@ final class b implements i {
     @Override // io.sentry.clientreport.i
     public List b() {
         ArrayList arrayList = new ArrayList();
-        for (Map.Entry entry : ((Map) this.f29438a.a()).entrySet()) {
+        for (Map.Entry entry : ((Map) this.f29799a.a()).entrySet()) {
             long andSet = ((AtomicLong) entry.getValue()).getAndSet(0L);
             Long valueOf = Long.valueOf(andSet);
             if (andSet > 0) {

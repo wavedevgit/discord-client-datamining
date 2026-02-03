@@ -6,21 +6,21 @@ import android.os.RemoteException;
 final class l extends th.l0 {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ int f16506e;
+    final /* synthetic */ int f15474e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ wg.k f16507i;
+    final /* synthetic */ wg.k f15475i;
 
     /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ x f16508o;
+    final /* synthetic */ x f15476o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public l(x xVar, wg.k kVar, int i10, wg.k kVar2) {
         super(kVar);
-        this.f16506e = i10;
-        this.f16507i = kVar2;
-        this.f16508o = xVar;
+        this.f15474e = i10;
+        this.f15475i = kVar2;
+        this.f15476o = xVar;
     }
 
     @Override // th.l0
@@ -31,13 +31,13 @@ final class l extends th.l0 {
         Bundle i10;
         Bundle h10;
         try {
-            v0Var = this.f16508o.f16724d;
-            str = this.f16508o.f16721a;
-            i10 = x.i(this.f16506e);
+            v0Var = this.f15476o.f15692d;
+            str = this.f15476o.f15689a;
+            i10 = x.i(this.f15474e);
             h10 = x.h();
-            ((th.b0) v0Var.e()).M0(str, i10, h10, new v(this.f16508o, this.f16507i));
+            ((th.b0) v0Var.e()).M0(str, i10, h10, new v(this.f15476o, this.f15475i));
         } catch (RemoteException e10) {
-            k0Var = x.f16719g;
+            k0Var = x.f15687g;
             k0Var.c(e10, "notifySessionFailed", new Object[0]);
         }
     }

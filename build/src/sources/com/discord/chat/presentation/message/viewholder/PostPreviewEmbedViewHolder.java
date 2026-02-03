@@ -27,7 +27,7 @@ public final class PostPreviewEmbedViewHolder extends MessagePartViewHolder {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind$lambda$0(Function4 function4, PostPreviewEmbed postPreviewEmbed, View view) {
-        function4.invoke(GuildId.m1073boximpl(postPreviewEmbed.m404getGuildIdfYKD8eg()), ChannelId.m1060boximpl(postPreviewEmbed.m406getParentChannelIdo4g7jtM()), ChannelId.m1060boximpl(postPreviewEmbed.m407getThreadIdo4g7jtM()), MessageId.m1086boximpl(postPreviewEmbed.m405getMessageId3Eiw7ao()));
+        function4.invoke(GuildId.m1072boximpl(postPreviewEmbed.m404getGuildIdfYKD8eg()), ChannelId.m1059boximpl(postPreviewEmbed.m406getParentChannelIdo4g7jtM()), ChannelId.m1059boximpl(postPreviewEmbed.m407getThreadIdo4g7jtM()), MessageId.m1085boximpl(postPreviewEmbed.m405getMessageId3Eiw7ao()));
     }
 
     public final void bind(@NotNull final PostPreviewEmbed postPreviewEmbed, @NotNull final Function4 onTapPostPreviewEmbed, SpoilerConfig spoilerConfig) {

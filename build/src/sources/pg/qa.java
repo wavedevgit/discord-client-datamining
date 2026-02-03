@@ -5,7 +5,7 @@ import ui.c;
 final class qa implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final qa f45751a = new qa();
+    static final qa f45709a = new qa();
 
     static {
         c.b a10 = ui.c.a("inferenceCommonLogEvent");

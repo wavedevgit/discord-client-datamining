@@ -5,7 +5,7 @@ import ui.c;
 final class ta implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ta f45825a = new ta();
+    static final ta f45783a = new ta();
 
     static {
         c.b a10 = ui.c.a("userSelectedArea");

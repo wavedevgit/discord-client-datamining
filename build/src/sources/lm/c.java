@@ -1,15 +1,14 @@
 package lm;
 
-import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ThemedReactContext;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import qm.e;
+import qm.f;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f37508a = new a(null);
+    public static final a f36978a = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -21,21 +20,29 @@ public final class c {
         }
     }
 
-    public c(ReactApplicationContext mReactContext) {
-        Intrinsics.checkNotNullParameter(mReactContext, "mReactContext");
-    }
-
-    public final e a(ThemedReactContext reactContext) {
+    public final f a(ThemedReactContext reactContext) {
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
-        return new e(reactContext);
+        return new f(reactContext);
     }
 
-    public final void b(e view, boolean z10) {
+    public final void b(f view, String interpolator) {
         Intrinsics.checkNotNullParameter(view, "view");
-        if (z10) {
-            view.d();
-        } else {
-            view.c();
-        }
+        Intrinsics.checkNotNullParameter(interpolator, "interpolator");
+        view.setInterpolator(interpolator);
+    }
+
+    public final void c(f view, double d10) {
+        Intrinsics.checkNotNullParameter(view, "view");
+        view.setOffset(d10);
+    }
+
+    public final void d(f view, boolean z10) {
+        Intrinsics.checkNotNullParameter(view, "view");
+        view.setScrollKeyboardOffScreenWhenVisible(z10);
+    }
+
+    public final void e(f view, boolean z10) {
+        Intrinsics.checkNotNullParameter(view, "view");
+        view.setScrollKeyboardOnScreenWhenNotVisible(z10);
     }
 }

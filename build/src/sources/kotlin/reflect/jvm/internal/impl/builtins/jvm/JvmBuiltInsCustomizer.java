@@ -75,31 +75,31 @@ import org.jetbrains.annotations.NotNull;
 public final class JvmBuiltInsCustomizer implements AdditionalClassPartsProvider, PlatformDependentDeclarationFilter {
 
     /* renamed from: i  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f33318i = {Reflection.property1(new PropertyReference1Impl(JvmBuiltInsCustomizer.class, "settings", "getSettings()Lorg/jetbrains/kotlin/builtins/jvm/JvmBuiltIns$Settings;", 0)), Reflection.property1(new PropertyReference1Impl(JvmBuiltInsCustomizer.class, "cloneableType", "getCloneableType()Lorg/jetbrains/kotlin/types/SimpleType;", 0)), Reflection.property1(new PropertyReference1Impl(JvmBuiltInsCustomizer.class, "notConsideredDeprecation", "getNotConsideredDeprecation()Lorg/jetbrains/kotlin/descriptors/annotations/Annotations;", 0))};
+    static final /* synthetic */ KProperty[] f32708i = {Reflection.property1(new PropertyReference1Impl(JvmBuiltInsCustomizer.class, "settings", "getSettings()Lorg/jetbrains/kotlin/builtins/jvm/JvmBuiltIns$Settings;", 0)), Reflection.property1(new PropertyReference1Impl(JvmBuiltInsCustomizer.class, "cloneableType", "getCloneableType()Lorg/jetbrains/kotlin/types/SimpleType;", 0)), Reflection.property1(new PropertyReference1Impl(JvmBuiltInsCustomizer.class, "notConsideredDeprecation", "getNotConsideredDeprecation()Lorg/jetbrains/kotlin/descriptors/annotations/Annotations;", 0))};
 
     /* renamed from: a  reason: collision with root package name */
-    private final ModuleDescriptor f33319a;
+    private final ModuleDescriptor f32709a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final JavaToKotlinClassMapper f33320b;
+    private final JavaToKotlinClassMapper f32710b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final NotNullLazyValue f33321c;
+    private final NotNullLazyValue f32711c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final KotlinType f33322d;
+    private final KotlinType f32712d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final NotNullLazyValue f33323e;
+    private final NotNullLazyValue f32713e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final CacheWithNotNullValues f33324f;
+    private final CacheWithNotNullValues f32714f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final NotNullLazyValue f33325g;
+    private final NotNullLazyValue f32715g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final MemoizedFunctionToNotNull f33326h;
+    private final MemoizedFunctionToNotNull f32716h;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public /* synthetic */ class WhenMappings {
@@ -108,23 +108,23 @@ public final class JvmBuiltInsCustomizer implements AdditionalClassPartsProvider
         static {
             int[] iArr = new int[a.values().length];
             try {
-                iArr[a.f33327d.ordinal()] = 1;
+                iArr[a.f32717d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[a.f33329i.ordinal()] = 2;
+                iArr[a.f32719i.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[a.f33330o.ordinal()] = 3;
+                iArr[a.f32720o.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                iArr[a.f33331p.ordinal()] = 4;
+                iArr[a.f32721p.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                iArr[a.f33328e.ordinal()] = 5;
+                iArr[a.f32718e.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             $EnumSwitchMapping$0 = iArr;
@@ -138,37 +138,37 @@ public final class JvmBuiltInsCustomizer implements AdditionalClassPartsProvider
     public static final class a {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f33327d = new a("HIDDEN", 0);
+        public static final a f32717d = new a("HIDDEN", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final a f33328e = new a("VISIBLE", 1);
+        public static final a f32718e = new a("VISIBLE", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final a f33329i = new a("DEPRECATED_LIST_METHODS", 2);
+        public static final a f32719i = new a("DEPRECATED_LIST_METHODS", 2);
 
         /* renamed from: o  reason: collision with root package name */
-        public static final a f33330o = new a("NOT_CONSIDERED", 3);
+        public static final a f32720o = new a("NOT_CONSIDERED", 3);
 
         /* renamed from: p  reason: collision with root package name */
-        public static final a f33331p = new a("DROP", 4);
+        public static final a f32721p = new a("DROP", 4);
 
         /* renamed from: q  reason: collision with root package name */
-        private static final /* synthetic */ a[] f33332q;
+        private static final /* synthetic */ a[] f32722q;
 
         /* renamed from: r  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f33333r;
+        private static final /* synthetic */ EnumEntries f32723r;
 
         static {
             a[] a10 = a();
-            f33332q = a10;
-            f33333r = qr.a.a(a10);
+            f32722q = a10;
+            f32723r = sr.a.a(a10);
         }
 
         private a(String str, int i10) {
         }
 
         private static final /* synthetic */ a[] a() {
-            return new a[]{f33327d, f33328e, f33329i, f33330o, f33331p};
+            return new a[]{f32717d, f32718e, f32719i, f32720o, f32721p};
         }
 
         public static a valueOf(String str) {
@@ -176,7 +176,7 @@ public final class JvmBuiltInsCustomizer implements AdditionalClassPartsProvider
         }
 
         public static a[] values() {
-            return (a[]) f33332q.clone();
+            return (a[]) f32722q.clone();
         }
     }
 
@@ -184,21 +184,21 @@ public final class JvmBuiltInsCustomizer implements AdditionalClassPartsProvider
         Intrinsics.checkNotNullParameter(moduleDescriptor, "moduleDescriptor");
         Intrinsics.checkNotNullParameter(storageManager, "storageManager");
         Intrinsics.checkNotNullParameter(settingsComputation, "settingsComputation");
-        this.f33319a = moduleDescriptor;
-        this.f33320b = JavaToKotlinClassMapper.INSTANCE;
-        this.f33321c = storageManager.createLazyValue(settingsComputation);
-        this.f33322d = l(storageManager);
-        this.f33323e = storageManager.createLazyValue(new f(this, storageManager));
-        this.f33324f = storageManager.createCacheWithNotNullValues();
-        this.f33325g = storageManager.createLazyValue(new g(this));
-        this.f33326h = storageManager.createMemoizedFunction(new h(this));
+        this.f32709a = moduleDescriptor;
+        this.f32710b = JavaToKotlinClassMapper.INSTANCE;
+        this.f32711c = storageManager.createLazyValue(settingsComputation);
+        this.f32712d = l(storageManager);
+        this.f32713e = storageManager.createLazyValue(new f(this, storageManager));
+        this.f32714f = storageManager.createCacheWithNotNullValues();
+        this.f32715g = storageManager.createLazyValue(new g(this));
+        this.f32716h = storageManager.createMemoizedFunction(new h(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Boolean A(JvmBuiltInsCustomizer jvmBuiltInsCustomizer, CallableMemberDescriptor callableMemberDescriptor) {
         boolean z10;
         if (callableMemberDescriptor.getKind() == CallableMemberDescriptor.Kind.DECLARATION) {
-            JavaToKotlinClassMapper javaToKotlinClassMapper = jvmBuiltInsCustomizer.f33320b;
+            JavaToKotlinClassMapper javaToKotlinClassMapper = jvmBuiltInsCustomizer.f32710b;
             DeclarationDescriptor containingDeclaration = callableMemberDescriptor.getContainingDeclaration();
             Intrinsics.checkNotNull(containingDeclaration, "null cannot be cast to non-null type org.jetbrains.kotlin.descriptors.ClassDescriptor");
             if (javaToKotlinClassMapper.isMutable((ClassDescriptor) containingDeclaration)) {
@@ -215,9 +215,9 @@ public final class JvmBuiltInsCustomizer implements AdditionalClassPartsProvider
         if (constructorDescriptor.getValueParameters().size() == 1) {
             List<ValueParameterDescriptor> valueParameters = constructorDescriptor.getValueParameters();
             Intrinsics.checkNotNullExpressionValue(valueParameters, "getValueParameters(...)");
-            ClassifierDescriptor mo1200getDeclarationDescriptor = ((ValueParameterDescriptor) CollectionsKt.Q0(valueParameters)).getType().getConstructor().mo1200getDeclarationDescriptor();
-            if (mo1200getDeclarationDescriptor != null) {
-                fqNameUnsafe = DescriptorUtilsKt.getFqNameUnsafe(mo1200getDeclarationDescriptor);
+            ClassifierDescriptor mo1197getDeclarationDescriptor = ((ValueParameterDescriptor) CollectionsKt.Q0(valueParameters)).getType().getConstructor().mo1197getDeclarationDescriptor();
+            if (mo1197getDeclarationDescriptor != null) {
+                fqNameUnsafe = DescriptorUtilsKt.getFqNameUnsafe(mo1197getDeclarationDescriptor);
             } else {
                 fqNameUnsafe = null;
             }
@@ -231,7 +231,7 @@ public final class JvmBuiltInsCustomizer implements AdditionalClassPartsProvider
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Annotations C(JvmBuiltInsCustomizer jvmBuiltInsCustomizer) {
-        return Annotations.Companion.create(CollectionsKt.e(AnnotationUtilKt.createDeprecatedAnnotation$default(jvmBuiltInsCustomizer.f33319a.getBuiltIns(), "This member is not fully supported by Kotlin compiler, so it may be absent or have different signature in next major version", null, null, true, 6, null)));
+        return Annotations.Companion.create(CollectionsKt.e(AnnotationUtilKt.createDeprecatedAnnotation$default(jvmBuiltInsCustomizer.f32709a.getBuiltIns(), "This member is not fully supported by Kotlin compiler, so it may be absent or have different signature in next major version", null, null, true, 6, null)));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -251,7 +251,7 @@ public final class JvmBuiltInsCustomizer implements AdditionalClassPartsProvider
     }
 
     private final KotlinType l(StorageManager storageManager) {
-        final ModuleDescriptor moduleDescriptor = this.f33319a;
+        final ModuleDescriptor moduleDescriptor = this.f32709a;
         final FqName fqName = new FqName("java.io");
         ClassDescriptorImpl classDescriptorImpl = new ClassDescriptorImpl(new PackageFragmentDescriptorImpl(moduleDescriptor, fqName) { // from class: kotlin.reflect.jvm.internal.impl.builtins.jvm.JvmBuiltInsCustomizer$createMockJavaIoSerializableType$mockJavaIoPackageFragment$1
             @Override // kotlin.reflect.jvm.internal.impl.descriptors.PackageFragmentDescriptor
@@ -267,7 +267,7 @@ public final class JvmBuiltInsCustomizer implements AdditionalClassPartsProvider
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final KotlinType m(JvmBuiltInsCustomizer jvmBuiltInsCustomizer) {
-        SimpleType anyType = jvmBuiltInsCustomizer.f33319a.getBuiltIns().getAnyType();
+        SimpleType anyType = jvmBuiltInsCustomizer.f32709a.getBuiltIns().getAnyType();
         Intrinsics.checkNotNullExpressionValue(anyType, "getAnyType(...)");
         return anyType;
     }
@@ -276,7 +276,7 @@ public final class JvmBuiltInsCustomizer implements AdditionalClassPartsProvider
     public static final Annotations n(JvmBuiltInsCustomizer jvmBuiltInsCustomizer, Pair pair) {
         Intrinsics.checkNotNullParameter(pair, "<destruct>");
         String str = (String) pair.b();
-        return Annotations.Companion.create(CollectionsKt.e(AnnotationUtilKt.createDeprecatedAnnotation(jvmBuiltInsCustomizer.f33319a.getBuiltIns(), '\'' + ((String) pair.a()) + "()' member of List is redundant in Kotlin and might be removed soon. Please use '" + str + "()' stdlib extension instead", str + "()", "HIDDEN", false)));
+        return Annotations.Companion.create(CollectionsKt.e(AnnotationUtilKt.createDeprecatedAnnotation(jvmBuiltInsCustomizer.f32709a.getBuiltIns(), '\'' + ((String) pair.a()) + "()' member of List is redundant in Kotlin and might be removed soon. Please use '" + str + "()' stdlib extension instead", str + "()", "HIDDEN", false)));
     }
 
     private final Collection o(ClassDescriptor classDescriptor, Function1 function1) {
@@ -284,7 +284,7 @@ public final class JvmBuiltInsCustomizer implements AdditionalClassPartsProvider
         if (t10 == null) {
             return CollectionsKt.l();
         }
-        Collection<ClassDescriptor> mapPlatformClass = this.f33320b.mapPlatformClass(DescriptorUtilsKt.getFqNameSafe(t10), FallbackBuiltIns.f33282g.getInstance());
+        Collection<ClassDescriptor> mapPlatformClass = this.f32710b.mapPlatformClass(DescriptorUtilsKt.getFqNameSafe(t10), FallbackBuiltIns.f32672g.getInstance());
         ClassDescriptor classDescriptor2 = (ClassDescriptor) CollectionsKt.A0(mapPlatformClass);
         if (classDescriptor2 == null) {
             return CollectionsKt.l();
@@ -295,8 +295,8 @@ public final class JvmBuiltInsCustomizer implements AdditionalClassPartsProvider
             arrayList.add(DescriptorUtilsKt.getFqNameSafe(classDescriptor3));
         }
         SmartSet create = companion.create(arrayList);
-        boolean isMutable = this.f33320b.isMutable(classDescriptor);
-        MemberScope unsubstitutedMemberScope = ((ClassDescriptor) this.f33324f.computeIfAbsent(DescriptorUtilsKt.getFqNameSafe(t10), new k(t10, classDescriptor2))).getUnsubstitutedMemberScope();
+        boolean isMutable = this.f32710b.isMutable(classDescriptor);
+        MemberScope unsubstitutedMemberScope = ((ClassDescriptor) this.f32714f.computeIfAbsent(DescriptorUtilsKt.getFqNameSafe(t10), new k(t10, classDescriptor2))).getUnsubstitutedMemberScope();
         Intrinsics.checkNotNullExpressionValue(unsubstitutedMemberScope, "getUnsubstitutedMemberScope(...)");
         ArrayList arrayList2 = new ArrayList();
         for (Object obj : (Iterable) function1.invoke(unsubstitutedMemberScope)) {
@@ -330,7 +330,7 @@ public final class JvmBuiltInsCustomizer implements AdditionalClassPartsProvider
     }
 
     private final SimpleType q() {
-        return (SimpleType) StorageKt.getValue(this.f33323e, this, f33318i[1]);
+        return (SimpleType) StorageKt.getValue(this.f32713e, this, f32708i[1]);
     }
 
     private static final boolean r(ConstructorDescriptor constructorDescriptor, TypeSubstitutor typeSubstitutor, ConstructorDescriptor constructorDescriptor2) {
@@ -378,13 +378,13 @@ public final class JvmBuiltInsCustomizer implements AdditionalClassPartsProvider
                 String signature = MethodSignatureBuildingUtilsKt.signature(SignatureBuildingComponents.INSTANCE, javaClassDescriptor, computeJvmDescriptor$default);
                 JvmBuiltInsSignatures jvmBuiltInsSignatures = JvmBuiltInsSignatures.INSTANCE;
                 if (jvmBuiltInsSignatures.getHIDDEN_METHOD_SIGNATURES().contains(signature)) {
-                    objectRef.element = JvmBuiltInsCustomizer.a.f33327d;
+                    objectRef.element = JvmBuiltInsCustomizer.a.f32717d;
                 } else if (jvmBuiltInsSignatures.getVISIBLE_METHOD_SIGNATURES().contains(signature)) {
-                    objectRef.element = JvmBuiltInsCustomizer.a.f33328e;
+                    objectRef.element = JvmBuiltInsCustomizer.a.f32718e;
                 } else if (jvmBuiltInsSignatures.getDEPRECATED_LIST_METHODS().contains(signature)) {
-                    objectRef.element = JvmBuiltInsCustomizer.a.f33329i;
+                    objectRef.element = JvmBuiltInsCustomizer.a.f32719i;
                 } else if (jvmBuiltInsSignatures.getDROP_LIST_METHOD_SIGNATURES().contains(signature)) {
-                    objectRef.element = JvmBuiltInsCustomizer.a.f33331p;
+                    objectRef.element = JvmBuiltInsCustomizer.a.f32721p;
                 }
                 return objectRef.element == 0;
             }
@@ -392,7 +392,7 @@ public final class JvmBuiltInsCustomizer implements AdditionalClassPartsProvider
             @Override // kotlin.reflect.jvm.internal.impl.utils.DFS.NodeHandler
             public JvmBuiltInsCustomizer.a result() {
                 JvmBuiltInsCustomizer.a aVar = (JvmBuiltInsCustomizer.a) objectRef.element;
-                return aVar == null ? JvmBuiltInsCustomizer.a.f33330o : aVar;
+                return aVar == null ? JvmBuiltInsCustomizer.a.f32720o : aVar;
             }
         });
         Intrinsics.checkNotNullExpressionValue(dfs, "dfs(...)");
@@ -407,10 +407,10 @@ public final class JvmBuiltInsCustomizer implements AdditionalClassPartsProvider
         Intrinsics.checkNotNullExpressionValue(supertypes, "getSupertypes(...)");
         ArrayList arrayList = new ArrayList();
         for (KotlinType kotlinType : supertypes) {
-            ClassifierDescriptor mo1200getDeclarationDescriptor = kotlinType.getConstructor().mo1200getDeclarationDescriptor();
+            ClassifierDescriptor mo1197getDeclarationDescriptor = kotlinType.getConstructor().mo1197getDeclarationDescriptor();
             LazyJavaClassDescriptor lazyJavaClassDescriptor = null;
-            if (mo1200getDeclarationDescriptor != null) {
-                classifierDescriptor = mo1200getDeclarationDescriptor.getOriginal();
+            if (mo1197getDeclarationDescriptor != null) {
+                classifierDescriptor = mo1197getDeclarationDescriptor.getOriginal();
             } else {
                 classifierDescriptor = null;
             }
@@ -430,11 +430,11 @@ public final class JvmBuiltInsCustomizer implements AdditionalClassPartsProvider
     }
 
     private final Annotations w() {
-        return (Annotations) StorageKt.getValue(this.f33325g, this, f33318i[2]);
+        return (Annotations) StorageKt.getValue(this.f32715g, this, f32708i[2]);
     }
 
     private final JvmBuiltIns.Settings x() {
-        return (JvmBuiltIns.Settings) StorageKt.getValue(this.f33321c, this, f33318i[0]);
+        return (JvmBuiltIns.Settings) StorageKt.getValue(this.f32711c, this, f32708i[0]);
     }
 
     private final boolean y(SimpleFunctionDescriptor simpleFunctionDescriptor, boolean z10) {
@@ -444,7 +444,7 @@ public final class JvmBuiltInsCustomizer implements AdditionalClassPartsProvider
         if (z10 ^ JvmBuiltInsSignatures.INSTANCE.getMUTABLE_METHOD_SIGNATURES().contains(MethodSignatureBuildingUtilsKt.signature(SignatureBuildingComponents.INSTANCE, (ClassDescriptor) containingDeclaration, computeJvmDescriptor$default))) {
             return true;
         }
-        Boolean ifAny = DFS.ifAny(CollectionsKt.e(simpleFunctionDescriptor), l.f33361a, new m(this));
+        Boolean ifAny = DFS.ifAny(CollectionsKt.e(simpleFunctionDescriptor), l.f32751a, new m(this));
         Intrinsics.checkNotNullExpressionValue(ifAny, "ifAny(...)");
         return ifAny.booleanValue();
     }
@@ -463,7 +463,7 @@ public final class JvmBuiltInsCustomizer implements AdditionalClassPartsProvider
             if (t10 == null) {
                 return CollectionsKt.l();
             }
-            ClassDescriptor mapJavaToKotlin$default = JavaToKotlinClassMapper.mapJavaToKotlin$default(this.f33320b, DescriptorUtilsKt.getFqNameSafe(t10), FallbackBuiltIns.f33282g.getInstance(), null, 4, null);
+            ClassDescriptor mapJavaToKotlin$default = JavaToKotlinClassMapper.mapJavaToKotlin$default(this.f32710b, DescriptorUtilsKt.getFqNameSafe(t10), FallbackBuiltIns.f32672g.getInstance(), null, 4, null);
             if (mapJavaToKotlin$default == null) {
                 return CollectionsKt.l();
             }
@@ -530,10 +530,10 @@ public final class JvmBuiltInsCustomizer implements AdditionalClassPartsProvider
         FqNameUnsafe fqNameUnsafe = DescriptorUtilsKt.getFqNameUnsafe(classDescriptor);
         JvmBuiltInsSignatures jvmBuiltInsSignatures = JvmBuiltInsSignatures.INSTANCE;
         if (jvmBuiltInsSignatures.isArrayOrPrimitiveArray(fqNameUnsafe)) {
-            return CollectionsKt.o(q(), this.f33322d);
+            return CollectionsKt.o(q(), this.f32712d);
         }
         if (jvmBuiltInsSignatures.isSerializableInJava(fqNameUnsafe)) {
-            return CollectionsKt.e(this.f33322d);
+            return CollectionsKt.e(this.f32712d);
         }
         return CollectionsKt.l();
     }

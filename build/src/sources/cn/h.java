@@ -1,26 +1,16 @@
 package cn;
 
-import com.facebook.react.bridge.ReactContext;
-import com.facebook.react.uimanager.events.Event;
-import com.swmansion.reanimated.NodesManager;
-import com.swmansion.reanimated.ReanimatedModule;
-import kotlin.jvm.internal.Intrinsics;
+import android.app.Dialog;
+import android.view.View;
+import android.view.Window;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class h {
-
-    /* renamed from: a  reason: collision with root package name */
-    private ReanimatedModule f8352a;
-
-    public final void a(Event event, ReactContext reactApplicationContext) {
-        NodesManager nodesManager;
-        Intrinsics.checkNotNullParameter(event, "event");
-        Intrinsics.checkNotNullParameter(reactApplicationContext, "reactApplicationContext");
-        if (this.f8352a == null) {
-            this.f8352a = (ReanimatedModule) reactApplicationContext.getNativeModule(ReanimatedModule.class);
+public abstract class h {
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final View b(Dialog dialog) {
+        Window window = dialog.getWindow();
+        if (window == null) {
+            return null;
         }
-        ReanimatedModule reanimatedModule = this.f8352a;
-        if (reanimatedModule != null && (nodesManager = reanimatedModule.getNodesManager()) != null) {
-            nodesManager.onEventDispatch(event);
-        }
+        return window.getDecorView();
     }
 }

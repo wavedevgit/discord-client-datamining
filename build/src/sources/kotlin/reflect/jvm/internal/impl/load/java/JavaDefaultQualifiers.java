@@ -10,32 +10,32 @@ import org.jetbrains.annotations.NotNull;
 public final class JavaDefaultQualifiers {
 
     /* renamed from: a  reason: collision with root package name */
-    private final NullabilityQualifierWithMigrationStatus f33764a;
+    private final NullabilityQualifierWithMigrationStatus f33154a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Collection f33765b;
+    private final Collection f33155b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f33766c;
+    private final boolean f33156c;
 
     public JavaDefaultQualifiers(@NotNull NullabilityQualifierWithMigrationStatus nullabilityQualifier, @NotNull Collection<? extends AnnotationQualifierApplicabilityType> qualifierApplicabilityTypes, boolean z10) {
         Intrinsics.checkNotNullParameter(nullabilityQualifier, "nullabilityQualifier");
         Intrinsics.checkNotNullParameter(qualifierApplicabilityTypes, "qualifierApplicabilityTypes");
-        this.f33764a = nullabilityQualifier;
-        this.f33765b = qualifierApplicabilityTypes;
-        this.f33766c = z10;
+        this.f33154a = nullabilityQualifier;
+        this.f33155b = qualifierApplicabilityTypes;
+        this.f33156c = z10;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
     public static /* synthetic */ JavaDefaultQualifiers copy$default(JavaDefaultQualifiers javaDefaultQualifiers, NullabilityQualifierWithMigrationStatus nullabilityQualifierWithMigrationStatus, Collection collection, boolean z10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            nullabilityQualifierWithMigrationStatus = javaDefaultQualifiers.f33764a;
+            nullabilityQualifierWithMigrationStatus = javaDefaultQualifiers.f33154a;
         }
         if ((i10 & 2) != 0) {
-            collection = javaDefaultQualifiers.f33765b;
+            collection = javaDefaultQualifiers.f33155b;
         }
         if ((i10 & 4) != 0) {
-            z10 = javaDefaultQualifiers.f33766c;
+            z10 = javaDefaultQualifiers.f33156c;
         }
         return javaDefaultQualifiers.copy(nullabilityQualifierWithMigrationStatus, collection, z10);
     }
@@ -53,32 +53,32 @@ public final class JavaDefaultQualifiers {
         }
         if (obj instanceof JavaDefaultQualifiers) {
             JavaDefaultQualifiers javaDefaultQualifiers = (JavaDefaultQualifiers) obj;
-            return Intrinsics.areEqual(this.f33764a, javaDefaultQualifiers.f33764a) && Intrinsics.areEqual(this.f33765b, javaDefaultQualifiers.f33765b) && this.f33766c == javaDefaultQualifiers.f33766c;
+            return Intrinsics.areEqual(this.f33154a, javaDefaultQualifiers.f33154a) && Intrinsics.areEqual(this.f33155b, javaDefaultQualifiers.f33155b) && this.f33156c == javaDefaultQualifiers.f33156c;
         }
         return false;
     }
 
     public final boolean getDefinitelyNotNull() {
-        return this.f33766c;
+        return this.f33156c;
     }
 
     @NotNull
     public final NullabilityQualifierWithMigrationStatus getNullabilityQualifier() {
-        return this.f33764a;
+        return this.f33154a;
     }
 
     @NotNull
     public final Collection<AnnotationQualifierApplicabilityType> getQualifierApplicabilityTypes() {
-        return this.f33765b;
+        return this.f33155b;
     }
 
     public int hashCode() {
-        return (((this.f33764a.hashCode() * 31) + this.f33765b.hashCode()) * 31) + Boolean.hashCode(this.f33766c);
+        return (((this.f33154a.hashCode() * 31) + this.f33155b.hashCode()) * 31) + Boolean.hashCode(this.f33156c);
     }
 
     @NotNull
     public String toString() {
-        return "JavaDefaultQualifiers(nullabilityQualifier=" + this.f33764a + ", qualifierApplicabilityTypes=" + this.f33765b + ", definitelyNotNull=" + this.f33766c + ')';
+        return "JavaDefaultQualifiers(nullabilityQualifier=" + this.f33154a + ", qualifierApplicabilityTypes=" + this.f33155b + ", definitelyNotNull=" + this.f33156c + ')';
     }
 
     public /* synthetic */ JavaDefaultQualifiers(NullabilityQualifierWithMigrationStatus nullabilityQualifierWithMigrationStatus, Collection collection, boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {

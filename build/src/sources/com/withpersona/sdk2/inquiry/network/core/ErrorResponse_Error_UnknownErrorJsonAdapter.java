@@ -34,13 +34,13 @@ public final class ErrorResponse_Error_UnknownErrorJsonAdapter extends h {
         String str = null;
         String str2 = null;
         while (mVar.hasNext()) {
-            int t02 = mVar.t0(this.options);
-            if (t02 == -1) {
-                mVar.F0();
+            int A0 = mVar.A0(this.options);
+            if (A0 == -1) {
+                mVar.E0();
                 mVar.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(mVar);
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 str2 = (String) this.nullableStringAdapter.fromJson(mVar);
             }
         }
@@ -52,9 +52,9 @@ public final class ErrorResponse_Error_UnknownErrorJsonAdapter extends h {
     public void toJson(@NotNull t tVar, ErrorResponse.Error.UnknownError unknownError) {
         if (unknownError != null) {
             tVar.l();
-            tVar.t0("title");
+            tVar.A0("title");
             this.nullableStringAdapter.toJson(tVar, unknownError.getTitle());
-            tVar.t0("originalCode");
+            tVar.A0("originalCode");
             this.nullableStringAdapter.toJson(tVar, unknownError.getOriginalCode());
             tVar.E();
             return;

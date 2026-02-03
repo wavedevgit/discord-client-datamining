@@ -22,7 +22,7 @@ final class NavigationType {
     static {
         NavigationType[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = qr.a.a($values);
+        $ENTRIES = sr.a.a($values);
     }
 
     private NavigationType(String str, int i10, int i11) {

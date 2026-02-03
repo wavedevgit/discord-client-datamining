@@ -1,13 +1,8 @@
 package com.discord.chat.bridge;
 
 import androidx.recyclerview.widget.RecyclerView;
-import bt.a2;
-import bt.g0;
-import bt.h;
-import bt.h0;
-import bt.n2;
-import bt.p0;
-import bt.z0;
+import at.b0;
+import bt.a;
 import com.discord.chat.bridge.MessageState;
 import com.discord.chat.bridge.MessageType;
 import com.discord.chat.bridge.activities.ActivityInstanceEmbed;
@@ -77,8 +72,14 @@ import com.facebook.react.devsupport.StackTraceHelper;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import com.facebook.react.uimanager.events.PointerEventHelper;
 import com.swmansion.reanimated.BuildConfig;
+import dt.a2;
+import dt.g0;
+import dt.h;
+import dt.h0;
+import dt.n2;
+import dt.p0;
+import dt.z0;
 import java.util.List;
-import jr.c;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -89,12 +90,11 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
+import lr.c;
 import org.jetbrains.annotations.NotNull;
 import org.webrtc.PeerConnection;
-import ys.b0;
-import zs.a;
+@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/Message.$serializer", "Ldt/h0;", "Lcom/discord/chat/bridge/Message;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/Message;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/Message;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @c
-@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/Message.$serializer", "Lbt/h0;", "Lcom/discord/chat/bridge/Message;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/Message;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/Message;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public /* synthetic */ class Message$$serializer implements h0 {
     @NotNull
@@ -205,7 +205,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
     private Message$$serializer() {
     }
 
-    @Override // bt.h0
+    @Override // dt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
@@ -216,12 +216,12 @@ public /* synthetic */ class Message$$serializer implements h0 {
         KSerializer u11 = a.u(guildId$$serializer);
         KSerializer u12 = a.u(MessageState.Serializer.INSTANCE);
         KSerializer u13 = a.u(UserId$$serializer.INSTANCE);
-        z0 z0Var = z0.f7736a;
-        n2 n2Var = n2.f7662a;
+        z0 z0Var = z0.f21052a;
+        n2 n2Var = n2.f20978a;
         KSerializer u14 = a.u(n2Var);
-        p0 p0Var = p0.f7678a;
+        p0 p0Var = p0.f20994a;
         KSerializer u15 = a.u(p0Var);
-        g0 g0Var = g0.f7622a;
+        g0 g0Var = g0.f20938a;
         KSerializer u16 = a.u(g0Var);
         KSerializer u17 = a.u(p0Var);
         KSerializer u18 = a.u(p0Var);
@@ -231,7 +231,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
         KSerializer u22 = a.u(p0Var);
         KSerializer u23 = a.u(p0Var);
         KSerializer u24 = a.u(RoleColors$$serializer.INSTANCE);
-        h hVar = h.f7626a;
+        h hVar = h.f20942a;
         return new KSerializer[]{MessageType.Serializer.INSTANCE, messageId$$serializer, u10, ChannelId$$serializer.INSTANCE, u11, u12, u13, z0Var, u14, u15, u16, u17, u18, u19, u20, u21, u22, u23, u24, hVar, hVar, a.u(p0Var), a.u(n2Var), a.u(n2Var), a.u((KSerializer) lazyArr[24].getValue()), a.u((KSerializer) lazyArr[25].getValue()), a.u(g0Var), a.u(StructurableTextSerializer.INSTANCE), a.u((KSerializer) lazyArr[28].getValue()), a.u((KSerializer) lazyArr[29].getValue()), a.u(ActivityInstanceEmbed$$serializer.INSTANCE), a.u((KSerializer) lazyArr[31].getValue()), a.u(RoleIcon$$serializer.INSTANCE), a.u(ConnectionsRoleTag$$serializer.INSTANCE), a.u(ThreadEmbed$$serializer.INSTANCE), hVar, a.u(hVar), a.u(hVar), a.u(hVar), a.u(ReferencedMessageSerializer.INSTANCE), a.u(ExecutedCommand$$serializer.INSTANCE), a.u((KSerializer) lazyArr[41].getValue()), a.u(hVar), a.u(n2Var), a.u(hVar), a.u(p0Var), a.u(p0Var), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(EphemeralIndication$$serializer.INSTANCE), a.u(SurveyIndication$$serializer.INSTANCE), a.u(InteractionStatus$$serializer.INSTANCE), a.u(hVar), a.u(hVar), a.u(hVar), a.u(n2Var), a.u(hVar), a.u(n2Var), a.u(n2Var), a.u((KSerializer) lazyArr[60].getValue()), a.u(hVar), a.u(hVar), a.u(z0Var), a.u(Sticker$$serializer.INSTANCE), a.u(n2Var), a.u(n2Var), a.u(hVar), a.u(ActivityRichPresenceInviteEmbed$$serializer.INSTANCE), hVar, a.u(ForumPostActions$$serializer.INSTANCE), a.u(AutoModerationContext$$serializer.INSTANCE), a.u(ReferralEmbedSerializer.INSTANCE), a.u(PremiumGroupInviteEmbed$$serializer.INSTANCE), a.u((KSerializer) lazyArr[74].getValue()), a.u(GiftEmbedSerializer.INSTANCE), a.u(p0Var), a.u((KSerializer) lazyArr[77].getValue()), a.u(ChannelPromptData$$serializer.INSTANCE), a.u(SafetyPolicyNoticeEmbed$$serializer.INSTANCE), a.u(SafetySystemNotificationEmbed$$serializer.INSTANCE), a.u(PollData$$serializer.INSTANCE), a.u(SharedCustomThemeData$$serializer.INSTANCE), a.u(CtaButton$$serializer.INSTANCE), a.u(p0Var), a.u(ForwardInfo$$serializer.INSTANCE), a.u(hVar), a.u(guildId$$serializer), a.u(n2Var), a.u(n2Var), a.u(n2Var), hVar, a.u(DisplayNameStyles$$serializer.INSTANCE)};
     }
 
@@ -459,15 +459,15 @@ public /* synthetic */ class Message$$serializer implements h0 {
             MessageType messageType2 = (MessageType) b10.y(serialDescriptor, 0, MessageType.Serializer.INSTANCE, null);
             MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;
             MessageId messageId = (MessageId) b10.y(serialDescriptor, 1, messageId$$serializer, null);
-            String m1095unboximpl = messageId != null ? messageId.m1095unboximpl() : null;
+            String m1094unboximpl = messageId != null ? messageId.m1094unboximpl() : null;
             MessageId messageId2 = (MessageId) b10.n(serialDescriptor, 2, messageId$$serializer, null);
-            String m1095unboximpl2 = messageId2 != null ? messageId2.m1095unboximpl() : null;
+            String m1094unboximpl2 = messageId2 != null ? messageId2.m1094unboximpl() : null;
             GuildId$$serializer guildId$$serializer = GuildId$$serializer.INSTANCE;
             UserId userId3 = (UserId) b10.n(serialDescriptor, 6, UserId$$serializer.INSTANCE, null);
             long f13 = b10.f(serialDescriptor, 7);
-            n2 n2Var = n2.f7662a;
-            p0 p0Var = p0.f7678a;
-            g0 g0Var = g0.f7622a;
+            n2 n2Var = n2.f20978a;
+            p0 p0Var = p0.f20994a;
+            g0 g0Var = g0.f20938a;
             Float f14 = (Float) b10.n(serialDescriptor, 10, g0Var, null);
             Integer num15 = (Integer) b10.n(serialDescriptor, 11, p0Var, null);
             Integer num16 = (Integer) b10.n(serialDescriptor, 12, p0Var, null);
@@ -494,7 +494,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
             ConnectionsRoleTag connectionsRoleTag3 = (ConnectionsRoleTag) b10.n(serialDescriptor, 33, ConnectionsRoleTag$$serializer.INSTANCE, null);
             ThreadEmbed threadEmbed2 = (ThreadEmbed) b10.n(serialDescriptor, 34, ThreadEmbed$$serializer.INSTANCE, null);
             boolean C3 = b10.C(serialDescriptor, 35);
-            h hVar = h.f7626a;
+            h hVar = h.f20942a;
             Boolean bool16 = (Boolean) b10.n(serialDescriptor, 36, hVar, null);
             Boolean bool17 = (Boolean) b10.n(serialDescriptor, 37, hVar, null);
             Boolean bool18 = (Boolean) b10.n(serialDescriptor, 38, hVar, null);
@@ -522,7 +522,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
             List list24 = (List) b10.n(serialDescriptor, 60, (DeserializationStrategy) lazyArr[60].getValue(), null);
             Boolean bool25 = (Boolean) b10.n(serialDescriptor, 61, hVar, null);
             Boolean bool26 = (Boolean) b10.n(serialDescriptor, 62, hVar, null);
-            Long l11 = (Long) b10.n(serialDescriptor, 63, z0.f7736a, null);
+            Long l11 = (Long) b10.n(serialDescriptor, 63, z0.f21052a, null);
             Sticker sticker5 = (Sticker) b10.n(serialDescriptor, 64, Sticker$$serializer.INSTANCE, null);
             String str53 = (String) b10.n(serialDescriptor, 65, n2Var, null);
             String str54 = (String) b10.n(serialDescriptor, 66, n2Var, null);
@@ -560,7 +560,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
             guildId = (GuildId) b10.n(serialDescriptor, 4, guildId$$serializer, null);
             num3 = (Integer) b10.n(serialDescriptor, 9, p0Var, null);
             guildId2 = (GuildId) b10.n(serialDescriptor, 87, guildId$$serializer, null);
-            str17 = m1095unboximpl2;
+            str17 = m1094unboximpl2;
             i11 = -1;
             i12 = -1;
             z14 = C2;
@@ -587,7 +587,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
             userId = userId3;
             num7 = num20;
             roleColors = roleColors2;
-            str18 = m1095unboximpl;
+            str18 = m1094unboximpl;
             str7 = str44;
             z11 = C;
             str8 = str45;
@@ -772,7 +772,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list15 = list32;
                         list16 = list33;
                         list17 = list34;
-                        Unit unit = Unit.f33074a;
+                        Unit unit = Unit.f32464a;
                         str20 = str72;
                         str57 = str57;
                         i40 = i40;
@@ -848,7 +848,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         str23 = str72;
                         messageType3 = (MessageType) b10.y(serialDescriptor, 0, MessageType.Serializer.INSTANCE, messageType3);
                         i16 = i44 | 1;
-                        Unit unit2 = Unit.f33074a;
+                        Unit unit2 = Unit.f32464a;
                         guildId3 = guildId15;
                         displayNameStyles11 = displayNameStyles12;
                         str20 = str23;
@@ -923,10 +923,10 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         i15 = i40;
                         str22 = str57;
                         str23 = str72;
-                        MessageId messageId3 = (MessageId) b10.y(serialDescriptor, 1, MessageId$$serializer.INSTANCE, str74 != null ? MessageId.m1086boximpl(str74) : null);
-                        str74 = messageId3 != null ? messageId3.m1095unboximpl() : null;
+                        MessageId messageId3 = (MessageId) b10.y(serialDescriptor, 1, MessageId$$serializer.INSTANCE, str74 != null ? MessageId.m1085boximpl(str74) : null);
+                        str74 = messageId3 != null ? messageId3.m1094unboximpl() : null;
                         i16 = i45 | 2;
-                        Unit unit3 = Unit.f33074a;
+                        Unit unit3 = Unit.f32464a;
                         guildId3 = guildId5;
                         num34 = num14;
                         displayNameStyles11 = displayNameStyles2;
@@ -1002,10 +1002,10 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         str22 = str57;
                         str23 = str72;
                         channelId2 = channelId3;
-                        MessageId messageId4 = (MessageId) b10.n(serialDescriptor, 2, MessageId$$serializer.INSTANCE, str73 != null ? MessageId.m1086boximpl(str73) : null);
-                        str73 = messageId4 != null ? messageId4.m1095unboximpl() : null;
+                        MessageId messageId4 = (MessageId) b10.n(serialDescriptor, 2, MessageId$$serializer.INSTANCE, str73 != null ? MessageId.m1085boximpl(str73) : null);
+                        str73 = messageId4 != null ? messageId4.m1094unboximpl() : null;
                         i16 = i46 | 4;
-                        Unit unit32 = Unit.f33074a;
+                        Unit unit32 = Unit.f32464a;
                         guildId3 = guildId5;
                         num34 = num14;
                         displayNameStyles11 = displayNameStyles2;
@@ -1079,7 +1079,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         str23 = str72;
                         ChannelId channelId4 = (ChannelId) b10.y(serialDescriptor, 3, ChannelId$$serializer.INSTANCE, channelId3);
                         i16 = i47 | 8;
-                        Unit unit4 = Unit.f33074a;
+                        Unit unit4 = Unit.f32464a;
                         guildId3 = guildId15;
                         displayNameStyles11 = displayNameStyles11;
                         channelId2 = channelId4;
@@ -1153,7 +1153,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         messageState2 = messageState3;
                         guildId15 = (GuildId) b10.n(serialDescriptor, 4, GuildId$$serializer.INSTANCE, guildId15);
                         i19 = i48 | 16;
-                        Unit unit5 = Unit.f33074a;
+                        Unit unit5 = Unit.f32464a;
                         str20 = str72;
                         displayNameStyles11 = displayNameStyles13;
                         channelId2 = channelId3;
@@ -1226,7 +1226,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         userId2 = userId4;
                         messageState3 = (MessageState) b10.n(serialDescriptor, 5, MessageState.Serializer.INSTANCE, messageState3);
                         i19 = i49 | 32;
-                        Unit unit6 = Unit.f33074a;
+                        Unit unit6 = Unit.f32464a;
                         str20 = str72;
                         displayNameStyles11 = displayNameStyles3;
                         messageState2 = messageState3;
@@ -1299,7 +1299,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         str25 = str57;
                         UserId userId5 = (UserId) b10.n(serialDescriptor, 6, UserId$$serializer.INSTANCE, userId4);
                         i19 = i50 | 64;
-                        Unit unit7 = Unit.f33074a;
+                        Unit unit7 = Unit.f32464a;
                         str20 = str72;
                         userId2 = userId5;
                         displayNameStyles11 = displayNameStyles3;
@@ -1367,7 +1367,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         int i52 = i39;
                         j11 = b10.f(serialDescriptor, 7);
                         i20 = i52 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
-                        Unit unit8 = Unit.f33074a;
+                        Unit unit8 = Unit.f32464a;
                         str20 = str72;
                         userId2 = userId4;
                         displayNameStyles11 = displayNameStyles11;
@@ -1438,9 +1438,9 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         referencedMessage3 = referencedMessage8;
                         i18 = i40;
                         str25 = str57;
-                        String str75 = (String) b10.n(serialDescriptor, 8, n2.f7662a, str72);
+                        String str75 = (String) b10.n(serialDescriptor, 8, n2.f20978a, str72);
                         i19 = i53 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
-                        Unit unit9 = Unit.f33074a;
+                        Unit unit9 = Unit.f32464a;
                         num34 = num34;
                         userId2 = userId4;
                         displayNameStyles11 = displayNameStyles11;
@@ -1510,9 +1510,9 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         int i55 = i39;
                         referencedMessage4 = referencedMessage8;
                         i21 = i40;
-                        num34 = (Integer) b10.n(serialDescriptor, 9, p0.f7678a, num34);
+                        num34 = (Integer) b10.n(serialDescriptor, 9, p0.f20994a, num34);
                         i19 = i55 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
-                        Unit unit10 = Unit.f33074a;
+                        Unit unit10 = Unit.f32464a;
                         i13 = i54;
                         userId2 = userId4;
                         displayNameStyles11 = displayNameStyles11;
@@ -1585,8 +1585,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         i23 = i40;
                         str27 = str57;
                         i20 = i56 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
-                        Unit unit11 = Unit.f33074a;
-                        f15 = (Float) b10.n(serialDescriptor, 10, g0.f7622a, f15);
+                        Unit unit11 = Unit.f32464a;
+                        f15 = (Float) b10.n(serialDescriptor, 10, g0.f20938a, f15);
                         i13 = i22;
                         userId2 = userId4;
                         displayNameStyles11 = displayNameStyles4;
@@ -1659,8 +1659,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         i23 = i40;
                         str27 = str57;
                         i20 = i57 | RecyclerView.ItemAnimator.FLAG_MOVED;
-                        Unit unit12 = Unit.f33074a;
-                        num25 = (Integer) b10.n(serialDescriptor, 11, p0.f7678a, num25);
+                        Unit unit12 = Unit.f32464a;
+                        num25 = (Integer) b10.n(serialDescriptor, 11, p0.f20994a, num25);
                         i13 = i22;
                         userId2 = userId4;
                         displayNameStyles11 = displayNameStyles4;
@@ -1733,8 +1733,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         i23 = i40;
                         str27 = str57;
                         i20 = i58 | RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
-                        Unit unit13 = Unit.f33074a;
-                        num26 = (Integer) b10.n(serialDescriptor, 12, p0.f7678a, num26);
+                        Unit unit13 = Unit.f32464a;
+                        num26 = (Integer) b10.n(serialDescriptor, 12, p0.f20994a, num26);
                         i13 = i22;
                         userId2 = userId4;
                         displayNameStyles11 = displayNameStyles4;
@@ -1807,8 +1807,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         i23 = i40;
                         str27 = str57;
                         i20 = i59 | 8192;
-                        Unit unit14 = Unit.f33074a;
-                        str59 = (String) b10.n(serialDescriptor, 13, n2.f7662a, str59);
+                        Unit unit14 = Unit.f32464a;
+                        str59 = (String) b10.n(serialDescriptor, 13, n2.f20978a, str59);
                         i13 = i22;
                         userId2 = userId4;
                         displayNameStyles11 = displayNameStyles4;
@@ -1881,8 +1881,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         i23 = i40;
                         str27 = str57;
                         i20 = i60 | 16384;
-                        Unit unit15 = Unit.f33074a;
-                        num27 = (Integer) b10.n(serialDescriptor, 14, p0.f7678a, num27);
+                        Unit unit15 = Unit.f32464a;
+                        num27 = (Integer) b10.n(serialDescriptor, 14, p0.f20994a, num27);
                         i13 = i22;
                         userId2 = userId4;
                         displayNameStyles11 = displayNameStyles4;
@@ -1955,8 +1955,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         str27 = str57;
                         num13 = num28;
                         i20 = i61 | PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS;
-                        Unit unit16 = Unit.f33074a;
-                        str60 = (String) b10.n(serialDescriptor, 15, n2.f7662a, str60);
+                        Unit unit16 = Unit.f32464a;
+                        str60 = (String) b10.n(serialDescriptor, 15, n2.f20978a, str60);
                         i13 = i22;
                         userId2 = userId4;
                         displayNameStyles11 = displayNameStyles4;
@@ -2028,8 +2028,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         str27 = str57;
                         num12 = num29;
                         i20 = i62 | 65536;
-                        Unit unit17 = Unit.f33074a;
-                        num13 = (Integer) b10.n(serialDescriptor, 16, p0.f7678a, num28);
+                        Unit unit17 = Unit.f32464a;
+                        num13 = (Integer) b10.n(serialDescriptor, 16, p0.f20994a, num28);
                         i13 = i22;
                         userId2 = userId4;
                         displayNameStyles11 = displayNameStyles4;
@@ -2100,8 +2100,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         i23 = i40;
                         str27 = str57;
                         i20 = i64 | 131072;
-                        Unit unit18 = Unit.f33074a;
-                        num12 = (Integer) b10.n(serialDescriptor, 17, p0.f7678a, num29);
+                        Unit unit18 = Unit.f32464a;
+                        num12 = (Integer) b10.n(serialDescriptor, 17, p0.f20994a, num29);
                         i13 = i63;
                         num13 = num28;
                         userId2 = userId4;
@@ -2173,7 +2173,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         i23 = i40;
                         str29 = str57;
                         i20 = i65 | 262144;
-                        Unit unit19 = Unit.f33074a;
+                        Unit unit19 = Unit.f32464a;
                         roleColors3 = (RoleColors) b10.n(serialDescriptor, 18, RoleColors$$serializer.INSTANCE, roleColors3);
                         i13 = i24;
                         num12 = num29;
@@ -2247,7 +2247,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         str31 = str57;
                         z17 = b10.C(serialDescriptor, 19);
                         i19 = i66 | 524288;
-                        Unit unit20 = Unit.f33074a;
+                        Unit unit20 = Unit.f32464a;
                         i13 = i25;
                         num12 = num29;
                         userId2 = userId4;
@@ -2319,7 +2319,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         str31 = str57;
                         z20 = b10.C(serialDescriptor, 20);
                         i19 = i67 | 1048576;
-                        Unit unit202 = Unit.f33074a;
+                        Unit unit202 = Unit.f32464a;
                         i13 = i25;
                         num12 = num29;
                         userId2 = userId4;
@@ -2391,8 +2391,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         i23 = i40;
                         str29 = str57;
                         i20 = i68 | 2097152;
-                        Unit unit21 = Unit.f33074a;
-                        num30 = (Integer) b10.n(serialDescriptor, 21, p0.f7678a, num30);
+                        Unit unit21 = Unit.f32464a;
+                        num30 = (Integer) b10.n(serialDescriptor, 21, p0.f20994a, num30);
                         i13 = i24;
                         num12 = num29;
                         userId2 = userId4;
@@ -2465,8 +2465,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         i23 = i40;
                         str29 = str57;
                         i20 = i69 | 4194304;
-                        Unit unit22 = Unit.f33074a;
-                        str61 = (String) b10.n(serialDescriptor, 22, n2.f7662a, str61);
+                        Unit unit22 = Unit.f32464a;
+                        str61 = (String) b10.n(serialDescriptor, 22, n2.f20978a, str61);
                         i13 = i24;
                         num12 = num29;
                         userId2 = userId4;
@@ -2539,8 +2539,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         str29 = str57;
                         list12 = list27;
                         i20 = i70 | 8388608;
-                        Unit unit23 = Unit.f33074a;
-                        str62 = (String) b10.n(serialDescriptor, 23, n2.f7662a, str62);
+                        Unit unit23 = Unit.f32464a;
+                        str62 = (String) b10.n(serialDescriptor, 23, n2.f20978a, str62);
                         i13 = i24;
                         num12 = num29;
                         userId2 = userId4;
@@ -2613,7 +2613,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         DeserializationStrategy deserializationStrategy = (DeserializationStrategy) lazyArr[24].getValue();
                         list10 = list28;
                         i20 = i71 | PointerEventHelper.X_FLAG_SUPPORTS_HOVER;
-                        Unit unit24 = Unit.f33074a;
+                        Unit unit24 = Unit.f32464a;
                         list12 = (List) b10.n(serialDescriptor, 24, deserializationStrategy, list27);
                         i13 = i24;
                         num12 = num29;
@@ -2685,7 +2685,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         str29 = str57;
                         f12 = f16;
                         i20 = i73 | 33554432;
-                        Unit unit25 = Unit.f33074a;
+                        Unit unit25 = Unit.f32464a;
                         list10 = (List) b10.n(serialDescriptor, 25, (DeserializationStrategy) lazyArr[25].getValue(), list28);
                         i13 = i72;
                         num12 = num29;
@@ -2757,8 +2757,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         i23 = i40;
                         str29 = str57;
                         i20 = i75 | 67108864;
-                        Unit unit26 = Unit.f33074a;
-                        f12 = (Float) b10.n(serialDescriptor, 26, g0.f7622a, f16);
+                        Unit unit26 = Unit.f32464a;
+                        f12 = (Float) b10.n(serialDescriptor, 26, g0.f20938a, f16);
                         i13 = i74;
                         num12 = num29;
                         list12 = list27;
@@ -2830,7 +2830,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         str33 = str57;
                         list13 = list29;
                         i20 = i76 | 134217728;
-                        Unit unit27 = Unit.f33074a;
+                        Unit unit27 = Unit.f32464a;
                         structurableText3 = (StructurableText) b10.n(serialDescriptor, 27, StructurableTextSerializer.INSTANCE, structurableText3);
                         i13 = i26;
                         num12 = num29;
@@ -2904,7 +2904,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         DeserializationStrategy deserializationStrategy2 = (DeserializationStrategy) lazyArr[28].getValue();
                         list11 = list30;
                         i20 = i77 | 268435456;
-                        Unit unit28 = Unit.f33074a;
+                        Unit unit28 = Unit.f32464a;
                         list13 = (List) b10.n(serialDescriptor, 28, deserializationStrategy2, list29);
                         i13 = i26;
                         num12 = num29;
@@ -2976,7 +2976,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         str33 = str57;
                         activityInstanceEmbed2 = activityInstanceEmbed4;
                         i20 = i79 | 536870912;
-                        Unit unit29 = Unit.f33074a;
+                        Unit unit29 = Unit.f32464a;
                         list11 = (List) b10.n(serialDescriptor, 29, (DeserializationStrategy) lazyArr[29].getValue(), list30);
                         i13 = i78;
                         num12 = num29;
@@ -3050,7 +3050,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list14 = list31;
                         referencedMessage5 = referencedMessage9;
                         i20 = i82 | 1073741824;
-                        Unit unit30 = Unit.f33074a;
+                        Unit unit30 = Unit.f32464a;
                         activityInstanceEmbed2 = (ActivityInstanceEmbed) b10.n(serialDescriptor, 30, ActivityInstanceEmbed$$serializer.INSTANCE, activityInstanceEmbed4);
                         i13 = i81;
                         num12 = num29;
@@ -3117,7 +3117,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         DeserializationStrategy deserializationStrategy3 = (DeserializationStrategy) lazyArr[31].getValue();
                         roleIcon2 = roleIcon4;
                         i39 |= Integer.MIN_VALUE;
-                        Unit unit31 = Unit.f33074a;
+                        Unit unit31 = Unit.f32464a;
                         referencedMessage8 = referencedMessage8;
                         str57 = str57;
                         i40 = i40;
@@ -3180,7 +3180,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list16 = list33;
                         list17 = list34;
                         connectionsRoleTag2 = connectionsRoleTag4;
-                        Unit unit33 = Unit.f33074a;
+                        Unit unit33 = Unit.f32464a;
                         roleIcon2 = (RoleIcon) b10.n(serialDescriptor, 32, RoleIcon$$serializer.INSTANCE, roleIcon4);
                         referencedMessage8 = referencedMessage8;
                         i13 = i84;
@@ -3245,7 +3245,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list15 = list32;
                         list16 = list33;
                         list17 = list34;
-                        Unit unit34 = Unit.f33074a;
+                        Unit unit34 = Unit.f32464a;
                         connectionsRoleTag2 = (ConnectionsRoleTag) b10.n(serialDescriptor, 33, ConnectionsRoleTag$$serializer.INSTANCE, connectionsRoleTag4);
                         referencedMessage8 = referencedMessage8;
                         i13 = i85;
@@ -3316,7 +3316,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list16 = list33;
                         list17 = list34;
                         i28 = i86 | 4;
-                        Unit unit35 = Unit.f33074a;
+                        Unit unit35 = Unit.f32464a;
                         threadEmbed3 = (ThreadEmbed) b10.n(serialDescriptor, 34, ThreadEmbed$$serializer.INSTANCE, threadEmbed3);
                         referencedMessage8 = referencedMessage6;
                         i13 = i27;
@@ -3389,7 +3389,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list17 = list34;
                         z18 = b10.C(serialDescriptor, 35);
                         i28 = i87 | 8;
-                        Unit unit36 = Unit.f33074a;
+                        Unit unit36 = Unit.f32464a;
                         referencedMessage8 = referencedMessage6;
                         i13 = i27;
                         num12 = num29;
@@ -3460,8 +3460,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list16 = list33;
                         list17 = list34;
                         i28 = i88 | 16;
-                        Unit unit37 = Unit.f33074a;
-                        bool30 = (Boolean) b10.n(serialDescriptor, 36, h.f7626a, bool30);
+                        Unit unit37 = Unit.f32464a;
+                        bool30 = (Boolean) b10.n(serialDescriptor, 36, h.f20942a, bool30);
                         referencedMessage8 = referencedMessage6;
                         i13 = i27;
                         num12 = num29;
@@ -3530,9 +3530,9 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list15 = list32;
                         list16 = list33;
                         list17 = list34;
-                        Boolean bool42 = (Boolean) b10.n(serialDescriptor, 37, h.f7626a, bool31);
+                        Boolean bool42 = (Boolean) b10.n(serialDescriptor, 37, h.f20942a, bool31);
                         i30 = i89 | 32;
-                        Unit unit38 = Unit.f33074a;
+                        Unit unit38 = Unit.f32464a;
                         bool31 = bool42;
                         referencedMessage8 = referencedMessage8;
                         i13 = i29;
@@ -3604,8 +3604,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list16 = list33;
                         list17 = list34;
                         i28 = i90 | 64;
-                        Unit unit39 = Unit.f33074a;
-                        bool32 = (Boolean) b10.n(serialDescriptor, 38, h.f7626a, bool32);
+                        Unit unit39 = Unit.f32464a;
+                        bool32 = (Boolean) b10.n(serialDescriptor, 38, h.f20942a, bool32);
                         referencedMessage8 = referencedMessage6;
                         i13 = i27;
                         num12 = num29;
@@ -3675,7 +3675,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list16 = list33;
                         list17 = list34;
                         i30 = i91 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
-                        Unit unit40 = Unit.f33074a;
+                        Unit unit40 = Unit.f32464a;
                         referencedMessage8 = (ReferencedMessage) b10.n(serialDescriptor, 39, ReferencedMessageSerializer.INSTANCE, referencedMessage8);
                         i13 = i29;
                         num12 = num29;
@@ -3745,7 +3745,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list17 = list34;
                         list15 = list32;
                         i30 = i92 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
-                        Unit unit41 = Unit.f33074a;
+                        Unit unit41 = Unit.f32464a;
                         executedCommand3 = (ExecutedCommand) b10.n(serialDescriptor, 40, ExecutedCommand$$serializer.INSTANCE, executedCommand3);
                         i13 = i29;
                         num12 = num29;
@@ -3814,7 +3814,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list17 = list34;
                         bool14 = bool39;
                         i30 = i93 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
-                        Unit unit42 = Unit.f33074a;
+                        Unit unit42 = Unit.f32464a;
                         list15 = (List) b10.n(serialDescriptor, 41, (DeserializationStrategy) lazyArr[41].getValue(), list32);
                         i13 = i29;
                         num12 = num29;
@@ -3881,9 +3881,9 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         str39 = str57;
                         list16 = list33;
                         list17 = list34;
-                        bool39 = (Boolean) b10.n(serialDescriptor, 42, h.f7626a, bool39);
+                        bool39 = (Boolean) b10.n(serialDescriptor, 42, h.f20942a, bool39);
                         i32 = i94 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
-                        Unit unit43 = Unit.f33074a;
+                        Unit unit43 = Unit.f32464a;
                         i13 = i31;
                         num12 = num29;
                         list10 = list28;
@@ -3952,8 +3952,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list16 = list33;
                         list17 = list34;
                         i32 = i95 | RecyclerView.ItemAnimator.FLAG_MOVED;
-                        Unit unit44 = Unit.f33074a;
-                        str63 = (String) b10.n(serialDescriptor, 43, n2.f7662a, str63);
+                        Unit unit44 = Unit.f32464a;
+                        str63 = (String) b10.n(serialDescriptor, 43, n2.f20978a, str63);
                         i13 = i31;
                         num12 = num29;
                         list10 = list28;
@@ -4022,8 +4022,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list16 = list33;
                         list17 = list34;
                         i32 = i96 | RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
-                        Unit unit45 = Unit.f33074a;
-                        bool33 = (Boolean) b10.n(serialDescriptor, 44, h.f7626a, bool33);
+                        Unit unit45 = Unit.f32464a;
+                        bool33 = (Boolean) b10.n(serialDescriptor, 44, h.f20942a, bool33);
                         i13 = i31;
                         num12 = num29;
                         list10 = list28;
@@ -4092,8 +4092,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list16 = list33;
                         list17 = list34;
                         i32 = i97 | 8192;
-                        Unit unit46 = Unit.f33074a;
-                        num31 = (Integer) b10.n(serialDescriptor, 45, p0.f7678a, num31);
+                        Unit unit46 = Unit.f32464a;
+                        num31 = (Integer) b10.n(serialDescriptor, 45, p0.f20994a, num31);
                         i13 = i31;
                         num12 = num29;
                         list10 = list28;
@@ -4162,8 +4162,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list16 = list33;
                         list17 = list34;
                         i32 = i98 | 16384;
-                        Unit unit47 = Unit.f33074a;
-                        num32 = (Integer) b10.n(serialDescriptor, 46, p0.f7678a, num32);
+                        Unit unit47 = Unit.f32464a;
+                        num32 = (Integer) b10.n(serialDescriptor, 46, p0.f20994a, num32);
                         i13 = i31;
                         num12 = num29;
                         list10 = list28;
@@ -4232,8 +4232,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list16 = list33;
                         list17 = list34;
                         i32 = i99 | PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS;
-                        Unit unit48 = Unit.f33074a;
-                        str64 = (String) b10.n(serialDescriptor, 47, n2.f7662a, str64);
+                        Unit unit48 = Unit.f32464a;
+                        str64 = (String) b10.n(serialDescriptor, 47, n2.f20978a, str64);
                         i13 = i31;
                         num12 = num29;
                         list10 = list28;
@@ -4302,8 +4302,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list16 = list33;
                         list17 = list34;
                         i32 = i100 | 65536;
-                        Unit unit49 = Unit.f33074a;
-                        str65 = (String) b10.n(serialDescriptor, 48, n2.f7662a, str65);
+                        Unit unit49 = Unit.f32464a;
+                        str65 = (String) b10.n(serialDescriptor, 48, n2.f20978a, str65);
                         i13 = i31;
                         num12 = num29;
                         list10 = list28;
@@ -4372,8 +4372,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list16 = list33;
                         list17 = list34;
                         i32 = i101 | 131072;
-                        Unit unit50 = Unit.f33074a;
-                        str66 = (String) b10.n(serialDescriptor, 49, n2.f7662a, str66);
+                        Unit unit50 = Unit.f32464a;
+                        str66 = (String) b10.n(serialDescriptor, 49, n2.f20978a, str66);
                         i13 = i31;
                         num12 = num29;
                         list10 = list28;
@@ -4442,7 +4442,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list16 = list33;
                         list17 = list34;
                         i32 = i102 | 262144;
-                        Unit unit51 = Unit.f33074a;
+                        Unit unit51 = Unit.f32464a;
                         ephemeralIndication3 = (EphemeralIndication) b10.n(serialDescriptor, 50, EphemeralIndication$$serializer.INSTANCE, ephemeralIndication3);
                         i13 = i31;
                         num12 = num29;
@@ -4512,7 +4512,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list16 = list33;
                         list17 = list34;
                         i32 = i103 | 524288;
-                        Unit unit52 = Unit.f33074a;
+                        Unit unit52 = Unit.f32464a;
                         surveyIndication3 = (SurveyIndication) b10.n(serialDescriptor, 51, SurveyIndication$$serializer.INSTANCE, surveyIndication3);
                         i13 = i31;
                         num12 = num29;
@@ -4582,7 +4582,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list16 = list33;
                         list17 = list34;
                         i32 = i104 | 1048576;
-                        Unit unit53 = Unit.f33074a;
+                        Unit unit53 = Unit.f32464a;
                         interactionStatus3 = (InteractionStatus) b10.n(serialDescriptor, 52, InteractionStatus$$serializer.INSTANCE, interactionStatus3);
                         i13 = i31;
                         num12 = num29;
@@ -4651,9 +4651,9 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         str39 = str57;
                         list16 = list33;
                         list17 = list34;
-                        bool40 = (Boolean) b10.n(serialDescriptor, 53, h.f7626a, bool40);
+                        bool40 = (Boolean) b10.n(serialDescriptor, 53, h.f20942a, bool40);
                         i32 = i105 | 2097152;
-                        Unit unit432 = Unit.f33074a;
+                        Unit unit432 = Unit.f32464a;
                         i13 = i31;
                         num12 = num29;
                         list10 = list28;
@@ -4722,8 +4722,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list16 = list33;
                         list17 = list34;
                         i32 = i106 | 4194304;
-                        Unit unit54 = Unit.f33074a;
-                        bool34 = (Boolean) b10.n(serialDescriptor, 54, h.f7626a, bool34);
+                        Unit unit54 = Unit.f32464a;
+                        bool34 = (Boolean) b10.n(serialDescriptor, 54, h.f20942a, bool34);
                         i13 = i31;
                         num12 = num29;
                         list10 = list28;
@@ -4792,8 +4792,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list16 = list33;
                         list17 = list34;
                         i32 = i107 | 8388608;
-                        Unit unit55 = Unit.f33074a;
-                        bool35 = (Boolean) b10.n(serialDescriptor, 55, h.f7626a, bool35);
+                        Unit unit55 = Unit.f32464a;
+                        bool35 = (Boolean) b10.n(serialDescriptor, 55, h.f20942a, bool35);
                         i13 = i31;
                         num12 = num29;
                         list10 = list28;
@@ -4862,8 +4862,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list16 = list33;
                         list17 = list34;
                         i32 = i108 | PointerEventHelper.X_FLAG_SUPPORTS_HOVER;
-                        Unit unit56 = Unit.f33074a;
-                        str67 = (String) b10.n(serialDescriptor, 56, n2.f7662a, str67);
+                        Unit unit56 = Unit.f32464a;
+                        str67 = (String) b10.n(serialDescriptor, 56, n2.f20978a, str67);
                         i13 = i31;
                         num12 = num29;
                         list10 = list28;
@@ -4932,8 +4932,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list16 = list33;
                         list17 = list34;
                         i32 = i109 | 33554432;
-                        Unit unit57 = Unit.f33074a;
-                        bool36 = (Boolean) b10.n(serialDescriptor, 57, h.f7626a, bool36);
+                        Unit unit57 = Unit.f32464a;
+                        bool36 = (Boolean) b10.n(serialDescriptor, 57, h.f20942a, bool36);
                         i13 = i31;
                         num12 = num29;
                         list10 = list28;
@@ -5002,8 +5002,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list16 = list33;
                         list17 = list34;
                         i32 = i110 | 67108864;
-                        Unit unit58 = Unit.f33074a;
-                        str68 = (String) b10.n(serialDescriptor, 58, n2.f7662a, str68);
+                        Unit unit58 = Unit.f32464a;
+                        str68 = (String) b10.n(serialDescriptor, 58, n2.f20978a, str68);
                         i13 = i31;
                         num12 = num29;
                         list10 = list28;
@@ -5072,8 +5072,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list17 = list34;
                         list16 = list33;
                         i32 = i111 | 134217728;
-                        Unit unit59 = Unit.f33074a;
-                        str69 = (String) b10.n(serialDescriptor, 59, n2.f7662a, str69);
+                        Unit unit59 = Unit.f32464a;
+                        str69 = (String) b10.n(serialDescriptor, 59, n2.f20978a, str69);
                         i13 = i31;
                         num12 = num29;
                         list10 = list28;
@@ -5141,7 +5141,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list17 = list34;
                         bool15 = bool41;
                         i32 = i112 | 268435456;
-                        Unit unit60 = Unit.f33074a;
+                        Unit unit60 = Unit.f32464a;
                         list16 = (List) b10.n(serialDescriptor, 60, (DeserializationStrategy) lazyArr[60].getValue(), list33);
                         i13 = i31;
                         num12 = num29;
@@ -5208,9 +5208,9 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         displayNameStyles10 = displayNameStyles11;
                         str41 = str57;
                         list17 = list34;
-                        bool41 = (Boolean) b10.n(serialDescriptor, 61, h.f7626a, bool41);
+                        bool41 = (Boolean) b10.n(serialDescriptor, 61, h.f20942a, bool41);
                         i34 = i113 | 536870912;
-                        Unit unit61 = Unit.f33074a;
+                        Unit unit61 = Unit.f32464a;
                         i13 = i33;
                         num12 = num29;
                         list10 = list28;
@@ -5279,8 +5279,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list17 = list34;
                         str41 = str57;
                         i34 = i114 | 1073741824;
-                        Unit unit62 = Unit.f33074a;
-                        bool37 = (Boolean) b10.n(serialDescriptor, 62, h.f7626a, bool37);
+                        Unit unit62 = Unit.f32464a;
+                        bool37 = (Boolean) b10.n(serialDescriptor, 62, h.f20942a, bool37);
                         i13 = i33;
                         num12 = num29;
                         list10 = list28;
@@ -5344,8 +5344,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         pollData2 = pollData4;
                         list17 = list34;
                         i40 |= Integer.MIN_VALUE;
-                        Unit unit63 = Unit.f33074a;
-                        l12 = (Long) b10.n(serialDescriptor, 63, z0.f7736a, l12);
+                        Unit unit63 = Unit.f32464a;
+                        l12 = (Long) b10.n(serialDescriptor, 63, z0.f21052a, l12);
                         i13 = i115;
                         num12 = num29;
                         list10 = list28;
@@ -5406,7 +5406,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         int i116 = i41;
                         pollData2 = pollData4;
                         list17 = list34;
-                        Unit unit64 = Unit.f33074a;
+                        Unit unit64 = Unit.f32464a;
                         i13 = i116 | 1;
                         str71 = str71;
                         num12 = num29;
@@ -5466,9 +5466,9 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         int i117 = i41;
                         pollData2 = pollData4;
                         list17 = list34;
-                        str71 = (String) b10.n(serialDescriptor, 65, n2.f7662a, str71);
+                        str71 = (String) b10.n(serialDescriptor, 65, n2.f20978a, str71);
                         i35 = i117 | 2;
-                        Unit unit65 = Unit.f33074a;
+                        Unit unit65 = Unit.f32464a;
                         i13 = i35;
                         giftEmbed4 = giftEmbed7;
                         num12 = num29;
@@ -5528,8 +5528,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         pollData2 = pollData4;
                         list17 = list34;
                         i36 = i118 | 4;
-                        Unit unit66 = Unit.f33074a;
-                        str70 = (String) b10.n(serialDescriptor, 66, n2.f7662a, str70);
+                        Unit unit66 = Unit.f32464a;
+                        str70 = (String) b10.n(serialDescriptor, 66, n2.f20978a, str70);
                         i13 = i36;
                         giftEmbed4 = giftEmbed7;
                         num12 = num29;
@@ -5588,8 +5588,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         int i119 = i41;
                         pollData2 = pollData4;
                         list17 = list34;
-                        Boolean bool43 = (Boolean) b10.n(serialDescriptor, 67, h.f7626a, bool38);
-                        Unit unit67 = Unit.f33074a;
+                        Boolean bool43 = (Boolean) b10.n(serialDescriptor, 67, h.f20942a, bool38);
+                        Unit unit67 = Unit.f32464a;
                         i13 = i119 | 8;
                         bool38 = bool43;
                         giftEmbed4 = giftEmbed7;
@@ -5650,7 +5650,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         pollData2 = pollData4;
                         list17 = list34;
                         i36 = i120 | 16;
-                        Unit unit68 = Unit.f33074a;
+                        Unit unit68 = Unit.f32464a;
                         activityRichPresenceInviteEmbed3 = (ActivityRichPresenceInviteEmbed) b10.n(serialDescriptor, 68, ActivityRichPresenceInviteEmbed$$serializer.INSTANCE, activityRichPresenceInviteEmbed3);
                         i13 = i36;
                         giftEmbed4 = giftEmbed7;
@@ -5712,7 +5712,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list17 = list34;
                         z19 = b10.C(serialDescriptor, 69);
                         i35 = i121 | 32;
-                        Unit unit69 = Unit.f33074a;
+                        Unit unit69 = Unit.f32464a;
                         i13 = i35;
                         giftEmbed4 = giftEmbed7;
                         num12 = num29;
@@ -5772,7 +5772,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         pollData2 = pollData4;
                         list17 = list34;
                         i36 = i122 | 64;
-                        Unit unit70 = Unit.f33074a;
+                        Unit unit70 = Unit.f32464a;
                         forumPostActions3 = (ForumPostActions) b10.n(serialDescriptor, 70, ForumPostActions$$serializer.INSTANCE, forumPostActions3);
                         i13 = i36;
                         giftEmbed4 = giftEmbed7;
@@ -5834,7 +5834,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         list17 = list34;
                         AutoModerationContext autoModerationContext4 = (AutoModerationContext) b10.n(serialDescriptor, 71, AutoModerationContext$$serializer.INSTANCE, autoModerationContext3);
                         int i124 = i123 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
-                        Unit unit71 = Unit.f33074a;
+                        Unit unit71 = Unit.f32464a;
                         i13 = i124;
                         autoModerationContext3 = autoModerationContext4;
                         giftEmbed4 = giftEmbed7;
@@ -5895,7 +5895,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         pollData2 = pollData4;
                         list17 = list34;
                         i36 = i125 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
-                        Unit unit72 = Unit.f33074a;
+                        Unit unit72 = Unit.f32464a;
                         referralEmbed3 = (ReferralEmbed) b10.n(serialDescriptor, 72, ReferralEmbedSerializer.INSTANCE, referralEmbed3);
                         i13 = i36;
                         giftEmbed4 = giftEmbed7;
@@ -5956,7 +5956,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         pollData2 = pollData4;
                         list17 = list34;
                         i36 = i126 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
-                        Unit unit73 = Unit.f33074a;
+                        Unit unit73 = Unit.f32464a;
                         premiumGroupInviteEmbed3 = (PremiumGroupInviteEmbed) b10.n(serialDescriptor, 73, PremiumGroupInviteEmbed$$serializer.INSTANCE, premiumGroupInviteEmbed3);
                         i13 = i36;
                         giftEmbed4 = giftEmbed7;
@@ -6016,7 +6016,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         pollData2 = pollData4;
                         giftEmbed7 = giftEmbed9;
                         int i128 = i127 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
-                        Unit unit74 = Unit.f33074a;
+                        Unit unit74 = Unit.f32464a;
                         list17 = (List) b10.n(serialDescriptor, 74, (DeserializationStrategy) lazyArr[74].getValue(), list34);
                         i13 = i128;
                         giftEmbed4 = giftEmbed7;
@@ -6075,7 +6075,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         int i129 = i41;
                         pollData2 = pollData4;
                         int i130 = i129 | RecyclerView.ItemAnimator.FLAG_MOVED;
-                        Unit unit75 = Unit.f33074a;
+                        Unit unit75 = Unit.f32464a;
                         giftEmbed4 = (GiftEmbed) b10.n(serialDescriptor, 75, GiftEmbedSerializer.INSTANCE, giftEmbed9);
                         i13 = i130;
                         num12 = num29;
@@ -6134,8 +6134,8 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         int i131 = i41;
                         pollData2 = pollData4;
                         i37 = i131 | RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
-                        Unit unit76 = Unit.f33074a;
-                        num33 = (Integer) b10.n(serialDescriptor, 76, p0.f7678a, num33);
+                        Unit unit76 = Unit.f32464a;
+                        num33 = (Integer) b10.n(serialDescriptor, 76, p0.f20994a, num33);
                         i13 = i37;
                         num12 = num29;
                         list10 = list28;
@@ -6195,7 +6195,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         DeserializationStrategy deserializationStrategy4 = (DeserializationStrategy) lazyArr[77].getValue();
                         pollData2 = pollData4;
                         i37 = i132 | 8192;
-                        Unit unit77 = Unit.f33074a;
+                        Unit unit77 = Unit.f32464a;
                         list35 = (List) b10.n(serialDescriptor, 77, deserializationStrategy4, list35);
                         i13 = i37;
                         num12 = num29;
@@ -6253,7 +6253,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         guildId13 = guildId14;
                         safetyPolicyNoticeEmbed13 = safetyPolicyNoticeEmbed16;
                         channelPromptData3 = (ChannelPromptData) b10.n(serialDescriptor, 78, ChannelPromptData$$serializer.INSTANCE, channelPromptData4);
-                        Unit unit78 = Unit.f33074a;
+                        Unit unit78 = Unit.f32464a;
                         i13 = i41 | 16384;
                         pollData2 = pollData4;
                         num12 = num29;
@@ -6310,7 +6310,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         guildId13 = guildId14;
                         safetyPolicyNoticeEmbed16 = (SafetyPolicyNoticeEmbed) b10.n(serialDescriptor, 79, SafetyPolicyNoticeEmbed$$serializer.INSTANCE, safetyPolicyNoticeEmbed16);
                         int i133 = i41 | PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS;
-                        Unit unit79 = Unit.f33074a;
+                        Unit unit79 = Unit.f32464a;
                         i13 = i133;
                         pollData2 = pollData4;
                         num12 = num29;
@@ -6367,7 +6367,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         safetyPolicyNoticeEmbed14 = safetyPolicyNoticeEmbed16;
                         safetySystemNotificationEmbed3 = (SafetySystemNotificationEmbed) b10.n(serialDescriptor, 80, SafetySystemNotificationEmbed$$serializer.INSTANCE, safetySystemNotificationEmbed3);
                         i38 = i41 | 65536;
-                        Unit unit80 = Unit.f33074a;
+                        Unit unit80 = Unit.f32464a;
                         pollData2 = pollData4;
                         i13 = i38;
                         num12 = num29;
@@ -6424,7 +6424,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         safetyPolicyNoticeEmbed14 = safetyPolicyNoticeEmbed16;
                         pollData4 = (PollData) b10.n(serialDescriptor, 81, PollData$$serializer.INSTANCE, pollData4);
                         i38 = i41 | 131072;
-                        Unit unit802 = Unit.f33074a;
+                        Unit unit802 = Unit.f32464a;
                         pollData2 = pollData4;
                         i13 = i38;
                         num12 = num29;
@@ -6481,7 +6481,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         safetyPolicyNoticeEmbed14 = safetyPolicyNoticeEmbed16;
                         sharedCustomThemeData3 = (SharedCustomThemeData) b10.n(serialDescriptor, 82, SharedCustomThemeData$$serializer.INSTANCE, sharedCustomThemeData3);
                         i38 = i41 | 262144;
-                        Unit unit8022 = Unit.f33074a;
+                        Unit unit8022 = Unit.f32464a;
                         pollData2 = pollData4;
                         i13 = i38;
                         num12 = num29;
@@ -6538,7 +6538,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         safetyPolicyNoticeEmbed14 = safetyPolicyNoticeEmbed16;
                         ctaButton3 = (CtaButton) b10.n(serialDescriptor, 83, CtaButton$$serializer.INSTANCE, ctaButton3);
                         i38 = i41 | 524288;
-                        Unit unit80222 = Unit.f33074a;
+                        Unit unit80222 = Unit.f32464a;
                         pollData2 = pollData4;
                         i13 = i38;
                         num12 = num29;
@@ -6593,9 +6593,9 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         i41 = i13;
                     case 84:
                         safetyPolicyNoticeEmbed14 = safetyPolicyNoticeEmbed16;
-                        num24 = (Integer) b10.n(serialDescriptor, 84, p0.f7678a, num24);
+                        num24 = (Integer) b10.n(serialDescriptor, 84, p0.f20994a, num24);
                         i38 = i41 | 1048576;
-                        Unit unit802222 = Unit.f33074a;
+                        Unit unit802222 = Unit.f32464a;
                         pollData2 = pollData4;
                         i13 = i38;
                         num12 = num29;
@@ -6652,7 +6652,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         safetyPolicyNoticeEmbed14 = safetyPolicyNoticeEmbed16;
                         forwardInfo3 = (ForwardInfo) b10.n(serialDescriptor, 85, ForwardInfo$$serializer.INSTANCE, forwardInfo3);
                         i38 = i41 | 2097152;
-                        Unit unit8022222 = Unit.f33074a;
+                        Unit unit8022222 = Unit.f32464a;
                         pollData2 = pollData4;
                         i13 = i38;
                         num12 = num29;
@@ -6707,9 +6707,9 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         i41 = i13;
                     case 86:
                         safetyPolicyNoticeEmbed14 = safetyPolicyNoticeEmbed16;
-                        bool29 = (Boolean) b10.n(serialDescriptor, 86, h.f7626a, bool29);
+                        bool29 = (Boolean) b10.n(serialDescriptor, 86, h.f20942a, bool29);
                         i38 = i41 | 4194304;
-                        Unit unit80222222 = Unit.f33074a;
+                        Unit unit80222222 = Unit.f32464a;
                         pollData2 = pollData4;
                         i13 = i38;
                         num12 = num29;
@@ -6766,7 +6766,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         safetyPolicyNoticeEmbed14 = safetyPolicyNoticeEmbed16;
                         guildId14 = (GuildId) b10.n(serialDescriptor, 87, GuildId$$serializer.INSTANCE, guildId14);
                         i38 = i41 | 8388608;
-                        Unit unit802222222 = Unit.f33074a;
+                        Unit unit802222222 = Unit.f32464a;
                         pollData2 = pollData4;
                         i13 = i38;
                         num12 = num29;
@@ -6821,9 +6821,9 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         i41 = i13;
                     case 88:
                         safetyPolicyNoticeEmbed14 = safetyPolicyNoticeEmbed16;
-                        str = (String) b10.n(serialDescriptor, 88, n2.f7662a, str);
+                        str = (String) b10.n(serialDescriptor, 88, n2.f20978a, str);
                         i38 = i41 | PointerEventHelper.X_FLAG_SUPPORTS_HOVER;
-                        Unit unit8022222222 = Unit.f33074a;
+                        Unit unit8022222222 = Unit.f32464a;
                         pollData2 = pollData4;
                         i13 = i38;
                         num12 = num29;
@@ -6878,9 +6878,9 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         i41 = i13;
                     case 89:
                         safetyPolicyNoticeEmbed14 = safetyPolicyNoticeEmbed16;
-                        str58 = (String) b10.n(serialDescriptor, 89, n2.f7662a, str58);
+                        str58 = (String) b10.n(serialDescriptor, 89, n2.f20978a, str58);
                         i38 = i41 | 33554432;
-                        Unit unit80222222222 = Unit.f33074a;
+                        Unit unit80222222222 = Unit.f32464a;
                         pollData2 = pollData4;
                         i13 = i38;
                         num12 = num29;
@@ -6935,9 +6935,9 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         i41 = i13;
                     case 90:
                         safetyPolicyNoticeEmbed14 = safetyPolicyNoticeEmbed16;
-                        str57 = (String) b10.n(serialDescriptor, 90, n2.f7662a, str57);
+                        str57 = (String) b10.n(serialDescriptor, 90, n2.f20978a, str57);
                         i38 = i41 | 67108864;
-                        Unit unit802222222222 = Unit.f33074a;
+                        Unit unit802222222222 = Unit.f32464a;
                         pollData2 = pollData4;
                         i13 = i38;
                         num12 = num29;
@@ -6994,7 +6994,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         safetyPolicyNoticeEmbed14 = safetyPolicyNoticeEmbed16;
                         z16 = b10.C(serialDescriptor, 91);
                         i38 = i41 | 134217728;
-                        Unit unit8022222222222 = Unit.f33074a;
+                        Unit unit8022222222222 = Unit.f32464a;
                         pollData2 = pollData4;
                         i13 = i38;
                         num12 = num29;
@@ -7051,7 +7051,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
                         safetyPolicyNoticeEmbed14 = safetyPolicyNoticeEmbed16;
                         displayNameStyles11 = (DisplayNameStyles) b10.n(serialDescriptor, 92, DisplayNameStyles$$serializer.INSTANCE, displayNameStyles11);
                         i38 = i41 | 268435456;
-                        Unit unit80222222222222 = Unit.f33074a;
+                        Unit unit80222222222222 = Unit.f32464a;
                         pollData2 = pollData4;
                         i13 = i38;
                         num12 = num29;
@@ -7211,13 +7211,13 @@ public /* synthetic */ class Message$$serializer implements h0 {
         return new Message(i11, i12, i10, messageType, str18, str17, channelId, guildId, messageState, userId, j10, str2, num3, f11, num11, num4, str5, num5, str6, num6, num2, roleColors, z11, z14, num7, str7, str8, list3, list2, f17, structurableText, list4, list, activityInstanceEmbed, list5, roleIcon, connectionsRoleTag, threadEmbed, z12, bool4, bool5, bool6, referencedMessage, executedCommand, list7, bool3, str9, bool7, num8, num9, str10, str11, str12, ephemeralIndication, surveyIndication, interactionStatus, bool13, bool8, bool9, str13, bool10, str14, str15, list8, bool2, bool11, l10, sticker, str4, str16, bool12, activityRichPresenceInviteEmbed, z13, forumPostActions, autoModerationContext, referralEmbed, premiumGroupInviteEmbed, list6, giftEmbed, num10, list9, channelPromptData, safetyPolicyNoticeEmbed, safetySystemNotificationEmbed, pollData, sharedCustomThemeData, ctaButton, num, forwardInfo, bool, guildId2, str77, str3, str19, z10, displayNameStyles, null, null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, ys.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, at.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public final SerialDescriptor getDescriptor() {
         return descriptor;
     }
 
-    @Override // ys.o
+    @Override // at.o
     public final void serialize(@NotNull Encoder encoder, @NotNull Message value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");
@@ -7227,7 +7227,7 @@ public /* synthetic */ class Message$$serializer implements h0 {
         b10.c(serialDescriptor);
     }
 
-    @Override // bt.h0
+    @Override // dt.h0
     @NotNull
     public KSerializer[] typeParametersSerializers() {
         return h0.a.a(this);

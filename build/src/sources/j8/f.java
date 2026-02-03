@@ -20,64 +20,64 @@ import t8.a;
 public class f implements j, l8.a {
 
     /* renamed from: r  reason: collision with root package name */
-    private static final Class f31642r = f.class;
+    private static final Class f31438r = f.class;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final long f31643s = TimeUnit.HOURS.toMillis(2);
+    private static final long f31439s = TimeUnit.HOURS.toMillis(2);
 
     /* renamed from: t  reason: collision with root package name */
-    private static final long f31644t = TimeUnit.MINUTES.toMillis(30);
+    private static final long f31440t = TimeUnit.MINUTES.toMillis(30);
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f31645a;
+    private final long f31441a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f31646b;
+    private final long f31442b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final CountDownLatch f31647c;
+    private final CountDownLatch f31443c;
 
     /* renamed from: d  reason: collision with root package name */
-    private long f31648d;
+    private long f31444d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final i8.c f31649e;
+    private final i8.c f31445e;
 
     /* renamed from: f  reason: collision with root package name */
-    final Set f31650f;
+    final Set f31446f;
 
     /* renamed from: g  reason: collision with root package name */
-    private long f31651g;
+    private long f31447g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final long f31652h;
+    private final long f31448h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final t8.a f31653i;
+    private final t8.a f31449i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final e f31654j;
+    private final e f31450j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final i f31655k;
+    private final i f31451k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final i8.a f31656l;
+    private final i8.a f31452l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final boolean f31657m;
+    private final boolean f31453m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final b f31658n;
+    private final b f31454n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final v8.a f31659o;
+    private final v8.a f31455o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Object f31660p = new Object();
+    private final Object f31456p = new Object();
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f31661q;
+    private boolean f31457q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Runnable {
@@ -86,11 +86,11 @@ public class f implements j, l8.a {
 
         @Override // java.lang.Runnable
         public void run() {
-            synchronized (f.this.f31660p) {
+            synchronized (f.this.f31456p) {
                 f.this.p();
             }
-            f.this.f31661q = true;
-            f.this.f31647c.countDown();
+            f.this.f31457q = true;
+            f.this.f31443c.countDown();
         }
     }
 
@@ -99,46 +99,46 @@ public class f implements j, l8.a {
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private boolean f31663a = false;
+        private boolean f31459a = false;
 
         /* renamed from: b  reason: collision with root package name */
-        private long f31664b = -1;
+        private long f31460b = -1;
 
         /* renamed from: c  reason: collision with root package name */
-        private long f31665c = -1;
+        private long f31461c = -1;
 
         b() {
         }
 
         public synchronized long a() {
-            return this.f31665c;
+            return this.f31461c;
         }
 
         public synchronized long b() {
-            return this.f31664b;
+            return this.f31460b;
         }
 
         public synchronized void c(long j10, long j11) {
-            if (this.f31663a) {
-                this.f31664b += j10;
-                this.f31665c += j11;
+            if (this.f31459a) {
+                this.f31460b += j10;
+                this.f31461c += j11;
             }
         }
 
         public synchronized boolean d() {
-            return this.f31663a;
+            return this.f31459a;
         }
 
         public synchronized void e() {
-            this.f31663a = false;
-            this.f31665c = -1L;
-            this.f31664b = -1L;
+            this.f31459a = false;
+            this.f31461c = -1L;
+            this.f31460b = -1L;
         }
 
         public synchronized void f(long j10, long j11) {
-            this.f31665c = j11;
-            this.f31664b = j10;
-            this.f31663a = true;
+            this.f31461c = j11;
+            this.f31460b = j10;
+            this.f31459a = true;
         }
     }
 
@@ -146,62 +146,62 @@ public class f implements j, l8.a {
     public static class c {
 
         /* renamed from: a  reason: collision with root package name */
-        public final long f31666a;
+        public final long f31462a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final long f31667b;
+        public final long f31463b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final long f31668c;
+        public final long f31464c;
 
         public c(long j10, long j11, long j12) {
-            this.f31666a = j10;
-            this.f31667b = j11;
-            this.f31668c = j12;
+            this.f31462a = j10;
+            this.f31463b = j11;
+            this.f31464c = j12;
         }
     }
 
     public f(e eVar, i iVar, c cVar, i8.c cVar2, i8.a aVar, l8.b bVar, Executor executor, boolean z10) {
-        this.f31645a = cVar.f31667b;
-        long j10 = cVar.f31668c;
-        this.f31646b = j10;
-        this.f31648d = j10;
-        this.f31653i = t8.a.d();
-        this.f31654j = eVar;
-        this.f31655k = iVar;
-        this.f31651g = -1L;
-        this.f31649e = cVar2;
-        this.f31652h = cVar.f31666a;
-        this.f31656l = aVar;
-        this.f31658n = new b();
-        this.f31659o = v8.d.a();
-        this.f31657m = z10;
-        this.f31650f = new HashSet();
+        this.f31441a = cVar.f31463b;
+        long j10 = cVar.f31464c;
+        this.f31442b = j10;
+        this.f31444d = j10;
+        this.f31449i = t8.a.d();
+        this.f31450j = eVar;
+        this.f31451k = iVar;
+        this.f31447g = -1L;
+        this.f31445e = cVar2;
+        this.f31448h = cVar.f31462a;
+        this.f31452l = aVar;
+        this.f31454n = new b();
+        this.f31455o = v8.d.a();
+        this.f31453m = z10;
+        this.f31446f = new HashSet();
         if (bVar != null) {
             bVar.a(this);
         }
         if (z10) {
-            this.f31647c = new CountDownLatch(1);
+            this.f31443c = new CountDownLatch(1);
             executor.execute(new a());
             return;
         }
-        this.f31647c = new CountDownLatch(0);
+        this.f31443c = new CountDownLatch(0);
     }
 
     private h8.a l(e.b bVar, CacheKey cacheKey, String str) {
         h8.a a10;
-        synchronized (this.f31660p) {
+        synchronized (this.f31456p) {
             a10 = bVar.a(cacheKey);
-            this.f31650f.add(str);
-            this.f31658n.c(a10.size(), 1L);
+            this.f31446f.add(str);
+            this.f31454n.c(a10.size(), 1L);
         }
         return a10;
     }
 
     private void m(long j10, c.a aVar) {
         try {
-            Collection<e.a> n10 = n(this.f31654j.h());
-            long b10 = this.f31658n.b();
+            Collection<e.a> n10 = n(this.f31450j.h());
+            long b10 = this.f31454n.b();
             long j11 = b10 - j10;
             int i10 = 0;
             long j12 = 0;
@@ -209,32 +209,32 @@ public class f implements j, l8.a {
                 if (j12 > j11) {
                     break;
                 }
-                long b11 = this.f31654j.b(aVar2);
-                this.f31650f.remove(aVar2.getId());
+                long b11 = this.f31450j.b(aVar2);
+                this.f31446f.remove(aVar2.getId());
                 if (b11 > 0) {
                     i10++;
                     j12 += b11;
                     k e10 = k.a().j(aVar2.getId()).g(aVar).i(b11).f(b10 - j12).e(j10);
-                    i8.c cVar = this.f31649e;
+                    i8.c cVar = this.f31445e;
                     if (cVar != null) {
                         cVar.g(e10);
                     }
                     e10.b();
                 }
             }
-            this.f31658n.c(-j12, -i10);
-            this.f31654j.c();
+            this.f31454n.c(-j12, -i10);
+            this.f31450j.c();
         } catch (IOException e11) {
-            i8.a aVar3 = this.f31656l;
-            a.EnumC0373a enumC0373a = a.EnumC0373a.EVICTION;
-            Class cls = f31642r;
-            aVar3.a(enumC0373a, cls, "evictAboveSize: " + e11.getMessage(), e11);
+            i8.a aVar3 = this.f31452l;
+            a.EnumC0375a enumC0375a = a.EnumC0375a.EVICTION;
+            Class cls = f31438r;
+            aVar3.a(enumC0375a, cls, "evictAboveSize: " + e11.getMessage(), e11);
             throw e11;
         }
     }
 
     private Collection n(Collection collection) {
-        long now = this.f31659o.now() + f31643s;
+        long now = this.f31455o.now() + f31439s;
         ArrayList arrayList = new ArrayList(collection.size());
         ArrayList arrayList2 = new ArrayList(collection.size());
         Iterator it = collection.iterator();
@@ -246,22 +246,22 @@ public class f implements j, l8.a {
                 arrayList2.add(aVar);
             }
         }
-        Collections.sort(arrayList2, this.f31655k.get());
+        Collections.sort(arrayList2, this.f31451k.get());
         arrayList.addAll(arrayList2);
         return arrayList;
     }
 
     private void o() {
-        synchronized (this.f31660p) {
+        synchronized (this.f31456p) {
             try {
                 boolean p10 = p();
                 s();
-                long b10 = this.f31658n.b();
-                if (b10 > this.f31648d && !p10) {
-                    this.f31658n.e();
+                long b10 = this.f31454n.b();
+                if (b10 > this.f31444d && !p10) {
+                    this.f31454n.e();
                     p();
                 }
-                long j10 = this.f31648d;
+                long j10 = this.f31444d;
                 if (b10 > j10) {
                     m((j10 * 9) / 10, c.a.CACHE_FULL);
                 }
@@ -273,10 +273,10 @@ public class f implements j, l8.a {
 
     /* JADX INFO: Access modifiers changed from: private */
     public boolean p() {
-        long now = this.f31659o.now();
-        if (this.f31658n.d()) {
-            long j10 = this.f31651g;
-            if (j10 != -1 && now - j10 <= f31644t) {
+        long now = this.f31455o.now();
+        if (this.f31454n.d()) {
+            long j10 = this.f31447g;
+            if (j10 != -1 && now - j10 <= f31440t) {
                 return false;
             }
         }
@@ -287,11 +287,11 @@ public class f implements j, l8.a {
         Set set;
         boolean z10;
         long j10;
-        long now = this.f31659o.now();
-        long j11 = f31643s + now;
-        if (this.f31657m && this.f31650f.isEmpty()) {
-            set = this.f31650f;
-        } else if (this.f31657m) {
+        long now = this.f31455o.now();
+        long j11 = f31439s + now;
+        if (this.f31453m && this.f31446f.isEmpty()) {
+            set = this.f31446f;
+        } else if (this.f31453m) {
             set = new HashSet();
         } else {
             set = null;
@@ -304,7 +304,7 @@ public class f implements j, l8.a {
             int i11 = 0;
             int i12 = 0;
             z10 = false;
-            for (e.a aVar : this.f31654j.h()) {
+            for (e.a aVar : this.f31450j.h()) {
                 try {
                     i11++;
                     j12 += aVar.getSize();
@@ -316,7 +316,7 @@ public class f implements j, l8.a {
                         z11 = true;
                     } else {
                         j10 = j11;
-                        if (this.f31657m) {
+                        if (this.f31453m) {
                             o8.j.g(set);
                             set.add(aVar.getId());
                         }
@@ -324,23 +324,23 @@ public class f implements j, l8.a {
                     j11 = j10;
                 } catch (IOException e10) {
                     e = e10;
-                    this.f31656l.a(a.EnumC0373a.GENERIC_IO, f31642r, "calcFileCacheSize: " + e.getMessage(), e);
+                    this.f31452l.a(a.EnumC0375a.GENERIC_IO, f31438r, "calcFileCacheSize: " + e.getMessage(), e);
                     return z10;
                 }
             }
             if (z11) {
-                this.f31656l.a(a.EnumC0373a.READ_INVALID_ENTRY, f31642r, "Future timestamp found in " + i12 + " files , with a total size of " + i10 + " bytes, and a maximum time delta of " + j13 + "ms", null);
+                this.f31452l.a(a.EnumC0375a.READ_INVALID_ENTRY, f31438r, "Future timestamp found in " + i12 + " files , with a total size of " + i10 + " bytes, and a maximum time delta of " + j13 + "ms", null);
             }
             long j14 = i11;
-            if (this.f31658n.a() != j14 || this.f31658n.b() != j12) {
-                if (this.f31657m && this.f31650f != set) {
+            if (this.f31454n.a() != j14 || this.f31454n.b() != j12) {
+                if (this.f31453m && this.f31446f != set) {
                     o8.j.g(set);
-                    this.f31650f.clear();
-                    this.f31650f.addAll(set);
+                    this.f31446f.clear();
+                    this.f31446f.addAll(set);
                 }
-                this.f31658n.f(j12, j14);
+                this.f31454n.f(j12, j14);
             }
-            this.f31651g = now;
+            this.f31447g = now;
             return true;
         } catch (IOException e11) {
             e = e11;
@@ -350,40 +350,40 @@ public class f implements j, l8.a {
 
     private e.b r(String str, CacheKey cacheKey) {
         o();
-        return this.f31654j.e(str, cacheKey);
+        return this.f31450j.e(str, cacheKey);
     }
 
     private void s() {
-        a.EnumC0645a enumC0645a;
-        if (this.f31654j.isExternal()) {
-            enumC0645a = a.EnumC0645a.EXTERNAL;
+        a.EnumC0618a enumC0618a;
+        if (this.f31450j.isExternal()) {
+            enumC0618a = a.EnumC0618a.EXTERNAL;
         } else {
-            enumC0645a = a.EnumC0645a.INTERNAL;
+            enumC0618a = a.EnumC0618a.INTERNAL;
         }
-        if (this.f31653i.f(enumC0645a, this.f31646b - this.f31658n.b())) {
-            this.f31648d = this.f31645a;
+        if (this.f31449i.f(enumC0618a, this.f31442b - this.f31454n.b())) {
+            this.f31444d = this.f31441a;
         } else {
-            this.f31648d = this.f31646b;
+            this.f31444d = this.f31442b;
         }
     }
 
     @Override // j8.j
     public void a() {
-        synchronized (this.f31660p) {
+        synchronized (this.f31456p) {
             try {
-                this.f31654j.a();
-                this.f31650f.clear();
-                i8.c cVar = this.f31649e;
+                this.f31450j.a();
+                this.f31446f.clear();
+                i8.c cVar = this.f31445e;
                 if (cVar != null) {
                     cVar.h();
                 }
             } catch (IOException | NullPointerException e10) {
-                i8.a aVar = this.f31656l;
-                a.EnumC0373a enumC0373a = a.EnumC0373a.EVICTION;
-                Class cls = f31642r;
-                aVar.a(enumC0373a, cls, "clearAll: " + e10.getMessage(), e10);
+                i8.a aVar = this.f31452l;
+                a.EnumC0375a enumC0375a = a.EnumC0375a.EVICTION;
+                Class cls = f31438r;
+                aVar.a(enumC0375a, cls, "clearAll: " + e10.getMessage(), e10);
             }
-            this.f31658n.e();
+            this.f31454n.e();
         }
     }
 
@@ -394,14 +394,14 @@ public class f implements j, l8.a {
         String str2 = null;
         try {
             try {
-                synchronized (this.f31660p) {
+                synchronized (this.f31456p) {
                     try {
                         List b10 = i8.d.b(cacheKey);
                         int i10 = 0;
                         while (i10 < b10.size()) {
                             String str3 = (String) b10.get(i10);
-                            if (this.f31654j.d(str3, cacheKey)) {
-                                this.f31650f.add(str3);
+                            if (this.f31450j.d(str3, cacheKey)) {
+                                this.f31446f.add(str3);
                                 return true;
                             }
                             i10++;
@@ -416,7 +416,7 @@ public class f implements j, l8.a {
                         } catch (IOException e11) {
                             e10 = e11;
                             k h10 = k.a().d(cacheKey).j(str).h(e10);
-                            i8.c cVar = this.f31649e;
+                            i8.c cVar = this.f31445e;
                             if (cVar != null) {
                                 cVar.d(h10);
                             }
@@ -439,7 +439,7 @@ public class f implements j, l8.a {
         h8.a aVar;
         k d10 = k.a().d(cacheKey);
         try {
-            synchronized (this.f31660p) {
+            synchronized (this.f31456p) {
                 try {
                     List b10 = i8.d.b(cacheKey);
                     String str = null;
@@ -447,33 +447,33 @@ public class f implements j, l8.a {
                     for (int i10 = 0; i10 < b10.size(); i10++) {
                         str = (String) b10.get(i10);
                         d10.j(str);
-                        aVar = this.f31654j.g(str, cacheKey);
+                        aVar = this.f31450j.g(str, cacheKey);
                         if (aVar != null) {
                             break;
                         }
                     }
                     if (aVar == null) {
-                        i8.c cVar = this.f31649e;
+                        i8.c cVar = this.f31445e;
                         if (cVar != null) {
                             cVar.a(d10);
                         }
-                        this.f31650f.remove(str);
+                        this.f31446f.remove(str);
                     } else {
                         o8.j.g(str);
-                        i8.c cVar2 = this.f31649e;
+                        i8.c cVar2 = this.f31445e;
                         if (cVar2 != null) {
                             cVar2.e(d10);
                         }
-                        this.f31650f.add(str);
+                        this.f31446f.add(str);
                     }
                 } finally {
                 }
             }
             return aVar;
         } catch (IOException e10) {
-            this.f31656l.a(a.EnumC0373a.GENERIC_IO, f31642r, "getResource", e10);
+            this.f31452l.a(a.EnumC0375a.GENERIC_IO, f31438r, "getResource", e10);
             d10.h(e10);
-            i8.c cVar3 = this.f31649e;
+            i8.c cVar3 = this.f31445e;
             if (cVar3 != null) {
                 cVar3.d(d10);
             }
@@ -487,11 +487,11 @@ public class f implements j, l8.a {
     public h8.a d(CacheKey cacheKey, i8.i iVar) {
         String a10;
         k d10 = k.a().d(cacheKey);
-        i8.c cVar = this.f31649e;
+        i8.c cVar = this.f31445e;
         if (cVar != null) {
             cVar.b(d10);
         }
-        synchronized (this.f31660p) {
+        synchronized (this.f31456p) {
             a10 = i8.d.a(cacheKey);
         }
         d10.j(a10);
@@ -501,24 +501,24 @@ public class f implements j, l8.a {
                 try {
                     r10.b(iVar, cacheKey);
                     h8.a l10 = l(r10, cacheKey, a10);
-                    d10.i(l10.size()).f(this.f31658n.b());
-                    i8.c cVar2 = this.f31649e;
+                    d10.i(l10.size()).f(this.f31454n.b());
+                    i8.c cVar2 = this.f31445e;
                     if (cVar2 != null) {
                         cVar2.f(d10);
                     }
                     return l10;
                 } finally {
                     if (!r10.k()) {
-                        p8.a.i(f31642r, "Failed to delete temp file");
+                        p8.a.i(f31438r, "Failed to delete temp file");
                     }
                 }
             } catch (IOException e10) {
                 d10.h(e10);
-                i8.c cVar3 = this.f31649e;
+                i8.c cVar3 = this.f31445e;
                 if (cVar3 != null) {
                     cVar3.c(d10);
                 }
-                p8.a.j(f31642r, "Failed inserting a file into the cache", e10);
+                p8.a.j(f31438r, "Failed inserting a file into the cache", e10);
                 throw e10;
             }
         } finally {
@@ -528,11 +528,11 @@ public class f implements j, l8.a {
 
     @Override // j8.j
     public boolean e(CacheKey cacheKey) {
-        synchronized (this.f31660p) {
+        synchronized (this.f31456p) {
             try {
                 List b10 = i8.d.b(cacheKey);
                 for (int i10 = 0; i10 < b10.size(); i10++) {
-                    if (this.f31650f.contains((String) b10.get(i10))) {
+                    if (this.f31446f.contains((String) b10.get(i10))) {
                         return true;
                     }
                 }
@@ -545,26 +545,26 @@ public class f implements j, l8.a {
 
     @Override // j8.j
     public void f(CacheKey cacheKey) {
-        synchronized (this.f31660p) {
+        synchronized (this.f31456p) {
             try {
                 List b10 = i8.d.b(cacheKey);
                 for (int i10 = 0; i10 < b10.size(); i10++) {
                     String str = (String) b10.get(i10);
-                    this.f31654j.remove(str);
-                    this.f31650f.remove(str);
+                    this.f31450j.remove(str);
+                    this.f31446f.remove(str);
                 }
             } catch (IOException e10) {
-                i8.a aVar = this.f31656l;
-                a.EnumC0373a enumC0373a = a.EnumC0373a.DELETE_FILE;
-                Class cls = f31642r;
-                aVar.a(enumC0373a, cls, "delete: " + e10.getMessage(), e10);
+                i8.a aVar = this.f31452l;
+                a.EnumC0375a enumC0375a = a.EnumC0375a.DELETE_FILE;
+                Class cls = f31438r;
+                aVar.a(enumC0375a, cls, "delete: " + e10.getMessage(), e10);
             }
         }
     }
 
     @Override // j8.j
     public boolean g(CacheKey cacheKey) {
-        synchronized (this.f31660p) {
+        synchronized (this.f31456p) {
             if (e(cacheKey)) {
                 return true;
             }
@@ -572,8 +572,8 @@ public class f implements j, l8.a {
                 List b10 = i8.d.b(cacheKey);
                 for (int i10 = 0; i10 < b10.size(); i10++) {
                     String str = (String) b10.get(i10);
-                    if (this.f31654j.f(str, cacheKey)) {
-                        this.f31650f.add(str);
+                    if (this.f31450j.f(str, cacheKey)) {
+                        this.f31446f.add(str);
                         return true;
                     }
                 }

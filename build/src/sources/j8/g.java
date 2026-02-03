@@ -11,56 +11,56 @@ import n8.c;
 public class g implements e {
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Class f31669f = g.class;
+    private static final Class f31465f = g.class;
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f31670a;
+    private final int f31466a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Supplier f31671b;
+    private final Supplier f31467b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f31672c;
+    private final String f31468c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final i8.a f31673d;
+    private final i8.a f31469d;
 
     /* renamed from: e  reason: collision with root package name */
-    volatile a f31674e = new a(null, null);
+    volatile a f31470e = new a(null, null);
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final e f31675a;
+        public final e f31471a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final File f31676b;
+        public final File f31472b;
 
         a(File file, e eVar) {
-            this.f31675a = eVar;
-            this.f31676b = file;
+            this.f31471a = eVar;
+            this.f31472b = file;
         }
     }
 
     public g(int i10, Supplier supplier, String str, i8.a aVar) {
-        this.f31670a = i10;
-        this.f31673d = aVar;
-        this.f31671b = supplier;
-        this.f31672c = str;
+        this.f31466a = i10;
+        this.f31469d = aVar;
+        this.f31467b = supplier;
+        this.f31468c = str;
     }
 
     private void j() {
-        File file = new File((File) this.f31671b.get(), this.f31672c);
+        File file = new File((File) this.f31467b.get(), this.f31468c);
         i(file);
-        this.f31674e = new a(file, new j8.a(file, this.f31670a, this.f31673d));
+        this.f31470e = new a(file, new j8.a(file, this.f31466a, this.f31469d));
     }
 
     private boolean m() {
         File file;
-        a aVar = this.f31674e;
-        if (aVar.f31675a != null && (file = aVar.f31676b) != null && file.exists()) {
+        a aVar = this.f31470e;
+        if (aVar.f31471a != null && (file = aVar.f31472b) != null && file.exists()) {
             return false;
         }
         return true;
@@ -81,7 +81,7 @@ public class g implements e {
         try {
             l().c();
         } catch (IOException e10) {
-            p8.a.j(f31669f, "purgeUnexpectedResources", e10);
+            p8.a.j(f31465f, "purgeUnexpectedResources", e10);
         }
     }
 
@@ -113,9 +113,9 @@ public class g implements e {
     void i(File file) {
         try {
             n8.c.a(file);
-            p8.a.a(f31669f, "Created cache directory %s", file.getAbsolutePath());
+            p8.a.a(f31465f, "Created cache directory %s", file.getAbsolutePath());
         } catch (c.a e10) {
-            this.f31673d.a(a.EnumC0373a.WRITE_CREATE_DIR, f31669f, "createRootDirectoryIfNecessary", e10);
+            this.f31469d.a(a.EnumC0375a.WRITE_CREATE_DIR, f31465f, "createRootDirectoryIfNecessary", e10);
             throw e10;
         }
     }
@@ -130,8 +130,8 @@ public class g implements e {
     }
 
     void k() {
-        if (this.f31674e.f31675a != null && this.f31674e.f31676b != null) {
-            n8.a.b(this.f31674e.f31676b);
+        if (this.f31470e.f31471a != null && this.f31470e.f31472b != null) {
+            n8.a.b(this.f31470e.f31472b);
         }
     }
 
@@ -144,7 +144,7 @@ public class g implements e {
         } catch (Throwable th2) {
             throw th2;
         }
-        return (e) o8.j.g(this.f31674e.f31675a);
+        return (e) o8.j.g(this.f31470e.f31471a);
     }
 
     @Override // j8.e

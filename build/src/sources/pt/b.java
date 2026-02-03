@@ -1,62 +1,22 @@
 package pt;
+
+import nt.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public enum b {
-    PROLEPTIC_JULIAN,
-    PROLEPTIC_GREGORIAN,
-    SWEDEN,
-    INTRODUCTION_ON_1582_10_15,
-    SINGLE_CUTOVER_DATE,
-    PROLEPTIC_BYZANTINE;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static /* synthetic */ class a {
-
-        /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f46487a;
-
-        static {
-            int[] iArr = new int[b.values().length];
-            f46487a = iArr;
-            try {
-                iArr[b.PROLEPTIC_JULIAN.ordinal()] = 1;
-            } catch (NoSuchFieldError unused) {
+public abstract class b {
+    public static String a(j jVar, char c10, int i10) {
+        if (jVar.p()) {
+            int i11 = c10 - '0';
+            String num = Integer.toString(i10);
+            if (i11 == 0) {
+                return num;
             }
-            try {
-                f46487a[b.PROLEPTIC_GREGORIAN.ordinal()] = 2;
-            } catch (NoSuchFieldError unused2) {
+            StringBuilder sb2 = new StringBuilder();
+            int length = num.length();
+            for (int i12 = 0; i12 < length; i12++) {
+                sb2.append((char) (num.charAt(i12) + i11));
             }
-            try {
-                f46487a[b.SWEDEN.ordinal()] = 3;
-            } catch (NoSuchFieldError unused3) {
-            }
-            try {
-                f46487a[b.INTRODUCTION_ON_1582_10_15.ordinal()] = 4;
-            } catch (NoSuchFieldError unused4) {
-            }
-            try {
-                f46487a[b.PROLEPTIC_BYZANTINE.ordinal()] = 5;
-            } catch (NoSuchFieldError unused5) {
-            }
+            return sb2.toString();
         }
-    }
-
-    public int a() {
-        int i10 = a.f46487a[ordinal()];
-        if (i10 == 1) {
-            return 2;
-        }
-        if (i10 == 2) {
-            return 1;
-        }
-        if (i10 == 3) {
-            return 4;
-        }
-        if (i10 != 4) {
-            if (i10 == 5) {
-                return 3;
-            }
-            return 0;
-        }
-        return 7;
+        return jVar.t(i10);
     }
 }

@@ -33,29 +33,29 @@ public abstract class ErrorValue extends ConstantValue<Unit> {
     public static final class ErrorValueWithMessage extends ErrorValue {
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f35205b;
+        private final String f34595b;
 
         public ErrorValueWithMessage(@NotNull String message) {
             Intrinsics.checkNotNullParameter(message, "message");
-            this.f35205b = message;
+            this.f34595b = message;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.resolve.constants.ConstantValue
         @NotNull
         public String toString() {
-            return this.f35205b;
+            return this.f34595b;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.resolve.constants.ConstantValue
         @NotNull
         public ErrorType getType(@NotNull ModuleDescriptor module) {
             Intrinsics.checkNotNullParameter(module, "module");
-            return ErrorUtils.createErrorType(ErrorTypeKind.ERROR_CONSTANT_VALUE, this.f35205b);
+            return ErrorUtils.createErrorType(ErrorTypeKind.ERROR_CONSTANT_VALUE, this.f34595b);
         }
     }
 
     public ErrorValue() {
-        super(Unit.f33074a);
+        super(Unit.f32464a);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.constants.ConstantValue

@@ -14,48 +14,48 @@ import java.util.concurrent.Executor;
 public class m0 implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Executor f11476a;
+    private final Executor f10444a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ContentResolver f11477b;
+    private final ContentResolver f10445b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a extends e1 {
 
         /* renamed from: q  reason: collision with root package name */
-        final /* synthetic */ y0 f11478q;
+        final /* synthetic */ y0 f10446q;
 
         /* renamed from: r  reason: collision with root package name */
-        final /* synthetic */ ProducerContext f11479r;
+        final /* synthetic */ ProducerContext f10447r;
 
         /* renamed from: s  reason: collision with root package name */
-        final /* synthetic */ ImageRequest f11480s;
+        final /* synthetic */ ImageRequest f10448s;
 
         /* renamed from: t  reason: collision with root package name */
-        final /* synthetic */ CancellationSignal f11481t;
+        final /* synthetic */ CancellationSignal f10449t;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(Consumer consumer, y0 y0Var, ProducerContext producerContext, String str, y0 y0Var2, ProducerContext producerContext2, ImageRequest imageRequest, CancellationSignal cancellationSignal) {
             super(consumer, y0Var, producerContext, str);
-            this.f11478q = y0Var2;
-            this.f11479r = producerContext2;
-            this.f11480s = imageRequest;
-            this.f11481t = cancellationSignal;
+            this.f10446q = y0Var2;
+            this.f10447r = producerContext2;
+            this.f10448s = imageRequest;
+            this.f10449t = cancellationSignal;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // com.facebook.imagepipeline.producers.e1, m8.h
         public void d() {
             super.d();
-            this.f11481t.cancel();
+            this.f10449t.cancel();
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // com.facebook.imagepipeline.producers.e1, m8.h
         public void e(Exception exc) {
             super.e(exc);
-            this.f11478q.b(this.f11479r, "LocalThumbnailBitmapSdk29Producer", false);
-            this.f11479r.n("local", "thumbnail_bitmap");
+            this.f10446q.b(this.f10447r, "LocalThumbnailBitmapSdk29Producer", false);
+            this.f10447r.n("local", "thumbnail_bitmap");
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
@@ -84,31 +84,31 @@ public class m0 implements w0 {
         public CloseableReference c() {
             String str;
             Bitmap bitmap;
-            Size size = new Size(this.f11480s.getPreferredWidth(), this.f11480s.getPreferredHeight());
+            Size size = new Size(this.f10448s.getPreferredWidth(), this.f10448s.getPreferredHeight());
             try {
-                str = m0.this.e(this.f11480s);
+                str = m0.this.e(this.f10448s);
             } catch (IllegalArgumentException unused) {
                 str = null;
             }
             if (str != null) {
                 if (q8.a.c(q8.a.b(str))) {
-                    bitmap = ThumbnailUtils.createVideoThumbnail(new File(str), size, this.f11481t);
+                    bitmap = ThumbnailUtils.createVideoThumbnail(new File(str), size, this.f10449t);
                 } else {
-                    bitmap = ThumbnailUtils.createImageThumbnail(new File(str), size, this.f11481t);
+                    bitmap = ThumbnailUtils.createImageThumbnail(new File(str), size, this.f10449t);
                 }
             } else {
                 bitmap = null;
             }
             if (bitmap == null) {
-                bitmap = m0.this.f11477b.loadThumbnail(this.f11480s.getSourceUri(), size, this.f11481t);
+                bitmap = m0.this.f10445b.loadThumbnail(this.f10448s.getSourceUri(), size, this.f10449t);
             }
             if (bitmap == null) {
                 return null;
             }
-            sa.f p12 = sa.f.p1(bitmap, ka.e.a(), sa.n.f48959d, 0);
-            this.f11479r.B("image_format", "thumbnail");
-            p12.t0(this.f11479r.getExtras());
-            return CloseableReference.L0(p12);
+            sa.f p12 = sa.f.p1(bitmap, ka.e.a(), sa.n.f49369d, 0);
+            this.f10447r.B("image_format", "thumbnail");
+            p12.A0(this.f10447r.getExtras());
+            return CloseableReference.J0(p12);
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
@@ -117,15 +117,15 @@ public class m0 implements w0 {
         public void f(CloseableReference closeableReference) {
             boolean z10;
             super.f(closeableReference);
-            y0 y0Var = this.f11478q;
-            ProducerContext producerContext = this.f11479r;
+            y0 y0Var = this.f10446q;
+            ProducerContext producerContext = this.f10447r;
             if (closeableReference != null) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             y0Var.b(producerContext, "LocalThumbnailBitmapSdk29Producer", z10);
-            this.f11479r.n("local", "thumbnail_bitmap");
+            this.f10447r.n("local", "thumbnail_bitmap");
         }
     }
 
@@ -133,26 +133,26 @@ public class m0 implements w0 {
     class b extends f {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ e1 f11483a;
+        final /* synthetic */ e1 f10451a;
 
         b(e1 e1Var) {
-            this.f11483a = e1Var;
+            this.f10451a = e1Var;
         }
 
         @Override // com.facebook.imagepipeline.producers.x0
         public void b() {
-            this.f11483a.a();
+            this.f10451a.a();
         }
     }
 
     public m0(Executor executor, ContentResolver contentResolver) {
-        this.f11476a = executor;
-        this.f11477b = contentResolver;
+        this.f10444a = executor;
+        this.f10445b = contentResolver;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public String e(ImageRequest imageRequest) {
-        return w8.f.e(this.f11477b, imageRequest.getSourceUri());
+        return w8.f.e(this.f10445b, imageRequest.getSourceUri());
     }
 
     @Override // com.facebook.imagepipeline.producers.w0
@@ -162,6 +162,6 @@ public class m0 implements w0 {
         producerContext.n("local", "thumbnail_bitmap");
         a aVar = new a(consumer, F, producerContext, "LocalThumbnailBitmapSdk29Producer", F, producerContext, V, new CancellationSignal());
         producerContext.h(new b(aVar));
-        this.f11476a.execute(aVar);
+        this.f10444a.execute(aVar);
     }
 }

@@ -42,13 +42,13 @@ import com.facebook.react.modules.i18nmanager.I18nUtil;
 import com.facebook.react.uimanager.UIManagerConstantsCache;
 import java.util.Map;
 import java.util.concurrent.CountDownLatch;
-import jr.l;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
+import lr.l;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\u00020\u00012\u00020\u0002B\u0007¢\u0006\u0004\b\u0003\u0010\u0004J\u0010\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0015H\u0014J\b\u0010\u0016\u001a\u00020\u0013H\u0016J\b\u0010\u0017\u001a\u00020\u0013H\u0016J\b\u0010\u0018\u001a\u00020\u0013H\u0002R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u0007\u001a\u00020\bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u001b\u0010\u000b\u001a\u00020\f8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b\u000f\u0010\u0010\u001a\u0004\b\r\u0010\u000eR\u000e\u0010\u0011\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u0019"}, d2 = {"Lcom/discord/MainApplication;", "Lcom/discord/tti_manager/TTILoggingApplication;", "Lcom/facebook/react/ReactApplication;", "<init>", "()V", "initializeReactNativeLatch", "Ljava/util/concurrent/CountDownLatch;", "reactNativeHost", "Lcom/facebook/react/ReactNativeHost;", "getReactNativeHost", "()Lcom/facebook/react/ReactNativeHost;", "reactHost", "Lcom/facebook/react/ReactHost;", "getReactHost", "()Lcom/facebook/react/ReactHost;", "reactHost$delegate", "Lkotlin/Lazy;", "soloaderLoaded", "attachBaseContext", "", "base", "Landroid/content/Context;", "onCreate", "initialize", "performInitialization", "app_canaryRelease"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -58,7 +58,7 @@ public final class MainApplication extends TTILoggingApplication implements Reac
     @NotNull
     private final ReactNativeHost reactNativeHost = new DCDReactNativeHost(this);
     @NotNull
-    private final Lazy reactHost$delegate = l.b(new Function0() { // from class: com.discord.b
+    private final Lazy reactHost$delegate = l.a(new Function0() { // from class: com.discord.b
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             ReactHost reactHost_delegate$lambda$0;
@@ -94,24 +94,24 @@ public final class MainApplication extends TTILoggingApplication implements Reac
             }
         });
         mainApplication.soloaderLoaded.countDown();
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit initialize$lambda$3(MainApplication mainApplication) {
         mainApplication.performInitialization();
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onCreate$lambda$2(MainApplication mainApplication) {
         DeepLinks.INSTANCE.init(mainApplication);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     private final void performInitialization() {
         ForegroundServiceStartGuard.INSTANCE.init(this);
-        nr.a.b(false, false, null, "ReactNativeLoader", 10, new Function0() { // from class: com.discord.c
+        pr.a.b(false, false, null, "ReactNativeLoader", 10, new Function0() { // from class: com.discord.c
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit performInitialization$lambda$4;
@@ -133,7 +133,7 @@ public final class MainApplication extends TTILoggingApplication implements Reac
             TelemetryRing.init$default(TelemetryRing.INSTANCE, this, null, 2, null);
             CacheDataSourceFactory.Companion.init(this);
             TTIMetrics.record$default(tTIMetrics, "CacheDataSourceFactory.init()", 0L, null, false, 14, null);
-            Thread b10 = nr.a.b(false, false, null, null, 0, new Function0() { // from class: com.discord.d
+            Thread b10 = pr.a.b(false, false, null, null, 0, new Function0() { // from class: com.discord.d
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit performInitialization$lambda$6;
@@ -141,7 +141,7 @@ public final class MainApplication extends TTILoggingApplication implements Reac
                     return performInitialization$lambda$6;
                 }
             }, 31, null);
-            nr.a.b(false, false, null, "PreInitReactHost", 0, new Function0() { // from class: com.discord.e
+            pr.a.b(false, false, null, "PreInitReactHost", 0, new Function0() { // from class: com.discord.e
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit performInitialization$lambda$7;
@@ -177,10 +177,10 @@ public final class MainApplication extends TTILoggingApplication implements Reac
             FrescoModuleDiscord.Companion.startFrescoInitializationAsync(mainApplication);
             DefaultSoLoader.maybeLoadSoLibrary();
             UIManagerConstantsCache.getInstance().init(mainApplication);
-            HermesExecutor.f11049a.b();
+            HermesExecutor.f10017a.b();
             mainApplication.initializeReactNativeLatch.countDown();
             LibdiscoreModule.INSTANCE.init(mainApplication);
-            return Unit.f33074a;
+            return Unit.f32464a;
         } catch (Throwable th2) {
             mainApplication.initializeReactNativeLatch.countDown();
             throw th2;
@@ -195,7 +195,7 @@ public final class MainApplication extends TTILoggingApplication implements Reac
         I18nUtil.Companion.getInstance().allowRTL(mainApplication, false);
         TTIMetrics.record$default(tTIMetrics, "I18nUtil.allowRtl()", 0L, null, false, 14, null);
         BundleUpdater.OtaBundle bundle = BundleUpdater.Companion.instance().getBundle();
-        CrashReporting.INSTANCE.init(mainApplication, (bundle == null || (r0 = bundle.getReleaseName()) == null) ? "discord_android@316.1.0-2+316201" : "discord_android@316.1.0-2+316201");
+        CrashReporting.INSTANCE.init(mainApplication, (bundle == null || (r0 = bundle.getReleaseName()) == null) ? "discord_android@316.2.0-2+316202" : "discord_android@316.2.0-2+316202");
         TTIMetrics.record$default(tTIMetrics, "CrashReporting.init()", 0L, null, false, 14, null);
         ForegroundServiceStartGuard.INSTANCE.setLogger(new Function2() { // from class: com.discord.a
             @Override // kotlin.jvm.functions.Function2
@@ -205,7 +205,7 @@ public final class MainApplication extends TTILoggingApplication implements Reac
                 return performInitialization$lambda$6$lambda$5;
             }
         });
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -213,13 +213,13 @@ public final class MainApplication extends TTILoggingApplication implements Reac
         Intrinsics.checkNotNullParameter(message, "message");
         Intrinsics.checkNotNullParameter(data, "data");
         CrashReporting.addBreadcrumb$default(CrashReporting.INSTANCE, message, data, "fgs_guard", null, false, 24, null);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit performInitialization$lambda$7(MainApplication mainApplication) {
         mainApplication.getReactHost();
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -234,7 +234,7 @@ public final class MainApplication extends TTILoggingApplication implements Reac
     protected void attachBaseContext(@NotNull final Context base) {
         Intrinsics.checkNotNullParameter(base, "base");
         super.attachBaseContext(base);
-        nr.a.b(false, false, null, "helperReactNativeLoader", 10, new Function0() { // from class: com.discord.g
+        pr.a.b(false, false, null, "helperReactNativeLoader", 10, new Function0() { // from class: com.discord.g
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit attachBaseContext$lambda$1;
@@ -262,7 +262,7 @@ public final class MainApplication extends TTILoggingApplication implements Reac
         if (Build.VERSION.SDK_INT < 28) {
             performInitialization();
         } else {
-            nr.a.b(false, false, null, "ReactNativeInitThread", 10, new Function0() { // from class: com.discord.h
+            pr.a.b(false, false, null, "ReactNativeInitThread", 10, new Function0() { // from class: com.discord.h
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit initialize$lambda$3;
@@ -277,7 +277,7 @@ public final class MainApplication extends TTILoggingApplication implements Reac
     @Override // com.discord.tti_manager.TTILoggingApplication, android.app.Application
     public void onCreate() {
         super.onCreate();
-        nr.a.b(false, false, null, null, 0, new Function0() { // from class: com.discord.f
+        pr.a.b(false, false, null, null, 0, new Function0() { // from class: com.discord.f
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit onCreate$lambda$2;

@@ -9,11 +9,11 @@ import android.graphics.drawable.Drawable;
 import com.facebook.react.views.imagehelper.ImageSource;
 import com.facebook.react.views.imagehelper.ResourceDrawableIdHelper;
 import com.google.android.material.button.MaterialButton;
-import hs.g;
-import hs.m0;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
+import js.g;
+import js.m0;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.c;
@@ -25,7 +25,7 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CoroutineDispatcher;
 import kotlinx.coroutines.CoroutineScope;
-import pr.b;
+import rr.b;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.react_asset_fetcher.ReactAssetUtilsKt$setReactIcon$2", f = "ReactAssetUtils.kt", l = {72}, m = "invokeSuspend")
@@ -96,7 +96,7 @@ public final class ReactAssetUtilsKt$setReactIcon$2 extends k implements Functio
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Drawable> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
         }
     }
 
@@ -140,11 +140,11 @@ public final class ReactAssetUtilsKt$setReactIcon$2 extends k implements Functio
             obj = g10;
         }
         materialButton.setIcon((Drawable) obj);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ReactAssetUtilsKt$setReactIcon$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        return ((ReactAssetUtilsKt$setReactIcon$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
     }
 }

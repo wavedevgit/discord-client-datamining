@@ -5,7 +5,7 @@ import ui.c;
 final class w7 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final w7 f38741a = new w7();
+    static final w7 f38538a = new w7();
 
     static {
         c.b a10 = ui.c.a("detectorOptions");

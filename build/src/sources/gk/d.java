@@ -37,20 +37,20 @@ public enum d {
     private static final Map P = new HashMap();
 
     /* renamed from: d  reason: collision with root package name */
-    private final int[] f27093d;
+    private final int[] f26306d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String[] f27094e;
+    private final String[] f26307e;
 
     static {
         d[] values;
         for (d dVar : values()) {
             if (Charset.isSupported(dVar.name())) {
-                for (int i10 : dVar.f27093d) {
+                for (int i10 : dVar.f26306d) {
                     O.put(Integer.valueOf(i10), dVar);
                 }
                 P.put(dVar.name(), dVar);
-                for (String str : dVar.f27094e) {
+                for (String str : dVar.f26307e) {
                     P.put(str, dVar);
                 }
             }
@@ -81,16 +81,16 @@ public enum d {
     }
 
     public int g() {
-        return this.f27093d[0];
+        return this.f26306d[0];
     }
 
     d(int i10, String... strArr) {
-        this.f27093d = new int[]{i10};
-        this.f27094e = strArr;
+        this.f26306d = new int[]{i10};
+        this.f26307e = strArr;
     }
 
     d(int[] iArr, String... strArr) {
-        this.f27093d = iArr;
-        this.f27094e = strArr;
+        this.f26306d = iArr;
+        this.f26307e = strArr;
     }
 }

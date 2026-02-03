@@ -9,22 +9,22 @@ import java.util.Map;
 public class c0 {
 
     /* renamed from: b  reason: collision with root package name */
-    public View f5259b;
+    public View f5228b;
 
     /* renamed from: a  reason: collision with root package name */
-    public final Map f5258a = new HashMap();
+    public final Map f5227a = new HashMap();
 
     /* renamed from: c  reason: collision with root package name */
-    final ArrayList f5260c = new ArrayList();
+    final ArrayList f5229c = new ArrayList();
 
     public c0(View view) {
-        this.f5259b = view;
+        this.f5228b = view;
     }
 
     public boolean equals(Object obj) {
         if (obj instanceof c0) {
             c0 c0Var = (c0) obj;
-            if (this.f5259b == c0Var.f5259b && this.f5258a.equals(c0Var.f5258a)) {
+            if (this.f5228b == c0Var.f5228b && this.f5227a.equals(c0Var.f5227a)) {
                 return true;
             }
             return false;
@@ -33,13 +33,13 @@ public class c0 {
     }
 
     public int hashCode() {
-        return (this.f5259b.hashCode() * 31) + this.f5258a.hashCode();
+        return (this.f5228b.hashCode() * 31) + this.f5227a.hashCode();
     }
 
     public String toString() {
-        String str = (("TransitionValues@" + Integer.toHexString(hashCode()) + ":\n") + "    view = " + this.f5259b + ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE) + "    values:";
-        for (String str2 : this.f5258a.keySet()) {
-            str = str + "    " + str2 + ": " + this.f5258a.get(str2) + ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE;
+        String str = (("TransitionValues@" + Integer.toHexString(hashCode()) + ":\n") + "    view = " + this.f5228b + ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE) + "    values:";
+        for (String str2 : this.f5227a.keySet()) {
+            str = str + "    " + str2 + ": " + this.f5227a.get(str2) + ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE;
         }
         return str;
     }

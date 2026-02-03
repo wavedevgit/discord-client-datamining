@@ -20,23 +20,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_role_subscriptions/PremiumRoleUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun24586: for (var _fun24586_ip = 0;;) switch (_fun24586_ip) {
+        _fun24673: for (var _fun24673_ip = 0;;) switch (_fun24673_ip) {
             case 0:
                 var2 = arg0;
                 var1 = null;
                 var3 = var1 == var2;
                 var0 = undefined;
                 if (var3) {
-                    _fun24586_ip = 35;
-                    continue _fun24586
+                    _fun24673_ip = 35;
+                    continue _fun24673
                 }
             case 14:
                 var2 = var2.tags;
                 var3 = var1 == var2;
                 var0 = undefined;
                 if (var3) {
-                    _fun24586_ip = 35;
-                    continue _fun24586
+                    _fun24673_ip = 35;
+                    continue _fun24673
                 }
             case 29:
                 var0 = var2.subscription_listing_id;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isSubscriptionRole = var3;
     var1 = function arg0() {
-        _fun24587: for (var _fun24587_ip = 0;;) switch (_fun24587_ip) {
+        _fun24674: for (var _fun24674_ip = 0;;) switch (_fun24674_ip) {
             case 0:
                 var2 = arg0;
                 var3 = null;
@@ -55,16 +55,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = undefined;
                 var0 = undefined;
                 if (var4) {
-                    _fun24587_ip = 39;
-                    continue _fun24587
+                    _fun24674_ip = 39;
+                    continue _fun24674
                 }
             case 16:
                 var2 = var2.tags;
                 var3 = var3 == var2;
                 var0 = undefined;
                 if (var3) {
-                    _fun24587_ip = 39;
-                    continue _fun24587
+                    _fun24674_ip = 39;
+                    continue _fun24674
                 }
             case 31:
                 var0 = var2.available_for_purchase;

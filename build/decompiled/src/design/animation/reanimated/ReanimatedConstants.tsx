@@ -36,4 +36,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.CONFIG_NEVER_ANIMATE = var3;
     var2.CONFIG_NEVER_ANIMATE_TIMING = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3711, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3720, 2]);

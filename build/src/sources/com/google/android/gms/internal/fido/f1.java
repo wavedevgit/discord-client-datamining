@@ -6,20 +6,20 @@ import java.util.Map;
 public abstract class f1 implements Map, Serializable {
 
     /* renamed from: e  reason: collision with root package name */
-    static final Map.Entry[] f14637e = new Map.Entry[0];
+    static final Map.Entry[] f13605e = new Map.Entry[0];
 
     /* renamed from: d  reason: collision with root package name */
-    private transient h1 f14638d;
+    private transient h1 f13606d;
 
     public abstract z0 a();
 
     abstract h1 b();
 
     public final h1 c() {
-        h1 h1Var = this.f14638d;
+        h1 h1Var = this.f13606d;
         if (h1Var == null) {
             h1 b10 = b();
-            this.f14638d = b10;
+            this.f13606d = b10;
             return b10;
         }
         return h1Var;

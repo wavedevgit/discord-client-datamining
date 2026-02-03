@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/launchpad/native/LaunchPadGestureCoordinator.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun77089: for (var _fun77089_ip = 0;;) switch (_fun77089_ip) {
+        _fun77199: for (var _fun77199_ip = 0;;) switch (_fun77199_ip) {
             case 0:
                 var1 = arg0;
                 var5 = var1.children;
@@ -73,15 +73,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[1] = var8;
                 var2[2] = var7;
                 var0 = function() { // Environment: var0
-                    _fun77090: for (var _fun77090_ip = 0;;) switch (_fun77090_ip) {
+                    _fun77200: for (var _fun77200_ip = 0;;) switch (_fun77200_ip) {
                         case 0:
                             var0 = _closure2_slot2;
                             var6 = null;
                             var1 = var6 == var0;
                             var0 = null;
                             if (var1) {
-                                _fun77090_ip = 172;
-                                continue _fun77090
+                                _fun77200_ip = 172;
+                                continue _fun77200
                             }
                         case 21:
                             var4 = _closure2_slot1;
@@ -89,8 +89,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1.DISABLED;
                             var0 = null;
                             if (!(var4 !== var1)) {
-                                _fun77090_ip = 172;
-                                continue _fun77090
+                                _fun77200_ip = 172;
+                                continue _fun77200
                             }
                         case 47:
                             var4 = _closure2_slot1;
@@ -98,8 +98,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1.PULL_TAB;
                             var0 = null;
                             if (!(var4 !== var1)) {
-                                _fun77090_ip = 172;
-                                continue _fun77090
+                                _fun77200_ip = 172;
+                                continue _fun77200
                             }
                         case 67:
                             var4 = _closure1_slot0;
@@ -112,16 +112,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var1.bind(var4)();
                             var1 = null;
                             if (!var4) {
-                                _fun77090_ip = 169;
-                                continue _fun77090
+                                _fun77200_ip = 169;
+                                continue _fun77200
                             }
                         case 104:
                             var4 = _closure2_slot0;
                             var4 = var4.enabled;
                             var1 = null;
                             if (!var4) {
-                                _fun77090_ip = 169;
-                                continue _fun77090
+                                _fun77200_ip = 169;
+                                continue _fun77200
                             }
                         case 118:
                             var4 = _closure1_slot0;
@@ -145,8 +145,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var0 = var5;
                 if (!(var2 != var6)) {
-                    _fun77089_ip = 203;
-                    continue _fun77089
+                    _fun77199_ip = 203;
+                    continue _fun77199
                 }
             case 156:
                 var3 = _closure1_slot5;
@@ -166,4 +166,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 9825, 33, 9826, 9827, 9828, 478, 4956, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 9844, 33, 9845, 9846, 9847, 478, 4961, 2]);

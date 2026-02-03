@@ -1,69 +1,45 @@
 package mu;
 
-import java.util.Collection;
-import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function2;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Iterator;
+import kotlin.collections.ArrayDeque;
 import kotlin.jvm.internal.Intrinsics;
-import mu.b;
+import lu.c0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface c extends b {
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        private static boolean a(c cVar, List list, Function2 function2) {
-            Integer c10 = c(cVar, (Comparable) CollectionsKt.firstOrNull(list), (Comparable) qv.c.b(list));
-            if (c10 == null) {
-                return false;
-            }
-            return ((Boolean) function2.invoke(Integer.valueOf(c10.intValue()), 0)).booleanValue();
+public abstract class c {
+    public static final void a(lu.h hVar, c0 dir, boolean z10) {
+        Intrinsics.checkNotNullParameter(hVar, "<this>");
+        Intrinsics.checkNotNullParameter(dir, "dir");
+        ArrayDeque arrayDeque = new ArrayDeque();
+        for (c0 c0Var = dir; c0Var != null && !hVar.j(c0Var); c0Var = c0Var.i()) {
+            arrayDeque.addFirst(c0Var);
         }
-
-        public static boolean b(c cVar, List list, Function2 operator) {
-            List d10;
-            Intrinsics.checkNotNullParameter(operator, "operator");
-            if (list != null && (d10 = qv.a.d(list)) != null) {
-                return a(cVar, d10, operator);
-            }
-            return false;
+        if (z10 && arrayDeque.isEmpty()) {
+            throw new IOException(dir + " already exists.");
         }
-
-        private static Integer c(c cVar, Comparable comparable, Comparable comparable2) {
-            List g10 = cVar.g(comparable, comparable2);
-            if (g10 == null) {
-                return null;
-            }
-            List<Comparable> list = g10;
-            boolean z10 = list instanceof Collection;
-            if (!z10 || !list.isEmpty()) {
-                for (Comparable comparable3 : list) {
-                    if (comparable3 != null) {
-                        if (!z10 || !list.isEmpty()) {
-                            for (Comparable comparable4 : list) {
-                                if (comparable4 == null) {
-                                    return null;
-                                }
-                            }
-                        }
-                        return Integer.valueOf(mr.a.d((Comparable) CollectionsKt.firstOrNull(g10), (Comparable) qv.c.b(g10)));
-                    }
-                }
-            }
-            return Integer.valueOf(mr.a.d((Comparable) CollectionsKt.firstOrNull(g10), (Comparable) qv.c.b(g10)));
-        }
-
-        public static List d(c cVar, Comparable comparable, Comparable comparable2) {
-            return b.a.a(cVar, comparable, comparable2);
-        }
-
-        public static List e(c cVar, Comparable comparable, Comparable comparable2) {
-            return b.a.b(cVar, comparable, comparable2);
-        }
-
-        public static Boolean f(c cVar, Object obj) {
-            return b.a.c(cVar, obj);
+        Iterator<E> it = arrayDeque.iterator();
+        while (it.hasNext()) {
+            hVar.f((c0) it.next());
         }
     }
 
-    boolean b(List list, Function2 function2);
+    public static final boolean b(lu.h hVar, c0 path) {
+        Intrinsics.checkNotNullParameter(hVar, "<this>");
+        Intrinsics.checkNotNullParameter(path, "path");
+        if (hVar.m(path) != null) {
+            return true;
+        }
+        return false;
+    }
+
+    public static final lu.g c(lu.h hVar, c0 path) {
+        Intrinsics.checkNotNullParameter(hVar, "<this>");
+        Intrinsics.checkNotNullParameter(path, "path");
+        lu.g m10 = hVar.m(path);
+        if (m10 != null) {
+            return m10;
+        }
+        throw new FileNotFoundException("no such file: " + path);
+    }
 }

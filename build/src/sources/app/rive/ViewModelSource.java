@@ -20,52 +20,52 @@ public interface ViewModelSource {
 
         @NotNull
         /* renamed from: blankInstance-impl  reason: not valid java name */
-        public static ViewModelInstanceSource m74blankInstanceimpl(Artboard artboard) {
-            return m75boximpl(artboard).blankInstance();
+        public static ViewModelInstanceSource m72blankInstanceimpl(Artboard artboard) {
+            return m73boximpl(artboard).blankInstance();
         }
 
         /* renamed from: box-impl  reason: not valid java name */
-        public static final /* synthetic */ DefaultForArtboard m75boximpl(Artboard artboard) {
+        public static final /* synthetic */ DefaultForArtboard m73boximpl(Artboard artboard) {
             return new DefaultForArtboard(artboard);
         }
 
         @NotNull
         /* renamed from: constructor-impl  reason: not valid java name */
-        public static Artboard m76constructorimpl(@NotNull Artboard artboard) {
+        public static Artboard m74constructorimpl(@NotNull Artboard artboard) {
             Intrinsics.checkNotNullParameter(artboard, "artboard");
             return artboard;
         }
 
         @NotNull
         /* renamed from: defaultInstance-impl  reason: not valid java name */
-        public static ViewModelInstanceSource m77defaultInstanceimpl(Artboard artboard) {
-            return m75boximpl(artboard).defaultInstance();
+        public static ViewModelInstanceSource m75defaultInstanceimpl(Artboard artboard) {
+            return m73boximpl(artboard).defaultInstance();
         }
 
         /* renamed from: equals-impl  reason: not valid java name */
-        public static boolean m78equalsimpl(Artboard artboard, Object obj) {
-            return (obj instanceof DefaultForArtboard) && Intrinsics.areEqual(artboard, ((DefaultForArtboard) obj).m83unboximpl());
+        public static boolean m76equalsimpl(Artboard artboard, Object obj) {
+            return (obj instanceof DefaultForArtboard) && Intrinsics.areEqual(artboard, ((DefaultForArtboard) obj).m81unboximpl());
         }
 
         /* renamed from: equals-impl0  reason: not valid java name */
-        public static final boolean m79equalsimpl0(Artboard artboard, Artboard artboard2) {
+        public static final boolean m77equalsimpl0(Artboard artboard, Artboard artboard2) {
             return Intrinsics.areEqual(artboard, artboard2);
         }
 
         /* renamed from: hashCode-impl  reason: not valid java name */
-        public static int m80hashCodeimpl(Artboard artboard) {
+        public static int m78hashCodeimpl(Artboard artboard) {
             return artboard.hashCode();
         }
 
         @NotNull
         /* renamed from: namedInstance-impl  reason: not valid java name */
-        public static ViewModelInstanceSource m81namedInstanceimpl(Artboard artboard, @NotNull String instanceName) {
+        public static ViewModelInstanceSource m79namedInstanceimpl(Artboard artboard, @NotNull String instanceName) {
             Intrinsics.checkNotNullParameter(instanceName, "instanceName");
-            return m75boximpl(artboard).namedInstance(instanceName);
+            return m73boximpl(artboard).namedInstance(instanceName);
         }
 
         /* renamed from: toString-impl  reason: not valid java name */
-        public static String m82toStringimpl(Artboard artboard) {
+        public static String m80toStringimpl(Artboard artboard) {
             return "DefaultForArtboard(artboard=" + artboard + ")";
         }
 
@@ -82,7 +82,7 @@ public interface ViewModelSource {
         }
 
         public boolean equals(Object obj) {
-            return m78equalsimpl(this.artboard, obj);
+            return m76equalsimpl(this.artboard, obj);
         }
 
         @NotNull
@@ -91,7 +91,7 @@ public interface ViewModelSource {
         }
 
         public int hashCode() {
-            return m80hashCodeimpl(this.artboard);
+            return m78hashCodeimpl(this.artboard);
         }
 
         @Override // app.rive.ViewModelSource
@@ -101,11 +101,11 @@ public interface ViewModelSource {
         }
 
         public String toString() {
-            return m82toStringimpl(this.artboard);
+            return m80toStringimpl(this.artboard);
         }
 
         /* renamed from: unbox-impl  reason: not valid java name */
-        public final /* synthetic */ Artboard m83unboximpl() {
+        public final /* synthetic */ Artboard m81unboximpl() {
             return this.artboard;
         }
     }
@@ -115,12 +115,12 @@ public interface ViewModelSource {
     public static final class DefaultImpls {
         @NotNull
         public static ViewModelInstanceSource blankInstance(@NotNull ViewModelSource viewModelSource) {
-            return ViewModelInstanceSource.Blank.m60boximpl(ViewModelInstanceSource.Blank.m61constructorimpl(viewModelSource));
+            return ViewModelInstanceSource.Blank.m58boximpl(ViewModelInstanceSource.Blank.m59constructorimpl(viewModelSource));
         }
 
         @NotNull
         public static ViewModelInstanceSource defaultInstance(@NotNull ViewModelSource viewModelSource) {
-            return ViewModelInstanceSource.Default.m67boximpl(ViewModelInstanceSource.Default.m68constructorimpl(viewModelSource));
+            return ViewModelInstanceSource.Default.m65boximpl(ViewModelInstanceSource.Default.m66constructorimpl(viewModelSource));
         }
 
         @NotNull
@@ -142,52 +142,52 @@ public interface ViewModelSource {
 
         @NotNull
         /* renamed from: blankInstance-impl  reason: not valid java name */
-        public static ViewModelInstanceSource m84blankInstanceimpl(String str) {
-            return m85boximpl(str).blankInstance();
+        public static ViewModelInstanceSource m82blankInstanceimpl(String str) {
+            return m83boximpl(str).blankInstance();
         }
 
         /* renamed from: box-impl  reason: not valid java name */
-        public static final /* synthetic */ Named m85boximpl(String str) {
+        public static final /* synthetic */ Named m83boximpl(String str) {
             return new Named(str);
         }
 
         @NotNull
         /* renamed from: constructor-impl  reason: not valid java name */
-        public static String m86constructorimpl(@NotNull String viewModelName) {
+        public static String m84constructorimpl(@NotNull String viewModelName) {
             Intrinsics.checkNotNullParameter(viewModelName, "viewModelName");
             return viewModelName;
         }
 
         @NotNull
         /* renamed from: defaultInstance-impl  reason: not valid java name */
-        public static ViewModelInstanceSource m87defaultInstanceimpl(String str) {
-            return m85boximpl(str).defaultInstance();
+        public static ViewModelInstanceSource m85defaultInstanceimpl(String str) {
+            return m83boximpl(str).defaultInstance();
         }
 
         /* renamed from: equals-impl  reason: not valid java name */
-        public static boolean m88equalsimpl(String str, Object obj) {
-            return (obj instanceof Named) && Intrinsics.areEqual(str, ((Named) obj).m93unboximpl());
+        public static boolean m86equalsimpl(String str, Object obj) {
+            return (obj instanceof Named) && Intrinsics.areEqual(str, ((Named) obj).m91unboximpl());
         }
 
         /* renamed from: equals-impl0  reason: not valid java name */
-        public static final boolean m89equalsimpl0(String str, String str2) {
+        public static final boolean m87equalsimpl0(String str, String str2) {
             return Intrinsics.areEqual(str, str2);
         }
 
         /* renamed from: hashCode-impl  reason: not valid java name */
-        public static int m90hashCodeimpl(String str) {
+        public static int m88hashCodeimpl(String str) {
             return str.hashCode();
         }
 
         @NotNull
         /* renamed from: namedInstance-impl  reason: not valid java name */
-        public static ViewModelInstanceSource m91namedInstanceimpl(String str, @NotNull String instanceName) {
+        public static ViewModelInstanceSource m89namedInstanceimpl(String str, @NotNull String instanceName) {
             Intrinsics.checkNotNullParameter(instanceName, "instanceName");
-            return m85boximpl(str).namedInstance(instanceName);
+            return m83boximpl(str).namedInstance(instanceName);
         }
 
         /* renamed from: toString-impl  reason: not valid java name */
-        public static String m92toStringimpl(String str) {
+        public static String m90toStringimpl(String str) {
             return "Named(viewModelName=" + str + ")";
         }
 
@@ -204,7 +204,7 @@ public interface ViewModelSource {
         }
 
         public boolean equals(Object obj) {
-            return m88equalsimpl(this.viewModelName, obj);
+            return m86equalsimpl(this.viewModelName, obj);
         }
 
         @NotNull
@@ -213,7 +213,7 @@ public interface ViewModelSource {
         }
 
         public int hashCode() {
-            return m90hashCodeimpl(this.viewModelName);
+            return m88hashCodeimpl(this.viewModelName);
         }
 
         @Override // app.rive.ViewModelSource
@@ -223,11 +223,11 @@ public interface ViewModelSource {
         }
 
         public String toString() {
-            return m92toStringimpl(this.viewModelName);
+            return m90toStringimpl(this.viewModelName);
         }
 
         /* renamed from: unbox-impl  reason: not valid java name */
-        public final /* synthetic */ String m93unboximpl() {
+        public final /* synthetic */ String m91unboximpl() {
             return this.viewModelName;
         }
     }

@@ -1,16 +1,15 @@
 package jv;
 
-import android.os.Handler;
-import android.os.Looper;
-import java.util.concurrent.Executor;
+import gv.w;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class a implements Executor {
+public interface a {
+    char a();
 
-    /* renamed from: d  reason: collision with root package name */
-    private final Handler f32406d = new Handler(Looper.getMainLooper());
+    void b(w wVar, w wVar2, int i10);
 
-    @Override // java.util.concurrent.Executor
-    public void execute(Runnable runnable) {
-        this.f32406d.post(runnable);
-    }
+    int c();
+
+    char d();
+
+    int e(b bVar, b bVar2);
 }

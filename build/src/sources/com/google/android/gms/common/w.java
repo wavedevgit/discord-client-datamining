@@ -5,15 +5,15 @@ import java.lang.ref.WeakReference;
 abstract class w extends u {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final WeakReference f14490e = new WeakReference(null);
+    private static final WeakReference f13458e = new WeakReference(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private WeakReference f14491d;
+    private WeakReference f13459d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public w(byte[] bArr) {
         super(bArr);
-        this.f14491d = f14490e;
+        this.f13459d = f13458e;
     }
 
     protected abstract byte[] S0();
@@ -23,10 +23,10 @@ abstract class w extends u {
         byte[] bArr;
         synchronized (this) {
             try {
-                bArr = (byte[]) this.f14491d.get();
+                bArr = (byte[]) this.f13459d.get();
                 if (bArr == null) {
                     bArr = S0();
-                    this.f14491d = new WeakReference(bArr);
+                    this.f13459d = new WeakReference(bArr);
                 }
             } catch (Throwable th2) {
                 throw th2;

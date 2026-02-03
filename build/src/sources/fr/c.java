@@ -1,15 +1,11 @@
 package fr;
 
-import br.o;
+import dr.q;
+import dr.s;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class c {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final o f25532a = o.b("image-destination");
-
-    /* renamed from: b  reason: collision with root package name */
-    public static final o f25533b = o.b("image-replacement-text-is-link");
-
-    /* renamed from: c  reason: collision with root package name */
-    public static final o f25534c = o.b("image-size");
+public class c implements s {
+    @Override // dr.s
+    public Object a(dr.g gVar, q qVar) {
+        return new gr.d(gVar.e());
+    }
 }

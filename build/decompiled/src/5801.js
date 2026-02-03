@@ -1,95 +1,45 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
-    var2 = exports;
-    var8 = dependencyMap;
-    var _closure1_slot0 = var4;
-    var _closure1_slot1 = var8;
-    var0 = ['style'];
-    var _closure1_slot2 = var0;
-    var7 = global;
-    var6 = var7.Object;
-    var5 = var6.defineProperty;
-    var3 = {};
+    var1 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
     var0 = true;
-    var3.value = var0;
+    var2.value = var0;
     var0 = '__esModule';
-    var0 = var5.bind(var6)(var2, var0, var3);
-    var0 = 0;
-    var5 = var8[var0];
-    var3 = metroImportDefault;
-    var0 = undefined;
-    var3 = var3.bind(var0)(var5);
-    var _closure1_slot3 = var3;
-    var6 = 1;
-    var5 = var8[var6];
-    var3 = metroImportAll;
-    var3 = var3.bind(var0)(var5);
-    var3 = 2;
-    var3 = var8[var3];
-    var3 = var4.bind(var0)(var3);
-    var5 = var3.Animated;
-    var _closure1_slot4 = var5;
-    var5 = var3.Platform;
-    var5 = var3.StyleSheet;
-    var3 = 3;
-    var3 = var8[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.jsx;
-    var _closure1_slot5 = var3;
-    var4 = var5.create;
-    var3 = {};
-    var9 = var7.Object;
-    var8 = var9.assign;
-    var7 = {};
-    var7.flex = var6;
-    var6 = {};
-    var10 = 4;
-    var6.elevation = var10;
-    var6 = var8.bind(var9)(var7, var6);
-    var3.container = var6;
-    var3 = var4.bind(var5)(var3);
-    var _closure1_slot6 = var3;
-    var1 = function arg0() {
-        var2 = arg0;
-        var8 = var2.style;
-        var1 = _closure1_slot3;
-        var0 = _closure1_slot2;
-        var3 = undefined;
-        var6 = var1.bind(var3)(var2, var0);
-        var1 = _closure1_slot0;
-        var2 = _closure1_slot1;
-        var0 = 4;
-        var0 = var2[var0];
-        var1 = var1.bind(var3)(var0);
-        var0 = var1.useTheme;
-        var0 = var0.bind(var1)();
-        var10 = var0.colors;
-        var2 = _closure1_slot5;
-        var0 = _closure1_slot4;
-        var1 = var0.View;
-        var0 = global;
-        var5 = var0.Object;
-        var4 = var5.assign;
-        var0 = {};
-        var7 = _closure1_slot6;
-        var9 = var7.container;
-        var7 = new Array(3);
-        var7[0] = var9;
-        var9 = {};
-        var11 = var10.card;
-        var9.backgroundColor = var11;
-        var11 = var10.border;
-        var9.borderBottomColor = var11;
-        var10 = var10.border;
-        var9.shadowColor = var10;
-        var7[1] = var9;
-        var7[2] = var8;
-        var0.style = var7;
-        var0 = var4.bind(var5)(var0, var6);
-        var0 = var2.bind(var3)(var1, var0);
-        return var0;
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = function arg0, arg1() {
+        _fun51245: for (var _fun51245_ip = 0;;) switch (_fun51245_ip) {
+            case 0:
+                var1 = arg0;
+                var0 = arg1;
+                var2 = var1.headerTitle;
+                var3 = 'string';
+                var2 = typeof var2;
+                if (!(var3 !== var2)) {
+                    _fun51245_ip = 41;
+                    continue _fun51245
+                }
+            case 23:
+                var3 = var1.title;
+                var2 = undefined;
+                if (!(var2 !== var3)) {
+                    _fun51245_ip = 39;
+                    continue _fun51245
+                }
+            case 34:
+                var0 = var1.title;
+            case 39:
+                _fun51245_ip = 47;
+                continue _fun51245;
+            case 41:
+                var0 = var1.headerTitle;
+            case 47:
+                return var0;
+        }
     };
-    var2.default = var1;
+    var1.default = var0;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 31, 27, 33, 1470]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

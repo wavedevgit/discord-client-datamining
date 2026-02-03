@@ -50,13 +50,13 @@ public final class Spacer_SpacerComponentStyleJsonAdapter extends h {
         AttributeStyles.SpacerHeightStyle spacerHeightStyle = null;
         AttributeStyles.SpacerWidthStyle spacerWidthStyle = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 spacerHeightStyle = (AttributeStyles.SpacerHeightStyle) this.nullableSpacerHeightStyleAdapter.fromJson(reader);
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 spacerWidthStyle = (AttributeStyles.SpacerWidthStyle) this.nullableSpacerWidthStyleAdapter.fromJson(reader);
             }
         }
@@ -69,9 +69,9 @@ public final class Spacer_SpacerComponentStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (spacerComponentStyle != null) {
             writer.l();
-            writer.t0("height");
+            writer.A0("height");
             this.nullableSpacerHeightStyleAdapter.toJson(writer, spacerComponentStyle.getHeight());
-            writer.t0("width");
+            writer.A0("width");
             this.nullableSpacerWidthStyleAdapter.toJson(writer, spacerComponentStyle.getWidth());
             writer.E();
             return;

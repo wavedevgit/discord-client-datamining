@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.descriptors.ClassConstructorDescriptor;
 public class a implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final DeserializedClassDescriptor f35505d;
+    private final DeserializedClassDescriptor f34895d;
 
     public a(DeserializedClassDescriptor deserializedClassDescriptor) {
-        this.f35505d = deserializedClassDescriptor;
+        this.f34895d = deserializedClassDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         ClassConstructorDescriptor s10;
-        s10 = DeserializedClassDescriptor.s(this.f35505d);
+        s10 = DeserializedClassDescriptor.s(this.f34895d);
         return s10;
     }
 }

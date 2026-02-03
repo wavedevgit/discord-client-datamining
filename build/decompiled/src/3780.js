@@ -1,173 +1,98 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var8 = require;
-    var2 = exports;
-    var9 = dependencyMap;
-    var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var1 = {};
-    var0 = true;
-    var1.value = var0;
-    var0 = '__esModule';
-    var0 = var3.bind(var4)(var2, var0, var1);
-    var5 = {};
-    var0 = {
-        'name': 'RollInLeft',
-        'style': null,
-        'duration': 0.3
-    };
-    var1 = {};
+    var1 = exports;
+    var2 = global;
+    var5 = var2.Object;
+    var4 = var5.defineProperty;
     var3 = {};
-    var4 = new Array(1);
-    var6 = {
-        'translateX': '-100vw',
-        'rotate': '-180deg'
+    var2 = true;
+    var3.value = var2;
+    var2 = '__esModule';
+    var2 = var4.bind(var5)(var1, var2, var3);
+    var2 = {};
+    var3 = [0, 0, 1, 1];
+    var2.linear = var3;
+    var3 = [0.42, 0, 1, 1];
+    var2.ease = var3;
+    var3 = [0.11, 0, 0.5, 0];
+    var2.quad = var3;
+    var3 = [0.32, 0, 0.67, 0];
+    var2.cubic = var3;
+    var3 = [0.12, 0, 0.39, 0];
+    var2.sin = var3;
+    var3 = [0.55, 0, 1, 0.45];
+    var2.circle = var3;
+    var3 = [0.7, 0, 0.84, 0];
+    var2.exp = var3;
+    var _closure1_slot0 = var2;
+    var1.WebEasings = var2;
+    var2 = function arg0() {
+        var1 = _closure1_slot0;
+        var0 = arg0;
+        var1 = var1[var0];
+        var0 = var1.toString;
+        var3 = var0.bind(var1)();
+        var0 = global;
+        var0 = var0.HermesInternal;
+        var2 = var0.concat;
+        var1 = 'cubic-bezier(';
+        var0 = ')';
+        var0 = var2.bind(var1)(var3, var0);
+        return var0;
     };
-    var4[0] = var6;
-    var3.transform = var4;
-    var1[0] = var3;
-    var3 = {};
-    var4 = new Array(1);
-    var6 = {
-        'translateX': '0vw',
-        'rotate': '0deg'
+    var1.getEasingByName = var2;
+    var0 = function arg0() {
+        _fun33828: for (var _fun33828_ip = 0;;) switch (_fun33828_ip) {
+            case 0:
+                var1 = arg0;
+                var0 = 'factory';
+                var2 = var0 in var1;
+                var0 = null;
+                if (var2) {
+                    _fun33828_ip = 18;
+                    continue _fun33828
+                }
+            case 16:
+                return var0;
+            case 18:
+                var1 = var1.factory;
+                var2 = '__closure';
+                var2 = var2 in var1;
+                if (var2) {
+                    _fun33828_ip = 37;
+                    continue _fun33828
+                }
+            case 35:
+                return var0;
+            case 37:
+                var1 = var1.__closure;
+                var2 = 'Bezier';
+                var2 = var2 in var1;
+                var0 = null;
+                if (!var2) {
+                    _fun33828_ip = 121;
+                    continue _fun33828
+                }
+            case 55:
+                var16 = var1.x1;
+                var14 = var1.y1;
+                var12 = var1.x2;
+                var10 = var1.y2;
+                var1 = global;
+                var1 = var1.HermesInternal;
+                var4 = var1.concat;
+                var17 = 'cubic-bezier(';
+                var2 = ', ';
+                var9 = ')';
+                var15 = var2;
+                var13 = var2;
+                var11 = var2;
+                var0 = var17[var4](var16, var15, var14, var13, var12, var11, var10, var9, var8);
+            case 121:
+                return var0;
+        }
     };
-    var4[0] = var6;
-    var3.transform = var4;
-    var1[100] = var3;
-    var0.style = var1;
-    var5.RollInLeft = var0;
-    var0 = {
-        'name': 'RollInRight',
-        'style': null,
-        'duration': 0.3
-    };
-    var1 = {};
-    var3 = {};
-    var4 = new Array(1);
-    var6 = {
-        'translateX': '100vw',
-        'rotate': '180deg'
-    };
-    var4[0] = var6;
-    var3.transform = var4;
-    var1[0] = var3;
-    var3 = {};
-    var4 = new Array(1);
-    var6 = {
-        'translateX': '0vw',
-        'rotate': '0deg'
-    };
-    var4[0] = var6;
-    var3.transform = var4;
-    var1[100] = var3;
-    var0.style = var1;
-    var5.RollInRight = var0;
-    var4 = {};
-    var0 = {
-        'name': 'RollOutLeft',
-        'style': null,
-        'duration': 0.3
-    };
-    var1 = {};
-    var3 = {};
-    var6 = new Array(1);
-    var7 = {
-        'translateX': '0vw',
-        'rotate': '0deg'
-    };
-    var6[0] = var7;
-    var3.transform = var6;
-    var1[0] = var3;
-    var3 = {};
-    var6 = new Array(1);
-    var7 = {
-        'translateX': '-100vw',
-        'rotate': '-180deg'
-    };
-    var6[0] = var7;
-    var3.transform = var6;
-    var1[100] = var3;
-    var0.style = var1;
-    var4.RollOutLeft = var0;
-    var0 = {
-        'name': 'RollOutRight',
-        'style': null,
-        'duration': 0.3
-    };
-    var1 = {};
-    var3 = {};
-    var6 = new Array(1);
-    var7 = {
-        'translateX': '0vw',
-        'rotate': '0deg'
-    };
-    var6[0] = var7;
-    var3.transform = var6;
-    var1[0] = var3;
-    var3 = {};
-    var6 = new Array(1);
-    var7 = {
-        'translateX': '100vw',
-        'rotate': '180deg'
-    };
-    var6[0] = var7;
-    var3.transform = var6;
-    var1[100] = var3;
-    var0.style = var1;
-    var4.RollOutRight = var0;
-    var3 = {};
-    var1 = {};
-    var7 = 0;
-    var6 = var9[var7];
+    var1.maybeGetBezierEasing = var0;
     var0 = undefined;
-    var11 = var8.bind(var0)(var6);
-    var10 = var11.convertAnimationObjectToKeyframes;
-    var6 = var5.RollInLeft;
-    var6 = var10.bind(var11)(var6);
-    var1.style = var6;
-    var6 = var5.RollInLeft;
-    var6 = var6.duration;
-    var1.duration = var6;
-    var3.RollInLeft = var1;
-    var1 = {};
-    var6 = var9[var7];
-    var11 = var8.bind(var0)(var6);
-    var10 = var11.convertAnimationObjectToKeyframes;
-    var6 = var5.RollInRight;
-    var6 = var10.bind(var11)(var6);
-    var1.style = var6;
-    var6 = var5.RollInRight;
-    var6 = var6.duration;
-    var1.duration = var6;
-    var3.RollInRight = var1;
-    var1 = {};
-    var6 = {};
-    var10 = var9[var7];
-    var12 = var8.bind(var0)(var10);
-    var11 = var12.convertAnimationObjectToKeyframes;
-    var10 = var4.RollOutLeft;
-    var10 = var11.bind(var12)(var10);
-    var6.style = var10;
-    var10 = var4.RollOutLeft;
-    var10 = var10.duration;
-    var6.duration = var10;
-    var1.RollOutLeft = var6;
-    var6 = {};
-    var7 = var9[var7];
-    var9 = var8.bind(var0)(var7);
-    var8 = var9.convertAnimationObjectToKeyframes;
-    var7 = var4.RollOutRight;
-    var7 = var8.bind(var9)(var7);
-    var6.style = var7;
-    var7 = var4.RollOutRight;
-    var7 = var7.duration;
-    var6.duration = var7;
-    var1.RollOutRight = var6;
-    var2.RollInData = var5;
-    var2.RollOutData = var4;
-    var2.RollIn = var3;
-    var2.RollOut = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3770]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

@@ -65,7 +65,7 @@ public final class ActivityRichPresenceInviteEmbedMessageAccessory extends Messa
         }
         if (obj instanceof ActivityRichPresenceInviteEmbedMessageAccessory) {
             ActivityRichPresenceInviteEmbedMessageAccessory activityRichPresenceInviteEmbedMessageAccessory = (ActivityRichPresenceInviteEmbedMessageAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, activityRichPresenceInviteEmbedMessageAccessory.messageId) && Intrinsics.areEqual(this.margins, activityRichPresenceInviteEmbedMessageAccessory.margins) && Intrinsics.areEqual(this.activityRichPresenceInviteEmbed, activityRichPresenceInviteEmbedMessageAccessory.activityRichPresenceInviteEmbed);
+            return MessageId.m1089equalsimpl0(this.messageId, activityRichPresenceInviteEmbedMessageAccessory.messageId) && Intrinsics.areEqual(this.margins, activityRichPresenceInviteEmbedMessageAccessory.margins) && Intrinsics.areEqual(this.activityRichPresenceInviteEmbed, activityRichPresenceInviteEmbedMessageAccessory.activityRichPresenceInviteEmbed);
         }
         return false;
     }
@@ -88,15 +88,15 @@ public final class ActivityRichPresenceInviteEmbedMessageAccessory extends Messa
     }
 
     public int hashCode() {
-        return (((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + this.activityRichPresenceInviteEmbed.hashCode();
+        return (((MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + this.activityRichPresenceInviteEmbed.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         MessageMargins messageMargins = this.margins;
         ActivityRichPresenceInviteEmbed activityRichPresenceInviteEmbed = this.activityRichPresenceInviteEmbed;
-        return "ActivityRichPresenceInviteEmbedMessageAccessory(messageId=" + m1093toStringimpl + ", margins=" + messageMargins + ", activityRichPresenceInviteEmbed=" + activityRichPresenceInviteEmbed + ")";
+        return "ActivityRichPresenceInviteEmbedMessageAccessory(messageId=" + m1092toStringimpl + ", margins=" + messageMargins + ", activityRichPresenceInviteEmbed=" + activityRichPresenceInviteEmbed + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

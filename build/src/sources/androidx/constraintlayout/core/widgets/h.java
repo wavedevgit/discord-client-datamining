@@ -17,7 +17,7 @@ public abstract class h extends k1.b {
     private int W0 = 0;
     private int X0 = 0;
     protected b.a Y0 = new b.a();
-    b.InterfaceC0479b Z0 = null;
+    b.InterfaceC0463b Z0 = null;
 
     public int A1() {
         return this.T0;
@@ -39,27 +39,27 @@ public abstract class h extends k1.b {
             this.Z0 = ((ConstraintWidgetContainer) K()).K1();
         }
         b.a aVar = this.Y0;
-        aVar.f36843a = bVar;
-        aVar.f36844b = bVar2;
-        aVar.f36845c = i10;
-        aVar.f36846d = i11;
+        aVar.f36312a = bVar;
+        aVar.f36313b = bVar2;
+        aVar.f36314c = i10;
+        aVar.f36315d = i11;
         this.Z0.b(constraintWidget, aVar);
-        constraintWidget.l1(this.Y0.f36847e);
-        constraintWidget.M0(this.Y0.f36848f);
-        constraintWidget.L0(this.Y0.f36850h);
-        constraintWidget.B0(this.Y0.f36849g);
+        constraintWidget.l1(this.Y0.f36316e);
+        constraintWidget.M0(this.Y0.f36317f);
+        constraintWidget.L0(this.Y0.f36319h);
+        constraintWidget.B0(this.Y0.f36318g);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public boolean F1() {
-        b.InterfaceC0479b interfaceC0479b;
-        ConstraintWidget constraintWidget = this.f2286a0;
+        b.InterfaceC0463b interfaceC0463b;
+        ConstraintWidget constraintWidget = this.f2255a0;
         if (constraintWidget != null) {
-            interfaceC0479b = ((ConstraintWidgetContainer) constraintWidget).K1();
+            interfaceC0463b = ((ConstraintWidgetContainer) constraintWidget).K1();
         } else {
-            interfaceC0479b = null;
+            interfaceC0463b = null;
         }
-        if (interfaceC0479b == null) {
+        if (interfaceC0463b == null) {
             return false;
         }
         for (int i10 = 0; i10 < this.M0; i10++) {
@@ -68,7 +68,7 @@ public abstract class h extends k1.b {
                 ConstraintWidget.b u10 = constraintWidget2.u(0);
                 ConstraintWidget.b u11 = constraintWidget2.u(1);
                 ConstraintWidget.b bVar = ConstraintWidget.b.MATCH_CONSTRAINT;
-                if (u10 != bVar || constraintWidget2.f2329w == 1 || u11 != bVar || constraintWidget2.f2331x == 1) {
+                if (u10 != bVar || constraintWidget2.f2298w == 1 || u11 != bVar || constraintWidget2.f2300x == 1) {
                     if (u10 == bVar) {
                         u10 = ConstraintWidget.b.WRAP_CONTENT;
                     }
@@ -76,14 +76,14 @@ public abstract class h extends k1.b {
                         u11 = ConstraintWidget.b.WRAP_CONTENT;
                     }
                     b.a aVar = this.Y0;
-                    aVar.f36843a = u10;
-                    aVar.f36844b = u11;
-                    aVar.f36845c = constraintWidget2.W();
-                    this.Y0.f36846d = constraintWidget2.x();
-                    interfaceC0479b.b(constraintWidget2, this.Y0);
-                    constraintWidget2.l1(this.Y0.f36847e);
-                    constraintWidget2.M0(this.Y0.f36848f);
-                    constraintWidget2.B0(this.Y0.f36849g);
+                    aVar.f36312a = u10;
+                    aVar.f36313b = u11;
+                    aVar.f36314c = constraintWidget2.W();
+                    this.Y0.f36315d = constraintWidget2.x();
+                    interfaceC0463b.b(constraintWidget2, this.Y0);
+                    constraintWidget2.l1(this.Y0.f36316e);
+                    constraintWidget2.M0(this.Y0.f36317f);
+                    constraintWidget2.B0(this.Y0.f36318g);
                 }
             }
         }

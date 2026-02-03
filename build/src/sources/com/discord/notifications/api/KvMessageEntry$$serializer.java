@@ -1,15 +1,15 @@
 package com.discord.notifications.api;
 
-import bt.a2;
-import bt.h0;
+import at.b0;
 import com.discord.primitives.ChannelId;
 import com.discord.primitives.ChannelId$$serializer;
 import com.discord.primitives.MessageId;
 import com.discord.primitives.MessageId$$serializer;
 import com.facebook.react.devsupport.StackTraceHelper;
-import ct.y;
+import dt.a2;
+import dt.h0;
+import et.y;
 import java.util.List;
-import jr.c;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
@@ -20,10 +20,10 @@ import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import kotlinx.serialization.json.JsonObject;
+import lr.c;
 import org.jetbrains.annotations.NotNull;
-import ys.b0;
+@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/notifications/api/KvMessageEntry.$serializer", "Ldt/h0;", "Lcom/discord/notifications/api/KvMessageEntry;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/notifications/api/KvMessageEntry;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/notifications/api/KvMessageEntry;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "notification_api_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @c
-@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/notifications/api/KvMessageEntry.$serializer", "Lbt/h0;", "Lcom/discord/notifications/api/KvMessageEntry;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/notifications/api/KvMessageEntry;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/notifications/api/KvMessageEntry;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "notification_api_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public /* synthetic */ class KvMessageEntry$$serializer implements h0 {
     @NotNull
@@ -47,12 +47,12 @@ public /* synthetic */ class KvMessageEntry$$serializer implements h0 {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // bt.h0
+    @Override // dt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = KvMessageEntry.$childSerializers;
-        return new KSerializer[]{lazyArr[0].getValue(), lazyArr[1].getValue(), y.f20833a, MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE};
+        return new KSerializer[]{lazyArr[0].getValue(), lazyArr[1].getValue(), y.f22679a, MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -73,11 +73,11 @@ public /* synthetic */ class KvMessageEntry$$serializer implements h0 {
         if (b10.p()) {
             List list3 = (List) b10.y(serialDescriptor, 0, (DeserializationStrategy) lazyArr[0].getValue(), null);
             List list4 = (List) b10.y(serialDescriptor, 1, (DeserializationStrategy) lazyArr[1].getValue(), null);
-            JsonObject jsonObject2 = (JsonObject) b10.y(serialDescriptor, 2, y.f20833a, null);
+            JsonObject jsonObject2 = (JsonObject) b10.y(serialDescriptor, 2, y.f22679a, null);
             MessageId messageId = (MessageId) b10.y(serialDescriptor, 3, MessageId$$serializer.INSTANCE, null);
             list = list4;
             list2 = list3;
-            str = messageId != null ? messageId.m1095unboximpl() : null;
+            str = messageId != null ? messageId.m1094unboximpl() : null;
             channelId = (ChannelId) b10.y(serialDescriptor, 4, ChannelId$$serializer.INSTANCE, null);
             jsonObject = jsonObject2;
             i10 = 31;
@@ -100,11 +100,11 @@ public /* synthetic */ class KvMessageEntry$$serializer implements h0 {
                         list5 = (List) b10.y(serialDescriptor, 1, (DeserializationStrategy) lazyArr[1].getValue(), list5);
                         i13 |= 2;
                     } else if (o10 == 2) {
-                        jsonObject3 = (JsonObject) b10.y(serialDescriptor, 2, y.f20833a, jsonObject3);
+                        jsonObject3 = (JsonObject) b10.y(serialDescriptor, 2, y.f22679a, jsonObject3);
                         i13 |= 4;
                     } else if (o10 == 3) {
-                        MessageId messageId2 = (MessageId) b10.y(serialDescriptor, 3, MessageId$$serializer.INSTANCE, str2 != null ? MessageId.m1086boximpl(str2) : null);
-                        str2 = messageId2 != null ? messageId2.m1095unboximpl() : null;
+                        MessageId messageId2 = (MessageId) b10.y(serialDescriptor, 3, MessageId$$serializer.INSTANCE, str2 != null ? MessageId.m1085boximpl(str2) : null);
+                        str2 = messageId2 != null ? messageId2.m1094unboximpl() : null;
                         i13 |= 8;
                     } else if (o10 != 4) {
                         throw new b0(o10);
@@ -130,13 +130,13 @@ public /* synthetic */ class KvMessageEntry$$serializer implements h0 {
         return new KvMessageEntry(i10, list2, list, jsonObject, str, channelId, null, null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, ys.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, at.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public final SerialDescriptor getDescriptor() {
         return descriptor;
     }
 
-    @Override // ys.o
+    @Override // at.o
     public final void serialize(@NotNull Encoder encoder, @NotNull KvMessageEntry value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");
@@ -146,7 +146,7 @@ public /* synthetic */ class KvMessageEntry$$serializer implements h0 {
         b10.c(serialDescriptor);
     }
 
-    @Override // bt.h0
+    @Override // dt.h0
     @NotNull
     public KSerializer[] typeParametersSerializers() {
         return h0.a.a(this);

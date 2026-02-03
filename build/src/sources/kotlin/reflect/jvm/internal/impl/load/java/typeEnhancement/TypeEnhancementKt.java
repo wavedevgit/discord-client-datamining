@@ -17,10 +17,10 @@ import org.jetbrains.annotations.NotNull;
 public final class TypeEnhancementKt {
 
     /* renamed from: a */
-    private static final Annotations f34158a;
+    private static final Annotations f33548a;
 
     /* renamed from: b */
-    private static final e f34159b;
+    private static final e f33549b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public /* synthetic */ class WhenMappings {
@@ -43,10 +43,10 @@ public final class TypeEnhancementKt {
     static {
         FqName ENHANCED_NULLABILITY_ANNOTATION = JvmAnnotationNames.ENHANCED_NULLABILITY_ANNOTATION;
         Intrinsics.checkNotNullExpressionValue(ENHANCED_NULLABILITY_ANNOTATION, "ENHANCED_NULLABILITY_ANNOTATION");
-        f34158a = new e(ENHANCED_NULLABILITY_ANNOTATION);
+        f33548a = new e(ENHANCED_NULLABILITY_ANNOTATION);
         FqName ENHANCED_MUTABILITY_ANNOTATION = JvmAnnotationNames.ENHANCED_MUTABILITY_ANNOTATION;
         Intrinsics.checkNotNullExpressionValue(ENHANCED_MUTABILITY_ANNOTATION, "ENHANCED_MUTABILITY_ANNOTATION");
-        f34159b = new e(ENHANCED_MUTABILITY_ANNOTATION);
+        f33549b = new e(ENHANCED_MUTABILITY_ANNOTATION);
     }
 
     public static final Annotations a(List list) {
@@ -69,7 +69,7 @@ public final class TypeEnhancementKt {
     }
 
     public static final /* synthetic */ e access$getENHANCED_MUTABILITY_ANNOTATIONS$p() {
-        return f34159b;
+        return f33549b;
     }
 
     public static final /* synthetic */ Boolean access$getEnhancedNullability(JavaTypeQualifiers javaTypeQualifiers, TypeComponentPosition typeComponentPosition) {
@@ -118,7 +118,7 @@ public final class TypeEnhancementKt {
 
     @NotNull
     public static final Annotations getENHANCED_NULLABILITY_ANNOTATIONS() {
-        return f34158a;
+        return f33548a;
     }
 
     public static final boolean hasEnhancedNullability(@NotNull KotlinType kotlinType) {

@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/game_update/native/GameUpdateServerInvite.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun118006: for (var _fun118006_ip = 0;;) switch (_fun118006_ip) {
+        _fun118096: for (var _fun118096_ip = 0;;) switch (_fun118096_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.invite;
@@ -164,16 +164,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 == var6;
                 var1 = undefined;
                 if (var2) {
-                    _fun118006_ip = 82;
-                    continue _fun118006
+                    _fun118096_ip = 82;
+                    continue _fun118096
                 }
             case 63:
                 var2 = var6.guild;
                 var7 = var0 == var2;
                 var1 = undefined;
                 if (var7) {
-                    _fun118006_ip = 82;
-                    continue _fun118006
+                    _fun118096_ip = 82;
+                    continue _fun118096
                 }
             case 77:
                 var1 = var2.icon;
@@ -181,8 +181,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0 != var1;
                 var9 = null;
                 if (!var1) {
-                    _fun118006_ip = 166;
-                    continue _fun118006
+                    _fun118096_ip = 166;
+                    continue _fun118096
                 }
             case 91:
                 var2 = _closure1_slot1;
@@ -231,8 +231,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = _closure1_slot0;
                 var7 = _closure1_slot2;
                 if (var1) {
-                    _fun118006_ip = 320;
-                    continue _fun118006
+                    _fun118096_ip = 320;
+                    continue _fun118096
                 }
             case 284:
                 var1 = 11;
@@ -241,8 +241,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var9.darkenColor;
                 var1 = 0.8;
                 var1 = var2.bind(var9)(var8, var1);
-                _fun118006_ip = 354;
-                continue _fun118006;
+                _fun118096_ip = 354;
+                continue _fun118096;
             case 320:
                 var2 = 10;
                 var2 = var7[var2];
@@ -263,8 +263,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.onJoinPress = var5;
                 var1 = var2.bind(var3)(var1);
                 if (!(var0 != var1)) {
-                    _fun118006_ip = 1464;
-                    continue _fun118006
+                    _fun118096_ip = 1464;
+                    continue _fun118096
                 }
             case 408:
                 var19 = var1.guild;
@@ -284,8 +284,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var26.splashContainer;
                 var5.style = var6;
                 if (!(var0 != var11)) {
-                    _fun118006_ip = 536;
-                    continue _fun118006
+                    _fun118096_ip = 536;
+                    continue _fun118096
                 }
             case 490:
                 var8 = _closure1_slot5;
@@ -299,8 +299,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = 'cover';
                 var6.resizeMode = var9;
                 var7 = var8.bind(var4)(var7, var6);
-                _fun118006_ip = 614;
-                continue _fun118006;
+                _fun118096_ip = 614;
+                continue _fun118096;
             case 536:
                 var9 = _closure1_slot5;
                 var8 = _closure1_slot1;
@@ -374,8 +374,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = new Array(2);
                 var11[0] = var16;
                 if (!var12) {
-                    _fun118006_ip = 886;
-                    continue _fun118006
+                    _fun118096_ip = 886;
+                    continue _fun118096
                 }
             case 822:
                 var18 = _closure1_slot5;
@@ -475,8 +475,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var19.description;
                 var10 = var0 != var10;
                 if (!var10) {
-                    _fun118006_ip = 1301;
-                    continue _fun118006
+                    _fun118096_ip = 1301;
+                    continue _fun118096
                 }
             case 1230:
                 var16 = _closure1_slot5;
@@ -520,14 +520,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var18.bind(var4)(var15);
                 var15 = var15.t;
                 if (var14) {
-                    _fun118006_ip = 1409;
-                    continue _fun118006
+                    _fun118096_ip = 1409;
+                    continue _fun118096
                 }
             case 1396:
                 var14 = var15.XpeFYr;
                 var14 = var16.bind(var17)(var14);
-                _fun118006_ip = 1420;
-                continue _fun118006;
+                _fun118096_ip = 1420;
+                continue _fun118096;
             case 1409:
                 var15 = var15.cEnaWx;
                 var14 = var16.bind(var17)(var15);
@@ -548,4 +548,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.GameUpdateServerInvite = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3237, 1417, 3142, 6832, 3148, 3199, 3199, 15033, 4089, 7388, 3932, 7390, 4077, 4075, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3246, 1417, 3151, 6837, 3157, 3208, 3208, 15048, 4098, 7393, 3941, 7395, 4086, 4084, 1234, 2]);

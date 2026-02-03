@@ -7,10 +7,10 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class n3 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private io.sentry.protocol.x f29813d;
+    private io.sentry.protocol.x f30174d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Map f29814e;
+    private Map f30175e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -21,17 +21,17 @@ public final class n3 implements w1 {
             n3 n3Var = new n3();
             ConcurrentHashMap concurrentHashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String m02 = e3Var.m0();
-                m02.getClass();
-                if (!m02.equals("profiler_id")) {
+                String l02 = e3Var.l0();
+                l02.getClass();
+                if (!l02.equals("profiler_id")) {
                     if (concurrentHashMap == null) {
                         concurrentHashMap = new ConcurrentHashMap();
                     }
-                    e3Var.v1(iLogger, concurrentHashMap, m02);
+                    e3Var.v1(iLogger, concurrentHashMap, l02);
                 } else {
-                    io.sentry.protocol.x xVar = (io.sentry.protocol.x) e3Var.H0(iLogger, new x.a());
+                    io.sentry.protocol.x xVar = (io.sentry.protocol.x) e3Var.G0(iLogger, new x.a());
                     if (xVar != null) {
-                        n3Var.f29813d = xVar;
+                        n3Var.f30174d = xVar;
                     }
                 }
             }
@@ -42,11 +42,11 @@ public final class n3 implements w1 {
     }
 
     public n3() {
-        this(io.sentry.protocol.x.f30052e);
+        this(io.sentry.protocol.x.f30413e);
     }
 
     public void b(Map map) {
-        this.f29814e = map;
+        this.f30175e = map;
     }
 
     public boolean equals(Object obj) {
@@ -56,35 +56,35 @@ public final class n3 implements w1 {
         if (!(obj instanceof n3)) {
             return false;
         }
-        return this.f29813d.equals(((n3) obj).f29813d);
+        return this.f30174d.equals(((n3) obj).f30174d);
     }
 
     public int hashCode() {
-        return io.sentry.util.y.b(this.f29813d);
+        return io.sentry.util.y.b(this.f30174d);
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        f3Var.e("profiler_id").j(iLogger, this.f29813d);
-        Map map = this.f29814e;
+        f3Var.e("profiler_id").j(iLogger, this.f30174d);
+        Map map = this.f30175e;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f29814e.get(str));
+                f3Var.e(str).j(iLogger, this.f30175e.get(str));
             }
         }
         f3Var.y();
     }
 
     public n3(io.sentry.protocol.x xVar) {
-        this.f29813d = xVar;
+        this.f30174d = xVar;
     }
 
     public n3(n3 n3Var) {
-        this.f29813d = n3Var.f29813d;
-        Map b10 = io.sentry.util.c.b(n3Var.f29814e);
+        this.f30174d = n3Var.f30174d;
+        Map b10 = io.sentry.util.c.b(n3Var.f30175e);
         if (b10 != null) {
-            this.f29814e = b10;
+            this.f30175e = b10;
         }
     }
 }

@@ -173,7 +173,7 @@ public class EglRenderer implements VideoSink {
         synchronized (eglRenderer.handlerLock) {
             eglRenderer.renderThreadHandler = null;
         }
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -211,7 +211,7 @@ public class EglRenderer implements VideoSink {
                     String averageTimeAsString2 = companion.averageTimeAsString(this.renderSwapBufferTimeNs, this.framesRendered);
                     logD("[logStatistics] Duration: " + millis + " ms. Frames received: " + i10 + ". Dropped: " + i11 + ". Rendered: " + i12 + ". Render fps: " + format + ". Average render time: " + averageTimeAsString + ". Average swapBuffer time: " + averageTimeAsString2 + ".");
                     resetStatistics(nanoTime);
-                    Unit unit = Unit.f33074a;
+                    Unit unit = Unit.f32464a;
                 }
             } finally {
             }
@@ -228,7 +228,7 @@ public class EglRenderer implements VideoSink {
                     handler.removeCallbacks(eglRenderer.logStatisticsTask());
                     handler.postDelayed(eglRenderer.logStatisticsTask(), LOG_INTERVAL_MS);
                 }
-                Unit unit = Unit.f33074a;
+                Unit unit = Unit.f32464a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -254,7 +254,7 @@ public class EglRenderer implements VideoSink {
         Intrinsics.checkNotNullExpressionValue(lock, "lock");
         synchronized (lock) {
             GLES20.glUseProgram(0);
-            Unit unit = Unit.f33074a;
+            Unit unit = Unit.f32464a;
         }
         eglRenderer.drawer.release();
         eglRenderer.frameDrawer.release();
@@ -357,7 +357,7 @@ public class EglRenderer implements VideoSink {
                                     this.framesRendered++;
                                     this.renderTimeNs += nanoTime3 - nanoTime;
                                     this.renderSwapBufferTimeNs += nanoTime3 - nanoTime2;
-                                    Unit unit = Unit.f33074a;
+                                    Unit unit = Unit.f32464a;
                                 }
                             } catch (GlUtil.GlOutOfMemoryException e10) {
                                 logE("Error while drawing frame", e10);
@@ -390,7 +390,7 @@ public class EglRenderer implements VideoSink {
             this.framesRendered = 0;
             this.renderTimeNs = 0L;
             this.renderSwapBufferTimeNs = 0L;
-            Unit unit = Unit.f33074a;
+            Unit unit = Unit.f32464a;
         }
     }
 
@@ -525,7 +525,7 @@ public class EglRenderer implements VideoSink {
                 }
             });
             this.renderThreadHandler = null;
-            Unit unit = Unit.f33074a;
+            Unit unit = Unit.f32464a;
             ThreadUtils.awaitUninterruptibly(countDownLatch);
             synchronized (this.frameLock) {
                 try {
@@ -581,7 +581,7 @@ public class EglRenderer implements VideoSink {
                 if (nanos != j10) {
                     this.nextFrameTimeNs = System.nanoTime();
                 }
-                Unit unit = Unit.f33074a;
+                Unit unit = Unit.f32464a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -597,7 +597,7 @@ public class EglRenderer implements VideoSink {
                 } else {
                     this.layoutAspectRatio = 0.0f;
                 }
-                Unit unit = Unit.f33074a;
+                Unit unit = Unit.f32464a;
             } catch (Throwable th2) {
                 throw th2;
             }

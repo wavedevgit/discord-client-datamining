@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/InstagramNeutralIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun89784: for (var _fun89784_ip = 0;;) switch (_fun89784_ip) {
+        _fun89876: for (var _fun89876_ip = 0;;) switch (_fun89876_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun89784_ip = 53;
-                    continue _fun89784
+                    _fun89876_ip = 53;
+                    continue _fun89876
                 }
             case 19:
                 var1 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.InstagramNeutralIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3141, 11667, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3150, 11680, 2]);

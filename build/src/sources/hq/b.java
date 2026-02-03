@@ -1,88 +1,59 @@
 package hq;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import java.util.Date;
+import android.content.Context;
+import android.view.View;
+import android.view.ViewGroup;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import aq.m5;
+import aq.r4;
+import com.withpersona.sdk2.inquiry.network.dto.ui.components.RemoteImage;
+import com.withpersona.sdk2.inquiry.steps.ui.components.f;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
+import wp.s;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements Parcelable {
-    @NotNull
-    public static final Parcelable.Creator<b> CREATOR = new a();
-
-    /* renamed from: d  reason: collision with root package name */
-    private final Date f27845d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final Date f27846e;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a implements Parcelable.Creator {
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: a */
-        public final b createFromParcel(Parcel parcel) {
-            Intrinsics.checkNotNullParameter(parcel, "parcel");
-            return new b((Date) parcel.readSerializable(), (Date) parcel.readSerializable());
+public abstract class b {
+    public static final View b(RemoteImage remoteImage, ConstraintLayout container, boolean z10) {
+        Intrinsics.checkNotNullParameter(remoteImage, "<this>");
+        Intrinsics.checkNotNullParameter(container, "container");
+        Context context = container.getContext();
+        Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
+        final m5 m5Var = new m5(context);
+        View m10 = r4.m(f.k(remoteImage), m5Var, remoteImage);
+        container.addView(m10);
+        ViewGroup.LayoutParams layoutParams = m10.getLayoutParams();
+        if (layoutParams != null) {
+            ConstraintLayout.LayoutParams layoutParams2 = (ConstraintLayout.LayoutParams) layoutParams;
+            layoutParams2.f2435i = 0;
+            layoutParams2.f2457t = 0;
+            layoutParams2.f2461v = 0;
+            if (z10) {
+                layoutParams2.f2441l = 0;
+            }
+            m10.setLayoutParams(layoutParams2);
+            s.b(container, new Function0() { // from class: hq.a
+                @Override // kotlin.jvm.functions.Function0
+                public final Object invoke() {
+                    Unit d10;
+                    d10 = b.d(m5.this);
+                    return d10;
+                }
+            });
+            return m10;
         }
-
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: b */
-        public final b[] newArray(int i10) {
-            return new b[i10];
-        }
+        throw new NullPointerException("null cannot be cast to non-null type androidx.constraintlayout.widget.ConstraintLayout.LayoutParams");
     }
 
-    public b(Date date, Date date2) {
-        this.f27845d = date;
-        this.f27846e = date2;
+    public static /* synthetic */ View c(RemoteImage remoteImage, ConstraintLayout constraintLayout, boolean z10, int i10, Object obj) {
+        if ((i10 & 2) != 0) {
+            z10 = false;
+        }
+        return b(remoteImage, constraintLayout, z10);
     }
 
-    @Override // android.os.Parcelable
-    public final int describeContents() {
-        return 0;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof b)) {
-            return false;
-        }
-        b bVar = (b) obj;
-        if (Intrinsics.areEqual(this.f27845d, bVar.f27845d) && Intrinsics.areEqual(this.f27846e, bVar.f27846e)) {
-            return true;
-        }
-        return false;
-    }
-
-    public int hashCode() {
-        int hashCode;
-        Date date = this.f27845d;
-        int i10 = 0;
-        if (date == null) {
-            hashCode = 0;
-        } else {
-            hashCode = date.hashCode();
-        }
-        int i11 = hashCode * 31;
-        Date date2 = this.f27846e;
-        if (date2 != null) {
-            i10 = date2.hashCode();
-        }
-        return i11 + i10;
-    }
-
-    public String toString() {
-        Date date = this.f27845d;
-        Date date2 = this.f27846e;
-        return "CollectedGovernmentIdDetails(dateOfBirth=" + date + ", expirationDate=" + date2 + ")";
-    }
-
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel dest, int i10) {
-        Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeSerializable(this.f27845d);
-        dest.writeSerializable(this.f27846e);
+    public static final Unit d(m5 m5Var) {
+        m5Var.c();
+        return Unit.f32464a;
     }
 }

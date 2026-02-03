@@ -32,14 +32,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var3;
     var3 = var7.forwardRef;
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun37401: for (var _fun37401_ip = 0;;) switch (_fun37401_ip) {
+        _fun37488: for (var _fun37488_ip = 0;;) switch (_fun37488_ip) {
             case 0:
                 var2 = arg0;
                 var9 = var2.accessibilityViewIsModal;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun37401_ip = 17;
-                    continue _fun37401
+                    _fun37488_ip = 17;
+                    continue _fun37488
                 }
             case 15:
                 var9 = false;
@@ -62,13 +62,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var1;
                 var4 = copyDataProperties(var13, var12, var11);
                 if (!var9) {
-                    _fun37401_ip = 79;
-                    continue _fun37401
+                    _fun37488_ip = 79;
+                    continue _fun37488
                 }
             case 75:
                 if (!(var6 != var5)) {
-                    _fun37401_ip = 179;
-                    continue _fun37401
+                    _fun37488_ip = 179;
+                    continue _fun37488
                 }
             case 79:
                 var2 = _closure1_slot0;
@@ -88,8 +88,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.nativeID = var8;
                 var6 = var6 == var8;
                 if (!var6) {
-                    _fun37401_ip = 151;
-                    continue _fun37401
+                    _fun37488_ip = 151;
+                    continue _fun37488
                 }
             case 148:
                 var6 = var7;
@@ -132,4 +132,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.AccessibilityView = var3;
     var2.AccessibilityViewAnimated = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 4058, 3711, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 4067, 3720, 2]);

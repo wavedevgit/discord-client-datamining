@@ -9,38 +9,38 @@ import wj.b;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final tj.a f49122a;
+    private final tj.a f49532a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Rect f49123b;
+    private final Rect f49533b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Point[] f49124c;
+    private final Point[] f49534c;
 
     public a(tj.a aVar, Matrix matrix) {
-        this.f49122a = (tj.a) q.l(aVar);
+        this.f49532a = (tj.a) q.l(aVar);
         Rect a10 = aVar.a();
         if (a10 != null && matrix != null) {
             b.e(a10, matrix);
         }
-        this.f49123b = a10;
+        this.f49533b = a10;
         Point[] d10 = aVar.d();
         if (d10 != null && matrix != null) {
             b.b(d10, matrix);
         }
-        this.f49124c = d10;
+        this.f49534c = d10;
     }
 
     public Rect a() {
-        return this.f49123b;
+        return this.f49533b;
     }
 
     public Point[] b() {
-        return this.f49124c;
+        return this.f49534c;
     }
 
     public int c() {
-        int format = this.f49122a.getFormat();
+        int format = this.f49532a.getFormat();
         if (format > 4096 || format == 0) {
             return -1;
         }
@@ -48,10 +48,10 @@ public class a {
     }
 
     public String d() {
-        return this.f49122a.b();
+        return this.f49532a.b();
     }
 
     public int e() {
-        return this.f49122a.c();
+        return this.f49532a.c();
     }
 }

@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var9.NOTIFICATIONS;
     var1.parent = var9;
     var9 = function() {
-        _fun85607: for (var _fun85607_ip = 0;;) switch (_fun85607_ip) {
+        _fun85717: for (var _fun85717_ip = 0;;) switch (_fun85717_ip) {
             case 0:
                 var1 = _closure1_slot2;
                 var0 = undefined;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun85607_ip = 25;
-                    continue _fun85607
+                    _fun85717_ip = 25;
+                    continue _fun85717
                 }
             case 22:
                 var0 = var1;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.useValue = var9;
     var1.onValueChange = var8;
     var7 = function() {
-        _fun85608: for (var _fun85608_ip = 0;;) switch (_fun85608_ip) {
+        _fun85718: for (var _fun85718_ip = 0;;) switch (_fun85718_ip) {
             case 0:
                 var0 = _closure1_slot2;
                 var4 = undefined;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var3)();
                 var0 = !var0;
                 if (!var0) {
-                    _fun85608_ip = 82;
-                    continue _fun85608
+                    _fun85718_ip = 82;
+                    continue _fun85718
                 }
             case 49:
                 var3 = _closure1_slot0;
@@ -98,8 +98,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = !var1;
             case 82:
                 if (!var0) {
-                    _fun85608_ip = 91;
-                    continue _fun85608
+                    _fun85718_ip = 91;
+                    continue _fun85718
                 }
             case 85:
                 var1 = null;
@@ -118,4 +118,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [10996, 7000, 478, 11003, 8977, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [11015, 7005, 478, 11022, 8996, 1234, 2]);

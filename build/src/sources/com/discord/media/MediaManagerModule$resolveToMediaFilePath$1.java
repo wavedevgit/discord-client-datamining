@@ -6,7 +6,6 @@ import com.discord.media.utils.EncodingConfig;
 import com.discord.media.utils.MediaResolver;
 import com.facebook.react.bridge.Promise;
 import java.util.concurrent.CancellationException;
-import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Result;
@@ -18,7 +17,8 @@ import kotlin.coroutines.jvm.internal.e;
 import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineScope;
-import pr.b;
+import lr.v;
+import rr.b;
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.media.MediaManagerModule$resolveToMediaFilePath$1", f = "MediaManagerModule.kt", l = {145}, m = "invokeSuspend")
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -87,7 +87,7 @@ final class MediaManagerModule$resolveToMediaFilePath$1 extends k implements Fun
                 boolean z12 = this.$useOriginalIfSmaller;
                 EncodingConfig encodingConfig = this.$encodingConfig;
                 promise = this.$promise;
-                Result.a aVar = Result.f33071e;
+                Result.a aVar = Result.f32461e;
                 mediaResolver2 = mediaManagerModule.mediaResolver;
                 this.L$0 = promise;
                 this.label = 1;
@@ -97,9 +97,9 @@ final class MediaManagerModule$resolveToMediaFilePath$1 extends k implements Fun
                 }
             }
             promise.resolve(((Uri) resolveToUri$media_release).toString());
-            b10 = Result.b(Unit.f33074a);
+            b10 = Result.b(Unit.f32464a);
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f33071e;
+            Result.a aVar2 = Result.f32461e;
             b10 = Result.b(c.a(th2));
         }
         Promise promise3 = this.$promise;
@@ -118,11 +118,11 @@ final class MediaManagerModule$resolveToMediaFilePath$1 extends k implements Fun
             CrashReporting.captureException$default(crashReporting, e10, false, 2, null);
             promise3.reject(e10);
         }
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaManagerModule$resolveToMediaFilePath$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        return ((MediaManagerModule$resolveToMediaFilePath$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
     }
 }

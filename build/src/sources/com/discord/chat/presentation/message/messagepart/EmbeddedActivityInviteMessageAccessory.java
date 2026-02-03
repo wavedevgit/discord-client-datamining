@@ -83,7 +83,7 @@ public final class EmbeddedActivityInviteMessageAccessory extends MessageAccesso
         }
         if (obj instanceof EmbeddedActivityInviteMessageAccessory) {
             EmbeddedActivityInviteMessageAccessory embeddedActivityInviteMessageAccessory = (EmbeddedActivityInviteMessageAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, embeddedActivityInviteMessageAccessory.messageId) && Intrinsics.areEqual(this.margins, embeddedActivityInviteMessageAccessory.margins) && this.codedLinkIndex == embeddedActivityInviteMessageAccessory.codedLinkIndex && Intrinsics.areEqual(this.embeddedActivityInviteEmbed, embeddedActivityInviteMessageAccessory.embeddedActivityInviteEmbed) && this.constrainedWidth == embeddedActivityInviteMessageAccessory.constrainedWidth;
+            return MessageId.m1089equalsimpl0(this.messageId, embeddedActivityInviteMessageAccessory.messageId) && Intrinsics.areEqual(this.margins, embeddedActivityInviteMessageAccessory.margins) && this.codedLinkIndex == embeddedActivityInviteMessageAccessory.codedLinkIndex && Intrinsics.areEqual(this.embeddedActivityInviteEmbed, embeddedActivityInviteMessageAccessory.embeddedActivityInviteEmbed) && this.constrainedWidth == embeddedActivityInviteMessageAccessory.constrainedWidth;
         }
         return false;
     }
@@ -114,17 +114,17 @@ public final class EmbeddedActivityInviteMessageAccessory extends MessageAccesso
     }
 
     public int hashCode() {
-        return (((((((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + Integer.hashCode(this.codedLinkIndex)) * 31) + this.embeddedActivityInviteEmbed.hashCode()) * 31) + Integer.hashCode(this.constrainedWidth);
+        return (((((((MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + Integer.hashCode(this.codedLinkIndex)) * 31) + this.embeddedActivityInviteEmbed.hashCode()) * 31) + Integer.hashCode(this.constrainedWidth);
     }
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         MessageMargins messageMargins = this.margins;
         int i10 = this.codedLinkIndex;
         EmbeddedActivityInviteEmbedImpl embeddedActivityInviteEmbedImpl = this.embeddedActivityInviteEmbed;
         int i11 = this.constrainedWidth;
-        return "EmbeddedActivityInviteMessageAccessory(messageId=" + m1093toStringimpl + ", margins=" + messageMargins + ", codedLinkIndex=" + i10 + ", embeddedActivityInviteEmbed=" + embeddedActivityInviteEmbedImpl + ", constrainedWidth=" + i11 + ")";
+        return "EmbeddedActivityInviteMessageAccessory(messageId=" + m1092toStringimpl + ", margins=" + messageMargins + ", codedLinkIndex=" + i10 + ", embeddedActivityInviteEmbed=" + embeddedActivityInviteEmbedImpl + ", constrainedWidth=" + i11 + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

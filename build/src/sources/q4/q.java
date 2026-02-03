@@ -7,24 +7,24 @@ import kotlin.jvm.internal.Intrinsics;
 public final class q implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final androidx.work.impl.u f47204d;
+    private final androidx.work.impl.u f47354d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final a0 f47205e;
+    private final a0 f47355e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final WorkerParameters.a f47206i;
+    private final WorkerParameters.a f47356i;
 
     public q(androidx.work.impl.u processor, a0 startStopToken, WorkerParameters.a aVar) {
         Intrinsics.checkNotNullParameter(processor, "processor");
         Intrinsics.checkNotNullParameter(startStopToken, "startStopToken");
-        this.f47204d = processor;
-        this.f47205e = startStopToken;
-        this.f47206i = aVar;
+        this.f47354d = processor;
+        this.f47355e = startStopToken;
+        this.f47356i = aVar;
     }
 
     @Override // java.lang.Runnable
     public void run() {
-        this.f47204d.p(this.f47205e, this.f47206i);
+        this.f47354d.p(this.f47355e, this.f47356i);
     }
 }

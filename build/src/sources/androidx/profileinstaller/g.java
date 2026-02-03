@@ -14,13 +14,13 @@ import java.util.TreeMap;
 public abstract class g {
 
     /* renamed from: a  reason: collision with root package name */
-    static final byte[] f4711a = {112, 114, 111, 0};
+    static final byte[] f4680a = {112, 114, 111, 0};
 
     /* renamed from: b  reason: collision with root package name */
-    static final byte[] f4712b = {112, 114, 109, 0};
+    static final byte[] f4681b = {112, 114, 109, 0};
 
     private static void A(byte[] bArr, int i10, int i11, c cVar) {
-        int m10 = m(i10, i11, cVar.f4699g);
+        int m10 = m(i10, i11, cVar.f4668g);
         int i12 = m10 / 8;
         bArr[i12] = (byte) ((1 << (m10 % 8)) | bArr[i12]);
     }
@@ -41,19 +41,19 @@ public abstract class g {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean C(OutputStream outputStream, byte[] bArr, c[] cVarArr) {
-        if (Arrays.equals(bArr, i.f4724a)) {
+        if (Arrays.equals(bArr, i.f4693a)) {
             P(outputStream, cVarArr);
             return true;
-        } else if (Arrays.equals(bArr, i.f4725b)) {
+        } else if (Arrays.equals(bArr, i.f4694b)) {
             O(outputStream, cVarArr);
             return true;
-        } else if (Arrays.equals(bArr, i.f4727d)) {
+        } else if (Arrays.equals(bArr, i.f4696d)) {
             M(outputStream, cVarArr);
             return true;
-        } else if (Arrays.equals(bArr, i.f4726c)) {
+        } else if (Arrays.equals(bArr, i.f4695c)) {
             N(outputStream, cVarArr);
             return true;
-        } else if (Arrays.equals(bArr, i.f4728e)) {
+        } else if (Arrays.equals(bArr, i.f4697e)) {
             L(outputStream, cVarArr);
             return true;
         } else {
@@ -62,7 +62,7 @@ public abstract class g {
     }
 
     private static void D(OutputStream outputStream, c cVar) {
-        int[] iArr = cVar.f4700h;
+        int[] iArr = cVar.f4669h;
         int length = iArr.length;
         int i10 = 0;
         int i11 = 0;
@@ -80,10 +80,10 @@ public abstract class g {
             d.p(byteArrayOutputStream, cVarArr.length);
             int i10 = 2;
             for (c cVar : cVarArr) {
-                d.q(byteArrayOutputStream, cVar.f4695c);
-                d.q(byteArrayOutputStream, cVar.f4696d);
-                d.q(byteArrayOutputStream, cVar.f4699g);
-                String j10 = j(cVar.f4693a, cVar.f4694b, i.f4724a);
+                d.q(byteArrayOutputStream, cVar.f4664c);
+                d.q(byteArrayOutputStream, cVar.f4665d);
+                d.q(byteArrayOutputStream, cVar.f4668g);
+                String j10 = j(cVar.f4662a, cVar.f4663b, i.f4693a);
                 int k10 = d.k(j10);
                 d.p(byteArrayOutputStream, k10);
                 i10 = i10 + 14 + k10;
@@ -108,7 +108,7 @@ public abstract class g {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void F(OutputStream outputStream, byte[] bArr) {
-        outputStream.write(f4711a);
+        outputStream.write(f4680a);
         outputStream.write(bArr);
     }
 
@@ -120,16 +120,16 @@ public abstract class g {
 
     private static void H(OutputStream outputStream, c cVar, String str) {
         d.p(outputStream, d.k(str));
-        d.p(outputStream, cVar.f4697e);
-        d.q(outputStream, cVar.f4698f);
-        d.q(outputStream, cVar.f4695c);
-        d.q(outputStream, cVar.f4699g);
+        d.p(outputStream, cVar.f4666e);
+        d.q(outputStream, cVar.f4667f);
+        d.q(outputStream, cVar.f4664c);
+        d.q(outputStream, cVar.f4668g);
         d.n(outputStream, str);
     }
 
     private static void I(OutputStream outputStream, c cVar) {
-        byte[] bArr = new byte[k(cVar.f4699g)];
-        for (Map.Entry entry : cVar.f4701i.entrySet()) {
+        byte[] bArr = new byte[k(cVar.f4668g)];
+        for (Map.Entry entry : cVar.f4670i.entrySet()) {
             int intValue = ((Integer) entry.getKey()).intValue();
             int intValue2 = ((Integer) entry.getValue()).intValue();
             if ((intValue2 & 2) != 0) {
@@ -143,15 +143,15 @@ public abstract class g {
     }
 
     private static void J(OutputStream outputStream, int i10, c cVar) {
-        byte[] bArr = new byte[l(i10, cVar.f4699g)];
-        for (Map.Entry entry : cVar.f4701i.entrySet()) {
+        byte[] bArr = new byte[l(i10, cVar.f4668g)];
+        for (Map.Entry entry : cVar.f4670i.entrySet()) {
             int intValue = ((Integer) entry.getKey()).intValue();
             int intValue2 = ((Integer) entry.getValue()).intValue();
             int i11 = 0;
             for (int i12 = 1; i12 <= 4; i12 <<= 1) {
                 if (i12 != 1 && (i12 & i10) != 0) {
                     if ((i12 & intValue2) == i12) {
-                        int i13 = (cVar.f4699g * i11) + intValue;
+                        int i13 = (cVar.f4668g * i11) + intValue;
                         int i14 = i13 / 8;
                         bArr[i14] = (byte) ((1 << (i13 % 8)) | bArr[i14]);
                     }
@@ -164,7 +164,7 @@ public abstract class g {
 
     private static void K(OutputStream outputStream, c cVar) {
         int i10 = 0;
-        for (Map.Entry entry : cVar.f4701i.entrySet()) {
+        for (Map.Entry entry : cVar.f4670i.entrySet()) {
             int intValue = ((Integer) entry.getKey()).intValue();
             if ((((Integer) entry.getValue()).intValue() & 1) != 0) {
                 d.p(outputStream, intValue - i10);
@@ -177,16 +177,16 @@ public abstract class g {
     private static void L(OutputStream outputStream, c[] cVarArr) {
         d.p(outputStream, cVarArr.length);
         for (c cVar : cVarArr) {
-            String j10 = j(cVar.f4693a, cVar.f4694b, i.f4728e);
+            String j10 = j(cVar.f4662a, cVar.f4663b, i.f4697e);
             d.p(outputStream, d.k(j10));
-            d.p(outputStream, cVar.f4701i.size());
-            d.p(outputStream, cVar.f4700h.length);
-            d.q(outputStream, cVar.f4695c);
+            d.p(outputStream, cVar.f4670i.size());
+            d.p(outputStream, cVar.f4669h.length);
+            d.q(outputStream, cVar.f4664c);
             d.n(outputStream, j10);
-            for (Integer num : cVar.f4701i.keySet()) {
+            for (Integer num : cVar.f4670i.keySet()) {
                 d.p(outputStream, num.intValue());
             }
-            for (int i10 : cVar.f4700h) {
+            for (int i10 : cVar.f4669h) {
                 d.p(outputStream, i10);
             }
         }
@@ -195,30 +195,30 @@ public abstract class g {
     private static void M(OutputStream outputStream, c[] cVarArr) {
         d.r(outputStream, cVarArr.length);
         for (c cVar : cVarArr) {
-            String j10 = j(cVar.f4693a, cVar.f4694b, i.f4727d);
+            String j10 = j(cVar.f4662a, cVar.f4663b, i.f4696d);
             d.p(outputStream, d.k(j10));
-            d.p(outputStream, cVar.f4700h.length);
-            d.q(outputStream, cVar.f4701i.size() * 4);
-            d.q(outputStream, cVar.f4695c);
+            d.p(outputStream, cVar.f4669h.length);
+            d.q(outputStream, cVar.f4670i.size() * 4);
+            d.q(outputStream, cVar.f4664c);
             d.n(outputStream, j10);
-            for (Integer num : cVar.f4701i.keySet()) {
+            for (Integer num : cVar.f4670i.keySet()) {
                 d.p(outputStream, num.intValue());
                 d.p(outputStream, 0);
             }
-            for (int i10 : cVar.f4700h) {
+            for (int i10 : cVar.f4669h) {
                 d.p(outputStream, i10);
             }
         }
     }
 
     private static void N(OutputStream outputStream, c[] cVarArr) {
-        byte[] b10 = b(cVarArr, i.f4726c);
+        byte[] b10 = b(cVarArr, i.f4695c);
         d.r(outputStream, cVarArr.length);
         d.m(outputStream, b10);
     }
 
     private static void O(OutputStream outputStream, c[] cVarArr) {
-        byte[] b10 = b(cVarArr, i.f4725b);
+        byte[] b10 = b(cVarArr, i.f4694b);
         d.r(outputStream, cVarArr.length);
         d.m(outputStream, b10);
     }
@@ -235,23 +235,23 @@ public abstract class g {
         arrayList.add(E(cVarArr));
         arrayList.add(c(cVarArr));
         arrayList.add(d(cVarArr));
-        long length2 = i.f4724a.length + f4711a.length + 4 + (arrayList.size() * 16);
+        long length2 = i.f4693a.length + f4680a.length + 4 + (arrayList.size() * 16);
         d.q(outputStream, arrayList.size());
         for (int i10 = 0; i10 < arrayList.size(); i10++) {
             j jVar = (j) arrayList.get(i10);
-            d.q(outputStream, jVar.f4731a.d());
+            d.q(outputStream, jVar.f4700a.d());
             d.q(outputStream, length2);
-            if (jVar.f4734d) {
-                byte[] b10 = d.b(jVar.f4733c);
+            if (jVar.f4703d) {
+                byte[] b10 = d.b(jVar.f4702c);
                 arrayList2.add(b10);
                 d.q(outputStream, b10.length);
                 d.q(outputStream, bArr.length);
                 length = b10.length;
             } else {
-                arrayList2.add(jVar.f4733c);
-                d.q(outputStream, jVar.f4733c.length);
+                arrayList2.add(jVar.f4702c);
+                d.q(outputStream, jVar.f4702c.length);
                 d.q(outputStream, 0L);
-                length = jVar.f4733c.length;
+                length = jVar.f4702c.length;
             }
             length2 += length;
         }
@@ -262,7 +262,7 @@ public abstract class g {
 
     private static int a(c cVar) {
         int i10 = 0;
-        for (Map.Entry entry : cVar.f4701i.entrySet()) {
+        for (Map.Entry entry : cVar.f4670i.entrySet()) {
             i10 |= ((Integer) entry.getValue()).intValue();
         }
         return i10;
@@ -272,20 +272,20 @@ public abstract class g {
         int i10 = 0;
         int i11 = 0;
         for (c cVar : cVarArr) {
-            i11 += d.k(j(cVar.f4693a, cVar.f4694b, bArr)) + 16 + (cVar.f4697e * 2) + cVar.f4698f + k(cVar.f4699g);
+            i11 += d.k(j(cVar.f4662a, cVar.f4663b, bArr)) + 16 + (cVar.f4666e * 2) + cVar.f4667f + k(cVar.f4668g);
         }
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream(i11);
-        if (Arrays.equals(bArr, i.f4726c)) {
+        if (Arrays.equals(bArr, i.f4695c)) {
             int length = cVarArr.length;
             while (i10 < length) {
                 c cVar2 = cVarArr[i10];
-                H(byteArrayOutputStream, cVar2, j(cVar2.f4693a, cVar2.f4694b, bArr));
+                H(byteArrayOutputStream, cVar2, j(cVar2.f4662a, cVar2.f4663b, bArr));
                 G(byteArrayOutputStream, cVar2);
                 i10++;
             }
         } else {
             for (c cVar3 : cVarArr) {
-                H(byteArrayOutputStream, cVar3, j(cVar3.f4693a, cVar3.f4694b, bArr));
+                H(byteArrayOutputStream, cVar3, j(cVar3.f4662a, cVar3.f4663b, bArr));
             }
             int length2 = cVarArr.length;
             while (i10 < length2) {
@@ -306,8 +306,8 @@ public abstract class g {
             try {
                 c cVar = cVarArr[i11];
                 d.p(byteArrayOutputStream, i11);
-                d.p(byteArrayOutputStream, cVar.f4697e);
-                i10 = i10 + 4 + (cVar.f4697e * 2);
+                d.p(byteArrayOutputStream, cVar.f4666e);
+                i10 = i10 + 4 + (cVar.f4666e * 2);
                 D(byteArrayOutputStream, cVar);
             } catch (Throwable th2) {
                 try {
@@ -422,7 +422,7 @@ public abstract class g {
         }
         String h10 = h(str);
         for (int i10 = 0; i10 < cVarArr.length; i10++) {
-            if (cVarArr[i10].f4694b.equals(h10)) {
+            if (cVarArr[i10].f4663b.equals(h10)) {
                 return cVarArr[i10];
             }
         }
@@ -491,17 +491,17 @@ public abstract class g {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static byte[] p(InputStream inputStream, byte[] bArr) {
         if (Arrays.equals(bArr, d.d(inputStream, bArr.length))) {
-            return d.d(inputStream, i.f4725b.length);
+            return d.d(inputStream, i.f4694b.length);
         }
         throw d.c("Invalid magic");
     }
 
     private static void q(InputStream inputStream, c cVar) {
-        int available = inputStream.available() - cVar.f4698f;
+        int available = inputStream.available() - cVar.f4667f;
         int i10 = 0;
         while (inputStream.available() > available) {
             i10 += d.h(inputStream);
-            cVar.f4701i.put(Integer.valueOf(i10), 1);
+            cVar.f4670i.put(Integer.valueOf(i10), 1);
             for (int h10 = d.h(inputStream); h10 > 0; h10--) {
                 B(inputStream);
             }
@@ -514,12 +514,12 @@ public abstract class g {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static c[] r(InputStream inputStream, byte[] bArr, byte[] bArr2, c[] cVarArr) {
-        if (Arrays.equals(bArr, i.f4729f)) {
-            if (!Arrays.equals(i.f4724a, bArr2)) {
+        if (Arrays.equals(bArr, i.f4698f)) {
+            if (!Arrays.equals(i.f4693a, bArr2)) {
                 return s(inputStream, bArr, cVarArr);
             }
             throw d.c("Requires new Baseline Profile Metadata. Please rebuild the APK with Android Gradle Plugin 7.2 Canary 7 or higher");
-        } else if (Arrays.equals(bArr, i.f4730g)) {
+        } else if (Arrays.equals(bArr, i.f4699g)) {
             return u(inputStream, bArr2, cVarArr);
         } else {
             throw d.c("Unsupported meta version");
@@ -527,7 +527,7 @@ public abstract class g {
     }
 
     static c[] s(InputStream inputStream, byte[] bArr, c[] cVarArr) {
-        if (Arrays.equals(bArr, i.f4729f)) {
+        if (Arrays.equals(bArr, i.f4698f)) {
             int j10 = d.j(inputStream);
             byte[] e10 = d.e(inputStream, (int) d.i(inputStream), (int) d.i(inputStream));
             if (inputStream.read() <= 0) {
@@ -564,10 +564,10 @@ public abstract class g {
             }
             for (int i12 = 0; i12 < i10; i12++) {
                 c cVar = cVarArr[i12];
-                if (cVar.f4694b.equals(strArr[i12])) {
+                if (cVar.f4663b.equals(strArr[i12])) {
                     int i13 = iArr[i12];
-                    cVar.f4697e = i13;
-                    cVar.f4700h = n(inputStream, i13);
+                    cVar.f4666e = i13;
+                    cVar.f4669h = n(inputStream, i13);
                 } else {
                     throw d.c("Order of dexfiles in metadata did not match baseline");
                 }
@@ -610,11 +610,11 @@ public abstract class g {
                 int h10 = d.h(inputStream);
                 c i13 = i(cVarArr, f10);
                 if (i13 != null) {
-                    i13.f4696d = i12;
+                    i13.f4665d = i12;
                     int[] n10 = n(inputStream, h10);
-                    if (Arrays.equals(bArr, i.f4728e)) {
-                        i13.f4697e = h10;
-                        i13.f4700h = n10;
+                    if (Arrays.equals(bArr, i.f4697e)) {
+                        i13.f4666e = h10;
+                        i13.f4669h = n10;
                     }
                 } else {
                     throw d.c("Missing profile key: " + f10);
@@ -626,18 +626,18 @@ public abstract class g {
     }
 
     private static void w(InputStream inputStream, c cVar) {
-        BitSet valueOf = BitSet.valueOf(d.d(inputStream, d.a(cVar.f4699g * 2)));
+        BitSet valueOf = BitSet.valueOf(d.d(inputStream, d.a(cVar.f4668g * 2)));
         int i10 = 0;
         while (true) {
-            int i11 = cVar.f4699g;
+            int i11 = cVar.f4668g;
             if (i10 < i11) {
                 int o10 = o(valueOf, i10, i11);
                 if (o10 != 0) {
-                    Integer num = (Integer) cVar.f4701i.get(Integer.valueOf(i10));
+                    Integer num = (Integer) cVar.f4670i.get(Integer.valueOf(i10));
                     if (num == null) {
                         num = 0;
                     }
-                    cVar.f4701i.put(Integer.valueOf(i10), Integer.valueOf(o10 | num.intValue()));
+                    cVar.f4670i.put(Integer.valueOf(i10), Integer.valueOf(o10 | num.intValue()));
                 }
                 i10++;
             } else {
@@ -648,7 +648,7 @@ public abstract class g {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static c[] x(InputStream inputStream, byte[] bArr, String str) {
-        if (Arrays.equals(bArr, i.f4725b)) {
+        if (Arrays.equals(bArr, i.f4694b)) {
             int j10 = d.j(inputStream);
             byte[] e10 = d.e(inputStream, (int) d.i(inputStream), (int) d.i(inputStream));
             if (inputStream.read() <= 0) {
@@ -684,7 +684,7 @@ public abstract class g {
         for (int i12 = 0; i12 < i10; i12++) {
             c cVar = cVarArr[i12];
             q(inputStream, cVar);
-            cVar.f4700h = n(inputStream, cVar.f4697e);
+            cVar.f4669h = n(inputStream, cVar.f4666e);
             w(inputStream, cVar);
         }
         return cVarArr;

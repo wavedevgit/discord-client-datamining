@@ -1,9 +1,20 @@
 package pq;
 
-import android.net.Uri;
+import com.facebook.react.ReactPackage;
+import com.facebook.react.bridge.ReactApplicationContext;
+import com.withpersona.sdk2.reactnative.PersonaInquiryModule2;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface a {
-    void a(Uri uri, int i10, int i11, int i12, int i13);
+public class a implements ReactPackage {
+    @Override // com.facebook.react.ReactPackage
+    public List createNativeModules(ReactApplicationContext reactApplicationContext) {
+        return Arrays.asList(new PersonaInquiryModule2(reactApplicationContext));
+    }
 
-    void b(Throwable th2);
+    @Override // com.facebook.react.ReactPackage
+    public List createViewManagers(ReactApplicationContext reactApplicationContext) {
+        return Collections.EMPTY_LIST;
+    }
 }

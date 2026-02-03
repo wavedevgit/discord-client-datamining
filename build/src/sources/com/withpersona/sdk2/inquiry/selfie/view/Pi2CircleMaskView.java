@@ -11,7 +11,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewPropertyAnimator;
 import com.withpersona.sdk2.inquiry.selfie.view.Pi2CircleMaskView;
-import fp.z0;
+import hp.z0;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -24,22 +24,22 @@ import org.jetbrains.annotations.NotNull;
 public final class Pi2CircleMaskView extends View {
 
     /* renamed from: q  reason: collision with root package name */
-    public static final a f20077q = new a(null);
+    public static final a f19059q = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final float f20078d;
+    private final float f19060d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f20079e;
+    private final int f19061e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Bitmap f20080i;
+    private Bitmap f19062i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Paint f20081o;
+    private Paint f19063o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Paint f20082p;
+    private Paint f19064p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -58,11 +58,11 @@ public final class Pi2CircleMaskView extends View {
     }
 
     private final long b(float f10) {
-        return yr.a.e((Math.abs(getScaleX() - f10) / 4.0f) * ((float) 500));
+        return as.a.e((Math.abs(getScaleX() - f10) / 4.0f) * ((float) 500));
     }
 
     private final Bitmap c() {
-        Bitmap bitmap = this.f20080i;
+        Bitmap bitmap = this.f19062i;
         if (bitmap != null) {
             bitmap = (bitmap.getWidth() == getWidth() && bitmap.getHeight() == getHeight()) ? null : null;
             if (bitmap != null) {
@@ -72,9 +72,9 @@ public final class Pi2CircleMaskView extends View {
         Bitmap createBitmap = Bitmap.createBitmap(getWidth(), getHeight(), Bitmap.Config.ARGB_8888);
         Intrinsics.checkNotNullExpressionValue(createBitmap, "createBitmap(...)");
         Canvas canvas = new Canvas(createBitmap);
-        canvas.drawColor(this.f20079e);
-        canvas.drawCircle(canvas.getWidth() / 2.0f, canvas.getHeight() / 2.0f, this.f20078d * Math.min(canvas.getWidth(), canvas.getHeight()), this.f20082p);
-        this.f20080i = createBitmap;
+        canvas.drawColor(this.f19061e);
+        canvas.drawCircle(canvas.getWidth() / 2.0f, canvas.getHeight() / 2.0f, this.f19060d * Math.min(canvas.getWidth(), canvas.getHeight()), this.f19064p);
+        this.f19062i = createBitmap;
         return createBitmap;
     }
 
@@ -101,7 +101,7 @@ public final class Pi2CircleMaskView extends View {
             animate.setDuration(b(1.0f));
             animate.scaleX(1.0f);
             animate.scaleY(1.0f);
-            animate.withEndAction(new Runnable() { // from class: jp.n
+            animate.withEndAction(new Runnable() { // from class: lp.n
                 @Override // java.lang.Runnable
                 public final void run() {
                     Pi2CircleMaskView.f(Function0.this);
@@ -139,7 +139,7 @@ public final class Pi2CircleMaskView extends View {
     @Override // android.view.View
     protected void onDraw(Canvas canvas) {
         Intrinsics.checkNotNullParameter(canvas, "canvas");
-        canvas.drawBitmap(c(), 0.0f, 0.0f, this.f20081o);
+        canvas.drawBitmap(c(), 0.0f, 0.0f, this.f19063o);
     }
 
     public /* synthetic */ Pi2CircleMaskView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -150,16 +150,16 @@ public final class Pi2CircleMaskView extends View {
     public Pi2CircleMaskView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f20081o = new Paint(7);
+        this.f19063o = new Paint(7);
         Paint paint = new Paint(1);
         paint.setColor(0);
         paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
-        this.f20082p = paint;
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, z0.f25510a, i10, 0);
+        this.f19064p = paint;
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, z0.f28105a, i10, 0);
         Intrinsics.checkNotNullExpressionValue(obtainStyledAttributes, "obtainStyledAttributes(...)");
         try {
-            this.f20078d = obtainStyledAttributes.getFloat(z0.f25511b, 0.4f);
-            this.f20079e = obtainStyledAttributes.getColor(z0.f25512c, -16777216);
+            this.f19060d = obtainStyledAttributes.getFloat(z0.f28106b, 0.4f);
+            this.f19061e = obtainStyledAttributes.getColor(z0.f28107c, -16777216);
             obtainStyledAttributes.recycle();
             setWillNotDraw(false);
         } catch (Throwable th2) {

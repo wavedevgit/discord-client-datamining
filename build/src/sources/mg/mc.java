@@ -5,7 +5,7 @@ import ui.c;
 final class mc implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final mc f38467a = new mc();
+    static final mc f38264a = new mc();
 
     static {
         c.b a10 = ui.c.a("sourceLanguage");

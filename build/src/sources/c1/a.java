@@ -2,67 +2,67 @@ package c1;
 
 import d1.d;
 import d1.g;
-import jr.b0;
-import jr.i0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
+import lr.b0;
+import lr.i0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final C0137a f7935a = new C0137a(null);
+    public static final C0116a f6922a = new C0116a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final long f7936b = b.c(4278190080L);
+    private static final long f6923b = b.c(4278190080L);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final long f7937c = b.c(4282664004L);
+    private static final long f6924c = b.c(4282664004L);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final long f7938d = b.c(4287137928L);
+    private static final long f6925d = b.c(4287137928L);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final long f7939e = b.c(4291611852L);
+    private static final long f6926e = b.c(4291611852L);
 
     /* renamed from: f  reason: collision with root package name */
-    private static final long f7940f = b.c(4294967295L);
+    private static final long f6927f = b.c(4294967295L);
 
     /* renamed from: g  reason: collision with root package name */
-    private static final long f7941g = b.c(4294901760L);
+    private static final long f6928g = b.c(4294901760L);
 
     /* renamed from: h  reason: collision with root package name */
-    private static final long f7942h = b.c(4278255360L);
+    private static final long f6929h = b.c(4278255360L);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final long f7943i = b.c(4278190335L);
+    private static final long f6930i = b.c(4278190335L);
 
     /* renamed from: j  reason: collision with root package name */
-    private static final long f7944j = b.c(4294967040L);
+    private static final long f6931j = b.c(4294967040L);
 
     /* renamed from: k  reason: collision with root package name */
-    private static final long f7945k = b.c(4278255615L);
+    private static final long f6932k = b.c(4278255615L);
 
     /* renamed from: l  reason: collision with root package name */
-    private static final long f7946l = b.c(4294902015L);
+    private static final long f6933l = b.c(4294902015L);
 
     /* renamed from: m  reason: collision with root package name */
-    private static final long f7947m = b.b(0);
+    private static final long f6934m = b.b(0);
 
     /* renamed from: n  reason: collision with root package name */
-    private static final long f7948n = b.a(0.0f, 0.0f, 0.0f, 0.0f, g.f21121a.j());
+    private static final long f6935n = b.a(0.0f, 0.0f, 0.0f, 0.0f, g.f19980a.j());
 
     /* renamed from: c1.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0137a {
-        public /* synthetic */ C0137a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0116a {
+        public /* synthetic */ C0116a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
         public final long a() {
-            return a.f7947m;
+            return a.f6934m;
         }
 
-        private C0137a() {
+        private C0116a() {
         }
     }
 
@@ -96,7 +96,7 @@ public abstract class a {
     }
 
     public static final d1.c f(long j10) {
-        return g.f21121a.e()[(int) b0.d(j10 & 63)];
+        return g.f19980a.e()[(int) b0.d(j10 & 63)];
     }
 
     public static final float g(long j10) {

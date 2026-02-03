@@ -10,32 +10,32 @@ public abstract class h {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f28189a;
+        private final String f28412a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final a f28190b;
+        private final a f28413b;
 
         /* renamed from: c  reason: collision with root package name */
-        private a f28191c;
+        private a f28414c;
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f28192d;
+        private boolean f28415d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f28193e;
+        private boolean f28416e;
 
         /* JADX INFO: Access modifiers changed from: private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static class a {
 
             /* renamed from: a  reason: collision with root package name */
-            String f28194a;
+            String f28417a;
 
             /* renamed from: b  reason: collision with root package name */
-            Object f28195b;
+            Object f28418b;
 
             /* renamed from: c  reason: collision with root package name */
-            a f28196c;
+            a f28419c;
 
             private a() {
             }
@@ -43,13 +43,13 @@ public abstract class h {
 
         private a a() {
             a aVar = new a();
-            this.f28191c.f28196c = aVar;
-            this.f28191c = aVar;
+            this.f28414c.f28419c = aVar;
+            this.f28414c = aVar;
             return aVar;
         }
 
         private b b(Object obj) {
-            a().f28195b = obj;
+            a().f28418b = obj;
             return this;
         }
 
@@ -84,21 +84,21 @@ public abstract class h {
         public java.lang.String toString() {
             /*
                 r7 = this;
-                boolean r0 = r7.f28192d
-                boolean r1 = r7.f28193e
+                boolean r0 = r7.f28415d
+                boolean r1 = r7.f28416e
                 java.lang.StringBuilder r2 = new java.lang.StringBuilder
                 r3 = 32
                 r2.<init>(r3)
-                java.lang.String r3 = r7.f28189a
+                java.lang.String r3 = r7.f28412a
                 r2.append(r3)
                 r3 = 123(0x7b, float:1.72E-43)
                 r2.append(r3)
-                ii.h$b$a r3 = r7.f28190b
-                ii.h$b$a r3 = r3.f28196c
+                ii.h$b$a r3 = r7.f28413b
+                ii.h$b$a r3 = r3.f28419c
                 java.lang.String r4 = ""
             L1b:
                 if (r3 == 0) goto L61
-                java.lang.Object r5 = r3.f28195b
+                java.lang.Object r5 = r3.f28418b
                 if (r5 != 0) goto L24
                 if (r0 != 0) goto L5e
                 goto L2c
@@ -108,7 +108,7 @@ public abstract class h {
                 if (r6 != 0) goto L5e
             L2c:
                 r2.append(r4)
-                java.lang.String r4 = r3.f28194a
+                java.lang.String r4 = r3.f28417a
                 if (r4 == 0) goto L3b
                 r2.append(r4)
                 r4 = 61
@@ -130,7 +130,7 @@ public abstract class h {
             L5c:
                 java.lang.String r4 = ", "
             L5e:
-                ii.h$b$a r3 = r3.f28196c
+                ii.h$b$a r3 = r3.f28419c
                 goto L1b
             L61:
                 r0 = 125(0x7d, float:1.75E-43)
@@ -143,11 +143,11 @@ public abstract class h {
 
         private b(String str) {
             a aVar = new a();
-            this.f28190b = aVar;
-            this.f28191c = aVar;
-            this.f28192d = false;
-            this.f28193e = false;
-            this.f28189a = (String) m.j(str);
+            this.f28413b = aVar;
+            this.f28414c = aVar;
+            this.f28415d = false;
+            this.f28416e = false;
+            this.f28412a = (String) m.j(str);
         }
     }
 

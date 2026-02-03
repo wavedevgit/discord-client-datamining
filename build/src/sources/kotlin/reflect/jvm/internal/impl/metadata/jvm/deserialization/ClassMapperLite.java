@@ -7,17 +7,17 @@ import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
 import org.jetbrains.annotations.NotNull;
-import rr.c;
+import tr.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class ClassMapperLite {
     @NotNull
     public static final ClassMapperLite INSTANCE = new ClassMapperLite();
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f34866a = CollectionsKt.x0(CollectionsKt.o('k', 'o', 't', 'l', 'i', 'n'), "", null, null, 0, null, null, 62, null);
+    private static final String f34256a = CollectionsKt.x0(CollectionsKt.o('k', 'o', 't', 'l', 'i', 'n'), "", null, null, 0, null, null, 62, null);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Map f34867b;
+    private static final Map f34257b;
 
     static {
         int i10;
@@ -28,7 +28,7 @@ public final class ClassMapperLite {
             int i11 = 0;
             while (true) {
                 StringBuilder sb2 = new StringBuilder();
-                String str = f34866a;
+                String str = f34256a;
                 sb2.append(str);
                 sb2.append('/');
                 sb2.append((String) o10.get(i11));
@@ -40,7 +40,7 @@ public final class ClassMapperLite {
                 i11 += 2;
             }
         }
-        linkedHashMap.put(f34866a + "/Unit", "V");
+        linkedHashMap.put(f34256a + "/Unit", "V");
         a(linkedHashMap, "Any", "java/lang/Object");
         a(linkedHashMap, "Nothing", "java/lang/Void");
         a(linkedHashMap, "Annotation", "java/lang/annotation/Annotation");
@@ -57,7 +57,7 @@ public final class ClassMapperLite {
         a(linkedHashMap, "collections/MutableMap.MutableEntry", "java/util/Map$Entry");
         for (int i12 = 0; i12 < 23; i12++) {
             StringBuilder sb3 = new StringBuilder();
-            String str4 = f34866a;
+            String str4 = f34256a;
             sb3.append(str4);
             sb3.append("/jvm/functions/Function");
             sb3.append(i12);
@@ -65,22 +65,22 @@ public final class ClassMapperLite {
             a(linkedHashMap, "reflect/KFunction" + i12, str4 + "/reflect/KFunction");
         }
         for (String str5 : CollectionsKt.o("Char", "Byte", "Short", "Int", "Float", "Long", "Double", "String", "Enum")) {
-            a(linkedHashMap, str5 + ".Companion", f34866a + "/jvm/internal/" + str5 + "CompanionObject");
+            a(linkedHashMap, str5 + ".Companion", f34256a + "/jvm/internal/" + str5 + "CompanionObject");
         }
-        f34867b = linkedHashMap;
+        f34257b = linkedHashMap;
     }
 
     private ClassMapperLite() {
     }
 
     private static final void a(Map map, String str, String str2) {
-        map.put(f34866a + '/' + str, 'L' + str2 + ';');
+        map.put(f34256a + '/' + str, 'L' + str2 + ';');
     }
 
     @NotNull
     public static final String mapClass(@NotNull String classId) {
         Intrinsics.checkNotNullParameter(classId, "classId");
-        String str = (String) f34867b.get(classId);
+        String str = (String) f34257b.get(classId);
         if (str == null) {
             return 'L' + StringsKt.I(classId, '.', '$', false, 4, null) + ';';
         }

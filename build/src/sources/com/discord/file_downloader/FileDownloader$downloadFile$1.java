@@ -75,6 +75,6 @@ public final class FileDownloader$downloadFile$1 extends k implements Function2<
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(FlowCollector flowCollector, Continuation<? super Unit> continuation) {
-        return ((FileDownloader$downloadFile$1) create(flowCollector, continuation)).invokeSuspend(Unit.f33074a);
+        return ((FileDownloader$downloadFile$1) create(flowCollector, continuation)).invokeSuspend(Unit.f32464a);
     }
 }

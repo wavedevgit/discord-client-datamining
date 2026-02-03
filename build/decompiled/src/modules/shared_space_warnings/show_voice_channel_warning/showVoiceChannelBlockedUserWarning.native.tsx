@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/shared_space_warnings/show_voice_channel_warning/showVoiceChannelBlockedUserWarning.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun95859: for (var _fun95859_ip = 0;;) switch (_fun95859_ip) {
+        _fun95919: for (var _fun95919_ip = 0;;) switch (_fun95919_ip) {
             case 0:
                 var7 = arg0;
                 var8 = arg1;
@@ -56,14 +56,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.AppStates;
                 var1 = var1.ACTIVE;
                 if (!(var2 !== var1)) {
-                    _fun95859_ip = 74;
-                    continue _fun95859
+                    _fun95919_ip = 74;
+                    continue _fun95919
                 }
             case 61:
                 var1 = _closure1_slot4;
                 var1 = var1.bind(var0)();
-                _fun95859_ip = 234;
-                continue _fun95859;
+                _fun95919_ip = 234;
+                continue _fun95919;
             case 74:
                 var1 = _closure1_slot5;
                 var1 = var1.bind(var0)();
@@ -107,4 +107,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.showVoiceChannelBlockedUserWarning = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5279, 12485, 12488, 670, 3269, 12491, 1307, 481, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5284, 12496, 12499, 670, 3278, 12502, 1307, 481, 2]);

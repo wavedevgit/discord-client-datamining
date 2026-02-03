@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.utils.DFS;
 public class n implements DFS.Neighbors {
 
     /* renamed from: a  reason: collision with root package name */
-    private final JvmBuiltInsCustomizer f33363a;
+    private final JvmBuiltInsCustomizer f32753a;
 
     public n(JvmBuiltInsCustomizer jvmBuiltInsCustomizer) {
-        this.f33363a = jvmBuiltInsCustomizer;
+        this.f32753a = jvmBuiltInsCustomizer;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.utils.DFS.Neighbors
     public Iterable getNeighbors(Object obj) {
         Iterable v10;
-        v10 = JvmBuiltInsCustomizer.v(this.f33363a, (ClassDescriptor) obj);
+        v10 = JvmBuiltInsCustomizer.v(this.f32753a, (ClassDescriptor) obj);
         return v10;
     }
 }

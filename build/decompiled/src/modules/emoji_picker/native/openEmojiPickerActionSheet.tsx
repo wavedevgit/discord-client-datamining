@@ -62,4 +62,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openEmojiPickerActionSheet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1616, 6985, 3269, 6986, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1624, 6990, 3278, 6991, 1307, 2]);

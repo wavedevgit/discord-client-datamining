@@ -7,37 +7,37 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f44543a;
+    private final int f44343a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ByteBuffer f44544b;
+    private final ByteBuffer f44344b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final MediaCodec.BufferInfo f44545c;
+    private final MediaCodec.BufferInfo f44345c;
 
     public g(int i10, ByteBuffer buffer, MediaCodec.BufferInfo info) {
         Intrinsics.checkNotNullParameter(buffer, "buffer");
         Intrinsics.checkNotNullParameter(info, "info");
-        this.f44543a = i10;
+        this.f44343a = i10;
         ByteBuffer allocate = ByteBuffer.allocate(buffer.capacity());
         Intrinsics.checkNotNullExpressionValue(allocate, "allocate(buffer.capacity())");
-        this.f44544b = allocate;
+        this.f44344b = allocate;
         MediaCodec.BufferInfo bufferInfo = new MediaCodec.BufferInfo();
-        this.f44545c = bufferInfo;
+        this.f44345c = bufferInfo;
         bufferInfo.set(0, info.size, info.presentationTimeUs, info.flags);
         allocate.put(buffer);
         allocate.flip();
     }
 
     public final ByteBuffer a() {
-        return this.f44544b;
+        return this.f44344b;
     }
 
     public final MediaCodec.BufferInfo b() {
-        return this.f44545c;
+        return this.f44345c;
     }
 
     public final int c() {
-        return this.f44543a;
+        return this.f44343a;
     }
 }

@@ -11,21 +11,21 @@ public final class c extends g {
     private static final long serialVersionUID = -7354650946442523175L;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient byte f40751q;
+    private final transient byte f40790q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final transient byte f40752r;
+    private final transient byte f40791r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final transient boolean f40753s;
+    private final transient boolean f40792s;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(b0 b0Var, int i10, y0 y0Var, int i11, i iVar, int i12, boolean z10) {
         super(b0Var, i11, iVar, i12);
-        ht.b.a(2000, b0Var.d(), i10);
-        this.f40751q = (byte) i10;
-        this.f40752r = (byte) y0Var.d();
-        this.f40753s = z10;
+        kt.b.a(2000, b0Var.d(), i10);
+        this.f40790q = (byte) i10;
+        this.f40791r = (byte) y0Var.d();
+        this.f40792s = z10;
     }
 
     private void readObject(ObjectInputStream objectInputStream) {
@@ -42,7 +42,7 @@ public final class c extends g {
         }
         if (obj instanceof c) {
             c cVar = (c) obj;
-            if (this.f40751q == cVar.f40751q && this.f40752r == cVar.f40752r && this.f40753s == cVar.f40753s && super.l(cVar)) {
+            if (this.f40790q == cVar.f40790q && this.f40791r == cVar.f40791r && this.f40792s == cVar.f40792s && super.l(cVar)) {
                 return true;
             }
         }
@@ -56,21 +56,21 @@ public final class c extends g {
     }
 
     public int hashCode() {
-        return this.f40751q + ((this.f40752r + (k() * 37)) * 17) + (this.f40753s ? 1 : 0);
+        return this.f40790q + ((this.f40791r + (k() * 37)) * 17) + (this.f40792s ? 1 : 0);
     }
 
     @Override // net.time4j.tz.model.g
     protected f0 j(int i10) {
         int i11;
         byte k10 = k();
-        int c10 = ht.b.c(i10, k10, this.f40751q);
-        f0 H0 = f0.H0(i10, k10, this.f40751q);
-        byte b10 = this.f40752r;
+        int c10 = kt.b.c(i10, k10, this.f40790q);
+        f0 H0 = f0.H0(i10, k10, this.f40790q);
+        byte b10 = this.f40791r;
         if (c10 == b10) {
             return H0;
         }
         int i12 = c10 - b10;
-        if (this.f40753s) {
+        if (this.f40792s) {
             i12 = -i12;
             i11 = 1;
         } else {
@@ -79,22 +79,22 @@ public final class c extends g {
         if (i12 < 0) {
             i12 += 7;
         }
-        return (f0) H0.K(i12 * i11, net.time4j.f.f40434s);
+        return (f0) H0.K(i12 * i11, net.time4j.f.f40473s);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int m() {
-        return this.f40751q;
+        return this.f40790q;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public byte n() {
-        return this.f40752r;
+        return this.f40791r;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean o() {
-        return this.f40753s;
+        return this.f40792s;
     }
 
     public String toString() {
@@ -102,9 +102,9 @@ public final class c extends g {
         sb2.append("DayOfWeekInMonthPattern:[month=");
         sb2.append((int) k());
         sb2.append(",dayOfMonth=");
-        sb2.append((int) this.f40751q);
+        sb2.append((int) this.f40790q);
         sb2.append(",dayOfWeek=");
-        sb2.append(y0.h(this.f40752r));
+        sb2.append(y0.h(this.f40791r));
         sb2.append(",day-overflow=");
         sb2.append(c());
         sb2.append(",time-of-day=");
@@ -114,7 +114,7 @@ public final class c extends g {
         sb2.append(",dst-offset=");
         sb2.append(e());
         sb2.append(",after=");
-        sb2.append(this.f40753s);
+        sb2.append(this.f40792s);
         sb2.append(']');
         return sb2.toString();
     }

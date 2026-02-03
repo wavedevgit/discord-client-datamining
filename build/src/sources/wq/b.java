@@ -1,52 +1,35 @@
 package wq;
 
-import java.util.Map;
-import kotlin.jvm.internal.Intrinsics;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final Map f52985a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final Map f52986b;
-
-    public b(Map standardOperations, Map functionalOperations) {
-        Intrinsics.checkNotNullParameter(standardOperations, "standardOperations");
-        Intrinsics.checkNotNullParameter(functionalOperations, "functionalOperations");
-        this.f52985a = standardOperations;
-        this.f52986b = functionalOperations;
-    }
-
-    public final Map a() {
-        return this.f52986b;
-    }
-
-    public final Map b() {
-        return this.f52985a;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+public abstract class b {
+    private static int a(int i10) {
+        if (i10 < 3) {
+            return i10 + 1;
         }
-        if (!(obj instanceof b)) {
-            return false;
+        if (i10 < 1073741824) {
+            return (int) ((i10 / 0.75f) + 1.0f);
         }
-        b bVar = (b) obj;
-        if (Intrinsics.areEqual(this.f52985a, bVar.f52985a) && Intrinsics.areEqual(this.f52986b, bVar.f52986b)) {
-            return true;
-        }
-        return false;
+        return Integer.MAX_VALUE;
     }
 
-    public int hashCode() {
-        return (this.f52985a.hashCode() * 31) + this.f52986b.hashCode();
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static HashSet b(int i10) {
+        return new HashSet(a(i10));
     }
 
-    public String toString() {
-        Map map = this.f52985a;
-        Map map2 = this.f52986b;
-        return "LogicOperations(standardOperations=" + map + ", functionalOperations=" + map2 + ")";
+    public static LinkedHashMap c(int i10) {
+        return new LinkedHashMap(a(i10));
+    }
+
+    public static List d(int i10) {
+        if (i10 == 0) {
+            return Collections.EMPTY_LIST;
+        }
+        return new ArrayList(i10);
     }
 }

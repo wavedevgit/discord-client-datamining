@@ -40,7 +40,7 @@ public final class DeviceSettingsModule extends NativeDeviceSettingsModuleSpec {
         ActivityUtilities activityUtilities = ActivityUtilities.INSTANCE;
         Intent intent = new Intent("android.settings.APPLICATION_DETAILS_SETTINGS", new Uri.Builder().scheme("package").opaquePart(context.getPackageName()).build());
         intent.setFlags(268435456);
-        Unit unit = Unit.f33074a;
+        Unit unit = Unit.f32464a;
         ActivityUtilities.startActivityAsync$default(activityUtilities, context, intent, null, 4, null);
     }
 
@@ -106,7 +106,7 @@ public final class DeviceSettingsModule extends NativeDeviceSettingsModuleSpec {
         ActivityUtilities activityUtilities = ActivityUtilities.INSTANCE;
         Intent intent = new Intent("android.settings.ACCESSIBILITY_SETTINGS");
         intent.setFlags(268435456);
-        Unit unit = Unit.f33074a;
+        Unit unit = Unit.f32464a;
         ActivityUtilities.startActivityAsync$default(activityUtilities, context, intent, null, 4, null);
     }
 

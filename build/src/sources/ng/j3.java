@@ -5,37 +5,37 @@ import ui.c;
 final class j3 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final j3 f41188a = new j3();
+    static final j3 f41227a = new j3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41189b;
+    private static final ui.c f41228b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41190c;
+    private static final ui.c f41229c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41191d;
+    private static final ui.c f41230d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f41192e;
+    private static final ui.c f41231e;
 
     static {
         c.b a10 = ui.c.a("imageFormat");
         f fVar = new f();
         fVar.a(1);
-        f41189b = a10.b(fVar.b()).a();
+        f41228b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("originalImageSize");
         f fVar2 = new f();
         fVar2.a(2);
-        f41190c = a11.b(fVar2.b()).a();
+        f41229c = a11.b(fVar2.b()).a();
         c.b a12 = ui.c.a("compressedImageSize");
         f fVar3 = new f();
         fVar3.a(3);
-        f41191d = a12.b(fVar3.b()).a();
+        f41230d = a12.b(fVar3.b()).a();
         c.b a13 = ui.c.a("isOdmlImage");
         f fVar4 = new f();
         fVar4.a(4);
-        f41192e = a13.b(fVar4.b()).a();
+        f41231e = a13.b(fVar4.b()).a();
     }
 
     private j3() {

@@ -3,9 +3,9 @@ package jm;
 public abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final fm.b f32011a = new fm.b(0.0d, 0.0d, 0.0d, 0.0d, 0.0d, 0.0d, -1, -1);
+    private static final fm.b f31807a = new fm.b(0.0d, 0.0d, 0.0d, 0.0d, 0.0d, 0.0d, -1, -1);
 
     public static final fm.b a() {
-        return f32011a;
+        return f31807a;
     }
 }

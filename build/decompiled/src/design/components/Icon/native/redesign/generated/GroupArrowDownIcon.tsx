@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/GroupArrowDownIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun67851: for (var _fun67851_ip = 0;;) switch (_fun67851_ip) {
+        _fun67909: for (var _fun67909_ip = 0;;) switch (_fun67909_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun67851_ip = 53;
-                    continue _fun67851
+                    _fun67909_ip = 53;
+                    continue _fun67909
                 }
             case 19:
                 var1 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.GroupArrowDownIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3141, 8418, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3150, 8423, 2]);

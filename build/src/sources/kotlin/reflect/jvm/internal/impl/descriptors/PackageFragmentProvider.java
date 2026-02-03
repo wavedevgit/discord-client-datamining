@@ -8,7 +8,7 @@ import kotlin.reflect.jvm.internal.impl.name.Name;
 import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface PackageFragmentProvider {
-    @jr.c
+    @lr.c
     @NotNull
     List<PackageFragmentDescriptor> getPackageFragments(@NotNull FqName fqName);
 

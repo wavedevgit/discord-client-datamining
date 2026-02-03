@@ -3,47 +3,47 @@ package com.google.android.play.core.assetpacks;
 public final class z1 implements th.t {
 
     /* renamed from: a  reason: collision with root package name */
-    private final th.w f16756a;
+    private final th.w f15724a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final th.w f16757b;
+    private final th.w f15725b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final th.w f16758c;
+    private final th.w f15726c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final th.w f16759d;
+    private final th.w f15727d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final th.w f16760e;
+    private final th.w f15728e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final th.w f16761f;
+    private final th.w f15729f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final th.w f16762g;
+    private final th.w f15730g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final th.w f16763h;
+    private final th.w f15731h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final th.w f16764i;
+    private final th.w f15732i;
 
     public z1(th.w wVar, th.w wVar2, th.w wVar3, th.w wVar4, th.w wVar5, th.w wVar6, th.w wVar7, th.w wVar8, th.w wVar9) {
-        this.f16756a = wVar;
-        this.f16757b = wVar2;
-        this.f16758c = wVar3;
-        this.f16759d = wVar4;
-        this.f16760e = wVar5;
-        this.f16761f = wVar6;
-        this.f16762g = wVar7;
-        this.f16763h = wVar8;
-        this.f16764i = wVar9;
+        this.f15724a = wVar;
+        this.f15725b = wVar2;
+        this.f15726c = wVar3;
+        this.f15727d = wVar4;
+        this.f15728e = wVar5;
+        this.f15729f = wVar6;
+        this.f15730g = wVar7;
+        this.f15731h = wVar8;
+        this.f15732i = wVar9;
     }
 
     @Override // th.w
     public final /* bridge */ /* synthetic */ Object a() {
-        Object a10 = this.f16756a.a();
-        return new y1((r2) a10, th.r.c(th.v.a(this.f16757b)), (m1) this.f16758c.a(), (f4) this.f16759d.a(), (g3) this.f16760e.a(), (k3) this.f16761f.a(), (t3) this.f16762g.a(), (y3) this.f16763h.a(), (u2) this.f16764i.a());
+        Object a10 = this.f15724a.a();
+        return new y1((r2) a10, th.r.c(th.v.a(this.f15725b)), (m1) this.f15726c.a(), (f4) this.f15727d.a(), (g3) this.f15728e.a(), (k3) this.f15729f.a(), (t3) this.f15730g.a(), (y3) this.f15731h.a(), (u2) this.f15732i.a());
     }
 }

@@ -4,8 +4,6 @@ import java.io.OutputStream;
 import java.nio.channels.WritableByteChannel;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface BufferedSink extends Sink, WritableByteChannel {
-    long A0(Source source);
-
     BufferedSink K1(long j10);
 
     BufferedSink O();
@@ -14,16 +12,18 @@ public interface BufferedSink extends Sink, WritableByteChannel {
 
     BufferedSink a2(ByteString byteString);
 
-    Buffer e();
+    BufferedSink d0();
 
-    BufferedSink e0();
+    Buffer e();
 
     @Override // okio.Sink, java.io.Flushable
     void flush();
 
     OutputStream k2();
 
-    BufferedSink o0(String str);
+    BufferedSink n0(String str);
+
+    BufferedSink w0(String str, int i10, int i11);
 
     BufferedSink write(byte[] bArr);
 
@@ -35,5 +35,5 @@ public interface BufferedSink extends Sink, WritableByteChannel {
 
     BufferedSink writeShort(int i10);
 
-    BufferedSink y0(String str, int i10, int i11);
+    long y0(Source source);
 }

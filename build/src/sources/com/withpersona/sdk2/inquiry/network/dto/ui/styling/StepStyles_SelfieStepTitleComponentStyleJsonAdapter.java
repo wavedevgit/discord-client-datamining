@@ -44,13 +44,13 @@ public final class StepStyles_SelfieStepTitleComponentStyleJsonAdapter extends h
         StepStyles.StepTextBasedComponentStyleContainer stepTextBasedComponentStyleContainer = null;
         StepStyles.StepTextBasedComponentStyleContainer stepTextBasedComponentStyleContainer2 = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 stepTextBasedComponentStyleContainer = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 stepTextBasedComponentStyleContainer2 = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
             }
         }
@@ -63,9 +63,9 @@ public final class StepStyles_SelfieStepTitleComponentStyleJsonAdapter extends h
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (selfieStepTitleComponentStyle != null) {
             writer.l();
-            writer.t0("base");
+            writer.A0("base");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, selfieStepTitleComponentStyle.getBase());
-            writer.t0("selfieProcessingTitle");
+            writer.A0("selfieProcessingTitle");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, selfieStepTitleComponentStyle.getSelfieProcessingTitle());
             writer.E();
             return;

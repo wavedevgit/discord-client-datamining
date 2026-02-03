@@ -25,17 +25,17 @@ public class c extends b {
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f49543a;
+        static final /* synthetic */ int[] f49754a;
 
         static {
             int[] iArr = new int[e.b.values().length];
-            f49543a = iArr;
+            f49754a = iArr;
             try {
                 iArr[e.b.ADD.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f49543a[e.b.INVERT.ordinal()] = 2;
+                f49754a[e.b.INVERT.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
         }
@@ -75,7 +75,7 @@ public class c extends b {
                     bVar2 = null;
                 } else {
                     this.E.add(0, v11);
-                    int i11 = a.f49543a[eVar2.i().ordinal()];
+                    int i11 = a.f49754a[eVar2.i().ordinal()];
                     if (i11 == 1 || i11 == 2) {
                         bVar2 = v11;
                     }
@@ -112,13 +112,13 @@ public class c extends b {
         this.I = f10;
         super.M(f10);
         if (this.D != null) {
-            f10 = ((((Float) this.D.h()).floatValue() * this.f49531q.c().i()) - this.f49531q.c().p()) / (this.f49530p.K().e() + 0.01f);
+            f10 = ((((Float) this.D.h()).floatValue() * this.f49742q.c().i()) - this.f49742q.c().p()) / (this.f49741p.K().e() + 0.01f);
         }
         if (this.D == null) {
-            f10 -= this.f49531q.s();
+            f10 -= this.f49742q.s();
         }
-        if (this.f49531q.w() != 0.0f && !"__container".equals(this.f49531q.j())) {
-            f10 /= this.f49531q.w();
+        if (this.f49742q.w() != 0.0f && !"__container".equals(this.f49742q.j())) {
+            f10 /= this.f49742q.w();
         }
         for (int size = this.E.size() - 1; size >= 0; size--) {
             ((b) this.E.get(size)).M(f10);
@@ -158,7 +158,7 @@ public class c extends b {
         super.e(rectF, matrix, z10);
         for (int size = this.E.size() - 1; size >= 0; size--) {
             this.F.set(0.0f, 0.0f, 0.0f, 0.0f);
-            ((b) this.E.get(size)).e(this.F, this.f49529o, true);
+            ((b) this.E.get(size)).e(this.F, this.f49740o, true);
             rectF.union(this.F);
         }
     }
@@ -168,9 +168,9 @@ public class c extends b {
         boolean z10;
         boolean clipRect;
         l5.e.b("CompositionLayer#draw");
-        this.G.set(0.0f, 0.0f, this.f49531q.m(), this.f49531q.l());
+        this.G.set(0.0f, 0.0f, this.f49742q.m(), this.f49742q.l());
         matrix.mapRect(this.G);
-        if (this.f49530p.g0() && this.E.size() > 1 && i10 != 255) {
+        if (this.f49741p.g0() && this.E.size() > 1 && i10 != 255) {
             z10 = true;
         } else {
             z10 = false;
@@ -185,7 +185,7 @@ public class c extends b {
             i10 = 255;
         }
         for (int size = this.E.size() - 1; size >= 0; size--) {
-            if ((this.J || !"__container".equals(this.f49531q.j())) && !this.G.isEmpty()) {
+            if ((this.J || !"__container".equals(this.f49742q.j())) && !this.G.isEmpty()) {
                 clipRect = canvas.clipRect(this.G);
             } else {
                 clipRect = true;

@@ -45,15 +45,15 @@ public final class StepStyles_DocumentStepTextBasedComponentStyleJsonAdapter ext
         StepStyles.StepTextBasedComponentStyleContainer stepTextBasedComponentStyleContainer2 = null;
         StepStyles.StepTextBasedComponentStyleContainer stepTextBasedComponentStyleContainer3 = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 stepTextBasedComponentStyleContainer = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 stepTextBasedComponentStyleContainer2 = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
-            } else if (t02 == 2) {
+            } else if (A0 == 2) {
                 stepTextBasedComponentStyleContainer3 = (StepStyles.StepTextBasedComponentStyleContainer) this.nullableStepTextBasedComponentStyleContainerAdapter.fromJson(reader);
             }
         }
@@ -66,11 +66,11 @@ public final class StepStyles_DocumentStepTextBasedComponentStyleJsonAdapter ext
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (documentStepTextBasedComponentStyle != null) {
             writer.l();
-            writer.t0("base");
+            writer.A0("base");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, documentStepTextBasedComponentStyle.getBase());
-            writer.t0("documentProcessingText");
+            writer.A0("documentProcessingText");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, documentStepTextBasedComponentStyle.getDocumentProcessingText());
-            writer.t0("imageName");
+            writer.A0("imageName");
             this.nullableStepTextBasedComponentStyleContainerAdapter.toJson(writer, documentStepTextBasedComponentStyle.getImageName());
             writer.E();
             return;

@@ -8,25 +8,25 @@ import og.ye;
 public class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f53621a;
+    private final int f53342a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final PointF f53622b;
+    private final PointF f53343b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f(int i10, PointF pointF) {
-        this.f53621a = i10;
-        this.f53622b = pointF;
+        this.f53342a = i10;
+        this.f53343b = pointF;
     }
 
     public PointF a() {
-        return this.f53622b;
+        return this.f53343b;
     }
 
     public String toString() {
         xe a10 = ye.a("FaceLandmark");
-        a10.b("type", this.f53621a);
-        a10.c(ViewProps.POSITION, this.f53622b);
+        a10.b("type", this.f53342a);
+        a10.c(ViewProps.POSITION, this.f53343b);
         return a10.toString();
     }
 }

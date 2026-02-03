@@ -128,9 +128,9 @@ public final class ButtonSubmitComponentStyleJsonAdapter extends h {
         AttributeStyles.ButtonBasedBorderRadiusStyle buttonBasedBorderRadiusStyle = null;
         AttributeStyles.ButtonBasedBorderWidthStyle buttonBasedBorderWidthStyle = null;
         while (reader.hasNext()) {
-            switch (reader.t0(this.options)) {
+            switch (reader.A0(this.options)) {
                 case -1:
-                    reader.F0();
+                    reader.E0();
                     reader.P();
                     break;
                 case 0:
@@ -189,35 +189,35 @@ public final class ButtonSubmitComponentStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (buttonSubmitComponentStyle != null) {
             writer.l();
-            writer.t0(ViewProps.PADDING);
+            writer.A0(ViewProps.PADDING);
             this.nullableButtonBasedPaddingStyleAdapter.toJson(writer, buttonSubmitComponentStyle.getPadding());
-            writer.t0(ViewProps.MARGIN);
+            writer.A0(ViewProps.MARGIN);
             this.nullableButtonBasedMarginStyleAdapter.toJson(writer, buttonSubmitComponentStyle.getMargin());
-            writer.t0("justify");
+            writer.A0("justify");
             this.nullableButtonBasedJustifyStyleAdapter.toJson(writer, buttonSubmitComponentStyle.getJustify());
-            writer.t0(ViewProps.FONT_FAMILY);
+            writer.A0(ViewProps.FONT_FAMILY);
             this.nullableButtonBasedFontFamilyStyleAdapter.toJson(writer, buttonSubmitComponentStyle.getFontFamily());
-            writer.t0(ViewProps.FONT_SIZE);
+            writer.A0(ViewProps.FONT_SIZE);
             this.nullableButtonBasedFontSizeStyleAdapter.toJson(writer, buttonSubmitComponentStyle.getFontSize());
-            writer.t0(ViewProps.FONT_WEIGHT);
+            writer.A0(ViewProps.FONT_WEIGHT);
             this.nullableButtonBasedFontWeightStyleAdapter.toJson(writer, buttonSubmitComponentStyle.getFontWeight());
-            writer.t0(ViewProps.LETTER_SPACING);
+            writer.A0(ViewProps.LETTER_SPACING);
             this.nullableButtonBasedLetterSpacingStyleAdapter.toJson(writer, buttonSubmitComponentStyle.getLetterSpacing());
-            writer.t0(ViewProps.LINE_HEIGHT);
+            writer.A0(ViewProps.LINE_HEIGHT);
             this.nullableButtonBasedLineHeightStyleAdapter.toJson(writer, buttonSubmitComponentStyle.getLineHeight());
-            writer.t0("textColor");
+            writer.A0("textColor");
             this.nullableButtonBasedTextColorStyleAdapter.toJson(writer, buttonSubmitComponentStyle.getTextColor());
-            writer.t0("height");
+            writer.A0("height");
             this.nullableButtonBasedHeightStyleAdapter.toJson(writer, buttonSubmitComponentStyle.getHeight());
-            writer.t0("width");
+            writer.A0("width");
             this.nullableButtonBasedWidthStyleAdapter.toJson(writer, buttonSubmitComponentStyle.getWidth());
-            writer.t0(ViewProps.BACKGROUND_COLOR);
+            writer.A0(ViewProps.BACKGROUND_COLOR);
             this.nullableButtonBasedBackgroundColorStyleAdapter.toJson(writer, buttonSubmitComponentStyle.getBackgroundColor());
-            writer.t0(ViewProps.BORDER_COLOR);
+            writer.A0(ViewProps.BORDER_COLOR);
             this.nullableButtonBasedBorderColorStyleAdapter.toJson(writer, buttonSubmitComponentStyle.getBorderColor());
-            writer.t0("borderRadius");
+            writer.A0("borderRadius");
             this.nullableButtonBasedBorderRadiusStyleAdapter.toJson(writer, buttonSubmitComponentStyle.getBorderRadius());
-            writer.t0(ViewProps.BORDER_WIDTH);
+            writer.A0(ViewProps.BORDER_WIDTH);
             this.nullableButtonBasedBorderWidthStyleAdapter.toJson(writer, buttonSubmitComponentStyle.getBorderWidth());
             writer.E();
             return;

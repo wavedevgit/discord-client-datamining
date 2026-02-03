@@ -9,7 +9,7 @@ import com.google.android.gms.internal.play_billing.v4;
 public interface t {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final com.google.android.gms.internal.play_billing.m f8749a = com.google.android.gms.internal.play_billing.m.c("com.android.vending.billing.PURCHASES_UPDATED", f5.PURCHASES_UPDATED_ACTION, "com.android.vending.billing.LOCAL_BROADCAST_PURCHASES_UPDATED", f5.LOCAL_PURCHASES_UPDATED_ACTION, "com.android.vending.billing.ALTERNATIVE_BILLING", f5.ALTERNATIVE_BILLING_ACTION);
+    public static final com.google.android.gms.internal.play_billing.m f7717a = com.google.android.gms.internal.play_billing.m.c("com.android.vending.billing.PURCHASES_UPDATED", f5.PURCHASES_UPDATED_ACTION, "com.android.vending.billing.LOCAL_BROADCAST_PURCHASES_UPDATED", f5.LOCAL_PURCHASES_UPDATED_ACTION, "com.android.vending.billing.ALTERNATIVE_BILLING", f5.ALTERNATIVE_BILLING_ACTION);
 
     void a(v4 v4Var, int i10);
 

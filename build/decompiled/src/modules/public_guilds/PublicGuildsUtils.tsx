@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/public_guilds/PublicGuildsUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun55883: for (var _fun55883_ip = 0;;) switch (_fun55883_ip) {
+        _fun55941: for (var _fun55941_ip = 0;;) switch (_fun55941_ip) {
             case 0:
                 var3 = arg0;
                 var4 = _closure1_slot1;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4.bind(var1)(var0);
                 var0 = var0.bind(var1)(var3);
                 if (!var0) {
-                    _fun55883_ip = 55;
-                    continue _fun55883
+                    _fun55941_ip = 55;
+                    continue _fun55941
                 }
             case 36:
                 var1 = var3.messageReference;
@@ -59,16 +59,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4 === var1;
             case 55:
                 if (var0) {
-                    _fun55883_ip = 95;
-                    continue _fun55883
+                    _fun55941_ip = 95;
+                    continue _fun55941
                 }
             case 58:
                 var4 = var3.author;
                 var1 = null;
                 var1 = var1 != var4;
                 if (!var1) {
-                    _fun55883_ip = 92;
-                    continue _fun55883
+                    _fun55941_ip = 92;
+                    continue _fun55941
                 }
             case 73:
                 var3 = var3.author;
@@ -124,4 +124,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackEnableCommunityFlow = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6747, 660, 6748, 6749, 795, 4298, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6752, 660, 6753, 6754, 795, 4302, 2]);

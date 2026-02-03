@@ -3,26 +3,26 @@ package pg;
 public final class ph {
 
     /* renamed from: a  reason: collision with root package name */
-    private xd f45736a;
+    private xd f45694a;
 
     /* renamed from: b  reason: collision with root package name */
-    private rd f45737b;
+    private rd f45695b;
 
     /* renamed from: c  reason: collision with root package name */
-    private wh f45738c;
+    private wh f45696c;
 
     public final ph c(rd rdVar) {
-        this.f45737b = rdVar;
+        this.f45695b = rdVar;
         return this;
     }
 
     public final ph d(xd xdVar) {
-        this.f45736a = xdVar;
+        this.f45694a = xdVar;
         return this;
     }
 
     public final ph e(wh whVar) {
-        this.f45738c = whVar;
+        this.f45696c = whVar;
         return this;
     }
 

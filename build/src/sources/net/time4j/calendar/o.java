@@ -14,50 +14,50 @@ public class o implements Comparable, Serializable {
     private static final long serialVersionUID = -4556668597489844917L;
 
     /* renamed from: x  reason: collision with root package name */
-    private static final o[] f40358x;
+    private static final o[] f40397x;
 
     /* renamed from: y  reason: collision with root package name */
-    private static final Map f40359y;
+    private static final Map f40398y;
 
     /* renamed from: z  reason: collision with root package name */
-    private static final Map f40360z;
+    private static final Map f40399z;
     private final int number;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final String[] f40346d = {"jia", "yi", "bing", "ding", "wu", "ji", "geng", "xin", "ren", "gui"};
+    private static final String[] f40385d = {"jia", "yi", "bing", "ding", "wu", "ji", "geng", "xin", "ren", "gui"};
 
     /* renamed from: e  reason: collision with root package name */
-    private static final String[] f40347e = {"jiǎ", "yǐ", "bǐng", "dīng", "wù", "jǐ", "gēng", "xīn", "rén", "guǐ"};
+    private static final String[] f40386e = {"jiǎ", "yǐ", "bǐng", "dīng", "wù", "jǐ", "gēng", "xīn", "rén", "guǐ"};
 
     /* renamed from: i  reason: collision with root package name */
-    private static final String[] f40348i = {"甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸"};
+    private static final String[] f40387i = {"甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸"};
 
     /* renamed from: o  reason: collision with root package name */
-    private static final String[] f40349o = {"갑", "을", "병", "정", "무", "기", "경", "신", "임", "계"};
+    private static final String[] f40388o = {"갑", "을", "병", "정", "무", "기", "경", "신", "임", "계"};
 
     /* renamed from: p  reason: collision with root package name */
-    private static final String[] f40350p = {"giáp", "ất", "bính", "đinh", "mậu", "kỷ", "canh", "tân", "nhâm", "quý"};
+    private static final String[] f40389p = {"giáp", "ất", "bính", "đinh", "mậu", "kỷ", "canh", "tân", "nhâm", "quý"};
 
     /* renamed from: q  reason: collision with root package name */
-    private static final String[] f40351q = {"Цзя", "И", "Бин", "Дин", "У", "Цзи", "Гэн", "Синь", "Жэнь", "Гуй"};
+    private static final String[] f40390q = {"Цзя", "И", "Бин", "Дин", "У", "Цзи", "Гэн", "Синь", "Жэнь", "Гуй"};
 
     /* renamed from: r  reason: collision with root package name */
-    private static final String[] f40352r = {"zi", "chou", "yin", "mao", "chen", "si", "wu", "wei", "shen", "you", "xu", "hai"};
+    private static final String[] f40391r = {"zi", "chou", "yin", "mao", "chen", "si", "wu", "wei", "shen", "you", "xu", "hai"};
 
     /* renamed from: s  reason: collision with root package name */
-    private static final String[] f40353s = {"zǐ", "chǒu", "yín", "mǎo", "chén", "sì", "wǔ", "wèi", "shēn", "yǒu", "xū", "hài"};
+    private static final String[] f40392s = {"zǐ", "chǒu", "yín", "mǎo", "chén", "sì", "wǔ", "wèi", "shēn", "yǒu", "xū", "hài"};
 
     /* renamed from: t  reason: collision with root package name */
-    private static final String[] f40354t = {"子", "丑", "寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥"};
+    private static final String[] f40393t = {"子", "丑", "寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥"};
 
     /* renamed from: u  reason: collision with root package name */
-    private static final String[] f40355u = {"자", "축", "인", "묘", "진", "사", "오", "미", "신", "유", "술", "해"};
+    private static final String[] f40394u = {"자", "축", "인", "묘", "진", "사", "오", "미", "신", "유", "술", "해"};
 
     /* renamed from: v  reason: collision with root package name */
-    private static final String[] f40356v = {"tí", "sửu", "dần", "mão", "thìn", "tị", "ngọ", "mùi", "thân", "dậu", "tuất", "hợi"};
+    private static final String[] f40395v = {"tí", "sửu", "dần", "mão", "thìn", "tị", "ngọ", "mùi", "thân", "dậu", "tuất", "hợi"};
 
     /* renamed from: w  reason: collision with root package name */
-    private static final String[] f40357w = {"Цзы", "Чоу", "Инь", "Мао", "Чэнь", "Сы", "У", "Вэй", "Шэнь", "Ю", "Сюй", "Хай"};
+    private static final String[] f40396w = {"Цзы", "Чоу", "Инь", "Мао", "Чэнь", "Сы", "У", "Вэй", "Шэнь", "Ю", "Сюй", "Хай"};
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public enum a {
@@ -76,13 +76,13 @@ public class o implements Comparable, Serializable {
 
         public String a(Locale locale) {
             String language = locale.getLanguage();
-            Map map = o.f40360z;
+            Map map = o.f40399z;
             if (language.isEmpty()) {
                 language = "root";
             }
             String[] strArr = (String[]) map.get(language);
             if (strArr == null) {
-                strArr = o.f40353s;
+                strArr = o.f40392s;
             }
             return strArr[ordinal()];
         }
@@ -103,13 +103,13 @@ public class o implements Comparable, Serializable {
 
         public String a(Locale locale) {
             String language = locale.getLanguage();
-            Map map = o.f40359y;
+            Map map = o.f40398y;
             if (language.isEmpty()) {
                 language = "root";
             }
             String[] strArr = (String[]) map.get(language);
             if (strArr == null) {
-                strArr = o.f40347e;
+                strArr = o.f40386e;
             }
             return strArr[ordinal()];
         }
@@ -123,25 +123,25 @@ public class o implements Comparable, Serializable {
             oVarArr[i10] = new o(i11);
             i10 = i11;
         }
-        f40358x = oVarArr;
+        f40397x = oVarArr;
         HashMap hashMap = new HashMap();
-        hashMap.put("root", f40346d);
-        String[] strArr = f40348i;
+        hashMap.put("root", f40385d);
+        String[] strArr = f40387i;
         hashMap.put("zh", strArr);
         hashMap.put("ja", strArr);
-        hashMap.put("ko", f40349o);
-        hashMap.put("vi", f40350p);
-        hashMap.put("ru", f40351q);
-        f40359y = Collections.unmodifiableMap(hashMap);
+        hashMap.put("ko", f40388o);
+        hashMap.put("vi", f40389p);
+        hashMap.put("ru", f40390q);
+        f40398y = Collections.unmodifiableMap(hashMap);
         HashMap hashMap2 = new HashMap();
-        hashMap2.put("root", f40352r);
-        String[] strArr2 = f40354t;
+        hashMap2.put("root", f40391r);
+        String[] strArr2 = f40393t;
         hashMap2.put("zh", strArr2);
         hashMap2.put("ja", strArr2);
-        hashMap2.put("ko", f40355u);
-        hashMap2.put("vi", f40356v);
-        hashMap2.put("ru", f40357w);
-        f40360z = Collections.unmodifiableMap(hashMap2);
+        hashMap2.put("ko", f40394u);
+        hashMap2.put("vi", f40395v);
+        hashMap2.put("ru", f40396w);
+        f40399z = Collections.unmodifiableMap(hashMap2);
         HashSet hashSet = new HashSet();
         hashSet.add("zh");
         hashSet.add("ja");
@@ -154,18 +154,18 @@ public class o implements Comparable, Serializable {
         this.number = i10;
     }
 
-    public static o l(int i10) {
+    public static o k(int i10) {
         if (i10 >= 1 && i10 <= 60) {
-            return f40358x[i10 - 1];
+            return f40397x[i10 - 1];
         }
         throw new IllegalArgumentException("Out of range: " + i10);
     }
 
-    public static o m(b bVar, a aVar) {
+    public static o l(b bVar, a aVar) {
         int ordinal = bVar.ordinal();
-        o l10 = l(ordinal + 1 + ht.c.c((aVar.ordinal() - ordinal) * 25, 60));
-        if (l10.k() == bVar && l10.h() == aVar) {
-            return l10;
+        o k10 = k(ordinal + 1 + kt.c.c((aVar.ordinal() - ordinal) * 25, 60));
+        if (k10.j() == bVar && k10.h() == aVar) {
+            return k10;
         }
         throw new IllegalArgumentException("Invalid combination of stem and branch.");
     }
@@ -331,7 +331,7 @@ public class o implements Comparable, Serializable {
             }
             if (bVar != null && aVar != 0) {
                 parsePosition.setIndex(index);
-                return m(bVar, aVar);
+                return l(bVar, aVar);
             } else if (z10 && !z11) {
                 return o(charSequence, parsePosition, Locale.ROOT, true);
             } else {
@@ -412,17 +412,17 @@ public class o implements Comparable, Serializable {
 
     public String i(Locale locale) {
         String str;
-        b k10 = k();
+        b j10 = j();
         a h10 = h();
         if (A.contains(locale.getLanguage())) {
             str = "";
         } else {
             str = "-";
         }
-        return k10.a(locale) + str + h10.a(locale);
+        return j10.a(locale) + str + h10.a(locale);
     }
 
-    public b k() {
+    public b j() {
         int i10 = 10;
         int i11 = this.number % 10;
         if (i11 != 0) {
@@ -432,7 +432,7 @@ public class o implements Comparable, Serializable {
     }
 
     Object readResolve() {
-        return l(this.number);
+        return k(this.number);
     }
 
     public String toString() {

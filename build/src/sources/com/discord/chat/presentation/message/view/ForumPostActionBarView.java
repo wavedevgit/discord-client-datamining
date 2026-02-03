@@ -57,7 +57,7 @@ public final class ForumPostActionBarView extends ConstraintLayout {
     public static final Unit configure_CgeVRR0$lambda$8$lambda$7(int i10, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("count", String.valueOf(i10));
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     private final void setReactions(List<? extends ReactionView.Reaction> list, ReactionView.ReactionsTheme reactionsTheme, View.OnClickListener onClickListener, Function1<? super ReactionView.Reaction, Unit> function1, Function1<? super ReactionView.Reaction, Unit> function12) {
@@ -85,7 +85,7 @@ public final class ForumPostActionBarView extends ConstraintLayout {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setReactions$lambda$12(ReactionView.Reaction it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* renamed from: setSharePrompt-LdU2QRA  reason: not valid java name */
@@ -145,8 +145,8 @@ public final class ForumPostActionBarView extends ConstraintLayout {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setSharePrompt_LdU2QRA$lambda$16$lambda$15(Function2 function2, String str, LinkContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
-        function2.invoke(MessageId.m1086boximpl(str), node);
-        return Unit.f33074a;
+        function2.invoke(MessageId.m1085boximpl(str), node);
+        return Unit.f32464a;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:27:0x011b  */

@@ -22,7 +22,7 @@ import org.jetbrains.annotations.NotNull;
 public abstract class VariableDescriptorImpl extends DeclarationDescriptorNonRootImpl implements VariableDescriptor {
 
     /* renamed from: p  reason: collision with root package name */
-    protected KotlinType f33649p;
+    protected KotlinType f33039p;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public VariableDescriptorImpl(@NotNull DeclarationDescriptor declarationDescriptor, @NotNull Annotations annotations, @NotNull Name name, KotlinType kotlinType, @NotNull SourceElement sourceElement) {
@@ -39,7 +39,7 @@ public abstract class VariableDescriptorImpl extends DeclarationDescriptorNonRoo
         if (sourceElement == null) {
             a(3);
         }
-        this.f33649p = kotlinType;
+        this.f33039p = kotlinType;
     }
 
     private static /* synthetic */ void a(int i10) {
@@ -189,7 +189,7 @@ public abstract class VariableDescriptorImpl extends DeclarationDescriptorNonRoo
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ValueDescriptor
     @NotNull
     public KotlinType getType() {
-        KotlinType kotlinType = this.f33649p;
+        KotlinType kotlinType = this.f33039p;
         if (kotlinType == null) {
             a(4);
         }
@@ -229,7 +229,7 @@ public abstract class VariableDescriptorImpl extends DeclarationDescriptorNonRoo
     }
 
     public void setOutType(KotlinType kotlinType) {
-        this.f33649p = kotlinType;
+        this.f33039p = kotlinType;
     }
 
     public /* bridge */ /* synthetic */ DeclarationDescriptorNonRoot substitute(TypeSubstitutor typeSubstitutor) {

@@ -10,15 +10,15 @@ import java.util.concurrent.TimeUnit;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ij.a f28214a;
+    private static final ij.a f28437a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static volatile ij.a f28215b;
+    private static volatile ij.a f28438b;
 
     /* renamed from: ij.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    private static class C0378b implements ij.a {
-        private C0378b() {
+    private static class C0380b implements ij.a {
+        private C0380b() {
         }
 
         @Override // ij.a
@@ -34,12 +34,12 @@ public abstract class b {
     }
 
     static {
-        C0378b c0378b = new C0378b();
-        f28214a = c0378b;
-        f28215b = c0378b;
+        C0380b c0380b = new C0380b();
+        f28437a = c0380b;
+        f28438b = c0380b;
     }
 
     public static ij.a a() {
-        return f28215b;
+        return f28438b;
     }
 }

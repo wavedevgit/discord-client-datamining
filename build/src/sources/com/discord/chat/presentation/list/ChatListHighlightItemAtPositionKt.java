@@ -77,7 +77,7 @@ public final class ChatListHighlightItemAtPositionKt {
 
     public static final Unit animateBackgroundColor$anim$lambda$0(Animator it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public static final void animateBackgroundColor$anim$lambda$2$lambda$1(View view, ValueAnimator valueAnimator) {
@@ -90,7 +90,7 @@ public final class ChatListHighlightItemAtPositionKt {
     public static final Unit animateBackgroundColor$lambda$3(int i10, int i11, long j10, View view, Animator it) {
         Intrinsics.checkNotNullParameter(it, "it");
         animateBackgroundColor$anim$default(j10, view, i10, i11, null, 16, null);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public static final void chatListHighlightItemAtPosition(@NotNull RecyclerView recyclerView, int i10, long j10) {

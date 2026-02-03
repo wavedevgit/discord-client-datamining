@@ -76,13 +76,13 @@ public final class Rive {
         cppInitialize();
     }
 
-    @jr.c
+    @lr.c
     public final boolean setFallbackFont(@NotNull byte[] byteArray) {
         Intrinsics.checkNotNullParameter(byteArray, "byteArray");
         return NativeFontHelper.INSTANCE.cppRegisterFallbackFont(byteArray);
     }
 
-    @jr.c
+    @lr.c
     public final boolean setFallbackFont(Fonts.FontOpts fontOpts) {
         byte[] fallbackFontBytes = FontHelper.Companion.getFallbackFontBytes(fontOpts);
         return fallbackFontBytes != null && NativeFontHelper.INSTANCE.cppRegisterFallbackFont(fallbackFontBytes);

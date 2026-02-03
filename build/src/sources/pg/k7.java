@@ -5,7 +5,7 @@ import ui.c;
 final class k7 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k7 f45594a = new k7();
+    static final k7 f45552a = new k7();
 
     static {
         c.b a10 = ui.c.a("scoreType");

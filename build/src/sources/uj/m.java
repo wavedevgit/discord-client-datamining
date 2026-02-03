@@ -7,15 +7,15 @@ import mg.sl;
 public final class m implements tj.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final sl f50386a;
+    private final sl f50673a;
 
     public m(sl slVar) {
-        this.f50386a = slVar;
+        this.f50673a = slVar;
     }
 
     @Override // tj.a
     public final Rect a() {
-        Point[] e10 = this.f50386a.e();
+        Point[] e10 = this.f50673a.e();
         if (e10 != null) {
             int i10 = Integer.MIN_VALUE;
             int i11 = Integer.MAX_VALUE;
@@ -34,21 +34,21 @@ public final class m implements tj.a {
 
     @Override // tj.a
     public final String b() {
-        return this.f50386a.d();
+        return this.f50673a.d();
     }
 
     @Override // tj.a
     public final int c() {
-        return this.f50386a.c();
+        return this.f50673a.c();
     }
 
     @Override // tj.a
     public final Point[] d() {
-        return this.f50386a.e();
+        return this.f50673a.e();
     }
 
     @Override // tj.a
     public final int getFormat() {
-        return this.f50386a.b();
+        return this.f50673a.b();
     }
 }

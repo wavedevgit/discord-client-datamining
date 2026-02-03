@@ -6,30 +6,30 @@ import java.util.List;
 public final class i extends j {
 
     /* renamed from: o  reason: collision with root package name */
-    final transient int f14885o;
+    final transient int f13853o;
 
     /* renamed from: p  reason: collision with root package name */
-    final transient int f14886p;
+    final transient int f13854p;
 
     /* renamed from: q  reason: collision with root package name */
-    final /* synthetic */ j f14887q;
+    final /* synthetic */ j f13855q;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i(j jVar, int i10, int i11) {
-        this.f14887q = jVar;
-        this.f14885o = i10;
-        this.f14886p = i11;
+        this.f13855q = jVar;
+        this.f13853o = i10;
+        this.f13854p = i11;
     }
 
     @Override // com.google.android.gms.internal.play_billing.g
     final int c() {
-        return this.f14887q.d() + this.f14885o + this.f14886p;
+        return this.f13855q.d() + this.f13853o + this.f13854p;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.gms.internal.play_billing.g
     public final int d() {
-        return this.f14887q.d() + this.f14885o;
+        return this.f13855q.d() + this.f13853o;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -41,25 +41,25 @@ public final class i extends j {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.gms.internal.play_billing.g
     public final Object[] g() {
-        return this.f14887q.g();
+        return this.f13855q.g();
     }
 
     @Override // java.util.List
     public final Object get(int i10) {
-        b.a(i10, this.f14886p, "index");
-        return this.f14887q.get(i10 + this.f14885o);
+        b.a(i10, this.f13854p, "index");
+        return this.f13855q.get(i10 + this.f13853o);
     }
 
     @Override // com.google.android.gms.internal.play_billing.j
     public final j h(int i10, int i11) {
-        b.d(i10, i11, this.f14886p);
-        int i12 = this.f14885o;
-        return this.f14887q.subList(i10 + i12, i11 + i12);
+        b.d(i10, i11, this.f13854p);
+        int i12 = this.f13853o;
+        return this.f13855q.subList(i10 + i12, i11 + i12);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public final int size() {
-        return this.f14886p;
+        return this.f13854p;
     }
 
     @Override // com.google.android.gms.internal.play_billing.j, java.util.List

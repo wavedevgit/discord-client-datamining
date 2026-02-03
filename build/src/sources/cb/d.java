@@ -9,18 +9,18 @@ import android.util.Pair;
 import androidx.core.util.Pools$SynchronizedPool;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
-import jr.l;
 import kotlin.Lazy;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
+import lr.l;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f8030a = new d();
+    public static final d f7017a = new d();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Lazy f8031b = l.b(new Function0() { // from class: cb.b
+    private static final Lazy f7018b = l.a(new Function0() { // from class: cb.b
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             Pools$SynchronizedPool b10;
@@ -30,16 +30,16 @@ public final class d {
     });
 
     /* renamed from: c  reason: collision with root package name */
-    private static boolean f8032c;
+    private static boolean f7019c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static boolean f8033d;
+    private static boolean f7020d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f8034a;
+        public static final /* synthetic */ int[] f7021a;
 
         static {
             Bitmap.Config config;
@@ -77,7 +77,7 @@ public final class d {
                 iArr[config.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
-            f8034a = iArr;
+            f7021a = iArr;
         }
     }
 
@@ -90,15 +90,15 @@ public final class d {
     }
 
     private final ByteBuffer c() {
-        if (f8032c) {
-            return r8.b.f48274a.acquire();
+        if (f7019c) {
+            return r8.b.f48583a.acquire();
         }
         return (ByteBuffer) g().acquire();
     }
 
     public static final Pair d(InputStream inputStream) {
         if (inputStream != null) {
-            d dVar = f8030a;
+            d dVar = f7017a;
             ByteBuffer k10 = dVar.k();
             BitmapFactory.Options options = new BitmapFactory.Options();
             options.inJustDecodeBounds = true;
@@ -112,7 +112,7 @@ public final class d {
                 dVar.l(k10);
                 return pair;
             } catch (Throwable th2) {
-                f8030a.l(k10);
+                f7017a.l(k10);
                 throw th2;
             }
         }
@@ -121,7 +121,7 @@ public final class d {
 
     public static final f e(InputStream inputStream) {
         if (inputStream != null) {
-            d dVar = f8030a;
+            d dVar = f7017a;
             ByteBuffer k10 = dVar.k();
             BitmapFactory.Options options = new BitmapFactory.Options();
             options.inJustDecodeBounds = true;
@@ -136,7 +136,7 @@ public final class d {
                 dVar.l(k10);
                 return fVar;
             } catch (Throwable th2) {
-                f8030a.l(k10);
+                f7017a.l(k10);
                 throw th2;
             }
         }
@@ -144,7 +144,7 @@ public final class d {
     }
 
     private final Pools$SynchronizedPool g() {
-        return (Pools$SynchronizedPool) f8031b.getValue();
+        return (Pools$SynchronizedPool) f7018b.getValue();
     }
 
     public static final int h(Bitmap.Config config) {
@@ -152,7 +152,7 @@ public final class d {
         if (config == null) {
             i10 = -1;
         } else {
-            i10 = a.f8034a[config.ordinal()];
+            i10 = a.f7021a[config.ordinal()];
         }
         switch (i10) {
             case 1:
@@ -209,13 +209,13 @@ public final class d {
     }
 
     private final void l(ByteBuffer byteBuffer) {
-        if (!f8032c) {
+        if (!f7019c) {
             g().release(byteBuffer);
         }
     }
 
     public final Bitmap f(InputStream inputStream, Rect rect, BitmapFactory.Options options) {
-        if (f8033d) {
+        if (f7020d) {
             try {
                 return BitmapFactory.decodeStream(inputStream, rect, options);
             } catch (IllegalArgumentException unused) {

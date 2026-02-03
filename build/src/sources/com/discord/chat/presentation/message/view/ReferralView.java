@@ -176,8 +176,8 @@ public final class ReferralView extends CardView {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bind$lambda$13$lambda$11(Function2 function2, ReferralMessageAccessory referralMessageAccessory, LinkContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
-        function2.invoke(MessageId.m1086boximpl(referralMessageAccessory.mo538getMessageId3Eiw7ao()), node);
-        return Unit.f33074a;
+        function2.invoke(MessageId.m1085boximpl(referralMessageAccessory.mo538getMessageId3Eiw7ao()), node);
+        return Unit.f32464a;
     }
 
     private final boolean didResolve(long j10) {
@@ -403,7 +403,7 @@ public final class ReferralView extends CardView {
             }
             this.lastState = new Companion.State.Resolved(accessory.getItemId().longValue());
         } else {
-            throw new jr.p();
+            throw new lr.p();
         }
     }
 

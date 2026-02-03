@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var4.bind(var5)(var3, var1);
             var1 = var2.subscribeFromItem;
             var0 = function() { // Environment: var0
-                _fun110735: for (var _fun110735_ip = 0;;) switch (_fun110735_ip) {
+                _fun110795: for (var _fun110795_ip = 0;;) switch (_fun110795_ip) {
                     case 0:
                         var2 = _closure2_slot0;
                         var1 = var2.getTargetDimensions;
@@ -80,8 +80,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = var0.width;
                         var0 = var3 === var0;
                         if (!var0) {
-                            _fun110735_ip = 69;
-                            continue _fun110735
+                            _fun110795_ip = 69;
+                            continue _fun110795
                         }
                     case 56:
                         var4 = _closure3_slot0;
@@ -89,8 +89,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = var2 === var4;
                     case 69:
                         if (var0) {
-                            _fun110735_ip = 123;
-                            continue _fun110735
+                            _fun110795_ip = 123;
+                            continue _fun110795
                         }
                     case 72:
                         var0 = {};
@@ -119,4 +119,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 8029, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 8034, 2]);

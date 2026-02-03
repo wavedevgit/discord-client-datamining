@@ -11,7 +11,7 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.flow.FlowCollector;
 import org.jetbrains.annotations.NotNull;
-import pr.b;
+import rr.b;
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00010\u00030\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/flow/FlowCollector;", "Lapp/rive/core/CommandQueue$PropertyUpdate;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @e(c = "app.rive.ViewModelInstance$getTriggerFlow$1$1", f = "ViewModelInstance.kt", l = {}, m = "invokeSuspend")
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -41,14 +41,14 @@ final class ViewModelInstance$getTriggerFlow$1$1 extends k implements Function2<
         if (this.label == 0) {
             c.b(obj);
             commandQueue = this.this$0.commandQueue;
-            commandQueue.m153subscribeToPropertyiFQtAB8(this.this$0.m48getInstanceHandleVPLto4w$kotlin_release(), this.$propertyPath, ViewModel.PropertyDataType.TRIGGER);
-            return Unit.f33074a;
+            commandQueue.m151subscribeToPropertyiFQtAB8(this.this$0.m46getInstanceHandleVPLto4w$kotlin_release(), this.$propertyPath, ViewModel.PropertyDataType.TRIGGER);
+            return Unit.f32464a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull FlowCollector flowCollector, Continuation<? super Unit> continuation) {
-        return ((ViewModelInstance$getTriggerFlow$1$1) create(flowCollector, continuation)).invokeSuspend(Unit.f33074a);
+        return ((ViewModelInstance$getTriggerFlow$1$1) create(flowCollector, continuation)).invokeSuspend(Unit.f32464a);
     }
 }

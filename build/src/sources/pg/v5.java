@@ -5,7 +5,7 @@ import ui.c;
 final class v5 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final v5 f45868a = new v5();
+    static final v5 f45826a = new v5();
 
     static {
         c.b a10 = ui.c.a("format");

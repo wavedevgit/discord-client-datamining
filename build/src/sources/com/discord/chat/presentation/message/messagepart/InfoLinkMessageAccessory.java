@@ -91,7 +91,7 @@ public final class InfoLinkMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof InfoLinkMessageAccessory) {
             InfoLinkMessageAccessory infoLinkMessageAccessory = (InfoLinkMessageAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, infoLinkMessageAccessory.messageId) && ChannelId.m1064equalsimpl0(this.channelId, infoLinkMessageAccessory.channelId) && Intrinsics.areEqual(this.attachmentId, infoLinkMessageAccessory.attachmentId) && Intrinsics.areEqual(this.embedId, infoLinkMessageAccessory.embedId) && Intrinsics.areEqual(this.text, infoLinkMessageAccessory.text) && this.icon == infoLinkMessageAccessory.icon;
+            return MessageId.m1089equalsimpl0(this.messageId, infoLinkMessageAccessory.messageId) && ChannelId.m1063equalsimpl0(this.channelId, infoLinkMessageAccessory.channelId) && Intrinsics.areEqual(this.attachmentId, infoLinkMessageAccessory.attachmentId) && Intrinsics.areEqual(this.embedId, infoLinkMessageAccessory.embedId) && Intrinsics.areEqual(this.text, infoLinkMessageAccessory.text) && this.icon == infoLinkMessageAccessory.icon;
         }
         return false;
     }
@@ -127,22 +127,22 @@ public final class InfoLinkMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        int m1091hashCodeimpl = ((MessageId.m1091hashCodeimpl(this.messageId) * 31) + ChannelId.m1065hashCodeimpl(this.channelId)) * 31;
+        int m1090hashCodeimpl = ((MessageId.m1090hashCodeimpl(this.messageId) * 31) + ChannelId.m1064hashCodeimpl(this.channelId)) * 31;
         String str = this.attachmentId;
-        int hashCode = (m1091hashCodeimpl + (str == null ? 0 : str.hashCode())) * 31;
+        int hashCode = (m1090hashCodeimpl + (str == null ? 0 : str.hashCode())) * 31;
         String str2 = this.embedId;
         return ((((hashCode + (str2 != null ? str2.hashCode() : 0)) * 31) + this.text.hashCode()) * 31) + this.icon.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
-        String m1067toStringimpl = ChannelId.m1067toStringimpl(this.channelId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
+        String m1066toStringimpl = ChannelId.m1066toStringimpl(this.channelId);
         String str = this.attachmentId;
         String str2 = this.embedId;
         String str3 = this.text;
         ReactAsset reactAsset = this.icon;
-        return "InfoLinkMessageAccessory(messageId=" + m1093toStringimpl + ", channelId=" + m1067toStringimpl + ", attachmentId=" + str + ", embedId=" + str2 + ", text=" + str3 + ", icon=" + reactAsset + ")";
+        return "InfoLinkMessageAccessory(messageId=" + m1092toStringimpl + ", channelId=" + m1066toStringimpl + ", attachmentId=" + str + ", embedId=" + str2 + ", text=" + str3 + ", icon=" + reactAsset + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

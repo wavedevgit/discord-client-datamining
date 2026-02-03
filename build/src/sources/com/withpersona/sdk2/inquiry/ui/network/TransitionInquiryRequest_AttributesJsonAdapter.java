@@ -15,19 +15,19 @@ import org.jetbrains.annotations.NotNull;
 public final class TransitionInquiryRequest_AttributesJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20469a;
+    private final m.b f19451a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f20470b;
+    private final h f19452b;
 
     public TransitionInquiryRequest_AttributesJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("componentParams");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20469a = a10;
+        this.f19451a = a10;
         h f10 = moshi.f(a0.j(Map.class, String.class, ComponentParam.class), x0.d(), "componentParams");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20470b = f10;
+        this.f19452b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -37,13 +37,13 @@ public final class TransitionInquiryRequest_AttributesJsonAdapter extends h {
         reader.r();
         Map map = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.f20469a);
-            if (t02 != -1) {
-                if (t02 == 0) {
-                    map = (Map) this.f20470b.fromJson(reader);
+            int A0 = reader.A0(this.f19451a);
+            if (A0 != -1) {
+                if (A0 == 0) {
+                    map = (Map) this.f19452b.fromJson(reader);
                 }
             } else {
-                reader.F0();
+                reader.E0();
                 reader.P();
             }
         }
@@ -57,8 +57,8 @@ public final class TransitionInquiryRequest_AttributesJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
             writer.l();
-            writer.t0("componentParams");
-            this.f20470b.toJson(writer, attributes.a());
+            writer.A0("componentParams");
+            this.f19452b.toJson(writer, attributes.a());
             writer.E();
             return;
         }

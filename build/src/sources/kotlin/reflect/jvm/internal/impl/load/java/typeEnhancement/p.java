@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.load.java.typeEnhancement.SignatureEnhan
 class p implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f34202d;
+    private final String f33592d;
 
     public p(String str) {
-        this.f34202d = str;
+        this.f33592d = str;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         Unit p10;
-        p10 = PredefinedEnhancementInfoKt.p(this.f34202d, (SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder) obj);
+        p10 = PredefinedEnhancementInfoKt.p(this.f33592d, (SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder) obj);
         return p10;
     }
 }

@@ -19,20 +19,20 @@ public abstract class EmojiPickerItem {
     public static final class EmojiPlaceholder extends EmojiPickerItem {
 
         /* renamed from: id  reason: collision with root package name */
-        private final long f9951id;
+        private final long f8919id;
 
         public EmojiPlaceholder(long j10) {
             super(null);
-            this.f9951id = j10;
+            this.f8919id = j10;
         }
 
         private final long component1() {
-            return this.f9951id;
+            return this.f8919id;
         }
 
         public static /* synthetic */ EmojiPlaceholder copy$default(EmojiPlaceholder emojiPlaceholder, long j10, int i10, Object obj) {
             if ((i10 & 1) != 0) {
-                j10 = emojiPlaceholder.f9951id;
+                j10 = emojiPlaceholder.f8919id;
             }
             return emojiPlaceholder.copy(j10);
         }
@@ -46,16 +46,16 @@ public abstract class EmojiPickerItem {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof EmojiPlaceholder) && this.f9951id == ((EmojiPlaceholder) obj).f9951id;
+            return (obj instanceof EmojiPlaceholder) && this.f8919id == ((EmojiPlaceholder) obj).f8919id;
         }
 
         public int hashCode() {
-            return Long.hashCode(this.f9951id);
+            return Long.hashCode(this.f8919id);
         }
 
         @Override // com.discord.emoji_picker.EmojiPickerItem
         public long itemId() {
-            return this.f9951id;
+            return this.f8919id;
         }
 
         @Override // com.discord.emoji_picker.EmojiPickerItem
@@ -65,7 +65,7 @@ public abstract class EmojiPickerItem {
 
         @NotNull
         public String toString() {
-            long j10 = this.f9951id;
+            long j10 = this.f8919id;
             return "EmojiPlaceholder(id=" + j10 + ")";
         }
     }
@@ -76,25 +76,25 @@ public abstract class EmojiPickerItem {
         @NotNull
 
         /* renamed from: id  reason: collision with root package name */
-        private final String f9952id;
+        private final String f8920id;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public FooterUpsell(@NotNull String id2) {
             super(null);
             Intrinsics.checkNotNullParameter(id2, "id");
-            this.f9952id = id2;
+            this.f8920id = id2;
         }
 
         public static /* synthetic */ FooterUpsell copy$default(FooterUpsell footerUpsell, String str, int i10, Object obj) {
             if ((i10 & 1) != 0) {
-                str = footerUpsell.f9952id;
+                str = footerUpsell.f8920id;
             }
             return footerUpsell.copy(str);
         }
 
         @NotNull
         public final String component1() {
-            return this.f9952id;
+            return this.f8920id;
         }
 
         @NotNull
@@ -107,21 +107,21 @@ public abstract class EmojiPickerItem {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof FooterUpsell) && Intrinsics.areEqual(this.f9952id, ((FooterUpsell) obj).f9952id);
+            return (obj instanceof FooterUpsell) && Intrinsics.areEqual(this.f8920id, ((FooterUpsell) obj).f8920id);
         }
 
         @NotNull
         public final String getId() {
-            return this.f9952id;
+            return this.f8920id;
         }
 
         public int hashCode() {
-            return this.f9952id.hashCode();
+            return this.f8920id.hashCode();
         }
 
         @Override // com.discord.emoji_picker.EmojiPickerItem
         public long itemId() {
-            return IdUtilsKt.convertToId(this.f9952id);
+            return IdUtilsKt.convertToId(this.f8920id);
         }
 
         @Override // com.discord.emoji_picker.EmojiPickerItem
@@ -131,7 +131,7 @@ public abstract class EmojiPickerItem {
 
         @NotNull
         public String toString() {
-            String str = this.f9952id;
+            String str = this.f8920id;
             return "FooterUpsell(id=" + str + ")";
         }
     }
@@ -187,7 +187,7 @@ public abstract class EmojiPickerItem {
         static {
             ItemType[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = qr.a.a($values);
+            $ENTRIES = sr.a.a($values);
             Companion = new Companion(null);
             values = values();
         }
@@ -215,25 +215,25 @@ public abstract class EmojiPickerItem {
         @NotNull
 
         /* renamed from: id  reason: collision with root package name */
-        private final String f9953id;
+        private final String f8921id;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public PremiumInlineRoadblockFooter(@NotNull String id2) {
             super(null);
             Intrinsics.checkNotNullParameter(id2, "id");
-            this.f9953id = id2;
+            this.f8921id = id2;
         }
 
         public static /* synthetic */ PremiumInlineRoadblockFooter copy$default(PremiumInlineRoadblockFooter premiumInlineRoadblockFooter, String str, int i10, Object obj) {
             if ((i10 & 1) != 0) {
-                str = premiumInlineRoadblockFooter.f9953id;
+                str = premiumInlineRoadblockFooter.f8921id;
             }
             return premiumInlineRoadblockFooter.copy(str);
         }
 
         @NotNull
         public final String component1() {
-            return this.f9953id;
+            return this.f8921id;
         }
 
         @NotNull
@@ -246,21 +246,21 @@ public abstract class EmojiPickerItem {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof PremiumInlineRoadblockFooter) && Intrinsics.areEqual(this.f9953id, ((PremiumInlineRoadblockFooter) obj).f9953id);
+            return (obj instanceof PremiumInlineRoadblockFooter) && Intrinsics.areEqual(this.f8921id, ((PremiumInlineRoadblockFooter) obj).f8921id);
         }
 
         @NotNull
         public final String getId() {
-            return this.f9953id;
+            return this.f8921id;
         }
 
         public int hashCode() {
-            return this.f9953id.hashCode();
+            return this.f8921id.hashCode();
         }
 
         @Override // com.discord.emoji_picker.EmojiPickerItem
         public long itemId() {
-            return IdUtilsKt.convertToId(this.f9953id);
+            return IdUtilsKt.convertToId(this.f8921id);
         }
 
         @Override // com.discord.emoji_picker.EmojiPickerItem
@@ -270,7 +270,7 @@ public abstract class EmojiPickerItem {
 
         @NotNull
         public String toString() {
-            String str = this.f9953id;
+            String str = this.f8921id;
             return "PremiumInlineRoadblockFooter(id=" + str + ")";
         }
     }
@@ -281,25 +281,25 @@ public abstract class EmojiPickerItem {
         @NotNull
 
         /* renamed from: id  reason: collision with root package name */
-        private final String f9954id;
+        private final String f8922id;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public PremiumInlineRoadblockHeader(@NotNull String id2) {
             super(null);
             Intrinsics.checkNotNullParameter(id2, "id");
-            this.f9954id = id2;
+            this.f8922id = id2;
         }
 
         public static /* synthetic */ PremiumInlineRoadblockHeader copy$default(PremiumInlineRoadblockHeader premiumInlineRoadblockHeader, String str, int i10, Object obj) {
             if ((i10 & 1) != 0) {
-                str = premiumInlineRoadblockHeader.f9954id;
+                str = premiumInlineRoadblockHeader.f8922id;
             }
             return premiumInlineRoadblockHeader.copy(str);
         }
 
         @NotNull
         public final String component1() {
-            return this.f9954id;
+            return this.f8922id;
         }
 
         @NotNull
@@ -312,21 +312,21 @@ public abstract class EmojiPickerItem {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof PremiumInlineRoadblockHeader) && Intrinsics.areEqual(this.f9954id, ((PremiumInlineRoadblockHeader) obj).f9954id);
+            return (obj instanceof PremiumInlineRoadblockHeader) && Intrinsics.areEqual(this.f8922id, ((PremiumInlineRoadblockHeader) obj).f8922id);
         }
 
         @NotNull
         public final String getId() {
-            return this.f9954id;
+            return this.f8922id;
         }
 
         public int hashCode() {
-            return this.f9954id.hashCode();
+            return this.f8922id.hashCode();
         }
 
         @Override // com.discord.emoji_picker.EmojiPickerItem
         public long itemId() {
-            return IdUtilsKt.convertToId(this.f9954id);
+            return IdUtilsKt.convertToId(this.f8922id);
         }
 
         @Override // com.discord.emoji_picker.EmojiPickerItem
@@ -336,7 +336,7 @@ public abstract class EmojiPickerItem {
 
         @NotNull
         public String toString() {
-            String str = this.f9954id;
+            String str = this.f8922id;
             return "PremiumInlineRoadblockHeader(id=" + str + ")";
         }
     }
@@ -348,19 +348,19 @@ public abstract class EmojiPickerItem {
         @NotNull
 
         /* renamed from: id  reason: collision with root package name */
-        private final String f9955id;
+        private final String f8923id;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public Spacer(@NotNull String id2, int i10) {
             super(null);
             Intrinsics.checkNotNullParameter(id2, "id");
-            this.f9955id = id2;
+            this.f8923id = id2;
             this.height = i10;
         }
 
         public static /* synthetic */ Spacer copy$default(Spacer spacer, String str, int i10, int i11, Object obj) {
             if ((i11 & 1) != 0) {
-                str = spacer.f9955id;
+                str = spacer.f8923id;
             }
             if ((i11 & 2) != 0) {
                 i10 = spacer.height;
@@ -370,7 +370,7 @@ public abstract class EmojiPickerItem {
 
         @NotNull
         public final String component1() {
-            return this.f9955id;
+            return this.f8923id;
         }
 
         public final int component2() {
@@ -389,7 +389,7 @@ public abstract class EmojiPickerItem {
             }
             if (obj instanceof Spacer) {
                 Spacer spacer = (Spacer) obj;
-                return Intrinsics.areEqual(this.f9955id, spacer.f9955id) && this.height == spacer.height;
+                return Intrinsics.areEqual(this.f8923id, spacer.f8923id) && this.height == spacer.height;
             }
             return false;
         }
@@ -400,16 +400,16 @@ public abstract class EmojiPickerItem {
 
         @NotNull
         public final String getId() {
-            return this.f9955id;
+            return this.f8923id;
         }
 
         public int hashCode() {
-            return (this.f9955id.hashCode() * 31) + Integer.hashCode(this.height);
+            return (this.f8923id.hashCode() * 31) + Integer.hashCode(this.height);
         }
 
         @Override // com.discord.emoji_picker.EmojiPickerItem
         public long itemId() {
-            return IdUtilsKt.convertToId(this.f9955id);
+            return IdUtilsKt.convertToId(this.f8923id);
         }
 
         @Override // com.discord.emoji_picker.EmojiPickerItem
@@ -419,7 +419,7 @@ public abstract class EmojiPickerItem {
 
         @NotNull
         public String toString() {
-            String str = this.f9955id;
+            String str = this.f8923id;
             int i10 = this.height;
             return "Spacer(id=" + str + ", height=" + i10 + ")";
         }
@@ -438,7 +438,7 @@ public abstract class EmojiPickerItem {
     public static final class Category extends EmojiPickerItem {
 
         /* renamed from: id  reason: collision with root package name */
-        private final long f9949id;
+        private final long f8917id;
         private final boolean isInsidePremiumRoadBlock;
         @NotNull
         private final String title;
@@ -452,7 +452,7 @@ public abstract class EmojiPickerItem {
                 str = category.title;
             }
             if ((i10 & 2) != 0) {
-                j10 = category.f9949id;
+                j10 = category.f8917id;
             }
             if ((i10 & 4) != 0) {
                 z10 = category.isInsidePremiumRoadBlock;
@@ -466,7 +466,7 @@ public abstract class EmojiPickerItem {
         }
 
         public final long component2() {
-            return this.f9949id;
+            return this.f8917id;
         }
 
         public final boolean component3() {
@@ -485,13 +485,13 @@ public abstract class EmojiPickerItem {
             }
             if (obj instanceof Category) {
                 Category category = (Category) obj;
-                return Intrinsics.areEqual(this.title, category.title) && this.f9949id == category.f9949id && this.isInsidePremiumRoadBlock == category.isInsidePremiumRoadBlock;
+                return Intrinsics.areEqual(this.title, category.title) && this.f8917id == category.f8917id && this.isInsidePremiumRoadBlock == category.isInsidePremiumRoadBlock;
             }
             return false;
         }
 
         public final long getId() {
-            return this.f9949id;
+            return this.f8917id;
         }
 
         @NotNull
@@ -500,7 +500,7 @@ public abstract class EmojiPickerItem {
         }
 
         public int hashCode() {
-            return (((this.title.hashCode() * 31) + Long.hashCode(this.f9949id)) * 31) + Boolean.hashCode(this.isInsidePremiumRoadBlock);
+            return (((this.title.hashCode() * 31) + Long.hashCode(this.f8917id)) * 31) + Boolean.hashCode(this.isInsidePremiumRoadBlock);
         }
 
         public final boolean isInsidePremiumRoadBlock() {
@@ -509,7 +509,7 @@ public abstract class EmojiPickerItem {
 
         @Override // com.discord.emoji_picker.EmojiPickerItem
         public long itemId() {
-            return this.f9949id;
+            return this.f8917id;
         }
 
         @Override // com.discord.emoji_picker.EmojiPickerItem
@@ -520,7 +520,7 @@ public abstract class EmojiPickerItem {
         @NotNull
         public String toString() {
             String str = this.title;
-            long j10 = this.f9949id;
+            long j10 = this.f8917id;
             boolean z10 = this.isInsidePremiumRoadBlock;
             return "Category(title=" + str + ", id=" + j10 + ", isInsidePremiumRoadBlock=" + z10 + ")";
         }
@@ -530,7 +530,7 @@ public abstract class EmojiPickerItem {
             super(null);
             Intrinsics.checkNotNullParameter(title, "title");
             this.title = title;
-            this.f9949id = j10;
+            this.f8917id = j10;
             this.isInsidePremiumRoadBlock = z10;
         }
     }
@@ -544,7 +544,7 @@ public abstract class EmojiPickerItem {
         private final DisabledType disabled;
 
         /* renamed from: id  reason: collision with root package name */
-        private final long f9950id;
+        private final long f8918id;
         private final boolean isInsidePremiumRoadBlock;
         @NotNull
         private final String name;
@@ -588,7 +588,7 @@ public abstract class EmojiPickerItem {
             static {
                 DisabledType[] $values = $values();
                 $VALUES = $values;
-                $ENTRIES = qr.a.a($values);
+                $ENTRIES = sr.a.a($values);
                 Companion = new Companion(null);
             }
 
@@ -619,7 +619,7 @@ public abstract class EmojiPickerItem {
 
         public static /* synthetic */ Emoji copy$default(Emoji emoji, long j10, String str, boolean z10, DisabledType disabledType, UnicodeEmojis.Emoji emoji2, boolean z11, int i10, Object obj) {
             if ((i10 & 1) != 0) {
-                j10 = emoji.f9950id;
+                j10 = emoji.f8918id;
             }
             long j11 = j10;
             if ((i10 & 2) != 0) {
@@ -645,7 +645,7 @@ public abstract class EmojiPickerItem {
         }
 
         public final long component1() {
-            return this.f9950id;
+            return this.f8918id;
         }
 
         @NotNull
@@ -679,7 +679,7 @@ public abstract class EmojiPickerItem {
             }
             if (obj instanceof Emoji) {
                 Emoji emoji = (Emoji) obj;
-                return this.f9950id == emoji.f9950id && Intrinsics.areEqual(this.name, emoji.name) && this.animated == emoji.animated && this.disabled == emoji.disabled && Intrinsics.areEqual(this.unicode, emoji.unicode) && this.isInsidePremiumRoadBlock == emoji.isInsidePremiumRoadBlock;
+                return this.f8918id == emoji.f8918id && Intrinsics.areEqual(this.name, emoji.name) && this.animated == emoji.animated && this.disabled == emoji.disabled && Intrinsics.areEqual(this.unicode, emoji.unicode) && this.isInsidePremiumRoadBlock == emoji.isInsidePremiumRoadBlock;
             }
             return false;
         }
@@ -694,7 +694,7 @@ public abstract class EmojiPickerItem {
         }
 
         public final long getId() {
-            return this.f9950id;
+            return this.f8918id;
         }
 
         @NotNull
@@ -711,7 +711,7 @@ public abstract class EmojiPickerItem {
         }
 
         public int hashCode() {
-            int hashCode = ((((((Long.hashCode(this.f9950id) * 31) + this.name.hashCode()) * 31) + Boolean.hashCode(this.animated)) * 31) + this.disabled.hashCode()) * 31;
+            int hashCode = ((((((Long.hashCode(this.f8918id) * 31) + this.name.hashCode()) * 31) + Boolean.hashCode(this.animated)) * 31) + this.disabled.hashCode()) * 31;
             UnicodeEmojis.Emoji emoji = this.unicode;
             return ((hashCode + (emoji == null ? 0 : emoji.hashCode())) * 31) + Boolean.hashCode(this.isInsidePremiumRoadBlock);
         }
@@ -722,7 +722,7 @@ public abstract class EmojiPickerItem {
 
         @Override // com.discord.emoji_picker.EmojiPickerItem
         public long itemId() {
-            return this.f9950id;
+            return this.f8918id;
         }
 
         @Override // com.discord.emoji_picker.EmojiPickerItem
@@ -732,7 +732,7 @@ public abstract class EmojiPickerItem {
 
         @NotNull
         public String toString() {
-            long j10 = this.f9950id;
+            long j10 = this.f8918id;
             String str = this.name;
             boolean z10 = this.animated;
             DisabledType disabledType = this.disabled;
@@ -746,7 +746,7 @@ public abstract class EmojiPickerItem {
             super(null);
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(disabled, "disabled");
-            this.f9950id = j10;
+            this.f8918id = j10;
             this.name = name;
             this.animated = z10;
             this.disabled = disabled;

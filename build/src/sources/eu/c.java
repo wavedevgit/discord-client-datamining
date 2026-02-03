@@ -1,28 +1,40 @@
 package eu;
 
-import java.security.KeyStore;
-import java.security.Provider;
-import java.util.Arrays;
-import java.util.List;
-import javax.net.ssl.SSLContext;
-import javax.net.ssl.SSLSocket;
-import javax.net.ssl.TrustManager;
-import javax.net.ssl.TrustManagerFactory;
-import javax.net.ssl.X509TrustManager;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import org.bouncycastle.jsse.provider.BouncyCastleJsseProvider;
+import okio.ByteString;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c extends h {
-
-    /* renamed from: e  reason: collision with root package name */
-    public static final a f23226e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private static final boolean f23227f;
+public final class c {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Provider f23228d;
+    public static final a f22701d = new a(null);
+
+    /* renamed from: e  reason: collision with root package name */
+    public static final ByteString f22702e;
+
+    /* renamed from: f  reason: collision with root package name */
+    public static final ByteString f22703f;
+
+    /* renamed from: g  reason: collision with root package name */
+    public static final ByteString f22704g;
+
+    /* renamed from: h  reason: collision with root package name */
+    public static final ByteString f22705h;
+
+    /* renamed from: i  reason: collision with root package name */
+    public static final ByteString f22706i;
+
+    /* renamed from: j  reason: collision with root package name */
+    public static final ByteString f22707j;
+
+    /* renamed from: a  reason: collision with root package name */
+    public final ByteString f22708a;
+
+    /* renamed from: b  reason: collision with root package name */
+    public final ByteString f22709b;
+
+    /* renamed from: c  reason: collision with root package name */
+    public final int f22710c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -30,79 +42,83 @@ public final class c extends h {
             this();
         }
 
-        public final c a() {
-            if (!b()) {
-                return null;
-            }
-            return new c(null);
-        }
-
-        public final boolean b() {
-            return c.f23227f;
-        }
-
         private a() {
         }
     }
 
     static {
-        a aVar = new a(null);
-        f23226e = aVar;
-        boolean z10 = false;
-        try {
-            Class.forName("org.bouncycastle.jsse.provider.BouncyCastleJsseProvider", false, aVar.getClass().getClassLoader());
-            z10 = true;
-        } catch (ClassNotFoundException unused) {
+        ByteString.a aVar = ByteString.f44307o;
+        f22702e = aVar.g(":");
+        f22703f = aVar.g(":status");
+        f22704g = aVar.g(":method");
+        f22705h = aVar.g(":path");
+        f22706i = aVar.g(":scheme");
+        f22707j = aVar.g(":authority");
+    }
+
+    public c(ByteString name, ByteString value) {
+        Intrinsics.checkNotNullParameter(name, "name");
+        Intrinsics.checkNotNullParameter(value, "value");
+        this.f22708a = name;
+        this.f22709b = value;
+        this.f22710c = name.G() + 32 + value.G();
+    }
+
+    public final ByteString a() {
+        return this.f22708a;
+    }
+
+    public final ByteString b() {
+        return this.f22709b;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-        f23227f = z10;
-    }
-
-    public /* synthetic */ c(DefaultConstructorMarker defaultConstructorMarker) {
-        this();
-    }
-
-    @Override // eu.h
-    public void e(SSLSocket sslSocket, String str, List protocols) {
-        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-        Intrinsics.checkNotNullParameter(protocols, "protocols");
-        super.e(sslSocket, str, protocols);
-    }
-
-    @Override // eu.h
-    public String h(SSLSocket sslSocket) {
-        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-        return super.h(sslSocket);
-    }
-
-    @Override // eu.h
-    public SSLContext n() {
-        SSLContext sSLContext = SSLContext.getInstance("TLS", this.f23228d);
-        Intrinsics.checkNotNullExpressionValue(sSLContext, "getInstance(\"TLS\", provider)");
-        return sSLContext;
-    }
-
-    @Override // eu.h
-    public X509TrustManager p() {
-        TrustManagerFactory trustManagerFactory = TrustManagerFactory.getInstance("PKIX", "BCJSSE");
-        trustManagerFactory.init((KeyStore) null);
-        TrustManager[] trustManagers = trustManagerFactory.getTrustManagers();
-        Intrinsics.checkNotNull(trustManagers);
-        if (trustManagers.length == 1) {
-            TrustManager trustManager = trustManagers[0];
-            if (trustManager instanceof X509TrustManager) {
-                Intrinsics.checkNotNull(trustManager, "null cannot be cast to non-null type javax.net.ssl.X509TrustManager");
-                return (X509TrustManager) trustManager;
-            }
+        if (!(obj instanceof c)) {
+            return false;
         }
-        StringBuilder sb2 = new StringBuilder();
-        sb2.append("Unexpected default trust managers: ");
-        String arrays = Arrays.toString(trustManagers);
-        Intrinsics.checkNotNullExpressionValue(arrays, "toString(this)");
-        sb2.append(arrays);
-        throw new IllegalStateException(sb2.toString().toString());
+        c cVar = (c) obj;
+        if (Intrinsics.areEqual(this.f22708a, cVar.f22708a) && Intrinsics.areEqual(this.f22709b, cVar.f22709b)) {
+            return true;
+        }
+        return false;
     }
 
-    private c() {
-        this.f23228d = new BouncyCastleJsseProvider();
+    public int hashCode() {
+        return (this.f22708a.hashCode() * 31) + this.f22709b.hashCode();
+    }
+
+    public String toString() {
+        return this.f22708a.M() + ": " + this.f22709b.M();
+    }
+
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public c(java.lang.String r2, java.lang.String r3) {
+        /*
+            r1 = this;
+            java.lang.String r0 = "name"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r2, r0)
+            java.lang.String r0 = "value"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r3, r0)
+            okio.ByteString$a r0 = okio.ByteString.f44307o
+            okio.ByteString r2 = r0.g(r2)
+            okio.ByteString r3 = r0.g(r3)
+            r1.<init>(r2, r3)
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: eu.c.<init>(java.lang.String, java.lang.String):void");
+    }
+
+    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    public c(ByteString name, String value) {
+        this(name, ByteString.f44307o.g(value));
+        Intrinsics.checkNotNullParameter(name, "name");
+        Intrinsics.checkNotNullParameter(value, "value");
     }
 }

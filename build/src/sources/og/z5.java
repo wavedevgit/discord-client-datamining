@@ -5,37 +5,37 @@ import ui.c;
 final class z5 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final z5 f43946a = new z5();
+    static final z5 f43746a = new z5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43947b;
+    private static final ui.c f43747b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43948c;
+    private static final ui.c f43748c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43949d;
+    private static final ui.c f43749d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f43950e;
+    private static final ui.c f43750e;
 
     static {
         c.b a10 = ui.c.a("modelInfo");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43947b = a10.b(s1Var.b()).a();
+        f43747b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("initialDownloadConditions");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43948c = a11.b(s1Var2.b()).a();
+        f43748c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("updateDownloadConditions");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43949d = a12.b(s1Var3.b()).a();
+        f43749d = a12.b(s1Var3.b()).a();
         c.b a13 = ui.c.a("isModelUpdateEnabled");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f43950e = a13.b(s1Var4.b()).a();
+        f43750e = a13.b(s1Var4.b()).a();
     }
 
     private z5() {

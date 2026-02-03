@@ -17,7 +17,6 @@ import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
@@ -29,6 +28,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.StringsKt;
+import lr.v;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000`\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010$\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0011\n\u0002\u0018\u0002\n\u0002\b\b\bÀ\u0002\u0018\u00002\u00020\u0001:\u0003567B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u0013\u0010\u0006\u001a\u00020\u0005*\u00020\u0004H\u0002¢\u0006\u0004\b\u0006\u0010\u0007J\u0019\u0010\u000b\u001a\u0004\u0018\u00010\n2\u0006\u0010\t\u001a\u00020\bH\u0002¢\u0006\u0004\b\u000b\u0010\fJ\u0017\u0010\r\u001a\u00020\u00052\u0006\u0010\t\u001a\u00020\bH\u0002¢\u0006\u0004\b\r\u0010\u000eJ\u001d\u0010\u0010\u001a\u0004\u0018\u00010\n*\u00020\u000f2\u0006\u0010\t\u001a\u00020\bH\u0002¢\u0006\u0004\b\u0010\u0010\u0011J1\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00150\u00142\u0006\u0010\t\u001a\u00020\b2\u0012\u0010\u0013\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00050\u0012H\u0002¢\u0006\u0004\b\u0016\u0010\u0017J[\u0010 \u001a\u0004\u0018\u00010\n2\u0006\u0010\t\u001a\u00020\b2\u0006\u0010\u0018\u001a\u00020\u000f2\u0006\u0010\u001a\u001a\u00020\u00192\u0012\u0010\u001b\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00050\u00122\u001c\b\u0002\u0010\u001f\u001a\u0016\u0012\u0006\u0012\u0004\u0018\u00010\n\u0012\u0004\u0012\u00020\u001d\u0012\u0004\u0012\u00020\u001e0\u001cH\u0002¢\u0006\u0004\b \u0010!J5\u0010%\u001a\u00020\u001e2\u0006\u0010\t\u001a\u00020\b2\b\u0010\"\u001a\u0004\u0018\u00010\n2\u0006\u0010#\u001a\u00020\u001d2\n\b\u0002\u0010$\u001a\u0004\u0018\u00010\u0019H\u0002¢\u0006\u0004\b%\u0010&J!\u0010'\u001a\u00020\u001e2\b\u0010\"\u001a\u0004\u0018\u00010\n2\u0006\u0010#\u001a\u00020\u001dH\u0002¢\u0006\u0004\b'\u0010(J=\u0010)\u001a\u00020\u001e2\u0006\u0010\t\u001a\u00020\b2\u0012\u0010\u001b\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00050\u00122\u0012\u0010\u0013\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00050\u0012¢\u0006\u0004\b)\u0010*J\u001d\u0010,\u001a\u00020\u001e2\u0006\u0010\t\u001a\u00020\b2\u0006\u0010+\u001a\u00020\u0005¢\u0006\u0004\b,\u0010-J\r\u0010.\u001a\u00020\u0005¢\u0006\u0004\b.\u0010/J\u0019\u00101\u001a\u00020\u0005*\u0002002\u0006\u0010\t\u001a\u00020\b¢\u0006\u0004\b1\u00102R\u0014\u00103\u001a\u00020\u00058\u0002X\u0082T¢\u0006\u0006\n\u0004\b3\u00104¨\u00068"}, d2 = {"Lcom/discord/notifications/renderer/NotificationChannels;", "", "<init>", "()V", "Lcom/discord/notifications/renderer/NotificationChannels$CallRingtone;", "", "getChannelId", "(Lcom/discord/notifications/renderer/NotificationChannels$CallRingtone;)Ljava/lang/String;", "Landroid/content/Context;", "context", "Landroidx/core/app/NotificationChannelCompat;", "getCallChannel", "(Landroid/content/Context;)Landroidx/core/app/NotificationChannelCompat;", "getCallChannelId", "(Landroid/content/Context;)Ljava/lang/String;", "Lcom/discord/notifications/renderer/NotificationChannels$Category;", "getAndDeleteLegacyNotificationChannel", "(Lcom/discord/notifications/renderer/NotificationChannels$Category;Landroid/content/Context;)Landroidx/core/app/NotificationChannelCompat;", "", "localizedGroupNames", "", "Landroidx/core/app/k;", "createNotificationChannelGroups", "(Landroid/content/Context;Ljava/util/Map;)Ljava/util/List;", "category", "", "brandColor", "localizedCategoryNames", "Lkotlin/Function2;", "Landroidx/core/app/NotificationChannelCompat$Builder;", "", "onConfigure", "migrateOrCreateNotificationChannel", "(Landroid/content/Context;Lcom/discord/notifications/renderer/NotificationChannels$Category;ILjava/util/Map;Lkotlin/jvm/functions/Function2;)Landroidx/core/app/NotificationChannelCompat;", "legacyChannel", "builder", "ringtoneName", "configureCallChannel", "(Landroid/content/Context;Landroidx/core/app/NotificationChannelCompat;Landroidx/core/app/NotificationChannelCompat$Builder;Ljava/lang/Integer;)V", "configureMediaChannel", "(Landroidx/core/app/NotificationChannelCompat;Landroidx/core/app/NotificationChannelCompat$Builder;)V", "init", "(Landroid/content/Context;Ljava/util/Map;Ljava/util/Map;)V", StackTraceHelper.NAME_KEY, "setIncomingRingtone", "(Landroid/content/Context;Ljava/lang/String;)V", "getSilenceCallChannelId", "()Ljava/lang/String;", "Lcom/discord/notifications/api/NotificationData;", "getNotificationChannelId", "(Lcom/discord/notifications/api/NotificationData;Landroid/content/Context;)Ljava/lang/String;", "BASE_CALL_CHANNEL_ID", "Ljava/lang/String;", "ChannelGroup", "Category", "CallRingtone", "notification_renderer_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nNotificationChannels.kt\nKotlin\n*S Kotlin\n*F\n+ 1 NotificationChannels.kt\ncom/discord/notifications/renderer/NotificationChannels\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 4 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 5 Uri.kt\nandroidx/core/net/UriKt\n*L\n1#1,401:1\n11546#2,9:402\n13472#2:411\n13473#2:413\n11555#2:414\n11228#2:421\n11563#2,3:422\n1#3:412\n1#3:425\n1193#4,2:415\n1267#4,4:417\n29#5:426\n*S KotlinDebug\n*F\n+ 1 NotificationChannels.kt\ncom/discord/notifications/renderer/NotificationChannels\n*L\n142#1:402,9\n142#1:411\n142#1:413\n142#1:414\n308#1:421\n308#1:422,3\n142#1:412\n162#1:415,2\n162#1:417,4\n382#1:426\n*E\n"})
@@ -52,7 +52,7 @@ public final class NotificationChannels {
         @NotNull
 
         /* renamed from: id  reason: collision with root package name */
-        private final String f10279id;
+        private final String f9247id;
         private final int resource;
         public static final CallRingtone Halloween = new CallRingtone("Halloween", 0, "halloween", com.discord.sounds.R.raw.halloween_call_ringing);
         public static final CallRingtone Default = new CallRingtone("Default", 1, "default", com.discord.sounds.R.raw.call_ringing);
@@ -84,12 +84,12 @@ public final class NotificationChannels {
         static {
             CallRingtone[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = qr.a.a($values);
+            $ENTRIES = sr.a.a($values);
             Companion = new Companion(null);
         }
 
         private CallRingtone(String str, int i10, String str2, int i11) {
-            this.f10279id = str2;
+            this.f9247id = str2;
             this.resource = i11;
         }
 
@@ -108,7 +108,7 @@ public final class NotificationChannels {
 
         @NotNull
         public final String getId() {
-            return this.f10279id;
+            return this.f9247id;
         }
 
         public final int getResource() {
@@ -131,7 +131,7 @@ public final class NotificationChannels {
         @NotNull
 
         /* renamed from: id  reason: collision with root package name */
-        private final String f10281id;
+        private final String f9249id;
         public static final ChannelGroup Realtime = new ChannelGroup("Realtime", 0, "realtime", "111_realtime");
         public static final ChannelGroup Social = new ChannelGroup("Social", 1, "social", "222_social");
         public static final ChannelGroup Server = new ChannelGroup("Server", 2, "server", "333_server");
@@ -177,12 +177,12 @@ public final class NotificationChannels {
         static {
             ChannelGroup[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = qr.a.a($values);
+            $ENTRIES = sr.a.a($values);
             Companion = new Companion(null);
         }
 
         private ChannelGroup(String str, int i10, String str2, String str3) {
-            this.f10281id = str2;
+            this.f9249id = str2;
             this.groupId = str3;
         }
 
@@ -206,7 +206,7 @@ public final class NotificationChannels {
 
         @NotNull
         public final String getId() {
-            return this.f10281id;
+            return this.f9249id;
         }
     }
 
@@ -357,7 +357,7 @@ public final class NotificationChannels {
         } else {
             configureCallChannel$default(INSTANCE, context, notificationChannelCompat, builder, null, 8, null);
         }
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     private final NotificationChannelCompat migrateOrCreateNotificationChannel(Context context, Category category, int i10, Map<String, String> map, Function2<? super NotificationChannelCompat, ? super NotificationChannelCompat.Builder, Unit> function2) {
@@ -422,7 +422,7 @@ public final class NotificationChannels {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit migrateOrCreateNotificationChannel$lambda$8(NotificationChannelCompat notificationChannelCompat, NotificationChannelCompat.Builder builder) {
         Intrinsics.checkNotNullParameter(builder, "<unused var>");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     @NotNull
@@ -620,7 +620,7 @@ public final class NotificationChannels {
         @NotNull
 
         /* renamed from: id  reason: collision with root package name */
-        private final String f10280id;
+        private final String f9248id;
         private final int importance;
         private final String legacyId;
 
@@ -774,12 +774,12 @@ public final class NotificationChannels {
             OtherHighPriority = new Category("OtherHighPriority", 16, "otherHighPriority", 4, channelGroup4, "GeneralHigh");
             Category[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = qr.a.a($values);
+            $ENTRIES = sr.a.a($values);
             Companion = new Companion(null);
         }
 
         private Category(String str, int i10, String str2, int i11, ChannelGroup channelGroup, String str3) {
-            this.f10280id = str2;
+            this.f9248id = str2;
             this.importance = i11;
             this.group = channelGroup;
             this.legacyId = str3;
@@ -805,7 +805,7 @@ public final class NotificationChannels {
 
         @NotNull
         public final String getId() {
-            return this.f10280id;
+            return this.f9248id;
         }
 
         public final int getImportance() {

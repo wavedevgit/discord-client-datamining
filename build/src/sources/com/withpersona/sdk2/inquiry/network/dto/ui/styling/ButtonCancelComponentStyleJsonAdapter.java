@@ -128,9 +128,9 @@ public final class ButtonCancelComponentStyleJsonAdapter extends h {
         AttributeStyles.ButtonBasedBorderRadiusStyle buttonBasedBorderRadiusStyle = null;
         AttributeStyles.ButtonBasedBorderWidthStyle buttonBasedBorderWidthStyle = null;
         while (reader.hasNext()) {
-            switch (reader.t0(this.options)) {
+            switch (reader.A0(this.options)) {
                 case -1:
-                    reader.F0();
+                    reader.E0();
                     reader.P();
                     break;
                 case 0:
@@ -189,35 +189,35 @@ public final class ButtonCancelComponentStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (buttonCancelComponentStyle != null) {
             writer.l();
-            writer.t0(ViewProps.PADDING);
+            writer.A0(ViewProps.PADDING);
             this.nullableButtonBasedPaddingStyleAdapter.toJson(writer, buttonCancelComponentStyle.getPadding());
-            writer.t0(ViewProps.MARGIN);
+            writer.A0(ViewProps.MARGIN);
             this.nullableButtonBasedMarginStyleAdapter.toJson(writer, buttonCancelComponentStyle.getMargin());
-            writer.t0("justify");
+            writer.A0("justify");
             this.nullableButtonBasedJustifyStyleAdapter.toJson(writer, buttonCancelComponentStyle.getJustify());
-            writer.t0(ViewProps.FONT_FAMILY);
+            writer.A0(ViewProps.FONT_FAMILY);
             this.nullableButtonBasedFontFamilyStyleAdapter.toJson(writer, buttonCancelComponentStyle.getFontFamily());
-            writer.t0(ViewProps.FONT_SIZE);
+            writer.A0(ViewProps.FONT_SIZE);
             this.nullableButtonBasedFontSizeStyleAdapter.toJson(writer, buttonCancelComponentStyle.getFontSize());
-            writer.t0(ViewProps.FONT_WEIGHT);
+            writer.A0(ViewProps.FONT_WEIGHT);
             this.nullableButtonBasedFontWeightStyleAdapter.toJson(writer, buttonCancelComponentStyle.getFontWeight());
-            writer.t0(ViewProps.LETTER_SPACING);
+            writer.A0(ViewProps.LETTER_SPACING);
             this.nullableButtonBasedLetterSpacingStyleAdapter.toJson(writer, buttonCancelComponentStyle.getLetterSpacing());
-            writer.t0(ViewProps.LINE_HEIGHT);
+            writer.A0(ViewProps.LINE_HEIGHT);
             this.nullableButtonBasedLineHeightStyleAdapter.toJson(writer, buttonCancelComponentStyle.getLineHeight());
-            writer.t0("textColor");
+            writer.A0("textColor");
             this.nullableButtonBasedTextColorStyleAdapter.toJson(writer, buttonCancelComponentStyle.getTextColor());
-            writer.t0("height");
+            writer.A0("height");
             this.nullableButtonBasedHeightStyleAdapter.toJson(writer, buttonCancelComponentStyle.getHeight());
-            writer.t0("width");
+            writer.A0("width");
             this.nullableButtonBasedWidthStyleAdapter.toJson(writer, buttonCancelComponentStyle.getWidth());
-            writer.t0(ViewProps.BACKGROUND_COLOR);
+            writer.A0(ViewProps.BACKGROUND_COLOR);
             this.nullableButtonBasedBackgroundColorStyleAdapter.toJson(writer, buttonCancelComponentStyle.getBackgroundColor());
-            writer.t0(ViewProps.BORDER_COLOR);
+            writer.A0(ViewProps.BORDER_COLOR);
             this.nullableButtonBasedBorderColorStyleAdapter.toJson(writer, buttonCancelComponentStyle.getBorderColor());
-            writer.t0("borderRadius");
+            writer.A0("borderRadius");
             this.nullableButtonBasedBorderRadiusStyleAdapter.toJson(writer, buttonCancelComponentStyle.getBorderRadius());
-            writer.t0(ViewProps.BORDER_WIDTH);
+            writer.A0(ViewProps.BORDER_WIDTH);
             this.nullableButtonBasedBorderWidthStyleAdapter.toJson(writer, buttonCancelComponentStyle.getBorderWidth());
             writer.E();
             return;

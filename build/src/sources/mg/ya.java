@@ -5,7 +5,7 @@ import ui.c;
 final class ya implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ya f38835a = new ya();
+    static final ya f38632a = new ya();
 
     static {
         c.b a10 = ui.c.a("inferenceCommonLogEvent");

@@ -12,36 +12,36 @@ import v0.d;
 public class SimpleArrayMap {
 
     /* renamed from: d  reason: collision with root package name */
-    private int[] f2220d;
+    private int[] f2189d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Object[] f2221e;
+    private Object[] f2190e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f2222i;
+    private int f2191i;
 
     public SimpleArrayMap() {
         this(0, 1, null);
     }
 
     private final int c(Object obj, int i10) {
-        int i11 = this.f2222i;
+        int i11 = this.f2191i;
         if (i11 == 0) {
             return -1;
         }
-        int a10 = a.a(this.f2220d, i11, i10);
-        if (a10 < 0 || Intrinsics.areEqual(obj, this.f2221e[a10 << 1])) {
+        int a10 = a.a(this.f2189d, i11, i10);
+        if (a10 < 0 || Intrinsics.areEqual(obj, this.f2190e[a10 << 1])) {
             return a10;
         }
         int i12 = a10 + 1;
-        while (i12 < i11 && this.f2220d[i12] == i10) {
-            if (Intrinsics.areEqual(obj, this.f2221e[i12 << 1])) {
+        while (i12 < i11 && this.f2189d[i12] == i10) {
+            if (Intrinsics.areEqual(obj, this.f2190e[i12 << 1])) {
                 return i12;
             }
             i12++;
         }
-        for (int i13 = a10 - 1; i13 >= 0 && this.f2220d[i13] == i10; i13--) {
-            if (Intrinsics.areEqual(obj, this.f2221e[i13 << 1])) {
+        for (int i13 = a10 - 1; i13 >= 0 && this.f2189d[i13] == i10; i13--) {
+            if (Intrinsics.areEqual(obj, this.f2190e[i13 << 1])) {
                 return i13;
             }
         }
@@ -49,23 +49,23 @@ public class SimpleArrayMap {
     }
 
     private final int e() {
-        int i10 = this.f2222i;
+        int i10 = this.f2191i;
         if (i10 == 0) {
             return -1;
         }
-        int a10 = a.a(this.f2220d, i10, 0);
-        if (a10 < 0 || this.f2221e[a10 << 1] == null) {
+        int a10 = a.a(this.f2189d, i10, 0);
+        if (a10 < 0 || this.f2190e[a10 << 1] == null) {
             return a10;
         }
         int i11 = a10 + 1;
-        while (i11 < i10 && this.f2220d[i11] == 0) {
-            if (this.f2221e[i11 << 1] == null) {
+        while (i11 < i10 && this.f2189d[i11] == 0) {
+            if (this.f2190e[i11 << 1] == null) {
                 return i11;
             }
             i11++;
         }
-        for (int i12 = a10 - 1; i12 >= 0 && this.f2220d[i12] == 0; i12--) {
-            if (this.f2221e[i12 << 1] == null) {
+        for (int i12 = a10 - 1; i12 >= 0 && this.f2189d[i12] == 0; i12--) {
+            if (this.f2190e[i12 << 1] == null) {
                 return i12;
             }
         }
@@ -73,8 +73,8 @@ public class SimpleArrayMap {
     }
 
     public final int a(Object obj) {
-        int i10 = this.f2222i * 2;
-        Object[] objArr = this.f2221e;
+        int i10 = this.f2191i * 2;
+        Object[] objArr = this.f2190e;
         if (obj == null) {
             for (int i11 = 1; i11 < i10; i11 += 2) {
                 if (objArr[i11] == null) {
@@ -92,29 +92,29 @@ public class SimpleArrayMap {
     }
 
     public void b(int i10) {
-        int i11 = this.f2222i;
-        int[] iArr = this.f2220d;
+        int i11 = this.f2191i;
+        int[] iArr = this.f2189d;
         if (iArr.length < i10) {
             int[] copyOf = Arrays.copyOf(iArr, i10);
             Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
-            this.f2220d = copyOf;
-            Object[] copyOf2 = Arrays.copyOf(this.f2221e, i10 * 2);
+            this.f2189d = copyOf;
+            Object[] copyOf2 = Arrays.copyOf(this.f2190e, i10 * 2);
             Intrinsics.checkNotNullExpressionValue(copyOf2, "copyOf(...)");
-            this.f2221e = copyOf2;
+            this.f2190e = copyOf2;
         }
-        if (this.f2222i == i11) {
+        if (this.f2191i == i11) {
             return;
         }
         throw new ConcurrentModificationException();
     }
 
     public void clear() {
-        if (this.f2222i > 0) {
-            this.f2220d = a.f50722a;
-            this.f2221e = a.f50724c;
-            this.f2222i = 0;
+        if (this.f2191i > 0) {
+            this.f2189d = a.f51050a;
+            this.f2190e = a.f51052c;
+            this.f2191i = 0;
         }
-        if (this.f2222i <= 0) {
+        if (this.f2191i <= 0) {
             return;
         }
         throw new ConcurrentModificationException();
@@ -151,7 +151,7 @@ public class SimpleArrayMap {
                     return false;
                 }
                 SimpleArrayMap simpleArrayMap = (SimpleArrayMap) obj;
-                int i10 = this.f2222i;
+                int i10 = this.f2191i;
                 for (int i11 = 0; i11 < i10; i11++) {
                     Object f10 = f(i11);
                     Object j10 = j(i11);
@@ -168,7 +168,7 @@ public class SimpleArrayMap {
             } else if (!(obj instanceof Map) || size() != ((Map) obj).size()) {
                 return false;
             } else {
-                int i12 = this.f2222i;
+                int i12 = this.f2191i;
                 for (int i13 = 0; i13 < i12; i13++) {
                     Object f11 = f(i13);
                     Object j11 = j(i13);
@@ -190,24 +190,24 @@ public class SimpleArrayMap {
 
     public Object f(int i10) {
         boolean z10 = false;
-        if (i10 >= 0 && i10 < this.f2222i) {
+        if (i10 >= 0 && i10 < this.f2191i) {
             z10 = true;
         }
         if (!z10) {
             d.a("Expected index to be within 0..size()-1, but was " + i10);
         }
-        return this.f2221e[i10 << 1];
+        return this.f2190e[i10 << 1];
     }
 
     public void g(SimpleArrayMap map) {
         Intrinsics.checkNotNullParameter(map, "map");
-        int i10 = map.f2222i;
-        b(this.f2222i + i10);
-        if (this.f2222i == 0) {
+        int i10 = map.f2191i;
+        b(this.f2191i + i10);
+        if (this.f2191i == 0) {
             if (i10 > 0) {
-                i.i(map.f2220d, this.f2220d, 0, 0, i10);
-                i.k(map.f2221e, this.f2221e, 0, 0, i10 << 1);
-                this.f2222i = i10;
+                i.i(map.f2189d, this.f2189d, 0, 0, i10);
+                i.k(map.f2190e, this.f2190e, 0, 0, i10 << 1);
+                this.f2191i = i10;
                 return;
             }
             return;
@@ -220,7 +220,7 @@ public class SimpleArrayMap {
     public Object get(Object obj) {
         int d10 = d(obj);
         if (d10 >= 0) {
-            return this.f2221e[(d10 << 1) + 1];
+            return this.f2190e[(d10 << 1) + 1];
         }
         return null;
     }
@@ -228,14 +228,14 @@ public class SimpleArrayMap {
     public Object getOrDefault(Object obj, Object obj2) {
         int d10 = d(obj);
         if (d10 >= 0) {
-            return this.f2221e[(d10 << 1) + 1];
+            return this.f2190e[(d10 << 1) + 1];
         }
         return obj2;
     }
 
     public Object h(int i10) {
         boolean z10;
-        if (i10 >= 0 && i10 < this.f2222i) {
+        if (i10 >= 0 && i10 < this.f2191i) {
             z10 = true;
         } else {
             z10 = false;
@@ -243,16 +243,16 @@ public class SimpleArrayMap {
         if (!z10) {
             d.a("Expected index to be within 0..size()-1, but was " + i10);
         }
-        Object[] objArr = this.f2221e;
+        Object[] objArr = this.f2190e;
         int i11 = i10 << 1;
         Object obj = objArr[i11 + 1];
-        int i12 = this.f2222i;
+        int i12 = this.f2191i;
         if (i12 <= 1) {
             clear();
             return obj;
         }
         int i13 = i12 - 1;
-        int[] iArr = this.f2220d;
+        int[] iArr = this.f2189d;
         int i14 = 8;
         if (iArr.length > 8 && i12 < iArr.length / 3) {
             if (i12 > 8) {
@@ -260,19 +260,19 @@ public class SimpleArrayMap {
             }
             int[] copyOf = Arrays.copyOf(iArr, i14);
             Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
-            this.f2220d = copyOf;
-            Object[] copyOf2 = Arrays.copyOf(this.f2221e, i14 << 1);
+            this.f2189d = copyOf;
+            Object[] copyOf2 = Arrays.copyOf(this.f2190e, i14 << 1);
             Intrinsics.checkNotNullExpressionValue(copyOf2, "copyOf(...)");
-            this.f2221e = copyOf2;
-            if (i12 == this.f2222i) {
+            this.f2190e = copyOf2;
+            if (i12 == this.f2191i) {
                 if (i10 > 0) {
-                    i.i(iArr, this.f2220d, 0, 0, i10);
-                    i.k(objArr, this.f2221e, 0, 0, i11);
+                    i.i(iArr, this.f2189d, 0, 0, i10);
+                    i.k(objArr, this.f2190e, 0, 0, i11);
                 }
                 if (i10 < i13) {
                     int i15 = i10 + 1;
-                    i.i(iArr, this.f2220d, i10, i15, i12);
-                    i.k(objArr, this.f2221e, i11, i15 << 1, i12 << 1);
+                    i.i(iArr, this.f2189d, i10, i15, i12);
+                    i.k(objArr, this.f2190e, i11, i15 << 1, i12 << 1);
                 }
             } else {
                 throw new ConcurrentModificationException();
@@ -281,16 +281,16 @@ public class SimpleArrayMap {
             if (i10 < i13) {
                 int i16 = i10 + 1;
                 i.i(iArr, iArr, i10, i16, i12);
-                Object[] objArr2 = this.f2221e;
+                Object[] objArr2 = this.f2190e;
                 i.k(objArr2, objArr2, i11, i16 << 1, i12 << 1);
             }
-            Object[] objArr3 = this.f2221e;
+            Object[] objArr3 = this.f2190e;
             int i17 = i13 << 1;
             objArr3[i17] = null;
             objArr3[i17 + 1] = null;
         }
-        if (i12 == this.f2222i) {
-            this.f2222i = i13;
+        if (i12 == this.f2191i) {
+            this.f2191i = i13;
             return obj;
         }
         throw new ConcurrentModificationException();
@@ -298,9 +298,9 @@ public class SimpleArrayMap {
 
     public int hashCode() {
         int i10;
-        int[] iArr = this.f2220d;
-        Object[] objArr = this.f2221e;
-        int i11 = this.f2222i;
+        int[] iArr = this.f2189d;
+        Object[] objArr = this.f2190e;
+        int i11 = this.f2191i;
         int i12 = 1;
         int i13 = 0;
         int i14 = 0;
@@ -321,21 +321,21 @@ public class SimpleArrayMap {
 
     public Object i(int i10, Object obj) {
         boolean z10 = false;
-        if (i10 >= 0 && i10 < this.f2222i) {
+        if (i10 >= 0 && i10 < this.f2191i) {
             z10 = true;
         }
         if (!z10) {
             d.a("Expected index to be within 0..size()-1, but was " + i10);
         }
         int i11 = (i10 << 1) + 1;
-        Object[] objArr = this.f2221e;
+        Object[] objArr = this.f2190e;
         Object obj2 = objArr[i11];
         objArr[i11] = obj;
         return obj2;
     }
 
     public boolean isEmpty() {
-        if (this.f2222i <= 0) {
+        if (this.f2191i <= 0) {
             return true;
         }
         return false;
@@ -343,19 +343,19 @@ public class SimpleArrayMap {
 
     public Object j(int i10) {
         boolean z10 = false;
-        if (i10 >= 0 && i10 < this.f2222i) {
+        if (i10 >= 0 && i10 < this.f2191i) {
             z10 = true;
         }
         if (!z10) {
             d.a("Expected index to be within 0..size()-1, but was " + i10);
         }
-        return this.f2221e[(i10 << 1) + 1];
+        return this.f2190e[(i10 << 1) + 1];
     }
 
     public Object put(Object obj, Object obj2) {
         int i10;
         int e10;
-        int i11 = this.f2222i;
+        int i11 = this.f2191i;
         if (obj != null) {
             i10 = obj.hashCode();
         } else {
@@ -368,13 +368,13 @@ public class SimpleArrayMap {
         }
         if (e10 >= 0) {
             int i12 = (e10 << 1) + 1;
-            Object[] objArr = this.f2221e;
+            Object[] objArr = this.f2190e;
             Object obj3 = objArr[i12];
             objArr[i12] = obj2;
             return obj3;
         }
         int i13 = ~e10;
-        int[] iArr = this.f2220d;
+        int[] iArr = this.f2189d;
         if (i11 >= iArr.length) {
             int i14 = 8;
             if (i11 >= 8) {
@@ -384,31 +384,31 @@ public class SimpleArrayMap {
             }
             int[] copyOf = Arrays.copyOf(iArr, i14);
             Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
-            this.f2220d = copyOf;
-            Object[] copyOf2 = Arrays.copyOf(this.f2221e, i14 << 1);
+            this.f2189d = copyOf;
+            Object[] copyOf2 = Arrays.copyOf(this.f2190e, i14 << 1);
             Intrinsics.checkNotNullExpressionValue(copyOf2, "copyOf(...)");
-            this.f2221e = copyOf2;
-            if (i11 != this.f2222i) {
+            this.f2190e = copyOf2;
+            if (i11 != this.f2191i) {
                 throw new ConcurrentModificationException();
             }
         }
         if (i13 < i11) {
-            int[] iArr2 = this.f2220d;
+            int[] iArr2 = this.f2189d;
             int i15 = i13 + 1;
             i.i(iArr2, iArr2, i15, i13, i11);
-            Object[] objArr2 = this.f2221e;
-            i.k(objArr2, objArr2, i15 << 1, i13 << 1, this.f2222i << 1);
+            Object[] objArr2 = this.f2190e;
+            i.k(objArr2, objArr2, i15 << 1, i13 << 1, this.f2191i << 1);
         }
-        int i16 = this.f2222i;
+        int i16 = this.f2191i;
         if (i11 == i16) {
-            int[] iArr3 = this.f2220d;
+            int[] iArr3 = this.f2189d;
             if (i13 < iArr3.length) {
                 iArr3[i13] = i10;
-                Object[] objArr3 = this.f2221e;
+                Object[] objArr3 = this.f2190e;
                 int i17 = i13 << 1;
                 objArr3[i17] = obj;
                 objArr3[i17 + 1] = obj2;
-                this.f2222i = i16 + 1;
+                this.f2191i = i16 + 1;
                 return null;
             }
         }
@@ -440,16 +440,16 @@ public class SimpleArrayMap {
     }
 
     public int size() {
-        return this.f2222i;
+        return this.f2191i;
     }
 
     public String toString() {
         if (isEmpty()) {
             return "{}";
         }
-        StringBuilder sb2 = new StringBuilder(this.f2222i * 28);
+        StringBuilder sb2 = new StringBuilder(this.f2191i * 28);
         sb2.append('{');
-        int i10 = this.f2222i;
+        int i10 = this.f2191i;
         for (int i11 = 0; i11 < i10; i11++) {
             if (i11 > 0) {
                 sb2.append(", ");
@@ -478,17 +478,17 @@ public class SimpleArrayMap {
         int[] iArr;
         Object[] objArr;
         if (i10 == 0) {
-            iArr = a.f50722a;
+            iArr = a.f51050a;
         } else {
             iArr = new int[i10];
         }
-        this.f2220d = iArr;
+        this.f2189d = iArr;
         if (i10 == 0) {
-            objArr = a.f50724c;
+            objArr = a.f51052c;
         } else {
             objArr = new Object[i10 << 1];
         }
-        this.f2221e = objArr;
+        this.f2190e = objArr;
     }
 
     public boolean remove(Object obj, Object obj2) {

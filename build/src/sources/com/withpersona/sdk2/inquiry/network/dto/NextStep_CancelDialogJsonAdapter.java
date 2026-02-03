@@ -46,17 +46,17 @@ public final class NextStep_CancelDialogJsonAdapter extends h {
         String str3 = null;
         String str4 = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 str2 = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (t02 == 2) {
+            } else if (A0 == 2) {
                 str3 = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (t02 == 3) {
+            } else if (A0 == 3) {
                 str4 = (String) this.nullableStringAdapter.fromJson(reader);
             }
         }
@@ -69,13 +69,13 @@ public final class NextStep_CancelDialogJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (cancelDialog != null) {
             writer.l();
-            writer.t0("title");
+            writer.A0("title");
             this.nullableStringAdapter.toJson(writer, cancelDialog.getTitle());
-            writer.t0("prompt");
+            writer.A0("prompt");
             this.nullableStringAdapter.toJson(writer, cancelDialog.getPrompt());
-            writer.t0("btnSubmit");
+            writer.A0("btnSubmit");
             this.nullableStringAdapter.toJson(writer, cancelDialog.getBtnSubmit());
-            writer.t0("btnResume");
+            writer.A0("btnResume");
             this.nullableStringAdapter.toJson(writer, cancelDialog.getBtnResume());
             writer.E();
             return;

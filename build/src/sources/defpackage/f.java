@@ -6,17 +6,17 @@ import kotlin.jvm.internal.Intrinsics;
 public final class f extends Exception {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f23279d;
+    private final String f22871d;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public f(String message) {
         super(message);
         Intrinsics.checkNotNullParameter(message, "message");
-        this.f23279d = message;
+        this.f22871d = message;
     }
 
     @Override // java.lang.Throwable
     public String getMessage() {
-        return this.f23279d;
+        return this.f22871d;
     }
 }

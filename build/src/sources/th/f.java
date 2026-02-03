@@ -5,14 +5,14 @@ import com.google.android.play.core.assetpacks.q4;
 public final class f implements t {
 
     /* renamed from: a  reason: collision with root package name */
-    private final w f49837a;
+    private final w f50048a;
 
     public f(w wVar) {
-        this.f49837a = wVar;
+        this.f50048a = wVar;
     }
 
     @Override // th.w
     public final /* bridge */ /* synthetic */ Object a() {
-        return new e(((q4) this.f49837a).b());
+        return new e(((q4) this.f50048a).b());
     }
 }

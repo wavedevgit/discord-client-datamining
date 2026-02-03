@@ -12,63 +12,63 @@ import va.z;
 public abstract class a implements r8.f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Class f11260a;
+    private final Class f10228a;
 
     /* renamed from: b  reason: collision with root package name */
-    final r8.d f11261b;
+    final r8.d f10229b;
 
     /* renamed from: c  reason: collision with root package name */
-    final z f11262c;
+    final z f10230c;
 
     /* renamed from: d  reason: collision with root package name */
-    final SparseArray f11263d;
+    final SparseArray f10231d;
 
     /* renamed from: e  reason: collision with root package name */
-    final Set f11264e;
+    final Set f10232e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f11265f;
+    private boolean f10233f;
 
     /* renamed from: g  reason: collision with root package name */
-    final C0161a f11266g;
+    final C0142a f10234g;
 
     /* renamed from: h  reason: collision with root package name */
-    final C0161a f11267h;
+    final C0142a f10235h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final a0 f11268i;
+    private final a0 f10236i;
 
     /* renamed from: j  reason: collision with root package name */
-    private boolean f11269j;
+    private boolean f10237j;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: com.facebook.imagepipeline.memory.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static class C0161a {
+    public static class C0142a {
 
         /* renamed from: a  reason: collision with root package name */
-        int f11270a;
+        int f10238a;
 
         /* renamed from: b  reason: collision with root package name */
-        int f11271b;
+        int f10239b;
 
-        C0161a() {
+        C0142a() {
         }
 
         public void a(int i10) {
             int i11;
-            int i12 = this.f11271b;
-            if (i12 >= i10 && (i11 = this.f11270a) > 0) {
-                this.f11270a = i11 - 1;
-                this.f11271b = i12 - i10;
+            int i12 = this.f10239b;
+            if (i12 >= i10 && (i11 = this.f10238a) > 0) {
+                this.f10238a = i11 - 1;
+                this.f10239b = i12 - i10;
                 return;
             }
-            p8.a.O("com.facebook.imagepipeline.memory.BasePool.Counter", "Unexpected decrement of %d. Current numBytes = %d, count = %d", Integer.valueOf(i10), Integer.valueOf(this.f11271b), Integer.valueOf(this.f11270a));
+            p8.a.O("com.facebook.imagepipeline.memory.BasePool.Counter", "Unexpected decrement of %d. Current numBytes = %d, count = %d", Integer.valueOf(i10), Integer.valueOf(this.f10239b), Integer.valueOf(this.f10238a));
         }
 
         public void b(int i10) {
-            this.f11270a++;
-            this.f11271b += i10;
+            this.f10238a++;
+            this.f10239b += i10;
         }
     }
 
@@ -87,26 +87,26 @@ public abstract class a implements r8.f {
     }
 
     public a(r8.d dVar, z zVar, a0 a0Var) {
-        this.f11260a = getClass();
-        this.f11261b = (r8.d) j.g(dVar);
+        this.f10228a = getClass();
+        this.f10229b = (r8.d) j.g(dVar);
         z zVar2 = (z) j.g(zVar);
-        this.f11262c = zVar2;
-        this.f11268i = (a0) j.g(a0Var);
-        this.f11263d = new SparseArray();
-        if (zVar2.f50987f) {
+        this.f10230c = zVar2;
+        this.f10236i = (a0) j.g(a0Var);
+        this.f10231d = new SparseArray();
+        if (zVar2.f51315f) {
             r();
         } else {
             v(new SparseIntArray(0));
         }
-        this.f11264e = l.b();
-        this.f11267h = new C0161a();
-        this.f11266g = new C0161a();
+        this.f10232e = l.b();
+        this.f10235h = new C0142a();
+        this.f10234g = new C0142a();
     }
 
     private synchronized void i() {
         boolean z10;
         try {
-            if (t() && this.f11267h.f11271b != 0) {
+            if (t() && this.f10235h.f10239b != 0) {
                 z10 = false;
                 j.i(z10);
             }
@@ -118,25 +118,25 @@ public abstract class a implements r8.f {
     }
 
     private void j(SparseIntArray sparseIntArray) {
-        this.f11263d.clear();
+        this.f10231d.clear();
         for (int i10 = 0; i10 < sparseIntArray.size(); i10++) {
             int keyAt = sparseIntArray.keyAt(i10);
-            this.f11263d.put(keyAt, new com.facebook.imagepipeline.memory.b(p(keyAt), sparseIntArray.valueAt(i10), 0, this.f11262c.f50987f));
+            this.f10231d.put(keyAt, new com.facebook.imagepipeline.memory.b(p(keyAt), sparseIntArray.valueAt(i10), 0, this.f10230c.f51315f));
         }
     }
 
     private synchronized com.facebook.imagepipeline.memory.b m(int i10) {
-        return (com.facebook.imagepipeline.memory.b) this.f11263d.get(i10);
+        return (com.facebook.imagepipeline.memory.b) this.f10231d.get(i10);
     }
 
     private synchronized void r() {
         try {
-            SparseIntArray sparseIntArray = this.f11262c.f50984c;
+            SparseIntArray sparseIntArray = this.f10230c.f51312c;
             if (sparseIntArray != null) {
                 j(sparseIntArray);
-                this.f11265f = false;
+                this.f10233f = false;
             } else {
-                this.f11265f = true;
+                this.f10233f = true;
             }
         } catch (Throwable th2) {
             throw th2;
@@ -146,16 +146,16 @@ public abstract class a implements r8.f {
     private synchronized void v(SparseIntArray sparseIntArray) {
         try {
             j.g(sparseIntArray);
-            this.f11263d.clear();
-            SparseIntArray sparseIntArray2 = this.f11262c.f50984c;
+            this.f10231d.clear();
+            SparseIntArray sparseIntArray2 = this.f10230c.f51312c;
             if (sparseIntArray2 != null) {
                 for (int i10 = 0; i10 < sparseIntArray2.size(); i10++) {
                     int keyAt = sparseIntArray2.keyAt(i10);
-                    this.f11263d.put(keyAt, new com.facebook.imagepipeline.memory.b(p(keyAt), sparseIntArray2.valueAt(i10), sparseIntArray.get(keyAt, 0), this.f11262c.f50987f));
+                    this.f10231d.put(keyAt, new com.facebook.imagepipeline.memory.b(p(keyAt), sparseIntArray2.valueAt(i10), sparseIntArray.get(keyAt, 0), this.f10230c.f51315f));
                 }
-                this.f11265f = false;
+                this.f10233f = false;
             } else {
-                this.f11265f = true;
+                this.f10233f = true;
             }
         } catch (Throwable th2) {
             throw th2;
@@ -164,7 +164,7 @@ public abstract class a implements r8.f {
 
     private void w() {
         if (p8.a.w(2)) {
-            p8.a.C(this.f11260a, "Used = (%d, %d); Free = (%d, %d)", Integer.valueOf(this.f11266g.f11270a), Integer.valueOf(this.f11266g.f11271b), Integer.valueOf(this.f11267h.f11270a), Integer.valueOf(this.f11267h.f11271b));
+            p8.a.C(this.f10228a, "Used = (%d, %d); Free = (%d, %d)", Integer.valueOf(this.f10234g.f10238a), Integer.valueOf(this.f10234g.f10239b), Integer.valueOf(this.f10235h.f10238a), Integer.valueOf(this.f10235h.f10239b));
         }
     }
 
@@ -180,21 +180,21 @@ public abstract class a implements r8.f {
             try {
                 com.facebook.imagepipeline.memory.b l10 = l(n10);
                 if (l10 != null && (q10 = q(l10)) != null) {
-                    j.i(this.f11264e.add(q10));
+                    j.i(this.f10232e.add(q10));
                     int o10 = o(q10);
                     int p10 = p(o10);
-                    this.f11266g.b(p10);
-                    this.f11267h.a(p10);
-                    this.f11268i.e(p10);
+                    this.f10234g.b(p10);
+                    this.f10235h.a(p10);
+                    this.f10236i.e(p10);
                     w();
                     if (p8.a.w(2)) {
-                        p8.a.A(this.f11260a, "get (reuse) (object, size) = (%x, %s)", Integer.valueOf(System.identityHashCode(q10)), Integer.valueOf(o10));
+                        p8.a.A(this.f10228a, "get (reuse) (object, size) = (%x, %s)", Integer.valueOf(System.identityHashCode(q10)), Integer.valueOf(o10));
                     }
                     return q10;
                 }
                 int p11 = p(n10);
                 if (h(p11)) {
-                    this.f11266g.b(p11);
+                    this.f10234g.b(p11);
                     if (l10 != null) {
                         l10.e();
                     }
@@ -203,7 +203,7 @@ public abstract class a implements r8.f {
                     } catch (Throwable th2) {
                         synchronized (this) {
                             try {
-                                this.f11266g.a(p11);
+                                this.f10234g.a(p11);
                                 com.facebook.imagepipeline.memory.b l11 = l(n10);
                                 if (l11 != null) {
                                     l11.b();
@@ -216,43 +216,43 @@ public abstract class a implements r8.f {
                     }
                     synchronized (this) {
                         try {
-                            j.i(this.f11264e.add(obj));
+                            j.i(this.f10232e.add(obj));
                             z();
-                            this.f11268i.d(p11);
+                            this.f10236i.d(p11);
                             w();
                             if (p8.a.w(2)) {
-                                p8.a.A(this.f11260a, "get (alloc) (object, size) = (%x, %s)", Integer.valueOf(System.identityHashCode(obj)), Integer.valueOf(n10));
+                                p8.a.A(this.f10228a, "get (alloc) (object, size) = (%x, %s)", Integer.valueOf(System.identityHashCode(obj)), Integer.valueOf(n10));
                             }
                         } finally {
                         }
                     }
                     return obj;
                 }
-                throw new c(this.f11262c.f50982a, this.f11266g.f11271b, this.f11267h.f11271b, p11);
+                throw new c(this.f10230c.f51310a, this.f10234g.f10239b, this.f10235h.f10239b, p11);
             } finally {
             }
         }
     }
 
     synchronized boolean h(int i10) {
-        if (this.f11269j) {
+        if (this.f10237j) {
             return true;
         }
-        z zVar = this.f11262c;
-        int i11 = zVar.f50982a;
-        int i12 = this.f11266g.f11271b;
+        z zVar = this.f10230c;
+        int i11 = zVar.f51310a;
+        int i12 = this.f10234g.f10239b;
         if (i10 > i11 - i12) {
-            this.f11268i.g();
+            this.f10236i.g();
             return false;
         }
-        int i13 = zVar.f50983b;
-        if (i10 > i13 - (i12 + this.f11267h.f11271b)) {
+        int i13 = zVar.f51311b;
+        if (i10 > i13 - (i12 + this.f10235h.f10239b)) {
             y(i13 - i10);
         }
-        if (i10 <= i11 - (this.f11266g.f11271b + this.f11267h.f11271b)) {
+        if (i10 <= i11 - (this.f10234g.f10239b + this.f10235h.f10239b)) {
             return true;
         }
-        this.f11268i.g();
+        this.f10236i.g();
         return false;
     }
 
@@ -260,13 +260,13 @@ public abstract class a implements r8.f {
 
     synchronized com.facebook.imagepipeline.memory.b l(int i10) {
         try {
-            com.facebook.imagepipeline.memory.b bVar = (com.facebook.imagepipeline.memory.b) this.f11263d.get(i10);
-            if (bVar == null && this.f11265f) {
+            com.facebook.imagepipeline.memory.b bVar = (com.facebook.imagepipeline.memory.b) this.f10231d.get(i10);
+            if (bVar == null && this.f10233f) {
                 if (p8.a.w(2)) {
-                    p8.a.z(this.f11260a, "creating new bucket %s", Integer.valueOf(i10));
+                    p8.a.z(this.f10228a, "creating new bucket %s", Integer.valueOf(i10));
                 }
                 com.facebook.imagepipeline.memory.b x10 = x(i10);
-                this.f11263d.put(i10, x10);
+                this.f10231d.put(i10, x10);
                 return x10;
             }
             return bVar;
@@ -301,10 +301,10 @@ public abstract class a implements r8.f {
             int r1 = r5.p(r0)
             monitor-enter(r5)
             com.facebook.imagepipeline.memory.b r2 = r5.m(r0)     // Catch: java.lang.Throwable -> L38
-            java.util.Set r3 = r5.f11264e     // Catch: java.lang.Throwable -> L38
+            java.util.Set r3 = r5.f10232e     // Catch: java.lang.Throwable -> L38
             boolean r3 = r3.remove(r6)     // Catch: java.lang.Throwable -> L38
             if (r3 != 0) goto L3b
-            java.lang.Class r2 = r5.f11260a     // Catch: java.lang.Throwable -> L38
+            java.lang.Class r2 = r5.f10228a     // Catch: java.lang.Throwable -> L38
             java.lang.String r3 = "release (free, value unrecognized) (object, size) = (%x, %s)"
             int r4 = java.lang.System.identityHashCode(r6)     // Catch: java.lang.Throwable -> L38
             java.lang.Integer r4 = java.lang.Integer.valueOf(r4)     // Catch: java.lang.Throwable -> L38
@@ -312,7 +312,7 @@ public abstract class a implements r8.f {
             java.lang.Object[] r0 = new java.lang.Object[]{r4, r0}     // Catch: java.lang.Throwable -> L38
             p8.a.k(r2, r3, r0)     // Catch: java.lang.Throwable -> L38
             r5.k(r6)     // Catch: java.lang.Throwable -> L38
-            va.a0 r6 = r5.f11268i     // Catch: java.lang.Throwable -> L38
+            va.a0 r6 = r5.f10236i     // Catch: java.lang.Throwable -> L38
             r6.b(r1)     // Catch: java.lang.Throwable -> L38
             goto La8
         L38:
@@ -330,15 +330,15 @@ public abstract class a implements r8.f {
             goto L7d
         L51:
             r2.h(r6)     // Catch: java.lang.Throwable -> L38
-            com.facebook.imagepipeline.memory.a$a r2 = r5.f11267h     // Catch: java.lang.Throwable -> L38
+            com.facebook.imagepipeline.memory.a$a r2 = r5.f10235h     // Catch: java.lang.Throwable -> L38
             r2.b(r1)     // Catch: java.lang.Throwable -> L38
-            com.facebook.imagepipeline.memory.a$a r2 = r5.f11266g     // Catch: java.lang.Throwable -> L38
+            com.facebook.imagepipeline.memory.a$a r2 = r5.f10234g     // Catch: java.lang.Throwable -> L38
             r2.a(r1)     // Catch: java.lang.Throwable -> L38
-            va.a0 r2 = r5.f11268i     // Catch: java.lang.Throwable -> L38
+            va.a0 r2 = r5.f10236i     // Catch: java.lang.Throwable -> L38
             r2.c(r1)     // Catch: java.lang.Throwable -> L38
             boolean r1 = p8.a.w(r3)     // Catch: java.lang.Throwable -> L38
             if (r1 == 0) goto La8
-            java.lang.Class r1 = r5.f11260a     // Catch: java.lang.Throwable -> L38
+            java.lang.Class r1 = r5.f10228a     // Catch: java.lang.Throwable -> L38
             java.lang.String r2 = "release (reuse) (object, size) = (%x, %s)"
             int r6 = java.lang.System.identityHashCode(r6)     // Catch: java.lang.Throwable -> L38
             java.lang.Integer r6 = java.lang.Integer.valueOf(r6)     // Catch: java.lang.Throwable -> L38
@@ -351,7 +351,7 @@ public abstract class a implements r8.f {
         L82:
             boolean r2 = p8.a.w(r3)     // Catch: java.lang.Throwable -> L38
             if (r2 == 0) goto L9b
-            java.lang.Class r2 = r5.f11260a     // Catch: java.lang.Throwable -> L38
+            java.lang.Class r2 = r5.f10228a     // Catch: java.lang.Throwable -> L38
             java.lang.String r3 = "release (free) (object, size) = (%x, %s)"
             int r4 = java.lang.System.identityHashCode(r6)     // Catch: java.lang.Throwable -> L38
             java.lang.Integer r4 = java.lang.Integer.valueOf(r4)     // Catch: java.lang.Throwable -> L38
@@ -359,9 +359,9 @@ public abstract class a implements r8.f {
             p8.a.A(r2, r3, r4, r0)     // Catch: java.lang.Throwable -> L38
         L9b:
             r5.k(r6)     // Catch: java.lang.Throwable -> L38
-            com.facebook.imagepipeline.memory.a$a r6 = r5.f11266g     // Catch: java.lang.Throwable -> L38
+            com.facebook.imagepipeline.memory.a$a r6 = r5.f10234g     // Catch: java.lang.Throwable -> L38
             r6.a(r1)     // Catch: java.lang.Throwable -> L38
-            va.a0 r6 = r5.f11268i     // Catch: java.lang.Throwable -> L38
+            va.a0 r6 = r5.f10236i     // Catch: java.lang.Throwable -> L38
             r6.b(r1)     // Catch: java.lang.Throwable -> L38
         La8:
             r5.w()     // Catch: java.lang.Throwable -> L38
@@ -376,19 +376,19 @@ public abstract class a implements r8.f {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void s() {
-        this.f11261b.a(this);
-        this.f11268i.f(this);
+        this.f10229b.a(this);
+        this.f10236i.f(this);
     }
 
     synchronized boolean t() {
         boolean z10;
-        if (this.f11266g.f11271b + this.f11267h.f11271b > this.f11262c.f50983b) {
+        if (this.f10234g.f10239b + this.f10235h.f10239b > this.f10230c.f51311b) {
             z10 = true;
         } else {
             z10 = false;
         }
         if (z10) {
-            this.f11268i.a();
+            this.f10236i.a();
         }
         return z10;
     }
@@ -399,37 +399,37 @@ public abstract class a implements r8.f {
     }
 
     com.facebook.imagepipeline.memory.b x(int i10) {
-        return new com.facebook.imagepipeline.memory.b(p(i10), Integer.MAX_VALUE, 0, this.f11262c.f50987f);
+        return new com.facebook.imagepipeline.memory.b(p(i10), Integer.MAX_VALUE, 0, this.f10230c.f51315f);
     }
 
     synchronized void y(int i10) {
         try {
-            int i11 = this.f11266g.f11271b;
-            int i12 = this.f11267h.f11271b;
+            int i11 = this.f10234g.f10239b;
+            int i12 = this.f10235h.f10239b;
             int min = Math.min((i11 + i12) - i10, i12);
             if (min <= 0) {
                 return;
             }
             if (p8.a.w(2)) {
-                p8.a.B(this.f11260a, "trimToSize: TargetSize = %d; Initial Size = %d; Bytes to free = %d", Integer.valueOf(i10), Integer.valueOf(this.f11266g.f11271b + this.f11267h.f11271b), Integer.valueOf(min));
+                p8.a.B(this.f10228a, "trimToSize: TargetSize = %d; Initial Size = %d; Bytes to free = %d", Integer.valueOf(i10), Integer.valueOf(this.f10234g.f10239b + this.f10235h.f10239b), Integer.valueOf(min));
             }
             w();
-            for (int i13 = 0; i13 < this.f11263d.size() && min > 0; i13++) {
-                com.facebook.imagepipeline.memory.b bVar = (com.facebook.imagepipeline.memory.b) j.g((com.facebook.imagepipeline.memory.b) this.f11263d.valueAt(i13));
+            for (int i13 = 0; i13 < this.f10231d.size() && min > 0; i13++) {
+                com.facebook.imagepipeline.memory.b bVar = (com.facebook.imagepipeline.memory.b) j.g((com.facebook.imagepipeline.memory.b) this.f10231d.valueAt(i13));
                 while (min > 0) {
                     Object g10 = bVar.g();
                     if (g10 == null) {
                         break;
                     }
                     k(g10);
-                    int i14 = bVar.f11272a;
+                    int i14 = bVar.f10240a;
                     min -= i14;
-                    this.f11267h.a(i14);
+                    this.f10235h.a(i14);
                 }
             }
             w();
             if (p8.a.w(2)) {
-                p8.a.A(this.f11260a, "trimToSize: TargetSize = %d; Final Size = %d", Integer.valueOf(i10), Integer.valueOf(this.f11266g.f11271b + this.f11267h.f11271b));
+                p8.a.A(this.f10228a, "trimToSize: TargetSize = %d; Final Size = %d", Integer.valueOf(i10), Integer.valueOf(this.f10234g.f10239b + this.f10235h.f10239b));
             }
         } catch (Throwable th2) {
             throw th2;
@@ -438,12 +438,12 @@ public abstract class a implements r8.f {
 
     synchronized void z() {
         if (t()) {
-            y(this.f11262c.f50983b);
+            y(this.f10230c.f51311b);
         }
     }
 
     public a(r8.d dVar, z zVar, a0 a0Var, boolean z10) {
         this(dVar, zVar, a0Var);
-        this.f11269j = z10;
+        this.f10237j = z10;
     }
 }

@@ -1,18 +1,16 @@
 package br;
 
-import br.l;
+import android.graphics.Bitmap;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class b implements l.a {
-    @Override // br.l.a
-    public void a(l lVar, ev.r rVar) {
-        lVar.w();
-    }
+public abstract /* synthetic */ class b {
 
-    @Override // br.l.a
-    public void b(l lVar, ev.r rVar) {
-        if (lVar.j(rVar)) {
-            lVar.w();
-            lVar.u();
-        }
+    /* renamed from: a  reason: collision with root package name */
+    public static final /* synthetic */ int[] f6768a;
+
+    static {
+        int[] iArr = new int[Bitmap.CompressFormat.values().length];
+        f6768a = iArr;
+        iArr[Bitmap.CompressFormat.PNG.ordinal()] = 1;
+        iArr[Bitmap.CompressFormat.WEBP.ordinal()] = 2;
     }
 }

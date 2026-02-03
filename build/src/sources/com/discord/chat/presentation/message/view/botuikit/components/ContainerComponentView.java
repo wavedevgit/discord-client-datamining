@@ -98,7 +98,7 @@ public final class ContainerComponentView extends FrameLayout implements Compone
     public static final Unit configureSpoiler$lambda$1(ComponentContext componentContext, ContainerComponentView containerComponentView) {
         componentContext.getGeneralEventHandlers().getOnTapSpoiler().invoke();
         containerComponentView.binding.childrenViews.setImportantForAccessibility(0);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     @NotNull

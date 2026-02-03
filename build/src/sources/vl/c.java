@@ -10,129 +10,129 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c {
 
     /* renamed from: l  reason: collision with root package name */
-    public static final b f51335l = new b(null);
+    public static final b f51663l = new b(null);
 
     /* renamed from: m  reason: collision with root package name */
-    private static final String f51336m;
+    private static final String f51664m;
 
     /* renamed from: n  reason: collision with root package name */
-    private static final ZoomLogger f51337n;
+    private static final ZoomLogger f51665n;
 
     /* renamed from: a  reason: collision with root package name */
-    private final float f51338a;
+    private final float f51666a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f51339b;
+    private final boolean f51667b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f51340c;
+    private final boolean f51668c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final AbsolutePoint f51341d;
+    private final AbsolutePoint f51669d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ScaledPoint f51342e;
+    private final ScaledPoint f51670e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final boolean f51343f;
+    private final boolean f51671f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f51344g;
+    private final boolean f51672g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final Float f51345h;
+    private final Float f51673h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Float f51346i;
+    private final Float f51674i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final boolean f51347j;
+    private final boolean f51675j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final boolean f51348k;
+    private final boolean f51676k;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: b  reason: collision with root package name */
-        private boolean f51350b;
+        private boolean f51678b;
 
         /* renamed from: c  reason: collision with root package name */
-        private boolean f51351c;
+        private boolean f51679c;
 
         /* renamed from: d  reason: collision with root package name */
-        private AbsolutePoint f51352d;
+        private AbsolutePoint f51680d;
 
         /* renamed from: e  reason: collision with root package name */
-        private ScaledPoint f51353e;
+        private ScaledPoint f51681e;
 
         /* renamed from: f  reason: collision with root package name */
-        private boolean f51354f;
+        private boolean f51682f;
 
         /* renamed from: g  reason: collision with root package name */
-        private boolean f51355g;
+        private boolean f51683g;
 
         /* renamed from: h  reason: collision with root package name */
-        private Float f51356h;
+        private Float f51684h;
 
         /* renamed from: i  reason: collision with root package name */
-        private Float f51357i;
+        private Float f51685i;
 
         /* renamed from: a  reason: collision with root package name */
-        private float f51349a = Float.NaN;
+        private float f51677a = Float.NaN;
 
         /* renamed from: j  reason: collision with root package name */
-        private boolean f51358j = true;
+        private boolean f51686j = true;
 
         public final c a() {
-            return new c(this.f51349a, this.f51350b, this.f51351c, this.f51352d, this.f51353e, this.f51354f, this.f51355g, this.f51356h, this.f51357i, this.f51358j, null);
+            return new c(this.f51677a, this.f51678b, this.f51679c, this.f51680d, this.f51681e, this.f51682f, this.f51683g, this.f51684h, this.f51685i, this.f51686j, null);
         }
 
         public final void b(AbsolutePoint absolutePoint, boolean z10) {
-            this.f51353e = null;
-            this.f51352d = absolutePoint;
-            this.f51354f = true;
-            this.f51355g = z10;
+            this.f51681e = null;
+            this.f51680d = absolutePoint;
+            this.f51682f = true;
+            this.f51683g = z10;
         }
 
         public final void c(ScaledPoint scaledPoint, boolean z10) {
-            this.f51353e = scaledPoint;
-            this.f51352d = null;
-            this.f51354f = true;
-            this.f51355g = z10;
+            this.f51681e = scaledPoint;
+            this.f51680d = null;
+            this.f51682f = true;
+            this.f51683g = z10;
         }
 
         public final void d(AbsolutePoint absolutePoint, boolean z10) {
-            this.f51353e = null;
-            this.f51352d = absolutePoint;
-            this.f51354f = false;
-            this.f51355g = z10;
+            this.f51681e = null;
+            this.f51680d = absolutePoint;
+            this.f51682f = false;
+            this.f51683g = z10;
         }
 
         public final void e(ScaledPoint scaledPoint, boolean z10) {
-            this.f51353e = scaledPoint;
-            this.f51352d = null;
-            this.f51354f = false;
-            this.f51355g = z10;
+            this.f51681e = scaledPoint;
+            this.f51680d = null;
+            this.f51682f = false;
+            this.f51683g = z10;
         }
 
         public final void f(Float f10, Float f11) {
-            this.f51356h = f10;
-            this.f51357i = f11;
+            this.f51684h = f10;
+            this.f51685i = f11;
         }
 
         public final void g(boolean z10) {
-            this.f51358j = z10;
+            this.f51686j = z10;
         }
 
         public final void h(boolean z10) {
-            this.f51355g = z10;
+            this.f51683g = z10;
         }
 
         public final void i(float f10, boolean z10) {
-            this.f51349a = f10;
-            this.f51350b = false;
-            this.f51351c = z10;
+            this.f51677a = f10;
+            this.f51678b = false;
+            this.f51679c = z10;
         }
     }
 
@@ -155,10 +155,10 @@ public final class c {
 
     static {
         String TAG = c.class.getSimpleName();
-        f51336m = TAG;
-        ZoomLogger.a aVar = ZoomLogger.f17939b;
+        f51664m = TAG;
+        ZoomLogger.a aVar = ZoomLogger.f16907b;
         Intrinsics.checkNotNullExpressionValue(TAG, "TAG");
-        f51337n = aVar.a(TAG);
+        f51665n = aVar.a(TAG);
     }
 
     public /* synthetic */ c(float f10, boolean z10, boolean z11, AbsolutePoint absolutePoint, ScaledPoint scaledPoint, boolean z12, boolean z13, Float f11, Float f12, boolean z14, DefaultConstructorMarker defaultConstructorMarker) {
@@ -166,67 +166,67 @@ public final class c {
     }
 
     public final boolean a() {
-        return this.f51344g;
+        return this.f51672g;
     }
 
     public final boolean b() {
-        return this.f51340c;
+        return this.f51668c;
     }
 
     public final boolean c() {
-        return this.f51348k;
+        return this.f51676k;
     }
 
     public final boolean d() {
-        return !Float.isNaN(this.f51338a);
+        return !Float.isNaN(this.f51666a);
     }
 
     public final boolean e() {
-        return this.f51347j;
+        return this.f51675j;
     }
 
     public final AbsolutePoint f() {
-        return this.f51341d;
+        return this.f51669d;
     }
 
     public final Float g() {
-        return this.f51345h;
+        return this.f51673h;
     }
 
     public final Float h() {
-        return this.f51346i;
+        return this.f51674i;
     }
 
     public final ScaledPoint i() {
-        return this.f51342e;
+        return this.f51670e;
     }
 
     public final float j() {
-        return this.f51338a;
+        return this.f51666a;
     }
 
     public final boolean k() {
-        return this.f51343f;
+        return this.f51671f;
     }
 
     public final boolean l() {
-        return this.f51339b;
+        return this.f51667b;
     }
 
     private c(float f10, boolean z10, boolean z11, AbsolutePoint absolutePoint, ScaledPoint scaledPoint, boolean z12, boolean z13, Float f11, Float f12, boolean z14) {
-        this.f51338a = f10;
-        this.f51339b = z10;
-        this.f51340c = z11;
-        this.f51341d = absolutePoint;
-        this.f51342e = scaledPoint;
-        this.f51343f = z12;
-        this.f51344g = z13;
-        this.f51345h = f11;
-        this.f51346i = f12;
-        this.f51347j = z14;
+        this.f51666a = f10;
+        this.f51667b = z10;
+        this.f51668c = z11;
+        this.f51669d = absolutePoint;
+        this.f51670e = scaledPoint;
+        this.f51671f = z12;
+        this.f51672g = z13;
+        this.f51673h = f11;
+        this.f51674i = f12;
+        this.f51675j = z14;
         if (absolutePoint != null && scaledPoint != null) {
             throw new IllegalStateException("Can only use either pan or scaledPan");
         }
-        this.f51348k = (absolutePoint == null && scaledPoint == null) ? false : true;
+        this.f51676k = (absolutePoint == null && scaledPoint == null) ? false : true;
     }
 }

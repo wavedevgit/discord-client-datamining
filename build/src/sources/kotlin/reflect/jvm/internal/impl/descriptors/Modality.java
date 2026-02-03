@@ -11,10 +11,10 @@ public final class Modality {
     public static final Companion Companion;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ Modality[] f33377d;
+    private static final /* synthetic */ Modality[] f32767d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f33378e;
+    private static final /* synthetic */ EnumEntries f32768e;
     public static final Modality FINAL = new Modality("FINAL", 0);
     public static final Modality SEALED = new Modality("SEALED", 1);
     public static final Modality OPEN = new Modality("OPEN", 2);
@@ -46,8 +46,8 @@ public final class Modality {
 
     static {
         Modality[] a10 = a();
-        f33377d = a10;
-        f33378e = qr.a.a(a10);
+        f32767d = a10;
+        f32768e = sr.a.a(a10);
         Companion = new Companion(null);
     }
 
@@ -63,6 +63,6 @@ public final class Modality {
     }
 
     public static Modality[] values() {
-        return (Modality[]) f33377d.clone();
+        return (Modality[]) f32767d.clone();
     }
 }

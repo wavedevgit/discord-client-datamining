@@ -1,19 +1,190 @@
 package ls;
 
+import js.c0;
+import kotlin.Result;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
-import kotlinx.coroutines.flow.FlowCollector;
+import kotlin.coroutines.CoroutineContext;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+import kotlinx.coroutines.CancellableContinuation;
+import kotlinx.coroutines.CoroutineScope;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class s implements FlowCollector {
+public abstract class s {
 
-    /* renamed from: d  reason: collision with root package name */
-    public static final s f37614d = new s();
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a extends kotlin.coroutines.jvm.internal.d {
 
-    private s() {
+        /* renamed from: d */
+        Object f37214d;
+
+        /* renamed from: e */
+        Object f37215e;
+
+        /* renamed from: i */
+        /* synthetic */ Object f37216i;
+
+        /* renamed from: o */
+        int f37217o;
+
+        a(Continuation continuation) {
+            super(continuation);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Object invokeSuspend(Object obj) {
+            this.f37216i = obj;
+            this.f37217o |= Integer.MIN_VALUE;
+            return s.a(null, null, this);
+        }
     }
 
-    @Override // kotlinx.coroutines.flow.FlowCollector
-    public Object emit(Object obj, Continuation continuation) {
-        return Unit.f33074a;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b implements Function1 {
+
+        /* renamed from: d */
+        final /* synthetic */ CancellableContinuation f37218d;
+
+        b(CancellableContinuation cancellableContinuation) {
+            this.f37218d = cancellableContinuation;
+        }
+
+        public final void a(Throwable th2) {
+            CancellableContinuation cancellableContinuation = this.f37218d;
+            Result.a aVar = Result.f32461e;
+            cancellableContinuation.resumeWith(Result.b(Unit.f32464a));
+        }
+
+        @Override // kotlin.jvm.functions.Function1
+        public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+            a((Throwable) obj);
+            return Unit.f32464a;
+        }
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:42:0x0023  */
+    /* JADX WARN: Removed duplicated region for block: B:50:0x003c  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static final java.lang.Object a(kotlinx.coroutines.channels.ProducerScope r4, kotlin.jvm.functions.Function0 r5, kotlin.coroutines.Continuation r6) {
+        /*
+            boolean r0 = r6 instanceof ls.s.a
+            if (r0 == 0) goto L13
+            r0 = r6
+            ls.s$a r0 = (ls.s.a) r0
+            int r1 = r0.f37217o
+            r2 = -2147483648(0xffffffff80000000, float:-0.0)
+            r3 = r1 & r2
+            if (r3 == 0) goto L13
+            int r1 = r1 - r2
+            r0.f37217o = r1
+            goto L18
+        L13:
+            ls.s$a r0 = new ls.s$a
+            r0.<init>(r6)
+        L18:
+            java.lang.Object r6 = r0.f37216i
+            java.lang.Object r1 = rr.b.f()
+            int r2 = r0.f37217o
+            r3 = 1
+            if (r2 == 0) goto L3c
+            if (r2 != r3) goto L34
+            java.lang.Object r4 = r0.f37215e
+            r5 = r4
+            kotlin.jvm.functions.Function0 r5 = (kotlin.jvm.functions.Function0) r5
+            java.lang.Object r4 = r0.f37214d
+            kotlinx.coroutines.channels.ProducerScope r4 = (kotlinx.coroutines.channels.ProducerScope) r4
+            kotlin.c.b(r6)     // Catch: java.lang.Throwable -> L32
+            goto L75
+        L32:
+            r4 = move-exception
+            goto L7b
+        L34:
+            java.lang.IllegalStateException r4 = new java.lang.IllegalStateException
+            java.lang.String r5 = "call to 'resume' before 'invoke' with coroutine"
+            r4.<init>(r5)
+            throw r4
+        L3c:
+            kotlin.c.b(r6)
+            kotlin.coroutines.CoroutineContext r6 = r0.getContext()
+            kotlinx.coroutines.Job$b r2 = kotlinx.coroutines.Job.f35473h
+            kotlin.coroutines.CoroutineContext$Element r6 = r6.l(r2)
+            if (r6 != r4) goto L7f
+            r0.f37214d = r4     // Catch: java.lang.Throwable -> L32
+            r0.f37215e = r5     // Catch: java.lang.Throwable -> L32
+            r0.f37217o = r3     // Catch: java.lang.Throwable -> L32
+            kotlinx.coroutines.e r6 = new kotlinx.coroutines.e     // Catch: java.lang.Throwable -> L32
+            kotlin.coroutines.Continuation r2 = rr.b.c(r0)     // Catch: java.lang.Throwable -> L32
+            r6.<init>(r2, r3)     // Catch: java.lang.Throwable -> L32
+            r6.H()     // Catch: java.lang.Throwable -> L32
+            ls.s$b r2 = new ls.s$b     // Catch: java.lang.Throwable -> L32
+            r2.<init>(r6)     // Catch: java.lang.Throwable -> L32
+            r4.d(r2)     // Catch: java.lang.Throwable -> L32
+            java.lang.Object r4 = r6.B()     // Catch: java.lang.Throwable -> L32
+            java.lang.Object r6 = rr.b.f()     // Catch: java.lang.Throwable -> L32
+            if (r4 != r6) goto L72
+            kotlin.coroutines.jvm.internal.g.c(r0)     // Catch: java.lang.Throwable -> L32
+        L72:
+            if (r4 != r1) goto L75
+            return r1
+        L75:
+            r5.invoke()
+            kotlin.Unit r4 = kotlin.Unit.f32464a
+            return r4
+        L7b:
+            r5.invoke()
+            throw r4
+        L7f:
+            java.lang.IllegalStateException r4 = new java.lang.IllegalStateException
+            java.lang.String r5 = "awaitClose() can only be invoked from the producer context"
+            r4.<init>(r5)
+            throw r4
+        */
+        throw new UnsupportedOperationException("Method not decompiled: ls.s.a(kotlinx.coroutines.channels.ProducerScope, kotlin.jvm.functions.Function0, kotlin.coroutines.Continuation):java.lang.Object");
+    }
+
+    public static final v b(CoroutineScope coroutineScope, CoroutineContext coroutineContext, int i10, Function2 function2) {
+        return c(coroutineScope, coroutineContext, i10, ls.a.f37142d, c0.f31947d, null, function2);
+    }
+
+    public static final v c(CoroutineScope coroutineScope, CoroutineContext coroutineContext, int i10, ls.a aVar, c0 c0Var, Function1 function1, Function2 function2) {
+        t tVar = new t(js.x.k(coroutineScope, coroutineContext), j.b(i10, aVar, null, 4, null));
+        if (function1 != null) {
+            tVar.C0(function1);
+        }
+        tVar.U0(c0Var, tVar, function2);
+        return tVar;
+    }
+
+    public static /* synthetic */ v d(CoroutineScope coroutineScope, CoroutineContext coroutineContext, int i10, Function2 function2, int i11, Object obj) {
+        if ((i11 & 1) != 0) {
+            coroutineContext = kotlin.coroutines.e.f32538d;
+        }
+        if ((i11 & 2) != 0) {
+            i10 = 0;
+        }
+        return b(coroutineScope, coroutineContext, i10, function2);
+    }
+
+    public static /* synthetic */ v e(CoroutineScope coroutineScope, CoroutineContext coroutineContext, int i10, ls.a aVar, c0 c0Var, Function1 function1, Function2 function2, int i11, Object obj) {
+        if ((i11 & 1) != 0) {
+            coroutineContext = kotlin.coroutines.e.f32538d;
+        }
+        if ((i11 & 2) != 0) {
+            i10 = 0;
+        }
+        if ((i11 & 4) != 0) {
+            aVar = ls.a.f37142d;
+        }
+        if ((i11 & 8) != 0) {
+            c0Var = c0.f31947d;
+        }
+        if ((i11 & 16) != 0) {
+            function1 = null;
+        }
+        Function1 function12 = function1;
+        return c(coroutineScope, coroutineContext, i10, aVar, c0Var, function12, function2);
     }
 }

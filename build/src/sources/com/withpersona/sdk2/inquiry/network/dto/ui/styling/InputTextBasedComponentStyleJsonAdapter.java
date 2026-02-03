@@ -110,9 +110,9 @@ public final class InputTextBasedComponentStyleJsonAdapter extends h {
         AttributeStyles.InputTextBorderColorStyle inputTextBorderColorStyle = null;
         AttributeStyles.InputTextStrokeColorStyle inputTextStrokeColorStyle = null;
         while (reader.hasNext()) {
-            switch (reader.t0(this.options)) {
+            switch (reader.A0(this.options)) {
                 case -1:
-                    reader.F0();
+                    reader.E0();
                     reader.P();
                     break;
                 case 0:
@@ -162,29 +162,29 @@ public final class InputTextBasedComponentStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputTextBasedComponentStyle != null) {
             writer.l();
-            writer.t0(ViewProps.MARGIN);
+            writer.A0(ViewProps.MARGIN);
             this.nullableInputMarginStyleAdapter.toJson(writer, inputTextBasedComponentStyle.getMargin());
-            writer.t0(ViewProps.FONT_FAMILY);
+            writer.A0(ViewProps.FONT_FAMILY);
             this.nullableComplexTextBasedFontFamilyStyleAdapter.toJson(writer, inputTextBasedComponentStyle.getFontFamily());
-            writer.t0(ViewProps.FONT_SIZE);
+            writer.A0(ViewProps.FONT_SIZE);
             this.nullableComplexTextBasedFontSizeStyleAdapter.toJson(writer, inputTextBasedComponentStyle.getFontSize());
-            writer.t0(ViewProps.FONT_WEIGHT);
+            writer.A0(ViewProps.FONT_WEIGHT);
             this.nullableComplexTextBasedFontWeightStyleAdapter.toJson(writer, inputTextBasedComponentStyle.getFontWeight());
-            writer.t0(ViewProps.LETTER_SPACING);
+            writer.A0(ViewProps.LETTER_SPACING);
             this.nullableComplexTextBasedLetterSpacingStyleAdapter.toJson(writer, inputTextBasedComponentStyle.getLetterSpacing());
-            writer.t0(ViewProps.LINE_HEIGHT);
+            writer.A0(ViewProps.LINE_HEIGHT);
             this.nullableComplexTextBasedLineHeightStyleAdapter.toJson(writer, inputTextBasedComponentStyle.getLineHeight());
-            writer.t0("textColor");
+            writer.A0("textColor");
             this.nullableComplexTextBasedTextColorStyleAdapter.toJson(writer, inputTextBasedComponentStyle.getTextColor());
-            writer.t0("borderRadius");
+            writer.A0("borderRadius");
             this.nullableInputTextBorderRadiusStyleAdapter.toJson(writer, inputTextBasedComponentStyle.getBorderRadius());
-            writer.t0(ViewProps.BORDER_WIDTH);
+            writer.A0(ViewProps.BORDER_WIDTH);
             this.nullableInputTextBorderWidthStyleAdapter.toJson(writer, inputTextBasedComponentStyle.getBorderWidth());
-            writer.t0(ViewProps.BACKGROUND_COLOR);
+            writer.A0(ViewProps.BACKGROUND_COLOR);
             this.nullableInputTextBackgroundColorStyleAdapter.toJson(writer, inputTextBasedComponentStyle.getBackgroundColor());
-            writer.t0(ViewProps.BORDER_COLOR);
+            writer.A0(ViewProps.BORDER_COLOR);
             this.nullableInputTextBorderColorStyleAdapter.toJson(writer, inputTextBasedComponentStyle.getBorderColor());
-            writer.t0("strokeColor");
+            writer.A0("strokeColor");
             this.nullableInputTextStrokeColorStyleAdapter.toJson(writer, inputTextBasedComponentStyle.getStrokeColor());
             writer.E();
             return;

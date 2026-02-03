@@ -1,27 +1,27 @@
 package up;
 
-import java.util.HashMap;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import wq.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class c {
+public final class c implements wq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f50554a = new a(null);
+    private final h f50833a;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final HashMap f50555b = new HashMap();
+    public c(h hVar) {
+        this.f50833a = hVar;
+    }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    public static c a(h hVar) {
+        return new c(hVar);
+    }
 
-        public final HashMap a() {
-            return c.f50555b;
-        }
+    public static b c(qp.e eVar) {
+        return new b(eVar);
+    }
 
-        private a() {
-        }
+    @Override // javax.inject.Provider
+    /* renamed from: b */
+    public b get() {
+        return c((qp.e) this.f50833a.get());
     }
 }

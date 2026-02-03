@@ -5,41 +5,41 @@ import com.facebook.react.devsupport.StackTraceHelper;
 public abstract class e4 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final j5 f14630a = l5.k(StackTraceHelper.ID_KEY);
+    public static final j5 f13598a = l5.j(StackTraceHelper.ID_KEY);
 
     /* renamed from: b  reason: collision with root package name */
-    public static final j5 f14631b = l5.k("type");
+    public static final j5 f13599b = l5.j("type");
 
     static {
-        l5.k("transports");
-        l5.k(StackTraceHelper.NAME_KEY);
-        l5.k("icon");
-        l5.k("displayName");
-        l5.k("alg");
-        l5.k("plat");
-        l5.k("rk");
-        l5.k("clientPin");
-        l5.k("up");
-        l5.k("uv");
-        l5.k("alwaysUv");
-        l5.k("credMgmt");
-        l5.k("authnrCfg");
-        l5.k("bioEnroll");
-        l5.k("largeBlobs");
-        l5.k("pinUvAuthToken");
-        l5.k("noMcGaPermissionsWithClientPin");
-        l5.k("ep");
-        l5.k("uvBioEnroll");
-        l5.k("uvAcfg");
-        l5.k("setMinPINLength");
-        l5.k("makeCredUvNotRqd");
-        l5.k("credentialMgmtPreview");
-        l5.k("userVerificationMgmtPreview");
-        l5.k("uvm");
-        l5.k("hmac-secret");
-        l5.k("prf");
-        l5.k("multiAssertion");
-        l5.k("sessionId");
-        l5.k("google_userVerificationOrigin");
+        l5.j("transports");
+        l5.j(StackTraceHelper.NAME_KEY);
+        l5.j("icon");
+        l5.j("displayName");
+        l5.j("alg");
+        l5.j("plat");
+        l5.j("rk");
+        l5.j("clientPin");
+        l5.j("up");
+        l5.j("uv");
+        l5.j("alwaysUv");
+        l5.j("credMgmt");
+        l5.j("authnrCfg");
+        l5.j("bioEnroll");
+        l5.j("largeBlobs");
+        l5.j("pinUvAuthToken");
+        l5.j("noMcGaPermissionsWithClientPin");
+        l5.j("ep");
+        l5.j("uvBioEnroll");
+        l5.j("uvAcfg");
+        l5.j("setMinPINLength");
+        l5.j("makeCredUvNotRqd");
+        l5.j("credentialMgmtPreview");
+        l5.j("userVerificationMgmtPreview");
+        l5.j("uvm");
+        l5.j("hmac-secret");
+        l5.j("prf");
+        l5.j("multiAssertion");
+        l5.j("sessionId");
+        l5.j("google_userVerificationOrigin");
     }
 }

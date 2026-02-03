@@ -12,8 +12,8 @@ public interface b extends IInterface {
 
         /* renamed from: yf.b$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        public static class C0771a extends jg.a implements b {
-            C0771a(IBinder iBinder) {
+        public static class C0744a extends jg.a implements b {
+            C0744a(IBinder iBinder) {
                 super(iBinder, "com.google.android.gms.identitycredentials.internal.IIdentityCredentialService");
             }
 
@@ -34,7 +34,7 @@ public interface b extends IInterface {
             if (queryLocalInterface instanceof b) {
                 return (b) queryLocalInterface;
             }
-            return new C0771a(iBinder);
+            return new C0744a(iBinder);
         }
     }
 

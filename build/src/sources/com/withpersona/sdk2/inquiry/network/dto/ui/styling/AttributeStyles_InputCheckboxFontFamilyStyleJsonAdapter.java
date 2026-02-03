@@ -46,15 +46,15 @@ public final class AttributeStyles_InputCheckboxFontFamilyStyleJsonAdapter exten
         StyleElements.FontName fontName2 = null;
         StyleElements.FontName fontName3 = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 fontName = (StyleElements.FontName) this.nullableFontNameAdapter.fromJson(reader);
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 fontName2 = (StyleElements.FontName) this.nullableFontNameAdapter.fromJson(reader);
-            } else if (t02 == 2) {
+            } else if (A0 == 2) {
                 fontName3 = (StyleElements.FontName) this.nullableFontNameAdapter.fromJson(reader);
             }
         }
@@ -67,11 +67,11 @@ public final class AttributeStyles_InputCheckboxFontFamilyStyleJsonAdapter exten
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputCheckboxFontFamilyStyle != null) {
             writer.l();
-            writer.t0("base");
+            writer.A0("base");
             this.nullableFontNameAdapter.toJson(writer, inputCheckboxFontFamilyStyle.getBase());
-            writer.t0("description");
+            writer.A0("description");
             this.nullableFontNameAdapter.toJson(writer, inputCheckboxFontFamilyStyle.getDescription());
-            writer.t0("error");
+            writer.A0("error");
             this.nullableFontNameAdapter.toJson(writer, inputCheckboxFontFamilyStyle.getError());
             writer.E();
             return;

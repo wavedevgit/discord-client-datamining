@@ -14,25 +14,25 @@ import org.jetbrains.annotations.NotNull;
 public final class CreateInquirySessionResponse_DataJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19799a;
+    private final m.b f18781a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19800b;
+    private final com.squareup.moshi.h f18782b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.squareup.moshi.h f19801c;
+    private final com.squareup.moshi.h f18783c;
 
     public CreateInquirySessionResponse_DataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a(StackTraceHelper.ID_KEY, "attributes");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19799a = a10;
+        this.f18781a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), StackTraceHelper.ID_KEY);
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19800b = f10;
+        this.f18782b = f10;
         com.squareup.moshi.h f11 = moshi.f(CreateInquirySessionResponse.Attributes.class, x0.d(), "attributes");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f19801c = f11;
+        this.f18783c = f11;
     }
 
     @Override // com.squareup.moshi.h
@@ -43,20 +43,20 @@ public final class CreateInquirySessionResponse_DataJsonAdapter extends com.squa
         String str = null;
         CreateInquirySessionResponse.Attributes attributes = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.f19799a);
-            if (t02 != -1) {
-                if (t02 != 0) {
-                    if (t02 == 1 && (attributes = (CreateInquirySessionResponse.Attributes) this.f19801c.fromJson(reader)) == null) {
-                        throw tm.c.x("attributes", "attributes", reader);
+            int A0 = reader.A0(this.f18781a);
+            if (A0 != -1) {
+                if (A0 != 0) {
+                    if (A0 == 1 && (attributes = (CreateInquirySessionResponse.Attributes) this.f18783c.fromJson(reader)) == null) {
+                        throw vm.c.x("attributes", "attributes", reader);
                     }
                 } else {
-                    str = (String) this.f19800b.fromJson(reader);
+                    str = (String) this.f18782b.fromJson(reader);
                     if (str == null) {
-                        throw tm.c.x(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
+                        throw vm.c.x(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
                     }
                 }
             } else {
-                reader.F0();
+                reader.E0();
                 reader.P();
             }
         }
@@ -65,9 +65,9 @@ public final class CreateInquirySessionResponse_DataJsonAdapter extends com.squa
             if (attributes != null) {
                 return new CreateInquirySessionResponse.Data(str, attributes);
             }
-            throw tm.c.o("attributes", "attributes", reader);
+            throw vm.c.o("attributes", "attributes", reader);
         }
-        throw tm.c.o(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
+        throw vm.c.o(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -76,10 +76,10 @@ public final class CreateInquirySessionResponse_DataJsonAdapter extends com.squa
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (data != null) {
             writer.l();
-            writer.t0(StackTraceHelper.ID_KEY);
-            this.f19800b.toJson(writer, data.b());
-            writer.t0("attributes");
-            this.f19801c.toJson(writer, data.a());
+            writer.A0(StackTraceHelper.ID_KEY);
+            this.f18782b.toJson(writer, data.b());
+            writer.A0("attributes");
+            this.f18783c.toJson(writer, data.a());
             writer.E();
             return;
         }

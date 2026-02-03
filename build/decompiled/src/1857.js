@@ -9,10 +9,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/.cache/intl/bW9kdWxlcy9wYXJlbnRfdG9vbHM=',
+        'httpServerLocation': '/assets/modules/guild_settings/server_monetization/tags/web',
         'scales': null,
-        'hash': 'f1f27dae7f4668912186898b93348cf1',
-        'name': 'es-ES.messages.f1f27dae7f4668912186898b93348cf1.compiled.messages',
+        'hash': 'c85836b0e309a6c3bd487e8855ab20ff',
+        'name': 'GuildSettingsTags.compiled.messages',
         'type': 'jsona'
     };
     var4 = [1];

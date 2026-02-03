@@ -54,7 +54,7 @@ public final class SurveyIndicationMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof SurveyIndicationMessageAccessory) {
             SurveyIndicationMessageAccessory surveyIndicationMessageAccessory = (SurveyIndicationMessageAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, surveyIndicationMessageAccessory.messageId) && Intrinsics.areEqual(this.surveyIndication, surveyIndicationMessageAccessory.surveyIndication);
+            return MessageId.m1089equalsimpl0(this.messageId, surveyIndicationMessageAccessory.messageId) && Intrinsics.areEqual(this.surveyIndication, surveyIndicationMessageAccessory.surveyIndication);
         }
         return false;
     }
@@ -72,14 +72,14 @@ public final class SurveyIndicationMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.surveyIndication.hashCode();
+        return (MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.surveyIndication.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         SurveyIndication surveyIndication = this.surveyIndication;
-        return "SurveyIndicationMessageAccessory(messageId=" + m1093toStringimpl + ", surveyIndication=" + surveyIndication + ")";
+        return "SurveyIndicationMessageAccessory(messageId=" + m1092toStringimpl + ", surveyIndication=" + surveyIndication + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

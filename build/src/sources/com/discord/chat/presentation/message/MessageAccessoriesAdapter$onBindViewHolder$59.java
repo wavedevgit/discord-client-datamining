@@ -19,8 +19,8 @@ public /* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$59 exten
 
     @Override // kotlin.jvm.functions.Function3
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
-        m518invokeEqy5D80(((MessageId) obj).m1095unboximpl(), ((ChannelId) obj2).m1069unboximpl(), (String) obj3);
-        return Unit.f33074a;
+        m518invokeEqy5D80(((MessageId) obj).m1094unboximpl(), ((ChannelId) obj2).m1068unboximpl(), (String) obj3);
+        return Unit.f32464a;
     }
 
     /* renamed from: invoke-Eqy5D80  reason: not valid java name */

@@ -76,8 +76,8 @@ public final class AudioWaveView extends View implements AudioProgressView {
         CHUNK_MAX_HEIGHT = SizeUtilsKt.getDpToPx(12);
         int i10 = dpToPx + dpToPx2;
         CHUNK_SIZE = i10;
-        Duration.a aVar = Duration.f36073e;
-        MAX_DURATION = Duration.t(kotlin.time.b.s(30, fs.b.f25570p));
+        Duration.a aVar = Duration.f35463e;
+        MAX_DURATION = Duration.t(kotlin.time.b.s(30, hs.b.f28135p));
         MIN_WIDTH = i10 * 5;
         MAX_WIDTH = SizeUtilsKt.getDpToPx(600);
     }
@@ -136,7 +136,7 @@ public final class AudioWaveView extends View implements AudioProgressView {
         if (job != null) {
             Job.a.a(job, null, 1, null);
         }
-        d10 = hs.i.d(CoroutineViewUtilsKt.getAttachedScope(this), null, null, new AudioWaveView$finishAnimation$1(this, null), 3, null);
+        d10 = js.i.d(CoroutineViewUtilsKt.getAttachedScope(this), null, null, new AudioWaveView$finishAnimation$1(this, null), 3, null);
         this.animationJob = d10;
     }
 
@@ -148,7 +148,7 @@ public final class AudioWaveView extends View implements AudioProgressView {
 
     private final void recalculateSampleData(byte[] bArr, int i10, boolean z10) {
         if (z10 && i10 != this.downSampleData.length) {
-            hs.i.d(CoroutineViewUtilsKt.getAttachedScope(this), null, null, new AudioWaveView$recalculateSampleData$1(this, bArr, i10, null), 3, null);
+            js.i.d(CoroutineViewUtilsKt.getAttachedScope(this), null, null, new AudioWaveView$recalculateSampleData$1(this, bArr, i10, null), 3, null);
         } else {
             invalidate();
         }

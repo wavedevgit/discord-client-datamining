@@ -10,26 +10,26 @@ final class b extends tc.a {
 
     /* renamed from: wc.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    private static final class C0704b implements a.f {
+    private static final class C0696b implements a.f {
 
         /* renamed from: a  reason: collision with root package name */
-        private final t f51862a;
+        private final t f52084a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f51863b;
+        private final int f52085b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final q.a f51864c;
+        private final q.a f52086c;
 
         private long c(l lVar) {
-            while (lVar.g() < lVar.getLength() - 6 && !q.h(lVar, this.f51862a, this.f51863b, this.f51864c)) {
+            while (lVar.g() < lVar.getLength() - 6 && !q.h(lVar, this.f52084a, this.f52085b, this.f52086c)) {
                 lVar.h(1);
             }
             if (lVar.g() >= lVar.getLength() - 6) {
                 lVar.h((int) (lVar.getLength() - lVar.g()));
-                return this.f51862a.f49776j;
+                return this.f52084a.f49987j;
             }
-            return this.f51864c.f49763a;
+            return this.f52086c.f49974a;
         }
 
         @Override // tc.a.f
@@ -37,7 +37,7 @@ final class b extends tc.a {
             long position = lVar.getPosition();
             long c10 = c(lVar);
             long g10 = lVar.g();
-            lVar.h(Math.max(6, this.f51862a.f49769c));
+            lVar.h(Math.max(6, this.f52084a.f49980c));
             long c11 = c(lVar);
             long g11 = lVar.g();
             if (c10 <= j10 && c11 > j10) {
@@ -49,10 +49,10 @@ final class b extends tc.a {
             return a.e.d(c10, position);
         }
 
-        private C0704b(t tVar, int i10) {
-            this.f51862a = tVar;
-            this.f51863b = i10;
-            this.f51864c = new q.a();
+        private C0696b(t tVar, int i10) {
+            this.f52084a = tVar;
+            this.f52085b = i10;
+            this.f52086c = new q.a();
         }
     }
 
@@ -63,7 +63,7 @@ final class b extends tc.a {
             public final long a(long j12) {
                 return t.this.i(j12);
             }
-        }, new C0704b(tVar, i10), tVar.f(), 0L, tVar.f49776j, j10, j11, tVar.d(), Math.max(6, tVar.f49769c));
+        }, new C0696b(tVar, i10), tVar.f(), 0L, tVar.f49987j, j10, j11, tVar.d(), Math.max(6, tVar.f49980c));
         Objects.requireNonNull(tVar);
     }
 }

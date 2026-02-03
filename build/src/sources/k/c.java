@@ -19,61 +19,61 @@ import java.lang.reflect.Method;
 public class c extends k.b implements MenuItem {
 
     /* renamed from: d  reason: collision with root package name */
-    private final t1.b f32635d;
+    private final t1.b f32033d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Method f32636e;
+    private Method f32034e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private class a extends androidx.core.view.b implements ActionProvider.VisibilityListener {
 
         /* renamed from: d  reason: collision with root package name */
-        private b.InterfaceC0041b f32637d;
+        private b.InterfaceC0039b f32035d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ActionProvider f32638e;
+        private final ActionProvider f32036e;
 
         a(Context context, ActionProvider actionProvider) {
             super(context);
-            this.f32638e = actionProvider;
+            this.f32036e = actionProvider;
         }
 
         @Override // androidx.core.view.b
         public boolean a() {
-            return this.f32638e.hasSubMenu();
+            return this.f32036e.hasSubMenu();
         }
 
         @Override // androidx.core.view.b
         public boolean b() {
-            return this.f32638e.isVisible();
+            return this.f32036e.isVisible();
         }
 
         @Override // androidx.core.view.b
         public View c(MenuItem menuItem) {
-            return this.f32638e.onCreateActionView(menuItem);
+            return this.f32036e.onCreateActionView(menuItem);
         }
 
         @Override // androidx.core.view.b
         public boolean d() {
-            return this.f32638e.onPerformDefaultAction();
+            return this.f32036e.onPerformDefaultAction();
         }
 
         @Override // androidx.core.view.b
         public void e(SubMenu subMenu) {
-            this.f32638e.onPrepareSubMenu(c.this.d(subMenu));
+            this.f32036e.onPrepareSubMenu(c.this.d(subMenu));
         }
 
         @Override // androidx.core.view.b
         public boolean f() {
-            return this.f32638e.overridesItemVisibility();
+            return this.f32036e.overridesItemVisibility();
         }
 
         @Override // androidx.core.view.b
-        public void i(b.InterfaceC0041b interfaceC0041b) {
+        public void i(b.InterfaceC0039b interfaceC0039b) {
             a aVar;
-            this.f32637d = interfaceC0041b;
-            ActionProvider actionProvider = this.f32638e;
-            if (interfaceC0041b != null) {
+            this.f32035d = interfaceC0039b;
+            ActionProvider actionProvider = this.f32036e;
+            if (interfaceC0039b != null) {
                 aVar = this;
             } else {
                 aVar = null;
@@ -83,9 +83,9 @@ public class c extends k.b implements MenuItem {
 
         @Override // android.view.ActionProvider.VisibilityListener
         public void onActionProviderVisibilityChanged(boolean z10) {
-            b.InterfaceC0041b interfaceC0041b = this.f32637d;
-            if (interfaceC0041b != null) {
-                interfaceC0041b.onActionProviderVisibilityChanged(z10);
+            b.InterfaceC0039b interfaceC0039b = this.f32035d;
+            if (interfaceC0039b != null) {
+                interfaceC0039b.onActionProviderVisibilityChanged(z10);
             }
         }
     }
@@ -94,48 +94,48 @@ public class c extends k.b implements MenuItem {
     static class b extends FrameLayout implements androidx.appcompat.view.b {
 
         /* renamed from: d  reason: collision with root package name */
-        final CollapsibleActionView f32640d;
+        final CollapsibleActionView f32038d;
 
         b(View view) {
             super(view.getContext());
-            this.f32640d = (CollapsibleActionView) view;
+            this.f32038d = (CollapsibleActionView) view;
             addView(view);
         }
 
         View a() {
-            return (View) this.f32640d;
+            return (View) this.f32038d;
         }
 
         @Override // androidx.appcompat.view.b
         public void onActionViewCollapsed() {
-            this.f32640d.onActionViewCollapsed();
+            this.f32038d.onActionViewCollapsed();
         }
 
         @Override // androidx.appcompat.view.b
         public void onActionViewExpanded() {
-            this.f32640d.onActionViewExpanded();
+            this.f32038d.onActionViewExpanded();
         }
     }
 
     /* renamed from: k.c$c  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    private class MenuItem$OnActionExpandListenerC0439c implements MenuItem.OnActionExpandListener {
+    private class MenuItem$OnActionExpandListenerC0431c implements MenuItem.OnActionExpandListener {
 
         /* renamed from: a  reason: collision with root package name */
-        private final MenuItem.OnActionExpandListener f32641a;
+        private final MenuItem.OnActionExpandListener f32039a;
 
-        MenuItem$OnActionExpandListenerC0439c(MenuItem.OnActionExpandListener onActionExpandListener) {
-            this.f32641a = onActionExpandListener;
+        MenuItem$OnActionExpandListenerC0431c(MenuItem.OnActionExpandListener onActionExpandListener) {
+            this.f32039a = onActionExpandListener;
         }
 
         @Override // android.view.MenuItem.OnActionExpandListener
         public boolean onMenuItemActionCollapse(MenuItem menuItem) {
-            return this.f32641a.onMenuItemActionCollapse(c.this.c(menuItem));
+            return this.f32039a.onMenuItemActionCollapse(c.this.c(menuItem));
         }
 
         @Override // android.view.MenuItem.OnActionExpandListener
         public boolean onMenuItemActionExpand(MenuItem menuItem) {
-            return this.f32641a.onMenuItemActionExpand(c.this.c(menuItem));
+            return this.f32039a.onMenuItemActionExpand(c.this.c(menuItem));
         }
     }
 
@@ -143,22 +143,22 @@ public class c extends k.b implements MenuItem {
     private class d implements MenuItem.OnMenuItemClickListener {
 
         /* renamed from: a  reason: collision with root package name */
-        private final MenuItem.OnMenuItemClickListener f32643a;
+        private final MenuItem.OnMenuItemClickListener f32041a;
 
         d(MenuItem.OnMenuItemClickListener onMenuItemClickListener) {
-            this.f32643a = onMenuItemClickListener;
+            this.f32041a = onMenuItemClickListener;
         }
 
         @Override // android.view.MenuItem.OnMenuItemClickListener
         public boolean onMenuItemClick(MenuItem menuItem) {
-            return this.f32643a.onMenuItemClick(c.this.c(menuItem));
+            return this.f32041a.onMenuItemClick(c.this.c(menuItem));
         }
     }
 
     public c(Context context, t1.b bVar) {
         super(context);
         if (bVar != null) {
-            this.f32635d = bVar;
+            this.f32033d = bVar;
             return;
         }
         throw new IllegalArgumentException("Wrapped Object can not be null.");
@@ -166,26 +166,26 @@ public class c extends k.b implements MenuItem {
 
     @Override // android.view.MenuItem
     public boolean collapseActionView() {
-        return this.f32635d.collapseActionView();
+        return this.f32033d.collapseActionView();
     }
 
     @Override // android.view.MenuItem
     public boolean expandActionView() {
-        return this.f32635d.expandActionView();
+        return this.f32033d.expandActionView();
     }
 
     @Override // android.view.MenuItem
     public ActionProvider getActionProvider() {
-        androidx.core.view.b a10 = this.f32635d.a();
+        androidx.core.view.b a10 = this.f32033d.a();
         if (a10 instanceof a) {
-            return ((a) a10).f32638e;
+            return ((a) a10).f32036e;
         }
         return null;
     }
 
     @Override // android.view.MenuItem
     public View getActionView() {
-        View actionView = this.f32635d.getActionView();
+        View actionView = this.f32033d.getActionView();
         if (actionView instanceof b) {
             return ((b) actionView).a();
         }
@@ -194,95 +194,95 @@ public class c extends k.b implements MenuItem {
 
     @Override // android.view.MenuItem
     public int getAlphabeticModifiers() {
-        return this.f32635d.getAlphabeticModifiers();
+        return this.f32033d.getAlphabeticModifiers();
     }
 
     @Override // android.view.MenuItem
     public char getAlphabeticShortcut() {
-        return this.f32635d.getAlphabeticShortcut();
+        return this.f32033d.getAlphabeticShortcut();
     }
 
     @Override // android.view.MenuItem
     public CharSequence getContentDescription() {
-        return this.f32635d.getContentDescription();
+        return this.f32033d.getContentDescription();
     }
 
     @Override // android.view.MenuItem
     public int getGroupId() {
-        return this.f32635d.getGroupId();
+        return this.f32033d.getGroupId();
     }
 
     @Override // android.view.MenuItem
     public Drawable getIcon() {
-        return this.f32635d.getIcon();
+        return this.f32033d.getIcon();
     }
 
     @Override // android.view.MenuItem
     public ColorStateList getIconTintList() {
-        return this.f32635d.getIconTintList();
+        return this.f32033d.getIconTintList();
     }
 
     @Override // android.view.MenuItem
     public PorterDuff.Mode getIconTintMode() {
-        return this.f32635d.getIconTintMode();
+        return this.f32033d.getIconTintMode();
     }
 
     @Override // android.view.MenuItem
     public Intent getIntent() {
-        return this.f32635d.getIntent();
+        return this.f32033d.getIntent();
     }
 
     @Override // android.view.MenuItem
     public int getItemId() {
-        return this.f32635d.getItemId();
+        return this.f32033d.getItemId();
     }
 
     @Override // android.view.MenuItem
     public ContextMenu.ContextMenuInfo getMenuInfo() {
-        return this.f32635d.getMenuInfo();
+        return this.f32033d.getMenuInfo();
     }
 
     @Override // android.view.MenuItem
     public int getNumericModifiers() {
-        return this.f32635d.getNumericModifiers();
+        return this.f32033d.getNumericModifiers();
     }
 
     @Override // android.view.MenuItem
     public char getNumericShortcut() {
-        return this.f32635d.getNumericShortcut();
+        return this.f32033d.getNumericShortcut();
     }
 
     @Override // android.view.MenuItem
     public int getOrder() {
-        return this.f32635d.getOrder();
+        return this.f32033d.getOrder();
     }
 
     @Override // android.view.MenuItem
     public SubMenu getSubMenu() {
-        return d(this.f32635d.getSubMenu());
+        return d(this.f32033d.getSubMenu());
     }
 
     @Override // android.view.MenuItem
     public CharSequence getTitle() {
-        return this.f32635d.getTitle();
+        return this.f32033d.getTitle();
     }
 
     @Override // android.view.MenuItem
     public CharSequence getTitleCondensed() {
-        return this.f32635d.getTitleCondensed();
+        return this.f32033d.getTitleCondensed();
     }
 
     @Override // android.view.MenuItem
     public CharSequence getTooltipText() {
-        return this.f32635d.getTooltipText();
+        return this.f32033d.getTooltipText();
     }
 
     public void h(boolean z10) {
         try {
-            if (this.f32636e == null) {
-                this.f32636e = this.f32635d.getClass().getDeclaredMethod("setExclusiveCheckable", Boolean.TYPE);
+            if (this.f32034e == null) {
+                this.f32034e = this.f32033d.getClass().getDeclaredMethod("setExclusiveCheckable", Boolean.TYPE);
             }
-            this.f32636e.invoke(this.f32635d, Boolean.valueOf(z10));
+            this.f32034e.invoke(this.f32033d, Boolean.valueOf(z10));
         } catch (Exception e10) {
             Log.w("MenuItemWrapper", "Error while calling setExclusiveCheckable", e10);
         }
@@ -290,38 +290,38 @@ public class c extends k.b implements MenuItem {
 
     @Override // android.view.MenuItem
     public boolean hasSubMenu() {
-        return this.f32635d.hasSubMenu();
+        return this.f32033d.hasSubMenu();
     }
 
     @Override // android.view.MenuItem
     public boolean isActionViewExpanded() {
-        return this.f32635d.isActionViewExpanded();
+        return this.f32033d.isActionViewExpanded();
     }
 
     @Override // android.view.MenuItem
     public boolean isCheckable() {
-        return this.f32635d.isCheckable();
+        return this.f32033d.isCheckable();
     }
 
     @Override // android.view.MenuItem
     public boolean isChecked() {
-        return this.f32635d.isChecked();
+        return this.f32033d.isChecked();
     }
 
     @Override // android.view.MenuItem
     public boolean isEnabled() {
-        return this.f32635d.isEnabled();
+        return this.f32033d.isEnabled();
     }
 
     @Override // android.view.MenuItem
     public boolean isVisible() {
-        return this.f32635d.isVisible();
+        return this.f32033d.isVisible();
     }
 
     @Override // android.view.MenuItem
     public MenuItem setActionProvider(ActionProvider actionProvider) {
-        a aVar = new a(this.f32632a, actionProvider);
-        t1.b bVar = this.f32635d;
+        a aVar = new a(this.f32030a, actionProvider);
+        t1.b bVar = this.f32033d;
         if (actionProvider == null) {
             aVar = null;
         }
@@ -334,87 +334,87 @@ public class c extends k.b implements MenuItem {
         if (view instanceof CollapsibleActionView) {
             view = new b(view);
         }
-        this.f32635d.setActionView(view);
+        this.f32033d.setActionView(view);
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setAlphabeticShortcut(char c10) {
-        this.f32635d.setAlphabeticShortcut(c10);
+        this.f32033d.setAlphabeticShortcut(c10);
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setCheckable(boolean z10) {
-        this.f32635d.setCheckable(z10);
+        this.f32033d.setCheckable(z10);
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setChecked(boolean z10) {
-        this.f32635d.setChecked(z10);
+        this.f32033d.setChecked(z10);
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setContentDescription(CharSequence charSequence) {
-        this.f32635d.setContentDescription(charSequence);
+        this.f32033d.setContentDescription(charSequence);
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setEnabled(boolean z10) {
-        this.f32635d.setEnabled(z10);
+        this.f32033d.setEnabled(z10);
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setIcon(Drawable drawable) {
-        this.f32635d.setIcon(drawable);
+        this.f32033d.setIcon(drawable);
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setIconTintList(ColorStateList colorStateList) {
-        this.f32635d.setIconTintList(colorStateList);
+        this.f32033d.setIconTintList(colorStateList);
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setIconTintMode(PorterDuff.Mode mode) {
-        this.f32635d.setIconTintMode(mode);
+        this.f32033d.setIconTintMode(mode);
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setIntent(Intent intent) {
-        this.f32635d.setIntent(intent);
+        this.f32033d.setIntent(intent);
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setNumericShortcut(char c10) {
-        this.f32635d.setNumericShortcut(c10);
+        this.f32033d.setNumericShortcut(c10);
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setOnActionExpandListener(MenuItem.OnActionExpandListener onActionExpandListener) {
-        MenuItem$OnActionExpandListenerC0439c menuItem$OnActionExpandListenerC0439c;
-        t1.b bVar = this.f32635d;
+        MenuItem$OnActionExpandListenerC0431c menuItem$OnActionExpandListenerC0431c;
+        t1.b bVar = this.f32033d;
         if (onActionExpandListener != null) {
-            menuItem$OnActionExpandListenerC0439c = new MenuItem$OnActionExpandListenerC0439c(onActionExpandListener);
+            menuItem$OnActionExpandListenerC0431c = new MenuItem$OnActionExpandListenerC0431c(onActionExpandListener);
         } else {
-            menuItem$OnActionExpandListenerC0439c = null;
+            menuItem$OnActionExpandListenerC0431c = null;
         }
-        bVar.setOnActionExpandListener(menuItem$OnActionExpandListenerC0439c);
+        bVar.setOnActionExpandListener(menuItem$OnActionExpandListenerC0431c);
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setOnMenuItemClickListener(MenuItem.OnMenuItemClickListener onMenuItemClickListener) {
         d dVar;
-        t1.b bVar = this.f32635d;
+        t1.b bVar = this.f32033d;
         if (onMenuItemClickListener != null) {
             dVar = new d(onMenuItemClickListener);
         } else {
@@ -426,80 +426,80 @@ public class c extends k.b implements MenuItem {
 
     @Override // android.view.MenuItem
     public MenuItem setShortcut(char c10, char c11) {
-        this.f32635d.setShortcut(c10, c11);
+        this.f32033d.setShortcut(c10, c11);
         return this;
     }
 
     @Override // android.view.MenuItem
     public void setShowAsAction(int i10) {
-        this.f32635d.setShowAsAction(i10);
+        this.f32033d.setShowAsAction(i10);
     }
 
     @Override // android.view.MenuItem
     public MenuItem setShowAsActionFlags(int i10) {
-        this.f32635d.setShowAsActionFlags(i10);
+        this.f32033d.setShowAsActionFlags(i10);
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setTitle(CharSequence charSequence) {
-        this.f32635d.setTitle(charSequence);
+        this.f32033d.setTitle(charSequence);
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setTitleCondensed(CharSequence charSequence) {
-        this.f32635d.setTitleCondensed(charSequence);
+        this.f32033d.setTitleCondensed(charSequence);
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setTooltipText(CharSequence charSequence) {
-        this.f32635d.setTooltipText(charSequence);
+        this.f32033d.setTooltipText(charSequence);
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setVisible(boolean z10) {
-        return this.f32635d.setVisible(z10);
+        return this.f32033d.setVisible(z10);
     }
 
     @Override // android.view.MenuItem
     public MenuItem setAlphabeticShortcut(char c10, int i10) {
-        this.f32635d.setAlphabeticShortcut(c10, i10);
+        this.f32033d.setAlphabeticShortcut(c10, i10);
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setIcon(int i10) {
-        this.f32635d.setIcon(i10);
+        this.f32033d.setIcon(i10);
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setNumericShortcut(char c10, int i10) {
-        this.f32635d.setNumericShortcut(c10, i10);
+        this.f32033d.setNumericShortcut(c10, i10);
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setShortcut(char c10, char c11, int i10, int i11) {
-        this.f32635d.setShortcut(c10, c11, i10, i11);
+        this.f32033d.setShortcut(c10, c11, i10, i11);
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setTitle(int i10) {
-        this.f32635d.setTitle(i10);
+        this.f32033d.setTitle(i10);
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setActionView(int i10) {
-        this.f32635d.setActionView(i10);
-        View actionView = this.f32635d.getActionView();
+        this.f32033d.setActionView(i10);
+        View actionView = this.f32033d.getActionView();
         if (actionView instanceof CollapsibleActionView) {
-            this.f32635d.setActionView(new b(actionView));
+            this.f32033d.setActionView(new b(actionView));
         }
         return this;
     }

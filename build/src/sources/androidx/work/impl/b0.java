@@ -9,16 +9,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f5562a = new Object();
+    private final Object f5531a = new Object();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f5563b = new LinkedHashMap();
+    private final Map f5532b = new LinkedHashMap();
 
     public final boolean a(p4.m id2) {
         boolean containsKey;
         Intrinsics.checkNotNullParameter(id2, "id");
-        synchronized (this.f5562a) {
-            containsKey = this.f5563b.containsKey(id2);
+        synchronized (this.f5531a) {
+            containsKey = this.f5532b.containsKey(id2);
         }
         return containsKey;
     }
@@ -26,8 +26,8 @@ public final class b0 {
     public final a0 b(p4.m id2) {
         a0 a0Var;
         Intrinsics.checkNotNullParameter(id2, "id");
-        synchronized (this.f5562a) {
-            a0Var = (a0) this.f5563b.remove(id2);
+        synchronized (this.f5531a) {
+            a0Var = (a0) this.f5532b.remove(id2);
         }
         return a0Var;
     }
@@ -35,9 +35,9 @@ public final class b0 {
     public final List c(String workSpecId) {
         List h12;
         Intrinsics.checkNotNullParameter(workSpecId, "workSpecId");
-        synchronized (this.f5562a) {
+        synchronized (this.f5531a) {
             try {
-                Map map = this.f5563b;
+                Map map = this.f5532b;
                 LinkedHashMap linkedHashMap = new LinkedHashMap();
                 for (Map.Entry entry : map.entrySet()) {
                     if (Intrinsics.areEqual(((p4.m) entry.getKey()).b(), workSpecId)) {
@@ -45,7 +45,7 @@ public final class b0 {
                     }
                 }
                 for (p4.m mVar : linkedHashMap.keySet()) {
-                    this.f5563b.remove(mVar);
+                    this.f5532b.remove(mVar);
                 }
                 h12 = CollectionsKt.h1(linkedHashMap.values());
             } catch (Throwable th2) {
@@ -58,9 +58,9 @@ public final class b0 {
     public final a0 d(p4.m id2) {
         a0 a0Var;
         Intrinsics.checkNotNullParameter(id2, "id");
-        synchronized (this.f5562a) {
+        synchronized (this.f5531a) {
             try {
-                Map map = this.f5563b;
+                Map map = this.f5532b;
                 Object obj = map.get(id2);
                 if (obj == null) {
                     obj = new a0(id2);

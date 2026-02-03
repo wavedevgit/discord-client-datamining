@@ -1,6 +1,7 @@
 package com.facebook.react.viewmanagers;
 
 import android.view.View;
+import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.uimanager.BaseViewManager;
 import com.facebook.react.uimanager.BaseViewManagerDelegate;
 import com.facebook.react.uimanager.LayoutShadowNode;
@@ -11,6 +12,15 @@ public class KeyboardControllerViewManagerDelegate<T extends View, U extends Bas
     /* JADX WARN: Incorrect types in method signature: (TU;)V */
     public KeyboardControllerViewManagerDelegate(BaseViewManager baseViewManager) {
         super(baseViewManager);
+    }
+
+    @Override // com.facebook.react.uimanager.BaseViewManagerDelegate, com.facebook.react.uimanager.ViewManagerDelegate
+    public void receiveCommand(T t10, String str, ReadableArray readableArray) {
+        str.getClass();
+        if (!str.equals("synchronizeFocusedInputLayout")) {
+            return;
+        }
+        ((KeyboardControllerViewManagerInterface) this.mViewManager).synchronizeFocusedInputLayout(t10);
     }
 
     @Override // com.facebook.react.uimanager.BaseViewManagerDelegate, com.facebook.react.uimanager.ViewManagerDelegate

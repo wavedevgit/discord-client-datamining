@@ -5,16 +5,16 @@ import android.view.Window;
 public class j extends io.sentry.android.core.internal.gestures.j {
 
     /* renamed from: e  reason: collision with root package name */
-    private final Runnable f28797e;
+    private final Runnable f29158e;
 
     public j(Window.Callback callback, Runnable runnable) {
         super(callback);
-        this.f28797e = runnable;
+        this.f29158e = runnable;
     }
 
     @Override // io.sentry.android.core.internal.gestures.j, android.view.Window.Callback
     public void onContentChanged() {
         super.onContentChanged();
-        this.f28797e.run();
+        this.f29158e.run();
     }
 }

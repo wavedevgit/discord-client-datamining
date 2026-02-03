@@ -5,37 +5,37 @@ import ui.c;
 final class w3 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final w3 f41666a = new w3();
+    static final w3 f41705a = new w3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41667b;
+    private static final ui.c f41706b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41668c;
+    private static final ui.c f41707c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41669d;
+    private static final ui.c f41708d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f41670e;
+    private static final ui.c f41709e;
 
     static {
         c.b a10 = ui.c.a("modelInfo");
         f fVar = new f();
         fVar.a(1);
-        f41667b = a10.b(fVar.b()).a();
+        f41706b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("initialDownloadConditions");
         f fVar2 = new f();
         fVar2.a(2);
-        f41668c = a11.b(fVar2.b()).a();
+        f41707c = a11.b(fVar2.b()).a();
         c.b a12 = ui.c.a("updateDownloadConditions");
         f fVar3 = new f();
         fVar3.a(3);
-        f41669d = a12.b(fVar3.b()).a();
+        f41708d = a12.b(fVar3.b()).a();
         c.b a13 = ui.c.a("isModelUpdateEnabled");
         f fVar4 = new f();
         fVar4.a(4);
-        f41670e = a13.b(fVar4.b()).a();
+        f41709e = a13.b(fVar4.b()).a();
     }
 
     private w3() {

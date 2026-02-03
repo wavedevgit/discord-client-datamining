@@ -1,172 +1,233 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
+    var4 = metroImportDefault;
     var2 = exports;
-    var26 = dependencyMap;
-    var15 = global;
-    var4 = var15.Object;
-    var3 = var4.defineProperty;
-    var1 = {};
+    var5 = dependencyMap;
+    var0 = require;
+    var _closure1_slot0 = var0;
+    var _closure1_slot1 = var5;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
     var0 = true;
-    var1.value = var0;
+    var3.value = var0;
     var0 = '__esModule';
-    var0 = var3.bind(var4)(var2, var0, var1);
-    var4 = {};
-    var14 = 0;
-    var4.LINEAR = var14;
-    var0 = 'LINEAR';
-    var4[var14] = var0;
-    var13 = 1;
-    var4.SEQUENCED = var13;
-    var0 = 'SEQUENCED';
-    var4[var13] = var0;
-    var12 = 2;
-    var4.FADING = var12;
-    var0 = 'FADING';
-    var4[var12] = var0;
-    var11 = 3;
-    var4.JUMPING = var11;
-    var0 = 'JUMPING';
-    var4[var11] = var0;
-    var10 = 4;
-    var4.CURVED = var10;
-    var0 = 'CURVED';
-    var4[var10] = var0;
-    var9 = 5;
-    var4.ENTRY_EXIT = var9;
-    var0 = 'ENTRY_EXIT';
-    var4[var9] = var0;
-    var37 = var15.Object;
-    var36 = var37.assign;
-    var1 = var26[var14];
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
     var0 = undefined;
-    var1 = var5.bind(var0)(var1);
-    var56 = var1.FadeInData;
-    var1 = var26[var14];
-    var1 = var5.bind(var0)(var1);
-    var55 = var1.FadeOutData;
-    var1 = var26[var13];
-    var1 = var5.bind(var0)(var1);
-    var54 = var1.BounceInData;
-    var1 = var26[var13];
-    var1 = var5.bind(var0)(var1);
-    var53 = var1.BounceOutData;
-    var1 = var26[var12];
-    var1 = var5.bind(var0)(var1);
-    var52 = var1.FlipInData;
-    var1 = var26[var12];
-    var1 = var5.bind(var0)(var1);
-    var51 = var1.FlipOutData;
-    var1 = var26[var11];
-    var1 = var5.bind(var0)(var1);
-    var50 = var1.StretchInData;
-    var1 = var26[var11];
-    var1 = var5.bind(var0)(var1);
-    var49 = var1.StretchOutData;
-    var1 = var26[var10];
-    var1 = var5.bind(var0)(var1);
-    var48 = var1.ZoomInData;
-    var1 = var26[var10];
-    var1 = var5.bind(var0)(var1);
-    var47 = var1.ZoomOutData;
-    var1 = var26[var9];
-    var1 = var5.bind(var0)(var1);
-    var46 = var1.SlideInData;
-    var1 = var26[var9];
-    var1 = var5.bind(var0)(var1);
-    var45 = var1.SlideOutData;
-    var8 = 6;
-    var1 = var26[var8];
-    var1 = var5.bind(var0)(var1);
-    var44 = var1.LightSpeedInData;
-    var1 = var26[var8];
-    var1 = var5.bind(var0)(var1);
-    var43 = var1.LightSpeedOutData;
-    var7 = 7;
-    var1 = var26[var7];
-    var1 = var5.bind(var0)(var1);
-    var42 = var1.PinwheelData;
-    var6 = 8;
-    var1 = var26[var6];
-    var1 = var5.bind(var0)(var1);
-    var41 = var1.RotateInData;
-    var1 = var26[var6];
-    var1 = var5.bind(var0)(var1);
-    var40 = var1.RotateOutData;
-    var1 = 9;
-    var3 = var26[var1];
-    var3 = var5.bind(var0)(var3);
-    var39 = var3.RollInData;
-    var3 = var26[var1];
-    var3 = var5.bind(var0)(var3);
-    var38 = var3.RollOutData;
-    var57 = {};
-    var58 = var37;
-    var3 = var58[var36](var57, var56, var55, var54, var53, var52, var51, var50, var49, var48, var47, var46, var45, var44, var43, var42, var41, var40, var39, var38, var37);
-    var25 = var15.Object;
-    var24 = var25.assign;
-    var15 = var26[var14];
-    var15 = var5.bind(var0)(var15);
-    var56 = var15.FadeIn;
-    var14 = var26[var14];
-    var14 = var5.bind(var0)(var14);
-    var55 = var14.FadeOut;
-    var14 = var26[var13];
-    var14 = var5.bind(var0)(var14);
-    var54 = var14.BounceIn;
-    var13 = var26[var13];
-    var13 = var5.bind(var0)(var13);
-    var53 = var13.BounceOut;
-    var13 = var26[var12];
-    var13 = var5.bind(var0)(var13);
-    var52 = var13.FlipIn;
-    var12 = var26[var12];
-    var12 = var5.bind(var0)(var12);
-    var51 = var12.FlipOut;
-    var12 = var26[var11];
-    var12 = var5.bind(var0)(var12);
-    var50 = var12.StretchIn;
-    var11 = var26[var11];
-    var11 = var5.bind(var0)(var11);
-    var49 = var11.StretchOut;
-    var11 = var26[var10];
-    var11 = var5.bind(var0)(var11);
-    var48 = var11.ZoomIn;
-    var10 = var26[var10];
-    var10 = var5.bind(var0)(var10);
-    var47 = var10.ZoomOut;
-    var10 = var26[var9];
-    var10 = var5.bind(var0)(var10);
-    var46 = var10.SlideIn;
-    var9 = var26[var9];
-    var9 = var5.bind(var0)(var9);
-    var45 = var9.SlideOut;
-    var9 = var26[var8];
-    var9 = var5.bind(var0)(var9);
-    var44 = var9.LightSpeedIn;
-    var8 = var26[var8];
-    var8 = var5.bind(var0)(var8);
-    var43 = var8.LightSpeedOut;
-    var7 = var26[var7];
-    var7 = var5.bind(var0)(var7);
-    var42 = var7.Pinwheel;
-    var7 = var26[var6];
-    var7 = var5.bind(var0)(var7);
-    var41 = var7.RotateIn;
-    var6 = var26[var6];
-    var6 = var5.bind(var0)(var6);
-    var40 = var6.RotateOut;
-    var6 = var26[var1];
-    var6 = var5.bind(var0)(var6);
-    var39 = var6.RollIn;
-    var1 = var26[var1];
-    var1 = var5.bind(var0)(var1);
-    var38 = var1.RollOut;
-    var57 = {};
-    var58 = var25;
-    var1 = var58[var24](var57, var56, var55, var54, var53, var52, var51, var50, var49, var48, var47, var46, var45, var44, var43, var42, var41, var40, var39, var38, var37);
-    var2.TransitionType = var4;
-    var2.AnimationsData = var3;
-    var2.Animations = var1;
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot2 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var1 = function() { // Environment: var1
+        var3 = _closure1_slot3;
+        var2 = function arg0, arg1() {
+            _fun33708: for (var _fun33708_ip = 0;;) switch (_fun33708_ip) {
+                case 0:
+                    var4 = arg0;
+                    var2 = this;
+                    var5 = _closure1_slot2;
+                    var1 = _closure2_slot0;
+                    var0 = undefined;
+                    var1 = var5.bind(var0)(var2, var1);
+                    var1 = 0;
+                    var2.listenersNumber = var1;
+                    var1 = null;
+                    var2.sensorId = var1;
+                    var2.sensorType = var4;
+                    var1 = arg1;
+                    var2.config = var1;
+                    var5 = _closure1_slot0;
+                    var6 = _closure1_slot1;
+                    var1 = 2;
+                    var1 = var6[var1];
+                    var1 = var5.bind(var0)(var1);
+                    var1 = var1.SensorType;
+                    var1 = var1.ROTATION;
+                    if (!(var4 !== var1)) {
+                        _fun33708_ip = 142;
+                        continue _fun33708
+                    }
+                case 95:
+                    var4 = _closure1_slot0;
+                    var5 = _closure1_slot1;
+                    var1 = 3;
+                    var1 = var5[var1];
+                    var5 = var4.bind(var0)(var1);
+                    var4 = var5.makeMutable;
+                    var1 = {
+                        'x': 0,
+                        'y': 0,
+                        'z': 0,
+                        'interfaceOrientation': 0
+                    };
+                    var1 = var4.bind(var5)(var1);
+                    _fun33708_ip = 187;
+                    continue _fun33708;
+                case 142:
+                    var4 = _closure1_slot0;
+                    var5 = _closure1_slot1;
+                    var3 = 3;
+                    var3 = var5[var3];
+                    var5 = var4.bind(var0)(var3);
+                    var4 = var5.makeMutable;
+                    var3 = {
+                        'qw': 0,
+                        'qx': 0,
+                        'qy': 0,
+                        'qz': 0,
+                        'yaw': 0,
+                        'pitch': 0,
+                        'roll': 0,
+                        'interfaceOrientation': 0
+                    };
+                    var1 = var4.bind(var5)(var3);
+                case 187:
+                    var2.data = var1;
+                    return var0;
+            }
+        };
+        var _closure2_slot0 = var2;
+        var0 = {};
+        var1 = 'register';
+        var0.key = var1;
+        var1 = function arg0() {
+            _fun33709: for (var _fun33709_ip = 0;;) switch (_fun33709_ip) {
+                case 0:
+                    var0 = this;
+                    var2 = var0.config;
+                    var7 = var0.sensorType;
+                    var4 = _closure1_slot0;
+                    var3 = _closure1_slot1;
+                    var1 = 4;
+                    var3 = var3[var1];
+                    var1 = undefined;
+                    var1 = var4.bind(var1)(var3);
+                    var6 = var1.ReanimatedModule;
+                    var5 = var6.registerSensor;
+                    var8 = var2.interval;
+                    var1 = -1;
+                    var3 = 'auto';
+                    var4 = var1;
+                    if (!(var3 !== var8)) {
+                        _fun33709_ip = 80;
+                        continue _fun33709
+                    }
+                case 74:
+                    var4 = var2.interval;
+                case 80:
+                    var10 = var2.iosReferenceFrame;
+                    var9 = arg0;
+                    var13 = var6;
+                    var12 = var7;
+                    var11 = var4;
+                    var2 = var13[var5](var12, var11, var10, var9, var8);
+                    var0.sensorId = var2;
+                    var0 = var0.sensorId;
+                    var0 = var1 !== var0;
+                    return var0;
+            }
+        };
+        var0.value = var1;
+        var1 = new Array(5);
+        var1[0] = var0;
+        var0 = {};
+        var5 = 'isRunning';
+        var0.key = var5;
+        var5 = function() {
+            _fun33710: for (var _fun33710_ip = 0;;) switch (_fun33710_ip) {
+                case 0:
+                    var1 = this;
+                    var2 = var1.sensorId;
+                    var0 = -1;
+                    var0 = var0 !== var2;
+                    if (!var0) {
+                        _fun33710_ip = 34;
+                        continue _fun33710
+                    }
+                case 22:
+                    var2 = var1.sensorId;
+                    var1 = null;
+                    var0 = var1 !== var2;
+                case 34:
+                    return var0;
+            }
+        };
+        var0.value = var5;
+        var1[1] = var0;
+        var0 = {};
+        var5 = 'isAvailable';
+        var0.key = var5;
+        var5 = function() {
+            var0 = this;
+            var1 = var0.sensorId;
+            var0 = -1;
+            var0 = var0 !== var1;
+            return var0;
+        };
+        var0.value = var5;
+        var1[2] = var0;
+        var0 = {};
+        var5 = 'getSharedValue';
+        var0.key = var5;
+        var5 = function() {
+            var0 = this;
+            var0 = var0.data;
+            return var0;
+        };
+        var0.value = var5;
+        var1[3] = var0;
+        var0 = {};
+        var5 = 'unregister';
+        var0.key = var5;
+        var4 = function() {
+            _fun33713: for (var _fun33713_ip = 0;;) switch (_fun33713_ip) {
+                case 0:
+                    var1 = this;
+                    var2 = var1.sensorId;
+                    var0 = null;
+                    var2 = var0 !== var2;
+                    if (!var2) {
+                        _fun33713_ip = 34;
+                        continue _fun33713
+                    }
+                case 18:
+                    var4 = var1.sensorId;
+                    var3 = -1;
+                    var2 = var3 !== var4;
+                case 34:
+                    if (!var2) {
+                        _fun33713_ip = 85;
+                        continue _fun33713
+                    }
+                case 37:
+                    var4 = _closure1_slot0;
+                    var3 = _closure1_slot1;
+                    var2 = 4;
+                    var3 = var3[var2];
+                    var2 = undefined;
+                    var2 = var4.bind(var2)(var3);
+                    var4 = var2.ReanimatedModule;
+                    var3 = var4.unregisterSensor;
+                    var2 = var1.sensorId;
+                    var2 = var3.bind(var4)(var2);
+                case 85:
+                    var1.sensorId = var0;
+                    var0 = undefined;
+                    return var0;
+            }
+        };
+        var0.value = var4;
+        var1[4] = var0;
+        var0 = undefined;
+        var0 = var3.bind(var0)(var2, var1);
+        return var0;
+    };
+    var1 = var1.bind(var0)();
+    var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3769, 3772, 3773, 3774, 3775, 3776, 3777, 3778, 3779, 3780]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 3746, 3758, 3729]);

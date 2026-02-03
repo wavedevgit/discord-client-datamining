@@ -6,10 +6,10 @@ import java.io.Closeable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public interface q extends Closeable {
     default void R1(l5 l5Var) {
-        a0(l5Var, new Hint());
+        Z(l5Var, new Hint());
     }
 
-    void a0(l5 l5Var, Hint hint);
+    void Z(l5 l5Var, Hint hint);
 
     void c(boolean z10);
 

@@ -3,29 +3,29 @@ package ff;
 public final class a1 extends x0 {
 
     /* renamed from: c  reason: collision with root package name */
-    public final i f24261c;
+    public final i f23853c;
 
     public a1(i iVar, wg.k kVar) {
         super(4, kVar);
-        this.f24261c = iVar;
+        this.f23853c = iVar;
     }
 
     @Override // ff.m0
     public final boolean f(e0 e0Var) {
-        q0 q0Var = (q0) e0Var.x().get(this.f24261c);
+        q0 q0Var = (q0) e0Var.x().get(this.f23853c);
         return false;
     }
 
     @Override // ff.m0
     public final com.google.android.gms.common.d[] g(e0 e0Var) {
-        q0 q0Var = (q0) e0Var.x().get(this.f24261c);
+        q0 q0Var = (q0) e0Var.x().get(this.f23853c);
         return null;
     }
 
     @Override // ff.x0
     public final void h(e0 e0Var) {
-        q0 q0Var = (q0) e0Var.x().remove(this.f24261c);
-        this.f24382b.e(Boolean.FALSE);
+        q0 q0Var = (q0) e0Var.x().remove(this.f23853c);
+        this.f23974b.e(Boolean.FALSE);
     }
 
     @Override // ff.b1

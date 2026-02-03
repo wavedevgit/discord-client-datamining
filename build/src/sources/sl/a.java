@@ -5,17 +5,17 @@ import android.util.Log;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static boolean f49140a = false;
+    private static boolean f49550a = false;
 
     public static synchronized void a() {
         synchronized (a.class) {
-            if (f49140a) {
+            if (f49550a) {
                 return;
             }
             Log.i("NitroModules", "Loading NitroModules C++ library...");
             System.loadLibrary("NitroModules");
             Log.i("NitroModules", "Successfully loaded NitroModules C++ library!");
-            f49140a = true;
+            f49550a = true;
         }
     }
 }

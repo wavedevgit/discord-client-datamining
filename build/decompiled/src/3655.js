@@ -4,208 +4,77 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function arg0, arg1, arg2() {
-        _fun32566: for (var _fun32566_ip = 0;;) switch (_fun32566_ip) {
+    var1 = function arg0, arg1, arg2, arg3() {
+        _fun32635: for (var _fun32635_ip = 0;;) switch (_fun32635_ip) {
             case 0:
-                var2 = arg0;
-                var1 = arg1;
-                var4 = arg2;
-                var3 = var2.constructor;
-                var0 = '[object ArrayBuffer]';
-                if (!(var0 !== var1)) {
-                    _fun32566_ip = 417;
-                    continue _fun32566
+                var10 = arg0;
+                var9 = arg1;
+                var0 = arg2;
+                var8 = arg3;
+                var7 = !var0;
+                if (var0) {
+                    _fun32635_ip = 20;
+                    continue _fun32635
                 }
-            case 25:
-                var0 = '[object Boolean]';
-                if (!(var0 !== var1)) {
-                    _fun32566_ip = 392;
-                    continue _fun32566
+            case 18:
+                var0 = {};
+            case 20:
+                var6 = var9.length;
+                var5 = 0;
+                var11 = var5 < var6;
+                var4 = undefined;
+                var3 = 1;
+                var1 = 0;
+                if (!var11) {
+                    _fun32635_ip = 136;
+                    continue _fun32635
                 }
-            case 36:
-                var0 = '[object Date]';
-                if (!(var0 !== var1)) {
-                    _fun32566_ip = 392;
-                    continue _fun32566
+            case 44:
+                var13 = var9[var1];
+                var12 = undefined;
+                if (!var8) {
+                    _fun32635_ip = 76;
+                    continue _fun32635
                 }
-            case 47:
-                var0 = '[object DataView]';
-                if (!(var0 !== var1)) {
-                    _fun32566_ip = 359;
-                    continue _fun32566
-                }
-            case 58:
-                var0 = '[object Float32Array]';
-                if (!(var0 !== var1)) {
-                    _fun32566_ip = 326;
-                    continue _fun32566
-                }
-            case 69:
-                var0 = '[object Float64Array]';
-                if (!(var0 !== var1)) {
-                    _fun32566_ip = 326;
-                    continue _fun32566
+            case 53:
+                var20 = var0[var13];
+                var19 = var10[var13];
+                var21 = undefined;
+                var18 = var13;
+                var17 = var0;
+                var16 = var10;
+                var12 = var21[var8](var20, var19, var18, var17, var16, var15);
+            case 76:
+                if (!(var4 === var12)) {
+                    _fun32635_ip = 84;
+                    continue _fun32635
                 }
             case 80:
-                var0 = '[object Int8Array]';
-                if (!(var0 !== var1)) {
-                    _fun32566_ip = 326;
-                    continue _fun32566
+                var12 = var10[var13];
+            case 84:
+                var14 = _closure1_slot0;
+                var11 = _closure1_slot1;
+                if (var7) {
+                    _fun32635_ip = 113;
+                    continue _fun32635
                 }
-            case 91:
-                var0 = '[object Int16Array]';
-                if (!(var0 !== var1)) {
-                    _fun32566_ip = 326;
-                    continue _fun32566
-                }
-            case 102:
-                var0 = '[object Int32Array]';
-                if (!(var0 !== var1)) {
-                    _fun32566_ip = 326;
-                    continue _fun32566
-                }
+            case 95:
+                var15 = var11[var3];
+                var15 = var14.bind(var4)(var15);
+                var15 = var15.bind(var4)(var0, var13, var12);
+                _fun32635_ip = 129;
+                continue _fun32635;
             case 113:
-                var0 = '[object Uint8Array]';
-                if (!(var0 !== var1)) {
-                    _fun32566_ip = 326;
-                    continue _fun32566
+                var11 = var11[var5];
+                var11 = var14.bind(var4)(var11);
+                var11 = var11.bind(var4)(var0, var13, var12);
+            case 129:
+                var1 = var1 + 1;
+                if (var1 < var6) {
+                    _fun32635_ip = 44;
+                    continue _fun32635
                 }
-            case 124:
-                var0 = '[object Uint8ClampedArray]';
-                if (!(var0 !== var1)) {
-                    _fun32566_ip = 326;
-                    continue _fun32566
-                }
-            case 135:
-                var0 = '[object Uint16Array]';
-                if (!(var0 !== var1)) {
-                    _fun32566_ip = 326;
-                    continue _fun32566
-                }
-            case 146:
-                var0 = '[object Uint32Array]';
-                if (!(var0 !== var1)) {
-                    _fun32566_ip = 326;
-                    continue _fun32566
-                }
-            case 157:
-                var0 = '[object Map]';
-                if (!(var0 !== var1)) {
-                    _fun32566_ip = 304;
-                    continue _fun32566
-                }
-            case 168:
-                var0 = '[object Set]';
-                if (!(var0 !== var1)) {
-                    _fun32566_ip = 304;
-                    continue _fun32566
-                }
-            case 179:
-                var0 = '[object Number]';
-                if (!(var0 !== var1)) {
-                    _fun32566_ip = 279;
-                    continue _fun32566
-                }
-            case 187:
-                var0 = '[object String]';
-                if (!(var0 !== var1)) {
-                    _fun32566_ip = 279;
-                    continue _fun32566
-                }
-            case 195:
-                var0 = '[object RegExp]';
-                if (!(var0 !== var1)) {
-                    _fun32566_ip = 247;
-                    continue _fun32566
-                }
-            case 203:
-                var0 = '[object Symbol]';
-                if (!(var0 !== var1)) {
-                    _fun32566_ip = 215;
-                    continue _fun32566
-                }
-            case 211:
-                var0 = undefined;
-                return var0;
-            case 215:
-                var5 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 4;
-                var0 = var1[var0];
-                var1 = undefined;
-                var0 = var5.bind(var1)(var0);
-                var0 = var0.bind(var1)(var2);
-                return var0;
-            case 247:
-                var5 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 3;
-                var0 = var1[var0];
-                var1 = undefined;
-                var0 = var5.bind(var1)(var0);
-                var0 = var0.bind(var1)(var2);
-                return var0;
-            case 279:
-                var0 = var3.prototype;
-                var1 = Object.create(var0, {
-                    constructor: {
-                        value: var3
-                    }
-                });
-                var8 = var1;
-                var7 = var2;
-                var0 = new var8[var3](var7, var6);
-                var0 = var0 instanceof Object ? var0 : var1;
-                return var0;
-            case 304:
-                var0 = var3.prototype;
-                var1 = Object.create(var0, {
-                    constructor: {
-                        value: var3
-                    }
-                });
-                var8 = var1;
-                var0 = new var8[var3](var7);
-                var0 = var0 instanceof Object ? var0 : var1;
-                return var0;
-            case 326:
-                var5 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 2;
-                var0 = var1[var0];
-                var1 = undefined;
-                var0 = var5.bind(var1)(var0);
-                var0 = var0.bind(var1)(var2, var4);
-                return var0;
-            case 359:
-                var5 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 1;
-                var0 = var1[var0];
-                var1 = undefined;
-                var0 = var5.bind(var1)(var0);
-                var0 = var0.bind(var1)(var2, var4);
-                return var0;
-            case 392:
-                var7 = var2 - 0;
-                var1 = var3.prototype;
-                var1 = Object.create(var1, {
-                    constructor: {
-                        value: var3
-                    }
-                });
-                var8 = var1;
-                var0 = new var8[var3](var7, var6);
-                var0 = var0 instanceof Object ? var0 : var1;
-                return var0;
-            case 417:
-                var3 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 0;
-                var0 = var1[var0];
-                var1 = undefined;
-                var0 = var3.bind(var1)(var0);
-                var0 = var0.bind(var1)(var2);
+            case 136:
                 return var0;
         }
     };
@@ -213,4 +82,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3656, 3657, 3658, 3659, 3660]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [786, 3656]);

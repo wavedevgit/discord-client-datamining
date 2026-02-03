@@ -3,15 +3,15 @@ package th;
 final class u implements t {
 
     /* renamed from: a  reason: collision with root package name */
-    final /* synthetic */ w f49866a;
+    final /* synthetic */ w f50077a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public u(w wVar) {
-        this.f49866a = wVar;
+        this.f50077a = wVar;
     }
 
     @Override // th.w
     public final Object a() {
-        return this.f49866a.a();
+        return this.f50077a.a();
     }
 }

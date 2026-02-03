@@ -115,7 +115,7 @@ public final class DisplayMetricsHolder {
         View decorView;
         WindowInsetsCompat G;
         if (activity != null && (window = activity.getWindow()) != null && (decorView = window.getDecorView()) != null && (G = androidx.core.view.h0.G(decorView)) != null) {
-            return G.f(WindowInsetsCompat.p.g() | WindowInsetsCompat.p.f() | WindowInsetsCompat.p.b()).f3195b;
+            return G.f(WindowInsetsCompat.p.g() | WindowInsetsCompat.p.f() | WindowInsetsCompat.p.b()).f3164b;
         }
         return 0;
     }

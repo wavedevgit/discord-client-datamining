@@ -10,7 +10,7 @@ import com.facebook.react.module.annotations.ReactModule;
 import com.reactnativecommunity.netinfo.a;
 @ReactModule(name = NetInfoModule.NAME)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class NetInfoModule extends ReactContextBaseJavaModule implements a.InterfaceC0213a {
+public class NetInfoModule extends ReactContextBaseJavaModule implements a.InterfaceC0194a {
     public static final String NAME = "RNCNetInfo";
     private final a mAmazonConnectivityChecker;
     private final b mConnectivityReceiver;
@@ -52,7 +52,7 @@ public class NetInfoModule extends ReactContextBaseJavaModule implements a.Inter
         this.mConnectivityReceiver.f707e = false;
     }
 
-    @Override // com.reactnativecommunity.netinfo.a.InterfaceC0213a
+    @Override // com.reactnativecommunity.netinfo.a.InterfaceC0194a
     public void onAmazonFireDeviceConnectivityChanged(boolean z10) {
         this.mConnectivityReceiver.i(z10);
     }

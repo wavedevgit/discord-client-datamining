@@ -1,21 +1,65 @@
 package sq;
+
+import android.graphics.Bitmap;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b {
-    public static float a(float f10, float f11, float f12, float f13) {
-        float f14;
-        float f15 = f10 / (f13 / 2.0f);
-        float f16 = f12 / 2.0f;
-        if (f15 < 1.0f) {
-            f14 = f16 * f15 * f15 * f15;
-        } else {
-            float f17 = f15 - 2.0f;
-            f14 = f16 * ((f17 * f17 * f17) + 2.0f);
-        }
-        return f14 + f11;
+public class b {
+
+    /* renamed from: a  reason: collision with root package name */
+    private int f49577a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private int f49578b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private Bitmap.CompressFormat f49579c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private int f49580d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private String f49581e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private String f49582f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private c f49583g;
+
+    public b(int i10, int i11, Bitmap.CompressFormat compressFormat, int i12, String str, String str2, c cVar) {
+        this.f49577a = i10;
+        this.f49578b = i11;
+        this.f49579c = compressFormat;
+        this.f49580d = i12;
+        this.f49581e = str;
+        this.f49582f = str2;
+        this.f49583g = cVar;
     }
 
-    public static float b(float f10, float f11, float f12, float f13) {
-        float f14 = (f10 / f13) - 1.0f;
-        return (f12 * ((f14 * f14 * f14) + 1.0f)) + f11;
+    public Bitmap.CompressFormat a() {
+        return this.f49579c;
+    }
+
+    public int b() {
+        return this.f49580d;
+    }
+
+    public c c() {
+        return this.f49583g;
+    }
+
+    public String d() {
+        return this.f49581e;
+    }
+
+    public String e() {
+        return this.f49582f;
+    }
+
+    public int f() {
+        return this.f49577a;
+    }
+
+    public int g() {
+        return this.f49578b;
     }
 }

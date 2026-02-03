@@ -61,13 +61,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_badge/useUpgradeToGuildBadgeV2.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun96522: for (var _fun96522_ip = 0;;) switch (_fun96522_ip) {
+        _fun96582: for (var _fun96582_ip = 0;;) switch (_fun96582_ip) {
             case 0:
                 var6 = arg0;
                 var0 = null;
                 if (!(var0 != var6)) {
-                    _fun96522_ip = 83;
-                    continue _fun96522
+                    _fun96582_ip = 83;
+                    continue _fun96582
                 }
             case 9:
                 var4 = _closure1_slot0;
@@ -94,4 +94,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7387, 7386, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7392, 7391, 2]);

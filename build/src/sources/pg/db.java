@@ -6,7 +6,7 @@ import ui.c;
 final class db implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final db f45288a = new db();
+    static final db f45246a = new db();
 
     static {
         c.b a10 = ui.c.a("pipelineNamespace");

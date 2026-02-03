@@ -7,7 +7,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g f8038a = new g();
+    public static final g f7025a = new g();
 
     private g() {
     }
@@ -19,7 +19,7 @@ public final class g {
     public static final int b(InputStream inputStream) {
         Intrinsics.checkNotNullParameter(inputStream, "inputStream");
         try {
-            int d10 = f8038a.d(inputStream);
+            int d10 = f7025a.d(inputStream);
             if (d10 == 0) {
                 return 0;
             }
@@ -75,7 +75,7 @@ public final class g {
             while (i11 == 255) {
                 i11 = h.a(inputStream, 1, false);
             }
-            if ((i10 == 192 && f8038a.c(i11)) || i11 == i10) {
+            if ((i10 == 192 && f7025a.c(i11)) || i11 == i10) {
                 return true;
             }
             if (i11 != 1 && i11 != 216) {

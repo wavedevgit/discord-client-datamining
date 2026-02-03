@@ -51,7 +51,6 @@ import com.facebook.react.views.text.ReactFontManager;
 import com.google.android.flexbox.FlexboxLayout;
 import com.google.android.material.textview.MaterialTextView;
 import java.util.List;
-import jr.p;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
@@ -61,6 +60,7 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.reflect.KClass;
+import lr.p;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000\u0082\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u0000 42\u00020\u00012\b\u0012\u0004\u0012\u00020\u00030\u0002:\u00014B'\b\u0007\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\b\u0002\u0010\b\u001a\u00020\t¢\u0006\u0004\b\n\u0010\u000bJ \u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u00032\u0006\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020#H\u0016J\u0016\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u00032\u0006\u0010\"\u001a\u00020#J\u0010\u0010$\u001a\u00020\u001e2\u0006\u0010\"\u001a\u00020#H\u0002J\u000e\u0010%\u001a\b\u0012\u0004\u0012\u00020\u00030&H\u0016J/\u0010'\u001a\u00020\u001e2\u0006\u0010(\u001a\u00020)2\u0006\u0010*\u001a\u00020+2\b\u0010,\u001a\u0004\u0018\u00010\t2\u0006\u0010-\u001a\u00020\u001cH\u0002¢\u0006\u0002\u0010.J\u001a\u0010/\u001a\u00020\u001e*\u0002002\f\u00101\u001a\b\u0012\u0004\u0012\u00020302H\u0002R\u0011\u0010\f\u001a\u00020\r¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u001b\u0010\u0010\u001a\u00020\u00118BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0012\u0010\u0013R\u001b\u0010\u0016\u001a\u00020\u00178BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u001a\u0010\u0015\u001a\u0004\b\u0018\u0010\u0019R\u000e\u0010\u001b\u001a\u00020\u001cX\u0082\u000e¢\u0006\u0002\n\u0000¨\u00065"}, d2 = {"Lcom/discord/chat/presentation/message/view/botuikit/components/SelectComponentView;", "Landroidx/constraintlayout/widget/ConstraintLayout;", "Lcom/discord/chat/presentation/message/view/botuikit/ComponentView;", "Lcom/discord/chat/bridge/botuikit/SelectComponent;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "binding", "Lcom/discord/chat/databinding/MessageComponentSelectViewBinding;", "getBinding", "()Lcom/discord/chat/databinding/MessageComponentSelectViewBinding;", "progressDots", "Lcom/discord/progress_dots/ProgressDots;", "getProgressDots", "()Lcom/discord/progress_dots/ProgressDots;", "progressDots$delegate", "Lkotlin/Lazy;", "postProcessor", "Lcom/facebook/imagepipeline/request/BasePostprocessor;", "getPostProcessor", "()Lcom/facebook/imagepipeline/request/BasePostprocessor;", "postProcessor$delegate", "currentIsLoading", "", "configure", "", "component", "componentProvider", "Lcom/discord/chat/presentation/message/view/botuikit/ComponentProvider;", "componentContext", "Lcom/discord/chat/presentation/message/view/botuikit/ComponentContext;", "configureWidth", "getComponentType", "Lkotlin/reflect/KClass;", "setImage", "view", "Lcom/facebook/drawee/span/SimpleDraweeSpanTextView;", "imageUrl", "", ViewProps.COLOR, "asCircle", "(Lcom/facebook/drawee/span/SimpleDraweeSpanTextView;Ljava/lang/String;Ljava/lang/Integer;Z)V", "setSelectedOptions", "Lcom/google/android/flexbox/FlexboxLayout;", "selectedItems", "", "Lcom/discord/chat/bridge/botuikit/SelectItem;", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nSelectComponentView.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SelectComponentView.kt\ncom/discord/chat/presentation/message/view/botuikit/components/SelectComponentView\n+ 2 View.kt\nandroidx/core/view/ViewKt\n+ 3 Uri.kt\nandroidx/core/net/UriKt\n+ 4 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,265:1\n176#2,2:266\n257#2,2:268\n257#2,2:270\n257#2,2:272\n257#2,2:274\n257#2,2:276\n257#2,2:278\n257#2,2:280\n257#2,2:282\n257#2,2:284\n257#2,2:286\n278#2,2:288\n257#2,2:290\n29#3:292\n1878#4,3:293\n*S KotlinDebug\n*F\n+ 1 SelectComponentView.kt\ncom/discord/chat/presentation/message/view/botuikit/components/SelectComponentView\n*L\n67#1:266,2\n103#1:268,2\n104#1:270,2\n125#1:272,2\n127#1:274,2\n134#1:276,2\n135#1:278,2\n136#1:280,2\n141#1:282,2\n142#1:284,2\n143#1:286,2\n151#1:288,2\n154#1:290,2\n207#1:292\n260#1:293,3\n*E\n"})
@@ -154,7 +154,7 @@ public final class SelectComponentView extends ConstraintLayout implements Compo
         }
         com.facebook.drawee.controller.a build = ((PipelineDraweeControllerBuilder) e9.d.g().E(I.a())).build();
         Intrinsics.checkNotNullExpressionValue(build, "build(...)");
-        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(getContext().getResources()).w(ScalingUtils$ScaleType.f10666e);
+        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(getContext().getResources()).w(ScalingUtils$ScaleType.f9634e);
         Intrinsics.checkNotNullExpressionValue(w10, "setActualImageScaleType(...)");
         if (num != null) {
             w10.v(new PorterDuffColorFilter(num.intValue(), PorterDuff.Mode.SRC_IN));
@@ -356,7 +356,7 @@ public final class SelectComponentView extends ConstraintLayout implements Compo
         MessageComponentSelectViewBinding inflate = MessageComponentSelectViewBinding.inflate(LayoutInflater.from(context), this);
         Intrinsics.checkNotNullExpressionValue(inflate, "inflate(...)");
         this.binding = inflate;
-        this.progressDots$delegate = jr.l.b(new Function0() { // from class: com.discord.chat.presentation.message.view.botuikit.components.k
+        this.progressDots$delegate = lr.l.a(new Function0() { // from class: com.discord.chat.presentation.message.view.botuikit.components.k
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 ProgressDots progressDots_delegate$lambda$0;
@@ -364,7 +364,7 @@ public final class SelectComponentView extends ConstraintLayout implements Compo
                 return progressDots_delegate$lambda$0;
             }
         });
-        this.postProcessor$delegate = jr.l.b(new Function0() { // from class: com.discord.chat.presentation.message.view.botuikit.components.l
+        this.postProcessor$delegate = lr.l.a(new Function0() { // from class: com.discord.chat.presentation.message.view.botuikit.components.l
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 BasePostprocessor postProcessor_delegate$lambda$1;

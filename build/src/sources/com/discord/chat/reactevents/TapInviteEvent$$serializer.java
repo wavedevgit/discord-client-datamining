@@ -1,10 +1,11 @@
 package com.discord.chat.reactevents;
 
-import bt.a2;
-import bt.h;
-import bt.h0;
-import bt.n2;
-import bt.p0;
+import at.b0;
+import dt.a2;
+import dt.h;
+import dt.h0;
+import dt.n2;
+import dt.p0;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
@@ -13,9 +14,8 @@ import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import org.jetbrains.annotations.NotNull;
-import ys.b0;
-@jr.c
-@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/reactevents/TapInviteEvent.$serializer", "Lbt/h0;", "Lcom/discord/chat/reactevents/TapInviteEvent;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/reactevents/TapInviteEvent;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/reactevents/TapInviteEvent;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/reactevents/TapInviteEvent.$serializer", "Ldt/h0;", "Lcom/discord/chat/reactevents/TapInviteEvent;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/reactevents/TapInviteEvent;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/reactevents/TapInviteEvent;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+@lr.c
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public /* synthetic */ class TapInviteEvent$$serializer implements h0 {
     @NotNull
@@ -37,11 +37,11 @@ public /* synthetic */ class TapInviteEvent$$serializer implements h0 {
     private TapInviteEvent$$serializer() {
     }
 
-    @Override // bt.h0
+    @Override // dt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        h hVar = h.f7626a;
-        return new KSerializer[]{n2.f7662a, p0.f7678a, zs.a.u(hVar), zs.a.u(hVar)};
+        h hVar = h.f20942a;
+        return new KSerializer[]{n2.f20978a, p0.f20994a, bt.a.u(hVar), bt.a.u(hVar)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -58,7 +58,7 @@ public /* synthetic */ class TapInviteEvent$$serializer implements h0 {
         if (b10.p()) {
             String m10 = b10.m(serialDescriptor, 0);
             int i12 = b10.i(serialDescriptor, 1);
-            h hVar = h.f7626a;
+            h hVar = h.f20942a;
             str = m10;
             bool2 = (Boolean) b10.n(serialDescriptor, 3, hVar, null);
             bool = (Boolean) b10.n(serialDescriptor, 2, hVar, null);
@@ -82,12 +82,12 @@ public /* synthetic */ class TapInviteEvent$$serializer implements h0 {
                     i13 = b10.i(serialDescriptor, 1);
                     i14 |= 2;
                 } else if (o10 == 2) {
-                    bool3 = (Boolean) b10.n(serialDescriptor, 2, h.f7626a, bool3);
+                    bool3 = (Boolean) b10.n(serialDescriptor, 2, h.f20942a, bool3);
                     i14 |= 4;
                 } else if (o10 != 3) {
                     throw new b0(o10);
                 } else {
-                    bool4 = (Boolean) b10.n(serialDescriptor, 3, h.f7626a, bool4);
+                    bool4 = (Boolean) b10.n(serialDescriptor, 3, h.f20942a, bool4);
                     i14 |= 8;
                 }
             }
@@ -101,13 +101,13 @@ public /* synthetic */ class TapInviteEvent$$serializer implements h0 {
         return new TapInviteEvent(i11, str, i10, bool, bool2, null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, ys.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, at.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public final SerialDescriptor getDescriptor() {
         return descriptor;
     }
 
-    @Override // ys.o
+    @Override // at.o
     public final void serialize(@NotNull Encoder encoder, @NotNull TapInviteEvent value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");
@@ -117,7 +117,7 @@ public /* synthetic */ class TapInviteEvent$$serializer implements h0 {
         b10.c(serialDescriptor);
     }
 
-    @Override // bt.h0
+    @Override // dt.h0
     @NotNull
     public KSerializer[] typeParametersSerializers() {
         return h0.a.a(this);

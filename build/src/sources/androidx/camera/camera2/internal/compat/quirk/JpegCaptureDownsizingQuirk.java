@@ -12,11 +12,11 @@ import r.a0;
 public class JpegCaptureDownsizingQuirk implements SoftwareJpegEncodingPreferredQuirk {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Set f1960a = new HashSet(Arrays.asList("redmi note 8 pro"));
+    private static final Set f1929a = new HashSet(Arrays.asList("redmi note 8 pro"));
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean c(a0 a0Var) {
-        if (f1960a.contains(Build.MODEL.toLowerCase(Locale.US)) && ((Integer) a0Var.a(CameraCharacteristics.LENS_FACING)).intValue() == 0) {
+        if (f1929a.contains(Build.MODEL.toLowerCase(Locale.US)) && ((Integer) a0Var.a(CameraCharacteristics.LENS_FACING)).intValue() == 0) {
             return true;
         }
         return false;

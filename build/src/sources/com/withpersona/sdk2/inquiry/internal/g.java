@@ -5,18 +5,18 @@ import com.withpersona.sdk2.inquiry.internal.f;
 public final class g implements f.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final no.i f19529a;
+    private final po.i f18511a;
 
-    g(no.i iVar) {
-        this.f19529a = iVar;
+    g(po.i iVar) {
+        this.f18511a = iVar;
     }
 
-    public static uq.h b(no.i iVar) {
-        return uq.e.a(new g(iVar));
+    public static wq.h b(po.i iVar) {
+        return wq.e.a(new g(iVar));
     }
 
     @Override // com.withpersona.sdk2.inquiry.internal.f.a
     public f a(String str) {
-        return this.f19529a.b(str);
+        return this.f18511a.b(str);
     }
 }

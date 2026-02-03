@@ -5,30 +5,30 @@ import ui.c;
 final class e8 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final e8 f43130a = new e8();
+    static final e8 f42930a = new e8();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43131b;
+    private static final ui.c f42931b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43132c;
+    private static final ui.c f42932c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43133d;
+    private static final ui.c f42933d;
 
     static {
         c.b a10 = ui.c.a("numSamples");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43131b = a10.b(s1Var.b()).a();
+        f42931b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("errorCode");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43132c = a11.b(s1Var2.b()).a();
+        f42932c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("metricResults");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43133d = a12.b(s1Var3.b()).a();
+        f42933d = a12.b(s1Var3.b()).a();
     }
 
     private e8() {

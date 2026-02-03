@@ -5,42 +5,42 @@ import java.util.TreeMap;
 class c {
 
     /* renamed from: a  reason: collision with root package name */
-    final String f4693a;
+    final String f4662a;
 
     /* renamed from: b  reason: collision with root package name */
-    final String f4694b;
+    final String f4663b;
 
     /* renamed from: c  reason: collision with root package name */
-    final long f4695c;
+    final long f4664c;
 
     /* renamed from: d  reason: collision with root package name */
-    long f4696d;
+    long f4665d;
 
     /* renamed from: e  reason: collision with root package name */
-    int f4697e;
+    int f4666e;
 
     /* renamed from: f  reason: collision with root package name */
-    final int f4698f;
+    final int f4667f;
 
     /* renamed from: g  reason: collision with root package name */
-    final int f4699g;
+    final int f4668g;
 
     /* renamed from: h  reason: collision with root package name */
-    int[] f4700h;
+    int[] f4669h;
 
     /* renamed from: i  reason: collision with root package name */
-    final TreeMap f4701i;
+    final TreeMap f4670i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(String str, String str2, long j10, long j11, int i10, int i11, int i12, int[] iArr, TreeMap treeMap) {
-        this.f4693a = str;
-        this.f4694b = str2;
-        this.f4695c = j10;
-        this.f4696d = j11;
-        this.f4697e = i10;
-        this.f4698f = i11;
-        this.f4699g = i12;
-        this.f4700h = iArr;
-        this.f4701i = treeMap;
+        this.f4662a = str;
+        this.f4663b = str2;
+        this.f4664c = j10;
+        this.f4665d = j11;
+        this.f4666e = i10;
+        this.f4667f = i11;
+        this.f4668g = i12;
+        this.f4669h = iArr;
+        this.f4670i = treeMap;
     }
 }

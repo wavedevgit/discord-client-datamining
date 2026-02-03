@@ -76,13 +76,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var3.bind(var4)(var2);
         var3 = var4.useAnimatedStyle;
         var2 = function() {
-            _fun104601: for (var _fun104601_ip = 0;;) switch (_fun104601_ip) {
+            _fun104661: for (var _fun104661_ip = 0;;) switch (_fun104661_ip) {
                 case 0:
                     var1 = _closure2_slot3;
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun104601_ip = 26;
-                        continue _fun104601
+                        _fun104661_ip = 26;
+                        continue _fun104661
                     }
                 case 13:
                     var1 = _closure2_slot3;
@@ -93,8 +93,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var1.get;
                     var3 = var0.bind(var1)();
                     if (var3) {
-                        _fun104601_ip = 88;
-                        continue _fun104601
+                        _fun104661_ip = 88;
+                        continue _fun104661
                     }
                 case 42:
                     var1 = _closure2_slot1;
@@ -103,8 +103,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = 0;
                     var0 = var0 !== var1;
                     if (!var0) {
-                        _fun104601_ip = 85;
-                        continue _fun104601
+                        _fun104661_ip = 85;
+                        continue _fun104661
                     }
                 case 64:
                     var4 = _closure2_slot1;
@@ -126,8 +126,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.transform = var1;
                     var4 = 0;
                     if (!var3) {
-                        _fun104601_ip = 137;
-                        continue _fun104601
+                        _fun104661_ip = 137;
+                        continue _fun104661
                     }
                 case 127:
                     var5 = _closure2_slot5;
@@ -136,8 +136,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.shadowOpacity = var4;
                     var1 = 0;
                     if (!var3) {
-                        _fun104601_ip = 157;
-                        continue _fun104601
+                        _fun104661_ip = 157;
+                        continue _fun104661
                     }
                 case 147:
                     var2 = _closure2_slot5;
@@ -179,4 +179,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useMainTabsChannelScreenStyles = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1297, 671, 3711, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1297, 671, 3720, 2]);

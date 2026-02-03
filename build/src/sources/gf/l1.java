@@ -10,11 +10,11 @@ import java.util.HashMap;
 public final class l1 implements Handler.Callback {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ n1 f26939d;
+    final /* synthetic */ n1 f26152d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ l1(n1 n1Var, m1 m1Var) {
-        this.f26939d = n1Var;
+        this.f26152d = n1Var;
     }
 
     @Override // android.os.Handler.Callback
@@ -26,17 +26,17 @@ public final class l1 implements Handler.Callback {
         HashMap hashMap5;
         int i10 = message.what;
         if (i10 == 0) {
-            hashMap = this.f26939d.f26956g;
+            hashMap = this.f26152d.f26169g;
             synchronized (hashMap) {
                 try {
                     j1 j1Var = (j1) message.obj;
-                    hashMap2 = this.f26939d.f26956g;
+                    hashMap2 = this.f26152d.f26169g;
                     k1 k1Var = (k1) hashMap2.get(j1Var);
                     if (k1Var != null && k1Var.i()) {
                         if (k1Var.j()) {
                             k1Var.g("GmsClientSupervisor");
                         }
-                        hashMap3 = this.f26939d.f26956g;
+                        hashMap3 = this.f26152d.f26169g;
                         hashMap3.remove(j1Var);
                     }
                 } finally {
@@ -44,11 +44,11 @@ public final class l1 implements Handler.Callback {
             }
             return true;
         } else if (i10 == 1) {
-            hashMap4 = this.f26939d.f26956g;
+            hashMap4 = this.f26152d.f26169g;
             synchronized (hashMap4) {
                 try {
                     j1 j1Var2 = (j1) message.obj;
-                    hashMap5 = this.f26939d.f26956g;
+                    hashMap5 = this.f26152d.f26169g;
                     k1 k1Var2 = (k1) hashMap5.get(j1Var2);
                     if (k1Var2 != null && k1Var2.a() == 3) {
                         String valueOf = String.valueOf(j1Var2);

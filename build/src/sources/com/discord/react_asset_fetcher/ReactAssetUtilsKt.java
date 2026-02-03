@@ -8,7 +8,7 @@ import com.discord.misc.utilities.coroutines.CoroutineViewUtilsKt;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.facebook.react.views.imagehelper.ImageSource;
 import com.google.android.material.button.MaterialButton;
-import hs.g;
+import js.g;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;

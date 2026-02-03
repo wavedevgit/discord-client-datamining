@@ -1,19 +1,35 @@
 package ms;
+
+import kotlinx.coroutines.flow.Flow;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-abstract /* synthetic */ class g0 {
+public interface g0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int f39157a = Runtime.getRuntime().availableProcessors();
+    public static final a f39173a = a.f39174a;
 
-    public static final int a() {
-        return f39157a;
-    }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
 
-    public static final String b(String str) {
-        try {
-            return System.getProperty(str);
-        } catch (SecurityException unused) {
-            return null;
+        /* renamed from: a  reason: collision with root package name */
+        static final /* synthetic */ a f39174a = new a();
+
+        /* renamed from: b  reason: collision with root package name */
+        private static final g0 f39175b = new h0();
+
+        /* renamed from: c  reason: collision with root package name */
+        private static final g0 f39176c = new i0();
+
+        private a() {
+        }
+
+        public final g0 a() {
+            return f39175b;
+        }
+
+        public final g0 b() {
+            return f39176c;
         }
     }
+
+    Flow a(j0 j0Var);
 }

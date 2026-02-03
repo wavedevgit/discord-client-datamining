@@ -5,16 +5,16 @@ import x.q;
 final class b extends q {
 
     /* renamed from: a  reason: collision with root package name */
-    private final q.b f53059a;
+    private final q.b f52780a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final q.a f53060b;
+    private final q.a f52781b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(q.b bVar, q.a aVar) {
         if (bVar != null) {
-            this.f53059a = bVar;
-            this.f53060b = aVar;
+            this.f52780a = bVar;
+            this.f52781b = aVar;
             return;
         }
         throw new NullPointerException("Null type");
@@ -22,12 +22,12 @@ final class b extends q {
 
     @Override // x.q
     public q.a c() {
-        return this.f53060b;
+        return this.f52781b;
     }
 
     @Override // x.q
     public q.b d() {
-        return this.f53059a;
+        return this.f52780a;
     }
 
     public boolean equals(Object obj) {
@@ -37,7 +37,7 @@ final class b extends q {
         }
         if (obj instanceof q) {
             q qVar = (q) obj;
-            if (this.f53059a.equals(qVar.d()) && ((aVar = this.f53060b) != null ? aVar.equals(qVar.c()) : qVar.c() == null)) {
+            if (this.f52780a.equals(qVar.d()) && ((aVar = this.f52781b) != null ? aVar.equals(qVar.c()) : qVar.c() == null)) {
                 return true;
             }
         }
@@ -46,8 +46,8 @@ final class b extends q {
 
     public int hashCode() {
         int hashCode;
-        int hashCode2 = (this.f53059a.hashCode() ^ 1000003) * 1000003;
-        q.a aVar = this.f53060b;
+        int hashCode2 = (this.f52780a.hashCode() ^ 1000003) * 1000003;
+        q.a aVar = this.f52781b;
         if (aVar == null) {
             hashCode = 0;
         } else {
@@ -57,6 +57,6 @@ final class b extends q {
     }
 
     public String toString() {
-        return "CameraState{type=" + this.f53059a + ", error=" + this.f53060b + "}";
+        return "CameraState{type=" + this.f52780a + ", error=" + this.f52781b + "}";
     }
 }

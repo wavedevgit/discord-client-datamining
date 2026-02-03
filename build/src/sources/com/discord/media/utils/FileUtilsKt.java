@@ -2,11 +2,11 @@ package com.discord.media.utils;
 
 import java.io.File;
 import java.io.InputStream;
-import ju.x;
-import ju.y;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.internal.Intrinsics;
+import lu.x;
+import lu.y;
 import okio.BufferedSink;
 import okio.Sink;
 import org.jetbrains.annotations.NotNull;
@@ -21,9 +21,9 @@ public final class FileUtilsKt {
         g10 = y.g(outputFile, false, 1, null);
         BufferedSink c10 = x.c(g10);
         try {
-            c10.A0(x.k(inputStream));
-            Unit unit = Unit.f33074a;
-            ur.c.a(c10, null);
+            c10.y0(x.k(inputStream));
+            Unit unit = Unit.f32464a;
+            wr.c.a(c10, null);
             return outputFile;
         } finally {
         }

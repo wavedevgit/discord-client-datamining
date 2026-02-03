@@ -89,4 +89,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isEligibleForGameUpdateExperiment = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3106, 7475, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3115, 7480, 2]);

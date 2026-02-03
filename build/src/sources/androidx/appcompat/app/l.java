@@ -15,34 +15,34 @@ import androidx.lifecycle.r0;
 public class l extends ComponentDialog implements b {
 
     /* renamed from: o  reason: collision with root package name */
-    private AppCompatDelegate f1103o;
+    private AppCompatDelegate f1072o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final k.a f1104p;
+    private final k.a f1073p;
 
     public l(Context context, int i10) {
-        super(context, g(context, i10));
-        this.f1104p = new k.a() { // from class: androidx.appcompat.app.k
+        super(context, f(context, i10));
+        this.f1073p = new k.a() { // from class: androidx.appcompat.app.k
             @Override // androidx.core.view.k.a
             public final boolean superDispatchKeyEvent(KeyEvent keyEvent) {
-                return l.this.i(keyEvent);
+                return l.this.h(keyEvent);
             }
         };
-        AppCompatDelegate f10 = f();
-        f10.Q(g(context, i10));
-        f10.z(null);
+        AppCompatDelegate e10 = e();
+        e10.Q(f(context, i10));
+        e10.z(null);
     }
 
-    private static int g(Context context, int i10) {
+    private static int f(Context context, int i10) {
         if (i10 == 0) {
             TypedValue typedValue = new TypedValue();
-            context.getTheme().resolveAttribute(f.a.f23303x, typedValue, true);
+            context.getTheme().resolveAttribute(f.a.f22895x, typedValue, true);
             return typedValue.resourceId;
         }
         return i10;
     }
 
-    private void h() {
+    private void g() {
         r0.b(getWindow().getDecorView(), this);
         u3.j.b(getWindow().getDecorView(), this);
         d0.a(getWindow().getDecorView(), this);
@@ -50,58 +50,58 @@ public class l extends ComponentDialog implements b {
 
     @Override // androidx.activity.ComponentDialog, android.app.Dialog
     public void addContentView(View view, ViewGroup.LayoutParams layoutParams) {
-        f().e(view, layoutParams);
+        e().e(view, layoutParams);
     }
 
     @Override // android.app.Dialog, android.content.DialogInterface
     public void dismiss() {
         super.dismiss();
-        f().A();
+        e().A();
     }
 
     @Override // android.app.Dialog, android.view.Window.Callback
     public boolean dispatchKeyEvent(KeyEvent keyEvent) {
-        return androidx.core.view.k.e(this.f1104p, getWindow().getDecorView(), this, keyEvent);
+        return androidx.core.view.k.e(this.f1073p, getWindow().getDecorView(), this, keyEvent);
     }
 
-    public AppCompatDelegate f() {
-        if (this.f1103o == null) {
-            this.f1103o = AppCompatDelegate.k(this, this);
+    public AppCompatDelegate e() {
+        if (this.f1072o == null) {
+            this.f1072o = AppCompatDelegate.k(this, this);
         }
-        return this.f1103o;
+        return this.f1072o;
     }
 
     @Override // android.app.Dialog
     public View findViewById(int i10) {
-        return f().l(i10);
+        return e().l(i10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public boolean i(KeyEvent keyEvent) {
+    public boolean h(KeyEvent keyEvent) {
         return super.dispatchKeyEvent(keyEvent);
+    }
+
+    public boolean i(int i10) {
+        return e().I(i10);
     }
 
     @Override // android.app.Dialog
     public void invalidateOptionsMenu() {
-        f().w();
-    }
-
-    public boolean j(int i10) {
-        return f().I(i10);
+        e().w();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // androidx.activity.ComponentDialog, android.app.Dialog
     public void onCreate(Bundle bundle) {
-        f().v();
+        e().v();
         super.onCreate(bundle);
-        f().z(bundle);
+        e().z(bundle);
     }
 
     @Override // androidx.activity.ComponentDialog, android.app.Dialog
     protected void onStop() {
         super.onStop();
-        f().F();
+        e().F();
     }
 
     @Override // androidx.appcompat.app.b
@@ -119,31 +119,31 @@ public class l extends ComponentDialog implements b {
 
     @Override // androidx.activity.ComponentDialog, android.app.Dialog
     public void setContentView(int i10) {
-        h();
-        f().K(i10);
+        g();
+        e().K(i10);
     }
 
     @Override // android.app.Dialog
     public void setTitle(CharSequence charSequence) {
         super.setTitle(charSequence);
-        f().R(charSequence);
+        e().R(charSequence);
     }
 
     @Override // androidx.activity.ComponentDialog, android.app.Dialog
     public void setContentView(View view) {
-        h();
-        f().L(view);
+        g();
+        e().L(view);
     }
 
     @Override // android.app.Dialog
     public void setTitle(int i10) {
         super.setTitle(i10);
-        f().R(getContext().getString(i10));
+        e().R(getContext().getString(i10));
     }
 
     @Override // androidx.activity.ComponentDialog, android.app.Dialog
     public void setContentView(View view, ViewGroup.LayoutParams layoutParams) {
-        h();
-        f().M(view, layoutParams);
+        g();
+        e().M(view, layoutParams);
     }
 }

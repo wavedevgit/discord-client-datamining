@@ -5,10 +5,10 @@ import com.google.android.exoplayer2.metadata.Metadata;
 public abstract class i implements Metadata.b {
 
     /* renamed from: d  reason: collision with root package name */
-    public final String f37272d;
+    public final String f36741d;
 
     public i(String str) {
-        this.f37272d = str;
+        this.f36741d = str;
     }
 
     @Override // android.os.Parcelable
@@ -17,6 +17,6 @@ public abstract class i implements Metadata.b {
     }
 
     public String toString() {
-        return this.f37272d;
+        return this.f36741d;
     }
 }

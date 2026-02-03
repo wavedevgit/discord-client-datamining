@@ -11,53 +11,53 @@ import com.horcrux.svg.a;
 public class f0 extends e {
 
     /* renamed from: s  reason: collision with root package name */
-    private static final float[] f17518s = {1.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f};
+    private static final float[] f16486s = {1.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f};
 
     /* renamed from: d  reason: collision with root package name */
-    private SVGLength f17519d;
+    private SVGLength f16487d;
 
     /* renamed from: e  reason: collision with root package name */
-    private SVGLength f17520e;
+    private SVGLength f16488e;
 
     /* renamed from: i  reason: collision with root package name */
-    private SVGLength f17521i;
+    private SVGLength f16489i;
 
     /* renamed from: o  reason: collision with root package name */
-    private SVGLength f17522o;
+    private SVGLength f16490o;
 
     /* renamed from: p  reason: collision with root package name */
-    private ReadableArray f17523p;
+    private ReadableArray f16491p;
 
     /* renamed from: q  reason: collision with root package name */
-    private a.b f17524q;
+    private a.b f16492q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Matrix f17525r;
+    private Matrix f16493r;
 
     public f0(ReactContext reactContext) {
         super(reactContext);
-        this.f17525r = null;
+        this.f16493r = null;
     }
 
     public void c(ReadableArray readableArray) {
-        this.f17523p = readableArray;
+        this.f16491p = readableArray;
         invalidate();
     }
 
     public void d(ReadableArray readableArray) {
         if (readableArray != null) {
-            float[] fArr = f17518s;
+            float[] fArr = f16486s;
             int c10 = n0.c(readableArray, fArr, this.mScale);
             if (c10 == 6) {
-                if (this.f17525r == null) {
-                    this.f17525r = new Matrix();
+                if (this.f16493r == null) {
+                    this.f16493r = new Matrix();
                 }
-                this.f17525r.setValues(fArr);
+                this.f16493r.setValues(fArr);
             } else if (c10 != -1) {
                 p8.a.J(ReactConstants.TAG, "RNSVG: Transform matrices must be of size 6");
             }
         } else {
-            this.f17525r = null;
+            this.f16493r = null;
         }
         invalidate();
     }
@@ -65,31 +65,31 @@ public class f0 extends e {
     public void e(int i10) {
         if (i10 != 0) {
             if (i10 == 1) {
-                this.f17524q = a.b.USER_SPACE_ON_USE;
+                this.f16492q = a.b.USER_SPACE_ON_USE;
             }
         } else {
-            this.f17524q = a.b.OBJECT_BOUNDING_BOX;
+            this.f16492q = a.b.OBJECT_BOUNDING_BOX;
         }
         invalidate();
     }
 
     public void f(Dynamic dynamic) {
-        this.f17519d = SVGLength.b(dynamic);
+        this.f16487d = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void g(Dynamic dynamic) {
-        this.f17521i = SVGLength.b(dynamic);
+        this.f16489i = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void h(Dynamic dynamic) {
-        this.f17520e = SVGLength.b(dynamic);
+        this.f16488e = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void i(Dynamic dynamic) {
-        this.f17522o = SVGLength.b(dynamic);
+        this.f16490o = SVGLength.b(dynamic);
         invalidate();
     }
 
@@ -97,14 +97,14 @@ public class f0 extends e {
     @Override // com.horcrux.svg.VirtualView
     public void saveDefinition() {
         if (this.mName != null) {
-            a aVar = new a(a.EnumC0206a.LINEAR_GRADIENT, new SVGLength[]{this.f17519d, this.f17520e, this.f17521i, this.f17522o}, this.f17524q);
-            aVar.e(this.f17523p);
-            Matrix matrix = this.f17525r;
+            a aVar = new a(a.EnumC0187a.LINEAR_GRADIENT, new SVGLength[]{this.f16487d, this.f16488e, this.f16489i, this.f16490o}, this.f16492q);
+            aVar.e(this.f16491p);
+            Matrix matrix = this.f16493r;
             if (matrix != null) {
                 aVar.f(matrix);
             }
             SvgView svgView = getSvgView();
-            if (this.f17524q == a.b.USER_SPACE_ON_USE) {
+            if (this.f16492q == a.b.USER_SPACE_ON_USE) {
                 aVar.h(svgView.getCanvasBounds());
             }
             svgView.defineBrush(aVar, this.mName);

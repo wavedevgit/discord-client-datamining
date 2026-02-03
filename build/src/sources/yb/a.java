@@ -6,35 +6,35 @@ public abstract class a {
 
     /* renamed from: yb.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static abstract class AbstractC0766a {
+    public static abstract class AbstractC0739a {
         public abstract a a();
 
-        public abstract AbstractC0766a b(String str);
+        public abstract AbstractC0739a b(String str);
 
-        public abstract AbstractC0766a c(String str);
+        public abstract AbstractC0739a c(String str);
 
-        public abstract AbstractC0766a d(String str);
+        public abstract AbstractC0739a d(String str);
 
-        public abstract AbstractC0766a e(String str);
+        public abstract AbstractC0739a e(String str);
 
-        public abstract AbstractC0766a f(String str);
+        public abstract AbstractC0739a f(String str);
 
-        public abstract AbstractC0766a g(String str);
+        public abstract AbstractC0739a g(String str);
 
-        public abstract AbstractC0766a h(String str);
+        public abstract AbstractC0739a h(String str);
 
-        public abstract AbstractC0766a i(String str);
+        public abstract AbstractC0739a i(String str);
 
-        public abstract AbstractC0766a j(String str);
+        public abstract AbstractC0739a j(String str);
 
-        public abstract AbstractC0766a k(String str);
+        public abstract AbstractC0739a k(String str);
 
-        public abstract AbstractC0766a l(String str);
+        public abstract AbstractC0739a l(String str);
 
-        public abstract AbstractC0766a m(Integer num);
+        public abstract AbstractC0739a m(Integer num);
     }
 
-    public static AbstractC0766a a() {
+    public static AbstractC0739a a() {
         return new c.b();
     }
 

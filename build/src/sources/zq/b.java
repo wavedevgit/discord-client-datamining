@@ -1,16 +1,43 @@
 package zq;
 
-import android.graphics.Bitmap;
+import java.util.List;
+import kotlin.Result;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.text.Regex;
+import kotlin.text.StringsKt;
+import sv.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract /* synthetic */ class b {
+public interface b {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ int[] f56054a;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a {
+        private static String a(b bVar, String str, String str2, Function2 function2) {
+            Double p10;
+            if (!new Regex("%[\\d|.]*[f]").i(str) || (p10 = StringsKt.p(str2)) == null) {
+                return null;
+            }
+            return (String) function2.invoke(str, Double.valueOf(p10.doubleValue()));
+        }
 
-    static {
-        int[] iArr = new int[Bitmap.CompressFormat.values().length];
-        f56054a = iArr;
-        iArr[Bitmap.CompressFormat.PNG.ordinal()] = 1;
-        iArr[Bitmap.CompressFormat.WEBP.ordinal()] = 2;
+        public static String b(b bVar, Object obj, Object obj2, Function2 formatFloatingPoint) {
+            Object b10;
+            Intrinsics.checkNotNullParameter(formatFloatingPoint, "formatFloatingPoint");
+            List c10 = sv.a.c(obj);
+            String valueOf = String.valueOf(CollectionsKt.firstOrNull(c10));
+            String valueOf2 = String.valueOf(c.b(c10));
+            try {
+                Result.a aVar = Result.f32461e;
+                b10 = Result.b(a(bVar, valueOf, valueOf2, formatFloatingPoint));
+            } catch (Throwable th2) {
+                Result.a aVar2 = Result.f32461e;
+                b10 = Result.b(kotlin.c.a(th2));
+            }
+            if (Result.e(b10) == null) {
+                return (String) b10;
+            }
+            return null;
+        }
     }
 }

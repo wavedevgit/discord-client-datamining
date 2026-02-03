@@ -15,18 +15,18 @@ public interface g extends DataSource {
     public static abstract class a implements c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final C0179g f14092a = new C0179g();
+        private final C0160g f13060a = new C0160g();
 
         @Override // com.google.android.exoplayer2.upstream.DataSource.Factory
         /* renamed from: a */
         public final g createDataSource() {
-            return b(this.f14092a);
+            return b(this.f13060a);
         }
 
-        protected abstract g b(C0179g c0179g);
+        protected abstract g b(C0160g c0160g);
 
         public final c c(Map map) {
-            this.f14092a.a(map);
+            this.f13060a.a(map);
             return this;
         }
     }
@@ -46,11 +46,11 @@ public interface g extends DataSource {
     public static final class e extends d {
 
         /* renamed from: o  reason: collision with root package name */
-        public final String f14095o;
+        public final String f13063o;
 
         public e(String str, com.google.android.exoplayer2.upstream.a aVar) {
             super("Invalid content type: " + str, aVar, 2003, 1);
-            this.f14095o = str;
+            this.f13063o = str;
         }
     }
 
@@ -58,51 +58,51 @@ public interface g extends DataSource {
     public static final class f extends d {
 
         /* renamed from: o  reason: collision with root package name */
-        public final int f14096o;
+        public final int f13064o;
 
         /* renamed from: p  reason: collision with root package name */
-        public final String f14097p;
+        public final String f13065p;
 
         /* renamed from: q  reason: collision with root package name */
-        public final Map f14098q;
+        public final Map f13066q;
 
         /* renamed from: r  reason: collision with root package name */
-        public final byte[] f14099r;
+        public final byte[] f13067r;
 
         public f(int i10, String str, IOException iOException, Map map, com.google.android.exoplayer2.upstream.a aVar, byte[] bArr) {
             super("Response code: " + i10, iOException, aVar, 2004, 1);
-            this.f14096o = i10;
-            this.f14097p = str;
-            this.f14098q = map;
-            this.f14099r = bArr;
+            this.f13064o = i10;
+            this.f13065p = str;
+            this.f13066q = map;
+            this.f13067r = bArr;
         }
     }
 
     /* renamed from: com.google.android.exoplayer2.upstream.g$g  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0179g {
+    public static final class C0160g {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Map f14100a = new HashMap();
+        private final Map f13068a = new HashMap();
 
         /* renamed from: b  reason: collision with root package name */
-        private Map f14101b;
+        private Map f13069b;
 
         public synchronized void a(Map map) {
-            this.f14101b = null;
-            this.f14100a.clear();
-            this.f14100a.putAll(map);
+            this.f13069b = null;
+            this.f13068a.clear();
+            this.f13068a.putAll(map);
         }
 
         public synchronized Map b() {
             try {
-                if (this.f14101b == null) {
-                    this.f14101b = Collections.unmodifiableMap(new HashMap(this.f14100a));
+                if (this.f13069b == null) {
+                    this.f13069b = Collections.unmodifiableMap(new HashMap(this.f13068a));
                 }
             } catch (Throwable th2) {
                 throw th2;
             }
-            return this.f14101b;
+            return this.f13069b;
         }
     }
 
@@ -110,15 +110,15 @@ public interface g extends DataSource {
     public static class d extends m {
 
         /* renamed from: e  reason: collision with root package name */
-        public final com.google.android.exoplayer2.upstream.a f14093e;
+        public final com.google.android.exoplayer2.upstream.a f13061e;
 
         /* renamed from: i  reason: collision with root package name */
-        public final int f14094i;
+        public final int f13062i;
 
         public d(com.google.android.exoplayer2.upstream.a aVar, int i10, int i11) {
             super(b(i10, i11));
-            this.f14093e = aVar;
-            this.f14094i = i11;
+            this.f13061e = aVar;
+            this.f13062i = i11;
         }
 
         private static int b(int i10, int i11) {
@@ -148,20 +148,20 @@ public interface g extends DataSource {
 
         public d(String str, com.google.android.exoplayer2.upstream.a aVar, int i10, int i11) {
             super(str, b(i10, i11));
-            this.f14093e = aVar;
-            this.f14094i = i11;
+            this.f13061e = aVar;
+            this.f13062i = i11;
         }
 
         public d(IOException iOException, com.google.android.exoplayer2.upstream.a aVar, int i10, int i11) {
             super(iOException, b(i10, i11));
-            this.f14093e = aVar;
-            this.f14094i = i11;
+            this.f13061e = aVar;
+            this.f13062i = i11;
         }
 
         public d(String str, IOException iOException, com.google.android.exoplayer2.upstream.a aVar, int i10, int i11) {
             super(str, iOException, b(i10, i11));
-            this.f14093e = aVar;
-            this.f14094i = i11;
+            this.f13061e = aVar;
+            this.f13062i = i11;
         }
     }
 }

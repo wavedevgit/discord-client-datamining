@@ -23,20 +23,20 @@ import kotlin.jvm.internal.markers.KMutableList;
 import kotlin.jvm.internal.markers.KMutableListIterator;
 import kotlin.jvm.internal.markers.KMutableMap;
 import kotlin.jvm.internal.markers.KMutableSet;
-import xr.b;
-import xr.c;
-import xr.d;
-import xr.e;
-import xr.f;
-import xr.g;
-import xr.h;
-import xr.i;
-import xr.j;
-import xr.k;
-import xr.l;
-import xr.m;
-import xr.n;
-import xr.o;
+import zr.b;
+import zr.c;
+import zr.d;
+import zr.e;
+import zr.f;
+import zr.g;
+import zr.h;
+import zr.i;
+import zr.j;
+import zr.k;
+import zr.l;
+import zr.m;
+import zr.n;
+import zr.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class TypeIntrinsics {
     public static Collection asMutableCollection(Object obj) {
@@ -200,7 +200,7 @@ public class TypeIntrinsics {
         if (obj instanceof o) {
             return 9;
         }
-        if (obj instanceof xr.a) {
+        if (obj instanceof zr.a) {
             return 10;
         }
         if (obj instanceof b) {

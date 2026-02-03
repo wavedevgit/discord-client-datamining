@@ -4,115 +4,370 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var0.IntlMessageFormat;
     var2 = var3.__addLocaleData;
     var1 = {};
-    var4 = 'ro';
+    var4 = 'fr';
     var1.locale = var4;
     var4 = function arg0, arg1() {
-        _fun112123: for (var _fun112123_ip = 0;;) switch (_fun112123_ip) {
+        _fun112160: for (var _fun112160_ip = 0;;) switch (_fun112160_ip) {
             case 0:
                 var2 = arg0;
-                var3 = global;
-                var0 = var3.String;
-                var7 = undefined;
-                var4 = var0.bind(var7)(var2);
-                var1 = var4.split;
-                var0 = '.';
-                var0 = var1.bind(var4)(var0);
-                var1 = 1;
-                var4 = var0[var1];
-                var4 = !var4;
-                var6 = var3.Number;
-                var3 = 0;
-                var5 = var0[var3];
-                var5 = var6.bind(var7)(var5);
-                var6 = var5 == var2;
-                if (!var6) {
-                    _fun112123_ip = 86;
-                    continue _fun112123
-                }
-            case 66:
-                var7 = var0[var3];
-                var5 = var7.slice;
-                var0 = -2;
-                var6 = var5.bind(var7)(var0);
-            case 86:
                 var0 = arg1;
                 if (var0) {
-                    _fun112123_ip = 156;
-                    continue _fun112123
+                    _fun112160_ip = 44;
+                    continue _fun112160
                 }
-            case 92:
-                if (!(var1 == var2)) {
-                    _fun112123_ip = 103;
-                    continue _fun112123
-                }
-            case 96:
-                var0 = 'one';
-                if (var4) {
-                    _fun112123_ip = 154;
-                    continue _fun112123
-                }
-            case 103:
-                if (!var4) {
-                    _fun112123_ip = 147;
-                    continue _fun112123
-                }
-            case 106:
-                if (!(var3 != var2)) {
-                    _fun112123_ip = 147;
-                    continue _fun112123
-                }
-            case 110:
-                var4 = var1 != var2;
-                var5 = 'other';
-                var3 = var5;
-                if (!var4) {
-                    _fun112123_ip = 151;
-                    continue _fun112123
-                }
-            case 124:
-                var4 = var6 >= var1;
-                var3 = var5;
-                if (!var4) {
-                    _fun112123_ip = 151;
-                    continue _fun112123
-                }
-            case 134:
-                var4 = 19;
-                var4 = var6 <= var4;
-                var3 = var5;
-                if (!var4) {
-                    _fun112123_ip = 151;
-                    continue _fun112123
-                }
-            case 147:
-                var3 = 'few';
-            case 151:
+            case 9:
+                var0 = 0;
+                var1 = var2 >= var0;
+                var3 = 'other';
                 var0 = var3;
-            case 154:
-                _fun112123_ip = 174;
-                continue _fun112123;
-            case 156:
+                if (!var1) {
+                    _fun112160_ip = 42;
+                    continue _fun112160
+                }
+            case 25:
+                var1 = 2;
+                var1 = var2 < var1;
+                var0 = var3;
+                if (!var1) {
+                    _fun112160_ip = 42;
+                    continue _fun112160
+                }
+            case 38:
+                var0 = 'one';
+            case 42:
+                _fun112160_ip = 65;
+                continue _fun112160;
+            case 44:
+                var1 = 1;
                 var2 = var1 == var2;
                 var1 = 'other';
                 if (!var2) {
-                    _fun112123_ip = 171;
-                    continue _fun112123
+                    _fun112160_ip = 62;
+                    continue _fun112160
                 }
-            case 167:
+            case 58:
                 var1 = 'one';
-            case 171:
+            case 62:
                 var0 = var1;
-            case 174:
+            case 65:
                 return var0;
         }
     };
     var1.pluralRuleFunction = var4;
     var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-BE',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-BF',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-BI',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-BJ',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-BL',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-CA',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-CD',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-CF',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-CG',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-CH',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-CI',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-CM',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-DJ',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-DZ',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-GA',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-GF',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-GN',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-GP',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-GQ',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-HT',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-KM',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-LU',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-MA',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-MC',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-MF',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-MG',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-ML',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-MQ',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-MR',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-MU',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-NC',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-NE',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-PF',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-PM',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-RE',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-RW',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-SC',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-SN',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-SY',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-TD',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-TG',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-TN',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-VU',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'fr-WF',
+        'parentLocale': 'fr'
+    };
+    var1 = var2.bind(var3)(var1);
     var2 = var0.IntlMessageFormat;
     var1 = var2.__addLocaleData;
     var0 = {
-        'locale': 'ro-MD',
-        'parentLocale': 'ro'
+        'locale': 'fr-YT',
+        'parentLocale': 'fr'
     };
     var0 = var1.bind(var2)(var0);
     var0 = undefined;

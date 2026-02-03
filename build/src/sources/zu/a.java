@@ -1,96 +1,52 @@
 package zu;
 
-import java.util.Locale;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
+import java.util.ArrayList;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
+import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class a {
+public interface a {
 
-    /* renamed from: a  reason: collision with root package name */
-    private static final ConcurrentMap f56154a = new ConcurrentHashMap();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final ConcurrentMap f56155b = new ConcurrentHashMap();
-
-    private static boolean a(String str) {
-        if (b.b(str) && str.length() == 2) {
-            return true;
-        }
-        return false;
-    }
-
-    private static boolean b(String str) {
-        if (b.a(str)) {
-            if (str.length() == 2 || str.length() == 3) {
-                return true;
+    /* renamed from: zu.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class C0796a {
+        private static Double a(a aVar, Object obj) {
+            if (obj instanceof Number) {
+                return Double.valueOf(((Number) obj).doubleValue());
             }
-            return false;
-        }
-        return false;
-    }
-
-    private static boolean c(String str) {
-        if (b.d(str) && str.length() == 3) {
-            return true;
-        }
-        return false;
-    }
-
-    private static Locale d(String str) {
-        if (b(str)) {
-            return new Locale(str);
-        }
-        String[] split = str.split("_", -1);
-        String str2 = split[0];
-        if (split.length == 2) {
-            String str3 = split[1];
-            if ((b(str2) && a(str3)) || c(str3)) {
-                return new Locale(str2, str3);
+            if (obj instanceof String) {
+                return StringsKt.p((String) obj);
             }
-        } else if (split.length == 3) {
-            String str4 = split[1];
-            String str5 = split[2];
-            if (b(str2) && ((str4.isEmpty() || a(str4) || c(str4)) && !str5.isEmpty())) {
-                return new Locale(str2, str4, str5);
+            if (obj instanceof List) {
+                return b(aVar, (List) obj);
             }
-        }
-        throw new IllegalArgumentException("Invalid locale format: " + str);
-    }
-
-    public static Locale e(String str) {
-        if (str == null) {
+            if (obj instanceof Boolean) {
+                return Double.valueOf(sv.b.a(((Boolean) obj).booleanValue()));
+            }
+            if (obj == null) {
+                return Double.valueOf(0.0d);
+            }
             return null;
         }
-        if (str.isEmpty()) {
-            return new Locale("", "");
-        }
-        if (!str.contains("#")) {
-            int length = str.length();
-            if (length >= 2) {
-                if (str.charAt(0) == '_') {
-                    if (length >= 3) {
-                        char charAt = str.charAt(1);
-                        char charAt2 = str.charAt(2);
-                        if (Character.isUpperCase(charAt) && Character.isUpperCase(charAt2)) {
-                            if (length == 3) {
-                                return new Locale("", str.substring(1, 3));
-                            }
-                            if (length >= 5) {
-                                if (str.charAt(3) == '_') {
-                                    return new Locale("", str.substring(1, 3), str.substring(4));
-                                }
-                                throw new IllegalArgumentException("Invalid locale format: " + str);
-                            }
-                            throw new IllegalArgumentException("Invalid locale format: " + str);
-                        }
-                        throw new IllegalArgumentException("Invalid locale format: " + str);
-                    }
-                    throw new IllegalArgumentException("Invalid locale format: " + str);
+
+        private static Double b(a aVar, List list) {
+            int size = list.size();
+            if (size != 0) {
+                if (size != 1) {
+                    return null;
                 }
-                return d(str);
+                return a(aVar, CollectionsKt.o0(list));
             }
-            throw new IllegalArgumentException("Invalid locale format: " + str);
+            return Double.valueOf(0.0d);
         }
-        throw new IllegalArgumentException("Invalid locale format: " + str);
+
+        public static List c(a aVar, Object obj) {
+            List<Object> c10 = sv.a.c(obj);
+            ArrayList arrayList = new ArrayList(CollectionsKt.w(c10, 10));
+            for (Object obj2 : c10) {
+                arrayList.add(a(aVar, obj2));
+            }
+            return arrayList;
+        }
     }
 }

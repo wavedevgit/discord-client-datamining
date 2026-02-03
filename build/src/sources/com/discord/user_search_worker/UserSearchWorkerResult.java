@@ -13,7 +13,7 @@ public final class UserSearchWorkerResult {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f10478id;
+    private final String f9446id;
     private final double score;
     @NotNull
     private final String username;
@@ -22,7 +22,7 @@ public final class UserSearchWorkerResult {
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(username, "username");
         Intrinsics.checkNotNullParameter(comparator, "comparator");
-        this.f10478id = id2;
+        this.f9446id = id2;
         this.username = username;
         this.comparator = comparator;
         this.score = d10;
@@ -30,7 +30,7 @@ public final class UserSearchWorkerResult {
 
     public static /* synthetic */ UserSearchWorkerResult copy$default(UserSearchWorkerResult userSearchWorkerResult, String str, String str2, String str3, double d10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = userSearchWorkerResult.f10478id;
+            str = userSearchWorkerResult.f9446id;
         }
         if ((i10 & 2) != 0) {
             str2 = userSearchWorkerResult.username;
@@ -47,7 +47,7 @@ public final class UserSearchWorkerResult {
 
     @NotNull
     public final String component1() {
-        return this.f10478id;
+        return this.f9446id;
     }
 
     @NotNull
@@ -78,7 +78,7 @@ public final class UserSearchWorkerResult {
         }
         if (obj instanceof UserSearchWorkerResult) {
             UserSearchWorkerResult userSearchWorkerResult = (UserSearchWorkerResult) obj;
-            return Intrinsics.areEqual(this.f10478id, userSearchWorkerResult.f10478id) && Intrinsics.areEqual(this.username, userSearchWorkerResult.username) && Intrinsics.areEqual(this.comparator, userSearchWorkerResult.comparator) && Double.compare(this.score, userSearchWorkerResult.score) == 0;
+            return Intrinsics.areEqual(this.f9446id, userSearchWorkerResult.f9446id) && Intrinsics.areEqual(this.username, userSearchWorkerResult.username) && Intrinsics.areEqual(this.comparator, userSearchWorkerResult.comparator) && Double.compare(this.score, userSearchWorkerResult.score) == 0;
         }
         return false;
     }
@@ -90,7 +90,7 @@ public final class UserSearchWorkerResult {
 
     @NotNull
     public final String getId() {
-        return this.f10478id;
+        return this.f9446id;
     }
 
     public final double getScore() {
@@ -103,12 +103,12 @@ public final class UserSearchWorkerResult {
     }
 
     public int hashCode() {
-        return (((((this.f10478id.hashCode() * 31) + this.username.hashCode()) * 31) + this.comparator.hashCode()) * 31) + Double.hashCode(this.score);
+        return (((((this.f9446id.hashCode() * 31) + this.username.hashCode()) * 31) + this.comparator.hashCode()) * 31) + Double.hashCode(this.score);
     }
 
     @NotNull
     public String toString() {
-        String str = this.f10478id;
+        String str = this.f9446id;
         String str2 = this.username;
         String str3 = this.comparator;
         double d10 = this.score;

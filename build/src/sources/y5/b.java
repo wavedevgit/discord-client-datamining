@@ -3,62 +3,62 @@ package y5;
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private float f54000a;
+    private float f53758a;
 
     /* renamed from: b  reason: collision with root package name */
-    private float f54001b;
+    private float f53759b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Object f54002c;
+    private Object f53760c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Object f54003d;
+    private Object f53761d;
 
     /* renamed from: e  reason: collision with root package name */
-    private float f54004e;
+    private float f53762e;
 
     /* renamed from: f  reason: collision with root package name */
-    private float f54005f;
+    private float f53763f;
 
     /* renamed from: g  reason: collision with root package name */
-    private float f54006g;
+    private float f53764g;
 
     public float a() {
-        return this.f54001b;
+        return this.f53759b;
     }
 
     public Object b() {
-        return this.f54003d;
+        return this.f53761d;
     }
 
     public float c() {
-        return this.f54005f;
+        return this.f53763f;
     }
 
     public float d() {
-        return this.f54004e;
+        return this.f53762e;
     }
 
     public float e() {
-        return this.f54006g;
+        return this.f53764g;
     }
 
     public float f() {
-        return this.f54000a;
+        return this.f53758a;
     }
 
     public Object g() {
-        return this.f54002c;
+        return this.f53760c;
     }
 
     public b h(float f10, float f11, Object obj, Object obj2, float f12, float f13, float f14) {
-        this.f54000a = f10;
-        this.f54001b = f11;
-        this.f54002c = obj;
-        this.f54003d = obj2;
-        this.f54004e = f12;
-        this.f54005f = f13;
-        this.f54006g = f14;
+        this.f53758a = f10;
+        this.f53759b = f11;
+        this.f53760c = obj;
+        this.f53761d = obj2;
+        this.f53762e = f12;
+        this.f53763f = f13;
+        this.f53764g = f14;
         return this;
     }
 }

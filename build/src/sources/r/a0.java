@@ -9,16 +9,16 @@ import java.util.Map;
 public class a0 {
 
     /* renamed from: b  reason: collision with root package name */
-    private final a f47898b;
+    private final a f48207b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f47899c;
+    private final String f48208c;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f47897a = new HashMap();
+    private final Map f48206a = new HashMap();
 
     /* renamed from: d  reason: collision with root package name */
-    private s0 f47900d = null;
+    private s0 f48209d = null;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface a {
@@ -27,11 +27,11 @@ public class a0 {
 
     private a0(CameraCharacteristics cameraCharacteristics, String str) {
         if (Build.VERSION.SDK_INT >= 28) {
-            this.f47898b = new x(cameraCharacteristics);
+            this.f48207b = new x(cameraCharacteristics);
         } else {
-            this.f47898b = new y(cameraCharacteristics);
+            this.f48207b = new y(cameraCharacteristics);
         }
-        this.f47899c = str;
+        this.f48208c = str;
     }
 
     private boolean c(CameraCharacteristics.Key key) {
@@ -44,17 +44,17 @@ public class a0 {
 
     public Object a(CameraCharacteristics.Key key) {
         if (c(key)) {
-            return this.f47898b.a(key);
+            return this.f48207b.a(key);
         }
         synchronized (this) {
             try {
-                Object obj = this.f47897a.get(key);
+                Object obj = this.f48206a.get(key);
                 if (obj != null) {
                     return obj;
                 }
-                Object a10 = this.f47898b.a(key);
+                Object a10 = this.f48207b.a(key);
                 if (a10 != null) {
-                    this.f47897a.put(key, a10);
+                    this.f48206a.put(key, a10);
                 }
                 return a10;
             } catch (Throwable th2) {
@@ -64,11 +64,11 @@ public class a0 {
     }
 
     public s0 b() {
-        if (this.f47900d == null) {
+        if (this.f48209d == null) {
             try {
                 StreamConfigurationMap streamConfigurationMap = (StreamConfigurationMap) a(CameraCharacteristics.SCALER_STREAM_CONFIGURATION_MAP);
                 if (streamConfigurationMap != null) {
-                    this.f47900d = s0.e(streamConfigurationMap, new u.n(this.f47899c));
+                    this.f48209d = s0.e(streamConfigurationMap, new u.n(this.f48208c));
                 } else {
                     throw new IllegalArgumentException("StreamConfigurationMap is null!");
                 }
@@ -76,13 +76,13 @@ public class a0 {
                 throw new IllegalArgumentException(e10.getMessage());
             }
         }
-        return this.f47900d;
+        return this.f48209d;
     }
 
     public boolean d() {
         CameraCharacteristics.Key key;
         if (Build.VERSION.SDK_INT >= 34) {
-            a aVar = this.f47898b;
+            a aVar = this.f48207b;
             key = CameraCharacteristics.CONTROL_AVAILABLE_SETTINGS_OVERRIDES;
             int[] iArr = (int[]) aVar.a(key);
             if (iArr != null) {

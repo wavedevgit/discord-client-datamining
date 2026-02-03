@@ -38,7 +38,7 @@ public final class MediaEngineModule$addConnectionCallbacks$1 extends kotlin.cor
         ReactEvents reactEvents;
         reactEvents = mediaEngineModule.reactEvents;
         reactEvents.emitModuleEvent(mediaEngineModule.getReactContext(), new UserSpeakingEvent(i10, str, i11, f10));
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -47,11 +47,11 @@ public final class MediaEngineModule$addConnectionCallbacks$1 extends kotlin.cor
         try {
             reactEvents = mediaEngineModule.reactEvents;
             reactEvents.emitModuleEvent(mediaEngineModule.getReactContext(), new PingCallbackEvent(i10, i11, str, i12, i13));
-            return Unit.f33074a;
+            return Unit.f32464a;
         } catch (Exception e10) {
             CrashReporting crashReporting = CrashReporting.INSTANCE;
             String message = e10.getMessage();
-            CrashReporting.addBreadcrumb$default(crashReporting, "setOnPingCallback failed with: " + message, kotlin.collections.o0.f(jr.v.a("stackTrace", jr.e.b(e10))), "MediaEngineModule", null, false, 24, null);
+            CrashReporting.addBreadcrumb$default(crashReporting, "setOnPingCallback failed with: " + message, kotlin.collections.o0.f(lr.v.a("stackTrace", lr.e.b(e10))), "MediaEngineModule", null, false, 24, null);
             throw e10;
         }
     }
@@ -61,7 +61,7 @@ public final class MediaEngineModule$addConnectionCallbacks$1 extends kotlin.cor
         ReactEvents reactEvents;
         reactEvents = mediaEngineModule.reactEvents;
         reactEvents.emitModuleEvent(mediaEngineModule.getReactContext(), new PingTimeoutCallbackEvent(i10, str, i11, i12, i13));
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -69,7 +69,7 @@ public final class MediaEngineModule$addConnectionCallbacks$1 extends kotlin.cor
         ReactEvents reactEvents;
         reactEvents = mediaEngineModule.reactEvents;
         reactEvents.emitModuleEvent(mediaEngineModule.getReactContext(), new FirstFrameCallbackEvent(i10, str, j10, str2));
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -77,7 +77,7 @@ public final class MediaEngineModule$addConnectionCallbacks$1 extends kotlin.cor
         ReactEvents reactEvents;
         reactEvents = mediaEngineModule.reactEvents;
         reactEvents.emitModuleEvent(mediaEngineModule.getReactContext(), new MlsFailureCallbackEvent(i10, str, str2));
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -85,7 +85,7 @@ public final class MediaEngineModule$addConnectionCallbacks$1 extends kotlin.cor
         ReactEvents reactEvents;
         reactEvents = mediaEngineModule.reactEvents;
         reactEvents.emitModuleEvent(mediaEngineModule.getReactContext(), new SecureFramesStateUpdateCallbackEvent(i10, str));
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -96,7 +96,7 @@ public final class MediaEngineModule$addConnectionCallbacks$1 extends kotlin.cor
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
         Object awaitMediaEngine;
-        Object f10 = pr.b.f();
+        Object f10 = rr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -179,11 +179,11 @@ public final class MediaEngineModule$addConnectionCallbacks$1 extends kotlin.cor
                 return invokeSuspend$lambda$5;
             }
         });
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$addConnectionCallbacks$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        return ((MediaEngineModule$addConnectionCallbacks$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
     }
 }

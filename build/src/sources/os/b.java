@@ -1,62 +1,49 @@
 package os;
 
-import java.util.concurrent.Executor;
-import kotlin.coroutines.CoroutineContext;
-import kotlinx.coroutines.CoroutineDispatcher;
-import kotlinx.coroutines.s;
-import ms.f0;
-import ms.h0;
+import kotlin.jvm.functions.Function2;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b extends s implements Executor {
+public abstract class b {
 
-    /* renamed from: o  reason: collision with root package name */
-    public static final b f44834o = new b();
+    /* renamed from: a */
+    private static final e0 f44501a = new e0("CLOSED");
 
-    /* renamed from: p  reason: collision with root package name */
-    private static final CoroutineDispatcher f44835p;
-
-    static {
-        int e10;
-        k kVar = k.f44852i;
-        e10 = h0.e("kotlinx.coroutines.io.parallelism", kotlin.ranges.d.d(64, f0.a()), 0, 0, 12, null);
-        f44835p = CoroutineDispatcher.c2(kVar, e10, null, 2, null);
+    public static final c b(c cVar) {
+        while (true) {
+            Object g10 = cVar.g();
+            if (g10 == f44501a) {
+                return cVar;
+            }
+            c cVar2 = (c) g10;
+            if (cVar2 == null) {
+                if (cVar.m()) {
+                    return cVar;
+                }
+            } else {
+                cVar = cVar2;
+            }
+        }
     }
 
-    private b() {
-    }
-
-    @Override // kotlinx.coroutines.CoroutineDispatcher
-    public void E1(CoroutineContext coroutineContext, Runnable runnable) {
-        f44835p.E1(coroutineContext, runnable);
-    }
-
-    @Override // kotlinx.coroutines.CoroutineDispatcher
-    public void U1(CoroutineContext coroutineContext, Runnable runnable) {
-        f44835p.U1(coroutineContext, runnable);
-    }
-
-    @Override // kotlinx.coroutines.CoroutineDispatcher
-    public CoroutineDispatcher b2(int i10, String str) {
-        return k.f44852i.b2(i10, str);
-    }
-
-    @Override // java.io.Closeable, java.lang.AutoCloseable
-    public void close() {
-        throw new IllegalStateException("Cannot be invoked on Dispatchers.IO");
-    }
-
-    @Override // java.util.concurrent.Executor
-    public void execute(Runnable runnable) {
-        E1(kotlin.coroutines.e.f33148d, runnable);
-    }
-
-    @Override // kotlinx.coroutines.CoroutineDispatcher
-    public String toString() {
-        return "Dispatchers.IO";
-    }
-
-    @Override // kotlinx.coroutines.s
-    public Executor f2() {
-        return this;
+    public static final Object c(b0 b0Var, long j10, Function2 function2) {
+        while (true) {
+            if (b0Var.f44503i < j10 || b0Var.k()) {
+                Object g10 = b0Var.g();
+                if (g10 == f44501a) {
+                    return c0.a(f44501a);
+                }
+                b0 b0Var2 = (b0) ((c) g10);
+                if (b0Var2 == null) {
+                    b0Var2 = (b0) function2.invoke(Long.valueOf(b0Var.f44503i + 1), b0Var);
+                    if (b0Var.o(b0Var2)) {
+                        if (b0Var.k()) {
+                            b0Var.n();
+                        }
+                    }
+                }
+                b0Var = b0Var2;
+            } else {
+                return c0.a(b0Var);
+            }
+        }
     }
 }

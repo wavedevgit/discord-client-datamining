@@ -27,11 +27,11 @@ public class DataChannel {
         public String protocol = "";
 
         /* renamed from: id  reason: collision with root package name */
-        public int f44714id = -1;
+        public int f44408id = -1;
 
         @CalledByNative("Init")
         int getId() {
-            return this.f44714id;
+            return this.f44408id;
         }
 
         @CalledByNative("Init")

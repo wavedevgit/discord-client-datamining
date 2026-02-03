@@ -6,7 +6,7 @@ import hc.a;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    static final e f27624a = a().f(10485760).d(androidx.recyclerview.widget.h.DEFAULT_DRAG_ANIMATION_DURATION).b(10000).c(604800000).e(81920).a();
+    static final e f26909a = a().f(10485760).d(androidx.recyclerview.widget.h.DEFAULT_DRAG_ANIMATION_DURATION).b(10000).c(604800000).e(81920).a();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */

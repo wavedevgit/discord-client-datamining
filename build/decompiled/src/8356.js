@@ -9,12 +9,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/images/native/icons',
-        'width': 24,
-        'height': 24.5,
+        'httpServerLocation': '/assets/modules/instant_invite/native/images',
+        'width': 160.5,
+        'height': 140,
         'scales': null,
-        'hash': '8baf8e74a5de42544f8c13cd8c4c504d',
-        'name': 'ic_share_android',
+        'hash': 'ad61eda1bea496e5c4dfb770ef28c56b',
+        'name': 'server-invite-envelope',
         'type': 'png'
     };
     var4 = [2, 3];

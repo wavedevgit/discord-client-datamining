@@ -1,7 +1,7 @@
 package kotlinx.serialization.internal;
 
-import bt.f2;
-import bt.n;
+import dt.f2;
+import dt.n;
 import kotlin.jvm.internal.CharCompanionObject;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
@@ -10,14 +10,14 @@ import kotlinx.serialization.encoding.CompositeEncoder;
 public final class c extends f2 implements KSerializer {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final c f36176c = new c();
+    public static final c f35566c = new c();
 
     private c() {
-        super(zs.a.D(CharCompanionObject.INSTANCE));
+        super(bt.a.z(CharCompanionObject.INSTANCE));
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // bt.a
+    @Override // dt.a
     /* renamed from: v */
     public int e(char[] cArr) {
         Intrinsics.checkNotNullParameter(cArr, "<this>");
@@ -25,14 +25,14 @@ public final class c extends f2 implements KSerializer {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // bt.f2
+    @Override // dt.f2
     /* renamed from: w */
     public char[] r() {
         return new char[0];
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // bt.s, bt.a
+    @Override // dt.s, dt.a
     /* renamed from: x */
     public void h(kotlinx.serialization.encoding.c decoder, int i10, n builder, boolean z10) {
         Intrinsics.checkNotNullParameter(decoder, "decoder");
@@ -41,7 +41,7 @@ public final class c extends f2 implements KSerializer {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // bt.a
+    @Override // dt.a
     /* renamed from: y */
     public n k(char[] cArr) {
         Intrinsics.checkNotNullParameter(cArr, "<this>");
@@ -49,13 +49,13 @@ public final class c extends f2 implements KSerializer {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // bt.f2
+    @Override // dt.f2
     /* renamed from: z */
     public void u(CompositeEncoder encoder, char[] content, int i10) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(content, "content");
         for (int i11 = 0; i11 < i10; i11++) {
-            encoder.l(getDescriptor(), i11, content[i11]);
+            encoder.m(getDescriptor(), i11, content[i11]);
         }
     }
 }

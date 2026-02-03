@@ -11,46 +11,46 @@ import org.webrtc.MediaStreamTrack;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final AudioManager f13098a;
+    private final AudioManager f12066a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final a f13099b;
+    private final a f12067b;
 
     /* renamed from: c  reason: collision with root package name */
-    private b f13100c;
+    private b f12068c;
 
     /* renamed from: d  reason: collision with root package name */
-    private AudioAttributes f13101d;
+    private AudioAttributes f12069d;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f13103f;
+    private int f12071f;
 
     /* renamed from: h  reason: collision with root package name */
-    private AudioFocusRequest f13105h;
+    private AudioFocusRequest f12073h;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f13106i;
+    private boolean f12074i;
 
     /* renamed from: g  reason: collision with root package name */
-    private float f13104g = 1.0f;
+    private float f12072g = 1.0f;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f13102e = 0;
+    private int f12070e = 0;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public class a implements AudioManager.OnAudioFocusChangeListener {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Handler f13107d;
+        private final Handler f12075d;
 
         public a(Handler handler) {
-            this.f13107d = handler;
+            this.f12075d = handler;
         }
 
         @Override // android.media.AudioManager.OnAudioFocusChangeListener
         public void onAudioFocusChange(final int i10) {
-            this.f13107d.post(new Runnable() { // from class: com.google.android.exoplayer2.c
+            this.f12075d.post(new Runnable() { // from class: com.google.android.exoplayer2.c
                 @Override // java.lang.Runnable
                 public final void run() {
                     d.this.h(i10);
@@ -67,20 +67,20 @@ public final class d {
     }
 
     public d(Context context, Handler handler, b bVar) {
-        this.f13098a = (AudioManager) ne.a.e((AudioManager) context.getApplicationContext().getSystemService(MediaStreamTrack.AUDIO_TRACK_KIND));
-        this.f13100c = bVar;
-        this.f13099b = new a(handler);
+        this.f12066a = (AudioManager) ne.a.e((AudioManager) context.getApplicationContext().getSystemService(MediaStreamTrack.AUDIO_TRACK_KIND));
+        this.f12068c = bVar;
+        this.f12067b = new a(handler);
     }
 
     private void a() {
-        this.f13098a.abandonAudioFocus(this.f13099b);
+        this.f12066a.abandonAudioFocus(this.f12067b);
     }
 
     private void b() {
-        if (this.f13102e == 0) {
+        if (this.f12070e == 0) {
             return;
         }
-        if (ne.w0.f40158a >= 26) {
+        if (ne.w0.f40197a >= 26) {
             c();
         } else {
             a();
@@ -89,9 +89,9 @@ public final class d {
     }
 
     private void c() {
-        AudioFocusRequest audioFocusRequest = this.f13105h;
+        AudioFocusRequest audioFocusRequest = this.f12073h;
         if (audioFocusRequest != null) {
-            this.f13098a.abandonAudioFocusRequest(audioFocusRequest);
+            this.f12066a.abandonAudioFocusRequest(audioFocusRequest);
         }
     }
 
@@ -100,7 +100,7 @@ public final class d {
         if (audioAttributes == null) {
             return 0;
         }
-        switch (audioAttributes.f12831i) {
+        switch (audioAttributes.f11799i) {
             case 0:
                 ne.y.i("AudioFocusManager", "Specify a proper usage in the audio attributes for audio focus handling. Using AUDIOFOCUS_GAIN by default.");
                 return 1;
@@ -122,16 +122,16 @@ public final class d {
             case 13:
                 break;
             case 11:
-                if (audioAttributes.f12829d == 1) {
+                if (audioAttributes.f11797d == 1) {
                     return 2;
                 }
                 break;
             case 15:
             default:
-                ne.y.i("AudioFocusManager", "Unidentified audio usage: " + audioAttributes.f12831i);
+                ne.y.i("AudioFocusManager", "Unidentified audio usage: " + audioAttributes.f11799i);
                 return 0;
             case 16:
-                if (ne.w0.f40158a < 19) {
+                if (ne.w0.f40197a < 19) {
                     return 2;
                 }
                 return 4;
@@ -140,7 +140,7 @@ public final class d {
     }
 
     private void f(int i10) {
-        b bVar = this.f13100c;
+        b bVar = this.f12068c;
         if (bVar != null) {
             bVar.B(i10);
         }
@@ -170,10 +170,10 @@ public final class d {
 
     private int j() {
         int k10;
-        if (this.f13102e == 1) {
+        if (this.f12070e == 1) {
             return 1;
         }
-        if (ne.w0.f40158a >= 26) {
+        if (ne.w0.f40197a >= 26) {
             k10 = l();
         } else {
             k10 = k();
@@ -187,38 +187,38 @@ public final class d {
     }
 
     private int k() {
-        return this.f13098a.requestAudioFocus(this.f13099b, ne.w0.k0(((AudioAttributes) ne.a.e(this.f13101d)).f12831i), this.f13103f);
+        return this.f12066a.requestAudioFocus(this.f12067b, ne.w0.k0(((AudioAttributes) ne.a.e(this.f12069d)).f11799i), this.f12071f);
     }
 
     private int l() {
         AudioFocusRequest.Builder a10;
-        AudioFocusRequest audioFocusRequest = this.f13105h;
-        if (audioFocusRequest == null || this.f13106i) {
+        AudioFocusRequest audioFocusRequest = this.f12073h;
+        if (audioFocusRequest == null || this.f12074i) {
             if (audioFocusRequest == null) {
                 lc.b.a();
-                a10 = com.discord.chat.presentation.message.view.voicemessages.a.a(this.f13103f);
+                a10 = com.discord.chat.presentation.message.view.voicemessages.a.a(this.f12071f);
             } else {
                 lc.b.a();
-                a10 = lc.a.a(this.f13105h);
+                a10 = lc.a.a(this.f12073h);
             }
-            this.f13105h = a10.setAudioAttributes(((AudioAttributes) ne.a.e(this.f13101d)).b().f12835a).setWillPauseWhenDucked(q()).setOnAudioFocusChangeListener(this.f13099b).build();
-            this.f13106i = false;
+            this.f12073h = a10.setAudioAttributes(((AudioAttributes) ne.a.e(this.f12069d)).b().f11803a).setWillPauseWhenDucked(q()).setOnAudioFocusChangeListener(this.f12067b).build();
+            this.f12074i = false;
         }
-        return this.f13098a.requestAudioFocus(this.f13105h);
+        return this.f12066a.requestAudioFocus(this.f12073h);
     }
 
     private void n(int i10) {
         float f10;
-        if (this.f13102e != i10) {
-            this.f13102e = i10;
+        if (this.f12070e != i10) {
+            this.f12070e = i10;
             if (i10 == 3) {
                 f10 = 0.2f;
             } else {
                 f10 = 1.0f;
             }
-            if (this.f13104g != f10) {
-                this.f13104g = f10;
-                b bVar = this.f13100c;
+            if (this.f12072g != f10) {
+                this.f12072g = f10;
+                b bVar = this.f12068c;
                 if (bVar != null) {
                     bVar.A(f10);
                 }
@@ -227,34 +227,34 @@ public final class d {
     }
 
     private boolean o(int i10) {
-        if (i10 == 1 || this.f13103f != 1) {
+        if (i10 == 1 || this.f12071f != 1) {
             return true;
         }
         return false;
     }
 
     private boolean q() {
-        AudioAttributes audioAttributes = this.f13101d;
-        if (audioAttributes != null && audioAttributes.f12829d == 1) {
+        AudioAttributes audioAttributes = this.f12069d;
+        if (audioAttributes != null && audioAttributes.f11797d == 1) {
             return true;
         }
         return false;
     }
 
     public float g() {
-        return this.f13104g;
+        return this.f12072g;
     }
 
     public void i() {
-        this.f13100c = null;
+        this.f12068c = null;
         b();
     }
 
     public void m(AudioAttributes audioAttributes) {
-        if (!ne.w0.c(this.f13101d, audioAttributes)) {
-            this.f13101d = audioAttributes;
+        if (!ne.w0.c(this.f12069d, audioAttributes)) {
+            this.f12069d = audioAttributes;
             int e10 = e(audioAttributes);
-            this.f13103f = e10;
+            this.f12071f = e10;
             boolean z10 = true;
             if (e10 != 1 && e10 != 0) {
                 z10 = false;

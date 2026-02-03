@@ -1,34 +1,33 @@
 package js;
 
-import js.w;
-import ms.f0;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
+import kotlin.jvm.functions.Function2;
+import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.Job;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface g extends w, v {
-
-    /* renamed from: g  reason: collision with root package name */
-    public static final b f32264g = b.f32265a;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public static boolean a(g gVar, Object obj) {
-            return w.a.b(gVar, obj);
-        }
+public abstract class g {
+    public static final g0 a(CoroutineScope coroutineScope, CoroutineContext coroutineContext, c0 c0Var, Function2 function2) {
+        return i.a(coroutineScope, coroutineContext, c0Var, function2);
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class b {
+    public static final Job c(CoroutineScope coroutineScope, CoroutineContext coroutineContext, c0 c0Var, Function2 function2) {
+        return i.c(coroutineScope, coroutineContext, c0Var, function2);
+    }
 
-        /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ b f32265a = new b();
+    public static /* synthetic */ Job d(CoroutineScope coroutineScope, CoroutineContext coroutineContext, c0 c0Var, Function2 function2, int i10, Object obj) {
+        return i.d(coroutineScope, coroutineContext, c0Var, function2, i10, obj);
+    }
 
-        /* renamed from: b  reason: collision with root package name */
-        private static final int f32266b = f0.b("kotlinx.coroutines.channels.defaultBuffer", 64, 1, 2147483646);
+    public static final Object e(CoroutineContext coroutineContext, Function2 function2) {
+        return h.a(coroutineContext, function2);
+    }
 
-        private b() {
-        }
+    public static /* synthetic */ Object f(CoroutineContext coroutineContext, Function2 function2, int i10, Object obj) {
+        return h.b(coroutineContext, function2, i10, obj);
+    }
 
-        public final int a() {
-            return f32266b;
-        }
+    public static final Object g(CoroutineContext coroutineContext, Function2 function2, Continuation continuation) {
+        return i.e(coroutineContext, function2, continuation);
     }
 }

@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = require;
     var0 = undefined;
     var1 = var1.bind(var0)(var3);
-    var1 = var1.WorkletsModule;
-    var2.WorkletsModule = var1;
+    var1 = var1.ReanimatedModule;
+    var2.ReanimatedModule = var1;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, [3730]);

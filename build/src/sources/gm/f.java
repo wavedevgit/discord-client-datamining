@@ -15,14 +15,14 @@ public abstract class f {
         Intrinsics.checkNotNullParameter(reactContext, "<this>");
         Activity currentActivity = reactContext.getCurrentActivity();
         if (currentActivity != null && (window = currentActivity.getWindow()) != null && (decorView = window.getDecorView()) != null && (rootView = decorView.getRootView()) != null) {
-            return (ViewGroup) rootView.findViewById(f.f.f23357d);
+            return (ViewGroup) rootView.findViewById(f.f.f22949d);
         }
         return null;
     }
 
     public static final ViewGroup b(ReactContext reactContext) {
         Intrinsics.checkNotNullParameter(reactContext, "<this>");
-        km.a aVar = km.a.f33029a;
+        km.a aVar = km.a.f32427a;
         Activity currentActivity = reactContext.getCurrentActivity();
         km.a.c(aVar, "ReactContext", "contentWithLogging: Current activity: " + currentActivity, null, 4, null);
         Activity currentActivity2 = reactContext.getCurrentActivity();
@@ -40,7 +40,7 @@ public abstract class f {
             km.a.c(aVar, "ReactContext", "contentWithLogging: Root view is null.", null, 4, null);
             return null;
         }
-        ViewGroup viewGroup = (ViewGroup) rootView.findViewById(f.f.f23357d);
+        ViewGroup viewGroup = (ViewGroup) rootView.findViewById(f.f.f22949d);
         if (viewGroup == null) {
             km.a.c(aVar, "ReactContext", "contentWithLogging: Can't find action bar root", null, 4, null);
             if (((ViewGroup) rootView.findViewById(16908290)) != null) {

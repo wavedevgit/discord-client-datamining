@@ -5,25 +5,25 @@ import java.util.Arrays;
 public final class a implements Cloneable {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final int[] f27070i = new int[0];
+    private static final int[] f26283i = new int[0];
 
     /* renamed from: d  reason: collision with root package name */
-    private int[] f27071d;
+    private int[] f26284d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f27072e;
+    private int f26285e;
 
     public a() {
-        this.f27072e = 0;
-        this.f27071d = f27070i;
+        this.f26285e = 0;
+        this.f26284d = f26283i;
     }
 
     private void f(int i10) {
-        if (i10 > this.f27071d.length * 32) {
+        if (i10 > this.f26284d.length * 32) {
             int[] p10 = p((int) Math.ceil(i10 / 0.75f));
-            int[] iArr = this.f27071d;
+            int[] iArr = this.f26284d;
             System.arraycopy(iArr, 0, p10, 0, iArr.length);
-            this.f27071d = p10;
+            this.f26284d = p10;
         }
     }
 
@@ -32,19 +32,19 @@ public final class a implements Cloneable {
     }
 
     public void a(boolean z10) {
-        f(this.f27072e + 1);
+        f(this.f26285e + 1);
         if (z10) {
-            int[] iArr = this.f27071d;
-            int i10 = this.f27072e;
+            int[] iArr = this.f26284d;
+            int i10 = this.f26285e;
             int i11 = i10 / 32;
             iArr[i11] = (1 << (i10 & 31)) | iArr[i11];
         }
-        this.f27072e++;
+        this.f26285e++;
     }
 
     public void b(a aVar) {
-        int i10 = aVar.f27072e;
-        f(this.f27072e + i10);
+        int i10 = aVar.f26285e;
+        f(this.f26285e + i10);
         for (int i11 = 0; i11 < i10; i11++) {
             a(aVar.g(i11));
         }
@@ -52,32 +52,32 @@ public final class a implements Cloneable {
 
     public void c(int i10, int i11) {
         if (i11 >= 0 && i11 <= 32) {
-            int i12 = this.f27072e;
+            int i12 = this.f26285e;
             f(i12 + i11);
             for (int i13 = i11 - 1; i13 >= 0; i13--) {
                 if (((1 << i13) & i10) != 0) {
-                    int[] iArr = this.f27071d;
+                    int[] iArr = this.f26284d;
                     int i14 = i12 / 32;
                     iArr[i14] = iArr[i14] | (1 << (i12 & 31));
                 }
                 i12++;
             }
-            this.f27072e = i12;
+            this.f26285e = i12;
             return;
         }
         throw new IllegalArgumentException("Num bits must be between 0 and 32");
     }
 
     public void d() {
-        int length = this.f27071d.length;
+        int length = this.f26284d.length;
         for (int i10 = 0; i10 < length; i10++) {
-            this.f27071d[i10] = 0;
+            this.f26284d[i10] = 0;
         }
     }
 
     /* renamed from: e */
     public a clone() {
-        return new a((int[]) this.f27071d.clone(), this.f27072e);
+        return new a((int[]) this.f26284d.clone(), this.f26285e);
     }
 
     public boolean equals(Object obj) {
@@ -85,74 +85,74 @@ public final class a implements Cloneable {
             return false;
         }
         a aVar = (a) obj;
-        if (this.f27072e != aVar.f27072e || !Arrays.equals(this.f27071d, aVar.f27071d)) {
+        if (this.f26285e != aVar.f26285e || !Arrays.equals(this.f26284d, aVar.f26284d)) {
             return false;
         }
         return true;
     }
 
     public boolean g(int i10) {
-        if (((1 << (i10 & 31)) & this.f27071d[i10 / 32]) != 0) {
+        if (((1 << (i10 & 31)) & this.f26284d[i10 / 32]) != 0) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (this.f27072e * 31) + Arrays.hashCode(this.f27071d);
+        return (this.f26285e * 31) + Arrays.hashCode(this.f26284d);
     }
 
     public int[] i() {
-        return this.f27071d;
+        return this.f26284d;
     }
 
     public int j(int i10) {
-        int i11 = this.f27072e;
+        int i11 = this.f26285e;
         if (i10 >= i11) {
             return i11;
         }
         int i12 = i10 / 32;
-        int i13 = (-(1 << (i10 & 31))) & this.f27071d[i12];
+        int i13 = (-(1 << (i10 & 31))) & this.f26284d[i12];
         while (i13 == 0) {
             i12++;
-            int[] iArr = this.f27071d;
+            int[] iArr = this.f26284d;
             if (i12 == iArr.length) {
-                return this.f27072e;
+                return this.f26285e;
             }
             i13 = iArr[i12];
         }
-        return Math.min((i12 * 32) + Integer.numberOfTrailingZeros(i13), this.f27072e);
+        return Math.min((i12 * 32) + Integer.numberOfTrailingZeros(i13), this.f26285e);
     }
 
     public int k(int i10) {
-        int i11 = this.f27072e;
+        int i11 = this.f26285e;
         if (i10 >= i11) {
             return i11;
         }
         int i12 = i10 / 32;
-        int i13 = (-(1 << (i10 & 31))) & (~this.f27071d[i12]);
+        int i13 = (-(1 << (i10 & 31))) & (~this.f26284d[i12]);
         while (i13 == 0) {
             i12++;
-            int[] iArr = this.f27071d;
+            int[] iArr = this.f26284d;
             if (i12 == iArr.length) {
-                return this.f27072e;
+                return this.f26285e;
             }
             i13 = ~iArr[i12];
         }
-        return Math.min((i12 * 32) + Integer.numberOfTrailingZeros(i13), this.f27072e);
+        return Math.min((i12 * 32) + Integer.numberOfTrailingZeros(i13), this.f26285e);
     }
 
     public int l() {
-        return this.f27072e;
+        return this.f26285e;
     }
 
     public int m() {
-        return (this.f27072e + 7) / 8;
+        return (this.f26285e + 7) / 8;
     }
 
     public boolean o(int i10, int i11, boolean z10) {
         int i12;
-        if (i11 >= i10 && i10 >= 0 && i11 <= this.f27072e) {
+        if (i11 >= i10 && i10 >= 0 && i11 <= this.f26285e) {
             if (i11 == i10) {
                 return true;
             }
@@ -170,7 +170,7 @@ public final class a implements Cloneable {
                     i17 = 31 & i13;
                 }
                 int i18 = (2 << i17) - (1 << i12);
-                int i19 = this.f27071d[i16] & i18;
+                int i19 = this.f26284d[i16] & i18;
                 if (!z10) {
                     i18 = 0;
                 }
@@ -184,13 +184,13 @@ public final class a implements Cloneable {
     }
 
     public void q() {
-        int[] iArr = new int[this.f27071d.length];
-        int i10 = (this.f27072e - 1) / 32;
+        int[] iArr = new int[this.f26284d.length];
+        int i10 = (this.f26285e - 1) / 32;
         int i11 = i10 + 1;
         for (int i12 = 0; i12 < i11; i12++) {
-            iArr[i10 - i12] = Integer.reverse(this.f27071d[i12]);
+            iArr[i10 - i12] = Integer.reverse(this.f26284d[i12]);
         }
-        int i13 = this.f27072e;
+        int i13 = this.f26285e;
         int i14 = i11 * 32;
         if (i13 != i14) {
             int i15 = i14 - i13;
@@ -202,17 +202,17 @@ public final class a implements Cloneable {
             }
             iArr[i10] = i16;
         }
-        this.f27071d = iArr;
+        this.f26284d = iArr;
     }
 
     public void r(int i10) {
-        int[] iArr = this.f27071d;
+        int[] iArr = this.f26284d;
         int i11 = i10 / 32;
         iArr[i11] = (1 << (i10 & 31)) | iArr[i11];
     }
 
     public void s(int i10, int i11) {
-        this.f27071d[i10 / 32] = i11;
+        this.f26284d[i10 / 32] = i11;
     }
 
     public void t(int i10, byte[] bArr, int i11, int i12) {
@@ -230,9 +230,9 @@ public final class a implements Cloneable {
 
     public String toString() {
         char c10;
-        int i10 = this.f27072e;
+        int i10 = this.f26285e;
         StringBuilder sb2 = new StringBuilder(i10 + (i10 / 8) + 1);
-        for (int i11 = 0; i11 < this.f27072e; i11++) {
+        for (int i11 = 0; i11 < this.f26285e; i11++) {
             if ((i11 & 7) == 0) {
                 sb2.append(' ');
             }
@@ -247,12 +247,12 @@ public final class a implements Cloneable {
     }
 
     public void u(a aVar) {
-        if (this.f27072e == aVar.f27072e) {
+        if (this.f26285e == aVar.f26285e) {
             int i10 = 0;
             while (true) {
-                int[] iArr = this.f27071d;
+                int[] iArr = this.f26284d;
                 if (i10 < iArr.length) {
-                    iArr[i10] = iArr[i10] ^ aVar.f27071d[i10];
+                    iArr[i10] = iArr[i10] ^ aVar.f26284d[i10];
                     i10++;
                 } else {
                     return;
@@ -264,12 +264,12 @@ public final class a implements Cloneable {
     }
 
     public a(int i10) {
-        this.f27072e = i10;
-        this.f27071d = p(i10);
+        this.f26285e = i10;
+        this.f26284d = p(i10);
     }
 
     a(int[] iArr, int i10) {
-        this.f27071d = iArr;
-        this.f27072e = i10;
+        this.f26284d = iArr;
+        this.f26285e = i10;
     }
 }

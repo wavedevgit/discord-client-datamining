@@ -1,56 +1,50 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
-    var1 = function(arg0, arg1, arg2, arg3) { // Environment: var0
-        _fun94345: for (var _fun94345_ip = 0;;) switch (_fun94345_ip) {
+    var1 = function(arg0) { // Environment: var0
+        _fun94384: for (var _fun94384_ip = 0;;) switch (_fun94384_ip) {
             case 0:
-                var2 = arg1;
-                var3 = arg2;
-                var5 = this;
-                var4 = var5.stopCallback;
-                var1 = var2.target;
-                if (var1) {
-                    _fun94345_ip = 30;
-                    continue _fun94345
+                var1 = arg0;
+                var0 = new Array(0);
+                var2 = var1.shiftKey;
+                if (!var2) {
+                    _fun94384_ip = 30;
+                    continue _fun94384
                 }
-            case 24:
-                var1 = var2.srcElement;
+            case 16:
+                var3 = var0.push;
+                var2 = 'shift';
+                var2 = var3.bind(var0)(var2);
             case 30:
-                var6 = arg3;
-                var10 = var5;
-                var9 = var2;
-                var8 = var1;
-                var7 = var3;
-                var0 = var10[var4](var9, var8, var7, var6, var5);
-                if (var0) {
-                    _fun94345_ip = 113;
-                    continue _fun94345
+                var2 = var1.altKey;
+                if (!var2) {
+                    _fun94384_ip = 53;
+                    continue _fun94384
                 }
-            case 52:
-                var0 = arg0;
-                var1 = undefined;
-                var3 = var0.bind(var1)(var2, var3);
-                var0 = false;
-                if (!(var0 === var3)) {
-                    _fun94345_ip = 113;
-                    continue _fun94345
+            case 39:
+                var3 = var0.push;
+                var2 = 'alt';
+                var2 = var3.bind(var0)(var2);
+            case 53:
+                var2 = var1.ctrlKey;
+                if (!var2) {
+                    _fun94384_ip = 76;
+                    continue _fun94384
                 }
-            case 69:
-                var3 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var0 = 0;
-                var0 = var4[var0];
-                var0 = var3.bind(var1)(var0);
-                var0 = var0.bind(var1)(var2);
-                var0 = 1;
-                var0 = var4[var0];
-                var0 = var3.bind(var1)(var0);
-                var0 = var0.bind(var1)(var2);
-            case 113:
-                var0 = undefined;
+            case 62:
+                var3 = var0.push;
+                var2 = 'ctrl';
+                var2 = var3.bind(var0)(var2);
+            case 76:
+                var1 = var1.metaKey;
+                if (!var1) {
+                    _fun94384_ip = 99;
+                    continue _fun94384
+                }
+            case 85:
+                var2 = var0.push;
+                var1 = 'meta';
+                var1 = var2.bind(var0)(var1);
+            case 99:
                 return var0;
         }
     };
@@ -58,4 +52,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12367, 12368]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

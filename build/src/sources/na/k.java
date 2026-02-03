@@ -8,10 +8,10 @@ import java.util.concurrent.Executors;
 public class k implements o {
 
     /* renamed from: a  reason: collision with root package name */
-    private l f39815a;
+    private l f39854a;
 
     public k(l lVar) {
-        this.f39815a = lVar;
+        this.f39854a = lVar;
     }
 
     private static j8.f b(DiskCacheConfig diskCacheConfig, j8.e eVar) {
@@ -24,6 +24,6 @@ public class k implements o {
 
     @Override // na.o
     public j8.j a(DiskCacheConfig diskCacheConfig) {
-        return b(diskCacheConfig, this.f39815a.a(diskCacheConfig));
+        return b(diskCacheConfig, this.f39854a.a(diskCacheConfig));
     }
 }

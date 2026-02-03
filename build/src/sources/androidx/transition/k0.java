@@ -5,7 +5,7 @@ import android.view.View;
 abstract class k0 extends j0 {
 
     /* renamed from: f  reason: collision with root package name */
-    private static boolean f5316f = true;
+    private static boolean f5285f = true;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static class a {
@@ -16,11 +16,11 @@ abstract class k0 extends j0 {
 
     @Override // androidx.transition.i0
     public void d(View view, int i10, int i11, int i12, int i13) {
-        if (f5316f) {
+        if (f5285f) {
             try {
                 a.a(view, i10, i11, i12, i13);
             } catch (NoSuchMethodError unused) {
-                f5316f = false;
+                f5285f = false;
             }
         }
     }

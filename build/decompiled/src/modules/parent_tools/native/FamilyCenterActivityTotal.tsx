@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/parent_tools/native/FamilyCenterActivityTotal.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun82317: for (var _fun82317_ip = 0;;) switch (_fun82317_ip) {
+        _fun82427: for (var _fun82427_ip = 0;;) switch (_fun82427_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.displayType;
@@ -93,8 +93,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0 > var10;
                 var13 = 'text-muted';
                 if (!var0) {
-                    _fun82317_ip = 94;
-                    continue _fun82317
+                    _fun82427_ip = 94;
+                    continue _fun82427
                 }
             case 88:
                 var13 = 'text-brand';
@@ -112,8 +112,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var12 == var1;
                 var8 = undefined;
                 if (var0) {
-                    _fun82317_ip = 155;
-                    continue _fun82317
+                    _fun82427_ip = 155;
+                    continue _fun82427
                 }
             case 145:
                 var0 = var1.tooltipHeader;
@@ -138,8 +138,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var12 != var11;
                 var10 = 0;
                 if (!var12) {
-                    _fun82317_ip = 231;
-                    continue _fun82317
+                    _fun82427_ip = 231;
+                    continue _fun82427
                 }
             case 228:
                 var10 = var11;
@@ -167,4 +167,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 10507, 4654, 3932, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 10526, 4658, 3941, 2]);

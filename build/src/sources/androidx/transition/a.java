@@ -2,11 +2,11 @@ package androidx.transition;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public class a extends a0 {
     public a() {
-        K0();
+        J0();
     }
 
-    private void K0() {
-        H0(1);
-        w0(new e(2)).w0(new b()).w0(new e(1));
+    private void J0() {
+        F0(1);
+        v0(new e(2)).v0(new b()).v0(new e(1));
     }
 }

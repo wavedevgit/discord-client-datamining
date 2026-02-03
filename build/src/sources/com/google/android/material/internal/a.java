@@ -22,10 +22,10 @@ import lh.a;
 public final class a {
 
     /* renamed from: t0  reason: collision with root package name */
-    private static final boolean f15755t0 = false;
+    private static final boolean f14723t0 = false;
 
     /* renamed from: u0  reason: collision with root package name */
-    private static final Paint f15756u0 = null;
+    private static final Paint f14724u0 = null;
     private Typeface A;
     private Typeface B;
     private Typeface C;
@@ -52,189 +52,189 @@ public final class a {
     private float Z;
 
     /* renamed from: a  reason: collision with root package name */
-    private final View f15757a;
+    private final View f14725a;
 
     /* renamed from: a0  reason: collision with root package name */
-    private float f15758a0;
+    private float f14726a0;
 
     /* renamed from: b  reason: collision with root package name */
-    private float f15759b;
+    private float f14727b;
 
     /* renamed from: b0  reason: collision with root package name */
-    private float f15760b0;
+    private float f14728b0;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f15761c;
+    private boolean f14729c;
 
     /* renamed from: c0  reason: collision with root package name */
-    private ColorStateList f15762c0;
+    private ColorStateList f14730c0;
 
     /* renamed from: d  reason: collision with root package name */
-    private float f15763d;
+    private float f14731d;
 
     /* renamed from: d0  reason: collision with root package name */
-    private float f15764d0;
+    private float f14732d0;
 
     /* renamed from: e  reason: collision with root package name */
-    private float f15765e;
+    private float f14733e;
 
     /* renamed from: e0  reason: collision with root package name */
-    private float f15766e0;
+    private float f14734e0;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f15767f;
+    private int f14735f;
 
     /* renamed from: f0  reason: collision with root package name */
-    private float f15768f0;
+    private float f14736f0;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Rect f15769g;
+    private final Rect f14737g;
 
     /* renamed from: g0  reason: collision with root package name */
-    private ColorStateList f15770g0;
+    private ColorStateList f14738g0;
 
     /* renamed from: h  reason: collision with root package name */
-    private final Rect f15771h;
+    private final Rect f14739h;
 
     /* renamed from: h0  reason: collision with root package name */
-    private float f15772h0;
+    private float f14740h0;
 
     /* renamed from: i  reason: collision with root package name */
-    private final RectF f15773i;
+    private final RectF f14741i;
 
     /* renamed from: i0  reason: collision with root package name */
-    private float f15774i0;
+    private float f14742i0;
 
     /* renamed from: j0  reason: collision with root package name */
-    private float f15776j0;
+    private float f14744j0;
 
     /* renamed from: k0  reason: collision with root package name */
-    private StaticLayout f15778k0;
+    private StaticLayout f14746k0;
 
     /* renamed from: l0  reason: collision with root package name */
-    private float f15780l0;
+    private float f14748l0;
 
     /* renamed from: m0  reason: collision with root package name */
-    private float f15782m0;
+    private float f14750m0;
 
     /* renamed from: n  reason: collision with root package name */
-    private ColorStateList f15783n;
+    private ColorStateList f14751n;
 
     /* renamed from: n0  reason: collision with root package name */
-    private float f15784n0;
+    private float f14752n0;
 
     /* renamed from: o  reason: collision with root package name */
-    private ColorStateList f15785o;
+    private ColorStateList f14753o;
 
     /* renamed from: o0  reason: collision with root package name */
-    private CharSequence f15786o0;
+    private CharSequence f14754o0;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f15787p;
+    private int f14755p;
 
     /* renamed from: q  reason: collision with root package name */
-    private float f15789q;
+    private float f14757q;
 
     /* renamed from: r  reason: collision with root package name */
-    private float f15791r;
+    private float f14759r;
 
     /* renamed from: s  reason: collision with root package name */
-    private float f15793s;
+    private float f14761s;
 
     /* renamed from: t  reason: collision with root package name */
-    private float f15795t;
+    private float f14763t;
 
     /* renamed from: u  reason: collision with root package name */
-    private float f15796u;
+    private float f14764u;
 
     /* renamed from: v  reason: collision with root package name */
-    private float f15797v;
+    private float f14765v;
 
     /* renamed from: w  reason: collision with root package name */
-    private Typeface f15798w;
+    private Typeface f14766w;
 
     /* renamed from: x  reason: collision with root package name */
-    private Typeface f15799x;
+    private Typeface f14767x;
 
     /* renamed from: y  reason: collision with root package name */
-    private Typeface f15800y;
+    private Typeface f14768y;
 
     /* renamed from: z  reason: collision with root package name */
-    private Typeface f15801z;
+    private Typeface f14769z;
 
     /* renamed from: j  reason: collision with root package name */
-    private int f15775j = 16;
+    private int f14743j = 16;
 
     /* renamed from: k  reason: collision with root package name */
-    private int f15777k = 16;
+    private int f14745k = 16;
 
     /* renamed from: l  reason: collision with root package name */
-    private float f15779l = 15.0f;
+    private float f14747l = 15.0f;
 
     /* renamed from: m  reason: collision with root package name */
-    private float f15781m = 15.0f;
+    private float f14749m = 15.0f;
     private TextUtils.TruncateAt F = TextUtils.TruncateAt.END;
     private boolean J = true;
 
     /* renamed from: p0  reason: collision with root package name */
-    private int f15788p0 = 1;
+    private int f14756p0 = 1;
 
     /* renamed from: q0  reason: collision with root package name */
-    private float f15790q0 = 0.0f;
+    private float f14758q0 = 0.0f;
 
     /* renamed from: r0  reason: collision with root package name */
-    private float f15792r0 = 1.0f;
+    private float f14760r0 = 1.0f;
 
     /* renamed from: s0  reason: collision with root package name */
-    private int f15794s0 = h.f15812n;
+    private int f14762s0 = h.f14780n;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: com.google.android.material.internal.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public class C0189a implements a.InterfaceC0485a {
-        C0189a() {
+    public class C0170a implements a.InterfaceC0469a {
+        C0170a() {
         }
 
-        @Override // lh.a.InterfaceC0485a
+        @Override // lh.a.InterfaceC0469a
         public void a(Typeface typeface) {
             a.this.T(typeface);
         }
     }
 
     public a(View view) {
-        this.f15757a = view;
+        this.f14725a = view;
         TextPaint textPaint = new TextPaint(129);
         this.V = textPaint;
         this.W = new TextPaint(textPaint);
-        this.f15771h = new Rect();
-        this.f15769g = new Rect();
-        this.f15773i = new RectF();
-        this.f15765e = e();
+        this.f14739h = new Rect();
+        this.f14737g = new Rect();
+        this.f14741i = new RectF();
+        this.f14733e = e();
         H(view.getContext().getResources().getConfiguration());
     }
 
     private void A(TextPaint textPaint) {
-        textPaint.setTextSize(this.f15779l);
-        textPaint.setTypeface(this.f15801z);
-        textPaint.setLetterSpacing(this.f15774i0);
+        textPaint.setTextSize(this.f14747l);
+        textPaint.setTypeface(this.f14769z);
+        textPaint.setLetterSpacing(this.f14742i0);
     }
 
     private void B(float f10) {
         Rect rect;
-        if (this.f15761c) {
-            RectF rectF = this.f15773i;
-            if (f10 < this.f15765e) {
-                rect = this.f15769g;
+        if (this.f14729c) {
+            RectF rectF = this.f14741i;
+            if (f10 < this.f14733e) {
+                rect = this.f14737g;
             } else {
-                rect = this.f15771h;
+                rect = this.f14739h;
             }
             rectF.set(rect);
             return;
         }
-        this.f15773i.left = G(this.f15769g.left, this.f15771h.left, f10, this.X);
-        this.f15773i.top = G(this.f15789q, this.f15791r, f10, this.X);
-        this.f15773i.right = G(this.f15769g.right, this.f15771h.right, f10, this.X);
-        this.f15773i.bottom = G(this.f15769g.bottom, this.f15771h.bottom, f10, this.X);
+        this.f14741i.left = G(this.f14737g.left, this.f14739h.left, f10, this.X);
+        this.f14741i.top = G(this.f14757q, this.f14759r, f10, this.X);
+        this.f14741i.right = G(this.f14737g.right, this.f14739h.right, f10, this.X);
+        this.f14741i.bottom = G(this.f14737g.bottom, this.f14739h.bottom, f10, this.X);
     }
 
     private static boolean C(float f10, float f11) {
@@ -245,7 +245,7 @@ public final class a {
     }
 
     private boolean D() {
-        if (h0.z(this.f15757a) == 1) {
+        if (h0.z(this.f14725a) == 1) {
             return true;
         }
         return false;
@@ -280,8 +280,8 @@ public final class a {
     }
 
     private void Q(float f10) {
-        this.f15782m0 = f10;
-        h0.e0(this.f15757a);
+        this.f14750m0 = f10;
+        h0.e0(this.f14725a);
     }
 
     private boolean U(Typeface typeface) {
@@ -289,22 +289,22 @@ public final class a {
         if (aVar != null) {
             aVar.c();
         }
-        if (this.f15800y != typeface) {
-            this.f15800y = typeface;
-            Typeface b10 = lh.h.b(this.f15757a.getContext().getResources().getConfiguration(), typeface);
-            this.f15799x = b10;
+        if (this.f14768y != typeface) {
+            this.f14768y = typeface;
+            Typeface b10 = lh.h.b(this.f14725a.getContext().getResources().getConfiguration(), typeface);
+            this.f14767x = b10;
             if (b10 == null) {
-                b10 = this.f15800y;
+                b10 = this.f14768y;
             }
-            this.f15798w = b10;
+            this.f14766w = b10;
             return true;
         }
         return false;
     }
 
     private void Y(float f10) {
-        this.f15784n0 = f10;
-        h0.e0(this.f15757a);
+        this.f14752n0 = f10;
+        h0.e0(this.f14725a);
     }
 
     private static int a(int i10, int i11, float f10) {
@@ -318,46 +318,46 @@ public final class a {
         StaticLayout staticLayout;
         i(1.0f, z10);
         CharSequence charSequence = this.H;
-        if (charSequence != null && (staticLayout = this.f15778k0) != null) {
-            this.f15786o0 = TextUtils.ellipsize(charSequence, this.V, staticLayout.getWidth(), this.F);
+        if (charSequence != null && (staticLayout = this.f14746k0) != null) {
+            this.f14754o0 = TextUtils.ellipsize(charSequence, this.V, staticLayout.getWidth(), this.F);
         }
-        CharSequence charSequence2 = this.f15786o0;
+        CharSequence charSequence2 = this.f14754o0;
         float f11 = 0.0f;
         if (charSequence2 != null) {
-            this.f15780l0 = I(this.V, charSequence2);
+            this.f14748l0 = I(this.V, charSequence2);
         } else {
-            this.f15780l0 = 0.0f;
+            this.f14748l0 = 0.0f;
         }
-        int b10 = androidx.core.view.j.b(this.f15777k, this.I ? 1 : 0);
+        int b10 = androidx.core.view.j.b(this.f14745k, this.I ? 1 : 0);
         int i11 = b10 & 112;
         if (i11 != 48) {
             if (i11 != 80) {
-                this.f15791r = this.f15771h.centerY() - ((this.V.descent() - this.V.ascent()) / 2.0f);
+                this.f14759r = this.f14739h.centerY() - ((this.V.descent() - this.V.ascent()) / 2.0f);
             } else {
-                this.f15791r = this.f15771h.bottom + this.V.ascent();
+                this.f14759r = this.f14739h.bottom + this.V.ascent();
             }
         } else {
-            this.f15791r = this.f15771h.top;
+            this.f14759r = this.f14739h.top;
         }
         int i12 = b10 & 8388615;
         if (i12 != 1) {
             if (i12 != 5) {
-                this.f15795t = this.f15771h.left;
+                this.f14763t = this.f14739h.left;
             } else {
-                this.f15795t = this.f15771h.right - this.f15780l0;
+                this.f14763t = this.f14739h.right - this.f14748l0;
             }
         } else {
-            this.f15795t = this.f15771h.centerX() - (this.f15780l0 / 2.0f);
+            this.f14763t = this.f14739h.centerX() - (this.f14748l0 / 2.0f);
         }
         i(0.0f, z10);
-        StaticLayout staticLayout2 = this.f15778k0;
+        StaticLayout staticLayout2 = this.f14746k0;
         if (staticLayout2 != null) {
             f10 = staticLayout2.getHeight();
         } else {
             f10 = 0.0f;
         }
-        StaticLayout staticLayout3 = this.f15778k0;
-        if (staticLayout3 != null && this.f15788p0 > 1) {
+        StaticLayout staticLayout3 = this.f14746k0;
+        if (staticLayout3 != null && this.f14756p0 > 1) {
             f11 = staticLayout3.getWidth();
         } else {
             CharSequence charSequence3 = this.H;
@@ -365,36 +365,36 @@ public final class a {
                 f11 = I(this.V, charSequence3);
             }
         }
-        StaticLayout staticLayout4 = this.f15778k0;
+        StaticLayout staticLayout4 = this.f14746k0;
         if (staticLayout4 != null) {
             i10 = staticLayout4.getLineCount();
         } else {
             i10 = 0;
         }
-        this.f15787p = i10;
-        int b11 = androidx.core.view.j.b(this.f15775j, this.I ? 1 : 0);
+        this.f14755p = i10;
+        int b11 = androidx.core.view.j.b(this.f14743j, this.I ? 1 : 0);
         int i13 = b11 & 112;
         if (i13 != 48) {
             if (i13 != 80) {
-                this.f15789q = this.f15769g.centerY() - (f10 / 2.0f);
+                this.f14757q = this.f14737g.centerY() - (f10 / 2.0f);
             } else {
-                this.f15789q = (this.f15769g.bottom - f10) + this.V.descent();
+                this.f14757q = (this.f14737g.bottom - f10) + this.V.descent();
             }
         } else {
-            this.f15789q = this.f15769g.top;
+            this.f14757q = this.f14737g.top;
         }
         int i14 = b11 & 8388615;
         if (i14 != 1) {
             if (i14 != 5) {
-                this.f15793s = this.f15769g.left;
+                this.f14761s = this.f14737g.left;
             } else {
-                this.f15793s = this.f15769g.right - f11;
+                this.f14761s = this.f14737g.right - f11;
             }
         } else {
-            this.f15793s = this.f15769g.centerX() - (f11 / 2.0f);
+            this.f14761s = this.f14737g.centerX() - (f11 / 2.0f);
         }
         j();
-        d0(this.f15759b);
+        d0(this.f14727b);
     }
 
     private boolean b0(Typeface typeface) {
@@ -404,25 +404,25 @@ public final class a {
         }
         if (this.B != typeface) {
             this.B = typeface;
-            Typeface b10 = lh.h.b(this.f15757a.getContext().getResources().getConfiguration(), typeface);
+            Typeface b10 = lh.h.b(this.f14725a.getContext().getResources().getConfiguration(), typeface);
             this.A = b10;
             if (b10 == null) {
                 b10 = this.B;
             }
-            this.f15801z = b10;
+            this.f14769z = b10;
             return true;
         }
         return false;
     }
 
     private void c() {
-        g(this.f15759b);
+        g(this.f14727b);
     }
 
     private float d(float f10) {
-        float f11 = this.f15765e;
+        float f11 = this.f14733e;
         if (f10 <= f11) {
-            return zg.a.b(1.0f, 0.0f, this.f15763d, f11, f10);
+            return zg.a.b(1.0f, 0.0f, this.f14731d, f11, f10);
         }
         return zg.a.b(0.0f, 1.0f, f11, 1.0f, f10);
     }
@@ -430,7 +430,7 @@ public final class a {
     private void d0(float f10) {
         boolean z10;
         h(f10);
-        if (f15755t0 && this.N != 1.0f) {
+        if (f14723t0 && this.N != 1.0f) {
             z10 = true;
         } else {
             z10 = false;
@@ -439,11 +439,11 @@ public final class a {
         if (z10) {
             n();
         }
-        h0.e0(this.f15757a);
+        h0.e0(this.f14725a);
     }
 
     private float e() {
-        float f10 = this.f15763d;
+        float f10 = this.f14731d;
         return f10 + ((1.0f - f10) * 0.5f);
     }
 
@@ -458,54 +458,54 @@ public final class a {
     private void g(float f10) {
         float f11;
         B(f10);
-        if (this.f15761c) {
-            if (f10 < this.f15765e) {
-                this.f15796u = this.f15793s;
-                this.f15797v = this.f15789q;
+        if (this.f14729c) {
+            if (f10 < this.f14733e) {
+                this.f14764u = this.f14761s;
+                this.f14765v = this.f14757q;
                 d0(0.0f);
                 f11 = 0.0f;
             } else {
-                this.f15796u = this.f15795t;
-                this.f15797v = this.f15791r - Math.max(0, this.f15767f);
+                this.f14764u = this.f14763t;
+                this.f14765v = this.f14759r - Math.max(0, this.f14735f);
                 d0(1.0f);
                 f11 = 1.0f;
             }
         } else {
-            this.f15796u = G(this.f15793s, this.f15795t, f10, this.X);
-            this.f15797v = G(this.f15789q, this.f15791r, f10, this.X);
+            this.f14764u = G(this.f14761s, this.f14763t, f10, this.X);
+            this.f14765v = G(this.f14757q, this.f14759r, f10, this.X);
             d0(f10);
             f11 = f10;
         }
-        TimeInterpolator timeInterpolator = zg.a.f55807b;
+        TimeInterpolator timeInterpolator = zg.a.f55945b;
         Q(1.0f - G(0.0f, 1.0f, 1.0f - f10, timeInterpolator));
         Y(G(1.0f, 0.0f, f10, timeInterpolator));
-        if (this.f15785o != this.f15783n) {
+        if (this.f14753o != this.f14751n) {
             this.V.setColor(a(v(), t(), f11));
         } else {
             this.V.setColor(t());
         }
         int i10 = Build.VERSION.SDK_INT;
-        float f12 = this.f15772h0;
-        float f13 = this.f15774i0;
+        float f12 = this.f14740h0;
+        float f13 = this.f14742i0;
         if (f12 != f13) {
             this.V.setLetterSpacing(G(f13, f12, f10, timeInterpolator));
         } else {
             this.V.setLetterSpacing(f12);
         }
-        this.P = G(this.f15764d0, this.Z, f10, null);
-        this.Q = G(this.f15766e0, this.f15758a0, f10, null);
-        this.R = G(this.f15768f0, this.f15760b0, f10, null);
-        int a10 = a(u(this.f15770g0), u(this.f15762c0), f10);
+        this.P = G(this.f14732d0, this.Z, f10, null);
+        this.Q = G(this.f14734e0, this.f14726a0, f10, null);
+        this.R = G(this.f14736f0, this.f14728b0, f10, null);
+        int a10 = a(u(this.f14738g0), u(this.f14730c0), f10);
         this.S = a10;
         this.V.setShadowLayer(this.P, this.Q, this.R, a10);
-        if (this.f15761c) {
+        if (this.f14729c) {
             this.V.setAlpha((int) (d(f10) * this.V.getAlpha()));
             if (i10 >= 31) {
                 TextPaint textPaint = this.V;
                 textPaint.setShadowLayer(this.P, this.Q, this.R, eh.a.a(this.S, textPaint.getAlpha()));
             }
         }
-        h0.e0(this.f15757a);
+        h0.e0(this.f14725a);
     }
 
     private void h(float f10) {
@@ -523,25 +523,25 @@ public final class a {
         boolean z14;
         boolean z15;
         if (this.G != null) {
-            float width = this.f15771h.width();
-            float width2 = this.f15769g.width();
+            float width = this.f14739h.width();
+            float width2 = this.f14737g.width();
             if (C(f10, 1.0f)) {
-                f11 = this.f15781m;
-                f12 = this.f15772h0;
+                f11 = this.f14749m;
+                f12 = this.f14740h0;
                 this.N = 1.0f;
-                typeface = this.f15798w;
+                typeface = this.f14766w;
             } else {
-                float f13 = this.f15779l;
-                float f14 = this.f15774i0;
-                Typeface typeface2 = this.f15801z;
+                float f13 = this.f14747l;
+                float f14 = this.f14742i0;
+                Typeface typeface2 = this.f14769z;
                 if (C(f10, 0.0f)) {
                     this.N = 1.0f;
                 } else {
-                    this.N = G(this.f15779l, this.f15781m, f10, this.Y) / this.f15779l;
+                    this.N = G(this.f14747l, this.f14749m, f10, this.Y) / this.f14747l;
                 }
-                float f15 = this.f15781m / this.f15779l;
+                float f15 = this.f14749m / this.f14747l;
                 float f16 = width2 * f15;
-                if (!z10 && !this.f15761c && f16 > width) {
+                if (!z10 && !this.f14729c && f16 > width) {
                     width = Math.min(width / f15, width2);
                 } else {
                     width = width2;
@@ -558,7 +558,7 @@ public final class a {
                 } else {
                     z11 = false;
                 }
-                if (this.f15776j0 != f12) {
+                if (this.f14744j0 != f12) {
                     z12 = true;
                 } else {
                     z12 = false;
@@ -568,7 +568,7 @@ public final class a {
                 } else {
                     z13 = false;
                 }
-                if (this.f15778k0 != null && width != staticLayout.getWidth()) {
+                if (this.f14746k0 != null && width != staticLayout.getWidth()) {
                     z14 = true;
                 } else {
                     z14 = false;
@@ -579,7 +579,7 @@ public final class a {
                     z15 = true;
                 }
                 this.O = f11;
-                this.f15776j0 = f12;
+                this.f14744j0 = f12;
                 this.C = typeface;
                 this.U = false;
                 TextPaint textPaint = this.V;
@@ -594,13 +594,13 @@ public final class a {
             }
             this.V.setTextSize(this.O);
             this.V.setTypeface(this.C);
-            this.V.setLetterSpacing(this.f15776j0);
+            this.V.setLetterSpacing(this.f14744j0);
             this.I = f(this.G);
             if (j0()) {
-                i10 = this.f15788p0;
+                i10 = this.f14756p0;
             }
             StaticLayout k10 = k(i10, width, this.I);
-            this.f15778k0 = k10;
+            this.f14746k0 = k10;
             this.H = k10.getText();
         }
     }
@@ -614,8 +614,8 @@ public final class a {
     }
 
     private boolean j0() {
-        if (this.f15788p0 > 1) {
-            if ((!this.I || this.f15761c) && !this.K) {
+        if (this.f14756p0 > 1) {
+            if ((!this.I || this.f14729c) && !this.K) {
                 return true;
             }
             return false;
@@ -630,54 +630,54 @@ public final class a {
         } else {
             y10 = y();
         }
-        return (StaticLayout) b2.e.g(h.b(this.G, this.V, (int) f10).d(this.F).g(z10).c(y10).f(false).i(i10).h(this.f15790q0, this.f15792r0).e(this.f15794s0).j(null).a());
+        return (StaticLayout) b2.e.g(h.b(this.G, this.V, (int) f10).d(this.F).g(z10).c(y10).f(false).i(i10).h(this.f14758q0, this.f14760r0).e(this.f14762s0).j(null).a());
     }
 
     private void m(Canvas canvas, float f10, float f11) {
         int alpha = this.V.getAlpha();
         canvas.translate(f10, f11);
-        if (!this.f15761c) {
-            this.V.setAlpha((int) (this.f15784n0 * alpha));
+        if (!this.f14729c) {
+            this.V.setAlpha((int) (this.f14752n0 * alpha));
             if (Build.VERSION.SDK_INT >= 31) {
                 TextPaint textPaint = this.V;
                 textPaint.setShadowLayer(this.P, this.Q, this.R, eh.a.a(this.S, textPaint.getAlpha()));
             }
-            this.f15778k0.draw(canvas);
+            this.f14746k0.draw(canvas);
         }
-        if (!this.f15761c) {
-            this.V.setAlpha((int) (this.f15782m0 * alpha));
+        if (!this.f14729c) {
+            this.V.setAlpha((int) (this.f14750m0 * alpha));
         }
         int i10 = Build.VERSION.SDK_INT;
         if (i10 >= 31) {
             TextPaint textPaint2 = this.V;
             textPaint2.setShadowLayer(this.P, this.Q, this.R, eh.a.a(this.S, textPaint2.getAlpha()));
         }
-        int lineBaseline = this.f15778k0.getLineBaseline(0);
-        CharSequence charSequence = this.f15786o0;
+        int lineBaseline = this.f14746k0.getLineBaseline(0);
+        CharSequence charSequence = this.f14754o0;
         float f12 = lineBaseline;
         canvas.drawText(charSequence, 0, charSequence.length(), 0.0f, f12, this.V);
         if (i10 >= 31) {
             this.V.setShadowLayer(this.P, this.Q, this.R, this.S);
         }
-        if (!this.f15761c) {
-            String trim = this.f15786o0.toString().trim();
+        if (!this.f14729c) {
+            String trim = this.f14754o0.toString().trim();
             if (trim.endsWith("…")) {
                 trim = trim.substring(0, trim.length() - 1);
             }
             String str = trim;
             this.V.setAlpha(alpha);
-            canvas.drawText(str, 0, Math.min(this.f15778k0.getLineEnd(0), str.length()), 0.0f, f12, (Paint) this.V);
+            canvas.drawText(str, 0, Math.min(this.f14746k0.getLineEnd(0), str.length()), 0.0f, f12, (Paint) this.V);
         }
     }
 
     private void n() {
-        if (this.L == null && !this.f15769g.isEmpty() && !TextUtils.isEmpty(this.H)) {
+        if (this.L == null && !this.f14737g.isEmpty() && !TextUtils.isEmpty(this.H)) {
             g(0.0f);
-            int width = this.f15778k0.getWidth();
-            int height = this.f15778k0.getHeight();
+            int width = this.f14746k0.getWidth();
+            int height = this.f14746k0.getHeight();
             if (width > 0 && height > 0) {
                 this.L = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
-                this.f15778k0.draw(new Canvas(this.L));
+                this.f14746k0.draw(new Canvas(this.L));
                 if (this.M == null) {
                     this.M = new Paint(3);
                 }
@@ -689,32 +689,32 @@ public final class a {
         if (i11 != 17 && (i11 & 7) != 1) {
             if ((i11 & 8388613) != 8388613 && (i11 & 5) != 5) {
                 if (this.I) {
-                    return this.f15771h.right - this.f15780l0;
+                    return this.f14739h.right - this.f14748l0;
                 }
-                return this.f15771h.left;
+                return this.f14739h.left;
             } else if (this.I) {
-                return this.f15771h.left;
+                return this.f14739h.left;
             } else {
-                return this.f15771h.right - this.f15780l0;
+                return this.f14739h.right - this.f14748l0;
             }
         }
-        return (i10 / 2.0f) - (this.f15780l0 / 2.0f);
+        return (i10 / 2.0f) - (this.f14748l0 / 2.0f);
     }
 
     private float s(RectF rectF, int i10, int i11) {
         if (i11 != 17 && (i11 & 7) != 1) {
             if ((i11 & 8388613) != 8388613 && (i11 & 5) != 5) {
                 if (this.I) {
-                    return this.f15771h.right;
+                    return this.f14739h.right;
                 }
-                return rectF.left + this.f15780l0;
+                return rectF.left + this.f14748l0;
             } else if (this.I) {
-                return rectF.left + this.f15780l0;
+                return rectF.left + this.f14748l0;
             } else {
-                return this.f15771h.right;
+                return this.f14739h.right;
             }
         }
-        return (i10 / 2.0f) + (this.f15780l0 / 2.0f);
+        return (i10 / 2.0f) + (this.f14748l0 / 2.0f);
     }
 
     private int u(ColorStateList colorStateList) {
@@ -729,11 +729,11 @@ public final class a {
     }
 
     private int v() {
-        return u(this.f15783n);
+        return u(this.f14751n);
     }
 
     private Layout.Alignment y() {
-        int b10 = androidx.core.view.j.b(this.f15775j, this.I ? 1 : 0) & 7;
+        int b10 = androidx.core.view.j.b(this.f14743j, this.I ? 1 : 0) & 7;
         if (b10 != 1) {
             if (b10 != 5) {
                 if (this.I) {
@@ -750,15 +750,15 @@ public final class a {
     }
 
     private void z(TextPaint textPaint) {
-        textPaint.setTextSize(this.f15781m);
-        textPaint.setTypeface(this.f15798w);
-        textPaint.setLetterSpacing(this.f15772h0);
+        textPaint.setTextSize(this.f14749m);
+        textPaint.setTypeface(this.f14766w);
+        textPaint.setLetterSpacing(this.f14740h0);
     }
 
     public final boolean E() {
-        ColorStateList colorStateList = this.f15785o;
+        ColorStateList colorStateList = this.f14753o;
         if (colorStateList == null || !colorStateList.isStateful()) {
-            ColorStateList colorStateList2 = this.f15783n;
+            ColorStateList colorStateList2 = this.f14751n;
             if (colorStateList2 != null && colorStateList2.isStateful()) {
                 return true;
             }
@@ -769,24 +769,24 @@ public final class a {
 
     public void H(Configuration configuration) {
         if (Build.VERSION.SDK_INT >= 31) {
-            Typeface typeface = this.f15800y;
+            Typeface typeface = this.f14768y;
             if (typeface != null) {
-                this.f15799x = lh.h.b(configuration, typeface);
+                this.f14767x = lh.h.b(configuration, typeface);
             }
             Typeface typeface2 = this.B;
             if (typeface2 != null) {
                 this.A = lh.h.b(configuration, typeface2);
             }
-            Typeface typeface3 = this.f15799x;
+            Typeface typeface3 = this.f14767x;
             if (typeface3 == null) {
-                typeface3 = this.f15800y;
+                typeface3 = this.f14768y;
             }
-            this.f15798w = typeface3;
+            this.f14766w = typeface3;
             Typeface typeface4 = this.A;
             if (typeface4 == null) {
                 typeface4 = this.B;
             }
-            this.f15801z = typeface4;
+            this.f14769z = typeface4;
             K(true);
         }
     }
@@ -796,24 +796,24 @@ public final class a {
     }
 
     public void K(boolean z10) {
-        if ((this.f15757a.getHeight() > 0 && this.f15757a.getWidth() > 0) || z10) {
+        if ((this.f14725a.getHeight() > 0 && this.f14725a.getWidth() > 0) || z10) {
             b(z10);
             c();
         }
     }
 
     public void M(ColorStateList colorStateList) {
-        if (this.f15785o == colorStateList && this.f15783n == colorStateList) {
+        if (this.f14753o == colorStateList && this.f14751n == colorStateList) {
             return;
         }
-        this.f15785o = colorStateList;
-        this.f15783n = colorStateList;
+        this.f14753o = colorStateList;
+        this.f14751n = colorStateList;
         J();
     }
 
     public void N(int i10, int i11, int i12, int i13) {
-        if (!L(this.f15771h, i10, i11, i12, i13)) {
-            this.f15771h.set(i10, i11, i12, i13);
+        if (!L(this.f14739h, i10, i11, i12, i13)) {
+            this.f14739h.set(i10, i11, i12, i13);
             this.U = true;
         }
     }
@@ -823,40 +823,40 @@ public final class a {
     }
 
     public void P(int i10) {
-        lh.d dVar = new lh.d(this.f15757a.getContext(), i10);
+        lh.d dVar = new lh.d(this.f14725a.getContext(), i10);
         if (dVar.i() != null) {
-            this.f15785o = dVar.i();
+            this.f14753o = dVar.i();
         }
         if (dVar.j() != 0.0f) {
-            this.f15781m = dVar.j();
+            this.f14749m = dVar.j();
         }
-        ColorStateList colorStateList = dVar.f37478c;
+        ColorStateList colorStateList = dVar.f36947c;
         if (colorStateList != null) {
-            this.f15762c0 = colorStateList;
+            this.f14730c0 = colorStateList;
         }
-        this.f15758a0 = dVar.f37483h;
-        this.f15760b0 = dVar.f37484i;
-        this.Z = dVar.f37485j;
-        this.f15772h0 = dVar.f37487l;
+        this.f14726a0 = dVar.f36952h;
+        this.f14728b0 = dVar.f36953i;
+        this.Z = dVar.f36954j;
+        this.f14740h0 = dVar.f36956l;
         lh.a aVar = this.E;
         if (aVar != null) {
             aVar.c();
         }
-        this.E = new lh.a(new C0189a(), dVar.e());
-        dVar.h(this.f15757a.getContext(), this.E);
+        this.E = new lh.a(new C0170a(), dVar.e());
+        dVar.h(this.f14725a.getContext(), this.E);
         J();
     }
 
     public void R(ColorStateList colorStateList) {
-        if (this.f15785o != colorStateList) {
-            this.f15785o = colorStateList;
+        if (this.f14753o != colorStateList) {
+            this.f14753o = colorStateList;
             J();
         }
     }
 
     public void S(int i10) {
-        if (this.f15777k != i10) {
-            this.f15777k = i10;
+        if (this.f14745k != i10) {
+            this.f14745k = i10;
             J();
         }
     }
@@ -868,8 +868,8 @@ public final class a {
     }
 
     public void V(int i10, int i11, int i12, int i13) {
-        if (!L(this.f15769g, i10, i11, i12, i13)) {
-            this.f15769g.set(i10, i11, i12, i13);
+        if (!L(this.f14737g, i10, i11, i12, i13)) {
+            this.f14737g.set(i10, i11, i12, i13);
             this.U = true;
         }
     }
@@ -879,30 +879,30 @@ public final class a {
     }
 
     public void X(float f10) {
-        if (this.f15774i0 != f10) {
-            this.f15774i0 = f10;
+        if (this.f14742i0 != f10) {
+            this.f14742i0 = f10;
             J();
         }
     }
 
     public void Z(int i10) {
-        if (this.f15775j != i10) {
-            this.f15775j = i10;
+        if (this.f14743j != i10) {
+            this.f14743j = i10;
             J();
         }
     }
 
     public void a0(float f10) {
-        if (this.f15779l != f10) {
-            this.f15779l = f10;
+        if (this.f14747l != f10) {
+            this.f14747l = f10;
             J();
         }
     }
 
     public void c0(float f10) {
         float a10 = u1.a.a(f10, 0.0f, 1.0f);
-        if (a10 != this.f15759b) {
-            this.f15759b = a10;
+        if (a10 != this.f14727b) {
+            this.f14727b = a10;
             c();
         }
     }
@@ -948,17 +948,17 @@ public final class a {
     public void l(Canvas canvas) {
         boolean z10;
         int save = canvas.save();
-        if (this.H != null && this.f15773i.width() > 0.0f && this.f15773i.height() > 0.0f) {
+        if (this.H != null && this.f14741i.width() > 0.0f && this.f14741i.height() > 0.0f) {
             this.V.setTextSize(this.O);
-            float f10 = this.f15796u;
-            float f11 = this.f15797v;
+            float f10 = this.f14764u;
+            float f11 = this.f14765v;
             if (this.K && this.L != null) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             float f12 = this.N;
-            if (f12 != 1.0f && !this.f15761c) {
+            if (f12 != 1.0f && !this.f14729c) {
                 canvas.scale(f12, f12, f10, f11);
             }
             if (z10) {
@@ -966,11 +966,11 @@ public final class a {
                 canvas.restoreToCount(save);
                 return;
             }
-            if (j0() && (!this.f15761c || this.f15759b > this.f15765e)) {
-                m(canvas, this.f15796u - this.f15778k0.getLineStart(0), f11);
+            if (j0() && (!this.f14729c || this.f14727b > this.f14733e)) {
+                m(canvas, this.f14764u - this.f14746k0.getLineStart(0), f11);
             } else {
                 canvas.translate(f10, f11);
-                this.f15778k0.draw(canvas);
+                this.f14746k0.draw(canvas);
             }
             canvas.restoreToCount(save);
         }
@@ -978,14 +978,14 @@ public final class a {
 
     public void o(RectF rectF, int i10, int i11) {
         this.I = f(this.G);
-        rectF.left = Math.max(r(i10, i11), this.f15771h.left);
-        rectF.top = this.f15771h.top;
-        rectF.right = Math.min(s(rectF, i10, i11), this.f15771h.right);
-        rectF.bottom = this.f15771h.top + q();
+        rectF.left = Math.max(r(i10, i11), this.f14739h.left);
+        rectF.top = this.f14739h.top;
+        rectF.right = Math.min(s(rectF, i10, i11), this.f14739h.right);
+        rectF.bottom = this.f14739h.top + q();
     }
 
     public ColorStateList p() {
-        return this.f15785o;
+        return this.f14753o;
     }
 
     public float q() {
@@ -994,7 +994,7 @@ public final class a {
     }
 
     public int t() {
-        return u(this.f15785o);
+        return u(this.f14753o);
     }
 
     public float w() {
@@ -1003,6 +1003,6 @@ public final class a {
     }
 
     public float x() {
-        return this.f15759b;
+        return this.f14727b;
     }
 }

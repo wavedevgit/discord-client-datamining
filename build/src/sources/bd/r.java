@@ -5,28 +5,28 @@ import ne.w0;
 final class r {
 
     /* renamed from: a  reason: collision with root package name */
-    public final o f6494a;
+    public final o f6540a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f6495b;
+    public final int f6541b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final long[] f6496c;
+    public final long[] f6542c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int[] f6497d;
+    public final int[] f6543d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f6498e;
+    public final int f6544e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final long[] f6499f;
+    public final long[] f6545f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final int[] f6500g;
+    public final int[] f6546g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final long f6501h;
+    public final long f6547h;
 
     public r(o oVar, long[] jArr, int[] iArr, int i10, long[] jArr2, int[] iArr2, long j10) {
         boolean z10;
@@ -44,14 +44,14 @@ final class r {
         }
         ne.a.a(z11);
         ne.a.a(iArr2.length == jArr2.length);
-        this.f6494a = oVar;
-        this.f6496c = jArr;
-        this.f6497d = iArr;
-        this.f6498e = i10;
-        this.f6499f = jArr2;
-        this.f6500g = iArr2;
-        this.f6501h = j10;
-        this.f6495b = jArr.length;
+        this.f6540a = oVar;
+        this.f6542c = jArr;
+        this.f6543d = iArr;
+        this.f6544e = i10;
+        this.f6545f = jArr2;
+        this.f6546g = iArr2;
+        this.f6547h = j10;
+        this.f6541b = jArr.length;
         if (iArr2.length > 0) {
             int length = iArr2.length - 1;
             iArr2[length] = iArr2[length] | 536870912;
@@ -59,8 +59,8 @@ final class r {
     }
 
     public int a(long j10) {
-        for (int i10 = w0.i(this.f6499f, j10, true, false); i10 >= 0; i10--) {
-            if ((this.f6500g[i10] & 1) != 0) {
+        for (int i10 = w0.i(this.f6545f, j10, true, false); i10 >= 0; i10--) {
+            if ((this.f6546g[i10] & 1) != 0) {
                 return i10;
             }
         }
@@ -68,8 +68,8 @@ final class r {
     }
 
     public int b(long j10) {
-        for (int e10 = w0.e(this.f6499f, j10, true, false); e10 < this.f6499f.length; e10++) {
-            if ((this.f6500g[e10] & 1) != 0) {
+        for (int e10 = w0.e(this.f6545f, j10, true, false); e10 < this.f6545f.length; e10++) {
+            if ((this.f6546g[e10] & 1) != 0) {
                 return e10;
             }
         }

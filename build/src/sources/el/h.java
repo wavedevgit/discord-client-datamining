@@ -8,34 +8,34 @@ import java.util.Calendar;
 public class h extends g {
 
     /* renamed from: f  reason: collision with root package name */
-    private int f22950f;
+    private int f21641f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f22951g;
+    private int f21642g;
 
     public h(com.henninghall.date_picker.pickers.a aVar, n nVar) {
         super(aVar, nVar);
-        this.f22950f = 1900;
-        this.f22951g = 2100;
+        this.f21641f = 1900;
+        this.f21642g = 2100;
     }
 
     private int w() {
-        if (this.f22945a.w() == null) {
-            return this.f22951g;
+        if (this.f21636a.w() == null) {
+            return this.f21642g;
         }
-        return this.f22945a.w().get(1);
+        return this.f21636a.w().get(1);
     }
 
     private int x() {
-        if (this.f22945a.x() == null) {
-            return this.f22950f;
+        if (this.f21636a.x() == null) {
+            return this.f21641f;
         }
-        return this.f22945a.x().get(1);
+        return this.f21636a.x().get(1);
     }
 
     @Override // el.g
     public String e() {
-        return com.henninghall.date_picker.h.g(this.f22945a.v());
+        return com.henninghall.date_picker.h.g(this.f21636a.v());
     }
 
     @Override // el.g
@@ -59,7 +59,7 @@ public class h extends g {
 
     @Override // el.g
     public boolean u() {
-        if (this.f22945a.z() == al.b.date) {
+        if (this.f21636a.z() == al.b.date) {
             return true;
         }
         return false;

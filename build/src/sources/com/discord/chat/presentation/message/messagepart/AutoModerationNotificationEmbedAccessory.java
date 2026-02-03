@@ -66,7 +66,7 @@ public final class AutoModerationNotificationEmbedAccessory extends MessageAcces
         }
         if (obj instanceof AutoModerationNotificationEmbedAccessory) {
             AutoModerationNotificationEmbedAccessory autoModerationNotificationEmbedAccessory = (AutoModerationNotificationEmbedAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, autoModerationNotificationEmbedAccessory.messageId) && Intrinsics.areEqual(this.message, autoModerationNotificationEmbedAccessory.message) && Intrinsics.areEqual(this.moderationContext, autoModerationNotificationEmbedAccessory.moderationContext);
+            return MessageId.m1089equalsimpl0(this.messageId, autoModerationNotificationEmbedAccessory.messageId) && Intrinsics.areEqual(this.message, autoModerationNotificationEmbedAccessory.message) && Intrinsics.areEqual(this.moderationContext, autoModerationNotificationEmbedAccessory.moderationContext);
         }
         return false;
     }
@@ -89,15 +89,15 @@ public final class AutoModerationNotificationEmbedAccessory extends MessageAcces
     }
 
     public int hashCode() {
-        return (((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.message.hashCode()) * 31) + this.moderationContext.hashCode();
+        return (((MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.message.hashCode()) * 31) + this.moderationContext.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         Message message = this.message;
         AutoModerationContext autoModerationContext = this.moderationContext;
-        return "AutoModerationNotificationEmbedAccessory(messageId=" + m1093toStringimpl + ", message=" + message + ", moderationContext=" + autoModerationContext + ")";
+        return "AutoModerationNotificationEmbedAccessory(messageId=" + m1092toStringimpl + ", message=" + message + ", moderationContext=" + autoModerationContext + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

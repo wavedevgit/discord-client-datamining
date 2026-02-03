@@ -11,18 +11,18 @@ public interface i0 {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final String f21453a;
+        public final String f20312a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f21454b;
+        public final int f20313b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final byte[] f21455c;
+        public final byte[] f20314c;
 
         public a(String str, int i10, byte[] bArr) {
-            this.f21453a = str;
-            this.f21454b = i10;
-            this.f21455c = bArr;
+            this.f20312a = str;
+            this.f20313b = i10;
+            this.f20314c = bArr;
         }
     }
 
@@ -30,28 +30,28 @@ public interface i0 {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f21456a;
+        public final int f20315a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final String f21457b;
+        public final String f20316b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final List f21458c;
+        public final List f20317c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final byte[] f21459d;
+        public final byte[] f20318d;
 
         public b(int i10, String str, List list, byte[] bArr) {
             List unmodifiableList;
-            this.f21456a = i10;
-            this.f21457b = str;
+            this.f20315a = i10;
+            this.f20316b = str;
             if (list == null) {
                 unmodifiableList = Collections.EMPTY_LIST;
             } else {
                 unmodifiableList = Collections.unmodifiableList(list);
             }
-            this.f21458c = unmodifiableList;
-            this.f21459d = bArr;
+            this.f20317c = unmodifiableList;
+            this.f20318d = bArr;
         }
     }
 
@@ -66,26 +66,26 @@ public interface i0 {
     public static final class d {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f21460a;
+        private final String f20319a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f21461b;
+        private final int f20320b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int f21462c;
+        private final int f20321c;
 
         /* renamed from: d  reason: collision with root package name */
-        private int f21463d;
+        private int f20322d;
 
         /* renamed from: e  reason: collision with root package name */
-        private String f21464e;
+        private String f20323e;
 
         public d(int i10, int i11) {
             this(Integer.MIN_VALUE, i10, i11);
         }
 
         private void d() {
-            if (this.f21463d != Integer.MIN_VALUE) {
+            if (this.f20322d != Integer.MIN_VALUE) {
                 return;
             }
             throw new IllegalStateException("generateNewId() must be called before retrieving ids.");
@@ -93,24 +93,24 @@ public interface i0 {
 
         public void a() {
             int i10;
-            int i11 = this.f21463d;
+            int i11 = this.f20322d;
             if (i11 == Integer.MIN_VALUE) {
-                i10 = this.f21461b;
+                i10 = this.f20320b;
             } else {
-                i10 = i11 + this.f21462c;
+                i10 = i11 + this.f20321c;
             }
-            this.f21463d = i10;
-            this.f21464e = this.f21460a + this.f21463d;
+            this.f20322d = i10;
+            this.f20323e = this.f20319a + this.f20322d;
         }
 
         public String b() {
             d();
-            return this.f21464e;
+            return this.f20323e;
         }
 
         public int c() {
             d();
-            return this.f21463d;
+            return this.f20322d;
         }
 
         public d(int i10, int i11, int i12) {
@@ -120,11 +120,11 @@ public interface i0 {
             } else {
                 str = "";
             }
-            this.f21460a = str;
-            this.f21461b = i11;
-            this.f21462c = i12;
-            this.f21463d = Integer.MIN_VALUE;
-            this.f21464e = "";
+            this.f20319a = str;
+            this.f20320b = i11;
+            this.f20321c = i12;
+            this.f20322d = Integer.MIN_VALUE;
+            this.f20323e = "";
         }
     }
 

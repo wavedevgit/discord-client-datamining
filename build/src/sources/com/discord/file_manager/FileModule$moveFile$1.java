@@ -13,7 +13,7 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CoroutineScope;
-import pr.b;
+import rr.b;
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.file_manager.FileModule$moveFile$1", f = "FileModule.kt", l = {}, m = "invokeSuspend")
 @SourceDebugExtension({"SMAP\nFileModule.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FileModule.kt\ncom/discord/file_manager/FileModule$moveFile$1\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,320:1\n1#2:321\n*E\n"})
@@ -62,7 +62,7 @@ final class FileModule$moveFile$1 extends k implements Function2<CoroutineScope,
                 hashMap2 = this.this$0.storageDirs;
                 Set keySet = hashMap2.keySet();
                 promise.reject("err", "Unknown storage directory '" + str2 + "'. Supported storage directories: " + keySet);
-                return Unit.f33074a;
+                return Unit.f32464a;
             }
             File file = new File(str, this.$sourcePath);
             File file2 = new File(str, this.$destinationPath);
@@ -80,7 +80,7 @@ final class FileModule$moveFile$1 extends k implements Function2<CoroutineScope,
                     String str4 = this.$destinationPath;
                     promise2.reject("err", "Failed to move file from " + str3 + " to " + str4);
                 }
-                return Unit.f33074a;
+                return Unit.f32464a;
             }
             throw new IllegalArgumentException("Parent file should not be null");
         }
@@ -89,6 +89,6 @@ final class FileModule$moveFile$1 extends k implements Function2<CoroutineScope,
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileModule$moveFile$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        return ((FileModule$moveFile$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
     }
 }

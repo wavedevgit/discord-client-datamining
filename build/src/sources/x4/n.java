@@ -7,31 +7,31 @@ import kotlin.enums.EnumEntries;
 public final class n {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final n f53406d = new n("IGNORE", 0);
+    public static final n f53127d = new n("IGNORE", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final n f53407e = new n("RESPECT_PERFORMANCE", 1);
+    public static final n f53128e = new n("RESPECT_PERFORMANCE", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final n f53408i = new n("RESPECT_ALL", 2);
+    public static final n f53129i = new n("RESPECT_ALL", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ n[] f53409o;
+    private static final /* synthetic */ n[] f53130o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f53410p;
+    private static final /* synthetic */ EnumEntries f53131p;
 
     static {
         n[] a10 = a();
-        f53409o = a10;
-        f53410p = qr.a.a(a10);
+        f53130o = a10;
+        f53131p = sr.a.a(a10);
     }
 
     private n(String str, int i10) {
     }
 
     private static final /* synthetic */ n[] a() {
-        return new n[]{f53406d, f53407e, f53408i};
+        return new n[]{f53127d, f53128e, f53129i};
     }
 
     public static n valueOf(String str) {
@@ -39,6 +39,6 @@ public final class n {
     }
 
     public static n[] values() {
-        return (n[]) f53409o.clone();
+        return (n[]) f53130o.clone();
     }
 }

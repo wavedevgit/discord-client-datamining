@@ -1,22 +1,34 @@
 package fn;
 
 import android.content.Context;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.MotionEvent;
-import android.view.ViewGroup;
-import com.facebook.react.uimanager.PointerEvents;
-import com.facebook.react.uimanager.ReactCompoundViewGroup;
-import com.facebook.react.uimanager.ReactPointerEventsView;
+import android.view.VelocityTracker;
+import com.facebook.react.bridge.ReadableMap;
+import fn.c0;
+import fn.d;
+import java.util.ArrayList;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b extends ViewGroup implements ReactCompoundViewGroup, ReactPointerEventsView {
-
-    /* renamed from: e  reason: collision with root package name */
-    public static final a f24489e = new a(null);
-
-    /* renamed from: d  reason: collision with root package name */
-    private final g f24490d;
+public final class b extends d {
+    public static final a W = new a(null);
+    private static final double X;
+    private static final double Y;
+    private Handler S;
+    private int T;
+    private VelocityTracker V;
+    private int O = 1;
+    private int P = 1;
+    private final long Q = 800;
+    private final long R = 2000;
+    private final Runnable U = new Runnable() { // from class: fn.a
+        @Override // java.lang.Runnable
+        public final void run() {
+            b.X0(b.this);
+        }
+    };
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -28,58 +40,232 @@ public final class b extends ViewGroup implements ReactCompoundViewGroup, ReactP
         }
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public b(Context context, float f10, g pointerEventsProxy) {
-        super(context);
-        Intrinsics.checkNotNullParameter(context, "context");
-        Intrinsics.checkNotNullParameter(pointerEventsProxy, "pointerEventsProxy");
-        this.f24490d = pointerEventsProxy;
-        pointerEventsProxy.a(new f(this));
-        setBackgroundColor(-16777216);
-        setAlpha(f10);
-    }
+    /* renamed from: fn.b$b  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0318b extends d.c {
 
-    public final boolean getBlockGestures$react_native_screens_release() {
-        return !hn.b.b(getAlpha(), 0.0f, 0.0f, 2, null);
-    }
+        /* renamed from: d  reason: collision with root package name */
+        public static final a f24083d = new a(null);
 
-    @Override // com.facebook.react.uimanager.ReactPointerEventsView
-    @NotNull
-    public PointerEvents getPointerEvents() {
-        return this.f24490d.getPointerEvents();
-    }
+        /* renamed from: b  reason: collision with root package name */
+        private final Class f24084b = b.class;
 
-    @Override // com.facebook.react.uimanager.ReactCompoundViewGroup
-    public boolean interceptsTouchEvent(float f10, float f11) {
-        return getBlockGestures$react_native_screens_release();
-    }
+        /* renamed from: c  reason: collision with root package name */
+        private final String f24085c = "FlingGestureHandler";
 
-    @Override // android.view.ViewGroup, android.view.View
-    protected void onDetachedFromWindow() {
-        super.onDetachedFromWindow();
-        this.f24490d.a(null);
-    }
+        /* renamed from: fn.b$b$a */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class a {
+            public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+                this();
+            }
 
-    @Override // android.view.View
-    public boolean onTouchEvent(MotionEvent motionEvent) {
-        if (getBlockGestures$react_native_screens_release()) {
-            callOnClick();
+            private a() {
+            }
         }
-        return getBlockGestures$react_native_screens_release();
+
+        @Override // fn.d.c
+        public String d() {
+            return this.f24085c;
+        }
+
+        @Override // fn.d.c
+        public Class e() {
+            return this.f24084b;
+        }
+
+        /* JADX INFO: Access modifiers changed from: protected */
+        @Override // fn.d.c
+        /* renamed from: g */
+        public b a(Context context) {
+            return new b();
+        }
+
+        @Override // fn.d.c
+        /* renamed from: h */
+        public gn.a c(b handler) {
+            Intrinsics.checkNotNullParameter(handler, "handler");
+            return new gn.a(handler);
+        }
+
+        @Override // fn.d.c
+        /* renamed from: i */
+        public void f(b handler, ReadableMap config) {
+            Intrinsics.checkNotNullParameter(handler, "handler");
+            Intrinsics.checkNotNullParameter(config, "config");
+            super.f(handler, config);
+            if (config.hasKey("numberOfPointers")) {
+                handler.Z0(config.getInt("numberOfPointers"));
+            }
+            if (config.hasKey("direction")) {
+                handler.Y0(config.getInt("direction"));
+            }
+        }
     }
 
-    @Override // com.facebook.react.uimanager.ReactCompoundView
-    public int reactTagForTouch(float f10, float f11) {
-        throw new IllegalStateException("[RNScreens] DimmingView should never be asked for the view tag!");
+    static {
+        k kVar = k.f24164a;
+        X = kVar.a(30.0d);
+        Y = kVar.a(60.0d);
     }
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
-    public b(Context context, float f10) {
-        this(context, f10, new g(null));
-        Intrinsics.checkNotNullParameter(context, "context");
+    private final void V0(VelocityTracker velocityTracker, MotionEvent motionEvent) {
+        float rawX = motionEvent.getRawX() - motionEvent.getX();
+        float rawY = motionEvent.getRawY() - motionEvent.getY();
+        motionEvent.offsetLocation(rawX, rawY);
+        Intrinsics.checkNotNull(velocityTracker);
+        velocityTracker.addMovement(motionEvent);
+        motionEvent.offsetLocation(-rawX, -rawY);
     }
 
-    @Override // android.view.ViewGroup, android.view.View
-    protected void onLayout(boolean z10, int i10, int i11, int i12, int i13) {
+    private final void W0(MotionEvent motionEvent) {
+        if (!b1(motionEvent)) {
+            D();
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void X0(b bVar) {
+        bVar.D();
+    }
+
+    private final void a1(MotionEvent motionEvent) {
+        this.V = VelocityTracker.obtain();
+        p();
+        this.T = 1;
+        Handler handler = this.S;
+        if (handler == null) {
+            this.S = new Handler(Looper.getMainLooper());
+        } else {
+            Intrinsics.checkNotNull(handler);
+            handler.removeCallbacksAndMessages(null);
+        }
+        Handler handler2 = this.S;
+        Intrinsics.checkNotNull(handler2);
+        handler2.postDelayed(this.U, this.Q);
+    }
+
+    private final boolean b1(MotionEvent motionEvent) {
+        boolean z10;
+        boolean z11;
+        boolean z12;
+        V0(this.V, motionEvent);
+        c0.a aVar = c0.f24096f;
+        VelocityTracker velocityTracker = this.V;
+        Intrinsics.checkNotNull(velocityTracker);
+        c0 b10 = aVar.b(velocityTracker);
+        Integer[] numArr = {2, 1, 4, 8};
+        ArrayList<Boolean> arrayList = new ArrayList(4);
+        for (int i10 = 0; i10 < 4; i10++) {
+            arrayList.add(Boolean.valueOf(c1(this, b10, numArr[i10].intValue(), X)));
+        }
+        Integer[] numArr2 = {5, 9, 6, 10};
+        ArrayList<Boolean> arrayList2 = new ArrayList(4);
+        for (int i11 = 0; i11 < 4; i11++) {
+            arrayList2.add(Boolean.valueOf(c1(this, b10, numArr2[i11].intValue(), Y)));
+        }
+        if (!arrayList.isEmpty()) {
+            for (Boolean bool : arrayList) {
+                if (bool.booleanValue()) {
+                    z10 = true;
+                    break;
+                }
+            }
+        }
+        z10 = false;
+        if (!arrayList2.isEmpty()) {
+            for (Boolean bool2 : arrayList2) {
+                if (bool2.booleanValue()) {
+                    z11 = true;
+                    break;
+                }
+            }
+        }
+        z11 = false;
+        boolean z13 = z10 | z11;
+        if (b10.k() > this.R) {
+            z12 = true;
+        } else {
+            z12 = false;
+        }
+        if (this.T != this.O || !z13 || !z12) {
+            return false;
+        }
+        Handler handler = this.S;
+        Intrinsics.checkNotNull(handler);
+        handler.removeCallbacksAndMessages(null);
+        k();
+        return true;
+    }
+
+    private static final boolean c1(b bVar, c0 c0Var, int i10, double d10) {
+        if ((bVar.P & i10) == i10 && c0Var.l(c0.f24096f.a(i10), d10)) {
+            return true;
+        }
+        return false;
+    }
+
+    public final void Y0(int i10) {
+        this.P = i10;
+    }
+
+    public final void Z0(int i10) {
+        this.O = i10;
+    }
+
+    @Override // fn.d
+    protected void j0() {
+        Handler handler = this.S;
+        if (handler != null) {
+            handler.removeCallbacksAndMessages(null);
+        }
+    }
+
+    @Override // fn.d
+    public void l(boolean z10) {
+        super.l(z10);
+        B();
+    }
+
+    @Override // fn.d
+    protected void l0(MotionEvent event, MotionEvent sourceEvent) {
+        Intrinsics.checkNotNullParameter(event, "event");
+        Intrinsics.checkNotNullParameter(sourceEvent, "sourceEvent");
+        if (J0(sourceEvent)) {
+            int S = S();
+            if (S == 0) {
+                a1(sourceEvent);
+            }
+            if (S == 2) {
+                b1(sourceEvent);
+                if (sourceEvent.getPointerCount() > this.T) {
+                    this.T = sourceEvent.getPointerCount();
+                }
+                if (sourceEvent.getActionMasked() == 1) {
+                    W0(sourceEvent);
+                }
+            }
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // fn.d
+    public void o0() {
+        VelocityTracker velocityTracker = this.V;
+        if (velocityTracker != null) {
+            velocityTracker.recycle();
+        }
+        this.V = null;
+        Handler handler = this.S;
+        if (handler != null) {
+            handler.removeCallbacksAndMessages(null);
+        }
+    }
+
+    @Override // fn.d
+    public void s0() {
+        super.s0();
+        this.O = 1;
+        this.P = 1;
     }
 }

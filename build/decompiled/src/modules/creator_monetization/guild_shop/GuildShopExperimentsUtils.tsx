@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/creator_monetization/guild_shop/GuildShopExperimentsUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0, arg1() {
-        _fun49916: for (var _fun49916_ip = 0;;) switch (_fun49916_ip) {
+        _fun49974: for (var _fun49974_ip = 0;;) switch (_fun49974_ip) {
             case 0:
                 var4 = arg1;
                 var3 = _closure1_slot0;
@@ -44,8 +44,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = arg0;
                 var1 = var2.bind(var3)(var1, var4);
                 if (!var0) {
-                    _fun49916_ip = 88;
-                    continue _fun49916
+                    _fun49974_ip = 88;
+                    continue _fun49974
                 }
             case 85:
                 var0 = var1;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsEligibleForSubscriptionsInGuildShop = var3;
     var3 = function arg0, arg1() {
-        _fun49917: for (var _fun49917_ip = 0;;) switch (_fun49917_ip) {
+        _fun49975: for (var _fun49975_ip = 0;;) switch (_fun49975_ip) {
             case 0:
                 var4 = arg1;
                 var3 = _closure1_slot0;
@@ -77,8 +77,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = arg0;
                 var1 = var2.bind(var3)(var1, var4);
                 if (!var0) {
-                    _fun49917_ip = 88;
-                    continue _fun49917
+                    _fun49975_ip = 88;
+                    continue _fun49975
                 }
             case 85:
                 var0 = var1;
@@ -105,4 +105,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsEligibleForGuildShopPreview = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5623, 5624, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5628, 5629, 2]);

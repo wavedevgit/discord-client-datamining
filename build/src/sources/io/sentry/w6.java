@@ -6,22 +6,22 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class w6 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f30484d;
+    private int f30845d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f30485e;
+    private String f30846e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f30486i;
+    private String f30847i;
 
     /* renamed from: o  reason: collision with root package name */
-    private String f30487o;
+    private String f30848o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Long f30488p;
+    private Long f30849p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Map f30489q;
+    private Map f30850q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -32,36 +32,36 @@ public final class w6 implements w1 {
             e3Var.r();
             ConcurrentHashMap concurrentHashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String m02 = e3Var.m0();
-                m02.getClass();
+                String l02 = e3Var.l0();
+                l02.getClass();
                 char c10 = 65535;
-                switch (m02.hashCode()) {
+                switch (l02.hashCode()) {
                     case -1877165340:
-                        if (m02.equals("package_name")) {
+                        if (l02.equals("package_name")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case -1562235024:
-                        if (m02.equals("thread_id")) {
+                        if (l02.equals("thread_id")) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case -1147692044:
-                        if (m02.equals("address")) {
+                        if (l02.equals("address")) {
                             c10 = 2;
                             break;
                         }
                         break;
                     case -290474766:
-                        if (m02.equals("class_name")) {
+                        if (l02.equals("class_name")) {
                             c10 = 3;
                             break;
                         }
                         break;
                     case 3575610:
-                        if (m02.equals("type")) {
+                        if (l02.equals("type")) {
                             c10 = 4;
                             break;
                         }
@@ -69,25 +69,25 @@ public final class w6 implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        w6Var.f30486i = e3Var.r1();
+                        w6Var.f30847i = e3Var.r1();
                         break;
                     case 1:
-                        w6Var.f30488p = e3Var.m1();
+                        w6Var.f30849p = e3Var.m1();
                         break;
                     case 2:
-                        w6Var.f30485e = e3Var.r1();
+                        w6Var.f30846e = e3Var.r1();
                         break;
                     case 3:
-                        w6Var.f30487o = e3Var.r1();
+                        w6Var.f30848o = e3Var.r1();
                         break;
                     case 4:
-                        w6Var.f30484d = e3Var.nextInt();
+                        w6Var.f30845d = e3Var.nextInt();
                         break;
                     default:
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.v1(iLogger, concurrentHashMap, m02);
+                        e3Var.v1(iLogger, concurrentHashMap, l02);
                         break;
                 }
             }
@@ -105,67 +105,67 @@ public final class w6 implements w1 {
             return true;
         }
         if (obj != null && w6.class == obj.getClass()) {
-            return io.sentry.util.y.a(this.f30485e, ((w6) obj).f30485e);
+            return io.sentry.util.y.a(this.f30846e, ((w6) obj).f30846e);
         }
         return false;
     }
 
     public String f() {
-        return this.f30485e;
+        return this.f30846e;
     }
 
     public int g() {
-        return this.f30484d;
+        return this.f30845d;
     }
 
     public void h(String str) {
-        this.f30485e = str;
+        this.f30846e = str;
     }
 
     public int hashCode() {
-        return io.sentry.util.y.b(this.f30485e);
+        return io.sentry.util.y.b(this.f30846e);
     }
 
     public void i(String str) {
-        this.f30487o = str;
+        this.f30848o = str;
     }
 
     public void j(String str) {
-        this.f30486i = str;
+        this.f30847i = str;
     }
 
     public void k(Long l10) {
-        this.f30488p = l10;
+        this.f30849p = l10;
     }
 
     public void l(int i10) {
-        this.f30484d = i10;
+        this.f30845d = i10;
     }
 
     public void m(Map map) {
-        this.f30489q = map;
+        this.f30850q = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        f3Var.e("type").b(this.f30484d);
-        if (this.f30485e != null) {
-            f3Var.e("address").f(this.f30485e);
+        f3Var.e("type").b(this.f30845d);
+        if (this.f30846e != null) {
+            f3Var.e("address").f(this.f30846e);
         }
-        if (this.f30486i != null) {
-            f3Var.e("package_name").f(this.f30486i);
+        if (this.f30847i != null) {
+            f3Var.e("package_name").f(this.f30847i);
         }
-        if (this.f30487o != null) {
-            f3Var.e("class_name").f(this.f30487o);
+        if (this.f30848o != null) {
+            f3Var.e("class_name").f(this.f30848o);
         }
-        if (this.f30488p != null) {
-            f3Var.e("thread_id").i(this.f30488p);
+        if (this.f30849p != null) {
+            f3Var.e("thread_id").i(this.f30849p);
         }
-        Map map = this.f30489q;
+        Map map = this.f30850q;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f30489q.get(str);
+                Object obj = this.f30850q.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -174,11 +174,11 @@ public final class w6 implements w1 {
     }
 
     public w6(w6 w6Var) {
-        this.f30484d = w6Var.f30484d;
-        this.f30485e = w6Var.f30485e;
-        this.f30486i = w6Var.f30486i;
-        this.f30487o = w6Var.f30487o;
-        this.f30488p = w6Var.f30488p;
-        this.f30489q = io.sentry.util.c.b(w6Var.f30489q);
+        this.f30845d = w6Var.f30845d;
+        this.f30846e = w6Var.f30846e;
+        this.f30847i = w6Var.f30847i;
+        this.f30848o = w6Var.f30848o;
+        this.f30849p = w6Var.f30849p;
+        this.f30850q = io.sentry.util.c.b(w6Var.f30850q);
     }
 }

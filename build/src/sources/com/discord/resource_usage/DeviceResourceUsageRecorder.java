@@ -5,16 +5,16 @@ import android.os.Build;
 import android.os.Process;
 import android.telephony.SignalStrength;
 import android.telephony.TelephonyManager;
-import au.e;
 import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.WritableNativeMap;
-import jr.v;
+import cu.e;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.LongCompanionObject;
+import lr.v;
 import okhttp3.Interceptor;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
@@ -56,7 +56,7 @@ public final class DeviceResourceUsageRecorder {
             requestStats.setNumRequests(requestStats.getNumRequests() + 1);
             if (e.b(a10) && x10 != null) {
                 BufferedSource source = x10.source();
-                source.C0(LongCompanionObject.MAX_VALUE);
+                source.B0(LongCompanionObject.MAX_VALUE);
                 requestStats.setBytesReceived(requestStats.getBytesReceived() + source.e().size());
             }
             return a10;

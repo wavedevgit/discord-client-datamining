@@ -4,13 +4,13 @@ package og;
 public class we {
 
     /* renamed from: a  reason: collision with root package name */
-    String f43840a;
+    String f43640a;
 
     /* renamed from: b  reason: collision with root package name */
-    Object f43841b;
+    Object f43641b;
 
     /* renamed from: c  reason: collision with root package name */
-    we f43842c;
+    we f43642c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ we(ue ueVar) {

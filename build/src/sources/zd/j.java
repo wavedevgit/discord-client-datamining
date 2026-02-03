@@ -5,7 +5,7 @@ import com.google.android.exoplayer2.Format;
 public interface j {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final j f55777a = new a();
+    public static final j f55915a = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements j {
@@ -14,7 +14,7 @@ public interface j {
 
         @Override // zd.j
         public boolean a(Format format) {
-            String str = format.f12335w;
+            String str = format.f11303w;
             if (!"text/vtt".equals(str) && !"text/x-ssa".equals(str) && !"application/ttml+xml".equals(str) && !"application/x-mp4-vtt".equals(str) && !"application/x-subrip".equals(str) && !"application/x-quicktime-tx3g".equals(str) && !"application/cea-608".equals(str) && !"application/x-mp4-cea-608".equals(str) && !"application/cea-708".equals(str) && !"application/dvbsubs".equals(str) && !"application/pgs".equals(str) && !"text/x-exoplayer-cues".equals(str)) {
                 return false;
             }
@@ -23,7 +23,7 @@ public interface j {
 
         @Override // zd.j
         public h b(Format format) {
-            String str = format.f12335w;
+            String str = format.f11303w;
             if (str != null) {
                 char c10 = 65535;
                 switch (str.hashCode()) {
@@ -102,7 +102,7 @@ public interface j {
                 }
                 switch (c10) {
                     case 0:
-                        return new be.a(format.f12337y);
+                        return new be.a(format.f11305y);
                     case 1:
                         return new ce.a();
                     case 2:
@@ -110,16 +110,16 @@ public interface j {
                     case 3:
                         return new ie.h();
                     case 4:
-                        return new he.a(format.f12337y);
+                        return new he.a(format.f11305y);
                     case 5:
-                        return new ee.a(format.f12337y);
+                        return new ee.a(format.f11305y);
                     case 6:
                     case '\b':
                         return new ae.a(str, format.O, 16000L);
                     case 7:
                         return new e();
                     case '\t':
-                        return new ae.c(format.O, format.f12337y);
+                        return new ae.c(format.O, format.f11305y);
                     case '\n':
                         return new fe.a();
                     case 11:

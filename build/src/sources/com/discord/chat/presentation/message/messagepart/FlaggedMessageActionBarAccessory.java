@@ -66,7 +66,7 @@ public final class FlaggedMessageActionBarAccessory extends MessageAccessory {
         }
         if (obj instanceof FlaggedMessageActionBarAccessory) {
             FlaggedMessageActionBarAccessory flaggedMessageActionBarAccessory = (FlaggedMessageActionBarAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, flaggedMessageActionBarAccessory.messageId) && Intrinsics.areEqual(this.message, flaggedMessageActionBarAccessory.message) && Intrinsics.areEqual(this.autoModerationContext, flaggedMessageActionBarAccessory.autoModerationContext);
+            return MessageId.m1089equalsimpl0(this.messageId, flaggedMessageActionBarAccessory.messageId) && Intrinsics.areEqual(this.message, flaggedMessageActionBarAccessory.message) && Intrinsics.areEqual(this.autoModerationContext, flaggedMessageActionBarAccessory.autoModerationContext);
         }
         return false;
     }
@@ -89,15 +89,15 @@ public final class FlaggedMessageActionBarAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.message.hashCode()) * 31) + this.autoModerationContext.hashCode();
+        return (((MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.message.hashCode()) * 31) + this.autoModerationContext.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         Message message = this.message;
         AutoModerationContext autoModerationContext = this.autoModerationContext;
-        return "FlaggedMessageActionBarAccessory(messageId=" + m1093toStringimpl + ", message=" + message + ", autoModerationContext=" + autoModerationContext + ")";
+        return "FlaggedMessageActionBarAccessory(messageId=" + m1092toStringimpl + ", message=" + message + ", autoModerationContext=" + autoModerationContext + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

@@ -16,7 +16,7 @@ import x.y0;
 public abstract class ImageProcessingUtil {
 
     /* renamed from: a  reason: collision with root package name */
-    private static int f1971a;
+    private static int f1940a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -122,8 +122,8 @@ public abstract class ImageProcessingUtil {
             return null;
         } else {
             if (Log.isLoggable("MH", 3)) {
-                y0.a("ImageProcessingUtil", String.format(Locale.US, "Image processing performance profiling, duration: [%d], image count: %d", Long.valueOf(System.currentTimeMillis() - currentTimeMillis), Integer.valueOf(f1971a)));
-                f1971a++;
+                y0.a("ImageProcessingUtil", String.format(Locale.US, "Image processing performance profiling, duration: [%d], image count: %d", Long.valueOf(System.currentTimeMillis() - currentTimeMillis), Integer.valueOf(f1940a)));
+                f1940a++;
             }
             final n b10 = j1Var.b();
             if (b10 == null) {

@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/useIsStickerReplyEnabled.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1, arg2, arg3() {
-        _fun55551: for (var _fun55551_ip = 0;;) switch (_fun55551_ip) {
+        _fun55609: for (var _fun55609_ip = 0;;) switch (_fun55609_ip) {
             case 0:
                 var6 = arg1;
                 var1 = arg3;
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var3 = var2 != var4;
                 if (!var3) {
-                    _fun55551_ip = 73;
-                    continue _fun55551
+                    _fun55609_ip = 73;
+                    continue _fun55609
                 }
             case 31:
                 var8 = _closure1_slot2;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var2 == var4;
                 var2 = undefined;
                 if (var5) {
-                    _fun55551_ip = 70;
-                    continue _fun55551
+                    _fun55609_ip = 70;
+                    continue _fun55609
                 }
             case 64:
                 var2 = var4.isPending;
@@ -87,29 +87,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.author;
                 var2 = var2.bot;
                 if (!var0) {
-                    _fun55551_ip = 153;
-                    continue _fun55551
+                    _fun55609_ip = 153;
+                    continue _fun55609
                 }
             case 150:
                 var0 = !var4;
             case 153:
                 if (!var0) {
-                    _fun55551_ip = 159;
-                    continue _fun55551
+                    _fun55609_ip = 159;
+                    continue _fun55609
                 }
             case 156:
                 var0 = !var3;
             case 159:
                 if (!var0) {
-                    _fun55551_ip = 165;
-                    continue _fun55551
+                    _fun55609_ip = 165;
+                    continue _fun55609
                 }
             case 162:
                 var0 = !var2;
             case 165:
                 if (!var0) {
-                    _fun55551_ip = 171;
-                    continue _fun55551
+                    _fun55609_ip = 171;
+                    continue _fun55609
                 }
             case 168:
                 var0 = var1;
@@ -119,4 +119,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.computeIsStickerReplyEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1672, 3082, 1613, 660, 6692, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1681, 3091, 1621, 660, 6697, 2]);

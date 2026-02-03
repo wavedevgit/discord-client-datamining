@@ -1,7 +1,20 @@
 package ir;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class a {
-    public static int a(int i10, int i11) {
-        return (i10 & 16777215) | (i11 << 24);
+    public static a a() {
+        return new b();
+    }
+
+    public abstract String b(String str);
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    private static class b extends a {
+        private b() {
+        }
+
+        @Override // ir.a
+        public String b(String str) {
+            return str;
+        }
     }
 }

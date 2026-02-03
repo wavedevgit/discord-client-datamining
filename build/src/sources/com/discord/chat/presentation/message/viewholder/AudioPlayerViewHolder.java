@@ -148,13 +148,13 @@ public final class AudioPlayerViewHolder extends MessagePartViewHolder {
                 String mo538getMessageId3Eiw7ao = accessory.mo538getMessageId3Eiw7ao();
                 UserId m550getAuthorIdwUX8bhU = accessory.m550getAuthorIdwUX8bhU();
                 if (m550getAuthorIdwUX8bhU != null) {
-                    long m1147unboximpl = m550getAuthorIdwUX8bhU.m1147unboximpl();
+                    long m1146unboximpl = m550getAuthorIdwUX8bhU.m1146unboximpl();
                     boolean isVoiceMessage = accessory.isVoiceMessage();
                     String id2 = accessory.getAttachment().getId();
                     if (id2 == null) {
                         id2 = "";
                     }
-                    chatEventHandler.mo434mediaAttachmentPlaybackEndedO97gnAM(mo538getMessageId3Eiw7ao, f13, f10, m1147unboximpl, f11, isVoiceMessage, id2);
+                    chatEventHandler.mo434mediaAttachmentPlaybackEndedO97gnAM(mo538getMessageId3Eiw7ao, f13, f10, m1146unboximpl, f11, isVoiceMessage, id2);
                 }
             }
 
@@ -179,13 +179,13 @@ public final class AudioPlayerViewHolder extends MessagePartViewHolder {
                 String mo538getMessageId3Eiw7ao = accessory.mo538getMessageId3Eiw7ao();
                 UserId m550getAuthorIdwUX8bhU = accessory.m550getAuthorIdwUX8bhU();
                 if (m550getAuthorIdwUX8bhU != null) {
-                    long m1147unboximpl = m550getAuthorIdwUX8bhU.m1147unboximpl();
+                    long m1146unboximpl = m550getAuthorIdwUX8bhU.m1146unboximpl();
                     boolean isVoiceMessage = accessory.isVoiceMessage();
                     String id2 = accessory.getAttachment().getId();
                     if (id2 == null) {
                         id2 = "";
                     }
-                    chatEventHandler.mo435mediaAttachmentPlaybackStartedjd4C3YQ(mo538getMessageId3Eiw7ao, f12, f10, m1147unboximpl, isVoiceMessage, id2);
+                    chatEventHandler.mo435mediaAttachmentPlaybackStartedjd4C3YQ(mo538getMessageId3Eiw7ao, f12, f10, m1146unboximpl, isVoiceMessage, id2);
                 }
             }
 

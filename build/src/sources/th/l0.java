@@ -3,22 +3,22 @@ package th;
 public abstract class l0 implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final wg.k f49847d;
+    private final wg.k f50058d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public l0() {
-        this.f49847d = null;
+        this.f50058d = null;
     }
 
     protected abstract void a();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final wg.k b() {
-        return this.f49847d;
+        return this.f50058d;
     }
 
     public final void c(Exception exc) {
-        wg.k kVar = this.f49847d;
+        wg.k kVar = this.f50058d;
         if (kVar != null) {
             kVar.d(exc);
         }
@@ -34,6 +34,6 @@ public abstract class l0 implements Runnable {
     }
 
     public l0(wg.k kVar) {
-        this.f49847d = kVar;
+        this.f50058d = kVar;
     }
 }

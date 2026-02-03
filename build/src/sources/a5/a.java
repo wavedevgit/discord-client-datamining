@@ -4,9 +4,9 @@ import a5.h;
 import android.net.Uri;
 import android.webkit.MimeTypeMap;
 import g5.m;
-import ju.x;
 import kotlin.collections.CollectionsKt;
 import kotlin.coroutines.Continuation;
+import lu.x;
 import x4.u;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class a implements h {
@@ -38,6 +38,6 @@ public final class a implements h {
     @Override // a5.h
     public Object a(Continuation continuation) {
         String x02 = CollectionsKt.x0(CollectionsKt.f0(this.f384a.getPathSegments(), 1), "/", null, null, 0, null, null, 62, null);
-        return new l(u.g(x.d(x.k(this.f385b.g().getAssets().open(x02))), this.f385b.g(), new x4.a(x02)), k5.k.j(MimeTypeMap.getSingleton(), x02), x4.h.f53392i);
+        return new l(u.g(x.d(x.k(this.f385b.g().getAssets().open(x02))), this.f385b.g(), new x4.a(x02)), k5.k.j(MimeTypeMap.getSingleton(), x02), x4.h.f53113i);
     }
 }

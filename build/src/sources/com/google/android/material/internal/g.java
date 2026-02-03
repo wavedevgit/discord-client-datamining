@@ -8,16 +8,16 @@ import java.util.ArrayList;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ArrayList f15805a = new ArrayList();
+    private final ArrayList f14773a = new ArrayList();
 
     /* renamed from: b  reason: collision with root package name */
-    private b f15806b = null;
+    private b f14774b = null;
 
     /* renamed from: c  reason: collision with root package name */
-    ValueAnimator f15807c = null;
+    ValueAnimator f14775c = null;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Animator.AnimatorListener f15808d = new a();
+    private final Animator.AnimatorListener f14776d = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends AnimatorListenerAdapter {
@@ -27,8 +27,8 @@ public final class g {
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
             g gVar = g.this;
-            if (gVar.f15807c == animator) {
-                gVar.f15807c = null;
+            if (gVar.f14775c == animator) {
+                gVar.f14775c = null;
             }
         }
     }
@@ -37,20 +37,20 @@ public final class g {
     static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        final int[] f15810a;
+        final int[] f14778a;
 
         /* renamed from: b  reason: collision with root package name */
-        final ValueAnimator f15811b;
+        final ValueAnimator f14779b;
 
         b(int[] iArr, ValueAnimator valueAnimator) {
-            this.f15810a = iArr;
-            this.f15811b = valueAnimator;
+            this.f14778a = iArr;
+            this.f14779b = valueAnimator;
         }
     }
 
     public void a(int[] iArr, ValueAnimator valueAnimator) {
         b bVar = new b(iArr, valueAnimator);
-        valueAnimator.addListener(this.f15808d);
-        this.f15805a.add(bVar);
+        valueAnimator.addListener(this.f14776d);
+        this.f14773a.add(bVar);
     }
 }

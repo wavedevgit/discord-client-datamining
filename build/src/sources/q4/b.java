@@ -9,32 +9,32 @@ import k4.q;
 public abstract class b implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final androidx.work.impl.q f47181d = new androidx.work.impl.q();
+    private final androidx.work.impl.q f47331d = new androidx.work.impl.q();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public class a extends b {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ p0 f47182e;
+        final /* synthetic */ p0 f47332e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ UUID f47183i;
+        final /* synthetic */ UUID f47333i;
 
         a(p0 p0Var, UUID uuid) {
-            this.f47182e = p0Var;
-            this.f47183i = uuid;
+            this.f47332e = p0Var;
+            this.f47333i = uuid;
         }
 
         @Override // q4.b
         void g() {
-            WorkDatabase p10 = this.f47182e.p();
+            WorkDatabase p10 = this.f47332e.p();
             p10.e();
             try {
-                a(this.f47182e, this.f47183i.toString());
+                a(this.f47332e, this.f47333i.toString());
                 p10.A();
                 p10.i();
-                f(this.f47182e);
+                f(this.f47332e);
             } catch (Throwable th2) {
                 p10.i();
                 throw th2;
@@ -44,35 +44,35 @@ public abstract class b implements Runnable {
 
     /* renamed from: q4.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    class C0575b extends b {
+    class C0570b extends b {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ p0 f47184e;
+        final /* synthetic */ p0 f47334e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ String f47185i;
+        final /* synthetic */ String f47335i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ boolean f47186o;
+        final /* synthetic */ boolean f47336o;
 
-        C0575b(p0 p0Var, String str, boolean z10) {
-            this.f47184e = p0Var;
-            this.f47185i = str;
-            this.f47186o = z10;
+        C0570b(p0 p0Var, String str, boolean z10) {
+            this.f47334e = p0Var;
+            this.f47335i = str;
+            this.f47336o = z10;
         }
 
         @Override // q4.b
         void g() {
-            WorkDatabase p10 = this.f47184e.p();
+            WorkDatabase p10 = this.f47334e.p();
             p10.e();
             try {
-                for (String str : p10.H().g(this.f47185i)) {
-                    a(this.f47184e, str);
+                for (String str : p10.H().g(this.f47335i)) {
+                    a(this.f47334e, str);
                 }
                 p10.A();
                 p10.i();
-                if (this.f47186o) {
-                    f(this.f47184e);
+                if (this.f47336o) {
+                    f(this.f47334e);
                 }
             } catch (Throwable th2) {
                 p10.i();
@@ -86,7 +86,7 @@ public abstract class b implements Runnable {
     }
 
     public static b c(String str, p0 p0Var, boolean z10) {
-        return new C0575b(p0Var, str, z10);
+        return new C0570b(p0Var, str, z10);
     }
 
     private void e(WorkDatabase workDatabase, String str) {
@@ -113,7 +113,7 @@ public abstract class b implements Runnable {
     }
 
     public k4.q d() {
-        return this.f47181d;
+        return this.f47331d;
     }
 
     void f(p0 p0Var) {
@@ -126,9 +126,9 @@ public abstract class b implements Runnable {
     public void run() {
         try {
             g();
-            this.f47181d.a(k4.q.f32747a);
+            this.f47331d.a(k4.q.f32145a);
         } catch (Throwable th2) {
-            this.f47181d.a(new q.b.a(th2));
+            this.f47331d.a(new q.b.a(th2));
         }
     }
 }

@@ -1,10 +1,11 @@
 package com.discord.chat.reactevents;
 
-import bt.v1;
+import at.m;
 import com.discord.primitives.MessageId;
 import com.discord.primitives.MessageId$$serializer;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
+import dt.v1;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -13,7 +14,6 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.jetbrains.annotations.NotNull;
-import ys.m;
 @m
 @Metadata(d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0010\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 ,2\u00020\u0001:\u0002+,B'\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0007¢\u0006\u0004\b\b\u0010\tBC\b\u0010\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\u0004\b\b\u0010\u000eJ\t\u0010\u0015\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0016\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0017\u001a\u00020\u0003HÆ\u0003J\u0010\u0010\u0018\u001a\u00020\u0007HÆ\u0003¢\u0006\u0004\b\u0019\u0010\u0010J8\u0010\u001a\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00032\b\b\u0002\u0010\u0006\u001a\u00020\u0007HÆ\u0001¢\u0006\u0004\b\u001b\u0010\u001cJ\u0013\u0010\u001d\u001a\u00020\u001e2\b\u0010\u001f\u001a\u0004\u0018\u00010 HÖ\u0003J\t\u0010!\u001a\u00020\u000bHÖ\u0001J\t\u0010\"\u001a\u00020\u0003HÖ\u0001J%\u0010#\u001a\u00020$2\u0006\u0010%\u001a\u00020\u00002\u0006\u0010&\u001a\u00020'2\u0006\u0010(\u001a\u00020)H\u0001¢\u0006\u0002\b*R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0010R\u0011\u0010\u0005\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0010R\u0013\u0010\u0006\u001a\u00020\u0007¢\u0006\n\n\u0002\u0010\u0014\u001a\u0004\b\u0013\u0010\u0010¨\u0006-"}, d2 = {"Lcom/discord/chat/reactevents/TapPostPreviewEmbedData;", "Lcom/discord/reactevents/ReactEvent;", "guildId", "", "parentChannelId", "threadId", "messageId", "Lcom/discord/primitives/MessageId;", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getGuildId", "()Ljava/lang/String;", "getParentChannelId", "getThreadId", "getMessageId-3Eiw7ao", "Ljava/lang/String;", "component1", "component2", "component3", "component4", "component4-3Eiw7ao", "copy", "copy-wInV0_I", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/discord/chat/reactevents/TapPostPreviewEmbedData;", "equals", "", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -67,10 +67,10 @@ public final class TapPostPreviewEmbedData implements ReactEvent {
     }
 
     public static final /* synthetic */ void write$Self$chat_release(TapPostPreviewEmbedData tapPostPreviewEmbedData, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        compositeEncoder.x(serialDescriptor, 0, tapPostPreviewEmbedData.guildId);
-        compositeEncoder.x(serialDescriptor, 1, tapPostPreviewEmbedData.parentChannelId);
-        compositeEncoder.x(serialDescriptor, 2, tapPostPreviewEmbedData.threadId);
-        compositeEncoder.m(serialDescriptor, 3, MessageId$$serializer.INSTANCE, MessageId.m1086boximpl(tapPostPreviewEmbedData.messageId));
+        compositeEncoder.y(serialDescriptor, 0, tapPostPreviewEmbedData.guildId);
+        compositeEncoder.y(serialDescriptor, 1, tapPostPreviewEmbedData.parentChannelId);
+        compositeEncoder.y(serialDescriptor, 2, tapPostPreviewEmbedData.threadId);
+        compositeEncoder.D(serialDescriptor, 3, MessageId$$serializer.INSTANCE, MessageId.m1085boximpl(tapPostPreviewEmbedData.messageId));
     }
 
     @NotNull
@@ -110,7 +110,7 @@ public final class TapPostPreviewEmbedData implements ReactEvent {
         }
         if (obj instanceof TapPostPreviewEmbedData) {
             TapPostPreviewEmbedData tapPostPreviewEmbedData = (TapPostPreviewEmbedData) obj;
-            return Intrinsics.areEqual(this.guildId, tapPostPreviewEmbedData.guildId) && Intrinsics.areEqual(this.parentChannelId, tapPostPreviewEmbedData.parentChannelId) && Intrinsics.areEqual(this.threadId, tapPostPreviewEmbedData.threadId) && MessageId.m1090equalsimpl0(this.messageId, tapPostPreviewEmbedData.messageId);
+            return Intrinsics.areEqual(this.guildId, tapPostPreviewEmbedData.guildId) && Intrinsics.areEqual(this.parentChannelId, tapPostPreviewEmbedData.parentChannelId) && Intrinsics.areEqual(this.threadId, tapPostPreviewEmbedData.threadId) && MessageId.m1089equalsimpl0(this.messageId, tapPostPreviewEmbedData.messageId);
         }
         return false;
     }
@@ -137,7 +137,7 @@ public final class TapPostPreviewEmbedData implements ReactEvent {
     }
 
     public int hashCode() {
-        return (((((this.guildId.hashCode() * 31) + this.parentChannelId.hashCode()) * 31) + this.threadId.hashCode()) * 31) + MessageId.m1091hashCodeimpl(this.messageId);
+        return (((((this.guildId.hashCode() * 31) + this.parentChannelId.hashCode()) * 31) + this.threadId.hashCode()) * 31) + MessageId.m1090hashCodeimpl(this.messageId);
     }
 
     @Override // com.discord.reactevents.ReactEvent
@@ -151,8 +151,8 @@ public final class TapPostPreviewEmbedData implements ReactEvent {
         String str = this.guildId;
         String str2 = this.parentChannelId;
         String str3 = this.threadId;
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
-        return "TapPostPreviewEmbedData(guildId=" + str + ", parentChannelId=" + str2 + ", threadId=" + str3 + ", messageId=" + m1093toStringimpl + ")";
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
+        return "TapPostPreviewEmbedData(guildId=" + str + ", parentChannelId=" + str2 + ", threadId=" + str3 + ", messageId=" + m1092toStringimpl + ")";
     }
 
     public /* synthetic */ TapPostPreviewEmbedData(String str, String str2, String str3, String str4, DefaultConstructorMarker defaultConstructorMarker) {

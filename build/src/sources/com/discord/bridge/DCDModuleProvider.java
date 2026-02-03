@@ -44,14 +44,14 @@ public final class DCDModuleProvider {
         return CollectionsKt.D(arrayList, turboPackages);
     }
 
-    @jr.c
+    @lr.c
     @NotNull
     public final ReactPackage getLegacyPackageForModule(@NotNull Function1<? super ReactApplicationContext, ? extends ReactContextBaseJavaModule> onNativeModule) {
         Intrinsics.checkNotNullParameter(onNativeModule, "onNativeModule");
         return getLegacyPackageForModuleWithViewManager$default(this, onNativeModule, null, 2, null);
     }
 
-    @jr.c
+    @lr.c
     @NotNull
     public final ReactPackage getLegacyPackageForModuleWithViewManager(final Function1<? super ReactApplicationContext, ? extends ReactContextBaseJavaModule> function1, final Function1<? super ReactApplicationContext, ? extends ViewManager<?, LayoutShadowNode>> function12) {
         return new ReactPackage() { // from class: com.discord.bridge.DCDModuleProvider$getLegacyPackageForModuleWithViewManager$1

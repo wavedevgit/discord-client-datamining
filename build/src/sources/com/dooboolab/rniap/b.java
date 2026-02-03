@@ -7,7 +7,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f10494a = new b();
+    public static final b f9462a = new b();
 
     private b() {
     }
@@ -69,6 +69,6 @@ public final class b {
     public final void c(String key, int i10) {
         Intrinsics.checkNotNullParameter(key, "key");
         a a10 = a(i10);
-        c.f10495a.c(key, a10.a(), a10.b(), null);
+        c.f9463a.c(key, a10.a(), a10.b(), null);
     }
 }

@@ -4,69 +4,45 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = global;
-    var1 = var1.Object;
-    var1 = var1.prototype;
-    var1 = var1.hasOwnProperty;
-    var _closure1_slot2 = var1;
     var1 = function arg0() {
-        _fun32558: for (var _fun32558_ip = 0;;) switch (_fun32558_ip) {
+        _fun32626: for (var _fun32626_ip = 0;;) switch (_fun32626_ip) {
             case 0:
-                var9 = arg0;
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 0;
-                var0 = var1[var0];
-                var1 = undefined;
-                var0 = var2.bind(var1)(var0);
-                var0 = var0.bind(var1)(var9);
-                var2 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                if (var0) {
-                    _fun32558_ip = 62;
-                    continue _fun32558
+                var3 = arg0;
+                var0 = var3.constructor;
+                var1 = 'function';
+                var0 = typeof var0;
+                if (!(var1 === var0)) {
+                    _fun32626_ip = 95;
+                    continue _fun32626
                 }
-            case 43:
+            case 19:
+                var4 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var1 = 0;
+                var1 = var2[var1];
+                var2 = undefined;
+                var1 = var4.bind(var2)(var1);
+                var1 = var1.bind(var2)(var3);
+                if (var1) {
+                    _fun32626_ip = 95;
+                    continue _fun32626
+                }
+            case 51:
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
                 var0 = 1;
-                var0 = var3[var0];
-                var0 = var2.bind(var1)(var0);
-                var0 = var0.bind(var1)(var9);
-                return var0;
-            case 62:
+                var0 = var5[var0];
+                var1 = var4.bind(var2)(var0);
                 var0 = 2;
-                var0 = var3[var0];
-                var0 = var2.bind(var1)(var0);
-                var7 = var0.bind(var1)(var9);
-                var0 = new Array(0);
-                var5 = var9;
-                var1 = 'constructor';
-                for (var2 in var5)
-                    case 98: {
-                        case 107: var11 = var2;
-                        var10 = var1 != var11;
-                        if (var10) {
-                            _fun32558_ip = 141;
-                            continue _fun32558
-                        }
-                        case 117: var12 = !var7;
-                        if (!var12) {
-                            _fun32558_ip = 138;
-                            continue _fun32558
-                        }
-                        case 123: var14 = _closure1_slot2;
-                        var13 = var14.call;
-                        var12 = var13.bind(var14)(var9, var11);
-                        case 138: var10 = var12;
-                        case 141: if (!var10) {
-                            _fun32558_ip = 98;
-                            continue _fun32558
-                        }
-                        case 144: var10 = var0.push;
-                        var10 = var10.bind(var0)(var11);
-                        _fun32558_ip = 98;
-                        continue _fun32558;
-                    }
-            case 156:
+                var0 = var5[var0];
+                var0 = var4.bind(var2)(var0);
+                var0 = var0.bind(var2)(var3);
+                var0 = var1.bind(var2)(var0);
+                _fun32626_ip = 97;
+                continue _fun32626;
+            case 95:
+                var0 = {};
+            case 97:
                 return var0;
         }
     };
@@ -74,4 +50,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [573, 3652, 771]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [771, 3652, 3653]);

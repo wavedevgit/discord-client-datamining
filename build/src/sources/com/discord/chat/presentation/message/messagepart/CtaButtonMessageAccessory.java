@@ -64,7 +64,7 @@ public final class CtaButtonMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof CtaButtonMessageAccessory) {
             CtaButtonMessageAccessory ctaButtonMessageAccessory = (CtaButtonMessageAccessory) obj;
-            return ChannelId.m1064equalsimpl0(this.channelId, ctaButtonMessageAccessory.channelId) && MessageId.m1090equalsimpl0(this.messageId, ctaButtonMessageAccessory.messageId) && Intrinsics.areEqual(this.ctaButton, ctaButtonMessageAccessory.ctaButton);
+            return ChannelId.m1063equalsimpl0(this.channelId, ctaButtonMessageAccessory.channelId) && MessageId.m1089equalsimpl0(this.messageId, ctaButtonMessageAccessory.messageId) && Intrinsics.areEqual(this.ctaButton, ctaButtonMessageAccessory.ctaButton);
         }
         return false;
     }
@@ -87,15 +87,15 @@ public final class CtaButtonMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (((ChannelId.m1065hashCodeimpl(this.channelId) * 31) + MessageId.m1091hashCodeimpl(this.messageId)) * 31) + this.ctaButton.hashCode();
+        return (((ChannelId.m1064hashCodeimpl(this.channelId) * 31) + MessageId.m1090hashCodeimpl(this.messageId)) * 31) + this.ctaButton.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1067toStringimpl = ChannelId.m1067toStringimpl(this.channelId);
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1066toStringimpl = ChannelId.m1066toStringimpl(this.channelId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         CtaButton ctaButton = this.ctaButton;
-        return "CtaButtonMessageAccessory(channelId=" + m1067toStringimpl + ", messageId=" + m1093toStringimpl + ", ctaButton=" + ctaButton + ")";
+        return "CtaButtonMessageAccessory(channelId=" + m1066toStringimpl + ", messageId=" + m1092toStringimpl + ", ctaButton=" + ctaButton + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

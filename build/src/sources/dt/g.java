@@ -1,47 +1,51 @@
 package dt;
 
-import kotlin.Unit;
-import kotlin.collections.ArrayDeque;
+import java.util.Arrays;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class g {
+public final class g extends d2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ArrayDeque f22407a = new ArrayDeque();
+    private boolean[] f20936a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f22408b;
+    private int f20937b;
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final void a(byte[] array) {
-        Intrinsics.checkNotNullParameter(array, "array");
-        synchronized (this) {
-            try {
-                if (this.f22408b + array.length < e.a()) {
-                    this.f22408b += array.length / 2;
-                    this.f22407a.addLast(array);
-                }
-                Unit unit = Unit.f33074a;
-            } catch (Throwable th2) {
-                throw th2;
-            }
+    public g(boolean[] bufferWithData) {
+        Intrinsics.checkNotNullParameter(bufferWithData, "bufferWithData");
+        this.f20936a = bufferWithData;
+        this.f20937b = bufferWithData.length;
+        b(10);
+    }
+
+    @Override // dt.d2
+    public void b(int i10) {
+        boolean[] zArr = this.f20936a;
+        if (zArr.length < i10) {
+            boolean[] copyOf = Arrays.copyOf(zArr, kotlin.ranges.d.d(i10, zArr.length * 2));
+            Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
+            this.f20936a = copyOf;
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final byte[] b(int i10) {
-        byte[] bArr;
-        synchronized (this) {
-            bArr = (byte[]) this.f22407a.o();
-            if (bArr != null) {
-                this.f22408b -= bArr.length / 2;
-            } else {
-                bArr = null;
-            }
-        }
-        if (bArr == null) {
-            return new byte[i10];
-        }
-        return bArr;
+    @Override // dt.d2
+    public int d() {
+        return this.f20937b;
+    }
+
+    public final void e(boolean z10) {
+        d2.c(this, 0, 1, null);
+        boolean[] zArr = this.f20936a;
+        int d10 = d();
+        this.f20937b = d10 + 1;
+        zArr[d10] = z10;
+    }
+
+    @Override // dt.d2
+    /* renamed from: f */
+    public boolean[] a() {
+        boolean[] copyOf = Arrays.copyOf(this.f20936a, d());
+        Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
+        return copyOf;
     }
 }

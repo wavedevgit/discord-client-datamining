@@ -10,23 +10,23 @@ import org.jetbrains.annotations.NotNull;
 public final class AnnotationsTypeAttribute extends TypeAttribute<AnnotationsTypeAttribute> {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Annotations f35617a;
+    private final Annotations f35007a;
 
     public AnnotationsTypeAttribute(@NotNull Annotations annotations) {
         Intrinsics.checkNotNullParameter(annotations, "annotations");
-        this.f35617a = annotations;
+        this.f35007a = annotations;
     }
 
     public boolean equals(Object obj) {
         if (!(obj instanceof AnnotationsTypeAttribute)) {
             return false;
         }
-        return Intrinsics.areEqual(((AnnotationsTypeAttribute) obj).f35617a, this.f35617a);
+        return Intrinsics.areEqual(((AnnotationsTypeAttribute) obj).f35007a, this.f35007a);
     }
 
     @NotNull
     public final Annotations getAnnotations() {
-        return this.f35617a;
+        return this.f35007a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeAttribute
@@ -36,13 +36,13 @@ public final class AnnotationsTypeAttribute extends TypeAttribute<AnnotationsTyp
     }
 
     public int hashCode() {
-        return this.f35617a.hashCode();
+        return this.f35007a.hashCode();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeAttribute
     @NotNull
     public AnnotationsTypeAttribute add(AnnotationsTypeAttribute annotationsTypeAttribute) {
-        return annotationsTypeAttribute == null ? this : new AnnotationsTypeAttribute(AnnotationsKt.composeAnnotations(this.f35617a, annotationsTypeAttribute.f35617a));
+        return annotationsTypeAttribute == null ? this : new AnnotationsTypeAttribute(AnnotationsKt.composeAnnotations(this.f35007a, annotationsTypeAttribute.f35007a));
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeAttribute

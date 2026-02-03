@@ -1,27 +1,25 @@
 package vo;
-
-import androidx.activity.result.ActivityResultLauncher;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class n implements uq.d {
+public final class n implements wq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final g f51488a;
+    private final com.withpersona.sdk2.inquiry.internal.network.f f51737a;
 
-    public n(g gVar) {
-        this.f51488a = gVar;
+    public n(com.withpersona.sdk2.inquiry.internal.network.f fVar) {
+        this.f51737a = fVar;
     }
 
-    public static n a(g gVar) {
-        return new n(gVar);
+    public static n a(com.withpersona.sdk2.inquiry.internal.network.f fVar) {
+        return new n(fVar);
     }
 
-    public static ActivityResultLauncher c(g gVar) {
-        return (ActivityResultLauncher) uq.g.d(gVar.c());
+    public static String c(com.withpersona.sdk2.inquiry.internal.network.f fVar) {
+        return (String) wq.g.d(fVar.j());
     }
 
     @Override // javax.inject.Provider
     /* renamed from: b */
-    public ActivityResultLauncher get() {
-        return c(this.f51488a);
+    public String get() {
+        return c(this.f51737a);
     }
 }

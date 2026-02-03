@@ -1,11 +1,11 @@
 package com.discord.mobile_voice_overlay;
 
-import bt.v1;
 import com.discord.notifications.renderer.NotificationRenderer;
 import com.discord.primitives.ChannelId;
 import com.discord.primitives.ChannelId$$serializer;
 import com.discord.primitives.GuildId;
 import com.discord.primitives.GuildId$$serializer;
+import dt.v1;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -14,7 +14,7 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.jetbrains.annotations.NotNull;
-@ys.m
+@at.m
 @Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0014\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 12\u00020\u0001:\u000201B/\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\u0007\u0012\u0006\u0010\t\u001a\u00020\u0007¢\u0006\u0004\b\n\u0010\u000bBM\b\u0010\u0012\u0006\u0010\f\u001a\u00020\r\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000f¢\u0006\u0004\b\n\u0010\u0010J\u0010\u0010\u0019\u001a\u00020\u0003HÆ\u0003¢\u0006\u0004\b\u001a\u0010\u0012J\u0010\u0010\u001b\u001a\u00020\u0005HÆ\u0003¢\u0006\u0004\b\u001c\u0010\u0012J\t\u0010\u001d\u001a\u00020\u0007HÆ\u0003J\t\u0010\u001e\u001a\u00020\u0007HÆ\u0003J\t\u0010\u001f\u001a\u00020\u0007HÆ\u0003JB\u0010 \u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\u00072\b\b\u0002\u0010\t\u001a\u00020\u0007HÆ\u0001¢\u0006\u0004\b!\u0010\"J\u0013\u0010#\u001a\u00020$2\b\u0010%\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010&\u001a\u00020\rHÖ\u0001J\t\u0010'\u001a\u00020\u0007HÖ\u0001J%\u0010(\u001a\u00020)2\u0006\u0010*\u001a\u00020\u00002\u0006\u0010+\u001a\u00020,2\u0006\u0010-\u001a\u00020.H\u0001¢\u0006\u0002\b/R\u0013\u0010\u0002\u001a\u00020\u0003¢\u0006\n\n\u0002\u0010\u0013\u001a\u0004\b\u0011\u0010\u0012R\u0013\u0010\u0004\u001a\u00020\u0005¢\u0006\n\n\u0002\u0010\u0013\u001a\u0004\b\u0014\u0010\u0012R\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016R\u0011\u0010\b\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0016R\u0011\u0010\t\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0016¨\u00062"}, d2 = {"Lcom/discord/mobile_voice_overlay/MobileVoiceOverlaySelectorResult;", "", "guildId", "Lcom/discord/primitives/GuildId;", "channelId", "Lcom/discord/primitives/ChannelId;", NotificationRenderer.CHANNEL_NAME, "", "guildName", "categoryName", "<init>", "(JJLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILcom/discord/primitives/GuildId;Lcom/discord/primitives/ChannelId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getGuildId-fYKD8eg", "()J", "J", "getChannelId-o4g7jtM", "getChannelName", "()Ljava/lang/String;", "getGuildName", "getCategoryName", "component1", "component1-fYKD8eg", "component2", "component2-o4g7jtM", "component3", "component4", "component5", "copy", "copy-c25twaQ", "(JJLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/discord/mobile_voice_overlay/MobileVoiceOverlaySelectorResult;", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$mobile_voice_overlay_release", "$serializer", "Companion", "mobile_voice_overlay_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class MobileVoiceOverlaySelectorResult {
@@ -74,11 +74,11 @@ public final class MobileVoiceOverlaySelectorResult {
     }
 
     public static final /* synthetic */ void write$Self$mobile_voice_overlay_release(MobileVoiceOverlaySelectorResult mobileVoiceOverlaySelectorResult, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        compositeEncoder.m(serialDescriptor, 0, GuildId$$serializer.INSTANCE, GuildId.m1073boximpl(mobileVoiceOverlaySelectorResult.guildId));
-        compositeEncoder.m(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, ChannelId.m1060boximpl(mobileVoiceOverlaySelectorResult.channelId));
-        compositeEncoder.x(serialDescriptor, 2, mobileVoiceOverlaySelectorResult.channelName);
-        compositeEncoder.x(serialDescriptor, 3, mobileVoiceOverlaySelectorResult.guildName);
-        compositeEncoder.x(serialDescriptor, 4, mobileVoiceOverlaySelectorResult.categoryName);
+        compositeEncoder.D(serialDescriptor, 0, GuildId$$serializer.INSTANCE, GuildId.m1072boximpl(mobileVoiceOverlaySelectorResult.guildId));
+        compositeEncoder.D(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, ChannelId.m1059boximpl(mobileVoiceOverlaySelectorResult.channelId));
+        compositeEncoder.y(serialDescriptor, 2, mobileVoiceOverlaySelectorResult.channelName);
+        compositeEncoder.y(serialDescriptor, 3, mobileVoiceOverlaySelectorResult.guildName);
+        compositeEncoder.y(serialDescriptor, 4, mobileVoiceOverlaySelectorResult.categoryName);
     }
 
     /* renamed from: component1-fYKD8eg  reason: not valid java name */
@@ -121,7 +121,7 @@ public final class MobileVoiceOverlaySelectorResult {
         }
         if (obj instanceof MobileVoiceOverlaySelectorResult) {
             MobileVoiceOverlaySelectorResult mobileVoiceOverlaySelectorResult = (MobileVoiceOverlaySelectorResult) obj;
-            return GuildId.m1077equalsimpl0(this.guildId, mobileVoiceOverlaySelectorResult.guildId) && ChannelId.m1064equalsimpl0(this.channelId, mobileVoiceOverlaySelectorResult.channelId) && Intrinsics.areEqual(this.channelName, mobileVoiceOverlaySelectorResult.channelName) && Intrinsics.areEqual(this.guildName, mobileVoiceOverlaySelectorResult.guildName) && Intrinsics.areEqual(this.categoryName, mobileVoiceOverlaySelectorResult.categoryName);
+            return GuildId.m1076equalsimpl0(this.guildId, mobileVoiceOverlaySelectorResult.guildId) && ChannelId.m1063equalsimpl0(this.channelId, mobileVoiceOverlaySelectorResult.channelId) && Intrinsics.areEqual(this.channelName, mobileVoiceOverlaySelectorResult.channelName) && Intrinsics.areEqual(this.guildName, mobileVoiceOverlaySelectorResult.guildName) && Intrinsics.areEqual(this.categoryName, mobileVoiceOverlaySelectorResult.categoryName);
         }
         return false;
     }
@@ -152,17 +152,17 @@ public final class MobileVoiceOverlaySelectorResult {
     }
 
     public int hashCode() {
-        return (((((((GuildId.m1078hashCodeimpl(this.guildId) * 31) + ChannelId.m1065hashCodeimpl(this.channelId)) * 31) + this.channelName.hashCode()) * 31) + this.guildName.hashCode()) * 31) + this.categoryName.hashCode();
+        return (((((((GuildId.m1077hashCodeimpl(this.guildId) * 31) + ChannelId.m1064hashCodeimpl(this.channelId)) * 31) + this.channelName.hashCode()) * 31) + this.guildName.hashCode()) * 31) + this.categoryName.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1080toStringimpl = GuildId.m1080toStringimpl(this.guildId);
-        String m1067toStringimpl = ChannelId.m1067toStringimpl(this.channelId);
+        String m1079toStringimpl = GuildId.m1079toStringimpl(this.guildId);
+        String m1066toStringimpl = ChannelId.m1066toStringimpl(this.channelId);
         String str = this.channelName;
         String str2 = this.guildName;
         String str3 = this.categoryName;
-        return "MobileVoiceOverlaySelectorResult(guildId=" + m1080toStringimpl + ", channelId=" + m1067toStringimpl + ", channelName=" + str + ", guildName=" + str2 + ", categoryName=" + str3 + ")";
+        return "MobileVoiceOverlaySelectorResult(guildId=" + m1079toStringimpl + ", channelId=" + m1066toStringimpl + ", channelName=" + str + ", guildName=" + str2 + ", categoryName=" + str3 + ")";
     }
 
     public /* synthetic */ MobileVoiceOverlaySelectorResult(long j10, long j11, String str, String str2, String str3, DefaultConstructorMarker defaultConstructorMarker) {
@@ -173,8 +173,8 @@ public final class MobileVoiceOverlaySelectorResult {
         if (31 != (i10 & 31)) {
             v1.b(i10, 31, MobileVoiceOverlaySelectorResult$$serializer.INSTANCE.getDescriptor());
         }
-        this.guildId = guildId.m1082unboximpl();
-        this.channelId = channelId.m1069unboximpl();
+        this.guildId = guildId.m1081unboximpl();
+        this.channelId = channelId.m1068unboximpl();
         this.channelName = str;
         this.guildName = str2;
         this.categoryName = str3;

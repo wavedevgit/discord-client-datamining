@@ -1,29 +1,72 @@
 package mr;
 
-import java.util.Comparator;
+import java.util.Collection;
+import java.util.Iterator;
 import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
-/* JADX INFO: Access modifiers changed from: package-private */
+import kotlin.jvm.internal.markers.KMutableCollection;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class g implements Comparator {
-    @NotNull
+public final class g extends kotlin.collections.e implements Collection, KMutableCollection {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final g f39143d = new g();
+    private final d f39113d;
 
-    private g() {
+    public g(d backing) {
+        Intrinsics.checkNotNullParameter(backing, "backing");
+        this.f39113d = backing;
     }
 
-    @Override // java.util.Comparator
-    /* renamed from: a */
-    public int compare(Comparable a10, Comparable b10) {
-        Intrinsics.checkNotNullParameter(a10, "a");
-        Intrinsics.checkNotNullParameter(b10, "b");
-        return b10.compareTo(a10);
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public boolean add(Object obj) {
+        throw new UnsupportedOperationException();
     }
 
-    @Override // java.util.Comparator
-    public final Comparator reversed() {
-        return f.f39142d;
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public boolean addAll(Collection elements) {
+        Intrinsics.checkNotNullParameter(elements, "elements");
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // kotlin.collections.e
+    public int b() {
+        return this.f39113d.size();
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public void clear() {
+        this.f39113d.clear();
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public boolean contains(Object obj) {
+        return this.f39113d.containsValue(obj);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public boolean isEmpty() {
+        return this.f39113d.isEmpty();
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable
+    public Iterator iterator() {
+        return this.f39113d.O();
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public boolean remove(Object obj) {
+        return this.f39113d.M(obj);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public boolean removeAll(Collection elements) {
+        Intrinsics.checkNotNullParameter(elements, "elements");
+        this.f39113d.l();
+        return super.removeAll(elements);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection
+    public boolean retainAll(Collection elements) {
+        Intrinsics.checkNotNullParameter(elements, "elements");
+        this.f39113d.l();
+        return super.retainAll(elements);
     }
 }

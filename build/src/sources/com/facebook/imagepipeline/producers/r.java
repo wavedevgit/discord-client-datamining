@@ -8,15 +8,15 @@ import kotlin.jvm.internal.Intrinsics;
 public final class r implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final w0 f11548a;
+    private final w0 f10516a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ScheduledExecutorService f11549b;
+    private final ScheduledExecutorService f10517b;
 
     public r(w0 inputProducer, ScheduledExecutorService scheduledExecutorService) {
         Intrinsics.checkNotNullParameter(inputProducer, "inputProducer");
-        this.f11548a = inputProducer;
-        this.f11549b = scheduledExecutorService;
+        this.f10516a = inputProducer;
+        this.f10517b = scheduledExecutorService;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -24,7 +24,7 @@ public final class r implements w0 {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(consumer, "$consumer");
         Intrinsics.checkNotNullParameter(context, "$context");
-        this$0.f11548a.b(consumer, context);
+        this$0.f10516a.b(consumer, context);
     }
 
     @Override // com.facebook.imagepipeline.producers.w0
@@ -32,7 +32,7 @@ public final class r implements w0 {
         Intrinsics.checkNotNullParameter(consumer, "consumer");
         Intrinsics.checkNotNullParameter(context, "context");
         ImageRequest V = context.V();
-        ScheduledExecutorService scheduledExecutorService = this.f11549b;
+        ScheduledExecutorService scheduledExecutorService = this.f10517b;
         if (scheduledExecutorService != null) {
             scheduledExecutorService.schedule(new Runnable() { // from class: com.facebook.imagepipeline.producers.q
                 @Override // java.lang.Runnable
@@ -41,7 +41,7 @@ public final class r implements w0 {
                 }
             }, V.getDelayMs(), TimeUnit.MILLISECONDS);
         } else {
-            this.f11548a.b(consumer, context);
+            this.f10516a.b(consumer, context);
         }
     }
 }

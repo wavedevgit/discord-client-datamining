@@ -77,7 +77,7 @@ public final class FlaggedMessageEmbedAccessory extends MessageAccessory {
         }
         if (obj instanceof FlaggedMessageEmbedAccessory) {
             FlaggedMessageEmbedAccessory flaggedMessageEmbedAccessory = (FlaggedMessageEmbedAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, flaggedMessageEmbedAccessory.messageId) && Intrinsics.areEqual(this.margins, flaggedMessageEmbedAccessory.margins) && Intrinsics.areEqual(this.message, flaggedMessageEmbedAccessory.message) && Intrinsics.areEqual(this.messageContext, flaggedMessageEmbedAccessory.messageContext);
+            return MessageId.m1089equalsimpl0(this.messageId, flaggedMessageEmbedAccessory.messageId) && Intrinsics.areEqual(this.margins, flaggedMessageEmbedAccessory.margins) && Intrinsics.areEqual(this.message, flaggedMessageEmbedAccessory.message) && Intrinsics.areEqual(this.messageContext, flaggedMessageEmbedAccessory.messageContext);
         }
         return false;
     }
@@ -105,16 +105,16 @@ public final class FlaggedMessageEmbedAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (((((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + this.message.hashCode()) * 31) + this.messageContext.hashCode();
+        return (((((MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + this.message.hashCode()) * 31) + this.messageContext.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         MessageMargins messageMargins = this.margins;
         Message message = this.message;
         MessageContext messageContext = this.messageContext;
-        return "FlaggedMessageEmbedAccessory(messageId=" + m1093toStringimpl + ", margins=" + messageMargins + ", message=" + message + ", messageContext=" + messageContext + ")";
+        return "FlaggedMessageEmbedAccessory(messageId=" + m1092toStringimpl + ", margins=" + messageMargins + ", message=" + message + ", messageContext=" + messageContext + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

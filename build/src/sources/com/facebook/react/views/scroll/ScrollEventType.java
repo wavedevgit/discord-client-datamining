@@ -1,10 +1,10 @@
 package com.facebook.react.views.scroll;
 
-import jr.p;
 import kotlin.Metadata;
 import kotlin.enums.EnumEntries;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
+import lr.p;
 import org.jetbrains.annotations.NotNull;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
@@ -93,7 +93,7 @@ public final class ScrollEventType {
     static {
         ScrollEventType[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = qr.a.a($values);
+        $ENTRIES = sr.a.a($values);
         Companion = new Companion(null);
     }
 

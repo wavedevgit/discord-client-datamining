@@ -9,12 +9,12 @@ import kotlin.jvm.internal.Intrinsics;
 final /* synthetic */ class c implements Promise.OnRejectedCallback, FunctionAdapter {
 
     /* renamed from: d  reason: collision with root package name */
-    private final /* synthetic */ Function1 f17892d;
+    private final /* synthetic */ Function1 f16860d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(Function1 function) {
         Intrinsics.checkNotNullParameter(function, "function");
-        this.f17892d = function;
+        this.f16860d = function;
     }
 
     public final boolean equals(Object obj) {
@@ -26,7 +26,7 @@ final /* synthetic */ class c implements Promise.OnRejectedCallback, FunctionAda
 
     @Override // kotlin.jvm.internal.FunctionAdapter
     public final Function getFunctionDelegate() {
-        return this.f17892d;
+        return this.f16860d;
     }
 
     public final int hashCode() {
@@ -35,6 +35,6 @@ final /* synthetic */ class c implements Promise.OnRejectedCallback, FunctionAda
 
     @Override // com.margelo.nitro.core.Promise.OnRejectedCallback
     public final /* synthetic */ void onRejected(Throwable th2) {
-        this.f17892d.invoke(th2);
+        this.f16860d.invoke(th2);
     }
 }

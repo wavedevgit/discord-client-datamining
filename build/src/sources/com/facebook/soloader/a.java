@@ -7,14 +7,14 @@ import java.io.File;
 public class a extends e0 implements w {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f12061a;
+    private final int f11029a;
 
     /* renamed from: b  reason: collision with root package name */
-    private f f12062b;
+    private f f11030b;
 
     public a(Context context, int i10) {
-        this.f12061a = i10;
-        this.f12062b = new f(f(context), i10);
+        this.f11029a = i10;
+        this.f11030b = new f(f(context), i10);
     }
 
     private static File f(Context context) {
@@ -23,7 +23,7 @@ public class a extends e0 implements w {
 
     @Override // com.facebook.soloader.w
     public e0 b(Context context) {
-        this.f12062b = new f(f(context), this.f12061a | 1);
+        this.f11030b = new f(f(context), this.f11029a | 1);
         return this;
     }
 
@@ -34,17 +34,17 @@ public class a extends e0 implements w {
 
     @Override // com.facebook.soloader.e0
     public int d(String str, int i10, StrictMode.ThreadPolicy threadPolicy) {
-        return this.f12062b.d(str, i10, threadPolicy);
+        return this.f11030b.d(str, i10, threadPolicy);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // com.facebook.soloader.e0
     public void e(int i10) {
-        this.f12062b.e(i10);
+        this.f11030b.e(i10);
     }
 
     @Override // com.facebook.soloader.e0
     public String toString() {
-        return c() + "[" + this.f12062b.toString() + "]";
+        return c() + "[" + this.f11030b.toString() + "]";
     }
 }

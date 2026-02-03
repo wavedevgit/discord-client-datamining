@@ -43,14 +43,14 @@ public final class AppRatingRequestModule extends NativeAppRatingRequestModuleSp
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit requestRating$lambda$0(Promise promise) {
         promise.resolve(0);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit requestRating$lambda$1(Promise promise, Exception exception) {
         Intrinsics.checkNotNullParameter(exception, "exception");
         promise.reject(exception);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     @NotNull

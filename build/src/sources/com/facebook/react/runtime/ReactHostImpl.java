@@ -120,7 +120,7 @@ public final class ReactHostImpl implements ReactHost {
     private volatile boolean hostInvalidated;
 
     /* renamed from: id  reason: collision with root package name */
-    private final int f11844id;
+    private final int f10812id;
     @NotNull
     private final AtomicReference<WeakReference<Activity>> lastUsedActivityRef;
     private MemoryPressureListener memoryPressureListener;
@@ -214,7 +214,7 @@ public final class ReactHostImpl implements ReactHost {
         BridgelessReactStateTracker bridgelessReactStateTracker = new BridgelessReactStateTracker(ReactBuildConfig.DEBUG);
         this.bridgelessReactStateTracker = bridgelessReactStateTracker;
         this.reactLifecycleStateManager = new ReactLifecycleStateManager(bridgelessReactStateTracker);
-        this.f11844id = counter.getAndIncrement();
+        this.f10812id = counter.getAndIncrement();
         this.activeActivities = new WeakHashMap();
         this.reactInstanceEventListeners = new CopyOnWriteArrayList();
         this.beforeDestroyListeners = new CopyOnWriteArrayList();
@@ -303,7 +303,7 @@ public final class ReactHostImpl implements ReactHost {
     public static final Unit callFunctionOnModule$lambda$18(String str, String str2, NativeArray nativeArray, ReactInstance reactInstance) {
         Intrinsics.checkNotNullParameter(reactInstance, "reactInstance");
         reactInstance.callFunctionOnModule(str, str2, nativeArray);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     private final Task<Boolean> callWithExistingReactInstance(final String str, Executor executor, final Function1<? super ReactInstance, Unit> function1) {
@@ -563,7 +563,7 @@ public final class ReactHostImpl implements ReactHost {
         reactHostImpl.stopAttachedSurfaces(str, reactInstance);
         synchronized (reactHostImpl.attachedSurfaces) {
             reactHostImpl.attachedSurfaces.clear();
-            Unit unit = Unit.f33074a;
+            Unit unit = Unit.f32464a;
         }
         return task;
     }
@@ -1061,7 +1061,7 @@ public final class ReactHostImpl implements ReactHost {
         Intrinsics.checkNotNullParameter(reactInstance, "reactInstance");
         reactHostImpl.log(str, "Execute");
         reactInstance.loadJSBundle(jSBundleLoader);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     private final Task<JSBundleLoader> loadJSBundleFromMetro() {
@@ -1100,7 +1100,7 @@ public final class ReactHostImpl implements ReactHost {
     /* JADX INFO: Access modifiers changed from: private */
     public final void log(String str, String str2) {
         BridgelessReactStateTracker bridgelessReactStateTracker = this.bridgelessReactStateTracker;
-        int i10 = this.f11844id;
+        int i10 = this.f10812id;
         bridgelessReactStateTracker.enterState("ReactHost{" + i10 + "}." + str + ": " + str2);
     }
 
@@ -1120,7 +1120,7 @@ public final class ReactHostImpl implements ReactHost {
         Intrinsics.checkNotNullParameter(reactInstance, "reactInstance");
         reactHostImpl.log(str, "Execute");
         reactInstance.prerenderSurface(reactSurfaceImpl);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     private final void raiseSoftException(String str, String str2, Throwable th2) {
@@ -1143,7 +1143,7 @@ public final class ReactHostImpl implements ReactHost {
         reactInstance.registerSegment(i10, str2);
         if (callback != null) {
             callback.invoke(new Object[0]);
-            return Unit.f33074a;
+            return Unit.f32464a;
         }
         throw new IllegalStateException("Required value was null.");
     }
@@ -1238,7 +1238,7 @@ public final class ReactHostImpl implements ReactHost {
                 for (ReactSurfaceImpl reactSurfaceImpl : this.attachedSurfaces) {
                     reactInstance.startSurface(reactSurfaceImpl);
                 }
-                Unit unit = Unit.f33074a;
+                Unit unit = Unit.f32464a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -1250,7 +1250,7 @@ public final class ReactHostImpl implements ReactHost {
         Intrinsics.checkNotNullParameter(reactInstance, "reactInstance");
         reactHostImpl.log(str, "Execute");
         reactInstance.startSurface(reactSurfaceImpl);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     private final void stopAttachedSurfaces(String str, ReactInstance reactInstance) {
@@ -1261,7 +1261,7 @@ public final class ReactHostImpl implements ReactHost {
                     reactInstance.stopSurface(reactSurfaceImpl);
                     reactSurfaceImpl.clear();
                 }
-                Unit unit = Unit.f33074a;
+                Unit unit = Unit.f32464a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -1273,7 +1273,7 @@ public final class ReactHostImpl implements ReactHost {
         Intrinsics.checkNotNullParameter(reactInstance, "reactInstance");
         reactHostImpl.log(str, "Execute");
         reactInstance.stopSurface(reactSurfaceImpl);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1816,7 +1816,7 @@ public final class ReactHostImpl implements ReactHost {
 
     private final void log(String str) {
         BridgelessReactStateTracker bridgelessReactStateTracker = this.bridgelessReactStateTracker;
-        int i10 = this.f11844id;
+        int i10 = this.f10812id;
         bridgelessReactStateTracker.enterState("ReactHost{" + i10 + "}." + str);
     }
 

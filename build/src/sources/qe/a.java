@@ -11,12 +11,12 @@ public interface a extends IInterface {
 
     /* renamed from: qe.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static abstract class AbstractBinderC0580a extends b implements a {
+    public static abstract class AbstractBinderC0575a extends b implements a {
 
         /* renamed from: qe.a$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        public static class C0581a extends wb.a implements a {
-            C0581a(IBinder iBinder) {
+        public static class C0576a extends wb.a implements a {
+            C0576a(IBinder iBinder) {
                 super(iBinder);
             }
 
@@ -39,7 +39,7 @@ public interface a extends IInterface {
             if (queryLocalInterface instanceof a) {
                 return (a) queryLocalInterface;
             }
-            return new C0581a(iBinder);
+            return new C0576a(iBinder);
         }
     }
 

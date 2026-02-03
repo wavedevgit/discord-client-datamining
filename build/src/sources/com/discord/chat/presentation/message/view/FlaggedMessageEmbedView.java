@@ -122,21 +122,21 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
         }
         connectionsRoleTagView.setVisibility(i11);
         if (message.getConnectionsRoleTag() != null) {
-            connectionsRoleTagView.m505configureConnectionsRoleTaguESh2Cg(message.m235getAuthorIdwUX8bhU(), message.m238getGuildIdqOKuAAo(), ChannelId.m1060boximpl(message.m236getChannelIdo4g7jtM()), message.getConnectionsRoleTag(), chatEventHandler);
+            connectionsRoleTagView.m505configureConnectionsRoleTaguESh2Cg(message.m235getAuthorIdwUX8bhU(), message.m238getGuildIdqOKuAAo(), ChannelId.m1059boximpl(message.m236getChannelIdo4g7jtM()), message.getConnectionsRoleTag(), chatEventHandler);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void configureAuthor$lambda$22$lambda$20(Message message, ChatEventHandler chatEventHandler, View view) {
         if (message.m235getAuthorIdwUX8bhU() != null) {
-            chatEventHandler.mo450onTapAvatarx5gers8(message.m239getId3Eiw7ao(), message.m235getAuthorIdwUX8bhU().m1147unboximpl());
+            chatEventHandler.mo450onTapAvatarx5gers8(message.m239getId3Eiw7ao(), message.m235getAuthorIdwUX8bhU().m1146unboximpl());
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final boolean configureAuthor$lambda$22$lambda$21(Message message, ChatEventHandler chatEventHandler, View view) {
         if (message.m235getAuthorIdwUX8bhU() != null) {
-            chatEventHandler.mo441onLongPressAvatarx5gers8(message.m239getId3Eiw7ao(), message.m235getAuthorIdwUX8bhU().m1147unboximpl());
+            chatEventHandler.mo441onLongPressAvatarx5gers8(message.m239getId3Eiw7ao(), message.m235getAuthorIdwUX8bhU().m1146unboximpl());
             return true;
         }
         return true;
@@ -145,7 +145,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
     /* JADX INFO: Access modifiers changed from: private */
     public static final void configureAuthor$lambda$24$lambda$23(Message message, ChatEventHandler chatEventHandler, View view) {
         if (message.m235getAuthorIdwUX8bhU() != null) {
-            chatEventHandler.mo444onLongPressUsernamex5gers8(message.m239getId3Eiw7ao(), message.m235getAuthorIdwUX8bhU().m1147unboximpl());
+            chatEventHandler.mo444onLongPressUsernamex5gers8(message.m239getId3Eiw7ao(), message.m235getAuthorIdwUX8bhU().m1146unboximpl());
         }
     }
 
@@ -284,7 +284,7 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit unit;
-                    unit = Unit.f33074a;
+                    unit = Unit.f32464a;
                     return unit;
                 }
             }, new Function1() { // from class: com.discord.chat.presentation.message.view.l1
@@ -311,8 +311,8 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
             }, new Function1<MessageId, Unit>() { // from class: com.discord.chat.presentation.message.view.FlaggedMessageEmbedView$configureMessageContent$1$14
                 @Override // kotlin.jvm.functions.Function1
                 public /* bridge */ /* synthetic */ Object invoke(Object obj) {
-                    m693invoke1xi1bu0(((MessageId) obj).m1095unboximpl());
-                    return Unit.f33074a;
+                    m693invoke1xi1bu0(((MessageId) obj).m1094unboximpl());
+                    return Unit.f32464a;
                 }
 
                 /* renamed from: invoke-1xi1bu0  reason: not valid java name */
@@ -358,37 +358,37 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit configureMessageContent$lambda$18$lambda$10(CommandMentionContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit configureMessageContent$lambda$18$lambda$11(CommandMentionContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit configureMessageContent$lambda$18$lambda$13(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit configureMessageContent$lambda$18$lambda$14(InlineCodeContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit configureMessageContent$lambda$18$lambda$15(EmojiContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit configureMessageContent$lambda$18$lambda$16(SoundmojiContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -400,44 +400,44 @@ public final class FlaggedMessageEmbedView extends ConstraintLayout implements V
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit configureMessageContent$lambda$18$lambda$3(LinkContentNode linkContentNode) {
         Intrinsics.checkNotNullParameter(linkContentNode, "<unused var>");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit configureMessageContent$lambda$18$lambda$4(LinkContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit configureMessageContent$lambda$18$lambda$5(String str, String str2, String str3) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit configureMessageContent$lambda$18$lambda$6(String str, String str2, String str3, String str4) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit configureMessageContent$lambda$18$lambda$7(String str) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit configureMessageContent$lambda$18$lambda$8(String str, String str2) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
         Intrinsics.checkNotNullParameter(str2, "<unused var>");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit configureMessageContent$lambda$18$lambda$9(String str, String str2, String str3, String str4) {
         Intrinsics.checkNotNullParameter(str2, "<unused var>");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public static /* synthetic */ void setMessage$default(FlaggedMessageEmbedView flaggedMessageEmbedView, MessageMargins messageMargins, Message message, ChatEventHandler chatEventHandler, boolean z10, int i10, Object obj) {

@@ -9,7 +9,7 @@ public class b extends f {
         try {
             String k10 = new e3.a(context.getContentResolver().openInputStream(uri)).k("DateTime");
             if (k10 != null) {
-                this.f17773a = a(k10, "yyyy:MM:dd HH:mm:ss");
+                this.f16741a = a(k10, "yyyy:MM:dd HH:mm:ss");
             }
         } catch (Exception e10) {
             Log.e("RNIP", "Could not load image metadata: " + e10.getMessage());
@@ -17,6 +17,6 @@ public class b extends f {
     }
 
     public String b() {
-        return this.f17773a;
+        return this.f16741a;
     }
 }

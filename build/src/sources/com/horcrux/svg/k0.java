@@ -11,26 +11,26 @@ import java.util.Iterator;
 public class k0 extends RenderableView {
 
     /* renamed from: d  reason: collision with root package name */
-    private Path f17601d;
+    private Path f16569d;
 
     public k0(ReactContext reactContext) {
         super(reactContext);
-        j0.f17574a = this.mScale;
-        this.f17601d = new Path();
+        j0.f16542a = this.mScale;
+        this.f16569d = new Path();
     }
 
     public void c(String str) {
         m0[] m0VarArr;
-        this.f17601d = j0.o(str);
-        ArrayList<i0> arrayList = j0.f17579f;
+        this.f16569d = j0.o(str);
+        ArrayList<i0> arrayList = j0.f16547f;
         this.elements = arrayList;
         Iterator<i0> it = arrayList.iterator();
         while (it.hasNext()) {
-            for (m0 m0Var : it.next().f17566b) {
-                double d10 = m0Var.f17628a;
+            for (m0 m0Var : it.next().f16534b) {
+                double d10 = m0Var.f16596a;
                 float f10 = this.mScale;
-                m0Var.f17628a = d10 * f10;
-                m0Var.f17629b *= f10;
+                m0Var.f16596a = d10 * f10;
+                m0Var.f16597b *= f10;
             }
         }
         invalidate();
@@ -39,6 +39,6 @@ public class k0 extends RenderableView {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.horcrux.svg.RenderableView, com.horcrux.svg.VirtualView
     public Path getPath(Canvas canvas, Paint paint) {
-        return this.f17601d;
+        return this.f16569d;
     }
 }

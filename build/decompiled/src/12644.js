@@ -1,40 +1,20 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
-    var1 = function(arg0, arg1) { // Environment: var0
-        _fun96802: for (var _fun96802_ip = 0;;) switch (_fun96802_ip) {
+    var1 = function(arg0) { // Environment: var0
+        _fun96837: for (var _fun96837_ip = 0;;) switch (_fun96837_ip) {
             case 0:
-                var3 = arg0;
-                var1 = arg1;
-                var4 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var6 = 0;
-                var0 = var0[var6];
-                var5 = undefined;
-                var0 = var4.bind(var5)(var0);
-                var0 = var0[var3];
-                if (var0) {
-                    _fun96802_ip = 66;
-                    continue _fun96802
-                }
-            case 37:
-                var4 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var2 = var2[var6];
-                var2 = var4.bind(var5)(var2);
-                if (var1) {
-                    _fun96802_ip = 59;
-                    continue _fun96802
-                }
-            case 57:
-                var1 = {};
-            case 59:
-                var2[var3] = var1;
-                var0 = var1;
-            case 66:
+                var0 = arg0;
+            case 3: // try_start_0
+                var1 = var0;
+                var0 = undefined;
+                var0 = var1.bind(var0)();
+                var0 = !var0;
+            case 15: // try_end0
+                var0 = !var0;
+                return var0;
+            case 20: // catch_target0
+                CatchBlockStart(arg_register = 0);
+                var0 = true;
                 return var0;
         }
     };
@@ -42,4 +22,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12645]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

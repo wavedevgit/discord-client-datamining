@@ -3,17 +3,17 @@ package ff;
 public final class p0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public final b1 f24348a;
+    public final b1 f23940a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f24349b;
+    public final int f23941b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final ef.d f24350c;
+    public final ef.d f23942c;
 
     public p0(b1 b1Var, int i10, ef.d dVar) {
-        this.f24348a = b1Var;
-        this.f24349b = i10;
-        this.f24350c = dVar;
+        this.f23940a = b1Var;
+        this.f23941b = i10;
+        this.f23942c = dVar;
     }
 }

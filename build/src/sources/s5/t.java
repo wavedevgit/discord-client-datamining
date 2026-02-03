@@ -5,22 +5,22 @@ import n5.u;
 public class t implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f48905a;
+    private final String f49315a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final a f48906b;
+    private final a f49316b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final r5.b f48907c;
+    private final r5.b f49317c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final r5.b f48908d;
+    private final r5.b f49318d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final r5.b f48909e;
+    private final r5.b f49319e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final boolean f48910f;
+    private final boolean f49320f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public enum a {
@@ -39,12 +39,12 @@ public class t implements c {
     }
 
     public t(String str, a aVar, r5.b bVar, r5.b bVar2, r5.b bVar3, boolean z10) {
-        this.f48905a = str;
-        this.f48906b = aVar;
-        this.f48907c = bVar;
-        this.f48908d = bVar2;
-        this.f48909e = bVar3;
-        this.f48910f = z10;
+        this.f49315a = str;
+        this.f49316b = aVar;
+        this.f49317c = bVar;
+        this.f49318d = bVar2;
+        this.f49319e = bVar3;
+        this.f49320f = z10;
     }
 
     @Override // s5.c
@@ -53,30 +53,30 @@ public class t implements c {
     }
 
     public r5.b b() {
-        return this.f48908d;
+        return this.f49318d;
     }
 
     public String c() {
-        return this.f48905a;
+        return this.f49315a;
     }
 
     public r5.b d() {
-        return this.f48909e;
+        return this.f49319e;
     }
 
     public r5.b e() {
-        return this.f48907c;
+        return this.f49317c;
     }
 
     public a f() {
-        return this.f48906b;
+        return this.f49316b;
     }
 
     public boolean g() {
-        return this.f48910f;
+        return this.f49320f;
     }
 
     public String toString() {
-        return "Trim Path: {start: " + this.f48907c + ", end: " + this.f48908d + ", offset: " + this.f48909e + "}";
+        return "Trim Path: {start: " + this.f49317c + ", end: " + this.f49318d + ", offset: " + this.f49319e + "}";
     }
 }

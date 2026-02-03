@@ -6,22 +6,22 @@ import kotlin.jvm.internal.Intrinsics;
 final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f49501a;
+    private final List f49712a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f49502b;
+    private final String f49713b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f49503c;
+    private final String f49714c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f49504d;
+    private final String f49715d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f49505e;
+    private final int f49716e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f49506f;
+    private final String f49717f;
 
     public d(List elementsToJoin, String separator, String prefix, String postfix, int i10, String truncated) {
         Intrinsics.checkNotNullParameter(elementsToJoin, "elementsToJoin");
@@ -29,32 +29,32 @@ final class d {
         Intrinsics.checkNotNullParameter(prefix, "prefix");
         Intrinsics.checkNotNullParameter(postfix, "postfix");
         Intrinsics.checkNotNullParameter(truncated, "truncated");
-        this.f49501a = elementsToJoin;
-        this.f49502b = separator;
-        this.f49503c = prefix;
-        this.f49504d = postfix;
-        this.f49505e = i10;
-        this.f49506f = truncated;
+        this.f49712a = elementsToJoin;
+        this.f49713b = separator;
+        this.f49714c = prefix;
+        this.f49715d = postfix;
+        this.f49716e = i10;
+        this.f49717f = truncated;
     }
 
     public final List a() {
-        return this.f49501a;
+        return this.f49712a;
     }
 
     public final int b() {
-        return this.f49505e;
+        return this.f49716e;
     }
 
     public final String c() {
-        return this.f49504d;
+        return this.f49715d;
     }
 
     public final String d() {
-        return this.f49503c;
+        return this.f49714c;
     }
 
     public final String e() {
-        return this.f49502b;
+        return this.f49713b;
     }
 
     public boolean equals(Object obj) {
@@ -65,27 +65,27 @@ final class d {
             return false;
         }
         d dVar = (d) obj;
-        if (Intrinsics.areEqual(this.f49501a, dVar.f49501a) && Intrinsics.areEqual(this.f49502b, dVar.f49502b) && Intrinsics.areEqual(this.f49503c, dVar.f49503c) && Intrinsics.areEqual(this.f49504d, dVar.f49504d) && this.f49505e == dVar.f49505e && Intrinsics.areEqual(this.f49506f, dVar.f49506f)) {
+        if (Intrinsics.areEqual(this.f49712a, dVar.f49712a) && Intrinsics.areEqual(this.f49713b, dVar.f49713b) && Intrinsics.areEqual(this.f49714c, dVar.f49714c) && Intrinsics.areEqual(this.f49715d, dVar.f49715d) && this.f49716e == dVar.f49716e && Intrinsics.areEqual(this.f49717f, dVar.f49717f)) {
             return true;
         }
         return false;
     }
 
     public final String f() {
-        return this.f49506f;
+        return this.f49717f;
     }
 
     public int hashCode() {
-        return (((((((((this.f49501a.hashCode() * 31) + this.f49502b.hashCode()) * 31) + this.f49503c.hashCode()) * 31) + this.f49504d.hashCode()) * 31) + Integer.hashCode(this.f49505e)) * 31) + this.f49506f.hashCode();
+        return (((((((((this.f49712a.hashCode() * 31) + this.f49713b.hashCode()) * 31) + this.f49714c.hashCode()) * 31) + this.f49715d.hashCode()) * 31) + Integer.hashCode(this.f49716e)) * 31) + this.f49717f.hashCode();
     }
 
     public String toString() {
-        List list = this.f49501a;
-        String str = this.f49502b;
-        String str2 = this.f49503c;
-        String str3 = this.f49504d;
-        int i10 = this.f49505e;
-        String str4 = this.f49506f;
+        List list = this.f49712a;
+        String str = this.f49713b;
+        String str2 = this.f49714c;
+        String str3 = this.f49715d;
+        int i10 = this.f49716e;
+        String str4 = this.f49717f;
         return "JoinToStringArguments(elementsToJoin=" + list + ", separator=" + str + ", prefix=" + str2 + ", postfix=" + str3 + ", limit=" + i10 + ", truncated=" + str4 + ")";
     }
 }

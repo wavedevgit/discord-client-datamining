@@ -143,7 +143,7 @@ public abstract class ComponentActivity extends Activity implements LifecycleOwn
         return super.dispatchKeyShortcutEvent(event);
     }
 
-    @jr.c
+    @lr.c
     public <T extends ExtraData> T getExtraData(@NotNull Class<T> extraDataClass) {
         Intrinsics.checkNotNullParameter(extraDataClass, "extraDataClass");
         return (T) this.extraDataMap.get(extraDataClass);
@@ -157,18 +157,18 @@ public abstract class ComponentActivity extends Activity implements LifecycleOwn
     @Override // android.app.Activity
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        a0.f4502e.c(this);
+        a0.f4471e.c(this);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // android.app.Activity
     public void onSaveInstanceState(Bundle outState) {
         Intrinsics.checkNotNullParameter(outState, "outState");
-        this.lifecycleRegistry.o(Lifecycle.State.f4438i);
+        this.lifecycleRegistry.o(Lifecycle.State.f4407i);
         super.onSaveInstanceState(outState);
     }
 
-    @jr.c
+    @lr.c
     public void putExtraData(@NotNull ExtraData extraData) {
         Intrinsics.checkNotNullParameter(extraData, "extraData");
         this.extraDataMap.put(extraData.getClass(), extraData);

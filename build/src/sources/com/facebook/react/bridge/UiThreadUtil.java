@@ -15,7 +15,7 @@ public final class UiThreadUtil {
     @NotNull
     public static final UiThreadUtil INSTANCE = new UiThreadUtil();
     @NotNull
-    private static final Lazy mainHandler$delegate = jr.l.a(jr.o.f32183i, new Function0() { // from class: com.facebook.react.bridge.y
+    private static final Lazy mainHandler$delegate = lr.l.b(lr.o.f37121i, new Function0() { // from class: com.facebook.react.bridge.y
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             Handler mainHandler_delegate$lambda$0;

@@ -10,79 +10,79 @@ import r5.l;
 public class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f49544a;
+    private final List f49755a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final l5.i f49545b;
+    private final l5.i f49756b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f49546c;
+    private final String f49757c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f49547d;
+    private final long f49758d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final a f49548e;
+    private final a f49759e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final long f49549f;
+    private final long f49760f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f49550g;
+    private final String f49761g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final List f49551h;
+    private final List f49762h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final l f49552i;
+    private final l f49763i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final int f49553j;
+    private final int f49764j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final int f49554k;
+    private final int f49765k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final int f49555l;
+    private final int f49766l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final float f49556m;
+    private final float f49767m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final float f49557n;
+    private final float f49768n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final float f49558o;
+    private final float f49769o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final float f49559p;
+    private final float f49770p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final j f49560q;
+    private final j f49771q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final k f49561r;
+    private final k f49772r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final r5.b f49562s;
+    private final r5.b f49773s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final List f49563t;
+    private final List f49774t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final b f49564u;
+    private final b f49775u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final boolean f49565v;
+    private final boolean f49776v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final s5.a f49566w;
+    private final s5.a f49777w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final v5.j f49567x;
+    private final v5.j f49778x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final s5.h f49568y;
+    private final s5.h f49779y;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public enum a {
@@ -106,124 +106,124 @@ public class e {
     }
 
     public e(List list, l5.i iVar, String str, long j10, a aVar, long j11, String str2, List list2, l lVar, int i10, int i11, int i12, float f10, float f11, float f12, float f13, j jVar, k kVar, List list3, b bVar, r5.b bVar2, boolean z10, s5.a aVar2, v5.j jVar2, s5.h hVar) {
-        this.f49544a = list;
-        this.f49545b = iVar;
-        this.f49546c = str;
-        this.f49547d = j10;
-        this.f49548e = aVar;
-        this.f49549f = j11;
-        this.f49550g = str2;
-        this.f49551h = list2;
-        this.f49552i = lVar;
-        this.f49553j = i10;
-        this.f49554k = i11;
-        this.f49555l = i12;
-        this.f49556m = f10;
-        this.f49557n = f11;
-        this.f49558o = f12;
-        this.f49559p = f13;
-        this.f49560q = jVar;
-        this.f49561r = kVar;
-        this.f49563t = list3;
-        this.f49564u = bVar;
-        this.f49562s = bVar2;
-        this.f49565v = z10;
-        this.f49566w = aVar2;
-        this.f49567x = jVar2;
-        this.f49568y = hVar;
+        this.f49755a = list;
+        this.f49756b = iVar;
+        this.f49757c = str;
+        this.f49758d = j10;
+        this.f49759e = aVar;
+        this.f49760f = j11;
+        this.f49761g = str2;
+        this.f49762h = list2;
+        this.f49763i = lVar;
+        this.f49764j = i10;
+        this.f49765k = i11;
+        this.f49766l = i12;
+        this.f49767m = f10;
+        this.f49768n = f11;
+        this.f49769o = f12;
+        this.f49770p = f13;
+        this.f49771q = jVar;
+        this.f49772r = kVar;
+        this.f49774t = list3;
+        this.f49775u = bVar;
+        this.f49773s = bVar2;
+        this.f49776v = z10;
+        this.f49777w = aVar2;
+        this.f49778x = jVar2;
+        this.f49779y = hVar;
     }
 
     public s5.h a() {
-        return this.f49568y;
+        return this.f49779y;
     }
 
     public s5.a b() {
-        return this.f49566w;
+        return this.f49777w;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public l5.i c() {
-        return this.f49545b;
+        return this.f49756b;
     }
 
     public v5.j d() {
-        return this.f49567x;
+        return this.f49778x;
     }
 
     public long e() {
-        return this.f49547d;
+        return this.f49758d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public List f() {
-        return this.f49563t;
+        return this.f49774t;
     }
 
     public a g() {
-        return this.f49548e;
+        return this.f49759e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public List h() {
-        return this.f49551h;
+        return this.f49762h;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b i() {
-        return this.f49564u;
+        return this.f49775u;
     }
 
     public String j() {
-        return this.f49546c;
+        return this.f49757c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public long k() {
-        return this.f49549f;
+        return this.f49760f;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float l() {
-        return this.f49559p;
+        return this.f49770p;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float m() {
-        return this.f49558o;
+        return this.f49769o;
     }
 
     public String n() {
-        return this.f49550g;
+        return this.f49761g;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public List o() {
-        return this.f49544a;
+        return this.f49755a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int p() {
-        return this.f49555l;
+        return this.f49766l;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int q() {
-        return this.f49554k;
+        return this.f49765k;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int r() {
-        return this.f49553j;
+        return this.f49764j;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float s() {
-        return this.f49557n / this.f49545b.e();
+        return this.f49768n / this.f49756b.e();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j t() {
-        return this.f49560q;
+        return this.f49771q;
     }
 
     public String toString() {
@@ -232,26 +232,26 @@ public class e {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public k u() {
-        return this.f49561r;
+        return this.f49772r;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public r5.b v() {
-        return this.f49562s;
+        return this.f49773s;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float w() {
-        return this.f49556m;
+        return this.f49767m;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public l x() {
-        return this.f49552i;
+        return this.f49763i;
     }
 
     public boolean y() {
-        return this.f49565v;
+        return this.f49776v;
     }
 
     public String z(String str) {
@@ -259,15 +259,15 @@ public class e {
         sb2.append(str);
         sb2.append(j());
         sb2.append(ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
-        e t10 = this.f49545b.t(k());
+        e t10 = this.f49756b.t(k());
         if (t10 != null) {
             sb2.append("\t\tParents: ");
             sb2.append(t10.j());
-            e t11 = this.f49545b.t(t10.k());
+            e t11 = this.f49756b.t(t10.k());
             while (t11 != null) {
                 sb2.append("->");
                 sb2.append(t11.j());
-                t11 = this.f49545b.t(t11.k());
+                t11 = this.f49756b.t(t11.k());
             }
             sb2.append(str);
             sb2.append(ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
@@ -283,10 +283,10 @@ public class e {
             sb2.append("\tBackground: ");
             sb2.append(String.format(Locale.US, "%dx%d %X\n", Integer.valueOf(r()), Integer.valueOf(q()), Integer.valueOf(p())));
         }
-        if (!this.f49544a.isEmpty()) {
+        if (!this.f49755a.isEmpty()) {
             sb2.append(str);
             sb2.append("\tShapes:\n");
-            for (Object obj : this.f49544a) {
+            for (Object obj : this.f49755a) {
                 sb2.append(str);
                 sb2.append("\t\t");
                 sb2.append(obj);

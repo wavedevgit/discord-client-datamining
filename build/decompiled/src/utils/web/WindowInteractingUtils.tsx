@@ -36,13 +36,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setCurrentlyInteractingWindowId = var3;
     var1 = function arg0() {
-        _fun60082: for (var _fun60082_ip = 0;;) switch (_fun60082_ip) {
+        _fun60140: for (var _fun60140_ip = 0;;) switch (_fun60140_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var0 = arg0;
                 if (!(var2 === var0)) {
-                    _fun60082_ip = 20;
-                    continue _fun60082
+                    _fun60140_ip = 20;
+                    continue _fun60140
                 }
             case 14:
                 var0 = null;

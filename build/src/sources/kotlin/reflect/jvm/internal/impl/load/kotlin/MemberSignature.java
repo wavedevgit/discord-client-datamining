@@ -1,11 +1,11 @@
 package kotlin.reflect.jvm.internal.impl.load.kotlin;
 
-import jr.p;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.reflect.jvm.internal.impl.metadata.deserialization.NameResolver;
 import kotlin.reflect.jvm.internal.impl.metadata.jvm.JvmProtoBuf;
 import kotlin.reflect.jvm.internal.impl.metadata.jvm.deserialization.JvmMemberSignature;
+import lr.p;
 import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class MemberSignature {
@@ -13,7 +13,7 @@ public final class MemberSignature {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f34313a;
+    private final String f33703a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -74,24 +74,24 @@ public final class MemberSignature {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof MemberSignature) && Intrinsics.areEqual(this.f34313a, ((MemberSignature) obj).f34313a);
+        return (obj instanceof MemberSignature) && Intrinsics.areEqual(this.f33703a, ((MemberSignature) obj).f33703a);
     }
 
     @NotNull
     public final String getSignature() {
-        return this.f34313a;
+        return this.f33703a;
     }
 
     public int hashCode() {
-        return this.f34313a.hashCode();
+        return this.f33703a.hashCode();
     }
 
     @NotNull
     public String toString() {
-        return "MemberSignature(signature=" + this.f34313a + ')';
+        return "MemberSignature(signature=" + this.f33703a + ')';
     }
 
     private MemberSignature(String str) {
-        this.f34313a = str;
+        this.f33703a = str;
     }
 }

@@ -9,24 +9,24 @@ import kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptor
 public class l implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final MemberDeserializer f35566d;
+    private final MemberDeserializer f34956d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ProtoBuf.Property f35567e;
+    private final ProtoBuf.Property f34957e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final DeserializedPropertyDescriptor f35568i;
+    private final DeserializedPropertyDescriptor f34958i;
 
     public l(MemberDeserializer memberDeserializer, ProtoBuf.Property property, DeserializedPropertyDescriptor deserializedPropertyDescriptor) {
-        this.f35566d = memberDeserializer;
-        this.f35567e = property;
-        this.f35568i = deserializedPropertyDescriptor;
+        this.f34956d = memberDeserializer;
+        this.f34957e = property;
+        this.f34958i = deserializedPropertyDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         ConstantValue v10;
-        v10 = MemberDeserializer.v(this.f35566d, this.f35567e, this.f35568i);
+        v10 = MemberDeserializer.v(this.f34956d, this.f34957e, this.f34958i);
         return v10;
     }
 }

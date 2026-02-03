@@ -3,14 +3,14 @@ package fg;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f24392a;
+    public static final com.google.android.gms.common.d f23984a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final com.google.android.gms.common.d[] f24393b;
+    public static final com.google.android.gms.common.d[] f23985b;
 
     static {
         com.google.android.gms.common.d dVar = new com.google.android.gms.common.d("CLIENT_TELEMETRY", 1L);
-        f24392a = dVar;
-        f24393b = new com.google.android.gms.common.d[]{dVar};
+        f23984a = dVar;
+        f23985b = new com.google.android.gms.common.d[]{dVar};
     }
 }

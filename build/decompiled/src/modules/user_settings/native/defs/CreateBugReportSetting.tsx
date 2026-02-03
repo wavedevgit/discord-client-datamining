@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var8.WrenchIcon;
     var1.IconComponent = var8;
     var8 = function arg0() {
-        _fun87966: for (var _fun87966_ip = 0;;) switch (_fun87966_ip) {
+        _fun88058: for (var _fun88058_ip = 0;;) switch (_fun88058_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var3 = _closure1_slot2;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = {};
                 var6 = arg0;
                 if (var6) {
-                    _fun87966_ip = 82;
-                    continue _fun87966
+                    _fun88058_ip = 82;
+                    continue _fun88058
                 }
             case 39:
                 var6 = false;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var8.terminate;
                 var6 = true;
                 var6 = var7.bind(var8)(var6);
-                _fun87966_ip = 120;
-                continue _fun87966;
+                _fun88058_ip = 120;
+                continue _fun88058;
             case 82:
                 var6 = true;
                 var2.bugReporterEnabled = var6;
@@ -127,4 +127,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [803, 805, 9742, 566, 8977, 1234, 11077, 11364, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [803, 805, 9761, 566, 8996, 1234, 11096, 11377, 2]);

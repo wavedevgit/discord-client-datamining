@@ -9,10 +9,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class e extends Event {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f8342b = new a(null);
+    public static final a f7329b = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final WritableMap f8343a;
+    private final WritableMap f7330a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -28,7 +28,7 @@ public final class e extends Event {
     public e(int i10, WritableMap mEventData) {
         super(i10);
         Intrinsics.checkNotNullParameter(mEventData, "mEventData");
-        this.f8343a = mEventData;
+        this.f7330a = mEventData;
     }
 
     @Override // com.facebook.react.uimanager.events.Event
@@ -39,7 +39,7 @@ public final class e extends Event {
     @Override // com.facebook.react.uimanager.events.Event
     public void dispatch(RCTEventEmitter rctEventEmitter) {
         Intrinsics.checkNotNullParameter(rctEventEmitter, "rctEventEmitter");
-        rctEventEmitter.receiveEvent(getViewTag(), internal_getEventNameCompat(), this.f8343a);
+        rctEventEmitter.receiveEvent(getViewTag(), internal_getEventNameCompat(), this.f7330a);
     }
 
     @Override // com.facebook.react.uimanager.events.Event

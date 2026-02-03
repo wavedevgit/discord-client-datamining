@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function() {
-        _fun48907: for (var _fun48907_ip = 0;;) switch (_fun48907_ip) {
+        _fun48937: for (var _fun48937_ip = 0;;) switch (_fun48937_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -27,8 +27,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun48907_ip = 74;
-                continue _fun48907;
+                _fun48937_ip = 74;
+                continue _fun48937;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -84,12 +84,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)(var6);
     var3 = var3.jsx;
     var _closure1_slot7 = var3;
-    var3 = 9;
+    var3 = 11;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
         var3 = function() {
-            _fun48911: for (var _fun48911_ip = 0;;) switch (_fun48911_ip) {
+            _fun48941: for (var _fun48941_ip = 0;;) switch (_fun48941_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -103,16 +103,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = _closure1_slot8;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun48911_ip = 69;
-                        continue _fun48911
+                        _fun48941_ip = 69;
+                        continue _fun48941
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun48911_ip = 105;
-                    continue _fun48911;
+                    _fun48941_ip = 105;
+                    continue _fun48941;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -137,64 +137,97 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'render';
         var4.key = var5;
         var0 = function() {
-            _fun48912: for (var _fun48912_ip = 0;;) switch (_fun48912_ip) {
+            _fun48942: for (var _fun48942_ip = 0;;) switch (_fun48942_ip) {
                 case 0:
-                    var9 = this;
-                    var _closure3_slot0 = var9;
-                    var8 = var9.props;
-                    var6 = var8.rx;
-                    var4 = var8.ry;
-                    var5 = var8.r;
-                    var2 = var8.cx;
-                    var1 = var8.cy;
-                    var11 = var8.fx;
+                    var1 = this;
+                    var _closure3_slot0 = var1;
+                    var15 = var1.props;
+                    var8 = var15.patternTransform;
+                    var16 = var15.transform;
+                    var4 = var15.id;
+                    var14 = var15.x;
+                    var13 = var15.y;
+                    var12 = var15.width;
+                    var7 = var15.height;
+                    var6 = var15.patternUnits;
+                    var5 = var15.patternContentUnits;
+                    var9 = var15.children;
+                    var11 = var15.viewBox;
+                    var10 = var15.preserveAspectRatio;
+                    var17 = _closure1_slot0;
+                    var3 = _closure1_slot1;
+                    var2 = 7;
+                    var2 = var3[var2];
                     var3 = undefined;
-                    if (!(var3 === var11)) {
-                        _fun48912_ip = 58;
-                        continue _fun48912
+                    var2 = var17.bind(var3)(var2);
+                    if (var8) {
+                        _fun48942_ip = 110;
+                        continue _fun48942
                     }
-                case 55:
-                    var11 = var2;
-                case 58:
-                    var10 = var8.fy;
-                    var7 = {};
-                    var7.fx = var11;
-                    if (!(var3 === var10)) {
-                        _fun48912_ip = 78;
-                        continue _fun48912
+                case 107:
+                    var8 = var16;
+                case 110:
+                    if (var8) {
+                        _fun48942_ip = 116;
+                        continue _fun48942
                     }
-                case 75:
-                    var10 = var1;
-                case 78:
-                    var7.fy = var10;
-                    if (var6) {
-                        _fun48912_ip = 89;
-                        continue _fun48912
+                case 113:
+                    var8 = var15;
+                case 116:
+                    var2 = var2.bind(var3)(var8);
+                    var8 = {};
+                    var8.x = var14;
+                    var8.y = var13;
+                    var8.width = var12;
+                    var8.height = var7;
+                    var8.name = var4;
+                    var8.matrix = var2;
+                    var8.patternTransform = var2;
+                    var2 = var6;
+                    if (!var2) {
+                        _fun48942_ip = 183;
+                        continue _fun48942
                     }
-                case 86:
-                    var6 = var5;
-                case 89:
-                    var7.rx = var6;
-                    if (var4) {
-                        _fun48912_ip = 100;
-                        continue _fun48912
+                case 159:
+                    var7 = _closure1_slot0;
+                    var12 = _closure1_slot1;
+                    var4 = 8;
+                    var4 = var12[var4];
+                    var4 = var7.bind(var3)(var4);
+                    var2 = var4[var6];
+                case 183:
+                    if (var2) {
+                        _fun48942_ip = 188;
+                        continue _fun48942
                     }
-                case 97:
-                    var4 = var5;
-                case 100:
-                    var7.ry = var4;
-                    var7.cx = var2;
-                    var7.cy = var1;
+                case 186:
+                    var2 = 0;
+                case 188:
+                    var8.patternUnits = var2;
+                    var2 = 1;
+                    if (!var5) {
+                        _fun48942_ip = 223;
+                        continue _fun48942
+                    }
+                case 199:
+                    var6 = _closure1_slot0;
+                    var7 = _closure1_slot1;
+                    var4 = 8;
+                    var4 = var7[var4];
+                    var4 = var6.bind(var3)(var4);
+                    var2 = var4[var5];
+                case 223:
+                    var8.patternContentUnits = var2;
                     var2 = _closure1_slot7;
-                    var10 = _closure1_slot0;
-                    var11 = _closure1_slot1;
-                    var1 = 7;
-                    var1 = var11[var1];
-                    var1 = var10.bind(var3)(var1);
-                    var4 = global;
-                    var6 = var4.Object;
-                    var5 = var6.assign;
-                    var4 = {};
+                    var4 = _closure1_slot0;
+                    var12 = _closure1_slot1;
+                    var1 = 9;
+                    var1 = var12[var1];
+                    var1 = var4.bind(var3)(var1);
+                    var5 = global;
+                    var7 = var5.Object;
+                    var6 = var7.assign;
+                    var5 = {};
                     var0 = function arg0() {
                         var2 = _closure3_slot0;
                         var1 = var2.refMethod;
@@ -202,12 +235,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var0 = var1.bind(var2)(var0);
                         return var0;
                     };
-                    var4.ref = var0;
-                    var0 = 8;
-                    var0 = var11[var0];
-                    var0 = var10.bind(var3)(var0);
-                    var0 = var0.bind(var3)(var8, var9);
-                    var0 = var5.bind(var6)(var4, var7, var0);
+                    var5.ref = var0;
+                    var0 = 10;
+                    var0 = var12[var0];
+                    var4 = var4.bind(var3)(var0);
+                    var0 = {};
+                    var0.viewBox = var11;
+                    var0.preserveAspectRatio = var10;
+                    var19 = var4.bind(var3)(var0);
+                    var0 = {};
+                    var0.children = var9;
+                    var22 = var7;
+                    var21 = var5;
+                    var20 = var8;
+                    var18 = var0;
+                    var0 = var22[var6](var21, var20, var19, var18, var17);
                     var0 = var2.bind(var3)(var1, var0);
                     return var0;
             }
@@ -219,14 +261,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1 = var1.bind(var0)(var3);
-    var3 = 'RadialGradient';
+    var3 = 'Pattern';
     var1.displayName = var3;
     var3 = {
-        'cx': '50%',
-        'cy': '50%',
-        'r': '50%'
+        'x': '0%',
+        'y': '0%',
+        'width': '100%',
+        'height': '100%'
     };
     var1.defaultProps = var3;
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 31, 33, 5547, 5532, 5479]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 31, 33, 5468, 5538, 5547, 5473, 5484]);

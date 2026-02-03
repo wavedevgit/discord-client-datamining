@@ -9,33 +9,33 @@ import android.widget.TextView;
 class AppCompatEmojiTextHelper {
 
     /* renamed from: a  reason: collision with root package name */
-    private final TextView f1474a;
+    private final TextView f1443a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final d3.f f1475b;
+    private final d3.f f1444b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public AppCompatEmojiTextHelper(TextView textView) {
-        this.f1474a = textView;
-        this.f1475b = new d3.f(textView, false);
+        this.f1443a = textView;
+        this.f1444b = new d3.f(textView, false);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public InputFilter[] a(InputFilter[] inputFilterArr) {
-        return this.f1475b.a(inputFilterArr);
+        return this.f1444b.a(inputFilterArr);
     }
 
     public boolean b() {
-        return this.f1475b.b();
+        return this.f1444b.b();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void c(AttributeSet attributeSet, int i10) {
-        TypedArray obtainStyledAttributes = this.f1474a.getContext().obtainStyledAttributes(attributeSet, f.j.f23449g0, i10, 0);
+        TypedArray obtainStyledAttributes = this.f1443a.getContext().obtainStyledAttributes(attributeSet, f.j.f23041g0, i10, 0);
         try {
             boolean z10 = true;
-            if (obtainStyledAttributes.hasValue(f.j.f23519u0)) {
-                z10 = obtainStyledAttributes.getBoolean(f.j.f23519u0, true);
+            if (obtainStyledAttributes.hasValue(f.j.f23111u0)) {
+                z10 = obtainStyledAttributes.getBoolean(f.j.f23111u0, true);
             }
             obtainStyledAttributes.recycle();
             e(z10);
@@ -47,15 +47,15 @@ class AppCompatEmojiTextHelper {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void d(boolean z10) {
-        this.f1475b.c(z10);
+        this.f1444b.c(z10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void e(boolean z10) {
-        this.f1475b.d(z10);
+        this.f1444b.d(z10);
     }
 
     public TransformationMethod f(TransformationMethod transformationMethod) {
-        return this.f1475b.e(transformationMethod);
+        return this.f1444b.e(transformationMethod);
     }
 }

@@ -17,7 +17,7 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CoroutineScope;
-import pr.b;
+import rr.b;
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.media.MediaManagerModule$getVideoMetadata$1", f = "MediaManagerModule.kt", l = {}, m = "invokeSuspend")
 @SourceDebugExtension({"SMAP\nMediaManagerModule.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MediaManagerModule.kt\ncom/discord/media/MediaManagerModule$getVideoMetadata$1\n+ 2 _Maps.kt\nkotlin/collections/MapsKt___MapsKt\n*L\n1#1,749:1\n216#2,2:750\n*S KotlinDebug\n*F\n+ 1 MediaManagerModule.kt\ncom/discord/media/MediaManagerModule$getVideoMetadata$1\n*L\n217#1:750,2\n*E\n"})
@@ -57,7 +57,7 @@ final class MediaManagerModule$getVideoMetadata$1 extends k implements Function2
             Uri uri = this.$inputUri;
             Promise promise = this.$promise;
             try {
-                Result.a aVar = Result.f33071e;
+                Result.a aVar = Result.f32461e;
                 mediaResolver = mediaManagerModule.mediaResolver;
                 Map<String, Object> handleVideoMetadata = mediaResolver.handleVideoMetadata(uri);
                 WritableMap createMap = Arguments.createMap();
@@ -77,9 +77,9 @@ final class MediaManagerModule$getVideoMetadata$1 extends k implements Function2
                     }
                 }
                 promise.resolve(createMap);
-                b10 = Result.b(Unit.f33074a);
+                b10 = Result.b(Unit.f32464a);
             } catch (Throwable th2) {
-                Result.a aVar2 = Result.f33071e;
+                Result.a aVar2 = Result.f32461e;
                 b10 = Result.b(c.a(th2));
             }
             Promise promise2 = this.$promise;
@@ -87,13 +87,13 @@ final class MediaManagerModule$getVideoMetadata$1 extends k implements Function2
             if (e10 != null) {
                 promise2.reject(e10);
             }
-            return Unit.f33074a;
+            return Unit.f32464a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaManagerModule$getVideoMetadata$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        return ((MediaManagerModule$getVideoMetadata$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
     }
 }

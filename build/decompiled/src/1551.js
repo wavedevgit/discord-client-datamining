@@ -34,15 +34,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var4.addEventListener;
             var2 = 'hardwareBackPress';
             var1 = function() { // Environment: var0
-                _fun17502: for (var _fun17502_ip = 0;;) switch (_fun17502_ip) {
+                _fun17503: for (var _fun17503_ip = 0;;) switch (_fun17503_ip) {
                     case 0:
                         var0 = _closure2_slot0;
                         var3 = var0.current;
                         var0 = null;
                         var0 = var0 != var3;
                         if (!var0) {
-                            _fun17502_ip = 55;
-                            continue _fun17502
+                            _fun17503_ip = 55;
+                            continue _fun17503
                         }
                     case 21:
                         var1 = var3.canGoBack;
@@ -50,8 +50,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = !var1;
                         var1 = !var2;
                         if (var2) {
-                            _fun17502_ip = 52;
-                            continue _fun17502
+                            _fun17503_ip = 52;
+                            continue _fun17503
                         }
                     case 40:
                         var2 = var3.goBack;

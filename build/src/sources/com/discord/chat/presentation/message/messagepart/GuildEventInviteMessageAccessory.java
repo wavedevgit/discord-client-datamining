@@ -110,7 +110,7 @@ public final class GuildEventInviteMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof GuildEventInviteMessageAccessory) {
             GuildEventInviteMessageAccessory guildEventInviteMessageAccessory = (GuildEventInviteMessageAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, guildEventInviteMessageAccessory.messageId) && Intrinsics.areEqual(this.margins, guildEventInviteMessageAccessory.margins) && this.codedLinkIndex == guildEventInviteMessageAccessory.codedLinkIndex && Intrinsics.areEqual(this.invite, guildEventInviteMessageAccessory.invite) && this.shouldAnimateEmoji == guildEventInviteMessageAccessory.shouldAnimateEmoji && this.shouldShowLinkDecorations == guildEventInviteMessageAccessory.shouldShowLinkDecorations && this.shouldShowRoleDot == guildEventInviteMessageAccessory.shouldShowRoleDot && this.shouldShowRoleOnName == guildEventInviteMessageAccessory.shouldShowRoleOnName;
+            return MessageId.m1089equalsimpl0(this.messageId, guildEventInviteMessageAccessory.messageId) && Intrinsics.areEqual(this.margins, guildEventInviteMessageAccessory.margins) && this.codedLinkIndex == guildEventInviteMessageAccessory.codedLinkIndex && Intrinsics.areEqual(this.invite, guildEventInviteMessageAccessory.invite) && this.shouldAnimateEmoji == guildEventInviteMessageAccessory.shouldAnimateEmoji && this.shouldShowLinkDecorations == guildEventInviteMessageAccessory.shouldShowLinkDecorations && this.shouldShowRoleDot == guildEventInviteMessageAccessory.shouldShowRoleDot && this.shouldShowRoleOnName == guildEventInviteMessageAccessory.shouldShowRoleOnName;
         }
         return false;
     }
@@ -153,12 +153,12 @@ public final class GuildEventInviteMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (((((((((((((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + Integer.hashCode(this.codedLinkIndex)) * 31) + this.invite.hashCode()) * 31) + Boolean.hashCode(this.shouldAnimateEmoji)) * 31) + Boolean.hashCode(this.shouldShowLinkDecorations)) * 31) + Boolean.hashCode(this.shouldShowRoleDot)) * 31) + Boolean.hashCode(this.shouldShowRoleOnName);
+        return (((((((((((((MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + Integer.hashCode(this.codedLinkIndex)) * 31) + this.invite.hashCode()) * 31) + Boolean.hashCode(this.shouldAnimateEmoji)) * 31) + Boolean.hashCode(this.shouldShowLinkDecorations)) * 31) + Boolean.hashCode(this.shouldShowRoleDot)) * 31) + Boolean.hashCode(this.shouldShowRoleOnName);
     }
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         MessageMargins messageMargins = this.margins;
         int i10 = this.codedLinkIndex;
         GuildEventInviteEmbedImpl guildEventInviteEmbedImpl = this.invite;
@@ -166,7 +166,7 @@ public final class GuildEventInviteMessageAccessory extends MessageAccessory {
         boolean z11 = this.shouldShowLinkDecorations;
         boolean z12 = this.shouldShowRoleDot;
         boolean z13 = this.shouldShowRoleOnName;
-        return "GuildEventInviteMessageAccessory(messageId=" + m1093toStringimpl + ", margins=" + messageMargins + ", codedLinkIndex=" + i10 + ", invite=" + guildEventInviteEmbedImpl + ", shouldAnimateEmoji=" + z10 + ", shouldShowLinkDecorations=" + z11 + ", shouldShowRoleDot=" + z12 + ", shouldShowRoleOnName=" + z13 + ")";
+        return "GuildEventInviteMessageAccessory(messageId=" + m1092toStringimpl + ", margins=" + messageMargins + ", codedLinkIndex=" + i10 + ", invite=" + guildEventInviteEmbedImpl + ", shouldAnimateEmoji=" + z10 + ", shouldShowLinkDecorations=" + z11 + ", shouldShowRoleDot=" + z12 + ", shouldShowRoleOnName=" + z13 + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

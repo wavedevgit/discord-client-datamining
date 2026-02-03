@@ -9,27 +9,27 @@ import org.jetbrains.annotations.NotNull;
 public final class ContextClassReceiver extends AbstractReceiverValue implements ImplicitContextReceiver {
 
     /* renamed from: c  reason: collision with root package name */
-    private final ClassDescriptor f35314c;
+    private final ClassDescriptor f34704c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Name f35315d;
+    private final Name f34705d;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ContextClassReceiver(@NotNull ClassDescriptor classDescriptor, @NotNull KotlinType receiverType, Name name, ReceiverValue receiverValue) {
         super(receiverType, receiverValue);
         Intrinsics.checkNotNullParameter(classDescriptor, "classDescriptor");
         Intrinsics.checkNotNullParameter(receiverType, "receiverType");
-        this.f35314c = classDescriptor;
-        this.f35315d = name;
+        this.f34704c = classDescriptor;
+        this.f34705d = name;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.receivers.ImplicitContextReceiver
     public Name getCustomLabelName() {
-        return this.f35315d;
+        return this.f34705d;
     }
 
     @NotNull
     public String toString() {
-        return getType() + ": Ctx { " + this.f35314c + " }";
+        return getType() + ": Ctx { " + this.f34704c + " }";
     }
 }

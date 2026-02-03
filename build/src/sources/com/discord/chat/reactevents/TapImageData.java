@@ -6,9 +6,9 @@ import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import com.facebook.react.uimanager.ViewProps;
-import jr.v;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
+import lr.v;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000<\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0006\n\u0002\b\u0015\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0004\b\u0086\b\u0018\u00002\u00020\u0001:\u00011BO\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\u0006\u0010\u0007\u001a\u00020\b\u0012\b\u0010\t\u001a\u0004\u0018\u00010\n\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\f\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u0005¢\u0006\u0004\b\u000e\u0010\u000fJ\b\u0010\u001f\u001a\u00020 H\u0016J\t\u0010!\u001a\u00020\u0003HÆ\u0003J\t\u0010\"\u001a\u00020\u0005HÆ\u0003J\t\u0010#\u001a\u00020\u0003HÆ\u0003J\t\u0010$\u001a\u00020\bHÆ\u0003J\u0010\u0010%\u001a\u0004\u0018\u00010\nHÆ\u0003¢\u0006\u0002\u0010\u0018J\u0010\u0010&\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u0010\u001bJ\u000b\u0010'\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0010\u0010(\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u0010\u001bJf\u0010)\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00032\b\b\u0002\u0010\u0007\u001a\u00020\b2\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u0005HÆ\u0001¢\u0006\u0002\u0010*J\u0013\u0010+\u001a\u00020,2\b\u0010-\u001a\u0004\u0018\u00010.HÖ\u0003J\t\u0010/\u001a\u00020\u0005HÖ\u0001J\t\u00100\u001a\u00020\u0003HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0013R\u0011\u0010\u0006\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0011R\u0011\u0010\u0007\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016R\u0015\u0010\t\u001a\u0004\u0018\u00010\n¢\u0006\n\n\u0002\u0010\u0019\u001a\u0004\b\u0017\u0010\u0018R\u0015\u0010\u000b\u001a\u0004\u0018\u00010\u0005¢\u0006\n\n\u0002\u0010\u001c\u001a\u0004\b\u001a\u0010\u001bR\u0013\u0010\f\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u0011R\u0015\u0010\r\u001a\u0004\u0018\u00010\u0005¢\u0006\n\n\u0002\u0010\u001c\u001a\u0004\b\u001e\u0010\u001b¨\u00062"}, d2 = {"Lcom/discord/chat/reactevents/TapImageData;", "Lcom/discord/reactevents/ReactEvent;", StackTraceHelper.ID_KEY, "", "index", "", "type", "layout", "Lcom/discord/chat/reactevents/TapImageData$Layout;", "portal", "", "embedIndex", "componentId", "componentMediaIndex", "<init>", "(Ljava/lang/String;ILjava/lang/String;Lcom/discord/chat/reactevents/TapImageData$Layout;Ljava/lang/Double;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;)V", "getId", "()Ljava/lang/String;", "getIndex", "()I", "getType", "getLayout", "()Lcom/discord/chat/reactevents/TapImageData$Layout;", "getPortal", "()Ljava/lang/Double;", "Ljava/lang/Double;", "getEmbedIndex", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "getComponentId", "getComponentMediaIndex", "serialize", "Lcom/facebook/react/bridge/WritableMap;", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "copy", "(Ljava/lang/String;ILjava/lang/String;Lcom/discord/chat/reactevents/TapImageData$Layout;Ljava/lang/Double;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;)Lcom/discord/chat/reactevents/TapImageData;", "equals", "", "other", "", "hashCode", "toString", "Layout", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -19,7 +19,7 @@ public final class TapImageData implements ReactEvent {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9901id;
+    private final String f8869id;
     private final int index;
     @NotNull
     private final Layout layout;
@@ -36,17 +36,17 @@ public final class TapImageData implements ReactEvent {
         private final int width;
 
         /* renamed from: x  reason: collision with root package name */
-        private final int f9902x;
+        private final int f8870x;
 
         /* renamed from: y  reason: collision with root package name */
-        private final int f9903y;
+        private final int f8871y;
 
         public Layout(int i10, int i11, int i12, int i13, @NotNull ViewResizeMode resizeMode) {
             Intrinsics.checkNotNullParameter(resizeMode, "resizeMode");
             this.width = i10;
             this.height = i11;
-            this.f9902x = i12;
-            this.f9903y = i13;
+            this.f8870x = i12;
+            this.f8871y = i13;
             this.resizeMode = resizeMode;
         }
 
@@ -58,10 +58,10 @@ public final class TapImageData implements ReactEvent {
                 i11 = layout.height;
             }
             if ((i14 & 4) != 0) {
-                i12 = layout.f9902x;
+                i12 = layout.f8870x;
             }
             if ((i14 & 8) != 0) {
-                i13 = layout.f9903y;
+                i13 = layout.f8871y;
             }
             if ((i14 & 16) != 0) {
                 viewResizeMode = layout.resizeMode;
@@ -80,11 +80,11 @@ public final class TapImageData implements ReactEvent {
         }
 
         public final int component3() {
-            return this.f9902x;
+            return this.f8870x;
         }
 
         public final int component4() {
-            return this.f9903y;
+            return this.f8871y;
         }
 
         @NotNull
@@ -104,7 +104,7 @@ public final class TapImageData implements ReactEvent {
             }
             if (obj instanceof Layout) {
                 Layout layout = (Layout) obj;
-                return this.width == layout.width && this.height == layout.height && this.f9902x == layout.f9902x && this.f9903y == layout.f9903y && this.resizeMode == layout.resizeMode;
+                return this.width == layout.width && this.height == layout.height && this.f8870x == layout.f8870x && this.f8871y == layout.f8871y && this.resizeMode == layout.resizeMode;
             }
             return false;
         }
@@ -123,28 +123,28 @@ public final class TapImageData implements ReactEvent {
         }
 
         public final int getX() {
-            return this.f9902x;
+            return this.f8870x;
         }
 
         public final int getY() {
-            return this.f9903y;
+            return this.f8871y;
         }
 
         public int hashCode() {
-            return (((((((Integer.hashCode(this.width) * 31) + Integer.hashCode(this.height)) * 31) + Integer.hashCode(this.f9902x)) * 31) + Integer.hashCode(this.f9903y)) * 31) + this.resizeMode.hashCode();
+            return (((((((Integer.hashCode(this.width) * 31) + Integer.hashCode(this.height)) * 31) + Integer.hashCode(this.f8870x)) * 31) + Integer.hashCode(this.f8871y)) * 31) + this.resizeMode.hashCode();
         }
 
         @NotNull
         public final WritableMap serialize() {
-            return NativeMapExtensionsKt.nativeMapOf(v.a("width", Integer.valueOf(this.width)), v.a("height", Integer.valueOf(this.height)), v.a("x", Integer.valueOf(this.f9902x)), v.a("y", Integer.valueOf(this.f9903y)), v.a(ViewProps.RESIZE_MODE, this.resizeMode.getValue()));
+            return NativeMapExtensionsKt.nativeMapOf(v.a("width", Integer.valueOf(this.width)), v.a("height", Integer.valueOf(this.height)), v.a("x", Integer.valueOf(this.f8870x)), v.a("y", Integer.valueOf(this.f8871y)), v.a(ViewProps.RESIZE_MODE, this.resizeMode.getValue()));
         }
 
         @NotNull
         public String toString() {
             int i10 = this.width;
             int i11 = this.height;
-            int i12 = this.f9902x;
-            int i13 = this.f9903y;
+            int i12 = this.f8870x;
+            int i13 = this.f8871y;
             ViewResizeMode viewResizeMode = this.resizeMode;
             return "Layout(width=" + i10 + ", height=" + i11 + ", x=" + i12 + ", y=" + i13 + ", resizeMode=" + viewResizeMode + ")";
         }
@@ -154,7 +154,7 @@ public final class TapImageData implements ReactEvent {
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(type, "type");
         Intrinsics.checkNotNullParameter(layout, "layout");
-        this.f9901id = id2;
+        this.f8869id = id2;
         this.index = i10;
         this.type = type;
         this.layout = layout;
@@ -166,7 +166,7 @@ public final class TapImageData implements ReactEvent {
 
     public static /* synthetic */ TapImageData copy$default(TapImageData tapImageData, String str, int i10, String str2, Layout layout, Double d10, Integer num, String str3, Integer num2, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            str = tapImageData.f9901id;
+            str = tapImageData.f8869id;
         }
         if ((i11 & 2) != 0) {
             i10 = tapImageData.index;
@@ -198,7 +198,7 @@ public final class TapImageData implements ReactEvent {
 
     @NotNull
     public final String component1() {
-        return this.f9901id;
+        return this.f8869id;
     }
 
     public final int component2() {
@@ -245,7 +245,7 @@ public final class TapImageData implements ReactEvent {
         }
         if (obj instanceof TapImageData) {
             TapImageData tapImageData = (TapImageData) obj;
-            return Intrinsics.areEqual(this.f9901id, tapImageData.f9901id) && this.index == tapImageData.index && Intrinsics.areEqual(this.type, tapImageData.type) && Intrinsics.areEqual(this.layout, tapImageData.layout) && Intrinsics.areEqual((Object) this.portal, (Object) tapImageData.portal) && Intrinsics.areEqual(this.embedIndex, tapImageData.embedIndex) && Intrinsics.areEqual(this.componentId, tapImageData.componentId) && Intrinsics.areEqual(this.componentMediaIndex, tapImageData.componentMediaIndex);
+            return Intrinsics.areEqual(this.f8869id, tapImageData.f8869id) && this.index == tapImageData.index && Intrinsics.areEqual(this.type, tapImageData.type) && Intrinsics.areEqual(this.layout, tapImageData.layout) && Intrinsics.areEqual((Object) this.portal, (Object) tapImageData.portal) && Intrinsics.areEqual(this.embedIndex, tapImageData.embedIndex) && Intrinsics.areEqual(this.componentId, tapImageData.componentId) && Intrinsics.areEqual(this.componentMediaIndex, tapImageData.componentMediaIndex);
         }
         return false;
     }
@@ -264,7 +264,7 @@ public final class TapImageData implements ReactEvent {
 
     @NotNull
     public final String getId() {
-        return this.f9901id;
+        return this.f8869id;
     }
 
     public final int getIndex() {
@@ -286,7 +286,7 @@ public final class TapImageData implements ReactEvent {
     }
 
     public int hashCode() {
-        int hashCode = ((((((this.f9901id.hashCode() * 31) + Integer.hashCode(this.index)) * 31) + this.type.hashCode()) * 31) + this.layout.hashCode()) * 31;
+        int hashCode = ((((((this.f8869id.hashCode() * 31) + Integer.hashCode(this.index)) * 31) + this.type.hashCode()) * 31) + this.layout.hashCode()) * 31;
         Double d10 = this.portal;
         int hashCode2 = (hashCode + (d10 == null ? 0 : d10.hashCode())) * 31;
         Integer num = this.embedIndex;
@@ -300,12 +300,12 @@ public final class TapImageData implements ReactEvent {
     @Override // com.discord.reactevents.ReactEvent
     @NotNull
     public WritableMap serialize() {
-        return NativeMapExtensionsKt.nativeMapOf(v.a(StackTraceHelper.ID_KEY, this.f9901id), v.a("index", Integer.valueOf(this.index)), v.a("type", this.type), v.a("layout", this.layout.serialize()), v.a("portal", this.portal), v.a("embedIndex", this.embedIndex), v.a("componentId", this.componentId), v.a("componentMediaIndex", this.componentMediaIndex));
+        return NativeMapExtensionsKt.nativeMapOf(v.a(StackTraceHelper.ID_KEY, this.f8869id), v.a("index", Integer.valueOf(this.index)), v.a("type", this.type), v.a("layout", this.layout.serialize()), v.a("portal", this.portal), v.a("embedIndex", this.embedIndex), v.a("componentId", this.componentId), v.a("componentMediaIndex", this.componentMediaIndex));
     }
 
     @NotNull
     public String toString() {
-        String str = this.f9901id;
+        String str = this.f8869id;
         int i10 = this.index;
         String str2 = this.type;
         Layout layout = this.layout;

@@ -6,7 +6,7 @@ import androidx.work.WorkerParameters;
 public abstract class a0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f32705a = m.i("WorkerFactory");
+    private static final String f32103a = m.i("WorkerFactory");
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends a0 {
@@ -33,7 +33,7 @@ public abstract class a0 {
                 cls = Class.forName(str).asSubclass(androidx.work.c.class);
             } catch (Throwable th2) {
                 m e10 = m.e();
-                String str2 = f32705a;
+                String str2 = f32103a;
                 e10.d(str2, "Invalid class: " + str, th2);
                 cls = null;
             }
@@ -42,7 +42,7 @@ public abstract class a0 {
                     a10 = (androidx.work.c) cls.getDeclaredConstructor(Context.class, WorkerParameters.class).newInstance(context, workerParameters);
                 } catch (Throwable th3) {
                     m e11 = m.e();
-                    String str3 = f32705a;
+                    String str3 = f32103a;
                     e11.d(str3, "Could not instantiate " + str, th3);
                 }
             }

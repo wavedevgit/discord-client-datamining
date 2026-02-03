@@ -5,10 +5,10 @@ import android.app.PendingIntent;
 final class g1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private PendingIntent f16414a;
+    private PendingIntent f15382a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void a(PendingIntent pendingIntent) {
-        this.f16414a = pendingIntent;
+        this.f15382a = pendingIntent;
     }
 }

@@ -20,83 +20,83 @@ import java.util.Collections;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f22796a;
+    private final Context f21487a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f22797b;
+    private final String f21488b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ef.a f22798c;
+    private final ef.a f21489c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final a.d f22799d;
+    private final a.d f21490d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ff.b f22800e;
+    private final ff.b f21491e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Looper f22801f;
+    private final Looper f21492f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f22802g;
+    private final int f21493g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final e f22803h;
+    private final e f21494h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final ff.o f22804i;
+    private final ff.o f21495i;
 
     /* renamed from: j  reason: collision with root package name */
-    protected final ff.e f22805j;
+    protected final ff.e f21496j;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class a {
 
         /* renamed from: c  reason: collision with root package name */
-        public static final a f22806c = new C0303a().a();
+        public static final a f21497c = new C0281a().a();
 
         /* renamed from: a  reason: collision with root package name */
-        public final ff.o f22807a;
+        public final ff.o f21498a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final Looper f22808b;
+        public final Looper f21499b;
 
         /* renamed from: ef.d$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        public static class C0303a {
+        public static class C0281a {
 
             /* renamed from: a  reason: collision with root package name */
-            private ff.o f22809a;
+            private ff.o f21500a;
 
             /* renamed from: b  reason: collision with root package name */
-            private Looper f22810b;
+            private Looper f21501b;
 
             public a a() {
-                if (this.f22809a == null) {
-                    this.f22809a = new ff.a();
+                if (this.f21500a == null) {
+                    this.f21500a = new ff.a();
                 }
-                if (this.f22810b == null) {
-                    this.f22810b = Looper.getMainLooper();
+                if (this.f21501b == null) {
+                    this.f21501b = Looper.getMainLooper();
                 }
-                return new a(this.f22809a, this.f22810b);
+                return new a(this.f21500a, this.f21501b);
             }
 
-            public C0303a b(Looper looper) {
+            public C0281a b(Looper looper) {
                 q.m(looper, "Looper must not be null.");
-                this.f22810b = looper;
+                this.f21501b = looper;
                 return this;
             }
 
-            public C0303a c(ff.o oVar) {
+            public C0281a c(ff.o oVar) {
                 q.m(oVar, "StatusExceptionMapper must not be null.");
-                this.f22809a = oVar;
+                this.f21500a = oVar;
                 return this;
             }
         }
 
         private a(ff.o oVar, Account account, Looper looper) {
-            this.f22807a = oVar;
-            this.f22808b = looper;
+            this.f21498a = oVar;
+            this.f21499b = looper;
         }
     }
 
@@ -106,26 +106,26 @@ public abstract class d {
 
     private final com.google.android.gms.common.api.internal.a A(int i10, com.google.android.gms.common.api.internal.a aVar) {
         aVar.zak();
-        this.f22805j.A(this, i10, aVar);
+        this.f21496j.A(this, i10, aVar);
         return aVar;
     }
 
     private final Task B(int i10, ff.q qVar) {
         wg.k kVar = new wg.k();
-        this.f22805j.B(this, i10, qVar, kVar, this.f22804i);
+        this.f21496j.B(this, i10, qVar, kVar, this.f21495i);
         return kVar.a();
     }
 
     public e m() {
-        return this.f22803h;
+        return this.f21494h;
     }
 
     protected d.a n() {
         d.a aVar = new d.a();
         aVar.d(null);
         aVar.c(Collections.EMPTY_SET);
-        aVar.e(this.f22796a.getClass().getName());
-        aVar.b(this.f22796a.getPackageName());
+        aVar.e(this.f21487a.getClass().getName());
+        aVar.b(this.f21487a.getPackageName());
         return aVar;
     }
 
@@ -151,27 +151,27 @@ public abstract class d {
     }
 
     public final ff.b t() {
-        return this.f22800e;
+        return this.f21491e;
     }
 
     public Context u() {
-        return this.f22796a;
+        return this.f21487a;
     }
 
     protected String v() {
-        return this.f22797b;
+        return this.f21488b;
     }
 
     public Looper w() {
-        return this.f22801f;
+        return this.f21492f;
     }
 
     public final int x() {
-        return this.f22802g;
+        return this.f21493g;
     }
 
     public final a.f y(Looper looper, e0 e0Var) {
-        a.f a10 = ((a.AbstractC0301a) q.l(this.f22798c.a())).a(this.f22796a, looper, n().a(), this.f22799d, e0Var, e0Var);
+        a.f a10 = ((a.AbstractC0279a) q.l(this.f21489c.a())).a(this.f21487a, looper, n().a(), this.f21490d, e0Var, e0Var);
         String v10 = v();
         if (v10 != null && (a10 instanceof gf.c)) {
             ((gf.c) a10).O(v10);
@@ -213,23 +213,23 @@ public abstract class d {
         q.m(aVar, "Api must not be null.");
         q.m(aVar2, "Settings must not be null; use Settings.DEFAULT_SETTINGS instead.");
         Context context2 = (Context) q.m(context.getApplicationContext(), "The provided context did not have an application context.");
-        this.f22796a = context2;
+        this.f21487a = context2;
         if (Build.VERSION.SDK_INT >= 30) {
             s10 = context.getAttributionTag();
         } else {
             s10 = s(context);
         }
-        this.f22797b = s10;
-        this.f22798c = aVar;
-        this.f22799d = dVar;
-        this.f22801f = aVar2.f22808b;
+        this.f21488b = s10;
+        this.f21489c = aVar;
+        this.f21490d = dVar;
+        this.f21492f = aVar2.f21499b;
         ff.b a10 = ff.b.a(aVar, dVar, s10);
-        this.f22800e = a10;
-        this.f22803h = new j0(this);
+        this.f21491e = a10;
+        this.f21494h = new j0(this);
         ff.e u10 = ff.e.u(context2);
-        this.f22805j = u10;
-        this.f22802g = u10.l();
-        this.f22804i = aVar2.f22807a;
+        this.f21496j = u10;
+        this.f21493g = u10.l();
+        this.f21495i = aVar2.f21498a;
         if (activity != null && !(activity instanceof GoogleApiActivity) && Looper.myLooper() == Looper.getMainLooper()) {
             w.u(activity, u10, a10);
         }

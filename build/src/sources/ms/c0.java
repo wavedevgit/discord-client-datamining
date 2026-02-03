@@ -1,24 +1,58 @@
 package ms;
 
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.coroutines.CoroutineContext;
+import kotlinx.coroutines.flow.Flow;
+import kotlinx.coroutines.flow.MutableSharedFlow;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class c0 {
-    public static final b0 b(Object obj) {
-        if (obj != b.f39146a) {
-            Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type S of kotlinx.coroutines.internal.SegmentOrClosed");
-            return (b0) obj;
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final os.e0 f39146a = new os.e0("NO_VALUE");
+
+    public static final MutableSharedFlow a(int i10, int i11, ls.a aVar) {
+        if (i10 >= 0) {
+            if (i11 >= 0) {
+                if (i10 <= 0 && i11 <= 0 && aVar != ls.a.f37142d) {
+                    throw new IllegalArgumentException(("replay or extraBufferCapacity must be positive with non-default onBufferOverflow strategy " + aVar).toString());
+                }
+                int i12 = i11 + i10;
+                if (i12 < 0) {
+                    i12 = Integer.MAX_VALUE;
+                }
+                return new b0(i10, i12, aVar);
+            }
+            throw new IllegalArgumentException(("extraBufferCapacity cannot be negative, but was " + i11).toString());
         }
-        throw new IllegalStateException("Does not contain segment");
+        throw new IllegalArgumentException(("replay cannot be negative, but was " + i10).toString());
     }
 
-    public static final boolean c(Object obj) {
-        if (obj == b.f39146a) {
-            return true;
+    public static /* synthetic */ MutableSharedFlow b(int i10, int i11, ls.a aVar, int i12, Object obj) {
+        if ((i12 & 1) != 0) {
+            i10 = 0;
         }
-        return false;
+        if ((i12 & 2) != 0) {
+            i11 = 0;
+        }
+        if ((i12 & 4) != 0) {
+            aVar = ls.a.f37142d;
+        }
+        return a(i10, i11, aVar);
     }
 
-    public static Object a(Object obj) {
-        return obj;
+    public static final Flow e(a0 a0Var, CoroutineContext coroutineContext, int i10, ls.a aVar) {
+        if ((i10 == 0 || i10 == -3) && aVar == ls.a.f37142d) {
+            return a0Var;
+        }
+        return new ns.h(a0Var, coroutineContext, i10, aVar);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Object f(Object[] objArr, long j10) {
+        return objArr[((int) j10) & (objArr.length - 1)];
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void g(Object[] objArr, long j10, Object obj) {
+        objArr[((int) j10) & (objArr.length - 1)] = obj;
     }
 }

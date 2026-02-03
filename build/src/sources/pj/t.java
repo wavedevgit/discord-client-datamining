@@ -10,7 +10,7 @@ public enum t implements Executor {
     @Override // java.util.concurrent.Executor
     public final void execute(Runnable runnable) {
         Handler handler;
-        handler = g.a().f46082a;
+        handler = g.a().f46040a;
         handler.post(runnable);
     }
 }

@@ -15,15 +15,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
     var3 = function arg0() {
-        _fun38070: for (var _fun38070_ip = 0;;) switch (_fun38070_ip) {
+        _fun38089: for (var _fun38089_ip = 0;;) switch (_fun38089_ip) {
             case 0:
                 var2 = arg0;
                 var0 = var2;
                 var5 = undefined;
                 var1 = undefined;
                 if (var2) {
-                    _fun38070_ip = 17;
-                    continue _fun38070
+                    _fun38089_ip = 17;
+                    continue _fun38089
                 }
             case 13:
                 var2 = false;
@@ -39,22 +39,25 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var2;
                 var0 = var2;
                 if (!var2) {
-                    _fun38070_ip = 76;
-                    continue _fun38070
+                    _fun38089_ip = 97;
+                    continue _fun38089
                 }
             case 60:
-                var2 = var1.majorBrand;
-                var1 = 'avif';
-                var0 = var1 === var2;
-            case 76: // try_end0
+                var3 = ['heic', 'heix', 'hevc', 'hevx', 'heim', 'heis', 'hevm', 'hevs', 'mif1'];
+                var2 = var3.indexOf;
+                var1 = var1.majorBrand;
+                var2 = var2.bind(var3)(var1);
+                var1 = -1;
+                var0 = var1 !== var2;
+            case 97: // try_end0
                 return var0;
-            case 78: // catch_target0
+            case 99: // catch_target0
                 CatchBlockStart(arg_register = 0);
                 var0 = false;
                 return var0;
         }
     };
-    var0.isAvifFile = var3;
+    var0.isHeicFile = var3;
     var2 = function arg0() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
@@ -67,8 +70,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var1.bind(var2)(var0);
         return var0;
     };
-    var0.findAvifOffsets = var2;
+    var0.findHeicOffsets = var2;
     var1.default = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4170]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4174]);

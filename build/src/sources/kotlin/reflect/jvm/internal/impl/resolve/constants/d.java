@@ -8,16 +8,16 @@ import kotlin.reflect.jvm.internal.impl.types.KotlinType;
 public class d implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final KotlinType f35224d;
+    private final KotlinType f34614d;
 
     public d(KotlinType kotlinType) {
-        this.f35224d = kotlinType;
+        this.f34614d = kotlinType;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         KotlinType a10;
-        a10 = TypedArrayValue.a(this.f35224d, (ModuleDescriptor) obj);
+        a10 = TypedArrayValue.a(this.f34614d, (ModuleDescriptor) obj);
         return a10;
     }
 }

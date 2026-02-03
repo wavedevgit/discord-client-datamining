@@ -47,7 +47,7 @@ public class WindowsInsetsManager {
     /* JADX INFO: Access modifiers changed from: private */
     public /* synthetic */ void lambda$updateInsets$1(int i10, int i11) {
         FrameLayout.LayoutParams layoutParams = getLayoutParams(i10, i11);
-        int i12 = f.f23357d;
+        int i12 = f.f22949d;
         Activity currentActivity = getCurrentActivity();
         if (currentActivity == null) {
             Log.e("Reanimated", "Unable to get reference to react activity");
@@ -79,7 +79,7 @@ public class WindowsInsetsManager {
 
     private void setWindowInsets(WindowInsetsCompat windowInsetsCompat) {
         int h10 = WindowInsetsCompat.p.h();
-        updateInsets(windowInsetsCompat.f(h10).f3195b, windowInsetsCompat.f(h10).f3197d);
+        updateInsets(windowInsetsCompat.f(h10).f3164b, windowInsetsCompat.f(h10).f3166d);
     }
 
     private void updateInsets(final int i10, final int i11) {

@@ -1,83 +1,105 @@
 package qp;
-
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import kotlin.collections.CollectionsKt;
-import kotlin.collections.o0;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.ranges.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements a {
-    private final int b(BitmapFactory.Options options, int i10, int i11) {
-        int i12 = options.outHeight;
-        int i13 = options.outWidth;
-        if (i12 <= i11 && i13 <= i10) {
-            return 1;
-        }
-        return Math.min(yr.a.c(i12 / i11), yr.a.c(i13 / i10));
-    }
+public interface b {
 
-    private final Map c(File file) {
-        try {
-            List o10 = CollectionsKt.o("DateTime", "DateTimeDigitized", "ExposureTime", "Flash", "FocalLength", "GPSAltitude", "GPSAltitudeRef", "GPSDateStamp", "GPSLatitude", "GPSLatitudeRef", "GPSLongitude", "GPSLongitudeRef", "GPSProcessingMethod", "GPSTimeStamp", "Make", "Model", "Orientation", "SubSecTime", "WhiteBalance");
-            FileInputStream fileInputStream = new FileInputStream(file);
-            e3.a aVar = new e3.a(fileInputStream);
-            List list = o10;
-            LinkedHashMap linkedHashMap = new LinkedHashMap(d.d(o0.e(CollectionsKt.w(list, 10)), 16));
-            for (Object obj : list) {
-                linkedHashMap.put(obj, aVar.k((String) obj));
-            }
-            ur.c.a(fileInputStream, null);
-            return linkedHashMap;
-        } catch (IOException unused) {
-            return o0.i();
-        }
-    }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a implements b {
 
-    private final void d(File file, Map map) {
-        try {
-            e3.a aVar = new e3.a(file.getAbsolutePath());
-            for (Map.Entry entry : map.entrySet()) {
-                String str = (String) entry.getKey();
-                String str2 = (String) entry.getValue();
-                if (str2 != null) {
-                    aVar.h0(str, str2);
-                }
+        /* renamed from: a  reason: collision with root package name */
+        public static final a f48021a = new a();
+
+        private a() {
+        }
+
+        public boolean equals(Object obj) {
+            if (this == obj || (obj instanceof a)) {
+                return true;
             }
-            aVar.c0();
-        } catch (IOException unused) {
+            return false;
+        }
+
+        public int hashCode() {
+            return -1611120582;
+        }
+
+        public String toString() {
+            return "Pending";
         }
     }
 
-    @Override // qp.a
-    public void a(File file) {
-        Intrinsics.checkNotNullParameter(file, "file");
-        BitmapFactory.Options options = new BitmapFactory.Options();
-        options.inJustDecodeBounds = true;
-        BitmapFactory.decodeFile(file.getAbsolutePath(), options);
-        Map c10 = c(file);
-        try {
-            String absolutePath = file.getAbsolutePath();
-            BitmapFactory.Options options2 = new BitmapFactory.Options();
-            options2.inSampleSize = b(options, 2000, 2000);
-            Bitmap decodeFile = BitmapFactory.decodeFile(absolutePath, options2);
-            FileOutputStream fileOutputStream = new FileOutputStream(file);
-            if (decodeFile != null) {
-                decodeFile.compress(Bitmap.CompressFormat.JPEG, 80, fileOutputStream);
-            }
-            ur.c.a(fileOutputStream, null);
-            if (decodeFile != null) {
-                decodeFile.recycle();
-            }
-        } catch (IllegalArgumentException unused) {
+    /* renamed from: qp.b$b  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0581b implements b {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final C0581b f48022a = new C0581b();
+
+        private C0581b() {
         }
-        d(file, c10);
+
+        public boolean equals(Object obj) {
+            if (this == obj || (obj instanceof C0581b)) {
+                return true;
+            }
+            return false;
+        }
+
+        public int hashCode() {
+            return -39927199;
+        }
+
+        public String toString() {
+            return "Prompt";
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class c implements b {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final c f48023a = new c();
+
+        private c() {
+        }
+
+        public boolean equals(Object obj) {
+            if (this == obj || (obj instanceof c)) {
+                return true;
+            }
+            return false;
+        }
+
+        public int hashCode() {
+            return 5529685;
+        }
+
+        public String toString() {
+            return "Review";
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class d implements b {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final d f48024a = new d();
+
+        private d() {
+        }
+
+        public boolean equals(Object obj) {
+            if (this == obj || (obj instanceof d)) {
+                return true;
+            }
+            return false;
+        }
+
+        public int hashCode() {
+            return -1776980018;
+        }
+
+        public String toString() {
+            return "TakePhoto";
+        }
     }
 }

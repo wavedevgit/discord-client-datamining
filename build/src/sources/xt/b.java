@@ -1,9 +1,11 @@
 package xt;
 
-import okio.Sink;
+import kotlin.jvm.internal.Intrinsics;
+import okhttp3.Cookie;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface b {
-    void a();
-
-    Sink b();
+public abstract class b {
+    public static final String a(Cookie cookie, boolean z10) {
+        Intrinsics.checkNotNullParameter(cookie, "cookie");
+        return cookie.h(z10);
+    }
 }

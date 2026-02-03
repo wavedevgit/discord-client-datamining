@@ -14,7 +14,7 @@ public final class SpoilerIdentifier {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9307id;
+    private final String f8275id;
 
     @Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J%\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000b¢\u0006\u0004\b\f\u0010\r¨\u0006\u000e"}, d2 = {"Lcom/discord/chat/bridge/spoiler/SpoilerIdentifier$Companion;", "", "<init>", "()V", "forNode", "Lcom/discord/chat/bridge/spoiler/SpoilerIdentifier;", "node", "Lcom/discord/chat/bridge/contentnode/SpoilerContentNode;", "containerId", "", "index", "", "forNode-2sfwrmE", "(Lcom/discord/chat/bridge/contentnode/SpoilerContentNode;Ljava/lang/String;I)Ljava/lang/String;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -37,7 +37,7 @@ public final class SpoilerIdentifier {
     }
 
     private /* synthetic */ SpoilerIdentifier(String str) {
-        this.f9307id = str;
+        this.f8275id = str;
     }
 
     /* renamed from: box-impl  reason: not valid java name */
@@ -73,24 +73,24 @@ public final class SpoilerIdentifier {
     }
 
     public boolean equals(Object obj) {
-        return m416equalsimpl(this.f9307id, obj);
+        return m416equalsimpl(this.f8275id, obj);
     }
 
     @NotNull
     public final String getId() {
-        return this.f9307id;
+        return this.f8275id;
     }
 
     public int hashCode() {
-        return m418hashCodeimpl(this.f9307id);
+        return m418hashCodeimpl(this.f8275id);
     }
 
     public String toString() {
-        return m419toStringimpl(this.f9307id);
+        return m419toStringimpl(this.f8275id);
     }
 
     /* renamed from: unbox-impl  reason: not valid java name */
     public final /* synthetic */ String m420unboximpl() {
-        return this.f9307id;
+        return this.f8275id;
     }
 }

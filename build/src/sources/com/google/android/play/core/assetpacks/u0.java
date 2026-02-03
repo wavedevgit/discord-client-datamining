@@ -3,57 +3,57 @@ package com.google.android.play.core.assetpacks;
 final class u0 extends a4 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f16680a;
+    private final int f15648a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f16681b;
+    private final String f15649b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final long f16682c;
+    private final long f15650c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f16683d;
+    private final long f15651d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f16684e;
+    private final int f15652e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public u0(int i10, String str, long j10, long j11, int i11) {
-        this.f16680a = i10;
-        this.f16681b = str;
-        this.f16682c = j10;
-        this.f16683d = j11;
-        this.f16684e = i11;
+        this.f15648a = i10;
+        this.f15649b = str;
+        this.f15650c = j10;
+        this.f15651d = j11;
+        this.f15652e = i11;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.play.core.assetpacks.a4
     public final int a() {
-        return this.f16680a;
+        return this.f15648a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.play.core.assetpacks.a4
     public final int b() {
-        return this.f16684e;
+        return this.f15652e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.play.core.assetpacks.a4
     public final long c() {
-        return this.f16682c;
+        return this.f15650c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.play.core.assetpacks.a4
     public final long d() {
-        return this.f16683d;
+        return this.f15651d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.play.core.assetpacks.a4
     public final String e() {
-        return this.f16681b;
+        return this.f15649b;
     }
 
     public final boolean equals(Object obj) {
@@ -63,7 +63,7 @@ final class u0 extends a4 {
         }
         if (obj instanceof a4) {
             a4 a4Var = (a4) obj;
-            if (this.f16680a == a4Var.a() && ((str = this.f16681b) != null ? str.equals(a4Var.e()) : a4Var.e() == null) && this.f16682c == a4Var.c() && this.f16683d == a4Var.d() && this.f16684e == a4Var.b()) {
+            if (this.f15648a == a4Var.a() && ((str = this.f15649b) != null ? str.equals(a4Var.e()) : a4Var.e() == null) && this.f15650c == a4Var.c() && this.f15651d == a4Var.d() && this.f15652e == a4Var.b()) {
                 return true;
             }
         }
@@ -72,19 +72,19 @@ final class u0 extends a4 {
 
     public final int hashCode() {
         int hashCode;
-        String str = this.f16681b;
+        String str = this.f15649b;
         if (str == null) {
             hashCode = 0;
         } else {
             hashCode = str.hashCode();
         }
-        int i10 = this.f16680a;
-        long j10 = this.f16682c;
-        long j11 = this.f16683d;
-        return ((((((hashCode ^ ((i10 ^ 1000003) * 1000003)) * 1000003) ^ ((int) (j10 ^ (j10 >>> 32)))) * 1000003) ^ ((int) (j11 ^ (j11 >>> 32)))) * 1000003) ^ this.f16684e;
+        int i10 = this.f15648a;
+        long j10 = this.f15650c;
+        long j11 = this.f15651d;
+        return ((((((hashCode ^ ((i10 ^ 1000003) * 1000003)) * 1000003) ^ ((int) (j10 ^ (j10 >>> 32)))) * 1000003) ^ ((int) (j11 ^ (j11 >>> 32)))) * 1000003) ^ this.f15652e;
     }
 
     public final String toString() {
-        return "SliceCheckpoint{fileExtractionStatus=" + this.f16680a + ", filePath=" + this.f16681b + ", fileOffset=" + this.f16682c + ", remainingBytes=" + this.f16683d + ", previousChunk=" + this.f16684e + "}";
+        return "SliceCheckpoint{fileExtractionStatus=" + this.f15648a + ", filePath=" + this.f15649b + ", fileOffset=" + this.f15650c + ", remainingBytes=" + this.f15651d + ", previousChunk=" + this.f15652e + "}";
     }
 }

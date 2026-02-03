@@ -6,27 +6,27 @@ import android.os.PowerManager;
 final class b2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final PowerManager f13083a;
+    private final PowerManager f12051a;
 
     /* renamed from: b  reason: collision with root package name */
-    private PowerManager.WakeLock f13084b;
+    private PowerManager.WakeLock f12052b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f13085c;
+    private boolean f12053c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f13086d;
+    private boolean f12054d;
 
     public b2(Context context) {
-        this.f13083a = (PowerManager) context.getApplicationContext().getSystemService("power");
+        this.f12051a = (PowerManager) context.getApplicationContext().getSystemService("power");
     }
 
     private void c() {
-        PowerManager.WakeLock wakeLock = this.f13084b;
+        PowerManager.WakeLock wakeLock = this.f12052b;
         if (wakeLock == null) {
             return;
         }
-        if (this.f13085c && this.f13086d) {
+        if (this.f12053c && this.f12054d) {
             wakeLock.acquire();
         } else {
             wakeLock.release();
@@ -34,22 +34,22 @@ final class b2 {
     }
 
     public void a(boolean z10) {
-        if (z10 && this.f13084b == null) {
-            PowerManager powerManager = this.f13083a;
+        if (z10 && this.f12052b == null) {
+            PowerManager powerManager = this.f12051a;
             if (powerManager == null) {
                 ne.y.i("WakeLockManager", "PowerManager is null, therefore not creating the WakeLock.");
                 return;
             }
             PowerManager.WakeLock newWakeLock = powerManager.newWakeLock(1, "ExoPlayer:WakeLockManager");
-            this.f13084b = newWakeLock;
+            this.f12052b = newWakeLock;
             newWakeLock.setReferenceCounted(false);
         }
-        this.f13085c = z10;
+        this.f12053c = z10;
         c();
     }
 
     public void b(boolean z10) {
-        this.f13086d = z10;
+        this.f12054d = z10;
         c();
     }
 }

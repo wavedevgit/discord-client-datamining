@@ -11,38 +11,38 @@ import ne.t;
 public final class i extends Surface {
 
     /* renamed from: o  reason: collision with root package name */
-    private static int f42760o;
+    private static int f42560o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static boolean f42761p;
+    private static boolean f42561p;
 
     /* renamed from: d  reason: collision with root package name */
-    public final boolean f42762d;
+    public final boolean f42562d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final b f42763e;
+    private final b f42563e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f42764i;
+    private boolean f42564i;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class b extends HandlerThread implements Handler.Callback {
 
         /* renamed from: d  reason: collision with root package name */
-        private ne.m f42765d;
+        private ne.m f42565d;
 
         /* renamed from: e  reason: collision with root package name */
-        private Handler f42766e;
+        private Handler f42566e;
 
         /* renamed from: i  reason: collision with root package name */
-        private Error f42767i;
+        private Error f42567i;
 
         /* renamed from: o  reason: collision with root package name */
-        private RuntimeException f42768o;
+        private RuntimeException f42568o;
 
         /* renamed from: p  reason: collision with root package name */
-        private i f42769p;
+        private i f42569p;
 
         public b() {
             super("ExoPlayer:PlaceholderSurface");
@@ -50,31 +50,31 @@ public final class i extends Surface {
 
         private void b(int i10) {
             boolean z10;
-            ne.a.e(this.f42765d);
-            this.f42765d.h(i10);
-            SurfaceTexture g10 = this.f42765d.g();
+            ne.a.e(this.f42565d);
+            this.f42565d.h(i10);
+            SurfaceTexture g10 = this.f42565d.g();
             if (i10 != 0) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            this.f42769p = new i(this, g10, z10);
+            this.f42569p = new i(this, g10, z10);
         }
 
         private void d() {
-            ne.a.e(this.f42765d);
-            this.f42765d.i();
+            ne.a.e(this.f42565d);
+            this.f42565d.i();
         }
 
         public i a(int i10) {
             boolean z10;
             start();
-            this.f42766e = new Handler(getLooper(), this);
-            this.f42765d = new ne.m(this.f42766e);
+            this.f42566e = new Handler(getLooper(), this);
+            this.f42565d = new ne.m(this.f42566e);
             synchronized (this) {
                 z10 = false;
-                this.f42766e.obtainMessage(1, i10, 0).sendToTarget();
-                while (this.f42769p == null && this.f42768o == null && this.f42767i == null) {
+                this.f42566e.obtainMessage(1, i10, 0).sendToTarget();
+                while (this.f42569p == null && this.f42568o == null && this.f42567i == null) {
                     try {
                         wait();
                     } catch (InterruptedException unused) {
@@ -85,11 +85,11 @@ public final class i extends Surface {
             if (z10) {
                 Thread.currentThread().interrupt();
             }
-            RuntimeException runtimeException = this.f42768o;
+            RuntimeException runtimeException = this.f42568o;
             if (runtimeException == null) {
-                Error error = this.f42767i;
+                Error error = this.f42567i;
                 if (error == null) {
-                    return (i) ne.a.e(this.f42769p);
+                    return (i) ne.a.e(this.f42569p);
                 }
                 throw error;
             }
@@ -97,8 +97,8 @@ public final class i extends Surface {
         }
 
         public void c() {
-            ne.a.e(this.f42766e);
-            this.f42766e.sendEmptyMessage(2);
+            ne.a.e(this.f42566e);
+            this.f42566e.sendEmptyMessage(2);
         }
 
         @Override // android.os.Handler.Callback
@@ -126,19 +126,19 @@ public final class i extends Surface {
                     }
                 } catch (Error e10) {
                     ne.y.d("PlaceholderSurface", "Failed to initialize placeholder surface", e10);
-                    this.f42767i = e10;
+                    this.f42567i = e10;
                     synchronized (this) {
                         notify();
                     }
                 } catch (RuntimeException e11) {
                     ne.y.d("PlaceholderSurface", "Failed to initialize placeholder surface", e11);
-                    this.f42768o = e11;
+                    this.f42568o = e11;
                     synchronized (this) {
                         notify();
                     }
                 } catch (t.a e12) {
                     ne.y.d("PlaceholderSurface", "Failed to initialize placeholder surface", e12);
-                    this.f42768o = new IllegalStateException(e12);
+                    this.f42568o = new IllegalStateException(e12);
                     synchronized (this) {
                         notify();
                     }
@@ -168,11 +168,11 @@ public final class i extends Surface {
         synchronized (i.class) {
             try {
                 z10 = true;
-                if (!f42761p) {
-                    f42760o = a(context);
-                    f42761p = true;
+                if (!f42561p) {
+                    f42560o = a(context);
+                    f42561p = true;
                 }
-                if (f42760o == 0) {
+                if (f42560o == 0) {
                     z10 = false;
                 }
             } catch (Throwable th2) {
@@ -193,7 +193,7 @@ public final class i extends Surface {
         ne.a.g(z11);
         b bVar = new b();
         if (z10) {
-            i10 = f42760o;
+            i10 = f42560o;
         }
         return bVar.a(i10);
     }
@@ -201,11 +201,11 @@ public final class i extends Surface {
     @Override // android.view.Surface
     public void release() {
         super.release();
-        synchronized (this.f42763e) {
+        synchronized (this.f42563e) {
             try {
-                if (!this.f42764i) {
-                    this.f42763e.c();
-                    this.f42764i = true;
+                if (!this.f42564i) {
+                    this.f42563e.c();
+                    this.f42564i = true;
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -215,7 +215,7 @@ public final class i extends Surface {
 
     private i(b bVar, SurfaceTexture surfaceTexture, boolean z10) {
         super(surfaceTexture);
-        this.f42763e = bVar;
-        this.f42762d = z10;
+        this.f42563e = bVar;
+        this.f42562d = z10;
     }
 }

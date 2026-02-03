@@ -112,7 +112,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface ReportFullyDrawnExecutor extends Executor {
-        void F0(View view);
+        void E0(View view);
 
         void x();
     }
@@ -136,7 +136,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final b f823a = new b();
+        public static final b f792a = new b();
 
         private b() {
         }
@@ -153,25 +153,25 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        private Object f824a;
+        private Object f793a;
 
         /* renamed from: b  reason: collision with root package name */
-        private ViewModelStore f825b;
+        private ViewModelStore f794b;
 
         public final Object a() {
-            return this.f824a;
+            return this.f793a;
         }
 
         public final ViewModelStore b() {
-            return this.f825b;
+            return this.f794b;
         }
 
         public final void c(Object obj) {
-            this.f824a = obj;
+            this.f793a = obj;
         }
 
         public final void d(ViewModelStore viewModelStore) {
-            this.f825b = viewModelStore;
+            this.f794b = viewModelStore;
         }
     }
 
@@ -180,32 +180,32 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
     public final class d implements ReportFullyDrawnExecutor, ViewTreeObserver.OnDrawListener, Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final long f826d = SystemClock.uptimeMillis() + 10000;
+        private final long f795d = SystemClock.uptimeMillis() + 10000;
 
         /* renamed from: e  reason: collision with root package name */
-        private Runnable f827e;
+        private Runnable f796e;
 
         /* renamed from: i  reason: collision with root package name */
-        private boolean f828i;
+        private boolean f797i;
 
         public d() {
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final void b(d dVar) {
-            Runnable runnable = dVar.f827e;
+            Runnable runnable = dVar.f796e;
             if (runnable != null) {
                 Intrinsics.checkNotNull(runnable);
                 runnable.run();
-                dVar.f827e = null;
+                dVar.f796e = null;
             }
         }
 
         @Override // androidx.activity.ComponentActivity.ReportFullyDrawnExecutor
-        public void F0(View view) {
+        public void E0(View view) {
             Intrinsics.checkNotNullParameter(view, "view");
-            if (!this.f828i) {
-                this.f828i = true;
+            if (!this.f797i) {
+                this.f797i = true;
                 view.getViewTreeObserver().addOnDrawListener(this);
             }
         }
@@ -213,10 +213,10 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
         @Override // java.util.concurrent.Executor
         public void execute(Runnable runnable) {
             Intrinsics.checkNotNullParameter(runnable, "runnable");
-            this.f827e = runnable;
+            this.f796e = runnable;
             View decorView = ComponentActivity.this.getWindow().getDecorView();
             Intrinsics.checkNotNullExpressionValue(decorView, "window.decorView");
-            if (this.f828i) {
+            if (this.f797i) {
                 if (Intrinsics.areEqual(Looper.myLooper(), Looper.getMainLooper())) {
                     decorView.invalidate();
                     return;
@@ -235,16 +235,16 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
 
         @Override // android.view.ViewTreeObserver.OnDrawListener
         public void onDraw() {
-            Runnable runnable = this.f827e;
+            Runnable runnable = this.f796e;
             if (runnable != null) {
                 runnable.run();
-                this.f827e = null;
+                this.f796e = null;
                 if (ComponentActivity.this.getFullyDrawnReporter().c()) {
-                    this.f828i = false;
+                    this.f797i = false;
                     ComponentActivity.this.getWindow().getDecorView().post(this);
                 }
-            } else if (SystemClock.uptimeMillis() > this.f826d) {
-                this.f828i = false;
+            } else if (SystemClock.uptimeMillis() > this.f795d) {
+                this.f797i = false;
                 ComponentActivity.this.getWindow().getDecorView().post(this);
             }
         }
@@ -371,23 +371,23 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
         public static final class a extends Lambda implements Function0 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ ComponentActivity f833d;
+            final /* synthetic */ ComponentActivity f802d;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(ComponentActivity componentActivity) {
                 super(0);
-                this.f833d = componentActivity;
+                this.f802d = componentActivity;
             }
 
             @Override // kotlin.jvm.functions.Function0
             public /* bridge */ /* synthetic */ Object invoke() {
-                m2invoke();
-                return Unit.f33074a;
+                m0invoke();
+                return Unit.f32464a;
             }
 
             /* renamed from: invoke  reason: collision with other method in class */
-            public final void m2invoke() {
-                this.f833d.reportFullyDrawn();
+            public final void m0invoke() {
+                this.f802d.reportFullyDrawn();
             }
         }
 
@@ -458,10 +458,10 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
     }
 
     public ComponentActivity() {
-        SavedStateRegistryController b10 = SavedStateRegistryController.f5091c.b(this);
+        SavedStateRegistryController b10 = SavedStateRegistryController.f5060c.b(this);
         this.savedStateRegistryController = b10;
         this.reportFullyDrawnExecutor = o();
-        this.fullyDrawnReporter$delegate = jr.l.b(new g());
+        this.fullyDrawnReporter$delegate = lr.l.a(new g());
         this.nextLocalRequestCode = new AtomicInteger();
         this.activityResultRegistry = new e();
         this.onConfigurationChangedListeners = new CopyOnWriteArrayList<>();
@@ -474,13 +474,13 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
             getLifecycle().a(new androidx.lifecycle.m() { // from class: androidx.activity.c
                 @Override // androidx.lifecycle.m
                 public final void h(LifecycleOwner lifecycleOwner, Lifecycle.a aVar) {
-                    ComponentActivity.i(ComponentActivity.this, lifecycleOwner, aVar);
+                    ComponentActivity.h(ComponentActivity.this, lifecycleOwner, aVar);
                 }
             });
             getLifecycle().a(new androidx.lifecycle.m() { // from class: androidx.activity.d
                 @Override // androidx.lifecycle.m
                 public final void h(LifecycleOwner lifecycleOwner, Lifecycle.a aVar) {
-                    ComponentActivity.j(ComponentActivity.this, lifecycleOwner, aVar);
+                    ComponentActivity.i(ComponentActivity.this, lifecycleOwner, aVar);
                 }
             });
             getLifecycle().a(new a());
@@ -500,8 +500,8 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
                     ComponentActivity.l(ComponentActivity.this, context);
                 }
             });
-            this.defaultViewModelProviderFactory$delegate = jr.l.b(new f());
-            this.onBackPressedDispatcher$delegate = jr.l.b(new h());
+            this.defaultViewModelProviderFactory$delegate = lr.l.a(new f());
+            this.onBackPressedDispatcher$delegate = lr.l.a(new h());
             return;
         }
         throw new IllegalStateException("getLifecycle() returned null in ComponentActivity's constructor. Please make sure you are lazily constructing your Lifecycle in the first call to getLifecycle() rather than relying on field initialization.");
@@ -511,7 +511,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final void i(ComponentActivity componentActivity, LifecycleOwner lifecycleOwner, Lifecycle.a event) {
+    public static final void h(ComponentActivity componentActivity, LifecycleOwner lifecycleOwner, Lifecycle.a event) {
         Window window;
         View peekDecorView;
         Intrinsics.checkNotNullParameter(lifecycleOwner, "<anonymous parameter 0>");
@@ -522,7 +522,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final void j(ComponentActivity componentActivity, LifecycleOwner lifecycleOwner, Lifecycle.a event) {
+    public static final void i(ComponentActivity componentActivity, LifecycleOwner lifecycleOwner, Lifecycle.a event) {
         Intrinsics.checkNotNullParameter(lifecycleOwner, "<anonymous parameter 0>");
         Intrinsics.checkNotNullParameter(event, "event");
         if (event == Lifecycle.a.ON_DESTROY) {
@@ -565,7 +565,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
         Intrinsics.checkNotNullParameter(lifecycleOwner, "<anonymous parameter 0>");
         Intrinsics.checkNotNullParameter(event, "event");
         if (event == Lifecycle.a.ON_CREATE) {
-            onBackPressedDispatcher.o(b.f823a.a(componentActivity));
+            onBackPressedDispatcher.o(b.f792a.a(componentActivity));
         }
     }
 
@@ -597,7 +597,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
         ReportFullyDrawnExecutor reportFullyDrawnExecutor = this.reportFullyDrawnExecutor;
         View decorView = getWindow().getDecorView();
         Intrinsics.checkNotNullExpressionValue(decorView, "window.decorView");
-        reportFullyDrawnExecutor.F0(decorView);
+        reportFullyDrawnExecutor.E0(decorView);
         super.addContentView(view, layoutParams);
     }
 
@@ -658,19 +658,19 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
         Bundle bundle = null;
         androidx.lifecycle.viewmodel.a aVar = new androidx.lifecycle.viewmodel.a(null, 1, null);
         if (getApplication() != null) {
-            CreationExtras.c cVar = ViewModelProvider.a.f4495h;
+            CreationExtras.c cVar = ViewModelProvider.a.f4464h;
             Application application = getApplication();
             Intrinsics.checkNotNullExpressionValue(application, "application");
             aVar.c(cVar, application);
         }
-        aVar.c(e0.f4525a, this);
-        aVar.c(e0.f4526b, this);
+        aVar.c(e0.f4494a, this);
+        aVar.c(e0.f4495b, this);
         Intent intent = getIntent();
         if (intent != null) {
             bundle = intent.getExtras();
         }
         if (bundle != null) {
-            aVar.c(e0.f4527c, bundle);
+            aVar.c(e0.f4496c, bundle);
         }
         return aVar;
     }
@@ -686,7 +686,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
         return (FullyDrawnReporter) this.fullyDrawnReporter$delegate.getValue();
     }
 
-    @jr.c
+    @lr.c
     public Object getLastCustomNonConfigurationInstance() {
         c cVar = (c) getLastNonConfigurationInstance();
         if (cVar != null) {
@@ -756,7 +756,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
     }
 
     @Override // android.app.Activity
-    @jr.c
+    @lr.c
     public void onBackPressed() {
         getOnBackPressedDispatcher().l();
     }
@@ -777,7 +777,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
         this.savedStateRegistryController.d(bundle);
         this.contextAwareHelper.c(this);
         super.onCreate(bundle);
-        androidx.lifecycle.a0.f4502e.c(this);
+        androidx.lifecycle.a0.f4471e.c(this);
         int i10 = this.contentLayoutId;
         if (i10 != 0) {
             setContentView(i10);
@@ -808,7 +808,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
     }
 
     @Override // android.app.Activity
-    @jr.c
+    @lr.c
     public void onMultiWindowModeChanged(boolean z10) {
         if (this.dispatchingOnMultiWindowModeChanged) {
             return;
@@ -838,7 +838,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
     }
 
     @Override // android.app.Activity
-    @jr.c
+    @lr.c
     public void onPictureInPictureModeChanged(boolean z10) {
         if (this.dispatchingOnPictureInPictureModeChanged) {
             return;
@@ -869,7 +869,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
         }
     }
 
-    @jr.c
+    @lr.c
     public Object onRetainCustomNonConfigurationInstance() {
         return null;
     }
@@ -898,7 +898,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
         if (getLifecycle() instanceof LifecycleRegistry) {
             Lifecycle lifecycle = getLifecycle();
             Intrinsics.checkNotNull(lifecycle, "null cannot be cast to non-null type androidx.lifecycle.LifecycleRegistry");
-            ((LifecycleRegistry) lifecycle).o(Lifecycle.State.f4438i);
+            ((LifecycleRegistry) lifecycle).o(Lifecycle.State.f4407i);
         }
         super.onSaveInstanceState(outState);
         this.savedStateRegistryController.e(outState);
@@ -1001,19 +1001,19 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
         ReportFullyDrawnExecutor reportFullyDrawnExecutor = this.reportFullyDrawnExecutor;
         View decorView = getWindow().getDecorView();
         Intrinsics.checkNotNullExpressionValue(decorView, "window.decorView");
-        reportFullyDrawnExecutor.F0(decorView);
+        reportFullyDrawnExecutor.E0(decorView);
         super.setContentView(i10);
     }
 
     @Override // android.app.Activity
-    @jr.c
+    @lr.c
     public void startActivityForResult(@NotNull Intent intent, int i10) {
         Intrinsics.checkNotNullParameter(intent, "intent");
         super.startActivityForResult(intent, i10);
     }
 
     @Override // android.app.Activity
-    @jr.c
+    @lr.c
     public void startIntentSenderForResult(@NotNull IntentSender intent, int i10, Intent intent2, int i11, int i12, int i13) {
         Intrinsics.checkNotNullParameter(intent, "intent");
         super.startIntentSenderForResult(intent, i10, intent2, i11, i12, i13);
@@ -1026,14 +1026,14 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
     }
 
     @Override // android.app.Activity
-    @jr.c
+    @lr.c
     public void startActivityForResult(@NotNull Intent intent, int i10, Bundle bundle) {
         Intrinsics.checkNotNullParameter(intent, "intent");
         super.startActivityForResult(intent, i10, bundle);
     }
 
     @Override // android.app.Activity
-    @jr.c
+    @lr.c
     public void startIntentSenderForResult(@NotNull IntentSender intent, int i10, Intent intent2, int i11, int i12, int i13, Bundle bundle) {
         Intrinsics.checkNotNullParameter(intent, "intent");
         super.startIntentSenderForResult(intent, i10, intent2, i11, i12, i13, bundle);
@@ -1095,7 +1095,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
         ReportFullyDrawnExecutor reportFullyDrawnExecutor = this.reportFullyDrawnExecutor;
         View decorView = getWindow().getDecorView();
         Intrinsics.checkNotNullExpressionValue(decorView, "window.decorView");
-        reportFullyDrawnExecutor.F0(decorView);
+        reportFullyDrawnExecutor.E0(decorView);
         super.setContentView(view);
     }
 
@@ -1105,7 +1105,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
         ReportFullyDrawnExecutor reportFullyDrawnExecutor = this.reportFullyDrawnExecutor;
         View decorView = getWindow().getDecorView();
         Intrinsics.checkNotNullExpressionValue(decorView, "window.decorView");
-        reportFullyDrawnExecutor.F0(decorView);
+        reportFullyDrawnExecutor.E0(decorView);
         super.setContentView(view, layoutParams);
     }
 }

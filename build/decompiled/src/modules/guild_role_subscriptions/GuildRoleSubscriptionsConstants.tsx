@@ -124,4 +124,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.CREATOR_REVENUE_SHARE_PERCENTAGE = var3;
     var2.SERVER_SUBSCRIPTIONS_PREMIUM_CHECKLIST_EDUCATIONAL_URLS = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1615, 483, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1623, 483, 2]);

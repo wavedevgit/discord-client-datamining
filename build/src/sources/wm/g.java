@@ -2,52 +2,25 @@ package wm;
 
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface g {
+public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f52321a = a.f52322a;
+    private final Object f52540a;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
+    /* renamed from: b  reason: collision with root package name */
+    private final m f52541b;
 
-        /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ a f52322a = new a();
-
-        private a() {
-        }
-
-        public static /* synthetic */ String b(a aVar, Object obj, String str, int i10, Object obj2) {
-            if ((i10 & 2) != 0) {
-                str = "";
-            }
-            return aVar.a(obj, str);
-        }
-
-        public final String a(Object value, String name) {
-            g gVar;
-            String stringPlus;
-            Intrinsics.checkNotNullParameter(value, "value");
-            Intrinsics.checkNotNullParameter(name, "name");
-            String str = null;
-            if (value instanceof g) {
-                gVar = (g) value;
-            } else {
-                gVar = null;
-            }
-            if (gVar != null) {
-                str = gVar.c();
-            }
-            if (str == null) {
-                str = value.getClass().getName();
-            }
-            if (name.length() == 0) {
-                stringPlus = "";
-            } else {
-                stringPlus = Intrinsics.stringPlus("+", name);
-            }
-            return Intrinsics.stringPlus(str, stringPlus);
-        }
+    public g(Object obj, m snapshot) {
+        Intrinsics.checkNotNullParameter(snapshot, "snapshot");
+        this.f52540a = obj;
+        this.f52541b = snapshot;
     }
 
-    String c();
+    public final Object a() {
+        return this.f52540a;
+    }
+
+    public final m b() {
+        return this.f52541b;
+    }
 }

@@ -25,14 +25,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/allowPopups.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun64812: for (var _fun64812_ip = 0;;) switch (_fun64812_ip) {
+        _fun64870: for (var _fun64870_ip = 0;;) switch (_fun64870_ip) {
             case 0:
                 var3 = arg0;
                 var4 = null;
                 var0 = var4 != var3;
                 if (!var0) {
-                    _fun64812_ip = 127;
-                    continue _fun64812
+                    _fun64870_ip = 127;
+                    continue _fun64870
                 }
             case 12:
                 var5 = _closure1_slot0;
@@ -42,30 +42,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = !var1;
                 var1 = !var2;
                 if (!var2) {
-                    _fun64812_ip = 124;
-                    continue _fun64812
+                    _fun64870_ip = 124;
+                    continue _fun64870
                 }
             case 43:
                 var2 = 'embeddedActivityConfig';
                 var2 = var2 in var3;
                 if (var2) {
-                    _fun64812_ip = 94;
-                    continue _fun64812
+                    _fun64870_ip = 94;
+                    continue _fun64870
                 }
             case 54:
                 var2 = 'embedded_activity_config';
                 var2 = var2 in var3;
                 if (!var2) {
-                    _fun64812_ip = 92;
-                    continue _fun64812
+                    _fun64870_ip = 92;
+                    continue _fun64870
                 }
             case 65:
                 var5 = var3.embedded_activity_config;
                 var7 = var4 == var5;
                 var6 = undefined;
                 if (var7) {
-                    _fun64812_ip = 86;
-                    continue _fun64812
+                    _fun64870_ip = 86;
+                    continue _fun64870
                 }
             case 80:
                 var6 = var5.displays_advertisements;
@@ -73,15 +73,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = true;
                 var2 = var5 === var6;
             case 92:
-                _fun64812_ip = 121;
-                continue _fun64812;
+                _fun64870_ip = 121;
+                continue _fun64870;
             case 94:
                 var3 = var3.embeddedActivityConfig;
                 var5 = var4 == var3;
                 var4 = undefined;
                 if (var5) {
-                    _fun64812_ip = 115;
-                    continue _fun64812
+                    _fun64870_ip = 115;
+                    continue _fun64870
                 }
             case 109:
                 var4 = var3.displays_advertisements;
@@ -98,4 +98,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.allowPopups = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3448, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3457, 2]);

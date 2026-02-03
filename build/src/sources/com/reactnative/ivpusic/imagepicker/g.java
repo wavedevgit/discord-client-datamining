@@ -71,49 +71,49 @@ public class g implements ActivityEventListener {
     private ReactApplicationContext P;
 
     /* renamed from: d  reason: collision with root package name */
-    private String f17977d = "any";
+    private String f16945d = "any";
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f17978e = false;
+    private boolean f16946e = false;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f17979i = false;
+    private boolean f16947i = false;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f17980o = false;
+    private boolean f16948o = false;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f17981p = false;
+    private boolean f16949p = false;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f17982q = false;
+    private boolean f16950q = false;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f17983r = false;
+    private boolean f16951r = false;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f17984s = true;
+    private boolean f16952s = true;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f17985t = true;
+    private boolean f16953t = true;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f17986u = false;
+    private boolean f16954u = false;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f17987v = false;
+    private boolean f16955v = false;
 
     /* renamed from: w  reason: collision with root package name */
-    private boolean f17988w = false;
+    private boolean f16956w = false;
 
     /* renamed from: x  reason: collision with root package name */
-    private boolean f17989x = false;
+    private boolean f16957x = false;
 
     /* renamed from: y  reason: collision with root package name */
-    private boolean f17990y = true;
+    private boolean f16958y = true;
 
     /* renamed from: z  reason: collision with root package name */
-    private boolean f17991z = false;
+    private boolean f16959z = false;
     private String B = null;
     private String C = null;
     private String D = null;
@@ -194,18 +194,18 @@ public class g implements ActivityEventListener {
     class b implements Callable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ g f17993d;
+        final /* synthetic */ g f16961d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Activity f17994e;
+        final /* synthetic */ Activity f16962e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Promise f17995i;
+        final /* synthetic */ Promise f16963i;
 
         b(g gVar, Activity activity, Promise promise) {
-            this.f17993d = gVar;
-            this.f17994e = activity;
-            this.f17995i = promise;
+            this.f16961d = gVar;
+            this.f16962e = activity;
+            this.f16963i = promise;
         }
 
         @Override // java.util.concurrent.Callable
@@ -213,14 +213,14 @@ public class g implements ActivityEventListener {
         public Void call() {
             File file;
             try {
-                file = new File(this.f17993d.T(this.f17994e));
+                file = new File(this.f16961d.T(this.f16962e));
             } catch (Exception e10) {
                 e10.printStackTrace();
-                this.f17995i.reject("E_ERROR_WHILE_CLEANING_FILES", e10.getMessage());
+                this.f16963i.reject("E_ERROR_WHILE_CLEANING_FILES", e10.getMessage());
             }
             if (file.exists()) {
-                this.f17993d.L(file);
-                this.f17995i.resolve(null);
+                this.f16961d.L(file);
+                this.f16963i.resolve(null);
                 return null;
             }
             throw new Exception("File does not exist");
@@ -231,18 +231,18 @@ public class g implements ActivityEventListener {
     class c implements Callable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ String f17997d;
+        final /* synthetic */ String f16965d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ g f17998e;
+        final /* synthetic */ g f16966e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Promise f17999i;
+        final /* synthetic */ Promise f16967i;
 
         c(String str, g gVar, Promise promise) {
-            this.f17997d = str;
-            this.f17998e = gVar;
-            this.f17999i = promise;
+            this.f16965d = str;
+            this.f16966e = gVar;
+            this.f16967i = promise;
         }
 
         @Override // java.util.concurrent.Callable
@@ -251,18 +251,18 @@ public class g implements ActivityEventListener {
             String str;
             File file;
             try {
-                str = this.f17997d;
+                str = this.f16965d;
                 if (str.startsWith("file://")) {
                     str = str.substring(7);
                 }
                 file = new File(str);
             } catch (Exception e10) {
                 e10.printStackTrace();
-                this.f17999i.reject("E_ERROR_WHILE_CLEANING_FILES", e10.getMessage());
+                this.f16967i.reject("E_ERROR_WHILE_CLEANING_FILES", e10.getMessage());
             }
             if (file.exists()) {
-                this.f17998e.L(file);
-                this.f17999i.resolve(null);
+                this.f16966e.L(file);
+                this.f16967i.resolve(null);
                 return null;
             }
             throw new Exception("File does not exist. Path: " + str);
@@ -274,14 +274,14 @@ public class g implements ActivityEventListener {
     public class d implements PermissionListener {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Promise f18001d;
+        final /* synthetic */ Promise f16969d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Callable f18002e;
+        final /* synthetic */ Callable f16970e;
 
         d(Promise promise, Callable callable) {
-            this.f18001d = promise;
-            this.f18002e = callable;
+            this.f16969d = promise;
+            this.f16970e = callable;
         }
 
         @Override // com.facebook.react.modules.core.PermissionListener
@@ -291,19 +291,19 @@ public class g implements ActivityEventListener {
                     String str = strArr[i11];
                     if (iArr[i11] == -1) {
                         if (str.equals("android.permission.CAMERA")) {
-                            this.f18001d.reject("E_NO_CAMERA_PERMISSION", "User did not grant camera permission.");
+                            this.f16969d.reject("E_NO_CAMERA_PERMISSION", "User did not grant camera permission.");
                         } else if (str.equals("android.permission.WRITE_EXTERNAL_STORAGE")) {
-                            this.f18001d.reject("E_NO_LIBRARY_PERMISSION", "User did not grant library permission.");
+                            this.f16969d.reject("E_NO_LIBRARY_PERMISSION", "User did not grant library permission.");
                         } else {
-                            this.f18001d.reject("E_NO_LIBRARY_PERMISSION", "Required permission missing");
+                            this.f16969d.reject("E_NO_LIBRARY_PERMISSION", "Required permission missing");
                         }
                         return true;
                     }
                 }
                 try {
-                    this.f18002e.call();
+                    this.f16970e.call();
                 } catch (Exception e10) {
-                    this.f18001d.reject("E_CALLBACK_ERROR", "Unknown error", e10);
+                    this.f16969d.reject("E_CALLBACK_ERROR", "Unknown error", e10);
                 }
             }
             return true;
@@ -314,16 +314,16 @@ public class g implements ActivityEventListener {
     class e implements Callable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Activity f18004d;
+        final /* synthetic */ Activity f16972d;
 
         e(Activity activity) {
-            this.f18004d = activity;
+            this.f16972d = activity;
         }
 
         @Override // java.util.concurrent.Callable
         /* renamed from: a */
         public Void call() {
-            g.this.X(this.f18004d);
+            g.this.X(this.f16972d);
             return null;
         }
     }
@@ -332,52 +332,52 @@ public class g implements ActivityEventListener {
     class f implements Callable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Activity f18006d;
+        final /* synthetic */ Activity f16974d;
 
         f(Activity activity) {
-            this.f18006d = activity;
+            this.f16974d = activity;
         }
 
         @Override // java.util.concurrent.Callable
         /* renamed from: a */
         public Void call() {
-            g.this.Y(this.f18006d);
+            g.this.Y(this.f16974d);
             return null;
         }
     }
 
     /* renamed from: com.reactnative.ivpusic.imagepicker.g$g  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    class CallableC0212g implements Callable {
+    class CallableC0193g implements Callable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Uri f18008d;
+        final /* synthetic */ Uri f16976d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Activity f18009e;
+        final /* synthetic */ Activity f16977e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ String f18010i;
+        final /* synthetic */ String f16978i;
 
-        CallableC0212g(Uri uri, Activity activity, String str) {
-            this.f18008d = uri;
-            this.f18009e = activity;
-            this.f18010i = str;
+        CallableC0193g(Uri uri, Activity activity, String str) {
+            this.f16976d = uri;
+            this.f16977e = activity;
+            this.f16978i = str;
         }
 
         @Override // java.util.concurrent.Callable
         /* renamed from: a */
         public Void call() {
-            Uri uri = this.f18008d;
+            Uri uri = this.f16976d;
             try {
                 if ("content".equalsIgnoreCase(uri.getScheme())) {
-                    uri = g.this.i0(this.f18009e, this.f18008d);
+                    uri = g.this.i0(this.f16977e, this.f16976d);
                 }
-                String str = this.f18010i;
+                String str = this.f16978i;
                 if (str != null) {
-                    g.this.n0(this.f18009e, uri, str);
+                    g.this.n0(this.f16977e, uri, str);
                 } else {
-                    g.this.m0(this.f18009e, uri);
+                    g.this.m0(this.f16977e, uri);
                 }
                 return null;
             } catch (Exception e10) {
@@ -396,11 +396,11 @@ public class g implements ActivityEventListener {
 
     private void A(Activity activity, int i10) {
         try {
-            View findViewById = activity.findViewById(oq.d.f44667l);
+            View findViewById = activity.findViewById(qq.d.f48094l);
             if (findViewById != null) {
                 l0(findViewById, i10);
             }
-            View findViewById2 = activity.findViewById(oq.d.f44668m);
+            View findViewById2 = activity.findViewById(qq.d.f48095m);
             if (findViewById2 != null) {
                 l0(findViewById2, i10);
             }
@@ -431,9 +431,9 @@ public class g implements ActivityEventListener {
         }
         try {
             try {
-                C(activity, oq.d.f44669n, oq.d.f44659d, oq.d.f44672q, parseColor, i10);
-                C(activity, oq.d.f44670o, oq.d.f44660e, oq.d.f44673r, parseColor, i10);
-                C(activity, oq.d.f44671p, oq.d.f44661f, oq.d.f44674s, parseColor, i10);
+                C(activity, qq.d.f48096n, qq.d.f48086d, qq.d.f48099q, parseColor, i10);
+                C(activity, qq.d.f48097o, qq.d.f48087e, qq.d.f48100r, parseColor, i10);
+                C(activity, qq.d.f48098p, qq.d.f48088f, qq.d.f48101s, parseColor, i10);
                 x(activity, parseColor, i10);
                 if (i10 != -1) {
                     A(activity, i10);
@@ -485,8 +485,8 @@ public class g implements ActivityEventListener {
             Uri uri = this.L;
             if (uri == null) {
                 this.N.b("E_NO_IMAGE_DATA_FOUND", "Cannot resolve image url");
-            } else if (this.f17981p) {
-                new a.C0268a().e(Bitmap.CompressFormat.JPEG);
+            } else if (this.f16949p) {
+                new a.C0249a().e(Bitmap.CompressFormat.JPEG);
                 m0(activity, uri);
             } else {
                 try {
@@ -502,21 +502,21 @@ public class g implements ActivityEventListener {
         }
     }
 
-    private void G(a.C0268a c0268a) {
+    private void G(a.C0249a c0249a) {
         String str = this.B;
         if (str != null) {
-            c0268a.b(Color.parseColor(str));
+            c0249a.b(Color.parseColor(str));
         }
         String str2 = this.D;
         if (str2 != null) {
-            c0268a.m(Color.parseColor(str2));
+            c0249a.m(Color.parseColor(str2));
         }
         String str3 = this.F;
         if (str3 != null) {
-            c0268a.o(Color.parseColor(str3));
+            c0249a.o(Color.parseColor(str3));
         }
-        c0268a.l(this.f17990y);
-        c0268a.i(this.f17991z);
+        c0249a.l(this.f16958y);
+        c0249a.i(this.f16959z);
     }
 
     private File H(Context context, Uri uri) {
@@ -691,10 +691,10 @@ public class g implements ActivityEventListener {
             writableNativeMap.putInt("size", (int) new File(path).length());
             writableNativeMap.putString("modificationDate", String.valueOf(lastModified));
             writableNativeMap.putString("filename", new File(str).getName());
-            if (this.f17979i) {
+            if (this.f16947i) {
                 writableNativeMap.putString("data", N(path));
             }
-            if (this.f17980o) {
+            if (this.f16948o) {
                 try {
                     writableNativeMap.putMap("exif", com.reactnative.ivpusic.imagepicker.b.a(str));
                     return writableNativeMap;
@@ -768,7 +768,7 @@ public class g implements ActivityEventListener {
         if (i11 == 0) {
             this.N.b("E_PICKER_CANCELLED", "User cancelled image selection");
         } else if (i11 == -1) {
-            if (this.f17978e) {
+            if (this.f16946e) {
                 ClipData clipData2 = intent.getClipData();
                 try {
                     if (clipData2 == null) {
@@ -792,7 +792,7 @@ public class g implements ActivityEventListener {
             }
             if (data == null) {
                 this.N.b("E_NO_IMAGE_DATA_FOUND", "Cannot resolve image url");
-            } else if (this.f17981p) {
+            } else if (this.f16949p) {
                 m0(activity, data);
             } else {
                 try {
@@ -809,7 +809,7 @@ public class g implements ActivityEventListener {
         String str;
         File I;
         try {
-            if (this.f17977d.equals(MediaStreamTrack.VIDEO_TRACK_KIND)) {
+            if (this.f16945d.equals(MediaStreamTrack.VIDEO_TRACK_KIND)) {
                 str = "android.media.action.VIDEO_CAPTURE";
                 I = J();
             } else {
@@ -820,7 +820,7 @@ public class g implements ActivityEventListener {
             Uri uriForFile = FileProvider.getUriForFile(activity, activity.getApplicationContext().getPackageName() + ".provider", I);
             this.L = uriForFile;
             intent.putExtra("output", uriForFile);
-            if (this.f17989x) {
+            if (this.f16957x) {
                 intent.putExtra("android.intent.extras.CAMERA_FACING", 1);
                 intent.putExtra("android.intent.extras.LENS_FACING_FRONT", 1);
                 intent.putExtra("android.intent.extra.USE_FRONT_CAMERA", true);
@@ -840,15 +840,15 @@ public class g implements ActivityEventListener {
         Intent createIntent;
         try {
             f.a aVar = new f.a();
-            if (this.f17977d.equals(MediaStreamTrack.VIDEO_TRACK_KIND)) {
-                aVar.d(e.C0017e.f933a);
+            if (this.f16945d.equals(MediaStreamTrack.VIDEO_TRACK_KIND)) {
+                aVar.d(e.C0015e.f902a);
             } else {
-                if (!this.f17977d.equals("photo") && !this.f17981p) {
-                    aVar.d(e.c.f931a);
+                if (!this.f16945d.equals("photo") && !this.f16949p) {
+                    aVar.d(e.c.f900a);
                 }
-                aVar.d(e.d.f932a);
+                aVar.d(e.d.f901a);
             }
-            if (this.f17978e && this.K > 1) {
+            if (this.f16946e && this.K > 1) {
                 createIntent = new androidx.activity.result.contract.d(this.K).createIntent(activity, aVar.a());
             } else {
                 createIntent = new androidx.activity.result.contract.e().createIntent(activity, aVar.a());
@@ -1039,7 +1039,7 @@ public class g implements ActivityEventListener {
         } else {
             str = "any";
         }
-        this.f17977d = str;
+        this.f16945d = str;
         boolean z22 = true;
         boolean z23 = false;
         if (readableMap.hasKey("multiple") && readableMap.getBoolean("multiple")) {
@@ -1047,19 +1047,19 @@ public class g implements ActivityEventListener {
         } else {
             z10 = false;
         }
-        this.f17978e = z10;
+        this.f16946e = z10;
         if (readableMap.hasKey("includeBase64") && readableMap.getBoolean("includeBase64")) {
             z11 = true;
         } else {
             z11 = false;
         }
-        this.f17979i = z11;
+        this.f16947i = z11;
         if (readableMap.hasKey("includeExif") && readableMap.getBoolean("includeExif")) {
             z12 = true;
         } else {
             z12 = false;
         }
-        this.f17980o = z12;
+        this.f16948o = z12;
         if (readableMap.hasKey("width")) {
             i10 = readableMap.getInt("width");
         } else {
@@ -1083,7 +1083,7 @@ public class g implements ActivityEventListener {
         } else {
             z13 = false;
         }
-        this.f17981p = z13;
+        this.f16949p = z13;
         String str8 = null;
         if (readableMap.hasKey("cropperActiveWidgetColor")) {
             str2 = readableMap.getString("cropperActiveWidgetColor");
@@ -1130,57 +1130,57 @@ public class g implements ActivityEventListener {
         } else {
             z14 = false;
         }
-        this.f17982q = z14;
+        this.f16950q = z14;
         if (readableMap.hasKey("freeStyleCropEnabled") && readableMap.getBoolean("freeStyleCropEnabled")) {
             z15 = true;
         } else {
             z15 = false;
         }
-        this.f17983r = z15;
+        this.f16951r = z15;
         if (readableMap.hasKey("showCropGuidelines") && !readableMap.getBoolean("showCropGuidelines")) {
             z16 = false;
         } else {
             z16 = true;
         }
-        this.f17984s = z16;
+        this.f16952s = z16;
         if (readableMap.hasKey("showCropFrame") && !readableMap.getBoolean("showCropFrame")) {
             z17 = false;
         } else {
             z17 = true;
         }
-        this.f17985t = z17;
+        this.f16953t = z17;
         if (readableMap.hasKey("hideBottomControls") && readableMap.getBoolean("hideBottomControls")) {
             z18 = true;
         } else {
             z18 = false;
         }
-        this.f17986u = z18;
+        this.f16954u = z18;
         if (readableMap.hasKey("enableRotationGesture") && readableMap.getBoolean("enableRotationGesture")) {
             z19 = true;
         } else {
             z19 = false;
         }
-        this.f17987v = z19;
+        this.f16955v = z19;
         if (readableMap.hasKey("disableCropperColorSetters") && readableMap.getBoolean("disableCropperColorSetters")) {
             z20 = true;
         } else {
             z20 = false;
         }
-        this.f17988w = z20;
+        this.f16956w = z20;
         if (readableMap.hasKey("useFrontCamera") && readableMap.getBoolean("useFrontCamera")) {
             z21 = true;
         } else {
             z21 = false;
         }
-        this.f17989x = z21;
+        this.f16957x = z21;
         if (readableMap.hasKey("cropperStatusBarLight")) {
             z22 = readableMap.getBoolean("cropperStatusBarLight");
         }
-        this.f17990y = z22;
+        this.f16958y = z22;
         if (readableMap.hasKey("cropperNavigationBarLight")) {
             z23 = readableMap.getBoolean("cropperNavigationBarLight");
         }
-        this.f17991z = z23;
+        this.f16959z = z23;
         this.A = readableMap;
     }
 
@@ -1208,23 +1208,23 @@ public class g implements ActivityEventListener {
         String str2;
         int i10;
         Bitmap.CompressFormat a10 = xl.b.a(str);
-        a.C0268a c0268a = new a.C0268a();
-        c0268a.e(a10);
-        c0268a.f(100);
-        c0268a.d(this.f17982q);
-        c0268a.g(this.f17983r);
-        c0268a.k(this.f17984s);
-        c0268a.j(this.f17985t);
-        c0268a.h(this.f17986u);
+        a.C0249a c0249a = new a.C0249a();
+        c0249a.e(a10);
+        c0249a.f(100);
+        c0249a.d(this.f16950q);
+        c0249a.g(this.f16951r);
+        c0249a.k(this.f16952s);
+        c0249a.j(this.f16953t);
+        c0249a.h(this.f16954u);
         String str3 = this.E;
         if (str3 != null) {
-            c0268a.n(str3);
+            c0249a.n(str3);
         }
-        if (this.f17987v) {
-            c0268a.c(3, 3, 3);
+        if (this.f16955v) {
+            c0249a.c(3, 3, 3);
         }
-        if (!this.f17988w) {
-            G(c0268a);
+        if (!this.f16956w) {
+            G(c0249a);
         }
         if (a10 == Bitmap.CompressFormat.PNG) {
             str2 = ".png";
@@ -1232,7 +1232,7 @@ public class g implements ActivityEventListener {
             str2 = ".jpg";
         }
         String T2 = T(activity);
-        com.yalantis.ucrop.a g10 = com.yalantis.ucrop.a.c(uri, Uri.fromFile(new File(T2, UUID.randomUUID().toString() + str2))).g(c0268a);
+        com.yalantis.ucrop.a g10 = com.yalantis.ucrop.a.c(uri, Uri.fromFile(new File(T2, UUID.randomUUID().toString() + str2))).g(c0249a);
         int i11 = this.I;
         if (i11 > 0 && (i10 = this.J) > 0) {
             g10.f(i11, i10);
@@ -1276,7 +1276,7 @@ public class g implements ActivityEventListener {
         int i12;
         int i13;
         try {
-            View findViewById = activity.findViewById(oq.d.f44662g);
+            View findViewById = activity.findViewById(qq.d.f48089g);
             if (findViewById != null && (findViewById instanceof ViewGroup)) {
                 ViewGroup viewGroup = (ViewGroup) findViewById;
                 for (int i14 = 0; i14 < viewGroup.getChildCount(); i14++) {
@@ -1314,7 +1314,7 @@ public class g implements ActivityEventListener {
     public void y(Activity activity, String str) {
         try {
             Resources resources = activity.getResources();
-            View findViewById = activity.findViewById(oq.d.f44681z);
+            View findViewById = activity.findViewById(qq.d.f48108z);
             if (findViewById == null) {
                 Log.w("ImageCropPicker", "Could not find wrapper_controls view");
             } else if (findViewById instanceof ViewGroup) {
@@ -1339,7 +1339,7 @@ public class g implements ActivityEventListener {
     /* JADX INFO: Access modifiers changed from: private */
     public void z(Activity activity, String str) {
         try {
-            View findViewById = activity.findViewById(oq.d.C);
+            View findViewById = activity.findViewById(qq.d.C);
             if (findViewById == null) {
                 Log.w("ImageCropPicker", "Could not find wrapper_states view");
             } else {
@@ -1401,7 +1401,7 @@ public class g implements ActivityEventListener {
         k0(readableMap);
         this.N.f(promise, false);
         String string = readableMap.getString("mimeType");
-        g0(currentActivity, promise, Collections.singletonList("android.permission.WRITE_EXTERNAL_STORAGE"), new CallableC0212g(Uri.parse(readableMap.getString("path")), currentActivity, string));
+        g0(currentActivity, promise, Collections.singletonList("android.permission.WRITE_EXTERNAL_STORAGE"), new CallableC0193g(Uri.parse(readableMap.getString("path")), currentActivity, string));
     }
 
     public void f0(ReadableMap readableMap, Promise promise) {
@@ -1411,7 +1411,7 @@ public class g implements ActivityEventListener {
             return;
         }
         k0(readableMap);
-        this.N.f(promise, this.f17978e);
+        this.N.f(promise, this.f16946e);
         g0(currentActivity, promise, Collections.singletonList("android.permission.WRITE_EXTERNAL_STORAGE"), new f(currentActivity));
     }
 

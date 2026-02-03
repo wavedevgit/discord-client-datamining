@@ -20,7 +20,7 @@ public class m extends DialogFragment {
                 }
                 dialog.getWindow().addFlags(24);
             }
-            lVar.j(1);
+            lVar.i(1);
             return;
         }
         super.setupDialog(dialog, i10);

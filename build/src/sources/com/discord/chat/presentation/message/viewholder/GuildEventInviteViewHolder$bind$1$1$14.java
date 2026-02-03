@@ -19,7 +19,7 @@ public /* synthetic */ class GuildEventInviteViewHolder$bind$1$1$14 extends Func
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Object invoke(Object obj) {
         invoke((SoundmojiContentNode) obj);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public final void invoke(SoundmojiContentNode p02) {

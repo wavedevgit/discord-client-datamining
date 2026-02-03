@@ -25,13 +25,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/friend_suggestions/maybeDispatchDevOnlyDummyFriendSuggestions.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun72608: for (var _fun72608_ip = 0;;) switch (_fun72608_ip) {
+        _fun72718: for (var _fun72718_ip = 0;;) switch (_fun72718_ip) {
             case 0:
                 var4 = arguments[0];
                 var0 = undefined;
                 if (!(var4 === var0)) {
-                    _fun72608_ip = 23;
-                    continue _fun72608
+                    _fun72718_ip = 23;
+                    continue _fun72718
                 }
             case 9:
                 var1 = global;
@@ -54,4 +54,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1613, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 2]);

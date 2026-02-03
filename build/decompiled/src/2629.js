@@ -1,173 +1,202 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var4.bind(var5)(var1, var0, var3);
-    var0 = undefined;
-    var1.default = var0;
-    var3 = {};
-    var4 = {
-        'one': 'meno di un secondo',
-        'other': 'meno di {{count}} secondi'
-    };
-    var3.lessThanXSeconds = var4;
-    var4 = {
-        'one': 'un secondo',
-        'other': '{{count}} secondi'
-    };
-    var3.xSeconds = var4;
-    var4 = 'alcuni secondi';
-    var3.halfAMinute = var4;
-    var4 = {
-        'one': 'meno di un minuto',
-        'other': 'meno di {{count}} minuti'
-    };
-    var3.lessThanXMinutes = var4;
-    var4 = {
-        'one': 'un minuto',
-        'other': '{{count}} minuti'
-    };
-    var3.xMinutes = var4;
-    var4 = {
-        'one': "circa un'ora",
-        'other': 'circa {{count}} ore'
-    };
-    var3.aboutXHours = var4;
-    var4 = {
-        'one': "un'ora",
-        'other': '{{count}} ore'
-    };
-    var3.xHours = var4;
-    var4 = {
-        'one': 'un giorno',
-        'other': '{{count}} giorni'
-    };
-    var3.xDays = var4;
-    var4 = {
-        'one': 'circa una settimana',
-        'other': 'circa {{count}} settimane'
-    };
-    var3.aboutXWeeks = var4;
-    var4 = {
-        'one': 'una settimana',
-        'other': '{{count}} settimane'
-    };
-    var3.xWeeks = var4;
-    var4 = {
-        'one': 'circa un mese',
-        'other': 'circa {{count}} mesi'
-    };
-    var3.aboutXMonths = var4;
-    var4 = {
-        'one': 'un mese',
-        'other': '{{count}} mesi'
-    };
-    var3.xMonths = var4;
-    var4 = {
-        'one': 'circa un anno',
-        'other': 'circa {{count}} anni'
-    };
-    var3.aboutXYears = var4;
-    var4 = {
-        'one': 'un anno',
-        'other': '{{count}} anni'
-    };
-    var3.xYears = var4;
-    var4 = {
-        'one': 'più di un anno',
-        'other': 'più di {{count}} anni'
-    };
-    var3.overXYears = var4;
-    var4 = {
-        'one': 'quasi un anno',
-        'other': 'quasi {{count}} anni'
-    };
-    var3.almostXYears = var4;
-    var _closure1_slot0 = var3;
-    var2 = function arg0, arg1, arg2() {
-        _fun22043: for (var _fun22043_ip = 0;;) switch (_fun22043_ip) {
-            case 0:
-                var4 = arg1;
-                var1 = arg2;
-                var2 = _closure1_slot0;
+    _fun22104: for (var _fun22104_ip = 0;;) switch (_fun22104_ip) {
+        case 0:
+            var1 = exports;
+            var0 = global;
+            var4 = var0.Object;
+            var3 = var4.defineProperty;
+            var2 = {};
+            var0 = true;
+            var2.value = var0;
+            var0 = '__esModule';
+            var0 = var3.bind(var4)(var1, var0, var2);
+            var0 = undefined;
+            var1.default = var0;
+            var3 = dependencyMap;
+            var2 = 0;
+            var3 = var3[var2];
+            var2 = require;
+            var4 = var2.bind(var0)(var3);
+            if (!var4) {
+                _fun22104_ip = 77;
+                continue _fun22104
+            }
+        case 65:
+            var2 = var4.__esModule;
+            var3 = var4;
+            if (var2) {
+                _fun22104_ip = 86;
+                continue _fun22104
+            }
+        case 77:
+            var2 = {};
+            var2.default = var4;
+            var3 = var2;
+        case 86:
+            var2 = {};
+            var4 = function arg0, arg1() {
+                var0 = global;
+                var2 = var0.Number;
+                var1 = undefined;
                 var0 = arg0;
-                var2 = var2[var0];
-                var5 = 'string';
-                var0 = typeof var2;
-                var3 = var2;
-                if (!(var5 !== var0)) {
-                    _fun22043_ip = 84;
-                    continue _fun22043
-                }
-            case 34:
-                var0 = 1;
-                if (!(var0 !== var4)) {
-                    _fun22043_ip = 75;
-                    continue _fun22043
-                }
-            case 41:
-                var6 = var2.other;
-                var5 = var6.replace;
-                var0 = var4.toString;
-                var4 = var0.bind(var4)();
-                var0 = '{{count}}';
-                var0 = var5.bind(var6)(var0, var4);
-                _fun22043_ip = 81;
-                continue _fun22043;
-            case 75:
-                var0 = var2.one;
-            case 81:
-                var3 = var0;
-            case 84:
-                var2 = null;
-                var0 = var3;
-                if (!(var2 != var1)) {
-                    _fun22043_ip = 151;
-                    continue _fun22043
-                }
-            case 93:
-                var2 = var1.addSuffix;
-                var0 = var3;
-                if (!var2) {
-                    _fun22043_ip = 151;
-                    continue _fun22043
-                }
-            case 105:
-                var2 = var1.comparison;
-                if (!var2) {
-                    _fun22043_ip = 126;
-                    continue _fun22043
-                }
-            case 114:
-                var2 = var1.comparison;
-                var1 = 0;
-                if (!(!(var2 > var1))) {
-                    _fun22043_ip = 138;
-                    continue _fun22043
-                }
-            case 126:
-                var1 = ' fa';
-                var1 = var3 + var1;
-                _fun22043_ip = 148;
-                continue _fun22043;
-            case 138:
-                var2 = 'tra ';
-                var1 = var2 + var3;
-            case 148:
-                var0 = var1;
-            case 151:
+                var1 = var2.bind(var1)(var0);
+                var0 = '.';
+                var0 = var1 + var0;
                 return var0;
-        }
-    };
-    var1.default = var2;
-    var2 = var1.default;
-    var1 = arg4;
-    var1.exports = var2;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+            };
+            var2.ordinalNumber = var4;
+            var6 = var3.default;
+            var4 = {};
+            var5 = {};
+            var8 = ['pr.n.e.', 'AD'];
+            var5.narrow = var8;
+            var8 = ['pr. Kr.', 'po. Kr.'];
+            var5.abbreviated = var8;
+            var8 = ['Prije Krista', 'Poslije Krista'];
+            var5.wide = var8;
+            var4.values = var5;
+            var5 = 'wide';
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.era = var4;
+            var6 = var3.default;
+            var4 = {};
+            var8 = {};
+            var9 = ['1.', '2.', '3.', '4.'];
+            var8.narrow = var9;
+            var9 = ['1. kv.', '2. kv.', '3. kv.', '4. kv.'];
+            var8.abbreviated = var9;
+            var9 = ['1. kvartal', '2. kvartal', '3. kvartal', '4. kvartal'];
+            var8.wide = var9;
+            var4.values = var8;
+            var4.defaultWidth = var5;
+            var7 = function arg0() {
+                var1 = arg0;
+                var0 = 1;
+                var0 = var1 - var0;
+                return var0;
+            };
+            var4.argumentCallback = var7;
+            var4 = var6.bind(var0)(var4);
+            var2.quarter = var4;
+            var6 = var3.default;
+            var4 = {};
+            var7 = {};
+            var8 = ['1.', '2.', '3.', '4.', '5.', '6.', '7.', '8.', '9.', '10.', '11.', '12.'];
+            var7.narrow = var8;
+            var8 = ['sij', 'velj', 'ožu', 'tra', 'svi', 'lip', 'srp', 'kol', 'ruj', 'lis', 'stu', 'pro'];
+            var7.abbreviated = var8;
+            var8 = ['siječanj', 'veljača', 'ožujak', 'travanj', 'svibanj', 'lipanj', 'srpanj', 'kolovoz', 'rujan', 'listopad', 'studeni', 'prosinac'];
+            var7.wide = var8;
+            var4.values = var7;
+            var4.defaultWidth = var5;
+            var7 = {};
+            var8 = ['1.', '2.', '3.', '4.', '5.', '6.', '7.', '8.', '9.', '10.', '11.', '12.'];
+            var7.narrow = var8;
+            var8 = ['sij', 'velj', 'ožu', 'tra', 'svi', 'lip', 'srp', 'kol', 'ruj', 'lis', 'stu', 'pro'];
+            var7.abbreviated = var8;
+            var8 = ['siječnja', 'veljače', 'ožujka', 'travnja', 'svibnja', 'lipnja', 'srpnja', 'kolovoza', 'rujna', 'listopada', 'studenog', 'prosinca'];
+            var7.wide = var8;
+            var4.formattingValues = var7;
+            var4.defaultFormattingWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.month = var4;
+            var6 = var3.default;
+            var4 = {};
+            var7 = {};
+            var8 = ['N', 'P', 'U', 'S', 'Č', 'P', 'S'];
+            var7.narrow = var8;
+            var8 = ['ned', 'pon', 'uto', 'sri', 'čet', 'pet', 'sub'];
+            var7.short = var8;
+            var8 = ['ned', 'pon', 'uto', 'sri', 'čet', 'pet', 'sub'];
+            var7.abbreviated = var8;
+            var8 = ['nedjelja', 'ponedjeljak', 'utorak', 'srijeda', 'četvrtak', 'petak', 'subota'];
+            var7.wide = var8;
+            var4.values = var7;
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.day = var4;
+            var4 = var3.default;
+            var3 = {};
+            var6 = {};
+            var7 = {
+                'am': 'AM',
+                'pm': 'PM',
+                'midnight': 'ponoć',
+                'noon': 'podne',
+                'morning': 'ujutro',
+                'afternoon': 'popodne',
+                'evening': 'navečer',
+                'night': 'noću'
+            };
+            var6.narrow = var7;
+            var7 = {
+                'am': 'AM',
+                'pm': 'PM',
+                'midnight': 'ponoć',
+                'noon': 'podne',
+                'morning': 'ujutro',
+                'afternoon': 'popodne',
+                'evening': 'navečer',
+                'night': 'noću'
+            };
+            var6.abbreviated = var7;
+            var7 = {
+                'am': 'AM',
+                'pm': 'PM',
+                'midnight': 'ponoć',
+                'noon': 'podne',
+                'morning': 'ujutro',
+                'afternoon': 'poslije podne',
+                'evening': 'navečer',
+                'night': 'noću'
+            };
+            var6.wide = var7;
+            var3.values = var6;
+            var3.defaultWidth = var5;
+            var6 = {};
+            var7 = {
+                'am': 'AM',
+                'pm': 'PM',
+                'midnight': 'ponoć',
+                'noon': 'podne',
+                'morning': 'ujutro',
+                'afternoon': 'popodne',
+                'evening': 'navečer',
+                'night': 'noću'
+            };
+            var6.narrow = var7;
+            var7 = {
+                'am': 'AM',
+                'pm': 'PM',
+                'midnight': 'ponoć',
+                'noon': 'podne',
+                'morning': 'ujutro',
+                'afternoon': 'popodne',
+                'evening': 'navečer',
+                'night': 'noću'
+            };
+            var6.abbreviated = var7;
+            var7 = {
+                'am': 'AM',
+                'pm': 'PM',
+                'midnight': 'ponoć',
+                'noon': 'podne',
+                'morning': 'ujutro',
+                'afternoon': 'poslije podne',
+                'evening': 'navečer',
+                'night': 'noću'
+            };
+            var6.wide = var7;
+            var3.formattingValues = var6;
+            var3.defaultFormattingWidth = var5;
+            var3 = var4.bind(var0)(var3);
+            var2.dayPeriod = var3;
+            var1.default = var2;
+            var2 = var1.default;
+            var1 = arg4;
+            var1.exports = var2;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1693]);

@@ -3,17 +3,17 @@ package zg;
 public class i {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f55824a;
+    public final int f55962a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final float f55825b;
+    public final float f55963b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final float f55826c;
+    public final float f55964c;
 
     public i(int i10, float f10, float f11) {
-        this.f55824a = i10;
-        this.f55825b = f10;
-        this.f55826c = f11;
+        this.f55962a = i10;
+        this.f55963b = f10;
+        this.f55964c = f11;
     }
 }

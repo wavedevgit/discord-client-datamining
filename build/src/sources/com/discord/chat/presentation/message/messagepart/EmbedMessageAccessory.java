@@ -116,7 +116,7 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
         }
         if (obj instanceof EmbedMessageAccessory) {
             EmbedMessageAccessory embedMessageAccessory = (EmbedMessageAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, embedMessageAccessory.messageId) && Intrinsics.areEqual(this.margins, embedMessageAccessory.margins) && this.index == embedMessageAccessory.index && ChannelId.m1064equalsimpl0(this.channelId, embedMessageAccessory.channelId) && this.constrainedWidth == embedMessageAccessory.constrainedWidth && this.radiusPx == embedMessageAccessory.radiusPx && Intrinsics.areEqual(this.embed, embedMessageAccessory.embed) && this.shouldAutoPlayGifs == embedMessageAccessory.shouldAutoPlayGifs && this.shouldAnimateEmoji == embedMessageAccessory.shouldAnimateEmoji && this.shouldShowLinkDecorations == embedMessageAccessory.shouldShowLinkDecorations && this.shouldShowRoleDot == embedMessageAccessory.shouldShowRoleDot && this.shouldShowRoleOnName == embedMessageAccessory.shouldShowRoleOnName && Intrinsics.areEqual(this.spoilerAttributes, embedMessageAccessory.spoilerAttributes) && Intrinsics.areEqual(this.onLongClick, embedMessageAccessory.onLongClick) && this.isForwardedContent == embedMessageAccessory.isForwardedContent;
+            return MessageId.m1089equalsimpl0(this.messageId, embedMessageAccessory.messageId) && Intrinsics.areEqual(this.margins, embedMessageAccessory.margins) && this.index == embedMessageAccessory.index && ChannelId.m1063equalsimpl0(this.channelId, embedMessageAccessory.channelId) && this.constrainedWidth == embedMessageAccessory.constrainedWidth && this.radiusPx == embedMessageAccessory.radiusPx && Intrinsics.areEqual(this.embed, embedMessageAccessory.embed) && this.shouldAutoPlayGifs == embedMessageAccessory.shouldAutoPlayGifs && this.shouldAnimateEmoji == embedMessageAccessory.shouldAnimateEmoji && this.shouldShowLinkDecorations == embedMessageAccessory.shouldShowLinkDecorations && this.shouldShowRoleDot == embedMessageAccessory.shouldShowRoleDot && this.shouldShowRoleOnName == embedMessageAccessory.shouldShowRoleOnName && Intrinsics.areEqual(this.spoilerAttributes, embedMessageAccessory.spoilerAttributes) && Intrinsics.areEqual(this.onLongClick, embedMessageAccessory.onLongClick) && this.isForwardedContent == embedMessageAccessory.isForwardedContent;
         }
         return false;
     }
@@ -190,9 +190,9 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
     }
 
     public int hashCode() {
-        int m1091hashCodeimpl = ((((((((((((((((((((((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + Integer.hashCode(this.index)) * 31) + ChannelId.m1065hashCodeimpl(this.channelId)) * 31) + Integer.hashCode(this.constrainedWidth)) * 31) + Integer.hashCode(this.radiusPx)) * 31) + this.embed.hashCode()) * 31) + Boolean.hashCode(this.shouldAutoPlayGifs)) * 31) + Boolean.hashCode(this.shouldAnimateEmoji)) * 31) + Boolean.hashCode(this.shouldShowLinkDecorations)) * 31) + Boolean.hashCode(this.shouldShowRoleDot)) * 31) + Boolean.hashCode(this.shouldShowRoleOnName)) * 31;
+        int m1090hashCodeimpl = ((((((((((((((((((((((MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + Integer.hashCode(this.index)) * 31) + ChannelId.m1064hashCodeimpl(this.channelId)) * 31) + Integer.hashCode(this.constrainedWidth)) * 31) + Integer.hashCode(this.radiusPx)) * 31) + this.embed.hashCode()) * 31) + Boolean.hashCode(this.shouldAutoPlayGifs)) * 31) + Boolean.hashCode(this.shouldAnimateEmoji)) * 31) + Boolean.hashCode(this.shouldShowLinkDecorations)) * 31) + Boolean.hashCode(this.shouldShowRoleDot)) * 31) + Boolean.hashCode(this.shouldShowRoleOnName)) * 31;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
-        int hashCode = (m1091hashCodeimpl + (spoilerAttributes == null ? 0 : spoilerAttributes.hashCode())) * 31;
+        int hashCode = (m1090hashCodeimpl + (spoilerAttributes == null ? 0 : spoilerAttributes.hashCode())) * 31;
         View.OnLongClickListener onLongClickListener = this.onLongClick;
         return ((hashCode + (onLongClickListener != null ? onLongClickListener.hashCode() : 0)) * 31) + Boolean.hashCode(this.isForwardedContent);
     }
@@ -203,10 +203,10 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         MessageMargins messageMargins = this.margins;
         int i10 = this.index;
-        String m1067toStringimpl = ChannelId.m1067toStringimpl(this.channelId);
+        String m1066toStringimpl = ChannelId.m1066toStringimpl(this.channelId);
         int i11 = this.constrainedWidth;
         int i12 = this.radiusPx;
         Embed embed = this.embed;
@@ -218,7 +218,7 @@ public final class EmbedMessageAccessory extends MessageAccessory implements Por
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
         View.OnLongClickListener onLongClickListener = this.onLongClick;
         boolean z15 = this.isForwardedContent;
-        return "EmbedMessageAccessory(messageId=" + m1093toStringimpl + ", margins=" + messageMargins + ", index=" + i10 + ", channelId=" + m1067toStringimpl + ", constrainedWidth=" + i11 + ", radiusPx=" + i12 + ", embed=" + embed + ", shouldAutoPlayGifs=" + z10 + ", shouldAnimateEmoji=" + z11 + ", shouldShowLinkDecorations=" + z12 + ", shouldShowRoleDot=" + z13 + ", shouldShowRoleOnName=" + z14 + ", spoilerAttributes=" + spoilerAttributes + ", onLongClick=" + onLongClickListener + ", isForwardedContent=" + z15 + ")";
+        return "EmbedMessageAccessory(messageId=" + m1092toStringimpl + ", margins=" + messageMargins + ", index=" + i10 + ", channelId=" + m1066toStringimpl + ", constrainedWidth=" + i11 + ", radiusPx=" + i12 + ", embed=" + embed + ", shouldAutoPlayGifs=" + z10 + ", shouldAnimateEmoji=" + z11 + ", shouldShowLinkDecorations=" + z12 + ", shouldShowRoleDot=" + z13 + ", shouldShowRoleOnName=" + z14 + ", spoilerAttributes=" + spoilerAttributes + ", onLongClick=" + onLongClickListener + ", isForwardedContent=" + z15 + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

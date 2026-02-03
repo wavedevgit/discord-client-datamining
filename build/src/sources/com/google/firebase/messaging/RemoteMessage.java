@@ -10,20 +10,20 @@ public final class RemoteMessage extends hf.a {
     public static final Parcelable.Creator<RemoteMessage> CREATOR = new o0();
 
     /* renamed from: d  reason: collision with root package name */
-    Bundle f17043d;
+    Bundle f16011d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Map f17044e;
+    private Map f16012e;
 
     public RemoteMessage(Bundle bundle) {
-        this.f17043d = bundle;
+        this.f16011d = bundle;
     }
 
     public Map b() {
-        if (this.f17044e == null) {
-            this.f17044e = e.a.a(this.f17043d);
+        if (this.f16012e == null) {
+            this.f16012e = e.a.a(this.f16011d);
         }
-        return this.f17044e;
+        return this.f16012e;
     }
 
     @Override // android.os.Parcelable

@@ -3,166 +3,166 @@ package hj;
 public final class a {
 
     /* renamed from: p  reason: collision with root package name */
-    private static final a f27721p = new C0362a().a();
+    private static final a f27006p = new C0349a().a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f27722a;
+    private final long f27007a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f27723b;
+    private final String f27008b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f27724c;
+    private final String f27009c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final c f27725d;
+    private final c f27010d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final d f27726e;
+    private final d f27011e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f27727f;
+    private final String f27012f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f27728g;
+    private final String f27013g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final int f27729h;
+    private final int f27014h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f27730i;
+    private final int f27015i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final String f27731j;
+    private final String f27016j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final long f27732k;
+    private final long f27017k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final b f27733l;
+    private final b f27018l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final String f27734m;
+    private final String f27019m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final long f27735n;
+    private final long f27020n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f27736o;
+    private final String f27021o;
 
     /* renamed from: hj.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0362a {
+    public static final class C0349a {
 
         /* renamed from: a  reason: collision with root package name */
-        private long f27737a = 0;
+        private long f27022a = 0;
 
         /* renamed from: b  reason: collision with root package name */
-        private String f27738b = "";
+        private String f27023b = "";
 
         /* renamed from: c  reason: collision with root package name */
-        private String f27739c = "";
+        private String f27024c = "";
 
         /* renamed from: d  reason: collision with root package name */
-        private c f27740d = c.UNKNOWN;
+        private c f27025d = c.UNKNOWN;
 
         /* renamed from: e  reason: collision with root package name */
-        private d f27741e = d.UNKNOWN_OS;
+        private d f27026e = d.UNKNOWN_OS;
 
         /* renamed from: f  reason: collision with root package name */
-        private String f27742f = "";
+        private String f27027f = "";
 
         /* renamed from: g  reason: collision with root package name */
-        private String f27743g = "";
+        private String f27028g = "";
 
         /* renamed from: h  reason: collision with root package name */
-        private int f27744h = 0;
+        private int f27029h = 0;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f27745i = 0;
+        private int f27030i = 0;
 
         /* renamed from: j  reason: collision with root package name */
-        private String f27746j = "";
+        private String f27031j = "";
 
         /* renamed from: k  reason: collision with root package name */
-        private long f27747k = 0;
+        private long f27032k = 0;
 
         /* renamed from: l  reason: collision with root package name */
-        private b f27748l = b.UNKNOWN_EVENT;
+        private b f27033l = b.UNKNOWN_EVENT;
 
         /* renamed from: m  reason: collision with root package name */
-        private String f27749m = "";
+        private String f27034m = "";
 
         /* renamed from: n  reason: collision with root package name */
-        private long f27750n = 0;
+        private long f27035n = 0;
 
         /* renamed from: o  reason: collision with root package name */
-        private String f27751o = "";
+        private String f27036o = "";
 
-        C0362a() {
+        C0349a() {
         }
 
         public a a() {
-            return new a(this.f27737a, this.f27738b, this.f27739c, this.f27740d, this.f27741e, this.f27742f, this.f27743g, this.f27744h, this.f27745i, this.f27746j, this.f27747k, this.f27748l, this.f27749m, this.f27750n, this.f27751o);
+            return new a(this.f27022a, this.f27023b, this.f27024c, this.f27025d, this.f27026e, this.f27027f, this.f27028g, this.f27029h, this.f27030i, this.f27031j, this.f27032k, this.f27033l, this.f27034m, this.f27035n, this.f27036o);
         }
 
-        public C0362a b(String str) {
-            this.f27749m = str;
+        public C0349a b(String str) {
+            this.f27034m = str;
             return this;
         }
 
-        public C0362a c(String str) {
-            this.f27743g = str;
+        public C0349a c(String str) {
+            this.f27028g = str;
             return this;
         }
 
-        public C0362a d(String str) {
-            this.f27751o = str;
+        public C0349a d(String str) {
+            this.f27036o = str;
             return this;
         }
 
-        public C0362a e(b bVar) {
-            this.f27748l = bVar;
+        public C0349a e(b bVar) {
+            this.f27033l = bVar;
             return this;
         }
 
-        public C0362a f(String str) {
-            this.f27739c = str;
+        public C0349a f(String str) {
+            this.f27024c = str;
             return this;
         }
 
-        public C0362a g(String str) {
-            this.f27738b = str;
+        public C0349a g(String str) {
+            this.f27023b = str;
             return this;
         }
 
-        public C0362a h(c cVar) {
-            this.f27740d = cVar;
+        public C0349a h(c cVar) {
+            this.f27025d = cVar;
             return this;
         }
 
-        public C0362a i(String str) {
-            this.f27742f = str;
+        public C0349a i(String str) {
+            this.f27027f = str;
             return this;
         }
 
-        public C0362a j(long j10) {
-            this.f27737a = j10;
+        public C0349a j(long j10) {
+            this.f27022a = j10;
             return this;
         }
 
-        public C0362a k(d dVar) {
-            this.f27741e = dVar;
+        public C0349a k(d dVar) {
+            this.f27026e = dVar;
             return this;
         }
 
-        public C0362a l(String str) {
-            this.f27746j = str;
+        public C0349a l(String str) {
+            this.f27031j = str;
             return this;
         }
 
-        public C0362a m(int i10) {
-            this.f27745i = i10;
+        public C0349a m(int i10) {
+            this.f27030i = i10;
             return this;
         }
     }
@@ -175,15 +175,15 @@ public final class a {
         
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f27756d;
+        private final int f27041d;
 
         b(int i10) {
-            this.f27756d = i10;
+            this.f27041d = i10;
         }
 
         @Override // xi.c
         public int getNumber() {
-            return this.f27756d;
+            return this.f27041d;
         }
     }
 
@@ -196,15 +196,15 @@ public final class a {
         
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f27762d;
+        private final int f27047d;
 
         c(int i10) {
-            this.f27762d = i10;
+            this.f27047d = i10;
         }
 
         @Override // xi.c
         public int getNumber() {
-            return this.f27762d;
+            return this.f27047d;
         }
     }
 
@@ -217,97 +217,97 @@ public final class a {
         
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f27768d;
+        private final int f27053d;
 
         d(int i10) {
-            this.f27768d = i10;
+            this.f27053d = i10;
         }
 
         @Override // xi.c
         public int getNumber() {
-            return this.f27768d;
+            return this.f27053d;
         }
     }
 
     a(long j10, String str, String str2, c cVar, d dVar, String str3, String str4, int i10, int i11, String str5, long j11, b bVar, String str6, long j12, String str7) {
-        this.f27722a = j10;
-        this.f27723b = str;
-        this.f27724c = str2;
-        this.f27725d = cVar;
-        this.f27726e = dVar;
-        this.f27727f = str3;
-        this.f27728g = str4;
-        this.f27729h = i10;
-        this.f27730i = i11;
-        this.f27731j = str5;
-        this.f27732k = j11;
-        this.f27733l = bVar;
-        this.f27734m = str6;
-        this.f27735n = j12;
-        this.f27736o = str7;
+        this.f27007a = j10;
+        this.f27008b = str;
+        this.f27009c = str2;
+        this.f27010d = cVar;
+        this.f27011e = dVar;
+        this.f27012f = str3;
+        this.f27013g = str4;
+        this.f27014h = i10;
+        this.f27015i = i11;
+        this.f27016j = str5;
+        this.f27017k = j11;
+        this.f27018l = bVar;
+        this.f27019m = str6;
+        this.f27020n = j12;
+        this.f27021o = str7;
     }
 
-    public static C0362a p() {
-        return new C0362a();
+    public static C0349a p() {
+        return new C0349a();
     }
 
     public String a() {
-        return this.f27734m;
+        return this.f27019m;
     }
 
     public long b() {
-        return this.f27732k;
+        return this.f27017k;
     }
 
     public long c() {
-        return this.f27735n;
+        return this.f27020n;
     }
 
     public String d() {
-        return this.f27728g;
+        return this.f27013g;
     }
 
     public String e() {
-        return this.f27736o;
+        return this.f27021o;
     }
 
     public b f() {
-        return this.f27733l;
+        return this.f27018l;
     }
 
     public String g() {
-        return this.f27724c;
+        return this.f27009c;
     }
 
     public String h() {
-        return this.f27723b;
+        return this.f27008b;
     }
 
     public c i() {
-        return this.f27725d;
+        return this.f27010d;
     }
 
     public String j() {
-        return this.f27727f;
+        return this.f27012f;
     }
 
     public int k() {
-        return this.f27729h;
+        return this.f27014h;
     }
 
     public long l() {
-        return this.f27722a;
+        return this.f27007a;
     }
 
     public d m() {
-        return this.f27726e;
+        return this.f27011e;
     }
 
     public String n() {
-        return this.f27731j;
+        return this.f27016j;
     }
 
     public int o() {
-        return this.f27730i;
+        return this.f27015i;
     }
 }

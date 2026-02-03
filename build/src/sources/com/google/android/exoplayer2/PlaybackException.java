@@ -9,22 +9,22 @@ import com.google.android.exoplayer2.g;
 public class PlaybackException extends Exception implements g {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final String f12572i = ne.w0.B0(0);
+    private static final String f11540i = ne.w0.B0(0);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final String f12573o = ne.w0.B0(1);
+    private static final String f11541o = ne.w0.B0(1);
 
     /* renamed from: p  reason: collision with root package name */
-    private static final String f12574p = ne.w0.B0(2);
+    private static final String f11542p = ne.w0.B0(2);
 
     /* renamed from: q  reason: collision with root package name */
-    private static final String f12575q = ne.w0.B0(3);
+    private static final String f11543q = ne.w0.B0(3);
 
     /* renamed from: r  reason: collision with root package name */
-    private static final String f12576r = ne.w0.B0(4);
+    private static final String f11544r = ne.w0.B0(4);
 
     /* renamed from: s  reason: collision with root package name */
-    public static final g.a f12577s = new g.a() { // from class: com.google.android.exoplayer2.q1
+    public static final g.a f11545s = new g.a() { // from class: com.google.android.exoplayer2.q1
         @Override // com.google.android.exoplayer2.g.a
         public final g a(Bundle bundle) {
             return new PlaybackException(bundle);
@@ -32,14 +32,14 @@ public class PlaybackException extends Exception implements g {
     };
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f12578d;
+    public final int f11546d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final long f12579e;
+    public final long f11547e;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public PlaybackException(Bundle bundle) {
-        this(bundle.getString(f12574p), c(bundle), bundle.getInt(f12572i, 1000), bundle.getLong(f12573o, SystemClock.elapsedRealtime()));
+        this(bundle.getString(f11542p), c(bundle), bundle.getInt(f11540i, 1000), bundle.getLong(f11541o, SystemClock.elapsedRealtime()));
     }
 
     private static RemoteException a(String str) {
@@ -51,8 +51,8 @@ public class PlaybackException extends Exception implements g {
     }
 
     private static Throwable c(Bundle bundle) {
-        String string = bundle.getString(f12575q);
-        String string2 = bundle.getString(f12576r);
+        String string = bundle.getString(f11543q);
+        String string2 = bundle.getString(f11544r);
         Throwable th2 = null;
         if (TextUtils.isEmpty(string)) {
             return null;
@@ -74,7 +74,7 @@ public class PlaybackException extends Exception implements g {
     /* JADX INFO: Access modifiers changed from: protected */
     public PlaybackException(String str, Throwable th2, int i10, long j10) {
         super(str, th2);
-        this.f12578d = i10;
-        this.f12579e = j10;
+        this.f11546d = i10;
+        this.f11547e = j10;
     }
 }

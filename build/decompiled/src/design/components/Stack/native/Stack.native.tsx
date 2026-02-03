@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var3);
     var6 = var7.createStyles;
     var3 = function(arg0, arg1, arg2, arg3) { // Environment: var1
-        _fun37467: for (var _fun37467_ip = 0;;) switch (_fun37467_ip) {
+        _fun37554: for (var _fun37554_ip = 0;;) switch (_fun37554_ip) {
             case 0:
                 var0 = {};
                 var1 = {};
@@ -48,8 +48,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = 'horizontal';
                 var3 = arg1;
                 if (!(var4 === var3)) {
-                    _fun37467_ip = 54;
-                    continue _fun37467
+                    _fun37554_ip = 54;
+                    continue _fun37554
                 }
             case 50:
                 var2 = 'row';
@@ -68,15 +68,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Stack/native/Stack.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun37468: for (var _fun37468_ip = 0;;) switch (_fun37468_ip) {
+        _fun37555: for (var _fun37555_ip = 0;;) switch (_fun37555_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.spacing;
                 var9 = 8;
                 var3 = undefined;
                 if (!(var3 !== var1)) {
-                    _fun37468_ip = 20;
-                    continue _fun37468
+                    _fun37555_ip = 20;
+                    continue _fun37555
                 }
             case 17:
                 var9 = var1;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.direction;
                 var8 = 'vertical';
                 if (!(var3 !== var1)) {
-                    _fun37468_ip = 37;
-                    continue _fun37468
+                    _fun37555_ip = 37;
+                    continue _fun37555
                 }
             case 34:
                 var8 = var1;
@@ -93,8 +93,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.align;
                 var6 = 'stretch';
                 if (!(var3 !== var1)) {
-                    _fun37468_ip = 54;
-                    continue _fun37468
+                    _fun37555_ip = 54;
+                    continue _fun37555
                 }
             case 51:
                 var6 = var1;
@@ -102,8 +102,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.justify;
                 var2 = 'flex-start';
                 if (!(var3 !== var1)) {
-                    _fun37468_ip = 73;
-                    continue _fun37468
+                    _fun37555_ip = 73;
+                    continue _fun37555
                 }
             case 70:
                 var2 = var1;

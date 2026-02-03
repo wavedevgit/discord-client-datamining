@@ -37,31 +37,31 @@ import org.jetbrains.annotations.NotNull;
 public final class LazyJavaPackageFragment extends PackageFragmentDescriptorImpl {
 
     /* renamed from: z  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f33993z = {Reflection.property1(new PropertyReference1Impl(LazyJavaPackageFragment.class, "binaryClasses", "getBinaryClasses$descriptors_jvm()Ljava/util/Map;", 0)), Reflection.property1(new PropertyReference1Impl(LazyJavaPackageFragment.class, "partToFacade", "getPartToFacade()Ljava/util/HashMap;", 0))};
+    static final /* synthetic */ KProperty[] f33383z = {Reflection.property1(new PropertyReference1Impl(LazyJavaPackageFragment.class, "binaryClasses", "getBinaryClasses$descriptors_jvm()Ljava/util/Map;", 0)), Reflection.property1(new PropertyReference1Impl(LazyJavaPackageFragment.class, "partToFacade", "getPartToFacade()Ljava/util/HashMap;", 0))};
 
     /* renamed from: r  reason: collision with root package name */
-    private final JavaPackage f33994r;
+    private final JavaPackage f33384r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final LazyJavaResolverContext f33995s;
+    private final LazyJavaResolverContext f33385s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final MetadataVersion f33996t;
+    private final MetadataVersion f33386t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final NotNullLazyValue f33997u;
+    private final NotNullLazyValue f33387u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final JvmPackageScope f33998v;
+    private final JvmPackageScope f33388v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final NotNullLazyValue f33999w;
+    private final NotNullLazyValue f33389w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final Annotations f34000x;
+    private final Annotations f33390x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final NotNullLazyValue f34001y;
+    private final NotNullLazyValue f33391y;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public /* synthetic */ class WhenMappings {
@@ -87,33 +87,33 @@ public final class LazyJavaPackageFragment extends PackageFragmentDescriptorImpl
         Annotations resolveAnnotations;
         Intrinsics.checkNotNullParameter(outerContext, "outerContext");
         Intrinsics.checkNotNullParameter(jPackage, "jPackage");
-        this.f33994r = jPackage;
+        this.f33384r = jPackage;
         LazyJavaResolverContext childForClassOrPackage$default = ContextKt.childForClassOrPackage$default(outerContext, this, null, 0, 6, null);
-        this.f33995s = childForClassOrPackage$default;
-        this.f33996t = outerContext.getComponents().getDeserializedDescriptorResolver().getComponents().getConfiguration().getMetadataVersion();
-        this.f33997u = childForClassOrPackage$default.getStorageManager().createLazyValue(new t(this));
-        this.f33998v = new JvmPackageScope(childForClassOrPackage$default, jPackage, this);
-        this.f33999w = childForClassOrPackage$default.getStorageManager().createRecursionTolerantLazyValue(new u(this), CollectionsKt.l());
+        this.f33385s = childForClassOrPackage$default;
+        this.f33386t = outerContext.getComponents().getDeserializedDescriptorResolver().getComponents().getConfiguration().getMetadataVersion();
+        this.f33387u = childForClassOrPackage$default.getStorageManager().createLazyValue(new t(this));
+        this.f33388v = new JvmPackageScope(childForClassOrPackage$default, jPackage, this);
+        this.f33389w = childForClassOrPackage$default.getStorageManager().createRecursionTolerantLazyValue(new u(this), CollectionsKt.l());
         if (childForClassOrPackage$default.getComponents().getJavaTypeEnhancementState().getDisabledDefaultAnnotations()) {
             resolveAnnotations = Annotations.Companion.getEMPTY();
         } else {
             resolveAnnotations = LazyJavaAnnotationsKt.resolveAnnotations(childForClassOrPackage$default, jPackage);
         }
-        this.f34000x = resolveAnnotations;
-        this.f34001y = childForClassOrPackage$default.getStorageManager().createLazyValue(new v(this));
+        this.f33390x = resolveAnnotations;
+        this.f33391y = childForClassOrPackage$default.getStorageManager().createLazyValue(new v(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Map e(LazyJavaPackageFragment lazyJavaPackageFragment) {
         Pair pair;
         ArrayList arrayList = new ArrayList();
-        for (String str : lazyJavaPackageFragment.f33995s.getComponents().getPackagePartProvider().findPackageParts(lazyJavaPackageFragment.getFqName().asString())) {
+        for (String str : lazyJavaPackageFragment.f33385s.getComponents().getPackagePartProvider().findPackageParts(lazyJavaPackageFragment.getFqName().asString())) {
             ClassId.Companion companion = ClassId.Companion;
             FqName fqNameForTopLevelClassMaybeWithDollars = JvmClassName.byInternalName(str).getFqNameForTopLevelClassMaybeWithDollars();
             Intrinsics.checkNotNullExpressionValue(fqNameForTopLevelClassMaybeWithDollars, "getFqNameForTopLevelClassMaybeWithDollars(...)");
-            KotlinJvmBinaryClass findKotlinClass = KotlinClassFinderKt.findKotlinClass(lazyJavaPackageFragment.f33995s.getComponents().getKotlinClassFinder(), companion.topLevel(fqNameForTopLevelClassMaybeWithDollars), lazyJavaPackageFragment.f33996t);
+            KotlinJvmBinaryClass findKotlinClass = KotlinClassFinderKt.findKotlinClass(lazyJavaPackageFragment.f33385s.getComponents().getKotlinClassFinder(), companion.topLevel(fqNameForTopLevelClassMaybeWithDollars), lazyJavaPackageFragment.f33386t);
             if (findKotlinClass != null) {
-                pair = jr.v.a(str, findKotlinClass);
+                pair = lr.v.a(str, findKotlinClass);
             } else {
                 pair = null;
             }
@@ -148,7 +148,7 @@ public final class LazyJavaPackageFragment extends PackageFragmentDescriptorImpl
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final List g(LazyJavaPackageFragment lazyJavaPackageFragment) {
-        Collection<JavaPackage> subPackages = lazyJavaPackageFragment.f33994r.getSubPackages();
+        Collection<JavaPackage> subPackages = lazyJavaPackageFragment.f33384r.getSubPackages();
         ArrayList arrayList = new ArrayList(CollectionsKt.w(subPackages, 10));
         for (JavaPackage javaPackage : subPackages) {
             arrayList.add(javaPackage.getFqName());
@@ -158,18 +158,18 @@ public final class LazyJavaPackageFragment extends PackageFragmentDescriptorImpl
 
     public final ClassDescriptor findClassifierByJavaClass$descriptors_jvm(@NotNull JavaClass jClass) {
         Intrinsics.checkNotNullParameter(jClass, "jClass");
-        return this.f33998v.getJavaScope$descriptors_jvm().findClassifierByJavaClass$descriptors_jvm(jClass);
+        return this.f33388v.getJavaScope$descriptors_jvm().findClassifierByJavaClass$descriptors_jvm(jClass);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotatedImpl, kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotated
     @NotNull
     public Annotations getAnnotations() {
-        return this.f34000x;
+        return this.f33390x;
     }
 
     @NotNull
     public final Map<String, KotlinJvmBinaryClass> getBinaryClasses$descriptors_jvm() {
-        return (Map) StorageKt.getValue(this.f33997u, this, f33993z[0]);
+        return (Map) StorageKt.getValue(this.f33387u, this, f33383z[0]);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.PackageFragmentDescriptorImpl, kotlin.reflect.jvm.internal.impl.descriptors.impl.DeclarationDescriptorNonRootImpl, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorWithSource
@@ -180,18 +180,18 @@ public final class LazyJavaPackageFragment extends PackageFragmentDescriptorImpl
 
     @NotNull
     public final List<FqName> getSubPackageFqNames$descriptors_jvm() {
-        return (List) this.f33999w.invoke();
+        return (List) this.f33389w.invoke();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.PackageFragmentDescriptorImpl, kotlin.reflect.jvm.internal.impl.descriptors.impl.DeclarationDescriptorImpl
     @NotNull
     public String toString() {
-        return "Lazy Java package fragment: " + getFqName() + " of module " + this.f33995s.getComponents().getModule();
+        return "Lazy Java package fragment: " + getFqName() + " of module " + this.f33385s.getComponents().getModule();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PackageFragmentDescriptor
     @NotNull
     public JvmPackageScope getMemberScope() {
-        return this.f33998v;
+        return this.f33388v;
     }
 }

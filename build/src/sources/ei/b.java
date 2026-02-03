@@ -7,68 +7,68 @@ import java.util.List;
 public final class b extends a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f22830a;
+    private final int f21521a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f22831b;
+    private final int f21522b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f22832c;
+    private final int f21523c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f22833d;
+    private final long f21524d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final long f22834e;
+    private final long f21525e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final List f22835f;
+    private final List f21526f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final List f22836g;
+    private final List f21527g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final PendingIntent f22837h;
+    private final PendingIntent f21528h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final List f22838i;
+    private final List f21529i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(int i10, int i11, int i12, long j10, long j11, List list, List list2, PendingIntent pendingIntent, List list3) {
-        this.f22830a = i10;
-        this.f22831b = i11;
-        this.f22832c = i12;
-        this.f22833d = j10;
-        this.f22834e = j11;
-        this.f22835f = list;
-        this.f22836g = list2;
-        this.f22837h = pendingIntent;
-        this.f22838i = list3;
+        this.f21521a = i10;
+        this.f21522b = i11;
+        this.f21523c = i12;
+        this.f21524d = j10;
+        this.f21525e = j11;
+        this.f21526f = list;
+        this.f21527g = list2;
+        this.f21528h = pendingIntent;
+        this.f21529i = list3;
     }
 
     @Override // ei.a
     public final long a() {
-        return this.f22833d;
+        return this.f21524d;
     }
 
     @Override // ei.a
     public final int b() {
-        return this.f22832c;
+        return this.f21523c;
     }
 
     @Override // ei.a
     public final PendingIntent c() {
-        return this.f22837h;
+        return this.f21528h;
     }
 
     @Override // ei.a
     public final int d() {
-        return this.f22830a;
+        return this.f21521a;
     }
 
     @Override // ei.a
     public final int e() {
-        return this.f22831b;
+        return this.f21522b;
     }
 
     public final boolean equals(Object obj) {
@@ -81,7 +81,7 @@ public final class b extends a {
         }
         if (obj instanceof a) {
             a aVar = (a) obj;
-            if (this.f22830a == aVar.d() && this.f22831b == aVar.e() && this.f22832c == aVar.b() && this.f22833d == aVar.a() && this.f22834e == aVar.f() && ((list = this.f22835f) != null ? list.equals(aVar.h()) : aVar.h() == null) && ((list2 = this.f22836g) != null ? list2.equals(aVar.g()) : aVar.g() == null) && ((pendingIntent = this.f22837h) != null ? pendingIntent.equals(aVar.c()) : aVar.c() == null) && ((list3 = this.f22838i) != null ? list3.equals(aVar.i()) : aVar.i() == null)) {
+            if (this.f21521a == aVar.d() && this.f21522b == aVar.e() && this.f21523c == aVar.b() && this.f21524d == aVar.a() && this.f21525e == aVar.f() && ((list = this.f21526f) != null ? list.equals(aVar.h()) : aVar.h() == null) && ((list2 = this.f21527g) != null ? list2.equals(aVar.g()) : aVar.g() == null) && ((pendingIntent = this.f21528h) != null ? pendingIntent.equals(aVar.c()) : aVar.c() == null) && ((list3 = this.f21529i) != null ? list3.equals(aVar.i()) : aVar.i() == null)) {
                 return true;
             }
         }
@@ -90,31 +90,31 @@ public final class b extends a {
 
     @Override // ei.a
     public final long f() {
-        return this.f22834e;
+        return this.f21525e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // ei.a
     public final List g() {
-        return this.f22836g;
+        return this.f21527g;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // ei.a
     public final List h() {
-        return this.f22835f;
+        return this.f21526f;
     }
 
     public final int hashCode() {
         int hashCode;
         int hashCode2;
         int hashCode3;
-        int i10 = ((((this.f22830a ^ 1000003) * 1000003) ^ this.f22831b) * 1000003) ^ this.f22832c;
-        long j10 = this.f22833d;
+        int i10 = ((((this.f21521a ^ 1000003) * 1000003) ^ this.f21522b) * 1000003) ^ this.f21523c;
+        long j10 = this.f21524d;
         long j11 = j10 ^ (j10 >>> 32);
-        long j12 = this.f22834e;
+        long j12 = this.f21525e;
         long j13 = (j12 >>> 32) ^ j12;
-        List list = this.f22835f;
+        List list = this.f21526f;
         int i11 = 0;
         if (list == null) {
             hashCode = 0;
@@ -122,21 +122,21 @@ public final class b extends a {
             hashCode = list.hashCode();
         }
         int i12 = ((((((i10 * 1000003) ^ ((int) j11)) * 1000003) ^ ((int) j13)) * 1000003) ^ hashCode) * 1000003;
-        List list2 = this.f22836g;
+        List list2 = this.f21527g;
         if (list2 == null) {
             hashCode2 = 0;
         } else {
             hashCode2 = list2.hashCode();
         }
         int i13 = (i12 ^ hashCode2) * 1000003;
-        PendingIntent pendingIntent = this.f22837h;
+        PendingIntent pendingIntent = this.f21528h;
         if (pendingIntent == null) {
             hashCode3 = 0;
         } else {
             hashCode3 = pendingIntent.hashCode();
         }
         int i14 = (i13 ^ hashCode3) * 1000003;
-        List list3 = this.f22838i;
+        List list3 = this.f21529i;
         if (list3 != null) {
             i11 = list3.hashCode();
         }
@@ -146,19 +146,19 @@ public final class b extends a {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // ei.a
     public final List i() {
-        return this.f22838i;
+        return this.f21529i;
     }
 
     public final String toString() {
-        int i10 = this.f22830a;
-        int i11 = this.f22831b;
-        int i12 = this.f22832c;
-        long j10 = this.f22833d;
-        long j11 = this.f22834e;
-        String valueOf = String.valueOf(this.f22835f);
-        String valueOf2 = String.valueOf(this.f22836g);
-        String valueOf3 = String.valueOf(this.f22837h);
-        String valueOf4 = String.valueOf(this.f22838i);
+        int i10 = this.f21521a;
+        int i11 = this.f21522b;
+        int i12 = this.f21523c;
+        long j10 = this.f21524d;
+        long j11 = this.f21525e;
+        String valueOf = String.valueOf(this.f21526f);
+        String valueOf2 = String.valueOf(this.f21527g);
+        String valueOf3 = String.valueOf(this.f21528h);
+        String valueOf4 = String.valueOf(this.f21529i);
         return "SplitInstallSessionState{sessionId=" + i10 + ", status=" + i11 + ", errorCode=" + i12 + ", bytesDownloaded=" + j10 + ", totalBytesToDownload=" + j11 + ", moduleNamesNullable=" + valueOf + ", languagesNullable=" + valueOf2 + ", resolutionIntent=" + valueOf3 + ", splitFileIntents=" + valueOf4 + "}";
     }
 }

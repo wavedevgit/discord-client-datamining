@@ -1,63 +1,33 @@
 package ou;
 
-import java.util.List;
-import java.util.Map;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Intrinsics;
-import ou.d;
+import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements lu.a, d {
+public interface a {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f44862a = new a();
-
-    private a() {
-    }
-
-    @Override // nu.f
-    public Object b(Object obj, Object obj2, h hVar, Function2 function2) {
-        return d.a.f(this, obj, obj2, hVar, function2);
-    }
-
-    @Override // nu.a
-    public nu.b c(List list, Object obj, h hVar) {
-        return d.a.c(this, list, obj, hVar);
-    }
-
-    @Override // ou.d
-    public Object d(c data, h evaluator) {
-        Intrinsics.checkNotNullParameter(data, "data");
-        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-        for (Object obj : data.b()) {
-            if (!f44862a.i(evaluator.a(data.a(), obj))) {
-                return data.c();
+    /* renamed from: ou.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class C0553a {
+        public static Boolean a(a aVar, Object obj) {
+            Double p10;
+            if (obj instanceof Boolean) {
+                return (Boolean) obj;
+            }
+            boolean z10 = false;
+            if (obj instanceof Number) {
+                if (((Number) obj).longValue() > 0) {
+                    z10 = true;
+                }
+                return Boolean.valueOf(z10);
+            } else if (!(obj instanceof String) || (p10 = StringsKt.p((String) obj)) == null) {
+                return null;
+            } else {
+                if (((long) p10.doubleValue()) > 0) {
+                    z10 = true;
+                }
+                return Boolean.valueOf(z10);
             }
         }
-        return Boolean.TRUE;
     }
 
-    @Override // lu.a
-    public Object e(Object obj, Object obj2, h evaluator) {
-        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-        return g(obj, obj2, evaluator);
-    }
-
-    @Override // pv.a
-    public List f(List list, Object obj, h hVar) {
-        return d.a.h(this, list, obj, hVar);
-    }
-
-    public Object g(Object obj, Object obj2, h hVar) {
-        return d.a.b(this, obj, obj2, hVar);
-    }
-
-    @Override // nu.a
-    /* renamed from: h */
-    public Boolean a(Map map, List list) {
-        return d.a.e(this, map, list);
-    }
-
-    public boolean i(Object obj) {
-        return d.a.i(this, obj);
-    }
+    Boolean c(Object obj);
 }

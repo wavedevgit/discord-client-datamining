@@ -9,35 +9,35 @@ public final class p0 extends hf.a {
     public static final Parcelable.Creator<p0> CREATOR = new q0();
 
     /* renamed from: d  reason: collision with root package name */
-    final int f26967d;
+    final int f26180d;
 
     /* renamed from: e  reason: collision with root package name */
-    final IBinder f26968e;
+    final IBinder f26181e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final com.google.android.gms.common.b f26969i;
+    private final com.google.android.gms.common.b f26182i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean f26970o;
+    private final boolean f26183o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final boolean f26971p;
+    private final boolean f26184p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p0(int i10, IBinder iBinder, com.google.android.gms.common.b bVar, boolean z10, boolean z11) {
-        this.f26967d = i10;
-        this.f26968e = iBinder;
-        this.f26969i = bVar;
-        this.f26970o = z10;
-        this.f26971p = z11;
+        this.f26180d = i10;
+        this.f26181e = iBinder;
+        this.f26182i = bVar;
+        this.f26183o = z10;
+        this.f26184p = z11;
     }
 
     public final com.google.android.gms.common.b b() {
-        return this.f26969i;
+        return this.f26182i;
     }
 
     public final j c() {
-        IBinder iBinder = this.f26968e;
+        IBinder iBinder = this.f26181e;
         if (iBinder == null) {
             return null;
         }
@@ -55,7 +55,7 @@ public final class p0 extends hf.a {
             return false;
         }
         p0 p0Var = (p0) obj;
-        if (!this.f26969i.equals(p0Var.f26969i) || !o.a(c(), p0Var.c())) {
+        if (!this.f26182i.equals(p0Var.f26182i) || !o.a(c(), p0Var.c())) {
             return false;
         }
         return true;
@@ -64,11 +64,11 @@ public final class p0 extends hf.a {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
         int a10 = hf.c.a(parcel);
-        hf.c.l(parcel, 1, this.f26967d);
-        hf.c.k(parcel, 2, this.f26968e, false);
-        hf.c.q(parcel, 3, this.f26969i, i10, false);
-        hf.c.c(parcel, 4, this.f26970o);
-        hf.c.c(parcel, 5, this.f26971p);
+        hf.c.l(parcel, 1, this.f26180d);
+        hf.c.k(parcel, 2, this.f26181e, false);
+        hf.c.q(parcel, 3, this.f26182i, i10, false);
+        hf.c.c(parcel, 4, this.f26183o);
+        hf.c.c(parcel, 5, this.f26184p);
         hf.c.b(parcel, a10);
     }
 }

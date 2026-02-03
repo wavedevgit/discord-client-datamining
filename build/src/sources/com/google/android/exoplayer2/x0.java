@@ -5,31 +5,31 @@ import qd.r;
 final class x0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public final r.b f14170a;
+    public final r.b f13138a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final long f14171b;
+    public final long f13139b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final long f14172c;
+    public final long f13140c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final long f14173d;
+    public final long f13141d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final long f14174e;
+    public final long f13142e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final boolean f14175f;
+    public final boolean f13143f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final boolean f14176g;
+    public final boolean f13144g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final boolean f14177h;
+    public final boolean f13145h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final boolean f14178i;
+    public final boolean f13146i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public x0(r.b bVar, long j10, long j11, long j12, long j13, boolean z10, boolean z11, boolean z12, boolean z13) {
@@ -52,29 +52,29 @@ final class x0 {
             z16 = false;
         }
         ne.a.a(z16);
-        this.f14170a = bVar;
-        this.f14171b = j10;
-        this.f14172c = j11;
-        this.f14173d = j12;
-        this.f14174e = j13;
-        this.f14175f = z10;
-        this.f14176g = z11;
-        this.f14177h = z12;
-        this.f14178i = z13;
+        this.f13138a = bVar;
+        this.f13139b = j10;
+        this.f13140c = j11;
+        this.f13141d = j12;
+        this.f13142e = j13;
+        this.f13143f = z10;
+        this.f13144g = z11;
+        this.f13145h = z12;
+        this.f13146i = z13;
     }
 
     public x0 a(long j10) {
-        if (j10 == this.f14172c) {
+        if (j10 == this.f13140c) {
             return this;
         }
-        return new x0(this.f14170a, this.f14171b, j10, this.f14173d, this.f14174e, this.f14175f, this.f14176g, this.f14177h, this.f14178i);
+        return new x0(this.f13138a, this.f13139b, j10, this.f13141d, this.f13142e, this.f13143f, this.f13144g, this.f13145h, this.f13146i);
     }
 
     public x0 b(long j10) {
-        if (j10 == this.f14171b) {
+        if (j10 == this.f13139b) {
             return this;
         }
-        return new x0(this.f14170a, j10, this.f14172c, this.f14173d, this.f14174e, this.f14175f, this.f14176g, this.f14177h, this.f14178i);
+        return new x0(this.f13138a, j10, this.f13140c, this.f13141d, this.f13142e, this.f13143f, this.f13144g, this.f13145h, this.f13146i);
     }
 
     public boolean equals(Object obj) {
@@ -83,7 +83,7 @@ final class x0 {
         }
         if (obj != null && x0.class == obj.getClass()) {
             x0 x0Var = (x0) obj;
-            if (this.f14171b == x0Var.f14171b && this.f14172c == x0Var.f14172c && this.f14173d == x0Var.f14173d && this.f14174e == x0Var.f14174e && this.f14175f == x0Var.f14175f && this.f14176g == x0Var.f14176g && this.f14177h == x0Var.f14177h && this.f14178i == x0Var.f14178i && ne.w0.c(this.f14170a, x0Var.f14170a)) {
+            if (this.f13139b == x0Var.f13139b && this.f13140c == x0Var.f13140c && this.f13141d == x0Var.f13141d && this.f13142e == x0Var.f13142e && this.f13143f == x0Var.f13143f && this.f13144g == x0Var.f13144g && this.f13145h == x0Var.f13145h && this.f13146i == x0Var.f13146i && ne.w0.c(this.f13138a, x0Var.f13138a)) {
                 return true;
             }
         }
@@ -91,6 +91,6 @@ final class x0 {
     }
 
     public int hashCode() {
-        return ((((((((((((((((527 + this.f14170a.hashCode()) * 31) + ((int) this.f14171b)) * 31) + ((int) this.f14172c)) * 31) + ((int) this.f14173d)) * 31) + ((int) this.f14174e)) * 31) + (this.f14175f ? 1 : 0)) * 31) + (this.f14176g ? 1 : 0)) * 31) + (this.f14177h ? 1 : 0)) * 31) + (this.f14178i ? 1 : 0);
+        return ((((((((((((((((527 + this.f13138a.hashCode()) * 31) + ((int) this.f13139b)) * 31) + ((int) this.f13140c)) * 31) + ((int) this.f13141d)) * 31) + ((int) this.f13142e)) * 31) + (this.f13143f ? 1 : 0)) * 31) + (this.f13144g ? 1 : 0)) * 31) + (this.f13145h ? 1 : 0)) * 31) + (this.f13146i ? 1 : 0);
     }
 }

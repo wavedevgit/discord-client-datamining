@@ -63,4 +63,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.BASE_VOICE_PANEL_HEADER_HEIGHT = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [11806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [11819, 2]);

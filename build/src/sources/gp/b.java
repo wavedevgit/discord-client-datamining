@@ -3,88 +3,52 @@ package gp;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.viewbinding.ViewBinding;
-import com.withpersona.sdk2.inquiry.selfie.view.Pi2CircleMaskView;
-import com.withpersona.sdk2.inquiry.selfie.view.Pi2ProgressArcView;
-import com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView;
-import fp.w0;
-import fp.x0;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.squareup.workflow1.ui.WorkflowViewStub;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class b implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final View f27322a;
+    private final CoordinatorLayout f26482a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final View f27323b;
+    public final WorkflowViewStub f26483b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final Pi2CircleMaskView f27324c;
+    public final FloatingActionButton f26484c;
 
-    /* renamed from: d  reason: collision with root package name */
-    public final ThemeableLottieAnimationView f27325d;
-
-    /* renamed from: e  reason: collision with root package name */
-    public final ImageView f27326e;
-
-    /* renamed from: f  reason: collision with root package name */
-    public final View f27327f;
-
-    /* renamed from: g  reason: collision with root package name */
-    public final View f27328g;
-
-    /* renamed from: h  reason: collision with root package name */
-    public final Pi2ProgressArcView f27329h;
-
-    private b(View view, View view2, Pi2CircleMaskView pi2CircleMaskView, ThemeableLottieAnimationView themeableLottieAnimationView, ImageView imageView, View view3, View view4, Pi2ProgressArcView pi2ProgressArcView) {
-        this.f27322a = view;
-        this.f27323b = view2;
-        this.f27324c = pi2CircleMaskView;
-        this.f27325d = themeableLottieAnimationView;
-        this.f27326e = imageView;
-        this.f27327f = view3;
-        this.f27328g = view4;
-        this.f27329h = pi2ProgressArcView;
+    private b(CoordinatorLayout coordinatorLayout, WorkflowViewStub workflowViewStub, FloatingActionButton floatingActionButton) {
+        this.f26482a = coordinatorLayout;
+        this.f26483b = workflowViewStub;
+        this.f26484c = floatingActionButton;
     }
 
     public static b a(View view) {
-        View a10;
-        View a11;
-        int i10 = w0.f25050d;
-        View a12 = e4.a.a(view, i10);
-        if (a12 != null) {
-            i10 = w0.f25057k;
-            Pi2CircleMaskView pi2CircleMaskView = (Pi2CircleMaskView) e4.a.a(view, i10);
-            if (pi2CircleMaskView != null) {
-                i10 = w0.f25064r;
-                ThemeableLottieAnimationView themeableLottieAnimationView = (ThemeableLottieAnimationView) e4.a.a(view, i10);
-                if (themeableLottieAnimationView != null) {
-                    i10 = w0.f25065s;
-                    ImageView imageView = (ImageView) e4.a.a(view, i10);
-                    if (imageView != null && (a10 = e4.a.a(view, (i10 = w0.f25069w))) != null && (a11 = e4.a.a(view, (i10 = w0.f25071y))) != null) {
-                        i10 = w0.L;
-                        Pi2ProgressArcView pi2ProgressArcView = (Pi2ProgressArcView) e4.a.a(view, i10);
-                        if (pi2ProgressArcView != null) {
-                            return new b(view, a12, pi2CircleMaskView, themeableLottieAnimationView, imageView, a10, a11, pi2ProgressArcView);
-                        }
-                    }
-                }
+        int i10 = fp.a.f24321a;
+        WorkflowViewStub workflowViewStub = (WorkflowViewStub) e4.a.a(view, i10);
+        if (workflowViewStub != null) {
+            i10 = fp.a.f24322b;
+            FloatingActionButton floatingActionButton = (FloatingActionButton) e4.a.a(view, i10);
+            if (floatingActionButton != null) {
+                return new b((CoordinatorLayout) view, workflowViewStub, floatingActionButton);
             }
         }
         throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
     }
 
-    public static b b(LayoutInflater layoutInflater, ViewGroup viewGroup) {
-        if (viewGroup != null) {
-            layoutInflater.inflate(x0.f25086b, viewGroup);
-            return a(viewGroup);
+    public static b c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
+        View inflate = layoutInflater.inflate(fp.b.f24326b, viewGroup, false);
+        if (z10) {
+            viewGroup.addView(inflate);
         }
-        throw new NullPointerException("parent");
+        return a(inflate);
     }
 
     @Override // androidx.viewbinding.ViewBinding
-    public View getRoot() {
-        return this.f27322a;
+    /* renamed from: b */
+    public CoordinatorLayout getRoot() {
+        return this.f26482a;
     }
 }

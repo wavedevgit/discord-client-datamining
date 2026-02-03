@@ -5,7 +5,7 @@ import ui.c;
 final class f4 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final f4 f45318a = new f4();
+    static final f4 f45276a = new f4();
 
     static {
         c.b a10 = ui.c.a("errorCode");

@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var0;
         var0 = function() { // Environment: var0
-            _fun79990: for (var _fun79990_ip = 0;;) switch (_fun79990_ip) {
+            _fun80100: for (var _fun80100_ip = 0;;) switch (_fun80100_ip) {
                 case 0:
                     var1 = _closure1_slot3;
                     var0 = var1.getCurrentUser;
@@ -51,16 +51,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var0 == var2;
                     var1 = undefined;
                     if (var3) {
-                        _fun79990_ip = 33;
-                        continue _fun79990
+                        _fun80100_ip = 33;
+                        continue _fun80100
                     }
                 case 27:
                     var1 = var2.mfaEnabled;
                 case 33:
                     var0 = var0 != var1;
                     if (!var0) {
-                        _fun79990_ip = 43;
-                        continue _fun79990
+                        _fun80100_ip = 43;
+                        continue _fun80100
                     }
                 case 40:
                     var0 = var1;
@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var0;
         var0 = function() { // Environment: var0
-            _fun79994: for (var _fun79994_ip = 0;;) switch (_fun79994_ip) {
+            _fun80104: for (var _fun80104_ip = 0;;) switch (_fun80104_ip) {
                 case 0:
                     var1 = _closure1_slot3;
                     var0 = var1.getCurrentUser;
@@ -114,16 +114,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var0 == var2;
                     var1 = undefined;
                     if (var3) {
-                        _fun79994_ip = 33;
-                        continue _fun79994
+                        _fun80104_ip = 33;
+                        continue _fun80104
                     }
                 case 27:
                     var1 = var2.verified;
                 case 33:
                     var0 = var0 != var1;
                     if (!var0) {
-                        _fun79994_ip = 43;
-                        continue _fun79994
+                        _fun80104_ip = 43;
+                        continue _fun80104
                     }
                 case 40:
                     var0 = var1;
@@ -136,4 +136,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsUserVerified = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1216, 1613, 632, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1216, 1621, 632, 2]);

@@ -1,43 +1,41 @@
 package gn;
 
-import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.WritableMap;
-import com.facebook.react.uimanager.events.Event;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import com.facebook.react.uimanager.PixelUtil;
+import fn.u;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class h extends Event {
+public final class h extends b {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f27167a = new a(null);
+    /* renamed from: e  reason: collision with root package name */
+    private final double f26385e;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    /* renamed from: f  reason: collision with root package name */
+    private final float f26386f;
 
-        private a() {
-        }
+    /* renamed from: g  reason: collision with root package name */
+    private final float f26387g;
+
+    /* renamed from: h  reason: collision with root package name */
+    private final double f26388h;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public h(u handler) {
+        super(handler);
+        Intrinsics.checkNotNullParameter(handler, "handler");
+        this.f26385e = handler.b1();
+        this.f26386f = handler.Z0();
+        this.f26387g = handler.a1();
+        this.f26388h = handler.c1();
     }
 
-    public h(int i10, int i11) {
-        super(i10, i11);
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    public short getCoalescingKey() {
-        return (short) 0;
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    protected WritableMap getEventData() {
-        WritableMap createMap = Arguments.createMap();
-        createMap.putInt("dismissCount", 1);
-        return createMap;
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    public String getEventName() {
-        return "topDismissed";
+    @Override // gn.b
+    public void a(WritableMap eventData) {
+        Intrinsics.checkNotNullParameter(eventData, "eventData");
+        super.a(eventData);
+        eventData.putDouble("scale", this.f26385e);
+        eventData.putDouble("focalX", PixelUtil.toDIPFromPixel(this.f26386f));
+        eventData.putDouble("focalY", PixelUtil.toDIPFromPixel(this.f26387g));
+        eventData.putDouble("velocity", this.f26388h);
     }
 }

@@ -52,7 +52,7 @@ public final class BillingManager$getProducts$1 extends kotlin.coroutines.jvm.in
         /* JADX INFO: Access modifiers changed from: private */
         public static final void invokeSuspend$lambda$0(CompletableDeferred completableDeferred, BillingResult billingResult, List list) {
             Intrinsics.checkNotNull(billingResult);
-            completableDeferred.L0(new BillingManager.ProductDetailsResponse(billingResult, list));
+            completableDeferred.J0(new BillingManager.ProductDetailsResponse(billingResult, list));
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -63,7 +63,7 @@ public final class BillingManager$getProducts$1 extends kotlin.coroutines.jvm.in
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             BillingClient billingClient;
-            Object f10 = pr.b.f();
+            Object f10 = rr.b.f();
             int i10 = this.label;
             if (i10 != 0) {
                 if (i10 == 1) {
@@ -74,7 +74,7 @@ public final class BillingManager$getProducts$1 extends kotlin.coroutines.jvm.in
             }
             kotlin.c.b(obj);
             BillingClient billingClient2 = null;
-            final CompletableDeferred b10 = hs.q.b(null, 1, null);
+            final CompletableDeferred b10 = js.q.b(null, 1, null);
             a6.h hVar = new a6.h() { // from class: com.discord.billing.e
                 @Override // a6.h
                 public final void a(BillingResult billingResult, List list) {
@@ -98,7 +98,7 @@ public final class BillingManager$getProducts$1 extends kotlin.coroutines.jvm.in
 
         @Override // kotlin.jvm.functions.Function1
         public final Object invoke(Continuation<? super BillingManager.ProductDetailsResponse> continuation) {
-            return ((AnonymousClass1) create(continuation)).invokeSuspend(Unit.f33074a);
+            return ((AnonymousClass1) create(continuation)).invokeSuspend(Unit.f32464a);
         }
     }
 
@@ -127,13 +127,13 @@ public final class BillingManager$getProducts$1 extends kotlin.coroutines.jvm.in
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(BillingManager.ProductDetailsResponse productDetailsResponse, Continuation<? super Boolean> continuation) {
-            return ((AnonymousClass2) create(productDetailsResponse, continuation)).invokeSuspend(Unit.f33074a);
+            return ((AnonymousClass2) create(productDetailsResponse, continuation)).invokeSuspend(Unit.f32464a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             boolean isRetryableError;
-            pr.b.f();
+            rr.b.f();
             if (this.label == 0) {
                 kotlin.c.b(obj);
                 isRetryableError = this.this$0.isRetryableError(((BillingManager.ProductDetailsResponse) this.L$0).getBillingResult());
@@ -179,6 +179,6 @@ public final class BillingManager$getProducts$1 extends kotlin.coroutines.jvm.in
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((BillingManager$getProducts$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        return ((BillingManager$getProducts$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
     }
 }

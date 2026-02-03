@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/game_console/native/getConsoleConnectingText.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1, arg2() {
-        _fun69531: for (var _fun69531_ip = 0;;) switch (_fun69531_ip) {
+        _fun69641: for (var _fun69641_ip = 0;;) switch (_fun69641_ip) {
             case 0:
                 var4 = arg0;
                 var2 = arg1;
@@ -37,22 +37,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = undefined;
                 var5 = undefined;
                 if (var3) {
-                    _fun69531_ip = 27;
-                    continue _fun69531
+                    _fun69641_ip = 27;
+                    continue _fun69641
                 }
             case 22:
                 var5 = var2.type;
             case 27:
                 if (!(var0 == var5)) {
-                    _fun69531_ip = 55;
-                    continue _fun69531
+                    _fun69641_ip = 55;
+                    continue _fun69641
                 }
             case 31:
                 var7 = var0 == var4;
                 var3 = undefined;
                 if (var7) {
-                    _fun69531_ip = 52;
-                    continue _fun69531
+                    _fun69641_ip = 52;
+                    continue _fun69641
                 }
             case 40:
                 var4 = var4.clientInfo;
@@ -64,34 +64,34 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot2;
                 var0 = var0.XBOX;
                 if (!(var5 !== var0)) {
-                    _fun69531_ip = 249;
-                    continue _fun69531
+                    _fun69641_ip = 249;
+                    continue _fun69641
                 }
             case 79:
                 var0 = _closure1_slot2;
                 var0 = var0.PLAYSTATION;
                 if (!(var5 !== var0)) {
-                    _fun69531_ip = 112;
-                    continue _fun69531
+                    _fun69641_ip = 112;
+                    continue _fun69641
                 }
             case 93:
                 var0 = _closure1_slot2;
                 var4 = var0.PLAYSTATION_STAGING;
                 var0 = undefined;
                 if (!(var5 === var4)) {
-                    _fun69531_ip = 244;
-                    continue _fun69531
+                    _fun69641_ip = 244;
+                    continue _fun69641
                 }
             case 112:
                 if (var1) {
-                    _fun69531_ip = 181;
-                    continue _fun69531
+                    _fun69641_ip = 181;
+                    continue _fun69641
                 }
             case 115:
                 var4 = 'PS5';
                 if (!var3) {
-                    _fun69531_ip = 179;
-                    continue _fun69531
+                    _fun69641_ip = 179;
+                    continue _fun69641
                 }
             case 122:
                 var9 = _closure1_slot0;
@@ -107,8 +107,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.QCw1oW;
                 var4 = var7.bind(var8)(var5);
             case 179:
-                _fun69531_ip = 241;
-                continue _fun69531;
+                _fun69641_ip = 241;
+                continue _fun69641;
             case 181:
                 var7 = _closure1_slot0;
                 var10 = _closure1_slot1;
@@ -126,18 +126,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 241:
                 var0 = var4;
             case 244:
-                _fun69531_ip = 381;
-                continue _fun69531;
+                _fun69641_ip = 381;
+                continue _fun69641;
             case 249:
                 if (var1) {
-                    _fun69531_ip = 318;
-                    continue _fun69531
+                    _fun69641_ip = 318;
+                    continue _fun69641
                 }
             case 252:
                 var1 = 'Xbox';
                 if (!var3) {
-                    _fun69531_ip = 316;
-                    continue _fun69531
+                    _fun69641_ip = 316;
+                    continue _fun69641
                 }
             case 259:
                 var7 = _closure1_slot0;
@@ -153,8 +153,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.UjA4HX;
                 var1 = var4.bind(var5)(var3);
             case 316:
-                _fun69531_ip = 378;
-                continue _fun69531;
+                _fun69641_ip = 378;
+                continue _fun69641;
             case 318:
                 var3 = _closure1_slot0;
                 var7 = _closure1_slot1;

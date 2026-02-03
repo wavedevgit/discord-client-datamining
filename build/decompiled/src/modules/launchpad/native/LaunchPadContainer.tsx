@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/launchpad/native/LaunchPadContainer.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun109819: for (var _fun109819_ip = 0;;) switch (_fun109819_ip) {
+        _fun109879: for (var _fun109879_ip = 0;;) switch (_fun109879_ip) {
             case 0:
                 var1 = arg0;
                 var12 = var1.children;
@@ -145,19 +145,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot9;
                 var2.__initData = var1;
                 var1 = function arg0, arg1() {
-                    _fun109821: for (var _fun109821_ip = 0;;) switch (_fun109821_ip) {
+                    _fun109881: for (var _fun109881_ip = 0;;) switch (_fun109881_ip) {
                         case 0:
                             var1 = arg1;
                             var0 = null;
                             if (!(var0 != var1)) {
-                                _fun109821_ip = 33;
-                                continue _fun109821
+                                _fun109881_ip = 33;
+                                continue _fun109881
                             }
                         case 9:
                             var0 = arg0;
                             if (!(!(var1 <= var0))) {
-                                _fun109821_ip = 33;
-                                continue _fun109821
+                                _fun109881_ip = 33;
+                                continue _fun109881
                             }
                         case 16:
                             var1 = _closure2_slot1;
@@ -300,8 +300,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var10.DISABLED;
                 var10 = undefined;
                 if (!(var19 !== var12)) {
-                    _fun109819_ip = 629;
-                    continue _fun109819
+                    _fun109879_ip = 629;
+                    continue _fun109879
                 }
             case 567:
                 var13 = _closure1_slot6;
@@ -331,4 +331,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 9825, 33, 1297, 9827, 14136, 14138, 13017, 3711, 4072, 9828, 4956, 14139, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 9844, 33, 1297, 9846, 14147, 14149, 13028, 3720, 4081, 9847, 4961, 14150, 2]);

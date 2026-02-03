@@ -5,7 +5,7 @@ import ui.c;
 final class fc implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final fc f38185a = new fc();
+    static final fc f37982a = new fc();
 
     static {
         c.b a10 = ui.c.a("isForegroundConfidenceMaskEnabled");

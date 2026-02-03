@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/quests/lib/FractionalPremiumUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var4 = function(arg0) { // Environment: var1
-        _fun47215: for (var _fun47215_ip = 0;;) switch (_fun47215_ip) {
+        _fun47273: for (var _fun47273_ip = 0;;) switch (_fun47273_ip) {
             case 0:
                 var6 = arg0;
                 var3 = _closure1_slot0;
@@ -68,8 +68,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = 24;
                 var0 = var6 % var5;
                 if (!(var0 !== var2)) {
-                    _fun47215_ip = 133;
-                    continue _fun47215
+                    _fun47273_ip = 133;
+                    continue _fun47273
                 }
             case 66:
                 var2 = _closure1_slot0;
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var0.hours = var6;
                 var0 = var3.bind(var4)(var2, var0);
-                _fun47215_ip = 200;
-                continue _fun47215;
+                _fun47273_ip = 200;
+                continue _fun47273;
             case 133:
                 var2 = _closure1_slot0;
                 var8 = _closure1_slot2;
@@ -184,4 +184,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getFractionalPremiumQuestRewardName = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3100, 1234, 5232, 3123, 667, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3109, 1234, 5237, 3132, 667, 2]);

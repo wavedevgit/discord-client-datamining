@@ -132,7 +132,7 @@ public final class ReactionsMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof ReactionsMessageAccessory) {
             ReactionsMessageAccessory reactionsMessageAccessory = (ReactionsMessageAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, reactionsMessageAccessory.messageId) && Intrinsics.areEqual(this.reactions, reactionsMessageAccessory.reactions) && this.canAddNewReactions == reactionsMessageAccessory.canAddNewReactions && Intrinsics.areEqual(this.addNewReactionAccessibilityLabel, reactionsMessageAccessory.addNewReactionAccessibilityLabel) && Intrinsics.areEqual(this.reactionsTheme, reactionsMessageAccessory.reactionsTheme) && this.theme == reactionsMessageAccessory.theme && Intrinsics.areEqual(this.targetKind, reactionsMessageAccessory.targetKind) && Intrinsics.areEqual(this.embedIndex, reactionsMessageAccessory.embedIndex) && this.showReactLabel == reactionsMessageAccessory.showReactLabel && this.showReplyButton == reactionsMessageAccessory.showReplyButton;
+            return MessageId.m1089equalsimpl0(this.messageId, reactionsMessageAccessory.messageId) && Intrinsics.areEqual(this.reactions, reactionsMessageAccessory.reactions) && this.canAddNewReactions == reactionsMessageAccessory.canAddNewReactions && Intrinsics.areEqual(this.addNewReactionAccessibilityLabel, reactionsMessageAccessory.addNewReactionAccessibilityLabel) && Intrinsics.areEqual(this.reactionsTheme, reactionsMessageAccessory.reactionsTheme) && this.theme == reactionsMessageAccessory.theme && Intrinsics.areEqual(this.targetKind, reactionsMessageAccessory.targetKind) && Intrinsics.areEqual(this.embedIndex, reactionsMessageAccessory.embedIndex) && this.showReactLabel == reactionsMessageAccessory.showReactLabel && this.showReplyButton == reactionsMessageAccessory.showReplyButton;
         }
         return false;
     }
@@ -183,9 +183,9 @@ public final class ReactionsMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        int m1091hashCodeimpl = ((((((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.reactions.hashCode()) * 31) + Boolean.hashCode(this.canAddNewReactions)) * 31) + this.addNewReactionAccessibilityLabel.hashCode()) * 31;
+        int m1090hashCodeimpl = ((((((MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.reactions.hashCode()) * 31) + Boolean.hashCode(this.canAddNewReactions)) * 31) + this.addNewReactionAccessibilityLabel.hashCode()) * 31;
         ReactionsTheme reactionsTheme = this.reactionsTheme;
-        int hashCode = (m1091hashCodeimpl + (reactionsTheme == null ? 0 : reactionsTheme.hashCode())) * 31;
+        int hashCode = (m1090hashCodeimpl + (reactionsTheme == null ? 0 : reactionsTheme.hashCode())) * 31;
         DiscordTheme discordTheme = this.theme;
         int hashCode2 = (hashCode + (discordTheme == null ? 0 : discordTheme.hashCode())) * 31;
         String str = this.targetKind;
@@ -196,7 +196,7 @@ public final class ReactionsMessageAccessory extends MessageAccessory {
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         List<MessageReaction> list = this.reactions;
         boolean z10 = this.canAddNewReactions;
         String str = this.addNewReactionAccessibilityLabel;
@@ -206,7 +206,7 @@ public final class ReactionsMessageAccessory extends MessageAccessory {
         Integer num = this.embedIndex;
         boolean z11 = this.showReactLabel;
         boolean z12 = this.showReplyButton;
-        return "ReactionsMessageAccessory(messageId=" + m1093toStringimpl + ", reactions=" + list + ", canAddNewReactions=" + z10 + ", addNewReactionAccessibilityLabel=" + str + ", reactionsTheme=" + reactionsTheme + ", theme=" + discordTheme + ", targetKind=" + str2 + ", embedIndex=" + num + ", showReactLabel=" + z11 + ", showReplyButton=" + z12 + ")";
+        return "ReactionsMessageAccessory(messageId=" + m1092toStringimpl + ", reactions=" + list + ", canAddNewReactions=" + z10 + ", addNewReactionAccessibilityLabel=" + str + ", reactionsTheme=" + reactionsTheme + ", theme=" + discordTheme + ", targetKind=" + str2 + ", embedIndex=" + num + ", showReactLabel=" + z11 + ", showReplyButton=" + z12 + ")";
     }
 
     public /* synthetic */ ReactionsMessageAccessory(String str, List list, boolean z10, String str2, ReactionsTheme reactionsTheme, DiscordTheme discordTheme, String str3, Integer num, boolean z11, boolean z12, int i10, DefaultConstructorMarker defaultConstructorMarker) {

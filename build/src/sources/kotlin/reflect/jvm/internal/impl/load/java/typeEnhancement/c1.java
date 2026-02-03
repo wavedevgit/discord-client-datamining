@@ -31,19 +31,19 @@ import kotlin.reflect.jvm.internal.impl.types.model.TypeSystemInferenceExtension
 public final class c1 extends AbstractSignatureParts {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Annotated f34171a;
+    private final Annotated f33561a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f34172b;
+    private final boolean f33562b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final LazyJavaResolverContext f34173c;
+    private final LazyJavaResolverContext f33563c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final AnnotationQualifierApplicabilityType f34174d;
+    private final AnnotationQualifierApplicabilityType f33564d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f34175e;
+    private final boolean f33565e;
 
     public /* synthetic */ c1(Annotated annotated, boolean z10, LazyJavaResolverContext lazyJavaResolverContext, AnnotationQualifierApplicabilityType annotationQualifierApplicabilityType, boolean z11, int i10, DefaultConstructorMarker defaultConstructorMarker) {
         this(annotated, z10, lazyJavaResolverContext, annotationQualifierApplicabilityType, (i10 & 16) != 0 ? false : z11);
@@ -58,7 +58,7 @@ public final class c1 extends AbstractSignatureParts {
     @Override // kotlin.reflect.jvm.internal.impl.load.java.typeEnhancement.AbstractSignatureParts
     public Iterable getContainerAnnotations() {
         Annotations annotations;
-        Annotated annotated = this.f34171a;
+        Annotated annotated = this.f33561a;
         if (annotated != null && (annotations = annotated.getAnnotations()) != null) {
             return annotations;
         }
@@ -67,17 +67,17 @@ public final class c1 extends AbstractSignatureParts {
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.typeEnhancement.AbstractSignatureParts
     public AnnotationQualifierApplicabilityType getContainerApplicabilityType() {
-        return this.f34174d;
+        return this.f33564d;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.typeEnhancement.AbstractSignatureParts
     public JavaTypeQualifiersByElementType getContainerDefaultTypeQualifiers() {
-        return this.f34173c.getDefaultTypeQualifiers();
+        return this.f33563c.getDefaultTypeQualifiers();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.typeEnhancement.AbstractSignatureParts
     public boolean getContainerIsVarargParameter() {
-        Annotated annotated = this.f34171a;
+        Annotated annotated = this.f33561a;
         if ((annotated instanceof ValueParameterDescriptor) && ((ValueParameterDescriptor) annotated).getVarargElementType() != null) {
             return true;
         }
@@ -86,7 +86,7 @@ public final class c1 extends AbstractSignatureParts {
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.typeEnhancement.AbstractSignatureParts
     public boolean getEnableImprovementsInStrictMode() {
-        return this.f34173c.getComponents().getSettings().getTypeEnhancementImprovementsInStrictMode();
+        return this.f33563c.getComponents().getSettings().getTypeEnhancementImprovementsInStrictMode();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.typeEnhancement.AbstractSignatureParts
@@ -101,7 +101,7 @@ public final class c1 extends AbstractSignatureParts {
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.typeEnhancement.AbstractSignatureParts
     public boolean getSkipRawTypeArguments() {
-        return this.f34175e;
+        return this.f33565e;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.typeEnhancement.AbstractSignatureParts
@@ -112,14 +112,14 @@ public final class c1 extends AbstractSignatureParts {
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.typeEnhancement.AbstractSignatureParts
     public boolean isCovariant() {
-        return this.f34172b;
+        return this.f33562b;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.typeEnhancement.AbstractSignatureParts
     public boolean isEqual(KotlinTypeMarker kotlinTypeMarker, KotlinTypeMarker other) {
         Intrinsics.checkNotNullParameter(kotlinTypeMarker, "<this>");
         Intrinsics.checkNotNullParameter(other, "other");
-        return this.f34173c.getComponents().getKotlinTypeChecker().equalTypes((KotlinType) kotlinTypeMarker, (KotlinType) other);
+        return this.f33563c.getComponents().getKotlinTypeChecker().equalTypes((KotlinType) kotlinTypeMarker, (KotlinType) other);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.typeEnhancement.AbstractSignatureParts
@@ -152,7 +152,7 @@ public final class c1 extends AbstractSignatureParts {
         Intrinsics.checkNotNullParameter(annotationDescriptor, "<this>");
         if (!(annotationDescriptor instanceof PossiblyExternalAnnotationDescriptor) || !((PossiblyExternalAnnotationDescriptor) annotationDescriptor).isIdeExternalAnnotation()) {
             if (!(annotationDescriptor instanceof LazyJavaAnnotationDescriptor) || getEnableImprovementsInStrictMode() || (!((LazyJavaAnnotationDescriptor) annotationDescriptor).isFreshlySupportedTypeUseAnnotation() && getContainerApplicabilityType() != AnnotationQualifierApplicabilityType.TYPE_PARAMETER_BOUNDS)) {
-                if (kotlinTypeMarker != null && KotlinBuiltIns.isPrimitiveArray((KotlinType) kotlinTypeMarker) && getAnnotationTypeQualifierResolver().isTypeUseAnnotation(annotationDescriptor) && !this.f34173c.getComponents().getSettings().getEnhancePrimitiveArrays()) {
+                if (kotlinTypeMarker != null && KotlinBuiltIns.isPrimitiveArray((KotlinType) kotlinTypeMarker) && getAnnotationTypeQualifierResolver().isTypeUseAnnotation(annotationDescriptor) && !this.f33563c.getComponents().getSettings().getEnhancePrimitiveArrays()) {
                     return true;
                 }
                 return false;
@@ -165,7 +165,7 @@ public final class c1 extends AbstractSignatureParts {
     @Override // kotlin.reflect.jvm.internal.impl.load.java.typeEnhancement.AbstractSignatureParts
     /* renamed from: r */
     public AnnotationTypeQualifierResolver getAnnotationTypeQualifierResolver() {
-        return this.f34173c.getComponents().getAnnotationTypeQualifierResolver();
+        return this.f33563c.getComponents().getAnnotationTypeQualifierResolver();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.typeEnhancement.AbstractSignatureParts
@@ -184,10 +184,10 @@ public final class c1 extends AbstractSignatureParts {
     public c1(Annotated annotated, boolean z10, LazyJavaResolverContext containerContext, AnnotationQualifierApplicabilityType containerApplicabilityType, boolean z11) {
         Intrinsics.checkNotNullParameter(containerContext, "containerContext");
         Intrinsics.checkNotNullParameter(containerApplicabilityType, "containerApplicabilityType");
-        this.f34171a = annotated;
-        this.f34172b = z10;
-        this.f34173c = containerContext;
-        this.f34174d = containerApplicabilityType;
-        this.f34175e = z11;
+        this.f33561a = annotated;
+        this.f33562b = z10;
+        this.f33563c = containerContext;
+        this.f33564d = containerApplicabilityType;
+        this.f33565e = z11;
     }
 }

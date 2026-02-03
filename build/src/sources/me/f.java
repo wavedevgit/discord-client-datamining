@@ -11,16 +11,16 @@ import java.util.Set;
 public final class f implements d {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final f f38033c = new f(Collections.EMPTY_MAP);
+    public static final f f37830c = new f(Collections.EMPTY_MAP);
 
     /* renamed from: a  reason: collision with root package name */
-    private int f38034a;
+    private int f37831a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f38035b;
+    private final Map f37832b;
 
     public f(Map map) {
-        this.f38035b = Collections.unmodifiableMap(map);
+        this.f37832b = Collections.unmodifiableMap(map);
     }
 
     private static void e(HashMap hashMap, Map map) {
@@ -41,7 +41,7 @@ public final class f implements d {
             return ByteBuffer.allocate(8).putLong(((Long) obj).longValue()).array();
         }
         if (obj instanceof String) {
-            return ((String) obj).getBytes(ii.d.f28184c);
+            return ((String) obj).getBytes(ii.d.f28407c);
         }
         if (obj instanceof byte[]) {
             return (byte[]) obj;
@@ -69,7 +69,7 @@ public final class f implements d {
 
     @Override // me.d
     public final long a(String str, long j10) {
-        byte[] bArr = (byte[]) this.f38035b.get(str);
+        byte[] bArr = (byte[]) this.f37832b.get(str);
         if (bArr != null) {
             return ByteBuffer.wrap(bArr).getLong();
         }
@@ -78,9 +78,9 @@ public final class f implements d {
 
     @Override // me.d
     public final String b(String str, String str2) {
-        byte[] bArr = (byte[]) this.f38035b.get(str);
+        byte[] bArr = (byte[]) this.f37832b.get(str);
         if (bArr != null) {
-            return new String(bArr, ii.d.f28184c);
+            return new String(bArr, ii.d.f28407c);
         }
         return str2;
     }
@@ -90,31 +90,31 @@ public final class f implements d {
             return true;
         }
         if (obj != null && f.class == obj.getClass()) {
-            return j(this.f38035b, ((f) obj).f38035b);
+            return j(this.f37832b, ((f) obj).f37832b);
         }
         return false;
     }
 
     public f g(e eVar) {
-        Map f10 = f(this.f38035b, eVar);
-        if (j(this.f38035b, f10)) {
+        Map f10 = f(this.f37832b, eVar);
+        if (j(this.f37832b, f10)) {
             return this;
         }
         return new f(f10);
     }
 
     public Set h() {
-        return this.f38035b.entrySet();
+        return this.f37832b.entrySet();
     }
 
     public int hashCode() {
-        if (this.f38034a == 0) {
+        if (this.f37831a == 0) {
             int i10 = 0;
-            for (Map.Entry entry : this.f38035b.entrySet()) {
+            for (Map.Entry entry : this.f37832b.entrySet()) {
                 i10 += Arrays.hashCode((byte[]) entry.getValue()) ^ ((String) entry.getKey()).hashCode();
             }
-            this.f38034a = i10;
+            this.f37831a = i10;
         }
-        return this.f38034a;
+        return this.f37831a;
     }
 }

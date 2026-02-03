@@ -1,123 +1,118 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = function arg0() {
-        var2 = arg0;
-        var1 = var2.map;
-        var0 = function(arg0) { // Environment: var0
+    _fun38175: for (var _fun38175_ip = 0;;) switch (_fun38175_ip) {
+        case 0:
+            var13 = metroImportDefault;
+            var2 = exports;
+            var14 = dependencyMap;
             var0 = global;
-            var2 = var0.String;
-            var1 = var2.fromCharCode;
-            var0 = arg0;
-            var0 = var1.bind(var2)(var0);
+            var4 = var0.Object;
+            var3 = var4.defineProperty;
+            var1 = {};
+            var0 = true;
+            var1.value = var0;
+            var0 = '__esModule';
+            var0 = var3.bind(var4)(var2, var0, var1);
+            var0 = 0;
+            var1 = var14[var0];
+            var0 = undefined;
+            var12 = var13.bind(var0)(var1);
+            var1 = 1;
+            var3 = var14[var1];
+            var1 = require;
+            var7 = var1.bind(var0)(var3);
+            var6 = var7.objectAssign;
+            var1 = 2;
+            var3 = var14[var1];
+            var5 = var13.bind(var0)(var3);
+            var3 = 3;
+            var3 = var14[var3];
+            var4 = var13.bind(var0)(var3);
+            var3 = {};
+            var3 = var6.bind(var7)(var3, var5, var4);
+            var4 = {};
+            var9 = '0th';
+            var4 = var12.bind(var0)(var4, var9, var3);
+            var1 = var14[var1];
+            var1 = var13.bind(var0)(var1);
+            var8 = '1st';
+            var1 = var12.bind(var0)(var4, var8, var1);
+            var7 = 'exif';
+            var3 = var12.bind(var0)(var1, var7, var3);
+            var1 = 4;
+            var1 = var14[var1];
+            var1 = var13.bind(var0)(var1);
+            var6 = 'gps';
+            var3 = var12.bind(var0)(var3, var6, var1);
+            var1 = 5;
+            var1 = var14[var1];
+            var1 = var13.bind(var0)(var1);
+            var5 = 'interoperability';
+            var10 = var12.bind(var0)(var3, var5, var1);
+            var1 = 6;
+            var3 = var14[var1];
+            var3 = var13.bind(var0)(var3);
+            var3 = var3.USE_MPF;
+            if (var3) {
+                _fun38175_ip = 229;
+                continue _fun38175
+            }
+        case 225:
+            var3 = {};
+            _fun38175_ip = 241;
+            continue _fun38175;
+        case 229:
+            var4 = 7;
+            var4 = var14[var4];
+            var3 = var13.bind(var0)(var4);
+        case 241:
+            var4 = 'mpf';
+            var11 = var12.bind(var0)(var10, var4, var3);
+            var3 = var14[var1];
+            var3 = var13.bind(var0)(var3);
+            var3 = var3.USE_MAKER_NOTES;
+            if (var3) {
+                _fun38175_ip = 276;
+                continue _fun38175
+            }
+        case 272:
+            var10 = {};
+            _fun38175_ip = 288;
+            continue _fun38175;
+        case 276:
+            var3 = 8;
+            var3 = var14[var3];
+            var10 = var13.bind(var0)(var3);
+        case 288:
+            var3 = 'canon';
+            var11 = var12.bind(var0)(var11, var3, var10);
+            var1 = var14[var1];
+            var1 = var13.bind(var0)(var1);
+            var1 = var1.USE_MAKER_NOTES;
+            if (var1) {
+                _fun38175_ip = 323;
+                continue _fun38175
+            }
+        case 319:
+            var10 = {};
+            _fun38175_ip = 335;
+            continue _fun38175;
+        case 323:
+            var1 = 9;
+            var1 = var14[var1];
+            var10 = var13.bind(var0)(var1);
+        case 335:
+            var1 = 'pentax';
+            var10 = var12.bind(var0)(var11, var1, var10);
+            var2.default = var10;
+            var2.IFD_TYPE_0TH = var9;
+            var2.IFD_TYPE_1ST = var8;
+            var2.IFD_TYPE_EXIF = var7;
+            var2.IFD_TYPE_GPS = var6;
+            var2.IFD_TYPE_INTEROPERABILITY = var5;
+            var2.IFD_TYPE_MPF = var4;
+            var2.IFD_TYPE_CANON = var3;
+            var2.IFD_TYPE_PENTAX = var1;
             return var0;
-        };
-        var2 = var1.bind(var2)(var0);
-        var1 = var2.join;
-        var0 = '';
-        var0 = var1.bind(var2)(var0);
-        return var0;
-    };
-    var _closure1_slot0 = var2;
-    var3 = global;
-    var6 = var3.Object;
-    var5 = var6.defineProperty;
-    var4 = {};
-    var3 = true;
-    var4.value = var3;
-    var3 = '__esModule';
-    var3 = var5.bind(var6)(var1, var3, var4);
-    var1.getStringValue = var2;
-    var2 = function arg0() {
-        _fun38211: for (var _fun38211_ip = 0;;) switch (_fun38211_ip) {
-            case 0:
-                var4 = arg0;
-                var0 = var4.length;
-                var3 = 8;
-                if (!(var0 >= var3)) {
-                    _fun38211_ip = 82;
-                    continue _fun38211
-                }
-            case 15:
-                var5 = _closure1_slot0;
-                var2 = var4.slice;
-                var1 = 0;
-                var1 = var2.bind(var4)(var1, var3);
-                var2 = undefined;
-                var5 = var5.bind(var2)(var1);
-                var1 = 'ASCII\x00\x00\x00';
-                if (!(var1 !== var5)) {
-                    _fun38211_ip = 114;
-                    continue _fun38211
-                }
-            case 52:
-                var1 = 'JIS\x00\x00\x00\x00\x00';
-                if (!(var1 !== var5)) {
-                    _fun38211_ip = 106;
-                    continue _fun38211
-                }
-            case 62:
-                var1 = 'UNICODE\x00';
-                if (!(var1 !== var5)) {
-                    _fun38211_ip = 98;
-                    continue _fun38211
-                }
-            case 72:
-                var1 = '\x00\x00\x00\x00\x00\x00\x00\x00';
-                if (!(var1 !== var5)) {
-                    _fun38211_ip = 90;
-                    continue _fun38211
-                }
-            case 82:
-                var1 = 'Undefined';
-                return var1;
-            case 90:
-                var1 = '[Undefined encoding]';
-                return var1;
-            case 98:
-                var1 = '[Unicode encoded text]';
-                return var1;
-            case 106:
-                var1 = '[JIS encoded text]';
-                return var1;
-            case 114:
-                var1 = _closure1_slot0;
-                var0 = var4.slice;
-                var0 = var0.bind(var4)(var3);
-                var0 = var1.bind(var2)(var0);
-                return var0;
-        }
-    };
-    var1.getEncodedString = var2;
-    var0 = function arg0() {
-        var4 = arg0;
-        var5 = 0;
-        var0 = var4[var5];
-        var1 = var0[var5];
-        var0 = var4[var5];
-        var3 = 1;
-        var0 = var0[var3];
-        var1 = var1 / var0;
-        var0 = var4[var3];
-        var2 = var0[var5];
-        var0 = var4[var3];
-        var0 = var0[var3];
-        var2 = var2 / var0;
-        var0 = 60;
-        var0 = var2 / var0;
-        var1 = var1 + var0;
-        var0 = 2;
-        var2 = var4[var0];
-        var2 = var2[var5];
-        var0 = var4[var0];
-        var0 = var0[var3];
-        var2 = var2 / var0;
-        var0 = 3600;
-        var0 = var2 / var0;
-        var0 = var1 + var0;
-        return var0;
-    };
-    var1.getCalculatedGpsValue = var0;
-    var0 = undefined;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [77, 4165, 4187, 4189, 4191, 4192, 4168, 4193, 4194, 4195]);

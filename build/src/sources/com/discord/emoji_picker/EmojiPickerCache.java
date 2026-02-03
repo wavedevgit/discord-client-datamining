@@ -8,7 +8,6 @@ import com.discord.emoji_picker.EmojiPickerItemData;
 import com.discord.kvstorage.discordapp.DiscordMobileApi;
 import com.discord.misc.utilities.coroutines.CollectWithLeadingDebounceKt;
 import com.facebook.react.devsupport.StackTraceHelper;
-import hs.m0;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -16,6 +15,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import js.m0;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
@@ -71,7 +71,7 @@ public final class EmojiPickerCache {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            Object f10 = pr.b.f();
+            Object f10 = rr.b.f();
             int i10 = this.label;
             if (i10 != 0) {
                 if (i10 == 1) {
@@ -91,7 +91,7 @@ public final class EmojiPickerCache {
 
                     public final Object emit(Unit unit, Continuation<? super Unit> continuation) {
                         Object refreshDatabaseEmojis = EmojiPickerCache.this.refreshDatabaseEmojis(continuation);
-                        return refreshDatabaseEmojis == pr.b.f() ? refreshDatabaseEmojis : Unit.f33074a;
+                        return refreshDatabaseEmojis == rr.b.f() ? refreshDatabaseEmojis : Unit.f32464a;
                     }
                 };
                 this.label = 1;
@@ -99,12 +99,12 @@ public final class EmojiPickerCache {
                     return f10;
                 }
             }
-            return Unit.f33074a;
+            return Unit.f32464a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
         }
     }
 
@@ -144,8 +144,8 @@ public final class EmojiPickerCache {
         }, 1, null);
         CoroutineScope a10 = kotlinx.coroutines.i.a(m0.a());
         this.emojiCoroutineScope = a10;
-        this.emojiFetchEvents = ks.c0.b(0, 1, null, 4, null);
-        d10 = hs.i.d(a10, null, null, new AnonymousClass1(null), 3, null);
+        this.emojiFetchEvents = ms.c0.b(0, 1, null, 4, null);
+        d10 = js.i.d(a10, null, null, new AnonymousClass1(null), 3, null);
         this.emojiFetchJob = d10;
     }
 
@@ -192,16 +192,16 @@ public final class EmojiPickerCache {
                     for (String str : arrayList2) {
                         Json json = emojiPickerCache.emojiJsonConfig;
                         Intrinsics.checkNotNull(str);
-                        JsonObject n10 = ct.h.n(json.g(str));
+                        JsonObject n10 = et.h.n(json.g(str));
                         Object obj2 = n10.get(StackTraceHelper.ID_KEY);
                         Intrinsics.checkNotNull(obj2);
-                        long q10 = ct.h.q(ct.h.o((JsonElement) obj2));
+                        long q10 = et.h.q(et.h.o((JsonElement) obj2));
                         Object obj3 = n10.get(StackTraceHelper.NAME_KEY);
                         Intrinsics.checkNotNull(obj3);
-                        String b10 = ct.h.o((JsonElement) obj3).b();
+                        String b10 = et.h.o((JsonElement) obj3).b();
                         Object obj4 = n10.get("animated");
                         Intrinsics.checkNotNull(obj4);
-                        boolean f10 = ct.h.f(ct.h.o((JsonElement) obj4));
+                        boolean f10 = et.h.f(et.h.o((JsonElement) obj4));
                         if (!guild.isNitroLocked() && !guild.getEmojisDisabled().contains(Long.valueOf(q10))) {
                             z13 = false;
                         } else {
@@ -218,7 +218,7 @@ public final class EmojiPickerCache {
                     list = CollectionsKt.W0(arrayList3, new Comparator() { // from class: com.discord.emoji_picker.EmojiPickerCache$buildEmojis$lambda$7$$inlined$sortedBy$1
                         @Override // java.util.Comparator
                         public final int compare(T t10, T t11) {
-                            return mr.a.d(((EmojiPickerItem.Emoji) t10).getName(), ((EmojiPickerItem.Emoji) t11).getName());
+                            return or.a.d(((EmojiPickerItem.Emoji) t10).getName(), ((EmojiPickerItem.Emoji) t11).getName());
                         }
                     });
                 } else {
@@ -276,7 +276,7 @@ public final class EmojiPickerCache {
     public static final Unit emojiJsonConfig$lambda$0(JsonBuilder Json) {
         Intrinsics.checkNotNullParameter(Json, "$this$Json");
         Json.c(true);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -307,7 +307,7 @@ public final class EmojiPickerCache {
             r0.<init>(r4, r5)
         L18:
             java.lang.Object r5 = r0.result
-            java.lang.Object r1 = pr.b.f()
+            java.lang.Object r1 = rr.b.f()
             int r2 = r0.label
             r3 = 1
             if (r2 == 0) goto L35
@@ -334,7 +334,7 @@ public final class EmojiPickerCache {
         L48:
             boolean r2 = r5 instanceof com.facebook.react.bridge.ReactContext
             if (r2 != 0) goto L4f
-            kotlin.Unit r5 = kotlin.Unit.f33074a
+            kotlin.Unit r5 = kotlin.Unit.f32464a
             return r5
         L4f:
             java.util.List r2 = r4.buildEmojis()
@@ -361,7 +361,7 @@ public final class EmojiPickerCache {
             r2.<init>()
             r1.post(r2)
         L83:
-            kotlin.Unit r5 = kotlin.Unit.f33074a
+            kotlin.Unit r5 = kotlin.Unit.f32464a
             return r5
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.emoji_picker.EmojiPickerCache.refreshDatabaseEmojis(kotlin.coroutines.Continuation):java.lang.Object");
@@ -387,7 +387,7 @@ public final class EmojiPickerCache {
         }
         this.emojiCoreData = coreData;
         if (coreData.getHasGuildData()) {
-            this.emojiFetchEvents.b(Unit.f33074a);
+            this.emojiFetchEvents.b(Unit.f32464a);
         }
     }
 }

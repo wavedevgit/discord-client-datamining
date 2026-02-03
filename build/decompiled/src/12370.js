@@ -1,28 +1,32 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function() { // Environment: var0
-        var2 = this;
-        var _closure2_slot0 = var2;
-        var3 = global;
-        var5 = var3.clearTimeout;
-        var4 = var2.resetTimer;
-        var0 = undefined;
-        var4 = var5.bind(var0)(var4);
-        var4 = var3.setTimeout;
-        var3 = function() { // Environment: var1
-            var1 = _closure2_slot0;
-            var0 = var1.resetSequences;
-            var0 = var0.bind(var1)();
+    _fun94391: for (var _fun94391_ip = 0;;) switch (_fun94391_ip) {
+        case 0:
+            var1 = {
+                'option': 'alt',
+                'command': 'meta',
+                'return': 'enter',
+                'escape': 'esc'
+            };
+            var2 = 'meta';
+            var4 = /Mac|iPod|iPhone|iPad/;
+            var3 = var4.test;
+            var0 = global;
+            var0 = var0.navigator;
+            var0 = var0.platform;
+            var3 = var3.bind(var4)(var0);
+            var0 = 'ctrl';
+            if (!var3) {
+                _fun94391_ip = 66;
+                continue _fun94391
+            }
+        case 63:
+            var0 = var2;
+        case 66:
+            var1.mod = var0;
+            var0 = module;
+            var0.exports = var1;
             var0 = undefined;
             return var0;
-        };
-        var1 = 1000;
-        var1 = var4.bind(var0)(var3, var1);
-        var2.resetTimer = var1;
-        return var0;
-    };
-    var0 = arg4;
-    var0.exports = var1;
-    var0 = undefined;
-    return var0;
+    }
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

@@ -15,10 +15,10 @@ import java.util.List;
 public class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final SimpleArrayMap f55817a = new SimpleArrayMap();
+    private final SimpleArrayMap f55955a = new SimpleArrayMap();
 
     /* renamed from: b  reason: collision with root package name */
-    private final SimpleArrayMap f55818b = new SimpleArrayMap();
+    private final SimpleArrayMap f55956b = new SimpleArrayMap();
 
     private static void a(g gVar, Animator animator) {
         if (animator instanceof ObjectAnimator) {
@@ -67,7 +67,7 @@ public class g {
 
     public h e(String str) {
         if (f(str)) {
-            return (h) this.f55817a.get(str);
+            return (h) this.f55955a.get(str);
         }
         throw new IllegalArgumentException();
     }
@@ -79,29 +79,29 @@ public class g {
         if (!(obj instanceof g)) {
             return false;
         }
-        return this.f55817a.equals(((g) obj).f55817a);
+        return this.f55955a.equals(((g) obj).f55955a);
     }
 
     public boolean f(String str) {
-        if (this.f55817a.get(str) != null) {
+        if (this.f55955a.get(str) != null) {
             return true;
         }
         return false;
     }
 
     public void g(String str, PropertyValuesHolder[] propertyValuesHolderArr) {
-        this.f55818b.put(str, propertyValuesHolderArr);
+        this.f55956b.put(str, propertyValuesHolderArr);
     }
 
     public void h(String str, h hVar) {
-        this.f55817a.put(str, hVar);
+        this.f55955a.put(str, hVar);
     }
 
     public int hashCode() {
-        return this.f55817a.hashCode();
+        return this.f55955a.hashCode();
     }
 
     public String toString() {
-        return '\n' + getClass().getName() + '{' + Integer.toHexString(System.identityHashCode(this)) + " timings: " + this.f55817a + "}\n";
+        return '\n' + getClass().getName() + '{' + Integer.toHexString(System.identityHashCode(this)) + " timings: " + this.f55955a + "}\n";
     }
 }

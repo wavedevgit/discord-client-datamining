@@ -28,12 +28,12 @@ public final class AudioAsset extends Asset<AudioHandle> {
 
         @Override // app.rive.AssetOps
         public /* bridge */ /* synthetic */ AudioAsset construct(AudioHandle audioHandle, CommandQueue commandQueue) {
-            return m21constructQxJutAs(audioHandle.m107unboximpl(), commandQueue);
+            return m19constructQxJutAs(audioHandle.m105unboximpl(), commandQueue);
         }
 
         @NotNull
         /* renamed from: construct-QxJutAs  reason: not valid java name */
-        public AudioAsset m21constructQxJutAs(long j10, @NotNull CommandQueue queue) {
+        public AudioAsset m19constructQxJutAs(long j10, @NotNull CommandQueue queue) {
             Intrinsics.checkNotNullParameter(queue, "queue");
             return new AudioAsset(j10, queue, null);
         }
@@ -41,18 +41,18 @@ public final class AudioAsset extends Asset<AudioHandle> {
         @Override // app.rive.AssetOps
         /* renamed from: decode-Z6pBmcA  reason: not valid java name */
         public Object decode(@NotNull CommandQueue commandQueue, @NotNull byte[] bArr, @NotNull Continuation<? super AudioHandle> continuation) {
-            return commandQueue.m117decodeAudioWLIIakE(bArr, continuation);
+            return commandQueue.m115decodeAudioWLIIakE(bArr, continuation);
         }
 
         @Override // app.rive.AssetOps
         public /* bridge */ /* synthetic */ void delete(CommandQueue commandQueue, AudioHandle audioHandle) {
-            m23delete4kKS7jM(commandQueue, audioHandle.m107unboximpl());
+            m21delete4kKS7jM(commandQueue, audioHandle.m105unboximpl());
         }
 
         /* renamed from: delete-4kKS7jM  reason: not valid java name */
-        public void m23delete4kKS7jM(@NotNull CommandQueue queue, long j10) {
+        public void m21delete4kKS7jM(@NotNull CommandQueue queue, long j10) {
             Intrinsics.checkNotNullParameter(queue, "queue");
-            queue.m121deleteAudioQAnvCWo(j10);
+            queue.m119deleteAudioQAnvCWo(j10);
         }
 
         public final Object fromBytes(@NotNull CommandQueue commandQueue, @NotNull byte[] bArr, @NotNull Continuation<? super Result<AudioAsset>> continuation) {
@@ -73,14 +73,14 @@ public final class AudioAsset extends Asset<AudioHandle> {
 
         @Override // app.rive.AssetOps
         public /* bridge */ /* synthetic */ void register(CommandQueue commandQueue, String str, AudioHandle audioHandle) {
-            m24registerd3xxSlE(commandQueue, str, audioHandle.m107unboximpl());
+            m22registerd3xxSlE(commandQueue, str, audioHandle.m105unboximpl());
         }
 
         /* renamed from: register-d3xxSlE  reason: not valid java name */
-        public void m24registerd3xxSlE(@NotNull CommandQueue queue, @NotNull String key, long j10) {
+        public void m22registerd3xxSlE(@NotNull CommandQueue queue, @NotNull String key, long j10) {
             Intrinsics.checkNotNullParameter(queue, "queue");
             Intrinsics.checkNotNullParameter(key, "key");
-            queue.m145registerAudio4kKS7jM(key, j10);
+            queue.m143registerAudio4kKS7jM(key, j10);
         }
 
         @Override // app.rive.AssetOps
@@ -100,7 +100,7 @@ public final class AudioAsset extends Asset<AudioHandle> {
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     private AudioAsset(long j10, CommandQueue queue) {
-        super(AudioHandle.m101boximpl(j10), queue, Companion, null);
+        super(AudioHandle.m99boximpl(j10), queue, Companion, null);
         Intrinsics.checkNotNullParameter(queue, "queue");
     }
 }

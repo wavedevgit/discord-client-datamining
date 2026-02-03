@@ -5,7 +5,7 @@ import android.os.Parcel;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ClassLoader f55804a = c.class.getClassLoader();
+    private static final ClassLoader f55942a = c.class.getClassLoader();
 
     public static void a(Parcel parcel, boolean z10) {
         parcel.writeInt(1);

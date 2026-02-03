@@ -107,7 +107,7 @@ public abstract class b {
             case 1:
                 bm.a aVar = this.f709g;
                 if (aVar != null) {
-                    createMap.putString("cellularGeneration", aVar.f6584d);
+                    createMap.putString("cellularGeneration", aVar.f6630d);
                 }
                 String networkOperatorName = this.f705c.getNetworkOperatorName();
                 if (networkOperatorName != null) {
@@ -212,7 +212,7 @@ public abstract class b {
         if (str != null) {
             str2 = str;
         } else {
-            str2 = this.f708f.f6594d;
+            str2 = this.f708f.f6640d;
         }
         createMap.putString("type", str2);
         boolean z13 = true;
@@ -222,12 +222,12 @@ public abstract class b {
             z10 = false;
         }
         createMap.putBoolean("isConnected", z10);
-        if (this.f710h && (str == null || str.equals(this.f708f.f6594d))) {
+        if (this.f710h && (str == null || str.equals(this.f708f.f6640d))) {
             z12 = true;
         }
         createMap.putBoolean("isInternetReachable", z12);
         if (str == null) {
-            str = this.f708f.f6594d;
+            str = this.f708f.f6640d;
         }
         WritableMap b10 = b(str);
         if (z10) {

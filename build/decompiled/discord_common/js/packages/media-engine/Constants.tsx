@@ -472,4 +472,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.VideoQualityMode = var3;
     var2.NoiseCancellerError = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 3502]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 3511]);

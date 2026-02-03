@@ -4,11 +4,11 @@ import com.squareup.moshi.h;
 import com.squareup.moshi.w;
 import java.util.Set;
 import javax.inject.Provider;
-import uq.g;
-import uq.h;
-import uq.i;
+import wq.g;
+import wq.h;
+import wq.i;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class NetworkCoreModule_MoshiFactory implements uq.d {
+public final class NetworkCoreModule_MoshiFactory implements wq.d {
     private final h jsonAdapterBindingsProvider;
     private final h jsonAdapterFactoryProvider;
     private final h jsonAdaptersProvider;
@@ -29,7 +29,7 @@ public final class NetworkCoreModule_MoshiFactory implements uq.d {
         return (w) g.d(networkCoreModule.moshi(set, set2, set3));
     }
 
-    public static NetworkCoreModule_MoshiFactory create(NetworkCoreModule networkCoreModule, uq.h hVar, uq.h hVar2, uq.h hVar3) {
+    public static NetworkCoreModule_MoshiFactory create(NetworkCoreModule networkCoreModule, wq.h hVar, wq.h hVar2, wq.h hVar3) {
         return new NetworkCoreModule_MoshiFactory(networkCoreModule, hVar, hVar2, hVar3);
     }
 

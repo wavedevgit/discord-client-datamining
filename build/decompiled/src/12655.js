@@ -1,63 +1,45 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun96818: for (var _fun96818_ip = 0;;) switch (_fun96818_ip) {
-        case 0:
-            var0 = global;
-            var2 = var0.document;
-            var3 = 'object';
-            var2 = typeof var2;
-            var2 = var3 === var2;
-            if (!var2) {
-                _fun96818_ip = 36;
-                continue _fun96818
-            }
-        case 24:
-            var0 = var0.document;
-            var2 = var0.all;
-        case 36:
-            var _closure1_slot0 = var2;
-            var0 = undefined;
-            if (!(var0 === var2)) {
-                _fun96818_ip = 50;
-                continue _fun96818
-            }
-        case 46:
-            if (!(var0 === var2)) {
-                _fun96818_ip = 59;
-                continue _fun96818
-            }
-        case 50:
-            var2 = function(arg0) { // Environment: var1
-                var1 = 'function';
-                var0 = arg0;
-                var0 = typeof var0;
-                var0 = var1 === var0;
-                return var0;
-            };
-            _fun96818_ip = 66;
-            continue _fun96818;
-        case 59:
-            var2 = function(arg0) { // Environment: var1
-                _fun96819: for (var _fun96819_ip = 0;;) switch (_fun96819_ip) {
-                    case 0:
-                        var2 = arg0;
-                        var1 = 'function';
-                        var0 = typeof var2;
-                        var0 = var1 === var0;
-                        if (var0) {
-                            _fun96819_ip = 28;
-                            continue _fun96819
-                        }
-                    case 17:
-                        var1 = _closure1_slot0;
-                        var0 = var2 === var1;
-                    case 28:
-                        return var0;
+    var1 = require;
+    var _closure1_slot0 = var1;
+    var1 = dependencyMap;
+    var _closure1_slot1 = var1;
+    var1 = function(arg0, arg1) { // Environment: var0
+        _fun96862: for (var _fun96862_ip = 0;;) switch (_fun96862_ip) {
+            case 0:
+                var3 = arg0;
+                var1 = arg1;
+                var4 = _closure1_slot0;
+                var0 = _closure1_slot1;
+                var6 = 0;
+                var0 = var0[var6];
+                var5 = undefined;
+                var0 = var4.bind(var5)(var0);
+                var0 = var0[var3];
+                if (var0) {
+                    _fun96862_ip = 66;
+                    continue _fun96862
                 }
-            };
-        case 66:
-            var1 = arg4;
-            var1.exports = var2;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+            case 37:
+                var4 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var2 = var2[var6];
+                var2 = var4.bind(var5)(var2);
+                if (var1) {
+                    _fun96862_ip = 59;
+                    continue _fun96862
+                }
+            case 57:
+                var1 = {};
+            case 59:
+                var2[var3] = var1;
+                var0 = var1;
+            case 66:
+                return var0;
+        }
+    };
+    var0 = arg4;
+    var0.exports = var1;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12656]);

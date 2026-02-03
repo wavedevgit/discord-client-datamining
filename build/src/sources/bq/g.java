@@ -1,76 +1,107 @@
 package bq;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.LinearLayout;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.constraintlayout.widget.Guideline;
-import androidx.viewbinding.ViewBinding;
+import android.net.Uri;
+import android.os.Parcel;
+import android.os.Parcelable;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class g implements ViewBinding {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final LinearLayout f7460a;
-
-    /* renamed from: b  reason: collision with root package name */
-    public final Guideline f7461b;
-
-    /* renamed from: c  reason: collision with root package name */
-    public final LinearLayout f7462c;
+public final class g implements Parcelable {
+    @NotNull
+    public static final Parcelable.Creator<g> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    public final ConstraintLayout f7463d;
+    private final Uri f6745d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Guideline f7464e;
+    private final Uri f6746e;
 
-    /* renamed from: f  reason: collision with root package name */
-    public final View f7465f;
+    /* renamed from: i  reason: collision with root package name */
+    private final Uri f6747i;
 
-    private g(LinearLayout linearLayout, Guideline guideline, LinearLayout linearLayout2, ConstraintLayout constraintLayout, Guideline guideline2, View view) {
-        this.f7460a = linearLayout;
-        this.f7461b = guideline;
-        this.f7462c = linearLayout2;
-        this.f7463d = constraintLayout;
-        this.f7464e = guideline2;
-        this.f7465f = view;
-    }
+    /* renamed from: o  reason: collision with root package name */
+    private final bp.a f6748o;
 
-    public static g a(View view) {
-        View a10;
-        int i10 = wp.e.I;
-        Guideline guideline = (Guideline) e4.a.a(view, i10);
-        if (guideline != null) {
-            LinearLayout linearLayout = (LinearLayout) view;
-            i10 = wp.e.J;
-            ConstraintLayout constraintLayout = (ConstraintLayout) e4.a.a(view, i10);
-            if (constraintLayout != null) {
-                i10 = wp.e.K;
-                Guideline guideline2 = (Guideline) e4.a.a(view, i10);
-                if (guideline2 != null && (a10 = e4.a.a(view, (i10 = wp.e.M))) != null) {
-                    return new g(linearLayout, guideline, linearLayout, constraintLayout, guideline2, a10);
-                }
-            }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a implements Parcelable.Creator {
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: a */
+        public final g createFromParcel(Parcel parcel) {
+            Intrinsics.checkNotNullParameter(parcel, "parcel");
+            return new g((Uri) parcel.readParcelable(g.class.getClassLoader()), (Uri) parcel.readParcelable(g.class.getClassLoader()), (Uri) parcel.readParcelable(g.class.getClassLoader()), bp.a.valueOf(parcel.readString()));
         }
-        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
-    }
 
-    public static g c(LayoutInflater layoutInflater) {
-        return d(layoutInflater, null, false);
-    }
-
-    public static g d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(wp.f.f52936h, viewGroup, false);
-        if (z10) {
-            viewGroup.addView(inflate);
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: b */
+        public final g[] newArray(int i10) {
+            return new g[i10];
         }
-        return a(inflate);
     }
 
-    @Override // androidx.viewbinding.ViewBinding
-    /* renamed from: b */
-    public LinearLayout getRoot() {
-        return this.f7460a;
+    public g(Uri dg1Uri, Uri dg2Uri, Uri sodUri, bp.a chipAuthenticationStatus) {
+        Intrinsics.checkNotNullParameter(dg1Uri, "dg1Uri");
+        Intrinsics.checkNotNullParameter(dg2Uri, "dg2Uri");
+        Intrinsics.checkNotNullParameter(sodUri, "sodUri");
+        Intrinsics.checkNotNullParameter(chipAuthenticationStatus, "chipAuthenticationStatus");
+        this.f6745d = dg1Uri;
+        this.f6746e = dg2Uri;
+        this.f6747i = sodUri;
+        this.f6748o = chipAuthenticationStatus;
+    }
+
+    public final bp.a a() {
+        return this.f6748o;
+    }
+
+    public final Uri b() {
+        return this.f6745d;
+    }
+
+    public final Uri c() {
+        return this.f6746e;
+    }
+
+    public final Uri d() {
+        return this.f6747i;
+    }
+
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof g)) {
+            return false;
+        }
+        g gVar = (g) obj;
+        if (Intrinsics.areEqual(this.f6745d, gVar.f6745d) && Intrinsics.areEqual(this.f6746e, gVar.f6746e) && Intrinsics.areEqual(this.f6747i, gVar.f6747i) && this.f6748o == gVar.f6748o) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return (((((this.f6745d.hashCode() * 31) + this.f6746e.hashCode()) * 31) + this.f6747i.hashCode()) * 31) + this.f6748o.hashCode();
+    }
+
+    public String toString() {
+        Uri uri = this.f6745d;
+        Uri uri2 = this.f6746e;
+        Uri uri3 = this.f6747i;
+        bp.a aVar = this.f6748o;
+        return "GovernmentIdNfcData(dg1Uri=" + uri + ", dg2Uri=" + uri2 + ", sodUri=" + uri3 + ", chipAuthenticationStatus=" + aVar + ")";
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel dest, int i10) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        dest.writeParcelable(this.f6745d, i10);
+        dest.writeParcelable(this.f6746e, i10);
+        dest.writeParcelable(this.f6747i, i10);
+        dest.writeString(this.f6748o.name());
     }
 }

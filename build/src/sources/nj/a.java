@@ -7,14 +7,14 @@ import pj.i;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final i f41844a;
+    private final i f41883a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final i0 f41845b;
+    private final i0 f41884b;
 
     public a(i iVar) {
         i0 b10 = q0.b("common");
-        this.f41844a = iVar;
-        this.f41845b = b10;
+        this.f41883a = iVar;
+        this.f41884b = b10;
     }
 }

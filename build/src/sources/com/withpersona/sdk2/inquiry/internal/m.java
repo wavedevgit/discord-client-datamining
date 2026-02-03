@@ -6,7 +6,7 @@ import androidx.lifecycle.o0;
 import com.withpersona.sdk2.inquiry.InquiryActivityBroadcastManager;
 import com.withpersona.sdk2.inquiry.InquiryActivityEvent;
 import com.withpersona.sdk2.inquiry.internal.n;
-import hs.m0;
+import js.m0;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
 import kotlin.jvm.functions.Function2;
@@ -16,112 +16,112 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.flow.FlowCollector;
 import kotlinx.coroutines.flow.MutableSharedFlow;
 import kotlinx.coroutines.flow.MutableStateFlow;
-import ks.c0;
-import ks.j0;
-import ks.l0;
-import no.a2;
-import no.o2;
-import op.a;
+import ms.c0;
+import ms.j0;
+import ms.l0;
 import org.jetbrains.annotations.NotNull;
-import vo.f0;
-import wm.e0;
+import po.a2;
+import po.o2;
+import qp.a;
+import xo.f0;
+import ym.e0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class m extends androidx.lifecycle.a {
 
     /* renamed from: y  reason: collision with root package name */
-    public static final b f19637y = new b(null);
+    public static final b f18619y = new b(null);
 
     /* renamed from: c  reason: collision with root package name */
-    private final Application f19638c;
+    private final Application f18620c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final androidx.lifecycle.b0 f19639d;
+    private final androidx.lifecycle.b0 f18621d;
 
     /* renamed from: e  reason: collision with root package name */
-    private no.q f19640e;
+    private po.q f18622e;
 
     /* renamed from: f  reason: collision with root package name */
-    private MutableStateFlow f19641f;
+    private MutableStateFlow f18623f;
 
     /* renamed from: g  reason: collision with root package name */
-    private n f19642g;
+    private n f18624g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final MutableSharedFlow f19643h;
+    private final MutableSharedFlow f18625h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final pp.c f19644i;
+    private final rp.c f18626i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final j0 f19645j;
+    private final j0 f18627j;
 
     /* renamed from: k  reason: collision with root package name */
-    private MutableLiveData f19646k;
+    private MutableLiveData f18628k;
 
     /* renamed from: l  reason: collision with root package name */
-    private MutableLiveData f19647l;
+    private MutableLiveData f18629l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final lp.e f19648m;
+    private final np.e f18630m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final MutableSharedFlow f19649n;
+    private final MutableSharedFlow f18631n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final MutableStateFlow f19650o;
+    private final MutableStateFlow f18632o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final MutableSharedFlow f19651p;
+    private final MutableSharedFlow f18633p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final f0 f19652q;
+    private final f0 f18634q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final f0 f19653r;
+    private final f0 f18635r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final f0 f19654s;
+    private final f0 f18636s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final f0 f19655t;
+    private final f0 f18637t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final f0 f19656u;
+    private final f0 f18638u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final f0 f19657v;
+    private final f0 f18639v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final f0 f19658w;
+    private final f0 f18640w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final f0 f19659x;
+    private final f0 f18641x;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f19660d;
+        int f18642d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: com.withpersona.sdk2.inquiry.internal.m$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0251a implements FlowCollector {
+        public static final class C0232a implements FlowCollector {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ m f19662d;
+            final /* synthetic */ m f18644d;
 
-            C0251a(m mVar) {
-                this.f19662d = mVar;
+            C0232a(m mVar) {
+                this.f18644d = mVar;
             }
 
             @Override // kotlinx.coroutines.flow.FlowCollector
             /* renamed from: a */
             public final Object emit(InquiryActivityEvent inquiryActivityEvent, Continuation continuation) {
                 if (inquiryActivityEvent instanceof InquiryActivityEvent.CancelInquiry) {
-                    this.f19662d.f(true);
+                    this.f18644d.f(true);
                 }
-                return Unit.f33074a;
+                return Unit.f32464a;
             }
         }
 
@@ -136,8 +136,8 @@ public final class m extends androidx.lifecycle.a {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            Object f10 = pr.b.f();
-            int i10 = this.f19660d;
+            Object f10 = rr.b.f();
+            int i10 = this.f18642d;
             if (i10 != 0) {
                 if (i10 != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
@@ -145,19 +145,19 @@ public final class m extends androidx.lifecycle.a {
                 kotlin.c.b(obj);
             } else {
                 kotlin.c.b(obj);
-                ks.a0 eventFlow = InquiryActivityBroadcastManager.INSTANCE.getEventFlow();
-                C0251a c0251a = new C0251a(m.this);
-                this.f19660d = 1;
-                if (eventFlow.collect(c0251a, this) == f10) {
+                ms.a0 eventFlow = InquiryActivityBroadcastManager.INSTANCE.getEventFlow();
+                C0232a c0232a = new C0232a(m.this);
+                this.f18642d = 1;
+                if (eventFlow.collect(c0232a, this) == f10) {
                     return f10;
                 }
             }
-            throw new jr.h();
+            throw new lr.h();
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
         }
     }
 
@@ -176,26 +176,26 @@ public final class m extends androidx.lifecycle.a {
     public static final class c extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f19663d;
+        int f18645d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ boolean f19665i;
+        final /* synthetic */ boolean f18647i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         c(boolean z10, Continuation continuation) {
             super(2, continuation);
-            this.f19665i = z10;
+            this.f18647i = z10;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new c(this.f19665i, continuation);
+            return new c(this.f18647i, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            Object f10 = pr.b.f();
-            int i10 = this.f19663d;
+            Object f10 = rr.b.f();
+            int i10 = this.f18645d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -205,18 +205,18 @@ public final class m extends androidx.lifecycle.a {
             } else {
                 kotlin.c.b(obj);
                 MutableSharedFlow h10 = m.this.h();
-                a.C0552a c0552a = new a.C0552a(this.f19665i);
-                this.f19663d = 1;
-                if (h10.emit(c0552a, this) == f10) {
+                a.C0580a c0580a = new a.C0580a(this.f18647i);
+                this.f18645d = 1;
+                if (h10.emit(c0580a, this) == f10) {
                     return f10;
                 }
             }
-            return Unit.f33074a;
+            return Unit.f32464a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
         }
     }
 
@@ -225,40 +225,40 @@ public final class m extends androidx.lifecycle.a {
     public static final class d extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f19666d;
+        int f18648d;
 
         /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f19667e;
+        /* synthetic */ Object f18649e;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f19669d;
+            int f18651d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ m f19670e;
+            final /* synthetic */ m f18652e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ n.b f19671i;
+            final /* synthetic */ n.b f18653i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(m mVar, n.b bVar, Continuation continuation) {
                 super(2, continuation);
-                this.f19670e = mVar;
-                this.f19671i = bVar;
+                this.f18652e = mVar;
+                this.f18653i = bVar;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                return new a(this.f19670e, this.f19671i, continuation);
+                return new a(this.f18652e, this.f18653i, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
-                Object f10 = pr.b.f();
-                int i10 = this.f19669d;
+                Object f10 = rr.b.f();
+                int i10 = this.f18651d;
                 if (i10 != 0) {
                     if (i10 == 1) {
                         kotlin.c.b(obj);
@@ -267,19 +267,19 @@ public final class m extends androidx.lifecycle.a {
                     }
                 } else {
                     kotlin.c.b(obj);
-                    MutableSharedFlow mutableSharedFlow = this.f19670e.f19643h;
-                    n.b bVar = this.f19671i;
-                    this.f19669d = 1;
+                    MutableSharedFlow mutableSharedFlow = this.f18652e.f18625h;
+                    n.b bVar = this.f18653i;
+                    this.f18651d = 1;
                     if (mutableSharedFlow.emit(bVar, this) == f10) {
                         return f10;
                     }
                 }
-                return Unit.f33074a;
+                return Unit.f32464a;
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
             }
         }
 
@@ -290,17 +290,17 @@ public final class m extends androidx.lifecycle.a {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             d dVar = new d(continuation);
-            dVar.f19667e = obj;
+            dVar.f18649e = obj;
             return dVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            pr.b.f();
-            if (this.f19666d == 0) {
+            rr.b.f();
+            if (this.f18648d == 0) {
                 kotlin.c.b(obj);
-                hs.i.d(o0.a(m.this), null, null, new a(m.this, (n.b) this.f19667e, null), 3, null);
-                return Unit.f33074a;
+                js.i.d(o0.a(m.this), null, null, new a(m.this, (n.b) this.f18649e, null), 3, null);
+                return Unit.f32464a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -308,7 +308,7 @@ public final class m extends androidx.lifecycle.a {
         @Override // kotlin.jvm.functions.Function2
         /* renamed from: j */
         public final Object invoke(n.b bVar, Continuation continuation) {
-            return ((d) create(bVar, continuation)).invokeSuspend(Unit.f33074a);
+            return ((d) create(bVar, continuation)).invokeSuspend(Unit.f32464a);
         }
     }
 
@@ -317,42 +317,42 @@ public final class m extends androidx.lifecycle.a {
         super(application);
         Intrinsics.checkNotNullParameter(application, "application");
         Intrinsics.checkNotNullParameter(savedStateHandle, "savedStateHandle");
-        this.f19638c = application;
-        this.f19639d = savedStateHandle;
-        this.f19643h = c0.b(0, 0, null, 7, null);
-        this.f19644i = new pp.c(application);
-        this.f19645j = savedStateHandle.e("force_fallback_mode", Boolean.FALSE);
-        this.f19646k = savedStateHandle.c("inquiry_id", null);
-        this.f19647l = savedStateHandle.c("session_token", null);
-        this.f19648m = new lp.e(savedStateHandle);
-        this.f19649n = c0.b(0, 0, null, 7, null);
-        this.f19650o = l0.a(new mo.c(false, false, true));
-        this.f19651p = c0.b(0, 0, null, 7, null);
-        this.f19652q = vo.c0.b();
-        this.f19653r = vo.k.h();
-        this.f19654s = vo.k.f();
-        this.f19655t = vo.k.d();
-        this.f19656u = vo.w.b();
-        this.f19657v = vo.q.b();
-        this.f19658w = zo.i.b();
-        this.f19659x = vo.d.b();
-        hs.i.d(o0.a(this), m0.a(), null, new a(null), 2, null);
+        this.f18620c = application;
+        this.f18621d = savedStateHandle;
+        this.f18625h = c0.b(0, 0, null, 7, null);
+        this.f18626i = new rp.c(application);
+        this.f18627j = savedStateHandle.e("force_fallback_mode", Boolean.FALSE);
+        this.f18628k = savedStateHandle.c("inquiry_id", null);
+        this.f18629l = savedStateHandle.c("session_token", null);
+        this.f18630m = new np.e(savedStateHandle);
+        this.f18631n = c0.b(0, 0, null, 7, null);
+        this.f18632o = l0.a(new oo.c(false, false, true));
+        this.f18633p = c0.b(0, 0, null, 7, null);
+        this.f18634q = xo.c0.b();
+        this.f18635r = xo.k.h();
+        this.f18636s = xo.k.f();
+        this.f18637t = xo.k.d();
+        this.f18638u = xo.w.b();
+        this.f18639v = xo.q.b();
+        this.f18640w = bp.i.b();
+        this.f18641x = xo.d.b();
+        js.i.d(o0.a(this), m0.a(), null, new a(null), 2, null);
     }
 
     private final void B(d.b bVar) {
-        this.f19652q.e(bVar);
-        this.f19653r.e(bVar);
-        this.f19654s.e(bVar);
-        this.f19655t.e(bVar);
-        this.f19656u.e(bVar);
-        this.f19657v.e(bVar);
-        this.f19658w.e(bVar);
-        this.f19659x.e(bVar);
+        this.f18634q.e(bVar);
+        this.f18635r.e(bVar);
+        this.f18636s.e(bVar);
+        this.f18637t.e(bVar);
+        this.f18638u.e(bVar);
+        this.f18639v.e(bVar);
+        this.f18640w.e(bVar);
+        this.f18641x.e(bVar);
     }
 
     public final void A() {
-        vn.g c10;
-        no.q qVar = this.f19640e;
+        xn.g c10;
+        po.q qVar = this.f18622e;
         if (qVar != null && (c10 = qVar.c()) != null) {
             c10.a();
         }
@@ -362,7 +362,7 @@ public final class m extends androidx.lifecycle.a {
         n nVar;
         MutableStateFlow mutableStateFlow;
         Intrinsics.checkNotNullParameter(workflowStateViewModel, "workflowStateViewModel");
-        n nVar2 = this.f19642g;
+        n nVar2 = this.f18624g;
         if (nVar2 == null) {
             Intrinsics.throwUninitializedPropertyAccessException("workflow");
             nVar = null;
@@ -371,22 +371,22 @@ public final class m extends androidx.lifecycle.a {
         }
         CoroutineScope a10 = o0.a(this);
         androidx.lifecycle.b0 e10 = workflowStateViewModel.e();
-        MutableStateFlow mutableStateFlow2 = this.f19641f;
+        MutableStateFlow mutableStateFlow2 = this.f18623f;
         if (mutableStateFlow2 == null) {
             Intrinsics.throwUninitializedPropertyAccessException("props");
             mutableStateFlow = null;
         } else {
             mutableStateFlow = mutableStateFlow2;
         }
-        return wm.a.a(nVar, a10, mutableStateFlow, e10, a2.f42121a.a(), new d(null));
+        return ym.a.a(nVar, a10, mutableStateFlow, e10, a2.f46413a.a(), new d(null));
     }
 
     public final void D(boolean z10) {
-        this.f19639d.h("force_fallback_mode", Boolean.valueOf(z10));
+        this.f18621d.h("force_fallback_mode", Boolean.valueOf(z10));
     }
 
     public final e0 E() {
-        no.q qVar = this.f19640e;
+        po.q qVar = this.f18622e;
         if (qVar != null) {
             return qVar.a();
         }
@@ -394,18 +394,18 @@ public final class m extends androidx.lifecycle.a {
     }
 
     public final void f(boolean z10) {
-        hs.i.d(o0.a(this), m0.a(), null, new c(z10, null), 2, null);
+        js.i.d(o0.a(this), m0.a(), null, new c(z10, null), 2, null);
     }
 
-    public final void g(no.q component, n.c props, o2 workflowStateViewModel, boolean z10) {
+    public final void g(po.q component, n.c props, o2 workflowStateViewModel, boolean z10) {
         Intrinsics.checkNotNullParameter(component, "component");
         Intrinsics.checkNotNullParameter(props, "props");
         Intrinsics.checkNotNullParameter(workflowStateViewModel, "workflowStateViewModel");
-        this.f19640e = component;
+        this.f18622e = component;
         if (z10) {
             workflowStateViewModel.f();
         }
-        MutableStateFlow mutableStateFlow = this.f19641f;
+        MutableStateFlow mutableStateFlow = this.f18623f;
         if (mutableStateFlow != null) {
             if (mutableStateFlow == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("props");
@@ -413,77 +413,77 @@ public final class m extends androidx.lifecycle.a {
             }
             mutableStateFlow.setValue(props);
         } else {
-            this.f19641f = l0.a(props);
+            this.f18623f = l0.a(props);
         }
-        this.f19642g = component.b();
+        this.f18624g = component.b();
     }
 
     public final MutableSharedFlow h() {
-        return this.f19649n;
+        return this.f18631n;
     }
 
     public final f0 i() {
-        return this.f19659x;
+        return this.f18641x;
     }
 
-    public final lp.e j() {
-        return this.f19648m;
+    public final np.e j() {
+        return this.f18630m;
     }
 
     public final f0 k() {
-        return this.f19657v;
+        return this.f18639v;
     }
 
     public final f0 l() {
-        return this.f19655t;
+        return this.f18637t;
     }
 
     public final MutableSharedFlow m() {
-        return this.f19651p;
+        return this.f18633p;
     }
 
     public final j0 n() {
-        return this.f19645j;
+        return this.f18627j;
     }
 
     public final MutableLiveData o() {
-        return this.f19646k;
+        return this.f18628k;
     }
 
     public final f0 p() {
-        return this.f19658w;
+        return this.f18640w;
     }
 
     public final f0 q() {
-        return this.f19653r;
+        return this.f18635r;
     }
 
     public final f0 r() {
-        return this.f19656u;
+        return this.f18638u;
     }
 
     public final f0 s() {
-        return this.f19652q;
+        return this.f18634q;
     }
 
-    public final ks.a0 t() {
-        return this.f19643h;
+    public final ms.a0 t() {
+        return this.f18625h;
     }
 
     public final MutableStateFlow u() {
-        return this.f19650o;
+        return this.f18632o;
     }
 
-    public final pp.c v() {
-        return this.f19644i;
+    public final rp.c v() {
+        return this.f18626i;
     }
 
     public final f0 w() {
-        return this.f19654s;
+        return this.f18636s;
     }
 
     public final MutableLiveData x() {
-        return this.f19647l;
+        return this.f18629l;
     }
 
     public final void y(d.b activityResultCaller) {
@@ -493,7 +493,7 @@ public final class m extends androidx.lifecycle.a {
 
     public final void z() {
         v4.h e10;
-        no.q qVar = this.f19640e;
+        po.q qVar = this.f18622e;
         if (qVar != null && (e10 = qVar.e()) != null) {
             e10.shutdown();
         }

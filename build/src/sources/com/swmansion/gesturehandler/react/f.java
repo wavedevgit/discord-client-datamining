@@ -4,23 +4,23 @@ import android.util.SparseArray;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
 import com.swmansion.gesturehandler.react.RNGestureHandlerRootHelper;
-import dn.q;
+import fn.q;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class f implements dn.e {
+public final class f implements fn.e {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f18720d = new a(null);
+    public static final a f17702d = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final SparseArray f18721a = new SparseArray();
+    private final SparseArray f17703a = new SparseArray();
 
     /* renamed from: b  reason: collision with root package name */
-    private final SparseArray f18722b = new SparseArray();
+    private final SparseArray f17704b = new SparseArray();
 
     /* renamed from: c  reason: collision with root package name */
-    private final SparseArray f18723c = new SparseArray();
+    private final SparseArray f17705c = new SparseArray();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -43,8 +43,38 @@ public final class f implements dn.e {
         return iArr;
     }
 
-    @Override // dn.e
-    public boolean a(dn.d handler, dn.d otherHandler) {
+    @Override // fn.e
+    public boolean a(fn.d handler, fn.d otherHandler) {
+        Intrinsics.checkNotNullParameter(handler, "handler");
+        Intrinsics.checkNotNullParameter(otherHandler, "otherHandler");
+        int[] iArr = (int[]) this.f17705c.get(handler.T());
+        if (iArr != null) {
+            for (int i10 : iArr) {
+                if (i10 == otherHandler.T()) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    @Override // fn.e
+    public boolean b(fn.d handler, fn.d otherHandler) {
+        Intrinsics.checkNotNullParameter(handler, "handler");
+        Intrinsics.checkNotNullParameter(otherHandler, "otherHandler");
+        int[] iArr = (int[]) this.f17704b.get(handler.T());
+        if (iArr != null) {
+            for (int i10 : iArr) {
+                if (i10 == otherHandler.T()) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    @Override // fn.e
+    public boolean c(fn.d handler, fn.d otherHandler) {
         Intrinsics.checkNotNullParameter(handler, "handler");
         Intrinsics.checkNotNullParameter(otherHandler, "otherHandler");
         if (otherHandler instanceof q) {
@@ -56,11 +86,11 @@ public final class f implements dn.e {
         return false;
     }
 
-    @Override // dn.e
-    public boolean b(dn.d handler, dn.d otherHandler) {
+    @Override // fn.e
+    public boolean d(fn.d handler, fn.d otherHandler) {
         Intrinsics.checkNotNullParameter(handler, "handler");
         Intrinsics.checkNotNullParameter(otherHandler, "otherHandler");
-        int[] iArr = (int[]) this.f18721a.get(handler.T());
+        int[] iArr = (int[]) this.f17703a.get(handler.T());
         if (iArr != null) {
             for (int i10 : iArr) {
                 if (i10 == otherHandler.T()) {
@@ -71,58 +101,28 @@ public final class f implements dn.e {
         return false;
     }
 
-    @Override // dn.e
-    public boolean c(dn.d handler, dn.d otherHandler) {
-        Intrinsics.checkNotNullParameter(handler, "handler");
-        Intrinsics.checkNotNullParameter(otherHandler, "otherHandler");
-        int[] iArr = (int[]) this.f18723c.get(handler.T());
-        if (iArr != null) {
-            for (int i10 : iArr) {
-                if (i10 == otherHandler.T()) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-
-    @Override // dn.e
-    public boolean d(dn.d handler, dn.d otherHandler) {
-        Intrinsics.checkNotNullParameter(handler, "handler");
-        Intrinsics.checkNotNullParameter(otherHandler, "otherHandler");
-        int[] iArr = (int[]) this.f18722b.get(handler.T());
-        if (iArr != null) {
-            for (int i10 : iArr) {
-                if (i10 == otherHandler.T()) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-
-    public final void e(dn.d handler, ReadableMap config) {
+    public final void e(fn.d handler, ReadableMap config) {
         Intrinsics.checkNotNullParameter(handler, "handler");
         Intrinsics.checkNotNullParameter(config, "config");
         handler.A0(this);
         if (config.hasKey("waitFor")) {
-            this.f18721a.put(handler.T(), f(config, "waitFor"));
+            this.f17703a.put(handler.T(), f(config, "waitFor"));
         }
         if (config.hasKey("simultaneousHandlers")) {
-            this.f18722b.put(handler.T(), f(config, "simultaneousHandlers"));
+            this.f17704b.put(handler.T(), f(config, "simultaneousHandlers"));
         }
         if (config.hasKey("blocksHandlers")) {
-            this.f18723c.put(handler.T(), f(config, "blocksHandlers"));
+            this.f17705c.put(handler.T(), f(config, "blocksHandlers"));
         }
     }
 
     public final void g(int i10) {
-        this.f18721a.remove(i10);
-        this.f18722b.remove(i10);
+        this.f17703a.remove(i10);
+        this.f17704b.remove(i10);
     }
 
     public final void h() {
-        this.f18721a.clear();
-        this.f18722b.clear();
+        this.f17703a.clear();
+        this.f17704b.clear();
     }
 }

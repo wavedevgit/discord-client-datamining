@@ -12,6 +12,6 @@ public class t0 extends u0 {
 
     @Override // r.s0.a
     public Size[] b(int i10) {
-        return this.f47989a.getOutputSizes(i10);
+        return this.f48298a.getOutputSizes(i10);
     }
 }

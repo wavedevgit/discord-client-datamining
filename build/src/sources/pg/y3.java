@@ -3,36 +3,36 @@ package pg;
 public final class y3 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final w3 f46022a;
+    private final w3 f45980a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Integer f46023b;
+    private final Integer f45981b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final jd f46024c;
+    private final jd f45982c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ y3(t3 t3Var, x3 x3Var) {
         w3 w3Var;
         Integer num;
         jd jdVar;
-        w3Var = t3Var.f45816a;
-        this.f46022a = w3Var;
-        num = t3Var.f45817b;
-        this.f46023b = num;
-        jdVar = t3Var.f45818c;
-        this.f46024c = jdVar;
+        w3Var = t3Var.f45774a;
+        this.f45980a = w3Var;
+        num = t3Var.f45775b;
+        this.f45981b = num;
+        jdVar = t3Var.f45776c;
+        this.f45982c = jdVar;
     }
 
     public final w3 a() {
-        return this.f46022a;
+        return this.f45980a;
     }
 
     public final jd b() {
-        return this.f46024c;
+        return this.f45982c;
     }
 
     public final Integer c() {
-        return this.f46023b;
+        return this.f45981b;
     }
 }

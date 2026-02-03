@@ -35,77 +35,77 @@ import l5.i0;
 public final class h {
 
     /* renamed from: r  reason: collision with root package name */
-    public static final b f8425r = new b(null);
+    public static final b f7393r = new b(null);
 
     /* renamed from: s  reason: collision with root package name */
-    private static Function1 f8426s;
+    private static Function1 f7394s;
 
     /* renamed from: a  reason: collision with root package name */
-    private final WeakReference f8427a;
+    private final WeakReference f7395a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f8428b;
+    private boolean f7396b;
 
     /* renamed from: c  reason: collision with root package name */
-    private String f8429c;
+    private String f7397c;
 
     /* renamed from: d  reason: collision with root package name */
-    private ImageView.ScaleType f8430d;
+    private ImageView.ScaleType f7398d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f8431e;
+    private String f7399e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Boolean f8432f;
+    private Boolean f7400f;
 
     /* renamed from: g  reason: collision with root package name */
-    private ReadableArray f8433g;
+    private ReadableArray f7401g;
 
     /* renamed from: h  reason: collision with root package name */
-    private ReadableArray f8434h;
+    private ReadableArray f7402h;
 
     /* renamed from: i  reason: collision with root package name */
-    private g0 f8435i;
+    private g0 f7403i;
 
     /* renamed from: j  reason: collision with root package name */
-    private Integer f8436j;
+    private Integer f7404j;
 
     /* renamed from: k  reason: collision with root package name */
-    private String f8437k;
+    private String f7405k;
 
     /* renamed from: l  reason: collision with root package name */
-    private String f8438l;
+    private String f7406l;
 
     /* renamed from: m  reason: collision with root package name */
-    private String f8439m;
+    private String f7407m;
 
     /* renamed from: n  reason: collision with root package name */
-    private Float f8440n;
+    private Float f7408n;
 
     /* renamed from: o  reason: collision with root package name */
-    private Boolean f8441o;
+    private Boolean f7409o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Boolean f8442p;
+    private Boolean f7410p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Float f8443q;
+    private Float f7411q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a extends l5.b {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ LottieAnimationView f8444a;
+        final /* synthetic */ LottieAnimationView f7412a;
 
         a(LottieAnimationView lottieAnimationView) {
-            this.f8444a = lottieAnimationView;
+            this.f7412a = lottieAnimationView;
         }
 
         @Override // l5.b
         public Typeface a(String fontFamily) {
             Intrinsics.checkNotNullParameter(fontFamily, "fontFamily");
             ReactFontManager companion = ReactFontManager.Companion.getInstance();
-            AssetManager assets = this.f8444a.getContext().getAssets();
+            AssetManager assets = this.f7412a.getContext().getAssets();
             Intrinsics.checkNotNullExpressionValue(assets, "getAssets(...)");
             return companion.getTypeface(fontFamily, -1, -1, assets);
         }
@@ -203,7 +203,7 @@ public final class h {
             L68:
                 com.facebook.react.views.text.ReactFontManager$Companion r5 = com.facebook.react.views.text.ReactFontManager.Companion
                 com.facebook.react.views.text.ReactFontManager r5 = r5.getInstance()
-                com.airbnb.lottie.LottieAnimationView r1 = r3.f8444a
+                com.airbnb.lottie.LottieAnimationView r1 = r3.f7412a
                 android.content.Context r1 = r1.getContext()
                 android.content.res.AssetManager r1 = r1.getAssets()
                 java.lang.String r2 = "getAssets(...)"
@@ -222,7 +222,7 @@ public final class h {
         }
 
         public final void a(Function1 function1) {
-            h.f8426s = function1;
+            h.f7394s = function1;
         }
 
         private b() {
@@ -231,7 +231,7 @@ public final class h {
 
     public h(LottieAnimationView view) {
         Intrinsics.checkNotNullParameter(view, "view");
-        this.f8427a = new WeakReference(view);
+        this.f7395a = new WeakReference(view);
         view.setFontAssetDelegate(new a(view));
     }
 
@@ -269,16 +269,16 @@ public final class h {
         int i10;
         Object b10;
         String str;
-        LottieAnimationView lottieAnimationView = (LottieAnimationView) this.f8427a.get();
+        LottieAnimationView lottieAnimationView = (LottieAnimationView) this.f7395a.get();
         if (lottieAnimationView != null) {
-            ReadableArray readableArray = this.f8434h;
+            ReadableArray readableArray = this.f7402h;
             if (readableArray != null && readableArray.size() > 0) {
                 i0 i0Var = new i0(lottieAnimationView);
-                ReadableArray readableArray2 = this.f8434h;
+                ReadableArray readableArray2 = this.f7402h;
                 Intrinsics.checkNotNull(readableArray2);
                 int size = readableArray2.size();
                 for (int i11 = 0; i11 < size; i11++) {
-                    ReadableArray readableArray3 = this.f8434h;
+                    ReadableArray readableArray3 = this.f7402h;
                     Intrinsics.checkNotNull(readableArray3);
                     ReadableMap map = readableArray3.getMap(i11);
                     Intrinsics.checkNotNull(map);
@@ -290,12 +290,12 @@ public final class h {
                 }
                 lottieAnimationView.setTextDelegate(i0Var);
             }
-            String str2 = this.f8437k;
+            String str2 = this.f7405k;
             if (str2 != null) {
                 lottieAnimationView.A(str2, String.valueOf(str2.hashCode()));
-                this.f8437k = null;
+                this.f7405k = null;
             }
-            String str3 = this.f8438l;
+            String str3 = this.f7406l;
             if (str3 != null) {
                 File file = new File(str3);
                 if (file.exists()) {
@@ -303,25 +303,25 @@ public final class h {
                 } else {
                     lottieAnimationView.B(str3, String.valueOf(str3.hashCode()));
                 }
-                this.f8438l = null;
+                this.f7406l = null;
             }
-            String str4 = this.f8439m;
+            String str4 = this.f7407m;
             if (str4 != null) {
-                Function1 function1 = f8426s;
+                Function1 function1 = f7394s;
                 if (function1 != null && (str = (String) function1.invoke(str4)) != null) {
                     str4 = str;
                 }
                 File file2 = new File(str4);
                 if (file2.exists()) {
                     lottieAnimationView.z(new ZipInputStream(new FileInputStream(file2)), String.valueOf(str4.hashCode()));
-                    this.f8439m = null;
+                    this.f7407m = null;
                     return;
                 }
                 try {
-                    Result.a aVar = Result.f33071e;
+                    Result.a aVar = Result.f32461e;
                     b10 = Result.b(Uri.parse(str4).getScheme());
                 } catch (Throwable th2) {
-                    Result.a aVar2 = Result.f33071e;
+                    Result.a aVar2 = Result.f32461e;
                     b10 = Result.b(kotlin.c.a(th2));
                 }
                 if (Result.g(b10)) {
@@ -329,7 +329,7 @@ public final class h {
                 }
                 if (((String) b10) != null) {
                     lottieAnimationView.setAnimationFromUrl(str4);
-                    this.f8439m = null;
+                    this.f7407m = null;
                     return;
                 }
                 int identifier = lottieAnimationView.getResources().getIdentifier(str4, "raw", lottieAnimationView.getContext().getPackageName());
@@ -338,19 +338,19 @@ public final class h {
                     return;
                 }
                 lottieAnimationView.setAnimation(identifier);
-                this.f8428b = false;
-                this.f8439m = null;
+                this.f7396b = false;
+                this.f7407m = null;
             }
-            if (this.f8428b) {
-                lottieAnimationView.setAnimation(this.f8429c);
-                this.f8428b = false;
+            if (this.f7396b) {
+                lottieAnimationView.setAnimation(this.f7397c);
+                this.f7396b = false;
             }
-            Float f10 = this.f8440n;
+            Float f10 = this.f7408n;
             if (f10 != null) {
                 lottieAnimationView.setProgress(f10.floatValue());
-                this.f8440n = null;
+                this.f7408n = null;
             }
-            Boolean bool = this.f8441o;
+            Boolean bool = this.f7409o;
             if (bool != null) {
                 if (bool.booleanValue()) {
                     i10 = -1;
@@ -358,42 +358,42 @@ public final class h {
                     i10 = 0;
                 }
                 lottieAnimationView.setRepeatCount(i10);
-                this.f8441o = null;
+                this.f7409o = null;
             }
-            Boolean bool2 = this.f8442p;
+            Boolean bool2 = this.f7410p;
             if (bool2 != null && bool2.booleanValue() && !lottieAnimationView.t()) {
                 lottieAnimationView.playAnimation();
             }
-            Float f11 = this.f8443q;
+            Float f11 = this.f7411q;
             if (f11 != null) {
                 lottieAnimationView.setSpeed(f11.floatValue());
-                this.f8443q = null;
+                this.f7411q = null;
             }
-            ImageView.ScaleType scaleType = this.f8430d;
+            ImageView.ScaleType scaleType = this.f7398d;
             if (scaleType != null) {
                 lottieAnimationView.setScaleType(scaleType);
-                this.f8430d = null;
+                this.f7398d = null;
             }
-            g0 g0Var = this.f8435i;
+            g0 g0Var = this.f7403i;
             if (g0Var != null) {
                 lottieAnimationView.setRenderMode(g0Var);
-                this.f8435i = null;
+                this.f7403i = null;
             }
-            Integer num = this.f8436j;
+            Integer num = this.f7404j;
             if (num != null) {
                 lottieAnimationView.setLayerType(num.intValue(), null);
             }
-            String str5 = this.f8431e;
+            String str5 = this.f7399e;
             if (str5 != null) {
                 lottieAnimationView.setImageAssetsFolder(str5);
-                this.f8431e = null;
+                this.f7399e = null;
             }
-            Boolean bool3 = this.f8432f;
+            Boolean bool3 = this.f7400f;
             if (bool3 != null) {
                 lottieAnimationView.p(bool3.booleanValue());
-                this.f8432f = null;
+                this.f7400f = null;
             }
-            ReadableArray readableArray4 = this.f8433g;
+            ReadableArray readableArray4 = this.f7401g;
             if (readableArray4 != null && readableArray4.size() > 0) {
                 int size2 = readableArray4.size();
                 for (int i12 = 0; i12 < size2; i12++) {
@@ -406,63 +406,63 @@ public final class h {
     }
 
     public final void d(String str) {
-        this.f8437k = str;
+        this.f7405k = str;
     }
 
     public final void e(String str) {
-        this.f8429c = str;
-        this.f8428b = true;
+        this.f7397c = str;
+        this.f7396b = true;
     }
 
     public final void f(String str) {
-        this.f8438l = str;
+        this.f7406l = str;
     }
 
     public final void g(Boolean bool) {
-        this.f8442p = bool;
+        this.f7410p = bool;
     }
 
     public final void h(ReadableArray readableArray) {
-        this.f8433g = readableArray;
+        this.f7401g = readableArray;
     }
 
     public final void i(Boolean bool) {
-        this.f8432f = bool;
+        this.f7400f = bool;
     }
 
     public final void j(String str) {
-        this.f8431e = str;
+        this.f7399e = str;
     }
 
     public final void k(Integer num) {
-        this.f8436j = num;
+        this.f7404j = num;
     }
 
     public final void l(Boolean bool) {
-        this.f8441o = bool;
+        this.f7409o = bool;
     }
 
     public final void m(Float f10) {
-        this.f8440n = f10;
+        this.f7408n = f10;
     }
 
     public final void n(g0 g0Var) {
-        this.f8435i = g0Var;
+        this.f7403i = g0Var;
     }
 
     public final void o(ImageView.ScaleType scaleType) {
-        this.f8430d = scaleType;
+        this.f7398d = scaleType;
     }
 
     public final void p(String str) {
-        this.f8439m = str;
+        this.f7407m = str;
     }
 
     public final void q(Float f10) {
-        this.f8443q = f10;
+        this.f7411q = f10;
     }
 
     public final void r(ReadableArray readableArray) {
-        this.f8434h = readableArray;
+        this.f7402h = readableArray;
     }
 }

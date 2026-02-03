@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var1 = function arg0, arg1() {
-        _fun78477: for (var _fun78477_ip = 0;;) switch (_fun78477_ip) {
+        _fun78587: for (var _fun78587_ip = 0;;) switch (_fun78587_ip) {
             case 0:
                 var4 = arg0;
                 var3 = arg1;
@@ -16,8 +16,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2 == var3;
                 var0 = null;
                 if (var1) {
-                    _fun78477_ip = 62;
-                    continue _fun78477
+                    _fun78587_ip = 62;
+                    continue _fun78587
                 }
             case 17:
                 var1 = var4.getGuildPermissions;
@@ -25,8 +25,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2 == var1;
                 var0 = null;
                 if (var1) {
-                    _fun78477_ip = 62;
-                    continue _fun78477
+                    _fun78587_ip = 62;
+                    continue _fun78587
                 }
             case 37:
                 var2 = var4.can;
@@ -98,4 +98,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.getHasAllocateBoostPermission = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 3082, 483, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 3091, 483, 566, 2]);

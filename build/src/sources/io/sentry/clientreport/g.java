@@ -12,16 +12,16 @@ import java.util.Map;
 public final class g implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f29446d;
+    private final String f29807d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f29447e;
+    private final String f29808e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Long f29448i;
+    private final Long f29809i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Map f29449o;
+    private Map f29810o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -41,24 +41,24 @@ public final class g implements w1 {
             Long l10 = null;
             HashMap hashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String m02 = e3Var.m0();
-                m02.getClass();
+                String l02 = e3Var.l0();
+                l02.getClass();
                 char c10 = 65535;
-                switch (m02.hashCode()) {
+                switch (l02.hashCode()) {
                     case -1285004149:
-                        if (m02.equals("quantity")) {
+                        if (l02.equals("quantity")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case -934964668:
-                        if (m02.equals("reason")) {
+                        if (l02.equals("reason")) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case 50511102:
-                        if (m02.equals("category")) {
+                        if (l02.equals("category")) {
                             c10 = 2;
                             break;
                         }
@@ -78,7 +78,7 @@ public final class g implements w1 {
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.v1(iLogger, hashMap, m02);
+                        e3Var.v1(iLogger, hashMap, l02);
                         break;
                 }
             }
@@ -99,43 +99,43 @@ public final class g implements w1 {
     }
 
     public g(String str, String str2, Long l10) {
-        this.f29446d = str;
-        this.f29447e = str2;
-        this.f29448i = l10;
+        this.f29807d = str;
+        this.f29808e = str2;
+        this.f29809i = l10;
     }
 
     public String a() {
-        return this.f29447e;
+        return this.f29808e;
     }
 
     public Long b() {
-        return this.f29448i;
+        return this.f29809i;
     }
 
     public String c() {
-        return this.f29446d;
+        return this.f29807d;
     }
 
     public void d(Map map) {
-        this.f29449o = map;
+        this.f29810o = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        f3Var.e("reason").f(this.f29446d);
-        f3Var.e("category").f(this.f29447e);
-        f3Var.e("quantity").i(this.f29448i);
-        Map map = this.f29449o;
+        f3Var.e("reason").f(this.f29807d);
+        f3Var.e("category").f(this.f29808e);
+        f3Var.e("quantity").i(this.f29809i);
+        Map map = this.f29810o;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f29449o.get(str));
+                f3Var.e(str).j(iLogger, this.f29810o.get(str));
             }
         }
         f3Var.y();
     }
 
     public String toString() {
-        return "DiscardedEvent{reason='" + this.f29446d + "', category='" + this.f29447e + "', quantity=" + this.f29448i + '}';
+        return "DiscardedEvent{reason='" + this.f29807d + "', category='" + this.f29808e + "', quantity=" + this.f29809i + '}';
     }
 }

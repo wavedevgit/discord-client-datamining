@@ -11,7 +11,7 @@ public abstract class b1 {
         Bundle bundle;
         z0 z0Var = new z0("notification_bundle:", bVar, null);
         d(z0Var);
-        bundle = z0Var.f16755c;
+        bundle = z0Var.f15723c;
         return bundle;
     }
 
@@ -20,7 +20,7 @@ public abstract class b1 {
         Bundle bundle;
         z0 z0Var = new z0("session_bundle:", bVar, null);
         e(z0Var);
-        bundle = z0Var.f16755c;
+        bundle = z0Var.f15723c;
         return bundle;
     }
 

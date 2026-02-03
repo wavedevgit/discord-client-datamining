@@ -404,7 +404,7 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
                 AttachmentUploadOverlayView.uploadCompleteCheckmarkFadeInAnim$lambda$11$lambda$6$lambda$5(AttachmentUploadOverlayView.this, valueAnimator2);
             }
         });
-        Unit unit = Unit.f33074a;
+        Unit unit = Unit.f32464a;
         ValueAnimator valueAnimator2 = new ValueAnimator();
         valueAnimator2.setFloatValues(0.8f, 0.9f);
         valueAnimator2.setInterpolator(new OvershootInterpolator(8.0f));
@@ -464,7 +464,7 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
                 AttachmentUploadOverlayView.uploadCompleteCheckmarkFadeOutAnim$lambda$17$lambda$13$lambda$12(AttachmentUploadOverlayView.this, valueAnimator2);
             }
         });
-        Unit unit = Unit.f33074a;
+        Unit unit = Unit.f32464a;
         ValueAnimator valueAnimator2 = new ValueAnimator();
         valueAnimator2.setFloatValues(1.0f, 0.0f);
         valueAnimator2.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.discord.chat.presentation.message.view.y
@@ -661,7 +661,7 @@ public final class AttachmentUploadOverlayView extends ConstraintLayout {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
                 return unit;
             }
         };

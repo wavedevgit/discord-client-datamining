@@ -1,43 +1,86 @@
 package mv;
 
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
-/* JADX INFO: Access modifiers changed from: package-private */
+import com.squareup.moshi.l;
+import com.squareup.moshi.w;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Type;
+import java.util.Collections;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import lv.a0;
+import lv.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a extends k {
+public final class a extends h.a {
 
-    /* renamed from: i  reason: collision with root package name */
-    public static final C0512a f39444i = new C0512a(null);
+    /* renamed from: a  reason: collision with root package name */
+    private final w f39504a;
 
-    /* renamed from: e  reason: collision with root package name */
-    private final j f39445e;
+    /* renamed from: b  reason: collision with root package name */
+    private final boolean f39505b;
 
-    /* renamed from: mv.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0512a {
-        public /* synthetic */ C0512a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
+    /* renamed from: c  reason: collision with root package name */
+    private final boolean f39506c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final boolean f39507d;
+
+    private a(w wVar, boolean z10, boolean z11, boolean z12) {
+        this.f39504a = wVar;
+        this.f39505b = z10;
+        this.f39506c = z11;
+        this.f39507d = z12;
+    }
+
+    public static a f(w wVar) {
+        if (wVar != null) {
+            return new a(wVar, false, false, false);
         }
+        throw new NullPointerException("moshi == null");
+    }
 
-        private C0512a() {
+    private static Set g(Annotation[] annotationArr) {
+        LinkedHashSet linkedHashSet = null;
+        for (Annotation annotation : annotationArr) {
+            if (annotation.annotationType().isAnnotationPresent(l.class)) {
+                if (linkedHashSet == null) {
+                    linkedHashSet = new LinkedHashSet();
+                }
+                linkedHashSet.add(annotation);
+            }
         }
+        if (linkedHashSet != null) {
+            return Collections.unmodifiableSet(linkedHashSet);
+        }
+        return Collections.EMPTY_SET;
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public a(j replaceData) {
-        super(null);
-        Intrinsics.checkNotNullParameter(replaceData, "replaceData");
-        this.f39445e = replaceData;
+    @Override // lv.h.a
+    public h c(Type type, Annotation[] annotationArr, Annotation[] annotationArr2, a0 a0Var) {
+        com.squareup.moshi.h e10 = this.f39504a.e(type, g(annotationArr));
+        if (this.f39505b) {
+            e10 = e10.lenient();
+        }
+        if (this.f39506c) {
+            e10 = e10.failOnUnknown();
+        }
+        if (this.f39507d) {
+            e10 = e10.serializeNulls();
+        }
+        return new b(e10);
     }
 
-    public j a() {
-        return this.f39445e;
-    }
-
-    @Override // kotlin.jvm.functions.Function0
-    /* renamed from: b */
-    public String invoke() {
-        return StringsKt.J(a().c(), a().b(), a().a(), false, 4, null);
+    @Override // lv.h.a
+    public h d(Type type, Annotation[] annotationArr, a0 a0Var) {
+        com.squareup.moshi.h e10 = this.f39504a.e(type, g(annotationArr));
+        if (this.f39505b) {
+            e10 = e10.lenient();
+        }
+        if (this.f39506c) {
+            e10 = e10.failOnUnknown();
+        }
+        if (this.f39507d) {
+            e10 = e10.serializeNulls();
+        }
+        return new c(e10);
     }
 }

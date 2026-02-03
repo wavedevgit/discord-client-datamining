@@ -1,339 +1,121 @@
 package lq;
 
-import com.withpersona.sdk2.inquiry.network.core.InternalErrorInfo;
-import com.withpersona.sdk2.inquiry.webrtc.networking.AuthorizeWebRtcResponse;
-import kotlin.Metadata;
-import kotlin.Unit;
-import kotlin.coroutines.Continuation;
-import kotlin.coroutines.jvm.internal.k;
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
-import kotlinx.coroutines.flow.Flow;
-import kotlinx.coroutines.flow.FlowCollector;
-import ks.g;
-import um.o;
-@Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\b\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0002\f\u0010B\u0019\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005¢\u0006\u0004\b\u0007\u0010\bJ\u0015\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00020\tH\u0016¢\u0006\u0004\b\n\u0010\u000bR\u0014\u0010\u0004\u001a\u00020\u00038\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\f\u0010\rR\u0016\u0010\u0006\u001a\u0004\u0018\u00010\u00058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u000e\u0010\u000f¨\u0006\u0011"}, d2 = {"Llq/b;", "Lum/o;", "Llq/b$b;", "Llq/a;", "service", "", "jwt", "<init>", "(Llq/a;Ljava/lang/String;)V", "Lkotlinx/coroutines/flow/Flow;", "run", "()Lkotlinx/coroutines/flow/Flow;", "b", "Llq/a;", "c", "Ljava/lang/String;", "a", "webrtc_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.TextView;
+import androidx.constraintlayout.helper.widget.Flow;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.viewbinding.ViewBinding;
+import com.withpersona.sdk2.inquiry.steps.ui.view.SignatureView;
+import kq.f1;
+import kq.g1;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements o<AbstractC0487b> {
+public final class b implements ViewBinding {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final FrameLayout f37077a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final lq.a f37523b;
+    public final FrameLayout f37078b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f37524c;
+    public final Button f37079c;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
+    /* renamed from: d  reason: collision with root package name */
+    public final ImageView f37080d;
 
-        /* renamed from: a  reason: collision with root package name */
-        private final lq.a f37525a;
+    /* renamed from: e  reason: collision with root package name */
+    public final Flow f37081e;
 
-        public a(lq.a service) {
-            Intrinsics.checkNotNullParameter(service, "service");
-            this.f37525a = service;
-        }
+    /* renamed from: f  reason: collision with root package name */
+    public final Button f37082f;
 
-        public final b a(String str) {
-            return new b(this.f37525a, str);
-        }
+    /* renamed from: g  reason: collision with root package name */
+    public final View f37083g;
 
-        public final lq.a b() {
-            return this.f37525a;
-        }
+    /* renamed from: h  reason: collision with root package name */
+    public final SignatureView f37084h;
+
+    /* renamed from: i  reason: collision with root package name */
+    public final TextView f37085i;
+
+    /* renamed from: j  reason: collision with root package name */
+    public final TextView f37086j;
+
+    /* renamed from: k  reason: collision with root package name */
+    public final ConstraintLayout f37087k;
+
+    private b(FrameLayout frameLayout, FrameLayout frameLayout2, Button button, ImageView imageView, Flow flow, Button button2, View view, SignatureView signatureView, TextView textView, TextView textView2, ConstraintLayout constraintLayout) {
+        this.f37077a = frameLayout;
+        this.f37078b = frameLayout2;
+        this.f37079c = button;
+        this.f37080d = imageView;
+        this.f37081e = flow;
+        this.f37082f = button2;
+        this.f37083g = view;
+        this.f37084h = signatureView;
+        this.f37085i = textView;
+        this.f37086j = textView2;
+        this.f37087k = constraintLayout;
     }
 
-    /* renamed from: lq.b$b  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static abstract class AbstractC0487b {
-
-        /* renamed from: lq.b$b$a */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class a extends AbstractC0487b {
-
-            /* renamed from: a  reason: collision with root package name */
-            private final InternalErrorInfo f37526a;
-
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            public a(InternalErrorInfo cause) {
-                super(null);
-                Intrinsics.checkNotNullParameter(cause, "cause");
-                this.f37526a = cause;
-            }
-
-            public boolean equals(Object obj) {
-                if (this == obj) {
-                    return true;
-                }
-                if ((obj instanceof a) && Intrinsics.areEqual(this.f37526a, ((a) obj).f37526a)) {
-                    return true;
-                }
-                return false;
-            }
-
-            public int hashCode() {
-                return this.f37526a.hashCode();
-            }
-
-            public String toString() {
-                InternalErrorInfo internalErrorInfo = this.f37526a;
-                return "Error(cause=" + internalErrorInfo + ")";
-            }
-        }
-
-        /* renamed from: lq.b$b$b  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0488b extends AbstractC0487b {
-
-            /* renamed from: a  reason: collision with root package name */
-            private final AuthorizeWebRtcResponse f37527a;
-
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            public C0488b(AuthorizeWebRtcResponse result) {
-                super(null);
-                Intrinsics.checkNotNullParameter(result, "result");
-                this.f37527a = result;
-            }
-
-            public final AuthorizeWebRtcResponse a() {
-                return this.f37527a;
-            }
-        }
-
-        public /* synthetic */ AbstractC0487b(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
-
-        private AbstractC0487b() {
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static final class c extends k implements Function2 {
-
-        /* renamed from: d  reason: collision with root package name */
-        Object f37528d;
-
-        /* renamed from: e  reason: collision with root package name */
-        int f37529e;
-
-        /* renamed from: i  reason: collision with root package name */
-        private /* synthetic */ Object f37530i;
-
-        /* JADX INFO: Access modifiers changed from: package-private */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class a extends k implements Function1 {
-
-            /* renamed from: d  reason: collision with root package name */
-            int f37532d;
-
-            /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ b f37533e;
-
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            a(b bVar, Continuation continuation) {
-                super(1, continuation);
-                this.f37533e = bVar;
-            }
-
-            @Override // kotlin.coroutines.jvm.internal.a
-            public final Continuation create(Continuation continuation) {
-                return new a(this.f37533e, continuation);
-            }
-
-            @Override // kotlin.coroutines.jvm.internal.a
-            public final Object invokeSuspend(Object obj) {
-                Object f10 = pr.b.f();
-                int i10 = this.f37532d;
-                if (i10 != 0) {
-                    if (i10 == 1) {
-                        kotlin.c.b(obj);
-                        return obj;
+    public static b a(View view) {
+        View a10;
+        int i10 = f1.f35694a;
+        FrameLayout frameLayout = (FrameLayout) e4.a.a(view, i10);
+        if (frameLayout != null) {
+            i10 = f1.f35695b;
+            Button button = (Button) e4.a.a(view, i10);
+            if (button != null) {
+                i10 = f1.f35696c;
+                ImageView imageView = (ImageView) e4.a.a(view, i10);
+                if (imageView != null) {
+                    i10 = f1.f35698e;
+                    Flow flow = (Flow) e4.a.a(view, i10);
+                    if (flow != null) {
+                        i10 = f1.f35709p;
+                        Button button2 = (Button) e4.a.a(view, i10);
+                        if (button2 != null && (a10 = e4.a.a(view, (i10 = f1.f35710q))) != null) {
+                            i10 = f1.f35711r;
+                            SignatureView signatureView = (SignatureView) e4.a.a(view, i10);
+                            if (signatureView != null) {
+                                i10 = f1.f35712s;
+                                TextView textView = (TextView) e4.a.a(view, i10);
+                                if (textView != null) {
+                                    i10 = f1.f35713t;
+                                    TextView textView2 = (TextView) e4.a.a(view, i10);
+                                    if (textView2 != null) {
+                                        i10 = f1.f35714u;
+                                        ConstraintLayout constraintLayout = (ConstraintLayout) e4.a.a(view, i10);
+                                        if (constraintLayout != null) {
+                                            return new b((FrameLayout) view, frameLayout, button, imageView, flow, button2, a10, signatureView, textView, textView2, constraintLayout);
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
-                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
-                kotlin.c.b(obj);
-                lq.a aVar = this.f37533e.f37523b;
-                String str = this.f37533e.f37524c;
-                this.f37532d = 1;
-                Object a10 = aVar.a(str, this);
-                if (a10 == f10) {
-                    return f10;
-                }
-                return a10;
-            }
-
-            @Override // kotlin.jvm.functions.Function1
-            public final Object invoke(Continuation continuation) {
-                return ((a) create(continuation)).invokeSuspend(Unit.f33074a);
             }
         }
-
-        c(Continuation continuation) {
-            super(2, continuation);
-        }
-
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Continuation create(Object obj, Continuation continuation) {
-            c cVar = new c(continuation);
-            cVar.f37530i = obj;
-            return cVar;
-        }
-
-        /* JADX WARN: Code restructure failed: missing block: B:22:0x0077, code lost:
-            if (r1.emit(r4, r14) == r0) goto L19;
-         */
-        /* JADX WARN: Code restructure failed: missing block: B:24:0x007a, code lost:
-            r4 = r1;
-            r1 = r15;
-         */
-        /* JADX WARN: Code restructure failed: missing block: B:27:0x009b, code lost:
-            if (r1.emit(r5, r14) == r0) goto L19;
-         */
-        /* JADX WARN: Code restructure failed: missing block: B:32:0x00b8, code lost:
-            if (r1.emit(r5, r14) == r0) goto L19;
-         */
-        /* JADX WARN: Removed duplicated region for block: B:31:0x00a2  */
-        @Override // kotlin.coroutines.jvm.internal.a
-        /*
-            Code decompiled incorrectly, please refer to instructions dump.
-            To view partially-correct add '--show-bad-code' argument
-        */
-        public final java.lang.Object invokeSuspend(java.lang.Object r15) {
-            /*
-                r14 = this;
-                java.lang.Object r0 = pr.b.f()
-                int r1 = r14.f37529e
-                r2 = 0
-                r3 = 4
-                r4 = 3
-                r5 = 2
-                r6 = 1
-                if (r1 == 0) goto L3a
-                if (r1 == r6) goto L32
-                if (r1 == r5) goto L26
-                if (r1 == r4) goto L26
-                if (r1 != r3) goto L1e
-                java.lang.Object r0 = r14.f37530i
-                com.withpersona.sdk2.inquiry.network.core.NetworkCallResult r0 = (com.withpersona.sdk2.inquiry.network.core.NetworkCallResult) r0
-                kotlin.c.b(r15)
-                goto Lbb
-            L1e:
-                java.lang.IllegalStateException r15 = new java.lang.IllegalStateException
-                java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
-                r15.<init>(r0)
-                throw r15
-            L26:
-                java.lang.Object r1 = r14.f37528d
-                com.withpersona.sdk2.inquiry.network.core.NetworkCallResult r1 = (com.withpersona.sdk2.inquiry.network.core.NetworkCallResult) r1
-                java.lang.Object r4 = r14.f37530i
-                kotlinx.coroutines.flow.FlowCollector r4 = (kotlinx.coroutines.flow.FlowCollector) r4
-                kotlin.c.b(r15)
-                goto L7c
-            L32:
-                java.lang.Object r1 = r14.f37530i
-                kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
-                kotlin.c.b(r15)
-                goto L57
-            L3a:
-                kotlin.c.b(r15)
-                java.lang.Object r15 = r14.f37530i
-                kotlinx.coroutines.flow.FlowCollector r15 = (kotlinx.coroutines.flow.FlowCollector) r15
-                lq.b$c$a r1 = new lq.b$c$a
-                lq.b r7 = lq.b.this
-                r1.<init>(r7, r2)
-                r14.f37530i = r15
-                r14.f37529e = r6
-                java.lang.Object r1 = com.withpersona.sdk2.inquiry.network.core.NetworkUtilsKt.enqueueRetriableRequestWithRetry(r1, r14)
-                if (r1 != r0) goto L54
-                goto Lba
-            L54:
-                r13 = r1
-                r1 = r15
-                r15 = r13
-            L57:
-                com.withpersona.sdk2.inquiry.network.core.NetworkCallResult r15 = (com.withpersona.sdk2.inquiry.network.core.NetworkCallResult) r15
-                boolean r6 = r15 instanceof com.withpersona.sdk2.inquiry.network.core.NetworkCallResult.Success
-                if (r6 == 0) goto L9e
-                r6 = r15
-                com.withpersona.sdk2.inquiry.network.core.NetworkCallResult$Success r6 = (com.withpersona.sdk2.inquiry.network.core.NetworkCallResult.Success) r6
-                java.lang.Object r6 = r6.getResponse()
-                com.withpersona.sdk2.inquiry.webrtc.networking.AuthorizeWebRtcResponse r6 = (com.withpersona.sdk2.inquiry.webrtc.networking.AuthorizeWebRtcResponse) r6
-                if (r6 == 0) goto L7f
-                lq.b$b$b r4 = new lq.b$b$b
-                r4.<init>(r6)
-                r14.f37530i = r1
-                r14.f37528d = r15
-                r14.f37529e = r5
-                java.lang.Object r4 = r1.emit(r4, r14)
-                if (r4 != r0) goto L7a
-                goto Lba
-            L7a:
-                r4 = r1
-                r1 = r15
-            L7c:
-                r15 = r1
-                r1 = r4
-                goto L9e
-            L7f:
-                lq.b$b$a r5 = new lq.b$b$a
-                com.withpersona.sdk2.inquiry.network.core.InternalErrorInfo$NetworkErrorInfo r6 = new com.withpersona.sdk2.inquiry.network.core.InternalErrorInfo$NetworkErrorInfo
-                r11 = 8
-                r12 = 0
-                r7 = 0
-                java.lang.String r8 = "Expected body to be non-null."
-                r9 = 0
-                r10 = 0
-                r6.<init>(r7, r8, r9, r10, r11, r12)
-                r5.<init>(r6)
-                r14.f37530i = r1
-                r14.f37528d = r15
-                r14.f37529e = r4
-                java.lang.Object r4 = r1.emit(r5, r14)
-                if (r4 != r0) goto L7a
-                goto Lba
-            L9e:
-                boolean r4 = r15 instanceof com.withpersona.sdk2.inquiry.network.core.NetworkCallResult.Failure
-                if (r4 == 0) goto Lbb
-                r4 = r15
-                com.withpersona.sdk2.inquiry.network.core.NetworkCallResult$Failure r4 = (com.withpersona.sdk2.inquiry.network.core.NetworkCallResult.Failure) r4
-                com.withpersona.sdk2.inquiry.network.core.InternalErrorInfo$NetworkErrorInfo r4 = r4.getNetworkErrorInfo()
-                lq.b$b$a r5 = new lq.b$b$a
-                r5.<init>(r4)
-                r14.f37530i = r15
-                r14.f37528d = r2
-                r14.f37529e = r3
-                java.lang.Object r15 = r1.emit(r5, r14)
-                if (r15 != r0) goto Lbb
-            Lba:
-                return r0
-            Lbb:
-                kotlin.Unit r15 = kotlin.Unit.f33074a
-                return r15
-            */
-            throw new UnsupportedOperationException("Method not decompiled: lq.b.c.invokeSuspend(java.lang.Object):java.lang.Object");
-        }
-
-        @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f33074a);
-        }
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
     }
 
-    public b(lq.a service, String str) {
-        Intrinsics.checkNotNullParameter(service, "service");
-        this.f37523b = service;
-        this.f37524c = str;
+    public static b c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
+        View inflate = layoutInflater.inflate(g1.f35744b, viewGroup, false);
+        if (z10) {
+            viewGroup.addView(inflate);
+        }
+        return a(inflate);
     }
 
-    @Override // um.o
-    public boolean a(o oVar) {
-        return o.b.a(this, oVar);
-    }
-
-    @Override // um.o
-    public Flow run() {
-        return g.v(new c(null));
+    @Override // androidx.viewbinding.ViewBinding
+    /* renamed from: b */
+    public FrameLayout getRoot() {
+        return this.f37077a;
     }
 }

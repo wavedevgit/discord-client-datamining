@@ -125,7 +125,7 @@ public final class NativeAnimatedNodesManager implements EventDispatcherListener
                         WritableMap createMap2 = Arguments.createMap();
                         Intrinsics.checkNotNullExpressionValue(createMap2, "createMap(...)");
                         ReadableMapBuilder readableMapBuilder2 = new ReadableMapBuilder(createMap2);
-                        readableMapBuilder2.put("animationId", valueAt.f11657id);
+                        readableMapBuilder2.put("animationId", valueAt.f10625id);
                         readableMapBuilder2.put("finished", false);
                         readableMapBuilder2.put("value", valueAnimatedNode.nodeValue);
                         readableMapBuilder2.put("offset", valueAnimatedNode.offset);
@@ -710,7 +710,7 @@ public final class NativeAnimatedNodesManager implements EventDispatcherListener
                             WritableMap createMap2 = Arguments.createMap();
                             Intrinsics.checkNotNullExpressionValue(createMap2, "createMap(...)");
                             ReadableMapBuilder readableMapBuilder2 = new ReadableMapBuilder(createMap2);
-                            readableMapBuilder2.put("animationId", valueAt3.f11657id);
+                            readableMapBuilder2.put("animationId", valueAt3.f10625id);
                             readableMapBuilder2.put("finished", true);
                             readableMapBuilder2.put("value", valueAnimatedNode2.nodeValue);
                             readableMapBuilder2.put("offset", valueAnimatedNode2.offset);
@@ -771,7 +771,7 @@ public final class NativeAnimatedNodesManager implements EventDispatcherListener
                         if (hashCode != -895679987) {
                             if (hashCode == 95459258 && string.equals("decay")) {
                                 frameBasedAnimationDriver = new DecayAnimation(animationConfig);
-                                frameBasedAnimationDriver.f11657id = i10;
+                                frameBasedAnimationDriver.f10625id = i10;
                                 frameBasedAnimationDriver.endCallback = callback;
                                 frameBasedAnimationDriver.animatedValue = (ValueAnimatedNode) animatedNode;
                                 this.activeAnimations.put(i10, frameBasedAnimationDriver);
@@ -779,7 +779,7 @@ public final class NativeAnimatedNodesManager implements EventDispatcherListener
                             }
                         } else if (string.equals("spring")) {
                             frameBasedAnimationDriver = new SpringAnimation(animationConfig);
-                            frameBasedAnimationDriver.f11657id = i10;
+                            frameBasedAnimationDriver.f10625id = i10;
                             frameBasedAnimationDriver.endCallback = callback;
                             frameBasedAnimationDriver.animatedValue = (ValueAnimatedNode) animatedNode;
                             this.activeAnimations.put(i10, frameBasedAnimationDriver);
@@ -787,7 +787,7 @@ public final class NativeAnimatedNodesManager implements EventDispatcherListener
                         }
                     } else if (string.equals("frames")) {
                         frameBasedAnimationDriver = new FrameBasedAnimationDriver(animationConfig);
-                        frameBasedAnimationDriver.f11657id = i10;
+                        frameBasedAnimationDriver.f10625id = i10;
                         frameBasedAnimationDriver.endCallback = callback;
                         frameBasedAnimationDriver.animatedValue = (ValueAnimatedNode) animatedNode;
                         this.activeAnimations.put(i10, frameBasedAnimationDriver);
@@ -822,7 +822,7 @@ public final class NativeAnimatedNodesManager implements EventDispatcherListener
                 break;
             }
             AnimationDriver valueAt = this.activeAnimations.valueAt(i11);
-            if (valueAt.f11657id == i10) {
+            if (valueAt.f10625id == i10) {
                 if (valueAt.endCallback != null) {
                     WritableMap createMap = Arguments.createMap();
                     Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
@@ -850,7 +850,7 @@ public final class NativeAnimatedNodesManager implements EventDispatcherListener
                     WritableMap createMap2 = Arguments.createMap();
                     Intrinsics.checkNotNullExpressionValue(createMap2, "createMap(...)");
                     ReadableMapBuilder readableMapBuilder2 = new ReadableMapBuilder(createMap2);
-                    readableMapBuilder2.put("animationId", valueAt.f11657id);
+                    readableMapBuilder2.put("animationId", valueAt.f10625id);
                     readableMapBuilder2.put("finished", false);
                     ValueAnimatedNode valueAnimatedNode3 = valueAt.animatedValue;
                     if (valueAnimatedNode3 != null) {

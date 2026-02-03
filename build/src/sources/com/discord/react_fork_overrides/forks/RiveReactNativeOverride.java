@@ -21,11 +21,11 @@ public final class RiveReactNativeOverride {
         Intrinsics.checkNotNullParameter(error, "error");
         Intrinsics.checkNotNullParameter(context, "context");
         CrashReporting.captureException$default(CrashReporting.INSTANCE, error, false, 2, null);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public final void override() {
-        n.f18318a.c(new Function2() { // from class: com.discord.react_fork_overrides.forks.i
+        n.f17300a.c(new Function2() { // from class: com.discord.react_fork_overrides.forks.i
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(Object obj, Object obj2) {
                 Unit override$lambda$0;

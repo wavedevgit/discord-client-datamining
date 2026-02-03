@@ -5,23 +5,23 @@ import ui.c;
 final class f2 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final f2 f41066a = new f2();
+    static final f2 f41105a = new f2();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41067b;
+    private static final ui.c f41106b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41068c;
+    private static final ui.c f41107c;
 
     static {
         c.b a10 = ui.c.a("maxResults");
         f fVar = new f();
         fVar.a(1);
-        f41067b = a10.b(fVar.b()).a();
+        f41106b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("modelType");
         f fVar2 = new f();
         fVar2.a(2);
-        f41068c = a11.b(fVar2.b()).a();
+        f41107c = a11.b(fVar2.b()).a();
     }
 
     private f2() {

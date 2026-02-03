@@ -1,8 +1,8 @@
 package c1;
 
 import d1.g;
-import jr.b0;
 import kotlin.jvm.internal.Intrinsics;
+import lr.b0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public abstract class b {
     public static final long a(float f10, float f11, float f12, float f13, d1.c colorSpace) {
@@ -42,6 +42,6 @@ public abstract class b {
     }
 
     public static final int d(long j10) {
-        return (int) b0.d(a.c(j10, g.f21121a.h()) >>> 32);
+        return (int) b0.d(a.c(j10, g.f19980a.h()) >>> 32);
     }
 }

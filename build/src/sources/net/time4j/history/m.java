@@ -43,7 +43,7 @@ abstract class m {
     }
 
     public static boolean c(int i10) {
-        if (ht.c.c(i10, 4) == 0) {
+        if (kt.c.c(i10, 4) == 0) {
             return true;
         }
         return false;
@@ -75,16 +75,16 @@ abstract class m {
             j10--;
             i11 += 12;
         }
-        return (((((365 * j10) + ht.c.b(j10, 4)) + (((i11 + 1) * 153) / 5)) - 123) + i12) - 678883;
+        return (((((365 * j10) + kt.c.b(j10, 4)) + (((i11 + 1) * 153) / 5)) - 123) + i12) - 678883;
     }
 
     public static long i(long j10) {
         long j11;
         int i10;
         int i11;
-        long f10 = ht.c.f(j10, 678883L);
-        long b10 = ht.c.b(f10, 1461);
-        int d10 = ht.c.d(f10, 1461);
+        long f10 = kt.c.f(j10, 678883L);
+        long b10 = kt.c.b(f10, 1461);
+        int d10 = kt.c.d(f10, 1461);
         if (d10 == 1460) {
             j11 = (b10 + 1) * 4;
             i11 = 2;

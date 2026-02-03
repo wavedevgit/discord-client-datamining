@@ -1,32 +1,29 @@
 package ln;
 
-import com.facebook.react.views.view.WindowUtilKt;
+import java.util.Collections;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final b f37510a = new b();
+public final class b extends a {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final boolean f37511b;
+    private final int f36981b;
 
-    static {
-        boolean z10;
-        if (!WindowUtilKt.isEdgeToEdgeFeatureFlagOn()) {
-            try {
-                Class.forName("com.zoontek.rnedgetoedge.EdgeToEdgePackage");
-            } catch (ClassNotFoundException unused) {
-                z10 = false;
+    public b(int i10) {
+        super(false, 1, null);
+        this.f36981b = i10;
+    }
+
+    @Override // com.swmansion.rnscreens.stack.views.ChildrenDrawingOrderStrategy
+    public void a(List drawingOperations) {
+        Intrinsics.checkNotNullParameter(drawingOperations, "drawingOperations");
+        if (b()) {
+            int i10 = this.f36981b;
+            for (int n10 = CollectionsKt.n(drawingOperations); i10 < n10; n10--) {
+                Collections.swap(drawingOperations, i10, n10);
+                i10++;
             }
         }
-        z10 = true;
-        f37511b = z10;
-    }
-
-    private b() {
-    }
-
-    public final boolean a() {
-        return f37511b;
     }
 }

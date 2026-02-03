@@ -7,49 +7,49 @@ import java.io.IOException;
 public class k implements i8.b {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final Object f31677i = new Object();
+    private static final Object f31473i = new Object();
 
     /* renamed from: j  reason: collision with root package name */
-    private static k f31678j;
+    private static k f31474j;
 
     /* renamed from: k  reason: collision with root package name */
-    private static int f31679k;
+    private static int f31475k;
 
     /* renamed from: a  reason: collision with root package name */
-    private CacheKey f31680a;
+    private CacheKey f31476a;
 
     /* renamed from: b  reason: collision with root package name */
-    private String f31681b;
+    private String f31477b;
 
     /* renamed from: c  reason: collision with root package name */
-    private long f31682c;
+    private long f31478c;
 
     /* renamed from: d  reason: collision with root package name */
-    private long f31683d;
+    private long f31479d;
 
     /* renamed from: e  reason: collision with root package name */
-    private long f31684e;
+    private long f31480e;
 
     /* renamed from: f  reason: collision with root package name */
-    private IOException f31685f;
+    private IOException f31481f;
 
     /* renamed from: g  reason: collision with root package name */
-    private c.a f31686g;
+    private c.a f31482g;
 
     /* renamed from: h  reason: collision with root package name */
-    private k f31687h;
+    private k f31483h;
 
     private k() {
     }
 
     public static k a() {
-        synchronized (f31677i) {
+        synchronized (f31473i) {
             try {
-                k kVar = f31678j;
+                k kVar = f31474j;
                 if (kVar != null) {
-                    f31678j = kVar.f31687h;
-                    kVar.f31687h = null;
-                    f31679k--;
+                    f31474j = kVar.f31483h;
+                    kVar.f31483h = null;
+                    f31475k--;
                     return kVar;
                 }
                 return new k();
@@ -60,26 +60,26 @@ public class k implements i8.b {
     }
 
     private void c() {
-        this.f31680a = null;
-        this.f31681b = null;
-        this.f31682c = 0L;
-        this.f31683d = 0L;
-        this.f31684e = 0L;
-        this.f31685f = null;
-        this.f31686g = null;
+        this.f31476a = null;
+        this.f31477b = null;
+        this.f31478c = 0L;
+        this.f31479d = 0L;
+        this.f31480e = 0L;
+        this.f31481f = null;
+        this.f31482g = null;
     }
 
     public void b() {
-        synchronized (f31677i) {
+        synchronized (f31473i) {
             try {
-                if (f31679k < 5) {
+                if (f31475k < 5) {
                     c();
-                    f31679k++;
-                    k kVar = f31678j;
+                    f31475k++;
+                    k kVar = f31474j;
                     if (kVar != null) {
-                        this.f31687h = kVar;
+                        this.f31483h = kVar;
                     }
-                    f31678j = this;
+                    f31474j = this;
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -88,37 +88,37 @@ public class k implements i8.b {
     }
 
     public k d(CacheKey cacheKey) {
-        this.f31680a = cacheKey;
+        this.f31476a = cacheKey;
         return this;
     }
 
     public k e(long j10) {
-        this.f31683d = j10;
+        this.f31479d = j10;
         return this;
     }
 
     public k f(long j10) {
-        this.f31684e = j10;
+        this.f31480e = j10;
         return this;
     }
 
     public k g(c.a aVar) {
-        this.f31686g = aVar;
+        this.f31482g = aVar;
         return this;
     }
 
     public k h(IOException iOException) {
-        this.f31685f = iOException;
+        this.f31481f = iOException;
         return this;
     }
 
     public k i(long j10) {
-        this.f31682c = j10;
+        this.f31478c = j10;
         return this;
     }
 
     public k j(String str) {
-        this.f31681b = str;
+        this.f31477b = str;
         return this;
     }
 }

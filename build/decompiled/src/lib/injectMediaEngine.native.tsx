@@ -55,4 +55,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'lib/injectMediaEngine.native.tsx';
     var1 = var2.bind(var3)(var1);
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3469, 3470, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3478, 3479, 2]);

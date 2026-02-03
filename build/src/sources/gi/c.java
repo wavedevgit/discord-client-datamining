@@ -3,17 +3,17 @@ package gi;
 final class c extends u0 {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ e f27018e;
+    final /* synthetic */ e f26231e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(e eVar) {
-        this.f27018e = eVar;
+        this.f26231e = eVar;
     }
 
     @Override // gi.u0
     public final void b() {
-        f.s(this.f27018e.f27019d);
-        this.f27018e.f27019d.f27034n = null;
-        this.f27018e.f27019d.f27027g = false;
+        f.s(this.f26231e.f26232d);
+        this.f26231e.f26232d.f26247n = null;
+        this.f26231e.f26232d.f26240g = false;
     }
 }

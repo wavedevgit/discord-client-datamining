@@ -234,7 +234,7 @@ public final class ReactionsViewAdapter extends RecyclerView.Adapter {
         if (z11) {
             List<? extends ReactionView.Reaction> list = this.reactions;
             this.reactions = reactions;
-            e.C0069e c10 = androidx.recyclerview.widget.e.c(new ItemDiffer(list, reactions), true);
+            e.C0067e c10 = androidx.recyclerview.widget.e.c(new ItemDiffer(list, reactions), true);
             Intrinsics.checkNotNullExpressionValue(c10, "calculateDiff(...)");
             c10.c(this);
             return;

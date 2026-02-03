@@ -7,13 +7,13 @@ import zd.g;
 final class b implements g {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final b f27694e = new b();
+    public static final b f26979e = new b();
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f27695d;
+    private final List f26980d;
 
     public b(zd.b bVar) {
-        this.f27695d = Collections.singletonList(bVar);
+        this.f26980d = Collections.singletonList(bVar);
     }
 
     @Override // zd.g
@@ -27,7 +27,7 @@ final class b implements g {
     @Override // zd.g
     public List d(long j10) {
         if (j10 >= 0) {
-            return this.f27695d;
+            return this.f26980d;
         }
         return Collections.EMPTY_LIST;
     }
@@ -50,6 +50,6 @@ final class b implements g {
     }
 
     private b() {
-        this.f27695d = Collections.EMPTY_LIST;
+        this.f26980d = Collections.EMPTY_LIST;
     }
 }

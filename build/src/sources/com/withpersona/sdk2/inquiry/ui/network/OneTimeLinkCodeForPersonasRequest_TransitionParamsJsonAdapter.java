@@ -15,19 +15,19 @@ import org.jetbrains.annotations.NotNull;
 public final class OneTimeLinkCodeForPersonasRequest_TransitionParamsJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20454a;
+    private final m.b f19436a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f20455b;
+    private final h f19437b;
 
     public OneTimeLinkCodeForPersonasRequest_TransitionParamsJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("componentData");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20454a = a10;
+        this.f19436a = a10;
         h f10 = moshi.f(a0.j(List.class, OneTimeLinkCodeForPersonasRequest.NamedComponentParam.class), x0.d(), "componentData");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20455b = f10;
+        this.f19437b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -37,13 +37,13 @@ public final class OneTimeLinkCodeForPersonasRequest_TransitionParamsJsonAdapter
         reader.r();
         List list = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.f20454a);
-            if (t02 != -1) {
-                if (t02 == 0) {
-                    list = (List) this.f20455b.fromJson(reader);
+            int A0 = reader.A0(this.f19436a);
+            if (A0 != -1) {
+                if (A0 == 0) {
+                    list = (List) this.f19437b.fromJson(reader);
                 }
             } else {
-                reader.F0();
+                reader.E0();
                 reader.P();
             }
         }
@@ -57,8 +57,8 @@ public final class OneTimeLinkCodeForPersonasRequest_TransitionParamsJsonAdapter
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (transitionParams != null) {
             writer.l();
-            writer.t0("componentData");
-            this.f20455b.toJson(writer, transitionParams.a());
+            writer.A0("componentData");
+            this.f19437b.toJson(writer, transitionParams.a());
             writer.E();
             return;
         }

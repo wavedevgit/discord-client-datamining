@@ -6,33 +6,33 @@ import ne.w0;
 public final class c0 implements qc.b {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final boolean f48331d;
+    public static final boolean f48640d;
 
     /* renamed from: a  reason: collision with root package name */
-    public final UUID f48332a;
+    public final UUID f48641a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final byte[] f48333b;
+    public final byte[] f48642b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final boolean f48334c;
+    public final boolean f48643c;
 
     static {
         boolean z10;
-        if ("Amazon".equals(w0.f40160c)) {
-            String str = w0.f40161d;
+        if ("Amazon".equals(w0.f40199c)) {
+            String str = w0.f40200d;
             if ("AFTM".equals(str) || "AFTB".equals(str)) {
                 z10 = true;
-                f48331d = z10;
+                f48640d = z10;
             }
         }
         z10 = false;
-        f48331d = z10;
+        f48640d = z10;
     }
 
     public c0(UUID uuid, byte[] bArr, boolean z10) {
-        this.f48332a = uuid;
-        this.f48333b = bArr;
-        this.f48334c = z10;
+        this.f48641a = uuid;
+        this.f48642b = bArr;
+        this.f48643c = z10;
     }
 }

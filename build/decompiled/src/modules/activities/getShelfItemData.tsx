@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/getShelfItemData.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun64012: for (var _fun64012_ip = 0;;) switch (_fun64012_ip) {
+        _fun64070: for (var _fun64070_ip = 0;;) switch (_fun64070_ip) {
             case 0:
                 var1 = arg0;
                 var6 = var1.applicationId;
@@ -36,8 +36,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4 == var7;
                 var2 = undefined;
                 if (var1) {
-                    _fun64012_ip = 52;
-                    continue _fun64012
+                    _fun64070_ip = 52;
+                    continue _fun64070
                 }
             case 37:
                 var5 = var7.find;
@@ -51,8 +51,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5.bind(var7)(var1);
             case 52:
                 if (!(var4 == var2)) {
-                    _fun64012_ip = 74;
-                    continue _fun64012
+                    _fun64070_ip = 74;
+                    continue _fun64070
                 }
             case 56:
                 var5 = _closure1_slot0;
@@ -71,15 +71,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4 == var3;
                 var0 = null;
                 if (var1) {
-                    _fun64012_ip = 121;
-                    continue _fun64012
+                    _fun64070_ip = 121;
+                    continue _fun64070
                 }
             case 98:
                 var1 = var4 == var2;
                 var0 = null;
                 if (var1) {
-                    _fun64012_ip = 121;
-                    continue _fun64012
+                    _fun64070_ip = 121;
+                    continue _fun64070
                 }
             case 107:
                 var1 = {};
@@ -92,4 +92,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3445, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3454, 2]);

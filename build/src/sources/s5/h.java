@@ -24,88 +24,88 @@ public enum h {
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f48823a;
+        static final /* synthetic */ int[] f49233a;
 
         static {
             int[] iArr = new int[h.values().length];
-            f48823a = iArr;
+            f49233a = iArr;
             try {
                 iArr[h.NORMAL.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f48823a[h.SCREEN.ordinal()] = 2;
+                f49233a[h.SCREEN.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f48823a[h.OVERLAY.ordinal()] = 3;
+                f49233a[h.OVERLAY.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f48823a[h.DARKEN.ordinal()] = 4;
+                f49233a[h.DARKEN.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f48823a[h.LIGHTEN.ordinal()] = 5;
+                f49233a[h.LIGHTEN.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f48823a[h.ADD.ordinal()] = 6;
+                f49233a[h.ADD.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f48823a[h.MULTIPLY.ordinal()] = 7;
+                f49233a[h.MULTIPLY.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f48823a[h.COLOR_DODGE.ordinal()] = 8;
+                f49233a[h.COLOR_DODGE.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f48823a[h.COLOR_BURN.ordinal()] = 9;
+                f49233a[h.COLOR_BURN.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                f48823a[h.HARD_LIGHT.ordinal()] = 10;
+                f49233a[h.HARD_LIGHT.ordinal()] = 10;
             } catch (NoSuchFieldError unused10) {
             }
             try {
-                f48823a[h.SOFT_LIGHT.ordinal()] = 11;
+                f49233a[h.SOFT_LIGHT.ordinal()] = 11;
             } catch (NoSuchFieldError unused11) {
             }
             try {
-                f48823a[h.DIFFERENCE.ordinal()] = 12;
+                f49233a[h.DIFFERENCE.ordinal()] = 12;
             } catch (NoSuchFieldError unused12) {
             }
             try {
-                f48823a[h.EXCLUSION.ordinal()] = 13;
+                f49233a[h.EXCLUSION.ordinal()] = 13;
             } catch (NoSuchFieldError unused13) {
             }
             try {
-                f48823a[h.HUE.ordinal()] = 14;
+                f49233a[h.HUE.ordinal()] = 14;
             } catch (NoSuchFieldError unused14) {
             }
             try {
-                f48823a[h.SATURATION.ordinal()] = 15;
+                f49233a[h.SATURATION.ordinal()] = 15;
             } catch (NoSuchFieldError unused15) {
             }
             try {
-                f48823a[h.COLOR.ordinal()] = 16;
+                f49233a[h.COLOR.ordinal()] = 16;
             } catch (NoSuchFieldError unused16) {
             }
             try {
-                f48823a[h.LUMINOSITY.ordinal()] = 17;
+                f49233a[h.LUMINOSITY.ordinal()] = 17;
             } catch (NoSuchFieldError unused17) {
             }
             try {
-                f48823a[h.HARD_MIX.ordinal()] = 18;
+                f49233a[h.HARD_MIX.ordinal()] = 18;
             } catch (NoSuchFieldError unused18) {
             }
         }
     }
 
     public r1.a d() {
-        int i10 = a.f48823a[ordinal()];
+        int i10 = a.f49233a[ordinal()];
         if (i10 != 2) {
             if (i10 != 3) {
                 if (i10 != 4) {

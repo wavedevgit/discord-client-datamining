@@ -6,20 +6,20 @@ import java.security.MessageDigest;
 final class a implements s {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ByteBuffer f24402a;
+    private final ByteBuffer f23994a;
 
     public a(ByteBuffer byteBuffer) {
-        this.f24402a = byteBuffer.slice();
+        this.f23994a = byteBuffer.slice();
     }
 
     @Override // fi.s
     public final void a(MessageDigest[] messageDigestArr, long j10, int i10) {
         ByteBuffer slice;
-        synchronized (this.f24402a) {
+        synchronized (this.f23994a) {
             int i11 = (int) j10;
-            this.f24402a.position(i11);
-            this.f24402a.limit(i11 + i10);
-            slice = this.f24402a.slice();
+            this.f23994a.position(i11);
+            this.f23994a.limit(i11 + i10);
+            slice = this.f23994a.slice();
         }
         for (MessageDigest messageDigest : messageDigestArr) {
             slice.position(0);
@@ -29,6 +29,6 @@ final class a implements s {
 
     @Override // fi.s
     public final long zza() {
-        return this.f24402a.capacity();
+        return this.f23994a.capacity();
     }
 }

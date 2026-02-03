@@ -43,11 +43,11 @@ public final class AttributeStyles_ESignatureTextStylesContainerJsonAdapter exte
         reader.r();
         AttributeStyles.ESignatureBaseTextStyle eSignatureBaseTextStyle = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 eSignatureBaseTextStyle = (AttributeStyles.ESignatureBaseTextStyle) this.nullableESignatureBaseTextStyleAdapter.fromJson(reader);
             }
         }
@@ -60,7 +60,7 @@ public final class AttributeStyles_ESignatureTextStylesContainerJsonAdapter exte
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (eSignatureTextStylesContainer != null) {
             writer.l();
-            writer.t0("dialogText");
+            writer.A0("dialogText");
             this.nullableESignatureBaseTextStyleAdapter.toJson(writer, eSignatureTextStylesContainer.getDialogText());
             writer.E();
             return;

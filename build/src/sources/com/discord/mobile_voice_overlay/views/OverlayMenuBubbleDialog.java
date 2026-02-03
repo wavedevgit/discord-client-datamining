@@ -65,7 +65,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
                 return unit;
             }
         };
@@ -73,7 +73,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
                 return unit;
             }
         };
@@ -81,7 +81,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
                 return unit;
             }
         };
@@ -89,7 +89,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
                 return unit;
             }
         };
@@ -97,7 +97,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
                 return unit;
             }
         };
@@ -105,7 +105,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
                 return unit;
             }
         };
@@ -181,19 +181,19 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
         MobileVoiceOverlay.Companion companion = MobileVoiceOverlay.Companion;
         Context context = overlayMenuBubbleDialog.getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        companion.startHeadlessTask(context, "GenerateInvite", w1.c.a(jr.v.a("channelId", String.valueOf(mobileVoiceOverlayData.m962getChannelIdo4g7jtM()))));
+        companion.startHeadlessTask(context, "GenerateInvite", w1.c.a(lr.v.a("channelId", String.valueOf(mobileVoiceOverlayData.m962getChannelIdo4g7jtM()))));
         MobileVoiceOverlayAssets overlayAssets = overlayMenuBubbleDialog.getOverlayAssets();
         if (overlayAssets != null) {
             Toast.makeText(overlayMenuBubbleDialog.getContext(), overlayAssets.getInviteLinkCopied(), 0).show();
         }
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setData$lambda$22(OverlayMenuBubbleDialog overlayMenuBubbleDialog) {
         overlayMenuBubbleDialog.getOnDialogClosed().invoke(overlayMenuBubbleDialog);
         overlayMenuBubbleDialog.onShowSelectorDialog.invoke();
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -204,13 +204,13 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
         Intent intent = new Intent("android.intent.action.VIEW", null, overlayMenuBubbleDialog.getContext(), ReactActivity.Registry.getMainActivity());
         intent.addCategory("android.intent.category.HOME");
         intent.addFlags(268435456);
-        Unit unit = Unit.f33074a;
+        Unit unit = Unit.f32464a;
         ActivityUtilities.startActivityAsync$default(activityUtilities, context, intent, null, 4, null);
         MobileVoiceOverlay.Companion companion = MobileVoiceOverlay.Companion;
         Context context2 = overlayMenuBubbleDialog.getContext();
         Intrinsics.checkNotNullExpressionValue(context2, "getContext(...)");
-        companion.startHeadlessTask(context2, "SelectChannel", w1.c.a(jr.v.a("channelId", String.valueOf(mobileVoiceOverlayData.m962getChannelIdo4g7jtM()))));
-        return Unit.f33074a;
+        companion.startHeadlessTask(context2, "SelectChannel", w1.c.a(lr.v.a("channelId", String.valueOf(mobileVoiceOverlayData.m962getChannelIdo4g7jtM()))));
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -219,7 +219,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
         Context context = overlayMenuBubbleDialog.getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
         MobileVoiceOverlay.Companion.startHeadlessTask$default(companion, context, "ToggleSelfMute", null, 4, null);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -227,8 +227,8 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
         MobileVoiceOverlay.Companion companion = MobileVoiceOverlay.Companion;
         Context context = overlayMenuBubbleDialog.getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        companion.startHeadlessTask(context, "Disconnect", w1.c.a(jr.v.a("channelId", String.valueOf(mobileVoiceOverlayData.m962getChannelIdo4g7jtM()))));
-        return Unit.f33074a;
+        companion.startHeadlessTask(context, "Disconnect", w1.c.a(lr.v.a("channelId", String.valueOf(mobileVoiceOverlayData.m962getChannelIdo4g7jtM()))));
+        return Unit.f32464a;
     }
 
     @Override // com.discord.mobile_voice_overlay.views.OverlayDialog
@@ -238,7 +238,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
         animatorSet.setStartDelay(getResources().getInteger(17694720));
         Animator loadAnimator = AnimatorInflater.loadAnimator(this.binding.overlayMenu.getContext(), R.animator.overlay_slide_down_fade_out);
         loadAnimator.setTarget(this.binding.overlayMenu);
-        Unit unit = Unit.f33074a;
+        Unit unit = Unit.f32464a;
         Animator loadAnimator2 = AnimatorInflater.loadAnimator(getContext(), R.animator.overlay_slide_up_fade_out);
         loadAnimator2.setTarget(this.binding.overlayHeader);
         animatorSet.playTogether(loadAnimator, loadAnimator2);
@@ -265,7 +265,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
         AnimatorSet animatorSet = new AnimatorSet();
         Animator loadAnimator = AnimatorInflater.loadAnimator(this.binding.overlayMenu.getContext(), R.animator.overlay_slide_up_fade_in);
         loadAnimator.setTarget(this.binding.overlayMenu);
-        Unit unit = Unit.f33074a;
+        Unit unit = Unit.f32464a;
         Animator loadAnimator2 = AnimatorInflater.loadAnimator(getContext(), R.animator.overlay_slide_down_fade_in);
         loadAnimator2.setTarget(this.binding.overlayHeader);
         animatorSet.playTogether(loadAnimator, loadAnimator2);
@@ -374,7 +374,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
                 return unit;
             }
         };
@@ -382,7 +382,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
                 return unit;
             }
         };
@@ -390,7 +390,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
                 return unit;
             }
         };
@@ -398,7 +398,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
                 return unit;
             }
         };
@@ -406,7 +406,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
                 return unit;
             }
         };
@@ -414,7 +414,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
                 return unit;
             }
         };
@@ -471,7 +471,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
                 return unit;
             }
         };
@@ -479,7 +479,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
                 return unit;
             }
         };
@@ -487,7 +487,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
                 return unit;
             }
         };
@@ -495,7 +495,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
                 return unit;
             }
         };
@@ -503,7 +503,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
                 return unit;
             }
         };
@@ -511,7 +511,7 @@ public final class OverlayMenuBubbleDialog extends OverlayDialog {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
                 return unit;
             }
         };

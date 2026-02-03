@@ -1,8 +1,8 @@
 package com.discord.media_player;
 
 import com.discord.media_player.MediaPlayerManager;
-import hs.i0;
 import java.lang.ref.WeakReference;
+import js.i0;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -31,7 +31,7 @@ public final class MediaPlayerManager$startProgressMonitor$1 extends k implement
 
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
-        Object f10 = pr.b.f();
+        Object f10 = rr.b.f();
         int i10 = this.label;
         if (i10 != 0 && i10 != 1) {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
@@ -43,7 +43,7 @@ public final class MediaPlayerManager$startProgressMonitor$1 extends k implement
                 MediaPlayerManager.INSTANCE.getPlaybackProgressFlow$media_player_release().setValue(new MediaPlayerManager.PlaybackProgress(mediaPlayer.getMediaSource(), mediaPlayer.currentPositionMs(), mediaPlayer.durationMs()));
                 this.label = 1;
             } else {
-                return Unit.f33074a;
+                return Unit.f32464a;
             }
         } while (i0.a(100L, this) != f10);
         return f10;
@@ -51,6 +51,6 @@ public final class MediaPlayerManager$startProgressMonitor$1 extends k implement
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaPlayerManager$startProgressMonitor$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        return ((MediaPlayerManager$startProgressMonitor$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
     }
 }

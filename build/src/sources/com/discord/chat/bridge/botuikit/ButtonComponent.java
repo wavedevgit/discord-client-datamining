@@ -1,11 +1,11 @@
 package com.discord.chat.bridge.botuikit;
 
-import bt.n2;
-import bt.v1;
 import com.discord.chat.bridge.botuikit.ActionComponentState;
 import com.discord.chat.bridge.botuikit.ButtonStyle;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
+import dt.n2;
+import dt.v1;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -14,7 +14,7 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.jetbrains.annotations.NotNull;
-@ys.m
+@at.m
 @Metadata(d1 = {"\u0000X\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u001e\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 A2\u00020\u0001:\u0002@ABm\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\b\b\u0002\u0010\f\u001a\u00020\r\u0012\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u000f\u0012\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u0005¢\u0006\u0004\b\u0012\u0010\u0013B{\b\u0010\u0012\u0006\u0010\u0014\u001a\u00020\u0003\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\u0006\u0010\f\u001a\u00020\r\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000f\u0012\b\u0010\u0010\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0015\u001a\u0004\u0018\u00010\u0016¢\u0006\u0004\b\u0012\u0010\u0017J\t\u0010(\u001a\u00020\u0003HÆ\u0003J\t\u0010)\u001a\u00020\u0005HÆ\u0003J\t\u0010*\u001a\u00020\u0007HÆ\u0003J\u000b\u0010+\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010,\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010-\u001a\u00020\u000bHÆ\u0003J\t\u0010.\u001a\u00020\rHÆ\u0003J\u000b\u0010/\u001a\u0004\u0018\u00010\u000fHÆ\u0003J\u000b\u00100\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u00101\u001a\u0004\u0018\u00010\u0005HÆ\u0003Jw\u00102\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\n\u001a\u00020\u000b2\b\b\u0002\u0010\f\u001a\u00020\r2\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u000f2\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u0005HÆ\u0001J\u0013\u00103\u001a\u00020\r2\b\u00104\u001a\u0004\u0018\u000105HÖ\u0003J\t\u00106\u001a\u00020\u0003HÖ\u0001J\t\u00107\u001a\u00020\u0005HÖ\u0001J%\u00108\u001a\u0002092\u0006\u0010:\u001a\u00020\u00002\u0006\u0010;\u001a\u00020<2\u0006\u0010=\u001a\u00020>H\u0001¢\u0006\u0002\b?R\u0014\u0010\u0002\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0019R\u0014\u0010\u0004\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u001bR\u0014\u0010\u0006\u001a\u00020\u0007X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u001dR\u0016\u0010\b\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u001bR\u0013\u0010\t\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010\u001bR\u0011\u0010\n\u001a\u00020\u000b¢\u0006\b\n\u0000\u001a\u0004\b \u0010!R\u0011\u0010\f\u001a\u00020\r¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010#R\u0013\u0010\u000e\u001a\u0004\u0018\u00010\u000f¢\u0006\b\n\u0000\u001a\u0004\b$\u0010%R\u0013\u0010\u0010\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b&\u0010\u001bR\u0013\u0010\u0011\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b'\u0010\u001b¨\u0006B"}, d2 = {"Lcom/discord/chat/bridge/botuikit/ButtonComponent;", "Lcom/discord/chat/bridge/botuikit/BaseActionComponent;", "type", "", StackTraceHelper.ID_KEY, "", "state", "Lcom/discord/chat/bridge/botuikit/ActionComponentState;", "customId", "label", "style", "Lcom/discord/chat/bridge/botuikit/ButtonStyle;", "disabled", "", "emoji", "Lcom/discord/chat/bridge/botuikit/ComponentEmoji;", "url", "skuId", "<init>", "(ILjava/lang/String;Lcom/discord/chat/bridge/botuikit/ActionComponentState;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/botuikit/ButtonStyle;ZLcom/discord/chat/bridge/botuikit/ComponentEmoji;Ljava/lang/String;Ljava/lang/String;)V", "seen0", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IILjava/lang/String;Lcom/discord/chat/bridge/botuikit/ActionComponentState;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/botuikit/ButtonStyle;ZLcom/discord/chat/bridge/botuikit/ComponentEmoji;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getType", "()I", "getId", "()Ljava/lang/String;", "getState", "()Lcom/discord/chat/bridge/botuikit/ActionComponentState;", "getCustomId", "getLabel", "getStyle", "()Lcom/discord/chat/bridge/botuikit/ButtonStyle;", "getDisabled", "()Z", "getEmoji", "()Lcom/discord/chat/bridge/botuikit/ComponentEmoji;", "getUrl", "getSkuId", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "component10", "copy", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class ButtonComponent extends BaseActionComponent {
@@ -26,7 +26,7 @@ public final class ButtonComponent extends BaseActionComponent {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9269id;
+    private final String f8237id;
     private final String label;
     private final String skuId;
     @NotNull
@@ -59,7 +59,7 @@ public final class ButtonComponent extends BaseActionComponent {
             v1.b(i10, 39, ButtonComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f9269id = str;
+        this.f8237id = str;
         this.state = actionComponentState;
         if ((i10 & 8) == 0) {
             this.customId = null;
@@ -99,7 +99,7 @@ public final class ButtonComponent extends BaseActionComponent {
             i10 = buttonComponent.type;
         }
         if ((i11 & 2) != 0) {
-            str = buttonComponent.f9269id;
+            str = buttonComponent.f8237id;
         }
         if ((i11 & 4) != 0) {
             actionComponentState = buttonComponent.state;
@@ -135,27 +135,27 @@ public final class ButtonComponent extends BaseActionComponent {
     }
 
     public static final /* synthetic */ void write$Self$chat_release(ButtonComponent buttonComponent, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        compositeEncoder.v(serialDescriptor, 0, buttonComponent.getType());
-        compositeEncoder.x(serialDescriptor, 1, buttonComponent.getId());
-        compositeEncoder.m(serialDescriptor, 2, ActionComponentState.Serializer.INSTANCE, buttonComponent.getState());
-        if (compositeEncoder.y(serialDescriptor, 3) || buttonComponent.getCustomId() != null) {
-            compositeEncoder.B(serialDescriptor, 3, n2.f7662a, buttonComponent.getCustomId());
+        compositeEncoder.w(serialDescriptor, 0, buttonComponent.getType());
+        compositeEncoder.y(serialDescriptor, 1, buttonComponent.getId());
+        compositeEncoder.D(serialDescriptor, 2, ActionComponentState.Serializer.INSTANCE, buttonComponent.getState());
+        if (compositeEncoder.z(serialDescriptor, 3) || buttonComponent.getCustomId() != null) {
+            compositeEncoder.s(serialDescriptor, 3, n2.f20978a, buttonComponent.getCustomId());
         }
-        if (compositeEncoder.y(serialDescriptor, 4) || buttonComponent.label != null) {
-            compositeEncoder.B(serialDescriptor, 4, n2.f7662a, buttonComponent.label);
+        if (compositeEncoder.z(serialDescriptor, 4) || buttonComponent.label != null) {
+            compositeEncoder.s(serialDescriptor, 4, n2.f20978a, buttonComponent.label);
         }
-        compositeEncoder.m(serialDescriptor, 5, ButtonStyle.Serializer.INSTANCE, buttonComponent.style);
-        if (compositeEncoder.y(serialDescriptor, 6) || buttonComponent.disabled) {
-            compositeEncoder.w(serialDescriptor, 6, buttonComponent.disabled);
+        compositeEncoder.D(serialDescriptor, 5, ButtonStyle.Serializer.INSTANCE, buttonComponent.style);
+        if (compositeEncoder.z(serialDescriptor, 6) || buttonComponent.disabled) {
+            compositeEncoder.x(serialDescriptor, 6, buttonComponent.disabled);
         }
-        if (compositeEncoder.y(serialDescriptor, 7) || buttonComponent.emoji != null) {
-            compositeEncoder.B(serialDescriptor, 7, ComponentEmoji$$serializer.INSTANCE, buttonComponent.emoji);
+        if (compositeEncoder.z(serialDescriptor, 7) || buttonComponent.emoji != null) {
+            compositeEncoder.s(serialDescriptor, 7, ComponentEmoji$$serializer.INSTANCE, buttonComponent.emoji);
         }
-        if (compositeEncoder.y(serialDescriptor, 8) || buttonComponent.url != null) {
-            compositeEncoder.B(serialDescriptor, 8, n2.f7662a, buttonComponent.url);
+        if (compositeEncoder.z(serialDescriptor, 8) || buttonComponent.url != null) {
+            compositeEncoder.s(serialDescriptor, 8, n2.f20978a, buttonComponent.url);
         }
-        if (compositeEncoder.y(serialDescriptor, 9) || buttonComponent.skuId != null) {
-            compositeEncoder.B(serialDescriptor, 9, n2.f7662a, buttonComponent.skuId);
+        if (compositeEncoder.z(serialDescriptor, 9) || buttonComponent.skuId != null) {
+            compositeEncoder.s(serialDescriptor, 9, n2.f20978a, buttonComponent.skuId);
         }
     }
 
@@ -169,7 +169,7 @@ public final class ButtonComponent extends BaseActionComponent {
 
     @NotNull
     public final String component2() {
-        return this.f9269id;
+        return this.f8237id;
     }
 
     @NotNull
@@ -216,7 +216,7 @@ public final class ButtonComponent extends BaseActionComponent {
         }
         if (obj instanceof ButtonComponent) {
             ButtonComponent buttonComponent = (ButtonComponent) obj;
-            return this.type == buttonComponent.type && Intrinsics.areEqual(this.f9269id, buttonComponent.f9269id) && this.state == buttonComponent.state && Intrinsics.areEqual(this.customId, buttonComponent.customId) && Intrinsics.areEqual(this.label, buttonComponent.label) && this.style == buttonComponent.style && this.disabled == buttonComponent.disabled && Intrinsics.areEqual(this.emoji, buttonComponent.emoji) && Intrinsics.areEqual(this.url, buttonComponent.url) && Intrinsics.areEqual(this.skuId, buttonComponent.skuId);
+            return this.type == buttonComponent.type && Intrinsics.areEqual(this.f8237id, buttonComponent.f8237id) && this.state == buttonComponent.state && Intrinsics.areEqual(this.customId, buttonComponent.customId) && Intrinsics.areEqual(this.label, buttonComponent.label) && this.style == buttonComponent.style && this.disabled == buttonComponent.disabled && Intrinsics.areEqual(this.emoji, buttonComponent.emoji) && Intrinsics.areEqual(this.url, buttonComponent.url) && Intrinsics.areEqual(this.skuId, buttonComponent.skuId);
         }
         return false;
     }
@@ -237,7 +237,7 @@ public final class ButtonComponent extends BaseActionComponent {
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f9269id;
+        return this.f8237id;
     }
 
     public final String getLabel() {
@@ -269,7 +269,7 @@ public final class ButtonComponent extends BaseActionComponent {
     }
 
     public int hashCode() {
-        int hashCode = ((((Integer.hashCode(this.type) * 31) + this.f9269id.hashCode()) * 31) + this.state.hashCode()) * 31;
+        int hashCode = ((((Integer.hashCode(this.type) * 31) + this.f8237id.hashCode()) * 31) + this.state.hashCode()) * 31;
         String str = this.customId;
         int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
         String str2 = this.label;
@@ -285,7 +285,7 @@ public final class ButtonComponent extends BaseActionComponent {
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f9269id;
+        String str = this.f8237id;
         ActionComponentState actionComponentState = this.state;
         String str2 = this.customId;
         String str3 = this.label;
@@ -308,7 +308,7 @@ public final class ButtonComponent extends BaseActionComponent {
         Intrinsics.checkNotNullParameter(state, "state");
         Intrinsics.checkNotNullParameter(style, "style");
         this.type = i10;
-        this.f9269id = id2;
+        this.f8237id = id2;
         this.state = state;
         this.customId = str;
         this.label = str2;

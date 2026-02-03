@@ -1,67 +1,88 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun29119: for (var _fun29119_ip = 0;;) switch (_fun29119_ip) {
-        case 0:
-            var5 = require;
-            var6 = dependencyMap;
-            var _closure1_slot0 = var5;
-            var _closure1_slot1 = var6;
-            var0 = 0;
-            var2 = var6[var0];
-            var0 = undefined;
-            var4 = var5.bind(var0)(var2);
-            var3 = '%Promise.resolve%';
-            var2 = true;
-            var4 = var4.bind(var0)(var3, var2);
-            var2 = var4;
-            if (!var2) {
-                _fun29119_ip = 66;
-                continue _fun29119
-            }
-        case 49:
-            var3 = 1;
-            var3 = var6[var3];
-            var3 = var5.bind(var0)(var3);
-            var2 = var3.bind(var0)(var4);
-        case 66:
-            var _closure1_slot2 = var2;
-            var2 = function arg0, arg1() {
-                _fun29120: for (var _fun29120_ip = 0;;) switch (_fun29120_ip) {
-                    case 0:
-                        var1 = _closure1_slot2;
-                        if (var1) {
-                            _fun29120_ip = 60;
-                            continue _fun29120
-                        }
-                    case 10:
-                        var3 = _closure1_slot0;
-                        var2 = _closure1_slot1;
-                        var1 = 2;
-                        var2 = var2[var1];
-                        var1 = undefined;
-                        var3 = var3.bind(var1)(var2);
-                        var1 = var3.prototype;
-                        var2 = Object.create(var1, {
-                            constructor: {
-                                value: var3
-                            }
-                        });
-                        var5 = 'This environment does not support Promises.';
-                        var6 = var2;
-                        var1 = new var6[var3](var5, var4);
-                        var1 = var1 instanceof Object ? var1 : var2;
-                        throw var1;
-                    case 60:
-                        var3 = _closure1_slot2;
-                        var2 = undefined;
-                        var1 = arg0;
-                        var0 = arg1;
-                        var0 = var3.bind(var2)(var1, var0);
-                        return var0;
+    var1 = require;
+    var _closure1_slot0 = var1;
+    var1 = dependencyMap;
+    var _closure1_slot1 = var1;
+    var1 = function arg0, arg1, arg2() {
+        _fun29187: for (var _fun29187_ip = 0;;) switch (_fun29187_ip) {
+            case 0:
+                var4 = arg0;
+                var3 = arg1;
+                var5 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var1 = 0;
+                var1 = var2[var1];
+                var2 = undefined;
+                var1 = var5.bind(var2)(var1);
+                var1 = var1.bind(var2)(var4);
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                if (var1) {
+                    _fun29187_ip = 86;
+                    continue _fun29187
                 }
-            };
-            var1 = arg4;
-            var1.exports = var2;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [517, 1403, 539]);
+            case 46:
+                var1 = 1;
+                var1 = var6[var1];
+                var8 = var5.bind(var2)(var1);
+                var1 = var8.prototype;
+                var7 = Object.create(var1, {
+                    constructor: {
+                        value: var8
+                    }
+                });
+                var11 = 'Assertion failed: Type(O) is not Object';
+                var12 = var7;
+                var1 = new var12[var8](var11, var10);
+                var1 = var1 instanceof Object ? var1 : var7;
+                throw var1;
+            case 86:
+                var1 = 2;
+                var1 = var6[var1];
+                var1 = var5.bind(var2)(var1);
+                var1 = var1.bind(var2)(var3);
+                if (var1) {
+                    _fun29187_ip = 154;
+                    continue _fun29187
+                }
+            case 106:
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var1 = 1;
+                var1 = var6[var1];
+                var6 = var5.bind(var2)(var1);
+                var1 = var6.prototype;
+                var5 = Object.create(var1, {
+                    constructor: {
+                        value: var6
+                    }
+                });
+                var11 = 'Assertion failed: P is not a Property Key';
+                var12 = var5;
+                var1 = new var12[var6](var11, var10);
+                var1 = var1 instanceof Object ? var1 : var5;
+                throw var1;
+            case 154:
+                var1 = {
+                    '[[Configurable]]': true,
+                    '[[Enumerable]]': true,
+                    '[[Value]]': null,
+                    '[[Writable]]': true
+                };
+                var5 = arg2;
+                var1['[[Value]]'] = var5;
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var0 = 3;
+                var0 = var6[var0];
+                var0 = var5.bind(var2)(var0);
+                var0 = var0.bind(var2)(var4, var3, var1);
+                return var0;
+        }
+    };
+    var0 = arg4;
+    var0.exports = var1;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3368, 518, 3415, 3431]);

@@ -1,18 +1,20 @@
 package zo;
+
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final d f55948a = new d();
-
-    private d() {
+public abstract class d {
+    public static final c a(Object obj, Object baseScreen, String compatibilityKey) {
+        Intrinsics.checkNotNullParameter(obj, "<this>");
+        Intrinsics.checkNotNullParameter(baseScreen, "baseScreen");
+        Intrinsics.checkNotNullParameter(compatibilityKey, "compatibilityKey");
+        return b(new an.c(obj, CollectionsKt.l()), baseScreen, compatibilityKey);
     }
 
-    public final Class a() {
-        try {
-            return Class.forName("com.withpersona.sdk2.inquiry.nfc.impl.NfcReaderActivity");
-        } catch (ClassNotFoundException unused) {
-            return null;
-        }
+    public static final c b(an.c cVar, Object baseScreen, String compatibilityKey) {
+        Intrinsics.checkNotNullParameter(cVar, "<this>");
+        Intrinsics.checkNotNullParameter(baseScreen, "baseScreen");
+        Intrinsics.checkNotNullParameter(compatibilityKey, "compatibilityKey");
+        return new c(baseScreen, CollectionsKt.e(cVar), compatibilityKey);
     }
 }

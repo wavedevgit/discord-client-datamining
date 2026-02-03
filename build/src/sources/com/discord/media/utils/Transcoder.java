@@ -52,7 +52,7 @@ public final class Transcoder {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit convertCompress$lambda$0(float f10) {
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public final void cancel(@NotNull String requestId) {
@@ -64,14 +64,14 @@ public final class Transcoder {
     }
 
     public final Object convertCompress(@NotNull final String str, @NotNull Context context, @NotNull DiscordVideoMediaSource discordVideoMediaSource, @NotNull final Uri uri, @NotNull EncodingConfig encodingConfig, @NotNull final Function1<? super Float, Unit> function1, @NotNull Continuation<? super Uri> continuation) {
-        final kotlinx.coroutines.e eVar = new kotlinx.coroutines.e(pr.b.c(continuation), 1);
+        final kotlinx.coroutines.e eVar = new kotlinx.coroutines.e(rr.b.c(continuation), 1);
         eVar.H();
         final MediaTransformer mediaTransformer = new MediaTransformer(context);
         cancelCallbacks.put(str, new Function0<Unit>() { // from class: com.discord.media.utils.Transcoder$convertCompress$3$1
             @Override // kotlin.jvm.functions.Function0
             public /* bridge */ /* synthetic */ Object invoke() {
                 m943invoke();
-                return Unit.f33074a;
+                return Unit.f32464a;
             }
 
             /* renamed from: invoke  reason: collision with other method in class */
@@ -127,7 +127,7 @@ public final class Transcoder {
                 Transcoder.cancelCallbacks.remove(str);
                 if (eVar.a()) {
                     CancellableContinuation cancellableContinuation = eVar;
-                    Result.a aVar = Result.f33071e;
+                    Result.a aVar = Result.f32461e;
                     cancellableContinuation.resumeWith(Result.b(kotlin.c.a(new CancellationException("Video transcoding was cancelled"))));
                 }
             }
@@ -139,7 +139,7 @@ public final class Transcoder {
                 function1.invoke(Float.valueOf(1.0f));
                 Transcoder.cancelCallbacks.remove(str);
                 CancellableContinuation cancellableContinuation = eVar;
-                Result.a aVar = Result.f33071e;
+                Result.a aVar = Result.f32461e;
                 cancellableContinuation.resumeWith(Result.b(uri));
             }
 
@@ -149,7 +149,7 @@ public final class Transcoder {
                 mediaTransformer.e();
                 Transcoder.cancelCallbacks.remove(str);
                 CancellableContinuation cancellableContinuation = eVar;
-                Result.a aVar = Result.f33071e;
+                Result.a aVar = Result.f32461e;
                 if (th2 == null) {
                     th2 = new Throwable("Unknown transcoding error");
                 }
@@ -172,7 +172,7 @@ public final class Transcoder {
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 invoke((Throwable) obj);
-                return Unit.f33074a;
+                return Unit.f32464a;
             }
 
             public final void invoke(Throwable th2) {
@@ -180,7 +180,7 @@ public final class Transcoder {
             }
         });
         Object B = eVar.B();
-        if (B == pr.b.f()) {
+        if (B == rr.b.f()) {
             g.c(continuation);
         }
         return B;

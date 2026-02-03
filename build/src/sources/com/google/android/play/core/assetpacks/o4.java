@@ -6,20 +6,20 @@ import android.content.Context;
 public final class o4 implements th.t {
 
     /* renamed from: a  reason: collision with root package name */
-    private final th.w f16585a;
+    private final th.w f15553a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final th.w f16586b;
+    private final th.w f15554b;
 
     public o4(th.w wVar, th.w wVar2) {
-        this.f16585a = wVar;
-        this.f16586b = wVar2;
+        this.f15553a = wVar;
+        this.f15554b = wVar2;
     }
 
     @Override // th.w
     public final /* bridge */ /* synthetic */ Object a() {
-        Object a10 = this.f16585a.a();
-        Context b10 = ((q4) this.f16586b).b();
+        Object a10 = this.f15553a.a();
+        Context b10 = ((q4) this.f15554b).b();
         k4 k4Var = (k4) a10;
         th.g.a(b10.getPackageManager(), new ComponentName(b10.getPackageName(), "com.google.android.play.core.assetpacks.AssetPackExtractionService"), 4);
         th.g.a(b10.getPackageManager(), new ComponentName(b10.getPackageName(), "com.google.android.play.core.assetpacks.ExtractionForegroundService"), 4);

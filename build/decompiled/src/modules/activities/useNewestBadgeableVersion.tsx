@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/useNewestBadgeableVersion.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun111561: for (var _fun111561_ip = 0;;) switch (_fun111561_ip) {
+        _fun111621: for (var _fun111621_ip = 0;;) switch (_fun111621_ip) {
             case 0:
                 var1 = arg0;
                 var4 = var1.surface;
@@ -42,8 +42,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.skipFetchingShelf;
                 var3 = undefined;
                 if (!(var2 === var3)) {
-                    _fun111561_ip = 31;
-                    continue _fun111561
+                    _fun111621_ip = 31;
+                    continue _fun111621
                 }
             case 29:
                 var2 = true;
@@ -73,15 +73,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6[0] = var8;
                 var6[1] = var2;
                 var2 = function() { // Environment: var0
-                    _fun111563: for (var _fun111563_ip = 0;;) switch (_fun111563_ip) {
+                    _fun111623: for (var _fun111623_ip = 0;;) switch (_fun111623_ip) {
                         case 0:
                             var0 = _closure2_slot2;
                             var6 = var0.lastCheckedForBadgeableActivities;
                             var3 = null;
                             var0 = var3 == var6;
                             if (var0) {
-                                _fun111563_ip = 92;
-                                continue _fun111563
+                                _fun111623_ip = 92;
+                                continue _fun111623
                             }
                         case 22:
                             var2 = global;
@@ -106,16 +106,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var4 < var2;
                         case 92:
                             if (!var0) {
-                                _fun111563_ip = 102;
-                                continue _fun111563
+                                _fun111623_ip = 102;
+                                continue _fun111623
                             }
                         case 95:
                             var1 = _closure2_slot1;
                             var0 = !var1;
                         case 102:
                             if (!var0) {
-                                _fun111563_ip = 147;
-                                continue _fun111563
+                                _fun111623_ip = 147;
+                                continue _fun111623
                             }
                         case 105:
                             var2 = _closure1_slot0;
@@ -160,4 +160,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useNewestBadgeableVersion = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1371, 566, 7907, 12596, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1371, 566, 7912, 12607, 2]);

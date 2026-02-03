@@ -4,7 +4,7 @@ import android.content.Context;
 import androidx.work.CoroutineWorker;
 import androidx.work.c;
 import com.google.common.util.concurrent.ListenableFuture;
-import hs.m0;
+import js.m0;
 import k4.l;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -26,59 +26,59 @@ import org.jetbrains.annotations.NotNull;
 public abstract class CoroutineWorker extends c {
 
     /* renamed from: p  reason: collision with root package name */
-    private final CompletableJob f5483p;
+    private final CompletableJob f5452p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final androidx.work.impl.utils.futures.c f5484q;
+    private final androidx.work.impl.utils.futures.c f5453q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final CoroutineDispatcher f5485r;
+    private final CoroutineDispatcher f5454r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static final class a extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f5486d;
+        Object f5455d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f5487e;
+        int f5456e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ l f5488i;
+        final /* synthetic */ l f5457i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ CoroutineWorker f5489o;
+        final /* synthetic */ CoroutineWorker f5458o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(l lVar, CoroutineWorker coroutineWorker, Continuation continuation) {
             super(2, continuation);
-            this.f5488i = lVar;
-            this.f5489o = coroutineWorker;
+            this.f5457i = lVar;
+            this.f5458o = coroutineWorker;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new a(this.f5488i, this.f5489o, continuation);
+            return new a(this.f5457i, this.f5458o, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             l lVar;
-            Object f10 = pr.b.f();
-            int i10 = this.f5487e;
+            Object f10 = rr.b.f();
+            int i10 = this.f5456e;
             if (i10 != 0) {
                 if (i10 == 1) {
-                    lVar = (l) this.f5486d;
+                    lVar = (l) this.f5455d;
                     kotlin.c.b(obj);
                 } else {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
             } else {
                 kotlin.c.b(obj);
-                l lVar2 = this.f5488i;
-                CoroutineWorker coroutineWorker = this.f5489o;
-                this.f5486d = lVar2;
-                this.f5487e = 1;
+                l lVar2 = this.f5457i;
+                CoroutineWorker coroutineWorker = this.f5458o;
+                this.f5455d = lVar2;
+                this.f5456e = 1;
                 Object t10 = coroutineWorker.t(this);
                 if (t10 == f10) {
                     return f10;
@@ -87,12 +87,12 @@ public abstract class CoroutineWorker extends c {
                 obj = t10;
             }
             lVar.c(obj);
-            return Unit.f33074a;
+            return Unit.f32464a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
         }
     }
 
@@ -100,7 +100,7 @@ public abstract class CoroutineWorker extends c {
     static final class b extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f5490d;
+        int f5459d;
 
         b(Continuation continuation) {
             super(2, continuation);
@@ -113,8 +113,8 @@ public abstract class CoroutineWorker extends c {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            Object f10 = pr.b.f();
-            int i10 = this.f5490d;
+            Object f10 = rr.b.f();
+            int i10 = this.f5459d;
             try {
                 if (i10 != 0) {
                     if (i10 == 1) {
@@ -125,7 +125,7 @@ public abstract class CoroutineWorker extends c {
                 } else {
                     kotlin.c.b(obj);
                     CoroutineWorker coroutineWorker = CoroutineWorker.this;
-                    this.f5490d = 1;
+                    this.f5459d = 1;
                     obj = coroutineWorker.r(this);
                     if (obj == f10) {
                         return f10;
@@ -135,12 +135,12 @@ public abstract class CoroutineWorker extends c {
             } catch (Throwable th2) {
                 CoroutineWorker.this.v().q(th2);
             }
-            return Unit.f33074a;
+            return Unit.f32464a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
         }
     }
 
@@ -151,24 +151,24 @@ public abstract class CoroutineWorker extends c {
         Intrinsics.checkNotNullParameter(appContext, "appContext");
         Intrinsics.checkNotNullParameter(params, "params");
         b10 = a0.b(null, 1, null);
-        this.f5483p = b10;
+        this.f5452p = b10;
         androidx.work.impl.utils.futures.c t10 = androidx.work.impl.utils.futures.c.t();
         Intrinsics.checkNotNullExpressionValue(t10, "create()");
-        this.f5484q = t10;
+        this.f5453q = t10;
         t10.a(new Runnable() { // from class: k4.e
             @Override // java.lang.Runnable
             public final void run() {
                 CoroutineWorker.q(CoroutineWorker.this);
             }
         }, h().c());
-        this.f5485r = m0.a();
+        this.f5454r = m0.a();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void q(CoroutineWorker this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
-        if (this$0.f5484q.isCancelled()) {
-            Job.a.a(this$0.f5483p, null, 1, null);
+        if (this$0.f5453q.isCancelled()) {
+            Job.a.a(this$0.f5452p, null, 1, null);
         }
     }
 
@@ -180,28 +180,28 @@ public abstract class CoroutineWorker extends c {
     public final ListenableFuture d() {
         CompletableJob b10;
         b10 = a0.b(null, 1, null);
-        CoroutineScope a10 = i.a(s().Z0(b10));
+        CoroutineScope a10 = i.a(s().V0(b10));
         l lVar = new l(b10, null, 2, null);
-        hs.i.d(a10, null, null, new a(lVar, this, null), 3, null);
+        js.i.d(a10, null, null, new a(lVar, this, null), 3, null);
         return lVar;
     }
 
     @Override // androidx.work.c
     public final void l() {
         super.l();
-        this.f5484q.cancel(false);
+        this.f5453q.cancel(false);
     }
 
     @Override // androidx.work.c
     public final ListenableFuture n() {
-        hs.i.d(i.a(s().Z0(this.f5483p)), null, null, new b(null), 3, null);
-        return this.f5484q;
+        js.i.d(i.a(s().V0(this.f5452p)), null, null, new b(null), 3, null);
+        return this.f5453q;
     }
 
     public abstract Object r(Continuation continuation);
 
     public CoroutineDispatcher s() {
-        return this.f5485r;
+        return this.f5454r;
     }
 
     public Object t(Continuation continuation) {
@@ -209,6 +209,6 @@ public abstract class CoroutineWorker extends c {
     }
 
     public final androidx.work.impl.utils.futures.c v() {
-        return this.f5484q;
+        return this.f5453q;
     }
 }

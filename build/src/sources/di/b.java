@@ -11,10 +11,10 @@ import java.util.Set;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final f f21743a;
+    private final f f20602a;
 
     public b(f fVar) {
-        this.f21743a = fVar;
+        this.f20602a = fVar;
     }
 
     public static final int c(AssetManager assetManager, File file) {
@@ -68,7 +68,7 @@ public final class b {
             if (r2 == 0) goto L3c
             java.lang.Object r2 = r6.next()     // Catch: java.lang.Throwable -> L38 java.lang.Exception -> L3a
             java.lang.String r2 = (java.lang.String) r2     // Catch: java.lang.Throwable -> L38 java.lang.Exception -> L3a
-            di.f r3 = r4.f21743a     // Catch: java.lang.Throwable -> L38 java.lang.Exception -> L3a
+            di.f r3 = r4.f20602a     // Catch: java.lang.Throwable -> L38 java.lang.Exception -> L3a
             java.io.File r2 = r3.g(r2)     // Catch: java.lang.Throwable -> L38 java.lang.Exception -> L3a
             r1.add(r2)     // Catch: java.lang.Throwable -> L38 java.lang.Exception -> L3a
             goto L22

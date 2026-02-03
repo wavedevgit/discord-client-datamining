@@ -9,10 +9,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/modules/haven',
+        'httpServerLocation': '/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3RlbnVyZV9yZXdhcmQ=',
         'scales': null,
-        'hash': '585699a24beb220c748d63d4a9ee4515',
-        'name': 'Haven.compiled.messages',
+        'hash': 'b418d386e2effaf37de7ececf839262f',
+        'name': 'sv-SE.messages.b418d386e2effaf37de7ececf839262f.compiled.messages',
         'type': 'jsona'
     };
     var4 = [1];

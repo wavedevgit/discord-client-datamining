@@ -8,8 +8,8 @@ import com.facebook.common.references.CloseableReference;
 import com.facebook.drawee.generic.GenericDraweeHierarchy;
 import com.facebook.drawee.interfaces.DraweeController;
 import com.facebook.drawee.interfaces.DraweeHierarchy;
-import hs.j1;
-import hs.m0;
+import js.j1;
+import js.m0;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -46,11 +46,11 @@ public final class TiledDraweeController implements DraweeController {
         this.tileMode = tileMode;
         CompletableJob b10 = j1.b(null, 1, null);
         this.job = b10;
-        this.scope = i.a(b10.Z0(m0.c().f2()));
+        this.scope = i.a(b10.V0(m0.c().f2()));
     }
 
     private final void load() {
-        hs.i.d(this.scope, null, null, new TiledDraweeController$load$1(this, null), 3, null);
+        js.i.d(this.scope, null, null, new TiledDraweeController$load$1(this, null), 3, null);
     }
 
     @Override // com.facebook.drawee.interfaces.DraweeController
@@ -81,7 +81,7 @@ public final class TiledDraweeController implements DraweeController {
         if (tiledDraweeController != null) {
             str = tiledDraweeController.url;
         }
-        if (Intrinsics.areEqual(str, this.url) && (closeableReference = this.myImageReference) != null && closeableReference.J0()) {
+        if (Intrinsics.areEqual(str, this.url) && (closeableReference = this.myImageReference) != null && closeableReference.E0()) {
             return true;
         }
         return false;

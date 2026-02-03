@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var8.ClydeIcon;
     var1.IconComponent = var8;
     var7 = function() {
-        _fun85943: for (var _fun85943_ip = 0;;) switch (_fun85943_ip) {
+        _fun86053: for (var _fun86053_ip = 0;;) switch (_fun86053_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var8 = _closure1_slot2;
@@ -92,8 +92,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = '';
                 var2 = ' (';
                 if (var0) {
-                    _fun85943_ip = 198;
-                    continue _fun85943
+                    _fun86053_ip = 198;
+                    continue _fun86053
                 }
             case 171:
                 var10 = ') - ';
@@ -103,8 +103,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var1;
                 var9 = var6;
                 var0 = var14[var4](var13, var12, var11, var10, var9, var8);
-                _fun85943_ip = 218;
-                continue _fun85943;
+                _fun86053_ip = 218;
+                continue _fun86053;
             case 198:
                 var10 = ')';
                 var14 = var3;
@@ -132,4 +132,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1594, 1234, 11072, 8977, 7591, 1348, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1594, 1234, 11091, 8996, 7596, 1348, 2]);

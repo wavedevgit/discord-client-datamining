@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = require;
     var0 = undefined;
     var1 = var1.bind(var0)(var3);
-    var1 = var1.BottomSheetBackgroundContainer;
-    var2.BottomSheetBackgroundContainer = var1;
+    var1 = var1.BottomSheetHostingContainer;
+    var2.BottomSheetHostingContainer = var1;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, [5057]);

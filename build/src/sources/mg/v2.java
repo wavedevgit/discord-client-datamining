@@ -4,25 +4,25 @@ package mg;
 public final class v2 implements ui.g {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f38704a = false;
+    private boolean f38501a = false;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f38705b = false;
+    private boolean f38502b = false;
 
     /* renamed from: c  reason: collision with root package name */
-    private ui.c f38706c;
+    private ui.c f38503c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final r2 f38707d;
+    private final r2 f38504d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public v2(r2 r2Var) {
-        this.f38707d = r2Var;
+        this.f38504d = r2Var;
     }
 
     private final void d() {
-        if (!this.f38704a) {
-            this.f38704a = true;
+        if (!this.f38501a) {
+            this.f38501a = true;
             return;
         }
         throw new ui.b("Cannot encode a second value in the ValueEncoderContext");
@@ -31,21 +31,21 @@ public final class v2 implements ui.g {
     @Override // ui.g
     public final ui.g a(String str) {
         d();
-        this.f38707d.f(this.f38706c, str, this.f38705b);
+        this.f38504d.f(this.f38503c, str, this.f38502b);
         return this;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void b(ui.c cVar, boolean z10) {
-        this.f38704a = false;
-        this.f38706c = cVar;
-        this.f38705b = z10;
+        this.f38501a = false;
+        this.f38503c = cVar;
+        this.f38502b = z10;
     }
 
     @Override // ui.g
     public final ui.g c(boolean z10) {
         d();
-        this.f38707d.g(this.f38706c, z10 ? 1 : 0, this.f38705b);
+        this.f38504d.g(this.f38503c, z10 ? 1 : 0, this.f38502b);
         return this;
     }
 }

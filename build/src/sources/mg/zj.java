@@ -3,52 +3,52 @@ package mg;
 final class zj extends ek {
 
     /* renamed from: a  reason: collision with root package name */
-    private String f39053a;
+    private String f38850a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f39054b;
+    private boolean f38851b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f39055c;
+    private int f38852c;
 
     /* renamed from: d  reason: collision with root package name */
-    private byte f39056d;
+    private byte f38853d;
 
     @Override // mg.ek
     public final ek a(boolean z10) {
-        this.f39054b = true;
-        this.f39056d = (byte) (1 | this.f39056d);
+        this.f38851b = true;
+        this.f38853d = (byte) (1 | this.f38853d);
         return this;
     }
 
     @Override // mg.ek
     public final ek b(int i10) {
-        this.f39055c = 1;
-        this.f39056d = (byte) (this.f39056d | 2);
+        this.f38852c = 1;
+        this.f38853d = (byte) (this.f38853d | 2);
         return this;
     }
 
     @Override // mg.ek
     public final fk c() {
         String str;
-        if (this.f39056d == 3 && (str = this.f39053a) != null) {
-            return new bk(str, this.f39054b, this.f39055c, null);
+        if (this.f38853d == 3 && (str = this.f38850a) != null) {
+            return new bk(str, this.f38851b, this.f38852c, null);
         }
         StringBuilder sb2 = new StringBuilder();
-        if (this.f39053a == null) {
+        if (this.f38850a == null) {
             sb2.append(" libraryName");
         }
-        if ((this.f39056d & 1) == 0) {
+        if ((this.f38853d & 1) == 0) {
             sb2.append(" enableFirelog");
         }
-        if ((this.f39056d & 2) == 0) {
+        if ((this.f38853d & 2) == 0) {
             sb2.append(" firelogEventType");
         }
         throw new IllegalStateException("Missing required properties:".concat(sb2.toString()));
     }
 
     public final ek d(String str) {
-        this.f39053a = str;
+        this.f38850a = str;
         return this;
     }
 }

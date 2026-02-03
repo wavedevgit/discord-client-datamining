@@ -5,10 +5,10 @@ import org.jetbrains.annotations.NotNull;
 public abstract class SimplePlatform {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f34962a;
+    private final String f34352a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final TargetPlatformVersion f34963b;
+    private final TargetPlatformVersion f34353b;
 
     @NotNull
     public String getTargetName() {
@@ -17,15 +17,15 @@ public abstract class SimplePlatform {
 
     @NotNull
     public TargetPlatformVersion getTargetPlatformVersion() {
-        return this.f34963b;
+        return this.f34353b;
     }
 
     @NotNull
     public String toString() {
         String targetName = getTargetName();
         if (targetName.length() > 0) {
-            return this.f34962a + " (" + targetName + ')';
+            return this.f34352a + " (" + targetName + ')';
         }
-        return this.f34962a;
+        return this.f34352a;
     }
 }

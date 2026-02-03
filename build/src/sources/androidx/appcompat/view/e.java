@@ -29,41 +29,41 @@ import org.xmlpull.v1.XmlPullParserException;
 public class e extends MenuInflater {
 
     /* renamed from: e  reason: collision with root package name */
-    static final Class[] f1207e;
+    static final Class[] f1176e;
 
     /* renamed from: f  reason: collision with root package name */
-    static final Class[] f1208f;
+    static final Class[] f1177f;
 
     /* renamed from: a  reason: collision with root package name */
-    final Object[] f1209a;
+    final Object[] f1178a;
 
     /* renamed from: b  reason: collision with root package name */
-    final Object[] f1210b;
+    final Object[] f1179b;
 
     /* renamed from: c  reason: collision with root package name */
-    Context f1211c;
+    Context f1180c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Object f1212d;
+    private Object f1181d;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a implements MenuItem.OnMenuItemClickListener {
 
         /* renamed from: c  reason: collision with root package name */
-        private static final Class[] f1213c = {MenuItem.class};
+        private static final Class[] f1182c = {MenuItem.class};
 
         /* renamed from: a  reason: collision with root package name */
-        private Object f1214a;
+        private Object f1183a;
 
         /* renamed from: b  reason: collision with root package name */
-        private Method f1215b;
+        private Method f1184b;
 
         public a(Object obj, String str) {
-            this.f1214a = obj;
+            this.f1183a = obj;
             Class<?> cls = obj.getClass();
             try {
-                this.f1215b = cls.getMethod(str, f1213c);
+                this.f1184b = cls.getMethod(str, f1182c);
             } catch (Exception e10) {
                 InflateException inflateException = new InflateException("Couldn't resolve menu item onClick handler " + str + " in class " + cls.getName());
                 inflateException.initCause(e10);
@@ -74,10 +74,10 @@ public class e extends MenuInflater {
         @Override // android.view.MenuItem.OnMenuItemClickListener
         public boolean onMenuItemClick(MenuItem menuItem) {
             try {
-                if (this.f1215b.getReturnType() == Boolean.TYPE) {
-                    return ((Boolean) this.f1215b.invoke(this.f1214a, menuItem)).booleanValue();
+                if (this.f1184b.getReturnType() == Boolean.TYPE) {
+                    return ((Boolean) this.f1184b.invoke(this.f1183a, menuItem)).booleanValue();
                 }
-                this.f1215b.invoke(this.f1214a, menuItem);
+                this.f1184b.invoke(this.f1183a, menuItem);
                 return true;
             } catch (Exception e10) {
                 throw new RuntimeException(e10);
@@ -95,85 +95,85 @@ public class e extends MenuInflater {
         private PorterDuff.Mode E = null;
 
         /* renamed from: a  reason: collision with root package name */
-        private Menu f1216a;
+        private Menu f1185a;
 
         /* renamed from: b  reason: collision with root package name */
-        private int f1217b;
+        private int f1186b;
 
         /* renamed from: c  reason: collision with root package name */
-        private int f1218c;
+        private int f1187c;
 
         /* renamed from: d  reason: collision with root package name */
-        private int f1219d;
+        private int f1188d;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f1220e;
+        private int f1189e;
 
         /* renamed from: f  reason: collision with root package name */
-        private boolean f1221f;
+        private boolean f1190f;
 
         /* renamed from: g  reason: collision with root package name */
-        private boolean f1222g;
+        private boolean f1191g;
 
         /* renamed from: h  reason: collision with root package name */
-        private boolean f1223h;
+        private boolean f1192h;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f1224i;
+        private int f1193i;
 
         /* renamed from: j  reason: collision with root package name */
-        private int f1225j;
+        private int f1194j;
 
         /* renamed from: k  reason: collision with root package name */
-        private CharSequence f1226k;
+        private CharSequence f1195k;
 
         /* renamed from: l  reason: collision with root package name */
-        private CharSequence f1227l;
+        private CharSequence f1196l;
 
         /* renamed from: m  reason: collision with root package name */
-        private int f1228m;
+        private int f1197m;
 
         /* renamed from: n  reason: collision with root package name */
-        private char f1229n;
+        private char f1198n;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f1230o;
+        private int f1199o;
 
         /* renamed from: p  reason: collision with root package name */
-        private char f1231p;
+        private char f1200p;
 
         /* renamed from: q  reason: collision with root package name */
-        private int f1232q;
+        private int f1201q;
 
         /* renamed from: r  reason: collision with root package name */
-        private int f1233r;
+        private int f1202r;
 
         /* renamed from: s  reason: collision with root package name */
-        private boolean f1234s;
+        private boolean f1203s;
 
         /* renamed from: t  reason: collision with root package name */
-        private boolean f1235t;
+        private boolean f1204t;
 
         /* renamed from: u  reason: collision with root package name */
-        private boolean f1236u;
+        private boolean f1205u;
 
         /* renamed from: v  reason: collision with root package name */
-        private int f1237v;
+        private int f1206v;
 
         /* renamed from: w  reason: collision with root package name */
-        private int f1238w;
+        private int f1207w;
 
         /* renamed from: x  reason: collision with root package name */
-        private String f1239x;
+        private String f1208x;
 
         /* renamed from: y  reason: collision with root package name */
-        private String f1240y;
+        private String f1209y;
 
         /* renamed from: z  reason: collision with root package name */
-        private String f1241z;
+        private String f1210z;
 
         public b(Menu menu) {
-            this.f1216a = menu;
+            this.f1185a = menu;
             h();
         }
 
@@ -186,7 +186,7 @@ public class e extends MenuInflater {
 
         private Object e(String str, Class[] clsArr, Object[] objArr) {
             try {
-                Constructor<?> constructor = Class.forName(str, false, e.this.f1211c.getClassLoader()).getConstructor(clsArr);
+                Constructor<?> constructor = Class.forName(str, false, e.this.f1180c.getClassLoader()).getConstructor(clsArr);
                 constructor.setAccessible(true);
                 return constructor.newInstance(objArr);
             } catch (Exception e10) {
@@ -197,38 +197,38 @@ public class e extends MenuInflater {
 
         private void i(MenuItem menuItem) {
             boolean z10;
-            MenuItem enabled = menuItem.setChecked(this.f1234s).setVisible(this.f1235t).setEnabled(this.f1236u);
+            MenuItem enabled = menuItem.setChecked(this.f1203s).setVisible(this.f1204t).setEnabled(this.f1205u);
             boolean z11 = false;
-            if (this.f1233r >= 1) {
+            if (this.f1202r >= 1) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            enabled.setCheckable(z10).setTitleCondensed(this.f1227l).setIcon(this.f1228m);
-            int i10 = this.f1237v;
+            enabled.setCheckable(z10).setTitleCondensed(this.f1196l).setIcon(this.f1197m);
+            int i10 = this.f1206v;
             if (i10 >= 0) {
                 menuItem.setShowAsAction(i10);
             }
-            if (this.f1241z != null) {
-                if (!e.this.f1211c.isRestricted()) {
-                    menuItem.setOnMenuItemClickListener(new a(e.this.b(), this.f1241z));
+            if (this.f1210z != null) {
+                if (!e.this.f1180c.isRestricted()) {
+                    menuItem.setOnMenuItemClickListener(new a(e.this.b(), this.f1210z));
                 } else {
                     throw new IllegalStateException("The android:onClick attribute cannot be used within a restricted context");
                 }
             }
-            if (this.f1233r >= 2) {
+            if (this.f1202r >= 2) {
                 if (menuItem instanceof androidx.appcompat.view.menu.g) {
                     ((androidx.appcompat.view.menu.g) menuItem).t(true);
                 } else if (menuItem instanceof k.c) {
                     ((k.c) menuItem).h(true);
                 }
             }
-            String str = this.f1239x;
+            String str = this.f1208x;
             if (str != null) {
-                menuItem.setActionView((View) e(str, e.f1207e, e.this.f1209a));
+                menuItem.setActionView((View) e(str, e.f1176e, e.this.f1178a));
                 z11 = true;
             }
-            int i11 = this.f1238w;
+            int i11 = this.f1207w;
             if (i11 > 0) {
                 if (!z11) {
                     menuItem.setActionView(i11);
@@ -242,8 +242,8 @@ public class e extends MenuInflater {
             }
             q.c(menuItem, this.B);
             q.g(menuItem, this.C);
-            q.b(menuItem, this.f1229n, this.f1230o);
-            q.f(menuItem, this.f1231p, this.f1232q);
+            q.b(menuItem, this.f1198n, this.f1199o);
+            q.f(menuItem, this.f1200p, this.f1201q);
             PorterDuff.Mode mode = this.E;
             if (mode != null) {
                 q.e(menuItem, mode);
@@ -255,65 +255,65 @@ public class e extends MenuInflater {
         }
 
         public void a() {
-            this.f1223h = true;
-            i(this.f1216a.add(this.f1217b, this.f1224i, this.f1225j, this.f1226k));
+            this.f1192h = true;
+            i(this.f1185a.add(this.f1186b, this.f1193i, this.f1194j, this.f1195k));
         }
 
         public SubMenu b() {
-            this.f1223h = true;
-            SubMenu addSubMenu = this.f1216a.addSubMenu(this.f1217b, this.f1224i, this.f1225j, this.f1226k);
+            this.f1192h = true;
+            SubMenu addSubMenu = this.f1185a.addSubMenu(this.f1186b, this.f1193i, this.f1194j, this.f1195k);
             i(addSubMenu.getItem());
             return addSubMenu;
         }
 
         public boolean d() {
-            return this.f1223h;
+            return this.f1192h;
         }
 
         public void f(AttributeSet attributeSet) {
-            TypedArray obtainStyledAttributes = e.this.f1211c.obtainStyledAttributes(attributeSet, j.f23490o1);
-            this.f1217b = obtainStyledAttributes.getResourceId(j.f23500q1, 0);
-            this.f1218c = obtainStyledAttributes.getInt(j.f23510s1, 0);
-            this.f1219d = obtainStyledAttributes.getInt(j.f23515t1, 0);
-            this.f1220e = obtainStyledAttributes.getInt(j.f23520u1, 0);
-            this.f1221f = obtainStyledAttributes.getBoolean(j.f23505r1, true);
-            this.f1222g = obtainStyledAttributes.getBoolean(j.f23495p1, true);
+            TypedArray obtainStyledAttributes = e.this.f1180c.obtainStyledAttributes(attributeSet, j.f23082o1);
+            this.f1186b = obtainStyledAttributes.getResourceId(j.f23092q1, 0);
+            this.f1187c = obtainStyledAttributes.getInt(j.f23102s1, 0);
+            this.f1188d = obtainStyledAttributes.getInt(j.f23107t1, 0);
+            this.f1189e = obtainStyledAttributes.getInt(j.f23112u1, 0);
+            this.f1190f = obtainStyledAttributes.getBoolean(j.f23097r1, true);
+            this.f1191g = obtainStyledAttributes.getBoolean(j.f23087p1, true);
             obtainStyledAttributes.recycle();
         }
 
         public void g(AttributeSet attributeSet) {
             boolean z10;
-            v0 u10 = v0.u(e.this.f1211c, attributeSet, j.f23525v1);
-            this.f1224i = u10.n(j.f23540y1, 0);
-            this.f1225j = (u10.k(j.B1, this.f1218c) & (-65536)) | (u10.k(j.C1, this.f1219d) & 65535);
-            this.f1226k = u10.p(j.D1);
-            this.f1227l = u10.p(j.E1);
-            this.f1228m = u10.n(j.f23530w1, 0);
-            this.f1229n = c(u10.o(j.F1));
-            this.f1230o = u10.k(j.M1, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT);
-            this.f1231p = c(u10.o(j.G1));
-            this.f1232q = u10.k(j.Q1, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT);
+            v0 u10 = v0.u(e.this.f1180c, attributeSet, j.f23117v1);
+            this.f1193i = u10.n(j.f23132y1, 0);
+            this.f1194j = (u10.k(j.B1, this.f1187c) & (-65536)) | (u10.k(j.C1, this.f1188d) & 65535);
+            this.f1195k = u10.p(j.D1);
+            this.f1196l = u10.p(j.E1);
+            this.f1197m = u10.n(j.f23122w1, 0);
+            this.f1198n = c(u10.o(j.F1));
+            this.f1199o = u10.k(j.M1, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT);
+            this.f1200p = c(u10.o(j.G1));
+            this.f1201q = u10.k(j.Q1, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT);
             if (u10.s(j.H1)) {
-                this.f1233r = u10.a(j.H1, false) ? 1 : 0;
+                this.f1202r = u10.a(j.H1, false) ? 1 : 0;
             } else {
-                this.f1233r = this.f1220e;
+                this.f1202r = this.f1189e;
             }
-            this.f1234s = u10.a(j.f23545z1, false);
-            this.f1235t = u10.a(j.A1, this.f1221f);
-            this.f1236u = u10.a(j.f23535x1, this.f1222g);
-            this.f1237v = u10.k(j.R1, -1);
-            this.f1241z = u10.o(j.I1);
-            this.f1238w = u10.n(j.J1, 0);
-            this.f1239x = u10.o(j.L1);
+            this.f1203s = u10.a(j.f23137z1, false);
+            this.f1204t = u10.a(j.A1, this.f1190f);
+            this.f1205u = u10.a(j.f23127x1, this.f1191g);
+            this.f1206v = u10.k(j.R1, -1);
+            this.f1210z = u10.o(j.I1);
+            this.f1207w = u10.n(j.J1, 0);
+            this.f1208x = u10.o(j.L1);
             String o10 = u10.o(j.K1);
-            this.f1240y = o10;
+            this.f1209y = o10;
             if (o10 != null) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            if (z10 && this.f1238w == 0 && this.f1239x == null) {
-                this.A = (androidx.core.view.b) e(o10, e.f1208f, e.this.f1210b);
+            if (z10 && this.f1207w == 0 && this.f1208x == null) {
+                this.A = (androidx.core.view.b) e(o10, e.f1177f, e.this.f1179b);
             } else {
                 if (z10) {
                     Log.w("SupportMenuInflater", "Ignoring attribute 'actionProviderClass'. Action view already specified.");
@@ -333,31 +333,31 @@ public class e extends MenuInflater {
                 this.D = null;
             }
             u10.x();
-            this.f1223h = false;
+            this.f1192h = false;
         }
 
         public void h() {
-            this.f1217b = 0;
-            this.f1218c = 0;
-            this.f1219d = 0;
-            this.f1220e = 0;
-            this.f1221f = true;
-            this.f1222g = true;
+            this.f1186b = 0;
+            this.f1187c = 0;
+            this.f1188d = 0;
+            this.f1189e = 0;
+            this.f1190f = true;
+            this.f1191g = true;
         }
     }
 
     static {
         Class[] clsArr = {Context.class};
-        f1207e = clsArr;
-        f1208f = clsArr;
+        f1176e = clsArr;
+        f1177f = clsArr;
     }
 
     public e(Context context) {
         super(context);
-        this.f1211c = context;
+        this.f1180c = context;
         Object[] objArr = {context};
-        this.f1209a = objArr;
-        this.f1210b = objArr;
+        this.f1178a = objArr;
+        this.f1179b = objArr;
     }
 
     private Object a(Object obj) {
@@ -588,10 +588,10 @@ public class e extends MenuInflater {
     }
 
     Object b() {
-        if (this.f1212d == null) {
-            this.f1212d = a(this.f1211c);
+        if (this.f1181d == null) {
+            this.f1181d = a(this.f1180c);
         }
-        return this.f1212d;
+        return this.f1181d;
     }
 
     @Override // android.view.MenuInflater
@@ -604,7 +604,7 @@ public class e extends MenuInflater {
         boolean z10 = false;
         try {
             try {
-                xmlResourceParser = this.f1211c.getResources().getLayout(i10);
+                xmlResourceParser = this.f1180c.getResources().getLayout(i10);
                 AttributeSet asAttributeSet = Xml.asAttributeSet(xmlResourceParser);
                 if (menu instanceof androidx.appcompat.view.menu.e) {
                     androidx.appcompat.view.menu.e eVar = (androidx.appcompat.view.menu.e) menu;

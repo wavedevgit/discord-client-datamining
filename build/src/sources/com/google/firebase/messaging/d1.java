@@ -10,29 +10,29 @@ import java.util.concurrent.TimeUnit;
 abstract class d1 {
 
     /* renamed from: a  reason: collision with root package name */
-    static final long f17102a = TimeUnit.MINUTES.toMillis(1);
+    static final long f16070a = TimeUnit.MINUTES.toMillis(1);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Object f17103b = new Object();
+    private static final Object f16071b = new Object();
 
     /* renamed from: c  reason: collision with root package name */
-    private static vg.a f17104c;
+    private static vg.a f16072c;
 
     private static void b(Context context) {
-        if (f17104c == null) {
+        if (f16072c == null) {
             vg.a aVar = new vg.a(context, 1, "wake:com.google.firebase.iid.WakeLockHolder");
-            f17104c = aVar;
+            f16072c = aVar;
             aVar.d(true);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void c(Intent intent) {
-        synchronized (f17103b) {
+        synchronized (f16071b) {
             try {
-                if (f17104c != null && d(intent)) {
+                if (f16072c != null && d(intent)) {
                     f(intent, false);
-                    f17104c.c();
+                    f16072c.c();
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -46,13 +46,13 @@ abstract class d1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void e(Context context, i1 i1Var, final Intent intent) {
-        synchronized (f17103b) {
+        synchronized (f16071b) {
             try {
                 b(context);
                 boolean d10 = d(intent);
                 f(intent, true);
                 if (!d10) {
-                    f17104c.a(f17102a);
+                    f16072c.a(f16070a);
                 }
                 i1Var.c(intent).addOnCompleteListener(new OnCompleteListener() { // from class: com.google.firebase.messaging.c1
                     @Override // com.google.android.gms.tasks.OnCompleteListener
@@ -72,7 +72,7 @@ abstract class d1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static ComponentName g(Context context, Intent intent) {
-        synchronized (f17103b) {
+        synchronized (f16071b) {
             try {
                 b(context);
                 boolean d10 = d(intent);
@@ -82,7 +82,7 @@ abstract class d1 {
                     return null;
                 }
                 if (!d10) {
-                    f17104c.a(f17102a);
+                    f16072c.a(f16070a);
                 }
                 return startService;
             } catch (Throwable th2) {

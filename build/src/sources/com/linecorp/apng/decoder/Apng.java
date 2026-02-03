@@ -20,31 +20,31 @@ public final class Apng {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f17819a;
+    private final int f16787a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f17820b;
+    private final int f16788b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f17821c;
+    private final int f16789c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f17822d;
+    private final int f16790d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int[] f17823e;
+    private final int[] f16791e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f17824f;
+    private final int f16792f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final long f17825g;
+    private final long f16793g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final Bitmap f17826h;
+    private final Bitmap f16794h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f17827i;
+    private final int f16795i;
 
     @Metadata(d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0006\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u0017\u0010\u0007\u001a\u00020\u00062\u0006\u0010\u0005\u001a\u00020\u0004H\u0002¢\u0006\u0004\b\u0007\u0010\bJ\u0015\u0010\f\u001a\u00020\u000b2\u0006\u0010\n\u001a\u00020\t¢\u0006\u0004\b\f\u0010\rJ\u0015\u0010\u000f\u001a\u00020\u000e2\u0006\u0010\n\u001a\u00020\t¢\u0006\u0004\b\u000f\u0010\u0010J\u0015\u0010\u0012\u001a\u00020\u000b2\u0006\u0010\u0011\u001a\u00020\u000b¢\u0006\u0004\b\u0012\u0010\u0013¨\u0006\u0014"}, d2 = {"Lcom/linecorp/apng/decoder/Apng$Companion;", "", "<init>", "()V", "", "resultCode", "", "a", "(I)V", "Ljava/io/InputStream;", "stream", "Lcom/linecorp/apng/decoder/Apng;", "decode", "(Ljava/io/InputStream;)Lcom/linecorp/apng/decoder/Apng;", "", "isApng", "(Ljava/io/InputStream;)Z", "apng", "copy", "(Lcom/linecorp/apng/decoder/Apng;)Lcom/linecorp/apng/decoder/Apng;", "apng-drawable_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -66,7 +66,7 @@ public final class Apng {
             DecodeResult decodeResult = new DecodeResult();
             Trace.beginSection("Apng#copy");
             try {
-                int copy = ApngDecoderJni.copy(apng.f17819a, decodeResult);
+                int copy = ApngDecoderJni.copy(apng.f16787a, decodeResult);
                 Trace.endSection();
                 a(copy);
                 try {
@@ -173,20 +173,20 @@ public final class Apng {
 
     public Apng(int i10, int i11, int i12, int i13, @NotNull int[] frameDurations, int i14, long j10) {
         Intrinsics.checkNotNullParameter(frameDurations, "frameDurations");
-        this.f17819a = i10;
-        this.f17820b = i11;
-        this.f17821c = i12;
-        this.f17822d = i13;
-        this.f17823e = frameDurations;
-        this.f17824f = i14;
-        this.f17825g = j10;
+        this.f16787a = i10;
+        this.f16788b = i11;
+        this.f16789c = i12;
+        this.f16790d = i13;
+        this.f16791e = frameDurations;
+        this.f16792f = i14;
+        this.f16793g = j10;
         Bitmap createBitmap = Bitmap.createBitmap(i11, i12, Bitmap.Config.ARGB_8888);
         Intrinsics.checkNotNullExpressionValue(createBitmap, "createBitmap(...)");
-        this.f17826h = createBitmap;
+        this.f16794h = createBitmap;
         Trace.beginSection("Apng#draw");
         ApngDecoderJni.draw(i10, 0, createBitmap);
         Trace.endSection();
-        this.f17827i = i.G0(frameDurations);
+        this.f16795i = i.G0(frameDurations);
     }
 
     @NotNull
@@ -199,9 +199,9 @@ public final class Apng {
         Intrinsics.checkNotNullParameter(dst, "dst");
         Intrinsics.checkNotNullParameter(paint, "paint");
         Trace.beginSection("Apng#draw");
-        ApngDecoderJni.draw(this.f17819a, i10, this.f17826h);
+        ApngDecoderJni.draw(this.f16787a, i10, this.f16794h);
         Trace.endSection();
-        canvas.drawBitmap(this.f17826h, rect, dst, paint);
+        canvas.drawBitmap(this.f16794h, rect, dst, paint);
     }
 
     public final void finalize() {
@@ -209,50 +209,50 @@ public final class Apng {
     }
 
     public final long getAllFrameByteCount() {
-        return this.f17825g;
+        return this.f16793g;
     }
 
     public final int getByteCount() {
-        return this.f17826h.getAllocationByteCount();
+        return this.f16794h.getAllocationByteCount();
     }
 
     @NotNull
     public final Bitmap.Config getConfig() {
-        Bitmap.Config config = this.f17826h.getConfig();
+        Bitmap.Config config = this.f16794h.getConfig();
         Intrinsics.checkNotNullExpressionValue(config, "getConfig(...)");
         return config;
     }
 
     public final int getDuration() {
-        return this.f17827i;
+        return this.f16795i;
     }
 
     public final int getFrameCount() {
-        return this.f17822d;
+        return this.f16790d;
     }
 
     @NotNull
     public final int[] getFrameDurations() {
-        return this.f17823e;
+        return this.f16791e;
     }
 
     public final int getHeight() {
-        return this.f17821c;
+        return this.f16789c;
     }
 
     public final int getLoopCount() {
-        return this.f17824f;
+        return this.f16792f;
     }
 
     public final int getWidth() {
-        return this.f17820b;
+        return this.f16788b;
     }
 
     public final boolean isRecycled() {
-        return this.f17826h.isRecycled();
+        return this.f16794h.isRecycled();
     }
 
     public final void recycle() {
-        ApngDecoderJni.recycle(this.f17819a);
+        ApngDecoderJni.recycle(this.f16787a);
     }
 }

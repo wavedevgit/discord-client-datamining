@@ -1,6 +1,6 @@
 package com.discord.chat.presentation.message.view.voicemessages;
 
-import hs.m0;
+import js.m0;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -42,7 +42,7 @@ public final class AudioWaveView$recalculateSampleData$1 extends kotlin.coroutin
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            pr.b.f();
+            rr.b.f();
             if (this.label == 0) {
                 kotlin.c.b(obj);
                 return Sampler.INSTANCE.downSample(this.$originalSampleData, this.$numChunks);
@@ -52,7 +52,7 @@ public final class AudioWaveView$recalculateSampleData$1 extends kotlin.coroutin
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super byte[]> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
         }
     }
 
@@ -73,7 +73,7 @@ public final class AudioWaveView$recalculateSampleData$1 extends kotlin.coroutin
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
         AudioWaveView audioWaveView;
-        Object f10 = pr.b.f();
+        Object f10 = rr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -89,7 +89,7 @@ public final class AudioWaveView$recalculateSampleData$1 extends kotlin.coroutin
             AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.$originalSampleData, this.$numChunks, null);
             this.L$0 = audioWaveView2;
             this.label = 1;
-            Object g10 = hs.g.g(a10, anonymousClass1, this);
+            Object g10 = js.g.g(a10, anonymousClass1, this);
             if (g10 == f10) {
                 return f10;
             }
@@ -98,11 +98,11 @@ public final class AudioWaveView$recalculateSampleData$1 extends kotlin.coroutin
         }
         audioWaveView.setDownSampleData((byte[]) obj);
         this.this$0.invalidate();
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((AudioWaveView$recalculateSampleData$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        return ((AudioWaveView$recalculateSampleData$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
     }
 }

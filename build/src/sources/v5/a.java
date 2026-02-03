@@ -6,7 +6,7 @@ import w5.c;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f50797a = c.a.a("k", "x", "y");
+    private static final c.a f51125a = c.a.a("k", "x", "y");
 
     public static r5.e a(w5.c cVar, l5.i iVar) {
         ArrayList arrayList = new ArrayList();
@@ -31,7 +31,7 @@ public abstract class a {
         boolean z10 = false;
         r5.b bVar2 = null;
         while (cVar.n() != c.b.END_OBJECT) {
-            int B = cVar.B(f50797a);
+            int B = cVar.B(f51125a);
             if (B != 0) {
                 if (B != 1) {
                     if (B != 2) {

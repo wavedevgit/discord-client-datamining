@@ -1,9 +1,9 @@
 package com.discord.chat.bridge.structurabletext;
 
-import at.e;
-import at.j;
-import bt.f;
 import com.discord.chat.bridge.contentnode.ContentNode;
+import ct.e;
+import ct.j;
+import dt.f;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
@@ -18,12 +18,12 @@ public final class AnnotatedStructurableTextSerializer implements KSerializer {
     @NotNull
     public static final AnnotatedStructurableTextSerializer INSTANCE = new AnnotatedStructurableTextSerializer();
     @NotNull
-    private static final SerialDescriptor descriptor = j.b("AnnotatedStructurableText", e.i.f6078a);
+    private static final SerialDescriptor descriptor = j.b("AnnotatedStructurableText", e.i.f19842a);
 
     private AnnotatedStructurableTextSerializer() {
     }
 
-    @Override // kotlinx.serialization.KSerializer, ys.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, at.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public SerialDescriptor getDescriptor() {
         return descriptor;
@@ -36,7 +36,7 @@ public final class AnnotatedStructurableTextSerializer implements KSerializer {
         return new AnnotatedStructurableText((List) decoder.G(new f(ContentNode.Companion.serializer())));
     }
 
-    @Override // ys.o
+    @Override // at.o
     public void serialize(@NotNull Encoder encoder, @NotNull AnnotatedStructurableText value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");

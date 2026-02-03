@@ -1,131 +1,63 @@
 package dv;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class c {
-    public static int a(CharSequence charSequence, int i10) {
-        char charAt;
-        if (i10 >= charSequence.length()) {
-            return -1;
-        }
-        if (charSequence.charAt(i10) == '<') {
-            while (true) {
-                i10++;
-                if (i10 >= charSequence.length() || (charAt = charSequence.charAt(i10)) == '\n' || charAt == '<') {
-                    break;
-                } else if (charAt != '>') {
-                    if (charAt == '\\') {
-                        int i11 = i10 + 1;
-                        if (d.g(charSequence, i11)) {
-                            i10 = i11;
-                        }
-                    }
-                } else {
-                    return i10 + 1;
+public class c extends iv.a {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final gv.b f21090a = new gv.b();
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static class a extends iv.b {
+        @Override // iv.e
+        public iv.f a(iv.h hVar, iv.g gVar) {
+            int c10 = hVar.c();
+            if (c.k(hVar, c10)) {
+                int column = hVar.getColumn() + hVar.a();
+                int i10 = column + 1;
+                if (fv.d.i(hVar.getLine(), c10 + 1)) {
+                    i10 = column + 2;
                 }
+                return iv.f.d(new c()).a(i10);
             }
-            return -1;
+            return iv.f.c();
         }
-        return b(charSequence, i10);
     }
 
-    private static int b(CharSequence charSequence, int i10) {
-        int i11 = 0;
-        int i12 = i10;
-        while (i12 < charSequence.length()) {
-            char charAt = charSequence.charAt(i12);
-            if (charAt != 0 && charAt != ' ') {
-                if (charAt != '\\') {
-                    if (charAt != '(') {
-                        if (charAt != ')') {
-                            if (Character.isISOControl(charAt)) {
-                                if (i12 == i10) {
-                                    return -1;
-                                }
-                            }
-                        } else if (i11 != 0) {
-                            i11--;
-                        }
-                    } else {
-                        i11++;
-                        if (i11 > 32) {
-                            return -1;
-                        }
-                    }
-                } else {
-                    int i13 = i12 + 1;
-                    if (d.g(charSequence, i13)) {
-                        i12 = i13;
-                    }
-                }
-                i12++;
-            } else if (i12 == i10) {
-                return -1;
-            }
-            return i12;
+    /* JADX INFO: Access modifiers changed from: private */
+    public static boolean k(iv.h hVar, int i10) {
+        CharSequence line = hVar.getLine();
+        if (hVar.a() < fv.d.f24825a && i10 < line.length() && line.charAt(i10) == '>') {
+            return true;
         }
-        return charSequence.length();
+        return false;
     }
 
-    public static int c(CharSequence charSequence, int i10) {
-        while (i10 < charSequence.length()) {
-            switch (charSequence.charAt(i10)) {
-                case '[':
-                    return -1;
-                case '\\':
-                    int i11 = i10 + 1;
-                    if (!d.g(charSequence, i11)) {
-                        break;
-                    } else {
-                        i10 = i11;
-                        break;
-                    }
-                case ']':
-                    return i10;
-            }
-            i10++;
-        }
-        return charSequence.length();
+    @Override // iv.a, iv.d
+    public boolean b() {
+        return true;
     }
 
-    public static int d(CharSequence charSequence, int i10) {
-        if (i10 >= charSequence.length()) {
-            return -1;
-        }
-        char charAt = charSequence.charAt(i10);
-        char c10 = '\"';
-        if (charAt != '\"') {
-            c10 = '\'';
-            if (charAt != '\'') {
-                if (charAt != '(') {
-                    return -1;
-                }
-                c10 = ')';
+    @Override // iv.d
+    public iv.c g(iv.h hVar) {
+        int c10 = hVar.c();
+        if (k(hVar, c10)) {
+            int column = hVar.getColumn() + hVar.a();
+            int i10 = column + 1;
+            if (fv.d.i(hVar.getLine(), c10 + 1)) {
+                i10 = column + 2;
             }
+            return iv.c.a(i10);
         }
-        int e10 = e(charSequence, i10 + 1, c10);
-        if (e10 == -1 || e10 >= charSequence.length() || charSequence.charAt(e10) != c10) {
-            return -1;
-        }
-        return e10 + 1;
+        return iv.c.d();
     }
 
-    public static int e(CharSequence charSequence, int i10, char c10) {
-        while (i10 < charSequence.length()) {
-            char charAt = charSequence.charAt(i10);
-            if (charAt == '\\') {
-                int i11 = i10 + 1;
-                if (d.g(charSequence, i11)) {
-                    i10 = i11;
-                    i10++;
-                }
-            }
-            if (charAt == c10) {
-                return i10;
-            }
-            if (c10 == ')' && charAt == '(') {
-                return -1;
-            }
-            i10++;
-        }
-        return charSequence.length();
+    @Override // iv.a, iv.d
+    public boolean h(gv.a aVar) {
+        return true;
+    }
+
+    @Override // iv.d
+    /* renamed from: j */
+    public gv.b d() {
+        return this.f21090a;
     }
 }

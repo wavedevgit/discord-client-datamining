@@ -10,33 +10,33 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-import mn.c;
+import on.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class MMKV implements SharedPreferences, SharedPreferences.Editor {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final EnumMap f19036a;
+    private static final EnumMap f18018a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final EnumMap f19037b;
+    private static final EnumMap f18019b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final mn.b[] f19038c;
+    private static final on.b[] f18020c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Set f19039d;
+    private static final Set f18021d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static String f19040e;
+    private static String f18022e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static boolean f19041f;
+    private static boolean f18023f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final HashMap f19042g;
+    private static final HashMap f18024g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static boolean f19043h;
+    private static boolean f18025h;
     private final long nativeHandle;
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -44,29 +44,29 @@ public class MMKV implements SharedPreferences, SharedPreferences.Editor {
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f19044a;
+        static final /* synthetic */ int[] f18026a;
 
         static {
-            int[] iArr = new int[mn.b.values().length];
-            f19044a = iArr;
+            int[] iArr = new int[on.b.values().length];
+            f18026a = iArr;
             try {
-                iArr[mn.b.LevelDebug.ordinal()] = 1;
+                iArr[on.b.LevelDebug.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f19044a[mn.b.LevelWarning.ordinal()] = 2;
+                f18026a[on.b.LevelWarning.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f19044a[mn.b.LevelError.ordinal()] = 3;
+                f18026a[on.b.LevelError.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f19044a[mn.b.LevelNone.ordinal()] = 4;
+                f18026a[on.b.LevelNone.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f19044a[mn.b.LevelInfo.ordinal()] = 5;
+                f18026a[on.b.LevelInfo.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
         }
@@ -79,27 +79,27 @@ public class MMKV implements SharedPreferences, SharedPreferences.Editor {
 
     static {
         EnumMap enumMap = new EnumMap(c.class);
-        f19036a = enumMap;
+        f18018a = enumMap;
         enumMap.put((EnumMap) c.OnErrorDiscard, (c) 0);
         enumMap.put((EnumMap) c.OnErrorRecover, (c) 1);
-        EnumMap enumMap2 = new EnumMap(mn.b.class);
-        f19037b = enumMap2;
-        mn.b bVar = mn.b.LevelDebug;
-        enumMap2.put((EnumMap) bVar, (mn.b) 0);
-        mn.b bVar2 = mn.b.LevelInfo;
-        enumMap2.put((EnumMap) bVar2, (mn.b) 1);
-        mn.b bVar3 = mn.b.LevelWarning;
-        enumMap2.put((EnumMap) bVar3, (mn.b) 2);
-        mn.b bVar4 = mn.b.LevelError;
-        enumMap2.put((EnumMap) bVar4, (mn.b) 3);
-        mn.b bVar5 = mn.b.LevelNone;
-        enumMap2.put((EnumMap) bVar5, (mn.b) 4);
-        f19038c = new mn.b[]{bVar, bVar2, bVar3, bVar4, bVar5};
-        f19039d = new HashSet();
-        f19040e = null;
-        f19041f = true;
-        f19042g = new HashMap();
-        f19043h = false;
+        EnumMap enumMap2 = new EnumMap(on.b.class);
+        f18019b = enumMap2;
+        on.b bVar = on.b.LevelDebug;
+        enumMap2.put((EnumMap) bVar, (on.b) 0);
+        on.b bVar2 = on.b.LevelInfo;
+        enumMap2.put((EnumMap) bVar2, (on.b) 1);
+        on.b bVar3 = on.b.LevelWarning;
+        enumMap2.put((EnumMap) bVar3, (on.b) 2);
+        on.b bVar4 = on.b.LevelError;
+        enumMap2.put((EnumMap) bVar4, (on.b) 3);
+        on.b bVar5 = on.b.LevelNone;
+        enumMap2.put((EnumMap) bVar5, (on.b) 4);
+        f18020c = new on.b[]{bVar, bVar2, bVar3, bVar4, bVar5};
+        f18021d = new HashSet();
+        f18022e = null;
+        f18023f = true;
+        f18024g = new HashMap();
+        f18025h = false;
     }
 
     private MMKV(long j10) {
@@ -109,10 +109,10 @@ public class MMKV implements SharedPreferences, SharedPreferences.Editor {
     private static MMKV a(long j10, String str, int i10) {
         String str2;
         if (j10 != 0) {
-            if (!f19041f) {
+            if (!f18023f) {
                 return new MMKV(j10);
             }
-            Set set = f19039d;
+            Set set = f18021d;
             synchronized (set) {
                 try {
                     if (!set.contains(Long.valueOf(j10))) {
@@ -202,15 +202,15 @@ public class MMKV implements SharedPreferences, SharedPreferences.Editor {
     private native boolean encodeString_2(long j10, String str, String str2, int i10);
 
     public static MMKV f() {
-        if (f19040e != null) {
+        if (f18022e != null) {
             return a(getDefaultMMKV(1, null), "DefaultMMKV", 1);
         }
         throw new IllegalStateException("You should Call MMKV.initialize() first.");
     }
 
     public static void g() {
-        synchronized (f19039d) {
-            f19041f = false;
+        synchronized (f18021d) {
+            f18023f = false;
         }
         Log.i("MMKV", "Disable checkProcessMode()");
     }
@@ -223,20 +223,20 @@ public class MMKV implements SharedPreferences, SharedPreferences.Editor {
 
     private static native long getMMKVWithIDAndSize(String str, int i10, int i11, String str2);
 
-    private static String h(String str, String str2, b bVar, mn.b bVar2, boolean z10) {
+    private static String h(String str, String str2, b bVar, on.b bVar2, boolean z10) {
         if (bVar != null) {
             bVar.a("mmkv");
         } else {
             System.loadLibrary("mmkv");
         }
         jniInitialize(str, str2, n(bVar2), z10);
-        f19040e = str;
+        f18022e = str;
         return str;
     }
 
     public static void i() {
-        synchronized (f19039d) {
-            f19041f = true;
+        synchronized (f18021d) {
+            f18023f = true;
         }
         Log.i("MMKV", "Enable checkProcessMode()");
     }
@@ -254,20 +254,20 @@ public class MMKV implements SharedPreferences, SharedPreferences.Editor {
     private static native void jniInitialize(String str, String str2, int i10, boolean z10);
 
     public static String l(Context context) {
-        return m(context, context.getFilesDir().getAbsolutePath() + "/mmkv", null, mn.b.LevelInfo, null);
+        return m(context, context.getFilesDir().getAbsolutePath() + "/mmkv", null, on.b.LevelInfo, null);
     }
 
-    public static String m(Context context, String str, b bVar, mn.b bVar2, mn.a aVar) {
+    public static String m(Context context, String str, b bVar, on.b bVar2, on.a aVar) {
         if ((context.getApplicationInfo().flags & 2) == 0) {
             g();
         } else {
             i();
         }
-        return h(str, context.getCacheDir().getAbsolutePath(), bVar, bVar2, f19043h);
+        return h(str, context.getCacheDir().getAbsolutePath(), bVar, bVar2, f18025h);
     }
 
     private static void mmkvLogImp(int i10, String str, int i11, String str2, String str3) {
-        int i12 = a.f19044a[f19038c[i10].ordinal()];
+        int i12 = a.f18026a[f18020c[i10].ordinal()];
         if (i12 != 1) {
             if (i12 != 2) {
                 if (i12 != 3) {
@@ -286,8 +286,8 @@ public class MMKV implements SharedPreferences, SharedPreferences.Editor {
         Log.d("MMKV", str3);
     }
 
-    private static int n(mn.b bVar) {
-        int i10 = a.f19044a[bVar.ordinal()];
+    private static int n(on.b bVar) {
+        int i10 = a.f18026a[bVar.ordinal()];
         if (i10 != 1) {
             int i11 = 2;
             if (i10 != 2) {
@@ -314,9 +314,9 @@ public class MMKV implements SharedPreferences, SharedPreferences.Editor {
 
     private static int onMMKVCRCCheckFail(String str) {
         c cVar = c.OnErrorDiscard;
-        mn.b bVar = mn.b.LevelInfo;
+        on.b bVar = on.b.LevelInfo;
         p(bVar, "Recover strategic for " + str + " is " + cVar);
-        Integer num = (Integer) f19036a.get(cVar);
+        Integer num = (Integer) f18018a.get(cVar);
         if (num == null) {
             return 0;
         }
@@ -325,20 +325,20 @@ public class MMKV implements SharedPreferences, SharedPreferences.Editor {
 
     private static int onMMKVFileLengthError(String str) {
         c cVar = c.OnErrorDiscard;
-        mn.b bVar = mn.b.LevelInfo;
+        on.b bVar = on.b.LevelInfo;
         p(bVar, "Recover strategic for " + str + " is " + cVar);
-        Integer num = (Integer) f19036a.get(cVar);
+        Integer num = (Integer) f18018a.get(cVar);
         if (num == null) {
             return 0;
         }
         return num.intValue();
     }
 
-    private static void p(mn.b bVar, String str) {
+    private static void p(on.b bVar, String str) {
         int intValue;
         StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
         StackTraceElement stackTraceElement = stackTrace[stackTrace.length - 1];
-        Integer num = (Integer) f19037b.get(bVar);
+        Integer num = (Integer) f18019b.get(bVar);
         if (num == null) {
             intValue = 0;
         } else {

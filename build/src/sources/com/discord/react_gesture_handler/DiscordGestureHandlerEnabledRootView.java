@@ -89,7 +89,7 @@ public final class DiscordGestureHandlerEnabledRootView extends RNGestureHandler
             if (nullable$react_gesture_handler_release != null && (map = nullable$react_gesture_handler_release.supplementalMotionEventReceivedCallbacks) != null) {
                 map.put(callback, Boolean.TRUE);
             }
-            return Unit.f33074a;
+            return Unit.f32464a;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -101,7 +101,7 @@ public final class DiscordGestureHandlerEnabledRootView extends RNGestureHandler
             if (nullable$react_gesture_handler_release != null && (map = nullable$react_gesture_handler_release.supplementalMotionEventReceivedCallbacks) != null) {
                 map.put(callback, Boolean.FALSE);
             }
-            return Unit.f33074a;
+            return Unit.f32464a;
         }
 
         public final DiscordGestureHandlerEnabledRootView getNullable$react_gesture_handler_release(@NotNull View view) {

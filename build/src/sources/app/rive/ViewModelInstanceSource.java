@@ -18,39 +18,39 @@ public interface ViewModelInstanceSource {
         }
 
         /* renamed from: box-impl  reason: not valid java name */
-        public static final /* synthetic */ Blank m60boximpl(ViewModelSource viewModelSource) {
+        public static final /* synthetic */ Blank m58boximpl(ViewModelSource viewModelSource) {
             return new Blank(viewModelSource);
         }
 
         @NotNull
         /* renamed from: constructor-impl  reason: not valid java name */
-        public static ViewModelSource m61constructorimpl(@NotNull ViewModelSource vmSource) {
+        public static ViewModelSource m59constructorimpl(@NotNull ViewModelSource vmSource) {
             Intrinsics.checkNotNullParameter(vmSource, "vmSource");
             return vmSource;
         }
 
         /* renamed from: equals-impl  reason: not valid java name */
-        public static boolean m62equalsimpl(ViewModelSource viewModelSource, Object obj) {
-            return (obj instanceof Blank) && Intrinsics.areEqual(viewModelSource, ((Blank) obj).m66unboximpl());
+        public static boolean m60equalsimpl(ViewModelSource viewModelSource, Object obj) {
+            return (obj instanceof Blank) && Intrinsics.areEqual(viewModelSource, ((Blank) obj).m64unboximpl());
         }
 
         /* renamed from: equals-impl0  reason: not valid java name */
-        public static final boolean m63equalsimpl0(ViewModelSource viewModelSource, ViewModelSource viewModelSource2) {
+        public static final boolean m61equalsimpl0(ViewModelSource viewModelSource, ViewModelSource viewModelSource2) {
             return Intrinsics.areEqual(viewModelSource, viewModelSource2);
         }
 
         /* renamed from: hashCode-impl  reason: not valid java name */
-        public static int m64hashCodeimpl(ViewModelSource viewModelSource) {
+        public static int m62hashCodeimpl(ViewModelSource viewModelSource) {
             return viewModelSource.hashCode();
         }
 
         /* renamed from: toString-impl  reason: not valid java name */
-        public static String m65toStringimpl(ViewModelSource viewModelSource) {
+        public static String m63toStringimpl(ViewModelSource viewModelSource) {
             return "Blank(vmSource=" + viewModelSource + ")";
         }
 
         public boolean equals(Object obj) {
-            return m62equalsimpl(this.vmSource, obj);
+            return m60equalsimpl(this.vmSource, obj);
         }
 
         @NotNull
@@ -59,15 +59,15 @@ public interface ViewModelInstanceSource {
         }
 
         public int hashCode() {
-            return m64hashCodeimpl(this.vmSource);
+            return m62hashCodeimpl(this.vmSource);
         }
 
         public String toString() {
-            return m65toStringimpl(this.vmSource);
+            return m63toStringimpl(this.vmSource);
         }
 
         /* renamed from: unbox-impl  reason: not valid java name */
-        public final /* synthetic */ ViewModelSource m66unboximpl() {
+        public final /* synthetic */ ViewModelSource m64unboximpl() {
             return this.vmSource;
         }
     }
@@ -83,39 +83,39 @@ public interface ViewModelInstanceSource {
         }
 
         /* renamed from: box-impl  reason: not valid java name */
-        public static final /* synthetic */ Default m67boximpl(ViewModelSource viewModelSource) {
+        public static final /* synthetic */ Default m65boximpl(ViewModelSource viewModelSource) {
             return new Default(viewModelSource);
         }
 
         @NotNull
         /* renamed from: constructor-impl  reason: not valid java name */
-        public static ViewModelSource m68constructorimpl(@NotNull ViewModelSource vmSource) {
+        public static ViewModelSource m66constructorimpl(@NotNull ViewModelSource vmSource) {
             Intrinsics.checkNotNullParameter(vmSource, "vmSource");
             return vmSource;
         }
 
         /* renamed from: equals-impl  reason: not valid java name */
-        public static boolean m69equalsimpl(ViewModelSource viewModelSource, Object obj) {
-            return (obj instanceof Default) && Intrinsics.areEqual(viewModelSource, ((Default) obj).m73unboximpl());
+        public static boolean m67equalsimpl(ViewModelSource viewModelSource, Object obj) {
+            return (obj instanceof Default) && Intrinsics.areEqual(viewModelSource, ((Default) obj).m71unboximpl());
         }
 
         /* renamed from: equals-impl0  reason: not valid java name */
-        public static final boolean m70equalsimpl0(ViewModelSource viewModelSource, ViewModelSource viewModelSource2) {
+        public static final boolean m68equalsimpl0(ViewModelSource viewModelSource, ViewModelSource viewModelSource2) {
             return Intrinsics.areEqual(viewModelSource, viewModelSource2);
         }
 
         /* renamed from: hashCode-impl  reason: not valid java name */
-        public static int m71hashCodeimpl(ViewModelSource viewModelSource) {
+        public static int m69hashCodeimpl(ViewModelSource viewModelSource) {
             return viewModelSource.hashCode();
         }
 
         /* renamed from: toString-impl  reason: not valid java name */
-        public static String m72toStringimpl(ViewModelSource viewModelSource) {
+        public static String m70toStringimpl(ViewModelSource viewModelSource) {
             return "Default(vmSource=" + viewModelSource + ")";
         }
 
         public boolean equals(Object obj) {
-            return m69equalsimpl(this.vmSource, obj);
+            return m67equalsimpl(this.vmSource, obj);
         }
 
         @NotNull
@@ -124,15 +124,15 @@ public interface ViewModelInstanceSource {
         }
 
         public int hashCode() {
-            return m71hashCodeimpl(this.vmSource);
+            return m69hashCodeimpl(this.vmSource);
         }
 
         public String toString() {
-            return m72toStringimpl(this.vmSource);
+            return m70toStringimpl(this.vmSource);
         }
 
         /* renamed from: unbox-impl  reason: not valid java name */
-        public final /* synthetic */ ViewModelSource m73unboximpl() {
+        public final /* synthetic */ ViewModelSource m71unboximpl() {
             return this.vmSource;
         }
     }

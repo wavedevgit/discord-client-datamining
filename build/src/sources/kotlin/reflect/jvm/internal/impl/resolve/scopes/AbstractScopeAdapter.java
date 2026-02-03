@@ -32,10 +32,10 @@ public abstract class AbstractScopeAdapter implements MemberScope {
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope
     /* renamed from: getContributedClassifier */
-    public ClassifierDescriptor mo1201getContributedClassifier(@NotNull Name name, @NotNull LookupLocation location) {
+    public ClassifierDescriptor mo1198getContributedClassifier(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
-        return a().mo1201getContributedClassifier(name, location);
+        return a().mo1198getContributedClassifier(name, location);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope
@@ -76,9 +76,9 @@ public abstract class AbstractScopeAdapter implements MemberScope {
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope
     /* renamed from: recordLookup */
-    public void mo1204recordLookup(@NotNull Name name, @NotNull LookupLocation location) {
+    public void mo1201recordLookup(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
-        a().mo1204recordLookup(name, location);
+        a().mo1201recordLookup(name, location);
     }
 }

@@ -6,17 +6,17 @@ import kotlin.reflect.jvm.internal.impl.name.Name;
 public final class JvmBuiltInsCustomizerKt {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Name f33336a;
+    private static final Name f32726a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Name f33337b;
+    private static final Name f32727b;
 
     static {
         Name identifier = Name.identifier("getFirst");
         Intrinsics.checkNotNullExpressionValue(identifier, "identifier(...)");
-        f33336a = identifier;
+        f32726a = identifier;
         Name identifier2 = Name.identifier("getLast");
         Intrinsics.checkNotNullExpressionValue(identifier2, "identifier(...)");
-        f33337b = identifier2;
+        f32727b = identifier2;
     }
 }

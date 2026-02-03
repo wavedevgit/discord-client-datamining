@@ -1,27 +1,31 @@
 package vo;
 
-import androidx.activity.result.ActivityResultLauncher;
+import lv.a0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class e implements uq.d {
+public final class e implements wq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f51473a;
+    private final com.withpersona.sdk2.inquiry.internal.network.f f51723a;
 
-    public e(b bVar) {
-        this.f51473a = bVar;
+    /* renamed from: b  reason: collision with root package name */
+    private final wq.h f51724b;
+
+    public e(com.withpersona.sdk2.inquiry.internal.network.f fVar, wq.h hVar) {
+        this.f51723a = fVar;
+        this.f51724b = hVar;
     }
 
-    public static e a(b bVar) {
-        return new e(bVar);
+    public static e a(com.withpersona.sdk2.inquiry.internal.network.f fVar, wq.h hVar) {
+        return new e(fVar, hVar);
     }
 
-    public static ActivityResultLauncher b(b bVar) {
-        return (ActivityResultLauncher) uq.g.d(bVar.a());
+    public static ao.b b(com.withpersona.sdk2.inquiry.internal.network.f fVar, a0 a0Var) {
+        return (ao.b) wq.g.d(fVar.a(a0Var));
     }
 
     @Override // javax.inject.Provider
     /* renamed from: c */
-    public ActivityResultLauncher get() {
-        return b(this.f51473a);
+    public ao.b get() {
+        return b(this.f51723a, (a0) this.f51724b.get());
     }
 }

@@ -70,15 +70,15 @@ public abstract class ResourceType {
         public static final int $stable = 0;
 
         /* renamed from: id  reason: collision with root package name */
-        private final int f6032id;
+        private final int f5804id;
 
         public ResourceId(int i10) {
             super(null);
-            this.f6032id = i10;
+            this.f5804id = i10;
         }
 
         public final int getId() {
-            return this.f6032id;
+            return this.f5804id;
         }
     }
 

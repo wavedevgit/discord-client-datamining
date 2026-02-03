@@ -1,250 +1,765 @@
 package ku;
 
-import java.util.ArrayList;
-import ju.c0;
+import com.discord.misc.utilities.logThrottle.LogThrottleSingleton;
+import com.reactnativecommunity.webview.RNCWebViewManager;
+import java.io.Closeable;
+import java.io.IOException;
+import java.net.ProtocolException;
+import java.net.SocketTimeoutException;
+import java.util.ArrayDeque;
+import java.util.List;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
+import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import okio.Buffer;
+import kotlin.ranges.IntRange;
+import kotlin.text.StringsKt;
+import ku.g;
+import okhttp3.Call;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+import okhttp3.WebSocket;
+import okio.BufferedSink;
+import okio.BufferedSource;
 import okio.ByteString;
+import wt.j;
+import wt.l;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class d {
+public final class d implements WebSocket, g.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ByteString f36725a;
+    private final Request f36180a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ByteString f36726b;
+    private final l f36181b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ByteString f36727c;
+    private final Random f36182c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ByteString f36728d;
+    private final long f36183d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ByteString f36729e;
+    private ku.e f36184e;
 
-    static {
-        ByteString.a aVar = ByteString.f44507o;
-        f36725a = aVar.g("/");
-        f36726b = aVar.g("\\");
-        f36727c = aVar.g("/\\");
-        f36728d = aVar.g(".");
-        f36729e = aVar.g("..");
-    }
+    /* renamed from: f  reason: collision with root package name */
+    private long f36185f;
 
-    public static final c0 j(c0 c0Var, c0 child, boolean z10) {
-        Intrinsics.checkNotNullParameter(c0Var, "<this>");
-        Intrinsics.checkNotNullParameter(child, "child");
-        if (!child.isAbsolute() && child.q() == null) {
-            ByteString m10 = m(c0Var);
-            if (m10 == null && (m10 = m(child)) == null) {
-                m10 = s(c0.f32327i);
-            }
-            Buffer buffer = new Buffer();
-            buffer.a2(c0Var.d());
-            if (buffer.size() > 0) {
-                buffer.a2(m10);
-            }
-            buffer.a2(child.d());
-            return q(buffer, z10);
+    /* renamed from: g  reason: collision with root package name */
+    private final String f36186g;
+
+    /* renamed from: h  reason: collision with root package name */
+    private Call f36187h;
+
+    /* renamed from: i  reason: collision with root package name */
+    private au.a f36188i;
+
+    /* renamed from: j  reason: collision with root package name */
+    private ku.g f36189j;
+
+    /* renamed from: k  reason: collision with root package name */
+    private ku.h f36190k;
+
+    /* renamed from: l  reason: collision with root package name */
+    private au.d f36191l;
+
+    /* renamed from: m  reason: collision with root package name */
+    private String f36192m;
+
+    /* renamed from: n  reason: collision with root package name */
+    private AbstractC0460d f36193n;
+
+    /* renamed from: o  reason: collision with root package name */
+    private final ArrayDeque f36194o;
+
+    /* renamed from: p  reason: collision with root package name */
+    private final ArrayDeque f36195p;
+
+    /* renamed from: q  reason: collision with root package name */
+    private long f36196q;
+
+    /* renamed from: r  reason: collision with root package name */
+    private boolean f36197r;
+
+    /* renamed from: s  reason: collision with root package name */
+    private int f36198s;
+
+    /* renamed from: t  reason: collision with root package name */
+    private String f36199t;
+
+    /* renamed from: u  reason: collision with root package name */
+    private boolean f36200u;
+
+    /* renamed from: v  reason: collision with root package name */
+    private int f36201v;
+
+    /* renamed from: w  reason: collision with root package name */
+    private int f36202w;
+
+    /* renamed from: x  reason: collision with root package name */
+    private int f36203x;
+
+    /* renamed from: y  reason: collision with root package name */
+    private boolean f36204y;
+
+    /* renamed from: z  reason: collision with root package name */
+    public static final b f36179z = new b(null);
+    private static final List A = CollectionsKt.e(j.HTTP_1_1);
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final int f36205a;
+
+        /* renamed from: b  reason: collision with root package name */
+        private final ByteString f36206b;
+
+        /* renamed from: c  reason: collision with root package name */
+        private final long f36207c;
+
+        public a(int i10, ByteString byteString, long j10) {
+            this.f36205a = i10;
+            this.f36206b = byteString;
+            this.f36207c = j10;
         }
-        return child;
+
+        public final long a() {
+            return this.f36207c;
+        }
+
+        public final int b() {
+            return this.f36205a;
+        }
+
+        public final ByteString c() {
+            return this.f36206b;
+        }
     }
 
-    public static final c0 k(String str, boolean z10) {
-        Intrinsics.checkNotNullParameter(str, "<this>");
-        return q(new Buffer().o0(str), z10);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b {
+        public /* synthetic */ b(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private b() {
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class c {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final int f36208a;
+
+        /* renamed from: b  reason: collision with root package name */
+        private final ByteString f36209b;
+
+        public c(int i10, ByteString data) {
+            Intrinsics.checkNotNullParameter(data, "data");
+            this.f36208a = i10;
+            this.f36209b = data;
+        }
+
+        public final ByteString a() {
+            return this.f36209b;
+        }
+
+        public final int b() {
+            return this.f36208a;
+        }
+    }
+
+    /* renamed from: ku.d$d  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static abstract class AbstractC0460d implements Closeable {
+
+        /* renamed from: d  reason: collision with root package name */
+        private final boolean f36210d;
+
+        /* renamed from: e  reason: collision with root package name */
+        private final BufferedSource f36211e;
+
+        /* renamed from: i  reason: collision with root package name */
+        private final BufferedSink f36212i;
+
+        public AbstractC0460d(boolean z10, BufferedSource source, BufferedSink sink) {
+            Intrinsics.checkNotNullParameter(source, "source");
+            Intrinsics.checkNotNullParameter(sink, "sink");
+            this.f36210d = z10;
+            this.f36211e = source;
+            this.f36212i = sink;
+        }
+
+        public final boolean a() {
+            return this.f36210d;
+        }
+
+        public final BufferedSink h() {
+            return this.f36212i;
+        }
+
+        public final BufferedSource l() {
+            return this.f36211e;
+        }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final int l(c0 c0Var) {
-        int y10 = ByteString.y(c0Var.d(), f36725a, 0, 2, null);
-        if (y10 != -1) {
-            return y10;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public final class e extends au.a {
+        public e() {
+            super(d.this.f36192m + " writer", false, 2, null);
         }
-        return ByteString.y(c0Var.d(), f36726b, 0, 2, null);
-    }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final ByteString m(c0 c0Var) {
-        ByteString d10 = c0Var.d();
-        ByteString byteString = f36725a;
-        if (ByteString.t(d10, byteString, 0, 2, null) != -1) {
-            return byteString;
-        }
-        ByteString d11 = c0Var.d();
-        ByteString byteString2 = f36726b;
-        if (ByteString.t(d11, byteString2, 0, 2, null) == -1) {
-            return null;
-        }
-        return byteString2;
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final boolean n(c0 c0Var) {
-        if (!c0Var.d().i(f36729e) || (c0Var.d().G() != 2 && !c0Var.d().A(c0Var.d().G() - 3, f36725a, 0, 1) && !c0Var.d().A(c0Var.d().G() - 3, f36726b, 0, 1))) {
-            return false;
-        }
-        return true;
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int o(c0 c0Var) {
-        if (c0Var.d().G() == 0) {
-            return -1;
-        }
-        if (c0Var.d().k(0) == 47) {
-            return 1;
-        }
-        if (c0Var.d().k(0) == 92) {
-            if (c0Var.d().G() <= 2 || c0Var.d().k(1) != 92) {
-                return 1;
-            }
-            int r10 = c0Var.d().r(f36726b, 2);
-            if (r10 == -1) {
-                return c0Var.d().G();
-            }
-            return r10;
-        }
-        if (c0Var.d().G() > 2 && c0Var.d().k(1) == 58 && c0Var.d().k(2) == 92) {
-            char k10 = (char) c0Var.d().k(0);
-            if ('a' > k10 || k10 >= '{') {
-                if ('A' <= k10 && k10 < '[') {
-                    return 3;
+        @Override // au.a
+        public long f() {
+            try {
+                if (d.this.w()) {
+                    return 0L;
                 }
-            } else {
-                return 3;
+                return -1L;
+            } catch (IOException e10) {
+                d.this.p(e10, null);
+                return -1L;
             }
         }
-        return -1;
     }
 
-    private static final boolean p(Buffer buffer, ByteString byteString) {
-        if (!Intrinsics.areEqual(byteString, f36726b) || buffer.size() < 2 || buffer.G0(1L) != 58) {
-            return false;
-        }
-        char G0 = (char) buffer.G0(0L);
-        if ('a' > G0 || G0 >= '{') {
-            if ('A' > G0 || G0 >= '[') {
-                return false;
-            }
-            return true;
-        }
-        return true;
-    }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class f implements wt.b {
 
-    public static final c0 q(Buffer buffer, boolean z10) {
-        ByteString byteString;
-        boolean z11;
-        boolean z12;
-        ByteString g12;
-        Intrinsics.checkNotNullParameter(buffer, "<this>");
-        Buffer buffer2 = new Buffer();
-        ByteString byteString2 = null;
-        int i10 = 0;
-        while (true) {
-            if (!buffer.q0(0L, f36725a)) {
-                byteString = f36726b;
-                if (!buffer.q0(0L, byteString)) {
-                    break;
-                }
-            }
-            byte readByte = buffer.readByte();
-            if (byteString2 == null) {
-                byteString2 = r(readByte);
-            }
-            i10++;
+        /* renamed from: e  reason: collision with root package name */
+        final /* synthetic */ Request f36215e;
+
+        f(Request request) {
+            this.f36215e = request;
         }
-        if (i10 >= 2 && Intrinsics.areEqual(byteString2, byteString)) {
-            z11 = true;
-        } else {
-            z11 = false;
+
+        @Override // wt.b
+        public void onFailure(Call call, IOException e10) {
+            Intrinsics.checkNotNullParameter(call, "call");
+            Intrinsics.checkNotNullParameter(e10, "e");
+            d.this.p(e10, null);
         }
-        if (z11) {
-            Intrinsics.checkNotNull(byteString2);
-            buffer2.a2(byteString2);
-            buffer2.a2(byteString2);
-        } else if (i10 > 0) {
-            Intrinsics.checkNotNull(byteString2);
-            buffer2.a2(byteString2);
-        } else {
-            long d02 = buffer.d0(f36727c);
-            if (byteString2 == null) {
-                if (d02 == -1) {
-                    byteString2 = s(c0.f32327i);
-                } else {
-                    byteString2 = r(buffer.G0(d02));
-                }
-            }
-            if (p(buffer, byteString2)) {
-                if (d02 == 2) {
-                    buffer2.v0(buffer, 3L);
-                } else {
-                    buffer2.v0(buffer, 2L);
-                }
-            }
-        }
-        if (buffer2.size() > 0) {
-            z12 = true;
-        } else {
-            z12 = false;
-        }
-        ArrayList arrayList = new ArrayList();
-        while (!buffer.o1()) {
-            long d03 = buffer.d0(f36727c);
-            if (d03 == -1) {
-                g12 = buffer.L1();
-            } else {
-                g12 = buffer.g1(d03);
-                buffer.readByte();
-            }
-            ByteString byteString3 = f36729e;
-            if (Intrinsics.areEqual(g12, byteString3)) {
-                if (!z12 || !arrayList.isEmpty()) {
-                    if (z10 && (z12 || (!arrayList.isEmpty() && !Intrinsics.areEqual(CollectionsKt.z0(arrayList), byteString3)))) {
-                        if (!z11 || arrayList.size() != 1) {
-                            CollectionsKt.M(arrayList);
-                        }
-                    } else {
-                        arrayList.add(g12);
+
+        @Override // wt.b
+        public void onResponse(Call call, Response response) {
+            Intrinsics.checkNotNullParameter(call, "call");
+            Intrinsics.checkNotNullParameter(response, "response");
+            bu.c N = response.N();
+            try {
+                d.this.m(response, N);
+                Intrinsics.checkNotNull(N);
+                AbstractC0460d n10 = N.n();
+                ku.e a10 = ku.e.f36219g.a(response.E0());
+                d.this.f36184e = a10;
+                if (!d.this.s(a10)) {
+                    d dVar = d.this;
+                    synchronized (dVar) {
+                        dVar.f36195p.clear();
+                        dVar.f(1010, "unexpected Sec-WebSocket-Extensions in response header");
                     }
                 }
-            } else if (!Intrinsics.areEqual(g12, f36728d) && !Intrinsics.areEqual(g12, ByteString.f44508p)) {
-                arrayList.add(g12);
+                try {
+                    d.this.r(xt.e.f53575i + " WebSocket " + this.f36215e.n().q(), n10);
+                    d.this.q().onOpen(d.this, response);
+                    d.this.t();
+                } catch (Exception e10) {
+                    d.this.p(e10, null);
+                }
+            } catch (IOException e11) {
+                d.this.p(e11, response);
+                xt.e.m(response);
+                if (N != null) {
+                    N.v();
+                }
             }
         }
-        int size = arrayList.size();
-        for (int i11 = 0; i11 < size; i11++) {
-            if (i11 > 0) {
-                buffer2.a2(byteString2);
-            }
-            buffer2.a2((ByteString) arrayList.get(i11));
-        }
-        if (buffer2.size() == 0) {
-            buffer2.a2(f36728d);
-        }
-        return new c0(buffer2.L1());
     }
 
-    private static final ByteString r(byte b10) {
-        if (b10 != 47) {
-            if (b10 == 92) {
-                return f36726b;
-            }
-            throw new IllegalArgumentException("not a directory separator: " + ((int) b10));
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class g extends au.a {
+
+        /* renamed from: e  reason: collision with root package name */
+        final /* synthetic */ d f36216e;
+
+        /* renamed from: f  reason: collision with root package name */
+        final /* synthetic */ long f36217f;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public g(String str, d dVar, long j10) {
+            super(str, false, 2, null);
+            this.f36216e = dVar;
+            this.f36217f = j10;
         }
-        return f36725a;
+
+        @Override // au.a
+        public long f() {
+            this.f36216e.x();
+            return this.f36217f;
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class h extends au.a {
+
+        /* renamed from: e  reason: collision with root package name */
+        final /* synthetic */ d f36218e;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public h(String str, boolean z10, d dVar) {
+            super(str, z10);
+            this.f36218e = dVar;
+        }
+
+        @Override // au.a
+        public long f() {
+            this.f36218e.l();
+            return -1L;
+        }
+    }
+
+    public d(au.e taskRunner, Request originalRequest, l listener, Random random, long j10, ku.e eVar, long j11) {
+        Intrinsics.checkNotNullParameter(taskRunner, "taskRunner");
+        Intrinsics.checkNotNullParameter(originalRequest, "originalRequest");
+        Intrinsics.checkNotNullParameter(listener, "listener");
+        Intrinsics.checkNotNullParameter(random, "random");
+        this.f36180a = originalRequest;
+        this.f36181b = listener;
+        this.f36182c = random;
+        this.f36183d = j10;
+        this.f36184e = eVar;
+        this.f36185f = j11;
+        this.f36191l = taskRunner.i();
+        this.f36194o = new ArrayDeque();
+        this.f36195p = new ArrayDeque();
+        this.f36198s = -1;
+        if (Intrinsics.areEqual("GET", originalRequest.j())) {
+            ByteString.a aVar = ByteString.f44307o;
+            byte[] bArr = new byte[16];
+            random.nextBytes(bArr);
+            Unit unit = Unit.f32464a;
+            this.f36186g = ByteString.a.j(aVar, bArr, 0, 0, 3, null).d();
+            return;
+        }
+        throw new IllegalArgumentException(("Request must be GET: " + originalRequest.j()).toString());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final ByteString s(String str) {
-        if (Intrinsics.areEqual(str, "/")) {
-            return f36725a;
+    public final boolean s(ku.e eVar) {
+        if (eVar.f36225f || eVar.f36221b != null) {
+            return false;
         }
-        if (Intrinsics.areEqual(str, "\\")) {
-            return f36726b;
+        if (eVar.f36223d != null && !new IntRange(8, 15).contains(eVar.f36223d.intValue())) {
+            return false;
         }
-        throw new IllegalArgumentException("not a directory separator: " + str);
+        return true;
+    }
+
+    private final void u() {
+        if (xt.e.f53574h && !Thread.holdsLock(this)) {
+            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + this);
+        }
+        au.a aVar = this.f36188i;
+        if (aVar != null) {
+            au.d.j(this.f36191l, aVar, 0L, 2, null);
+        }
+    }
+
+    private final synchronized boolean v(ByteString byteString, int i10) {
+        if (!this.f36200u && !this.f36197r) {
+            if (this.f36196q + byteString.G() > 16777216) {
+                f(RNCWebViewManager.COMMAND_CLEAR_CACHE, null);
+                return false;
+            }
+            this.f36196q += byteString.G();
+            this.f36195p.add(new c(i10, byteString));
+            u();
+            return true;
+        }
+        return false;
+    }
+
+    @Override // okhttp3.WebSocket
+    public boolean a(ByteString bytes) {
+        Intrinsics.checkNotNullParameter(bytes, "bytes");
+        return v(bytes, 2);
+    }
+
+    @Override // ku.g.a
+    public void b(ByteString bytes) {
+        Intrinsics.checkNotNullParameter(bytes, "bytes");
+        this.f36181b.onMessage(this, bytes);
+    }
+
+    @Override // ku.g.a
+    public void c(String text) {
+        Intrinsics.checkNotNullParameter(text, "text");
+        this.f36181b.onMessage(this, text);
+    }
+
+    @Override // ku.g.a
+    public synchronized void d(ByteString payload) {
+        try {
+            Intrinsics.checkNotNullParameter(payload, "payload");
+            if (!this.f36200u && (!this.f36197r || !this.f36195p.isEmpty())) {
+                this.f36194o.add(payload);
+                u();
+                this.f36202w++;
+            }
+        } finally {
+        }
+    }
+
+    @Override // ku.g.a
+    public synchronized void e(ByteString payload) {
+        Intrinsics.checkNotNullParameter(payload, "payload");
+        this.f36203x++;
+        this.f36204y = false;
+    }
+
+    @Override // okhttp3.WebSocket
+    public boolean f(int i10, String str) {
+        return n(i10, str, LogThrottleSingleton.RATE_LIMIT_ONE_MINUTE);
+    }
+
+    @Override // ku.g.a
+    public void g(int i10, String reason) {
+        AbstractC0460d abstractC0460d;
+        ku.g gVar;
+        ku.h hVar;
+        Intrinsics.checkNotNullParameter(reason, "reason");
+        if (i10 != -1) {
+            synchronized (this) {
+                try {
+                    if (this.f36198s == -1) {
+                        this.f36198s = i10;
+                        this.f36199t = reason;
+                        abstractC0460d = null;
+                        if (this.f36197r && this.f36195p.isEmpty()) {
+                            AbstractC0460d abstractC0460d2 = this.f36193n;
+                            this.f36193n = null;
+                            gVar = this.f36189j;
+                            this.f36189j = null;
+                            hVar = this.f36190k;
+                            this.f36190k = null;
+                            this.f36191l.n();
+                            abstractC0460d = abstractC0460d2;
+                        } else {
+                            gVar = null;
+                            hVar = null;
+                        }
+                        Unit unit = Unit.f32464a;
+                    } else {
+                        throw new IllegalStateException("already closed");
+                    }
+                } catch (Throwable th2) {
+                    throw th2;
+                }
+            }
+            try {
+                this.f36181b.onClosing(this, i10, reason);
+                if (abstractC0460d != null) {
+                    this.f36181b.onClosed(this, i10, reason);
+                }
+                if (hVar != null) {
+                    return;
+                }
+                return;
+            } finally {
+                if (abstractC0460d != null) {
+                    xt.e.m(abstractC0460d);
+                }
+                if (gVar != null) {
+                    xt.e.m(gVar);
+                }
+                if (hVar != null) {
+                    xt.e.m(hVar);
+                }
+            }
+        }
+        throw new IllegalArgumentException("Failed requirement.");
+    }
+
+    public void l() {
+        Call call = this.f36187h;
+        Intrinsics.checkNotNull(call);
+        call.cancel();
+    }
+
+    public final void m(Response response, bu.c cVar) {
+        Intrinsics.checkNotNullParameter(response, "response");
+        if (response.L() == 101) {
+            String D0 = Response.D0(response, "Connection", null, 2, null);
+            if (StringsKt.A("Upgrade", D0, true)) {
+                String D02 = Response.D0(response, "Upgrade", null, 2, null);
+                if (StringsKt.A("websocket", D02, true)) {
+                    String D03 = Response.D0(response, "Sec-WebSocket-Accept", null, 2, null);
+                    ByteString.a aVar = ByteString.f44307o;
+                    String d10 = aVar.g(this.f36186g + "258EAFA5-E914-47DA-95CA-C5AB0DC85B11").E().d();
+                    if (Intrinsics.areEqual(d10, D03)) {
+                        if (cVar != null) {
+                            return;
+                        }
+                        throw new ProtocolException("Web Socket exchange missing: bad interceptor?");
+                    }
+                    throw new ProtocolException("Expected 'Sec-WebSocket-Accept' header value '" + d10 + "' but was '" + D03 + '\'');
+                }
+                throw new ProtocolException("Expected 'Upgrade' header value 'websocket' but was '" + D02 + '\'');
+            }
+            throw new ProtocolException("Expected 'Connection' header value 'Upgrade' but was '" + D0 + '\'');
+        }
+        throw new ProtocolException("Expected HTTP 101 response but was '" + response.L() + ' ' + response.I0() + '\'');
+    }
+
+    public final synchronized boolean n(int i10, String str, long j10) {
+        ByteString byteString;
+        try {
+            ku.f.f36226a.c(i10);
+            if (str != null) {
+                byteString = ByteString.f44307o.g(str);
+                if (byteString.G() > 123) {
+                    throw new IllegalArgumentException(("reason.size() > 123: " + str).toString());
+                }
+            } else {
+                byteString = null;
+            }
+            if (!this.f36200u && !this.f36197r) {
+                this.f36197r = true;
+                this.f36195p.add(new a(i10, byteString, j10));
+                u();
+                return true;
+            }
+            return false;
+        } finally {
+        }
+    }
+
+    public final void o(OkHttpClient client) {
+        Intrinsics.checkNotNullParameter(client, "client");
+        if (this.f36180a.f("Sec-WebSocket-Extensions") != null) {
+            p(new ProtocolException("Request header not permitted: 'Sec-WebSocket-Extensions'"), null);
+            return;
+        }
+        OkHttpClient c10 = client.D().j(okhttp3.e.f44264b).P(A).c();
+        Request b10 = this.f36180a.k().e("Upgrade", "websocket").e("Connection", "Upgrade").e("Sec-WebSocket-Key", this.f36186g).e("Sec-WebSocket-Version", "13").e("Sec-WebSocket-Extensions", "permessage-deflate").b();
+        bu.e eVar = new bu.e(c10, b10, true);
+        this.f36187h = eVar;
+        Intrinsics.checkNotNull(eVar);
+        eVar.M0(new f(b10));
+    }
+
+    public final void p(Exception e10, Response response) {
+        Intrinsics.checkNotNullParameter(e10, "e");
+        synchronized (this) {
+            if (this.f36200u) {
+                return;
+            }
+            this.f36200u = true;
+            AbstractC0460d abstractC0460d = this.f36193n;
+            this.f36193n = null;
+            ku.g gVar = this.f36189j;
+            this.f36189j = null;
+            ku.h hVar = this.f36190k;
+            this.f36190k = null;
+            this.f36191l.n();
+            Unit unit = Unit.f32464a;
+            try {
+                this.f36181b.onFailure(this, e10, response);
+            } finally {
+                if (abstractC0460d != null) {
+                    xt.e.m(abstractC0460d);
+                }
+                if (gVar != null) {
+                    xt.e.m(gVar);
+                }
+                if (hVar != null) {
+                    xt.e.m(hVar);
+                }
+            }
+        }
+    }
+
+    public final l q() {
+        return this.f36181b;
+    }
+
+    public final void r(String name, AbstractC0460d streams) {
+        Throwable th2;
+        Intrinsics.checkNotNullParameter(name, "name");
+        Intrinsics.checkNotNullParameter(streams, "streams");
+        ku.e eVar = this.f36184e;
+        Intrinsics.checkNotNull(eVar);
+        synchronized (this) {
+            try {
+                this.f36192m = name;
+                this.f36193n = streams;
+                this.f36190k = new ku.h(streams.a(), streams.h(), this.f36182c, eVar.f36220a, eVar.a(streams.a()), this.f36185f);
+                this.f36188i = new e();
+                long j10 = this.f36183d;
+                if (j10 != 0) {
+                    try {
+                        long nanos = TimeUnit.MILLISECONDS.toNanos(j10);
+                        au.d dVar = this.f36191l;
+                        dVar.i(new g(name + " ping", this, nanos), nanos);
+                    } catch (Throwable th3) {
+                        th2 = th3;
+                        throw th2;
+                    }
+                }
+                if (!this.f36195p.isEmpty()) {
+                    u();
+                }
+                Unit unit = Unit.f32464a;
+                this.f36189j = new ku.g(streams.a(), streams.l(), this, eVar.f36220a, eVar.a(!streams.a()));
+            } catch (Throwable th4) {
+                th2 = th4;
+            }
+        }
+    }
+
+    @Override // okhttp3.WebSocket
+    public boolean send(String text) {
+        Intrinsics.checkNotNullParameter(text, "text");
+        return v(ByteString.f44307o.g(text), 1);
+    }
+
+    public final void t() {
+        while (this.f36198s == -1) {
+            ku.g gVar = this.f36189j;
+            Intrinsics.checkNotNull(gVar);
+            gVar.a();
+        }
+    }
+
+    public final boolean w() {
+        String str;
+        ku.g gVar;
+        ku.h hVar;
+        int i10;
+        AbstractC0460d abstractC0460d;
+        synchronized (this) {
+            try {
+                if (this.f36200u) {
+                    return false;
+                }
+                ku.h hVar2 = this.f36190k;
+                Object poll = this.f36194o.poll();
+                Object obj = null;
+                if (poll == null) {
+                    Object poll2 = this.f36195p.poll();
+                    if (poll2 instanceof a) {
+                        i10 = this.f36198s;
+                        str = this.f36199t;
+                        if (i10 != -1) {
+                            abstractC0460d = this.f36193n;
+                            this.f36193n = null;
+                            gVar = this.f36189j;
+                            this.f36189j = null;
+                            hVar = this.f36190k;
+                            this.f36190k = null;
+                            this.f36191l.n();
+                        } else {
+                            long a10 = ((a) poll2).a();
+                            this.f36191l.i(new h(this.f36192m + " cancel", true, this), TimeUnit.MILLISECONDS.toNanos(a10));
+                            abstractC0460d = null;
+                            gVar = null;
+                            hVar = null;
+                        }
+                    } else if (poll2 == null) {
+                        return false;
+                    } else {
+                        str = null;
+                        gVar = null;
+                        hVar = null;
+                        i10 = -1;
+                        abstractC0460d = null;
+                    }
+                    obj = poll2;
+                } else {
+                    str = null;
+                    gVar = null;
+                    hVar = null;
+                    i10 = -1;
+                    abstractC0460d = null;
+                }
+                Unit unit = Unit.f32464a;
+                try {
+                    if (poll != null) {
+                        Intrinsics.checkNotNull(hVar2);
+                        hVar2.x((ByteString) poll);
+                    } else if (obj instanceof c) {
+                        c cVar = (c) obj;
+                        Intrinsics.checkNotNull(hVar2);
+                        hVar2.l(cVar.b(), cVar.a());
+                        synchronized (this) {
+                            this.f36196q -= cVar.a().G();
+                        }
+                    } else if (obj instanceof a) {
+                        a aVar = (a) obj;
+                        Intrinsics.checkNotNull(hVar2);
+                        hVar2.a(aVar.b(), aVar.c());
+                        if (abstractC0460d != null) {
+                            l lVar = this.f36181b;
+                            Intrinsics.checkNotNull(str);
+                            lVar.onClosed(this, i10, str);
+                        }
+                    } else {
+                        throw new AssertionError();
+                    }
+                    return true;
+                } finally {
+                    if (abstractC0460d != null) {
+                        xt.e.m(abstractC0460d);
+                    }
+                    if (gVar != null) {
+                        xt.e.m(gVar);
+                    }
+                    if (hVar != null) {
+                        xt.e.m(hVar);
+                    }
+                }
+            } catch (Throwable th2) {
+                throw th2;
+            }
+        }
+    }
+
+    public final void x() {
+        int i10;
+        synchronized (this) {
+            try {
+                if (this.f36200u) {
+                    return;
+                }
+                ku.h hVar = this.f36190k;
+                if (hVar == null) {
+                    return;
+                }
+                if (this.f36204y) {
+                    i10 = this.f36201v;
+                } else {
+                    i10 = -1;
+                }
+                this.f36201v++;
+                this.f36204y = true;
+                Unit unit = Unit.f32464a;
+                if (i10 != -1) {
+                    p(new SocketTimeoutException("sent ping but didn't receive pong within " + this.f36183d + "ms (after " + (i10 - 1) + " successful ping/pongs)"), null);
+                    return;
+                }
+                try {
+                    hVar.n(ByteString.f44308p);
+                } catch (IOException e10) {
+                    p(e10, null);
+                }
+            } catch (Throwable th2) {
+                throw th2;
+            }
+        }
     }
 }

@@ -10,38 +10,38 @@ import kotlin.reflect.KClass;
 public final class p0 implements Lazy {
 
     /* renamed from: d  reason: collision with root package name */
-    private final KClass f4559d;
+    private final KClass f4528d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Function0 f4560e;
+    private final Function0 f4529e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Function0 f4561i;
+    private final Function0 f4530i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Function0 f4562o;
+    private final Function0 f4531o;
 
     /* renamed from: p  reason: collision with root package name */
-    private n0 f4563p;
+    private n0 f4532p;
 
     public p0(KClass viewModelClass, Function0 storeProducer, Function0 factoryProducer, Function0 extrasProducer) {
         Intrinsics.checkNotNullParameter(viewModelClass, "viewModelClass");
         Intrinsics.checkNotNullParameter(storeProducer, "storeProducer");
         Intrinsics.checkNotNullParameter(factoryProducer, "factoryProducer");
         Intrinsics.checkNotNullParameter(extrasProducer, "extrasProducer");
-        this.f4559d = viewModelClass;
-        this.f4560e = storeProducer;
-        this.f4561i = factoryProducer;
-        this.f4562o = extrasProducer;
+        this.f4528d = viewModelClass;
+        this.f4529e = storeProducer;
+        this.f4530i = factoryProducer;
+        this.f4531o = extrasProducer;
     }
 
     @Override // kotlin.Lazy
     /* renamed from: a */
     public n0 getValue() {
-        n0 n0Var = this.f4563p;
+        n0 n0Var = this.f4532p;
         if (n0Var == null) {
-            n0 c10 = ViewModelProvider.f4488b.a((ViewModelStore) this.f4560e.invoke(), (ViewModelProvider.Factory) this.f4561i.invoke(), (CreationExtras) this.f4562o.invoke()).c(this.f4559d);
-            this.f4563p = c10;
+            n0 c10 = ViewModelProvider.f4457b.a((ViewModelStore) this.f4529e.invoke(), (ViewModelProvider.Factory) this.f4530i.invoke(), (CreationExtras) this.f4531o.invoke()).c(this.f4528d);
+            this.f4532p = c10;
             return c10;
         }
         return n0Var;
@@ -49,7 +49,7 @@ public final class p0 implements Lazy {
 
     @Override // kotlin.Lazy
     public boolean isInitialized() {
-        if (this.f4563p != null) {
+        if (this.f4532p != null) {
             return true;
         }
         return false;

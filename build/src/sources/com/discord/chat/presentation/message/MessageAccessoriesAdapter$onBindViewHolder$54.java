@@ -17,8 +17,8 @@ import kotlin.jvm.internal.Intrinsics;
 
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Object invoke(Object obj) {
-        m516invoke1xi1bu0(((MessageId) obj).m1095unboximpl());
-        return Unit.f33074a;
+        m516invoke1xi1bu0(((MessageId) obj).m1094unboximpl());
+        return Unit.f32464a;
     }
 
     /* renamed from: invoke-1xi1bu0  reason: not valid java name */

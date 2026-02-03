@@ -138,14 +138,14 @@ public final class AutomodSystemMessageView extends ChatListConstraintLayout imp
     /* JADX INFO: Access modifiers changed from: private */
     public static final void configureAuthor$lambda$8$lambda$7(ChatEventHandler chatEventHandler, AutoModerationContext autoModerationContext, View view) {
         String str;
-        String m1067toStringimpl = ChannelId.m1067toStringimpl(autoModerationContext.getMessage().m251getChannelIdo4g7jtM());
+        String m1066toStringimpl = ChannelId.m1066toStringimpl(autoModerationContext.getMessage().m251getChannelIdo4g7jtM());
         GuildId m252getGuildIdqOKuAAo = autoModerationContext.getMessage().m252getGuildIdqOKuAAo();
         if (m252getGuildIdqOKuAAo != null) {
-            str = GuildId.m1080toStringimpl(m252getGuildIdqOKuAAo.m1082unboximpl());
+            str = GuildId.m1079toStringimpl(m252getGuildIdqOKuAAo.m1081unboximpl());
         } else {
             str = null;
         }
-        chatEventHandler.onTapChannel(m1067toStringimpl, str, null);
+        chatEventHandler.onTapChannel(m1066toStringimpl, str, null);
     }
 
     private final void configureCommunicationDisabled(boolean z10) {

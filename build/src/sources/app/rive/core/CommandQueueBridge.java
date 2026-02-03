@@ -6,5 +6,5 @@ import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public interface CommandQueueBridge {
     /* renamed from: loadFile-xVnc2tA  reason: not valid java name */
-    long m159loadFilexVnc2tA(long j10, @NotNull byte[] bArr);
+    long m157loadFilexVnc2tA(long j10, @NotNull byte[] bArr);
 }

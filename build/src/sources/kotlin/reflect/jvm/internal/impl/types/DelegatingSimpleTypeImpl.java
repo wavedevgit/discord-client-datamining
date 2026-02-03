@@ -6,16 +6,16 @@ import org.jetbrains.annotations.NotNull;
 public abstract class DelegatingSimpleTypeImpl extends DelegatingSimpleType {
 
     /* renamed from: e  reason: collision with root package name */
-    private final SimpleType f35627e;
+    private final SimpleType f35017e;
 
     public DelegatingSimpleTypeImpl(@NotNull SimpleType delegate) {
         Intrinsics.checkNotNullParameter(delegate, "delegate");
-        this.f35627e = delegate;
+        this.f35017e = delegate;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.DelegatingSimpleType
     protected SimpleType getDelegate() {
-        return this.f35627e;
+        return this.f35017e;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.UnwrappedType

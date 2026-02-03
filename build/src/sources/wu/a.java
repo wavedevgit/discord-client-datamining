@@ -1,67 +1,57 @@
 package wu;
 
 import java.util.List;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Lambda;
-import mu.c;
+import kotlin.collections.CollectionsKt;
+import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements lu.b, mu.c {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f53049a = new a();
+public interface a {
 
     /* renamed from: wu.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class C0735a extends Lambda implements Function2 {
-
-        /* renamed from: d  reason: collision with root package name */
-        public static final C0735a f53050d = new C0735a();
-
-        C0735a() {
-            super(2);
-        }
-
-        public final Boolean a(int i10, int i11) {
-            boolean z10;
-            if (i10 > i11) {
-                z10 = true;
-            } else {
-                z10 = false;
+    public static final class C0716a {
+        private static Object a(a aVar, List list) {
+            if (sv.a.g(list)) {
+                return Double.valueOf(0.0d);
             }
-            return Boolean.valueOf(z10);
+            if (list.isEmpty()) {
+                return "";
+            }
+            return b(aVar, list);
         }
 
-        @Override // kotlin.jvm.functions.Function2
-        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-            return a(((Number) obj).intValue(), ((Number) obj2).intValue());
+        private static Object b(a aVar, List list) {
+            List list2;
+            if (list.size() == 1 && !(CollectionsKt.firstOrNull(list) instanceof Boolean)) {
+                list2 = list;
+            } else {
+                list2 = null;
+            }
+            if (list2 == null) {
+                return null;
+            }
+            return aVar.a(CollectionsKt.firstOrNull(list));
+        }
+
+        public static Object c(a aVar, Object obj) {
+            if (obj instanceof Number) {
+                return Double.valueOf(((Number) obj).doubleValue());
+            }
+            if (obj instanceof String) {
+                Double p10 = StringsKt.p((String) obj);
+                if (p10 != null) {
+                    return p10;
+                }
+            } else if (obj instanceof List) {
+                Object a10 = a(aVar, (List) obj);
+                if (a10 != null) {
+                    return a10;
+                }
+            } else if (obj instanceof Boolean) {
+                return Double.valueOf(sv.b.a(((Boolean) obj).booleanValue()));
+            }
+            return obj;
         }
     }
 
-    private a() {
-    }
-
-    @Override // mu.c
-    public boolean b(List list, Function2 function2) {
-        return c.a.b(this, list, function2);
-    }
-
-    @Override // mu.a
-    public Boolean c(Object obj) {
-        return c.a.f(this, obj);
-    }
-
-    @Override // mu.b
-    public List d(Comparable comparable, Comparable comparable2) {
-        return c.a.e(this, comparable, comparable2);
-    }
-
-    @Override // lu.b
-    public Object f(Object obj, Object obj2) {
-        return Boolean.valueOf(b(qv.a.c(obj), C0735a.f53050d));
-    }
-
-    @Override // mu.b
-    public List g(Comparable comparable, Comparable comparable2) {
-        return c.a.d(this, comparable, comparable2);
-    }
+    Object a(Object obj);
 }

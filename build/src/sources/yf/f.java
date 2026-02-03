@@ -15,16 +15,16 @@ public final class f extends ef.d implements xf.e {
     public static final class a extends c {
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ k f54313c;
+        final /* synthetic */ k f54071c;
 
         a(k kVar) {
-            this.f54313c = kVar;
+            this.f54071c = kVar;
         }
 
         @Override // yf.a
         public void i(Status status, xf.g gVar) {
             Intrinsics.checkNotNullParameter(status, "status");
-            r.a(status, gVar, this.f54313c);
+            r.a(status, gVar, this.f54071c);
         }
     }
 
@@ -39,8 +39,8 @@ public final class f extends ef.d implements xf.e {
             java.lang.String r0 = "context"
             kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r4, r0)
             ef.a r0 = yf.g.a()
-            ef.a$d$a r1 = ef.a.d.f22794c
-            ef.d$a r2 = ef.d.a.f22806c
+            ef.a$d$a r1 = ef.a.d.f21485c
+            ef.d$a r2 = ef.d.a.f21497c
             r3.<init>(r4, r0, r1, r2)
             return
         */
@@ -56,7 +56,7 @@ public final class f extends ef.d implements xf.e {
     @Override // xf.e
     public Task i(final GetCredentialRequest request) {
         Intrinsics.checkNotNullParameter(request, "request");
-        Task p10 = p(q.a().d(jg.d.f31760a).b(new m() { // from class: yf.e
+        Task p10 = p(q.a().d(jg.d.f31556a).b(new m() { // from class: yf.e
             @Override // ff.m
             public final void accept(Object obj, Object obj2) {
                 f.D(GetCredentialRequest.this, (d) obj, (k) obj2);

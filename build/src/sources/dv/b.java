@@ -1,68 +1,31 @@
 package dv;
-
-import com.facebook.react.views.textinput.ReactEditTextInputConnectionWrapper;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.nio.charset.Charset;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class b {
+public class b extends iv.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f22505a = b();
+    private final int f21087a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Pattern f22506b = Pattern.compile("^&#[Xx]?");
+    private final int f21088b;
 
-    public static String a(String str) {
-        int i10;
-        Matcher matcher = f22506b.matcher(str);
-        if (matcher.find()) {
-            if (matcher.end() == 2) {
-                i10 = 10;
-            } else {
-                i10 = 16;
-            }
-            try {
-                int parseInt = Integer.parseInt(str.substring(matcher.end(), str.length() - 1), i10);
-                if (parseInt == 0) {
-                    return "�";
-                }
-                return new String(Character.toChars(parseInt));
-            } catch (IllegalArgumentException unused) {
-                return "�";
-            }
-        }
-        String str2 = (String) f22505a.get(str.substring(1, str.length() - 1));
-        if (str2 != null) {
-            return str2;
-        }
-        return str;
+    /* renamed from: c  reason: collision with root package name */
+    private final boolean f21089c;
+
+    public b(int i10, int i11, boolean z10) {
+        this.f21087a = i10;
+        this.f21088b = i11;
+        this.f21089c = z10;
     }
 
-    private static Map b() {
-        HashMap hashMap = new HashMap();
-        try {
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(b.class.getResourceAsStream("/org/commonmark/internal/util/entities.properties"), Charset.forName("UTF-8")));
-            while (true) {
-                String readLine = bufferedReader.readLine();
-                if (readLine != null) {
-                    if (readLine.length() != 0) {
-                        int indexOf = readLine.indexOf("=");
-                        hashMap.put(readLine.substring(0, indexOf), readLine.substring(indexOf + 1));
-                    }
-                } else {
-                    bufferedReader.close();
-                    hashMap.put("NewLine", ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
-                    return hashMap;
-                }
-            }
-        } catch (IOException e10) {
-            throw new IllegalStateException("Failed reading data for HTML named character references", e10);
-        }
+    public int e() {
+        return this.f21088b;
+    }
+
+    public int f() {
+        return this.f21087a;
+    }
+
+    public boolean g() {
+        return this.f21089c;
     }
 }

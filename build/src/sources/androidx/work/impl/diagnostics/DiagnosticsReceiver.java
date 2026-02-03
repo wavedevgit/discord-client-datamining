@@ -11,18 +11,18 @@ import k4.y;
 public class DiagnosticsReceiver extends BroadcastReceiver {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f5648a = m.i("DiagnosticsRcvr");
+    private static final String f5617a = m.i("DiagnosticsRcvr");
 
     @Override // android.content.BroadcastReceiver
     public void onReceive(Context context, Intent intent) {
         if (intent == null) {
             return;
         }
-        m.e().a(f5648a, "Requesting diagnostics");
+        m.e().a(f5617a, "Requesting diagnostics");
         try {
             y.e(context).b(p.e(DiagnosticsWorker.class));
         } catch (IllegalStateException e10) {
-            m.e().d(f5648a, "WorkManager is not initialized", e10);
+            m.e().d(f5617a, "WorkManager is not initialized", e10);
         }
     }
 }

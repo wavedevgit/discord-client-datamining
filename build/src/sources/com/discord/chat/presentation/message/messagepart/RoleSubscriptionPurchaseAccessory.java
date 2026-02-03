@@ -87,7 +87,7 @@ public final class RoleSubscriptionPurchaseAccessory extends MessageAccessory {
         }
         if (obj instanceof RoleSubscriptionPurchaseAccessory) {
             RoleSubscriptionPurchaseAccessory roleSubscriptionPurchaseAccessory = (RoleSubscriptionPurchaseAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, roleSubscriptionPurchaseAccessory.messageId) && Intrinsics.areEqual(this.margins, roleSubscriptionPurchaseAccessory.margins) && Intrinsics.areEqual(this.authorUsername, roleSubscriptionPurchaseAccessory.authorUsername) && Intrinsics.areEqual(this.authorAvatar, roleSubscriptionPurchaseAccessory.authorAvatar) && this.constrainedWidth == roleSubscriptionPurchaseAccessory.constrainedWidth && this.isForwardedContent == roleSubscriptionPurchaseAccessory.isForwardedContent;
+            return MessageId.m1089equalsimpl0(this.messageId, roleSubscriptionPurchaseAccessory.messageId) && Intrinsics.areEqual(this.margins, roleSubscriptionPurchaseAccessory.margins) && Intrinsics.areEqual(this.authorUsername, roleSubscriptionPurchaseAccessory.authorUsername) && Intrinsics.areEqual(this.authorAvatar, roleSubscriptionPurchaseAccessory.authorAvatar) && this.constrainedWidth == roleSubscriptionPurchaseAccessory.constrainedWidth && this.isForwardedContent == roleSubscriptionPurchaseAccessory.isForwardedContent;
         }
         return false;
     }
@@ -117,9 +117,9 @@ public final class RoleSubscriptionPurchaseAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        int m1091hashCodeimpl = ((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31;
+        int m1090hashCodeimpl = ((MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31;
         String str = this.authorUsername;
-        int hashCode = (m1091hashCodeimpl + (str == null ? 0 : str.hashCode())) * 31;
+        int hashCode = (m1090hashCodeimpl + (str == null ? 0 : str.hashCode())) * 31;
         String str2 = this.authorAvatar;
         return ((((hashCode + (str2 != null ? str2.hashCode() : 0)) * 31) + Integer.hashCode(this.constrainedWidth)) * 31) + Boolean.hashCode(this.isForwardedContent);
     }
@@ -130,13 +130,13 @@ public final class RoleSubscriptionPurchaseAccessory extends MessageAccessory {
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         MessageMargins messageMargins = this.margins;
         String str = this.authorUsername;
         String str2 = this.authorAvatar;
         int i10 = this.constrainedWidth;
         boolean z10 = this.isForwardedContent;
-        return "RoleSubscriptionPurchaseAccessory(messageId=" + m1093toStringimpl + ", margins=" + messageMargins + ", authorUsername=" + str + ", authorAvatar=" + str2 + ", constrainedWidth=" + i10 + ", isForwardedContent=" + z10 + ")";
+        return "RoleSubscriptionPurchaseAccessory(messageId=" + m1092toStringimpl + ", margins=" + messageMargins + ", authorUsername=" + str + ", authorAvatar=" + str2 + ", constrainedWidth=" + i10 + ", isForwardedContent=" + z10 + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

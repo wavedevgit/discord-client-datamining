@@ -6,67 +6,67 @@ import dd.i0;
 public final class r implements m {
 
     /* renamed from: b  reason: collision with root package name */
-    private tc.b0 f21611b;
+    private tc.b0 f20470b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f21612c;
+    private boolean f20471c;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f21614e;
+    private int f20473e;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f21615f;
+    private int f20474f;
 
     /* renamed from: a  reason: collision with root package name */
-    private final ne.h0 f21610a = new ne.h0(10);
+    private final ne.h0 f20469a = new ne.h0(10);
 
     /* renamed from: d  reason: collision with root package name */
-    private long f21613d = -9223372036854775807L;
+    private long f20472d = -9223372036854775807L;
 
     @Override // dd.m
     public void b(ne.h0 h0Var) {
-        ne.a.i(this.f21611b);
-        if (!this.f21612c) {
+        ne.a.i(this.f20470b);
+        if (!this.f20471c) {
             return;
         }
         int a10 = h0Var.a();
-        int i10 = this.f21615f;
+        int i10 = this.f20474f;
         if (i10 < 10) {
             int min = Math.min(a10, 10 - i10);
-            System.arraycopy(h0Var.e(), h0Var.f(), this.f21610a.e(), this.f21615f, min);
-            if (this.f21615f + min == 10) {
-                this.f21610a.U(0);
-                if (73 == this.f21610a.H() && 68 == this.f21610a.H() && 51 == this.f21610a.H()) {
-                    this.f21610a.V(3);
-                    this.f21614e = this.f21610a.G() + 10;
+            System.arraycopy(h0Var.e(), h0Var.f(), this.f20469a.e(), this.f20474f, min);
+            if (this.f20474f + min == 10) {
+                this.f20469a.U(0);
+                if (73 == this.f20469a.H() && 68 == this.f20469a.H() && 51 == this.f20469a.H()) {
+                    this.f20469a.V(3);
+                    this.f20473e = this.f20469a.G() + 10;
                 } else {
                     ne.y.i("Id3Reader", "Discarding invalid ID3 tag");
-                    this.f21612c = false;
+                    this.f20471c = false;
                     return;
                 }
             }
         }
-        int min2 = Math.min(a10, this.f21614e - this.f21615f);
-        this.f21611b.f(h0Var, min2);
-        this.f21615f += min2;
+        int min2 = Math.min(a10, this.f20473e - this.f20474f);
+        this.f20470b.f(h0Var, min2);
+        this.f20474f += min2;
     }
 
     @Override // dd.m
     public void c() {
-        this.f21612c = false;
-        this.f21613d = -9223372036854775807L;
+        this.f20471c = false;
+        this.f20472d = -9223372036854775807L;
     }
 
     @Override // dd.m
     public void d() {
         int i10;
-        ne.a.i(this.f21611b);
-        if (this.f21612c && (i10 = this.f21614e) != 0 && this.f21615f == i10) {
-            long j10 = this.f21613d;
+        ne.a.i(this.f20470b);
+        if (this.f20471c && (i10 = this.f20473e) != 0 && this.f20474f == i10) {
+            long j10 = this.f20472d;
             if (j10 != -9223372036854775807L) {
-                this.f21611b.d(j10, 1, i10, 0, null);
+                this.f20470b.d(j10, 1, i10, 0, null);
             }
-            this.f21612c = false;
+            this.f20471c = false;
         }
     }
 
@@ -75,19 +75,19 @@ public final class r implements m {
         if ((i10 & 4) == 0) {
             return;
         }
-        this.f21612c = true;
+        this.f20471c = true;
         if (j10 != -9223372036854775807L) {
-            this.f21613d = j10;
+            this.f20472d = j10;
         }
-        this.f21614e = 0;
-        this.f21615f = 0;
+        this.f20473e = 0;
+        this.f20474f = 0;
     }
 
     @Override // dd.m
     public void f(tc.m mVar, i0.d dVar) {
         dVar.a();
         tc.b0 c10 = mVar.c(dVar.c(), 5);
-        this.f21611b = c10;
+        this.f20470b = c10;
         c10.b(new Format.b().U(dVar.b()).g0("application/id3").G());
     }
 }

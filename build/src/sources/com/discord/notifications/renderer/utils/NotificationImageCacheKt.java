@@ -2,9 +2,9 @@ package com.discord.notifications.renderer.utils;
 
 import android.content.Context;
 import android.net.Uri;
-import hs.m0;
 import java.io.File;
 import java.util.ArrayList;
+import js.m0;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.coroutines.Continuation;
@@ -43,6 +43,6 @@ public final class NotificationImageCacheKt {
     }
 
     public static final Object storeRemoteImageViaFileProvider(@NotNull Context context, @NotNull String str, @NotNull Continuation<? super Pair<? extends Uri, String>> continuation) {
-        return hs.g.g(m0.b(), new NotificationImageCacheKt$storeRemoteImageViaFileProvider$2(context, str, null), continuation);
+        return js.g.g(m0.b(), new NotificationImageCacheKt$storeRemoteImageViaFileProvider$2(context, str, null), continuation);
     }
 }

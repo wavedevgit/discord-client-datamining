@@ -4,11 +4,11 @@ import android.view.View;
 import androidx.recyclerview.widget.RecyclerView;
 import com.discord.chat.presentation.message.MessageAccessoriesAdapter;
 import com.discord.chat.presentation.message.viewholder.MessagePartViewHolder;
-import hs.c1;
-import hs.m0;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Map;
+import js.c1;
+import js.m0;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -52,7 +52,7 @@ public final class ChatListViewFactoryKt$fillAccessories$1 extends kotlin.corout
         RecyclerView.RecycledViewPool recycledViewPool;
         MessageAccessoriesAdapter messageAccessoriesAdapter;
         Iterator it;
-        Object f10 = pr.b.f();
+        Object f10 = rr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -97,15 +97,15 @@ public final class ChatListViewFactoryKt$fillAccessories$1 extends kotlin.corout
             this.L$2 = recycledViewPool;
             this.L$3 = it;
             this.label = 1;
-            if (hs.g.g(c10, chatListViewFactoryKt$fillAccessories$1$1$1, this) == f10) {
+            if (js.g.g(c10, chatListViewFactoryKt$fillAccessories$1$1$1, this) == f10) {
                 return f10;
             }
         }
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ChatListViewFactoryKt$fillAccessories$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        return ((ChatListViewFactoryKt$fillAccessories$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
     }
 }

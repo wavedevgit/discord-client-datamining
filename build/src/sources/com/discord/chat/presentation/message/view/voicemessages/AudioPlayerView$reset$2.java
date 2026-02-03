@@ -1,7 +1,7 @@
 package com.discord.chat.presentation.message.view.voicemessages;
 
-import hs.i0;
-import hs.m0;
+import js.i0;
+import js.m0;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -35,7 +35,7 @@ public final class AudioPlayerView$reset$2 extends kotlin.coroutines.jvm.interna
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            Object f10 = pr.b.f();
+            Object f10 = rr.b.f();
             int i10 = this.label;
             if (i10 != 0) {
                 if (i10 == 1) {
@@ -50,12 +50,12 @@ public final class AudioPlayerView$reset$2 extends kotlin.coroutines.jvm.interna
                     return f10;
                 }
             }
-            return Unit.f33074a;
+            return Unit.f32464a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
         }
     }
 
@@ -75,7 +75,7 @@ public final class AudioPlayerView$reset$2 extends kotlin.coroutines.jvm.interna
     public final Object invokeSuspend(Object obj) {
         AudioPlayerViewState audioPlayerViewState;
         AudioPlayerViewState audioPlayerViewState2;
-        Object f10 = pr.b.f();
+        Object f10 = rr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -88,7 +88,7 @@ public final class AudioPlayerView$reset$2 extends kotlin.coroutines.jvm.interna
             CoroutineDispatcher a10 = m0.a();
             AnonymousClass1 anonymousClass1 = new AnonymousClass1(null);
             this.label = 1;
-            if (hs.g.g(a10, anonymousClass1, this) == f10) {
+            if (js.g.g(a10, anonymousClass1, this) == f10) {
                 return f10;
             }
         }
@@ -100,11 +100,11 @@ public final class AudioPlayerView$reset$2 extends kotlin.coroutines.jvm.interna
         audioPlayerViewState2 = audioPlayerView2.state;
         audioPlayerView2.configureAudioProgressView(audioPlayerViewState2);
         this.this$0.getBinding().wave.reset();
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((AudioPlayerView$reset$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        return ((AudioPlayerView$reset$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
     }
 }

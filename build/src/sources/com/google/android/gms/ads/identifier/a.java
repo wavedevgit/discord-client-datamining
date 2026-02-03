@@ -6,16 +6,16 @@ import java.util.Map;
 final class a extends Thread {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ Map f14329d;
+    final /* synthetic */ Map f13297d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(AdvertisingIdClient advertisingIdClient, Map map) {
-        this.f14329d = map;
+        this.f13297d = map;
     }
 
     @Override // java.lang.Thread, java.lang.Runnable
     public final void run() {
-        Map map = this.f14329d;
+        Map map = this.f13297d;
         Uri.Builder buildUpon = Uri.parse("https://pagead2.googlesyndication.com/pagead/gen_204?id=gmob-apps").buildUpon();
         for (String str : map.keySet()) {
             buildUpon.appendQueryParameter(str, (String) map.get(str));

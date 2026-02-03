@@ -1,52 +1,52 @@
 package us;
-
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class q extends a {
+final class q extends ws.c0 {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final b f50657a;
+    /* renamed from: e  reason: collision with root package name */
+    private final h0 f50985e;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final String f50658b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final Object f50659c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final m f50660d;
-
-    public /* synthetic */ q(b bVar, String str, Object obj, m mVar, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this(bVar, (i10 & 2) != 0 ? bVar.getName() : str, (i10 & 4) != 0 ? null : obj, (i10 & 8) != 0 ? null : mVar);
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public q(us.h0 r5) {
+        /*
+            r4 = this;
+            java.lang.String r0 = "padding"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r5, r0)
+            us.i r0 = us.i.f50897a
+            ws.b0 r0 = r0.a()
+            us.h0 r1 = us.h0.f50893e
+            r2 = 2
+            if (r5 != r1) goto L12
+            r1 = r2
+            goto L13
+        L12:
+            r1 = 1
+        L13:
+            us.h0 r3 = us.h0.f50894i
+            if (r5 != r3) goto L1c
+            java.lang.Integer r2 = java.lang.Integer.valueOf(r2)
+            goto L1d
+        L1c:
+            r2 = 0
+        L1d:
+            r4.<init>(r0, r1, r2)
+            r4.f50985e = r5
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: us.q.<init>(us.h0):void");
     }
 
-    @Override // us.n
-    public Object a() {
-        return this.f50659c;
+    public boolean equals(Object obj) {
+        if ((obj instanceof q) && this.f50985e == ((q) obj).f50985e) {
+            return true;
+        }
+        return false;
     }
 
-    @Override // us.n
-    public b b() {
-        return this.f50657a;
-    }
-
-    @Override // us.n
-    public m c() {
-        return this.f50660d;
-    }
-
-    @Override // us.n
-    public String getName() {
-        return this.f50658b;
-    }
-
-    public q(b accessor, String name, Object obj, m mVar) {
-        Intrinsics.checkNotNullParameter(accessor, "accessor");
-        Intrinsics.checkNotNullParameter(name, "name");
-        this.f50657a = accessor;
-        this.f50658b = name;
-        this.f50659c = obj;
-        this.f50660d = mVar;
+    public int hashCode() {
+        return this.f50985e.hashCode();
     }
 }

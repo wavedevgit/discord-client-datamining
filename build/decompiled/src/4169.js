@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var0 = require;
+    var0 = metroImportDefault;
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
@@ -15,63 +15,72 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
     var3 = function arg0() {
-        _fun38037: for (var _fun38037_ip = 0;;) switch (_fun38037_ip) {
+        _fun38057: for (var _fun38057_ip = 0;;) switch (_fun38057_ip) {
             case 0:
-                var2 = arg0;
-                var0 = var2;
-                var5 = undefined;
-                var1 = undefined;
-                if (var2) {
-                    _fun38037_ip = 17;
-                    continue _fun38037
+                var4 = arg0;
+                var1 = !var4;
+                var0 = !var1;
+                if (var1) {
+                    _fun38057_ip = 25;
+                    continue _fun38057
                 }
-            case 13:
-                var2 = false;
-                return var2;
-            case 17: // try_start_0
+            case 12:
+                var2 = var4.byteLength;
+                var1 = 4;
+                var0 = var2 >= var1;
+            case 25:
+                if (!var0) {
+                    _fun38057_ip = 95;
+                    continue _fun38057
+                }
+            case 28:
+                var1 = var4.getUint16;
+                var2 = 0;
+                var5 = var1.bind(var4)(var2);
                 var3 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var4 = 0;
-                var2 = var2[var4];
-                var3 = var3.bind(var5)(var2);
-                var2 = var3.parseBox;
-                var2 = var2.bind(var3)(var0, var4);
-                var1 = var2;
-                var0 = var2;
-                if (!var2) {
-                    _fun38037_ip = 97;
-                    continue _fun38037
-                }
-            case 60:
-                var3 = ['heic', 'heix', 'hevc', 'hevx', 'heim', 'heis', 'hevm', 'hevs', 'mif1'];
-                var2 = var3.indexOf;
-                var1 = var1.majorBrand;
-                var2 = var2.bind(var3)(var1);
-                var1 = -1;
-                var0 = var1 !== var2;
-            case 97: // try_end0
-                return var0;
-            case 99: // catch_target0
-                CatchBlockStart(arg_register = 0);
-                var0 = false;
+                var1 = _closure1_slot1;
+                var2 = var1[var2];
+                var1 = undefined;
+                var1 = var3.bind(var1)(var2);
+                var1 = var1.LITTLE_ENDIAN;
+                var3 = var4.getUint16;
+                var2 = 2;
+                var1 = var5 === var1;
+                var2 = var3.bind(var4)(var2, var1);
+                var1 = 42;
+                var0 = var2 === var1;
+            case 95:
                 return var0;
         }
     };
-    var0.isHeicFile = var3;
-    var2 = function arg0() {
-        var2 = _closure1_slot0;
-        var1 = _closure1_slot1;
-        var0 = 0;
-        var1 = var1[var0];
-        var0 = undefined;
-        var2 = var2.bind(var0)(var1);
-        var1 = var2.findOffsets;
-        var0 = arg0;
-        var0 = var1.bind(var2)(var0);
-        return var0;
+    var0.isTiffFile = var3;
+    var2 = function() {
+        _fun38058: for (var _fun38058_ip = 0;;) switch (_fun38058_ip) {
+            case 0:
+                var2 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 1;
+                var1 = var1[var0];
+                var0 = undefined;
+                var0 = var2.bind(var0)(var1);
+                var0 = var0.USE_EXIF;
+                if (var0) {
+                    _fun38058_ip = 38;
+                    continue _fun38058
+                }
+            case 34:
+                var0 = {};
+                return var0;
+            case 38:
+                var0 = {
+                    'hasAppMarkers': true,
+                    'tiffHeaderOffset': 0
+                };
+                return var0;
+        }
     };
-    var0.findHeicOffsets = var2;
+    var0.findTiffOffsets = var2;
     var1.default = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4170]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4170, 4168]);

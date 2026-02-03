@@ -46,15 +46,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isAuthenticated = var3;
     var1 = function(arg0) { // Environment: var1
-        _fun27661: for (var _fun27661_ip = 0;;) switch (_fun27661_ip) {
+        _fun27748: for (var _fun27748_ip = 0;;) switch (_fun27748_ip) {
             case 0:
                 var4 = arg0;
                 var2 = null;
                 var1 = var2 != var4;
                 var0 = null;
                 if (!var1) {
-                    _fun27661_ip = 68;
-                    continue _fun27661
+                    _fun27748_ip = 68;
+                    continue _fun27748
                 }
             case 14:
                 var3 = /^\\/developers / ;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var3)(var4);
                 var0 = null;
                 if (!var1) {
-                    _fun27661_ip = 68;
-                    continue _fun27661
+                    _fun27748_ip = 68;
+                    continue _fun27748
                 }
             case 43:
                 var3 = _closure1_slot0;
@@ -78,4 +78,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getArtForPath = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [804, 3195, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [804, 3204, 2]);

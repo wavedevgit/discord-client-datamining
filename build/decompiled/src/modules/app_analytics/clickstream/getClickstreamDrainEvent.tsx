@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_analytics/clickstream/getClickstreamDrainEvent.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun39787: for (var _fun39787_ip = 0;;) switch (_fun39787_ip) {
+        _fun39839: for (var _fun39839_ip = 0;;) switch (_fun39839_ip) {
             case 0:
                 var5 = arg0;
                 var3 = arg1;
@@ -44,29 +44,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = _closure1_slot0;
                 var4 = var4.CHANNEL_OPENED_CLICKSTREAM;
                 if (!(var4 !== var5)) {
-                    _fun39787_ip = 450;
-                    continue _fun39787
+                    _fun39839_ip = 450;
+                    continue _fun39839
                 }
             case 60:
                 var4 = _closure1_slot0;
                 var4 = var4.GUILD_VIEWED_CLICKSTREAM;
                 if (!(var4 !== var5)) {
-                    _fun39787_ip = 386;
-                    continue _fun39787
+                    _fun39839_ip = 386;
+                    continue _fun39839
                 }
             case 77:
                 var4 = _closure1_slot0;
                 var4 = var4.FRIENDS_LIST_VIEWED_CLICKSTREAM;
                 if (!(var4 !== var5)) {
-                    _fun39787_ip = 262;
-                    continue _fun39787
+                    _fun39839_ip = 262;
+                    continue _fun39839
                 }
             case 94:
                 var2 = _closure1_slot0;
                 var2 = var2.CHANNEL_LATEST_MESSAGES_LOADED_CLICKSTREAM;
                 if (!(var2 !== var5)) {
-                    _fun39787_ip = 158;
-                    continue _fun39787
+                    _fun39839_ip = 158;
+                    continue _fun39839
                 }
             case 108:
                 var4 = var0.Error;

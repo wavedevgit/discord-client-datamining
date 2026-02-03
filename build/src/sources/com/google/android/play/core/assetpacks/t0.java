@@ -5,25 +5,25 @@ import java.util.Map;
 final class t0 extends d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f16661a;
+    private final long f15629a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f16662b;
+    private final Map f15630b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public t0(long j10, Map map) {
-        this.f16661a = j10;
-        this.f16662b = map;
+        this.f15629a = j10;
+        this.f15630b = map;
     }
 
     @Override // com.google.android.play.core.assetpacks.d
     public final Map c() {
-        return this.f16662b;
+        return this.f15630b;
     }
 
     @Override // com.google.android.play.core.assetpacks.d
     public final long d() {
-        return this.f16661a;
+        return this.f15629a;
     }
 
     public final boolean equals(Object obj) {
@@ -32,7 +32,7 @@ final class t0 extends d {
         }
         if (obj instanceof d) {
             d dVar = (d) obj;
-            if (this.f16661a == dVar.d() && this.f16662b.equals(dVar.c())) {
+            if (this.f15629a == dVar.d() && this.f15630b.equals(dVar.c())) {
                 return true;
             }
         }
@@ -40,12 +40,12 @@ final class t0 extends d {
     }
 
     public final int hashCode() {
-        long j10 = this.f16661a;
-        return ((((int) (j10 ^ (j10 >>> 32))) ^ 1000003) * 1000003) ^ this.f16662b.hashCode();
+        long j10 = this.f15629a;
+        return ((((int) (j10 ^ (j10 >>> 32))) ^ 1000003) * 1000003) ^ this.f15630b.hashCode();
     }
 
     public final String toString() {
-        String obj = this.f16662b.toString();
-        return "AssetPackStates{totalBytes=" + this.f16661a + ", packStates=" + obj + "}";
+        String obj = this.f15630b.toString();
+        return "AssetPackStates{totalBytes=" + this.f15629a + ", packStates=" + obj + "}";
     }
 }

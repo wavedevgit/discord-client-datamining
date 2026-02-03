@@ -3,15 +3,15 @@ package com.google.android.gms.internal.play_billing;
 final class d1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f14841a;
+    private final Object f13809a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f14842b;
+    private final int f13810b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d1(Object obj, int i10) {
-        this.f14841a = obj;
-        this.f14842b = i10;
+        this.f13809a = obj;
+        this.f13810b = i10;
     }
 
     public final boolean equals(Object obj) {
@@ -19,13 +19,13 @@ final class d1 {
             return false;
         }
         d1 d1Var = (d1) obj;
-        if (this.f14841a != d1Var.f14841a || this.f14842b != d1Var.f14842b) {
+        if (this.f13809a != d1Var.f13809a || this.f13810b != d1Var.f13810b) {
             return false;
         }
         return true;
     }
 
     public final int hashCode() {
-        return (System.identityHashCode(this.f14841a) * 65535) + this.f14842b;
+        return (System.identityHashCode(this.f13809a) * 65535) + this.f13810b;
     }
 }

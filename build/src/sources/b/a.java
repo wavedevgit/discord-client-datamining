@@ -10,33 +10,33 @@ import android.os.Parcelable;
 public interface a extends IInterface {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final String f6121a = "android$support$v4$app$INotificationSideChannel".replace('$', '.');
+    public static final String f6167a = "android$support$v4$app$INotificationSideChannel".replace('$', '.');
 
     /* renamed from: b.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static abstract class AbstractBinderC0102a extends Binder implements a {
+    public static abstract class AbstractBinderC0093a extends Binder implements a {
 
         /* renamed from: b.a$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        private static class C0103a implements a {
+        private static class C0094a implements a {
 
             /* renamed from: c  reason: collision with root package name */
-            private IBinder f6122c;
+            private IBinder f6168c;
 
-            C0103a(IBinder iBinder) {
-                this.f6122c = iBinder;
+            C0094a(IBinder iBinder) {
+                this.f6168c = iBinder;
             }
 
             @Override // b.a
             public void P0(String str, int i10, String str2, Notification notification) {
                 Parcel obtain = Parcel.obtain();
                 try {
-                    obtain.writeInterfaceToken(a.f6121a);
+                    obtain.writeInterfaceToken(a.f6167a);
                     obtain.writeString(str);
                     obtain.writeInt(i10);
                     obtain.writeString(str2);
                     b.b(obtain, notification, 0);
-                    this.f6122c.transact(1, obtain, null, 1);
+                    this.f6168c.transact(1, obtain, null, 1);
                 } finally {
                     obtain.recycle();
                 }
@@ -44,7 +44,7 @@ public interface a extends IInterface {
 
             @Override // android.os.IInterface
             public IBinder asBinder() {
-                return this.f6122c;
+                return this.f6168c;
             }
         }
 
@@ -52,11 +52,11 @@ public interface a extends IInterface {
             if (iBinder == null) {
                 return null;
             }
-            IInterface queryLocalInterface = iBinder.queryLocalInterface(a.f6121a);
+            IInterface queryLocalInterface = iBinder.queryLocalInterface(a.f6167a);
             if (queryLocalInterface != null && (queryLocalInterface instanceof a)) {
                 return (a) queryLocalInterface;
             }
-            return new C0103a(iBinder);
+            return new C0094a(iBinder);
         }
     }
 

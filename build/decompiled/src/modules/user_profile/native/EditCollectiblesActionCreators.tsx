@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/native/EditCollectiblesActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Environment: var1
-        _fun49093: for (var _fun49093_ip = 0;;) switch (_fun49093_ip) {
+        _fun49151: for (var _fun49151_ip = 0;;) switch (_fun49151_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -40,16 +40,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var2 = var2 != var4;
                 if (!var2) {
-                    _fun49093_ip = 54;
-                    continue _fun49093
+                    _fun49151_ip = 54;
+                    continue _fun49151
                 }
             case 44:
                 var3 = var4.isReady;
                 var2 = var3.bind(var4)();
             case 54:
                 if (!var2) {
-                    _fun49093_ip = 97;
-                    continue _fun49093
+                    _fun49151_ip = 97;
+                    continue _fun49151
                 }
             case 57:
                 var3 = var4.navigate;
@@ -67,4 +67,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.navigateToNitroManagement = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3911, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3920, 2]);

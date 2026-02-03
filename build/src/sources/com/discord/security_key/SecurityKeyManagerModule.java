@@ -12,7 +12,7 @@ import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import hs.i;
+import js.i;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -53,7 +53,7 @@ public final class SecurityKeyManagerModule extends ReactContextBaseJavaModule {
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
         this.reactContext = reactContext;
         this.webauthn = new WebAuthn(new SecurityKeyManagerModule$webauthn$1(this), new SecurityKeyManagerModule$webauthn$2(this));
-        CredentialManager.a aVar = CredentialManager.f3531a;
+        CredentialManager.a aVar = CredentialManager.f3500a;
         ReactApplicationContext reactApplicationContext = getReactApplicationContext();
         Intrinsics.checkNotNullExpressionValue(reactApplicationContext, "getReactApplicationContext(...)");
         this.credentialManager = aVar.a(reactApplicationContext);

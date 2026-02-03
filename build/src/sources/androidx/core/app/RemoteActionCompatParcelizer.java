@@ -6,22 +6,22 @@ import androidx.core.graphics.drawable.IconCompat;
 public class RemoteActionCompatParcelizer {
     public static RemoteActionCompat read(androidx.versionedparcelable.a aVar) {
         RemoteActionCompat remoteActionCompat = new RemoteActionCompat();
-        remoteActionCompat.f3088a = (IconCompat) aVar.v(remoteActionCompat.f3088a, 1);
-        remoteActionCompat.f3089b = aVar.l(remoteActionCompat.f3089b, 2);
-        remoteActionCompat.f3090c = aVar.l(remoteActionCompat.f3090c, 3);
-        remoteActionCompat.f3091d = (PendingIntent) aVar.r(remoteActionCompat.f3091d, 4);
-        remoteActionCompat.f3092e = aVar.h(remoteActionCompat.f3092e, 5);
-        remoteActionCompat.f3093f = aVar.h(remoteActionCompat.f3093f, 6);
+        remoteActionCompat.f3057a = (IconCompat) aVar.v(remoteActionCompat.f3057a, 1);
+        remoteActionCompat.f3058b = aVar.l(remoteActionCompat.f3058b, 2);
+        remoteActionCompat.f3059c = aVar.l(remoteActionCompat.f3059c, 3);
+        remoteActionCompat.f3060d = (PendingIntent) aVar.r(remoteActionCompat.f3060d, 4);
+        remoteActionCompat.f3061e = aVar.h(remoteActionCompat.f3061e, 5);
+        remoteActionCompat.f3062f = aVar.h(remoteActionCompat.f3062f, 6);
         return remoteActionCompat;
     }
 
     public static void write(RemoteActionCompat remoteActionCompat, androidx.versionedparcelable.a aVar) {
         aVar.x(false, false);
-        aVar.M(remoteActionCompat.f3088a, 1);
-        aVar.D(remoteActionCompat.f3089b, 2);
-        aVar.D(remoteActionCompat.f3090c, 3);
-        aVar.H(remoteActionCompat.f3091d, 4);
-        aVar.z(remoteActionCompat.f3092e, 5);
-        aVar.z(remoteActionCompat.f3093f, 6);
+        aVar.M(remoteActionCompat.f3057a, 1);
+        aVar.D(remoteActionCompat.f3058b, 2);
+        aVar.D(remoteActionCompat.f3059c, 3);
+        aVar.H(remoteActionCompat.f3060d, 4);
+        aVar.z(remoteActionCompat.f3061e, 5);
+        aVar.z(remoteActionCompat.f3062f, 6);
     }
 }

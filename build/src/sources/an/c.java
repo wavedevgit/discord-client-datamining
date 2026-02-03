@@ -1,255 +1,77 @@
 package an;
 
-import an.e;
-import an.g;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.util.AttributeSet;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import androidx.appcompat.app.a;
-import jr.p;
-import kotlin.Unit;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.functions.Function4;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.FunctionReferenceImpl;
+import java.util.ArrayList;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Lambda;
-import kotlin.jvm.internal.Reflection;
-import kotlin.reflect.KClass;
-import wm.a0;
-import wm.c0;
-import wm.g0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c extends g {
+public final class c {
 
-    /* renamed from: q  reason: collision with root package name */
-    public static final b f720q = new b(null);
+    /* renamed from: a  reason: collision with root package name */
+    private final List f723a;
 
-    /* renamed from: p  reason: collision with root package name */
-    private final int f721p;
+    /* renamed from: b  reason: collision with root package name */
+    private final Object f724b;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class b implements c0 {
+    /* renamed from: c  reason: collision with root package name */
+    private final List f725c;
 
-        /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ a f725a;
-
-        public /* synthetic */ b(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
-
-        @Override // wm.c0
-        /* renamed from: b */
-        public View a(d initialRendering, a0 initialViewEnvironment, Context contextForNewView, ViewGroup viewGroup) {
-            Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
-            Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
-            Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-            return this.f725a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
-        }
-
-        @Override // wm.c0
-        public KClass getType() {
-            return this.f725a.getType();
-        }
-
-        private b() {
-            this.f725a = new a(0, 1, null);
-        }
+    public c(Object bottom, List rest) {
+        Intrinsics.checkNotNullParameter(bottom, "bottom");
+        Intrinsics.checkNotNullParameter(rest, "rest");
+        List L0 = CollectionsKt.L0(CollectionsKt.e(bottom), rest);
+        this.f723a = L0;
+        this.f724b = CollectionsKt.z0(L0);
+        this.f725c = L0.subList(0, L0.size() - 1);
     }
 
-    /* renamed from: an.c$c  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public /* synthetic */ class C0013c {
+    public final List a() {
+        return this.f725c;
+    }
 
-        /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f726a;
+    public final List b() {
+        return this.f723a;
+    }
 
-        static {
-            int[] iArr = new int[e.a.values().length];
-            iArr[e.a.POSITIVE.ordinal()] = 1;
-            iArr[e.a.NEGATIVE.ordinal()] = 2;
-            iArr[e.a.NEUTRAL.ordinal()] = 3;
-            f726a = iArr;
+    public final Object c() {
+        return this.f724b;
+    }
+
+    public final c d(Function1 transform) {
+        Intrinsics.checkNotNullParameter(transform, "transform");
+        List<Object> list = this.f723a;
+        ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
+        for (Object obj : list) {
+            arrayList.add(transform.invoke(obj));
         }
+        return d.a(arrayList);
     }
 
-    public /* synthetic */ c(Context context, AttributeSet attributeSet, int i10, int i11, int i12, int i13, DefaultConstructorMarker defaultConstructorMarker) {
-        this(context, (i13 & 2) != 0 ? null : attributeSet, (i13 & 4) != 0 ? 0 : i10, (i13 & 8) != 0 ? 0 : i11, (i13 & 16) != 0 ? 0 : i12);
-    }
-
-    private final int h(e.a aVar) {
-        int i10 = C0013c.f726a[aVar.ordinal()];
-        if (i10 != 1) {
-            if (i10 != 2) {
-                if (i10 == 3) {
-                    return -3;
-                }
-                throw new p();
-            }
-            return -2;
-        }
-        return -1;
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void i(e rendering, DialogInterface dialogInterface) {
-        Intrinsics.checkNotNullParameter(rendering, "$rendering");
-        rendering.d().invoke(e.b.C0014b.f739a);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void j(e rendering, e.a button, DialogInterface dialogInterface, int i10) {
-        Intrinsics.checkNotNullParameter(rendering, "$rendering");
-        Intrinsics.checkNotNullParameter(button, "$button");
-        rendering.d().invoke(new e.b.a(button));
-    }
-
-    @Override // an.g
-    protected void d(g.a dialogRef) {
-        Unit unit;
-        Button k10;
-        Intrinsics.checkNotNullParameter(dialogRef, "dialogRef");
-        androidx.appcompat.app.a aVar = (androidx.appcompat.app.a) dialogRef.d();
-        final e eVar = (e) dialogRef.f();
-        int i10 = 0;
-        if (eVar.b()) {
-            aVar.setOnCancelListener(new DialogInterface.OnCancelListener() { // from class: an.a
-                @Override // android.content.DialogInterface.OnCancelListener
-                public final void onCancel(DialogInterface dialogInterface) {
-                    c.i(e.this, dialogInterface);
-                }
-            });
-            aVar.setCancelable(true);
+    public boolean equals(Object obj) {
+        c cVar;
+        List list = null;
+        if (obj instanceof c) {
+            cVar = (c) obj;
         } else {
-            aVar.setCancelable(false);
+            cVar = null;
         }
-        e.a[] values = e.a.values();
-        int length = values.length;
-        while (i10 < length) {
-            final e.a aVar2 = values[i10];
-            i10++;
-            String str = (String) eVar.a().get(aVar2);
-            if (str == null) {
-                unit = null;
-            } else {
-                aVar.n(h(aVar2), str, new DialogInterface.OnClickListener() { // from class: an.b
-                    @Override // android.content.DialogInterface.OnClickListener
-                    public final void onClick(DialogInterface dialogInterface, int i11) {
-                        c.j(e.this, aVar2, dialogInterface, i11);
-                    }
-                });
-                unit = Unit.f33074a;
-            }
-            if (unit == null && (k10 = aVar.k(h(aVar2))) != null) {
-                k10.setVisibility(4);
-            }
+        if (cVar != null) {
+            list = cVar.f723a;
         }
-        aVar.o(eVar.c());
-        aVar.setTitle(eVar.e());
+        return Intrinsics.areEqual(list, this.f723a);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    @Override // an.g
-    /* renamed from: g */
-    public g.a b(e initialModalRendering, a0 initialViewEnvironment) {
-        Intrinsics.checkNotNullParameter(initialModalRendering, "initialModalRendering");
-        Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
-        androidx.appcompat.app.a create = new a.C0019a(getContext(), this.f721p).create();
-        Intrinsics.checkNotNullExpressionValue(create, "Builder(context, dialogThemeResId)\n      .create()");
-        g.a aVar = new g.a(initialModalRendering, initialViewEnvironment, create, null, 8, null);
-        d(aVar);
-        return aVar;
+    public int hashCode() {
+        return this.f723a.hashCode();
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public c(Context context, AttributeSet attributeSet, int i10, int i11, int i12) {
-        super(context, attributeSet, i10, i11);
-        Intrinsics.checkNotNullParameter(context, "context");
-        this.f721p = i12;
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a implements c0 {
-
-        /* renamed from: a  reason: collision with root package name */
-        private final int f722a;
-
-        /* renamed from: b  reason: collision with root package name */
-        private final /* synthetic */ wm.f f723b;
-
-        /* renamed from: an.c$a$a  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        static final class C0011a extends Lambda implements Function4 {
-
-            /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ int f724d;
-
-            /* JADX INFO: Access modifiers changed from: package-private */
-            /* renamed from: an.c$a$a$a  reason: collision with other inner class name */
-            /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-            public /* synthetic */ class C0012a extends FunctionReferenceImpl implements Function2 {
-                C0012a(Object obj) {
-                    super(2, obj, c.class, "update", "update(Lcom/squareup/workflow1/ui/modal/HasModals;Lcom/squareup/workflow1/ui/ViewEnvironment;)V", 0);
-                }
-
-                public final void a(f p02, a0 p12) {
-                    Intrinsics.checkNotNullParameter(p02, "p0");
-                    Intrinsics.checkNotNullParameter(p12, "p1");
-                    ((c) this.receiver).c(p02, p12);
-                }
-
-                @Override // kotlin.jvm.functions.Function2
-                public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-                    a((f) obj, (a0) obj2);
-                    return Unit.f33074a;
-                }
-            }
-
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            C0011a(int i10) {
-                super(4);
-                this.f724d = i10;
-            }
-
-            @Override // kotlin.jvm.functions.Function4
-            /* renamed from: a */
-            public final View invoke(d initialRendering, a0 initialEnv, Context context, ViewGroup viewGroup) {
-                Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
-                Intrinsics.checkNotNullParameter(initialEnv, "initialEnv");
-                Intrinsics.checkNotNullParameter(context, "context");
-                c cVar = new c(context, null, 0, 0, this.f724d, 14, null);
-                cVar.setId(zm.a.f55928b);
-                cVar.setLayoutParams(new ViewGroup.LayoutParams(-1, -1));
-                g0.a(cVar, initialRendering, initialEnv, new C0012a(cVar));
-                return cVar;
-            }
-        }
-
-        public a(int i10) {
-            this.f722a = i10;
-            this.f723b = new wm.f(Reflection.getOrCreateKotlinClass(d.class), new C0011a(i10));
-        }
-
-        @Override // wm.c0
-        /* renamed from: b */
-        public View a(d initialRendering, a0 initialViewEnvironment, Context contextForNewView, ViewGroup viewGroup) {
-            Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
-            Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
-            Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-            return this.f723b.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
-        }
-
-        @Override // wm.c0
-        public KClass getType() {
-            return this.f723b.getType();
-        }
-
-        public /* synthetic */ a(int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
-            this((i11 & 1) != 0 ? 0 : i10);
-        }
+    public String toString() {
+        StringBuilder sb2 = new StringBuilder();
+        sb2.append((Object) c.class.getSimpleName());
+        sb2.append('(');
+        sb2.append(this.f723a);
+        sb2.append(')');
+        return sb2.toString();
     }
 }

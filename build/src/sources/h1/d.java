@@ -10,82 +10,82 @@ import java.util.HashMap;
 public class d {
 
     /* renamed from: s  reason: collision with root package name */
-    public static boolean f27425s = false;
+    public static boolean f26710s = false;
 
     /* renamed from: t  reason: collision with root package name */
-    public static boolean f27426t = true;
+    public static boolean f26711t = true;
 
     /* renamed from: u  reason: collision with root package name */
-    public static boolean f27427u = true;
+    public static boolean f26712u = true;
 
     /* renamed from: v  reason: collision with root package name */
-    public static boolean f27428v = true;
+    public static boolean f26713v = true;
 
     /* renamed from: w  reason: collision with root package name */
-    public static boolean f27429w = false;
+    public static boolean f26714w = false;
 
     /* renamed from: x  reason: collision with root package name */
-    public static Metrics f27430x;
+    public static Metrics f26715x;
 
     /* renamed from: y  reason: collision with root package name */
-    public static long f27431y;
+    public static long f26716y;
 
     /* renamed from: z  reason: collision with root package name */
-    public static long f27432z;
+    public static long f26717z;
 
     /* renamed from: e  reason: collision with root package name */
-    private a f27437e;
+    private a f26722e;
 
     /* renamed from: o  reason: collision with root package name */
-    final c f27447o;
+    final c f26732o;
 
     /* renamed from: r  reason: collision with root package name */
-    private a f27450r;
+    private a f26735r;
 
     /* renamed from: a  reason: collision with root package name */
-    private int f27433a = 1000;
+    private int f26718a = 1000;
 
     /* renamed from: b  reason: collision with root package name */
-    public boolean f27434b = false;
+    public boolean f26719b = false;
 
     /* renamed from: c  reason: collision with root package name */
-    int f27435c = 0;
+    int f26720c = 0;
 
     /* renamed from: d  reason: collision with root package name */
-    private HashMap f27436d = null;
+    private HashMap f26721d = null;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f27438f = 32;
+    private int f26723f = 32;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f27439g = 32;
+    private int f26724g = 32;
 
     /* renamed from: i  reason: collision with root package name */
-    public boolean f27441i = false;
+    public boolean f26726i = false;
 
     /* renamed from: j  reason: collision with root package name */
-    public boolean f27442j = false;
+    public boolean f26727j = false;
 
     /* renamed from: k  reason: collision with root package name */
-    private boolean[] f27443k = new boolean[32];
+    private boolean[] f26728k = new boolean[32];
 
     /* renamed from: l  reason: collision with root package name */
-    int f27444l = 1;
+    int f26729l = 1;
 
     /* renamed from: m  reason: collision with root package name */
-    int f27445m = 0;
+    int f26730m = 0;
 
     /* renamed from: n  reason: collision with root package name */
-    private int f27446n = 32;
+    private int f26731n = 32;
 
     /* renamed from: p  reason: collision with root package name */
-    private h[] f27448p = new h[1000];
+    private h[] f26733p = new h[1000];
 
     /* renamed from: q  reason: collision with root package name */
-    private int f27449q = 0;
+    private int f26734q = 0;
 
     /* renamed from: h  reason: collision with root package name */
-    h1.b[] f27440h = new h1.b[32];
+    h1.b[] f26725h = new h1.b[32];
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -107,65 +107,65 @@ public class d {
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class b extends h1.b {
         b(c cVar) {
-            this.f27419e = new i(this, cVar);
+            this.f26704e = new i(this, cVar);
         }
     }
 
     public d() {
         F();
         c cVar = new c();
-        this.f27447o = cVar;
-        this.f27437e = new g(cVar);
-        if (f27429w) {
-            this.f27450r = new b(cVar);
+        this.f26732o = cVar;
+        this.f26722e = new g(cVar);
+        if (f26714w) {
+            this.f26735r = new b(cVar);
         } else {
-            this.f27450r = new h1.b(cVar);
+            this.f26735r = new h1.b(cVar);
         }
     }
 
     private void B() {
-        int i10 = this.f27438f * 2;
-        this.f27438f = i10;
-        this.f27440h = (h1.b[]) Arrays.copyOf(this.f27440h, i10);
-        c cVar = this.f27447o;
-        cVar.f27424d = (h[]) Arrays.copyOf(cVar.f27424d, this.f27438f);
-        int i11 = this.f27438f;
-        this.f27443k = new boolean[i11];
-        this.f27439g = i11;
-        this.f27446n = i11;
-        Metrics metrics = f27430x;
+        int i10 = this.f26723f * 2;
+        this.f26723f = i10;
+        this.f26725h = (h1.b[]) Arrays.copyOf(this.f26725h, i10);
+        c cVar = this.f26732o;
+        cVar.f26709d = (h[]) Arrays.copyOf(cVar.f26709d, this.f26723f);
+        int i11 = this.f26723f;
+        this.f26728k = new boolean[i11];
+        this.f26724g = i11;
+        this.f26731n = i11;
+        Metrics metrics = f26715x;
         if (metrics != null) {
-            metrics.f2264f++;
-            metrics.f2275q = Math.max(metrics.f2275q, i11);
-            Metrics metrics2 = f27430x;
-            metrics2.f2284z = metrics2.f2275q;
+            metrics.f2233f++;
+            metrics.f2244q = Math.max(metrics.f2244q, i11);
+            Metrics metrics2 = f26715x;
+            metrics2.f2253z = metrics2.f2244q;
         }
     }
 
     private int E(a aVar, boolean z10) {
-        Metrics metrics = f27430x;
+        Metrics metrics = f26715x;
         if (metrics != null) {
-            metrics.f2268j++;
+            metrics.f2237j++;
         }
-        for (int i10 = 0; i10 < this.f27444l; i10++) {
-            this.f27443k[i10] = false;
+        for (int i10 = 0; i10 < this.f26729l; i10++) {
+            this.f26728k[i10] = false;
         }
         boolean z11 = false;
         int i11 = 0;
         while (!z11) {
-            Metrics metrics2 = f27430x;
+            Metrics metrics2 = f26715x;
             if (metrics2 != null) {
-                metrics2.f2269k++;
+                metrics2.f2238k++;
             }
             i11++;
-            if (i11 < this.f27444l * 2) {
+            if (i11 < this.f26729l * 2) {
                 if (aVar.getKey() != null) {
-                    this.f27443k[aVar.getKey().f27465i] = true;
+                    this.f26728k[aVar.getKey().f26750i] = true;
                 }
-                h c10 = aVar.c(this, this.f27443k);
+                h c10 = aVar.c(this, this.f26728k);
                 if (c10 != null) {
-                    boolean[] zArr = this.f27443k;
-                    int i12 = c10.f27465i;
+                    boolean[] zArr = this.f26728k;
+                    int i12 = c10.f26750i;
                     if (!zArr[i12]) {
                         zArr[i12] = true;
                     }
@@ -173,12 +173,12 @@ public class d {
                 if (c10 != null) {
                     float f10 = Float.MAX_VALUE;
                     int i13 = -1;
-                    for (int i14 = 0; i14 < this.f27445m; i14++) {
-                        h1.b bVar = this.f27440h[i14];
-                        if (bVar.f27415a.f27472u != h.a.UNRESTRICTED && !bVar.f27420f && bVar.t(c10)) {
-                            float i15 = bVar.f27419e.i(c10);
+                    for (int i14 = 0; i14 < this.f26730m; i14++) {
+                        h1.b bVar = this.f26725h[i14];
+                        if (bVar.f26700a.f26757u != h.a.UNRESTRICTED && !bVar.f26705f && bVar.t(c10)) {
+                            float i15 = bVar.f26704e.i(c10);
                             if (i15 < 0.0f) {
-                                float f11 = (-bVar.f27416b) / i15;
+                                float f11 = (-bVar.f26701b) / i15;
                                 if (f11 < f10) {
                                     i13 = i14;
                                     f10 = f11;
@@ -187,16 +187,16 @@ public class d {
                         }
                     }
                     if (i13 > -1) {
-                        h1.b bVar2 = this.f27440h[i13];
-                        bVar2.f27415a.f27466o = -1;
-                        Metrics metrics3 = f27430x;
+                        h1.b bVar2 = this.f26725h[i13];
+                        bVar2.f26700a.f26751o = -1;
+                        Metrics metrics3 = f26715x;
                         if (metrics3 != null) {
-                            metrics3.f2270l++;
+                            metrics3.f2239l++;
                         }
                         bVar2.x(c10);
-                        h hVar = bVar2.f27415a;
-                        hVar.f27466o = i13;
-                        hVar.k(this, bVar2);
+                        h hVar = bVar2.f26700a;
+                        hVar.f26751o = i13;
+                        hVar.j(this, bVar2);
                     }
                 } else {
                     z11 = true;
@@ -209,29 +209,29 @@ public class d {
 
     private void F() {
         int i10 = 0;
-        if (f27429w) {
-            while (i10 < this.f27445m) {
-                h1.b bVar = this.f27440h[i10];
+        if (f26714w) {
+            while (i10 < this.f26730m) {
+                h1.b bVar = this.f26725h[i10];
                 if (bVar != null) {
-                    this.f27447o.f27421a.release(bVar);
+                    this.f26732o.f26706a.release(bVar);
                 }
-                this.f27440h[i10] = null;
+                this.f26725h[i10] = null;
                 i10++;
             }
             return;
         }
-        while (i10 < this.f27445m) {
-            h1.b bVar2 = this.f27440h[i10];
+        while (i10 < this.f26730m) {
+            h1.b bVar2 = this.f26725h[i10];
             if (bVar2 != null) {
-                this.f27447o.f27422b.release(bVar2);
+                this.f26732o.f26707b.release(bVar2);
             }
-            this.f27440h[i10] = null;
+            this.f26725h[i10] = null;
             i10++;
         }
     }
 
     private h a(h.a aVar, String str) {
-        h hVar = (h) this.f27447o.f27423c.acquire();
+        h hVar = (h) this.f26732o.f26708c.acquire();
         if (hVar == null) {
             hVar = new h(aVar, str);
             hVar.i(aVar, str);
@@ -239,82 +239,82 @@ public class d {
             hVar.g();
             hVar.i(aVar, str);
         }
-        int i10 = this.f27449q;
-        int i11 = this.f27433a;
+        int i10 = this.f26734q;
+        int i11 = this.f26718a;
         if (i10 >= i11) {
             int i12 = i11 * 2;
-            this.f27433a = i12;
-            this.f27448p = (h[]) Arrays.copyOf(this.f27448p, i12);
+            this.f26718a = i12;
+            this.f26733p = (h[]) Arrays.copyOf(this.f26733p, i12);
         }
-        h[] hVarArr = this.f27448p;
-        int i13 = this.f27449q;
-        this.f27449q = i13 + 1;
+        h[] hVarArr = this.f26733p;
+        int i13 = this.f26734q;
+        this.f26734q = i13 + 1;
         hVarArr[i13] = hVar;
         return hVar;
     }
 
     private void l(h1.b bVar) {
         int i10;
-        if (f27427u && bVar.f27420f) {
-            bVar.f27415a.h(this, bVar.f27416b);
+        if (f26712u && bVar.f26705f) {
+            bVar.f26700a.h(this, bVar.f26701b);
         } else {
-            h1.b[] bVarArr = this.f27440h;
-            int i11 = this.f27445m;
+            h1.b[] bVarArr = this.f26725h;
+            int i11 = this.f26730m;
             bVarArr[i11] = bVar;
-            h hVar = bVar.f27415a;
-            hVar.f27466o = i11;
-            this.f27445m = i11 + 1;
-            hVar.k(this, bVar);
+            h hVar = bVar.f26700a;
+            hVar.f26751o = i11;
+            this.f26730m = i11 + 1;
+            hVar.j(this, bVar);
         }
-        if (f27427u && this.f27434b) {
+        if (f26712u && this.f26719b) {
             int i12 = 0;
-            while (i12 < this.f27445m) {
-                if (this.f27440h[i12] == null) {
+            while (i12 < this.f26730m) {
+                if (this.f26725h[i12] == null) {
                     System.out.println("WTF");
                 }
-                h1.b bVar2 = this.f27440h[i12];
-                if (bVar2 != null && bVar2.f27420f) {
-                    bVar2.f27415a.h(this, bVar2.f27416b);
-                    if (f27429w) {
-                        this.f27447o.f27421a.release(bVar2);
+                h1.b bVar2 = this.f26725h[i12];
+                if (bVar2 != null && bVar2.f26705f) {
+                    bVar2.f26700a.h(this, bVar2.f26701b);
+                    if (f26714w) {
+                        this.f26732o.f26706a.release(bVar2);
                     } else {
-                        this.f27447o.f27422b.release(bVar2);
+                        this.f26732o.f26707b.release(bVar2);
                     }
-                    this.f27440h[i12] = null;
+                    this.f26725h[i12] = null;
                     int i13 = i12 + 1;
                     int i14 = i13;
                     while (true) {
-                        i10 = this.f27445m;
+                        i10 = this.f26730m;
                         if (i13 >= i10) {
                             break;
                         }
-                        h1.b[] bVarArr2 = this.f27440h;
+                        h1.b[] bVarArr2 = this.f26725h;
                         int i15 = i13 - 1;
                         h1.b bVar3 = bVarArr2[i13];
                         bVarArr2[i15] = bVar3;
-                        h hVar2 = bVar3.f27415a;
-                        if (hVar2.f27466o == i13) {
-                            hVar2.f27466o = i15;
+                        h hVar2 = bVar3.f26700a;
+                        if (hVar2.f26751o == i13) {
+                            hVar2.f26751o = i15;
                         }
                         i14 = i13;
                         i13++;
                     }
                     if (i14 < i10) {
-                        this.f27440h[i14] = null;
+                        this.f26725h[i14] = null;
                     }
-                    this.f27445m = i10 - 1;
+                    this.f26730m = i10 - 1;
                     i12--;
                 }
                 i12++;
             }
-            this.f27434b = false;
+            this.f26719b = false;
         }
     }
 
     private void n() {
-        for (int i10 = 0; i10 < this.f27445m; i10++) {
-            h1.b bVar = this.f27440h[i10];
-            bVar.f27415a.f27468q = bVar.f27416b;
+        for (int i10 = 0; i10 < this.f26730m; i10++) {
+            h1.b bVar = this.f26725h[i10];
+            bVar.f26700a.f26753q = bVar.f26701b;
         }
     }
 
@@ -325,18 +325,18 @@ public class d {
     private int u(a aVar) {
         float f10;
         long j10;
-        for (int i10 = 0; i10 < this.f27445m; i10++) {
-            h1.b bVar = this.f27440h[i10];
-            if (bVar.f27415a.f27472u != h.a.UNRESTRICTED) {
+        for (int i10 = 0; i10 < this.f26730m; i10++) {
+            h1.b bVar = this.f26725h[i10];
+            if (bVar.f26700a.f26757u != h.a.UNRESTRICTED) {
                 float f11 = 0.0f;
-                if (bVar.f27416b < 0.0f) {
+                if (bVar.f26701b < 0.0f) {
                     boolean z10 = false;
                     int i11 = 0;
                     while (!z10) {
-                        Metrics metrics = f27430x;
+                        Metrics metrics = f26715x;
                         long j11 = 1;
                         if (metrics != null) {
-                            metrics.f2271m++;
+                            metrics.f2240m++;
                         }
                         i11++;
                         float f12 = Float.MAX_VALUE;
@@ -345,25 +345,25 @@ public class d {
                         int i14 = -1;
                         int i15 = 0;
                         while (true) {
-                            if (i12 >= this.f27445m) {
+                            if (i12 >= this.f26730m) {
                                 break;
                             }
-                            h1.b bVar2 = this.f27440h[i12];
-                            if (bVar2.f27415a.f27472u != h.a.UNRESTRICTED && !bVar2.f27420f && bVar2.f27416b < f11) {
-                                if (f27428v) {
-                                    int h10 = bVar2.f27419e.h();
+                            h1.b bVar2 = this.f26725h[i12];
+                            if (bVar2.f26700a.f26757u != h.a.UNRESTRICTED && !bVar2.f26705f && bVar2.f26701b < f11) {
+                                if (f26713v) {
+                                    int h10 = bVar2.f26704e.h();
                                     int i16 = 0;
                                     while (i16 < h10) {
                                         float f13 = f11;
-                                        h c10 = bVar2.f27419e.c(i16);
+                                        h c10 = bVar2.f26704e.c(i16);
                                         long j12 = j11;
-                                        float i17 = bVar2.f27419e.i(c10);
+                                        float i17 = bVar2.f26704e.i(c10);
                                         if (i17 > f13) {
                                             for (int i18 = 0; i18 < 9; i18++) {
-                                                float f14 = c10.f27470s[i18] / i17;
+                                                float f14 = c10.f26755s[i18] / i17;
                                                 if ((f14 < f12 && i18 == i15) || i18 > i15) {
                                                     i15 = i18;
-                                                    i14 = c10.f27465i;
+                                                    i14 = c10.f26750i;
                                                     i13 = i12;
                                                     f12 = f14;
                                                 }
@@ -376,12 +376,12 @@ public class d {
                                 } else {
                                     f10 = f11;
                                     j10 = j11;
-                                    for (int i19 = 1; i19 < this.f27444l; i19++) {
-                                        h hVar = this.f27447o.f27424d[i19];
-                                        float i20 = bVar2.f27419e.i(hVar);
+                                    for (int i19 = 1; i19 < this.f26729l; i19++) {
+                                        h hVar = this.f26732o.f26709d[i19];
+                                        float i20 = bVar2.f26704e.i(hVar);
                                         if (i20 > f10) {
                                             for (int i21 = 0; i21 < 9; i21++) {
-                                                float f15 = hVar.f27470s[i21] / i20;
+                                                float f15 = hVar.f26755s[i21] / i20;
                                                 if ((f15 < f12 && i21 == i15) || i21 > i15) {
                                                     i15 = i21;
                                                     f12 = f15;
@@ -405,20 +405,20 @@ public class d {
                         float f16 = f11;
                         long j13 = j11;
                         if (i13 != -1) {
-                            h1.b bVar3 = this.f27440h[i13];
-                            bVar3.f27415a.f27466o = -1;
-                            Metrics metrics2 = f27430x;
+                            h1.b bVar3 = this.f26725h[i13];
+                            bVar3.f26700a.f26751o = -1;
+                            Metrics metrics2 = f26715x;
                             if (metrics2 != null) {
-                                metrics2.f2270l += j13;
+                                metrics2.f2239l += j13;
                             }
-                            bVar3.x(this.f27447o.f27424d[i14]);
-                            h hVar2 = bVar3.f27415a;
-                            hVar2.f27466o = i13;
-                            hVar2.k(this, bVar3);
+                            bVar3.x(this.f26732o.f26709d[i14]);
+                            h hVar2 = bVar3.f26700a;
+                            hVar2.f26751o = i13;
+                            hVar2.j(this, bVar3);
                         } else {
                             z10 = true;
                         }
-                        if (i11 > this.f27444l / 2) {
+                        if (i11 > this.f26729l / 2) {
                             z10 = true;
                         }
                         f11 = f16;
@@ -431,52 +431,52 @@ public class d {
     }
 
     public static Metrics x() {
-        return f27430x;
+        return f26715x;
     }
 
     public int A(Object obj) {
         h i10 = ((androidx.constraintlayout.core.widgets.d) obj).i();
         if (i10 != null) {
-            return (int) (i10.f27468q + 0.5f);
+            return (int) (i10.f26753q + 0.5f);
         }
         return 0;
     }
 
     public void C() {
-        Metrics metrics = f27430x;
+        Metrics metrics = f26715x;
         if (metrics != null) {
-            metrics.f2265g++;
+            metrics.f2234g++;
         }
-        if (this.f27437e.isEmpty()) {
+        if (this.f26722e.isEmpty()) {
             n();
-        } else if (!this.f27441i && !this.f27442j) {
-            D(this.f27437e);
+        } else if (!this.f26726i && !this.f26727j) {
+            D(this.f26722e);
         } else {
-            Metrics metrics2 = f27430x;
+            Metrics metrics2 = f26715x;
             if (metrics2 != null) {
-                metrics2.f2277s++;
+                metrics2.f2246s++;
             }
-            for (int i10 = 0; i10 < this.f27445m; i10++) {
-                if (!this.f27440h[i10].f27420f) {
-                    D(this.f27437e);
+            for (int i10 = 0; i10 < this.f26730m; i10++) {
+                if (!this.f26725h[i10].f26705f) {
+                    D(this.f26722e);
                     return;
                 }
             }
-            Metrics metrics3 = f27430x;
+            Metrics metrics3 = f26715x;
             if (metrics3 != null) {
-                metrics3.f2276r++;
+                metrics3.f2245r++;
             }
             n();
         }
     }
 
     void D(a aVar) {
-        Metrics metrics = f27430x;
+        Metrics metrics = f26715x;
         if (metrics != null) {
-            metrics.f2280v++;
-            metrics.f2281w = Math.max(metrics.f2281w, this.f27444l);
-            Metrics metrics2 = f27430x;
-            metrics2.f2282x = Math.max(metrics2.f2282x, this.f27445m);
+            metrics.f2249v++;
+            metrics.f2250w = Math.max(metrics.f2250w, this.f26729l);
+            Metrics metrics2 = f26715x;
+            metrics2.f2251x = Math.max(metrics2.f2251x, this.f26730m);
         }
         u(aVar);
         E(aVar, false);
@@ -487,8 +487,8 @@ public class d {
         c cVar;
         int i10 = 0;
         while (true) {
-            cVar = this.f27447o;
-            h[] hVarArr = cVar.f27424d;
+            cVar = this.f26732o;
+            h[] hVarArr = cVar.f26709d;
             if (i10 >= hVarArr.length) {
                 break;
             }
@@ -498,28 +498,28 @@ public class d {
             }
             i10++;
         }
-        cVar.f27423c.a(this.f27448p, this.f27449q);
-        this.f27449q = 0;
-        Arrays.fill(this.f27447o.f27424d, (Object) null);
-        HashMap hashMap = this.f27436d;
+        cVar.f26708c.a(this.f26733p, this.f26734q);
+        this.f26734q = 0;
+        Arrays.fill(this.f26732o.f26709d, (Object) null);
+        HashMap hashMap = this.f26721d;
         if (hashMap != null) {
             hashMap.clear();
         }
-        this.f27435c = 0;
-        this.f27437e.clear();
-        this.f27444l = 1;
-        for (int i11 = 0; i11 < this.f27445m; i11++) {
-            h1.b bVar = this.f27440h[i11];
+        this.f26720c = 0;
+        this.f26722e.clear();
+        this.f26729l = 1;
+        for (int i11 = 0; i11 < this.f26730m; i11++) {
+            h1.b bVar = this.f26725h[i11];
             if (bVar != null) {
-                bVar.f27417c = false;
+                bVar.f26702c = false;
             }
         }
         F();
-        this.f27445m = 0;
-        if (f27429w) {
-            this.f27450r = new b(this.f27447o);
+        this.f26730m = 0;
+        if (f26714w) {
+            this.f26735r = new b(this.f26732o);
         } else {
-            this.f27450r = new h1.b(this.f27447o);
+            this.f26735r = new h1.b(this.f26732o);
         }
     }
 
@@ -567,31 +567,31 @@ public class d {
             if (r8 != 0) goto L4
             goto La8
         L4:
-            androidx.constraintlayout.core.Metrics r0 = h1.d.f27430x
+            androidx.constraintlayout.core.Metrics r0 = h1.d.f26715x
             r1 = 1
             if (r0 == 0) goto L18
-            long r3 = r0.f2266h
+            long r3 = r0.f2235h
             long r3 = r3 + r1
-            r0.f2266h = r3
-            boolean r3 = r8.f27420f
+            r0.f2235h = r3
+            boolean r3 = r8.f26705f
             if (r3 == 0) goto L18
-            long r3 = r0.f2267i
+            long r3 = r0.f2236i
             long r3 = r3 + r1
-            r0.f2267i = r3
+            r0.f2236i = r3
         L18:
-            int r0 = r7.f27445m
+            int r0 = r7.f26730m
             r3 = 1
             int r0 = r0 + r3
-            int r4 = r7.f27446n
+            int r4 = r7.f26731n
             if (r0 >= r4) goto L27
-            int r0 = r7.f27444l
+            int r0 = r7.f26729l
             int r0 = r0 + r3
-            int r4 = r7.f27439g
+            int r4 = r7.f26724g
             if (r0 < r4) goto L2a
         L27:
             r7.B()
         L2a:
-            boolean r0 = r8.f27420f
+            boolean r0 = r8.f26705f
             r4 = 0
             if (r0 != 0) goto La3
             r8.D(r7)
@@ -603,50 +603,50 @@ public class d {
             boolean r0 = r8.f(r7)
             if (r0 == 0) goto L9a
             h1.h r0 = r7.p()
-            r8.f27415a = r0
-            int r5 = r7.f27445m
+            r8.f26700a = r0
+            int r5 = r7.f26730m
             r7.l(r8)
-            int r6 = r7.f27445m
+            int r6 = r7.f26730m
             int r5 = r5 + r3
             if (r6 != r5) goto L9a
-            h1.d$a r4 = r7.f27450r
+            h1.d$a r4 = r7.f26735r
             r4.b(r8)
-            h1.d$a r4 = r7.f27450r
+            h1.d$a r4 = r7.f26735r
             r7.E(r4, r3)
-            int r4 = r0.f27466o
+            int r4 = r0.f26751o
             r5 = -1
             if (r4 != r5) goto L9b
-            h1.h r4 = r8.f27415a
+            h1.h r4 = r8.f26700a
             if (r4 != r0) goto L78
             h1.h r0 = r8.v(r0)
             if (r0 == 0) goto L78
-            androidx.constraintlayout.core.Metrics r4 = h1.d.f27430x
+            androidx.constraintlayout.core.Metrics r4 = h1.d.f26715x
             if (r4 == 0) goto L75
-            long r5 = r4.f2270l
+            long r5 = r4.f2239l
             long r5 = r5 + r1
-            r4.f2270l = r5
+            r4.f2239l = r5
         L75:
             r8.x(r0)
         L78:
-            boolean r0 = r8.f27420f
+            boolean r0 = r8.f26705f
             if (r0 != 0) goto L81
-            h1.h r0 = r8.f27415a
-            r0.k(r7, r8)
+            h1.h r0 = r8.f26700a
+            r0.j(r7, r8)
         L81:
-            boolean r0 = h1.d.f27429w
+            boolean r0 = h1.d.f26714w
             if (r0 == 0) goto L8d
-            h1.c r0 = r7.f27447o
-            h1.e r0 = r0.f27421a
+            h1.c r0 = r7.f26732o
+            h1.e r0 = r0.f26706a
             r0.release(r8)
             goto L94
         L8d:
-            h1.c r0 = r7.f27447o
-            h1.e r0 = r0.f27422b
+            h1.c r0 = r7.f26732o
+            h1.e r0 = r0.f26707b
             r0.release(r8)
         L94:
-            int r0 = r7.f27445m
+            int r0 = r7.f26730m
             int r0 = r0 - r3
-            r7.f27445m = r0
+            r7.f26730m = r0
             goto L9b
         L9a:
             r3 = r4
@@ -666,12 +666,12 @@ public class d {
     }
 
     public h1.b e(h hVar, h hVar2, int i10, int i11) {
-        Metrics metrics = f27430x;
+        Metrics metrics = f26715x;
         if (metrics != null) {
             metrics.P++;
         }
-        if (f27426t && i11 == 8 && hVar2.f27469r && hVar.f27466o == -1) {
-            hVar.h(this, hVar2.f27468q + i10);
+        if (f26711t && i11 == 8 && hVar2.f26754r && hVar.f26751o == -1) {
+            hVar.h(this, hVar2.f26753q + i10);
             return null;
         }
         h1.b r10 = r();
@@ -684,30 +684,30 @@ public class d {
     }
 
     public void f(h hVar, int i10) {
-        Metrics metrics = f27430x;
+        Metrics metrics = f26715x;
         if (metrics != null) {
             metrics.P++;
         }
-        if (f27426t && hVar.f27466o == -1) {
+        if (f26711t && hVar.f26751o == -1) {
             float f10 = i10;
             hVar.h(this, f10);
-            for (int i11 = 0; i11 < this.f27435c + 1; i11++) {
-                h hVar2 = this.f27447o.f27424d[i11];
-                if (hVar2 != null && hVar2.f27476y && hVar2.f27477z == hVar.f27465i) {
+            for (int i11 = 0; i11 < this.f26720c + 1; i11++) {
+                h hVar2 = this.f26732o.f26709d[i11];
+                if (hVar2 != null && hVar2.f26761y && hVar2.f26762z == hVar.f26750i) {
                     hVar2.h(this, hVar2.A + f10);
                 }
             }
             return;
         }
-        int i12 = hVar.f27466o;
+        int i12 = hVar.f26751o;
         if (i12 != -1) {
-            h1.b bVar = this.f27440h[i12];
-            if (bVar.f27420f) {
-                bVar.f27416b = i10;
+            h1.b bVar = this.f26725h[i12];
+            if (bVar.f26705f) {
+                bVar.f26701b = i10;
                 return;
-            } else if (bVar.f27419e.h() == 0) {
-                bVar.f27420f = true;
-                bVar.f27416b = i10;
+            } else if (bVar.f26704e.h() == 0) {
+                bVar.f26705f = true;
+                bVar.f26701b = i10;
                 return;
             } else {
                 h1.b r10 = r();
@@ -724,7 +724,7 @@ public class d {
     public void g(h hVar, h hVar2, int i10, boolean z10) {
         h1.b r10 = r();
         h t10 = t();
-        t10.f27467p = 0;
+        t10.f26752p = 0;
         r10.o(hVar, hVar2, t10, i10);
         d(r10);
     }
@@ -732,10 +732,10 @@ public class d {
     public void h(h hVar, h hVar2, int i10, int i11) {
         h1.b r10 = r();
         h t10 = t();
-        t10.f27467p = 0;
+        t10.f26752p = 0;
         r10.o(hVar, hVar2, t10, i10);
         if (i11 != 8) {
-            m(r10, (int) (r10.f27419e.i(t10) * (-1.0f)), i11);
+            m(r10, (int) (r10.f26704e.i(t10) * (-1.0f)), i11);
         }
         d(r10);
     }
@@ -743,7 +743,7 @@ public class d {
     public void i(h hVar, h hVar2, int i10, boolean z10) {
         h1.b r10 = r();
         h t10 = t();
-        t10.f27467p = 0;
+        t10.f26752p = 0;
         r10.p(hVar, hVar2, t10, i10);
         d(r10);
     }
@@ -751,10 +751,10 @@ public class d {
     public void j(h hVar, h hVar2, int i10, int i11) {
         h1.b r10 = r();
         h t10 = t();
-        t10.f27467p = 0;
+        t10.f26752p = 0;
         r10.p(hVar, hVar2, t10, i10);
         if (i11 != 8) {
-            m(r10, (int) (r10.f27419e.i(t10) * (-1.0f)), i11);
+            m(r10, (int) (r10.f26704e.i(t10) * (-1.0f)), i11);
         }
         d(r10);
     }
@@ -773,38 +773,38 @@ public class d {
     }
 
     public h o(int i10, String str) {
-        Metrics metrics = f27430x;
+        Metrics metrics = f26715x;
         if (metrics != null) {
-            metrics.f2272n++;
+            metrics.f2241n++;
         }
-        if (this.f27444l + 1 >= this.f27439g) {
+        if (this.f26729l + 1 >= this.f26724g) {
             B();
         }
         h a10 = a(h.a.ERROR, str);
-        int i11 = this.f27435c + 1;
-        this.f27435c = i11;
-        this.f27444l++;
-        a10.f27465i = i11;
-        a10.f27467p = i10;
-        this.f27447o.f27424d[i11] = a10;
-        this.f27437e.a(a10);
+        int i11 = this.f26720c + 1;
+        this.f26720c = i11;
+        this.f26729l++;
+        a10.f26750i = i11;
+        a10.f26752p = i10;
+        this.f26732o.f26709d[i11] = a10;
+        this.f26722e.a(a10);
         return a10;
     }
 
     public h p() {
-        Metrics metrics = f27430x;
+        Metrics metrics = f26715x;
         if (metrics != null) {
-            metrics.f2274p++;
+            metrics.f2243p++;
         }
-        if (this.f27444l + 1 >= this.f27439g) {
+        if (this.f26729l + 1 >= this.f26724g) {
             B();
         }
         h a10 = a(h.a.SLACK, null);
-        int i10 = this.f27435c + 1;
-        this.f27435c = i10;
-        this.f27444l++;
-        a10.f27465i = i10;
-        this.f27447o.f27424d[i10] = a10;
+        int i10 = this.f26720c + 1;
+        this.f26720c = i10;
+        this.f26729l++;
+        a10.f26750i = i10;
+        this.f26732o.f26709d[i10] = a10;
         return a10;
     }
 
@@ -813,48 +813,48 @@ public class d {
         if (obj == null) {
             return null;
         }
-        if (this.f27444l + 1 >= this.f27439g) {
+        if (this.f26729l + 1 >= this.f26724g) {
             B();
         }
         if (obj instanceof androidx.constraintlayout.core.widgets.d) {
             androidx.constraintlayout.core.widgets.d dVar = (androidx.constraintlayout.core.widgets.d) obj;
             hVar = dVar.i();
             if (hVar == null) {
-                dVar.s(this.f27447o);
+                dVar.s(this.f26732o);
                 hVar = dVar.i();
             }
-            int i10 = hVar.f27465i;
-            if (i10 != -1 && i10 <= this.f27435c && this.f27447o.f27424d[i10] != null) {
+            int i10 = hVar.f26750i;
+            if (i10 != -1 && i10 <= this.f26720c && this.f26732o.f26709d[i10] != null) {
                 return hVar;
             }
             if (i10 != -1) {
                 hVar.g();
             }
-            int i11 = this.f27435c + 1;
-            this.f27435c = i11;
-            this.f27444l++;
-            hVar.f27465i = i11;
-            hVar.f27472u = h.a.UNRESTRICTED;
-            this.f27447o.f27424d[i11] = hVar;
+            int i11 = this.f26720c + 1;
+            this.f26720c = i11;
+            this.f26729l++;
+            hVar.f26750i = i11;
+            hVar.f26757u = h.a.UNRESTRICTED;
+            this.f26732o.f26709d[i11] = hVar;
         }
         return hVar;
     }
 
     public h1.b r() {
         h1.b bVar;
-        if (f27429w) {
-            bVar = (h1.b) this.f27447o.f27421a.acquire();
+        if (f26714w) {
+            bVar = (h1.b) this.f26732o.f26706a.acquire();
             if (bVar == null) {
-                bVar = new b(this.f27447o);
-                f27432z++;
+                bVar = new b(this.f26732o);
+                f26717z++;
             } else {
                 bVar.y();
             }
         } else {
-            bVar = (h1.b) this.f27447o.f27422b.acquire();
+            bVar = (h1.b) this.f26732o.f26707b.acquire();
             if (bVar == null) {
-                bVar = new h1.b(this.f27447o);
-                f27431y++;
+                bVar = new h1.b(this.f26732o);
+                f26716y++;
             } else {
                 bVar.y();
             }
@@ -864,35 +864,35 @@ public class d {
     }
 
     public h t() {
-        Metrics metrics = f27430x;
+        Metrics metrics = f26715x;
         if (metrics != null) {
-            metrics.f2273o++;
+            metrics.f2242o++;
         }
-        if (this.f27444l + 1 >= this.f27439g) {
+        if (this.f26729l + 1 >= this.f26724g) {
             B();
         }
         h a10 = a(h.a.SLACK, null);
-        int i10 = this.f27435c + 1;
-        this.f27435c = i10;
-        this.f27444l++;
-        a10.f27465i = i10;
-        this.f27447o.f27424d[i10] = a10;
+        int i10 = this.f26720c + 1;
+        this.f26720c = i10;
+        this.f26729l++;
+        a10.f26750i = i10;
+        this.f26732o.f26709d[i10] = a10;
         return a10;
     }
 
     public void v(Metrics metrics) {
-        f27430x = metrics;
+        f26715x = metrics;
     }
 
     public c w() {
-        return this.f27447o;
+        return this.f26732o;
     }
 
     public int y() {
-        return this.f27445m;
+        return this.f26730m;
     }
 
     public int z() {
-        return this.f27435c;
+        return this.f26720c;
     }
 }

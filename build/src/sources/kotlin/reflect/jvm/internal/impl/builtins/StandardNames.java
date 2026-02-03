@@ -90,7 +90,7 @@ public final class StandardNames {
     public static final Name TO_STRING_NAME;
 
     /* renamed from: a  reason: collision with root package name */
-    private static final FqName f33234a;
+    private static final FqName f32624a;
 
     @SourceDebugExtension({"SMAP\nStandardNames.kt\nKotlin\n*S Kotlin\n*F\n+ 1 StandardNames.kt\norg/jetbrains/kotlin/builtins/StandardNames$FqNames\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,330:1\n11563#2,3:331\n11563#2,3:334\n*S KotlinDebug\n*F\n+ 1 StandardNames.kt\norg/jetbrains/kotlin/builtins/StandardNames$FqNames\n*L\n218#1:331,3\n222#1:334,3\n*E\n"})
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -591,7 +591,7 @@ public final class StandardNames {
         Intrinsics.checkNotNullExpressionValue(identifier24, "identifier(...)");
         FqName child6 = child5.child(identifier24);
         CONCURRENT_ATOMICS_PACKAGE_FQ_NAME = child6;
-        f33234a = new FqName("error.NonExistentClass");
+        f32624a = new FqName("error.NonExistentClass");
         BUILT_INS_PACKAGE_FQ_NAMES = x0.i(fqName3, child2, child3, child, fqName2, child4, fqName, child6);
     }
 

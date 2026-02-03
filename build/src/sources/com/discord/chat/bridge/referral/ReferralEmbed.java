@@ -1,14 +1,15 @@
 package com.discord.chat.bridge.referral;
 
 import androidx.recyclerview.widget.RecyclerView;
-import bt.h;
-import bt.n2;
-import bt.p0;
-import bt.v1;
+import at.m;
 import com.discord.chat.bridge.structurabletext.AnnotatedStructurableText;
 import com.discord.chat.bridge.structurabletext.AnnotatedStructurableTextSerializer;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import com.facebook.react.uimanager.ViewProps;
+import dt.h;
+import dt.n2;
+import dt.p0;
+import dt.v1;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -18,7 +19,6 @@ import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.jetbrains.annotations.NotNull;
 import org.webrtc.PeerConnection;
-import ys.m;
 @m(with = ReferralEmbedSerializer.class)
 @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\bw\u0018\u0000 \u00122\u00020\u0001:\u0003\u0010\u0011\u0012R\u0012\u0010\u0002\u001a\u00020\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0004\u0010\u0005R\u0012\u0010\u0006\u001a\u00020\u0007X¦\u0004¢\u0006\u0006\u001a\u0004\b\b\u0010\tR\u0012\u0010\n\u001a\u00020\u0007X¦\u0004¢\u0006\u0006\u001a\u0004\b\u000b\u0010\tR\u0012\u0010\f\u001a\u00020\u0007X¦\u0004¢\u0006\u0006\u001a\u0004\b\r\u0010\tR\u0014\u0010\u000e\u001a\u0004\u0018\u00010\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\u000f\u0010\u0005\u0082\u0001\u0002\u0013\u0014¨\u0006\u0015"}, d2 = {"Lcom/discord/chat/bridge/referral/ReferralEmbed;", "", "headerText", "", "getHeaderText", "()Ljava/lang/String;", "headerColor", "", "getHeaderColor", "()I", ViewProps.BACKGROUND_COLOR, "getBackgroundColor", "thumbnailCornerRadius", "getThumbnailCornerRadius", "headerLogoUrl", "getHeaderLogoUrl", "Resolving", "Resolved", "Companion", "Lcom/discord/chat/bridge/referral/ReferralEmbed$Resolved;", "Lcom/discord/chat/bridge/referral/ReferralEmbed$Resolving;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -218,62 +218,62 @@ public interface ReferralEmbed {
         }
 
         public static final /* synthetic */ void write$Self$chat_release(Resolved resolved, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-            compositeEncoder.x(serialDescriptor, 0, resolved.getHeaderText());
-            compositeEncoder.v(serialDescriptor, 1, resolved.getHeaderColor());
-            compositeEncoder.v(serialDescriptor, 2, resolved.getBackgroundColor());
-            compositeEncoder.v(serialDescriptor, 3, resolved.getThumbnailCornerRadius());
-            n2 n2Var = n2.f7662a;
-            compositeEncoder.B(serialDescriptor, 4, n2Var, resolved.getHeaderLogoUrl());
-            if (compositeEncoder.y(serialDescriptor, 5) || resolved.headerUrl != null) {
-                compositeEncoder.B(serialDescriptor, 5, n2Var, resolved.headerUrl);
+            compositeEncoder.y(serialDescriptor, 0, resolved.getHeaderText());
+            compositeEncoder.w(serialDescriptor, 1, resolved.getHeaderColor());
+            compositeEncoder.w(serialDescriptor, 2, resolved.getBackgroundColor());
+            compositeEncoder.w(serialDescriptor, 3, resolved.getThumbnailCornerRadius());
+            n2 n2Var = n2.f20978a;
+            compositeEncoder.s(serialDescriptor, 4, n2Var, resolved.getHeaderLogoUrl());
+            if (compositeEncoder.z(serialDescriptor, 5) || resolved.headerUrl != null) {
+                compositeEncoder.s(serialDescriptor, 5, n2Var, resolved.headerUrl);
             }
-            if (compositeEncoder.y(serialDescriptor, 6) || resolved.thumbnailUrl != null) {
-                compositeEncoder.B(serialDescriptor, 6, n2Var, resolved.thumbnailUrl);
+            if (compositeEncoder.z(serialDescriptor, 6) || resolved.thumbnailUrl != null) {
+                compositeEncoder.s(serialDescriptor, 6, n2Var, resolved.thumbnailUrl);
             }
-            if (compositeEncoder.y(serialDescriptor, 7) || resolved.titleText != null) {
-                compositeEncoder.B(serialDescriptor, 7, n2Var, resolved.titleText);
+            if (compositeEncoder.z(serialDescriptor, 7) || resolved.titleText != null) {
+                compositeEncoder.s(serialDescriptor, 7, n2Var, resolved.titleText);
             }
-            if (compositeEncoder.y(serialDescriptor, 8) || resolved.titleColor != null) {
-                compositeEncoder.B(serialDescriptor, 8, p0.f7678a, resolved.titleColor);
+            if (compositeEncoder.z(serialDescriptor, 8) || resolved.titleColor != null) {
+                compositeEncoder.s(serialDescriptor, 8, p0.f20994a, resolved.titleColor);
             }
-            if (compositeEncoder.y(serialDescriptor, 9) || resolved.bodyText != null) {
-                compositeEncoder.B(serialDescriptor, 9, n2Var, resolved.bodyText);
+            if (compositeEncoder.z(serialDescriptor, 9) || resolved.bodyText != null) {
+                compositeEncoder.s(serialDescriptor, 9, n2Var, resolved.bodyText);
             }
-            if (compositeEncoder.y(serialDescriptor, 10) || resolved.structuredBodyText != null) {
-                compositeEncoder.B(serialDescriptor, 10, AnnotatedStructurableTextSerializer.INSTANCE, resolved.structuredBodyText);
+            if (compositeEncoder.z(serialDescriptor, 10) || resolved.structuredBodyText != null) {
+                compositeEncoder.s(serialDescriptor, 10, AnnotatedStructurableTextSerializer.INSTANCE, resolved.structuredBodyText);
             }
-            if (compositeEncoder.y(serialDescriptor, 11) || resolved.bodyTextColor != null) {
-                compositeEncoder.B(serialDescriptor, 11, p0.f7678a, resolved.bodyTextColor);
+            if (compositeEncoder.z(serialDescriptor, 11) || resolved.bodyTextColor != null) {
+                compositeEncoder.s(serialDescriptor, 11, p0.f20994a, resolved.bodyTextColor);
             }
-            if (compositeEncoder.y(serialDescriptor, 12) || resolved.linkButtonLabel != null) {
-                compositeEncoder.B(serialDescriptor, 12, AnnotatedStructurableTextSerializer.INSTANCE, resolved.linkButtonLabel);
+            if (compositeEncoder.z(serialDescriptor, 12) || resolved.linkButtonLabel != null) {
+                compositeEncoder.s(serialDescriptor, 12, AnnotatedStructurableTextSerializer.INSTANCE, resolved.linkButtonLabel);
             }
-            if (compositeEncoder.y(serialDescriptor, 13) || resolved.linkButtonColor != null) {
-                compositeEncoder.B(serialDescriptor, 13, p0.f7678a, resolved.linkButtonColor);
+            if (compositeEncoder.z(serialDescriptor, 13) || resolved.linkButtonColor != null) {
+                compositeEncoder.s(serialDescriptor, 13, p0.f20994a, resolved.linkButtonColor);
             }
-            if (compositeEncoder.y(serialDescriptor, 14) || resolved.subText != null) {
-                compositeEncoder.B(serialDescriptor, 14, n2Var, resolved.subText);
+            if (compositeEncoder.z(serialDescriptor, 14) || resolved.subText != null) {
+                compositeEncoder.s(serialDescriptor, 14, n2Var, resolved.subText);
             }
-            if (compositeEncoder.y(serialDescriptor, 15) || resolved.subTextColor != null) {
-                compositeEncoder.B(serialDescriptor, 15, p0.f7678a, resolved.subTextColor);
+            if (compositeEncoder.z(serialDescriptor, 15) || resolved.subTextColor != null) {
+                compositeEncoder.s(serialDescriptor, 15, p0.f20994a, resolved.subTextColor);
             }
-            if (compositeEncoder.y(serialDescriptor, 16) || resolved.footerText != null) {
-                compositeEncoder.B(serialDescriptor, 16, n2Var, resolved.footerText);
+            if (compositeEncoder.z(serialDescriptor, 16) || resolved.footerText != null) {
+                compositeEncoder.s(serialDescriptor, 16, n2Var, resolved.footerText);
             }
-            if (compositeEncoder.y(serialDescriptor, 17) || resolved.footerTextColor != null) {
-                compositeEncoder.B(serialDescriptor, 17, p0.f7678a, resolved.footerTextColor);
+            if (compositeEncoder.z(serialDescriptor, 17) || resolved.footerTextColor != null) {
+                compositeEncoder.s(serialDescriptor, 17, p0.f20994a, resolved.footerTextColor);
             }
-            if (compositeEncoder.y(serialDescriptor, 18) || resolved.acceptLabelText != null) {
-                compositeEncoder.B(serialDescriptor, 18, n2Var, resolved.acceptLabelText);
+            if (compositeEncoder.z(serialDescriptor, 18) || resolved.acceptLabelText != null) {
+                compositeEncoder.s(serialDescriptor, 18, n2Var, resolved.acceptLabelText);
             }
-            if (compositeEncoder.y(serialDescriptor, 19) || resolved.acceptLabelColor != null) {
-                compositeEncoder.B(serialDescriptor, 19, p0.f7678a, resolved.acceptLabelColor);
+            if (compositeEncoder.z(serialDescriptor, 19) || resolved.acceptLabelColor != null) {
+                compositeEncoder.s(serialDescriptor, 19, p0.f20994a, resolved.acceptLabelColor);
             }
-            if (compositeEncoder.y(serialDescriptor, 20) || resolved.acceptLabelIconUrl != null) {
-                compositeEncoder.B(serialDescriptor, 20, n2Var, resolved.acceptLabelIconUrl);
+            if (compositeEncoder.z(serialDescriptor, 20) || resolved.acceptLabelIconUrl != null) {
+                compositeEncoder.s(serialDescriptor, 20, n2Var, resolved.acceptLabelIconUrl);
             }
-            if (compositeEncoder.y(serialDescriptor, 21) || resolved.canBeAccepted != null) {
-                compositeEncoder.B(serialDescriptor, 21, h.f7626a, resolved.canBeAccepted);
+            if (compositeEncoder.z(serialDescriptor, 21) || resolved.canBeAccepted != null) {
+                compositeEncoder.s(serialDescriptor, 21, h.f20942a, resolved.canBeAccepted);
             }
         }
 
@@ -649,13 +649,13 @@ public interface ReferralEmbed {
         }
 
         public static final /* synthetic */ void write$Self$chat_release(Resolving resolving, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-            compositeEncoder.x(serialDescriptor, 0, resolving.getHeaderText());
-            compositeEncoder.v(serialDescriptor, 1, resolving.getHeaderColor());
-            compositeEncoder.v(serialDescriptor, 2, resolving.getBackgroundColor());
-            compositeEncoder.v(serialDescriptor, 3, resolving.getThumbnailCornerRadius());
-            compositeEncoder.B(serialDescriptor, 4, n2.f7662a, resolving.getHeaderLogoUrl());
-            compositeEncoder.v(serialDescriptor, 5, resolving.resolvingGradientStart);
-            compositeEncoder.v(serialDescriptor, 6, resolving.resolvingGradientEnd);
+            compositeEncoder.y(serialDescriptor, 0, resolving.getHeaderText());
+            compositeEncoder.w(serialDescriptor, 1, resolving.getHeaderColor());
+            compositeEncoder.w(serialDescriptor, 2, resolving.getBackgroundColor());
+            compositeEncoder.w(serialDescriptor, 3, resolving.getThumbnailCornerRadius());
+            compositeEncoder.s(serialDescriptor, 4, n2.f20978a, resolving.getHeaderLogoUrl());
+            compositeEncoder.w(serialDescriptor, 5, resolving.resolvingGradientStart);
+            compositeEncoder.w(serialDescriptor, 6, resolving.resolvingGradientEnd);
         }
 
         @NotNull

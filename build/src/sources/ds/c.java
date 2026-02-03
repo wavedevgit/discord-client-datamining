@@ -1,16 +1,34 @@
 package ds;
 
-import kotlin.jvm.functions.Function1;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-class c implements Function1 {
+import fs.a0;
+import fs.w0;
+import java.util.ArrayList;
+import java.util.Collection;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.reflect.KClass;
+import kotlin.reflect.KProperty1;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public abstract class c {
+    public static final Collection a(KClass kClass) {
+        Intrinsics.checkNotNullParameter(kClass, "<this>");
+        ArrayList arrayList = new ArrayList();
+        for (Object obj : ((w0.a) ((w0) kClass).J().getValue()).I()) {
+            a0 a0Var = (a0) obj;
+            if (c(a0Var) && (a0Var instanceof KProperty1)) {
+                arrayList.add(obj);
+            }
+        }
+        return arrayList;
+    }
 
-    /* renamed from: d  reason: collision with root package name */
-    public static final c f22160d = new c();
+    private static final boolean b(a0 a0Var) {
+        if (a0Var.D().getExtensionReceiverParameter() != null) {
+            return true;
+        }
+        return false;
+    }
 
-    @Override // kotlin.jvm.functions.Function1
-    public Object invoke(Object obj) {
-        w0 d10;
-        d10 = h.d((Class) obj);
-        return d10;
+    private static final boolean c(a0 a0Var) {
+        return !b(a0Var);
     }
 }

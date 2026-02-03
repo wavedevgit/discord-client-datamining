@@ -9,10 +9,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class ErrorRequest {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f19804a;
+    private final a f18786a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object f19805b;
+    private final Object f18787b;
 
     /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
     /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
@@ -34,7 +34,7 @@ public final class ErrorRequest {
         static {
             a[] a10 = a();
             $VALUES = a10;
-            $ENTRIES = qr.a.a(a10);
+            $ENTRIES = sr.a.a(a10);
         }
 
         private a(String str, int i10) {
@@ -55,15 +55,15 @@ public final class ErrorRequest {
 
     public ErrorRequest(a errorType, Object obj) {
         Intrinsics.checkNotNullParameter(errorType, "errorType");
-        this.f19804a = errorType;
-        this.f19805b = obj;
+        this.f18786a = errorType;
+        this.f18787b = obj;
     }
 
     public final Object a() {
-        return this.f19805b;
+        return this.f18787b;
     }
 
     public final a b() {
-        return this.f19804a;
+        return this.f18786a;
     }
 }

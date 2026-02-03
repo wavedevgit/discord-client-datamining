@@ -1,81 +1,141 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function arg0, arg1, arg2() {
-        _fun68552: for (var _fun68552_ip = 0;;) switch (_fun68552_ip) {
+    var1 = exports;
+    var2 = global;
+    var5 = var2.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var2 = true;
+    var3.value = var2;
+    var2 = '__esModule';
+    var2 = var4.bind(var5)(var1, var2, var3);
+    var3 = {};
+    var2 = 'function pnpm_utilsTs1(worklet,wait=0){const value={time:0};return function(...args){"worklet";const t=Date.now();const now=t-value.time;if(now<wait){value.time=t;return;}value.time=t;return worklet(...args);};}';
+    var3.code = var2;
+    var2 = {};
+    var4 = 'function pnpm_utilsTs2(...args){const{value,wait,worklet}=this.__closure;const t=Date.now();const now=t-value.time;if(now<wait){value.time=t;return;}value.time=t;return worklet(...args);}';
+    var2.code = var4;
+    var _closure1_slot0 = var2;
+    var2 = function arg0() {
+        _fun68574: for (var _fun68574_ip = 0;;) switch (_fun68574_ip) {
             case 0:
-                var4 = arg0;
-                var6 = arg1;
-                var5 = arg2;
-                var1 = var4.length;
-                var3 = 0;
-                var0 = var6;
-                if (!(var0 < var3)) {
-                    _fun68552_ip = 42;
-                    continue _fun68552
-                }
-            case 23:
-                var2 = -var6;
-                var7 = var2 > var1;
-                var2 = 0;
-                if (var7) {
-                    _fun68552_ip = 39;
-                    continue _fun68552
-                }
-            case 35:
-                var2 = var1 + var6;
-            case 39:
-                var0 = var2;
-            case 42:
-                if (!(var5 > var1)) {
-                    _fun68552_ip = 49;
-                    continue _fun68552
-                }
-            case 46:
-                var5 = var1;
-            case 49:
-                var2 = var5;
-                if (!(var2 < var3)) {
-                    _fun68552_ip = 60;
-                    continue _fun68552
-                }
-            case 56:
-                var2 = var5 + var1;
-            case 60:
-                var5 = var0 > var2;
+                var2 = arg0;
+                var7 = undefined;
+                var5 = undefined;
+                var _closure2_slot0 = var2;
+                var1 = arguments.length;
+                var4 = 1;
+                var6 = var1 > var4;
                 var1 = 0;
-                if (var5) {
-                    _fun68552_ip = 77;
-                    continue _fun68552
-                }
-            case 69:
-                var2 = var2 - var0;
-                var1 = var2 >>> var3;
-            case 77:
-                var2 = var0 >>> var3;
-                var0 = global;
-                var5 = var0.Array;
-                var0 = undefined;
-                var0 = var5.bind(var0)(var1);
                 var3 = 0;
-                if (!(var3 < var1)) {
-                    _fun68552_ip = 121;
-                    continue _fun68552
+                if (!var6) {
+                    _fun68574_ip = 44;
+                    continue _fun68574
                 }
-            case 102:
-                var5 = var3 + var2;
-                var5 = var4[var5];
-                var0[var3] = var5;
-                var3 = var3 + 1;
-                if (var3 < var1) {
-                    _fun68552_ip = 102;
-                    continue _fun68552
+            case 30:
+                var6 = arguments[var4];
+                var3 = 0;
+                if (!(var7 !== var6)) {
+                    _fun68574_ip = 44;
+                    continue _fun68574
                 }
-            case 121:
+            case 40:
+                var3 = arguments[var4];
+            case 44:
+                var _closure2_slot1 = var3;
+                var4 = {};
+                var4.time = var1;
+                var _closure2_slot2 = var4;
+                var0 = function() {
+                    _fun68575: for (var _fun68575_ip = 0;;) switch (_fun68575_ip) {
+                        case 0:
+                            var0 = undefined;
+                            var3 = undefined;
+                            var1 = global;
+                            var2 = var1.Date;
+                            var1 = var2.now;
+                            var2 = var1.bind(var2)();
+                            var4 = _closure2_slot2;
+                            var4 = var4.time;
+                            var5 = var2 - var4;
+                            var4 = _closure2_slot1;
+                            if (!(!(var5 < var4))) {
+                                _fun68575_ip = 75;
+                                continue _fun68575
+                            }
+                        case 46:
+                            var4 = _closure2_slot2;
+                            var4.time = var2;
+                            var5 = _closure2_slot0;
+                            var4 = var5.apply;
+                            var3 = arguments;
+                            var3 = var4.bind(var5)(var0, var3);
+                            return var3;
+                        case 75:
+                            var1 = _closure2_slot2;
+                            var1.time = var2;
+                            return var0;
+                    }
+                };
+                var1 = {};
+                var1.value = var4;
+                var1.wait = var3;
+                var1.worklet = var2;
+                var0.__closure = var1;
+                var1 = 8768898864142.0;
+                var0.__workletHash = var1;
+                var1 = _closure1_slot0;
+                var0.__initData = var1;
                 return var0;
         }
     };
-    var0 = arg4;
-    var0.exports = var1;
+    var4 = {};
+    var2.__closure = var4;
+    var4 = 1678132827161.0;
+    var2.__workletHash = var4;
+    var2.__initData = var3;
+    var3 = {};
+    var4 = 'function pnpm_utilsTs3(defaultScrollValue,snapPoints){let snapPoint;if(snapPoints){snapPoint=snapPoints.find(function(offset){return offset>=defaultScrollValue;});}return snapPoint!==null&&snapPoint!==void 0?snapPoint:defaultScrollValue;}';
+    var3.code = var4;
+    var0 = function arg0, arg1() {
+        _fun68576: for (var _fun68576_ip = 0;;) switch (_fun68576_ip) {
+            case 0:
+                var0 = arg0;
+                var4 = arg1;
+                var _closure2_slot0 = var0;
+                var1 = undefined;
+                if (!var4) {
+                    _fun68576_ip = 34;
+                    continue _fun68576
+                }
+            case 17:
+                var3 = var4.find;
+                var2 = function(arg0) { // Environment: var2
+                    var1 = _closure2_slot0;
+                    var0 = arg0;
+                    var0 = var0 >= var1;
+                    return var0;
+                };
+                var1 = var3.bind(var4)(var2);
+            case 34:
+                var2 = null;
+                if (!(var2 != var1)) {
+                    _fun68576_ip = 43;
+                    continue _fun68576
+                }
+            case 40:
+                var0 = var1;
+            case 43:
+                return var0;
+        }
+    };
+    var4 = {};
+    var0.__closure = var4;
+    var4 = 10680474034033.0;
+    var0.__workletHash = var4;
+    var0.__initData = var3;
+    var1.debounce = var2;
+    var1.scrollDistanceWithRespectToSnapPoints = var0;
     var0 = undefined;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

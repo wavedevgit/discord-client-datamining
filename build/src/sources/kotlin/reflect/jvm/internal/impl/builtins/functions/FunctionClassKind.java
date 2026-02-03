@@ -5,7 +5,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.reflect.jvm.internal.impl.builtins.functions.FunctionTypeKind;
 import org.jetbrains.annotations.NotNull;
-import qr.a;
+import sr.a;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -14,10 +14,10 @@ public final class FunctionClassKind {
     public static final Companion Companion;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ FunctionClassKind[] f33269d;
+    private static final /* synthetic */ FunctionClassKind[] f32659d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f33270e;
+    private static final /* synthetic */ EnumEntries f32660e;
     public static final FunctionClassKind Function = new FunctionClassKind("Function", 0);
     public static final FunctionClassKind SuspendFunction = new FunctionClassKind("SuspendFunction", 1);
     public static final FunctionClassKind KFunction = new FunctionClassKind("KFunction", 2);
@@ -54,8 +54,8 @@ public final class FunctionClassKind {
 
     static {
         FunctionClassKind[] a10 = a();
-        f33269d = a10;
-        f33270e = a.a(a10);
+        f32659d = a10;
+        f32660e = a.a(a10);
         Companion = new Companion(null);
     }
 
@@ -71,6 +71,6 @@ public final class FunctionClassKind {
     }
 
     public static FunctionClassKind[] values() {
-        return (FunctionClassKind[]) f33269d.clone();
+        return (FunctionClassKind[]) f32659d.clone();
     }
 }

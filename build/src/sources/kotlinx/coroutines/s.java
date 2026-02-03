@@ -10,7 +10,7 @@ import kotlinx.coroutines.s;
 public abstract class s extends CoroutineDispatcher implements Closeable, AutoCloseable {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f36148i = new a(null);
+    public static final a f35538i = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends kotlin.coroutines.b {
@@ -27,7 +27,7 @@ public abstract class s extends CoroutineDispatcher implements Closeable, AutoCl
         }
 
         private a() {
-            super(CoroutineDispatcher.f36082e, new Function1() { // from class: hs.t0
+            super(CoroutineDispatcher.f35472e, new Function1() { // from class: js.t0
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     kotlinx.coroutines.s d10;

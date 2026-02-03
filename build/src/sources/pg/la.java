@@ -5,7 +5,7 @@ import ui.c;
 final class la implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final la f45655a = new la();
+    static final la f45613a = new la();
 
     static {
         c.b a10 = ui.c.a("detectorMode");

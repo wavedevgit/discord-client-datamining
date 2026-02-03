@@ -1,25 +1,25 @@
 package kotlin.reflect.jvm.internal.impl.types.model;
 
 import kotlin.enums.EnumEntries;
-import qr.a;
+import sr.a;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class CaptureStatus {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ CaptureStatus[] f35806d;
+    private static final /* synthetic */ CaptureStatus[] f35196d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f35807e;
+    private static final /* synthetic */ EnumEntries f35197e;
     public static final CaptureStatus FOR_SUBTYPING = new CaptureStatus("FOR_SUBTYPING", 0);
     public static final CaptureStatus FOR_INCORPORATION = new CaptureStatus("FOR_INCORPORATION", 1);
     public static final CaptureStatus FROM_EXPRESSION = new CaptureStatus("FROM_EXPRESSION", 2);
 
     static {
         CaptureStatus[] a10 = a();
-        f35806d = a10;
-        f35807e = a.a(a10);
+        f35196d = a10;
+        f35197e = a.a(a10);
     }
 
     private CaptureStatus(String str, int i10) {
@@ -34,6 +34,6 @@ public final class CaptureStatus {
     }
 
     public static CaptureStatus[] values() {
-        return (CaptureStatus[]) f35806d.clone();
+        return (CaptureStatus[]) f35196d.clone();
     }
 }

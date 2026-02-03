@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/self_mod/shared/SafetyWarningUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var5 = function arg0, arg1() {
-        _fun72376: for (var _fun72376_ip = 0;;) switch (_fun72376_ip) {
+        _fun72486: for (var _fun72486_ip = 0;;) switch (_fun72486_ip) {
             case 0:
                 var0 = arg1;
                 var6 = var0.channelId;
@@ -154,8 +154,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var6 != var8;
                 var6 = undefined;
                 if (!var7) {
-                    _fun72376_ip = 86;
-                    continue _fun72376
+                    _fun72486_ip = 86;
+                    continue _fun72486
                 }
             case 73:
                 var7 = global;
@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.trackViewedEvent = var5;
     var2.ViewNameTypes = var4;
     var4 = function arg0() {
-        _fun72377: for (var _fun72377_ip = 0;;) switch (_fun72377_ip) {
+        _fun72487: for (var _fun72487_ip = 0;;) switch (_fun72487_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.channelId;
@@ -197,8 +197,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var9 != var11;
                 var9 = undefined;
                 if (!var10) {
-                    _fun72377_ip = 108;
-                    continue _fun72377
+                    _fun72487_ip = 108;
+                    continue _fun72487
                 }
             case 95:
                 var10 = global;
@@ -217,7 +217,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.trackNamedViewEvent = var4;
     var2.CtaEventTypes = var3;
     var3 = function arg0() {
-        _fun72378: for (var _fun72378_ip = 0;;) switch (_fun72378_ip) {
+        _fun72488: for (var _fun72488_ip = 0;;) switch (_fun72488_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.channelId;
@@ -241,8 +241,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var9 != var11;
                 var9 = undefined;
                 if (!var10) {
-                    _fun72378_ip = 108;
-                    continue _fun72378
+                    _fun72488_ip = 108;
+                    continue _fun72488
                 }
             case 95:
                 var10 = global;
@@ -260,7 +260,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackCtaEvent = var3;
     var1 = function() {
-        _fun72379: for (var _fun72379_ip = 0;;) switch (_fun72379_ip) {
+        _fun72489: for (var _fun72489_ip = 0;;) switch (_fun72489_ip) {
             case 0:
                 var1 = _closure1_slot2;
                 var0 = var1.getCurrentUser;
@@ -269,8 +269,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1 == var0;
                 var1 = undefined;
                 if (var2) {
-                    _fun72379_ip = 33;
-                    continue _fun72379
+                    _fun72489_ip = 33;
+                    continue _fun72489
                 }
             case 27:
                 var1 = var0.nsfwAllowed;
@@ -282,4 +282,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getUserIsTeen = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1613, 660, 795, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 660, 795, 2]);

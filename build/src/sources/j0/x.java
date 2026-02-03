@@ -26,43 +26,43 @@ import x.y0;
 public class x {
 
     /* renamed from: c  reason: collision with root package name */
-    protected Thread f31555c;
+    protected Thread f31351c;
 
     /* renamed from: g  reason: collision with root package name */
-    protected EGLConfig f31559g;
+    protected EGLConfig f31355g;
 
     /* renamed from: i  reason: collision with root package name */
-    protected Surface f31561i;
+    protected Surface f31357i;
 
     /* renamed from: a  reason: collision with root package name */
-    protected final AtomicBoolean f31553a = new AtomicBoolean(false);
+    protected final AtomicBoolean f31349a = new AtomicBoolean(false);
 
     /* renamed from: b  reason: collision with root package name */
-    protected final Map f31554b = new HashMap();
+    protected final Map f31350b = new HashMap();
 
     /* renamed from: d  reason: collision with root package name */
-    protected EGLDisplay f31556d = EGL14.EGL_NO_DISPLAY;
+    protected EGLDisplay f31352d = EGL14.EGL_NO_DISPLAY;
 
     /* renamed from: e  reason: collision with root package name */
-    protected EGLContext f31557e = EGL14.EGL_NO_CONTEXT;
+    protected EGLContext f31353e = EGL14.EGL_NO_CONTEXT;
 
     /* renamed from: f  reason: collision with root package name */
-    protected int[] f31558f = l0.d.f36814a;
+    protected int[] f31354f = l0.d.f36283a;
 
     /* renamed from: h  reason: collision with root package name */
-    protected EGLSurface f31560h = EGL14.EGL_NO_SURFACE;
+    protected EGLSurface f31356h = EGL14.EGL_NO_SURFACE;
 
     /* renamed from: j  reason: collision with root package name */
-    protected Map f31562j = Collections.EMPTY_MAP;
+    protected Map f31358j = Collections.EMPTY_MAP;
 
     /* renamed from: k  reason: collision with root package name */
-    protected d.f f31563k = null;
+    protected d.f f31359k = null;
 
     /* renamed from: l  reason: collision with root package name */
-    protected d.e f31564l = d.e.UNKNOWN;
+    protected d.e f31360l = d.e.UNKNOWN;
 
     /* renamed from: m  reason: collision with root package name */
-    private int f31565m = -1;
+    private int f31361m = -1;
 
     private void a(int i10) {
         GLES20.glActiveTexture(33984);
@@ -78,11 +78,11 @@ public class x {
         int i13;
         int[] iArr;
         EGLDisplay eglGetDisplay = EGL14.eglGetDisplay(0);
-        this.f31556d = eglGetDisplay;
+        this.f31352d = eglGetDisplay;
         if (!Objects.equals(eglGetDisplay, EGL14.EGL_NO_DISPLAY)) {
             int i14 = 2;
             int[] iArr2 = new int[2];
-            if (EGL14.eglInitialize(this.f31556d, iArr2, 0, iArr2, 1)) {
+            if (EGL14.eglInitialize(this.f31352d, iArr2, 0, iArr2, 1)) {
                 if (aVar != null) {
                     aVar.c(iArr2[0] + "." + iArr2[1]);
                 }
@@ -108,42 +108,42 @@ public class x {
                     i13 = 1;
                 }
                 EGLConfig[] eGLConfigArr = new EGLConfig[1];
-                if (EGL14.eglChooseConfig(this.f31556d, new int[]{12324, i10, 12323, i10, 12322, i10, 12321, i11, 12325, 0, 12326, 0, 12352, i15, EglBase.EGL_RECORDABLE_ANDROID, i13, 12339, 5, 12344}, 0, eGLConfigArr, 0, 1, new int[1], 0)) {
+                if (EGL14.eglChooseConfig(this.f31352d, new int[]{12324, i10, 12323, i10, 12322, i10, 12321, i11, 12325, 0, 12326, 0, 12352, i15, EglBase.EGL_RECORDABLE_ANDROID, i13, 12339, 5, 12344}, 0, eGLConfigArr, 0, 1, new int[1], 0)) {
                     EGLConfig eGLConfig = eGLConfigArr[0];
                     if (zVar.d()) {
                         i14 = 3;
                     }
-                    EGLContext eglCreateContext = EGL14.eglCreateContext(this.f31556d, eGLConfig, EGL14.EGL_NO_CONTEXT, new int[]{12440, i14, 12344}, 0);
+                    EGLContext eglCreateContext = EGL14.eglCreateContext(this.f31352d, eGLConfig, EGL14.EGL_NO_CONTEXT, new int[]{12440, i14, 12344}, 0);
                     l0.d.f("eglCreateContext");
-                    this.f31559g = eGLConfig;
-                    this.f31557e = eglCreateContext;
-                    EGL14.eglQueryContext(this.f31556d, eglCreateContext, 12440, new int[1], 0);
+                    this.f31355g = eGLConfig;
+                    this.f31353e = eglCreateContext;
+                    EGL14.eglQueryContext(this.f31352d, eglCreateContext, 12440, new int[1], 0);
                     Log.d("OpenGlRenderer", "EGLContext created, client version " + iArr[0]);
                     return;
                 }
                 throw new IllegalStateException("Unable to find a suitable EGLConfig");
             }
-            this.f31556d = EGL14.EGL_NO_DISPLAY;
+            this.f31352d = EGL14.EGL_NO_DISPLAY;
             throw new IllegalStateException("Unable to initialize EGL14");
         }
         throw new IllegalStateException("Unable to get EGL14 display");
     }
 
     private void d() {
-        EGLDisplay eGLDisplay = this.f31556d;
-        EGLConfig eGLConfig = this.f31559g;
+        EGLDisplay eGLDisplay = this.f31352d;
+        EGLConfig eGLConfig = this.f31355g;
         Objects.requireNonNull(eGLConfig);
-        this.f31560h = l0.d.n(eGLDisplay, eGLConfig, 1, 1);
+        this.f31356h = l0.d.n(eGLDisplay, eGLConfig, 1, 1);
     }
 
     private b2.c e(x.z zVar) {
-        l0.d.i(this.f31553a, false);
+        l0.d.i(this.f31349a, false);
         try {
             b(zVar, null);
             d();
-            i(this.f31560h);
+            i(this.f31356h);
             String glGetString = GLES20.glGetString(7939);
-            String eglQueryString = EGL14.eglQueryString(this.f31556d, 12373);
+            String eglQueryString = EGL14.eglQueryString(this.f31352d, 12373);
             if (glGetString == null) {
                 glGetString = "";
             }
@@ -160,38 +160,38 @@ public class x {
     }
 
     private void l() {
-        for (d.f fVar : this.f31562j.values()) {
+        for (d.f fVar : this.f31358j.values()) {
             fVar.b();
         }
-        this.f31562j = Collections.EMPTY_MAP;
-        this.f31563k = null;
-        if (!Objects.equals(this.f31556d, EGL14.EGL_NO_DISPLAY)) {
-            EGLDisplay eGLDisplay = this.f31556d;
+        this.f31358j = Collections.EMPTY_MAP;
+        this.f31359k = null;
+        if (!Objects.equals(this.f31352d, EGL14.EGL_NO_DISPLAY)) {
+            EGLDisplay eGLDisplay = this.f31352d;
             EGLSurface eGLSurface = EGL14.EGL_NO_SURFACE;
             EGL14.eglMakeCurrent(eGLDisplay, eGLSurface, eGLSurface, EGL14.EGL_NO_CONTEXT);
-            for (l0.g gVar : this.f31554b.values()) {
-                if (!Objects.equals(gVar.a(), EGL14.EGL_NO_SURFACE) && !EGL14.eglDestroySurface(this.f31556d, gVar.a())) {
+            for (l0.g gVar : this.f31350b.values()) {
+                if (!Objects.equals(gVar.a(), EGL14.EGL_NO_SURFACE) && !EGL14.eglDestroySurface(this.f31352d, gVar.a())) {
                     l0.d.e("eglDestroySurface");
                 }
             }
-            this.f31554b.clear();
-            if (!Objects.equals(this.f31560h, EGL14.EGL_NO_SURFACE)) {
-                EGL14.eglDestroySurface(this.f31556d, this.f31560h);
-                this.f31560h = EGL14.EGL_NO_SURFACE;
+            this.f31350b.clear();
+            if (!Objects.equals(this.f31356h, EGL14.EGL_NO_SURFACE)) {
+                EGL14.eglDestroySurface(this.f31352d, this.f31356h);
+                this.f31356h = EGL14.EGL_NO_SURFACE;
             }
-            if (!Objects.equals(this.f31557e, EGL14.EGL_NO_CONTEXT)) {
-                EGL14.eglDestroyContext(this.f31556d, this.f31557e);
-                this.f31557e = EGL14.EGL_NO_CONTEXT;
+            if (!Objects.equals(this.f31353e, EGL14.EGL_NO_CONTEXT)) {
+                EGL14.eglDestroyContext(this.f31352d, this.f31353e);
+                this.f31353e = EGL14.EGL_NO_CONTEXT;
             }
             EGL14.eglReleaseThread();
-            EGL14.eglTerminate(this.f31556d);
-            this.f31556d = EGL14.EGL_NO_DISPLAY;
+            EGL14.eglTerminate(this.f31352d);
+            this.f31352d = EGL14.EGL_NO_DISPLAY;
         }
-        this.f31559g = null;
-        this.f31565m = -1;
-        this.f31564l = d.e.UNKNOWN;
-        this.f31561i = null;
-        this.f31555c = null;
+        this.f31355g = null;
+        this.f31361m = -1;
+        this.f31360l = d.e.UNKNOWN;
+        this.f31357i = null;
+        this.f31351c = null;
     }
 
     private void q(ByteBuffer byteBuffer, Size size, float[] fArr) {
@@ -219,12 +219,12 @@ public class x {
         l0.d.g("glFramebufferTexture2D");
         GLES20.glActiveTexture(33984);
         l0.d.g("glActiveTexture");
-        GLES20.glBindTexture(36197, this.f31565m);
+        GLES20.glBindTexture(36197, this.f31361m);
         l0.d.g("glBindTexture");
-        this.f31561i = null;
+        this.f31357i = null;
         GLES20.glViewport(0, 0, size.getWidth(), size.getHeight());
         GLES20.glScissor(0, 0, size.getWidth(), size.getHeight());
-        d.f fVar = (d.f) b2.e.g(this.f31563k);
+        d.f fVar = (d.f) b2.e.g(this.f31359k);
         if (fVar instanceof d.g) {
             ((d.g) fVar).h(fArr);
         }
@@ -235,17 +235,17 @@ public class x {
         GLES20.glBindFramebuffer(36160, 0);
         l0.d.s(u10);
         l0.d.r(t10);
-        a(this.f31565m);
+        a(this.f31361m);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public l0.g c(Surface surface) {
         try {
-            EGLDisplay eGLDisplay = this.f31556d;
-            EGLConfig eGLConfig = this.f31559g;
+            EGLDisplay eGLDisplay = this.f31352d;
+            EGLConfig eGLConfig = this.f31355g;
             Objects.requireNonNull(eGLConfig);
-            EGLSurface q10 = l0.d.q(eGLDisplay, eGLConfig, surface, this.f31558f);
-            Size x10 = l0.d.x(this.f31556d, q10);
+            EGLSurface q10 = l0.d.q(eGLDisplay, eGLConfig, surface, this.f31354f);
+            Size x10 = l0.d.x(this.f31352d, q10);
             return l0.g.d(q10, x10.getWidth(), x10.getHeight());
         } catch (IllegalArgumentException | IllegalStateException e10) {
             y0.m("OpenGlRenderer", "Failed to create EGL surface: " + e10.getMessage(), e10);
@@ -255,44 +255,44 @@ public class x {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public l0.g f(Surface surface) {
-        b2.e.j(this.f31554b.containsKey(surface), "The surface is not registered.");
-        l0.g gVar = (l0.g) this.f31554b.get(surface);
+        b2.e.j(this.f31350b.containsKey(surface), "The surface is not registered.");
+        l0.g gVar = (l0.g) this.f31350b.get(surface);
         Objects.requireNonNull(gVar);
         return gVar;
     }
 
     public int g() {
-        l0.d.i(this.f31553a, true);
-        l0.d.h(this.f31555c);
-        return this.f31565m;
+        l0.d.i(this.f31349a, true);
+        l0.d.h(this.f31351c);
+        return this.f31361m;
     }
 
     public l0.e h(x.z zVar, Map map) {
-        l0.d.i(this.f31553a, false);
+        l0.d.i(this.f31349a, false);
         e.a a10 = l0.e.a();
         try {
             if (zVar.d()) {
                 b2.c e10 = e(zVar);
-                String str = (String) b2.e.g((String) e10.f6198a);
-                String str2 = (String) b2.e.g((String) e10.f6199b);
+                String str = (String) b2.e.g((String) e10.f6244a);
+                String str2 = (String) b2.e.g((String) e10.f6245b);
                 if (!str.contains("GL_EXT_YUV_target")) {
                     y0.l("OpenGlRenderer", "Device does not support GL_EXT_YUV_target. Fallback to SDR.");
-                    zVar = x.z.f53321d;
+                    zVar = x.z.f53042d;
                 }
-                this.f31558f = l0.d.k(str2, zVar);
+                this.f31354f = l0.d.k(str2, zVar);
                 a10.d(str);
                 a10.b(str2);
             }
             b(zVar, a10);
             d();
-            i(this.f31560h);
+            i(this.f31356h);
             a10.e(l0.d.w());
-            this.f31562j = l0.d.o(zVar, map);
+            this.f31358j = l0.d.o(zVar, map);
             int p10 = l0.d.p();
-            this.f31565m = p10;
+            this.f31361m = p10;
             s(p10);
-            this.f31555c = Thread.currentThread();
-            this.f31553a.set(true);
+            this.f31351c = Thread.currentThread();
+            this.f31349a.set(true);
             return a10.a();
         } catch (IllegalArgumentException e11) {
             e = e11;
@@ -307,45 +307,45 @@ public class x {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void i(EGLSurface eGLSurface) {
-        b2.e.g(this.f31556d);
-        b2.e.g(this.f31557e);
-        if (EGL14.eglMakeCurrent(this.f31556d, eGLSurface, eGLSurface, this.f31557e)) {
+        b2.e.g(this.f31352d);
+        b2.e.g(this.f31353e);
+        if (EGL14.eglMakeCurrent(this.f31352d, eGLSurface, eGLSurface, this.f31353e)) {
             return;
         }
         throw new IllegalStateException("eglMakeCurrent failed");
     }
 
     public void j(Surface surface) {
-        l0.d.i(this.f31553a, true);
-        l0.d.h(this.f31555c);
-        if (!this.f31554b.containsKey(surface)) {
-            this.f31554b.put(surface, l0.d.f36825l);
+        l0.d.i(this.f31349a, true);
+        l0.d.h(this.f31351c);
+        if (!this.f31350b.containsKey(surface)) {
+            this.f31350b.put(surface, l0.d.f36294l);
         }
     }
 
     public void k() {
-        if (!this.f31553a.getAndSet(false)) {
+        if (!this.f31349a.getAndSet(false)) {
             return;
         }
-        l0.d.h(this.f31555c);
+        l0.d.h(this.f31351c);
         l();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void m(Surface surface, boolean z10) {
         l0.g gVar;
-        if (this.f31561i == surface) {
-            this.f31561i = null;
-            i(this.f31560h);
+        if (this.f31357i == surface) {
+            this.f31357i = null;
+            i(this.f31356h);
         }
         if (z10) {
-            gVar = (l0.g) this.f31554b.remove(surface);
+            gVar = (l0.g) this.f31350b.remove(surface);
         } else {
-            gVar = (l0.g) this.f31554b.put(surface, l0.d.f36825l);
+            gVar = (l0.g) this.f31350b.put(surface, l0.d.f36294l);
         }
-        if (gVar != null && gVar != l0.d.f36825l) {
+        if (gVar != null && gVar != l0.d.f36294l) {
             try {
-                EGL14.eglDestroySurface(this.f31556d, gVar.a());
+                EGL14.eglDestroySurface(this.f31352d, gVar.a());
             } catch (RuntimeException e10) {
                 y0.m("OpenGlRenderer", "Failed to destroy EGL surface: " + e10.getMessage(), e10);
             }
@@ -353,42 +353,42 @@ public class x {
     }
 
     public void n(long j10, float[] fArr, Surface surface) {
-        l0.d.i(this.f31553a, true);
-        l0.d.h(this.f31555c);
+        l0.d.i(this.f31349a, true);
+        l0.d.h(this.f31351c);
         l0.g f10 = f(surface);
-        if (f10 == l0.d.f36825l) {
+        if (f10 == l0.d.f36294l) {
             f10 = c(surface);
             if (f10 != null) {
-                this.f31554b.put(surface, f10);
+                this.f31350b.put(surface, f10);
             } else {
                 return;
             }
         }
-        if (surface != this.f31561i) {
+        if (surface != this.f31357i) {
             i(f10.a());
-            this.f31561i = surface;
+            this.f31357i = surface;
             GLES20.glViewport(0, 0, f10.c(), f10.b());
             GLES20.glScissor(0, 0, f10.c(), f10.b());
         }
-        d.f fVar = (d.f) b2.e.g(this.f31563k);
+        d.f fVar = (d.f) b2.e.g(this.f31359k);
         if (fVar instanceof d.g) {
             ((d.g) fVar).h(fArr);
         }
         GLES20.glDrawArrays(5, 0, 4);
         l0.d.g("glDrawArrays");
-        EGLExt.eglPresentationTimeANDROID(this.f31556d, f10.a(), j10);
-        if (!EGL14.eglSwapBuffers(this.f31556d, f10.a())) {
+        EGLExt.eglPresentationTimeANDROID(this.f31352d, f10.a(), j10);
+        if (!EGL14.eglSwapBuffers(this.f31352d, f10.a())) {
             y0.l("OpenGlRenderer", "Failed to swap buffers with EGL error: 0x" + Integer.toHexString(EGL14.eglGetError()));
             m(surface, false);
         }
     }
 
     public void o(d.e eVar) {
-        l0.d.i(this.f31553a, true);
-        l0.d.h(this.f31555c);
-        if (this.f31564l != eVar) {
-            this.f31564l = eVar;
-            s(this.f31565m);
+        l0.d.i(this.f31349a, true);
+        l0.d.h(this.f31351c);
+        if (this.f31360l != eVar) {
+            this.f31360l = eVar;
+            s(this.f31361m);
         }
     }
 
@@ -402,23 +402,23 @@ public class x {
     }
 
     public void r(Surface surface) {
-        l0.d.i(this.f31553a, true);
-        l0.d.h(this.f31555c);
+        l0.d.i(this.f31349a, true);
+        l0.d.h(this.f31351c);
         m(surface, true);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void s(int i10) {
-        d.f fVar = (d.f) this.f31562j.get(this.f31564l);
+        d.f fVar = (d.f) this.f31358j.get(this.f31360l);
         if (fVar != null) {
-            if (this.f31563k != fVar) {
-                this.f31563k = fVar;
+            if (this.f31359k != fVar) {
+                this.f31359k = fVar;
                 fVar.f();
-                Log.d("OpenGlRenderer", "Using program for input format " + this.f31564l + ": " + this.f31563k);
+                Log.d("OpenGlRenderer", "Using program for input format " + this.f31360l + ": " + this.f31359k);
             }
             a(i10);
             return;
         }
-        throw new IllegalStateException("Unable to configure program for input format: " + this.f31564l);
+        throw new IllegalStateException("Unable to configure program for input format: " + this.f31360l);
     }
 }

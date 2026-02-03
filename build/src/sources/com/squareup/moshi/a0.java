@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Map;
 import java.util.Properties;
-import tm.c;
+import vm.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class a0 {
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -57,12 +57,12 @@ public abstract class a0 {
             ParameterizedType parameterizedType = (ParameterizedType) type;
             ParameterizedType parameterizedType2 = (ParameterizedType) type2;
             if (parameterizedType instanceof c.b) {
-                actualTypeArguments = ((c.b) parameterizedType).f49941i;
+                actualTypeArguments = ((c.b) parameterizedType).f51697i;
             } else {
                 actualTypeArguments = parameterizedType.getActualTypeArguments();
             }
             if (parameterizedType2 instanceof c.b) {
-                actualTypeArguments2 = ((c.b) parameterizedType2).f49941i;
+                actualTypeArguments2 = ((c.b) parameterizedType2).f51697i;
             } else {
                 actualTypeArguments2 = parameterizedType2.getActualTypeArguments();
             }
@@ -107,7 +107,7 @@ public abstract class a0 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Type f(Type type) {
         Class g10 = g(type);
-        return tm.c.q(type, g10, g10.getGenericSuperclass());
+        return vm.c.q(type, g10, g10.getGenericSuperclass());
     }
 
     public static Class g(Type type) {
@@ -137,7 +137,7 @@ public abstract class a0 {
 
     static Type h(Type type, Class cls, Class cls2) {
         if (cls2.isAssignableFrom(cls)) {
-            return tm.c.q(type, cls, tm.c.e(type, cls, cls2));
+            return vm.c.q(type, cls, vm.c.e(type, cls, cls2));
         }
         throw new IllegalArgumentException();
     }
@@ -165,7 +165,7 @@ public abstract class a0 {
         } else {
             typeArr = new Type[]{type};
         }
-        return new c.C0652c(typeArr, tm.c.f49934b);
+        return new c.C0683c(typeArr, vm.c.f51690b);
     }
 
     public static WildcardType l(Type type) {
@@ -175,6 +175,6 @@ public abstract class a0 {
         } else {
             typeArr = new Type[]{type};
         }
-        return new c.C0652c(new Type[]{Object.class}, typeArr);
+        return new c.C0683c(new Type[]{Object.class}, typeArr);
     }
 }

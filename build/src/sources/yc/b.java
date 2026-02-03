@@ -5,42 +5,42 @@ import java.util.List;
 final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public final long f54238a;
+    public final long f53996a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final List f54239b;
+    public final List f53997b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final String f54240a;
+        public final String f53998a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final String f54241b;
+        public final String f53999b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final long f54242c;
+        public final long f54000c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final long f54243d;
+        public final long f54001d;
 
         public a(String str, String str2, long j10, long j11) {
-            this.f54240a = str;
-            this.f54241b = str2;
-            this.f54242c = j10;
-            this.f54243d = j11;
+            this.f53998a = str;
+            this.f53999b = str2;
+            this.f54000c = j10;
+            this.f54001d = j11;
         }
     }
 
     public b(long j10, List list) {
-        this.f54238a = j10;
-        this.f54239b = list;
+        this.f53996a = j10;
+        this.f53997b = list;
     }
 
     public md.b a(long j10) {
         long j11;
-        if (this.f54239b.size() < 2) {
+        if (this.f53997b.size() < 2) {
             return null;
         }
         long j12 = j10;
@@ -49,14 +49,14 @@ final class b {
         long j15 = -1;
         long j16 = -1;
         boolean z10 = false;
-        for (int size = this.f54239b.size() - 1; size >= 0; size--) {
-            a aVar = (a) this.f54239b.get(size);
-            boolean equals = "video/mp4".equals(aVar.f54240a) | z10;
+        for (int size = this.f53997b.size() - 1; size >= 0; size--) {
+            a aVar = (a) this.f53997b.get(size);
+            boolean equals = "video/mp4".equals(aVar.f53998a) | z10;
             if (size == 0) {
-                j12 -= aVar.f54243d;
+                j12 -= aVar.f54001d;
                 j11 = 0;
             } else {
-                j11 = j12 - aVar.f54242c;
+                j11 = j12 - aVar.f54000c;
             }
             long j17 = j11;
             long j18 = j12;
@@ -76,6 +76,6 @@ final class b {
         if (j15 == -1 || j16 == -1 || j13 == -1 || j14 == -1) {
             return null;
         }
-        return new md.b(j13, j14, this.f54238a, j15, j16);
+        return new md.b(j13, j14, this.f53996a, j15, j16);
     }
 }

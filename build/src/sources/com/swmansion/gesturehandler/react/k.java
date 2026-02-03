@@ -12,19 +12,19 @@ import kotlin.jvm.internal.Intrinsics;
 public final class k extends Event {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f18730d = new a(null);
+    public static final a f17712d = new a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Pools$SynchronizedPool f18731e = new Pools$SynchronizedPool(7);
+    private static final Pools$SynchronizedPool f17713e = new Pools$SynchronizedPool(7);
 
     /* renamed from: a  reason: collision with root package name */
-    private en.b f18732a;
+    private gn.b f17714a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f18733b;
+    private int f17715b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f18734c;
+    private int f17716c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -32,7 +32,7 @@ public final class k extends Event {
             this();
         }
 
-        public final WritableMap a(en.b dataBuilder, int i10, int i11) {
+        public final WritableMap a(gn.b dataBuilder, int i10, int i11) {
             Intrinsics.checkNotNullParameter(dataBuilder, "dataBuilder");
             WritableMap createMap = Arguments.createMap();
             Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
@@ -42,10 +42,10 @@ public final class k extends Event {
             return createMap;
         }
 
-        public final k b(dn.d handler, int i10, int i11, en.b dataBuilder) {
+        public final k b(fn.d handler, int i10, int i11, gn.b dataBuilder) {
             Intrinsics.checkNotNullParameter(handler, "handler");
             Intrinsics.checkNotNullParameter(dataBuilder, "dataBuilder");
-            k kVar = (k) k.f18731e.acquire();
+            k kVar = (k) k.f17713e.acquire();
             if (kVar == null) {
                 kVar = new k(null);
             }
@@ -62,13 +62,13 @@ public final class k extends Event {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final void b(dn.d dVar, int i10, int i11, en.b bVar) {
+    public final void b(fn.d dVar, int i10, int i11, gn.b bVar) {
         View W = dVar.W();
         Intrinsics.checkNotNull(W);
         super.init(UIManagerHelper.getSurfaceId(W), W.getId());
-        this.f18732a = bVar;
-        this.f18733b = i10;
-        this.f18734c = i11;
+        this.f17714a = bVar;
+        this.f17715b = i10;
+        this.f17716c = i11;
     }
 
     @Override // com.facebook.react.uimanager.events.Event
@@ -83,10 +83,10 @@ public final class k extends Event {
 
     @Override // com.facebook.react.uimanager.events.Event
     protected WritableMap getEventData() {
-        a aVar = f18730d;
-        en.b bVar = this.f18732a;
+        a aVar = f17712d;
+        gn.b bVar = this.f17714a;
         Intrinsics.checkNotNull(bVar);
-        return aVar.a(bVar, this.f18733b, this.f18734c);
+        return aVar.a(bVar, this.f17715b, this.f17716c);
     }
 
     @Override // com.facebook.react.uimanager.events.Event
@@ -96,10 +96,10 @@ public final class k extends Event {
 
     @Override // com.facebook.react.uimanager.events.Event
     public void onDispose() {
-        this.f18732a = null;
-        this.f18733b = 0;
-        this.f18734c = 0;
-        f18731e.release(this);
+        this.f17714a = null;
+        this.f17715b = 0;
+        this.f17716c = 0;
+        f17713e.release(this);
     }
 
     private k() {

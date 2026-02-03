@@ -9,19 +9,19 @@ public final class b implements Metadata.b {
     public static final Parcelable.Creator<b> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    public final long f38012d;
+    public final long f37809d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final long f38013e;
+    public final long f37810e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final long f38014i;
+    public final long f37811i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final long f38015o;
+    public final long f37812o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final long f38016p;
+    public final long f37813p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Parcelable.Creator {
@@ -56,7 +56,7 @@ public final class b implements Metadata.b {
         }
         if (obj != null && b.class == obj.getClass()) {
             b bVar = (b) obj;
-            if (this.f38012d == bVar.f38012d && this.f38013e == bVar.f38013e && this.f38014i == bVar.f38014i && this.f38015o == bVar.f38015o && this.f38016p == bVar.f38016p) {
+            if (this.f37809d == bVar.f37809d && this.f37810e == bVar.f37810e && this.f37811i == bVar.f37811i && this.f37812o == bVar.f37812o && this.f37813p == bVar.f37813p) {
                 return true;
             }
         }
@@ -64,35 +64,35 @@ public final class b implements Metadata.b {
     }
 
     public int hashCode() {
-        return ((((((((527 + g.b(this.f38012d)) * 31) + g.b(this.f38013e)) * 31) + g.b(this.f38014i)) * 31) + g.b(this.f38015o)) * 31) + g.b(this.f38016p);
+        return ((((((((527 + g.b(this.f37809d)) * 31) + g.b(this.f37810e)) * 31) + g.b(this.f37811i)) * 31) + g.b(this.f37812o)) * 31) + g.b(this.f37813p);
     }
 
     public String toString() {
-        return "Motion photo metadata: photoStartPosition=" + this.f38012d + ", photoSize=" + this.f38013e + ", photoPresentationTimestampUs=" + this.f38014i + ", videoStartPosition=" + this.f38015o + ", videoSize=" + this.f38016p;
+        return "Motion photo metadata: photoStartPosition=" + this.f37809d + ", photoSize=" + this.f37810e + ", photoPresentationTimestampUs=" + this.f37811i + ", videoStartPosition=" + this.f37812o + ", videoSize=" + this.f37813p;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeLong(this.f38012d);
-        parcel.writeLong(this.f38013e);
-        parcel.writeLong(this.f38014i);
-        parcel.writeLong(this.f38015o);
-        parcel.writeLong(this.f38016p);
+        parcel.writeLong(this.f37809d);
+        parcel.writeLong(this.f37810e);
+        parcel.writeLong(this.f37811i);
+        parcel.writeLong(this.f37812o);
+        parcel.writeLong(this.f37813p);
     }
 
     public b(long j10, long j11, long j12, long j13, long j14) {
-        this.f38012d = j10;
-        this.f38013e = j11;
-        this.f38014i = j12;
-        this.f38015o = j13;
-        this.f38016p = j14;
+        this.f37809d = j10;
+        this.f37810e = j11;
+        this.f37811i = j12;
+        this.f37812o = j13;
+        this.f37813p = j14;
     }
 
     private b(Parcel parcel) {
-        this.f38012d = parcel.readLong();
-        this.f38013e = parcel.readLong();
-        this.f38014i = parcel.readLong();
-        this.f38015o = parcel.readLong();
-        this.f38016p = parcel.readLong();
+        this.f37809d = parcel.readLong();
+        this.f37810e = parcel.readLong();
+        this.f37811i = parcel.readLong();
+        this.f37812o = parcel.readLong();
+        this.f37813p = parcel.readLong();
     }
 }

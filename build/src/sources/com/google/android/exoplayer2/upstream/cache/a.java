@@ -7,16 +7,16 @@ public interface a {
 
     /* renamed from: com.google.android.exoplayer2.upstream.cache.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static class C0178a extends IOException {
-        public C0178a(String str) {
+    public static class C0159a extends IOException {
+        public C0159a(String str) {
             super(str);
         }
 
-        public C0178a(Throwable th2) {
+        public C0159a(Throwable th2) {
             super(th2);
         }
 
-        public C0178a(String str, Throwable th2) {
+        public C0159a(String str, Throwable th2) {
             super(str, th2);
         }
     }

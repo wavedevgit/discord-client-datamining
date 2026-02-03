@@ -17,10 +17,10 @@ import sa.k;
 public abstract class DalvikPurgeableDecoder implements wa.d {
 
     /* renamed from: b  reason: collision with root package name */
-    protected static final byte[] f11287b;
+    protected static final byte[] f10255b;
 
     /* renamed from: a  reason: collision with root package name */
-    private final va.b f11288a = va.c.a();
+    private final va.b f10256a = va.c.a();
 
     @g
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -40,11 +40,11 @@ public abstract class DalvikPurgeableDecoder implements wa.d {
 
     static {
         b.a();
-        f11287b = new byte[]{-1, -39};
+        f10255b = new byte[]{-1, -39};
     }
 
     public static boolean e(CloseableReference closeableReference, int i10) {
-        h hVar = (h) closeableReference.F0();
+        h hVar = (h) closeableReference.C0();
         if (i10 >= 2 && hVar.w(i10 - 2) == -1 && hVar.w(i10 - 1) == -39) {
             return true;
         }
@@ -67,7 +67,7 @@ public abstract class DalvikPurgeableDecoder implements wa.d {
 
     @Override // wa.d
     public CloseableReference a(k kVar, Bitmap.Config config, Rect rect, ColorSpace colorSpace) {
-        BitmapFactory.Options f10 = f(kVar.t0(), config);
+        BitmapFactory.Options f10 = f(kVar.A0(), config);
         if (Build.VERSION.SDK_INT >= 26) {
             OreoUtils.a(f10, colorSpace);
         }
@@ -82,7 +82,7 @@ public abstract class DalvikPurgeableDecoder implements wa.d {
 
     @Override // wa.d
     public CloseableReference b(k kVar, Bitmap.Config config, Rect rect, int i10, ColorSpace colorSpace) {
-        BitmapFactory.Options f10 = f(kVar.t0(), config);
+        BitmapFactory.Options f10 = f(kVar.A0(), config);
         if (Build.VERSION.SDK_INT >= 26) {
             OreoUtils.a(f10, colorSpace);
         }
@@ -103,12 +103,12 @@ public abstract class DalvikPurgeableDecoder implements wa.d {
         j.g(bitmap);
         try {
             nativePinBitmap(bitmap);
-            if (this.f11288a.g(bitmap)) {
-                return CloseableReference.V0(bitmap, this.f11288a.e());
+            if (this.f10256a.g(bitmap)) {
+                return CloseableReference.V0(bitmap, this.f10256a.e());
             }
             int j10 = cb.d.j(bitmap);
             bitmap.recycle();
-            throw new ma.c(String.format(Locale.US, "Attempted to pin a bitmap of size %d bytes. The current pool count is %d, the current pool size is %d bytes. The current pool max count is %d, the current pool max size is %d bytes.", Integer.valueOf(j10), Integer.valueOf(this.f11288a.b()), Long.valueOf(this.f11288a.f()), Integer.valueOf(this.f11288a.c()), Integer.valueOf(this.f11288a.d())));
+            throw new ma.c(String.format(Locale.US, "Attempted to pin a bitmap of size %d bytes. The current pool count is %d, the current pool size is %d bytes. The current pool max count is %d, the current pool max size is %d bytes.", Integer.valueOf(j10), Integer.valueOf(this.f10256a.b()), Long.valueOf(this.f10256a.f()), Integer.valueOf(this.f10256a.c()), Integer.valueOf(this.f10256a.d())));
         } catch (Exception e10) {
             bitmap.recycle();
             throw n.a(e10);

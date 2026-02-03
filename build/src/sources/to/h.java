@@ -1,31 +1,47 @@
 package to;
 
-import jv.a0;
+import kotlin.enums.EnumEntries;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class h implements uq.d {
+public final class h {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final com.withpersona.sdk2.inquiry.internal.network.f f49973a;
+    /* renamed from: d  reason: collision with root package name */
+    public static final h f50170d = new h("Transition", 0);
 
-    /* renamed from: b  reason: collision with root package name */
-    private final uq.h f49974b;
+    /* renamed from: e  reason: collision with root package name */
+    public static final h f50171e = new h("TransitionBack", 1);
 
-    public h(com.withpersona.sdk2.inquiry.internal.network.f fVar, uq.h hVar) {
-        this.f49973a = fVar;
-        this.f49974b = hVar;
+    /* renamed from: i  reason: collision with root package name */
+    public static final h f50172i = new h("DocumentFilesPost", 2);
+
+    /* renamed from: o  reason: collision with root package name */
+    public static final h f50173o = new h("DocumentFilesDelete", 3);
+
+    /* renamed from: p  reason: collision with root package name */
+    private static final /* synthetic */ h[] f50174p;
+
+    /* renamed from: q  reason: collision with root package name */
+    private static final /* synthetic */ EnumEntries f50175q;
+
+    static {
+        h[] a10 = a();
+        f50174p = a10;
+        f50175q = sr.a.a(a10);
     }
 
-    public static h a(com.withpersona.sdk2.inquiry.internal.network.f fVar, uq.h hVar) {
-        return new h(fVar, hVar);
+    private h(String str, int i10) {
     }
 
-    public static r c(com.withpersona.sdk2.inquiry.internal.network.f fVar, a0 a0Var) {
-        return (r) uq.g.d(fVar.d(a0Var));
+    private static final /* synthetic */ h[] a() {
+        return new h[]{f50170d, f50171e, f50172i, f50173o};
     }
 
-    @Override // javax.inject.Provider
-    /* renamed from: b */
-    public r get() {
-        return c(this.f49973a, (a0) this.f49974b.get());
+    public static h valueOf(String str) {
+        return (h) Enum.valueOf(h.class, str);
+    }
+
+    public static h[] values() {
+        return (h[]) f50174p.clone();
     }
 }

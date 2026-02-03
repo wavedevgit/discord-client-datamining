@@ -5,15 +5,15 @@ import android.os.Process;
 final class b implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Runnable f42843d;
+    private final Runnable f42643d;
 
     public b(Runnable runnable, int i10) {
-        this.f42843d = runnable;
+        this.f42643d = runnable;
     }
 
     @Override // java.lang.Runnable
     public final void run() {
         Process.setThreadPriority(0);
-        this.f42843d.run();
+        this.f42643d.run();
     }
 }

@@ -17,8 +17,8 @@ public final class R {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class color {
-        public static int catalyst_logbox_background = 0x7f0600e4;
-        public static int catalyst_redbox_background = 0x7f0600e5;
+        public static int catalyst_logbox_background = 0x7f0600e8;
+        public static int catalyst_redbox_background = 0x7f0600e9;
 
         private color() {
         }
@@ -190,7 +190,7 @@ public final class R {
         public static int Theme_ReactNative_AppCompat_Light = 0x7f1402d6;
         public static int Theme_ReactNative_AppCompat_Light_NoActionBar_FullScreen = 0x7f1402d7;
         public static int Theme_ReactNative_TextInput_DefaultBackground = 0x7f1402d8;
-        public static int redboxButton = 0x7f1404d6;
+        public static int redboxButton = 0x7f1404db;
 
         private style() {
         }

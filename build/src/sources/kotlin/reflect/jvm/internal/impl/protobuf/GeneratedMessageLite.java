@@ -24,38 +24,38 @@ public abstract class GeneratedMessageLite extends AbstractMessageLite implement
     public static class GeneratedExtension<ContainingType extends MessageLite, Type> {
 
         /* renamed from: a  reason: collision with root package name */
-        final MessageLite f35010a;
+        final MessageLite f34400a;
 
         /* renamed from: b  reason: collision with root package name */
-        final Object f35011b;
+        final Object f34401b;
 
         /* renamed from: c  reason: collision with root package name */
-        final MessageLite f35012c;
+        final MessageLite f34402c;
 
         /* renamed from: d  reason: collision with root package name */
-        final b f35013d;
+        final b f34403d;
 
         /* renamed from: e  reason: collision with root package name */
-        final Class f35014e;
+        final Class f34404e;
 
         /* renamed from: f  reason: collision with root package name */
-        final Method f35015f;
+        final Method f34405f;
 
         GeneratedExtension(MessageLite messageLite, Object obj, MessageLite messageLite2, b bVar, Class cls) {
             if (messageLite != null) {
                 if (bVar.getLiteType() == WireFormat.FieldType.MESSAGE && messageLite2 == null) {
                     throw new IllegalArgumentException("Null messageDefaultInstance");
                 }
-                this.f35010a = messageLite;
-                this.f35011b = obj;
-                this.f35012c = messageLite2;
-                this.f35013d = bVar;
-                this.f35014e = cls;
+                this.f34400a = messageLite;
+                this.f34401b = obj;
+                this.f34402c = messageLite2;
+                this.f34403d = bVar;
+                this.f34404e = cls;
                 if (Internal.EnumLite.class.isAssignableFrom(cls)) {
-                    this.f35015f = GeneratedMessageLite.c(cls, "valueOf", Integer.TYPE);
+                    this.f34405f = GeneratedMessageLite.c(cls, "valueOf", Integer.TYPE);
                     return;
                 } else {
-                    this.f35015f = null;
+                    this.f34405f = null;
                     return;
                 }
             }
@@ -63,8 +63,8 @@ public abstract class GeneratedMessageLite extends AbstractMessageLite implement
         }
 
         Object a(Object obj) {
-            if (this.f35013d.isRepeated()) {
-                if (this.f35013d.getLiteJavaType() == WireFormat.JavaType.ENUM) {
+            if (this.f34403d.isRepeated()) {
+                if (this.f34403d.getLiteJavaType() == WireFormat.JavaType.ENUM) {
                     ArrayList arrayList = new ArrayList();
                     for (Object obj2 : (List) obj) {
                         arrayList.add(b(obj2));
@@ -77,29 +77,29 @@ public abstract class GeneratedMessageLite extends AbstractMessageLite implement
         }
 
         Object b(Object obj) {
-            if (this.f35013d.getLiteJavaType() == WireFormat.JavaType.ENUM) {
-                return GeneratedMessageLite.d(this.f35015f, null, (Integer) obj);
+            if (this.f34403d.getLiteJavaType() == WireFormat.JavaType.ENUM) {
+                return GeneratedMessageLite.d(this.f34405f, null, (Integer) obj);
             }
             return obj;
         }
 
         Object c(Object obj) {
-            if (this.f35013d.getLiteJavaType() == WireFormat.JavaType.ENUM) {
+            if (this.f34403d.getLiteJavaType() == WireFormat.JavaType.ENUM) {
                 return Integer.valueOf(((Internal.EnumLite) obj).getNumber());
             }
             return obj;
         }
 
         public ContainingType getContainingTypeDefaultInstance() {
-            return (ContainingType) this.f35010a;
+            return (ContainingType) this.f34400a;
         }
 
         public MessageLite getMessageDefaultInstance() {
-            return this.f35012c;
+            return this.f34402c;
         }
 
         public int getNumber() {
-            return this.f35013d.getNumber();
+            return this.f34403d.getNumber();
         }
     }
 
@@ -108,17 +108,17 @@ public abstract class GeneratedMessageLite extends AbstractMessageLite implement
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f35016a;
+        static final /* synthetic */ int[] f34406a;
 
         static {
             int[] iArr = new int[WireFormat.JavaType.values().length];
-            f35016a = iArr;
+            f34406a = iArr;
             try {
                 iArr[WireFormat.JavaType.MESSAGE.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f35016a[WireFormat.JavaType.ENUM.ordinal()] = 2;
+                f34406a[WireFormat.JavaType.ENUM.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
         }
@@ -129,51 +129,51 @@ public abstract class GeneratedMessageLite extends AbstractMessageLite implement
     public static final class b implements FieldSet.FieldDescriptorLite {
 
         /* renamed from: d  reason: collision with root package name */
-        final Internal.EnumLiteMap f35017d;
+        final Internal.EnumLiteMap f34407d;
 
         /* renamed from: e  reason: collision with root package name */
-        final int f35018e;
+        final int f34408e;
 
         /* renamed from: i  reason: collision with root package name */
-        final WireFormat.FieldType f35019i;
+        final WireFormat.FieldType f34409i;
 
         /* renamed from: o  reason: collision with root package name */
-        final boolean f35020o;
+        final boolean f34410o;
 
         /* renamed from: p  reason: collision with root package name */
-        final boolean f35021p;
+        final boolean f34411p;
 
         b(Internal.EnumLiteMap enumLiteMap, int i10, WireFormat.FieldType fieldType, boolean z10, boolean z11) {
-            this.f35017d = enumLiteMap;
-            this.f35018e = i10;
-            this.f35019i = fieldType;
-            this.f35020o = z10;
-            this.f35021p = z11;
+            this.f34407d = enumLiteMap;
+            this.f34408e = i10;
+            this.f34409i = fieldType;
+            this.f34410o = z10;
+            this.f34411p = z11;
         }
 
         @Override // java.lang.Comparable
         /* renamed from: a */
         public int compareTo(b bVar) {
-            return this.f35018e - bVar.f35018e;
+            return this.f34408e - bVar.f34408e;
         }
 
         public Internal.EnumLiteMap d() {
-            return this.f35017d;
+            return this.f34407d;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.FieldSet.FieldDescriptorLite
         public WireFormat.JavaType getLiteJavaType() {
-            return this.f35019i.getJavaType();
+            return this.f34409i.getJavaType();
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.FieldSet.FieldDescriptorLite
         public WireFormat.FieldType getLiteType() {
-            return this.f35019i;
+            return this.f34409i;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.FieldSet.FieldDescriptorLite
         public int getNumber() {
-            return this.f35018e;
+            return this.f34408e;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.FieldSet.FieldDescriptorLite
@@ -183,12 +183,12 @@ public abstract class GeneratedMessageLite extends AbstractMessageLite implement
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.FieldSet.FieldDescriptorLite
         public boolean isPacked() {
-            return this.f35021p;
+            return this.f34411p;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.FieldSet.FieldDescriptorLite
         public boolean isRepeated() {
-            return this.f35020o;
+            return this.f34410o;
         }
     }
 
@@ -270,25 +270,25 @@ public abstract class GeneratedMessageLite extends AbstractMessageLite implement
     public static abstract class Builder<MessageType extends GeneratedMessageLite, BuilderType extends Builder> extends AbstractMessageLite.Builder<BuilderType> {
 
         /* renamed from: d  reason: collision with root package name */
-        private ByteString f35002d = ByteString.EMPTY;
+        private ByteString f34392d = ByteString.EMPTY;
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.MessageLiteOrBuilder
         public abstract MessageType getDefaultInstanceForType();
 
         public final ByteString getUnknownFields() {
-            return this.f35002d;
+            return this.f34392d;
         }
 
         public abstract BuilderType mergeFrom(MessageType messagetype);
 
         public final BuilderType setUnknownFields(ByteString byteString) {
-            this.f35002d = byteString;
+            this.f34392d = byteString;
             return this;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.AbstractMessageLite.Builder
         /* renamed from: clone */
-        public BuilderType mo1199clone() {
+        public BuilderType mo1196clone() {
             throw new UnsupportedOperationException("This is supposed to be overridden by subclasses.");
         }
     }
@@ -297,20 +297,20 @@ public abstract class GeneratedMessageLite extends AbstractMessageLite implement
     public static abstract class ExtendableMessage<MessageType extends ExtendableMessage<MessageType>> extends GeneratedMessageLite implements ExtendableMessageOrBuilder<MessageType> {
 
         /* renamed from: e  reason: collision with root package name */
-        private final FieldSet f35005e;
+        private final FieldSet f34395e;
 
         /* JADX INFO: Access modifiers changed from: protected */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public class ExtensionWriter {
 
             /* renamed from: a  reason: collision with root package name */
-            private final Iterator f35006a;
+            private final Iterator f34396a;
 
             /* renamed from: b  reason: collision with root package name */
-            private Map.Entry f35007b;
+            private Map.Entry f34397b;
 
             /* renamed from: c  reason: collision with root package name */
-            private final boolean f35008c;
+            private final boolean f34398c;
 
             /* synthetic */ ExtensionWriter(ExtendableMessage extendableMessage, boolean z10, a aVar) {
                 this(z10);
@@ -318,18 +318,18 @@ public abstract class GeneratedMessageLite extends AbstractMessageLite implement
 
             public void writeUntil(int i10, CodedOutputStream codedOutputStream) {
                 while (true) {
-                    Map.Entry entry = this.f35007b;
+                    Map.Entry entry = this.f34397b;
                     if (entry != null && ((b) entry.getKey()).getNumber() < i10) {
-                        b bVar = (b) this.f35007b.getKey();
-                        if (this.f35008c && bVar.getLiteJavaType() == WireFormat.JavaType.MESSAGE && !bVar.isRepeated()) {
-                            codedOutputStream.writeMessageSetExtension(bVar.getNumber(), (MessageLite) this.f35007b.getValue());
+                        b bVar = (b) this.f34397b.getKey();
+                        if (this.f34398c && bVar.getLiteJavaType() == WireFormat.JavaType.MESSAGE && !bVar.isRepeated()) {
+                            codedOutputStream.writeMessageSetExtension(bVar.getNumber(), (MessageLite) this.f34397b.getValue());
                         } else {
-                            FieldSet.z(bVar, this.f35007b.getValue(), codedOutputStream);
+                            FieldSet.z(bVar, this.f34397b.getValue(), codedOutputStream);
                         }
-                        if (this.f35006a.hasNext()) {
-                            this.f35007b = (Map.Entry) this.f35006a.next();
+                        if (this.f34396a.hasNext()) {
+                            this.f34397b = (Map.Entry) this.f34396a.next();
                         } else {
-                            this.f35007b = null;
+                            this.f34397b = null;
                         }
                     } else {
                         return;
@@ -338,18 +338,18 @@ public abstract class GeneratedMessageLite extends AbstractMessageLite implement
             }
 
             private ExtensionWriter(boolean z10) {
-                Iterator p10 = ExtendableMessage.this.f35005e.p();
-                this.f35006a = p10;
+                Iterator p10 = ExtendableMessage.this.f34395e.p();
+                this.f34396a = p10;
                 if (p10.hasNext()) {
-                    this.f35007b = (Map.Entry) p10.next();
+                    this.f34397b = (Map.Entry) p10.next();
                 }
-                this.f35008c = z10;
+                this.f34398c = z10;
             }
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         public ExtendableMessage() {
-            this.f35005e = FieldSet.t();
+            this.f34395e = FieldSet.t();
         }
 
         private void l(GeneratedExtension generatedExtension) {
@@ -362,42 +362,42 @@ public abstract class GeneratedMessageLite extends AbstractMessageLite implement
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite
         public void e() {
-            this.f35005e.q();
+            this.f34395e.q();
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite
         public boolean f(CodedInputStream codedInputStream, CodedOutputStream codedOutputStream, ExtensionRegistryLite extensionRegistryLite, int i10) {
-            return GeneratedMessageLite.g(this.f35005e, getDefaultInstanceForType(), codedInputStream, codedOutputStream, extensionRegistryLite, i10);
+            return GeneratedMessageLite.g(this.f34395e, getDefaultInstanceForType(), codedInputStream, codedOutputStream, extensionRegistryLite, i10);
         }
 
         public final <Type> Type getExtension(GeneratedExtension<MessageType, Type> generatedExtension) {
             l(generatedExtension);
-            Object h10 = this.f35005e.h(generatedExtension.f35013d);
+            Object h10 = this.f34395e.h(generatedExtension.f34403d);
             if (h10 == null) {
-                return (Type) generatedExtension.f35011b;
+                return (Type) generatedExtension.f34401b;
             }
             return (Type) generatedExtension.a(h10);
         }
 
         public final <Type> int getExtensionCount(GeneratedExtension<MessageType, List<Type>> generatedExtension) {
             l(generatedExtension);
-            return this.f35005e.j(generatedExtension.f35013d);
+            return this.f34395e.j(generatedExtension.f34403d);
         }
 
         public final <Type> boolean hasExtension(GeneratedExtension<MessageType, Type> generatedExtension) {
             l(generatedExtension);
-            return this.f35005e.m(generatedExtension.f35013d);
+            return this.f34395e.m(generatedExtension.f34403d);
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         public boolean i() {
-            return this.f35005e.n();
+            return this.f34395e.n();
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         public int j() {
-            return this.f35005e.k();
+            return this.f34395e.k();
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
@@ -407,12 +407,12 @@ public abstract class GeneratedMessageLite extends AbstractMessageLite implement
 
         /* JADX INFO: Access modifiers changed from: protected */
         public ExtendableMessage(ExtendableBuilder extendableBuilder) {
-            this.f35005e = extendableBuilder.c();
+            this.f34395e = extendableBuilder.c();
         }
 
         public final <Type> Type getExtension(GeneratedExtension<MessageType, List<Type>> generatedExtension, int i10) {
             l(generatedExtension);
-            return (Type) generatedExtension.b(this.f35005e.i(generatedExtension.f35013d, i10));
+            return (Type) generatedExtension.b(this.f34395e.i(generatedExtension.f34403d, i10));
         }
     }
 
@@ -424,34 +424,34 @@ public abstract class GeneratedMessageLite extends AbstractMessageLite implement
     public static abstract class ExtendableBuilder<MessageType extends ExtendableMessage<MessageType>, BuilderType extends ExtendableBuilder<MessageType, BuilderType>> extends Builder<MessageType, BuilderType> implements ExtendableMessageOrBuilder<MessageType> {
 
         /* renamed from: e  reason: collision with root package name */
-        private FieldSet f35003e = FieldSet.g();
+        private FieldSet f34393e = FieldSet.g();
 
         /* renamed from: i  reason: collision with root package name */
-        private boolean f35004i;
+        private boolean f34394i;
 
         /* JADX INFO: Access modifiers changed from: private */
         public FieldSet c() {
-            this.f35003e.q();
-            this.f35004i = false;
-            return this.f35003e;
+            this.f34393e.q();
+            this.f34394i = false;
+            return this.f34393e;
         }
 
         private void d() {
-            if (!this.f35004i) {
-                this.f35003e = this.f35003e.clone();
-                this.f35004i = true;
+            if (!this.f34394i) {
+                this.f34393e = this.f34393e.clone();
+                this.f34394i = true;
             }
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         public boolean e() {
-            return this.f35003e.n();
+            return this.f34393e.n();
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         public final void f(ExtendableMessage extendableMessage) {
             d();
-            this.f35003e.r(extendableMessage.f35005e);
+            this.f34393e.r(extendableMessage.f34395e);
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.GeneratedMessageLite.Builder, kotlin.reflect.jvm.internal.impl.protobuf.AbstractMessageLite.Builder

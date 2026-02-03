@@ -11,24 +11,24 @@ import java.util.Arrays;
 public final class n extends ef.d implements lf.d {
 
     /* renamed from: k  reason: collision with root package name */
-    private static final a.g f38051k;
+    private static final a.g f37848k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final a.AbstractC0301a f38052l;
+    private static final a.AbstractC0279a f37849l;
 
     /* renamed from: m  reason: collision with root package name */
-    private static final ef.a f38053m;
+    private static final ef.a f37850m;
 
     static {
         a.g gVar = new a.g();
-        f38051k = gVar;
+        f37848k = gVar;
         k kVar = new k();
-        f38052l = kVar;
-        f38053m = new ef.a("ModuleInstall.API", kVar, gVar);
+        f37849l = kVar;
+        f37850m = new ef.a("ModuleInstall.API", kVar, gVar);
     }
 
     public n(Context context) {
-        super(context, f38053m, a.d.f22794c, d.a.f22806c);
+        super(context, f37850m, a.d.f21485c, d.a.f21497c);
     }
 
     static final a C(boolean z10, ef.f... fVarArr) {
@@ -53,7 +53,7 @@ public final class n extends ef.d implements lf.d {
             return wg.m.f(new lf.b(true, 0));
         }
         q.a a10 = ff.q.a();
-        a10.d(fg.i.f24396a);
+        a10.d(fg.i.f23988a);
         a10.e(27301);
         a10.c(false);
         a10.b(new ff.m() { // from class: mf.i
@@ -74,7 +74,7 @@ public final class n extends ef.d implements lf.d {
             return wg.m.f(new lf.g(0));
         }
         q.a a10 = ff.q.a();
-        a10.d(fg.i.f24396a);
+        a10.d(fg.i.f23988a);
         a10.c(true);
         a10.e(27304);
         a10.b(new ff.m() { // from class: mf.j

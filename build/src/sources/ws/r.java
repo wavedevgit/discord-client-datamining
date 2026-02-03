@@ -1,94 +1,97 @@
 package ws;
 
-import kotlin.jvm.functions.Function0;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Lambda;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class r implements o {
+public abstract class r implements l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f53021a;
+    private final b0 f52723a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final List f52724b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final String f52725c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class a extends Lambda implements Function0 {
-        a() {
-            super(0);
+    private final class a implements ys.a {
+        public a() {
         }
 
-        @Override // kotlin.jvm.functions.Function0
-        public final String invoke() {
-            return "Unexpected end of input: yet to parse '" + r.this.b() + '\'';
+        @Override // ys.a
+        /* renamed from: d */
+        public String c(Object obj, String newValue) {
+            Intrinsics.checkNotNullParameter(newValue, "newValue");
+            Integer num = (Integer) r.this.g().b().c(obj, Integer.valueOf(r.this.f52724b.indexOf(newValue) + r.this.g().g()));
+            if (num != null) {
+                r rVar = r.this;
+                return (String) rVar.f52724b.get(num.intValue() - rVar.g().g());
+            }
+            return null;
+        }
+
+        @Override // ys.a
+        public String getName() {
+            return r.this.f52725c;
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class b extends Lambda implements Function0 {
-
-        /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ CharSequence f53024e;
-
-        /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ int f53025i;
-
-        /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ int f53026o;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        b(CharSequence charSequence, int i10, int i11) {
-            super(0);
-            this.f53024e = charSequence;
-            this.f53025i = i10;
-            this.f53026o = i11;
+    /* synthetic */ class b extends FunctionReferenceImpl implements Function1 {
+        b(Object obj) {
+            super(1, obj, r.class, "getStringValue", "getStringValue(Ljava/lang/Object;)Ljava/lang/String;", 0);
         }
 
-        @Override // kotlin.jvm.functions.Function0
-        public final String invoke() {
-            StringBuilder sb2 = new StringBuilder();
-            sb2.append("Expected ");
-            sb2.append(r.this.b());
-            sb2.append(" but got ");
-            CharSequence charSequence = this.f53024e;
-            int i10 = this.f53025i;
-            sb2.append(charSequence.subSequence(i10, this.f53026o + i10 + 1).toString());
-            return sb2.toString();
+        @Override // kotlin.jvm.functions.Function1
+        public final String invoke(Object obj) {
+            return ((r) this.receiver).h(obj);
         }
     }
 
-    public r(String string) {
-        Intrinsics.checkNotNullParameter(string, "string");
-        this.f53021a = string;
-        if (string.length() > 0) {
-            if (!ts.d.b(string.charAt(0))) {
-                if (!ts.d.b(string.charAt(string.length() - 1))) {
-                    return;
-                }
-                throw new IllegalArgumentException(("String '" + string + "' ends with a digit").toString());
-            }
-            throw new IllegalArgumentException(("String '" + string + "' starts with a digit").toString());
+    public r(b0 field, List values, String name) {
+        Intrinsics.checkNotNullParameter(field, "field");
+        Intrinsics.checkNotNullParameter(values, "values");
+        Intrinsics.checkNotNullParameter(name, "name");
+        this.f52723a = field;
+        this.f52724b = values;
+        this.f52725c = name;
+        if (values.size() == (field.f() - field.g()) + 1) {
+            return;
         }
-        throw new IllegalArgumentException("Empty string is not allowed");
+        throw new IllegalArgumentException(("The number of values (" + values.size() + ") in " + values + " does not match the range of the field (" + ((field.f() - field.g()) + 1) + ')').toString());
     }
 
-    @Override // ws.o
-    public Object a(Object obj, CharSequence input, int i10) {
-        Intrinsics.checkNotNullParameter(input, "input");
-        if (this.f53021a.length() + i10 > input.length()) {
-            return k.f53010a.a(i10, new a());
+    /* JADX INFO: Access modifiers changed from: private */
+    public final String h(Object obj) {
+        int intValue = ((Number) this.f52723a.b().b(obj)).intValue();
+        String str = (String) CollectionsKt.q0(this.f52724b, intValue - this.f52723a.g());
+        if (str == null) {
+            return "The value " + intValue + " of " + this.f52723a.getName() + " does not have a corresponding string representation";
         }
-        int length = this.f53021a.length();
-        for (int i11 = 0; i11 < length; i11++) {
-            if (input.charAt(i10 + i11) != this.f53021a.charAt(i11)) {
-                return k.f53010a.a(i10, new b(input, i10, i11));
-            }
-        }
-        return k.f53010a.b(i10 + this.f53021a.length());
+        return str;
     }
 
-    public final String b() {
-        return this.f53021a;
+    @Override // ws.l
+    public xs.e a() {
+        return new xs.i(new b(this));
     }
 
-    public String toString() {
-        return '\'' + this.f53021a + '\'';
+    @Override // ws.l
+    public ys.q b() {
+        a aVar = new a();
+        return new ys.q(CollectionsKt.e(new ys.t(this.f52724b, aVar, "one of " + this.f52724b + " for " + this.f52725c)), CollectionsKt.l());
+    }
+
+    @Override // ws.l
+    public /* bridge */ /* synthetic */ n c() {
+        return this.f52723a;
+    }
+
+    public final b0 g() {
+        return this.f52723a;
     }
 }

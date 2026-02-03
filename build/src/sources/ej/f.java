@@ -23,7 +23,7 @@ public abstract class f {
     }
 
     public static a a() {
-        return new b.C0305b().d(0L);
+        return new b.C0283b().d(0L);
     }
 
     public abstract b b();

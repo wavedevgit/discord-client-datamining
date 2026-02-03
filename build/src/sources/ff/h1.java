@@ -6,19 +6,19 @@ import android.os.Bundle;
 public final class h1 implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ g f24322d;
+    final /* synthetic */ g f23914d;
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ String f24323e;
+    final /* synthetic */ String f23915e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ i1 f24324i;
+    final /* synthetic */ i1 f23916i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h1(i1 i1Var, g gVar, String str) {
-        this.f24322d = gVar;
-        this.f24323e = str;
-        this.f24324i = i1Var;
+        this.f23914d = gVar;
+        this.f23915e = str;
+        this.f23916i = i1Var;
     }
 
     @Override // java.lang.Runnable
@@ -31,35 +31,35 @@ public final class h1 implements Runnable {
         Bundle bundle;
         Bundle bundle2;
         Bundle bundle3;
-        i1 i1Var = this.f24324i;
-        i10 = i1Var.f24332b;
+        i1 i1Var = this.f23916i;
+        i10 = i1Var.f23924b;
         if (i10 > 0) {
-            g gVar = this.f24322d;
-            bundle = i1Var.f24333c;
+            g gVar = this.f23914d;
+            bundle = i1Var.f23925c;
             if (bundle != null) {
-                String str = this.f24323e;
-                bundle3 = i1Var.f24333c;
+                String str = this.f23915e;
+                bundle3 = i1Var.f23925c;
                 bundle2 = bundle3.getBundle(str);
             } else {
                 bundle2 = null;
             }
             gVar.f(bundle2);
         }
-        i11 = this.f24324i.f24332b;
+        i11 = this.f23916i.f23924b;
         if (i11 >= 2) {
-            this.f24322d.j();
+            this.f23914d.j();
         }
-        i12 = this.f24324i.f24332b;
+        i12 = this.f23916i.f23924b;
         if (i12 >= 3) {
-            this.f24322d.h();
+            this.f23914d.h();
         }
-        i13 = this.f24324i.f24332b;
+        i13 = this.f23916i.f23924b;
         if (i13 >= 4) {
-            this.f24322d.k();
+            this.f23914d.k();
         }
-        i14 = this.f24324i.f24332b;
+        i14 = this.f23916i.f23924b;
         if (i14 >= 5) {
-            this.f24322d.g();
+            this.f23914d.g();
         }
     }
 }

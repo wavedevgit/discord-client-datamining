@@ -3,14 +3,14 @@ package com.google.android.play.core.assetpacks;
 public final class g4 implements th.t {
 
     /* renamed from: a  reason: collision with root package name */
-    private final th.w f16419a;
+    private final th.w f15387a;
 
     public g4(th.w wVar) {
-        this.f16419a = wVar;
+        this.f15387a = wVar;
     }
 
     @Override // th.w
     public final /* bridge */ /* synthetic */ Object a() {
-        return new f4((n0) this.f16419a.a());
+        return new f4((n0) this.f15387a.a());
     }
 }

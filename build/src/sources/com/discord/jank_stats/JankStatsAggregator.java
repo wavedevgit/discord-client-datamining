@@ -76,9 +76,9 @@ public final class JankStatsAggregator {
     public final void initialize(@NotNull Window window) {
         Intrinsics.checkNotNullParameter(window, "window");
         synchronized (this) {
-            jankStats = JankStats.f4642f.a(window, listener);
+            jankStats = JankStats.f4611f.a(window, listener);
             INSTANCE.setJankHeuristicMultiplier(1.0f);
-            Unit unit = Unit.f33074a;
+            Unit unit = Unit.f32464a;
         }
     }
 

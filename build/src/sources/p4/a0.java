@@ -10,13 +10,13 @@ import p4.z;
 public final class a0 implements z {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r3.u f44955a;
+    private final r3.u f44913a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r3.i f44956b;
+    private final r3.i f44914b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final r3.a0 f44957c;
+    private final r3.a0 f44915c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends r3.i {
@@ -58,9 +58,9 @@ public final class a0 implements z {
     }
 
     public a0(r3.u uVar) {
-        this.f44955a = uVar;
-        this.f44956b = new a(uVar);
-        this.f44957c = new b(uVar);
+        this.f44913a = uVar;
+        this.f44914b = new a(uVar);
+        this.f44915c = new b(uVar);
     }
 
     public static List e() {
@@ -76,8 +76,8 @@ public final class a0 implements z {
         } else {
             l10.h1(1, str);
         }
-        this.f44955a.d();
-        Cursor b10 = t3.b.b(this.f44955a, l10, false, null);
+        this.f44913a.d();
+        Cursor b10 = t3.b.b(this.f44913a, l10, false, null);
         try {
             ArrayList arrayList = new ArrayList(b10.getCount());
             while (b10.moveToNext()) {
@@ -97,13 +97,13 @@ public final class a0 implements z {
 
     @Override // p4.z
     public void b(y yVar) {
-        this.f44955a.d();
-        this.f44955a.e();
+        this.f44913a.d();
+        this.f44913a.e();
         try {
-            this.f44956b.j(yVar);
-            this.f44955a.A();
+            this.f44914b.j(yVar);
+            this.f44913a.A();
         } finally {
-            this.f44955a.i();
+            this.f44913a.i();
         }
     }
 

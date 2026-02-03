@@ -62,9 +62,9 @@ public final class InputCurrency_AttributesJsonAdapter extends h {
         JsonLogicBoolean jsonLogicBoolean2 = null;
         String str3 = null;
         while (reader.hasNext()) {
-            switch (reader.t0(this.options)) {
+            switch (reader.A0(this.options)) {
                 case -1:
-                    reader.F0();
+                    reader.E0();
                     reader.P();
                     break;
                 case 0:
@@ -96,17 +96,17 @@ public final class InputCurrency_AttributesJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
             writer.l();
-            writer.t0("prefill");
+            writer.A0("prefill");
             this.nullableNumberAdapter.toJson(writer, attributes.getPrefill());
-            writer.t0("label");
+            writer.A0("label");
             this.nullableStringAdapter.toJson(writer, attributes.getLabel());
-            writer.t0(ReactTextInputShadowNode.PROP_PLACEHOLDER);
+            writer.A0(ReactTextInputShadowNode.PROP_PLACEHOLDER);
             this.nullableStringAdapter.toJson(writer, attributes.getPlaceholder());
-            writer.t0(ViewProps.HIDDEN);
+            writer.A0(ViewProps.HIDDEN);
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getHidden());
-            writer.t0("disabled");
+            writer.A0("disabled");
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getDisabled());
-            writer.t0(AppsFlyerProperties.CURRENCY_CODE);
+            writer.A0(AppsFlyerProperties.CURRENCY_CODE);
             this.nullableStringAdapter.toJson(writer, attributes.getCurrencyCode());
             writer.E();
             return;

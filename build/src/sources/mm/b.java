@@ -17,28 +17,28 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b implements EventDispatcherListener {
 
     /* renamed from: h  reason: collision with root package name */
-    public static final a f39095h = new a(null);
+    public static final a f38892h = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final ReactViewGroup f39096a;
+    private final ReactViewGroup f38893a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ThemedReactContext f39097b;
+    private final ThemedReactContext f38894b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final l f39098c;
+    private final l f38895c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Function0 f39099d;
+    private Function0 f38896d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f39100e;
+    private final int f38897e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final UIManager f39101f;
+    private final UIManager f38898f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final EventDispatcher f39102g;
+    private final EventDispatcher f38899g;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -55,35 +55,35 @@ public final class b implements EventDispatcherListener {
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
         Intrinsics.checkNotNullParameter(config, "config");
         Intrinsics.checkNotNullParameter(callback, "callback");
-        this.f39096a = view;
-        this.f39097b = reactContext;
-        this.f39098c = config;
-        this.f39099d = callback;
-        this.f39100e = 2;
-        this.f39101f = UIManagerHelper.getUIManager(reactContext.getReactApplicationContext(), 2);
-        this.f39102g = UIManagerHelper.getEventDispatcher(reactContext.getReactApplicationContext(), 2);
+        this.f38893a = view;
+        this.f38894b = reactContext;
+        this.f38895c = config;
+        this.f38896d = callback;
+        this.f38897e = 2;
+        this.f38898f = UIManagerHelper.getUIManager(reactContext.getReactApplicationContext(), 2);
+        this.f38899g = UIManagerHelper.getEventDispatcher(reactContext.getReactApplicationContext(), 2);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void d(k kVar, ReactViewGroup reactViewGroup, b bVar, DialogInterface dialogInterface) {
-        k.p(kVar, null, null, 3, null);
+        k.q(kVar, null, null, 3, null);
         kVar.e();
         h.a(reactViewGroup);
-        k kVar2 = (k) bVar.f39099d.invoke();
+        k kVar2 = (k) bVar.f38896d.invoke();
         if (kVar2 != null) {
-            kVar2.n(false);
+            kVar2.o(false);
         }
     }
 
     public final void b() {
-        EventDispatcher eventDispatcher = this.f39102g;
+        EventDispatcher eventDispatcher = this.f38899g;
         if (eventDispatcher != null) {
             eventDispatcher.removeListener(this);
         }
     }
 
     public final void c() {
-        EventDispatcher eventDispatcher = this.f39102g;
+        EventDispatcher eventDispatcher = this.f38899g;
         if (eventDispatcher != null) {
             eventDispatcher.addListener(this);
         }
@@ -108,7 +108,7 @@ public final class b implements EventDispatcherListener {
             goto Lbd
         L13:
             r0 = 0
-            com.facebook.react.bridge.UIManager r1 = r7.f39101f     // Catch: java.lang.Exception -> L21
+            com.facebook.react.bridge.UIManager r1 = r7.f38898f     // Catch: java.lang.Exception -> L21
             if (r1 == 0) goto L23
             int r2 = r8.getViewTag()     // Catch: java.lang.Exception -> L21
             android.view.View r1 = r1.resolveView(r2)     // Catch: java.lang.Exception -> L21
@@ -124,7 +124,7 @@ public final class b implements EventDispatcherListener {
             com.facebook.react.views.modal.ReactModalHostView r1 = (com.facebook.react.views.modal.ReactModalHostView) r1     // Catch: java.lang.Exception -> L21
             goto L4a
         L2b:
-            km.a r2 = km.a.f33029a
+            km.a r2 = km.a.f32427a
             java.lang.String r3 = mm.c.b()
             int r8 = r8.getViewTag()
             java.lang.StringBuilder r4 = new java.lang.StringBuilder
@@ -155,33 +155,33 @@ public final class b implements EventDispatcherListener {
             android.view.ViewGroup r0 = (android.view.ViewGroup) r0
             if (r0 == 0) goto Lbd
             com.facebook.react.views.view.ReactViewGroup r2 = new com.facebook.react.views.view.ReactViewGroup
-            com.facebook.react.uimanager.ThemedReactContext r3 = r7.f39097b
+            com.facebook.react.uimanager.ThemedReactContext r3 = r7.f38894b
             r2.<init>(r3)
             android.view.ViewGroup$LayoutParams r3 = new android.view.ViewGroup$LayoutParams
             r4 = 0
             r3.<init>(r4, r4)
             r2.setLayoutParams(r3)
-            com.facebook.react.views.view.ReactViewGroup r3 = r7.f39096a
-            com.facebook.react.uimanager.ThemedReactContext r4 = r7.f39097b
-            jm.l r5 = r7.f39098c
+            com.facebook.react.views.view.ReactViewGroup r3 = r7.f38893a
+            com.facebook.react.uimanager.ThemedReactContext r4 = r7.f38894b
+            jm.l r5 = r7.f38895c
             jm.k r6 = new jm.k
             r6.<init>(r3, r0, r4, r5)
             r0.addView(r2)
             boolean r3 = mm.c.a()
             if (r3 == 0) goto Lac
-            kotlin.jvm.functions.Function0 r3 = r7.f39099d
+            kotlin.jvm.functions.Function0 r3 = r7.f38896d
             java.lang.Object r3 = r3.invoke()
             jm.k r3 = (jm.k) r3
             if (r3 == 0) goto L9b
             r4 = 1
-            r3.n(r4)
+            r3.o(r4)
         L9b:
             androidx.core.view.h0.L0(r0, r6)
             androidx.core.view.h0.D0(r2, r6)
             r3 = 0
             java.lang.Double r0 = java.lang.Double.valueOf(r3)
             java.lang.Boolean r3 = java.lang.Boolean.FALSE
-            r6.o(r0, r3)
+            r6.p(r0, r3)
         Lac:
             if (r8 == 0) goto Lb6
             mm.a r0 = new mm.a

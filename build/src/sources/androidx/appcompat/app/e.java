@@ -80,16 +80,16 @@ import q1.j;
 public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2 {
 
     /* renamed from: u0  reason: collision with root package name */
-    private static final SimpleArrayMap f1027u0 = new SimpleArrayMap();
+    private static final SimpleArrayMap f996u0 = new SimpleArrayMap();
 
     /* renamed from: v0  reason: collision with root package name */
-    private static final boolean f1028v0 = false;
+    private static final boolean f997v0 = false;
 
     /* renamed from: w0  reason: collision with root package name */
-    private static final int[] f1029w0 = {16842836};
+    private static final int[] f998w0 = {16842836};
 
     /* renamed from: x0  reason: collision with root package name */
-    private static final boolean f1030x0 = !"robolectric".equals(Build.FINGERPRINT);
+    private static final boolean f999x0 = !"robolectric".equals(Build.FINGERPRINT);
     MenuInflater A;
     private CharSequence B;
     private y C;
@@ -118,82 +118,82 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     private boolean Z;
 
     /* renamed from: a0  reason: collision with root package name */
-    private boolean f1031a0;
+    private boolean f1000a0;
 
     /* renamed from: b0  reason: collision with root package name */
-    private boolean f1032b0;
+    private boolean f1001b0;
 
     /* renamed from: c0  reason: collision with root package name */
-    boolean f1033c0;
+    boolean f1002c0;
 
     /* renamed from: d0  reason: collision with root package name */
-    private Configuration f1034d0;
+    private Configuration f1003d0;
 
     /* renamed from: e0  reason: collision with root package name */
-    private int f1035e0;
+    private int f1004e0;
 
     /* renamed from: f0  reason: collision with root package name */
-    private int f1036f0;
+    private int f1005f0;
 
     /* renamed from: g0  reason: collision with root package name */
-    private int f1037g0;
+    private int f1006g0;
 
     /* renamed from: h0  reason: collision with root package name */
-    private boolean f1038h0;
+    private boolean f1007h0;
 
     /* renamed from: i0  reason: collision with root package name */
-    private p f1039i0;
+    private p f1008i0;
 
     /* renamed from: j0  reason: collision with root package name */
-    private p f1040j0;
+    private p f1009j0;
 
     /* renamed from: k0  reason: collision with root package name */
-    boolean f1041k0;
+    boolean f1010k0;
 
     /* renamed from: l0  reason: collision with root package name */
-    int f1042l0;
+    int f1011l0;
 
     /* renamed from: m0  reason: collision with root package name */
-    private final Runnable f1043m0;
+    private final Runnable f1012m0;
 
     /* renamed from: n0  reason: collision with root package name */
-    private boolean f1044n0;
+    private boolean f1013n0;
 
     /* renamed from: o0  reason: collision with root package name */
-    private Rect f1045o0;
+    private Rect f1014o0;
 
     /* renamed from: p0  reason: collision with root package name */
-    private Rect f1046p0;
+    private Rect f1015p0;
 
     /* renamed from: q0  reason: collision with root package name */
-    private androidx.appcompat.app.n f1047q0;
+    private androidx.appcompat.app.n f1016q0;
 
     /* renamed from: r0  reason: collision with root package name */
-    private androidx.appcompat.app.p f1048r0;
+    private androidx.appcompat.app.p f1017r0;
 
     /* renamed from: s0  reason: collision with root package name */
-    private OnBackInvokedDispatcher f1049s0;
+    private OnBackInvokedDispatcher f1018s0;
 
     /* renamed from: t0  reason: collision with root package name */
-    private OnBackInvokedCallback f1050t0;
+    private OnBackInvokedCallback f1019t0;
 
     /* renamed from: u  reason: collision with root package name */
-    final Object f1051u;
+    final Object f1020u;
 
     /* renamed from: v  reason: collision with root package name */
-    final Context f1052v;
+    final Context f1021v;
 
     /* renamed from: w  reason: collision with root package name */
-    Window f1053w;
+    Window f1022w;
 
     /* renamed from: x  reason: collision with root package name */
-    private n f1054x;
+    private n f1023x;
 
     /* renamed from: y  reason: collision with root package name */
-    final androidx.appcompat.app.b f1055y;
+    final androidx.appcompat.app.b f1024y;
 
     /* renamed from: z  reason: collision with root package name */
-    ActionBar f1056z;
+    ActionBar f1025z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Runnable {
@@ -203,16 +203,16 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         @Override // java.lang.Runnable
         public void run() {
             e eVar = e.this;
-            if ((eVar.f1042l0 & 1) != 0) {
+            if ((eVar.f1011l0 & 1) != 0) {
                 eVar.l0(0);
             }
             e eVar2 = e.this;
-            if ((eVar2.f1042l0 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0) {
+            if ((eVar2.f1011l0 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0) {
                 eVar2.l0(108);
             }
             e eVar3 = e.this;
-            eVar3.f1041k0 = false;
-            eVar3.f1042l0 = 0;
+            eVar3.f1010k0 = false;
+            eVar3.f1011l0 = 0;
         }
     }
 
@@ -294,8 +294,8 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: androidx.appcompat.app.e$e  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public class C0020e extends t0 {
-        C0020e() {
+    public class C0018e extends t0 {
+        C0018e() {
         }
 
         @Override // androidx.core.view.s0
@@ -355,7 +355,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     public class i implements ActionMode.Callback {
 
         /* renamed from: a  reason: collision with root package name */
-        private ActionMode.Callback f1065a;
+        private ActionMode.Callback f1034a;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         class a extends t0 {
@@ -381,15 +381,15 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         }
 
         public i(ActionMode.Callback callback) {
-            this.f1065a = callback;
+            this.f1034a = callback;
         }
 
         @Override // androidx.appcompat.view.ActionMode.Callback
         public void a(ActionMode actionMode) {
-            this.f1065a.a(actionMode);
+            this.f1034a.a(actionMode);
             e eVar = e.this;
             if (eVar.H != null) {
-                eVar.f1053w.getDecorView().removeCallbacks(e.this.I);
+                eVar.f1022w.getDecorView().removeCallbacks(e.this.I);
             }
             e eVar2 = e.this;
             if (eVar2.G != null) {
@@ -399,7 +399,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
                 e.this.J.g(new a());
             }
             e eVar4 = e.this;
-            androidx.appcompat.app.b bVar = eVar4.f1055y;
+            androidx.appcompat.app.b bVar = eVar4.f1024y;
             if (bVar != null) {
                 bVar.onSupportActionModeFinished(eVar4.F);
             }
@@ -411,18 +411,18 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
 
         @Override // androidx.appcompat.view.ActionMode.Callback
         public boolean b(ActionMode actionMode, Menu menu) {
-            return this.f1065a.b(actionMode, menu);
+            return this.f1034a.b(actionMode, menu);
         }
 
         @Override // androidx.appcompat.view.ActionMode.Callback
         public boolean c(ActionMode actionMode, MenuItem menuItem) {
-            return this.f1065a.c(actionMode, menuItem);
+            return this.f1034a.c(actionMode, menuItem);
         }
 
         @Override // androidx.appcompat.view.ActionMode.Callback
         public boolean d(ActionMode actionMode, Menu menu) {
             h0.k0(e.this.M);
-            return this.f1065a.d(actionMode, menu);
+            return this.f1034a.d(actionMode, menu);
         }
     }
 
@@ -517,16 +517,16 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     public class n extends androidx.appcompat.view.g {
 
         /* renamed from: e  reason: collision with root package name */
-        private g f1068e;
+        private g f1037e;
 
         /* renamed from: i  reason: collision with root package name */
-        private boolean f1069i;
+        private boolean f1038i;
 
         /* renamed from: o  reason: collision with root package name */
-        private boolean f1070o;
+        private boolean f1039o;
 
         /* renamed from: p  reason: collision with root package name */
-        private boolean f1071p;
+        private boolean f1040p;
 
         n(Window.Callback callback) {
             super(callback);
@@ -534,34 +534,34 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
 
         public boolean b(Window.Callback callback, KeyEvent keyEvent) {
             try {
-                this.f1070o = true;
+                this.f1039o = true;
                 return callback.dispatchKeyEvent(keyEvent);
             } finally {
-                this.f1070o = false;
+                this.f1039o = false;
             }
         }
 
         public void c(Window.Callback callback) {
             try {
-                this.f1069i = true;
+                this.f1038i = true;
                 callback.onContentChanged();
             } finally {
-                this.f1069i = false;
+                this.f1038i = false;
             }
         }
 
         public void d(Window.Callback callback, int i10, Menu menu) {
             try {
-                this.f1071p = true;
+                this.f1040p = true;
                 callback.onPanelClosed(i10, menu);
             } finally {
-                this.f1071p = false;
+                this.f1040p = false;
             }
         }
 
         @Override // androidx.appcompat.view.g, android.view.Window.Callback
         public boolean dispatchKeyEvent(KeyEvent keyEvent) {
-            if (this.f1070o) {
+            if (this.f1039o) {
                 return a().dispatchKeyEvent(keyEvent);
             }
             if (!e.this.k0(keyEvent) && !super.dispatchKeyEvent(keyEvent)) {
@@ -579,11 +579,11 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         }
 
         void e(g gVar) {
-            this.f1068e = gVar;
+            this.f1037e = gVar;
         }
 
         final android.view.ActionMode f(ActionMode.Callback callback) {
-            d.a aVar = new d.a(e.this.f1052v, callback);
+            d.a aVar = new d.a(e.this.f1021v, callback);
             androidx.appcompat.view.ActionMode S = e.this.S(aVar);
             if (S != null) {
                 return aVar.e(S);
@@ -593,7 +593,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
 
         @Override // android.view.Window.Callback
         public void onContentChanged() {
-            if (this.f1069i) {
+            if (this.f1038i) {
                 a().onContentChanged();
             }
         }
@@ -609,7 +609,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         @Override // androidx.appcompat.view.g, android.view.Window.Callback
         public View onCreatePanelView(int i10) {
             View onCreatePanelView;
-            g gVar = this.f1068e;
+            g gVar = this.f1037e;
             if (gVar != null && (onCreatePanelView = gVar.onCreatePanelView(i10)) != null) {
                 return onCreatePanelView;
             }
@@ -625,7 +625,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
 
         @Override // androidx.appcompat.view.g, android.view.Window.Callback
         public void onPanelClosed(int i10, Menu menu) {
-            if (this.f1071p) {
+            if (this.f1040p) {
                 a().onPanelClosed(i10, menu);
                 return;
             }
@@ -648,7 +648,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             if (eVar != null) {
                 eVar.b0(true);
             }
-            g gVar = this.f1068e;
+            g gVar = this.f1037e;
             if (gVar == null || !gVar.a(i10)) {
                 z10 = false;
             }
@@ -665,7 +665,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         public void onProvideKeyboardShortcuts(List list, Menu menu, int i10) {
             androidx.appcompat.view.menu.e eVar;
             s w02 = e.this.w0(0, true);
-            if (w02 != null && (eVar = w02.f1090j) != null) {
+            if (w02 != null && (eVar = w02.f1059j) != null) {
                 super.onProvideKeyboardShortcuts(list, eVar, i10);
             } else {
                 super.onProvideKeyboardShortcuts(list, menu, i10);
@@ -691,11 +691,11 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     public class o extends p {
 
         /* renamed from: c  reason: collision with root package name */
-        private final PowerManager f1073c;
+        private final PowerManager f1042c;
 
         o(Context context) {
             super();
-            this.f1073c = (PowerManager) context.getApplicationContext().getSystemService("power");
+            this.f1042c = (PowerManager) context.getApplicationContext().getSystemService("power");
         }
 
         @Override // androidx.appcompat.app.e.p
@@ -707,7 +707,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
 
         @Override // androidx.appcompat.app.e.p
         public int c() {
-            if (j.a(this.f1073c)) {
+            if (j.a(this.f1042c)) {
                 return 2;
             }
             return 1;
@@ -724,7 +724,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     public abstract class p {
 
         /* renamed from: a  reason: collision with root package name */
-        private BroadcastReceiver f1075a;
+        private BroadcastReceiver f1044a;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -742,13 +742,13 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         }
 
         void a() {
-            BroadcastReceiver broadcastReceiver = this.f1075a;
+            BroadcastReceiver broadcastReceiver = this.f1044a;
             if (broadcastReceiver != null) {
                 try {
-                    e.this.f1052v.unregisterReceiver(broadcastReceiver);
+                    e.this.f1021v.unregisterReceiver(broadcastReceiver);
                 } catch (IllegalArgumentException unused) {
                 }
-                this.f1075a = null;
+                this.f1044a = null;
             }
         }
 
@@ -762,10 +762,10 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             a();
             IntentFilter b10 = b();
             if (b10 != null && b10.countActions() != 0) {
-                if (this.f1075a == null) {
-                    this.f1075a = new a();
+                if (this.f1044a == null) {
+                    this.f1044a = new a();
                 }
-                e.this.f1052v.registerReceiver(this.f1075a, b10);
+                e.this.f1021v.registerReceiver(this.f1044a, b10);
             }
         }
     }
@@ -775,11 +775,11 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     public class q extends p {
 
         /* renamed from: c  reason: collision with root package name */
-        private final u f1078c;
+        private final u f1047c;
 
         q(u uVar) {
             super();
-            this.f1078c = uVar;
+            this.f1047c = uVar;
         }
 
         @Override // androidx.appcompat.app.e.p
@@ -793,7 +793,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
 
         @Override // androidx.appcompat.app.e.p
         public int c() {
-            if (this.f1078c.d()) {
+            if (this.f1047c.d()) {
                 return 2;
             }
             return 1;
@@ -847,84 +847,84 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     public static final class s {
 
         /* renamed from: a  reason: collision with root package name */
-        int f1081a;
+        int f1050a;
 
         /* renamed from: b  reason: collision with root package name */
-        int f1082b;
+        int f1051b;
 
         /* renamed from: c  reason: collision with root package name */
-        int f1083c;
+        int f1052c;
 
         /* renamed from: d  reason: collision with root package name */
-        int f1084d;
+        int f1053d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f1085e;
+        int f1054e;
 
         /* renamed from: f  reason: collision with root package name */
-        int f1086f;
+        int f1055f;
 
         /* renamed from: g  reason: collision with root package name */
-        ViewGroup f1087g;
+        ViewGroup f1056g;
 
         /* renamed from: h  reason: collision with root package name */
-        View f1088h;
+        View f1057h;
 
         /* renamed from: i  reason: collision with root package name */
-        View f1089i;
+        View f1058i;
 
         /* renamed from: j  reason: collision with root package name */
-        androidx.appcompat.view.menu.e f1090j;
+        androidx.appcompat.view.menu.e f1059j;
 
         /* renamed from: k  reason: collision with root package name */
-        androidx.appcompat.view.menu.c f1091k;
+        androidx.appcompat.view.menu.c f1060k;
 
         /* renamed from: l  reason: collision with root package name */
-        Context f1092l;
+        Context f1061l;
 
         /* renamed from: m  reason: collision with root package name */
-        boolean f1093m;
+        boolean f1062m;
 
         /* renamed from: n  reason: collision with root package name */
-        boolean f1094n;
+        boolean f1063n;
 
         /* renamed from: o  reason: collision with root package name */
-        boolean f1095o;
+        boolean f1064o;
 
         /* renamed from: p  reason: collision with root package name */
-        public boolean f1096p;
+        public boolean f1065p;
 
         /* renamed from: q  reason: collision with root package name */
-        boolean f1097q = false;
+        boolean f1066q = false;
 
         /* renamed from: r  reason: collision with root package name */
-        boolean f1098r;
+        boolean f1067r;
 
         /* renamed from: s  reason: collision with root package name */
-        Bundle f1099s;
+        Bundle f1068s;
 
         s(int i10) {
-            this.f1081a = i10;
+            this.f1050a = i10;
         }
 
         androidx.appcompat.view.menu.k a(j.a aVar) {
-            if (this.f1090j == null) {
+            if (this.f1059j == null) {
                 return null;
             }
-            if (this.f1091k == null) {
-                androidx.appcompat.view.menu.c cVar = new androidx.appcompat.view.menu.c(this.f1092l, f.g.f23389j);
-                this.f1091k = cVar;
+            if (this.f1060k == null) {
+                androidx.appcompat.view.menu.c cVar = new androidx.appcompat.view.menu.c(this.f1061l, f.g.f22981j);
+                this.f1060k = cVar;
                 cVar.c(aVar);
-                this.f1090j.b(this.f1091k);
+                this.f1059j.b(this.f1060k);
             }
-            return this.f1091k.j(this.f1087g);
+            return this.f1060k.j(this.f1056g);
         }
 
         public boolean b() {
-            if (this.f1088h == null) {
+            if (this.f1057h == null) {
                 return false;
             }
-            if (this.f1089i == null && this.f1091k.i().getCount() <= 0) {
+            if (this.f1058i == null && this.f1060k.i().getCount() <= 0) {
                 return false;
             }
             return true;
@@ -932,13 +932,13 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
 
         void c(androidx.appcompat.view.menu.e eVar) {
             androidx.appcompat.view.menu.c cVar;
-            androidx.appcompat.view.menu.e eVar2 = this.f1090j;
+            androidx.appcompat.view.menu.e eVar2 = this.f1059j;
             if (eVar != eVar2) {
                 if (eVar2 != null) {
-                    eVar2.P(this.f1091k);
+                    eVar2.P(this.f1060k);
                 }
-                this.f1090j = eVar;
-                if (eVar != null && (cVar = this.f1091k) != null) {
+                this.f1059j = eVar;
+                if (eVar != null && (cVar = this.f1060k) != null) {
                     eVar.b(cVar);
                 }
             }
@@ -948,7 +948,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             TypedValue typedValue = new TypedValue();
             Resources.Theme newTheme = context.getResources().newTheme();
             newTheme.setTo(context.getTheme());
-            newTheme.resolveAttribute(f.a.f23280a, typedValue, true);
+            newTheme.resolveAttribute(f.a.f22872a, typedValue, true);
             int i10 = typedValue.resourceId;
             if (i10 != 0) {
                 newTheme.applyStyle(i10, true);
@@ -958,14 +958,14 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             if (i11 != 0) {
                 newTheme.applyStyle(i11, true);
             } else {
-                newTheme.applyStyle(f.i.f23415b, true);
+                newTheme.applyStyle(f.i.f23007b, true);
             }
             ContextThemeWrapper contextThemeWrapper = new ContextThemeWrapper(context, 0);
             contextThemeWrapper.getTheme().setTo(newTheme);
-            this.f1092l = contextThemeWrapper;
-            TypedArray obtainStyledAttributes = contextThemeWrapper.obtainStyledAttributes(f.j.f23539y0);
-            this.f1082b = obtainStyledAttributes.getResourceId(f.j.B0, 0);
-            this.f1086f = obtainStyledAttributes.getResourceId(f.j.A0, 0);
+            this.f1061l = contextThemeWrapper;
+            TypedArray obtainStyledAttributes = contextThemeWrapper.obtainStyledAttributes(f.j.f23131y0);
+            this.f1051b = obtainStyledAttributes.getResourceId(f.j.B0, 0);
+            this.f1055f = obtainStyledAttributes.getResourceId(f.j.A0, 0);
             obtainStyledAttributes.recycle();
         }
     }
@@ -992,7 +992,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             s p02 = eVar2.p0(eVar);
             if (p02 != null) {
                 if (z11) {
-                    e.this.b0(p02.f1081a, p02, D);
+                    e.this.b0(p02.f1050a, p02, D);
                     e.this.f0(p02, true);
                     return;
                 }
@@ -1005,7 +1005,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             Window.Callback y02;
             if (eVar == eVar.D()) {
                 e eVar2 = e.this;
-                if (eVar2.R && (y02 = eVar2.y0()) != null && !e.this.f1033c0) {
+                if (eVar2.R && (y02 = eVar2.y0()) != null && !e.this.f1002c0) {
                     y02.onMenuOpened(108, eVar);
                     return true;
                 }
@@ -1021,18 +1021,18 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     }
 
     private boolean A0(s sVar) {
-        View view = sVar.f1089i;
+        View view = sVar.f1058i;
         if (view != null) {
-            sVar.f1088h = view;
+            sVar.f1057h = view;
             return true;
-        } else if (sVar.f1090j == null) {
+        } else if (sVar.f1059j == null) {
             return false;
         } else {
             if (this.E == null) {
                 this.E = new t();
             }
             View view2 = (View) sVar.a(this.E);
-            sVar.f1088h = view2;
+            sVar.f1057h = view2;
             if (view2 != null) {
                 return true;
             }
@@ -1042,26 +1042,26 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
 
     private boolean B0(s sVar) {
         sVar.d(r0());
-        sVar.f1087g = new r(sVar.f1092l);
-        sVar.f1083c = 81;
+        sVar.f1056g = new r(sVar.f1061l);
+        sVar.f1052c = 81;
         return true;
     }
 
     private boolean C0(s sVar) {
         Resources.Theme theme;
-        Context context = this.f1052v;
-        int i10 = sVar.f1081a;
+        Context context = this.f1021v;
+        int i10 = sVar.f1050a;
         if ((i10 == 0 || i10 == 108) && this.C != null) {
             TypedValue typedValue = new TypedValue();
             Resources.Theme theme2 = context.getTheme();
-            theme2.resolveAttribute(f.a.f23283d, typedValue, true);
+            theme2.resolveAttribute(f.a.f22875d, typedValue, true);
             if (typedValue.resourceId != 0) {
                 theme = context.getResources().newTheme();
                 theme.setTo(theme2);
                 theme.applyStyle(typedValue.resourceId, true);
-                theme.resolveAttribute(f.a.f23284e, typedValue, true);
+                theme.resolveAttribute(f.a.f22876e, typedValue, true);
             } else {
-                theme2.resolveAttribute(f.a.f23284e, typedValue, true);
+                theme2.resolveAttribute(f.a.f22876e, typedValue, true);
                 theme = null;
             }
             if (typedValue.resourceId != 0) {
@@ -1084,17 +1084,17 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     }
 
     private void D0(int i10) {
-        this.f1042l0 = (1 << i10) | this.f1042l0;
-        if (!this.f1041k0) {
-            h0.f0(this.f1053w.getDecorView(), this.f1043m0);
-            this.f1041k0 = true;
+        this.f1011l0 = (1 << i10) | this.f1011l0;
+        if (!this.f1010k0) {
+            h0.f0(this.f1022w.getDecorView(), this.f1012m0);
+            this.f1010k0 = true;
         }
     }
 
     private boolean I0(int i10, KeyEvent keyEvent) {
         if (keyEvent.getRepeatCount() == 0) {
             s w02 = w0(i10, true);
-            if (!w02.f1095o) {
+            if (!w02.f1064o) {
                 return S0(w02, keyEvent);
             }
             return false;
@@ -1110,9 +1110,9 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         }
         boolean z11 = true;
         s w02 = w0(i10, true);
-        if (i10 == 0 && (yVar = this.C) != null && yVar.a() && !ViewConfiguration.get(this.f1052v).hasPermanentMenuKey()) {
+        if (i10 == 0 && (yVar = this.C) != null && yVar.a() && !ViewConfiguration.get(this.f1021v).hasPermanentMenuKey()) {
             if (!this.C.e()) {
-                if (!this.f1033c0 && S0(w02, keyEvent)) {
+                if (!this.f1002c0 && S0(w02, keyEvent)) {
                     z11 = this.C.c();
                 }
                 z11 = false;
@@ -1120,11 +1120,11 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
                 z11 = this.C.b();
             }
         } else {
-            boolean z12 = w02.f1095o;
-            if (!z12 && !w02.f1094n) {
-                if (w02.f1093m) {
-                    if (w02.f1098r) {
-                        w02.f1093m = false;
+            boolean z12 = w02.f1064o;
+            if (!z12 && !w02.f1063n) {
+                if (w02.f1062m) {
+                    if (w02.f1067r) {
+                        w02.f1062m = false;
                         z10 = S0(w02, keyEvent);
                     } else {
                         z10 = true;
@@ -1140,7 +1140,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             }
         }
         if (z11) {
-            AudioManager audioManager = (AudioManager) this.f1052v.getApplicationContext().getSystemService(MediaStreamTrack.AUDIO_TRACK_KIND);
+            AudioManager audioManager = (AudioManager) this.f1021v.getApplicationContext().getSystemService(MediaStreamTrack.AUDIO_TRACK_KIND);
             if (audioManager != null) {
                 audioManager.playSoundEffect(0);
                 return z11;
@@ -1170,7 +1170,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         if (keyEvent.isSystem()) {
             return false;
         }
-        if ((sVar.f1093m || S0(sVar, keyEvent)) && (eVar = sVar.f1090j) != null) {
+        if ((sVar.f1062m || S0(sVar, keyEvent)) && (eVar = sVar.f1059j) != null) {
             z10 = eVar.performShortcut(i10, keyEvent, i11);
         }
         if (z10 && (i11 & 1) == 0 && this.C == null) {
@@ -1186,10 +1186,10 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         boolean z11;
         y yVar2;
         y yVar3;
-        if (this.f1033c0) {
+        if (this.f1002c0) {
             return false;
         }
-        if (sVar.f1093m) {
+        if (sVar.f1062m) {
             return true;
         }
         s sVar2 = this.Y;
@@ -1198,9 +1198,9 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         }
         Window.Callback y02 = y0();
         if (y02 != null) {
-            sVar.f1089i = y02.onCreatePanelView(sVar.f1081a);
+            sVar.f1058i = y02.onCreatePanelView(sVar.f1050a);
         }
-        int i11 = sVar.f1081a;
+        int i11 = sVar.f1050a;
         if (i11 != 0 && i11 != 108) {
             z10 = false;
         } else {
@@ -1209,39 +1209,39 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         if (z10 && (yVar3 = this.C) != null) {
             yVar3.f();
         }
-        if (sVar.f1089i == null && (!z10 || !(Q0() instanceof androidx.appcompat.app.s))) {
-            androidx.appcompat.view.menu.e eVar = sVar.f1090j;
-            if (eVar == null || sVar.f1098r) {
-                if (eVar == null && (!C0(sVar) || sVar.f1090j == null)) {
+        if (sVar.f1058i == null && (!z10 || !(Q0() instanceof androidx.appcompat.app.s))) {
+            androidx.appcompat.view.menu.e eVar = sVar.f1059j;
+            if (eVar == null || sVar.f1067r) {
+                if (eVar == null && (!C0(sVar) || sVar.f1059j == null)) {
                     return false;
                 }
                 if (z10 && this.C != null) {
                     if (this.D == null) {
                         this.D = new h();
                     }
-                    this.C.d(sVar.f1090j, this.D);
+                    this.C.d(sVar.f1059j, this.D);
                 }
-                sVar.f1090j.e0();
-                if (!y02.onCreatePanelMenu(sVar.f1081a, sVar.f1090j)) {
+                sVar.f1059j.e0();
+                if (!y02.onCreatePanelMenu(sVar.f1050a, sVar.f1059j)) {
                     sVar.c(null);
                     if (z10 && (yVar = this.C) != null) {
                         yVar.d(null, this.D);
                     }
                     return false;
                 }
-                sVar.f1098r = false;
+                sVar.f1067r = false;
             }
-            sVar.f1090j.e0();
-            Bundle bundle = sVar.f1099s;
+            sVar.f1059j.e0();
+            Bundle bundle = sVar.f1068s;
             if (bundle != null) {
-                sVar.f1090j.Q(bundle);
-                sVar.f1099s = null;
+                sVar.f1059j.Q(bundle);
+                sVar.f1068s = null;
             }
-            if (!y02.onPreparePanel(0, sVar.f1089i, sVar.f1090j)) {
+            if (!y02.onPreparePanel(0, sVar.f1058i, sVar.f1059j)) {
                 if (z10 && (yVar2 = this.C) != null) {
                     yVar2.d(null, this.D);
                 }
-                sVar.f1090j.d0();
+                sVar.f1059j.d0();
                 return false;
             }
             if (keyEvent != null) {
@@ -1254,36 +1254,36 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             } else {
                 z11 = false;
             }
-            sVar.f1096p = z11;
-            sVar.f1090j.setQwertyMode(z11);
-            sVar.f1090j.d0();
+            sVar.f1065p = z11;
+            sVar.f1059j.setQwertyMode(z11);
+            sVar.f1059j.d0();
         }
-        sVar.f1093m = true;
-        sVar.f1094n = false;
+        sVar.f1062m = true;
+        sVar.f1063n = false;
         this.Y = sVar;
         return true;
     }
 
     private void T0(boolean z10) {
         y yVar = this.C;
-        if (yVar != null && yVar.a() && (!ViewConfiguration.get(this.f1052v).hasPermanentMenuKey() || this.C.g())) {
+        if (yVar != null && yVar.a() && (!ViewConfiguration.get(this.f1021v).hasPermanentMenuKey() || this.C.g())) {
             Window.Callback y02 = y0();
             if (this.C.e() && z10) {
                 this.C.b();
-                if (!this.f1033c0) {
-                    y02.onPanelClosed(108, w0(0, true).f1090j);
+                if (!this.f1002c0) {
+                    y02.onPanelClosed(108, w0(0, true).f1059j);
                     return;
                 }
                 return;
-            } else if (y02 != null && !this.f1033c0) {
-                if (this.f1041k0 && (this.f1042l0 & 1) != 0) {
-                    this.f1053w.getDecorView().removeCallbacks(this.f1043m0);
-                    this.f1043m0.run();
+            } else if (y02 != null && !this.f1002c0) {
+                if (this.f1010k0 && (this.f1011l0 & 1) != 0) {
+                    this.f1022w.getDecorView().removeCallbacks(this.f1012m0);
+                    this.f1012m0.run();
                 }
                 s w02 = w0(0, true);
-                androidx.appcompat.view.menu.e eVar = w02.f1090j;
-                if (eVar != null && !w02.f1098r && y02.onPreparePanel(0, w02.f1089i, eVar)) {
-                    y02.onMenuOpened(108, w02.f1090j);
+                androidx.appcompat.view.menu.e eVar = w02.f1059j;
+                if (eVar != null && !w02.f1067r && y02.onPreparePanel(0, w02.f1058i, eVar)) {
+                    y02.onMenuOpened(108, w02.f1059j);
                     this.C.c();
                     return;
                 }
@@ -1293,7 +1293,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             }
         }
         s w03 = w0(0, true);
-        w03.f1097q = true;
+        w03.f1066q = true;
         f0(w03, false);
         P0(w03, null);
     }
@@ -1316,33 +1316,33 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
 
     private boolean W(boolean z10, boolean z11) {
         LocaleListCompat localeListCompat;
-        if (this.f1033c0) {
+        if (this.f1002c0) {
             return false;
         }
         int a02 = a0();
-        int F0 = F0(this.f1052v, a02);
+        int F0 = F0(this.f1021v, a02);
         if (Build.VERSION.SDK_INT < 33) {
-            localeListCompat = Z(this.f1052v);
+            localeListCompat = Z(this.f1021v);
         } else {
             localeListCompat = null;
         }
         if (!z11 && localeListCompat != null) {
-            localeListCompat = v0(this.f1052v.getResources().getConfiguration());
+            localeListCompat = v0(this.f1021v.getResources().getConfiguration());
         }
         boolean e12 = e1(F0, localeListCompat, z10);
         if (a02 == 0) {
-            u0(this.f1052v).e();
+            u0(this.f1021v).e();
         } else {
-            p pVar = this.f1039i0;
+            p pVar = this.f1008i0;
             if (pVar != null) {
                 pVar.a();
             }
         }
         if (a02 == 3) {
-            t0(this.f1052v).e();
+            t0(this.f1021v).e();
             return e12;
         }
-        p pVar2 = this.f1040j0;
+        p pVar2 = this.f1009j0;
         if (pVar2 != null) {
             pVar2.a();
         }
@@ -1351,9 +1351,9 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
 
     private void X() {
         ContentFrameLayout contentFrameLayout = (ContentFrameLayout) this.M.findViewById(16908290);
-        View decorView = this.f1053w.getDecorView();
+        View decorView = this.f1022w.getDecorView();
         contentFrameLayout.a(decorView.getPaddingLeft(), decorView.getPaddingTop(), decorView.getPaddingRight(), decorView.getPaddingBottom());
-        TypedArray obtainStyledAttributes = this.f1052v.obtainStyledAttributes(f.j.f23539y0);
+        TypedArray obtainStyledAttributes = this.f1021v.obtainStyledAttributes(f.j.f23131y0);
         obtainStyledAttributes.getValue(f.j.K0, contentFrameLayout.getMinWidthMajor());
         obtainStyledAttributes.getValue(f.j.L0, contentFrameLayout.getMinWidthMinor());
         if (obtainStyledAttributes.hasValue(f.j.I0)) {
@@ -1373,20 +1373,20 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     }
 
     private void Y(Window window) {
-        if (this.f1053w == null) {
+        if (this.f1022w == null) {
             Window.Callback callback = window.getCallback();
             if (!(callback instanceof n)) {
                 n nVar = new n(callback);
-                this.f1054x = nVar;
+                this.f1023x = nVar;
                 window.setCallback(nVar);
-                v0 u10 = v0.u(this.f1052v, null, f1029w0);
+                v0 u10 = v0.u(this.f1021v, null, f998w0);
                 Drawable h10 = u10.h(0);
                 if (h10 != null) {
                     window.setBackgroundDrawable(h10);
                 }
                 u10.x();
-                this.f1053w = window;
-                if (Build.VERSION.SDK_INT >= 33 && this.f1049s0 == null) {
+                this.f1022w = window;
+                if (Build.VERSION.SDK_INT >= 33 && this.f1018s0 == null) {
                     O(null);
                     return;
                 }
@@ -1401,7 +1401,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         if (viewParent == null) {
             return false;
         }
-        View decorView = this.f1053w.getDecorView();
+        View decorView = this.f1022w.getDecorView();
         while (viewParent != null) {
             if (viewParent == decorView || !(viewParent instanceof View) || ((View) viewParent).isAttachedToWindow()) {
                 return false;
@@ -1412,7 +1412,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     }
 
     private int a0() {
-        int i10 = this.f1035e0;
+        int i10 = this.f1004e0;
         if (i10 != -100) {
             return i10;
         }
@@ -1427,7 +1427,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     }
 
     private AppCompatActivity c1() {
-        for (Context context = this.f1052v; context != null; context = ((ContextWrapper) context).getBaseContext()) {
+        for (Context context = this.f1021v; context != null; context = ((ContextWrapper) context).getBaseContext()) {
             if (context instanceof AppCompatActivity) {
                 return (AppCompatActivity) context;
             }
@@ -1439,23 +1439,23 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     }
 
     private void d0() {
-        p pVar = this.f1039i0;
+        p pVar = this.f1008i0;
         if (pVar != null) {
             pVar.a();
         }
-        p pVar2 = this.f1040j0;
+        p pVar2 = this.f1009j0;
         if (pVar2 != null) {
             pVar2.a();
         }
     }
 
     private void d1(Configuration configuration) {
-        Activity activity = (Activity) this.f1051u;
+        Activity activity = (Activity) this.f1020u;
         if (activity instanceof LifecycleOwner) {
-            if (((LifecycleOwner) activity).getLifecycle().b().d(Lifecycle.State.f4438i)) {
+            if (((LifecycleOwner) activity).getLifecycle().b().d(Lifecycle.State.f4407i)) {
                 activity.onConfigurationChanged(configuration);
             }
-        } else if (this.f1032b0 && !this.f1033c0) {
+        } else if (this.f1001b0 && !this.f1002c0) {
             activity.onConfigurationChanged(configuration);
         }
     }
@@ -1469,18 +1469,18 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     private boolean e1(int r11, androidx.core.os.LocaleListCompat r12, boolean r13) {
         /*
             r10 = this;
-            android.content.Context r1 = r10.f1052v
+            android.content.Context r1 = r10.f1021v
             r4 = 0
             r5 = 0
             r0 = r10
             r2 = r11
             r3 = r12
             android.content.res.Configuration r11 = r0.g0(r1, r2, r3, r4, r5)
-            android.content.Context r12 = r0.f1052v
+            android.content.Context r12 = r0.f1021v
             int r12 = r10.s0(r12)
-            android.content.res.Configuration r1 = r0.f1034d0
+            android.content.res.Configuration r1 = r0.f1003d0
             if (r1 != 0) goto L1f
-            android.content.Context r1 = r0.f1052v
+            android.content.Context r1 = r0.f1021v
             android.content.res.Resources r1 = r1.getResources()
             android.content.res.Configuration r1 = r1.getConfiguration()
         L1f:
@@ -1513,14 +1513,14 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             r9 = 1
             if (r1 == 0) goto L8c
             if (r13 == 0) goto L8c
-            boolean r13 = r0.f1031a0
+            boolean r13 = r0.f1000a0
             if (r13 == 0) goto L8c
-            boolean r13 = androidx.appcompat.app.e.f1030x0
+            boolean r13 = androidx.appcompat.app.e.f999x0
             if (r13 != 0) goto L58
-            boolean r13 = r0.f1032b0
+            boolean r13 = r0.f1001b0
             if (r13 == 0) goto L8c
         L58:
-            java.lang.Object r13 = r0.f1051u
+            java.lang.Object r13 = r0.f1020u
             boolean r1 = r13 instanceof android.app.Activity
             if (r1 == 0) goto L8c
             android.app.Activity r13 = (android.app.Activity) r13
@@ -1531,14 +1531,14 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             if (r13 < r1) goto L83
             r13 = r4 & 8192(0x2000, float:1.14794E-41)
             if (r13 == 0) goto L83
-            java.lang.Object r13 = r0.f1051u
+            java.lang.Object r13 = r0.f1020u
             android.app.Activity r13 = (android.app.Activity) r13
             android.view.Window r13 = r13.getWindow()
             android.view.View r13 = r13.getDecorView()
             int r11 = r11.getLayoutDirection()
             r13.setLayoutDirection(r11)
         L83:
-            java.lang.Object r11 = r0.f1051u
+            java.lang.Object r11 = r0.f1020u
             android.app.Activity r11 = (android.app.Activity) r11
             androidx.core.app.b.u(r11)
             r11 = r9
@@ -1558,7 +1558,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             r9 = r11
         L9b:
             if (r9 == 0) goto Lb7
-            java.lang.Object r11 = r0.f1051u
+            java.lang.Object r11 = r0.f1020u
             boolean r12 = r11 instanceof androidx.appcompat.app.AppCompatActivity
             if (r12 == 0) goto Lb7
             r12 = r4 & 512(0x200, float:7.175E-43)
@@ -1568,12 +1568,12 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         Lac:
             r11 = r4 & 4
             if (r11 == 0) goto Lb7
-            java.lang.Object r11 = r0.f1051u
+            java.lang.Object r11 = r0.f1020u
             androidx.appcompat.app.AppCompatActivity r11 = (androidx.appcompat.app.AppCompatActivity) r11
             r11.onLocalesChanged(r3)
         Lb7:
             if (r7 == 0) goto Lca
-            android.content.Context r11 = r0.f1052v
+            android.content.Context r11 = r0.f1021v
             android.content.res.Resources r11 = r11.getResources()
             android.content.res.Configuration r11 = r11.getConfiguration()
             androidx.core.os.LocaleListCompat r11 = r10.v0(r11)
@@ -1612,7 +1612,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     }
 
     private void g1(int i10, LocaleListCompat localeListCompat, boolean z10, Configuration configuration) {
-        Resources resources = this.f1052v.getResources();
+        Resources resources = this.f1021v.getResources();
         Configuration configuration2 = new Configuration(resources.getConfiguration());
         if (configuration != null) {
             configuration2.updateFrom(configuration);
@@ -1625,12 +1625,12 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         if (Build.VERSION.SDK_INT < 26) {
             androidx.appcompat.app.r.a(resources);
         }
-        int i11 = this.f1036f0;
+        int i11 = this.f1005f0;
         if (i11 != 0) {
-            this.f1052v.setTheme(i11);
-            this.f1052v.getTheme().applyStyle(this.f1036f0, true);
+            this.f1021v.setTheme(i11);
+            this.f1021v.getTheme().applyStyle(this.f1005f0, true);
         }
-        if (z10 && (this.f1051u instanceof Activity)) {
+        if (z10 && (this.f1020u instanceof Activity)) {
             d1(configuration2);
         }
     }
@@ -1638,7 +1638,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     private ViewGroup h0() {
         ViewGroup viewGroup;
         Context context;
-        TypedArray obtainStyledAttributes = this.f1052v.obtainStyledAttributes(f.j.f23539y0);
+        TypedArray obtainStyledAttributes = this.f1021v.obtainStyledAttributes(f.j.f23131y0);
         if (obtainStyledAttributes.hasValue(f.j.D0)) {
             if (obtainStyledAttributes.getBoolean(f.j.M0, false)) {
                 I(1);
@@ -1651,26 +1651,26 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             if (obtainStyledAttributes.getBoolean(f.j.F0, false)) {
                 I(10);
             }
-            this.U = obtainStyledAttributes.getBoolean(f.j.f23544z0, false);
+            this.U = obtainStyledAttributes.getBoolean(f.j.f23136z0, false);
             obtainStyledAttributes.recycle();
             o0();
-            this.f1053w.getDecorView();
-            LayoutInflater from = LayoutInflater.from(this.f1052v);
+            this.f1022w.getDecorView();
+            LayoutInflater from = LayoutInflater.from(this.f1021v);
             if (!this.V) {
                 if (this.U) {
-                    viewGroup = (ViewGroup) from.inflate(f.g.f23385f, (ViewGroup) null);
+                    viewGroup = (ViewGroup) from.inflate(f.g.f22977f, (ViewGroup) null);
                     this.S = false;
                     this.R = false;
                 } else if (this.R) {
                     TypedValue typedValue = new TypedValue();
-                    this.f1052v.getTheme().resolveAttribute(f.a.f23283d, typedValue, true);
+                    this.f1021v.getTheme().resolveAttribute(f.a.f22875d, typedValue, true);
                     if (typedValue.resourceId != 0) {
-                        context = new ContextThemeWrapper(this.f1052v, typedValue.resourceId);
+                        context = new ContextThemeWrapper(this.f1021v, typedValue.resourceId);
                     } else {
-                        context = this.f1052v;
+                        context = this.f1021v;
                     }
-                    viewGroup = (ViewGroup) LayoutInflater.from(context).inflate(f.g.f23395p, (ViewGroup) null);
-                    y yVar = (y) viewGroup.findViewById(f.f.f23370q);
+                    viewGroup = (ViewGroup) LayoutInflater.from(context).inflate(f.g.f22987p, (ViewGroup) null);
+                    y yVar = (y) viewGroup.findViewById(f.f.f22962q);
                     this.C = yVar;
                     yVar.setWindowCallback(y0());
                     if (this.S) {
@@ -1686,7 +1686,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
                     viewGroup = null;
                 }
             } else {
-                viewGroup = this.T ? (ViewGroup) from.inflate(f.g.f23394o, (ViewGroup) null) : (ViewGroup) from.inflate(f.g.f23393n, (ViewGroup) null);
+                viewGroup = this.T ? (ViewGroup) from.inflate(f.g.f22986o, (ViewGroup) null) : (ViewGroup) from.inflate(f.g.f22985n, (ViewGroup) null);
             }
             if (viewGroup != null) {
                 h0.D0(viewGroup, new b());
@@ -1694,8 +1694,8 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
                     this.N = (TextView) viewGroup.findViewById(f.f.N);
                 }
                 g1.c(viewGroup);
-                ContentFrameLayout contentFrameLayout = (ContentFrameLayout) viewGroup.findViewById(f.f.f23355b);
-                ViewGroup viewGroup2 = (ViewGroup) this.f1053w.findViewById(16908290);
+                ContentFrameLayout contentFrameLayout = (ContentFrameLayout) viewGroup.findViewById(f.f.f22947b);
+                ViewGroup viewGroup2 = (ViewGroup) this.f1022w.findViewById(16908290);
                 if (viewGroup2 != null) {
                     while (viewGroup2.getChildCount() > 0) {
                         View childAt = viewGroup2.getChildAt(0);
@@ -1708,7 +1708,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
                         ((FrameLayout) viewGroup2).setForeground(null);
                     }
                 }
-                this.f1053w.setContentView(viewGroup);
+                this.f1022w.setContentView(viewGroup);
                 contentFrameLayout.setAttachListener(new c());
                 return viewGroup;
             }
@@ -1721,9 +1721,9 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     private void i1(View view) {
         int c10;
         if ((h0.L(view) & 8192) != 0) {
-            c10 = androidx.core.content.a.c(this.f1052v, f.c.f23308b);
+            c10 = androidx.core.content.a.c(this.f1021v, f.c.f22900b);
         } else {
-            c10 = androidx.core.content.a.c(this.f1052v, f.c.f23307a);
+            c10 = androidx.core.content.a.c(this.f1021v, f.c.f22899a);
         }
         view.setBackgroundColor(c10);
     }
@@ -1749,8 +1749,8 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             O0(this.M);
             this.L = true;
             s w02 = w0(0, false);
-            if (!this.f1033c0) {
-                if (w02 == null || w02.f1090j == null) {
+            if (!this.f1002c0) {
+                if (w02 == null || w02.f1059j == null) {
                     D0(108);
                 }
             }
@@ -1758,13 +1758,13 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     }
 
     private void o0() {
-        if (this.f1053w == null) {
-            Object obj = this.f1051u;
+        if (this.f1022w == null) {
+            Object obj = this.f1020u;
             if (obj instanceof Activity) {
                 Y(((Activity) obj).getWindow());
             }
         }
-        if (this.f1053w != null) {
+        if (this.f1022w != null) {
             return;
         }
         throw new IllegalStateException("We have not been given a Window");
@@ -1880,7 +1880,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
 
     private int s0(Context context) {
         int i10;
-        if (!this.f1038h0 && (this.f1051u instanceof Activity)) {
+        if (!this.f1007h0 && (this.f1020u instanceof Activity)) {
             PackageManager packageManager = context.getPackageManager();
             if (packageManager == null) {
                 return 0;
@@ -1891,45 +1891,45 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
                 } else {
                     i10 = 786432;
                 }
-                ActivityInfo activityInfo = packageManager.getActivityInfo(new ComponentName(context, this.f1051u.getClass()), i10);
+                ActivityInfo activityInfo = packageManager.getActivityInfo(new ComponentName(context, this.f1020u.getClass()), i10);
                 if (activityInfo != null) {
-                    this.f1037g0 = activityInfo.configChanges;
+                    this.f1006g0 = activityInfo.configChanges;
                 }
             } catch (PackageManager.NameNotFoundException e10) {
                 Log.d("AppCompatDelegate", "Exception while getting ActivityInfo", e10);
-                this.f1037g0 = 0;
+                this.f1006g0 = 0;
             }
         }
-        this.f1038h0 = true;
-        return this.f1037g0;
+        this.f1007h0 = true;
+        return this.f1006g0;
     }
 
     private p t0(Context context) {
-        if (this.f1040j0 == null) {
-            this.f1040j0 = new o(context);
+        if (this.f1009j0 == null) {
+            this.f1009j0 = new o(context);
         }
-        return this.f1040j0;
+        return this.f1009j0;
     }
 
     private p u0(Context context) {
-        if (this.f1039i0 == null) {
-            this.f1039i0 = new q(u.a(context));
+        if (this.f1008i0 == null) {
+            this.f1008i0 = new q(u.a(context));
         }
-        return this.f1039i0;
+        return this.f1008i0;
     }
 
     private void z0() {
         n0();
-        if (this.R && this.f1056z == null) {
-            Object obj = this.f1051u;
+        if (this.R && this.f1025z == null) {
+            Object obj = this.f1020u;
             if (obj instanceof Activity) {
-                this.f1056z = new v((Activity) this.f1051u, this.S);
+                this.f1025z = new v((Activity) this.f1020u, this.S);
             } else if (obj instanceof Dialog) {
-                this.f1056z = new v((Dialog) this.f1051u);
+                this.f1025z = new v((Dialog) this.f1020u);
             }
-            ActionBar actionBar = this.f1056z;
+            ActionBar actionBar = this.f1025z;
             if (actionBar != null) {
-                actionBar.r(this.f1044n0);
+                actionBar.r(this.f1013n0);
             }
         }
     }
@@ -1943,45 +1943,45 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     public void A() {
         /*
             r3 = this;
-            java.lang.Object r0 = r3.f1051u
+            java.lang.Object r0 = r3.f1020u
             boolean r0 = r0 instanceof android.app.Activity
             if (r0 == 0) goto L9
             androidx.appcompat.app.AppCompatDelegate.G(r3)
         L9:
-            boolean r0 = r3.f1041k0
+            boolean r0 = r3.f1010k0
             if (r0 == 0) goto L18
-            android.view.Window r0 = r3.f1053w
+            android.view.Window r0 = r3.f1022w
             android.view.View r0 = r0.getDecorView()
-            java.lang.Runnable r1 = r3.f1043m0
+            java.lang.Runnable r1 = r3.f1012m0
             r0.removeCallbacks(r1)
         L18:
             r0 = 1
-            r3.f1033c0 = r0
-            int r0 = r3.f1035e0
+            r3.f1002c0 = r0
+            int r0 = r3.f1004e0
             r1 = -100
             if (r0 == r1) goto L45
-            java.lang.Object r0 = r3.f1051u
+            java.lang.Object r0 = r3.f1020u
             boolean r1 = r0 instanceof android.app.Activity
             if (r1 == 0) goto L45
             android.app.Activity r0 = (android.app.Activity) r0
             boolean r0 = r0.isChangingConfigurations()
             if (r0 == 0) goto L45
-            androidx.collection.SimpleArrayMap r0 = androidx.appcompat.app.e.f1027u0
-            java.lang.Object r1 = r3.f1051u
+            androidx.collection.SimpleArrayMap r0 = androidx.appcompat.app.e.f996u0
+            java.lang.Object r1 = r3.f1020u
             java.lang.Class r1 = r1.getClass()
             java.lang.String r1 = r1.getName()
-            int r2 = r3.f1035e0
+            int r2 = r3.f1004e0
             java.lang.Integer r2 = java.lang.Integer.valueOf(r2)
             r0.put(r1, r2)
             goto L54
         L45:
-            androidx.collection.SimpleArrayMap r0 = androidx.appcompat.app.e.f1027u0
-            java.lang.Object r1 = r3.f1051u
+            androidx.collection.SimpleArrayMap r0 = androidx.appcompat.app.e.f996u0
+            java.lang.Object r1 = r3.f1020u
             java.lang.Class r1 = r1.getClass()
             java.lang.String r1 = r1.getName()
             r0.remove(r1)
         L54:
-            androidx.appcompat.app.ActionBar r0 = r3.f1056z
+            androidx.appcompat.app.ActionBar r0 = r3.f1025z
             if (r0 == 0) goto L5b
             r0.n()
         L5b:
@@ -2051,7 +2051,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         boolean z10 = this.Z;
         this.Z = false;
         s w02 = w0(0, false);
-        if (w02 != null && w02.f1095o) {
+        if (w02 != null && w02.f1064o) {
             if (!z10) {
                 f0(w02, true);
             }
@@ -2100,7 +2100,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
                     if (U0 != 10) {
                         if (U0 != 108) {
                             if (U0 != 109) {
-                                return this.f1053w.requestFeature(U0);
+                                return this.f1022w.requestFeature(U0);
                             }
                             b1();
                             this.S = true;
@@ -2136,7 +2136,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         if (sVar != null && R0(sVar, keyEvent.getKeyCode(), keyEvent, 1)) {
             s sVar2 = this.Y;
             if (sVar2 != null) {
-                sVar2.f1094n = true;
+                sVar2.f1063n = true;
             }
             return true;
         }
@@ -2144,7 +2144,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             s w02 = w0(0, true);
             S0(w02, keyEvent);
             boolean R0 = R0(w02, keyEvent.getKeyCode(), keyEvent, 1);
-            w02.f1093m = false;
+            w02.f1062m = false;
             if (R0) {
                 return true;
             }
@@ -2157,8 +2157,8 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         n0();
         ViewGroup viewGroup = (ViewGroup) this.M.findViewById(16908290);
         viewGroup.removeAllViews();
-        LayoutInflater.from(this.f1052v).inflate(i10, viewGroup);
-        this.f1054x.c(this.f1053w.getCallback());
+        LayoutInflater.from(this.f1021v).inflate(i10, viewGroup);
+        this.f1023x.c(this.f1022w.getCallback());
     }
 
     boolean K0(int i10, KeyEvent keyEvent) {
@@ -2179,7 +2179,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         ViewGroup viewGroup = (ViewGroup) this.M.findViewById(16908290);
         viewGroup.removeAllViews();
         viewGroup.addView(view);
-        this.f1054x.c(this.f1053w.getCallback());
+        this.f1023x.c(this.f1022w.getCallback());
     }
 
     @Override // androidx.appcompat.app.AppCompatDelegate
@@ -2188,7 +2188,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         ViewGroup viewGroup = (ViewGroup) this.M.findViewById(16908290);
         viewGroup.removeAllViews();
         viewGroup.addView(view, layoutParams);
-        this.f1054x.c(this.f1053w.getCallback());
+        this.f1023x.c(this.f1022w.getCallback());
     }
 
     void M0(int i10) {
@@ -2206,7 +2206,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             }
         } else if (i10 == 0) {
             s w02 = w0(i10, true);
-            if (w02.f1095o) {
+            if (w02.f1064o) {
                 f0(w02, false);
             }
         }
@@ -2216,19 +2216,19 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     public void O(OnBackInvokedDispatcher onBackInvokedDispatcher) {
         OnBackInvokedCallback onBackInvokedCallback;
         super.O(onBackInvokedDispatcher);
-        OnBackInvokedDispatcher onBackInvokedDispatcher2 = this.f1049s0;
-        if (onBackInvokedDispatcher2 != null && (onBackInvokedCallback = this.f1050t0) != null) {
+        OnBackInvokedDispatcher onBackInvokedDispatcher2 = this.f1018s0;
+        if (onBackInvokedDispatcher2 != null && (onBackInvokedCallback = this.f1019t0) != null) {
             m.c(onBackInvokedDispatcher2, onBackInvokedCallback);
-            this.f1050t0 = null;
+            this.f1019t0 = null;
         }
         if (onBackInvokedDispatcher == null) {
-            Object obj = this.f1051u;
+            Object obj = this.f1020u;
             if ((obj instanceof Activity) && ((Activity) obj).getWindow() != null) {
-                this.f1049s0 = m.a((Activity) this.f1051u);
+                this.f1018s0 = m.a((Activity) this.f1020u);
                 f1();
             }
         }
-        this.f1049s0 = onBackInvokedDispatcher;
+        this.f1018s0 = onBackInvokedDispatcher;
         f1();
     }
 
@@ -2237,7 +2237,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
 
     @Override // androidx.appcompat.app.AppCompatDelegate
     public void P(Toolbar toolbar) {
-        if (!(this.f1051u instanceof Activity)) {
+        if (!(this.f1020u instanceof Activity)) {
             return;
         }
         ActionBar u10 = u();
@@ -2246,14 +2246,14 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             if (u10 != null) {
                 u10.n();
             }
-            this.f1056z = null;
+            this.f1025z = null;
             if (toolbar != null) {
-                androidx.appcompat.app.s sVar = new androidx.appcompat.app.s(toolbar, x0(), this.f1054x);
-                this.f1056z = sVar;
-                this.f1054x.e(sVar.f1128c);
+                androidx.appcompat.app.s sVar = new androidx.appcompat.app.s(toolbar, x0(), this.f1023x);
+                this.f1025z = sVar;
+                this.f1023x.e(sVar.f1097c);
                 toolbar.setBackInvokedCallbackEnabled(true);
             } else {
-                this.f1054x.e(null);
+                this.f1023x.e(null);
             }
             w();
             return;
@@ -2263,11 +2263,11 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
 
     @Override // androidx.appcompat.app.AppCompatDelegate
     public void Q(int i10) {
-        this.f1036f0 = i10;
+        this.f1005f0 = i10;
     }
 
     final ActionBar Q0() {
-        return this.f1056z;
+        return this.f1025z;
     }
 
     @Override // androidx.appcompat.app.AppCompatDelegate
@@ -2299,7 +2299,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             if (u10 != null) {
                 androidx.appcompat.view.ActionMode y10 = u10.y(iVar);
                 this.F = y10;
-                if (y10 != null && (bVar = this.f1055y) != null) {
+                if (y10 != null && (bVar = this.f1024y) != null) {
                     bVar.onSupportActionModeStarted(y10);
                 }
             }
@@ -2342,11 +2342,11 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     }
 
     boolean Z0() {
-        if (this.f1049s0 == null) {
+        if (this.f1018s0 == null) {
             return false;
         }
         s w02 = w0(0, false);
-        if ((w02 == null || !w02.f1095o) && this.F == null) {
+        if ((w02 == null || !w02.f1064o) && this.F == null) {
             return false;
         }
         return true;
@@ -2356,8 +2356,8 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     public boolean a(androidx.appcompat.view.menu.e eVar, MenuItem menuItem) {
         s p02;
         Window.Callback y02 = y0();
-        if (y02 != null && !this.f1033c0 && (p02 = p0(eVar.D())) != null) {
-            return y02.onMenuItemSelected(p02.f1081a, menuItem);
+        if (y02 != null && !this.f1002c0 && (p02 = p0(eVar.D())) != null) {
+            return y02.onMenuItemSelected(p02.f1050a, menuItem);
         }
         return false;
     }
@@ -2390,11 +2390,11 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
                 }
             }
             if (sVar != null) {
-                menu = sVar.f1090j;
+                menu = sVar.f1059j;
             }
         }
-        if ((sVar == null || sVar.f1095o) && !this.f1033c0) {
-            this.f1054x.d(this.f1053w.getCallback(), i10, menu);
+        if ((sVar == null || sVar.f1064o) && !this.f1002c0) {
+            this.f1023x.d(this.f1022w.getCallback(), i10, menu);
         }
     }
 
@@ -2405,7 +2405,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         this.W = true;
         this.C.i();
         Window.Callback y02 = y0();
-        if (y02 != null && !this.f1033c0) {
+        if (y02 != null && !this.f1002c0) {
             y02.onPanelClosed(108, eVar);
         }
         this.W = false;
@@ -2415,7 +2415,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     public void e(View view, ViewGroup.LayoutParams layoutParams) {
         n0();
         ((ViewGroup) this.M.findViewById(16908290)).addView(view, layoutParams);
-        this.f1054x.c(this.f1053w.getCallback());
+        this.f1023x.c(this.f1022w.getCallback());
     }
 
     void e0(int i10) {
@@ -2430,26 +2430,26 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     void f0(s sVar, boolean z10) {
         ViewGroup viewGroup;
         y yVar;
-        if (z10 && sVar.f1081a == 0 && (yVar = this.C) != null && yVar.e()) {
-            c0(sVar.f1090j);
+        if (z10 && sVar.f1050a == 0 && (yVar = this.C) != null && yVar.e()) {
+            c0(sVar.f1059j);
             return;
         }
-        WindowManager windowManager = (WindowManager) this.f1052v.getSystemService("window");
-        if (windowManager != null && sVar.f1095o && (viewGroup = sVar.f1087g) != null) {
+        WindowManager windowManager = (WindowManager) this.f1021v.getSystemService("window");
+        if (windowManager != null && sVar.f1064o && (viewGroup = sVar.f1056g) != null) {
             windowManager.removeView(viewGroup);
             if (z10) {
-                b0(sVar.f1081a, sVar, null);
+                b0(sVar.f1050a, sVar, null);
             }
         }
-        sVar.f1093m = false;
-        sVar.f1094n = false;
-        sVar.f1095o = false;
-        sVar.f1088h = null;
-        sVar.f1097q = true;
+        sVar.f1062m = false;
+        sVar.f1063n = false;
+        sVar.f1064o = false;
+        sVar.f1057h = null;
+        sVar.f1066q = true;
         if (this.Y == sVar) {
             this.Y = null;
         }
-        if (sVar.f1081a == 0) {
+        if (sVar.f1050a == 0) {
             f1();
         }
     }
@@ -2458,11 +2458,11 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         OnBackInvokedCallback onBackInvokedCallback;
         if (Build.VERSION.SDK_INT >= 33) {
             boolean Z0 = Z0();
-            if (Z0 && this.f1050t0 == null) {
-                this.f1050t0 = m.b(this.f1049s0, this);
-            } else if (!Z0 && (onBackInvokedCallback = this.f1050t0) != null) {
-                m.c(this.f1049s0, onBackInvokedCallback);
-                this.f1050t0 = null;
+            if (Z0 && this.f1019t0 == null) {
+                this.f1019t0 = m.b(this.f1018s0, this);
+            } else if (!Z0 && (onBackInvokedCallback = this.f1019t0) != null) {
+                m.c(this.f1018s0, onBackInvokedCallback);
+                this.f1019t0 = null;
             }
         }
     }
@@ -2486,12 +2486,12 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) this.G.getLayoutParams();
             boolean z12 = true;
             if (this.G.isShown()) {
-                if (this.f1045o0 == null) {
-                    this.f1045o0 = new Rect();
-                    this.f1046p0 = new Rect();
+                if (this.f1014o0 == null) {
+                    this.f1014o0 = new Rect();
+                    this.f1015p0 = new Rect();
                 }
-                Rect rect2 = this.f1045o0;
-                Rect rect3 = this.f1046p0;
+                Rect rect2 = this.f1014o0;
+                Rect rect3 = this.f1015p0;
                 if (windowInsetsCompat == null) {
                     rect2.set(rect);
                 } else {
@@ -2521,7 +2521,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
                     z11 = true;
                 }
                 if (i12 > 0 && this.O == null) {
-                    View view = new View(this.f1052v);
+                    View view = new View(this.f1021v);
                     this.O = view;
                     view.setVisibility(8);
                     FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-1, marginLayoutParams.topMargin, 51);
@@ -2581,7 +2581,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     public Context i(Context context) {
         Context context2;
         Configuration configuration;
-        this.f1031a0 = true;
+        this.f1000a0 = true;
         int F0 = F0(context, a0());
         if (AppCompatDelegate.x(context)) {
             AppCompatDelegate.U(context);
@@ -2604,7 +2604,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             } catch (IllegalStateException unused2) {
             }
         }
-        if (!f1030x0) {
+        if (!f999x0) {
             return super.i(context2);
         }
         Configuration configuration2 = new Configuration();
@@ -2619,7 +2619,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             configuration = null;
         }
         Configuration g02 = g0(context2, F0, Z, configuration, true);
-        ContextThemeWrapper contextThemeWrapper = new ContextThemeWrapper(context2, f.i.f23416c);
+        ContextThemeWrapper contextThemeWrapper = new ContextThemeWrapper(context2, f.i.f23008c);
         contextThemeWrapper.a(g02);
         try {
             if (context2.getTheme() != null) {
@@ -2632,30 +2632,30 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
 
     public View i0(View view, String str, Context context, AttributeSet attributeSet) {
         boolean z10;
-        if (this.f1047q0 == null) {
-            TypedArray obtainStyledAttributes = this.f1052v.obtainStyledAttributes(f.j.f23539y0);
+        if (this.f1016q0 == null) {
+            TypedArray obtainStyledAttributes = this.f1021v.obtainStyledAttributes(f.j.f23131y0);
             String string = obtainStyledAttributes.getString(f.j.C0);
             obtainStyledAttributes.recycle();
             if (string == null) {
-                this.f1047q0 = new androidx.appcompat.app.n();
+                this.f1016q0 = new androidx.appcompat.app.n();
             } else {
                 try {
-                    this.f1047q0 = (androidx.appcompat.app.n) this.f1052v.getClassLoader().loadClass(string).getDeclaredConstructor(null).newInstance(null);
+                    this.f1016q0 = (androidx.appcompat.app.n) this.f1021v.getClassLoader().loadClass(string).getDeclaredConstructor(null).newInstance(null);
                 } catch (Throwable th2) {
                     Log.i("AppCompatDelegate", "Failed to instantiate custom view inflater " + string + ". Falling back to default.", th2);
-                    this.f1047q0 = new androidx.appcompat.app.n();
+                    this.f1016q0 = new androidx.appcompat.app.n();
                 }
             }
         }
-        boolean z11 = f1028v0;
+        boolean z11 = f997v0;
         boolean z12 = false;
         if (z11) {
-            if (this.f1048r0 == null) {
-                this.f1048r0 = new androidx.appcompat.app.p();
+            if (this.f1017r0 == null) {
+                this.f1017r0 = new androidx.appcompat.app.p();
             }
-            if (this.f1048r0.a(attributeSet)) {
+            if (this.f1017r0.a(attributeSet)) {
                 z10 = true;
-                return this.f1047q0.r(view, str, context, attributeSet, z10, z11, true, f1.d());
+                return this.f1016q0.r(view, str, context, attributeSet, z10, z11, true, f1.d());
             } else if (attributeSet instanceof XmlPullParser) {
                 if (((XmlPullParser) attributeSet).getDepth() > 1) {
                     z12 = true;
@@ -2665,7 +2665,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             }
         }
         z10 = z12;
-        return this.f1047q0.r(view, str, context, attributeSet, z10, z11, true, f1.d());
+        return this.f1016q0.r(view, str, context, attributeSet, z10, z11, true, f1.d());
     }
 
     void j0() {
@@ -2675,7 +2675,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             yVar.i();
         }
         if (this.H != null) {
-            this.f1053w.getDecorView().removeCallbacks(this.I);
+            this.f1022w.getDecorView().removeCallbacks(this.I);
             if (this.H.isShowing()) {
                 try {
                     this.H.dismiss();
@@ -2686,18 +2686,18 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         }
         m0();
         s w02 = w0(0, false);
-        if (w02 != null && (eVar = w02.f1090j) != null) {
+        if (w02 != null && (eVar = w02.f1059j) != null) {
             eVar.close();
         }
     }
 
     boolean k0(KeyEvent keyEvent) {
         View decorView;
-        Object obj = this.f1051u;
-        if (((obj instanceof k.a) || (obj instanceof androidx.appcompat.app.l)) && (decorView = this.f1053w.getDecorView()) != null && androidx.core.view.k.d(decorView, keyEvent)) {
+        Object obj = this.f1020u;
+        if (((obj instanceof k.a) || (obj instanceof androidx.appcompat.app.l)) && (decorView = this.f1022w.getDecorView()) != null && androidx.core.view.k.d(decorView, keyEvent)) {
             return true;
         }
-        if (keyEvent.getKeyCode() == 82 && this.f1054x.b(this.f1053w.getCallback(), keyEvent)) {
+        if (keyEvent.getKeyCode() == 82 && this.f1023x.b(this.f1022w.getCallback(), keyEvent)) {
             return true;
         }
         int keyCode = keyEvent.getKeyCode();
@@ -2710,25 +2710,25 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     @Override // androidx.appcompat.app.AppCompatDelegate
     public View l(int i10) {
         n0();
-        return this.f1053w.findViewById(i10);
+        return this.f1022w.findViewById(i10);
     }
 
     void l0(int i10) {
         s w02;
         s w03 = w0(i10, true);
-        if (w03.f1090j != null) {
+        if (w03.f1059j != null) {
             Bundle bundle = new Bundle();
-            w03.f1090j.R(bundle);
+            w03.f1059j.R(bundle);
             if (bundle.size() > 0) {
-                w03.f1099s = bundle;
+                w03.f1068s = bundle;
             }
-            w03.f1090j.e0();
-            w03.f1090j.clear();
+            w03.f1059j.e0();
+            w03.f1059j.clear();
         }
-        w03.f1098r = true;
-        w03.f1097q = true;
+        w03.f1067r = true;
+        w03.f1066q = true;
         if ((i10 == 108 || i10 == 0) && this.C != null && (w02 = w0(0, false)) != null) {
-            w02.f1093m = false;
+            w02.f1062m = false;
             S0(w02, null);
         }
     }
@@ -2742,7 +2742,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
 
     @Override // androidx.appcompat.app.AppCompatDelegate
     public Context n() {
-        return this.f1052v;
+        return this.f1021v;
     }
 
     @Override // android.view.LayoutInflater.Factory2
@@ -2765,7 +2765,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         }
         for (int i11 = 0; i11 < i10; i11++) {
             s sVar = sVarArr[i11];
-            if (sVar != null && sVar.f1090j == menu) {
+            if (sVar != null && sVar.f1059j == menu) {
                 return sVar;
             }
         }
@@ -2774,7 +2774,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
 
     @Override // androidx.appcompat.app.AppCompatDelegate
     public int q() {
-        return this.f1035e0;
+        return this.f1004e0;
     }
 
     final Context r0() {
@@ -2786,7 +2786,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             context = null;
         }
         if (context == null) {
-            return this.f1052v;
+            return this.f1021v;
         }
         return context;
     }
@@ -2796,11 +2796,11 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         Context context;
         if (this.A == null) {
             z0();
-            ActionBar actionBar = this.f1056z;
+            ActionBar actionBar = this.f1025z;
             if (actionBar != null) {
                 context = actionBar.j();
             } else {
-                context = this.f1052v;
+                context = this.f1021v;
             }
             this.A = new androidx.appcompat.view.e(context);
         }
@@ -2810,12 +2810,12 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     @Override // androidx.appcompat.app.AppCompatDelegate
     public ActionBar u() {
         z0();
-        return this.f1056z;
+        return this.f1025z;
     }
 
     @Override // androidx.appcompat.app.AppCompatDelegate
     public void v() {
-        LayoutInflater from = LayoutInflater.from(this.f1052v);
+        LayoutInflater from = LayoutInflater.from(this.f1021v);
         if (from.getFactory() == null) {
             androidx.core.view.l.a(from, this);
         } else if (!(from.getFactory2() instanceof e)) {
@@ -2854,7 +2854,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     }
 
     final CharSequence x0() {
-        Object obj = this.f1051u;
+        Object obj = this.f1020u;
         if (obj instanceof Activity) {
             return ((Activity) obj).getTitle();
         }
@@ -2867,22 +2867,22 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         if (this.R && this.L && (u10 = u()) != null) {
             u10.m(configuration);
         }
-        androidx.appcompat.widget.j.b().g(this.f1052v);
-        this.f1034d0 = new Configuration(this.f1052v.getResources().getConfiguration());
+        androidx.appcompat.widget.j.b().g(this.f1021v);
+        this.f1003d0 = new Configuration(this.f1021v.getResources().getConfiguration());
         W(false, false);
     }
 
     final Window.Callback y0() {
-        return this.f1053w.getCallback();
+        return this.f1022w.getCallback();
     }
 
     @Override // androidx.appcompat.app.AppCompatDelegate
     public void z(Bundle bundle) {
         String str;
-        this.f1031a0 = true;
+        this.f1000a0 = true;
         V(false);
         o0();
-        Object obj = this.f1051u;
+        Object obj = this.f1020u;
         if (obj instanceof Activity) {
             try {
                 str = androidx.core.app.i.c((Activity) obj);
@@ -2892,15 +2892,15 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             if (str != null) {
                 ActionBar Q0 = Q0();
                 if (Q0 == null) {
-                    this.f1044n0 = true;
+                    this.f1013n0 = true;
                 } else {
                     Q0.r(true);
                 }
             }
             AppCompatDelegate.d(this);
         }
-        this.f1034d0 = new Configuration(this.f1052v.getResources().getConfiguration());
-        this.f1032b0 = true;
+        this.f1003d0 = new Configuration(this.f1021v.getResources().getConfiguration());
+        this.f1001b0 = true;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -2917,19 +2917,19 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         AppCompatActivity c12;
         this.J = null;
         this.K = true;
-        this.f1035e0 = -100;
-        this.f1043m0 = new a();
-        this.f1052v = context;
-        this.f1055y = bVar;
-        this.f1051u = obj;
-        if (this.f1035e0 == -100 && (obj instanceof Dialog) && (c12 = c1()) != null) {
-            this.f1035e0 = c12.getDelegate().q();
+        this.f1004e0 = -100;
+        this.f1012m0 = new a();
+        this.f1021v = context;
+        this.f1024y = bVar;
+        this.f1020u = obj;
+        if (this.f1004e0 == -100 && (obj instanceof Dialog) && (c12 = c1()) != null) {
+            this.f1004e0 = c12.getDelegate().q();
         }
-        if (this.f1035e0 == -100) {
-            SimpleArrayMap simpleArrayMap = f1027u0;
+        if (this.f1004e0 == -100) {
+            SimpleArrayMap simpleArrayMap = f996u0;
             Integer num = (Integer) simpleArrayMap.get(obj.getClass().getName());
             if (num != null) {
-                this.f1035e0 = num.intValue();
+                this.f1004e0 = num.intValue();
                 simpleArrayMap.remove(obj.getClass().getName());
             }
         }

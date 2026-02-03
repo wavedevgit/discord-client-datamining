@@ -22,76 +22,76 @@ import yd.a;
 final class c implements p, n0.a {
 
     /* renamed from: d  reason: collision with root package name */
-    private final b.a f13554d;
+    private final b.a f12522d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final c0 f13555e;
+    private final c0 f12523e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final u f13556i;
+    private final u f12524i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final v f13557o;
+    private final v f12525o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final u.a f13558p;
+    private final u.a f12526p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final h f13559q;
+    private final h f12527q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final y.a f13560r;
+    private final y.a f12528r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final le.b f13561s;
+    private final le.b f12529s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final w0 f13562t;
+    private final w0 f12530t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final qd.h f13563u;
+    private final qd.h f12531u;
 
     /* renamed from: v  reason: collision with root package name */
-    private p.a f13564v;
+    private p.a f12532v;
 
     /* renamed from: w  reason: collision with root package name */
-    private yd.a f13565w;
+    private yd.a f12533w;
 
     /* renamed from: x  reason: collision with root package name */
-    private i[] f13566x;
+    private i[] f12534x;
 
     /* renamed from: y  reason: collision with root package name */
-    private n0 f13567y;
+    private n0 f12535y;
 
     public c(yd.a aVar, b.a aVar2, c0 c0Var, qd.h hVar, g gVar, v vVar, u.a aVar3, h hVar2, y.a aVar4, le.u uVar, le.b bVar) {
-        this.f13565w = aVar;
-        this.f13554d = aVar2;
-        this.f13555e = c0Var;
-        this.f13556i = uVar;
-        this.f13557o = vVar;
-        this.f13558p = aVar3;
-        this.f13559q = hVar2;
-        this.f13560r = aVar4;
-        this.f13561s = bVar;
-        this.f13563u = hVar;
-        this.f13562t = p(aVar, vVar);
+        this.f12533w = aVar;
+        this.f12522d = aVar2;
+        this.f12523e = c0Var;
+        this.f12524i = uVar;
+        this.f12525o = vVar;
+        this.f12526p = aVar3;
+        this.f12527q = hVar2;
+        this.f12528r = aVar4;
+        this.f12529s = bVar;
+        this.f12531u = hVar;
+        this.f12530t = p(aVar, vVar);
         i[] q10 = q(0);
-        this.f13566x = q10;
-        this.f13567y = hVar.a(q10);
+        this.f12534x = q10;
+        this.f12535y = hVar.a(q10);
     }
 
     private i a(com.google.android.exoplayer2.trackselection.g gVar, long j10) {
-        int c10 = this.f13562t.c(gVar.k());
-        return new i(this.f13565w.f54257f[c10].f54263a, null, null, this.f13554d.a(this.f13556i, this.f13565w, c10, gVar, this.f13555e, null), this, this.f13561s, j10, this.f13557o, this.f13558p, this.f13559q, this.f13560r);
+        int c10 = this.f12530t.c(gVar.k());
+        return new i(this.f12533w.f54015f[c10].f54021a, null, null, this.f12522d.a(this.f12524i, this.f12533w, c10, gVar, this.f12523e, null), this, this.f12529s, j10, this.f12525o, this.f12526p, this.f12527q, this.f12528r);
     }
 
     private static w0 p(yd.a aVar, v vVar) {
-        u0[] u0VarArr = new u0[aVar.f54257f.length];
+        u0[] u0VarArr = new u0[aVar.f54015f.length];
         int i10 = 0;
         while (true) {
-            a.b[] bVarArr = aVar.f54257f;
+            a.b[] bVarArr = aVar.f54015f;
             if (i10 < bVarArr.length) {
-                Format[] formatArr = bVarArr[i10].f54272j;
+                Format[] formatArr = bVarArr[i10].f54030j;
                 Format[] formatArr2 = new Format[formatArr.length];
                 for (int i11 = 0; i11 < formatArr.length; i11++) {
                     Format format = formatArr[i11];
@@ -111,19 +111,19 @@ final class c implements p, n0.a {
 
     @Override // qd.p, qd.n0
     public long b() {
-        return this.f13567y.b();
+        return this.f12535y.b();
     }
 
     @Override // qd.p, qd.n0
     public boolean d() {
-        return this.f13567y.d();
+        return this.f12535y.d();
     }
 
     @Override // qd.p
     public long e(long j10, t0 t0Var) {
         i[] iVarArr;
-        for (i iVar : this.f13566x) {
-            if (iVar.f49019d == 2) {
+        for (i iVar : this.f12534x) {
+            if (iVar.f49429d == 2) {
                 return iVar.e(j10, t0Var);
             }
         }
@@ -132,28 +132,28 @@ final class c implements p, n0.a {
 
     @Override // qd.p, qd.n0
     public boolean f(long j10) {
-        return this.f13567y.f(j10);
+        return this.f12535y.f(j10);
     }
 
     @Override // qd.p, qd.n0
     public long g() {
-        return this.f13567y.g();
+        return this.f12535y.g();
     }
 
     @Override // qd.p, qd.n0
     public void h(long j10) {
-        this.f13567y.h(j10);
+        this.f12535y.h(j10);
     }
 
     @Override // qd.p
     public void k(p.a aVar, long j10) {
-        this.f13564v = aVar;
+        this.f12532v = aVar;
         aVar.j(this);
     }
 
     @Override // qd.p
     public long l(long j10) {
-        for (i iVar : this.f13566x) {
+        for (i iVar : this.f12534x) {
             iVar.R(j10);
         }
         return j10;
@@ -188,47 +188,47 @@ final class c implements p, n0.a {
             }
         }
         i[] q10 = q(arrayList.size());
-        this.f13566x = q10;
+        this.f12534x = q10;
         arrayList.toArray(q10);
-        this.f13567y = this.f13563u.a(this.f13566x);
+        this.f12535y = this.f12531u.a(this.f12534x);
         return j10;
     }
 
     @Override // qd.p
     public void r() {
-        this.f13556i.a();
+        this.f12524i.a();
     }
 
     @Override // qd.n0.a
     /* renamed from: s */
     public void i(i iVar) {
-        this.f13564v.i(this);
+        this.f12532v.i(this);
     }
 
     @Override // qd.p
     public w0 t() {
-        return this.f13562t;
+        return this.f12530t;
     }
 
     @Override // qd.p
     public void u(long j10, boolean z10) {
-        for (i iVar : this.f13566x) {
+        for (i iVar : this.f12534x) {
             iVar.u(j10, z10);
         }
     }
 
     public void v() {
-        for (i iVar : this.f13566x) {
+        for (i iVar : this.f12534x) {
             iVar.O();
         }
-        this.f13564v = null;
+        this.f12532v = null;
     }
 
     public void w(yd.a aVar) {
-        this.f13565w = aVar;
-        for (i iVar : this.f13566x) {
+        this.f12533w = aVar;
+        for (i iVar : this.f12534x) {
             ((b) iVar.D()).c(aVar);
         }
-        this.f13564v.i(this);
+        this.f12532v.i(this);
     }
 }

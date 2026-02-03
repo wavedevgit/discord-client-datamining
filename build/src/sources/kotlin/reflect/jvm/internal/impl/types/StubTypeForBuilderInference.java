@@ -9,30 +9,30 @@ import org.jetbrains.annotations.NotNull;
 public final class StubTypeForBuilderInference extends AbstractStubType implements StubTypeMarker {
 
     /* renamed from: p  reason: collision with root package name */
-    private final TypeConstructor f35660p;
+    private final TypeConstructor f35050p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final MemberScope f35661q;
+    private final MemberScope f35051q;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public StubTypeForBuilderInference(@NotNull NewTypeVariableConstructor originalTypeVariable, boolean z10, @NotNull TypeConstructor constructor) {
         super(originalTypeVariable, z10);
         Intrinsics.checkNotNullParameter(originalTypeVariable, "originalTypeVariable");
         Intrinsics.checkNotNullParameter(constructor, "constructor");
-        this.f35660p = constructor;
-        this.f35661q = originalTypeVariable.getBuiltIns().getAnyType().getMemberScope();
+        this.f35050p = constructor;
+        this.f35051q = originalTypeVariable.getBuiltIns().getAnyType().getMemberScope();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.KotlinType
     @NotNull
     public TypeConstructor getConstructor() {
-        return this.f35660p;
+        return this.f35050p;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.AbstractStubType, kotlin.reflect.jvm.internal.impl.types.KotlinType
     @NotNull
     public MemberScope getMemberScope() {
-        return this.f35661q;
+        return this.f35051q;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.AbstractStubType

@@ -20,25 +20,25 @@ import org.jetbrains.annotations.NotNull;
 public class ErrorScope implements MemberScope {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ErrorScopeKind f35770a;
+    private final ErrorScopeKind f35160a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f35771b;
+    private final String f35161b;
 
     public ErrorScope(@NotNull ErrorScopeKind kind, @NotNull String... formatParams) {
         Intrinsics.checkNotNullParameter(kind, "kind");
         Intrinsics.checkNotNullParameter(formatParams, "formatParams");
-        this.f35770a = kind;
+        this.f35160a = kind;
         String debugMessage = kind.getDebugMessage();
         Object[] copyOf = Arrays.copyOf(formatParams, formatParams.length);
         String format = String.format(debugMessage, Arrays.copyOf(copyOf, copyOf.length));
         Intrinsics.checkNotNullExpressionValue(format, "format(...)");
-        this.f35771b = format;
+        this.f35161b = format;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final String a() {
-        return this.f35771b;
+        return this.f35161b;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
@@ -50,7 +50,7 @@ public class ErrorScope implements MemberScope {
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope
     @NotNull
     /* renamed from: getContributedClassifier */
-    public ClassifierDescriptor mo1201getContributedClassifier(@NotNull Name name, @NotNull LookupLocation location) {
+    public ClassifierDescriptor mo1198getContributedClassifier(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
         String format = String.format(ErrorEntity.ERROR_CLASS.getDebugText(), Arrays.copyOf(new Object[]{name}, 1));
@@ -82,14 +82,14 @@ public class ErrorScope implements MemberScope {
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope
     /* renamed from: recordLookup */
-    public void mo1204recordLookup(@NotNull Name name, @NotNull LookupLocation location) {
+    public void mo1201recordLookup(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
     }
 
     @NotNull
     public String toString() {
-        return "ErrorScope{" + this.f35771b + '}';
+        return "ErrorScope{" + this.f35161b + '}';
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope, kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope

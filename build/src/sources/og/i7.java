@@ -5,16 +5,16 @@ import ui.c;
 final class i7 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final i7 f43290a = new i7();
+    static final i7 f43090a = new i7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43291b;
+    private static final ui.c f43091b;
 
     static {
         c.b a10 = ui.c.a("isFaceMeshEnabled");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43291b = a10.b(s1Var.b()).a();
+        f43091b = a10.b(s1Var.b()).a();
     }
 
     private i7() {

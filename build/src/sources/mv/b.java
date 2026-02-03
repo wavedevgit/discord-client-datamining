@@ -1,39 +1,29 @@
 package mv;
 
-import java.util.Locale;
-import kotlin.jvm.internal.Intrinsics;
-import mv.o;
+import com.squareup.moshi.t;
+import lv.h;
+import okhttp3.MediaType;
+import okhttp3.RequestBody;
+import okio.Buffer;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b implements lu.b, o {
+final class b implements h {
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final MediaType f39508b = MediaType.e("application/json; charset=UTF-8");
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f39446a = new b();
+    private final com.squareup.moshi.h f39509a;
 
-    private b() {
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public b(com.squareup.moshi.h hVar) {
+        this.f39509a = hVar;
     }
 
-    public String a(Object obj) {
-        return o.a.a(this, obj);
-    }
-
-    @Override // lu.b
-    public Object f(Object obj, Object obj2) {
-        String a10 = a(obj);
-        if (a10 != null) {
-            if (a10.length() > 0) {
-                StringBuilder sb2 = new StringBuilder();
-                String valueOf = String.valueOf(a10.charAt(0));
-                Intrinsics.checkNotNull(valueOf, "null cannot be cast to non-null type java.lang.String");
-                String upperCase = valueOf.toUpperCase(Locale.ROOT);
-                Intrinsics.checkNotNullExpressionValue(upperCase, "this as java.lang.String).toUpperCase(Locale.ROOT)");
-                sb2.append((Object) upperCase);
-                String substring = a10.substring(1);
-                Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String).substring(startIndex)");
-                sb2.append(substring);
-                return sb2.toString();
-            }
-            return a10;
-        }
-        return null;
+    @Override // lv.h
+    /* renamed from: b */
+    public RequestBody a(Object obj) {
+        Buffer buffer = new Buffer();
+        this.f39509a.toJson(t.D0(buffer), obj);
+        return RequestBody.create(f39508b, buffer.L1());
     }
 }

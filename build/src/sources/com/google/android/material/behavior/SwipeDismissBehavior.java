@@ -13,46 +13,46 @@ import androidx.customview.widget.ViewDragHelper;
 public class SwipeDismissBehavior<V extends View> extends CoordinatorLayout.c {
 
     /* renamed from: d  reason: collision with root package name */
-    ViewDragHelper f15189d;
+    ViewDragHelper f14157d;
 
     /* renamed from: e  reason: collision with root package name */
-    c f15190e;
+    c f14158e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f15191i;
+    private boolean f14159i;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f15192o;
+    private boolean f14160o;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f15194q;
+    private boolean f14162q;
 
     /* renamed from: p  reason: collision with root package name */
-    private float f15193p = 0.0f;
+    private float f14161p = 0.0f;
 
     /* renamed from: r  reason: collision with root package name */
-    int f15195r = 2;
+    int f14163r = 2;
 
     /* renamed from: s  reason: collision with root package name */
-    float f15196s = 0.5f;
+    float f14164s = 0.5f;
 
     /* renamed from: t  reason: collision with root package name */
-    float f15197t = 0.0f;
+    float f14165t = 0.0f;
 
     /* renamed from: u  reason: collision with root package name */
-    float f15198u = 0.5f;
+    float f14166u = 0.5f;
 
     /* renamed from: v  reason: collision with root package name */
-    private final ViewDragHelper.c f15199v = new a();
+    private final ViewDragHelper.c f14167v = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends ViewDragHelper.c {
 
         /* renamed from: a  reason: collision with root package name */
-        private int f15200a;
+        private int f14168a;
 
         /* renamed from: b  reason: collision with root package name */
-        private int f15201b = -1;
+        private int f14169b = -1;
 
         a() {
         }
@@ -66,7 +66,7 @@ public class SwipeDismissBehavior<V extends View> extends CoordinatorLayout.c {
                 } else {
                     z10 = false;
                 }
-                int i11 = SwipeDismissBehavior.this.f15195r;
+                int i11 = SwipeDismissBehavior.this.f14163r;
                 if (i11 == 2) {
                     return true;
                 }
@@ -94,7 +94,7 @@ public class SwipeDismissBehavior<V extends View> extends CoordinatorLayout.c {
                 }
                 return false;
             }
-            if (Math.abs(view.getLeft() - this.f15200a) < Math.round(view.getWidth() * SwipeDismissBehavior.this.f15196s)) {
+            if (Math.abs(view.getLeft() - this.f14168a) < Math.round(view.getWidth() * SwipeDismissBehavior.this.f14164s)) {
                 return false;
             }
             return true;
@@ -111,28 +111,28 @@ public class SwipeDismissBehavior<V extends View> extends CoordinatorLayout.c {
             } else {
                 z10 = false;
             }
-            int i12 = SwipeDismissBehavior.this.f15195r;
+            int i12 = SwipeDismissBehavior.this.f14163r;
             if (i12 == 0) {
                 if (z10) {
-                    width = this.f15200a - view.getWidth();
-                    width2 = this.f15200a;
+                    width = this.f14168a - view.getWidth();
+                    width2 = this.f14168a;
                 } else {
-                    width = this.f15200a;
+                    width = this.f14168a;
                     width3 = view.getWidth();
                     width2 = width3 + width;
                 }
             } else if (i12 == 1) {
                 if (z10) {
-                    width = this.f15200a;
+                    width = this.f14168a;
                     width3 = view.getWidth();
                     width2 = width3 + width;
                 } else {
-                    width = this.f15200a - view.getWidth();
-                    width2 = this.f15200a;
+                    width = this.f14168a - view.getWidth();
+                    width2 = this.f14168a;
                 }
             } else {
-                width = this.f15200a - view.getWidth();
-                width2 = view.getWidth() + this.f15200a;
+                width = this.f14168a - view.getWidth();
+                width2 = view.getWidth() + this.f14168a;
             }
             return SwipeDismissBehavior.L(width, i10, width2);
         }
@@ -149,19 +149,19 @@ public class SwipeDismissBehavior<V extends View> extends CoordinatorLayout.c {
 
         @Override // androidx.customview.widget.ViewDragHelper.c
         public void i(View view, int i10) {
-            this.f15201b = i10;
-            this.f15200a = view.getLeft();
+            this.f14169b = i10;
+            this.f14168a = view.getLeft();
             ViewParent parent = view.getParent();
             if (parent != null) {
-                SwipeDismissBehavior.this.f15192o = true;
+                SwipeDismissBehavior.this.f14160o = true;
                 parent.requestDisallowInterceptTouchEvent(true);
-                SwipeDismissBehavior.this.f15192o = false;
+                SwipeDismissBehavior.this.f14160o = false;
             }
         }
 
         @Override // androidx.customview.widget.ViewDragHelper.c
         public void j(int i10) {
-            c cVar = SwipeDismissBehavior.this.f15190e;
+            c cVar = SwipeDismissBehavior.this.f14158e;
             if (cVar != null) {
                 cVar.b(i10);
             }
@@ -169,9 +169,9 @@ public class SwipeDismissBehavior<V extends View> extends CoordinatorLayout.c {
 
         @Override // androidx.customview.widget.ViewDragHelper.c
         public void k(View view, int i10, int i11, int i12, int i13) {
-            float width = view.getWidth() * SwipeDismissBehavior.this.f15197t;
-            float width2 = view.getWidth() * SwipeDismissBehavior.this.f15198u;
-            float abs = Math.abs(i10 - this.f15200a);
+            float width = view.getWidth() * SwipeDismissBehavior.this.f14165t;
+            float width2 = view.getWidth() * SwipeDismissBehavior.this.f14166u;
+            float abs = Math.abs(i10 - this.f14168a);
             if (abs <= width) {
                 view.setAlpha(1.0f);
             } else if (abs >= width2) {
@@ -186,33 +186,33 @@ public class SwipeDismissBehavior<V extends View> extends CoordinatorLayout.c {
             int i10;
             boolean z10;
             c cVar;
-            this.f15201b = -1;
+            this.f14169b = -1;
             int width = view.getWidth();
             if (n(view, f10)) {
                 if (f10 >= 0.0f) {
                     int left = view.getLeft();
-                    int i11 = this.f15200a;
+                    int i11 = this.f14168a;
                     if (left >= i11) {
                         i10 = i11 + width;
                         z10 = true;
                     }
                 }
-                i10 = this.f15200a - width;
+                i10 = this.f14168a - width;
                 z10 = true;
             } else {
-                i10 = this.f15200a;
+                i10 = this.f14168a;
                 z10 = false;
             }
-            if (SwipeDismissBehavior.this.f15189d.O(i10, view.getTop())) {
+            if (SwipeDismissBehavior.this.f14157d.O(i10, view.getTop())) {
                 h0.f0(view, new d(view, z10));
-            } else if (z10 && (cVar = SwipeDismissBehavior.this.f15190e) != null) {
+            } else if (z10 && (cVar = SwipeDismissBehavior.this.f14158e) != null) {
                 cVar.a(view);
             }
         }
 
         @Override // androidx.customview.widget.ViewDragHelper.c
         public boolean m(View view, int i10) {
-            int i11 = this.f15201b;
+            int i11 = this.f14169b;
             if ((i11 == -1 || i11 == i10) && SwipeDismissBehavior.this.J(view)) {
                 return true;
             }
@@ -236,7 +236,7 @@ public class SwipeDismissBehavior<V extends View> extends CoordinatorLayout.c {
             if (h0.z(view) == 1) {
                 z10 = true;
             }
-            int i10 = SwipeDismissBehavior.this.f15195r;
+            int i10 = SwipeDismissBehavior.this.f14163r;
             if ((i10 == 0 && z10) || (i10 == 1 && !z10)) {
                 width = -view.getWidth();
             } else {
@@ -244,7 +244,7 @@ public class SwipeDismissBehavior<V extends View> extends CoordinatorLayout.c {
             }
             h0.X(view, width);
             view.setAlpha(0.0f);
-            c cVar = SwipeDismissBehavior.this.f15190e;
+            c cVar = SwipeDismissBehavior.this.f14158e;
             if (cVar != null) {
                 cVar.a(view);
             }
@@ -263,24 +263,24 @@ public class SwipeDismissBehavior<V extends View> extends CoordinatorLayout.c {
     private class d implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final View f15204d;
+        private final View f14172d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final boolean f15205e;
+        private final boolean f14173e;
 
         d(View view, boolean z10) {
-            this.f15204d = view;
-            this.f15205e = z10;
+            this.f14172d = view;
+            this.f14173e = z10;
         }
 
         @Override // java.lang.Runnable
         public void run() {
             c cVar;
-            ViewDragHelper viewDragHelper = SwipeDismissBehavior.this.f15189d;
+            ViewDragHelper viewDragHelper = SwipeDismissBehavior.this.f14157d;
             if (viewDragHelper != null && viewDragHelper.m(true)) {
-                h0.f0(this.f15204d, this);
-            } else if (this.f15205e && (cVar = SwipeDismissBehavior.this.f15190e) != null) {
-                cVar.a(this.f15204d);
+                h0.f0(this.f14172d, this);
+            } else if (this.f14173e && (cVar = SwipeDismissBehavior.this.f14158e) != null) {
+                cVar.a(this.f14172d);
             }
         }
     }
@@ -295,13 +295,13 @@ public class SwipeDismissBehavior<V extends View> extends CoordinatorLayout.c {
 
     private void M(ViewGroup viewGroup) {
         ViewDragHelper o10;
-        if (this.f15189d == null) {
-            if (this.f15194q) {
-                o10 = ViewDragHelper.n(viewGroup, this.f15193p, this.f15199v);
+        if (this.f14157d == null) {
+            if (this.f14162q) {
+                o10 = ViewDragHelper.n(viewGroup, this.f14161p, this.f14167v);
             } else {
-                o10 = ViewDragHelper.o(viewGroup, this.f15199v);
+                o10 = ViewDragHelper.o(viewGroup, this.f14167v);
             }
-            this.f15189d = o10;
+            this.f14157d = o10;
         }
     }
 
@@ -312,15 +312,15 @@ public class SwipeDismissBehavior<V extends View> extends CoordinatorLayout.c {
     private void S(View view) {
         h0.h0(view, 1048576);
         if (J(view)) {
-            h0.j0(view, AccessibilityNodeInfoCompat.a.f3363y, null, new b());
+            h0.j0(view, AccessibilityNodeInfoCompat.a.f3332y, null, new b());
         }
     }
 
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.c
     public boolean H(CoordinatorLayout coordinatorLayout, View view, MotionEvent motionEvent) {
-        if (this.f15189d != null) {
-            if (!this.f15192o || motionEvent.getActionMasked() != 3) {
-                this.f15189d.F(motionEvent);
+        if (this.f14157d != null) {
+            if (!this.f14160o || motionEvent.getActionMasked() != 3) {
+                this.f14157d.F(motionEvent);
                 return true;
             }
             return true;
@@ -333,36 +333,36 @@ public class SwipeDismissBehavior<V extends View> extends CoordinatorLayout.c {
     }
 
     public void O(float f10) {
-        this.f15198u = K(0.0f, f10, 1.0f);
+        this.f14166u = K(0.0f, f10, 1.0f);
     }
 
     public void P(c cVar) {
-        this.f15190e = cVar;
+        this.f14158e = cVar;
     }
 
     public void Q(float f10) {
-        this.f15197t = K(0.0f, f10, 1.0f);
+        this.f14165t = K(0.0f, f10, 1.0f);
     }
 
     public void R(int i10) {
-        this.f15195r = i10;
+        this.f14163r = i10;
     }
 
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.c
     public boolean o(CoordinatorLayout coordinatorLayout, View view, MotionEvent motionEvent) {
-        boolean z10 = this.f15191i;
+        boolean z10 = this.f14159i;
         int actionMasked = motionEvent.getActionMasked();
         if (actionMasked != 0) {
             if (actionMasked == 1 || actionMasked == 3) {
-                this.f15191i = false;
+                this.f14159i = false;
             }
         } else {
             z10 = coordinatorLayout.w(view, (int) motionEvent.getX(), (int) motionEvent.getY());
-            this.f15191i = z10;
+            this.f14159i = z10;
         }
         if (z10) {
             M(coordinatorLayout);
-            if (!this.f15192o && this.f15189d.P(motionEvent)) {
+            if (!this.f14160o && this.f14157d.P(motionEvent)) {
                 return true;
             }
         }

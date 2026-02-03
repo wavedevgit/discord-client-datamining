@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.name.FqName;
 public class d implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final PrimitiveType f33254d;
+    private final PrimitiveType f32644d;
 
     public d(PrimitiveType primitiveType) {
-        this.f33254d = primitiveType;
+        this.f32644d = primitiveType;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         FqName f10;
-        f10 = PrimitiveType.f(this.f33254d);
+        f10 = PrimitiveType.f(this.f32644d);
         return f10;
     }
 }

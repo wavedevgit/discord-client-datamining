@@ -7,24 +7,24 @@ public final class f {
     @NotNull
 
     /* renamed from: a  reason: collision with root package name */
-    public static final f f36078a = new f();
+    public static final f f35468a = new f();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final long f36079b = System.nanoTime();
+    private static final long f35469b = System.nanoTime();
 
     private f() {
     }
 
     private final long d() {
-        return System.nanoTime() - f36079b;
+        return System.nanoTime() - f35469b;
     }
 
     public final long a(long j10, long j11) {
-        return e.d(j10, j11, fs.b.f25567e);
+        return e.d(j10, j11, hs.b.f28132e);
     }
 
     public final long b(long j10) {
-        return e.b(d(), j10, fs.b.f25567e);
+        return e.b(d(), j10, hs.b.f28132e);
     }
 
     public long c() {

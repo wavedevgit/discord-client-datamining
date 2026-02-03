@@ -5,7 +5,7 @@ import ui.c;
 final class t5 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final t5 f45820a = new t5();
+    static final t5 f45778a = new t5();
 
     static {
         c.b a10 = ui.c.a("remoteModelOptions");

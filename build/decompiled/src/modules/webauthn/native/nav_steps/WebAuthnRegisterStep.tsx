@@ -208,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/webauthn/native/nav_steps/WebAuthnRegisterStep.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun60806: for (var _fun60806_ip = 0;;) switch (_fun60806_ip) {
+        _fun60864: for (var _fun60864_ip = 0;;) switch (_fun60864_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var8 = _closure1_slot2;
@@ -247,13 +247,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2.bind(var4)();
                 var2 = _closure1_slot10;
                 if (var4) {
-                    _fun60806_ip = 164;
-                    continue _fun60806
+                    _fun60864_ip = 164;
+                    continue _fun60864
                 }
             case 156:
                 var8 = var2.OTHER_AND_ANDROID_NONDISCOVERABLE;
-                _fun60806_ip = 170;
-                continue _fun60806;
+                _fun60864_ip = 170;
+                continue _fun60864;
             case 164:
                 var8 = var2.PASSKEY_CREDENTIAL_MANAGER;
             case 170:
@@ -356,14 +356,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var19.bind(var3)(var15);
                 var19 = var15.t;
                 if (var12) {
-                    _fun60806_ip = 511;
-                    continue _fun60806
+                    _fun60864_ip = 511;
+                    continue _fun60864
                 }
             case 496:
                 var15 = var19.Lh5vTW;
                 var15 = var20.bind(var21)(var15);
-                _fun60806_ip = 524;
-                continue _fun60806;
+                _fun60864_ip = 524;
+                continue _fun60864;
             case 511:
                 var19 = var19.aVMiX3;
                 var15 = var20.bind(var21)(var19);
@@ -374,8 +374,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = null;
                 var7 = var7 != var16;
                 if (!var7) {
-                    _fun60806_ip = 597;
-                    continue _fun60806
+                    _fun60864_ip = 597;
+                    continue _fun60864
                 }
             case 547:
                 var15 = _closure1_slot7;
@@ -403,8 +403,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6.bind(var3)(var5);
                 var5 = var5.shouldDisplayAndroidFidoSelector;
                 if (!var5) {
-                    _fun60806_ip = 679;
-                    continue _fun60806
+                    _fun60864_ip = 679;
+                    continue _fun60864
                 }
             case 648:
                 var8 = _closure1_slot7;
@@ -440,14 +440,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var14.bind(var3)(var13);
                 var14 = var13.t;
                 if (var12) {
-                    _fun60806_ip = 798;
-                    continue _fun60806
+                    _fun60864_ip = 798;
+                    continue _fun60864
                 }
             case 783:
                 var13 = var14.oibaQa;
                 var13 = var15.bind(var16)(var13);
-                _fun60806_ip = 809;
-                continue _fun60806;
+                _fun60864_ip = 809;
+                continue _fun60864;
             case 798:
                 var14 = var14.wePEBF;
                 var13 = var15.bind(var16)(var14);
@@ -476,4 +476,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 7486, 33, 1297, 671, 7485, 1234, 7134, 1469, 478, 4729, 7513, 3932, 6438, 4075, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 7491, 33, 1297, 671, 7490, 1234, 7139, 1469, 478, 4734, 7518, 3941, 6443, 4084, 2]);

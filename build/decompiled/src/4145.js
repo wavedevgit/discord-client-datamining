@@ -1,153 +1,312 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
-    var1 = exports;
-    var6 = dependencyMap;
-    var0 = 0;
-    var2 = var6[var0];
+    var2 = exports;
+    var0 = require;
+    var _closure1_slot0 = var0;
+    var0 = dependencyMap;
+    var _closure1_slot1 = var0;
+    var3 = function arg0() {
+        _fun37929: for (var _fun37929_ip = 0;;) switch (_fun37929_ip) {
+            case 0:
+                var4 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var5 = 0;
+                var0 = var6[var5];
+                var3 = undefined;
+                var0 = var4.bind(var3)(var0);
+                var2 = var0.getFileChunk;
+                var0 = arg0;
+                var2 = var2.bind(var3)(var0);
+                var0 = 1;
+                var0 = var6[var0];
+                var0 = var4.bind(var3)(var0);
+                var6 = var0.FileTypes;
+                var4 = var6.checkByFileType;
+                var0 = 'm4v';
+                var0 = var4.bind(var6)(var2, var0);
+                var4 = !var0;
+                var0 = !var4;
+                if (var4) {
+                    _fun37929_ip = 111;
+                    continue _fun37929
+                }
+            case 83:
+                var4 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var5];
+                var1 = var4.bind(var3)(var1);
+                var1 = var1.isftypStringIncluded;
+                var0 = var1.bind(var3)(var2);
+            case 111:
+                return var0;
+        }
+    };
+    var _closure1_slot2 = var3;
+    var0 = global;
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
+    var4 = {};
+    var0 = true;
+    var4.value = var0;
+    var0 = '__esModule';
+    var0 = var5.bind(var6)(var2, var0, var4);
     var0 = undefined;
-    var3 = var5.bind(var0)(var2);
-    var2 = 1;
-    var2 = var6[var2];
-    var2 = var5.bind(var0)(var2);
-    var _closure1_slot0 = var2;
-    var2 = global;
-    var7 = var2.Object;
-    var6 = var7.defineProperty;
-    var5 = {};
-    var2 = true;
-    var5.value = var2;
-    var2 = '__esModule';
-    var2 = var6.bind(var7)(var1, var2, var5);
-    var1.CompressedTypes = var0;
-    var2 = function() {
-        var3 = _closure1_slot0;
-        var2 = _closure1_slot1;
-        var0 = undefined;
-        var1 = this;
-        var1 = var3.bind(var0)(var1, var2);
+    var2.isAVI = var0;
+    var2.isFLV = var0;
+    var2.isM4V = var0;
+    var2.isMKV = var0;
+    var2.isMOV = var0;
+    var2.isMP4 = var0;
+    var2.isOGG = var0;
+    var2.isSWF = var0;
+    var2.isWEBM = var0;
+    var4 = function arg0() {
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'avi';
+        var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var _closure1_slot1 = var2;
-    var2 = var3.bind(var0)(var2);
-    var1.CompressedTypes = var2;
-    var1 = {
-        'extension': '7z',
-        'mimeType': 'application/x-7z-compressed',
-        'description': '7-Zip compressed file'
+    var2.isAVI = var4;
+    var4 = function arg0() {
+        _fun37931: for (var _fun37931_ip = 0;;) switch (_fun37931_ip) {
+            case 0:
+                var4 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var5 = 0;
+                var0 = var6[var5];
+                var3 = undefined;
+                var0 = var4.bind(var3)(var0);
+                var2 = var0.getFileChunk;
+                var0 = arg0;
+                var2 = var2.bind(var3)(var0);
+                var0 = 1;
+                var0 = var6[var0];
+                var0 = var4.bind(var3)(var0);
+                var6 = var0.FileTypes;
+                var4 = var6.checkByFileType;
+                var0 = 'flv';
+                var0 = var4.bind(var6)(var2, var0);
+                var4 = !var0;
+                var0 = !var4;
+                if (var4) {
+                    _fun37931_ip = 111;
+                    continue _fun37931
+                }
+            case 83:
+                var4 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var5];
+                var1 = var4.bind(var3)(var1);
+                var1 = var1.isFlvStringIncluded;
+                var0 = var1.bind(var3)(var2);
+            case 111:
+                return var0;
+        }
     };
-    var4 = {};
-    var3 = [55, 122, 188, 175, 39, 28];
-    var4.sequence = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var1.signatures = var3;
-    var2._7Z = var1;
-    var1 = {
-        'extension': 'lzh',
-        'mimeType': 'application/x-lzh-compressed',
-        'description': 'Compressed file using Lempel-Ziv and Haruyasu (LZH) compression algorithm'
+    var2.isFLV = var4;
+    var2.isM4V = var3;
+    var3 = function arg0() {
+        _fun37932: for (var _fun37932_ip = 0;;) switch (_fun37932_ip) {
+            case 0:
+                var2 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var6 = 0;
+                var0 = var5[var6];
+                var4 = undefined;
+                var0 = var2.bind(var4)(var0);
+                var7 = var0.getFileChunk;
+                var3 = arg0;
+                var0 = 64;
+                var3 = var7.bind(var4)(var3, var0);
+                var0 = 1;
+                var0 = var5[var0];
+                var0 = var2.bind(var4)(var0);
+                var5 = var0.FileTypes;
+                var0 = var5.checkByFileType;
+                var2 = 'mkv';
+                var0 = var0.bind(var5)(var3, var2);
+                var5 = !var0;
+                var0 = !var5;
+                if (var5) {
+                    _fun37932_ip = 119;
+                    continue _fun37932
+                }
+            case 87:
+                var5 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var6];
+                var1 = var5.bind(var4)(var1);
+                var1 = var1.findMatroskaDocTypeElements;
+                var1 = var1.bind(var4)(var3);
+                var0 = var2 === var1;
+            case 119:
+                return var0;
+        }
     };
-    var4 = {};
-    var3 = [45, 104, 108, 48, 45];
-    var4.sequence = var3;
-    var3 = 'Lempel Ziv Huffman archive file Method 0 (No compression)';
-    var4.description = var3;
-    var3 = ['lha'];
-    var4.compatibleExtensions = var3;
-    var3 = new Array(2);
-    var3[0] = var4;
-    var4 = {};
-    var5 = [45, 104, 108, 53, 45];
-    var4.sequence = var5;
-    var5 = 'Lempel Ziv Huffman archive file Method 5 (8KiB sliding window)';
-    var4.description = var5;
-    var5 = ['lha'];
-    var4.compatibleExtensions = var5;
-    var3[1] = var4;
-    var1.signatures = var3;
-    var2.LZH = var1;
-    var1 = {
-        'extension': 'rar',
-        'mimeType': 'application/x-rar-compressed',
-        'description': 'Roshal ARchive compressed archive file'
+    var2.isMKV = var3;
+    var3 = function arg0() {
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'mov';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
     };
-    var4 = {};
-    var3 = [82, 97, 114, 33, 26, 7, 0];
-    var4.sequence = var3;
-    var3 = 'Compressed archive v5.00 onwards';
-    var4.description = var3;
-    var3 = new Array(2);
-    var3[0] = var4;
-    var4 = {};
-    var5 = [82, 97, 114, 33, 26, 7, 1, 0];
-    var4.sequence = var5;
-    var5 = 'Compressed archive v1.50 onwards';
-    var4.description = var5;
-    var3[1] = var4;
-    var1.signatures = var3;
-    var2.RAR = var1;
-    var1 = {
-        'extension': 'zip',
-        'mimeType': 'application/zip',
-        'description': 'Compressed archive file'
+    var2.isMOV = var3;
+    var3 = function arg0, arg1() {
+        _fun37934: for (var _fun37934_ip = 0;;) switch (_fun37934_ip) {
+            case 0:
+                var5 = arg1;
+                var1 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var0 = 0;
+                var0 = var6[var0];
+                var4 = undefined;
+                var0 = var1.bind(var4)(var0);
+                var3 = var0.getFileChunk;
+                var0 = arg0;
+                var3 = var3.bind(var4)(var0);
+                var0 = 1;
+                var0 = var6[var0];
+                var0 = var1.bind(var4)(var0);
+                var6 = var0.FileTypes;
+                var1 = var6.checkByFileType;
+                var0 = 'mp4';
+                var0 = var1.bind(var6)(var3, var0);
+                var1 = !var0;
+                var0 = !var1;
+                if (!var1) {
+                    _fun37934_ip = 121;
+                    continue _fun37934
+                }
+            case 86:
+                var1 = null;
+                var6 = var1 == var5;
+                var1 = undefined;
+                if (var6) {
+                    _fun37934_ip = 103;
+                    continue _fun37934
+                }
+            case 97:
+                var1 = var5.excludeSimilarTypes;
+            case 103:
+                var1 = !var1;
+                if (!var1) {
+                    _fun37934_ip = 118;
+                    continue _fun37934
+                }
+            case 109:
+                var2 = _closure1_slot2;
+                var1 = var2.bind(var4)(var3);
+            case 118:
+                var0 = var1;
+            case 121:
+                return var0;
+        }
     };
-    var4 = {
-        'sequence': null,
-        'offset': 29152,
-        'description': 'WinZip compressed archive'
+    var2.isMP4 = var3;
+    var3 = function arg0() {
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'ogg';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
     };
-    var3 = [87, 105, 110, 90, 105, 112];
-    var4.sequence = var3;
-    var3 = new Array(7);
-    var3[0] = var4;
-    var4 = {};
-    var5 = [80, 75, 3, 4, 20, 0, 1, 0, 99, 0, 0, 0, 0, 0];
-    var4.sequence = var5;
-    var5 = 'ZLock Pro encrypted ZIP';
-    var4.description = var5;
-    var3[1] = var4;
-    var4 = {
-        'sequence': null,
-        'offset': 30,
-        'description': 'PKLITE compressed ZIP archive (see also PKZIP)'
+    var2.isOGG = var3;
+    var3 = function arg0() {
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'swf';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
     };
-    var5 = [80, 75, 76, 73, 84, 69];
-    var4.sequence = var5;
-    var3[2] = var4;
-    var4 = {
-        'sequence': null,
-        'offset': 526,
-        'description': 'PKSFX self-extracting executable compressed file (see also PKZIP)'
+    var2.isSWF = var3;
+    var1 = function arg0() {
+        _fun37937: for (var _fun37937_ip = 0;;) switch (_fun37937_ip) {
+            case 0:
+                var2 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var6 = 0;
+                var0 = var5[var6];
+                var4 = undefined;
+                var0 = var2.bind(var4)(var0);
+                var7 = var0.getFileChunk;
+                var3 = arg0;
+                var0 = 64;
+                var3 = var7.bind(var4)(var3, var0);
+                var0 = 1;
+                var0 = var5[var0];
+                var0 = var2.bind(var4)(var0);
+                var5 = var0.FileTypes;
+                var0 = var5.checkByFileType;
+                var2 = 'webm';
+                var0 = var0.bind(var5)(var3, var2);
+                var5 = !var0;
+                var0 = !var5;
+                if (var5) {
+                    _fun37937_ip = 119;
+                    continue _fun37937
+                }
+            case 87:
+                var5 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var6];
+                var1 = var5.bind(var4)(var1);
+                var1 = var1.findMatroskaDocTypeElements;
+                var1 = var1.bind(var4)(var3);
+                var0 = var2 === var1;
+            case 119:
+                return var0;
+        }
     };
-    var5 = [80, 75, 83, 112, 88];
-    var4.sequence = var5;
-    var3[3] = var4;
-    var4 = {};
-    var5 = [80, 75, 3, 4];
-    var4.sequence = var5;
-    var5 = 'PKZIP archive file - zip file format and multiple formats based on it';
-    var4.description = var5;
-    var5 = ['aar', 'apk', 'docx', 'epub', 'ipa', 'jar', 'kmz', 'maff', 'msix', 'odp', 'ods', 'odt', 'pk3', 'pk4', 'pptx', 'usdz', 'vsdx', 'xlsx', 'xpi'];
-    var4.compatibleExtensions = var5;
-    var3[4] = var4;
-    var4 = {};
-    var5 = [80, 75, 5, 6];
-    var4.sequence = var5;
-    var5 = 'PKZIP empty archive file - zip file format and multiple formats based on it';
-    var4.description = var5;
-    var5 = ['aar', 'apk', 'docx', 'epub', 'ipa', 'jar', 'kmz', 'maff', 'msix', 'odp', 'ods', 'odt', 'pk3', 'pk4', 'pptx', 'usdz', 'vsdx', 'xlsx', 'xpi'];
-    var4.compatibleExtensions = var5;
-    var3[5] = var4;
-    var4 = {};
-    var5 = [80, 75, 7, 8];
-    var4.sequence = var5;
-    var5 = 'PKZIP multivolume archive file - zip file format and multiple formats based on it';
-    var4.description = var5;
-    var5 = ['aar', 'apk', 'docx', 'epub', 'ipa', 'jar', 'kmz', 'maff', 'msix', 'odp', 'ods', 'odt', 'pk3', 'pk4', 'pptx', 'usdz', 'vsdx', 'xlsx', 'xpi'];
-    var4.compatibleExtensions = var5;
-    var3[6] = var4;
-    var1.signatures = var3;
-    var2.ZIP = var1;
+    var2.isWEBM = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4137, 4138]);

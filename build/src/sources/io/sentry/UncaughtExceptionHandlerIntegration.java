@@ -10,37 +10,37 @@ import java.util.concurrent.atomic.AtomicReference;
 public final class UncaughtExceptionHandlerIntegration implements k1, Thread.UncaughtExceptionHandler, Closeable {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final io.sentry.util.a f28300q = new io.sentry.util.a();
+    private static final io.sentry.util.a f28661q = new io.sentry.util.a();
 
     /* renamed from: d  reason: collision with root package name */
-    private Thread.UncaughtExceptionHandler f28301d;
+    private Thread.UncaughtExceptionHandler f28662d;
 
     /* renamed from: e  reason: collision with root package name */
-    private w0 f28302e;
+    private w0 f28663e;
 
     /* renamed from: i  reason: collision with root package name */
-    private k7 f28303i;
+    private k7 f28664i;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f28304o;
+    private boolean f28665o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final w8 f28305p;
+    private final w8 f28666p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class a extends io.sentry.hints.d implements io.sentry.hints.l, io.sentry.hints.q {
 
         /* renamed from: d  reason: collision with root package name */
-        private final AtomicReference f28306d;
+        private final AtomicReference f28667d;
 
         public a(long j10, ILogger iLogger) {
             super(j10, iLogger);
-            this.f28306d = new AtomicReference();
+            this.f28667d = new AtomicReference();
         }
 
         @Override // io.sentry.hints.f
         public boolean b(io.sentry.protocol.x xVar) {
-            io.sentry.protocol.x xVar2 = (io.sentry.protocol.x) this.f28306d.get();
+            io.sentry.protocol.x xVar2 = (io.sentry.protocol.x) this.f28667d.get();
             if (xVar2 != null && xVar2.equals(xVar)) {
                 return true;
             }
@@ -49,7 +49,7 @@ public final class UncaughtExceptionHandlerIntegration implements k1, Thread.Unc
 
         @Override // io.sentry.hints.f
         public void c(io.sentry.protocol.x xVar) {
-            this.f28306d.set(xVar);
+            this.f28667d.set(xVar);
         }
     }
 
@@ -70,21 +70,21 @@ public final class UncaughtExceptionHandlerIntegration implements k1, Thread.Unc
 
     private void n(Thread.UncaughtExceptionHandler uncaughtExceptionHandler, Set set) {
         if (uncaughtExceptionHandler == null) {
-            k7 k7Var = this.f28303i;
+            k7 k7Var = this.f28664i;
             if (k7Var != null) {
                 k7Var.getLogger().c(SentryLevel.DEBUG, "Found no UncaughtExceptionHandler to remove.", new Object[0]);
             }
         } else if (!set.add(uncaughtExceptionHandler)) {
-            k7 k7Var2 = this.f28303i;
+            k7 k7Var2 = this.f28664i;
             if (k7Var2 != null) {
                 k7Var2.getLogger().c(SentryLevel.WARNING, "Cycle detected in UncaughtExceptionHandler chain while removing handler.", new Object[0]);
             }
         } else if (uncaughtExceptionHandler instanceof UncaughtExceptionHandlerIntegration) {
             UncaughtExceptionHandlerIntegration uncaughtExceptionHandlerIntegration = (UncaughtExceptionHandlerIntegration) uncaughtExceptionHandler;
-            Thread.UncaughtExceptionHandler uncaughtExceptionHandler2 = uncaughtExceptionHandlerIntegration.f28301d;
+            Thread.UncaughtExceptionHandler uncaughtExceptionHandler2 = uncaughtExceptionHandlerIntegration.f28662d;
             if (this == uncaughtExceptionHandler2) {
-                uncaughtExceptionHandlerIntegration.f28301d = this.f28301d;
-                k7 k7Var3 = this.f28303i;
+                uncaughtExceptionHandlerIntegration.f28662d = this.f28662d;
+                k7 k7Var3 = this.f28664i;
                 if (k7Var3 != null) {
                     k7Var3.getLogger().c(SentryLevel.DEBUG, "UncaughtExceptionHandlerIntegration removed.", new Object[0]);
                     return;
@@ -97,16 +97,16 @@ public final class UncaughtExceptionHandlerIntegration implements k1, Thread.Unc
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        a1 a10 = f28300q.a();
+        a1 a10 = f28661q.a();
         try {
-            if (this == this.f28305p.b()) {
-                this.f28305p.a(this.f28301d);
-                k7 k7Var = this.f28303i;
+            if (this == this.f28666p.b()) {
+                this.f28666p.a(this.f28662d);
+                k7 k7Var = this.f28664i;
                 if (k7Var != null) {
                     k7Var.getLogger().c(SentryLevel.DEBUG, "UncaughtExceptionHandlerIntegration removed.", new Object[0]);
                 }
             } else {
-                l(this.f28305p.b());
+                l(this.f28666p.b());
             }
             if (a10 != null) {
                 a10.close();
@@ -125,40 +125,40 @@ public final class UncaughtExceptionHandlerIntegration implements k1, Thread.Unc
 
     @Override // io.sentry.k1
     public final void h(w0 w0Var, k7 k7Var) {
-        if (this.f28304o) {
+        if (this.f28665o) {
             k7Var.getLogger().c(SentryLevel.ERROR, "Attempt to register a UncaughtExceptionHandlerIntegration twice.", new Object[0]);
             return;
         }
-        this.f28304o = true;
-        this.f28302e = (w0) io.sentry.util.y.c(w0Var, "Scopes are required");
+        this.f28665o = true;
+        this.f28663e = (w0) io.sentry.util.y.c(w0Var, "Scopes are required");
         k7 k7Var2 = (k7) io.sentry.util.y.c(k7Var, "SentryOptions is required");
-        this.f28303i = k7Var2;
+        this.f28664i = k7Var2;
         ILogger logger = k7Var2.getLogger();
         SentryLevel sentryLevel = SentryLevel.DEBUG;
-        logger.c(sentryLevel, "UncaughtExceptionHandlerIntegration enabled: %s", Boolean.valueOf(this.f28303i.isEnableUncaughtExceptionHandler()));
-        if (this.f28303i.isEnableUncaughtExceptionHandler()) {
-            a1 a10 = f28300q.a();
+        logger.c(sentryLevel, "UncaughtExceptionHandlerIntegration enabled: %s", Boolean.valueOf(this.f28664i.isEnableUncaughtExceptionHandler()));
+        if (this.f28664i.isEnableUncaughtExceptionHandler()) {
+            a1 a10 = f28661q.a();
             try {
-                Thread.UncaughtExceptionHandler b10 = this.f28305p.b();
+                Thread.UncaughtExceptionHandler b10 = this.f28666p.b();
                 if (b10 != null) {
-                    ILogger logger2 = this.f28303i.getLogger();
+                    ILogger logger2 = this.f28664i.getLogger();
                     logger2.c(sentryLevel, "default UncaughtExceptionHandler class='" + b10.getClass().getName() + "'", new Object[0]);
                     if (b10 instanceof UncaughtExceptionHandlerIntegration) {
                         UncaughtExceptionHandlerIntegration uncaughtExceptionHandlerIntegration = (UncaughtExceptionHandlerIntegration) b10;
-                        if (uncaughtExceptionHandlerIntegration.f28302e != null && w0Var.t() == uncaughtExceptionHandlerIntegration.f28302e.t()) {
-                            this.f28301d = uncaughtExceptionHandlerIntegration.f28301d;
+                        if (uncaughtExceptionHandlerIntegration.f28663e != null && w0Var.t() == uncaughtExceptionHandlerIntegration.f28663e.t()) {
+                            this.f28662d = uncaughtExceptionHandlerIntegration.f28662d;
                         } else {
-                            this.f28301d = b10;
+                            this.f28662d = b10;
                         }
                     } else {
-                        this.f28301d = b10;
+                        this.f28662d = b10;
                     }
                 }
-                this.f28305p.a(this);
+                this.f28666p.a(this);
                 if (a10 != null) {
                     a10.close();
                 }
-                this.f28303i.getLogger().c(sentryLevel, "UncaughtExceptionHandlerIntegration installed.", new Object[0]);
+                this.f28664i.getLogger().c(sentryLevel, "UncaughtExceptionHandlerIntegration installed.", new Object[0]);
                 io.sentry.util.p.a("UncaughtExceptionHandler");
             } catch (Throwable th2) {
                 if (a10 != null) {
@@ -175,36 +175,36 @@ public final class UncaughtExceptionHandlerIntegration implements k1, Thread.Unc
 
     @Override // java.lang.Thread.UncaughtExceptionHandler
     public void uncaughtException(Thread thread, Throwable th2) {
-        k7 k7Var = this.f28303i;
-        if (k7Var != null && this.f28302e != null) {
+        k7 k7Var = this.f28664i;
+        if (k7Var != null && this.f28663e != null) {
             k7Var.getLogger().c(SentryLevel.INFO, "Uncaught exception received.", new Object[0]);
             try {
-                a aVar = new a(this.f28303i.getFlushTimeoutMillis(), this.f28303i.getLogger());
+                a aVar = new a(this.f28664i.getFlushTimeoutMillis(), this.f28664i.getLogger());
                 SentryEvent sentryEvent = new SentryEvent(a(thread, th2));
                 sentryEvent.E0(SentryLevel.FATAL);
-                if (this.f28302e.k() == null && sentryEvent.G() != null) {
+                if (this.f28663e.k() == null && sentryEvent.G() != null) {
                     aVar.c(sentryEvent.G());
                 }
                 Hint e10 = io.sentry.util.n.e(aVar);
-                boolean equals = this.f28302e.x(sentryEvent, e10).equals(io.sentry.protocol.x.f30052e);
+                boolean equals = this.f28663e.x(sentryEvent, e10).equals(io.sentry.protocol.x.f30413e);
                 io.sentry.hints.h f10 = io.sentry.util.n.f(e10);
                 if ((!equals || io.sentry.hints.h.MULTITHREADED_DEDUPLICATION.equals(f10)) && !aVar.g()) {
-                    this.f28303i.getLogger().c(SentryLevel.WARNING, "Timed out waiting to flush event to disk before crashing. Event: %s", sentryEvent.G());
+                    this.f28664i.getLogger().c(SentryLevel.WARNING, "Timed out waiting to flush event to disk before crashing. Event: %s", sentryEvent.G());
                 }
             } catch (Throwable th3) {
-                this.f28303i.getLogger().b(SentryLevel.ERROR, "Error sending uncaught exception to Sentry.", th3);
+                this.f28664i.getLogger().b(SentryLevel.ERROR, "Error sending uncaught exception to Sentry.", th3);
             }
-            if (this.f28301d != null) {
-                this.f28303i.getLogger().c(SentryLevel.INFO, "Invoking inner uncaught exception handler.", new Object[0]);
-                this.f28301d.uncaughtException(thread, th2);
-            } else if (this.f28303i.isPrintUncaughtStackTrace()) {
+            if (this.f28662d != null) {
+                this.f28664i.getLogger().c(SentryLevel.INFO, "Invoking inner uncaught exception handler.", new Object[0]);
+                this.f28662d.uncaughtException(thread, th2);
+            } else if (this.f28664i.isPrintUncaughtStackTrace()) {
                 th2.printStackTrace();
             }
         }
     }
 
     UncaughtExceptionHandlerIntegration(w8 w8Var) {
-        this.f28304o = false;
-        this.f28305p = (w8) io.sentry.util.y.c(w8Var, "threadAdapter is required.");
+        this.f28665o = false;
+        this.f28666p = (w8) io.sentry.util.y.c(w8Var, "threadAdapter is required.");
     }
 }

@@ -13,9 +13,9 @@ import com.discord.chat.presentation.list.item.MessageItem;
 import com.discord.chat.presentation.list.item.SystemMessageItem;
 import com.discord.chat.presentation.root.MessageContext;
 import com.discord.chat.presentation.root.MessageContextKt;
-import jr.p;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
+import lr.p;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000,\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a\n\u0010\u0000\u001a\u00020\u0001*\u00020\u0002\u001aC\u0010\u0000\u001a\u00020\u0001*\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\u00072\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f¢\u0006\u0002\u0010\r¨\u0006\u000e"}, d2 = {"toChatListMessageItem", "Lcom/discord/chat/presentation/list/item/ChatListItem;", "Lcom/discord/chat/bridge/row/MessageRow;", "Lcom/discord/chat/bridge/MessageBase;", "messageContext", "Lcom/discord/chat/presentation/root/MessageContext;", "allowChildGestures", "", "renderContentOnly", "reactTag", "", "backgroundHighlight", "Lcom/discord/chat/bridge/BackgroundHighlight;", "(Lcom/discord/chat/bridge/MessageBase;Lcom/discord/chat/presentation/root/MessageContext;ZZLjava/lang/Integer;Lcom/discord/chat/bridge/BackgroundHighlight;)Lcom/discord/chat/presentation/list/item/ChatListItem;", "chat_release"}, k = 2, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */

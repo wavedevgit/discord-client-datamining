@@ -8,20 +8,20 @@ import kotlin.reflect.jvm.internal.impl.protobuf.ByteString;
 public class a extends kotlin.reflect.jvm.internal.impl.protobuf.b {
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f35047i;
+    private final int f34437i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f35048o;
+    private final int f34438o;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public class b implements ByteString.ByteIterator {
 
         /* renamed from: d  reason: collision with root package name */
-        private int f35049d;
+        private int f34439d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final int f35050e;
+        private final int f34440e;
 
         @Override // java.util.Iterator
         /* renamed from: a */
@@ -31,7 +31,7 @@ public class a extends kotlin.reflect.jvm.internal.impl.protobuf.b {
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            if (this.f35049d < this.f35050e) {
+            if (this.f34439d < this.f34440e) {
                 return true;
             }
             return false;
@@ -39,10 +39,10 @@ public class a extends kotlin.reflect.jvm.internal.impl.protobuf.b {
 
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.ByteString.ByteIterator
         public byte nextByte() {
-            int i10 = this.f35049d;
-            if (i10 < this.f35050e) {
-                byte[] bArr = a.this.f35052d;
-                this.f35049d = i10 + 1;
+            int i10 = this.f34439d;
+            if (i10 < this.f34440e) {
+                byte[] bArr = a.this.f34442d;
+                this.f34439d = i10 + 1;
                 return bArr[i10];
             }
             throw new NoSuchElementException();
@@ -55,8 +55,8 @@ public class a extends kotlin.reflect.jvm.internal.impl.protobuf.b {
 
         private b() {
             int n10 = a.this.n();
-            this.f35049d = n10;
-            this.f35050e = n10 + a.this.size();
+            this.f34439d = n10;
+            this.f34440e = n10 + a.this.size();
         }
     }
 
@@ -66,8 +66,8 @@ public class a extends kotlin.reflect.jvm.internal.impl.protobuf.b {
         if (i10 >= 0) {
             if (i11 >= 0) {
                 if (i10 + i11 <= bArr.length) {
-                    this.f35047i = i10;
-                    this.f35048o = i11;
+                    this.f34437i = i10;
+                    this.f34438o = i11;
                     return;
                 }
                 StringBuilder sb2 = new StringBuilder(48);
@@ -91,14 +91,14 @@ public class a extends kotlin.reflect.jvm.internal.impl.protobuf.b {
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.b, kotlin.reflect.jvm.internal.impl.protobuf.ByteString
     public void c(byte[] bArr, int i10, int i11, int i12) {
-        System.arraycopy(this.f35052d, n() + i10, bArr, i11, i12);
+        System.arraycopy(this.f34442d, n() + i10, bArr, i11, i12);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.b
     public byte k(int i10) {
         if (i10 >= 0) {
             if (i10 < size()) {
-                return this.f35052d[this.f35047i + i10];
+                return this.f34442d[this.f34437i + i10];
             }
             int size = size();
             StringBuilder sb2 = new StringBuilder(41);
@@ -117,12 +117,12 @@ public class a extends kotlin.reflect.jvm.internal.impl.protobuf.b {
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.b
     public int n() {
-        return this.f35047i;
+        return this.f34437i;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.b, kotlin.reflect.jvm.internal.impl.protobuf.ByteString
     public int size() {
-        return this.f35048o;
+        return this.f34438o;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.b, kotlin.reflect.jvm.internal.impl.protobuf.ByteString, java.lang.Iterable

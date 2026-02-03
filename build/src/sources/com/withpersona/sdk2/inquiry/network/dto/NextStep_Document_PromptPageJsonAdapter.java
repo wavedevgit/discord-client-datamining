@@ -53,9 +53,9 @@ public final class NextStep_Document_PromptPageJsonAdapter extends h {
         String str10 = null;
         String str11 = null;
         while (reader.hasNext()) {
-            switch (reader.t0(this.options)) {
+            switch (reader.A0(this.options)) {
                 case -1:
-                    reader.F0();
+                    reader.E0();
                     reader.P();
                     break;
                 case 0:
@@ -102,27 +102,27 @@ public final class NextStep_Document_PromptPageJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (promptPage != null) {
             writer.l();
-            writer.t0("title");
+            writer.A0("title");
             this.nullableStringAdapter.toJson(writer, promptPage.getTitle());
-            writer.t0("prompt");
+            writer.A0("prompt");
             this.nullableStringAdapter.toJson(writer, promptPage.getPrompt());
-            writer.t0("disclaimer");
+            writer.A0("disclaimer");
             this.nullableStringAdapter.toJson(writer, promptPage.getDisclaimer());
-            writer.t0("captureOptionsDialogTitle");
+            writer.A0("captureOptionsDialogTitle");
             this.nullableStringAdapter.toJson(writer, promptPage.getCaptureOptionsDialogTitle());
-            writer.t0("btnCapture");
+            writer.A0("btnCapture");
             this.nullableStringAdapter.toJson(writer, promptPage.getBtnCapture());
-            writer.t0("btnUpload");
+            writer.A0("btnUpload");
             this.nullableStringAdapter.toJson(writer, promptPage.getBtnUpload());
-            writer.t0("btnSubmit");
+            writer.A0("btnSubmit");
             this.nullableStringAdapter.toJson(writer, promptPage.getBtnSubmit());
-            writer.t0("cameraPermissionsTitle");
+            writer.A0("cameraPermissionsTitle");
             this.nullableStringAdapter.toJson(writer, promptPage.getCameraPermissionsTitle());
-            writer.t0("cameraPermissionsPrompt");
+            writer.A0("cameraPermissionsPrompt");
             this.nullableStringAdapter.toJson(writer, promptPage.getCameraPermissionsPrompt());
-            writer.t0("cameraPermissionsBtnContinueMobile");
+            writer.A0("cameraPermissionsBtnContinueMobile");
             this.nullableStringAdapter.toJson(writer, promptPage.getCameraPermissionsAllowButtonText());
-            writer.t0("cameraPermissionsBtnCancel");
+            writer.A0("cameraPermissionsBtnCancel");
             this.nullableStringAdapter.toJson(writer, promptPage.getCameraPermissionsCancelButtonText());
             writer.E();
             return;

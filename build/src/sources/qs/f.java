@@ -1,24 +1,53 @@
 package qs;
 
-import kotlinx.coroutines.sync.Mutex;
-import ms.e0;
+import java.util.concurrent.Executor;
+import kotlin.coroutines.CoroutineContext;
+import kotlinx.coroutines.s;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class f {
+public abstract class f extends s {
 
-    /* renamed from: a  reason: collision with root package name */
-    private static final e0 f47842a = new e0("NO_OWNER");
+    /* renamed from: o  reason: collision with root package name */
+    private final int f48174o;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final e0 f47843b = new e0("ALREADY_LOCKED_BY_OWNER");
+    /* renamed from: p  reason: collision with root package name */
+    private final int f48175p;
 
-    public static final Mutex a(boolean z10) {
-        return new e(z10);
+    /* renamed from: q  reason: collision with root package name */
+    private final long f48176q;
+
+    /* renamed from: r  reason: collision with root package name */
+    private final String f48177r;
+
+    /* renamed from: s  reason: collision with root package name */
+    private a f48178s = h2();
+
+    public f(int i10, int i11, long j10, String str) {
+        this.f48174o = i10;
+        this.f48175p = i11;
+        this.f48176q = j10;
+        this.f48177r = str;
     }
 
-    public static /* synthetic */ Mutex b(boolean z10, int i10, Object obj) {
-        if ((i10 & 1) != 0) {
-            z10 = false;
-        }
-        return a(z10);
+    private final a h2() {
+        return new a(this.f48174o, this.f48175p, this.f48176q, this.f48177r);
+    }
+
+    @Override // kotlinx.coroutines.CoroutineDispatcher
+    public void E1(CoroutineContext coroutineContext, Runnable runnable) {
+        a.F(this.f48178s, runnable, false, false, 6, null);
+    }
+
+    @Override // kotlinx.coroutines.CoroutineDispatcher
+    public void U1(CoroutineContext coroutineContext, Runnable runnable) {
+        a.F(this.f48178s, runnable, false, true, 2, null);
+    }
+
+    @Override // kotlinx.coroutines.s
+    public Executor f2() {
+        return this.f48178s;
+    }
+
+    public final void i2(Runnable runnable, boolean z10, boolean z11) {
+        this.f48178s.E(runnable, z10, z11);
     }
 }

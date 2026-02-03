@@ -6,10 +6,10 @@ import android.os.Build;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f3158a;
+    private final String f3127a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final LocusId f3159b;
+    private final LocusId f3128b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static class a {
@@ -23,16 +23,16 @@ public final class c {
     }
 
     public c(String str) {
-        this.f3158a = (String) b2.e.k(str, "id cannot be empty");
+        this.f3127a = (String) b2.e.k(str, "id cannot be empty");
         if (Build.VERSION.SDK_INT >= 29) {
-            this.f3159b = a.a(str);
+            this.f3128b = a.a(str);
         } else {
-            this.f3159b = null;
+            this.f3128b = null;
         }
     }
 
     private String b() {
-        int length = this.f3158a.length();
+        int length = this.f3127a.length();
         return length + "_chars";
     }
 
@@ -42,11 +42,11 @@ public final class c {
     }
 
     public String a() {
-        return this.f3158a;
+        return this.f3127a;
     }
 
     public LocusId c() {
-        return this.f3159b;
+        return this.f3128b;
     }
 
     public boolean equals(Object obj) {
@@ -57,19 +57,19 @@ public final class c {
             return false;
         }
         c cVar = (c) obj;
-        String str = this.f3158a;
+        String str = this.f3127a;
         if (str == null) {
-            if (cVar.f3158a == null) {
+            if (cVar.f3127a == null) {
                 return true;
             }
             return false;
         }
-        return str.equals(cVar.f3158a);
+        return str.equals(cVar.f3127a);
     }
 
     public int hashCode() {
         int hashCode;
-        String str = this.f3158a;
+        String str = this.f3127a;
         if (str == null) {
             hashCode = 0;
         } else {

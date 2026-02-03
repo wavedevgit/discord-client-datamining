@@ -31,8 +31,8 @@ import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.modules.appstate.AppStateModule;
 import com.facebook.react.uimanager.ViewProps;
-import hs.m1;
 import java.util.Map;
+import js.m1;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
@@ -88,22 +88,22 @@ public final class MediaEngineModule extends NativeMediaEngineModuleSpec {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            pr.b.f();
+            rr.b.f();
             if (this.label == 0) {
                 kotlin.c.b(obj);
                 MediaEngine mediaEngine = new MediaEngine(MediaEngineModule.this.getReactContext(), null, 2, null);
                 MediaEngineModule.this.setMediaEngine(mediaEngine);
                 Debug debug = Debug.INSTANCE;
                 System.nanoTime();
-                MediaEngineModule.this.mediaEngineDeferred.L0(mediaEngine);
-                return Unit.f33074a;
+                MediaEngineModule.this.mediaEngineDeferred.J0(mediaEngine);
+                return Unit.f32464a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
         }
     }
 
@@ -135,10 +135,10 @@ public final class MediaEngineModule extends NativeMediaEngineModuleSpec {
         CoroutineScope a10 = kotlinx.coroutines.i.a(m1.b("AppSingleThread"));
         this.appScope = a10;
         this.startNs = System.nanoTime();
-        this.mediaEngineDeferred = hs.q.b(null, 1, null);
-        hs.i.d(a10, null, null, new AnonymousClass1(null), 3, null);
+        this.mediaEngineDeferred = js.q.b(null, 1, null);
+        js.i.d(a10, null, null, new AnonymousClass1(null), 3, null);
         Debug.INSTANCE.logDebugLoggingConfig();
-        this.reactEvents = new ReactEvents(jr.v.a("no-input-callback", Reflection.getOrCreateKotlinClass(NoInputCallbackEvent.class)), jr.v.a("on-voice", Reflection.getOrCreateKotlinClass(OnVoiceEvent.class)), jr.v.a("device-changed", Reflection.getOrCreateKotlinClass(DeviceChangedEvent.class)), jr.v.a("audio-input-initialized", Reflection.getOrCreateKotlinClass(AudioInputInitializedEvent.class)), jr.v.a("on-broadcast-requested", Reflection.getOrCreateKotlinClass(OnBroadcastRequestedEvent.class)), jr.v.a("on-broadcast-thumbnail", Reflection.getOrCreateKotlinClass(OnBroadcastThumbnailEvent.class)), jr.v.a("user-speaking", Reflection.getOrCreateKotlinClass(UserSpeakingEvent.class)), jr.v.a("ping-callback", Reflection.getOrCreateKotlinClass(PingCallbackEvent.class)), jr.v.a("ping-timeout-callback", Reflection.getOrCreateKotlinClass(PingTimeoutCallbackEvent.class)), jr.v.a("on-video-callback", Reflection.getOrCreateKotlinClass(OnVideoCallbackEvent.class)), jr.v.a("active-sinks-change", Reflection.getOrCreateKotlinClass(ActiveSinksChangeEvent.class)), jr.v.a("on-first-frame-callback", Reflection.getOrCreateKotlinClass(FirstFrameCallbackEvent.class)), jr.v.a("mls-failure-callback", Reflection.getOrCreateKotlinClass(MlsFailureCallbackEvent.class)), jr.v.a("secure-frames-state-update-callback", Reflection.getOrCreateKotlinClass(SecureFramesStateUpdateCallbackEvent.class)));
+        this.reactEvents = new ReactEvents(lr.v.a("no-input-callback", Reflection.getOrCreateKotlinClass(NoInputCallbackEvent.class)), lr.v.a("on-voice", Reflection.getOrCreateKotlinClass(OnVoiceEvent.class)), lr.v.a("device-changed", Reflection.getOrCreateKotlinClass(DeviceChangedEvent.class)), lr.v.a("audio-input-initialized", Reflection.getOrCreateKotlinClass(AudioInputInitializedEvent.class)), lr.v.a("on-broadcast-requested", Reflection.getOrCreateKotlinClass(OnBroadcastRequestedEvent.class)), lr.v.a("on-broadcast-thumbnail", Reflection.getOrCreateKotlinClass(OnBroadcastThumbnailEvent.class)), lr.v.a("user-speaking", Reflection.getOrCreateKotlinClass(UserSpeakingEvent.class)), lr.v.a("ping-callback", Reflection.getOrCreateKotlinClass(PingCallbackEvent.class)), lr.v.a("ping-timeout-callback", Reflection.getOrCreateKotlinClass(PingTimeoutCallbackEvent.class)), lr.v.a("on-video-callback", Reflection.getOrCreateKotlinClass(OnVideoCallbackEvent.class)), lr.v.a("active-sinks-change", Reflection.getOrCreateKotlinClass(ActiveSinksChangeEvent.class)), lr.v.a("on-first-frame-callback", Reflection.getOrCreateKotlinClass(FirstFrameCallbackEvent.class)), lr.v.a("mls-failure-callback", Reflection.getOrCreateKotlinClass(MlsFailureCallbackEvent.class)), lr.v.a("secure-frames-state-update-callback", Reflection.getOrCreateKotlinClass(SecureFramesStateUpdateCallbackEvent.class)));
         this.activityEventListener = new ActivityEventListener() { // from class: com.discord.media.engine.MediaEngineModule$activityEventListener$1
             @Override // com.facebook.react.bridge.ActivityEventListener
             public void onActivityResult(Activity activity, int i10, int i11, Intent intent) {
@@ -160,7 +160,7 @@ public final class MediaEngineModule extends NativeMediaEngineModuleSpec {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void addConnectionCallbacks(int i10) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$addConnectionCallbacks$1(this, i10, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$addConnectionCallbacks$1(this, i10, null), 3, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -170,7 +170,7 @@ public final class MediaEngineModule extends NativeMediaEngineModuleSpec {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void createConnection(int i10, String str, ReadableMap readableMap, Function2<? super String, ? super Map<String, ? extends Object>, Unit> function2) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$createConnection$1(this, i10, str, readableMap, function2, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$createConnection$1(this, i10, str, readableMap, function2, null), 3, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -178,7 +178,7 @@ public final class MediaEngineModule extends NativeMediaEngineModuleSpec {
         Intrinsics.checkNotNullParameter(errorMessage, "errorMessage");
         Intrinsics.checkNotNullParameter(connectionInfo, "connectionInfo");
         callback.invoke(errorMessage, NativeMapExtensionsKt.toNativeMap(connectionInfo));
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     private static /* synthetic */ void getAppScope$annotations() {
@@ -191,99 +191,99 @@ public final class MediaEngineModule extends NativeMediaEngineModuleSpec {
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceConfigureConnectionRetries(double d10, double d11, double d12, double d13) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceConfigureConnectionRetries$1(this, d10, d11, d12, d13, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceConfigureConnectionRetries$1(this, d10, d11, d12, d13, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceDestroy(double d10) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceDestroy$1(this, d10, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceDestroy$1(this, d10, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceDestroyUser(double d10, @NotNull String userId) {
         Intrinsics.checkNotNullParameter(userId, "userId");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceDestroyUser$1(this, d10, userId, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceDestroyUser$1(this, d10, userId, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceExecuteSecureFramesTransition(double d10, double d11) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceExecuteSecureFramesTransition$1(this, d10, d11, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceExecuteSecureFramesTransition$1(this, d10, d11, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceFastUdpReconnect(double d10) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceFastUdpReconnect$1(this, d10, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceFastUdpReconnect$1(this, d10, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceGetEncryptionModes(double d10, @NotNull Callback callback) {
         Intrinsics.checkNotNullParameter(callback, "callback");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceGetEncryptionModes$1(this, d10, callback, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceGetEncryptionModes$1(this, d10, callback, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceGetFilteredStats(double d10, double d11, @NotNull Callback callback) {
         Intrinsics.checkNotNullParameter(callback, "callback");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceGetFilteredStats$1(this, d10, d11, callback, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceGetFilteredStats$1(this, d10, d11, callback, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceGetMLSKeyPackageB64(double d10, @NotNull Callback callback) {
         Intrinsics.checkNotNullParameter(callback, "callback");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceGetMLSKeyPackageB64$1(this, d10, callback, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceGetMLSKeyPackageB64$1(this, d10, callback, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceGetMLSPairwiseFingerprintB64(double d10, double d11, @NotNull String userId, @NotNull Callback callback) {
         Intrinsics.checkNotNullParameter(userId, "userId");
         Intrinsics.checkNotNullParameter(callback, "callback");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceGetMLSPairwiseFingerprintB64$1(this, d10, d11, userId, callback, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceGetMLSPairwiseFingerprintB64$1(this, d10, d11, userId, callback, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceGetStats(double d10, @NotNull Callback callback) {
         Intrinsics.checkNotNullParameter(callback, "callback");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceGetStats$1(this, d10, callback, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceGetStats$1(this, d10, callback, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceMergeUsers(double d10, @NotNull ReadableArray users) {
         Intrinsics.checkNotNullParameter(users, "users");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceMergeUsers$1(this, d10, users, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceMergeUsers$1(this, d10, users, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstancePrepareMLSCommitTransitionB64(double d10, double d11, @NotNull String commit, @NotNull Callback callback) {
         Intrinsics.checkNotNullParameter(commit, "commit");
         Intrinsics.checkNotNullParameter(callback, "callback");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstancePrepareMLSCommitTransitionB64$1(this, d10, d11, commit, callback, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstancePrepareMLSCommitTransitionB64$1(this, d10, d11, commit, callback, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstancePrepareSecureFramesEpoch(double d10, @NotNull String epoch, double d11, @NotNull String groupId) {
         Intrinsics.checkNotNullParameter(epoch, "epoch");
         Intrinsics.checkNotNullParameter(groupId, "groupId");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstancePrepareSecureFramesEpoch$1(this, d10, epoch, d11, groupId, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstancePrepareSecureFramesEpoch$1(this, d10, epoch, d11, groupId, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstancePrepareSecureFramesTransition(double d10, double d11, double d12, @NotNull Callback callback) {
         Intrinsics.checkNotNullParameter(callback, "callback");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstancePrepareSecureFramesTransition$1(this, d10, d11, d12, callback, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstancePrepareSecureFramesTransition$1(this, d10, d11, d12, callback, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceProcessMLSProposalsB64(double d10, @NotNull String proposals, @NotNull Callback callback) {
         Intrinsics.checkNotNullParameter(proposals, "proposals");
         Intrinsics.checkNotNullParameter(callback, "callback");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceProcessMLSProposalsB64$1(this, d10, proposals, callback, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceProcessMLSProposalsB64$1(this, d10, proposals, callback, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceProcessMLSWelcomeB64(double d10, double d11, @NotNull String welcome, @NotNull Callback callback) {
         Intrinsics.checkNotNullParameter(welcome, "welcome");
         Intrinsics.checkNotNullParameter(callback, "callback");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceProcessMLSWelcomeB64$1(this, d10, d11, welcome, callback, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceProcessMLSWelcomeB64$1(this, d10, d11, welcome, callback, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
@@ -295,76 +295,76 @@ public final class MediaEngineModule extends NativeMediaEngineModuleSpec {
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceSetLocalMute(double d10, @NotNull String userId, boolean z10) {
         Intrinsics.checkNotNullParameter(userId, "userId");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceSetLocalMute$1(this, d10, userId, z10, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceSetLocalMute$1(this, d10, userId, z10, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceSetLocalPan(double d10, @NotNull String userId, double d11, double d12) {
         Intrinsics.checkNotNullParameter(userId, "userId");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceSetLocalPan$1(this, d10, userId, d11, d12, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceSetLocalPan$1(this, d10, userId, d11, d12, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceSetLocalVolume(double d10, @NotNull String userId, double d11) {
         Intrinsics.checkNotNullParameter(userId, "userId");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceSetLocalVolume$1(this, d10, userId, d11, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceSetLocalVolume$1(this, d10, userId, d11, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceSetMinimumOutputDelay(double d10, double d11) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceSetMinimumOutputDelay$1(this, d10, d11, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceSetMinimumOutputDelay$1(this, d10, d11, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceSetNoInputThreshold(double d10, double d11) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceSetNoInputThreshold$1(this, d10, d11, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceSetNoInputThreshold$1(this, d10, d11, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceSetPTTActive(double d10, boolean z10, boolean z11, boolean z12) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceSetPTTActive$1(this, d10, z10, z11, z12, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceSetPTTActive$1(this, d10, z10, z11, z12, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceSetPingInterval(double d10, double d11) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceSetPingInterval$1(this, d10, d11, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceSetPingInterval$1(this, d10, d11, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceSetSelfDeafen(double d10, boolean z10) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceSetSelfDeafen$1(this, d10, z10, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceSetSelfDeafen$1(this, d10, z10, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceSetSelfMute(double d10, boolean z10) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceSetSelfMute$1(this, d10, z10, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceSetSelfMute$1(this, d10, z10, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceSetTransportOptions(double d10, @NotNull ReadableMap options) {
         Intrinsics.checkNotNullParameter(options, "options");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceSetTransportOptions$1(this, d10, options, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceSetTransportOptions$1(this, d10, options, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceSetVideoBroadcast(double d10, boolean z10) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceSetVideoBroadcast$1(this, d10, z10, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceSetVideoBroadcast$1(this, d10, z10, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceTriggerOnSpeakingCallback(double d10) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceTriggerOnSpeakingCallback$1(this, d10, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceTriggerOnSpeakingCallback$1(this, d10, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceTriggerOnVideoCallback(double d10) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceTriggerOnVideoCallback$1(this, d10, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceTriggerOnVideoCallback$1(this, d10, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void connectionInstanceUpdateMLSExternalSenderB64(double d10, @NotNull String externalSenderB64) {
         Intrinsics.checkNotNullParameter(externalSenderB64, "externalSenderB64");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceUpdateMLSExternalSenderB64$1(this, d10, externalSenderB64, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$connectionInstanceUpdateMLSExternalSenderB64$1(this, d10, externalSenderB64, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
@@ -376,7 +376,7 @@ public final class MediaEngineModule extends NativeMediaEngineModuleSpec {
         Intrinsics.checkNotNullParameter(userId, "userId");
         Intrinsics.checkNotNullParameter(connectionOptions, "connectionOptions");
         Intrinsics.checkNotNullParameter(callback, "callback");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$createOwnStreamConnectionWithOptions$1(this, d10, userId, connectionOptions, callback, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$createOwnStreamConnectionWithOptions$1(this, d10, userId, connectionOptions, callback, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
@@ -399,32 +399,32 @@ public final class MediaEngineModule extends NativeMediaEngineModuleSpec {
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void getAudioSubsystem(@NotNull Callback callback) {
         Intrinsics.checkNotNullParameter(callback, "callback");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$getAudioSubsystem$1(this, callback, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$getAudioSubsystem$1(this, callback, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void getCodecCapabilities(@NotNull Callback callback) {
         Intrinsics.checkNotNullParameter(callback, "callback");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$getCodecCapabilities$1(this, callback, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$getCodecCapabilities$1(this, callback, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void getCodecSurvey(@NotNull Callback callback) {
         Intrinsics.checkNotNullParameter(callback, "callback");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$getCodecSurvey$1(this, callback, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$getCodecSurvey$1(this, callback, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void getInputDevices(@NotNull Callback callback) {
         Intrinsics.checkNotNullParameter(callback, "callback");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$getInputDevices$1(this, callback, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$getInputDevices$1(this, callback, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void getMLSSigningKeyB64(@NotNull String sessionId, double d10, @NotNull Callback callback) {
         Intrinsics.checkNotNullParameter(sessionId, "sessionId");
         Intrinsics.checkNotNullParameter(callback, "callback");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$getMLSSigningKeyB64$1(this, sessionId, d10, callback, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$getMLSSigningKeyB64$1(this, sessionId, d10, callback, null), 3, null);
     }
 
     @NotNull
@@ -440,7 +440,7 @@ public final class MediaEngineModule extends NativeMediaEngineModuleSpec {
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void getOutputDevices(@NotNull Callback callback) {
         Intrinsics.checkNotNullParameter(callback, "callback");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$getOutputDevices$1(this, callback, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$getOutputDevices$1(this, callback, null), 3, null);
     }
 
     @NotNull
@@ -451,32 +451,32 @@ public final class MediaEngineModule extends NativeMediaEngineModuleSpec {
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     @NotNull
     protected Map<String, Object> getTypedExportedConstants() {
-        return kotlin.collections.o0.n(jr.v.a("DegradationPreference", kotlin.collections.o0.m(jr.v.a("MAINTAIN_RESOLUTION", 0), jr.v.a("MAINTAIN_FRAMERATE", 1), jr.v.a("BALANCED", 2))), jr.v.a("AVAudioSessionMode", kotlin.collections.o0.m(jr.v.a("VOICE", "AVAudioSessionModeVoiceChat"), jr.v.a("VIDEO", "AVAudioSessionModeVideoChat"), jr.v.a("LISTEN", "AVAudioSessionModeSpokenAudio"), jr.v.a("DEFAULT", "AVAudioSessionModeDefault"))), jr.v.a("SupportedSecureFramesProtocolVersion", Integer.valueOf((int) MediaEngine.MAX_SUPPORTED_PROTOCOL_VERSION)), jr.v.a("supportedFeatures", CollectionsKt.o("voice_sound_stop_loop", "voice_relative_sounds", "voice_legacy_subsystem", "voice_experimental_subsystem", "elevated_hook", "soundshare", "soundshare_loopback", "set_audio_device_by_id", "set_video_device_by_id", "loopback", "wumpus_video", "hybrid_video", "experimental_encoders", "experiment_config", "remote_locus_network_control", "screen_previews", "window_previews", "audio_debug_state", "connection_replay", "simulcast_bugfix", "RTC_REGION_RANKING", "video_effects", "direct_video", "electron_video", "mediapipe", "fixed_keyframe_interval", "clips", "first_frame_callback", "remote_user_multi_stream", "mls_pairwise_fingerprints", "offload_adm_controls")));
+        return kotlin.collections.o0.n(lr.v.a("DegradationPreference", kotlin.collections.o0.m(lr.v.a("MAINTAIN_RESOLUTION", 0), lr.v.a("MAINTAIN_FRAMERATE", 1), lr.v.a("BALANCED", 2))), lr.v.a("AVAudioSessionMode", kotlin.collections.o0.m(lr.v.a("VOICE", "AVAudioSessionModeVoiceChat"), lr.v.a("VIDEO", "AVAudioSessionModeVideoChat"), lr.v.a("LISTEN", "AVAudioSessionModeSpokenAudio"), lr.v.a("DEFAULT", "AVAudioSessionModeDefault"))), lr.v.a("SupportedSecureFramesProtocolVersion", Integer.valueOf((int) MediaEngine.MAX_SUPPORTED_PROTOCOL_VERSION)), lr.v.a("supportedFeatures", CollectionsKt.o("voice_sound_stop_loop", "voice_relative_sounds", "voice_legacy_subsystem", "voice_experimental_subsystem", "elevated_hook", "soundshare", "soundshare_loopback", "set_audio_device_by_id", "set_video_device_by_id", "loopback", "wumpus_video", "hybrid_video", "experimental_encoders", "experiment_config", "remote_locus_network_control", "screen_previews", "window_previews", "audio_debug_state", "connection_replay", "simulcast_bugfix", "RTC_REGION_RANKING", "video_effects", "direct_video", "electron_video", "mediapipe", "fixed_keyframe_interval", "clips", "first_frame_callback", "remote_user_multi_stream", "mls_pairwise_fingerprints", "offload_adm_controls")));
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void getVideoInputDevices(@NotNull Callback callback) {
         Intrinsics.checkNotNullParameter(callback, "callback");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$getVideoInputDevices$1(this, callback, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$getVideoInputDevices$1(this, callback, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void initializeEngine() {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$initializeEngine$1(this, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$initializeEngine$1(this, null), 3, null);
     }
 
     @Override // com.facebook.react.bridge.BaseJavaModule, com.facebook.react.bridge.NativeModule, com.facebook.react.turbomodule.core.interfaces.TurboModule
     public void invalidate() {
         super.invalidate();
         this.reactContext.removeActivityEventListener(this.activityEventListener);
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$invalidate$1(this, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$invalidate$1(this, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void rankRtcRegions(@NotNull ReadableArray regionsWithIps, @NotNull Callback callback) {
         Intrinsics.checkNotNullParameter(regionsWithIps, "regionsWithIps");
         Intrinsics.checkNotNullParameter(callback, "callback");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$rankRtcRegions$1(this, regionsWithIps, callback, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$rankRtcRegions$1(this, regionsWithIps, callback, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
@@ -490,38 +490,38 @@ public final class MediaEngineModule extends NativeMediaEngineModuleSpec {
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void setAudioInputEnabled(boolean z10) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$setAudioInputEnabled$1(this, z10, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$setAudioInputEnabled$1(this, z10, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void setBroadcastThumbnailParams(double d10, double d11, double d12) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$setBroadcastThumbnailParams$1(this, d10, d11, d12, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$setBroadcastThumbnailParams$1(this, d10, d11, d12, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void setEmitVADLevel2(boolean z10) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$setEmitVADLevel2$1(this, z10, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$setEmitVADLevel2$1(this, z10, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void setHasFullbandPerformance(boolean z10) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$setHasFullbandPerformance$1(this, z10, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$setHasFullbandPerformance$1(this, z10, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void setInputDevice(double d10) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$setInputDevice$1(this, d10, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$setInputDevice$1(this, d10, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void setInputDeviceById(@NotNull String deviceName) {
         Intrinsics.checkNotNullParameter(deviceName, "deviceName");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$setInputDeviceById$1(this, deviceName, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$setInputDeviceById$1(this, deviceName, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void setInputVolume(double d10) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$setInputVolume$1(this, d10, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$setInputVolume$1(this, d10, null), 3, null);
     }
 
     public final void setMediaEngine(@NotNull MediaEngine mediaEngine) {
@@ -531,7 +531,7 @@ public final class MediaEngineModule extends NativeMediaEngineModuleSpec {
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void setNoInputThreshold(double d10) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$setNoInputThreshold$1(this, d10, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$setNoInputThreshold$1(this, d10, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
@@ -545,40 +545,40 @@ public final class MediaEngineModule extends NativeMediaEngineModuleSpec {
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void setOutputDevice(double d10) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$setOutputDevice$1(this, d10, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$setOutputDevice$1(this, d10, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void setOutputDeviceById(@NotNull String deviceName) {
         Intrinsics.checkNotNullParameter(deviceName, "deviceName");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$setOutputDeviceById$1(this, deviceName, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$setOutputDeviceById$1(this, deviceName, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void setOutputVolume(double d10) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$setOutputVolume$1(this, d10, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$setOutputVolume$1(this, d10, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void setSidechainCompression(boolean z10) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$setSidechainCompression$1(this, z10, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$setSidechainCompression$1(this, z10, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void setTransportOptions(@NotNull ReadableMap options) {
         Intrinsics.checkNotNullParameter(options, "options");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$setTransportOptions$1(this, options, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$setTransportOptions$1(this, options, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void setVideoInputDevice(double d10) {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$setVideoInputDevice$1(this, d10, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$setVideoInputDevice$1(this, d10, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void setVideoInputDeviceById(@NotNull String deviceName) {
         Intrinsics.checkNotNullParameter(deviceName, "deviceName");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$setVideoInputDeviceById$1(this, deviceName, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$setVideoInputDeviceById$1(this, deviceName, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
@@ -593,30 +593,30 @@ public final class MediaEngineModule extends NativeMediaEngineModuleSpec {
     public void startLocalAudioRecording(@NotNull ReadableMap options, @NotNull Callback callback) {
         Intrinsics.checkNotNullParameter(options, "options");
         Intrinsics.checkNotNullParameter(callback, "callback");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$startLocalAudioRecording$1(this, options, callback, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$startLocalAudioRecording$1(this, options, callback, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void stopBroadcast() {
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$stopBroadcast$1(this, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$stopBroadcast$1(this, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void stopBroadcastWithError(double d10, @NotNull String errorMessage) {
         Intrinsics.checkNotNullParameter(errorMessage, "errorMessage");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$stopBroadcastWithError$1(this, d10, errorMessage, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$stopBroadcastWithError$1(this, d10, errorMessage, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void stopLocalAudioRecording(@NotNull Callback callback) {
         Intrinsics.checkNotNullParameter(callback, "callback");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$stopLocalAudioRecording$1(this, callback, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$stopLocalAudioRecording$1(this, callback, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeMediaEngineModuleSpec
     public void updateFieldTrial(@NotNull String key, @NotNull String value) {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(value, "value");
-        hs.i.d(this.appScope, null, null, new MediaEngineModule$updateFieldTrial$1(this, key, value, null), 3, null);
+        js.i.d(this.appScope, null, null, new MediaEngineModule$updateFieldTrial$1(this, key, value, null), 3, null);
     }
 }

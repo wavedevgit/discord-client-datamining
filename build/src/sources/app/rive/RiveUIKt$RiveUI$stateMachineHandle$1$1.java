@@ -27,10 +27,10 @@ final class RiveUIKt$RiveUI$stateMachineHandle$1$1 extends Lambda implements Fun
     @Override // kotlin.jvm.functions.Function0
     @NotNull
     public final String invoke() {
-        String m197toStringimpl = StateMachineHandle.m197toStringimpl(this.$handle);
+        String m195toStringimpl = StateMachineHandle.m195toStringimpl(this.$handle);
         String str = this.$stateMachineName;
-        String m99toStringimpl = ArtboardHandle.m99toStringimpl(this.$artboardHandle);
-        String m172toStringimpl = FileHandle.m172toStringimpl(this.$file.m33getFileHandleENT3xMk$kotlin_release());
-        return "Created " + m197toStringimpl + " with name " + str + " (" + m99toStringimpl + "; " + m172toStringimpl + ")";
+        String m97toStringimpl = ArtboardHandle.m97toStringimpl(this.$artboardHandle);
+        String m170toStringimpl = FileHandle.m170toStringimpl(this.$file.m31getFileHandleENT3xMk$kotlin_release());
+        return "Created " + m195toStringimpl + " with name " + str + " (" + m97toStringimpl + "; " + m170toStringimpl + ")";
     }
 }

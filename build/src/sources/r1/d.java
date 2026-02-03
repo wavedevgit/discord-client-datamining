@@ -10,7 +10,7 @@ import r1.b;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ThreadLocal f48011a = new ThreadLocal();
+    private static final ThreadLocal f48320a = new ThreadLocal();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static class a {

@@ -9,9 +9,8 @@ import android.provider.MediaStore;
 import android.util.Size;
 import com.discord.crash_reporting.CrashReporting;
 import com.discord.logging.Log;
-import hs.g0;
 import java.util.concurrent.ConcurrentHashMap;
-import jr.v;
+import js.g0;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.c;
@@ -25,7 +24,8 @@ import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.StringsKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.sync.Mutex;
-import pr.b;
+import lr.v;
+import rr.b;
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u0004\u0018\u00010\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "Landroid/graphics/Bitmap;", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.core.ThumbnailLoader$loadThumbnail$2$1$1", f = "ThumbnailLoader.kt", l = {118, 118}, m = "invokeSuspend")
 @SourceDebugExtension({"SMAP\nThumbnailLoader.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ThumbnailLoader.kt\ncom/discord/core/ThumbnailLoader$loadThumbnail$2$1$1\n+ 2 Mutex.kt\nkotlinx/coroutines/sync/MutexKt\n*L\n1#1,112:1\n116#2,11:113\n*S KotlinDebug\n*F\n+ 1 ThumbnailLoader.kt\ncom/discord/core/ThumbnailLoader$loadThumbnail$2$1$1\n*L\n92#1:113,11\n*E\n"})
@@ -148,6 +148,6 @@ final class ThumbnailLoader$loadThumbnail$2$1$1 extends k implements Function2<C
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Bitmap> continuation) {
-        return ((ThumbnailLoader$loadThumbnail$2$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        return ((ThumbnailLoader$loadThumbnail$2$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
     }
 }

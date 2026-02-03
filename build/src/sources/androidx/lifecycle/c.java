@@ -11,32 +11,32 @@ import java.util.Map;
 final class c {
 
     /* renamed from: c  reason: collision with root package name */
-    static c f4510c = new c();
+    static c f4479c = new c();
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f4511a = new HashMap();
+    private final Map f4480a = new HashMap();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f4512b = new HashMap();
+    private final Map f4481b = new HashMap();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final Map f4513a = new HashMap();
+        final Map f4482a = new HashMap();
 
         /* renamed from: b  reason: collision with root package name */
-        final Map f4514b;
+        final Map f4483b;
 
         a(Map map) {
-            this.f4514b = map;
+            this.f4483b = map;
             for (Map.Entry entry : map.entrySet()) {
                 Lifecycle.a aVar = (Lifecycle.a) entry.getValue();
-                List list = (List) this.f4513a.get(aVar);
+                List list = (List) this.f4482a.get(aVar);
                 if (list == null) {
                     list = new ArrayList();
-                    this.f4513a.put(aVar, list);
+                    this.f4482a.put(aVar, list);
                 }
                 list.add((b) entry.getKey());
             }
@@ -52,8 +52,8 @@ final class c {
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public void a(LifecycleOwner lifecycleOwner, Lifecycle.a aVar, Object obj) {
-            b((List) this.f4513a.get(aVar), lifecycleOwner, aVar, obj);
-            b((List) this.f4513a.get(Lifecycle.a.ON_ANY), lifecycleOwner, aVar, obj);
+            b((List) this.f4482a.get(aVar), lifecycleOwner, aVar, obj);
+            b((List) this.f4482a.get(Lifecycle.a.ON_ANY), lifecycleOwner, aVar, obj);
         }
     }
 
@@ -62,32 +62,32 @@ final class c {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        final int f4515a;
+        final int f4484a;
 
         /* renamed from: b  reason: collision with root package name */
-        final Method f4516b;
+        final Method f4485b;
 
         b(int i10, Method method) {
-            this.f4515a = i10;
-            this.f4516b = method;
+            this.f4484a = i10;
+            this.f4485b = method;
             method.setAccessible(true);
         }
 
         void a(LifecycleOwner lifecycleOwner, Lifecycle.a aVar, Object obj) {
             try {
-                int i10 = this.f4515a;
+                int i10 = this.f4484a;
                 if (i10 != 0) {
                     if (i10 != 1) {
                         if (i10 != 2) {
                             return;
                         }
-                        this.f4516b.invoke(obj, lifecycleOwner, aVar);
+                        this.f4485b.invoke(obj, lifecycleOwner, aVar);
                         return;
                     }
-                    this.f4516b.invoke(obj, lifecycleOwner);
+                    this.f4485b.invoke(obj, lifecycleOwner);
                     return;
                 }
-                this.f4516b.invoke(obj, null);
+                this.f4485b.invoke(obj, null);
             } catch (IllegalAccessException e10) {
                 throw new RuntimeException(e10);
             } catch (InvocationTargetException e11) {
@@ -103,14 +103,14 @@ final class c {
                 return false;
             }
             b bVar = (b) obj;
-            if (this.f4515a == bVar.f4515a && this.f4516b.getName().equals(bVar.f4516b.getName())) {
+            if (this.f4484a == bVar.f4484a && this.f4485b.getName().equals(bVar.f4485b.getName())) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return (this.f4515a * 31) + this.f4516b.getName().hashCode();
+            return (this.f4484a * 31) + this.f4485b.getName().hashCode();
         }
     }
 
@@ -123,10 +123,10 @@ final class c {
         Class superclass = cls.getSuperclass();
         HashMap hashMap = new HashMap();
         if (superclass != null && (c10 = c(superclass)) != null) {
-            hashMap.putAll(c10.f4514b);
+            hashMap.putAll(c10.f4483b);
         }
         for (Class<?> cls2 : cls.getInterfaces()) {
-            for (Map.Entry entry : c(cls2).f4514b.entrySet()) {
+            for (Map.Entry entry : c(cls2).f4483b.entrySet()) {
                 e(hashMap, (b) entry.getKey(), (Lifecycle.a) entry.getValue(), cls);
             }
         }
@@ -168,8 +168,8 @@ final class c {
             }
         }
         a aVar = new a(hashMap);
-        this.f4511a.put(cls, aVar);
-        this.f4512b.put(cls, Boolean.valueOf(z10));
+        this.f4480a.put(cls, aVar);
+        this.f4481b.put(cls, Boolean.valueOf(z10));
         return aVar;
     }
 
@@ -184,7 +184,7 @@ final class c {
     private void e(Map map, b bVar, Lifecycle.a aVar, Class cls) {
         Lifecycle.a aVar2 = (Lifecycle.a) map.get(bVar);
         if (aVar2 != null && aVar != aVar2) {
-            Method method = bVar.f4516b;
+            Method method = bVar.f4485b;
             throw new IllegalArgumentException("Method " + method.getName() + " in " + cls.getName() + " already declared with different @OnLifecycleEvent value: previous value " + aVar2 + ", new value " + aVar);
         } else if (aVar2 == null) {
             map.put(bVar, aVar);
@@ -193,7 +193,7 @@ final class c {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a c(Class cls) {
-        a aVar = (a) this.f4511a.get(cls);
+        a aVar = (a) this.f4480a.get(cls);
         if (aVar != null) {
             return aVar;
         }
@@ -202,7 +202,7 @@ final class c {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean d(Class cls) {
-        Boolean bool = (Boolean) this.f4512b.get(cls);
+        Boolean bool = (Boolean) this.f4481b.get(cls);
         if (bool != null) {
             return bool.booleanValue();
         }
@@ -213,7 +213,7 @@ final class c {
                 return true;
             }
         }
-        this.f4512b.put(cls, Boolean.FALSE);
+        this.f4481b.put(cls, Boolean.FALSE);
         return false;
     }
 }

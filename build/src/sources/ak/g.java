@@ -71,7 +71,7 @@ final class g implements o {
     public final void zzb() {
         if (this.f672d == null) {
             try {
-                g6 o02 = i8.e(DynamiteModule.d(this.f669a, DynamiteModule.f14499b, "com.google.android.gms.vision.dynamite").c("com.google.android.gms.vision.text.ChimeraNativeTextRecognizerCreator")).o0(sf.b.S0(this.f669a), this.f670b);
+                g6 o02 = i8.e(DynamiteModule.d(this.f669a, DynamiteModule.f13467b, "com.google.android.gms.vision.dynamite").c("com.google.android.gms.vision.text.ChimeraNativeTextRecognizerCreator")).o0(sf.b.S0(this.f669a), this.f670b);
                 this.f672d = o02;
                 if (o02 == null && !this.f671c) {
                     Log.d("LegacyTextDelegate", "Request OCR optional module download.");

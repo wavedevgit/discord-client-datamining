@@ -31,7 +31,7 @@ final class MediaEngineModule$connectionInstanceSetVideoBroadcast$1 extends kotl
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
         Object awaitMediaEngine;
-        Object f10 = pr.b.f();
+        Object f10 = rr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -49,11 +49,11 @@ final class MediaEngineModule$connectionInstanceSetVideoBroadcast$1 extends kotl
             }
         }
         this.this$0.getMediaEngine().connectionInstanceSetVideoBroadcast$media_engine_release((int) this.$connectionId, this.$broadcasting);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$connectionInstanceSetVideoBroadcast$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        return ((MediaEngineModule$connectionInstanceSetVideoBroadcast$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
     }
 }

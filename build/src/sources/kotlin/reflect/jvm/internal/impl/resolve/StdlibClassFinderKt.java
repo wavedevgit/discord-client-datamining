@@ -8,14 +8,14 @@ import org.jetbrains.annotations.NotNull;
 public final class StdlibClassFinderKt {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ModuleCapability f35187a = new ModuleCapability("StdlibClassFinder");
+    private static final ModuleCapability f34577a = new ModuleCapability("StdlibClassFinder");
 
     @NotNull
     public static final StdlibClassFinder getStdlibClassFinder(@NotNull ModuleDescriptor moduleDescriptor) {
         Intrinsics.checkNotNullParameter(moduleDescriptor, "<this>");
-        StdlibClassFinder stdlibClassFinder = (StdlibClassFinder) moduleDescriptor.getCapability(f35187a);
+        StdlibClassFinder stdlibClassFinder = (StdlibClassFinder) moduleDescriptor.getCapability(f34577a);
         if (stdlibClassFinder == null) {
-            return a.f35188a;
+            return a.f34578a;
         }
         return stdlibClassFinder;
     }

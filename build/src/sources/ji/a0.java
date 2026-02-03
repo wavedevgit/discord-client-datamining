@@ -35,13 +35,13 @@ public abstract class a0 {
     public static abstract class b implements ii.f {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f31788d = new a("KEY", 0);
+        public static final b f31584d = new a("KEY", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final b f31789e = new C0428b("VALUE", 1);
+        public static final b f31585e = new C0418b("VALUE", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        private static final /* synthetic */ b[] f31790i = a();
+        private static final /* synthetic */ b[] f31586i = a();
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         enum a extends b {
@@ -58,8 +58,8 @@ public abstract class a0 {
 
         /* renamed from: ji.a0$b$b  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        enum C0428b extends b {
-            C0428b(String str, int i10) {
+        enum C0418b extends b {
+            C0418b(String str, int i10) {
                 super(str, i10, null);
             }
 
@@ -74,7 +74,7 @@ public abstract class a0 {
         }
 
         private static /* synthetic */ b[] a() {
-            return new b[]{f31788d, f31789e};
+            return new b[]{f31584d, f31585e};
         }
 
         public static b valueOf(String str) {
@@ -82,7 +82,7 @@ public abstract class a0 {
         }
 
         public static b[] values() {
-            return (b[]) f31790i.clone();
+            return (b[]) f31586i.clone();
         }
 
         /* synthetic */ b(String str, int i10, z zVar) {
@@ -143,16 +143,16 @@ public abstract class a0 {
     public static class d extends q0.d {
 
         /* renamed from: d  reason: collision with root package name */
-        final Map f31791d;
+        final Map f31587d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public d(Map map) {
-            this.f31791d = (Map) ii.m.j(map);
+            this.f31587d = (Map) ii.m.j(map);
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public Map b() {
-            return this.f31791d;
+            return this.f31587d;
         }
 
         @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
@@ -176,14 +176,14 @@ public abstract class a0 {
     public static class e extends AbstractCollection {
 
         /* renamed from: d  reason: collision with root package name */
-        final Map f31792d;
+        final Map f31588d;
 
         e(Map map) {
-            this.f31792d = (Map) ii.m.j(map);
+            this.f31588d = (Map) ii.m.j(map);
         }
 
         final Map b() {
-            return this.f31792d;
+            return this.f31588d;
         }
 
         @Override // java.util.AbstractCollection, java.util.Collection
@@ -262,10 +262,10 @@ public abstract class a0 {
     public static abstract class f extends AbstractMap {
 
         /* renamed from: d  reason: collision with root package name */
-        private transient Set f31793d;
+        private transient Set f31589d;
 
         /* renamed from: e  reason: collision with root package name */
-        private transient Collection f31794e;
+        private transient Collection f31590e;
 
         abstract Set a();
 
@@ -275,10 +275,10 @@ public abstract class a0 {
 
         @Override // java.util.AbstractMap, java.util.Map
         public Set entrySet() {
-            Set set = this.f31793d;
+            Set set = this.f31589d;
             if (set == null) {
                 Set a10 = a();
-                this.f31793d = a10;
+                this.f31589d = a10;
                 return a10;
             }
             return set;
@@ -286,10 +286,10 @@ public abstract class a0 {
 
         @Override // java.util.AbstractMap, java.util.Map
         public Collection values() {
-            Collection collection = this.f31794e;
+            Collection collection = this.f31590e;
             if (collection == null) {
                 Collection b10 = b();
-                this.f31794e = b10;
+                this.f31590e = b10;
                 return b10;
             }
             return collection;
@@ -386,7 +386,7 @@ public abstract class a0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static ii.f k() {
-        return b.f31789e;
+        return b.f31585e;
     }
 
     static Iterator l(Iterator it) {

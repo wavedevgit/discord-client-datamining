@@ -10,10 +10,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a1 extends j0 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f11320d = new a(null);
+    public static final a f10288d = new a(null);
 
     /* renamed from: c  reason: collision with root package name */
-    private final ContentResolver f11321c;
+    private final ContentResolver f10289c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -31,13 +31,13 @@ public final class a1 extends j0 {
         Intrinsics.checkNotNullParameter(executor, "executor");
         Intrinsics.checkNotNullParameter(pooledByteBufferFactory, "pooledByteBufferFactory");
         Intrinsics.checkNotNullParameter(contentResolver, "contentResolver");
-        this.f11321c = contentResolver;
+        this.f10289c = contentResolver;
     }
 
     @Override // com.facebook.imagepipeline.producers.j0
     protected sa.k d(ImageRequest imageRequest) {
         Intrinsics.checkNotNullParameter(imageRequest, "imageRequest");
-        InputStream openInputStream = this.f11321c.openInputStream(imageRequest.getSourceUri());
+        InputStream openInputStream = this.f10289c.openInputStream(imageRequest.getSourceUri());
         if (openInputStream != null) {
             sa.k e10 = e(openInputStream, -1);
             Intrinsics.checkNotNullExpressionValue(e10, "getEncodedImage(...)");

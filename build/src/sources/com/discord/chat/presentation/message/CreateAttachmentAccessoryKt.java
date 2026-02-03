@@ -65,7 +65,7 @@ public final class CreateAttachmentAccessoryKt {
                     if (i13 == 4) {
                         return new AudioAttachmentMessageAccessory(message.m236getChannelIdo4g7jtM(), m239getId3Eiw7ao, attachment, i10, message.getAttachmentsOpacity(), message.m235getAuthorIdwUX8bhU(), message.getAudioAttachmentBackgroundColor(), MessageFlagKt.hasMessageFlag(Long.valueOf(message.getFlags()), MessageFlag.IS_VOICE_MESSAGE), null);
                     }
-                    throw new jr.p();
+                    throw new lr.p();
                 }
                 return new FileAttachmentMessageAccessory(m239getId3Eiw7ao, attachment, i10, message.getAttachmentsOpacity(), forAttachment, attachment.getUploaderId(), attachment.getUploaderItemId(), null);
             }

@@ -1,50 +1,21 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var0 = module;
-    var1 = function arg0() {
-        _fun45674: for (var _fun45674_ip = 0;;) switch (_fun45674_ip) {
-            case 0:
-                var2 = arg0;
-                var0 = global;
-                var1 = var0.Symbol;
-                var3 = 'undefined';
-                var1 = typeof var1;
-                if (!(var3 !== var1)) {
-                    _fun45674_ip = 43;
-                    continue _fun45674
-                }
-            case 21:
-                var1 = var0.Symbol;
-                var1 = var1.iterator;
-                var3 = var2[var1];
-                var1 = null;
-                if (!(var1 == var3)) {
-                    _fun45674_ip = 59;
-                    continue _fun45674
-                }
-            case 43:
-                var3 = var2["@@iterator"];
-                var1 = null;
-                if (!(var1 == var3)) {
-                    _fun45674_ip = 59;
-                    continue _fun45674
-                }
-            case 55:
-                var1 = undefined;
-                return var1;
-            case 59:
-                var1 = var0.Array;
-                var0 = var1.from;
-                var0 = var0.bind(var1)(var2);
-                return var0;
-        }
+    var1 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = {
+        'styleUnsupported': "You have passed a style to FlashList. This list doesn't support styling, use contentContainerStyle or wrap the list in a parent and apply style to it instead.",
+        'styleContentContainerUnsupported': "FlashList only supports padding related props and backgroundColor in contentContainerStyle. Please remove other values as they're not used.",
+        'unusableRenderedSize': "FlashList's rendered size is not usable. Either the height or width is too small (<2px). Please make sure that the parent view of the list has a valid size. FlashList will match the size of the parent.",
+        'missingKeyExtractor': 'FlashList requires a keyExtractor prop to be defined when animating elements. Without it, the animations will not run as expected.',
+        'estimatedItemSizeMissingWarning': 'estimatedItemSize FlashList prop is not defined - based on current configuration you can set it to @size to optimize list performance. Refer to FlashList documentation for more details.'
     };
-    var0.exports = var1;
-    var2 = var0.exports;
-    var1 = true;
-    var2.__esModule = var1;
-    var1 = var0.exports;
-    var0 = var0.exports;
     var1.default = var0;
     var0 = undefined;
     return var0;

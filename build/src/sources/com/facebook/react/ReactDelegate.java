@@ -33,7 +33,7 @@ public class ReactDelegate {
     private ReactNativeHost reactNativeHost;
     private ReactSurface reactSurface;
 
-    @jr.c
+    @lr.c
     public ReactDelegate(@NotNull Activity activity, ReactNativeHost reactNativeHost, String str, Bundle bundle) {
         Intrinsics.checkNotNullParameter(activity, "activity");
         this.isFabricEnabled = ReactNativeNewArchitectureFeatureFlags.enableFabricRenderer();
@@ -79,7 +79,7 @@ public class ReactDelegate {
         return null;
     }
 
-    @jr.c
+    @lr.c
     private static /* synthetic */ void getReactNativeHost$annotations() {
     }
 
@@ -124,7 +124,7 @@ public class ReactDelegate {
         return this.reactHost;
     }
 
-    @jr.c
+    @lr.c
     @NotNull
     public final ReactInstanceManager getReactInstanceManager() {
         ReactNativeHost reactNativeHost = this.reactNativeHost;
@@ -524,7 +524,7 @@ public class ReactDelegate {
         this.reactHost = reactHost;
     }
 
-    @jr.c
+    @lr.c
     public ReactDelegate(@NotNull Activity activity, ReactNativeHost reactNativeHost, String str, Bundle bundle, boolean z10) {
         Intrinsics.checkNotNullParameter(activity, "activity");
         ReactNativeNewArchitectureFeatureFlags.enableFabricRenderer();

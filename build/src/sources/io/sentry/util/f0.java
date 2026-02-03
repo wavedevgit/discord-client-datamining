@@ -12,15 +12,15 @@ import java.util.regex.Pattern;
 public abstract class f0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Charset f30386a = Charset.forName("UTF-8");
+    private static final Charset f30747a = Charset.forName("UTF-8");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Pattern f30387b = Pattern.compile("[\\W_]+");
+    private static final Pattern f30748b = Pattern.compile("[\\W_]+");
 
     public static String a(String str, ILogger iLogger) {
         if (str != null && !str.isEmpty()) {
             try {
-                return new StringBuilder(new BigInteger(1, MessageDigest.getInstance("SHA-1").digest(str.getBytes(f30386a))).toString(16)).toString();
+                return new StringBuilder(new BigInteger(1, MessageDigest.getInstance("SHA-1").digest(str.getBytes(f30747a))).toString(16)).toString();
             } catch (NoSuchAlgorithmException e10) {
                 iLogger.b(SentryLevel.INFO, "SHA-1 isn't available to calculate the hash.", e10);
             } catch (Throwable th2) {
@@ -32,7 +32,7 @@ public abstract class f0 {
 
     public static String b(String str) {
         if (str != null && !str.isEmpty()) {
-            String[] split = f30387b.split(str, -1);
+            String[] split = f30748b.split(str, -1);
             StringBuilder sb2 = new StringBuilder();
             for (String str2 : split) {
                 sb2.append(c(str2));

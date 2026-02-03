@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/media_viewer/native/components/overlay/MediaModalOverlayHeader.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun73129: for (var _fun73129_ip = 0;;) switch (_fun73129_ip) {
+        _fun73239: for (var _fun73239_ip = 0;;) switch (_fun73239_ip) {
             case 0:
                 var0 = arg0;
                 var13 = var0.onClose;
@@ -203,8 +203,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = null;
                 var12 = var15 != var29;
                 if (!var12) {
-                    _fun73129_ip = 698;
-                    continue _fun73129
+                    _fun73239_ip = 698;
+                    continue _fun73239
                 }
             case 434:
                 var18 = _closure1_slot5;
@@ -219,8 +219,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20.style = var23;
                 var24 = var15 != var31;
                 if (!var24) {
-                    _fun73129_ip = 583;
-                    continue _fun73129
+                    _fun73239_ip = 583;
+                    continue _fun73239
                 }
             case 481:
                 var26 = _closure1_slot5;
@@ -285,8 +285,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9[0] = var11;
                 var10 = !var10;
                 if (!var10) {
-                    _fun73129_ip = 871;
-                    continue _fun73129
+                    _fun73239_ip = 871;
+                    continue _fun73239
                 }
             case 729:
                 var13 = _closure1_slot6;
@@ -308,8 +308,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14[0] = var18;
                 var15 = null;
                 if (var17) {
-                    _fun73129_ip = 857;
-                    continue _fun73129
+                    _fun73239_ip = 857;
+                    continue _fun73239
                 }
             case 802:
                 var18 = _closure1_slot5;
@@ -322,7 +322,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = {};
                 var16.items = var19;
                 var19 = function arg0() {
-                    _fun73130: for (var _fun73130_ip = 0;;) switch (_fun73130_ip) {
+                    _fun73240: for (var _fun73240_ip = 0;;) switch (_fun73240_ip) {
                         case 0:
                             var2 = arg0;
                             var5 = var2.ref;
@@ -363,8 +363,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var8 = _closure1_slot0;
                             var10 = _closure1_slot2;
                             if (var6) {
-                                _fun73130_ip = 194;
-                                continue _fun73130
+                                _fun73240_ip = 194;
+                                continue _fun73240
                             }
                         case 154:
                             var6 = 19;
@@ -376,8 +376,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 'color': 'interactive-text-active'
                             };
                             var6 = var9.bind(var2)(var7, var6);
-                            _fun73130_ip = 232;
-                            continue _fun73130;
+                            _fun73240_ip = 232;
+                            continue _fun73240;
                         case 194:
                             var7 = 18;
                             var7 = var10[var7];
@@ -417,4 +417,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.MediaModalOverlayHeader = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 4698, 9180, 8855, 9184, 3711, 4729, 9185, 1234, 4727, 4077, 671, 3932, 9186, 8926, 478, 9196, 8927, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 4703, 9199, 8874, 9203, 3720, 4734, 9204, 1234, 4732, 4086, 671, 3941, 9205, 8945, 478, 9215, 8946, 2]);

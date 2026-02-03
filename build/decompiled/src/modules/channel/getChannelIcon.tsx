@@ -37,14 +37,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/channel/getChannelIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun48304: for (var _fun48304_ip = 0;;) switch (_fun48304_ip) {
+        _fun48362: for (var _fun48362_ip = 0;;) switch (_fun48362_ip) {
             case 0:
                 var1 = arg0;
                 var5 = arguments[1];
                 var4 = undefined;
                 if (!(var5 === var4)) {
-                    _fun48304_ip = 15;
-                    continue _fun48304
+                    _fun48362_ip = 15;
+                    continue _fun48362
                 }
             case 12:
                 var5 = 32;
@@ -53,15 +53,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot5;
                 var2 = var2.DM;
                 if (!(var2 !== var3)) {
-                    _fun48304_ip = 124;
-                    continue _fun48304
+                    _fun48362_ip = 124;
+                    continue _fun48362
                 }
             case 37:
                 var2 = _closure1_slot5;
                 var2 = var2.GROUP_DM;
                 if (!(var2 !== var3)) {
-                    _fun48304_ip = 53;
-                    continue _fun48304
+                    _fun48362_ip = 53;
+                    continue _fun48362
                 }
             case 51:
                 return var4;
@@ -105,8 +105,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var1 = var0 == var3;
                 if (var1) {
-                    _fun48304_ip = 230;
-                    continue _fun48304
+                    _fun48362_ip = 230;
+                    continue _fun48362
                 }
             case 214:
                 var2 = var3.getAvatarURL;
@@ -118,22 +118,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getChannelIconURL = var3;
     var1 = function arg0() {
-        _fun48305: for (var _fun48305_ip = 0;;) switch (_fun48305_ip) {
+        _fun48363: for (var _fun48363_ip = 0;;) switch (_fun48363_ip) {
             case 0:
                 var1 = arg0;
                 var3 = var1.type;
                 var2 = _closure1_slot5;
                 var2 = var2.DM;
                 if (!(var2 !== var3)) {
-                    _fun48305_ip = 119;
-                    continue _fun48305
+                    _fun48363_ip = 119;
+                    continue _fun48363
                 }
             case 25:
                 var2 = _closure1_slot5;
                 var2 = var2.GROUP_DM;
                 if (!(var2 !== var3)) {
-                    _fun48305_ip = 43;
-                    continue _fun48305
+                    _fun48363_ip = 43;
+                    continue _fun48363
                 }
             case 39:
                 var2 = undefined;
@@ -181,8 +181,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var1 = var0 != var2;
                 if (!var1) {
-                    _fun48305_ip = 222;
-                    continue _fun48305
+                    _fun48363_ip = 222;
+                    continue _fun48363
                 }
             case 211:
                 var1 = var2.getAvatarSource;
@@ -193,4 +193,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getChannelIconSource = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 1613, 660, 1304, 1417, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 1621, 660, 1304, 1417, 2]);

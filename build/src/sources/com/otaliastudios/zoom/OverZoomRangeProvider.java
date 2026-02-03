@@ -5,16 +5,16 @@ import kotlin.jvm.internal.Intrinsics;
 public interface OverZoomRangeProvider {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f17905a = b.f17908a;
+    public static final b f16873a = b.f16876a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final OverZoomRangeProvider f17906b = new a();
+    public static final OverZoomRangeProvider f16874b = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements OverZoomRangeProvider {
 
         /* renamed from: c  reason: collision with root package name */
-        private final float f17907c = 0.1f;
+        private final float f16875c = 0.1f;
 
         a() {
         }
@@ -22,7 +22,7 @@ public interface OverZoomRangeProvider {
         @Override // com.otaliastudios.zoom.OverZoomRangeProvider
         public float a(ZoomEngine engine, boolean z10) {
             Intrinsics.checkNotNullParameter(engine, "engine");
-            return this.f17907c * (engine.z() - engine.B());
+            return this.f16875c * (engine.z() - engine.B());
         }
     }
 
@@ -30,7 +30,7 @@ public interface OverZoomRangeProvider {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ b f17908a = new b();
+        static final /* synthetic */ b f16876a = new b();
 
         private b() {
         }

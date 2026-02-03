@@ -6,15 +6,15 @@ import ff.r;
 final class l extends b {
 
     /* renamed from: c  reason: collision with root package name */
-    final /* synthetic */ wg.k f38049c;
+    final /* synthetic */ wg.k f37846c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public l(n nVar, wg.k kVar) {
-        this.f38049c = kVar;
+        this.f37846c = kVar;
     }
 
     @Override // mf.b, mf.f
     public final void C0(Status status, lf.b bVar) {
-        r.c(status, bVar, this.f38049c);
+        r.c(status, bVar, this.f37846c);
     }
 }

@@ -17,70 +17,70 @@ import java.util.Set;
 public class g {
 
     /* renamed from: g  reason: collision with root package name */
-    private static boolean f23709g = true;
+    private static boolean f23301g = true;
 
     /* renamed from: a  reason: collision with root package name */
-    private f0 f23710a = null;
+    private f0 f23302a = null;
 
     /* renamed from: b  reason: collision with root package name */
-    private String f23711b = "";
+    private String f23303b = "";
 
     /* renamed from: c  reason: collision with root package name */
-    private String f23712c = "";
+    private String f23304c = "";
 
     /* renamed from: d  reason: collision with root package name */
-    private float f23713d = 96.0f;
+    private float f23305d = 96.0f;
 
     /* renamed from: e  reason: collision with root package name */
-    private b.r f23714e = new b.r();
+    private b.r f23306e = new b.r();
 
     /* renamed from: f  reason: collision with root package name */
-    private Map f23715f = new HashMap();
+    private Map f23307f = new HashMap();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f23716a;
+        static final /* synthetic */ int[] f23308a;
 
         static {
             int[] iArr = new int[d1.values().length];
-            f23716a = iArr;
+            f23308a = iArr;
             try {
                 iArr[d1.px.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f23716a[d1.em.ordinal()] = 2;
+                f23308a[d1.em.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f23716a[d1.ex.ordinal()] = 3;
+                f23308a[d1.ex.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f23716a[d1.in.ordinal()] = 4;
+                f23308a[d1.in.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f23716a[d1.cm.ordinal()] = 5;
+                f23308a[d1.cm.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f23716a[d1.mm.ordinal()] = 6;
+                f23308a[d1.mm.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f23716a[d1.pt.ordinal()] = 7;
+                f23308a[d1.pt.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f23716a[d1.pc.ordinal()] = 8;
+                f23308a[d1.pc.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f23716a[d1.percent.ordinal()] = 9;
+                f23308a[d1.percent.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
         }
@@ -98,16 +98,16 @@ public class g {
     static abstract class a1 extends y0 {
 
         /* renamed from: o  reason: collision with root package name */
-        List f23717o;
+        List f23309o;
 
         /* renamed from: p  reason: collision with root package name */
-        List f23718p;
+        List f23310p;
 
         /* renamed from: q  reason: collision with root package name */
-        List f23719q;
+        List f23311q;
 
         /* renamed from: r  reason: collision with root package name */
-        List f23720r;
+        List f23312r;
 
         a1() {
         }
@@ -117,22 +117,22 @@ public class g {
     static class b0 extends l {
 
         /* renamed from: o  reason: collision with root package name */
-        p f23725o;
+        p f23317o;
 
         /* renamed from: p  reason: collision with root package name */
-        p f23726p;
+        p f23318p;
 
         /* renamed from: q  reason: collision with root package name */
-        p f23727q;
+        p f23319q;
 
         /* renamed from: r  reason: collision with root package name */
-        p f23728r;
+        p f23320r;
 
         /* renamed from: s  reason: collision with root package name */
-        p f23729s;
+        p f23321s;
 
         /* renamed from: t  reason: collision with root package name */
-        p f23730t;
+        p f23322t;
 
         @Override // f6.g.n0
         String n() {
@@ -148,23 +148,23 @@ public class g {
     static class c {
 
         /* renamed from: a  reason: collision with root package name */
-        p f23731a;
+        p f23323a;
 
         /* renamed from: b  reason: collision with root package name */
-        p f23732b;
+        p f23324b;
 
         /* renamed from: c  reason: collision with root package name */
-        p f23733c;
+        p f23325c;
 
         /* renamed from: d  reason: collision with root package name */
-        p f23734d;
+        p f23326d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public c(p pVar, p pVar2, p pVar3, p pVar4) {
-            this.f23731a = pVar;
-            this.f23732b = pVar2;
-            this.f23733c = pVar3;
-            this.f23734d = pVar4;
+            this.f23323a = pVar;
+            this.f23324b = pVar2;
+            this.f23325c = pVar3;
+            this.f23326d = pVar4;
         }
     }
 
@@ -172,23 +172,23 @@ public class g {
     static class c1 extends n0 implements x0 {
 
         /* renamed from: c  reason: collision with root package name */
-        String f23735c;
+        String f23327c;
 
         /* renamed from: d  reason: collision with root package name */
-        private b1 f23736d;
+        private b1 f23328d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public c1(String str) {
-            this.f23735c = str;
+            this.f23327c = str;
         }
 
         @Override // f6.g.x0
         public b1 d() {
-            return this.f23736d;
+            return this.f23328d;
         }
 
         public String toString() {
-            return "TextChild: '" + this.f23735c + "'";
+            return "TextChild: '" + this.f23327c + "'";
         }
     }
 
@@ -196,13 +196,13 @@ public class g {
     static class d extends l {
 
         /* renamed from: o  reason: collision with root package name */
-        p f23737o;
+        p f23329o;
 
         /* renamed from: p  reason: collision with root package name */
-        p f23738p;
+        p f23330p;
 
         /* renamed from: q  reason: collision with root package name */
-        p f23739q;
+        p f23331q;
 
         @Override // f6.g.n0
         String n() {
@@ -228,7 +228,7 @@ public class g {
     static class e extends m implements t {
 
         /* renamed from: p  reason: collision with root package name */
-        Boolean f23751p;
+        Boolean f23343p;
 
         @Override // f6.g.m, f6.g.n0
         String n() {
@@ -241,7 +241,7 @@ public class g {
         p A;
         Integer B;
         b C;
-        EnumC0314g D;
+        EnumC0310g D;
         h E;
         f F;
         Boolean G;
@@ -264,49 +264,49 @@ public class g {
         e X;
 
         /* renamed from: d  reason: collision with root package name */
-        long f23752d = 0;
+        long f23344d = 0;
 
         /* renamed from: e  reason: collision with root package name */
-        o0 f23753e;
+        o0 f23345e;
 
         /* renamed from: i  reason: collision with root package name */
-        a f23754i;
+        a f23346i;
 
         /* renamed from: o  reason: collision with root package name */
-        Float f23755o;
+        Float f23347o;
 
         /* renamed from: p  reason: collision with root package name */
-        o0 f23756p;
+        o0 f23348p;
 
         /* renamed from: q  reason: collision with root package name */
-        Float f23757q;
+        Float f23349q;
 
         /* renamed from: r  reason: collision with root package name */
-        p f23758r;
+        p f23350r;
 
         /* renamed from: s  reason: collision with root package name */
-        c f23759s;
+        c f23351s;
 
         /* renamed from: t  reason: collision with root package name */
-        d f23760t;
+        d f23352t;
 
         /* renamed from: u  reason: collision with root package name */
-        Float f23761u;
+        Float f23353u;
 
         /* renamed from: v  reason: collision with root package name */
-        p[] f23762v;
+        p[] f23354v;
 
         /* renamed from: w  reason: collision with root package name */
-        p f23763w;
+        p f23355w;
 
         /* renamed from: x  reason: collision with root package name */
-        Float f23764x;
+        Float f23356x;
 
         /* renamed from: y  reason: collision with root package name */
-        f f23765y;
+        f f23357y;
 
         /* renamed from: z  reason: collision with root package name */
-        List f23766z;
+        List f23358z;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public enum a {
@@ -351,7 +351,7 @@ public class g {
 
         /* renamed from: f6.g$e0$g  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        public enum EnumC0314g {
+        public enum EnumC0310g {
             None,
             Underline,
             Overline,
@@ -374,28 +374,28 @@ public class g {
         /* JADX INFO: Access modifiers changed from: package-private */
         public static e0 a() {
             e0 e0Var = new e0();
-            e0Var.f23752d = -1L;
-            f fVar = f.f23807e;
-            e0Var.f23753e = fVar;
+            e0Var.f23344d = -1L;
+            f fVar = f.f23399e;
+            e0Var.f23345e = fVar;
             a aVar = a.NonZero;
-            e0Var.f23754i = aVar;
+            e0Var.f23346i = aVar;
             Float valueOf = Float.valueOf(1.0f);
-            e0Var.f23755o = valueOf;
-            e0Var.f23756p = null;
-            e0Var.f23757q = valueOf;
-            e0Var.f23758r = new p(1.0f);
-            e0Var.f23759s = c.Butt;
-            e0Var.f23760t = d.Miter;
-            e0Var.f23761u = Float.valueOf(4.0f);
-            e0Var.f23762v = null;
-            e0Var.f23763w = new p(0.0f);
-            e0Var.f23764x = valueOf;
-            e0Var.f23765y = fVar;
-            e0Var.f23766z = null;
+            e0Var.f23347o = valueOf;
+            e0Var.f23348p = null;
+            e0Var.f23349q = valueOf;
+            e0Var.f23350r = new p(1.0f);
+            e0Var.f23351s = c.Butt;
+            e0Var.f23352t = d.Miter;
+            e0Var.f23353u = Float.valueOf(4.0f);
+            e0Var.f23354v = null;
+            e0Var.f23355w = new p(0.0f);
+            e0Var.f23356x = valueOf;
+            e0Var.f23357y = fVar;
+            e0Var.f23358z = null;
             e0Var.A = new p(12.0f, d1.pt);
             e0Var.B = Integer.valueOf((int) ReactFontManager.TypefaceStyle.NORMAL);
             e0Var.C = b.Normal;
-            e0Var.D = EnumC0314g.None;
+            e0Var.D = EnumC0310g.None;
             e0Var.E = h.LTR;
             e0Var.F = f.Start;
             Boolean bool = Boolean.TRUE;
@@ -431,8 +431,8 @@ public class g {
             this.G = bool;
             this.H = null;
             this.P = null;
-            this.f23764x = valueOf;
-            this.N = f.f23807e;
+            this.f23356x = valueOf;
+            this.N = f.f23399e;
             this.O = valueOf;
             this.R = null;
             this.S = null;
@@ -445,9 +445,9 @@ public class g {
         /* JADX INFO: Access modifiers changed from: protected */
         public Object clone() {
             e0 e0Var = (e0) super.clone();
-            p[] pVarArr = this.f23762v;
+            p[] pVarArr = this.f23354v;
             if (pVarArr != null) {
-                e0Var.f23762v = (p[]) pVarArr.clone();
+                e0Var.f23354v = (p[]) pVarArr.clone();
             }
             return e0Var;
         }
@@ -457,19 +457,19 @@ public class g {
     static class e1 extends m {
 
         /* renamed from: p  reason: collision with root package name */
-        String f23802p;
+        String f23394p;
 
         /* renamed from: q  reason: collision with root package name */
-        p f23803q;
+        p f23395q;
 
         /* renamed from: r  reason: collision with root package name */
-        p f23804r;
+        p f23396r;
 
         /* renamed from: s  reason: collision with root package name */
-        p f23805s;
+        p f23397s;
 
         /* renamed from: t  reason: collision with root package name */
-        p f23806t;
+        p f23398t;
 
         @Override // f6.g.m, f6.g.n0
         String n() {
@@ -481,21 +481,21 @@ public class g {
     static class f extends o0 {
 
         /* renamed from: e  reason: collision with root package name */
-        static final f f23807e = new f(-16777216);
+        static final f f23399e = new f(-16777216);
 
         /* renamed from: i  reason: collision with root package name */
-        static final f f23808i = new f(0);
+        static final f f23400i = new f(0);
 
         /* renamed from: d  reason: collision with root package name */
-        int f23809d;
+        int f23401d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public f(int i10) {
-            this.f23809d = i10;
+            this.f23401d = i10;
         }
 
         public String toString() {
-            return String.format("#%08x", Integer.valueOf(this.f23809d));
+            return String.format("#%08x", Integer.valueOf(this.f23401d));
         }
     }
 
@@ -504,19 +504,19 @@ public class g {
     public static class f0 extends r0 {
 
         /* renamed from: q  reason: collision with root package name */
-        p f23810q;
+        p f23402q;
 
         /* renamed from: r  reason: collision with root package name */
-        p f23811r;
+        p f23403r;
 
         /* renamed from: s  reason: collision with root package name */
-        p f23812s;
+        p f23404s;
 
         /* renamed from: t  reason: collision with root package name */
-        p f23813t;
+        p f23405t;
 
         /* renamed from: u  reason: collision with root package name */
-        public String f23814u;
+        public String f23406u;
 
         @Override // f6.g.n0
         String n() {
@@ -535,17 +535,17 @@ public class g {
 
     /* renamed from: f6.g$g  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    static class C0315g extends o0 {
+    static class C0311g extends o0 {
 
         /* renamed from: d  reason: collision with root package name */
-        private static C0315g f23815d = new C0315g();
+        private static C0311g f23407d = new C0311g();
 
-        private C0315g() {
+        private C0311g() {
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
-        public static C0315g a() {
-            return f23815d;
+        public static C0311g a() {
+            return f23407d;
         }
     }
 
@@ -584,22 +584,22 @@ public class g {
     static abstract class h0 extends k0 implements j0, g0 {
 
         /* renamed from: i  reason: collision with root package name */
-        List f23816i = new ArrayList();
+        List f23408i = new ArrayList();
 
         /* renamed from: j  reason: collision with root package name */
-        Set f23817j = null;
+        Set f23409j = null;
 
         /* renamed from: k  reason: collision with root package name */
-        String f23818k = null;
+        String f23410k = null;
 
         /* renamed from: l  reason: collision with root package name */
-        Set f23819l = null;
+        Set f23411l = null;
 
         /* renamed from: m  reason: collision with root package name */
-        Set f23820m = null;
+        Set f23412m = null;
 
         /* renamed from: n  reason: collision with root package name */
-        Set f23821n = null;
+        Set f23413n = null;
 
         h0() {
         }
@@ -611,57 +611,57 @@ public class g {
 
         @Override // f6.g.g0
         public String b() {
-            return this.f23818k;
+            return this.f23410k;
         }
 
         @Override // f6.g.g0
         public void c(Set set) {
-            this.f23821n = set;
+            this.f23413n = set;
         }
 
         @Override // f6.g.g0
         public void e(Set set) {
-            this.f23817j = set;
+            this.f23409j = set;
         }
 
         @Override // f6.g.g0
         public Set f() {
-            return this.f23817j;
+            return this.f23409j;
         }
 
         @Override // f6.g.j0
         public void g(n0 n0Var) {
-            this.f23816i.add(n0Var);
+            this.f23408i.add(n0Var);
         }
 
         @Override // f6.g.j0
         public List getChildren() {
-            return this.f23816i;
+            return this.f23408i;
         }
 
         @Override // f6.g.g0
         public void h(Set set) {
-            this.f23819l = set;
+            this.f23411l = set;
         }
 
         @Override // f6.g.g0
         public void i(Set set) {
-            this.f23820m = set;
+            this.f23412m = set;
         }
 
         @Override // f6.g.g0
         public void j(String str) {
-            this.f23818k = str;
+            this.f23410k = str;
         }
 
         @Override // f6.g.g0
         public Set l() {
-            return this.f23820m;
+            return this.f23412m;
         }
 
         @Override // f6.g.g0
         public Set m() {
-            return this.f23821n;
+            return this.f23413n;
         }
     }
 
@@ -669,16 +669,16 @@ public class g {
     static class i extends l {
 
         /* renamed from: o  reason: collision with root package name */
-        p f23822o;
+        p f23414o;
 
         /* renamed from: p  reason: collision with root package name */
-        p f23823p;
+        p f23415p;
 
         /* renamed from: q  reason: collision with root package name */
-        p f23824q;
+        p f23416q;
 
         /* renamed from: r  reason: collision with root package name */
-        p f23825r;
+        p f23417r;
 
         @Override // f6.g.n0
         String n() {
@@ -690,71 +690,71 @@ public class g {
     static abstract class i0 extends k0 implements g0 {
 
         /* renamed from: i  reason: collision with root package name */
-        Set f23826i = null;
+        Set f23418i = null;
 
         /* renamed from: j  reason: collision with root package name */
-        String f23827j = null;
+        String f23419j = null;
 
         /* renamed from: k  reason: collision with root package name */
-        Set f23828k = null;
+        Set f23420k = null;
 
         /* renamed from: l  reason: collision with root package name */
-        Set f23829l = null;
+        Set f23421l = null;
 
         /* renamed from: m  reason: collision with root package name */
-        Set f23830m = null;
+        Set f23422m = null;
 
         i0() {
         }
 
         @Override // f6.g.g0
         public Set a() {
-            return this.f23828k;
+            return this.f23420k;
         }
 
         @Override // f6.g.g0
         public String b() {
-            return this.f23827j;
+            return this.f23419j;
         }
 
         @Override // f6.g.g0
         public void c(Set set) {
-            this.f23830m = set;
+            this.f23422m = set;
         }
 
         @Override // f6.g.g0
         public void e(Set set) {
-            this.f23826i = set;
+            this.f23418i = set;
         }
 
         @Override // f6.g.g0
         public Set f() {
-            return this.f23826i;
+            return this.f23418i;
         }
 
         @Override // f6.g.g0
         public void h(Set set) {
-            this.f23828k = set;
+            this.f23420k = set;
         }
 
         @Override // f6.g.g0
         public void i(Set set) {
-            this.f23829l = set;
+            this.f23421l = set;
         }
 
         @Override // f6.g.g0
         public void j(String str) {
-            this.f23827j = str;
+            this.f23419j = str;
         }
 
         @Override // f6.g.g0
         public Set l() {
-            return this.f23829l;
+            return this.f23421l;
         }
 
         @Override // f6.g.g0
         public Set m() {
-            return this.f23830m;
+            return this.f23422m;
         }
     }
 
@@ -762,19 +762,19 @@ public class g {
     static abstract class j extends l0 implements j0 {
 
         /* renamed from: h  reason: collision with root package name */
-        List f23831h = new ArrayList();
+        List f23423h = new ArrayList();
 
         /* renamed from: i  reason: collision with root package name */
-        Boolean f23832i;
+        Boolean f23424i;
 
         /* renamed from: j  reason: collision with root package name */
-        Matrix f23833j;
+        Matrix f23425j;
 
         /* renamed from: k  reason: collision with root package name */
-        k f23834k;
+        k f23426k;
 
         /* renamed from: l  reason: collision with root package name */
-        String f23835l;
+        String f23427l;
 
         j() {
         }
@@ -782,7 +782,7 @@ public class g {
         @Override // f6.g.j0
         public void g(n0 n0Var) {
             if (n0Var instanceof d0) {
-                this.f23831h.add(n0Var);
+                this.f23423h.add(n0Var);
                 return;
             }
             throw new f6.j("Gradient elements cannot contain " + n0Var + " elements.");
@@ -790,7 +790,7 @@ public class g {
 
         @Override // f6.g.j0
         public List getChildren() {
-            return this.f23831h;
+            return this.f23423h;
         }
     }
 
@@ -813,7 +813,7 @@ public class g {
     static abstract class k0 extends l0 {
 
         /* renamed from: h  reason: collision with root package name */
-        b f23840h = null;
+        b f23432h = null;
 
         k0() {
         }
@@ -823,14 +823,14 @@ public class g {
     static abstract class l extends i0 implements n {
 
         /* renamed from: n  reason: collision with root package name */
-        Matrix f23841n;
+        Matrix f23433n;
 
         l() {
         }
 
         @Override // f6.g.n
         public void k(Matrix matrix) {
-            this.f23841n = matrix;
+            this.f23433n = matrix;
         }
     }
 
@@ -839,19 +839,19 @@ public class g {
     public static abstract class l0 extends n0 {
 
         /* renamed from: c  reason: collision with root package name */
-        String f23842c = null;
+        String f23434c = null;
 
         /* renamed from: d  reason: collision with root package name */
-        Boolean f23843d = null;
+        Boolean f23435d = null;
 
         /* renamed from: e  reason: collision with root package name */
-        e0 f23844e = null;
+        e0 f23436e = null;
 
         /* renamed from: f  reason: collision with root package name */
-        e0 f23845f = null;
+        e0 f23437f = null;
 
         /* renamed from: g  reason: collision with root package name */
-        List f23846g = null;
+        List f23438g = null;
 
         l0() {
         }
@@ -865,11 +865,11 @@ public class g {
     static class m extends h0 implements n {
 
         /* renamed from: o  reason: collision with root package name */
-        Matrix f23847o;
+        Matrix f23439o;
 
         @Override // f6.g.n
         public void k(Matrix matrix) {
-            this.f23847o = matrix;
+            this.f23439o = matrix;
         }
 
         @Override // f6.g.n0
@@ -882,16 +882,16 @@ public class g {
     static class m0 extends j {
 
         /* renamed from: m  reason: collision with root package name */
-        p f23848m;
+        p f23440m;
 
         /* renamed from: n  reason: collision with root package name */
-        p f23849n;
+        p f23441n;
 
         /* renamed from: o  reason: collision with root package name */
-        p f23850o;
+        p f23442o;
 
         /* renamed from: p  reason: collision with root package name */
-        p f23851p;
+        p f23443p;
 
         @Override // f6.g.n0
         String n() {
@@ -909,10 +909,10 @@ public class g {
     public static class n0 {
 
         /* renamed from: a  reason: collision with root package name */
-        g f23852a;
+        g f23444a;
 
         /* renamed from: b  reason: collision with root package name */
-        j0 f23853b;
+        j0 f23445b;
 
         n0() {
         }
@@ -925,26 +925,26 @@ public class g {
     static class o extends p0 implements n {
 
         /* renamed from: p  reason: collision with root package name */
-        String f23854p;
+        String f23446p;
 
         /* renamed from: q  reason: collision with root package name */
-        p f23855q;
+        p f23447q;
 
         /* renamed from: r  reason: collision with root package name */
-        p f23856r;
+        p f23448r;
 
         /* renamed from: s  reason: collision with root package name */
-        p f23857s;
+        p f23449s;
 
         /* renamed from: t  reason: collision with root package name */
-        p f23858t;
+        p f23450t;
 
         /* renamed from: u  reason: collision with root package name */
-        Matrix f23859u;
+        Matrix f23451u;
 
         @Override // f6.g.n
         public void k(Matrix matrix) {
-            this.f23859u = matrix;
+            this.f23451u = matrix;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
@@ -965,7 +965,7 @@ public class g {
     public static abstract class p0 extends h0 {
 
         /* renamed from: o  reason: collision with root package name */
-        f6.e f23862o = null;
+        f6.e f23454o = null;
 
         p0() {
         }
@@ -975,16 +975,16 @@ public class g {
     static class q extends l {
 
         /* renamed from: o  reason: collision with root package name */
-        p f23863o;
+        p f23455o;
 
         /* renamed from: p  reason: collision with root package name */
-        p f23864p;
+        p f23456p;
 
         /* renamed from: q  reason: collision with root package name */
-        p f23865q;
+        p f23457q;
 
         /* renamed from: r  reason: collision with root package name */
-        p f23866r;
+        p f23458r;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         @Override // f6.g.n0
@@ -997,19 +997,19 @@ public class g {
     static class q0 extends j {
 
         /* renamed from: m  reason: collision with root package name */
-        p f23867m;
+        p f23459m;
 
         /* renamed from: n  reason: collision with root package name */
-        p f23868n;
+        p f23460n;
 
         /* renamed from: o  reason: collision with root package name */
-        p f23869o;
+        p f23461o;
 
         /* renamed from: p  reason: collision with root package name */
-        p f23870p;
+        p f23462p;
 
         /* renamed from: q  reason: collision with root package name */
-        p f23871q;
+        p f23463q;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         @Override // f6.g.n0
@@ -1022,22 +1022,22 @@ public class g {
     static class r extends r0 implements t {
 
         /* renamed from: q  reason: collision with root package name */
-        boolean f23872q;
+        boolean f23464q;
 
         /* renamed from: r  reason: collision with root package name */
-        p f23873r;
+        p f23465r;
 
         /* renamed from: s  reason: collision with root package name */
-        p f23874s;
+        p f23466s;
 
         /* renamed from: t  reason: collision with root package name */
-        p f23875t;
+        p f23467t;
 
         /* renamed from: u  reason: collision with root package name */
-        p f23876u;
+        p f23468u;
 
         /* renamed from: v  reason: collision with root package name */
-        Float f23877v;
+        Float f23469v;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         @Override // f6.g.n0
@@ -1051,7 +1051,7 @@ public class g {
     public static abstract class r0 extends p0 {
 
         /* renamed from: p  reason: collision with root package name */
-        b f23878p;
+        b f23470p;
 
         r0() {
         }
@@ -1061,22 +1061,22 @@ public class g {
     static class s extends h0 implements t {
 
         /* renamed from: o  reason: collision with root package name */
-        Boolean f23879o;
+        Boolean f23471o;
 
         /* renamed from: p  reason: collision with root package name */
-        Boolean f23880p;
+        Boolean f23472p;
 
         /* renamed from: q  reason: collision with root package name */
-        p f23881q;
+        p f23473q;
 
         /* renamed from: r  reason: collision with root package name */
-        p f23882r;
+        p f23474r;
 
         /* renamed from: s  reason: collision with root package name */
-        p f23883s;
+        p f23475s;
 
         /* renamed from: t  reason: collision with root package name */
-        p f23884t;
+        p f23476t;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         @Override // f6.g.n0
@@ -1110,19 +1110,19 @@ public class g {
     static class u extends o0 {
 
         /* renamed from: d  reason: collision with root package name */
-        String f23885d;
+        String f23477d;
 
         /* renamed from: e  reason: collision with root package name */
-        o0 f23886e;
+        o0 f23478e;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public u(String str, o0 o0Var) {
-            this.f23885d = str;
-            this.f23886e = o0Var;
+            this.f23477d = str;
+            this.f23478e = o0Var;
         }
 
         public String toString() {
-            return this.f23885d + " " + this.f23886e;
+            return this.f23477d + " " + this.f23478e;
         }
     }
 
@@ -1130,14 +1130,14 @@ public class g {
     static class u0 extends y0 implements x0 {
 
         /* renamed from: o  reason: collision with root package name */
-        String f23887o;
+        String f23479o;
 
         /* renamed from: p  reason: collision with root package name */
-        private b1 f23888p;
+        private b1 f23480p;
 
         @Override // f6.g.x0
         public b1 d() {
-            return this.f23888p;
+            return this.f23480p;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
@@ -1147,7 +1147,7 @@ public class g {
         }
 
         public void o(b1 b1Var) {
-            this.f23888p = b1Var;
+            this.f23480p = b1Var;
         }
     }
 
@@ -1155,10 +1155,10 @@ public class g {
     static class v extends l {
 
         /* renamed from: o  reason: collision with root package name */
-        w f23889o;
+        w f23481o;
 
         /* renamed from: p  reason: collision with root package name */
-        Float f23890p;
+        Float f23482p;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         @Override // f6.g.n0
@@ -1171,11 +1171,11 @@ public class g {
     static class v0 extends a1 implements x0 {
 
         /* renamed from: s  reason: collision with root package name */
-        private b1 f23891s;
+        private b1 f23483s;
 
         @Override // f6.g.x0
         public b1 d() {
-            return this.f23891s;
+            return this.f23483s;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
@@ -1185,7 +1185,7 @@ public class g {
         }
 
         public void o(b1 b1Var) {
-            this.f23891s = b1Var;
+            this.f23483s = b1Var;
         }
     }
 
@@ -1193,37 +1193,37 @@ public class g {
     static class w implements x {
 
         /* renamed from: b  reason: collision with root package name */
-        private int f23893b = 0;
+        private int f23485b = 0;
 
         /* renamed from: d  reason: collision with root package name */
-        private int f23895d = 0;
+        private int f23487d = 0;
 
         /* renamed from: a  reason: collision with root package name */
-        private byte[] f23892a = new byte[8];
+        private byte[] f23484a = new byte[8];
 
         /* renamed from: c  reason: collision with root package name */
-        private float[] f23894c = new float[16];
+        private float[] f23486c = new float[16];
 
         private void f(byte b10) {
-            int i10 = this.f23893b;
-            byte[] bArr = this.f23892a;
+            int i10 = this.f23485b;
+            byte[] bArr = this.f23484a;
             if (i10 == bArr.length) {
                 byte[] bArr2 = new byte[bArr.length * 2];
                 System.arraycopy(bArr, 0, bArr2, 0, bArr.length);
-                this.f23892a = bArr2;
+                this.f23484a = bArr2;
             }
-            byte[] bArr3 = this.f23892a;
-            int i11 = this.f23893b;
-            this.f23893b = i11 + 1;
+            byte[] bArr3 = this.f23484a;
+            int i11 = this.f23485b;
+            this.f23485b = i11 + 1;
             bArr3[i11] = b10;
         }
 
         private void g(int i10) {
-            float[] fArr = this.f23894c;
-            if (fArr.length < this.f23895d + i10) {
+            float[] fArr = this.f23486c;
+            if (fArr.length < this.f23487d + i10) {
                 float[] fArr2 = new float[fArr.length * 2];
                 System.arraycopy(fArr, 0, fArr2, 0, fArr.length);
-                this.f23894c = fArr2;
+                this.f23486c = fArr2;
             }
         }
 
@@ -1231,18 +1231,18 @@ public class g {
         public void a(float f10, float f11, float f12, float f13) {
             f((byte) 3);
             g(4);
-            float[] fArr = this.f23894c;
-            int i10 = this.f23895d;
+            float[] fArr = this.f23486c;
+            int i10 = this.f23487d;
             int i11 = i10 + 1;
-            this.f23895d = i11;
+            this.f23487d = i11;
             fArr[i10] = f10;
             int i12 = i10 + 2;
-            this.f23895d = i12;
+            this.f23487d = i12;
             fArr[i11] = f11;
             int i13 = i10 + 3;
-            this.f23895d = i13;
+            this.f23487d = i13;
             fArr[i12] = f12;
-            this.f23895d = i10 + 4;
+            this.f23487d = i10 + 4;
             fArr[i13] = f13;
         }
 
@@ -1250,12 +1250,12 @@ public class g {
         public void b(float f10, float f11) {
             f((byte) 0);
             g(2);
-            float[] fArr = this.f23894c;
-            int i10 = this.f23895d;
+            float[] fArr = this.f23486c;
+            int i10 = this.f23487d;
             int i11 = i10 + 1;
-            this.f23895d = i11;
+            this.f23487d = i11;
             fArr[i10] = f10;
-            this.f23895d = i10 + 2;
+            this.f23487d = i10 + 2;
             fArr[i11] = f11;
         }
 
@@ -1263,24 +1263,24 @@ public class g {
         public void c(float f10, float f11, float f12, float f13, float f14, float f15) {
             f((byte) 2);
             g(6);
-            float[] fArr = this.f23894c;
-            int i10 = this.f23895d;
+            float[] fArr = this.f23486c;
+            int i10 = this.f23487d;
             int i11 = i10 + 1;
-            this.f23895d = i11;
+            this.f23487d = i11;
             fArr[i10] = f10;
             int i12 = i10 + 2;
-            this.f23895d = i12;
+            this.f23487d = i12;
             fArr[i11] = f11;
             int i13 = i10 + 3;
-            this.f23895d = i13;
+            this.f23487d = i13;
             fArr[i12] = f12;
             int i14 = i10 + 4;
-            this.f23895d = i14;
+            this.f23487d = i14;
             fArr[i13] = f13;
             int i15 = i10 + 5;
-            this.f23895d = i15;
+            this.f23487d = i15;
             fArr[i14] = f14;
-            this.f23895d = i10 + 6;
+            this.f23487d = i10 + 6;
             fArr[i15] = f15;
         }
 
@@ -1299,21 +1299,21 @@ public class g {
             }
             f((byte) (i10 | 4 | (z11 ? 1 : 0)));
             g(5);
-            float[] fArr = this.f23894c;
-            int i11 = this.f23895d;
+            float[] fArr = this.f23486c;
+            int i11 = this.f23487d;
             int i12 = i11 + 1;
-            this.f23895d = i12;
+            this.f23487d = i12;
             fArr[i11] = f10;
             int i13 = i11 + 2;
-            this.f23895d = i13;
+            this.f23487d = i13;
             fArr[i12] = f11;
             int i14 = i11 + 3;
-            this.f23895d = i14;
+            this.f23487d = i14;
             fArr[i13] = f12;
             int i15 = i11 + 4;
-            this.f23895d = i15;
+            this.f23487d = i15;
             fArr[i14] = f13;
-            this.f23895d = i11 + 5;
+            this.f23487d = i11 + 5;
             fArr[i15] = f14;
         }
 
@@ -1321,12 +1321,12 @@ public class g {
         public void e(float f10, float f11) {
             f((byte) 1);
             g(2);
-            float[] fArr = this.f23894c;
-            int i10 = this.f23895d;
+            float[] fArr = this.f23486c;
+            int i10 = this.f23487d;
             int i11 = i10 + 1;
-            this.f23895d = i11;
+            this.f23487d = i11;
             fArr[i10] = f10;
-            this.f23895d = i10 + 2;
+            this.f23487d = i10 + 2;
             fArr[i11] = f11;
         }
 
@@ -1335,8 +1335,8 @@ public class g {
             boolean z10;
             boolean z11;
             int i10 = 0;
-            for (int i11 = 0; i11 < this.f23893b; i11++) {
-                byte b10 = this.f23892a[i11];
+            for (int i11 = 0; i11 < this.f23485b; i11++) {
+                byte b10 = this.f23484a[i11];
                 if (b10 != 0) {
                     if (b10 != 1) {
                         if (b10 != 2) {
@@ -1352,32 +1352,32 @@ public class g {
                                     } else {
                                         z11 = false;
                                     }
-                                    float[] fArr = this.f23894c;
+                                    float[] fArr = this.f23486c;
                                     xVar.d(fArr[i10], fArr[i10 + 1], fArr[i10 + 2], z10, z11, fArr[i10 + 3], fArr[i10 + 4]);
                                     i10 += 5;
                                 } else {
                                     xVar.close();
                                 }
                             } else {
-                                float[] fArr2 = this.f23894c;
+                                float[] fArr2 = this.f23486c;
                                 int i12 = i10 + 3;
                                 i10 += 4;
                                 xVar.a(fArr2[i10], fArr2[i10 + 1], fArr2[i10 + 2], fArr2[i12]);
                             }
                         } else {
-                            float[] fArr3 = this.f23894c;
+                            float[] fArr3 = this.f23486c;
                             xVar.c(fArr3[i10], fArr3[i10 + 1], fArr3[i10 + 2], fArr3[i10 + 3], fArr3[i10 + 4], fArr3[i10 + 5]);
                             i10 += 6;
                         }
                     } else {
-                        float[] fArr4 = this.f23894c;
+                        float[] fArr4 = this.f23486c;
                         int i13 = i10 + 1;
                         float f10 = fArr4[i10];
                         i10 += 2;
                         xVar.e(f10, fArr4[i13]);
                     }
                 } else {
-                    float[] fArr5 = this.f23894c;
+                    float[] fArr5 = this.f23486c;
                     int i14 = i10 + 1;
                     float f11 = fArr5[i10];
                     i10 += 2;
@@ -1388,7 +1388,7 @@ public class g {
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public boolean i() {
-            if (this.f23893b == 0) {
+            if (this.f23485b == 0) {
                 return true;
             }
             return false;
@@ -1399,11 +1399,11 @@ public class g {
     static class w0 extends a1 implements b1, n {
 
         /* renamed from: s  reason: collision with root package name */
-        Matrix f23896s;
+        Matrix f23488s;
 
         @Override // f6.g.n
         public void k(Matrix matrix) {
-            this.f23896s = matrix;
+            this.f23488s = matrix;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
@@ -1438,28 +1438,28 @@ public class g {
     static class y extends r0 implements t {
 
         /* renamed from: q  reason: collision with root package name */
-        Boolean f23897q;
+        Boolean f23489q;
 
         /* renamed from: r  reason: collision with root package name */
-        Boolean f23898r;
+        Boolean f23490r;
 
         /* renamed from: s  reason: collision with root package name */
-        Matrix f23899s;
+        Matrix f23491s;
 
         /* renamed from: t  reason: collision with root package name */
-        p f23900t;
+        p f23492t;
 
         /* renamed from: u  reason: collision with root package name */
-        p f23901u;
+        p f23493u;
 
         /* renamed from: v  reason: collision with root package name */
-        p f23902v;
+        p f23494v;
 
         /* renamed from: w  reason: collision with root package name */
-        p f23903w;
+        p f23495w;
 
         /* renamed from: x  reason: collision with root package name */
-        String f23904x;
+        String f23496x;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         @Override // f6.g.n0
@@ -1476,7 +1476,7 @@ public class g {
         @Override // f6.g.h0, f6.g.j0
         public void g(n0 n0Var) {
             if (n0Var instanceof x0) {
-                this.f23816i.add(n0Var);
+                this.f23408i.add(n0Var);
                 return;
             }
             throw new f6.j("Text content elements cannot contain " + n0Var + " elements.");
@@ -1487,7 +1487,7 @@ public class g {
     static class z extends l {
 
         /* renamed from: o  reason: collision with root package name */
-        float[] f23905o;
+        float[] f23497o;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         @Override // f6.g.n0
@@ -1500,17 +1500,17 @@ public class g {
     static class z0 extends y0 implements x0 {
 
         /* renamed from: o  reason: collision with root package name */
-        String f23906o;
+        String f23498o;
 
         /* renamed from: p  reason: collision with root package name */
-        p f23907p;
+        p f23499p;
 
         /* renamed from: q  reason: collision with root package name */
-        private b1 f23908q;
+        private b1 f23500q;
 
         @Override // f6.g.x0
         public b1 d() {
-            return this.f23908q;
+            return this.f23500q;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
@@ -1520,7 +1520,7 @@ public class g {
         }
 
         public void o(b1 b1Var) {
-            this.f23908q = b1Var;
+            this.f23500q = b1Var;
         }
     }
 
@@ -1540,21 +1540,21 @@ public class g {
         d1 d1Var4;
         float f11;
         d1 d1Var5;
-        f0 f0Var = this.f23710a;
-        p pVar = f0Var.f23812s;
-        p pVar2 = f0Var.f23813t;
-        if (pVar != null && !pVar.i() && (d1Var = pVar.f23861e) != (d1Var2 = d1.percent) && d1Var != (d1Var3 = d1.em) && d1Var != (d1Var4 = d1.ex)) {
+        f0 f0Var = this.f23302a;
+        p pVar = f0Var.f23404s;
+        p pVar2 = f0Var.f23405t;
+        if (pVar != null && !pVar.i() && (d1Var = pVar.f23453e) != (d1Var2 = d1.percent) && d1Var != (d1Var3 = d1.em) && d1Var != (d1Var4 = d1.ex)) {
             float b10 = pVar.b(f10);
             if (pVar2 != null) {
-                if (!pVar2.i() && (d1Var5 = pVar2.f23861e) != d1Var2 && d1Var5 != d1Var3 && d1Var5 != d1Var4) {
+                if (!pVar2.i() && (d1Var5 = pVar2.f23453e) != d1Var2 && d1Var5 != d1Var3 && d1Var5 != d1Var4) {
                     f11 = pVar2.b(f10);
                 } else {
                     return new b(-1.0f, -1.0f, -1.0f, -1.0f);
                 }
             } else {
-                b bVar = this.f23710a.f23878p;
+                b bVar = this.f23302a.f23470p;
                 if (bVar != null) {
-                    f11 = (bVar.f23724d * b10) / bVar.f23723c;
+                    f11 = (bVar.f23316d * b10) / bVar.f23315c;
                 } else {
                     f11 = b10;
                 }
@@ -1567,13 +1567,13 @@ public class g {
     private l0 i(j0 j0Var, String str) {
         l0 i10;
         l0 l0Var = (l0) j0Var;
-        if (str.equals(l0Var.f23842c)) {
+        if (str.equals(l0Var.f23434c)) {
             return l0Var;
         }
         for (n0 n0Var : j0Var.getChildren()) {
             if (n0Var instanceof l0) {
                 l0 l0Var2 = (l0) n0Var;
-                if (str.equals(l0Var2.f23842c)) {
+                if (str.equals(l0Var2.f23434c)) {
                     return l0Var2;
                 }
                 if ((n0Var instanceof j0) && (i10 = i((j0) n0Var, str)) != null) {
@@ -1590,35 +1590,35 @@ public class g {
     }
 
     public static g l(InputStream inputStream) {
-        return new f6.k().z(inputStream, f23709g);
+        return new f6.k().z(inputStream, f23301g);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void a(b.r rVar) {
-        this.f23714e.b(rVar);
+        this.f23306e.b(rVar);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void b() {
-        this.f23714e.e(b.u.RenderOptions);
+        this.f23306e.e(b.u.RenderOptions);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public List d() {
-        return this.f23714e.c();
+        return this.f23306e.c();
     }
 
     public float f() {
-        if (this.f23710a != null) {
-            return e(this.f23713d).f23724d;
+        if (this.f23302a != null) {
+            return e(this.f23305d).f23316d;
         }
         throw new IllegalArgumentException("SVG document is empty");
     }
 
     public RectF g() {
-        f0 f0Var = this.f23710a;
+        f0 f0Var = this.f23302a;
         if (f0Var != null) {
-            b bVar = f0Var.f23878p;
+            b bVar = f0Var.f23470p;
             if (bVar == null) {
                 return null;
             }
@@ -1628,8 +1628,8 @@ public class g {
     }
 
     public float h() {
-        if (this.f23710a != null) {
-            return e(this.f23713d).f23723c;
+        if (this.f23302a != null) {
+            return e(this.f23305d).f23315c;
         }
         throw new IllegalArgumentException("SVG document is empty");
     }
@@ -1637,14 +1637,14 @@ public class g {
     /* JADX INFO: Access modifiers changed from: package-private */
     public l0 j(String str) {
         if (str != null && str.length() != 0) {
-            if (str.equals(this.f23710a.f23842c)) {
-                return this.f23710a;
+            if (str.equals(this.f23302a.f23434c)) {
+                return this.f23302a;
             }
-            if (this.f23715f.containsKey(str)) {
-                return (l0) this.f23715f.get(str);
+            if (this.f23307f.containsKey(str)) {
+                return (l0) this.f23307f.get(str);
             }
-            l0 i10 = i(this.f23710a, str);
-            this.f23715f.put(str, i10);
+            l0 i10 = i(this.f23302a, str);
+            this.f23307f.put(str, i10);
             return i10;
         }
         return null;
@@ -1652,12 +1652,12 @@ public class g {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f0 m() {
-        return this.f23710a;
+        return this.f23302a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean n() {
-        return !this.f23714e.d();
+        return !this.f23306e.d();
     }
 
     public void o(Canvas canvas, f6.f fVar) {
@@ -1667,7 +1667,7 @@ public class g {
         if (!fVar.g()) {
             fVar.h(0.0f, 0.0f, canvas.getWidth(), canvas.getHeight());
         }
-        new f6.h(canvas, this.f23713d).G0(this, fVar);
+        new f6.h(canvas, this.f23305d).G0(this, fVar);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -1684,31 +1684,31 @@ public class g {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void q(String str) {
-        this.f23712c = str;
+        this.f23304c = str;
     }
 
     public void r(String str) {
-        f0 f0Var = this.f23710a;
+        f0 f0Var = this.f23302a;
         if (f0Var != null) {
-            f0Var.f23813t = f6.k.o0(str);
+            f0Var.f23405t = f6.k.o0(str);
             return;
         }
         throw new IllegalArgumentException("SVG document is empty");
     }
 
     public void s(float f10, float f11, float f12, float f13) {
-        f0 f0Var = this.f23710a;
+        f0 f0Var = this.f23302a;
         if (f0Var != null) {
-            f0Var.f23878p = new b(f10, f11, f12, f13);
+            f0Var.f23470p = new b(f10, f11, f12, f13);
             return;
         }
         throw new IllegalArgumentException("SVG document is empty");
     }
 
     public void t(String str) {
-        f0 f0Var = this.f23710a;
+        f0 f0Var = this.f23302a;
         if (f0Var != null) {
-            f0Var.f23812s = f6.k.o0(str);
+            f0Var.f23404s = f6.k.o0(str);
             return;
         }
         throw new IllegalArgumentException("SVG document is empty");
@@ -1716,12 +1716,12 @@ public class g {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void u(f0 f0Var) {
-        this.f23710a = f0Var;
+        this.f23302a = f0Var;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void v(String str) {
-        this.f23711b = str;
+        this.f23303b = str;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -1729,114 +1729,114 @@ public class g {
     public static class p implements Cloneable {
 
         /* renamed from: d  reason: collision with root package name */
-        float f23860d;
+        float f23452d;
 
         /* renamed from: e  reason: collision with root package name */
-        d1 f23861e;
+        d1 f23453e;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public p(float f10, d1 d1Var) {
-            this.f23860d = f10;
-            this.f23861e = d1Var;
+            this.f23452d = f10;
+            this.f23453e = d1Var;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public float a() {
-            return this.f23860d;
+            return this.f23452d;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public float b(float f10) {
-            int i10 = a.f23716a[this.f23861e.ordinal()];
+            int i10 = a.f23308a[this.f23453e.ordinal()];
             if (i10 != 1) {
                 switch (i10) {
                     case 4:
-                        return this.f23860d * f10;
+                        return this.f23452d * f10;
                     case 5:
-                        return (this.f23860d * f10) / 2.54f;
+                        return (this.f23452d * f10) / 2.54f;
                     case 6:
-                        return (this.f23860d * f10) / 25.4f;
+                        return (this.f23452d * f10) / 25.4f;
                     case 7:
-                        return (this.f23860d * f10) / 72.0f;
+                        return (this.f23452d * f10) / 72.0f;
                     case 8:
-                        return (this.f23860d * f10) / 6.0f;
+                        return (this.f23452d * f10) / 6.0f;
                     default:
-                        return this.f23860d;
+                        return this.f23452d;
                 }
             }
-            return this.f23860d;
+            return this.f23452d;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public float c(f6.h hVar) {
-            if (this.f23861e == d1.percent) {
+            if (this.f23453e == d1.percent) {
                 b S = hVar.S();
                 if (S == null) {
-                    return this.f23860d;
+                    return this.f23452d;
                 }
-                float f10 = S.f23723c;
-                float f11 = S.f23724d;
+                float f10 = S.f23315c;
+                float f11 = S.f23316d;
                 if (f10 == f11) {
-                    return (this.f23860d * f10) / 100.0f;
+                    return (this.f23452d * f10) / 100.0f;
                 }
-                return (this.f23860d * ((float) (Math.sqrt((f10 * f10) + (f11 * f11)) / 1.414213562373095d))) / 100.0f;
+                return (this.f23452d * ((float) (Math.sqrt((f10 * f10) + (f11 * f11)) / 1.414213562373095d))) / 100.0f;
             }
             return e(hVar);
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public float d(f6.h hVar, float f10) {
-            if (this.f23861e == d1.percent) {
-                return (this.f23860d * f10) / 100.0f;
+            if (this.f23453e == d1.percent) {
+                return (this.f23452d * f10) / 100.0f;
             }
             return e(hVar);
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public float e(f6.h hVar) {
-            switch (a.f23716a[this.f23861e.ordinal()]) {
+            switch (a.f23308a[this.f23453e.ordinal()]) {
                 case 1:
-                    return this.f23860d;
+                    return this.f23452d;
                 case 2:
-                    return this.f23860d * hVar.Q();
+                    return this.f23452d * hVar.Q();
                 case 3:
-                    return this.f23860d * hVar.R();
+                    return this.f23452d * hVar.R();
                 case 4:
-                    return this.f23860d * hVar.T();
+                    return this.f23452d * hVar.T();
                 case 5:
-                    return (this.f23860d * hVar.T()) / 2.54f;
+                    return (this.f23452d * hVar.T()) / 2.54f;
                 case 6:
-                    return (this.f23860d * hVar.T()) / 25.4f;
+                    return (this.f23452d * hVar.T()) / 25.4f;
                 case 7:
-                    return (this.f23860d * hVar.T()) / 72.0f;
+                    return (this.f23452d * hVar.T()) / 72.0f;
                 case 8:
-                    return (this.f23860d * hVar.T()) / 6.0f;
+                    return (this.f23452d * hVar.T()) / 6.0f;
                 case 9:
                     b S = hVar.S();
                     if (S == null) {
-                        return this.f23860d;
+                        return this.f23452d;
                     }
-                    return (this.f23860d * S.f23723c) / 100.0f;
+                    return (this.f23452d * S.f23315c) / 100.0f;
                 default:
-                    return this.f23860d;
+                    return this.f23452d;
             }
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public float f(f6.h hVar) {
-            if (this.f23861e == d1.percent) {
+            if (this.f23453e == d1.percent) {
                 b S = hVar.S();
                 if (S == null) {
-                    return this.f23860d;
+                    return this.f23452d;
                 }
-                return (this.f23860d * S.f23724d) / 100.0f;
+                return (this.f23452d * S.f23316d) / 100.0f;
             }
             return e(hVar);
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public boolean g() {
-            if (this.f23860d < 0.0f) {
+            if (this.f23452d < 0.0f) {
                 return true;
             }
             return false;
@@ -1844,20 +1844,20 @@ public class g {
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public boolean i() {
-            if (this.f23860d == 0.0f) {
+            if (this.f23452d == 0.0f) {
                 return true;
             }
             return false;
         }
 
         public String toString() {
-            return String.valueOf(this.f23860d) + this.f23861e;
+            return String.valueOf(this.f23452d) + this.f23453e;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public p(float f10) {
-            this.f23860d = f10;
-            this.f23861e = d1.px;
+            this.f23452d = f10;
+            this.f23453e = d1.px;
         }
     }
 
@@ -1866,23 +1866,23 @@ public class g {
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        float f23721a;
+        float f23313a;
 
         /* renamed from: b  reason: collision with root package name */
-        float f23722b;
+        float f23314b;
 
         /* renamed from: c  reason: collision with root package name */
-        float f23723c;
+        float f23315c;
 
         /* renamed from: d  reason: collision with root package name */
-        float f23724d;
+        float f23316d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public b(float f10, float f11, float f12, float f13) {
-            this.f23721a = f10;
-            this.f23722b = f11;
-            this.f23723c = f12;
-            this.f23724d = f13;
+            this.f23313a = f10;
+            this.f23314b = f11;
+            this.f23315c = f12;
+            this.f23316d = f13;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
@@ -1892,46 +1892,46 @@ public class g {
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public float b() {
-            return this.f23721a + this.f23723c;
+            return this.f23313a + this.f23315c;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public float c() {
-            return this.f23722b + this.f23724d;
+            return this.f23314b + this.f23316d;
         }
 
         RectF d() {
-            return new RectF(this.f23721a, this.f23722b, b(), c());
+            return new RectF(this.f23313a, this.f23314b, b(), c());
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public void e(b bVar) {
-            float f10 = bVar.f23721a;
-            if (f10 < this.f23721a) {
-                this.f23721a = f10;
+            float f10 = bVar.f23313a;
+            if (f10 < this.f23313a) {
+                this.f23313a = f10;
             }
-            float f11 = bVar.f23722b;
-            if (f11 < this.f23722b) {
-                this.f23722b = f11;
+            float f11 = bVar.f23314b;
+            if (f11 < this.f23314b) {
+                this.f23314b = f11;
             }
             if (bVar.b() > b()) {
-                this.f23723c = bVar.b() - this.f23721a;
+                this.f23315c = bVar.b() - this.f23313a;
             }
             if (bVar.c() > c()) {
-                this.f23724d = bVar.c() - this.f23722b;
+                this.f23316d = bVar.c() - this.f23314b;
             }
         }
 
         public String toString() {
-            return "[" + this.f23721a + " " + this.f23722b + " " + this.f23723c + " " + this.f23724d + "]";
+            return "[" + this.f23313a + " " + this.f23314b + " " + this.f23315c + " " + this.f23316d + "]";
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public b(b bVar) {
-            this.f23721a = bVar.f23721a;
-            this.f23722b = bVar.f23722b;
-            this.f23723c = bVar.f23723c;
-            this.f23724d = bVar.f23724d;
+            this.f23313a = bVar.f23313a;
+            this.f23314b = bVar.f23314b;
+            this.f23315c = bVar.f23315c;
+            this.f23316d = bVar.f23316d;
         }
     }
 
@@ -1956,7 +1956,7 @@ public class g {
     static class d0 extends l0 implements j0 {
 
         /* renamed from: h  reason: collision with root package name */
-        Float f23740h;
+        Float f23332h;
 
         @Override // f6.g.j0
         public List getChildren() {

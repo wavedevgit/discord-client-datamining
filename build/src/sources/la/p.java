@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 public class p implements Supplier {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final long f37161a = TimeUnit.MINUTES.toMillis(5);
+    private static final long f36630a = TimeUnit.MINUTES.toMillis(5);
 
     private int b() {
         int min = (int) Math.min(Runtime.getRuntime().maxMemory(), 2147483647L);
@@ -24,6 +24,6 @@ public class p implements Supplier {
     /* renamed from: a */
     public MemoryCacheParams get() {
         int b10 = b();
-        return new MemoryCacheParams(b10, Integer.MAX_VALUE, b10, Integer.MAX_VALUE, b10 / 8, f37161a);
+        return new MemoryCacheParams(b10, Integer.MAX_VALUE, b10, Integer.MAX_VALUE, b10 / 8, f36630a);
     }
 }

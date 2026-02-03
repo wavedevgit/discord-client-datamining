@@ -10,149 +10,149 @@ import okio.Timeout;
 public final class r implements Source {
 
     /* renamed from: s  reason: collision with root package name */
-    static final ByteString f18580s = ByteString.h("[]{}\"'/#");
+    static final ByteString f17562s = ByteString.h("[]{}\"'/#");
 
     /* renamed from: t  reason: collision with root package name */
-    static final ByteString f18581t = ByteString.h("'\\");
+    static final ByteString f17563t = ByteString.h("'\\");
 
     /* renamed from: u  reason: collision with root package name */
-    static final ByteString f18582u = ByteString.h("\"\\");
+    static final ByteString f17564u = ByteString.h("\"\\");
 
     /* renamed from: v  reason: collision with root package name */
-    static final ByteString f18583v = ByteString.h("\r\n");
+    static final ByteString f17565v = ByteString.h("\r\n");
 
     /* renamed from: w  reason: collision with root package name */
-    static final ByteString f18584w = ByteString.h("*");
+    static final ByteString f17566w = ByteString.h("*");
 
     /* renamed from: x  reason: collision with root package name */
-    static final ByteString f18585x = ByteString.f44508p;
+    static final ByteString f17567x = ByteString.f44308p;
 
     /* renamed from: d  reason: collision with root package name */
-    private final BufferedSource f18586d;
+    private final BufferedSource f17568d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Buffer f18587e;
+    private final Buffer f17569e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Buffer f18588i;
+    private final Buffer f17570i;
 
     /* renamed from: o  reason: collision with root package name */
-    private ByteString f18589o;
+    private ByteString f17571o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f18590p;
+    private int f17572p;
 
     /* renamed from: q  reason: collision with root package name */
-    private long f18591q = 0;
+    private long f17573q = 0;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f18592r = false;
+    private boolean f17574r = false;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public r(BufferedSource bufferedSource, Buffer buffer, ByteString byteString, int i10) {
-        this.f18586d = bufferedSource;
-        this.f18587e = bufferedSource.e();
-        this.f18588i = buffer;
-        this.f18589o = byteString;
-        this.f18590p = i10;
+        this.f17568d = bufferedSource;
+        this.f17569e = bufferedSource.e();
+        this.f17570i = buffer;
+        this.f17571o = byteString;
+        this.f17572p = i10;
     }
 
     private void a(long j10) {
         while (true) {
-            long j11 = this.f18591q;
+            long j11 = this.f17573q;
             if (j11 < j10) {
-                ByteString byteString = this.f18589o;
-                ByteString byteString2 = f18585x;
+                ByteString byteString = this.f17571o;
+                ByteString byteString2 = f17567x;
                 if (byteString != byteString2) {
-                    if (j11 == this.f18587e.size()) {
-                        if (this.f18591q <= 0) {
-                            this.f18586d.U0(1L);
+                    if (j11 == this.f17569e.size()) {
+                        if (this.f17573q <= 0) {
+                            this.f17568d.T0(1L);
                         } else {
                             return;
                         }
                     }
-                    long K0 = this.f18587e.K0(this.f18589o, this.f18591q);
-                    if (K0 == -1) {
-                        this.f18591q = this.f18587e.size();
+                    long F0 = this.f17569e.F0(this.f17571o, this.f17573q);
+                    if (F0 == -1) {
+                        this.f17573q = this.f17569e.size();
                     } else {
-                        byte G0 = this.f18587e.G0(K0);
-                        ByteString byteString3 = this.f18589o;
-                        ByteString byteString4 = f18580s;
+                        byte D0 = this.f17569e.D0(F0);
+                        ByteString byteString3 = this.f17571o;
+                        ByteString byteString4 = f17562s;
                         if (byteString3 == byteString4) {
-                            if (G0 != 34) {
-                                if (G0 != 35) {
-                                    if (G0 != 39) {
-                                        if (G0 != 47) {
-                                            if (G0 != 91) {
-                                                if (G0 != 93) {
-                                                    if (G0 != 123) {
-                                                        if (G0 != 125) {
+                            if (D0 != 34) {
+                                if (D0 != 35) {
+                                    if (D0 != 39) {
+                                        if (D0 != 47) {
+                                            if (D0 != 91) {
+                                                if (D0 != 93) {
+                                                    if (D0 != 123) {
+                                                        if (D0 != 125) {
                                                         }
                                                     }
                                                 }
-                                                int i10 = this.f18590p - 1;
-                                                this.f18590p = i10;
+                                                int i10 = this.f17572p - 1;
+                                                this.f17572p = i10;
                                                 if (i10 == 0) {
-                                                    this.f18589o = byteString2;
+                                                    this.f17571o = byteString2;
                                                 }
-                                                this.f18591q = K0 + 1;
+                                                this.f17573q = F0 + 1;
                                             }
-                                            this.f18590p++;
-                                            this.f18591q = K0 + 1;
+                                            this.f17572p++;
+                                            this.f17573q = F0 + 1;
                                         } else {
-                                            long j12 = 2 + K0;
-                                            this.f18586d.U0(j12);
-                                            long j13 = K0 + 1;
-                                            byte G02 = this.f18587e.G0(j13);
-                                            if (G02 == 47) {
-                                                this.f18589o = f18583v;
-                                                this.f18591q = j12;
-                                            } else if (G02 == 42) {
-                                                this.f18589o = f18584w;
-                                                this.f18591q = j12;
+                                            long j12 = 2 + F0;
+                                            this.f17568d.T0(j12);
+                                            long j13 = F0 + 1;
+                                            byte D02 = this.f17569e.D0(j13);
+                                            if (D02 == 47) {
+                                                this.f17571o = f17565v;
+                                                this.f17573q = j12;
+                                            } else if (D02 == 42) {
+                                                this.f17571o = f17566w;
+                                                this.f17573q = j12;
                                             } else {
-                                                this.f18591q = j13;
+                                                this.f17573q = j13;
                                             }
                                         }
                                     } else {
-                                        this.f18589o = f18581t;
-                                        this.f18591q = K0 + 1;
+                                        this.f17571o = f17563t;
+                                        this.f17573q = F0 + 1;
                                     }
                                 } else {
-                                    this.f18589o = f18583v;
-                                    this.f18591q = K0 + 1;
+                                    this.f17571o = f17565v;
+                                    this.f17573q = F0 + 1;
                                 }
                             } else {
-                                this.f18589o = f18582u;
-                                this.f18591q = K0 + 1;
+                                this.f17571o = f17564u;
+                                this.f17573q = F0 + 1;
                             }
-                        } else if (byteString3 != f18581t && byteString3 != f18582u) {
-                            if (byteString3 == f18584w) {
-                                long j14 = 2 + K0;
-                                this.f18586d.U0(j14);
-                                long j15 = K0 + 1;
-                                if (this.f18587e.G0(j15) == 47) {
-                                    this.f18591q = j14;
-                                    this.f18589o = byteString4;
+                        } else if (byteString3 != f17563t && byteString3 != f17564u) {
+                            if (byteString3 == f17566w) {
+                                long j14 = 2 + F0;
+                                this.f17568d.T0(j14);
+                                long j15 = F0 + 1;
+                                if (this.f17569e.D0(j15) == 47) {
+                                    this.f17573q = j14;
+                                    this.f17571o = byteString4;
                                 } else {
-                                    this.f18591q = j15;
+                                    this.f17573q = j15;
                                 }
-                            } else if (byteString3 == f18583v) {
-                                this.f18591q = K0 + 1;
-                                this.f18589o = byteString4;
+                            } else if (byteString3 == f17565v) {
+                                this.f17573q = F0 + 1;
+                                this.f17571o = byteString4;
                             } else {
                                 throw new AssertionError();
                             }
-                        } else if (G0 == 92) {
-                            long j16 = K0 + 2;
-                            this.f18586d.U0(j16);
-                            this.f18591q = j16;
+                        } else if (D0 == 92) {
+                            long j16 = F0 + 2;
+                            this.f17568d.T0(j16);
+                            this.f17573q = j16;
                         } else {
-                            if (this.f18590p > 0) {
+                            if (this.f17572p > 0) {
                                 byteString2 = byteString4;
                             }
-                            this.f18589o = byteString2;
-                            this.f18591q = K0 + 1;
+                            this.f17571o = byteString2;
+                            this.f17573q = F0 + 1;
                         }
                     }
                 } else {
@@ -166,27 +166,27 @@ public final class r implements Source {
 
     @Override // okio.Source, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f18592r = true;
+        this.f17574r = true;
     }
 
     public void h() {
-        this.f18592r = true;
-        while (this.f18589o != f18585x) {
+        this.f17574r = true;
+        while (this.f17571o != f17567x) {
             a(8192L);
-            this.f18586d.skip(this.f18591q);
+            this.f17568d.skip(this.f17573q);
         }
     }
 
     @Override // okio.Source
     public long read(Buffer buffer, long j10) {
-        if (!this.f18592r) {
+        if (!this.f17574r) {
             if (j10 == 0) {
                 return 0L;
             }
-            if (!this.f18588i.o1()) {
-                long read = this.f18588i.read(buffer, j10);
+            if (!this.f17570i.o1()) {
+                long read = this.f17570i.read(buffer, j10);
                 long j11 = j10 - read;
-                if (!this.f18587e.o1()) {
+                if (!this.f17569e.o1()) {
                     long read2 = read(buffer, j11);
                     if (read2 != -1) {
                         return read2 + read;
@@ -195,16 +195,16 @@ public final class r implements Source {
                 return read;
             }
             a(j10);
-            long j12 = this.f18591q;
+            long j12 = this.f17573q;
             if (j12 == 0) {
-                if (this.f18589o == f18585x) {
+                if (this.f17571o == f17567x) {
                     return -1L;
                 }
                 throw new AssertionError();
             }
             long min = Math.min(j10, j12);
-            buffer.v0(this.f18587e, min);
-            this.f18591q -= min;
+            buffer.t0(this.f17569e, min);
+            this.f17573q -= min;
             return min;
         }
         throw new IllegalStateException("closed");
@@ -212,6 +212,6 @@ public final class r implements Source {
 
     @Override // okio.Source
     public Timeout timeout() {
-        return this.f18586d.timeout();
+        return this.f17568d.timeout();
     }
 }

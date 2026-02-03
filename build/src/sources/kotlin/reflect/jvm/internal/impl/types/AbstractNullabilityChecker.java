@@ -92,12 +92,12 @@ public final class AbstractNullabilityChecker {
                 } else {
                     TypeSystemContext typeSystemContext2 = typeCheckerState.getTypeSystemContext();
                     for (KotlinTypeMarker kotlinTypeMarker : typeSystemContext2.supertypes(typeSystemContext2.typeConstructor(pop))) {
-                        RigidTypeMarker mo1202transformType = supertypesPolicy2.mo1202transformType(typeCheckerState, kotlinTypeMarker);
-                        if ((typeSystemContext.isClassType(mo1202transformType) && !typeSystemContext.isMarkedNullable(mo1202transformType)) || typeSystemContext.isDefinitelyNotNullType(mo1202transformType)) {
+                        RigidTypeMarker mo1199transformType = supertypesPolicy2.mo1199transformType(typeCheckerState, kotlinTypeMarker);
+                        if ((typeSystemContext.isClassType(mo1199transformType) && !typeSystemContext.isMarkedNullable(mo1199transformType)) || typeSystemContext.isDefinitelyNotNullType(mo1199transformType)) {
                             typeCheckerState.clear();
                             return true;
                         }
-                        supertypesDeque.add(mo1202transformType);
+                        supertypesDeque.add(mo1199transformType);
                     }
                     continue;
                 }
@@ -139,12 +139,12 @@ public final class AbstractNullabilityChecker {
                 } else {
                     TypeSystemContext typeSystemContext2 = state.getTypeSystemContext();
                     for (KotlinTypeMarker kotlinTypeMarker : typeSystemContext2.supertypes(typeSystemContext2.typeConstructor(pop))) {
-                        RigidTypeMarker mo1202transformType = supertypesPolicy.mo1202transformType(state, kotlinTypeMarker);
-                        if (INSTANCE.a(state, mo1202transformType, end)) {
+                        RigidTypeMarker mo1199transformType = supertypesPolicy.mo1199transformType(state, kotlinTypeMarker);
+                        if (INSTANCE.a(state, mo1199transformType, end)) {
                             state.clear();
                             return true;
                         }
-                        supertypesDeque.add(mo1202transformType);
+                        supertypesDeque.add(mo1199transformType);
                     }
                     continue;
                 }

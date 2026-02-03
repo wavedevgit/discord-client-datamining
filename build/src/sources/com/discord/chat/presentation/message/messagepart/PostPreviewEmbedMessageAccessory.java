@@ -71,7 +71,7 @@ public final class PostPreviewEmbedMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof PostPreviewEmbedMessageAccessory) {
             PostPreviewEmbedMessageAccessory postPreviewEmbedMessageAccessory = (PostPreviewEmbedMessageAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, postPreviewEmbedMessageAccessory.messageId) && Intrinsics.areEqual(this.postPreviewEmbed, postPreviewEmbedMessageAccessory.postPreviewEmbed) && this.index == postPreviewEmbedMessageAccessory.index && Intrinsics.areEqual(this.spoilerAttributes, postPreviewEmbedMessageAccessory.spoilerAttributes);
+            return MessageId.m1089equalsimpl0(this.messageId, postPreviewEmbedMessageAccessory.messageId) && Intrinsics.areEqual(this.postPreviewEmbed, postPreviewEmbedMessageAccessory.postPreviewEmbed) && this.index == postPreviewEmbedMessageAccessory.index && Intrinsics.areEqual(this.spoilerAttributes, postPreviewEmbedMessageAccessory.spoilerAttributes);
         }
         return false;
     }
@@ -97,18 +97,18 @@ public final class PostPreviewEmbedMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        int m1091hashCodeimpl = ((((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.postPreviewEmbed.hashCode()) * 31) + Integer.hashCode(this.index)) * 31;
+        int m1090hashCodeimpl = ((((MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.postPreviewEmbed.hashCode()) * 31) + Integer.hashCode(this.index)) * 31;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
-        return m1091hashCodeimpl + (spoilerAttributes == null ? 0 : spoilerAttributes.hashCode());
+        return m1090hashCodeimpl + (spoilerAttributes == null ? 0 : spoilerAttributes.hashCode());
     }
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         PostPreviewEmbed postPreviewEmbed = this.postPreviewEmbed;
         int i10 = this.index;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
-        return "PostPreviewEmbedMessageAccessory(messageId=" + m1093toStringimpl + ", postPreviewEmbed=" + postPreviewEmbed + ", index=" + i10 + ", spoilerAttributes=" + spoilerAttributes + ")";
+        return "PostPreviewEmbedMessageAccessory(messageId=" + m1092toStringimpl + ", postPreviewEmbed=" + postPreviewEmbed + ", index=" + i10 + ", spoilerAttributes=" + spoilerAttributes + ")";
     }
 
     public /* synthetic */ PostPreviewEmbedMessageAccessory(String str, PostPreviewEmbed postPreviewEmbed, int i10, SpoilerAttributes spoilerAttributes, int i11, DefaultConstructorMarker defaultConstructorMarker) {

@@ -5,23 +5,23 @@ import ui.c;
 final class b4 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final b4 f40859a = new b4();
+    static final b4 f40898a = new b4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f40860b;
+    private static final ui.c f40899b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f40861c;
+    private static final ui.c f40900c;
 
     static {
         c.b a10 = ui.c.a("deviceInfos");
         f fVar = new f();
         fVar.a(1);
-        f40860b = a10.b(fVar.b()).a();
+        f40899b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("errorInfo");
         f fVar2 = new f();
         fVar2.a(2);
-        f40861c = a11.b(fVar2.b()).a();
+        f40900c = a11.b(fVar2.b()).a();
     }
 
     private b4() {

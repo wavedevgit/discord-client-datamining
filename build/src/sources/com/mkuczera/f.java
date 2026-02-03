@@ -5,17 +5,17 @@ import android.os.Vibrator;
 public class f implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    int f17896a;
+    int f16864a;
 
     public f(int i10) {
-        this.f17896a = i10;
+        this.f16864a = i10;
     }
 
     @Override // com.mkuczera.b
     public void a(Vibrator vibrator) {
         try {
             if (vibrator.hasVibrator()) {
-                vibrator.vibrate(this.f17896a);
+                vibrator.vibrate(this.f16864a);
             }
         } catch (Exception unused) {
         }

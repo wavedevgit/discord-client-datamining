@@ -14,37 +14,37 @@ import rc.u;
 public abstract class a implements r {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ArrayList f47371d = new ArrayList(1);
+    private final ArrayList f47521d = new ArrayList(1);
 
     /* renamed from: e  reason: collision with root package name */
-    private final HashSet f47372e = new HashSet(1);
+    private final HashSet f47522e = new HashSet(1);
 
     /* renamed from: i  reason: collision with root package name */
-    private final y.a f47373i = new y.a();
+    private final y.a f47523i = new y.a();
 
     /* renamed from: o  reason: collision with root package name */
-    private final u.a f47374o = new u.a();
+    private final u.a f47524o = new u.a();
 
     /* renamed from: p  reason: collision with root package name */
-    private Looper f47375p;
+    private Looper f47525p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Timeline f47376q;
+    private Timeline f47526q;
 
     /* renamed from: r  reason: collision with root package name */
-    private t1 f47377r;
+    private t1 f47527r;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final boolean A() {
-        return !this.f47372e.isEmpty();
+        return !this.f47522e.isEmpty();
     }
 
     protected abstract void B(le.c0 c0Var);
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void C(Timeline timeline) {
-        this.f47376q = timeline;
-        Iterator it = this.f47371d.iterator();
+        this.f47526q = timeline;
+        Iterator it = this.f47521d.iterator();
         while (it.hasNext()) {
             ((r.c) it.next()).a(this, timeline);
         }
@@ -54,12 +54,12 @@ public abstract class a implements r {
 
     @Override // qd.r
     public final void a(r.c cVar) {
-        this.f47371d.remove(cVar);
-        if (this.f47371d.isEmpty()) {
-            this.f47375p = null;
-            this.f47376q = null;
-            this.f47377r = null;
-            this.f47372e.clear();
+        this.f47521d.remove(cVar);
+        if (this.f47521d.isEmpty()) {
+            this.f47525p = null;
+            this.f47526q = null;
+            this.f47527r = null;
+            this.f47522e.clear();
             D();
             return;
         }
@@ -68,33 +68,33 @@ public abstract class a implements r {
 
     @Override // qd.r
     public final void d(rc.u uVar) {
-        this.f47374o.n(uVar);
+        this.f47524o.n(uVar);
     }
 
     @Override // qd.r
     public final void e(Handler handler, rc.u uVar) {
         ne.a.e(handler);
         ne.a.e(uVar);
-        this.f47374o.g(handler, uVar);
+        this.f47524o.g(handler, uVar);
     }
 
     @Override // qd.r
     public final void g(Handler handler, y yVar) {
         ne.a.e(handler);
         ne.a.e(yVar);
-        this.f47373i.g(handler, yVar);
+        this.f47523i.g(handler, yVar);
     }
 
     @Override // qd.r
     public final void k(y yVar) {
-        this.f47373i.v(yVar);
+        this.f47523i.v(yVar);
     }
 
     @Override // qd.r
     public final void m(r.c cVar) {
-        boolean isEmpty = this.f47372e.isEmpty();
-        this.f47372e.remove(cVar);
-        if (!isEmpty && this.f47372e.isEmpty()) {
+        boolean isEmpty = this.f47522e.isEmpty();
+        this.f47522e.remove(cVar);
+        if (!isEmpty && this.f47522e.isEmpty()) {
             x();
         }
     }
@@ -103,19 +103,19 @@ public abstract class a implements r {
     public final void r(r.c cVar, le.c0 c0Var, t1 t1Var) {
         boolean z10;
         Looper myLooper = Looper.myLooper();
-        Looper looper = this.f47375p;
+        Looper looper = this.f47525p;
         if (looper != null && looper != myLooper) {
             z10 = false;
         } else {
             z10 = true;
         }
         ne.a.a(z10);
-        this.f47377r = t1Var;
-        Timeline timeline = this.f47376q;
-        this.f47371d.add(cVar);
-        if (this.f47375p == null) {
-            this.f47375p = myLooper;
-            this.f47372e.add(cVar);
+        this.f47527r = t1Var;
+        Timeline timeline = this.f47526q;
+        this.f47521d.add(cVar);
+        if (this.f47525p == null) {
+            this.f47525p = myLooper;
+            this.f47522e.add(cVar);
             B(c0Var);
         } else if (timeline != null) {
             s(cVar);
@@ -125,9 +125,9 @@ public abstract class a implements r {
 
     @Override // qd.r
     public final void s(r.c cVar) {
-        ne.a.e(this.f47375p);
-        boolean isEmpty = this.f47372e.isEmpty();
-        this.f47372e.add(cVar);
+        ne.a.e(this.f47525p);
+        boolean isEmpty = this.f47522e.isEmpty();
+        this.f47522e.add(cVar);
         if (isEmpty) {
             y();
         }
@@ -135,27 +135,27 @@ public abstract class a implements r {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final u.a t(int i10, r.b bVar) {
-        return this.f47374o.o(i10, bVar);
+        return this.f47524o.o(i10, bVar);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final u.a u(r.b bVar) {
-        return this.f47374o.o(0, bVar);
+        return this.f47524o.o(0, bVar);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final y.a v(int i10, r.b bVar) {
-        return this.f47373i.y(i10, bVar);
+        return this.f47523i.y(i10, bVar);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final y.a w(r.b bVar) {
-        return this.f47373i.y(0, bVar);
+        return this.f47523i.y(0, bVar);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final t1 z() {
-        return (t1) ne.a.i(this.f47377r);
+        return (t1) ne.a.i(this.f47527r);
     }
 
     protected void x() {

@@ -12,13 +12,13 @@ import android.widget.ImageButton;
 public class l extends ImageButton {
 
     /* renamed from: d  reason: collision with root package name */
-    private final AppCompatBackgroundHelper f1774d;
+    private final AppCompatBackgroundHelper f1743d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final AppCompatImageHelper f1775e;
+    private final AppCompatImageHelper f1744e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f1776i;
+    private boolean f1745i;
 
     public l(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, f.a.A);
@@ -27,18 +27,18 @@ public class l extends ImageButton {
     @Override // android.widget.ImageView, android.view.View
     protected void drawableStateChanged() {
         super.drawableStateChanged();
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1774d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1743d;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.b();
         }
-        AppCompatImageHelper appCompatImageHelper = this.f1775e;
+        AppCompatImageHelper appCompatImageHelper = this.f1744e;
         if (appCompatImageHelper != null) {
             appCompatImageHelper.c();
         }
     }
 
     public ColorStateList getSupportBackgroundTintList() {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1774d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1743d;
         if (appCompatBackgroundHelper != null) {
             return appCompatBackgroundHelper.c();
         }
@@ -46,7 +46,7 @@ public class l extends ImageButton {
     }
 
     public PorterDuff.Mode getSupportBackgroundTintMode() {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1774d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1743d;
         if (appCompatBackgroundHelper != null) {
             return appCompatBackgroundHelper.d();
         }
@@ -54,7 +54,7 @@ public class l extends ImageButton {
     }
 
     public ColorStateList getSupportImageTintList() {
-        AppCompatImageHelper appCompatImageHelper = this.f1775e;
+        AppCompatImageHelper appCompatImageHelper = this.f1744e;
         if (appCompatImageHelper != null) {
             return appCompatImageHelper.d();
         }
@@ -62,7 +62,7 @@ public class l extends ImageButton {
     }
 
     public PorterDuff.Mode getSupportImageTintMode() {
-        AppCompatImageHelper appCompatImageHelper = this.f1775e;
+        AppCompatImageHelper appCompatImageHelper = this.f1744e;
         if (appCompatImageHelper != null) {
             return appCompatImageHelper.e();
         }
@@ -71,7 +71,7 @@ public class l extends ImageButton {
 
     @Override // android.widget.ImageView, android.view.View
     public boolean hasOverlappingRendering() {
-        if (this.f1775e.f() && super.hasOverlappingRendering()) {
+        if (this.f1744e.f() && super.hasOverlappingRendering()) {
             return true;
         }
         return false;
@@ -80,7 +80,7 @@ public class l extends ImageButton {
     @Override // android.view.View
     public void setBackgroundDrawable(Drawable drawable) {
         super.setBackgroundDrawable(drawable);
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1774d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1743d;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.f(drawable);
         }
@@ -89,7 +89,7 @@ public class l extends ImageButton {
     @Override // android.view.View
     public void setBackgroundResource(int i10) {
         super.setBackgroundResource(i10);
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1774d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1743d;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.g(i10);
         }
@@ -98,7 +98,7 @@ public class l extends ImageButton {
     @Override // android.widget.ImageView
     public void setImageBitmap(Bitmap bitmap) {
         super.setImageBitmap(bitmap);
-        AppCompatImageHelper appCompatImageHelper = this.f1775e;
+        AppCompatImageHelper appCompatImageHelper = this.f1744e;
         if (appCompatImageHelper != null) {
             appCompatImageHelper.c();
         }
@@ -106,16 +106,16 @@ public class l extends ImageButton {
 
     @Override // android.widget.ImageView
     public void setImageDrawable(Drawable drawable) {
-        AppCompatImageHelper appCompatImageHelper = this.f1775e;
-        if (appCompatImageHelper != null && drawable != null && !this.f1776i) {
+        AppCompatImageHelper appCompatImageHelper = this.f1744e;
+        if (appCompatImageHelper != null && drawable != null && !this.f1745i) {
             appCompatImageHelper.h(drawable);
         }
         super.setImageDrawable(drawable);
-        AppCompatImageHelper appCompatImageHelper2 = this.f1775e;
+        AppCompatImageHelper appCompatImageHelper2 = this.f1744e;
         if (appCompatImageHelper2 != null) {
             appCompatImageHelper2.c();
-            if (!this.f1776i) {
-                this.f1775e.b();
+            if (!this.f1745i) {
+                this.f1744e.b();
             }
         }
     }
@@ -123,46 +123,46 @@ public class l extends ImageButton {
     @Override // android.widget.ImageView
     public void setImageLevel(int i10) {
         super.setImageLevel(i10);
-        this.f1776i = true;
+        this.f1745i = true;
     }
 
     @Override // android.widget.ImageView
     public void setImageResource(int i10) {
-        this.f1775e.i(i10);
+        this.f1744e.i(i10);
     }
 
     @Override // android.widget.ImageView
     public void setImageURI(Uri uri) {
         super.setImageURI(uri);
-        AppCompatImageHelper appCompatImageHelper = this.f1775e;
+        AppCompatImageHelper appCompatImageHelper = this.f1744e;
         if (appCompatImageHelper != null) {
             appCompatImageHelper.c();
         }
     }
 
     public void setSupportBackgroundTintList(ColorStateList colorStateList) {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1774d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1743d;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.i(colorStateList);
         }
     }
 
     public void setSupportBackgroundTintMode(PorterDuff.Mode mode) {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1774d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1743d;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.j(mode);
         }
     }
 
     public void setSupportImageTintList(ColorStateList colorStateList) {
-        AppCompatImageHelper appCompatImageHelper = this.f1775e;
+        AppCompatImageHelper appCompatImageHelper = this.f1744e;
         if (appCompatImageHelper != null) {
             appCompatImageHelper.j(colorStateList);
         }
     }
 
     public void setSupportImageTintMode(PorterDuff.Mode mode) {
-        AppCompatImageHelper appCompatImageHelper = this.f1775e;
+        AppCompatImageHelper appCompatImageHelper = this.f1744e;
         if (appCompatImageHelper != null) {
             appCompatImageHelper.k(mode);
         }
@@ -170,13 +170,13 @@ public class l extends ImageButton {
 
     public l(Context context, AttributeSet attributeSet, int i10) {
         super(s0.b(context), attributeSet, i10);
-        this.f1776i = false;
+        this.f1745i = false;
         r0.a(this, getContext());
         AppCompatBackgroundHelper appCompatBackgroundHelper = new AppCompatBackgroundHelper(this);
-        this.f1774d = appCompatBackgroundHelper;
+        this.f1743d = appCompatBackgroundHelper;
         appCompatBackgroundHelper.e(attributeSet, i10);
         AppCompatImageHelper appCompatImageHelper = new AppCompatImageHelper(this);
-        this.f1775e = appCompatImageHelper;
+        this.f1744e = appCompatImageHelper;
         appCompatImageHelper.g(attributeSet, i10);
     }
 }

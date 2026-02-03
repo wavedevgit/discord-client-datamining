@@ -8,24 +8,24 @@ import kotlin.reflect.jvm.internal.impl.types.checker.KotlinTypeChecker;
 public class d implements KotlinTypeChecker.TypeConstructorEquality {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f35225a;
+    private final boolean f34615a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final CallableDescriptor f35226b;
+    private final CallableDescriptor f34616b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final CallableDescriptor f35227c;
+    private final CallableDescriptor f34617c;
 
     public d(boolean z10, CallableDescriptor callableDescriptor, CallableDescriptor callableDescriptor2) {
-        this.f35225a = z10;
-        this.f35226b = callableDescriptor;
-        this.f35227c = callableDescriptor2;
+        this.f34615a = z10;
+        this.f34616b = callableDescriptor;
+        this.f34617c = callableDescriptor2;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.checker.KotlinTypeChecker.TypeConstructorEquality
     public boolean equals(TypeConstructor typeConstructor, TypeConstructor typeConstructor2) {
         boolean f10;
-        f10 = DescriptorEquivalenceForOverrides.f(this.f35225a, this.f35226b, this.f35227c, typeConstructor, typeConstructor2);
+        f10 = DescriptorEquivalenceForOverrides.f(this.f34615a, this.f34616b, this.f34617c, typeConstructor, typeConstructor2);
         return f10;
     }
 }

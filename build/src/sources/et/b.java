@@ -1,38 +1,115 @@
 package et;
 
 import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.reflect.KClass;
-import kotlinx.serialization.DeserializationStrategy;
+import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
-import ys.o;
+import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.encoding.Decoder;
+import kotlinx.serialization.encoding.Encoder;
+import kotlinx.serialization.json.JsonArray;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class b {
-    public /* synthetic */ b(DefaultConstructorMarker defaultConstructorMarker) {
-        this();
-    }
+public final class b implements KSerializer {
 
-    public static /* synthetic */ KSerializer c(b bVar, KClass kClass, List list, int i10, Object obj) {
-        if (obj == null) {
-            if ((i10 & 2) != 0) {
-                list = CollectionsKt.l();
-            }
-            return bVar.b(kClass, list);
+    /* renamed from: a  reason: collision with root package name */
+    public static final b f22646a = new b();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final SerialDescriptor f22647b = a.f22648b;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    private static final class a implements SerialDescriptor {
+
+        /* renamed from: b  reason: collision with root package name */
+        public static final a f22648b = new a();
+
+        /* renamed from: c  reason: collision with root package name */
+        private static final String f22649c = "kotlinx.serialization.json.JsonArray";
+
+        /* renamed from: a  reason: collision with root package name */
+        private final /* synthetic */ SerialDescriptor f22650a = bt.a.h(o.f22668a).getDescriptor();
+
+        private a() {
         }
-        throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: getContextual");
+
+        @Override // kotlinx.serialization.descriptors.SerialDescriptor
+        public boolean b() {
+            return this.f22650a.b();
+        }
+
+        @Override // kotlinx.serialization.descriptors.SerialDescriptor
+        public int c(String name) {
+            Intrinsics.checkNotNullParameter(name, "name");
+            return this.f22650a.c(name);
+        }
+
+        @Override // kotlinx.serialization.descriptors.SerialDescriptor
+        public int d() {
+            return this.f22650a.d();
+        }
+
+        @Override // kotlinx.serialization.descriptors.SerialDescriptor
+        public String e(int i10) {
+            return this.f22650a.e(i10);
+        }
+
+        @Override // kotlinx.serialization.descriptors.SerialDescriptor
+        public List f(int i10) {
+            return this.f22650a.f(i10);
+        }
+
+        @Override // kotlinx.serialization.descriptors.SerialDescriptor
+        public SerialDescriptor g(int i10) {
+            return this.f22650a.g(i10);
+        }
+
+        @Override // kotlinx.serialization.descriptors.SerialDescriptor
+        public List getAnnotations() {
+            return this.f22650a.getAnnotations();
+        }
+
+        @Override // kotlinx.serialization.descriptors.SerialDescriptor
+        public ct.k getKind() {
+            return this.f22650a.getKind();
+        }
+
+        @Override // kotlinx.serialization.descriptors.SerialDescriptor
+        public String h() {
+            return f22649c;
+        }
+
+        @Override // kotlinx.serialization.descriptors.SerialDescriptor
+        public boolean i(int i10) {
+            return this.f22650a.i(i10);
+        }
+
+        @Override // kotlinx.serialization.descriptors.SerialDescriptor
+        public boolean isInline() {
+            return this.f22650a.isInline();
+        }
     }
-
-    public abstract void a(d dVar);
-
-    public abstract KSerializer b(KClass kClass, List list);
-
-    public abstract boolean d();
-
-    public abstract DeserializationStrategy e(KClass kClass, String str);
-
-    public abstract o f(KClass kClass, Object obj);
 
     private b() {
+    }
+
+    @Override // kotlinx.serialization.DeserializationStrategy
+    /* renamed from: a */
+    public JsonArray deserialize(Decoder decoder) {
+        Intrinsics.checkNotNullParameter(decoder, "decoder");
+        p.g(decoder);
+        return new JsonArray((List) bt.a.h(o.f22668a).deserialize(decoder));
+    }
+
+    @Override // at.o
+    /* renamed from: b */
+    public void serialize(Encoder encoder, JsonArray value) {
+        Intrinsics.checkNotNullParameter(encoder, "encoder");
+        Intrinsics.checkNotNullParameter(value, "value");
+        p.h(encoder);
+        bt.a.h(o.f22668a).serialize(encoder, value);
+    }
+
+    @Override // kotlinx.serialization.KSerializer, at.o, kotlinx.serialization.DeserializationStrategy
+    public SerialDescriptor getDescriptor() {
+        return f22647b;
     }
 }

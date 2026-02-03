@@ -1,137 +1,111 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var2 = {};
-    var0 = true;
-    var2.value = var0;
-    var0 = '__esModule';
-    var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = function arg0() {
-        _fun98931: for (var _fun98931_ip = 0;;) switch (_fun98931_ip) {
+    var2 = require;
+    var _closure1_slot0 = var2;
+    var2 = module;
+    var _closure1_slot1 = var2;
+    var2 = dependencyMap;
+    var _closure1_slot2 = var2;
+    var2 = function arg0, arg1() {
+        var2 = arg0;
+        var1 = var2.require;
+        var0 = arg1;
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var _closure1_slot3 = var2;
+    var3 = global;
+    var6 = var3.Object;
+    var5 = var6.defineProperty;
+    var4 = {};
+    var3 = true;
+    var4.value = var3;
+    var3 = '__esModule';
+    var3 = var5.bind(var6)(var1, var3, var4);
+    var1.dynamicRequire = var2;
+    var2 = function() {
+        _fun98883: for (var _fun98883_ip = 0;;) switch (_fun98883_ip) {
             case 0:
-                var14 = arg0;
-                var11 = undefined;
-                var12 = undefined;
-                var13 = undefined;
-                var0 = {};
-                var1 = var14.length;
-                var10 = 0;
-                var1 = var10 < var1;
-                var9 = 1;
-                var8 = global;
-                var7 = '%';
-                var6 = -1;
-                var5 = 34;
-                var4 = ';';
-                var3 = '=';
-                var2 = 0;
-                if (!var1) {
-                    _fun98931_ip = 303;
-                    continue _fun98931
+                var2 = _closure1_slot0;
+                var0 = _closure1_slot2;
+                var3 = 0;
+                var1 = var0[var3];
+                var0 = undefined;
+                var1 = var2.bind(var0)(var1);
+                var0 = var1.isBrowserBundle;
+                var0 = var0.bind(var1)();
+                var0 = !var0;
+                if (!var0) {
+                    _fun98883_ip = 103;
+                    continue _fun98883
                 }
-            case 56:
-                var1 = var14.indexOf;
-                var15 = var1.bind(var14)(var3, var2);
-                var17 = var2;
-                if (!(var6 !== var15)) {
-                    _fun98931_ip = 303;
-                    continue _fun98931
+            case 40:
+                var4 = global;
+                var1 = var4.Object;
+                var1 = var1.prototype;
+                var2 = var1.toString;
+                var1 = var2.call;
+                var5 = var4.process;
+                var6 = 'undefined';
+                var5 = typeof var5;
+                var3 = 0;
+                if (!(var6 !== var5)) {
+                    _fun98883_ip = 88;
+                    continue _fun98883
                 }
-            case 78:
-                var1 = var14.indexOf;
-                var1 = var1.bind(var14)(var4, var17);
-                if (!(var6 !== var1)) {
-                    _fun98931_ip = 123;
-                    continue _fun98931
-                }
-            case 94:
-                if (!(var1 < var15)) {
-                    _fun98931_ip = 128;
-                    continue _fun98931
-                }
-            case 98:
-                var18 = var14.lastIndexOf;
-                var16 = var15 - var9;
-                var16 = var18.bind(var14)(var4, var16);
-                var2 = var16 + var9;
-                _fun98931_ip = 291;
-                continue _fun98931;
-            case 123:
-                var1 = var14.length;
-            case 128:
-                var16 = var14.slice;
-                var17 = var16.bind(var14)(var17, var15);
-                var16 = var17.trim;
-                var17 = var16.bind(var17)();
-                var12 = var17;
-                var16 = var0;
-                var16 = var16[var17];
-                if (!(var11 === var16)) {
-                    _fun98931_ip = 287;
-                    continue _fun98931
-                }
-            case 166:
-                var16 = var14.slice;
-                var15 = var15 + var9;
-                var16 = var16.bind(var14)(var15, var1);
-                var15 = var16.trim;
-                var16 = var15.bind(var16)();
-                var13 = var16;
-                var15 = var16.charCodeAt;
-                var15 = var15.bind(var16)(var10);
-                if (!(var5 === var15)) {
-                    _fun98931_ip = 223;
-                    continue _fun98931
-                }
-            case 209:
-                var16 = var13;
-                var15 = var16.slice;
-                var13 = var15.bind(var16)(var9, var6);
-            case 223: // try_start_0
-                var17 = var0;
-                var16 = var12;
-                var18 = var13;
-                var15 = var18.indexOf;
-                var15 = var15.bind(var18)(var7);
-                if (!(var6 === var15)) {
-                    _fun98931_ip = 252;
-                    continue _fun98931
-                }
-            case 247:
-                var15 = var13;
-                _fun98931_ip = 266;
-                continue _fun98931;
-            case 252:
-                var19 = var8.decodeURIComponent;
-                var18 = var13;
-                var15 = var19.bind(var11)(var18);
-            case 266:
-                var17[var16] = var15;
-            case 270: // try_end0
-                _fun98931_ip = 287;
-                continue _fun98931;
-            case 272: // catch_target0
-                CatchBlockStart(arg_register = 15);
-                var17 = var0;
-                var16 = var12;
-                var15 = var13;
-                var17[var16] = var15;
-            case 287:
-                var2 = var1 + var9;
-            case 291:
-                var1 = var14.length;
-                if (var2 < var1) {
-                    _fun98931_ip = 56;
-                    continue _fun98931
-                }
-            case 303:
+            case 82:
+                var3 = var4.process;
+            case 88:
+                var2 = var1.bind(var2)(var3);
+                var1 = '[object process]';
+                var0 = var1 === var2;
+            case 103:
                 return var0;
         }
     };
-    var1.parseCookie = var0;
+    var1.isNodeEnv = var2;
+    var0 = function arg0() {
+        _fun98884: for (var _fun98884_ip = 0;;) switch (_fun98884_ip) {
+            case 0:
+                var1 = arg0;
+                var4 = undefined;
+                var0 = undefined;
+            case 7: // try_start_0
+                var5 = _closure1_slot3;
+                var3 = _closure1_slot1;
+                var2 = var1;
+                var0 = var5.bind(var4)(var3, var2);
+            case 27: // try_end0
+                _fun98884_ip = 31;
+                continue _fun98884;
+            case 29: // catch_target0
+                CatchBlockStart(arg_register = 2);
+            case 31: // try_start_1
+                var3 = _closure1_slot3;
+                var2 = _closure1_slot1;
+                var5 = 'process';
+                var5 = var3.bind(var4)(var2, var5);
+                var5 = var5.cwd;
+                var8 = var5.bind(var4)();
+                var7 = var1;
+                var1 = global;
+                var1 = var1.HermesInternal;
+                var6 = var1.concat;
+                var5 = '';
+                var1 = '/node_modules/';
+                var1 = var6.bind(var5)(var8, var1, var7);
+                var0 = var3.bind(var4)(var2, var1);
+            case 101: // try_end1
+                _fun98884_ip = 105;
+                continue _fun98884;
+            case 103: // catch_target1
+                CatchBlockStart(arg_register = 1);
+            case 105:
+                return var0;
+        }
+    };
+    var1.loadModule = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12892]);

@@ -15,11 +15,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = require;
     var0 = undefined;
     var1 = var1.bind(var0)(var3);
-    var4 = var1.createContext;
+    var3 = var1.createContext;
     var1 = null;
-    var3 = var4.bind(var0)(var1);
-    var1 = var4.bind(var0)(var1);
-    var2.BottomSheetGestureHandlersContext = var3;
-    var2.BottomSheetDraggableContext = var1;
+    var3 = var3.bind(var0)(var1);
+    var1 = var3.Provider;
+    var2.BottomSheetContext = var3;
+    var2.BottomSheetProvider = var1;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, [31]);

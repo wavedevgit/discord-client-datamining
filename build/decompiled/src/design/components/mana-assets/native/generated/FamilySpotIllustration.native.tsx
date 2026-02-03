@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/FamilySpotIllustration.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52538: for (var _fun52538_ip = 0;;) switch (_fun52538_ip) {
+        _fun52596: for (var _fun52596_ip = 0;;) switch (_fun52596_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun52538_ip = 35;
-                    continue _fun52538
+                    _fun52596_ip = 35;
+                    continue _fun52596
                 }
             case 29:
                 var9 = 288;
             case 35:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun52538_ip = 47;
-                    continue _fun52538
+                    _fun52596_ip = 47;
+                    continue _fun52596
                 }
             case 44:
                 var7 = 162;
@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.FamilySpotIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4699, 6121, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6126, 2]);

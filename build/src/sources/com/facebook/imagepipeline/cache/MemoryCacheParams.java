@@ -6,30 +6,30 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class MemoryCacheParams {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f11064a;
+    public final int f10032a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f11065b;
+    public final int f10033b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f11066c;
+    public final int f10034c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f11067d;
+    public final int f10035d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f11068e;
+    public final int f10036e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final long f11069f;
+    public final long f10037f;
 
     public MemoryCacheParams(int i10, int i11, int i12, int i13, int i14, long j10) {
-        this.f11064a = i10;
-        this.f11065b = i11;
-        this.f11066c = i12;
-        this.f11067d = i13;
-        this.f11068e = i14;
-        this.f11069f = j10;
+        this.f10032a = i10;
+        this.f10033b = i11;
+        this.f10034c = i12;
+        this.f10035d = i13;
+        this.f10036e = i14;
+        this.f10037f = j10;
     }
 
     public /* synthetic */ MemoryCacheParams(int i10, int i11, int i12, int i13, int i14, long j10, int i15, DefaultConstructorMarker defaultConstructorMarker) {

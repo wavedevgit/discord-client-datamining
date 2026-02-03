@@ -131,7 +131,7 @@ public final class BridgelessReactContext extends ReactApplicationContext implem
     }
 
     @Override // com.facebook.react.bridge.ReactContext
-    @jr.c
+    @lr.c
     public UIManager getFabricUIManager() {
         return this.reactHost.getUiManager$ReactAndroid_release();
     }
@@ -189,7 +189,7 @@ public final class BridgelessReactContext extends ReactApplicationContext implem
     }
 
     @Override // com.facebook.react.bridge.ReactContext
-    @jr.c
+    @lr.c
     public boolean hasActiveCatalystInstance() {
         return hasActiveReactInstance();
     }
@@ -200,7 +200,7 @@ public final class BridgelessReactContext extends ReactApplicationContext implem
     }
 
     @Override // com.facebook.react.bridge.ReactContext
-    @jr.c
+    @lr.c
     public boolean hasCatalystInstance() {
         return false;
     }
@@ -217,7 +217,7 @@ public final class BridgelessReactContext extends ReactApplicationContext implem
     }
 
     @Override // com.facebook.react.bridge.ReactContext
-    @jr.c
+    @lr.c
     public boolean isBridgeless() {
         return true;
     }

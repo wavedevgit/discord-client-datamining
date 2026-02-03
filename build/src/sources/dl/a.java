@@ -5,36 +5,36 @@ import com.henninghall.date_picker.pickers.a;
 public class a implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final cl.f f21800a;
+    private final cl.f f20659a;
 
     /* renamed from: dl.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    class C0285a implements a.InterfaceC0203a {
+    class C0270a implements a.InterfaceC0184a {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ el.g f21801a;
+        final /* synthetic */ el.g f20660a;
 
-        C0285a(el.g gVar) {
-            this.f21801a = gVar;
+        C0270a(el.g gVar) {
+            this.f20660a = gVar;
         }
 
-        @Override // com.henninghall.date_picker.pickers.a.InterfaceC0203a
+        @Override // com.henninghall.date_picker.pickers.a.InterfaceC0184a
         public void a() {
-            a.this.f21800a.b(this.f21801a);
+            a.this.f20659a.b(this.f20660a);
         }
 
-        @Override // com.henninghall.date_picker.pickers.a.InterfaceC0203a
+        @Override // com.henninghall.date_picker.pickers.a.InterfaceC0184a
         public void b() {
-            a.this.f21800a.a(this.f21801a);
+            a.this.f20659a.a(this.f20660a);
         }
     }
 
     public a(cl.f fVar) {
-        this.f21800a = fVar;
+        this.f20659a = fVar;
     }
 
     @Override // dl.h
     public void a(el.g gVar) {
-        gVar.f22948d.setOnValueChangedListener(new C0285a(gVar));
+        gVar.f21639d.setOnValueChangedListener(new C0270a(gVar));
     }
 }

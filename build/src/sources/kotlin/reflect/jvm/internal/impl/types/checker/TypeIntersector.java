@@ -36,27 +36,27 @@ public final class TypeIntersector {
     private static final class a {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f35742d = new c("START", 0);
+        public static final a f35132d = new c("START", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final a f35743e = new C0451a("ACCEPT_NULL", 1);
+        public static final a f35133e = new C0447a("ACCEPT_NULL", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final a f35744i = new d("UNKNOWN", 2);
+        public static final a f35134i = new d("UNKNOWN", 2);
 
         /* renamed from: o  reason: collision with root package name */
-        public static final a f35745o = new b("NOT_NULL", 3);
+        public static final a f35135o = new b("NOT_NULL", 3);
 
         /* renamed from: p  reason: collision with root package name */
-        private static final /* synthetic */ a[] f35746p;
+        private static final /* synthetic */ a[] f35136p;
 
         /* renamed from: q  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f35747q;
+        private static final /* synthetic */ EnumEntries f35137q;
 
         /* renamed from: kotlin.reflect.jvm.internal.impl.types.checker.TypeIntersector$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        static final class C0451a extends a {
-            C0451a(String str, int i10) {
+        static final class C0447a extends a {
+            C0447a(String str, int i10) {
                 super(str, i10, null);
             }
 
@@ -104,7 +104,7 @@ public final class TypeIntersector {
             public a d(UnwrappedType nextType) {
                 Intrinsics.checkNotNullParameter(nextType, "nextType");
                 a e10 = e(nextType);
-                if (e10 == a.f35743e) {
+                if (e10 == a.f35133e) {
                     return this;
                 }
                 return e10;
@@ -113,8 +113,8 @@ public final class TypeIntersector {
 
         static {
             a[] a10 = a();
-            f35746p = a10;
-            f35747q = qr.a.a(a10);
+            f35136p = a10;
+            f35137q = sr.a.a(a10);
         }
 
         public /* synthetic */ a(String str, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -122,7 +122,7 @@ public final class TypeIntersector {
         }
 
         private static final /* synthetic */ a[] a() {
-            return new a[]{f35742d, f35743e, f35744i, f35745o};
+            return new a[]{f35132d, f35133e, f35134i, f35135o};
         }
 
         public static a valueOf(String str) {
@@ -130,7 +130,7 @@ public final class TypeIntersector {
         }
 
         public static a[] values() {
-            return (a[]) f35746p.clone();
+            return (a[]) f35136p.clone();
         }
 
         public abstract a d(UnwrappedType unwrappedType);
@@ -138,18 +138,18 @@ public final class TypeIntersector {
         protected final a e(UnwrappedType unwrappedType) {
             Intrinsics.checkNotNullParameter(unwrappedType, "<this>");
             if (unwrappedType.isMarkedNullable()) {
-                return f35743e;
+                return f35133e;
             }
             if ((unwrappedType instanceof DefinitelyNotNullType) && (((DefinitelyNotNullType) unwrappedType).getOriginal() instanceof StubTypeForBuilderInference)) {
-                return f35745o;
+                return f35135o;
             }
             if (unwrappedType instanceof StubTypeForBuilderInference) {
-                return f35744i;
+                return f35134i;
             }
             if (NullabilityChecker.INSTANCE.isSubtypeOfAny(unwrappedType)) {
-                return f35745o;
+                return f35135o;
             }
-            return f35744i;
+            return f35134i;
         }
 
         private a(String str, int i10) {
@@ -276,7 +276,7 @@ public final class TypeIntersector {
                 arrayList.add(simpleType);
             }
         }
-        a aVar = a.f35742d;
+        a aVar = a.f35132d;
         for (UnwrappedType unwrappedType : arrayList) {
             aVar = aVar.d(unwrappedType);
         }
@@ -284,7 +284,7 @@ public final class TypeIntersector {
         Iterator it = arrayList.iterator();
         while (it.hasNext()) {
             SimpleType simpleType2 = (SimpleType) it.next();
-            if (aVar == a.f35745o) {
+            if (aVar == a.f35135o) {
                 if (simpleType2 instanceof NewCapturedType) {
                     simpleType2 = SpecialTypesKt.withNotNullProjection((NewCapturedType) simpleType2);
                 }

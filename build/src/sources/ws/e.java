@@ -1,31 +1,43 @@
 package ws;
 
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class e {
+public final class e implements s {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Integer f52991a;
+    private final l f52707a;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final String f52992b;
-
-    public /* synthetic */ e(Integer num, String str, DefaultConstructorMarker defaultConstructorMarker) {
-        this(num, str);
+    public e(l directive) {
+        Intrinsics.checkNotNullParameter(directive, "directive");
+        this.f52707a = directive;
     }
 
-    public abstract g a(Object obj, CharSequence charSequence, int i10, int i11);
-
-    public Integer b() {
-        return this.f52991a;
+    @Override // ws.o
+    public xs.e a() {
+        return this.f52707a.a();
     }
 
-    public final String c() {
-        return this.f52992b;
+    @Override // ws.o
+    public ys.q b() {
+        return this.f52707a.b();
     }
 
-    private e(Integer num, String str) {
-        this.f52991a = num;
-        this.f52992b = str;
+    public final l c() {
+        return this.f52707a;
+    }
+
+    public boolean equals(Object obj) {
+        if ((obj instanceof e) && Intrinsics.areEqual(this.f52707a, ((e) obj).f52707a)) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return this.f52707a.hashCode();
+    }
+
+    public String toString() {
+        return "BasicFormatStructure(" + this.f52707a + ')';
     }
 }

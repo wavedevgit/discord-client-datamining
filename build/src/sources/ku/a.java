@@ -1,189 +1,70 @@
 package ku;
 
-import ju.a0;
-import ju.g0;
-import ju.m0;
+import java.io.Closeable;
+import java.util.zip.Deflater;
 import kotlin.jvm.internal.Intrinsics;
 import okio.Buffer;
+import okio.ByteString;
+import okio.Sink;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class a {
+public final class a implements Closeable {
 
-    /* renamed from: a */
-    private static final byte[] f36723a = m0.a("0123456789abcdef");
+    /* renamed from: d  reason: collision with root package name */
+    private final boolean f36170d;
 
-    public static final Buffer.a a(Buffer buffer, Buffer.a unsafeCursor) {
-        Intrinsics.checkNotNullParameter(buffer, "<this>");
-        Intrinsics.checkNotNullParameter(unsafeCursor, "unsafeCursor");
-        Buffer.a g10 = okio.b.g(unsafeCursor);
-        if (g10.f44498d == null) {
-            g10.f44498d = buffer;
-            g10.f44499e = true;
-            return g10;
-        }
-        throw new IllegalStateException("already attached to a buffer");
+    /* renamed from: e  reason: collision with root package name */
+    private final Buffer f36171e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final Deflater f36172i;
+
+    /* renamed from: o  reason: collision with root package name */
+    private final lu.e f36173o;
+
+    public a(boolean z10) {
+        this.f36170d = z10;
+        Buffer buffer = new Buffer();
+        this.f36171e = buffer;
+        Deflater deflater = new Deflater(-1, true);
+        this.f36172i = deflater;
+        this.f36173o = new lu.e((Sink) buffer, deflater);
     }
 
-    public static final byte[] b() {
-        return f36723a;
+    private final boolean h(Buffer buffer, ByteString byteString) {
+        return buffer.p0(buffer.size() - byteString.G(), byteString);
     }
 
-    public static final boolean c(g0 segment, int i10, byte[] bytes, int i11, int i12) {
-        Intrinsics.checkNotNullParameter(segment, "segment");
-        Intrinsics.checkNotNullParameter(bytes, "bytes");
-        int i13 = segment.f32364c;
-        byte[] bArr = segment.f32362a;
-        while (i11 < i12) {
-            if (i10 == i13) {
-                segment = segment.f32367f;
-                Intrinsics.checkNotNull(segment);
-                byte[] bArr2 = segment.f32362a;
-                bArr = bArr2;
-                i10 = segment.f32363b;
-                i13 = segment.f32364c;
+    public final void a(Buffer buffer) {
+        ByteString byteString;
+        Intrinsics.checkNotNullParameter(buffer, "buffer");
+        if (this.f36171e.size() == 0) {
+            if (this.f36170d) {
+                this.f36172i.reset();
             }
-            if (bArr[i10] != bytes[i11]) {
-                return false;
-            }
-            i10++;
-            i11++;
-        }
-        return true;
-    }
-
-    public static final String d(Buffer buffer, long j10) {
-        Intrinsics.checkNotNullParameter(buffer, "<this>");
-        if (j10 > 0) {
-            long j11 = j10 - 1;
-            if (buffer.G0(j11) == 13) {
-                String c12 = buffer.c1(j11);
-                buffer.skip(2L);
-                return c12;
-            }
-        }
-        String c13 = buffer.c1(j10);
-        buffer.skip(1L);
-        return c13;
-    }
-
-    public static final int e(Buffer buffer, a0 options, boolean z10) {
-        int i10;
-        int i11;
-        boolean z11;
-        g0 g0Var;
-        int i12;
-        int i13;
-        Intrinsics.checkNotNullParameter(buffer, "<this>");
-        Intrinsics.checkNotNullParameter(options, "options");
-        g0 g0Var2 = buffer.f44496d;
-        if (g0Var2 == null) {
-            if (z10) {
-                return -2;
-            }
-            return -1;
-        }
-        byte[] bArr = g0Var2.f32362a;
-        int i14 = g0Var2.f32363b;
-        int i15 = g0Var2.f32364c;
-        int[] h10 = options.h();
-        g0 g0Var3 = g0Var2;
-        int i16 = -1;
-        int i17 = 0;
-        loop0: while (true) {
-            int i18 = i17 + 1;
-            int i19 = h10[i17];
-            int i20 = i17 + 2;
-            int i21 = h10[i18];
-            if (i21 != -1) {
-                i16 = i21;
-            }
-            if (g0Var3 == null) {
-                break;
-            } else if (i19 < 0) {
-                int i22 = i20 + (i19 * (-1));
-                while (true) {
-                    int i23 = i14 + 1;
-                    int i24 = i20 + 1;
-                    if ((bArr[i14] & 255) != h10[i20]) {
-                        break loop0;
-                    }
-                    if (i24 == i22) {
-                        z11 = true;
-                    } else {
-                        z11 = false;
-                    }
-                    if (i23 == i15) {
-                        Intrinsics.checkNotNull(g0Var3);
-                        g0 g0Var4 = g0Var3.f32367f;
-                        Intrinsics.checkNotNull(g0Var4);
-                        i13 = g0Var4.f32363b;
-                        byte[] bArr2 = g0Var4.f32362a;
-                        i12 = g0Var4.f32364c;
-                        if (g0Var4 == g0Var2) {
-                            if (!z11) {
-                                break loop0;
-                            }
-                            bArr = bArr2;
-                            g0Var = null;
-                        } else {
-                            g0Var = g0Var4;
-                            bArr = bArr2;
-                        }
-                    } else {
-                        g0Var = g0Var3;
-                        i12 = i15;
-                        i13 = i23;
-                    }
-                    if (z11) {
-                        i11 = h10[i24];
-                        i10 = i13;
-                        i15 = i12;
-                        g0Var3 = g0Var;
-                        break;
-                    }
-                    i14 = i13;
-                    i15 = i12;
-                    g0Var3 = g0Var;
-                    i20 = i24;
+            this.f36173o.t0(buffer, buffer.size());
+            this.f36173o.flush();
+            Buffer buffer2 = this.f36171e;
+            byteString = b.f36174a;
+            if (h(buffer2, byteString)) {
+                long size = this.f36171e.size() - 4;
+                Buffer.a V0 = Buffer.V0(this.f36171e, null, 1, null);
+                try {
+                    V0.l(size);
+                    wr.c.a(V0, null);
+                } finally {
                 }
             } else {
-                i10 = i14 + 1;
-                int i25 = bArr[i14] & 255;
-                int i26 = i20 + i19;
-                while (i20 != i26) {
-                    if (i25 == h10[i20]) {
-                        i11 = h10[i20 + i19];
-                        if (i10 == i15) {
-                            g0Var3 = g0Var3.f32367f;
-                            Intrinsics.checkNotNull(g0Var3);
-                            i10 = g0Var3.f32363b;
-                            bArr = g0Var3.f32362a;
-                            i15 = g0Var3.f32364c;
-                            if (g0Var3 == g0Var2) {
-                                g0Var3 = null;
-                            }
-                        }
-                        if (i11 >= 0) {
-                            return i11;
-                        }
-                        i17 = -i11;
-                        i14 = i10;
-                    } else {
-                        i20++;
-                    }
-                }
-                break loop0;
+                this.f36171e.writeByte(0);
             }
+            Buffer buffer3 = this.f36171e;
+            buffer.t0(buffer3, buffer3.size());
+            return;
         }
-        if (z10) {
-            return -2;
-        }
-        return i16;
+        throw new IllegalArgumentException("Failed requirement.");
     }
 
-    public static /* synthetic */ int f(Buffer buffer, a0 a0Var, boolean z10, int i10, Object obj) {
-        if ((i10 & 2) != 0) {
-            z10 = false;
-        }
-        return e(buffer, a0Var, z10);
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
+        this.f36173o.close();
     }
 }

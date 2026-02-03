@@ -3,11 +3,11 @@ package ck;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final i f8239a;
+    private final i f7226a;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public b(i iVar) {
-        this.f8239a = iVar;
+        this.f7226a = iVar;
     }
 
     public abstract b a(i iVar);
@@ -17,14 +17,14 @@ public abstract class b {
     public abstract gk.a c(int i10, gk.a aVar);
 
     public final int d() {
-        return this.f8239a.a();
+        return this.f7226a.a();
     }
 
     public final i e() {
-        return this.f8239a;
+        return this.f7226a;
     }
 
     public final int f() {
-        return this.f8239a.d();
+        return this.f7226a.d();
     }
 }

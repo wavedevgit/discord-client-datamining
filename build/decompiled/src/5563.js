@@ -1,203 +1,104 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
+    var5 = require;
     var2 = exports;
-    var5 = dependencyMap;
+    var7 = dependencyMap;
     var0 = global;
-    var6 = var0.Object;
-    var3 = var6.defineProperty;
+    var8 = var0.Object;
+    var6 = var8.defineProperty;
+    var4 = {};
+    var13 = true;
+    var4.value = var13;
+    var1 = '__esModule';
+    var1 = var6.bind(var8)(var2, var1, var4);
     var1 = {};
-    var0 = true;
-    var1.value = var0;
-    var0 = '__esModule';
-    var0 = var3.bind(var6)(var2, var0, var1);
-    var1 = {};
-    var3 = 0;
-    var6 = var5[var3];
+    var6 = 'RNSVGTextPath';
+    var1.uiViewClassName = var6;
+    var4 = {};
+    var8 = {};
+    var9 = 'onSvgLayout';
+    var8.registrationName = var9;
+    var4.topSvgLayout = var8;
+    var1.directEventTypes = var4;
+    var10 = var0.Object;
+    var9 = var10.assign;
+    var8 = {
+        'name': true,
+        'opacity': true,
+        'matrix': true,
+        'mask': true,
+        'markerStart': true,
+        'markerMid': true,
+        'markerEnd': true,
+        'clipPath': true,
+        'clipRule': true,
+        'responsible': true,
+        'display': true,
+        'pointerEvents': true,
+        'color': null,
+        'fill': true,
+        'fillOpacity': true,
+        'fillRule': true,
+        'stroke': true,
+        'strokeOpacity': true,
+        'strokeWidth': true,
+        'strokeLinecap': true,
+        'strokeLinejoin': true,
+        'strokeDasharray': true,
+        'strokeDashoffset': true,
+        'strokeMiterlimit': true,
+        'vectorEffect': true,
+        'propList': true,
+        'filter': true,
+        'fontSize': true,
+        'fontWeight': true,
+        'font': true,
+        'dx': true,
+        'dy': true,
+        'x': true,
+        'y': true,
+        'rotate': true,
+        'inlineSize': true,
+        'textLength': true,
+        'baselineShift': true,
+        'lengthAdjust': true,
+        'alignmentBaseline': true,
+        'verticalAlign': true,
+        'href': true,
+        'side': true,
+        'method': true,
+        'midLine': true,
+        'spacing': true,
+        'startOffset': true
+    };
+    var4 = {};
+    var0 = 0;
+    var11 = var7[var0];
     var0 = undefined;
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Circle;
-    var1.circle = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.ClipPath;
-    var1.clipPath = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Defs;
-    var1.defs = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Ellipse;
-    var1.ellipse = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Filter;
-    var1.filter = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeBlend;
-    var1.feBlend = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeColorMatrix;
-    var1.feColorMatrix = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeComponentTransfer;
-    var1.feComponentTransfer = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeComposite;
-    var1.feComposite = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeConvolveMatrix;
-    var1.feConvolveMatrix = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeDiffuseLighting;
-    var1.feDiffuseLighting = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeDisplacementMap;
-    var1.feDisplacementMap = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeDistantLight;
-    var1.feDistantLight = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeDropShadow;
-    var1.feDropShadow = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeFlood;
-    var1.feFlood = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeGaussianBlur;
-    var1.feGaussianBlur = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeImage;
-    var1.feImage = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeMerge;
-    var1.feMerge = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeMergeNode;
-    var1.feMergeNode = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeMorphology;
-    var1.feMorphology = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeOffset;
-    var1.feOffset = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FePointLight;
-    var1.fePointLight = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeSpecularLighting;
-    var1.feSpecularLighting = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeSpotLight;
-    var1.feSpotLight = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeTile;
-    var1.feTile = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.FeTurbulence;
-    var1.feTurbulence = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.ForeignObject;
-    var1.foreignObject = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.G;
-    var1.g = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Image;
-    var1.image = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Line;
-    var1.line = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.LinearGradient;
-    var1.linearGradient = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Marker;
-    var1.marker = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Mask;
-    var1.mask = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Path;
-    var1.path = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Pattern;
-    var1.pattern = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Polygon;
-    var1.polygon = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Polyline;
-    var1.polyline = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.RadialGradient;
-    var1.radialGradient = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Rect;
-    var1.rect = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Stop;
-    var1.stop = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Svg;
-    var1.svg = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Symbol;
-    var1.symbol = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.Text;
-    var1.text = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.TextPath;
-    var1.textPath = var6;
-    var6 = var5[var3];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.TSpan;
-    var1.tspan = var6;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.Use;
-    var1.use = var3;
-    var2.tags = var1;
+    var11 = var5.bind(var0)(var11);
+    var11 = var11.default;
+    var4.process = var11;
+    var8.color = var4;
+    var4 = 1;
+    var4 = var7[var4];
+    var12 = var5.bind(var0)(var4);
+    var11 = var12.ConditionallyIgnoredEventHandlers;
+    var4 = {};
+    var4.onSvgLayout = var13;
+    var4 = var11.bind(var12)(var4);
+    var4 = var9.bind(var10)(var8, var4);
+    var1.validAttributes = var4;
+    var _closure1_slot0 = var1;
+    var4 = 2;
+    var4 = var7[var4];
+    var5 = var5.bind(var0)(var4);
+    var4 = var5.get;
+    var3 = function() { // Environment: var3
+        var0 = _closure1_slot0;
+        return var0;
+    };
+    var3 = var4.bind(var5)(var6, var3);
+    var2.default = var3;
+    var2.__INTERNAL_VIEW_CONFIG = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5458]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [38, 110, 42]);

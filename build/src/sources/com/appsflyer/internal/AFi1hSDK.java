@@ -17,21 +17,21 @@ public class AFi1hSDK {
     private static long afInfoLog;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final Map f8892d;
+    public static final Map f7860d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static Object f8893e;
+    private static Object f7861e;
     private static int force;
 
     /* renamed from: i  reason: collision with root package name */
-    private static Object f8894i;
+    private static Object f7862i;
     private static byte[] unregisterClient;
 
     /* renamed from: v  reason: collision with root package name */
-    private static long f8895v;
+    private static long f7863v;
 
     /* renamed from: w  reason: collision with root package name */
-    private static byte[] f8896w;
+    private static byte[] f7864w;
 
     /* JADX WARN: Code restructure failed: missing block: B:5:0x001c, code lost:
         if (r8 == null) goto L13;
@@ -146,7 +146,7 @@ public class AFi1hSDK {
         r2 = false;
      */
     /* JADX WARN: Code restructure failed: missing block: B:643:0x1c2b, code lost:
-        com.appsflyer.internal.AFi1hSDK.f8894i = r0.newInstance(r1, java.lang.Boolean.valueOf(r2));
+        com.appsflyer.internal.AFi1hSDK.f7862i = r0.newInstance(r1, java.lang.Boolean.valueOf(r2));
      */
     /* JADX WARN: Code restructure failed: missing block: B:644:0x1c39, code lost:
         r7.close();
@@ -209,16 +209,16 @@ public class AFi1hSDK {
         int i12 = i11 + 73;
         $10 = i12 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i12 % 2 != 0) {
-            obj = f8894i;
+            obj = f7862i;
             int i13 = 67 / 0;
         } else {
-            obj = f8894i;
+            obj = f7862i;
         }
         $10 = (i11 + 95) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         try {
             int i14 = $$b;
             byte[] bArr = $$a;
-            int intValue = ((Integer) Class.forName($$c((byte) i14, bArr[4], (short) (i14 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING)), true, (ClassLoader) f8893e).getMethod($$c(bArr[487], bArr[637], bArr[7]), Integer.TYPE).invoke(obj, Integer.valueOf(i10))).intValue();
+            int intValue = ((Integer) Class.forName($$c((byte) i14, bArr[4], (short) (i14 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING)), true, (ClassLoader) f7861e).getMethod($$c(bArr[487], bArr[637], bArr[7]), Integer.TYPE).invoke(obj, Integer.valueOf(i10))).intValue();
             int i15 = $10 + 25;
             $11 = i15 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i15 % 2 != 0) {
@@ -261,12 +261,12 @@ public class AFi1hSDK {
     public static int getCurrencyIso4217Code(Object obj) {
         System.currentTimeMillis();
         System.currentTimeMillis();
-        Object obj2 = f8894i;
+        Object obj2 = f7862i;
         $11 = ($10 + 65) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         try {
             int i10 = $$b;
             byte[] bArr = $$a;
-            int intValue = ((Integer) Class.forName($$c((byte) i10, bArr[4], (short) (i10 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING)), true, (ClassLoader) f8893e).getMethod($$c(bArr[487], bArr[637], bArr[7]), Object.class).invoke(obj2, obj)).intValue();
+            int intValue = ((Integer) Class.forName($$c((byte) i10, bArr[4], (short) (i10 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING)), true, (ClassLoader) f7861e).getMethod($$c(bArr[487], bArr[637], bArr[7]), Object.class).invoke(obj2, obj)).intValue();
             int i11 = $10 + 55;
             $11 = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i11 % 2 != 0) {
@@ -284,7 +284,7 @@ public class AFi1hSDK {
 
     public static Object getCurrencyIso4217Code(char c10, int i10, int i11) {
         int i12 = ($10 + 107) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
-        Object obj = f8894i;
+        Object obj = f7862i;
         int i13 = ((i12 & 71) + (i12 | 71)) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         $10 = i13;
         $11 = (i13 + 71) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
@@ -292,7 +292,7 @@ public class AFi1hSDK {
             Object[] objArr = {Character.valueOf(c10), Integer.valueOf(i10), Integer.valueOf(i11)};
             int i14 = $$b;
             byte[] bArr = $$a;
-            Class<?> cls = Class.forName($$c((byte) i14, bArr[4], (short) (i14 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING)), true, (ClassLoader) f8893e);
+            Class<?> cls = Class.forName($$c((byte) i14, bArr[4], (short) (i14 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING)), true, (ClassLoader) f7861e);
             String $$c = $$c((byte) (i14 + 4), (byte) (-bArr[815]), bArr[35]);
             Class cls2 = Character.TYPE;
             Class cls3 = Integer.TYPE;

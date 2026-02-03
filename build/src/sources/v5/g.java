@@ -6,7 +6,7 @@ import w5.c;
 public class g implements n0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g f50811a = new g();
+    public static final g f51139a = new g();
 
     private g() {
     }

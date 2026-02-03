@@ -3,15 +3,15 @@ package rk;
 abstract class q {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f48545a;
+    private final int f48854a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public q(int i10) {
-        this.f48545a = i10;
+        this.f48854a = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final int a() {
-        return this.f48545a;
+        return this.f48854a;
     }
 }

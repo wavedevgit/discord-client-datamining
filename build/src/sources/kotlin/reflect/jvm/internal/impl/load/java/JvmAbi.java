@@ -16,18 +16,18 @@ public final class JvmAbi {
     public static final FqName JVM_FIELD_ANNOTATION_FQ_NAME;
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ClassId f33796a;
+    private static final ClassId f33186a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ClassId f33797b;
+    private static final ClassId f33187b;
 
     static {
         FqName fqName = new FqName("kotlin.jvm.JvmField");
         JVM_FIELD_ANNOTATION_FQ_NAME = fqName;
         ClassId.Companion companion = ClassId.Companion;
         JVM_FIELD_ANNOTATION_CLASS_ID = companion.topLevel(fqName);
-        f33796a = companion.topLevel(new FqName("kotlin.reflect.jvm.internal.ReflectionFactoryImpl"));
-        f33797b = ClassId.Companion.fromString$default(companion, "kotlin/jvm/internal/RepeatableContainer", false, 2, null);
+        f33186a = companion.topLevel(new FqName("kotlin.reflect.jvm.internal.ReflectionFactoryImpl"));
+        f33187b = ClassId.Companion.fromString$default(companion, "kotlin/jvm/internal/RepeatableContainer", false, 2, null);
     }
 
     private JvmAbi() {
@@ -85,6 +85,6 @@ public final class JvmAbi {
 
     @NotNull
     public final ClassId getREPEATABLE_ANNOTATION_CONTAINER_META_ANNOTATION() {
-        return f33797b;
+        return f33187b;
     }
 }

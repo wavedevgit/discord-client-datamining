@@ -21,39 +21,39 @@ public final class a extends j {
 
     /* renamed from: p.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0558a implements a0 {
+    public static final class C0555a implements a0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final r1 f44870a = r1.Z();
+        private final r1 f44828a = r1.Z();
 
         @Override // x.a0
         public q1 a() {
-            return this.f44870a;
+            return this.f44828a;
         }
 
         public a c() {
-            return new a(w1.Y(this.f44870a));
+            return new a(w1.Y(this.f44828a));
         }
 
-        public C0558a d(r0 r0Var) {
+        public C0555a d(r0 r0Var) {
             e(r0Var, r0.c.OPTIONAL);
             return this;
         }
 
-        public C0558a e(r0 r0Var, r0.c cVar) {
+        public C0555a e(r0 r0Var, r0.c cVar) {
             for (r0.a aVar : r0Var.b()) {
-                this.f44870a.K(aVar, cVar, r0Var.a(aVar));
+                this.f44828a.K(aVar, cVar, r0Var.a(aVar));
             }
             return this;
         }
 
-        public C0558a f(CaptureRequest.Key key, Object obj) {
-            this.f44870a.V(a.W(key), obj);
+        public C0555a f(CaptureRequest.Key key, Object obj) {
+            this.f44828a.V(a.W(key), obj);
             return this;
         }
 
-        public C0558a g(CaptureRequest.Key key, Object obj, r0.c cVar) {
-            this.f44870a.K(a.W(key), cVar, obj);
+        public C0555a g(CaptureRequest.Key key, Object obj, r0.c cVar) {
+            this.f44828a.K(a.W(key), cVar, obj);
             return this;
         }
     }

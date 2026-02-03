@@ -6,7 +6,7 @@ import android.view.DisplayCutout;
 public final class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final DisplayCutout f3412a;
+    private final DisplayCutout f3381a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static class a {
@@ -28,7 +28,7 @@ public final class i {
     }
 
     private i(DisplayCutout displayCutout) {
-        this.f3412a = displayCutout;
+        this.f3381a = displayCutout;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -41,28 +41,28 @@ public final class i {
 
     public int a() {
         if (Build.VERSION.SDK_INT >= 28) {
-            return a.a(this.f3412a);
+            return a.a(this.f3381a);
         }
         return 0;
     }
 
     public int b() {
         if (Build.VERSION.SDK_INT >= 28) {
-            return a.b(this.f3412a);
+            return a.b(this.f3381a);
         }
         return 0;
     }
 
     public int c() {
         if (Build.VERSION.SDK_INT >= 28) {
-            return a.c(this.f3412a);
+            return a.c(this.f3381a);
         }
         return 0;
     }
 
     public int d() {
         if (Build.VERSION.SDK_INT >= 28) {
-            return a.d(this.f3412a);
+            return a.d(this.f3381a);
         }
         return 0;
     }
@@ -72,13 +72,13 @@ public final class i {
             return true;
         }
         if (obj != null && i.class == obj.getClass()) {
-            return b2.b.a(this.f3412a, ((i) obj).f3412a);
+            return b2.b.a(this.f3381a, ((i) obj).f3381a);
         }
         return false;
     }
 
     public int hashCode() {
-        DisplayCutout displayCutout = this.f3412a;
+        DisplayCutout displayCutout = this.f3381a;
         if (displayCutout == null) {
             return 0;
         }
@@ -86,6 +86,6 @@ public final class i {
     }
 
     public String toString() {
-        return "DisplayCutoutCompat{" + this.f3412a + "}";
+        return "DisplayCutoutCompat{" + this.f3381a + "}";
     }
 }

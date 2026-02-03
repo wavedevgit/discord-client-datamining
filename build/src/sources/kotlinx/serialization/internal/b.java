@@ -1,6 +1,6 @@
 package kotlinx.serialization.internal;
 
-import bt.f2;
+import dt.f2;
 import kotlin.jvm.internal.ByteCompanionObject;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
@@ -9,14 +9,14 @@ import kotlinx.serialization.encoding.CompositeEncoder;
 public final class b extends f2 implements KSerializer {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final b f36175c = new b();
+    public static final b f35565c = new b();
 
     private b() {
-        super(zs.a.C(ByteCompanionObject.INSTANCE));
+        super(bt.a.y(ByteCompanionObject.INSTANCE));
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // bt.a
+    @Override // dt.a
     /* renamed from: v */
     public int e(byte[] bArr) {
         Intrinsics.checkNotNullParameter(bArr, "<this>");
@@ -24,31 +24,31 @@ public final class b extends f2 implements KSerializer {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // bt.f2
+    @Override // dt.f2
     /* renamed from: w */
     public byte[] r() {
         return new byte[0];
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // bt.s, bt.a
+    @Override // dt.s, dt.a
     /* renamed from: x */
-    public void h(kotlinx.serialization.encoding.c decoder, int i10, bt.i builder, boolean z10) {
+    public void h(kotlinx.serialization.encoding.c decoder, int i10, dt.i builder, boolean z10) {
         Intrinsics.checkNotNullParameter(decoder, "decoder");
         Intrinsics.checkNotNullParameter(builder, "builder");
         builder.e(decoder.B(getDescriptor(), i10));
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // bt.a
+    @Override // dt.a
     /* renamed from: y */
-    public bt.i k(byte[] bArr) {
+    public dt.i k(byte[] bArr) {
         Intrinsics.checkNotNullParameter(bArr, "<this>");
-        return new bt.i(bArr);
+        return new dt.i(bArr);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // bt.f2
+    @Override // dt.f2
     /* renamed from: z */
     public void u(CompositeEncoder encoder, byte[] content, int i10) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");

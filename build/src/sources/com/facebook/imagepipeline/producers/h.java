@@ -6,11 +6,11 @@ import com.facebook.common.references.CloseableReference;
 public class h extends o0 {
 
     /* renamed from: f  reason: collision with root package name */
-    private final la.k f11414f;
+    private final la.k f10382f;
 
     public h(la.k kVar, w0 w0Var) {
         super(w0Var, "BitmapMemoryCacheKeyMultiplexProducer", "multiplex_bmp_cnt");
-        this.f11414f = kVar;
+        this.f10382f = kVar;
     }
 
     @Override // com.facebook.imagepipeline.producers.o0
@@ -23,6 +23,6 @@ public class h extends o0 {
     @Override // com.facebook.imagepipeline.producers.o0
     /* renamed from: m */
     public Pair j(ProducerContext producerContext) {
-        return Pair.create(this.f11414f.getBitmapCacheKey(producerContext.V(), producerContext.a()), producerContext.F0());
+        return Pair.create(this.f10382f.getBitmapCacheKey(producerContext.V(), producerContext.a()), producerContext.E0());
     }
 }

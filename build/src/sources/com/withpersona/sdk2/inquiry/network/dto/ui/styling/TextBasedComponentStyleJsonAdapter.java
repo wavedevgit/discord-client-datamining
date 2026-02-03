@@ -87,9 +87,9 @@ public final class TextBasedComponentStyleJsonAdapter extends h {
         AttributeStyles.TextBasedTextColorStyle textBasedTextColorStyle = null;
         AttributeStyles.TextBasedTextColorStyle textBasedTextColorStyle2 = null;
         while (reader.hasNext()) {
-            switch (reader.t0(this.options)) {
+            switch (reader.A0(this.options)) {
                 case -1:
-                    reader.F0();
+                    reader.E0();
                     reader.P();
                     break;
                 case 0:
@@ -130,23 +130,23 @@ public final class TextBasedComponentStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (textBasedComponentStyle != null) {
             writer.l();
-            writer.t0(ViewProps.MARGIN);
+            writer.A0(ViewProps.MARGIN);
             this.nullableTextBasedMarginStyleAdapter.toJson(writer, textBasedComponentStyle.getMargin());
-            writer.t0("justify");
+            writer.A0("justify");
             this.nullableTextBasedJustifyStyleAdapter.toJson(writer, textBasedComponentStyle.getJustify());
-            writer.t0(ViewProps.FONT_FAMILY);
+            writer.A0(ViewProps.FONT_FAMILY);
             this.nullableTextBasedFontFamilyStyleAdapter.toJson(writer, textBasedComponentStyle.getFontFamily());
-            writer.t0(ViewProps.FONT_SIZE);
+            writer.A0(ViewProps.FONT_SIZE);
             this.nullableTextBasedFontSizeStyleAdapter.toJson(writer, textBasedComponentStyle.getFontSize());
-            writer.t0(ViewProps.FONT_WEIGHT);
+            writer.A0(ViewProps.FONT_WEIGHT);
             this.nullableTextBasedFontWeightStyleAdapter.toJson(writer, textBasedComponentStyle.getFontWeight());
-            writer.t0(ViewProps.LETTER_SPACING);
+            writer.A0(ViewProps.LETTER_SPACING);
             this.nullableTextBasedLetterSpacingStyleAdapter.toJson(writer, textBasedComponentStyle.getLetterSpacing());
-            writer.t0(ViewProps.LINE_HEIGHT);
+            writer.A0(ViewProps.LINE_HEIGHT);
             this.nullableTextBasedLineHeightStyleAdapter.toJson(writer, textBasedComponentStyle.getLineHeight());
-            writer.t0("textColor");
+            writer.A0("textColor");
             this.nullableTextBasedTextColorStyleAdapter.toJson(writer, textBasedComponentStyle.getTextColor());
-            writer.t0("textColorHighlight");
+            writer.A0("textColorHighlight");
             this.nullableTextBasedTextColorStyleAdapter.toJson(writer, textBasedComponentStyle.getTextColorHighlight());
             writer.E();
             return;

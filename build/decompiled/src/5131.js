@@ -11,55 +11,30 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var3.bind(var4)(var1, var0, var2);
     var0 = {};
     var2 = {
-        'message': 'Parameters required for initializing the module are missing',
-        'type': 'Initialization essentials missing'
+        'message': '`refreshing` prop must be set as a boolean in order to use `onRefresh`, but got `undefined`.',
+        'type': 'InvariantViolation'
     };
-    var0.initializationException = var2;
+    var0.refreshBooleanMissing = var2;
     var2 = {
-        'message': 'Dimensions cannot be undefined or null, check if LayoutProvider returns irregular values',
-        'type': 'ItemBoundsException'
+        'message': 'sticky headers are not supported when list is in horizontal mode. Remove `stickyHeaderIndices` prop.',
+        'type': 'NotSupportedException'
     };
-    var0.itemBoundsException = var2;
+    var0.stickyWhileHorizontalNotSupported = var2;
     var2 = {
-        'message': 'RecyclerListView items always require a type, check if LayoutProvider returns irregular values',
-        'type': 'ItemTypeNullException'
+        'message': 'numColumns is not supported when list is in horizontal mode. Please remove or set numColumns to 1.',
+        'type': 'NotSupportedException'
     };
-    var0.itemTypeNullException = var2;
+    var0.columnsWhileHorizontalNotSupported = var2;
     var2 = {
-        'message': 'RecyclerListView needs to have a bounded size. Currently height or, width is 0.Consider adding style={{flex:1}} or, fixed dimensions',
-        'type': 'LayoutException'
+        'message': 'You can set exactly one of itemVisiblePercentThreshold or viewAreaCoveragePercentThreshold. Specifying both is not supported.',
+        'type': 'MultipleViewabilityThresholdTypesException'
     };
-    var0.layoutException = var2;
+    var0.multipleViewabilityThresholdTypesNotSupported = var2;
     var2 = {
-        'message': "Unable to detect the running platform, if you're trying to run recyclerlistview in browser make sure process.env.RLV_ENV is set to browser in webpack config",
-        'type': 'PlatformNotDetectedException'
+        'message': 'optimizeItemArrangement has been enabled on `MasonryFlashList` but overrideItemLayout is not set.',
+        'type': 'InvariantViolation'
     };
-    var0.platformNotDetectedException = var2;
-    var2 = {
-        'message': 'missing datasource or layout provider, cannot proceed without it',
-        'type': 'UnresolvedDependenciesException'
-    };
-    var0.unresolvedDependenciesException = var2;
-    var2 = {
-        'message': 'When using StickyContainer, RecyclerListView needs to use ref as a function and not as a string.',
-        'type': 'RefNotAsFunctionException'
-    };
-    var0.refNotAsFunctionException = var2;
-    var2 = {
-        'message': 'StickyContainer can only have a single child of type RecyclerListView.',
-        'type': 'WrongStickyChildTypeException'
-    };
-    var0.wrongStickyChildTypeException = var2;
-    var2 = {
-        'message': 'onVisibleIndexesChanged has been deprecated. Please use onVisibleIndicesChanged instead.',
-        'type': 'usingOldVisibleIndexesChangedParam'
-    };
-    var0.usingOldVisibleIndexesChangedParam = var2;
-    var2 = {
-        'message': "The sticky indices array passed to StickyContainer isn't sorted in ascending order.",
-        'type': 'stickyIndicesArraySortError'
-    };
-    var0.stickyIndicesArraySortError = var2;
+    var0.overrideItemLayoutRequiredForMasonryOptimization = var2;
     var1.default = var0;
     var0 = undefined;
     return var0;

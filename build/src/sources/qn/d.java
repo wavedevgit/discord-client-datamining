@@ -1,49 +1,122 @@
 package qn;
 
+import android.graphics.Bitmap;
 import android.graphics.Rect;
+import androidx.recyclerview.widget.RecyclerView;
+import com.google.android.gms.tasks.Task;
+import com.google.android.renderscript.Toolkit;
+import java.util.List;
+import java.util.concurrent.ExecutionException;
+import kotlin.Lazy;
+import kotlin.Result;
+import kotlin.collections.CollectionsKt;
+import kotlin.coroutines.Continuation;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import nn.j0;
+import pn.g;
+import pn.j0;
+import qn.a;
+import qn.b;
+import rj.b;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class d {
-    public static final Rect a(c cVar, j0 imageToAnalyze) {
-        int height;
-        int width;
-        double d10;
-        Intrinsics.checkNotNullParameter(cVar, "<this>");
-        Intrinsics.checkNotNullParameter(imageToAnalyze, "imageToAnalyze");
-        int width2 = cVar.b().width();
-        int height2 = cVar.b().height();
-        if (width2 != 0 && height2 != 0) {
-            if (imageToAnalyze.d() != 90 && imageToAnalyze.d() != 270) {
-                height = imageToAnalyze.getWidth();
-                width = imageToAnalyze.getHeight();
-            } else {
-                height = imageToAnalyze.getHeight();
-                width = imageToAnalyze.getWidth();
-            }
-            double d11 = height;
-            double d12 = width2;
-            double d13 = d11 / d12;
-            double d14 = width;
-            double d15 = height2;
-            double d16 = d14 / d15;
-            double min = Math.min(d13, d16);
-            double d17 = 0.0d;
-            if (d13 > d16) {
-                d10 = 0.0d;
-                d17 = (d11 - (d12 * min)) / 2.0d;
-            } else {
-                d10 = (d14 - (d15 * min)) / 2.0d;
-            }
-            double d18 = d17 + ((cVar.a().left - cVar.b().left) * min);
-            double d19 = d10 + ((cVar.a().top - cVar.b().top) * min);
-            double width3 = cVar.a().width() * min;
-            double height3 = cVar.a().height() * min;
-            if (imageToAnalyze.d() != 90 && imageToAnalyze.d() != 270) {
-                return new Rect((int) d18, (int) d19, (int) (d18 + width3), (int) (d19 + height3));
-            }
-            return new Rect((int) d19, (int) d18, (int) (d19 + height3), (int) (d18 + width3));
+public final class d implements e {
+
+    /* renamed from: b  reason: collision with root package name */
+    public static final a f47984b = new a(null);
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final float[] f47985c = {-0.15f, -0.15f, -0.15f, -0.15f, 2.2f, -0.15f, -0.15f, -0.15f, -0.15f};
+
+    /* renamed from: a  reason: collision with root package name */
+    private final Lazy f47986a = lr.l.a(new Function0() { // from class: qn.c
+        @Override // kotlin.jvm.functions.Function0
+        public final Object invoke() {
+            rj.a c10;
+            c10 = d.c();
+            return c10;
         }
-        return null;
+    });
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private a() {
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final rj.a c() {
+        rj.a a10 = rj.c.a(new b.a().b(RecyclerView.ItemAnimator.FLAG_MOVED, new int[0]).a());
+        Intrinsics.checkNotNullExpressionValue(a10, "getClient(...)");
+        return a10;
+    }
+
+    private final rj.a d() {
+        return (rj.a) this.f47986a.getValue();
+    }
+
+    private final Bitmap e(Bitmap bitmap) {
+        try {
+            return Toolkit.b(Toolkit.f15857a, bitmap, f47985c, null, 4, null);
+        } catch (UnsatisfiedLinkError unused) {
+            return null;
+        }
+    }
+
+    @Override // qn.e
+    public Object a(j0 j0Var, Rect rect, Continuation continuation) {
+        Bitmap e10 = j0Var.e();
+        if (e10 == null) {
+            Result.a aVar = Result.f32461e;
+            return Result.b(a.b.f47978a);
+        }
+        Bitmap e11 = e(e10);
+        if (e11 != null) {
+            e10 = e11;
+        }
+        vj.a a10 = vj.a.a(e10, j0Var.f().k());
+        Intrinsics.checkNotNullExpressionValue(a10, "fromBitmap(...)");
+        Task g10 = d().g(a10);
+        Intrinsics.checkNotNullExpressionValue(g10, "process(...)");
+        try {
+            List list = (List) wg.m.a(g10);
+            Object l10 = g10.l();
+            Intrinsics.checkNotNullExpressionValue(l10, "getResult(...)");
+            sj.a aVar2 = (sj.a) CollectionsKt.q0((List) l10, 0);
+            if (aVar2 == null) {
+                Result.a aVar3 = Result.f32461e;
+                return Result.b(a.b.f47978a);
+            }
+            String d10 = aVar2.d();
+            if (d10 == null) {
+                Result.a aVar4 = Result.f32461e;
+                return Result.b(a.b.f47978a);
+            } else if (aVar2.c() == 2048) {
+                g.b bVar = new g.b(d10);
+                Rect rect2 = new Rect(0, 0, j0Var.f().l(), j0Var.f().h());
+                Rect a11 = aVar2.a();
+                if (a11 == null) {
+                    Result.a aVar5 = Result.f32461e;
+                    return Result.b(a.b.f47978a);
+                }
+                rect2.inset(1, 1);
+                if (rect2.contains(a11)) {
+                    Result.a aVar6 = Result.f32461e;
+                    return Result.b(new a.C0578a(bVar));
+                }
+                Result.a aVar7 = Result.f32461e;
+                return Result.b(a.b.f47978a);
+            } else {
+                Result.a aVar8 = Result.f32461e;
+                return Result.b(a.b.f47978a);
+            }
+        } catch (ExecutionException unused) {
+            Result.a aVar9 = Result.f32461e;
+            return Result.b(kotlin.c.a(new b.C0579b()));
+        }
     }
 }

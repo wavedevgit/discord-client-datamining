@@ -20,9 +20,9 @@ public final class TypeParameterUtilsKt {
     public static final PossiblyInnerType buildPossiblyInnerType(@NotNull KotlinType kotlinType) {
         ClassifierDescriptorWithTypeParameters classifierDescriptorWithTypeParameters;
         Intrinsics.checkNotNullParameter(kotlinType, "<this>");
-        ClassifierDescriptor mo1200getDeclarationDescriptor = kotlinType.getConstructor().mo1200getDeclarationDescriptor();
-        if (mo1200getDeclarationDescriptor instanceof ClassifierDescriptorWithTypeParameters) {
-            classifierDescriptorWithTypeParameters = (ClassifierDescriptorWithTypeParameters) mo1200getDeclarationDescriptor;
+        ClassifierDescriptor mo1197getDeclarationDescriptor = kotlinType.getConstructor().mo1197getDeclarationDescriptor();
+        if (mo1197getDeclarationDescriptor instanceof ClassifierDescriptorWithTypeParameters) {
+            classifierDescriptorWithTypeParameters = (ClassifierDescriptorWithTypeParameters) mo1197getDeclarationDescriptor;
         } else {
             classifierDescriptorWithTypeParameters = null;
         }
@@ -40,7 +40,7 @@ public final class TypeParameterUtilsKt {
         if (!classifierDescriptorWithTypeParameters.isInner() && !(classifierDescriptorWithTypeParameters.getContainingDeclaration() instanceof CallableDescriptor)) {
             return declaredTypeParameters;
         }
-        List Y = kotlin.sequences.k.Y(kotlin.sequences.k.L(kotlin.sequences.k.F(kotlin.sequences.k.W(DescriptorUtilsKt.getParents(classifierDescriptorWithTypeParameters), i.f33461d), j.f33664d), k.f33665d));
+        List Y = kotlin.sequences.k.Y(kotlin.sequences.k.L(kotlin.sequences.k.F(kotlin.sequences.k.W(DescriptorUtilsKt.getParents(classifierDescriptorWithTypeParameters), i.f32851d), j.f33054d), k.f33055d));
         Iterator it = DescriptorUtilsKt.getParents(classifierDescriptorWithTypeParameters).iterator();
         while (true) {
             list = null;

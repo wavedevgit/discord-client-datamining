@@ -11,19 +11,19 @@ public final class i1 implements Parcelable.Creator {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void a(f fVar, Parcel parcel, int i10) {
         int a10 = hf.c.a(parcel);
-        hf.c.l(parcel, 1, fVar.f26892d);
-        hf.c.l(parcel, 2, fVar.f26893e);
-        hf.c.l(parcel, 3, fVar.f26894i);
-        hf.c.s(parcel, 4, fVar.f26895o, false);
-        hf.c.k(parcel, 5, fVar.f26896p, false);
-        hf.c.v(parcel, 6, fVar.f26897q, i10, false);
-        hf.c.e(parcel, 7, fVar.f26898r, false);
-        hf.c.q(parcel, 8, fVar.f26899s, i10, false);
-        hf.c.v(parcel, 10, fVar.f26900t, i10, false);
-        hf.c.v(parcel, 11, fVar.f26901u, i10, false);
-        hf.c.c(parcel, 12, fVar.f26902v);
-        hf.c.l(parcel, 13, fVar.f26903w);
-        hf.c.c(parcel, 14, fVar.f26904x);
+        hf.c.l(parcel, 1, fVar.f26105d);
+        hf.c.l(parcel, 2, fVar.f26106e);
+        hf.c.l(parcel, 3, fVar.f26107i);
+        hf.c.s(parcel, 4, fVar.f26108o, false);
+        hf.c.k(parcel, 5, fVar.f26109p, false);
+        hf.c.v(parcel, 6, fVar.f26110q, i10, false);
+        hf.c.e(parcel, 7, fVar.f26111r, false);
+        hf.c.q(parcel, 8, fVar.f26112s, i10, false);
+        hf.c.v(parcel, 10, fVar.f26113t, i10, false);
+        hf.c.v(parcel, 11, fVar.f26114u, i10, false);
+        hf.c.c(parcel, 12, fVar.f26115v);
+        hf.c.l(parcel, 13, fVar.f26116w);
+        hf.c.c(parcel, 14, fVar.f26117x);
         hf.c.s(parcel, 15, fVar.b(), false);
         hf.c.b(parcel, a10);
     }
@@ -31,7 +31,7 @@ public final class i1 implements Parcelable.Creator {
     @Override // android.os.Parcelable.Creator
     public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
         int A = hf.b.A(parcel);
-        Scope[] scopeArr = f.f26891z;
+        Scope[] scopeArr = f.f26104z;
         Bundle bundle = new Bundle();
         com.google.android.gms.common.d[] dVarArr = f.A;
         com.google.android.gms.common.d[] dVarArr2 = dVarArr;

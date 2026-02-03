@@ -12,13 +12,13 @@ import v3.b;
 public final class SavedStateRegistryController {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f5091c = new a(null);
+    public static final a f5060c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f5092a;
+    private final b f5061a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final SavedStateRegistry f5093b;
+    private final SavedStateRegistry f5062b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -29,7 +29,7 @@ public final class SavedStateRegistryController {
         /* JADX INFO: Access modifiers changed from: private */
         public static final Unit c(f fVar) {
             fVar.getLifecycle().a(new androidx.savedstate.a(fVar));
-            return Unit.f33074a;
+            return Unit.f32464a;
         }
 
         public final SavedStateRegistryController b(final f owner) {
@@ -53,28 +53,28 @@ public final class SavedStateRegistryController {
     }
 
     public static final SavedStateRegistryController a(f fVar) {
-        return f5091c.b(fVar);
+        return f5060c.b(fVar);
     }
 
     public final SavedStateRegistry b() {
-        return this.f5093b;
+        return this.f5062b;
     }
 
     public final void c() {
-        this.f5092a.f();
+        this.f5061a.f();
     }
 
     public final void d(Bundle bundle) {
-        this.f5092a.h(bundle);
+        this.f5061a.h(bundle);
     }
 
     public final void e(Bundle outBundle) {
         Intrinsics.checkNotNullParameter(outBundle, "outBundle");
-        this.f5092a.i(outBundle);
+        this.f5061a.i(outBundle);
     }
 
     private SavedStateRegistryController(b bVar) {
-        this.f5092a = bVar;
-        this.f5093b = new SavedStateRegistry(bVar);
+        this.f5061a = bVar;
+        this.f5062b = new SavedStateRegistry(bVar);
     }
 }

@@ -6,26 +6,26 @@ import java.util.HashMap;
 public final class x3 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final u f30519a;
+    private final u f30880a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f30520b;
+    private final String f30881b;
 
     public x3(k7 k7Var) {
         io.sentry.util.y.c(k7Var, "options is required");
-        this.f30519a = k7Var.retrieveParsedDsn();
-        this.f30520b = k7Var.getSentryClientName();
+        this.f30880a = k7Var.retrieveParsedDsn();
+        this.f30881b = k7Var.getSentryClientName();
     }
 
     public w3 a() {
         URI c10;
         String str;
-        String uri = this.f30519a.c().resolve(c10.getPath() + "/envelope/").toString();
-        String a10 = this.f30519a.a();
-        String b10 = this.f30519a.b();
+        String uri = this.f30880a.c().resolve(c10.getPath() + "/envelope/").toString();
+        String a10 = this.f30880a.a();
+        String b10 = this.f30880a.b();
         StringBuilder sb2 = new StringBuilder();
         sb2.append("Sentry sentry_version=7,sentry_client=");
-        sb2.append(this.f30520b);
+        sb2.append(this.f30881b);
         sb2.append(",sentry_key=");
         sb2.append(a10);
         if (b10 != null && b10.length() > 0) {
@@ -36,7 +36,7 @@ public final class x3 {
         sb2.append(str);
         String sb3 = sb2.toString();
         HashMap hashMap = new HashMap();
-        hashMap.put("User-Agent", this.f30520b);
+        hashMap.put("User-Agent", this.f30881b);
         hashMap.put("X-Sentry-Auth", sb3);
         return new w3(uri, hashMap);
     }

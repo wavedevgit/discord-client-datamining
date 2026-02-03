@@ -44,17 +44,17 @@ public final class NextStep_GovernmentId_PendingPageJsonAdapter extends h {
         String str = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
-                    throw tm.c.x("title", "title", reader);
+                    throw vm.c.x("title", "title", reader);
                 }
-            } else if (t02 == 1 && (str2 = (String) this.stringAdapter.fromJson(reader)) == null) {
-                throw tm.c.x("description", "description", reader);
+            } else if (A0 == 1 && (str2 = (String) this.stringAdapter.fromJson(reader)) == null) {
+                throw vm.c.x("description", "description", reader);
             }
         }
         reader.y();
@@ -62,9 +62,9 @@ public final class NextStep_GovernmentId_PendingPageJsonAdapter extends h {
             if (str2 != null) {
                 return new NextStep.GovernmentId.PendingPage(str, str2);
             }
-            throw tm.c.o("description", "description", reader);
+            throw vm.c.o("description", "description", reader);
         }
-        throw tm.c.o("title", "title", reader);
+        throw vm.c.o("title", "title", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -72,9 +72,9 @@ public final class NextStep_GovernmentId_PendingPageJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (pendingPage != null) {
             writer.l();
-            writer.t0("title");
+            writer.A0("title");
             this.stringAdapter.toJson(writer, pendingPage.getTitle());
-            writer.t0("description");
+            writer.A0("description");
             this.stringAdapter.toJson(writer, pendingPage.getDescription());
             writer.E();
             return;

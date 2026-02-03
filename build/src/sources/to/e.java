@@ -1,31 +1,27 @@
 package to;
 
-import jv.a0;
+import com.withpersona.sdk2.inquiry.FallbackMode;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class e implements uq.d {
+public final class e implements wq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.withpersona.sdk2.inquiry.internal.network.f f49967a;
+    private final c f50166a;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final uq.h f49968b;
-
-    public e(com.withpersona.sdk2.inquiry.internal.network.f fVar, uq.h hVar) {
-        this.f49967a = fVar;
-        this.f49968b = hVar;
+    public e(c cVar) {
+        this.f50166a = cVar;
     }
 
-    public static e a(com.withpersona.sdk2.inquiry.internal.network.f fVar, uq.h hVar) {
-        return new e(fVar, hVar);
+    public static e a(c cVar) {
+        return new e(cVar);
     }
 
-    public static yn.b b(com.withpersona.sdk2.inquiry.internal.network.f fVar, a0 a0Var) {
-        return (yn.b) uq.g.d(fVar.a(a0Var));
+    public static FallbackMode b(c cVar) {
+        return (FallbackMode) wq.g.d(cVar.b());
     }
 
     @Override // javax.inject.Provider
     /* renamed from: c */
-    public yn.b get() {
-        return b(this.f49967a, (a0) this.f49968b.get());
+    public FallbackMode get() {
+        return b(this.f50166a);
     }
 }

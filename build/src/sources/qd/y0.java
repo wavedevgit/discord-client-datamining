@@ -7,14 +7,14 @@ import qd.r;
 public abstract class y0 extends f {
 
     /* renamed from: w  reason: collision with root package name */
-    private static final Void f47642w = null;
+    private static final Void f47792w = null;
 
     /* renamed from: v  reason: collision with root package name */
-    protected final r f47643v;
+    protected final r f47793v;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public y0(r rVar) {
-        this.f47643v = rVar;
+        this.f47793v = rVar;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -58,24 +58,24 @@ public abstract class y0 extends f {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void S() {
-        J(f47642w, this.f47643v);
+        J(f47792w, this.f47793v);
     }
 
     protected abstract void T();
 
     @Override // qd.r
     public MediaItem f() {
-        return this.f47643v.f();
+        return this.f47793v.f();
     }
 
     @Override // qd.r
     public boolean p() {
-        return this.f47643v.p();
+        return this.f47793v.p();
     }
 
     @Override // qd.r
     public Timeline q() {
-        return this.f47643v.q();
+        return this.f47793v.q();
     }
 
     protected long M(long j10) {

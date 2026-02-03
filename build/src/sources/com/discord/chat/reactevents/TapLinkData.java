@@ -13,13 +13,13 @@ import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.bridge.WritableNativeMap;
 import com.facebook.react.devsupport.StackTraceHelper;
-import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
+import lr.v;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000H\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B5\u0012\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\b\u0002\u0010\b\u001a\u00020\u0005¢\u0006\u0004\b\t\u0010\nB\u001b\b\u0016\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u000b\u001a\u00020\f¢\u0006\u0004\b\t\u0010\rJ\f\u0010\u0015\u001a\u00020\u0016*\u00020\u0007H\u0002J\b\u0010\u0017\u001a\u00020\u0018H\u0016J\u0012\u0010\u0019\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0004\b\u001a\u0010\u000fJ\u000b\u0010\u001b\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010\u001c\u001a\u0004\u0018\u00010\u0007HÆ\u0003J\t\u0010\u001d\u001a\u00020\u0005HÆ\u0003J>\u0010\u001e\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00072\b\b\u0002\u0010\b\u001a\u00020\u0005HÆ\u0001¢\u0006\u0004\b\u001f\u0010 J\u0013\u0010!\u001a\u00020\"2\b\u0010#\u001a\u0004\u0018\u00010$HÖ\u0003J\t\u0010%\u001a\u00020&HÖ\u0001J\t\u0010'\u001a\u00020\u0005HÖ\u0001R\u0015\u0010\u0002\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u0010\u0010\u001a\u0004\b\u000e\u0010\u000fR\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u000fR\u0013\u0010\u0006\u001a\u0004\u0018\u00010\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0013R\u0011\u0010\b\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u000f¨\u0006("}, d2 = {"Lcom/discord/chat/reactevents/TapLinkData;", "Lcom/discord/reactevents/ReactEvent;", "messageId", "Lcom/discord/primitives/MessageId;", "title", "", "target", "Lcom/discord/chat/bridge/contentnode/LinkContextData;", "content", "<init>", "(Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/contentnode/LinkContextData;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "node", "Lcom/discord/chat/bridge/contentnode/LinkContentNode;", "(Ljava/lang/String;Lcom/discord/chat/bridge/contentnode/LinkContentNode;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getMessageId-N_6c4I0", "()Ljava/lang/String;", "Ljava/lang/String;", "getTitle", "getTarget", "()Lcom/discord/chat/bridge/contentnode/LinkContextData;", "getContent", "toMap", "Lcom/facebook/react/bridge/WritableNativeMap;", "serialize", "Lcom/facebook/react/bridge/WritableMap;", "component1", "component1-N_6c4I0", "component2", "component3", "component4", "copy", "copy-Efb-KrI", "(Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/contentnode/LinkContextData;Ljava/lang/String;)Lcom/discord/chat/reactevents/TapLinkData;", "equals", "", "other", "", "hashCode", "", "toString", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nTapLinkData.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TapLinkData.kt\ncom/discord/chat/reactevents/TapLinkData\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,136:1\n1#2:137\n*E\n"})
@@ -60,47 +60,47 @@ public final class TapLinkData implements ReactEvent {
             return nativeMapOf;
         } else if (linkContextData2 instanceof LinkContextData.BindOpenThreadChannel) {
             NativeMapExtensionsKt.put(nativeMapOf, "action", ((LinkContextData.BindOpenThreadChannel) linkContextData2).getAction());
-            NativeMapExtensionsKt.put(nativeMapOf, "threadId", ChannelId.m1067toStringimpl(((LinkContextData.BindOpenThreadChannel) this.target).m336getThreadIdo4g7jtM()));
+            NativeMapExtensionsKt.put(nativeMapOf, "threadId", ChannelId.m1066toStringimpl(((LinkContextData.BindOpenThreadChannel) this.target).m336getThreadIdo4g7jtM()));
             return nativeMapOf;
         } else {
             if (linkContextData2 instanceof LinkContextData.BindUserMenu) {
                 NativeMapExtensionsKt.put(nativeMapOf, "action", ((LinkContextData.BindUserMenu) linkContextData2).getAction());
-                NativeMapExtensionsKt.put(nativeMapOf, "userId", UserId.m1145toStringimpl(((LinkContextData.BindUserMenu) this.target).m364getUserIdre6GcUE()));
+                NativeMapExtensionsKt.put(nativeMapOf, "userId", UserId.m1144toStringimpl(((LinkContextData.BindUserMenu) this.target).m364getUserIdre6GcUE()));
                 ChannelId m363getMessageChannelIdqMVnFVQ = ((LinkContextData.BindUserMenu) this.target).m363getMessageChannelIdqMVnFVQ();
                 if (m363getMessageChannelIdqMVnFVQ != null) {
-                    NativeMapExtensionsKt.put(nativeMapOf, "messageChannelId", ChannelId.m1067toStringimpl(m363getMessageChannelIdqMVnFVQ.m1069unboximpl()));
+                    NativeMapExtensionsKt.put(nativeMapOf, "messageChannelId", ChannelId.m1066toStringimpl(m363getMessageChannelIdqMVnFVQ.m1068unboximpl()));
                     return nativeMapOf;
                 }
             } else if (linkContextData2 instanceof LinkContextData.BindTapCommandName) {
                 NativeMapExtensionsKt.put(nativeMapOf, "action", ((LinkContextData.BindTapCommandName) linkContextData2).getAction());
-                NativeMapExtensionsKt.put(nativeMapOf, "userId", UserId.m1145toStringimpl(((LinkContextData.BindTapCommandName) this.target).m352getUserIdre6GcUE()));
+                NativeMapExtensionsKt.put(nativeMapOf, "userId", UserId.m1144toStringimpl(((LinkContextData.BindTapCommandName) this.target).m352getUserIdre6GcUE()));
                 NativeMapExtensionsKt.put(nativeMapOf, "messageType", Integer.valueOf(((LinkContextData.BindTapCommandName) this.target).getMessageType().getSerialNumber()));
-                NativeMapExtensionsKt.put(nativeMapOf, "messageId", MessageId.m1093toStringimpl(((LinkContextData.BindTapCommandName) this.target).m351getMessageId3Eiw7ao()));
-                NativeMapExtensionsKt.put(nativeMapOf, "applicationUserId", UserId.m1145toStringimpl(((LinkContextData.BindTapCommandName) this.target).m349getApplicationUserIdre6GcUE()));
-                NativeMapExtensionsKt.put(nativeMapOf, "messageChannelId", ChannelId.m1067toStringimpl(((LinkContextData.BindTapCommandName) this.target).m350getMessageChannelIdo4g7jtM()));
+                NativeMapExtensionsKt.put(nativeMapOf, "messageId", MessageId.m1092toStringimpl(((LinkContextData.BindTapCommandName) this.target).m351getMessageId3Eiw7ao()));
+                NativeMapExtensionsKt.put(nativeMapOf, "applicationUserId", UserId.m1144toStringimpl(((LinkContextData.BindTapCommandName) this.target).m349getApplicationUserIdre6GcUE()));
+                NativeMapExtensionsKt.put(nativeMapOf, "messageChannelId", ChannelId.m1066toStringimpl(((LinkContextData.BindTapCommandName) this.target).m350getMessageChannelIdo4g7jtM()));
                 return nativeMapOf;
             } else if (linkContextData2 instanceof LinkContextData.BindOpenPins) {
                 NativeMapExtensionsKt.put(nativeMapOf, "action", ((LinkContextData.BindOpenPins) linkContextData2).getAction());
-                NativeMapExtensionsKt.put(nativeMapOf, "messageChannelId", ChannelId.m1067toStringimpl(((LinkContextData.BindOpenPins) this.target).m332getMessageChannelIdo4g7jtM()));
+                NativeMapExtensionsKt.put(nativeMapOf, "messageChannelId", ChannelId.m1066toStringimpl(((LinkContextData.BindOpenPins) this.target).m332getMessageChannelIdo4g7jtM()));
                 return nativeMapOf;
             } else if (linkContextData2 instanceof LinkContextData.BindGuildMenu) {
                 NativeMapExtensionsKt.put(nativeMapOf, "action", ((LinkContextData.BindGuildMenu) linkContextData2).getAction());
                 LinkContextData.BindGuildMenu.MessageReference messageReference = ((LinkContextData.BindGuildMenu) this.target).getMessageReference();
                 if (messageReference != null) {
                     WritableNativeMap nativeMapOf2 = NativeMapExtensionsKt.nativeMapOf(new Pair[0]);
-                    NativeMapExtensionsKt.put(nativeMapOf2, "channel_id", ChannelId.m1067toStringimpl(messageReference.m315getChannelIdo4g7jtM()));
+                    NativeMapExtensionsKt.put(nativeMapOf2, "channel_id", ChannelId.m1066toStringimpl(messageReference.m315getChannelIdo4g7jtM()));
                     GuildId m316getGuildIdqOKuAAo = messageReference.m316getGuildIdqOKuAAo();
                     if (m316getGuildIdqOKuAAo != null) {
-                        m316getGuildIdqOKuAAo.m1082unboximpl();
+                        m316getGuildIdqOKuAAo.m1081unboximpl();
                         NativeMapExtensionsKt.put(nativeMapOf2, "guild_id", ((LinkContextData.BindGuildMenu) this.target).toString());
                     }
-                    Unit unit = Unit.f33074a;
+                    Unit unit = Unit.f32464a;
                     NativeMapExtensionsKt.put(nativeMapOf, "messageReference", nativeMapOf2);
                     return nativeMapOf;
                 }
             } else if (linkContextData2 instanceof LinkContextData.BindDismissMessage) {
                 NativeMapExtensionsKt.put(nativeMapOf, "action", ((LinkContextData.BindDismissMessage) linkContextData2).getAction());
-                NativeMapExtensionsKt.put(nativeMapOf, "message", NativeMapExtensionsKt.nativeMapOf(v.a(StackTraceHelper.ID_KEY, ((LinkContextData.BindDismissMessage) this.target).getMessage().m308getId3Eiw7ao()), v.a("channel_id", ChannelId.m1067toStringimpl(((LinkContextData.BindDismissMessage) this.target).getMessage().m307getChannelIdo4g7jtM())), v.a("loggingName", ((LinkContextData.BindDismissMessage) this.target).getMessage().getLoggingName()), v.a("author", NativeMapExtensionsKt.nativeMapOf(v.a(NotificationRenderer.USERNAME, ((LinkContextData.BindDismissMessage) this.target).getMessage().getAuthor().getUsername())))));
+                NativeMapExtensionsKt.put(nativeMapOf, "message", NativeMapExtensionsKt.nativeMapOf(v.a(StackTraceHelper.ID_KEY, ((LinkContextData.BindDismissMessage) this.target).getMessage().m308getId3Eiw7ao()), v.a("channel_id", ChannelId.m1066toStringimpl(((LinkContextData.BindDismissMessage) this.target).getMessage().m307getChannelIdo4g7jtM())), v.a("loggingName", ((LinkContextData.BindDismissMessage) this.target).getMessage().getLoggingName()), v.a("author", NativeMapExtensionsKt.nativeMapOf(v.a(NotificationRenderer.USERNAME, ((LinkContextData.BindDismissMessage) this.target).getMessage().getAuthor().getUsername())))));
                 return nativeMapOf;
             } else if (linkContextData2 instanceof LinkContextData.BindOpenRoleSubscriptionOverview) {
                 NativeMapExtensionsKt.put(nativeMapOf, "action", ((LinkContextData.BindOpenRoleSubscriptionOverview) linkContextData2).getAction());
@@ -111,7 +111,7 @@ public final class TapLinkData implements ReactEvent {
                 return nativeMapOf;
             } else if (linkContextData2 instanceof LinkContextData.BindUserSurvey) {
                 NativeMapExtensionsKt.put(nativeMapOf, "action", ((LinkContextData.BindUserSurvey) linkContextData2).getAction());
-                NativeMapExtensionsKt.put(nativeMapOf, "message", NativeMapExtensionsKt.nativeMapOf(v.a(StackTraceHelper.ID_KEY, ((LinkContextData.BindUserSurvey) this.target).getMessage().m371getId3Eiw7ao()), v.a("channel_id", ChannelId.m1067toStringimpl(((LinkContextData.BindUserSurvey) this.target).getMessage().m370getChannelIdo4g7jtM())), v.a("loggingName", ((LinkContextData.BindUserSurvey) this.target).getMessage().getLoggingName())));
+                NativeMapExtensionsKt.put(nativeMapOf, "message", NativeMapExtensionsKt.nativeMapOf(v.a(StackTraceHelper.ID_KEY, ((LinkContextData.BindUserSurvey) this.target).getMessage().m371getId3Eiw7ao()), v.a("channel_id", ChannelId.m1066toStringimpl(((LinkContextData.BindUserSurvey) this.target).getMessage().m370getChannelIdo4g7jtM())), v.a("loggingName", ((LinkContextData.BindUserSurvey) this.target).getMessage().getLoggingName())));
                 NativeMapExtensionsKt.put(nativeMapOf, "notificationType", ((LinkContextData.BindUserSurvey) this.target).getNotificationType());
                 return nativeMapOf;
             } else if (linkContextData2 instanceof LinkContextData.BindJumpToMessage) {
@@ -170,7 +170,7 @@ public final class TapLinkData implements ReactEvent {
     }
 
     public boolean equals(Object obj) {
-        boolean m1090equalsimpl0;
+        boolean m1089equalsimpl0;
         if (this == obj) {
             return true;
         }
@@ -180,16 +180,16 @@ public final class TapLinkData implements ReactEvent {
             String str2 = tapLinkData.messageId;
             if (str == null) {
                 if (str2 == null) {
-                    m1090equalsimpl0 = true;
+                    m1089equalsimpl0 = true;
                 }
-                m1090equalsimpl0 = false;
+                m1089equalsimpl0 = false;
             } else {
                 if (str2 != null) {
-                    m1090equalsimpl0 = MessageId.m1090equalsimpl0(str, str2);
+                    m1089equalsimpl0 = MessageId.m1089equalsimpl0(str, str2);
                 }
-                m1090equalsimpl0 = false;
+                m1089equalsimpl0 = false;
             }
-            return m1090equalsimpl0 && Intrinsics.areEqual(this.title, tapLinkData.title) && Intrinsics.areEqual(this.target, tapLinkData.target) && Intrinsics.areEqual(this.content, tapLinkData.content);
+            return m1089equalsimpl0 && Intrinsics.areEqual(this.title, tapLinkData.title) && Intrinsics.areEqual(this.target, tapLinkData.target) && Intrinsics.areEqual(this.content, tapLinkData.content);
         }
         return false;
     }
@@ -214,9 +214,9 @@ public final class TapLinkData implements ReactEvent {
 
     public int hashCode() {
         String str = this.messageId;
-        int m1091hashCodeimpl = (str == null ? 0 : MessageId.m1091hashCodeimpl(str)) * 31;
+        int m1090hashCodeimpl = (str == null ? 0 : MessageId.m1090hashCodeimpl(str)) * 31;
         String str2 = this.title;
-        int hashCode = (m1091hashCodeimpl + (str2 == null ? 0 : str2.hashCode())) * 31;
+        int hashCode = (m1090hashCodeimpl + (str2 == null ? 0 : str2.hashCode())) * 31;
         LinkContextData linkContextData = this.target;
         return ((hashCode + (linkContextData != null ? linkContextData.hashCode() : 0)) * 31) + this.content.hashCode();
     }
@@ -224,17 +224,17 @@ public final class TapLinkData implements ReactEvent {
     @Override // com.discord.reactevents.ReactEvent
     @NotNull
     public WritableMap serialize() {
-        String m1093toStringimpl;
+        String m1092toStringimpl;
         WritableNativeMap nativeMapOf;
         LinkContextData linkContextData = this.target;
         if (linkContextData == null || (nativeMapOf = toMap(linkContextData)) == null) {
             String str = this.messageId;
             if (str == null) {
-                m1093toStringimpl = "null";
+                m1092toStringimpl = "null";
             } else {
-                m1093toStringimpl = MessageId.m1093toStringimpl(str);
+                m1092toStringimpl = MessageId.m1092toStringimpl(str);
             }
-            nativeMapOf = NativeMapExtensionsKt.nativeMapOf(v.a("messageId", m1093toStringimpl), v.a("url", this.target), v.a("node", NativeMapExtensionsKt.nativeMapOf(v.a("title", this.title), v.a("target", this.target), v.a("content", this.content))));
+            nativeMapOf = NativeMapExtensionsKt.nativeMapOf(v.a("messageId", m1092toStringimpl), v.a("url", this.target), v.a("node", NativeMapExtensionsKt.nativeMapOf(v.a("title", this.title), v.a("target", this.target), v.a("content", this.content))));
         }
         return NativeMapExtensionsKt.nativeMapOf(v.a("data", nativeMapOf));
     }
@@ -242,11 +242,11 @@ public final class TapLinkData implements ReactEvent {
     @NotNull
     public String toString() {
         String str = this.messageId;
-        String m1093toStringimpl = str == null ? "null" : MessageId.m1093toStringimpl(str);
+        String m1092toStringimpl = str == null ? "null" : MessageId.m1092toStringimpl(str);
         String str2 = this.title;
         LinkContextData linkContextData = this.target;
         String str3 = this.content;
-        return "TapLinkData(messageId=" + m1093toStringimpl + ", title=" + str2 + ", target=" + linkContextData + ", content=" + str3 + ")";
+        return "TapLinkData(messageId=" + m1092toStringimpl + ", title=" + str2 + ", target=" + linkContextData + ", content=" + str3 + ")";
     }
 
     public /* synthetic */ TapLinkData(String str, String str2, LinkContextData linkContextData, String str3, DefaultConstructorMarker defaultConstructorMarker) {

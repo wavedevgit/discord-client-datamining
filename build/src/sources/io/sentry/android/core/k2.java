@@ -21,10 +21,10 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public abstract class k2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final long f28679a = SystemClock.uptimeMillis();
+    private static final long f29040a = SystemClock.uptimeMillis();
 
     /* renamed from: b  reason: collision with root package name */
-    protected static final io.sentry.util.a f28680b = new io.sentry.util.a();
+    protected static final io.sentry.util.a f29041b = new io.sentry.util.a();
 
     public static /* synthetic */ void a(SentryAndroidOptions sentryAndroidOptions) {
     }
@@ -79,7 +79,7 @@ public abstract class k2 {
         }
         io.sentry.android.core.performance.i r10 = q10.r();
         if (r10.o()) {
-            r10.t(f28679a);
+            r10.t(f29040a);
         }
         g0.h(sentryAndroidOptions, context, x0Var, uVar2, iVar, d11);
         d(sentryAndroidOptions, z14, z13);
@@ -128,7 +128,7 @@ public abstract class k2 {
 
     public static void f(final Context context, final ILogger iLogger, final b5.a aVar) {
         try {
-            io.sentry.a1 a10 = f28680b.a();
+            io.sentry.a1 a10 = f29041b.a();
             try {
                 b5.z(g3.a(SentryAndroidOptions.class), new b5.a() { // from class: io.sentry.android.core.i2
                     @Override // io.sentry.b5.a

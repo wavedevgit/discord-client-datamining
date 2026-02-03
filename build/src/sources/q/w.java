@@ -12,45 +12,45 @@ import java.util.Set;
 public final class w implements a0.c0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f46934a;
+    private final Context f47084a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final y.a f46935b;
+    private final y.a f47085b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final a0.m0 f46936c;
+    private final a0.m0 f47086c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final a0.l0 f46937d;
+    private final a0.l0 f47087d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final r.n0 f46938e;
+    private final r.n0 f47088e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final List f46939f;
+    private final List f47089f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final e3 f46940g;
+    private final e3 f47090g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final long f46941h;
+    private final long f47091h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Map f46942i = new HashMap();
+    private final Map f47092i = new HashMap();
 
     public w(Context context, a0.m0 m0Var, x.p pVar, long j10) {
-        this.f46934a = context;
-        this.f46936c = m0Var;
+        this.f47084a = context;
+        this.f47086c = m0Var;
         r.n0 b10 = r.n0.b(context, m0Var.c());
-        this.f46938e = b10;
-        this.f46940g = e3.c(context);
-        this.f46939f = e(m2.b(this, pVar));
+        this.f47088e = b10;
+        this.f47090g = e3.c(context);
+        this.f47089f = e(m2.b(this, pVar));
         v.a aVar = new v.a(b10);
-        this.f46935b = aVar;
+        this.f47085b = aVar;
         a0.l0 l0Var = new a0.l0(aVar, 1);
-        this.f46937d = l0Var;
+        this.f47087d = l0Var;
         aVar.a(l0Var);
-        this.f46941h = j10;
+        this.f47091h = j10;
     }
 
     private List e(List list) {
@@ -59,7 +59,7 @@ public final class w implements a0.c0 {
         while (it.hasNext()) {
             String str = (String) it.next();
             if (!str.equals("0") && !str.equals("1")) {
-                if (l2.a(this.f46938e, str)) {
+                if (l2.a(this.f47088e, str)) {
                     arrayList.add(str);
                 } else {
                     x.y0.a("Camera2CameraFactory", "Camera " + str + " is filtered out because its capabilities do not contain REQUEST_AVAILABLE_CAPABILITIES_BACKWARD_COMPATIBLE.");
@@ -73,29 +73,29 @@ public final class w implements a0.c0 {
 
     @Override // a0.c0
     public a0.e0 a(String str) {
-        if (this.f46939f.contains(str)) {
-            return new m0(this.f46934a, this.f46938e, str, f(str), this.f46935b, this.f46937d, this.f46936c.b(), this.f46936c.c(), this.f46940g, this.f46941h);
+        if (this.f47089f.contains(str)) {
+            return new m0(this.f47084a, this.f47088e, str, f(str), this.f47085b, this.f47087d, this.f47086c.b(), this.f47086c.c(), this.f47090g, this.f47091h);
         }
         throw new IllegalArgumentException("The given camera id is not on the available camera id list.");
     }
 
     @Override // a0.c0
     public Set b() {
-        return new LinkedHashSet(this.f46939f);
+        return new LinkedHashSet(this.f47089f);
     }
 
     @Override // a0.c0
     public y.a d() {
-        return this.f46935b;
+        return this.f47085b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public s0 f(String str) {
         try {
-            s0 s0Var = (s0) this.f46942i.get(str);
+            s0 s0Var = (s0) this.f47092i.get(str);
             if (s0Var == null) {
-                s0 s0Var2 = new s0(str, this.f46938e);
-                this.f46942i.put(str, s0Var2);
+                s0 s0Var2 = new s0(str, this.f47088e);
+                this.f47092i.put(str, s0Var2);
                 return s0Var2;
             }
             return s0Var;
@@ -107,6 +107,6 @@ public final class w implements a0.c0 {
     @Override // a0.c0
     /* renamed from: g */
     public r.n0 c() {
-        return this.f46938e;
+        return this.f47088e;
     }
 }

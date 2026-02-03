@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    static final Logger f42618a = Logger.getLogger(b.class.getName());
+    static final Logger f42418a = Logger.getLogger(b.class.getName());
 
     public static void a(Closeable closeable, boolean z10) {
         if (closeable == null) {
@@ -19,7 +19,7 @@ public abstract class b {
             closeable.close();
         } catch (IOException e10) {
             if (z10) {
-                f42618a.log(Level.WARNING, "IOException thrown while closing Closeable.", (Throwable) e10);
+                f42418a.log(Level.WARNING, "IOException thrown while closing Closeable.", (Throwable) e10);
                 return;
             }
             throw e10;

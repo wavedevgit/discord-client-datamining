@@ -1,7 +1,7 @@
 // polyfillsNative.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun96760: for (var _fun96760_ip = 0;;) switch (_fun96760_ip) {
+    _fun96820: for (var _fun96820_ip = 0;;) switch (_fun96820_ip) {
         case 0:
             var7 = global;
             var2 = require;
@@ -24,8 +24,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = 'undefined';
             var5 = typeof var5;
             if (!(var6 === var5)) {
-                _fun96760_ip = 93;
-                continue _fun96760
+                _fun96820_ip = 93;
+                continue _fun96820
             }
         case 79:
             var6 = var4.window;
@@ -39,8 +39,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = var7.location;
             var5 = null;
             if (!(var5 == var6)) {
-                _fun96760_ip = 148;
-                continue _fun96760
+                _fun96820_ip = 148;
+                continue _fun96820
             }
         case 128:
             var6 = {
@@ -51,8 +51,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         case 148:
             var6 = var7.self;
             if (var6) {
-                _fun96760_ip = 163;
-                continue _fun96760
+                _fun96820_ip = 163;
+                continue _fun96820
             }
         case 157:
             var7.self = var7;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = var4.window;
             var6 = var6.crypto;
             if (!(var5 == var6)) {
-                _fun96760_ip = 209;
-                continue _fun96760
+                _fun96820_ip = 209;
+                continue _fun96820
             }
         case 179:
             var6 = 4;
@@ -73,8 +73,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         case 209:
             var6 = var7.Buffer;
             if (!(var5 == var6)) {
-                _fun96760_ip = 243;
-                continue _fun96760
+                _fun96820_ip = 243;
+                continue _fun96820
             }
         case 219:
             var6 = 5;
@@ -85,8 +85,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         case 243:
             var6 = var7.__reanimatedWorkletInit;
             if (!(var5 == var6)) {
-                _fun96760_ip = 266;
-                continue _fun96760
+                _fun96820_ip = 266;
+                continue _fun96820
             }
         case 253:
             var6 = function() { // Environment: var1
@@ -113,8 +113,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var1.TextEncoder;
             var1 = var5 != var1;
             if (!var1) {
-                _fun96760_ip = 342;
-                continue _fun96760
+                _fun96820_ip = 342;
+                continue _fun96820
             }
         case 326:
             var4 = var4.window;
@@ -122,8 +122,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var5 != var4;
         case 342:
             if (var1) {
-                _fun96760_ip = 357;
-                continue _fun96760
+                _fun96820_ip = 357;
+                continue _fun96820
             }
         case 345:
             var1 = 6;
@@ -138,4 +138,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var2.bind(var3)(var1);
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3, 12626, 12696, 12714, 12717, 488, 1213, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3, 12637, 12707, 12725, 12728, 488, 1213, 2]);

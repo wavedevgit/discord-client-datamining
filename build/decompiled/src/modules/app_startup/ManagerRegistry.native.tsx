@@ -1846,7 +1846,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = {};
     var7 = ['POST_CONNECTION_OPEN'];
     var0.actions = var7;
-    var6 = function() {
+    var7 = function() {
         var2 = _closure1_slot0;
         var1 = _closure1_slot1;
         var0 = 118;
@@ -1856,16 +1856,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var0.default;
         return var0;
     };
-    var0.inlineRequire = var6;
+    var0.inlineRequire = var7;
     var0.neverLoadBeforeConnectionOpen = var3;
     var1.ReplyNudgeManager = var0;
-    var0 = 119;
+    var0 = {};
+    var6 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 119;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.default;
+        return var0;
+    };
+    var0.inlineRequire = var6;
+    var0.hasStoreChangeListeners = var3;
+    var1.RestrictedHoursManager = var0;
+    var0 = 120;
     var3 = var5[var0];
     var0 = undefined;
     var6 = var4.bind(var0)(var3);
     var3 = var6.initialize;
     var3 = var3.bind(var6)(var1);
-    var3 = 120;
+    var3 = 121;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -1873,4 +1887,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [14441, 14444, 14452, 14453, 14454, 14455, 14456, 14459, 14460, 14464, 9742, 14465, 14466, 14467, 14471, 14472, 14473, 14475, 11771, 10304, 14479, 14480, 14485, 14486, 4263, 14487, 14488, 14509, 9264, 6471, 7915, 14510, 14511, 14513, 14515, 14516, 8170, 14517, 14518, 14519, 14520, 14521, 14529, 14530, 14546, 14548, 14549, 14550, 14552, 14555, 14556, 8441, 10900, 14565, 14566, 14570, 14574, 14576, 14590, 14598, 11883, 14601, 14602, 14603, 14604, 14606, 14607, 14611, 14613, 14614, 14615, 14616, 14617, 14618, 12484, 14619, 14620, 8399, 14622, 14625, 14626, 14628, 14629, 4692, 6624, 14633, 14634, 14638, 11146, 5735, 14639, 14457, 14640, 14641, 14938, 14939, 14940, 14942, 14943, 14945, 14948, 14950, 14953, 14955, 14956, 14957, 14960, 14961, 7488, 14963, 14966, 14967, 14989, 14993, 14994, 14997, 15014, 15017, 15018, 15019, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [14452, 14455, 14463, 14464, 14465, 14466, 14467, 14470, 14471, 14475, 9761, 14476, 14477, 14478, 14482, 14483, 14484, 14486, 11784, 10323, 14490, 14491, 14496, 14497, 4267, 14498, 14499, 14520, 9283, 6476, 7920, 14521, 14522, 14524, 14526, 14527, 8175, 14528, 14529, 14530, 14531, 14532, 14540, 14541, 14557, 14559, 14560, 14561, 14563, 14566, 14567, 8446, 10919, 14576, 14577, 14581, 14585, 14587, 14601, 14609, 11896, 14612, 14613, 14614, 14615, 14617, 14618, 14622, 14624, 14625, 14626, 14627, 14628, 14629, 12495, 14630, 14631, 8404, 14633, 14636, 14637, 14639, 14640, 4697, 6629, 14644, 14645, 14649, 11165, 5740, 14650, 14468, 14651, 14652, 14949, 14950, 14951, 14953, 14954, 14956, 14959, 14961, 14964, 14966, 14967, 14968, 14971, 14972, 7493, 14974, 14977, 14978, 15000, 15004, 15005, 15008, 15025, 15028, 15029, 15030, 15034, 2]);

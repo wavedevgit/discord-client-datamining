@@ -14,25 +14,25 @@ import org.jetbrains.annotations.NotNull;
 public final class CreateDocumentRequestJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19101a;
+    private final m.b f18083a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19102b;
+    private final h f18084b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f19103c;
+    private final h f18085c;
 
     public CreateDocumentRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("data", "meta");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19101a = a10;
+        this.f18083a = a10;
         h f10 = moshi.f(CreateDocumentRequest.Data.class, x0.d(), "data");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19102b = f10;
+        this.f18084b = f10;
         h f11 = moshi.f(CreateDocumentRequest.Meta.class, x0.d(), "meta");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f19103c = f11;
+        this.f18085c = f11;
     }
 
     @Override // com.squareup.moshi.h
@@ -43,20 +43,20 @@ public final class CreateDocumentRequestJsonAdapter extends h {
         CreateDocumentRequest.Data data = null;
         CreateDocumentRequest.Meta meta = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.f19101a);
-            if (t02 != -1) {
-                if (t02 != 0) {
-                    if (t02 == 1 && (meta = (CreateDocumentRequest.Meta) this.f19103c.fromJson(reader)) == null) {
-                        throw tm.c.x("meta", "meta", reader);
+            int A0 = reader.A0(this.f18083a);
+            if (A0 != -1) {
+                if (A0 != 0) {
+                    if (A0 == 1 && (meta = (CreateDocumentRequest.Meta) this.f18085c.fromJson(reader)) == null) {
+                        throw vm.c.x("meta", "meta", reader);
                     }
                 } else {
-                    data = (CreateDocumentRequest.Data) this.f19102b.fromJson(reader);
+                    data = (CreateDocumentRequest.Data) this.f18084b.fromJson(reader);
                     if (data == null) {
-                        throw tm.c.x("data_", "data", reader);
+                        throw vm.c.x("data_", "data", reader);
                     }
                 }
             } else {
-                reader.F0();
+                reader.E0();
                 reader.P();
             }
         }
@@ -65,9 +65,9 @@ public final class CreateDocumentRequestJsonAdapter extends h {
             if (meta != null) {
                 return new CreateDocumentRequest(data, meta);
             }
-            throw tm.c.o("meta", "meta", reader);
+            throw vm.c.o("meta", "meta", reader);
         }
-        throw tm.c.o("data_", "data", reader);
+        throw vm.c.o("data_", "data", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -76,10 +76,10 @@ public final class CreateDocumentRequestJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (createDocumentRequest != null) {
             writer.l();
-            writer.t0("data");
-            this.f19102b.toJson(writer, createDocumentRequest.a());
-            writer.t0("meta");
-            this.f19103c.toJson(writer, createDocumentRequest.b());
+            writer.A0("data");
+            this.f18084b.toJson(writer, createDocumentRequest.a());
+            writer.A0("meta");
+            this.f18085c.toJson(writer, createDocumentRequest.b());
             writer.E();
             return;
         }

@@ -61,7 +61,7 @@ public abstract class g0 {
         if (extras == null) {
             extras = Bundle.EMPTY;
         }
-        a.C0362a h10 = hj.a.p().m(p(extras)).e(bVar).f(f(extras)).i(m()).k(a.d.ANDROID).h(k(extras));
+        a.C0349a h10 = hj.a.p().m(p(extras)).e(bVar).f(f(extras)).i(m()).k(a.d.ANDROID).h(k(extras));
         String h11 = h(extras);
         if (h11 != null) {
             h10.g(h11);

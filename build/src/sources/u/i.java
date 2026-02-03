@@ -12,18 +12,18 @@ import x.y0;
 public class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f50024a;
+    private final boolean f50311a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f50025b;
+    private final boolean f50312b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f50026c;
+    private final boolean f50313c;
 
     public i(d2 d2Var, d2 d2Var2) {
-        this.f50024a = d2Var2.a(TextureViewIsClosedQuirk.class);
-        this.f50025b = d2Var.a(PreviewOrientationIncorrectQuirk.class);
-        this.f50026c = d2Var.a(ConfigureSurfaceToSecondarySessionFailQuirk.class);
+        this.f50311a = d2Var2.a(TextureViewIsClosedQuirk.class);
+        this.f50312b = d2Var.a(PreviewOrientationIncorrectQuirk.class);
+        this.f50313c = d2Var.a(ConfigureSurfaceToSecondarySessionFailQuirk.class);
     }
 
     public void a(List list) {
@@ -37,7 +37,7 @@ public class i {
     }
 
     public boolean b() {
-        if (!this.f50024a && !this.f50025b && !this.f50026c) {
+        if (!this.f50311a && !this.f50312b && !this.f50313c) {
             return false;
         }
         return true;

@@ -47,17 +47,17 @@ public final class StyleElements_SizeSetJsonAdapter extends h {
         StyleElements.Size size3 = null;
         StyleElements.Size size4 = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 size = (StyleElements.Size) this.nullableSizeAdapter.fromJson(reader);
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 size2 = (StyleElements.Size) this.nullableSizeAdapter.fromJson(reader);
-            } else if (t02 == 2) {
+            } else if (A0 == 2) {
                 size3 = (StyleElements.Size) this.nullableSizeAdapter.fromJson(reader);
-            } else if (t02 == 3) {
+            } else if (A0 == 3) {
                 size4 = (StyleElements.Size) this.nullableSizeAdapter.fromJson(reader);
             }
         }
@@ -70,13 +70,13 @@ public final class StyleElements_SizeSetJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (sizeSet != null) {
             writer.l();
-            writer.t0(ViewProps.TOP);
+            writer.A0(ViewProps.TOP);
             this.nullableSizeAdapter.toJson(writer, sizeSet.getTop());
-            writer.t0(ViewProps.BOTTOM);
+            writer.A0(ViewProps.BOTTOM);
             this.nullableSizeAdapter.toJson(writer, sizeSet.getBottom());
-            writer.t0(ViewProps.LEFT);
+            writer.A0(ViewProps.LEFT);
             this.nullableSizeAdapter.toJson(writer, sizeSet.getLeft());
-            writer.t0(ViewProps.RIGHT);
+            writer.A0(ViewProps.RIGHT);
             this.nullableSizeAdapter.toJson(writer, sizeSet.getRight());
             writer.E();
             return;

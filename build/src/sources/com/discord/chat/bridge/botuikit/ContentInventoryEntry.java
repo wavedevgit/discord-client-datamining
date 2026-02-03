@@ -1,10 +1,10 @@
 package com.discord.chat.bridge.botuikit;
 
-import bt.n2;
-import bt.v1;
 import com.discord.primitives.UserId;
 import com.discord.primitives.UserId$$serializer;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
+import dt.n2;
+import dt.v1;
 import java.util.List;
 import kotlin.Lazy;
 import kotlin.Metadata;
@@ -17,7 +17,7 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.jetbrains.annotations.NotNull;
-@ys.m
+@at.m
 @Metadata(d1 = {"\u0000^\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b*\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 S2\u00020\u0001:\u0002RSB\u009b\u0001\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\u0006\u0010\t\u001a\u00020\u0005\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\b\u0012\u0006\u0010\f\u001a\u00020\u0005\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\b\u0012\u0006\u0010\u000e\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\b\u0012\f\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u00120\u0011\u0012\f\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00140\u0011\u0012\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\b¢\u0006\u0004\b\u0016\u0010\u0017B³\u0001\b\u0010\u0012\u0006\u0010\u0018\u001a\u00020\u0019\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\b\u0012\b\u0010\f\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\r\u001a\u0004\u0018\u00010\b\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\b\u0012\u000e\u0010\u0010\u001a\n\u0012\u0004\u0012\u00020\u0012\u0018\u00010\u0011\u0012\u000e\u0010\u0013\u001a\n\u0012\u0004\u0012\u00020\u0014\u0018\u00010\u0011\u0012\b\u0010\u0015\u001a\u0004\u0018\u00010\b\u0012\b\u0010\u001a\u001a\u0004\u0018\u00010\u001b¢\u0006\u0004\b\u0016\u0010\u001cJ\u0010\u00103\u001a\u00020\u0003HÆ\u0003¢\u0006\u0004\b4\u0010\u001eJ\t\u00105\u001a\u00020\u0005HÆ\u0003J\t\u00106\u001a\u00020\u0005HÆ\u0003J\u000b\u00107\u001a\u0004\u0018\u00010\bHÆ\u0003J\t\u00108\u001a\u00020\u0005HÆ\u0003J\u000b\u00109\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010:\u001a\u0004\u0018\u00010\bHÆ\u0003J\t\u0010;\u001a\u00020\u0005HÆ\u0003J\u000b\u0010<\u001a\u0004\u0018\u00010\bHÆ\u0003J\t\u0010=\u001a\u00020\u0005HÆ\u0003J\u000b\u0010>\u001a\u0004\u0018\u00010\bHÆ\u0003J\u000f\u0010?\u001a\b\u0012\u0004\u0012\u00020\u00120\u0011HÆ\u0003J\u000f\u0010@\u001a\b\u0012\u0004\u0012\u00020\u00140\u0011HÆ\u0003J\u000b\u0010A\u001a\u0004\u0018\u00010\bHÆ\u0003J´\u0001\u0010B\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\b2\b\b\u0002\u0010\t\u001a\u00020\u00052\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\b2\b\b\u0002\u0010\f\u001a\u00020\u00052\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\b2\b\b\u0002\u0010\u000e\u001a\u00020\u00052\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\b2\u000e\b\u0002\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u00120\u00112\u000e\b\u0002\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00140\u00112\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\bHÆ\u0001¢\u0006\u0004\bC\u0010DJ\u0013\u0010E\u001a\u00020F2\b\u0010G\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010H\u001a\u00020\u0019HÖ\u0001J\t\u0010I\u001a\u00020\u0005HÖ\u0001J%\u0010J\u001a\u00020K2\u0006\u0010L\u001a\u00020\u00002\u0006\u0010M\u001a\u00020N2\u0006\u0010O\u001a\u00020PH\u0001¢\u0006\u0002\bQR\u0013\u0010\u0002\u001a\u00020\u0003¢\u0006\n\n\u0002\u0010\u001f\u001a\u0004\b\u001d\u0010\u001eR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b \u0010!R\u0011\u0010\u0006\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010!R\u0013\u0010\u0007\u001a\u0004\u0018\u00010\b¢\u0006\b\n\u0000\u001a\u0004\b#\u0010$R\u0011\u0010\t\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b%\u0010!R\u0013\u0010\n\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b&\u0010!R\u0013\u0010\u000b\u001a\u0004\u0018\u00010\b¢\u0006\b\n\u0000\u001a\u0004\b'\u0010$R\u0011\u0010\f\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b(\u0010!R\u0013\u0010\r\u001a\u0004\u0018\u00010\b¢\u0006\b\n\u0000\u001a\u0004\b)\u0010$R\u0011\u0010\u000e\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b*\u0010!R\u0013\u0010\u000f\u001a\u0004\u0018\u00010\b¢\u0006\b\n\u0000\u001a\u0004\b+\u0010$R\u0017\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u00120\u0011¢\u0006\b\n\u0000\u001a\u0004\b,\u0010-R\u0017\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00140\u0011¢\u0006\b\n\u0000\u001a\u0004\b.\u0010-R\u0013\u0010\u0015\u001a\u0004\u0018\u00010\b¢\u0006\b\n\u0000\u001a\u0004\b/\u0010$R\u0013\u00100\u001a\u0004\u0018\u00010\u00128F¢\u0006\u0006\u001a\u0004\b1\u00102¨\u0006T"}, d2 = {"Lcom/discord/chat/bridge/botuikit/ContentInventoryEntry;", "", "authorId", "Lcom/discord/primitives/UserId;", "contentId", "", "imageUrl", "imageClickable", "Lcom/discord/chat/bridge/botuikit/ContentInventoryEntryClickable;", "avatarUrl", "platformIconUrl", "platformClickable", "userActionDescription", "userClickable", "title", "titleClickable", "subtitles", "", "Lcom/discord/chat/bridge/botuikit/Subtitle;", "gradientColors", "Lcom/discord/chat/bridge/botuikit/GradientColor;", "clickable", "<init>", "(JLjava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/botuikit/ContentInventoryEntryClickable;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/botuikit/ContentInventoryEntryClickable;Ljava/lang/String;Lcom/discord/chat/bridge/botuikit/ContentInventoryEntryClickable;Ljava/lang/String;Lcom/discord/chat/bridge/botuikit/ContentInventoryEntryClickable;Ljava/util/List;Ljava/util/List;Lcom/discord/chat/bridge/botuikit/ContentInventoryEntryClickable;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILcom/discord/primitives/UserId;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/botuikit/ContentInventoryEntryClickable;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/botuikit/ContentInventoryEntryClickable;Ljava/lang/String;Lcom/discord/chat/bridge/botuikit/ContentInventoryEntryClickable;Ljava/lang/String;Lcom/discord/chat/bridge/botuikit/ContentInventoryEntryClickable;Ljava/util/List;Ljava/util/List;Lcom/discord/chat/bridge/botuikit/ContentInventoryEntryClickable;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getAuthorId-re6GcUE", "()J", "J", "getContentId", "()Ljava/lang/String;", "getImageUrl", "getImageClickable", "()Lcom/discord/chat/bridge/botuikit/ContentInventoryEntryClickable;", "getAvatarUrl", "getPlatformIconUrl", "getPlatformClickable", "getUserActionDescription", "getUserClickable", "getTitle", "getTitleClickable", "getSubtitles", "()Ljava/util/List;", "getGradientColors", "getClickable", "subtitle", "getSubtitle", "()Lcom/discord/chat/bridge/botuikit/Subtitle;", "component1", "component1-re6GcUE", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "component10", "component11", "component12", "component13", "component14", "copy", "copy-ruD_DlQ", "(JLjava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/botuikit/ContentInventoryEntryClickable;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/botuikit/ContentInventoryEntryClickable;Ljava/lang/String;Lcom/discord/chat/bridge/botuikit/ContentInventoryEntryClickable;Ljava/lang/String;Lcom/discord/chat/bridge/botuikit/ContentInventoryEntryClickable;Ljava/util/List;Ljava/util/List;Lcom/discord/chat/bridge/botuikit/ContentInventoryEntryClickable;)Lcom/discord/chat/bridge/botuikit/ContentInventoryEntry;", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class ContentInventoryEntry {
@@ -64,15 +64,15 @@ public final class ContentInventoryEntry {
     }
 
     static {
-        jr.o oVar = jr.o.f32182e;
-        $childSerializers = new Lazy[]{null, null, null, null, null, null, null, null, null, null, null, jr.l.a(oVar, new Function0() { // from class: com.discord.chat.bridge.botuikit.e
+        lr.o oVar = lr.o.f37120e;
+        $childSerializers = new Lazy[]{null, null, null, null, null, null, null, null, null, null, null, lr.l.b(oVar, new Function0() { // from class: com.discord.chat.bridge.botuikit.e
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _childSerializers$_anonymous_;
                 _childSerializers$_anonymous_ = ContentInventoryEntry._childSerializers$_anonymous_();
                 return _childSerializers$_anonymous_;
             }
-        }), jr.l.a(oVar, new Function0() { // from class: com.discord.chat.bridge.botuikit.f
+        }), lr.l.b(oVar, new Function0() { // from class: com.discord.chat.bridge.botuikit.f
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _childSerializers$_anonymous_$0;
@@ -88,41 +88,41 @@ public final class ContentInventoryEntry {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        return new bt.f(Subtitle$$serializer.INSTANCE);
+        return new dt.f(Subtitle$$serializer.INSTANCE);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$0() {
-        return new bt.f(GradientColor$$serializer.INSTANCE);
+        return new dt.f(GradientColor$$serializer.INSTANCE);
     }
 
     public static final /* synthetic */ void write$Self$chat_release(ContentInventoryEntry contentInventoryEntry, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         Lazy[] lazyArr = $childSerializers;
-        compositeEncoder.m(serialDescriptor, 0, UserId$$serializer.INSTANCE, UserId.m1138boximpl(contentInventoryEntry.authorId));
-        compositeEncoder.x(serialDescriptor, 1, contentInventoryEntry.contentId);
-        compositeEncoder.x(serialDescriptor, 2, contentInventoryEntry.imageUrl);
-        if (compositeEncoder.y(serialDescriptor, 3) || contentInventoryEntry.imageClickable != null) {
-            compositeEncoder.B(serialDescriptor, 3, ContentInventoryEntryClickable$$serializer.INSTANCE, contentInventoryEntry.imageClickable);
+        compositeEncoder.D(serialDescriptor, 0, UserId$$serializer.INSTANCE, UserId.m1137boximpl(contentInventoryEntry.authorId));
+        compositeEncoder.y(serialDescriptor, 1, contentInventoryEntry.contentId);
+        compositeEncoder.y(serialDescriptor, 2, contentInventoryEntry.imageUrl);
+        if (compositeEncoder.z(serialDescriptor, 3) || contentInventoryEntry.imageClickable != null) {
+            compositeEncoder.s(serialDescriptor, 3, ContentInventoryEntryClickable$$serializer.INSTANCE, contentInventoryEntry.imageClickable);
         }
-        compositeEncoder.x(serialDescriptor, 4, contentInventoryEntry.avatarUrl);
-        if (compositeEncoder.y(serialDescriptor, 5) || contentInventoryEntry.platformIconUrl != null) {
-            compositeEncoder.B(serialDescriptor, 5, n2.f7662a, contentInventoryEntry.platformIconUrl);
+        compositeEncoder.y(serialDescriptor, 4, contentInventoryEntry.avatarUrl);
+        if (compositeEncoder.z(serialDescriptor, 5) || contentInventoryEntry.platformIconUrl != null) {
+            compositeEncoder.s(serialDescriptor, 5, n2.f20978a, contentInventoryEntry.platformIconUrl);
         }
-        if (compositeEncoder.y(serialDescriptor, 6) || contentInventoryEntry.platformClickable != null) {
-            compositeEncoder.B(serialDescriptor, 6, ContentInventoryEntryClickable$$serializer.INSTANCE, contentInventoryEntry.platformClickable);
+        if (compositeEncoder.z(serialDescriptor, 6) || contentInventoryEntry.platformClickable != null) {
+            compositeEncoder.s(serialDescriptor, 6, ContentInventoryEntryClickable$$serializer.INSTANCE, contentInventoryEntry.platformClickable);
         }
-        compositeEncoder.x(serialDescriptor, 7, contentInventoryEntry.userActionDescription);
-        if (compositeEncoder.y(serialDescriptor, 8) || contentInventoryEntry.userClickable != null) {
-            compositeEncoder.B(serialDescriptor, 8, ContentInventoryEntryClickable$$serializer.INSTANCE, contentInventoryEntry.userClickable);
+        compositeEncoder.y(serialDescriptor, 7, contentInventoryEntry.userActionDescription);
+        if (compositeEncoder.z(serialDescriptor, 8) || contentInventoryEntry.userClickable != null) {
+            compositeEncoder.s(serialDescriptor, 8, ContentInventoryEntryClickable$$serializer.INSTANCE, contentInventoryEntry.userClickable);
         }
-        compositeEncoder.x(serialDescriptor, 9, contentInventoryEntry.title);
-        if (compositeEncoder.y(serialDescriptor, 10) || contentInventoryEntry.titleClickable != null) {
-            compositeEncoder.B(serialDescriptor, 10, ContentInventoryEntryClickable$$serializer.INSTANCE, contentInventoryEntry.titleClickable);
+        compositeEncoder.y(serialDescriptor, 9, contentInventoryEntry.title);
+        if (compositeEncoder.z(serialDescriptor, 10) || contentInventoryEntry.titleClickable != null) {
+            compositeEncoder.s(serialDescriptor, 10, ContentInventoryEntryClickable$$serializer.INSTANCE, contentInventoryEntry.titleClickable);
         }
-        compositeEncoder.m(serialDescriptor, 11, (ys.o) lazyArr[11].getValue(), contentInventoryEntry.subtitles);
-        compositeEncoder.m(serialDescriptor, 12, (ys.o) lazyArr[12].getValue(), contentInventoryEntry.gradientColors);
-        if (compositeEncoder.y(serialDescriptor, 13) || contentInventoryEntry.clickable != null) {
-            compositeEncoder.B(serialDescriptor, 13, ContentInventoryEntryClickable$$serializer.INSTANCE, contentInventoryEntry.clickable);
+        compositeEncoder.D(serialDescriptor, 11, (at.o) lazyArr[11].getValue(), contentInventoryEntry.subtitles);
+        compositeEncoder.D(serialDescriptor, 12, (at.o) lazyArr[12].getValue(), contentInventoryEntry.gradientColors);
+        if (compositeEncoder.z(serialDescriptor, 13) || contentInventoryEntry.clickable != null) {
+            compositeEncoder.s(serialDescriptor, 13, ContentInventoryEntryClickable$$serializer.INSTANCE, contentInventoryEntry.clickable);
         }
     }
 
@@ -209,7 +209,7 @@ public final class ContentInventoryEntry {
         }
         if (obj instanceof ContentInventoryEntry) {
             ContentInventoryEntry contentInventoryEntry = (ContentInventoryEntry) obj;
-            return UserId.m1142equalsimpl0(this.authorId, contentInventoryEntry.authorId) && Intrinsics.areEqual(this.contentId, contentInventoryEntry.contentId) && Intrinsics.areEqual(this.imageUrl, contentInventoryEntry.imageUrl) && Intrinsics.areEqual(this.imageClickable, contentInventoryEntry.imageClickable) && Intrinsics.areEqual(this.avatarUrl, contentInventoryEntry.avatarUrl) && Intrinsics.areEqual(this.platformIconUrl, contentInventoryEntry.platformIconUrl) && Intrinsics.areEqual(this.platformClickable, contentInventoryEntry.platformClickable) && Intrinsics.areEqual(this.userActionDescription, contentInventoryEntry.userActionDescription) && Intrinsics.areEqual(this.userClickable, contentInventoryEntry.userClickable) && Intrinsics.areEqual(this.title, contentInventoryEntry.title) && Intrinsics.areEqual(this.titleClickable, contentInventoryEntry.titleClickable) && Intrinsics.areEqual(this.subtitles, contentInventoryEntry.subtitles) && Intrinsics.areEqual(this.gradientColors, contentInventoryEntry.gradientColors) && Intrinsics.areEqual(this.clickable, contentInventoryEntry.clickable);
+            return UserId.m1141equalsimpl0(this.authorId, contentInventoryEntry.authorId) && Intrinsics.areEqual(this.contentId, contentInventoryEntry.contentId) && Intrinsics.areEqual(this.imageUrl, contentInventoryEntry.imageUrl) && Intrinsics.areEqual(this.imageClickable, contentInventoryEntry.imageClickable) && Intrinsics.areEqual(this.avatarUrl, contentInventoryEntry.avatarUrl) && Intrinsics.areEqual(this.platformIconUrl, contentInventoryEntry.platformIconUrl) && Intrinsics.areEqual(this.platformClickable, contentInventoryEntry.platformClickable) && Intrinsics.areEqual(this.userActionDescription, contentInventoryEntry.userActionDescription) && Intrinsics.areEqual(this.userClickable, contentInventoryEntry.userClickable) && Intrinsics.areEqual(this.title, contentInventoryEntry.title) && Intrinsics.areEqual(this.titleClickable, contentInventoryEntry.titleClickable) && Intrinsics.areEqual(this.subtitles, contentInventoryEntry.subtitles) && Intrinsics.areEqual(this.gradientColors, contentInventoryEntry.gradientColors) && Intrinsics.areEqual(this.clickable, contentInventoryEntry.clickable);
         }
         return false;
     }
@@ -283,9 +283,9 @@ public final class ContentInventoryEntry {
     }
 
     public int hashCode() {
-        int m1143hashCodeimpl = ((((UserId.m1143hashCodeimpl(this.authorId) * 31) + this.contentId.hashCode()) * 31) + this.imageUrl.hashCode()) * 31;
+        int m1142hashCodeimpl = ((((UserId.m1142hashCodeimpl(this.authorId) * 31) + this.contentId.hashCode()) * 31) + this.imageUrl.hashCode()) * 31;
         ContentInventoryEntryClickable contentInventoryEntryClickable = this.imageClickable;
-        int hashCode = (((m1143hashCodeimpl + (contentInventoryEntryClickable == null ? 0 : contentInventoryEntryClickable.hashCode())) * 31) + this.avatarUrl.hashCode()) * 31;
+        int hashCode = (((m1142hashCodeimpl + (contentInventoryEntryClickable == null ? 0 : contentInventoryEntryClickable.hashCode())) * 31) + this.avatarUrl.hashCode()) * 31;
         String str = this.platformIconUrl;
         int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
         ContentInventoryEntryClickable contentInventoryEntryClickable2 = this.platformClickable;
@@ -300,7 +300,7 @@ public final class ContentInventoryEntry {
 
     @NotNull
     public String toString() {
-        String m1145toStringimpl = UserId.m1145toStringimpl(this.authorId);
+        String m1144toStringimpl = UserId.m1144toStringimpl(this.authorId);
         String str = this.contentId;
         String str2 = this.imageUrl;
         ContentInventoryEntryClickable contentInventoryEntryClickable = this.imageClickable;
@@ -314,7 +314,7 @@ public final class ContentInventoryEntry {
         List<Subtitle> list = this.subtitles;
         List<GradientColor> list2 = this.gradientColors;
         ContentInventoryEntryClickable contentInventoryEntryClickable5 = this.clickable;
-        return "ContentInventoryEntry(authorId=" + m1145toStringimpl + ", contentId=" + str + ", imageUrl=" + str2 + ", imageClickable=" + contentInventoryEntryClickable + ", avatarUrl=" + str3 + ", platformIconUrl=" + str4 + ", platformClickable=" + contentInventoryEntryClickable2 + ", userActionDescription=" + str5 + ", userClickable=" + contentInventoryEntryClickable3 + ", title=" + str6 + ", titleClickable=" + contentInventoryEntryClickable4 + ", subtitles=" + list + ", gradientColors=" + list2 + ", clickable=" + contentInventoryEntryClickable5 + ")";
+        return "ContentInventoryEntry(authorId=" + m1144toStringimpl + ", contentId=" + str + ", imageUrl=" + str2 + ", imageClickable=" + contentInventoryEntryClickable + ", avatarUrl=" + str3 + ", platformIconUrl=" + str4 + ", platformClickable=" + contentInventoryEntryClickable2 + ", userActionDescription=" + str5 + ", userClickable=" + contentInventoryEntryClickable3 + ", title=" + str6 + ", titleClickable=" + contentInventoryEntryClickable4 + ", subtitles=" + list + ", gradientColors=" + list2 + ", clickable=" + contentInventoryEntryClickable5 + ")";
     }
 
     public /* synthetic */ ContentInventoryEntry(long j10, String str, String str2, ContentInventoryEntryClickable contentInventoryEntryClickable, String str3, String str4, ContentInventoryEntryClickable contentInventoryEntryClickable2, String str5, ContentInventoryEntryClickable contentInventoryEntryClickable3, String str6, ContentInventoryEntryClickable contentInventoryEntryClickable4, List list, List list2, ContentInventoryEntryClickable contentInventoryEntryClickable5, DefaultConstructorMarker defaultConstructorMarker) {
@@ -325,7 +325,7 @@ public final class ContentInventoryEntry {
         if (6807 != (i10 & 6807)) {
             v1.b(i10, 6807, ContentInventoryEntry$$serializer.INSTANCE.getDescriptor());
         }
-        this.authorId = userId.m1147unboximpl();
+        this.authorId = userId.m1146unboximpl();
         this.contentId = str;
         this.imageUrl = str2;
         if ((i10 & 8) == 0) {

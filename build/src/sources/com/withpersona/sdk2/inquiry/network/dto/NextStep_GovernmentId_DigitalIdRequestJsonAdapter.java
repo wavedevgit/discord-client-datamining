@@ -52,15 +52,15 @@ public final class NextStep_GovernmentId_DigitalIdRequestJsonAdapter extends h {
         String str2 = null;
         Map map = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 str2 = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (t02 == 2) {
+            } else if (A0 == 2) {
                 map = (Map) this.nullableMapOfStringIntAdapter.fromJson(reader);
             }
         }
@@ -73,11 +73,11 @@ public final class NextStep_GovernmentId_DigitalIdRequestJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (digitalIdRequest != null) {
             writer.l();
-            writer.t0("idType");
+            writer.A0("idType");
             this.nullableStringAdapter.toJson(writer, digitalIdRequest.getIdType());
-            writer.t0("minAge");
+            writer.A0("minAge");
             this.nullableStringAdapter.toJson(writer, digitalIdRequest.getMinAge());
-            writer.t0("elementToStoreLength");
+            writer.A0("elementToStoreLength");
             this.nullableMapOfStringIntAdapter.toJson(writer, digitalIdRequest.getElementToStoreLength());
             writer.E();
             return;

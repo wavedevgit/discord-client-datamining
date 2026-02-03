@@ -45,15 +45,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/experiments/UserProfilePerformanceAnalyticsExperiment.tsx.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun57181: for (var _fun57181_ip = 0;;) switch (_fun57181_ip) {
+        _fun57239: for (var _fun57239_ip = 0;;) switch (_fun57239_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.location;
                 var4 = var1.autoTrackExposure;
                 var1 = undefined;
                 if (!(var4 === var1)) {
-                    _fun57181_ip = 22;
-                    continue _fun57181
+                    _fun57239_ip = 22;
+                    continue _fun57239
                 }
             case 20:
                 var4 = true;
@@ -71,4 +71,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isUserProfilePerformanceAnalyticsEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3106, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3115, 2]);

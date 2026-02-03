@@ -12,7 +12,6 @@ import com.facebook.react.uimanager.ViewProps;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-import jr.l;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -23,8 +22,9 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.StringsKt;
-import nr.a;
+import lr.l;
 import org.jetbrains.annotations.NotNull;
+import pr.a;
 @Metadata(d1 = {"\u0000<\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\n\u0018\u0000 #2\u00020\u0001:\u0001#B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\u000e\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0015J\u0010\u0010\u0016\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0018\u001a\u00020\u0017J\u0016\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u0018\u001a\u00020\u00172\u0006\u0010\u001b\u001a\u00020\u0017J\u000e\u0010\u001c\u001a\u00020\u001a2\u0006\u0010\u0018\u001a\u00020\u0017J\u0006\u0010\u001d\u001a\u00020\u001aJ\u0012\u0010\u001e\u001a\u0004\u0018\u00010\u00172\b\b\u0002\u0010\u001f\u001a\u00020\u0007J\u0006\u0010 \u001a\u00020\u0007J\u000e\u0010!\u001a\u00020\u001a2\u0006\u0010\"\u001a\u00020\u0007R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u000e¢\u0006\u0002\n\u0000R#\u0010\b\u001a\n \n*\u0004\u0018\u00010\t0\t8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\r\u0010\u000e\u001a\u0004\b\u000b\u0010\fR#\u0010\u000f\u001a\n \n*\u0004\u0018\u00010\t0\t8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u0011\u0010\u000e\u001a\u0004\b\u0010\u0010\f¨\u0006$"}, d2 = {"Lcom/discord/cache/Cache;", "", "reactContext", "Landroid/content/Context;", "<init>", "(Landroid/content/Context;)V", "sharedPrefsLoaded", "", "sharedPrefs", "Landroid/content/SharedPreferences;", "kotlin.jvm.PlatformType", "getSharedPrefs", "()Landroid/content/SharedPreferences;", "sharedPrefs$delegate", "Lkotlin/Lazy;", "fastCacheSharedPrefs", "getFastCacheSharedPrefs", "fastCacheSharedPrefs$delegate", "refresh", "Lcom/facebook/react/bridge/WritableMap;", "exclude", "Lcom/facebook/react/bridge/ReadableArray;", "getItem", "", "key", "setItem", "", "value", "removeItem", "clear", "getToken", "sanitized", "getUseChannelObfuscation", "setUseChannelObfuscation", ViewProps.ENABLED, "Companion", "cache_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nCache.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Cache.kt\ncom/discord/cache/Cache\n+ 2 _Maps.kt\nkotlin/collections/MapsKt___MapsKt\n+ 3 SharedPreferences.kt\nandroidx/core/content/SharedPreferencesKt\n+ 4 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,147:1\n216#2,2:148\n40#3,7:150\n47#3,6:159\n40#3,13:165\n40#3,13:178\n40#3,13:191\n40#3,13:204\n40#3,13:217\n40#3,13:230\n1869#4,2:157\n*S KotlinDebug\n*F\n+ 1 Cache.kt\ncom/discord/cache/Cache\n*L\n56#1:148,2\n71#1:150,7\n71#1:159,6\n88#1:165,13\n93#1:178,13\n100#1:191,13\n105#1:204,13\n112#1:217,13\n115#1:230,13\n73#1:157,2\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -70,7 +70,7 @@ public final class Cache {
 
     public Cache(@NotNull final Context reactContext) {
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
-        this.sharedPrefs$delegate = l.b(new Function0() { // from class: i6.a
+        this.sharedPrefs$delegate = l.a(new Function0() { // from class: i6.a
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 SharedPreferences sharedPreferences;
@@ -78,7 +78,7 @@ public final class Cache {
                 return sharedPreferences;
             }
         });
-        this.fastCacheSharedPrefs$delegate = l.b(new Function0() { // from class: i6.b
+        this.fastCacheSharedPrefs$delegate = l.a(new Function0() { // from class: i6.b
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 SharedPreferences sharedPreferences;
@@ -103,7 +103,7 @@ public final class Cache {
         cache.getSharedPrefs().getString("hydrate", null);
         cache.sharedPrefsLoaded = true;
         TTIMetrics.record$default(tTIMetrics, "CacheStorage Init End", 0L, null, false, 14, null);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     private final SharedPreferences getFastCacheSharedPrefs() {

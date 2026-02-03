@@ -34,7 +34,7 @@ public final class BlackHoleEventDispatcher implements EventDispatcher {
     }
 
     @Override // com.facebook.react.uimanager.events.EventDispatcher
-    @jr.c
+    @lr.c
     public void onCatalystInstanceDestroyed() {
     }
 

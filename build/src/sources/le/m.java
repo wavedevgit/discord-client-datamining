@@ -5,10 +5,10 @@ import java.io.IOException;
 public class m extends IOException {
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f37334d;
+    public final int f36803d;
 
     public m(int i10) {
-        this.f37334d = i10;
+        this.f36803d = i10;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:0:?, code lost:
@@ -26,7 +26,7 @@ public class m extends IOException {
             if (r0 == 0) goto L11
             r0 = r2
             le.m r0 = (le.m) r0
-            int r0 = r0.f37334d
+            int r0 = r0.f36803d
             r1 = 2008(0x7d8, float:2.814E-42)
             if (r0 != r1) goto L11
             r2 = 1
@@ -43,16 +43,16 @@ public class m extends IOException {
 
     public m(Throwable th2, int i10) {
         super(th2);
-        this.f37334d = i10;
+        this.f36803d = i10;
     }
 
     public m(String str, int i10) {
         super(str);
-        this.f37334d = i10;
+        this.f36803d = i10;
     }
 
     public m(String str, Throwable th2, int i10) {
         super(str, th2);
-        this.f37334d = i10;
+        this.f36803d = i10;
     }
 }

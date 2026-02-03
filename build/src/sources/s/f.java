@@ -10,7 +10,7 @@ import x.z;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f48724a;
+    private final a f49134a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -24,7 +24,7 @@ public final class f {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f(a aVar) {
-        this.f48724a = aVar;
+        this.f49134a = aVar;
     }
 
     public static f a(a0 a0Var) {
@@ -37,7 +37,7 @@ public final class f {
             fVar = null;
         }
         if (fVar == null) {
-            return h.f48726a;
+            return h.f49136a;
         }
         return fVar;
     }
@@ -57,11 +57,11 @@ public final class f {
     }
 
     public Set b(z zVar) {
-        return this.f48724a.b(zVar);
+        return this.f49134a.b(zVar);
     }
 
     public Set c() {
-        return this.f48724a.c();
+        return this.f49134a.c();
     }
 
     public DynamicRangeProfiles d() {
@@ -72,6 +72,6 @@ public final class f {
             z10 = false;
         }
         b2.e.j(z10, "DynamicRangesCompat can only be converted to DynamicRangeProfiles on API 33 or higher.");
-        return this.f48724a.a();
+        return this.f49134a.a();
     }
 }

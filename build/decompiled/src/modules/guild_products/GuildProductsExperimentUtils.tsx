@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_products/GuildProductsExperimentUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0, arg1() {
-        _fun49921: for (var _fun49921_ip = 0;;) switch (_fun49921_ip) {
+        _fun49979: for (var _fun49979_ip = 0;;) switch (_fun49979_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot0;
@@ -41,8 +41,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = null;
                 if (!(var5 == var3)) {
-                    _fun49921_ip = 52;
-                    continue _fun49921
+                    _fun49979_ip = 52;
+                    continue _fun49979
                 }
             case 48:
                 var3 = _closure1_slot2;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGuildEligibleForGuildProducts = var3;
     var1 = function arg0, arg1() {
-        _fun49922: for (var _fun49922_ip = 0;;) switch (_fun49922_ip) {
+        _fun49980: for (var _fun49980_ip = 0;;) switch (_fun49980_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot0;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = null;
                 if (!(var5 == var3)) {
-                    _fun49922_ip = 52;
-                    continue _fun49922
+                    _fun49980_ip = 52;
+                    continue _fun49980
                 }
             case 48:
                 var3 = _closure1_slot2;
@@ -87,4 +87,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isGuildEligibleForGuildProducts = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 5625, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 5630, 2]);

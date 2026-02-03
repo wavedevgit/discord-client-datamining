@@ -1,242 +1,81 @@
 package ss;
 
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
+import os.e0;
+import os.h0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class k implements h, k0, n0, ws.c {
+public abstract class k {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final v f49344a;
+    /* renamed from: a */
+    private static final int f49616a;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final w f49345b;
+    /* renamed from: b */
+    private static final e0 f49617b;
 
-    /* renamed from: c  reason: collision with root package name */
-    private final x f49346c;
+    /* renamed from: c */
+    private static final e0 f49618c;
 
-    /* renamed from: d  reason: collision with root package name */
-    private String f49347d;
+    /* renamed from: d */
+    private static final e0 f49619d;
 
-    public k(v date, w time, x offset, String str) {
-        Intrinsics.checkNotNullParameter(date, "date");
-        Intrinsics.checkNotNullParameter(time, "time");
-        Intrinsics.checkNotNullParameter(offset, "offset");
-        this.f49344a = date;
-        this.f49345b = time;
-        this.f49346c = offset;
-        this.f49347d = str;
+    /* renamed from: e */
+    private static final e0 f49620e;
+
+    /* renamed from: f */
+    private static final int f49621f;
+
+    static {
+        int e10;
+        int e11;
+        e10 = h0.e("kotlinx.coroutines.semaphore.maxSpinCycles", 100, 0, 0, 12, null);
+        f49616a = e10;
+        f49617b = new e0("PERMIT");
+        f49618c = new e0("TAKEN");
+        f49619d = new e0("BROKEN");
+        f49620e = new e0("CANCELLED");
+        e11 = h0.e("kotlinx.coroutines.semaphore.segmentSize", 16, 0, 0, 12, null);
+        f49621f = e11;
     }
 
-    @Override // ss.h
-    public Integer A() {
-        return this.f49344a.A();
+    public static final g a(int i10, int i11) {
+        return new j(i10, i11);
     }
 
-    @Override // ss.h
-    public void B(Integer num) {
-        this.f49344a.B(num);
-    }
-
-    @Override // ss.h
-    public Integer C() {
-        return this.f49344a.C();
-    }
-
-    @Override // ss.k0
-    public void D(Integer num) {
-        this.f49345b.D(num);
-    }
-
-    @Override // ss.h
-    public void E(Integer num) {
-        this.f49344a.E(num);
-    }
-
-    @Override // ws.c
-    /* renamed from: F */
-    public k copy() {
-        return new k(this.f49344a.copy(), this.f49345b.copy(), this.f49346c.copy(), this.f49347d);
-    }
-
-    public final v G() {
-        return this.f49344a;
-    }
-
-    public final x H() {
-        return this.f49346c;
-    }
-
-    public final w I() {
-        return this.f49345b;
-    }
-
-    public final String J() {
-        return this.f49347d;
-    }
-
-    public final void K(String str) {
-        this.f49347d = str;
-    }
-
-    @Override // ss.k0
-    public Integer a() {
-        return this.f49345b.a();
-    }
-
-    @Override // ss.k0
-    public void b(ts.a aVar) {
-        this.f49345b.b(aVar);
-    }
-
-    @Override // ss.n0
-    public Integer c() {
-        return this.f49346c.c();
-    }
-
-    @Override // ss.k0
-    public Integer d() {
-        return this.f49345b.d();
-    }
-
-    @Override // ss.k0
-    public Integer e() {
-        return this.f49345b.e();
-    }
-
-    public boolean equals(Object obj) {
-        if (obj instanceof k) {
-            k kVar = (k) obj;
-            if (Intrinsics.areEqual(kVar.f49344a, this.f49344a) && Intrinsics.areEqual(kVar.f49345b, this.f49345b) && Intrinsics.areEqual(kVar.f49346c, this.f49346c) && Intrinsics.areEqual(kVar.f49347d, this.f49347d)) {
-                return true;
-            }
-            return false;
+    public static /* synthetic */ g b(int i10, int i11, int i12, Object obj) {
+        if ((i12 & 2) != 0) {
+            i11 = 0;
         }
-        return false;
+        return a(i10, i11);
     }
 
-    @Override // ss.h
-    public Integer f() {
-        return this.f49344a.f();
+    public static final /* synthetic */ l c(long j10, l lVar) {
+        return j(j10, lVar);
     }
 
-    @Override // ss.h
-    public Integer g() {
-        return this.f49344a.g();
+    public static final /* synthetic */ e0 d() {
+        return f49619d;
     }
 
-    @Override // ss.k0
-    public Integer h() {
-        return this.f49345b.h();
+    public static final /* synthetic */ e0 e() {
+        return f49620e;
     }
 
-    public int hashCode() {
-        int i10;
-        int hashCode = (this.f49344a.hashCode() ^ this.f49345b.hashCode()) ^ this.f49346c.hashCode();
-        String str = this.f49347d;
-        if (str != null) {
-            i10 = str.hashCode();
-        } else {
-            i10 = 0;
-        }
-        return hashCode ^ i10;
+    public static final /* synthetic */ int f() {
+        return f49616a;
     }
 
-    @Override // ss.k0
-    public Integer i() {
-        return this.f49345b.i();
+    public static final /* synthetic */ e0 g() {
+        return f49617b;
     }
 
-    @Override // ss.n0
-    public Boolean isNegative() {
-        return this.f49346c.isNegative();
+    public static final /* synthetic */ int h() {
+        return f49621f;
     }
 
-    @Override // ss.h
-    public Integer j() {
-        return this.f49344a.j();
+    public static final /* synthetic */ e0 i() {
+        return f49618c;
     }
 
-    @Override // ss.n0
-    public Integer k() {
-        return this.f49346c.k();
-    }
-
-    @Override // ss.n0
-    public void l(Boolean bool) {
-        this.f49346c.l(bool);
-    }
-
-    @Override // ss.n0
-    public void m(Integer num) {
-        this.f49346c.m(num);
-    }
-
-    @Override // ss.k0
-    public void n(Integer num) {
-        this.f49345b.n(num);
-    }
-
-    @Override // ss.h
-    public void o(Integer num) {
-        this.f49344a.o(num);
-    }
-
-    @Override // ss.n0
-    public void p(Integer num) {
-        this.f49346c.p(num);
-    }
-
-    @Override // ss.n0
-    public void q(Integer num) {
-        this.f49346c.q(num);
-    }
-
-    @Override // ss.k0
-    public g r() {
-        return this.f49345b.r();
-    }
-
-    @Override // ss.k0
-    public void s(g gVar) {
-        this.f49345b.s(gVar);
-    }
-
-    @Override // ss.k0
-    public void t(Integer num) {
-        this.f49345b.t(num);
-    }
-
-    @Override // ss.k0
-    public void u(Integer num) {
-        this.f49345b.u(num);
-    }
-
-    @Override // ss.h
-    public void v(Integer num) {
-        this.f49344a.v(num);
-    }
-
-    @Override // ss.n0
-    public Integer w() {
-        return this.f49346c.w();
-    }
-
-    @Override // ss.k0
-    public void x(Integer num) {
-        this.f49345b.x(num);
-    }
-
-    @Override // ss.h
-    public void y(Integer num) {
-        this.f49344a.y(num);
-    }
-
-    @Override // ss.k0
-    public ts.a z() {
-        return this.f49345b.z();
-    }
-
-    public /* synthetic */ k(v vVar, w wVar, x xVar, String str, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this((i10 & 1) != 0 ? new v(null, null, null, null, null, 31, null) : vVar, (i10 & 2) != 0 ? new w(null, null, null, null, null, null, 63, null) : wVar, (i10 & 4) != 0 ? new x(null, null, null, null, 15, null) : xVar, (i10 & 8) != 0 ? null : str);
+    public static final l j(long j10, l lVar) {
+        return new l(j10, lVar, 0);
     }
 }

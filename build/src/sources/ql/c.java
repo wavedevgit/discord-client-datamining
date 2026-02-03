@@ -8,66 +8,66 @@ import pl.i;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    protected final ol.e f47770a;
+    protected final ol.e f47920a;
 
     /* renamed from: b  reason: collision with root package name */
-    protected final f f47771b;
+    protected final f f47921b;
 
     /* renamed from: c  reason: collision with root package name */
-    protected final i f47772c;
+    protected final i f47922c;
 
     /* renamed from: d  reason: collision with root package name */
-    protected final il.a f47773d;
+    protected final il.a f47923d;
 
     /* renamed from: e  reason: collision with root package name */
-    protected final il.b f47774e;
+    protected final il.b f47924e;
 
     /* renamed from: f  reason: collision with root package name */
-    protected final MediaRange f47775f;
+    protected final MediaRange f47925f;
 
     /* renamed from: g  reason: collision with root package name */
-    protected int f47776g;
+    protected int f47926g;
 
     /* renamed from: h  reason: collision with root package name */
-    protected int f47777h;
+    protected int f47927h;
 
     /* renamed from: i  reason: collision with root package name */
-    protected boolean f47778i;
+    protected boolean f47928i;
 
     /* renamed from: j  reason: collision with root package name */
-    protected MediaFormat f47779j;
+    protected MediaFormat f47929j;
 
     /* renamed from: k  reason: collision with root package name */
-    protected long f47780k;
+    protected long f47930k;
 
     /* renamed from: l  reason: collision with root package name */
-    protected float f47781l;
+    protected float f47931l;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(ol.e eVar, int i10, f fVar, int i11, MediaFormat mediaFormat, i iVar, il.a aVar, il.b bVar) {
-        this.f47780k = -1L;
-        this.f47770a = eVar;
-        this.f47776g = i10;
-        this.f47777h = i11;
-        this.f47771b = fVar;
-        this.f47779j = mediaFormat;
-        this.f47772c = iVar;
-        this.f47773d = aVar;
-        this.f47774e = bVar;
+        this.f47930k = -1L;
+        this.f47920a = eVar;
+        this.f47926g = i10;
+        this.f47927h = i11;
+        this.f47921b = fVar;
+        this.f47929j = mediaFormat;
+        this.f47922c = iVar;
+        this.f47923d = aVar;
+        this.f47924e = bVar;
         MediaRange selection = eVar.getSelection();
-        this.f47775f = selection;
+        this.f47925f = selection;
         MediaFormat trackFormat = eVar.getTrackFormat(i10);
         if (trackFormat.containsKey("durationUs")) {
             long j10 = trackFormat.getLong("durationUs");
-            this.f47780k = j10;
+            this.f47930k = j10;
             if (mediaFormat != null) {
                 mediaFormat.setLong("durationUs", j10);
             }
         }
         if (selection.a() >= selection.b()) {
-            long min = Math.min(this.f47780k, selection.a());
-            this.f47780k = min;
-            this.f47780k = min - selection.b();
+            long min = Math.min(this.f47930k, selection.a());
+            this.f47930k = min;
+            this.f47930k = min - selection.b();
             return;
         }
         throw new IllegalArgumentException("Range end should be greater than range start");
@@ -86,9 +86,9 @@ public abstract class c {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public int b() {
-        while (this.f47770a.getSampleTrackIndex() == this.f47776g) {
-            this.f47770a.advance();
-            if ((this.f47770a.getSampleFlags() & 4) != 0) {
+        while (this.f47920a.getSampleTrackIndex() == this.f47926g) {
+            this.f47920a.advance();
+            if ((this.f47920a.getSampleFlags() & 4) != 0) {
                 return 4;
             }
         }
@@ -96,19 +96,19 @@ public abstract class c {
     }
 
     public String c() {
-        return this.f47773d.getName();
+        return this.f47923d.getName();
     }
 
     public String d() {
-        return this.f47774e.getName();
+        return this.f47924e.getName();
     }
 
     public float e() {
-        return this.f47781l;
+        return this.f47931l;
     }
 
     public MediaFormat f() {
-        return this.f47779j;
+        return this.f47929j;
     }
 
     public abstract int g();

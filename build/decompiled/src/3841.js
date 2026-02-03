@@ -1,13 +1,53 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
-    var6 = metroImportDefault;
+    var15 = require;
+    var4 = metroImportDefault;
     var2 = exports;
-    var5 = dependencyMap;
-    var _closure1_slot0 = var4;
-    var _closure1_slot1 = var5;
+    var16 = dependencyMap;
+    var0 = function arg0, arg1, arg2() {
+        _fun34390: for (var _fun34390_ip = 0;;) switch (_fun34390_ip) {
+            case 0:
+                var3 = arg0;
+                var5 = arg2;
+                var1 = _closure1_slot4;
+                var2 = undefined;
+                var0 = arg1;
+                var8 = var1.bind(var2)(var0);
+                var1 = _closure1_slot3;
+                var0 = _closure1_slot19;
+                var0 = var0.bind(var2)();
+                if (var0) {
+                    _fun34390_ip = 51;
+                    continue _fun34390
+                }
+            case 38:
+                var0 = var8.apply;
+                var0 = var0.bind(var8)(var3, var5);
+                _fun34390_ip = 92;
+                continue _fun34390;
+            case 51:
+                var6 = global;
+                var7 = var6.Reflect;
+                var6 = var7.construct;
+                if (var5) {
+                    _fun34390_ip = 71;
+                    continue _fun34390
+                }
+            case 67:
+                var5 = new Array(0);
+            case 71:
+                var4 = _closure1_slot4;
+                var4 = var4.bind(var2)(var3);
+                var4 = var4.constructor;
+                var0 = var6.bind(var7)(var8, var5, var4);
+            case 92:
+                var0 = var1.bind(var2)(var3, var0);
+                return var0;
+        }
+    };
+    var _closure1_slot18 = var0;
     var0 = function() {
-        _fun34634: for (var _fun34634_ip = 0;;) switch (_fun34634_ip) {
+        _fun34391: for (var _fun34391_ip = 0;;) switch (_fun34391_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -28,8 +68,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun34634_ip = 74;
-                continue _fun34634;
+                _fun34391_ip = 74;
+                continue _fun34391;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -39,366 +79,208 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = !var0;
                     return var0;
                 };
-                _closure1_slot8 = var1;
+                _closure1_slot19 = var1;
                 var0 = undefined;
                 var0 = var1.bind(var0)();
                 return var0;
         }
     };
-    var _closure1_slot8 = var0;
+    var _closure1_slot19 = var0;
     var0 = global;
-    var8 = var0.Object;
-    var7 = var8.defineProperty;
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
     var3 = {};
     var0 = true;
     var3.value = var0;
     var0 = '__esModule';
-    var0 = var7.bind(var8)(var2, var0, var3);
+    var0 = var5.bind(var6)(var2, var0, var3);
     var0 = 0;
-    var3 = var5[var0];
+    var3 = var16[var0];
     var0 = undefined;
-    var3 = var6.bind(var0)(var3);
-    var _closure1_slot2 = var3;
-    var3 = 1;
-    var3 = var5[var3];
-    var3 = var6.bind(var0)(var3);
-    var _closure1_slot3 = var3;
-    var3 = 2;
-    var3 = var5[var3];
-    var3 = var6.bind(var0)(var3);
-    var _closure1_slot4 = var3;
-    var3 = 3;
-    var3 = var5[var3];
-    var3 = var6.bind(var0)(var3);
-    var _closure1_slot5 = var3;
-    var3 = 4;
-    var3 = var5[var3];
-    var3 = var6.bind(var0)(var3);
-    var _closure1_slot6 = var3;
-    var3 = {};
-    var6 = 'function pnpm_CurvedTransitionTs1(values){const{delayFunction,delay,withTiming,duration,easing,callback}=this.__closure;return{initialValues:{originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth,height:values.currentHeight},animations:{originX:delayFunction(delay,withTiming(values.targetOriginX,{duration:duration,easing:easing.easingX})),originY:delayFunction(delay,withTiming(values.targetOriginY,{duration:duration,easing:easing.easingY})),width:delayFunction(delay,withTiming(values.targetWidth,{duration:duration,easing:easing.easingWidth})),height:delayFunction(delay,withTiming(values.targetHeight,{duration:duration,easing:easing.easingHeight}))},callback:callback};}';
-    var3.code = var6;
-    var _closure1_slot7 = var3;
-    var3 = 7;
-    var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var3 = var3.BaseAnimationBuilder;
-    var1 = function(arg0) { // Environment: var1
+    var _closure1_slot0 = var3;
+    var3 = 1;
+    var3 = var16[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot1 = var3;
+    var3 = 2;
+    var3 = var16[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot2 = var3;
+    var3 = 3;
+    var3 = var16[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var3 = 4;
+    var3 = var16[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot4 = var3;
+    var3 = 5;
+    var3 = var16[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot5 = var3;
+    var3 = {};
+    var4 = "function pnpm_FlipTs1(targetValues){const{initialValues,delayFunction,delay,animation,config,callback}=this.__closure;return{initialValues:{transform:[{perspective:500},{rotateX:'90deg'},{translateY:-targetValues.targetHeight}],...initialValues},animations:{transform:[{perspective:500},{rotateX:delayFunction(delay,animation('0deg',config))},{translateY:delayFunction(delay,animation(0,config))}]},callback:callback};}";
+    var3.code = var4;
+    var _closure1_slot6 = var3;
+    var14 = 6;
+    var3 = var16[var14];
+    var3 = var15.bind(var0)(var3);
+    var4 = var3.ComplexAnimationBuilder;
+    var3 = function(arg0) { // Environment: var1
         var4 = function() {
-            _fun34638: for (var _fun34638_ip = 0;;) switch (_fun34638_ip) {
+            _fun34395: for (var _fun34395_ip = 0;;) switch (_fun34395_ip) {
                 case 0:
-                    var4 = this;
-                    var6 = undefined;
-                    var9 = undefined;
-                    var5 = _closure1_slot2;
+                    var5 = this;
+                    var4 = undefined;
+                    var8 = undefined;
+                    var6 = _closure1_slot1;
                     var3 = _closure2_slot0;
-                    var3 = var5.bind(var6)(var4, var3);
-                    var5 = arguments.length;
-                    var7 = global;
-                    var3 = var7.Array;
-                    var8 = var3.prototype;
-                    var8 = Object.create(var8, {
+                    var3 = var6.bind(var4)(var5, var3);
+                    var6 = arguments.length;
+                    var3 = global;
+                    var3 = var3.Array;
+                    var7 = var3.prototype;
+                    var7 = Object.create(var7, {
                         constructor: {
                             value: var3
                         }
                     });
-                    var14 = var8;
-                    var13 = var5;
-                    var3 = new var14[var3](var13, var12);
-                    var8 = var3 instanceof Object ? var3 : var8;
+                    var13 = var7;
+                    var12 = var6;
+                    var3 = new var13[var3](var12, var11);
+                    var7 = var3 instanceof Object ? var3 : var7;
                     var3 = 0;
-                    var10 = var3 < var5;
-                    if (!var10) {
-                        _fun34638_ip = 87;
-                        continue _fun34638
+                    var9 = var3 < var6;
+                    if (!var9) {
+                        _fun34395_ip = 87;
+                        continue _fun34395
                     }
                 case 72:
-                    var10 = arguments[var3];
-                    var8[var3] = var10;
+                    var9 = arguments[var3];
+                    var7[var3] = var9;
                     var3 = var3 + 1;
-                    if (var3 < var5) {
-                        _fun34638_ip = 72;
-                        continue _fun34638
+                    if (var3 < var6) {
+                        _fun34395_ip = 72;
+                        continue _fun34395
                     }
                 case 87:
-                    var3 = _closure2_slot0;
-                    var5 = new Array(0);
-                    var0 = var5.concat;
-                    var5 = var0.bind(var5)(var8);
-                    var0 = _closure1_slot5;
-                    var10 = var0.bind(var6)(var3);
-                    var3 = _closure1_slot4;
-                    var0 = _closure1_slot8;
-                    var0 = var0.bind(var6)();
-                    if (var0) {
-                        _fun34638_ip = 142;
-                        continue _fun34638
-                    }
-                case 129:
-                    var0 = var10.apply;
-                    var0 = var0.bind(var10)(var4, var5);
-                    _fun34638_ip = 184;
-                    continue _fun34638;
-                case 142:
-                    var9 = var7.Reflect;
-                    var8 = var9.construct;
-                    var7 = var5;
-                    if (var7) {
-                        _fun34638_ip = 163;
-                        continue _fun34638
-                    }
-                case 159:
-                    var7 = new Array(0);
-                case 163:
-                    var5 = _closure1_slot5;
-                    var5 = var5.bind(var6)(var4);
-                    var5 = var5.constructor;
-                    var0 = var8.bind(var9)(var10, var7, var5);
-                case 184:
-                    var0 = var3.bind(var6)(var4, var0);
+                    var3 = _closure1_slot18;
+                    var2 = _closure2_slot0;
+                    var6 = new Array(0);
+                    var0 = var6.concat;
+                    var0 = var0.bind(var6)(var7);
+                    var0 = var3.bind(var4)(var5, var2, var0);
                     var _closure3_slot0 = var0;
-                    var5 = _closure1_slot0;
-                    var7 = _closure1_slot1;
-                    var2 = 5;
-                    var3 = var7[var2];
-                    var3 = var5.bind(var6)(var3);
-                    var8 = var3.Easing;
-                    var4 = var8.in;
-                    var3 = var7[var2];
-                    var3 = var5.bind(var6)(var3);
-                    var3 = var3.Easing;
-                    var3 = var3.ease;
-                    var3 = var4.bind(var8)(var3);
-                    var0.easingXV = var3;
-                    var3 = var7[var2];
-                    var3 = var5.bind(var6)(var3);
-                    var8 = var3.Easing;
-                    var4 = var8.out;
-                    var3 = var7[var2];
-                    var3 = var5.bind(var6)(var3);
-                    var3 = var3.Easing;
-                    var3 = var3.ease;
-                    var3 = var4.bind(var8)(var3);
-                    var0.easingYV = var3;
-                    var3 = var7[var2];
-                    var3 = var5.bind(var6)(var3);
-                    var8 = var3.Easing;
-                    var4 = var8.in;
-                    var3 = var7[var2];
-                    var3 = var5.bind(var6)(var3);
-                    var3 = var3.Easing;
-                    var3 = var3.exp;
-                    var3 = var4.bind(var8)(var3);
-                    var0.easingWidthV = var3;
-                    var3 = var7[var2];
-                    var3 = var5.bind(var6)(var3);
-                    var4 = var3.Easing;
-                    var3 = var4.out;
-                    var2 = var7[var2];
-                    var2 = var5.bind(var6)(var2);
-                    var2 = var2.Easing;
-                    var2 = var2.exp;
-                    var2 = var3.bind(var4)(var2);
-                    var0.easingHeightV = var2;
                     var1 = function() { // Environment: var1
-                        _fun34639: for (var _fun34639_ip = 0;;) switch (_fun34639_ip) {
-                            case 0:
-                                var3 = _closure3_slot0;
-                                var1 = var3.getDelayFunction;
-                                var6 = var1.bind(var3)();
-                                var _closure4_slot0 = var6;
-                                var1 = _closure3_slot0;
-                                var3 = var1.callbackV;
-                                var _closure4_slot1 = var3;
-                                var4 = _closure3_slot0;
-                                var1 = var4.getDelay;
-                                var1 = var1.bind(var4)();
-                                var _closure4_slot2 = var1;
-                                var4 = _closure3_slot0;
-                                var4 = var4.durationV;
-                                var5 = null;
-                                var7 = var5 != var4;
-                                var5 = 300;
-                                if (!var7) {
-                                    _fun34639_ip = 83;
-                                    continue _fun34639
-                                }
-                            case 80:
-                                var5 = var4;
-                            case 83:
-                                var _closure4_slot3 = var5;
-                                var4 = {};
-                                var7 = _closure3_slot0;
-                                var7 = var7.easingXV;
-                                var4.easingX = var7;
-                                var7 = _closure3_slot0;
-                                var7 = var7.easingYV;
-                                var4.easingY = var7;
-                                var7 = _closure3_slot0;
-                                var7 = var7.easingWidthV;
-                                var4.easingWidth = var7;
-                                var2 = _closure3_slot0;
-                                var2 = var2.easingHeightV;
-                                var4.easingHeight = var2;
-                                var _closure4_slot4 = var4;
-                                var0 = function arg0() {
-                                    var3 = arg0;
-                                    var0 = {};
-                                    var1 = {};
-                                    var2 = var3.currentOriginX;
-                                    var1.originX = var2;
-                                    var2 = var3.currentOriginY;
-                                    var1.originY = var2;
-                                    var2 = var3.currentWidth;
-                                    var1.width = var2;
-                                    var2 = var3.currentHeight;
-                                    var1.height = var2;
-                                    var0.initialValues = var1;
-                                    var2 = {};
-                                    var6 = _closure4_slot0;
-                                    var5 = _closure4_slot2;
-                                    var8 = _closure1_slot0;
-                                    var9 = _closure1_slot1;
-                                    var7 = 6;
-                                    var10 = var9[var7];
-                                    var4 = undefined;
-                                    var13 = var8.bind(var4)(var10);
-                                    var12 = var13.withTiming;
-                                    var11 = var3.targetOriginX;
-                                    var10 = {};
-                                    var14 = _closure4_slot3;
-                                    var10.duration = var14;
-                                    var14 = _closure4_slot4;
-                                    var14 = var14.easingX;
-                                    var10.easing = var14;
-                                    var10 = var12.bind(var13)(var11, var10);
-                                    var10 = var6.bind(var4)(var5, var10);
-                                    var2.originX = var10;
-                                    var10 = var9[var7];
-                                    var13 = var8.bind(var4)(var10);
-                                    var12 = var13.withTiming;
-                                    var11 = var3.targetOriginY;
-                                    var10 = {};
-                                    var14 = _closure4_slot3;
-                                    var10.duration = var14;
-                                    var14 = _closure4_slot4;
-                                    var14 = var14.easingY;
-                                    var10.easing = var14;
-                                    var10 = var12.bind(var13)(var11, var10);
-                                    var10 = var6.bind(var4)(var5, var10);
-                                    var2.originY = var10;
-                                    var10 = var9[var7];
-                                    var13 = var8.bind(var4)(var10);
-                                    var12 = var13.withTiming;
-                                    var11 = var3.targetWidth;
-                                    var10 = {};
-                                    var14 = _closure4_slot3;
-                                    var10.duration = var14;
-                                    var14 = _closure4_slot4;
-                                    var14 = var14.easingWidth;
-                                    var10.easing = var14;
-                                    var10 = var12.bind(var13)(var11, var10);
-                                    var10 = var6.bind(var4)(var5, var10);
-                                    var2.width = var10;
-                                    var7 = var9[var7];
-                                    var9 = var8.bind(var4)(var7);
-                                    var8 = var9.withTiming;
-                                    var7 = var3.targetHeight;
-                                    var3 = {};
-                                    var10 = _closure4_slot3;
-                                    var3.duration = var10;
-                                    var10 = _closure4_slot4;
-                                    var10 = var10.easingHeight;
-                                    var3.easing = var10;
-                                    var3 = var8.bind(var9)(var7, var3);
-                                    var3 = var6.bind(var4)(var5, var3);
-                                    var2.height = var3;
-                                    var0.animations = var2;
-                                    var1 = _closure4_slot1;
-                                    var0.callback = var1;
-                                    return var0;
-                                };
-                                var2 = {};
-                                var2.delayFunction = var6;
-                                var2.delay = var1;
-                                var8 = _closure1_slot0;
-                                var7 = _closure1_slot1;
-                                var6 = 6;
-                                var7 = var7[var6];
-                                var6 = undefined;
-                                var6 = var8.bind(var6)(var7);
-                                var6 = var6.withTiming;
-                                var2.withTiming = var6;
-                                var2.duration = var5;
-                                var2.easing = var4;
-                                var2.callback = var3;
-                                var0.__closure = var2;
-                                var2 = 8113645568730.0;
-                                var0.__workletHash = var2;
-                                var1 = _closure1_slot7;
-                                var0.__initData = var1;
-                                return var0;
-                        }
+                        var3 = _closure3_slot0;
+                        var1 = var3.getDelayFunction;
+                        var7 = var1.bind(var3)();
+                        var _closure4_slot0 = var7;
+                        var3 = _closure3_slot0;
+                        var1 = var3.getAnimationAndConfig;
+                        var6 = var1.bind(var3)();
+                        var5 = _closure1_slot0;
+                        var4 = undefined;
+                        var3 = 2;
+                        var4 = var5.bind(var4)(var6, var3);
+                        var3 = 0;
+                        var5 = var4[var3];
+                        var _closure4_slot1 = var5;
+                        var3 = 1;
+                        var4 = var4[var3];
+                        var _closure4_slot2 = var4;
+                        var6 = _closure3_slot0;
+                        var3 = var6.getDelay;
+                        var6 = var3.bind(var6)();
+                        var _closure4_slot3 = var6;
+                        var3 = _closure3_slot0;
+                        var3 = var3.callbackV;
+                        var _closure4_slot4 = var3;
+                        var2 = _closure3_slot0;
+                        var8 = var2.initialValues;
+                        var _closure4_slot5 = var8;
+                        var0 = function arg0() {
+                            var0 = {};
+                            var1 = global;
+                            var6 = var1.Object;
+                            var5 = var6.assign;
+                            var4 = {};
+                            var2 = {};
+                            var3 = 500;
+                            var2.perspective = var3;
+                            var1 = new Array(3);
+                            var1[0] = var2;
+                            var2 = {};
+                            var7 = '90deg';
+                            var2.rotateX = var7;
+                            var1[1] = var2;
+                            var2 = {};
+                            var7 = arg0;
+                            var7 = var7.targetHeight;
+                            var7 = -var7;
+                            var2.translateY = var7;
+                            var1[2] = var2;
+                            var4.transform = var1;
+                            var2 = _closure4_slot5;
+                            var2 = var5.bind(var6)(var4, var2);
+                            var0.initialValues = var2;
+                            var2 = {};
+                            var4 = {};
+                            var4.perspective = var3;
+                            var3 = new Array(3);
+                            var3[0] = var4;
+                            var4 = {};
+                            var8 = _closure4_slot0;
+                            var7 = _closure4_slot3;
+                            var10 = _closure4_slot1;
+                            var9 = _closure4_slot2;
+                            var6 = undefined;
+                            var5 = '0deg';
+                            var5 = var10.bind(var6)(var5, var9);
+                            var5 = var8.bind(var6)(var7, var5);
+                            var4.rotateX = var5;
+                            var3[1] = var4;
+                            var4 = {};
+                            var5 = 0;
+                            var5 = var10.bind(var6)(var5, var9);
+                            var5 = var8.bind(var6)(var7, var5);
+                            var4.translateY = var5;
+                            var3[2] = var4;
+                            var2.transform = var3;
+                            var0.animations = var2;
+                            var1 = _closure4_slot4;
+                            var0.callback = var1;
+                            return var0;
+                        };
+                        var2 = {};
+                        var2.initialValues = var8;
+                        var2.delayFunction = var7;
+                        var2.delay = var6;
+                        var2.animation = var5;
+                        var2.config = var4;
+                        var2.callback = var3;
+                        var0.__closure = var2;
+                        var2 = 17482936202676.0;
+                        var0.__workletHash = var2;
+                        var1 = _closure1_slot6;
+                        var0.__initData = var1;
+                        return var0;
                     };
                     var0.build = var1;
                     return var0;
             }
         };
         var _closure2_slot0 = var4;
-        var2 = _closure1_slot6;
+        var5 = _closure1_slot5;
         var3 = undefined;
-        var1 = arg0;
-        var1 = var2.bind(var3)(var4, var1);
-        var2 = _closure1_slot3;
+        var2 = arg0;
+        var2 = var5.bind(var3)(var4, var2);
+        var2 = _closure1_slot2;
         var0 = {};
-        var10 = 'easingX';
-        var0.key = var10;
-        var1 = function arg0() {
-            var0 = this;
-            var1 = arg0;
-            var0.easingXV = var1;
-            return var0;
-        };
-        var0.value = var1;
-        var1 = new Array(4);
-        var1[0] = var0;
-        var0 = {};
-        var9 = 'easingY';
-        var0.key = var9;
-        var5 = function arg0() {
-            var0 = this;
-            var1 = arg0;
-            var0.easingYV = var1;
-            return var0;
-        };
-        var0.value = var5;
-        var1[1] = var0;
-        var0 = {};
-        var8 = 'easingWidth';
-        var0.key = var8;
-        var5 = function arg0() {
-            var0 = this;
-            var1 = arg0;
-            var0.easingWidthV = var1;
-            return var0;
-        };
-        var0.value = var5;
-        var1[2] = var0;
-        var0 = {};
-        var7 = 'easingHeight';
-        var0.key = var7;
-        var5 = function arg0() {
-            var0 = this;
-            var1 = arg0;
-            var0.easingHeightV = var1;
-            return var0;
-        };
-        var0.value = var5;
-        var1[3] = var0;
-        var5 = {};
-        var0 = 'createInstance';
-        var5.key = var0;
-        var0 = function() {
+        var5 = 'createInstance';
+        var0.key = var5;
+        var1 = function() {
             var0 = _closure2_slot0;
             var1 = var0.prototype;
             var1 = Object.create(var1, {
@@ -411,67 +293,2010 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = var0 instanceof Object ? var0 : var1;
             return var0;
         };
-        var5.value = var0;
-        var0 = new Array(5);
-        var0[0] = var5;
-        var5 = {};
-        var5.key = var10;
-        var10 = function arg0() {
-            var1 = this;
-            var0 = var1.createInstance;
-            var2 = var0.bind(var1)();
-            var1 = var2.easingX;
-            var0 = arg0;
-            var0 = var1.bind(var2)(var0);
-            return var0;
-        };
-        var5.value = var10;
-        var0[1] = var5;
-        var5 = {};
-        var5.key = var9;
-        var9 = function arg0() {
-            var1 = this;
-            var0 = var1.createInstance;
-            var2 = var0.bind(var1)();
-            var1 = var2.easingY;
-            var0 = arg0;
-            var0 = var1.bind(var2)(var0);
-            return var0;
-        };
-        var5.value = var9;
-        var0[2] = var5;
-        var5 = {};
-        var5.key = var8;
-        var8 = function arg0() {
-            var1 = this;
-            var0 = var1.createInstance;
-            var2 = var0.bind(var1)();
-            var1 = var2.easingWidth;
-            var0 = arg0;
-            var0 = var1.bind(var2)(var0);
-            return var0;
-        };
-        var5.value = var8;
-        var0[3] = var5;
-        var5 = {};
-        var5.key = var7;
-        var6 = function arg0() {
-            var1 = this;
-            var0 = var1.createInstance;
-            var2 = var0.bind(var1)();
-            var1 = var2.easingHeight;
-            var0 = arg0;
-            var0 = var1.bind(var2)(var0);
-            return var0;
-        };
-        var5.value = var6;
-        var0[4] = var5;
-        var0 = var2.bind(var3)(var4, var1, var0);
+        var0.value = var1;
+        var1 = new Array(1);
+        var1[0] = var0;
+        var0 = null;
+        var0 = var2.bind(var3)(var4, var0, var1);
         return var0;
     };
-    var1 = var1.bind(var0)(var3);
-    var3 = 'CurvedTransition';
-    var1.presetName = var3;
-    var2.CurvedTransition = var1;
+    var13 = var3.bind(var0)(var4);
+    var3 = 'FlipInXUp';
+    var13.presetName = var3;
+    var3 = {};
+    var4 = "function pnpm_FlipTs2(targetValues){const{initialValues,delayFunction,delay,animation,config,callback}=this.__closure;return{initialValues:{transform:[{perspective:500},{rotateY:'-90deg'},{translateX:-targetValues.targetWidth}],...initialValues},animations:{transform:[{perspective:delayFunction(delay,animation(500,config))},{rotateY:delayFunction(delay,animation('0deg',config))},{translateX:delayFunction(delay,animation(0,config))}]},callback:callback};}";
+    var3.code = var4;
+    var _closure1_slot7 = var3;
+    var3 = var16[var14];
+    var3 = var15.bind(var0)(var3);
+    var4 = var3.ComplexAnimationBuilder;
+    var3 = function(arg0) { // Environment: var1
+        var4 = function() {
+            _fun34400: for (var _fun34400_ip = 0;;) switch (_fun34400_ip) {
+                case 0:
+                    var5 = this;
+                    var4 = undefined;
+                    var8 = undefined;
+                    var6 = _closure1_slot1;
+                    var3 = _closure2_slot0;
+                    var3 = var6.bind(var4)(var5, var3);
+                    var6 = arguments.length;
+                    var3 = global;
+                    var3 = var3.Array;
+                    var7 = var3.prototype;
+                    var7 = Object.create(var7, {
+                        constructor: {
+                            value: var3
+                        }
+                    });
+                    var13 = var7;
+                    var12 = var6;
+                    var3 = new var13[var3](var12, var11);
+                    var7 = var3 instanceof Object ? var3 : var7;
+                    var3 = 0;
+                    var9 = var3 < var6;
+                    if (!var9) {
+                        _fun34400_ip = 87;
+                        continue _fun34400
+                    }
+                case 72:
+                    var9 = arguments[var3];
+                    var7[var3] = var9;
+                    var3 = var3 + 1;
+                    if (var3 < var6) {
+                        _fun34400_ip = 72;
+                        continue _fun34400
+                    }
+                case 87:
+                    var3 = _closure1_slot18;
+                    var2 = _closure2_slot0;
+                    var6 = new Array(0);
+                    var0 = var6.concat;
+                    var0 = var0.bind(var6)(var7);
+                    var0 = var3.bind(var4)(var5, var2, var0);
+                    var _closure3_slot0 = var0;
+                    var1 = function() { // Environment: var1
+                        var3 = _closure3_slot0;
+                        var1 = var3.getDelayFunction;
+                        var7 = var1.bind(var3)();
+                        var _closure4_slot0 = var7;
+                        var3 = _closure3_slot0;
+                        var1 = var3.getAnimationAndConfig;
+                        var6 = var1.bind(var3)();
+                        var5 = _closure1_slot0;
+                        var4 = undefined;
+                        var3 = 2;
+                        var4 = var5.bind(var4)(var6, var3);
+                        var3 = 0;
+                        var5 = var4[var3];
+                        var _closure4_slot1 = var5;
+                        var3 = 1;
+                        var4 = var4[var3];
+                        var _closure4_slot2 = var4;
+                        var6 = _closure3_slot0;
+                        var3 = var6.getDelay;
+                        var6 = var3.bind(var6)();
+                        var _closure4_slot3 = var6;
+                        var3 = _closure3_slot0;
+                        var3 = var3.callbackV;
+                        var _closure4_slot4 = var3;
+                        var2 = _closure3_slot0;
+                        var8 = var2.initialValues;
+                        var _closure4_slot5 = var8;
+                        var0 = function arg0() {
+                            var0 = {};
+                            var1 = global;
+                            var6 = var1.Object;
+                            var5 = var6.assign;
+                            var4 = {};
+                            var2 = {};
+                            var3 = 500;
+                            var2.perspective = var3;
+                            var1 = new Array(3);
+                            var1[0] = var2;
+                            var2 = {};
+                            var7 = '-90deg';
+                            var2.rotateY = var7;
+                            var1[1] = var2;
+                            var2 = {};
+                            var7 = arg0;
+                            var7 = var7.targetWidth;
+                            var7 = -var7;
+                            var2.translateX = var7;
+                            var1[2] = var2;
+                            var4.transform = var1;
+                            var2 = _closure4_slot5;
+                            var2 = var5.bind(var6)(var4, var2);
+                            var0.initialValues = var2;
+                            var2 = {};
+                            var4 = {};
+                            var8 = _closure4_slot0;
+                            var7 = _closure4_slot3;
+                            var10 = _closure4_slot1;
+                            var9 = _closure4_slot2;
+                            var6 = undefined;
+                            var3 = var10.bind(var6)(var3, var9);
+                            var3 = var8.bind(var6)(var7, var3);
+                            var4.perspective = var3;
+                            var3 = new Array(3);
+                            var3[0] = var4;
+                            var4 = {};
+                            var5 = '0deg';
+                            var5 = var10.bind(var6)(var5, var9);
+                            var5 = var8.bind(var6)(var7, var5);
+                            var4.rotateY = var5;
+                            var3[1] = var4;
+                            var4 = {};
+                            var5 = 0;
+                            var5 = var10.bind(var6)(var5, var9);
+                            var5 = var8.bind(var6)(var7, var5);
+                            var4.translateX = var5;
+                            var3[2] = var4;
+                            var2.transform = var3;
+                            var0.animations = var2;
+                            var1 = _closure4_slot4;
+                            var0.callback = var1;
+                            return var0;
+                        };
+                        var2 = {};
+                        var2.initialValues = var8;
+                        var2.delayFunction = var7;
+                        var2.delay = var6;
+                        var2.animation = var5;
+                        var2.config = var4;
+                        var2.callback = var3;
+                        var0.__closure = var2;
+                        var2 = 7030831354781.0;
+                        var0.__workletHash = var2;
+                        var1 = _closure1_slot7;
+                        var0.__initData = var1;
+                        return var0;
+                    };
+                    var0.build = var1;
+                    return var0;
+            }
+        };
+        var _closure2_slot0 = var4;
+        var5 = _closure1_slot5;
+        var3 = undefined;
+        var2 = arg0;
+        var2 = var5.bind(var3)(var4, var2);
+        var2 = _closure1_slot2;
+        var0 = {};
+        var5 = 'createInstance';
+        var0.key = var5;
+        var1 = function() {
+            var0 = _closure2_slot0;
+            var1 = var0.prototype;
+            var1 = Object.create(var1, {
+                constructor: {
+                    value: var0
+                }
+            });
+            var2 = var1;
+            var0 = new var2[var0](var1);
+            var0 = var0 instanceof Object ? var0 : var1;
+            return var0;
+        };
+        var0.value = var1;
+        var1 = new Array(1);
+        var1[0] = var0;
+        var0 = null;
+        var0 = var2.bind(var3)(var4, var0, var1);
+        return var0;
+    };
+    var12 = var3.bind(var0)(var4);
+    var3 = 'FlipInYLeft';
+    var12.presetName = var3;
+    var3 = {};
+    var4 = "function pnpm_FlipTs3(targetValues){const{initialValues,delayFunction,delay,animation,config,callback}=this.__closure;return{initialValues:{transform:[{perspective:500},{rotateX:'-90deg'},{translateY:targetValues.targetHeight}],...initialValues},animations:{transform:[{perspective:delayFunction(delay,animation(500,config))},{rotateX:delayFunction(delay,animation('0deg',config))},{translateY:delayFunction(delay,animation(0,config))}]},callback:callback};}";
+    var3.code = var4;
+    var _closure1_slot8 = var3;
+    var3 = var16[var14];
+    var3 = var15.bind(var0)(var3);
+    var4 = var3.ComplexAnimationBuilder;
+    var3 = function(arg0) { // Environment: var1
+        var4 = function() {
+            _fun34405: for (var _fun34405_ip = 0;;) switch (_fun34405_ip) {
+                case 0:
+                    var5 = this;
+                    var4 = undefined;
+                    var8 = undefined;
+                    var6 = _closure1_slot1;
+                    var3 = _closure2_slot0;
+                    var3 = var6.bind(var4)(var5, var3);
+                    var6 = arguments.length;
+                    var3 = global;
+                    var3 = var3.Array;
+                    var7 = var3.prototype;
+                    var7 = Object.create(var7, {
+                        constructor: {
+                            value: var3
+                        }
+                    });
+                    var13 = var7;
+                    var12 = var6;
+                    var3 = new var13[var3](var12, var11);
+                    var7 = var3 instanceof Object ? var3 : var7;
+                    var3 = 0;
+                    var9 = var3 < var6;
+                    if (!var9) {
+                        _fun34405_ip = 87;
+                        continue _fun34405
+                    }
+                case 72:
+                    var9 = arguments[var3];
+                    var7[var3] = var9;
+                    var3 = var3 + 1;
+                    if (var3 < var6) {
+                        _fun34405_ip = 72;
+                        continue _fun34405
+                    }
+                case 87:
+                    var3 = _closure1_slot18;
+                    var2 = _closure2_slot0;
+                    var6 = new Array(0);
+                    var0 = var6.concat;
+                    var0 = var0.bind(var6)(var7);
+                    var0 = var3.bind(var4)(var5, var2, var0);
+                    var _closure3_slot0 = var0;
+                    var1 = function() { // Environment: var1
+                        var3 = _closure3_slot0;
+                        var1 = var3.getDelayFunction;
+                        var7 = var1.bind(var3)();
+                        var _closure4_slot0 = var7;
+                        var3 = _closure3_slot0;
+                        var1 = var3.getAnimationAndConfig;
+                        var6 = var1.bind(var3)();
+                        var5 = _closure1_slot0;
+                        var4 = undefined;
+                        var3 = 2;
+                        var4 = var5.bind(var4)(var6, var3);
+                        var3 = 0;
+                        var5 = var4[var3];
+                        var _closure4_slot1 = var5;
+                        var3 = 1;
+                        var4 = var4[var3];
+                        var _closure4_slot2 = var4;
+                        var6 = _closure3_slot0;
+                        var3 = var6.getDelay;
+                        var6 = var3.bind(var6)();
+                        var _closure4_slot3 = var6;
+                        var3 = _closure3_slot0;
+                        var3 = var3.callbackV;
+                        var _closure4_slot4 = var3;
+                        var2 = _closure3_slot0;
+                        var8 = var2.initialValues;
+                        var _closure4_slot5 = var8;
+                        var0 = function arg0() {
+                            var0 = {};
+                            var1 = global;
+                            var6 = var1.Object;
+                            var5 = var6.assign;
+                            var4 = {};
+                            var2 = {};
+                            var3 = 500;
+                            var2.perspective = var3;
+                            var1 = new Array(3);
+                            var1[0] = var2;
+                            var2 = {};
+                            var7 = '-90deg';
+                            var2.rotateX = var7;
+                            var1[1] = var2;
+                            var2 = {};
+                            var7 = arg0;
+                            var7 = var7.targetHeight;
+                            var2.translateY = var7;
+                            var1[2] = var2;
+                            var4.transform = var1;
+                            var2 = _closure4_slot5;
+                            var2 = var5.bind(var6)(var4, var2);
+                            var0.initialValues = var2;
+                            var2 = {};
+                            var4 = {};
+                            var8 = _closure4_slot0;
+                            var7 = _closure4_slot3;
+                            var10 = _closure4_slot1;
+                            var9 = _closure4_slot2;
+                            var6 = undefined;
+                            var3 = var10.bind(var6)(var3, var9);
+                            var3 = var8.bind(var6)(var7, var3);
+                            var4.perspective = var3;
+                            var3 = new Array(3);
+                            var3[0] = var4;
+                            var4 = {};
+                            var5 = '0deg';
+                            var5 = var10.bind(var6)(var5, var9);
+                            var5 = var8.bind(var6)(var7, var5);
+                            var4.rotateX = var5;
+                            var3[1] = var4;
+                            var4 = {};
+                            var5 = 0;
+                            var5 = var10.bind(var6)(var5, var9);
+                            var5 = var8.bind(var6)(var7, var5);
+                            var4.translateY = var5;
+                            var3[2] = var4;
+                            var2.transform = var3;
+                            var0.animations = var2;
+                            var1 = _closure4_slot4;
+                            var0.callback = var1;
+                            return var0;
+                        };
+                        var2 = {};
+                        var2.initialValues = var8;
+                        var2.delayFunction = var7;
+                        var2.delay = var6;
+                        var2.animation = var5;
+                        var2.config = var4;
+                        var2.callback = var3;
+                        var0.__closure = var2;
+                        var2 = 8540727794920.0;
+                        var0.__workletHash = var2;
+                        var1 = _closure1_slot8;
+                        var0.__initData = var1;
+                        return var0;
+                    };
+                    var0.build = var1;
+                    return var0;
+            }
+        };
+        var _closure2_slot0 = var4;
+        var5 = _closure1_slot5;
+        var3 = undefined;
+        var2 = arg0;
+        var2 = var5.bind(var3)(var4, var2);
+        var2 = _closure1_slot2;
+        var0 = {};
+        var5 = 'createInstance';
+        var0.key = var5;
+        var1 = function() {
+            var0 = _closure2_slot0;
+            var1 = var0.prototype;
+            var1 = Object.create(var1, {
+                constructor: {
+                    value: var0
+                }
+            });
+            var2 = var1;
+            var0 = new var2[var0](var1);
+            var0 = var0 instanceof Object ? var0 : var1;
+            return var0;
+        };
+        var0.value = var1;
+        var1 = new Array(1);
+        var1[0] = var0;
+        var0 = null;
+        var0 = var2.bind(var3)(var4, var0, var1);
+        return var0;
+    };
+    var11 = var3.bind(var0)(var4);
+    var3 = 'FlipInXDown';
+    var11.presetName = var3;
+    var3 = {};
+    var4 = "function pnpm_FlipTs4(targetValues){const{initialValues,delayFunction,delay,animation,config,callback}=this.__closure;return{initialValues:{transform:[{perspective:500},{rotateY:'90deg'},{translateX:targetValues.targetWidth}],...initialValues},animations:{transform:[{perspective:delayFunction(delay,animation(500,config))},{rotateY:delayFunction(delay,animation('0deg',config))},{translateX:delayFunction(delay,animation(0,config))}]},callback:callback};}";
+    var3.code = var4;
+    var _closure1_slot9 = var3;
+    var3 = var16[var14];
+    var3 = var15.bind(var0)(var3);
+    var4 = var3.ComplexAnimationBuilder;
+    var3 = function(arg0) { // Environment: var1
+        var4 = function() {
+            _fun34410: for (var _fun34410_ip = 0;;) switch (_fun34410_ip) {
+                case 0:
+                    var5 = this;
+                    var4 = undefined;
+                    var8 = undefined;
+                    var6 = _closure1_slot1;
+                    var3 = _closure2_slot0;
+                    var3 = var6.bind(var4)(var5, var3);
+                    var6 = arguments.length;
+                    var3 = global;
+                    var3 = var3.Array;
+                    var7 = var3.prototype;
+                    var7 = Object.create(var7, {
+                        constructor: {
+                            value: var3
+                        }
+                    });
+                    var13 = var7;
+                    var12 = var6;
+                    var3 = new var13[var3](var12, var11);
+                    var7 = var3 instanceof Object ? var3 : var7;
+                    var3 = 0;
+                    var9 = var3 < var6;
+                    if (!var9) {
+                        _fun34410_ip = 87;
+                        continue _fun34410
+                    }
+                case 72:
+                    var9 = arguments[var3];
+                    var7[var3] = var9;
+                    var3 = var3 + 1;
+                    if (var3 < var6) {
+                        _fun34410_ip = 72;
+                        continue _fun34410
+                    }
+                case 87:
+                    var3 = _closure1_slot18;
+                    var2 = _closure2_slot0;
+                    var6 = new Array(0);
+                    var0 = var6.concat;
+                    var0 = var0.bind(var6)(var7);
+                    var0 = var3.bind(var4)(var5, var2, var0);
+                    var _closure3_slot0 = var0;
+                    var1 = function() { // Environment: var1
+                        var3 = _closure3_slot0;
+                        var1 = var3.getDelayFunction;
+                        var7 = var1.bind(var3)();
+                        var _closure4_slot0 = var7;
+                        var3 = _closure3_slot0;
+                        var1 = var3.getAnimationAndConfig;
+                        var6 = var1.bind(var3)();
+                        var5 = _closure1_slot0;
+                        var4 = undefined;
+                        var3 = 2;
+                        var4 = var5.bind(var4)(var6, var3);
+                        var3 = 0;
+                        var5 = var4[var3];
+                        var _closure4_slot1 = var5;
+                        var3 = 1;
+                        var4 = var4[var3];
+                        var _closure4_slot2 = var4;
+                        var6 = _closure3_slot0;
+                        var3 = var6.getDelay;
+                        var6 = var3.bind(var6)();
+                        var _closure4_slot3 = var6;
+                        var3 = _closure3_slot0;
+                        var3 = var3.callbackV;
+                        var _closure4_slot4 = var3;
+                        var2 = _closure3_slot0;
+                        var8 = var2.initialValues;
+                        var _closure4_slot5 = var8;
+                        var0 = function arg0() {
+                            var0 = {};
+                            var1 = global;
+                            var6 = var1.Object;
+                            var5 = var6.assign;
+                            var4 = {};
+                            var2 = {};
+                            var3 = 500;
+                            var2.perspective = var3;
+                            var1 = new Array(3);
+                            var1[0] = var2;
+                            var2 = {};
+                            var7 = '90deg';
+                            var2.rotateY = var7;
+                            var1[1] = var2;
+                            var2 = {};
+                            var7 = arg0;
+                            var7 = var7.targetWidth;
+                            var2.translateX = var7;
+                            var1[2] = var2;
+                            var4.transform = var1;
+                            var2 = _closure4_slot5;
+                            var2 = var5.bind(var6)(var4, var2);
+                            var0.initialValues = var2;
+                            var2 = {};
+                            var4 = {};
+                            var8 = _closure4_slot0;
+                            var7 = _closure4_slot3;
+                            var10 = _closure4_slot1;
+                            var9 = _closure4_slot2;
+                            var6 = undefined;
+                            var3 = var10.bind(var6)(var3, var9);
+                            var3 = var8.bind(var6)(var7, var3);
+                            var4.perspective = var3;
+                            var3 = new Array(3);
+                            var3[0] = var4;
+                            var4 = {};
+                            var5 = '0deg';
+                            var5 = var10.bind(var6)(var5, var9);
+                            var5 = var8.bind(var6)(var7, var5);
+                            var4.rotateY = var5;
+                            var3[1] = var4;
+                            var4 = {};
+                            var5 = 0;
+                            var5 = var10.bind(var6)(var5, var9);
+                            var5 = var8.bind(var6)(var7, var5);
+                            var4.translateX = var5;
+                            var3[2] = var4;
+                            var2.transform = var3;
+                            var0.animations = var2;
+                            var1 = _closure4_slot4;
+                            var0.callback = var1;
+                            return var0;
+                        };
+                        var2 = {};
+                        var2.initialValues = var8;
+                        var2.delayFunction = var7;
+                        var2.delay = var6;
+                        var2.animation = var5;
+                        var2.config = var4;
+                        var2.callback = var3;
+                        var0.__closure = var2;
+                        var2 = 10571583952635.0;
+                        var0.__workletHash = var2;
+                        var1 = _closure1_slot9;
+                        var0.__initData = var1;
+                        return var0;
+                    };
+                    var0.build = var1;
+                    return var0;
+            }
+        };
+        var _closure2_slot0 = var4;
+        var5 = _closure1_slot5;
+        var3 = undefined;
+        var2 = arg0;
+        var2 = var5.bind(var3)(var4, var2);
+        var2 = _closure1_slot2;
+        var0 = {};
+        var5 = 'createInstance';
+        var0.key = var5;
+        var1 = function() {
+            var0 = _closure2_slot0;
+            var1 = var0.prototype;
+            var1 = Object.create(var1, {
+                constructor: {
+                    value: var0
+                }
+            });
+            var2 = var1;
+            var0 = new var2[var0](var1);
+            var0 = var0 instanceof Object ? var0 : var1;
+            return var0;
+        };
+        var0.value = var1;
+        var1 = new Array(1);
+        var1[0] = var0;
+        var0 = null;
+        var0 = var2.bind(var3)(var4, var0, var1);
+        return var0;
+    };
+    var10 = var3.bind(var0)(var4);
+    var3 = 'FlipInYRight';
+    var10.presetName = var3;
+    var3 = {};
+    var4 = "function pnpm_FlipTs5(){const{initialValues,delayFunction,delay,animation,config,callback}=this.__closure;return{initialValues:{transform:[{perspective:500},{rotateX:'90deg'}],...initialValues},animations:{transform:[{perspective:delayFunction(delay,animation(500,config))},{rotateX:delayFunction(delay,animation('0deg',config))}]},callback:callback};}";
+    var3.code = var4;
+    var _closure1_slot10 = var3;
+    var3 = var16[var14];
+    var3 = var15.bind(var0)(var3);
+    var4 = var3.ComplexAnimationBuilder;
+    var3 = function(arg0) { // Environment: var1
+        var4 = function() {
+            _fun34415: for (var _fun34415_ip = 0;;) switch (_fun34415_ip) {
+                case 0:
+                    var5 = this;
+                    var4 = undefined;
+                    var8 = undefined;
+                    var6 = _closure1_slot1;
+                    var3 = _closure2_slot0;
+                    var3 = var6.bind(var4)(var5, var3);
+                    var6 = arguments.length;
+                    var3 = global;
+                    var3 = var3.Array;
+                    var7 = var3.prototype;
+                    var7 = Object.create(var7, {
+                        constructor: {
+                            value: var3
+                        }
+                    });
+                    var13 = var7;
+                    var12 = var6;
+                    var3 = new var13[var3](var12, var11);
+                    var7 = var3 instanceof Object ? var3 : var7;
+                    var3 = 0;
+                    var9 = var3 < var6;
+                    if (!var9) {
+                        _fun34415_ip = 87;
+                        continue _fun34415
+                    }
+                case 72:
+                    var9 = arguments[var3];
+                    var7[var3] = var9;
+                    var3 = var3 + 1;
+                    if (var3 < var6) {
+                        _fun34415_ip = 72;
+                        continue _fun34415
+                    }
+                case 87:
+                    var3 = _closure1_slot18;
+                    var2 = _closure2_slot0;
+                    var6 = new Array(0);
+                    var0 = var6.concat;
+                    var0 = var0.bind(var6)(var7);
+                    var0 = var3.bind(var4)(var5, var2, var0);
+                    var _closure3_slot0 = var0;
+                    var1 = function() { // Environment: var1
+                        var3 = _closure3_slot0;
+                        var1 = var3.getDelayFunction;
+                        var7 = var1.bind(var3)();
+                        var _closure4_slot0 = var7;
+                        var3 = _closure3_slot0;
+                        var1 = var3.getAnimationAndConfig;
+                        var6 = var1.bind(var3)();
+                        var5 = _closure1_slot0;
+                        var4 = undefined;
+                        var3 = 2;
+                        var4 = var5.bind(var4)(var6, var3);
+                        var3 = 0;
+                        var5 = var4[var3];
+                        var _closure4_slot1 = var5;
+                        var3 = 1;
+                        var4 = var4[var3];
+                        var _closure4_slot2 = var4;
+                        var6 = _closure3_slot0;
+                        var3 = var6.getDelay;
+                        var6 = var3.bind(var6)();
+                        var _closure4_slot3 = var6;
+                        var3 = _closure3_slot0;
+                        var3 = var3.callbackV;
+                        var _closure4_slot4 = var3;
+                        var2 = _closure3_slot0;
+                        var8 = var2.initialValues;
+                        var _closure4_slot5 = var8;
+                        var0 = function() {
+                            var0 = {};
+                            var1 = global;
+                            var6 = var1.Object;
+                            var5 = var6.assign;
+                            var4 = {};
+                            var2 = {};
+                            var3 = 500;
+                            var2.perspective = var3;
+                            var1 = new Array(2);
+                            var1[0] = var2;
+                            var2 = {};
+                            var7 = '90deg';
+                            var2.rotateX = var7;
+                            var1[1] = var2;
+                            var4.transform = var1;
+                            var2 = _closure4_slot5;
+                            var2 = var5.bind(var6)(var4, var2);
+                            var0.initialValues = var2;
+                            var2 = {};
+                            var4 = {};
+                            var8 = _closure4_slot0;
+                            var7 = _closure4_slot3;
+                            var10 = _closure4_slot1;
+                            var9 = _closure4_slot2;
+                            var6 = undefined;
+                            var3 = var10.bind(var6)(var3, var9);
+                            var3 = var8.bind(var6)(var7, var3);
+                            var4.perspective = var3;
+                            var3 = new Array(2);
+                            var3[0] = var4;
+                            var4 = {};
+                            var5 = '0deg';
+                            var5 = var10.bind(var6)(var5, var9);
+                            var5 = var8.bind(var6)(var7, var5);
+                            var4.rotateX = var5;
+                            var3[1] = var4;
+                            var2.transform = var3;
+                            var0.animations = var2;
+                            var1 = _closure4_slot4;
+                            var0.callback = var1;
+                            return var0;
+                        };
+                        var2 = {};
+                        var2.initialValues = var8;
+                        var2.delayFunction = var7;
+                        var2.delay = var6;
+                        var2.animation = var5;
+                        var2.config = var4;
+                        var2.callback = var3;
+                        var0.__closure = var2;
+                        var2 = 5139023366989.0;
+                        var0.__workletHash = var2;
+                        var1 = _closure1_slot10;
+                        var0.__initData = var1;
+                        return var0;
+                    };
+                    var0.build = var1;
+                    return var0;
+            }
+        };
+        var _closure2_slot0 = var4;
+        var5 = _closure1_slot5;
+        var3 = undefined;
+        var2 = arg0;
+        var2 = var5.bind(var3)(var4, var2);
+        var2 = _closure1_slot2;
+        var0 = {};
+        var5 = 'createInstance';
+        var0.key = var5;
+        var1 = function() {
+            var0 = _closure2_slot0;
+            var1 = var0.prototype;
+            var1 = Object.create(var1, {
+                constructor: {
+                    value: var0
+                }
+            });
+            var2 = var1;
+            var0 = new var2[var0](var1);
+            var0 = var0 instanceof Object ? var0 : var1;
+            return var0;
+        };
+        var0.value = var1;
+        var1 = new Array(1);
+        var1[0] = var0;
+        var0 = null;
+        var0 = var2.bind(var3)(var4, var0, var1);
+        return var0;
+    };
+    var9 = var3.bind(var0)(var4);
+    var3 = 'FlipInEasyX';
+    var9.presetName = var3;
+    var3 = {};
+    var4 = "function pnpm_FlipTs6(){const{initialValues,delayFunction,delay,animation,config,callback}=this.__closure;return{initialValues:{transform:[{perspective:500},{rotateY:'90deg'}],...initialValues},animations:{transform:[{perspective:delayFunction(delay,animation(500,config))},{rotateY:delayFunction(delay,animation('0deg',config))}]},callback:callback};}";
+    var3.code = var4;
+    var _closure1_slot11 = var3;
+    var3 = var16[var14];
+    var3 = var15.bind(var0)(var3);
+    var4 = var3.ComplexAnimationBuilder;
+    var3 = function(arg0) { // Environment: var1
+        var4 = function() {
+            _fun34420: for (var _fun34420_ip = 0;;) switch (_fun34420_ip) {
+                case 0:
+                    var5 = this;
+                    var4 = undefined;
+                    var8 = undefined;
+                    var6 = _closure1_slot1;
+                    var3 = _closure2_slot0;
+                    var3 = var6.bind(var4)(var5, var3);
+                    var6 = arguments.length;
+                    var3 = global;
+                    var3 = var3.Array;
+                    var7 = var3.prototype;
+                    var7 = Object.create(var7, {
+                        constructor: {
+                            value: var3
+                        }
+                    });
+                    var13 = var7;
+                    var12 = var6;
+                    var3 = new var13[var3](var12, var11);
+                    var7 = var3 instanceof Object ? var3 : var7;
+                    var3 = 0;
+                    var9 = var3 < var6;
+                    if (!var9) {
+                        _fun34420_ip = 87;
+                        continue _fun34420
+                    }
+                case 72:
+                    var9 = arguments[var3];
+                    var7[var3] = var9;
+                    var3 = var3 + 1;
+                    if (var3 < var6) {
+                        _fun34420_ip = 72;
+                        continue _fun34420
+                    }
+                case 87:
+                    var3 = _closure1_slot18;
+                    var2 = _closure2_slot0;
+                    var6 = new Array(0);
+                    var0 = var6.concat;
+                    var0 = var0.bind(var6)(var7);
+                    var0 = var3.bind(var4)(var5, var2, var0);
+                    var _closure3_slot0 = var0;
+                    var1 = function() { // Environment: var1
+                        var3 = _closure3_slot0;
+                        var1 = var3.getDelayFunction;
+                        var7 = var1.bind(var3)();
+                        var _closure4_slot0 = var7;
+                        var3 = _closure3_slot0;
+                        var1 = var3.getAnimationAndConfig;
+                        var6 = var1.bind(var3)();
+                        var5 = _closure1_slot0;
+                        var4 = undefined;
+                        var3 = 2;
+                        var4 = var5.bind(var4)(var6, var3);
+                        var3 = 0;
+                        var5 = var4[var3];
+                        var _closure4_slot1 = var5;
+                        var3 = 1;
+                        var4 = var4[var3];
+                        var _closure4_slot2 = var4;
+                        var6 = _closure3_slot0;
+                        var3 = var6.getDelay;
+                        var6 = var3.bind(var6)();
+                        var _closure4_slot3 = var6;
+                        var3 = _closure3_slot0;
+                        var3 = var3.callbackV;
+                        var _closure4_slot4 = var3;
+                        var2 = _closure3_slot0;
+                        var8 = var2.initialValues;
+                        var _closure4_slot5 = var8;
+                        var0 = function() {
+                            var0 = {};
+                            var1 = global;
+                            var6 = var1.Object;
+                            var5 = var6.assign;
+                            var4 = {};
+                            var2 = {};
+                            var3 = 500;
+                            var2.perspective = var3;
+                            var1 = new Array(2);
+                            var1[0] = var2;
+                            var2 = {};
+                            var7 = '90deg';
+                            var2.rotateY = var7;
+                            var1[1] = var2;
+                            var4.transform = var1;
+                            var2 = _closure4_slot5;
+                            var2 = var5.bind(var6)(var4, var2);
+                            var0.initialValues = var2;
+                            var2 = {};
+                            var4 = {};
+                            var8 = _closure4_slot0;
+                            var7 = _closure4_slot3;
+                            var10 = _closure4_slot1;
+                            var9 = _closure4_slot2;
+                            var6 = undefined;
+                            var3 = var10.bind(var6)(var3, var9);
+                            var3 = var8.bind(var6)(var7, var3);
+                            var4.perspective = var3;
+                            var3 = new Array(2);
+                            var3[0] = var4;
+                            var4 = {};
+                            var5 = '0deg';
+                            var5 = var10.bind(var6)(var5, var9);
+                            var5 = var8.bind(var6)(var7, var5);
+                            var4.rotateY = var5;
+                            var3[1] = var4;
+                            var2.transform = var3;
+                            var0.animations = var2;
+                            var1 = _closure4_slot4;
+                            var0.callback = var1;
+                            return var0;
+                        };
+                        var2 = {};
+                        var2.initialValues = var8;
+                        var2.delayFunction = var7;
+                        var2.delay = var6;
+                        var2.animation = var5;
+                        var2.config = var4;
+                        var2.callback = var3;
+                        var0.__closure = var2;
+                        var2 = 4577193778414.0;
+                        var0.__workletHash = var2;
+                        var1 = _closure1_slot11;
+                        var0.__initData = var1;
+                        return var0;
+                    };
+                    var0.build = var1;
+                    return var0;
+            }
+        };
+        var _closure2_slot0 = var4;
+        var5 = _closure1_slot5;
+        var3 = undefined;
+        var2 = arg0;
+        var2 = var5.bind(var3)(var4, var2);
+        var2 = _closure1_slot2;
+        var0 = {};
+        var5 = 'createInstance';
+        var0.key = var5;
+        var1 = function() {
+            var0 = _closure2_slot0;
+            var1 = var0.prototype;
+            var1 = Object.create(var1, {
+                constructor: {
+                    value: var0
+                }
+            });
+            var2 = var1;
+            var0 = new var2[var0](var1);
+            var0 = var0 instanceof Object ? var0 : var1;
+            return var0;
+        };
+        var0.value = var1;
+        var1 = new Array(1);
+        var1[0] = var0;
+        var0 = null;
+        var0 = var2.bind(var3)(var4, var0, var1);
+        return var0;
+    };
+    var8 = var3.bind(var0)(var4);
+    var3 = 'FlipInEasyY';
+    var8.presetName = var3;
+    var3 = {};
+    var4 = "function pnpm_FlipTs7(targetValues){const{initialValues,delayFunction,delay,animation,config,callback}=this.__closure;return{initialValues:{transform:[{perspective:500},{rotateX:'0deg'},{translateY:0}],...initialValues},animations:{transform:[{perspective:delayFunction(delay,animation(500,config))},{rotateX:delayFunction(delay,animation('90deg',config))},{translateY:delayFunction(delay,animation(-targetValues.currentHeight,config))}]},callback:callback};}";
+    var3.code = var4;
+    var _closure1_slot12 = var3;
+    var3 = var16[var14];
+    var3 = var15.bind(var0)(var3);
+    var4 = var3.ComplexAnimationBuilder;
+    var3 = function(arg0) { // Environment: var1
+        var4 = function() {
+            _fun34425: for (var _fun34425_ip = 0;;) switch (_fun34425_ip) {
+                case 0:
+                    var5 = this;
+                    var4 = undefined;
+                    var8 = undefined;
+                    var6 = _closure1_slot1;
+                    var3 = _closure2_slot0;
+                    var3 = var6.bind(var4)(var5, var3);
+                    var6 = arguments.length;
+                    var3 = global;
+                    var3 = var3.Array;
+                    var7 = var3.prototype;
+                    var7 = Object.create(var7, {
+                        constructor: {
+                            value: var3
+                        }
+                    });
+                    var13 = var7;
+                    var12 = var6;
+                    var3 = new var13[var3](var12, var11);
+                    var7 = var3 instanceof Object ? var3 : var7;
+                    var3 = 0;
+                    var9 = var3 < var6;
+                    if (!var9) {
+                        _fun34425_ip = 87;
+                        continue _fun34425
+                    }
+                case 72:
+                    var9 = arguments[var3];
+                    var7[var3] = var9;
+                    var3 = var3 + 1;
+                    if (var3 < var6) {
+                        _fun34425_ip = 72;
+                        continue _fun34425
+                    }
+                case 87:
+                    var3 = _closure1_slot18;
+                    var2 = _closure2_slot0;
+                    var6 = new Array(0);
+                    var0 = var6.concat;
+                    var0 = var0.bind(var6)(var7);
+                    var0 = var3.bind(var4)(var5, var2, var0);
+                    var _closure3_slot0 = var0;
+                    var1 = function() { // Environment: var1
+                        var3 = _closure3_slot0;
+                        var1 = var3.getDelayFunction;
+                        var7 = var1.bind(var3)();
+                        var _closure4_slot0 = var7;
+                        var3 = _closure3_slot0;
+                        var1 = var3.getAnimationAndConfig;
+                        var6 = var1.bind(var3)();
+                        var5 = _closure1_slot0;
+                        var4 = undefined;
+                        var3 = 2;
+                        var4 = var5.bind(var4)(var6, var3);
+                        var3 = 0;
+                        var5 = var4[var3];
+                        var _closure4_slot1 = var5;
+                        var3 = 1;
+                        var4 = var4[var3];
+                        var _closure4_slot2 = var4;
+                        var6 = _closure3_slot0;
+                        var3 = var6.getDelay;
+                        var6 = var3.bind(var6)();
+                        var _closure4_slot3 = var6;
+                        var3 = _closure3_slot0;
+                        var3 = var3.callbackV;
+                        var _closure4_slot4 = var3;
+                        var2 = _closure3_slot0;
+                        var8 = var2.initialValues;
+                        var _closure4_slot5 = var8;
+                        var0 = function arg0() {
+                            var0 = {};
+                            var1 = global;
+                            var6 = var1.Object;
+                            var5 = var6.assign;
+                            var4 = {};
+                            var2 = {};
+                            var3 = 500;
+                            var2.perspective = var3;
+                            var1 = new Array(3);
+                            var1[0] = var2;
+                            var2 = {};
+                            var7 = '0deg';
+                            var2.rotateX = var7;
+                            var1[1] = var2;
+                            var2 = {};
+                            var7 = 0;
+                            var2.translateY = var7;
+                            var1[2] = var2;
+                            var4.transform = var1;
+                            var2 = _closure4_slot5;
+                            var2 = var5.bind(var6)(var4, var2);
+                            var0.initialValues = var2;
+                            var2 = {};
+                            var4 = {};
+                            var8 = _closure4_slot0;
+                            var7 = _closure4_slot3;
+                            var10 = _closure4_slot1;
+                            var9 = _closure4_slot2;
+                            var6 = undefined;
+                            var3 = var10.bind(var6)(var3, var9);
+                            var3 = var8.bind(var6)(var7, var3);
+                            var4.perspective = var3;
+                            var3 = new Array(3);
+                            var3[0] = var4;
+                            var4 = {};
+                            var5 = '90deg';
+                            var5 = var10.bind(var6)(var5, var9);
+                            var5 = var8.bind(var6)(var7, var5);
+                            var4.rotateX = var5;
+                            var3[1] = var4;
+                            var4 = {};
+                            var5 = arg0;
+                            var5 = var5.currentHeight;
+                            var5 = -var5;
+                            var5 = var10.bind(var6)(var5, var9);
+                            var5 = var8.bind(var6)(var7, var5);
+                            var4.translateY = var5;
+                            var3[2] = var4;
+                            var2.transform = var3;
+                            var0.animations = var2;
+                            var1 = _closure4_slot4;
+                            var0.callback = var1;
+                            return var0;
+                        };
+                        var2 = {};
+                        var2.initialValues = var8;
+                        var2.delayFunction = var7;
+                        var2.delay = var6;
+                        var2.animation = var5;
+                        var2.config = var4;
+                        var2.callback = var3;
+                        var0.__closure = var2;
+                        var2 = 3506458137332.0;
+                        var0.__workletHash = var2;
+                        var1 = _closure1_slot12;
+                        var0.__initData = var1;
+                        return var0;
+                    };
+                    var0.build = var1;
+                    return var0;
+            }
+        };
+        var _closure2_slot0 = var4;
+        var5 = _closure1_slot5;
+        var3 = undefined;
+        var2 = arg0;
+        var2 = var5.bind(var3)(var4, var2);
+        var2 = _closure1_slot2;
+        var0 = {};
+        var5 = 'createInstance';
+        var0.key = var5;
+        var1 = function() {
+            var0 = _closure2_slot0;
+            var1 = var0.prototype;
+            var1 = Object.create(var1, {
+                constructor: {
+                    value: var0
+                }
+            });
+            var2 = var1;
+            var0 = new var2[var0](var1);
+            var0 = var0 instanceof Object ? var0 : var1;
+            return var0;
+        };
+        var0.value = var1;
+        var1 = new Array(1);
+        var1[0] = var0;
+        var0 = null;
+        var0 = var2.bind(var3)(var4, var0, var1);
+        return var0;
+    };
+    var7 = var3.bind(var0)(var4);
+    var3 = 'FlipOutXUp';
+    var7.presetName = var3;
+    var3 = {};
+    var4 = "function pnpm_FlipTs8(targetValues){const{initialValues,delayFunction,delay,animation,config,callback}=this.__closure;return{initialValues:{transform:[{perspective:500},{rotateY:'0deg'},{translateX:0}],...initialValues},animations:{transform:[{perspective:delayFunction(delay,animation(500,config))},{rotateY:delayFunction(delay,animation('-90deg',config))},{translateX:delayFunction(delay,animation(-targetValues.currentWidth,config))}]},callback:callback};}";
+    var3.code = var4;
+    var _closure1_slot13 = var3;
+    var3 = var16[var14];
+    var3 = var15.bind(var0)(var3);
+    var4 = var3.ComplexAnimationBuilder;
+    var3 = function(arg0) { // Environment: var1
+        var4 = function() {
+            _fun34430: for (var _fun34430_ip = 0;;) switch (_fun34430_ip) {
+                case 0:
+                    var5 = this;
+                    var4 = undefined;
+                    var8 = undefined;
+                    var6 = _closure1_slot1;
+                    var3 = _closure2_slot0;
+                    var3 = var6.bind(var4)(var5, var3);
+                    var6 = arguments.length;
+                    var3 = global;
+                    var3 = var3.Array;
+                    var7 = var3.prototype;
+                    var7 = Object.create(var7, {
+                        constructor: {
+                            value: var3
+                        }
+                    });
+                    var13 = var7;
+                    var12 = var6;
+                    var3 = new var13[var3](var12, var11);
+                    var7 = var3 instanceof Object ? var3 : var7;
+                    var3 = 0;
+                    var9 = var3 < var6;
+                    if (!var9) {
+                        _fun34430_ip = 87;
+                        continue _fun34430
+                    }
+                case 72:
+                    var9 = arguments[var3];
+                    var7[var3] = var9;
+                    var3 = var3 + 1;
+                    if (var3 < var6) {
+                        _fun34430_ip = 72;
+                        continue _fun34430
+                    }
+                case 87:
+                    var3 = _closure1_slot18;
+                    var2 = _closure2_slot0;
+                    var6 = new Array(0);
+                    var0 = var6.concat;
+                    var0 = var0.bind(var6)(var7);
+                    var0 = var3.bind(var4)(var5, var2, var0);
+                    var _closure3_slot0 = var0;
+                    var1 = function() { // Environment: var1
+                        var3 = _closure3_slot0;
+                        var1 = var3.getDelayFunction;
+                        var7 = var1.bind(var3)();
+                        var _closure4_slot0 = var7;
+                        var3 = _closure3_slot0;
+                        var1 = var3.getAnimationAndConfig;
+                        var6 = var1.bind(var3)();
+                        var5 = _closure1_slot0;
+                        var4 = undefined;
+                        var3 = 2;
+                        var4 = var5.bind(var4)(var6, var3);
+                        var3 = 0;
+                        var5 = var4[var3];
+                        var _closure4_slot1 = var5;
+                        var3 = 1;
+                        var4 = var4[var3];
+                        var _closure4_slot2 = var4;
+                        var6 = _closure3_slot0;
+                        var3 = var6.getDelay;
+                        var6 = var3.bind(var6)();
+                        var _closure4_slot3 = var6;
+                        var3 = _closure3_slot0;
+                        var3 = var3.callbackV;
+                        var _closure4_slot4 = var3;
+                        var2 = _closure3_slot0;
+                        var8 = var2.initialValues;
+                        var _closure4_slot5 = var8;
+                        var0 = function arg0() {
+                            var0 = {};
+                            var1 = global;
+                            var6 = var1.Object;
+                            var5 = var6.assign;
+                            var4 = {};
+                            var2 = {};
+                            var3 = 500;
+                            var2.perspective = var3;
+                            var1 = new Array(3);
+                            var1[0] = var2;
+                            var2 = {};
+                            var7 = '0deg';
+                            var2.rotateY = var7;
+                            var1[1] = var2;
+                            var2 = {};
+                            var7 = 0;
+                            var2.translateX = var7;
+                            var1[2] = var2;
+                            var4.transform = var1;
+                            var2 = _closure4_slot5;
+                            var2 = var5.bind(var6)(var4, var2);
+                            var0.initialValues = var2;
+                            var2 = {};
+                            var4 = {};
+                            var8 = _closure4_slot0;
+                            var7 = _closure4_slot3;
+                            var10 = _closure4_slot1;
+                            var9 = _closure4_slot2;
+                            var6 = undefined;
+                            var3 = var10.bind(var6)(var3, var9);
+                            var3 = var8.bind(var6)(var7, var3);
+                            var4.perspective = var3;
+                            var3 = new Array(3);
+                            var3[0] = var4;
+                            var4 = {};
+                            var5 = '-90deg';
+                            var5 = var10.bind(var6)(var5, var9);
+                            var5 = var8.bind(var6)(var7, var5);
+                            var4.rotateY = var5;
+                            var3[1] = var4;
+                            var4 = {};
+                            var5 = arg0;
+                            var5 = var5.currentWidth;
+                            var5 = -var5;
+                            var5 = var10.bind(var6)(var5, var9);
+                            var5 = var8.bind(var6)(var7, var5);
+                            var4.translateX = var5;
+                            var3[2] = var4;
+                            var2.transform = var3;
+                            var0.animations = var2;
+                            var1 = _closure4_slot4;
+                            var0.callback = var1;
+                            return var0;
+                        };
+                        var2 = {};
+                        var2.initialValues = var8;
+                        var2.delayFunction = var7;
+                        var2.delay = var6;
+                        var2.animation = var5;
+                        var2.config = var4;
+                        var2.callback = var3;
+                        var0.__closure = var2;
+                        var2 = 17419119819311.0;
+                        var0.__workletHash = var2;
+                        var1 = _closure1_slot13;
+                        var0.__initData = var1;
+                        return var0;
+                    };
+                    var0.build = var1;
+                    return var0;
+            }
+        };
+        var _closure2_slot0 = var4;
+        var5 = _closure1_slot5;
+        var3 = undefined;
+        var2 = arg0;
+        var2 = var5.bind(var3)(var4, var2);
+        var2 = _closure1_slot2;
+        var0 = {};
+        var5 = 'createInstance';
+        var0.key = var5;
+        var1 = function() {
+            var0 = _closure2_slot0;
+            var1 = var0.prototype;
+            var1 = Object.create(var1, {
+                constructor: {
+                    value: var0
+                }
+            });
+            var2 = var1;
+            var0 = new var2[var0](var1);
+            var0 = var0 instanceof Object ? var0 : var1;
+            return var0;
+        };
+        var0.value = var1;
+        var1 = new Array(1);
+        var1[0] = var0;
+        var0 = null;
+        var0 = var2.bind(var3)(var4, var0, var1);
+        return var0;
+    };
+    var6 = var3.bind(var0)(var4);
+    var3 = 'FlipOutYLeft';
+    var6.presetName = var3;
+    var3 = {};
+    var4 = "function pnpm_FlipTs9(targetValues){const{initialValues,delayFunction,delay,animation,config,callback}=this.__closure;return{initialValues:{transform:[{perspective:500},{rotateX:'0deg'},{translateY:0}],...initialValues},animations:{transform:[{perspective:delayFunction(delay,animation(500,config))},{rotateX:delayFunction(delay,animation('-90deg',config))},{translateY:delayFunction(delay,animation(targetValues.currentHeight,config))}]},callback:callback};}";
+    var3.code = var4;
+    var _closure1_slot14 = var3;
+    var3 = var16[var14];
+    var3 = var15.bind(var0)(var3);
+    var4 = var3.ComplexAnimationBuilder;
+    var3 = function(arg0) { // Environment: var1
+        var4 = function() {
+            _fun34435: for (var _fun34435_ip = 0;;) switch (_fun34435_ip) {
+                case 0:
+                    var5 = this;
+                    var4 = undefined;
+                    var8 = undefined;
+                    var6 = _closure1_slot1;
+                    var3 = _closure2_slot0;
+                    var3 = var6.bind(var4)(var5, var3);
+                    var6 = arguments.length;
+                    var3 = global;
+                    var3 = var3.Array;
+                    var7 = var3.prototype;
+                    var7 = Object.create(var7, {
+                        constructor: {
+                            value: var3
+                        }
+                    });
+                    var13 = var7;
+                    var12 = var6;
+                    var3 = new var13[var3](var12, var11);
+                    var7 = var3 instanceof Object ? var3 : var7;
+                    var3 = 0;
+                    var9 = var3 < var6;
+                    if (!var9) {
+                        _fun34435_ip = 87;
+                        continue _fun34435
+                    }
+                case 72:
+                    var9 = arguments[var3];
+                    var7[var3] = var9;
+                    var3 = var3 + 1;
+                    if (var3 < var6) {
+                        _fun34435_ip = 72;
+                        continue _fun34435
+                    }
+                case 87:
+                    var3 = _closure1_slot18;
+                    var2 = _closure2_slot0;
+                    var6 = new Array(0);
+                    var0 = var6.concat;
+                    var0 = var0.bind(var6)(var7);
+                    var0 = var3.bind(var4)(var5, var2, var0);
+                    var _closure3_slot0 = var0;
+                    var1 = function() { // Environment: var1
+                        var3 = _closure3_slot0;
+                        var1 = var3.getDelayFunction;
+                        var7 = var1.bind(var3)();
+                        var _closure4_slot0 = var7;
+                        var3 = _closure3_slot0;
+                        var1 = var3.getAnimationAndConfig;
+                        var6 = var1.bind(var3)();
+                        var5 = _closure1_slot0;
+                        var4 = undefined;
+                        var3 = 2;
+                        var4 = var5.bind(var4)(var6, var3);
+                        var3 = 0;
+                        var5 = var4[var3];
+                        var _closure4_slot1 = var5;
+                        var3 = 1;
+                        var4 = var4[var3];
+                        var _closure4_slot2 = var4;
+                        var6 = _closure3_slot0;
+                        var3 = var6.getDelay;
+                        var6 = var3.bind(var6)();
+                        var _closure4_slot3 = var6;
+                        var3 = _closure3_slot0;
+                        var3 = var3.callbackV;
+                        var _closure4_slot4 = var3;
+                        var2 = _closure3_slot0;
+                        var8 = var2.initialValues;
+                        var _closure4_slot5 = var8;
+                        var0 = function arg0() {
+                            var0 = {};
+                            var1 = global;
+                            var6 = var1.Object;
+                            var5 = var6.assign;
+                            var4 = {};
+                            var2 = {};
+                            var3 = 500;
+                            var2.perspective = var3;
+                            var1 = new Array(3);
+                            var1[0] = var2;
+                            var2 = {};
+                            var7 = '0deg';
+                            var2.rotateX = var7;
+                            var1[1] = var2;
+                            var2 = {};
+                            var7 = 0;
+                            var2.translateY = var7;
+                            var1[2] = var2;
+                            var4.transform = var1;
+                            var2 = _closure4_slot5;
+                            var2 = var5.bind(var6)(var4, var2);
+                            var0.initialValues = var2;
+                            var2 = {};
+                            var4 = {};
+                            var8 = _closure4_slot0;
+                            var7 = _closure4_slot3;
+                            var10 = _closure4_slot1;
+                            var9 = _closure4_slot2;
+                            var6 = undefined;
+                            var3 = var10.bind(var6)(var3, var9);
+                            var3 = var8.bind(var6)(var7, var3);
+                            var4.perspective = var3;
+                            var3 = new Array(3);
+                            var3[0] = var4;
+                            var4 = {};
+                            var5 = '-90deg';
+                            var5 = var10.bind(var6)(var5, var9);
+                            var5 = var8.bind(var6)(var7, var5);
+                            var4.rotateX = var5;
+                            var3[1] = var4;
+                            var4 = {};
+                            var5 = arg0;
+                            var5 = var5.currentHeight;
+                            var5 = var10.bind(var6)(var5, var9);
+                            var5 = var8.bind(var6)(var7, var5);
+                            var4.translateY = var5;
+                            var3[2] = var4;
+                            var2.transform = var3;
+                            var0.animations = var2;
+                            var1 = _closure4_slot4;
+                            var0.callback = var1;
+                            return var0;
+                        };
+                        var2 = {};
+                        var2.initialValues = var8;
+                        var2.delayFunction = var7;
+                        var2.delay = var6;
+                        var2.animation = var5;
+                        var2.config = var4;
+                        var2.callback = var3;
+                        var0.__closure = var2;
+                        var2 = 9961334044730.0;
+                        var0.__workletHash = var2;
+                        var1 = _closure1_slot14;
+                        var0.__initData = var1;
+                        return var0;
+                    };
+                    var0.build = var1;
+                    return var0;
+            }
+        };
+        var _closure2_slot0 = var4;
+        var5 = _closure1_slot5;
+        var3 = undefined;
+        var2 = arg0;
+        var2 = var5.bind(var3)(var4, var2);
+        var2 = _closure1_slot2;
+        var0 = {};
+        var5 = 'createInstance';
+        var0.key = var5;
+        var1 = function() {
+            var0 = _closure2_slot0;
+            var1 = var0.prototype;
+            var1 = Object.create(var1, {
+                constructor: {
+                    value: var0
+                }
+            });
+            var2 = var1;
+            var0 = new var2[var0](var1);
+            var0 = var0 instanceof Object ? var0 : var1;
+            return var0;
+        };
+        var0.value = var1;
+        var1 = new Array(1);
+        var1[0] = var0;
+        var0 = null;
+        var0 = var2.bind(var3)(var4, var0, var1);
+        return var0;
+    };
+    var5 = var3.bind(var0)(var4);
+    var3 = 'FlipOutXDown';
+    var5.presetName = var3;
+    var3 = {};
+    var4 = "function pnpm_FlipTs10(targetValues){const{initialValues,delayFunction,delay,animation,config,callback}=this.__closure;return{initialValues:{transform:[{perspective:500},{rotateY:'0deg'},{translateX:0}],...initialValues},animations:{transform:[{perspective:delayFunction(delay,animation(500,config))},{rotateY:delayFunction(delay,animation('90deg',config))},{translateX:delayFunction(delay,animation(targetValues.currentWidth,config))}]},callback:callback};}";
+    var3.code = var4;
+    var _closure1_slot15 = var3;
+    var3 = var16[var14];
+    var3 = var15.bind(var0)(var3);
+    var4 = var3.ComplexAnimationBuilder;
+    var3 = function(arg0) { // Environment: var1
+        var4 = function() {
+            _fun34440: for (var _fun34440_ip = 0;;) switch (_fun34440_ip) {
+                case 0:
+                    var5 = this;
+                    var4 = undefined;
+                    var8 = undefined;
+                    var6 = _closure1_slot1;
+                    var3 = _closure2_slot0;
+                    var3 = var6.bind(var4)(var5, var3);
+                    var6 = arguments.length;
+                    var3 = global;
+                    var3 = var3.Array;
+                    var7 = var3.prototype;
+                    var7 = Object.create(var7, {
+                        constructor: {
+                            value: var3
+                        }
+                    });
+                    var13 = var7;
+                    var12 = var6;
+                    var3 = new var13[var3](var12, var11);
+                    var7 = var3 instanceof Object ? var3 : var7;
+                    var3 = 0;
+                    var9 = var3 < var6;
+                    if (!var9) {
+                        _fun34440_ip = 87;
+                        continue _fun34440
+                    }
+                case 72:
+                    var9 = arguments[var3];
+                    var7[var3] = var9;
+                    var3 = var3 + 1;
+                    if (var3 < var6) {
+                        _fun34440_ip = 72;
+                        continue _fun34440
+                    }
+                case 87:
+                    var3 = _closure1_slot18;
+                    var2 = _closure2_slot0;
+                    var6 = new Array(0);
+                    var0 = var6.concat;
+                    var0 = var0.bind(var6)(var7);
+                    var0 = var3.bind(var4)(var5, var2, var0);
+                    var _closure3_slot0 = var0;
+                    var1 = function() { // Environment: var1
+                        var3 = _closure3_slot0;
+                        var1 = var3.getDelayFunction;
+                        var7 = var1.bind(var3)();
+                        var _closure4_slot0 = var7;
+                        var3 = _closure3_slot0;
+                        var1 = var3.getAnimationAndConfig;
+                        var6 = var1.bind(var3)();
+                        var5 = _closure1_slot0;
+                        var4 = undefined;
+                        var3 = 2;
+                        var4 = var5.bind(var4)(var6, var3);
+                        var3 = 0;
+                        var5 = var4[var3];
+                        var _closure4_slot1 = var5;
+                        var3 = 1;
+                        var4 = var4[var3];
+                        var _closure4_slot2 = var4;
+                        var6 = _closure3_slot0;
+                        var3 = var6.getDelay;
+                        var6 = var3.bind(var6)();
+                        var _closure4_slot3 = var6;
+                        var3 = _closure3_slot0;
+                        var3 = var3.callbackV;
+                        var _closure4_slot4 = var3;
+                        var2 = _closure3_slot0;
+                        var8 = var2.initialValues;
+                        var _closure4_slot5 = var8;
+                        var0 = function arg0() {
+                            var0 = {};
+                            var1 = global;
+                            var6 = var1.Object;
+                            var5 = var6.assign;
+                            var4 = {};
+                            var2 = {};
+                            var3 = 500;
+                            var2.perspective = var3;
+                            var1 = new Array(3);
+                            var1[0] = var2;
+                            var2 = {};
+                            var7 = '0deg';
+                            var2.rotateY = var7;
+                            var1[1] = var2;
+                            var2 = {};
+                            var7 = 0;
+                            var2.translateX = var7;
+                            var1[2] = var2;
+                            var4.transform = var1;
+                            var2 = _closure4_slot5;
+                            var2 = var5.bind(var6)(var4, var2);
+                            var0.initialValues = var2;
+                            var2 = {};
+                            var4 = {};
+                            var8 = _closure4_slot0;
+                            var7 = _closure4_slot3;
+                            var10 = _closure4_slot1;
+                            var9 = _closure4_slot2;
+                            var6 = undefined;
+                            var3 = var10.bind(var6)(var3, var9);
+                            var3 = var8.bind(var6)(var7, var3);
+                            var4.perspective = var3;
+                            var3 = new Array(3);
+                            var3[0] = var4;
+                            var4 = {};
+                            var5 = '90deg';
+                            var5 = var10.bind(var6)(var5, var9);
+                            var5 = var8.bind(var6)(var7, var5);
+                            var4.rotateY = var5;
+                            var3[1] = var4;
+                            var4 = {};
+                            var5 = arg0;
+                            var5 = var5.currentWidth;
+                            var5 = var10.bind(var6)(var5, var9);
+                            var5 = var8.bind(var6)(var7, var5);
+                            var4.translateX = var5;
+                            var3[2] = var4;
+                            var2.transform = var3;
+                            var0.animations = var2;
+                            var1 = _closure4_slot4;
+                            var0.callback = var1;
+                            return var0;
+                        };
+                        var2 = {};
+                        var2.initialValues = var8;
+                        var2.delayFunction = var7;
+                        var2.delay = var6;
+                        var2.animation = var5;
+                        var2.config = var4;
+                        var2.callback = var3;
+                        var0.__closure = var2;
+                        var2 = 12107293900726.0;
+                        var0.__workletHash = var2;
+                        var1 = _closure1_slot15;
+                        var0.__initData = var1;
+                        return var0;
+                    };
+                    var0.build = var1;
+                    return var0;
+            }
+        };
+        var _closure2_slot0 = var4;
+        var5 = _closure1_slot5;
+        var3 = undefined;
+        var2 = arg0;
+        var2 = var5.bind(var3)(var4, var2);
+        var2 = _closure1_slot2;
+        var0 = {};
+        var5 = 'createInstance';
+        var0.key = var5;
+        var1 = function() {
+            var0 = _closure2_slot0;
+            var1 = var0.prototype;
+            var1 = Object.create(var1, {
+                constructor: {
+                    value: var0
+                }
+            });
+            var2 = var1;
+            var0 = new var2[var0](var1);
+            var0 = var0 instanceof Object ? var0 : var1;
+            return var0;
+        };
+        var0.value = var1;
+        var1 = new Array(1);
+        var1[0] = var0;
+        var0 = null;
+        var0 = var2.bind(var3)(var4, var0, var1);
+        return var0;
+    };
+    var4 = var3.bind(var0)(var4);
+    var3 = 'FlipOutYRight';
+    var4.presetName = var3;
+    var3 = {};
+    var17 = "function pnpm_FlipTs11(){const{initialValues,delayFunction,delay,animation,config,callback}=this.__closure;return{initialValues:{transform:[{perspective:500},{rotateX:'0deg'}],...initialValues},animations:{transform:[{perspective:delayFunction(delay,animation(500,config))},{rotateX:delayFunction(delay,animation('90deg',config))}]},callback:callback};}";
+    var3.code = var17;
+    var _closure1_slot16 = var3;
+    var3 = var16[var14];
+    var3 = var15.bind(var0)(var3);
+    var17 = var3.ComplexAnimationBuilder;
+    var3 = function(arg0) { // Environment: var1
+        var4 = function() {
+            _fun34445: for (var _fun34445_ip = 0;;) switch (_fun34445_ip) {
+                case 0:
+                    var5 = this;
+                    var4 = undefined;
+                    var8 = undefined;
+                    var6 = _closure1_slot1;
+                    var3 = _closure2_slot0;
+                    var3 = var6.bind(var4)(var5, var3);
+                    var6 = arguments.length;
+                    var3 = global;
+                    var3 = var3.Array;
+                    var7 = var3.prototype;
+                    var7 = Object.create(var7, {
+                        constructor: {
+                            value: var3
+                        }
+                    });
+                    var13 = var7;
+                    var12 = var6;
+                    var3 = new var13[var3](var12, var11);
+                    var7 = var3 instanceof Object ? var3 : var7;
+                    var3 = 0;
+                    var9 = var3 < var6;
+                    if (!var9) {
+                        _fun34445_ip = 87;
+                        continue _fun34445
+                    }
+                case 72:
+                    var9 = arguments[var3];
+                    var7[var3] = var9;
+                    var3 = var3 + 1;
+                    if (var3 < var6) {
+                        _fun34445_ip = 72;
+                        continue _fun34445
+                    }
+                case 87:
+                    var3 = _closure1_slot18;
+                    var2 = _closure2_slot0;
+                    var6 = new Array(0);
+                    var0 = var6.concat;
+                    var0 = var0.bind(var6)(var7);
+                    var0 = var3.bind(var4)(var5, var2, var0);
+                    var _closure3_slot0 = var0;
+                    var1 = function() { // Environment: var1
+                        var3 = _closure3_slot0;
+                        var1 = var3.getDelayFunction;
+                        var7 = var1.bind(var3)();
+                        var _closure4_slot0 = var7;
+                        var3 = _closure3_slot0;
+                        var1 = var3.getAnimationAndConfig;
+                        var6 = var1.bind(var3)();
+                        var5 = _closure1_slot0;
+                        var4 = undefined;
+                        var3 = 2;
+                        var4 = var5.bind(var4)(var6, var3);
+                        var3 = 0;
+                        var5 = var4[var3];
+                        var _closure4_slot1 = var5;
+                        var3 = 1;
+                        var4 = var4[var3];
+                        var _closure4_slot2 = var4;
+                        var6 = _closure3_slot0;
+                        var3 = var6.getDelay;
+                        var6 = var3.bind(var6)();
+                        var _closure4_slot3 = var6;
+                        var3 = _closure3_slot0;
+                        var3 = var3.callbackV;
+                        var _closure4_slot4 = var3;
+                        var2 = _closure3_slot0;
+                        var8 = var2.initialValues;
+                        var _closure4_slot5 = var8;
+                        var0 = function() {
+                            var0 = {};
+                            var1 = global;
+                            var6 = var1.Object;
+                            var5 = var6.assign;
+                            var4 = {};
+                            var2 = {};
+                            var3 = 500;
+                            var2.perspective = var3;
+                            var1 = new Array(2);
+                            var1[0] = var2;
+                            var2 = {};
+                            var7 = '0deg';
+                            var2.rotateX = var7;
+                            var1[1] = var2;
+                            var4.transform = var1;
+                            var2 = _closure4_slot5;
+                            var2 = var5.bind(var6)(var4, var2);
+                            var0.initialValues = var2;
+                            var2 = {};
+                            var4 = {};
+                            var8 = _closure4_slot0;
+                            var7 = _closure4_slot3;
+                            var10 = _closure4_slot1;
+                            var9 = _closure4_slot2;
+                            var6 = undefined;
+                            var3 = var10.bind(var6)(var3, var9);
+                            var3 = var8.bind(var6)(var7, var3);
+                            var4.perspective = var3;
+                            var3 = new Array(2);
+                            var3[0] = var4;
+                            var4 = {};
+                            var5 = '90deg';
+                            var5 = var10.bind(var6)(var5, var9);
+                            var5 = var8.bind(var6)(var7, var5);
+                            var4.rotateX = var5;
+                            var3[1] = var4;
+                            var2.transform = var3;
+                            var0.animations = var2;
+                            var1 = _closure4_slot4;
+                            var0.callback = var1;
+                            return var0;
+                        };
+                        var2 = {};
+                        var2.initialValues = var8;
+                        var2.delayFunction = var7;
+                        var2.delay = var6;
+                        var2.animation = var5;
+                        var2.config = var4;
+                        var2.callback = var3;
+                        var0.__closure = var2;
+                        var2 = 9417124215224.0;
+                        var0.__workletHash = var2;
+                        var1 = _closure1_slot16;
+                        var0.__initData = var1;
+                        return var0;
+                    };
+                    var0.build = var1;
+                    return var0;
+            }
+        };
+        var _closure2_slot0 = var4;
+        var5 = _closure1_slot5;
+        var3 = undefined;
+        var2 = arg0;
+        var2 = var5.bind(var3)(var4, var2);
+        var2 = _closure1_slot2;
+        var0 = {};
+        var5 = 'createInstance';
+        var0.key = var5;
+        var1 = function() {
+            var0 = _closure2_slot0;
+            var1 = var0.prototype;
+            var1 = Object.create(var1, {
+                constructor: {
+                    value: var0
+                }
+            });
+            var2 = var1;
+            var0 = new var2[var0](var1);
+            var0 = var0 instanceof Object ? var0 : var1;
+            return var0;
+        };
+        var0.value = var1;
+        var1 = new Array(1);
+        var1[0] = var0;
+        var0 = null;
+        var0 = var2.bind(var3)(var4, var0, var1);
+        return var0;
+    };
+    var3 = var3.bind(var0)(var17);
+    var17 = 'FlipOutEasyX';
+    var3.presetName = var17;
+    var17 = {};
+    var18 = "function pnpm_FlipTs12(){const{initialValues,delayFunction,delay,animation,config,callback}=this.__closure;return{initialValues:{transform:[{perspective:500},{rotateY:'0deg'}],...initialValues},animations:{transform:[{perspective:delayFunction(delay,animation(500,config))},{rotateY:delayFunction(delay,animation('90deg',config))}]},callback:callback};}";
+    var17.code = var18;
+    var _closure1_slot17 = var17;
+    var14 = var16[var14];
+    var14 = var15.bind(var0)(var14);
+    var14 = var14.ComplexAnimationBuilder;
+    var1 = function(arg0) { // Environment: var1
+        var4 = function() {
+            _fun34450: for (var _fun34450_ip = 0;;) switch (_fun34450_ip) {
+                case 0:
+                    var5 = this;
+                    var4 = undefined;
+                    var8 = undefined;
+                    var6 = _closure1_slot1;
+                    var3 = _closure2_slot0;
+                    var3 = var6.bind(var4)(var5, var3);
+                    var6 = arguments.length;
+                    var3 = global;
+                    var3 = var3.Array;
+                    var7 = var3.prototype;
+                    var7 = Object.create(var7, {
+                        constructor: {
+                            value: var3
+                        }
+                    });
+                    var13 = var7;
+                    var12 = var6;
+                    var3 = new var13[var3](var12, var11);
+                    var7 = var3 instanceof Object ? var3 : var7;
+                    var3 = 0;
+                    var9 = var3 < var6;
+                    if (!var9) {
+                        _fun34450_ip = 87;
+                        continue _fun34450
+                    }
+                case 72:
+                    var9 = arguments[var3];
+                    var7[var3] = var9;
+                    var3 = var3 + 1;
+                    if (var3 < var6) {
+                        _fun34450_ip = 72;
+                        continue _fun34450
+                    }
+                case 87:
+                    var3 = _closure1_slot18;
+                    var2 = _closure2_slot0;
+                    var6 = new Array(0);
+                    var0 = var6.concat;
+                    var0 = var0.bind(var6)(var7);
+                    var0 = var3.bind(var4)(var5, var2, var0);
+                    var _closure3_slot0 = var0;
+                    var1 = function() { // Environment: var1
+                        var3 = _closure3_slot0;
+                        var1 = var3.getDelayFunction;
+                        var7 = var1.bind(var3)();
+                        var _closure4_slot0 = var7;
+                        var3 = _closure3_slot0;
+                        var1 = var3.getAnimationAndConfig;
+                        var6 = var1.bind(var3)();
+                        var5 = _closure1_slot0;
+                        var4 = undefined;
+                        var3 = 2;
+                        var4 = var5.bind(var4)(var6, var3);
+                        var3 = 0;
+                        var5 = var4[var3];
+                        var _closure4_slot1 = var5;
+                        var3 = 1;
+                        var4 = var4[var3];
+                        var _closure4_slot2 = var4;
+                        var6 = _closure3_slot0;
+                        var3 = var6.getDelay;
+                        var6 = var3.bind(var6)();
+                        var _closure4_slot3 = var6;
+                        var3 = _closure3_slot0;
+                        var3 = var3.callbackV;
+                        var _closure4_slot4 = var3;
+                        var2 = _closure3_slot0;
+                        var8 = var2.initialValues;
+                        var _closure4_slot5 = var8;
+                        var0 = function() {
+                            var0 = {};
+                            var1 = global;
+                            var6 = var1.Object;
+                            var5 = var6.assign;
+                            var4 = {};
+                            var2 = {};
+                            var3 = 500;
+                            var2.perspective = var3;
+                            var1 = new Array(2);
+                            var1[0] = var2;
+                            var2 = {};
+                            var7 = '0deg';
+                            var2.rotateY = var7;
+                            var1[1] = var2;
+                            var4.transform = var1;
+                            var2 = _closure4_slot5;
+                            var2 = var5.bind(var6)(var4, var2);
+                            var0.initialValues = var2;
+                            var2 = {};
+                            var4 = {};
+                            var8 = _closure4_slot0;
+                            var7 = _closure4_slot3;
+                            var10 = _closure4_slot1;
+                            var9 = _closure4_slot2;
+                            var6 = undefined;
+                            var3 = var10.bind(var6)(var3, var9);
+                            var3 = var8.bind(var6)(var7, var3);
+                            var4.perspective = var3;
+                            var3 = new Array(2);
+                            var3[0] = var4;
+                            var4 = {};
+                            var5 = '90deg';
+                            var5 = var10.bind(var6)(var5, var9);
+                            var5 = var8.bind(var6)(var7, var5);
+                            var4.rotateY = var5;
+                            var3[1] = var4;
+                            var2.transform = var3;
+                            var0.animations = var2;
+                            var1 = _closure4_slot4;
+                            var0.callback = var1;
+                            return var0;
+                        };
+                        var2 = {};
+                        var2.initialValues = var8;
+                        var2.delayFunction = var7;
+                        var2.delay = var6;
+                        var2.animation = var5;
+                        var2.config = var4;
+                        var2.callback = var3;
+                        var0.__closure = var2;
+                        var2 = 4473299233947.0;
+                        var0.__workletHash = var2;
+                        var1 = _closure1_slot17;
+                        var0.__initData = var1;
+                        return var0;
+                    };
+                    var0.build = var1;
+                    return var0;
+            }
+        };
+        var _closure2_slot0 = var4;
+        var5 = _closure1_slot5;
+        var3 = undefined;
+        var2 = arg0;
+        var2 = var5.bind(var3)(var4, var2);
+        var2 = _closure1_slot2;
+        var0 = {};
+        var5 = 'createInstance';
+        var0.key = var5;
+        var1 = function() {
+            var0 = _closure2_slot0;
+            var1 = var0.prototype;
+            var1 = Object.create(var1, {
+                constructor: {
+                    value: var0
+                }
+            });
+            var2 = var1;
+            var0 = new var2[var0](var1);
+            var0 = var0 instanceof Object ? var0 : var1;
+            return var0;
+        };
+        var0.value = var1;
+        var1 = new Array(1);
+        var1[0] = var0;
+        var0 = null;
+        var0 = var2.bind(var3)(var4, var0, var1);
+        return var0;
+    };
+    var1 = var1.bind(var0)(var14);
+    var14 = 'FlipOutEasyY';
+    var1.presetName = var14;
+    var2.FlipInXUp = var13;
+    var2.FlipInYLeft = var12;
+    var2.FlipInXDown = var11;
+    var2.FlipInYRight = var10;
+    var2.FlipInEasyX = var9;
+    var2.FlipInEasyY = var8;
+    var2.FlipOutXUp = var7;
+    var2.FlipOutYLeft = var6;
+    var2.FlipOutXDown = var5;
+    var2.FlipOutYRight = var4;
+    var2.FlipOutEasyX = var3;
+    var2.FlipOutEasyY = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 3764, 3784, 3782]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 6, 7, 15, 17, 18, 3791]);

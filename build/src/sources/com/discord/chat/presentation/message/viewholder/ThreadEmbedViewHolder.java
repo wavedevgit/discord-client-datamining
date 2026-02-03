@@ -38,7 +38,7 @@ public final class ThreadEmbedViewHolder extends MessagePartViewHolder {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind$lambda$2$lambda$0(Function1 function1, ThreadEmbedMessageAccessory threadEmbedMessageAccessory, View view) {
-        function1.invoke(MessageId.m1086boximpl(threadEmbedMessageAccessory.mo538getMessageId3Eiw7ao()));
+        function1.invoke(MessageId.m1085boximpl(threadEmbedMessageAccessory.mo538getMessageId3Eiw7ao()));
     }
 
     /* JADX WARN: Multi-variable type inference failed */

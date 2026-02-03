@@ -1,61 +1,51 @@
 package dt;
 
+import java.util.Arrays;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.json.Json;
-import kotlinx.serialization.json.JsonArray;
-import kotlinx.serialization.json.JsonElement;
-/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class o0 extends c {
+public final class o0 extends d2 {
 
-    /* renamed from: g  reason: collision with root package name */
-    private final JsonArray f22440g;
+    /* renamed from: a  reason: collision with root package name */
+    private int[] f20982a;
 
-    /* renamed from: h  reason: collision with root package name */
-    private final int f22441h;
+    /* renamed from: b  reason: collision with root package name */
+    private int f20983b;
 
-    /* renamed from: i  reason: collision with root package name */
-    private int f22442i;
-
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public o0(Json json, JsonArray value) {
-        super(json, value, null, 4, null);
-        Intrinsics.checkNotNullParameter(json, "json");
-        Intrinsics.checkNotNullParameter(value, "value");
-        this.f22440g = value;
-        this.f22441h = D0().size();
-        this.f22442i = -1;
+    public o0(int[] bufferWithData) {
+        Intrinsics.checkNotNullParameter(bufferWithData, "bufferWithData");
+        this.f20982a = bufferWithData;
+        this.f20983b = bufferWithData.length;
+        b(10);
     }
 
-    @Override // dt.c
-    /* renamed from: G0 */
-    public JsonArray D0() {
-        return this.f22440g;
-    }
-
-    @Override // bt.g1
-    protected String i0(SerialDescriptor descriptor, int i10) {
-        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        return String.valueOf(i10);
-    }
-
-    @Override // kotlinx.serialization.encoding.c
-    public int o(SerialDescriptor descriptor) {
-        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        int i10 = this.f22442i;
-        if (i10 < this.f22441h - 1) {
-            int i11 = i10 + 1;
-            this.f22442i = i11;
-            return i11;
+    @Override // dt.d2
+    public void b(int i10) {
+        int[] iArr = this.f20982a;
+        if (iArr.length < i10) {
+            int[] copyOf = Arrays.copyOf(iArr, kotlin.ranges.d.d(i10, iArr.length * 2));
+            Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
+            this.f20982a = copyOf;
         }
-        return -1;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    @Override // dt.c
-    public JsonElement o0(String tag) {
-        Intrinsics.checkNotNullParameter(tag, "tag");
-        return D0().get(Integer.parseInt(tag));
+    @Override // dt.d2
+    public int d() {
+        return this.f20983b;
+    }
+
+    public final void e(int i10) {
+        d2.c(this, 0, 1, null);
+        int[] iArr = this.f20982a;
+        int d10 = d();
+        this.f20983b = d10 + 1;
+        iArr[d10] = i10;
+    }
+
+    @Override // dt.d2
+    /* renamed from: f */
+    public int[] a() {
+        int[] copyOf = Arrays.copyOf(this.f20982a, d());
+        Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
+        return copyOf;
     }
 }

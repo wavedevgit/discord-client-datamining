@@ -8,78 +8,78 @@ import java.util.Calendar;
 public class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final n f8310a;
+    private final n f7297a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final View f8311b;
+    private final View f7298b;
 
     /* renamed from: c  reason: collision with root package name */
-    private i f8312c;
+    private i f7299c;
 
     /* renamed from: d  reason: collision with root package name */
-    private h f8313d = new h();
+    private h f7300d = new h();
 
     /* renamed from: e  reason: collision with root package name */
-    private g f8314e;
+    private g f7301e;
 
     public e(n nVar, View view) {
-        this.f8310a = nVar;
-        this.f8311b = view;
-        this.f8312c = new i(nVar, view);
+        this.f7297a = nVar;
+        this.f7298b = view;
+        this.f7299c = new i(nVar, view);
         a();
     }
 
     private void a() {
-        g gVar = new g(this.f8312c, this.f8310a, this, this.f8311b);
-        this.f8314e = gVar;
-        this.f8312c.j(new dl.a(gVar));
+        g gVar = new g(this.f7299c, this.f7297a, this, this.f7298b);
+        this.f7301e = gVar;
+        this.f7299c.j(new dl.a(gVar));
     }
 
     public void b(d dVar) {
-        this.f8314e.c(dVar);
+        this.f7301e.c(dVar);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void c(Calendar calendar) {
-        this.f8312c.k(new dl.d(calendar));
-        this.f8312c.l(new dl.b(calendar));
+        this.f7299c.k(new dl.d(calendar));
+        this.f7299c.l(new dl.b(calendar));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public SimpleDateFormat d() {
-        return new SimpleDateFormat(this.f8312c.u(), this.f8310a.u());
+        return new SimpleDateFormat(this.f7299c.u(), this.f7297a.u());
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public String e() {
-        return this.f8312c.t();
+        return this.f7299c.t();
     }
 
     public void f(String str) {
-        this.f8312c.j(new dl.e(str));
+        this.f7299c.j(new dl.e(str));
     }
 
     public void g() {
-        this.f8312c.j(new dl.d(this.f8310a.A()));
+        this.f7299c.j(new dl.d(this.f7297a.A()));
     }
 
     public void h() {
-        this.f8312c.j(new dl.c());
+        this.f7299c.j(new dl.c());
     }
 
     public void i(Calendar calendar) {
-        this.f8310a.E(calendar);
+        this.f7297a.E(calendar);
     }
 
     public void j() {
-        this.f8312c.j(new dl.f(this.f8310a.C()));
+        this.f7299c.j(new dl.f(this.f7297a.C()));
     }
 
     public void k() {
-        this.f8312c.B();
+        this.f7299c.B();
     }
 
     public void l() {
-        this.f8312c.j(new dl.g());
+        this.f7299c.j(new dl.g());
     }
 }

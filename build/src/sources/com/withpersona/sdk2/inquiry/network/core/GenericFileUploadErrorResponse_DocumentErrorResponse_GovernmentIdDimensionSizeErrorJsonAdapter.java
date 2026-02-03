@@ -38,22 +38,22 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_Governme
         String str2 = null;
         GenericFileUploadErrorResponse.DocumentErrorResponse.GovernmentIdDimensionSizeError.Details details = null;
         while (mVar.hasNext()) {
-            int t02 = mVar.t0(this.options);
-            if (t02 == -1) {
-                mVar.F0();
+            int A0 = mVar.A0(this.options);
+            if (A0 == -1) {
+                mVar.E0();
                 mVar.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 str = (String) this.stringAdapter.fromJson(mVar);
                 if (str == null) {
-                    throw tm.c.x("title", "title", mVar);
+                    throw vm.c.x("title", "title", mVar);
                 }
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 str2 = (String) this.stringAdapter.fromJson(mVar);
                 if (str2 == null) {
-                    throw tm.c.x("code", "code", mVar);
+                    throw vm.c.x("code", "code", mVar);
                 }
-            } else if (t02 == 2 && (details = (GenericFileUploadErrorResponse.DocumentErrorResponse.GovernmentIdDimensionSizeError.Details) this.detailsAdapter.fromJson(mVar)) == null) {
-                throw tm.c.x("details", "details", mVar);
+            } else if (A0 == 2 && (details = (GenericFileUploadErrorResponse.DocumentErrorResponse.GovernmentIdDimensionSizeError.Details) this.detailsAdapter.fromJson(mVar)) == null) {
+                throw vm.c.x("details", "details", mVar);
             }
         }
         mVar.y();
@@ -62,22 +62,22 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_Governme
                 if (details != null) {
                     return new GenericFileUploadErrorResponse.DocumentErrorResponse.GovernmentIdDimensionSizeError(str, str2, details);
                 }
-                throw tm.c.o("details", "details", mVar);
+                throw vm.c.o("details", "details", mVar);
             }
-            throw tm.c.o("code", "code", mVar);
+            throw vm.c.o("code", "code", mVar);
         }
-        throw tm.c.o("title", "title", mVar);
+        throw vm.c.o("title", "title", mVar);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, GenericFileUploadErrorResponse.DocumentErrorResponse.GovernmentIdDimensionSizeError governmentIdDimensionSizeError) {
         if (governmentIdDimensionSizeError != null) {
             tVar.l();
-            tVar.t0("title");
+            tVar.A0("title");
             this.stringAdapter.toJson(tVar, governmentIdDimensionSizeError.getTitle());
-            tVar.t0("code");
+            tVar.A0("code");
             this.stringAdapter.toJson(tVar, governmentIdDimensionSizeError.getCode());
-            tVar.t0("details");
+            tVar.A0("details");
             this.detailsAdapter.toJson(tVar, governmentIdDimensionSizeError.getDetails());
             tVar.E();
             return;

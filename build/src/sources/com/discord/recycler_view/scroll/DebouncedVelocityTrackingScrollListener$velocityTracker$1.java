@@ -18,7 +18,7 @@ public /* synthetic */ class DebouncedVelocityTrackingScrollListener$velocityTra
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
         invoke((RecyclerView) obj, ((Number) obj2).floatValue());
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public final void invoke(RecyclerView p02, float f10) {

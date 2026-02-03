@@ -1,15 +1,17 @@
 package pt;
 
-import net.time4j.history.d;
+import java.text.ParsePosition;
+import mt.o;
+import mt.q;
+import nt.j;
+import nt.t;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class a {
+public interface a extends t {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final kt.c f46477a = lt.a.e("CALENDAR_HISTORY", d.class);
+    /* renamed from: k  reason: collision with root package name */
+    public static final mt.c f46625k = nt.a.e("COUNT_OF_PATTERN_SYMBOLS", Integer.class);
 
-    /* renamed from: b  reason: collision with root package name */
-    public static final kt.c f46478b = lt.a.e("COMMON_ERA", Boolean.class);
+    void i(o oVar, Appendable appendable, mt.d dVar, j jVar, char c10, int i10, int i11);
 
-    /* renamed from: c  reason: collision with root package name */
-    public static final kt.c f46479c = lt.a.e("LATIN_ERA", Boolean.class);
+    Integer u(CharSequence charSequence, ParsePosition parsePosition, mt.d dVar, q qVar);
 }

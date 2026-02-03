@@ -8,20 +8,20 @@ import kotlin.reflect.jvm.internal.impl.types.model.TypeSystemContext;
 public class c implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final AbstractSignatureParts f34168d;
+    private final AbstractSignatureParts f33558d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final TypeSystemContext f34169e;
+    private final TypeSystemContext f33559e;
 
     public c(AbstractSignatureParts abstractSignatureParts, TypeSystemContext typeSystemContext) {
-        this.f34168d = abstractSignatureParts;
-        this.f34169e = typeSystemContext;
+        this.f33558d = abstractSignatureParts;
+        this.f33559e = typeSystemContext;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         Iterable p10;
-        p10 = AbstractSignatureParts.p(this.f34168d, this.f34169e, (AbstractSignatureParts.a) obj);
+        p10 = AbstractSignatureParts.p(this.f33558d, this.f33559e, (AbstractSignatureParts.a) obj);
         return p10;
     }
 }

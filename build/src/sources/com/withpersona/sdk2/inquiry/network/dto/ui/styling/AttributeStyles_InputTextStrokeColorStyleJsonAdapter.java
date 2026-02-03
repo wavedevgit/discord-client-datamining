@@ -44,11 +44,11 @@ public final class AttributeStyles_InputTextStrokeColorStyleJsonAdapter extends 
         reader.r();
         StyleElements.ComplexElementColor complexElementColor = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 complexElementColor = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
             }
         }
@@ -61,7 +61,7 @@ public final class AttributeStyles_InputTextStrokeColorStyleJsonAdapter extends 
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputTextStrokeColorStyle != null) {
             writer.l();
-            writer.t0("maskToggle");
+            writer.A0("maskToggle");
             this.nullableComplexElementColorAdapter.toJson(writer, inputTextStrokeColorStyle.getMaskToggle());
             writer.E();
             return;

@@ -1,24 +1,32 @@
 package mu;
 
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+import lu.i0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class e implements lu.b {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final Function1 f39443a;
-
-    public e(Function1 function1) {
-        this.f39443a = function1;
+public abstract class e {
+    public static final int a(int[] iArr, int i10, int i11, int i12) {
+        Intrinsics.checkNotNullParameter(iArr, "<this>");
+        int i13 = i12 - 1;
+        while (i11 <= i13) {
+            int i14 = (i11 + i13) >>> 1;
+            int i15 = iArr[i14];
+            if (i15 < i10) {
+                i11 = i14 + 1;
+            } else if (i15 > i10) {
+                i13 = i14 - 1;
+            } else {
+                return i14;
+            }
+        }
+        return (-i11) - 1;
     }
 
-    @Override // lu.b
-    public Object f(Object obj, Object obj2) {
-        Object firstOrNull = CollectionsKt.firstOrNull(qv.a.c(obj));
-        Function1 function1 = this.f39443a;
-        if (function1 != null) {
-            function1.invoke(firstOrNull);
+    public static final int b(i0 i0Var, int i10) {
+        Intrinsics.checkNotNullParameter(i0Var, "<this>");
+        int a10 = a(i0Var.P(), i10 + 1, 0, i0Var.Q().length);
+        if (a10 >= 0) {
+            return a10;
         }
-        return firstOrNull;
+        return ~a10;
     }
 }

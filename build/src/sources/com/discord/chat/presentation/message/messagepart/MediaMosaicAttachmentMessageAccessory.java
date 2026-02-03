@@ -117,7 +117,7 @@ public final class MediaMosaicAttachmentMessageAccessory extends MessageAccessor
         }
         if (obj instanceof MediaMosaicAttachmentMessageAccessory) {
             MediaMosaicAttachmentMessageAccessory mediaMosaicAttachmentMessageAccessory = (MediaMosaicAttachmentMessageAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, mediaMosaicAttachmentMessageAccessory.messageId) && Intrinsics.areEqual(this.margins, mediaMosaicAttachmentMessageAccessory.margins) && ChannelId.m1064equalsimpl0(this.channelId, mediaMosaicAttachmentMessageAccessory.channelId) && Intrinsics.areEqual(this.attachments, mediaMosaicAttachmentMessageAccessory.attachments) && this.constrainedWidth == mediaMosaicAttachmentMessageAccessory.constrainedWidth && this.isForwardedContent == mediaMosaicAttachmentMessageAccessory.isForwardedContent && this.messageState == mediaMosaicAttachmentMessageAccessory.messageState && this.shouldAutoPlayGif == mediaMosaicAttachmentMessageAccessory.shouldAutoPlayGif;
+            return MessageId.m1089equalsimpl0(this.messageId, mediaMosaicAttachmentMessageAccessory.messageId) && Intrinsics.areEqual(this.margins, mediaMosaicAttachmentMessageAccessory.margins) && ChannelId.m1063equalsimpl0(this.channelId, mediaMosaicAttachmentMessageAccessory.channelId) && Intrinsics.areEqual(this.attachments, mediaMosaicAttachmentMessageAccessory.attachments) && this.constrainedWidth == mediaMosaicAttachmentMessageAccessory.constrainedWidth && this.isForwardedContent == mediaMosaicAttachmentMessageAccessory.isForwardedContent && this.messageState == mediaMosaicAttachmentMessageAccessory.messageState && this.shouldAutoPlayGif == mediaMosaicAttachmentMessageAccessory.shouldAutoPlayGif;
         }
         return false;
     }
@@ -158,7 +158,7 @@ public final class MediaMosaicAttachmentMessageAccessory extends MessageAccessor
     }
 
     public int hashCode() {
-        return (((((((((((((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + ChannelId.m1065hashCodeimpl(this.channelId)) * 31) + this.attachments.hashCode()) * 31) + Integer.hashCode(this.constrainedWidth)) * 31) + Boolean.hashCode(this.isForwardedContent)) * 31) + this.messageState.hashCode()) * 31) + Boolean.hashCode(this.shouldAutoPlayGif);
+        return (((((((((((((MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + ChannelId.m1064hashCodeimpl(this.channelId)) * 31) + this.attachments.hashCode()) * 31) + Integer.hashCode(this.constrainedWidth)) * 31) + Boolean.hashCode(this.isForwardedContent)) * 31) + this.messageState.hashCode()) * 31) + Boolean.hashCode(this.shouldAutoPlayGif);
     }
 
     public final boolean isForwardedContent() {
@@ -167,15 +167,15 @@ public final class MediaMosaicAttachmentMessageAccessory extends MessageAccessor
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         MessageMargins messageMargins = this.margins;
-        String m1067toStringimpl = ChannelId.m1067toStringimpl(this.channelId);
+        String m1066toStringimpl = ChannelId.m1066toStringimpl(this.channelId);
         List<MessageAttachmentAccessory> list = this.attachments;
         int i10 = this.constrainedWidth;
         boolean z10 = this.isForwardedContent;
         MessageState messageState = this.messageState;
         boolean z11 = this.shouldAutoPlayGif;
-        return "MediaMosaicAttachmentMessageAccessory(messageId=" + m1093toStringimpl + ", margins=" + messageMargins + ", channelId=" + m1067toStringimpl + ", attachments=" + list + ", constrainedWidth=" + i10 + ", isForwardedContent=" + z10 + ", messageState=" + messageState + ", shouldAutoPlayGif=" + z11 + ")";
+        return "MediaMosaicAttachmentMessageAccessory(messageId=" + m1092toStringimpl + ", margins=" + messageMargins + ", channelId=" + m1066toStringimpl + ", attachments=" + list + ", constrainedWidth=" + i10 + ", isForwardedContent=" + z10 + ", messageState=" + messageState + ", shouldAutoPlayGif=" + z11 + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

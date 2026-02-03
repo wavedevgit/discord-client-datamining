@@ -6,21 +6,21 @@ import java.nio.ByteBuffer;
 public class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f28239a;
+    public final int f28462a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ByteBuffer f28240b;
+    public final ByteBuffer f28463b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final MediaCodec.BufferInfo f28241c;
+    public final MediaCodec.BufferInfo f28464c;
 
     public c(int i10, ByteBuffer byteBuffer, MediaCodec.BufferInfo bufferInfo) {
-        this.f28239a = i10;
-        this.f28240b = byteBuffer;
+        this.f28462a = i10;
+        this.f28463b = byteBuffer;
         if (bufferInfo == null) {
-            this.f28241c = new MediaCodec.BufferInfo();
+            this.f28464c = new MediaCodec.BufferInfo();
         } else {
-            this.f28241c = bufferInfo;
+            this.f28464c = bufferInfo;
         }
     }
 }

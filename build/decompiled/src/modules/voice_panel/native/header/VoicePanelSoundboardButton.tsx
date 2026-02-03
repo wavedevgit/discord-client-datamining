@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_panel/native/header/VoicePanelSoundboardButton.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun111077: for (var _fun111077_ip = 0;;) switch (_fun111077_ip) {
+        _fun111137: for (var _fun111137_ip = 0;;) switch (_fun111137_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.channelId;
@@ -59,8 +59,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var0.showIndicator;
                 var0 = null;
                 if (!var1) {
-                    _fun111077_ip = 308;
-                    continue _fun111077
+                    _fun111137_ip = 308;
+                    continue _fun111137
                 }
             case 100:
                 var3 = _closure1_slot5;
@@ -102,8 +102,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = new Array(2);
                 var5[0] = var8;
                 if (!var6) {
-                    _fun111077_ip = 294;
-                    continue _fun111077
+                    _fun111137_ip = 294;
+                    continue _fun111137
                 }
             case 262:
                 var9 = _closure1_slot4;
@@ -124,4 +124,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 14233, 14262, 11922, 1234, 14291, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 14244, 14273, 11935, 1234, 14302, 2]);

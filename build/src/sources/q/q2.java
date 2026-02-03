@@ -5,11 +5,11 @@ import android.hardware.camera2.CameraCaptureSession;
 final class q2 extends a0.k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final CameraCaptureSession.CaptureCallback f46810a;
+    private final CameraCaptureSession.CaptureCallback f46960a;
 
     private q2(CameraCaptureSession.CaptureCallback captureCallback) {
         if (captureCallback != null) {
-            this.f46810a = captureCallback;
+            this.f46960a = captureCallback;
             return;
         }
         throw new NullPointerException("captureCallback is null");
@@ -22,6 +22,6 @@ final class q2 extends a0.k {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public CameraCaptureSession.CaptureCallback f() {
-        return this.f46810a;
+        return this.f46960a;
     }
 }

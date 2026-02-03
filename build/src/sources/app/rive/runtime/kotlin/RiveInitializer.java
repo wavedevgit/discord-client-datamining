@@ -15,8 +15,8 @@ public final class RiveInitializer implements a4.a {
 
     @Override // a4.a
     public /* bridge */ /* synthetic */ Object create(Context context) {
-        m206create(context);
-        return Unit.f33074a;
+        m204create(context);
+        return Unit.f32464a;
     }
 
     @Override // a4.a
@@ -26,7 +26,7 @@ public final class RiveInitializer implements a4.a {
     }
 
     /* renamed from: create  reason: collision with other method in class */
-    public void m206create(@NotNull Context context) {
+    public void m204create(@NotNull Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
         Rive.init$default(Rive.INSTANCE, context, null, 2, null);
     }

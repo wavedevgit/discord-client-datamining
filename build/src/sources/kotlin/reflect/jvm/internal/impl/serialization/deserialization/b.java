@@ -8,16 +8,16 @@ import kotlin.reflect.jvm.internal.impl.serialization.deserialization.ClassDeser
 public class b implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ClassDeserializer f35430d;
+    private final ClassDeserializer f34820d;
 
     public b(ClassDeserializer classDeserializer) {
-        this.f35430d = classDeserializer;
+        this.f34820d = classDeserializer;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         ClassDescriptor b10;
-        b10 = ClassDeserializer.b(this.f35430d, (ClassDeserializer.a) obj);
+        b10 = ClassDeserializer.b(this.f34820d, (ClassDeserializer.a) obj);
         return b10;
     }
 }

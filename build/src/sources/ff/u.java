@@ -8,21 +8,21 @@ import java.util.Map;
 public final class u implements OnCompleteListener {
 
     /* renamed from: a  reason: collision with root package name */
-    final /* synthetic */ wg.k f24366a;
+    final /* synthetic */ wg.k f23958a;
 
     /* renamed from: b  reason: collision with root package name */
-    final /* synthetic */ v f24367b;
+    final /* synthetic */ v f23959b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public u(v vVar, wg.k kVar) {
-        this.f24367b = vVar;
-        this.f24366a = kVar;
+        this.f23959b = vVar;
+        this.f23958a = kVar;
     }
 
     @Override // com.google.android.gms.tasks.OnCompleteListener
     public final void onComplete(Task task) {
         Map map;
-        map = this.f24367b.f24377b;
-        map.remove(this.f24366a);
+        map = this.f23959b.f23969b;
+        map.remove(this.f23958a);
     }
 }

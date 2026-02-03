@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var6 = dependencyMap;
     var1 = function arg0() {
-        _fun57352: for (var _fun57352_ip = 0;;) switch (_fun57352_ip) {
+        _fun57410: for (var _fun57410_ip = 0;;) switch (_fun57410_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.topEmojis;
@@ -13,8 +13,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.rowSize;
                 var0 = undefined;
                 if (!(var1 === var0)) {
-                    _fun57352_ip = 34;
-                    continue _fun57352
+                    _fun57410_ip = 34;
+                    continue _fun57410
                 }
             case 27:
                 var1 = _closure1_slot1;
@@ -79,4 +79,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.getEmojiHotrail = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4736, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4741, 2]);

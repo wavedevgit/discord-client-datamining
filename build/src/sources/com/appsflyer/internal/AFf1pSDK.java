@@ -16,7 +16,7 @@ public final class AFf1pSDK extends AFf1uSDK {
     private static short[] AFLogger = null;
 
     /* renamed from: d  reason: collision with root package name */
-    private static int f8884d = 0;
+    private static int f7852d = 0;
     private static int registerClient = -1524191679;
     private static int unregisterClient = 1;
     private final AFc1pSDK copydefault;
@@ -46,10 +46,10 @@ public final class AFf1pSDK extends AFf1uSDK {
     }
 
     private void equals() {
-        unregisterClient = (f8884d + 41) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        unregisterClient = (f7852d + 41) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         ((AFf1uSDK) this).areAllFieldsValid.getCurrencyIso4217Code("sentRegisterRequestToAF", true);
         AFLogger.afDebugLog("[register] Successfully registered for Uninstall Tracking");
-        unregisterClient = (f8884d + 9) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        unregisterClient = (f7852d + 9) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
     }
 
     public static /* synthetic */ Object getMediationNetwork(Object[] objArr, int i10, int i11, int i12) {
@@ -65,14 +65,14 @@ public final class AFf1pSDK extends AFf1uSDK {
         ApplicationInfo applicationInfo = ((AFf1pSDK) objArr[0]).copydefault.n_().applicationInfo;
         if (applicationInfo == null) {
             int i10 = unregisterClient + 103;
-            f8884d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f7852d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i10 % 2 == 0) {
                 return "";
             }
             throw null;
         }
         String charSequence = packageManager.getApplicationLabel(applicationInfo).toString();
-        int i11 = f8884d + 73;
+        int i11 = f7852d + 73;
         unregisterClient = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i11 % 2 != 0) {
             return charSequence;
@@ -88,7 +88,7 @@ public final class AFf1pSDK extends AFf1uSDK {
     @Override // com.appsflyer.internal.AFf1uSDK
     protected final void AFAdRevenueData(AFh1jSDK aFh1jSDK) {
         int i10 = unregisterClient + 29;
-        f8884d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f7852d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 == 0) {
             return;
         }
@@ -98,12 +98,12 @@ public final class AFf1pSDK extends AFf1uSDK {
     @Override // com.appsflyer.internal.AFf1uSDK
     protected final void areAllFieldsValid(AFh1jSDK aFh1jSDK) {
         int i10 = unregisterClient + 23;
-        f8884d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f7852d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 == 0) {
             String component4 = this.copydefault.component4();
             if (component4 != null) {
                 aFh1jSDK.getMonetizationNetwork("advertiserId", component4);
-                unregisterClient = (f8884d + 35) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                unregisterClient = (f7852d + 35) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 return;
             }
             return;
@@ -119,18 +119,18 @@ public final class AFf1pSDK extends AFf1uSDK {
 
     @Override // com.appsflyer.internal.AFf1uSDK
     protected final void getCurrencyIso4217Code(AFh1jSDK aFh1jSDK) {
-        f8884d = (unregisterClient + 53) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f7852d = (unregisterClient + 53) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
     }
 
     @Override // com.appsflyer.internal.AFe1eSDK, com.appsflyer.internal.AFe1lSDK
     public final void getRevenue() {
-        f8884d = (unregisterClient + 55) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f7852d = (unregisterClient + 55) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         super.getRevenue();
         ResponseNetwork responseNetwork = ((AFe1eSDK) this).component3;
         if (responseNetwork != null && responseNetwork.isSuccessful()) {
             equals();
         }
-        unregisterClient = (f8884d + 49) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        unregisterClient = (f7852d + 49) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -187,13 +187,13 @@ public final class AFf1pSDK extends AFf1uSDK {
 
     @Override // com.appsflyer.internal.AFf1uSDK
     protected final void getMonetizationNetwork(AFh1jSDK aFh1jSDK) {
-        unregisterClient = (f8884d + 103) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        unregisterClient = (f7852d + 103) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
     }
 
     @Override // com.appsflyer.internal.AFf1uSDK
     protected final void getRevenue(AFh1jSDK aFh1jSDK) {
         int i10 = unregisterClient + 7;
-        f8884d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f7852d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             throw null;
         }
@@ -201,10 +201,10 @@ public final class AFf1pSDK extends AFf1uSDK {
 
     private static /* synthetic */ Object getMediationNetwork(Object[] objArr) {
         AFf1pSDK aFf1pSDK = (AFf1pSDK) objArr[0];
-        int i10 = (f8884d + 35) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        int i10 = (f7852d + 35) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         unregisterClient = i10;
         int i11 = i10 + 69;
-        f8884d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f7852d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i11 % 2 != 0) {
             int i12 = 75 / 0;
             return Boolean.FALSE;

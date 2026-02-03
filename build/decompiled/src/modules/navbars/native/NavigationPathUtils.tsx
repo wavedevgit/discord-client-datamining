@@ -7,15 +7,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
     var3 = function arg0() {
-        _fun91372: for (var _fun91372_ip = 0;;) switch (_fun91372_ip) {
+        _fun91464: for (var _fun91464_ip = 0;;) switch (_fun91464_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.pathname;
                 var1 = _closure1_slot2;
                 var1 = var1.FRIENDS;
                 if (!(var2 !== var1)) {
-                    _fun91372_ip = 30;
-                    continue _fun91372
+                    _fun91464_ip = 30;
+                    continue _fun91464
                 }
             case 26:
                 var1 = undefined;
@@ -69,4 +69,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useSelectedSpecialNavigationPath = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3209, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3218, 2]);

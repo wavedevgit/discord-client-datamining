@@ -82,7 +82,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
 
     private final void configureClanTagChiplet(Message message) {
         if (message.getClanTag() != null && message.m237getClanTagGuildIdqOKuAAo() != null) {
-            this.binding.tagChiplet.m504configureD0ylKIU(message.getClanTag(), message.getClanBadgeUrl(), message.m237getClanTagGuildIdqOKuAAo().m1082unboximpl(), null, 0.89f);
+            this.binding.tagChiplet.m504configureD0ylKIU(message.getClanTag(), message.getClanBadgeUrl(), message.m237getClanTagGuildIdqOKuAAo().m1081unboximpl(), null, 0.89f);
             ClanTagChipletView tagChiplet = this.binding.tagChiplet;
             Intrinsics.checkNotNullExpressionValue(tagChiplet, "tagChiplet");
             tagChiplet.setVisibility(0);
@@ -102,21 +102,21 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
     public static final Unit configureExecutedCommand_dB0_bEw$lambda$11(ChatEventHandler chatEventHandler, String str, LinkContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
         chatEventHandler.mo439onLinkClickedntcYbpo(str, it);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit configureExecutedCommand_dB0_bEw$lambda$12(ChatEventHandler chatEventHandler, CommandMentionContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
         chatEventHandler.onTapCommand(it);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit configureExecutedCommand_dB0_bEw$lambda$13(ChatEventHandler chatEventHandler, CommandMentionContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
         chatEventHandler.onLongPressCommand(it);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -365,7 +365,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
         MessageContentView replyText2 = this.binding.replyText;
         Intrinsics.checkNotNullExpressionValue(replyText2, "replyText");
         SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(replyText2));
-        Unit unit = Unit.f33074a;
+        Unit unit = Unit.f32464a;
         messageContentView.setDraweeSpanStringBuilder(ReplyUtilsKt.createReplyContent(replyLeadingViews2, spannable$default));
         MessageContentView replyText3 = this.binding.replyText;
         Intrinsics.checkNotNullExpressionValue(replyText3, "replyText");
@@ -466,7 +466,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
                 MessageContentView replyText2 = this.binding.replyText;
                 Intrinsics.checkNotNullExpressionValue(replyText2, "replyText");
                 SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(replyText2));
-                Unit unit = Unit.f33074a;
+                Unit unit = Unit.f32464a;
                 messageContentView.setDraweeSpanStringBuilder(ReplyUtilsKt.createSystemReplyContentFromBuilder(replyLeadingViews2, spannable$default));
             } else if (message.getContent() != null) {
                 MessageViewReplyPreviewBinding messageViewReplyPreviewBinding2 = this.binding;
@@ -490,7 +490,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
                 MessageContentView replyText3 = this.binding.replyText;
                 Intrinsics.checkNotNullExpressionValue(replyText3, "replyText");
                 SpannableExtensionsKt.coverWithSpan(spannable$default2, new BackgroundSpanDrawer(replyText3));
-                Unit unit2 = Unit.f33074a;
+                Unit unit2 = Unit.f32464a;
                 messageContentView2.setDraweeSpanStringBuilder(ReplyUtilsKt.createReplyContent(replyLeadingViews3, spannable$default2));
             } else {
                 this.binding.replyText.setText((CharSequence) null);
@@ -530,7 +530,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
             Intrinsics.checkNotNullExpressionValue(tagChiplet, "tagChiplet");
             tagChiplet.setVisibility(8);
         } else {
-            throw new jr.p();
+            throw new lr.p();
         }
         if (this.binding.replyText.isLaidOut() && !this.binding.replyText.isLayoutRequested()) {
             measureAndSetReplyLeadingViewsHeight();

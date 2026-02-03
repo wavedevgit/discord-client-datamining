@@ -40,37 +40,37 @@ public final class n0 extends x1 {
     private final z.x A;
 
     /* renamed from: p  reason: collision with root package name */
-    private final j1.a f53144p;
+    private final j1.a f52865p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final int f53145q;
+    private final int f52866q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final AtomicReference f53146r;
+    private final AtomicReference f52867r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final int f53147s;
+    private final int f52868s;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f53148t;
+    private int f52869t;
 
     /* renamed from: u  reason: collision with root package name */
-    private Rational f53149u;
+    private Rational f52870u;
 
     /* renamed from: v  reason: collision with root package name */
-    private e0.j f53150v;
+    private e0.j f52871v;
 
     /* renamed from: w  reason: collision with root package name */
-    i2.b f53151w;
+    i2.b f52872w;
 
     /* renamed from: x  reason: collision with root package name */
-    private z.y f53152x;
+    private z.y f52873x;
 
     /* renamed from: y  reason: collision with root package name */
-    private z.y0 f53153y;
+    private z.y0 f52874y;
 
     /* renamed from: z  reason: collision with root package name */
-    private i2.c f53154z;
+    private i2.c f52875z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements z.x {
@@ -97,7 +97,7 @@ public final class n0 extends x1 {
     public static final class b implements x2.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final a0.r1 f53156a;
+        private final a0.r1 f52877a;
 
         public b() {
             this(a0.r1.Z());
@@ -109,7 +109,7 @@ public final class n0 extends x1 {
 
         @Override // x.a0
         public a0.q1 a() {
-            return this.f53156a;
+            return this.f52877a;
         }
 
         public n0 c() {
@@ -118,7 +118,7 @@ public final class n0 extends x1 {
                 a().V(a0.h1.f76h, num);
             } else if (n0.p0(a())) {
                 a().V(a0.h1.f76h, 4101);
-                a().V(a0.h1.f77i, z.f53320c);
+                a().V(a0.h1.f77i, z.f53041c);
             } else {
                 a().V(a0.h1.f76h, Integer.valueOf((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER));
             }
@@ -148,7 +148,7 @@ public final class n0 extends x1 {
         @Override // a0.x2.a
         /* renamed from: e */
         public a0.g1 b() {
-            return new a0.g1(a0.w1.Y(this.f53156a));
+            return new a0.g1(a0.w1.Y(this.f52877a));
         }
 
         public b f(int i10) {
@@ -208,7 +208,7 @@ public final class n0 extends x1 {
         }
 
         private b(a0.r1 r1Var) {
-            this.f53156a = r1Var;
+            this.f52877a = r1Var;
             Class cls = (Class) r1Var.e(e0.m.G, null);
             if (cls != null && !cls.equals(n0.class)) {
                 throw new IllegalArgumentException("Invalid target class configuration for " + this + ": " + cls);
@@ -222,24 +222,24 @@ public final class n0 extends x1 {
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        private static final m0.c f53157a;
+        private static final m0.c f52878a;
 
         /* renamed from: b  reason: collision with root package name */
-        private static final a0.g1 f53158b;
+        private static final a0.g1 f52879b;
 
         /* renamed from: c  reason: collision with root package name */
-        private static final z f53159c;
+        private static final z f52880c;
 
         static {
-            m0.c a10 = new c.a().d(m0.a.f37767c).f(m0.d.f37779c).a();
-            f53157a = a10;
-            z zVar = z.f53321d;
-            f53159c = zVar;
-            f53158b = new b().k(4).l(0).j(a10).i(0).h(zVar).b();
+            m0.c a10 = new c.a().d(m0.a.f37564c).f(m0.d.f37576c).a();
+            f52878a = a10;
+            z zVar = z.f53042d;
+            f52880c = zVar;
+            f52879b = new b().k(4).l(0).j(a10).i(0).h(zVar).b();
         }
 
         public a0.g1 a() {
-            return f53158b;
+            return f52879b;
         }
     }
 
@@ -247,31 +247,31 @@ public final class n0 extends x1 {
     public static final class d {
 
         /* renamed from: a  reason: collision with root package name */
-        private boolean f53160a;
+        private boolean f52881a;
 
         /* renamed from: b  reason: collision with root package name */
-        private boolean f53161b = false;
+        private boolean f52882b = false;
 
         /* renamed from: c  reason: collision with root package name */
-        private boolean f53162c;
+        private boolean f52883c;
 
         /* renamed from: d  reason: collision with root package name */
-        private Location f53163d;
+        private Location f52884d;
 
         public Location a() {
-            return this.f53163d;
+            return this.f52884d;
         }
 
         public boolean b() {
-            return this.f53160a;
+            return this.f52881a;
         }
 
         public boolean c() {
-            return this.f53162c;
+            return this.f52883c;
         }
 
         public String toString() {
-            return "Metadata{mIsReversedHorizontal=" + this.f53160a + ", mIsReversedVertical=" + this.f53162c + ", mLocation=" + this.f53163d + "}";
+            return "Metadata{mIsReversedHorizontal=" + this.f52881a + ", mIsReversedVertical=" + this.f52883c + ", mLocation=" + this.f52884d + "}";
         }
     }
 
@@ -283,88 +283,88 @@ public final class n0 extends x1 {
     public static final class g {
 
         /* renamed from: a  reason: collision with root package name */
-        private final File f53164a;
+        private final File f52885a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final ContentResolver f53165b;
+        private final ContentResolver f52886b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Uri f53166c;
+        private final Uri f52887c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final ContentValues f53167d;
+        private final ContentValues f52888d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final OutputStream f53168e;
+        private final OutputStream f52889e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final d f53169f;
+        private final d f52890f;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static final class a {
 
             /* renamed from: a  reason: collision with root package name */
-            private File f53170a;
+            private File f52891a;
 
             /* renamed from: b  reason: collision with root package name */
-            private ContentResolver f53171b;
+            private ContentResolver f52892b;
 
             /* renamed from: c  reason: collision with root package name */
-            private Uri f53172c;
+            private Uri f52893c;
 
             /* renamed from: d  reason: collision with root package name */
-            private ContentValues f53173d;
+            private ContentValues f52894d;
 
             /* renamed from: e  reason: collision with root package name */
-            private OutputStream f53174e;
+            private OutputStream f52895e;
 
             /* renamed from: f  reason: collision with root package name */
-            private d f53175f;
+            private d f52896f;
 
             public a(File file) {
-                this.f53170a = file;
+                this.f52891a = file;
             }
 
             public g a() {
-                return new g(this.f53170a, this.f53171b, this.f53172c, this.f53173d, this.f53174e, this.f53175f);
+                return new g(this.f52891a, this.f52892b, this.f52893c, this.f52894d, this.f52895e, this.f52896f);
             }
         }
 
         g(File file, ContentResolver contentResolver, Uri uri, ContentValues contentValues, OutputStream outputStream, d dVar) {
-            this.f53164a = file;
-            this.f53165b = contentResolver;
-            this.f53166c = uri;
-            this.f53167d = contentValues;
-            this.f53168e = outputStream;
-            this.f53169f = dVar == null ? new d() : dVar;
+            this.f52885a = file;
+            this.f52886b = contentResolver;
+            this.f52887c = uri;
+            this.f52888d = contentValues;
+            this.f52889e = outputStream;
+            this.f52890f = dVar == null ? new d() : dVar;
         }
 
         public ContentResolver a() {
-            return this.f53165b;
+            return this.f52886b;
         }
 
         public ContentValues b() {
-            return this.f53167d;
+            return this.f52888d;
         }
 
         public File c() {
-            return this.f53164a;
+            return this.f52885a;
         }
 
         public d d() {
-            return this.f53169f;
+            return this.f52890f;
         }
 
         public OutputStream e() {
-            return this.f53168e;
+            return this.f52889e;
         }
 
         public Uri f() {
-            return this.f53166c;
+            return this.f52887c;
         }
 
         public String toString() {
-            return "OutputFileOptions{mFile=" + this.f53164a + ", mContentResolver=" + this.f53165b + ", mSaveCollection=" + this.f53166c + ", mContentValues=" + this.f53167d + ", mOutputStream=" + this.f53168e + ", mMetadata=" + this.f53169f + "}";
+            return "OutputFileOptions{mFile=" + this.f52885a + ", mContentResolver=" + this.f52886b + ", mSaveCollection=" + this.f52887c + ", mContentValues=" + this.f52888d + ", mOutputStream=" + this.f52889e + ", mMetadata=" + this.f52890f + "}";
         }
     }
 
@@ -372,10 +372,10 @@ public final class n0 extends x1 {
     public static class h {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Uri f53176a;
+        private final Uri f52897a;
 
         public h(Uri uri) {
-            this.f53176a = uri;
+            this.f52897a = uri;
         }
     }
 
@@ -393,24 +393,24 @@ public final class n0 extends x1 {
 
     n0(a0.g1 g1Var) {
         super(g1Var);
-        this.f53144p = new j1.a() { // from class: x.k0
+        this.f52865p = new j1.a() { // from class: x.k0
             @Override // a0.j1.a
             public final void a(a0.j1 j1Var) {
                 n0.Z(j1Var);
             }
         };
-        this.f53146r = new AtomicReference(null);
-        this.f53148t = -1;
-        this.f53149u = null;
+        this.f52867r = new AtomicReference(null);
+        this.f52869t = -1;
+        this.f52870u = null;
         this.A = new a();
         a0.g1 g1Var2 = (a0.g1) j();
         if (g1Var2.h(a0.g1.J)) {
-            this.f53145q = g1Var2.X();
+            this.f52866q = g1Var2.X();
         } else {
-            this.f53145q = 1;
+            this.f52866q = 1;
         }
-        this.f53147s = g1Var2.Z(0);
-        this.f53150v = e0.j.g(g1Var2.d0());
+        this.f52868s = g1Var2.Z(0);
+        this.f52871v = e0.j.g(g1Var2.d0());
     }
 
     public static /* synthetic */ Void Y(List list) {
@@ -434,19 +434,19 @@ public final class n0 extends x1 {
         if (n0Var.g() == null) {
             return;
         }
-        n0Var.f53153y.i();
+        n0Var.f52874y.i();
         n0Var.f0(true);
         i2.b g02 = n0Var.g0(n0Var.i(), (a0.g1) n0Var.j(), (m2) b2.e.g(n0Var.e()));
-        n0Var.f53151w = g02;
+        n0Var.f52872w = g02;
         a10 = d0.a(new Object[]{g02.o()});
         n0Var.V(a10);
         n0Var.G();
-        n0Var.f53153y.j();
+        n0Var.f52874y.j();
     }
 
     private void c0() {
-        this.f53150v.f();
-        z.y0 y0Var = this.f53153y;
+        this.f52871v.f();
+        z.y0 y0Var = this.f52874y;
         if (y0Var != null) {
             y0Var.e();
         }
@@ -460,19 +460,19 @@ public final class n0 extends x1 {
         z.y0 y0Var;
         Log.d("ImageCapture", "clearPipeline");
         b0.p.a();
-        i2.c cVar = this.f53154z;
+        i2.c cVar = this.f52875z;
         if (cVar != null) {
             cVar.b();
-            this.f53154z = null;
+            this.f52875z = null;
         }
-        z.y yVar = this.f53152x;
+        z.y yVar = this.f52873x;
         if (yVar != null) {
             yVar.a();
-            this.f53152x = null;
+            this.f52873x = null;
         }
-        if (!z10 && (y0Var = this.f53153y) != null) {
+        if (!z10 && (y0Var = this.f52874y) != null) {
             y0Var.e();
-            this.f53153y = null;
+            this.f52874y = null;
         }
     }
 
@@ -483,27 +483,27 @@ public final class n0 extends x1 {
         a0.e0 g10 = g();
         Objects.requireNonNull(g10);
         boolean z10 = !g10.q();
-        if (this.f53152x != null) {
+        if (this.f52873x != null) {
             b2.e.i(z10);
-            this.f53152x.a();
+            this.f52873x.a();
         }
         if (((Boolean) j().e(a0.g1.V, Boolean.FALSE)).booleanValue()) {
             m0();
         }
         l();
-        this.f53152x = new z.y(g1Var, e10, null, z10, null, 35);
-        if (this.f53153y == null) {
-            this.f53153y = new z.y0(this.A);
+        this.f52873x = new z.y(g1Var, e10, null, z10, null, 35);
+        if (this.f52874y == null) {
+            this.f52874y = new z.y0(this.A);
         }
-        this.f53153y.k(this.f53152x);
-        i2.b f10 = this.f53152x.f(m2Var.e());
+        this.f52874y.k(this.f52873x);
+        i2.b f10 = this.f52873x.f(m2Var.e());
         if (j0() == 2 && !m2Var.f()) {
             h().b(f10);
         }
         if (m2Var.d() != null) {
             f10.g(m2Var.d());
         }
-        i2.c cVar = this.f53154z;
+        i2.c cVar = this.f52875z;
         if (cVar != null) {
             cVar.b();
         }
@@ -513,7 +513,7 @@ public final class n0 extends x1 {
                 n0.a0(n0.this, i2Var, gVar);
             }
         });
-        this.f53154z = cVar2;
+        this.f52875z = cVar2;
         f10.r(cVar2);
         return f10;
     }
@@ -531,10 +531,10 @@ public final class n0 extends x1 {
         if (g1Var.h(a0.g1.S)) {
             return g1Var.c0();
         }
-        int i10 = this.f53145q;
+        int i10 = this.f52866q;
         if (i10 != 0) {
             if (i10 != 1 && i10 != 2) {
-                throw new IllegalStateException("CaptureMode " + this.f53145q + " is invalid");
+                throw new IllegalStateException("CaptureMode " + this.f52866q + " is invalid");
             }
             return 95;
         }
@@ -553,13 +553,13 @@ public final class n0 extends x1 {
         if (A != null) {
             return A;
         }
-        if (i0.b.h(this.f53149u)) {
+        if (i0.b.h(this.f52870u)) {
             a0.e0 g10 = g();
             Objects.requireNonNull(g10);
             int q10 = q(g10);
-            Rational rational = new Rational(this.f53149u.getDenominator(), this.f53149u.getNumerator());
+            Rational rational = new Rational(this.f52870u.getDenominator(), this.f52870u.getNumerator());
             if (!b0.q.i(q10)) {
-                rational = this.f53149u;
+                rational = this.f52870u;
             }
             Rect a10 = i0.b.a(f10, rational);
             Objects.requireNonNull(a10);
@@ -604,7 +604,7 @@ public final class n0 extends x1 {
     }
 
     private void u0() {
-        v0(this.f53150v);
+        v0(this.f52871v);
     }
 
     private void v0(i iVar) {
@@ -613,7 +613,7 @@ public final class n0 extends x1 {
 
     private void y0(Executor executor, e eVar, f fVar, g gVar) {
         b0.p.a();
-        if (k0() == 3 && this.f53150v.h() == null) {
+        if (k0() == 3 && this.f52871v.h() == null) {
             throw new IllegalArgumentException("ScreenFlash not set for FLASH_MODE_SCREEN");
         }
         Log.d("ImageCapture", "takePictureInternal");
@@ -622,15 +622,15 @@ public final class n0 extends x1 {
             s0(executor, eVar, fVar);
             return;
         }
-        z.y0 y0Var = this.f53153y;
+        z.y0 y0Var = this.f52874y;
         Objects.requireNonNull(y0Var);
-        y0Var.h(z.e1.q(executor, eVar, fVar, gVar, n0(), v(), q(g10), l0(), j0(), this.f53151w.q()));
+        y0Var.h(z.e1.q(executor, eVar, fVar, gVar, n0(), v(), q(g10), l0(), j0(), this.f52872w.q()));
     }
 
     private void z0() {
-        synchronized (this.f53146r) {
+        synchronized (this.f52867r) {
             try {
-                if (this.f53146r.get() != null) {
+                if (this.f52867r.get() != null) {
                     return;
                 }
                 h().f(k0());
@@ -641,9 +641,9 @@ public final class n0 extends x1 {
     }
 
     void A0() {
-        synchronized (this.f53146r) {
+        synchronized (this.f52867r) {
             try {
-                Integer num = (Integer) this.f53146r.getAndSet(null);
+                Integer num = (Integer) this.f52867r.getAndSet(null);
                 if (num == null) {
                     return;
                 }
@@ -705,7 +705,7 @@ public final class n0 extends x1 {
             a11.V(aVar3, Integer.valueOf(i10));
         } else if (p0(aVar.a())) {
             aVar.a().V(a0.h1.f76h, 4101);
-            aVar.a().V(a0.h1.f77i, z.f53320c);
+            aVar.a().V(a0.h1.f77i, z.f53041c);
         } else if (h02) {
             aVar.a().V(a0.h1.f76h, 35);
         } else {
@@ -729,8 +729,8 @@ public final class n0 extends x1 {
     @Override // x.x1
     protected m2 N(a0.r0 r0Var) {
         List a10;
-        this.f53151w.g(r0Var);
-        a10 = d0.a(new Object[]{this.f53151w.o()});
+        this.f52872w.g(r0Var);
+        a10 = d0.a(new Object[]{this.f52872w.o()});
         V(a10);
         return e().g().d(r0Var).a();
     }
@@ -739,7 +739,7 @@ public final class n0 extends x1 {
     protected m2 O(m2 m2Var, m2 m2Var2) {
         List a10;
         i2.b g02 = g0(i(), (a0.g1) j(), m2Var);
-        this.f53151w = g02;
+        this.f52872w = g02;
         a10 = d0.a(new Object[]{g02.o()});
         V(a10);
         E();
@@ -781,7 +781,7 @@ public final class n0 extends x1 {
     }
 
     public int j0() {
-        return this.f53145q;
+        return this.f52866q;
     }
 
     @Override // x.x1
@@ -799,8 +799,8 @@ public final class n0 extends x1 {
 
     public int k0() {
         int i10;
-        synchronized (this.f53146r) {
-            i10 = this.f53148t;
+        synchronized (this.f52867r) {
+            i10 = this.f52869t;
             if (i10 == -1) {
                 i10 = ((a0.g1) j()).Y(2);
             }
@@ -809,12 +809,12 @@ public final class n0 extends x1 {
     }
 
     void r0() {
-        synchronized (this.f53146r) {
+        synchronized (this.f52867r) {
             try {
-                if (this.f53146r.get() != null) {
+                if (this.f52867r.get() != null) {
                     return;
                 }
-                this.f53146r.set(Integer.valueOf(k0()));
+                this.f52867r.set(Integer.valueOf(k0()));
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -822,7 +822,7 @@ public final class n0 extends x1 {
     }
 
     public void t0(Rational rational) {
-        this.f53149u = rational;
+        this.f52870u = rational;
     }
 
     public String toString() {
@@ -831,7 +831,7 @@ public final class n0 extends x1 {
 
     ListenableFuture w0(List list) {
         b0.p.a();
-        return d0.n.x(h().c(list, this.f53145q, this.f53147s), new Function() { // from class: x.m0
+        return d0.n.x(h().c(list, this.f52866q, this.f52868s), new Function() { // from class: x.m0
             @Override // androidx.arch.core.util.Function
             public final Object apply(Object obj) {
                 return n0.Y((List) obj);

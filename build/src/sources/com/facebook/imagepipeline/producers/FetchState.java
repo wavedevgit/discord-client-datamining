@@ -6,62 +6,62 @@ import com.facebook.imagepipeline.common.BytesRange;
 public class FetchState {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Consumer f11305a;
+    private final Consumer f10273a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ProducerContext f11306b;
+    private final ProducerContext f10274b;
 
     /* renamed from: c  reason: collision with root package name */
-    private long f11307c = 0;
+    private long f10275c = 0;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f11308d;
+    private int f10276d;
 
     /* renamed from: e  reason: collision with root package name */
-    private BytesRange f11309e;
+    private BytesRange f10277e;
 
     public FetchState(Consumer consumer, ProducerContext producerContext) {
-        this.f11305a = consumer;
-        this.f11306b = producerContext;
+        this.f10273a = consumer;
+        this.f10274b = producerContext;
     }
 
     public Consumer a() {
-        return this.f11305a;
+        return this.f10273a;
     }
 
     public ProducerContext b() {
-        return this.f11306b;
+        return this.f10274b;
     }
 
     public long c() {
-        return this.f11307c;
+        return this.f10275c;
     }
 
     public y0 d() {
-        return this.f11306b.F();
+        return this.f10274b.F();
     }
 
     public int e() {
-        return this.f11308d;
+        return this.f10276d;
     }
 
     public BytesRange f() {
-        return this.f11309e;
+        return this.f10277e;
     }
 
     public Uri g() {
-        return this.f11306b.V().getSourceUri();
+        return this.f10274b.V().getSourceUri();
     }
 
     public void h(long j10) {
-        this.f11307c = j10;
+        this.f10275c = j10;
     }
 
     public void i(int i10) {
-        this.f11308d = i10;
+        this.f10276d = i10;
     }
 
     public void j(BytesRange bytesRange) {
-        this.f11309e = bytesRange;
+        this.f10277e = bytesRange;
     }
 }

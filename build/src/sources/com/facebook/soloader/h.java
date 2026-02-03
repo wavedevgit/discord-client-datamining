@@ -4,5 +4,5 @@ import java.nio.ByteBuffer;
 import java.nio.channels.ByteChannel;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public interface h extends ByteChannel {
-    int g0(ByteBuffer byteBuffer, long j10);
+    int f0(ByteBuffer byteBuffer, long j10);
 }

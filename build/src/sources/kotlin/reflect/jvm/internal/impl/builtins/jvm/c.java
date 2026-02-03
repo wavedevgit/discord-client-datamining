@@ -7,20 +7,20 @@ import kotlin.reflect.jvm.internal.impl.storage.StorageManager;
 public class c implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final JvmBuiltIns f33348d;
+    private final JvmBuiltIns f32738d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final StorageManager f33349e;
+    private final StorageManager f32739e;
 
     public c(JvmBuiltIns jvmBuiltIns, StorageManager storageManager) {
-        this.f33348d = jvmBuiltIns;
-        this.f33349e = storageManager;
+        this.f32738d = jvmBuiltIns;
+        this.f32739e = storageManager;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         JvmBuiltInsCustomizer t10;
-        t10 = JvmBuiltIns.t(this.f33348d, this.f33349e);
+        t10 = JvmBuiltIns.t(this.f32738d, this.f32739e);
         return t10;
     }
 }

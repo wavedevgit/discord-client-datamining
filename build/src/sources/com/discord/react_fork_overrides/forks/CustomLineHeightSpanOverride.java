@@ -43,7 +43,7 @@ public final class CustomLineHeightSpanOverride {
         if (i14 <= 0) {
             return;
         }
-        int c10 = yr.a.c(i13 * ((i10 * 0.75f) / i14));
+        int c10 = as.a.c(i13 * ((i10 * 0.75f) / i14));
         fontMetricsInt.descent = c10;
         fontMetricsInt.ascent = c10 - i10;
     }

@@ -8,27 +8,27 @@ import l5.a0;
 public class t extends a {
 
     /* renamed from: r  reason: collision with root package name */
-    private final t5.b f39763r;
+    private final t5.b f39802r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final String f39764s;
+    private final String f39803s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final boolean f39765t;
+    private final boolean f39804t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final o5.a f39766u;
+    private final o5.a f39805u;
 
     /* renamed from: v  reason: collision with root package name */
-    private o5.a f39767v;
+    private o5.a f39806v;
 
     public t(com.airbnb.lottie.n nVar, t5.b bVar, s5.s sVar) {
         super(nVar, bVar, sVar.b().d(), sVar.e().d(), sVar.g(), sVar.i(), sVar.j(), sVar.f(), sVar.d());
-        this.f39763r = bVar;
-        this.f39764s = sVar.h();
-        this.f39765t = sVar.k();
+        this.f39802r = bVar;
+        this.f39803s = sVar.h();
+        this.f39804t = sVar.k();
         o5.a a10 = sVar.c().a();
-        this.f39766u = a10;
+        this.f39805u = a10;
         a10.a(this);
         bVar.i(a10);
     }
@@ -36,39 +36,39 @@ public class t extends a {
     @Override // n5.a, q5.f
     public void d(Object obj, y5.c cVar) {
         super.d(obj, cVar);
-        if (obj == a0.f36977b) {
-            this.f39766u.o(cVar);
+        if (obj == a0.f36446b) {
+            this.f39805u.o(cVar);
         } else if (obj == a0.K) {
-            o5.a aVar = this.f39767v;
+            o5.a aVar = this.f39806v;
             if (aVar != null) {
-                this.f39763r.H(aVar);
+                this.f39802r.H(aVar);
             }
             if (cVar == null) {
-                this.f39767v = null;
+                this.f39806v = null;
                 return;
             }
             o5.q qVar = new o5.q(cVar);
-            this.f39767v = qVar;
+            this.f39806v = qVar;
             qVar.a(this);
-            this.f39763r.i(this.f39766u);
+            this.f39802r.i(this.f39805u);
         }
     }
 
     @Override // n5.a, n5.e
     public void g(Canvas canvas, Matrix matrix, int i10) {
-        if (this.f39765t) {
+        if (this.f39804t) {
             return;
         }
-        this.f39631i.setColor(((o5.b) this.f39766u).q());
-        o5.a aVar = this.f39767v;
+        this.f39670i.setColor(((o5.b) this.f39805u).q());
+        o5.a aVar = this.f39806v;
         if (aVar != null) {
-            this.f39631i.setColorFilter((ColorFilter) aVar.h());
+            this.f39670i.setColorFilter((ColorFilter) aVar.h());
         }
         super.g(canvas, matrix, i10);
     }
 
     @Override // n5.c
     public String getName() {
-        return this.f39764s;
+        return this.f39803s;
     }
 }

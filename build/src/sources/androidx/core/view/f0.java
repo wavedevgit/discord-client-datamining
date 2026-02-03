@@ -5,45 +5,45 @@ import android.view.MotionEvent;
 class f0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final float[] f3388a = new float[20];
+    private final float[] f3357a = new float[20];
 
     /* renamed from: b  reason: collision with root package name */
-    private final long[] f3389b = new long[20];
+    private final long[] f3358b = new long[20];
 
     /* renamed from: c  reason: collision with root package name */
-    private float f3390c = 0.0f;
+    private float f3359c = 0.0f;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f3391d = 0;
+    private int f3360d = 0;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f3392e = 0;
+    private int f3361e = 0;
 
     private void b() {
-        this.f3391d = 0;
-        this.f3390c = 0.0f;
+        this.f3360d = 0;
+        this.f3359c = 0.0f;
     }
 
     private float e() {
         long[] jArr;
         long j10;
-        int i10 = this.f3391d;
+        int i10 = this.f3360d;
         if (i10 < 2) {
             return 0.0f;
         }
-        int i11 = this.f3392e;
+        int i11 = this.f3361e;
         int i12 = ((i11 + 20) - (i10 - 1)) % 20;
-        long j11 = this.f3389b[i11];
+        long j11 = this.f3358b[i11];
         while (true) {
-            jArr = this.f3389b;
+            jArr = this.f3358b;
             j10 = jArr[i12];
             if (j11 - j10 <= 100) {
                 break;
             }
-            this.f3391d--;
+            this.f3360d--;
             i12 = (i12 + 1) % 20;
         }
-        int i13 = this.f3391d;
+        int i13 = this.f3360d;
         if (i13 < 2) {
             return 0.0f;
         }
@@ -53,19 +53,19 @@ class f0 {
             if (j10 == j12) {
                 return 0.0f;
             }
-            return this.f3388a[i14] / ((float) (j12 - j10));
+            return this.f3357a[i14] / ((float) (j12 - j10));
         }
         float f10 = 0.0f;
         int i15 = 0;
-        for (int i16 = 0; i16 < this.f3391d - 1; i16++) {
+        for (int i16 = 0; i16 < this.f3360d - 1; i16++) {
             int i17 = i16 + i12;
-            long[] jArr2 = this.f3389b;
+            long[] jArr2 = this.f3358b;
             long j13 = jArr2[i17 % 20];
             int i18 = (i17 + 1) % 20;
             if (jArr2[i18] != j13) {
                 i15++;
                 float f11 = f(f10);
-                float f12 = this.f3388a[i18] / ((float) (this.f3389b[i18] - j13));
+                float f12 = this.f3357a[i18] / ((float) (this.f3358b[i18] - j13));
                 f10 += (f12 - f11) * Math.abs(f12);
                 if (i15 == 1) {
                     f10 *= 0.5f;
@@ -88,27 +88,27 @@ class f0 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void a(MotionEvent motionEvent) {
         long eventTime = motionEvent.getEventTime();
-        if (this.f3391d != 0 && eventTime - this.f3389b[this.f3392e] > 40) {
+        if (this.f3360d != 0 && eventTime - this.f3358b[this.f3361e] > 40) {
             b();
         }
-        int i10 = (this.f3392e + 1) % 20;
-        this.f3392e = i10;
-        int i11 = this.f3391d;
+        int i10 = (this.f3361e + 1) % 20;
+        this.f3361e = i10;
+        int i11 = this.f3360d;
         if (i11 != 20) {
-            this.f3391d = i11 + 1;
+            this.f3360d = i11 + 1;
         }
-        this.f3388a[i10] = motionEvent.getAxisValue(26);
-        this.f3389b[this.f3392e] = eventTime;
+        this.f3357a[i10] = motionEvent.getAxisValue(26);
+        this.f3358b[this.f3361e] = eventTime;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void c(int i10, float f10) {
         float e10 = e() * i10;
-        this.f3390c = e10;
+        this.f3359c = e10;
         if (e10 < (-Math.abs(f10))) {
-            this.f3390c = -Math.abs(f10);
-        } else if (this.f3390c > Math.abs(f10)) {
-            this.f3390c = Math.abs(f10);
+            this.f3359c = -Math.abs(f10);
+        } else if (this.f3359c > Math.abs(f10)) {
+            this.f3359c = Math.abs(f10);
         }
     }
 
@@ -117,6 +117,6 @@ class f0 {
         if (i10 != 26) {
             return 0.0f;
         }
-        return this.f3390c;
+        return this.f3359c;
     }
 }

@@ -23,20 +23,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var7 = {
         'newUIEnabled': false,
-        'searchEnabled': false
+        'searchEnabled': false,
+        'desktopSendIconEnabled': false
     };
     var1.defaultConfig = var7;
     var7 = {};
     var8 = {
         'newUIEnabled': true,
-        'searchEnabled': false
+        'searchEnabled': false,
+        'desktopSendIconEnabled': true
     };
     var7[1] = var8;
     var8 = {
         'newUIEnabled': true,
-        'searchEnabled': true
+        'searchEnabled': true,
+        'desktopSendIconEnabled': true
     };
     var7[2] = var8;
+    var8 = {
+        'newUIEnabled': true,
+        'searchEnabled': true,
+        'desktopSendIconEnabled': false
+    };
+    var7[3] = var8;
     var1.variations = var7;
     var1 = var3.bind(var6)(var1);
     var3 = 1;

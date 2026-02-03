@@ -100,7 +100,7 @@ public final class VideoAttachmentMessageAccessory extends MessageAttachmentAcce
         }
         if (obj instanceof VideoAttachmentMessageAccessory) {
             VideoAttachmentMessageAccessory videoAttachmentMessageAccessory = (VideoAttachmentMessageAccessory) obj;
-            return ChannelId.m1064equalsimpl0(this.channelId, videoAttachmentMessageAccessory.channelId) && MessageId.m1090equalsimpl0(this.messageId, videoAttachmentMessageAccessory.messageId) && this.index == videoAttachmentMessageAccessory.index && Intrinsics.areEqual(this.attachment, videoAttachmentMessageAccessory.attachment) && Intrinsics.areEqual((Object) this.attachmentsOpacity, (Object) videoAttachmentMessageAccessory.attachmentsOpacity) && this.constrainedWidth == videoAttachmentMessageAccessory.constrainedWidth && this.radiusPx == videoAttachmentMessageAccessory.radiusPx && Intrinsics.areEqual(this.spoilerAttributes, videoAttachmentMessageAccessory.spoilerAttributes) && this.useNewAltTextButton == videoAttachmentMessageAccessory.useNewAltTextButton && this.hideMediaPlayButton == videoAttachmentMessageAccessory.hideMediaPlayButton;
+            return ChannelId.m1063equalsimpl0(this.channelId, videoAttachmentMessageAccessory.channelId) && MessageId.m1089equalsimpl0(this.messageId, videoAttachmentMessageAccessory.messageId) && this.index == videoAttachmentMessageAccessory.index && Intrinsics.areEqual(this.attachment, videoAttachmentMessageAccessory.attachment) && Intrinsics.areEqual((Object) this.attachmentsOpacity, (Object) videoAttachmentMessageAccessory.attachmentsOpacity) && this.constrainedWidth == videoAttachmentMessageAccessory.constrainedWidth && this.radiusPx == videoAttachmentMessageAccessory.radiusPx && Intrinsics.areEqual(this.spoilerAttributes, videoAttachmentMessageAccessory.spoilerAttributes) && this.useNewAltTextButton == videoAttachmentMessageAccessory.useNewAltTextButton && this.hideMediaPlayButton == videoAttachmentMessageAccessory.hideMediaPlayButton;
         }
         return false;
     }
@@ -159,17 +159,17 @@ public final class VideoAttachmentMessageAccessory extends MessageAttachmentAcce
     }
 
     public int hashCode() {
-        int m1065hashCodeimpl = ((((((ChannelId.m1065hashCodeimpl(this.channelId) * 31) + MessageId.m1091hashCodeimpl(this.messageId)) * 31) + Integer.hashCode(this.index)) * 31) + this.attachment.hashCode()) * 31;
+        int m1064hashCodeimpl = ((((((ChannelId.m1064hashCodeimpl(this.channelId) * 31) + MessageId.m1090hashCodeimpl(this.messageId)) * 31) + Integer.hashCode(this.index)) * 31) + this.attachment.hashCode()) * 31;
         Float f10 = this.attachmentsOpacity;
-        int hashCode = (((((m1065hashCodeimpl + (f10 == null ? 0 : f10.hashCode())) * 31) + Integer.hashCode(this.constrainedWidth)) * 31) + Integer.hashCode(this.radiusPx)) * 31;
+        int hashCode = (((((m1064hashCodeimpl + (f10 == null ? 0 : f10.hashCode())) * 31) + Integer.hashCode(this.constrainedWidth)) * 31) + Integer.hashCode(this.radiusPx)) * 31;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
         return ((((hashCode + (spoilerAttributes != null ? spoilerAttributes.hashCode() : 0)) * 31) + Boolean.hashCode(this.useNewAltTextButton)) * 31) + Boolean.hashCode(this.hideMediaPlayButton);
     }
 
     @NotNull
     public String toString() {
-        String m1067toStringimpl = ChannelId.m1067toStringimpl(this.channelId);
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1066toStringimpl = ChannelId.m1066toStringimpl(this.channelId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         int i10 = this.index;
         Attachment attachment = this.attachment;
         Float f10 = this.attachmentsOpacity;
@@ -178,7 +178,7 @@ public final class VideoAttachmentMessageAccessory extends MessageAttachmentAcce
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
         boolean z10 = this.useNewAltTextButton;
         boolean z11 = this.hideMediaPlayButton;
-        return "VideoAttachmentMessageAccessory(channelId=" + m1067toStringimpl + ", messageId=" + m1093toStringimpl + ", index=" + i10 + ", attachment=" + attachment + ", attachmentsOpacity=" + f10 + ", constrainedWidth=" + i11 + ", radiusPx=" + i12 + ", spoilerAttributes=" + spoilerAttributes + ", useNewAltTextButton=" + z10 + ", hideMediaPlayButton=" + z11 + ")";
+        return "VideoAttachmentMessageAccessory(channelId=" + m1066toStringimpl + ", messageId=" + m1092toStringimpl + ", index=" + i10 + ", attachment=" + attachment + ", attachmentsOpacity=" + f10 + ", constrainedWidth=" + i11 + ", radiusPx=" + i12 + ", spoilerAttributes=" + spoilerAttributes + ", useNewAltTextButton=" + z10 + ", hideMediaPlayButton=" + z11 + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

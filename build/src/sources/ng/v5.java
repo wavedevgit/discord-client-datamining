@@ -6,58 +6,58 @@ import ui.c;
 final class v5 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final v5 f41637a = new v5();
+    static final v5 f41676a = new v5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41638b;
+    private static final ui.c f41677b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41639c;
+    private static final ui.c f41678c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41640d;
+    private static final ui.c f41679d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f41641e;
+    private static final ui.c f41680e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f41642f;
+    private static final ui.c f41681f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final ui.c f41643g;
+    private static final ui.c f41682g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final ui.c f41644h;
+    private static final ui.c f41683h;
 
     static {
         c.b a10 = ui.c.a("pipelineNamespace");
         f fVar = new f();
         fVar.a(1);
-        f41638b = a10.b(fVar.b()).a();
+        f41677b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a(StackTraceHelper.NAME_KEY);
         f fVar2 = new f();
         fVar2.a(2);
-        f41639c = a11.b(fVar2.b()).a();
+        f41678c = a11.b(fVar2.b()).a();
         c.b a12 = ui.c.a("clientLibraryName");
         f fVar3 = new f();
         fVar3.a(3);
-        f41640d = a12.b(fVar3.b()).a();
+        f41679d = a12.b(fVar3.b()).a();
         c.b a13 = ui.c.a("clientLibraryVersion");
         f fVar4 = new f();
         fVar4.a(4);
-        f41641e = a13.b(fVar4.b()).a();
+        f41680e = a13.b(fVar4.b()).a();
         c.b a14 = ui.c.a("minClientLibraryVersion");
         f fVar5 = new f();
         fVar5.a(5);
-        f41642f = a14.b(fVar5.b()).a();
+        f41681f = a14.b(fVar5.b()).a();
         c.b a15 = ui.c.a("maxClientLibraryVersion");
         f fVar6 = new f();
         fVar6.a(6);
-        f41643g = a15.b(fVar6.b()).a();
+        f41682g = a15.b(fVar6.b()).a();
         c.b a16 = ui.c.a("sourceProduct");
         f fVar7 = new f();
         fVar7.a(7);
-        f41644h = a16.b(fVar7.b()).a();
+        f41683h = a16.b(fVar7.b()).a();
     }
 
     private v5() {

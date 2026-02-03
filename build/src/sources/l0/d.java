@@ -26,40 +26,40 @@ import x.z;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final int[] f36814a = {12344};
+    public static final int[] f36283a = {12344};
 
     /* renamed from: b  reason: collision with root package name */
-    public static final int[] f36815b = {12445, 13632, 12344};
+    public static final int[] f36284b = {12445, 13632, 12344};
 
     /* renamed from: c  reason: collision with root package name */
-    public static final String f36816c;
+    public static final String f36285c;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final String f36817d;
+    public static final String f36286d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final a0 f36818e;
+    private static final a0 f36287e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final a0 f36819f;
+    private static final a0 f36288f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final a0 f36820g;
+    private static final a0 f36289g;
 
     /* renamed from: h  reason: collision with root package name */
-    public static final float[] f36821h;
+    public static final float[] f36290h;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final FloatBuffer f36822i;
+    public static final FloatBuffer f36291i;
 
     /* renamed from: j  reason: collision with root package name */
-    public static final float[] f36823j;
+    public static final float[] f36292j;
 
     /* renamed from: k  reason: collision with root package name */
-    public static final FloatBuffer f36824k;
+    public static final FloatBuffer f36293k;
 
     /* renamed from: l  reason: collision with root package name */
-    public static final l0.g f36825l;
+    public static final l0.g f36294l;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements a0 {
@@ -96,8 +96,8 @@ public abstract class d {
 
     /* renamed from: l0.d$d  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static class C0478d extends f {
-        public C0478d() {
+    public static class C0462d extends f {
+        public C0462d() {
             super("uniform mat4 uTransMatrix;\nattribute vec4 aPosition;\nvoid main() {\n    gl_Position = uTransMatrix * aPosition;\n}\n", "precision mediump float;\nuniform float uAlphaScale;\nvoid main() {\n    gl_FragColor = vec4(0.0, 0.0, 0.0, uAlphaScale);\n}\n");
         }
     }
@@ -113,16 +113,16 @@ public abstract class d {
     public static abstract class f {
 
         /* renamed from: a  reason: collision with root package name */
-        protected int f36830a;
+        protected int f36299a;
 
         /* renamed from: b  reason: collision with root package name */
-        protected int f36831b = -1;
+        protected int f36300b = -1;
 
         /* renamed from: c  reason: collision with root package name */
-        protected int f36832c = -1;
+        protected int f36301c = -1;
 
         /* renamed from: d  reason: collision with root package name */
-        protected int f36833d = -1;
+        protected int f36302d = -1;
 
         /* JADX WARN: Removed duplicated region for block: B:32:0x0078  */
         /* JADX WARN: Removed duplicated region for block: B:34:0x007d  */
@@ -137,9 +137,9 @@ public abstract class d {
                 java.lang.String r0 = "glAttachShader"
                 r6.<init>()
                 r1 = -1
-                r6.f36831b = r1
-                r6.f36832c = r1
-                r6.f36833d = r1
+                r6.f36300b = r1
+                r6.f36301c = r1
+                r6.f36302d = r1
                 r2 = 35633(0x8b31, float:4.9932E-41)
                 int r7 = l0.d.y(r2, r7)     // Catch: java.lang.IllegalArgumentException -> L70 java.lang.IllegalStateException -> L74
                 r2 = 35632(0x8b30, float:4.9931E-41)
@@ -159,7 +159,7 @@ public abstract class d {
                 android.opengl.GLES20.glGetProgramiv(r2, r4, r3, r5)     // Catch: java.lang.IllegalArgumentException -> L46 java.lang.IllegalStateException -> L48
                 r3 = r3[r5]     // Catch: java.lang.IllegalArgumentException -> L46 java.lang.IllegalStateException -> L48
                 if (r3 != r0) goto L4a
-                r6.f36830a = r2     // Catch: java.lang.IllegalArgumentException -> L46 java.lang.IllegalStateException -> L48
+                r6.f36299a = r2     // Catch: java.lang.IllegalArgumentException -> L46 java.lang.IllegalStateException -> L48
                 r6.c()
                 return
             L46:
@@ -223,37 +223,37 @@ public abstract class d {
 
         /* JADX INFO: Access modifiers changed from: private */
         public void c() {
-            int glGetAttribLocation = GLES20.glGetAttribLocation(this.f36830a, "aPosition");
-            this.f36833d = glGetAttribLocation;
+            int glGetAttribLocation = GLES20.glGetAttribLocation(this.f36299a, "aPosition");
+            this.f36302d = glGetAttribLocation;
             d.j(glGetAttribLocation, "aPosition");
-            int glGetUniformLocation = GLES20.glGetUniformLocation(this.f36830a, "uTransMatrix");
-            this.f36831b = glGetUniformLocation;
+            int glGetUniformLocation = GLES20.glGetUniformLocation(this.f36299a, "uTransMatrix");
+            this.f36300b = glGetUniformLocation;
             d.j(glGetUniformLocation, "uTransMatrix");
-            int glGetUniformLocation2 = GLES20.glGetUniformLocation(this.f36830a, "uAlphaScale");
-            this.f36832c = glGetUniformLocation2;
+            int glGetUniformLocation2 = GLES20.glGetUniformLocation(this.f36299a, "uAlphaScale");
+            this.f36301c = glGetUniformLocation2;
             d.j(glGetUniformLocation2, "uAlphaScale");
         }
 
         public void b() {
-            GLES20.glDeleteProgram(this.f36830a);
+            GLES20.glDeleteProgram(this.f36299a);
         }
 
         public void d(float f10) {
-            GLES20.glUniform1f(this.f36832c, f10);
+            GLES20.glUniform1f(this.f36301c, f10);
             d.g("glUniform1f");
         }
 
         public void e(float[] fArr) {
-            GLES20.glUniformMatrix4fv(this.f36831b, 1, false, fArr, 0);
+            GLES20.glUniformMatrix4fv(this.f36300b, 1, false, fArr, 0);
             d.g("glUniformMatrix4fv");
         }
 
         public void f() {
-            GLES20.glUseProgram(this.f36830a);
+            GLES20.glUseProgram(this.f36299a);
             d.g("glUseProgram");
-            GLES20.glEnableVertexAttribArray(this.f36833d);
+            GLES20.glEnableVertexAttribArray(this.f36302d);
             d.g("glEnableVertexAttribArray");
-            GLES20.glVertexAttribPointer(this.f36833d, 2, 5126, false, 0, (Buffer) d.f36822i);
+            GLES20.glVertexAttribPointer(this.f36302d, 2, 5126, false, 0, (Buffer) d.f36291i);
             d.g("glVertexAttribPointer");
             e(d.l());
             d(1.0f);
@@ -264,13 +264,13 @@ public abstract class d {
     public static class g extends f {
 
         /* renamed from: e  reason: collision with root package name */
-        private int f36834e;
+        private int f36303e;
 
         /* renamed from: f  reason: collision with root package name */
-        private int f36835f;
+        private int f36304f;
 
         /* renamed from: g  reason: collision with root package name */
-        private int f36836g;
+        private int f36305g;
 
         public g(z zVar, e eVar) {
             this(zVar, g(zVar, eVar));
@@ -278,21 +278,21 @@ public abstract class d {
 
         private void c() {
             c();
-            int glGetUniformLocation = GLES20.glGetUniformLocation(this.f36830a, "sTexture");
-            this.f36834e = glGetUniformLocation;
+            int glGetUniformLocation = GLES20.glGetUniformLocation(this.f36299a, "sTexture");
+            this.f36303e = glGetUniformLocation;
             d.j(glGetUniformLocation, "sTexture");
-            int glGetAttribLocation = GLES20.glGetAttribLocation(this.f36830a, "aTextureCoord");
-            this.f36836g = glGetAttribLocation;
+            int glGetAttribLocation = GLES20.glGetAttribLocation(this.f36299a, "aTextureCoord");
+            this.f36305g = glGetAttribLocation;
             d.j(glGetAttribLocation, "aTextureCoord");
-            int glGetUniformLocation2 = GLES20.glGetUniformLocation(this.f36830a, "uTexMatrix");
-            this.f36835f = glGetUniformLocation2;
+            int glGetUniformLocation2 = GLES20.glGetUniformLocation(this.f36299a, "uTexMatrix");
+            this.f36304f = glGetUniformLocation2;
             d.j(glGetUniformLocation2, "uTexMatrix");
         }
 
         private static a0 g(z zVar, e eVar) {
             boolean z10;
             if (!zVar.d()) {
-                return d.f36818e;
+                return d.f36287e;
             }
             if (eVar != e.UNKNOWN) {
                 z10 = true;
@@ -300,47 +300,47 @@ public abstract class d {
                 z10 = false;
             }
             b2.e.b(z10, "No default sampler shader available for" + eVar);
-            return eVar == e.YUV ? d.f36820g : d.f36819f;
+            return eVar == e.YUV ? d.f36289g : d.f36288f;
         }
 
         @Override // l0.d.f
         public void f() {
             super.f();
-            GLES20.glUniform1i(this.f36834e, 0);
-            GLES20.glEnableVertexAttribArray(this.f36836g);
+            GLES20.glUniform1i(this.f36303e, 0);
+            GLES20.glEnableVertexAttribArray(this.f36305g);
             d.g("glEnableVertexAttribArray");
-            GLES20.glVertexAttribPointer(this.f36836g, 2, 5126, false, 0, (Buffer) d.f36824k);
+            GLES20.glVertexAttribPointer(this.f36305g, 2, 5126, false, 0, (Buffer) d.f36293k);
             d.g("glVertexAttribPointer");
         }
 
         public void h(float[] fArr) {
-            GLES20.glUniformMatrix4fv(this.f36835f, 1, false, fArr, 0);
+            GLES20.glUniformMatrix4fv(this.f36304f, 1, false, fArr, 0);
             d.g("glUniformMatrix4fv");
         }
 
         public g(z zVar, a0 a0Var) {
-            super(zVar.d() ? d.f36817d : d.f36816c, d.v(a0Var));
-            this.f36834e = -1;
-            this.f36835f = -1;
-            this.f36836g = -1;
+            super(zVar.d() ? d.f36286d : d.f36285c, d.v(a0Var));
+            this.f36303e = -1;
+            this.f36304f = -1;
+            this.f36305g = -1;
             c();
         }
     }
 
     static {
         Locale locale = Locale.US;
-        f36816c = String.format(locale, "uniform mat4 uTexMatrix;\nuniform mat4 uTransMatrix;\nattribute vec4 aPosition;\nattribute vec4 aTextureCoord;\nvarying vec2 %s;\nvoid main() {\n    gl_Position = uTransMatrix * aPosition;\n    %s = (uTexMatrix * aTextureCoord).xy;\n}\n", "vTextureCoord", "vTextureCoord");
-        f36817d = String.format(locale, "#version 300 es\nin vec4 aPosition;\nin vec4 aTextureCoord;\nuniform mat4 uTexMatrix;\nuniform mat4 uTransMatrix;\nout vec2 %s;\nvoid main() {\n  gl_Position = uTransMatrix * aPosition;\n  %s = (uTexMatrix * aTextureCoord).xy;\n}\n", "vTextureCoord", "vTextureCoord");
-        f36818e = new a();
-        f36819f = new b();
-        f36820g = new c();
+        f36285c = String.format(locale, "uniform mat4 uTexMatrix;\nuniform mat4 uTransMatrix;\nattribute vec4 aPosition;\nattribute vec4 aTextureCoord;\nvarying vec2 %s;\nvoid main() {\n    gl_Position = uTransMatrix * aPosition;\n    %s = (uTexMatrix * aTextureCoord).xy;\n}\n", "vTextureCoord", "vTextureCoord");
+        f36286d = String.format(locale, "#version 300 es\nin vec4 aPosition;\nin vec4 aTextureCoord;\nuniform mat4 uTexMatrix;\nuniform mat4 uTransMatrix;\nout vec2 %s;\nvoid main() {\n  gl_Position = uTransMatrix * aPosition;\n  %s = (uTexMatrix * aTextureCoord).xy;\n}\n", "vTextureCoord", "vTextureCoord");
+        f36287e = new a();
+        f36288f = new b();
+        f36289g = new c();
         float[] fArr = {-1.0f, -1.0f, 1.0f, -1.0f, -1.0f, 1.0f, 1.0f, 1.0f};
-        f36821h = fArr;
-        f36822i = m(fArr);
+        f36290h = fArr;
+        f36291i = m(fArr);
         float[] fArr2 = {0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f};
-        f36823j = fArr2;
-        f36824k = m(fArr2);
-        f36825l = l0.g.d(EGL14.EGL_NO_SURFACE, 0, 0);
+        f36292j = fArr2;
+        f36293k = m(fArr2);
+        f36294l = l0.g.d(EGL14.EGL_NO_SURFACE, 0, 0);
     }
 
     public static void e(String str) {
@@ -401,10 +401,10 @@ public abstract class d {
     }
 
     public static int[] k(String str, z zVar) {
-        int[] iArr = f36814a;
+        int[] iArr = f36283a;
         if (zVar.b() == 3) {
             if (str.contains("EGL_EXT_gl_colorspace_bt2020_hlg")) {
-                return f36815b;
+                return f36284b;
             }
             y0.l("GLUtils", "Dynamic range uses HLG encoding, but device does not support EGL_EXT_gl_colorspace_bt2020_hlg.Fallback to default colorspace.");
         }
@@ -453,7 +453,7 @@ public abstract class d {
                 }
                 b2.e.j(z10, "Unhandled input format: " + eVar2);
                 if (zVar.d()) {
-                    gVar = new C0478d();
+                    gVar = new C0462d();
                 } else {
                     a0 a0Var2 = (a0) map.get(eVar);
                     if (a0Var2 != null) {

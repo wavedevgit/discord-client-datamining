@@ -7,13 +7,13 @@ import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import jr.p;
-import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
+import lr.p;
+import lr.v;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000J\n\u0000\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0006\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u001a\n\u0010\u0000\u001a\u00020\u0001*\u00020\u0002\u001a)\u0010\u0003\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\u0004*\u00020\u00022\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t¢\u0006\u0004\b\n\u0010\u000b\u001a5\u0010\f\u001a\u0004\u0018\u00010\u0005*\u00020\u00022\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\r\u001a\u00020\u000e2\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010¢\u0006\u0004\b\u0011\u0010\u0012\u001a\u001a\u0010\u0013\u001a\u0012\u0012\u0006\u0012\u0004\u0018\u00010\u0015\u0012\u0006\u0012\u0004\u0018\u00010\u00150\u0014*\u00020\u0002\u001a\n\u0010\u0016\u001a\u00020\u000e*\u00020\u0002\u001a\u000e\u0010\u0017\u001a\u0004\u0018\u00010\u0018*\u00020\u0002H\u0002\u001a\f\u0010\u0019\u001a\u00020\u001a*\u00020\u0002H\u0002¨\u0006\u001b"}, d2 = {"getTag", "", "Lcom/discord/chat/bridge/embed/Embed;", "toImageMediaSources", "", "Lcom/discord/media_player/MediaSource;", "channelId", "Lcom/discord/primitives/ChannelId;", "messageId", "Lcom/discord/primitives/MessageId;", "toImageMediaSources-SHRpUJI", "(Lcom/discord/chat/bridge/embed/Embed;JLjava/lang/String;)Ljava/util/List;", "toMediaSource", "shouldAutoPlay", "", "portal", "", "toMediaSource-UBIQNlQ", "(Lcom/discord/chat/bridge/embed/Embed;JLjava/lang/String;ZLjava/lang/Double;)Lcom/discord/media_player/MediaSource;", "getTargetDimensions", "Lkotlin/Pair;", "", "isInlineMedia", "getMedia", "Lcom/discord/chat/bridge/embed/EmbedUrlProvider;", "getMediaType", "Lcom/discord/chat/bridge/embed/EmbedMediaType;", "chat_release"}, k = 2, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nEmbedUtils.kt\nKotlin\n*S Kotlin\n*F\n+ 1 EmbedUtils.kt\ncom/discord/chat/bridge/embed/EmbedUtilsKt\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,153:1\n1563#2:154\n1634#2,3:155\n1#3:158\n*S KotlinDebug\n*F\n+ 1 EmbedUtils.kt\ncom/discord/chat/bridge/embed/EmbedUtilsKt\n*L\n22#1:154\n22#1:155,3\n*E\n"})
@@ -244,7 +244,7 @@ public final class EmbedUtilsKt {
             for (Iterator it = list.iterator(); it.hasNext(); it = it) {
                 EmbedMedia embedMedia = (EmbedMedia) it.next();
                 ArrayList arrayList2 = arrayList;
-                arrayList2.add(new MediaSource(null, embedMedia.getEmbedUrl(), null, null, getTag(toImageMediaSources), MediaType.IMAGE, false, ChannelId.m1060boximpl(j10), messageId, null, null, Boolean.valueOf(embedMedia.getSrcIsAnimated()), 1549, null));
+                arrayList2.add(new MediaSource(null, embedMedia.getEmbedUrl(), null, null, getTag(toImageMediaSources), MediaType.IMAGE, false, ChannelId.m1059boximpl(j10), messageId, null, null, Boolean.valueOf(embedMedia.getSrcIsAnimated()), 1549, null));
                 messageId = str;
                 arrayList = arrayList2;
             }
@@ -303,7 +303,7 @@ public final class EmbedUtilsKt {
                 if (image4 != null) {
                     bool = Boolean.valueOf(image4.getSrcIsAnimated());
                 }
-                return new MediaSource(null, str7, str8, num, tag, mediaType, z10, ChannelId.m1060boximpl(j10), messageId, null, null, bool, 1537, null);
+                return new MediaSource(null, str7, str8, num, tag, mediaType, z10, ChannelId.m1059boximpl(j10), messageId, null, null, bool, 1537, null);
             }
             EmbedMedia video = toMediaSource.getVideo();
             if (video != null) {
@@ -333,7 +333,7 @@ public final class EmbedUtilsKt {
             if (thumbnail2 != null) {
                 z11 = thumbnail2.getSrcIsAnimated();
             }
-            return new MediaSource(str4, str5, str6, num3, tag2, mediaType2, false, ChannelId.m1060boximpl(j10), messageId, null, d10, Boolean.valueOf(z11), IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING, null);
+            return new MediaSource(str4, str5, str6, num3, tag2, mediaType2, false, ChannelId.m1059boximpl(j10), messageId, null, d10, Boolean.valueOf(z11), IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING, null);
         }
         EmbedMedia video4 = toMediaSource.getVideo();
         if (video4 != null) {
@@ -363,6 +363,6 @@ public final class EmbedUtilsKt {
         if (thumbnail4 != null) {
             z11 = thumbnail4.getSrcIsAnimated();
         }
-        return new MediaSource(str, str2, str3, num2, tag3, mediaType3, z10, ChannelId.m1060boximpl(j10), messageId, null, d10, Boolean.valueOf(z11), IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING, null);
+        return new MediaSource(str, str2, str3, num2, tag3, mediaType3, z10, ChannelId.m1059boximpl(j10), messageId, null, d10, Boolean.valueOf(z11), IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING, null);
     }
 }

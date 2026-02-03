@@ -119,4 +119,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useModeratorOverlayChannelState = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [797, 802, 3067, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [797, 802, 3076, 2]);

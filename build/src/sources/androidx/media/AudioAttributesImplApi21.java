@@ -5,23 +5,23 @@ import android.media.AudioAttributes;
 public class AudioAttributesImplApi21 implements AudioAttributesImpl {
 
     /* renamed from: a  reason: collision with root package name */
-    public AudioAttributes f4632a;
+    public AudioAttributes f4601a;
 
     /* renamed from: b  reason: collision with root package name */
-    public int f4633b = -1;
+    public int f4602b = -1;
 
     public boolean equals(Object obj) {
         if (!(obj instanceof AudioAttributesImplApi21)) {
             return false;
         }
-        return this.f4632a.equals(((AudioAttributesImplApi21) obj).f4632a);
+        return this.f4601a.equals(((AudioAttributesImplApi21) obj).f4601a);
     }
 
     public int hashCode() {
-        return this.f4632a.hashCode();
+        return this.f4601a.hashCode();
     }
 
     public String toString() {
-        return "AudioAttributesCompat: audioattributes=" + this.f4632a;
+        return "AudioAttributesCompat: audioattributes=" + this.f4601a;
     }
 }

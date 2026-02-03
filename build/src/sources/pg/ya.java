@@ -5,30 +5,30 @@ import ui.c;
 final class ya implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ya f46031a = new ya();
+    static final ya f45989a = new ya();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f46032b;
+    private static final ui.c f45990b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f46033c;
+    private static final ui.c f45991c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f46034d;
+    private static final ui.c f45992d;
 
     static {
         c.b a10 = ui.c.a("inferenceCommonLogEvent");
         v1 v1Var = new v1();
         v1Var.a(1);
-        f46032b = a10.b(v1Var.b()).a();
+        f45990b = a10.b(v1Var.b()).a();
         c.b a11 = ui.c.a("imageInfo");
         v1 v1Var2 = new v1();
         v1Var2.a(2);
-        f46033c = a11.b(v1Var2.b()).a();
+        f45991c = a11.b(v1Var2.b()).a();
         c.b a12 = ui.c.a("recognizerOptions");
         v1 v1Var3 = new v1();
         v1Var3.a(3);
-        f46034d = a12.b(v1Var3.b()).a();
+        f45992d = a12.b(v1Var3.b()).a();
     }
 
     private ya() {
@@ -38,8 +38,8 @@ final class ya implements ui.d {
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         rh rhVar = (rh) obj;
         ui.e eVar = (ui.e) obj2;
-        eVar.b(f46032b, rhVar.b());
-        eVar.b(f46033c, rhVar.a());
-        eVar.b(f46034d, rhVar.c());
+        eVar.b(f45990b, rhVar.b());
+        eVar.b(f45991c, rhVar.a());
+        eVar.b(f45992d, rhVar.c());
     }
 }

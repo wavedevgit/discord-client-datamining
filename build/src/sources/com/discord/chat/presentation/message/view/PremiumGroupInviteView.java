@@ -41,8 +41,8 @@ public final class PremiumGroupInviteView extends CardView {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bind$lambda$4$lambda$3(Function2 function2, PremiumGroupInviteMessageAccessory premiumGroupInviteMessageAccessory, LinkContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
-        function2.invoke(MessageId.m1086boximpl(premiumGroupInviteMessageAccessory.mo538getMessageId3Eiw7ao()), node);
-        return Unit.f33074a;
+        function2.invoke(MessageId.m1085boximpl(premiumGroupInviteMessageAccessory.mo538getMessageId3Eiw7ao()), node);
+        return Unit.f32464a;
     }
 
     public final void bind(@NotNull final PremiumGroupInviteMessageAccessory accessory, @NotNull final Function2<? super MessageId, ? super LinkContentNode, Unit> onTapLink) {
@@ -67,10 +67,10 @@ public final class PremiumGroupInviteView extends CardView {
         AnnotatedStructurableText learnMoreLink = premiumGroupInvite.getLearnMoreLink();
         Context context = textView4.getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        String m1093toStringimpl = MessageId.m1093toStringimpl(accessory.mo538getMessageId3Eiw7ao());
+        String m1092toStringimpl = MessageId.m1092toStringimpl(accessory.mo538getMessageId3Eiw7ao());
         TextPaint paint = textView4.getPaint();
         Intrinsics.checkNotNullExpressionValue(paint, "getPaint(...)");
-        textView4.setText(TextUtilsKt.toSpannable$default(learnMoreLink, context, m1093toStringimpl, false, false, false, false, paint, new Function1() { // from class: com.discord.chat.presentation.message.view.x2
+        textView4.setText(TextUtilsKt.toSpannable$default(learnMoreLink, context, m1092toStringimpl, false, false, false, false, paint, new Function1() { // from class: com.discord.chat.presentation.message.view.x2
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit bind$lambda$4$lambda$3;

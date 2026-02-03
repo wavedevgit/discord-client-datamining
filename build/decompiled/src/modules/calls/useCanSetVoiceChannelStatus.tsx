@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
     var3 = function arg0, arg1, arg2, arg3() {
-        _fun110964: for (var _fun110964_ip = 0;;) switch (_fun110964_ip) {
+        _fun111024: for (var _fun111024_ip = 0;;) switch (_fun111024_ip) {
             case 0:
                 var1 = arg0;
                 var _closure2_slot0 = var1;
@@ -19,26 +19,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot2 = var1;
                 var2 = arg2;
                 if (var2) {
-                    _fun110964_ip = 38;
-                    continue _fun110964
+                    _fun111024_ip = 38;
+                    continue _fun111024
                 }
             case 32:
                 var2 = _closure1_slot4;
-                _fun110964_ip = 42;
-                continue _fun110964;
+                _fun111024_ip = 42;
+                continue _fun111024;
             case 38:
                 var2 = _closure1_slot5;
             case 42:
                 var1 = var2.every;
                 var0 = function(arg0) { // Environment: var0
-                    _fun110965: for (var _fun110965_ip = 0;;) switch (_fun110965_ip) {
+                    _fun111025: for (var _fun111025_ip = 0;;) switch (_fun111025_ip) {
                         case 0:
                             var4 = arg0;
                             var2 = _closure2_slot2;
                             var0 = null;
                             if (!(var0 != var2)) {
-                                _fun110965_ip = 77;
-                                continue _fun110965
+                                _fun111025_ip = 77;
+                                continue _fun111025
                             }
                         case 16:
                             var3 = _closure1_slot1;
@@ -55,8 +55,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = _closure2_slot0;
                             var0.context = var5;
                             var0 = var2.bind(var3)(var0);
-                            _fun110965_ip = 97;
-                            continue _fun110965;
+                            _fun111025_ip = 97;
+                            continue _fun111025;
                         case 77:
                             var3 = _closure2_slot1;
                             var2 = var3.can;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/calls/useCanSetVoiceChannelStatus.tsx';
     var4 = var5.bind(var6)(var4);
     var4 = function arg0() {
-        _fun110966: for (var _fun110966_ip = 0;;) switch (_fun110966_ip) {
+        _fun111026: for (var _fun111026_ip = 0;;) switch (_fun111026_ip) {
             case 0:
                 var7 = arg0;
                 var6 = arguments[1];
@@ -116,8 +116,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot0 = var7;
                 var4 = undefined;
                 if (!(var6 === var4)) {
-                    _fun110966_ip = 23;
-                    continue _fun110966
+                    _fun111026_ip = 23;
+                    continue _fun111026
                 }
             case 21:
                 var6 = false;
@@ -154,13 +154,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var4;
     var2._canSetVoiceChannelStatus = var3;
     var1 = function arg0() {
-        _fun110968: for (var _fun110968_ip = 0;;) switch (_fun110968_ip) {
+        _fun111028: for (var _fun111028_ip = 0;;) switch (_fun111028_ip) {
             case 0:
                 var5 = arguments[1];
                 var4 = undefined;
                 if (!(var5 === var4)) {
-                    _fun110968_ip = 11;
-                    continue _fun110968
+                    _fun111028_ip = 11;
+                    continue _fun111028
                 }
             case 9:
                 var5 = false;
@@ -177,4 +177,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.canSetVoiceChannelStatus = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3082, 483, 3087, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3091, 483, 3096, 566, 2]);

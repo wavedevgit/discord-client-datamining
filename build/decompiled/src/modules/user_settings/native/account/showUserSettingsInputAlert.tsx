@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.default;
                 var _closure4_slot0 = var1;
                 var0 = function(arg0) { // Environment: var0
-                    _fun81531: for (var _fun81531_ip = 0;;) switch (_fun81531_ip) {
+                    _fun81641: for (var _fun81641_ip = 0;;) switch (_fun81641_ip) {
                         case 0:
                             var3 = _closure1_slot3;
                             var2 = _closure4_slot0;
@@ -119,8 +119,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = var6.confirmColor;
                             var6 = null;
                             if (!(var6 == var7)) {
-                                _fun81531_ip = 208;
-                                continue _fun81531
+                                _fun81641_ip = 208;
+                                continue _fun81641
                             }
                         case 174:
                             var6 = _closure1_slot1;
@@ -130,8 +130,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var6.bind(var0)(var5);
                             var5 = var5.Colors;
                             var6 = var5.RED;
-                            _fun81531_ip = 218;
-                            continue _fun81531;
+                            _fun81641_ip = 218;
+                            continue _fun81641;
                         case 208:
                             var5 = _closure2_slot3;
                             var6 = var5.confirmColor;
@@ -162,4 +162,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3927, 10386, 1307, 1234, 3928, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3936, 10405, 1307, 1234, 3937, 2]);

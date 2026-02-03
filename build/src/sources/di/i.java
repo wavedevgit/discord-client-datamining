@@ -8,27 +8,27 @@ import java.util.zip.ZipFile;
 public final class i implements l {
 
     /* renamed from: a  reason: collision with root package name */
-    final /* synthetic */ u f21751a;
+    final /* synthetic */ u f20610a;
 
     /* renamed from: b  reason: collision with root package name */
-    final /* synthetic */ Set f21752b;
+    final /* synthetic */ Set f20611b;
 
     /* renamed from: c  reason: collision with root package name */
-    final /* synthetic */ AtomicBoolean f21753c;
+    final /* synthetic */ AtomicBoolean f20612c;
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ o f21754d;
+    final /* synthetic */ o f20613d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i(o oVar, u uVar, Set set, AtomicBoolean atomicBoolean) {
-        this.f21754d = oVar;
-        this.f21751a = uVar;
-        this.f21752b = set;
-        this.f21753c = atomicBoolean;
+        this.f20613d = oVar;
+        this.f20610a = uVar;
+        this.f20611b = set;
+        this.f20612c = atomicBoolean;
     }
 
     @Override // di.l
     public final void a(ZipFile zipFile, Set set) {
-        this.f21754d.f(this.f21751a, set, new h(this));
+        this.f20613d.f(this.f20610a, set, new h(this));
     }
 }

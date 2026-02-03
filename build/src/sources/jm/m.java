@@ -5,8 +5,16 @@ import kotlin.jvm.internal.Reflection;
 public abstract class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f32034a = Reflection.getOrCreateKotlinClass(k.class).getQualifiedName();
+    private static final String f31830a = Reflection.getOrCreateKotlinClass(k.class).getQualifiedName();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final boolean f32035b = em.a.f22952a.a();
+    private static final boolean f31831b = em.a.f21643a.a();
+
+    public static final /* synthetic */ String a() {
+        return f31830a;
+    }
+
+    public static final /* synthetic */ boolean b() {
+        return f31831b;
+    }
 }

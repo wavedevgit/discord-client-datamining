@@ -1,78 +1,124 @@
 package us;
 
+import kotlin.Lazy;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Lambda;
+import us.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class z implements l {
+public abstract class z {
 
     /* renamed from: a  reason: collision with root package name */
-    private final n f50678a;
+    private static final Lazy f51021a = lr.l.a(a.f51024d);
 
     /* renamed from: b  reason: collision with root package name */
-    private final Integer f50679b;
+    private static final Lazy f51022b = lr.l.a(b.f51026d);
 
     /* renamed from: c  reason: collision with root package name */
-    private final Integer f50680c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final Integer f50681d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final Integer f50682e;
+    private static final v f51023c = new v(null, null, null, null, null, 31, null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    /* synthetic */ class a extends FunctionReferenceImpl implements Function1 {
-        a(Object obj) {
-            super(1, obj, b.class, "getterNotNull", "getterNotNull(Ljava/lang/Object;)Ljava/lang/Object;", 0);
+    static final class a extends Lambda implements Function0 {
+
+        /* renamed from: d  reason: collision with root package name */
+        public static final a f51024d = new a();
+
+        /* JADX INFO: Access modifiers changed from: package-private */
+        /* renamed from: us.z$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+        public static final class C0669a extends Lambda implements Function1 {
+
+            /* renamed from: d  reason: collision with root package name */
+            public static final C0669a f51025d = new C0669a();
+
+            C0669a() {
+                super(1);
+            }
+
+            public final void a(o.a build) {
+                Intrinsics.checkNotNullParameter(build, "$this$build");
+                o.a.C0659a.c(build, null, 1, null);
+                p.b(build, '-');
+                o.a.C0659a.b(build, null, 1, null);
+                p.b(build, '-');
+                o.a.C0659a.a(build, null, 1, null);
+            }
+
+            @Override // kotlin.jvm.functions.Function1
+            public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+                a((o.a) obj);
+                return Unit.f32464a;
+            }
         }
 
-        @Override // kotlin.jvm.functions.Function1
+        a() {
+            super(0);
+        }
+
+        @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
-        public final Integer invoke(Object obj) {
-            return (Integer) ((b) this.receiver).b(obj);
+        public final n invoke() {
+            return y.f51018b.a(C0669a.f51025d);
         }
     }
 
-    public z(n field, Integer num, Integer num2, Integer num3, Integer num4) {
-        Intrinsics.checkNotNullParameter(field, "field");
-        this.f50678a = field;
-        this.f50679b = num;
-        this.f50680c = num2;
-        this.f50681d = num3;
-        this.f50682e = num4;
-        if (num != null && num.intValue() < 0) {
-            throw new IllegalArgumentException(("The minimum number of digits (" + num + ") is negative").toString());
-        } else if (num2 != null && num != null && num2.intValue() < num.intValue()) {
-            throw new IllegalArgumentException(("The maximum number of digits (" + num2 + ") is less than the minimum number of digits (" + num + ')').toString());
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    static final class b extends Lambda implements Function0 {
+
+        /* renamed from: d  reason: collision with root package name */
+        public static final b f51026d = new b();
+
+        /* JADX INFO: Access modifiers changed from: package-private */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+        public static final class a extends Lambda implements Function1 {
+
+            /* renamed from: d  reason: collision with root package name */
+            public static final a f51027d = new a();
+
+            a() {
+                super(1);
+            }
+
+            public final void a(o.a build) {
+                Intrinsics.checkNotNullParameter(build, "$this$build");
+                o.a.C0659a.c(build, null, 1, null);
+                o.a.C0659a.b(build, null, 1, null);
+                o.a.C0659a.a(build, null, 1, null);
+            }
+
+            @Override // kotlin.jvm.functions.Function1
+            public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+                a((o.a) obj);
+                return Unit.f32464a;
+            }
+        }
+
+        b() {
+            super(0);
+        }
+
+        @Override // kotlin.jvm.functions.Function0
+        /* renamed from: a */
+        public final n invoke() {
+            return y.f51018b.a(a.f51027d);
         }
     }
 
-    @Override // us.l
-    public vs.e a() {
-        int i10;
-        a aVar = new a(this.f50678a.b());
-        Integer num = this.f50679b;
-        if (num != null) {
-            i10 = num.intValue();
-        } else {
-            i10 = 0;
-        }
-        vs.g gVar = new vs.g(aVar, i10, this.f50682e);
-        Integer num2 = this.f50681d;
-        if (num2 != null) {
-            return new vs.h(gVar, num2.intValue());
-        }
-        return gVar;
+    public static final n b() {
+        return (n) f51021a.getValue();
     }
 
-    @Override // us.l
-    public ws.q b() {
-        return ws.p.a(this.f50679b, this.f50680c, this.f50681d, this.f50678a.b(), this.f50678a.getName(), this.f50682e);
+    public static final n c() {
+        return (n) f51022b.getValue();
     }
 
-    @Override // us.l
-    public final n c() {
-        return this.f50678a;
+    public static final Object d(Object obj, String name) {
+        Intrinsics.checkNotNullParameter(name, "name");
+        if (obj != null) {
+            return obj;
+        }
+        throw new ts.b("Can not create a " + name + " from the given input: the field " + name + " is missing");
     }
 }

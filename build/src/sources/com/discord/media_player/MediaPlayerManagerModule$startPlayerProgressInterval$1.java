@@ -43,7 +43,7 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            pr.b.f();
+            rr.b.f();
             if (this.label == 0) {
                 kotlin.c.b(obj);
                 if (this.$mediaPlayer.isPlaying()) {
@@ -52,14 +52,14 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
                 if (this.$mediaPlayer.durationMs() > 0 && (this.$mediaPlayer.isPlaying() || this.$mediaPlayer.isBuffering())) {
                     this.this$0.onMediaPlayerDownloadProgress(this.$mediaSource.getPortal().doubleValue(), this.$mediaPlayer.bufferedPositionMs(), this.$mediaPlayer.durationMs());
                 }
-                return Unit.f33074a;
+                return Unit.f32464a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
         }
     }
 
@@ -80,7 +80,7 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:19:0x005a, code lost:
-        if (hs.i0.a(100, r9) != r0) goto L6;
+        if (js.i0.a(100, r9) != r0) goto L6;
      */
     /* JADX WARN: Removed duplicated region for block: B:14:0x0034  */
     /* JADX WARN: Removed duplicated region for block: B:21:0x005d  */
@@ -93,7 +93,7 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
     public final java.lang.Object invokeSuspend(java.lang.Object r10) {
         /*
             r9 = this;
-            java.lang.Object r0 = pr.b.f()
+            java.lang.Object r0 = rr.b.f()
             int r1 = r9.label
             r2 = 2
             r3 = 1
@@ -123,7 +123,7 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
         L2e:
             boolean r1 = kotlinx.coroutines.i.i(r10)
             if (r1 == 0) goto L5d
-            hs.c1 r1 = hs.m0.c()
+            js.c1 r1 = js.m0.c()
             com.discord.media_player.MediaPlayerManagerModule$startPlayerProgressInterval$1$1 r4 = new com.discord.media_player.MediaPlayerManagerModule$startPlayerProgressInterval$1$1
             com.discord.media_player.MediaPlayer r5 = r9.$mediaPlayer
             com.discord.media_player.MediaPlayerManagerModule r6 = r9.this$0
@@ -132,7 +132,7 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
             r4.<init>(r5, r6, r7, r8)
             r9.L$0 = r10
             r9.label = r3
-            java.lang.Object r1 = hs.g.g(r1, r4, r9)
+            java.lang.Object r1 = js.g.g(r1, r4, r9)
             if (r1 != r0) goto L4f
             goto L5c
         L4f:
@@ -141,12 +141,12 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
             r9.L$0 = r1
             r9.label = r2
             r4 = 100
-            java.lang.Object r10 = hs.i0.a(r4, r9)
+            java.lang.Object r10 = js.i0.a(r4, r9)
             if (r10 != r0) goto L15
         L5c:
             return r0
         L5d:
-            kotlin.Unit r10 = kotlin.Unit.f33074a
+            kotlin.Unit r10 = kotlin.Unit.f32464a
             return r10
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.media_player.MediaPlayerManagerModule$startPlayerProgressInterval$1.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -154,6 +154,6 @@ public final class MediaPlayerManagerModule$startPlayerProgressInterval$1 extend
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaPlayerManagerModule$startPlayerProgressInterval$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        return ((MediaPlayerManagerModule$startPlayerProgressInterval$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
     }
 }

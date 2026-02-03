@@ -100,7 +100,7 @@ public final class TelemetryRingTypes {
         static {
             BudgetType[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = qr.a.a($values);
+            $ENTRIES = sr.a.a($values);
         }
 
         private BudgetType(String str, int i10) {
@@ -139,7 +139,7 @@ public final class TelemetryRingTypes {
         static {
             Channel[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = qr.a.a($values);
+            $ENTRIES = sr.a.a($values);
         }
 
         private Channel(String str, int i10, int i11) {

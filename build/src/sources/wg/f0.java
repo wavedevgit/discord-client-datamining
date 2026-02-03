@@ -7,42 +7,42 @@ import java.util.concurrent.Executor;
 final class f0 implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ Task f52178d;
+    final /* synthetic */ Task f52400d;
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ g0 f52179e;
+    final /* synthetic */ g0 f52401e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f0(g0 g0Var, Task task) {
-        this.f52179e = g0Var;
-        this.f52178d = task;
+        this.f52401e = g0Var;
+        this.f52400d = task;
     }
 
     @Override // java.lang.Runnable
     public final void run() {
         j jVar;
         try {
-            jVar = this.f52179e.f52181b;
-            Task a10 = jVar.a(this.f52178d.l());
+            jVar = this.f52401e.f52403b;
+            Task a10 = jVar.a(this.f52400d.l());
             if (a10 == null) {
-                this.f52179e.onFailure(new NullPointerException("Continuation returned null"));
+                this.f52401e.onFailure(new NullPointerException("Continuation returned null"));
                 return;
             }
-            g0 g0Var = this.f52179e;
-            Executor executor = l.f52189b;
+            g0 g0Var = this.f52401e;
+            Executor executor = l.f52411b;
             a10.f(executor, g0Var);
-            a10.d(executor, this.f52179e);
-            a10.a(executor, this.f52179e);
+            a10.d(executor, this.f52401e);
+            a10.a(executor, this.f52401e);
         } catch (CancellationException unused) {
-            this.f52179e.a();
+            this.f52401e.a();
         } catch (i e10) {
             if (e10.getCause() instanceof Exception) {
-                this.f52179e.onFailure((Exception) e10.getCause());
+                this.f52401e.onFailure((Exception) e10.getCause());
             } else {
-                this.f52179e.onFailure(e10);
+                this.f52401e.onFailure(e10);
             }
         } catch (Exception e11) {
-            this.f52179e.onFailure(e11);
+            this.f52401e.onFailure(e11);
         }
     }
 }

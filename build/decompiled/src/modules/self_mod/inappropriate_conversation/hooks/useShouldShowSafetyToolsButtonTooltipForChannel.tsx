@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/self_mod/inappropriate_conversation/hooks/useShouldShowSafetyToolsButtonTooltipForChannel.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun72354: for (var _fun72354_ip = 0;;) switch (_fun72354_ip) {
+        _fun72464: for (var _fun72464_ip = 0;;) switch (_fun72464_ip) {
             case 0:
                 var6 = arg0;
                 var3 = _closure1_slot0;
@@ -65,13 +65,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var3)(var6);
                 var3 = null;
                 if (!(var3 != var4)) {
-                    _fun72354_ip = 397;
-                    continue _fun72354
+                    _fun72464_ip = 397;
+                    continue _fun72464
                 }
             case 96:
                 if (var1) {
-                    _fun72354_ip = 397;
-                    continue _fun72354
+                    _fun72464_ip = 397;
+                    continue _fun72464
                 }
             case 102:
                 var4 = _closure1_slot0;
@@ -82,8 +82,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4.shouldShowTakeoverForWarnings;
                 var1 = var1.bind(var4)(var5);
                 if (var1) {
-                    _fun72354_ip = 397;
-                    continue _fun72354
+                    _fun72464_ip = 397;
+                    continue _fun72464
                 }
             case 139:
                 var4 = var5.some;
@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var6.bind(var5)(var4);
                 var6 = var7.sort;
                 var4 = function(arg0, arg1) { // Environment: var2
-                    _fun72357: for (var _fun72357_ip = 0;;) switch (_fun72357_ip) {
+                    _fun72467: for (var _fun72467_ip = 0;;) switch (_fun72467_ip) {
                         case 0:
                             var0 = arg1;
                             var1 = var0.dismiss_timestamp;
@@ -116,8 +116,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1 < var0;
                             var0 = 1;
                             if (!var1) {
-                                _fun72357_ip = 34;
-                                continue _fun72357
+                                _fun72467_ip = 34;
+                                continue _fun72467
                             }
                         case 28:
                             var0 = -1;
@@ -129,8 +129,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var6.length;
                 var4 = 1;
                 if (!(!(var7 < var4))) {
-                    _fun72354_ip = 397;
-                    continue _fun72354
+                    _fun72464_ip = 397;
+                    continue _fun72464
                 }
             case 207:
                 var4 = 0;
@@ -138,8 +138,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var4.dismiss_timestamp;
                 var6 = var1;
                 if (!(var6 === var0)) {
-                    _fun72354_ip = 228;
-                    continue _fun72354
+                    _fun72464_ip = 228;
+                    continue _fun72464
                 }
             case 226:
                 var6 = false;
@@ -147,8 +147,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var3 == var10;
                 var1 = true;
                 if (var4) {
-                    _fun72354_ip = 335;
-                    continue _fun72354
+                    _fun72464_ip = 335;
+                    continue _fun72464
                 }
             case 237:
                 var4 = global;
@@ -166,13 +166,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var9.getTime;
                 var7 = var7.bind(var9)();
                 if (var6) {
-                    _fun72354_ip = 287;
-                    continue _fun72354
+                    _fun72464_ip = 287;
+                    continue _fun72464
                 }
             case 281:
                 var6 = _closure1_slot4;
-                _fun72354_ip = 291;
-                continue _fun72354;
+                _fun72464_ip = 291;
+                continue _fun72464;
             case 287:
                 var6 = _closure1_slot3;
             case 291:
@@ -192,8 +192,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4 >= var6;
             case 335:
                 if (!var1) {
-                    _fun72354_ip = 397;
-                    continue _fun72354
+                    _fun72464_ip = 397;
+                    continue _fun72464
                 }
             case 338:
                 var4 = var5.filter;
@@ -216,8 +216,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var1 = var5.bind(var4)(var1);
                 if (!(var3 == var1)) {
-                    _fun72354_ip = 395;
-                    continue _fun72354
+                    _fun72464_ip = 395;
+                    continue _fun72464
                 }
             case 377:
                 var3 = var4.findLast;
@@ -238,4 +238,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useSafetyToolsButtonTooltipForChannel = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8992, 667, 8987, 8991, 9034, 9035, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [9011, 667, 9006, 9010, 9053, 9054, 2]);

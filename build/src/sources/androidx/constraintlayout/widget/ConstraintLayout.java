@@ -61,31 +61,31 @@ public class ConstraintLayout extends ViewGroup {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public class Measurer implements b.InterfaceC0479b {
+    public class Measurer implements b.InterfaceC0463b {
 
         /* renamed from: a  reason: collision with root package name */
-        ConstraintLayout f2500a;
+        ConstraintLayout f2469a;
 
         /* renamed from: b  reason: collision with root package name */
-        int f2501b;
+        int f2470b;
 
         /* renamed from: c  reason: collision with root package name */
-        int f2502c;
+        int f2471c;
 
         /* renamed from: d  reason: collision with root package name */
-        int f2503d;
+        int f2472d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f2504e;
+        int f2473e;
 
         /* renamed from: f  reason: collision with root package name */
-        int f2505f;
+        int f2474f;
 
         /* renamed from: g  reason: collision with root package name */
-        int f2506g;
+        int f2475g;
 
         Measurer(ConstraintLayout constraintLayout) {
-            this.f2500a = constraintLayout;
+            this.f2469a = constraintLayout;
         }
 
         private boolean d(int i10, int i11, int i12) {
@@ -104,16 +104,16 @@ public class ConstraintLayout extends ViewGroup {
             return false;
         }
 
-        @Override // l1.b.InterfaceC0479b
+        @Override // l1.b.InterfaceC0463b
         public final void a() {
-            int childCount = this.f2500a.getChildCount();
+            int childCount = this.f2469a.getChildCount();
             for (int i10 = 0; i10 < childCount; i10++) {
-                this.f2500a.getChildAt(i10);
+                this.f2469a.getChildAt(i10);
             }
-            int size = this.f2500a.mConstraintHelpers.size();
+            int size = this.f2469a.mConstraintHelpers.size();
             if (size > 0) {
                 for (int i11 = 0; i11 < size; i11++) {
-                    ((b) this.f2500a.mConstraintHelpers.get(i11)).l(this.f2500a);
+                    ((b) this.f2469a.mConstraintHelpers.get(i11)).l(this.f2469a);
                 }
             }
         }
@@ -126,7 +126,7 @@ public class ConstraintLayout extends ViewGroup {
         /* JADX WARN: Removed duplicated region for block: B:219:? A[RETURN, SYNTHETIC] */
         /* JADX WARN: Removed duplicated region for block: B:53:0x00da  */
         /* JADX WARN: Removed duplicated region for block: B:82:0x0140  */
-        @Override // l1.b.InterfaceC0479b
+        @Override // l1.b.InterfaceC0463b
         /*
             Code decompiled incorrectly, please refer to instructions dump.
             To view partially-correct add '--show-bad-code' argument
@@ -140,12 +140,12 @@ public class ConstraintLayout extends ViewGroup {
         }
 
         public void c(int i10, int i11, int i12, int i13, int i14, int i15) {
-            this.f2501b = i12;
-            this.f2502c = i13;
-            this.f2503d = i14;
-            this.f2504e = i15;
-            this.f2505f = i10;
-            this.f2506g = i11;
+            this.f2470b = i12;
+            this.f2471c = i13;
+            this.f2472d = i14;
+            this.f2473e = i15;
+            this.f2474f = i10;
+            this.f2475g = i11;
         }
     }
 
@@ -158,25 +158,25 @@ public class ConstraintLayout extends ViewGroup {
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f2508a;
+        static final /* synthetic */ int[] f2477a;
 
         static {
             int[] iArr = new int[ConstraintWidget.b.values().length];
-            f2508a = iArr;
+            f2477a = iArr;
             try {
                 iArr[ConstraintWidget.b.FIXED.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f2508a[ConstraintWidget.b.WRAP_CONTENT.ordinal()] = 2;
+                f2477a[ConstraintWidget.b.WRAP_CONTENT.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f2508a[ConstraintWidget.b.MATCH_PARENT.ordinal()] = 3;
+                f2477a[ConstraintWidget.b.MATCH_PARENT.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f2508a[ConstraintWidget.b.MATCH_CONSTRAINT.ordinal()] = 4;
+                f2477a[ConstraintWidget.b.MATCH_CONSTRAINT.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
         }
@@ -224,7 +224,7 @@ public class ConstraintLayout extends ViewGroup {
         if (view == null) {
             return null;
         }
-        return ((LayoutParams) view.getLayoutParams()).f2493v0;
+        return ((LayoutParams) view.getLayoutParams()).f2462v0;
     }
 
     private void c(AttributeSet attributeSet, int i10, int i11) {
@@ -237,13 +237,13 @@ public class ConstraintLayout extends ViewGroup {
             int indexCount = obtainStyledAttributes.getIndexCount();
             for (int i12 = 0; i12 < indexCount; i12++) {
                 int index = obtainStyledAttributes.getIndex(i12);
-                if (index == d.f2707f1) {
+                if (index == d.f2676f1) {
                     this.mMinWidth = obtainStyledAttributes.getDimensionPixelOffset(index, this.mMinWidth);
-                } else if (index == d.f2715g1) {
+                } else if (index == d.f2684g1) {
                     this.mMinHeight = obtainStyledAttributes.getDimensionPixelOffset(index, this.mMinHeight);
-                } else if (index == d.f2691d1) {
+                } else if (index == d.f2660d1) {
                     this.mMaxWidth = obtainStyledAttributes.getDimensionPixelOffset(index, this.mMaxWidth);
-                } else if (index == d.f2699e1) {
+                } else if (index == d.f2668e1) {
                     this.mMaxHeight = obtainStyledAttributes.getDimensionPixelOffset(index, this.mMaxHeight);
                 } else if (index == d.O2) {
                     this.mOptimizationLevel = obtainStyledAttributes.getInt(index, this.mOptimizationLevel);
@@ -256,7 +256,7 @@ public class ConstraintLayout extends ViewGroup {
                             this.mConstraintLayoutSpec = null;
                         }
                     }
-                } else if (index == d.f2771n1) {
+                } else if (index == d.f2740n1) {
                     int resourceId2 = obtainStyledAttributes.getResourceId(index, 0);
                     try {
                         ConstraintSet constraintSet = new ConstraintSet();
@@ -348,12 +348,12 @@ public class ConstraintLayout extends ViewGroup {
         View view = this.mChildrenByIds.get(i10);
         ConstraintWidget constraintWidget2 = (ConstraintWidget) sparseArray.get(i10);
         if (constraintWidget2 != null && view != null && (view.getLayoutParams() instanceof LayoutParams)) {
-            layoutParams.f2463g0 = true;
+            layoutParams.f2432g0 = true;
             d.a aVar2 = d.a.BASELINE;
             if (aVar == aVar2) {
                 LayoutParams layoutParams2 = (LayoutParams) view.getLayoutParams();
-                layoutParams2.f2463g0 = true;
-                layoutParams2.f2493v0.L0(true);
+                layoutParams2.f2432g0 = true;
+                layoutParams2.f2462v0.L0(true);
             }
             constraintWidget.o(aVar2).b(constraintWidget2.o(aVar), layoutParams.D, layoutParams.C, true);
             constraintWidget.L0(true);
@@ -533,17 +533,17 @@ public class ConstraintLayout extends ViewGroup {
     public String getSceneString() {
         int id2;
         StringBuilder sb2 = new StringBuilder();
-        if (this.mLayoutWidget.f2313o == null) {
+        if (this.mLayoutWidget.f2282o == null) {
             int id3 = getId();
             if (id3 != -1) {
-                this.mLayoutWidget.f2313o = getContext().getResources().getResourceEntryName(id3);
+                this.mLayoutWidget.f2282o = getContext().getResources().getResourceEntryName(id3);
             } else {
-                this.mLayoutWidget.f2313o = "parent";
+                this.mLayoutWidget.f2282o = "parent";
             }
         }
         if (this.mLayoutWidget.t() == null) {
             ConstraintWidgetContainer constraintWidgetContainer = this.mLayoutWidget;
-            constraintWidgetContainer.D0(constraintWidgetContainer.f2313o);
+            constraintWidgetContainer.D0(constraintWidgetContainer.f2282o);
             Log.v(TAG, " setDebugName " + this.mLayoutWidget.t());
         }
         Iterator it = this.mLayoutWidget.s1().iterator();
@@ -551,11 +551,11 @@ public class ConstraintLayout extends ViewGroup {
             ConstraintWidget constraintWidget = (ConstraintWidget) it.next();
             View view = (View) constraintWidget.s();
             if (view != null) {
-                if (constraintWidget.f2313o == null && (id2 = view.getId()) != -1) {
-                    constraintWidget.f2313o = getContext().getResources().getResourceEntryName(id2);
+                if (constraintWidget.f2282o == null && (id2 = view.getId()) != -1) {
+                    constraintWidget.f2282o = getContext().getResources().getResourceEntryName(id2);
                 }
                 if (constraintWidget.t() == null) {
-                    constraintWidget.D0(constraintWidget.f2313o);
+                    constraintWidget.D0(constraintWidget.f2282o);
                     Log.v(TAG, " setDebugName " + constraintWidget.t());
                 }
             }
@@ -574,11 +574,11 @@ public class ConstraintLayout extends ViewGroup {
         }
         if (view != null) {
             if (view.getLayoutParams() instanceof LayoutParams) {
-                return ((LayoutParams) view.getLayoutParams()).f2493v0;
+                return ((LayoutParams) view.getLayoutParams()).f2462v0;
             }
             view.setLayoutParams(generateLayoutParams(view.getLayoutParams()));
             if (view.getLayoutParams() instanceof LayoutParams) {
-                return ((LayoutParams) view.getLayoutParams()).f2493v0;
+                return ((LayoutParams) view.getLayoutParams()).f2462v0;
             }
             return null;
         }
@@ -617,8 +617,8 @@ public class ConstraintLayout extends ViewGroup {
         for (int i14 = 0; i14 < childCount; i14++) {
             View childAt = getChildAt(i14);
             LayoutParams layoutParams = (LayoutParams) childAt.getLayoutParams();
-            ConstraintWidget constraintWidget = layoutParams.f2493v0;
-            if ((childAt.getVisibility() != 8 || layoutParams.f2465h0 || layoutParams.f2467i0 || layoutParams.f2471k0 || isInEditMode) && !layoutParams.f2469j0) {
+            ConstraintWidget constraintWidget = layoutParams.f2462v0;
+            if ((childAt.getVisibility() != 8 || layoutParams.f2434h0 || layoutParams.f2436i0 || layoutParams.f2440k0 || isInEditMode) && !layoutParams.f2438j0) {
                 int X = constraintWidget.X();
                 int Y = constraintWidget.Y();
                 childAt.layout(X, Y, constraintWidget.W() + X, constraintWidget.x() + Y);
@@ -684,14 +684,14 @@ public class ConstraintLayout extends ViewGroup {
         if ((view instanceof Guideline) && !(viewWidget instanceof f)) {
             LayoutParams layoutParams = (LayoutParams) view.getLayoutParams();
             f fVar = new f();
-            layoutParams.f2493v0 = fVar;
-            layoutParams.f2465h0 = true;
+            layoutParams.f2462v0 = fVar;
+            layoutParams.f2434h0 = true;
             fVar.B1(layoutParams.Z);
         }
         if (view instanceof b) {
             b bVar = (b) view;
             bVar.o();
-            ((LayoutParams) view.getLayoutParams()).f2467i0 = true;
+            ((LayoutParams) view.getLayoutParams()).f2436i0 = true;
             if (!this.mConstraintHelpers.contains(bVar)) {
                 this.mConstraintHelpers.add(bVar);
             }
@@ -728,8 +728,8 @@ public class ConstraintLayout extends ViewGroup {
 
     protected void resolveMeasuredDimension(int i10, int i11, int i12, int i13, boolean z10, boolean z11) {
         Measurer measurer = this.mMeasurer;
-        int i14 = measurer.f2504e;
-        int resolveSizeAndState = View.resolveSizeAndState(i12 + measurer.f2503d, i10, 0);
+        int i14 = measurer.f2473e;
+        int resolveSizeAndState = View.resolveSizeAndState(i12 + measurer.f2472d, i10, 0);
         int min = Math.min(this.mMaxWidth, resolveSizeAndState & 16777215);
         int min2 = Math.min(this.mMaxHeight, View.resolveSizeAndState(i13 + i14, i11, 0) & 16777215);
         if (z10) {
@@ -844,8 +844,8 @@ public class ConstraintLayout extends ViewGroup {
     protected void setSelfDimensionBehaviour(ConstraintWidgetContainer constraintWidgetContainer, int i10, int i11, int i12, int i13) {
         ConstraintWidget.b bVar;
         Measurer measurer = this.mMeasurer;
-        int i14 = measurer.f2504e;
-        int i15 = measurer.f2503d;
+        int i14 = measurer.f2473e;
+        int i15 = measurer.f2472d;
         ConstraintWidget.b bVar2 = ConstraintWidget.b.FIXED;
         int childCount = getChildCount();
         if (i10 != Integer.MIN_VALUE) {
@@ -992,169 +992,169 @@ public class ConstraintLayout extends ViewGroup {
         public int Z;
 
         /* renamed from: a  reason: collision with root package name */
-        public int f2450a;
+        public int f2419a;
 
         /* renamed from: a0  reason: collision with root package name */
-        public boolean f2451a0;
+        public boolean f2420a0;
 
         /* renamed from: b  reason: collision with root package name */
-        public int f2452b;
+        public int f2421b;
 
         /* renamed from: b0  reason: collision with root package name */
-        public boolean f2453b0;
+        public boolean f2422b0;
 
         /* renamed from: c  reason: collision with root package name */
-        public float f2454c;
+        public float f2423c;
 
         /* renamed from: c0  reason: collision with root package name */
-        public String f2455c0;
+        public String f2424c0;
 
         /* renamed from: d  reason: collision with root package name */
-        public boolean f2456d;
+        public boolean f2425d;
 
         /* renamed from: d0  reason: collision with root package name */
-        public int f2457d0;
+        public int f2426d0;
 
         /* renamed from: e  reason: collision with root package name */
-        public int f2458e;
+        public int f2427e;
 
         /* renamed from: e0  reason: collision with root package name */
-        boolean f2459e0;
+        boolean f2428e0;
 
         /* renamed from: f  reason: collision with root package name */
-        public int f2460f;
+        public int f2429f;
 
         /* renamed from: f0  reason: collision with root package name */
-        boolean f2461f0;
+        boolean f2430f0;
 
         /* renamed from: g  reason: collision with root package name */
-        public int f2462g;
+        public int f2431g;
 
         /* renamed from: g0  reason: collision with root package name */
-        boolean f2463g0;
+        boolean f2432g0;
 
         /* renamed from: h  reason: collision with root package name */
-        public int f2464h;
+        public int f2433h;
 
         /* renamed from: h0  reason: collision with root package name */
-        boolean f2465h0;
+        boolean f2434h0;
 
         /* renamed from: i  reason: collision with root package name */
-        public int f2466i;
+        public int f2435i;
 
         /* renamed from: i0  reason: collision with root package name */
-        boolean f2467i0;
+        boolean f2436i0;
 
         /* renamed from: j  reason: collision with root package name */
-        public int f2468j;
+        public int f2437j;
 
         /* renamed from: j0  reason: collision with root package name */
-        boolean f2469j0;
+        boolean f2438j0;
 
         /* renamed from: k  reason: collision with root package name */
-        public int f2470k;
+        public int f2439k;
 
         /* renamed from: k0  reason: collision with root package name */
-        boolean f2471k0;
+        boolean f2440k0;
 
         /* renamed from: l  reason: collision with root package name */
-        public int f2472l;
+        public int f2441l;
 
         /* renamed from: l0  reason: collision with root package name */
-        int f2473l0;
+        int f2442l0;
 
         /* renamed from: m  reason: collision with root package name */
-        public int f2474m;
+        public int f2443m;
 
         /* renamed from: m0  reason: collision with root package name */
-        int f2475m0;
+        int f2444m0;
 
         /* renamed from: n  reason: collision with root package name */
-        public int f2476n;
+        public int f2445n;
 
         /* renamed from: n0  reason: collision with root package name */
-        int f2477n0;
+        int f2446n0;
 
         /* renamed from: o  reason: collision with root package name */
-        public int f2478o;
+        public int f2447o;
 
         /* renamed from: o0  reason: collision with root package name */
-        int f2479o0;
+        int f2448o0;
 
         /* renamed from: p  reason: collision with root package name */
-        public int f2480p;
+        public int f2449p;
 
         /* renamed from: p0  reason: collision with root package name */
-        int f2481p0;
+        int f2450p0;
 
         /* renamed from: q  reason: collision with root package name */
-        public int f2482q;
+        public int f2451q;
 
         /* renamed from: q0  reason: collision with root package name */
-        int f2483q0;
+        int f2452q0;
 
         /* renamed from: r  reason: collision with root package name */
-        public float f2484r;
+        public float f2453r;
 
         /* renamed from: r0  reason: collision with root package name */
-        float f2485r0;
+        float f2454r0;
 
         /* renamed from: s  reason: collision with root package name */
-        public int f2486s;
+        public int f2455s;
 
         /* renamed from: s0  reason: collision with root package name */
-        int f2487s0;
+        int f2456s0;
 
         /* renamed from: t  reason: collision with root package name */
-        public int f2488t;
+        public int f2457t;
 
         /* renamed from: t0  reason: collision with root package name */
-        int f2489t0;
+        int f2458t0;
 
         /* renamed from: u  reason: collision with root package name */
-        public int f2490u;
+        public int f2459u;
 
         /* renamed from: u0  reason: collision with root package name */
-        float f2491u0;
+        float f2460u0;
 
         /* renamed from: v  reason: collision with root package name */
-        public int f2492v;
+        public int f2461v;
 
         /* renamed from: v0  reason: collision with root package name */
-        ConstraintWidget f2493v0;
+        ConstraintWidget f2462v0;
 
         /* renamed from: w  reason: collision with root package name */
-        public int f2494w;
+        public int f2463w;
 
         /* renamed from: w0  reason: collision with root package name */
-        public boolean f2495w0;
+        public boolean f2464w0;
 
         /* renamed from: x  reason: collision with root package name */
-        public int f2496x;
+        public int f2465x;
 
         /* renamed from: y  reason: collision with root package name */
-        public int f2497y;
+        public int f2466y;
 
         /* renamed from: z  reason: collision with root package name */
-        public int f2498z;
+        public int f2467z;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         private static class a {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final SparseIntArray f2499a;
+            public static final SparseIntArray f2468a;
 
             static {
                 SparseIntArray sparseIntArray = new SparseIntArray();
-                f2499a = sparseIntArray;
-                sparseIntArray.append(d.f2868z2, 64);
-                sparseIntArray.append(d.f2684c2, 65);
-                sparseIntArray.append(d.f2756l2, 8);
-                sparseIntArray.append(d.f2764m2, 9);
-                sparseIntArray.append(d.f2780o2, 10);
-                sparseIntArray.append(d.f2788p2, 11);
-                sparseIntArray.append(d.f2836v2, 12);
-                sparseIntArray.append(d.f2828u2, 13);
+                f2468a = sparseIntArray;
+                sparseIntArray.append(d.f2837z2, 64);
+                sparseIntArray.append(d.f2653c2, 65);
+                sparseIntArray.append(d.f2725l2, 8);
+                sparseIntArray.append(d.f2733m2, 9);
+                sparseIntArray.append(d.f2749o2, 10);
+                sparseIntArray.append(d.f2757p2, 11);
+                sparseIntArray.append(d.f2805v2, 12);
+                sparseIntArray.append(d.f2797u2, 13);
                 sparseIntArray.append(d.S1, 14);
                 sparseIntArray.append(d.R1, 15);
                 sparseIntArray.append(d.N1, 16);
@@ -1166,12 +1166,12 @@ public class ConstraintLayout extends ViewGroup {
                 sparseIntArray.append(d.E2, 49);
                 sparseIntArray.append(d.F2, 50);
                 sparseIntArray.append(d.Z1, 5);
-                sparseIntArray.append(d.f2666a2, 6);
-                sparseIntArray.append(d.f2675b2, 7);
+                sparseIntArray.append(d.f2635a2, 6);
+                sparseIntArray.append(d.f2644b2, 7);
                 sparseIntArray.append(d.I1, 67);
                 sparseIntArray.append(d.W0, 1);
-                sparseIntArray.append(d.f2796q2, 17);
-                sparseIntArray.append(d.f2804r2, 18);
+                sparseIntArray.append(d.f2765q2, 17);
+                sparseIntArray.append(d.f2773r2, 18);
                 sparseIntArray.append(d.Y1, 19);
                 sparseIntArray.append(d.X1, 20);
                 sparseIntArray.append(d.J2, 21);
@@ -1182,61 +1182,61 @@ public class ConstraintLayout extends ViewGroup {
                 sparseIntArray.append(d.I2, 26);
                 sparseIntArray.append(d.G2, 55);
                 sparseIntArray.append(d.N2, 54);
-                sparseIntArray.append(d.f2724h2, 29);
-                sparseIntArray.append(d.f2844w2, 30);
+                sparseIntArray.append(d.f2693h2, 29);
+                sparseIntArray.append(d.f2813w2, 30);
                 sparseIntArray.append(d.W1, 44);
-                sparseIntArray.append(d.f2740j2, 45);
-                sparseIntArray.append(d.f2860y2, 46);
-                sparseIntArray.append(d.f2732i2, 47);
-                sparseIntArray.append(d.f2852x2, 48);
+                sparseIntArray.append(d.f2709j2, 45);
+                sparseIntArray.append(d.f2829y2, 46);
+                sparseIntArray.append(d.f2701i2, 47);
+                sparseIntArray.append(d.f2821x2, 48);
                 sparseIntArray.append(d.L1, 27);
                 sparseIntArray.append(d.K1, 28);
                 sparseIntArray.append(d.A2, 31);
-                sparseIntArray.append(d.f2692d2, 32);
+                sparseIntArray.append(d.f2661d2, 32);
                 sparseIntArray.append(d.C2, 33);
                 sparseIntArray.append(d.B2, 34);
                 sparseIntArray.append(d.D2, 35);
-                sparseIntArray.append(d.f2708f2, 36);
-                sparseIntArray.append(d.f2700e2, 37);
-                sparseIntArray.append(d.f2716g2, 38);
-                sparseIntArray.append(d.f2748k2, 39);
-                sparseIntArray.append(d.f2820t2, 40);
-                sparseIntArray.append(d.f2772n2, 41);
+                sparseIntArray.append(d.f2677f2, 36);
+                sparseIntArray.append(d.f2669e2, 37);
+                sparseIntArray.append(d.f2685g2, 38);
+                sparseIntArray.append(d.f2717k2, 39);
+                sparseIntArray.append(d.f2789t2, 40);
+                sparseIntArray.append(d.f2741n2, 41);
                 sparseIntArray.append(d.Q1, 42);
                 sparseIntArray.append(d.M1, 43);
-                sparseIntArray.append(d.f2812s2, 51);
+                sparseIntArray.append(d.f2781s2, 51);
                 sparseIntArray.append(d.P2, 66);
             }
         }
 
         public LayoutParams(ViewGroup.LayoutParams layoutParams) {
             super(layoutParams);
-            this.f2450a = -1;
-            this.f2452b = -1;
-            this.f2454c = -1.0f;
-            this.f2456d = true;
-            this.f2458e = -1;
-            this.f2460f = -1;
-            this.f2462g = -1;
-            this.f2464h = -1;
-            this.f2466i = -1;
-            this.f2468j = -1;
-            this.f2470k = -1;
-            this.f2472l = -1;
-            this.f2474m = -1;
-            this.f2476n = -1;
-            this.f2478o = -1;
-            this.f2480p = -1;
-            this.f2482q = 0;
-            this.f2484r = 0.0f;
-            this.f2486s = -1;
-            this.f2488t = -1;
-            this.f2490u = -1;
-            this.f2492v = -1;
-            this.f2494w = Integer.MIN_VALUE;
-            this.f2496x = Integer.MIN_VALUE;
-            this.f2497y = Integer.MIN_VALUE;
-            this.f2498z = Integer.MIN_VALUE;
+            this.f2419a = -1;
+            this.f2421b = -1;
+            this.f2423c = -1.0f;
+            this.f2425d = true;
+            this.f2427e = -1;
+            this.f2429f = -1;
+            this.f2431g = -1;
+            this.f2433h = -1;
+            this.f2435i = -1;
+            this.f2437j = -1;
+            this.f2439k = -1;
+            this.f2441l = -1;
+            this.f2443m = -1;
+            this.f2445n = -1;
+            this.f2447o = -1;
+            this.f2449p = -1;
+            this.f2451q = 0;
+            this.f2453r = 0.0f;
+            this.f2455s = -1;
+            this.f2457t = -1;
+            this.f2459u = -1;
+            this.f2461v = -1;
+            this.f2463w = Integer.MIN_VALUE;
+            this.f2465x = Integer.MIN_VALUE;
+            this.f2466y = Integer.MIN_VALUE;
+            this.f2467z = Integer.MIN_VALUE;
             this.A = Integer.MIN_VALUE;
             this.B = Integer.MIN_VALUE;
             this.C = Integer.MIN_VALUE;
@@ -1263,26 +1263,26 @@ public class ConstraintLayout extends ViewGroup {
             this.X = -1;
             this.Y = -1;
             this.Z = -1;
-            this.f2451a0 = false;
-            this.f2453b0 = false;
-            this.f2455c0 = null;
-            this.f2457d0 = 0;
-            this.f2459e0 = true;
-            this.f2461f0 = true;
-            this.f2463g0 = false;
-            this.f2465h0 = false;
-            this.f2467i0 = false;
-            this.f2469j0 = false;
-            this.f2471k0 = false;
-            this.f2473l0 = -1;
-            this.f2475m0 = -1;
-            this.f2477n0 = -1;
-            this.f2479o0 = -1;
-            this.f2481p0 = Integer.MIN_VALUE;
-            this.f2483q0 = Integer.MIN_VALUE;
-            this.f2485r0 = 0.5f;
-            this.f2493v0 = new ConstraintWidget();
-            this.f2495w0 = false;
+            this.f2420a0 = false;
+            this.f2422b0 = false;
+            this.f2424c0 = null;
+            this.f2426d0 = 0;
+            this.f2428e0 = true;
+            this.f2430f0 = true;
+            this.f2432g0 = false;
+            this.f2434h0 = false;
+            this.f2436i0 = false;
+            this.f2438j0 = false;
+            this.f2440k0 = false;
+            this.f2442l0 = -1;
+            this.f2444m0 = -1;
+            this.f2446n0 = -1;
+            this.f2448o0 = -1;
+            this.f2450p0 = Integer.MIN_VALUE;
+            this.f2452q0 = Integer.MIN_VALUE;
+            this.f2454r0 = 0.5f;
+            this.f2462v0 = new ConstraintWidget();
+            this.f2464w0 = false;
             if (layoutParams instanceof ViewGroup.MarginLayoutParams) {
                 ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) layoutParams;
                 ((ViewGroup.MarginLayoutParams) this).leftMargin = marginLayoutParams.leftMargin;
@@ -1294,32 +1294,32 @@ public class ConstraintLayout extends ViewGroup {
             }
             if (layoutParams instanceof LayoutParams) {
                 LayoutParams layoutParams2 = (LayoutParams) layoutParams;
-                this.f2450a = layoutParams2.f2450a;
-                this.f2452b = layoutParams2.f2452b;
-                this.f2454c = layoutParams2.f2454c;
-                this.f2456d = layoutParams2.f2456d;
-                this.f2458e = layoutParams2.f2458e;
-                this.f2460f = layoutParams2.f2460f;
-                this.f2462g = layoutParams2.f2462g;
-                this.f2464h = layoutParams2.f2464h;
-                this.f2466i = layoutParams2.f2466i;
-                this.f2468j = layoutParams2.f2468j;
-                this.f2470k = layoutParams2.f2470k;
-                this.f2472l = layoutParams2.f2472l;
-                this.f2474m = layoutParams2.f2474m;
-                this.f2476n = layoutParams2.f2476n;
-                this.f2478o = layoutParams2.f2478o;
-                this.f2480p = layoutParams2.f2480p;
-                this.f2482q = layoutParams2.f2482q;
-                this.f2484r = layoutParams2.f2484r;
-                this.f2486s = layoutParams2.f2486s;
-                this.f2488t = layoutParams2.f2488t;
-                this.f2490u = layoutParams2.f2490u;
-                this.f2492v = layoutParams2.f2492v;
-                this.f2494w = layoutParams2.f2494w;
-                this.f2496x = layoutParams2.f2496x;
-                this.f2497y = layoutParams2.f2497y;
-                this.f2498z = layoutParams2.f2498z;
+                this.f2419a = layoutParams2.f2419a;
+                this.f2421b = layoutParams2.f2421b;
+                this.f2423c = layoutParams2.f2423c;
+                this.f2425d = layoutParams2.f2425d;
+                this.f2427e = layoutParams2.f2427e;
+                this.f2429f = layoutParams2.f2429f;
+                this.f2431g = layoutParams2.f2431g;
+                this.f2433h = layoutParams2.f2433h;
+                this.f2435i = layoutParams2.f2435i;
+                this.f2437j = layoutParams2.f2437j;
+                this.f2439k = layoutParams2.f2439k;
+                this.f2441l = layoutParams2.f2441l;
+                this.f2443m = layoutParams2.f2443m;
+                this.f2445n = layoutParams2.f2445n;
+                this.f2447o = layoutParams2.f2447o;
+                this.f2449p = layoutParams2.f2449p;
+                this.f2451q = layoutParams2.f2451q;
+                this.f2453r = layoutParams2.f2453r;
+                this.f2455s = layoutParams2.f2455s;
+                this.f2457t = layoutParams2.f2457t;
+                this.f2459u = layoutParams2.f2459u;
+                this.f2461v = layoutParams2.f2461v;
+                this.f2463w = layoutParams2.f2463w;
+                this.f2465x = layoutParams2.f2465x;
+                this.f2466y = layoutParams2.f2466y;
+                this.f2467z = layoutParams2.f2467z;
                 this.A = layoutParams2.A;
                 this.B = layoutParams2.B;
                 this.C = layoutParams2.C;
@@ -1333,8 +1333,8 @@ public class ConstraintLayout extends ViewGroup {
                 this.M = layoutParams2.M;
                 this.N = layoutParams2.N;
                 this.O = layoutParams2.O;
-                this.f2451a0 = layoutParams2.f2451a0;
-                this.f2453b0 = layoutParams2.f2453b0;
+                this.f2420a0 = layoutParams2.f2420a0;
+                this.f2422b0 = layoutParams2.f2422b0;
                 this.P = layoutParams2.P;
                 this.Q = layoutParams2.Q;
                 this.R = layoutParams2.R;
@@ -1346,67 +1346,67 @@ public class ConstraintLayout extends ViewGroup {
                 this.X = layoutParams2.X;
                 this.Y = layoutParams2.Y;
                 this.Z = layoutParams2.Z;
-                this.f2459e0 = layoutParams2.f2459e0;
-                this.f2461f0 = layoutParams2.f2461f0;
-                this.f2463g0 = layoutParams2.f2463g0;
-                this.f2465h0 = layoutParams2.f2465h0;
-                this.f2473l0 = layoutParams2.f2473l0;
-                this.f2475m0 = layoutParams2.f2475m0;
-                this.f2477n0 = layoutParams2.f2477n0;
-                this.f2479o0 = layoutParams2.f2479o0;
-                this.f2481p0 = layoutParams2.f2481p0;
-                this.f2483q0 = layoutParams2.f2483q0;
-                this.f2485r0 = layoutParams2.f2485r0;
-                this.f2455c0 = layoutParams2.f2455c0;
-                this.f2457d0 = layoutParams2.f2457d0;
-                this.f2493v0 = layoutParams2.f2493v0;
+                this.f2428e0 = layoutParams2.f2428e0;
+                this.f2430f0 = layoutParams2.f2430f0;
+                this.f2432g0 = layoutParams2.f2432g0;
+                this.f2434h0 = layoutParams2.f2434h0;
+                this.f2442l0 = layoutParams2.f2442l0;
+                this.f2444m0 = layoutParams2.f2444m0;
+                this.f2446n0 = layoutParams2.f2446n0;
+                this.f2448o0 = layoutParams2.f2448o0;
+                this.f2450p0 = layoutParams2.f2450p0;
+                this.f2452q0 = layoutParams2.f2452q0;
+                this.f2454r0 = layoutParams2.f2454r0;
+                this.f2424c0 = layoutParams2.f2424c0;
+                this.f2426d0 = layoutParams2.f2426d0;
+                this.f2462v0 = layoutParams2.f2462v0;
                 this.E = layoutParams2.E;
                 this.F = layoutParams2.F;
             }
         }
 
         public void a() {
-            this.f2465h0 = false;
-            this.f2459e0 = true;
-            this.f2461f0 = true;
+            this.f2434h0 = false;
+            this.f2428e0 = true;
+            this.f2430f0 = true;
             int i10 = ((ViewGroup.MarginLayoutParams) this).width;
-            if (i10 == -2 && this.f2451a0) {
-                this.f2459e0 = false;
+            if (i10 == -2 && this.f2420a0) {
+                this.f2428e0 = false;
                 if (this.P == 0) {
                     this.P = 1;
                 }
             }
             int i11 = ((ViewGroup.MarginLayoutParams) this).height;
-            if (i11 == -2 && this.f2453b0) {
-                this.f2461f0 = false;
+            if (i11 == -2 && this.f2422b0) {
+                this.f2430f0 = false;
                 if (this.Q == 0) {
                     this.Q = 1;
                 }
             }
             if (i10 == 0 || i10 == -1) {
-                this.f2459e0 = false;
+                this.f2428e0 = false;
                 if (i10 == 0 && this.P == 1) {
                     ((ViewGroup.MarginLayoutParams) this).width = -2;
-                    this.f2451a0 = true;
+                    this.f2420a0 = true;
                 }
             }
             if (i11 == 0 || i11 == -1) {
-                this.f2461f0 = false;
+                this.f2430f0 = false;
                 if (i11 == 0 && this.Q == 1) {
                     ((ViewGroup.MarginLayoutParams) this).height = -2;
-                    this.f2453b0 = true;
+                    this.f2422b0 = true;
                 }
             }
-            if (this.f2454c == -1.0f && this.f2450a == -1 && this.f2452b == -1) {
+            if (this.f2423c == -1.0f && this.f2419a == -1 && this.f2421b == -1) {
                 return;
             }
-            this.f2465h0 = true;
-            this.f2459e0 = true;
-            this.f2461f0 = true;
-            if (!(this.f2493v0 instanceof f)) {
-                this.f2493v0 = new f();
+            this.f2434h0 = true;
+            this.f2428e0 = true;
+            this.f2430f0 = true;
+            if (!(this.f2462v0 instanceof f)) {
+                this.f2462v0 = new f();
             }
-            ((f) this.f2493v0).B1(this.Z);
+            ((f) this.f2462v0).B1(this.Z);
         }
 
         /* JADX WARN: Removed duplicated region for block: B:17:0x004a  */
@@ -1431,32 +1431,32 @@ public class ConstraintLayout extends ViewGroup {
 
         public LayoutParams(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
-            this.f2450a = -1;
-            this.f2452b = -1;
-            this.f2454c = -1.0f;
-            this.f2456d = true;
-            this.f2458e = -1;
-            this.f2460f = -1;
-            this.f2462g = -1;
-            this.f2464h = -1;
-            this.f2466i = -1;
-            this.f2468j = -1;
-            this.f2470k = -1;
-            this.f2472l = -1;
-            this.f2474m = -1;
-            this.f2476n = -1;
-            this.f2478o = -1;
-            this.f2480p = -1;
-            this.f2482q = 0;
-            this.f2484r = 0.0f;
-            this.f2486s = -1;
-            this.f2488t = -1;
-            this.f2490u = -1;
-            this.f2492v = -1;
-            this.f2494w = Integer.MIN_VALUE;
-            this.f2496x = Integer.MIN_VALUE;
-            this.f2497y = Integer.MIN_VALUE;
-            this.f2498z = Integer.MIN_VALUE;
+            this.f2419a = -1;
+            this.f2421b = -1;
+            this.f2423c = -1.0f;
+            this.f2425d = true;
+            this.f2427e = -1;
+            this.f2429f = -1;
+            this.f2431g = -1;
+            this.f2433h = -1;
+            this.f2435i = -1;
+            this.f2437j = -1;
+            this.f2439k = -1;
+            this.f2441l = -1;
+            this.f2443m = -1;
+            this.f2445n = -1;
+            this.f2447o = -1;
+            this.f2449p = -1;
+            this.f2451q = 0;
+            this.f2453r = 0.0f;
+            this.f2455s = -1;
+            this.f2457t = -1;
+            this.f2459u = -1;
+            this.f2461v = -1;
+            this.f2463w = Integer.MIN_VALUE;
+            this.f2465x = Integer.MIN_VALUE;
+            this.f2466y = Integer.MIN_VALUE;
+            this.f2467z = Integer.MIN_VALUE;
             this.A = Integer.MIN_VALUE;
             this.B = Integer.MIN_VALUE;
             this.C = Integer.MIN_VALUE;
@@ -1483,193 +1483,193 @@ public class ConstraintLayout extends ViewGroup {
             this.X = -1;
             this.Y = -1;
             this.Z = -1;
-            this.f2451a0 = false;
-            this.f2453b0 = false;
-            this.f2455c0 = null;
-            this.f2457d0 = 0;
-            this.f2459e0 = true;
-            this.f2461f0 = true;
-            this.f2463g0 = false;
-            this.f2465h0 = false;
-            this.f2467i0 = false;
-            this.f2469j0 = false;
-            this.f2471k0 = false;
-            this.f2473l0 = -1;
-            this.f2475m0 = -1;
-            this.f2477n0 = -1;
-            this.f2479o0 = -1;
-            this.f2481p0 = Integer.MIN_VALUE;
-            this.f2483q0 = Integer.MIN_VALUE;
-            this.f2485r0 = 0.5f;
-            this.f2493v0 = new ConstraintWidget();
-            this.f2495w0 = false;
+            this.f2420a0 = false;
+            this.f2422b0 = false;
+            this.f2424c0 = null;
+            this.f2426d0 = 0;
+            this.f2428e0 = true;
+            this.f2430f0 = true;
+            this.f2432g0 = false;
+            this.f2434h0 = false;
+            this.f2436i0 = false;
+            this.f2438j0 = false;
+            this.f2440k0 = false;
+            this.f2442l0 = -1;
+            this.f2444m0 = -1;
+            this.f2446n0 = -1;
+            this.f2448o0 = -1;
+            this.f2450p0 = Integer.MIN_VALUE;
+            this.f2452q0 = Integer.MIN_VALUE;
+            this.f2454r0 = 0.5f;
+            this.f2462v0 = new ConstraintWidget();
+            this.f2464w0 = false;
             TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, d.V0);
             int indexCount = obtainStyledAttributes.getIndexCount();
             for (int i10 = 0; i10 < indexCount; i10++) {
                 int index = obtainStyledAttributes.getIndex(i10);
-                int i11 = a.f2499a.get(index);
+                int i11 = a.f2468a.get(index);
                 switch (i11) {
                     case 1:
                         this.Z = obtainStyledAttributes.getInt(index, this.Z);
                         break;
                     case 2:
-                        int resourceId = obtainStyledAttributes.getResourceId(index, this.f2480p);
-                        this.f2480p = resourceId;
+                        int resourceId = obtainStyledAttributes.getResourceId(index, this.f2449p);
+                        this.f2449p = resourceId;
                         if (resourceId == -1) {
-                            this.f2480p = obtainStyledAttributes.getInt(index, -1);
+                            this.f2449p = obtainStyledAttributes.getInt(index, -1);
                             break;
                         } else {
                             break;
                         }
                     case 3:
-                        this.f2482q = obtainStyledAttributes.getDimensionPixelSize(index, this.f2482q);
+                        this.f2451q = obtainStyledAttributes.getDimensionPixelSize(index, this.f2451q);
                         break;
                     case 4:
-                        float f10 = obtainStyledAttributes.getFloat(index, this.f2484r) % 360.0f;
-                        this.f2484r = f10;
+                        float f10 = obtainStyledAttributes.getFloat(index, this.f2453r) % 360.0f;
+                        this.f2453r = f10;
                         if (f10 < 0.0f) {
-                            this.f2484r = (360.0f - f10) % 360.0f;
+                            this.f2453r = (360.0f - f10) % 360.0f;
                             break;
                         } else {
                             break;
                         }
                     case 5:
-                        this.f2450a = obtainStyledAttributes.getDimensionPixelOffset(index, this.f2450a);
+                        this.f2419a = obtainStyledAttributes.getDimensionPixelOffset(index, this.f2419a);
                         break;
                     case 6:
-                        this.f2452b = obtainStyledAttributes.getDimensionPixelOffset(index, this.f2452b);
+                        this.f2421b = obtainStyledAttributes.getDimensionPixelOffset(index, this.f2421b);
                         break;
                     case 7:
-                        this.f2454c = obtainStyledAttributes.getFloat(index, this.f2454c);
+                        this.f2423c = obtainStyledAttributes.getFloat(index, this.f2423c);
                         break;
                     case 8:
-                        int resourceId2 = obtainStyledAttributes.getResourceId(index, this.f2458e);
-                        this.f2458e = resourceId2;
+                        int resourceId2 = obtainStyledAttributes.getResourceId(index, this.f2427e);
+                        this.f2427e = resourceId2;
                         if (resourceId2 == -1) {
-                            this.f2458e = obtainStyledAttributes.getInt(index, -1);
+                            this.f2427e = obtainStyledAttributes.getInt(index, -1);
                             break;
                         } else {
                             break;
                         }
                     case 9:
-                        int resourceId3 = obtainStyledAttributes.getResourceId(index, this.f2460f);
-                        this.f2460f = resourceId3;
+                        int resourceId3 = obtainStyledAttributes.getResourceId(index, this.f2429f);
+                        this.f2429f = resourceId3;
                         if (resourceId3 == -1) {
-                            this.f2460f = obtainStyledAttributes.getInt(index, -1);
+                            this.f2429f = obtainStyledAttributes.getInt(index, -1);
                             break;
                         } else {
                             break;
                         }
                     case 10:
-                        int resourceId4 = obtainStyledAttributes.getResourceId(index, this.f2462g);
-                        this.f2462g = resourceId4;
+                        int resourceId4 = obtainStyledAttributes.getResourceId(index, this.f2431g);
+                        this.f2431g = resourceId4;
                         if (resourceId4 == -1) {
-                            this.f2462g = obtainStyledAttributes.getInt(index, -1);
+                            this.f2431g = obtainStyledAttributes.getInt(index, -1);
                             break;
                         } else {
                             break;
                         }
                     case 11:
-                        int resourceId5 = obtainStyledAttributes.getResourceId(index, this.f2464h);
-                        this.f2464h = resourceId5;
+                        int resourceId5 = obtainStyledAttributes.getResourceId(index, this.f2433h);
+                        this.f2433h = resourceId5;
                         if (resourceId5 == -1) {
-                            this.f2464h = obtainStyledAttributes.getInt(index, -1);
+                            this.f2433h = obtainStyledAttributes.getInt(index, -1);
                             break;
                         } else {
                             break;
                         }
                     case 12:
-                        int resourceId6 = obtainStyledAttributes.getResourceId(index, this.f2466i);
-                        this.f2466i = resourceId6;
+                        int resourceId6 = obtainStyledAttributes.getResourceId(index, this.f2435i);
+                        this.f2435i = resourceId6;
                         if (resourceId6 == -1) {
-                            this.f2466i = obtainStyledAttributes.getInt(index, -1);
+                            this.f2435i = obtainStyledAttributes.getInt(index, -1);
                             break;
                         } else {
                             break;
                         }
                     case 13:
-                        int resourceId7 = obtainStyledAttributes.getResourceId(index, this.f2468j);
-                        this.f2468j = resourceId7;
+                        int resourceId7 = obtainStyledAttributes.getResourceId(index, this.f2437j);
+                        this.f2437j = resourceId7;
                         if (resourceId7 == -1) {
-                            this.f2468j = obtainStyledAttributes.getInt(index, -1);
+                            this.f2437j = obtainStyledAttributes.getInt(index, -1);
                             break;
                         } else {
                             break;
                         }
                     case 14:
-                        int resourceId8 = obtainStyledAttributes.getResourceId(index, this.f2470k);
-                        this.f2470k = resourceId8;
+                        int resourceId8 = obtainStyledAttributes.getResourceId(index, this.f2439k);
+                        this.f2439k = resourceId8;
                         if (resourceId8 == -1) {
-                            this.f2470k = obtainStyledAttributes.getInt(index, -1);
+                            this.f2439k = obtainStyledAttributes.getInt(index, -1);
                             break;
                         } else {
                             break;
                         }
                     case 15:
-                        int resourceId9 = obtainStyledAttributes.getResourceId(index, this.f2472l);
-                        this.f2472l = resourceId9;
+                        int resourceId9 = obtainStyledAttributes.getResourceId(index, this.f2441l);
+                        this.f2441l = resourceId9;
                         if (resourceId9 == -1) {
-                            this.f2472l = obtainStyledAttributes.getInt(index, -1);
+                            this.f2441l = obtainStyledAttributes.getInt(index, -1);
                             break;
                         } else {
                             break;
                         }
                     case 16:
-                        int resourceId10 = obtainStyledAttributes.getResourceId(index, this.f2474m);
-                        this.f2474m = resourceId10;
+                        int resourceId10 = obtainStyledAttributes.getResourceId(index, this.f2443m);
+                        this.f2443m = resourceId10;
                         if (resourceId10 == -1) {
-                            this.f2474m = obtainStyledAttributes.getInt(index, -1);
+                            this.f2443m = obtainStyledAttributes.getInt(index, -1);
                             break;
                         } else {
                             break;
                         }
                     case 17:
-                        int resourceId11 = obtainStyledAttributes.getResourceId(index, this.f2486s);
-                        this.f2486s = resourceId11;
+                        int resourceId11 = obtainStyledAttributes.getResourceId(index, this.f2455s);
+                        this.f2455s = resourceId11;
                         if (resourceId11 == -1) {
-                            this.f2486s = obtainStyledAttributes.getInt(index, -1);
+                            this.f2455s = obtainStyledAttributes.getInt(index, -1);
                             break;
                         } else {
                             break;
                         }
                     case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
-                        int resourceId12 = obtainStyledAttributes.getResourceId(index, this.f2488t);
-                        this.f2488t = resourceId12;
+                        int resourceId12 = obtainStyledAttributes.getResourceId(index, this.f2457t);
+                        this.f2457t = resourceId12;
                         if (resourceId12 == -1) {
-                            this.f2488t = obtainStyledAttributes.getInt(index, -1);
+                            this.f2457t = obtainStyledAttributes.getInt(index, -1);
                             break;
                         } else {
                             break;
                         }
                     case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
-                        int resourceId13 = obtainStyledAttributes.getResourceId(index, this.f2490u);
-                        this.f2490u = resourceId13;
+                        int resourceId13 = obtainStyledAttributes.getResourceId(index, this.f2459u);
+                        this.f2459u = resourceId13;
                         if (resourceId13 == -1) {
-                            this.f2490u = obtainStyledAttributes.getInt(index, -1);
+                            this.f2459u = obtainStyledAttributes.getInt(index, -1);
                             break;
                         } else {
                             break;
                         }
                     case 20:
-                        int resourceId14 = obtainStyledAttributes.getResourceId(index, this.f2492v);
-                        this.f2492v = resourceId14;
+                        int resourceId14 = obtainStyledAttributes.getResourceId(index, this.f2461v);
+                        this.f2461v = resourceId14;
                         if (resourceId14 == -1) {
-                            this.f2492v = obtainStyledAttributes.getInt(index, -1);
+                            this.f2461v = obtainStyledAttributes.getInt(index, -1);
                             break;
                         } else {
                             break;
                         }
                     case ChatViewRecyclerTypes.FLAGGED_MESSAGE_EMBED /* 21 */:
-                        this.f2494w = obtainStyledAttributes.getDimensionPixelSize(index, this.f2494w);
+                        this.f2463w = obtainStyledAttributes.getDimensionPixelSize(index, this.f2463w);
                         break;
                     case ChatViewRecyclerTypes.FLAGGED_MESSAGE_ACTION_BAR /* 22 */:
-                        this.f2496x = obtainStyledAttributes.getDimensionPixelSize(index, this.f2496x);
+                        this.f2465x = obtainStyledAttributes.getDimensionPixelSize(index, this.f2465x);
                         break;
                     case 23:
-                        this.f2497y = obtainStyledAttributes.getDimensionPixelSize(index, this.f2497y);
+                        this.f2466y = obtainStyledAttributes.getDimensionPixelSize(index, this.f2466y);
                         break;
                     case ChatViewRecyclerTypes.SURVEY_INDICATION /* 24 */:
-                        this.f2498z = obtainStyledAttributes.getDimensionPixelSize(index, this.f2498z);
+                        this.f2467z = obtainStyledAttributes.getDimensionPixelSize(index, this.f2467z);
                         break;
                     case ChatViewRecyclerTypes.GUILD_INVITE_DISABLED /* 25 */:
                         this.A = obtainStyledAttributes.getDimensionPixelSize(index, this.A);
@@ -1678,10 +1678,10 @@ public class ConstraintLayout extends ViewGroup {
                         this.B = obtainStyledAttributes.getDimensionPixelSize(index, this.B);
                         break;
                     case 27:
-                        this.f2451a0 = obtainStyledAttributes.getBoolean(index, this.f2451a0);
+                        this.f2420a0 = obtainStyledAttributes.getBoolean(index, this.f2420a0);
                         break;
                     case 28:
-                        this.f2453b0 = obtainStyledAttributes.getBoolean(index, this.f2453b0);
+                        this.f2422b0 = obtainStyledAttributes.getBoolean(index, this.f2422b0);
                         break;
                     case 29:
                         this.G = obtainStyledAttributes.getFloat(index, this.G);
@@ -1787,22 +1787,22 @@ public class ConstraintLayout extends ViewGroup {
                                 this.Y = obtainStyledAttributes.getDimensionPixelOffset(index, this.Y);
                                 continue;
                             case ChatViewRecyclerTypes.MEDIA_ATTACHMENT_MOSAIC_VISUAL_PLACEHOLDER /* 51 */:
-                                this.f2455c0 = obtainStyledAttributes.getString(index);
+                                this.f2424c0 = obtainStyledAttributes.getString(index);
                                 continue;
                             case ChatViewRecyclerTypes.REFERRAL /* 52 */:
-                                int resourceId15 = obtainStyledAttributes.getResourceId(index, this.f2476n);
-                                this.f2476n = resourceId15;
+                                int resourceId15 = obtainStyledAttributes.getResourceId(index, this.f2445n);
+                                this.f2445n = resourceId15;
                                 if (resourceId15 == -1) {
-                                    this.f2476n = obtainStyledAttributes.getInt(index, -1);
+                                    this.f2445n = obtainStyledAttributes.getInt(index, -1);
                                     break;
                                 } else {
                                     continue;
                                 }
                             case ChatViewRecyclerTypes.GUILD_PROFILE_INVITE /* 53 */:
-                                int resourceId16 = obtainStyledAttributes.getResourceId(index, this.f2478o);
-                                this.f2478o = resourceId16;
+                                int resourceId16 = obtainStyledAttributes.getResourceId(index, this.f2447o);
+                                this.f2447o = resourceId16;
                                 if (resourceId16 == -1) {
-                                    this.f2478o = obtainStyledAttributes.getInt(index, -1);
+                                    this.f2447o = obtainStyledAttributes.getInt(index, -1);
                                     break;
                                 } else {
                                     continue;
@@ -1824,10 +1824,10 @@ public class ConstraintLayout extends ViewGroup {
                                         this.F = true;
                                         continue;
                                     case 66:
-                                        this.f2457d0 = obtainStyledAttributes.getInt(index, this.f2457d0);
+                                        this.f2426d0 = obtainStyledAttributes.getInt(index, this.f2426d0);
                                         continue;
                                     case 67:
-                                        this.f2456d = obtainStyledAttributes.getBoolean(index, this.f2456d);
+                                        this.f2425d = obtainStyledAttributes.getBoolean(index, this.f2425d);
                                         continue;
                                         continue;
                                 }
@@ -1840,32 +1840,32 @@ public class ConstraintLayout extends ViewGroup {
 
         public LayoutParams(int i10, int i11) {
             super(i10, i11);
-            this.f2450a = -1;
-            this.f2452b = -1;
-            this.f2454c = -1.0f;
-            this.f2456d = true;
-            this.f2458e = -1;
-            this.f2460f = -1;
-            this.f2462g = -1;
-            this.f2464h = -1;
-            this.f2466i = -1;
-            this.f2468j = -1;
-            this.f2470k = -1;
-            this.f2472l = -1;
-            this.f2474m = -1;
-            this.f2476n = -1;
-            this.f2478o = -1;
-            this.f2480p = -1;
-            this.f2482q = 0;
-            this.f2484r = 0.0f;
-            this.f2486s = -1;
-            this.f2488t = -1;
-            this.f2490u = -1;
-            this.f2492v = -1;
-            this.f2494w = Integer.MIN_VALUE;
-            this.f2496x = Integer.MIN_VALUE;
-            this.f2497y = Integer.MIN_VALUE;
-            this.f2498z = Integer.MIN_VALUE;
+            this.f2419a = -1;
+            this.f2421b = -1;
+            this.f2423c = -1.0f;
+            this.f2425d = true;
+            this.f2427e = -1;
+            this.f2429f = -1;
+            this.f2431g = -1;
+            this.f2433h = -1;
+            this.f2435i = -1;
+            this.f2437j = -1;
+            this.f2439k = -1;
+            this.f2441l = -1;
+            this.f2443m = -1;
+            this.f2445n = -1;
+            this.f2447o = -1;
+            this.f2449p = -1;
+            this.f2451q = 0;
+            this.f2453r = 0.0f;
+            this.f2455s = -1;
+            this.f2457t = -1;
+            this.f2459u = -1;
+            this.f2461v = -1;
+            this.f2463w = Integer.MIN_VALUE;
+            this.f2465x = Integer.MIN_VALUE;
+            this.f2466y = Integer.MIN_VALUE;
+            this.f2467z = Integer.MIN_VALUE;
             this.A = Integer.MIN_VALUE;
             this.B = Integer.MIN_VALUE;
             this.C = Integer.MIN_VALUE;
@@ -1892,26 +1892,26 @@ public class ConstraintLayout extends ViewGroup {
             this.X = -1;
             this.Y = -1;
             this.Z = -1;
-            this.f2451a0 = false;
-            this.f2453b0 = false;
-            this.f2455c0 = null;
-            this.f2457d0 = 0;
-            this.f2459e0 = true;
-            this.f2461f0 = true;
-            this.f2463g0 = false;
-            this.f2465h0 = false;
-            this.f2467i0 = false;
-            this.f2469j0 = false;
-            this.f2471k0 = false;
-            this.f2473l0 = -1;
-            this.f2475m0 = -1;
-            this.f2477n0 = -1;
-            this.f2479o0 = -1;
-            this.f2481p0 = Integer.MIN_VALUE;
-            this.f2483q0 = Integer.MIN_VALUE;
-            this.f2485r0 = 0.5f;
-            this.f2493v0 = new ConstraintWidget();
-            this.f2495w0 = false;
+            this.f2420a0 = false;
+            this.f2422b0 = false;
+            this.f2424c0 = null;
+            this.f2426d0 = 0;
+            this.f2428e0 = true;
+            this.f2430f0 = true;
+            this.f2432g0 = false;
+            this.f2434h0 = false;
+            this.f2436i0 = false;
+            this.f2438j0 = false;
+            this.f2440k0 = false;
+            this.f2442l0 = -1;
+            this.f2444m0 = -1;
+            this.f2446n0 = -1;
+            this.f2448o0 = -1;
+            this.f2450p0 = Integer.MIN_VALUE;
+            this.f2452q0 = Integer.MIN_VALUE;
+            this.f2454r0 = 0.5f;
+            this.f2462v0 = new ConstraintWidget();
+            this.f2464w0 = false;
         }
     }
 }

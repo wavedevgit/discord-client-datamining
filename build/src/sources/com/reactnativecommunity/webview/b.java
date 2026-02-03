@@ -11,10 +11,10 @@ import com.reactnativecommunity.webview.RNCWebViewManager;
 public class b extends FrameLayout {
 
     /* renamed from: d  reason: collision with root package name */
-    public int f18137d;
+    public int f17105d;
 
     /* renamed from: e  reason: collision with root package name */
-    private RNCWebViewManager.g f18138e;
+    private RNCWebViewManager.g f17106e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements ViewGroup.OnHierarchyChangeListener {
@@ -36,13 +36,13 @@ public class b extends FrameLayout {
 
     /* renamed from: com.reactnativecommunity.webview.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public interface InterfaceC0215b {
+    public interface InterfaceC0196b {
         void a(RNCWebViewManager.g gVar);
     }
 
     public b(ThemedReactContext themedReactContext) {
         super(themedReactContext);
-        this.f18137d = 0;
+        this.f17105d = 0;
         setOnHierarchyChangeListener(new a());
     }
 
@@ -55,7 +55,7 @@ public class b extends FrameLayout {
             }
             return view.getId();
         }
-        Integer num = (Integer) a1.f18134a.b().get(Integer.valueOf(webView.getId()));
+        Integer num = (Integer) a1.f17102a.b().get(Integer.valueOf(webView.getId()));
         if (num == null) {
             return -1;
         }
@@ -63,42 +63,42 @@ public class b extends FrameLayout {
     }
 
     public void a(RNCWebViewManager.g gVar) {
-        this.f18138e = gVar;
+        this.f17106e = gVar;
         if (gVar.getParent() == null) {
             addView(gVar, new FrameLayout.LayoutParams(-1, -1));
             return;
         }
-        throw new IllegalArgumentException("WebView with key: " + gVar.f18094q + " parent is non null. Cannot re-attach webview.");
+        throw new IllegalArgumentException("WebView with key: " + gVar.f17062q + " parent is non null. Cannot re-attach webview.");
     }
 
     public RNCWebViewManager.g b() {
-        if (this.f18138e != null) {
+        if (this.f17106e != null) {
             e();
-            RNCWebViewManager.g gVar = this.f18138e;
-            this.f18138e = null;
+            RNCWebViewManager.g gVar = this.f17106e;
+            this.f17106e = null;
             return gVar;
         }
         throw new IllegalStateException("Webview is null");
     }
 
-    public void d(InterfaceC0215b interfaceC0215b) {
-        RNCWebViewManager.g gVar = this.f18138e;
+    public void d(InterfaceC0196b interfaceC0196b) {
+        RNCWebViewManager.g gVar = this.f17106e;
         if (gVar != null) {
-            interfaceC0215b.a(gVar);
+            interfaceC0196b.a(gVar);
         } else {
             p8.a.p("RNCWebViewContainer", new Throwable(), "Internal WebView is null", new Object[0]);
         }
     }
 
     public void e() {
-        RNCWebViewManager.g gVar = this.f18138e;
+        RNCWebViewManager.g gVar = this.f17106e;
         if (gVar != null) {
             endViewTransition(gVar);
-            removeView(this.f18138e);
+            removeView(this.f17106e);
         }
     }
 
     public RNCWebViewManager.g getWebView() {
-        return this.f18138e;
+        return this.f17106e;
     }
 }

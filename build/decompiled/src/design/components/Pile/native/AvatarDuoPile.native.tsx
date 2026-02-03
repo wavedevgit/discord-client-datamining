@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Pile/native/AvatarDuoPile.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun88281: for (var _fun88281_ip = 0;;) switch (_fun88281_ip) {
+        _fun88373: for (var _fun88373_ip = 0;;) switch (_fun88373_ip) {
             case 0:
                 var2 = arg0;
                 var8 = var2.size;
@@ -64,8 +64,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = 'aria-label';
                 var6 = var6 in var7;
                 if (var6) {
-                    _fun88281_ip = 138;
-                    continue _fun88281
+                    _fun88373_ip = 138;
+                    continue _fun88373
                 }
             case 100:
                 var9 = _closure1_slot0;
@@ -76,8 +76,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var10.getListSummaryLabel;
                 var6 = var7.names;
                 var6 = var9.bind(var10)(var6);
-                _fun88281_ip = 144;
-                continue _fun88281;
+                _fun88373_ip = 144;
+                continue _fun88373;
             case 138:
                 var6 = var7["aria-label"];
             case 144:
@@ -96,8 +96,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var7.isArray;
                 var6 = var6.bind(var7)(var8);
                 if (var6) {
-                    _fun88281_ip = 245;
-                    continue _fun88281
+                    _fun88373_ip = 245;
+                    continue _fun88373
                 }
             case 213:
                 var6 = _closure1_slot0;
@@ -107,8 +107,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6.bind(var2)(var5);
                 var5 = var5.AVATAR_SIZE_MAP;
                 var5 = var5[var8];
-                _fun88281_ip = 264;
-                continue _fun88281;
+                _fun88373_ip = 264;
+                continue _fun88373;
             case 245:
                 var7 = var8.map;
                 var6 = function(arg0) { // Environment: var6
@@ -133,4 +133,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.AvatarDuoPile = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 7801, 7803, 5452, 22, 5449, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 7806, 7808, 5457, 22, 5454, 2]);

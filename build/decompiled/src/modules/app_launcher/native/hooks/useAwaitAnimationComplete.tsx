@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.AwaitAnimationContext = var3;
     var1 = function() {
-        _fun108024: for (var _fun108024_ip = 0;;) switch (_fun108024_ip) {
+        _fun108084: for (var _fun108084_ip = 0;;) switch (_fun108084_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = var2.useContext;
@@ -69,13 +69,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var2)(var0);
                 var1 = null;
                 if (!(var1 != var0)) {
-                    _fun108024_ip = 36;
-                    continue _fun108024
+                    _fun108084_ip = 36;
+                    continue _fun108084
                 }
             case 28:
                 var0 = var0.handleQueuedCallback;
-                _fun108024_ip = 45;
-                continue _fun108024;
+                _fun108084_ip = 45;
+                continue _fun108084;
             case 36:
                 var0 = function(arg0) { // Environment: var1
                     var1 = arg0;

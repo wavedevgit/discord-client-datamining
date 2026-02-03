@@ -12,15 +12,15 @@ import kotlin.jvm.internal.Intrinsics;
 public class q0 extends p0 {
     public static Map b(Map builder) {
         Intrinsics.checkNotNullParameter(builder, "builder");
-        return ((kr.d) builder).k();
+        return ((mr.d) builder).k();
     }
 
     public static Map c() {
-        return new kr.d();
+        return new mr.d();
     }
 
     public static Map d(int i10) {
-        return new kr.d(i10);
+        return new mr.d(i10);
     }
 
     public static int e(int i10) {

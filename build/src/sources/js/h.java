@@ -1,113 +1,46 @@
 package js;
 
-import hs.y0;
-import java.util.concurrent.CancellationException;
-import kotlin.coroutines.Continuation;
 import kotlin.coroutines.CoroutineContext;
-import kotlin.jvm.functions.Function1;
-import kotlinx.coroutines.b0;
+import kotlin.jvm.functions.Function2;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class h extends kotlinx.coroutines.a implements g {
-
-    /* renamed from: o  reason: collision with root package name */
-    private final g f32267o;
-
-    public h(CoroutineContext coroutineContext, g gVar, boolean z10, boolean z11) {
-        super(coroutineContext, z10, z11);
-        this.f32267o = gVar;
-    }
-
-    @Override // kotlinx.coroutines.b0
-    public void I(Throwable th2) {
-        CancellationException F0 = b0.F0(this, th2, null, 1, null);
-        this.f32267o.h(F0);
-        G(F0);
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final g X0() {
-        return this.f32267o;
-    }
-
-    @Override // js.w
-    public void b(Function1 function1) {
-        this.f32267o.b(function1);
-    }
-
-    @Override // js.w
-    public Object d(Object obj) {
-        return this.f32267o.d(obj);
-    }
-
-    @Override // kotlinx.coroutines.b0, kotlinx.coroutines.Job, js.v
-    public final void h(CancellationException cancellationException) {
-        if (isCancelled()) {
-            return;
+public abstract /* synthetic */ class h {
+    public static final Object a(CoroutineContext coroutineContext, Function2 function2) {
+        p0 p0Var;
+        p0 a10;
+        CoroutineContext k10;
+        Thread currentThread = Thread.currentThread();
+        kotlin.coroutines.d dVar = (kotlin.coroutines.d) coroutineContext.l(kotlin.coroutines.d.f32536g);
+        if (dVar == null) {
+            a10 = l1.f31964a.b();
+            k10 = x.k(v0.f31994d, coroutineContext.V0(a10));
+        } else {
+            p0 p0Var2 = null;
+            if (dVar instanceof p0) {
+                p0Var = (p0) dVar;
+            } else {
+                p0Var = null;
+            }
+            if (p0Var != null) {
+                if (p0Var.v2()) {
+                    p0Var2 = p0Var;
+                }
+                if (p0Var2 != null) {
+                    a10 = p0Var2;
+                    k10 = x.k(v0.f31994d, coroutineContext);
+                }
+            }
+            a10 = l1.f31964a.a();
+            k10 = x.k(v0.f31994d, coroutineContext);
         }
-        if (cancellationException == null) {
-            cancellationException = new y0(M(), null, this);
+        e eVar = new e(k10, currentThread, a10);
+        eVar.U0(c0.f31947d, eVar, function2);
+        return eVar.W0();
+    }
+
+    public static /* synthetic */ Object b(CoroutineContext coroutineContext, Function2 function2, int i10, Object obj) {
+        if ((i10 & 1) != 0) {
+            coroutineContext = kotlin.coroutines.e.f32538d;
         }
-        I(cancellationException);
-    }
-
-    @Override // js.v
-    public boolean i() {
-        return this.f32267o.i();
-    }
-
-    @Override // js.v
-    public i iterator() {
-        return this.f32267o.iterator();
-    }
-
-    @Override // js.v
-    public ps.h j() {
-        return this.f32267o.j();
-    }
-
-    @Override // js.v
-    public ps.h k() {
-        return this.f32267o.k();
-    }
-
-    @Override // js.v
-    public Object m() {
-        return this.f32267o.m();
-    }
-
-    @Override // js.v
-    public Object o(Continuation continuation) {
-        Object o10 = this.f32267o.o(continuation);
-        pr.b.f();
-        return o10;
-    }
-
-    @Override // js.w
-    public boolean offer(Object obj) {
-        return this.f32267o.offer(obj);
-    }
-
-    @Override // js.v
-    public Object r(Continuation continuation) {
-        return this.f32267o.r(continuation);
-    }
-
-    @Override // js.w
-    public boolean s(Throwable th2) {
-        return this.f32267o.s(th2);
-    }
-
-    @Override // js.w
-    public Object u(Object obj, Continuation continuation) {
-        return this.f32267o.u(obj, continuation);
-    }
-
-    @Override // js.w
-    public boolean v() {
-        return this.f32267o.v();
-    }
-
-    public final g W0() {
-        return this;
+        return g.e(coroutineContext, function2);
     }
 }

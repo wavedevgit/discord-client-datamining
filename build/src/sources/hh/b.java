@@ -8,49 +8,49 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final View f27717a;
+    private final View f27002a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f27718b = false;
+    private boolean f27003b = false;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f27719c = 0;
+    private int f27004c = 0;
 
     public b(a aVar) {
-        this.f27717a = (View) aVar;
+        this.f27002a = (View) aVar;
     }
 
     private void a() {
-        ViewParent parent = this.f27717a.getParent();
+        ViewParent parent = this.f27002a.getParent();
         if (parent instanceof CoordinatorLayout) {
-            ((CoordinatorLayout) parent).g(this.f27717a);
+            ((CoordinatorLayout) parent).g(this.f27002a);
         }
     }
 
     public int b() {
-        return this.f27719c;
+        return this.f27004c;
     }
 
     public boolean c() {
-        return this.f27718b;
+        return this.f27003b;
     }
 
     public void d(Bundle bundle) {
-        this.f27718b = bundle.getBoolean("expanded", false);
-        this.f27719c = bundle.getInt("expandedComponentIdHint", 0);
-        if (this.f27718b) {
+        this.f27003b = bundle.getBoolean("expanded", false);
+        this.f27004c = bundle.getInt("expandedComponentIdHint", 0);
+        if (this.f27003b) {
             a();
         }
     }
 
     public Bundle e() {
         Bundle bundle = new Bundle();
-        bundle.putBoolean("expanded", this.f27718b);
-        bundle.putInt("expandedComponentIdHint", this.f27719c);
+        bundle.putBoolean("expanded", this.f27003b);
+        bundle.putInt("expandedComponentIdHint", this.f27004c);
         return bundle;
     }
 
     public void f(int i10) {
-        this.f27719c = i10;
+        this.f27004c = i10;
     }
 }

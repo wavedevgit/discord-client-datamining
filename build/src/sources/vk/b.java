@@ -5,29 +5,29 @@ import java.util.List;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final gk.b f51307a;
+    private final gk.b f51635a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f51308b;
+    private final List f51636b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f51309c;
+    private final int f51637c;
 
     public b(gk.b bVar, List list, int i10) {
-        this.f51307a = bVar;
-        this.f51308b = list;
-        this.f51309c = i10;
+        this.f51635a = bVar;
+        this.f51636b = list;
+        this.f51637c = i10;
     }
 
     public gk.b a() {
-        return this.f51307a;
+        return this.f51635a;
     }
 
     public List b() {
-        return this.f51308b;
+        return this.f51636b;
     }
 
     public int c() {
-        return this.f51309c;
+        return this.f51637c;
     }
 }

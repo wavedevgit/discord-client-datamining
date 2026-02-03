@@ -30,30 +30,30 @@ import java.util.Map;
 public final class r0 implements io.sentry.c {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Context f28805d;
+    private final Context f29166d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final SentryAndroidOptions f28806e;
+    private final SentryAndroidOptions f29167e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final x0 f28807i;
+    private final x0 f29168i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final n6 f28808o;
+    private final n6 f29169o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final io.sentry.cache.u f28809p;
+    private final io.sentry.cache.u f29170p;
 
     public r0(Context context, SentryAndroidOptions sentryAndroidOptions, x0 x0Var) {
-        this.f28805d = e1.g(context);
-        this.f28806e = sentryAndroidOptions;
-        this.f28807i = x0Var;
-        this.f28809p = sentryAndroidOptions.findPersistingScopeObserver();
-        this.f28808o = new n6(new o7(sentryAndroidOptions));
+        this.f29166d = e1.g(context);
+        this.f29167e = sentryAndroidOptions;
+        this.f29168i = x0Var;
+        this.f29170p = sentryAndroidOptions.findPersistingScopeObserver();
+        this.f29169o = new n6(new o7(sentryAndroidOptions));
     }
 
     private void A(e5 e5Var) {
-        Map map = (Map) io.sentry.cache.h.b(this.f28806e, "tags.json", Map.class);
+        Map map = (Map) io.sentry.cache.h.b(this.f29167e, "tags.json", Map.class);
         if (map != null) {
             if (e5Var.N() == null) {
                 e5Var.g0(new HashMap(map));
@@ -75,15 +75,15 @@ public final class r0 implements io.sentry.c {
 
     private void C(e5 e5Var) {
         if (e5Var.J() == null) {
-            e5Var.b0((String) io.sentry.cache.h.b(this.f28806e, "release.json", String.class));
+            e5Var.b0((String) io.sentry.cache.h.b(this.f29167e, "release.json", String.class));
         }
     }
 
     private void D(SentryEvent sentryEvent) {
-        String str = (String) n(this.f28806e, "replay.json", String.class);
-        if (!new File(this.f28806e.getCacheDirPath(), "replay_" + str).exists()) {
+        String str = (String) n(this.f29167e, "replay.json", String.class);
+        if (!new File(this.f29167e.getCacheDirPath(), "replay_" + str).exists()) {
             if (o(sentryEvent)) {
-                File[] listFiles = new File(this.f28806e.getCacheDirPath()).listFiles();
+                File[] listFiles = new File(this.f29167e.getCacheDirPath()).listFiles();
                 String str2 = null;
                 if (listFiles != null) {
                     long j10 = Long.MIN_VALUE;
@@ -102,18 +102,18 @@ public final class r0 implements io.sentry.c {
         if (str == null) {
             return;
         }
-        io.sentry.cache.u.G(this.f28806e, str, "replay.json");
+        io.sentry.cache.u.G(this.f29167e, str, "replay.json");
         sentryEvent.C().l("replay_id", str);
     }
 
     private void E(e5 e5Var) {
         if (e5Var.K() == null) {
-            e5Var.c0((io.sentry.protocol.o) n(this.f28806e, "request.json", io.sentry.protocol.o.class));
+            e5Var.c0((io.sentry.protocol.o) n(this.f29167e, "request.json", io.sentry.protocol.o.class));
         }
     }
 
     private void F(e5 e5Var) {
-        Map map = (Map) n(this.f28806e, "tags.json", Map.class);
+        Map map = (Map) n(this.f29167e, "tags.json", Map.class);
         if (map != null) {
             if (e5Var.N() == null) {
                 e5Var.g0(new HashMap(map));
@@ -129,20 +129,20 @@ public final class r0 implements io.sentry.c {
 
     private void G(e5 e5Var) {
         if (e5Var.L() == null) {
-            e5Var.d0((io.sentry.protocol.r) io.sentry.cache.h.b(this.f28806e, "sdk-version.json", io.sentry.protocol.r.class));
+            e5Var.d0((io.sentry.protocol.r) io.sentry.cache.h.b(this.f29167e, "sdk-version.json", io.sentry.protocol.r.class));
         }
     }
 
     private void H(e5 e5Var) {
         try {
-            e1.a n10 = m1.k(this.f28805d, this.f28806e).n();
+            e1.a n10 = m1.k(this.f29166d, this.f29167e).n();
             if (n10 != null) {
                 for (Map.Entry entry : n10.a().entrySet()) {
                     e5Var.f0((String) entry.getKey(), (String) entry.getValue());
                 }
             }
         } catch (Throwable th2) {
-            this.f28806e.getLogger().b(SentryLevel.ERROR, "Error getting side loaded info.", th2);
+            this.f29167e.getLogger().b(SentryLevel.ERROR, "Error getting side loaded info.", th2);
         }
     }
 
@@ -152,14 +152,14 @@ public final class r0 implements io.sentry.c {
     }
 
     private void J(SentryEvent sentryEvent) {
-        e8 e8Var = (e8) n(this.f28806e, "trace.json", e8.class);
+        e8 e8Var = (e8) n(this.f29167e, "trace.json", e8.class);
         if (sentryEvent.C().j() == null && e8Var != null && e8Var.m() != null && e8Var.p() != null) {
             sentryEvent.C().z(e8Var);
         }
     }
 
     private void K(SentryEvent sentryEvent) {
-        String str = (String) n(this.f28806e, "transaction.json", String.class);
+        String str = (String) n(this.f29167e, "transaction.json", String.class);
         if (sentryEvent.y0() == null) {
             sentryEvent.J0(str);
         }
@@ -167,7 +167,7 @@ public final class r0 implements io.sentry.c {
 
     private void L(e5 e5Var) {
         if (e5Var.Q() == null) {
-            e5Var.h0((io.sentry.protocol.h0) n(this.f28806e, "user.json", io.sentry.protocol.h0.class));
+            e5Var.h0((io.sentry.protocol.h0) n(this.f29167e, "user.json", io.sentry.protocol.h0.class));
         }
     }
 
@@ -214,16 +214,16 @@ public final class r0 implements io.sentry.c {
         io.sentry.protocol.e eVar = new io.sentry.protocol.e();
         eVar.b0(Build.MANUFACTURER);
         eVar.P(Build.BRAND);
-        eVar.V(e1.l(this.f28806e.getLogger()));
+        eVar.V(e1.l(this.f29167e.getLogger()));
         eVar.d0(Build.MODEL);
         eVar.e0(Build.ID);
         eVar.L(e1.j());
-        ActivityManager.MemoryInfo n10 = e1.n(this.f28805d, this.f28806e.getLogger());
+        ActivityManager.MemoryInfo n10 = e1.n(this.f29166d, this.f29167e.getLogger());
         if (n10 != null) {
             eVar.c0(i(n10));
         }
-        eVar.n0(this.f28807i.f());
-        DisplayMetrics k10 = e1.k(this.f28805d, this.f28806e.getLogger());
+        eVar.n0(this.f29168i.f());
+        DisplayMetrics k10 = e1.k(this.f29166d, this.f29167e.getLogger());
         if (k10 != null) {
             eVar.m0(Integer.valueOf(k10.widthPixels));
             eVar.l0(Integer.valueOf(k10.heightPixels));
@@ -243,16 +243,16 @@ public final class r0 implements io.sentry.c {
 
     private String g() {
         try {
-            return (String) this.f28806e.getRuntimeManager().a(new a.InterfaceC0408a() { // from class: io.sentry.android.core.q0
-                @Override // io.sentry.util.runtime.a.InterfaceC0408a
+            return (String) this.f29167e.getRuntimeManager().a(new a.InterfaceC0407a() { // from class: io.sentry.android.core.q0
+                @Override // io.sentry.util.runtime.a.InterfaceC0407a
                 public final Object run() {
                     String a10;
-                    a10 = r1.a(r0.this.f28805d);
+                    a10 = r1.a(r0.this.f29166d);
                     return a10;
                 }
             });
         } catch (Throwable th2) {
-            this.f28806e.getLogger().b(SentryLevel.ERROR, "Error getting installationId.", th2);
+            this.f29167e.getLogger().b(SentryLevel.ERROR, "Error getting installationId.", th2);
             return null;
         }
     }
@@ -271,7 +271,7 @@ public final class r0 implements io.sentry.c {
     private void k(e5 e5Var) {
         String str;
         io.sentry.protocol.n h10 = e5Var.C().h();
-        e5Var.C().u(m1.k(this.f28805d, this.f28806e).l());
+        e5Var.C().u(m1.k(this.f29166d, this.f29167e).l());
         if (h10 != null) {
             String g10 = h10.g();
             if (g10 != null && !g10.isEmpty()) {
@@ -292,13 +292,13 @@ public final class r0 implements io.sentry.c {
         if (Q.i() == null) {
             Q.o(g());
         }
-        if (Q.j() == null && this.f28806e.isSendDefaultPii()) {
+        if (Q.j() == null && this.f29167e.isSendDefaultPii()) {
             Q.p("{{auto}}");
         }
     }
 
     private Object n(k7 k7Var, String str, Class cls) {
-        io.sentry.cache.u uVar = this.f28809p;
+        io.sentry.cache.u uVar = this.f29170p;
         if (uVar == null) {
             return null;
         }
@@ -306,18 +306,18 @@ public final class r0 implements io.sentry.c {
     }
 
     private boolean o(SentryEvent sentryEvent) {
-        String str = (String) io.sentry.cache.h.b(this.f28806e, "replay-error-sample-rate.json", String.class);
+        String str = (String) io.sentry.cache.h.b(this.f29167e, "replay-error-sample-rate.json", String.class);
         if (str == null) {
             return false;
         }
         try {
             if (Double.parseDouble(str) < io.sentry.util.d0.a().c()) {
-                this.f28806e.getLogger().c(SentryLevel.DEBUG, "Not capturing replay for ANR %s due to not being sampled.", sentryEvent.G());
+                this.f29167e.getLogger().c(SentryLevel.DEBUG, "Not capturing replay for ANR %s due to not being sampled.", sentryEvent.G());
                 return false;
             }
             return true;
         } catch (Throwable th2) {
-            this.f28806e.getLogger().b(SentryLevel.ERROR, "Error parsing replay sample rate.", th2);
+            this.f29167e.getLogger().b(SentryLevel.ERROR, "Error parsing replay sample rate.", th2);
             return false;
         }
     }
@@ -328,16 +328,16 @@ public final class r0 implements io.sentry.c {
         if (d10 == null) {
             d10 = new io.sentry.protocol.a();
         }
-        d10.o(e1.i(this.f28805d));
+        d10.o(e1.i(this.f29166d));
         d10.r(Boolean.valueOf(!j(obj)));
-        PackageInfo p10 = e1.p(this.f28805d, this.f28807i);
+        PackageInfo p10 = e1.p(this.f29166d, this.f29168i);
         if (p10 != null) {
             d10.n(p10.packageName);
         }
         if (e5Var.J() != null) {
             str = e5Var.J();
         } else {
-            str = (String) io.sentry.cache.h.b(this.f28806e, "release.json", String.class);
+            str = (String) io.sentry.cache.h.b(this.f29167e, "release.json", String.class);
         }
         if (str != null) {
             try {
@@ -346,11 +346,11 @@ public final class r0 implements io.sentry.c {
                 d10.q(substring);
                 d10.m(substring2);
             } catch (Throwable unused) {
-                this.f28806e.getLogger().c(SentryLevel.WARNING, "Failed to parse release from scope cache: %s", str);
+                this.f29167e.getLogger().c(SentryLevel.WARNING, "Failed to parse release from scope cache: %s", str);
             }
         }
         try {
-            e1.b o10 = m1.k(this.f28805d, this.f28806e).o();
+            e1.b o10 = m1.k(this.f29166d, this.f29167e).o();
             if (o10 != null) {
                 d10.t(Boolean.valueOf(o10.b()));
                 if (o10.a() != null) {
@@ -358,13 +358,13 @@ public final class r0 implements io.sentry.c {
                 }
             }
         } catch (Throwable th2) {
-            this.f28806e.getLogger().b(SentryLevel.ERROR, "Error getting split apks info.", th2);
+            this.f29167e.getLogger().b(SentryLevel.ERROR, "Error getting split apks info.", th2);
         }
         e5Var.C().o(d10);
     }
 
     private void q(e5 e5Var) {
-        List list = (List) n(this.f28806e, "breadcrumbs.json", List.class);
+        List list = (List) n(this.f29167e, "breadcrumbs.json", List.class);
         if (list == null) {
             return;
         }
@@ -376,7 +376,7 @@ public final class r0 implements io.sentry.c {
     }
 
     private void r(e5 e5Var) {
-        io.sentry.protocol.c cVar = (io.sentry.protocol.c) n(this.f28806e, "contexts.json", io.sentry.protocol.c.class);
+        io.sentry.protocol.c cVar = (io.sentry.protocol.c) n(this.f29167e, "contexts.json", io.sentry.protocol.c.class);
         if (cVar != null) {
             io.sentry.protocol.c C = e5Var.C();
             for (Map.Entry entry : new io.sentry.protocol.c(cVar).b()) {
@@ -400,7 +400,7 @@ public final class r0 implements io.sentry.c {
         }
         List d10 = D.d();
         if (d10 != null) {
-            String str = (String) io.sentry.cache.h.b(this.f28806e, "proguard-uuid.json", String.class);
+            String str = (String) io.sentry.cache.h.b(this.f29167e, "proguard-uuid.json", String.class);
             if (str != null) {
                 DebugImage debugImage = new DebugImage();
                 debugImage.setType(DebugImage.PROGUARD);
@@ -420,22 +420,22 @@ public final class r0 implements io.sentry.c {
     private void u(e5 e5Var) {
         String str;
         if (e5Var.E() == null) {
-            e5Var.V((String) io.sentry.cache.h.b(this.f28806e, "dist.json", String.class));
+            e5Var.V((String) io.sentry.cache.h.b(this.f29167e, "dist.json", String.class));
         }
-        if (e5Var.E() == null && (str = (String) io.sentry.cache.h.b(this.f28806e, "release.json", String.class)) != null) {
+        if (e5Var.E() == null && (str = (String) io.sentry.cache.h.b(this.f29167e, "release.json", String.class)) != null) {
             try {
                 e5Var.V(str.substring(str.indexOf(43) + 1));
             } catch (Throwable unused) {
-                this.f28806e.getLogger().c(SentryLevel.WARNING, "Failed to parse release from scope cache: %s", str);
+                this.f29167e.getLogger().c(SentryLevel.WARNING, "Failed to parse release from scope cache: %s", str);
             }
         }
     }
 
     private void v(e5 e5Var) {
         if (e5Var.F() == null) {
-            String str = (String) io.sentry.cache.h.b(this.f28806e, "environment.json", String.class);
+            String str = (String) io.sentry.cache.h.b(this.f29167e, "environment.json", String.class);
             if (str == null) {
-                str = this.f28806e.getEnvironment();
+                str = this.f29167e.getEnvironment();
             }
             e5Var.W(str);
         }
@@ -458,11 +458,11 @@ public final class r0 implements io.sentry.c {
             e10 = new io.sentry.protocol.c0();
             e10.y(new io.sentry.protocol.b0());
         }
-        sentryEvent.C0(this.f28808o.f(e10, lVar, applicationNotResponding));
+        sentryEvent.C0(this.f29169o.f(e10, lVar, applicationNotResponding));
     }
 
     private void x(e5 e5Var) {
-        Map map = (Map) n(this.f28806e, "extras.json", Map.class);
+        Map map = (Map) n(this.f29167e, "extras.json", Map.class);
         if (map != null) {
             if (e5Var.H() == null) {
                 e5Var.Z(new HashMap(map));
@@ -478,7 +478,7 @@ public final class r0 implements io.sentry.c {
 
     private void y(SentryEvent sentryEvent, Object obj) {
         String str;
-        List list = (List) n(this.f28806e, "fingerprint.json", List.class);
+        List list = (List) n(this.f29167e, "fingerprint.json", List.class);
         if (sentryEvent.s0() == null) {
             sentryEvent.D0(list);
         }
@@ -494,7 +494,7 @@ public final class r0 implements io.sentry.c {
     }
 
     private void z(SentryEvent sentryEvent) {
-        SentryLevel sentryLevel = (SentryLevel) n(this.f28806e, "level.json", SentryLevel.class);
+        SentryLevel sentryLevel = (SentryLevel) n(this.f29167e, "level.json", SentryLevel.class);
         if (sentryEvent.t0() == null) {
             sentryEvent.E0(sentryLevel);
         }
@@ -504,7 +504,7 @@ public final class r0 implements io.sentry.c {
     public SentryEvent h(SentryEvent sentryEvent, Hint hint) {
         Object g10 = io.sentry.util.n.g(hint);
         if (!(g10 instanceof io.sentry.hints.c)) {
-            this.f28806e.getLogger().c(SentryLevel.WARNING, "The event is not Backfillable, but has been passed to BackfillingEventProcessor, skipping.", new Object[0]);
+            this.f29167e.getLogger().c(SentryLevel.WARNING, "The event is not Backfillable, but has been passed to BackfillingEventProcessor, skipping.", new Object[0]);
             return sentryEvent;
         }
         w(sentryEvent, g10);
@@ -512,7 +512,7 @@ public final class r0 implements io.sentry.c {
         k(sentryEvent);
         t(sentryEvent);
         if (!((io.sentry.hints.c) g10).a()) {
-            this.f28806e.getLogger().c(SentryLevel.DEBUG, "The event is Backfillable, but should not be enriched, skipping.", new Object[0]);
+            this.f29167e.getLogger().c(SentryLevel.DEBUG, "The event is Backfillable, but should not be enriched, skipping.", new Object[0]);
             return sentryEvent;
         }
         d(sentryEvent, g10);

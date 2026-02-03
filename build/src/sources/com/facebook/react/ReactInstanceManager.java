@@ -270,7 +270,7 @@ public class ReactInstanceManager {
         this.mTMMDelegateBuilder = builder;
         synchronized (arrayList) {
             try {
-                a9.c.a().c(b9.a.f6314d, "RNCore: Use Split Packages");
+                a9.c.a().c(b9.a.f6360d, "RNCore: Use Split Packages");
                 arrayList.add(new CoreModulesPackage(this, new DefaultHardwareBackBtnHandler() { // from class: com.facebook.react.ReactInstanceManager.1
                     @Override // com.facebook.react.modules.core.DefaultHardwareBackBtnHandler
                     public void invokeDefaultOnBackPressed() {
@@ -715,13 +715,13 @@ public class ReactInstanceManager {
     /* JADX INFO: Access modifiers changed from: private */
     public void recreateReactContextInBackgroundFromBundleLoader() {
         p8.a.b(TAG, "ReactInstanceManager.recreateReactContextInBackgroundFromBundleLoader()");
-        a9.c.a().c(b9.a.f6314d, "RNCore: load from BundleLoader");
+        a9.c.a().c(b9.a.f6360d, "RNCore: load from BundleLoader");
         recreateReactContextInBackground(this.mJavaScriptExecutorFactory, this.mBundleLoader);
     }
 
     private void recreateReactContextInBackgroundInner() {
         p8.a.b(TAG, "ReactInstanceManager.recreateReactContextInBackgroundInner()");
-        a9.c.a().c(b9.a.f6314d, "RNCore: recreateReactContextInBackground");
+        a9.c.a().c(b9.a.f6360d, "RNCore: recreateReactContextInBackground");
         UiThreadUtil.assertOnUiThread();
         if (this.mUseDeveloperSupport && this.mJSMainModulePath != null) {
             this.mDevSupportManager.getDevSettings();
@@ -912,7 +912,7 @@ public class ReactInstanceManager {
     public void destroy() {
         ReactInstanceManagerInspectorTarget reactInstanceManagerInspectorTarget;
         UiThreadUtil.assertOnUiThread();
-        a9.c.a().c(b9.a.f6314d, "RNCore: Destroy");
+        a9.c.a().c(b9.a.f6360d, "RNCore: Destroy");
         logOnDestroy();
         if (this.mHasStartedDestroying.booleanValue()) {
             p8.a.m(ReactConstants.TAG, "ReactInstanceManager.destroy called: bail out, already destroying");

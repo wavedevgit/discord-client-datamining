@@ -272,14 +272,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = var6;
         var6 = copyDataProperties(var8, var7);
         var6 = function arg0() {
-            _fun114038: for (var _fun114038_ip = 0;;) switch (_fun114038_ip) {
+            _fun114099: for (var _fun114099_ip = 0;;) switch (_fun114099_ip) {
                 case 0:
                     var1 = _closure2_slot0;
                     var2 = var1.onClick;
                     var1 = null;
                     if (!(var1 != var2)) {
-                        _fun114038_ip = 37;
-                        continue _fun114038
+                        _fun114099_ip = 37;
+                        continue _fun114099
                     }
                 case 19:
                     var2 = _closure2_slot0;

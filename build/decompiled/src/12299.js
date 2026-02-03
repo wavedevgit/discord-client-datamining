@@ -1,152 +1,193 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
-    var1 = function arg0, arg1() {
-        _fun94016: for (var _fun94016_ip = 0;;) switch (_fun94016_ip) {
-            case 0:
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var3 = 0;
-                var0 = var1[var3];
-                var6 = undefined;
-                var7 = var2.bind(var6)(var0);
-                var4 = arg0;
-                var0 = null;
-                var5 = true;
-                var4 = var7.bind(var6)(var4, var0, var5);
-                var1 = var1[var3];
-                var2 = var2.bind(var6)(var1);
-                var1 = arg1;
-                var2 = var2.bind(var6)(var1, var0, var5);
-                var1 = var4.compare;
-                var1 = var1.bind(var4)(var2);
-                if (!(var3 !== var1)) {
-                    _fun94016_ip = 281;
-                    continue _fun94016
-                }
-            case 75:
-                var5 = var1 > var3;
-                var3 = var2;
-                if (!var5) {
-                    _fun94016_ip = 88;
-                    continue _fun94016
-                }
-            case 85:
-                var3 = var4;
-            case 88:
-                var1 = var4;
-                if (!var5) {
-                    _fun94016_ip = 97;
-                    continue _fun94016
-                }
-            case 94:
-                var1 = var2;
-            case 97:
-                var5 = var3.prerelease;
-                var5 = var5.length;
-                var6 = !var5;
-                var5 = var1.prerelease;
-                var5 = var5.length;
-                if (!var5) {
-                    _fun94016_ip = 128;
-                    continue _fun94016
-                }
-            case 125:
-                if (var6) {
-                    _fun94016_ip = 221;
-                    continue _fun94016
-                }
-            case 128:
-                var5 = '';
-                if (var6) {
-                    _fun94016_ip = 139;
-                    continue _fun94016
-                }
-            case 135:
-                var5 = 'pre';
-            case 139:
-                var7 = var4.major;
-                var6 = var2.major;
-                if (!(var7 === var6)) {
-                    _fun94016_ip = 211;
-                    continue _fun94016
-                }
-            case 155:
-                var7 = var4.minor;
-                var6 = var2.minor;
-                if (!(var7 === var6)) {
-                    _fun94016_ip = 201;
-                    continue _fun94016
-                }
-            case 171:
-                var6 = var4.patch;
-                var4 = var2.patch;
-                var2 = 'prerelease';
-                if (!(var6 !== var4)) {
-                    _fun94016_ip = 199;
-                    continue _fun94016
-                }
-            case 191:
-                var4 = 'patch';
-                var2 = var5 + var4;
-            case 199:
-                _fun94016_ip = 209;
-                continue _fun94016;
-            case 201:
-                var4 = 'minor';
-                var2 = var5 + var4;
-            case 209:
-                _fun94016_ip = 219;
-                continue _fun94016;
-            case 211:
-                var4 = 'major';
-                var2 = var5 + var4;
-            case 219:
-                return var2;
-            case 221:
-                var2 = var1.patch;
-                if (var2) {
-                    _fun94016_ip = 243;
-                    continue _fun94016
-                }
-            case 230:
-                var2 = var1.minor;
-                var1 = 'major';
-                if (!var2) {
-                    _fun94016_ip = 279;
-                    continue _fun94016
-                }
-            case 243:
-                var4 = var3.patch;
-                var2 = 'patch';
-                if (var4) {
-                    _fun94016_ip = 276;
-                    continue _fun94016
-                }
-            case 256:
-                var4 = var3.minor;
-                var3 = 'major';
-                if (!var4) {
-                    _fun94016_ip = 273;
-                    continue _fun94016
-                }
-            case 269:
-                var3 = 'minor';
-            case 273:
-                var2 = var3;
-            case 276:
-                var1 = var2;
-            case 279:
-                return var1;
-            case 281:
-                return var0;
-        }
-    };
-    var0 = arg4;
-    var0.exports = var1;
+    var3 = require;
+    var4 = dependencyMap;
+    var2 = {};
+    var0 = 0;
+    var1 = var4[var0];
     var0 = undefined;
+    var1 = var3.bind(var0)(var1);
+    var2.parse = var1;
+    var1 = 1;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.valid = var1;
+    var1 = 2;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.clean = var1;
+    var1 = 3;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.inc = var1;
+    var1 = 4;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.diff = var1;
+    var1 = 5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.major = var1;
+    var1 = 6;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.minor = var1;
+    var1 = 7;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.patch = var1;
+    var1 = 8;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.prerelease = var1;
+    var1 = 9;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.compare = var1;
+    var1 = 10;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.rcompare = var1;
+    var1 = 11;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.compareLoose = var1;
+    var1 = 12;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.compareBuild = var1;
+    var1 = 13;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.sort = var1;
+    var1 = 14;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.rsort = var1;
+    var1 = 15;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.gt = var1;
+    var1 = 16;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.lt = var1;
+    var1 = 17;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.eq = var1;
+    var1 = 18;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.neq = var1;
+    var1 = 19;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.gte = var1;
+    var1 = 20;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.lte = var1;
+    var1 = 21;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.cmp = var1;
+    var1 = 22;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.coerce = var1;
+    var1 = 23;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.Comparator = var1;
+    var1 = 24;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.Range = var1;
+    var1 = 25;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.satisfies = var1;
+    var1 = 26;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.toComparators = var1;
+    var1 = 27;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.maxSatisfying = var1;
+    var1 = 28;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.minSatisfying = var1;
+    var1 = 29;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.minVersion = var1;
+    var1 = 30;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.validRange = var1;
+    var1 = 31;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.outside = var1;
+    var1 = 32;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.gtr = var1;
+    var1 = 33;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.ltr = var1;
+    var1 = 34;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.intersects = var1;
+    var1 = 35;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.simplifyRange = var1;
+    var1 = 36;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.subset = var1;
+    var1 = 37;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.SemVer = var1;
+    var1 = 38;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.re;
+    var2.re = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.src;
+    var2.src = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.t;
+    var2.tokens = var1;
+    var1 = 39;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.SEMVER_SPEC_VERSION;
+    var2.SEMVER_SPEC_VERSION = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.RELEASE_TYPES;
+    var2.RELEASE_TYPES = var1;
+    var1 = 40;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.compareIdentifiers;
+    var2.compareIdentifiers = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.rcompareIdentifiers;
+    var2.rcompareIdentifiers = var1;
+    var1 = module;
+    var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12289]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12300, 12307, 12308, 12309, 12310, 12311, 12312, 12313, 12314, 12315, 12316, 12317, 12318, 12319, 12320, 12321, 12322, 12323, 12324, 12325, 12326, 12327, 12328, 12329, 12330, 12332, 12333, 12334, 12335, 12336, 12337, 12338, 12339, 12340, 12341, 12342, 12343, 12301, 12305, 12303, 12306]);

@@ -20,7 +20,6 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicReference;
-import jr.v;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Pair;
@@ -31,6 +30,7 @@ import kotlin.collections.o0;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
+import lr.v;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000t\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010$\n\u0000\n\u0002\u0010 \n\u0002\b\u0011\bÆ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\b\u0010\"\u001a\u00020\u0007H\u0002J\u001a\u0010#\u001a\u00020$2\u0006\u0010%\u001a\u00020&2\n\b\u0002\u0010'\u001a\u0004\u0018\u00010(JF\u0010)\u001a\u00020$2\u0006\u0010*\u001a\u00020\u00052\u0006\u0010+\u001a\u00020\f2\b\u0010,\u001a\u0004\u0018\u00010\u00052\u0016\u0010-\u001a\u0012\u0012\u0004\u0012\u00020\u0005\u0012\u0006\u0012\u0004\u0018\u00010\u0001\u0018\u00010.2\f\u0010/\u001a\b\u0012\u0004\u0012\u00020\u000500JE\u00101\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00010.2\f\u0010/\u001a\b\u0012\u0004\u0012\u00020\u0005002\u0006\u00102\u001a\u00020\f2\n\b\u0002\u00103\u001a\u0004\u0018\u00010(2\n\b\u0002\u00104\u001a\u0004\u0018\u00010\f¢\u0006\u0002\u00105J\u0006\u00106\u001a\u00020$J\u0010\u00107\u001a\u00020$2\u0006\u00108\u001a\u00020\u0011H\u0002J\b\u00109\u001a\u00020$H\u0002J\u0010\u0010:\u001a\u00020$2\u0006\u0010;\u001a\u00020\u000eH\u0002JC\u0010<\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00010.2\f\u0010/\u001a\b\u0012\u0004\u0012\u00020\u0005002\u0006\u00102\u001a\u00020\f2\b\u00103\u001a\u0004\u0018\u00010(2\b\u00104\u001a\u0004\u0018\u00010\fH\u0002¢\u0006\u0002\u00105J\b\u0010=\u001a\u00020$H\u0002J\u0016\u0010>\u001a\u00020\n2\f\u0010/\u001a\b\u0012\u0004\u0012\u00020\u000500H\u0002J+\u0010?\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00010.2\u0006\u00102\u001a\u00020\f2\b\u00104\u001a\u0004\u0018\u00010\fH\u0002¢\u0006\u0002\u0010@R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\u0005X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\fX\u0082T¢\u0006\u0002\n\u0000R\u0010\u0010\r\u001a\u0004\u0018\u00010\u000eX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00110\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00110\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\fX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0007X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u0015\u001a\b\u0012\u0002\b\u0003\u0018\u00010\u0016X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\u001a0\u0019X\u0082\u0004¢\u0006\u0002\n\u0000R\u001b\u0010\u001b\u001a\u00020\u001c8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u001f\u0010 \u001a\u0004\b\u001d\u0010\u001eR\u000e\u0010!\u001a\u00020\u0007X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006A"}, d2 = {"Lcom/discord/crash_reporting/TelemetryRing;", "", "<init>", "()V", "TAG", "", "ENABLED", "", "IO_THREAD_NAME", "BATCH_MAX_ENTRIES", "", "BATCH_FLUSH_INTERVAL_MS", "", "store", "Lcom/discord/crash_reporting/TelemetryRingSqliteStore;", "pending", "Ljava/util/ArrayDeque;", "Lcom/discord/crash_reporting/TelemetryRingSqliteStore$EntryPayload;", "writeQueue", "lastFlushMs", "flushScheduled", "flushFuture", "Ljava/util/concurrent/ScheduledFuture;", "initLock", "ioThread", "Ljava/util/concurrent/atomic/AtomicReference;", "Ljava/lang/Thread;", "ioExecutor", "Ljava/util/concurrent/ScheduledExecutorService;", "getIoExecutor", "()Ljava/util/concurrent/ScheduledExecutorService;", "ioExecutor$delegate", "Lkotlin/Lazy;", "initScheduled", "isIoThread", "init", "", "context", "Landroid/content/Context;", "evictionBudget", "Lcom/discord/crash_reporting/TelemetryRingTypes$Budget;", "append", "key", "timestampMs", "message", "data", "", "channels", "", "snapshot", "beforeOffset", "budget", "ackedEndOffset", "(Ljava/util/List;JLcom/discord/crash_reporting/TelemetryRingTypes$Budget;Ljava/lang/Long;)Ljava/util/Map;", "clear", "enqueueWrite", "entry", "scheduleFlush", "flushWrites", "currentStore", "snapshotInternal", "flushPending", "channelMaskFor", "emptySnapshot", "(JLjava/lang/Long;)Ljava/util/Map;", "crash_reporting_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nTelemetryRing.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TelemetryRing.kt\ncom/discord/crash_reporting/TelemetryRing\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,274:1\n1#2:275\n1#2:286\n1617#3,9:276\n1869#3:285\n1870#3:287\n1626#3:288\n1563#3:289\n1634#3,3:290\n1869#3,2:293\n1869#3,2:295\n*S KotlinDebug\n*F\n+ 1 TelemetryRing.kt\ncom/discord/crash_reporting/TelemetryRing\n*L\n211#1:286\n211#1:276,9\n211#1:285\n211#1:287\n211#1:288\n230#1:289\n230#1:290,3\n250#1:293,2\n257#1:295,2\n*E\n"})
@@ -59,7 +59,7 @@ public final class TelemetryRing {
     @NotNull
     private static final AtomicReference<Thread> ioThread = new AtomicReference<>();
     @NotNull
-    private static final Lazy ioExecutor$delegate = jr.l.b(new Function0() { // from class: com.discord.crash_reporting.n
+    private static final Lazy ioExecutor$delegate = lr.l.a(new Function0() { // from class: com.discord.crash_reporting.n
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             ScheduledExecutorService ioExecutor_delegate$lambda$2;
@@ -376,7 +376,7 @@ public final class TelemetryRing {
             synchronized (initLock) {
                 if (store == null && !initScheduled) {
                     initScheduled = true;
-                    Unit unit = Unit.f33074a;
+                    Unit unit = Unit.f32464a;
                     final Context applicationContext = context.getApplicationContext();
                     if (budget == null) {
                         budget = TelemetryRingTypes.INSTANCE.defaultBudget();
@@ -412,10 +412,10 @@ public final class TelemetryRing {
         });
         Intrinsics.checkNotNullExpressionValue(submit, "submit(...)");
         try {
-            Result.a aVar = Result.f33071e;
+            Result.a aVar = Result.f32461e;
             b10 = Result.b((Map) submit.get());
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f33071e;
+            Result.a aVar2 = Result.f32461e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         Throwable e10 = Result.e(b10);

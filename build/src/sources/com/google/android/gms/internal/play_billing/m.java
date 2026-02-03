@@ -7,13 +7,13 @@ import java.util.Set;
 public abstract class m implements Map, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    private transient n f14941d;
+    private transient n f13909d;
 
     /* renamed from: e  reason: collision with root package name */
-    private transient n f14942e;
+    private transient n f13910e;
 
     /* renamed from: i  reason: collision with root package name */
-    private transient g f14943i;
+    private transient g f13911i;
 
     public static m c(Object obj, Object obj2, Object obj3, Object obj4, Object obj5, Object obj6) {
         e.a("com.android.vending.billing.PURCHASES_UPDATED", obj2);
@@ -27,10 +27,10 @@ public abstract class m implements Map, Serializable {
     @Override // java.util.Map
     /* renamed from: b */
     public final g values() {
-        g gVar = this.f14943i;
+        g gVar = this.f13911i;
         if (gVar == null) {
             g a10 = a();
-            this.f14943i = a10;
+            this.f13911i = a10;
             return a10;
         }
         return gVar;
@@ -72,10 +72,10 @@ public abstract class m implements Map, Serializable {
     @Override // java.util.Map
     /* renamed from: f */
     public final n entrySet() {
-        n nVar = this.f14941d;
+        n nVar = this.f13909d;
         if (nVar == null) {
             n d10 = d();
-            this.f14941d = d10;
+            this.f13909d = d10;
             return d10;
         }
         return nVar;
@@ -105,10 +105,10 @@ public abstract class m implements Map, Serializable {
 
     @Override // java.util.Map
     public final /* bridge */ /* synthetic */ Set keySet() {
-        n nVar = this.f14942e;
+        n nVar = this.f13910e;
         if (nVar == null) {
             n e10 = e();
-            this.f14942e = e10;
+            this.f13910e = e10;
             return e10;
         }
         return nVar;

@@ -12,38 +12,38 @@ public final class ViewModelInstanceHandle {
     }
 
     /* renamed from: box-impl  reason: not valid java name */
-    public static final /* synthetic */ ViewModelInstanceHandle m199boximpl(long j10) {
+    public static final /* synthetic */ ViewModelInstanceHandle m197boximpl(long j10) {
         return new ViewModelInstanceHandle(j10);
     }
 
     /* renamed from: constructor-impl  reason: not valid java name */
-    public static long m200constructorimpl(long j10) {
+    public static long m198constructorimpl(long j10) {
         return j10;
     }
 
     /* renamed from: equals-impl  reason: not valid java name */
-    public static boolean m201equalsimpl(long j10, Object obj) {
-        return (obj instanceof ViewModelInstanceHandle) && j10 == ((ViewModelInstanceHandle) obj).m205unboximpl();
+    public static boolean m199equalsimpl(long j10, Object obj) {
+        return (obj instanceof ViewModelInstanceHandle) && j10 == ((ViewModelInstanceHandle) obj).m203unboximpl();
     }
 
     /* renamed from: equals-impl0  reason: not valid java name */
-    public static final boolean m202equalsimpl0(long j10, long j11) {
+    public static final boolean m200equalsimpl0(long j10, long j11) {
         return j10 == j11;
     }
 
     /* renamed from: hashCode-impl  reason: not valid java name */
-    public static int m203hashCodeimpl(long j10) {
+    public static int m201hashCodeimpl(long j10) {
         return Long.hashCode(j10);
     }
 
     @NotNull
     /* renamed from: toString-impl  reason: not valid java name */
-    public static String m204toStringimpl(long j10) {
+    public static String m202toStringimpl(long j10) {
         return "ViewModelInstanceHandle(" + j10 + ")";
     }
 
     public boolean equals(Object obj) {
-        return m201equalsimpl(this.handle, obj);
+        return m199equalsimpl(this.handle, obj);
     }
 
     public final long getHandle() {
@@ -51,16 +51,16 @@ public final class ViewModelInstanceHandle {
     }
 
     public int hashCode() {
-        return m203hashCodeimpl(this.handle);
+        return m201hashCodeimpl(this.handle);
     }
 
     @NotNull
     public String toString() {
-        return m204toStringimpl(this.handle);
+        return m202toStringimpl(this.handle);
     }
 
     /* renamed from: unbox-impl  reason: not valid java name */
-    public final /* synthetic */ long m205unboximpl() {
+    public final /* synthetic */ long m203unboximpl() {
         return this.handle;
     }
 }

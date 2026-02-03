@@ -6,17 +6,17 @@ import java.util.ArrayList;
 public abstract class a1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private Object f26837a;
+    private Object f26050a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f26838b = false;
+    private boolean f26051b = false;
 
     /* renamed from: c  reason: collision with root package name */
-    final /* synthetic */ c f26839c;
+    final /* synthetic */ c f26052c;
 
     public a1(c cVar, Object obj) {
-        this.f26839c = cVar;
-        this.f26837a = obj;
+        this.f26052c = cVar;
+        this.f26050a = obj;
     }
 
     protected abstract void a(Object obj);
@@ -28,8 +28,8 @@ public abstract class a1 {
         Object obj;
         synchronized (this) {
             try {
-                obj = this.f26837a;
-                if (this.f26838b) {
+                obj = this.f26050a;
+                if (this.f26051b) {
                     String obj2 = toString();
                     Log.w("GmsClient", "Callback proxy " + obj2 + " being reused. This is not safe.");
                 }
@@ -41,14 +41,14 @@ public abstract class a1 {
             a(obj);
         }
         synchronized (this) {
-            this.f26838b = true;
+            this.f26051b = true;
         }
         e();
     }
 
     public final void d() {
         synchronized (this) {
-            this.f26837a = null;
+            this.f26050a = null;
         }
     }
 
@@ -56,9 +56,9 @@ public abstract class a1 {
         ArrayList arrayList;
         ArrayList arrayList2;
         d();
-        arrayList = this.f26839c.C;
+        arrayList = this.f26052c.C;
         synchronized (arrayList) {
-            arrayList2 = this.f26839c.C;
+            arrayList2 = this.f26052c.C;
             arrayList2.remove(this);
         }
     }

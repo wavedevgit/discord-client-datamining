@@ -1,12 +1,13 @@
 package com.discord.chat.reactevents;
 
-import bt.v1;
+import at.m;
 import com.discord.primitives.MessageId;
 import com.discord.primitives.MessageId$$serializer;
 import com.discord.primitives.UserId;
 import com.discord.primitives.UserId$$serializer;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
+import dt.v1;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -15,7 +16,6 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.jetbrains.annotations.NotNull;
-import ys.m;
 @m
 @Metadata(d1 = {"\u0000X\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0019\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 82\u00020\u0001:\u000278B7\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\b\u0012\u0006\u0010\t\u001a\u00020\n\u0012\u0006\u0010\u000b\u001a\u00020\f¢\u0006\u0004\b\r\u0010\u000eBQ\b\u0010\u0012\u0006\u0010\u000f\u001a\u00020\u0010\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\u0006\u0010\t\u001a\u00020\n\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u0012¢\u0006\u0004\b\r\u0010\u0013J\u0010\u0010\u001f\u001a\u00020\u0003HÆ\u0003¢\u0006\u0004\b \u0010\u0015J\t\u0010!\u001a\u00020\u0005HÆ\u0003J\t\u0010\"\u001a\u00020\u0005HÆ\u0003J\u0010\u0010#\u001a\u00020\bHÆ\u0003¢\u0006\u0004\b$\u0010\u001bJ\t\u0010%\u001a\u00020\nHÆ\u0003J\t\u0010&\u001a\u00020\fHÆ\u0003JL\u0010'\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\b2\b\b\u0002\u0010\t\u001a\u00020\n2\b\b\u0002\u0010\u000b\u001a\u00020\fHÆ\u0001¢\u0006\u0004\b(\u0010)J\u0013\u0010*\u001a\u00020\n2\b\u0010+\u001a\u0004\u0018\u00010,HÖ\u0003J\t\u0010-\u001a\u00020\u0010HÖ\u0001J\t\u0010.\u001a\u00020\fHÖ\u0001J%\u0010/\u001a\u0002002\u0006\u00101\u001a\u00020\u00002\u0006\u00102\u001a\u0002032\u0006\u00104\u001a\u000205H\u0001¢\u0006\u0002\b6R\u0013\u0010\u0002\u001a\u00020\u0003¢\u0006\n\n\u0002\u0010\u0016\u001a\u0004\b\u0014\u0010\u0015R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R\u0011\u0010\u0006\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u0018R\u0013\u0010\u0007\u001a\u00020\b¢\u0006\n\n\u0002\u0010\u001c\u001a\u0004\b\u001a\u0010\u001bR\u0011\u0010\t\u001a\u00020\n¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\u001dR\u0011\u0010\u000b\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u0015¨\u00069"}, d2 = {"Lcom/discord/chat/reactevents/MediaAttachmentPlaybackStartedData;", "Lcom/discord/reactevents/ReactEvent;", "messageId", "Lcom/discord/primitives/MessageId;", "totalDurationSecs", "", "startDurationSecs", "senderUserId", "Lcom/discord/primitives/UserId;", "isVoiceMessage", "", "attachmentId", "", "<init>", "(Ljava/lang/String;FFJZLjava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;FFLcom/discord/primitives/UserId;ZLjava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getMessageId-3Eiw7ao", "()Ljava/lang/String;", "Ljava/lang/String;", "getTotalDurationSecs", "()F", "getStartDurationSecs", "getSenderUserId-re6GcUE", "()J", "J", "()Z", "getAttachmentId", "component1", "component1-3Eiw7ao", "component2", "component3", "component4", "component4-re6GcUE", "component5", "component6", "copy", "copy-jd4C3YQ", "(Ljava/lang/String;FFJZLjava/lang/String;)Lcom/discord/chat/reactevents/MediaAttachmentPlaybackStartedData;", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -77,12 +77,12 @@ public final class MediaAttachmentPlaybackStartedData implements ReactEvent {
     }
 
     public static final /* synthetic */ void write$Self$chat_release(MediaAttachmentPlaybackStartedData mediaAttachmentPlaybackStartedData, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        compositeEncoder.m(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1086boximpl(mediaAttachmentPlaybackStartedData.messageId));
+        compositeEncoder.D(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1085boximpl(mediaAttachmentPlaybackStartedData.messageId));
         compositeEncoder.r(serialDescriptor, 1, mediaAttachmentPlaybackStartedData.totalDurationSecs);
         compositeEncoder.r(serialDescriptor, 2, mediaAttachmentPlaybackStartedData.startDurationSecs);
-        compositeEncoder.m(serialDescriptor, 3, UserId$$serializer.INSTANCE, UserId.m1138boximpl(mediaAttachmentPlaybackStartedData.senderUserId));
-        compositeEncoder.w(serialDescriptor, 4, mediaAttachmentPlaybackStartedData.isVoiceMessage);
-        compositeEncoder.x(serialDescriptor, 5, mediaAttachmentPlaybackStartedData.attachmentId);
+        compositeEncoder.D(serialDescriptor, 3, UserId$$serializer.INSTANCE, UserId.m1137boximpl(mediaAttachmentPlaybackStartedData.senderUserId));
+        compositeEncoder.x(serialDescriptor, 4, mediaAttachmentPlaybackStartedData.isVoiceMessage);
+        compositeEncoder.y(serialDescriptor, 5, mediaAttachmentPlaybackStartedData.attachmentId);
     }
 
     @NotNull
@@ -127,7 +127,7 @@ public final class MediaAttachmentPlaybackStartedData implements ReactEvent {
         }
         if (obj instanceof MediaAttachmentPlaybackStartedData) {
             MediaAttachmentPlaybackStartedData mediaAttachmentPlaybackStartedData = (MediaAttachmentPlaybackStartedData) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, mediaAttachmentPlaybackStartedData.messageId) && Float.compare(this.totalDurationSecs, mediaAttachmentPlaybackStartedData.totalDurationSecs) == 0 && Float.compare(this.startDurationSecs, mediaAttachmentPlaybackStartedData.startDurationSecs) == 0 && UserId.m1142equalsimpl0(this.senderUserId, mediaAttachmentPlaybackStartedData.senderUserId) && this.isVoiceMessage == mediaAttachmentPlaybackStartedData.isVoiceMessage && Intrinsics.areEqual(this.attachmentId, mediaAttachmentPlaybackStartedData.attachmentId);
+            return MessageId.m1089equalsimpl0(this.messageId, mediaAttachmentPlaybackStartedData.messageId) && Float.compare(this.totalDurationSecs, mediaAttachmentPlaybackStartedData.totalDurationSecs) == 0 && Float.compare(this.startDurationSecs, mediaAttachmentPlaybackStartedData.startDurationSecs) == 0 && UserId.m1141equalsimpl0(this.senderUserId, mediaAttachmentPlaybackStartedData.senderUserId) && this.isVoiceMessage == mediaAttachmentPlaybackStartedData.isVoiceMessage && Intrinsics.areEqual(this.attachmentId, mediaAttachmentPlaybackStartedData.attachmentId);
         }
         return false;
     }
@@ -157,7 +157,7 @@ public final class MediaAttachmentPlaybackStartedData implements ReactEvent {
     }
 
     public int hashCode() {
-        return (((((((((MessageId.m1091hashCodeimpl(this.messageId) * 31) + Float.hashCode(this.totalDurationSecs)) * 31) + Float.hashCode(this.startDurationSecs)) * 31) + UserId.m1143hashCodeimpl(this.senderUserId)) * 31) + Boolean.hashCode(this.isVoiceMessage)) * 31) + this.attachmentId.hashCode();
+        return (((((((((MessageId.m1090hashCodeimpl(this.messageId) * 31) + Float.hashCode(this.totalDurationSecs)) * 31) + Float.hashCode(this.startDurationSecs)) * 31) + UserId.m1142hashCodeimpl(this.senderUserId)) * 31) + Boolean.hashCode(this.isVoiceMessage)) * 31) + this.attachmentId.hashCode();
     }
 
     public final boolean isVoiceMessage() {
@@ -172,13 +172,13 @@ public final class MediaAttachmentPlaybackStartedData implements ReactEvent {
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         float f10 = this.totalDurationSecs;
         float f11 = this.startDurationSecs;
-        String m1145toStringimpl = UserId.m1145toStringimpl(this.senderUserId);
+        String m1144toStringimpl = UserId.m1144toStringimpl(this.senderUserId);
         boolean z10 = this.isVoiceMessage;
         String str = this.attachmentId;
-        return "MediaAttachmentPlaybackStartedData(messageId=" + m1093toStringimpl + ", totalDurationSecs=" + f10 + ", startDurationSecs=" + f11 + ", senderUserId=" + m1145toStringimpl + ", isVoiceMessage=" + z10 + ", attachmentId=" + str + ")";
+        return "MediaAttachmentPlaybackStartedData(messageId=" + m1092toStringimpl + ", totalDurationSecs=" + f10 + ", startDurationSecs=" + f11 + ", senderUserId=" + m1144toStringimpl + ", isVoiceMessage=" + z10 + ", attachmentId=" + str + ")";
     }
 
     public /* synthetic */ MediaAttachmentPlaybackStartedData(String str, float f10, float f11, long j10, boolean z10, String str2, DefaultConstructorMarker defaultConstructorMarker) {
@@ -192,7 +192,7 @@ public final class MediaAttachmentPlaybackStartedData implements ReactEvent {
         this.messageId = str;
         this.totalDurationSecs = f10;
         this.startDurationSecs = f11;
-        this.senderUserId = userId.m1147unboximpl();
+        this.senderUserId = userId.m1146unboximpl();
         this.isVoiceMessage = z10;
         this.attachmentId = str2;
     }

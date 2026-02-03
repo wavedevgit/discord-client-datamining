@@ -3,21 +3,21 @@ package com.facebook.imagepipeline.common;
 import com.facebook.imagepipeline.common.BytesRange;
 import java.util.Arrays;
 import java.util.regex.Pattern;
-import jr.l;
 import kotlin.Lazy;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.StringCompanionObject;
+import lr.l;
 import o8.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class BytesRange {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f11070c = new a(null);
+    public static final a f10038c = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Lazy f11071d = l.b(new Function0() { // from class: ma.a
+    private static final Lazy f10039d = l.a(new Function0() { // from class: ma.a
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             Pattern e10;
@@ -27,10 +27,10 @@ public final class BytesRange {
     });
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f11072a;
+    public final int f10040a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f11073b;
+    public final int f10041b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -39,7 +39,7 @@ public final class BytesRange {
         }
 
         private final Pattern d() {
-            Object value = BytesRange.f11071d.getValue();
+            Object value = BytesRange.f10039d.getValue();
             Intrinsics.checkNotNullExpressionValue(value, "getValue(...)");
             return (Pattern) value;
         }
@@ -126,12 +126,12 @@ public final class BytesRange {
     }
 
     public BytesRange(int i10, int i11) {
-        this.f11072a = i10;
-        this.f11073b = i11;
+        this.f10040a = i10;
+        this.f10041b = i11;
     }
 
     public static final BytesRange d(int i10) {
-        return f11070c.b(i10);
+        return f10038c.b(i10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -140,11 +140,11 @@ public final class BytesRange {
     }
 
     public static final BytesRange g(int i10) {
-        return f11070c.e(i10);
+        return f10038c.e(i10);
     }
 
     public final boolean c(BytesRange bytesRange) {
-        if (bytesRange == null || this.f11072a > bytesRange.f11072a || bytesRange.f11073b > this.f11073b) {
+        if (bytesRange == null || this.f10040a > bytesRange.f10040a || bytesRange.f10041b > this.f10041b) {
             return false;
         }
         return true;
@@ -165,7 +165,7 @@ public final class BytesRange {
         }
         Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type com.facebook.imagepipeline.common.BytesRange");
         BytesRange bytesRange = (BytesRange) obj;
-        if (this.f11072a == bytesRange.f11072a && this.f11073b == bytesRange.f11073b) {
+        if (this.f10040a == bytesRange.f10040a && this.f10041b == bytesRange.f10041b) {
             return true;
         }
         return false;
@@ -173,20 +173,20 @@ public final class BytesRange {
 
     public final String f() {
         StringCompanionObject stringCompanionObject = StringCompanionObject.INSTANCE;
-        a aVar = f11070c;
-        String format = String.format(null, "bytes=%s-%s", Arrays.copyOf(new Object[]{aVar.f(this.f11072a), aVar.f(this.f11073b)}, 2));
+        a aVar = f10038c;
+        String format = String.format(null, "bytes=%s-%s", Arrays.copyOf(new Object[]{aVar.f(this.f10040a), aVar.f(this.f10041b)}, 2));
         Intrinsics.checkNotNullExpressionValue(format, "format(...)");
         return format;
     }
 
     public int hashCode() {
-        return (this.f11072a * 31) + this.f11073b;
+        return (this.f10040a * 31) + this.f10041b;
     }
 
     public String toString() {
         StringCompanionObject stringCompanionObject = StringCompanionObject.INSTANCE;
-        a aVar = f11070c;
-        String format = String.format(null, "%s-%s", Arrays.copyOf(new Object[]{aVar.f(this.f11072a), aVar.f(this.f11073b)}, 2));
+        a aVar = f10038c;
+        String format = String.format(null, "%s-%s", Arrays.copyOf(new Object[]{aVar.f(this.f10040a), aVar.f(this.f10041b)}, 2));
         Intrinsics.checkNotNullExpressionValue(format, "format(...)");
         return format;
     }

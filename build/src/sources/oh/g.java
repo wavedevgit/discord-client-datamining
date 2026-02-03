@@ -39,49 +39,49 @@ public class g extends Drawable implements n {
     private boolean H;
 
     /* renamed from: d  reason: collision with root package name */
-    private c f43965d;
+    private c f43765d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final m.g[] f43966e;
+    private final m.g[] f43766e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final m.g[] f43967i;
+    private final m.g[] f43767i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final BitSet f43968o;
+    private final BitSet f43768o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f43969p;
+    private boolean f43769p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final Matrix f43970q;
+    private final Matrix f43770q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final Path f43971r;
+    private final Path f43771r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final Path f43972s;
+    private final Path f43772s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final RectF f43973t;
+    private final RectF f43773t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final RectF f43974u;
+    private final RectF f43774u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final Region f43975v;
+    private final Region f43775v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final Region f43976w;
+    private final Region f43776w;
 
     /* renamed from: x  reason: collision with root package name */
-    private k f43977x;
+    private k f43777x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final Paint f43978y;
+    private final Paint f43778y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final Paint f43979z;
+    private final Paint f43779z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements l.b {
@@ -90,14 +90,14 @@ public class g extends Drawable implements n {
 
         @Override // oh.l.b
         public void a(m mVar, Matrix matrix, int i10) {
-            g.this.f43968o.set(i10, mVar.e());
-            g.this.f43966e[i10] = mVar.f(matrix);
+            g.this.f43768o.set(i10, mVar.e());
+            g.this.f43766e[i10] = mVar.f(matrix);
         }
 
         @Override // oh.l.b
         public void b(m mVar, Matrix matrix, int i10) {
-            g.this.f43968o.set(i10 + 4, mVar.e());
-            g.this.f43967i[i10] = mVar.f(matrix);
+            g.this.f43768o.set(i10 + 4, mVar.e());
+            g.this.f43767i[i10] = mVar.f(matrix);
         }
     }
 
@@ -106,10 +106,10 @@ public class g extends Drawable implements n {
     public class b implements k.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ float f43981a;
+        final /* synthetic */ float f43781a;
 
         b(float f10) {
-            this.f43981a = f10;
+            this.f43781a = f10;
         }
 
         @Override // oh.k.c
@@ -117,7 +117,7 @@ public class g extends Drawable implements n {
             if (cVar instanceof i) {
                 return cVar;
             }
-            return new oh.b(this.f43981a, cVar);
+            return new oh.b(this.f43781a, cVar);
         }
     }
 
@@ -134,15 +134,15 @@ public class g extends Drawable implements n {
 
     private float E() {
         if (M()) {
-            return this.f43979z.getStrokeWidth() / 2.0f;
+            return this.f43779z.getStrokeWidth() / 2.0f;
         }
         return 0.0f;
     }
 
     private boolean K() {
-        c cVar = this.f43965d;
-        int i10 = cVar.f43999q;
-        if (i10 != 1 && cVar.f44000r > 0) {
+        c cVar = this.f43765d;
+        int i10 = cVar.f43799q;
+        if (i10 != 1 && cVar.f43800r > 0) {
             if (i10 == 2 || U()) {
                 return true;
             }
@@ -152,7 +152,7 @@ public class g extends Drawable implements n {
     }
 
     private boolean L() {
-        Paint.Style style = this.f43965d.f44004v;
+        Paint.Style style = this.f43765d.f43804v;
         if (style != Paint.Style.FILL_AND_STROKE && style != Paint.Style.FILL) {
             return false;
         }
@@ -160,8 +160,8 @@ public class g extends Drawable implements n {
     }
 
     private boolean M() {
-        Paint.Style style = this.f43965d.f44004v;
-        if ((style == Paint.Style.FILL_AND_STROKE || style == Paint.Style.STROKE) && this.f43979z.getStrokeWidth() > 0.0f) {
+        Paint.Style style = this.f43765d.f43804v;
+        if ((style == Paint.Style.FILL_AND_STROKE || style == Paint.Style.STROKE) && this.f43779z.getStrokeWidth() > 0.0f) {
             return true;
         }
         return false;
@@ -185,10 +185,10 @@ public class g extends Drawable implements n {
         int width = (int) (this.G.width() - getBounds().width());
         int height = (int) (this.G.height() - getBounds().height());
         if (width >= 0 && height >= 0) {
-            Bitmap createBitmap = Bitmap.createBitmap(((int) this.G.width()) + (this.f43965d.f44000r * 2) + width, ((int) this.G.height()) + (this.f43965d.f44000r * 2) + height, Bitmap.Config.ARGB_8888);
+            Bitmap createBitmap = Bitmap.createBitmap(((int) this.G.width()) + (this.f43765d.f43800r * 2) + width, ((int) this.G.height()) + (this.f43765d.f43800r * 2) + height, Bitmap.Config.ARGB_8888);
             Canvas canvas2 = new Canvas(createBitmap);
-            float f10 = (getBounds().left - this.f43965d.f44000r) - width;
-            float f11 = (getBounds().top - this.f43965d.f44000r) - height;
+            float f10 = (getBounds().left - this.f43765d.f43800r) - width;
+            float f11 = (getBounds().top - this.f43765d.f43800r) - height;
             canvas2.translate(-f10, -f11);
             n(canvas2);
             canvas.drawBitmap(createBitmap, f10, f11, (Paint) null);
@@ -222,12 +222,12 @@ public class g extends Drawable implements n {
 
     private void g(RectF rectF, Path path) {
         h(rectF, path);
-        if (this.f43965d.f43992j != 1.0f) {
-            this.f43970q.reset();
-            Matrix matrix = this.f43970q;
-            float f10 = this.f43965d.f43992j;
+        if (this.f43765d.f43792j != 1.0f) {
+            this.f43770q.reset();
+            Matrix matrix = this.f43770q;
+            float f10 = this.f43765d.f43792j;
             matrix.setScale(f10, f10, rectF.width() / 2.0f, rectF.height() / 2.0f);
-            path.transform(this.f43970q);
+            path.transform(this.f43770q);
         }
         path.computeBounds(this.G, true);
     }
@@ -238,14 +238,14 @@ public class g extends Drawable implements n {
         int colorForState;
         int color2;
         int colorForState2;
-        if (this.f43965d.f43986d != null && color2 != (colorForState2 = this.f43965d.f43986d.getColorForState(iArr, (color2 = this.f43978y.getColor())))) {
-            this.f43978y.setColor(colorForState2);
+        if (this.f43765d.f43786d != null && color2 != (colorForState2 = this.f43765d.f43786d.getColorForState(iArr, (color2 = this.f43778y.getColor())))) {
+            this.f43778y.setColor(colorForState2);
             z10 = true;
         } else {
             z10 = false;
         }
-        if (this.f43965d.f43987e != null && color != (colorForState = this.f43965d.f43987e.getColorForState(iArr, (color = this.f43979z.getColor())))) {
-            this.f43979z.setColor(colorForState);
+        if (this.f43765d.f43787e != null && color != (colorForState = this.f43765d.f43787e.getColorForState(iArr, (color = this.f43779z.getColor())))) {
+            this.f43779z.setColor(colorForState);
             return true;
         }
         return z10;
@@ -253,20 +253,20 @@ public class g extends Drawable implements n {
 
     private void i() {
         k y10 = D().y(new b(-E()));
-        this.f43977x = y10;
-        this.C.d(y10, this.f43965d.f43993k, v(), this.f43972s);
+        this.f43777x = y10;
+        this.C.d(y10, this.f43765d.f43793k, v(), this.f43772s);
     }
 
     private boolean i0() {
         PorterDuffColorFilter porterDuffColorFilter = this.D;
         PorterDuffColorFilter porterDuffColorFilter2 = this.E;
-        c cVar = this.f43965d;
-        this.D = k(cVar.f43989g, cVar.f43990h, this.f43978y, true);
-        c cVar2 = this.f43965d;
-        this.E = k(cVar2.f43988f, cVar2.f43990h, this.f43979z, false);
-        c cVar3 = this.f43965d;
-        if (cVar3.f44003u) {
-            this.A.d(cVar3.f43989g.getColorForState(getState(), 0));
+        c cVar = this.f43765d;
+        this.D = k(cVar.f43789g, cVar.f43790h, this.f43778y, true);
+        c cVar2 = this.f43765d;
+        this.E = k(cVar2.f43788f, cVar2.f43790h, this.f43779z, false);
+        c cVar3 = this.f43765d;
+        if (cVar3.f43803u) {
+            this.A.d(cVar3.f43789g.getColorForState(getState(), 0));
         }
         if (!b2.b.a(porterDuffColorFilter, this.D) || !b2.b.a(porterDuffColorFilter2, this.E)) {
             return true;
@@ -285,8 +285,8 @@ public class g extends Drawable implements n {
 
     private void j0() {
         float J2 = J();
-        this.f43965d.f44000r = (int) Math.ceil(0.75f * J2);
-        this.f43965d.f44001s = (int) Math.ceil(J2 * 0.25f);
+        this.f43765d.f43800r = (int) Math.ceil(0.75f * J2);
+        this.f43765d.f43801s = (int) Math.ceil(J2 * 0.25f);
         i0();
         O();
     }
@@ -300,7 +300,7 @@ public class g extends Drawable implements n {
 
     public static g m(Context context, float f10, ColorStateList colorStateList) {
         if (colorStateList == null) {
-            colorStateList = ColorStateList.valueOf(eh.a.c(context, yg.b.f54345o, g.class.getSimpleName()));
+            colorStateList = ColorStateList.valueOf(eh.a.c(context, yg.b.f54103o, g.class.getSimpleName()));
         }
         g gVar = new g();
         gVar.N(context);
@@ -310,32 +310,32 @@ public class g extends Drawable implements n {
     }
 
     private void n(Canvas canvas) {
-        if (this.f43968o.cardinality() > 0) {
+        if (this.f43768o.cardinality() > 0) {
             Log.w(I, "Compatibility shadow requested but can't be drawn for all operations in this shape.");
         }
-        if (this.f43965d.f44001s != 0) {
-            canvas.drawPath(this.f43971r, this.A.c());
+        if (this.f43765d.f43801s != 0) {
+            canvas.drawPath(this.f43771r, this.A.c());
         }
         for (int i10 = 0; i10 < 4; i10++) {
-            this.f43966e[i10].b(this.A, this.f43965d.f44000r, canvas);
-            this.f43967i[i10].b(this.A, this.f43965d.f44000r, canvas);
+            this.f43766e[i10].b(this.A, this.f43765d.f43800r, canvas);
+            this.f43767i[i10].b(this.A, this.f43765d.f43800r, canvas);
         }
         if (this.H) {
             int B = B();
             int C = C();
             canvas.translate(-B, -C);
-            canvas.drawPath(this.f43971r, J);
+            canvas.drawPath(this.f43771r, J);
             canvas.translate(B, C);
         }
     }
 
     private void o(Canvas canvas) {
-        q(canvas, this.f43978y, this.f43971r, this.f43965d.f43983a, u());
+        q(canvas, this.f43778y, this.f43771r, this.f43765d.f43783a, u());
     }
 
     private void q(Canvas canvas, Paint paint, Path path, k kVar, RectF rectF) {
         if (kVar.u(rectF)) {
-            float a10 = kVar.t().a(rectF) * this.f43965d.f43993k;
+            float a10 = kVar.t().a(rectF) * this.f43765d.f43793k;
             canvas.drawRoundRect(rectF, a10, a10, paint);
             return;
         }
@@ -343,10 +343,10 @@ public class g extends Drawable implements n {
     }
 
     private RectF v() {
-        this.f43974u.set(u());
+        this.f43774u.set(u());
         float E = E();
-        this.f43974u.inset(E, E);
-        return this.f43974u;
+        this.f43774u.inset(E, E);
+        return this.f43774u;
     }
 
     public int A() {
@@ -354,33 +354,33 @@ public class g extends Drawable implements n {
     }
 
     public int B() {
-        c cVar = this.f43965d;
-        return (int) (cVar.f44001s * Math.sin(Math.toRadians(cVar.f44002t)));
+        c cVar = this.f43765d;
+        return (int) (cVar.f43801s * Math.sin(Math.toRadians(cVar.f43802t)));
     }
 
     public int C() {
-        c cVar = this.f43965d;
-        return (int) (cVar.f44001s * Math.cos(Math.toRadians(cVar.f44002t)));
+        c cVar = this.f43765d;
+        return (int) (cVar.f43801s * Math.cos(Math.toRadians(cVar.f43802t)));
     }
 
     public k D() {
-        return this.f43965d.f43983a;
+        return this.f43765d.f43783a;
     }
 
     public ColorStateList F() {
-        return this.f43965d.f43989g;
+        return this.f43765d.f43789g;
     }
 
     public float G() {
-        return this.f43965d.f43983a.r().a(u());
+        return this.f43765d.f43783a.r().a(u());
     }
 
     public float H() {
-        return this.f43965d.f43983a.t().a(u());
+        return this.f43765d.f43783a.t().a(u());
     }
 
     public float I() {
-        return this.f43965d.f43998p;
+        return this.f43765d.f43798p;
     }
 
     public float J() {
@@ -388,12 +388,12 @@ public class g extends Drawable implements n {
     }
 
     public void N(Context context) {
-        this.f43965d.f43984b = new gh.a(context);
+        this.f43765d.f43784b = new gh.a(context);
         j0();
     }
 
     public boolean P() {
-        gh.a aVar = this.f43965d.f43984b;
+        gh.a aVar = this.f43765d.f43784b;
         if (aVar != null && aVar.d()) {
             return true;
         }
@@ -401,59 +401,59 @@ public class g extends Drawable implements n {
     }
 
     public boolean Q() {
-        return this.f43965d.f43983a.u(u());
+        return this.f43765d.f43783a.u(u());
     }
 
     public boolean U() {
         int i10 = Build.VERSION.SDK_INT;
-        if (!Q() && !this.f43971r.isConvex() && i10 < 29) {
+        if (!Q() && !this.f43771r.isConvex() && i10 < 29) {
             return true;
         }
         return false;
     }
 
     public void V(oh.c cVar) {
-        setShapeAppearanceModel(this.f43965d.f43983a.x(cVar));
+        setShapeAppearanceModel(this.f43765d.f43783a.x(cVar));
     }
 
     public void W(float f10) {
-        c cVar = this.f43965d;
-        if (cVar.f43997o != f10) {
-            cVar.f43997o = f10;
+        c cVar = this.f43765d;
+        if (cVar.f43797o != f10) {
+            cVar.f43797o = f10;
             j0();
         }
     }
 
     public void X(ColorStateList colorStateList) {
-        c cVar = this.f43965d;
-        if (cVar.f43986d != colorStateList) {
-            cVar.f43986d = colorStateList;
+        c cVar = this.f43765d;
+        if (cVar.f43786d != colorStateList) {
+            cVar.f43786d = colorStateList;
             onStateChange(getState());
         }
     }
 
     public void Y(float f10) {
-        c cVar = this.f43965d;
-        if (cVar.f43993k != f10) {
-            cVar.f43993k = f10;
-            this.f43969p = true;
+        c cVar = this.f43765d;
+        if (cVar.f43793k != f10) {
+            cVar.f43793k = f10;
+            this.f43769p = true;
             invalidateSelf();
         }
     }
 
     public void Z(int i10, int i11, int i12, int i13) {
-        c cVar = this.f43965d;
-        if (cVar.f43991i == null) {
-            cVar.f43991i = new Rect();
+        c cVar = this.f43765d;
+        if (cVar.f43791i == null) {
+            cVar.f43791i = new Rect();
         }
-        this.f43965d.f43991i.set(i10, i11, i12, i13);
+        this.f43765d.f43791i.set(i10, i11, i12, i13);
         invalidateSelf();
     }
 
     public void a0(float f10) {
-        c cVar = this.f43965d;
-        if (cVar.f43996n != f10) {
-            cVar.f43996n = f10;
+        c cVar = this.f43765d;
+        if (cVar.f43796n != f10) {
+            cVar.f43796n = f10;
             j0();
         }
     }
@@ -464,7 +464,7 @@ public class g extends Drawable implements n {
 
     public void c0(int i10) {
         this.A.d(i10);
-        this.f43965d.f44003u = false;
+        this.f43765d.f43803u = false;
         O();
     }
 
@@ -475,17 +475,17 @@ public class g extends Drawable implements n {
 
     @Override // android.graphics.drawable.Drawable
     public void draw(Canvas canvas) {
-        this.f43978y.setColorFilter(this.D);
-        int alpha = this.f43978y.getAlpha();
-        this.f43978y.setAlpha(S(alpha, this.f43965d.f43995m));
-        this.f43979z.setColorFilter(this.E);
-        this.f43979z.setStrokeWidth(this.f43965d.f43994l);
-        int alpha2 = this.f43979z.getAlpha();
-        this.f43979z.setAlpha(S(alpha2, this.f43965d.f43995m));
-        if (this.f43969p) {
+        this.f43778y.setColorFilter(this.D);
+        int alpha = this.f43778y.getAlpha();
+        this.f43778y.setAlpha(S(alpha, this.f43765d.f43795m));
+        this.f43779z.setColorFilter(this.E);
+        this.f43779z.setStrokeWidth(this.f43765d.f43794l);
+        int alpha2 = this.f43779z.getAlpha();
+        this.f43779z.setAlpha(S(alpha2, this.f43765d.f43795m));
+        if (this.f43769p) {
             i();
-            g(u(), this.f43971r);
-            this.f43969p = false;
+            g(u(), this.f43771r);
+            this.f43769p = false;
         }
         R(canvas);
         if (L()) {
@@ -494,8 +494,8 @@ public class g extends Drawable implements n {
         if (M()) {
             r(canvas);
         }
-        this.f43978y.setAlpha(alpha);
-        this.f43979z.setAlpha(alpha2);
+        this.f43778y.setAlpha(alpha);
+        this.f43779z.setAlpha(alpha2);
     }
 
     public void e0(float f10, ColorStateList colorStateList) {
@@ -504,26 +504,26 @@ public class g extends Drawable implements n {
     }
 
     public void f0(ColorStateList colorStateList) {
-        c cVar = this.f43965d;
-        if (cVar.f43987e != colorStateList) {
-            cVar.f43987e = colorStateList;
+        c cVar = this.f43765d;
+        if (cVar.f43787e != colorStateList) {
+            cVar.f43787e = colorStateList;
             onStateChange(getState());
         }
     }
 
     public void g0(float f10) {
-        this.f43965d.f43994l = f10;
+        this.f43765d.f43794l = f10;
         invalidateSelf();
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getAlpha() {
-        return this.f43965d.f43995m;
+        return this.f43765d.f43795m;
     }
 
     @Override // android.graphics.drawable.Drawable
     public Drawable.ConstantState getConstantState() {
-        return this.f43965d;
+        return this.f43765d;
     }
 
     @Override // android.graphics.drawable.Drawable
@@ -533,20 +533,20 @@ public class g extends Drawable implements n {
 
     @Override // android.graphics.drawable.Drawable
     public void getOutline(Outline outline) {
-        if (this.f43965d.f43999q == 2) {
+        if (this.f43765d.f43799q == 2) {
             return;
         }
         if (Q()) {
-            outline.setRoundRect(getBounds(), G() * this.f43965d.f43993k);
+            outline.setRoundRect(getBounds(), G() * this.f43765d.f43793k);
             return;
         }
-        g(u(), this.f43971r);
-        com.google.android.material.drawable.c.k(outline, this.f43971r);
+        g(u(), this.f43771r);
+        com.google.android.material.drawable.c.k(outline, this.f43771r);
     }
 
     @Override // android.graphics.drawable.Drawable
     public boolean getPadding(Rect rect) {
-        Rect rect2 = this.f43965d.f43991i;
+        Rect rect2 = this.f43765d.f43791i;
         if (rect2 != null) {
             rect.set(rect2);
             return true;
@@ -556,36 +556,36 @@ public class g extends Drawable implements n {
 
     @Override // android.graphics.drawable.Drawable
     public Region getTransparentRegion() {
-        this.f43975v.set(getBounds());
-        g(u(), this.f43971r);
-        this.f43976w.setPath(this.f43971r, this.f43975v);
-        this.f43975v.op(this.f43976w, Region.Op.DIFFERENCE);
-        return this.f43975v;
+        this.f43775v.set(getBounds());
+        g(u(), this.f43771r);
+        this.f43776w.setPath(this.f43771r, this.f43775v);
+        this.f43775v.op(this.f43776w, Region.Op.DIFFERENCE);
+        return this.f43775v;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void h(RectF rectF, Path path) {
         l lVar = this.C;
-        c cVar = this.f43965d;
-        lVar.e(cVar.f43983a, cVar.f43993k, rectF, this.B, path);
+        c cVar = this.f43765d;
+        lVar.e(cVar.f43783a, cVar.f43793k, rectF, this.B, path);
     }
 
     @Override // android.graphics.drawable.Drawable
     public void invalidateSelf() {
-        this.f43969p = true;
+        this.f43769p = true;
         super.invalidateSelf();
     }
 
     @Override // android.graphics.drawable.Drawable
     public boolean isStateful() {
         if (!super.isStateful()) {
-            ColorStateList colorStateList = this.f43965d.f43989g;
+            ColorStateList colorStateList = this.f43765d.f43789g;
             if (colorStateList == null || !colorStateList.isStateful()) {
-                ColorStateList colorStateList2 = this.f43965d.f43988f;
+                ColorStateList colorStateList2 = this.f43765d.f43788f;
                 if (colorStateList2 == null || !colorStateList2.isStateful()) {
-                    ColorStateList colorStateList3 = this.f43965d.f43987e;
+                    ColorStateList colorStateList3 = this.f43765d.f43787e;
                     if (colorStateList3 == null || !colorStateList3.isStateful()) {
-                        ColorStateList colorStateList4 = this.f43965d.f43986d;
+                        ColorStateList colorStateList4 = this.f43765d.f43786d;
                         if (colorStateList4 == null || !colorStateList4.isStateful()) {
                             return false;
                         }
@@ -603,7 +603,7 @@ public class g extends Drawable implements n {
     /* JADX INFO: Access modifiers changed from: protected */
     public int l(int i10) {
         float J2 = J() + z();
-        gh.a aVar = this.f43965d.f43984b;
+        gh.a aVar = this.f43765d.f43784b;
         if (aVar != null) {
             return aVar.c(i10, J2);
         }
@@ -612,13 +612,13 @@ public class g extends Drawable implements n {
 
     @Override // android.graphics.drawable.Drawable
     public Drawable mutate() {
-        this.f43965d = new c(this.f43965d);
+        this.f43765d = new c(this.f43765d);
         return this;
     }
 
     @Override // android.graphics.drawable.Drawable
     protected void onBoundsChange(Rect rect) {
-        this.f43969p = true;
+        this.f43769p = true;
         super.onBoundsChange(rect);
     }
 
@@ -641,36 +641,36 @@ public class g extends Drawable implements n {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void p(Canvas canvas, Paint paint, Path path, RectF rectF) {
-        q(canvas, paint, path, this.f43965d.f43983a, rectF);
+        q(canvas, paint, path, this.f43765d.f43783a, rectF);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void r(Canvas canvas) {
-        q(canvas, this.f43979z, this.f43972s, this.f43977x, v());
+        q(canvas, this.f43779z, this.f43772s, this.f43777x, v());
     }
 
     public float s() {
-        return this.f43965d.f43983a.j().a(u());
+        return this.f43765d.f43783a.j().a(u());
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setAlpha(int i10) {
-        c cVar = this.f43965d;
-        if (cVar.f43995m != i10) {
-            cVar.f43995m = i10;
+        c cVar = this.f43765d;
+        if (cVar.f43795m != i10) {
+            cVar.f43795m = i10;
             O();
         }
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setColorFilter(ColorFilter colorFilter) {
-        this.f43965d.f43985c = colorFilter;
+        this.f43765d.f43785c = colorFilter;
         O();
     }
 
     @Override // oh.n
     public void setShapeAppearanceModel(k kVar) {
-        this.f43965d.f43983a = kVar;
+        this.f43765d.f43783a = kVar;
         invalidateSelf();
     }
 
@@ -681,45 +681,45 @@ public class g extends Drawable implements n {
 
     @Override // android.graphics.drawable.Drawable
     public void setTintList(ColorStateList colorStateList) {
-        this.f43965d.f43989g = colorStateList;
+        this.f43765d.f43789g = colorStateList;
         i0();
         O();
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setTintMode(PorterDuff.Mode mode) {
-        c cVar = this.f43965d;
-        if (cVar.f43990h != mode) {
-            cVar.f43990h = mode;
+        c cVar = this.f43765d;
+        if (cVar.f43790h != mode) {
+            cVar.f43790h = mode;
             i0();
             O();
         }
     }
 
     public float t() {
-        return this.f43965d.f43983a.l().a(u());
+        return this.f43765d.f43783a.l().a(u());
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public RectF u() {
-        this.f43973t.set(getBounds());
-        return this.f43973t;
+        this.f43773t.set(getBounds());
+        return this.f43773t;
     }
 
     public float w() {
-        return this.f43965d.f43997o;
+        return this.f43765d.f43797o;
     }
 
     public ColorStateList x() {
-        return this.f43965d.f43986d;
+        return this.f43765d.f43786d;
     }
 
     public float y() {
-        return this.f43965d.f43993k;
+        return this.f43765d.f43793k;
     }
 
     public float z() {
-        return this.f43965d.f43996n;
+        return this.f43765d.f43796n;
     }
 
     public g(Context context, AttributeSet attributeSet, int i10, int i11) {
@@ -733,20 +733,20 @@ public class g extends Drawable implements n {
     /* JADX INFO: Access modifiers changed from: protected */
     public g(c cVar) {
         l lVar;
-        this.f43966e = new m.g[4];
-        this.f43967i = new m.g[4];
-        this.f43968o = new BitSet(8);
-        this.f43970q = new Matrix();
-        this.f43971r = new Path();
-        this.f43972s = new Path();
-        this.f43973t = new RectF();
-        this.f43974u = new RectF();
-        this.f43975v = new Region();
-        this.f43976w = new Region();
+        this.f43766e = new m.g[4];
+        this.f43767i = new m.g[4];
+        this.f43768o = new BitSet(8);
+        this.f43770q = new Matrix();
+        this.f43771r = new Path();
+        this.f43772s = new Path();
+        this.f43773t = new RectF();
+        this.f43774u = new RectF();
+        this.f43775v = new Region();
+        this.f43776w = new Region();
         Paint paint = new Paint(1);
-        this.f43978y = paint;
+        this.f43778y = paint;
         Paint paint2 = new Paint(1);
-        this.f43979z = paint2;
+        this.f43779z = paint2;
         this.A = new nh.a();
         if (Looper.getMainLooper().getThread() == Thread.currentThread()) {
             lVar = l.k();
@@ -756,7 +756,7 @@ public class g extends Drawable implements n {
         this.C = lVar;
         this.G = new RectF();
         this.H = true;
-        this.f43965d = cVar;
+        this.f43765d = cVar;
         paint2.setStyle(Paint.Style.STROKE);
         paint.setStyle(Paint.Style.FILL);
         i0();
@@ -769,92 +769,92 @@ public class g extends Drawable implements n {
     public static class c extends Drawable.ConstantState {
 
         /* renamed from: a  reason: collision with root package name */
-        k f43983a;
+        k f43783a;
 
         /* renamed from: b  reason: collision with root package name */
-        gh.a f43984b;
+        gh.a f43784b;
 
         /* renamed from: c  reason: collision with root package name */
-        ColorFilter f43985c;
+        ColorFilter f43785c;
 
         /* renamed from: d  reason: collision with root package name */
-        ColorStateList f43986d;
+        ColorStateList f43786d;
 
         /* renamed from: e  reason: collision with root package name */
-        ColorStateList f43987e;
+        ColorStateList f43787e;
 
         /* renamed from: f  reason: collision with root package name */
-        ColorStateList f43988f;
+        ColorStateList f43788f;
 
         /* renamed from: g  reason: collision with root package name */
-        ColorStateList f43989g;
+        ColorStateList f43789g;
 
         /* renamed from: h  reason: collision with root package name */
-        PorterDuff.Mode f43990h;
+        PorterDuff.Mode f43790h;
 
         /* renamed from: i  reason: collision with root package name */
-        Rect f43991i;
+        Rect f43791i;
 
         /* renamed from: j  reason: collision with root package name */
-        float f43992j;
+        float f43792j;
 
         /* renamed from: k  reason: collision with root package name */
-        float f43993k;
+        float f43793k;
 
         /* renamed from: l  reason: collision with root package name */
-        float f43994l;
+        float f43794l;
 
         /* renamed from: m  reason: collision with root package name */
-        int f43995m;
+        int f43795m;
 
         /* renamed from: n  reason: collision with root package name */
-        float f43996n;
+        float f43796n;
 
         /* renamed from: o  reason: collision with root package name */
-        float f43997o;
+        float f43797o;
 
         /* renamed from: p  reason: collision with root package name */
-        float f43998p;
+        float f43798p;
 
         /* renamed from: q  reason: collision with root package name */
-        int f43999q;
+        int f43799q;
 
         /* renamed from: r  reason: collision with root package name */
-        int f44000r;
+        int f43800r;
 
         /* renamed from: s  reason: collision with root package name */
-        int f44001s;
+        int f43801s;
 
         /* renamed from: t  reason: collision with root package name */
-        int f44002t;
+        int f43802t;
 
         /* renamed from: u  reason: collision with root package name */
-        boolean f44003u;
+        boolean f43803u;
 
         /* renamed from: v  reason: collision with root package name */
-        Paint.Style f44004v;
+        Paint.Style f43804v;
 
         public c(k kVar, gh.a aVar) {
-            this.f43986d = null;
-            this.f43987e = null;
-            this.f43988f = null;
-            this.f43989g = null;
-            this.f43990h = PorterDuff.Mode.SRC_IN;
-            this.f43991i = null;
-            this.f43992j = 1.0f;
-            this.f43993k = 1.0f;
-            this.f43995m = SetSpanOperation.SPAN_MAX_PRIORITY;
-            this.f43996n = 0.0f;
-            this.f43997o = 0.0f;
-            this.f43998p = 0.0f;
-            this.f43999q = 0;
-            this.f44000r = 0;
-            this.f44001s = 0;
-            this.f44002t = 0;
-            this.f44003u = false;
-            this.f44004v = Paint.Style.FILL_AND_STROKE;
-            this.f43983a = kVar;
-            this.f43984b = aVar;
+            this.f43786d = null;
+            this.f43787e = null;
+            this.f43788f = null;
+            this.f43789g = null;
+            this.f43790h = PorterDuff.Mode.SRC_IN;
+            this.f43791i = null;
+            this.f43792j = 1.0f;
+            this.f43793k = 1.0f;
+            this.f43795m = SetSpanOperation.SPAN_MAX_PRIORITY;
+            this.f43796n = 0.0f;
+            this.f43797o = 0.0f;
+            this.f43798p = 0.0f;
+            this.f43799q = 0;
+            this.f43800r = 0;
+            this.f43801s = 0;
+            this.f43802t = 0;
+            this.f43803u = false;
+            this.f43804v = Paint.Style.FILL_AND_STROKE;
+            this.f43783a = kVar;
+            this.f43784b = aVar;
         }
 
         @Override // android.graphics.drawable.Drawable.ConstantState
@@ -865,52 +865,52 @@ public class g extends Drawable implements n {
         @Override // android.graphics.drawable.Drawable.ConstantState
         public Drawable newDrawable() {
             g gVar = new g(this);
-            gVar.f43969p = true;
+            gVar.f43769p = true;
             return gVar;
         }
 
         public c(c cVar) {
-            this.f43986d = null;
-            this.f43987e = null;
-            this.f43988f = null;
-            this.f43989g = null;
-            this.f43990h = PorterDuff.Mode.SRC_IN;
-            this.f43991i = null;
-            this.f43992j = 1.0f;
-            this.f43993k = 1.0f;
-            this.f43995m = SetSpanOperation.SPAN_MAX_PRIORITY;
-            this.f43996n = 0.0f;
-            this.f43997o = 0.0f;
-            this.f43998p = 0.0f;
-            this.f43999q = 0;
-            this.f44000r = 0;
-            this.f44001s = 0;
-            this.f44002t = 0;
-            this.f44003u = false;
-            this.f44004v = Paint.Style.FILL_AND_STROKE;
-            this.f43983a = cVar.f43983a;
-            this.f43984b = cVar.f43984b;
-            this.f43994l = cVar.f43994l;
-            this.f43985c = cVar.f43985c;
-            this.f43986d = cVar.f43986d;
-            this.f43987e = cVar.f43987e;
-            this.f43990h = cVar.f43990h;
-            this.f43989g = cVar.f43989g;
-            this.f43995m = cVar.f43995m;
-            this.f43992j = cVar.f43992j;
-            this.f44001s = cVar.f44001s;
-            this.f43999q = cVar.f43999q;
-            this.f44003u = cVar.f44003u;
-            this.f43993k = cVar.f43993k;
-            this.f43996n = cVar.f43996n;
-            this.f43997o = cVar.f43997o;
-            this.f43998p = cVar.f43998p;
-            this.f44000r = cVar.f44000r;
-            this.f44002t = cVar.f44002t;
-            this.f43988f = cVar.f43988f;
-            this.f44004v = cVar.f44004v;
-            if (cVar.f43991i != null) {
-                this.f43991i = new Rect(cVar.f43991i);
+            this.f43786d = null;
+            this.f43787e = null;
+            this.f43788f = null;
+            this.f43789g = null;
+            this.f43790h = PorterDuff.Mode.SRC_IN;
+            this.f43791i = null;
+            this.f43792j = 1.0f;
+            this.f43793k = 1.0f;
+            this.f43795m = SetSpanOperation.SPAN_MAX_PRIORITY;
+            this.f43796n = 0.0f;
+            this.f43797o = 0.0f;
+            this.f43798p = 0.0f;
+            this.f43799q = 0;
+            this.f43800r = 0;
+            this.f43801s = 0;
+            this.f43802t = 0;
+            this.f43803u = false;
+            this.f43804v = Paint.Style.FILL_AND_STROKE;
+            this.f43783a = cVar.f43783a;
+            this.f43784b = cVar.f43784b;
+            this.f43794l = cVar.f43794l;
+            this.f43785c = cVar.f43785c;
+            this.f43786d = cVar.f43786d;
+            this.f43787e = cVar.f43787e;
+            this.f43790h = cVar.f43790h;
+            this.f43789g = cVar.f43789g;
+            this.f43795m = cVar.f43795m;
+            this.f43792j = cVar.f43792j;
+            this.f43801s = cVar.f43801s;
+            this.f43799q = cVar.f43799q;
+            this.f43803u = cVar.f43803u;
+            this.f43793k = cVar.f43793k;
+            this.f43796n = cVar.f43796n;
+            this.f43797o = cVar.f43797o;
+            this.f43798p = cVar.f43798p;
+            this.f43800r = cVar.f43800r;
+            this.f43802t = cVar.f43802t;
+            this.f43788f = cVar.f43788f;
+            this.f43804v = cVar.f43804v;
+            if (cVar.f43791i != null) {
+                this.f43791i = new Rect(cVar.f43791i);
             }
         }
     }

@@ -12,7 +12,7 @@ public class FilterRegion {
     SVGLength mY;
 
     private double getRelativeOrDefault(VirtualView virtualView, SVGLength sVGLength, float f10, double d10) {
-        if (sVGLength != null && sVGLength.f17373b != SVGLength.UnitType.UNKNOWN) {
+        if (sVGLength != null && sVGLength.f16341b != SVGLength.UnitType.UNKNOWN) {
             return virtualView.relativeOn(sVGLength, f10);
         }
         return d10;

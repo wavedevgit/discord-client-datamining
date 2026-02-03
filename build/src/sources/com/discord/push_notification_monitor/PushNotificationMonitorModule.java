@@ -56,7 +56,7 @@ public final class PushNotificationMonitorModule extends NativePushNotificationM
     public void getPushNotificationLogs(@NotNull String userId, @NotNull Promise promise) {
         Intrinsics.checkNotNullParameter(userId, "userId");
         Intrinsics.checkNotNullParameter(promise, "promise");
-        Json.a aVar = Json.f36186d;
+        Json.a aVar = Json.f35576d;
         PushNotificationLog pushLog = PushNotificationMonitor.INSTANCE.getPushLog(this.reactContext, userId);
         aVar.a();
         promise.resolve(aVar.c(PushNotificationLog.Companion.serializer(), pushLog));

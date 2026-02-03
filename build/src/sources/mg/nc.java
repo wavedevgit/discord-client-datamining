@@ -5,7 +5,7 @@ import ui.c;
 final class nc implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final nc f38494a = new nc();
+    static final nc f38291a = new nc();
 
     static {
         c.b a10 = ui.c.a("metric");

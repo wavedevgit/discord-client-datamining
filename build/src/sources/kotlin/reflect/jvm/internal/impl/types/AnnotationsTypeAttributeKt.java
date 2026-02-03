@@ -12,15 +12,15 @@ import org.jetbrains.annotations.NotNull;
 public final class AnnotationsTypeAttributeKt {
 
     /* renamed from: a  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f35618a = {Reflection.property1(new PropertyReference1Impl(AnnotationsTypeAttributeKt.class, "annotationsAttribute", "getAnnotationsAttribute(Lorg/jetbrains/kotlin/types/TypeAttributes;)Lorg/jetbrains/kotlin/types/AnnotationsTypeAttribute;", 1))};
+    static final /* synthetic */ KProperty[] f35008a = {Reflection.property1(new PropertyReference1Impl(AnnotationsTypeAttributeKt.class, "annotationsAttribute", "getAnnotationsAttribute(Lorg/jetbrains/kotlin/types/TypeAttributes;)Lorg/jetbrains/kotlin/types/AnnotationsTypeAttribute;", 1))};
 
     /* renamed from: b  reason: collision with root package name */
-    private static final kotlin.properties.d f35619b;
+    private static final kotlin.properties.d f35009b;
 
     static {
         kotlin.properties.d generateNullableAccessor = TypeAttributes.Companion.generateNullableAccessor(Reflection.getOrCreateKotlinClass(AnnotationsTypeAttribute.class));
         Intrinsics.checkNotNull(generateNullableAccessor, "null cannot be cast to non-null type kotlin.properties.ReadOnlyProperty<org.jetbrains.kotlin.types.TypeAttributes, T of org.jetbrains.kotlin.types.TypeAttributes.Companion.attributeAccessor?>");
-        f35619b = generateNullableAccessor;
+        f35009b = generateNullableAccessor;
     }
 
     @NotNull
@@ -36,6 +36,6 @@ public final class AnnotationsTypeAttributeKt {
 
     public static final AnnotationsTypeAttribute getAnnotationsAttribute(@NotNull TypeAttributes typeAttributes) {
         Intrinsics.checkNotNullParameter(typeAttributes, "<this>");
-        return (AnnotationsTypeAttribute) f35619b.getValue(typeAttributes, f35618a[0]);
+        return (AnnotationsTypeAttribute) f35009b.getValue(typeAttributes, f35008a[0]);
     }
 }

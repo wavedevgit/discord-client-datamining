@@ -1,94 +1,95 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = global;
-    var5 = var2.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
+    var4 = require;
+    var2 = exports;
+    var3 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var3;
     var0 = function() {
-        _fun59006: for (var _fun59006_ip = 0;;) switch (_fun59006_ip) {
-            case 0:
-                var1 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var5 = 0;
-                var0 = var0[var5];
-                var4 = undefined;
-                var0 = var1.bind(var4)(var0);
-                var0 = var0.GLOBAL_OBJ;
-                var1 = var0.chrome;
-                var0 = var1;
-                if (!var0) {
-                    _fun59006_ip = 48;
-                    continue _fun59006
+        var4 = undefined;
+        var0 = undefined;
+        var3 = _closure1_slot2;
+        var2 = function*(arg0) { // Environment: var2
+            var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
+                _fun59052: for (var _fun59052_ip = 0;;) switch (_fun59052_ip) {
+                    case 0:
+                        StartGenerator();
+                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
+                        if (var1) {
+                            _fun59052_ip = 74;
+                            continue _fun59052
+                        }
+                    case 7:
+                        var3 = _closure1_slot0;
+                        var2 = _closure1_slot1;
+                        var1 = 1;
+                        var2 = var2[var1];
+                        var1 = undefined;
+                        var3 = var3.bind(var1)(var2);
+                        var2 = var3._asyncOptionalChain;
+                        var1 = arg0;
+                        var1 = var2.bind(var3)(var1);
+                        SaveGenerator(address = 50);
+                    case 48:
+                        return var1;
+                    case 50:
+                        ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
+                        if (var2) {
+                            _fun59052_ip = 71;
+                            continue _fun59052
+                        }
+                    case 56:
+                        var2 = null;
+                        var2 = var2 == var1;
+                        if (var2) {
+                            _fun59052_ip = 68;
+                            continue _fun59052
+                        }
+                    case 65:
+                        var2 = var1;
+                    case 68:
+                        return var2;
+                    case 71:
+                        return var1;
+                    case 74:
+                        return var0;
                 }
-            case 42:
-                var0 = var1.app;
-            case 48:
-                if (!var0) {
-                    _fun59006_ip = 63;
-                    continue _fun59006
-                }
-            case 51:
-                var1 = var1.app;
-                var0 = var1.runtime;
-            case 63:
-                var3 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var1 = var1[var5];
-                var1 = var3.bind(var4)(var1);
-                var3 = var1.GLOBAL_OBJ;
-                var1 = 'history';
-                var1 = var1 in var3;
-                if (!var1) {
-                    _fun59006_ip = 138;
-                    continue _fun59006
-                }
-            case 97:
-                var6 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var3 = var3[var5];
-                var3 = var6.bind(var4)(var3);
-                var3 = var3.GLOBAL_OBJ;
-                var3 = var3.history;
-                var3 = var3.pushState;
-                var3 = !var3;
-                var1 = !var3;
-            case 138:
-                if (!var1) {
-                    _fun59006_ip = 182;
-                    continue _fun59006
-                }
-            case 141:
-                var3 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var2 = var2[var5];
-                var2 = var3.bind(var4)(var2);
-                var2 = var2.GLOBAL_OBJ;
-                var2 = var2.history;
-                var2 = var2.replaceState;
-                var2 = !var2;
-                var1 = !var2;
-            case 182:
-                var0 = !var0;
-                if (!var0) {
-                    _fun59006_ip = 191;
-                    continue _fun59006
-                }
-            case 188:
-                var0 = var1;
-            case 191:
-                return var0;
-        }
+            };
+            return var0;
+        };
+        var3 = var3.bind(var4)(var2);
+        _closure1_slot3 = var3;
+        var2 = var3.apply;
+        var0 = arguments;
+        var1 = var0;
+        var0 = this;
+        var0 = var2.bind(var3)(var0, var1);
+        return var0;
     };
-    var1.supportsHistory = var0;
+    var _closure1_slot3 = var0;
+    var0 = 0;
+    var3 = var3[var0];
     var0 = undefined;
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot2 = var3;
+    var3 = global;
+    var6 = var3.Object;
+    var5 = var6.defineProperty;
+    var4 = {};
+    var3 = true;
+    var4.value = var3;
+    var3 = '__esModule';
+    var3 = var5.bind(var6)(var2, var3, var4);
+    var1 = function arg0() {
+        var0 = undefined;
+        var3 = _closure1_slot3;
+        var2 = var3.apply;
+        var0 = arguments;
+        var1 = var0;
+        var0 = this;
+        var0 = var2.bind(var3)(var0, var1);
+        return var0;
+    };
+    var2._asyncOptionalChainDelete = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7165]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 7210]);

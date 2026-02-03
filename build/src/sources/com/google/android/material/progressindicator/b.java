@@ -9,35 +9,35 @@ import yg.k;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public int f15880a;
+    public int f14848a;
 
     /* renamed from: b  reason: collision with root package name */
-    public int f15881b;
+    public int f14849b;
 
     /* renamed from: c  reason: collision with root package name */
-    public int[] f15882c = new int[0];
+    public int[] f14850c = new int[0];
 
     /* renamed from: d  reason: collision with root package name */
-    public int f15883d;
+    public int f14851d;
 
     /* renamed from: e  reason: collision with root package name */
-    public int f15884e;
+    public int f14852e;
 
     /* renamed from: f  reason: collision with root package name */
-    public int f15885f;
+    public int f14853f;
 
     /* renamed from: g  reason: collision with root package name */
-    public int f15886g;
+    public int f14854g;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public b(Context context, AttributeSet attributeSet, int i10, int i11) {
-        int dimensionPixelSize = context.getResources().getDimensionPixelSize(yg.d.f54370b0);
+        int dimensionPixelSize = context.getResources().getDimensionPixelSize(yg.d.f54128b0);
         TypedArray i12 = l.i(context, attributeSet, k.G, i10, i11, new int[0]);
-        this.f15880a = lh.c.c(context, i12, k.P, dimensionPixelSize);
-        this.f15881b = Math.min(lh.c.c(context, i12, k.O, 0), this.f15880a / 2);
-        this.f15884e = i12.getInt(k.L, 0);
-        this.f15885f = i12.getInt(k.H, 0);
-        this.f15886g = i12.getDimensionPixelSize(k.J, 0);
+        this.f14848a = lh.c.c(context, i12, k.P, dimensionPixelSize);
+        this.f14849b = Math.min(lh.c.c(context, i12, k.O, 0), this.f14848a / 2);
+        this.f14852e = i12.getInt(k.L, 0);
+        this.f14853f = i12.getInt(k.H, 0);
+        this.f14854g = i12.getDimensionPixelSize(k.J, 0);
         c(context, i12);
         d(context, i12);
         i12.recycle();
@@ -45,12 +45,12 @@ public abstract class b {
 
     private void c(Context context, TypedArray typedArray) {
         if (!typedArray.hasValue(k.I)) {
-            this.f15882c = new int[]{eh.a.b(context, yg.b.f54342l, -1)};
+            this.f14850c = new int[]{eh.a.b(context, yg.b.f54100l, -1)};
         } else if (typedArray.peekValue(k.I).type != 1) {
-            this.f15882c = new int[]{typedArray.getColor(k.I, -1)};
+            this.f14850c = new int[]{typedArray.getColor(k.I, -1)};
         } else {
             int[] intArray = context.getResources().getIntArray(typedArray.getResourceId(k.I, -1));
-            this.f15882c = intArray;
+            this.f14850c = intArray;
             if (intArray.length != 0) {
                 return;
             }
@@ -60,25 +60,25 @@ public abstract class b {
 
     private void d(Context context, TypedArray typedArray) {
         if (typedArray.hasValue(k.N)) {
-            this.f15883d = typedArray.getColor(k.N, -1);
+            this.f14851d = typedArray.getColor(k.N, -1);
             return;
         }
-        this.f15883d = this.f15882c[0];
+        this.f14851d = this.f14850c[0];
         TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(new int[]{16842803});
         float f10 = obtainStyledAttributes.getFloat(0, 0.2f);
         obtainStyledAttributes.recycle();
-        this.f15883d = eh.a.a(this.f15883d, (int) (f10 * 255.0f));
+        this.f14851d = eh.a.a(this.f14851d, (int) (f10 * 255.0f));
     }
 
     public boolean a() {
-        if (this.f15885f != 0) {
+        if (this.f14853f != 0) {
             return true;
         }
         return false;
     }
 
     public boolean b() {
-        if (this.f15884e != 0) {
+        if (this.f14852e != 0) {
             return true;
         }
         return false;
@@ -86,7 +86,7 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void e() {
-        if (this.f15886g >= 0) {
+        if (this.f14854g >= 0) {
             return;
         }
         throw new IllegalArgumentException("indicatorTrackGapSize must be >= 0.");

@@ -1,31 +1,24 @@
 package ss;
 
-import kotlin.jvm.internal.Intrinsics;
-import ss.o;
+import kotlinx.coroutines.sync.Mutex;
+import os.e0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface f extends o.c {
+public abstract class f {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public static void a(f fVar, h0 padding) {
-            Intrinsics.checkNotNullParameter(padding, "padding");
-            fVar.h(new us.e(new u(padding)));
-        }
+    /* renamed from: a  reason: collision with root package name */
+    private static final e0 f49604a = new e0("NO_OWNER");
 
-        public static void b(f fVar, h0 padding) {
-            Intrinsics.checkNotNullParameter(padding, "padding");
-            fVar.h(new us.e(new c0(padding)));
-        }
+    /* renamed from: b  reason: collision with root package name */
+    private static final e0 f49605b = new e0("ALREADY_LOCKED_BY_OWNER");
 
-        public static void c(f fVar, h0 padding) {
-            Intrinsics.checkNotNullParameter(padding, "padding");
-            fVar.h(new us.e(new i0(padding)));
-        }
-
-        public static void d(f fVar, int i10, int i11) {
-            fVar.h(new us.e(new t(i10, i11, null, 4, null)));
-        }
+    public static final Mutex a(boolean z10) {
+        return new e(z10);
     }
 
-    void h(us.o oVar);
+    public static /* synthetic */ Mutex b(boolean z10, int i10, Object obj) {
+        if ((i10 & 1) != 0) {
+            z10 = false;
+        }
+        return a(z10);
+    }
 }

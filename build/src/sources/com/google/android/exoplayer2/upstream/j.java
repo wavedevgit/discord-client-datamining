@@ -13,22 +13,22 @@ import ne.w0;
 public final class j implements i.e {
 
     /* renamed from: a  reason: collision with root package name */
-    public final long f14132a;
+    public final long f13100a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final com.google.android.exoplayer2.upstream.a f14133b;
+    public final com.google.android.exoplayer2.upstream.a f13101b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f14134c;
+    public final int f13102c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final a0 f14135d;
+    private final a0 f13103d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final a f14136e;
+    private final a f13104e;
 
     /* renamed from: f  reason: collision with root package name */
-    private volatile Object f14137f;
+    private volatile Object f13105f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface a {
@@ -40,16 +40,16 @@ public final class j implements i.e {
     }
 
     public long a() {
-        return this.f14135d.o();
+        return this.f13103d.o();
     }
 
     @Override // com.google.android.exoplayer2.upstream.i.e
     public final void b() {
-        this.f14135d.r();
-        n nVar = new n(this.f14135d, this.f14133b);
+        this.f13103d.r();
+        n nVar = new n(this.f13103d, this.f13101b);
         try {
             nVar.h();
-            this.f14137f = this.f14136e.a((Uri) ne.a.e(this.f14135d.m()), nVar);
+            this.f13105f = this.f13104e.a((Uri) ne.a.e(this.f13103d.m()), nVar);
         } finally {
             w0.n(nVar);
         }
@@ -60,22 +60,22 @@ public final class j implements i.e {
     }
 
     public Map d() {
-        return this.f14135d.q();
+        return this.f13103d.q();
     }
 
     public final Object e() {
-        return this.f14137f;
+        return this.f13105f;
     }
 
     public Uri f() {
-        return this.f14135d.p();
+        return this.f13103d.p();
     }
 
     public j(DataSource dataSource, com.google.android.exoplayer2.upstream.a aVar, int i10, a aVar2) {
-        this.f14135d = new a0(dataSource);
-        this.f14133b = aVar;
-        this.f14134c = i10;
-        this.f14136e = aVar2;
-        this.f14132a = LoadEventInfo.a();
+        this.f13103d = new a0(dataSource);
+        this.f13101b = aVar;
+        this.f13102c = i10;
+        this.f13104e = aVar2;
+        this.f13100a = LoadEventInfo.a();
     }
 }

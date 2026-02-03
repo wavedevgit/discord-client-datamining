@@ -7,20 +7,20 @@ import java.util.Map;
 public final class a implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final i f22644a;
+    private final i f21335a;
 
     public a(i iVar) {
-        this.f22644a = iVar;
+        this.f21335a = iVar;
     }
 
     @Override // e5.h
-    public c.C0299c b(c.b bVar) {
+    public c.C0277c b(c.b bVar) {
         return null;
     }
 
     @Override // e5.h
     public void d(c.b bVar, Bitmap bitmap, Map map) {
-        this.f22644a.d(bVar, bitmap, map, k5.a.a(bitmap));
+        this.f21335a.d(bVar, bitmap, map, k5.a.a(bitmap));
     }
 
     @Override // e5.h

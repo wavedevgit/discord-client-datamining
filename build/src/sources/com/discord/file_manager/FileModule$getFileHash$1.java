@@ -51,7 +51,7 @@ final class FileModule$getFileHash$1 extends k implements Function2<CoroutineSco
     public final java.lang.Object invokeSuspend(java.lang.Object r10) {
         /*
             r9 = this;
-            pr.b.f()
+            rr.b.f()
             int r0 = r9.label
             if (r0 != 0) goto Ldb
             kotlin.c.b(r10)
@@ -62,7 +62,7 @@ final class FileModule$getFileHash$1 extends k implements Function2<CoroutineSco
             java.lang.String r1 = r9.$uri
             com.facebook.react.bridge.Promise r2 = r9.$promise
             double r3 = r9.$chunkSize
-            kotlin.Result$a r5 = kotlin.Result.f33071e     // Catch: java.lang.Throwable -> La3
+            kotlin.Result$a r5 = kotlin.Result.f32461e     // Catch: java.lang.Throwable -> La3
             java.util.Locale r5 = java.util.Locale.ROOT     // Catch: java.lang.Throwable -> La3
             java.lang.String r10 = r10.toLowerCase(r5)     // Catch: java.lang.Throwable -> La3
             java.lang.String r5 = "toLowerCase(...)"
@@ -81,7 +81,7 @@ final class FileModule$getFileHash$1 extends k implements Function2<CoroutineSco
             r0.<init>(r1)     // Catch: java.lang.Throwable -> L62
             java.lang.String r1 = "MD5"
             java.security.MessageDigest r1 = java.security.MessageDigest.getInstance(r1)     // Catch: java.lang.Throwable -> L62
-            int r3 = yr.a.b(r3)     // Catch: java.lang.Throwable -> L62
+            int r3 = as.a.b(r3)     // Catch: java.lang.Throwable -> L62
             byte[] r3 = new byte[r3]     // Catch: java.lang.Throwable -> L62
         L56:
             int r4 = r0.read(r3)     // Catch: java.lang.Throwable -> L62
@@ -119,7 +119,7 @@ final class FileModule$getFileHash$1 extends k implements Function2<CoroutineSco
         L98:
             java.lang.String r0 = r0.toString()     // Catch: java.lang.Throwable -> L62
             r1 = 0
-            ur.c.a(r10, r1)     // Catch: java.lang.Throwable -> La3
+            wr.c.a(r10, r1)     // Catch: java.lang.Throwable -> La3
             if (r0 == 0) goto Lab
             goto Lad
         La3:
@@ -129,13 +129,13 @@ final class FileModule$getFileHash$1 extends k implements Function2<CoroutineSco
             throw r0     // Catch: java.lang.Throwable -> La6
         La6:
             r1 = move-exception
-            ur.c.a(r10, r0)     // Catch: java.lang.Throwable -> La3
+            wr.c.a(r10, r0)     // Catch: java.lang.Throwable -> La3
             throw r1     // Catch: java.lang.Throwable -> La3
         Lab:
             java.lang.String r0 = ""
         Lad:
             r2.resolve(r0)     // Catch: java.lang.Throwable -> La3
-            kotlin.Unit r10 = kotlin.Unit.f33074a     // Catch: java.lang.Throwable -> La3
+            kotlin.Unit r10 = kotlin.Unit.f32464a     // Catch: java.lang.Throwable -> La3
             java.lang.Object r10 = kotlin.Result.b(r10)     // Catch: java.lang.Throwable -> La3
             goto Lc9
         Lb7:
@@ -144,7 +144,7 @@ final class FileModule$getFileHash$1 extends k implements Function2<CoroutineSco
             r0.<init>(r10)     // Catch: java.lang.Throwable -> La3
             throw r0     // Catch: java.lang.Throwable -> La3
         Lbf:
-            kotlin.Result$a r0 = kotlin.Result.f33071e
+            kotlin.Result$a r0 = kotlin.Result.f32461e
             java.lang.Object r10 = kotlin.c.a(r10)
             java.lang.Object r10 = kotlin.Result.b(r10)
         Lc9:
@@ -155,7 +155,7 @@ final class FileModule$getFileHash$1 extends k implements Function2<CoroutineSco
             java.lang.String r2 = "Cannot get checksum of file"
             r0.reject(r1, r2, r10)
         Ld8:
-            kotlin.Unit r10 = kotlin.Unit.f33074a
+            kotlin.Unit r10 = kotlin.Unit.f32464a
             return r10
         Ldb:
             java.lang.IllegalStateException r10 = new java.lang.IllegalStateException
@@ -168,6 +168,6 @@ final class FileModule$getFileHash$1 extends k implements Function2<CoroutineSco
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileModule$getFileHash$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        return ((FileModule$getFileHash$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
     }
 }

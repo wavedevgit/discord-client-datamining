@@ -5,7 +5,7 @@ import ui.c;
 final class j8 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final j8 f38279a = new j8();
+    static final j8 f38076a = new j8();
 
     static {
         c.b a10 = ui.c.a("latencyMs");

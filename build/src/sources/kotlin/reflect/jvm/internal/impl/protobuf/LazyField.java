@@ -6,23 +6,23 @@ import java.util.Map;
 public class LazyField extends LazyFieldLite {
 
     /* renamed from: e  reason: collision with root package name */
-    private final MessageLite f35023e;
+    private final MessageLite f34413e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static class b implements Map.Entry {
 
         /* renamed from: d  reason: collision with root package name */
-        private Map.Entry f35024d;
+        private Map.Entry f34414d;
 
         @Override // java.util.Map.Entry
         public Object getKey() {
-            return this.f35024d.getKey();
+            return this.f34414d.getKey();
         }
 
         @Override // java.util.Map.Entry
         public Object getValue() {
-            LazyField lazyField = (LazyField) this.f35024d.getValue();
+            LazyField lazyField = (LazyField) this.f34414d.getValue();
             if (lazyField == null) {
                 return null;
             }
@@ -32,13 +32,13 @@ public class LazyField extends LazyFieldLite {
         @Override // java.util.Map.Entry
         public Object setValue(Object obj) {
             if (obj instanceof MessageLite) {
-                return ((LazyField) this.f35024d.getValue()).setValue((MessageLite) obj);
+                return ((LazyField) this.f34414d.getValue()).setValue((MessageLite) obj);
             }
             throw new IllegalArgumentException("LazyField now only used for MessageSet, and the value of MessageSet must be an instance of MessageLite");
         }
 
         private b(Map.Entry entry) {
-            this.f35024d = entry;
+            this.f34414d = entry;
         }
     }
 
@@ -46,16 +46,16 @@ public class LazyField extends LazyFieldLite {
     static class c implements Iterator {
 
         /* renamed from: d  reason: collision with root package name */
-        private Iterator f35025d;
+        private Iterator f34415d;
 
         public c(Iterator it) {
-            this.f35025d = it;
+            this.f34415d = it;
         }
 
         @Override // java.util.Iterator
         /* renamed from: a */
         public Map.Entry next() {
-            Map.Entry entry = (Map.Entry) this.f35025d.next();
+            Map.Entry entry = (Map.Entry) this.f34415d.next();
             if (entry.getValue() instanceof LazyField) {
                 return new b(entry);
             }
@@ -64,12 +64,12 @@ public class LazyField extends LazyFieldLite {
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            return this.f35025d.hasNext();
+            return this.f34415d.hasNext();
         }
 
         @Override // java.util.Iterator
         public void remove() {
-            this.f35025d.remove();
+            this.f34415d.remove();
         }
     }
 
@@ -78,7 +78,7 @@ public class LazyField extends LazyFieldLite {
     }
 
     public MessageLite getValue() {
-        return getValue(this.f35023e);
+        return getValue(this.f34413e);
     }
 
     public int hashCode() {

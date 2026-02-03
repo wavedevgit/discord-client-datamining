@@ -1,80 +1,94 @@
 package dt;
 
+import ct.k;
+import ct.l;
+import kotlin.Lazy;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.json.Json;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b0 extends kotlinx.serialization.encoding.a {
+public final class b0 extends a2 {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final a f22385a;
+    /* renamed from: m  reason: collision with root package name */
+    private final ct.k f20905m;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final et.b f22386b;
+    /* renamed from: n  reason: collision with root package name */
+    private final Lazy f20906n;
 
-    public b0(a lexer, Json json) {
-        Intrinsics.checkNotNullParameter(lexer, "lexer");
-        Intrinsics.checkNotNullParameter(json, "json");
-        this.f22385a = lexer;
-        this.f22386b = json.a();
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public b0(final String name, final int i10) {
+        super(name, null, i10, 2, null);
+        Intrinsics.checkNotNullParameter(name, "name");
+        this.f20905m = k.b.f19852a;
+        this.f20906n = lr.l.a(new Function0() { // from class: dt.a0
+            @Override // kotlin.jvm.functions.Function0
+            public final Object invoke() {
+                SerialDescriptor[] A;
+                A = b0.A(i10, name, this);
+                return A;
+            }
+        });
     }
 
-    @Override // kotlinx.serialization.encoding.a, kotlinx.serialization.encoding.Decoder
-    public byte H() {
-        a aVar = this.f22385a;
-        String q10 = aVar.q();
-        try {
-            return kotlin.text.e0.a(q10);
-        } catch (IllegalArgumentException unused) {
-            a.x(aVar, "Failed to parse type 'UByte' for input '" + q10 + '\'', 0, null, 6, null);
-            throw new jr.h();
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final SerialDescriptor[] A(int i10, String str, b0 b0Var) {
+        SerialDescriptor[] serialDescriptorArr = new SerialDescriptor[i10];
+        for (int i11 = 0; i11 < i10; i11++) {
+            serialDescriptorArr[i11] = ct.j.e(str + '.' + b0Var.e(i11), l.d.f19856a, new SerialDescriptor[0], null, 8, null);
         }
+        return serialDescriptorArr;
     }
 
-    @Override // kotlinx.serialization.encoding.Decoder, kotlinx.serialization.encoding.c
-    public et.b a() {
-        return this.f22386b;
+    private final SerialDescriptor[] B() {
+        return (SerialDescriptor[]) this.f20906n.getValue();
     }
 
-    @Override // kotlinx.serialization.encoding.a, kotlinx.serialization.encoding.Decoder
-    public int h() {
-        a aVar = this.f22385a;
-        String q10 = aVar.q();
-        try {
-            return kotlin.text.e0.d(q10);
-        } catch (IllegalArgumentException unused) {
-            a.x(aVar, "Failed to parse type 'UInt' for input '" + q10 + '\'', 0, null, 6, null);
-            throw new jr.h();
+    @Override // dt.a2
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-    }
-
-    @Override // kotlinx.serialization.encoding.a, kotlinx.serialization.encoding.Decoder
-    public long l() {
-        a aVar = this.f22385a;
-        String q10 = aVar.q();
-        try {
-            return kotlin.text.e0.g(q10);
-        } catch (IllegalArgumentException unused) {
-            a.x(aVar, "Failed to parse type 'ULong' for input '" + q10 + '\'', 0, null, 6, null);
-            throw new jr.h();
+        if (obj == null || !(obj instanceof SerialDescriptor)) {
+            return false;
         }
-    }
-
-    @Override // kotlinx.serialization.encoding.c
-    public int o(SerialDescriptor descriptor) {
-        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        throw new IllegalStateException("unsupported");
-    }
-
-    @Override // kotlinx.serialization.encoding.a, kotlinx.serialization.encoding.Decoder
-    public short s() {
-        a aVar = this.f22385a;
-        String q10 = aVar.q();
-        try {
-            return kotlin.text.e0.j(q10);
-        } catch (IllegalArgumentException unused) {
-            a.x(aVar, "Failed to parse type 'UShort' for input '" + q10 + '\'', 0, null, 6, null);
-            throw new jr.h();
+        SerialDescriptor serialDescriptor = (SerialDescriptor) obj;
+        if (serialDescriptor.getKind() == k.b.f19852a && Intrinsics.areEqual(h(), serialDescriptor.h()) && Intrinsics.areEqual(u1.a(this), u1.a(serialDescriptor))) {
+            return true;
         }
+        return false;
+    }
+
+    @Override // dt.a2, kotlinx.serialization.descriptors.SerialDescriptor
+    public SerialDescriptor g(int i10) {
+        return B()[i10];
+    }
+
+    @Override // dt.a2, kotlinx.serialization.descriptors.SerialDescriptor
+    public ct.k getKind() {
+        return this.f20905m;
+    }
+
+    @Override // dt.a2
+    public int hashCode() {
+        int i10;
+        int hashCode = h().hashCode();
+        int i11 = 1;
+        for (String str : ct.h.b(this)) {
+            int i12 = i11 * 31;
+            if (str != null) {
+                i10 = str.hashCode();
+            } else {
+                i10 = 0;
+            }
+            i11 = i12 + i10;
+        }
+        return (hashCode * 31) + i11;
+    }
+
+    @Override // dt.a2
+    public String toString() {
+        Iterable b10 = ct.h.b(this);
+        return CollectionsKt.x0(b10, ", ", h() + '(', ")", 0, null, null, 56, null);
     }
 }

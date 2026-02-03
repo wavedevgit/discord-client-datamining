@@ -57,21 +57,21 @@ public final class NextStep_GovernmentIdJsonAdapter extends h {
         NextStep.GovernmentId.Config config = null;
         StepStyles.GovernmentIdStepStyle governmentIdStepStyle = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
-                    throw tm.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+                    throw vm.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
                 }
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 config = (NextStep.GovernmentId.Config) this.configAdapter.fromJson(reader);
                 if (config == null) {
-                    throw tm.c.x("config", "config", reader);
+                    throw vm.c.x("config", "config", reader);
                 }
-            } else if (t02 == 2) {
+            } else if (A0 == 2) {
                 governmentIdStepStyle = (StepStyles.GovernmentIdStepStyle) this.nullableGovernmentIdStepStyleAdapter.fromJson(reader);
             }
         }
@@ -80,9 +80,9 @@ public final class NextStep_GovernmentIdJsonAdapter extends h {
             if (config != null) {
                 return new NextStep.GovernmentId(str, config, governmentIdStepStyle);
             }
-            throw tm.c.o("config", "config", reader);
+            throw vm.c.o("config", "config", reader);
         }
-        throw tm.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+        throw vm.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -90,11 +90,11 @@ public final class NextStep_GovernmentIdJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentId != null) {
             writer.l();
-            writer.t0(StackTraceHelper.NAME_KEY);
+            writer.A0(StackTraceHelper.NAME_KEY);
             this.stringAdapter.toJson(writer, governmentId.getName());
-            writer.t0("config");
+            writer.A0("config");
             this.configAdapter.toJson(writer, governmentId.getConfig());
-            writer.t0("styles");
+            writer.A0("styles");
             this.nullableGovernmentIdStepStyleAdapter.toJson(writer, governmentId.getStyles());
             writer.E();
             return;

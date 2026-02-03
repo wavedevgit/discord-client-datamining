@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/premium_group/native/PremiumGroupWordmark.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun59370: for (var _fun59370_ip = 0;;) switch (_fun59370_ip) {
+        _fun59428: for (var _fun59428_ip = 0;;) switch (_fun59428_ip) {
             case 0:
                 var3 = arg0;
                 var10 = var3.width;
@@ -67,8 +67,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var4)(var0);
                 var6 = 'white';
                 if (var1) {
-                    _fun59370_ip = 127;
-                    continue _fun59370
+                    _fun59428_ip = 127;
+                    continue _fun59428
                 }
             case 124:
                 var6 = var0;
@@ -104,4 +104,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3142, 671, 5455, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3151, 671, 5460, 2]);

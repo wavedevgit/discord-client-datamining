@@ -17,58 +17,58 @@ import tc.z;
 public final class b implements k {
 
     /* renamed from: r  reason: collision with root package name */
-    private static final int[] f50191r;
+    private static final int[] f50478r;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final int f50194u;
+    private static final int f50481u;
 
     /* renamed from: a  reason: collision with root package name */
-    private final byte[] f50195a;
+    private final byte[] f50482a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f50196b;
+    private final int f50483b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f50197c;
+    private boolean f50484c;
 
     /* renamed from: d  reason: collision with root package name */
-    private long f50198d;
+    private long f50485d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f50199e;
+    private int f50486e;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f50200f;
+    private int f50487f;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f50201g;
+    private boolean f50488g;
 
     /* renamed from: h  reason: collision with root package name */
-    private long f50202h;
+    private long f50489h;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f50203i;
+    private int f50490i;
 
     /* renamed from: j  reason: collision with root package name */
-    private int f50204j;
+    private int f50491j;
 
     /* renamed from: k  reason: collision with root package name */
-    private long f50205k;
+    private long f50492k;
 
     /* renamed from: l  reason: collision with root package name */
-    private m f50206l;
+    private m f50493l;
 
     /* renamed from: m  reason: collision with root package name */
-    private b0 f50207m;
+    private b0 f50494m;
 
     /* renamed from: n  reason: collision with root package name */
-    private z f50208n;
+    private z f50495n;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f50209o;
+    private boolean f50496o;
 
     /* renamed from: p  reason: collision with root package name */
-    public static final p f50189p = new p() { // from class: uc.a
+    public static final p f50476p = new p() { // from class: uc.a
         @Override // tc.p
         public final k[] b() {
             return b.b();
@@ -76,18 +76,18 @@ public final class b implements k {
     };
 
     /* renamed from: q  reason: collision with root package name */
-    private static final int[] f50190q = {13, 14, 16, 18, 20, 21, 27, 32, 6, 7, 6, 6, 1, 1, 1, 1};
+    private static final int[] f50477q = {13, 14, 16, 18, 20, 21, 27, 32, 6, 7, 6, 6, 1, 1, 1, 1};
 
     /* renamed from: s  reason: collision with root package name */
-    private static final byte[] f50192s = w0.s0("#!AMR\n");
+    private static final byte[] f50479s = w0.s0("#!AMR\n");
 
     /* renamed from: t  reason: collision with root package name */
-    private static final byte[] f50193t = w0.s0("#!AMR-WB\n");
+    private static final byte[] f50480t = w0.s0("#!AMR-WB\n");
 
     static {
         int[] iArr = {18, 24, 33, 37, 41, 47, 51, 59, 61, 6, 1, 1, 1, 1, 1, 1};
-        f50191r = iArr;
-        f50194u = iArr[8];
+        f50478r = iArr;
+        f50481u = iArr[8];
     }
 
     public b() {
@@ -99,8 +99,8 @@ public final class b implements k {
     }
 
     private void e() {
-        ne.a.i(this.f50207m);
-        w0.j(this.f50206l);
+        ne.a.i(this.f50494m);
+        w0.j(this.f50493l);
     }
 
     private static int g(int i10, long j10) {
@@ -108,7 +108,7 @@ public final class b implements k {
     }
 
     private z h(long j10, boolean z10) {
-        return new d(j10, this.f50202h, g(this.f50203i, 20000L), this.f50203i, z10);
+        return new d(j10, this.f50489h, g(this.f50490i, 20000L), this.f50490i, z10);
     }
 
     private int i(int i10) {
@@ -116,7 +116,7 @@ public final class b implements k {
         if (!k(i10)) {
             StringBuilder sb2 = new StringBuilder();
             sb2.append("Illegal AMR ");
-            if (this.f50197c) {
+            if (this.f50484c) {
                 str = "WB";
             } else {
                 str = "NB";
@@ -125,15 +125,15 @@ public final class b implements k {
             sb2.append(" frame type ");
             sb2.append(i10);
             throw l0.a(sb2.toString(), null);
-        } else if (this.f50197c) {
-            return f50191r[i10];
+        } else if (this.f50484c) {
+            return f50478r[i10];
         } else {
-            return f50190q[i10];
+            return f50477q[i10];
         }
     }
 
     private boolean j(int i10) {
-        if (!this.f50197c) {
+        if (!this.f50484c) {
             if (i10 < 12 || i10 > 14) {
                 return true;
             }
@@ -153,7 +153,7 @@ public final class b implements k {
     }
 
     private boolean l(int i10) {
-        if (this.f50197c) {
+        if (this.f50484c) {
             if (i10 < 10 || i10 > 13) {
                 return true;
             }
@@ -165,9 +165,9 @@ public final class b implements k {
     private void m() {
         String str;
         int i10;
-        if (!this.f50209o) {
-            this.f50209o = true;
-            boolean z10 = this.f50197c;
+        if (!this.f50496o) {
+            this.f50496o = true;
+            boolean z10 = this.f50484c;
             if (z10) {
                 str = "audio/amr-wb";
             } else {
@@ -178,17 +178,17 @@ public final class b implements k {
             } else {
                 i10 = 8000;
             }
-            this.f50207m.b(new Format.b().g0(str).Y(f50194u).J(1).h0(i10).G());
+            this.f50494m.b(new Format.b().g0(str).Y(f50481u).J(1).h0(i10).G());
         }
     }
 
     private void n(long j10, int i10) {
         int i11;
         boolean z10;
-        if (!this.f50201g) {
-            int i12 = this.f50196b;
-            if ((i12 & 1) != 0 && j10 != -1 && ((i11 = this.f50203i) == -1 || i11 == this.f50199e)) {
-                if (this.f50204j < 20 && i10 != -1) {
+        if (!this.f50488g) {
+            int i12 = this.f50483b;
+            if ((i12 & 1) != 0 && j10 != -1 && ((i11 = this.f50490i) == -1 || i11 == this.f50486e)) {
+                if (this.f50491j < 20 && i10 != -1) {
                     return;
                 }
                 if ((i12 & 2) != 0) {
@@ -197,15 +197,15 @@ public final class b implements k {
                     z10 = false;
                 }
                 z h10 = h(j10, z10);
-                this.f50208n = h10;
-                this.f50206l.q(h10);
-                this.f50201g = true;
+                this.f50495n = h10;
+                this.f50493l.q(h10);
+                this.f50488g = true;
                 return;
             }
             z.b bVar = new z.b(-9223372036854775807L);
-            this.f50208n = bVar;
-            this.f50206l.q(bVar);
-            this.f50201g = true;
+            this.f50495n = bVar;
+            this.f50493l.q(bVar);
+            this.f50488g = true;
         }
     }
 
@@ -218,8 +218,8 @@ public final class b implements k {
 
     private int p(l lVar) {
         lVar.e();
-        lVar.n(this.f50195a, 0, 1);
-        byte b10 = this.f50195a[0];
+        lVar.n(this.f50482a, 0, 1);
+        byte b10 = this.f50482a[0];
         if ((b10 & 131) <= 0) {
             return i((b10 >> 3) & 15);
         }
@@ -227,71 +227,71 @@ public final class b implements k {
     }
 
     private boolean q(l lVar) {
-        byte[] bArr = f50192s;
+        byte[] bArr = f50479s;
         if (o(lVar, bArr)) {
-            this.f50197c = false;
+            this.f50484c = false;
             lVar.k(bArr.length);
             return true;
         }
-        byte[] bArr2 = f50193t;
+        byte[] bArr2 = f50480t;
         if (!o(lVar, bArr2)) {
             return false;
         }
-        this.f50197c = true;
+        this.f50484c = true;
         lVar.k(bArr2.length);
         return true;
     }
 
     private int r(l lVar) {
-        if (this.f50200f == 0) {
+        if (this.f50487f == 0) {
             try {
                 int p10 = p(lVar);
-                this.f50199e = p10;
-                this.f50200f = p10;
-                if (this.f50203i == -1) {
-                    this.f50202h = lVar.getPosition();
-                    this.f50203i = this.f50199e;
+                this.f50486e = p10;
+                this.f50487f = p10;
+                if (this.f50490i == -1) {
+                    this.f50489h = lVar.getPosition();
+                    this.f50490i = this.f50486e;
                 }
-                if (this.f50203i == this.f50199e) {
-                    this.f50204j++;
+                if (this.f50490i == this.f50486e) {
+                    this.f50491j++;
                 }
             } catch (EOFException unused) {
                 return -1;
             }
         }
-        int a10 = this.f50207m.a(lVar, this.f50200f, true);
+        int a10 = this.f50494m.a(lVar, this.f50487f, true);
         if (a10 == -1) {
             return -1;
         }
-        int i10 = this.f50200f - a10;
-        this.f50200f = i10;
+        int i10 = this.f50487f - a10;
+        this.f50487f = i10;
         if (i10 > 0) {
             return 0;
         }
-        this.f50207m.d(this.f50205k + this.f50198d, 1, this.f50199e, 0, null);
-        this.f50198d += 20000;
+        this.f50494m.d(this.f50492k + this.f50485d, 1, this.f50486e, 0, null);
+        this.f50485d += 20000;
         return 0;
     }
 
     @Override // tc.k
     public void a(long j10, long j11) {
-        this.f50198d = 0L;
-        this.f50199e = 0;
-        this.f50200f = 0;
+        this.f50485d = 0L;
+        this.f50486e = 0;
+        this.f50487f = 0;
         if (j10 != 0) {
-            z zVar = this.f50208n;
+            z zVar = this.f50495n;
             if (zVar instanceof d) {
-                this.f50205k = ((d) zVar).c(j10);
+                this.f50492k = ((d) zVar).c(j10);
                 return;
             }
         }
-        this.f50205k = 0L;
+        this.f50492k = 0L;
     }
 
     @Override // tc.k
     public void c(m mVar) {
-        this.f50206l = mVar;
-        this.f50207m = mVar.c(0, 1);
+        this.f50493l = mVar;
+        this.f50494m = mVar.c(0, 1);
         mVar.s();
     }
 
@@ -313,9 +313,9 @@ public final class b implements k {
     }
 
     public b(int i10) {
-        this.f50196b = (i10 & 2) != 0 ? i10 | 1 : i10;
-        this.f50195a = new byte[1];
-        this.f50203i = -1;
+        this.f50483b = (i10 & 2) != 0 ? i10 | 1 : i10;
+        this.f50482a = new byte[1];
+        this.f50490i = -1;
     }
 
     @Override // tc.k

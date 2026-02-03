@@ -57,15 +57,15 @@ public final class Footer_FooterComponentStyleJsonAdapter extends h {
         AttributeStyles.FooterPaddingStyle footerPaddingStyle = null;
         AttributeStyles.FooterBorderWidthStyle footerBorderWidthStyle = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 footerColorStyle = (AttributeStyles.FooterColorStyle) this.nullableFooterColorStyleAdapter.fromJson(reader);
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 footerPaddingStyle = (AttributeStyles.FooterPaddingStyle) this.nullableFooterPaddingStyleAdapter.fromJson(reader);
-            } else if (t02 == 2) {
+            } else if (A0 == 2) {
                 footerBorderWidthStyle = (AttributeStyles.FooterBorderWidthStyle) this.nullableFooterBorderWidthStyleAdapter.fromJson(reader);
             }
         }
@@ -78,11 +78,11 @@ public final class Footer_FooterComponentStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (footerComponentStyle != null) {
             writer.l();
-            writer.t0(ViewProps.BACKGROUND_COLOR);
+            writer.A0(ViewProps.BACKGROUND_COLOR);
             this.nullableFooterColorStyleAdapter.toJson(writer, footerComponentStyle.getBackgroundColor());
-            writer.t0(ViewProps.PADDING);
+            writer.A0(ViewProps.PADDING);
             this.nullableFooterPaddingStyleAdapter.toJson(writer, footerComponentStyle.getPadding());
-            writer.t0(ViewProps.BORDER_WIDTH);
+            writer.A0(ViewProps.BORDER_WIDTH);
             this.nullableFooterBorderWidthStyleAdapter.toJson(writer, footerComponentStyle.getBorderWidth());
             writer.E();
             return;

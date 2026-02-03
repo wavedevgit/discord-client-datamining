@@ -73,14 +73,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure1_slot2;
                     var1 = function*(arg0) { // Environment: var1
                         var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                            _fun118183: for (var _fun118183_ip = 0;;) switch (_fun118183_ip) {
+                            _fun118273: for (var _fun118273_ip = 0;;) switch (_fun118273_ip) {
                                 case 0:
                                     StartGenerator();
                                     var8 = arg0;
                                     ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                     if (var1) {
-                                        _fun118183_ip = 269;
-                                        continue _fun118183
+                                        _fun118273_ip = 256;
+                                        continue _fun118273
                                     }
                                 case 13:
                                     var4 = _closure1_slot0;
@@ -105,23 +105,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var10 = _closure1_slot4;
                                     var10 = var10.PUSH_NOTIFICATION;
                                     var1.location = var10;
-                                    var10 = var8.referenceMessageId;
-                                    var1.messageIdFromNotificationExperiment = var10;
                                     var15 = var9;
                                     var13 = var5;
                                     var12 = false;
                                     var11 = var1;
                                     var1 = var15[var7](var14, var13, var12, var11, var10);
-                                    SaveGenerator(address = 141);
-                                case 139:
+                                    SaveGenerator(address = 128);
+                                case 126:
                                     return var1;
-                                case 141:
+                                case 128:
                                     ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 4);
                                     if (var4) {
-                                        _fun118183_ip = 266;
-                                        continue _fun118183
+                                        _fun118273_ip = 253;
+                                        continue _fun118273
                                     }
-                                case 147:
+                                case 134:
                                     var7 = _closure1_slot5;
                                     var6 = var7.log;
                                     var5 = var1.ok;
@@ -129,10 +127,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var4 = var6.bind(var7)(var4, var5);
                                     var4 = var1.ok;
                                     if (!var4) {
-                                        _fun118183_ip = 249;
-                                        continue _fun118183
+                                        _fun118273_ip = 236;
+                                        continue _fun118273
                                     }
-                                case 183:
+                                case 170:
                                     var3 = _closure1_slot3;
                                     var5 = var3.PushNotificationAndroid;
                                     var4 = var5.handleDirectReplySuccess;
@@ -148,14 +146,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var8 = copyDataProperties(var14, var13);
                                     var3 = var6.bind(var7)(var3);
                                     var3 = var4.bind(var5)(var3);
-                                case 249:
+                                case 236:
                                     var4 = _closure3_slot0;
                                     var3 = true;
                                     var3 = var4.bind(var2)(var3);
                                     return var2;
-                                case 266:
+                                case 253:
                                     return var1;
-                                case 269:
+                                case 256:
                                     return var0;
                             }
                         };
@@ -207,4 +205,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/headless_tasks/android/DirectReply.tsx';
     var1 = var2.bind(var3)(var1);
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 27, 1346, 3, 15060, 6521, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 27, 1346, 3, 15075, 6526, 2]);

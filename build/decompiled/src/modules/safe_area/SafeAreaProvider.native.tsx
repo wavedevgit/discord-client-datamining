@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
-        _fun46442: for (var _fun46442_ip = 0;;) switch (_fun46442_ip) {
+        _fun46498: for (var _fun46498_ip = 0;;) switch (_fun46498_ip) {
             case 0:
                 var6 = arg0;
                 var3 = _closure1_slot0;
@@ -23,8 +23,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot0;
                 var3 = _closure1_slot2;
                 if (var4) {
-                    _fun46442_ip = 248;
-                    continue _fun46442
+                    _fun46498_ip = 248;
+                    continue _fun46498
                 }
             case 52:
                 var4 = 5;
@@ -33,8 +33,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5.isAndroid;
                 var4 = var4.bind(var5)();
                 if (var4) {
-                    _fun46442_ip = 79;
-                    continue _fun46442
+                    _fun46498_ip = 79;
+                    continue _fun46498
                 }
             case 77:
                 return var6;
@@ -55,36 +55,36 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = null;
                 var0 = var6;
                 if (!(var5 != var7)) {
-                    _fun46442_ip = 246;
-                    continue _fun46442
+                    _fun46498_ip = 246;
+                    continue _fun46498
                 }
             case 146:
                 var8 = var7.bottom;
                 var5 = var4.bottom;
                 if (!(var8 === var5)) {
-                    _fun46442_ip = 202;
-                    continue _fun46442
+                    _fun46498_ip = 202;
+                    continue _fun46498
                 }
             case 160:
                 var8 = var7.top;
                 var5 = var4.top;
                 if (!(var8 === var5)) {
-                    _fun46442_ip = 202;
-                    continue _fun46442
+                    _fun46498_ip = 202;
+                    continue _fun46498
                 }
             case 174:
                 var8 = var7.left;
                 var5 = var4.left;
                 if (!(var8 === var5)) {
-                    _fun46442_ip = 202;
-                    continue _fun46442
+                    _fun46498_ip = 202;
+                    continue _fun46498
                 }
             case 188:
                 var8 = var7.right;
                 var5 = var4.right;
                 if (!(var8 !== var5)) {
-                    _fun46442_ip = 243;
-                    continue _fun46442
+                    _fun46498_ip = 243;
+                    continue _fun46498
                 }
             case 202:
                 var5 = {};
@@ -200,13 +200,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var6;
         var0 = function() { // Environment: var0
-            _fun46447: for (var _fun46447_ip = 0;;) switch (_fun46447_ip) {
+            _fun46503: for (var _fun46503_ip = 0;;) switch (_fun46503_ip) {
                 case 0:
                     var1 = _closure2_slot1;
                     var1 = var1.current;
                     if (var1) {
-                        _fun46447_ip = 70;
-                        continue _fun46447
+                        _fun46503_ip = 70;
+                        continue _fun46503
                     }
                 case 15:
                     var1 = _closure2_slot1;
@@ -281,4 +281,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.SafeAreaProvider = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 4097, 1570, 478, 1569, 1580, 1571, 802, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 4106, 1570, 478, 1569, 1580, 1571, 802, 2]);

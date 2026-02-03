@@ -62,7 +62,7 @@ public final class GiftMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof GiftMessageAccessory) {
             GiftMessageAccessory giftMessageAccessory = (GiftMessageAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, giftMessageAccessory.messageId) && this.index == giftMessageAccessory.index && Intrinsics.areEqual(this.gift, giftMessageAccessory.gift);
+            return MessageId.m1089equalsimpl0(this.messageId, giftMessageAccessory.messageId) && this.index == giftMessageAccessory.index && Intrinsics.areEqual(this.gift, giftMessageAccessory.gift);
         }
         return false;
     }
@@ -84,15 +84,15 @@ public final class GiftMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (((MessageId.m1091hashCodeimpl(this.messageId) * 31) + Integer.hashCode(this.index)) * 31) + this.gift.hashCode();
+        return (((MessageId.m1090hashCodeimpl(this.messageId) * 31) + Integer.hashCode(this.index)) * 31) + this.gift.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         int i10 = this.index;
         GiftEmbed giftEmbed = this.gift;
-        return "GiftMessageAccessory(messageId=" + m1093toStringimpl + ", index=" + i10 + ", gift=" + giftEmbed + ")";
+        return "GiftMessageAccessory(messageId=" + m1092toStringimpl + ", index=" + i10 + ", gift=" + giftEmbed + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

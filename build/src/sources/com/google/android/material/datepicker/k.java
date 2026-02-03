@@ -49,79 +49,79 @@ public final class k<S> extends DialogFragment {
     private CharSequence M;
 
     /* renamed from: d  reason: collision with root package name */
-    private final LinkedHashSet f15579d = new LinkedHashSet();
+    private final LinkedHashSet f14547d = new LinkedHashSet();
 
     /* renamed from: e  reason: collision with root package name */
-    private final LinkedHashSet f15580e = new LinkedHashSet();
+    private final LinkedHashSet f14548e = new LinkedHashSet();
 
     /* renamed from: i  reason: collision with root package name */
-    private final LinkedHashSet f15581i = new LinkedHashSet();
+    private final LinkedHashSet f14549i = new LinkedHashSet();
 
     /* renamed from: o  reason: collision with root package name */
-    private final LinkedHashSet f15582o = new LinkedHashSet();
+    private final LinkedHashSet f14550o = new LinkedHashSet();
 
     /* renamed from: p  reason: collision with root package name */
-    private int f15583p;
+    private int f14551p;
 
     /* renamed from: q  reason: collision with root package name */
-    private q f15584q;
+    private q f14552q;
 
     /* renamed from: r  reason: collision with root package name */
-    private com.google.android.material.datepicker.a f15585r;
+    private com.google.android.material.datepicker.a f14553r;
 
     /* renamed from: s  reason: collision with root package name */
-    private i f15586s;
+    private i f14554s;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f15587t;
+    private int f14555t;
 
     /* renamed from: u  reason: collision with root package name */
-    private CharSequence f15588u;
+    private CharSequence f14556u;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f15589v;
+    private boolean f14557v;
 
     /* renamed from: w  reason: collision with root package name */
-    private int f15590w;
+    private int f14558w;
 
     /* renamed from: x  reason: collision with root package name */
-    private int f15591x;
+    private int f14559x;
 
     /* renamed from: y  reason: collision with root package name */
-    private CharSequence f15592y;
+    private CharSequence f14560y;
 
     /* renamed from: z  reason: collision with root package name */
-    private int f15593z;
+    private int f14561z;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public class a implements v {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ int f15594d;
+        final /* synthetic */ int f14562d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ View f15595e;
+        final /* synthetic */ View f14563e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ int f15596i;
+        final /* synthetic */ int f14564i;
 
         a(int i10, View view, int i11) {
-            this.f15594d = i10;
-            this.f15595e = view;
-            this.f15596i = i11;
+            this.f14562d = i10;
+            this.f14563e = view;
+            this.f14564i = i11;
         }
 
         @Override // androidx.core.view.v
         public WindowInsetsCompat a(View view, WindowInsetsCompat windowInsetsCompat) {
-            int i10 = windowInsetsCompat.f(WindowInsetsCompat.p.h()).f3195b;
-            if (this.f15594d >= 0) {
-                this.f15595e.getLayoutParams().height = this.f15594d + i10;
-                View view2 = this.f15595e;
+            int i10 = windowInsetsCompat.f(WindowInsetsCompat.p.h()).f3164b;
+            if (this.f14562d >= 0) {
+                this.f14563e.getLayoutParams().height = this.f14562d + i10;
+                View view2 = this.f14563e;
                 view2.setLayoutParams(view2.getLayoutParams());
             }
-            View view3 = this.f15595e;
-            view3.setPadding(view3.getPaddingLeft(), this.f15596i + i10, this.f15595e.getPaddingRight(), this.f15595e.getPaddingBottom());
+            View view3 = this.f14563e;
+            view3.setPadding(view3.getPaddingLeft(), this.f14564i + i10, this.f14563e.getPaddingRight(), this.f14563e.getPaddingBottom());
             return windowInsetsCompat;
         }
     }
@@ -135,8 +135,8 @@ public final class k<S> extends DialogFragment {
 
     private static Drawable A(Context context) {
         StateListDrawable stateListDrawable = new StateListDrawable();
-        stateListDrawable.addState(new int[]{16842912}, g.a.b(context, yg.e.f54403c));
-        stateListDrawable.addState(new int[0], g.a.b(context, yg.e.f54404d));
+        stateListDrawable.addState(new int[]{16842912}, g.a.b(context, yg.e.f54161c));
+        stateListDrawable.addState(new int[0], g.a.b(context, yg.e.f54162d));
         return stateListDrawable;
     }
 
@@ -144,7 +144,7 @@ public final class k<S> extends DialogFragment {
         if (this.K) {
             return;
         }
-        View findViewById = requireView().findViewById(yg.f.f54420i);
+        View findViewById = requireView().findViewById(yg.f.f54178i);
         com.google.android.material.internal.c.a(window, true, com.google.android.material.internal.o.e(findViewById), null);
         h0.D0(findViewById, new a(findViewById.getLayoutParams().height, findViewById, findViewById.getPaddingTop()));
         this.K = true;
@@ -175,12 +175,12 @@ public final class k<S> extends DialogFragment {
     private static int G(Context context) {
         Resources resources = context.getResources();
         int dimensionPixelOffset = resources.getDimensionPixelOffset(yg.d.L);
-        int i10 = m.f().f15605o;
+        int i10 = m.f().f14573o;
         return (dimensionPixelOffset * 2) + (resources.getDimensionPixelSize(yg.d.N) * i10) + ((i10 - 1) * resources.getDimensionPixelOffset(yg.d.Q));
     }
 
     private int H(Context context) {
-        int i10 = this.f15583p;
+        int i10 = this.f14551p;
         if (i10 != 0) {
             return i10;
         }
@@ -193,7 +193,7 @@ public final class k<S> extends DialogFragment {
         this.H.setTag(P);
         this.H.setImageDrawable(A(context));
         CheckableImageButton checkableImageButton = this.H;
-        if (this.f15590w != 0) {
+        if (this.f14558w != 0) {
             z10 = true;
         } else {
             z10 = false;
@@ -227,7 +227,7 @@ public final class k<S> extends DialogFragment {
     }
 
     static boolean M(Context context, int i10) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(lh.b.d(context, yg.b.f54356z, i.class.getCanonicalName()), new int[]{i10});
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(lh.b.d(context, yg.b.f54114z, i.class.getCanonicalName()), new int[]{i10});
         boolean z10 = obtainStyledAttributes.getBoolean(0, false);
         obtainStyledAttributes.recycle();
         return z10;
@@ -236,26 +236,26 @@ public final class k<S> extends DialogFragment {
     private void N() {
         int H = H(requireContext());
         C();
-        i N2 = i.N(null, H, this.f15585r, null);
-        this.f15586s = N2;
+        i N2 = i.N(null, H, this.f14553r, null);
+        this.f14554s = N2;
         q qVar = N2;
-        if (this.f15590w == 1) {
+        if (this.f14558w == 1) {
             C();
-            qVar = l.z(null, H, this.f15585r);
+            qVar = l.z(null, H, this.f14553r);
         }
-        this.f15584q = qVar;
+        this.f14552q = qVar;
         P();
         O(F());
         FragmentTransaction r10 = getChildFragmentManager().r();
-        r10.n(yg.f.f54437z, this.f15584q);
+        r10.n(yg.f.f54195z, this.f14552q);
         r10.i();
-        this.f15584q.x(new b());
+        this.f14552q.x(new b());
     }
 
     private void P() {
         CharSequence charSequence;
         TextView textView = this.F;
-        if (this.f15590w == 1 && K()) {
+        if (this.f14558w == 1 && K()) {
             charSequence = this.M;
         } else {
             charSequence = this.L;
@@ -265,10 +265,10 @@ public final class k<S> extends DialogFragment {
 
     private void Q(CheckableImageButton checkableImageButton) {
         String string;
-        if (this.f15590w == 1) {
-            string = checkableImageButton.getContext().getString(yg.i.f54483r);
+        if (this.f14558w == 1) {
+            string = checkableImageButton.getContext().getString(yg.i.f54241r);
         } else {
-            string = checkableImageButton.getContext().getString(yg.i.f54485t);
+            string = checkableImageButton.getContext().getString(yg.i.f54243t);
         }
         this.H.setContentDescription(string);
     }
@@ -291,7 +291,7 @@ public final class k<S> extends DialogFragment {
 
     @Override // androidx.fragment.app.DialogFragment, android.content.DialogInterface.OnCancelListener
     public final void onCancel(DialogInterface dialogInterface) {
-        Iterator it = this.f15581i.iterator();
+        Iterator it = this.f14549i.iterator();
         while (it.hasNext()) {
             ((DialogInterface.OnCancelListener) it.next()).onCancel(dialogInterface);
         }
@@ -304,24 +304,24 @@ public final class k<S> extends DialogFragment {
         if (bundle == null) {
             bundle = getArguments();
         }
-        this.f15583p = bundle.getInt("OVERRIDE_THEME_RES_ID");
+        this.f14551p = bundle.getInt("OVERRIDE_THEME_RES_ID");
         android.support.v4.media.session.b.a(bundle.getParcelable("DATE_SELECTOR_KEY"));
-        this.f15585r = (com.google.android.material.datepicker.a) bundle.getParcelable("CALENDAR_CONSTRAINTS_KEY");
+        this.f14553r = (com.google.android.material.datepicker.a) bundle.getParcelable("CALENDAR_CONSTRAINTS_KEY");
         android.support.v4.media.session.b.a(bundle.getParcelable("DAY_VIEW_DECORATOR_KEY"));
-        this.f15587t = bundle.getInt("TITLE_TEXT_RES_ID_KEY");
-        this.f15588u = bundle.getCharSequence("TITLE_TEXT_KEY");
-        this.f15590w = bundle.getInt("INPUT_MODE_KEY");
-        this.f15591x = bundle.getInt("POSITIVE_BUTTON_TEXT_RES_ID_KEY");
-        this.f15592y = bundle.getCharSequence("POSITIVE_BUTTON_TEXT_KEY");
-        this.f15593z = bundle.getInt("POSITIVE_BUTTON_CONTENT_DESCRIPTION_RES_ID_KEY");
+        this.f14555t = bundle.getInt("TITLE_TEXT_RES_ID_KEY");
+        this.f14556u = bundle.getCharSequence("TITLE_TEXT_KEY");
+        this.f14558w = bundle.getInt("INPUT_MODE_KEY");
+        this.f14559x = bundle.getInt("POSITIVE_BUTTON_TEXT_RES_ID_KEY");
+        this.f14560y = bundle.getCharSequence("POSITIVE_BUTTON_TEXT_KEY");
+        this.f14561z = bundle.getInt("POSITIVE_BUTTON_CONTENT_DESCRIPTION_RES_ID_KEY");
         this.A = bundle.getCharSequence("POSITIVE_BUTTON_CONTENT_DESCRIPTION_KEY");
         this.B = bundle.getInt("NEGATIVE_BUTTON_TEXT_RES_ID_KEY");
         this.C = bundle.getCharSequence("NEGATIVE_BUTTON_TEXT_KEY");
         this.D = bundle.getInt("NEGATIVE_BUTTON_CONTENT_DESCRIPTION_RES_ID_KEY");
         this.E = bundle.getCharSequence("NEGATIVE_BUTTON_CONTENT_DESCRIPTION_KEY");
-        CharSequence charSequence = this.f15588u;
+        CharSequence charSequence = this.f14556u;
         if (charSequence == null) {
-            charSequence = requireContext().getResources().getText(this.f15587t);
+            charSequence = requireContext().getResources().getText(this.f14555t);
         }
         this.L = charSequence;
         this.M = D(charSequence);
@@ -331,10 +331,10 @@ public final class k<S> extends DialogFragment {
     public final Dialog onCreateDialog(Bundle bundle) {
         Dialog dialog = new Dialog(requireContext(), H(requireContext()));
         Context context = dialog.getContext();
-        this.f15589v = J(context);
-        this.I = new oh.g(context, null, yg.b.f54356z, yg.j.f54510v);
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(null, yg.k.f54657o3, yg.b.f54356z, yg.j.f54510v);
-        int color = obtainStyledAttributes.getColor(yg.k.f54666p3, 0);
+        this.f14557v = J(context);
+        this.I = new oh.g(context, null, yg.b.f54114z, yg.j.f54268v);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(null, yg.k.f54415o3, yg.b.f54114z, yg.j.f54268v);
+        int color = obtainStyledAttributes.getColor(yg.k.f54424p3, 0);
         obtainStyledAttributes.recycle();
         this.I.N(context);
         this.I.X(ColorStateList.valueOf(color));
@@ -345,15 +345,15 @@ public final class k<S> extends DialogFragment {
     @Override // androidx.fragment.app.Fragment
     public final View onCreateView(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
         int i10;
-        if (this.f15589v) {
-            i10 = yg.h.f54465w;
+        if (this.f14557v) {
+            i10 = yg.h.f54223w;
         } else {
-            i10 = yg.h.f54464v;
+            i10 = yg.h.f54222v;
         }
         View inflate = layoutInflater.inflate(i10, viewGroup);
         Context context = inflate.getContext();
-        if (this.f15589v) {
-            inflate.findViewById(yg.f.f54437z).setLayoutParams(new LinearLayout.LayoutParams(G(context), -2));
+        if (this.f14557v) {
+            inflate.findViewById(yg.f.f54195z).setLayoutParams(new LinearLayout.LayoutParams(G(context), -2));
         } else {
             inflate.findViewById(yg.f.A).setLayoutParams(new LinearLayout.LayoutParams(G(context), -1));
         }
@@ -363,14 +363,14 @@ public final class k<S> extends DialogFragment {
         this.H = (CheckableImageButton) inflate.findViewById(yg.f.H);
         this.F = (TextView) inflate.findViewById(yg.f.I);
         I(context);
-        this.J = (Button) inflate.findViewById(yg.f.f54415d);
+        this.J = (Button) inflate.findViewById(yg.f.f54173d);
         C();
         throw null;
     }
 
     @Override // androidx.fragment.app.DialogFragment, android.content.DialogInterface.OnDismissListener
     public final void onDismiss(DialogInterface dialogInterface) {
-        Iterator it = this.f15582o.iterator();
+        Iterator it = this.f14550o.iterator();
         while (it.hasNext()) {
             ((DialogInterface.OnDismissListener) it.next()).onDismiss(dialogInterface);
         }
@@ -385,26 +385,26 @@ public final class k<S> extends DialogFragment {
     public final void onSaveInstanceState(Bundle bundle) {
         m I;
         super.onSaveInstanceState(bundle);
-        bundle.putInt("OVERRIDE_THEME_RES_ID", this.f15583p);
+        bundle.putInt("OVERRIDE_THEME_RES_ID", this.f14551p);
         bundle.putParcelable("DATE_SELECTOR_KEY", null);
-        a.b bVar = new a.b(this.f15585r);
-        i iVar = this.f15586s;
+        a.b bVar = new a.b(this.f14553r);
+        i iVar = this.f14554s;
         if (iVar == null) {
             I = null;
         } else {
             I = iVar.I();
         }
         if (I != null) {
-            bVar.b(I.f15607q);
+            bVar.b(I.f14575q);
         }
         bundle.putParcelable("CALENDAR_CONSTRAINTS_KEY", bVar.a());
         bundle.putParcelable("DAY_VIEW_DECORATOR_KEY", null);
-        bundle.putInt("TITLE_TEXT_RES_ID_KEY", this.f15587t);
-        bundle.putCharSequence("TITLE_TEXT_KEY", this.f15588u);
-        bundle.putInt("INPUT_MODE_KEY", this.f15590w);
-        bundle.putInt("POSITIVE_BUTTON_TEXT_RES_ID_KEY", this.f15591x);
-        bundle.putCharSequence("POSITIVE_BUTTON_TEXT_KEY", this.f15592y);
-        bundle.putInt("POSITIVE_BUTTON_CONTENT_DESCRIPTION_RES_ID_KEY", this.f15593z);
+        bundle.putInt("TITLE_TEXT_RES_ID_KEY", this.f14555t);
+        bundle.putCharSequence("TITLE_TEXT_KEY", this.f14556u);
+        bundle.putInt("INPUT_MODE_KEY", this.f14558w);
+        bundle.putInt("POSITIVE_BUTTON_TEXT_RES_ID_KEY", this.f14559x);
+        bundle.putCharSequence("POSITIVE_BUTTON_TEXT_KEY", this.f14560y);
+        bundle.putInt("POSITIVE_BUTTON_CONTENT_DESCRIPTION_RES_ID_KEY", this.f14561z);
         bundle.putCharSequence("POSITIVE_BUTTON_CONTENT_DESCRIPTION_KEY", this.A);
         bundle.putInt("NEGATIVE_BUTTON_TEXT_RES_ID_KEY", this.B);
         bundle.putCharSequence("NEGATIVE_BUTTON_TEXT_KEY", this.C);
@@ -416,7 +416,7 @@ public final class k<S> extends DialogFragment {
     public void onStart() {
         super.onStart();
         Window window = requireDialog().getWindow();
-        if (this.f15589v) {
+        if (this.f14557v) {
             window.setLayout(-1, -1);
             window.setBackgroundDrawable(this.I);
             B(window);
@@ -432,7 +432,7 @@ public final class k<S> extends DialogFragment {
 
     @Override // androidx.fragment.app.DialogFragment, androidx.fragment.app.Fragment
     public void onStop() {
-        this.f15584q.y();
+        this.f14552q.y();
         super.onStop();
     }
 }

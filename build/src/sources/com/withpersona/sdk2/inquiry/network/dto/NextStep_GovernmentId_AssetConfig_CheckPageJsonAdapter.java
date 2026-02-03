@@ -47,11 +47,11 @@ public final class NextStep_GovernmentId_AssetConfig_CheckPageJsonAdapter extend
         RemoteImage remoteImage = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 remoteImage = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 = -2;
             }
@@ -62,7 +62,7 @@ public final class NextStep_GovernmentId_AssetConfig_CheckPageJsonAdapter extend
         }
         Constructor<NextStep.GovernmentId.AssetConfig.CheckPage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.GovernmentId.AssetConfig.CheckPage.class.getDeclaredConstructor(RemoteImage.class, Integer.TYPE, tm.c.f49935c);
+            constructor = NextStep.GovernmentId.AssetConfig.CheckPage.class.getDeclaredConstructor(RemoteImage.class, Integer.TYPE, vm.c.f51691c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -76,7 +76,7 @@ public final class NextStep_GovernmentId_AssetConfig_CheckPageJsonAdapter extend
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (checkPage != null) {
             writer.l();
-            writer.t0("iconFile");
+            writer.A0("iconFile");
             this.nullableRemoteImageAdapter.toJson(writer, checkPage.getIconFile());
             writer.E();
             return;

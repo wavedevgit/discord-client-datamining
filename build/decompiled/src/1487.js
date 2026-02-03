@@ -44,7 +44,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = {};
         var _closure2_slot0 = var2;
         var2 = function arg0, arg1() {
-            _fun17102: for (var _fun17102_ip = 0;;) switch (_fun17102_ip) {
+            _fun17103: for (var _fun17103_ip = 0;;) switch (_fun17103_ip) {
                 case 0:
                     var2 = arg0;
                     var1 = arg1;
@@ -52,8 +52,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = _closure2_slot0;
                     var3 = var3[var2];
                     if (!var3) {
-                        _fun17102_ip = 53;
-                        continue _fun17102
+                        _fun17103_ip = 53;
+                        continue _fun17103
                     }
                 case 26:
                     var1 = _closure2_slot0;
@@ -83,15 +83,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             return var0;
         };
         var5 = function arg0() {
-            _fun17105: for (var _fun17105_ip = 0;;) switch (_fun17105_ip) {
+            _fun17106: for (var _fun17106_ip = 0;;) switch (_fun17106_ip) {
                 case 0:
                     var3 = arg0;
                     var _closure3_slot0 = var3;
                     _closure2_slot2 = var3;
                     var2 = null;
                     if (!(var2 != var3)) {
-                        _fun17105_ip = 60;
-                        continue _fun17105
+                        _fun17106_ip = 60;
+                        continue _fun17106
                     }
                 case 22:
                     var2 = global;
@@ -137,14 +137,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             enumerable: true
         });
         var4 = function() {
-            _fun17108: for (var _fun17108_ip = 0;;) switch (_fun17108_ip) {
+            _fun17109: for (var _fun17109_ip = 0;;) switch (_fun17109_ip) {
                 case 0:
                     var2 = _closure2_slot2;
                     var0 = null;
                     var0 = var0 != var2;
                     if (!var0) {
-                        _fun17108_ip = 30;
-                        continue _fun17108
+                        _fun17109_ip = 30;
+                        continue _fun17109
                     }
                 case 16:
                     var2 = _closure2_slot2;
@@ -161,7 +161,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = arg1;
             var _closure3_slot0 = var2;
             var1 = function() { // Environment: var1
-                _fun17110: for (var _fun17110_ip = 0;;) switch (_fun17110_ip) {
+                _fun17111: for (var _fun17111_ip = 0;;) switch (_fun17111_ip) {
                     case 0:
                         var4 = undefined;
                         var7 = undefined;
@@ -182,44 +182,44 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var8 = var2 < var6;
                         var0 = 0;
                         if (!var8) {
-                            _fun17110_ip = 66;
-                            continue _fun17110
+                            _fun17111_ip = 66;
+                            continue _fun17111
                         }
                     case 51:
                         var8 = arguments[var0];
                         var3[var0] = var8;
                         var0 = var0 + 1;
                         if (var0 < var6) {
-                            _fun17110_ip = 51;
-                            continue _fun17110
+                            _fun17111_ip = 51;
+                            continue _fun17111
                         }
                     case 66:
                         var7 = _closure2_slot2;
                         var6 = null;
                         if (!(var6 == var7)) {
-                            _fun17110_ip = 215;
-                            continue _fun17110
+                            _fun17111_ip = 215;
+                            continue _fun17111
                         }
                     case 82:
                         var7 = _closure3_slot0;
                         var6 = 'addListener';
                         if (!(var6 !== var7)) {
-                            _fun17110_ip = 152;
-                            continue _fun17110
+                            _fun17111_ip = 152;
+                            continue _fun17111
                         }
                     case 97:
                         var6 = 'removeListener';
                         if (!(var6 !== var7)) {
-                            _fun17110_ip = 129;
-                            continue _fun17110
+                            _fun17111_ip = 129;
+                            continue _fun17111
                         }
                     case 105:
                         var7 = var5.console;
                         var6 = var7.error;
                         var5 = "The 'navigation' object hasn't been initialized yet. This might happen if you don't have a navigator mounted, or if the navigator hasn't finished mounting. See https://reactnavigation.org/docs/navigating-without-navigation-prop#handling-initialization for more details.";
                         var5 = var6.bind(var7)(var5);
-                        _fun17110_ip = 150;
-                        continue _fun17110;
+                        _fun17111_ip = 150;
+                        continue _fun17111;
                     case 129:
                         var7 = var3[var2];
                         var5 = 1;
@@ -237,8 +237,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var6 = _closure2_slot0;
                         var2 = var6[var4];
                         if (var2) {
-                            _fun17110_ip = 186;
-                            continue _fun17110
+                            _fun17111_ip = 186;
+                            continue _fun17111
                         }
                     case 182:
                         var2 = new Array(0);

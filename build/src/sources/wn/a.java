@@ -1,80 +1,29 @@
 package wn;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import kotlin.enums.EnumEntries;
-import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+import java.util.List;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements Parcelable {
-    @NotNull
-    public static final Parcelable.Creator<a> CREATOR;
+public abstract class a {
 
-    /* renamed from: e  reason: collision with root package name */
-    public static final a f52428e = new a("UPLOAD", 0, "upload");
+    /* renamed from: a  reason: collision with root package name */
+    public static final C0706a f52602a = new C0706a(null);
 
-    /* renamed from: i  reason: collision with root package name */
-    public static final a f52429i = new a("MANUAL", 1, "manual");
+    /* renamed from: b  reason: collision with root package name */
+    private static final List f52603b = CollectionsKt.o("RootedDevice", "DebuggerThreatDetected", "AppIsDebuggable", "AppIntegrityError", "EmulatorFound", "GoogleEmulatorDetected", "MagiskManagerDetected", "FridaDetected", "FridaCustomDetected");
 
-    /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ a[] f52430o;
+    /* renamed from: wn.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0706a {
+        public /* synthetic */ C0706a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
 
-    /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f52431p;
+        public final List a() {
+            return a.f52603b;
+        }
 
-    /* renamed from: d  reason: collision with root package name */
-    private final String f52432d;
-
-    static {
-        a[] a10 = a();
-        f52430o = a10;
-        f52431p = qr.a.a(a10);
-        CREATOR = new Parcelable.Creator() { // from class: wn.a.a
-            @Override // android.os.Parcelable.Creator
-            /* renamed from: a */
-            public final a createFromParcel(Parcel parcel) {
-                Intrinsics.checkNotNullParameter(parcel, "parcel");
-                return a.valueOf(parcel.readString());
-            }
-
-            @Override // android.os.Parcelable.Creator
-            /* renamed from: b */
-            public final a[] newArray(int i10) {
-                return new a[i10];
-            }
-        };
-    }
-
-    private a(String str, int i10, String str2) {
-        this.f52432d = str2;
-    }
-
-    private static final /* synthetic */ a[] a() {
-        return new a[]{f52428e, f52429i};
-    }
-
-    public static a valueOf(String str) {
-        return (a) Enum.valueOf(a.class, str);
-    }
-
-    public static a[] values() {
-        return (a[]) f52430o.clone();
-    }
-
-    public final String d() {
-        return this.f52432d;
-    }
-
-    @Override // android.os.Parcelable
-    public final int describeContents() {
-        return 0;
-    }
-
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel dest, int i10) {
-        Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(name());
+        private C0706a() {
+        }
     }
 }

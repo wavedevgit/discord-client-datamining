@@ -8,48 +8,48 @@ import android.widget.EditText;
 public class x extends s {
 
     /* renamed from: e  reason: collision with root package name */
-    private int f16201e;
+    private int f15169e;
 
     /* renamed from: f  reason: collision with root package name */
-    private EditText f16202f;
+    private EditText f15170f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final View.OnClickListener f16203g;
+    private final View.OnClickListener f15171g;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public x(r rVar, int i10) {
         super(rVar);
-        this.f16201e = yg.e.f54401a;
-        this.f16203g = new View.OnClickListener() { // from class: com.google.android.material.textfield.w
+        this.f15169e = yg.e.f54159a;
+        this.f15171g = new View.OnClickListener() { // from class: com.google.android.material.textfield.w
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 x.v(x.this, view);
             }
         };
         if (i10 != 0) {
-            this.f16201e = i10;
+            this.f15169e = i10;
         }
     }
 
     public static /* synthetic */ void v(x xVar, View view) {
-        EditText editText = xVar.f16202f;
+        EditText editText = xVar.f15170f;
         if (editText == null) {
             return;
         }
         int selectionEnd = editText.getSelectionEnd();
         if (xVar.w()) {
-            xVar.f16202f.setTransformationMethod(null);
+            xVar.f15170f.setTransformationMethod(null);
         } else {
-            xVar.f16202f.setTransformationMethod(PasswordTransformationMethod.getInstance());
+            xVar.f15170f.setTransformationMethod(PasswordTransformationMethod.getInstance());
         }
         if (selectionEnd >= 0) {
-            xVar.f16202f.setSelection(selectionEnd);
+            xVar.f15170f.setSelection(selectionEnd);
         }
         xVar.r();
     }
 
     private boolean w() {
-        EditText editText = this.f16202f;
+        EditText editText = this.f15170f;
         if (editText != null && (editText.getTransformationMethod() instanceof PasswordTransformationMethod)) {
             return true;
         }
@@ -75,19 +75,19 @@ public class x extends s {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public int c() {
-        return yg.i.f54487v;
+        return yg.i.f54245v;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public int d() {
-        return this.f16201e;
+        return this.f15169e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public View.OnClickListener f() {
-        return this.f16203g;
+        return this.f15171g;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -105,22 +105,22 @@ public class x extends s {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public void n(EditText editText) {
-        this.f16202f = editText;
+        this.f15170f = editText;
         r();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public void s() {
-        if (x(this.f16202f)) {
-            this.f16202f.setTransformationMethod(PasswordTransformationMethod.getInstance());
+        if (x(this.f15170f)) {
+            this.f15170f.setTransformationMethod(PasswordTransformationMethod.getInstance());
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public void u() {
-        EditText editText = this.f16202f;
+        EditText editText = this.f15170f;
         if (editText != null) {
             editText.setTransformationMethod(PasswordTransformationMethod.getInstance());
         }

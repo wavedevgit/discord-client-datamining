@@ -5,39 +5,39 @@ import java.util.Objects;
 final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final pk.b f47746a;
+    private final pk.b f47896a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final pk.b f47747b;
+    private final pk.b f47897b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final pk.c f47748c;
+    private final pk.c f47898c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(pk.b bVar, pk.b bVar2, pk.c cVar) {
-        this.f47746a = bVar;
-        this.f47747b = bVar2;
-        this.f47748c = cVar;
+        this.f47896a = bVar;
+        this.f47897b = bVar2;
+        this.f47898c = cVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public pk.c a() {
-        return this.f47748c;
+        return this.f47898c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public pk.b b() {
-        return this.f47746a;
+        return this.f47896a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public pk.b c() {
-        return this.f47747b;
+        return this.f47897b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean d() {
-        if (this.f47747b == null) {
+        if (this.f47897b == null) {
             return true;
         }
         return false;
@@ -48,25 +48,25 @@ final class b {
             return false;
         }
         b bVar = (b) obj;
-        if (!Objects.equals(this.f47746a, bVar.f47746a) || !Objects.equals(this.f47747b, bVar.f47747b) || !Objects.equals(this.f47748c, bVar.f47748c)) {
+        if (!Objects.equals(this.f47896a, bVar.f47896a) || !Objects.equals(this.f47897b, bVar.f47897b) || !Objects.equals(this.f47898c, bVar.f47898c)) {
             return false;
         }
         return true;
     }
 
     public int hashCode() {
-        return (Objects.hashCode(this.f47746a) ^ Objects.hashCode(this.f47747b)) ^ Objects.hashCode(this.f47748c);
+        return (Objects.hashCode(this.f47896a) ^ Objects.hashCode(this.f47897b)) ^ Objects.hashCode(this.f47898c);
     }
 
     public String toString() {
         Object valueOf;
         StringBuilder sb2 = new StringBuilder();
         sb2.append("[ ");
-        sb2.append(this.f47746a);
+        sb2.append(this.f47896a);
         sb2.append(" , ");
-        sb2.append(this.f47747b);
+        sb2.append(this.f47897b);
         sb2.append(" : ");
-        pk.c cVar = this.f47748c;
+        pk.c cVar = this.f47898c;
         if (cVar == null) {
             valueOf = "null";
         } else {

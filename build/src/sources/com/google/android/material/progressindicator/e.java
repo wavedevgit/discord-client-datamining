@@ -9,16 +9,16 @@ import yg.k;
 public final class e extends b {
 
     /* renamed from: h  reason: collision with root package name */
-    public int f15907h;
+    public int f14875h;
 
     /* renamed from: i  reason: collision with root package name */
-    public int f15908i;
+    public int f14876i;
 
     /* renamed from: j  reason: collision with root package name */
-    public int f15909j;
+    public int f14877j;
 
     public e(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, yg.b.f54333g);
+        this(context, attributeSet, yg.b.f54091g);
     }
 
     public e(Context context, AttributeSet attributeSet, int i10) {
@@ -27,12 +27,12 @@ public final class e extends b {
 
     public e(Context context, AttributeSet attributeSet, int i10, int i11) {
         super(context, attributeSet, i10, i11);
-        int dimensionPixelSize = context.getResources().getDimensionPixelSize(yg.d.f54368a0);
+        int dimensionPixelSize = context.getResources().getDimensionPixelSize(yg.d.f54126a0);
         int dimensionPixelSize2 = context.getResources().getDimensionPixelSize(yg.d.Z);
-        TypedArray i12 = l.i(context, attributeSet, k.f54646n1, i10, i11, new int[0]);
-        this.f15907h = Math.max(lh.c.c(context, i12, k.f54673q1, dimensionPixelSize), this.f15880a * 2);
-        this.f15908i = lh.c.c(context, i12, k.f54664p1, dimensionPixelSize2);
-        this.f15909j = i12.getInt(k.f54655o1, 0);
+        TypedArray i12 = l.i(context, attributeSet, k.f54404n1, i10, i11, new int[0]);
+        this.f14875h = Math.max(lh.c.c(context, i12, k.f54431q1, dimensionPixelSize), this.f14848a * 2);
+        this.f14876i = lh.c.c(context, i12, k.f54422p1, dimensionPixelSize2);
+        this.f14877j = i12.getInt(k.f54413o1, 0);
         i12.recycle();
         e();
     }

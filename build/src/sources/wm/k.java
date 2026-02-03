@@ -1,19 +1,60 @@
 package wm;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface k {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f52359a = a.f52360a;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Intrinsics;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public abstract class k implements q {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
+    public final class a implements wm.a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ a f52360a = new a();
+        private final /* synthetic */ wm.a f52548a;
 
-        private a() {
+        /* renamed from: b  reason: collision with root package name */
+        final /* synthetic */ k f52549b;
+
+        public a(k this$0, wm.a baseContext) {
+            Intrinsics.checkNotNullParameter(this$0, "this$0");
+            Intrinsics.checkNotNullParameter(baseContext, "baseContext");
+            this.f52549b = this$0;
+            this.f52548a = baseContext;
+        }
+
+        @Override // wm.a
+        public void a(String key, Function2 sideEffect) {
+            Intrinsics.checkNotNullParameter(key, "key");
+            Intrinsics.checkNotNullParameter(sideEffect, "sideEffect");
+            this.f52548a.a(key, sideEffect);
+        }
+
+        @Override // wm.a
+        public Object b(q child, Object obj, String key, Function1 handler) {
+            Intrinsics.checkNotNullParameter(child, "child");
+            Intrinsics.checkNotNullParameter(key, "key");
+            Intrinsics.checkNotNullParameter(handler, "handler");
+            return this.f52548a.b(child, obj, key, handler);
+        }
+
+        @Override // wm.a
+        public h c() {
+            return this.f52548a.c();
         }
     }
 
-    void a(Object obj, a0 a0Var);
+    public abstract Object d(Object obj, i iVar);
+
+    public abstract Object f(Object obj, Object obj2, a aVar);
+
+    public abstract i g(Object obj);
+
+    @Override // wm.q
+    public final k b() {
+        return this;
+    }
+
+    public Object e(Object obj, Object obj2, Object obj3) {
+        return obj3;
+    }
 }

@@ -19,7 +19,7 @@ public /* synthetic */ class ActivityRichPresenceInviteEmbedViewHolder$bind$9 ex
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Object invoke(Object obj) {
         invoke((CommandMentionContentNode) obj);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public final void invoke(CommandMentionContentNode p02) {

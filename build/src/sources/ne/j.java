@@ -12,38 +12,38 @@ import java.util.Set;
 public final class j implements Iterable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Object f40083d = new Object();
+    private final Object f40122d = new Object();
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f40084e = new HashMap();
+    private final Map f40123e = new HashMap();
 
     /* renamed from: i  reason: collision with root package name */
-    private Set f40085i = Collections.EMPTY_SET;
+    private Set f40124i = Collections.EMPTY_SET;
 
     /* renamed from: o  reason: collision with root package name */
-    private List f40086o = Collections.EMPTY_LIST;
+    private List f40125o = Collections.EMPTY_LIST;
 
-    public Set G0() {
+    public Set D0() {
         Set set;
-        synchronized (this.f40083d) {
-            set = this.f40085i;
+        synchronized (this.f40122d) {
+            set = this.f40124i;
         }
         return set;
     }
 
     public void b(Object obj) {
-        synchronized (this.f40083d) {
+        synchronized (this.f40122d) {
             try {
-                ArrayList arrayList = new ArrayList(this.f40086o);
+                ArrayList arrayList = new ArrayList(this.f40125o);
                 arrayList.add(obj);
-                this.f40086o = Collections.unmodifiableList(arrayList);
-                Integer num = (Integer) this.f40084e.get(obj);
+                this.f40125o = Collections.unmodifiableList(arrayList);
+                Integer num = (Integer) this.f40123e.get(obj);
                 if (num == null) {
-                    HashSet hashSet = new HashSet(this.f40085i);
+                    HashSet hashSet = new HashSet(this.f40124i);
                     hashSet.add(obj);
-                    this.f40085i = Collections.unmodifiableSet(hashSet);
+                    this.f40124i = Collections.unmodifiableSet(hashSet);
                 }
-                Map map = this.f40084e;
+                Map map = this.f40123e;
                 int i10 = 1;
                 if (num != null) {
                     i10 = 1 + num.intValue();
@@ -57,10 +57,10 @@ public final class j implements Iterable {
 
     public int c(Object obj) {
         int i10;
-        synchronized (this.f40083d) {
+        synchronized (this.f40122d) {
             try {
-                if (this.f40084e.containsKey(obj)) {
-                    i10 = ((Integer) this.f40084e.get(obj)).intValue();
+                if (this.f40123e.containsKey(obj)) {
+                    i10 = ((Integer) this.f40123e.get(obj)).intValue();
                 } else {
                     i10 = 0;
                 }
@@ -72,22 +72,22 @@ public final class j implements Iterable {
     }
 
     public void d(Object obj) {
-        synchronized (this.f40083d) {
+        synchronized (this.f40122d) {
             try {
-                Integer num = (Integer) this.f40084e.get(obj);
+                Integer num = (Integer) this.f40123e.get(obj);
                 if (num == null) {
                     return;
                 }
-                ArrayList arrayList = new ArrayList(this.f40086o);
+                ArrayList arrayList = new ArrayList(this.f40125o);
                 arrayList.remove(obj);
-                this.f40086o = Collections.unmodifiableList(arrayList);
+                this.f40125o = Collections.unmodifiableList(arrayList);
                 if (num.intValue() == 1) {
-                    this.f40084e.remove(obj);
-                    HashSet hashSet = new HashSet(this.f40085i);
+                    this.f40123e.remove(obj);
+                    HashSet hashSet = new HashSet(this.f40124i);
                     hashSet.remove(obj);
-                    this.f40085i = Collections.unmodifiableSet(hashSet);
+                    this.f40124i = Collections.unmodifiableSet(hashSet);
                 } else {
-                    this.f40084e.put(obj, Integer.valueOf(num.intValue() - 1));
+                    this.f40123e.put(obj, Integer.valueOf(num.intValue() - 1));
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -98,8 +98,8 @@ public final class j implements Iterable {
     @Override // java.lang.Iterable
     public Iterator iterator() {
         Iterator it;
-        synchronized (this.f40083d) {
-            it = this.f40086o.iterator();
+        synchronized (this.f40122d) {
+            it = this.f40125o.iterator();
         }
         return it;
     }

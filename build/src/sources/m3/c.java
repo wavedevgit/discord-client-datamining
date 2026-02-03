@@ -1,9 +1,9 @@
 package m3;
 
-import hs.j1;
-import hs.m0;
-import jr.q;
+import js.j1;
+import js.m0;
 import kotlin.coroutines.CoroutineContext;
+import lr.q;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public abstract class c {
     public static final b a() {
@@ -11,10 +11,10 @@ public abstract class c {
         try {
             coroutineContext = m0.c().f2();
         } catch (IllegalStateException unused) {
-            coroutineContext = kotlin.coroutines.e.f33148d;
+            coroutineContext = kotlin.coroutines.e.f32538d;
         } catch (q unused2) {
-            coroutineContext = kotlin.coroutines.e.f33148d;
+            coroutineContext = kotlin.coroutines.e.f32538d;
         }
-        return new b(coroutineContext.Z0(j1.b(null, 1, null)));
+        return new b(coroutineContext.V0(j1.b(null, 1, null)));
     }
 }

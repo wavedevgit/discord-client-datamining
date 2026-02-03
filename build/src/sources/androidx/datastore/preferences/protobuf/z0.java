@@ -7,32 +7,32 @@ import java.util.concurrent.ConcurrentMap;
 public final class z0 {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final z0 f3895c = new z0();
+    private static final z0 f3864c = new z0();
 
     /* renamed from: b  reason: collision with root package name */
-    private final ConcurrentMap f3897b = new ConcurrentHashMap();
+    private final ConcurrentMap f3866b = new ConcurrentHashMap();
 
     /* renamed from: a  reason: collision with root package name */
-    private final e1 f3896a = new g0();
+    private final e1 f3865a = new g0();
 
     private z0() {
     }
 
     public static z0 a() {
-        return f3895c;
+        return f3864c;
     }
 
     public d1 b(Class cls, d1 d1Var) {
         y.b(cls, "messageType");
         y.b(d1Var, "schema");
-        return (d1) this.f3897b.putIfAbsent(cls, d1Var);
+        return (d1) this.f3866b.putIfAbsent(cls, d1Var);
     }
 
     public d1 c(Class cls) {
         d1 b10;
         y.b(cls, "messageType");
-        d1 d1Var = (d1) this.f3897b.get(cls);
-        if (d1Var == null && (b10 = b(cls, (d1Var = this.f3896a.a(cls)))) != null) {
+        d1 d1Var = (d1) this.f3866b.get(cls);
+        if (d1Var == null && (b10 = b(cls, (d1Var = this.f3865a.a(cls)))) != null) {
             return b10;
         }
         return d1Var;

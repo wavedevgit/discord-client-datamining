@@ -19,7 +19,7 @@ import qi.w;
 public class ExecutorsRegistrar implements ComponentRegistrar {
 
     /* renamed from: a  reason: collision with root package name */
-    static final w f16928a = new w(new bj.b() { // from class: ri.a
+    static final w f15896a = new w(new bj.b() { // from class: ri.a
         @Override // bj.b
         public final Object get() {
             ScheduledExecutorService m10;
@@ -29,7 +29,7 @@ public class ExecutorsRegistrar implements ComponentRegistrar {
     });
 
     /* renamed from: b  reason: collision with root package name */
-    static final w f16929b = new w(new bj.b() { // from class: ri.b
+    static final w f15897b = new w(new bj.b() { // from class: ri.b
         @Override // bj.b
         public final Object get() {
             ScheduledExecutorService m10;
@@ -39,7 +39,7 @@ public class ExecutorsRegistrar implements ComponentRegistrar {
     });
 
     /* renamed from: c  reason: collision with root package name */
-    static final w f16930c = new w(new bj.b() { // from class: ri.c
+    static final w f15898c = new w(new bj.b() { // from class: ri.c
         @Override // bj.b
         public final Object get() {
             ScheduledExecutorService m10;
@@ -49,7 +49,7 @@ public class ExecutorsRegistrar implements ComponentRegistrar {
     });
 
     /* renamed from: d  reason: collision with root package name */
-    static final w f16931d = new w(new bj.b() { // from class: ri.d
+    static final w f15899d = new w(new bj.b() { // from class: ri.d
         @Override // bj.b
         public final Object get() {
             ScheduledExecutorService newSingleThreadScheduledExecutor;
@@ -59,15 +59,15 @@ public class ExecutorsRegistrar implements ComponentRegistrar {
     });
 
     public static /* synthetic */ ScheduledExecutorService a(qi.d dVar) {
-        return (ScheduledExecutorService) f16929b.get();
+        return (ScheduledExecutorService) f15897b.get();
     }
 
     public static /* synthetic */ ScheduledExecutorService e(qi.d dVar) {
-        return (ScheduledExecutorService) f16930c.get();
+        return (ScheduledExecutorService) f15898c.get();
     }
 
     public static /* synthetic */ ScheduledExecutorService g(qi.d dVar) {
-        return (ScheduledExecutorService) f16928a.get();
+        return (ScheduledExecutorService) f15896a.get();
     }
 
     private static StrictMode.ThreadPolicy i() {
@@ -94,7 +94,7 @@ public class ExecutorsRegistrar implements ComponentRegistrar {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static ScheduledExecutorService m(ExecutorService executorService) {
-        return new o(executorService, (ScheduledExecutorService) f16931d.get());
+        return new o(executorService, (ScheduledExecutorService) f15899d.get());
     }
 
     @Override // com.google.firebase.components.ComponentRegistrar

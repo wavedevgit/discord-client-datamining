@@ -1,209 +1,172 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var8 = require;
+    var5 = require;
     var2 = exports;
-    var9 = dependencyMap;
-    var0 = global;
-    var4 = var0.Object;
+    var26 = dependencyMap;
+    var15 = global;
+    var4 = var15.Object;
     var3 = var4.defineProperty;
     var1 = {};
     var0 = true;
     var1.value = var0;
     var0 = '__esModule';
     var0 = var3.bind(var4)(var2, var0, var1);
-    var5 = {};
-    var0 = {
-        'name': 'LightSpeedInRight',
-        'style': null,
-        'duration': 0.3
-    };
-    var1 = {};
-    var3 = {};
-    var4 = new Array(1);
-    var6 = {
-        'translateX': '100vw',
-        'skewX': '-45deg'
-    };
-    var4[0] = var6;
-    var3.transform = var4;
-    var7 = 0;
-    var3.opacity = var7;
-    var1[0] = var3;
-    var3 = {};
-    var6 = {};
-    var4 = '10deg';
-    var6.skewX = var4;
-    var4 = new Array(1);
-    var4[0] = var6;
-    var3.transform = var4;
-    var1[70] = var3;
-    var3 = {};
-    var6 = {};
-    var4 = '-5deg';
-    var6.skewX = var4;
-    var4 = new Array(1);
-    var4[0] = var6;
-    var3.transform = var4;
-    var1[85] = var3;
-    var3 = {};
-    var10 = {};
-    var4 = '0deg';
-    var10.skewX = var4;
-    var6 = new Array(1);
-    var6[0] = var10;
-    var3.transform = var6;
-    var1[100] = var3;
-    var0.style = var1;
-    var5.LightSpeedInRight = var0;
-    var0 = {
-        'name': 'LightSpeedInLeft',
-        'style': null,
-        'duration': 0.3
-    };
-    var1 = {};
-    var3 = {};
-    var6 = new Array(1);
-    var10 = {
-        'translateX': '-100vw',
-        'skewX': '45deg'
-    };
-    var6[0] = var10;
-    var3.transform = var6;
-    var3.opacity = var7;
-    var1[0] = var3;
-    var3 = {};
-    var10 = {};
-    var6 = '-10deg';
-    var10.skewX = var6;
-    var6 = new Array(1);
-    var6[0] = var10;
-    var3.transform = var6;
-    var1[70] = var3;
-    var3 = {};
-    var10 = {};
-    var6 = '5deg';
-    var10.skewX = var6;
-    var6 = new Array(1);
-    var6[0] = var10;
-    var3.transform = var6;
-    var1[85] = var3;
-    var3 = {};
-    var6 = {};
-    var6.skewX = var4;
-    var4 = new Array(1);
-    var4[0] = var6;
-    var3.transform = var4;
-    var1[100] = var3;
-    var0.style = var1;
-    var5.LightSpeedInLeft = var0;
     var4 = {};
-    var0 = {
-        'name': 'LightSpeedOutRight',
-        'style': null,
-        'duration': 0.3
-    };
-    var1 = {};
-    var3 = {};
-    var6 = new Array(1);
-    var10 = {
-        'translateX': '0vw',
-        'skewX': '0deg'
-    };
-    var6[0] = var10;
-    var3.transform = var6;
-    var6 = 1;
-    var3.opacity = var6;
-    var1[0] = var3;
-    var3 = {};
-    var10 = new Array(1);
-    var11 = {
-        'translateX': '100vw',
-        'skewX': '-45deg'
-    };
-    var10[0] = var11;
-    var3.transform = var10;
-    var3.opacity = var7;
-    var1[100] = var3;
-    var0.style = var1;
-    var4.LightSpeedOutRight = var0;
-    var0 = {
-        'name': 'LightSpeedOutLeft',
-        'style': null,
-        'duration': 0.3
-    };
-    var1 = {};
-    var3 = {};
-    var10 = new Array(1);
-    var11 = {
-        'translateX': '0vw',
-        'skew': '0deg'
-    };
-    var10[0] = var11;
-    var3.transform = var10;
-    var3.opacity = var6;
-    var1[0] = var3;
-    var3 = {};
-    var6 = new Array(1);
-    var10 = {
-        'translateX': '-100vw',
-        'skew': '45deg'
-    };
-    var6[0] = var10;
-    var3.transform = var6;
-    var3.opacity = var7;
-    var1[100] = var3;
-    var0.style = var1;
-    var4.LightSpeedOutLeft = var0;
-    var3 = {};
-    var1 = {};
-    var6 = var9[var7];
+    var14 = 0;
+    var4.LINEAR = var14;
+    var0 = 'LINEAR';
+    var4[var14] = var0;
+    var13 = 1;
+    var4.SEQUENCED = var13;
+    var0 = 'SEQUENCED';
+    var4[var13] = var0;
+    var12 = 2;
+    var4.FADING = var12;
+    var0 = 'FADING';
+    var4[var12] = var0;
+    var11 = 3;
+    var4.JUMPING = var11;
+    var0 = 'JUMPING';
+    var4[var11] = var0;
+    var10 = 4;
+    var4.CURVED = var10;
+    var0 = 'CURVED';
+    var4[var10] = var0;
+    var9 = 5;
+    var4.ENTRY_EXIT = var9;
+    var0 = 'ENTRY_EXIT';
+    var4[var9] = var0;
+    var37 = var15.Object;
+    var36 = var37.assign;
+    var1 = var26[var14];
     var0 = undefined;
-    var11 = var8.bind(var0)(var6);
-    var10 = var11.convertAnimationObjectToKeyframes;
-    var6 = var5.LightSpeedInRight;
-    var6 = var10.bind(var11)(var6);
-    var1.style = var6;
-    var6 = var5.LightSpeedInRight;
-    var6 = var6.duration;
-    var1.duration = var6;
-    var3.LightSpeedInRight = var1;
-    var1 = {};
-    var6 = var9[var7];
-    var11 = var8.bind(var0)(var6);
-    var10 = var11.convertAnimationObjectToKeyframes;
-    var6 = var5.LightSpeedInLeft;
-    var6 = var10.bind(var11)(var6);
-    var1.style = var6;
-    var6 = var5.LightSpeedInLeft;
-    var6 = var6.duration;
-    var1.duration = var6;
-    var3.LightSpeedInLeft = var1;
-    var1 = {};
-    var6 = {};
-    var10 = var9[var7];
-    var12 = var8.bind(var0)(var10);
-    var11 = var12.convertAnimationObjectToKeyframes;
-    var10 = var4.LightSpeedOutRight;
-    var10 = var11.bind(var12)(var10);
-    var6.style = var10;
-    var10 = var4.LightSpeedOutRight;
-    var10 = var10.duration;
-    var6.duration = var10;
-    var1.LightSpeedOutRight = var6;
-    var6 = {};
-    var7 = var9[var7];
-    var9 = var8.bind(var0)(var7);
-    var8 = var9.convertAnimationObjectToKeyframes;
-    var7 = var4.LightSpeedOutLeft;
-    var7 = var8.bind(var9)(var7);
-    var6.style = var7;
-    var7 = var4.LightSpeedOutLeft;
-    var7 = var7.duration;
-    var6.duration = var7;
-    var1.LightSpeedOutLeft = var6;
-    var2.LightSpeedInData = var5;
-    var2.LightSpeedOutData = var4;
-    var2.LightSpeedIn = var3;
-    var2.LightSpeedOut = var1;
+    var1 = var5.bind(var0)(var1);
+    var56 = var1.FadeInData;
+    var1 = var26[var14];
+    var1 = var5.bind(var0)(var1);
+    var55 = var1.FadeOutData;
+    var1 = var26[var13];
+    var1 = var5.bind(var0)(var1);
+    var54 = var1.BounceInData;
+    var1 = var26[var13];
+    var1 = var5.bind(var0)(var1);
+    var53 = var1.BounceOutData;
+    var1 = var26[var12];
+    var1 = var5.bind(var0)(var1);
+    var52 = var1.FlipInData;
+    var1 = var26[var12];
+    var1 = var5.bind(var0)(var1);
+    var51 = var1.FlipOutData;
+    var1 = var26[var11];
+    var1 = var5.bind(var0)(var1);
+    var50 = var1.StretchInData;
+    var1 = var26[var11];
+    var1 = var5.bind(var0)(var1);
+    var49 = var1.StretchOutData;
+    var1 = var26[var10];
+    var1 = var5.bind(var0)(var1);
+    var48 = var1.ZoomInData;
+    var1 = var26[var10];
+    var1 = var5.bind(var0)(var1);
+    var47 = var1.ZoomOutData;
+    var1 = var26[var9];
+    var1 = var5.bind(var0)(var1);
+    var46 = var1.SlideInData;
+    var1 = var26[var9];
+    var1 = var5.bind(var0)(var1);
+    var45 = var1.SlideOutData;
+    var8 = 6;
+    var1 = var26[var8];
+    var1 = var5.bind(var0)(var1);
+    var44 = var1.LightSpeedInData;
+    var1 = var26[var8];
+    var1 = var5.bind(var0)(var1);
+    var43 = var1.LightSpeedOutData;
+    var7 = 7;
+    var1 = var26[var7];
+    var1 = var5.bind(var0)(var1);
+    var42 = var1.PinwheelData;
+    var6 = 8;
+    var1 = var26[var6];
+    var1 = var5.bind(var0)(var1);
+    var41 = var1.RotateInData;
+    var1 = var26[var6];
+    var1 = var5.bind(var0)(var1);
+    var40 = var1.RotateOutData;
+    var1 = 9;
+    var3 = var26[var1];
+    var3 = var5.bind(var0)(var3);
+    var39 = var3.RollInData;
+    var3 = var26[var1];
+    var3 = var5.bind(var0)(var3);
+    var38 = var3.RollOutData;
+    var57 = {};
+    var58 = var37;
+    var3 = var58[var36](var57, var56, var55, var54, var53, var52, var51, var50, var49, var48, var47, var46, var45, var44, var43, var42, var41, var40, var39, var38, var37);
+    var25 = var15.Object;
+    var24 = var25.assign;
+    var15 = var26[var14];
+    var15 = var5.bind(var0)(var15);
+    var56 = var15.FadeIn;
+    var14 = var26[var14];
+    var14 = var5.bind(var0)(var14);
+    var55 = var14.FadeOut;
+    var14 = var26[var13];
+    var14 = var5.bind(var0)(var14);
+    var54 = var14.BounceIn;
+    var13 = var26[var13];
+    var13 = var5.bind(var0)(var13);
+    var53 = var13.BounceOut;
+    var13 = var26[var12];
+    var13 = var5.bind(var0)(var13);
+    var52 = var13.FlipIn;
+    var12 = var26[var12];
+    var12 = var5.bind(var0)(var12);
+    var51 = var12.FlipOut;
+    var12 = var26[var11];
+    var12 = var5.bind(var0)(var12);
+    var50 = var12.StretchIn;
+    var11 = var26[var11];
+    var11 = var5.bind(var0)(var11);
+    var49 = var11.StretchOut;
+    var11 = var26[var10];
+    var11 = var5.bind(var0)(var11);
+    var48 = var11.ZoomIn;
+    var10 = var26[var10];
+    var10 = var5.bind(var0)(var10);
+    var47 = var10.ZoomOut;
+    var10 = var26[var9];
+    var10 = var5.bind(var0)(var10);
+    var46 = var10.SlideIn;
+    var9 = var26[var9];
+    var9 = var5.bind(var0)(var9);
+    var45 = var9.SlideOut;
+    var9 = var26[var8];
+    var9 = var5.bind(var0)(var9);
+    var44 = var9.LightSpeedIn;
+    var8 = var26[var8];
+    var8 = var5.bind(var0)(var8);
+    var43 = var8.LightSpeedOut;
+    var7 = var26[var7];
+    var7 = var5.bind(var0)(var7);
+    var42 = var7.Pinwheel;
+    var7 = var26[var6];
+    var7 = var5.bind(var0)(var7);
+    var41 = var7.RotateIn;
+    var6 = var26[var6];
+    var6 = var5.bind(var0)(var6);
+    var40 = var6.RotateOut;
+    var6 = var26[var1];
+    var6 = var5.bind(var0)(var6);
+    var39 = var6.RollIn;
+    var1 = var26[var1];
+    var1 = var5.bind(var0)(var1);
+    var38 = var1.RollOut;
+    var57 = {};
+    var58 = var25;
+    var1 = var58[var24](var57, var56, var55, var54, var53, var52, var51, var50, var49, var48, var47, var46, var45, var44, var43, var42, var41, var40, var39, var38, var37);
+    var2.TransitionType = var4;
+    var2.AnimationsData = var3;
+    var2.Animations = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3770]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3778, 3781, 3782, 3783, 3784, 3785, 3786, 3787, 3788, 3789]);

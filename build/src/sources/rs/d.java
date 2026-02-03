@@ -1,27 +1,10 @@
 package rs;
 
-import j$.time.DayOfWeek;
-import kotlin.enums.EnumEntries;
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class d {
+public interface d {
+    void a(h hVar, Function2 function2);
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public /* synthetic */ class a {
-
-        /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ EnumEntries f48673a = qr.a.a(DayOfWeek.values());
-    }
-
-    public static final DayOfWeek a(int i10) {
-        if (1 <= i10 && i10 < 8) {
-            return (DayOfWeek) a.f48673a.get(i10 - 1);
-        }
-        throw new IllegalArgumentException(("Expected ISO day-of-week number in 1..7, got " + i10).toString());
-    }
-
-    public static final int b(DayOfWeek dayOfWeek) {
-        Intrinsics.checkNotNullParameter(dayOfWeek, "<this>");
-        return dayOfWeek.ordinal() + 1;
-    }
+    void b(f fVar, Function1 function1);
 }

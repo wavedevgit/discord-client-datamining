@@ -1,59 +1,23 @@
 package us;
-
-import java.util.ArrayList;
-import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public class h implements o {
+public interface h {
+    Integer A();
 
-    /* renamed from: a  reason: collision with root package name */
-    private final List f50650a;
+    void B(Integer num);
 
-    public h(List formats) {
-        Intrinsics.checkNotNullParameter(formats, "formats");
-        this.f50650a = formats;
-    }
+    Integer C();
 
-    @Override // us.o
-    public vs.e a() {
-        List<s> list = this.f50650a;
-        ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
-        for (s sVar : list) {
-            arrayList.add(sVar.a());
-        }
-        if (arrayList.size() == 1) {
-            return (vs.e) CollectionsKt.Q0(arrayList);
-        }
-        return new vs.a(arrayList);
-    }
+    void E(Integer num);
 
-    @Override // us.o
-    public ws.q b() {
-        List<s> list = this.f50650a;
-        ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
-        for (s sVar : list) {
-            arrayList.add(sVar.b());
-        }
-        return ws.n.b(arrayList);
-    }
+    Integer f();
 
-    public final List c() {
-        return this.f50650a;
-    }
+    Integer g();
 
-    public boolean equals(Object obj) {
-        if ((obj instanceof h) && Intrinsics.areEqual(this.f50650a, ((h) obj).f50650a)) {
-            return true;
-        }
-        return false;
-    }
+    Integer j();
 
-    public int hashCode() {
-        return this.f50650a.hashCode();
-    }
+    void o(Integer num);
 
-    public String toString() {
-        return "ConcatenatedFormatStructure(" + CollectionsKt.x0(this.f50650a, ", ", null, null, 0, null, null, 62, null) + ')';
-    }
+    void v(Integer num);
+
+    void y(Integer num);
 }

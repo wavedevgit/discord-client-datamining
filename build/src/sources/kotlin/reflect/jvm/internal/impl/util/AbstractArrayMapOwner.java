@@ -12,16 +12,16 @@ public abstract class AbstractArrayMapOwner<K, V> implements Iterable<V>, KMappe
     public static abstract class AbstractArrayMapAccessor<K, V, T extends V> {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f35841a;
+        private final int f35231a;
 
         public AbstractArrayMapAccessor(int i10) {
-            this.f35841a = i10;
+            this.f35231a = i10;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         public final Object a(AbstractArrayMapOwner thisRef) {
             Intrinsics.checkNotNullParameter(thisRef, "thisRef");
-            return thisRef.b().get(this.f35841a);
+            return thisRef.b().get(this.f35231a);
         }
     }
 

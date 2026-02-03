@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/status_bar/native/components/ThemedStatusBar.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun99923: for (var _fun99923_ip = 0;;) switch (_fun99923_ip) {
+        _fun99983: for (var _fun99983_ip = 0;;) switch (_fun99983_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var5 = _closure1_slot2;
@@ -93,47 +93,47 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = 'light-content';
                 var4 = var5;
                 if (!var7) {
-                    _fun99923_ip = 208;
-                    continue _fun99923
+                    _fun99983_ip = 208;
+                    continue _fun99983
                 }
             case 152:
                 if (!var7) {
-                    _fun99923_ip = 190;
-                    continue _fun99923
+                    _fun99983_ip = 190;
+                    continue _fun99983
                 }
             case 155:
                 if (var2) {
-                    _fun99923_ip = 190;
-                    continue _fun99923
+                    _fun99983_ip = 190;
+                    continue _fun99983
                 }
             case 158:
                 var2 = var1.isVisible;
                 if (!var2) {
-                    _fun99923_ip = 176;
-                    continue _fun99923
+                    _fun99983_ip = 176;
+                    continue _fun99983
                 }
             case 167:
                 var1 = var1.isCustomBackground;
                 if (var1) {
-                    _fun99923_ip = 185;
-                    continue _fun99923
+                    _fun99983_ip = 185;
+                    continue _fun99983
                 }
             case 176:
                 var1 = 'dark-content';
                 if (!var6) {
-                    _fun99923_ip = 188;
-                    continue _fun99923
+                    _fun99983_ip = 188;
+                    continue _fun99983
                 }
             case 185:
                 var1 = var5;
             case 188:
-                _fun99923_ip = 205;
-                continue _fun99923;
+                _fun99983_ip = 205;
+                continue _fun99983;
             case 190:
                 var2 = 'dark-content';
                 if (!var6) {
-                    _fun99923_ip = 202;
-                    continue _fun99923
+                    _fun99983_ip = 202;
+                    continue _fun99983
                 }
             case 199:
                 var2 = var5;
@@ -156,4 +156,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3187, 1216, 33, 566, 3910, 3197, 8599, 7885, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3196, 1216, 33, 566, 3919, 3206, 8618, 7890, 2]);

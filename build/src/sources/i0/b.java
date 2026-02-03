@@ -21,19 +21,19 @@ public abstract class b {
     public static final class a extends Exception {
 
         /* renamed from: d  reason: collision with root package name */
-        private final EnumC0369a f27979d;
+        private final EnumC0371a f28202d;
 
         /* renamed from: i0.b$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        public enum EnumC0369a {
+        public enum EnumC0371a {
             ENCODE_FAILED,
             DECODE_FAILED,
             UNKNOWN
         }
 
-        a(String str, EnumC0369a enumC0369a) {
+        a(String str, EnumC0371a enumC0371a) {
             super(str);
-            this.f27979d = enumC0369a;
+            this.f28202d = enumC0371a;
         }
     }
 
@@ -164,7 +164,7 @@ public abstract class b {
             if (yuvImage.compressToJpeg(rect, i10, iVar)) {
                 return byteArrayOutputStream.toByteArray();
             }
-            throw new a("YuvImage failed to encode jpeg.", a.EnumC0369a.ENCODE_FAILED);
+            throw new a("YuvImage failed to encode jpeg.", a.EnumC0371a.ENCODE_FAILED);
         }
         throw new IllegalArgumentException("Incorrect image format of the input image proxy: " + nVar.getFormat());
     }

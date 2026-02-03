@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Sheet/native/ActionSheetIconHeader.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun46418: for (var _fun46418_ip = 0;;) switch (_fun46418_ip) {
+        _fun46474: for (var _fun46474_ip = 0;;) switch (_fun46474_ip) {
             case 0:
                 var0 = arg0;
                 var10 = var0.title;
@@ -99,8 +99,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = null;
                 var9 = var7 != var11;
                 if (!var9) {
-                    _fun46418_ip = 203;
-                    continue _fun46418
+                    _fun46474_ip = 203;
+                    continue _fun46474
                 }
             case 153:
                 var10 = _closure1_slot3;
@@ -127,4 +127,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ActionSheetIconHeader = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 3932, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 3941, 2]);

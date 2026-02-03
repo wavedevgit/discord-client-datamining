@@ -9,13 +9,13 @@ import java.util.concurrent.atomic.AtomicLong;
 public final class zj {
 
     /* renamed from: a  reason: collision with root package name */
-    private final gf.w f46053a;
+    private final gf.w f46011a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final AtomicLong f46054b = new AtomicLong(-1);
+    private final AtomicLong f46012b = new AtomicLong(-1);
 
     zj(Context context, String str) {
-        this.f46053a = gf.v.b(context, gf.x.a().b("mlkit:vision").a());
+        this.f46011a = gf.v.b(context, gf.x.a().b("mlkit:vision").a());
     }
 
     public static zj a(Context context) {
@@ -24,16 +24,16 @@ public final class zj {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final /* synthetic */ void b(long j10, Exception exc) {
-        this.f46054b.set(j10);
+        this.f46012b.set(j10);
     }
 
     public final synchronized void c(int i10, int i11, long j10, long j11) {
-        AtomicLong atomicLong = this.f46054b;
+        AtomicLong atomicLong = this.f46012b;
         final long elapsedRealtime = SystemClock.elapsedRealtime();
-        if (atomicLong.get() != -1 && elapsedRealtime - this.f46054b.get() <= TimeUnit.MINUTES.toMillis(30L)) {
+        if (atomicLong.get() != -1 && elapsedRealtime - this.f46012b.get() <= TimeUnit.MINUTES.toMillis(30L)) {
             return;
         }
-        this.f46053a.d(new gf.u(0, Arrays.asList(new gf.n(i10, i11, 0, j10, j11, null, null, 0, -1)))).e(new wg.f() { // from class: pg.yj
+        this.f46011a.d(new gf.u(0, Arrays.asList(new gf.n(i10, i11, 0, j10, j11, null, null, 0, -1)))).e(new wg.f() { // from class: pg.yj
             @Override // wg.f
             public final void onFailure(Exception exc) {
                 zj.this.b(elapsedRealtime, exc);

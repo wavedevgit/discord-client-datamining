@@ -6,13 +6,13 @@ import java.util.logging.Logger;
 public abstract class z0 extends g0 {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Logger f15061b = Logger.getLogger(z0.class.getName());
+    private static final Logger f14029b = Logger.getLogger(z0.class.getName());
 
     /* renamed from: c  reason: collision with root package name */
-    private static final boolean f15062c = g4.C();
+    private static final boolean f14030c = g4.C();
 
     /* renamed from: a  reason: collision with root package name */
-    a1 f15063a;
+    a1 f14031a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ z0(y0 y0Var) {
@@ -35,7 +35,7 @@ public abstract class z0 extends g0 {
         try {
             length = l4.c(str);
         } catch (k4 unused) {
-            length = str.getBytes(y1.f15040b).length;
+            length = str.getBytes(y1.f14008b).length;
         }
         return w(length) + length;
     }
@@ -54,8 +54,8 @@ public abstract class z0 extends g0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void a(String str, k4 k4Var) {
-        f15061b.logp(Level.WARNING, "com.google.protobuf.CodedOutputStream", "inefficientWriteStringNoTag", "Converting ill-formed UTF-16. Your Protocol Buffer will not round trip correctly!", (Throwable) k4Var);
-        byte[] bytes = str.getBytes(y1.f15040b);
+        f14029b.logp(Level.WARNING, "com.google.protobuf.CodedOutputStream", "inefficientWriteStringNoTag", "Converting ill-formed UTF-16. Your Protocol Buffer will not round trip correctly!", (Throwable) k4Var);
+        byte[] bytes = str.getBytes(y1.f14008b);
         try {
             int length = bytes.length;
             q(length);

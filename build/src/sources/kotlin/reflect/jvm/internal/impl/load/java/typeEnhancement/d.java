@@ -9,7 +9,7 @@ import kotlin.reflect.jvm.internal.impl.types.KotlinType;
 final class d implements AnnotationDescriptor {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f34176a = new d();
+    public static final d f33566a = new d();
 
     private d() {
     }
@@ -21,7 +21,7 @@ final class d implements AnnotationDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
     public Map getAllValueArguments() {
         a();
-        throw new jr.h();
+        throw new lr.h();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
@@ -32,13 +32,13 @@ final class d implements AnnotationDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
     public SourceElement getSource() {
         a();
-        throw new jr.h();
+        throw new lr.h();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
     public KotlinType getType() {
         a();
-        throw new jr.h();
+        throw new lr.h();
     }
 
     public String toString() {

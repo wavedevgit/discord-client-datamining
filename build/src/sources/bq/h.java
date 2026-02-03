@@ -1,42 +1,32 @@
 package bq;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.viewbinding.ViewBinding;
+import kotlinx.coroutines.flow.Flow;
+import kotlinx.coroutines.flow.MutableStateFlow;
+import ms.l0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class h implements ViewBinding {
+public final class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f7466a;
+    private final MutableStateFlow f6749a;
 
-    private h(ConstraintLayout constraintLayout) {
-        this.f7466a = constraintLayout;
+    /* renamed from: b  reason: collision with root package name */
+    private final Flow f6750b;
+
+    public h(g gVar) {
+        MutableStateFlow a10 = l0.a(gVar);
+        this.f6749a = a10;
+        this.f6750b = ms.g.m(a10, 1);
     }
 
-    public static h a(View view) {
-        if (view != null) {
-            return new h((ConstraintLayout) view);
-        }
-        throw new NullPointerException("rootView");
+    public final Flow a() {
+        return this.f6750b;
     }
 
-    public static h c(LayoutInflater layoutInflater) {
-        return d(layoutInflater, null, false);
+    public final g b() {
+        return (g) this.f6749a.getValue();
     }
 
-    public static h d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(wp.f.f52937i, viewGroup, false);
-        if (z10) {
-            viewGroup.addView(inflate);
-        }
-        return a(inflate);
-    }
-
-    @Override // androidx.viewbinding.ViewBinding
-    /* renamed from: b */
-    public ConstraintLayout getRoot() {
-        return this.f7466a;
+    public final void c(g gVar) {
+        this.f6749a.setValue(gVar);
     }
 }

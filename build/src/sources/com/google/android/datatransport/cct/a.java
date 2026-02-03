@@ -11,44 +11,44 @@ import zb.g;
 public final class a implements g {
 
     /* renamed from: c  reason: collision with root package name */
-    static final String f12262c;
+    static final String f11230c;
 
     /* renamed from: d  reason: collision with root package name */
-    static final String f12263d;
+    static final String f11231d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final String f12264e;
+    private static final String f11232e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Set f12265f;
+    private static final Set f11233f;
 
     /* renamed from: g  reason: collision with root package name */
-    public static final a f12266g;
+    public static final a f11234g;
 
     /* renamed from: h  reason: collision with root package name */
-    public static final a f12267h;
+    public static final a f11235h;
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f12268a;
+    private final String f11236a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f12269b;
+    private final String f11237b;
 
     static {
         String a10 = e.a("hts/frbslgiggolai.o/0clgbthfra=snpoo", "tp:/ieaeogn.ogepscmvc/o/ac?omtjo_rt3");
-        f12262c = a10;
+        f11230c = a10;
         String a11 = e.a("hts/frbslgigp.ogepscmv/ieo/eaybtho", "tp:/ieaeogn-agolai.o/1frlglgc/aclg");
-        f12263d = a11;
+        f11231d = a11;
         String a12 = e.a("AzSCki82AwsLzKd5O8zo", "IayckHiZRO1EFl1aGoK");
-        f12264e = a12;
-        f12265f = Collections.unmodifiableSet(new HashSet(Arrays.asList(xb.c.b("proto"), xb.c.b("json"))));
-        f12266g = new a(a10, null);
-        f12267h = new a(a11, a12);
+        f11232e = a12;
+        f11233f = Collections.unmodifiableSet(new HashSet(Arrays.asList(xb.c.b("proto"), xb.c.b("json"))));
+        f11234g = new a(a10, null);
+        f11235h = new a(a11, a12);
     }
 
     public a(String str, String str2) {
-        this.f12268a = str;
-        this.f12269b = str2;
+        this.f11236a = str;
+        this.f11237b = str2;
     }
 
     public static a c(byte[] bArr) {
@@ -73,15 +73,15 @@ public final class a implements g {
 
     @Override // zb.g
     public Set a() {
-        return f12265f;
+        return f11233f;
     }
 
     public byte[] b() {
-        String str = this.f12269b;
-        if (str == null && this.f12268a == null) {
+        String str = this.f11237b;
+        if (str == null && this.f11236a == null) {
             return null;
         }
-        String str2 = this.f12268a;
+        String str2 = this.f11236a;
         if (str == null) {
             str = "";
         }
@@ -89,11 +89,11 @@ public final class a implements g {
     }
 
     public String d() {
-        return this.f12269b;
+        return this.f11237b;
     }
 
     public String e() {
-        return this.f12268a;
+        return this.f11236a;
     }
 
     @Override // zb.f

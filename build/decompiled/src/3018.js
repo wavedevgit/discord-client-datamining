@@ -1,81 +1,280 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun24032: for (var _fun24032_ip = 0;;) switch (_fun24032_ip) {
-        case 0:
-            var1 = exports;
-            var0 = global;
-            var4 = var0.Object;
-            var3 = var4.defineProperty;
-            var2 = {};
-            var0 = true;
-            var2.value = var0;
-            var0 = '__esModule';
-            var0 = var3.bind(var4)(var1, var0, var2);
-            var0 = undefined;
-            var1.default = var0;
-            var3 = dependencyMap;
-            var2 = 0;
-            var3 = var3[var2];
-            var2 = require;
-            var4 = var2.bind(var0)(var3);
-            if (!var4) {
-                _fun24032_ip = 75;
-                continue _fun24032
-            }
-        case 63:
-            var2 = var4.__esModule;
-            var3 = var4;
-            if (var2) {
-                _fun24032_ip = 84;
-                continue _fun24032
-            }
-        case 75:
-            var2 = {};
-            var2.default = var4;
-            var3 = var2;
-        case 84:
-            var2 = {};
-            var6 = var3.default;
-            var4 = {};
-            var5 = {
-                'full': "y'年'M'月'd'日' EEEE",
-                'long': "y'年'M'月'd'日'",
-                'medium': 'yyyy-MM-dd',
-                'short': 'yy-MM-dd'
-            };
-            var4.formats = var5;
-            var5 = 'full';
-            var4.defaultWidth = var5;
-            var4 = var6.bind(var0)(var4);
-            var2.date = var4;
-            var6 = var3.default;
-            var4 = {};
-            var7 = {
-                'full': 'zzzz a h:mm:ss',
-                'long': 'z a h:mm:ss',
-                'medium': 'a h:mm:ss',
-                'short': 'a h:mm'
-            };
-            var4.formats = var7;
-            var4.defaultWidth = var5;
-            var4 = var6.bind(var0)(var4);
-            var2.time = var4;
-            var4 = var3.default;
-            var3 = {};
-            var6 = {
-                'full': '{{date}} {{time}}',
-                'long': '{{date}} {{time}}',
-                'medium': '{{date}} {{time}}',
-                'short': '{{date}} {{time}}'
-            };
-            var3.formats = var6;
-            var3.defaultWidth = var5;
-            var3 = var4.bind(var0)(var3);
-            var2.dateTime = var3;
-            var1.default = var2;
-            var2 = var1.default;
-            var1 = module;
-            var1.exports = var2;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1681]);
+    var6 = require;
+    var1 = exports;
+    var7 = dependencyMap;
+    var5 = function arg0() {
+        _fun24098: for (var _fun24098_ip = 0;;) switch (_fun24098_ip) {
+            case 0:
+                var2 = arg0;
+                if (!var2) {
+                    _fun24098_ip = 18;
+                    continue _fun24098
+                }
+            case 6:
+                var1 = var2.__esModule;
+                var0 = var2;
+                if (var1) {
+                    _fun24098_ip = 27;
+                    continue _fun24098
+                }
+            case 18:
+                var1 = {};
+                var1.default = var2;
+                var0 = var1;
+            case 27:
+                return var0;
+        }
+    };
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = undefined;
+    var1.default = var0;
+    var2 = 0;
+    var2 = var7[var2];
+    var2 = var6.bind(var0)(var2);
+    var3 = var5.bind(var0)(var2);
+    var2 = {};
+    var4 = 1;
+    var4 = var7[var4];
+    var4 = var6.bind(var0)(var4);
+    var4 = var5.bind(var0)(var4);
+    var5 = var4.default;
+    var4 = {};
+    var6 = /^(\d+)(-?(е|й|є|а|я))?/i;
+    var4.matchPattern = var6;
+    var6 = /\d+/i;
+    var4.parsePattern = var6;
+    var6 = function arg0() {
+        var0 = global;
+        var3 = var0.parseInt;
+        var2 = undefined;
+        var1 = arg0;
+        var0 = 10;
+        var0 = var3.bind(var2)(var1, var0);
+        return var0;
+    };
+    var4.valueCallback = var6;
+    var4 = var5.bind(var0)(var4);
+    var2.ordinalNumber = var4;
+    var7 = var3.default;
+    var4 = {};
+    var5 = {};
+    var6 = /^((до )?н\.?\s?е\.?)/i;
+    var5.narrow = var6;
+    var6 = /^((до )?н\.?\s?е\.?)/i;
+    var5.abbreviated = var6;
+    var6 = /^(до нашої ери|нашої ери|наша ера)/i;
+    var5.wide = var6;
+    var4.matchPatterns = var5;
+    var6 = 'wide';
+    var4.defaultMatchWidth = var6;
+    var5 = {};
+    var9 = new Array(2);
+    var10 = /^д/i;
+    var9[0] = var10;
+    var10 = /^н/i;
+    var9[1] = var10;
+    var5.any = var9;
+    var4.parsePatterns = var5;
+    var5 = 'any';
+    var4.defaultParseWidth = var5;
+    var4 = var7.bind(var0)(var4);
+    var2.era = var4;
+    var7 = var3.default;
+    var4 = {};
+    var9 = {};
+    var10 = /^[1234]/i;
+    var9.narrow = var10;
+    var10 = /^[1234](-?[иі]?й?)? кв.?/i;
+    var9.abbreviated = var10;
+    var10 = /^[1234](-?[иі]?й?)? квартал/i;
+    var9.wide = var10;
+    var4.matchPatterns = var9;
+    var4.defaultMatchWidth = var6;
+    var9 = {};
+    var10 = new Array(4);
+    var11 = /1/i;
+    var10[0] = var11;
+    var11 = /2/i;
+    var10[1] = var11;
+    var11 = /3/i;
+    var10[2] = var11;
+    var11 = /4/i;
+    var10[3] = var11;
+    var9.any = var10;
+    var4.parsePatterns = var9;
+    var4.defaultParseWidth = var5;
+    var8 = function arg0() {
+        var1 = arg0;
+        var0 = 1;
+        var0 = var1 + var0;
+        return var0;
+    };
+    var4.valueCallback = var8;
+    var4 = var7.bind(var0)(var4);
+    var2.quarter = var4;
+    var7 = var3.default;
+    var4 = {};
+    var8 = {};
+    var9 = /^[слбктчвжг]/i;
+    var8.narrow = var9;
+    var9 = /^(січ|лют|бер(ез)?|квіт|трав|черв|лип|серп|вер(ес)?|жовт|лис(топ)?|груд)\.?/i;
+    var8.abbreviated = var9;
+    var9 = /^(січень|січня|лютий|лютого|березень|березня|квітень|квітня|травень|травня|червня|червень|липень|липня|серпень|серпня|вересень|вересня|жовтень|жовтня|листопад[а]?|грудень|грудня)/i;
+    var8.wide = var9;
+    var4.matchPatterns = var8;
+    var4.defaultMatchWidth = var6;
+    var8 = {};
+    var9 = new Array(12);
+    var10 = /^с/i;
+    var9[0] = var10;
+    var10 = /^л/i;
+    var9[1] = var10;
+    var10 = /^б/i;
+    var9[2] = var10;
+    var10 = /^к/i;
+    var9[3] = var10;
+    var10 = /^т/i;
+    var9[4] = var10;
+    var10 = /^ч/i;
+    var9[5] = var10;
+    var10 = /^л/i;
+    var9[6] = var10;
+    var10 = /^с/i;
+    var9[7] = var10;
+    var10 = /^в/i;
+    var9[8] = var10;
+    var10 = /^ж/i;
+    var9[9] = var10;
+    var10 = /^л/i;
+    var9[10] = var10;
+    var10 = /^г/i;
+    var9[11] = var10;
+    var8.narrow = var9;
+    var9 = new Array(12);
+    var10 = /^сі/i;
+    var9[0] = var10;
+    var10 = /^лю/i;
+    var9[1] = var10;
+    var10 = /^б/i;
+    var9[2] = var10;
+    var10 = /^к/i;
+    var9[3] = var10;
+    var10 = /^т/i;
+    var9[4] = var10;
+    var10 = /^ч/i;
+    var9[5] = var10;
+    var10 = /^лип/i;
+    var9[6] = var10;
+    var10 = /^се/i;
+    var9[7] = var10;
+    var10 = /^в/i;
+    var9[8] = var10;
+    var10 = /^ж/i;
+    var9[9] = var10;
+    var10 = /^лис/i;
+    var9[10] = var10;
+    var10 = /^г/i;
+    var9[11] = var10;
+    var8.any = var9;
+    var4.parsePatterns = var8;
+    var4.defaultParseWidth = var5;
+    var4 = var7.bind(var0)(var4);
+    var2.month = var4;
+    var7 = var3.default;
+    var4 = {};
+    var8 = {};
+    var9 = /^[нпвсч]/i;
+    var8.narrow = var9;
+    var9 = /^(нд|пн|вт|ср|чт|пт|сб)\.?/i;
+    var8.short = var9;
+    var9 = /^(нед|пон|вів|сер|че?тв|птн?|суб)\.?/i;
+    var8.abbreviated = var9;
+    var9 = /^(неділ[яі]|понеділ[ок][ка]|вівтор[ок][ка]|серед[аи]|четвер(га)?|п\W*?ятниц[яі]|субот[аи])/i;
+    var8.wide = var9;
+    var4.matchPatterns = var8;
+    var4.defaultMatchWidth = var6;
+    var8 = {};
+    var9 = new Array(7);
+    var10 = /^н/i;
+    var9[0] = var10;
+    var10 = /^п/i;
+    var9[1] = var10;
+    var10 = /^в/i;
+    var9[2] = var10;
+    var10 = /^с/i;
+    var9[3] = var10;
+    var10 = /^ч/i;
+    var9[4] = var10;
+    var10 = /^п/i;
+    var9[5] = var10;
+    var10 = /^с/i;
+    var9[6] = var10;
+    var8.narrow = var9;
+    var9 = new Array(7);
+    var10 = /^н/i;
+    var9[0] = var10;
+    var10 = /^п[он]/i;
+    var9[1] = var10;
+    var10 = /^в/i;
+    var9[2] = var10;
+    var10 = /^с[ер]/i;
+    var9[3] = var10;
+    var10 = /^ч/i;
+    var9[4] = var10;
+    var10 = /^п\W*?[ят]/i;
+    var9[5] = var10;
+    var10 = /^с[уб]/i;
+    var9[6] = var10;
+    var8.any = var9;
+    var4.parsePatterns = var8;
+    var4.defaultParseWidth = var5;
+    var4 = var7.bind(var0)(var4);
+    var2.day = var4;
+    var4 = var3.default;
+    var3 = {};
+    var7 = {};
+    var8 = /^([дп]п|півн\.?|пол\.?|ранок|ранку|день|дня|веч\.?|ніч|ночі)/i;
+    var7.narrow = var8;
+    var8 = /^([дп]п|півн\.?|пол\.?|ранок|ранку|день|дня|веч\.?|ніч|ночі)/i;
+    var7.abbreviated = var8;
+    var8 = /^([дп]п|північ|полудень|ранок|ранку|день|дня|вечір|вечора|ніч|ночі)/i;
+    var7.wide = var8;
+    var3.matchPatterns = var7;
+    var3.defaultMatchWidth = var6;
+    var6 = {};
+    var7 = {};
+    var8 = /^дп/i;
+    var7.am = var8;
+    var8 = /^пп/i;
+    var7.pm = var8;
+    var8 = /^півн/i;
+    var7.midnight = var8;
+    var8 = /^пол/i;
+    var7.noon = var8;
+    var8 = /^р/i;
+    var7.morning = var8;
+    var8 = /^д[ен]/i;
+    var7.afternoon = var8;
+    var8 = /^в/i;
+    var7.evening = var8;
+    var8 = /^н/i;
+    var7.night = var8;
+    var6.any = var7;
+    var3.parsePatterns = var6;
+    var3.defaultParseWidth = var5;
+    var3 = var4.bind(var0)(var3);
+    var2.dayPeriod = var3;
+    var1.default = var2;
+    var2 = var1.default;
+    var1 = arg4;
+    var1.exports = var2;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1695, 1696]);

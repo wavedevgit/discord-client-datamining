@@ -1,31 +1,33 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
-    var6 = dependencyMap;
-    var4 = 0;
-    var1 = var6[var4];
+    var1 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = {
+        'NONE': '',
+        'INVERT': 'CIColorInvert',
+        'MONOCHROME': 'CIColorMonochrome',
+        'POSTERIZE': 'CIColorPosterize',
+        'FALSE': 'CIFalseColor',
+        'MAXIMUMCOMPONENT': 'CIMaximumComponent',
+        'MINIMUMCOMPONENT': 'CIMinimumComponent',
+        'CHROME': 'CIPhotoEffectChrome',
+        'FADE': 'CIPhotoEffectFade',
+        'INSTANT': 'CIPhotoEffectInstant',
+        'MONO': 'CIPhotoEffectMono',
+        'NOIR': 'CIPhotoEffectNoir',
+        'PROCESS': 'CIPhotoEffectProcess',
+        'TONAL': 'CIPhotoEffectTonal',
+        'TRANSFER': 'CIPhotoEffectTransfer',
+        'SEPIA': 'CISepiaTone'
+    };
+    var1.default = var0;
     var0 = undefined;
-    var3 = var5.bind(var0)(var1);
-    var2 = var3.shape;
-    var1 = {};
-    var7 = var6[var4];
-    var7 = var5.bind(var0)(var7);
-    var7 = var7.number;
-    var1.top = var7;
-    var7 = var6[var4];
-    var7 = var5.bind(var0)(var7);
-    var7 = var7.number;
-    var1.left = var7;
-    var7 = var6[var4];
-    var7 = var5.bind(var0)(var7);
-    var7 = var7.number;
-    var1.bottom = var7;
-    var4 = var6[var4];
-    var4 = var5.bind(var0)(var4);
-    var4 = var4.number;
-    var1.right = var4;
-    var2 = var2.bind(var3)(var1);
-    var1 = module;
-    var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3211]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

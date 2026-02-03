@@ -33,8 +33,8 @@ abstract class t {
         int a10 = a(fragment, z10, z11);
         fragment.setAnimations(0, 0, 0, 0);
         ViewGroup viewGroup = fragment.mContainer;
-        if (viewGroup != null && viewGroup.getTag(f3.b.f23557c) != null) {
-            fragment.mContainer.setTag(f3.b.f23557c, null);
+        if (viewGroup != null && viewGroup.getTag(f3.b.f23149c) != null) {
+            fragment.mContainer.setTag(f3.b.f23149c, null);
         }
         ViewGroup viewGroup2 = fragment.mContainer;
         if (viewGroup2 != null && viewGroup2.getLayoutTransition() != null) {
@@ -103,9 +103,9 @@ abstract class t {
                         }
                         return c(context, 16842937);
                     } else if (z10) {
-                        return f3.a.f23551c;
+                        return f3.a.f23143c;
                     } else {
-                        return f3.a.f23552d;
+                        return f3.a.f23144d;
                     }
                 } else if (z10) {
                     return c(context, 16842938);
@@ -113,14 +113,14 @@ abstract class t {
                     return c(context, 16842939);
                 }
             } else if (z10) {
-                return f3.a.f23549a;
+                return f3.a.f23141a;
             } else {
-                return f3.a.f23550b;
+                return f3.a.f23142b;
             }
         } else if (z10) {
-            return f3.a.f23553e;
+            return f3.a.f23145e;
         } else {
-            return f3.a.f23554f;
+            return f3.a.f23146f;
         }
     }
 
@@ -128,23 +128,23 @@ abstract class t {
     static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final Animation f4383a;
+        public final Animation f4352a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final AnimatorSet f4384b;
+        public final AnimatorSet f4353b;
 
         a(Animation animation) {
-            this.f4383a = animation;
-            this.f4384b = null;
+            this.f4352a = animation;
+            this.f4353b = null;
             if (animation == null) {
                 throw new IllegalStateException("Animation cannot be null");
             }
         }
 
         a(Animator animator) {
-            this.f4383a = null;
+            this.f4352a = null;
             AnimatorSet animatorSet = new AnimatorSet();
-            this.f4384b = animatorSet;
+            this.f4353b = animatorSet;
             animatorSet.play(animator);
             if (animator == null) {
                 throw new IllegalStateException("Animator cannot be null");
@@ -156,63 +156,63 @@ abstract class t {
     static class b extends AnimationSet implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final ViewGroup f4385d;
+        private final ViewGroup f4354d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final View f4386e;
+        private final View f4355e;
 
         /* renamed from: i  reason: collision with root package name */
-        private boolean f4387i;
+        private boolean f4356i;
 
         /* renamed from: o  reason: collision with root package name */
-        private boolean f4388o;
+        private boolean f4357o;
 
         /* renamed from: p  reason: collision with root package name */
-        private boolean f4389p;
+        private boolean f4358p;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public b(Animation animation, ViewGroup viewGroup, View view) {
             super(false);
-            this.f4389p = true;
-            this.f4385d = viewGroup;
-            this.f4386e = view;
+            this.f4358p = true;
+            this.f4354d = viewGroup;
+            this.f4355e = view;
             addAnimation(animation);
             viewGroup.post(this);
         }
 
         @Override // android.view.animation.AnimationSet, android.view.animation.Animation
         public boolean getTransformation(long j10, Transformation transformation) {
-            this.f4389p = true;
-            if (this.f4387i) {
-                return !this.f4388o;
+            this.f4358p = true;
+            if (this.f4356i) {
+                return !this.f4357o;
             }
             if (!super.getTransformation(j10, transformation)) {
-                this.f4387i = true;
-                androidx.core.view.y.a(this.f4385d, this);
+                this.f4356i = true;
+                androidx.core.view.y.a(this.f4354d, this);
             }
             return true;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            if (!this.f4387i && this.f4389p) {
-                this.f4389p = false;
-                this.f4385d.post(this);
+            if (!this.f4356i && this.f4358p) {
+                this.f4358p = false;
+                this.f4354d.post(this);
                 return;
             }
-            this.f4385d.endViewTransition(this.f4386e);
-            this.f4388o = true;
+            this.f4354d.endViewTransition(this.f4355e);
+            this.f4357o = true;
         }
 
         @Override // android.view.animation.Animation
         public boolean getTransformation(long j10, Transformation transformation, float f10) {
-            this.f4389p = true;
-            if (this.f4387i) {
-                return !this.f4388o;
+            this.f4358p = true;
+            if (this.f4356i) {
+                return !this.f4357o;
             }
             if (!super.getTransformation(j10, transformation, f10)) {
-                this.f4387i = true;
-                androidx.core.view.y.a(this.f4385d, this);
+                this.f4356i = true;
+                androidx.core.view.y.a(this.f4354d, this);
             }
             return true;
         }

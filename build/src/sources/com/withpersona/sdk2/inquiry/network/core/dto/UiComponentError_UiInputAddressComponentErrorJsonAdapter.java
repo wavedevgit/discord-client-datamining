@@ -10,7 +10,7 @@ import com.withpersona.sdk2.inquiry.network.core.dto.UiComponentError;
 import java.util.Map;
 import kotlin.collections.x0;
 import org.jetbrains.annotations.NotNull;
-import tm.c;
+import vm.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class UiComponentError_UiInputAddressComponentErrorJsonAdapter extends h {
     @NotNull
@@ -42,21 +42,21 @@ public final class UiComponentError_UiInputAddressComponentErrorJsonAdapter exte
         String str2 = null;
         Map map = null;
         while (mVar.hasNext()) {
-            int t02 = mVar.t0(this.options);
-            if (t02 == -1) {
-                mVar.F0();
+            int A0 = mVar.A0(this.options);
+            if (A0 == -1) {
+                mVar.E0();
                 mVar.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 str = (String) this.stringAdapter.fromJson(mVar);
                 if (str == null) {
                     throw c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, mVar);
                 }
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 str2 = (String) this.stringAdapter.fromJson(mVar);
                 if (str2 == null) {
                     throw c.x("type", "type", mVar);
                 }
-            } else if (t02 == 2 && (map = (Map) this.mapOfStringStringAdapter.fromJson(mVar)) == null) {
+            } else if (A0 == 2 && (map = (Map) this.mapOfStringStringAdapter.fromJson(mVar)) == null) {
                 throw c.x("message", "message", mVar);
             }
         }
@@ -77,11 +77,11 @@ public final class UiComponentError_UiInputAddressComponentErrorJsonAdapter exte
     public void toJson(@NotNull t tVar, UiComponentError.UiInputAddressComponentError uiInputAddressComponentError) {
         if (uiInputAddressComponentError != null) {
             tVar.l();
-            tVar.t0(StackTraceHelper.NAME_KEY);
+            tVar.A0(StackTraceHelper.NAME_KEY);
             this.stringAdapter.toJson(tVar, uiInputAddressComponentError.getName());
-            tVar.t0("type");
+            tVar.A0("type");
             this.stringAdapter.toJson(tVar, uiInputAddressComponentError.getType());
-            tVar.t0("message");
+            tVar.A0("message");
             this.mapOfStringStringAdapter.toJson(tVar, uiInputAddressComponentError.getMessage());
             tVar.E();
             return;

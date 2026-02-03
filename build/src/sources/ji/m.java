@@ -5,13 +5,13 @@ import java.util.Comparator;
 public abstract class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final m f31893a = new a();
+    private static final m f31689a = new a();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final m f31894b = new b(-1);
+    private static final m f31690b = new b(-1);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final m f31895c = new b(1);
+    private static final m f31691c = new b(1);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends m {
@@ -51,9 +51,9 @@ public abstract class m {
 
         m k(int i10) {
             if (i10 < 0) {
-                return m.f31894b;
+                return m.f31690b;
             }
-            return i10 > 0 ? m.f31895c : m.f31893a;
+            return i10 > 0 ? m.f31691c : m.f31689a;
         }
     }
 
@@ -62,7 +62,7 @@ public abstract class m {
     }
 
     public static m j() {
-        return f31893a;
+        return f31689a;
     }
 
     public abstract m d(int i10, int i11);
@@ -84,16 +84,16 @@ public abstract class m {
     private static final class b extends m {
 
         /* renamed from: d  reason: collision with root package name */
-        final int f31896d;
+        final int f31692d;
 
         b(int i10) {
             super(null);
-            this.f31896d = i10;
+            this.f31692d = i10;
         }
 
         @Override // ji.m
         public int i() {
-            return this.f31896d;
+            return this.f31692d;
         }
 
         @Override // ji.m

@@ -23,7 +23,7 @@ public final class CommandQueue$suspendNativeRequest$2$1$1 extends Lambda implem
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Object invoke(Object obj) {
         invoke((Throwable) obj);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public final void invoke(Throwable th2) {

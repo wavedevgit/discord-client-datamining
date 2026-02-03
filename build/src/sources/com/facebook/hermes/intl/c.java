@@ -11,131 +11,131 @@ public interface c {
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f10991a;
+        static final /* synthetic */ int[] f9959a;
 
         /* renamed from: b  reason: collision with root package name */
-        static final /* synthetic */ int[] f10992b;
+        static final /* synthetic */ int[] f9960b;
 
         /* renamed from: c  reason: collision with root package name */
-        static final /* synthetic */ int[] f10993c;
+        static final /* synthetic */ int[] f9961c;
 
         /* renamed from: d  reason: collision with root package name */
-        static final /* synthetic */ int[] f10994d;
+        static final /* synthetic */ int[] f9962d;
 
         /* renamed from: e  reason: collision with root package name */
-        static final /* synthetic */ int[] f10995e;
+        static final /* synthetic */ int[] f9963e;
 
         /* renamed from: f  reason: collision with root package name */
-        static final /* synthetic */ int[] f10996f;
+        static final /* synthetic */ int[] f9964f;
 
         /* renamed from: g  reason: collision with root package name */
-        static final /* synthetic */ int[] f10997g;
+        static final /* synthetic */ int[] f9965g;
 
         static {
             int[] iArr = new int[d.values().length];
-            f10997g = iArr;
+            f9965g = iArr;
             try {
                 iArr[d.ACCOUNTING.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f10997g[d.STANDARD.ordinal()] = 2;
+                f9965g[d.STANDARD.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
-            int[] iArr2 = new int[EnumC0159c.values().length];
-            f10996f = iArr2;
+            int[] iArr2 = new int[EnumC0140c.values().length];
+            f9964f = iArr2;
             try {
-                iArr2[EnumC0159c.SYMBOL.ordinal()] = 1;
+                iArr2[EnumC0140c.SYMBOL.ordinal()] = 1;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f10996f[EnumC0159c.NARROWSYMBOL.ordinal()] = 2;
+                f9964f[EnumC0140c.NARROWSYMBOL.ordinal()] = 2;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f10996f[EnumC0159c.CODE.ordinal()] = 3;
+                f9964f[EnumC0140c.CODE.ordinal()] = 3;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f10996f[EnumC0159c.NAME.ordinal()] = 4;
+                f9964f[EnumC0140c.NAME.ordinal()] = 4;
             } catch (NoSuchFieldError unused6) {
             }
             int[] iArr3 = new int[i.values().length];
-            f10995e = iArr3;
+            f9963e = iArr3;
             try {
                 iArr3[i.SHORT.ordinal()] = 1;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f10995e[i.NARROW.ordinal()] = 2;
+                f9963e[i.NARROW.ordinal()] = 2;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f10995e[i.LONG.ordinal()] = 3;
+                f9963e[i.LONG.ordinal()] = 3;
             } catch (NoSuchFieldError unused9) {
             }
             int[] iArr4 = new int[g.values().length];
-            f10994d = iArr4;
+            f9962d = iArr4;
             try {
                 iArr4[g.AUTO.ordinal()] = 1;
             } catch (NoSuchFieldError unused10) {
             }
             try {
-                f10994d[g.ALWAYS.ordinal()] = 2;
+                f9962d[g.ALWAYS.ordinal()] = 2;
             } catch (NoSuchFieldError unused11) {
             }
             try {
-                f10994d[g.NEVER.ordinal()] = 3;
+                f9962d[g.NEVER.ordinal()] = 3;
             } catch (NoSuchFieldError unused12) {
             }
             try {
-                f10994d[g.EXCEPTZERO.ordinal()] = 4;
+                f9962d[g.EXCEPTZERO.ordinal()] = 4;
             } catch (NoSuchFieldError unused13) {
             }
             int[] iArr5 = new int[b.values().length];
-            f10993c = iArr5;
+            f9961c = iArr5;
             try {
                 iArr5[b.SHORT.ordinal()] = 1;
             } catch (NoSuchFieldError unused14) {
             }
             try {
-                f10993c[b.LONG.ordinal()] = 2;
+                f9961c[b.LONG.ordinal()] = 2;
             } catch (NoSuchFieldError unused15) {
             }
             int[] iArr6 = new int[e.values().length];
-            f10992b = iArr6;
+            f9960b = iArr6;
             try {
                 iArr6[e.STANDARD.ordinal()] = 1;
             } catch (NoSuchFieldError unused16) {
             }
             try {
-                f10992b[e.SCIENTIFIC.ordinal()] = 2;
+                f9960b[e.SCIENTIFIC.ordinal()] = 2;
             } catch (NoSuchFieldError unused17) {
             }
             try {
-                f10992b[e.ENGINEERING.ordinal()] = 3;
+                f9960b[e.ENGINEERING.ordinal()] = 3;
             } catch (NoSuchFieldError unused18) {
             }
             try {
-                f10992b[e.COMPACT.ordinal()] = 4;
+                f9960b[e.COMPACT.ordinal()] = 4;
             } catch (NoSuchFieldError unused19) {
             }
             int[] iArr7 = new int[h.values().length];
-            f10991a = iArr7;
+            f9959a = iArr7;
             try {
                 iArr7[h.DECIMAL.ordinal()] = 1;
             } catch (NoSuchFieldError unused20) {
             }
             try {
-                f10991a[h.PERCENT.ordinal()] = 2;
+                f9959a[h.PERCENT.ordinal()] = 2;
             } catch (NoSuchFieldError unused21) {
             }
             try {
-                f10991a[h.CURRENCY.ordinal()] = 3;
+                f9959a[h.CURRENCY.ordinal()] = 3;
             } catch (NoSuchFieldError unused22) {
             }
             try {
-                f10991a[h.UNIT.ordinal()] = 4;
+                f9959a[h.UNIT.ordinal()] = 4;
             } catch (NoSuchFieldError unused23) {
             }
         }
@@ -148,7 +148,7 @@ public interface c {
 
         @Override // java.lang.Enum
         public String toString() {
-            int i10 = a.f10993c[ordinal()];
+            int i10 = a.f9961c[ordinal()];
             if (i10 != 1) {
                 if (i10 == 2) {
                     return "long";
@@ -161,14 +161,14 @@ public interface c {
 
     /* renamed from: com.facebook.hermes.intl.c$c  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public enum EnumC0159c {
+    public enum EnumC0140c {
         SYMBOL,
         NARROWSYMBOL,
         CODE,
         NAME;
 
         public int d() {
-            if (a.f10996f[ordinal()] != 4) {
+            if (a.f9964f[ordinal()] != 4) {
                 return 0;
             }
             return 1;
@@ -176,7 +176,7 @@ public interface c {
 
         @Override // java.lang.Enum
         public String toString() {
-            int i10 = a.f10996f[ordinal()];
+            int i10 = a.f9964f[ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 != 3) {
@@ -200,7 +200,7 @@ public interface c {
 
         @Override // java.lang.Enum
         public String toString() {
-            int i10 = a.f10997g[ordinal()];
+            int i10 = a.f9965g[ordinal()];
             if (i10 != 1) {
                 if (i10 == 2) {
                     return "standard";
@@ -220,7 +220,7 @@ public interface c {
 
         @Override // java.lang.Enum
         public String toString() {
-            int i10 = a.f10992b[ordinal()];
+            int i10 = a.f9960b[ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 != 3) {
@@ -253,7 +253,7 @@ public interface c {
 
         @Override // java.lang.Enum
         public String toString() {
-            int i10 = a.f10994d[ordinal()];
+            int i10 = a.f9962d[ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 != 3) {
@@ -278,7 +278,7 @@ public interface c {
         UNIT;
 
         public int d(e eVar, d dVar) {
-            int i10 = a.f10991a[ordinal()];
+            int i10 = a.f9959a[ordinal()];
             if (i10 == 2) {
                 return 2;
             }
@@ -299,7 +299,7 @@ public interface c {
 
         @Override // java.lang.Enum
         public String toString() {
-            int i10 = a.f10991a[ordinal()];
+            int i10 = a.f9959a[ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 != 3) {
@@ -323,7 +323,7 @@ public interface c {
         LONG;
 
         public MeasureFormat.FormatWidth d() {
-            int i10 = a.f10995e[ordinal()];
+            int i10 = a.f9963e[ordinal()];
             if (i10 != 2) {
                 if (i10 != 3) {
                     return MeasureFormat.FormatWidth.SHORT;
@@ -335,7 +335,7 @@ public interface c {
 
         @Override // java.lang.Enum
         public String toString() {
-            int i10 = a.f10995e[ordinal()];
+            int i10 = a.f9963e[ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 == 3) {
@@ -355,7 +355,7 @@ public interface c {
 
     String c(da.b bVar);
 
-    c d(String str, EnumC0159c enumC0159c);
+    c d(String str, EnumC0140c enumC0140c);
 
     c e(f fVar, int i10, int i11);
 

@@ -54,58 +54,58 @@ public final class SilentNotificationManager {
     }
 
     /* renamed from: getNumAccumulatedMessagesForChannel-R7gqayM  reason: not valid java name */
-    private final int m1037getNumAccumulatedMessagesForChannelR7gqayM(long j10) {
-        return this.sharedPrefs.getInt(m1041toMessageCountKeyR7gqayM(j10), 0);
+    private final int m1036getNumAccumulatedMessagesForChannelR7gqayM(long j10) {
+        return this.sharedPrefs.getInt(m1040toMessageCountKeyR7gqayM(j10), 0);
     }
 
     /* renamed from: lastMessagedReceivedAgoInMins-R7gqayM  reason: not valid java name */
-    private final long m1038lastMessagedReceivedAgoInMinsR7gqayM(long j10) {
-        long j11 = this.sharedPrefs.getLong(ChannelId.m1067toStringimpl(j10), 0L);
+    private final long m1037lastMessagedReceivedAgoInMinsR7gqayM(long j10) {
+        long j11 = this.sharedPrefs.getLong(ChannelId.m1066toStringimpl(j10), 0L);
         return TimeUnit.MILLISECONDS.toMinutes(System.currentTimeMillis() - j11);
     }
 
     /* renamed from: setLastMessageReceivedForChannel-LJLSWy8  reason: not valid java name */
-    private final void m1039setLastMessageReceivedForChannelLJLSWy8(long j10, long j11) {
+    private final void m1038setLastMessageReceivedForChannelLJLSWy8(long j10, long j11) {
         SharedPreferences sharedPrefs = this.sharedPrefs;
         Intrinsics.checkNotNullExpressionValue(sharedPrefs, "sharedPrefs");
         SharedPreferences.Editor edit = sharedPrefs.edit();
-        edit.putLong(ChannelId.m1067toStringimpl(j10), j11);
+        edit.putLong(ChannelId.m1066toStringimpl(j10), j11);
         edit.apply();
     }
 
     private final void setMessageReceivedForChannel(NotificationData notificationData) {
-        ChannelId m1023getChannelIdqMVnFVQ = notificationData.m1023getChannelIdqMVnFVQ();
-        if (m1023getChannelIdqMVnFVQ != null) {
-            long m1069unboximpl = m1023getChannelIdqMVnFVQ.m1069unboximpl();
-            m1040setNumAccumulatedMessagesForChannelLJLSWy8(m1069unboximpl, m1037getNumAccumulatedMessagesForChannelR7gqayM(m1069unboximpl) + 1);
-            m1042updateLastMessageReceivedForChannelR7gqayM(m1069unboximpl);
+        ChannelId m1022getChannelIdqMVnFVQ = notificationData.m1022getChannelIdqMVnFVQ();
+        if (m1022getChannelIdqMVnFVQ != null) {
+            long m1068unboximpl = m1022getChannelIdqMVnFVQ.m1068unboximpl();
+            m1039setNumAccumulatedMessagesForChannelLJLSWy8(m1068unboximpl, m1036getNumAccumulatedMessagesForChannelR7gqayM(m1068unboximpl) + 1);
+            m1041updateLastMessageReceivedForChannelR7gqayM(m1068unboximpl);
         }
     }
 
     /* renamed from: setNumAccumulatedMessagesForChannel-LJLSWy8  reason: not valid java name */
-    private final void m1040setNumAccumulatedMessagesForChannelLJLSWy8(long j10, int i10) {
+    private final void m1039setNumAccumulatedMessagesForChannelLJLSWy8(long j10, int i10) {
         SharedPreferences sharedPrefs = this.sharedPrefs;
         Intrinsics.checkNotNullExpressionValue(sharedPrefs, "sharedPrefs");
         SharedPreferences.Editor edit = sharedPrefs.edit();
-        edit.putInt(m1041toMessageCountKeyR7gqayM(j10), i10);
+        edit.putInt(m1040toMessageCountKeyR7gqayM(j10), i10);
         edit.apply();
     }
 
     /* renamed from: toMessageCountKey-R7gqayM  reason: not valid java name */
-    private final String m1041toMessageCountKeyR7gqayM(long j10) {
-        String m1067toStringimpl = ChannelId.m1067toStringimpl(j10);
-        return m1067toStringimpl + "_num";
+    private final String m1040toMessageCountKeyR7gqayM(long j10) {
+        String m1066toStringimpl = ChannelId.m1066toStringimpl(j10);
+        return m1066toStringimpl + "_num";
     }
 
     /* renamed from: updateLastMessageReceivedForChannel-R7gqayM  reason: not valid java name */
-    private final void m1042updateLastMessageReceivedForChannelR7gqayM(long j10) {
-        m1039setLastMessageReceivedForChannelLJLSWy8(j10, System.currentTimeMillis());
+    private final void m1041updateLastMessageReceivedForChannelR7gqayM(long j10) {
+        m1038setLastMessageReceivedForChannelLJLSWy8(j10, System.currentTimeMillis());
     }
 
     public final void handleAcks(@NotNull NotificationData notificationData) {
         Intrinsics.checkNotNullParameter(notificationData, "notificationData");
         for (ChannelId channelId : notificationData.getAckChannelIds()) {
-            m1040setNumAccumulatedMessagesForChannelLJLSWy8(channelId.m1069unboximpl(), 0);
+            m1039setNumAccumulatedMessagesForChannelLJLSWy8(channelId.m1068unboximpl(), 0);
         }
     }
 
@@ -129,14 +129,14 @@ public final class SilentNotificationManager {
         if (!Intrinsics.areEqual(notificationData.getType(), NotificationData.TYPE_MESSAGE_CREATE) || ((channelType = notificationData.getChannelType()) != null && channelType.intValue() == 1)) {
             return true;
         }
-        ChannelId m1023getChannelIdqMVnFVQ = notificationData.m1023getChannelIdqMVnFVQ();
-        if (m1023getChannelIdqMVnFVQ != null) {
-            long m1069unboximpl = m1023getChannelIdqMVnFVQ.m1069unboximpl();
-            if (m1037getNumAccumulatedMessagesForChannelR7gqayM(m1069unboximpl) < 3) {
+        ChannelId m1022getChannelIdqMVnFVQ = notificationData.m1022getChannelIdqMVnFVQ();
+        if (m1022getChannelIdqMVnFVQ != null) {
+            long m1068unboximpl = m1022getChannelIdqMVnFVQ.m1068unboximpl();
+            if (m1036getNumAccumulatedMessagesForChannelR7gqayM(m1068unboximpl) < 3) {
                 return true;
             }
-            if (m1038lastMessagedReceivedAgoInMinsR7gqayM(m1069unboximpl) >= 15) {
-                m1040setNumAccumulatedMessagesForChannelLJLSWy8(m1069unboximpl, 0);
+            if (m1037lastMessagedReceivedAgoInMinsR7gqayM(m1068unboximpl) >= 15) {
+                m1039setNumAccumulatedMessagesForChannelLJLSWy8(m1068unboximpl, 0);
                 return true;
             }
         }

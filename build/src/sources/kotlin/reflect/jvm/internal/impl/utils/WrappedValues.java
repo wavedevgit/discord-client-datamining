@@ -5,7 +5,7 @@ import org.jetbrains.annotations.NotNull;
 public class WrappedValues {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Object f35905a = new a();
+    private static final Object f35295a = new a();
     public static volatile boolean throwWrappedProcessCanceledException = false;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -30,7 +30,7 @@ public class WrappedValues {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Throwable f35906a;
+        private final Throwable f35296a;
 
         /* synthetic */ b(Throwable th2, a aVar) {
             this(th2);
@@ -59,7 +59,7 @@ public class WrappedValues {
         }
 
         public Throwable b() {
-            Throwable th2 = this.f35906a;
+            Throwable th2 = this.f35296a;
             if (th2 == null) {
                 a(1);
             }
@@ -67,14 +67,14 @@ public class WrappedValues {
         }
 
         public String toString() {
-            return this.f35906a.toString();
+            return this.f35296a.toString();
         }
 
         private b(Throwable th2) {
             if (th2 == null) {
                 a(0);
             }
-            this.f35906a = th2;
+            this.f35296a = th2;
         }
     }
 
@@ -111,7 +111,7 @@ public class WrappedValues {
 
     @NotNull
     public static <V> Object escapeNull(V v10) {
-        if (v10 == null && (v10 = (V) f35905a) == null) {
+        if (v10 == null && (v10 = (V) f35295a) == null) {
             a(1);
         }
         return v10;
@@ -137,7 +137,7 @@ public class WrappedValues {
         if (obj == 0) {
             a(0);
         }
-        if (obj == f35905a) {
+        if (obj == f35295a) {
             return null;
         }
         return obj;

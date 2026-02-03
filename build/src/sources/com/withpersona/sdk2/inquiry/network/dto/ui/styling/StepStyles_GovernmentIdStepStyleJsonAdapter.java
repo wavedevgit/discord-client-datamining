@@ -147,9 +147,9 @@ public final class StepStyles_GovernmentIdStepStyleJsonAdapter extends h {
         StepStyles.GovernmentIdStepImageLocalStyle governmentIdStepImageLocalStyle = null;
         StepStyles.CombinedStepAlignment combinedStepAlignment = null;
         while (reader.hasNext()) {
-            switch (reader.t0(this.options)) {
+            switch (reader.A0(this.options)) {
                 case -1:
-                    reader.F0();
+                    reader.E0();
                     reader.P();
                     break;
                 case 0:
@@ -217,41 +217,41 @@ public final class StepStyles_GovernmentIdStepStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepStyle != null) {
             writer.l();
-            writer.t0("textColor");
+            writer.A0("textColor");
             this.nullableHeaderButtonColorStyleAdapter.toJson(writer, governmentIdStepStyle.getHeaderButtonColor());
-            writer.t0(ViewProps.BACKGROUND_COLOR);
+            writer.A0(ViewProps.BACKGROUND_COLOR);
             this.nullableStepBackgroundColorStyleAdapter.toJson(writer, governmentIdStepStyle.getBackgroundColor());
-            writer.t0("backgroundImage");
+            writer.A0("backgroundImage");
             this.nullableStepBackgroundImageStyleAdapter.toJson(writer, governmentIdStepStyle.getBackgroundImage());
-            writer.t0("titleStyle");
+            writer.A0("titleStyle");
             this.nullableGovernmentIdStepTitleComponentStyleAdapter.toJson(writer, governmentIdStepStyle.getTitleStyle());
-            writer.t0("textStyle");
+            writer.A0("textStyle");
             this.nullableGovernmentIdStepTextBasedComponentStyleAdapter.toJson(writer, governmentIdStepStyle.getTextStyle());
-            writer.t0("buttonPrimaryStyle");
+            writer.A0("buttonPrimaryStyle");
             this.nullableGovernmentIdStepPrimaryButtonComponentStyleAdapter.toJson(writer, governmentIdStepStyle.getButtonPrimaryStyle());
-            writer.t0("buttonSecondaryStyle");
+            writer.A0("buttonSecondaryStyle");
             this.nullableGovernmentIdStepSecondaryButtonComponentStyleAdapter.toJson(writer, governmentIdStepStyle.getButtonSecondaryStyle());
-            writer.t0("disclaimerStyle");
+            writer.A0("disclaimerStyle");
             this.nullableStepTextBasedComponentStyleAdapter.toJson(writer, governmentIdStepStyle.getDisclaimerStyle());
-            writer.t0("height");
+            writer.A0("height");
             this.nullableGovernmentIdStepRowHeightAdapter.toJson(writer, governmentIdStepStyle.getHeight());
-            writer.t0("strokeColor");
+            writer.A0("strokeColor");
             this.nullableGovernmentIdStepStrokeColorAdapter.toJson(writer, governmentIdStepStyle.getStrokeColor());
-            writer.t0("fillColor");
+            writer.A0("fillColor");
             this.nullableGovernmentIdStepFillColorAdapter.toJson(writer, governmentIdStepStyle.getFillColor());
-            writer.t0(ViewProps.BORDER_COLOR);
+            writer.A0(ViewProps.BORDER_COLOR);
             this.nullableGovernmentIdStepBorderColorAdapter.toJson(writer, governmentIdStepStyle.getBorderColor());
-            writer.t0("borderRadius");
+            writer.A0("borderRadius");
             this.nullableGovernmentIdStepBorderRadiusAdapter.toJson(writer, governmentIdStepStyle.getBorderRadius());
-            writer.t0(ViewProps.BORDER_WIDTH);
+            writer.A0(ViewProps.BORDER_WIDTH);
             this.nullableGovernmentIdStepBorderWidthAdapter.toJson(writer, governmentIdStepStyle.getBorderWidth());
-            writer.t0(ViewProps.PADDING);
+            writer.A0(ViewProps.PADDING);
             this.nullableStepPaddingStyleAdapter.toJson(writer, governmentIdStepStyle.getPadding());
-            writer.t0("inputSelectStyle");
+            writer.A0("inputSelectStyle");
             this.nullableGovernmentIdStepInputSelectStyleAdapter.toJson(writer, governmentIdStepStyle.getInputSelectStyle());
-            writer.t0("imageLocalStyle");
+            writer.A0("imageLocalStyle");
             this.nullableGovernmentIdStepImageLocalStyleAdapter.toJson(writer, governmentIdStepStyle.getImageLocalStyle());
-            writer.t0("alignment");
+            writer.A0("alignment");
             this.nullableCombinedStepAlignmentAdapter.toJson(writer, governmentIdStepStyle.getAlignment());
             writer.E();
             return;

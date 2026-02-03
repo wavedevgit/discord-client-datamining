@@ -1,6 +1,6 @@
 package com.discord.chat.bridge.botuikit;
 
-import at.e;
+import ct.e;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
@@ -19,16 +19,16 @@ public abstract class ComponentUnionSerializer<T> implements KSerializer {
 
     public abstract Component fromValue(T t10);
 
-    @Override // kotlinx.serialization.KSerializer, ys.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, at.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public SerialDescriptor getDescriptor() {
-        return at.j.b(getUnionName(), e.i.f6078a);
+        return ct.j.b(getUnionName(), e.i.f19842a);
     }
 
     @NotNull
     public abstract String getUnionName();
 
-    @Override // ys.o
+    @Override // at.o
     public void serialize(@NotNull Encoder encoder, T t10) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Component fromValue = fromValue(t10);

@@ -5,44 +5,44 @@ import ui.c;
 final class d5 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final d5 f42978a = new d5();
+    static final d5 f42778a = new d5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f42979b;
+    private static final ui.c f42779b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f42980c;
+    private static final ui.c f42780c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f42981d;
+    private static final ui.c f42781d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f42982e;
+    private static final ui.c f42782e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f42983f;
+    private static final ui.c f42783f;
 
     static {
         c.b a10 = ui.c.a("inferenceCommonLogEvent");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f42979b = a10.b(s1Var.b()).a();
+        f42779b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("options");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f42980c = a11.b(s1Var2.b()).a();
+        f42780c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("inputsFormats");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f42981d = a12.b(s1Var3.b()).a();
+        f42781d = a12.b(s1Var3.b()).a();
         c.b a13 = ui.c.a("outputFormats");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f42982e = a13.b(s1Var4.b()).a();
+        f42782e = a13.b(s1Var4.b()).a();
         c.b a14 = ui.c.a("modelInitializationMs");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f42983f = a14.b(s1Var5.b()).a();
+        f42783f = a14.b(s1Var5.b()).a();
     }
 
     private d5() {

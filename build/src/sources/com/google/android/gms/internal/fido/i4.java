@@ -8,18 +8,18 @@ import java.util.concurrent.TimeUnit;
 final class i4 extends f4 implements d4 {
 
     /* renamed from: e  reason: collision with root package name */
-    final ScheduledExecutorService f14660e;
+    final ScheduledExecutorService f13628e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i4(ScheduledExecutorService scheduledExecutorService) {
         super(scheduledExecutorService);
         scheduledExecutorService.getClass();
-        this.f14660e = scheduledExecutorService;
+        this.f13628e = scheduledExecutorService;
     }
 
     @Override // java.util.concurrent.ScheduledExecutorService
     public final /* bridge */ /* synthetic */ ScheduledFuture schedule(Runnable runnable, long j10, TimeUnit timeUnit) {
-        ScheduledExecutorService scheduledExecutorService = this.f14660e;
+        ScheduledExecutorService scheduledExecutorService = this.f13628e;
         l4 t10 = l4.t(runnable, null);
         return new g4(t10, scheduledExecutorService.schedule(t10, j10, timeUnit));
     }
@@ -27,18 +27,18 @@ final class i4 extends f4 implements d4 {
     @Override // java.util.concurrent.ScheduledExecutorService
     public final /* bridge */ /* synthetic */ ScheduledFuture scheduleAtFixedRate(Runnable runnable, long j10, long j11, TimeUnit timeUnit) {
         h4 h4Var = new h4(runnable);
-        return new g4(h4Var, this.f14660e.scheduleAtFixedRate(h4Var, j10, j11, timeUnit));
+        return new g4(h4Var, this.f13628e.scheduleAtFixedRate(h4Var, j10, j11, timeUnit));
     }
 
     @Override // java.util.concurrent.ScheduledExecutorService
     public final /* bridge */ /* synthetic */ ScheduledFuture scheduleWithFixedDelay(Runnable runnable, long j10, long j11, TimeUnit timeUnit) {
         h4 h4Var = new h4(runnable);
-        return new g4(h4Var, this.f14660e.scheduleWithFixedDelay(h4Var, j10, j11, timeUnit));
+        return new g4(h4Var, this.f13628e.scheduleWithFixedDelay(h4Var, j10, j11, timeUnit));
     }
 
     @Override // java.util.concurrent.ScheduledExecutorService
     public final /* bridge */ /* synthetic */ ScheduledFuture schedule(Callable callable, long j10, TimeUnit timeUnit) {
         l4 l4Var = new l4(callable);
-        return new g4(l4Var, this.f14660e.schedule(l4Var, j10, timeUnit));
+        return new g4(l4Var, this.f13628e.schedule(l4Var, j10, timeUnit));
     }
 }

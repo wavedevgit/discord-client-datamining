@@ -20,8 +20,8 @@ public /* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$64 exten
 
     @Override // kotlin.jvm.functions.Function8
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3, Object obj4, Object obj5, Object obj6, Object obj7, Object obj8) {
-        m521invokeYVExdug(((ChannelId) obj).m1069unboximpl(), ((MessageId) obj2).m1095unboximpl(), (String) obj3, ((Number) obj4).intValue(), ((Number) obj5).intValue(), ((Number) obj6).intValue(), ((Number) obj7).intValue(), (ViewResizeMode) obj8);
-        return Unit.f33074a;
+        m521invokeYVExdug(((ChannelId) obj).m1068unboximpl(), ((MessageId) obj2).m1094unboximpl(), (String) obj3, ((Number) obj4).intValue(), ((Number) obj5).intValue(), ((Number) obj6).intValue(), ((Number) obj7).intValue(), (ViewResizeMode) obj8);
+        return Unit.f32464a;
     }
 
     /* renamed from: invoke-YVExdug  reason: not valid java name */

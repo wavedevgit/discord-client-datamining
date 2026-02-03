@@ -2,12 +2,12 @@ package kotlin.reflect.jvm.internal.impl.util;
 
 import java.util.Map;
 import java.util.Set;
-import jr.v;
 import kotlin.collections.o0;
 import kotlin.collections.x0;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.reflect.jvm.internal.impl.name.Name;
 import kotlin.text.Regex;
+import lr.v;
 import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class OperatorNameConventions {
@@ -129,7 +129,7 @@ public final class OperatorNameConventions {
     public static final Name XOR;
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f35863a;
+    private static final Map f35253a;
 
     static {
         Name identifier = Name.identifier("getValue");
@@ -282,7 +282,7 @@ public final class OperatorNameConventions {
         DELEGATED_PROPERTY_OPERATORS = x0.i(identifier, identifier2, identifier3);
         STATEMENT_LIKE_OPERATORS = x0.l(x0.c(identifier11), i12);
         NUMBER_CONVERSIONS = x0.i(identifier39, identifier40, identifier41, identifier42, identifier44, identifier45, identifier43);
-        f35863a = o0.m(v.a(identifier22, "++"), v.a(identifier23, "--"), v.a(identifier28, "+"), v.a(identifier27, "-"), v.a(identifier26, "!"), v.a(identifier29, "*"), v.a(identifier24, "+"), v.a(identifier25, "-"), v.a(identifier30, "/"), v.a(identifier31, "%"), v.a(identifier32, ".."), v.a(identifier33, "..<"));
+        f35253a = o0.m(v.a(identifier22, "++"), v.a(identifier23, "--"), v.a(identifier28, "+"), v.a(identifier27, "-"), v.a(identifier26, "!"), v.a(identifier29, "*"), v.a(identifier24, "+"), v.a(identifier25, "-"), v.a(identifier30, "/"), v.a(identifier31, "%"), v.a(identifier32, ".."), v.a(identifier33, "..<"));
     }
 
     private OperatorNameConventions() {

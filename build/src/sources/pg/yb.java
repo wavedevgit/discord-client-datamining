@@ -5,7 +5,7 @@ import ui.c;
 final class yb implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final yb f46035a = new yb();
+    static final yb f45993a = new yb();
 
     static {
         c.b a10 = ui.c.a("sourceLanguage");

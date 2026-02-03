@@ -4,7 +4,7 @@ import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import java.io.Closeable;
 import java.io.IOException;
 import java.util.Arrays;
-import ju.a0;
+import lu.a0;
 import okio.Buffer;
 import okio.BufferedSource;
 import okio.ByteString;
@@ -12,38 +12,38 @@ import okio.ByteString;
 public abstract class c implements Closeable {
 
     /* renamed from: r  reason: collision with root package name */
-    private static final String[] f51795r = new String[IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT];
+    private static final String[] f52017r = new String[IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT];
 
     /* renamed from: d  reason: collision with root package name */
-    int f51796d;
+    int f52018d;
 
     /* renamed from: e  reason: collision with root package name */
-    int[] f51797e = new int[32];
+    int[] f52019e = new int[32];
 
     /* renamed from: i  reason: collision with root package name */
-    String[] f51798i = new String[32];
+    String[] f52020i = new String[32];
 
     /* renamed from: o  reason: collision with root package name */
-    int[] f51799o = new int[32];
+    int[] f52021o = new int[32];
 
     /* renamed from: p  reason: collision with root package name */
-    boolean f51800p;
+    boolean f52022p;
 
     /* renamed from: q  reason: collision with root package name */
-    boolean f51801q;
+    boolean f52023q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final String[] f51802a;
+        final String[] f52024a;
 
         /* renamed from: b  reason: collision with root package name */
-        final a0 f51803b;
+        final a0 f52025b;
 
         private a(String[] strArr, a0 a0Var) {
-            this.f51802a = strArr;
-            this.f51803b = a0Var;
+            this.f52024a = strArr;
+            this.f52025b = a0Var;
         }
 
         public static a a(String... strArr) {
@@ -78,9 +78,9 @@ public abstract class c implements Closeable {
 
     static {
         for (int i10 = 0; i10 <= 31; i10++) {
-            f51795r[i10] = String.format("\\u%04x", Integer.valueOf(i10));
+            f52017r[i10] = String.format("\\u%04x", Integer.valueOf(i10));
         }
-        String[] strArr = f51795r;
+        String[] strArr = f52017r;
         strArr[34] = "\\\"";
         strArr[92] = "\\\\";
         strArr[9] = "\\t";
@@ -98,7 +98,7 @@ public abstract class c implements Closeable {
     */
     public static void F(okio.BufferedSink r7, java.lang.String r8) {
         /*
-            java.lang.String[] r0 = w5.c.f51795r
+            java.lang.String[] r0 = w5.c.f52017r
             r1 = 34
             r7.writeByte(r1)
             int r2 = r8.length()
@@ -123,16 +123,16 @@ public abstract class c implements Closeable {
             java.lang.String r5 = "\\u2029"
         L29:
             if (r4 >= r3) goto L2e
-            r7.y0(r8, r4, r3)
+            r7.w0(r8, r4, r3)
         L2e:
-            r7.o0(r5)
+            r7.n0(r5)
             int r4 = r3 + 1
         L33:
             int r3 = r3 + 1
             goto Ld
         L36:
             if (r4 >= r2) goto L3b
-            r7.y0(r8, r4, r2)
+            r7.w0(r8, r4, r2)
         L3b:
             r7.writeByte(r1)
             return
@@ -161,7 +161,7 @@ public abstract class c implements Closeable {
 
     public abstract boolean hasNext();
 
-    public abstract String m0();
+    public abstract String l0();
 
     public abstract b n();
 
@@ -170,7 +170,7 @@ public abstract class c implements Closeable {
     public abstract int nextInt();
 
     public final String q() {
-        return d.a(this.f51796d, this.f51797e, this.f51798i, this.f51799o);
+        return d.a(this.f52018d, this.f52019e, this.f52020i, this.f52021o);
     }
 
     public abstract void r();
@@ -181,22 +181,22 @@ public abstract class c implements Closeable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void x(int i10) {
-        int i11 = this.f51796d;
-        int[] iArr = this.f51797e;
+        int i11 = this.f52018d;
+        int[] iArr = this.f52019e;
         if (i11 == iArr.length) {
             if (i11 != 256) {
-                this.f51797e = Arrays.copyOf(iArr, iArr.length * 2);
-                String[] strArr = this.f51798i;
-                this.f51798i = (String[]) Arrays.copyOf(strArr, strArr.length * 2);
-                int[] iArr2 = this.f51799o;
-                this.f51799o = Arrays.copyOf(iArr2, iArr2.length * 2);
+                this.f52019e = Arrays.copyOf(iArr, iArr.length * 2);
+                String[] strArr = this.f52020i;
+                this.f52020i = (String[]) Arrays.copyOf(strArr, strArr.length * 2);
+                int[] iArr2 = this.f52021o;
+                this.f52021o = Arrays.copyOf(iArr2, iArr2.length * 2);
             } else {
                 throw new w5.a("Nesting too deep at " + q());
             }
         }
-        int[] iArr3 = this.f51797e;
-        int i12 = this.f51796d;
-        this.f51796d = i12 + 1;
+        int[] iArr3 = this.f52019e;
+        int i12 = this.f52018d;
+        this.f52018d = i12 + 1;
         iArr3[i12] = i10;
     }
 

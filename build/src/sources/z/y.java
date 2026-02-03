@@ -18,41 +18,41 @@ import z.y0;
 public class y {
 
     /* renamed from: f  reason: collision with root package name */
-    private static int f55343f;
+    private static int f55481f;
 
     /* renamed from: g  reason: collision with root package name */
-    static final h0.b f55344g = new h0.b();
+    static final h0.b f55482g = new h0.b();
 
     /* renamed from: a  reason: collision with root package name */
-    private final g1 f55345a;
+    private final g1 f55483a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final a0.p0 f55346b;
+    private final a0.p0 f55484b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final u f55347c;
+    private final u f55485c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final o0 f55348d;
+    private final o0 f55486d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final u.c f55349e;
+    private final u.c f55487e;
 
     public y(g1 g1Var, Size size, x.k kVar, boolean z10, Size size2, int i10) {
         b0.p.a();
-        this.f55345a = g1Var;
-        this.f55346b = p0.a.i(g1Var).h();
+        this.f55483a = g1Var;
+        this.f55484b = p0.a.i(g1Var).h();
         u uVar = new u();
-        this.f55347c = uVar;
+        this.f55485c = uVar;
         Executor b02 = g1Var.b0(c0.a.c());
         Objects.requireNonNull(b02);
         o0 o0Var = new o0(b02, null);
-        this.f55348d = o0Var;
+        this.f55486d = o0Var;
         int inputFormat = g1Var.getInputFormat();
         int i11 = i();
         g1Var.a0();
         u.c m10 = u.c.m(size, inputFormat, i11, z10, null, size2, i10);
-        this.f55349e = m10;
+        this.f55487e = m10;
         o0Var.p(uVar.q(m10));
     }
 
@@ -63,13 +63,13 @@ public class y {
         Objects.requireNonNull(a10);
         for (a0.q0 q0Var : a10) {
             p0.a aVar = new p0.a();
-            aVar.t(this.f55346b.k());
-            aVar.e(this.f55346b.g());
+            aVar.t(this.f55484b.k());
+            aVar.e(this.f55484b.g());
             aVar.a(e1Var.p());
-            aVar.f(this.f55349e.k());
+            aVar.f(this.f55487e.k());
             aVar.r(l());
-            if (i0.b.i(this.f55349e.d())) {
-                if (f55344g.a()) {
+            if (i0.b.i(this.f55487e.d())) {
+                if (f55482g.a()) {
                     aVar.d(a0.p0.f209i, Integer.valueOf(e1Var.n()));
                 }
                 aVar.d(a0.p0.f210j, Integer.valueOf(g(e1Var)));
@@ -77,14 +77,14 @@ public class y {
             aVar.e(q0Var.a().g());
             aVar.g(valueOf, Integer.valueOf(q0Var.getId()));
             aVar.p(i10);
-            aVar.c(this.f55349e.a());
+            aVar.c(this.f55487e.a());
             arrayList.add(aVar.h());
         }
         return new l(arrayList, u0Var);
     }
 
     private a0.o0 c() {
-        a0.o0 W = this.f55345a.W(x.x.b());
+        a0.o0 W = this.f55483a.W(x.x.b());
         Objects.requireNonNull(W);
         return W;
     }
@@ -94,11 +94,11 @@ public class y {
     }
 
     private int i() {
-        Integer num = (Integer) this.f55345a.e(g1.M, null);
+        Integer num = (Integer) this.f55483a.e(g1.M, null);
         if (num != null) {
             return num.intValue();
         }
-        Integer num2 = (Integer) this.f55345a.e(h1.f76h, null);
+        Integer num2 = (Integer) this.f55483a.e(h1.f76h, null);
         if (num2 != null && num2.intValue() == 4101) {
             return 4101;
         }
@@ -106,7 +106,7 @@ public class y {
     }
 
     private boolean l() {
-        if (this.f55349e.h() != null) {
+        if (this.f55487e.h() != null) {
             return true;
         }
         return false;
@@ -114,24 +114,24 @@ public class y {
 
     public void a() {
         b0.p.a();
-        this.f55347c.m();
-        this.f55348d.n();
+        this.f55485c.m();
+        this.f55486d.n();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b2.c e(e1 e1Var, u0 u0Var, ListenableFuture listenableFuture) {
         b0.p.a();
         a0.o0 c10 = c();
-        int i10 = f55343f;
-        f55343f = i10 + 1;
+        int i10 = f55481f;
+        f55481f = i10 + 1;
         return new b2.c(b(i10, c10, e1Var, u0Var), d(i10, c10, e1Var, u0Var, listenableFuture));
     }
 
     public i2.b f(Size size) {
-        i2.b p10 = i2.b.p(this.f55345a, size);
-        p10.h(this.f55349e.k());
-        if (this.f55349e.h() != null) {
-            p10.v(this.f55349e.h());
+        i2.b p10 = i2.b.p(this.f55483a, size);
+        p10.h(this.f55487e.k());
+        if (this.f55487e.h() != null) {
+            p10.v(this.f55487e.h());
         }
         return p10;
     }
@@ -143,7 +143,7 @@ public class y {
         } else {
             z10 = false;
         }
-        boolean h10 = b0.q.h(e1Var.i(), this.f55349e.j());
+        boolean h10 = b0.q.h(e1Var.i(), this.f55487e.j());
         if (z10 && h10) {
             if (e1Var.h() == 0) {
                 return 100;
@@ -155,23 +155,23 @@ public class y {
 
     public int h() {
         b0.p.a();
-        return this.f55347c.h();
+        return this.f55485c.h();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void j(y0.b bVar) {
         b0.p.a();
-        this.f55349e.b().accept(bVar);
+        this.f55487e.b().accept(bVar);
     }
 
     public void k(e.a aVar) {
         b0.p.a();
-        this.f55347c.p(aVar);
+        this.f55485c.p(aVar);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void m(p0 p0Var) {
         b0.p.a();
-        this.f55349e.i().accept(p0Var);
+        this.f55487e.i().accept(p0Var);
     }
 }

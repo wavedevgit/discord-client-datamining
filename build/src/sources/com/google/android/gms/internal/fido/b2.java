@@ -11,7 +11,7 @@ abstract class b2 {
         if (iterable instanceof SortedSet) {
             comparator2 = ((SortedSet) iterable).comparator();
             if (comparator2 == null) {
-                comparator2 = q1.f14727d;
+                comparator2 = q1.f13695d;
             }
         } else if (iterable instanceof a2) {
             comparator2 = ((a2) iterable).comparator();

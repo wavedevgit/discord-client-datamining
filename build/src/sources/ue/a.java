@@ -6,49 +6,49 @@ import ef.a;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final ef.a f50312a;
+    public static final ef.a f50599a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final ef.a f50313b;
+    public static final ef.a f50600b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final xe.a f50314c;
+    public static final xe.a f50601c;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final ye.a f50315d;
+    public static final ye.a f50602d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a.g f50316e;
+    public static final a.g f50603e;
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a.g f50317f;
+    public static final a.g f50604f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final a.AbstractC0301a f50318g;
+    private static final a.AbstractC0279a f50605g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final a.AbstractC0301a f50319h;
+    private static final a.AbstractC0279a f50606h;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final ef.a f50320i;
+    public static final ef.a f50607i;
 
     /* renamed from: j  reason: collision with root package name */
-    public static final q f50321j;
+    public static final q f50608j;
 
     static {
         a.g gVar = new a.g();
-        f50316e = gVar;
+        f50603e = gVar;
         a.g gVar2 = new a.g();
-        f50317f = gVar2;
+        f50604f = gVar2;
         d dVar = new d();
-        f50318g = dVar;
+        f50605g = dVar;
         e eVar = new e();
-        f50319h = eVar;
-        f50312a = b.f50322a;
-        f50320i = new ef.a("Auth.CREDENTIALS_API", dVar, gVar);
-        f50313b = new ef.a("Auth.GOOGLE_SIGN_IN_API", eVar, gVar2);
-        f50314c = b.f50323b;
-        f50321j = new q();
-        f50315d = new ze.h();
+        f50606h = eVar;
+        f50599a = b.f50609a;
+        f50607i = new ef.a("Auth.CREDENTIALS_API", dVar, gVar);
+        f50600b = new ef.a("Auth.GOOGLE_SIGN_IN_API", eVar, gVar2);
+        f50601c = b.f50610b;
+        f50608j = new q();
+        f50602d = new ze.h();
     }
 }

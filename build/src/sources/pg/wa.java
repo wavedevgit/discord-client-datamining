@@ -5,7 +5,7 @@ import ui.c;
 final class wa implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final wa f45980a = new wa();
+    static final wa f45938a = new wa();
 
     static {
         c.b a10 = ui.c.a("errorCode");

@@ -19,43 +19,43 @@ public final class BorderColors {
     }
 
     /* renamed from: box-impl  reason: not valid java name */
-    public static final /* synthetic */ BorderColors m1163boximpl(Integer[] numArr) {
+    public static final /* synthetic */ BorderColors m1162boximpl(Integer[] numArr) {
         return new BorderColors(numArr);
     }
 
     @NotNull
     /* renamed from: constructor-impl  reason: not valid java name */
-    public static Integer[] m1164constructorimpl(@NotNull Integer[] edgeColors) {
+    public static Integer[] m1163constructorimpl(@NotNull Integer[] edgeColors) {
         Intrinsics.checkNotNullParameter(edgeColors, "edgeColors");
         return edgeColors;
     }
 
     /* renamed from: constructor-impl$default  reason: not valid java name */
-    public static /* synthetic */ Integer[] m1165constructorimpl$default(Integer[] numArr, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+    public static /* synthetic */ Integer[] m1164constructorimpl$default(Integer[] numArr, int i10, DefaultConstructorMarker defaultConstructorMarker) {
         if ((i10 & 1) != 0) {
             numArr = new Integer[LogicalEdge.values().length];
         }
-        return m1164constructorimpl(numArr);
+        return m1163constructorimpl(numArr);
     }
 
     /* renamed from: equals-impl  reason: not valid java name */
-    public static boolean m1166equalsimpl(Integer[] numArr, Object obj) {
-        return (obj instanceof BorderColors) && Intrinsics.areEqual(numArr, ((BorderColors) obj).m1171unboximpl());
+    public static boolean m1165equalsimpl(Integer[] numArr, Object obj) {
+        return (obj instanceof BorderColors) && Intrinsics.areEqual(numArr, ((BorderColors) obj).m1170unboximpl());
     }
 
     /* renamed from: equals-impl0  reason: not valid java name */
-    public static final boolean m1167equalsimpl0(Integer[] numArr, Integer[] numArr2) {
+    public static final boolean m1166equalsimpl0(Integer[] numArr, Integer[] numArr2) {
         return Intrinsics.areEqual(numArr, numArr2);
     }
 
     /* renamed from: hashCode-impl  reason: not valid java name */
-    public static int m1168hashCodeimpl(Integer[] numArr) {
+    public static int m1167hashCodeimpl(Integer[] numArr) {
         return Arrays.hashCode(numArr);
     }
 
     @NotNull
     /* renamed from: resolve-impl  reason: not valid java name */
-    public static final ColorEdges m1169resolveimpl(Integer[] numArr, int i10, @NotNull Context context) {
+    public static final ColorEdges m1168resolveimpl(Integer[] numArr, int i10, @NotNull Context context) {
         int i11;
         int i12;
         int i13;
@@ -161,13 +161,13 @@ public final class BorderColors {
     }
 
     /* renamed from: toString-impl  reason: not valid java name */
-    public static String m1170toStringimpl(Integer[] numArr) {
+    public static String m1169toStringimpl(Integer[] numArr) {
         String arrays = Arrays.toString(numArr);
         return "BorderColors(edgeColors=" + arrays + ")";
     }
 
     public boolean equals(Object obj) {
-        return m1166equalsimpl(this.edgeColors, obj);
+        return m1165equalsimpl(this.edgeColors, obj);
     }
 
     @NotNull
@@ -176,15 +176,15 @@ public final class BorderColors {
     }
 
     public int hashCode() {
-        return m1168hashCodeimpl(this.edgeColors);
+        return m1167hashCodeimpl(this.edgeColors);
     }
 
     public String toString() {
-        return m1170toStringimpl(this.edgeColors);
+        return m1169toStringimpl(this.edgeColors);
     }
 
     /* renamed from: unbox-impl  reason: not valid java name */
-    public final /* synthetic */ Integer[] m1171unboximpl() {
+    public final /* synthetic */ Integer[] m1170unboximpl() {
         return this.edgeColors;
     }
 }

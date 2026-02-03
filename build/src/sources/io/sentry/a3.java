@@ -3,13 +3,13 @@ package io.sentry;
 public final class a3 implements e1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final a3 f28310a = new a3();
+    private static final a3 f28671a = new a3();
 
     private a3() {
     }
 
     public static a3 u() {
-        return f28310a;
+        return f28671a;
     }
 
     @Override // io.sentry.ISpan
@@ -36,7 +36,7 @@ public final class a3 implements e1 {
 
     @Override // io.sentry.e1
     public io.sentry.protocol.x f() {
-        return io.sentry.protocol.x.f30052e;
+        return io.sentry.protocol.x.f30413e;
     }
 
     @Override // io.sentry.ISpan
@@ -60,7 +60,7 @@ public final class a3 implements e1 {
 
     @Override // io.sentry.ISpan
     public q8 i() {
-        return new q8(io.sentry.protocol.x.f30052e, "");
+        return new q8(io.sentry.protocol.x.f30413e, "");
     }
 
     @Override // io.sentry.ISpan
@@ -106,7 +106,7 @@ public final class a3 implements e1 {
 
     @Override // io.sentry.ISpan
     public e8 q() {
-        return new e8(io.sentry.protocol.x.f30052e, j8.f29666e, "op", null, null);
+        return new e8(io.sentry.protocol.x.f30413e, j8.f30027e, "op", null, null);
     }
 
     @Override // io.sentry.ISpan

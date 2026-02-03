@@ -10,37 +10,37 @@ import kotlin.jvm.internal.Intrinsics;
 public final class FullyDrawnReporter {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Executor f838a;
+    private final Executor f807a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Function0 f839b;
+    private final Function0 f808b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Object f840c;
+    private final Object f809c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f841d;
+    private int f810d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f842e;
+    private boolean f811e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f843f;
+    private boolean f812f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final List f844g;
+    private final List f813g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final Runnable f845h;
+    private final Runnable f814h;
 
     public FullyDrawnReporter(Executor executor, Function0 reportFullyDrawn) {
         Intrinsics.checkNotNullParameter(executor, "executor");
         Intrinsics.checkNotNullParameter(reportFullyDrawn, "reportFullyDrawn");
-        this.f838a = executor;
-        this.f839b = reportFullyDrawn;
-        this.f840c = new Object();
-        this.f844g = new ArrayList();
-        this.f845h = new Runnable() { // from class: androidx.activity.w
+        this.f807a = executor;
+        this.f808b = reportFullyDrawn;
+        this.f809c = new Object();
+        this.f813g = new ArrayList();
+        this.f814h = new Runnable() { // from class: androidx.activity.w
             @Override // java.lang.Runnable
             public final void run() {
                 FullyDrawnReporter.d(FullyDrawnReporter.this);
@@ -50,14 +50,14 @@ public final class FullyDrawnReporter {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void d(FullyDrawnReporter fullyDrawnReporter) {
-        synchronized (fullyDrawnReporter.f840c) {
+        synchronized (fullyDrawnReporter.f809c) {
             try {
-                fullyDrawnReporter.f842e = false;
-                if (fullyDrawnReporter.f841d == 0 && !fullyDrawnReporter.f843f) {
-                    fullyDrawnReporter.f839b.invoke();
+                fullyDrawnReporter.f811e = false;
+                if (fullyDrawnReporter.f810d == 0 && !fullyDrawnReporter.f812f) {
+                    fullyDrawnReporter.f808b.invoke();
                     fullyDrawnReporter.b();
                 }
-                Unit unit = Unit.f33074a;
+                Unit unit = Unit.f32464a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -65,14 +65,14 @@ public final class FullyDrawnReporter {
     }
 
     public final void b() {
-        synchronized (this.f840c) {
+        synchronized (this.f809c) {
             try {
-                this.f843f = true;
-                for (Function0 function0 : this.f844g) {
+                this.f812f = true;
+                for (Function0 function0 : this.f813g) {
                     function0.invoke();
                 }
-                this.f844g.clear();
-                Unit unit = Unit.f33074a;
+                this.f813g.clear();
+                Unit unit = Unit.f32464a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -81,8 +81,8 @@ public final class FullyDrawnReporter {
 
     public final boolean c() {
         boolean z10;
-        synchronized (this.f840c) {
-            z10 = this.f843f;
+        synchronized (this.f809c) {
+            z10 = this.f812f;
         }
         return z10;
     }

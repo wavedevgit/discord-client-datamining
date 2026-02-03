@@ -56,14 +56,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/avatar/native/AddAvatarModalActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0, arg1, arg2() {
-        _fun113781: for (var _fun113781_ip = 0;;) switch (_fun113781_ip) {
+        _fun113842: for (var _fun113842_ip = 0;;) switch (_fun113842_ip) {
             case 0:
                 var5 = arg0;
                 var1 = arg2;
                 var0 = null;
                 if (!(var0 != var5)) {
-                    _fun113781_ip = 147;
-                    continue _fun113781
+                    _fun113842_ip = 147;
+                    continue _fun113842
                 }
             case 15:
                 var7 = _closure1_slot1;
@@ -98,16 +98,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var4)(var2);
             case 147:
                 if (!(var0 == var1)) {
-                    _fun113781_ip = 169;
-                    continue _fun113781
+                    _fun113842_ip = 169;
+                    continue _fun113842
                 }
             case 151:
                 var3 = _closure1_slot5;
                 var2 = undefined;
                 var0 = false;
                 var0 = var3.bind(var2)(var0);
-                _fun113781_ip = 175;
-                continue _fun113781;
+                _fun113842_ip = 175;
+                continue _fun113842;
             case 169:
                 var0 = undefined;
                 var0 = var1.bind(var0)();
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var6.bind(var7)(var5);
         var1.confirmText = var5;
         var4 = function() {
-            _fun113783: for (var _fun113783_ip = 0;;) switch (_fun113783_ip) {
+            _fun113844: for (var _fun113844_ip = 0;;) switch (_fun113844_ip) {
                 case 0:
                     var3 = _closure1_slot0;
                     var1 = _closure1_slot2;
@@ -196,15 +196,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.bind(var3)(var4);
                     var3 = _closure2_slot0;
                     if (!(var4 == var3)) {
-                        _fun113783_ip = 62;
-                        continue _fun113783
+                        _fun113844_ip = 62;
+                        continue _fun113844
                     }
                 case 49:
                     var3 = _closure1_slot5;
                     var2 = true;
                     var2 = var3.bind(var0)(var2);
-                    _fun113783_ip = 73;
-                    continue _fun113783;
+                    _fun113844_ip = 73;
+                    continue _fun113844;
                 case 62:
                     var2 = _closure2_slot0;
                     var1 = true;
@@ -243,4 +243,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openAddAvatarModal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [14578, 660, 795, 5716, 3994, 1234, 4557, 14579, 1307, 10292, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [14589, 660, 795, 5721, 4003, 1234, 4561, 14590, 1307, 10311, 2]);

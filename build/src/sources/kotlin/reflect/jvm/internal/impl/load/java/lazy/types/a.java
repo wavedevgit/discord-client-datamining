@@ -10,32 +10,32 @@ import kotlin.reflect.jvm.internal.impl.types.TypeConstructor;
 public class a implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final JavaTypeResolver f34105d;
+    private final JavaTypeResolver f33495d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final TypeParameterDescriptor f34106e;
+    private final TypeParameterDescriptor f33496e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final JavaTypeAttributes f34107i;
+    private final JavaTypeAttributes f33497i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final TypeConstructor f34108o;
+    private final TypeConstructor f33498o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final JavaClassifierType f34109p;
+    private final JavaClassifierType f33499p;
 
     public a(JavaTypeResolver javaTypeResolver, TypeParameterDescriptor typeParameterDescriptor, JavaTypeAttributes javaTypeAttributes, TypeConstructor typeConstructor, JavaClassifierType javaClassifierType) {
-        this.f34105d = javaTypeResolver;
-        this.f34106e = typeParameterDescriptor;
-        this.f34107i = javaTypeAttributes;
-        this.f34108o = typeConstructor;
-        this.f34109p = javaClassifierType;
+        this.f33495d = javaTypeResolver;
+        this.f33496e = typeParameterDescriptor;
+        this.f33497i = javaTypeAttributes;
+        this.f33498o = typeConstructor;
+        this.f33499p = javaClassifierType;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         KotlinType e10;
-        e10 = JavaTypeResolver.e(this.f34105d, this.f34106e, this.f34107i, this.f34108o, this.f34109p);
+        e10 = JavaTypeResolver.e(this.f33495d, this.f33496e, this.f33497i, this.f33498o, this.f33499p);
         return e10;
     }
 }

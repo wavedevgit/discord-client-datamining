@@ -13,26 +13,26 @@ import q.c3;
 public class c3 {
 
     /* renamed from: a  reason: collision with root package name */
-    final Executor f46533a;
+    final Executor f46683a;
 
     /* renamed from: b  reason: collision with root package name */
-    final Object f46534b = new Object();
+    final Object f46684b = new Object();
 
     /* renamed from: c  reason: collision with root package name */
-    final Set f46535c = new LinkedHashSet();
+    final Set f46685c = new LinkedHashSet();
 
     /* renamed from: d  reason: collision with root package name */
-    final Set f46536d = new LinkedHashSet();
+    final Set f46686d = new LinkedHashSet();
 
     /* renamed from: e  reason: collision with root package name */
-    final Set f46537e = new LinkedHashSet();
+    final Set f46687e = new LinkedHashSet();
 
     /* renamed from: f  reason: collision with root package name */
-    private final CameraDevice.StateCallback f46538f = new a();
+    private final CameraDevice.StateCallback f46688f = new a();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c3(Executor executor) {
-        this.f46533a = executor;
+        this.f46683a = executor;
     }
 
     private void a(g4 g4Var) {
@@ -54,14 +54,14 @@ public class c3 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public CameraDevice.StateCallback c() {
-        return this.f46538f;
+        return this.f46688f;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public List d() {
         ArrayList arrayList;
-        synchronized (this.f46534b) {
-            arrayList = new ArrayList(this.f46535c);
+        synchronized (this.f46684b) {
+            arrayList = new ArrayList(this.f46685c);
         }
         return arrayList;
     }
@@ -69,15 +69,15 @@ public class c3 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public List e() {
         ArrayList arrayList;
-        synchronized (this.f46534b) {
-            arrayList = new ArrayList(this.f46537e);
+        synchronized (this.f46684b) {
+            arrayList = new ArrayList(this.f46687e);
         }
         return arrayList;
     }
 
     List f() {
         ArrayList arrayList;
-        synchronized (this.f46534b) {
+        synchronized (this.f46684b) {
             arrayList = new ArrayList();
             arrayList.addAll(d());
             arrayList.addAll(e());
@@ -87,40 +87,40 @@ public class c3 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void g(g4 g4Var) {
-        synchronized (this.f46534b) {
-            this.f46535c.remove(g4Var);
-            this.f46536d.remove(g4Var);
+        synchronized (this.f46684b) {
+            this.f46685c.remove(g4Var);
+            this.f46686d.remove(g4Var);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void h(g4 g4Var) {
-        synchronized (this.f46534b) {
-            this.f46536d.add(g4Var);
+        synchronized (this.f46684b) {
+            this.f46686d.add(g4Var);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void i(g4 g4Var) {
         a(g4Var);
-        synchronized (this.f46534b) {
-            this.f46537e.remove(g4Var);
+        synchronized (this.f46684b) {
+            this.f46687e.remove(g4Var);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void j(g4 g4Var) {
-        synchronized (this.f46534b) {
-            this.f46535c.add(g4Var);
-            this.f46537e.remove(g4Var);
+        synchronized (this.f46684b) {
+            this.f46685c.add(g4Var);
+            this.f46687e.remove(g4Var);
         }
         a(g4Var);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void k(g4 g4Var) {
-        synchronized (this.f46534b) {
-            this.f46537e.add(g4Var);
+        synchronized (this.f46684b) {
+            this.f46687e.add(g4Var);
         }
     }
 
@@ -138,11 +138,11 @@ public class c3 {
 
         private void c() {
             List<g4> f10;
-            synchronized (c3.this.f46534b) {
+            synchronized (c3.this.f46684b) {
                 f10 = c3.this.f();
-                c3.this.f46537e.clear();
-                c3.this.f46535c.clear();
-                c3.this.f46536d.clear();
+                c3.this.f46687e.clear();
+                c3.this.f46685c.clear();
+                c3.this.f46686d.clear();
             }
             for (g4 g4Var : f10) {
                 g4Var.d();
@@ -151,11 +151,11 @@ public class c3 {
 
         private void d(final int i10) {
             final LinkedHashSet linkedHashSet = new LinkedHashSet();
-            synchronized (c3.this.f46534b) {
-                linkedHashSet.addAll(c3.this.f46537e);
-                linkedHashSet.addAll(c3.this.f46535c);
+            synchronized (c3.this.f46684b) {
+                linkedHashSet.addAll(c3.this.f46687e);
+                linkedHashSet.addAll(c3.this.f46685c);
             }
-            c3.this.f46533a.execute(new Runnable() { // from class: q.b3
+            c3.this.f46683a.execute(new Runnable() { // from class: q.b3
                 @Override // java.lang.Runnable
                 public final void run() {
                     c3.a.a(linkedHashSet, i10);
@@ -165,11 +165,11 @@ public class c3 {
 
         private void e() {
             final LinkedHashSet linkedHashSet = new LinkedHashSet();
-            synchronized (c3.this.f46534b) {
-                linkedHashSet.addAll(c3.this.f46537e);
-                linkedHashSet.addAll(c3.this.f46535c);
+            synchronized (c3.this.f46684b) {
+                linkedHashSet.addAll(c3.this.f46687e);
+                linkedHashSet.addAll(c3.this.f46685c);
             }
-            c3.this.f46533a.execute(new Runnable() { // from class: q.a3
+            c3.this.f46683a.execute(new Runnable() { // from class: q.a3
                 @Override // java.lang.Runnable
                 public final void run() {
                     c3.b(linkedHashSet);

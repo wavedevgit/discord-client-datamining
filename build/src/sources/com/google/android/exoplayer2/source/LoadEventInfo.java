@@ -9,44 +9,44 @@ import java.util.concurrent.atomic.AtomicLong;
 public final class LoadEventInfo {
 
     /* renamed from: h  reason: collision with root package name */
-    private static final AtomicLong f13383h = new AtomicLong();
+    private static final AtomicLong f12351h = new AtomicLong();
 
     /* renamed from: a  reason: collision with root package name */
-    public final long f13384a;
+    public final long f12352a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final a f13385b;
+    public final a f12353b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final Uri f13386c;
+    public final Uri f12354c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final Map f13387d;
+    public final Map f12355d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final long f13388e;
+    public final long f12356e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final long f13389f;
+    public final long f12357f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final long f13390g;
+    public final long f12358g;
 
     public LoadEventInfo(long j10, a aVar, long j11) {
-        this(j10, aVar, aVar.f13975a, Collections.EMPTY_MAP, j11, 0L, 0L);
+        this(j10, aVar, aVar.f12943a, Collections.EMPTY_MAP, j11, 0L, 0L);
     }
 
     public static long a() {
-        return f13383h.getAndIncrement();
+        return f12351h.getAndIncrement();
     }
 
     public LoadEventInfo(long j10, a aVar, Uri uri, Map map, long j11, long j12, long j13) {
-        this.f13384a = j10;
-        this.f13385b = aVar;
-        this.f13386c = uri;
-        this.f13387d = map;
-        this.f13388e = j11;
-        this.f13389f = j12;
-        this.f13390g = j13;
+        this.f12352a = j10;
+        this.f12353b = aVar;
+        this.f12354c = uri;
+        this.f12355d = map;
+        this.f12356e = j11;
+        this.f12357f = j12;
+        this.f12358g = j13;
     }
 }

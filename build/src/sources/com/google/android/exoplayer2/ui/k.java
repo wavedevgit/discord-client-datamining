@@ -17,25 +17,25 @@ import ne.w0;
 public final class k extends FrameLayout implements SubtitleView.a {
 
     /* renamed from: d  reason: collision with root package name */
-    private final com.google.android.exoplayer2.ui.a f13942d;
+    private final com.google.android.exoplayer2.ui.a f12910d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final WebView f13943e;
+    private final WebView f12911e;
 
     /* renamed from: i  reason: collision with root package name */
-    private List f13944i;
+    private List f12912i;
 
     /* renamed from: o  reason: collision with root package name */
-    private ke.b f13945o;
+    private ke.b f12913o;
 
     /* renamed from: p  reason: collision with root package name */
-    private float f13946p;
+    private float f12914p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f13947q;
+    private int f12915q;
 
     /* renamed from: r  reason: collision with root package name */
-    private float f13948r;
+    private float f12916r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a extends WebView {
@@ -61,21 +61,21 @@ public final class k extends FrameLayout implements SubtitleView.a {
     public static /* synthetic */ class b {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f13950a;
+        static final /* synthetic */ int[] f12918a;
 
         static {
             int[] iArr = new int[Layout.Alignment.values().length];
-            f13950a = iArr;
+            f12918a = iArr;
             try {
                 iArr[Layout.Alignment.ALIGN_NORMAL.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f13950a[Layout.Alignment.ALIGN_OPPOSITE.ordinal()] = 2;
+                f12918a[Layout.Alignment.ALIGN_OPPOSITE.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f13950a[Layout.Alignment.ALIGN_CENTER.ordinal()] = 3;
+                f12918a[Layout.Alignment.ALIGN_CENTER.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
@@ -96,7 +96,7 @@ public final class k extends FrameLayout implements SubtitleView.a {
         if (alignment == null) {
             return "center";
         }
-        int i10 = b.f13950a[alignment.ordinal()];
+        int i10 = b.f12918a[alignment.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 return "center";
@@ -107,20 +107,20 @@ public final class k extends FrameLayout implements SubtitleView.a {
     }
 
     private static String d(ke.b bVar) {
-        int i10 = bVar.f32850d;
+        int i10 = bVar.f32248d;
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
                     if (i10 != 4) {
                         return "unset";
                     }
-                    return w0.D("-0.05em -0.05em 0.15em %s", com.google.android.exoplayer2.ui.b.b(bVar.f32851e));
+                    return w0.D("-0.05em -0.05em 0.15em %s", com.google.android.exoplayer2.ui.b.b(bVar.f32249e));
                 }
-                return w0.D("0.06em 0.08em 0.15em %s", com.google.android.exoplayer2.ui.b.b(bVar.f32851e));
+                return w0.D("0.06em 0.08em 0.15em %s", com.google.android.exoplayer2.ui.b.b(bVar.f32249e));
             }
-            return w0.D("0.1em 0.12em 0.15em %s", com.google.android.exoplayer2.ui.b.b(bVar.f32851e));
+            return w0.D("0.1em 0.12em 0.15em %s", com.google.android.exoplayer2.ui.b.b(bVar.f32249e));
         }
-        return w0.D("1px 1px 0 %1$s, 1px -1px 0 %1$s, -1px 1px 0 %1$s, -1px -1px 0 %1$s", com.google.android.exoplayer2.ui.b.b(bVar.f32851e));
+        return w0.D("1px 1px 0 %1$s, 1px -1px 0 %1$s, -1px 1px 0 %1$s, -1px -1px 0 %1$s", com.google.android.exoplayer2.ui.b.b(bVar.f32249e));
     }
 
     private String e(int i10, float f10) {
@@ -192,51 +192,51 @@ public final class k extends FrameLayout implements SubtitleView.a {
 
     @Override // com.google.android.exoplayer2.ui.SubtitleView.a
     public void a(List list, ke.b bVar, float f10, int i10, float f11) {
-        this.f13945o = bVar;
-        this.f13946p = f10;
-        this.f13947q = i10;
-        this.f13948r = f11;
+        this.f12913o = bVar;
+        this.f12914p = f10;
+        this.f12915q = i10;
+        this.f12916r = f11;
         ArrayList arrayList = new ArrayList();
         ArrayList arrayList2 = new ArrayList();
         for (int i11 = 0; i11 < list.size(); i11++) {
             zd.b bVar2 = (zd.b) list.get(i11);
-            if (bVar2.f55738o != null) {
+            if (bVar2.f55876o != null) {
                 arrayList.add(bVar2);
             } else {
                 arrayList2.add(bVar2);
             }
         }
-        if (!this.f13944i.isEmpty() || !arrayList2.isEmpty()) {
-            this.f13944i = arrayList2;
+        if (!this.f12912i.isEmpty() || !arrayList2.isEmpty()) {
+            this.f12912i = arrayList2;
             i();
         }
-        this.f13942d.a(arrayList, bVar, f10, i10, f11);
+        this.f12910d.a(arrayList, bVar, f10, i10, f11);
         invalidate();
     }
 
     public void g() {
-        this.f13943e.destroy();
+        this.f12911e.destroy();
     }
 
     @Override // android.widget.FrameLayout, android.view.ViewGroup, android.view.View
     protected void onLayout(boolean z10, int i10, int i11, int i12, int i13) {
         super.onLayout(z10, i10, i11, i12, i13);
-        if (z10 && !this.f13944i.isEmpty()) {
+        if (z10 && !this.f12912i.isEmpty()) {
             i();
         }
     }
 
     public k(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f13944i = Collections.EMPTY_LIST;
-        this.f13945o = ke.b.f32846g;
-        this.f13946p = 0.0533f;
-        this.f13947q = 0;
-        this.f13948r = 0.08f;
+        this.f12912i = Collections.EMPTY_LIST;
+        this.f12913o = ke.b.f32244g;
+        this.f12914p = 0.0533f;
+        this.f12915q = 0;
+        this.f12916r = 0.08f;
         com.google.android.exoplayer2.ui.a aVar = new com.google.android.exoplayer2.ui.a(context, attributeSet);
-        this.f13942d = aVar;
+        this.f12910d = aVar;
         a aVar2 = new a(context, attributeSet);
-        this.f13943e = aVar2;
+        this.f12911e = aVar2;
         aVar2.setBackgroundColor(0);
         addView(aVar);
         addView(aVar2);

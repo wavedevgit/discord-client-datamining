@@ -21,43 +21,43 @@ import org.jetbrains.annotations.NotNull;
 public final class d1 extends ReactViewGroup {
 
     /* renamed from: d  reason: collision with root package name */
-    private b f18859d;
+    private b f17841d;
 
     /* renamed from: e  reason: collision with root package name */
-    private a f18860e;
+    private a f17842e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Integer f18861i;
+    private Integer f17843i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Integer f18862o;
+    private Integer f17844o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Integer f18863p;
+    private Integer f17845p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Integer f18864q;
+    private Integer f17846q;
 
     /* renamed from: r  reason: collision with root package name */
-    private String f18865r;
+    private String f17847r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f18866s;
+    private boolean f17848s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f18867t;
+    private boolean f17849t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f18868u;
+    private boolean f17850u;
 
     /* renamed from: v  reason: collision with root package name */
-    private e1 f18869v;
+    private e1 f17851v;
 
     /* renamed from: w  reason: collision with root package name */
-    private boolean f18870w;
+    private boolean f17852w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final int f18871x;
+    private final int f17853x;
 
     /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
     /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
@@ -65,34 +65,34 @@ public final class d1 extends ReactViewGroup {
     public static final class a {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f18872d = new a("NONE", 0);
+        public static final a f17854d = new a("NONE", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final a f18873e = new a("WORDS", 1);
+        public static final a f17855e = new a("WORDS", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final a f18874i = new a("SENTENCES", 2);
+        public static final a f17856i = new a("SENTENCES", 2);
 
         /* renamed from: o  reason: collision with root package name */
-        public static final a f18875o = new a("CHARACTERS", 3);
+        public static final a f17857o = new a("CHARACTERS", 3);
 
         /* renamed from: p  reason: collision with root package name */
-        private static final /* synthetic */ a[] f18876p;
+        private static final /* synthetic */ a[] f17858p;
 
         /* renamed from: q  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f18877q;
+        private static final /* synthetic */ EnumEntries f17859q;
 
         static {
             a[] a10 = a();
-            f18876p = a10;
-            f18877q = qr.a.a(a10);
+            f17858p = a10;
+            f17859q = sr.a.a(a10);
         }
 
         private a(String str, int i10) {
         }
 
         private static final /* synthetic */ a[] a() {
-            return new a[]{f18872d, f18873e, f18874i, f18875o};
+            return new a[]{f17854d, f17855e, f17856i, f17857o};
         }
 
         public static a valueOf(String str) {
@@ -100,7 +100,7 @@ public final class d1 extends ReactViewGroup {
         }
 
         public static a[] values() {
-            return (a[]) f18876p.clone();
+            return (a[]) f17858p.clone();
         }
     }
 
@@ -110,22 +110,22 @@ public final class d1 extends ReactViewGroup {
     public static final class b {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f18878d = new d("TEXT", 0);
+        public static final b f17860d = new d("TEXT", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final b f18879e = new c("PHONE", 1);
+        public static final b f17861e = new c("PHONE", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final b f18880i = new C0229b("NUMBER", 2);
+        public static final b f17862i = new C0210b("NUMBER", 2);
 
         /* renamed from: o  reason: collision with root package name */
-        public static final b f18881o = new a("EMAIL", 3);
+        public static final b f17863o = new a("EMAIL", 3);
 
         /* renamed from: p  reason: collision with root package name */
-        private static final /* synthetic */ b[] f18882p;
+        private static final /* synthetic */ b[] f17864p;
 
         /* renamed from: q  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f18883q;
+        private static final /* synthetic */ EnumEntries f17865q;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         static final class a extends b {
@@ -142,8 +142,8 @@ public final class d1 extends ReactViewGroup {
 
         /* renamed from: com.swmansion.rnscreens.d1$b$b  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        static final class C0229b extends b {
-            C0229b(String str, int i10) {
+        static final class C0210b extends b {
+            C0210b(String str, int i10) {
                 super(str, i10, null);
             }
 
@@ -174,27 +174,27 @@ public final class d1 extends ReactViewGroup {
             public /* synthetic */ class a {
 
                 /* renamed from: a  reason: collision with root package name */
-                public static final /* synthetic */ int[] f18884a;
+                public static final /* synthetic */ int[] f17866a;
 
                 static {
                     int[] iArr = new int[a.values().length];
                     try {
-                        iArr[a.f18872d.ordinal()] = 1;
+                        iArr[a.f17854d.ordinal()] = 1;
                     } catch (NoSuchFieldError unused) {
                     }
                     try {
-                        iArr[a.f18873e.ordinal()] = 2;
+                        iArr[a.f17855e.ordinal()] = 2;
                     } catch (NoSuchFieldError unused2) {
                     }
                     try {
-                        iArr[a.f18874i.ordinal()] = 3;
+                        iArr[a.f17856i.ordinal()] = 3;
                     } catch (NoSuchFieldError unused3) {
                     }
                     try {
-                        iArr[a.f18875o.ordinal()] = 4;
+                        iArr[a.f17857o.ordinal()] = 4;
                     } catch (NoSuchFieldError unused4) {
                     }
-                    f18884a = iArr;
+                    f17866a = iArr;
                 }
             }
 
@@ -205,7 +205,7 @@ public final class d1 extends ReactViewGroup {
             @Override // com.swmansion.rnscreens.d1.b
             public int d(a capitalize) {
                 Intrinsics.checkNotNullParameter(capitalize, "capitalize");
-                int i10 = a.f18884a[capitalize.ordinal()];
+                int i10 = a.f17866a[capitalize.ordinal()];
                 if (i10 == 1) {
                     return 1;
                 }
@@ -214,7 +214,7 @@ public final class d1 extends ReactViewGroup {
                         if (i10 == 4) {
                             return RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
                         }
-                        throw new jr.p();
+                        throw new lr.p();
                     }
                     return 16384;
                 }
@@ -224,8 +224,8 @@ public final class d1 extends ReactViewGroup {
 
         static {
             b[] a10 = a();
-            f18882p = a10;
-            f18883q = qr.a.a(a10);
+            f17864p = a10;
+            f17865q = sr.a.a(a10);
         }
 
         public /* synthetic */ b(String str, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -233,7 +233,7 @@ public final class d1 extends ReactViewGroup {
         }
 
         private static final /* synthetic */ b[] a() {
-            return new b[]{f18878d, f18879e, f18880i, f18881o};
+            return new b[]{f17860d, f17861e, f17862i, f17863o};
         }
 
         public static b valueOf(String str) {
@@ -241,7 +241,7 @@ public final class d1 extends ReactViewGroup {
         }
 
         public static b[] values() {
-            return (b[]) f18882p.clone();
+            return (b[]) f17864p.clone();
         }
 
         public abstract int d(a aVar);
@@ -270,12 +270,12 @@ public final class d1 extends ReactViewGroup {
 
     public d1(ReactContext reactContext) {
         super(reactContext);
-        this.f18859d = b.f18878d;
-        this.f18860e = a.f18872d;
-        this.f18865r = "";
-        this.f18866s = true;
-        this.f18868u = true;
-        this.f18871x = UIManagerHelper.getSurfaceId(this);
+        this.f17841d = b.f17860d;
+        this.f17842e = a.f17854d;
+        this.f17847r = "";
+        this.f17848s = true;
+        this.f17850u = true;
+        this.f17853x = UIManagerHelper.getSurfaceId(this);
     }
 
     private final ScreenStackHeaderConfig getHeaderConfig() {
@@ -295,33 +295,33 @@ public final class d1 extends ReactViewGroup {
     }
 
     private final void k() {
-        u(new gn.o(this.f18871x, getId()));
+        u(new in.o(this.f17853x, getId()));
         setToolbarElementsVisibility(0);
     }
 
     private final void l(boolean z10) {
         Event mVar;
         if (z10) {
-            mVar = new gn.p(this.f18871x, getId());
+            mVar = new in.p(this.f17853x, getId());
         } else {
-            mVar = new gn.m(this.f18871x, getId());
+            mVar = new in.m(this.f17853x, getId());
         }
         u(mVar);
     }
 
     private final void n() {
-        u(new gn.q(this.f18871x, getId()));
+        u(new in.q(this.f17853x, getId()));
         setToolbarElementsVisibility(8);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void p(String str) {
-        u(new gn.n(this.f18871x, getId(), str));
+        u(new in.n(this.f17853x, getId(), str));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void q(String str) {
-        u(new gn.r(this.f18871x, getId(), str));
+        u(new in.r(this.f17853x, getId(), str));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -329,14 +329,14 @@ public final class d1 extends ReactViewGroup {
         n0 screenStackFragment;
         com.swmansion.rnscreens.c Z;
         Intrinsics.checkNotNullParameter(newSearchView, "newSearchView");
-        if (d1Var.f18869v == null) {
-            d1Var.f18869v = new e1(newSearchView);
+        if (d1Var.f17851v == null) {
+            d1Var.f17851v = new e1(newSearchView);
         }
         d1Var.y();
-        if (d1Var.f18867t && (screenStackFragment = d1Var.getScreenStackFragment()) != null && (Z = screenStackFragment.Z()) != null) {
+        if (d1Var.f17849t && (screenStackFragment = d1Var.getScreenStackFragment()) != null && (Z = screenStackFragment.Z()) != null) {
             Z.p0();
         }
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     private final void setSearchViewListeners(SearchView searchView) {
@@ -387,7 +387,7 @@ public final class d1 extends ReactViewGroup {
             if (q0Var != null) {
                 aVar = q0Var.getType();
             }
-            if (aVar != q0.a.f18965p && q0Var != null) {
+            if (aVar != q0.a.f17947p && q0Var != null) {
                 q0Var.setVisibility(i10);
             }
             if (i12 != i11) {
@@ -432,76 +432,76 @@ public final class d1 extends ReactViewGroup {
             cVar = null;
         }
         if (cVar != null) {
-            if (!this.f18870w) {
+            if (!this.f17852w) {
                 setSearchViewListeners(cVar);
-                this.f18870w = true;
+                this.f17852w = true;
             }
-            cVar.setInputType(this.f18859d.d(this.f18860e));
-            e1 e1Var = this.f18869v;
+            cVar.setInputType(this.f17841d.d(this.f17842e));
+            e1 e1Var = this.f17851v;
             if (e1Var != null) {
-                e1Var.h(this.f18861i);
+                e1Var.h(this.f17843i);
             }
-            e1 e1Var2 = this.f18869v;
+            e1 e1Var2 = this.f17851v;
             if (e1Var2 != null) {
-                e1Var2.i(this.f18862o);
+                e1Var2.i(this.f17844o);
             }
-            e1 e1Var3 = this.f18869v;
+            e1 e1Var3 = this.f17851v;
             if (e1Var3 != null) {
-                e1Var3.e(this.f18863p);
+                e1Var3.e(this.f17845p);
             }
-            e1 e1Var4 = this.f18869v;
+            e1 e1Var4 = this.f17851v;
             if (e1Var4 != null) {
-                e1Var4.f(this.f18864q);
+                e1Var4.f(this.f17846q);
             }
-            e1 e1Var5 = this.f18869v;
+            e1 e1Var5 = this.f17851v;
             if (e1Var5 != null) {
-                e1Var5.g(this.f18865r, this.f18868u);
+                e1Var5.g(this.f17847r, this.f17850u);
             }
-            cVar.setOverrideBackAction(this.f18866s);
+            cVar.setOverrideBackAction(this.f17848s);
         }
     }
 
     @NotNull
     public final a getAutoCapitalize() {
-        return this.f18860e;
+        return this.f17842e;
     }
 
     public final boolean getAutoFocus() {
-        return this.f18867t;
+        return this.f17849t;
     }
 
     public final Integer getHeaderIconColor() {
-        return this.f18863p;
+        return this.f17845p;
     }
 
     public final Integer getHintTextColor() {
-        return this.f18864q;
+        return this.f17846q;
     }
 
     @NotNull
     public final b getInputType() {
-        return this.f18859d;
+        return this.f17841d;
     }
 
     @NotNull
     public final String getPlaceholder() {
-        return this.f18865r;
+        return this.f17847r;
     }
 
     public final boolean getShouldOverrideBackButton() {
-        return this.f18866s;
+        return this.f17848s;
     }
 
     public final boolean getShouldShowHintSearchIcon() {
-        return this.f18868u;
+        return this.f17850u;
     }
 
     public final Integer getTextColor() {
-        return this.f18861i;
+        return this.f17843i;
     }
 
     public final Integer getTintColor() {
-        return this.f18862o;
+        return this.f17844o;
     }
 
     public final void i() {
@@ -558,45 +558,45 @@ public final class d1 extends ReactViewGroup {
 
     public final void setAutoCapitalize(@NotNull a aVar) {
         Intrinsics.checkNotNullParameter(aVar, "<set-?>");
-        this.f18860e = aVar;
+        this.f17842e = aVar;
     }
 
     public final void setAutoFocus(boolean z10) {
-        this.f18867t = z10;
+        this.f17849t = z10;
     }
 
     public final void setHeaderIconColor(Integer num) {
-        this.f18863p = num;
+        this.f17845p = num;
     }
 
     public final void setHintTextColor(Integer num) {
-        this.f18864q = num;
+        this.f17846q = num;
     }
 
     public final void setInputType(@NotNull b bVar) {
         Intrinsics.checkNotNullParameter(bVar, "<set-?>");
-        this.f18859d = bVar;
+        this.f17841d = bVar;
     }
 
     public final void setPlaceholder(@NotNull String str) {
         Intrinsics.checkNotNullParameter(str, "<set-?>");
-        this.f18865r = str;
+        this.f17847r = str;
     }
 
     public final void setShouldOverrideBackButton(boolean z10) {
-        this.f18866s = z10;
+        this.f17848s = z10;
     }
 
     public final void setShouldShowHintSearchIcon(boolean z10) {
-        this.f18868u = z10;
+        this.f17850u = z10;
     }
 
     public final void setTextColor(Integer num) {
-        this.f18861i = num;
+        this.f17843i = num;
     }
 
     public final void setTintColor(Integer num) {
-        this.f18862o = num;
+        this.f17844o = num;
     }
 
     public final void t() {

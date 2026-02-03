@@ -1,38 +1,84 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
     var1 = function arg0() {
-        _fun29111: for (var _fun29111_ip = 0;;) switch (_fun29111_ip) {
+        _fun29179: for (var _fun29179_ip = 0;;) switch (_fun29179_ip) {
             case 0:
-                var4 = arg0;
-                var3 = typeof var4;
-                var0 = 'Symbol';
-                var1 = 'symbol';
-                if (!(var1 !== var3)) {
-                    _fun29111_ip = 62;
-                    continue _fun29111
+                var0 = arg0;
+                var1 = undefined;
+                if (!(var1 !== var0)) {
+                    _fun29179_ip = 172;
+                    continue _fun29179
                 }
-            case 18:
-                var1 = 'BigInt';
-                var2 = 'bigint';
-                if (!(var2 !== var3)) {
-                    _fun29111_ip = 59;
-                    continue _fun29111
+            case 12:
+                var1 = {};
+                var2 = '[[Value]]';
+                var2 = var2 in var0;
+                if (!var2) {
+                    _fun29179_ip = 37;
+                    continue _fun29179
                 }
-            case 30:
-                var5 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var2 = 0;
-                var2 = var3[var2];
-                var3 = undefined;
-                var2 = var5.bind(var3)(var2);
-                var1 = var2.bind(var3)(var4);
-            case 59:
-                var0 = var1;
-            case 62:
+            case 25:
+                var2 = var0["[[Value]]"];
+                var1.value = var2;
+            case 37:
+                var2 = '[[Writable]]';
+                var2 = var2 in var0;
+                if (!var2) {
+                    _fun29179_ip = 66;
+                    continue _fun29179
+                }
+            case 48:
+                var2 = var0["[[Writable]]"];
+                var2 = !var2;
+                var2 = !var2;
+                var1.writable = var2;
+            case 66:
+                var2 = '[[Get]]';
+                var2 = var2 in var0;
+                if (!var2) {
+                    _fun29179_ip = 89;
+                    continue _fun29179
+                }
+            case 77:
+                var2 = var0["[[Get]]"];
+                var1.get = var2;
+            case 89:
+                var2 = '[[Set]]';
+                var2 = var2 in var0;
+                if (!var2) {
+                    _fun29179_ip = 112;
+                    continue _fun29179
+                }
+            case 100:
+                var2 = var0["[[Set]]"];
+                var1.set = var2;
+            case 112:
+                var2 = '[[Enumerable]]';
+                var2 = var2 in var0;
+                if (!var2) {
+                    _fun29179_ip = 141;
+                    continue _fun29179
+                }
+            case 123:
+                var2 = var0["[[Enumerable]]"];
+                var2 = !var2;
+                var2 = !var2;
+                var1.enumerable = var2;
+            case 141:
+                var2 = '[[Configurable]]';
+                var2 = var2 in var0;
+                if (!var2) {
+                    _fun29179_ip = 170;
+                    continue _fun29179
+                }
+            case 152:
+                var2 = var0["[[Configurable]]"];
+                var2 = !var2;
+                var2 = !var2;
+                var1.configurable = var2;
+            case 170:
+                return var1;
+            case 172:
                 return var0;
         }
     };
@@ -40,4 +86,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3358]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

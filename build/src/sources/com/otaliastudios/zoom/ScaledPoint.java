@@ -6,22 +6,22 @@ import kotlin.jvm.internal.Intrinsics;
 public final class ScaledPoint {
 
     /* renamed from: a  reason: collision with root package name */
-    private float f17909a;
+    private float f16877a;
 
     /* renamed from: b  reason: collision with root package name */
-    private float f17910b;
+    private float f16878b;
 
     public ScaledPoint(float f10, float f11) {
-        this.f17909a = f10;
-        this.f17910b = f11;
+        this.f16877a = f10;
+        this.f16878b = f11;
     }
 
     public static /* synthetic */ ScaledPoint b(ScaledPoint scaledPoint, float f10, float f11, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            f10 = scaledPoint.f17909a;
+            f10 = scaledPoint.f16877a;
         }
         if ((i10 & 2) != 0) {
-            f11 = scaledPoint.f17910b;
+            f11 = scaledPoint.f16878b;
         }
         return scaledPoint.a(f10, f11);
     }
@@ -38,16 +38,16 @@ public final class ScaledPoint {
     }
 
     public final float c() {
-        return this.f17909a;
+        return this.f16877a;
     }
 
     public final float d() {
-        return this.f17910b;
+        return this.f16878b;
     }
 
     public final ScaledPoint e(ScaledPoint scaledPoint) {
         Intrinsics.checkNotNullParameter(scaledPoint, "scaledPoint");
-        return new ScaledPoint(this.f17909a - scaledPoint.f17909a, this.f17910b - scaledPoint.f17910b);
+        return new ScaledPoint(this.f16877a - scaledPoint.f16877a, this.f16878b - scaledPoint.f16878b);
     }
 
     public boolean equals(Object obj) {
@@ -56,43 +56,43 @@ public final class ScaledPoint {
         }
         if (obj instanceof ScaledPoint) {
             ScaledPoint scaledPoint = (ScaledPoint) obj;
-            return Intrinsics.areEqual((Object) Float.valueOf(this.f17909a), (Object) Float.valueOf(scaledPoint.f17909a)) && Intrinsics.areEqual((Object) Float.valueOf(this.f17910b), (Object) Float.valueOf(scaledPoint.f17910b));
+            return Intrinsics.areEqual((Object) Float.valueOf(this.f16877a), (Object) Float.valueOf(scaledPoint.f16877a)) && Intrinsics.areEqual((Object) Float.valueOf(this.f16878b), (Object) Float.valueOf(scaledPoint.f16878b));
         }
         return false;
     }
 
     public final ScaledPoint f(ScaledPoint scaledPoint) {
         Intrinsics.checkNotNullParameter(scaledPoint, "scaledPoint");
-        return new ScaledPoint(this.f17909a + scaledPoint.f17909a, this.f17910b + scaledPoint.f17910b);
+        return new ScaledPoint(this.f16877a + scaledPoint.f16877a, this.f16878b + scaledPoint.f16878b);
     }
 
     public final void g(Number x10, Number y10) {
         Intrinsics.checkNotNullParameter(x10, "x");
         Intrinsics.checkNotNullParameter(y10, "y");
-        this.f17909a = x10.floatValue();
-        this.f17910b = y10.floatValue();
+        this.f16877a = x10.floatValue();
+        this.f16878b = y10.floatValue();
     }
 
     public final void h(float f10) {
-        this.f17909a = f10;
+        this.f16877a = f10;
     }
 
     public int hashCode() {
-        return (Float.hashCode(this.f17909a) * 31) + Float.hashCode(this.f17910b);
+        return (Float.hashCode(this.f16877a) * 31) + Float.hashCode(this.f16878b);
     }
 
     public final void i(float f10) {
-        this.f17910b = f10;
+        this.f16878b = f10;
     }
 
     public final AbsolutePoint j(float f10, AbsolutePoint outPoint) {
         Intrinsics.checkNotNullParameter(outPoint, "outPoint");
-        outPoint.h(Float.valueOf(this.f17909a / f10), Float.valueOf(this.f17910b / f10));
+        outPoint.h(Float.valueOf(this.f16877a / f10), Float.valueOf(this.f16878b / f10));
         return outPoint;
     }
 
     public String toString() {
-        return "ScaledPoint(x=" + this.f17909a + ", y=" + this.f17910b + ')';
+        return "ScaledPoint(x=" + this.f16877a + ", y=" + this.f16878b + ')';
     }
 
     public /* synthetic */ ScaledPoint(float f10, float f11, int i10, DefaultConstructorMarker defaultConstructorMarker) {

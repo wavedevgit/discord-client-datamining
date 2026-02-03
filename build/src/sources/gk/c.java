@@ -5,63 +5,63 @@ import com.facebook.react.views.text.internal.span.SetSpanOperation;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final byte[] f27077a;
+    private final byte[] f26290a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f27078b;
+    private int f26291b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f27079c;
+    private int f26292c;
 
     public c(byte[] bArr) {
-        this.f27077a = bArr;
+        this.f26290a = bArr;
     }
 
     public int a() {
-        return ((this.f27077a.length - this.f27078b) * 8) - this.f27079c;
+        return ((this.f26290a.length - this.f26291b) * 8) - this.f26292c;
     }
 
     public int b() {
-        return this.f27079c;
+        return this.f26292c;
     }
 
     public int c() {
-        return this.f27078b;
+        return this.f26291b;
     }
 
     public int d(int i10) {
         if (i10 >= 1 && i10 <= 32 && i10 <= a()) {
-            int i11 = this.f27079c;
+            int i11 = this.f26292c;
             int i12 = 0;
             if (i11 > 0) {
                 int i13 = 8 - i11;
                 int min = Math.min(i10, i13);
                 int i14 = i13 - min;
-                byte[] bArr = this.f27077a;
-                int i15 = this.f27078b;
+                byte[] bArr = this.f26290a;
+                int i15 = this.f26291b;
                 int i16 = (((SetSpanOperation.SPAN_MAX_PRIORITY >> (8 - min)) << i14) & bArr[i15]) >> i14;
                 i10 -= min;
-                int i17 = this.f27079c + min;
-                this.f27079c = i17;
+                int i17 = this.f26292c + min;
+                this.f26292c = i17;
                 if (i17 == 8) {
-                    this.f27079c = 0;
-                    this.f27078b = i15 + 1;
+                    this.f26292c = 0;
+                    this.f26291b = i15 + 1;
                 }
                 i12 = i16;
             }
             if (i10 > 0) {
                 while (i10 >= 8) {
                     int i18 = i12 << 8;
-                    byte[] bArr2 = this.f27077a;
-                    int i19 = this.f27078b;
+                    byte[] bArr2 = this.f26290a;
+                    int i19 = this.f26291b;
                     i12 = (bArr2[i19] & 255) | i18;
-                    this.f27078b = i19 + 1;
+                    this.f26291b = i19 + 1;
                     i10 -= 8;
                 }
                 if (i10 > 0) {
                     int i20 = 8 - i10;
-                    int i21 = ((((SetSpanOperation.SPAN_MAX_PRIORITY >> i20) << i20) & this.f27077a[this.f27078b]) >> i20) | (i12 << i10);
-                    this.f27079c += i10;
+                    int i21 = ((((SetSpanOperation.SPAN_MAX_PRIORITY >> i20) << i20) & this.f26290a[this.f26291b]) >> i20) | (i12 << i10);
+                    this.f26292c += i10;
                     return i21;
                 }
             }

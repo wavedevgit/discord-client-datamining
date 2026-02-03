@@ -1,133 +1,123 @@
 package us;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-import kotlin.Unit;
-import kotlin.collections.CollectionsKt;
 import kotlin.jvm.functions.Function1;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.FunctionReferenceImpl;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Lambda;
+import us.b;
+import us.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class y implements s {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final o f50673a;
+public final class y extends us.a {
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f50674b;
+    public static final b f51018b = new b(null);
 
-    /* renamed from: c  reason: collision with root package name */
-    private final Set f50675c;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    /* synthetic */ class a extends FunctionReferenceImpl implements Function1 {
-        a() {
-            super(1, Intrinsics.Kotlin.class, "checkIfAllNegative", "formatter$checkIfAllNegative(Lkotlinx/datetime/internal/format/SignedFormatStructure;Ljava/lang/Object;)Z", 0);
-        }
-
-        @Override // kotlin.jvm.functions.Function1
-        /* renamed from: a */
-        public final Boolean invoke(Object obj) {
-            return Boolean.valueOf(y.e(y.this, obj));
-        }
-    }
+    /* renamed from: a  reason: collision with root package name */
+    private final ws.f f51019a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class b extends Lambda implements Function2 {
-        b() {
-            super(2);
+    public static final class a implements us.b, c {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final ws.d f51020a;
+
+        public a(ws.d actualBuilder) {
+            Intrinsics.checkNotNullParameter(actualBuilder, "actualBuilder");
+            this.f51020a = actualBuilder;
         }
 
-        public final void a(Object obj, boolean z10) {
-            boolean z11;
-            for (m mVar : y.this.f50675c) {
-                boolean areEqual = Intrinsics.areEqual(mVar.isNegative().a(obj), Boolean.TRUE);
-                us.b isNegative = mVar.isNegative();
-                if (z10 != areEqual) {
-                    z11 = true;
-                } else {
-                    z11 = false;
-                }
-                isNegative.c(obj, Boolean.valueOf(z11));
-            }
+        @Override // us.b
+        public ws.d a() {
+            return this.f51020a;
         }
 
-        @Override // kotlin.jvm.functions.Function2
-        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-            a(obj, ((Boolean) obj2).booleanValue());
-            return Unit.f33074a;
+        @Override // us.b
+        public void b(String str, Function1 function1) {
+            b.a.b(this, str, function1);
+        }
+
+        @Override // us.b
+        public void f(Function1[] function1Arr, Function1 function1) {
+            b.a.a(this, function1Arr, function1);
+        }
+
+        @Override // us.c
+        public void h(ws.o structure) {
+            Intrinsics.checkNotNullParameter(structure, "structure");
+            a().a(structure);
+        }
+
+        @Override // us.o
+        public void k(String str) {
+            b.a.d(this, str);
+        }
+
+        @Override // us.o.a
+        public void p(h0 h0Var) {
+            c.a.f(this, h0Var);
+        }
+
+        @Override // us.o.a
+        public void u(h0 h0Var) {
+            c.a.b(this, h0Var);
+        }
+
+        @Override // us.o.a
+        public void v(h0 h0Var) {
+            c.a.e(this, h0Var);
+        }
+
+        public ws.f x() {
+            return b.a.c(this);
+        }
+
+        @Override // us.b
+        /* renamed from: y */
+        public a i() {
+            return new a(new ws.d());
         }
     }
 
-    public y(o format, boolean z10) {
-        List<l> b10;
-        Intrinsics.checkNotNullParameter(format, "format");
-        this.f50673a = format;
-        this.f50674b = z10;
-        b10 = p.b(format);
-        ArrayList arrayList = new ArrayList();
-        for (l lVar : b10) {
-            m c10 = lVar.c().c();
-            if (c10 != null) {
-                arrayList.add(c10);
-            }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b {
+        public /* synthetic */ b(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
-        Set l12 = CollectionsKt.l1(arrayList);
-        this.f50675c = l12;
-        if (!l12.isEmpty()) {
-            return;
+
+        public final n a(Function1 block) {
+            Intrinsics.checkNotNullParameter(block, "block");
+            a aVar = new a(new ws.d());
+            block.invoke(aVar);
+            return new y(aVar.x());
         }
-        throw new IllegalArgumentException("Signed format must contain at least one field with a sign");
-    }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final boolean e(y yVar, Object obj) {
-        boolean z10 = false;
-        for (m mVar : yVar.f50675c) {
-            if (Intrinsics.areEqual(mVar.isNegative().a(obj), Boolean.TRUE)) {
-                z10 = true;
-            } else if (!mVar.a(obj)) {
-                return false;
-            }
+        private b() {
         }
-        return z10;
     }
 
-    @Override // us.o
-    public vs.e a() {
-        return new vs.f(this.f50673a.a(), new a(), this.f50674b);
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public y(ws.f actualFormat) {
+        super(null);
+        Intrinsics.checkNotNullParameter(actualFormat, "actualFormat");
+        this.f51019a = actualFormat;
     }
 
-    @Override // us.o
-    public ws.q b() {
-        b bVar = new b();
-        boolean z10 = this.f50674b;
-        return ws.n.b(CollectionsKt.o(new ws.q(CollectionsKt.e(new ws.s(bVar, z10, "sign for " + this.f50675c)), CollectionsKt.l()), this.f50673a.b()));
+    @Override // us.a
+    public ws.f b() {
+        return this.f51019a;
     }
 
-    public boolean equals(Object obj) {
-        if (obj instanceof y) {
-            y yVar = (y) obj;
-            if (Intrinsics.areEqual(this.f50673a, yVar.f50673a) && this.f50674b == yVar.f50674b) {
-                return true;
-            }
-            return false;
-        }
-        return false;
+    @Override // us.a
+    /* renamed from: e */
+    public v c() {
+        v vVar;
+        vVar = z.f51023c;
+        return vVar;
     }
 
-    public final o f() {
-        return this.f50673a;
-    }
-
-    public int hashCode() {
-        return (this.f50673a.hashCode() * 31) + Boolean.hashCode(this.f50674b);
-    }
-
-    public String toString() {
-        return "SignedFormatStructure(" + this.f50673a + ')';
+    @Override // us.a
+    /* renamed from: f */
+    public ts.f d(v intermediate) {
+        Intrinsics.checkNotNullParameter(intermediate, "intermediate");
+        return intermediate.b();
     }
 }

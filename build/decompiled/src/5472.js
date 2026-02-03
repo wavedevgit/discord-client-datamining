@@ -1,133 +1,141 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var5 = require;
     var2 = exports;
-    var0 = dependencyMap;
-    var3 = metroImportDefault;
-    var _closure1_slot0 = var3;
-    var _closure1_slot1 = var0;
-    var3 = global;
-    var6 = var3.Object;
-    var5 = var6.defineProperty;
-    var4 = {};
-    var3 = true;
-    var4.value = var3;
-    var3 = '__esModule';
-    var3 = var5.bind(var6)(var2, var3, var4);
-    var4 = 0;
-    var5 = var0[var4];
-    var3 = require;
+    var7 = dependencyMap;
+    var0 = global;
+    var6 = var0.Object;
+    var4 = var6.defineProperty;
+    var1 = {};
+    var8 = true;
+    var1.value = var8;
+    var0 = '__esModule';
+    var0 = var4.bind(var6)(var2, var0, var1);
+    var1 = {};
+    var6 = 'RNSVGSvgViewAndroid';
+    var1.uiViewClassName = var6;
+    var4 = {
+        'bbWidth': true,
+        'bbHeight': true,
+        'minX': true,
+        'minY': true,
+        'vbWidth': true,
+        'vbHeight': true,
+        'align': true,
+        'meetOrSlice': true,
+        'color': null,
+        'pointerEvents': true,
+        'hasTVPreferredFocus': true,
+        'borderBottomColor': null,
+        'nextFocusDown': true,
+        'borderRightColor': null,
+        'nextFocusRight': true
+    };
+    var9 = {};
+    var10 = 0;
+    var11 = var7[var10];
     var0 = undefined;
-    var3 = var3.bind(var0)(var5);
-    var5 = var3.processColor;
-    var3 = {
-        'evenodd': 0,
-        'nonzero': 1
+    var11 = var5.bind(var0)(var11);
+    var11 = var11.default;
+    var9.process = var11;
+    var4.color = var9;
+    var9 = {};
+    var11 = var7[var10];
+    var11 = var5.bind(var0)(var11);
+    var11 = var11.default;
+    var9.process = var11;
+    var4.borderBottomColor = var9;
+    var9 = {};
+    var11 = var7[var10];
+    var11 = var5.bind(var0)(var11);
+    var11 = var11.default;
+    var9.process = var11;
+    var4.borderRightColor = var9;
+    var9 = {};
+    var11 = var7[var10];
+    var11 = var5.bind(var0)(var11);
+    var11 = var11.default;
+    var9.process = var11;
+    var4.borderLeftColor = var9;
+    var9 = {};
+    var11 = var7[var10];
+    var11 = var5.bind(var0)(var11);
+    var11 = var11.default;
+    var9.process = var11;
+    var4.borderColor = var9;
+    var4.removeClippedSubviews = var8;
+    var4.nextFocusForward = var8;
+    var4.nextFocusUp = var8;
+    var4.accessible = var8;
+    var9 = {};
+    var11 = var7[var10];
+    var11 = var5.bind(var0)(var11);
+    var11 = var11.default;
+    var9.process = var11;
+    var4.borderStartColor = var9;
+    var9 = {};
+    var11 = var7[var10];
+    var11 = var5.bind(var0)(var11);
+    var11 = var11.default;
+    var9.process = var11;
+    var4.borderEndColor = var9;
+    var4.focusable = var8;
+    var4.nativeBackgroundAndroid = var8;
+    var4.nativeForegroundAndroid = var8;
+    var4.backfaceVisibility = var8;
+    var4.borderStyle = var8;
+    var4.needsOffscreenAlphaCompositing = var8;
+    var4.hitSlop = var8;
+    var9 = {};
+    var11 = var7[var10];
+    var11 = var5.bind(var0)(var11);
+    var11 = var11.default;
+    var9.process = var11;
+    var4.borderTopColor = var9;
+    var4.nextFocusLeft = var8;
+    var9 = {};
+    var11 = var7[var10];
+    var11 = var5.bind(var0)(var11);
+    var11 = var11.default;
+    var9.process = var11;
+    var4.borderBlockColor = var9;
+    var9 = {};
+    var11 = var7[var10];
+    var11 = var5.bind(var0)(var11);
+    var11 = var11.default;
+    var9.process = var11;
+    var4.borderBlockEndColor = var9;
+    var9 = {};
+    var10 = var7[var10];
+    var10 = var5.bind(var0)(var10);
+    var10 = var10.default;
+    var9.process = var10;
+    var4.borderBlockStartColor = var9;
+    var4.borderRadius = var8;
+    var4.borderTopLeftRadius = var8;
+    var4.borderTopRightRadius = var8;
+    var4.borderBottomRightRadius = var8;
+    var4.borderBottomLeftRadius = var8;
+    var4.borderTopStartRadius = var8;
+    var4.borderTopEndRadius = var8;
+    var4.borderBottomStartRadius = var8;
+    var4.borderBottomEndRadius = var8;
+    var4.borderEndEndRadius = var8;
+    var4.borderEndStartRadius = var8;
+    var4.borderStartEndRadius = var8;
+    var4.borderStartStartRadius = var8;
+    var1.validAttributes = var4;
+    var _closure1_slot0 = var1;
+    var4 = 1;
+    var4 = var7[var4];
+    var5 = var5.bind(var0)(var4);
+    var4 = var5.get;
+    var3 = function() { // Environment: var3
+        var0 = _closure1_slot0;
+        return var0;
     };
-    var _closure1_slot2 = var3;
-    var3 = {};
-    var3.type = var4;
-    var4 = 'black';
-    var4 = var5.bind(var0)(var4);
-    var3.payload = var4;
-    var _closure1_slot3 = var3;
-    var1 = function arg0, arg1, arg2() {
-        _fun48471: for (var _fun48471_ip = 0;;) switch (_fun48471_ip) {
-            case 0:
-                var1 = arg0;
-                var0 = arg1;
-                var4 = arg2;
-                var8 = var0.fill;
-                var3 = var0.fillRule;
-                var6 = var0.fillOpacity;
-                var0 = null;
-                if (!(var0 == var8)) {
-                    _fun48471_ip = 48;
-                    continue _fun48471
-                }
-            case 33:
-                var2 = _closure1_slot3;
-                var1.fill = var2;
-                _fun48471_ip = 121;
-                continue _fun48471;
-            case 48:
-                var5 = var4.push;
-                var2 = 'fill';
-                var2 = var5.bind(var4)(var2);
-                if (var8) {
-                    _fun48471_ip = 85;
-                    continue _fun48471
-                }
-            case 65:
-                var5 = 'number';
-                var2 = typeof var8;
-                if (!(var5 !== var2)) {
-                    _fun48471_ip = 85;
-                    continue _fun48471
-                }
-            case 76:
-                var2 = _closure1_slot3;
-                _fun48471_ip = 115;
-                continue _fun48471;
-            case 85:
-                var9 = _closure1_slot0;
-                var7 = _closure1_slot1;
-                var5 = 1;
-                var5 = var7[var5];
-                var7 = undefined;
-                var5 = var9.bind(var7)(var5);
-                var2 = var5.bind(var7)(var8);
-            case 115:
-                var1.fill = var2;
-            case 121:
-                if (!(var0 != var6)) {
-                    _fun48471_ip = 175;
-                    continue _fun48471
-                }
-            case 125:
-                var5 = var4.push;
-                var2 = 'fillOpacity';
-                var2 = var5.bind(var4)(var2);
-                var7 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var2 = 2;
-                var2 = var5[var2];
-                var5 = undefined;
-                var2 = var7.bind(var5)(var2);
-                var2 = var2.bind(var5)(var6);
-                var1.fillOpacity = var2;
-            case 175:
-                if (!(var0 != var3)) {
-                    _fun48471_ip = 230;
-                    continue _fun48471
-                }
-            case 179:
-                var2 = var4.push;
-                var0 = 'fillRule';
-                var0 = var2.bind(var4)(var0);
-                var4 = 1;
-                var0 = var4;
-                if (!var3) {
-                    _fun48471_ip = 224;
-                    continue _fun48471
-                }
-            case 202:
-                var2 = _closure1_slot2;
-                var3 = var2[var3];
-                var2 = 0;
-                var0 = var4;
-                if (!(var2 === var3)) {
-                    _fun48471_ip = 224;
-                    continue _fun48471
-                }
-            case 222:
-                var0 = 0;
-            case 224:
-                var1.fillRule = var0;
-            case 230:
-                var0 = undefined;
-                return var0;
-        }
-    };
-    var2.default = var1;
+    var3 = var4.bind(var5)(var6, var3);
+    var2.default = var3;
+    var2.__INTERNAL_VIEW_CONFIG = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 5473, 5461]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [38, 42]);

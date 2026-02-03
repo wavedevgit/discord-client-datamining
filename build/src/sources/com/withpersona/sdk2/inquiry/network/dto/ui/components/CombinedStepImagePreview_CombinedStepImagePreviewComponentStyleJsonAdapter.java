@@ -63,17 +63,17 @@ public final class CombinedStepImagePreview_CombinedStepImagePreviewComponentSty
         AttributeStyles.RemoteImageJustifyStyle remoteImageJustifyStyle = null;
         AttributeStyles.RemoteImageMarginStyle remoteImageMarginStyle = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 remoteImageHeightStyle = (AttributeStyles.RemoteImageHeightStyle) this.nullableRemoteImageHeightStyleAdapter.fromJson(reader);
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 remoteImageWidthStyle = (AttributeStyles.RemoteImageWidthStyle) this.nullableRemoteImageWidthStyleAdapter.fromJson(reader);
-            } else if (t02 == 2) {
+            } else if (A0 == 2) {
                 remoteImageJustifyStyle = (AttributeStyles.RemoteImageJustifyStyle) this.nullableRemoteImageJustifyStyleAdapter.fromJson(reader);
-            } else if (t02 == 3) {
+            } else if (A0 == 3) {
                 remoteImageMarginStyle = (AttributeStyles.RemoteImageMarginStyle) this.nullableRemoteImageMarginStyleAdapter.fromJson(reader);
             }
         }
@@ -86,13 +86,13 @@ public final class CombinedStepImagePreview_CombinedStepImagePreviewComponentSty
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (combinedStepImagePreviewComponentStyle != null) {
             writer.l();
-            writer.t0("height");
+            writer.A0("height");
             this.nullableRemoteImageHeightStyleAdapter.toJson(writer, combinedStepImagePreviewComponentStyle.getHeight());
-            writer.t0("width");
+            writer.A0("width");
             this.nullableRemoteImageWidthStyleAdapter.toJson(writer, combinedStepImagePreviewComponentStyle.getWidth());
-            writer.t0("justify");
+            writer.A0("justify");
             this.nullableRemoteImageJustifyStyleAdapter.toJson(writer, combinedStepImagePreviewComponentStyle.getJustify());
-            writer.t0(ViewProps.MARGIN);
+            writer.A0(ViewProps.MARGIN);
             this.nullableRemoteImageMarginStyleAdapter.toJson(writer, combinedStepImagePreviewComponentStyle.getMargin());
             writer.E();
             return;

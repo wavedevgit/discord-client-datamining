@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/self_mod/shared/native/SafetyTipsSection.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun72494: for (var _fun72494_ip = 0;;) switch (_fun72494_ip) {
+        _fun72604: for (var _fun72604_ip = 0;;) switch (_fun72604_ip) {
             case 0:
                 var0 = arg0;
                 var15 = var0.description;
@@ -123,8 +123,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var20 = 8;
                 if (!var7) {
-                    _fun72494_ip = 283;
-                    continue _fun72494
+                    _fun72604_ip = 283;
+                    continue _fun72604
                 }
             case 177:
                 var14 = _closure1_slot4;
@@ -213,4 +213,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 4071, 5957, 3932, 1234, 6426, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 4080, 5962, 3941, 1234, 6431, 2]);

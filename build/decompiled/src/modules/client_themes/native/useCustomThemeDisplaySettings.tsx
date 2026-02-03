@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/client_themes/native/useCustomThemeDisplaySettings.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun28124: for (var _fun28124_ip = 0;;) switch (_fun28124_ip) {
+        _fun28211: for (var _fun28211_ip = 0;;) switch (_fun28211_ip) {
             case 0:
                 var5 = arg0;
                 var3 = _closure1_slot0;
@@ -68,24 +68,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0[var3];
                 var0 = var0[var4];
                 if (!(var1 === var0)) {
-                    _fun28124_ip = 185;
-                    continue _fun28124
+                    _fun28211_ip = 185;
+                    continue _fun28211
                 }
             case 93:
                 if (!(var1 !== var2)) {
-                    _fun28124_ip = 101;
-                    continue _fun28124
+                    _fun28211_ip = 101;
+                    continue _fun28211
                 }
             case 97:
                 if (!(var1 === var3)) {
-                    _fun28124_ip = 171;
-                    continue _fun28124
+                    _fun28211_ip = 171;
+                    continue _fun28211
                 }
             case 101:
                 var4 = null;
                 if (!(var4 == var5)) {
-                    _fun28124_ip = 109;
-                    continue _fun28124
+                    _fun28211_ip = 109;
+                    continue _fun28211
                 }
             case 107:
                 return var1;
@@ -115,4 +115,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useCustomThemeDisplaySettings = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 3193, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 3202, 566, 2]);

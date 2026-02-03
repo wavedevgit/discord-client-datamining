@@ -30,91 +30,91 @@ import x.j;
 public class v3 {
 
     /* renamed from: x  reason: collision with root package name */
-    private static final MeteringRectangle[] f46905x = new MeteringRectangle[0];
+    private static final MeteringRectangle[] f47055x = new MeteringRectangle[0];
 
     /* renamed from: a  reason: collision with root package name */
-    private final u f46906a;
+    private final u f47056a;
 
     /* renamed from: b  reason: collision with root package name */
-    final Executor f46907b;
+    final Executor f47057b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ScheduledExecutorService f46908c;
+    private final ScheduledExecutorService f47058c;
 
     /* renamed from: f  reason: collision with root package name */
-    private final u.m f46911f;
+    private final u.m f47061f;
 
     /* renamed from: i  reason: collision with root package name */
-    private ScheduledFuture f46914i;
+    private ScheduledFuture f47064i;
 
     /* renamed from: j  reason: collision with root package name */
-    private ScheduledFuture f46915j;
+    private ScheduledFuture f47065j;
 
     /* renamed from: q  reason: collision with root package name */
-    private MeteringRectangle[] f46922q;
+    private MeteringRectangle[] f47072q;
 
     /* renamed from: r  reason: collision with root package name */
-    private MeteringRectangle[] f46923r;
+    private MeteringRectangle[] f47073r;
 
     /* renamed from: s  reason: collision with root package name */
-    private MeteringRectangle[] f46924s;
+    private MeteringRectangle[] f47074s;
 
     /* renamed from: t  reason: collision with root package name */
-    c.a f46925t;
+    c.a f47075t;
 
     /* renamed from: u  reason: collision with root package name */
-    c.a f46926u;
+    c.a f47076u;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f46927v;
+    private boolean f47077v;
 
     /* renamed from: w  reason: collision with root package name */
-    private u.c f46928w;
+    private u.c f47078w;
 
     /* renamed from: d  reason: collision with root package name */
-    private volatile boolean f46909d = false;
+    private volatile boolean f47059d = false;
 
     /* renamed from: e  reason: collision with root package name */
-    private volatile Rational f46910e = null;
+    private volatile Rational f47060e = null;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f46912g = false;
+    private boolean f47062g = false;
 
     /* renamed from: h  reason: collision with root package name */
-    Integer f46913h = 0;
+    Integer f47063h = 0;
 
     /* renamed from: k  reason: collision with root package name */
-    long f46916k = 0;
+    long f47066k = 0;
 
     /* renamed from: l  reason: collision with root package name */
-    boolean f46917l = false;
+    boolean f47067l = false;
 
     /* renamed from: m  reason: collision with root package name */
-    boolean f46918m = false;
+    boolean f47068m = false;
 
     /* renamed from: n  reason: collision with root package name */
-    private int f46919n = 1;
+    private int f47069n = 1;
 
     /* renamed from: o  reason: collision with root package name */
-    private u.c f46920o = null;
+    private u.c f47070o = null;
 
     /* renamed from: p  reason: collision with root package name */
-    private u.c f46921p = null;
+    private u.c f47071p = null;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public class a extends a0.k {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ c.a f46929a;
+        final /* synthetic */ c.a f47079a;
 
         a(c.a aVar) {
-            this.f46929a = aVar;
+            this.f47079a = aVar;
         }
 
         @Override // a0.k
         public void a(int i10) {
-            c.a aVar = this.f46929a;
+            c.a aVar = this.f47079a;
             if (aVar != null) {
                 aVar.f(new j.a("Camera is closed"));
             }
@@ -122,7 +122,7 @@ public class v3 {
 
         @Override // a0.k
         public void b(int i10, a0.u uVar) {
-            c.a aVar = this.f46929a;
+            c.a aVar = this.f47079a;
             if (aVar != null) {
                 aVar.c(uVar);
             }
@@ -130,7 +130,7 @@ public class v3 {
 
         @Override // a0.k
         public void c(int i10, a0.m mVar) {
-            c.a aVar = this.f46929a;
+            c.a aVar = this.f47079a;
             if (aVar != null) {
                 aVar.f(new a0.c(mVar));
             }
@@ -142,15 +142,15 @@ public class v3 {
     public class b extends a0.k {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ c.a f46931a;
+        final /* synthetic */ c.a f47081a;
 
         b(c.a aVar) {
-            this.f46931a = aVar;
+            this.f47081a = aVar;
         }
 
         @Override // a0.k
         public void a(int i10) {
-            c.a aVar = this.f46931a;
+            c.a aVar = this.f47081a;
             if (aVar != null) {
                 aVar.f(new j.a("Camera is closed"));
             }
@@ -158,15 +158,15 @@ public class v3 {
 
         @Override // a0.k
         public void b(int i10, a0.u uVar) {
-            if (this.f46931a != null) {
+            if (this.f47081a != null) {
                 x.y0.a("FocusMeteringControl", "triggerAePrecapture: triggering capture request completed");
-                this.f46931a.c(null);
+                this.f47081a.c(null);
             }
         }
 
         @Override // a0.k
         public void c(int i10, a0.m mVar) {
-            c.a aVar = this.f46931a;
+            c.a aVar = this.f47081a;
             if (aVar != null) {
                 aVar.f(new a0.c(mVar));
             }
@@ -175,25 +175,25 @@ public class v3 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public v3(u uVar, ScheduledExecutorService scheduledExecutorService, Executor executor, a0.d2 d2Var) {
-        MeteringRectangle[] meteringRectangleArr = f46905x;
-        this.f46922q = meteringRectangleArr;
-        this.f46923r = meteringRectangleArr;
-        this.f46924s = meteringRectangleArr;
-        this.f46925t = null;
-        this.f46926u = null;
-        this.f46927v = false;
-        this.f46928w = null;
-        this.f46906a = uVar;
-        this.f46907b = executor;
-        this.f46908c = scheduledExecutorService;
-        this.f46911f = new u.m(d2Var);
+        MeteringRectangle[] meteringRectangleArr = f47055x;
+        this.f47072q = meteringRectangleArr;
+        this.f47073r = meteringRectangleArr;
+        this.f47074s = meteringRectangleArr;
+        this.f47075t = null;
+        this.f47076u = null;
+        this.f47077v = false;
+        this.f47078w = null;
+        this.f47056a = uVar;
+        this.f47057b = executor;
+        this.f47058c = scheduledExecutorService;
+        this.f47061f = new u.m(d2Var);
     }
 
     private Rational B() {
-        if (this.f46910e != null) {
-            return this.f46910e;
+        if (this.f47060e != null) {
+            return this.f47060e;
         }
-        Rect z10 = this.f46906a.z();
+        Rect z10 = this.f47056a.z();
         return new Rational(z10.width(), z10.height());
     }
 
@@ -237,7 +237,7 @@ public class v3 {
                 if (arrayList.size() == i10) {
                     break;
                 } else if (H(b1Var)) {
-                    MeteringRectangle D = D(b1Var, C(b1Var, rational2, rational, i11, this.f46911f), rect);
+                    MeteringRectangle D = D(b1Var, C(b1Var, rational2, rational, i11, this.f47061f), rect);
                     if (D.getWidth() != 0 && D.getHeight() != 0) {
                         arrayList.add(D);
                     }
@@ -249,7 +249,7 @@ public class v3 {
     }
 
     private boolean F() {
-        if (this.f46906a.K(1) == 1) {
+        if (this.f47056a.K(1) == 1) {
             return true;
         }
         return false;
@@ -267,7 +267,7 @@ public class v3 {
     }
 
     private boolean M() {
-        if (this.f46922q.length > 0) {
+        if (this.f47072q.length > 0) {
             return true;
         }
         return false;
@@ -283,13 +283,13 @@ public class v3 {
     }
 
     public static /* synthetic */ void b(v3 v3Var, boolean z10, c.a aVar) {
-        v3Var.f46906a.W(v3Var.f46928w);
-        v3Var.f46927v = z10;
+        v3Var.f47056a.W(v3Var.f47078w);
+        v3Var.f47077v = z10;
         v3Var.w(aVar);
     }
 
     public static /* synthetic */ Object c(final v3 v3Var, final x.b0 b0Var, final long j10, final c.a aVar) {
-        v3Var.f46907b.execute(new Runnable() { // from class: q.i3
+        v3Var.f47057b.execute(new Runnable() { // from class: q.i3
             @Override // java.lang.Runnable
             public final void run() {
                 v3.this.P(aVar, b0Var, j10);
@@ -299,7 +299,7 @@ public class v3 {
     }
 
     public static /* synthetic */ Object f(final v3 v3Var, final boolean z10, final c.a aVar) {
-        v3Var.f46907b.execute(new Runnable() { // from class: q.u3
+        v3Var.f47057b.execute(new Runnable() { // from class: q.u3
             @Override // java.lang.Runnable
             public final void run() {
                 v3.b(v3.this, z10, aVar);
@@ -317,7 +317,7 @@ public class v3 {
             z10 = false;
         }
         x.y0.a("FocusMeteringControl", "enableExternalFlashAeMode: isAeModeExternalFlash = " + z10);
-        if (z10 != v3Var.f46927v || !u.U(totalCaptureResult, j10)) {
+        if (z10 != v3Var.f47077v || !u.U(totalCaptureResult, j10)) {
             return false;
         }
         x.y0.a("FocusMeteringControl", "enableExternalFlashAeMode: session updated with isAeModeExternalFlash = " + z10);
@@ -328,7 +328,7 @@ public class v3 {
     }
 
     public static /* synthetic */ Object i(final v3 v3Var, final c.a aVar) {
-        v3Var.f46907b.execute(new Runnable() { // from class: q.j3
+        v3Var.f47057b.execute(new Runnable() { // from class: q.j3
             @Override // java.lang.Runnable
             public final void run() {
                 v3.this.R(aVar);
@@ -338,8 +338,8 @@ public class v3 {
     }
 
     public static /* synthetic */ void j(v3 v3Var, long j10) {
-        if (j10 == v3Var.f46916k) {
-            v3Var.f46918m = false;
+        if (j10 == v3Var.f47066k) {
+            v3Var.f47068m = false;
             v3Var.s(false);
         }
     }
@@ -349,100 +349,100 @@ public class v3 {
         Integer num = (Integer) totalCaptureResult.get(CaptureResult.CONTROL_AF_STATE);
         if (v3Var.M()) {
             if (z10 && num != null) {
-                if (v3Var.f46913h.intValue() == 3) {
+                if (v3Var.f47063h.intValue() == 3) {
                     if (num.intValue() == 4) {
-                        v3Var.f46918m = true;
-                        v3Var.f46917l = true;
+                        v3Var.f47068m = true;
+                        v3Var.f47067l = true;
                     } else if (num.intValue() == 5) {
-                        v3Var.f46918m = false;
-                        v3Var.f46917l = true;
+                        v3Var.f47068m = false;
+                        v3Var.f47067l = true;
                     }
                 }
             } else {
-                v3Var.f46918m = true;
-                v3Var.f46917l = true;
+                v3Var.f47068m = true;
+                v3Var.f47067l = true;
             }
         }
-        if (v3Var.f46917l && u.U(totalCaptureResult, j10)) {
-            v3Var.s(v3Var.f46918m);
+        if (v3Var.f47067l && u.U(totalCaptureResult, j10)) {
+            v3Var.s(v3Var.f47068m);
             return true;
         }
-        if (!v3Var.f46913h.equals(num) && num != null) {
-            v3Var.f46913h = num;
+        if (!v3Var.f47063h.equals(num) && num != null) {
+            v3Var.f47063h = num;
         }
         return false;
     }
 
     public static /* synthetic */ void l(v3 v3Var, long j10) {
-        if (j10 == v3Var.f46916k) {
+        if (j10 == v3Var.f47066k) {
             v3Var.q();
         }
     }
 
     private void r() {
-        ScheduledFuture scheduledFuture = this.f46915j;
+        ScheduledFuture scheduledFuture = this.f47065j;
         if (scheduledFuture != null) {
             scheduledFuture.cancel(true);
-            this.f46915j = null;
+            this.f47065j = null;
         }
     }
 
     private void t() {
-        c.a aVar = this.f46926u;
+        c.a aVar = this.f47076u;
         if (aVar != null) {
             aVar.c(null);
-            this.f46926u = null;
+            this.f47076u = null;
         }
     }
 
     private void u() {
-        ScheduledFuture scheduledFuture = this.f46914i;
+        ScheduledFuture scheduledFuture = this.f47064i;
         if (scheduledFuture != null) {
             scheduledFuture.cancel(true);
-            this.f46914i = null;
+            this.f47064i = null;
         }
     }
 
     private void w(final c.a aVar) {
-        if (!this.f46909d) {
+        if (!this.f47059d) {
             if (aVar != null) {
                 aVar.f(new j.a("Camera is not active."));
                 return;
             }
             return;
         }
-        final long f02 = this.f46906a.f0();
+        final long f02 = this.f47056a.f0();
         u.c cVar = new u.c() { // from class: q.k3
             @Override // q.u.c
             public final boolean a(TotalCaptureResult totalCaptureResult) {
                 return v3.h(v3.this, f02, aVar, totalCaptureResult);
             }
         };
-        this.f46928w = cVar;
-        this.f46906a.v(cVar);
+        this.f47078w = cVar;
+        this.f47056a.v(cVar);
     }
 
     private void x(MeteringRectangle[] meteringRectangleArr, MeteringRectangle[] meteringRectangleArr2, MeteringRectangle[] meteringRectangleArr3, x.b0 b0Var, long j10) {
         final long f02;
-        this.f46906a.W(this.f46920o);
+        this.f47056a.W(this.f47070o);
         u();
         r();
-        this.f46922q = meteringRectangleArr;
-        this.f46923r = meteringRectangleArr2;
-        this.f46924s = meteringRectangleArr3;
+        this.f47072q = meteringRectangleArr;
+        this.f47073r = meteringRectangleArr2;
+        this.f47074s = meteringRectangleArr3;
         if (M()) {
-            this.f46912g = true;
-            this.f46917l = false;
-            this.f46918m = false;
-            f02 = this.f46906a.f0();
+            this.f47062g = true;
+            this.f47067l = false;
+            this.f47068m = false;
+            f02 = this.f47056a.f0();
             S(null, true);
         } else {
-            this.f46912g = false;
-            this.f46917l = true;
-            this.f46918m = false;
-            f02 = this.f46906a.f0();
+            this.f47062g = false;
+            this.f47067l = true;
+            this.f47068m = false;
+            f02 = this.f47056a.f0();
         }
-        this.f46913h = 0;
+        this.f47063h = 0;
         final boolean F = F();
         u.c cVar = new u.c() { // from class: q.n3
             @Override // q.u.c
@@ -450,14 +450,14 @@ public class v3 {
                 return v3.k(v3.this, F, f02, totalCaptureResult);
             }
         };
-        this.f46920o = cVar;
-        this.f46906a.v(cVar);
-        final long j11 = this.f46916k + 1;
-        this.f46916k = j11;
+        this.f47070o = cVar;
+        this.f47056a.v(cVar);
+        final long j11 = this.f47066k + 1;
+        this.f47066k = j11;
         Runnable runnable = new Runnable() { // from class: q.o3
             @Override // java.lang.Runnable
             public final void run() {
-                r0.f46907b.execute(new Runnable() { // from class: q.r3
+                r0.f47057b.execute(new Runnable() { // from class: q.r3
                     @Override // java.lang.Runnable
                     public final void run() {
                         v3.j(v3.this, r2);
@@ -465,14 +465,14 @@ public class v3 {
                 });
             }
         };
-        ScheduledExecutorService scheduledExecutorService = this.f46908c;
+        ScheduledExecutorService scheduledExecutorService = this.f47058c;
         TimeUnit timeUnit = TimeUnit.MILLISECONDS;
-        this.f46915j = scheduledExecutorService.schedule(runnable, j10, timeUnit);
+        this.f47065j = scheduledExecutorService.schedule(runnable, j10, timeUnit);
         if (b0Var.e()) {
-            this.f46914i = this.f46908c.schedule(new Runnable() { // from class: q.p3
+            this.f47064i = this.f47058c.schedule(new Runnable() { // from class: q.p3
                 @Override // java.lang.Runnable
                 public final void run() {
-                    r0.f46907b.execute(new Runnable() { // from class: q.q3
+                    r0.f47057b.execute(new Runnable() { // from class: q.q3
                         @Override // java.lang.Runnable
                         public final void run() {
                             v3.l(v3.this, r2);
@@ -484,25 +484,25 @@ public class v3 {
     }
 
     private void y(String str) {
-        this.f46906a.W(this.f46920o);
-        c.a aVar = this.f46925t;
+        this.f47056a.W(this.f47070o);
+        c.a aVar = this.f47075t;
         if (aVar != null) {
             aVar.f(new j.a(str));
-            this.f46925t = null;
+            this.f47075t = null;
         }
     }
 
     private void z(String str) {
-        this.f46906a.W(this.f46921p);
-        c.a aVar = this.f46926u;
+        this.f47056a.W(this.f47071p);
+        c.a aVar = this.f47076u;
         if (aVar != null) {
             aVar.f(new j.a(str));
-            this.f46926u = null;
+            this.f47076u = null;
         }
     }
 
     int A() {
-        if (this.f46919n == 3) {
+        if (this.f47069n == 3) {
             return 3;
         }
         return 4;
@@ -510,26 +510,26 @@ public class v3 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean G() {
-        return this.f46927v;
+        return this.f47077v;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void J(boolean z10) {
-        if (z10 != this.f46909d) {
-            this.f46909d = z10;
-            if (!this.f46909d) {
+        if (z10 != this.f47059d) {
+            this.f47059d = z10;
+            if (!this.f47059d) {
                 q();
             }
         }
     }
 
     public void K(Rational rational) {
-        this.f46910e = rational;
+        this.f47060e = rational;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void L(int i10) {
-        this.f46919n = i10;
+        this.f47069n = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -538,8 +538,8 @@ public class v3 {
     }
 
     ListenableFuture O(final x.b0 b0Var, final long j10) {
-        return androidx.concurrent.futures.c.a(new c.InterfaceC0030c() { // from class: q.l3
-            @Override // androidx.concurrent.futures.c.InterfaceC0030c
+        return androidx.concurrent.futures.c.a(new c.InterfaceC0028c() { // from class: q.l3
+            @Override // androidx.concurrent.futures.c.InterfaceC0028c
             public final Object a(c.a aVar) {
                 return v3.c(v3.this, b0Var, j10, aVar);
             }
@@ -548,15 +548,15 @@ public class v3 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void P(c.a aVar, x.b0 b0Var, long j10) {
-        if (!this.f46909d) {
+        if (!this.f47059d) {
             aVar.f(new j.a("Camera is not active."));
             return;
         }
-        Rect z10 = this.f46906a.z();
+        Rect z10 = this.f47056a.z();
         Rational B = B();
-        List E = E(b0Var.c(), this.f46906a.D(), B, z10, 1);
-        List E2 = E(b0Var.b(), this.f46906a.C(), B, z10, 2);
-        List E3 = E(b0Var.d(), this.f46906a.E(), B, z10, 4);
+        List E = E(b0Var.c(), this.f47056a.D(), B, z10, 1);
+        List E2 = E(b0Var.b(), this.f47056a.C(), B, z10, 2);
+        List E3 = E(b0Var.d(), this.f47056a.E(), B, z10, 4);
         if (E.isEmpty() && E2.isEmpty() && E3.isEmpty()) {
             aVar.f(new IllegalArgumentException("None of the specified AF/AE/AWB MeteringPoints is supported on this camera."));
             return;
@@ -564,15 +564,15 @@ public class v3 {
         y("Cancelled by another startFocusAndMetering()");
         z("Cancelled by another startFocusAndMetering()");
         u();
-        this.f46925t = aVar;
-        MeteringRectangle[] meteringRectangleArr = f46905x;
+        this.f47075t = aVar;
+        MeteringRectangle[] meteringRectangleArr = f47055x;
         x((MeteringRectangle[]) E.toArray(meteringRectangleArr), (MeteringRectangle[]) E2.toArray(meteringRectangleArr), (MeteringRectangle[]) E3.toArray(meteringRectangleArr), b0Var, j10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public ListenableFuture Q() {
-        return androidx.concurrent.futures.c.a(new c.InterfaceC0030c() { // from class: q.t3
-            @Override // androidx.concurrent.futures.c.InterfaceC0030c
+        return androidx.concurrent.futures.c.a(new c.InterfaceC0028c() { // from class: q.t3
+            @Override // androidx.concurrent.futures.c.InterfaceC0028c
             public final Object a(c.a aVar) {
                 return v3.i(v3.this, aVar);
             }
@@ -582,7 +582,7 @@ public class v3 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void R(c.a aVar) {
         x.y0.a("FocusMeteringControl", "triggerAePrecapture");
-        if (!this.f46909d) {
+        if (!this.f47059d) {
             if (aVar != null) {
                 aVar.f(new j.a("Camera is not active."));
                 return;
@@ -590,18 +590,18 @@ public class v3 {
             return;
         }
         p0.a aVar2 = new p0.a();
-        aVar2.t(this.f46919n);
+        aVar2.t(this.f47069n);
         aVar2.u(true);
-        a.C0558a c0558a = new a.C0558a();
-        c0558a.f(CaptureRequest.CONTROL_AE_PRECAPTURE_TRIGGER, 1);
-        aVar2.e(c0558a.c());
+        a.C0555a c0555a = new a.C0555a();
+        c0555a.f(CaptureRequest.CONTROL_AE_PRECAPTURE_TRIGGER, 1);
+        aVar2.e(c0555a.c());
         aVar2.c(new b(aVar));
-        this.f46906a.d0(Collections.singletonList(aVar2.h()));
+        this.f47056a.d0(Collections.singletonList(aVar2.h()));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void S(c.a aVar, boolean z10) {
-        if (!this.f46909d) {
+        if (!this.f47059d) {
             if (aVar != null) {
                 aVar.f(new j.a("Camera is not active."));
                 return;
@@ -609,88 +609,88 @@ public class v3 {
             return;
         }
         p0.a aVar2 = new p0.a();
-        aVar2.t(this.f46919n);
+        aVar2.t(this.f47069n);
         aVar2.u(true);
-        a.C0558a c0558a = new a.C0558a();
-        c0558a.f(CaptureRequest.CONTROL_AF_TRIGGER, 1);
+        a.C0555a c0555a = new a.C0555a();
+        c0555a.f(CaptureRequest.CONTROL_AF_TRIGGER, 1);
         if (z10) {
-            c0558a.g(CaptureRequest.CONTROL_AE_MODE, Integer.valueOf(this.f46906a.I(1)), r0.c.HIGH_PRIORITY_REQUIRED);
+            c0555a.g(CaptureRequest.CONTROL_AE_MODE, Integer.valueOf(this.f47056a.I(1)), r0.c.HIGH_PRIORITY_REQUIRED);
         }
-        aVar2.e(c0558a.c());
+        aVar2.e(c0555a.c());
         aVar2.c(new a(aVar));
-        this.f46906a.d0(Collections.singletonList(aVar2.h()));
+        this.f47056a.d0(Collections.singletonList(aVar2.h()));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public void n(a.C0558a c0558a) {
+    public void n(a.C0555a c0555a) {
         int A;
-        if (this.f46912g) {
+        if (this.f47062g) {
             A = 1;
         } else {
             A = A();
         }
         CaptureRequest.Key key = CaptureRequest.CONTROL_AF_MODE;
-        Object valueOf = Integer.valueOf(this.f46906a.K(A));
+        Object valueOf = Integer.valueOf(this.f47056a.K(A));
         r0.c cVar = r0.c.REQUIRED;
-        c0558a.g(key, valueOf, cVar);
-        MeteringRectangle[] meteringRectangleArr = this.f46922q;
+        c0555a.g(key, valueOf, cVar);
+        MeteringRectangle[] meteringRectangleArr = this.f47072q;
         if (meteringRectangleArr.length != 0) {
-            c0558a.g(CaptureRequest.CONTROL_AF_REGIONS, meteringRectangleArr, cVar);
+            c0555a.g(CaptureRequest.CONTROL_AF_REGIONS, meteringRectangleArr, cVar);
         }
-        MeteringRectangle[] meteringRectangleArr2 = this.f46923r;
+        MeteringRectangle[] meteringRectangleArr2 = this.f47073r;
         if (meteringRectangleArr2.length != 0) {
-            c0558a.g(CaptureRequest.CONTROL_AE_REGIONS, meteringRectangleArr2, cVar);
+            c0555a.g(CaptureRequest.CONTROL_AE_REGIONS, meteringRectangleArr2, cVar);
         }
-        MeteringRectangle[] meteringRectangleArr3 = this.f46924s;
+        MeteringRectangle[] meteringRectangleArr3 = this.f47074s;
         if (meteringRectangleArr3.length != 0) {
-            c0558a.g(CaptureRequest.CONTROL_AWB_REGIONS, meteringRectangleArr3, cVar);
+            c0555a.g(CaptureRequest.CONTROL_AWB_REGIONS, meteringRectangleArr3, cVar);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void o(boolean z10, boolean z11) {
-        if (!this.f46909d) {
+        if (!this.f47059d) {
             return;
         }
         p0.a aVar = new p0.a();
         aVar.u(true);
-        aVar.t(this.f46919n);
-        a.C0558a c0558a = new a.C0558a();
+        aVar.t(this.f47069n);
+        a.C0555a c0555a = new a.C0555a();
         if (z10) {
-            c0558a.f(CaptureRequest.CONTROL_AF_TRIGGER, 2);
+            c0555a.f(CaptureRequest.CONTROL_AF_TRIGGER, 2);
         }
         if (z11) {
-            c0558a.f(CaptureRequest.CONTROL_AE_PRECAPTURE_TRIGGER, 2);
+            c0555a.f(CaptureRequest.CONTROL_AE_PRECAPTURE_TRIGGER, 2);
         }
-        aVar.e(c0558a.c());
-        this.f46906a.d0(Collections.singletonList(aVar.h()));
+        aVar.e(c0555a.c());
+        this.f47056a.d0(Collections.singletonList(aVar.h()));
     }
 
     void p(c.a aVar) {
         z("Cancelled by another cancelFocusAndMetering()");
         y("Cancelled by cancelFocusAndMetering()");
-        this.f46926u = aVar;
+        this.f47076u = aVar;
         u();
         r();
         if (M()) {
             o(true, false);
         }
-        MeteringRectangle[] meteringRectangleArr = f46905x;
-        this.f46922q = meteringRectangleArr;
-        this.f46923r = meteringRectangleArr;
-        this.f46924s = meteringRectangleArr;
-        this.f46912g = false;
-        final long f02 = this.f46906a.f0();
-        if (this.f46926u != null) {
-            final int K = this.f46906a.K(A());
+        MeteringRectangle[] meteringRectangleArr = f47055x;
+        this.f47072q = meteringRectangleArr;
+        this.f47073r = meteringRectangleArr;
+        this.f47074s = meteringRectangleArr;
+        this.f47062g = false;
+        final long f02 = this.f47056a.f0();
+        if (this.f47076u != null) {
+            final int K = this.f47056a.K(A());
             u.c cVar = new u.c() { // from class: q.m3
                 @Override // q.u.c
                 public final boolean a(TotalCaptureResult totalCaptureResult) {
                     return v3.a(v3.this, K, f02, totalCaptureResult);
                 }
             };
-            this.f46921p = cVar;
-            this.f46906a.v(cVar);
+            this.f47071p = cVar;
+            this.f47056a.v(cVar);
         }
     }
 
@@ -700,10 +700,10 @@ public class v3 {
 
     void s(boolean z10) {
         r();
-        c.a aVar = this.f46925t;
+        c.a aVar = this.f47075t;
         if (aVar != null) {
             aVar.c(x.c0.a(z10));
-            this.f46925t = null;
+            this.f47075t = null;
         }
     }
 
@@ -713,13 +713,13 @@ public class v3 {
         if (i10 < 28) {
             Log.d("FocusMeteringControl", "CONTROL_AE_MODE_ON_EXTERNAL_FLASH is not supported in API " + i10);
             return d0.n.p(null);
-        } else if (this.f46906a.I(5) != 5) {
+        } else if (this.f47056a.I(5) != 5) {
             Log.d("FocusMeteringControl", "CONTROL_AE_MODE_ON_EXTERNAL_FLASH is not supported in this device");
             return d0.n.p(null);
         } else {
             Log.d("FocusMeteringControl", "enableExternalFlashAeMode: CONTROL_AE_MODE_ON_EXTERNAL_FLASH supported");
-            return androidx.concurrent.futures.c.a(new c.InterfaceC0030c() { // from class: q.s3
-                @Override // androidx.concurrent.futures.c.InterfaceC0030c
+            return androidx.concurrent.futures.c.a(new c.InterfaceC0028c() { // from class: q.s3
+                @Override // androidx.concurrent.futures.c.InterfaceC0028c
                 public final Object a(c.a aVar) {
                     return v3.f(v3.this, z10, aVar);
                 }

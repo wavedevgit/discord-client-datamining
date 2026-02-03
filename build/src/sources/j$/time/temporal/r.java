@@ -6,16 +6,16 @@ import java.io.Serializable;
 public final class r implements Serializable {
 
     /* renamed from: a  reason: collision with root package name */
-    public final long f31406a;
+    public final long f31202a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final long f31407b;
+    public final long f31203b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final long f31408c;
+    public final long f31204c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final long f31409d;
+    public final long f31205d;
 
     public static r e(long j10, long j11) {
         if (j10 > j11) {
@@ -35,21 +35,21 @@ public final class r implements Serializable {
     }
 
     public r(long j10, long j11, long j12, long j13) {
-        this.f31406a = j10;
-        this.f31407b = j11;
-        this.f31408c = j12;
-        this.f31409d = j13;
+        this.f31202a = j10;
+        this.f31203b = j11;
+        this.f31204c = j12;
+        this.f31205d = j13;
     }
 
     public final int a(long j10, n nVar) {
-        if (this.f31406a < -2147483648L || this.f31409d > 2147483647L || !d(j10)) {
+        if (this.f31202a < -2147483648L || this.f31205d > 2147483647L || !d(j10)) {
             throw new DateTimeException(c(j10, nVar));
         }
         return (int) j10;
     }
 
     public final boolean d(long j10) {
-        return j10 >= this.f31406a && j10 <= this.f31409d;
+        return j10 >= this.f31202a && j10 <= this.f31205d;
     }
 
     public final void b(long j10, n nVar) {
@@ -71,7 +71,7 @@ public final class r implements Serializable {
         }
         if (obj instanceof r) {
             r rVar = (r) obj;
-            if (this.f31406a == rVar.f31406a && this.f31407b == rVar.f31407b && this.f31408c == rVar.f31408c && this.f31409d == rVar.f31409d) {
+            if (this.f31202a == rVar.f31202a && this.f31203b == rVar.f31203b && this.f31204c == rVar.f31204c && this.f31205d == rVar.f31205d) {
                 return true;
             }
         }
@@ -79,28 +79,28 @@ public final class r implements Serializable {
     }
 
     public final int hashCode() {
-        long j10 = this.f31406a;
-        long j11 = this.f31407b;
+        long j10 = this.f31202a;
+        long j11 = this.f31203b;
         long j12 = j10 + (j11 << 16) + (j11 >> 48);
-        long j13 = this.f31408c;
+        long j13 = this.f31204c;
         long j14 = j12 + (j13 << 32) + (j13 >> 32);
-        long j15 = this.f31409d;
+        long j15 = this.f31205d;
         long j16 = j14 + (j15 << 48) + (j15 >> 16);
         return (int) (j16 ^ (j16 >>> 32));
     }
 
     public final String toString() {
         StringBuilder sb2 = new StringBuilder();
-        sb2.append(this.f31406a);
-        if (this.f31406a != this.f31407b) {
+        sb2.append(this.f31202a);
+        if (this.f31202a != this.f31203b) {
             sb2.append('/');
-            sb2.append(this.f31407b);
+            sb2.append(this.f31203b);
         }
         sb2.append(" - ");
-        sb2.append(this.f31408c);
-        if (this.f31408c != this.f31409d) {
+        sb2.append(this.f31204c);
+        if (this.f31204c != this.f31205d) {
             sb2.append('/');
-            sb2.append(this.f31409d);
+            sb2.append(this.f31205d);
         }
         return sb2.toString();
     }

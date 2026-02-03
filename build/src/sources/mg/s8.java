@@ -6,7 +6,7 @@ import ui.c;
 final class s8 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final s8 f38626a = new s8();
+    static final s8 f38423a = new s8();
 
     static {
         c.b a10 = ui.c.a(StackTraceHelper.NAME_KEY);

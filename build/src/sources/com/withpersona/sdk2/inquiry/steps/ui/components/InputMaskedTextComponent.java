@@ -2,6 +2,10 @@ package com.withpersona.sdk2.inquiry.steps.ui.components;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+import aq.e0;
+import aq.k5;
+import aq.v;
+import aq.w4;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.facebook.react.uimanager.ViewProps;
 import com.squareup.moshi.g;
@@ -12,38 +16,34 @@ import java.util.List;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
-import wm.t;
-import wm.w;
-import yp.e0;
-import yp.k5;
-import yp.v;
-import yp.w4;
-@Metadata(d1 = {"\u0000j\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\t\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0010\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\t\b\u0087\b\u0018\u00002\u00020\u00012\b\u0012\u0004\u0012\u00020\u00000\u00022\u00020\u00032\u00020\u0004B5\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\b\u0010\t\u001a\u0004\u0018\u00010\b\u0012\b\u0010\n\u001a\u0004\u0018\u00010\b\u0012\b\u0010\f\u001a\u0004\u0018\u00010\u000b¢\u0006\u0004\b\r\u0010\u000eB\u0011\b\u0016\u0012\u0006\u0010\u0010\u001a\u00020\u000f¢\u0006\u0004\b\r\u0010\u0011J\u0017\u0010\u0013\u001a\u00020\u00002\u0006\u0010\u0012\u001a\u00020\u0005H\u0016¢\u0006\u0004\b\u0013\u0010\u0014J\u001d\u0010\u001a\u001a\u00020\u00192\u0006\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u0018\u001a\u00020\u0017¢\u0006\u0004\b\u001a\u0010\u001bJ\r\u0010\u001c\u001a\u00020\u0017¢\u0006\u0004\b\u001c\u0010\u001dJH\u0010\u001e\u001a\u00020\u00002\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00052\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u000bHÆ\u0001¢\u0006\u0004\b\u001e\u0010\u001fJ\u0010\u0010 \u001a\u00020\u0005HÖ\u0001¢\u0006\u0004\b \u0010!J\u0010\u0010\"\u001a\u00020\u0017HÖ\u0001¢\u0006\u0004\b\"\u0010\u001dJ\u001a\u0010&\u001a\u00020%2\b\u0010$\u001a\u0004\u0018\u00010#HÖ\u0003¢\u0006\u0004\b&\u0010'R\u001a\u0010\u0006\u001a\u00020\u00058\u0016X\u0096\u0004¢\u0006\f\n\u0004\b(\u0010)\u001a\u0004\b*\u0010!R\u0017\u0010\u0007\u001a\u00020\u00058\u0006¢\u0006\f\n\u0004\b+\u0010)\u001a\u0004\b,\u0010!R\u001c\u0010\t\u001a\u0004\u0018\u00010\b8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0013\u0010-\u001a\u0004\b.\u0010/R\u001c\u0010\n\u001a\u0004\u0018\u00010\b8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b0\u0010-\u001a\u0004\b1\u0010/R\u0019\u0010\f\u001a\u0004\u0018\u00010\u000b8\u0006¢\u0006\f\n\u0004\b2\u00103\u001a\u0004\b4\u00105R&\u0010=\u001a\b\u0012\u0004\u0012\u000207068\u0016X\u0096\u0004¢\u0006\u0012\n\u0004\b8\u00109\u0012\u0004\b;\u0010<\u001a\u0004\b(\u0010:R(\u0010F\u001a\u00020>8\u0016@\u0016X\u0097\u000e¢\u0006\u0018\n\u0004\b?\u0010@\u0012\u0004\bE\u0010<\u001a\u0004\bA\u0010B\"\u0004\bC\u0010D¨\u0006G"}, d2 = {"Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputMaskedTextComponent;", "Lyp/k5;", "Lyp/w4;", "Lyp/v;", "Lyp/e0;", "", StackTraceHelper.NAME_KEY, "value", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", ViewProps.HIDDEN, "disabled", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/InputTextBasedComponentStyle;", "styles", "<init>", "(Ljava/lang/String;Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/InputTextBasedComponentStyle;)V", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/InputMaskedText;", "config", "(Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/InputMaskedText;)V", "newString", "i", "(Ljava/lang/String;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputMaskedTextComponent;", "Landroid/os/Parcel;", "dest", "", "flags", "", "writeToParcel", "(Landroid/os/Parcel;I)V", "describeContents", "()I", "c", "(Ljava/lang/String;Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/InputTextBasedComponentStyle;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputMaskedTextComponent;", "toString", "()Ljava/lang/String;", "hashCode", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "d", "Ljava/lang/String;", "getName", "e", "getValue", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "getHidden", "()Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "o", "getDisabled", "p", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/InputTextBasedComponentStyle;", "f", "()Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/InputTextBasedComponentStyle;", "", "Lgq/a;", "q", "Ljava/util/List;", "()Ljava/util/List;", "getAssociatedViews$annotations", "()V", "associatedViews", "Lwm/t;", "r", "Lwm/t;", "b", "()Lwm/t;", "g", "(Lwm/t;)V", "getTextController$annotations", "textController", "ui-step-renderer_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+import ym.t;
+import ym.w;
+@Metadata(d1 = {"\u0000j\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\t\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0010\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\t\b\u0087\b\u0018\u00002\u00020\u00012\b\u0012\u0004\u0012\u00020\u00000\u00022\u00020\u00032\u00020\u0004B5\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\b\u0010\t\u001a\u0004\u0018\u00010\b\u0012\b\u0010\n\u001a\u0004\u0018\u00010\b\u0012\b\u0010\f\u001a\u0004\u0018\u00010\u000b¢\u0006\u0004\b\r\u0010\u000eB\u0011\b\u0016\u0012\u0006\u0010\u0010\u001a\u00020\u000f¢\u0006\u0004\b\r\u0010\u0011J\u0017\u0010\u0013\u001a\u00020\u00002\u0006\u0010\u0012\u001a\u00020\u0005H\u0016¢\u0006\u0004\b\u0013\u0010\u0014J\u001d\u0010\u001a\u001a\u00020\u00192\u0006\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u0018\u001a\u00020\u0017¢\u0006\u0004\b\u001a\u0010\u001bJ\r\u0010\u001c\u001a\u00020\u0017¢\u0006\u0004\b\u001c\u0010\u001dJH\u0010\u001e\u001a\u00020\u00002\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00052\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u000bHÆ\u0001¢\u0006\u0004\b\u001e\u0010\u001fJ\u0010\u0010 \u001a\u00020\u0005HÖ\u0001¢\u0006\u0004\b \u0010!J\u0010\u0010\"\u001a\u00020\u0017HÖ\u0001¢\u0006\u0004\b\"\u0010\u001dJ\u001a\u0010&\u001a\u00020%2\b\u0010$\u001a\u0004\u0018\u00010#HÖ\u0003¢\u0006\u0004\b&\u0010'R\u001a\u0010\u0006\u001a\u00020\u00058\u0016X\u0096\u0004¢\u0006\f\n\u0004\b(\u0010)\u001a\u0004\b*\u0010!R\u0017\u0010\u0007\u001a\u00020\u00058\u0006¢\u0006\f\n\u0004\b+\u0010)\u001a\u0004\b,\u0010!R\u001c\u0010\t\u001a\u0004\u0018\u00010\b8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0013\u0010-\u001a\u0004\b.\u0010/R\u001c\u0010\n\u001a\u0004\u0018\u00010\b8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b0\u0010-\u001a\u0004\b1\u0010/R\u0019\u0010\f\u001a\u0004\u0018\u00010\u000b8\u0006¢\u0006\f\n\u0004\b2\u00103\u001a\u0004\b4\u00105R&\u0010=\u001a\b\u0012\u0004\u0012\u000207068\u0016X\u0096\u0004¢\u0006\u0012\n\u0004\b8\u00109\u0012\u0004\b;\u0010<\u001a\u0004\b(\u0010:R(\u0010F\u001a\u00020>8\u0016@\u0016X\u0097\u000e¢\u0006\u0018\n\u0004\b?\u0010@\u0012\u0004\bE\u0010<\u001a\u0004\bA\u0010B\"\u0004\bC\u0010D¨\u0006G"}, d2 = {"Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputMaskedTextComponent;", "Laq/k5;", "Laq/w4;", "Laq/v;", "Laq/e0;", "", StackTraceHelper.NAME_KEY, "value", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", ViewProps.HIDDEN, "disabled", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/InputTextBasedComponentStyle;", "styles", "<init>", "(Ljava/lang/String;Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/InputTextBasedComponentStyle;)V", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/InputMaskedText;", "config", "(Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/InputMaskedText;)V", "newString", "i", "(Ljava/lang/String;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputMaskedTextComponent;", "Landroid/os/Parcel;", "dest", "", "flags", "", "writeToParcel", "(Landroid/os/Parcel;I)V", "describeContents", "()I", "c", "(Ljava/lang/String;Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/InputTextBasedComponentStyle;)Lcom/withpersona/sdk2/inquiry/steps/ui/components/InputMaskedTextComponent;", "toString", "()Ljava/lang/String;", "hashCode", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "d", "Ljava/lang/String;", "getName", "e", "getValue", "Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "getHidden", "()Lcom/withpersona/sdk2/inquiry/network/dto/JsonLogicBoolean;", "o", "getDisabled", "p", "Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/InputTextBasedComponentStyle;", "f", "()Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/InputTextBasedComponentStyle;", "", "Liq/a;", "q", "Ljava/util/List;", "()Ljava/util/List;", "getAssociatedViews$annotations", "()V", "associatedViews", "Lym/t;", "r", "Lym/t;", "b", "()Lym/t;", "g", "(Lym/t;)V", "getTextController$annotations", "textController", "ui-step-renderer_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class InputMaskedTextComponent implements k5, w4, v, e0 {
     @NotNull
     public static final Parcelable.Creator<InputMaskedTextComponent> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f20275d;
+    private final String f19257d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f20276e;
+    private final String f19258e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final JsonLogicBoolean f20277i;
+    private final JsonLogicBoolean f19259i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final JsonLogicBoolean f20278o;
+    private final JsonLogicBoolean f19260o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final InputTextBasedComponentStyle f20279p;
+    private final InputTextBasedComponentStyle f19261p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final List f20280q;
+    private final List f19262q;
 
     /* renamed from: r  reason: collision with root package name */
-    private t f20281r;
+    private t f19263r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -64,30 +64,30 @@ public final class InputMaskedTextComponent implements k5, w4, v, e0 {
     public InputMaskedTextComponent(String name, String value, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, InputTextBasedComponentStyle inputTextBasedComponentStyle) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f20275d = name;
-        this.f20276e = value;
-        this.f20277i = jsonLogicBoolean;
-        this.f20278o = jsonLogicBoolean2;
-        this.f20279p = inputTextBasedComponentStyle;
-        this.f20280q = new ArrayList();
-        this.f20281r = w.a(value);
+        this.f19257d = name;
+        this.f19258e = value;
+        this.f19259i = jsonLogicBoolean;
+        this.f19260o = jsonLogicBoolean2;
+        this.f19261p = inputTextBasedComponentStyle;
+        this.f19262q = new ArrayList();
+        this.f19263r = w.a(value);
     }
 
     public static /* synthetic */ InputMaskedTextComponent e(InputMaskedTextComponent inputMaskedTextComponent, String str, String str2, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, InputTextBasedComponentStyle inputTextBasedComponentStyle, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = inputMaskedTextComponent.f20275d;
+            str = inputMaskedTextComponent.f19257d;
         }
         if ((i10 & 2) != 0) {
-            str2 = inputMaskedTextComponent.f20276e;
+            str2 = inputMaskedTextComponent.f19258e;
         }
         if ((i10 & 4) != 0) {
-            jsonLogicBoolean = inputMaskedTextComponent.f20277i;
+            jsonLogicBoolean = inputMaskedTextComponent.f19259i;
         }
         if ((i10 & 8) != 0) {
-            jsonLogicBoolean2 = inputMaskedTextComponent.f20278o;
+            jsonLogicBoolean2 = inputMaskedTextComponent.f19260o;
         }
         if ((i10 & 16) != 0) {
-            inputTextBasedComponentStyle = inputMaskedTextComponent.f20279p;
+            inputTextBasedComponentStyle = inputMaskedTextComponent.f19261p;
         }
         InputTextBasedComponentStyle inputTextBasedComponentStyle2 = inputTextBasedComponentStyle;
         JsonLogicBoolean jsonLogicBoolean3 = jsonLogicBoolean;
@@ -98,9 +98,9 @@ public final class InputMaskedTextComponent implements k5, w4, v, e0 {
     public static /* synthetic */ void getTextController$annotations() {
     }
 
-    @Override // yp.w4
+    @Override // aq.w4
     public t b() {
-        return this.f20281r;
+        return this.f19263r;
     }
 
     public final InputMaskedTextComponent c(String name, String value, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, InputTextBasedComponentStyle inputTextBasedComponentStyle) {
@@ -109,9 +109,9 @@ public final class InputMaskedTextComponent implements k5, w4, v, e0 {
         return new InputMaskedTextComponent(name, value, jsonLogicBoolean, jsonLogicBoolean2, inputTextBasedComponentStyle);
     }
 
-    @Override // yp.e0
+    @Override // aq.e0
     public List d() {
-        return this.f20280q;
+        return this.f19262q;
     }
 
     @Override // android.os.Parcelable
@@ -125,46 +125,46 @@ public final class InputMaskedTextComponent implements k5, w4, v, e0 {
         }
         if (obj instanceof InputMaskedTextComponent) {
             InputMaskedTextComponent inputMaskedTextComponent = (InputMaskedTextComponent) obj;
-            return Intrinsics.areEqual(this.f20275d, inputMaskedTextComponent.f20275d) && Intrinsics.areEqual(this.f20276e, inputMaskedTextComponent.f20276e) && Intrinsics.areEqual(this.f20277i, inputMaskedTextComponent.f20277i) && Intrinsics.areEqual(this.f20278o, inputMaskedTextComponent.f20278o) && Intrinsics.areEqual(this.f20279p, inputMaskedTextComponent.f20279p);
+            return Intrinsics.areEqual(this.f19257d, inputMaskedTextComponent.f19257d) && Intrinsics.areEqual(this.f19258e, inputMaskedTextComponent.f19258e) && Intrinsics.areEqual(this.f19259i, inputMaskedTextComponent.f19259i) && Intrinsics.areEqual(this.f19260o, inputMaskedTextComponent.f19260o) && Intrinsics.areEqual(this.f19261p, inputMaskedTextComponent.f19261p);
         }
         return false;
     }
 
     public final InputTextBasedComponentStyle f() {
-        return this.f20279p;
+        return this.f19261p;
     }
 
     public void g(t tVar) {
         Intrinsics.checkNotNullParameter(tVar, "<set-?>");
-        this.f20281r = tVar;
+        this.f19263r = tVar;
     }
 
-    @Override // yp.v
+    @Override // aq.v
     public JsonLogicBoolean getDisabled() {
-        return this.f20278o;
+        return this.f19260o;
     }
 
-    @Override // yp.e0
+    @Override // aq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f20277i;
+        return this.f19259i;
     }
 
-    @Override // yp.k5
+    @Override // aq.k5
     public String getName() {
-        return this.f20275d;
+        return this.f19257d;
     }
 
     public int hashCode() {
-        int hashCode = ((this.f20275d.hashCode() * 31) + this.f20276e.hashCode()) * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f20277i;
+        int hashCode = ((this.f19257d.hashCode() * 31) + this.f19258e.hashCode()) * 31;
+        JsonLogicBoolean jsonLogicBoolean = this.f19259i;
         int hashCode2 = (hashCode + (jsonLogicBoolean == null ? 0 : jsonLogicBoolean.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20278o;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f19260o;
         int hashCode3 = (hashCode2 + (jsonLogicBoolean2 == null ? 0 : jsonLogicBoolean2.hashCode())) * 31;
-        InputTextBasedComponentStyle inputTextBasedComponentStyle = this.f20279p;
+        InputTextBasedComponentStyle inputTextBasedComponentStyle = this.f19261p;
         return hashCode3 + (inputTextBasedComponentStyle != null ? inputTextBasedComponentStyle.hashCode() : 0);
     }
 
-    @Override // yp.w4
+    @Override // aq.w4
     /* renamed from: i */
     public InputMaskedTextComponent a(String newString) {
         Intrinsics.checkNotNullParameter(newString, "newString");
@@ -174,22 +174,22 @@ public final class InputMaskedTextComponent implements k5, w4, v, e0 {
     }
 
     public String toString() {
-        String str = this.f20275d;
-        String str2 = this.f20276e;
-        JsonLogicBoolean jsonLogicBoolean = this.f20277i;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20278o;
-        InputTextBasedComponentStyle inputTextBasedComponentStyle = this.f20279p;
+        String str = this.f19257d;
+        String str2 = this.f19258e;
+        JsonLogicBoolean jsonLogicBoolean = this.f19259i;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f19260o;
+        InputTextBasedComponentStyle inputTextBasedComponentStyle = this.f19261p;
         return "InputMaskedTextComponent(name=" + str + ", value=" + str2 + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ", styles=" + inputTextBasedComponentStyle + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f20275d);
-        dest.writeString(this.f20276e);
-        dest.writeParcelable(this.f20277i, i10);
-        dest.writeParcelable(this.f20278o, i10);
-        dest.writeParcelable(this.f20279p, i10);
+        dest.writeString(this.f19257d);
+        dest.writeString(this.f19258e);
+        dest.writeParcelable(this.f19259i, i10);
+        dest.writeParcelable(this.f19260o, i10);
+        dest.writeParcelable(this.f19261p, i10);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

@@ -516,4 +516,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.BADGE_PACKS = var3;
     var2.BADGE_PACK_TO_SKU_ID = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 6635, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 6640, 2]);

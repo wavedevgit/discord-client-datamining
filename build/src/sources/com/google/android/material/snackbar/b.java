@@ -9,19 +9,19 @@ import java.lang.ref.WeakReference;
 class b {
 
     /* renamed from: e  reason: collision with root package name */
-    private static b f16030e;
+    private static b f14998e;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f16031a = new Object();
+    private final Object f14999a = new Object();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Handler f16032b = new Handler(Looper.getMainLooper(), new a());
+    private final Handler f15000b = new Handler(Looper.getMainLooper(), new a());
 
     /* renamed from: c  reason: collision with root package name */
-    private c f16033c;
+    private c f15001c;
 
     /* renamed from: d  reason: collision with root package name */
-    private c f16034d;
+    private c f15002d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements Handler.Callback {
@@ -41,7 +41,7 @@ class b {
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: com.google.android.material.snackbar.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public interface InterfaceC0192b {
+    public interface InterfaceC0173b {
         void a(int i10);
 
         void show();
@@ -52,21 +52,21 @@ class b {
     public static class c {
 
         /* renamed from: a  reason: collision with root package name */
-        final WeakReference f16036a;
+        final WeakReference f15004a;
 
         /* renamed from: b  reason: collision with root package name */
-        int f16037b;
+        int f15005b;
 
         /* renamed from: c  reason: collision with root package name */
-        boolean f16038c;
+        boolean f15006c;
 
-        c(int i10, InterfaceC0192b interfaceC0192b) {
-            this.f16036a = new WeakReference(interfaceC0192b);
-            this.f16037b = i10;
+        c(int i10, InterfaceC0173b interfaceC0173b) {
+            this.f15004a = new WeakReference(interfaceC0173b);
+            this.f15005b = i10;
         }
 
-        boolean a(InterfaceC0192b interfaceC0192b) {
-            if (interfaceC0192b != null && this.f16036a.get() == interfaceC0192b) {
+        boolean a(InterfaceC0173b interfaceC0173b) {
+            if (interfaceC0173b != null && this.f15004a.get() == interfaceC0173b) {
                 return true;
             }
             return false;
@@ -77,10 +77,10 @@ class b {
     }
 
     private boolean a(c cVar, int i10) {
-        InterfaceC0192b interfaceC0192b = (InterfaceC0192b) cVar.f16036a.get();
-        if (interfaceC0192b != null) {
-            this.f16032b.removeCallbacksAndMessages(cVar);
-            interfaceC0192b.a(i10);
+        InterfaceC0173b interfaceC0173b = (InterfaceC0173b) cVar.f15004a.get();
+        if (interfaceC0173b != null) {
+            this.f15000b.removeCallbacksAndMessages(cVar);
+            interfaceC0173b.a(i10);
             return true;
         }
         return false;
@@ -88,30 +88,30 @@ class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static b c() {
-        if (f16030e == null) {
-            f16030e = new b();
+        if (f14998e == null) {
+            f14998e = new b();
         }
-        return f16030e;
+        return f14998e;
     }
 
-    private boolean f(InterfaceC0192b interfaceC0192b) {
-        c cVar = this.f16033c;
-        if (cVar != null && cVar.a(interfaceC0192b)) {
+    private boolean f(InterfaceC0173b interfaceC0173b) {
+        c cVar = this.f15001c;
+        if (cVar != null && cVar.a(interfaceC0173b)) {
             return true;
         }
         return false;
     }
 
-    private boolean g(InterfaceC0192b interfaceC0192b) {
-        c cVar = this.f16034d;
-        if (cVar != null && cVar.a(interfaceC0192b)) {
+    private boolean g(InterfaceC0173b interfaceC0173b) {
+        c cVar = this.f15002d;
+        if (cVar != null && cVar.a(interfaceC0173b)) {
             return true;
         }
         return false;
     }
 
     private void l(c cVar) {
-        int i10 = cVar.f16037b;
+        int i10 = cVar.f15005b;
         if (i10 == -2) {
             return;
         }
@@ -122,32 +122,32 @@ class b {
                 i10 = 2750;
             }
         }
-        this.f16032b.removeCallbacksAndMessages(cVar);
-        Handler handler = this.f16032b;
+        this.f15000b.removeCallbacksAndMessages(cVar);
+        Handler handler = this.f15000b;
         handler.sendMessageDelayed(Message.obtain(handler, 0, cVar), i10);
     }
 
     private void n() {
-        c cVar = this.f16034d;
+        c cVar = this.f15002d;
         if (cVar != null) {
-            this.f16033c = cVar;
-            this.f16034d = null;
-            InterfaceC0192b interfaceC0192b = (InterfaceC0192b) cVar.f16036a.get();
-            if (interfaceC0192b != null) {
-                interfaceC0192b.show();
+            this.f15001c = cVar;
+            this.f15002d = null;
+            InterfaceC0173b interfaceC0173b = (InterfaceC0173b) cVar.f15004a.get();
+            if (interfaceC0173b != null) {
+                interfaceC0173b.show();
             } else {
-                this.f16033c = null;
+                this.f15001c = null;
             }
         }
     }
 
-    public void b(InterfaceC0192b interfaceC0192b, int i10) {
-        synchronized (this.f16031a) {
+    public void b(InterfaceC0173b interfaceC0173b, int i10) {
+        synchronized (this.f14999a) {
             try {
-                if (f(interfaceC0192b)) {
-                    a(this.f16033c, i10);
-                } else if (g(interfaceC0192b)) {
-                    a(this.f16034d, i10);
+                if (f(interfaceC0173b)) {
+                    a(this.f15001c, i10);
+                } else if (g(interfaceC0173b)) {
+                    a(this.f15002d, i10);
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -156,10 +156,10 @@ class b {
     }
 
     void d(c cVar) {
-        synchronized (this.f16031a) {
+        synchronized (this.f14999a) {
             try {
-                if (this.f16033c != cVar) {
-                    if (this.f16034d == cVar) {
+                if (this.f15001c != cVar) {
+                    if (this.f15002d == cVar) {
                     }
                 }
                 a(cVar, 2);
@@ -169,11 +169,11 @@ class b {
         }
     }
 
-    public boolean e(InterfaceC0192b interfaceC0192b) {
+    public boolean e(InterfaceC0173b interfaceC0173b) {
         boolean z10;
-        synchronized (this.f16031a) {
+        synchronized (this.f14999a) {
             try {
-                if (!f(interfaceC0192b) && !g(interfaceC0192b)) {
+                if (!f(interfaceC0173b) && !g(interfaceC0173b)) {
                     z10 = false;
                 }
                 z10 = true;
@@ -183,12 +183,12 @@ class b {
         return z10;
     }
 
-    public void h(InterfaceC0192b interfaceC0192b) {
-        synchronized (this.f16031a) {
+    public void h(InterfaceC0173b interfaceC0173b) {
+        synchronized (this.f14999a) {
             try {
-                if (f(interfaceC0192b)) {
-                    this.f16033c = null;
-                    if (this.f16034d != null) {
+                if (f(interfaceC0173b)) {
+                    this.f15001c = null;
+                    if (this.f15002d != null) {
                         n();
                     }
                 }
@@ -198,11 +198,11 @@ class b {
         }
     }
 
-    public void i(InterfaceC0192b interfaceC0192b) {
-        synchronized (this.f16031a) {
+    public void i(InterfaceC0173b interfaceC0173b) {
+        synchronized (this.f14999a) {
             try {
-                if (f(interfaceC0192b)) {
-                    l(this.f16033c);
+                if (f(interfaceC0173b)) {
+                    l(this.f15001c);
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -210,14 +210,14 @@ class b {
         }
     }
 
-    public void j(InterfaceC0192b interfaceC0192b) {
-        synchronized (this.f16031a) {
+    public void j(InterfaceC0173b interfaceC0173b) {
+        synchronized (this.f14999a) {
             try {
-                if (f(interfaceC0192b)) {
-                    c cVar = this.f16033c;
-                    if (!cVar.f16038c) {
-                        cVar.f16038c = true;
-                        this.f16032b.removeCallbacksAndMessages(cVar);
+                if (f(interfaceC0173b)) {
+                    c cVar = this.f15001c;
+                    if (!cVar.f15006c) {
+                        cVar.f15006c = true;
+                        this.f15000b.removeCallbacksAndMessages(cVar);
                     }
                 }
             } catch (Throwable th2) {
@@ -226,13 +226,13 @@ class b {
         }
     }
 
-    public void k(InterfaceC0192b interfaceC0192b) {
-        synchronized (this.f16031a) {
+    public void k(InterfaceC0173b interfaceC0173b) {
+        synchronized (this.f14999a) {
             try {
-                if (f(interfaceC0192b)) {
-                    c cVar = this.f16033c;
-                    if (cVar.f16038c) {
-                        cVar.f16038c = false;
+                if (f(interfaceC0173b)) {
+                    c cVar = this.f15001c;
+                    if (cVar.f15006c) {
+                        cVar.f15006c = false;
                         l(cVar);
                     }
                 }
@@ -242,26 +242,26 @@ class b {
         }
     }
 
-    public void m(int i10, InterfaceC0192b interfaceC0192b) {
-        synchronized (this.f16031a) {
+    public void m(int i10, InterfaceC0173b interfaceC0173b) {
+        synchronized (this.f14999a) {
             try {
-                if (f(interfaceC0192b)) {
-                    c cVar = this.f16033c;
-                    cVar.f16037b = i10;
-                    this.f16032b.removeCallbacksAndMessages(cVar);
-                    l(this.f16033c);
+                if (f(interfaceC0173b)) {
+                    c cVar = this.f15001c;
+                    cVar.f15005b = i10;
+                    this.f15000b.removeCallbacksAndMessages(cVar);
+                    l(this.f15001c);
                     return;
                 }
-                if (g(interfaceC0192b)) {
-                    this.f16034d.f16037b = i10;
+                if (g(interfaceC0173b)) {
+                    this.f15002d.f15005b = i10;
                 } else {
-                    this.f16034d = new c(i10, interfaceC0192b);
+                    this.f15002d = new c(i10, interfaceC0173b);
                 }
-                c cVar2 = this.f16033c;
+                c cVar2 = this.f15001c;
                 if (cVar2 != null && a(cVar2, 4)) {
                     return;
                 }
-                this.f16033c = null;
+                this.f15001c = null;
                 n();
             } catch (Throwable th2) {
                 throw th2;

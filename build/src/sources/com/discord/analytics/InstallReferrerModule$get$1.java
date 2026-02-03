@@ -6,8 +6,8 @@ import com.android.installreferrer.api.ReferrerDetails;
 import com.discord.misc.utilities.chat_view_types.ChatViewRecyclerTypes;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
-import hs.t1;
 import java.util.concurrent.CancellationException;
+import js.t1;
 import kotlin.Metadata;
 import kotlin.Result;
 import kotlin.Unit;
@@ -20,7 +20,7 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Ref;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CoroutineScope;
-import pr.b;
+import rr.b;
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.analytics.InstallReferrerModule$get$1", f = "InstallReferrerModule.kt", l = {ChatViewRecyclerTypes.POLL_TEXT_AND_IMAGE}, m = "invokeSuspend")
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -91,7 +91,7 @@ final class InstallReferrerModule$get$1 extends k implements Function2<Coroutine
             Unit unit = null;
             try {
             } catch (Throwable th2) {
-                Result.a aVar = Result.f33071e;
+                Result.a aVar = Result.f32461e;
                 b10 = Result.b(c.a(th2));
             }
             if (i10 != 0) {
@@ -113,7 +113,7 @@ final class InstallReferrerModule$get$1 extends k implements Function2<Coroutine
                 objectRef2 = this.$referrer;
                 sharedPreferences = this.$prefs;
                 promise = this.$promise;
-                Result.a aVar2 = Result.f33071e;
+                Result.a aVar2 = Result.f32461e;
                 reactApplicationContext = installReferrerModule.getReactApplicationContext();
                 ?? build = InstallReferrerClient.newBuilder(reactApplicationContext).build();
                 objectRef.element = build;
@@ -145,7 +145,7 @@ final class InstallReferrerModule$get$1 extends k implements Function2<Coroutine
                         edit.putString("referrer", objectRef2.element);
                         edit.apply();
                         promise.resolve(objectRef2.element);
-                        b10 = Result.b(Unit.f33074a);
+                        b10 = Result.b(Unit.f32464a);
                         SharedPreferences sharedPreferences3 = this.$prefs;
                         Promise promise3 = this.$promise;
                         int i11 = this.$attempts;
@@ -164,14 +164,14 @@ final class InstallReferrerModule$get$1 extends k implements Function2<Coroutine
                             InstallReferrerClient installReferrerClient2 = this.$client.element;
                             if (installReferrerClient2 != null) {
                                 installReferrerClient2.endConnection();
-                                unit = Unit.f33074a;
+                                unit = Unit.f32464a;
                             }
                             Result.b(unit);
                         } catch (Throwable th3) {
-                            Result.a aVar3 = Result.f33071e;
+                            Result.a aVar3 = Result.f32461e;
                             Result.b(c.a(th3));
                         }
-                        return Unit.f33074a;
+                        return Unit.f32464a;
                     }
                     throw new IllegalStateException("Check failed.");
                 }
@@ -186,7 +186,7 @@ final class InstallReferrerModule$get$1 extends k implements Function2<Coroutine
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
         }
     }
 
@@ -225,11 +225,11 @@ final class InstallReferrerModule$get$1 extends k implements Function2<Coroutine
                 return f10;
             }
         }
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((InstallReferrerModule$get$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        return ((InstallReferrerModule$get$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
     }
 }

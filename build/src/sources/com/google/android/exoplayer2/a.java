@@ -6,18 +6,18 @@ import com.google.android.exoplayer2.Timeline;
 public abstract class a extends Timeline {
 
     /* renamed from: q  reason: collision with root package name */
-    private final int f12663q;
+    private final int f11631q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final qd.o0 f12664r;
+    private final qd.o0 f11632r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final boolean f12665s;
+    private final boolean f11633s;
 
     public a(boolean z10, qd.o0 o0Var) {
-        this.f12665s = z10;
-        this.f12664r = o0Var;
-        this.f12663q = o0Var.getLength();
+        this.f11633s = z10;
+        this.f11632r = o0Var;
+        this.f11631q = o0Var.getLength();
     }
 
     public static Object A(Object obj) {
@@ -30,9 +30,9 @@ public abstract class a extends Timeline {
 
     private int F(int i10, boolean z10) {
         if (z10) {
-            return this.f12664r.c(i10);
+            return this.f11632r.c(i10);
         }
-        if (i10 < this.f12663q - 1) {
+        if (i10 < this.f11631q - 1) {
             return i10 + 1;
         }
         return -1;
@@ -40,7 +40,7 @@ public abstract class a extends Timeline {
 
     private int G(int i10, boolean z10) {
         if (z10) {
-            return this.f12664r.b(i10);
+            return this.f11632r.b(i10);
         }
         if (i10 > 0) {
             return i10 - 1;
@@ -62,15 +62,15 @@ public abstract class a extends Timeline {
 
     @Override // com.google.android.exoplayer2.Timeline
     public int e(boolean z10) {
-        if (this.f12663q == 0) {
+        if (this.f11631q == 0) {
             return -1;
         }
         int i10 = 0;
-        if (this.f12665s) {
+        if (this.f11633s) {
             z10 = false;
         }
         if (z10) {
-            i10 = this.f12664r.f();
+            i10 = this.f11632r.f();
         }
         while (H(i10).u()) {
             i10 = F(i10, z10);
@@ -99,15 +99,15 @@ public abstract class a extends Timeline {
     @Override // com.google.android.exoplayer2.Timeline
     public int g(boolean z10) {
         int i10;
-        int i11 = this.f12663q;
+        int i11 = this.f11631q;
         if (i11 == 0) {
             return -1;
         }
-        if (this.f12665s) {
+        if (this.f11633s) {
             z10 = false;
         }
         if (z10) {
-            i10 = this.f12664r.d();
+            i10 = this.f11632r.d();
         } else {
             i10 = i11 - 1;
         }
@@ -123,7 +123,7 @@ public abstract class a extends Timeline {
     @Override // com.google.android.exoplayer2.Timeline
     public int i(int i10, int i11, boolean z10) {
         int i12 = 0;
-        if (this.f12665s) {
+        if (this.f11633s) {
             if (i11 == 1) {
                 i11 = 2;
             }
@@ -158,9 +158,9 @@ public abstract class a extends Timeline {
         int x10 = x(i10);
         int E = E(x10);
         H(x10).k(i10 - D(x10), bVar, z10);
-        bVar.f12625i += E;
+        bVar.f11593i += E;
         if (z10) {
-            bVar.f12624e = C(B(x10), ne.a.e(bVar.f12624e));
+            bVar.f11592e = C(B(x10), ne.a.e(bVar.f11592e));
         }
         return bVar;
     }
@@ -172,15 +172,15 @@ public abstract class a extends Timeline {
         int w10 = w(A);
         int E = E(w10);
         H(w10).l(z10, bVar);
-        bVar.f12625i += E;
-        bVar.f12624e = obj;
+        bVar.f11593i += E;
+        bVar.f11592e = obj;
         return bVar;
     }
 
     @Override // com.google.android.exoplayer2.Timeline
     public int p(int i10, int i11, boolean z10) {
         int i12 = 0;
-        if (this.f12665s) {
+        if (this.f11633s) {
             if (i11 == 1) {
                 i11 = 2;
             }
@@ -223,11 +223,11 @@ public abstract class a extends Timeline {
         int D = D(y10);
         H(y10).s(i10 - E, dVar, j10);
         Object B = B(y10);
-        if (!Timeline.d.C.equals(dVar.f12634d)) {
-            B = C(B, dVar.f12634d);
+        if (!Timeline.d.C.equals(dVar.f11602d)) {
+            B = C(B, dVar.f11602d);
         }
-        dVar.f12634d = B;
-        dVar.f12648z += D;
+        dVar.f11602d = B;
+        dVar.f11616z += D;
         dVar.A += D;
         return dVar;
     }

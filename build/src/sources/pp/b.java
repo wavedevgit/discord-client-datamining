@@ -1,28 +1,29 @@
 package pp;
 
-import uq.d;
-import uq.g;
+import kotlinx.coroutines.CoroutineDispatcher;
+import wq.d;
+import wq.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class b implements d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f46416a;
+    private final a f46622a;
 
     public b(a aVar) {
-        this.f46416a = aVar;
+        this.f46622a = aVar;
     }
 
     public static b a(a aVar) {
         return new b(aVar);
     }
 
-    public static c c(a aVar) {
-        return (c) g.d(aVar.a());
+    public static CoroutineDispatcher c(a aVar) {
+        return (CoroutineDispatcher) g.d(aVar.a());
     }
 
     @Override // javax.inject.Provider
     /* renamed from: b */
-    public c get() {
-        return c(this.f46416a);
+    public CoroutineDispatcher get() {
+        return c(this.f46622a);
     }
 }

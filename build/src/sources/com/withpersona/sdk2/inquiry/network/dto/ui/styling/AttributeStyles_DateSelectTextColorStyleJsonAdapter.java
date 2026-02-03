@@ -48,17 +48,17 @@ public final class AttributeStyles_DateSelectTextColorStyleJsonAdapter extends h
         StyleElements.ComplexElementColor complexElementColor3 = null;
         StyleElements.ComplexElementColor complexElementColor4 = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 complexElementColor = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 complexElementColor2 = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
-            } else if (t02 == 2) {
+            } else if (A0 == 2) {
                 complexElementColor3 = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
-            } else if (t02 == 3) {
+            } else if (A0 == 3) {
                 complexElementColor4 = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
             }
         }
@@ -71,13 +71,13 @@ public final class AttributeStyles_DateSelectTextColorStyleJsonAdapter extends h
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (dateSelectTextColorStyle != null) {
             writer.l();
-            writer.t0("value");
+            writer.A0("value");
             this.nullableComplexElementColorAdapter.toJson(writer, dateSelectTextColorStyle.getValue());
-            writer.t0(ReactTextInputShadowNode.PROP_PLACEHOLDER);
+            writer.A0(ReactTextInputShadowNode.PROP_PLACEHOLDER);
             this.nullableComplexElementColorAdapter.toJson(writer, dateSelectTextColorStyle.getPlaceholder());
-            writer.t0("label");
+            writer.A0("label");
             this.nullableComplexElementColorAdapter.toJson(writer, dateSelectTextColorStyle.getLabel());
-            writer.t0("error");
+            writer.A0("error");
             this.nullableComplexElementColorAdapter.toJson(writer, dateSelectTextColorStyle.getError());
             writer.E();
             return;

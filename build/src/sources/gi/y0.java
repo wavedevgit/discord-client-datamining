@@ -9,11 +9,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 public final class y0 extends u0 {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ f f27065e;
+    final /* synthetic */ f f26278e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public y0(f fVar) {
-        this.f27065e = fVar;
+        this.f26278e = fVar;
     }
 
     @Override // gi.u0
@@ -26,32 +26,32 @@ public final class y0 extends u0 {
         ServiceConnection serviceConnection;
         AtomicInteger atomicInteger2;
         t0 t0Var2;
-        obj = this.f27065e.f27026f;
+        obj = this.f26278e.f26239f;
         synchronized (obj) {
             try {
-                atomicInteger = this.f27065e.f27032l;
+                atomicInteger = this.f26278e.f26245l;
                 if (atomicInteger.get() > 0) {
-                    atomicInteger2 = this.f27065e.f27032l;
+                    atomicInteger2 = this.f26278e.f26245l;
                     if (atomicInteger2.decrementAndGet() > 0) {
-                        t0Var2 = this.f27065e.f27022b;
+                        t0Var2 = this.f26278e.f26235b;
                         t0Var2.c("Leaving the connection open for other ongoing calls.", new Object[0]);
                         return;
                     }
                 }
-                f fVar = this.f27065e;
-                iInterface = fVar.f27034n;
+                f fVar = this.f26278e;
+                iInterface = fVar.f26247n;
                 if (iInterface != null) {
-                    t0Var = fVar.f27022b;
+                    t0Var = fVar.f26235b;
                     t0Var.c("Unbind from service.", new Object[0]);
-                    f fVar2 = this.f27065e;
-                    context = fVar2.f27021a;
-                    serviceConnection = fVar2.f27033m;
+                    f fVar2 = this.f26278e;
+                    context = fVar2.f26234a;
+                    serviceConnection = fVar2.f26246m;
                     context.unbindService(serviceConnection);
-                    this.f27065e.f27027g = false;
-                    this.f27065e.f27034n = null;
-                    this.f27065e.f27033m = null;
+                    this.f26278e.f26240g = false;
+                    this.f26278e.f26247n = null;
+                    this.f26278e.f26246m = null;
                 }
-                this.f27065e.x();
+                this.f26278e.x();
             } catch (Throwable th2) {
                 throw th2;
             }

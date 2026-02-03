@@ -24,17 +24,17 @@ public class TransportRegistrar implements ComponentRegistrar {
 
     public static /* synthetic */ i a(d dVar) {
         t.f((Context) dVar.a(Context.class));
-        return t.c().g(a.f12266g);
+        return t.c().g(a.f11234g);
     }
 
     public static /* synthetic */ i b(d dVar) {
         t.f((Context) dVar.a(Context.class));
-        return t.c().g(a.f12267h);
+        return t.c().g(a.f11235h);
     }
 
     public static /* synthetic */ i c(d dVar) {
         t.f((Context) dVar.a(Context.class));
-        return t.c().g(a.f12267h);
+        return t.c().g(a.f11235h);
     }
 
     @Override // com.google.firebase.components.ComponentRegistrar

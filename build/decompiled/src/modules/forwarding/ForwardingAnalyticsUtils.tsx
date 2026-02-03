@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackForwardCancel = var3;
     var3 = function arg0() {
-        _fun70978: for (var _fun70978_ip = 0;;) switch (_fun70978_ip) {
+        _fun71088: for (var _fun71088_ip = 0;;) switch (_fun71088_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.channelId;
@@ -116,8 +116,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var7.bind(var9)(var6, var2);
                 var2 = 'message-shortcut';
                 if (!(var2 === var3)) {
-                    _fun70978_ip = 316;
-                    continue _fun70978
+                    _fun71088_ip = 316;
+                    continue _fun71088
                 }
             case 164:
                 var3 = _closure1_slot4;
@@ -143,8 +143,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var6 == var7;
                 var6 = undefined;
                 if (var11) {
-                    _fun70978_ip = 263;
-                    continue _fun70978
+                    _fun71088_ip = 263;
+                    continue _fun71088
                 }
             case 258:
                 var6 = var7.guild_id;
@@ -299,4 +299,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useTrackForwardEditContextMessageOnce = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 660, 795, 4298, 22, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 660, 795, 4302, 22, 2]);

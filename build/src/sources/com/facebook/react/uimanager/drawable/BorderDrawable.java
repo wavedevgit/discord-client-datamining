@@ -14,6 +14,7 @@ import android.graphics.RectF;
 import android.graphics.Region;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
+import as.a;
 import com.facebook.react.uimanager.FloatUtil;
 import com.facebook.react.uimanager.LengthPercentage;
 import com.facebook.react.uimanager.PixelUtil;
@@ -30,7 +31,6 @@ import com.facebook.react.uimanager.style.CornerRadii;
 import com.facebook.react.uimanager.style.LogicalEdge;
 import com.facebook.react.views.text.internal.span.SetSpanOperation;
 import java.util.Locale;
-import jr.p;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.internal.Intrinsics;
@@ -41,8 +41,8 @@ import kotlin.properties.ReadWriteProperty;
 import kotlin.properties.c;
 import kotlin.ranges.d;
 import kotlin.reflect.KProperty;
+import lr.p;
 import org.jetbrains.annotations.NotNull;
-import yr.a;
 @Metadata(d1 = {"\u0000Ä\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u001c\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0006\n\u0002\b\f\b\u0000\u0018\u00002\u00020\u0001B7\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b¢\u0006\u0004\b\f\u0010\rJ)\u0010\u0018\u001a\u0010\u0012\u0006\u0012\u0004\u0018\u00010\u001a\u0012\u0004\u0012\u0002H\u001b0\u0019\"\u0004\b\u0000\u0010\u001b2\u0006\u0010\u001c\u001a\u0002H\u001bH\u0002¢\u0006\u0002\u0010\u001dJ\b\u0010G\u001a\u00020HH\u0016J\u0010\u0010I\u001a\u00020H2\u0006\u0010J\u001a\u00020KH\u0014J\u0010\u0010L\u001a\u00020H2\u0006\u0010M\u001a\u00020-H\u0016J\u0012\u0010N\u001a\u00020H2\b\u0010O\u001a\u0004\u0018\u00010PH\u0016J\b\u0010Q\u001a\u00020-H\u0017J\u0010\u0010R\u001a\u00020H2\u0006\u0010S\u001a\u00020TH\u0016J\u0018\u0010U\u001a\u00020/2\u0006\u0010V\u001a\u00020/2\u0006\u0010\u0004\u001a\u00020/H\u0002J\u0016\u0010W\u001a\u00020H2\u0006\u0010X\u001a\u00020-2\u0006\u0010Y\u001a\u00020/J\u0018\u0010\u0012\u001a\u00020H2\u0006\u0010Z\u001a\u00020[2\b\u0010\\\u001a\u0004\u0018\u00010]J\u0010\u0010!\u001a\u00020H2\b\u0010^\u001a\u0004\u0018\u00010_J\u001d\u0010`\u001a\u00020H2\u0006\u0010X\u001a\u00020a2\b\u0010b\u001a\u0004\u0018\u00010-¢\u0006\u0002\u0010cJ\u000e\u0010d\u001a\u00020-2\u0006\u0010X\u001a\u00020aJ\u0010\u0010e\u001a\u00020H2\u0006\u0010S\u001a\u00020TH\u0002J\u0010\u0010f\u001a\u00020H2\u0006\u0010S\u001a\u00020TH\u0002JH\u0010g\u001a\u00020-2\u0006\u0010h\u001a\u00020-2\u0006\u0010i\u001a\u00020-2\u0006\u0010j\u001a\u00020-2\u0006\u0010k\u001a\u00020-2\u0006\u0010l\u001a\u00020-2\u0006\u0010m\u001a\u00020-2\u0006\u0010n\u001a\u00020-2\u0006\u0010o\u001a\u00020-H\u0002JX\u0010p\u001a\u00020H2\u0006\u0010S\u001a\u00020T2\u0006\u0010q\u001a\u00020-2\u0006\u0010r\u001a\u00020/2\u0006\u0010s\u001a\u00020/2\u0006\u0010t\u001a\u00020/2\u0006\u0010u\u001a\u00020/2\u0006\u0010v\u001a\u00020/2\u0006\u0010w\u001a\u00020/2\u0006\u0010x\u001a\u00020/2\u0006\u0010y\u001a\u00020/H\u0002J\b\u0010z\u001a\u00020DH\u0002J\b\u0010{\u001a\u00020/H\u0002J\b\u0010|\u001a\u00020HH\u0002J\u0010\u0010|\u001a\u00020H2\u0006\u0010\u0004\u001a\u00020-H\u0002J\u001a\u0010}\u001a\u0004\u0018\u00010~2\u0006\u0010^\u001a\u00020\u000b2\u0006\u0010\u0004\u001a\u00020/H\u0002Ja\u0010\u007f\u001a\u00020H2\b\u0010\u0080\u0001\u001a\u00030\u0081\u00012\b\u0010\u0082\u0001\u001a\u00030\u0081\u00012\b\u0010\u0083\u0001\u001a\u00030\u0081\u00012\b\u0010\u0084\u0001\u001a\u00030\u0081\u00012\b\u0010\u0085\u0001\u001a\u00030\u0081\u00012\b\u0010\u0086\u0001\u001a\u00030\u0081\u00012\b\u0010\u0087\u0001\u001a\u00030\u0081\u00012\b\u0010\u0088\u0001\u001a\u00030\u0081\u00012\u0007\u0010\u0089\u0001\u001a\u00020?H\u0002J\t\u0010\u008a\u0001\u001a\u00020HH\u0002J\u001a\u0010\u008b\u0001\u001a\u00020-2\u0006\u0010b\u001a\u00020-2\u0007\u0010\u008c\u0001\u001a\u00020-H\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u001c\u0010\u0006\u001a\u0004\u0018\u00010\u0007X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0010\u0010\u0011\"\u0004\b\u0012\u0010\u0013R\u001c\u0010\b\u001a\u0004\u0018\u00010\tX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0014\u0010\u0015\"\u0004\b\u0016\u0010\u0017R/\u0010\n\u001a\u0004\u0018\u00010\u000b2\b\u0010\u001e\u001a\u0004\u0018\u00010\u000b8F@FX\u0086\u008e\u0002¢\u0006\u0012\n\u0004\b#\u0010$\u001a\u0004\b\u001f\u0010 \"\u0004\b!\u0010\"R\u0012\u0010%\u001a\u0004\u0018\u00010&X\u0082\u000e¢\u0006\u0004\n\u0002\u0010'R\u000e\u0010(\u001a\u00020)X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010*\u001a\u0004\u0018\u00010+X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010,\u001a\u00020-X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010.\u001a\u00020/X\u0082D¢\u0006\u0002\n\u0000R\u0010\u00100\u001a\u0004\u0018\u000101X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u00102\u001a\u000203X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u00104\u001a\u000205X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u00106\u001a\u0004\u0018\u000101X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u00107\u001a\u0004\u0018\u000101X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u00108\u001a\u0004\u0018\u000101X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u00109\u001a\u0004\u0018\u000101X\u0082\u000e¢\u0006\u0002\n\u0000R\"\u0010;\u001a\u0004\u0018\u0001012\b\u0010:\u001a\u0004\u0018\u000101@BX\u0086\u000e¢\u0006\b\n\u0000\u001a\u0004\b<\u0010=R\u0010\u0010>\u001a\u0004\u0018\u00010?X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010@\u001a\u0004\u0018\u00010?X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010A\u001a\u0004\u0018\u00010?X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010B\u001a\u0004\u0018\u00010?X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010C\u001a\u0004\u0018\u00010DX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010E\u001a\u0004\u0018\u00010DX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010F\u001a\u0004\u0018\u00010DX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u008d\u0001"}, d2 = {"Lcom/facebook/react/uimanager/drawable/BorderDrawable;", "Landroid/graphics/drawable/Drawable;", "context", "Landroid/content/Context;", ViewProps.BORDER_WIDTH, "Lcom/facebook/react/uimanager/Spacing;", "borderRadius", "Lcom/facebook/react/uimanager/style/BorderRadiusStyle;", "borderInsets", "Lcom/facebook/react/uimanager/style/BorderInsets;", "borderStyle", "Lcom/facebook/react/uimanager/style/BorderStyle;", "<init>", "(Landroid/content/Context;Lcom/facebook/react/uimanager/Spacing;Lcom/facebook/react/uimanager/style/BorderRadiusStyle;Lcom/facebook/react/uimanager/style/BorderInsets;Lcom/facebook/react/uimanager/style/BorderStyle;)V", "getBorderWidth", "()Lcom/facebook/react/uimanager/Spacing;", "getBorderRadius", "()Lcom/facebook/react/uimanager/style/BorderRadiusStyle;", "setBorderRadius", "(Lcom/facebook/react/uimanager/style/BorderRadiusStyle;)V", "getBorderInsets", "()Lcom/facebook/react/uimanager/style/BorderInsets;", "setBorderInsets", "(Lcom/facebook/react/uimanager/style/BorderInsets;)V", "invalidatingAndPathChange", "Lkotlin/properties/ReadWriteProperty;", "", "T", "initialValue", "(Ljava/lang/Object;)Lkotlin/properties/ReadWriteProperty;", "<set-?>", "getBorderStyle", "()Lcom/facebook/react/uimanager/style/BorderStyle;", "setBorderStyle", "(Lcom/facebook/react/uimanager/style/BorderStyle;)V", "borderStyle$delegate", "Lkotlin/properties/ReadWriteProperty;", "borderColors", "Lcom/facebook/react/uimanager/style/BorderColors;", "[Ljava/lang/Integer;", "computedBorderColors", "Lcom/facebook/react/uimanager/style/ColorEdges;", "computedBorderRadius", "Lcom/facebook/react/uimanager/style/ComputedBorderRadius;", "borderAlpha", "", "gapBetweenPaths", "", "pathForBorder", "Landroid/graphics/Path;", "borderPaint", "Landroid/graphics/Paint;", "needUpdatePath", "", "pathForSingleBorder", "pathForOutline", "centerDrawPath", "outerClipPathForBorderRadius", "value", "innerClipPathForBorderRadius", "getInnerClipPathForBorderRadius", "()Landroid/graphics/Path;", "innerBottomLeftCorner", "Landroid/graphics/PointF;", "innerBottomRightCorner", "innerTopLeftCorner", "innerTopRightCorner", "innerClipTempRectForBorderRadius", "Landroid/graphics/RectF;", "outerClipTempRectForBorderRadius", "tempRectForCenterDrawPath", "invalidateSelf", "", "onBoundsChange", "bounds", "Landroid/graphics/Rect;", "setAlpha", "alpha", "setColorFilter", "colorFilter", "Landroid/graphics/ColorFilter;", "getOpacity", "draw", "canvas", "Landroid/graphics/Canvas;", "getInnerBorderRadius", "computedRadius", "setBorderWidth", ViewProps.POSITION, "width", "property", "Lcom/facebook/react/uimanager/style/BorderRadiusProp;", "radius", "Lcom/facebook/react/uimanager/LengthPercentage;", "style", "", "setBorderColor", "Lcom/facebook/react/uimanager/style/LogicalEdge;", ViewProps.COLOR, "(Lcom/facebook/react/uimanager/style/LogicalEdge;Ljava/lang/Integer;)V", "getBorderColor", "drawRectangularBorders", "drawRoundedBorders", "fastBorderCompatibleColorOrZero", "borderLeft", "borderTop", "borderRight", "borderBottom", "colorLeft", "colorTop", "colorRight", "colorBottom", "drawQuadrilateral", "fillColor", "x1", "y1", "x2", "y2", "x3", "y3", "x4", "y4", "computeBorderInsets", "getFullBorderWidth", "updatePathEffect", "getPathEffect", "Landroid/graphics/PathEffect;", "getEllipseIntersectionWithLine", "ellipseBoundsLeft", "", "ellipseBoundsTop", "ellipseBoundsRight", "ellipseBoundsBottom", "lineStartX", "lineStartY", "lineEndX", "lineEndY", "result", "updatePath", "multiplyColorAlpha", "rawAlpha", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nBorderDrawable.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BorderDrawable.kt\ncom/facebook/react/uimanager/drawable/BorderDrawable\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1075:1\n1#2:1076\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -656,27 +656,27 @@ public final class BorderDrawable extends Drawable {
             Path path6 = this.innerClipPathForBorderRadius;
             if (path6 != null) {
                 path6.reset();
-                Unit unit = Unit.f33074a;
+                Unit unit = Unit.f32464a;
             }
             Path path7 = this.outerClipPathForBorderRadius;
             if (path7 != null) {
                 path7.reset();
-                Unit unit2 = Unit.f33074a;
+                Unit unit2 = Unit.f32464a;
             }
             RectF rectF5 = this.innerClipTempRectForBorderRadius;
             if (rectF5 != null) {
                 rectF5.set(getBounds());
-                Unit unit3 = Unit.f33074a;
+                Unit unit3 = Unit.f32464a;
             }
             RectF rectF6 = this.outerClipTempRectForBorderRadius;
             if (rectF6 != null) {
                 rectF6.set(getBounds());
-                Unit unit4 = Unit.f33074a;
+                Unit unit4 = Unit.f32464a;
             }
             RectF rectF7 = this.tempRectForCenterDrawPath;
             if (rectF7 != null) {
                 rectF7.set(getBounds());
-                Unit unit5 = Unit.f33074a;
+                Unit unit5 = Unit.f32464a;
             }
             RectF computeBorderInsets = computeBorderInsets();
             if (Color.alpha(this.computedBorderColors.getLeft()) != 0 || Color.alpha(this.computedBorderColors.getTop()) != 0 || Color.alpha(this.computedBorderColors.getRight()) != 0 || Color.alpha(this.computedBorderColors.getBottom()) != 0) {
@@ -688,7 +688,7 @@ public final class BorderDrawable extends Drawable {
                         f13 = 0.0f;
                     }
                     rectF8.top = f13;
-                    Unit unit6 = Unit.f33074a;
+                    Unit unit6 = Unit.f32464a;
                 }
                 if (rectF8 != null) {
                     if (rectF8 != null) {
@@ -697,7 +697,7 @@ public final class BorderDrawable extends Drawable {
                         f12 = 0.0f;
                     }
                     rectF8.bottom = f12;
-                    Unit unit7 = Unit.f33074a;
+                    Unit unit7 = Unit.f32464a;
                 }
                 if (rectF8 != null) {
                     if (rectF8 != null) {
@@ -706,7 +706,7 @@ public final class BorderDrawable extends Drawable {
                         f11 = 0.0f;
                     }
                     rectF8.left = f11;
-                    Unit unit8 = Unit.f33074a;
+                    Unit unit8 = Unit.f32464a;
                 }
                 if (rectF8 != null) {
                     if (rectF8 != null) {
@@ -715,7 +715,7 @@ public final class BorderDrawable extends Drawable {
                         f10 = 0.0f;
                     }
                     rectF8.right = f10;
-                    Unit unit9 = Unit.f33074a;
+                    Unit unit9 = Unit.f32464a;
                 }
             }
             RectF rectF9 = this.tempRectForCenterDrawPath;
@@ -726,7 +726,7 @@ public final class BorderDrawable extends Drawable {
                     f20 = 0.0f;
                 }
                 rectF9.top = f20;
-                Unit unit10 = Unit.f33074a;
+                Unit unit10 = Unit.f32464a;
             }
             if (rectF9 != null) {
                 if (rectF9 != null) {
@@ -735,7 +735,7 @@ public final class BorderDrawable extends Drawable {
                     f19 = 0.0f;
                 }
                 rectF9.bottom = f19;
-                Unit unit11 = Unit.f33074a;
+                Unit unit11 = Unit.f32464a;
             }
             if (rectF9 != null) {
                 if (rectF9 != null) {
@@ -744,7 +744,7 @@ public final class BorderDrawable extends Drawable {
                     f18 = 0.0f;
                 }
                 rectF9.left = f18;
-                Unit unit12 = Unit.f33074a;
+                Unit unit12 = Unit.f32464a;
             }
             if (rectF9 != null) {
                 if (rectF9 != null) {
@@ -753,7 +753,7 @@ public final class BorderDrawable extends Drawable {
                     f17 = 0.0f;
                 }
                 rectF9.right = f17;
-                Unit unit13 = Unit.f33074a;
+                Unit unit13 = Unit.f32464a;
             }
             BorderRadiusStyle borderRadiusStyle = this.borderRadius;
             if (borderRadiusStyle != null) {
@@ -804,7 +804,7 @@ public final class BorderDrawable extends Drawable {
                 c11 = 7;
                 c10 = 6;
                 path3.addRoundRect(rectF12, new float[]{innerBorderRadius, innerBorderRadius2, innerBorderRadius3, innerBorderRadius4, innerBorderRadius5, innerBorderRadius6, innerBorderRadius7, innerBorderRadius8}, Path.Direction.CW);
-                Unit unit14 = Unit.f33074a;
+                Unit unit14 = Unit.f32464a;
             } else {
                 c10 = 6;
                 c11 = 7;
@@ -830,7 +830,7 @@ public final class BorderDrawable extends Drawable {
                 fArr[c10] = horizontal4;
                 fArr[c11] = vertical4;
                 path2.addRoundRect(rectF13, fArr, Path.Direction.CW);
-                Unit unit15 = Unit.f33074a;
+                Unit unit15 = Unit.f32464a;
             } else {
                 c12 = 5;
             }
@@ -861,7 +861,7 @@ public final class BorderDrawable extends Drawable {
                 fArr2[c10] = horizontal8;
                 fArr2[c11] = vertical8;
                 path8.addRoundRect(rectF14, fArr2, Path.Direction.CW);
-                Unit unit16 = Unit.f33074a;
+                Unit unit16 = Unit.f32464a;
             }
             ComputedBorderRadius computedBorderRadius5 = this.computedBorderRadius;
             if (computedBorderRadius5 == null || !computedBorderRadius5.isUniform()) {
@@ -871,7 +871,7 @@ public final class BorderDrawable extends Drawable {
                 }
                 this.centerDrawPath = path9;
                 path9.reset();
-                Unit unit17 = Unit.f33074a;
+                Unit unit17 = Unit.f32464a;
                 RectF rectF15 = this.tempRectForCenterDrawPath;
                 if (rectF15 != null && (path = this.centerDrawPath) != null) {
                     float horizontal9 = cornerRadii.getHorizontal() - (computeBorderInsets.left * 0.5f);
@@ -893,7 +893,7 @@ public final class BorderDrawable extends Drawable {
                     fArr3[c10] = horizontal12;
                     fArr3[c11] = vertical12;
                     path.addRoundRect(rectF15, fArr3, Path.Direction.CW);
-                    Unit unit18 = Unit.f33074a;
+                    Unit unit18 = Unit.f32464a;
                     rectF = this.innerClipTempRectForBorderRadius;
                     RectF rectF16 = this.outerClipTempRectForBorderRadius;
                     if (rectF == null && rectF16 != null) {
@@ -903,56 +903,56 @@ public final class BorderDrawable extends Drawable {
                         }
                         this.innerTopLeftCorner = pointF;
                         pointF.x = rectF.left;
-                        Unit unit19 = Unit.f33074a;
+                        Unit unit19 = Unit.f32464a;
                         pointF.y = rectF.top;
-                        Unit unit20 = Unit.f33074a;
+                        Unit unit20 = Unit.f32464a;
                         float f21 = rectF.left;
                         float f22 = rectF.top;
                         float f23 = i10;
                         getEllipseIntersectionWithLine(f21, f22, (innerBorderRadius * f23) + f21, (f23 * innerBorderRadius2) + f22, rectF16.left, rectF16.top, f21, f22, pointF);
-                        Unit unit21 = Unit.f33074a;
+                        Unit unit21 = Unit.f32464a;
                         PointF pointF2 = this.innerBottomLeftCorner;
                         if (pointF2 == null) {
                             pointF2 = new PointF();
                         }
                         this.innerBottomLeftCorner = pointF2;
                         pointF2.x = rectF.left;
-                        Unit unit22 = Unit.f33074a;
+                        Unit unit22 = Unit.f32464a;
                         pointF2.y = rectF.bottom;
-                        Unit unit23 = Unit.f33074a;
+                        Unit unit23 = Unit.f32464a;
                         float f24 = rectF.left;
                         float f25 = rectF.bottom;
                         float f26 = 2;
                         getEllipseIntersectionWithLine(f24, f25 - (innerBorderRadius8 * f26), (f26 * innerBorderRadius7) + f24, f25, rectF16.left, rectF16.bottom, f24, f25, pointF2);
-                        Unit unit24 = Unit.f33074a;
+                        Unit unit24 = Unit.f32464a;
                         PointF pointF3 = this.innerTopRightCorner;
                         if (pointF3 == null) {
                             pointF3 = new PointF();
                         }
                         this.innerTopRightCorner = pointF3;
                         pointF3.x = rectF.right;
-                        Unit unit25 = Unit.f33074a;
+                        Unit unit25 = Unit.f32464a;
                         pointF3.y = rectF.top;
-                        Unit unit26 = Unit.f33074a;
+                        Unit unit26 = Unit.f32464a;
                         float f27 = rectF.right;
                         float f28 = 2;
                         float f29 = rectF.top;
                         getEllipseIntersectionWithLine(f27 - (innerBorderRadius3 * f28), f29, f27, (f28 * innerBorderRadius4) + f29, rectF16.right, rectF16.top, f27, f29, pointF3);
-                        Unit unit27 = Unit.f33074a;
+                        Unit unit27 = Unit.f32464a;
                         PointF pointF4 = this.innerBottomRightCorner;
                         if (pointF4 == null) {
                             pointF4 = new PointF();
                         }
                         this.innerBottomRightCorner = pointF4;
                         pointF4.x = rectF.right;
-                        Unit unit28 = Unit.f33074a;
+                        Unit unit28 = Unit.f32464a;
                         pointF4.y = rectF.bottom;
-                        Unit unit29 = Unit.f33074a;
+                        Unit unit29 = Unit.f32464a;
                         float f30 = rectF.right;
                         float f31 = 2;
                         float f32 = rectF.bottom;
                         getEllipseIntersectionWithLine(f30 - (innerBorderRadius5 * f31), f32 - (f31 * innerBorderRadius6), f30, f32, rectF16.right, rectF16.bottom, f30, f32, pointF4);
-                        Unit unit30 = Unit.f33074a;
+                        Unit unit30 = Unit.f32464a;
                         return;
                     }
                 }
@@ -978,7 +978,7 @@ public final class BorderDrawable extends Drawable {
         Intrinsics.checkNotNullParameter(canvas, "canvas");
         updatePathEffect();
         Integer[] numArr = this.borderColors;
-        if (numArr == null || (colorEdges = BorderColors.m1169resolveimpl(numArr, getLayoutDirection(), this.context)) == null) {
+        if (numArr == null || (colorEdges = BorderColors.m1168resolveimpl(numArr, getLayoutDirection(), this.context)) == null) {
             colorEdges = this.computedBorderColors;
         }
         this.computedBorderColors = colorEdges;
@@ -1021,12 +1021,12 @@ public final class BorderDrawable extends Drawable {
     }
 
     @Override // android.graphics.drawable.Drawable
-    @jr.c
+    @lr.c
     public int getOpacity() {
-        if (mr.a.h(Color.alpha(multiplyColorAlpha(this.computedBorderColors.getLeft(), this.borderAlpha)), Color.alpha(multiplyColorAlpha(this.computedBorderColors.getTop(), this.borderAlpha)), Color.alpha(multiplyColorAlpha(this.computedBorderColors.getRight(), this.borderAlpha)), Color.alpha(multiplyColorAlpha(this.computedBorderColors.getBottom(), this.borderAlpha))) == 0) {
+        if (or.a.h(Color.alpha(multiplyColorAlpha(this.computedBorderColors.getLeft(), this.borderAlpha)), Color.alpha(multiplyColorAlpha(this.computedBorderColors.getTop(), this.borderAlpha)), Color.alpha(multiplyColorAlpha(this.computedBorderColors.getRight(), this.borderAlpha)), Color.alpha(multiplyColorAlpha(this.computedBorderColors.getBottom(), this.borderAlpha))) == 0) {
             return -2;
         }
-        if (mr.a.i(Color.alpha(multiplyColorAlpha(this.computedBorderColors.getLeft(), this.borderAlpha)), Color.alpha(multiplyColorAlpha(this.computedBorderColors.getTop(), this.borderAlpha)), Color.alpha(multiplyColorAlpha(this.computedBorderColors.getRight(), this.borderAlpha)), Color.alpha(multiplyColorAlpha(this.computedBorderColors.getBottom(), this.borderAlpha))) == 255) {
+        if (or.a.i(Color.alpha(multiplyColorAlpha(this.computedBorderColors.getLeft(), this.borderAlpha)), Color.alpha(multiplyColorAlpha(this.computedBorderColors.getTop(), this.borderAlpha)), Color.alpha(multiplyColorAlpha(this.computedBorderColors.getRight(), this.borderAlpha)), Color.alpha(multiplyColorAlpha(this.computedBorderColors.getBottom(), this.borderAlpha))) == 255) {
             return -1;
         }
         return -3;
@@ -1055,7 +1055,7 @@ public final class BorderDrawable extends Drawable {
         Intrinsics.checkNotNullParameter(position, "position");
         Integer[] numArr = this.borderColors;
         if (numArr == null) {
-            numArr = BorderColors.m1165constructorimpl$default(null, 1, null);
+            numArr = BorderColors.m1164constructorimpl$default(null, 1, null);
         }
         this.borderColors = numArr;
         if (numArr != null) {

@@ -11,40 +11,40 @@ import java.util.Queue;
 public final class e extends AbstractCollection implements Queue, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    private transient Object[] f29512d;
+    private transient Object[] f29873d;
 
     /* renamed from: e  reason: collision with root package name */
-    private transient int f29513e = 0;
+    private transient int f29874e = 0;
 
     /* renamed from: i  reason: collision with root package name */
-    private transient int f29514i = 0;
+    private transient int f29875i = 0;
 
     /* renamed from: o  reason: collision with root package name */
-    private transient boolean f29515o = false;
+    private transient boolean f29876o = false;
 
     /* renamed from: p  reason: collision with root package name */
-    private final int f29516p;
+    private final int f29877p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements Iterator {
 
         /* renamed from: d  reason: collision with root package name */
-        private int f29517d;
+        private int f29878d;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f29518e = -1;
+        private int f29879e = -1;
 
         /* renamed from: i  reason: collision with root package name */
-        private boolean f29519i;
+        private boolean f29880i;
 
         a() {
-            this.f29517d = e.this.f29513e;
-            this.f29519i = e.this.f29515o;
+            this.f29878d = e.this.f29874e;
+            this.f29880i = e.this.f29876o;
         }
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            if (!this.f29519i && this.f29517d == e.this.f29514i) {
+            if (!this.f29880i && this.f29878d == e.this.f29875i) {
                 return false;
             }
             return true;
@@ -53,44 +53,44 @@ public final class e extends AbstractCollection implements Queue, Serializable {
         @Override // java.util.Iterator
         public Object next() {
             if (hasNext()) {
-                this.f29519i = false;
-                int i10 = this.f29517d;
-                this.f29518e = i10;
-                this.f29517d = e.this.m(i10);
-                return e.this.f29512d[this.f29518e];
+                this.f29880i = false;
+                int i10 = this.f29878d;
+                this.f29879e = i10;
+                this.f29878d = e.this.m(i10);
+                return e.this.f29873d[this.f29879e];
             }
             throw new NoSuchElementException();
         }
 
         @Override // java.util.Iterator
         public void remove() {
-            int i10 = this.f29518e;
+            int i10 = this.f29879e;
             if (i10 != -1) {
-                if (i10 == e.this.f29513e) {
+                if (i10 == e.this.f29874e) {
                     e.this.remove();
-                    this.f29518e = -1;
+                    this.f29879e = -1;
                     return;
                 }
-                int i11 = this.f29518e + 1;
-                if (e.this.f29513e < this.f29518e && i11 < e.this.f29514i) {
-                    System.arraycopy(e.this.f29512d, i11, e.this.f29512d, this.f29518e, e.this.f29514i - i11);
+                int i11 = this.f29879e + 1;
+                if (e.this.f29874e < this.f29879e && i11 < e.this.f29875i) {
+                    System.arraycopy(e.this.f29873d, i11, e.this.f29873d, this.f29879e, e.this.f29875i - i11);
                 } else {
-                    while (i11 != e.this.f29514i) {
-                        if (i11 >= e.this.f29516p) {
-                            e.this.f29512d[i11 - 1] = e.this.f29512d[0];
+                    while (i11 != e.this.f29875i) {
+                        if (i11 >= e.this.f29877p) {
+                            e.this.f29873d[i11 - 1] = e.this.f29873d[0];
                             i11 = 0;
                         } else {
-                            e.this.f29512d[e.this.k(i11)] = e.this.f29512d[i11];
+                            e.this.f29873d[e.this.k(i11)] = e.this.f29873d[i11];
                             i11 = e.this.m(i11);
                         }
                     }
                 }
-                this.f29518e = -1;
+                this.f29879e = -1;
                 e eVar = e.this;
-                eVar.f29514i = eVar.k(eVar.f29514i);
-                e.this.f29512d[e.this.f29514i] = null;
-                e.this.f29515o = false;
-                this.f29517d = e.this.k(this.f29517d);
+                eVar.f29875i = eVar.k(eVar.f29875i);
+                e.this.f29873d[e.this.f29875i] = null;
+                e.this.f29876o = false;
+                this.f29878d = e.this.k(this.f29878d);
                 return;
             }
             throw new IllegalStateException();
@@ -101,8 +101,8 @@ public final class e extends AbstractCollection implements Queue, Serializable {
     public e(int i10) {
         if (i10 > 0) {
             Object[] objArr = new Object[i10];
-            this.f29512d = objArr;
-            this.f29516p = objArr.length;
+            this.f29873d = objArr;
+            this.f29877p = objArr.length;
             return;
         }
         throw new IllegalArgumentException("The size must be greater than 0");
@@ -112,7 +112,7 @@ public final class e extends AbstractCollection implements Queue, Serializable {
     public int k(int i10) {
         int i11 = i10 - 1;
         if (i11 < 0) {
-            return this.f29516p - 1;
+            return this.f29877p - 1;
         }
         return i11;
     }
@@ -120,7 +120,7 @@ public final class e extends AbstractCollection implements Queue, Serializable {
     /* JADX INFO: Access modifiers changed from: private */
     public int m(int i10) {
         int i11 = i10 + 1;
-        if (i11 >= this.f29516p) {
+        if (i11 >= this.f29877p) {
             return 0;
         }
         return i11;
@@ -132,16 +132,16 @@ public final class e extends AbstractCollection implements Queue, Serializable {
             if (n()) {
                 remove();
             }
-            Object[] objArr = this.f29512d;
-            int i10 = this.f29514i;
+            Object[] objArr = this.f29873d;
+            int i10 = this.f29875i;
             int i11 = i10 + 1;
-            this.f29514i = i11;
+            this.f29875i = i11;
             objArr[i10] = obj;
-            if (i11 >= this.f29516p) {
-                this.f29514i = 0;
+            if (i11 >= this.f29877p) {
+                this.f29875i = 0;
             }
-            if (this.f29514i == this.f29513e) {
-                this.f29515o = true;
+            if (this.f29875i == this.f29874e) {
+                this.f29876o = true;
             }
             return true;
         }
@@ -150,10 +150,10 @@ public final class e extends AbstractCollection implements Queue, Serializable {
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public void clear() {
-        this.f29515o = false;
-        this.f29513e = 0;
-        this.f29514i = 0;
-        Arrays.fill(this.f29512d, (Object) null);
+        this.f29876o = false;
+        this.f29874e = 0;
+        this.f29875i = 0;
+        Arrays.fill(this.f29873d, (Object) null);
     }
 
     @Override // java.util.Queue
@@ -178,7 +178,7 @@ public final class e extends AbstractCollection implements Queue, Serializable {
     }
 
     public boolean n() {
-        if (size() == this.f29516p) {
+        if (size() == this.f29877p) {
             return true;
         }
         return false;
@@ -194,7 +194,7 @@ public final class e extends AbstractCollection implements Queue, Serializable {
         if (isEmpty()) {
             return null;
         }
-        return this.f29512d[this.f29513e];
+        return this.f29873d[this.f29874e];
     }
 
     @Override // java.util.Queue
@@ -208,17 +208,17 @@ public final class e extends AbstractCollection implements Queue, Serializable {
     @Override // java.util.Queue
     public Object remove() {
         if (!isEmpty()) {
-            Object[] objArr = this.f29512d;
-            int i10 = this.f29513e;
+            Object[] objArr = this.f29873d;
+            int i10 = this.f29874e;
             Object obj = objArr[i10];
             if (obj != null) {
                 int i11 = i10 + 1;
-                this.f29513e = i11;
+                this.f29874e = i11;
                 objArr[i10] = null;
-                if (i11 >= this.f29516p) {
-                    this.f29513e = 0;
+                if (i11 >= this.f29877p) {
+                    this.f29874e = 0;
                 }
-                this.f29515o = false;
+                this.f29876o = false;
             }
             return obj;
         }
@@ -227,14 +227,14 @@ public final class e extends AbstractCollection implements Queue, Serializable {
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public int size() {
-        int i10 = this.f29514i;
-        int i11 = this.f29513e;
+        int i10 = this.f29875i;
+        int i11 = this.f29874e;
         if (i10 < i11) {
-            return (this.f29516p - i11) + i10;
+            return (this.f29877p - i11) + i10;
         }
         if (i10 == i11) {
-            if (this.f29515o) {
-                return this.f29516p;
+            if (this.f29876o) {
+                return this.f29877p;
             }
             return 0;
         }

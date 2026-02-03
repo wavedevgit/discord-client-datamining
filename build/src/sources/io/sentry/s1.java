@@ -12,16 +12,16 @@ import java.util.TimeZone;
 public final class s1 implements e3 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final io.sentry.vendor.gson.stream.a f30281d;
+    private final io.sentry.vendor.gson.stream.a f30642d;
 
     public s1(Reader reader) {
-        this.f30281d = new io.sentry.vendor.gson.stream.a(reader);
+        this.f30642d = new io.sentry.vendor.gson.stream.a(reader);
     }
 
     @Override // io.sentry.e3
-    public Object H0(ILogger iLogger, m1 m1Var) {
-        if (this.f30281d.peek() == io.sentry.vendor.gson.stream.b.NULL) {
-            this.f30281d.L();
+    public Object G0(ILogger iLogger, m1 m1Var) {
+        if (this.f30642d.peek() == io.sentry.vendor.gson.stream.b.NULL) {
+            this.f30642d.L();
             return null;
         }
         return m1Var.a(this, iLogger);
@@ -29,8 +29,8 @@ public final class s1 implements e3 {
 
     @Override // io.sentry.e3
     public Float O1() {
-        if (this.f30281d.peek() == io.sentry.vendor.gson.stream.b.NULL) {
-            this.f30281d.L();
+        if (this.f30642d.peek() == io.sentry.vendor.gson.stream.b.NULL) {
+            this.f30642d.L();
             return null;
         }
         return Float.valueOf(nextFloat());
@@ -38,7 +38,7 @@ public final class s1 implements e3 {
 
     @Override // io.sentry.e3
     public void P() {
-        this.f30281d.P();
+        this.f30642d.P();
     }
 
     @Override // io.sentry.e3
@@ -48,12 +48,12 @@ public final class s1 implements e3 {
 
     @Override // io.sentry.e3
     public TimeZone W(ILogger iLogger) {
-        if (this.f30281d.peek() == io.sentry.vendor.gson.stream.b.NULL) {
-            this.f30281d.L();
+        if (this.f30642d.peek() == io.sentry.vendor.gson.stream.b.NULL) {
+            this.f30642d.L();
             return null;
         }
         try {
-            return DesugarTimeZone.getTimeZone(this.f30281d.f1());
+            return DesugarTimeZone.getTimeZone(this.f30642d.f1());
         } catch (Exception e10) {
             iLogger.b(SentryLevel.ERROR, "Error when deserializing TimeZone", e10);
             return null;
@@ -61,168 +61,177 @@ public final class s1 implements e3 {
     }
 
     public boolean a() {
-        return this.f30281d.E();
+        return this.f30642d.E();
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f30281d.close();
+        this.f30642d.close();
     }
 
     @Override // io.sentry.e3
     public String f1() {
-        return this.f30281d.f1();
+        return this.f30642d.f1();
     }
 
     @Override // io.sentry.e3
     public List g2(ILogger iLogger, m1 m1Var) {
-        if (this.f30281d.peek() == io.sentry.vendor.gson.stream.b.NULL) {
-            this.f30281d.L();
+        if (this.f30642d.peek() == io.sentry.vendor.gson.stream.b.NULL) {
+            this.f30642d.L();
             return null;
         }
-        this.f30281d.u();
+        this.f30642d.u();
         ArrayList arrayList = new ArrayList();
-        if (this.f30281d.hasNext()) {
+        if (this.f30642d.hasNext()) {
             do {
                 try {
                     arrayList.add(m1Var.a(this, iLogger));
                 } catch (Exception e10) {
                     iLogger.b(SentryLevel.WARNING, "Failed to deserialize object in list.", e10);
                 }
-            } while (this.f30281d.peek() == io.sentry.vendor.gson.stream.b.BEGIN_OBJECT);
-            this.f30281d.s();
+            } while (this.f30642d.peek() == io.sentry.vendor.gson.stream.b.BEGIN_OBJECT);
+            this.f30642d.s();
             return arrayList;
         }
-        this.f30281d.s();
+        this.f30642d.s();
         return arrayList;
     }
 
     public void h() {
-        this.f30281d.L();
+        this.f30642d.L();
     }
 
     @Override // io.sentry.e3
     public boolean hasNext() {
-        return this.f30281d.hasNext();
+        return this.f30642d.hasNext();
+    }
+
+    @Override // io.sentry.e3
+    public Double k0() {
+        if (this.f30642d.peek() == io.sentry.vendor.gson.stream.b.NULL) {
+            this.f30642d.L();
+            return null;
+        }
+        return Double.valueOf(this.f30642d.nextDouble());
     }
 
     @Override // io.sentry.e3
     public Integer k1() {
-        if (this.f30281d.peek() == io.sentry.vendor.gson.stream.b.NULL) {
-            this.f30281d.L();
+        if (this.f30642d.peek() == io.sentry.vendor.gson.stream.b.NULL) {
+            this.f30642d.L();
             return null;
         }
-        return Integer.valueOf(this.f30281d.nextInt());
+        return Integer.valueOf(this.f30642d.nextInt());
     }
 
     @Override // io.sentry.e3
-    public Double l0() {
-        if (this.f30281d.peek() == io.sentry.vendor.gson.stream.b.NULL) {
-            this.f30281d.L();
-            return null;
-        }
-        return Double.valueOf(this.f30281d.nextDouble());
-    }
-
-    @Override // io.sentry.e3
-    public String m0() {
-        return this.f30281d.m0();
+    public String l0() {
+        return this.f30642d.l0();
     }
 
     @Override // io.sentry.e3
     public Long m1() {
-        if (this.f30281d.peek() == io.sentry.vendor.gson.stream.b.NULL) {
-            this.f30281d.L();
+        if (this.f30642d.peek() == io.sentry.vendor.gson.stream.b.NULL) {
+            this.f30642d.L();
             return null;
         }
-        return Long.valueOf(this.f30281d.nextLong());
+        return Long.valueOf(this.f30642d.nextLong());
     }
 
     @Override // io.sentry.e3
     public double nextDouble() {
-        return this.f30281d.nextDouble();
+        return this.f30642d.nextDouble();
     }
 
     @Override // io.sentry.e3
     public float nextFloat() {
-        return (float) this.f30281d.nextDouble();
+        return (float) this.f30642d.nextDouble();
     }
 
     @Override // io.sentry.e3
     public int nextInt() {
-        return this.f30281d.nextInt();
+        return this.f30642d.nextInt();
     }
 
     @Override // io.sentry.e3
     public long nextLong() {
-        return this.f30281d.nextLong();
+        return this.f30642d.nextLong();
     }
 
     @Override // io.sentry.e3
     public io.sentry.vendor.gson.stream.b peek() {
-        return this.f30281d.peek();
+        return this.f30642d.peek();
     }
 
     @Override // io.sentry.e3
     public void r() {
-        this.f30281d.r();
+        this.f30642d.r();
+    }
+
+    @Override // io.sentry.e3
+    public Date r0(ILogger iLogger) {
+        if (this.f30642d.peek() == io.sentry.vendor.gson.stream.b.NULL) {
+            this.f30642d.L();
+            return null;
+        }
+        return e3.P0(this.f30642d.f1(), iLogger);
     }
 
     @Override // io.sentry.e3
     public String r1() {
-        if (this.f30281d.peek() == io.sentry.vendor.gson.stream.b.NULL) {
-            this.f30281d.L();
+        if (this.f30642d.peek() == io.sentry.vendor.gson.stream.b.NULL) {
+            this.f30642d.L();
             return null;
         }
-        return this.f30281d.f1();
+        return this.f30642d.f1();
     }
 
     @Override // io.sentry.e3
     public void s() {
-        this.f30281d.s();
-    }
-
-    @Override // io.sentry.e3
-    public Date s0(ILogger iLogger) {
-        if (this.f30281d.peek() == io.sentry.vendor.gson.stream.b.NULL) {
-            this.f30281d.L();
-            return null;
-        }
-        return e3.R0(this.f30281d.f1(), iLogger);
+        this.f30642d.s();
     }
 
     @Override // io.sentry.e3
     public void u() {
-        this.f30281d.u();
+        this.f30642d.u();
     }
 
     @Override // io.sentry.e3
     public Map u1(ILogger iLogger, m1 m1Var) {
-        if (this.f30281d.peek() == io.sentry.vendor.gson.stream.b.NULL) {
-            this.f30281d.L();
+        if (this.f30642d.peek() == io.sentry.vendor.gson.stream.b.NULL) {
+            this.f30642d.L();
             return null;
         }
-        this.f30281d.r();
+        this.f30642d.r();
         HashMap hashMap = new HashMap();
-        if (this.f30281d.hasNext()) {
+        if (this.f30642d.hasNext()) {
             while (true) {
                 try {
-                    hashMap.put(this.f30281d.m0(), m1Var.a(this, iLogger));
+                    hashMap.put(this.f30642d.l0(), m1Var.a(this, iLogger));
                 } catch (Exception e10) {
                     iLogger.b(SentryLevel.WARNING, "Failed to deserialize object in map.", e10);
                 }
-                if (this.f30281d.peek() != io.sentry.vendor.gson.stream.b.BEGIN_OBJECT && this.f30281d.peek() != io.sentry.vendor.gson.stream.b.NAME) {
+                if (this.f30642d.peek() != io.sentry.vendor.gson.stream.b.BEGIN_OBJECT && this.f30642d.peek() != io.sentry.vendor.gson.stream.b.NAME) {
                     break;
                 }
             }
         }
-        this.f30281d.y();
+        this.f30642d.y();
         return hashMap;
     }
 
     @Override // io.sentry.e3
     public void v(boolean z10) {
-        this.f30281d.v(z10);
+        this.f30642d.v(z10);
+    }
+
+    @Override // io.sentry.e3
+    public Boolean v0() {
+        if (this.f30642d.peek() == io.sentry.vendor.gson.stream.b.NULL) {
+            this.f30642d.L();
+            return null;
+        }
+        return Boolean.valueOf(this.f30642d.E());
     }
 
     @Override // io.sentry.e3
@@ -235,16 +244,7 @@ public final class s1 implements e3 {
     }
 
     @Override // io.sentry.e3
-    public Boolean x0() {
-        if (this.f30281d.peek() == io.sentry.vendor.gson.stream.b.NULL) {
-            this.f30281d.L();
-            return null;
-        }
-        return Boolean.valueOf(this.f30281d.E());
-    }
-
-    @Override // io.sentry.e3
     public void y() {
-        this.f30281d.y();
+        this.f30642d.y();
     }
 }

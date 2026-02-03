@@ -91,15 +91,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/display_name_styles/getDisplayNameStylesFontName.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun80262: for (var _fun80262_ip = 0;;) switch (_fun80262_ip) {
+        _fun80372: for (var _fun80372_ip = 0;;) switch (_fun80372_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var0 = arg0;
                 var0 = var2[var0];
                 var2 = null;
                 if (!(var2 == var0)) {
-                    _fun80262_ip = 48;
-                    continue _fun80262
+                    _fun80372_ip = 48;
+                    continue _fun80372
                 }
             case 20:
                 var3 = _closure1_slot0;
@@ -116,4 +116,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.DISPLAY_NAME_STYLES_FONT_NAMES = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1626, 2171, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1634, 2180, 2]);

@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import bt.n2;
 import com.discord.chat.databinding.MessageFrameFeedHeaderBinding;
 import com.discord.chat.presentation.message.MessageFrameFeedHeaderView;
 import com.discord.fonts.DiscordFont;
@@ -21,6 +20,7 @@ import com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchUtilsKt
 import com.discord.theme.ThemeManagerKt;
 import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.drawee.view.SimpleDraweeView;
+import dt.n2;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.Lazy;
@@ -42,7 +42,7 @@ public final class MessageFrameFeedHeaderView extends ConstraintLayout {
     @NotNull
     private final MessageFrameFeedHeaderBinding binding;
 
-    @ys.m
+    @at.m
     @Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 )2\u00020\u0001:\u0002()BI\u0012\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\u001c\b\u0002\u0010\u0005\u001a\u0016\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u0006j\n\u0012\u0004\u0012\u00020\u0003\u0018\u0001`\u0007\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0003¢\u0006\u0004\b\t\u0010\nBI\b\u0010\u0012\u0006\u0010\u000b\u001a\u00020\f\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\u000e\u0010\u0005\u001a\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u0006\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u000e¢\u0006\u0004\b\t\u0010\u000fJ\u000b\u0010\u0016\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u0010\u0017\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u001d\u0010\u0018\u001a\u0016\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u0006j\n\u0012\u0004\u0012\u00020\u0003\u0018\u0001`\u0007HÆ\u0003J\u000b\u0010\u0019\u001a\u0004\u0018\u00010\u0003HÆ\u0003JK\u0010\u001a\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00032\u001c\b\u0002\u0010\u0005\u001a\u0016\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u0006j\n\u0012\u0004\u0012\u00020\u0003\u0018\u0001`\u00072\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0003HÆ\u0001J\u0013\u0010\u001b\u001a\u00020\u001c2\b\u0010\u001d\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001e\u001a\u00020\fHÖ\u0001J\t\u0010\u001f\u001a\u00020\u0003HÖ\u0001J%\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020\u00002\u0006\u0010#\u001a\u00020$2\u0006\u0010%\u001a\u00020&H\u0001¢\u0006\u0002\b'R\u0013\u0010\u0002\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011R\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0011R%\u0010\u0005\u001a\u0016\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u0006j\n\u0012\u0004\u0012\u00020\u0003\u0018\u0001`\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R\u0013\u0010\b\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0011¨\u0006*"}, d2 = {"Lcom/discord/chat/presentation/message/MessageFrameFeedHeaderView$MessageBundleHeader;", "", "channelIconURL", "", "chatIconURL", "avatarURLs", "Ljava/util/ArrayList;", "Lkotlin/collections/ArrayList;", NotificationRenderer.CHANNEL_NAME, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/lang/String;)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getChannelIconURL", "()Ljava/lang/String;", "getChatIconURL", "getAvatarURLs", "()Ljava/util/ArrayList;", "getChannelName", "component1", "component2", "component3", "component4", "copy", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class MessageBundleHeader {
@@ -53,7 +53,7 @@ public final class MessageFrameFeedHeaderView extends ConstraintLayout {
         @NotNull
         public static final Companion Companion = new Companion(null);
         @NotNull
-        private static final Lazy[] $childSerializers = {null, null, jr.l.a(jr.o.f32182e, new Function0() { // from class: com.discord.chat.presentation.message.r0
+        private static final Lazy[] $childSerializers = {null, null, lr.l.b(lr.o.f37120e, new Function0() { // from class: com.discord.chat.presentation.message.r0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _childSerializers$_anonymous_;
@@ -84,7 +84,7 @@ public final class MessageFrameFeedHeaderView extends ConstraintLayout {
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-            return new bt.f(n2.f7662a);
+            return new dt.f(n2.f20978a);
         }
 
         /* JADX WARN: Multi-variable type inference failed */
@@ -106,17 +106,17 @@ public final class MessageFrameFeedHeaderView extends ConstraintLayout {
 
         public static final /* synthetic */ void write$Self$chat_release(MessageBundleHeader messageBundleHeader, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             Lazy[] lazyArr = $childSerializers;
-            if (compositeEncoder.y(serialDescriptor, 0) || messageBundleHeader.channelIconURL != null) {
-                compositeEncoder.B(serialDescriptor, 0, n2.f7662a, messageBundleHeader.channelIconURL);
+            if (compositeEncoder.z(serialDescriptor, 0) || messageBundleHeader.channelIconURL != null) {
+                compositeEncoder.s(serialDescriptor, 0, n2.f20978a, messageBundleHeader.channelIconURL);
             }
-            if (compositeEncoder.y(serialDescriptor, 1) || messageBundleHeader.chatIconURL != null) {
-                compositeEncoder.B(serialDescriptor, 1, n2.f7662a, messageBundleHeader.chatIconURL);
+            if (compositeEncoder.z(serialDescriptor, 1) || messageBundleHeader.chatIconURL != null) {
+                compositeEncoder.s(serialDescriptor, 1, n2.f20978a, messageBundleHeader.chatIconURL);
             }
-            if (compositeEncoder.y(serialDescriptor, 2) || messageBundleHeader.avatarURLs != null) {
-                compositeEncoder.B(serialDescriptor, 2, (ys.o) lazyArr[2].getValue(), messageBundleHeader.avatarURLs);
+            if (compositeEncoder.z(serialDescriptor, 2) || messageBundleHeader.avatarURLs != null) {
+                compositeEncoder.s(serialDescriptor, 2, (at.o) lazyArr[2].getValue(), messageBundleHeader.avatarURLs);
             }
-            if (compositeEncoder.y(serialDescriptor, 3) || messageBundleHeader.channelName != null) {
-                compositeEncoder.B(serialDescriptor, 3, n2.f7662a, messageBundleHeader.channelName);
+            if (compositeEncoder.z(serialDescriptor, 3) || messageBundleHeader.channelName != null) {
+                compositeEncoder.s(serialDescriptor, 3, n2.f20978a, messageBundleHeader.channelName);
             }
         }
 

@@ -46,15 +46,15 @@ public final class StepStyles_SelfieStepStrokeColorJsonAdapter extends h {
         StyleElements.SimpleElementColor simpleElementColor2 = null;
         StyleElements.SimpleElementColor simpleElementColor3 = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 simpleElementColor2 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (t02 == 2) {
+            } else if (A0 == 2) {
                 simpleElementColor3 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
             }
         }
@@ -67,11 +67,11 @@ public final class StepStyles_SelfieStepStrokeColorJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (selfieStepStrokeColor != null) {
             writer.l();
-            writer.t0("base");
+            writer.A0("base");
             this.nullableSimpleElementColorAdapter.toJson(writer, selfieStepStrokeColor.getBase());
-            writer.t0("selfieCaptureIconStrokeColor");
+            writer.A0("selfieCaptureIconStrokeColor");
             this.nullableSimpleElementColorAdapter.toJson(writer, selfieStepStrokeColor.getSelfieCaptureIconStrokeColor());
-            writer.t0("captureOverlayHeaderButton");
+            writer.A0("captureOverlayHeaderButton");
             this.nullableSimpleElementColorAdapter.toJson(writer, selfieStepStrokeColor.getCaptureOverlayHeaderButton());
             writer.E();
             return;

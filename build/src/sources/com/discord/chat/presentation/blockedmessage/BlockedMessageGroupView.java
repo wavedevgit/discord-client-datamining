@@ -50,7 +50,7 @@ public final class BlockedMessageGroupView extends ChatListConstraintLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind$lambda$2(ChatEventHandler chatEventHandler, BlockedGroupChatListItem blockedGroupChatListItem, View view) {
-        chatEventHandler.mo486onTapToggleBlockedMessages1xi1bu0(MessageId.m1087constructorimpl(blockedGroupChatListItem.getId()));
+        chatEventHandler.mo486onTapToggleBlockedMessages1xi1bu0(MessageId.m1086constructorimpl(blockedGroupChatListItem.getId()));
     }
 
     @SuppressLint({"NotifyDataSetChanged"})

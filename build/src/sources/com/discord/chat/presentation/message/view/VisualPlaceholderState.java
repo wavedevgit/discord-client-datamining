@@ -21,7 +21,7 @@ public final class VisualPlaceholderState {
     static {
         VisualPlaceholderState[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = qr.a.a($values);
+        $ENTRIES = sr.a.a($values);
     }
 
     private VisualPlaceholderState(String str, int i10) {

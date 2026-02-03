@@ -3,9 +3,9 @@ package zb;
 public abstract class l {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final xi.h f55637a = xi.h.a().d(a.f55570a).c();
+    private static final xi.h f55775a = xi.h.a().d(a.f55708a).c();
 
     public static byte[] a(Object obj) {
-        return f55637a.c(obj);
+        return f55775a.c(obj);
     }
 }

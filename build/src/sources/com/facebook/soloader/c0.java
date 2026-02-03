@@ -3,14 +3,14 @@ package com.facebook.soloader;
 public class c0 extends UnsatisfiedLinkError {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f12066d;
+    private String f11034d;
 
     public c0(String str, String str2) {
         super(str2);
-        this.f12066d = str;
+        this.f11034d = str;
     }
 
     public String a() {
-        return this.f12066d;
+        return this.f11034d;
     }
 }

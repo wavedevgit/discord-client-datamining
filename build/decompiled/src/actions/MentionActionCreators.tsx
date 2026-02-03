@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.truncateMentions = var6;
     var6 = function arg0() {
-        _fun103024: for (var _fun103024_ip = 0;;) switch (_fun103024_ip) {
+        _fun103084: for (var _fun103084_ip = 0;;) switch (_fun103084_ip) {
             case 0:
                 var1 = arg0;
                 var10 = var1.before;
@@ -88,32 +88,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var1.limit;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun103024_ip = 33;
-                    continue _fun103024
+                    _fun103084_ip = 33;
+                    continue _fun103084
                 }
             case 26:
                 var9 = _closure1_slot4;
             case 33:
                 var8 = var1.guildId;
                 if (!(var8 === var3)) {
-                    _fun103024_ip = 44;
-                    continue _fun103024
+                    _fun103084_ip = 44;
+                    continue _fun103084
                 }
             case 42:
                 var8 = null;
             case 44:
                 var7 = var1.roles;
                 if (!(var7 === var3)) {
-                    _fun103024_ip = 56;
-                    continue _fun103024
+                    _fun103084_ip = 56;
+                    continue _fun103084
                 }
             case 54:
                 var7 = true;
             case 56:
                 var6 = var1.everyone;
                 if (!(var6 === var3)) {
-                    _fun103024_ip = 68;
-                    continue _fun103024
+                    _fun103084_ip = 68;
+                    continue _fun103084
                 }
             case 66:
                 var6 = true;

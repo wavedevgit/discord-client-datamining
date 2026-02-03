@@ -6,12 +6,12 @@ import java.nio.ByteOrder;
 public class g extends d {
 
     /* renamed from: j  reason: collision with root package name */
-    private final i f50185j;
+    private final i f50472j;
 
     public g(boolean z10, i iVar) {
         ByteOrder byteOrder;
-        this.f50171a = z10;
-        this.f50185j = iVar;
+        this.f50458a = z10;
+        this.f50472j = iVar;
         ByteBuffer allocate = ByteBuffer.allocate(4);
         if (z10) {
             byteOrder = ByteOrder.BIG_ENDIAN;
@@ -19,28 +19,28 @@ public class g extends d {
             byteOrder = ByteOrder.LITTLE_ENDIAN;
         }
         allocate.order(byteOrder);
-        this.f50172b = iVar.B(allocate, 16L);
-        this.f50173c = iVar.L(allocate, 28L);
-        this.f50174d = iVar.L(allocate, 32L);
-        this.f50175e = iVar.B(allocate, 42L);
-        this.f50176f = iVar.B(allocate, 44L);
-        this.f50177g = iVar.B(allocate, 46L);
-        this.f50178h = iVar.B(allocate, 48L);
-        this.f50179i = iVar.B(allocate, 50L);
+        this.f50459b = iVar.B(allocate, 16L);
+        this.f50460c = iVar.L(allocate, 28L);
+        this.f50461d = iVar.L(allocate, 32L);
+        this.f50462e = iVar.B(allocate, 42L);
+        this.f50463f = iVar.B(allocate, 44L);
+        this.f50464g = iVar.B(allocate, 46L);
+        this.f50465h = iVar.B(allocate, 48L);
+        this.f50466i = iVar.B(allocate, 50L);
     }
 
     @Override // ub.d
     public c a(long j10, int i10) {
-        return new a(this.f50185j, this, j10, i10);
+        return new a(this.f50472j, this, j10, i10);
     }
 
     @Override // ub.d
     public e b(long j10) {
-        return new j(this.f50185j, this, j10);
+        return new j(this.f50472j, this, j10);
     }
 
     @Override // ub.d
     public f c(int i10) {
-        return new l(this.f50185j, this, i10);
+        return new l(this.f50472j, this, i10);
     }
 }

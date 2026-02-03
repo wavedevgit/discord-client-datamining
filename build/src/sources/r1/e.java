@@ -12,10 +12,10 @@ public abstract class e {
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        int f48012a;
+        int f48321a;
 
         /* renamed from: b  reason: collision with root package name */
-        boolean f48013b;
+        boolean f48322b;
 
         a() {
         }
@@ -30,7 +30,7 @@ public abstract class e {
             return false;
         }
         for (int i10 = 0; i10 < bVarArr.length; i10++) {
-            if (bVarArr[i10].f48014a != bVarArr2[i10].f48014a || bVarArr[i10].f48015b.length != bVarArr2[i10].f48015b.length) {
+            if (bVarArr[i10].f48323a != bVarArr2[i10].f48323a || bVarArr[i10].f48324b.length != bVarArr2[i10].f48324b.length) {
                 return false;
             }
         }
@@ -99,7 +99,7 @@ public abstract class e {
     private static void g(java.lang.String r8, int r9, r1.e.a r10) {
         /*
             r0 = 0
-            r10.f48013b = r0
+            r10.f48322b = r0
             r1 = r9
             r2 = r0
             r3 = r2
@@ -129,7 +129,7 @@ public abstract class e {
             r3 = r7
             goto L36
         L27:
-            r10.f48013b = r7
+            r10.f48322b = r7
         L29:
             r2 = r0
             r4 = r7
@@ -137,7 +137,7 @@ public abstract class e {
         L2c:
             if (r1 == r9) goto L33
             if (r2 != 0) goto L33
-            r10.f48013b = r7
+            r10.f48322b = r7
             goto L29
         L33:
             r2 = r0
@@ -151,7 +151,7 @@ public abstract class e {
             int r1 = r1 + 1
             goto L7
         L3c:
-            r10.f48012a = r1
+            r10.f48321a = r1
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: r1.e.g(java.lang.String, int, r1.e$a):void");
@@ -167,12 +167,12 @@ public abstract class e {
                 int i11 = 0;
                 while (i10 < length) {
                     g(str, i10, aVar);
-                    int i12 = aVar.f48012a;
+                    int i12 = aVar.f48321a;
                     if (i10 < i12) {
                         fArr[i11] = Float.parseFloat(str.substring(i10, i12));
                         i11++;
                     }
-                    if (aVar.f48013b) {
+                    if (aVar.f48322b) {
                         i10 = i12;
                     } else {
                         i10 = i12 + 1;
@@ -201,16 +201,16 @@ public abstract class e {
         float[] fArr = new float[6];
         char c10 = 'm';
         for (b bVar : bVarArr) {
-            b.e(path, fArr, c10, bVar.f48014a, bVar.f48015b);
-            c10 = bVar.f48014a;
+            b.e(path, fArr, c10, bVar.f48323a, bVar.f48324b);
+            c10 = bVar.f48323a;
         }
     }
 
     public static void k(b[] bVarArr, b[] bVarArr2) {
         for (int i10 = 0; i10 < bVarArr2.length; i10++) {
-            bVarArr[i10].f48014a = bVarArr2[i10].f48014a;
-            for (int i11 = 0; i11 < bVarArr2[i10].f48015b.length; i11++) {
-                bVarArr[i10].f48015b[i11] = bVarArr2[i10].f48015b[i11];
+            bVarArr[i10].f48323a = bVarArr2[i10].f48323a;
+            for (int i11 = 0; i11 < bVarArr2[i10].f48324b.length; i11++) {
+                bVarArr[i10].f48324b[i11] = bVarArr2[i10].f48324b[i11];
             }
         }
     }
@@ -219,14 +219,14 @@ public abstract class e {
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private char f48014a;
+        private char f48323a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final float[] f48015b;
+        private final float[] f48324b;
 
         b(char c10, float[] fArr) {
-            this.f48014a = c10;
-            this.f48015b = fArr;
+            this.f48323a = c10;
+            this.f48324b = fArr;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -719,9 +719,9 @@ public abstract class e {
         }
 
         b(b bVar) {
-            this.f48014a = bVar.f48014a;
-            float[] fArr = bVar.f48015b;
-            this.f48015b = e.c(fArr, 0, fArr.length);
+            this.f48323a = bVar.f48323a;
+            float[] fArr = bVar.f48324b;
+            this.f48324b = e.c(fArr, 0, fArr.length);
         }
     }
 }

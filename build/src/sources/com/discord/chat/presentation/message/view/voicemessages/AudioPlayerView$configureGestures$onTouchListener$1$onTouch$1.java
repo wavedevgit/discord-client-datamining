@@ -1,7 +1,7 @@
 package com.discord.chat.presentation.message.view.voicemessages;
 
 import android.view.ViewConfiguration;
-import hs.i0;
+import js.i0;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -29,7 +29,7 @@ final class AudioPlayerView$configureGestures$onTouchListener$1$onTouch$1 extend
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
         Runnable runnable;
-        Object f10 = pr.b.f();
+        Object f10 = rr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -46,11 +46,11 @@ final class AudioPlayerView$configureGestures$onTouchListener$1$onTouch$1 extend
         }
         runnable = this.this$0.longPressRunnable;
         runnable.run();
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((AudioPlayerView$configureGestures$onTouchListener$1$onTouch$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        return ((AudioPlayerView$configureGestures$onTouchListener$1$onTouch$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
     }
 }

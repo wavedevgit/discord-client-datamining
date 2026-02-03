@@ -8,10 +8,10 @@ public abstract class a {
 
     /* renamed from: hi.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public /* synthetic */ class C0361a {
+    public /* synthetic */ class C0348a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f27720a;
+        public static final /* synthetic */ int[] f27005a;
 
         static {
             int[] iArr = new int[Bitmap.Config.values().length];
@@ -23,7 +23,7 @@ public abstract class a {
                 iArr[Bitmap.Config.ALPHA_8.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
-            f27720a = iArr;
+            f27005a = iArr;
         }
     }
 
@@ -109,7 +109,7 @@ public abstract class a {
         if (config == null) {
             i10 = -1;
         } else {
-            i10 = C0361a.f27720a[config.ordinal()];
+            i10 = C0348a.f27005a[config.ordinal()];
         }
         if (i10 != 1) {
             if (i10 == 2) {

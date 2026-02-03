@@ -77,7 +77,7 @@ public class FragmentActivity extends ComponentActivity implements b.e {
         }
 
         @Override // androidx.fragment.app.FragmentHostCallback, androidx.fragment.app.FragmentContainer
-        public boolean e() {
+        public boolean d() {
             Window window = FragmentActivity.this.getWindow();
             if (window != null && window.peekDecorView() != null) {
                 return true;
@@ -111,7 +111,7 @@ public class FragmentActivity extends ComponentActivity implements b.e {
         }
 
         @Override // androidx.fragment.app.FragmentHostCallback
-        public void j(String str, FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
+        public void i(String str, FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
             FragmentActivity.this.dump(str, fileDescriptor, printWriter, strArr);
         }
 
@@ -213,11 +213,11 @@ public class FragmentActivity extends ComponentActivity implements b.e {
                     z10 |= w(fragment.getChildFragmentManager(), state);
                 }
                 FragmentViewLifecycleOwner fragmentViewLifecycleOwner = fragment.mViewLifecycleOwner;
-                if (fragmentViewLifecycleOwner != null && fragmentViewLifecycleOwner.getLifecycle().b().d(Lifecycle.State.f4439o)) {
-                    fragment.mViewLifecycleOwner.g(state);
+                if (fragmentViewLifecycleOwner != null && fragmentViewLifecycleOwner.getLifecycle().b().d(Lifecycle.State.f4408o)) {
+                    fragment.mViewLifecycleOwner.f(state);
                     z10 = true;
                 }
-                if (fragment.mLifecycleRegistry.b().d(Lifecycle.State.f4439o)) {
+                if (fragment.mLifecycleRegistry.b().d(Lifecycle.State.f4408o)) {
                     fragment.mLifecycleRegistry.o(state);
                     z10 = true;
                 }
@@ -267,7 +267,7 @@ public class FragmentActivity extends ComponentActivity implements b.e {
 
     void markFragmentsCreated() {
         do {
-        } while (w(getSupportFragmentManager(), Lifecycle.State.f4438i));
+        } while (w(getSupportFragmentManager(), Lifecycle.State.f4407i));
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

@@ -9,10 +9,10 @@ public class MediaBrowserCompat$MediaItem implements Parcelable {
     public static final Parcelable.Creator<MediaBrowserCompat$MediaItem> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f763d;
+    private final int f732d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final MediaDescriptionCompat f764e;
+    private final MediaDescriptionCompat f733e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Parcelable.Creator {
@@ -33,8 +33,8 @@ public class MediaBrowserCompat$MediaItem implements Parcelable {
     }
 
     MediaBrowserCompat$MediaItem(Parcel parcel) {
-        this.f763d = parcel.readInt();
-        this.f764e = MediaDescriptionCompat.CREATOR.createFromParcel(parcel);
+        this.f732d = parcel.readInt();
+        this.f733e = MediaDescriptionCompat.CREATOR.createFromParcel(parcel);
     }
 
     @Override // android.os.Parcelable
@@ -43,12 +43,12 @@ public class MediaBrowserCompat$MediaItem implements Parcelable {
     }
 
     public String toString() {
-        return "MediaItem{mFlags=" + this.f763d + ", mDescription=" + this.f764e + '}';
+        return "MediaItem{mFlags=" + this.f732d + ", mDescription=" + this.f733e + '}';
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeInt(this.f763d);
-        this.f764e.writeToParcel(parcel, i10);
+        parcel.writeInt(this.f732d);
+        this.f733e.writeToParcel(parcel, i10);
     }
 }

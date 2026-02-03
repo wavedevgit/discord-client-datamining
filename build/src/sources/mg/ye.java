@@ -298,14 +298,14 @@ public enum ye implements n2 {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f38992d;
+    private final int f38789d;
 
     ye(int i10) {
-        this.f38992d = i10;
+        this.f38789d = i10;
     }
 
     @Override // mg.n2
     public final int zza() {
-        return this.f38992d;
+        return this.f38789d;
     }
 }

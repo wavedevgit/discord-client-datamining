@@ -8,10 +8,10 @@ import android.view.View;
 final class e implements KeyListener {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KeyListener f21230a;
+    private final KeyListener f20089a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final a f21231b;
+    private final a f20090b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a {
@@ -27,17 +27,17 @@ final class e implements KeyListener {
 
     @Override // android.text.method.KeyListener
     public void clearMetaKeyState(View view, Editable editable, int i10) {
-        this.f21230a.clearMetaKeyState(view, editable, i10);
+        this.f20089a.clearMetaKeyState(view, editable, i10);
     }
 
     @Override // android.text.method.KeyListener
     public int getInputType() {
-        return this.f21230a.getInputType();
+        return this.f20089a.getInputType();
     }
 
     @Override // android.text.method.KeyListener
     public boolean onKeyDown(View view, Editable editable, int i10, KeyEvent keyEvent) {
-        if (!this.f21231b.a(editable, i10, keyEvent) && !this.f21230a.onKeyDown(view, editable, i10, keyEvent)) {
+        if (!this.f20090b.a(editable, i10, keyEvent) && !this.f20089a.onKeyDown(view, editable, i10, keyEvent)) {
             return false;
         }
         return true;
@@ -45,16 +45,16 @@ final class e implements KeyListener {
 
     @Override // android.text.method.KeyListener
     public boolean onKeyOther(View view, Editable editable, KeyEvent keyEvent) {
-        return this.f21230a.onKeyOther(view, editable, keyEvent);
+        return this.f20089a.onKeyOther(view, editable, keyEvent);
     }
 
     @Override // android.text.method.KeyListener
     public boolean onKeyUp(View view, Editable editable, int i10, KeyEvent keyEvent) {
-        return this.f21230a.onKeyUp(view, editable, i10, keyEvent);
+        return this.f20089a.onKeyUp(view, editable, i10, keyEvent);
     }
 
     e(KeyListener keyListener, a aVar) {
-        this.f21230a = keyListener;
-        this.f21231b = aVar;
+        this.f20089a = keyListener;
+        this.f20090b = aVar;
     }
 }

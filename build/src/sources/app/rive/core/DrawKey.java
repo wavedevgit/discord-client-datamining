@@ -11,37 +11,37 @@ public final class DrawKey {
     }
 
     /* renamed from: box-impl  reason: not valid java name */
-    public static final /* synthetic */ DrawKey m160boximpl(long j10) {
+    public static final /* synthetic */ DrawKey m158boximpl(long j10) {
         return new DrawKey(j10);
     }
 
     /* renamed from: constructor-impl  reason: not valid java name */
-    public static long m161constructorimpl(long j10) {
+    public static long m159constructorimpl(long j10) {
         return j10;
     }
 
     /* renamed from: equals-impl  reason: not valid java name */
-    public static boolean m162equalsimpl(long j10, Object obj) {
-        return (obj instanceof DrawKey) && j10 == ((DrawKey) obj).m166unboximpl();
+    public static boolean m160equalsimpl(long j10, Object obj) {
+        return (obj instanceof DrawKey) && j10 == ((DrawKey) obj).m164unboximpl();
     }
 
     /* renamed from: equals-impl0  reason: not valid java name */
-    public static final boolean m163equalsimpl0(long j10, long j11) {
+    public static final boolean m161equalsimpl0(long j10, long j11) {
         return j10 == j11;
     }
 
     /* renamed from: hashCode-impl  reason: not valid java name */
-    public static int m164hashCodeimpl(long j10) {
+    public static int m162hashCodeimpl(long j10) {
         return Long.hashCode(j10);
     }
 
     /* renamed from: toString-impl  reason: not valid java name */
-    public static String m165toStringimpl(long j10) {
+    public static String m163toStringimpl(long j10) {
         return "DrawKey(handle=" + j10 + ")";
     }
 
     public boolean equals(Object obj) {
-        return m162equalsimpl(this.handle, obj);
+        return m160equalsimpl(this.handle, obj);
     }
 
     public final long getHandle() {
@@ -49,15 +49,15 @@ public final class DrawKey {
     }
 
     public int hashCode() {
-        return m164hashCodeimpl(this.handle);
+        return m162hashCodeimpl(this.handle);
     }
 
     public String toString() {
-        return m165toStringimpl(this.handle);
+        return m163toStringimpl(this.handle);
     }
 
     /* renamed from: unbox-impl  reason: not valid java name */
-    public final /* synthetic */ long m166unboximpl() {
+    public final /* synthetic */ long m164unboximpl() {
         return this.handle;
     }
 }

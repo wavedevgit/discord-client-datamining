@@ -6,18 +6,18 @@ import java.util.List;
 public abstract class h implements pd.a {
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f51974a;
+    public final String f52196a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final List f51975b;
+    public final List f52197b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final boolean f51976c;
+    public final boolean f52198c;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public h(String str, List list, boolean z10) {
-        this.f51974a = str;
-        this.f51975b = Collections.unmodifiableList(list);
-        this.f51976c = z10;
+        this.f52196a = str;
+        this.f52197b = Collections.unmodifiableList(list);
+        this.f52198c = z10;
     }
 }

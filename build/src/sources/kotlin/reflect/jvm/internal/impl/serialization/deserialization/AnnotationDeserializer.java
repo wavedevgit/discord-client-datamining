@@ -59,10 +59,10 @@ import org.jetbrains.annotations.NotNull;
 public final class AnnotationDeserializer {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ModuleDescriptor f35347a;
+    private final ModuleDescriptor f34737a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final NotFoundClasses f35348b;
+    private final NotFoundClasses f34738b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public /* synthetic */ class WhenMappings {
@@ -129,8 +129,8 @@ public final class AnnotationDeserializer {
     public AnnotationDeserializer(@NotNull ModuleDescriptor module, @NotNull NotFoundClasses notFoundClasses) {
         Intrinsics.checkNotNullParameter(module, "module");
         Intrinsics.checkNotNullParameter(notFoundClasses, "notFoundClasses");
-        this.f35347a = module;
-        this.f35348b = notFoundClasses;
+        this.f34737a = module;
+        this.f34738b = notFoundClasses;
     }
 
     private final boolean a(ConstantValue constantValue, KotlinType kotlinType, ProtoBuf.Annotation.Argument.Value value) {
@@ -144,7 +144,7 @@ public final class AnnotationDeserializer {
         }
         if (i10 != 10) {
             if (i10 != 13) {
-                return Intrinsics.areEqual(constantValue.getType(this.f35347a), kotlinType);
+                return Intrinsics.areEqual(constantValue.getType(this.f34737a), kotlinType);
             }
             if ((constantValue instanceof ArrayValue) && ((ArrayValue) constantValue).getValue().size() == value.getArrayElementList().size()) {
                 KotlinType arrayElementTypeOrNull = b().getArrayElementTypeOrNull(kotlinType);
@@ -169,9 +169,9 @@ public final class AnnotationDeserializer {
             }
             throw new IllegalStateException(("Deserialized ArrayValue should have the same number of elements as the original array value: " + constantValue).toString());
         }
-        ClassifierDescriptor mo1200getDeclarationDescriptor = kotlinType.getConstructor().mo1200getDeclarationDescriptor();
-        if (mo1200getDeclarationDescriptor instanceof ClassDescriptor) {
-            classDescriptor = (ClassDescriptor) mo1200getDeclarationDescriptor;
+        ClassifierDescriptor mo1197getDeclarationDescriptor = kotlinType.getConstructor().mo1197getDeclarationDescriptor();
+        if (mo1197getDeclarationDescriptor instanceof ClassDescriptor) {
+            classDescriptor = (ClassDescriptor) mo1197getDeclarationDescriptor;
         } else {
             classDescriptor = null;
         }
@@ -182,7 +182,7 @@ public final class AnnotationDeserializer {
     }
 
     private final KotlinBuiltIns b() {
-        return this.f35347a.getBuiltIns();
+        return this.f34737a.getBuiltIns();
     }
 
     private final Pair c(ProtoBuf.Annotation.Argument argument, Map map, NameResolver nameResolver) {
@@ -199,7 +199,7 @@ public final class AnnotationDeserializer {
     }
 
     private final ClassDescriptor d(ClassId classId) {
-        return FindClassInModuleKt.findNonGenericClassAcrossDependencies(this.f35347a, classId, this.f35348b);
+        return FindClassInModuleKt.findNonGenericClassAcrossDependencies(this.f34737a, classId, this.f34738b);
     }
 
     private final ConstantValue e(KotlinType kotlinType, ProtoBuf.Annotation.Argument.Value value, NameResolver nameResolver) {

@@ -38,18 +38,18 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            pr.b.f();
+            rr.b.f();
             if (this.label == 0) {
                 kotlin.c.b(obj);
                 this.this$0.clearAnimation();
-                return Unit.f33074a;
+                return Unit.f32464a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
         }
     }
 
@@ -67,7 +67,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:11:0x0034, code lost:
-        if (hs.g.g(r12, r1, r11) == r0) goto L14;
+        if (js.g.g(r12, r1, r11) == r0) goto L14;
      */
     /* JADX WARN: Code restructure failed: missing block: B:14:0x0089, code lost:
         if (r12.collect(r1, r11) == r0) goto L14;
@@ -83,7 +83,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
     public final java.lang.Object invokeSuspend(java.lang.Object r12) {
         /*
             r11 = this;
-            java.lang.Object r0 = pr.b.f()
+            java.lang.Object r0 = rr.b.f()
             int r1 = r11.label
             r2 = 2
             r3 = 1
@@ -102,13 +102,13 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
             goto L37
         L1f:
             kotlin.c.b(r12)
-            hs.c1 r12 = hs.m0.c()
+            js.c1 r12 = js.m0.c()
             com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1$1 r1 = new com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1$1
             com.discord.sticker.sticker_types.RLottieImageView r4 = r11.this$0
             r5 = 0
             r1.<init>(r4, r5)
             r11.label = r3
-            java.lang.Object r12 = hs.g.g(r12, r1, r11)
+            java.lang.Object r12 = js.g.g(r12, r1, r11)
             if (r12 != r0) goto L37
             goto L8b
         L37:
@@ -147,7 +147,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
         L8b:
             return r0
         L8c:
-            kotlin.Unit r12 = kotlin.Unit.f33074a
+            kotlin.Unit r12 = kotlin.Unit.f32464a
             return r12
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -155,6 +155,6 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((RLottieImageView$fetchSticker$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        return ((RLottieImageView$fetchSticker$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
     }
 }

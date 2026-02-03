@@ -3,21 +3,21 @@ package kotlin.reflect.jvm.internal.impl.types;
 public final class TypeParameterErasureOptions {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f35686a;
+    private final boolean f35076a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f35687b;
+    private final boolean f35077b;
 
     public TypeParameterErasureOptions(boolean z10, boolean z11) {
-        this.f35686a = z10;
-        this.f35687b = z11;
+        this.f35076a = z10;
+        this.f35077b = z11;
     }
 
     public final boolean getIntersectUpperBounds() {
-        return this.f35687b;
+        return this.f35077b;
     }
 
     public final boolean getLeaveNonTypeParameterTypes() {
-        return this.f35686a;
+        return this.f35076a;
     }
 }

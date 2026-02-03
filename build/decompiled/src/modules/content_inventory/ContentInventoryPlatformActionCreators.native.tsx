@@ -35,4 +35,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.showUserProfile = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7345, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7350, 2]);

@@ -1,74 +1,32 @@
 package bq;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.viewbinding.ViewBinding;
-import com.google.android.material.checkbox.MaterialCheckBox;
+import kotlinx.coroutines.flow.Flow;
+import kotlinx.coroutines.flow.MutableStateFlow;
+import ms.l0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class i implements ViewBinding {
+public final class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f7467a;
+    private final MutableStateFlow f6751a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final MaterialCheckBox f7468b;
+    private final Flow f6752b;
 
-    /* renamed from: c  reason: collision with root package name */
-    public final TextView f7469c;
-
-    /* renamed from: d  reason: collision with root package name */
-    public final TextView f7470d;
-
-    /* renamed from: e  reason: collision with root package name */
-    public final TextView f7471e;
-
-    private i(ConstraintLayout constraintLayout, MaterialCheckBox materialCheckBox, TextView textView, TextView textView2, TextView textView3) {
-        this.f7467a = constraintLayout;
-        this.f7468b = materialCheckBox;
-        this.f7469c = textView;
-        this.f7470d = textView2;
-        this.f7471e = textView3;
+    public i(Number number) {
+        MutableStateFlow a10 = l0.a(number);
+        this.f6751a = a10;
+        this.f6752b = ms.g.m(a10, 1);
     }
 
-    public static i a(View view) {
-        int i10 = wp.e.f52905o;
-        MaterialCheckBox materialCheckBox = (MaterialCheckBox) e4.a.a(view, i10);
-        if (materialCheckBox != null) {
-            i10 = wp.e.f52907p;
-            TextView textView = (TextView) e4.a.a(view, i10);
-            if (textView != null) {
-                i10 = wp.e.f52909q;
-                TextView textView2 = (TextView) e4.a.a(view, i10);
-                if (textView2 != null) {
-                    i10 = wp.e.f52917u;
-                    TextView textView3 = (TextView) e4.a.a(view, i10);
-                    if (textView3 != null) {
-                        return new i((ConstraintLayout) view, materialCheckBox, textView, textView2, textView3);
-                    }
-                }
-            }
-        }
-        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
+    public final Flow a() {
+        return this.f6752b;
     }
 
-    public static i c(LayoutInflater layoutInflater) {
-        return d(layoutInflater, null, false);
+    public final Number b() {
+        return (Number) this.f6751a.getValue();
     }
 
-    public static i d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(wp.f.f52938j, viewGroup, false);
-        if (z10) {
-            viewGroup.addView(inflate);
-        }
-        return a(inflate);
-    }
-
-    @Override // androidx.viewbinding.ViewBinding
-    /* renamed from: b */
-    public ConstraintLayout getRoot() {
-        return this.f7467a;
+    public final void c(Number number) {
+        this.f6751a.setValue(number);
     }
 }

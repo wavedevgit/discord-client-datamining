@@ -59,4 +59,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.showStickerDetailActionSheet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3269, 9368, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3278, 9387, 1307, 2]);

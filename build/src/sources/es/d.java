@@ -1,41 +1,72 @@
 package es;
 
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
-import java.util.List;
-import java.util.Map;
-import kotlin.Lazy;
-/* JADX INFO: Access modifiers changed from: package-private */
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public class d implements InvocationHandler {
+import fs.h1;
+import fs.j3;
+import fs.k;
+import kotlin.Function;
+import kotlin.Metadata;
+import kotlin.Pair;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.FunctionReferenceImpl;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.reflect.KFunction;
+import kotlin.reflect.jvm.internal.impl.descriptors.SimpleFunctionDescriptor;
+import kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf;
+import kotlin.reflect.jvm.internal.impl.metadata.deserialization.MetadataVersion;
+import kotlin.reflect.jvm.internal.impl.metadata.deserialization.TypeTable;
+import kotlin.reflect.jvm.internal.impl.metadata.jvm.deserialization.JvmNameResolver;
+import kotlin.reflect.jvm.internal.impl.metadata.jvm.deserialization.JvmProtoBufUtil;
+import kotlin.reflect.jvm.internal.impl.serialization.deserialization.MemberDeserializer;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public abstract class d {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final Class f23169a;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public /* synthetic */ class a extends FunctionReferenceImpl implements Function2 {
 
-    /* renamed from: b  reason: collision with root package name */
-    private final Map f23170b;
+        /* renamed from: d  reason: collision with root package name */
+        public static final a f22640d = new a();
 
-    /* renamed from: c  reason: collision with root package name */
-    private final Lazy f23171c;
+        a() {
+            super(2, MemberDeserializer.class, "loadFunction", "loadFunction(Lorg/jetbrains/kotlin/metadata/ProtoBuf$Function;)Lorg/jetbrains/kotlin/descriptors/SimpleFunctionDescriptor;", 0);
+        }
 
-    /* renamed from: d  reason: collision with root package name */
-    private final Lazy f23172d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final List f23173e;
-
-    public d(Class cls, Map map, Lazy lazy, Lazy lazy2, List list) {
-        this.f23169a = cls;
-        this.f23170b = map;
-        this.f23171c = lazy;
-        this.f23172d = lazy2;
-        this.f23173e = list;
+        @Override // kotlin.jvm.functions.Function2
+        /* renamed from: a */
+        public final SimpleFunctionDescriptor invoke(MemberDeserializer p02, ProtoBuf.Function p12) {
+            Intrinsics.checkNotNullParameter(p02, "p0");
+            Intrinsics.checkNotNullParameter(p12, "p1");
+            return p02.loadFunction(p12);
+        }
     }
 
-    @Override // java.lang.reflect.InvocationHandler
-    public Object invoke(Object obj, Method method, Object[] objArr) {
-        Object o10;
-        o10 = f.o(this.f23169a, this.f23170b, this.f23171c, this.f23172d, this.f23173e, obj, method, objArr);
-        return o10;
+    public static final KFunction a(Function function) {
+        boolean z10;
+        Intrinsics.checkNotNullParameter(function, "<this>");
+        Metadata metadata = (Metadata) function.getClass().getAnnotation(Metadata.class);
+        if (metadata == null) {
+            return null;
+        }
+        String[] d12 = metadata.d1();
+        if (d12.length == 0) {
+            d12 = null;
+        }
+        if (d12 == null) {
+            return null;
+        }
+        Pair<JvmNameResolver, ProtoBuf.Function> readFunctionDataFrom = JvmProtoBufUtil.readFunctionDataFrom(d12, metadata.d2());
+        JvmNameResolver jvmNameResolver = (JvmNameResolver) readFunctionDataFrom.a();
+        ProtoBuf.Function function2 = (ProtoBuf.Function) readFunctionDataFrom.b();
+        int[] mv2 = metadata.mv();
+        if ((metadata.xi() & 8) != 0) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        MetadataVersion metadataVersion = new MetadataVersion(mv2, z10);
+        Class<?> cls = function.getClass();
+        ProtoBuf.TypeTable typeTable = function2.getTypeTable();
+        Intrinsics.checkNotNullExpressionValue(typeTable, "getTypeTable(...)");
+        return new h1(k.f24557o, (SimpleFunctionDescriptor) j3.h(cls, function2, jvmNameResolver, new TypeTable(typeTable), metadataVersion, a.f22640d));
     }
 }

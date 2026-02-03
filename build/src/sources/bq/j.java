@@ -1,65 +1,51 @@
 package bq;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.LinearLayout;
-import android.widget.TextView;
-import androidx.viewbinding.ViewBinding;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class j implements ViewBinding {
+public final class j {
 
     /* renamed from: a  reason: collision with root package name */
-    private final LinearLayout f7472a;
+    private final String f6753a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final LinearLayout f7473b;
+    private final String f6754b;
 
-    /* renamed from: c  reason: collision with root package name */
-    public final TextView f7474c;
-
-    /* renamed from: d  reason: collision with root package name */
-    public final TextView f7475d;
-
-    private j(LinearLayout linearLayout, LinearLayout linearLayout2, TextView textView, TextView textView2) {
-        this.f7472a = linearLayout;
-        this.f7473b = linearLayout2;
-        this.f7474c = textView;
-        this.f7475d = textView2;
+    public j(String countryCode, String localPhoneNumber) {
+        Intrinsics.checkNotNullParameter(countryCode, "countryCode");
+        Intrinsics.checkNotNullParameter(localPhoneNumber, "localPhoneNumber");
+        this.f6753a = countryCode;
+        this.f6754b = localPhoneNumber;
     }
 
-    public static j a(View view) {
-        int i10 = wp.e.f52911r;
-        LinearLayout linearLayout = (LinearLayout) e4.a.a(view, i10);
-        if (linearLayout != null) {
-            i10 = wp.e.f52913s;
-            TextView textView = (TextView) e4.a.a(view, i10);
-            if (textView != null) {
-                i10 = wp.e.f52915t;
-                TextView textView2 = (TextView) e4.a.a(view, i10);
-                if (textView2 != null) {
-                    return new j((LinearLayout) view, linearLayout, textView, textView2);
-                }
-            }
+    public final String a() {
+        return this.f6753a;
+    }
+
+    public final String b() {
+        return this.f6754b;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
-    }
-
-    public static j c(LayoutInflater layoutInflater) {
-        return d(layoutInflater, null, false);
-    }
-
-    public static j d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(wp.f.f52939k, viewGroup, false);
-        if (z10) {
-            viewGroup.addView(inflate);
+        if (!(obj instanceof j)) {
+            return false;
         }
-        return a(inflate);
+        j jVar = (j) obj;
+        if (Intrinsics.areEqual(this.f6753a, jVar.f6753a) && Intrinsics.areEqual(this.f6754b, jVar.f6754b)) {
+            return true;
+        }
+        return false;
     }
 
-    @Override // androidx.viewbinding.ViewBinding
-    /* renamed from: b */
-    public LinearLayout getRoot() {
-        return this.f7472a;
+    public int hashCode() {
+        return (this.f6753a.hashCode() * 31) + this.f6754b.hashCode();
+    }
+
+    public String toString() {
+        String str = this.f6753a;
+        String str2 = this.f6754b;
+        return "PhoneNumberInfo(countryCode=" + str + ", localPhoneNumber=" + str2 + ")";
     }
 }

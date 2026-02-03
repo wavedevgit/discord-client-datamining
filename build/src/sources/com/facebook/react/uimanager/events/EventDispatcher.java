@@ -13,7 +13,7 @@ public interface EventDispatcher {
 
     void dispatchEvent(@NotNull Event<?> event);
 
-    @jr.c
+    @lr.c
     void onCatalystInstanceDestroyed();
 
     void removeBatchEventDispatchedListener(@NotNull BatchEventDispatchedListener batchEventDispatchedListener);

@@ -1,63 +1,86 @@
 package mr;
 
-import java.util.Comparator;
-import kotlin.jvm.functions.Function1;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
 import kotlin.jvm.internal.Intrinsics;
-/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class c {
-    public static Comparator b(final Function1... selectors) {
-        Intrinsics.checkNotNullParameter(selectors, "selectors");
-        if (selectors.length > 0) {
-            return new Comparator() { // from class: mr.b
-                @Override // java.util.Comparator
-                public final int compare(Object obj, Object obj2) {
-                    int c10;
-                    c10 = c.c(selectors, obj, obj2);
-                    return c10;
-                }
-            };
+public abstract class c {
+    public static final Object[] d(int i10) {
+        if (i10 >= 0) {
+            return new Object[i10];
         }
-        throw new IllegalArgumentException("Failed requirement.");
+        throw new IllegalArgumentException("capacity must be non-negative.");
+    }
+
+    public static final Object[] e(Object[] objArr, int i10) {
+        Intrinsics.checkNotNullParameter(objArr, "<this>");
+        Object[] copyOf = Arrays.copyOf(objArr, i10);
+        Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
+        return copyOf;
+    }
+
+    public static final void f(Object[] objArr, int i10) {
+        Intrinsics.checkNotNullParameter(objArr, "<this>");
+        objArr[i10] = null;
+    }
+
+    public static final void g(Object[] objArr, int i10, int i11) {
+        Intrinsics.checkNotNullParameter(objArr, "<this>");
+        while (i10 < i11) {
+            f(objArr, i10);
+            i10++;
+        }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final int c(Function1[] function1Arr, Object obj, Object obj2) {
-        return e(obj, obj2, function1Arr);
-    }
-
-    public static int d(Comparable comparable, Comparable comparable2) {
-        if (comparable == comparable2) {
-            return 0;
+    public static final boolean h(Object[] objArr, int i10, int i11, List list) {
+        if (i11 != list.size()) {
+            return false;
         }
-        if (comparable == null) {
-            return -1;
-        }
-        if (comparable2 == null) {
-            return 1;
-        }
-        return comparable.compareTo(comparable2);
-    }
-
-    private static final int e(Object obj, Object obj2, Function1[] function1Arr) {
-        for (Function1 function1 : function1Arr) {
-            int d10 = d((Comparable) function1.invoke(obj), (Comparable) function1.invoke(obj2));
-            if (d10 != 0) {
-                return d10;
+        for (int i12 = 0; i12 < i11; i12++) {
+            if (!Intrinsics.areEqual(objArr[i10 + i12], list.get(i12))) {
+                return false;
             }
         }
-        return 0;
+        return true;
     }
 
-    public static Comparator f() {
-        f fVar = f.f39142d;
-        Intrinsics.checkNotNull(fVar, "null cannot be cast to non-null type java.util.Comparator<T of kotlin.comparisons.ComparisonsKt__ComparisonsKt.naturalOrder>");
-        return fVar;
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int i(Object[] objArr, int i10, int i11) {
+        int i12;
+        int i13 = 1;
+        for (int i14 = 0; i14 < i11; i14++) {
+            Object obj = objArr[i10 + i14];
+            int i15 = i13 * 31;
+            if (obj != null) {
+                i12 = obj.hashCode();
+            } else {
+                i12 = 0;
+            }
+            i13 = i15 + i12;
+        }
+        return i13;
     }
 
-    public static Comparator g() {
-        g gVar = g.f39143d;
-        Intrinsics.checkNotNull(gVar, "null cannot be cast to non-null type java.util.Comparator<T of kotlin.comparisons.ComparisonsKt__ComparisonsKt.reverseOrder>");
-        return gVar;
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final String j(Object[] objArr, int i10, int i11, Collection collection) {
+        StringBuilder sb2 = new StringBuilder((i11 * 3) + 2);
+        sb2.append("[");
+        for (int i12 = 0; i12 < i11; i12++) {
+            if (i12 > 0) {
+                sb2.append(", ");
+            }
+            Object obj = objArr[i10 + i12];
+            if (obj == collection) {
+                sb2.append("(this Collection)");
+            } else {
+                sb2.append(obj);
+            }
+        }
+        sb2.append("]");
+        String sb3 = sb2.toString();
+        Intrinsics.checkNotNullExpressionValue(sb3, "toString(...)");
+        return sb3;
     }
 }

@@ -5,7 +5,7 @@ import ui.c;
 final class z6 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final z6 f39015a = new z6();
+    static final z6 f38812a = new z6();
 
     static {
         c.b a10 = ui.c.a("detectorOptions");

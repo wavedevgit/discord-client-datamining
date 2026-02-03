@@ -3,14 +3,14 @@ package com.rnfs;
 class d extends Exception {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f18436d;
+    private String f17418d;
 
     public d(String str, String str2) {
         super(str2);
-        this.f18436d = str;
+        this.f17418d = str;
     }
 
     public String a() {
-        return this.f18436d;
+        return this.f17418d;
     }
 }

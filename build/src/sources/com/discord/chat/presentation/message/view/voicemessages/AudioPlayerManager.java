@@ -20,7 +20,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.MutableStateFlow;
-import ks.l0;
+import ms.l0;
 import org.jetbrains.annotations.NotNull;
 import org.webrtc.MediaStreamTrack;
 @Metadata(d1 = {"\u0000z\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\t\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\r\bÆ\u0002\u0018\u00002\u00020\u0001:\u0002<=B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u000e\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020#J\u0010\u0010$\u001a\u00020\u001f2\b\u0010%\u001a\u0004\u0018\u00010\u000fJ\u0012\u0010&\u001a\u0004\u0018\u00010\u00102\b\u0010'\u001a\u0004\u0018\u00010\u000fJ\u001e\u0010(\u001a\u00020!2\u0006\u0010'\u001a\u00020\u000f2\u0006\u0010)\u001a\u00020*2\u0006\u0010+\u001a\u00020,J\u0012\u0010-\u001a\u0004\u0018\u00010\u00142\b\u0010'\u001a\u0004\u0018\u00010\u000fJ\u0012\u0010.\u001a\u0004\u0018\u00010\u00122\b\u0010'\u001a\u0004\u0018\u00010\u000fJ2\u0010/\u001a\u00020!2\u0006\u0010\"\u001a\u00020#2\u0006\u0010'\u001a\u00020\u000f2\u0006\u0010+\u001a\u00020,2\u0012\u00100\u001a\u000e\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020!01J\u0010\u00102\u001a\u00020!2\b\u0010'\u001a\u0004\u0018\u00010\u000fJ\u000e\u00103\u001a\u00020!2\u0006\u00104\u001a\u00020\u001fJ\u0006\u00105\u001a\u00020!J\u001a\u00106\u001a\u0004\u0018\u00010\u00102\u0006\u0010'\u001a\u00020\u000f2\u0006\u0010+\u001a\u00020,H\u0002J\u0010\u00107\u001a\u00020!2\b\u0010'\u001a\u0004\u0018\u00010\u000fJ\b\u00108\u001a\u00020!H\u0002J\b\u00109\u001a\u00020!H\u0002J\u0010\u00108\u001a\u00020!2\b\u0010%\u001a\u0004\u0018\u00010\u000fJ\u0010\u00109\u001a\u00020!2\b\u0010%\u001a\u0004\u0018\u00010\u000fJ\b\u0010:\u001a\u00020\u001fH\u0002J\b\u0010;\u001a\u00020!H\u0002R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\b\u001a\n \n*\u0004\u0018\u00010\t0\tX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\fX\u0082.¢\u0006\u0002\n\u0000R\u001a\u0010\r\u001a\u000e\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\u00100\u000eX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u0011\u001a\u0004\u0018\u00010\u0012X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0013\u001a\u0004\u0018\u00010\u0014X\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010\u0015\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u000f0\u0016X\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u0017\u001a\u0004\u0018\u00010\u000f8BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u0018\u0010\u0019R\u0019\u0010\u001a\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u000f0\u001b¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u001dR\u000e\u0010\u001e\u001a\u00020\u001fX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006>"}, d2 = {"Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerManager;", "", "<init>", "()V", "audioManager", "Landroid/media/AudioManager;", "focusListener", "Landroid/media/AudioManager$OnAudioFocusChangeListener;", "playbackAttributes", "Landroid/media/AudioAttributes;", "kotlin.jvm.PlatformType", "focusRequest", "Landroid/media/AudioFocusRequest;", "currentProgressMap", "", "Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerManager$AudioSource;", "Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerManager$CurrentProgress;", "mediaPlayerState", "Lcom/discord/media_player/MediaPlayer$Event;", "mediaPlayer", "Lcom/discord/media_player/MediaPlayer;", "_currentPlayerSourceFlow", "Lkotlinx/coroutines/flow/MutableStateFlow;", "currentPlayerSource", "getCurrentPlayerSource", "()Lcom/discord/chat/presentation/message/view/voicemessages/AudioPlayerManager$AudioSource;", "currentPlayerSourceFlow", "Lkotlinx/coroutines/flow/Flow;", "getCurrentPlayerSourceFlow", "()Lkotlinx/coroutines/flow/Flow;", "wasPlayingBeforePause", "", "init", "", "context", "Landroid/content/Context;", "hasCurrentPlayer", "audioSource", "getCurrentProgress", "source", "setCurrentProgress", ReactProgressBarViewManager.PROP_PROGRESS, "", "durationMs", "", "getPlayer", "getState", "setupPlayer", "onStateChanged", "Lkotlin/Function1;", "releasePlayer", "pauseCurrentPlayer", "storePauseState", "maybePlayCurrentPlayer", "maybeCreateDuration", "storeDuration", "playOrReset", "pause", "requestAudioFocus", "abandonAudioFocus", "AudioSource", "CurrentProgress", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
@@ -113,7 +113,7 @@ public final class AudioPlayerManager {
             }
             if (obj instanceof AudioSource) {
                 AudioSource audioSource = (AudioSource) obj;
-                return Intrinsics.areEqual(this.channelId, audioSource.channelId) && MessageId.m1090equalsimpl0(this.messageId, audioSource.messageId) && Intrinsics.areEqual(this.url, audioSource.url) && Intrinsics.areEqual(this.index, audioSource.index);
+                return Intrinsics.areEqual(this.channelId, audioSource.channelId) && MessageId.m1089equalsimpl0(this.messageId, audioSource.messageId) && Intrinsics.areEqual(this.url, audioSource.url) && Intrinsics.areEqual(this.index, audioSource.index);
             }
             return false;
         }
@@ -140,18 +140,18 @@ public final class AudioPlayerManager {
 
         public int hashCode() {
             ChannelId channelId = this.channelId;
-            int m1065hashCodeimpl = (((((channelId == null ? 0 : ChannelId.m1065hashCodeimpl(channelId.m1069unboximpl())) * 31) + MessageId.m1091hashCodeimpl(this.messageId)) * 31) + this.url.hashCode()) * 31;
+            int m1064hashCodeimpl = (((((channelId == null ? 0 : ChannelId.m1064hashCodeimpl(channelId.m1068unboximpl())) * 31) + MessageId.m1090hashCodeimpl(this.messageId)) * 31) + this.url.hashCode()) * 31;
             Integer num = this.index;
-            return m1065hashCodeimpl + (num != null ? num.hashCode() : 0);
+            return m1064hashCodeimpl + (num != null ? num.hashCode() : 0);
         }
 
         @NotNull
         public String toString() {
             ChannelId channelId = this.channelId;
-            String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+            String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
             String str = this.url;
             Integer num = this.index;
-            return "AudioSource(channelId=" + channelId + ", messageId=" + m1093toStringimpl + ", url=" + str + ", index=" + num + ")";
+            return "AudioSource(channelId=" + channelId + ", messageId=" + m1092toStringimpl + ", url=" + str + ", index=" + num + ")";
         }
 
         private AudioSource(ChannelId channelId, String messageId, String url, Integer num) {
@@ -358,7 +358,7 @@ public final class AudioPlayerManager {
             mediaPlayerState = event;
             function1.invoke(event);
         }
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     @NotNull

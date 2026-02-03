@@ -18,64 +18,64 @@ import w8.f;
 public class ImageRequestBuilder {
 
     /* renamed from: t  reason: collision with root package name */
-    private static final Set f11636t = new HashSet();
+    private static final Set f10604t = new HashSet();
 
     /* renamed from: n  reason: collision with root package name */
-    private RequestListener f11650n;
+    private RequestListener f10618n;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f11654r;
+    private int f10622r;
 
     /* renamed from: a  reason: collision with root package name */
-    private Uri f11637a = null;
+    private Uri f10605a = null;
 
     /* renamed from: b  reason: collision with root package name */
-    private ImageRequest.RequestLevel f11638b = ImageRequest.RequestLevel.FULL_FETCH;
+    private ImageRequest.RequestLevel f10606b = ImageRequest.RequestLevel.FULL_FETCH;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f11639c = 0;
+    private int f10607c = 0;
 
     /* renamed from: d  reason: collision with root package name */
-    private ResizeOptions f11640d = null;
+    private ResizeOptions f10608d = null;
 
     /* renamed from: e  reason: collision with root package name */
-    private RotationOptions f11641e = null;
+    private RotationOptions f10609e = null;
 
     /* renamed from: f  reason: collision with root package name */
-    private ImageDecodeOptions f11642f = ImageDecodeOptions.a();
+    private ImageDecodeOptions f10610f = ImageDecodeOptions.a();
 
     /* renamed from: g  reason: collision with root package name */
-    private ImageRequest.CacheChoice f11643g = ImageRequest.CacheChoice.DEFAULT;
+    private ImageRequest.CacheChoice f10611g = ImageRequest.CacheChoice.DEFAULT;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f11644h = ImagePipelineConfig.J().a();
+    private boolean f10612h = ImagePipelineConfig.J().a();
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f11645i = false;
+    private boolean f10613i = false;
 
     /* renamed from: j  reason: collision with root package name */
-    private boolean f11646j = false;
+    private boolean f10614j = false;
 
     /* renamed from: k  reason: collision with root package name */
-    private Priority f11647k = Priority.f11090o;
+    private Priority f10615k = Priority.f10058o;
 
     /* renamed from: l  reason: collision with root package name */
-    private Postprocessor f11648l = null;
+    private Postprocessor f10616l = null;
 
     /* renamed from: m  reason: collision with root package name */
-    private Boolean f11649m = null;
+    private Boolean f10617m = null;
 
     /* renamed from: o  reason: collision with root package name */
-    private BytesRange f11651o = null;
+    private BytesRange f10619o = null;
 
     /* renamed from: p  reason: collision with root package name */
-    private Boolean f11652p = null;
+    private Boolean f10620p = null;
 
     /* renamed from: q  reason: collision with root package name */
-    private DownsampleMode f11653q = null;
+    private DownsampleMode f10621q = null;
 
     /* renamed from: s  reason: collision with root package name */
-    private String f11655s = null;
+    private String f10623s = null;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class a extends RuntimeException {
@@ -88,9 +88,9 @@ public class ImageRequestBuilder {
     }
 
     private ImageRequestBuilder B(int i10) {
-        this.f11639c = i10;
-        if (this.f11643g != ImageRequest.CacheChoice.DYNAMIC) {
-            this.f11655s = null;
+        this.f10607c = i10;
+        if (this.f10611g != ImageRequest.CacheChoice.DYNAMIC) {
+            this.f10623s = null;
         }
         return this;
     }
@@ -100,7 +100,7 @@ public class ImageRequestBuilder {
     }
 
     public static boolean s(Uri uri) {
-        Set<String> set = f11636t;
+        Set<String> set = f10604t;
         if (set != null && uri != null) {
             for (String str : set) {
                 if (str.equals(uri.getScheme())) {
@@ -116,103 +116,103 @@ public class ImageRequestBuilder {
     }
 
     public ImageRequestBuilder A(ImageRequest.CacheChoice cacheChoice) {
-        this.f11643g = cacheChoice;
+        this.f10611g = cacheChoice;
         return this;
     }
 
     public ImageRequestBuilder C(int i10) {
-        this.f11654r = i10;
+        this.f10622r = i10;
         return this;
     }
 
     public ImageRequestBuilder D(String str) {
-        this.f11655s = str;
+        this.f10623s = str;
         return this;
     }
 
     public ImageRequestBuilder E(DownsampleMode downsampleMode) {
-        this.f11653q = downsampleMode;
+        this.f10621q = downsampleMode;
         return this;
     }
 
     public ImageRequestBuilder F(ImageDecodeOptions imageDecodeOptions) {
-        this.f11642f = imageDecodeOptions;
+        this.f10610f = imageDecodeOptions;
         return this;
     }
 
     public ImageRequestBuilder G(boolean z10) {
-        this.f11646j = z10;
+        this.f10614j = z10;
         return this;
     }
 
     public ImageRequestBuilder H(boolean z10) {
-        this.f11645i = z10;
+        this.f10613i = z10;
         return this;
     }
 
     public ImageRequestBuilder I(ImageRequest.RequestLevel requestLevel) {
-        this.f11638b = requestLevel;
+        this.f10606b = requestLevel;
         return this;
     }
 
     public ImageRequestBuilder J(Postprocessor postprocessor) {
-        this.f11648l = postprocessor;
+        this.f10616l = postprocessor;
         return this;
     }
 
     public ImageRequestBuilder K(boolean z10) {
-        this.f11644h = z10;
+        this.f10612h = z10;
         return this;
     }
 
     public ImageRequestBuilder L(RequestListener requestListener) {
-        this.f11650n = requestListener;
+        this.f10618n = requestListener;
         return this;
     }
 
     public ImageRequestBuilder M(Priority priority) {
-        this.f11647k = priority;
+        this.f10615k = priority;
         return this;
     }
 
     public ImageRequestBuilder N(ResizeOptions resizeOptions) {
-        this.f11640d = resizeOptions;
+        this.f10608d = resizeOptions;
         return this;
     }
 
     public ImageRequestBuilder O(Boolean bool) {
-        this.f11652p = bool;
+        this.f10620p = bool;
         return this;
     }
 
     public ImageRequestBuilder P(RotationOptions rotationOptions) {
-        this.f11641e = rotationOptions;
+        this.f10609e = rotationOptions;
         return this;
     }
 
     public ImageRequestBuilder Q(Boolean bool) {
-        this.f11649m = bool;
+        this.f10617m = bool;
         return this;
     }
 
     public ImageRequestBuilder R(Uri uri) {
         j.g(uri);
-        this.f11637a = uri;
+        this.f10605a = uri;
         return this;
     }
 
     public Boolean S() {
-        return this.f11649m;
+        return this.f10617m;
     }
 
     protected void T() {
-        Uri uri = this.f11637a;
+        Uri uri = this.f10605a;
         if (uri != null) {
             if (f.o(uri)) {
-                if (this.f11637a.isAbsolute()) {
-                    if (!this.f11637a.getPath().isEmpty()) {
+                if (this.f10605a.isAbsolute()) {
+                    if (!this.f10605a.getPath().isEmpty()) {
                         try {
-                            Integer.parseInt(this.f11637a.getPath().substring(1));
+                            Integer.parseInt(this.f10605a.getPath().substring(1));
                         } catch (NumberFormatException unused) {
                             throw new a("Resource URI path must be a resource id.");
                         }
@@ -223,7 +223,7 @@ public class ImageRequestBuilder {
                     throw new a("Resource URI path must be absolute.");
                 }
             }
-            if (f.j(this.f11637a) && !this.f11637a.isAbsolute()) {
+            if (f.j(this.f10605a) && !this.f10605a.isAbsolute()) {
                 throw new a("Asset URI path must be absolute.");
             }
             return;
@@ -237,72 +237,72 @@ public class ImageRequestBuilder {
     }
 
     public BytesRange c() {
-        return this.f11651o;
+        return this.f10619o;
     }
 
     public ImageRequest.CacheChoice d() {
-        return this.f11643g;
+        return this.f10611g;
     }
 
     public int e() {
-        return this.f11639c;
+        return this.f10607c;
     }
 
     public int f() {
-        return this.f11654r;
+        return this.f10622r;
     }
 
     public String g() {
-        return this.f11655s;
+        return this.f10623s;
     }
 
     public DownsampleMode h() {
-        return this.f11653q;
+        return this.f10621q;
     }
 
     public ImageDecodeOptions i() {
-        return this.f11642f;
+        return this.f10610f;
     }
 
     public boolean j() {
-        return this.f11646j;
+        return this.f10614j;
     }
 
     public ImageRequest.RequestLevel k() {
-        return this.f11638b;
+        return this.f10606b;
     }
 
     public Postprocessor l() {
-        return this.f11648l;
+        return this.f10616l;
     }
 
     public RequestListener m() {
-        return this.f11650n;
+        return this.f10618n;
     }
 
     public Priority n() {
-        return this.f11647k;
+        return this.f10615k;
     }
 
     public ResizeOptions o() {
-        return this.f11640d;
+        return this.f10608d;
     }
 
     public Boolean p() {
-        return this.f11652p;
+        return this.f10620p;
     }
 
     public RotationOptions q() {
-        return this.f11641e;
+        return this.f10609e;
     }
 
     public Uri r() {
-        return this.f11637a;
+        return this.f10605a;
     }
 
     public boolean t() {
-        if ((this.f11639c & 48) == 0) {
-            if (f.p(this.f11637a) || s(this.f11637a)) {
+        if ((this.f10607c & 48) == 0) {
+            if (f.p(this.f10605a) || s(this.f10605a)) {
                 return true;
             }
             return false;
@@ -311,18 +311,18 @@ public class ImageRequestBuilder {
     }
 
     public boolean u() {
-        return this.f11645i;
+        return this.f10613i;
     }
 
     public boolean v() {
-        if ((this.f11639c & 15) == 0) {
+        if ((this.f10607c & 15) == 0) {
             return true;
         }
         return false;
     }
 
     public boolean w() {
-        return this.f11644h;
+        return this.f10612h;
     }
 
     public ImageRequestBuilder y(boolean z10) {
@@ -333,7 +333,7 @@ public class ImageRequestBuilder {
     }
 
     public ImageRequestBuilder z(BytesRange bytesRange) {
-        this.f11651o = bytesRange;
+        this.f10619o = bytesRange;
         return this;
     }
 }

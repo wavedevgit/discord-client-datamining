@@ -11,9 +11,9 @@ import g5.m;
 import h5.c;
 import java.io.InputStream;
 import java.util.List;
-import ju.x;
 import kotlin.coroutines.Continuation;
 import kotlin.jvm.internal.Intrinsics;
+import lu.x;
 import org.webrtc.MediaStreamTrack;
 import x4.u;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -58,7 +58,7 @@ public final class d implements h {
         if (aVar == null) {
             return null;
         }
-        int i10 = aVar.f27531a;
+        int i10 = aVar.f26816a;
         h5.c c10 = this.f391b.o().c();
         if (c10 instanceof c.a) {
             aVar2 = (c.a) c10;
@@ -68,7 +68,7 @@ public final class d implements h {
         if (aVar2 == null) {
             return null;
         }
-        int i11 = aVar2.f27531a;
+        int i11 = aVar2.f26816a;
         Bundle bundle = new Bundle(1);
         bundle.putParcelable("android.content.extra.SIZE", new Point(i10, i11));
         return bundle;
@@ -100,7 +100,7 @@ public final class d implements h {
                 throw new IllegalStateException(("Unable to open '" + this.f390a + "'.").toString());
             }
         }
-        return new l(u.g(x.d(x.k(inputStream)), this.f391b.g(), new x4.g(this.f390a)), contentResolver.getType(this.f390a), x4.h.f53392i);
+        return new l(u.g(x.d(x.k(inputStream)), this.f391b.g(), new x4.g(this.f390a)), contentResolver.getType(this.f390a), x4.h.f53113i);
     }
 
     public final boolean b(Uri uri) {

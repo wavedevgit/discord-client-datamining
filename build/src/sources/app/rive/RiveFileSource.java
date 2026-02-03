@@ -20,40 +20,40 @@ public interface RiveFileSource {
         }
 
         /* renamed from: box-impl  reason: not valid java name */
-        public static final /* synthetic */ Bytes m36boximpl(byte[] bArr) {
+        public static final /* synthetic */ Bytes m34boximpl(byte[] bArr) {
             return new Bytes(bArr);
         }
 
         @NotNull
         /* renamed from: constructor-impl  reason: not valid java name */
-        public static byte[] m37constructorimpl(@NotNull byte[] data) {
+        public static byte[] m35constructorimpl(@NotNull byte[] data) {
             Intrinsics.checkNotNullParameter(data, "data");
             return data;
         }
 
         /* renamed from: equals-impl  reason: not valid java name */
-        public static boolean m38equalsimpl(byte[] bArr, Object obj) {
-            return (obj instanceof Bytes) && Intrinsics.areEqual(bArr, ((Bytes) obj).m42unboximpl());
+        public static boolean m36equalsimpl(byte[] bArr, Object obj) {
+            return (obj instanceof Bytes) && Intrinsics.areEqual(bArr, ((Bytes) obj).m40unboximpl());
         }
 
         /* renamed from: equals-impl0  reason: not valid java name */
-        public static final boolean m39equalsimpl0(byte[] bArr, byte[] bArr2) {
+        public static final boolean m37equalsimpl0(byte[] bArr, byte[] bArr2) {
             return Intrinsics.areEqual(bArr, bArr2);
         }
 
         /* renamed from: hashCode-impl  reason: not valid java name */
-        public static int m40hashCodeimpl(byte[] bArr) {
+        public static int m38hashCodeimpl(byte[] bArr) {
             return Arrays.hashCode(bArr);
         }
 
         /* renamed from: toString-impl  reason: not valid java name */
-        public static String m41toStringimpl(byte[] bArr) {
+        public static String m39toStringimpl(byte[] bArr) {
             String arrays = Arrays.toString(bArr);
             return "Bytes(data=" + arrays + ")";
         }
 
         public boolean equals(Object obj) {
-            return m38equalsimpl(this.data, obj);
+            return m36equalsimpl(this.data, obj);
         }
 
         @NotNull
@@ -62,15 +62,15 @@ public interface RiveFileSource {
         }
 
         public int hashCode() {
-            return m40hashCodeimpl(this.data);
+            return m38hashCodeimpl(this.data);
         }
 
         public String toString() {
-            return m41toStringimpl(this.data);
+            return m39toStringimpl(this.data);
         }
 
         /* renamed from: unbox-impl  reason: not valid java name */
-        public final /* synthetic */ byte[] m42unboximpl() {
+        public final /* synthetic */ byte[] m40unboximpl() {
             return this.data;
         }
     }

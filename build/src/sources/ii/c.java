@@ -17,22 +17,22 @@ public abstract class c implements n {
     private static final class b extends a {
 
         /* renamed from: d  reason: collision with root package name */
-        private final char f28179d;
+        private final char f28402d;
 
         b(char c10) {
-            this.f28179d = c10;
+            this.f28402d = c10;
         }
 
         @Override // ii.c
         public boolean e(char c10) {
-            if (c10 == this.f28179d) {
+            if (c10 == this.f28402d) {
                 return true;
             }
             return false;
         }
 
         public String toString() {
-            String g10 = c.g(this.f28179d);
+            String g10 = c.g(this.f28402d);
             StringBuilder sb2 = new StringBuilder(String.valueOf(g10).length() + 18);
             sb2.append("CharMatcher.is('");
             sb2.append(g10);
@@ -43,25 +43,25 @@ public abstract class c implements n {
 
     /* renamed from: ii.c$c  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static abstract class AbstractC0376c extends a {
+    static abstract class AbstractC0378c extends a {
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f28180d;
+        private final String f28403d;
 
-        AbstractC0376c(String str) {
-            this.f28180d = (String) m.j(str);
+        AbstractC0378c(String str) {
+            this.f28403d = (String) m.j(str);
         }
 
         public final String toString() {
-            return this.f28180d;
+            return this.f28403d;
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    private static final class d extends AbstractC0376c {
+    private static final class d extends AbstractC0378c {
 
         /* renamed from: e  reason: collision with root package name */
-        static final d f28181e = new d();
+        static final d f28404e = new d();
 
         private d() {
             super("CharMatcher.none()");
@@ -87,7 +87,7 @@ public abstract class c implements n {
     }
 
     public static c f() {
-        return d.f28181e;
+        return d.f28404e;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

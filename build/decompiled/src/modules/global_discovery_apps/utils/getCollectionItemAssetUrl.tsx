@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/global_discovery_apps/utils/getCollectionItemAssetUrl.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun107805: for (var _fun107805_ip = 0;;) switch (_fun107805_ip) {
+        _fun107865: for (var _fun107865_ip = 0;;) switch (_fun107865_ip) {
             case 0:
                 var0 = arg0;
                 var11 = var0.itemId;
@@ -41,8 +41,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.containerWidth;
                 var4 = undefined;
                 if (!(var7 === var4)) {
-                    _fun107805_ip = 32;
-                    continue _fun107805
+                    _fun107865_ip = 32;
+                    continue _fun107865
                 }
             case 26:
                 var7 = 1024;
@@ -83,8 +83,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.SUPPORTS_WEBP;
                 var8 = 'png';
                 if (!var0) {
-                    _fun107805_ip = 175;
-                    continue _fun107805
+                    _fun107865_ip = 175;
+                    continue _fun107865
                 }
             case 169:
                 var8 = 'webp';
@@ -92,8 +92,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = _closure1_slot4;
                 var0 = null;
                 if (!(var0 == var3)) {
-                    _fun107805_ip = 252;
-                    continue _fun107805
+                    _fun107865_ip = 252;
+                    continue _fun107865
                 }
             case 185:
                 var0 = var1.location;
@@ -110,8 +110,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var6;
                 var16 = var9;
                 var0 = var21[var4](var20, var19, var18, var17, var16, var15);
-                _fun107805_ip = 307;
-                continue _fun107805;
+                _fun107865_ip = 307;
+                continue _fun107865;
             case 252:
                 var20 = _closure1_slot4;
                 var1 = var1.HermesInternal;

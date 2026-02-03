@@ -20,37 +20,37 @@ import java.util.List;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final di.f f24416a;
+    private final di.f f24008a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final b f24417b;
+    private final b f24009b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Context f24418c;
+    private final Context f24010c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final f f24419d;
+    private final f f24011d;
 
     /* renamed from: e  reason: collision with root package name */
-    private PackageInfo f24420e;
+    private PackageInfo f24012e;
 
     public g(Context context, di.f fVar, b bVar) {
         f fVar2 = new f(new di.b(fVar));
-        this.f24416a = fVar;
-        this.f24417b = bVar;
-        this.f24418c = context;
-        this.f24419d = fVar2;
+        this.f24008a = fVar;
+        this.f24009b = bVar;
+        this.f24010c = context;
+        this.f24011d = fVar2;
     }
 
     private final PackageInfo d() {
-        if (this.f24420e == null) {
+        if (this.f24012e == null) {
             try {
-                this.f24420e = this.f24418c.getPackageManager().getPackageInfo(this.f24418c.getPackageName(), 64);
+                this.f24012e = this.f24010c.getPackageManager().getPackageInfo(this.f24010c.getPackageName(), 64);
             } catch (PackageManager.NameNotFoundException unused) {
                 return null;
             }
         }
-        return this.f24420e;
+        return this.f24012e;
     }
 
     private static X509Certificate e(Signature signature) {
@@ -75,18 +75,18 @@ public final class g {
         do {
             length--;
             if (length >= 0) {
-                this.f24419d.b(assetManager, fileArr[length]);
+                this.f24011d.b(assetManager, fileArr[length]);
             } else {
                 return true;
             }
-        } while (j10 == this.f24419d.a());
+        } while (j10 == this.f24011d.a());
         return false;
     }
 
     public final boolean b(List list) {
         Iterator it = list.iterator();
         while (it.hasNext()) {
-            if (!this.f24416a.g(((Intent) it.next()).getStringExtra("split_id")).exists()) {
+            if (!this.f24008a.g(((Intent) it.next()).getStringExtra("split_id")).exists()) {
                 return false;
             }
         }

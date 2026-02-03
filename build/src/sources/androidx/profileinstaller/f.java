@@ -18,10 +18,10 @@ import java.util.concurrent.Executor;
 public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c f4709a = new a();
+    private static final c f4678a = new a();
 
     /* renamed from: b  reason: collision with root package name */
-    static final c f4710b = new b();
+    static final c f4679b = new b();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements c {
@@ -186,7 +186,7 @@ public abstract class f {
     }
 
     public static void h(Context context) {
-        i(context, new g2.i(), f4709a);
+        i(context, new g2.i(), f4678a);
     }
 
     public static void i(Context context, Executor executor, c cVar) {

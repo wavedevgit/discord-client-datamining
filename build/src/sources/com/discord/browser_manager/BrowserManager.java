@@ -82,7 +82,7 @@ public final class BrowserManager {
     public static final Unit openUrlExternally$lambda$3(Function1 function1, Throwable th2) {
         if (!(th2 instanceof Error)) {
             function1.invoke(new Exception(th2));
-            return Unit.f33074a;
+            return Unit.f32464a;
         }
         throw th2;
     }
@@ -95,7 +95,7 @@ public final class BrowserManager {
     public static final Unit tryOpenUrlWithCustomTabs$lambda$0(Context context, String str, Function1 function1, Exception it) {
         Intrinsics.checkNotNullParameter(it, "it");
         INSTANCE.tryOpenUrlExternally(context, str, function1);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public final void tryOpenUrlExternally(@NotNull Context context, @NotNull String url, @NotNull Function1<? super Exception, Unit> onFailure) {

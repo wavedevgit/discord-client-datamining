@@ -256,7 +256,7 @@ public final class NestedScrollOnTouchTracker {
         if (job != null) {
             Job.a.a(job, null, 1, null);
         }
-        d10 = hs.i.d(CoroutineViewUtilsKt.attachedScope(view, true), null, null, new NestedScrollOnTouchTracker$handleTouch$2(this, view, null), 3, null);
+        d10 = js.i.d(CoroutineViewUtilsKt.attachedScope(view, true), null, null, new NestedScrollOnTouchTracker$handleTouch$2(this, view, null), 3, null);
         this.longPressJob = d10;
         if (this.onDoubleClickListener != null) {
             if (this.consideringDoubleClick && !this.doubleTapOriginTracker.hasOriginMoved(false, event)) {
@@ -267,7 +267,7 @@ public final class NestedScrollOnTouchTracker {
                 this.doubleTapOriginTracker.cleanUp();
                 this.doubleTapOriginTracker.hasOriginMoved(false, event);
                 this.runningDoubleClickJob = true;
-                d11 = hs.i.d(CoroutineViewUtilsKt.attachedScope(view, true), null, null, new NestedScrollOnTouchTracker$handleTouch$3(this, view, null), 3, null);
+                d11 = js.i.d(CoroutineViewUtilsKt.attachedScope(view, true), null, null, new NestedScrollOnTouchTracker$handleTouch$3(this, view, null), 3, null);
                 this.doubleClickJob = d11;
             }
         }

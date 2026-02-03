@@ -73,7 +73,7 @@ public final class PointerEventHelper {
         static {
             EVENT[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = qr.a.a($values);
+            $ENTRIES = sr.a.a($values);
         }
 
         private EVENT(String str, int i10) {

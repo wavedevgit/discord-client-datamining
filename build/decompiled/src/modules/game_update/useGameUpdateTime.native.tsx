@@ -24,20 +24,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/game_update/useGameUpdateTime.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun117965: for (var _fun117965_ip = 0;;) switch (_fun117965_ip) {
+        _fun118055: for (var _fun118055_ip = 0;;) switch (_fun118055_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.startDate;
                 var6 = null;
                 if (!(var6 != var5)) {
-                    _fun117965_ip = 626;
-                    continue _fun117965
+                    _fun118055_ip = 626;
+                    continue _fun118055
                 }
             case 18:
                 var0 = '';
                 if (!(var0 !== var5)) {
-                    _fun117965_ip = 626;
-                    continue _fun117965
+                    _fun118055_ip = 626;
+                    continue _fun118055
                 }
             case 29:
                 var10 = _closure1_slot1;
@@ -67,30 +67,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.bind(var10)();
                 var12 = var8.bind(var9)(var5, var4);
                 if (!(var2 !== var12)) {
-                    _fun117965_ip = 544;
-                    continue _fun117965
+                    _fun118055_ip = 544;
+                    continue _fun118055
                 }
             case 160:
                 var2 = -1;
                 if (!(var2 !== var12)) {
-                    _fun117965_ip = 479;
-                    continue _fun117965
+                    _fun118055_ip = 479;
+                    continue _fun118055
                 }
             case 173:
                 if (!(var1 !== var12)) {
-                    _fun117965_ip = 411;
-                    continue _fun117965
+                    _fun118055_ip = 411;
+                    continue _fun118055
                 }
             case 180:
                 if (!(!(var12 < var2))) {
-                    _fun117965_ip = 290;
-                    continue _fun117965
+                    _fun118055_ip = 290;
+                    continue _fun118055
                 }
             case 184:
                 var4 = var12 > var1;
                 if (!var4) {
-                    _fun117965_ip = 198;
-                    continue _fun117965
+                    _fun118055_ip = 198;
+                    continue _fun118055
                 }
             case 191:
                 var1 = 60;
@@ -99,8 +99,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 'content-inventory-overlay-text-secondary';
                 var2 = null;
                 if (!var4) {
-                    _fun117965_ip = 607;
-                    continue _fun117965
+                    _fun118055_ip = 607;
+                    continue _fun118055
                 }
             case 212:
                 var5 = _closure1_slot0;
@@ -119,8 +119,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.count = var12;
                 var2 = var8.bind(var9)(var5, var4);
                 var1 = 'text-link';
-                _fun117965_ip = 607;
-                continue _fun117965;
+                _fun118055_ip = 607;
+                continue _fun118055;
             case 290:
                 var4 = -14;
                 var5 = var12 > var4;
@@ -128,8 +128,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var1 = var4;
                 if (!var5) {
-                    _fun117965_ip = 607;
-                    continue _fun117965
+                    _fun118055_ip = 607;
+                    continue _fun118055
                 }
             case 317:
                 var6 = _closure1_slot0;
@@ -152,8 +152,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.count = var10;
                 var2 = var8.bind(var9)(var6, var5);
                 var1 = var4;
-                _fun117965_ip = 607;
-                continue _fun117965;
+                _fun118055_ip = 607;
+                continue _fun118055;
             case 411:
                 var8 = _closure1_slot0;
                 var9 = _closure1_slot2;
@@ -168,8 +168,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4["EqnX/z"];
                 var2 = var5.bind(var6)(var4);
                 var1 = 'text-link';
-                _fun117965_ip = 607;
-                continue _fun117965;
+                _fun118055_ip = 607;
+                continue _fun118055;
             case 479:
                 var8 = _closure1_slot0;
                 var9 = _closure1_slot2;
@@ -184,8 +184,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.ZdDLO0;
                 var2 = var5.bind(var6)(var4);
                 var1 = 'content-inventory-overlay-text-secondary';
-                _fun117965_ip = 607;
-                continue _fun117965;
+                _fun118055_ip = 607;
+                continue _fun118055;
             case 544:
                 var6 = _closure1_slot0;
                 var8 = _closure1_slot2;
@@ -217,4 +217,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGameUpdateTime = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3036, 3123, 1234, 2523, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3045, 3132, 1234, 2532, 2]);

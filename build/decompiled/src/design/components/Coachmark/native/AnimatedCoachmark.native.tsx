@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot6 = var3;
     var3 = function arg0, arg1() {
-        _fun57479: for (var _fun57479_ip = 0;;) switch (_fun57479_ip) {
+        _fun57537: for (var _fun57537_ip = 0;;) switch (_fun57537_ip) {
             case 0:
                 var8 = arg0;
                 var9 = arg1;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = null;
                 var6 = var4 != var8;
                 if (!var6) {
-                    _fun57479_ip = 147;
-                    continue _fun57479
+                    _fun57537_ip = 147;
+                    continue _fun57537
                 }
             case 88:
                 var7 = _closure1_slot6;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Coachmark/native/AnimatedCoachmark.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun57480: for (var _fun57480_ip = 0;;) switch (_fun57480_ip) {
+        _fun57538: for (var _fun57538_ip = 0;;) switch (_fun57538_ip) {
             case 0:
                 var4 = arg0;
                 var11 = var4.visible;
@@ -153,8 +153,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.useReducedMotion = var6;
                 var6 = undefined;
                 if (!var8) {
-                    _fun57480_ip = 221;
-                    continue _fun57480
+                    _fun57538_ip = 221;
+                    continue _fun57538
                 }
             case 218:
                 var6 = var7;
@@ -170,4 +170,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.AnimatedCoachmark = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 3711, 7019, 3156, 7016, 4925, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 3720, 7024, 3165, 7021, 4930, 2]);

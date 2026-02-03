@@ -9,33 +9,33 @@ import ud.f;
 final class d implements m0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Format f13478d;
+    private final Format f12446d;
 
     /* renamed from: i  reason: collision with root package name */
-    private long[] f13480i;
+    private long[] f12448i;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f13481o;
+    private boolean f12449o;
 
     /* renamed from: p  reason: collision with root package name */
-    private f f13482p;
+    private f f12450p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f13483q;
+    private boolean f12451q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f13484r;
+    private int f12452r;
 
     /* renamed from: e  reason: collision with root package name */
-    private final id.c f13479e = new id.c();
+    private final id.c f12447e = new id.c();
 
     /* renamed from: s  reason: collision with root package name */
-    private long f13485s = -9223372036854775807L;
+    private long f12453s = -9223372036854775807L;
 
     public d(f fVar, Format format, boolean z10) {
-        this.f13478d = format;
-        this.f13482p = fVar;
-        this.f13480i = fVar.f50251b;
+        this.f12446d = format;
+        this.f12450p = fVar;
+        this.f12448i = fVar.f50538b;
         e(fVar, z10);
     }
 
@@ -44,66 +44,66 @@ final class d implements m0 {
     }
 
     public String b() {
-        return this.f13482p.a();
+        return this.f12450p.a();
     }
 
     @Override // qd.m0
     public int c(x xVar, qc.f fVar, int i10) {
         boolean z10;
-        int i11 = this.f13484r;
-        if (i11 == this.f13480i.length) {
+        int i11 = this.f12452r;
+        if (i11 == this.f12448i.length) {
             z10 = true;
         } else {
             z10 = false;
         }
-        if (z10 && !this.f13481o) {
+        if (z10 && !this.f12449o) {
             fVar.s(4);
             return -4;
-        } else if ((i10 & 2) == 0 && this.f13483q) {
+        } else if ((i10 & 2) == 0 && this.f12451q) {
             if (z10) {
                 return -3;
             }
             if ((i10 & 1) == 0) {
-                this.f13484r = i11 + 1;
+                this.f12452r = i11 + 1;
             }
             if ((i10 & 4) == 0) {
-                byte[] a10 = this.f13479e.a(this.f13482p.f50250a[i11]);
+                byte[] a10 = this.f12447e.a(this.f12450p.f50537a[i11]);
                 fVar.u(a10.length);
-                fVar.f47347i.put(a10);
+                fVar.f47497i.put(a10);
             }
-            fVar.f47349p = this.f13480i[i11];
+            fVar.f47499p = this.f12448i[i11];
             fVar.s(1);
             return -4;
         } else {
-            xVar.f37240b = this.f13478d;
-            this.f13483q = true;
+            xVar.f36709b = this.f12446d;
+            this.f12451q = true;
             return -5;
         }
     }
 
     public void d(long j10) {
-        int e10 = w0.e(this.f13480i, j10, true, false);
-        this.f13484r = e10;
-        this.f13485s = (this.f13481o && e10 == this.f13480i.length) ? -9223372036854775807L : -9223372036854775807L;
+        int e10 = w0.e(this.f12448i, j10, true, false);
+        this.f12452r = e10;
+        this.f12453s = (this.f12449o && e10 == this.f12448i.length) ? -9223372036854775807L : -9223372036854775807L;
     }
 
     public void e(f fVar, boolean z10) {
         long j10;
-        int i10 = this.f13484r;
+        int i10 = this.f12452r;
         if (i10 == 0) {
             j10 = -9223372036854775807L;
         } else {
-            j10 = this.f13480i[i10 - 1];
+            j10 = this.f12448i[i10 - 1];
         }
-        this.f13481o = z10;
-        this.f13482p = fVar;
-        long[] jArr = fVar.f50251b;
-        this.f13480i = jArr;
-        long j11 = this.f13485s;
+        this.f12449o = z10;
+        this.f12450p = fVar;
+        long[] jArr = fVar.f50538b;
+        this.f12448i = jArr;
+        long j11 = this.f12453s;
         if (j11 != -9223372036854775807L) {
             d(j11);
         } else if (j10 != -9223372036854775807L) {
-            this.f13484r = w0.e(jArr, j10, false, false);
+            this.f12452r = w0.e(jArr, j10, false, false);
         }
     }
 
@@ -114,9 +114,9 @@ final class d implements m0 {
 
     @Override // qd.m0
     public int q(long j10) {
-        int max = Math.max(this.f13484r, w0.e(this.f13480i, j10, true, false));
-        int i10 = max - this.f13484r;
-        this.f13484r = max;
+        int max = Math.max(this.f12452r, w0.e(this.f12448i, j10, true, false));
+        int i10 = max - this.f12452r;
+        this.f12452r = max;
         return i10;
     }
 }

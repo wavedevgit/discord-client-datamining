@@ -12,10 +12,10 @@ import androidx.activity.BackEventCompat;
 public class e extends jh.a {
 
     /* renamed from: g  reason: collision with root package name */
-    private final float f31777g;
+    private final float f31573g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final float f31778h;
+    private final float f31574h;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends AnimatorListenerAdapter {
@@ -24,7 +24,7 @@ public class e extends jh.a {
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            e.this.f31765b.setTranslationY(0.0f);
+            e.this.f31561b.setTranslationY(0.0f);
             e.this.k(0.0f);
         }
     }
@@ -32,14 +32,14 @@ public class e extends jh.a {
     public e(View view) {
         super(view);
         Resources resources = view.getResources();
-        this.f31777g = resources.getDimension(yg.d.f54383i);
-        this.f31778h = resources.getDimension(yg.d.f54384j);
+        this.f31573g = resources.getDimension(yg.d.f54141i);
+        this.f31574h = resources.getDimension(yg.d.f54142j);
     }
 
     private Animator g() {
         AnimatorSet animatorSet = new AnimatorSet();
-        animatorSet.playTogether(ObjectAnimator.ofFloat(this.f31765b, View.SCALE_X, 1.0f), ObjectAnimator.ofFloat(this.f31765b, View.SCALE_Y, 1.0f));
-        View view = this.f31765b;
+        animatorSet.playTogether(ObjectAnimator.ofFloat(this.f31561b, View.SCALE_X, 1.0f), ObjectAnimator.ofFloat(this.f31561b, View.SCALE_Y, 1.0f));
+        View view = this.f31561b;
         if (view instanceof ViewGroup) {
             ViewGroup viewGroup = (ViewGroup) view;
             for (int i10 = 0; i10 < viewGroup.getChildCount(); i10++) {
@@ -55,14 +55,14 @@ public class e extends jh.a {
             return;
         }
         Animator g10 = g();
-        g10.setDuration(this.f31768e);
+        g10.setDuration(this.f31564e);
         g10.start();
     }
 
     public void h(BackEventCompat backEventCompat, Animator.AnimatorListener animatorListener) {
-        ObjectAnimator ofFloat = ObjectAnimator.ofFloat(this.f31765b, View.TRANSLATION_Y, this.f31765b.getHeight() * this.f31765b.getScaleY());
+        ObjectAnimator ofFloat = ObjectAnimator.ofFloat(this.f31561b, View.TRANSLATION_Y, this.f31561b.getHeight() * this.f31561b.getScaleY());
         ofFloat.setInterpolator(new h3.b());
-        ofFloat.setDuration(zg.a.c(this.f31766c, this.f31767d, backEventCompat.a()));
+        ofFloat.setDuration(zg.a.c(this.f31562c, this.f31563d, backEventCompat.a()));
         ofFloat.addListener(new a());
         if (animatorListener != null) {
             ofFloat.addListener(animatorListener);
@@ -72,7 +72,7 @@ public class e extends jh.a {
 
     public void i(BackEventCompat backEventCompat, Animator.AnimatorListener animatorListener) {
         Animator g10 = g();
-        g10.setDuration(zg.a.c(this.f31766c, this.f31767d, backEventCompat.a()));
+        g10.setDuration(zg.a.c(this.f31562c, this.f31563d, backEventCompat.a()));
         if (animatorListener != null) {
             g10.addListener(animatorListener);
         }
@@ -86,15 +86,15 @@ public class e extends jh.a {
     public void k(float f10) {
         float f11;
         float a10 = a(f10);
-        float width = this.f31765b.getWidth();
-        float height = this.f31765b.getHeight();
+        float width = this.f31561b.getWidth();
+        float height = this.f31561b.getHeight();
         if (width > 0.0f && height > 0.0f) {
-            float a11 = 1.0f - zg.a.a(0.0f, this.f31777g / width, a10);
-            float a12 = 1.0f - zg.a.a(0.0f, this.f31778h / height, a10);
-            this.f31765b.setScaleX(a11);
-            this.f31765b.setPivotY(height);
-            this.f31765b.setScaleY(a12);
-            View view = this.f31765b;
+            float a11 = 1.0f - zg.a.a(0.0f, this.f31573g / width, a10);
+            float a12 = 1.0f - zg.a.a(0.0f, this.f31574h / height, a10);
+            this.f31561b.setScaleX(a11);
+            this.f31561b.setPivotY(height);
+            this.f31561b.setScaleY(a12);
+            View view = this.f31561b;
             if (view instanceof ViewGroup) {
                 ViewGroup viewGroup = (ViewGroup) view;
                 for (int i10 = 0; i10 < viewGroup.getChildCount(); i10++) {

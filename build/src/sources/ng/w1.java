@@ -5,44 +5,44 @@ import ui.c;
 final class w1 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final w1 f41656a = new w1();
+    static final w1 f41695a = new w1();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41657b;
+    private static final ui.c f41696b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41658c;
+    private static final ui.c f41697c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41659d;
+    private static final ui.c f41698d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f41660e;
+    private static final ui.c f41699e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f41661f;
+    private static final ui.c f41700f;
 
     static {
         c.b a10 = ui.c.a("errorCode");
         f fVar = new f();
         fVar.a(1);
-        f41657b = a10.b(fVar.b()).a();
+        f41696b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("hasResult");
         f fVar2 = new f();
         fVar2.a(2);
-        f41658c = a11.b(fVar2.b()).a();
+        f41697c = a11.b(fVar2.b()).a();
         c.b a12 = ui.c.a("isColdCall");
         f fVar3 = new f();
         fVar3.a(3);
-        f41659d = a12.b(fVar3.b()).a();
+        f41698d = a12.b(fVar3.b()).a();
         c.b a13 = ui.c.a("imageInfo");
         f fVar4 = new f();
         fVar4.a(4);
-        f41660e = a13.b(fVar4.b()).a();
+        f41699e = a13.b(fVar4.b()).a();
         c.b a14 = ui.c.a("recognizerOptions");
         f fVar5 = new f();
         fVar5.a(5);
-        f41661f = a14.b(fVar5.b()).a();
+        f41700f = a14.b(fVar5.b()).a();
     }
 
     private w1() {

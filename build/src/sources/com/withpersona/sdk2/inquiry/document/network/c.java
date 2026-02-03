@@ -12,36 +12,36 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
-import ks.g;
-import um.o;
-@Metadata(d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\t\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0002\u0011\fB!\b\u0002\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0003¢\u0006\u0004\b\b\u0010\tJ\u001b\u0010\f\u001a\u00020\u000b2\n\u0010\n\u001a\u0006\u0012\u0002\b\u00030\u0001H\u0016¢\u0006\u0004\b\f\u0010\rJ\u0015\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00020\u000eH\u0016¢\u0006\u0004\b\u000f\u0010\u0010R\u0014\u0010\u0004\u001a\u00020\u00038\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0011\u0010\u0012R\u0014\u0010\u0006\u001a\u00020\u00058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0013\u0010\u0014R\u0017\u0010\u0007\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b\u0015\u0010\u0012\u001a\u0004\b\u0015\u0010\u0016¨\u0006\u0017"}, d2 = {"Lcom/withpersona/sdk2/inquiry/document/network/c;", "Lum/o;", "Lcom/withpersona/sdk2/inquiry/document/network/c$b;", "", "sessionToken", "Lyn/b;", "service", "documentId", "<init>", "(Ljava/lang/String;Lyn/b;Ljava/lang/String;)V", "otherWorker", "", "a", "(Lum/o;)Z", "Lkotlinx/coroutines/flow/Flow;", "run", "()Lkotlinx/coroutines/flow/Flow;", "b", "Ljava/lang/String;", "c", "Lyn/b;", "d", "()Ljava/lang/String;", "document_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+import ms.g;
+import wm.o;
+@Metadata(d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\t\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0002\u0011\fB!\b\u0002\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0003¢\u0006\u0004\b\b\u0010\tJ\u001b\u0010\f\u001a\u00020\u000b2\n\u0010\n\u001a\u0006\u0012\u0002\b\u00030\u0001H\u0016¢\u0006\u0004\b\f\u0010\rJ\u0015\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00020\u000eH\u0016¢\u0006\u0004\b\u000f\u0010\u0010R\u0014\u0010\u0004\u001a\u00020\u00038\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0011\u0010\u0012R\u0014\u0010\u0006\u001a\u00020\u00058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0013\u0010\u0014R\u0017\u0010\u0007\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b\u0015\u0010\u0012\u001a\u0004\b\u0015\u0010\u0016¨\u0006\u0017"}, d2 = {"Lcom/withpersona/sdk2/inquiry/document/network/c;", "Lwm/o;", "Lcom/withpersona/sdk2/inquiry/document/network/c$b;", "", "sessionToken", "Lao/b;", "service", "documentId", "<init>", "(Ljava/lang/String;Lao/b;Ljava/lang/String;)V", "otherWorker", "", "a", "(Lwm/o;)Z", "Lkotlinx/coroutines/flow/Flow;", "run", "()Lkotlinx/coroutines/flow/Flow;", "b", "Ljava/lang/String;", "c", "Lao/b;", "d", "()Ljava/lang/String;", "document_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class c implements o<b> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f19199b;
+    private final String f18181b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final yn.b f19200c;
+    private final ao.b f18182c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f19201d;
+    private final String f18183d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final yn.b f19202a;
+        private final ao.b f18184a;
 
-        public a(yn.b service) {
+        public a(ao.b service) {
             Intrinsics.checkNotNullParameter(service, "service");
-            this.f19202a = service;
+            this.f18184a = service;
         }
 
         public final c a(String sessionToken, String documentId) {
             Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
             Intrinsics.checkNotNullParameter(documentId, "documentId");
-            return new c(sessionToken, this.f19202a, documentId, null);
+            return new c(sessionToken, this.f18184a, documentId, null);
         }
     }
 
@@ -52,36 +52,36 @@ public final class c implements o<b> {
         public static final class a extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final InternalErrorInfo f19203a;
+            private final InternalErrorInfo f18185a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public a(InternalErrorInfo cause) {
                 super(null);
                 Intrinsics.checkNotNullParameter(cause, "cause");
-                this.f19203a = cause;
+                this.f18185a = cause;
             }
 
             public final InternalErrorInfo a() {
-                return this.f19203a;
+                return this.f18185a;
             }
         }
 
         /* renamed from: com.withpersona.sdk2.inquiry.document.network.c$b$b  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0240b extends b {
+        public static final class C0221b extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final List f19204a;
+            private final List f18186a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            public C0240b(List documents) {
+            public C0221b(List documents) {
                 super(null);
                 Intrinsics.checkNotNullParameter(documents, "documents");
-                this.f19204a = documents;
+                this.f18186a = documents;
             }
 
             public final List a() {
-                return this.f19204a;
+                return this.f18186a;
             }
         }
 
@@ -95,16 +95,16 @@ public final class c implements o<b> {
 
     /* renamed from: com.withpersona.sdk2.inquiry.document.network.c$c  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static final class C0241c extends k implements Function2 {
+    static final class C0222c extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f19205d;
+        Object f18187d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f19206e;
+        int f18188e;
 
         /* renamed from: i  reason: collision with root package name */
-        private /* synthetic */ Object f19207i;
+        private /* synthetic */ Object f18189i;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: com.withpersona.sdk2.inquiry.document.network.c$c$a */
@@ -112,26 +112,26 @@ public final class c implements o<b> {
         public static final class a extends k implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f19209d;
+            int f18191d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ c f19210e;
+            final /* synthetic */ c f18192e;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(c cVar, Continuation continuation) {
                 super(1, continuation);
-                this.f19210e = cVar;
+                this.f18192e = cVar;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Continuation continuation) {
-                return new a(this.f19210e, continuation);
+                return new a(this.f18192e, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
-                Object f10 = pr.b.f();
-                int i10 = this.f19209d;
+                Object f10 = rr.b.f();
+                int i10 = this.f18191d;
                 if (i10 != 0) {
                     if (i10 == 1) {
                         kotlin.c.b(obj);
@@ -140,10 +140,10 @@ public final class c implements o<b> {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
                 kotlin.c.b(obj);
-                yn.b bVar = this.f19210e.f19200c;
-                String str = this.f19210e.f19199b;
-                String d10 = this.f19210e.d();
-                this.f19209d = 1;
+                ao.b bVar = this.f18192e.f18182c;
+                String str = this.f18192e.f18181b;
+                String d10 = this.f18192e.d();
+                this.f18191d = 1;
                 Object b10 = bVar.b(str, d10, this);
                 if (b10 == f10) {
                     return f10;
@@ -153,19 +153,19 @@ public final class c implements o<b> {
 
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Continuation continuation) {
-                return ((a) create(continuation)).invokeSuspend(Unit.f33074a);
+                return ((a) create(continuation)).invokeSuspend(Unit.f32464a);
             }
         }
 
-        C0241c(Continuation continuation) {
+        C0222c(Continuation continuation) {
             super(2, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            C0241c c0241c = new C0241c(continuation);
-            c0241c.f19207i = obj;
-            return c0241c;
+            C0222c c0222c = new C0222c(continuation);
+            c0222c.f18189i = obj;
+            return c0222c;
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:14:0x0052, code lost:
@@ -198,25 +198,25 @@ public final class c implements o<b> {
                 Method dump skipped, instructions count: 267
                 To view this dump add '--comments-level debug' option
             */
-            throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.document.network.c.C0241c.invokeSuspend(java.lang.Object):java.lang.Object");
+            throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.document.network.c.C0222c.invokeSuspend(java.lang.Object):java.lang.Object");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((C0241c) create(flowCollector, continuation)).invokeSuspend(Unit.f33074a);
+            return ((C0222c) create(flowCollector, continuation)).invokeSuspend(Unit.f32464a);
         }
     }
 
-    public /* synthetic */ c(String str, yn.b bVar, String str2, DefaultConstructorMarker defaultConstructorMarker) {
+    public /* synthetic */ c(String str, ao.b bVar, String str2, DefaultConstructorMarker defaultConstructorMarker) {
         this(str, bVar, str2);
     }
 
-    @Override // um.o
+    @Override // wm.o
     public boolean a(o otherWorker) {
         Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
         if (otherWorker instanceof c) {
             c cVar = (c) otherWorker;
-            if (Intrinsics.areEqual(this.f19199b, cVar.f19199b) && Intrinsics.areEqual(this.f19201d, cVar.f19201d)) {
+            if (Intrinsics.areEqual(this.f18181b, cVar.f18181b) && Intrinsics.areEqual(this.f18183d, cVar.f18183d)) {
                 return true;
             }
             return false;
@@ -225,17 +225,17 @@ public final class c implements o<b> {
     }
 
     public final String d() {
-        return this.f19201d;
+        return this.f18183d;
     }
 
-    @Override // um.o
+    @Override // wm.o
     public Flow run() {
-        return g.v(new C0241c(null));
+        return g.v(new C0222c(null));
     }
 
-    private c(String str, yn.b bVar, String str2) {
-        this.f19199b = str;
-        this.f19200c = bVar;
-        this.f19201d = str2;
+    private c(String str, ao.b bVar, String str2) {
+        this.f18181b = str;
+        this.f18182c = bVar;
+        this.f18183d = str2;
     }
 }

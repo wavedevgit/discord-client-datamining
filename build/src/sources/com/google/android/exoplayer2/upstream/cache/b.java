@@ -13,37 +13,37 @@ import ne.y;
 public final class b implements l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.google.android.exoplayer2.upstream.cache.a f14027a;
+    private final com.google.android.exoplayer2.upstream.cache.a f12995a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f14028b;
+    private final long f12996b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f14029c;
+    private final int f12997c;
 
     /* renamed from: d  reason: collision with root package name */
-    private com.google.android.exoplayer2.upstream.a f14030d;
+    private com.google.android.exoplayer2.upstream.a f12998d;
 
     /* renamed from: e  reason: collision with root package name */
-    private long f14031e;
+    private long f12999e;
 
     /* renamed from: f  reason: collision with root package name */
-    private File f14032f;
+    private File f13000f;
 
     /* renamed from: g  reason: collision with root package name */
-    private OutputStream f14033g;
+    private OutputStream f13001g;
 
     /* renamed from: h  reason: collision with root package name */
-    private long f14034h;
+    private long f13002h;
 
     /* renamed from: i  reason: collision with root package name */
-    private long f14035i;
+    private long f13003i;
 
     /* renamed from: j  reason: collision with root package name */
-    private i f14036j;
+    private i f13004j;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class a extends a.C0178a {
+    public static final class a extends a.C0159a {
         public a(IOException iOException) {
             super(iOException);
         }
@@ -54,63 +54,63 @@ public final class b implements l {
     }
 
     private void a() {
-        OutputStream outputStream = this.f14033g;
+        OutputStream outputStream = this.f13001g;
         if (outputStream == null) {
             return;
         }
         try {
             outputStream.flush();
-            w0.n(this.f14033g);
-            this.f14033g = null;
-            this.f14032f = null;
-            this.f14027a.h((File) w0.j(this.f14032f), this.f14034h);
+            w0.n(this.f13001g);
+            this.f13001g = null;
+            this.f13000f = null;
+            this.f12995a.h((File) w0.j(this.f13000f), this.f13002h);
         } catch (Throwable th2) {
-            w0.n(this.f14033g);
-            this.f14033g = null;
-            this.f14032f = null;
-            ((File) w0.j(this.f14032f)).delete();
+            w0.n(this.f13001g);
+            this.f13001g = null;
+            this.f13000f = null;
+            ((File) w0.j(this.f13000f)).delete();
             throw th2;
         }
     }
 
     private void c(com.google.android.exoplayer2.upstream.a aVar) {
-        long j10 = aVar.f13982h;
+        long j10 = aVar.f12950h;
         long j11 = -1;
         if (j10 != -1) {
-            j11 = Math.min(j10 - this.f14035i, this.f14031e);
+            j11 = Math.min(j10 - this.f13003i, this.f12999e);
         }
-        this.f14032f = this.f14027a.a((String) w0.j(aVar.f13983i), aVar.f13981g + this.f14035i, j11);
-        FileOutputStream fileOutputStream = new FileOutputStream(this.f14032f);
-        if (this.f14029c > 0) {
-            i iVar = this.f14036j;
+        this.f13000f = this.f12995a.a((String) w0.j(aVar.f12951i), aVar.f12949g + this.f13003i, j11);
+        FileOutputStream fileOutputStream = new FileOutputStream(this.f13000f);
+        if (this.f12997c > 0) {
+            i iVar = this.f13004j;
             if (iVar == null) {
-                this.f14036j = new i(fileOutputStream, this.f14029c);
+                this.f13004j = new i(fileOutputStream, this.f12997c);
             } else {
                 iVar.a(fileOutputStream);
             }
-            this.f14033g = this.f14036j;
+            this.f13001g = this.f13004j;
         } else {
-            this.f14033g = fileOutputStream;
+            this.f13001g = fileOutputStream;
         }
-        this.f14034h = 0L;
+        this.f13002h = 0L;
     }
 
     @Override // le.l
     public void b(com.google.android.exoplayer2.upstream.a aVar) {
         long j10;
-        ne.a.e(aVar.f13983i);
-        if (aVar.f13982h == -1 && aVar.d(2)) {
-            this.f14030d = null;
+        ne.a.e(aVar.f12951i);
+        if (aVar.f12950h == -1 && aVar.d(2)) {
+            this.f12998d = null;
             return;
         }
-        this.f14030d = aVar;
+        this.f12998d = aVar;
         if (aVar.d(4)) {
-            j10 = this.f14028b;
+            j10 = this.f12996b;
         } else {
             j10 = LongCompanionObject.MAX_VALUE;
         }
-        this.f14031e = j10;
-        this.f14035i = 0L;
+        this.f12999e = j10;
+        this.f13003i = 0L;
         try {
             c(aVar);
         } catch (IOException e10) {
@@ -120,7 +120,7 @@ public final class b implements l {
 
     @Override // le.l
     public void close() {
-        if (this.f14030d == null) {
+        if (this.f12998d == null) {
             return;
         }
         try {
@@ -132,21 +132,21 @@ public final class b implements l {
 
     @Override // le.l
     public void write(byte[] bArr, int i10, int i11) {
-        com.google.android.exoplayer2.upstream.a aVar = this.f14030d;
+        com.google.android.exoplayer2.upstream.a aVar = this.f12998d;
         if (aVar != null) {
             int i12 = 0;
             while (i12 < i11) {
                 try {
-                    if (this.f14034h == this.f14031e) {
+                    if (this.f13002h == this.f12999e) {
                         a();
                         c(aVar);
                     }
-                    int min = (int) Math.min(i11 - i12, this.f14031e - this.f14034h);
-                    ((OutputStream) w0.j(this.f14033g)).write(bArr, i10 + i12, min);
+                    int min = (int) Math.min(i11 - i12, this.f12999e - this.f13002h);
+                    ((OutputStream) w0.j(this.f13001g)).write(bArr, i10 + i12, min);
                     i12 += min;
                     long j10 = min;
-                    this.f14034h += j10;
-                    this.f14035i += j10;
+                    this.f13002h += j10;
+                    this.f13003i += j10;
                 } catch (IOException e10) {
                     throw new a(e10);
                 }
@@ -160,8 +160,8 @@ public final class b implements l {
         if (i11 != 0 && j10 < 2097152) {
             y.i("CacheDataSink", "fragmentSize is below the minimum recommended value of 2097152. This may cause poor cache performance.");
         }
-        this.f14027a = (com.google.android.exoplayer2.upstream.cache.a) ne.a.e(aVar);
-        this.f14028b = i11 == 0 ? LongCompanionObject.MAX_VALUE : j10;
-        this.f14029c = i10;
+        this.f12995a = (com.google.android.exoplayer2.upstream.cache.a) ne.a.e(aVar);
+        this.f12996b = i11 == 0 ? LongCompanionObject.MAX_VALUE : j10;
+        this.f12997c = i10;
     }
 }

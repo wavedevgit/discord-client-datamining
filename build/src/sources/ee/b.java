@@ -6,26 +6,26 @@ import com.facebook.react.uimanager.ViewProps;
 final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f22757a;
+    public final int f21448a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f22758b;
+    public final int f21449b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f22759c;
+    public final int f21450c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f22760d;
+    public final int f21451d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f22761e;
+    public final int f21452e;
 
     private b(int i10, int i11, int i12, int i13, int i14) {
-        this.f22757a = i10;
-        this.f22758b = i11;
-        this.f22759c = i12;
-        this.f22760d = i13;
-        this.f22761e = i14;
+        this.f21448a = i10;
+        this.f21449b = i11;
+        this.f21450c = i12;
+        this.f21451d = i13;
+        this.f21452e = i14;
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */

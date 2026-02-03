@@ -6,21 +6,21 @@ import ne.h0;
 import ne.w0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class a extends b {
-    public static final Parcelable.Creator<a> CREATOR = new C0523a();
+    public static final Parcelable.Creator<a> CREATOR = new C0520a();
 
     /* renamed from: d  reason: collision with root package name */
-    public final long f39964d;
+    public final long f40003d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final long f39965e;
+    public final long f40004e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final byte[] f39966i;
+    public final byte[] f40005i;
 
     /* renamed from: nd.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    class C0523a implements Parcelable.Creator {
-        C0523a() {
+    class C0520a implements Parcelable.Creator {
+        C0520a() {
         }
 
         @Override // android.os.Parcelable.Creator
@@ -36,7 +36,7 @@ public final class a extends b {
         }
     }
 
-    /* synthetic */ a(Parcel parcel, C0523a c0523a) {
+    /* synthetic */ a(Parcel parcel, C0520a c0520a) {
         this(parcel);
     }
 
@@ -51,25 +51,25 @@ public final class a extends b {
 
     @Override // nd.b
     public String toString() {
-        return "SCTE-35 PrivateCommand { ptsAdjustment=" + this.f39964d + ", identifier= " + this.f39965e + " }";
+        return "SCTE-35 PrivateCommand { ptsAdjustment=" + this.f40003d + ", identifier= " + this.f40004e + " }";
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeLong(this.f39964d);
-        parcel.writeLong(this.f39965e);
-        parcel.writeByteArray(this.f39966i);
+        parcel.writeLong(this.f40003d);
+        parcel.writeLong(this.f40004e);
+        parcel.writeByteArray(this.f40005i);
     }
 
     private a(long j10, byte[] bArr, long j11) {
-        this.f39964d = j11;
-        this.f39965e = j10;
-        this.f39966i = bArr;
+        this.f40003d = j11;
+        this.f40004e = j10;
+        this.f40005i = bArr;
     }
 
     private a(Parcel parcel) {
-        this.f39964d = parcel.readLong();
-        this.f39965e = parcel.readLong();
-        this.f39966i = (byte[]) w0.j(parcel.createByteArray());
+        this.f40003d = parcel.readLong();
+        this.f40004e = parcel.readLong();
+        this.f40005i = (byte[]) w0.j(parcel.createByteArray());
     }
 }

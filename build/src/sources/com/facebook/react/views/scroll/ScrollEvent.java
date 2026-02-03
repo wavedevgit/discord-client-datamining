@@ -56,7 +56,7 @@ public final class ScrollEvent extends Event<ScrollEvent> {
         private Companion() {
         }
 
-        @jr.c
+        @lr.c
         @NotNull
         public final ScrollEvent obtain(int i10, ScrollEventType scrollEventType, float f10, float f11, float f12, float f13, int i11, int i12, int i13, int i14) {
             return obtain(-1, i10, scrollEventType, f10, f11, f12, f13, i11, i12, i13, i14);
@@ -162,7 +162,7 @@ public final class ScrollEvent extends Event<ScrollEvent> {
     private ScrollEvent() {
     }
 
-    @jr.c
+    @lr.c
     @NotNull
     public static final ScrollEvent obtain(int i10, ScrollEventType scrollEventType, float f10, float f11, float f12, float f13, int i11, int i12, int i13, int i14) {
         return Companion.obtain(i10, scrollEventType, f10, f11, f12, f13, i11, i12, i13, i14);

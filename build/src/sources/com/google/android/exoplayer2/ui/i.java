@@ -20,29 +20,29 @@ abstract class i {
         return !(obj instanceof de.b);
     }
 
-    public static void c(b.C0790b c0790b) {
-        c0790b.b();
-        if (c0790b.e() instanceof Spanned) {
-            if (!(c0790b.e() instanceof Spannable)) {
-                c0790b.o(SpannableString.valueOf(c0790b.e()));
+    public static void c(b.C0784b c0784b) {
+        c0784b.b();
+        if (c0784b.e() instanceof Spanned) {
+            if (!(c0784b.e() instanceof Spannable)) {
+                c0784b.o(SpannableString.valueOf(c0784b.e()));
             }
-            e((Spannable) ne.a.e(c0790b.e()), new n() { // from class: com.google.android.exoplayer2.ui.g
+            e((Spannable) ne.a.e(c0784b.e()), new n() { // from class: com.google.android.exoplayer2.ui.g
                 @Override // ii.n
                 public final boolean apply(Object obj) {
                     return i.b(obj);
                 }
             });
         }
-        d(c0790b);
+        d(c0784b);
     }
 
-    public static void d(b.C0790b c0790b) {
-        c0790b.q(-3.4028235E38f, Integer.MIN_VALUE);
-        if (c0790b.e() instanceof Spanned) {
-            if (!(c0790b.e() instanceof Spannable)) {
-                c0790b.o(SpannableString.valueOf(c0790b.e()));
+    public static void d(b.C0784b c0784b) {
+        c0784b.q(-3.4028235E38f, Integer.MIN_VALUE);
+        if (c0784b.e() instanceof Spanned) {
+            if (!(c0784b.e() instanceof Spannable)) {
+                c0784b.o(SpannableString.valueOf(c0784b.e()));
             }
-            e((Spannable) ne.a.e(c0790b.e()), new n() { // from class: com.google.android.exoplayer2.ui.h
+            e((Spannable) ne.a.e(c0784b.e()), new n() { // from class: com.google.android.exoplayer2.ui.h
                 @Override // ii.n
                 public final boolean apply(Object obj) {
                     return i.a(obj);

@@ -16,38 +16,38 @@ import org.jetbrains.annotations.NotNull;
 public final class Camera2PreviewView extends ViewGroup {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f19090d;
+    private int f18072d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f19091e;
+    private int f18073e;
 
     /* renamed from: i  reason: collision with root package name */
-    private SurfaceView f19092i;
+    private SurfaceView f18074i;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public Camera2PreviewView(@NotNull Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         Intrinsics.checkNotNullParameter(context, "context");
         SurfaceView surfaceView = new SurfaceView(getContext());
-        this.f19092i = surfaceView;
+        this.f18074i = surfaceView;
         addView(surfaceView);
     }
 
     public final void a() {
         removeAllViews();
         SurfaceView surfaceView = new SurfaceView(getContext());
-        this.f19092i = surfaceView;
+        this.f18074i = surfaceView;
         addView(surfaceView);
         requestLayout();
     }
 
     public final void b(int i10, int i11, int i12) {
         if (i12 != 90 && i12 != 270) {
-            this.f19090d = i10;
-            this.f19091e = i11;
+            this.f18072d = i10;
+            this.f18073e = i11;
         } else {
-            this.f19090d = i11;
-            this.f19091e = i10;
+            this.f18072d = i11;
+            this.f18073e = i10;
         }
         getHolder().setFixedSize(i10, i11);
         requestLayout();
@@ -55,40 +55,40 @@ public final class Camera2PreviewView extends ViewGroup {
 
     @NotNull
     public final SurfaceHolder getHolder() {
-        SurfaceHolder holder = this.f19092i.getHolder();
+        SurfaceHolder holder = this.f18074i.getHolder();
         Intrinsics.checkNotNullExpressionValue(holder, "getHolder(...)");
         return holder;
     }
 
     @NotNull
     public final SurfaceView getSurfaceView() {
-        return this.f19092i;
+        return this.f18074i;
     }
 
     @Override // android.view.ViewGroup, android.view.View
     protected void onLayout(boolean z10, int i10, int i11, int i12, int i13) {
-        if (this.f19090d != 0 && this.f19091e != 0) {
+        if (this.f18072d != 0 && this.f18073e != 0) {
             int measuredWidth = getMeasuredWidth();
             int measuredHeight = getMeasuredHeight();
-            double max = Double.max(measuredWidth / this.f19090d, measuredHeight / this.f19091e);
-            int ceil = (int) Math.ceil(this.f19090d * max);
-            int ceil2 = (int) Math.ceil(max * this.f19091e);
+            double max = Double.max(measuredWidth / this.f18072d, measuredHeight / this.f18073e);
+            int ceil = (int) Math.ceil(this.f18072d * max);
+            int ceil2 = (int) Math.ceil(max * this.f18073e);
             int d10 = (d.d(ceil - measuredWidth, 0) / 2) * (-1);
             int d11 = (d.d(ceil2 - measuredHeight, 0) / 2) * (-1);
-            this.f19092i.layout(d10, d11, ceil + d10, ceil2 + d11);
+            this.f18074i.layout(d10, d11, ceil + d10, ceil2 + d11);
             return;
         }
-        this.f19092i.layout(i10, i11, i12, i13);
+        this.f18074i.layout(i10, i11, i12, i13);
     }
 
     @Override // android.view.View
     protected void onMeasure(int i10, int i11) {
         setMeasuredDimension(View.resolveSize(Integer.MAX_VALUE, i10), View.resolveSize(Integer.MAX_VALUE, i11));
-        this.f19092i.measure(View.MeasureSpec.makeMeasureSpec(this.f19090d, 1073741824), View.MeasureSpec.makeMeasureSpec(this.f19091e, 1073741824));
+        this.f18074i.measure(View.MeasureSpec.makeMeasureSpec(this.f18072d, 1073741824), View.MeasureSpec.makeMeasureSpec(this.f18073e, 1073741824));
     }
 
     public final void setSurfaceView(@NotNull SurfaceView surfaceView) {
         Intrinsics.checkNotNullParameter(surfaceView, "<set-?>");
-        this.f19092i = surfaceView;
+        this.f18074i = surfaceView;
     }
 }

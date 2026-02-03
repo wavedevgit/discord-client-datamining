@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class AuthorizeWebRtcResponseJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20488a;
+    private final m.b f19470a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f20489b;
+    private final h f19471b;
 
     public AuthorizeWebRtcResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a(NotificationRenderer.USERNAME, "credential", "server_url");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20488a = a10;
+        this.f19470a = a10;
         h f10 = moshi.f(String.class, x0.d(), NotificationRenderer.USERNAME);
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20489b = f10;
+        this.f19471b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -38,21 +38,21 @@ public final class AuthorizeWebRtcResponseJsonAdapter extends h {
         String str2 = null;
         String str3 = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.f20488a);
-            if (t02 != -1) {
-                if (t02 != 0) {
-                    if (t02 != 1) {
-                        if (t02 == 2) {
-                            str3 = (String) this.f20489b.fromJson(reader);
+            int A0 = reader.A0(this.f19470a);
+            if (A0 != -1) {
+                if (A0 != 0) {
+                    if (A0 != 1) {
+                        if (A0 == 2) {
+                            str3 = (String) this.f19471b.fromJson(reader);
                         }
                     } else {
-                        str2 = (String) this.f20489b.fromJson(reader);
+                        str2 = (String) this.f19471b.fromJson(reader);
                     }
                 } else {
-                    str = (String) this.f20489b.fromJson(reader);
+                    str = (String) this.f19471b.fromJson(reader);
                 }
             } else {
-                reader.F0();
+                reader.E0();
                 reader.P();
             }
         }
@@ -66,12 +66,12 @@ public final class AuthorizeWebRtcResponseJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (authorizeWebRtcResponse != null) {
             writer.l();
-            writer.t0(NotificationRenderer.USERNAME);
-            this.f20489b.toJson(writer, authorizeWebRtcResponse.c());
-            writer.t0("credential");
-            this.f20489b.toJson(writer, authorizeWebRtcResponse.a());
-            writer.t0("server_url");
-            this.f20489b.toJson(writer, authorizeWebRtcResponse.b());
+            writer.A0(NotificationRenderer.USERNAME);
+            this.f19471b.toJson(writer, authorizeWebRtcResponse.c());
+            writer.A0("credential");
+            this.f19471b.toJson(writer, authorizeWebRtcResponse.a());
+            writer.A0("server_url");
+            this.f19471b.toJson(writer, authorizeWebRtcResponse.b());
             writer.E();
             return;
         }

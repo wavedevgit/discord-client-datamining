@@ -16,33 +16,33 @@ public abstract class o0 {
     public class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ int f4366d;
+        final /* synthetic */ int f4335d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ ArrayList f4367e;
+        final /* synthetic */ ArrayList f4336e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ ArrayList f4368i;
+        final /* synthetic */ ArrayList f4337i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ ArrayList f4369o;
+        final /* synthetic */ ArrayList f4338o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ ArrayList f4370p;
+        final /* synthetic */ ArrayList f4339p;
 
         a(int i10, ArrayList arrayList, ArrayList arrayList2, ArrayList arrayList3, ArrayList arrayList4) {
-            this.f4366d = i10;
-            this.f4367e = arrayList;
-            this.f4368i = arrayList2;
-            this.f4369o = arrayList3;
-            this.f4370p = arrayList4;
+            this.f4335d = i10;
+            this.f4336e = arrayList;
+            this.f4337i = arrayList2;
+            this.f4338o = arrayList3;
+            this.f4339p = arrayList4;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            for (int i10 = 0; i10 < this.f4366d; i10++) {
-                androidx.core.view.h0.J0((View) this.f4367e.get(i10), (String) this.f4368i.get(i10));
-                androidx.core.view.h0.J0((View) this.f4369o.get(i10), (String) this.f4370p.get(i10));
+            for (int i10 = 0; i10 < this.f4335d; i10++) {
+                androidx.core.view.h0.J0((View) this.f4336e.get(i10), (String) this.f4337i.get(i10));
+                androidx.core.view.h0.J0((View) this.f4338o.get(i10), (String) this.f4339p.get(i10));
             }
         }
     }

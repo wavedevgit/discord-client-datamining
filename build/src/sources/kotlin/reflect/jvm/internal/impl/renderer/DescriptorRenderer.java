@@ -113,7 +113,7 @@ public abstract class DescriptorRenderer {
                     case 6:
                         return "enum entry";
                     default:
-                        throw new jr.p();
+                        throw new lr.p();
                 }
             }
             throw new AssertionError("Unexpected classifier: " + classifier);
@@ -183,24 +183,24 @@ public abstract class DescriptorRenderer {
     static {
         Companion companion = new Companion(null);
         Companion = companion;
-        WITHOUT_MODIFIERS = companion.withOptions(a.f35139d);
-        COMPACT_WITH_MODIFIERS = companion.withOptions(c.f35141d);
-        COMPACT = companion.withOptions(d.f35142d);
-        COMPACT_WITHOUT_SUPERTYPES = companion.withOptions(e.f35143d);
-        COMPACT_WITH_SHORT_TYPES = companion.withOptions(f.f35144d);
-        ONLY_NAMES_WITH_SHORT_TYPES = companion.withOptions(g.f35145d);
-        FQ_NAMES_IN_TYPES = companion.withOptions(h.f35146d);
-        FQ_NAMES_IN_TYPES_WITH_ANNOTATIONS = companion.withOptions(i.f35147d);
-        SHORT_NAMES_IN_TYPES = companion.withOptions(j.f35148d);
-        DEBUG_TEXT = companion.withOptions(k.f35149d);
-        HTML = companion.withOptions(b.f35140d);
+        WITHOUT_MODIFIERS = companion.withOptions(a.f34529d);
+        COMPACT_WITH_MODIFIERS = companion.withOptions(c.f34531d);
+        COMPACT = companion.withOptions(d.f34532d);
+        COMPACT_WITHOUT_SUPERTYPES = companion.withOptions(e.f34533d);
+        COMPACT_WITH_SHORT_TYPES = companion.withOptions(f.f34534d);
+        ONLY_NAMES_WITH_SHORT_TYPES = companion.withOptions(g.f34535d);
+        FQ_NAMES_IN_TYPES = companion.withOptions(h.f34536d);
+        FQ_NAMES_IN_TYPES_WITH_ANNOTATIONS = companion.withOptions(i.f34537d);
+        SHORT_NAMES_IN_TYPES = companion.withOptions(j.f34538d);
+        DEBUG_TEXT = companion.withOptions(k.f34539d);
+        HTML = companion.withOptions(b.f34530d);
     }
 
     public static final Unit a(DescriptorRendererOptions withOptions) {
         Intrinsics.checkNotNullParameter(withOptions, "$this$withOptions");
         withOptions.setWithDefinedIn(false);
         withOptions.setModifiers(x0.d());
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public static final Unit b(DescriptorRendererOptions withOptions) {
@@ -208,13 +208,13 @@ public abstract class DescriptorRenderer {
         withOptions.setWithDefinedIn(false);
         withOptions.setModifiers(x0.d());
         withOptions.setWithoutSuperTypes(true);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public static final Unit c(DescriptorRendererOptions withOptions) {
         Intrinsics.checkNotNullParameter(withOptions, "$this$withOptions");
         withOptions.setWithDefinedIn(false);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public static final Unit d(DescriptorRendererOptions withOptions) {
@@ -222,7 +222,7 @@ public abstract class DescriptorRenderer {
         withOptions.setModifiers(x0.d());
         withOptions.setClassifierNamePolicy(ClassifierNamePolicy.SHORT.INSTANCE);
         withOptions.setParameterNameRenderingPolicy(ParameterNameRenderingPolicy.ONLY_NON_SYNTHESIZED);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public static final Unit e(DescriptorRendererOptions withOptions) {
@@ -230,26 +230,26 @@ public abstract class DescriptorRenderer {
         withOptions.setDebugMode(true);
         withOptions.setClassifierNamePolicy(ClassifierNamePolicy.FULLY_QUALIFIED.INSTANCE);
         withOptions.setModifiers(DescriptorRendererModifier.ALL);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public static final Unit f(DescriptorRendererOptions withOptions) {
         Intrinsics.checkNotNullParameter(withOptions, "$this$withOptions");
         withOptions.setModifiers(DescriptorRendererModifier.ALL_EXCEPT_ANNOTATIONS);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public static final Unit g(DescriptorRendererOptions withOptions) {
         Intrinsics.checkNotNullParameter(withOptions, "$this$withOptions");
         withOptions.setModifiers(DescriptorRendererModifier.ALL);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public static final Unit h(DescriptorRendererOptions withOptions) {
         Intrinsics.checkNotNullParameter(withOptions, "$this$withOptions");
         withOptions.setTextFormat(RenderingFormat.HTML);
         withOptions.setModifiers(DescriptorRendererModifier.ALL);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public static final Unit i(DescriptorRendererOptions withOptions) {
@@ -263,20 +263,20 @@ public abstract class DescriptorRenderer {
         withOptions.setRenderCompanionObjectName(true);
         withOptions.setWithoutSuperTypes(true);
         withOptions.setStartFromName(true);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public static final Unit j(DescriptorRendererOptions withOptions) {
         Intrinsics.checkNotNullParameter(withOptions, "$this$withOptions");
         withOptions.setClassifierNamePolicy(ClassifierNamePolicy.SHORT.INSTANCE);
         withOptions.setParameterNameRenderingPolicy(ParameterNameRenderingPolicy.ONLY_NON_SYNTHESIZED);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public static final Unit k(DescriptorRendererOptions withOptions) {
         Intrinsics.checkNotNullParameter(withOptions, "$this$withOptions");
         withOptions.setModifiers(x0.d());
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public static /* synthetic */ String renderAnnotation$default(DescriptorRenderer descriptorRenderer, AnnotationDescriptor annotationDescriptor, AnnotationUseSiteTarget annotationUseSiteTarget, int i10, Object obj) {

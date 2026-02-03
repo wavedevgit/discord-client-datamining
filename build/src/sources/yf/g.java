@@ -9,22 +9,22 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final a.g f54314a;
+    private static final a.g f54072a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final a f54315b;
+    private static final a f54073b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ef.a f54316c;
+    private static final ef.a f54074c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class a extends a.AbstractC0301a {
+    public static final class a extends a.AbstractC0279a {
         a() {
         }
 
-        @Override // ef.a.AbstractC0301a
+        @Override // ef.a.AbstractC0279a
         /* renamed from: c */
-        public d b(Context context, Looper looper, gf.d commonSettings, a.d.C0302a apiOptions, ff.d connectedListener, k connectionFailedListener) {
+        public d b(Context context, Looper looper, gf.d commonSettings, a.d.C0280a apiOptions, ff.d connectedListener, k connectionFailedListener) {
             Intrinsics.checkNotNullParameter(context, "context");
             Intrinsics.checkNotNullParameter(looper, "looper");
             Intrinsics.checkNotNullParameter(commonSettings, "commonSettings");
@@ -37,9 +37,9 @@ public abstract class g {
 
     static {
         a.g gVar = new a.g();
-        f54314a = gVar;
+        f54072a = gVar;
         a aVar = new a();
-        f54315b = aVar;
-        f54316c = new ef.a("IdentityCredentials.API", aVar, gVar);
+        f54073b = aVar;
+        f54074c = new ef.a("IdentityCredentials.API", aVar, gVar);
     }
 }

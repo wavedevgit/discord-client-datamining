@@ -7,33 +7,33 @@ import gf.o;
 public final class g implements a.d {
 
     /* renamed from: o  reason: collision with root package name */
-    public static final g f50328o = new g(new f());
+    public static final g f50615o = new g(new f());
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f50329d = null;
+    private final String f50616d = null;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f50330e;
+    private final boolean f50617e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f50331i;
+    private final String f50618i;
 
     public g(f fVar) {
-        this.f50330e = fVar.f50326a.booleanValue();
-        this.f50331i = fVar.f50327b;
+        this.f50617e = fVar.f50613a.booleanValue();
+        this.f50618i = fVar.f50614b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static /* bridge */ /* synthetic */ String b(g gVar) {
-        String str = gVar.f50329d;
+        String str = gVar.f50616d;
         return null;
     }
 
     public final Bundle a() {
         Bundle bundle = new Bundle();
         bundle.putString("consumer_package", null);
-        bundle.putBoolean("force_save_dialog", this.f50330e);
-        bundle.putString("log_session_id", this.f50331i);
+        bundle.putBoolean("force_save_dialog", this.f50617e);
+        bundle.putString("log_session_id", this.f50618i);
         return bundle;
     }
 
@@ -45,13 +45,13 @@ public final class g implements a.d {
             return false;
         }
         g gVar = (g) obj;
-        if (o.a(null, null) && this.f50330e == gVar.f50330e && o.a(this.f50331i, gVar.f50331i)) {
+        if (o.a(null, null) && this.f50617e == gVar.f50617e && o.a(this.f50618i, gVar.f50618i)) {
             return true;
         }
         return false;
     }
 
     public final int hashCode() {
-        return o.b(null, Boolean.valueOf(this.f50330e), this.f50331i);
+        return o.b(null, Boolean.valueOf(this.f50617e), this.f50618i);
     }
 }

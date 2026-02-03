@@ -2373,6 +2373,7 @@
     </attr>
     <attr name="titleTextStyle" format="reference" />
     <attr name="toggleCheckedStateOnClick" format="boolean" />
+    <attr name="tone" format="integer" />
     <attr name="toolbarId" format="reference" />
     <attr name="toolbarNavigationButtonStyle" format="reference" />
     <attr name="toolbarStyle" format="reference" />

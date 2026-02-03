@@ -10,24 +10,24 @@ import gf.c;
 public final class d1 extends r0 {
 
     /* renamed from: g  reason: collision with root package name */
-    public final IBinder f26882g;
+    public final IBinder f26095g;
 
     /* renamed from: h  reason: collision with root package name */
-    final /* synthetic */ c f26883h;
+    final /* synthetic */ c f26096h;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public d1(c cVar, int i10, IBinder iBinder, Bundle bundle) {
         super(cVar, i10, bundle);
-        this.f26883h = cVar;
-        this.f26882g = iBinder;
+        this.f26096h = cVar;
+        this.f26095g = iBinder;
     }
 
     @Override // gf.r0
     protected final void f(com.google.android.gms.common.b bVar) {
-        if (this.f26883h.G != null) {
-            this.f26883h.G.h(bVar);
+        if (this.f26096h.G != null) {
+            this.f26096h.G.h(bVar);
         }
-        this.f26883h.K(bVar);
+        this.f26096h.K(bVar);
     }
 
     @Override // gf.r0
@@ -35,22 +35,22 @@ public final class d1 extends r0 {
         c.a aVar;
         c.a aVar2;
         try {
-            IBinder iBinder = this.f26882g;
+            IBinder iBinder = this.f26095g;
             q.l(iBinder);
             String interfaceDescriptor = iBinder.getInterfaceDescriptor();
-            if (!this.f26883h.D().equals(interfaceDescriptor)) {
-                String D = this.f26883h.D();
+            if (!this.f26096h.D().equals(interfaceDescriptor)) {
+                String D = this.f26096h.D();
                 Log.w("GmsClient", "service descriptor mismatch: " + D + " vs. " + interfaceDescriptor);
                 return false;
             }
-            IInterface r10 = this.f26883h.r(this.f26882g);
-            if (r10 != null && (c.e0(this.f26883h, 2, 4, r10) || c.e0(this.f26883h, 3, 4, r10))) {
-                this.f26883h.K = null;
-                c cVar = this.f26883h;
+            IInterface r10 = this.f26096h.r(this.f26095g);
+            if (r10 != null && (c.e0(this.f26096h, 2, 4, r10) || c.e0(this.f26096h, 3, 4, r10))) {
+                this.f26096h.K = null;
+                c cVar = this.f26096h;
                 Bundle w10 = cVar.w();
                 aVar = cVar.F;
                 if (aVar != null) {
-                    aVar2 = this.f26883h.F;
+                    aVar2 = this.f26096h.F;
                     aVar2.e(w10);
                     return true;
                 }

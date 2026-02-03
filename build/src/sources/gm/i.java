@@ -1,13 +1,17 @@
 package gm;
 
 import android.graphics.Rect;
+import android.os.Build;
 import android.view.View;
+import androidx.core.graphics.Insets;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.core.view.h0;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int[] f27143a = new int[2];
+    private static final int[] f26356a = new int[2];
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements View.OnAttachStateChangeListener {
@@ -32,12 +36,12 @@ public abstract class i {
         Intrinsics.checkNotNullParameter(rect, "rect");
         if (view.isAttachedToWindow()) {
             rect.set(0, 0, view.getWidth(), view.getHeight());
-            int[] iArr = f27143a;
+            int[] iArr = f26356a;
             view.getLocationInWindow(iArr);
             rect.offset(iArr[0], iArr[1]);
             return;
         }
-        km.a.f(km.a.f33029a, "View.copyBoundsInWindow", "Can not copy bounds as view is not attached to window", null, 4, null);
+        km.a.f(km.a.f32427a, "View.copyBoundsInWindow", "Can not copy bounds as view is not attached to window", null, 4, null);
     }
 
     public static final int[] b(View view) {
@@ -47,7 +51,49 @@ public abstract class i {
         return iArr;
     }
 
-    public static final void c(View view) {
+    public static final WindowInsetsCompat c(View view, WindowInsetsCompat insets, boolean z10, boolean z11) {
+        Intrinsics.checkNotNullParameter(view, "<this>");
+        Intrinsics.checkNotNullParameter(insets, "insets");
+        int i10 = 0;
+        if (Build.VERSION.SDK_INT >= 30) {
+            Insets f10 = insets.f(WindowInsetsCompat.p.h());
+            Intrinsics.checkNotNullExpressionValue(f10, "getInsets(...)");
+            Insets f11 = insets.f(WindowInsetsCompat.p.f());
+            Intrinsics.checkNotNullExpressionValue(f11, "getInsets(...)");
+            Insets f12 = insets.f(WindowInsetsCompat.p.c());
+            Intrinsics.checkNotNullExpressionValue(f12, "getInsets(...)");
+            if (!z10) {
+                i10 = f10.f3164b;
+            }
+            int i11 = f12.f3166d;
+            if (i11 <= 0) {
+                i11 = f11.f3166d;
+            }
+            WindowInsetsCompat.a aVar = new WindowInsetsCompat.a(insets);
+            int h10 = WindowInsetsCompat.p.h();
+            int i12 = f10.f3163a;
+            int i13 = f10.f3165c;
+            if (z11) {
+                i11 = f10.f3166d;
+            }
+            WindowInsetsCompat a10 = aVar.b(h10, Insets.c(i12, i10, i13, i11)).a();
+            Intrinsics.checkNotNullExpressionValue(a10, "build(...)");
+            WindowInsetsCompat Z = h0.Z(view, a10);
+            Intrinsics.checkNotNullExpressionValue(Z, "onApplyWindowInsets(...)");
+            return Z;
+        }
+        WindowInsetsCompat Z2 = h0.Z(view, insets);
+        Intrinsics.checkNotNullExpressionValue(Z2, "onApplyWindowInsets(...)");
+        int o10 = Z2.o();
+        if (!z10) {
+            i10 = Z2.q();
+        }
+        WindowInsetsCompat v10 = Z2.v(o10, i10, Z2.p(), Z2.n());
+        Intrinsics.checkNotNullExpressionValue(v10, "replaceSystemWindowInsets(...)");
+        return v10;
+    }
+
+    public static final void d(View view) {
         Intrinsics.checkNotNullParameter(view, "<this>");
         if (view.isAttachedToWindow()) {
             view.requestApplyInsets();

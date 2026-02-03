@@ -40,15 +40,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/SettingsCircleIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun96569: for (var _fun96569_ip = 0;;) switch (_fun96569_ip) {
+        _fun96629: for (var _fun96629_ip = 0;;) switch (_fun96629_ip) {
             case 0:
                 var2 = arg0;
                 var9 = var2.style;
                 var12 = var2.secondaryColor;
                 var3 = undefined;
                 if (!(var12 === var3)) {
-                    _fun96569_ip = 54;
-                    continue _fun96569
+                    _fun96629_ip = 54;
+                    continue _fun96629
                 }
             case 20:
                 var1 = _closure1_slot1;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 54:
                 var10 = var2.color;
                 if (!(var10 === var3)) {
-                    _fun96569_ip = 97;
-                    continue _fun96569
+                    _fun96629_ip = 97;
+                    continue _fun96629
                 }
             case 63:
                 var1 = _closure1_slot1;
@@ -145,4 +145,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.SettingsCircleIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 671, 3141, 12581, 12582, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 671, 3150, 12592, 12593, 2]);

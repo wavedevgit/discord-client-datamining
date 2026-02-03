@@ -5,30 +5,30 @@ import ui.c;
 final class x4 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final x4 f41732a = new x4();
+    static final x4 f41771a = new x4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41733b;
+    private static final ui.c f41772b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41734c;
+    private static final ui.c f41773c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41735d;
+    private static final ui.c f41774d;
 
     static {
         c.b a10 = ui.c.a("options");
         f fVar = new f();
         fVar.a(1);
-        f41733b = a10.b(fVar.b()).a();
+        f41772b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("errorCode");
         f fVar2 = new f();
         fVar2.a(2);
-        f41734c = a11.b(fVar2.b()).a();
+        f41773c = a11.b(fVar2.b()).a();
         c.b a12 = ui.c.a("durationMs");
         f fVar3 = new f();
         fVar3.a(3);
-        f41735d = a12.b(fVar3.b()).a();
+        f41774d = a12.b(fVar3.b()).a();
     }
 
     private x4() {

@@ -1,51 +1,81 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0, arg1, arg2) { // Environment: var0
-        _fun94334: for (var _fun94334_ip = 0;;) switch (_fun94334_ip) {
+    var1 = module;
+    var3 = function arg0, arg1, arg2, arg3() {
+        _fun94375: for (var _fun94375_ip = 0;;) switch (_fun94375_ip) {
             case 0:
-                var0 = arg2;
-                var2 = this;
-                if (var0) {
-                    _fun94334_ip = 40;
-                    continue _fun94334
-                }
-            case 9:
-                var1 = var2.getReverseMap;
-                var2 = var1.bind(var2)();
-                var1 = arg0;
-                var2 = var2[var1];
-                var1 = 'keypress';
-                if (!var2) {
-                    _fun94334_ip = 37;
-                    continue _fun94334
-                }
-            case 33:
-                var1 = 'keydown';
-            case 37:
-                var0 = var1;
-            case 40:
-                var1 = 'keypress';
-                var1 = var1 === var0;
-                if (!var1) {
-                    _fun94334_ip = 59;
-                    continue _fun94334
-                }
-            case 51:
+                var5 = arg0;
                 var2 = arg1;
-                var1 = var2.length;
-            case 59:
+                var0 = arg2;
+                var1 = var5.addEventListener;
+                var1 = !var1;
+                var4 = var2;
                 if (!var1) {
-                    _fun94334_ip = 66;
-                    continue _fun94334
+                    _fun94375_ip = 32;
+                    continue _fun94375
                 }
-            case 62:
-                var0 = 'keydown';
-            case 66:
+            case 24:
+                var1 = 'on';
+                var4 = var1 + var2;
+            case 32:
+                var3 = var5.addEventListener;
+                if (var3) {
+                    _fun94375_ip = 47;
+                    continue _fun94375
+                }
+            case 41:
+                var3 = var5.attachEvent;
+            case 47:
+                var2 = var3.call;
+                var6 = arg3;
+                var10 = var3;
+                var9 = var5;
+                var8 = var4;
+                var7 = var0;
+                var1 = var10[var2](var9, var8, var7, var6, var5);
                 return var0;
         }
     };
-    var0 = arg4;
-    var0.exports = var1;
+    var1.exports = var3;
+    var2 = var1.exports;
+    var2.on = var3;
+    var1 = var1.exports;
+    var0 = function arg0, arg1, arg2, arg3() {
+        _fun94376: for (var _fun94376_ip = 0;;) switch (_fun94376_ip) {
+            case 0:
+                var5 = arg0;
+                var2 = arg1;
+                var0 = arg2;
+                var1 = var5.removeEventListener;
+                var1 = !var1;
+                var4 = var2;
+                if (!var1) {
+                    _fun94376_ip = 32;
+                    continue _fun94376
+                }
+            case 24:
+                var1 = 'on';
+                var4 = var1 + var2;
+            case 32:
+                var3 = var5.removeEventListener;
+                if (var3) {
+                    _fun94376_ip = 47;
+                    continue _fun94376
+                }
+            case 41:
+                var3 = var5.detachEvent;
+            case 47:
+                var2 = var3.call;
+                var6 = arg3;
+                var10 = var3;
+                var9 = var5;
+                var8 = var4;
+                var7 = var0;
+                var1 = var10[var2](var9, var8, var7, var6, var5);
+                return var0;
+        }
+    };
+    var1.off = var0;
     var0 = undefined;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

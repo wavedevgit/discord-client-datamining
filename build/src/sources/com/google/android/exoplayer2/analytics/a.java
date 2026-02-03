@@ -36,66 +36,66 @@ import qd.r;
 public class a implements mc.a {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ne.e f12716d;
+    private final ne.e f11684d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Timeline.b f12717e;
+    private final Timeline.b f11685e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Timeline.d f12718i;
+    private final Timeline.d f11686i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final C0167a f12719o;
+    private final C0148a f11687o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final SparseArray f12720p;
+    private final SparseArray f11688p;
 
     /* renamed from: q  reason: collision with root package name */
-    private x f12721q;
+    private x f11689q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Player f12722r;
+    private Player f11690r;
 
     /* renamed from: s  reason: collision with root package name */
-    private u f12723s;
+    private u f11691s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f12724t;
+    private boolean f11692t;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: com.google.android.exoplayer2.analytics.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0167a {
+    public static final class C0148a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Timeline.b f12725a;
+        private final Timeline.b f11693a;
 
         /* renamed from: b  reason: collision with root package name */
-        private s f12726b = s.r();
+        private s f11694b = s.r();
 
         /* renamed from: c  reason: collision with root package name */
-        private t f12727c = t.j();
+        private t f11695c = t.j();
 
         /* renamed from: d  reason: collision with root package name */
-        private r.b f12728d;
+        private r.b f11696d;
 
         /* renamed from: e  reason: collision with root package name */
-        private r.b f12729e;
+        private r.b f11697e;
 
         /* renamed from: f  reason: collision with root package name */
-        private r.b f12730f;
+        private r.b f11698f;
 
-        public C0167a(Timeline.b bVar) {
-            this.f12725a = bVar;
+        public C0148a(Timeline.b bVar) {
+            this.f11693a = bVar;
         }
 
         private void b(t.a aVar, r.b bVar, Timeline timeline) {
             if (bVar != null) {
-                if (timeline.f(bVar.f47555a) != -1) {
+                if (timeline.f(bVar.f47705a) != -1) {
                     aVar.f(bVar, timeline);
                     return;
                 }
-                Timeline timeline2 = (Timeline) this.f12727c.get(bVar);
+                Timeline timeline2 = (Timeline) this.f11695c.get(bVar);
                 if (timeline2 != null) {
                     aVar.f(bVar, timeline2);
                 }
@@ -131,11 +131,11 @@ public class a implements mc.a {
         }
 
         private static boolean i(r.b bVar, Object obj, boolean z10, int i10, int i11, int i12) {
-            if (!bVar.f47555a.equals(obj)) {
+            if (!bVar.f47705a.equals(obj)) {
                 return false;
             }
-            if (!z10 || bVar.f47556b != i10 || bVar.f47557c != i11) {
-                if (z10 || bVar.f47556b != -1 || bVar.f47559e != i12) {
+            if (!z10 || bVar.f47706b != i10 || bVar.f47707c != i11) {
+                if (z10 || bVar.f47706b != -1 || bVar.f47709e != i12) {
                     return false;
                 }
                 return true;
@@ -145,83 +145,83 @@ public class a implements mc.a {
 
         private void m(Timeline timeline) {
             t.a a10 = t.a();
-            if (this.f12726b.isEmpty()) {
-                b(a10, this.f12729e, timeline);
-                if (!j.a(this.f12730f, this.f12729e)) {
-                    b(a10, this.f12730f, timeline);
+            if (this.f11694b.isEmpty()) {
+                b(a10, this.f11697e, timeline);
+                if (!j.a(this.f11698f, this.f11697e)) {
+                    b(a10, this.f11698f, timeline);
                 }
-                if (!j.a(this.f12728d, this.f12729e) && !j.a(this.f12728d, this.f12730f)) {
-                    b(a10, this.f12728d, timeline);
+                if (!j.a(this.f11696d, this.f11697e) && !j.a(this.f11696d, this.f11698f)) {
+                    b(a10, this.f11696d, timeline);
                 }
             } else {
-                for (int i10 = 0; i10 < this.f12726b.size(); i10++) {
-                    b(a10, (r.b) this.f12726b.get(i10), timeline);
+                for (int i10 = 0; i10 < this.f11694b.size(); i10++) {
+                    b(a10, (r.b) this.f11694b.get(i10), timeline);
                 }
-                if (!this.f12726b.contains(this.f12728d)) {
-                    b(a10, this.f12728d, timeline);
+                if (!this.f11694b.contains(this.f11696d)) {
+                    b(a10, this.f11696d, timeline);
                 }
             }
-            this.f12727c = a10.c();
+            this.f11695c = a10.c();
         }
 
         public r.b d() {
-            return this.f12728d;
+            return this.f11696d;
         }
 
         public r.b e() {
-            if (this.f12726b.isEmpty()) {
+            if (this.f11694b.isEmpty()) {
                 return null;
             }
-            return (r.b) v.c(this.f12726b);
+            return (r.b) v.c(this.f11694b);
         }
 
         public Timeline f(r.b bVar) {
-            return (Timeline) this.f12727c.get(bVar);
+            return (Timeline) this.f11695c.get(bVar);
         }
 
         public r.b g() {
-            return this.f12729e;
+            return this.f11697e;
         }
 
         public r.b h() {
-            return this.f12730f;
+            return this.f11698f;
         }
 
         public void j(Player player) {
-            this.f12728d = c(player, this.f12726b, this.f12729e, this.f12725a);
+            this.f11696d = c(player, this.f11694b, this.f11697e, this.f11693a);
         }
 
         public void k(List list, r.b bVar, Player player) {
-            this.f12726b = s.m(list);
+            this.f11694b = s.m(list);
             if (!list.isEmpty()) {
-                this.f12729e = (r.b) list.get(0);
-                this.f12730f = (r.b) ne.a.e(bVar);
+                this.f11697e = (r.b) list.get(0);
+                this.f11698f = (r.b) ne.a.e(bVar);
             }
-            if (this.f12728d == null) {
-                this.f12728d = c(player, this.f12726b, this.f12729e, this.f12725a);
+            if (this.f11696d == null) {
+                this.f11696d = c(player, this.f11694b, this.f11697e, this.f11693a);
             }
             m(player.v());
         }
 
         public void l(Player player) {
-            this.f12728d = c(player, this.f12726b, this.f12729e, this.f12725a);
+            this.f11696d = c(player, this.f11694b, this.f11697e, this.f11693a);
             m(player.v());
         }
     }
 
     public a(ne.e eVar) {
-        this.f12716d = (ne.e) ne.a.e(eVar);
-        this.f12721q = new x(w0.R(), eVar, new x.b() { // from class: mc.z
+        this.f11684d = (ne.e) ne.a.e(eVar);
+        this.f11689q = new x(w0.R(), eVar, new x.b() { // from class: mc.z
             @Override // ne.x.b
             public final void a(Object obj, ne.q qVar) {
                 com.google.android.exoplayer2.analytics.a.S((AnalyticsListener) obj, qVar);
             }
         });
         Timeline.b bVar = new Timeline.b();
-        this.f12717e = bVar;
-        this.f12718i = new Timeline.d();
-        this.f12719o = new C0167a(bVar);
-        this.f12720p = new SparseArray();
+        this.f11685e = bVar;
+        this.f11686i = new Timeline.d();
+        this.f11687o = new C0148a(bVar);
+        this.f11688p = new SparseArray();
     }
 
     public static /* synthetic */ void J0(AnalyticsListener.EventTime eventTime, Format format, DecoderReuseEvaluation decoderReuseEvaluation, AnalyticsListener analyticsListener) {
@@ -254,53 +254,53 @@ public class a implements mc.a {
 
     private AnalyticsListener.EventTime W0(r.b bVar) {
         Timeline f10;
-        ne.a.e(this.f12722r);
+        ne.a.e(this.f11690r);
         if (bVar == null) {
             f10 = null;
         } else {
-            f10 = this.f12719o.f(bVar);
+            f10 = this.f11687o.f(bVar);
         }
         if (bVar != null && f10 != null) {
-            return V0(f10, f10.l(bVar.f47555a, this.f12717e).f12625i, bVar);
+            return V0(f10, f10.l(bVar.f47705a, this.f11685e).f11593i, bVar);
         }
-        int Q = this.f12722r.Q();
-        Timeline v10 = this.f12722r.v();
+        int Q = this.f11690r.Q();
+        Timeline v10 = this.f11690r.v();
         if (Q >= v10.t()) {
-            v10 = Timeline.f12612d;
+            v10 = Timeline.f11580d;
         }
         return V0(v10, Q, null);
     }
 
     private AnalyticsListener.EventTime X0() {
-        return W0(this.f12719o.e());
+        return W0(this.f11687o.e());
     }
 
     private AnalyticsListener.EventTime Y0(int i10, r.b bVar) {
-        ne.a.e(this.f12722r);
+        ne.a.e(this.f11690r);
         if (bVar != null) {
-            if (this.f12719o.f(bVar) != null) {
+            if (this.f11687o.f(bVar) != null) {
                 return W0(bVar);
             }
-            return V0(Timeline.f12612d, i10, bVar);
+            return V0(Timeline.f11580d, i10, bVar);
         }
-        Timeline v10 = this.f12722r.v();
+        Timeline v10 = this.f11690r.v();
         if (i10 >= v10.t()) {
-            v10 = Timeline.f12612d;
+            v10 = Timeline.f11580d;
         }
         return V0(v10, i10, null);
     }
 
     private AnalyticsListener.EventTime Z0() {
-        return W0(this.f12719o.g());
+        return W0(this.f11687o.g());
     }
 
     private AnalyticsListener.EventTime a1() {
-        return W0(this.f12719o.h());
+        return W0(this.f11687o.h());
     }
 
     private AnalyticsListener.EventTime b1(PlaybackException playbackException) {
         qd.q qVar;
-        if ((playbackException instanceof com.google.android.exoplayer2.j) && (qVar = ((com.google.android.exoplayer2.j) playbackException).f13256y) != null) {
+        if ((playbackException instanceof com.google.android.exoplayer2.j) && (qVar = ((com.google.android.exoplayer2.j) playbackException).f12224y) != null) {
             return W0(new r.b(qVar));
         }
         return U0();
@@ -315,7 +315,7 @@ public class a implements mc.a {
                 ((AnalyticsListener) obj).onPlayerReleased(AnalyticsListener.EventTime.this);
             }
         });
-        this.f12721q.i();
+        this.f11689q.i();
     }
 
     public static /* synthetic */ void j0(AnalyticsListener.EventTime eventTime, int i10, AnalyticsListener analyticsListener) {
@@ -325,7 +325,7 @@ public class a implements mc.a {
 
     public static /* synthetic */ void n0(AnalyticsListener.EventTime eventTime, VideoSize videoSize, AnalyticsListener analyticsListener) {
         analyticsListener.onVideoSizeChanged(eventTime, videoSize);
-        analyticsListener.onVideoSizeChanged(eventTime, videoSize.f14148d, videoSize.f14149e, videoSize.f14150i, videoSize.f14151o);
+        analyticsListener.onVideoSizeChanged(eventTime, videoSize.f13116d, videoSize.f13117e, videoSize.f13118i, videoSize.f13119o);
     }
 
     public static /* synthetic */ void t0(AnalyticsListener.EventTime eventTime, boolean z10, AnalyticsListener analyticsListener) {
@@ -347,7 +347,7 @@ public class a implements mc.a {
     @Override // mc.a
     public void B(AnalyticsListener analyticsListener) {
         ne.a.e(analyticsListener);
-        this.f12721q.c(analyticsListener);
+        this.f11689q.c(analyticsListener);
     }
 
     @Override // qd.y
@@ -374,7 +374,7 @@ public class a implements mc.a {
 
     @Override // mc.a
     public final void E(List list, r.b bVar) {
-        this.f12719o.k(list, bVar, (Player) ne.a.e(this.f12722r));
+        this.f11687o.k(list, bVar, (Player) ne.a.e(this.f11690r));
     }
 
     @Override // rc.u
@@ -433,7 +433,7 @@ public class a implements mc.a {
     }
 
     protected final AnalyticsListener.EventTime U0() {
-        return W0(this.f12719o.d());
+        return W0(this.f11687o.d());
     }
 
     protected final AnalyticsListener.EventTime V0(Timeline timeline, int i10, r.b bVar) {
@@ -444,23 +444,23 @@ public class a implements mc.a {
         } else {
             bVar2 = bVar;
         }
-        long b10 = this.f12716d.b();
-        if (timeline.equals(this.f12722r.v()) && i10 == this.f12722r.Q()) {
+        long b10 = this.f11684d.b();
+        if (timeline.equals(this.f11690r.v()) && i10 == this.f11690r.Q()) {
             z10 = true;
         } else {
             z10 = false;
         }
         long j10 = 0;
         if (bVar2 != null && bVar2.b()) {
-            if (z10 && this.f12722r.r() == bVar2.f47556b && this.f12722r.I() == bVar2.f47557c) {
-                j10 = this.f12722r.Z();
+            if (z10 && this.f11690r.r() == bVar2.f47706b && this.f11690r.I() == bVar2.f47707c) {
+                j10 = this.f11690r.Z();
             }
         } else if (z10) {
-            j10 = this.f12722r.K();
+            j10 = this.f11690r.K();
         } else if (!timeline.u()) {
-            j10 = timeline.r(i10, this.f12718i).d();
+            j10 = timeline.r(i10, this.f11686i).d();
         }
-        return new AnalyticsListener.EventTime(b10, timeline, i10, bVar2, j10, this.f12722r.v(), this.f12722r.Q(), this.f12719o.d(), this.f12722r.Z(), this.f12722r.g());
+        return new AnalyticsListener.EventTime(b10, timeline, i10, bVar2, j10, this.f11690r.v(), this.f11690r.Q(), this.f11687o.d(), this.f11690r.Z(), this.f11690r.g());
     }
 
     @Override // mc.a
@@ -508,8 +508,8 @@ public class a implements mc.a {
     }
 
     protected final void d1(AnalyticsListener.EventTime eventTime, int i10, x.a aVar) {
-        this.f12720p.put(i10, eventTime);
-        this.f12721q.k(i10, aVar);
+        this.f11688p.put(i10, eventTime);
+        this.f11689q.k(i10, aVar);
     }
 
     @Override // mc.a
@@ -871,7 +871,7 @@ public class a implements mc.a {
 
     @Override // com.google.android.exoplayer2.Player.b
     public final void onTimelineChanged(Timeline timeline, final int i10) {
-        this.f12719o.l((Player) ne.a.e(this.f12722r));
+        this.f11687o.l((Player) ne.a.e(this.f11690r));
         final AnalyticsListener.EventTime U0 = U0();
         d1(U0, 0, new x.a() { // from class: mc.r0
             @Override // ne.x.a
@@ -949,7 +949,7 @@ public class a implements mc.a {
 
     @Override // mc.a
     public void release() {
-        ((u) ne.a.i(this.f12723s)).post(new Runnable() { // from class: mc.g
+        ((u) ne.a.i(this.f11691s)).post(new Runnable() { // from class: mc.g
             @Override // java.lang.Runnable
             public final void run() {
                 com.google.android.exoplayer2.analytics.a.this.c1();
@@ -992,9 +992,9 @@ public class a implements mc.a {
 
     @Override // mc.a
     public final void v() {
-        if (!this.f12724t) {
+        if (!this.f11692t) {
             final AnalyticsListener.EventTime U0 = U0();
-            this.f12724t = true;
+            this.f11692t = true;
             d1(U0, -1, new x.a() { // from class: mc.k
                 @Override // ne.x.a
                 public final void invoke(Object obj) {
@@ -1018,19 +1018,19 @@ public class a implements mc.a {
     @Override // mc.a
     public void y(final Player player, Looper looper) {
         boolean z10;
-        if (this.f12722r != null && !this.f12719o.f12726b.isEmpty()) {
+        if (this.f11690r != null && !this.f11687o.f11694b.isEmpty()) {
             z10 = false;
         } else {
             z10 = true;
         }
         ne.a.g(z10);
-        this.f12722r = (Player) ne.a.e(player);
-        this.f12723s = this.f12716d.c(looper, null);
-        this.f12721q = this.f12721q.e(looper, new x.b() { // from class: mc.l
+        this.f11690r = (Player) ne.a.e(player);
+        this.f11691s = this.f11684d.c(looper, null);
+        this.f11689q = this.f11689q.e(looper, new x.b() { // from class: mc.l
             @Override // ne.x.b
             public final void a(Object obj, ne.q qVar) {
                 AnalyticsListener analyticsListener = (AnalyticsListener) obj;
-                analyticsListener.onEvents(player, new AnalyticsListener.Events(qVar, com.google.android.exoplayer2.analytics.a.this.f12720p));
+                analyticsListener.onEvents(player, new AnalyticsListener.Events(qVar, com.google.android.exoplayer2.analytics.a.this.f11688p));
             }
         });
     }
@@ -1049,9 +1049,9 @@ public class a implements mc.a {
     @Override // com.google.android.exoplayer2.Player.b
     public final void onPositionDiscontinuity(final Player.PositionInfo positionInfo, final Player.PositionInfo positionInfo2, final int i10) {
         if (i10 == 1) {
-            this.f12724t = false;
+            this.f11692t = false;
         }
-        this.f12719o.j((Player) ne.a.e(this.f12722r));
+        this.f11687o.j((Player) ne.a.e(this.f11690r));
         final AnalyticsListener.EventTime U0 = U0();
         d1(U0, 11, new x.a() { // from class: mc.p0
             @Override // ne.x.a

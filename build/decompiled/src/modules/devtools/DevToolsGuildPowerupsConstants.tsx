@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.SERVER_TAG_GUILD_DCS = var4;
     var2.VANITY_URL_POWERUP_DCS = var3;
     var3 = function arg0() {
-        _fun87040: for (var _fun87040_ip = 0;;) switch (_fun87040_ip) {
+        _fun87150: for (var _fun87150_ip = 0;;) switch (_fun87150_ip) {
             case 0:
                 var2 = arg0;
                 var5 = _closure1_slot0;
@@ -113,8 +113,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.DismissibleGuildContent;
                 var3 = var3.GUILD_POWERUP_LEVEL_1_COACHMARK;
                 if (!(var3 !== var2)) {
-                    _fun87040_ip = 262;
-                    continue _fun87040
+                    _fun87150_ip = 262;
+                    continue _fun87150
                 }
             case 46:
                 var5 = _closure1_slot0;
@@ -124,8 +124,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.DismissibleGuildContent;
                 var3 = var3.GUILD_POWERUP_LEVEL_2_COACHMARK;
                 if (!(var3 !== var2)) {
-                    _fun87040_ip = 256;
-                    continue _fun87040
+                    _fun87150_ip = 256;
+                    continue _fun87150
                 }
             case 82:
                 var5 = _closure1_slot0;
@@ -135,8 +135,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.DismissibleGuildContent;
                 var3 = var3.GUILD_POWERUP_LEVEL_3_COACHMARK;
                 if (!(var3 !== var2)) {
-                    _fun87040_ip = 250;
-                    continue _fun87040
+                    _fun87150_ip = 250;
+                    continue _fun87150
                 }
             case 118:
                 var5 = _closure1_slot0;
@@ -146,8 +146,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.DismissibleGuildContent;
                 var3 = var3.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK;
                 if (!(var3 !== var2)) {
-                    _fun87040_ip = 244;
-                    continue _fun87040
+                    _fun87150_ip = 244;
+                    continue _fun87150
                 }
             case 151:
                 var5 = _closure1_slot0;
@@ -157,8 +157,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.DismissibleGuildContent;
                 var3 = var3.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK;
                 if (!(var3 !== var2)) {
-                    _fun87040_ip = 238;
-                    continue _fun87040
+                    _fun87150_ip = 238;
+                    continue _fun87150
                 }
             case 184:
                 var3 = _closure1_slot0;
@@ -168,8 +168,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.DismissibleGuildContent;
                 var0 = var0.ADOPT_CLAN_IDENTITY_NOTICE;
                 if (!(var0 !== var2)) {
-                    _fun87040_ip = 232;
-                    continue _fun87040
+                    _fun87150_ip = 232;
+                    continue _fun87150
                 }
             case 217:
                 var0 = global;
@@ -198,7 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getGuildDCString = var3;
     var1 = function arg0() {
-        _fun87041: for (var _fun87041_ip = 0;;) switch (_fun87041_ip) {
+        _fun87151: for (var _fun87151_ip = 0;;) switch (_fun87151_ip) {
             case 0:
                 var3 = arg0;
                 var1 = _closure1_slot0;
@@ -211,8 +211,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0[var3];
                 var1 = null;
                 if (!(var1 == var0)) {
-                    _fun87041_ip = 56;
-                    continue _fun87041
+                    _fun87151_ip = 56;
+                    continue _fun87151
                 }
             case 43:
                 var1 = global;

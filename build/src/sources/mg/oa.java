@@ -5,7 +5,7 @@ import ui.c;
 final class oa implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final oa f38530a = new oa();
+    static final oa f38327a = new oa();
 
     static {
         c.b a10 = ui.c.a("optionsType");

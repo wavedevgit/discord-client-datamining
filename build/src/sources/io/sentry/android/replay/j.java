@@ -6,31 +6,31 @@ import kotlin.jvm.internal.Intrinsics;
 public final class j {
 
     /* renamed from: a  reason: collision with root package name */
-    private final File f29132a;
+    private final File f29493a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f29133b;
+    private final long f29494b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f29134c;
+    private final String f29495c;
 
     public j(File screenshot, long j10, String str) {
         Intrinsics.checkNotNullParameter(screenshot, "screenshot");
-        this.f29132a = screenshot;
-        this.f29133b = j10;
-        this.f29134c = str;
+        this.f29493a = screenshot;
+        this.f29494b = j10;
+        this.f29495c = str;
     }
 
     public final String a() {
-        return this.f29134c;
+        return this.f29495c;
     }
 
     public final File b() {
-        return this.f29132a;
+        return this.f29493a;
     }
 
     public final long c() {
-        return this.f29133b;
+        return this.f29494b;
     }
 
     public boolean equals(Object obj) {
@@ -39,18 +39,18 @@ public final class j {
         }
         if (obj instanceof j) {
             j jVar = (j) obj;
-            return Intrinsics.areEqual(this.f29132a, jVar.f29132a) && this.f29133b == jVar.f29133b && Intrinsics.areEqual(this.f29134c, jVar.f29134c);
+            return Intrinsics.areEqual(this.f29493a, jVar.f29493a) && this.f29494b == jVar.f29494b && Intrinsics.areEqual(this.f29495c, jVar.f29495c);
         }
         return false;
     }
 
     public int hashCode() {
-        int hashCode = ((this.f29132a.hashCode() * 31) + Long.hashCode(this.f29133b)) * 31;
-        String str = this.f29134c;
+        int hashCode = ((this.f29493a.hashCode() * 31) + Long.hashCode(this.f29494b)) * 31;
+        String str = this.f29495c;
         return hashCode + (str == null ? 0 : str.hashCode());
     }
 
     public String toString() {
-        return "ReplayFrame(screenshot=" + this.f29132a + ", timestamp=" + this.f29133b + ", screen=" + this.f29134c + ')';
+        return "ReplayFrame(screenshot=" + this.f29493a + ", timestamp=" + this.f29494b + ", screen=" + this.f29495c + ')';
     }
 }

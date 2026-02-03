@@ -67,7 +67,7 @@ public final class AFj1wSDK extends AFi1aSDK {
             java.lang.String r0 = "facebook_lite"
             goto L30
         L25:
-            jr.p r3 = new jr.p
+            lr.p r3 = new lr.p
             r3.<init>()
             throw r3
         L2b:
@@ -94,7 +94,7 @@ public final class AFj1wSDK extends AFi1aSDK {
                 if (i10 == 3) {
                     return component2(context);
                 }
-                throw new jr.p();
+                throw new lr.p();
             }
             return getMediationNetwork(context);
         }

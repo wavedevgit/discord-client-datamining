@@ -3,7 +3,7 @@ package u0;
 public final class n extends q {
 
     /* renamed from: f  reason: collision with root package name */
-    private int f50085f;
+    private int f50372f;
 
     public n(int i10) {
         super(null);
@@ -20,13 +20,13 @@ public final class n extends q {
     }
 
     private final void f() {
-        this.f50085f = r.a(c()) - this.f50091e;
+        this.f50372f = r.a(c()) - this.f50378e;
     }
 
     private final void g(int i10) {
         long[] jArr;
         if (i10 == 0) {
-            jArr = r.f50092a;
+            jArr = r.f50379a;
         } else {
             long[] jArr2 = new long[((i10 + 15) & (-8)) >> 3];
             kotlin.collections.i.y(jArr2, -9187201950435737472L, 0, 0, 6, null);
@@ -35,7 +35,7 @@ public final class n extends q {
             jArr2[i11] = (jArr2[i11] & (~j10)) | j10;
             jArr = jArr2;
         }
-        this.f50087a = jArr;
+        this.f50374a = jArr;
         f();
     }
 
@@ -48,19 +48,19 @@ public final class n extends q {
         } else {
             i11 = 0;
         }
-        this.f50090d = i11;
+        this.f50377d = i11;
         g(i11);
         if (i11 == 0) {
-            objArr = v0.a.f50724c;
+            objArr = v0.a.f51052c;
         } else {
             objArr = new Object[i11];
         }
-        this.f50088b = objArr;
+        this.f50375b = objArr;
         if (i11 == 0) {
-            objArr2 = v0.a.f50724c;
+            objArr2 = v0.a.f51052c;
         } else {
             objArr2 = new Object[i11];
         }
-        this.f50089c = objArr2;
+        this.f50376c = objArr2;
     }
 }

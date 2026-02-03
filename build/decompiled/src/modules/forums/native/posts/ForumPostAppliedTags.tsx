@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/forums/native/posts/ForumPostAppliedTags.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun89474: for (var _fun89474_ip = 0;;) switch (_fun89474_ip) {
+        _fun89566: for (var _fun89566_ip = 0;;) switch (_fun89566_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.appliedTags;
@@ -90,8 +90,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var0.additionalTagsCount;
                 var3 = undefined;
                 if (!(var14 === var3)) {
-                    _fun89474_ip = 35;
-                    continue _fun89474
+                    _fun89566_ip = 35;
+                    continue _fun89566
                 }
             case 33:
                 var14 = 0;
@@ -137,8 +137,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = 0;
                 var5 = var14 > var5;
                 if (!var5) {
-                    _fun89474_ip = 219;
-                    continue _fun89474
+                    _fun89566_ip = 219;
+                    continue _fun89566
                 }
             case 126:
                 var8 = _closure1_slot3;
@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ForumPostAppliedTagPills = var3;
     var1 = function arg0() {
-        _fun89476: for (var _fun89476_ip = 0;;) switch (_fun89476_ip) {
+        _fun89568: for (var _fun89568_ip = 0;;) switch (_fun89568_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.appliedTags;
@@ -182,8 +182,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var0.additionalTagsCount;
                 var3 = undefined;
                 if (!(var17 === var3)) {
-                    _fun89476_ip = 39;
-                    continue _fun89476
+                    _fun89568_ip = 39;
+                    continue _fun89568
                 }
             case 37:
                 var17 = 0;
@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.style = var5;
                 var5 = var6.map;
                 var4 = function(arg0, arg1) { // Environment: var4
-                    _fun89477: for (var _fun89477_ip = 0;;) switch (_fun89477_ip) {
+                    _fun89569: for (var _fun89569_ip = 0;;) switch (_fun89569_ip) {
                         case 0:
                             var4 = arg0;
                             var3 = _closure1_slot4;
@@ -232,8 +232,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = arg1;
                             var5 = var5 !== var7;
                             if (!var5) {
-                                _fun89477_ip = 142;
-                                continue _fun89477
+                                _fun89569_ip = 142;
+                                continue _fun89569
                             }
                         case 112:
                             var8 = _closure1_slot3;
@@ -256,8 +256,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = 0;
                 var5 = var17 > var5;
                 if (!var5) {
-                    _fun89476_ip = 270;
-                    continue _fun89476
+                    _fun89568_ip = 270;
+                    continue _fun89568
                 }
             case 133:
                 var8 = _closure1_slot4;
@@ -302,4 +302,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ForumPostAppliedTags = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 9392, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 9411, 2]);

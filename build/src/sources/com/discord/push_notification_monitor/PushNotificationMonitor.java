@@ -23,7 +23,7 @@ public final class PushNotificationMonitor {
 
     private final void writePushLog(Context context, String str, PushNotificationLog pushNotificationLog) {
         SharedPreferences.Editor edit = PushNotificationMonitorModule.Companion.getPushNotificationLogStorage(context).edit();
-        Json.a aVar = Json.f36186d;
+        Json.a aVar = Json.f35576d;
         aVar.a();
         edit.putString(str, aVar.c(PushNotificationLog.Companion.serializer(), pushNotificationLog));
         edit.apply();
@@ -45,7 +45,7 @@ public final class PushNotificationMonitor {
         Intrinsics.checkNotNullParameter(userId, "userId");
         SharedPreferences pushNotificationLogStorage = PushNotificationMonitorModule.Companion.getPushNotificationLogStorage(context);
         if (pushNotificationLogStorage.getString(userId, null) != null) {
-            Json.a aVar = Json.f36186d;
+            Json.a aVar = Json.f35576d;
             String str = "";
             String string = pushNotificationLogStorage.getString(userId, "");
             if (string != null) {

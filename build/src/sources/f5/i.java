@@ -10,13 +10,13 @@ import kotlin.jvm.internal.Intrinsics;
 final class i implements g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConnectivityManager f23600a;
+    private final ConnectivityManager f23192a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final g.a f23601b;
+    private final g.a f23193b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final a f23602c;
+    private final a f23194c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a extends ConnectivityManager.NetworkCallback {
@@ -35,15 +35,15 @@ final class i implements g {
     }
 
     public i(ConnectivityManager connectivityManager, g.a aVar) {
-        this.f23600a = connectivityManager;
-        this.f23601b = aVar;
+        this.f23192a = connectivityManager;
+        this.f23193b = aVar;
         a aVar2 = new a();
-        this.f23602c = aVar2;
+        this.f23194c = aVar2;
         connectivityManager.registerNetworkCallback(new NetworkRequest.Builder().addCapability(12).build(), aVar2);
     }
 
     private final boolean c(Network network) {
-        NetworkCapabilities networkCapabilities = this.f23600a.getNetworkCapabilities(network);
+        NetworkCapabilities networkCapabilities = this.f23192a.getNetworkCapabilities(network);
         if (networkCapabilities != null && networkCapabilities.hasCapability(12)) {
             return true;
         }
@@ -53,7 +53,7 @@ final class i implements g {
     /* JADX INFO: Access modifiers changed from: private */
     public final void d(Network network, boolean z10) {
         boolean c10;
-        Network[] allNetworks = this.f23600a.getAllNetworks();
+        Network[] allNetworks = this.f23192a.getAllNetworks();
         int length = allNetworks.length;
         boolean z11 = false;
         int i10 = 0;
@@ -73,12 +73,12 @@ final class i implements g {
             }
             i10++;
         }
-        this.f23601b.a(z11);
+        this.f23193b.a(z11);
     }
 
     @Override // f5.g
     public boolean a() {
-        for (Network network : this.f23600a.getAllNetworks()) {
+        for (Network network : this.f23192a.getAllNetworks()) {
             if (c(network)) {
                 return true;
             }
@@ -88,6 +88,6 @@ final class i implements g {
 
     @Override // f5.g
     public void shutdown() {
-        this.f23600a.unregisterNetworkCallback(this.f23602c);
+        this.f23192a.unregisterNetworkCallback(this.f23194c);
     }
 }

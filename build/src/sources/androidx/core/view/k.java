@@ -15,16 +15,16 @@ import java.lang.reflect.Method;
 public abstract class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private static boolean f3415a = false;
+    private static boolean f3384a = false;
 
     /* renamed from: b  reason: collision with root package name */
-    private static Method f3416b = null;
+    private static Method f3385b = null;
 
     /* renamed from: c  reason: collision with root package name */
-    private static boolean f3417c = false;
+    private static boolean f3386c = false;
 
     /* renamed from: d  reason: collision with root package name */
-    private static Field f3418d;
+    private static Field f3387d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface a {
@@ -32,14 +32,14 @@ public abstract class k {
     }
 
     private static boolean a(ActionBar actionBar, KeyEvent keyEvent) {
-        if (!f3415a) {
+        if (!f3384a) {
             try {
-                f3416b = actionBar.getClass().getMethod("onMenuKeyEvent", KeyEvent.class);
+                f3385b = actionBar.getClass().getMethod("onMenuKeyEvent", KeyEvent.class);
             } catch (NoSuchMethodException unused) {
             }
-            f3415a = true;
+            f3384a = true;
         }
-        Method method = f3416b;
+        Method method = f3385b;
         if (method != null) {
             try {
                 Object invoke = method.invoke(actionBar, keyEvent);
@@ -124,16 +124,16 @@ public abstract class k {
     }
 
     private static DialogInterface.OnKeyListener f(Dialog dialog) {
-        if (!f3417c) {
+        if (!f3386c) {
             try {
                 Field declaredField = Dialog.class.getDeclaredField("mOnKeyListener");
-                f3418d = declaredField;
+                f3387d = declaredField;
                 declaredField.setAccessible(true);
             } catch (NoSuchFieldException unused) {
             }
-            f3417c = true;
+            f3386c = true;
         }
-        Field field = f3418d;
+        Field field = f3387d;
         if (field != null) {
             try {
                 return (DialogInterface.OnKeyListener) field.get(dialog);

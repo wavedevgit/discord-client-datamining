@@ -13,13 +13,13 @@ import java.util.Map;
 public final class i0 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f29949d;
+    private final String f30310d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f29950e;
+    private final List f30311e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f29951i;
+    private Map f30312i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -31,14 +31,14 @@ public final class i0 implements w1 {
             List list = null;
             HashMap hashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String m02 = e3Var.m0();
-                m02.getClass();
-                if (!m02.equals("rendering_system")) {
-                    if (!m02.equals("windows")) {
+                String l02 = e3Var.l0();
+                l02.getClass();
+                if (!l02.equals("rendering_system")) {
+                    if (!l02.equals("windows")) {
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.v1(iLogger, hashMap, m02);
+                        e3Var.v1(iLogger, hashMap, l02);
                     } else {
                         list = e3Var.g2(iLogger, new j0.a());
                     }
@@ -54,27 +54,27 @@ public final class i0 implements w1 {
     }
 
     public i0(String str, List list) {
-        this.f29949d = str;
-        this.f29950e = list;
+        this.f30310d = str;
+        this.f30311e = list;
     }
 
     public void a(Map map) {
-        this.f29951i = map;
+        this.f30312i = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        if (this.f29949d != null) {
-            f3Var.e("rendering_system").f(this.f29949d);
+        if (this.f30310d != null) {
+            f3Var.e("rendering_system").f(this.f30310d);
         }
-        if (this.f29950e != null) {
-            f3Var.e("windows").j(iLogger, this.f29950e);
+        if (this.f30311e != null) {
+            f3Var.e("windows").j(iLogger, this.f30311e);
         }
-        Map map = this.f29951i;
+        Map map = this.f30312i;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f29951i.get(str));
+                f3Var.e(str).j(iLogger, this.f30312i.get(str));
             }
         }
         f3Var.y();

@@ -9,16 +9,16 @@ import java.nio.ByteBuffer;
 public class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final i f52247a = new i("MLKitImageUtils", "");
+    private static final i f52469a = new i("MLKitImageUtils", "");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final d f52248b = new d();
+    private static final d f52470b = new d();
 
     private d() {
     }
 
     public static d b() {
-        return f52248b;
+        return f52470b;
     }
 
     public sf.a a(vj.a aVar) {

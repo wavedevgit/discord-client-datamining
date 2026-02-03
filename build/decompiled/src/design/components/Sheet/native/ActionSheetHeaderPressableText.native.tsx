@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Sheet/native/ActionSheetHeaderPressableText.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun46403: for (var _fun46403_ip = 0;;) switch (_fun46403_ip) {
+        _fun46459: for (var _fun46459_ip = 0;;) switch (_fun46459_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.onPress;
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = null;
                 var5 = var7;
                 if (!(var8 != var6)) {
-                    _fun46403_ip = 96;
-                    continue _fun46403
+                    _fun46459_ip = 96;
+                    continue _fun46459
                 }
             case 93:
                 var5 = var6;
@@ -93,4 +93,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ActionSheetHeaderPressableText = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 1297, 4897, 3932, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 1297, 4902, 3941, 2]);

@@ -59,73 +59,73 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
     private androidx.appcompat.widget.c W;
 
     /* renamed from: a0  reason: collision with root package name */
-    private f f1572a0;
+    private f f1541a0;
 
     /* renamed from: b0  reason: collision with root package name */
-    private j.a f1573b0;
+    private j.a f1542b0;
 
     /* renamed from: c0  reason: collision with root package name */
-    e.a f1574c0;
+    e.a f1543c0;
 
     /* renamed from: d  reason: collision with root package name */
-    ActionMenuView f1575d;
+    ActionMenuView f1544d;
 
     /* renamed from: d0  reason: collision with root package name */
-    private boolean f1576d0;
+    private boolean f1545d0;
 
     /* renamed from: e  reason: collision with root package name */
-    private TextView f1577e;
+    private TextView f1546e;
 
     /* renamed from: e0  reason: collision with root package name */
-    private OnBackInvokedCallback f1578e0;
+    private OnBackInvokedCallback f1547e0;
 
     /* renamed from: f0  reason: collision with root package name */
-    private OnBackInvokedDispatcher f1579f0;
+    private OnBackInvokedDispatcher f1548f0;
 
     /* renamed from: g0  reason: collision with root package name */
-    private boolean f1580g0;
+    private boolean f1549g0;
 
     /* renamed from: h0  reason: collision with root package name */
-    private final Runnable f1581h0;
+    private final Runnable f1550h0;
 
     /* renamed from: i  reason: collision with root package name */
-    private TextView f1582i;
+    private TextView f1551i;
 
     /* renamed from: o  reason: collision with root package name */
-    private ImageButton f1583o;
+    private ImageButton f1552o;
 
     /* renamed from: p  reason: collision with root package name */
-    private ImageView f1584p;
+    private ImageView f1553p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Drawable f1585q;
+    private Drawable f1554q;
 
     /* renamed from: r  reason: collision with root package name */
-    private CharSequence f1586r;
+    private CharSequence f1555r;
 
     /* renamed from: s  reason: collision with root package name */
-    ImageButton f1587s;
+    ImageButton f1556s;
 
     /* renamed from: t  reason: collision with root package name */
-    View f1588t;
+    View f1557t;
 
     /* renamed from: u  reason: collision with root package name */
-    private Context f1589u;
+    private Context f1558u;
 
     /* renamed from: v  reason: collision with root package name */
-    private int f1590v;
+    private int f1559v;
 
     /* renamed from: w  reason: collision with root package name */
-    private int f1591w;
+    private int f1560w;
 
     /* renamed from: x  reason: collision with root package name */
-    private int f1592x;
+    private int f1561x;
 
     /* renamed from: y  reason: collision with root package name */
-    int f1593y;
+    int f1562y;
 
     /* renamed from: z  reason: collision with root package name */
-    private int f1594z;
+    private int f1563z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements ActionMenuView.e {
@@ -164,7 +164,7 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
 
         @Override // androidx.appcompat.view.menu.e.a
         public boolean a(androidx.appcompat.view.menu.e eVar, MenuItem menuItem) {
-            e.a aVar = Toolbar.this.f1574c0;
+            e.a aVar = Toolbar.this.f1543c0;
             if (aVar != null && aVar.a(eVar, menuItem)) {
                 return true;
             }
@@ -173,10 +173,10 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
 
         @Override // androidx.appcompat.view.menu.e.a
         public void b(androidx.appcompat.view.menu.e eVar) {
-            if (!Toolbar.this.f1575d.H()) {
+            if (!Toolbar.this.f1544d.H()) {
                 Toolbar.this.R.i(eVar);
             }
-            e.a aVar = Toolbar.this.f1574c0;
+            e.a aVar = Toolbar.this.f1543c0;
             if (aVar != null) {
                 aVar.b(eVar);
             }
@@ -226,10 +226,10 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
     public class f implements androidx.appcompat.view.menu.j {
 
         /* renamed from: d  reason: collision with root package name */
-        androidx.appcompat.view.menu.e f1599d;
+        androidx.appcompat.view.menu.e f1568d;
 
         /* renamed from: e  reason: collision with root package name */
-        androidx.appcompat.view.menu.g f1600e;
+        androidx.appcompat.view.menu.g f1569e;
 
         f() {
         }
@@ -241,35 +241,35 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
         @Override // androidx.appcompat.view.menu.j
         public boolean b(androidx.appcompat.view.menu.e eVar, androidx.appcompat.view.menu.g gVar) {
             Toolbar.this.g();
-            ViewParent parent = Toolbar.this.f1587s.getParent();
+            ViewParent parent = Toolbar.this.f1556s.getParent();
             Toolbar toolbar = Toolbar.this;
             if (parent != toolbar) {
                 if (parent instanceof ViewGroup) {
-                    ((ViewGroup) parent).removeView(toolbar.f1587s);
+                    ((ViewGroup) parent).removeView(toolbar.f1556s);
                 }
                 Toolbar toolbar2 = Toolbar.this;
-                toolbar2.addView(toolbar2.f1587s);
+                toolbar2.addView(toolbar2.f1556s);
             }
-            Toolbar.this.f1588t = gVar.getActionView();
-            this.f1600e = gVar;
-            ViewParent parent2 = Toolbar.this.f1588t.getParent();
+            Toolbar.this.f1557t = gVar.getActionView();
+            this.f1569e = gVar;
+            ViewParent parent2 = Toolbar.this.f1557t.getParent();
             Toolbar toolbar3 = Toolbar.this;
             if (parent2 != toolbar3) {
                 if (parent2 instanceof ViewGroup) {
-                    ((ViewGroup) parent2).removeView(toolbar3.f1588t);
+                    ((ViewGroup) parent2).removeView(toolbar3.f1557t);
                 }
                 g generateDefaultLayoutParams = Toolbar.this.generateDefaultLayoutParams();
                 Toolbar toolbar4 = Toolbar.this;
-                generateDefaultLayoutParams.f937a = (toolbar4.f1593y & 112) | 8388611;
-                generateDefaultLayoutParams.f1602b = 2;
-                toolbar4.f1588t.setLayoutParams(generateDefaultLayoutParams);
+                generateDefaultLayoutParams.f906a = (toolbar4.f1562y & 112) | 8388611;
+                generateDefaultLayoutParams.f1571b = 2;
+                toolbar4.f1557t.setLayoutParams(generateDefaultLayoutParams);
                 Toolbar toolbar5 = Toolbar.this;
-                toolbar5.addView(toolbar5.f1588t);
+                toolbar5.addView(toolbar5.f1557t);
             }
             Toolbar.this.I();
             Toolbar.this.requestLayout();
             gVar.r(true);
-            View view = Toolbar.this.f1588t;
+            View view = Toolbar.this.f1557t;
             if (view instanceof androidx.appcompat.view.b) {
                 ((androidx.appcompat.view.b) view).onActionViewExpanded();
             }
@@ -284,17 +284,17 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
 
         @Override // androidx.appcompat.view.menu.j
         public void e(boolean z10) {
-            if (this.f1600e != null) {
-                androidx.appcompat.view.menu.e eVar = this.f1599d;
+            if (this.f1569e != null) {
+                androidx.appcompat.view.menu.e eVar = this.f1568d;
                 if (eVar != null) {
                     int size = eVar.size();
                     for (int i10 = 0; i10 < size; i10++) {
-                        if (this.f1599d.getItem(i10) == this.f1600e) {
+                        if (this.f1568d.getItem(i10) == this.f1569e) {
                             return;
                         }
                     }
                 }
-                g(this.f1599d, this.f1600e);
+                g(this.f1568d, this.f1569e);
             }
         }
 
@@ -305,18 +305,18 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
 
         @Override // androidx.appcompat.view.menu.j
         public boolean g(androidx.appcompat.view.menu.e eVar, androidx.appcompat.view.menu.g gVar) {
-            View view = Toolbar.this.f1588t;
+            View view = Toolbar.this.f1557t;
             if (view instanceof androidx.appcompat.view.b) {
                 ((androidx.appcompat.view.b) view).onActionViewCollapsed();
             }
             Toolbar toolbar = Toolbar.this;
-            toolbar.removeView(toolbar.f1588t);
+            toolbar.removeView(toolbar.f1557t);
             Toolbar toolbar2 = Toolbar.this;
-            toolbar2.removeView(toolbar2.f1587s);
+            toolbar2.removeView(toolbar2.f1556s);
             Toolbar toolbar3 = Toolbar.this;
-            toolbar3.f1588t = null;
+            toolbar3.f1557t = null;
             toolbar3.a();
-            this.f1600e = null;
+            this.f1569e = null;
             Toolbar.this.requestLayout();
             gVar.r(false);
             Toolbar.this.R();
@@ -326,11 +326,11 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
         @Override // androidx.appcompat.view.menu.j
         public void h(Context context, androidx.appcompat.view.menu.e eVar) {
             androidx.appcompat.view.menu.g gVar;
-            androidx.appcompat.view.menu.e eVar2 = this.f1599d;
-            if (eVar2 != null && (gVar = this.f1600e) != null) {
+            androidx.appcompat.view.menu.e eVar2 = this.f1568d;
+            if (eVar2 != null && (gVar = this.f1569e) != null) {
                 eVar2.f(gVar);
             }
-            this.f1599d = eVar;
+            this.f1568d = eVar;
         }
     }
 
@@ -400,12 +400,12 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
     }
 
     private void H() {
-        removeCallbacks(this.f1581h0);
-        post(this.f1581h0);
+        removeCallbacks(this.f1550h0);
+        post(this.f1550h0);
     }
 
     private boolean O() {
-        if (!this.f1576d0) {
+        if (!this.f1545d0) {
             return false;
         }
         int childCount = getChildCount();
@@ -439,7 +439,7 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
             for (int i11 = childCount - 1; i11 >= 0; i11--) {
                 View childAt = getChildAt(i11);
                 g gVar = (g) childAt.getLayoutParams();
-                if (gVar.f1602b == 0 && P(childAt) && p(gVar.f937a) == b10) {
+                if (gVar.f1571b == 0 && P(childAt) && p(gVar.f906a) == b10) {
                     list.add(childAt);
                 }
             }
@@ -448,7 +448,7 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
         for (int i12 = 0; i12 < childCount; i12++) {
             View childAt2 = getChildAt(i12);
             g gVar2 = (g) childAt2.getLayoutParams();
-            if (gVar2.f1602b == 0 && P(childAt2) && p(gVar2.f937a) == b10) {
+            if (gVar2.f1571b == 0 && P(childAt2) && p(gVar2.f906a) == b10) {
                 list.add(childAt2);
             }
         }
@@ -464,8 +464,8 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
         } else {
             gVar = (g) layoutParams;
         }
-        gVar.f1602b = 1;
-        if (z10 && this.f1588t != null) {
+        gVar.f1571b = 1;
+        if (z10 && this.f1557t != null) {
             view.setLayoutParams(gVar);
             this.P.add(view);
             return;
@@ -493,44 +493,44 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
     }
 
     private void i() {
-        if (this.f1584p == null) {
-            this.f1584p = new m(getContext());
+        if (this.f1553p == null) {
+            this.f1553p = new m(getContext());
         }
     }
 
     private void j() {
         k();
-        if (this.f1575d.L() == null) {
-            androidx.appcompat.view.menu.e eVar = (androidx.appcompat.view.menu.e) this.f1575d.getMenu();
-            if (this.f1572a0 == null) {
-                this.f1572a0 = new f();
+        if (this.f1544d.L() == null) {
+            androidx.appcompat.view.menu.e eVar = (androidx.appcompat.view.menu.e) this.f1544d.getMenu();
+            if (this.f1541a0 == null) {
+                this.f1541a0 = new f();
             }
-            this.f1575d.setExpandedActionViewsExclusive(true);
-            eVar.c(this.f1572a0, this.f1589u);
+            this.f1544d.setExpandedActionViewsExclusive(true);
+            eVar.c(this.f1541a0, this.f1558u);
             R();
         }
     }
 
     private void k() {
-        if (this.f1575d == null) {
+        if (this.f1544d == null) {
             ActionMenuView actionMenuView = new ActionMenuView(getContext());
-            this.f1575d = actionMenuView;
-            actionMenuView.setPopupTheme(this.f1590v);
-            this.f1575d.setOnMenuItemClickListener(this.U);
-            this.f1575d.M(this.f1573b0, new c());
+            this.f1544d = actionMenuView;
+            actionMenuView.setPopupTheme(this.f1559v);
+            this.f1544d.setOnMenuItemClickListener(this.U);
+            this.f1544d.M(this.f1542b0, new c());
             g generateDefaultLayoutParams = generateDefaultLayoutParams();
-            generateDefaultLayoutParams.f937a = (this.f1593y & 112) | 8388613;
-            this.f1575d.setLayoutParams(generateDefaultLayoutParams);
-            c(this.f1575d, false);
+            generateDefaultLayoutParams.f906a = (this.f1562y & 112) | 8388613;
+            this.f1544d.setLayoutParams(generateDefaultLayoutParams);
+            c(this.f1544d, false);
         }
     }
 
     private void l() {
-        if (this.f1583o == null) {
-            this.f1583o = new l(getContext(), null, f.a.L);
+        if (this.f1552o == null) {
+            this.f1552o = new l(getContext(), null, f.a.L);
             g generateDefaultLayoutParams = generateDefaultLayoutParams();
-            generateDefaultLayoutParams.f937a = (this.f1593y & 112) | 8388611;
-            this.f1583o.setLayoutParams(generateDefaultLayoutParams);
+            generateDefaultLayoutParams.f906a = (this.f1562y & 112) | 8388611;
+            this.f1552o.setLayoutParams(generateDefaultLayoutParams);
         }
     }
 
@@ -555,7 +555,7 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
         } else {
             i11 = 0;
         }
-        int r10 = r(gVar.f937a);
+        int r10 = r(gVar.f906a);
         if (r10 != 48) {
             if (r10 != 80) {
                 int paddingTop = getPaddingTop();
@@ -628,7 +628,7 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
     }
 
     public boolean A() {
-        ActionMenuView actionMenuView = this.f1575d;
+        ActionMenuView actionMenuView = this.f1544d;
         if (actionMenuView != null && actionMenuView.G()) {
             return true;
         }
@@ -636,7 +636,7 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
     }
 
     public boolean B() {
-        ActionMenuView actionMenuView = this.f1575d;
+        ActionMenuView actionMenuView = this.f1544d;
         if (actionMenuView != null && actionMenuView.H()) {
             return true;
         }
@@ -646,7 +646,7 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
     void I() {
         for (int childCount = getChildCount() - 1; childCount >= 0; childCount--) {
             View childAt = getChildAt(childCount);
-            if (((g) childAt.getLayoutParams()).f1602b != 2 && childAt != this.f1575d) {
+            if (((g) childAt.getLayoutParams()).f1571b != 2 && childAt != this.f1544d) {
                 removeViewAt(childCount);
                 this.P.add(childAt);
             }
@@ -659,63 +659,63 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
     }
 
     public void K(androidx.appcompat.view.menu.e eVar, androidx.appcompat.widget.c cVar) {
-        if (eVar != null || this.f1575d != null) {
+        if (eVar != null || this.f1544d != null) {
             k();
-            androidx.appcompat.view.menu.e L = this.f1575d.L();
+            androidx.appcompat.view.menu.e L = this.f1544d.L();
             if (L == eVar) {
                 return;
             }
             if (L != null) {
                 L.P(this.W);
-                L.P(this.f1572a0);
+                L.P(this.f1541a0);
             }
-            if (this.f1572a0 == null) {
-                this.f1572a0 = new f();
+            if (this.f1541a0 == null) {
+                this.f1541a0 = new f();
             }
             cVar.G(true);
             if (eVar != null) {
-                eVar.c(cVar, this.f1589u);
-                eVar.c(this.f1572a0, this.f1589u);
+                eVar.c(cVar, this.f1558u);
+                eVar.c(this.f1541a0, this.f1558u);
             } else {
-                cVar.h(this.f1589u, null);
-                this.f1572a0.h(this.f1589u, null);
+                cVar.h(this.f1558u, null);
+                this.f1541a0.h(this.f1558u, null);
                 cVar.e(true);
-                this.f1572a0.e(true);
+                this.f1541a0.e(true);
             }
-            this.f1575d.setPopupTheme(this.f1590v);
-            this.f1575d.setPresenter(cVar);
+            this.f1544d.setPopupTheme(this.f1559v);
+            this.f1544d.setPresenter(cVar);
             this.W = cVar;
             R();
         }
     }
 
     public void L(j.a aVar, e.a aVar2) {
-        this.f1573b0 = aVar;
-        this.f1574c0 = aVar2;
-        ActionMenuView actionMenuView = this.f1575d;
+        this.f1542b0 = aVar;
+        this.f1543c0 = aVar2;
+        ActionMenuView actionMenuView = this.f1544d;
         if (actionMenuView != null) {
             actionMenuView.M(aVar, aVar2);
         }
     }
 
     public void M(Context context, int i10) {
-        this.f1592x = i10;
-        TextView textView = this.f1582i;
+        this.f1561x = i10;
+        TextView textView = this.f1551i;
         if (textView != null) {
             textView.setTextAppearance(context, i10);
         }
     }
 
     public void N(Context context, int i10) {
-        this.f1591w = i10;
-        TextView textView = this.f1577e;
+        this.f1560w = i10;
+        TextView textView = this.f1546e;
         if (textView != null) {
             textView.setTextAppearance(context, i10);
         }
     }
 
     public boolean Q() {
-        ActionMenuView actionMenuView = this.f1575d;
+        ActionMenuView actionMenuView = this.f1544d;
         if (actionMenuView != null && actionMenuView.N()) {
             return true;
         }
@@ -727,25 +727,25 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
         OnBackInvokedDispatcher onBackInvokedDispatcher;
         if (Build.VERSION.SDK_INT >= 33) {
             OnBackInvokedDispatcher a10 = e.a(this);
-            if (v() && a10 != null && isAttachedToWindow() && this.f1580g0) {
+            if (v() && a10 != null && isAttachedToWindow() && this.f1549g0) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            if (z10 && this.f1579f0 == null) {
-                if (this.f1578e0 == null) {
-                    this.f1578e0 = e.b(new Runnable() { // from class: androidx.appcompat.widget.w0
+            if (z10 && this.f1548f0 == null) {
+                if (this.f1547e0 == null) {
+                    this.f1547e0 = e.b(new Runnable() { // from class: androidx.appcompat.widget.w0
                         @Override // java.lang.Runnable
                         public final void run() {
                             Toolbar.this.e();
                         }
                     });
                 }
-                e.c(a10, this.f1578e0);
-                this.f1579f0 = a10;
-            } else if (!z10 && (onBackInvokedDispatcher = this.f1579f0) != null) {
-                e.d(onBackInvokedDispatcher, this.f1578e0);
-                this.f1579f0 = null;
+                e.c(a10, this.f1547e0);
+                this.f1548f0 = a10;
+            } else if (!z10 && (onBackInvokedDispatcher = this.f1548f0) != null) {
+                e.d(onBackInvokedDispatcher, this.f1547e0);
+                this.f1548f0 = null;
             }
         }
     }
@@ -772,7 +772,7 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
 
     public boolean d() {
         ActionMenuView actionMenuView;
-        if (getVisibility() == 0 && (actionMenuView = this.f1575d) != null && actionMenuView.I()) {
+        if (getVisibility() == 0 && (actionMenuView = this.f1544d) != null && actionMenuView.I()) {
             return true;
         }
         return false;
@@ -780,11 +780,11 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
 
     public void e() {
         androidx.appcompat.view.menu.g gVar;
-        f fVar = this.f1572a0;
+        f fVar = this.f1541a0;
         if (fVar == null) {
             gVar = null;
         } else {
-            gVar = fVar.f1600e;
+            gVar = fVar.f1569e;
         }
         if (gVar != null) {
             gVar.collapseActionView();
@@ -792,28 +792,28 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
     }
 
     public void f() {
-        ActionMenuView actionMenuView = this.f1575d;
+        ActionMenuView actionMenuView = this.f1544d;
         if (actionMenuView != null) {
             actionMenuView.z();
         }
     }
 
     void g() {
-        if (this.f1587s == null) {
+        if (this.f1556s == null) {
             l lVar = new l(getContext(), null, f.a.L);
-            this.f1587s = lVar;
-            lVar.setImageDrawable(this.f1585q);
-            this.f1587s.setContentDescription(this.f1586r);
+            this.f1556s = lVar;
+            lVar.setImageDrawable(this.f1554q);
+            this.f1556s.setContentDescription(this.f1555r);
             g generateDefaultLayoutParams = generateDefaultLayoutParams();
-            generateDefaultLayoutParams.f937a = (this.f1593y & 112) | 8388611;
-            generateDefaultLayoutParams.f1602b = 2;
-            this.f1587s.setLayoutParams(generateDefaultLayoutParams);
-            this.f1587s.setOnClickListener(new d());
+            generateDefaultLayoutParams.f906a = (this.f1562y & 112) | 8388611;
+            generateDefaultLayoutParams.f1571b = 2;
+            this.f1556s.setLayoutParams(generateDefaultLayoutParams);
+            this.f1556s.setOnClickListener(new d());
         }
     }
 
     public CharSequence getCollapseContentDescription() {
-        ImageButton imageButton = this.f1587s;
+        ImageButton imageButton = this.f1556s;
         if (imageButton != null) {
             return imageButton.getContentDescription();
         }
@@ -821,7 +821,7 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
     }
 
     public Drawable getCollapseIcon() {
-        ImageButton imageButton = this.f1587s;
+        ImageButton imageButton = this.f1556s;
         if (imageButton != null) {
             return imageButton.getDrawable();
         }
@@ -878,7 +878,7 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
 
     public int getCurrentContentInsetEnd() {
         androidx.appcompat.view.menu.e L;
-        ActionMenuView actionMenuView = this.f1575d;
+        ActionMenuView actionMenuView = this.f1544d;
         if (actionMenuView != null && (L = actionMenuView.L()) != null && L.hasVisibleItems()) {
             return Math.max(getContentInsetEnd(), Math.max(this.G, 0));
         }
@@ -907,7 +907,7 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
     }
 
     public Drawable getLogo() {
-        ImageView imageView = this.f1584p;
+        ImageView imageView = this.f1553p;
         if (imageView != null) {
             return imageView.getDrawable();
         }
@@ -915,7 +915,7 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
     }
 
     public CharSequence getLogoDescription() {
-        ImageView imageView = this.f1584p;
+        ImageView imageView = this.f1553p;
         if (imageView != null) {
             return imageView.getContentDescription();
         }
@@ -924,15 +924,15 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
 
     public Menu getMenu() {
         j();
-        return this.f1575d.getMenu();
+        return this.f1544d.getMenu();
     }
 
     View getNavButtonView() {
-        return this.f1583o;
+        return this.f1552o;
     }
 
     public CharSequence getNavigationContentDescription() {
-        ImageButton imageButton = this.f1583o;
+        ImageButton imageButton = this.f1552o;
         if (imageButton != null) {
             return imageButton.getContentDescription();
         }
@@ -940,7 +940,7 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
     }
 
     public Drawable getNavigationIcon() {
-        ImageButton imageButton = this.f1583o;
+        ImageButton imageButton = this.f1552o;
         if (imageButton != null) {
             return imageButton.getDrawable();
         }
@@ -953,15 +953,15 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
 
     public Drawable getOverflowIcon() {
         j();
-        return this.f1575d.getOverflowIcon();
+        return this.f1544d.getOverflowIcon();
     }
 
     Context getPopupContext() {
-        return this.f1589u;
+        return this.f1558u;
     }
 
     public int getPopupTheme() {
-        return this.f1590v;
+        return this.f1559v;
     }
 
     public CharSequence getSubtitle() {
@@ -969,7 +969,7 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
     }
 
     final TextView getSubtitleTextView() {
-        return this.f1582i;
+        return this.f1551i;
     }
 
     public CharSequence getTitle() {
@@ -993,7 +993,7 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
     }
 
     final TextView getTitleTextView() {
-        return this.f1577e;
+        return this.f1546e;
     }
 
     public z getWrapper() {
@@ -1042,7 +1042,7 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
     @Override // android.view.ViewGroup, android.view.View
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        removeCallbacks(this.f1581h0);
+        removeCallbacks(this.f1550h0);
         R();
     }
 
@@ -1112,53 +1112,53 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
         boolean b10 = g1.b(this);
         int i19 = !b10 ? 1 : 0;
         int i20 = 0;
-        if (P(this.f1583o)) {
-            F(this.f1583o, i10, 0, i11, 0, this.f1594z);
-            i12 = this.f1583o.getMeasuredWidth() + s(this.f1583o);
-            i13 = Math.max(0, this.f1583o.getMeasuredHeight() + t(this.f1583o));
-            i14 = View.combineMeasuredStates(0, this.f1583o.getMeasuredState());
+        if (P(this.f1552o)) {
+            F(this.f1552o, i10, 0, i11, 0, this.f1563z);
+            i12 = this.f1552o.getMeasuredWidth() + s(this.f1552o);
+            i13 = Math.max(0, this.f1552o.getMeasuredHeight() + t(this.f1552o));
+            i14 = View.combineMeasuredStates(0, this.f1552o.getMeasuredState());
         } else {
             i12 = 0;
             i13 = 0;
             i14 = 0;
         }
-        if (P(this.f1587s)) {
-            F(this.f1587s, i10, 0, i11, 0, this.f1594z);
-            i12 = this.f1587s.getMeasuredWidth() + s(this.f1587s);
-            i13 = Math.max(i13, this.f1587s.getMeasuredHeight() + t(this.f1587s));
-            i14 = View.combineMeasuredStates(i14, this.f1587s.getMeasuredState());
+        if (P(this.f1556s)) {
+            F(this.f1556s, i10, 0, i11, 0, this.f1563z);
+            i12 = this.f1556s.getMeasuredWidth() + s(this.f1556s);
+            i13 = Math.max(i13, this.f1556s.getMeasuredHeight() + t(this.f1556s));
+            i14 = View.combineMeasuredStates(i14, this.f1556s.getMeasuredState());
         }
         int currentContentInsetStart = getCurrentContentInsetStart();
         int max = Math.max(currentContentInsetStart, i12);
         iArr2[b10 ? 1 : 0] = Math.max(0, currentContentInsetStart - i12);
-        if (P(this.f1575d)) {
-            F(this.f1575d, i10, max, i11, 0, this.f1594z);
-            i15 = this.f1575d.getMeasuredWidth() + s(this.f1575d);
-            i13 = Math.max(i13, this.f1575d.getMeasuredHeight() + t(this.f1575d));
-            i14 = View.combineMeasuredStates(i14, this.f1575d.getMeasuredState());
+        if (P(this.f1544d)) {
+            F(this.f1544d, i10, max, i11, 0, this.f1563z);
+            i15 = this.f1544d.getMeasuredWidth() + s(this.f1544d);
+            i13 = Math.max(i13, this.f1544d.getMeasuredHeight() + t(this.f1544d));
+            i14 = View.combineMeasuredStates(i14, this.f1544d.getMeasuredState());
         } else {
             i15 = 0;
         }
         int currentContentInsetEnd = getCurrentContentInsetEnd();
         int max2 = max + Math.max(currentContentInsetEnd, i15);
         iArr2[i19] = Math.max(0, currentContentInsetEnd - i15);
-        if (P(this.f1588t)) {
+        if (P(this.f1557t)) {
             iArr = iArr2;
-            max2 += E(this.f1588t, i10, max2, i11, 0, iArr);
-            i13 = Math.max(i13, this.f1588t.getMeasuredHeight() + t(this.f1588t));
-            i14 = View.combineMeasuredStates(i14, this.f1588t.getMeasuredState());
+            max2 += E(this.f1557t, i10, max2, i11, 0, iArr);
+            i13 = Math.max(i13, this.f1557t.getMeasuredHeight() + t(this.f1557t));
+            i14 = View.combineMeasuredStates(i14, this.f1557t.getMeasuredState());
         } else {
             iArr = iArr2;
         }
-        if (P(this.f1584p)) {
-            max2 += E(this.f1584p, i10, max2, i11, 0, iArr);
-            i13 = Math.max(i13, this.f1584p.getMeasuredHeight() + t(this.f1584p));
-            i14 = View.combineMeasuredStates(i14, this.f1584p.getMeasuredState());
+        if (P(this.f1553p)) {
+            max2 += E(this.f1553p, i10, max2, i11, 0, iArr);
+            i13 = Math.max(i13, this.f1553p.getMeasuredHeight() + t(this.f1553p));
+            i14 = View.combineMeasuredStates(i14, this.f1553p.getMeasuredState());
         }
         int childCount = getChildCount();
         for (int i21 = 0; i21 < childCount; i21++) {
             View childAt = getChildAt(i21);
-            if (((g) childAt.getLayoutParams()).f1602b == 0 && P(childAt)) {
+            if (((g) childAt.getLayoutParams()).f1571b == 0 && P(childAt)) {
                 max2 += E(childAt, i10, max2, i11, 0, iArr);
                 int max3 = Math.max(i13, childAt.getMeasuredHeight() + t(childAt));
                 i14 = View.combineMeasuredStates(i14, childAt.getMeasuredState());
@@ -1170,22 +1170,22 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
         int i22 = max2;
         int i23 = this.C + this.D;
         int i24 = this.A + this.B;
-        if (P(this.f1577e)) {
-            E(this.f1577e, i10, i22 + i24, i11, i23, iArr);
-            int measuredWidth = this.f1577e.getMeasuredWidth() + s(this.f1577e);
-            int measuredHeight = this.f1577e.getMeasuredHeight() + t(this.f1577e);
+        if (P(this.f1546e)) {
+            E(this.f1546e, i10, i22 + i24, i11, i23, iArr);
+            int measuredWidth = this.f1546e.getMeasuredWidth() + s(this.f1546e);
+            int measuredHeight = this.f1546e.getMeasuredHeight() + t(this.f1546e);
             i16 = measuredWidth;
-            i17 = View.combineMeasuredStates(i14, this.f1577e.getMeasuredState());
+            i17 = View.combineMeasuredStates(i14, this.f1546e.getMeasuredState());
             i18 = measuredHeight;
         } else {
             i16 = 0;
             i17 = i14;
             i18 = 0;
         }
-        if (P(this.f1582i)) {
-            i16 = Math.max(i16, E(this.f1582i, i10, i22 + i24, i11, i23 + i18, iArr));
-            i18 += this.f1582i.getMeasuredHeight() + t(this.f1582i);
-            i17 = View.combineMeasuredStates(i17, this.f1582i.getMeasuredState());
+        if (P(this.f1551i)) {
+            i16 = Math.max(i16, E(this.f1551i, i10, i22 + i24, i11, i23 + i18, iArr));
+            i18 += this.f1551i.getMeasuredHeight() + t(this.f1551i);
+            i17 = View.combineMeasuredStates(i17, this.f1551i.getMeasuredState());
         }
         int max4 = Math.max(i13, i18);
         int paddingLeft = i22 + i16 + getPaddingLeft() + getPaddingRight();
@@ -1208,17 +1208,17 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
         }
         i iVar = (i) parcelable;
         super.onRestoreInstanceState(iVar.a());
-        ActionMenuView actionMenuView = this.f1575d;
+        ActionMenuView actionMenuView = this.f1544d;
         if (actionMenuView != null) {
             eVar = actionMenuView.L();
         } else {
             eVar = null;
         }
-        int i10 = iVar.f1603i;
-        if (i10 != 0 && this.f1572a0 != null && eVar != null && (findItem = eVar.findItem(i10)) != null) {
+        int i10 = iVar.f1572i;
+        if (i10 != 0 && this.f1541a0 != null && eVar != null && (findItem = eVar.findItem(i10)) != null) {
             findItem.expandActionView();
         }
-        if (iVar.f1604o) {
+        if (iVar.f1573o) {
             H();
         }
     }
@@ -1239,11 +1239,11 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
     protected Parcelable onSaveInstanceState() {
         androidx.appcompat.view.menu.g gVar;
         i iVar = new i(super.onSaveInstanceState());
-        f fVar = this.f1572a0;
-        if (fVar != null && (gVar = fVar.f1600e) != null) {
-            iVar.f1603i = gVar.getItemId();
+        f fVar = this.f1541a0;
+        if (fVar != null && (gVar = fVar.f1569e) != null) {
+            iVar.f1572i = gVar.getItemId();
         }
-        iVar.f1604o = B();
+        iVar.f1573o = B();
         return iVar;
     }
 
@@ -1271,8 +1271,8 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
     }
 
     public void setBackInvokedCallbackEnabled(boolean z10) {
-        if (this.f1580g0 != z10) {
-            this.f1580g0 = z10;
+        if (this.f1549g0 != z10) {
+            this.f1549g0 = z10;
             R();
         }
     }
@@ -1286,7 +1286,7 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
     }
 
     public void setCollapsible(boolean z10) {
-        this.f1576d0 = z10;
+        this.f1545d0 = z10;
         requestLayout();
     }
 
@@ -1332,7 +1332,7 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
 
     public void setNavigationOnClickListener(View.OnClickListener onClickListener) {
         l();
-        this.f1583o.setOnClickListener(onClickListener);
+        this.f1552o.setOnClickListener(onClickListener);
     }
 
     public void setOnMenuItemClickListener(h hVar) {
@@ -1341,16 +1341,16 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
 
     public void setOverflowIcon(Drawable drawable) {
         j();
-        this.f1575d.setOverflowIcon(drawable);
+        this.f1544d.setOverflowIcon(drawable);
     }
 
     public void setPopupTheme(int i10) {
-        if (this.f1590v != i10) {
-            this.f1590v = i10;
+        if (this.f1559v != i10) {
+            this.f1559v = i10;
             if (i10 == 0) {
-                this.f1589u = getContext();
+                this.f1558u = getContext();
             } else {
-                this.f1589u = new ContextThemeWrapper(getContext(), i10);
+                this.f1558u = new ContextThemeWrapper(getContext(), i10);
             }
         }
     }
@@ -1392,15 +1392,15 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
     }
 
     public boolean v() {
-        f fVar = this.f1572a0;
-        if (fVar != null && fVar.f1600e != null) {
+        f fVar = this.f1541a0;
+        if (fVar != null && fVar.f1569e != null) {
             return true;
         }
         return false;
     }
 
     public boolean w() {
-        ActionMenuView actionMenuView = this.f1575d;
+        ActionMenuView actionMenuView = this.f1544d;
         if (actionMenuView != null && actionMenuView.F()) {
             return true;
         }
@@ -1423,11 +1423,11 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
     public static class g extends ActionBar.a {
 
         /* renamed from: b  reason: collision with root package name */
-        int f1602b;
+        int f1571b;
 
         public g(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
-            this.f1602b = 0;
+            this.f1571b = 0;
         }
 
         void a(ViewGroup.MarginLayoutParams marginLayoutParams) {
@@ -1439,30 +1439,30 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
 
         public g(int i10, int i11) {
             super(i10, i11);
-            this.f1602b = 0;
-            this.f937a = 8388627;
+            this.f1571b = 0;
+            this.f906a = 8388627;
         }
 
         public g(g gVar) {
             super((ActionBar.a) gVar);
-            this.f1602b = 0;
-            this.f1602b = gVar.f1602b;
+            this.f1571b = 0;
+            this.f1571b = gVar.f1571b;
         }
 
         public g(ActionBar.a aVar) {
             super(aVar);
-            this.f1602b = 0;
+            this.f1571b = 0;
         }
 
         public g(ViewGroup.MarginLayoutParams marginLayoutParams) {
             super(marginLayoutParams);
-            this.f1602b = 0;
+            this.f1571b = 0;
             a(marginLayoutParams);
         }
 
         public g(ViewGroup.LayoutParams layoutParams) {
             super(layoutParams);
-            this.f1602b = 0;
+            this.f1571b = 0;
         }
     }
 
@@ -1474,7 +1474,7 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
         if (!TextUtils.isEmpty(charSequence)) {
             g();
         }
-        ImageButton imageButton = this.f1587s;
+        ImageButton imageButton = this.f1556s;
         if (imageButton != null) {
             imageButton.setContentDescription(charSequence);
         }
@@ -1483,29 +1483,29 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
     public void setCollapseIcon(Drawable drawable) {
         if (drawable != null) {
             g();
-            this.f1587s.setImageDrawable(drawable);
+            this.f1556s.setImageDrawable(drawable);
             return;
         }
-        ImageButton imageButton = this.f1587s;
+        ImageButton imageButton = this.f1556s;
         if (imageButton != null) {
-            imageButton.setImageDrawable(this.f1585q);
+            imageButton.setImageDrawable(this.f1554q);
         }
     }
 
     public void setLogo(Drawable drawable) {
         if (drawable != null) {
             i();
-            if (!z(this.f1584p)) {
-                c(this.f1584p, true);
+            if (!z(this.f1553p)) {
+                c(this.f1553p, true);
             }
         } else {
-            ImageView imageView = this.f1584p;
+            ImageView imageView = this.f1553p;
             if (imageView != null && z(imageView)) {
-                removeView(this.f1584p);
-                this.P.remove(this.f1584p);
+                removeView(this.f1553p);
+                this.P.remove(this.f1553p);
             }
         }
-        ImageView imageView2 = this.f1584p;
+        ImageView imageView2 = this.f1553p;
         if (imageView2 != null) {
             imageView2.setImageDrawable(drawable);
         }
@@ -1515,7 +1515,7 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
         if (!TextUtils.isEmpty(charSequence)) {
             i();
         }
-        ImageView imageView = this.f1584p;
+        ImageView imageView = this.f1553p;
         if (imageView != null) {
             imageView.setContentDescription(charSequence);
         }
@@ -1525,27 +1525,27 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
         if (!TextUtils.isEmpty(charSequence)) {
             l();
         }
-        ImageButton imageButton = this.f1583o;
+        ImageButton imageButton = this.f1552o;
         if (imageButton != null) {
             imageButton.setContentDescription(charSequence);
-            a1.a(this.f1583o, charSequence);
+            a1.a(this.f1552o, charSequence);
         }
     }
 
     public void setNavigationIcon(Drawable drawable) {
         if (drawable != null) {
             l();
-            if (!z(this.f1583o)) {
-                c(this.f1583o, true);
+            if (!z(this.f1552o)) {
+                c(this.f1552o, true);
             }
         } else {
-            ImageButton imageButton = this.f1583o;
+            ImageButton imageButton = this.f1552o;
             if (imageButton != null && z(imageButton)) {
-                removeView(this.f1583o);
-                this.P.remove(this.f1583o);
+                removeView(this.f1552o);
+                this.P.remove(this.f1552o);
             }
         }
-        ImageButton imageButton2 = this.f1583o;
+        ImageButton imageButton2 = this.f1552o;
         if (imageButton2 != null) {
             imageButton2.setImageDrawable(drawable);
         }
@@ -1553,32 +1553,32 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
 
     public void setSubtitle(CharSequence charSequence) {
         if (!TextUtils.isEmpty(charSequence)) {
-            if (this.f1582i == null) {
+            if (this.f1551i == null) {
                 Context context = getContext();
                 AppCompatTextView appCompatTextView = new AppCompatTextView(context);
-                this.f1582i = appCompatTextView;
+                this.f1551i = appCompatTextView;
                 appCompatTextView.setSingleLine();
-                this.f1582i.setEllipsize(TextUtils.TruncateAt.END);
-                int i10 = this.f1592x;
+                this.f1551i.setEllipsize(TextUtils.TruncateAt.END);
+                int i10 = this.f1561x;
                 if (i10 != 0) {
-                    this.f1582i.setTextAppearance(context, i10);
+                    this.f1551i.setTextAppearance(context, i10);
                 }
                 ColorStateList colorStateList = this.L;
                 if (colorStateList != null) {
-                    this.f1582i.setTextColor(colorStateList);
+                    this.f1551i.setTextColor(colorStateList);
                 }
             }
-            if (!z(this.f1582i)) {
-                c(this.f1582i, true);
+            if (!z(this.f1551i)) {
+                c(this.f1551i, true);
             }
         } else {
-            TextView textView = this.f1582i;
+            TextView textView = this.f1551i;
             if (textView != null && z(textView)) {
-                removeView(this.f1582i);
-                this.P.remove(this.f1582i);
+                removeView(this.f1551i);
+                this.P.remove(this.f1551i);
             }
         }
-        TextView textView2 = this.f1582i;
+        TextView textView2 = this.f1551i;
         if (textView2 != null) {
             textView2.setText(charSequence);
         }
@@ -1587,7 +1587,7 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
 
     public void setSubtitleTextColor(@NonNull ColorStateList colorStateList) {
         this.L = colorStateList;
-        TextView textView = this.f1582i;
+        TextView textView = this.f1551i;
         if (textView != null) {
             textView.setTextColor(colorStateList);
         }
@@ -1595,32 +1595,32 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
 
     public void setTitle(CharSequence charSequence) {
         if (!TextUtils.isEmpty(charSequence)) {
-            if (this.f1577e == null) {
+            if (this.f1546e == null) {
                 Context context = getContext();
                 AppCompatTextView appCompatTextView = new AppCompatTextView(context);
-                this.f1577e = appCompatTextView;
+                this.f1546e = appCompatTextView;
                 appCompatTextView.setSingleLine();
-                this.f1577e.setEllipsize(TextUtils.TruncateAt.END);
-                int i10 = this.f1591w;
+                this.f1546e.setEllipsize(TextUtils.TruncateAt.END);
+                int i10 = this.f1560w;
                 if (i10 != 0) {
-                    this.f1577e.setTextAppearance(context, i10);
+                    this.f1546e.setTextAppearance(context, i10);
                 }
                 ColorStateList colorStateList = this.K;
                 if (colorStateList != null) {
-                    this.f1577e.setTextColor(colorStateList);
+                    this.f1546e.setTextColor(colorStateList);
                 }
             }
-            if (!z(this.f1577e)) {
-                c(this.f1577e, true);
+            if (!z(this.f1546e)) {
+                c(this.f1546e, true);
             }
         } else {
-            TextView textView = this.f1577e;
+            TextView textView = this.f1546e;
             if (textView != null && z(textView)) {
-                removeView(this.f1577e);
-                this.P.remove(this.f1577e);
+                removeView(this.f1546e);
+                this.P.remove(this.f1546e);
             }
         }
-        TextView textView2 = this.f1577e;
+        TextView textView2 = this.f1546e;
         if (textView2 != null) {
             textView2.setText(charSequence);
         }
@@ -1629,7 +1629,7 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
 
     public void setTitleTextColor(@NonNull ColorStateList colorStateList) {
         this.K = colorStateList;
-        TextView textView = this.f1577e;
+        TextView textView = this.f1546e;
         if (textView != null) {
             textView.setTextColor(colorStateList);
         }
@@ -1640,10 +1640,10 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
         public static final Parcelable.Creator<i> CREATOR = new a();
 
         /* renamed from: i  reason: collision with root package name */
-        int f1603i;
+        int f1572i;
 
         /* renamed from: o  reason: collision with root package name */
-        boolean f1604o;
+        boolean f1573o;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         class a implements Parcelable.ClassLoaderCreator {
@@ -1671,15 +1671,15 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
 
         public i(Parcel parcel, ClassLoader classLoader) {
             super(parcel, classLoader);
-            this.f1603i = parcel.readInt();
-            this.f1604o = parcel.readInt() != 0;
+            this.f1572i = parcel.readInt();
+            this.f1573o = parcel.readInt() != 0;
         }
 
         @Override // u2.a, android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
             super.writeToParcel(parcel, i10);
-            parcel.writeInt(this.f1603i);
-            parcel.writeInt(this.f1604o ? 1 : 0);
+            parcel.writeInt(this.f1572i);
+            parcel.writeInt(this.f1573o ? 1 : 0);
         }
 
         public i(Parcelable parcelable) {
@@ -1701,14 +1701,14 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
         });
         this.S = new ArrayList();
         this.U = new a();
-        this.f1581h0 = new b();
-        v0 v10 = v0.v(getContext(), attributeSet, f.j.f23437d3, i10, 0);
-        androidx.core.view.h0.l0(this, context, f.j.f23437d3, attributeSet, v10.r(), i10, 0);
-        this.f1591w = v10.n(f.j.F3, 0);
-        this.f1592x = v10.n(f.j.f23532w3, 0);
-        this.H = v10.l(f.j.f23442e3, this.H);
-        this.f1593y = v10.l(f.j.f23447f3, 48);
-        int e10 = v10.e(f.j.f23547z3, 0);
+        this.f1550h0 = new b();
+        v0 v10 = v0.v(getContext(), attributeSet, f.j.f23029d3, i10, 0);
+        androidx.core.view.h0.l0(this, context, f.j.f23029d3, attributeSet, v10.r(), i10, 0);
+        this.f1560w = v10.n(f.j.F3, 0);
+        this.f1561x = v10.n(f.j.f23124w3, 0);
+        this.H = v10.l(f.j.f23034e3, this.H);
+        this.f1562y = v10.l(f.j.f23039f3, 48);
+        int e10 = v10.e(f.j.f23139z3, 0);
         e10 = v10.s(f.j.E3) ? v10.e(f.j.E3, e10) : e10;
         this.D = e10;
         this.C = e10;
@@ -1730,54 +1730,54 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
         if (e14 >= 0) {
             this.D = e14;
         }
-        this.f1594z = v10.f(f.j.f23502q3, -1);
-        int e15 = v10.e(f.j.f23482m3, Integer.MIN_VALUE);
-        int e16 = v10.e(f.j.f23462i3, Integer.MIN_VALUE);
-        int f10 = v10.f(f.j.f23472k3, 0);
-        int f11 = v10.f(f.j.f23477l3, 0);
+        this.f1563z = v10.f(f.j.f23094q3, -1);
+        int e15 = v10.e(f.j.f23074m3, Integer.MIN_VALUE);
+        int e16 = v10.e(f.j.f23054i3, Integer.MIN_VALUE);
+        int f10 = v10.f(f.j.f23064k3, 0);
+        int f11 = v10.f(f.j.f23069l3, 0);
         h();
         this.E.e(f10, f11);
         if (e15 != Integer.MIN_VALUE || e16 != Integer.MIN_VALUE) {
             this.E.g(e15, e16);
         }
-        this.F = v10.e(f.j.f23487n3, Integer.MIN_VALUE);
-        this.G = v10.e(f.j.f23467j3, Integer.MIN_VALUE);
-        this.f1585q = v10.g(f.j.f23457h3);
-        this.f1586r = v10.p(f.j.f23452g3);
-        CharSequence p10 = v10.p(f.j.f23542y3);
+        this.F = v10.e(f.j.f23079n3, Integer.MIN_VALUE);
+        this.G = v10.e(f.j.f23059j3, Integer.MIN_VALUE);
+        this.f1554q = v10.g(f.j.f23049h3);
+        this.f1555r = v10.p(f.j.f23044g3);
+        CharSequence p10 = v10.p(f.j.f23134y3);
         if (!TextUtils.isEmpty(p10)) {
             setTitle(p10);
         }
-        CharSequence p11 = v10.p(f.j.f23527v3);
+        CharSequence p11 = v10.p(f.j.f23119v3);
         if (!TextUtils.isEmpty(p11)) {
             setSubtitle(p11);
         }
-        this.f1589u = getContext();
-        setPopupTheme(v10.n(f.j.f23522u3, 0));
-        Drawable g10 = v10.g(f.j.f23517t3);
+        this.f1558u = getContext();
+        setPopupTheme(v10.n(f.j.f23114u3, 0));
+        Drawable g10 = v10.g(f.j.f23109t3);
         if (g10 != null) {
             setNavigationIcon(g10);
         }
-        CharSequence p12 = v10.p(f.j.f23512s3);
+        CharSequence p12 = v10.p(f.j.f23104s3);
         if (!TextUtils.isEmpty(p12)) {
             setNavigationContentDescription(p12);
         }
-        Drawable g11 = v10.g(f.j.f23492o3);
+        Drawable g11 = v10.g(f.j.f23084o3);
         if (g11 != null) {
             setLogo(g11);
         }
-        CharSequence p13 = v10.p(f.j.f23497p3);
+        CharSequence p13 = v10.p(f.j.f23089p3);
         if (!TextUtils.isEmpty(p13)) {
             setLogoDescription(p13);
         }
         if (v10.s(f.j.G3)) {
             setTitleTextColor(v10.c(f.j.G3));
         }
-        if (v10.s(f.j.f23537x3)) {
-            setSubtitleTextColor(v10.c(f.j.f23537x3));
+        if (v10.s(f.j.f23129x3)) {
+            setSubtitleTextColor(v10.c(f.j.f23129x3));
         }
-        if (v10.s(f.j.f23507r3)) {
-            x(v10.n(f.j.f23507r3, 0));
+        if (v10.s(f.j.f23099r3)) {
+            x(v10.n(f.j.f23099r3, 0));
         }
         v10.x();
     }

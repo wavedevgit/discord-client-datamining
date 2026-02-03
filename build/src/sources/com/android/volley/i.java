@@ -8,25 +8,25 @@ import java.util.concurrent.BlockingQueue;
 public class i extends Thread {
 
     /* renamed from: d  reason: collision with root package name */
-    private final BlockingQueue f8816d;
+    private final BlockingQueue f7784d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final h f8817e;
+    private final h f7785e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final b f8818i;
+    private final b f7786i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final q f8819o;
+    private final q f7787o;
 
     /* renamed from: p  reason: collision with root package name */
-    private volatile boolean f8820p = false;
+    private volatile boolean f7788p = false;
 
     public i(BlockingQueue blockingQueue, h hVar, b bVar, q qVar) {
-        this.f8816d = blockingQueue;
-        this.f8817e = hVar;
-        this.f8818i = bVar;
-        this.f8819o = qVar;
+        this.f7784d = blockingQueue;
+        this.f7785e = hVar;
+        this.f7786i = bVar;
+        this.f7787o = qVar;
     }
 
     private void a(n nVar) {
@@ -34,11 +34,11 @@ public class i extends Thread {
     }
 
     private void b(n nVar, u uVar) {
-        this.f8819o.c(nVar, nVar.parseNetworkError(uVar));
+        this.f7787o.c(nVar, nVar.parseNetworkError(uVar));
     }
 
     private void c() {
-        d((n) this.f8816d.take());
+        d((n) this.f7784d.take());
     }
 
     void d(n nVar) {
@@ -54,21 +54,21 @@ public class i extends Thread {
                         return;
                     }
                     a(nVar);
-                    k a10 = this.f8817e.a(nVar);
+                    k a10 = this.f7785e.a(nVar);
                     nVar.addMarker("network-http-complete");
-                    if (a10.f8825e && nVar.hasHadResponseDelivered()) {
+                    if (a10.f7793e && nVar.hasHadResponseDelivered()) {
                         nVar.finish("not-modified");
                         nVar.notifyListenerResponseNotUsable();
                         return;
                     }
                     p parseNetworkResponse = nVar.parseNetworkResponse(a10);
                     nVar.addMarker("network-parse-complete");
-                    if (nVar.shouldCache() && parseNetworkResponse.f8847b != null) {
-                        this.f8818i.c(nVar.getCacheKey(), parseNetworkResponse.f8847b);
+                    if (nVar.shouldCache() && parseNetworkResponse.f7815b != null) {
+                        this.f7786i.c(nVar.getCacheKey(), parseNetworkResponse.f7815b);
                         nVar.addMarker("network-cache-written");
                     }
                     nVar.markDelivered();
-                    this.f8819o.a(nVar, parseNetworkResponse);
+                    this.f7787o.a(nVar, parseNetworkResponse);
                     nVar.notifyListenerResponseReceived(parseNetworkResponse);
                 } catch (u e10) {
                     e10.a(SystemClock.elapsedRealtime() - elapsedRealtime);
@@ -79,7 +79,7 @@ public class i extends Thread {
                 v.d(e11, "Unhandled exception %s", e11.toString());
                 u uVar = new u(e11);
                 uVar.a(SystemClock.elapsedRealtime() - elapsedRealtime);
-                this.f8819o.c(nVar, uVar);
+                this.f7787o.c(nVar, uVar);
                 nVar.notifyListenerResponseNotUsable();
             }
         } finally {
@@ -88,7 +88,7 @@ public class i extends Thread {
     }
 
     public void e() {
-        this.f8820p = true;
+        this.f7788p = true;
         interrupt();
     }
 
@@ -99,7 +99,7 @@ public class i extends Thread {
             try {
                 c();
             } catch (InterruptedException unused) {
-                if (this.f8820p) {
+                if (this.f7788p) {
                     Thread.currentThread().interrupt();
                     return;
                 }

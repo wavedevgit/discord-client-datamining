@@ -8,20 +8,20 @@ import kotlin.reflect.jvm.internal.impl.storage.StorageManager;
 public class a implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final JvmBuiltInClassDescriptorFactory f33345d;
+    private final JvmBuiltInClassDescriptorFactory f32735d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final StorageManager f33346e;
+    private final StorageManager f32736e;
 
     public a(JvmBuiltInClassDescriptorFactory jvmBuiltInClassDescriptorFactory, StorageManager storageManager) {
-        this.f33345d = jvmBuiltInClassDescriptorFactory;
-        this.f33346e = storageManager;
+        this.f32735d = jvmBuiltInClassDescriptorFactory;
+        this.f32736e = storageManager;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         ClassDescriptorImpl d10;
-        d10 = JvmBuiltInClassDescriptorFactory.d(this.f33345d, this.f33346e);
+        d10 = JvmBuiltInClassDescriptorFactory.d(this.f32735d, this.f32736e);
         return d10;
     }
 }

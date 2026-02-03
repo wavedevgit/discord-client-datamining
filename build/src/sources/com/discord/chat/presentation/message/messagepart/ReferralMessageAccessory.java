@@ -54,7 +54,7 @@ public final class ReferralMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof ReferralMessageAccessory) {
             ReferralMessageAccessory referralMessageAccessory = (ReferralMessageAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, referralMessageAccessory.messageId) && Intrinsics.areEqual(this.referral, referralMessageAccessory.referral);
+            return MessageId.m1089equalsimpl0(this.messageId, referralMessageAccessory.messageId) && Intrinsics.areEqual(this.referral, referralMessageAccessory.referral);
         }
         return false;
     }
@@ -72,14 +72,14 @@ public final class ReferralMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.referral.hashCode();
+        return (MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.referral.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         ReferralEmbed referralEmbed = this.referral;
-        return "ReferralMessageAccessory(messageId=" + m1093toStringimpl + ", referral=" + referralEmbed + ")";
+        return "ReferralMessageAccessory(messageId=" + m1092toStringimpl + ", referral=" + referralEmbed + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

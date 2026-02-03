@@ -1,175 +1,222 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var4.bind(var5)(var1, var0, var3);
-    var0 = undefined;
-    var1.default = var0;
-    var3 = {};
-    var4 = {
-        'one': 'mindre enn ett sekund',
-        'other': 'mindre enn {{count}} sekunder'
-    };
-    var3.lessThanXSeconds = var4;
-    var4 = {
-        'one': 'ett sekund',
-        'other': '{{count}} sekunder'
-    };
-    var3.xSeconds = var4;
-    var4 = 'et halvt minutt';
-    var3.halfAMinute = var4;
-    var4 = {
-        'one': 'mindre enn ett minutt',
-        'other': 'mindre enn {{count}} minutter'
-    };
-    var3.lessThanXMinutes = var4;
-    var4 = {
-        'one': 'ett minutt',
-        'other': '{{count}} minutter'
-    };
-    var3.xMinutes = var4;
-    var4 = {
-        'one': 'omtrent en time',
-        'other': 'omtrent {{count}} timer'
-    };
-    var3.aboutXHours = var4;
-    var4 = {
-        'one': 'en time',
-        'other': '{{count}} timer'
-    };
-    var3.xHours = var4;
-    var4 = {
-        'one': 'en dag',
-        'other': '{{count}} dager'
-    };
-    var3.xDays = var4;
-    var4 = {
-        'one': 'omtrent en uke',
-        'other': 'omtrent {{count}} uker'
-    };
-    var3.aboutXWeeks = var4;
-    var4 = {
-        'one': 'en uke',
-        'other': '{{count}} uker'
-    };
-    var3.xWeeks = var4;
-    var4 = {
-        'one': 'omtrent en måned',
-        'other': 'omtrent {{count}} måneder'
-    };
-    var3.aboutXMonths = var4;
-    var4 = {
-        'one': 'en måned',
-        'other': '{{count}} måneder'
-    };
-    var3.xMonths = var4;
-    var4 = {
-        'one': 'omtrent ett år',
-        'other': 'omtrent {{count}} år'
-    };
-    var3.aboutXYears = var4;
-    var4 = {
-        'one': 'ett år',
-        'other': '{{count}} år'
-    };
-    var3.xYears = var4;
-    var4 = {
-        'one': 'over ett år',
-        'other': 'over {{count}} år'
-    };
-    var3.overXYears = var4;
-    var4 = {
-        'one': 'nesten ett år',
-        'other': 'nesten {{count}} år'
-    };
-    var3.almostXYears = var4;
-    var _closure1_slot0 = var3;
-    var2 = function arg0, arg1, arg2() {
-        _fun22121: for (var _fun22121_ip = 0;;) switch (_fun22121_ip) {
-            case 0:
-                var7 = arg1;
-                var1 = arg2;
-                var2 = _closure1_slot0;
-                var0 = arg0;
-                var2 = var2[var0];
-                var4 = 'string';
-                var0 = typeof var2;
-                var3 = var2;
-                if (!(var4 !== var0)) {
-                    _fun22121_ip = 90;
-                    continue _fun22121
-                }
-            case 34:
-                var0 = 1;
-                if (!(var0 !== var7)) {
-                    _fun22121_ip = 81;
-                    continue _fun22121
-                }
-            case 41:
-                var6 = var2.other;
-                var5 = var6.replace;
+    _fun22184: for (var _fun22184_ip = 0;;) switch (_fun22184_ip) {
+        case 0:
+            var1 = exports;
+            var0 = global;
+            var4 = var0.Object;
+            var3 = var4.defineProperty;
+            var2 = {};
+            var0 = true;
+            var2.value = var0;
+            var0 = '__esModule';
+            var0 = var3.bind(var4)(var1, var0, var2);
+            var0 = undefined;
+            var1.default = var0;
+            var3 = dependencyMap;
+            var2 = 0;
+            var3 = var3[var2];
+            var2 = require;
+            var4 = var2.bind(var0)(var3);
+            if (!var4) {
+                _fun22184_ip = 77;
+                continue _fun22184
+            }
+        case 65:
+            var2 = var4.__esModule;
+            var3 = var4;
+            if (var2) {
+                _fun22184_ip = 86;
+                continue _fun22184
+            }
+        case 77:
+            var2 = {};
+            var2.default = var4;
+            var3 = var2;
+        case 86:
+            var2 = {};
+            var4 = function arg0, arg1() {
                 var0 = global;
-                var4 = var0.String;
-                var0 = undefined;
-                var4 = var4.bind(var0)(var7);
-                var0 = '{{count}}';
-                var0 = var5.bind(var6)(var0, var4);
-                _fun22121_ip = 87;
-                continue _fun22121;
-            case 81:
-                var0 = var2.one;
-            case 87:
-                var3 = var0;
-            case 90:
-                var2 = null;
-                var0 = var3;
-                if (!(var2 != var1)) {
-                    _fun22121_ip = 157;
-                    continue _fun22121
-                }
-            case 99:
-                var2 = var1.addSuffix;
-                var0 = var3;
-                if (!var2) {
-                    _fun22121_ip = 157;
-                    continue _fun22121
-                }
-            case 111:
-                var2 = var1.comparison;
-                if (!var2) {
-                    _fun22121_ip = 132;
-                    continue _fun22121
-                }
-            case 120:
-                var2 = var1.comparison;
-                var1 = 0;
-                if (!(!(var2 > var1))) {
-                    _fun22121_ip = 144;
-                    continue _fun22121
-                }
-            case 132:
-                var1 = ' siden';
-                var1 = var3 + var1;
-                _fun22121_ip = 154;
-                continue _fun22121;
-            case 144:
-                var2 = 'om ';
-                var1 = var2 + var3;
-            case 154:
-                var0 = var1;
-            case 157:
+                var2 = var0.Number;
+                var1 = undefined;
+                var0 = arg0;
+                var1 = var2.bind(var1)(var0);
+                var0 = '-oji';
+                var0 = var1 + var0;
                 return var0;
-        }
-    };
-    var1.default = var2;
-    var2 = var1.default;
-    var1 = arg4;
-    var1.exports = var2;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+            };
+            var2.ordinalNumber = var4;
+            var6 = var3.default;
+            var4 = {};
+            var5 = {};
+            var8 = ['pr. Kr.', 'po Kr.'];
+            var5.narrow = var8;
+            var8 = ['pr. Kr.', 'po Kr.'];
+            var5.abbreviated = var8;
+            var8 = ['prieš Kristų', 'po Kristaus'];
+            var5.wide = var8;
+            var4.values = var5;
+            var5 = 'wide';
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.era = var4;
+            var6 = var3.default;
+            var4 = {};
+            var8 = {};
+            var9 = ['1', '2', '3', '4'];
+            var8.narrow = var9;
+            var9 = ['I ketv.', 'II ketv.', 'III ketv.', 'IV ketv.'];
+            var8.abbreviated = var9;
+            var9 = ['I ketvirtis', 'II ketvirtis', 'III ketvirtis', 'IV ketvirtis'];
+            var8.wide = var9;
+            var4.values = var8;
+            var4.defaultWidth = var5;
+            var8 = {};
+            var9 = ['1', '2', '3', '4'];
+            var8.narrow = var9;
+            var9 = ['I k.', 'II k.', 'III k.', 'IV k.'];
+            var8.abbreviated = var9;
+            var9 = ['I ketvirtis', 'II ketvirtis', 'III ketvirtis', 'IV ketvirtis'];
+            var8.wide = var9;
+            var4.formattingValues = var8;
+            var4.defaultFormattingWidth = var5;
+            var7 = function arg0() {
+                var1 = arg0;
+                var0 = 1;
+                var0 = var1 - var0;
+                return var0;
+            };
+            var4.argumentCallback = var7;
+            var4 = var6.bind(var0)(var4);
+            var2.quarter = var4;
+            var6 = var3.default;
+            var4 = {};
+            var7 = {};
+            var8 = ['S', 'V', 'K', 'B', 'G', 'B', 'L', 'R', 'R', 'S', 'L', 'G'];
+            var7.narrow = var8;
+            var8 = ['saus.', 'vas.', 'kov.', 'bal.', 'geg.', 'birž.', 'liep.', 'rugp.', 'rugs.', 'spal.', 'lapkr.', 'gruod.'];
+            var7.abbreviated = var8;
+            var8 = ['sausis', 'vasaris', 'kovas', 'balandis', 'gegužė', 'birželis', 'liepa', 'rugpjūtis', 'rugsėjis', 'spalis', 'lapkritis', 'gruodis'];
+            var7.wide = var8;
+            var4.values = var7;
+            var4.defaultWidth = var5;
+            var7 = {};
+            var8 = ['S', 'V', 'K', 'B', 'G', 'B', 'L', 'R', 'R', 'S', 'L', 'G'];
+            var7.narrow = var8;
+            var8 = ['saus.', 'vas.', 'kov.', 'bal.', 'geg.', 'birž.', 'liep.', 'rugp.', 'rugs.', 'spal.', 'lapkr.', 'gruod.'];
+            var7.abbreviated = var8;
+            var8 = ['sausio', 'vasario', 'kovo', 'balandžio', 'gegužės', 'birželio', 'liepos', 'rugpjūčio', 'rugsėjo', 'spalio', 'lapkričio', 'gruodžio'];
+            var7.wide = var8;
+            var4.formattingValues = var7;
+            var4.defaultFormattingWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.month = var4;
+            var6 = var3.default;
+            var4 = {};
+            var7 = {};
+            var8 = ['S', 'P', 'A', 'T', 'K', 'P', 'Š'];
+            var7.narrow = var8;
+            var8 = ['Sk', 'Pr', 'An', 'Tr', 'Kt', 'Pn', 'Št'];
+            var7.short = var8;
+            var8 = ['sk', 'pr', 'an', 'tr', 'kt', 'pn', 'št'];
+            var7.abbreviated = var8;
+            var8 = ['sekmadienis', 'pirmadienis', 'antradienis', 'trečiadienis', 'ketvirtadienis', 'penktadienis', 'šeštadienis'];
+            var7.wide = var8;
+            var4.values = var7;
+            var4.defaultWidth = var5;
+            var7 = {};
+            var8 = ['S', 'P', 'A', 'T', 'K', 'P', 'Š'];
+            var7.narrow = var8;
+            var8 = ['Sk', 'Pr', 'An', 'Tr', 'Kt', 'Pn', 'Št'];
+            var7.short = var8;
+            var8 = ['sk', 'pr', 'an', 'tr', 'kt', 'pn', 'št'];
+            var7.abbreviated = var8;
+            var8 = ['sekmadienį', 'pirmadienį', 'antradienį', 'trečiadienį', 'ketvirtadienį', 'penktadienį', 'šeštadienį'];
+            var7.wide = var8;
+            var4.formattingValues = var7;
+            var4.defaultFormattingWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.day = var4;
+            var4 = var3.default;
+            var3 = {};
+            var6 = {};
+            var7 = {
+                'am': 'pr. p.',
+                'pm': 'pop.',
+                'midnight': 'vidurnaktis',
+                'noon': 'vidurdienis',
+                'morning': 'rytas',
+                'afternoon': 'diena',
+                'evening': 'vakaras',
+                'night': 'naktis'
+            };
+            var6.narrow = var7;
+            var7 = {
+                'am': 'priešpiet',
+                'pm': 'popiet',
+                'midnight': 'vidurnaktis',
+                'noon': 'vidurdienis',
+                'morning': 'rytas',
+                'afternoon': 'diena',
+                'evening': 'vakaras',
+                'night': 'naktis'
+            };
+            var6.abbreviated = var7;
+            var7 = {
+                'am': 'priešpiet',
+                'pm': 'popiet',
+                'midnight': 'vidurnaktis',
+                'noon': 'vidurdienis',
+                'morning': 'rytas',
+                'afternoon': 'diena',
+                'evening': 'vakaras',
+                'night': 'naktis'
+            };
+            var6.wide = var7;
+            var3.values = var6;
+            var3.defaultWidth = var5;
+            var6 = {};
+            var7 = {
+                'am': 'pr. p.',
+                'pm': 'pop.',
+                'midnight': 'vidurnaktis',
+                'noon': 'perpiet',
+                'morning': 'rytas',
+                'afternoon': 'popietė',
+                'evening': 'vakaras',
+                'night': 'naktis'
+            };
+            var6.narrow = var7;
+            var7 = {
+                'am': 'priešpiet',
+                'pm': 'popiet',
+                'midnight': 'vidurnaktis',
+                'noon': 'perpiet',
+                'morning': 'rytas',
+                'afternoon': 'popietė',
+                'evening': 'vakaras',
+                'night': 'naktis'
+            };
+            var6.abbreviated = var7;
+            var7 = {
+                'am': 'priešpiet',
+                'pm': 'popiet',
+                'midnight': 'vidurnaktis',
+                'noon': 'perpiet',
+                'morning': 'rytas',
+                'afternoon': 'popietė',
+                'evening': 'vakaras',
+                'night': 'naktis'
+            };
+            var6.wide = var7;
+            var3.formattingValues = var6;
+            var3.defaultFormattingWidth = var5;
+            var3 = var4.bind(var0)(var3);
+            var2.dayPeriod = var3;
+            var1.default = var2;
+            var2 = var1.default;
+            var1 = arg4;
+            var1.exports = var2;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1693]);

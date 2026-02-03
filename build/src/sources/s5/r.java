@@ -3,22 +3,22 @@ package s5;
 public class r implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f48881a;
+    private final String f49291a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f48882b;
+    private final int f49292b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final r5.h f48883c;
+    private final r5.h f49293c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f48884d;
+    private final boolean f49294d;
 
     public r(String str, int i10, r5.h hVar, boolean z10) {
-        this.f48881a = str;
-        this.f48882b = i10;
-        this.f48883c = hVar;
-        this.f48884d = z10;
+        this.f49291a = str;
+        this.f49292b = i10;
+        this.f49293c = hVar;
+        this.f49294d = z10;
     }
 
     @Override // s5.c
@@ -27,18 +27,18 @@ public class r implements c {
     }
 
     public String b() {
-        return this.f48881a;
+        return this.f49291a;
     }
 
     public r5.h c() {
-        return this.f48883c;
+        return this.f49293c;
     }
 
     public boolean d() {
-        return this.f48884d;
+        return this.f49294d;
     }
 
     public String toString() {
-        return "ShapePath{name=" + this.f48881a + ", index=" + this.f48882b + '}';
+        return "ShapePath{name=" + this.f49291a + ", index=" + this.f49292b + '}';
     }
 }

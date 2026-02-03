@@ -5,7 +5,7 @@ import ui.c;
 final class z9 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final z9 f46047a = new z9();
+    static final z9 f46005a = new z9();
 
     static {
         c.b a10 = ui.c.a("inferenceCommonLogEvent");

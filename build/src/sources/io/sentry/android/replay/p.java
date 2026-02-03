@@ -20,22 +20,22 @@ import kotlin.jvm.internal.Lambda;
 public final class p implements Closeable {
 
     /* renamed from: p  reason: collision with root package name */
-    public static final a f29140p = new a(null);
+    public static final a f29501p = new a(null);
 
     /* renamed from: q  reason: collision with root package name */
-    public static final int f29141q = 8;
+    public static final int f29502q = 8;
 
     /* renamed from: d  reason: collision with root package name */
-    private final AtomicBoolean f29142d;
+    private final AtomicBoolean f29503d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final io.sentry.util.a f29143e;
+    private final io.sentry.util.a f29504e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final CopyOnWriteArrayList f29144i;
+    private final CopyOnWriteArrayList f29505i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final ArrayList f29145o;
+    private final ArrayList f29506o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -43,26 +43,26 @@ public final class p implements Closeable {
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: io.sentry.android.replay.p$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0395a extends Lambda implements Function1 {
+        public static final class C0394a extends Lambda implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ p f29146d;
+            final /* synthetic */ p f29507d;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            C0395a(p pVar) {
+            C0394a(p pVar) {
                 super(1);
-                this.f29146d = pVar;
+                this.f29507d = pVar;
             }
 
             @Override // kotlin.jvm.functions.Function1
             /* renamed from: a */
             public final ArrayList invoke(ArrayList mViews) {
                 Intrinsics.checkNotNullParameter(mViews, "mViews");
-                a1 a10 = this.f29146d.f29143e.a();
+                a1 a10 = this.f29507d.f29504e.a();
                 try {
-                    ArrayList arrayList = this.f29146d.f29145o;
+                    ArrayList arrayList = this.f29507d.f29506o;
                     arrayList.addAll(mViews);
-                    vr.a.a(a10, null);
+                    xr.a.a(a10, null);
                     return arrayList;
                 } finally {
                 }
@@ -75,10 +75,10 @@ public final class p implements Closeable {
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final void c(p pVar) {
-            if (pVar.f29142d.get()) {
+            if (pVar.f29503d.get()) {
                 return;
             }
-            u.f29221a.e(new C0395a(pVar));
+            u.f29582a.e(new C0394a(pVar));
         }
 
         public final p b() {
@@ -205,15 +205,15 @@ public final class p implements Closeable {
         @Override // java.util.concurrent.CopyOnWriteArrayList, java.util.List, java.util.Collection
         /* renamed from: b */
         public boolean add(e eVar) {
-            a1 a10 = p.this.f29143e.a();
+            a1 a10 = p.this.f29504e.a();
             try {
-                for (View view : p.this.f29145o) {
+                for (View view : p.this.f29506o) {
                     if (eVar != null) {
                         eVar.h(view, true);
                     }
                 }
-                Unit unit = Unit.f33074a;
-                vr.a.a(a10, null);
+                Unit unit = Unit.f32464a;
+                xr.a.a(a10, null);
                 return super.add(eVar);
             } finally {
             }
@@ -307,18 +307,18 @@ public final class p implements Closeable {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f29142d.set(true);
-        this.f29144i.clear();
+        this.f29503d.set(true);
+        this.f29505i.clear();
     }
 
     public final CopyOnWriteArrayList n() {
-        return this.f29144i;
+        return this.f29505i;
     }
 
     private p() {
-        this.f29142d = new AtomicBoolean(false);
-        this.f29143e = new io.sentry.util.a();
-        this.f29144i = new c();
-        this.f29145o = new b();
+        this.f29503d = new AtomicBoolean(false);
+        this.f29504e = new io.sentry.util.a();
+        this.f29505i = new c();
+        this.f29506o = new b();
     }
 }

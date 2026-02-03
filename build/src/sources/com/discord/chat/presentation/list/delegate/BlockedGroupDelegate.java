@@ -44,7 +44,7 @@ public final class BlockedGroupDelegate extends BaseChatListItemDelegate<Blocked
     public static final Unit _init_$lambda$0(BlockedMessageGroupView blockedMessageGroupView) {
         Intrinsics.checkNotNullParameter(blockedMessageGroupView, "<this>");
         BlockedGroupDelegateKt.setupLayout(blockedMessageGroupView);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     @Override // com.discord.chat.presentation.list.delegate.BaseChatListItemDelegate

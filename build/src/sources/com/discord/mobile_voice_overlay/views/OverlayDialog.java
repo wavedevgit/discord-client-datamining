@@ -51,7 +51,7 @@ public abstract class OverlayDialog extends OverlayBubbleWrap {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onDialogClosed$lambda$0(OverlayDialog it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public final void closeDialog() {

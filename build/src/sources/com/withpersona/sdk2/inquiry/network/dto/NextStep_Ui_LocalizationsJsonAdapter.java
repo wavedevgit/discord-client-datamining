@@ -49,13 +49,13 @@ public final class NextStep_Ui_LocalizationsJsonAdapter extends h {
         NextStep.Ui.PromptPage promptPage = null;
         NextStep.CancelDialog cancelDialog = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 promptPage = (NextStep.Ui.PromptPage) this.nullablePromptPageAdapter.fromJson(reader);
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 cancelDialog = (NextStep.CancelDialog) this.nullableCancelDialogAdapter.fromJson(reader);
             }
         }
@@ -68,9 +68,9 @@ public final class NextStep_Ui_LocalizationsJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (localizations != null) {
             writer.l();
-            writer.t0("promptPage");
+            writer.A0("promptPage");
             this.nullablePromptPageAdapter.toJson(writer, localizations.getPromptPage());
-            writer.t0("cancelDialog");
+            writer.A0("cancelDialog");
             this.nullableCancelDialogAdapter.toJson(writer, localizations.getCancelDialog());
             writer.E();
             return;

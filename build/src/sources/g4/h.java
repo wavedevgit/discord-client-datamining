@@ -6,19 +6,19 @@ import org.chromium.support_lib_boundary.WebkitToCompatConverterBoundaryInterfac
 public class h implements g {
 
     /* renamed from: a  reason: collision with root package name */
-    WebViewProviderFactoryBoundaryInterface f25786a;
+    WebViewProviderFactoryBoundaryInterface f24983a;
 
     public h(WebViewProviderFactoryBoundaryInterface webViewProviderFactoryBoundaryInterface) {
-        this.f25786a = webViewProviderFactoryBoundaryInterface;
+        this.f24983a = webViewProviderFactoryBoundaryInterface;
     }
 
     @Override // g4.g
     public String[] a() {
-        return this.f25786a.getSupportedFeatures();
+        return this.f24983a.getSupportedFeatures();
     }
 
     @Override // g4.g
     public WebkitToCompatConverterBoundaryInterface getWebkitToCompatConverter() {
-        return (WebkitToCompatConverterBoundaryInterface) av.a.a(WebkitToCompatConverterBoundaryInterface.class, this.f25786a.getWebkitToCompatConverter());
+        return (WebkitToCompatConverterBoundaryInterface) cv.a.a(WebkitToCompatConverterBoundaryInterface.class, this.f24983a.getWebkitToCompatConverter());
     }
 }

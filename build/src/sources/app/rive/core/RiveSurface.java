@@ -39,7 +39,7 @@ public final class RiveSurface {
     }
 
     /* renamed from: copy-__Kf5Qc$default  reason: not valid java name */
-    public static /* synthetic */ RiveSurface m188copy__Kf5Qc$default(RiveSurface riveSurface, Surface surface, EGLSurface eGLSurface, EGLDisplay eGLDisplay, long j10, long j11, int i10, int i11, int i12, Object obj) {
+    public static /* synthetic */ RiveSurface m186copy__Kf5Qc$default(RiveSurface riveSurface, Surface surface, EGLSurface eGLSurface, EGLDisplay eGLDisplay, long j10, long j11, int i10, int i11, int i12, Object obj) {
         if ((i12 & 1) != 0) {
             surface = riveSurface.surface;
         }
@@ -64,7 +64,7 @@ public final class RiveSurface {
         long j12 = j11;
         long j13 = j10;
         EGLDisplay eGLDisplay2 = eGLDisplay;
-        return riveSurface.m190copy__Kf5Qc(surface, eGLSurface, eGLDisplay2, j13, j12, i10, i11);
+        return riveSurface.m188copy__Kf5Qc(surface, eGLSurface, eGLDisplay2, j13, j12, i10, i11);
     }
 
     private final native void cppDelete(long j10);
@@ -84,7 +84,7 @@ public final class RiveSurface {
     }
 
     /* renamed from: component5-DhFih_o  reason: not valid java name */
-    public final long m189component5DhFih_o() {
+    public final long m187component5DhFih_o() {
         return this.drawKey;
     }
 
@@ -98,7 +98,7 @@ public final class RiveSurface {
 
     @NotNull
     /* renamed from: copy-__Kf5Qc  reason: not valid java name */
-    public final RiveSurface m190copy__Kf5Qc(@NotNull Surface surface, @NotNull EGLSurface eglSurface, @NotNull EGLDisplay display, long j10, long j11, int i10, int i11) {
+    public final RiveSurface m188copy__Kf5Qc(@NotNull Surface surface, @NotNull EGLSurface eglSurface, @NotNull EGLDisplay display, long j10, long j11, int i10, int i11) {
         Intrinsics.checkNotNullParameter(surface, "surface");
         Intrinsics.checkNotNullParameter(eglSurface, "eglSurface");
         Intrinsics.checkNotNullParameter(display, "display");
@@ -124,13 +124,13 @@ public final class RiveSurface {
         }
         if (obj instanceof RiveSurface) {
             RiveSurface riveSurface = (RiveSurface) obj;
-            return Intrinsics.areEqual(this.surface, riveSurface.surface) && Intrinsics.areEqual(this.eglSurface, riveSurface.eglSurface) && Intrinsics.areEqual(this.display, riveSurface.display) && this.renderTargetPointer == riveSurface.renderTargetPointer && DrawKey.m163equalsimpl0(this.drawKey, riveSurface.drawKey) && this.width == riveSurface.width && this.height == riveSurface.height;
+            return Intrinsics.areEqual(this.surface, riveSurface.surface) && Intrinsics.areEqual(this.eglSurface, riveSurface.eglSurface) && Intrinsics.areEqual(this.display, riveSurface.display) && this.renderTargetPointer == riveSurface.renderTargetPointer && DrawKey.m161equalsimpl0(this.drawKey, riveSurface.drawKey) && this.width == riveSurface.width && this.height == riveSurface.height;
         }
         return false;
     }
 
     /* renamed from: getDrawKey-DhFih_o  reason: not valid java name */
-    public final long m191getDrawKeyDhFih_o() {
+    public final long m189getDrawKeyDhFih_o() {
         return this.drawKey;
     }
 
@@ -157,7 +157,7 @@ public final class RiveSurface {
     }
 
     public int hashCode() {
-        return (((((((((((this.surface.hashCode() * 31) + this.eglSurface.hashCode()) * 31) + this.display.hashCode()) * 31) + Long.hashCode(this.renderTargetPointer)) * 31) + DrawKey.m164hashCodeimpl(this.drawKey)) * 31) + Integer.hashCode(this.width)) * 31) + Integer.hashCode(this.height);
+        return (((((((((((this.surface.hashCode() * 31) + this.eglSurface.hashCode()) * 31) + this.display.hashCode()) * 31) + Long.hashCode(this.renderTargetPointer)) * 31) + DrawKey.m162hashCodeimpl(this.drawKey)) * 31) + Integer.hashCode(this.width)) * 31) + Integer.hashCode(this.height);
     }
 
     @NotNull
@@ -166,10 +166,10 @@ public final class RiveSurface {
         EGLSurface eGLSurface = this.eglSurface;
         EGLDisplay eGLDisplay = this.display;
         long j10 = this.renderTargetPointer;
-        String m165toStringimpl = DrawKey.m165toStringimpl(this.drawKey);
+        String m163toStringimpl = DrawKey.m163toStringimpl(this.drawKey);
         int i10 = this.width;
         int i11 = this.height;
-        return "RiveSurface(surface=" + surface + ", eglSurface=" + eGLSurface + ", display=" + eGLDisplay + ", renderTargetPointer=" + j10 + ", drawKey=" + m165toStringimpl + ", width=" + i10 + ", height=" + i11 + ")";
+        return "RiveSurface(surface=" + surface + ", eglSurface=" + eGLSurface + ", display=" + eGLDisplay + ", renderTargetPointer=" + j10 + ", drawKey=" + m163toStringimpl + ", width=" + i10 + ", height=" + i11 + ")";
     }
 
     private RiveSurface(Surface surface, EGLSurface eglSurface, EGLDisplay display, long j10, long j11, int i10, int i11) {

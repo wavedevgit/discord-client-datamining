@@ -42,7 +42,7 @@ public abstract class i {
     }
 
     public static a a() {
-        return new b.C0788b().f(new HashMap());
+        return new b.C0782b().f(new HashMap());
     }
 
     public final String b(String str) {
@@ -87,6 +87,6 @@ public abstract class i {
     public abstract long k();
 
     public a l() {
-        return new b.C0788b().j(j()).g(d()).h(e()).i(f()).k(k()).f(new HashMap(c()));
+        return new b.C0782b().j(j()).g(d()).h(e()).i(f()).k(k()).f(new HashMap(c()));
     }
 }

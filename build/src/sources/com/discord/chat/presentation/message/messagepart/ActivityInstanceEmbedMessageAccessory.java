@@ -73,7 +73,7 @@ public final class ActivityInstanceEmbedMessageAccessory extends MessageAccessor
         }
         if (obj instanceof ActivityInstanceEmbedMessageAccessory) {
             ActivityInstanceEmbedMessageAccessory activityInstanceEmbedMessageAccessory = (ActivityInstanceEmbedMessageAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, activityInstanceEmbedMessageAccessory.messageId) && Intrinsics.areEqual(this.margins, activityInstanceEmbedMessageAccessory.margins) && Intrinsics.areEqual(this.activityInstanceEmbed, activityInstanceEmbedMessageAccessory.activityInstanceEmbed) && this.constrainedWidth == activityInstanceEmbedMessageAccessory.constrainedWidth;
+            return MessageId.m1089equalsimpl0(this.messageId, activityInstanceEmbedMessageAccessory.messageId) && Intrinsics.areEqual(this.margins, activityInstanceEmbedMessageAccessory.margins) && Intrinsics.areEqual(this.activityInstanceEmbed, activityInstanceEmbedMessageAccessory.activityInstanceEmbed) && this.constrainedWidth == activityInstanceEmbedMessageAccessory.constrainedWidth;
         }
         return false;
     }
@@ -100,16 +100,16 @@ public final class ActivityInstanceEmbedMessageAccessory extends MessageAccessor
     }
 
     public int hashCode() {
-        return (((((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + this.activityInstanceEmbed.hashCode()) * 31) + Integer.hashCode(this.constrainedWidth);
+        return (((((MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + this.activityInstanceEmbed.hashCode()) * 31) + Integer.hashCode(this.constrainedWidth);
     }
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         MessageMargins messageMargins = this.margins;
         ActivityInstanceEmbed activityInstanceEmbed = this.activityInstanceEmbed;
         int i10 = this.constrainedWidth;
-        return "ActivityInstanceEmbedMessageAccessory(messageId=" + m1093toStringimpl + ", margins=" + messageMargins + ", activityInstanceEmbed=" + activityInstanceEmbed + ", constrainedWidth=" + i10 + ")";
+        return "ActivityInstanceEmbedMessageAccessory(messageId=" + m1092toStringimpl + ", margins=" + messageMargins + ", activityInstanceEmbed=" + activityInstanceEmbed + ", constrainedWidth=" + i10 + ")";
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

@@ -11,21 +11,21 @@ import org.jetbrains.annotations.NotNull;
 public class ArrayValue extends ConstantValue<List<? extends ConstantValue<?>>> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Function1 f35199b;
+    private final Function1 f34589b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ArrayValue(@NotNull List<? extends ConstantValue<?>> value, @NotNull Function1<? super ModuleDescriptor, ? extends KotlinType> computeType) {
         super(value);
         Intrinsics.checkNotNullParameter(value, "value");
         Intrinsics.checkNotNullParameter(computeType, "computeType");
-        this.f35199b = computeType;
+        this.f34589b = computeType;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.constants.ConstantValue
     @NotNull
     public KotlinType getType(@NotNull ModuleDescriptor module) {
         Intrinsics.checkNotNullParameter(module, "module");
-        KotlinType kotlinType = (KotlinType) this.f35199b.invoke(module);
+        KotlinType kotlinType = (KotlinType) this.f34589b.invoke(module);
         if (!KotlinBuiltIns.isArray(kotlinType) && !KotlinBuiltIns.isPrimitiveArray(kotlinType)) {
             KotlinBuiltIns.isUnsignedArrayType(kotlinType);
         }

@@ -9,20 +9,20 @@ import kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.LazyJavaPacka
 public class x implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyJavaPackageScope f34081d;
+    private final LazyJavaPackageScope f33471d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final LazyJavaResolverContext f34082e;
+    private final LazyJavaResolverContext f33472e;
 
     public x(LazyJavaPackageScope lazyJavaPackageScope, LazyJavaResolverContext lazyJavaResolverContext) {
-        this.f34081d = lazyJavaPackageScope;
-        this.f34082e = lazyJavaResolverContext;
+        this.f33471d = lazyJavaPackageScope;
+        this.f33472e = lazyJavaResolverContext;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         ClassDescriptor Y;
-        Y = LazyJavaPackageScope.Y(this.f34081d, this.f34082e, (LazyJavaPackageScope.a) obj);
+        Y = LazyJavaPackageScope.Y(this.f33471d, this.f33472e, (LazyJavaPackageScope.a) obj);
         return Y;
     }
 }

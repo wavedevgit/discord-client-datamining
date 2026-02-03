@@ -17,28 +17,28 @@ final class e implements m, Serializable {
     }
 
     @Override // net.time4j.tz.m
-    public boolean a() {
-        return false;
-    }
-
-    @Override // net.time4j.tz.m
-    public q b(ht.f fVar) {
+    public q a(kt.f fVar) {
         return null;
     }
 
     @Override // net.time4j.tz.m
-    public p c() {
-        return this.offset;
-    }
-
-    @Override // net.time4j.tz.m
-    public List d(ht.a aVar, ht.g gVar) {
+    public List b(kt.a aVar, kt.g gVar) {
         return Collections.singletonList(this.offset);
     }
 
     @Override // net.time4j.tz.m
-    public q e(ht.a aVar, ht.g gVar) {
+    public boolean c() {
+        return false;
+    }
+
+    @Override // net.time4j.tz.m
+    public q d(kt.a aVar, kt.g gVar) {
         return null;
+    }
+
+    @Override // net.time4j.tz.m
+    public p e() {
+        return this.offset;
     }
 
     public boolean equals(Object obj) {

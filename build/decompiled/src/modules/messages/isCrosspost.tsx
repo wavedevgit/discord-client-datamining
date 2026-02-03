@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/isCrosspost.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun55888: for (var _fun55888_ip = 0;;) switch (_fun55888_ip) {
+        _fun55946: for (var _fun55946_ip = 0;;) switch (_fun55946_ip) {
             case 0:
                 var2 = arg0;
                 var3 = var2.type;
@@ -35,8 +35,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.DEFAULT;
                 var0 = var3 === var0;
                 if (!var0) {
-                    _fun55888_ip = 40;
-                    continue _fun55888
+                    _fun55946_ip = 40;
+                    continue _fun55946
                 }
             case 28:
                 var4 = var2.messageReference;
@@ -44,8 +44,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3 != var4;
             case 40:
                 if (!var0) {
-                    _fun55888_ip = 68;
-                    continue _fun55888
+                    _fun55946_ip = 68;
+                    continue _fun55946
                 }
             case 43:
                 var2 = var2.messageReference;

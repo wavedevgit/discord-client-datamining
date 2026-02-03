@@ -3,10 +3,10 @@ package com.google.android.gms.internal.fido;
 public abstract class i2 {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final char[] f14658d = "0123456789abcdef".toCharArray();
+    private static final char[] f13626d = "0123456789abcdef".toCharArray();
 
     /* renamed from: e  reason: collision with root package name */
-    public static final /* synthetic */ int f14659e = 0;
+    public static final /* synthetic */ int f13627e = 0;
 
     public abstract int a();
 
@@ -46,7 +46,7 @@ public abstract class i2 {
         int length = e10.length;
         StringBuilder sb2 = new StringBuilder(length + length);
         for (byte b10 : e10) {
-            char[] cArr = f14658d;
+            char[] cArr = f13626d;
             sb2.append(cArr[(b10 >> 4) & 15]);
             sb2.append(cArr[b10 & 15]);
         }

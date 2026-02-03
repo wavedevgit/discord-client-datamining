@@ -1,19 +1,19 @@
 package net.time4j.calendar;
 
-import kt.a0;
+import mt.a0;
 import net.time4j.f0;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class d implements kt.k {
+public abstract class d implements mt.k {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final long f40317a = f0.H0(1645, 1, 28).i();
+    private static final long f40356a = f0.H0(1645, 1, 28).i();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final long f40318b = f0.H0(3000, 1, 27).i();
+    private static final long f40357b = f0.H0(3000, 1, 27).i();
 
     /* renamed from: c  reason: collision with root package name */
-    private static final long f40319c = f0.H0(-2636, 2, 15).i();
+    private static final long f40358c = f0.H0(-2636, 2, 15).i();
 
     private long f(int i10, int i11, h hVar) {
         long p10 = p(q(i10, i11) + ((hVar.getNumber() - 1) * 29));
@@ -38,7 +38,7 @@ public abstract class d implements kt.k {
     }
 
     private long o(long j10) {
-        return jt.d.NEW_MOON.e(n(j10)).t0(i(j10)).f0().i();
+        return lt.d.NEW_MOON.e(n(j10)).t0(i(j10)).f0().i();
     }
 
     private long r(long j10) {
@@ -64,12 +64,12 @@ public abstract class d implements kt.k {
         int f10;
         net.time4j.tz.p i10 = i(j10);
         f0 M0 = f0.M0(j10, a0.UTC);
-        if (M0.r() > 11 && M0.g() > 15) {
+        if (M0.s() > 11 && M0.g() > 15) {
             f10 = M0.f();
         } else {
             f10 = M0.f() - 1;
         }
-        jt.b bVar = jt.b.WINTER_SOLSTICE;
+        lt.b bVar = lt.b.WINTER_SOLSTICE;
         f0 V = bVar.e(f10).t0(i10).V();
         if (V.P(M0)) {
             V = bVar.e(f10 - 1).t0(i10).V();
@@ -77,14 +77,14 @@ public abstract class d implements kt.k {
         return V.i();
     }
 
-    @Override // kt.k
+    @Override // mt.k
     public final long a() {
-        return f40318b;
+        return f40357b;
     }
 
-    @Override // kt.k
+    @Override // mt.k
     public long d() {
-        return f40317a;
+        return f40356a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -115,7 +115,7 @@ public abstract class d implements kt.k {
     public abstract net.time4j.tz.p i(long j10);
 
     final boolean k(long j10) {
-        if ((((int) Math.floor(p.p(jt.c.g(n(j10)).c()) / 30.0d)) + 2) % 12 == (((int) Math.floor(p.p(jt.c.g(n(p(j10 + 1))).c()) / 30.0d)) + 2) % 12) {
+        if ((((int) Math.floor(p.p(lt.c.g(n(j10)).c()) / 30.0d)) + 2) % 12 == (((int) Math.floor(p.p(lt.c.g(n(p(j10 + 1))).c()) / 30.0d)) + 2) % 12) {
             return true;
         }
         return false;
@@ -142,12 +142,12 @@ public abstract class d implements kt.k {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final long p(long j10) {
-        return jt.d.NEW_MOON.d(n(j10)).t0(i(j10)).f0().i();
+        return lt.d.NEW_MOON.d(n(j10)).t0(i(j10)).f0().i();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final long q(int i10, int i11) {
-        return s((long) Math.floor(f40319c + (((((i10 - 1) * 60) + i11) - 0.5d) * 365.242189d)));
+        return s((long) Math.floor(f40358c + (((((i10 - 1) * 60) + i11) - 0.5d) * 365.242189d)));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -158,13 +158,13 @@ public abstract class d implements kt.k {
         throw new IllegalArgumentException("Invalid date.");
     }
 
-    @Override // kt.k
+    @Override // mt.k
     /* renamed from: u */
     public final long c(f fVar) {
         return t(fVar.V(), fVar.f0().getNumber(), fVar.b0(), fVar.g());
     }
 
-    @Override // kt.k
+    @Override // mt.k
     /* renamed from: v */
     public final f b(long j10) {
         boolean z10;
@@ -183,14 +183,14 @@ public abstract class d implements kt.k {
             m10--;
         }
         int i10 = 12;
-        int d10 = ht.c.d(m10, 12);
+        int d10 = kt.c.d(m10, 12);
         if (d10 != 0) {
             i10 = d10;
         }
-        long floor = (long) Math.floor((1.5d - (i10 / 12.0d)) + ((j10 - f40319c) / 365.242189d));
+        long floor = (long) Math.floor((1.5d - (i10 / 12.0d)) + ((j10 - f40358c) / 365.242189d));
         int i11 = 60;
-        int b10 = ((int) ht.c.b(floor - 1, 60)) + 1;
-        int d11 = ht.c.d(floor, 60);
+        int b10 = ((int) kt.c.b(floor - 1, 60)) + 1;
+        int d11 = kt.c.d(floor, 60);
         if (d11 != 0) {
             i11 = d11;
         }

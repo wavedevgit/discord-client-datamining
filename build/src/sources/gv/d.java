@@ -1,19 +1,20 @@
 package gv;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface d {
-    boolean a();
+public class d extends r {
 
-    c b(h hVar);
+    /* renamed from: f  reason: collision with root package name */
+    private String f26654f;
 
-    boolean c();
+    @Override // gv.r
+    public void a(y yVar) {
+        yVar.u(this);
+    }
 
-    ev.a d();
+    public String m() {
+        return this.f26654f;
+    }
 
-    void e(CharSequence charSequence);
-
-    void f(fv.a aVar);
-
-    void g();
-
-    boolean h(ev.a aVar);
+    public void n(String str) {
+        this.f26654f = str;
+    }
 }

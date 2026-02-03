@@ -5,30 +5,30 @@ import ui.c;
 final class r6 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final r6 f43630a = new r6();
+    static final r6 f43430a = new r6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43631b;
+    private static final ui.c f43431b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43632c;
+    private static final ui.c f43432c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43633d;
+    private static final ui.c f43433d;
 
     static {
         c.b a10 = ui.c.a("maxLabels");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43631b = a10.b(s1Var.b()).a();
+        f43431b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("confidenceThreshold");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43632c = a11.b(s1Var2.b()).a();
+        f43432c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("customLocalModelOptions");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43633d = a12.b(s1Var3.b()).a();
+        f43433d = a12.b(s1Var3.b()).a();
     }
 
     private r6() {

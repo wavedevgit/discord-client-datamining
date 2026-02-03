@@ -6,45 +6,45 @@ import android.text.style.ReplacementSpan;
 public abstract class i extends ReplacementSpan {
 
     /* renamed from: e  reason: collision with root package name */
-    private final o f4032e;
+    private final o f4001e;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Paint.FontMetricsInt f4031d = new Paint.FontMetricsInt();
+    private final Paint.FontMetricsInt f4000d = new Paint.FontMetricsInt();
 
     /* renamed from: i  reason: collision with root package name */
-    private short f4033i = -1;
+    private short f4002i = -1;
 
     /* renamed from: o  reason: collision with root package name */
-    private short f4034o = -1;
+    private short f4003o = -1;
 
     /* renamed from: p  reason: collision with root package name */
-    private float f4035p = 1.0f;
+    private float f4004p = 1.0f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i(o oVar) {
         b2.e.h(oVar, "rasterizer cannot be null");
-        this.f4032e = oVar;
+        this.f4001e = oVar;
     }
 
     public final o a() {
-        return this.f4032e;
+        return this.f4001e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final int b() {
-        return this.f4033i;
+        return this.f4002i;
     }
 
     @Override // android.text.style.ReplacementSpan
     public int getSize(Paint paint, CharSequence charSequence, int i10, int i11, Paint.FontMetricsInt fontMetricsInt) {
-        paint.getFontMetricsInt(this.f4031d);
-        Paint.FontMetricsInt fontMetricsInt2 = this.f4031d;
-        this.f4035p = (Math.abs(fontMetricsInt2.descent - fontMetricsInt2.ascent) * 1.0f) / this.f4032e.e();
-        this.f4034o = (short) (this.f4032e.e() * this.f4035p);
-        short i12 = (short) (this.f4032e.i() * this.f4035p);
-        this.f4033i = i12;
+        paint.getFontMetricsInt(this.f4000d);
+        Paint.FontMetricsInt fontMetricsInt2 = this.f4000d;
+        this.f4004p = (Math.abs(fontMetricsInt2.descent - fontMetricsInt2.ascent) * 1.0f) / this.f4001e.e();
+        this.f4003o = (short) (this.f4001e.e() * this.f4004p);
+        short i12 = (short) (this.f4001e.i() * this.f4004p);
+        this.f4002i = i12;
         if (fontMetricsInt != null) {
-            Paint.FontMetricsInt fontMetricsInt3 = this.f4031d;
+            Paint.FontMetricsInt fontMetricsInt3 = this.f4000d;
             fontMetricsInt.ascent = fontMetricsInt3.ascent;
             fontMetricsInt.descent = fontMetricsInt3.descent;
             fontMetricsInt.top = fontMetricsInt3.top;

@@ -5,29 +5,29 @@ import android.graphics.Matrix;
 final class l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f9148a;
+    private final int f8116a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f9149b;
+    private final int f8117b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f9150c;
+    private final int f8118c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f9151d;
+    private final int f8119d;
 
     public l(int i10, int i11, int i12, int i13) {
-        this.f9148a = i10;
-        this.f9149b = i11;
-        this.f9150c = i12;
-        this.f9151d = i13;
+        this.f8116a = i10;
+        this.f8117b = i11;
+        this.f8118c = i12;
+        this.f8119d = i13;
     }
 
     public l a(int i10, int i11, int i12, int i13) {
-        int i14 = this.f9148a;
-        int i15 = this.f9149b;
-        int i16 = this.f9150c;
-        int i17 = this.f9151d;
+        int i14 = this.f8116a;
+        int i15 = this.f8117b;
+        int i16 = this.f8118c;
+        int i17 = this.f8119d;
         if (i14 >= i10 && i15 >= i11 && i16 <= i12 && i17 <= i13) {
             return this;
         }
@@ -35,16 +35,16 @@ final class l {
     }
 
     public l b(l lVar) {
-        int i10 = this.f9148a;
-        int i11 = this.f9149b;
-        int i12 = this.f9150c;
-        int i13 = this.f9151d;
+        int i10 = this.f8116a;
+        int i11 = this.f8117b;
+        int i12 = this.f8118c;
+        int i13 = this.f8119d;
         int h10 = h();
         int d10 = d();
-        int i14 = lVar.f9148a;
-        int i15 = lVar.f9149b;
-        int i16 = lVar.f9150c;
-        int i17 = lVar.f9151d;
+        int i14 = lVar.f8116a;
+        int i15 = lVar.f8117b;
+        int i16 = lVar.f8118c;
+        int i17 = lVar.f8119d;
         int h11 = lVar.h();
         int d11 = lVar.d();
         if (i10 >= i14 && i11 >= i15 && i12 <= i16 && i13 <= i17) {
@@ -70,15 +70,15 @@ final class l {
     }
 
     public int c() {
-        return this.f9151d;
+        return this.f8119d;
     }
 
     public int d() {
-        return this.f9151d - this.f9149b;
+        return this.f8119d - this.f8117b;
     }
 
     public int e() {
-        return this.f9148a;
+        return this.f8116a;
     }
 
     public boolean equals(Object obj) {
@@ -87,7 +87,7 @@ final class l {
         }
         if (obj instanceof l) {
             l lVar = (l) obj;
-            if (this.f9148a == lVar.f9148a && this.f9149b == lVar.f9149b && this.f9150c == lVar.f9150c && this.f9151d == lVar.f9151d) {
+            if (this.f8116a == lVar.f8116a && this.f8117b == lVar.f8117b && this.f8118c == lVar.f8118c && this.f8119d == lVar.f8119d) {
                 return true;
             }
         }
@@ -95,23 +95,23 @@ final class l {
     }
 
     public int f() {
-        return this.f9150c;
+        return this.f8118c;
     }
 
     public int g() {
-        return this.f9149b;
+        return this.f8117b;
     }
 
     public int h() {
-        return this.f9150c - this.f9148a;
+        return this.f8118c - this.f8116a;
     }
 
     public int hashCode() {
-        return (((((this.f9148a * 31) + this.f9149b) * 31) + this.f9150c) * 31) + this.f9151d;
+        return (((((this.f8116a * 31) + this.f8117b) * 31) + this.f8118c) * 31) + this.f8119d;
     }
 
     public boolean i(int i10, int i11) {
-        if (this.f9148a < i10 && this.f9149b < i11 && this.f9150c > i10 && this.f9151d > i11) {
+        if (this.f8116a < i10 && this.f8117b < i11 && this.f8118c > i10 && this.f8119d > i11) {
             return true;
         }
         return false;
@@ -119,7 +119,7 @@ final class l {
 
     public l j(float f10, float f11, float f12) {
         Matrix matrix = new Matrix();
-        float[] fArr = {this.f9148a, this.f9149b, this.f9150c, this.f9151d};
+        float[] fArr = {this.f8116a, this.f8117b, this.f8118c, this.f8119d};
         matrix.postRotate(f10, f11, f12);
         matrix.mapPoints(fArr);
         int i10 = (int) fArr[0];
@@ -138,6 +138,6 @@ final class l {
     }
 
     public String toString() {
-        return "[(" + this.f9148a + "; " + this.f9149b + ") - (" + this.f9150c + "; " + this.f9151d + ")]";
+        return "[(" + this.f8116a + "; " + this.f8117b + ") - (" + this.f8118c + "; " + this.f8119d + ")]";
     }
 }

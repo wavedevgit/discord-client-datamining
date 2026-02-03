@@ -7,11 +7,11 @@ import java.util.List;
 public final class f0 implements b0 {
 
     /* renamed from: a  reason: collision with root package name */
-    final List f37420a;
+    final List f36889a;
 
     public f0(Context context, e0 e0Var) {
         ArrayList arrayList = new ArrayList();
-        this.f37420a = arrayList;
+        this.f36889a = arrayList;
         if (e0Var.c()) {
             arrayList.add(new n0(context, e0Var));
         }

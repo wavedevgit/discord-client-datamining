@@ -8,14 +8,14 @@ import kotlin.jvm.internal.Intrinsics;
 public final class AddressDetailsResponse {
 
     /* renamed from: a  reason: collision with root package name */
-    private final LocationData f20404a;
+    private final LocationData f19386a;
 
     public AddressDetailsResponse(LocationData attributes) {
         Intrinsics.checkNotNullParameter(attributes, "attributes");
-        this.f20404a = attributes;
+        this.f19386a = attributes;
     }
 
     public final LocationData a() {
-        return this.f20404a;
+        return this.f19386a;
     }
 }

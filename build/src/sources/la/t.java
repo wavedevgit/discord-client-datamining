@@ -5,45 +5,45 @@ import com.facebook.common.references.CloseableReference;
 public class t implements w {
 
     /* renamed from: a  reason: collision with root package name */
-    private final w f37163a;
+    private final w f36632a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final x f37164b;
+    private final x f36633b;
 
     public t(w wVar, x xVar) {
-        this.f37163a = wVar;
-        this.f37164b = xVar;
+        this.f36632a = wVar;
+        this.f36633b = xVar;
     }
 
     @Override // la.w
     public void b(Object obj) {
-        this.f37163a.b(obj);
+        this.f36632a.b(obj);
     }
 
     @Override // la.w
     public CloseableReference c(Object obj, CloseableReference closeableReference) {
-        this.f37164b.c(obj);
-        return this.f37163a.c(obj, closeableReference);
+        this.f36633b.c(obj);
+        return this.f36632a.c(obj, closeableReference);
     }
 
     @Override // la.w
     public boolean e(o8.k kVar) {
-        return this.f37163a.e(kVar);
+        return this.f36632a.e(kVar);
     }
 
     @Override // la.w
     public int f(o8.k kVar) {
-        return this.f37163a.f(kVar);
+        return this.f36632a.f(kVar);
     }
 
     @Override // la.w
     public CloseableReference get(Object obj) {
-        CloseableReference closeableReference = this.f37163a.get(obj);
+        CloseableReference closeableReference = this.f36632a.get(obj);
         if (closeableReference == null) {
-            this.f37164b.b(obj);
+            this.f36633b.b(obj);
             return closeableReference;
         }
-        this.f37164b.a(obj);
+        this.f36633b.a(obj);
         return closeableReference;
     }
 }

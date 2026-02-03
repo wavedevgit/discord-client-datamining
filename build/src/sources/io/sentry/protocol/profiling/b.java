@@ -13,16 +13,16 @@ import java.util.Map;
 public final class b implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private double f30023d;
+    private double f30384d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f30024e;
+    private int f30385e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f30025i;
+    private String f30386i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Map f30026o;
+    private Map f30387o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -33,24 +33,24 @@ public final class b implements w1 {
             b bVar = new b();
             HashMap hashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String m02 = e3Var.m0();
-                m02.getClass();
+                String l02 = e3Var.l0();
+                l02.getClass();
                 char c10 = 65535;
-                switch (m02.hashCode()) {
+                switch (l02.hashCode()) {
                     case -1562235024:
-                        if (m02.equals("thread_id")) {
+                        if (l02.equals("thread_id")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case 55126294:
-                        if (m02.equals("timestamp")) {
+                        if (l02.equals("timestamp")) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case 1302676018:
-                        if (m02.equals("stack_id")) {
+                        if (l02.equals("stack_id")) {
                             c10 = 2;
                             break;
                         }
@@ -58,19 +58,19 @@ public final class b implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        bVar.f30025i = e3Var.r1();
+                        bVar.f30386i = e3Var.r1();
                         break;
                     case 1:
-                        bVar.f30023d = e3Var.nextDouble();
+                        bVar.f30384d = e3Var.nextDouble();
                         break;
                     case 2:
-                        bVar.f30024e = e3Var.nextInt();
+                        bVar.f30385e = e3Var.nextInt();
                         break;
                     default:
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.v1(iLogger, hashMap, m02);
+                        e3Var.v1(iLogger, hashMap, l02);
                         break;
                 }
             }
@@ -85,21 +85,21 @@ public final class b implements w1 {
     }
 
     public void e(Map map) {
-        this.f30026o = map;
+        this.f30387o = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        f3Var.e("timestamp").j(iLogger, d(Double.valueOf(this.f30023d)));
-        f3Var.e("stack_id").j(iLogger, Integer.valueOf(this.f30024e));
-        if (this.f30025i != null) {
-            f3Var.e("thread_id").j(iLogger, this.f30025i);
+        f3Var.e("timestamp").j(iLogger, d(Double.valueOf(this.f30384d)));
+        f3Var.e("stack_id").j(iLogger, Integer.valueOf(this.f30385e));
+        if (this.f30386i != null) {
+            f3Var.e("thread_id").j(iLogger, this.f30386i);
         }
-        Map map = this.f30026o;
+        Map map = this.f30387o;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f30026o.get(str));
+                f3Var.e(str).j(iLogger, this.f30387o.get(str));
             }
         }
         f3Var.y();

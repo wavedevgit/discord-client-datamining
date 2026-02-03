@@ -22,20 +22,20 @@ import org.jetbrains.annotations.NotNull;
 public final class IntersectionTypeConstructor implements TypeConstructor, IntersectionTypeConstructorMarker {
 
     /* renamed from: a  reason: collision with root package name */
-    private KotlinType f35642a;
+    private KotlinType f35032a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final LinkedHashSet f35643b;
+    private final LinkedHashSet f35033b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f35644c;
+    private final int f35034c;
 
     public IntersectionTypeConstructor(@NotNull Collection<? extends KotlinType> typesToIntersect) {
         Intrinsics.checkNotNullParameter(typesToIntersect, "typesToIntersect");
         typesToIntersect.isEmpty();
         LinkedHashSet linkedHashSet = new LinkedHashSet(typesToIntersect);
-        this.f35643b = linkedHashSet;
-        this.f35644c = linkedHashSet.hashCode();
+        this.f35033b = linkedHashSet;
+        this.f35034c = linkedHashSet.hashCode();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -59,14 +59,14 @@ public final class IntersectionTypeConstructor implements TypeConstructor, Inter
     /* JADX WARN: Multi-variable type inference failed */
     public static /* synthetic */ String makeDebugNameForIntersectionType$default(IntersectionTypeConstructor intersectionTypeConstructor, Function1 function1, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            function1 = l.f35804d;
+            function1 = l.f35194d;
         }
         return intersectionTypeConstructor.makeDebugNameForIntersectionType(function1);
     }
 
     @NotNull
     public final MemberScope createScopeForKotlinType() {
-        return TypeIntersectionScope.Companion.create("member scope for intersection type", this.f35643b);
+        return TypeIntersectionScope.Companion.create("member scope for intersection type", this.f35033b);
     }
 
     @NotNull
@@ -81,24 +81,24 @@ public final class IntersectionTypeConstructor implements TypeConstructor, Inter
         if (!(obj instanceof IntersectionTypeConstructor)) {
             return false;
         }
-        return Intrinsics.areEqual(this.f35643b, ((IntersectionTypeConstructor) obj).f35643b);
+        return Intrinsics.areEqual(this.f35033b, ((IntersectionTypeConstructor) obj).f35033b);
     }
 
     public final KotlinType getAlternativeType() {
-        return this.f35642a;
+        return this.f35032a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
     @NotNull
     public KotlinBuiltIns getBuiltIns() {
-        KotlinBuiltIns builtIns = ((KotlinType) this.f35643b.iterator().next()).getConstructor().getBuiltIns();
+        KotlinBuiltIns builtIns = ((KotlinType) this.f35033b.iterator().next()).getConstructor().getBuiltIns();
         Intrinsics.checkNotNullExpressionValue(builtIns, "getBuiltIns(...)");
         return builtIns;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
     /* renamed from: getDeclarationDescriptor */
-    public ClassifierDescriptor mo1200getDeclarationDescriptor() {
+    public ClassifierDescriptor mo1197getDeclarationDescriptor() {
         return null;
     }
 
@@ -111,11 +111,11 @@ public final class IntersectionTypeConstructor implements TypeConstructor, Inter
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
     @NotNull
     public Collection<KotlinType> getSupertypes() {
-        return this.f35643b;
+        return this.f35033b;
     }
 
     public int hashCode() {
-        return this.f35644c;
+        return this.f35034c;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
@@ -126,7 +126,7 @@ public final class IntersectionTypeConstructor implements TypeConstructor, Inter
     @NotNull
     public final String makeDebugNameForIntersectionType(@NotNull final Function1<? super KotlinType, ? extends Object> getProperTypeRelatedToStringify) {
         Intrinsics.checkNotNullParameter(getProperTypeRelatedToStringify, "getProperTypeRelatedToStringify");
-        return CollectionsKt.x0(CollectionsKt.W0(this.f35643b, new Comparator() { // from class: kotlin.reflect.jvm.internal.impl.types.IntersectionTypeConstructor$makeDebugNameForIntersectionType$$inlined$sortedBy$1
+        return CollectionsKt.x0(CollectionsKt.W0(this.f35033b, new Comparator() { // from class: kotlin.reflect.jvm.internal.impl.types.IntersectionTypeConstructor$makeDebugNameForIntersectionType$$inlined$sortedBy$1
             @Override // java.util.Comparator
             public final int compare(T t10, T t11) {
                 KotlinType kotlinType = (KotlinType) t10;
@@ -136,14 +136,14 @@ public final class IntersectionTypeConstructor implements TypeConstructor, Inter
                 KotlinType kotlinType2 = (KotlinType) t11;
                 Function1 function12 = Function1.this;
                 Intrinsics.checkNotNull(kotlinType2);
-                return mr.a.d(obj, function12.invoke(kotlinType2).toString());
+                return or.a.d(obj, function12.invoke(kotlinType2).toString());
             }
         }), " & ", "{", "}", 0, null, new k(getProperTypeRelatedToStringify), 24, null);
     }
 
     @NotNull
     public final IntersectionTypeConstructor setAlternative(KotlinType kotlinType) {
-        return new IntersectionTypeConstructor(this.f35643b, kotlinType);
+        return new IntersectionTypeConstructor(this.f35033b, kotlinType);
     }
 
     @NotNull
@@ -172,6 +172,6 @@ public final class IntersectionTypeConstructor implements TypeConstructor, Inter
 
     private IntersectionTypeConstructor(Collection collection, KotlinType kotlinType) {
         this(collection);
-        this.f35642a = kotlinType;
+        this.f35032a = kotlinType;
     }
 }

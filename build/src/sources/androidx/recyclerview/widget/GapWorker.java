@@ -13,59 +13,59 @@ import kotlin.jvm.internal.LongCompanionObject;
 public final class GapWorker implements Runnable {
 
     /* renamed from: p  reason: collision with root package name */
-    static final ThreadLocal f4793p = new ThreadLocal();
+    static final ThreadLocal f4762p = new ThreadLocal();
 
     /* renamed from: q  reason: collision with root package name */
-    static Comparator f4794q = new a();
+    static Comparator f4763q = new a();
 
     /* renamed from: e  reason: collision with root package name */
-    long f4796e;
+    long f4765e;
 
     /* renamed from: i  reason: collision with root package name */
-    long f4797i;
+    long f4766i;
 
     /* renamed from: d  reason: collision with root package name */
-    ArrayList f4795d = new ArrayList();
+    ArrayList f4764d = new ArrayList();
 
     /* renamed from: o  reason: collision with root package name */
-    private final ArrayList f4798o = new ArrayList();
+    private final ArrayList f4767o = new ArrayList();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class LayoutPrefetchRegistryImpl implements RecyclerView.LayoutManager.LayoutPrefetchRegistry {
 
         /* renamed from: a  reason: collision with root package name */
-        int f4799a;
+        int f4768a;
 
         /* renamed from: b  reason: collision with root package name */
-        int f4800b;
+        int f4769b;
 
         /* renamed from: c  reason: collision with root package name */
-        int[] f4801c;
+        int[] f4770c;
 
         /* renamed from: d  reason: collision with root package name */
-        int f4802d;
+        int f4771d;
 
         @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager.LayoutPrefetchRegistry
         public void a(int i10, int i11) {
             if (i10 >= 0) {
                 if (i11 >= 0) {
-                    int i12 = this.f4802d;
+                    int i12 = this.f4771d;
                     int i13 = i12 * 2;
-                    int[] iArr = this.f4801c;
+                    int[] iArr = this.f4770c;
                     if (iArr == null) {
                         int[] iArr2 = new int[4];
-                        this.f4801c = iArr2;
+                        this.f4770c = iArr2;
                         Arrays.fill(iArr2, -1);
                     } else if (i13 >= iArr.length) {
                         int[] iArr3 = new int[i12 * 4];
-                        this.f4801c = iArr3;
+                        this.f4770c = iArr3;
                         System.arraycopy(iArr, 0, iArr3, 0, iArr.length);
                     }
-                    int[] iArr4 = this.f4801c;
+                    int[] iArr4 = this.f4770c;
                     iArr4[i13] = i10;
                     iArr4[i13 + 1] = i11;
-                    this.f4802d++;
+                    this.f4771d++;
                     return;
                 }
                 throw new IllegalArgumentException("Pixel distance must be non-negative");
@@ -75,16 +75,16 @@ public final class GapWorker implements Runnable {
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public void b() {
-            int[] iArr = this.f4801c;
+            int[] iArr = this.f4770c;
             if (iArr != null) {
                 Arrays.fill(iArr, -1);
             }
-            this.f4802d = 0;
+            this.f4771d = 0;
         }
 
         void c(RecyclerView recyclerView, boolean z10) {
-            this.f4802d = 0;
-            int[] iArr = this.f4801c;
+            this.f4771d = 0;
+            int[] iArr = this.f4770c;
             if (iArr != null) {
                 Arrays.fill(iArr, -1);
             }
@@ -95,9 +95,9 @@ public final class GapWorker implements Runnable {
                         layoutManager.collectInitialPrefetchPositions(recyclerView.mAdapter.getItemCount(), this);
                     }
                 } else if (!recyclerView.hasPendingAdapterUpdates()) {
-                    layoutManager.collectAdjacentPrefetchPositions(this.f4799a, this.f4800b, recyclerView.mState, this);
+                    layoutManager.collectAdjacentPrefetchPositions(this.f4768a, this.f4769b, recyclerView.mState, this);
                 }
-                int i10 = this.f4802d;
+                int i10 = this.f4771d;
                 if (i10 > layoutManager.mPrefetchMaxCountObserved) {
                     layoutManager.mPrefetchMaxCountObserved = i10;
                     layoutManager.mPrefetchMaxObservedInInitialPrefetch = z10;
@@ -108,10 +108,10 @@ public final class GapWorker implements Runnable {
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public boolean d(int i10) {
-            if (this.f4801c != null) {
-                int i11 = this.f4802d * 2;
+            if (this.f4770c != null) {
+                int i11 = this.f4771d * 2;
                 for (int i12 = 0; i12 < i11; i12 += 2) {
-                    if (this.f4801c[i12] == i10) {
+                    if (this.f4770c[i12] == i10) {
                         return true;
                     }
                 }
@@ -120,8 +120,8 @@ public final class GapWorker implements Runnable {
         }
 
         void e(int i10, int i11) {
-            this.f4799a = i10;
-            this.f4800b = i11;
+            this.f4768a = i10;
+            this.f4769b = i11;
         }
     }
 
@@ -135,13 +135,13 @@ public final class GapWorker implements Runnable {
         public int compare(b bVar, b bVar2) {
             boolean z10;
             boolean z11;
-            RecyclerView recyclerView = bVar.f4806d;
+            RecyclerView recyclerView = bVar.f4775d;
             if (recyclerView == null) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            if (bVar2.f4806d == null) {
+            if (bVar2.f4775d == null) {
                 z11 = true;
             } else {
                 z11 = false;
@@ -152,18 +152,18 @@ public final class GapWorker implements Runnable {
                 }
                 return -1;
             }
-            boolean z12 = bVar.f4803a;
-            if (z12 != bVar2.f4803a) {
+            boolean z12 = bVar.f4772a;
+            if (z12 != bVar2.f4772a) {
                 if (!z12) {
                     return 1;
                 }
                 return -1;
             }
-            int i10 = bVar2.f4804b - bVar.f4804b;
+            int i10 = bVar2.f4773b - bVar.f4773b;
             if (i10 != 0) {
                 return i10;
             }
-            int i11 = bVar.f4805c - bVar2.f4805c;
+            int i11 = bVar.f4774c - bVar2.f4774c;
             if (i11 == 0) {
                 return 0;
             }
@@ -176,94 +176,94 @@ public final class GapWorker implements Runnable {
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public boolean f4803a;
+        public boolean f4772a;
 
         /* renamed from: b  reason: collision with root package name */
-        public int f4804b;
+        public int f4773b;
 
         /* renamed from: c  reason: collision with root package name */
-        public int f4805c;
+        public int f4774c;
 
         /* renamed from: d  reason: collision with root package name */
-        public RecyclerView f4806d;
+        public RecyclerView f4775d;
 
         /* renamed from: e  reason: collision with root package name */
-        public int f4807e;
+        public int f4776e;
 
         b() {
         }
 
         public void a() {
-            this.f4803a = false;
-            this.f4804b = 0;
-            this.f4805c = 0;
-            this.f4806d = null;
-            this.f4807e = 0;
+            this.f4772a = false;
+            this.f4773b = 0;
+            this.f4774c = 0;
+            this.f4775d = null;
+            this.f4776e = 0;
         }
     }
 
     private void b() {
         b bVar;
         boolean z10;
-        int size = this.f4795d.size();
+        int size = this.f4764d.size();
         int i10 = 0;
         for (int i11 = 0; i11 < size; i11++) {
-            RecyclerView recyclerView = (RecyclerView) this.f4795d.get(i11);
+            RecyclerView recyclerView = (RecyclerView) this.f4764d.get(i11);
             if (recyclerView.getWindowVisibility() == 0) {
                 recyclerView.mPrefetchRegistry.c(recyclerView, false);
-                i10 += recyclerView.mPrefetchRegistry.f4802d;
+                i10 += recyclerView.mPrefetchRegistry.f4771d;
             }
         }
-        this.f4798o.ensureCapacity(i10);
+        this.f4767o.ensureCapacity(i10);
         int i12 = 0;
         for (int i13 = 0; i13 < size; i13++) {
-            RecyclerView recyclerView2 = (RecyclerView) this.f4795d.get(i13);
+            RecyclerView recyclerView2 = (RecyclerView) this.f4764d.get(i13);
             if (recyclerView2.getWindowVisibility() == 0) {
                 LayoutPrefetchRegistryImpl layoutPrefetchRegistryImpl = recyclerView2.mPrefetchRegistry;
-                int abs = Math.abs(layoutPrefetchRegistryImpl.f4799a) + Math.abs(layoutPrefetchRegistryImpl.f4800b);
-                for (int i14 = 0; i14 < layoutPrefetchRegistryImpl.f4802d * 2; i14 += 2) {
-                    if (i12 >= this.f4798o.size()) {
+                int abs = Math.abs(layoutPrefetchRegistryImpl.f4768a) + Math.abs(layoutPrefetchRegistryImpl.f4769b);
+                for (int i14 = 0; i14 < layoutPrefetchRegistryImpl.f4771d * 2; i14 += 2) {
+                    if (i12 >= this.f4767o.size()) {
                         bVar = new b();
-                        this.f4798o.add(bVar);
+                        this.f4767o.add(bVar);
                     } else {
-                        bVar = (b) this.f4798o.get(i12);
+                        bVar = (b) this.f4767o.get(i12);
                     }
-                    int[] iArr = layoutPrefetchRegistryImpl.f4801c;
+                    int[] iArr = layoutPrefetchRegistryImpl.f4770c;
                     int i15 = iArr[i14 + 1];
                     if (i15 <= abs) {
                         z10 = true;
                     } else {
                         z10 = false;
                     }
-                    bVar.f4803a = z10;
-                    bVar.f4804b = abs;
-                    bVar.f4805c = i15;
-                    bVar.f4806d = recyclerView2;
-                    bVar.f4807e = iArr[i14];
+                    bVar.f4772a = z10;
+                    bVar.f4773b = abs;
+                    bVar.f4774c = i15;
+                    bVar.f4775d = recyclerView2;
+                    bVar.f4776e = iArr[i14];
                     i12++;
                 }
             }
         }
-        Collections.sort(this.f4798o, f4794q);
+        Collections.sort(this.f4767o, f4763q);
     }
 
     private void c(b bVar, long j10) {
         long j11;
-        if (bVar.f4803a) {
+        if (bVar.f4772a) {
             j11 = LongCompanionObject.MAX_VALUE;
         } else {
             j11 = j10;
         }
-        RecyclerView.ViewHolder i10 = i(bVar.f4806d, bVar.f4807e, j11);
+        RecyclerView.ViewHolder i10 = i(bVar.f4775d, bVar.f4776e, j11);
         if (i10 != null && i10.mNestedRecyclerView != null && i10.isBound() && !i10.isInvalid()) {
             h(i10.mNestedRecyclerView.get(), j10);
         }
     }
 
     private void d(long j10) {
-        for (int i10 = 0; i10 < this.f4798o.size(); i10++) {
-            b bVar = (b) this.f4798o.get(i10);
-            if (bVar.f4806d != null) {
+        for (int i10 = 0; i10 < this.f4767o.size(); i10++) {
+            b bVar = (b) this.f4767o.get(i10);
+            if (bVar.f4775d != null) {
                 c(bVar, j10);
                 bVar.a();
             } else {
@@ -291,7 +291,7 @@ public final class GapWorker implements Runnable {
             }
             LayoutPrefetchRegistryImpl layoutPrefetchRegistryImpl = recyclerView.mPrefetchRegistry;
             layoutPrefetchRegistryImpl.c(recyclerView, true);
-            if (layoutPrefetchRegistryImpl.f4802d != 0) {
+            if (layoutPrefetchRegistryImpl.f4771d != 0) {
                 if (j10 == LongCompanionObject.MAX_VALUE) {
                     str = "RV Nested Prefetch";
                 } else {
@@ -300,8 +300,8 @@ public final class GapWorker implements Runnable {
                 try {
                     Trace.beginSection(str);
                     recyclerView.mState.f(recyclerView.mAdapter);
-                    for (int i10 = 0; i10 < layoutPrefetchRegistryImpl.f4802d * 2; i10 += 2) {
-                        i(recyclerView, layoutPrefetchRegistryImpl.f4801c[i10], j10);
+                    for (int i10 = 0; i10 < layoutPrefetchRegistryImpl.f4771d * 2; i10 += 2) {
+                        i(recyclerView, layoutPrefetchRegistryImpl.f4770c[i10], j10);
                     }
                     Trace.endSection();
                 } catch (Throwable th2) {
@@ -343,20 +343,20 @@ public final class GapWorker implements Runnable {
     }
 
     public void a(RecyclerView recyclerView) {
-        if (RecyclerView.sDebugAssertionsEnabled && this.f4795d.contains(recyclerView)) {
+        if (RecyclerView.sDebugAssertionsEnabled && this.f4764d.contains(recyclerView)) {
             throw new IllegalStateException("RecyclerView already present in worker list!");
         }
-        this.f4795d.add(recyclerView);
+        this.f4764d.add(recyclerView);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void f(RecyclerView recyclerView, int i10, int i11) {
         if (recyclerView.isAttachedToWindow()) {
-            if (RecyclerView.sDebugAssertionsEnabled && !this.f4795d.contains(recyclerView)) {
+            if (RecyclerView.sDebugAssertionsEnabled && !this.f4764d.contains(recyclerView)) {
                 throw new IllegalStateException("attempting to post unregistered view!");
             }
-            if (this.f4796e == 0) {
-                this.f4796e = recyclerView.getNanoTime();
+            if (this.f4765e == 0) {
+                this.f4765e = recyclerView.getNanoTime();
                 recyclerView.post(this);
             }
         }
@@ -369,7 +369,7 @@ public final class GapWorker implements Runnable {
     }
 
     public void j(RecyclerView recyclerView) {
-        boolean remove = this.f4795d.remove(recyclerView);
+        boolean remove = this.f4764d.remove(recyclerView);
         if (RecyclerView.sDebugAssertionsEnabled && !remove) {
             throw new IllegalStateException("RecyclerView removal failed!");
         }
@@ -379,21 +379,21 @@ public final class GapWorker implements Runnable {
     public void run() {
         try {
             Trace.beginSection("RV Prefetch");
-            if (!this.f4795d.isEmpty()) {
-                int size = this.f4795d.size();
+            if (!this.f4764d.isEmpty()) {
+                int size = this.f4764d.size();
                 long j10 = 0;
                 for (int i10 = 0; i10 < size; i10++) {
-                    RecyclerView recyclerView = (RecyclerView) this.f4795d.get(i10);
+                    RecyclerView recyclerView = (RecyclerView) this.f4764d.get(i10);
                     if (recyclerView.getWindowVisibility() == 0) {
                         j10 = Math.max(recyclerView.getDrawingTime(), j10);
                     }
                 }
                 if (j10 != 0) {
-                    g(TimeUnit.MILLISECONDS.toNanos(j10) + this.f4797i);
+                    g(TimeUnit.MILLISECONDS.toNanos(j10) + this.f4766i);
                 }
             }
         } finally {
-            this.f4796e = 0L;
+            this.f4765e = 0L;
             Trace.endSection();
         }
     }

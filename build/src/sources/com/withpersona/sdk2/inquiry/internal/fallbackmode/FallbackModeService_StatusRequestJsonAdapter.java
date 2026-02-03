@@ -13,19 +13,19 @@ import org.jetbrains.annotations.NotNull;
 public final class FallbackModeService_StatusRequestJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19454a;
+    private final m.b f18436a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19455b;
+    private final com.squareup.moshi.h f18437b;
 
     public FallbackModeService_StatusRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("inquiry-template-id");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19454a = a10;
+        this.f18436a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "inquiryTemplateId");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19455b = f10;
+        this.f18437b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -35,13 +35,13 @@ public final class FallbackModeService_StatusRequestJsonAdapter extends com.squa
         reader.r();
         String str = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.f19454a);
-            if (t02 != -1) {
-                if (t02 == 0) {
-                    str = (String) this.f19455b.fromJson(reader);
+            int A0 = reader.A0(this.f18436a);
+            if (A0 != -1) {
+                if (A0 == 0) {
+                    str = (String) this.f18437b.fromJson(reader);
                 }
             } else {
-                reader.F0();
+                reader.E0();
                 reader.P();
             }
         }
@@ -55,8 +55,8 @@ public final class FallbackModeService_StatusRequestJsonAdapter extends com.squa
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (statusRequest != null) {
             writer.l();
-            writer.t0("inquiry-template-id");
-            this.f19455b.toJson(writer, statusRequest.a());
+            writer.A0("inquiry-template-id");
+            this.f18437b.toJson(writer, statusRequest.a());
             writer.E();
             return;
         }

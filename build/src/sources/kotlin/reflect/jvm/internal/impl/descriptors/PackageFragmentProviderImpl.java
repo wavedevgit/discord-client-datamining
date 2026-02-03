@@ -15,11 +15,11 @@ import org.jetbrains.annotations.NotNull;
 public final class PackageFragmentProviderImpl implements PackageFragmentProviderOptimized {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Collection f33391a;
+    private final Collection f32781a;
 
     public PackageFragmentProviderImpl(@NotNull Collection<? extends PackageFragmentDescriptor> packageFragments) {
         Intrinsics.checkNotNullParameter(packageFragments, "packageFragments");
-        this.f33391a = packageFragments;
+        this.f32781a = packageFragments;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -42,7 +42,7 @@ public final class PackageFragmentProviderImpl implements PackageFragmentProvide
     public void collectPackageFragments(@NotNull FqName fqName, @NotNull Collection<PackageFragmentDescriptor> packageFragments) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
         Intrinsics.checkNotNullParameter(packageFragments, "packageFragments");
-        for (Object obj : this.f33391a) {
+        for (Object obj : this.f32781a) {
             if (Intrinsics.areEqual(((PackageFragmentDescriptor) obj).getFqName(), fqName)) {
                 packageFragments.add(obj);
             }
@@ -50,12 +50,12 @@ public final class PackageFragmentProviderImpl implements PackageFragmentProvide
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PackageFragmentProvider
-    @jr.c
+    @lr.c
     @NotNull
     public List<PackageFragmentDescriptor> getPackageFragments(@NotNull FqName fqName) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
         ArrayList arrayList = new ArrayList();
-        for (Object obj : this.f33391a) {
+        for (Object obj : this.f32781a) {
             if (Intrinsics.areEqual(((PackageFragmentDescriptor) obj).getFqName(), fqName)) {
                 arrayList.add(obj);
             }
@@ -68,13 +68,13 @@ public final class PackageFragmentProviderImpl implements PackageFragmentProvide
     public Collection<FqName> getSubPackagesOf(@NotNull FqName fqName, @NotNull Function1<? super Name, Boolean> nameFilter) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
         Intrinsics.checkNotNullParameter(nameFilter, "nameFilter");
-        return kotlin.sequences.k.Y(kotlin.sequences.k.F(kotlin.sequences.k.R(CollectionsKt.b0(this.f33391a), e.f33456d), new f(fqName)));
+        return kotlin.sequences.k.Y(kotlin.sequences.k.F(kotlin.sequences.k.R(CollectionsKt.b0(this.f32781a), e.f32846d), new f(fqName)));
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PackageFragmentProviderOptimized
     public boolean isEmpty(@NotNull FqName fqName) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
-        Collection<PackageFragmentDescriptor> collection = this.f33391a;
+        Collection<PackageFragmentDescriptor> collection = this.f32781a;
         if ((collection instanceof Collection) && collection.isEmpty()) {
             return true;
         }

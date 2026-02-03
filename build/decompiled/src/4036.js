@@ -4,95 +4,127 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = exports;
     var7 = dependencyMap;
     var0 = global;
-    var9 = var0.Object;
-    var8 = var9.defineProperty;
-    var6 = {};
-    var4 = true;
-    var6.value = var4;
+    var8 = var0.Object;
+    var6 = var8.defineProperty;
+    var4 = {};
+    var1 = true;
+    var4.value = var1;
     var1 = '__esModule';
-    var1 = var8.bind(var9)(var2, var1, var6);
+    var1 = var6.bind(var8)(var2, var1, var4);
     var1 = {};
-    var6 = 'RNSScreenStackHeaderConfig';
+    var6 = 'RNSScreen';
     var1.uiViewClassName = var6;
+    var4 = {};
     var8 = {};
-    var9 = {};
-    var10 = 'onAttached';
-    var9.registrationName = var10;
-    var8.topAttached = var9;
-    var9 = {};
-    var10 = 'onDetached';
-    var9.registrationName = var10;
-    var8.topDetached = var9;
-    var1.directEventTypes = var8;
+    var9 = 'onAppear';
+    var8.registrationName = var9;
+    var4.topAppear = var8;
+    var8 = {};
+    var9 = 'onDisappear';
+    var8.registrationName = var9;
+    var4.topDisappear = var8;
+    var8 = {};
+    var9 = 'onDismissed';
+    var8.registrationName = var9;
+    var4.topDismissed = var8;
+    var8 = {};
+    var9 = 'onNativeDismissCancelled';
+    var8.registrationName = var9;
+    var4.topNativeDismissCancelled = var8;
+    var8 = {};
+    var9 = 'onWillAppear';
+    var8.registrationName = var9;
+    var4.topWillAppear = var8;
+    var8 = {};
+    var9 = 'onWillDisappear';
+    var8.registrationName = var9;
+    var4.topWillDisappear = var8;
+    var8 = {};
+    var9 = 'onHeaderHeightChange';
+    var8.registrationName = var9;
+    var4.topHeaderHeightChange = var8;
+    var8 = {};
+    var9 = 'onTransitionProgress';
+    var8.registrationName = var9;
+    var4.topTransitionProgress = var8;
+    var8 = {};
+    var9 = 'onGestureCancel';
+    var8.registrationName = var9;
+    var4.topGestureCancel = var8;
+    var8 = {};
+    var9 = 'onHeaderBackButtonClicked';
+    var8.registrationName = var9;
+    var4.topHeaderBackButtonClicked = var8;
+    var8 = {};
+    var9 = 'onSheetDetentChanged';
+    var8.registrationName = var9;
+    var4.topSheetDetentChanged = var8;
+    var1.directEventTypes = var4;
     var10 = var0.Object;
     var9 = var10.assign;
     var8 = {
-        'backgroundColor': null,
-        'backTitle': true,
-        'backTitleFontFamily': true,
-        'backTitleFontSize': true,
-        'backTitleVisible': true,
-        'color': null,
-        'direction': true,
-        'hidden': true,
-        'hideShadow': true,
-        'largeTitle': true,
-        'largeTitleFontFamily': true,
-        'largeTitleFontSize': true,
-        'largeTitleFontWeight': true,
-        'largeTitleBackgroundColor': null,
-        'largeTitleHideShadow': true
+        'sheetAllowedDetents': true,
+        'sheetLargestUndimmedDetent': true,
+        'sheetGrabberVisible': true,
+        'sheetCornerRadius': true,
+        'sheetExpandsWhenScrolledToEdge': true,
+        'sheetInitialDetent': true,
+        'sheetElevation': true,
+        'customAnimationOnSwipe': true,
+        'fullScreenSwipeEnabled': true,
+        'fullScreenSwipeShadowEnabled': true,
+        'homeIndicatorHidden': true,
+        'preventNativeDismiss': true,
+        'gestureEnabled': true,
+        'statusBarColor': null,
+        'statusBarHidden': true,
+        'screenOrientation': true,
+        'statusBarAnimation': true,
+        'statusBarStyle': true,
+        'statusBarTranslucent': true,
+        'gestureResponseDistance': true,
+        'stackPresentation': true,
+        'stackAnimation': true,
+        'transitionDuration': true,
+        'replaceAnimation': true,
+        'swipeDirection': true,
+        'hideKeyboardOnSwipe': true,
+        'activityState': true,
+        'navigationBarColor': null,
+        'navigationBarTranslucent': true,
+        'navigationBarHidden': true,
+        'nativeBackButtonDismissalEnabled': true
     };
-    var11 = {};
-    var12 = 0;
-    var13 = var7[var12];
+    var4 = {};
+    var11 = 0;
+    var12 = var7[var11];
     var0 = undefined;
-    var13 = var5.bind(var0)(var13);
-    var13 = var13.default;
-    var11.process = var13;
-    var8.backgroundColor = var11;
-    var11 = {};
-    var13 = var7[var12];
-    var13 = var5.bind(var0)(var13);
-    var13 = var13.default;
-    var11.process = var13;
-    var8.color = var11;
-    var11 = {};
-    var13 = var7[var12];
-    var13 = var5.bind(var0)(var13);
-    var13 = var13.default;
-    var11.process = var13;
-    var8.largeTitleBackgroundColor = var11;
-    var11 = {};
-    var13 = var7[var12];
-    var13 = var5.bind(var0)(var13);
-    var13 = var13.default;
-    var11.process = var13;
-    var8.largeTitleColor = var11;
-    var8.translucent = var4;
-    var8.title = var4;
-    var8.titleFontFamily = var4;
-    var8.titleFontSize = var4;
-    var8.titleFontWeight = var4;
-    var11 = {};
-    var12 = var7[var12];
     var12 = var5.bind(var0)(var12);
     var12 = var12.default;
-    var11.process = var12;
-    var8.titleColor = var11;
-    var8.disableBackButtonMenu = var4;
-    var8.backButtonDisplayMode = var4;
-    var8.hideBackButton = var4;
-    var8.backButtonInCustomView = var4;
-    var8.blurEffect = var4;
-    var8.topInsetEnabled = var4;
+    var4.process = var12;
+    var8.statusBarColor = var4;
+    var4 = {};
+    var11 = var7[var11];
+    var11 = var5.bind(var0)(var11);
+    var11 = var11.default;
+    var4.process = var11;
+    var8.navigationBarColor = var4;
     var4 = 1;
     var4 = var7[var4];
     var12 = var5.bind(var0)(var4);
     var11 = var12.ConditionallyIgnoredEventHandlers;
     var4 = {
-        'onAttached': true,
-        'onDetached': true
+        'onAppear': true,
+        'onDisappear': true,
+        'onDismissed': true,
+        'onNativeDismissCancelled': true,
+        'onWillAppear': true,
+        'onWillDisappear': true,
+        'onHeaderHeightChange': true,
+        'onTransitionProgress': true,
+        'onGestureCancel': true,
+        'onHeaderBackButtonClicked': true,
+        'onSheetDetentChanged': true
     };
     var4 = var11.bind(var12)(var4);
     var4 = var9.bind(var10)(var8, var4);

@@ -5,13 +5,13 @@ import com.discord.metric_monitor.MetricEvent;
 import com.discord.metric_monitor.MetricMonitorModule;
 import com.discord.reactevents.ReactEvents;
 import com.facebook.react.bridge.ReactApplicationContext;
-import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
+import lr.v;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u0006\n\u0002\b\u0002\u0018\u0000 \u000f2\u00020\u0001:\u0001\u000fB\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\u0010\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0016J\u0010\u0010\f\u001a\u00020\t2\u0006\u0010\r\u001a\u00020\u000eH\u0016R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0010"}, d2 = {"Lcom/discord/metric_monitor/MetricMonitorModule;", "Lcom/discord/codegen/NativeMetricMonitorModuleSpec;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "<init>", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "reactEvents", "Lcom/discord/reactevents/ReactEvents;", "addListener", "", "eventType", "", "removeListeners", "count", "", "Companion", "metric_monitor_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -53,7 +53,7 @@ public final class MetricMonitorModule extends NativeMetricMonitorModuleSpec {
     public static final Unit _init_$lambda$0(MetricMonitorModule metricMonitorModule, ReactApplicationContext reactApplicationContext, MetricEvent metric) {
         Intrinsics.checkNotNullParameter(metric, "metric");
         metricMonitorModule.reactEvents.emitModuleEvent(reactApplicationContext, metric);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     @Override // com.discord.codegen.NativeMetricMonitorModuleSpec

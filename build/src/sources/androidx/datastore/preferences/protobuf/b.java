@@ -3,5 +3,5 @@ package androidx.datastore.preferences.protobuf;
 public abstract class b implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final o f3616a = o.b();
+    private static final o f3585a = o.b();
 }

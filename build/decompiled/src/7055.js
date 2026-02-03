@@ -1,32 +1,26 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = metroImportDefault;
-    var2 = exports;
-    var4 = dependencyMap;
-    var0 = global;
-    var6 = var0.Object;
-    var5 = var6.defineProperty;
-    var1 = {};
-    var0 = true;
-    var1.value = var0;
-    var0 = '__esModule';
-    var0 = var5.bind(var6)(var2, var0, var1);
+    var1 = dependencyMap;
     var0 = 0;
-    var1 = var4[var0];
+    var2 = var1[var0];
+    var1 = require;
     var0 = undefined;
-    var1 = var3.bind(var0)(var1);
-    var2.useForceUpdate = var1;
-    var1 = 1;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.useStableMemo = var1;
-    var1 = 2;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.useLazyValue = var1;
-    var1 = 3;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.areHookInputsEqual = var1;
+    var3 = var1.bind(var0)(var2);
+    var2 = var3.registerAsset;
+    var1 = {
+        '__packager_asset': true,
+        'httpServerLocation': '/assets/images/native/premium/logos',
+        'width': 77.5,
+        'height': 30,
+        'scales': null,
+        'hash': 'eb98ab037be2f7c5d6e15b4152c0f9cb',
+        'name': 'img_logo_nitro_basic_stacked',
+        'type': 'png'
+    };
+    var4 = [2, 3];
+    var1.scales = var4;
+    var2 = var2.bind(var3)(var1);
+    var1 = module;
+    var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7056, 7057, 7059, 7058]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1239]);

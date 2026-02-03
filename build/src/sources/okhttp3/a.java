@@ -13,39 +13,39 @@ import okhttp3.HttpUrl;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ut.h f44334a;
+    private final wt.h f44134a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final SocketFactory f44335b;
+    private final SocketFactory f44135b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final SSLSocketFactory f44336c;
+    private final SSLSocketFactory f44136c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final HostnameVerifier f44337d;
+    private final HostnameVerifier f44137d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ut.c f44338e;
+    private final wt.c f44138e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final ut.a f44339f;
+    private final wt.a f44139f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Proxy f44340g;
+    private final Proxy f44140g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final ProxySelector f44341h;
+    private final ProxySelector f44141h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final HttpUrl f44342i;
+    private final HttpUrl f44142i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final List f44343j;
+    private final List f44143j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final List f44344k;
+    private final List f44144k;
 
-    public a(String uriHost, int i10, ut.h dns, SocketFactory socketFactory, SSLSocketFactory sSLSocketFactory, HostnameVerifier hostnameVerifier, ut.c cVar, ut.a proxyAuthenticator, Proxy proxy, List protocols, List connectionSpecs, ProxySelector proxySelector) {
+    public a(String uriHost, int i10, wt.h dns, SocketFactory socketFactory, SSLSocketFactory sSLSocketFactory, HostnameVerifier hostnameVerifier, wt.c cVar, wt.a proxyAuthenticator, Proxy proxy, List protocols, List connectionSpecs, ProxySelector proxySelector) {
         String str;
         Intrinsics.checkNotNullParameter(uriHost, "uriHost");
         Intrinsics.checkNotNullParameter(dns, "dns");
@@ -54,53 +54,53 @@ public final class a {
         Intrinsics.checkNotNullParameter(protocols, "protocols");
         Intrinsics.checkNotNullParameter(connectionSpecs, "connectionSpecs");
         Intrinsics.checkNotNullParameter(proxySelector, "proxySelector");
-        this.f44334a = dns;
-        this.f44335b = socketFactory;
-        this.f44336c = sSLSocketFactory;
-        this.f44337d = hostnameVerifier;
-        this.f44338e = cVar;
-        this.f44339f = proxyAuthenticator;
-        this.f44340g = proxy;
-        this.f44341h = proxySelector;
+        this.f44134a = dns;
+        this.f44135b = socketFactory;
+        this.f44136c = sSLSocketFactory;
+        this.f44137d = hostnameVerifier;
+        this.f44138e = cVar;
+        this.f44139f = proxyAuthenticator;
+        this.f44140g = proxy;
+        this.f44141h = proxySelector;
         HttpUrl.a aVar = new HttpUrl.a();
         if (sSLSocketFactory != null) {
             str = "https";
         } else {
             str = "http";
         }
-        this.f44342i = aVar.q(str).g(uriHost).m(i10).c();
-        this.f44343j = vt.e.V(protocols);
-        this.f44344k = vt.e.V(connectionSpecs);
+        this.f44142i = aVar.q(str).g(uriHost).m(i10).c();
+        this.f44143j = xt.e.V(protocols);
+        this.f44144k = xt.e.V(connectionSpecs);
     }
 
-    public final ut.c a() {
-        return this.f44338e;
+    public final wt.c a() {
+        return this.f44138e;
     }
 
     public final List b() {
-        return this.f44344k;
+        return this.f44144k;
     }
 
-    public final ut.h c() {
-        return this.f44334a;
+    public final wt.h c() {
+        return this.f44134a;
     }
 
     public final boolean d(a that) {
         Intrinsics.checkNotNullParameter(that, "that");
-        if (Intrinsics.areEqual(this.f44334a, that.f44334a) && Intrinsics.areEqual(this.f44339f, that.f44339f) && Intrinsics.areEqual(this.f44343j, that.f44343j) && Intrinsics.areEqual(this.f44344k, that.f44344k) && Intrinsics.areEqual(this.f44341h, that.f44341h) && Intrinsics.areEqual(this.f44340g, that.f44340g) && Intrinsics.areEqual(this.f44336c, that.f44336c) && Intrinsics.areEqual(this.f44337d, that.f44337d) && Intrinsics.areEqual(this.f44338e, that.f44338e) && this.f44342i.o() == that.f44342i.o()) {
+        if (Intrinsics.areEqual(this.f44134a, that.f44134a) && Intrinsics.areEqual(this.f44139f, that.f44139f) && Intrinsics.areEqual(this.f44143j, that.f44143j) && Intrinsics.areEqual(this.f44144k, that.f44144k) && Intrinsics.areEqual(this.f44141h, that.f44141h) && Intrinsics.areEqual(this.f44140g, that.f44140g) && Intrinsics.areEqual(this.f44136c, that.f44136c) && Intrinsics.areEqual(this.f44137d, that.f44137d) && Intrinsics.areEqual(this.f44138e, that.f44138e) && this.f44142i.o() == that.f44142i.o()) {
             return true;
         }
         return false;
     }
 
     public final HostnameVerifier e() {
-        return this.f44337d;
+        return this.f44137d;
     }
 
     public boolean equals(Object obj) {
         if (obj instanceof a) {
             a aVar = (a) obj;
-            if (Intrinsics.areEqual(this.f44342i, aVar.f44342i) && d(aVar)) {
+            if (Intrinsics.areEqual(this.f44142i, aVar.f44142i) && d(aVar)) {
                 return true;
             }
             return false;
@@ -109,35 +109,35 @@ public final class a {
     }
 
     public final List f() {
-        return this.f44343j;
+        return this.f44143j;
     }
 
     public final Proxy g() {
-        return this.f44340g;
+        return this.f44140g;
     }
 
-    public final ut.a h() {
-        return this.f44339f;
+    public final wt.a h() {
+        return this.f44139f;
     }
 
     public int hashCode() {
-        return ((((((((((((((((((527 + this.f44342i.hashCode()) * 31) + this.f44334a.hashCode()) * 31) + this.f44339f.hashCode()) * 31) + this.f44343j.hashCode()) * 31) + this.f44344k.hashCode()) * 31) + this.f44341h.hashCode()) * 31) + Objects.hashCode(this.f44340g)) * 31) + Objects.hashCode(this.f44336c)) * 31) + Objects.hashCode(this.f44337d)) * 31) + Objects.hashCode(this.f44338e);
+        return ((((((((((((((((((527 + this.f44142i.hashCode()) * 31) + this.f44134a.hashCode()) * 31) + this.f44139f.hashCode()) * 31) + this.f44143j.hashCode()) * 31) + this.f44144k.hashCode()) * 31) + this.f44141h.hashCode()) * 31) + Objects.hashCode(this.f44140g)) * 31) + Objects.hashCode(this.f44136c)) * 31) + Objects.hashCode(this.f44137d)) * 31) + Objects.hashCode(this.f44138e);
     }
 
     public final ProxySelector i() {
-        return this.f44341h;
+        return this.f44141h;
     }
 
     public final SocketFactory j() {
-        return this.f44335b;
+        return this.f44135b;
     }
 
     public final SSLSocketFactory k() {
-        return this.f44336c;
+        return this.f44136c;
     }
 
     public final HttpUrl l() {
-        return this.f44342i;
+        return this.f44142i;
     }
 
     public String toString() {
@@ -145,18 +145,18 @@ public final class a {
         Object obj;
         StringBuilder sb3 = new StringBuilder();
         sb3.append("Address{");
-        sb3.append(this.f44342i.i());
+        sb3.append(this.f44142i.i());
         sb3.append(':');
-        sb3.append(this.f44342i.o());
+        sb3.append(this.f44142i.o());
         sb3.append(", ");
-        if (this.f44340g != null) {
+        if (this.f44140g != null) {
             sb2 = new StringBuilder();
             sb2.append("proxy=");
-            obj = this.f44340g;
+            obj = this.f44140g;
         } else {
             sb2 = new StringBuilder();
             sb2.append("proxySelector=");
-            obj = this.f44341h;
+            obj = this.f44141h;
         }
         sb2.append(obj);
         sb3.append(sb2.toString());

@@ -8,22 +8,22 @@ import java.nio.channels.FileLock;
 public final class n implements Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final FileOutputStream f12107d;
+    private final FileOutputStream f11075d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final FileLock f12108e;
+    private final FileLock f11076e;
 
     private n(File file) {
         FileOutputStream fileOutputStream = new FileOutputStream(file);
-        this.f12107d = fileOutputStream;
+        this.f11075d = fileOutputStream;
         try {
             FileLock lock = fileOutputStream.getChannel().lock();
             if (lock == null) {
                 fileOutputStream.close();
             }
-            this.f12108e = lock;
+            this.f11076e = lock;
         } catch (Throwable th2) {
-            this.f12107d.close();
+            this.f11075d.close();
             throw th2;
         }
     }
@@ -35,12 +35,12 @@ public final class n implements Closeable {
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
         try {
-            FileLock fileLock = this.f12108e;
+            FileLock fileLock = this.f11076e;
             if (fileLock != null) {
                 fileLock.release();
             }
         } finally {
-            this.f12107d.close();
+            this.f11075d.close();
         }
     }
 }

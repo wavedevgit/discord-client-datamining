@@ -64,7 +64,7 @@ public final class ForwardBreadcrumbMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof ForwardBreadcrumbMessageAccessory) {
             ForwardBreadcrumbMessageAccessory forwardBreadcrumbMessageAccessory = (ForwardBreadcrumbMessageAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, forwardBreadcrumbMessageAccessory.messageId) && ChannelId.m1064equalsimpl0(this.channelId, forwardBreadcrumbMessageAccessory.channelId) && Intrinsics.areEqual(this.forwardInfo, forwardBreadcrumbMessageAccessory.forwardInfo);
+            return MessageId.m1089equalsimpl0(this.messageId, forwardBreadcrumbMessageAccessory.messageId) && ChannelId.m1063equalsimpl0(this.channelId, forwardBreadcrumbMessageAccessory.channelId) && Intrinsics.areEqual(this.forwardInfo, forwardBreadcrumbMessageAccessory.forwardInfo);
         }
         return false;
     }
@@ -87,15 +87,15 @@ public final class ForwardBreadcrumbMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (((MessageId.m1091hashCodeimpl(this.messageId) * 31) + ChannelId.m1065hashCodeimpl(this.channelId)) * 31) + this.forwardInfo.hashCode();
+        return (((MessageId.m1090hashCodeimpl(this.messageId) * 31) + ChannelId.m1064hashCodeimpl(this.channelId)) * 31) + this.forwardInfo.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
-        String m1067toStringimpl = ChannelId.m1067toStringimpl(this.channelId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
+        String m1066toStringimpl = ChannelId.m1066toStringimpl(this.channelId);
         ForwardInfo forwardInfo = this.forwardInfo;
-        return "ForwardBreadcrumbMessageAccessory(messageId=" + m1093toStringimpl + ", channelId=" + m1067toStringimpl + ", forwardInfo=" + forwardInfo + ")";
+        return "ForwardBreadcrumbMessageAccessory(messageId=" + m1092toStringimpl + ", channelId=" + m1066toStringimpl + ", forwardInfo=" + forwardInfo + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

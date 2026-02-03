@@ -9,25 +9,25 @@ import kotlin.Metadata;
 import kotlin.collections.x0;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
-import tm.c;
+import vm.c;
 @Metadata(d1 = {"\u0000<\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u000f\u0012\u0006\u0010\u0004\u001a\u00020\u0003¢\u0006\u0004\b\u0005\u0010\u0006J\u000f\u0010\b\u001a\u00020\u0007H\u0016¢\u0006\u0004\b\b\u0010\tJ\u0017\u0010\f\u001a\u00020\u00022\u0006\u0010\u000b\u001a\u00020\nH\u0016¢\u0006\u0004\b\f\u0010\rJ!\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u000f\u001a\u00020\u000e2\b\u0010\u0010\u001a\u0004\u0018\u00010\u0002H\u0016¢\u0006\u0004\b\u0012\u0010\u0013R\u0014\u0010\u0016\u001a\u00020\u00148\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\f\u0010\u0015R\u001a\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\u00070\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0012\u0010\u0017¨\u0006\u0019"}, d2 = {"Lcom/withpersona/sdk2/inquiry/steps/ui/network/SuggestionJsonAdapter;", "Lcom/squareup/moshi/h;", "Lcom/withpersona/sdk2/inquiry/steps/ui/network/Suggestion;", "Lcom/squareup/moshi/w;", "moshi", "<init>", "(Lcom/squareup/moshi/w;)V", "", "toString", "()Ljava/lang/String;", "Lcom/squareup/moshi/m;", "reader", "a", "(Lcom/squareup/moshi/m;)Lcom/withpersona/sdk2/inquiry/steps/ui/network/Suggestion;", "Lcom/squareup/moshi/t;", "writer", "value_", "", "b", "(Lcom/squareup/moshi/t;Lcom/withpersona/sdk2/inquiry/steps/ui/network/Suggestion;)V", "Lcom/squareup/moshi/m$b;", "Lcom/squareup/moshi/m$b;", "options", "Lcom/squareup/moshi/h;", "stringAdapter", "ui-step-renderer_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class SuggestionJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20387a;
+    private final m.b f19369a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f20388b;
+    private final h f19370b;
 
     public SuggestionJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a(StackTraceHelper.ID_KEY, "address");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20387a = a10;
+        this.f19369a = a10;
         h f10 = moshi.f(String.class, x0.d(), StackTraceHelper.ID_KEY);
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20388b = f10;
+        this.f19370b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -38,20 +38,20 @@ public final class SuggestionJsonAdapter extends h {
         String str = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.f20387a);
-            if (t02 != -1) {
-                if (t02 != 0) {
-                    if (t02 == 1 && (str2 = (String) this.f20388b.fromJson(reader)) == null) {
+            int A0 = reader.A0(this.f19369a);
+            if (A0 != -1) {
+                if (A0 != 0) {
+                    if (A0 == 1 && (str2 = (String) this.f19370b.fromJson(reader)) == null) {
                         throw c.x("address", "address", reader);
                     }
                 } else {
-                    str = (String) this.f20388b.fromJson(reader);
+                    str = (String) this.f19370b.fromJson(reader);
                     if (str == null) {
                         throw c.x(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
                     }
                 }
             } else {
-                reader.F0();
+                reader.E0();
                 reader.P();
             }
         }
@@ -71,10 +71,10 @@ public final class SuggestionJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (suggestion != null) {
             writer.l();
-            writer.t0(StackTraceHelper.ID_KEY);
-            this.f20388b.toJson(writer, suggestion.b());
-            writer.t0("address");
-            this.f20388b.toJson(writer, suggestion.a());
+            writer.A0(StackTraceHelper.ID_KEY);
+            this.f19370b.toJson(writer, suggestion.b());
+            writer.A0("address");
+            this.f19370b.toJson(writer, suggestion.a());
             writer.E();
             return;
         }

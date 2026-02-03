@@ -6,19 +6,19 @@ import android.os.IInterface;
 public abstract class a implements IInterface {
 
     /* renamed from: c  reason: collision with root package name */
-    private final IBinder f6566c;
+    private final IBinder f6612c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f6567d;
+    private final String f6613d;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public a(IBinder iBinder, String str) {
-        this.f6566c = iBinder;
-        this.f6567d = str;
+        this.f6612c = iBinder;
+        this.f6613d = str;
     }
 
     @Override // android.os.IInterface
     public final IBinder asBinder() {
-        return this.f6566c;
+        return this.f6612c;
     }
 }

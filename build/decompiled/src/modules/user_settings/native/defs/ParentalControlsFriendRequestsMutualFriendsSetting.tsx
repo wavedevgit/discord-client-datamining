@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var9.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS;
     var1.parent = var9;
     var9 = function() {
-        _fun88829: for (var _fun88829_ip = 0;;) switch (_fun88829_ip) {
+        _fun88921: for (var _fun88921_ip = 0;;) switch (_fun88921_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var4 = _closure1_slot2;
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3 != var2;
                 var4 = undefined;
                 if (!var3) {
-                    _fun88829_ip = 51;
-                    continue _fun88829
+                    _fun88921_ip = 51;
+                    continue _fun88921
                 }
             case 48:
                 var4 = var2;
@@ -112,15 +112,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.useValue = var9;
     var8 = function arg0() {
-        _fun88831: for (var _fun88831_ip = 0;;) switch (_fun88831_ip) {
+        _fun88923: for (var _fun88923_ip = 0;;) switch (_fun88923_ip) {
             case 0:
                 var1 = _closure1_slot4;
                 var0 = var1.getSelectedTeenId;
                 var3 = var0.bind(var1)();
                 var0 = null;
                 if (!(var0 != var3)) {
-                    _fun88831_ip = 171;
-                    continue _fun88831
+                    _fun88923_ip = 171;
+                    continue _fun88923
                 }
             case 26:
                 var1 = _closure1_slot0;
@@ -143,8 +143,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var5.bind(var6)(var0);
                 var0 = arg0;
                 if (var0) {
-                    _fun88831_ip = 143;
-                    continue _fun88831
+                    _fun88923_ip = 143;
+                    continue _fun88923
                 }
             case 112:
                 var8 = var6.removeFlags;
@@ -152,8 +152,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0.MUTUAL_FRIENDS;
                 var0 = var0.NO_RELATION;
                 var0 = var8.bind(var6)(var7, var5, var0);
-                _fun88831_ip = 165;
-                continue _fun88831;
+                _fun88923_ip = 165;
+                continue _fun88923;
             case 143:
                 var5 = var6.addFlag;
                 var4 = _closure1_slot5;
@@ -177,4 +177,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4589, 7000, 660, 6506, 10413, 7220, 1384, 8977, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4593, 7005, 660, 6511, 10432, 7225, 1384, 8996, 1234, 2]);

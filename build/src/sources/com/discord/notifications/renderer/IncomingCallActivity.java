@@ -13,7 +13,7 @@ import com.discord.image.fresco.postprocessors.PostProcessor;
 import com.discord.primitives.GuildId;
 import com.discord.primitives.UserId;
 import com.discord.tti_manager.TTIModule;
-import hs.g;
+import js.g;
 import kotlin.Metadata;
 import kotlin.coroutines.Continuation;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -68,7 +68,7 @@ public final class IncomingCallActivity extends AppCompatActivity {
 
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: getIconUrlForAvatar-r1nfqec  reason: not valid java name */
-    public final String m1044getIconUrlForAvatarr1nfqec(Context context, String str, GuildId guildId, UserId userId, String str2, int i10) {
+    public final String m1043getIconUrlForAvatarr1nfqec(Context context, String str, GuildId guildId, UserId userId, String str2, int i10) {
         IconUrlUtils iconUrlUtils = IconUrlUtils.INSTANCE;
         IconUrlUtils.init$default(iconUrlUtils, context, null, null, 6, null);
         String m916getForGuildMember2tNb6hE$default = IconUrlUtils.m916getForGuildMember2tNb6hE$default(iconUrlUtils, str, guildId, userId, null, false, 24, null);

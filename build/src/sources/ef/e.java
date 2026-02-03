@@ -8,7 +8,7 @@ import java.util.WeakHashMap;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Set f22811a = Collections.newSetFromMap(new WeakHashMap());
+    private static final Set f21502a = Collections.newSetFromMap(new WeakHashMap());
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface a extends ff.d {
@@ -19,7 +19,7 @@ public abstract class e {
     }
 
     public static Set b() {
-        Set set = f22811a;
+        Set set = f21502a;
         synchronized (set) {
         }
         return set;

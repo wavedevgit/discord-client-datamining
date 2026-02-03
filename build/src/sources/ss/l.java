@@ -1,175 +1,43 @@
 package ss;
 
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.Intrinsics;
-import ss.b;
-import ss.d;
-import ss.e;
-import ss.o;
+import java.util.concurrent.atomic.AtomicReferenceArray;
+import kotlin.coroutines.CoroutineContext;
+import os.b0;
+import os.e0;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class l extends ss.a {
+public final class l extends b0 {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final us.f f49348a;
+    /* renamed from: p  reason: collision with root package name */
+    private final /* synthetic */ AtomicReferenceArray f49622p;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a implements b, d, e, o.b {
-
-        /* renamed from: a  reason: collision with root package name */
-        private final us.d f49349a;
-
-        public a(us.d actualBuilder) {
-            Intrinsics.checkNotNullParameter(actualBuilder, "actualBuilder");
-            this.f49349a = actualBuilder;
-        }
-
-        @Override // ss.b
-        public us.d a() {
-            return this.f49349a;
-        }
-
-        @Override // ss.b
-        public void b(String str, Function1 function1) {
-            b.a.b(this, str, function1);
-        }
-
-        @Override // ss.c
-        public void c(us.o oVar) {
-            d.a.a(this, oVar);
-        }
-
-        @Override // ss.o.d
-        public void d(h0 h0Var) {
-            e.a.b(this, h0Var);
-        }
-
-        @Override // ss.o.a
-        public void e(h0 h0Var) {
-            d.a.i(this, h0Var);
-        }
-
-        @Override // ss.b
-        public void f(Function1[] function1Arr, Function1 function1) {
-            b.a.a(this, function1Arr, function1);
-        }
-
-        @Override // ss.o.a
-        public void g(f0 f0Var) {
-            d.a.h(this, f0Var);
-        }
-
-        @Override // ss.f
-        public void h(us.o oVar) {
-            d.a.b(this, oVar);
-        }
-
-        @Override // ss.o.a
-        public void i(h0 h0Var) {
-            d.a.l(this, h0Var);
-        }
-
-        @Override // ss.o.c
-        public void k(h0 h0Var) {
-            d.a.j(this, h0Var);
-        }
-
-        @Override // ss.o.c
-        public void l(h0 h0Var) {
-            d.a.f(this, h0Var);
-        }
-
-        @Override // ss.o.a
-        public void m(h0 h0Var) {
-            d.a.d(this, h0Var);
-        }
-
-        @Override // ss.o.d
-        public void n(n nVar) {
-            e.a.a(this, nVar);
-        }
-
-        @Override // ss.o
-        public void o(String str) {
-            b.a.d(this, str);
-        }
-
-        @Override // ss.o.a
-        public void p(s sVar) {
-            d.a.e(this, sVar);
-        }
-
-        @Override // ss.o.a
-        public void q(n nVar) {
-            d.a.c(this, nVar);
-        }
-
-        @Override // ss.o.c
-        public void r(int i10, int i11) {
-            d.a.k(this, i10, i11);
-        }
-
-        @Override // ss.o.c
-        public void s(h0 h0Var) {
-            d.a.g(this, h0Var);
-        }
-
-        @Override // ss.o.d
-        public void t(h0 h0Var) {
-            e.a.d(this, h0Var);
-        }
-
-        @Override // ss.o.d
-        public void u(h0 h0Var) {
-            e.a.c(this, h0Var);
-        }
-
-        @Override // ss.d
-        public void v(us.o structure) {
-            Intrinsics.checkNotNullParameter(structure, "structure");
-            a().a(structure);
-        }
-
-        @Override // ss.e
-        public void w(us.o structure) {
-            Intrinsics.checkNotNullParameter(structure, "structure");
-            a().a(structure);
-        }
-
-        public us.f x() {
-            return b.a.c(this);
-        }
-
-        @Override // ss.b
-        /* renamed from: y */
-        public a j() {
-            return new a(new us.d());
-        }
+    public l(long j10, l lVar, int i10) {
+        super(j10, lVar, i10);
+        int i11;
+        i11 = k.f49621f;
+        this.f49622p = new AtomicReferenceArray(i11);
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public l(us.f actualFormat) {
-        super(null);
-        Intrinsics.checkNotNullParameter(actualFormat, "actualFormat");
-        this.f49348a = actualFormat;
+    @Override // os.b0
+    public int r() {
+        int i10;
+        i10 = k.f49621f;
+        return i10;
     }
 
-    @Override // ss.a
-    public us.f b() {
-        return this.f49348a;
+    @Override // os.b0
+    public void s(int i10, Throwable th2, CoroutineContext coroutineContext) {
+        e0 e0Var;
+        e0Var = k.f49620e;
+        v().set(i10, e0Var);
+        t();
     }
 
-    @Override // ss.a
-    /* renamed from: e */
-    public k c() {
-        k kVar;
-        kVar = m.f49364b;
-        return kVar;
+    public String toString() {
+        return "SemaphoreSegment[id=" + this.f44503i + ", hashCode=" + hashCode() + ']';
     }
 
-    @Override // ss.a
-    /* renamed from: f */
-    public j d(k intermediate) {
-        Intrinsics.checkNotNullParameter(intermediate, "intermediate");
-        return new j(intermediate);
+    public final /* synthetic */ AtomicReferenceArray v() {
+        return this.f49622p;
     }
 }

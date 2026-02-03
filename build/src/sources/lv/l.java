@@ -1,8 +1,9 @@
 package lv;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-@Retention(RetentionPolicy.RUNTIME)
+import java.lang.invoke.MethodHandles;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public @interface l {
+public final /* synthetic */ class l {
+    public static /* bridge */ /* synthetic */ Class a() {
+        return MethodHandles.Lookup.class;
+    }
 }

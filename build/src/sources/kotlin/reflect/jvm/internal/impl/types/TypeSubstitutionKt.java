@@ -67,7 +67,7 @@ public final class TypeSubstitutionKt {
         } else if (unwrap instanceof SimpleType) {
             return replace((SimpleType) unwrap, newArguments, replaceAnnotations);
         } else {
-            throw new jr.p();
+            throw new lr.p();
         }
     }
 

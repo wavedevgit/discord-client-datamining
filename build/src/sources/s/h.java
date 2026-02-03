@@ -9,10 +9,10 @@ import x.z;
 class h implements f.a {
 
     /* renamed from: a  reason: collision with root package name */
-    static final f f48726a = new f(new h());
+    static final f f49136a = new f(new h());
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Set f48727b = Collections.singleton(z.f53321d);
+    private static final Set f49137b = Collections.singleton(z.f53042d);
 
     h() {
     }
@@ -24,13 +24,13 @@ class h implements f.a {
 
     @Override // s.f.a
     public Set b(z zVar) {
-        boolean equals = z.f53321d.equals(zVar);
+        boolean equals = z.f53042d.equals(zVar);
         b2.e.b(equals, "DynamicRange is not supported: " + zVar);
-        return f48727b;
+        return f49137b;
     }
 
     @Override // s.f.a
     public Set c() {
-        return f48727b;
+        return f49137b;
     }
 }

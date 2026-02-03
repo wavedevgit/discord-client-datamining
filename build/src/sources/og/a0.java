@@ -7,31 +7,31 @@ import java.util.NoSuchElementException;
 abstract class a0 implements Iterator {
 
     /* renamed from: d  reason: collision with root package name */
-    int f42846d;
+    int f42646d;
 
     /* renamed from: e  reason: collision with root package name */
-    int f42847e;
+    int f42647e;
 
     /* renamed from: i  reason: collision with root package name */
-    int f42848i;
+    int f42648i;
 
     /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ f0 f42849o;
+    final /* synthetic */ f0 f42649o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ a0(f0 f0Var, w wVar) {
         int i10;
-        this.f42849o = f0Var;
-        i10 = f0Var.f43151p;
-        this.f42846d = i10;
-        this.f42847e = f0Var.g();
-        this.f42848i = -1;
+        this.f42649o = f0Var;
+        i10 = f0Var.f42951p;
+        this.f42646d = i10;
+        this.f42647e = f0Var.g();
+        this.f42648i = -1;
     }
 
     private final void b() {
         int i10;
-        i10 = this.f42849o.f43151p;
-        if (i10 == this.f42846d) {
+        i10 = this.f42649o.f42951p;
+        if (i10 == this.f42646d) {
             return;
         }
         throw new ConcurrentModificationException();
@@ -41,7 +41,7 @@ abstract class a0 implements Iterator {
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
-        if (this.f42847e >= 0) {
+        if (this.f42647e >= 0) {
             return true;
         }
         return false;
@@ -51,10 +51,10 @@ abstract class a0 implements Iterator {
     public final Object next() {
         b();
         if (hasNext()) {
-            int i10 = this.f42847e;
-            this.f42848i = i10;
+            int i10 = this.f42647e;
+            this.f42648i = i10;
             Object a10 = a(i10);
-            this.f42847e = this.f42849o.h(this.f42847e);
+            this.f42647e = this.f42649o.h(this.f42647e);
             return a10;
         }
         throw new NoSuchElementException();
@@ -64,16 +64,16 @@ abstract class a0 implements Iterator {
     public final void remove() {
         boolean z10;
         b();
-        if (this.f42848i >= 0) {
+        if (this.f42648i >= 0) {
             z10 = true;
         } else {
             z10 = false;
         }
         c.d(z10, "no calls to next() since the last call to remove()");
-        this.f42846d += 32;
-        f0 f0Var = this.f42849o;
-        f0Var.remove(f0.i(f0Var, this.f42848i));
-        this.f42847e--;
-        this.f42848i = -1;
+        this.f42646d += 32;
+        f0 f0Var = this.f42649o;
+        f0Var.remove(f0.i(f0Var, this.f42648i));
+        this.f42647e--;
+        this.f42648i = -1;
     }
 }

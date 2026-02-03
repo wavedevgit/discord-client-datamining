@@ -8,7 +8,7 @@ import sa.k;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f55556a = new a();
+    public static final a f55694a = new a();
 
     private a() {
     }
@@ -19,9 +19,9 @@ public final class a {
         int height;
         Intrinsics.checkNotNullParameter(rotationOptions, "rotationOptions");
         Intrinsics.checkNotNullParameter(encodedImage, "encodedImage");
-        if (k.K0(encodedImage)) {
-            if (resizeOptions != null && resizeOptions.f11095b > 0 && resizeOptions.f11094a > 0 && encodedImage.getWidth() != 0 && encodedImage.getHeight() != 0) {
-                int d10 = f55556a.d(rotationOptions, encodedImage);
+        if (k.J0(encodedImage)) {
+            if (resizeOptions != null && resizeOptions.f10063b > 0 && resizeOptions.f10062a > 0 && encodedImage.getWidth() != 0 && encodedImage.getHeight() != 0) {
+                int d10 = f55694a.d(rotationOptions, encodedImage);
                 if (d10 != 90 && d10 != 270) {
                     z10 = false;
                 } else {
@@ -37,10 +37,10 @@ public final class a {
                 } else {
                     height = encodedImage.getHeight();
                 }
-                float f10 = resizeOptions.f11094a / width;
-                float f11 = resizeOptions.f11095b / height;
+                float f10 = resizeOptions.f10062a / width;
+                float f11 = resizeOptions.f10063b / height;
                 float c10 = kotlin.ranges.d.c(f10, f11);
-                p8.a.E("DownsampleUtil", "Downsample - Specified size: %dx%d, image size: %dx%d ratio: %.1f x %.1f, ratio: %.3f", Integer.valueOf(resizeOptions.f11094a), Integer.valueOf(resizeOptions.f11095b), Integer.valueOf(width), Integer.valueOf(height), Float.valueOf(f10), Float.valueOf(f11), Float.valueOf(c10));
+                p8.a.E("DownsampleUtil", "Downsample - Specified size: %dx%d, image size: %dx%d ratio: %.1f x %.1f, ratio: %.3f", Integer.valueOf(resizeOptions.f10062a), Integer.valueOf(resizeOptions.f10063b), Integer.valueOf(width), Integer.valueOf(height), Float.valueOf(f10), Float.valueOf(f11), Float.valueOf(c10));
                 return c10;
             }
             return 1.0f;
@@ -53,23 +53,23 @@ public final class a {
         float f10;
         Intrinsics.checkNotNullParameter(rotationOptions, "rotationOptions");
         Intrinsics.checkNotNullParameter(encodedImage, "encodedImage");
-        if (!k.K0(encodedImage)) {
+        if (!k.J0(encodedImage)) {
             return 1;
         }
         float a10 = a(rotationOptions, resizeOptions, encodedImage);
-        if (encodedImage.L() == fa.b.f24079b) {
+        if (encodedImage.L() == fa.b.f23671b) {
             e10 = f(a10);
         } else {
             e10 = e(a10);
         }
         int max = Math.max(encodedImage.getHeight(), encodedImage.getWidth());
         if (resizeOptions != null) {
-            f10 = resizeOptions.f11096c;
+            f10 = resizeOptions.f10064c;
         } else {
             f10 = i10;
         }
         while (max / e10 > f10) {
-            if (encodedImage.L() == fa.b.f24079b) {
+            if (encodedImage.L() == fa.b.f23671b) {
                 e10 *= 2;
             } else {
                 e10++;
@@ -80,11 +80,11 @@ public final class a {
 
     public static final int c(k encodedImage, int i10, int i11) {
         Intrinsics.checkNotNullParameter(encodedImage, "encodedImage");
-        int t02 = encodedImage.t0();
-        while ((((encodedImage.getWidth() * encodedImage.getHeight()) * i10) / t02) / t02 > i11) {
-            t02 *= 2;
+        int A0 = encodedImage.A0();
+        while ((((encodedImage.getWidth() * encodedImage.getHeight()) * i10) / A0) / A0 > i11) {
+            A0 *= 2;
         }
-        return t02;
+        return A0;
     }
 
     private final int d(RotationOptions rotationOptions, k kVar) {

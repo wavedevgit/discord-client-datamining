@@ -17,77 +17,77 @@ import x.y0;
 public abstract class i implements j1.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private f.a f2018a;
+    private f.a f1987a;
 
     /* renamed from: b  reason: collision with root package name */
-    private volatile int f2019b;
+    private volatile int f1988b;
 
     /* renamed from: c  reason: collision with root package name */
-    private volatile int f2020c;
+    private volatile int f1989c;
 
     /* renamed from: e  reason: collision with root package name */
-    private volatile boolean f2022e;
+    private volatile boolean f1991e;
 
     /* renamed from: f  reason: collision with root package name */
-    private volatile boolean f2023f;
+    private volatile boolean f1992f;
 
     /* renamed from: g  reason: collision with root package name */
-    private Executor f2024g;
+    private Executor f1993g;
 
     /* renamed from: h  reason: collision with root package name */
-    private q f2025h;
+    private q f1994h;
 
     /* renamed from: i  reason: collision with root package name */
-    private ImageWriter f2026i;
+    private ImageWriter f1995i;
 
     /* renamed from: n  reason: collision with root package name */
-    ByteBuffer f2031n;
+    ByteBuffer f2000n;
 
     /* renamed from: o  reason: collision with root package name */
-    ByteBuffer f2032o;
+    ByteBuffer f2001o;
 
     /* renamed from: p  reason: collision with root package name */
-    ByteBuffer f2033p;
+    ByteBuffer f2002p;
 
     /* renamed from: q  reason: collision with root package name */
-    ByteBuffer f2034q;
+    ByteBuffer f2003q;
 
     /* renamed from: d  reason: collision with root package name */
-    private volatile int f2021d = 1;
+    private volatile int f1990d = 1;
 
     /* renamed from: j  reason: collision with root package name */
-    private Rect f2027j = new Rect();
+    private Rect f1996j = new Rect();
 
     /* renamed from: k  reason: collision with root package name */
-    private Rect f2028k = new Rect();
+    private Rect f1997k = new Rect();
 
     /* renamed from: l  reason: collision with root package name */
-    private Matrix f2029l = new Matrix();
+    private Matrix f1998l = new Matrix();
 
     /* renamed from: m  reason: collision with root package name */
-    private Matrix f2030m = new Matrix();
+    private Matrix f1999m = new Matrix();
 
     /* renamed from: r  reason: collision with root package name */
-    private final Object f2035r = new Object();
+    private final Object f2004r = new Object();
 
     /* renamed from: s  reason: collision with root package name */
-    protected boolean f2036s = true;
+    protected boolean f2005s = true;
 
     public static /* synthetic */ void b(i iVar, n nVar, Matrix matrix, n nVar2, Rect rect, f.a aVar, c.a aVar2) {
         int i10;
-        if (iVar.f2036s) {
+        if (iVar.f2005s) {
             q2 c10 = nVar.z().c();
             long a10 = nVar.z().a();
-            if (iVar.f2022e) {
+            if (iVar.f1991e) {
                 i10 = 0;
             } else {
-                i10 = iVar.f2019b;
+                i10 = iVar.f1988b;
             }
             r rVar = new r(nVar2, v0.e(c10, a10, i10, matrix));
             if (!rect.isEmpty()) {
-                rVar.B0(rect);
+                rVar.z0(rect);
             }
-            aVar.f(rVar);
+            aVar.g(rVar);
             aVar2.c(null);
             return;
         }
@@ -106,21 +106,21 @@ public abstract class i implements j1.a {
     }
 
     private void h(n nVar) {
-        if (this.f2021d == 1) {
-            if (this.f2032o == null) {
-                this.f2032o = ByteBuffer.allocateDirect(nVar.getWidth() * nVar.getHeight());
+        if (this.f1990d == 1) {
+            if (this.f2001o == null) {
+                this.f2001o = ByteBuffer.allocateDirect(nVar.getWidth() * nVar.getHeight());
             }
-            this.f2032o.position(0);
-            if (this.f2033p == null) {
-                this.f2033p = ByteBuffer.allocateDirect((nVar.getWidth() * nVar.getHeight()) / 4);
+            this.f2001o.position(0);
+            if (this.f2002p == null) {
+                this.f2002p = ByteBuffer.allocateDirect((nVar.getWidth() * nVar.getHeight()) / 4);
             }
-            this.f2033p.position(0);
-            if (this.f2034q == null) {
-                this.f2034q = ByteBuffer.allocateDirect((nVar.getWidth() * nVar.getHeight()) / 4);
+            this.f2002p.position(0);
+            if (this.f2003q == null) {
+                this.f2003q = ByteBuffer.allocateDirect((nVar.getWidth() * nVar.getHeight()) / 4);
             }
-            this.f2034q.position(0);
-        } else if (this.f2021d == 2 && this.f2031n == null) {
-            this.f2031n = ByteBuffer.allocateDirect(nVar.getWidth() * nVar.getHeight() * 4);
+            this.f2003q.position(0);
+        } else if (this.f1990d == 2 && this.f2000n == null) {
+            this.f2000n = ByteBuffer.allocateDirect(nVar.getWidth() * nVar.getHeight() * 4);
         }
     }
 
@@ -146,7 +146,7 @@ public abstract class i implements j1.a {
     static Matrix k(int i10, int i11, int i12, int i13, int i14) {
         Matrix matrix = new Matrix();
         if (i14 > 0) {
-            matrix.setRectToRect(new RectF(0.0f, 0.0f, i10, i11), b0.q.f6190a, Matrix.ScaleToFit.FILL);
+            matrix.setRectToRect(new RectF(0.0f, 0.0f, i10, i11), b0.q.f6236a, Matrix.ScaleToFit.FILL);
             matrix.postRotate(i14);
             matrix.postConcat(b0.q.c(new RectF(0.0f, 0.0f, i12, i13)));
         }
@@ -162,22 +162,22 @@ public abstract class i implements j1.a {
     }
 
     private void n(int i10, int i11, int i12, int i13) {
-        Matrix k10 = k(i10, i11, i12, i13, this.f2019b);
-        this.f2028k = l(this.f2027j, k10);
-        this.f2030m.setConcat(this.f2029l, k10);
+        Matrix k10 = k(i10, i11, i12, i13, this.f1988b);
+        this.f1997k = l(this.f1996j, k10);
+        this.f1999m.setConcat(this.f1998l, k10);
     }
 
     private void o(n nVar, int i10) {
-        q qVar = this.f2025h;
+        q qVar = this.f1994h;
         if (qVar != null) {
             qVar.j();
-            this.f2025h = i(nVar.getWidth(), nVar.getHeight(), i10, this.f2025h.c(), this.f2025h.f());
-            if (this.f2021d == 1) {
-                ImageWriter imageWriter = this.f2026i;
+            this.f1994h = i(nVar.getWidth(), nVar.getHeight(), i10, this.f1994h.c(), this.f1994h.f());
+            if (this.f1990d == 1) {
+                ImageWriter imageWriter = this.f1995i;
                 if (imageWriter != null) {
                     f0.a.a(imageWriter);
                 }
-                this.f2026i = f0.a.c(this.f2025h.getSurface(), this.f2025h.f());
+                this.f1995i = f0.a.c(this.f1994h.getSurface(), this.f1994h.f());
             }
         }
     }
@@ -215,7 +215,7 @@ public abstract class i implements j1.a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void f() {
-        this.f2036s = true;
+        this.f2005s = true;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -223,7 +223,7 @@ public abstract class i implements j1.a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void j() {
-        this.f2036s = false;
+        this.f2005s = false;
         g();
     }
 
@@ -234,52 +234,52 @@ public abstract class i implements j1.a {
         if (aVar == null) {
             g();
         }
-        synchronized (this.f2035r) {
-            this.f2018a = aVar;
-            this.f2024g = executor;
+        synchronized (this.f2004r) {
+            this.f1987a = aVar;
+            this.f1993g = executor;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void q(boolean z10) {
-        this.f2023f = z10;
+        this.f1992f = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void r(int i10) {
-        this.f2021d = i10;
+        this.f1990d = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void s(boolean z10) {
-        this.f2022e = z10;
+        this.f1991e = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void t(q qVar) {
-        synchronized (this.f2035r) {
-            this.f2025h = qVar;
+        synchronized (this.f2004r) {
+            this.f1994h = qVar;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void u(int i10) {
-        this.f2019b = i10;
+        this.f1988b = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void v(Matrix matrix) {
-        synchronized (this.f2035r) {
-            this.f2029l = matrix;
-            this.f2030m = new Matrix(this.f2029l);
+        synchronized (this.f2004r) {
+            this.f1998l = matrix;
+            this.f1999m = new Matrix(this.f1998l);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void w(Rect rect) {
-        synchronized (this.f2035r) {
-            this.f2027j = rect;
-            this.f2028k = new Rect(this.f2027j);
+        synchronized (this.f2004r) {
+            this.f1996j = rect;
+            this.f1997k = new Rect(this.f1996j);
         }
     }
 }

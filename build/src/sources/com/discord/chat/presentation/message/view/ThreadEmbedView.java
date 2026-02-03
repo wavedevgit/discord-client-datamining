@@ -116,7 +116,7 @@ public final class ThreadEmbedView extends ConstraintLayout {
         }
         DiscordFontUtilsKt.setDiscordFont(threadEmbedMostRecentMessageContent, discordFont);
         if (str3 != null && guildId != null) {
-            this.binding.tagChiplet.m504configureD0ylKIU(str3, str4, guildId.m1082unboximpl(), null, 0.89f);
+            this.binding.tagChiplet.m504configureD0ylKIU(str3, str4, guildId.m1081unboximpl(), null, 0.89f);
             ClanTagChipletView tagChiplet = this.binding.tagChiplet;
             Intrinsics.checkNotNullExpressionValue(tagChiplet, "tagChiplet");
             tagChiplet.setVisibility(0);

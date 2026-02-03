@@ -10,21 +10,21 @@ public final class e implements CoroutineContext, Serializable {
     @NotNull
 
     /* renamed from: d  reason: collision with root package name */
-    public static final e f33148d = new e();
+    public static final e f32538d = new e();
 
     private e() {
     }
 
     @Override // kotlin.coroutines.CoroutineContext
-    public Object A1(Object obj, Function2 operation) {
-        Intrinsics.checkNotNullParameter(operation, "operation");
-        return obj;
+    public CoroutineContext V0(CoroutineContext context) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        return context;
     }
 
     @Override // kotlin.coroutines.CoroutineContext
-    public CoroutineContext Z0(CoroutineContext context) {
-        Intrinsics.checkNotNullParameter(context, "context");
-        return context;
+    public CoroutineContext e1(CoroutineContext.b key) {
+        Intrinsics.checkNotNullParameter(key, "key");
+        return this;
     }
 
     public int hashCode() {
@@ -42,8 +42,8 @@ public final class e implements CoroutineContext, Serializable {
     }
 
     @Override // kotlin.coroutines.CoroutineContext
-    public CoroutineContext y1(CoroutineContext.b key) {
-        Intrinsics.checkNotNullParameter(key, "key");
-        return this;
+    public Object y1(Object obj, Function2 operation) {
+        Intrinsics.checkNotNullParameter(operation, "operation");
+        return obj;
     }
 }

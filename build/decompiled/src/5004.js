@@ -1,75 +1,79 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun44974: for (var _fun44974_ip = 0;;) switch (_fun44974_ip) {
-        case 0:
-            var2 = exports;
-            var5 = global;
-            var4 = var5.Object;
-            var3 = var4.defineProperty;
-            var1 = {};
-            var0 = true;
-            var1.value = var0;
-            var0 = '__esModule';
-            var0 = var3.bind(var4)(var2, var0, var1);
-            var1 = dependencyMap;
-            var0 = 0;
-            var3 = var1[var0];
-            var1 = metroImportDefault;
-            var0 = undefined;
-            var3 = var1.bind(var0)(var3);
-            var1 = var5.window;
-            var6 = 'undefined';
-            var1 = typeof var1;
-            var4 = var6 === var1;
-            if (var4) {
-                _fun44974_ip = 89;
-                continue _fun44974
-            }
-        case 73:
-            var1 = var5.window;
-            var1 = var1.document;
-            var4 = var0 === var1;
-        case 89:
-            if (var4) {
-                _fun44974_ip = 114;
-                continue _fun44974
-            }
-        case 92:
-            var1 = var5.window;
-            var1 = var1.document;
-            var1 = var1.createElement;
-            var4 = var0 === var1;
-        case 114:
-            var1 = var5.navigator;
-            var1 = typeof var1;
-            var1 = var6 !== var1;
-            if (!var1) {
-                _fun44974_ip = 150;
-                continue _fun44974
-            }
-        case 130:
-            var5 = var5.navigator;
-            var6 = var5.product;
-            var5 = 'ReactNative';
-            var1 = var5 === var6;
-        case 150:
-            if (!var4) {
-                _fun44974_ip = 163;
-                continue _fun44974
-            }
-        case 153:
-            if (var1) {
-                _fun44974_ip = 163;
-                continue _fun44974
-            }
-        case 156:
-            var1 = var3.useEffect;
-            _fun44974_ip = 169;
-            continue _fun44974;
-        case 163:
-            var1 = var3.useLayoutEffect;
-        case 169:
-            var2.useIsomorphicLayoutEffect = var1;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31]);
+    var1 = exports;
+    var2 = require;
+    var _closure1_slot0 = var2;
+    var2 = metroImportDefault;
+    var _closure1_slot1 = var2;
+    var2 = dependencyMap;
+    var _closure1_slot2 = var2;
+    var2 = global;
+    var5 = var2.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var2 = true;
+    var3.value = var2;
+    var2 = '__esModule';
+    var2 = var4.bind(var5)(var1, var2, var3);
+    var0 = function arg0() {
+        _fun45002: for (var _fun45002_ip = 0;;) switch (_fun45002_ip) {
+            case 0:
+                var0 = arg0;
+                var0 = var0.attachedGestures;
+                var6 = var0;
+                var3 = var6[Symbol.iterator];
+                var6 = var3().next;
+                var5 = 0;
+                var0 = undefined;
+                var4 = 1;
+                var2 = 2;
+            case 28:
+                var9 = var6().value;
+                var7 = var3;
+                if (!(var7 !== var0)) {
+                    _fun45002_ip = 152;
+                    continue _fun45002
+                }
+            case 39: // try_start_0
+                var10 = _closure1_slot1;
+                var7 = _closure1_slot2;
+                var8 = var7[var5];
+                var11 = var10.bind(var0)(var8);
+                var10 = var11.dropGestureHandler;
+                var8 = var9.handlerTag;
+                var8 = var10.bind(var11)(var8);
+                var8 = _closure1_slot0;
+                var10 = var7[var4];
+                var13 = var8.bind(var0)(var10);
+                var12 = var13.unregisterHandler;
+                var11 = var9.handlerTag;
+                var10 = var9.config;
+                var10 = var10.testId;
+                var10 = var12.bind(var13)(var11, var10);
+                var7 = var7[var2];
+                var7 = var8.bind(var0)(var7);
+                var8 = var7.MountRegistry;
+                var7 = var8.gestureWillUnmount;
+                var7 = var7.bind(var8)(var9);
+            case 143: // try_end0
+                _fun45002_ip = 28;
+                continue _fun45002;
+            case 145: // catch_target0
+                CatchBlockStart(arg_register = 2);
+                var3.return();
+                throw var2;
+            case 152:
+                var2 = _closure1_slot0;
+                var3 = _closure1_slot2;
+                var1 = 3;
+                var1 = var3[var1];
+                var2 = var2.bind(var0)(var1);
+                var1 = var2.scheduleFlushOperations;
+                var1 = var1.bind(var2)();
+                return var0;
+        }
+    };
+    var1.dropHandlers = var0;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4970, 4964, 4986, 4984]);

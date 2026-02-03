@@ -5,30 +5,36 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function() {
-        _fun28980: for (var _fun28980_ip = 0;;) switch (_fun28980_ip) {
+        _fun29046: for (var _fun29046_ip = 0;;) switch (_fun29046_ip) {
             case 0:
-                var0 = global;
-                var0 = var0.Array;
-                var0 = var0.prototype;
-                var0 = var0.map;
-                var4 = _closure1_slot0;
+                var2 = _closure1_slot0;
                 var3 = _closure1_slot1;
-                var2 = 0;
-                var2 = var3[var2];
+                var1 = 0;
+                var1 = var3[var1];
                 var3 = undefined;
-                var2 = var4.bind(var3)(var2);
-                var2 = var2.bind(var3)(var0);
-                if (var2) {
-                    _fun28980_ip = 70;
-                    continue _fun28980
+                var1 = var2.bind(var3)(var1);
+                var1 = var1.bind(var3)();
+                var1 = global;
+                var2 = var1.Promise;
+                var2 = var2.allSettled;
+                var4 = 'function';
+                var2 = typeof var2;
+                if (!(var4 !== var2)) {
+                    _fun29046_ip = 75;
+                    continue _fun29046
                 }
-            case 50:
+            case 53:
                 var2 = _closure1_slot0;
                 var4 = _closure1_slot1;
-                var1 = 1;
-                var1 = var4[var1];
-                var0 = var2.bind(var3)(var1);
-            case 70:
+                var0 = 1;
+                var0 = var4[var0];
+                var0 = var2.bind(var3)(var0);
+                _fun29046_ip = 87;
+                continue _fun29046;
+            case 75:
+                var1 = var1.Promise;
+                var0 = var1.allSettled;
+            case 87:
                 return var0;
         }
     };
@@ -36,4 +42,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3365, 3366]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3363, 3365]);

@@ -220,7 +220,7 @@ public final class AFe1fSDK extends AFe1lSDK<AFh1pSDK> {
         Intrinsics.checkNotNullExpressionValue(afInfoLog, "");
         this.component1 = afInfoLog;
         this.areAllFieldsValid = new AFh1pSDK(null, null, null, null, null, null, null, null, SetSpanOperation.SPAN_MAX_PRIORITY, null);
-        this.component4 = jr.l.b(new Function0<Long>() { // from class: com.appsflyer.internal.AFe1fSDK.4
+        this.component4 = lr.l.a(new Function0<Long>() { // from class: com.appsflyer.internal.AFe1fSDK.4
             {
                 super(0);
             }
@@ -233,7 +233,7 @@ public final class AFe1fSDK extends AFe1lSDK<AFh1pSDK> {
                 return Long.valueOf((monetizationNetwork == null || (t10 = StringsKt.t(monetizationNetwork)) == null) ? 1000L : t10.longValue());
             }
         });
-        this.copydefault = jr.l.b(new Function0<Boolean>() { // from class: com.appsflyer.internal.AFe1fSDK.1
+        this.copydefault = lr.l.a(new Function0<Boolean>() { // from class: com.appsflyer.internal.AFe1fSDK.1
             {
                 super(0);
             }
@@ -442,10 +442,10 @@ public final class AFe1fSDK extends AFe1lSDK<AFh1pSDK> {
                 if (advertisingId != null) {
                     if (advertisingId.length() == 0) {
                     }
-                    unit = Unit.f33074a;
+                    unit = Unit.f32464a;
                 }
                 aFa1tSDK.getGaidError().append("emptyOrNull |");
-                unit = Unit.f33074a;
+                unit = Unit.f32464a;
             } else {
                 unit = null;
             }
@@ -596,7 +596,7 @@ public final class AFe1fSDK extends AFe1lSDK<AFh1pSDK> {
             java.lang.String r0 = "emptyOrNull (bypass) |"
             r11.append(r0)     // Catch: java.lang.Throwable -> L21
         L2e:
-            kotlin.Unit r11 = kotlin.Unit.f33074a     // Catch: java.lang.Throwable -> L21
+            kotlin.Unit r11 = kotlin.Unit.f32464a     // Catch: java.lang.Throwable -> L21
             if (r11 == 0) goto L34
             r11 = 1
             return r11

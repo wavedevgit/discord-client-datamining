@@ -1,112 +1,160 @@
 package qv;
 
-import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Comparator;
+import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import kotlin.collections.CollectionsKt;
+import java.util.ListIterator;
+import java.util.function.UnaryOperator;
+import kotlin.jvm.internal.CollectionToArray;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
+import kotlin.jvm.internal.markers.KMappedMarker;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class a {
-    private static final Comparable a(Object obj) {
-        if (obj instanceof Comparable) {
-            return (Comparable) obj;
-        }
-        if (obj instanceof List) {
-            return new ov.a((List) obj);
-        }
-        return null;
+public final class a implements List, Comparable, KMappedMarker {
+
+    /* renamed from: d  reason: collision with root package name */
+    private final List f48205d;
+
+    public a(List items) {
+        Intrinsics.checkNotNullParameter(items, "items");
+        this.f48205d = items;
     }
 
-    public static final List b(Object obj) {
-        return e(c(obj));
+    @Override // java.util.List
+    public void add(int i10, Object obj) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
 
-    public static final List c(Object obj) {
-        List list;
-        if (obj instanceof List) {
-            list = (List) obj;
-        } else {
-            list = null;
-        }
-        if (list != null) {
-            return new ov.a(list);
-        }
-        return new ov.a(CollectionsKt.e(obj));
+    @Override // java.util.List
+    public boolean addAll(int i10, Collection collection) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
 
-    public static final List d(List list) {
-        Intrinsics.checkNotNullParameter(list, "<this>");
-        List<Object> c10 = c(list);
-        ArrayList arrayList = new ArrayList(CollectionsKt.w(c10, 10));
-        for (Object obj : c10) {
-            arrayList.add(a(obj));
-        }
-        return arrayList;
+    @Override // java.util.List, java.util.Collection
+    public void clear() {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
 
-    private static final List e(List list) {
-        Double d10;
-        List list2 = list;
-        ArrayList arrayList = new ArrayList(CollectionsKt.w(list2, 10));
-        for (Object obj : list2) {
-            if (obj instanceof Number) {
-                d10 = Double.valueOf(((Number) obj).doubleValue());
-            } else if (obj instanceof String) {
-                d10 = StringsKt.p((String) obj);
-            } else {
-                d10 = null;
-            }
-            arrayList.add(d10);
-        }
-        return arrayList;
+    @Override // java.util.List, java.util.Collection
+    public boolean contains(Object obj) {
+        return this.f48205d.contains(obj);
     }
 
-    public static final boolean f(Object obj) {
-        Map map;
-        if (obj instanceof Map) {
-            map = (Map) obj;
-        } else {
-            map = null;
-        }
-        if (map == null || map.isEmpty()) {
-            return false;
-        }
-        Set<Object> keySet = map.keySet();
-        if (!(keySet instanceof Collection) || !keySet.isEmpty()) {
-            for (Object obj2 : keySet) {
-                if (!(obj2 instanceof String)) {
-                    return false;
-                }
-            }
-            return true;
-        }
-        return true;
+    @Override // java.util.List, java.util.Collection
+    public boolean containsAll(Collection elements) {
+        Intrinsics.checkNotNullParameter(elements, "elements");
+        return this.f48205d.containsAll(elements);
     }
 
-    public static final boolean g(Object obj) {
-        if (obj instanceof List) {
-            List list = (List) obj;
-            if (list.size() == 1 && CollectionsKt.o0(list) == null) {
-                return true;
-            }
-            return false;
-        }
-        return false;
+    @Override // java.lang.Comparable
+    /* renamed from: d */
+    public int compareTo(List other) {
+        Intrinsics.checkNotNullParameter(other, "other");
+        return or.a.d(this.f48205d.toString(), other.toString());
     }
 
-    public static final String h(Object obj) {
-        String str;
-        if (obj != null) {
-            str = obj.toString();
-        } else {
-            str = null;
-        }
-        if (str == null) {
-            return "";
-        }
-        return str;
+    public int e() {
+        return this.f48205d.size();
+    }
+
+    @Override // java.util.List
+    public Object get(int i10) {
+        return this.f48205d.get(i10);
+    }
+
+    @Override // java.util.List
+    public int indexOf(Object obj) {
+        return this.f48205d.indexOf(obj);
+    }
+
+    @Override // java.util.List, java.util.Collection
+    public boolean isEmpty() {
+        return this.f48205d.isEmpty();
+    }
+
+    @Override // java.util.List, java.util.Collection, java.lang.Iterable
+    public Iterator iterator() {
+        return this.f48205d.iterator();
+    }
+
+    @Override // java.util.List
+    public int lastIndexOf(Object obj) {
+        return this.f48205d.lastIndexOf(obj);
+    }
+
+    @Override // java.util.List
+    public ListIterator listIterator() {
+        return this.f48205d.listIterator();
+    }
+
+    @Override // java.util.List
+    public Object remove(int i10) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    @Override // java.util.List, java.util.Collection
+    public boolean removeAll(Collection collection) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    @Override // java.util.List
+    public void replaceAll(UnaryOperator unaryOperator) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    @Override // java.util.List, java.util.Collection
+    public boolean retainAll(Collection collection) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    @Override // java.util.List
+    public Object set(int i10, Object obj) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    @Override // java.util.List, java.util.Collection
+    public final /* bridge */ int size() {
+        return e();
+    }
+
+    @Override // java.util.List
+    public void sort(Comparator comparator) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    @Override // java.util.List
+    public List subList(int i10, int i11) {
+        return this.f48205d.subList(i10, i11);
+    }
+
+    @Override // java.util.List, java.util.Collection
+    public Object[] toArray() {
+        return CollectionToArray.toArray(this);
+    }
+
+    @Override // java.util.List, java.util.Collection
+    public boolean add(Object obj) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    @Override // java.util.List, java.util.Collection
+    public boolean addAll(Collection collection) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    @Override // java.util.List
+    public ListIterator listIterator(int i10) {
+        return this.f48205d.listIterator(i10);
+    }
+
+    @Override // java.util.List, java.util.Collection
+    public boolean remove(Object obj) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    @Override // java.util.List, java.util.Collection
+    public Object[] toArray(Object[] array) {
+        Intrinsics.checkNotNullParameter(array, "array");
+        return CollectionToArray.toArray(this, array);
     }
 }

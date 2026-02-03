@@ -8,27 +8,27 @@ import org.jetbrains.annotations.NotNull;
 public final class SimpleTypeWithEnhancement extends DelegatingSimpleType implements TypeWithEnhancement {
 
     /* renamed from: e  reason: collision with root package name */
-    private final SimpleType f35654e;
+    private final SimpleType f35044e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final KotlinType f35655i;
+    private final KotlinType f35045i;
 
     public SimpleTypeWithEnhancement(@NotNull SimpleType delegate, @NotNull KotlinType enhancement) {
         Intrinsics.checkNotNullParameter(delegate, "delegate");
         Intrinsics.checkNotNullParameter(enhancement, "enhancement");
-        this.f35654e = delegate;
-        this.f35655i = enhancement;
+        this.f35044e = delegate;
+        this.f35045i = enhancement;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.DelegatingSimpleType
     protected SimpleType getDelegate() {
-        return this.f35654e;
+        return this.f35044e;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeWithEnhancement
     @NotNull
     public KotlinType getEnhancement() {
-        return this.f35655i;
+        return this.f35045i;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.SimpleType

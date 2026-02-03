@@ -1,59 +1,76 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
-    var1 = global;
-    var1 = var1.Object;
-    var1 = var1.prototype;
-    var1 = var1.hasOwnProperty;
-    var _closure1_slot2 = var1;
-    var1 = function arg0() {
-        _fun31616: for (var _fun31616_ip = 0;;) switch (_fun31616_ip) {
+    var0 = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g;
+    var _closure1_slot0 = var0;
+    var0 = /\\(\\)?/g;
+    var _closure1_slot1 = var0;
+    var2 = dependencyMap;
+    var0 = 0;
+    var3 = var2[var0];
+    var2 = require;
+    var0 = undefined;
+    var2 = var2.bind(var0)(var3);
+    var1 = function(arg0) { // Environment: var1
+        _fun31683: for (var _fun31683_ip = 0;;) switch (_fun31683_ip) {
             case 0:
-                var2 = arg0;
-                var0 = this;
-                var1 = var0.__data__;
-                var5 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var0 = 0;
-                var4 = var4[var0];
-                var0 = undefined;
-                var4 = var5.bind(var0)(var4);
-                if (var4) {
-                    _fun31616_ip = 64;
-                    continue _fun31616
+                var4 = arg0;
+                var0 = new Array(0);
+                var _closure2_slot0 = var0;
+                var3 = var4.charCodeAt;
+                var2 = 0;
+                var3 = var3.bind(var4)(var2);
+                var2 = 46;
+                if (!(var2 === var3)) {
+                    _fun31683_ip = 47;
+                    continue _fun31683
                 }
-            case 38:
-                var4 = _closure1_slot2;
-                var3 = var4.call;
-                var4 = var3.bind(var4)(var1, var2);
-                var3 = undefined;
-                if (!var4) {
-                    _fun31616_ip = 62;
-                    continue _fun31616
-                }
-            case 58:
-                var3 = var1[var2];
-            case 62:
-                return var3;
-            case 64:
-                var1 = var1[var2];
-                var2 = '__lodash_hash_undefined__';
-                var0 = undefined;
-                if (!(var2 !== var1)) {
-                    _fun31616_ip = 83;
-                    continue _fun31616
-                }
-            case 80:
-                var0 = var1;
-            case 83:
+            case 33:
+                var3 = var0.push;
+                var2 = '';
+                var2 = var3.bind(var0)(var2);
+            case 47:
+                var3 = var4.replace;
+                var2 = _closure1_slot0;
+                var1 = function(arg0, arg1, arg2, arg3) { // Environment: var1
+                    _fun31684: for (var _fun31684_ip = 0;;) switch (_fun31684_ip) {
+                        case 0:
+                            var3 = arg0;
+                            var2 = arg1;
+                            var6 = arg3;
+                            var1 = _closure2_slot0;
+                            var0 = var1.push;
+                            var4 = arg2;
+                            if (var4) {
+                                _fun31684_ip = 35;
+                                continue _fun31684
+                            }
+                        case 27:
+                            if (var2) {
+                                _fun31684_ip = 33;
+                                continue _fun31684
+                            }
+                        case 30:
+                            var2 = var3;
+                        case 33:
+                            _fun31684_ip = 59;
+                            continue _fun31684;
+                        case 35:
+                            var5 = var6.replace;
+                            var4 = _closure1_slot1;
+                            var3 = '$1';
+                            var2 = var5.bind(var6)(var4, var3);
+                        case 59:
+                            var0 = var0.bind(var1)(var2);
+                            var0 = undefined;
+                            return var0;
+                    }
+                };
+                var1 = var3.bind(var4)(var2, var1);
                 return var0;
         }
     };
-    var0 = arg4;
-    var0.exports = var1;
-    var0 = undefined;
+    var2 = var2.bind(var0)(var1);
+    var1 = arg4;
+    var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3540]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3543]);

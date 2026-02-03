@@ -5,7 +5,7 @@ import ui.c;
 final class p9 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final p9 f45721a = new p9();
+    static final p9 f45679a = new p9();
 
     static {
         c.b a10 = ui.c.a("isFaceMeshEnabled");

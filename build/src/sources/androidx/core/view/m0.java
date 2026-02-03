@@ -7,10 +7,10 @@ import android.view.WindowInsets;
 public abstract class m0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final WindowInsets f3422a = WindowInsetsCompat.f3295b.B();
+    private static final WindowInsets f3391a = WindowInsetsCompat.f3264b.B();
 
     /* renamed from: b  reason: collision with root package name */
-    static boolean f3423b = false;
+    static boolean f3392b = false;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static class a {
@@ -27,7 +27,7 @@ public abstract class m0 {
             onApplyWindowInsets = view.onApplyWindowInsets(windowInsets);
         }
         windowInsetsArr[0] = onApplyWindowInsets;
-        return f3422a;
+        return f3391a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -42,7 +42,7 @@ public abstract class m0 {
         } else {
             onApplyWindowInsetsListener = null;
         }
-        final WindowInsets[] windowInsetsArr = {f3422a};
+        final WindowInsets[] windowInsetsArr = {f3391a};
         view.setOnApplyWindowInsetsListener(new View.OnApplyWindowInsetsListener() { // from class: androidx.core.view.l0
             @Override // android.view.View.OnApplyWindowInsetsListener
             public final WindowInsets onApplyWindowInsets(View view2, WindowInsets windowInsets2) {
@@ -67,7 +67,7 @@ public abstract class m0 {
         if (windowInsets3 != null) {
             return windowInsets3;
         }
-        return f3422a;
+        return f3391a;
     }
 
     public static boolean c(ViewGroup viewGroup) {

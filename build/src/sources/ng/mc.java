@@ -9,7 +9,7 @@ import java.util.RandomAccess;
 public abstract class mc extends la implements List, RandomAccess {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final d f41338e = new kc(rc.f41474p, 0);
+    private static final d f41377e = new kc(rc.f41513p, 0);
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static mc g(Object[] objArr) {
@@ -19,7 +19,7 @@ public abstract class mc extends la implements List, RandomAccess {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static mc h(Object[] objArr, int i10) {
         if (i10 == 0) {
-            return rc.f41474p;
+            return rc.f41513p;
         }
         return new rc(objArr, i10);
     }
@@ -131,7 +131,7 @@ public abstract class mc extends la implements List, RandomAccess {
             return this;
         }
         if (i12 == 0) {
-            return rc.f41474p;
+            return rc.f41513p;
         }
         return new lc(this, i10, i12);
     }
@@ -170,7 +170,7 @@ public abstract class mc extends la implements List, RandomAccess {
     public final d listIterator(int i10) {
         f4.b(i10, size(), "index");
         if (isEmpty()) {
-            return f41338e;
+            return f41377e;
         }
         return new kc(this, i10);
     }

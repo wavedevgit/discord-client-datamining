@@ -3,20 +3,20 @@ package wg;
 final class s extends a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m0 f52209a = new m0();
+    private final m0 f52431a = new m0();
 
     @Override // wg.a
     public final boolean a() {
-        return this.f52209a.o();
+        return this.f52431a.o();
     }
 
     @Override // wg.a
     public final a b(h hVar) {
-        this.f52209a.f(l.f52188a, new n(this, hVar));
+        this.f52431a.f(l.f52410a, new n(this, hVar));
         return this;
     }
 
     public final void c() {
-        this.f52209a.w(null);
+        this.f52431a.w(null);
     }
 }

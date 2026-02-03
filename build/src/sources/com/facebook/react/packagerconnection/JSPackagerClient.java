@@ -44,13 +44,13 @@ public final class JSPackagerClient implements ReconnectingWebSocket.MessageCall
         @NotNull
 
         /* renamed from: id  reason: collision with root package name */
-        private final Object f11840id;
+        private final Object f10808id;
         final /* synthetic */ JSPackagerClient this$0;
 
         public ResponderImpl(@NotNull JSPackagerClient jSPackagerClient, Object id2) {
             Intrinsics.checkNotNullParameter(id2, "id");
             this.this$0 = jSPackagerClient;
-            this.f11840id = id2;
+            this.f10808id = id2;
         }
 
         @Override // com.facebook.react.packagerconnection.Responder
@@ -59,7 +59,7 @@ public final class JSPackagerClient implements ReconnectingWebSocket.MessageCall
             try {
                 JSONObject jSONObject = new JSONObject();
                 jSONObject.put("version", 2);
-                jSONObject.put(StackTraceHelper.ID_KEY, this.f11840id);
+                jSONObject.put(StackTraceHelper.ID_KEY, this.f10808id);
                 jSONObject.put("error", error);
                 ReconnectingWebSocket reconnectingWebSocket = this.this$0.webSocket;
                 String jSONObject2 = jSONObject.toString();
@@ -76,7 +76,7 @@ public final class JSPackagerClient implements ReconnectingWebSocket.MessageCall
             try {
                 JSONObject jSONObject = new JSONObject();
                 jSONObject.put("version", 2);
-                jSONObject.put(StackTraceHelper.ID_KEY, this.f11840id);
+                jSONObject.put(StackTraceHelper.ID_KEY, this.f10808id);
                 jSONObject.put("result", result);
                 ReconnectingWebSocket reconnectingWebSocket = this.this$0.webSocket;
                 String jSONObject2 = jSONObject.toString();

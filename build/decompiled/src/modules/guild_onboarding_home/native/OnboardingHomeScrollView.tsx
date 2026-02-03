@@ -53,15 +53,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_onboarding_home/native/OnboardingHomeScrollView.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun104715: for (var _fun104715_ip = 0;;) switch (_fun104715_ip) {
+        _fun104775: for (var _fun104775_ip = 0;;) switch (_fun104775_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.guildId;
                 var1 = var0.headerOffset;
                 var3 = undefined;
                 if (!(var1 === var3)) {
-                    _fun104715_ip = 26;
-                    continue _fun104715
+                    _fun104775_ip = 26;
+                    continue _fun104775
                 }
             case 24:
                 var1 = 0;
@@ -112,23 +112,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = new Array(1);
                 var5[0] = var2;
                 var2 = function() { // Environment: var7
-                    _fun104717: for (var _fun104717_ip = 0;;) switch (_fun104717_ip) {
+                    _fun104777: for (var _fun104777_ip = 0;;) switch (_fun104777_ip) {
                         case 0:
                             var1 = _closure2_slot3;
                             var2 = var1.current;
                             var1 = null;
                             var1 = var1 == var2;
                             if (var1) {
-                                _fun104717_ip = 30;
-                                continue _fun104717
+                                _fun104777_ip = 30;
+                                continue _fun104777
                             }
                         case 21:
                             var2 = _closure2_slot5;
                             var1 = var2.current;
                         case 30:
                             if (var1) {
-                                _fun104717_ip = 63;
-                                continue _fun104717
+                                _fun104777_ip = 63;
+                                continue _fun104777
                             }
                         case 33:
                             var1 = _closure2_slot3;

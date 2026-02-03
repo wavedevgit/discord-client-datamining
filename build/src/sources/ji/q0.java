@@ -16,28 +16,28 @@ public abstract class q0 {
     class a extends e {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Set f31910d;
+        final /* synthetic */ Set f31706d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Set f31911e;
+        final /* synthetic */ Set f31707e;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: ji.q0$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public class C0432a extends ji.b {
+        public class C0422a extends ji.b {
 
             /* renamed from: i  reason: collision with root package name */
-            final Iterator f31912i;
+            final Iterator f31708i;
 
-            C0432a() {
-                this.f31912i = a.this.f31910d.iterator();
+            C0422a() {
+                this.f31708i = a.this.f31706d.iterator();
             }
 
             @Override // ji.b
             protected Object a() {
-                while (this.f31912i.hasNext()) {
-                    Object next = this.f31912i.next();
-                    if (a.this.f31911e.contains(next)) {
+                while (this.f31708i.hasNext()) {
+                    Object next = this.f31708i.next();
+                    if (a.this.f31707e.contains(next)) {
                         return next;
                     }
                 }
@@ -48,19 +48,19 @@ public abstract class q0 {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(Set set, Set set2) {
             super(null);
-            this.f31910d = set;
-            this.f31911e = set2;
+            this.f31706d = set;
+            this.f31707e = set2;
         }
 
         @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
         /* renamed from: b */
         public t0 iterator() {
-            return new C0432a();
+            return new C0422a();
         }
 
         @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
         public boolean contains(Object obj) {
-            if (this.f31910d.contains(obj) && this.f31911e.contains(obj)) {
+            if (this.f31706d.contains(obj) && this.f31707e.contains(obj)) {
                 return true;
             }
             return false;
@@ -68,7 +68,7 @@ public abstract class q0 {
 
         @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
         public boolean containsAll(Collection collection) {
-            if (this.f31910d.containsAll(collection) && this.f31911e.containsAll(collection)) {
+            if (this.f31706d.containsAll(collection) && this.f31707e.containsAll(collection)) {
                 return true;
             }
             return false;
@@ -76,14 +76,14 @@ public abstract class q0 {
 
         @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
         public boolean isEmpty() {
-            return Collections.disjoint(this.f31911e, this.f31910d);
+            return Collections.disjoint(this.f31707e, this.f31706d);
         }
 
         @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
         public int size() {
             int i10 = 0;
-            for (Object obj : this.f31910d) {
-                if (this.f31911e.contains(obj)) {
+            for (Object obj : this.f31706d) {
+                if (this.f31707e.contains(obj)) {
                     i10++;
                 }
             }
@@ -118,25 +118,25 @@ public abstract class q0 {
 
         @Override // java.util.SortedSet
         public Comparator comparator() {
-            return ((SortedSet) this.f31850d).comparator();
+            return ((SortedSet) this.f31646d).comparator();
         }
 
         @Override // java.util.SortedSet
         public Object first() {
-            return w.h(this.f31850d.iterator(), this.f31851e);
+            return w.h(this.f31646d.iterator(), this.f31647e);
         }
 
         @Override // java.util.SortedSet
         public SortedSet headSet(Object obj) {
-            return new c(((SortedSet) this.f31850d).headSet(obj), this.f31851e);
+            return new c(((SortedSet) this.f31646d).headSet(obj), this.f31647e);
         }
 
         @Override // java.util.SortedSet
         public Object last() {
-            SortedSet sortedSet = (SortedSet) this.f31850d;
+            SortedSet sortedSet = (SortedSet) this.f31646d;
             while (true) {
                 Object last = sortedSet.last();
-                if (this.f31851e.apply(last)) {
+                if (this.f31647e.apply(last)) {
                     return last;
                 }
                 sortedSet = sortedSet.headSet(last);
@@ -145,12 +145,12 @@ public abstract class q0 {
 
         @Override // java.util.SortedSet
         public SortedSet subSet(Object obj, Object obj2) {
-            return new c(((SortedSet) this.f31850d).subSet(obj, obj2), this.f31851e);
+            return new c(((SortedSet) this.f31646d).subSet(obj, obj2), this.f31647e);
         }
 
         @Override // java.util.SortedSet
         public SortedSet tailSet(Object obj) {
-            return new c(((SortedSet) this.f31850d).tailSet(obj), this.f31851e);
+            return new c(((SortedSet) this.f31646d).tailSet(obj), this.f31647e);
         }
     }
 
@@ -232,7 +232,7 @@ public abstract class q0 {
         }
         if (set instanceof b) {
             b bVar = (b) set;
-            return new b((Set) bVar.f31850d, ii.o.b(bVar.f31851e, nVar));
+            return new b((Set) bVar.f31646d, ii.o.b(bVar.f31647e, nVar));
         }
         return new b((Set) ii.m.j(set), (ii.n) ii.m.j(nVar));
     }
@@ -240,7 +240,7 @@ public abstract class q0 {
     public static SortedSet c(SortedSet sortedSet, ii.n nVar) {
         if (sortedSet instanceof b) {
             b bVar = (b) sortedSet;
-            return new c((SortedSet) bVar.f31850d, ii.o.b(bVar.f31851e, nVar));
+            return new c((SortedSet) bVar.f31646d, ii.o.b(bVar.f31647e, nVar));
         }
         return new c((SortedSet) ii.m.j(sortedSet), (ii.n) ii.m.j(nVar));
     }
@@ -281,7 +281,7 @@ public abstract class q0 {
     static boolean i(Set set, Collection collection) {
         ii.m.j(collection);
         if (collection instanceof e0) {
-            collection = ((e0) collection).G0();
+            collection = ((e0) collection).D0();
         }
         if ((collection instanceof Set) && collection.size() > set.size()) {
             return w.n(set.iterator(), collection);

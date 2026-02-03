@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_panel/native/controls/buttons/VoicePanelSoundboardButton.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun111566: for (var _fun111566_ip = 0;;) switch (_fun111566_ip) {
+        _fun111626: for (var _fun111626_ip = 0;;) switch (_fun111626_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.props;
@@ -99,14 +99,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var1.disabled;
                 var1 = var1.visible;
                 if (var8) {
-                    _fun111566_ip = 177;
-                    continue _fun111566
+                    _fun111626_ip = 177;
+                    continue _fun111626
                 }
             case 164:
                 var0 = var0.iconFill;
                 var11 = var0.color;
-                _fun111566_ip = 208;
-                continue _fun111566;
+                _fun111626_ip = 208;
+                continue _fun111626;
             case 177:
                 var2 = _closure1_slot1;
                 var3 = _closure1_slot2;
@@ -118,8 +118,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 208:
                 var0 = null;
                 if (!var1) {
-                    _fun111566_ip = 444;
-                    continue _fun111566
+                    _fun111626_ip = 444;
+                    continue _fun111626
                 }
             case 216:
                 var3 = _closure1_slot5;
@@ -182,4 +182,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 11802, 14333, 14233, 14334, 1234, 6452, 11922, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 11815, 14344, 14244, 14345, 1234, 6457, 11935, 2]);

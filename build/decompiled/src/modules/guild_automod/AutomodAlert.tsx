@@ -38,21 +38,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.AutomodAlertActionType = var1;
     var1 = function arg0() {
-        _fun40868: for (var _fun40868_ip = 0;;) switch (_fun40868_ip) {
+        _fun40920: for (var _fun40920_ip = 0;;) switch (_fun40920_ip) {
             case 0:
                 var2 = arg0;
                 var0 = null;
                 if (!(var0 != var2)) {
-                    _fun40868_ip = 123;
-                    continue _fun40868
+                    _fun40920_ip = 123;
+                    continue _fun40920
                 }
             case 11:
                 var1 = var2;
                 var4 = var0 == var2;
                 var2 = null;
                 if (var4) {
-                    _fun40868_ip = 51;
-                    continue _fun40868
+                    _fun40920_ip = 51;
+                    continue _fun40920
                 }
             case 23: // try_start_0
                 var4 = global;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4.bind(var5)(var1);
             case 42: // try_end0
                 var2 = var1;
-                _fun40868_ip = 51;
-                continue _fun40868;
+                _fun40920_ip = 51;
+                continue _fun40920;
             case 47: // catch_target0
                 CatchBlockStart(arg_register = 1);
                 var2 = null;
@@ -71,16 +71,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var0 == var2;
                 var1 = null;
                 if (var4) {
-                    _fun40868_ip = 121;
-                    continue _fun40868
+                    _fun40920_ip = 121;
+                    continue _fun40920
                 }
             case 64:
                 var4 = var2.actions;
                 var4 = var0 == var4;
                 var1 = null;
                 if (var4) {
-                    _fun40868_ip = 121;
-                    continue _fun40868
+                    _fun40920_ip = 121;
+                    continue _fun40920
                 }
             case 79:
                 var4 = global;

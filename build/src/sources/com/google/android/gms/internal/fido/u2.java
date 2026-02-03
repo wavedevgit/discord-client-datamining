@@ -5,18 +5,18 @@ import java.io.IOException;
 public abstract class u2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final u2 f14769a;
+    private static final u2 f13737a;
 
     static {
         new s2("base64()", "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/", '=');
         new s2("base64Url()", "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_", '=');
         new t2("base32()", "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567", '=');
         new t2("base32Hex()", "0123456789ABCDEFGHIJKLMNOPQRSTUV", '=');
-        f14769a = new r2("base16()", "0123456789ABCDEF");
+        f13737a = new r2("base16()", "0123456789ABCDEF");
     }
 
     public static u2 d() {
-        return f14769a;
+        return f13737a;
     }
 
     abstract void a(Appendable appendable, byte[] bArr, int i10, int i11);

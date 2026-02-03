@@ -1,16 +1,15 @@
 package com.discord.chat.bridge.polls;
 
 import androidx.recyclerview.widget.RecyclerView;
-import bt.f;
-import bt.n2;
-import bt.v1;
+import at.m;
 import com.discord.chat.bridge.polls.PollChatAnswerInteractionType;
 import com.discord.chat.bridge.polls.PollData;
 import com.discord.chat.bridge.polls.PollLayoutType;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
+import dt.f;
+import dt.n2;
+import dt.v1;
 import java.util.List;
-import jr.l;
-import jr.o;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
@@ -20,9 +19,10 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
+import lr.l;
+import lr.o;
 import org.jetbrains.annotations.NotNull;
 import org.webrtc.PeerConnection;
-import ys.m;
 @m
 @Metadata(d1 = {"\u0000f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b0\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 Z2\u00020\u0001:\u0002YZB±\u0001\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007\u0012\u0006\u0010\t\u001a\u00020\n\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\u0006\u0010\r\u001a\u00020\u000e\u0012\b\b\u0002\u0010\u000f\u001a\u00020\u0010\u0012\u0006\u0010\u0011\u001a\u00020\u0010\u0012\u0006\u0010\u0012\u001a\u00020\u0010\u0012\u0006\u0010\u0013\u001a\u00020\u0010\u0012\u0006\u0010\u0014\u001a\u00020\u0010\u0012\b\b\u0002\u0010\u0015\u001a\u00020\f\u0012\n\b\u0002\u0010\u0016\u001a\u0004\u0018\u00010\f\u0012\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u0018\u0012\n\b\u0002\u0010\u0019\u001a\u0004\u0018\u00010\u0018\u0012\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u0018\u0012\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\f¢\u0006\u0004\b\u001c\u0010\u001dBÁ\u0001\b\u0010\u0012\u0006\u0010\u001e\u001a\u00020\u001f\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u000e\u0010\u0006\u001a\n\u0012\u0004\u0012\u00020\b\u0018\u00010\u0007\u0012\b\u0010\t\u001a\u0004\u0018\u00010\n\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u000e\u0012\u0006\u0010\u000f\u001a\u00020\u0010\u0012\u0006\u0010\u0011\u001a\u00020\u0010\u0012\u0006\u0010\u0012\u001a\u00020\u0010\u0012\u0006\u0010\u0013\u001a\u00020\u0010\u0012\u0006\u0010\u0014\u001a\u00020\u0010\u0012\b\u0010\u0015\u001a\u0004\u0018\u00010\f\u0012\b\u0010\u0016\u001a\u0004\u0018\u00010\f\u0012\b\u0010\u0017\u001a\u0004\u0018\u00010\u0018\u0012\b\u0010\u0019\u001a\u0004\u0018\u00010\u0018\u0012\b\u0010\u001a\u001a\u0004\u0018\u00010\u0018\u0012\b\u0010\u001b\u001a\u0004\u0018\u00010\f\u0012\b\u0010 \u001a\u0004\u0018\u00010!¢\u0006\u0004\b\u001c\u0010\"J\t\u0010;\u001a\u00020\u0003HÆ\u0003J\t\u0010<\u001a\u00020\u0005HÆ\u0003J\u000f\u0010=\u001a\b\u0012\u0004\u0012\u00020\b0\u0007HÆ\u0003J\t\u0010>\u001a\u00020\nHÆ\u0003J\u000b\u0010?\u001a\u0004\u0018\u00010\fHÆ\u0003J\t\u0010@\u001a\u00020\u000eHÆ\u0003J\t\u0010A\u001a\u00020\u0010HÆ\u0003J\t\u0010B\u001a\u00020\u0010HÆ\u0003J\t\u0010C\u001a\u00020\u0010HÆ\u0003J\t\u0010D\u001a\u00020\u0010HÆ\u0003J\t\u0010E\u001a\u00020\u0010HÆ\u0003J\t\u0010F\u001a\u00020\fHÆ\u0003J\u000b\u0010G\u001a\u0004\u0018\u00010\fHÆ\u0003J\u000b\u0010H\u001a\u0004\u0018\u00010\u0018HÆ\u0003J\u000b\u0010I\u001a\u0004\u0018\u00010\u0018HÆ\u0003J\u000b\u0010J\u001a\u0004\u0018\u00010\u0018HÆ\u0003J\u000b\u0010K\u001a\u0004\u0018\u00010\fHÆ\u0003JÅ\u0001\u0010L\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\u000e\b\u0002\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u00072\b\b\u0002\u0010\t\u001a\u00020\n2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f2\b\b\u0002\u0010\r\u001a\u00020\u000e2\b\b\u0002\u0010\u000f\u001a\u00020\u00102\b\b\u0002\u0010\u0011\u001a\u00020\u00102\b\b\u0002\u0010\u0012\u001a\u00020\u00102\b\b\u0002\u0010\u0013\u001a\u00020\u00102\b\b\u0002\u0010\u0014\u001a\u00020\u00102\b\b\u0002\u0010\u0015\u001a\u00020\f2\n\b\u0002\u0010\u0016\u001a\u0004\u0018\u00010\f2\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u00182\n\b\u0002\u0010\u0019\u001a\u0004\u0018\u00010\u00182\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u00182\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\fHÆ\u0001J\u0013\u0010M\u001a\u00020\u00102\b\u0010N\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010O\u001a\u00020\u001fHÖ\u0001J\t\u0010P\u001a\u00020\fHÖ\u0001J%\u0010Q\u001a\u00020R2\u0006\u0010S\u001a\u00020\u00002\u0006\u0010T\u001a\u00020U2\u0006\u0010V\u001a\u00020WH\u0001¢\u0006\u0002\bXR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b#\u0010$R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b%\u0010&R\u0017\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007¢\u0006\b\n\u0000\u001a\u0004\b'\u0010(R\u0011\u0010\t\u001a\u00020\n¢\u0006\b\n\u0000\u001a\u0004\b)\u0010*R\u0013\u0010\u000b\u001a\u0004\u0018\u00010\f¢\u0006\b\n\u0000\u001a\u0004\b+\u0010,R\u0011\u0010\r\u001a\u00020\u000e¢\u0006\b\n\u0000\u001a\u0004\b-\u0010.R\u0011\u0010\u000f\u001a\u00020\u0010¢\u0006\b\n\u0000\u001a\u0004\b/\u00100R\u0011\u0010\u0011\u001a\u00020\u0010¢\u0006\b\n\u0000\u001a\u0004\b1\u00100R\u0011\u0010\u0012\u001a\u00020\u0010¢\u0006\b\n\u0000\u001a\u0004\b2\u00100R\u0011\u0010\u0013\u001a\u00020\u0010¢\u0006\b\n\u0000\u001a\u0004\b3\u00100R\u0011\u0010\u0014\u001a\u00020\u0010¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u00100R\u0011\u0010\u0015\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b4\u0010,R\u0013\u0010\u0016\u001a\u0004\u0018\u00010\f¢\u0006\b\n\u0000\u001a\u0004\b5\u0010,R\u0013\u0010\u0017\u001a\u0004\u0018\u00010\u0018¢\u0006\b\n\u0000\u001a\u0004\b6\u00107R\u0013\u0010\u0019\u001a\u0004\u0018\u00010\u0018¢\u0006\b\n\u0000\u001a\u0004\b8\u00107R\u0013\u0010\u001a\u001a\u0004\u0018\u00010\u0018¢\u0006\b\n\u0000\u001a\u0004\b9\u00107R\u0013\u0010\u001b\u001a\u0004\u0018\u00010\f¢\u0006\b\n\u0000\u001a\u0004\b:\u0010,¨\u0006["}, d2 = {"Lcom/discord/chat/bridge/polls/PollData;", "", "resources", "Lcom/discord/chat/bridge/polls/PollResources;", "question", "Lcom/discord/chat/bridge/polls/PollMedia;", "answers", "", "Lcom/discord/chat/bridge/polls/PollAnswer;", "answersInteraction", "Lcom/discord/chat/bridge/polls/PollChatAnswerInteractionType;", "answerTapAccessibilityLabel", "", "layoutType", "Lcom/discord/chat/bridge/polls/PollLayoutType;", "canSelectMultipleAnswers", "", "canTapAnswers", "canShowVoteCounts", "hasVoted", "isExpired", "containerStyle", "myAvatarUrl", "secondaryAction", "Lcom/discord/chat/bridge/polls/PollAction;", "primaryAction", "tertiaryAction", "promptLabel", "<init>", "(Lcom/discord/chat/bridge/polls/PollResources;Lcom/discord/chat/bridge/polls/PollMedia;Ljava/util/List;Lcom/discord/chat/bridge/polls/PollChatAnswerInteractionType;Ljava/lang/String;Lcom/discord/chat/bridge/polls/PollLayoutType;ZZZZZLjava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/polls/PollAction;Lcom/discord/chat/bridge/polls/PollAction;Lcom/discord/chat/bridge/polls/PollAction;Ljava/lang/String;)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILcom/discord/chat/bridge/polls/PollResources;Lcom/discord/chat/bridge/polls/PollMedia;Ljava/util/List;Lcom/discord/chat/bridge/polls/PollChatAnswerInteractionType;Ljava/lang/String;Lcom/discord/chat/bridge/polls/PollLayoutType;ZZZZZLjava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/polls/PollAction;Lcom/discord/chat/bridge/polls/PollAction;Lcom/discord/chat/bridge/polls/PollAction;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getResources", "()Lcom/discord/chat/bridge/polls/PollResources;", "getQuestion", "()Lcom/discord/chat/bridge/polls/PollMedia;", "getAnswers", "()Ljava/util/List;", "getAnswersInteraction", "()Lcom/discord/chat/bridge/polls/PollChatAnswerInteractionType;", "getAnswerTapAccessibilityLabel", "()Ljava/lang/String;", "getLayoutType", "()Lcom/discord/chat/bridge/polls/PollLayoutType;", "getCanSelectMultipleAnswers", "()Z", "getCanTapAnswers", "getCanShowVoteCounts", "getHasVoted", "getContainerStyle", "getMyAvatarUrl", "getSecondaryAction", "()Lcom/discord/chat/bridge/polls/PollAction;", "getPrimaryAction", "getTertiaryAction", "getPromptLabel", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "component10", "component11", "component12", "component13", "component14", "component15", "component16", "component17", "copy", "equals", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -53,7 +53,7 @@ public final class PollData {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, l.a(o.f32182e, new Function0() { // from class: n6.c
+    private static final Lazy[] $childSerializers = {null, null, l.b(o.f37120e, new Function0() { // from class: n6.c
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -218,38 +218,38 @@ public final class PollData {
 
     public static final /* synthetic */ void write$Self$chat_release(PollData pollData, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         Lazy[] lazyArr = $childSerializers;
-        compositeEncoder.m(serialDescriptor, 0, PollResources$$serializer.INSTANCE, pollData.resources);
-        compositeEncoder.m(serialDescriptor, 1, PollMedia$$serializer.INSTANCE, pollData.question);
-        compositeEncoder.m(serialDescriptor, 2, (ys.o) lazyArr[2].getValue(), pollData.answers);
-        compositeEncoder.m(serialDescriptor, 3, PollChatAnswerInteractionType.Serializer.INSTANCE, pollData.answersInteraction);
-        if (compositeEncoder.y(serialDescriptor, 4) || pollData.answerTapAccessibilityLabel != null) {
-            compositeEncoder.B(serialDescriptor, 4, n2.f7662a, pollData.answerTapAccessibilityLabel);
+        compositeEncoder.D(serialDescriptor, 0, PollResources$$serializer.INSTANCE, pollData.resources);
+        compositeEncoder.D(serialDescriptor, 1, PollMedia$$serializer.INSTANCE, pollData.question);
+        compositeEncoder.D(serialDescriptor, 2, (at.o) lazyArr[2].getValue(), pollData.answers);
+        compositeEncoder.D(serialDescriptor, 3, PollChatAnswerInteractionType.Serializer.INSTANCE, pollData.answersInteraction);
+        if (compositeEncoder.z(serialDescriptor, 4) || pollData.answerTapAccessibilityLabel != null) {
+            compositeEncoder.s(serialDescriptor, 4, n2.f20978a, pollData.answerTapAccessibilityLabel);
         }
-        compositeEncoder.m(serialDescriptor, 5, PollLayoutType.Serializer.INSTANCE, pollData.layoutType);
-        if (compositeEncoder.y(serialDescriptor, 6) || pollData.canSelectMultipleAnswers) {
-            compositeEncoder.w(serialDescriptor, 6, pollData.canSelectMultipleAnswers);
+        compositeEncoder.D(serialDescriptor, 5, PollLayoutType.Serializer.INSTANCE, pollData.layoutType);
+        if (compositeEncoder.z(serialDescriptor, 6) || pollData.canSelectMultipleAnswers) {
+            compositeEncoder.x(serialDescriptor, 6, pollData.canSelectMultipleAnswers);
         }
-        compositeEncoder.w(serialDescriptor, 7, pollData.canTapAnswers);
-        compositeEncoder.w(serialDescriptor, 8, pollData.canShowVoteCounts);
-        compositeEncoder.w(serialDescriptor, 9, pollData.hasVoted);
-        compositeEncoder.w(serialDescriptor, 10, pollData.isExpired);
-        if (compositeEncoder.y(serialDescriptor, 11) || !Intrinsics.areEqual(pollData.containerStyle, "normal")) {
-            compositeEncoder.x(serialDescriptor, 11, pollData.containerStyle);
+        compositeEncoder.x(serialDescriptor, 7, pollData.canTapAnswers);
+        compositeEncoder.x(serialDescriptor, 8, pollData.canShowVoteCounts);
+        compositeEncoder.x(serialDescriptor, 9, pollData.hasVoted);
+        compositeEncoder.x(serialDescriptor, 10, pollData.isExpired);
+        if (compositeEncoder.z(serialDescriptor, 11) || !Intrinsics.areEqual(pollData.containerStyle, "normal")) {
+            compositeEncoder.y(serialDescriptor, 11, pollData.containerStyle);
         }
-        if (compositeEncoder.y(serialDescriptor, 12) || pollData.myAvatarUrl != null) {
-            compositeEncoder.B(serialDescriptor, 12, n2.f7662a, pollData.myAvatarUrl);
+        if (compositeEncoder.z(serialDescriptor, 12) || pollData.myAvatarUrl != null) {
+            compositeEncoder.s(serialDescriptor, 12, n2.f20978a, pollData.myAvatarUrl);
         }
-        if (compositeEncoder.y(serialDescriptor, 13) || pollData.secondaryAction != null) {
-            compositeEncoder.B(serialDescriptor, 13, PollAction$$serializer.INSTANCE, pollData.secondaryAction);
+        if (compositeEncoder.z(serialDescriptor, 13) || pollData.secondaryAction != null) {
+            compositeEncoder.s(serialDescriptor, 13, PollAction$$serializer.INSTANCE, pollData.secondaryAction);
         }
-        if (compositeEncoder.y(serialDescriptor, 14) || pollData.primaryAction != null) {
-            compositeEncoder.B(serialDescriptor, 14, PollAction$$serializer.INSTANCE, pollData.primaryAction);
+        if (compositeEncoder.z(serialDescriptor, 14) || pollData.primaryAction != null) {
+            compositeEncoder.s(serialDescriptor, 14, PollAction$$serializer.INSTANCE, pollData.primaryAction);
         }
-        if (compositeEncoder.y(serialDescriptor, 15) || pollData.tertiaryAction != null) {
-            compositeEncoder.B(serialDescriptor, 15, PollAction$$serializer.INSTANCE, pollData.tertiaryAction);
+        if (compositeEncoder.z(serialDescriptor, 15) || pollData.tertiaryAction != null) {
+            compositeEncoder.s(serialDescriptor, 15, PollAction$$serializer.INSTANCE, pollData.tertiaryAction);
         }
-        if (compositeEncoder.y(serialDescriptor, 16) || pollData.promptLabel != null) {
-            compositeEncoder.B(serialDescriptor, 16, n2.f7662a, pollData.promptLabel);
+        if (compositeEncoder.z(serialDescriptor, 16) || pollData.promptLabel != null) {
+            compositeEncoder.s(serialDescriptor, 16, n2.f20978a, pollData.promptLabel);
         }
     }
 

@@ -19,11 +19,11 @@ import java.util.TimeZone;
 public final class w implements e3 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Deque f30409d;
+    private final Deque f30770d;
 
     public w(Map map) {
         ArrayDeque arrayDeque = new ArrayDeque();
-        this.f30409d = arrayDeque;
+        this.f30770d = arrayDeque;
         arrayDeque.addLast(new AbstractMap.SimpleEntry(null, map));
     }
 
@@ -36,7 +36,7 @@ public final class w implements e3 {
     }
 
     private Object l(ILogger iLogger, m1 m1Var) {
-        Map.Entry entry = (Map.Entry) this.f30409d.peekLast();
+        Map.Entry entry = (Map.Entry) this.f30770d.peekLast();
         if (entry == null) {
             return null;
         }
@@ -44,12 +44,12 @@ public final class w implements e3 {
         if (m1Var != null && iLogger != null) {
             return m1Var.a(this, iLogger);
         }
-        this.f30409d.removeLast();
+        this.f30770d.removeLast();
         return value;
     }
 
     @Override // io.sentry.e3
-    public Object H0(ILogger iLogger, m1 m1Var) {
+    public Object G0(ILogger iLogger, m1 m1Var) {
         return l(iLogger, m1Var);
     }
 
@@ -89,7 +89,7 @@ public final class w implements e3 {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f30409d.clear();
+        this.f30770d.clear();
     }
 
     @Override // io.sentry.e3
@@ -128,7 +128,16 @@ public final class w implements e3 {
 
     @Override // io.sentry.e3
     public boolean hasNext() {
-        return !this.f30409d.isEmpty();
+        return !this.f30770d.isEmpty();
+    }
+
+    @Override // io.sentry.e3
+    public Double k0() {
+        Object h10 = h();
+        if (h10 instanceof Number) {
+            return Double.valueOf(((Number) h10).doubleValue());
+        }
+        return null;
     }
 
     @Override // io.sentry.e3
@@ -141,17 +150,8 @@ public final class w implements e3 {
     }
 
     @Override // io.sentry.e3
-    public Double l0() {
-        Object h10 = h();
-        if (h10 instanceof Number) {
-            return Double.valueOf(((Number) h10).doubleValue());
-        }
-        return null;
-    }
-
-    @Override // io.sentry.e3
-    public String m0() {
-        Map.Entry entry = (Map.Entry) this.f30409d.peekLast();
+    public String l0() {
+        Map.Entry entry = (Map.Entry) this.f30770d.peekLast();
         if (entry != null && entry.getKey() != null) {
             return (String) entry.getKey();
         }
@@ -205,10 +205,10 @@ public final class w implements e3 {
 
     @Override // io.sentry.e3
     public io.sentry.vendor.gson.stream.b peek() {
-        if (this.f30409d.isEmpty()) {
+        if (this.f30770d.isEmpty()) {
             return io.sentry.vendor.gson.stream.b.END_DOCUMENT;
         }
-        Map.Entry entry = (Map.Entry) this.f30409d.peekLast();
+        Map.Entry entry = (Map.Entry) this.f30770d.peekLast();
         if (entry == null) {
             return io.sentry.vendor.gson.stream.b.END_DOCUMENT;
         }
@@ -239,13 +239,13 @@ public final class w implements e3 {
 
     @Override // io.sentry.e3
     public void r() {
-        Map.Entry entry = (Map.Entry) this.f30409d.removeLast();
+        Map.Entry entry = (Map.Entry) this.f30770d.removeLast();
         if (entry != null) {
             Object value = entry.getValue();
             if (value instanceof Map) {
-                this.f30409d.addLast(new AbstractMap.SimpleEntry(null, io.sentry.vendor.gson.stream.b.END_OBJECT));
+                this.f30770d.addLast(new AbstractMap.SimpleEntry(null, io.sentry.vendor.gson.stream.b.END_OBJECT));
                 for (Map.Entry entry2 : ((Map) value).entrySet()) {
-                    this.f30409d.addLast(entry2);
+                    this.f30770d.addLast(entry2);
                 }
                 return;
             }
@@ -255,32 +255,32 @@ public final class w implements e3 {
     }
 
     @Override // io.sentry.e3
+    public Date r0(ILogger iLogger) {
+        return e3.P0(r1(), iLogger);
+    }
+
+    @Override // io.sentry.e3
     public String r1() {
         return (String) h();
     }
 
     @Override // io.sentry.e3
     public void s() {
-        if (this.f30409d.size() > 1) {
-            this.f30409d.removeLast();
+        if (this.f30770d.size() > 1) {
+            this.f30770d.removeLast();
         }
     }
 
     @Override // io.sentry.e3
-    public Date s0(ILogger iLogger) {
-        return e3.R0(r1(), iLogger);
-    }
-
-    @Override // io.sentry.e3
     public void u() {
-        Map.Entry entry = (Map.Entry) this.f30409d.removeLast();
+        Map.Entry entry = (Map.Entry) this.f30770d.removeLast();
         if (entry != null) {
             Object value = entry.getValue();
             if (value instanceof List) {
-                this.f30409d.addLast(new AbstractMap.SimpleEntry(null, io.sentry.vendor.gson.stream.b.END_ARRAY));
+                this.f30770d.addLast(new AbstractMap.SimpleEntry(null, io.sentry.vendor.gson.stream.b.END_ARRAY));
                 List list = (List) value;
                 for (int size = list.size() - 1; size >= 0; size--) {
-                    this.f30409d.addLast(new AbstractMap.SimpleEntry(null, list.get(size)));
+                    this.f30770d.addLast(new AbstractMap.SimpleEntry(null, list.get(size)));
                 }
                 return;
             }
@@ -301,7 +301,7 @@ public final class w implements e3 {
             if (hasNext()) {
                 while (true) {
                     try {
-                        hashMap.put(m0(), m1Var.a(this, iLogger));
+                        hashMap.put(l0(), m1Var.a(this, iLogger));
                     } catch (Exception e10) {
                         iLogger.b(SentryLevel.WARNING, "Failed to deserialize object in map.", e10);
                     }
@@ -322,6 +322,11 @@ public final class w implements e3 {
     }
 
     @Override // io.sentry.e3
+    public Boolean v0() {
+        return (Boolean) h();
+    }
+
+    @Override // io.sentry.e3
     public void v1(ILogger iLogger, Map map, String str) {
         try {
             map.put(str, V1());
@@ -331,14 +336,9 @@ public final class w implements e3 {
     }
 
     @Override // io.sentry.e3
-    public Boolean x0() {
-        return (Boolean) h();
-    }
-
-    @Override // io.sentry.e3
     public void y() {
-        if (this.f30409d.size() > 1) {
-            this.f30409d.removeLast();
+        if (this.f30770d.size() > 1) {
+            this.f30770d.removeLast();
         }
     }
 }

@@ -3,37 +3,37 @@ package f6;
 public class e {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final e f23678c = new e(null, null);
+    public static final e f23270c = new e(null, null);
 
     /* renamed from: d  reason: collision with root package name */
-    public static final e f23679d = new e(a.none, null);
+    public static final e f23271d = new e(a.none, null);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final e f23680e;
+    public static final e f23272e;
 
     /* renamed from: f  reason: collision with root package name */
-    public static final e f23681f;
+    public static final e f23273f;
 
     /* renamed from: g  reason: collision with root package name */
-    public static final e f23682g;
+    public static final e f23274g;
 
     /* renamed from: h  reason: collision with root package name */
-    public static final e f23683h;
+    public static final e f23275h;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final e f23684i;
+    public static final e f23276i;
 
     /* renamed from: j  reason: collision with root package name */
-    public static final e f23685j;
+    public static final e f23277j;
 
     /* renamed from: k  reason: collision with root package name */
-    public static final e f23686k;
+    public static final e f23278k;
 
     /* renamed from: a  reason: collision with root package name */
-    private a f23687a;
+    private a f23279a;
 
     /* renamed from: b  reason: collision with root package name */
-    private b f23688b;
+    private b f23280b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public enum a {
@@ -58,29 +58,29 @@ public class e {
     static {
         a aVar = a.xMidYMid;
         b bVar = b.meet;
-        f23680e = new e(aVar, bVar);
+        f23272e = new e(aVar, bVar);
         a aVar2 = a.xMinYMin;
-        f23681f = new e(aVar2, bVar);
-        f23682g = new e(a.xMaxYMax, bVar);
-        f23683h = new e(a.xMidYMin, bVar);
-        f23684i = new e(a.xMidYMax, bVar);
+        f23273f = new e(aVar2, bVar);
+        f23274g = new e(a.xMaxYMax, bVar);
+        f23275h = new e(a.xMidYMin, bVar);
+        f23276i = new e(a.xMidYMax, bVar);
         b bVar2 = b.slice;
-        f23685j = new e(aVar, bVar2);
-        f23686k = new e(aVar2, bVar2);
+        f23277j = new e(aVar, bVar2);
+        f23278k = new e(aVar2, bVar2);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e(a aVar, b bVar) {
-        this.f23687a = aVar;
-        this.f23688b = bVar;
+        this.f23279a = aVar;
+        this.f23280b = bVar;
     }
 
     public a a() {
-        return this.f23687a;
+        return this.f23279a;
     }
 
     public b b() {
-        return this.f23688b;
+        return this.f23280b;
     }
 
     public boolean equals(Object obj) {
@@ -91,13 +91,13 @@ public class e {
             return false;
         }
         e eVar = (e) obj;
-        if (this.f23687a == eVar.f23687a && this.f23688b == eVar.f23688b) {
+        if (this.f23279a == eVar.f23279a && this.f23280b == eVar.f23280b) {
             return true;
         }
         return false;
     }
 
     public String toString() {
-        return this.f23687a + " " + this.f23688b;
+        return this.f23279a + " " + this.f23280b;
     }
 }

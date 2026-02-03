@@ -55,7 +55,7 @@ public abstract class b {
         int i12;
         if (i10 == 0) {
             i11 = constraintWidgetContainer.X0;
-            cVarArr = constraintWidgetContainer.f2343a1;
+            cVarArr = constraintWidgetContainer.f2312a1;
             i12 = 0;
         } else {
             i11 = constraintWidgetContainer.Y0;
@@ -65,7 +65,7 @@ public abstract class b {
         for (int i13 = 0; i13 < i11; i13++) {
             c cVar = cVarArr[i13];
             cVar.a();
-            if (arrayList == null || arrayList.contains(cVar.f2360a)) {
+            if (arrayList == null || arrayList.contains(cVar.f2329a)) {
                 a(constraintWidgetContainer, dVar, i10, i12, cVar);
             }
         }

@@ -7,17 +7,17 @@ import android.os.ResultReceiver;
 final class f extends ResultReceiver {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ wg.k f55829d;
+    final /* synthetic */ wg.k f55967d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public f(g gVar, Handler handler, wg.k kVar) {
         super(handler);
-        this.f55829d = kVar;
+        this.f55967d = kVar;
     }
 
     @Override // android.os.ResultReceiver
     public final void onReceiveResult(int i10, Bundle bundle) {
-        this.f55829d.e(null);
+        this.f55967d.e(null);
     }
 }

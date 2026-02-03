@@ -6,7 +6,7 @@ import wg.k;
 final class g implements m {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g f48499a = new g();
+    public static final g f48808a = new g();
 
     g() {
     }

@@ -15,10 +15,10 @@ import kotlin.jvm.internal.Intrinsics;
 public class d extends ActivityResultContract {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f926b = new a(null);
+    public static final a f895b = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f927a;
+    private final int f896a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -27,7 +27,7 @@ public class d extends ActivityResultContract {
         }
 
         public final int a() {
-            if (e.f928a.d()) {
+            if (e.f897a.d()) {
                 return MediaStore.getPickImagesMaxLimit();
             }
             return Integer.MAX_VALUE;
@@ -38,7 +38,7 @@ public class d extends ActivityResultContract {
     }
 
     public /* synthetic */ d(int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
-        this((i11 & 1) != 0 ? f926b.a() : i10);
+        this((i11 & 1) != 0 ? f895b.a() : i10);
     }
 
     @Override // androidx.activity.result.contract.ActivityResultContract
@@ -46,11 +46,11 @@ public class d extends ActivityResultContract {
     public Intent createIntent(Context context, d.f input) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(input, "input");
-        e.a aVar = e.f928a;
+        e.a aVar = e.f897a;
         if (aVar.d()) {
             Intent intent = new Intent("android.provider.action.PICK_IMAGES");
             intent.setType(aVar.b(input.d()));
-            int min = Math.min(this.f927a, input.c());
+            int min = Math.min(this.f896a, input.c());
             if (min > 1 && min <= MediaStore.getPickImagesMaxLimit()) {
                 intent.putExtra("android.provider.extra.PICK_IMAGES_MAX", min);
                 intent.putExtra("android.provider.extra.PICK_IMAGES_LAUNCH_TAB", input.b().a());
@@ -68,7 +68,7 @@ public class d extends ActivityResultContract {
                 Intent intent2 = new Intent("androidx.activity.result.contract.action.PICK_IMAGES");
                 intent2.setClassName(activityInfo.applicationInfo.packageName, activityInfo.name);
                 intent2.setType(aVar.b(input.d()));
-                int min2 = Math.min(this.f927a, input.c());
+                int min2 = Math.min(this.f896a, input.c());
                 if (min2 > 1) {
                     intent2.putExtra("androidx.activity.result.contract.extra.PICK_IMAGES_MAX", min2);
                     intent2.putExtra("androidx.activity.result.contract.extra.PICK_IMAGES_LAUNCH_TAB", input.b().a());
@@ -108,14 +108,14 @@ public class d extends ActivityResultContract {
         if (i10 != -1) {
             intent = null;
         }
-        if (intent != null && (a10 = androidx.activity.result.contract.a.f925a.a(intent)) != null) {
+        if (intent != null && (a10 = androidx.activity.result.contract.a.f894a.a(intent)) != null) {
             return a10;
         }
         return CollectionsKt.l();
     }
 
     public d(int i10) {
-        this.f927a = i10;
+        this.f896a = i10;
         if (i10 <= 1) {
             throw new IllegalArgumentException("Max items must be higher than 1");
         }

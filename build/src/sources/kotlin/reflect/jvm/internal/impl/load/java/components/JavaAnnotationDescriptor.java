@@ -26,22 +26,22 @@ import org.jetbrains.annotations.NotNull;
 public class JavaAnnotationDescriptor implements PossiblyExternalAnnotationDescriptor {
 
     /* renamed from: f  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f33863f = {Reflection.property1(new PropertyReference1Impl(JavaAnnotationDescriptor.class, "type", "getType()Lorg/jetbrains/kotlin/types/SimpleType;", 0))};
+    static final /* synthetic */ KProperty[] f33253f = {Reflection.property1(new PropertyReference1Impl(JavaAnnotationDescriptor.class, "type", "getType()Lorg/jetbrains/kotlin/types/SimpleType;", 0))};
 
     /* renamed from: a  reason: collision with root package name */
-    private final FqName f33864a;
+    private final FqName f33254a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final SourceElement f33865b;
+    private final SourceElement f33255b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final NotNullLazyValue f33866c;
+    private final NotNullLazyValue f33256c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final JavaAnnotationArgument f33867d;
+    private final JavaAnnotationArgument f33257d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f33868e;
+    private final boolean f33258e;
 
     public JavaAnnotationDescriptor(@NotNull LazyJavaResolverContext c10, JavaAnnotation javaAnnotation, @NotNull FqName fqName) {
         SourceElement NO_SOURCE;
@@ -49,24 +49,24 @@ public class JavaAnnotationDescriptor implements PossiblyExternalAnnotationDescr
         Collection<JavaAnnotationArgument> arguments;
         Intrinsics.checkNotNullParameter(c10, "c");
         Intrinsics.checkNotNullParameter(fqName, "fqName");
-        this.f33864a = fqName;
+        this.f33254a = fqName;
         if (javaAnnotation == null || (NO_SOURCE = c10.getComponents().getSourceElementFactory().source(javaAnnotation)) == null) {
             NO_SOURCE = SourceElement.NO_SOURCE;
             Intrinsics.checkNotNullExpressionValue(NO_SOURCE, "NO_SOURCE");
         }
-        this.f33865b = NO_SOURCE;
-        this.f33866c = c10.getStorageManager().createLazyValue(new a(c10, this));
+        this.f33255b = NO_SOURCE;
+        this.f33256c = c10.getStorageManager().createLazyValue(new a(c10, this));
         if (javaAnnotation != null && (arguments = javaAnnotation.getArguments()) != null) {
             javaAnnotationArgument = (JavaAnnotationArgument) CollectionsKt.p0(arguments);
         } else {
             javaAnnotationArgument = null;
         }
-        this.f33867d = javaAnnotationArgument;
+        this.f33257d = javaAnnotationArgument;
         boolean z10 = false;
         if (javaAnnotation != null && javaAnnotation.isIdeExternalAnnotation()) {
             z10 = true;
         }
-        this.f33868e = z10;
+        this.f33258e = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -78,7 +78,7 @@ public class JavaAnnotationDescriptor implements PossiblyExternalAnnotationDescr
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final JavaAnnotationArgument b() {
-        return this.f33867d;
+        return this.f33257d;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
@@ -90,23 +90,23 @@ public class JavaAnnotationDescriptor implements PossiblyExternalAnnotationDescr
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
     @NotNull
     public FqName getFqName() {
-        return this.f33864a;
+        return this.f33254a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
     @NotNull
     public SourceElement getSource() {
-        return this.f33865b;
+        return this.f33255b;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.descriptors.PossiblyExternalAnnotationDescriptor
     public boolean isIdeExternalAnnotation() {
-        return this.f33868e;
+        return this.f33258e;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
     @NotNull
     public SimpleType getType() {
-        return (SimpleType) StorageKt.getValue(this.f33866c, this, f33863f[0]);
+        return (SimpleType) StorageKt.getValue(this.f33256c, this, f33253f[0]);
     }
 }

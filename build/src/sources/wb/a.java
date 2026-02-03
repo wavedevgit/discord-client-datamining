@@ -7,25 +7,25 @@ import android.os.Parcel;
 public abstract class a implements IInterface {
 
     /* renamed from: c  reason: collision with root package name */
-    private final IBinder f51859c;
+    private final IBinder f52081c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f51860d = "com.google.android.finsky.externalreferrer.IGetInstallReferrerService";
+    private final String f52082d = "com.google.android.finsky.externalreferrer.IGetInstallReferrerService";
 
     /* JADX INFO: Access modifiers changed from: protected */
     public a(IBinder iBinder) {
-        this.f51859c = iBinder;
+        this.f52081c = iBinder;
     }
 
     @Override // android.os.IInterface
     public final IBinder asBinder() {
-        return this.f51859c;
+        return this.f52081c;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final Parcel e() {
         Parcel obtain = Parcel.obtain();
-        obtain.writeInterfaceToken(this.f51860d);
+        obtain.writeInterfaceToken(this.f52082d);
         return obtain;
     }
 
@@ -34,7 +34,7 @@ public abstract class a implements IInterface {
         Parcel obtain = Parcel.obtain();
         try {
             try {
-                this.f51859c.transact(1, parcel, obtain, 0);
+                this.f52081c.transact(1, parcel, obtain, 0);
                 obtain.readException();
                 return obtain;
             } catch (RuntimeException e10) {

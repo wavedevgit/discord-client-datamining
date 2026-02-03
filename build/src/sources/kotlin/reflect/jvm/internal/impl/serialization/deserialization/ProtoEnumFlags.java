@@ -252,7 +252,7 @@ public final class ProtoEnumFlags {
                 if (i10 == 3) {
                     return Variance.INVARIANT;
                 }
-                throw new jr.p();
+                throw new lr.p();
             }
             return Variance.OUT_VARIANCE;
         }
@@ -267,7 +267,7 @@ public final class ProtoEnumFlags {
             if (i10 != 2) {
                 if (i10 != 3) {
                     if (i10 != 4) {
-                        throw new jr.p();
+                        throw new lr.p();
                     }
                     throw new IllegalArgumentException("Only IN, OUT and INV are supported. Actual argument: " + projection);
                 }

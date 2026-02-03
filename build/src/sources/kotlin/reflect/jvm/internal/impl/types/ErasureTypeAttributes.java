@@ -11,19 +11,19 @@ import org.jetbrains.annotations.NotNull;
 public class ErasureTypeAttributes {
 
     /* renamed from: a  reason: collision with root package name */
-    private final TypeUsage f35631a;
+    private final TypeUsage f35021a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Set f35632b;
+    private final Set f35022b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final SimpleType f35633c;
+    private final SimpleType f35023c;
 
     public ErasureTypeAttributes(@NotNull TypeUsage howThisTypeIsUsed, Set<? extends TypeParameterDescriptor> set, SimpleType simpleType) {
         Intrinsics.checkNotNullParameter(howThisTypeIsUsed, "howThisTypeIsUsed");
-        this.f35631a = howThisTypeIsUsed;
-        this.f35632b = set;
-        this.f35633c = simpleType;
+        this.f35021a = howThisTypeIsUsed;
+        this.f35022b = set;
+        this.f35023c = simpleType;
     }
 
     public boolean equals(Object obj) {
@@ -38,16 +38,16 @@ public class ErasureTypeAttributes {
     }
 
     public SimpleType getDefaultType() {
-        return this.f35633c;
+        return this.f35023c;
     }
 
     @NotNull
     public TypeUsage getHowThisTypeIsUsed() {
-        return this.f35631a;
+        return this.f35021a;
     }
 
     public Set<TypeParameterDescriptor> getVisitedTypeParameters() {
-        return this.f35632b;
+        return this.f35022b;
     }
 
     public int hashCode() {

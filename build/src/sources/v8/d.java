@@ -3,13 +3,13 @@ package v8;
 public class d implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final d f50867a = new d();
+    private static final d f51195a = new d();
 
     private d() {
     }
 
     public static d a() {
-        return f50867a;
+        return f51195a;
     }
 
     @Override // v8.a

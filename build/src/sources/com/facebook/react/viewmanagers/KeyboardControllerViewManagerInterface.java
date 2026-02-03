@@ -11,4 +11,6 @@ public interface KeyboardControllerViewManagerInterface<T extends View> extends 
     void setPreserveEdgeToEdge(T t10, boolean z10);
 
     void setStatusBarTranslucent(T t10, boolean z10);
+
+    void synchronizeFocusedInputLayout(T t10);
 }

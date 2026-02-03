@@ -57,9 +57,9 @@ public final class InputInternationalDb_IdTypeJsonAdapter extends h {
         String str6 = null;
         String str7 = null;
         while (reader.hasNext()) {
-            switch (reader.t0(this.options)) {
+            switch (reader.A0(this.options)) {
                 case -1:
-                    reader.F0();
+                    reader.E0();
                     reader.P();
                     break;
                 case 0:
@@ -97,21 +97,21 @@ public final class InputInternationalDb_IdTypeJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (idType != null) {
             writer.l();
-            writer.t0("mask");
+            writer.A0("mask");
             this.nullableStringAdapter.toJson(writer, idType.getMask());
-            writer.t0(ReactTextInputShadowNode.PROP_PLACEHOLDER);
+            writer.A0(ReactTextInputShadowNode.PROP_PLACEHOLDER);
             this.nullableStringAdapter.toJson(writer, idType.getPlaceholder());
-            writer.t0("secure");
+            writer.A0("secure");
             this.nullableBooleanAdapter.toJson(writer, idType.getSecure());
-            writer.t0("countryName");
+            writer.A0("countryName");
             this.nullableStringAdapter.toJson(writer, idType.getCountryName());
-            writer.t0("countryCode");
+            writer.A0("countryCode");
             this.nullableStringAdapter.toJson(writer, idType.getCountryCode());
-            writer.t0("idType");
+            writer.A0("idType");
             this.nullableStringAdapter.toJson(writer, idType.getIdType());
-            writer.t0(StackTraceHelper.NAME_KEY);
+            writer.A0(StackTraceHelper.NAME_KEY);
             this.nullableStringAdapter.toJson(writer, idType.getName());
-            writer.t0("description");
+            writer.A0("description");
             this.nullableStringAdapter.toJson(writer, idType.getDescription());
             writer.E();
             return;

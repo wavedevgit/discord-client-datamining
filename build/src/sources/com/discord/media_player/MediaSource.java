@@ -171,7 +171,7 @@ public final class MediaSource {
     }
 
     public boolean equals(Object obj) {
-        boolean m1090equalsimpl0;
+        boolean m1089equalsimpl0;
         if (this == obj) {
             return true;
         }
@@ -182,16 +182,16 @@ public final class MediaSource {
                 String str2 = mediaSource.messageId;
                 if (str == null) {
                     if (str2 == null) {
-                        m1090equalsimpl0 = true;
+                        m1089equalsimpl0 = true;
                     }
-                    m1090equalsimpl0 = false;
+                    m1089equalsimpl0 = false;
                 } else {
                     if (str2 != null) {
-                        m1090equalsimpl0 = MessageId.m1090equalsimpl0(str, str2);
+                        m1089equalsimpl0 = MessageId.m1089equalsimpl0(str, str2);
                     }
-                    m1090equalsimpl0 = false;
+                    m1089equalsimpl0 = false;
                 }
-                return m1090equalsimpl0 && Intrinsics.areEqual(this.index, mediaSource.index) && Intrinsics.areEqual((Object) this.portal, (Object) mediaSource.portal) && Intrinsics.areEqual(this.srcIsAnimated, mediaSource.srcIsAnimated);
+                return m1089equalsimpl0 && Intrinsics.areEqual(this.index, mediaSource.index) && Intrinsics.areEqual((Object) this.portal, (Object) mediaSource.portal) && Intrinsics.areEqual(this.srcIsAnimated, mediaSource.srcIsAnimated);
             }
             return false;
         }
@@ -260,11 +260,11 @@ public final class MediaSource {
         Integer num = this.placeholderVersion;
         int hashCode4 = (((((((hashCode3 + (num == null ? 0 : num.hashCode())) * 31) + this.featureTag.hashCode()) * 31) + this.type.hashCode()) * 31) + Boolean.hashCode(this.shouldAutoPlay)) * 31;
         ChannelId channelId = this.channelId;
-        int m1065hashCodeimpl = (hashCode4 + (channelId == null ? 0 : ChannelId.m1065hashCodeimpl(channelId.m1069unboximpl()))) * 31;
+        int m1064hashCodeimpl = (hashCode4 + (channelId == null ? 0 : ChannelId.m1064hashCodeimpl(channelId.m1068unboximpl()))) * 31;
         String str4 = this.messageId;
-        int m1091hashCodeimpl = (m1065hashCodeimpl + (str4 == null ? 0 : MessageId.m1091hashCodeimpl(str4))) * 31;
+        int m1090hashCodeimpl = (m1064hashCodeimpl + (str4 == null ? 0 : MessageId.m1090hashCodeimpl(str4))) * 31;
         Integer num2 = this.index;
-        int hashCode5 = (m1091hashCodeimpl + (num2 == null ? 0 : num2.hashCode())) * 31;
+        int hashCode5 = (m1090hashCodeimpl + (num2 == null ? 0 : num2.hashCode())) * 31;
         Double d10 = this.portal;
         int hashCode6 = (hashCode5 + (d10 == null ? 0 : d10.hashCode())) * 31;
         Boolean bool = this.srcIsAnimated;
@@ -294,11 +294,11 @@ public final class MediaSource {
         boolean z10 = this.shouldAutoPlay;
         ChannelId channelId = this.channelId;
         String str5 = this.messageId;
-        String m1093toStringimpl = str5 == null ? "null" : MessageId.m1093toStringimpl(str5);
+        String m1092toStringimpl = str5 == null ? "null" : MessageId.m1092toStringimpl(str5);
         Integer num2 = this.index;
         Double d10 = this.portal;
         Boolean bool = this.srcIsAnimated;
-        return "MediaSource(sourceUrl=" + str + ", previewUrl=" + str2 + ", placeholder=" + str3 + ", placeholderVersion=" + num + ", featureTag=" + str4 + ", type=" + mediaType + ", shouldAutoPlay=" + z10 + ", channelId=" + channelId + ", messageId=" + m1093toStringimpl + ", index=" + num2 + ", portal=" + d10 + ", srcIsAnimated=" + bool + ")";
+        return "MediaSource(sourceUrl=" + str + ", previewUrl=" + str2 + ", placeholder=" + str3 + ", placeholderVersion=" + num + ", featureTag=" + str4 + ", type=" + mediaType + ", shouldAutoPlay=" + z10 + ", channelId=" + channelId + ", messageId=" + m1092toStringimpl + ", index=" + num2 + ", portal=" + d10 + ", srcIsAnimated=" + bool + ")";
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:23:0x0059, code lost:
@@ -364,7 +364,7 @@ public final class MediaSource {
             if (r4 != r3) goto L4d
             goto L53
         L4d:
-            jr.p r2 = new jr.p
+            lr.p r2 = new lr.p
             r2.<init>()
             throw r2
         L53:

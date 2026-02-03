@@ -8,26 +8,26 @@ import android.net.Uri;
 public final class l0 extends BroadcastReceiver {
 
     /* renamed from: a  reason: collision with root package name */
-    Context f24337a;
+    Context f23929a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final k0 f24338b;
+    private final k0 f23930b;
 
     public l0(k0 k0Var) {
-        this.f24338b = k0Var;
+        this.f23930b = k0Var;
     }
 
     public final void a(Context context) {
-        this.f24337a = context;
+        this.f23929a = context;
     }
 
     public final synchronized void b() {
         try {
-            Context context = this.f24337a;
+            Context context = this.f23929a;
             if (context != null) {
                 context.unregisterReceiver(this);
             }
-            this.f24337a = null;
+            this.f23929a = null;
         } catch (Throwable th2) {
             throw th2;
         }
@@ -43,7 +43,7 @@ public final class l0 extends BroadcastReceiver {
             str = null;
         }
         if ("com.google.android.gms".equals(str)) {
-            this.f24338b.a();
+            this.f23930b.a();
             b();
         }
     }

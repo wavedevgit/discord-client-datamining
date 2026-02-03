@@ -14,41 +14,41 @@ import androidx.annotation.NonNull;
 public class g extends CheckedTextView {
 
     /* renamed from: d  reason: collision with root package name */
-    private final h f1698d;
+    private final h f1667d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final AppCompatBackgroundHelper f1699e;
+    private final AppCompatBackgroundHelper f1668e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final AppCompatTextHelper f1700i;
+    private final AppCompatTextHelper f1669i;
 
     /* renamed from: o  reason: collision with root package name */
-    private AppCompatEmojiTextHelper f1701o;
+    private AppCompatEmojiTextHelper f1670o;
 
     public g(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, f.a.f23295p);
+        this(context, attributeSet, f.a.f22887p);
     }
 
     @NonNull
     private AppCompatEmojiTextHelper getEmojiTextViewHelper() {
-        if (this.f1701o == null) {
-            this.f1701o = new AppCompatEmojiTextHelper(this);
+        if (this.f1670o == null) {
+            this.f1670o = new AppCompatEmojiTextHelper(this);
         }
-        return this.f1701o;
+        return this.f1670o;
     }
 
     @Override // android.widget.CheckedTextView, android.widget.TextView, android.view.View
     protected void drawableStateChanged() {
         super.drawableStateChanged();
-        AppCompatTextHelper appCompatTextHelper = this.f1700i;
+        AppCompatTextHelper appCompatTextHelper = this.f1669i;
         if (appCompatTextHelper != null) {
             appCompatTextHelper.b();
         }
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1699e;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1668e;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.b();
         }
-        h hVar = this.f1698d;
+        h hVar = this.f1667d;
         if (hVar != null) {
             hVar.a();
         }
@@ -60,7 +60,7 @@ public class g extends CheckedTextView {
     }
 
     public ColorStateList getSupportBackgroundTintList() {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1699e;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1668e;
         if (appCompatBackgroundHelper != null) {
             return appCompatBackgroundHelper.c();
         }
@@ -68,7 +68,7 @@ public class g extends CheckedTextView {
     }
 
     public PorterDuff.Mode getSupportBackgroundTintMode() {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1699e;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1668e;
         if (appCompatBackgroundHelper != null) {
             return appCompatBackgroundHelper.d();
         }
@@ -76,7 +76,7 @@ public class g extends CheckedTextView {
     }
 
     public ColorStateList getSupportCheckMarkTintList() {
-        h hVar = this.f1698d;
+        h hVar = this.f1667d;
         if (hVar != null) {
             return hVar.b();
         }
@@ -84,7 +84,7 @@ public class g extends CheckedTextView {
     }
 
     public PorterDuff.Mode getSupportCheckMarkTintMode() {
-        h hVar = this.f1698d;
+        h hVar = this.f1667d;
         if (hVar != null) {
             return hVar.c();
         }
@@ -92,11 +92,11 @@ public class g extends CheckedTextView {
     }
 
     public ColorStateList getSupportCompoundDrawablesTintList() {
-        return this.f1700i.j();
+        return this.f1669i.j();
     }
 
     public PorterDuff.Mode getSupportCompoundDrawablesTintMode() {
-        return this.f1700i.k();
+        return this.f1669i.k();
     }
 
     @Override // android.widget.TextView, android.view.View
@@ -113,7 +113,7 @@ public class g extends CheckedTextView {
     @Override // android.view.View
     public void setBackgroundDrawable(Drawable drawable) {
         super.setBackgroundDrawable(drawable);
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1699e;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1668e;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.f(drawable);
         }
@@ -122,7 +122,7 @@ public class g extends CheckedTextView {
     @Override // android.view.View
     public void setBackgroundResource(int i10) {
         super.setBackgroundResource(i10);
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1699e;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1668e;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.g(i10);
         }
@@ -131,7 +131,7 @@ public class g extends CheckedTextView {
     @Override // android.widget.CheckedTextView
     public void setCheckMarkDrawable(Drawable drawable) {
         super.setCheckMarkDrawable(drawable);
-        h hVar = this.f1698d;
+        h hVar = this.f1667d;
         if (hVar != null) {
             hVar.e();
         }
@@ -140,7 +140,7 @@ public class g extends CheckedTextView {
     @Override // android.widget.TextView
     public void setCompoundDrawables(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
         super.setCompoundDrawables(drawable, drawable2, drawable3, drawable4);
-        AppCompatTextHelper appCompatTextHelper = this.f1700i;
+        AppCompatTextHelper appCompatTextHelper = this.f1669i;
         if (appCompatTextHelper != null) {
             appCompatTextHelper.p();
         }
@@ -149,7 +149,7 @@ public class g extends CheckedTextView {
     @Override // android.widget.TextView
     public void setCompoundDrawablesRelative(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
         super.setCompoundDrawablesRelative(drawable, drawable2, drawable3, drawable4);
-        AppCompatTextHelper appCompatTextHelper = this.f1700i;
+        AppCompatTextHelper appCompatTextHelper = this.f1669i;
         if (appCompatTextHelper != null) {
             appCompatTextHelper.p();
         }
@@ -165,47 +165,47 @@ public class g extends CheckedTextView {
     }
 
     public void setSupportBackgroundTintList(ColorStateList colorStateList) {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1699e;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1668e;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.i(colorStateList);
         }
     }
 
     public void setSupportBackgroundTintMode(PorterDuff.Mode mode) {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1699e;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1668e;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.j(mode);
         }
     }
 
     public void setSupportCheckMarkTintList(ColorStateList colorStateList) {
-        h hVar = this.f1698d;
+        h hVar = this.f1667d;
         if (hVar != null) {
             hVar.f(colorStateList);
         }
     }
 
     public void setSupportCheckMarkTintMode(PorterDuff.Mode mode) {
-        h hVar = this.f1698d;
+        h hVar = this.f1667d;
         if (hVar != null) {
             hVar.g(mode);
         }
     }
 
     public void setSupportCompoundDrawablesTintList(ColorStateList colorStateList) {
-        this.f1700i.w(colorStateList);
-        this.f1700i.b();
+        this.f1669i.w(colorStateList);
+        this.f1669i.b();
     }
 
     public void setSupportCompoundDrawablesTintMode(PorterDuff.Mode mode) {
-        this.f1700i.x(mode);
-        this.f1700i.b();
+        this.f1669i.x(mode);
+        this.f1669i.b();
     }
 
     @Override // android.widget.TextView
     public void setTextAppearance(Context context, int i10) {
         super.setTextAppearance(context, i10);
-        AppCompatTextHelper appCompatTextHelper = this.f1700i;
+        AppCompatTextHelper appCompatTextHelper = this.f1669i;
         if (appCompatTextHelper != null) {
             appCompatTextHelper.q(context, i10);
         }
@@ -215,14 +215,14 @@ public class g extends CheckedTextView {
         super(s0.b(context), attributeSet, i10);
         r0.a(this, getContext());
         AppCompatTextHelper appCompatTextHelper = new AppCompatTextHelper(this);
-        this.f1700i = appCompatTextHelper;
+        this.f1669i = appCompatTextHelper;
         appCompatTextHelper.m(attributeSet, i10);
         appCompatTextHelper.b();
         AppCompatBackgroundHelper appCompatBackgroundHelper = new AppCompatBackgroundHelper(this);
-        this.f1699e = appCompatBackgroundHelper;
+        this.f1668e = appCompatBackgroundHelper;
         appCompatBackgroundHelper.e(attributeSet, i10);
         h hVar = new h(this);
-        this.f1698d = hVar;
+        this.f1667d = hVar;
         hVar.d(attributeSet, i10);
         getEmojiTextViewHelper().c(attributeSet, i10);
     }

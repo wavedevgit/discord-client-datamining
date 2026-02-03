@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/application_commands/native/ApplicationSectionHeader.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun90014: for (var _fun90014_ip = 0;;) switch (_fun90014_ip) {
+        _fun90106: for (var _fun90106_ip = 0;;) switch (_fun90106_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.section;
@@ -98,29 +98,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var9;
                 var0 = function() { // Environment: var0
-                    _fun90015: for (var _fun90015_ip = 0;;) switch (_fun90015_ip) {
+                    _fun90107: for (var _fun90107_ip = 0;;) switch (_fun90107_ip) {
                         case 0:
                             var1 = _closure2_slot1;
                             var2 = null;
                             if (!(var2 != var1)) {
-                                _fun90015_ip = 40;
-                                continue _fun90015
+                                _fun90107_ip = 40;
+                                continue _fun90107
                             }
                         case 13:
                             var1 = _closure2_slot0;
                             var3 = var2 == var1;
                             var1 = undefined;
                             if (var3) {
-                                _fun90015_ip = 36;
-                                continue _fun90015
+                                _fun90107_ip = 36;
+                                continue _fun90107
                             }
                         case 26:
                             var3 = _closure2_slot0;
                             var1 = var3.botId;
                         case 36:
                             if (!(var2 == var1)) {
-                                _fun90015_ip = 44;
-                                continue _fun90015
+                                _fun90107_ip = 44;
+                                continue _fun90107
                             }
                         case 40:
                             var1 = undefined;
@@ -145,28 +145,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var4 == var0;
                 var2 = undefined;
                 if (var6) {
-                    _fun90014_ip = 127;
-                    continue _fun90014
+                    _fun90106_ip = 127;
+                    continue _fun90106
                 }
             case 121:
                 var2 = var0.nick;
             case 127:
                 if (!(var4 == var2)) {
-                    _fun90014_ip = 147;
-                    continue _fun90014
+                    _fun90106_ip = 147;
+                    continue _fun90106
                 }
             case 131:
                 var2 = var4 == var1;
                 var8 = undefined;
                 if (var2) {
-                    _fun90014_ip = 145;
-                    continue _fun90014
+                    _fun90106_ip = 145;
+                    continue _fun90106
                 }
             case 140:
                 var8 = var1.name;
             case 145:
-                _fun90014_ip = 153;
-                continue _fun90014;
+                _fun90106_ip = 153;
+                continue _fun90106;
             case 147:
                 var8 = var0.nick;
             case 153:
@@ -192,8 +192,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.accessibilityLabel = var6;
                 var6 = var4 != var10;
                 if (!var6) {
-                    _fun90014_ip = 295;
-                    continue _fun90014
+                    _fun90106_ip = 295;
+                    continue _fun90106
                 }
             case 249:
                 var9 = _closure1_slot5;
@@ -232,4 +232,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.APPLICATION_SECTION_HEADER_HEIGHT = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1672, 33, 1297, 671, 566, 9616, 1234, 4699, 3932, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1681, 33, 1297, 671, 566, 9635, 1234, 4704, 3941, 2]);

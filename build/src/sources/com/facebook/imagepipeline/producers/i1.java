@@ -8,34 +8,34 @@ import kotlin.jvm.internal.Intrinsics;
 public final class i1 implements h1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Executor f11427a;
+    private final Executor f10395a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f11428b;
+    private boolean f10396b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Deque f11429c;
+    private final Deque f10397c;
 
     public i1(Executor executor) {
         Intrinsics.checkNotNullParameter(executor, "executor");
-        this.f11427a = executor;
-        this.f11429c = new ArrayDeque();
+        this.f10395a = executor;
+        this.f10397c = new ArrayDeque();
     }
 
     @Override // com.facebook.imagepipeline.producers.h1
     public synchronized void a(Runnable runnable) {
         Intrinsics.checkNotNullParameter(runnable, "runnable");
-        this.f11429c.remove(runnable);
+        this.f10397c.remove(runnable);
     }
 
     @Override // com.facebook.imagepipeline.producers.h1
     public synchronized void b(Runnable runnable) {
         try {
             Intrinsics.checkNotNullParameter(runnable, "runnable");
-            if (this.f11428b) {
-                this.f11429c.add(runnable);
+            if (this.f10396b) {
+                this.f10397c.add(runnable);
             } else {
-                this.f11427a.execute(runnable);
+                this.f10395a.execute(runnable);
             }
         } catch (Throwable th2) {
             throw th2;

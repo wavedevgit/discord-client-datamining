@@ -26,7 +26,7 @@ import oh.n;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class b {
-    static final TimeInterpolator D = zg.a.f55808c;
+    static final TimeInterpolator D = zg.a.f55946c;
     private static final int E = yg.b.F;
     private static final int F = yg.b.P;
     private static final int G = yg.b.G;
@@ -40,82 +40,82 @@ public abstract class b {
     private ViewTreeObserver.OnPreDrawListener C;
 
     /* renamed from: a  reason: collision with root package name */
-    oh.k f15673a;
+    oh.k f14641a;
 
     /* renamed from: b  reason: collision with root package name */
-    oh.g f15674b;
+    oh.g f14642b;
 
     /* renamed from: c  reason: collision with root package name */
-    Drawable f15675c;
+    Drawable f14643c;
 
     /* renamed from: d  reason: collision with root package name */
-    com.google.android.material.floatingactionbutton.a f15676d;
+    com.google.android.material.floatingactionbutton.a f14644d;
 
     /* renamed from: e  reason: collision with root package name */
-    Drawable f15677e;
+    Drawable f14645e;
 
     /* renamed from: f  reason: collision with root package name */
-    boolean f15678f;
+    boolean f14646f;
 
     /* renamed from: h  reason: collision with root package name */
-    float f15680h;
+    float f14648h;
 
     /* renamed from: i  reason: collision with root package name */
-    float f15681i;
+    float f14649i;
 
     /* renamed from: j  reason: collision with root package name */
-    float f15682j;
+    float f14650j;
 
     /* renamed from: k  reason: collision with root package name */
-    int f15683k;
+    int f14651k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final com.google.android.material.internal.g f15684l;
+    private final com.google.android.material.internal.g f14652l;
 
     /* renamed from: m  reason: collision with root package name */
-    private Animator f15685m;
+    private Animator f14653m;
 
     /* renamed from: n  reason: collision with root package name */
-    private zg.g f15686n;
+    private zg.g f14654n;
 
     /* renamed from: o  reason: collision with root package name */
-    private zg.g f15687o;
+    private zg.g f14655o;
 
     /* renamed from: p  reason: collision with root package name */
-    private float f15688p;
+    private float f14656p;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f15690r;
+    private int f14658r;
 
     /* renamed from: t  reason: collision with root package name */
-    private ArrayList f15692t;
+    private ArrayList f14660t;
 
     /* renamed from: u  reason: collision with root package name */
-    private ArrayList f15693u;
+    private ArrayList f14661u;
 
     /* renamed from: v  reason: collision with root package name */
-    private ArrayList f15694v;
+    private ArrayList f14662v;
 
     /* renamed from: w  reason: collision with root package name */
-    final FloatingActionButton f15695w;
+    final FloatingActionButton f14663w;
 
     /* renamed from: x  reason: collision with root package name */
-    final nh.b f15696x;
+    final nh.b f14664x;
 
     /* renamed from: g  reason: collision with root package name */
-    boolean f15679g = true;
+    boolean f14647g = true;
 
     /* renamed from: q  reason: collision with root package name */
-    private float f15689q = 1.0f;
+    private float f14657q = 1.0f;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f15691s = 0;
+    private int f14659s = 0;
 
     /* renamed from: y  reason: collision with root package name */
-    private final Rect f15697y = new Rect();
+    private final Rect f14665y = new Rect();
 
     /* renamed from: z  reason: collision with root package name */
-    private final RectF f15698z = new RectF();
+    private final RectF f14666z = new RectF();
     private final RectF A = new RectF();
     private final Matrix B = new Matrix();
 
@@ -123,39 +123,39 @@ public abstract class b {
     class a extends AnimatorListenerAdapter {
 
         /* renamed from: a  reason: collision with root package name */
-        private boolean f15699a;
+        private boolean f14667a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ boolean f15700b;
+        final /* synthetic */ boolean f14668b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ k f15701c;
+        final /* synthetic */ k f14669c;
 
         a(boolean z10, k kVar) {
-            this.f15700b = z10;
-            this.f15701c = kVar;
+            this.f14668b = z10;
+            this.f14669c = kVar;
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationCancel(Animator animator) {
-            this.f15699a = true;
+            this.f14667a = true;
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
             int i10;
-            b.this.f15691s = 0;
-            b.this.f15685m = null;
-            if (!this.f15699a) {
-                FloatingActionButton floatingActionButton = b.this.f15695w;
-                boolean z10 = this.f15700b;
+            b.this.f14659s = 0;
+            b.this.f14653m = null;
+            if (!this.f14667a) {
+                FloatingActionButton floatingActionButton = b.this.f14663w;
+                boolean z10 = this.f14668b;
                 if (z10) {
                     i10 = 8;
                 } else {
                     i10 = 4;
                 }
                 floatingActionButton.b(i10, z10);
-                k kVar = this.f15701c;
+                k kVar = this.f14669c;
                 if (kVar != null) {
                     kVar.b();
                 }
@@ -164,33 +164,33 @@ public abstract class b {
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationStart(Animator animator) {
-            b.this.f15695w.b(0, this.f15700b);
-            b.this.f15691s = 1;
-            b.this.f15685m = animator;
-            this.f15699a = false;
+            b.this.f14663w.b(0, this.f14668b);
+            b.this.f14659s = 1;
+            b.this.f14653m = animator;
+            this.f14667a = false;
         }
     }
 
     /* renamed from: com.google.android.material.floatingactionbutton.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    class C0188b extends AnimatorListenerAdapter {
+    class C0169b extends AnimatorListenerAdapter {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ boolean f15703a;
+        final /* synthetic */ boolean f14671a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ k f15704b;
+        final /* synthetic */ k f14672b;
 
-        C0188b(boolean z10, k kVar) {
-            this.f15703a = z10;
-            this.f15704b = kVar;
+        C0169b(boolean z10, k kVar) {
+            this.f14671a = z10;
+            this.f14672b = kVar;
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            b.this.f15691s = 0;
-            b.this.f15685m = null;
-            k kVar = this.f15704b;
+            b.this.f14659s = 0;
+            b.this.f14653m = null;
+            k kVar = this.f14672b;
             if (kVar != null) {
                 kVar.a();
             }
@@ -198,9 +198,9 @@ public abstract class b {
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationStart(Animator animator) {
-            b.this.f15695w.b(0, this.f15703a);
-            b.this.f15691s = 2;
-            b.this.f15685m = animator;
+            b.this.f14663w.b(0, this.f14671a);
+            b.this.f14659s = 2;
+            b.this.f14653m = animator;
         }
     }
 
@@ -213,7 +213,7 @@ public abstract class b {
         @Override // android.animation.TypeEvaluator
         /* renamed from: a */
         public Matrix evaluate(float f10, Matrix matrix, Matrix matrix2) {
-            b.this.f15689q = f10;
+            b.this.f14657q = f10;
             return super.a(f10, matrix, matrix2);
         }
     }
@@ -223,49 +223,49 @@ public abstract class b {
     public class d implements ValueAnimator.AnimatorUpdateListener {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ float f15707a;
+        final /* synthetic */ float f14675a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ float f15708b;
+        final /* synthetic */ float f14676b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ float f15709c;
+        final /* synthetic */ float f14677c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ float f15710d;
+        final /* synthetic */ float f14678d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ float f15711e;
+        final /* synthetic */ float f14679e;
 
         /* renamed from: f  reason: collision with root package name */
-        final /* synthetic */ float f15712f;
+        final /* synthetic */ float f14680f;
 
         /* renamed from: g  reason: collision with root package name */
-        final /* synthetic */ float f15713g;
+        final /* synthetic */ float f14681g;
 
         /* renamed from: h  reason: collision with root package name */
-        final /* synthetic */ Matrix f15714h;
+        final /* synthetic */ Matrix f14682h;
 
         d(float f10, float f11, float f12, float f13, float f14, float f15, float f16, Matrix matrix) {
-            this.f15707a = f10;
-            this.f15708b = f11;
-            this.f15709c = f12;
-            this.f15710d = f13;
-            this.f15711e = f14;
-            this.f15712f = f15;
-            this.f15713g = f16;
-            this.f15714h = matrix;
+            this.f14675a = f10;
+            this.f14676b = f11;
+            this.f14677c = f12;
+            this.f14678d = f13;
+            this.f14679e = f14;
+            this.f14680f = f15;
+            this.f14681g = f16;
+            this.f14682h = matrix;
         }
 
         @Override // android.animation.ValueAnimator.AnimatorUpdateListener
         public void onAnimationUpdate(ValueAnimator valueAnimator) {
             float floatValue = ((Float) valueAnimator.getAnimatedValue()).floatValue();
-            b.this.f15695w.setAlpha(zg.a.b(this.f15707a, this.f15708b, 0.0f, 0.2f, floatValue));
-            b.this.f15695w.setScaleX(zg.a.a(this.f15709c, this.f15710d, floatValue));
-            b.this.f15695w.setScaleY(zg.a.a(this.f15711e, this.f15710d, floatValue));
-            b.this.f15689q = zg.a.a(this.f15712f, this.f15713g, floatValue);
-            b.this.e(zg.a.a(this.f15712f, this.f15713g, floatValue), this.f15714h);
-            b.this.f15695w.setImageMatrix(this.f15714h);
+            b.this.f14663w.setAlpha(zg.a.b(this.f14675a, this.f14676b, 0.0f, 0.2f, floatValue));
+            b.this.f14663w.setScaleX(zg.a.a(this.f14677c, this.f14678d, floatValue));
+            b.this.f14663w.setScaleY(zg.a.a(this.f14679e, this.f14678d, floatValue));
+            b.this.f14657q = zg.a.a(this.f14680f, this.f14681g, floatValue);
+            b.this.e(zg.a.a(this.f14680f, this.f14681g, floatValue), this.f14682h);
+            b.this.f14663w.setImageMatrix(this.f14682h);
         }
     }
 
@@ -274,7 +274,7 @@ public abstract class b {
     public class e implements TypeEvaluator {
 
         /* renamed from: a  reason: collision with root package name */
-        FloatEvaluator f15716a = new FloatEvaluator();
+        FloatEvaluator f14684a = new FloatEvaluator();
 
         e() {
         }
@@ -282,7 +282,7 @@ public abstract class b {
         @Override // android.animation.TypeEvaluator
         /* renamed from: a */
         public Float evaluate(float f10, Float f11, Float f12) {
-            float floatValue = this.f15716a.evaluate(f10, (Number) f11, (Number) f12).floatValue();
+            float floatValue = this.f14684a.evaluate(f10, (Number) f11, (Number) f12).floatValue();
             if (floatValue < 0.1f) {
                 floatValue = 0.0f;
             }
@@ -324,7 +324,7 @@ public abstract class b {
         @Override // com.google.android.material.floatingactionbutton.b.m
         protected float a() {
             b bVar = b.this;
-            return bVar.f15680h + bVar.f15681i;
+            return bVar.f14648h + bVar.f14649i;
         }
     }
 
@@ -337,7 +337,7 @@ public abstract class b {
         @Override // com.google.android.material.floatingactionbutton.b.m
         protected float a() {
             b bVar = b.this;
-            return bVar.f15680h + bVar.f15682j;
+            return bVar.f14648h + bVar.f14650j;
         }
     }
 
@@ -363,7 +363,7 @@ public abstract class b {
 
         @Override // com.google.android.material.floatingactionbutton.b.m
         protected float a() {
-            return b.this.f15680h;
+            return b.this.f14648h;
         }
     }
 
@@ -371,13 +371,13 @@ public abstract class b {
     private abstract class m extends AnimatorListenerAdapter implements ValueAnimator.AnimatorUpdateListener {
 
         /* renamed from: a  reason: collision with root package name */
-        private boolean f15723a;
+        private boolean f14691a;
 
         /* renamed from: b  reason: collision with root package name */
-        private float f15724b;
+        private float f14692b;
 
         /* renamed from: c  reason: collision with root package name */
-        private float f15725c;
+        private float f14693c;
 
         private m() {
         }
@@ -386,27 +386,27 @@ public abstract class b {
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            b.this.d0((int) this.f15725c);
-            this.f15723a = false;
+            b.this.d0((int) this.f14693c);
+            this.f14691a = false;
         }
 
         @Override // android.animation.ValueAnimator.AnimatorUpdateListener
         public void onAnimationUpdate(ValueAnimator valueAnimator) {
             float w10;
-            if (!this.f15723a) {
-                oh.g gVar = b.this.f15674b;
+            if (!this.f14691a) {
+                oh.g gVar = b.this.f14642b;
                 if (gVar == null) {
                     w10 = 0.0f;
                 } else {
                     w10 = gVar.w();
                 }
-                this.f15724b = w10;
-                this.f15725c = a();
-                this.f15723a = true;
+                this.f14692b = w10;
+                this.f14693c = a();
+                this.f14691a = true;
             }
             b bVar = b.this;
-            float f10 = this.f15724b;
-            bVar.d0((int) (f10 + ((this.f15725c - f10) * valueAnimator.getAnimatedFraction())));
+            float f10 = this.f14692b;
+            bVar.d0((int) (f10 + ((this.f14693c - f10) * valueAnimator.getAnimatedFraction())));
         }
 
         /* synthetic */ m(b bVar, a aVar) {
@@ -416,21 +416,21 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(FloatingActionButton floatingActionButton, nh.b bVar) {
-        this.f15695w = floatingActionButton;
-        this.f15696x = bVar;
+        this.f14663w = floatingActionButton;
+        this.f14664x = bVar;
         com.google.android.material.internal.g gVar = new com.google.android.material.internal.g();
-        this.f15684l = gVar;
+        this.f14652l = gVar;
         gVar.a(I, h(new i()));
         gVar.a(J, h(new h()));
         gVar.a(K, h(new h()));
         gVar.a(L, h(new h()));
         gVar.a(M, h(new l()));
         gVar.a(N, h(new g()));
-        this.f15688p = floatingActionButton.getRotation();
+        this.f14656p = floatingActionButton.getRotation();
     }
 
     private boolean X() {
-        if (h0.S(this.f15695w) && !this.f15695w.isInEditMode()) {
+        if (h0.S(this.f14663w) && !this.f14663w.isInEditMode()) {
             return true;
         }
         return false;
@@ -439,15 +439,15 @@ public abstract class b {
     /* JADX INFO: Access modifiers changed from: private */
     public void e(float f10, Matrix matrix) {
         matrix.reset();
-        Drawable drawable = this.f15695w.getDrawable();
-        if (drawable != null && this.f15690r != 0) {
-            RectF rectF = this.f15698z;
+        Drawable drawable = this.f14663w.getDrawable();
+        if (drawable != null && this.f14658r != 0) {
+            RectF rectF = this.f14666z;
             RectF rectF2 = this.A;
             rectF.set(0.0f, 0.0f, drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight());
-            int i10 = this.f15690r;
+            int i10 = this.f14658r;
             rectF2.set(0.0f, 0.0f, i10, i10);
             matrix.setRectToRect(rectF, rectF2, Matrix.ScaleToFit.CENTER);
-            int i11 = this.f15690r;
+            int i11 = this.f14658r;
             matrix.postScale(f10, f10, i11 / 2.0f, i11 / 2.0f);
         }
     }
@@ -461,19 +461,19 @@ public abstract class b {
 
     private AnimatorSet f(zg.g gVar, float f10, float f11, float f12) {
         ArrayList arrayList = new ArrayList();
-        ObjectAnimator ofFloat = ObjectAnimator.ofFloat(this.f15695w, View.ALPHA, f10);
+        ObjectAnimator ofFloat = ObjectAnimator.ofFloat(this.f14663w, View.ALPHA, f10);
         gVar.e(ViewProps.OPACITY).a(ofFloat);
         arrayList.add(ofFloat);
-        ObjectAnimator ofFloat2 = ObjectAnimator.ofFloat(this.f15695w, View.SCALE_X, f11);
+        ObjectAnimator ofFloat2 = ObjectAnimator.ofFloat(this.f14663w, View.SCALE_X, f11);
         gVar.e("scale").a(ofFloat2);
         e0(ofFloat2);
         arrayList.add(ofFloat2);
-        ObjectAnimator ofFloat3 = ObjectAnimator.ofFloat(this.f15695w, View.SCALE_Y, f11);
+        ObjectAnimator ofFloat3 = ObjectAnimator.ofFloat(this.f14663w, View.SCALE_Y, f11);
         gVar.e("scale").a(ofFloat3);
         e0(ofFloat3);
         arrayList.add(ofFloat3);
         e(f12, this.B);
-        ObjectAnimator ofObject = ObjectAnimator.ofObject(this.f15695w, new zg.e(), new c(), new Matrix(this.B));
+        ObjectAnimator ofObject = ObjectAnimator.ofObject(this.f14663w, new zg.e(), new c(), new Matrix(this.B));
         gVar.e("iconScale").a(ofObject);
         arrayList.add(ofObject);
         AnimatorSet animatorSet = new AnimatorSet();
@@ -485,11 +485,11 @@ public abstract class b {
         AnimatorSet animatorSet = new AnimatorSet();
         ArrayList arrayList = new ArrayList();
         ValueAnimator ofFloat = ValueAnimator.ofFloat(0.0f, 1.0f);
-        ofFloat.addUpdateListener(new d(this.f15695w.getAlpha(), f10, this.f15695w.getScaleX(), f11, this.f15695w.getScaleY(), this.f15689q, f12, new Matrix(this.B)));
+        ofFloat.addUpdateListener(new d(this.f14663w.getAlpha(), f10, this.f14663w.getScaleX(), f11, this.f14663w.getScaleY(), this.f14657q, f12, new Matrix(this.B)));
         arrayList.add(ofFloat);
         zg.b.a(animatorSet, arrayList);
-        animatorSet.setDuration(jh.g.f(this.f15695w.getContext(), i10, this.f15695w.getContext().getResources().getInteger(yg.g.f54439b)));
-        animatorSet.setInterpolator(jh.g.g(this.f15695w.getContext(), i11, zg.a.f55807b));
+        animatorSet.setDuration(jh.g.f(this.f14663w.getContext(), i10, this.f14663w.getContext().getResources().getInteger(yg.g.f54197b)));
+        animatorSet.setInterpolator(jh.g.g(this.f14663w.getContext(), i11, zg.a.f55945b));
         return animatorSet;
     }
 
@@ -512,7 +512,7 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void A() {
-        ViewTreeObserver viewTreeObserver = this.f15695w.getViewTreeObserver();
+        ViewTreeObserver viewTreeObserver = this.f14663w.getViewTreeObserver();
         ViewTreeObserver.OnPreDrawListener onPreDrawListener = this.C;
         if (onPreDrawListener != null) {
             viewTreeObserver.removeOnPreDrawListener(onPreDrawListener);
@@ -526,25 +526,25 @@ public abstract class b {
     abstract void C(float f10, float f11, float f12);
 
     void D(Rect rect) {
-        b2.e.h(this.f15677e, "Didn't initialize content background");
+        b2.e.h(this.f14645e, "Didn't initialize content background");
         if (W()) {
-            this.f15696x.b(new InsetDrawable(this.f15677e, rect.left, rect.top, rect.right, rect.bottom));
+            this.f14664x.b(new InsetDrawable(this.f14645e, rect.left, rect.top, rect.right, rect.bottom));
             return;
         }
-        this.f15696x.b(this.f15677e);
+        this.f14664x.b(this.f14645e);
     }
 
     void E() {
-        float rotation = this.f15695w.getRotation();
-        if (this.f15688p != rotation) {
-            this.f15688p = rotation;
+        float rotation = this.f14663w.getRotation();
+        if (this.f14656p != rotation) {
+            this.f14656p = rotation;
             a0();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void F() {
-        ArrayList arrayList = this.f15694v;
+        ArrayList arrayList = this.f14662v;
         if (arrayList != null) {
             Iterator it = arrayList.iterator();
             while (it.hasNext()) {
@@ -555,7 +555,7 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void G() {
-        ArrayList arrayList = this.f15694v;
+        ArrayList arrayList = this.f14662v;
         if (arrayList != null) {
             Iterator it = arrayList.iterator();
             while (it.hasNext()) {
@@ -568,11 +568,11 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void I(ColorStateList colorStateList) {
-        oh.g gVar = this.f15674b;
+        oh.g gVar = this.f14642b;
         if (gVar != null) {
             gVar.setTintList(colorStateList);
         }
-        com.google.android.material.floatingactionbutton.a aVar = this.f15676d;
+        com.google.android.material.floatingactionbutton.a aVar = this.f14644d;
         if (aVar != null) {
             aVar.c(colorStateList);
         }
@@ -580,7 +580,7 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void J(PorterDuff.Mode mode) {
-        oh.g gVar = this.f15674b;
+        oh.g gVar = this.f14642b;
         if (gVar != null) {
             gVar.setTintMode(mode);
         }
@@ -588,61 +588,61 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void K(float f10) {
-        if (this.f15680h != f10) {
-            this.f15680h = f10;
-            C(f10, this.f15681i, this.f15682j);
+        if (this.f14648h != f10) {
+            this.f14648h = f10;
+            C(f10, this.f14649i, this.f14650j);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void L(boolean z10) {
-        this.f15678f = z10;
+        this.f14646f = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void M(zg.g gVar) {
-        this.f15687o = gVar;
+        this.f14655o = gVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void N(float f10) {
-        if (this.f15681i != f10) {
-            this.f15681i = f10;
-            C(this.f15680h, f10, this.f15682j);
+        if (this.f14649i != f10) {
+            this.f14649i = f10;
+            C(this.f14648h, f10, this.f14650j);
         }
     }
 
     final void O(float f10) {
-        this.f15689q = f10;
+        this.f14657q = f10;
         Matrix matrix = this.B;
         e(f10, matrix);
-        this.f15695w.setImageMatrix(matrix);
+        this.f14663w.setImageMatrix(matrix);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void P(int i10) {
-        if (this.f15690r != i10) {
-            this.f15690r = i10;
+        if (this.f14658r != i10) {
+            this.f14658r = i10;
             b0();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void Q(int i10) {
-        this.f15683k = i10;
+        this.f14651k = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void R(float f10) {
-        if (this.f15682j != f10) {
-            this.f15682j = f10;
-            C(this.f15680h, this.f15681i, f10);
+        if (this.f14650j != f10) {
+            this.f14650j = f10;
+            C(this.f14648h, this.f14649i, f10);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void S(ColorStateList colorStateList) {
-        Drawable drawable = this.f15675c;
+        Drawable drawable = this.f14643c;
         if (drawable != null) {
             s1.a.o(drawable, mh.b.a(colorStateList));
         }
@@ -650,22 +650,22 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void T(boolean z10) {
-        this.f15679g = z10;
+        this.f14647g = z10;
         c0();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void U(oh.k kVar) {
-        this.f15673a = kVar;
-        oh.g gVar = this.f15674b;
+        this.f14641a = kVar;
+        oh.g gVar = this.f14642b;
         if (gVar != null) {
             gVar.setShapeAppearanceModel(kVar);
         }
-        Drawable drawable = this.f15675c;
+        Drawable drawable = this.f14643c;
         if (drawable instanceof n) {
             ((n) drawable).setShapeAppearanceModel(kVar);
         }
-        com.google.android.material.floatingactionbutton.a aVar = this.f15676d;
+        com.google.android.material.floatingactionbutton.a aVar = this.f14644d;
         if (aVar != null) {
             aVar.f(kVar);
         }
@@ -673,14 +673,14 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void V(zg.g gVar) {
-        this.f15686n = gVar;
+        this.f14654n = gVar;
     }
 
     abstract boolean W();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final boolean Y() {
-        if (this.f15678f && this.f15695w.getSizeDimension() < this.f15683k) {
+        if (this.f14646f && this.f14663w.getSizeDimension() < this.f14651k) {
             return false;
         }
         return true;
@@ -694,27 +694,27 @@ public abstract class b {
         float f10;
         float f11;
         if (!w()) {
-            Animator animator = this.f15685m;
+            Animator animator = this.f14653m;
             if (animator != null) {
                 animator.cancel();
             }
-            if (this.f15686n == null) {
+            if (this.f14654n == null) {
                 z11 = true;
             } else {
                 z11 = false;
             }
             if (X()) {
-                if (this.f15695w.getVisibility() != 0) {
+                if (this.f14663w.getVisibility() != 0) {
                     float f12 = 0.0f;
-                    this.f15695w.setAlpha(0.0f);
-                    FloatingActionButton floatingActionButton = this.f15695w;
+                    this.f14663w.setAlpha(0.0f);
+                    FloatingActionButton floatingActionButton = this.f14663w;
                     if (z11) {
                         f10 = 0.4f;
                     } else {
                         f10 = 0.0f;
                     }
                     floatingActionButton.setScaleY(f10);
-                    FloatingActionButton floatingActionButton2 = this.f15695w;
+                    FloatingActionButton floatingActionButton2 = this.f14663w;
                     if (z11) {
                         f11 = 0.4f;
                     } else {
@@ -726,7 +726,7 @@ public abstract class b {
                     }
                     O(f12);
                 }
-                zg.g gVar = this.f15686n;
+                zg.g gVar = this.f14654n;
                 if (gVar != null) {
                     g10 = f(gVar, 1.0f, 1.0f, 1.0f);
                     bVar = this;
@@ -734,8 +734,8 @@ public abstract class b {
                     g10 = g(1.0f, 1.0f, 1.0f, E, F);
                     bVar = this;
                 }
-                g10.addListener(new C0188b(z10, kVar));
-                ArrayList arrayList = bVar.f15692t;
+                g10.addListener(new C0169b(z10, kVar));
+                ArrayList arrayList = bVar.f14660t;
                 if (arrayList != null) {
                     Iterator it = arrayList.iterator();
                     while (it.hasNext()) {
@@ -745,10 +745,10 @@ public abstract class b {
                 g10.start();
                 return;
             }
-            this.f15695w.b(0, z10);
-            this.f15695w.setAlpha(1.0f);
-            this.f15695w.setScaleY(1.0f);
-            this.f15695w.setScaleX(1.0f);
+            this.f14663w.b(0, z10);
+            this.f14663w.setAlpha(1.0f);
+            this.f14663w.setScaleY(1.0f);
+            this.f14663w.setScaleX(1.0f);
             O(1.0f);
             if (kVar != null) {
                 kVar.a();
@@ -760,20 +760,20 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void b0() {
-        O(this.f15689q);
+        O(this.f14657q);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void c0() {
-        Rect rect = this.f15697y;
+        Rect rect = this.f14665y;
         o(rect);
         D(rect);
-        this.f15696x.a(rect.left, rect.top, rect.right, rect.bottom);
+        this.f14664x.a(rect.left, rect.top, rect.right, rect.bottom);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void d0(float f10) {
-        oh.g gVar = this.f15674b;
+        oh.g gVar = this.f14642b;
         if (gVar != null) {
             gVar.W(f10);
         }
@@ -781,7 +781,7 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final Drawable i() {
-        return this.f15677e;
+        return this.f14645e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -789,25 +789,25 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean k() {
-        return this.f15678f;
+        return this.f14646f;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final zg.g l() {
-        return this.f15687o;
+        return this.f14655o;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float m() {
-        return this.f15681i;
+        return this.f14649i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void o(Rect rect) {
         float f10;
         int s10 = s();
-        if (this.f15679g) {
-            f10 = j() + this.f15682j;
+        if (this.f14647g) {
+            f10 = j() + this.f14650j;
         } else {
             f10 = 0.0f;
         }
@@ -818,25 +818,25 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float p() {
-        return this.f15682j;
+        return this.f14650j;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final oh.k q() {
-        return this.f15673a;
+        return this.f14641a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final zg.g r() {
-        return this.f15686n;
+        return this.f14654n;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int s() {
-        if (!this.f15678f) {
+        if (!this.f14646f) {
             return 0;
         }
-        return Math.max((this.f15683k - this.f15695w.getSizeDimension()) / 2, 0);
+        return Math.max((this.f14651k - this.f14663w.getSizeDimension()) / 2, 0);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -845,12 +845,12 @@ public abstract class b {
         b bVar;
         AnimatorSet g10;
         if (!v()) {
-            Animator animator = this.f15685m;
+            Animator animator = this.f14653m;
             if (animator != null) {
                 animator.cancel();
             }
             if (X()) {
-                zg.g gVar = this.f15687o;
+                zg.g gVar = this.f14655o;
                 if (gVar != null) {
                     g10 = f(gVar, 0.0f, 0.0f, 0.0f);
                     bVar = this;
@@ -859,7 +859,7 @@ public abstract class b {
                     g10 = bVar.g(0.0f, 0.4f, 0.4f, G, H);
                 }
                 g10.addListener(new a(z10, kVar));
-                ArrayList arrayList = bVar.f15693u;
+                ArrayList arrayList = bVar.f14661u;
                 if (arrayList != null) {
                     Iterator it = arrayList.iterator();
                     while (it.hasNext()) {
@@ -869,7 +869,7 @@ public abstract class b {
                 g10.start();
                 return;
             }
-            FloatingActionButton floatingActionButton = this.f15695w;
+            FloatingActionButton floatingActionButton = this.f14663w;
             if (z10) {
                 i10 = 8;
             } else {
@@ -886,12 +886,12 @@ public abstract class b {
     public abstract void u(ColorStateList colorStateList, PorterDuff.Mode mode, ColorStateList colorStateList2, int i10);
 
     boolean v() {
-        if (this.f15695w.getVisibility() == 0) {
-            if (this.f15691s != 1) {
+        if (this.f14663w.getVisibility() == 0) {
+            if (this.f14659s != 1) {
                 return false;
             }
             return true;
-        } else if (this.f15691s == 2) {
+        } else if (this.f14659s == 2) {
             return false;
         } else {
             return true;
@@ -899,12 +899,12 @@ public abstract class b {
     }
 
     boolean w() {
-        if (this.f15695w.getVisibility() != 0) {
-            if (this.f15691s != 2) {
+        if (this.f14663w.getVisibility() != 0) {
+            if (this.f14659s != 2) {
                 return false;
             }
             return true;
-        } else if (this.f15691s == 1) {
+        } else if (this.f14659s == 1) {
             return false;
         } else {
             return true;
@@ -916,12 +916,12 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void y() {
-        oh.g gVar = this.f15674b;
+        oh.g gVar = this.f14642b;
         if (gVar != null) {
-            oh.h.f(this.f15695w, gVar);
+            oh.h.f(this.f14663w, gVar);
         }
         if (H()) {
-            this.f15695w.getViewTreeObserver().addOnPreDrawListener(n());
+            this.f14663w.getViewTreeObserver().addOnPreDrawListener(n());
         }
     }
 

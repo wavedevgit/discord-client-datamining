@@ -1,7 +1,7 @@
 package com.discord.misc.utilities.coroutines;
 
 import android.view.View;
-import hs.s0;
+import js.s0;
 import kotlin.Metadata;
 import kotlin.coroutines.CoroutineContext;
 import kotlin.jvm.internal.Intrinsics;

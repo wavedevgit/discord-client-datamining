@@ -15,11 +15,11 @@ import org.jetbrains.annotations.NotNull;
 public final class ReflectJavaClassFinder implements JavaClassFinder {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ClassLoader f33670a;
+    private final ClassLoader f33060a;
 
     public ReflectJavaClassFinder(@NotNull ClassLoader classLoader) {
         Intrinsics.checkNotNullParameter(classLoader, "classLoader");
-        this.f33670a = classLoader;
+        this.f33060a = classLoader;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.JavaClassFinder
@@ -31,7 +31,7 @@ public final class ReflectJavaClassFinder implements JavaClassFinder {
         if (!packageFqName.isRoot()) {
             I = packageFqName.asString() + '.' + I;
         }
-        Class<?> tryLoadClass = ReflectJavaClassFinderKt.tryLoadClass(this.f33670a, I);
+        Class<?> tryLoadClass = ReflectJavaClassFinderKt.tryLoadClass(this.f33060a, I);
         if (tryLoadClass != null) {
             return new ReflectJavaClass(tryLoadClass);
         }

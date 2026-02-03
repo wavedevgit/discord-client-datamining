@@ -1,28 +1,7 @@
 package ls;
-
-import kotlin.coroutines.CoroutineContext;
-import kotlinx.coroutines.flow.Flow;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface q extends Flow {
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public static /* synthetic */ Flow a(q qVar, CoroutineContext coroutineContext, int i10, js.a aVar, int i11, Object obj) {
-            if (obj == null) {
-                if ((i11 & 1) != 0) {
-                    coroutineContext = kotlin.coroutines.e.f33148d;
-                }
-                if ((i11 & 2) != 0) {
-                    i10 = -3;
-                }
-                if ((i11 & 4) != 0) {
-                    aVar = js.a.f32204d;
-                }
-                return qVar.g(coroutineContext, i10, aVar);
-            }
-            throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: fuse");
-        }
+public final class q extends IllegalStateException {
+    public q(String str) {
+        super(str);
     }
-
-    Flow g(CoroutineContext coroutineContext, int i10, js.a aVar);
 }

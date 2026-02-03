@@ -54,7 +54,7 @@ public final class SafetySystemNotificationMessageAccessory extends MessageAcces
         }
         if (obj instanceof SafetySystemNotificationMessageAccessory) {
             SafetySystemNotificationMessageAccessory safetySystemNotificationMessageAccessory = (SafetySystemNotificationMessageAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, safetySystemNotificationMessageAccessory.messageId) && Intrinsics.areEqual(this.safetySystemNotificationEmbed, safetySystemNotificationMessageAccessory.safetySystemNotificationEmbed);
+            return MessageId.m1089equalsimpl0(this.messageId, safetySystemNotificationMessageAccessory.messageId) && Intrinsics.areEqual(this.safetySystemNotificationEmbed, safetySystemNotificationMessageAccessory.safetySystemNotificationEmbed);
         }
         return false;
     }
@@ -72,14 +72,14 @@ public final class SafetySystemNotificationMessageAccessory extends MessageAcces
     }
 
     public int hashCode() {
-        return (MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.safetySystemNotificationEmbed.hashCode();
+        return (MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.safetySystemNotificationEmbed.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         SafetySystemNotificationEmbed safetySystemNotificationEmbed = this.safetySystemNotificationEmbed;
-        return "SafetySystemNotificationMessageAccessory(messageId=" + m1093toStringimpl + ", safetySystemNotificationEmbed=" + safetySystemNotificationEmbed + ")";
+        return "SafetySystemNotificationMessageAccessory(messageId=" + m1092toStringimpl + ", safetySystemNotificationEmbed=" + safetySystemNotificationEmbed + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

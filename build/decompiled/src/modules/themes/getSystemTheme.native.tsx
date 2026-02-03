@@ -30,21 +30,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/themes/getSystemTheme.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun27629: for (var _fun27629_ip = 0;;) switch (_fun27629_ip) {
+        _fun27716: for (var _fun27716_ip = 0;;) switch (_fun27716_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = var2.getColorScheme;
                 var2 = var1.bind(var2)();
                 var1 = 'light';
                 if (!(var1 !== var2)) {
-                    _fun27629_ip = 57;
-                    continue _fun27629
+                    _fun27716_ip = 57;
+                    continue _fun27716
                 }
             case 25:
                 var1 = 'dark';
                 if (!(var1 !== var2)) {
-                    _fun27629_ip = 45;
-                    continue _fun27629
+                    _fun27716_ip = 45;
+                    continue _fun27716
                 }
             case 33:
                 var1 = _closure1_slot1;
@@ -62,4 +62,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 3189, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 3198, 2]);

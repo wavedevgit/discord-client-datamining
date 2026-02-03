@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guilds_bar/native/GuildsBarGuildJoinRequestBadge.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun100893: for (var _fun100893_ip = 0;;) switch (_fun100893_ip) {
+        _fun100953: for (var _fun100953_ip = 0;;) switch (_fun100953_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.style;
@@ -91,8 +91,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.GuildJoinRequestApplicationStatuses;
                 var0 = var0.REJECTED;
                 if (!(var0 !== var1)) {
-                    _fun100893_ip = 233;
-                    continue _fun100893
+                    _fun100953_ip = 233;
+                    continue _fun100953
                 }
             case 66:
                 var2 = _closure1_slot0;
@@ -102,8 +102,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.GuildJoinRequestApplicationStatuses;
                 var0 = var0.SUBMITTED;
                 if (!(var0 !== var1)) {
-                    _fun100893_ip = 211;
-                    continue _fun100893
+                    _fun100953_ip = 211;
+                    continue _fun100953
                 }
             case 99:
                 var2 = _closure1_slot0;
@@ -113,8 +113,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.GuildJoinRequestApplicationStatuses;
                 var0 = var0.STARTED;
                 if (!(var0 !== var1)) {
-                    _fun100893_ip = 189;
-                    continue _fun100893
+                    _fun100953_ip = 189;
+                    continue _fun100953
                 }
             case 132:
                 var2 = _closure1_slot0;
@@ -125,8 +125,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.APPROVED;
                 var8 = null;
                 if (!(var0 === var1)) {
-                    _fun100893_ip = 253;
-                    continue _fun100893
+                    _fun100953_ip = 253;
+                    continue _fun100953
                 }
             case 167:
                 var1 = _closure1_slot1;
@@ -134,24 +134,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 10;
                 var0 = var2[var0];
                 var8 = var1.bind(var4)(var0);
-                _fun100893_ip = 253;
-                continue _fun100893;
+                _fun100953_ip = 253;
+                continue _fun100953;
             case 189:
                 var1 = _closure1_slot1;
                 var2 = _closure1_slot2;
                 var0 = 9;
                 var0 = var2[var0];
                 var8 = var1.bind(var4)(var0);
-                _fun100893_ip = 253;
-                continue _fun100893;
+                _fun100953_ip = 253;
+                continue _fun100953;
             case 211:
                 var1 = _closure1_slot1;
                 var2 = _closure1_slot2;
                 var0 = 8;
                 var0 = var2[var0];
                 var8 = var1.bind(var4)(var0);
-                _fun100893_ip = 253;
-                continue _fun100893;
+                _fun100953_ip = 253;
+                continue _fun100953;
             case 233:
                 var1 = _closure1_slot1;
                 var2 = _closure1_slot2;
@@ -162,8 +162,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var1 = var0 == var8;
                 if (var1) {
-                    _fun100893_ip = 355;
-                    continue _fun100893
+                    _fun100953_ip = 355;
+                    continue _fun100953
                 }
             case 262:
                 var3 = _closure1_slot4;
@@ -194,4 +194,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 4867, 3207, 13137, 13138, 13139, 11648, 4699, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 4872, 3216, 13148, 13149, 13150, 11661, 4704, 2]);

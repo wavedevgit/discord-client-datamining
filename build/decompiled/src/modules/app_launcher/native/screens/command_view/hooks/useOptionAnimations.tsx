@@ -318,23 +318,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var3[var2];
         var0.EnteringAnimation = var2;
         var1 = function arg0() {
-            _fun108020: for (var _fun108020_ip = 0;;) switch (_fun108020_ip) {
+            _fun108080: for (var _fun108080_ip = 0;;) switch (_fun108080_ip) {
                 case 0:
                     var1 = arg0;
                     var3 = _closure2_slot0;
                     var2 = var3.get;
                     var2 = var2.bind(var3)();
                     if (var2) {
-                        _fun108020_ip = 43;
-                        continue _fun108020
+                        _fun108080_ip = 43;
+                        continue _fun108080
                     }
                 case 22:
                     var0 = _closure2_slot1;
                     var2 = var0.current;
                     var0 = var2.push;
                     var0 = var0.bind(var2)(var1);
-                    _fun108020_ip = 49;
-                    continue _fun108020;
+                    _fun108080_ip = 49;
+                    continue _fun108080;
                 case 43:
                     var0 = undefined;
                     var0 = var1.bind(var0)();
@@ -348,4 +348,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useOptionEnteringAnimation = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 4088, 3711, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 4097, 3720, 2]);

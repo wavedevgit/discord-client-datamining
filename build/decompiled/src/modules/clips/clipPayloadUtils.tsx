@@ -63,4 +63,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getClipParticipantIds = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3492, 21, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3501, 21, 2]);

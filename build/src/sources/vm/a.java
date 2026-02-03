@@ -1,10 +1,37 @@
 package vm;
+
+import com.squareup.moshi.h;
+import com.squareup.moshi.j;
+import com.squareup.moshi.m;
+import com.squareup.moshi.t;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a {
+public final class a extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private e f51359a = new e();
+    private final h f51687a;
 
-    /* renamed from: b  reason: collision with root package name */
-    private e f51360b = new e();
+    public a(h hVar) {
+        this.f51687a = hVar;
+    }
+
+    @Override // com.squareup.moshi.h
+    public Object fromJson(m mVar) {
+        if (mVar.E() != m.c.NULL) {
+            return this.f51687a.fromJson(mVar);
+        }
+        throw new j("Unexpected null at " + mVar.q());
+    }
+
+    @Override // com.squareup.moshi.h
+    public void toJson(t tVar, Object obj) {
+        if (obj != null) {
+            this.f51687a.toJson(tVar, obj);
+            return;
+        }
+        throw new j("Unexpected null at " + tVar.q());
+    }
+
+    public String toString() {
+        return this.f51687a + ".nonNull()";
+    }
 }

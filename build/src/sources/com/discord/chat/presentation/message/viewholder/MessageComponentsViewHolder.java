@@ -45,49 +45,49 @@ public final class MessageComponentsViewHolder extends MessagePartViewHolder {
         Intrinsics.checkNotNullParameter(url, "url");
         Intrinsics.checkNotNullParameter(title, "title");
         chatEventHandler.mo440onLinkClickedu7_MRrM(str, url, title);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bind$lambda$1(ChatEventHandler chatEventHandler, String str, LinkContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
         chatEventHandler.mo439onLinkClickedntcYbpo(str, node);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bind$lambda$2(ChatEventHandler chatEventHandler, String str, String componentId) {
         Intrinsics.checkNotNullParameter(componentId, "componentId");
         chatEventHandler.mo451onTapButtonActionComponentntcYbpo(str, componentId);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bind$lambda$3(ChatEventHandler chatEventHandler, String str, String url) {
         Intrinsics.checkNotNullParameter(url, "url");
         chatEventHandler.mo440onLinkClickedu7_MRrM(str, url, "");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bind$lambda$4(ChatEventHandler chatEventHandler, String str, String componentId) {
         Intrinsics.checkNotNullParameter(componentId, "componentId");
         chatEventHandler.mo480onTapSelectActionComponentntcYbpo(str, componentId);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bind$lambda$5(ChatEventHandler chatEventHandler, String str, UserId userId, String contentId, String tappedElement) {
         Intrinsics.checkNotNullParameter(contentId, "contentId");
         Intrinsics.checkNotNullParameter(tappedElement, "tappedElement");
-        chatEventHandler.mo456onTapContentInventoryEntryEmbedtsfjtEQ(str, userId.m1147unboximpl(), contentId, tappedElement);
-        return Unit.f33074a;
+        chatEventHandler.mo456onTapContentInventoryEntryEmbedtsfjtEQ(str, userId.m1146unboximpl(), contentId, tappedElement);
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bind$lambda$6(ChatEventHandler chatEventHandler, String str, UserId userId) {
-        chatEventHandler.mo454onTapCheckpointCardx5gers8(str, userId.m1147unboximpl());
-        return Unit.f33074a;
+        chatEventHandler.mo454onTapCheckpointCardx5gers8(str, userId.m1146unboximpl());
+        return Unit.f32464a;
     }
 
     public final void bind(@NotNull MessageComponentsAccessory componentsComponentsAccessory, ComponentProvider componentProvider, @NotNull Function4 onMediaItemClicked, Function2<? super String, ? super Integer, Unit> function2, @NotNull Function0<Unit> onTapSpoiler, @NotNull Function1<? super Boolean, Unit> onTapObscureToggle, @NotNull final ChatEventHandler eventHandler) {
@@ -109,7 +109,7 @@ public final class MessageComponentsViewHolder extends MessagePartViewHolder {
         }
         int width = MessageMargins.Companion.getWidth(componentsComponentsAccessory.getMargins(), constrainedWidth, z10);
         MessageMargins margins = componentsComponentsAccessory.getMargins();
-        String m1093toStringimpl = MessageId.m1093toStringimpl(mo538getMessageId3Eiw7ao);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(mo538getMessageId3Eiw7ao);
         GeneralEventHandlers generalEventHandlers = new GeneralEventHandlers(new Function2() { // from class: com.discord.chat.presentation.message.viewholder.w
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(Object obj, Object obj2) {
@@ -118,7 +118,7 @@ public final class MessageComponentsViewHolder extends MessagePartViewHolder {
                 return bind$lambda$0;
             }
         }, onTapSpoiler);
-        MarkdownTextRenderOptions markdownTextRenderOptions = new MarkdownTextRenderOptions(MessageId.m1093toStringimpl(message.m239getId3Eiw7ao()), MessageKt.shouldAnimateEmoji(message), MessageKt.shouldShowLinkDecorations(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName());
+        MarkdownTextRenderOptions markdownTextRenderOptions = new MarkdownTextRenderOptions(MessageId.m1092toStringimpl(message.m239getId3Eiw7ao()), MessageKt.shouldAnimateEmoji(message), MessageKt.shouldShowLinkDecorations(message), message.getShouldShowRoleDot(), message.getShouldShowRoleOnName());
         MarkdownTextRenderEventHandlers markdownTextRenderEventHandlers = new MarkdownTextRenderEventHandlers(new Function1() { // from class: com.discord.chat.presentation.message.viewholder.x
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
@@ -176,6 +176,6 @@ public final class MessageComponentsViewHolder extends MessagePartViewHolder {
         } else {
             z12 = false;
         }
-        this.messageComponentsView.setComponents(componentsComponentsAccessory.getMessageComponents(), componentProvider, new ComponentContext(margins, m1093toStringimpl, generalEventHandlers, markdownTextRenderOptions, markdownTextRenderEventHandlers, mediaItemEventHandlers, componentActionEventHandlers, widthInfo, z11, z12, false, false));
+        this.messageComponentsView.setComponents(componentsComponentsAccessory.getMessageComponents(), componentProvider, new ComponentContext(margins, m1092toStringimpl, generalEventHandlers, markdownTextRenderOptions, markdownTextRenderEventHandlers, mediaItemEventHandlers, componentActionEventHandlers, widthInfo, z11, z12, false, false));
     }
 }

@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import jr.v;
 import kotlin.collections.o0;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.reflect.jvm.internal.impl.name.ClassId;
 import kotlin.reflect.jvm.internal.impl.name.FqName;
 import kotlin.reflect.jvm.internal.impl.name.StandardClassIds;
+import lr.v;
 import org.jetbrains.annotations.NotNull;
 @SourceDebugExtension({"SMAP\nFakePureImplementationsProvider.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FakePureImplementationsProvider.kt\norg/jetbrains/kotlin/load/java/FakePureImplementationsProvider\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n+ 4 _Maps.kt\nkotlin/collections/MapsKt___MapsKt\n*L\n1#1,38:1\n1299#2,4:39\n11228#3:43\n11563#3,3:44\n126#4:47\n153#4,3:48\n*S KotlinDebug\n*F\n+ 1 FakePureImplementationsProvider.kt\norg/jetbrains/kotlin/load/java/FakePureImplementationsProvider\n*L\n18#1:39,4\n36#1:43\n36#1:44,3\n32#1:47\n32#1:48,3\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -19,16 +19,16 @@ public final class FakePureImplementationsProvider {
     public static final FakePureImplementationsProvider INSTANCE;
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f33759a;
+    private static final Map f33149a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Map f33760b;
+    private static final Map f33150b;
 
     static {
         FakePureImplementationsProvider fakePureImplementationsProvider = new FakePureImplementationsProvider();
         INSTANCE = fakePureImplementationsProvider;
         LinkedHashMap linkedHashMap = new LinkedHashMap();
-        f33759a = linkedHashMap;
+        f33149a = linkedHashMap;
         StandardClassIds standardClassIds = StandardClassIds.INSTANCE;
         fakePureImplementationsProvider.b(standardClassIds.getMutableList(), fakePureImplementationsProvider.a("java.util.ArrayList", "java.util.LinkedList"));
         fakePureImplementationsProvider.b(standardClassIds.getMutableSet(), fakePureImplementationsProvider.a("java.util.HashSet", "java.util.TreeSet", "java.util.LinkedHashSet"));
@@ -40,7 +40,7 @@ public final class FakePureImplementationsProvider {
         for (Map.Entry entry : linkedHashMap.entrySet()) {
             arrayList.add(v.a(((ClassId) entry.getKey()).asSingleFqName(), ((ClassId) entry.getValue()).asSingleFqName()));
         }
-        f33760b = o0.u(arrayList);
+        f33150b = o0.u(arrayList);
     }
 
     private FakePureImplementationsProvider() {
@@ -55,7 +55,7 @@ public final class FakePureImplementationsProvider {
     }
 
     private final void b(ClassId classId, List list) {
-        Map map = f33759a;
+        Map map = f33149a;
         for (Object obj : list) {
             ClassId classId2 = (ClassId) obj;
             map.put(obj, classId);
@@ -64,6 +64,6 @@ public final class FakePureImplementationsProvider {
 
     public final FqName getPurelyImplementedInterface(@NotNull FqName classFqName) {
         Intrinsics.checkNotNullParameter(classFqName, "classFqName");
-        return (FqName) f33760b.get(classFqName);
+        return (FqName) f33150b.get(classFqName);
     }
 }

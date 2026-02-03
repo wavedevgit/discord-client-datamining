@@ -6,16 +6,16 @@ import java.util.List;
 public final class s implements r {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r3.u f44990a;
+    private final r3.u f44948a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r3.i f44991b;
+    private final r3.i f44949b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final r3.a0 f44992c;
+    private final r3.a0 f44950c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final r3.a0 f44993d;
+    private final r3.a0 f44951d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends r3.i {
@@ -64,10 +64,10 @@ public final class s implements r {
     }
 
     public s(r3.u uVar) {
-        this.f44990a = uVar;
-        this.f44991b = new a(uVar);
-        this.f44992c = new b(uVar);
-        this.f44993d = new c(uVar);
+        this.f44948a = uVar;
+        this.f44949b = new a(uVar);
+        this.f44950c = new b(uVar);
+        this.f44951d = new c(uVar);
     }
 
     public static List c() {
@@ -76,34 +76,34 @@ public final class s implements r {
 
     @Override // p4.r
     public void a(String str) {
-        this.f44990a.d();
-        x3.k b10 = this.f44992c.b();
+        this.f44948a.d();
+        x3.k b10 = this.f44950c.b();
         if (str == null) {
             b10.P1(1);
         } else {
             b10.h1(1, str);
         }
-        this.f44990a.e();
+        this.f44948a.e();
         try {
             b10.R();
-            this.f44990a.A();
+            this.f44948a.A();
         } finally {
-            this.f44990a.i();
-            this.f44992c.h(b10);
+            this.f44948a.i();
+            this.f44950c.h(b10);
         }
     }
 
     @Override // p4.r
     public void b() {
-        this.f44990a.d();
-        x3.k b10 = this.f44993d.b();
-        this.f44990a.e();
+        this.f44948a.d();
+        x3.k b10 = this.f44951d.b();
+        this.f44948a.e();
         try {
             b10.R();
-            this.f44990a.A();
+            this.f44948a.A();
         } finally {
-            this.f44990a.i();
-            this.f44993d.h(b10);
+            this.f44948a.i();
+            this.f44951d.h(b10);
         }
     }
 }

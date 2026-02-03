@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function0;
 public class a implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final GivenFunctionsMemberScope f35302d;
+    private final GivenFunctionsMemberScope f34692d;
 
     public a(GivenFunctionsMemberScope givenFunctionsMemberScope) {
-        this.f35302d = givenFunctionsMemberScope;
+        this.f34692d = givenFunctionsMemberScope;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         List b10;
-        b10 = GivenFunctionsMemberScope.b(this.f35302d);
+        b10 = GivenFunctionsMemberScope.b(this.f34692d);
         return b10;
     }
 }

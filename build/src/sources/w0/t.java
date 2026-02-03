@@ -10,7 +10,7 @@ import org.jetbrains.annotations.NotNull;
 public final class t extends z implements Parcelable {
 
     /* renamed from: o  reason: collision with root package name */
-    public static final b f51598o = new b(null);
+    public static final b f51820o = new b(null);
     @NotNull
     public static final Parcelable.Creator<t> CREATOR = new a();
 

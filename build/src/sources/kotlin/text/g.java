@@ -9,22 +9,22 @@ import kotlin.jvm.internal.markers.KMappedMarker;
 final class g implements Iterator, KMappedMarker {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final a f36041q = new a(null);
+    private static final a f35431q = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final CharSequence f36042d;
+    private final CharSequence f35432d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f36043e;
+    private int f35433e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f36044i;
+    private int f35434i;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f36045o;
+    private int f35435o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f36046p;
+    private int f35436p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static final class a {
@@ -38,18 +38,18 @@ final class g implements Iterator, KMappedMarker {
 
     public g(CharSequence string) {
         Intrinsics.checkNotNullParameter(string, "string");
-        this.f36042d = string;
+        this.f35432d = string;
     }
 
     @Override // java.util.Iterator
     /* renamed from: a */
     public String next() {
         if (hasNext()) {
-            this.f36043e = 0;
-            int i10 = this.f36045o;
-            int i11 = this.f36044i;
-            this.f36044i = this.f36046p + i10;
-            return this.f36042d.subSequence(i11, i10).toString();
+            this.f35433e = 0;
+            int i10 = this.f35435o;
+            int i11 = this.f35434i;
+            this.f35434i = this.f35436p + i10;
+            return this.f35432d.subSequence(i11, i10).toString();
         }
         throw new NoSuchElementException();
     }
@@ -57,7 +57,7 @@ final class g implements Iterator, KMappedMarker {
     @Override // java.util.Iterator
     public boolean hasNext() {
         int i10;
-        int i11 = this.f36043e;
+        int i11 = this.f35433e;
         if (i11 != 0) {
             if (i11 != 1) {
                 return false;
@@ -65,27 +65,27 @@ final class g implements Iterator, KMappedMarker {
             return true;
         }
         int i12 = 2;
-        if (this.f36046p < 0) {
-            this.f36043e = 2;
+        if (this.f35436p < 0) {
+            this.f35433e = 2;
             return false;
         }
-        int length = this.f36042d.length();
-        int length2 = this.f36042d.length();
-        for (int i13 = this.f36044i; i13 < length2; i13++) {
-            char charAt = this.f36042d.charAt(i13);
+        int length = this.f35432d.length();
+        int length2 = this.f35432d.length();
+        for (int i13 = this.f35434i; i13 < length2; i13++) {
+            char charAt = this.f35432d.charAt(i13);
             if (charAt == '\n' || charAt == '\r') {
-                i12 = (charAt == '\r' && (i10 = i13 + 1) < this.f36042d.length() && this.f36042d.charAt(i10) == '\n') ? 1 : 1;
+                i12 = (charAt == '\r' && (i10 = i13 + 1) < this.f35432d.length() && this.f35432d.charAt(i10) == '\n') ? 1 : 1;
                 length = i13;
-                this.f36043e = 1;
-                this.f36046p = i12;
-                this.f36045o = length;
+                this.f35433e = 1;
+                this.f35436p = i12;
+                this.f35435o = length;
                 return true;
             }
         }
         i12 = -1;
-        this.f36043e = 1;
-        this.f36046p = i12;
-        this.f36045o = length;
+        this.f35433e = 1;
+        this.f35436p = i12;
+        this.f35435o = length;
         return true;
     }
 

@@ -11,19 +11,19 @@ import kotlinx.coroutines.CoroutineScope;
 public final class k extends j implements m {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Lifecycle f4542d;
+    private final Lifecycle f4511d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final CoroutineContext f4543e;
+    private final CoroutineContext f4512e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f4544d;
+        int f4513d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f4545e;
+        private /* synthetic */ Object f4514e;
 
         a(Continuation continuation) {
             super(2, continuation);
@@ -32,60 +32,60 @@ public final class k extends j implements m {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             a aVar = new a(continuation);
-            aVar.f4545e = obj;
+            aVar.f4514e = obj;
             return aVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            pr.b.f();
-            if (this.f4544d == 0) {
+            rr.b.f();
+            if (this.f4513d == 0) {
                 kotlin.c.b(obj);
-                CoroutineScope coroutineScope = (CoroutineScope) this.f4545e;
-                if (k.this.a().b().compareTo(Lifecycle.State.f4437e) < 0) {
+                CoroutineScope coroutineScope = (CoroutineScope) this.f4514e;
+                if (k.this.a().b().compareTo(Lifecycle.State.f4406e) < 0) {
                     kotlinx.coroutines.a0.e(coroutineScope.getCoroutineContext(), null, 1, null);
                 } else {
                     k.this.a().a(k.this);
                 }
-                return Unit.f33074a;
+                return Unit.f32464a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32464a);
         }
     }
 
     public k(Lifecycle lifecycle, CoroutineContext coroutineContext) {
         Intrinsics.checkNotNullParameter(lifecycle, "lifecycle");
         Intrinsics.checkNotNullParameter(coroutineContext, "coroutineContext");
-        this.f4542d = lifecycle;
-        this.f4543e = coroutineContext;
-        if (a().b() == Lifecycle.State.f4436d) {
+        this.f4511d = lifecycle;
+        this.f4512e = coroutineContext;
+        if (a().b() == Lifecycle.State.f4405d) {
             kotlinx.coroutines.a0.e(getCoroutineContext(), null, 1, null);
         }
     }
 
     public Lifecycle a() {
-        return this.f4542d;
+        return this.f4511d;
     }
 
     public final void b() {
-        hs.g.d(this, hs.m0.c().f2(), null, new a(null), 2, null);
+        js.g.d(this, js.m0.c().f2(), null, new a(null), 2, null);
     }
 
     @Override // kotlinx.coroutines.CoroutineScope
     public CoroutineContext getCoroutineContext() {
-        return this.f4543e;
+        return this.f4512e;
     }
 
     @Override // androidx.lifecycle.m
     public void h(LifecycleOwner source, Lifecycle.a event) {
         Intrinsics.checkNotNullParameter(source, "source");
         Intrinsics.checkNotNullParameter(event, "event");
-        if (a().b().compareTo(Lifecycle.State.f4436d) <= 0) {
+        if (a().b().compareTo(Lifecycle.State.f4405d) <= 0) {
             a().d(this);
             kotlinx.coroutines.a0.e(getCoroutineContext(), null, 1, null);
         }

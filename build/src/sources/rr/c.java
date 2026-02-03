@@ -1,59 +1,171 @@
 package rr;
+
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
+import kotlin.coroutines.e;
+import kotlin.coroutines.jvm.internal.g;
+import kotlin.coroutines.jvm.internal.i;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.functions.Function3;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.TypeIntrinsics;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class c {
-    private static final int a(int i10, int i11, int i12) {
-        return e(e(i10, i12) - e(i11, i12), i12);
+public class c {
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a extends i {
+
+        /* renamed from: d  reason: collision with root package name */
+        private int f49060d;
+
+        /* renamed from: e  reason: collision with root package name */
+        final /* synthetic */ Function2 f49061e;
+
+        /* renamed from: i  reason: collision with root package name */
+        final /* synthetic */ Object f49062i;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public a(Continuation continuation, Function2 function2, Object obj) {
+            super(continuation);
+            this.f49061e = function2;
+            this.f49062i = obj;
+            Intrinsics.checkNotNull(continuation, "null cannot be cast to non-null type kotlin.coroutines.Continuation<kotlin.Any?>");
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        protected Object invokeSuspend(Object obj) {
+            int i10 = this.f49060d;
+            if (i10 != 0) {
+                if (i10 == 1) {
+                    this.f49060d = 2;
+                    kotlin.c.b(obj);
+                    return obj;
+                }
+                throw new IllegalStateException("This coroutine had already completed");
+            }
+            this.f49060d = 1;
+            kotlin.c.b(obj);
+            Intrinsics.checkNotNull(this.f49061e, "null cannot be cast to non-null type kotlin.Function2<R of kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt.createCoroutineUnintercepted, kotlin.coroutines.Continuation<T of kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt.createCoroutineUnintercepted>, kotlin.Any?>");
+            return ((Function2) TypeIntrinsics.beforeCheckcastToFunctionOfArity(this.f49061e, 2)).invoke(this.f49062i, this);
+        }
     }
 
-    private static final long b(long j10, long j11, long j12) {
-        return f(f(j10, j12) - f(j11, j12), j12);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class b extends kotlin.coroutines.jvm.internal.d {
+
+        /* renamed from: d  reason: collision with root package name */
+        private int f49063d;
+
+        /* renamed from: e  reason: collision with root package name */
+        final /* synthetic */ Function2 f49064e;
+
+        /* renamed from: i  reason: collision with root package name */
+        final /* synthetic */ Object f49065i;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public b(Continuation continuation, CoroutineContext coroutineContext, Function2 function2, Object obj) {
+            super(continuation, coroutineContext);
+            this.f49064e = function2;
+            this.f49065i = obj;
+            Intrinsics.checkNotNull(continuation, "null cannot be cast to non-null type kotlin.coroutines.Continuation<kotlin.Any?>");
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        protected Object invokeSuspend(Object obj) {
+            int i10 = this.f49063d;
+            if (i10 != 0) {
+                if (i10 == 1) {
+                    this.f49063d = 2;
+                    kotlin.c.b(obj);
+                    return obj;
+                }
+                throw new IllegalStateException("This coroutine had already completed");
+            }
+            this.f49063d = 1;
+            kotlin.c.b(obj);
+            Intrinsics.checkNotNull(this.f49064e, "null cannot be cast to non-null type kotlin.Function2<R of kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt.createCoroutineUnintercepted, kotlin.coroutines.Continuation<T of kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt.createCoroutineUnintercepted>, kotlin.Any?>");
+            return ((Function2) TypeIntrinsics.beforeCheckcastToFunctionOfArity(this.f49064e, 2)).invoke(this.f49065i, this);
+        }
     }
 
-    public static final int c(int i10, int i11, int i12) {
-        if (i12 > 0) {
-            if (i10 < i11) {
-                return i11 - a(i11, i10, i12);
-            }
-        } else if (i12 < 0) {
-            if (i10 > i11) {
-                return i11 + a(i10, i11, -i12);
-            }
+    /* renamed from: rr.c$c  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0607c extends i {
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        C0607c(Continuation continuation) {
+            super(continuation);
+            Intrinsics.checkNotNull(continuation, "null cannot be cast to non-null type kotlin.coroutines.Continuation<kotlin.Any?>");
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        protected Object invokeSuspend(Object obj) {
+            kotlin.c.b(obj);
+            return obj;
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class d extends kotlin.coroutines.jvm.internal.d {
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        d(Continuation continuation, CoroutineContext coroutineContext) {
+            super(continuation, coroutineContext);
+            Intrinsics.checkNotNull(continuation, "null cannot be cast to non-null type kotlin.coroutines.Continuation<kotlin.Any?>");
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        protected Object invokeSuspend(Object obj) {
+            kotlin.c.b(obj);
+            return obj;
+        }
+    }
+
+    public static Continuation a(Function2 function2, Object obj, Continuation completion) {
+        Intrinsics.checkNotNullParameter(function2, "<this>");
+        Intrinsics.checkNotNullParameter(completion, "completion");
+        Continuation<?> a10 = g.a(completion);
+        if (function2 instanceof kotlin.coroutines.jvm.internal.a) {
+            return ((kotlin.coroutines.jvm.internal.a) function2).create(obj, a10);
+        }
+        CoroutineContext context = a10.getContext();
+        if (context == e.f32538d) {
+            return new a(a10, function2, obj);
+        }
+        return new b(a10, context, function2, obj);
+    }
+
+    private static final Continuation b(Continuation continuation) {
+        CoroutineContext context = continuation.getContext();
+        if (context == e.f32538d) {
+            return new C0607c(continuation);
+        }
+        return new d(continuation, context);
+    }
+
+    public static Continuation c(Continuation continuation) {
+        kotlin.coroutines.jvm.internal.d dVar;
+        Continuation<Object> intercepted;
+        Intrinsics.checkNotNullParameter(continuation, "<this>");
+        if (continuation instanceof kotlin.coroutines.jvm.internal.d) {
+            dVar = (kotlin.coroutines.jvm.internal.d) continuation;
         } else {
-            throw new IllegalArgumentException("Step is zero.");
+            dVar = null;
         }
-        return i11;
+        if (dVar != null && (intercepted = dVar.intercepted()) != null) {
+            return intercepted;
+        }
+        return continuation;
     }
 
-    public static final long d(long j10, long j11, long j12) {
-        int i10 = (j12 > 0L ? 1 : (j12 == 0L ? 0 : -1));
-        if (i10 > 0) {
-            if (j10 >= j11) {
-                return j11;
-            }
-            return j11 - b(j11, j10, j12);
-        } else if (i10 < 0) {
-            if (j10 <= j11) {
-                return j11;
-            }
-            return j11 + b(j10, j11, -j12);
-        } else {
-            throw new IllegalArgumentException("Step is zero.");
-        }
+    public static Object d(Function2 function2, Object obj, Continuation completion) {
+        Intrinsics.checkNotNullParameter(function2, "<this>");
+        Intrinsics.checkNotNullParameter(completion, "completion");
+        return ((Function2) TypeIntrinsics.beforeCheckcastToFunctionOfArity(function2, 2)).invoke(obj, b(g.a(completion)));
     }
 
-    private static final int e(int i10, int i11) {
-        int i12 = i10 % i11;
-        if (i12 >= 0) {
-            return i12;
-        }
-        return i12 + i11;
-    }
-
-    private static final long f(long j10, long j11) {
-        long j12 = j10 % j11;
-        if (j12 >= 0) {
-            return j12;
-        }
-        return j12 + j11;
+    public static Object e(Function3 function3, Object obj, Object obj2, Continuation completion) {
+        Intrinsics.checkNotNullParameter(function3, "<this>");
+        Intrinsics.checkNotNullParameter(completion, "completion");
+        return ((Function3) TypeIntrinsics.beforeCheckcastToFunctionOfArity(function3, 3)).invoke(obj, obj2, b(g.a(completion)));
     }
 }

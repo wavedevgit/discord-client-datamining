@@ -13,40 +13,40 @@ import o8.m;
 public class DiskCacheConfig {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f10560a;
+    private final int f9528a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f10561b;
+    private final String f9529b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Supplier f10562c;
+    private final Supplier f9530c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f10563d;
+    private final long f9531d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final long f10564e;
+    private final long f9532e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final long f10565f;
+    private final long f9533f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final i f10566g;
+    private final i f9534g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final i8.a f10567h;
+    private final i8.a f9535h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final c f10568i;
+    private final c f9536i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final l8.b f10569j;
+    private final l8.b f9537j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final Context f10570k;
+    private final Context f9538k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final boolean f10571l;
+    private final boolean f9539l;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Supplier {
@@ -56,8 +56,8 @@ public class DiskCacheConfig {
         @Override // com.facebook.common.internal.Supplier
         /* renamed from: a */
         public File get() {
-            j.g(DiskCacheConfig.this.f10570k);
-            return DiskCacheConfig.this.f10570k.getApplicationContext().getCacheDir();
+            j.g(DiskCacheConfig.this.f9538k);
+            return DiskCacheConfig.this.f9538k.getApplicationContext().getCacheDir();
         }
     }
 
@@ -65,68 +65,68 @@ public class DiskCacheConfig {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private int f10573a;
+        private int f9541a;
 
         /* renamed from: b  reason: collision with root package name */
-        private String f10574b;
+        private String f9542b;
 
         /* renamed from: c  reason: collision with root package name */
-        private Supplier f10575c;
+        private Supplier f9543c;
 
         /* renamed from: d  reason: collision with root package name */
-        private long f10576d;
+        private long f9544d;
 
         /* renamed from: e  reason: collision with root package name */
-        private long f10577e;
+        private long f9545e;
 
         /* renamed from: f  reason: collision with root package name */
-        private long f10578f;
+        private long f9546f;
 
         /* renamed from: g  reason: collision with root package name */
-        private i f10579g;
+        private i f9547g;
 
         /* renamed from: h  reason: collision with root package name */
-        private i8.a f10580h;
+        private i8.a f9548h;
 
         /* renamed from: i  reason: collision with root package name */
-        private c f10581i;
+        private c f9549i;
 
         /* renamed from: j  reason: collision with root package name */
-        private l8.b f10582j;
+        private l8.b f9550j;
 
         /* renamed from: k  reason: collision with root package name */
-        private boolean f10583k;
+        private boolean f9551k;
 
         /* renamed from: l  reason: collision with root package name */
-        private final Context f10584l;
+        private final Context f9552l;
 
         public DiskCacheConfig n() {
             return new DiskCacheConfig(this);
         }
 
         public b o(String str) {
-            this.f10574b = str;
+            this.f9542b = str;
             return this;
         }
 
         public b p(File file) {
-            this.f10575c = m.a(file);
+            this.f9543c = m.a(file);
             return this;
         }
 
         public b q(long j10) {
-            this.f10576d = j10;
+            this.f9544d = j10;
             return this;
         }
 
         private b(Context context) {
-            this.f10573a = 1;
-            this.f10574b = "image_cache";
-            this.f10576d = 41943040L;
-            this.f10577e = 10485760L;
-            this.f10578f = 2097152L;
-            this.f10579g = new j8.c();
-            this.f10584l = context;
+            this.f9541a = 1;
+            this.f9542b = "image_cache";
+            this.f9544d = 41943040L;
+            this.f9545e = 10485760L;
+            this.f9546f = 2097152L;
+            this.f9547g = new j8.c();
+            this.f9552l = context;
         }
     }
 
@@ -135,43 +135,43 @@ public class DiskCacheConfig {
         i8.a aVar;
         c cVar;
         l8.b bVar2;
-        Context context = bVar.f10584l;
-        this.f10570k = context;
-        if (bVar.f10575c == null && context == null) {
+        Context context = bVar.f9552l;
+        this.f9538k = context;
+        if (bVar.f9543c == null && context == null) {
             z10 = false;
         } else {
             z10 = true;
         }
         j.j(z10, "Either a non-null context or a base directory path or supplier must be provided.");
-        if (bVar.f10575c == null && context != null) {
-            bVar.f10575c = new a();
+        if (bVar.f9543c == null && context != null) {
+            bVar.f9543c = new a();
         }
-        this.f10560a = bVar.f10573a;
-        this.f10561b = (String) j.g(bVar.f10574b);
-        this.f10562c = (Supplier) j.g(bVar.f10575c);
-        this.f10563d = bVar.f10576d;
-        this.f10564e = bVar.f10577e;
-        this.f10565f = bVar.f10578f;
-        this.f10566g = (i) j.g(bVar.f10579g);
-        if (bVar.f10580h != null) {
-            aVar = bVar.f10580h;
+        this.f9528a = bVar.f9541a;
+        this.f9529b = (String) j.g(bVar.f9542b);
+        this.f9530c = (Supplier) j.g(bVar.f9543c);
+        this.f9531d = bVar.f9544d;
+        this.f9532e = bVar.f9545e;
+        this.f9533f = bVar.f9546f;
+        this.f9534g = (i) j.g(bVar.f9547g);
+        if (bVar.f9548h != null) {
+            aVar = bVar.f9548h;
         } else {
             aVar = f.b();
         }
-        this.f10567h = aVar;
-        if (bVar.f10581i != null) {
-            cVar = bVar.f10581i;
+        this.f9535h = aVar;
+        if (bVar.f9549i != null) {
+            cVar = bVar.f9549i;
         } else {
             cVar = g.i();
         }
-        this.f10568i = cVar;
-        if (bVar.f10582j != null) {
-            bVar2 = bVar.f10582j;
+        this.f9536i = cVar;
+        if (bVar.f9550j != null) {
+            bVar2 = bVar.f9550j;
         } else {
             bVar2 = l8.c.b();
         }
-        this.f10569j = bVar2;
-        this.f10571l = bVar.f10583k;
+        this.f9537j = bVar2;
+        this.f9539l = bVar.f9551k;
     }
 
     public static b m(Context context) {
@@ -179,46 +179,46 @@ public class DiskCacheConfig {
     }
 
     public String b() {
-        return this.f10561b;
+        return this.f9529b;
     }
 
     public Supplier c() {
-        return this.f10562c;
+        return this.f9530c;
     }
 
     public i8.a d() {
-        return this.f10567h;
+        return this.f9535h;
     }
 
     public c e() {
-        return this.f10568i;
+        return this.f9536i;
     }
 
     public long f() {
-        return this.f10563d;
+        return this.f9531d;
     }
 
     public l8.b g() {
-        return this.f10569j;
+        return this.f9537j;
     }
 
     public i h() {
-        return this.f10566g;
+        return this.f9534g;
     }
 
     public boolean i() {
-        return this.f10571l;
+        return this.f9539l;
     }
 
     public long j() {
-        return this.f10564e;
+        return this.f9532e;
     }
 
     public long k() {
-        return this.f10565f;
+        return this.f9533f;
     }
 
     public int l() {
-        return this.f10560a;
+        return this.f9528a;
     }
 }

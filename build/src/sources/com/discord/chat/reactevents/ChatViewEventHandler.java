@@ -55,8 +55,8 @@ public class ChatViewEventHandler implements ChatEventHandler {
         this.onMessageLongPressed = new Function6() { // from class: com.discord.chat.reactevents.ChatViewEventHandler$onMessageLongPressed$1
             @Override // kotlin.jvm.functions.Function6
             public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3, Object obj4, Object obj5, Object obj6) {
-                m732invokeeTS4JUY(((MessageId) obj).m1095unboximpl(), ((ChannelId) obj2).m1069unboximpl(), (Integer) obj3, (MediaType) obj4, (String) obj5, (Integer) obj6);
-                return Unit.f33074a;
+                m732invokeeTS4JUY(((MessageId) obj).m1094unboximpl(), ((ChannelId) obj2).m1068unboximpl(), (Integer) obj3, (MediaType) obj4, (String) obj5, (Integer) obj6);
+                return Unit.f32464a;
             }
 
             /* renamed from: invoke-eTS4JUY  reason: not valid java name */
@@ -65,21 +65,21 @@ public class ChatViewEventHandler implements ChatEventHandler {
                 int i10;
                 Intrinsics.checkNotNullParameter(messageId, "messageId");
                 function1 = ChatViewEventHandler.this.emitReactEvent;
-                String m1093toStringimpl = MessageId.m1093toStringimpl(messageId);
-                String m1067toStringimpl = ChannelId.m1067toStringimpl(j10);
+                String m1092toStringimpl = MessageId.m1092toStringimpl(messageId);
+                String m1066toStringimpl = ChannelId.m1066toStringimpl(j10);
                 if (num != null) {
                     i10 = num.intValue();
                 } else {
                     i10 = 0;
                 }
-                function1.invoke(new LongPressMessageEvent(m1093toStringimpl, m1067toStringimpl, i10, (mediaType == null || (r4 = mediaType.getType()) == null) ? "" : "", str, num2));
+                function1.invoke(new LongPressMessageEvent(m1092toStringimpl, m1066toStringimpl, i10, (mediaType == null || (r4 = mediaType.getType()) == null) ? "" : "", str, num2));
             }
         };
         this.onMessageTapped = new Function2<MessageId, ChannelId, Unit>() { // from class: com.discord.chat.reactevents.ChatViewEventHandler$onMessageTapped$1
             @Override // kotlin.jvm.functions.Function2
             public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-                m733invokepfaIj0E(((MessageId) obj).m1095unboximpl(), ((ChannelId) obj2).m1069unboximpl());
-                return Unit.f33074a;
+                m733invokepfaIj0E(((MessageId) obj).m1094unboximpl(), ((ChannelId) obj2).m1068unboximpl());
+                return Unit.f32464a;
             }
 
             /* renamed from: invoke-pfaIj0E  reason: not valid java name */
@@ -87,14 +87,14 @@ public class ChatViewEventHandler implements ChatEventHandler {
                 Function1 function1;
                 Intrinsics.checkNotNullParameter(messageId, "messageId");
                 function1 = ChatViewEventHandler.this.emitReactEvent;
-                function1.invoke(new TapMessageData(MessageId.m1093toStringimpl(messageId), ChannelId.m1067toStringimpl(j10)));
+                function1.invoke(new TapMessageData(MessageId.m1092toStringimpl(messageId), ChannelId.m1066toStringimpl(j10)));
             }
         };
         this.onMessageDoubleTapped = new Function2<MessageId, ChannelId, Unit>() { // from class: com.discord.chat.reactevents.ChatViewEventHandler$onMessageDoubleTapped$1
             @Override // kotlin.jvm.functions.Function2
             public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-                m731invokepfaIj0E(((MessageId) obj).m1095unboximpl(), ((ChannelId) obj2).m1069unboximpl());
-                return Unit.f33074a;
+                m731invokepfaIj0E(((MessageId) obj).m1094unboximpl(), ((ChannelId) obj2).m1068unboximpl());
+                return Unit.f32464a;
             }
 
             /* renamed from: invoke-pfaIj0E  reason: not valid java name */
@@ -102,7 +102,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
                 Function1 function1;
                 Intrinsics.checkNotNullParameter(messageId, "messageId");
                 function1 = ChatViewEventHandler.this.emitReactEvent;
-                function1.invoke(new DoubleTapMessageEvent(MessageId.m1093toStringimpl(messageId), ChannelId.m1067toStringimpl(j10)));
+                function1.invoke(new DoubleTapMessageEvent(MessageId.m1092toStringimpl(messageId), ChannelId.m1066toStringimpl(j10)));
             }
         };
     }
@@ -112,7 +112,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
         Intrinsics.checkNotNullParameter(event, "event");
         Intrinsics.checkNotNull(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
         reactEvents.emitEvent((ReactContext) context, ((Number) function0.invoke()).intValue(), event);
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -218,7 +218,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
     /* renamed from: onLongPressAvatar-x5gers8 */
     public void mo441onLongPressAvatarx5gers8(@NotNull String messageId, long j10) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
-        this.emitReactEvent.invoke(new LongPressAvatarData(MessageId.m1093toStringimpl(messageId), UserId.m1145toStringimpl(j10)));
+        this.emitReactEvent.invoke(new LongPressAvatarData(MessageId.m1092toStringimpl(messageId), UserId.m1144toStringimpl(j10)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -239,7 +239,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(attachmentId, "attachmentId");
         Intrinsics.checkNotNullParameter(viewResizeMode, "viewResizeMode");
-        this.emitReactEvent.invoke(new LongPressPollImageData(ChannelId.m1067toStringimpl(j10), MessageId.m1093toStringimpl(messageId), attachmentId, new TapImageData.Layout(i10, i11, i12, i13, viewResizeMode)));
+        this.emitReactEvent.invoke(new LongPressPollImageData(ChannelId.m1066toStringimpl(j10), MessageId.m1092toStringimpl(messageId), attachmentId, new TapImageData.Layout(i10, i11, i12, i13, viewResizeMode)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -253,7 +253,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
     /* renamed from: onLongPressUsername-x5gers8 */
     public void mo444onLongPressUsernamex5gers8(@NotNull String messageId, long j10) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
-        this.emitReactEvent.invoke(new LongPressUsernameData(MessageId.m1093toStringimpl(messageId), UserId.m1145toStringimpl(j10)));
+        this.emitReactEvent.invoke(new LongPressUsernameData(MessageId.m1092toStringimpl(messageId), UserId.m1144toStringimpl(j10)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -332,21 +332,21 @@ public class ChatViewEventHandler implements ChatEventHandler {
     /* renamed from: onTapAutoModerationActions-pfaIj0E */
     public void mo448onTapAutoModerationActionspfaIj0E(@NotNull String messageId, long j10) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapAutoModerationActionsData(MessageId.m1093toStringimpl(messageId), ChannelId.m1067toStringimpl(j10)));
+        this.emitReactEvent.invoke(new TapAutoModerationActionsData(MessageId.m1092toStringimpl(messageId), ChannelId.m1066toStringimpl(j10)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapAutoModerationFeedback-pfaIj0E */
     public void mo449onTapAutoModerationFeedbackpfaIj0E(@NotNull String messageId, long j10) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapAutoModerationFeedbackData(MessageId.m1093toStringimpl(messageId), ChannelId.m1067toStringimpl(j10)));
+        this.emitReactEvent.invoke(new TapAutoModerationFeedbackData(MessageId.m1092toStringimpl(messageId), ChannelId.m1066toStringimpl(j10)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapAvatar-x5gers8 */
     public void mo450onTapAvatarx5gers8(@NotNull String messageId, long j10) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapAvatarData(MessageId.m1093toStringimpl(messageId), UserId.m1145toStringimpl(j10)));
+        this.emitReactEvent.invoke(new TapAvatarData(MessageId.m1092toStringimpl(messageId), UserId.m1144toStringimpl(j10)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -382,20 +382,20 @@ public class ChatViewEventHandler implements ChatEventHandler {
     public void mo453onTapChannelPromptButtonEqy5D80(@NotNull String messageId, long j10, @NotNull String buttonType) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(buttonType, "buttonType");
-        this.emitReactEvent.invoke(new TapChannelPromptButtonData(MessageId.m1093toStringimpl(messageId), ChannelId.m1067toStringimpl(j10), buttonType));
+        this.emitReactEvent.invoke(new TapChannelPromptButtonData(MessageId.m1092toStringimpl(messageId), ChannelId.m1066toStringimpl(j10), buttonType));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapCheckpointCard-x5gers8 */
     public void mo454onTapCheckpointCardx5gers8(@NotNull String messageId, long j10) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapCheckpointCardData(MessageId.m1093toStringimpl(messageId), UserId.m1145toStringimpl(j10)));
+        this.emitReactEvent.invoke(new TapCheckpointCardData(MessageId.m1092toStringimpl(messageId), UserId.m1144toStringimpl(j10)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapClanTagChiplet-g3bFfsM */
     public void mo455onTapClanTagChipletg3bFfsM(long j10) {
-        this.emitReactEvent.invoke(new TapClanTagChipletData(GuildId.m1080toStringimpl(j10)));
+        this.emitReactEvent.invoke(new TapClanTagChipletData(GuildId.m1079toStringimpl(j10)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -419,7 +419,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(contentId, "contentId");
         Intrinsics.checkNotNullParameter(tappedElement, "tappedElement");
-        this.emitReactEvent.invoke(new TapContentInventoryEntryEmbedData(MessageId.m1093toStringimpl(messageId), UserId.m1145toStringimpl(j10), contentId, tappedElement));
+        this.emitReactEvent.invoke(new TapContentInventoryEntryEmbedData(MessageId.m1092toStringimpl(messageId), UserId.m1144toStringimpl(j10), contentId, tappedElement));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -433,7 +433,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
     public void mo457onTapCtaButtonsekaTiM(long j10, @NotNull String messageId, @NotNull String callback) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(callback, "callback");
-        this.emitReactEvent.invoke(new TapCtaButton(ChannelId.m1067toStringimpl(j10), MessageId.m1093toStringimpl(messageId), callback));
+        this.emitReactEvent.invoke(new TapCtaButton(ChannelId.m1066toStringimpl(j10), MessageId.m1092toStringimpl(messageId), callback));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -453,14 +453,14 @@ public class ChatViewEventHandler implements ChatEventHandler {
     /* renamed from: onTapFollowForumPost-pfaIj0E */
     public void mo459onTapFollowForumPostpfaIj0E(@NotNull String messageId, long j10) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapFollowForumPost(MessageId.m1093toStringimpl(messageId), ChannelId.m1067toStringimpl(j10)));
+        this.emitReactEvent.invoke(new TapFollowForumPost(MessageId.m1092toStringimpl(messageId), ChannelId.m1066toStringimpl(j10)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapForwardFooter-SHRpUJI */
     public void mo460onTapForwardFooterSHRpUJI(int i10, long j10, @NotNull String messageId) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapForwardFooterData(i10, ChannelId.m1067toStringimpl(j10), MessageId.m1093toStringimpl(messageId)));
+        this.emitReactEvent.invoke(new TapForwardFooterData(i10, ChannelId.m1066toStringimpl(j10), MessageId.m1092toStringimpl(messageId)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -489,7 +489,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(type, "type");
         Intrinsics.checkNotNullParameter(viewResizeMode, "viewResizeMode");
-        this.emitReactEvent.invoke(new TapImageData(MessageId.m1093toStringimpl(messageId), i10, type, new TapImageData.Layout(i11, i12, i13, i14, viewResizeMode), d10, num, str, num2));
+        this.emitReactEvent.invoke(new TapImageData(MessageId.m1092toStringimpl(messageId), i10, type, new TapImageData.Layout(i11, i12, i13, i14, viewResizeMode), d10, num, str, num2));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -503,7 +503,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
     public void mo463onTapInlineForwardj8a4Y88(long j10, @NotNull String messageId, @NotNull String targetKind, Integer num, Boolean bool, String str) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(targetKind, "targetKind");
-        this.emitReactEvent.invoke(new TapInlineForwardData(ChannelId.m1067toStringimpl(j10), MessageId.m1093toStringimpl(messageId), targetKind, num, bool, str));
+        this.emitReactEvent.invoke(new TapInlineForwardData(ChannelId.m1066toStringimpl(j10), MessageId.m1092toStringimpl(messageId), targetKind, num, bool, str));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -561,21 +561,21 @@ public class ChatViewEventHandler implements ChatEventHandler {
     /* renamed from: onTapMessageReply-0eiqbug */
     public void mo469onTapMessageReply0eiqbug(long j10, @NotNull String originId) {
         Intrinsics.checkNotNullParameter(originId, "originId");
-        this.emitReactEvent.invoke(new TapMessageReplyData(ChannelId.m1067toStringimpl(j10), MessageId.m1093toStringimpl(originId)));
+        this.emitReactEvent.invoke(new TapMessageReplyData(ChannelId.m1066toStringimpl(j10), MessageId.m1092toStringimpl(originId)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapObscuredMediaLearnMore-8a0ehIg */
     public void mo470onTapObscuredMediaLearnMore8a0ehIg(@NotNull String messageId, long j10, String str, String str2) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapObscuredMediaLearnMoreData(MessageId.m1093toStringimpl(messageId), ChannelId.m1067toStringimpl(j10), String.valueOf(str), String.valueOf(str2)));
+        this.emitReactEvent.invoke(new TapObscuredMediaLearnMoreData(MessageId.m1092toStringimpl(messageId), ChannelId.m1066toStringimpl(j10), String.valueOf(str), String.valueOf(str2)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapObscuredMediaToggle-ZQwuxwg */
     public void mo471onTapObscuredMediaToggleZQwuxwg(@NotNull String messageId, long j10, boolean z10, String str, String str2) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapObscuredMediaToggleData(MessageId.m1093toStringimpl(messageId), ChannelId.m1067toStringimpl(j10), String.valueOf(str), String.valueOf(str2), z10));
+        this.emitReactEvent.invoke(new TapObscuredMediaToggleData(MessageId.m1092toStringimpl(messageId), ChannelId.m1066toStringimpl(j10), String.valueOf(str), String.valueOf(str2), z10));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -588,7 +588,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
     public void mo472onTapPollActionsekaTiM(long j10, @NotNull String messageId, @NotNull String type) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(type, "type");
-        this.emitReactEvent.invoke(new TapPollAction(ChannelId.m1067toStringimpl(j10), MessageId.m1093toStringimpl(messageId), type));
+        this.emitReactEvent.invoke(new TapPollAction(ChannelId.m1066toStringimpl(j10), MessageId.m1092toStringimpl(messageId), type));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -596,22 +596,22 @@ public class ChatViewEventHandler implements ChatEventHandler {
     public void mo473onTapPollAnswersekaTiM(long j10, @NotNull String messageId, @NotNull String answerId) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(answerId, "answerId");
-        this.emitReactEvent.invoke(new TapPollAnswer(ChannelId.m1067toStringimpl(j10), MessageId.m1093toStringimpl(messageId), answerId));
+        this.emitReactEvent.invoke(new TapPollAnswer(ChannelId.m1066toStringimpl(j10), MessageId.m1092toStringimpl(messageId), answerId));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
-    @jr.c
+    @lr.c
     /* renamed from: onTapPollSubmitVote-0eiqbug */
     public void mo474onTapPollSubmitVote0eiqbug(long j10, @NotNull String messageId) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapPollSubmitVote(ChannelId.m1067toStringimpl(j10), MessageId.m1093toStringimpl(messageId)));
+        this.emitReactEvent.invoke(new TapPollSubmitVote(ChannelId.m1066toStringimpl(j10), MessageId.m1092toStringimpl(messageId)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapPostPreviewEmbed-kUTrp-s */
     public void mo475onTapPostPreviewEmbedkUTrps(long j10, long j11, long j12, @NotNull String messageId) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapPostPreviewEmbedData(GuildId.m1080toStringimpl(j10), ChannelId.m1067toStringimpl(j11), ChannelId.m1067toStringimpl(j12), messageId, null));
+        this.emitReactEvent.invoke(new TapPostPreviewEmbedData(GuildId.m1079toStringimpl(j10), ChannelId.m1066toStringimpl(j11), ChannelId.m1066toStringimpl(j12), messageId, null));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -632,7 +632,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
     /* renamed from: onTapReactionOverflow-pfaIj0E */
     public void mo478onTapReactionOverflowpfaIj0E(@NotNull String messageId, long j10) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapReactionOverflow(MessageId.m1093toStringimpl(messageId), ChannelId.m1067toStringimpl(j10)));
+        this.emitReactEvent.invoke(new TapReactionOverflow(MessageId.m1092toStringimpl(messageId), ChannelId.m1066toStringimpl(j10)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -678,7 +678,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapShareForumPost-mgk6anA */
     public void mo481onTapShareForumPostmgk6anA(long j10, long j11) {
-        this.emitReactEvent.invoke(new TapShareForumPost(ChannelId.m1067toStringimpl(j10), GuildId.m1080toStringimpl(j11)));
+        this.emitReactEvent.invoke(new TapShareForumPost(ChannelId.m1066toStringimpl(j10), GuildId.m1079toStringimpl(j11)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -690,7 +690,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     public void onTapSoundmoji(@NotNull SoundmojiContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
-        this.emitReactEvent.invoke(new TapSoundmojiData(node.getSoundId(), ChannelId.m1067toStringimpl(node.m376getChannelIdo4g7jtM()), node.getGuildId(), node.m377getMessageId3Eiw7ao(), null));
+        this.emitReactEvent.invoke(new TapSoundmojiData(node.getSoundId(), ChannelId.m1066toStringimpl(node.m376getChannelIdo4g7jtM()), node.getGuildId(), node.m377getMessageId3Eiw7ao(), null));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -698,7 +698,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
     public void mo482onTapSummarysekaTiM(long j10, @NotNull String messageId, @NotNull String summaryId) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(summaryId, "summaryId");
-        this.emitReactEvent.invoke(new TapSummaryData(ChannelId.m1067toStringimpl(j10), MessageId.m1093toStringimpl(messageId), summaryId));
+        this.emitReactEvent.invoke(new TapSummaryData(ChannelId.m1066toStringimpl(j10), MessageId.m1092toStringimpl(messageId), summaryId));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -706,7 +706,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
     public void mo483onTapSummaryJumpsekaTiM(long j10, @NotNull String messageId, @NotNull String summaryId) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(summaryId, "summaryId");
-        this.emitReactEvent.invoke(new TapSummaryJumpData(ChannelId.m1067toStringimpl(j10), MessageId.m1093toStringimpl(messageId), summaryId));
+        this.emitReactEvent.invoke(new TapSummaryJumpData(ChannelId.m1066toStringimpl(j10), MessageId.m1092toStringimpl(messageId), summaryId));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -738,14 +738,14 @@ public class ChatViewEventHandler implements ChatEventHandler {
     /* renamed from: onTapToggleBlockedMessages-1xi1bu0 */
     public void mo486onTapToggleBlockedMessages1xi1bu0(@NotNull String messageId) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapSeparatorData("toggle", MessageId.m1093toStringimpl(messageId)));
+        this.emitReactEvent.invoke(new TapSeparatorData("toggle", MessageId.m1092toStringimpl(messageId)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler
     /* renamed from: onTapUsername-x5gers8 */
     public void mo487onTapUsernamex5gers8(@NotNull String messageId, long j10) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
-        this.emitReactEvent.invoke(new TapUsernameData(MessageId.m1093toStringimpl(messageId), UserId.m1145toStringimpl(j10)));
+        this.emitReactEvent.invoke(new TapUsernameData(MessageId.m1092toStringimpl(messageId), UserId.m1144toStringimpl(j10)));
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler

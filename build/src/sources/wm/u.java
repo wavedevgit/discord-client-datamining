@@ -1,336 +1,142 @@
 package wm;
 
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.widget.EditText;
-import android.widget.TextView;
-import kotlin.Unit;
-import kotlin.coroutines.Continuation;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
+import kotlin.jvm.functions.Function3;
+import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
-import kotlinx.coroutines.CoroutineScope;
-import kotlinx.coroutines.Job;
+import wm.k;
+import wm.t;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class u {
 
-    /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
+    public static final class a extends k {
 
-        /* renamed from: d  reason: collision with root package name */
-        int f52404d;
+        /* renamed from: a  reason: collision with root package name */
+        final /* synthetic */ t f52587a;
 
-        /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f52405e;
+        /* renamed from: b  reason: collision with root package name */
+        final /* synthetic */ k f52588b;
 
-        /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ t f52406i;
+        /* renamed from: c  reason: collision with root package name */
+        final /* synthetic */ t.c f52589c;
 
-        /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ EditText f52407o;
-
-        /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: wm.u$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0715a extends kotlin.coroutines.jvm.internal.k implements Function2 {
-
-            /* renamed from: d  reason: collision with root package name */
-            int f52408d;
-
-            /* renamed from: e  reason: collision with root package name */
-            /* synthetic */ Object f52409e;
-
-            /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ EditText f52410i;
-
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            C0715a(EditText editText, Continuation continuation) {
-                super(2, continuation);
-                this.f52410i = editText;
-            }
-
-            @Override // kotlin.coroutines.jvm.internal.a
-            public final Continuation create(Object obj, Continuation continuation) {
-                C0715a c0715a = new C0715a(this.f52410i, continuation);
-                c0715a.f52409e = obj;
-                return c0715a;
-            }
-
-            @Override // kotlin.coroutines.jvm.internal.a
-            public final Object invokeSuspend(Object obj) {
-                pr.b.f();
-                if (this.f52408d == 0) {
-                    kotlin.c.b(obj);
-                    String str = (String) this.f52409e;
-                    if (!Intrinsics.areEqual(str, this.f52410i.getText().toString())) {
-                        this.f52410i.setText(str);
-                    }
-                    return Unit.f33074a;
-                }
-                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        /* synthetic */ class C0705a extends FunctionReferenceImpl implements Function2 {
+            C0705a(Object obj) {
+                super(2, obj, k.class, "initialState", "initialState(Ljava/lang/Object;Lcom/squareup/workflow1/Snapshot;)Ljava/lang/Object;", 0);
             }
 
             @Override // kotlin.jvm.functions.Function2
-            /* renamed from: j */
-            public final Object invoke(String str, Continuation continuation) {
-                return ((C0715a) create(str, continuation)).invokeSuspend(Unit.f33074a);
+            /* renamed from: a */
+            public final Object invoke(Object obj, i iVar) {
+                return ((k) this.receiver).d(obj, iVar);
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class b extends Lambda implements Function1 {
-
-            /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ t f52411d;
-
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            b(t tVar) {
-                super(1);
-                this.f52411d = tVar;
+        /* synthetic */ class b extends FunctionReferenceImpl implements Function3 {
+            b(Object obj) {
+                super(3, obj, k.class, "onPropsChanged", "onPropsChanged(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", 0);
             }
 
-            public final void a(CharSequence charSequence) {
-                String obj;
-                t tVar = this.f52411d;
-                if (charSequence == null) {
-                    obj = null;
+            @Override // kotlin.jvm.functions.Function3
+            public final Object invoke(Object obj, Object obj2, Object obj3) {
+                return ((k) this.receiver).e(obj, obj2, obj3);
+            }
+        }
+
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        static final class c extends Lambda implements Function3 {
+
+            /* renamed from: d  reason: collision with root package name */
+            final /* synthetic */ k.a f52590d;
+
+            /* renamed from: e  reason: collision with root package name */
+            final /* synthetic */ k f52591e;
+
+            /* renamed from: i  reason: collision with root package name */
+            final /* synthetic */ a f52592i;
+
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            c(k.a aVar, k kVar, a aVar2) {
+                super(3);
+                this.f52590d = aVar;
+                this.f52591e = kVar;
+                this.f52592i = aVar2;
+            }
+
+            @Override // kotlin.jvm.functions.Function3
+            /* renamed from: a */
+            public final Object invoke(Object obj, Object obj2, t.b bVar) {
+                wm.a dVar;
+                if (bVar == null) {
+                    dVar = null;
                 } else {
-                    obj = charSequence.toString();
+                    dVar = new wm.d(this.f52590d, bVar);
                 }
-                if (obj == null) {
-                    obj = "";
+                if (dVar == null) {
+                    dVar = this.f52590d;
                 }
-                tVar.c(obj);
+                return this.f52591e.f(obj, obj2, w.a(dVar, this.f52592i));
+            }
+        }
+
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        /* synthetic */ class d extends FunctionReferenceImpl implements Function1 {
+            d(Object obj) {
+                super(1, obj, k.class, "snapshotState", "snapshotState(Ljava/lang/Object;)Lcom/squareup/workflow1/Snapshot;", 0);
             }
 
             @Override // kotlin.jvm.functions.Function1
-            public /* bridge */ /* synthetic */ Object invoke(Object obj) {
-                a((CharSequence) obj);
-                return Unit.f33074a;
+            /* renamed from: a */
+            public final i invoke(Object obj) {
+                return ((k) this.receiver).g(obj);
             }
         }
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        a(t tVar, EditText editText, Continuation continuation) {
-            super(2, continuation);
-            this.f52406i = tVar;
-            this.f52407o = editText;
+        a(t tVar, k kVar, t.c cVar) {
+            this.f52587a = tVar;
+            this.f52588b = kVar;
+            this.f52589c = cVar;
         }
 
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Continuation create(Object obj, Continuation continuation) {
-            a aVar = new a(this.f52406i, this.f52407o, continuation);
-            aVar.f52405e = obj;
-            return aVar;
+        @Override // wm.k
+        public Object d(Object obj, i iVar) {
+            return this.f52587a.a(obj, iVar, new C0705a(this.f52588b), this.f52589c);
         }
 
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Object invokeSuspend(Object obj) {
-            Object f10 = pr.b.f();
-            int i10 = this.f52404d;
-            if (i10 != 0) {
-                if (i10 != 1) {
-                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
-                }
-                kotlin.c.b(obj);
-            } else {
-                kotlin.c.b(obj);
-                ks.g.y(ks.g.C(this.f52406i.a(), new C0715a(this.f52407o, null)), (CoroutineScope) this.f52405e);
-                EditText editText = this.f52407o;
-                b bVar = new b(this.f52406i);
-                this.f52404d = 1;
-                if (u.c(editText, bVar, this) == f10) {
-                    return f10;
-                }
-            }
-            throw new jr.h();
+        @Override // wm.k
+        public Object e(Object obj, Object obj2, Object obj3) {
+            return this.f52587a.d(obj, obj2, obj3, new b(this.f52588b), this.f52589c);
         }
 
-        @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        @Override // wm.k
+        public Object f(Object obj, Object obj2, k.a context) {
+            Intrinsics.checkNotNullParameter(context, "context");
+            return this.f52587a.b(obj, obj2, context, new c(context, this.f52588b, this), this.f52589c);
+        }
+
+        @Override // wm.k
+        public i g(Object obj) {
+            return this.f52587a.e(obj, new d(this.f52588b), this.f52589c);
+        }
+
+        public String toString() {
+            return "InterceptedWorkflow(" + this.f52588b + ", " + this + "@intercept)";
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class b extends kotlin.coroutines.jvm.internal.d {
-
-        /* renamed from: d  reason: collision with root package name */
-        Object f52412d;
-
-        /* renamed from: e  reason: collision with root package name */
-        Object f52413e;
-
-        /* renamed from: i  reason: collision with root package name */
-        /* synthetic */ Object f52414i;
-
-        /* renamed from: o  reason: collision with root package name */
-        int f52415o;
-
-        b(Continuation continuation) {
-            super(continuation);
-        }
-
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Object invokeSuspend(Object obj) {
-            this.f52414i = obj;
-            this.f52415o |= Integer.MIN_VALUE;
-            return u.c(null, null, this);
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class c extends Lambda implements Function1 {
-
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ TextView f52416d;
-
-        /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ d f52417e;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        c(TextView textView, d dVar) {
-            super(1);
-            this.f52416d = textView;
-            this.f52417e = dVar;
-        }
-
-        @Override // kotlin.jvm.functions.Function1
-        public /* bridge */ /* synthetic */ Object invoke(Object obj) {
-            invoke((Throwable) obj);
-            return Unit.f33074a;
-        }
-
-        public final void invoke(Throwable th2) {
-            this.f52416d.removeTextChangedListener(this.f52417e);
-        }
-    }
-
-    public static final void b(t tVar, EditText view) {
-        x xVar;
-        t a10;
-        Job b10;
+    public static final k a(t tVar, k workflow, t.c workflowSession) {
         Intrinsics.checkNotNullParameter(tVar, "<this>");
-        Intrinsics.checkNotNullParameter(view, "view");
-        Object tag = view.getTag(q.f52372a);
-        if (tag instanceof x) {
-            xVar = (x) tag;
-        } else {
-            xVar = null;
+        Intrinsics.checkNotNullParameter(workflow, "workflow");
+        Intrinsics.checkNotNullParameter(workflowSession, "workflowSession");
+        if (tVar == e.f52534a) {
+            return workflow;
         }
-        if (xVar == null) {
-            a10 = null;
-        } else {
-            a10 = xVar.a();
-        }
-        if (a10 == tVar && xVar.b().a()) {
-            return;
-        }
-        if (xVar != null && (b10 = xVar.b()) != null) {
-            Job.a.a(b10, null, 1, null);
-        }
-        view.setText(tVar.b());
-        view.setTag(q.f52372a, new x(tVar, d0.c(view, null, new a(tVar, view, null), 1, null)));
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
-    /* JADX WARN: Removed duplicated region for block: B:14:0x0039  */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public static final java.lang.Object c(android.widget.TextView r4, kotlin.jvm.functions.Function1 r5, kotlin.coroutines.Continuation r6) {
-        /*
-            boolean r0 = r6 instanceof wm.u.b
-            if (r0 == 0) goto L13
-            r0 = r6
-            wm.u$b r0 = (wm.u.b) r0
-            int r1 = r0.f52415o
-            r2 = -2147483648(0xffffffff80000000, float:-0.0)
-            r3 = r1 & r2
-            if (r3 == 0) goto L13
-            int r1 = r1 - r2
-            r0.f52415o = r1
-            goto L18
-        L13:
-            wm.u$b r0 = new wm.u$b
-            r0.<init>(r6)
-        L18:
-            java.lang.Object r6 = r0.f52414i
-            java.lang.Object r1 = pr.b.f()
-            int r2 = r0.f52415o
-            r3 = 1
-            if (r2 == 0) goto L39
-            if (r2 == r3) goto L2d
-            java.lang.IllegalStateException r4 = new java.lang.IllegalStateException
-            java.lang.String r5 = "call to 'resume' before 'invoke' with coroutine"
-            r4.<init>(r5)
-            throw r4
-        L2d:
-            java.lang.Object r4 = r0.f52413e
-            kotlin.jvm.functions.Function1 r4 = (kotlin.jvm.functions.Function1) r4
-            java.lang.Object r4 = r0.f52412d
-            android.widget.TextView r4 = (android.widget.TextView) r4
-            kotlin.c.b(r6)
-            goto L6e
-        L39:
-            kotlin.c.b(r6)
-            r0.f52412d = r4
-            r0.f52413e = r5
-            r0.f52415o = r3
-            kotlinx.coroutines.e r6 = new kotlinx.coroutines.e
-            kotlin.coroutines.Continuation r2 = pr.b.c(r0)
-            r6.<init>(r2, r3)
-            r6.H()
-            wm.u$d r2 = new wm.u$d
-            r2.<init>(r5)
-            r4.addTextChangedListener(r2)
-            wm.u$c r5 = new wm.u$c
-            r5.<init>(r4, r2)
-            r6.c(r5)
-            java.lang.Object r4 = r6.B()
-            java.lang.Object r5 = pr.b.f()
-            if (r4 != r5) goto L6b
-            kotlin.coroutines.jvm.internal.g.c(r0)
-        L6b:
-            if (r4 != r1) goto L6e
-            return r1
-        L6e:
-            jr.h r4 = new jr.h
-            r4.<init>()
-            throw r4
-        */
-        throw new UnsupportedOperationException("Method not decompiled: wm.u.c(android.widget.TextView, kotlin.jvm.functions.Function1, kotlin.coroutines.Continuation):java.lang.Object");
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class d implements TextWatcher {
-
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Function1 f52418d;
-
-        d(Function1 function1) {
-            this.f52418d = function1;
-        }
-
-        @Override // android.text.TextWatcher
-        public void afterTextChanged(Editable s10) {
-            Intrinsics.checkNotNullParameter(s10, "s");
-        }
-
-        @Override // android.text.TextWatcher
-        public void onTextChanged(CharSequence charSequence, int i10, int i11, int i12) {
-            this.f52418d.invoke(charSequence);
-        }
-
-        @Override // android.text.TextWatcher
-        public void beforeTextChanged(CharSequence charSequence, int i10, int i11, int i12) {
-        }
+        return new a(tVar, workflow, workflowSession);
     }
 }

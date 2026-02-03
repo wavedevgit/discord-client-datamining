@@ -12,30 +12,30 @@ import w5.c;
 public abstract class v {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f50854a = c.a.a("nm", "ind", "refId", "ty", "parent", "sw", "sh", "sc", "ks", "tt", "masksProperties", "shapes", "t", "ef", "sr", "st", "w", "h", "ip", "op", "tm", "cl", "hd", "ao", "bm");
+    private static final c.a f51182a = c.a.a("nm", "ind", "refId", "ty", "parent", "sw", "sh", "sc", "ks", "tt", "masksProperties", "shapes", "t", "ef", "sr", "st", "w", "h", "ip", "op", "tm", "cl", "hd", "ao", "bm");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f50855b = c.a.a("d", "a");
+    private static final c.a f51183b = c.a.a("d", "a");
 
     /* renamed from: c  reason: collision with root package name */
-    private static final c.a f50856c = c.a.a("ty", "nm");
+    private static final c.a f51184c = c.a.a("ty", "nm");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f50857a;
+        static final /* synthetic */ int[] f51185a;
 
         static {
             int[] iArr = new int[e.b.values().length];
-            f50857a = iArr;
+            f51185a = iArr;
             try {
                 iArr[e.b.LUMA.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f50857a[e.b.LUMA_INVERTED.ordinal()] = 2;
+                f51185a[e.b.LUMA_INVERTED.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
         }
@@ -85,7 +85,7 @@ public abstract class v {
         e.a aVar2 = null;
         boolean z13 = false;
         while (cVar.hasNext()) {
-            switch (cVar.B(f50854a)) {
+            switch (cVar.B(f51182a)) {
                 case 0:
                     str2 = cVar.f1();
                     break;
@@ -126,7 +126,7 @@ public abstract class v {
                         iVar.a("Unsupported matte type: " + nextInt2);
                     } else {
                         bVar2 = e.b.values()[nextInt2];
-                        int i13 = a.f50857a[bVar2.ordinal()];
+                        int i13 = a.f51185a[bVar2.ordinal()];
                         if (i13 != 1) {
                             if (i13 == 2) {
                                 iVar.a("Unsupported matte type: Luma Inverted");
@@ -164,7 +164,7 @@ public abstract class v {
                     f11 = f17;
                     cVar.r();
                     while (cVar.hasNext()) {
-                        int B = cVar.B(f50855b);
+                        int B = cVar.B(f51183b);
                         if (B != 0) {
                             if (B != 1) {
                                 cVar.E();
@@ -193,7 +193,7 @@ public abstract class v {
                     while (cVar.hasNext()) {
                         cVar.r();
                         while (cVar.hasNext()) {
-                            int B2 = cVar.B(f50856c);
+                            int B2 = cVar.B(f51184c);
                             if (B2 != 0) {
                                 if (B2 != 1) {
                                     cVar.E();

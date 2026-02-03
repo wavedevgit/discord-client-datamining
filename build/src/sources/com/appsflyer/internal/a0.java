@@ -3,14 +3,14 @@ package com.appsflyer.internal;
 public final /* synthetic */ class a0 implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    public final /* synthetic */ AFj1oSDK f8899d;
+    public final /* synthetic */ AFj1oSDK f7867d;
 
     public /* synthetic */ a0(AFj1oSDK aFj1oSDK) {
-        this.f8899d = aFj1oSDK;
+        this.f7867d = aFj1oSDK;
     }
 
     @Override // java.lang.Runnable
     public final void run() {
-        AFj1oSDK.b(this.f8899d);
+        AFj1oSDK.b(this.f7867d);
     }
 }

@@ -3,8 +3,8 @@ package x4;
 import android.content.Context;
 import java.io.Closeable;
 import java.io.File;
-import ju.c0;
 import kotlin.jvm.functions.Function0;
+import lu.c0;
 import okio.BufferedSource;
 import x4.r;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -19,7 +19,7 @@ public abstract class u {
         return k5.k.m(context);
     }
 
-    public static final r e(c0 c0Var, ju.h hVar, String str, Closeable closeable) {
+    public static final r e(c0 c0Var, lu.h hVar, String str, Closeable closeable) {
         return new q(c0Var, hVar, str, closeable, null);
     }
 
@@ -45,9 +45,9 @@ public abstract class u {
         }, aVar);
     }
 
-    public static /* synthetic */ r h(c0 c0Var, ju.h hVar, String str, Closeable closeable, int i10, Object obj) {
+    public static /* synthetic */ r h(c0 c0Var, lu.h hVar, String str, Closeable closeable, int i10, Object obj) {
         if ((i10 & 2) != 0) {
-            hVar = ju.h.f32370b;
+            hVar = lu.h.f37308b;
         }
         if ((i10 & 4) != 0) {
             str = null;

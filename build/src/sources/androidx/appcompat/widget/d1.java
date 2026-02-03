@@ -11,22 +11,22 @@ import android.view.accessibility.AccessibilityManager;
 public class d1 implements View.OnLongClickListener, View.OnHoverListener, View.OnAttachStateChangeListener {
 
     /* renamed from: v  reason: collision with root package name */
-    private static d1 f1641v;
+    private static d1 f1610v;
 
     /* renamed from: w  reason: collision with root package name */
-    private static d1 f1642w;
+    private static d1 f1611w;
 
     /* renamed from: d  reason: collision with root package name */
-    private final View f1643d;
+    private final View f1612d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final CharSequence f1644e;
+    private final CharSequence f1613e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f1645i;
+    private final int f1614i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Runnable f1646o = new Runnable() { // from class: androidx.appcompat.widget.b1
+    private final Runnable f1615o = new Runnable() { // from class: androidx.appcompat.widget.b1
         @Override // java.lang.Runnable
         public final void run() {
             d1.this.h(false);
@@ -34,7 +34,7 @@ public class d1 implements View.OnLongClickListener, View.OnHoverListener, View.
     };
 
     /* renamed from: p  reason: collision with root package name */
-    private final Runnable f1647p = new Runnable() { // from class: androidx.appcompat.widget.c1
+    private final Runnable f1616p = new Runnable() { // from class: androidx.appcompat.widget.c1
         @Override // java.lang.Runnable
         public final void run() {
             d1.this.d();
@@ -42,60 +42,60 @@ public class d1 implements View.OnLongClickListener, View.OnHoverListener, View.
     };
 
     /* renamed from: q  reason: collision with root package name */
-    private int f1648q;
+    private int f1617q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f1649r;
+    private int f1618r;
 
     /* renamed from: s  reason: collision with root package name */
-    private e1 f1650s;
+    private e1 f1619s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f1651t;
+    private boolean f1620t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f1652u;
+    private boolean f1621u;
 
     private d1(View view, CharSequence charSequence) {
-        this.f1643d = view;
-        this.f1644e = charSequence;
-        this.f1645i = androidx.core.view.k0.g(ViewConfiguration.get(view.getContext()));
+        this.f1612d = view;
+        this.f1613e = charSequence;
+        this.f1614i = androidx.core.view.k0.g(ViewConfiguration.get(view.getContext()));
         c();
         view.setOnLongClickListener(this);
         view.setOnHoverListener(this);
     }
 
     private void b() {
-        this.f1643d.removeCallbacks(this.f1646o);
+        this.f1612d.removeCallbacks(this.f1615o);
     }
 
     private void c() {
-        this.f1652u = true;
+        this.f1621u = true;
     }
 
     private void e() {
-        this.f1643d.postDelayed(this.f1646o, ViewConfiguration.getLongPressTimeout());
+        this.f1612d.postDelayed(this.f1615o, ViewConfiguration.getLongPressTimeout());
     }
 
     private static void f(d1 d1Var) {
-        d1 d1Var2 = f1641v;
+        d1 d1Var2 = f1610v;
         if (d1Var2 != null) {
             d1Var2.b();
         }
-        f1641v = d1Var;
+        f1610v = d1Var;
         if (d1Var != null) {
             d1Var.e();
         }
     }
 
     public static void g(View view, CharSequence charSequence) {
-        d1 d1Var = f1641v;
-        if (d1Var != null && d1Var.f1643d == view) {
+        d1 d1Var = f1610v;
+        if (d1Var != null && d1Var.f1612d == view) {
             f(null);
         }
         if (TextUtils.isEmpty(charSequence)) {
-            d1 d1Var2 = f1642w;
-            if (d1Var2 != null && d1Var2.f1643d == view) {
+            d1 d1Var2 = f1611w;
+            if (d1Var2 != null && d1Var2.f1612d == view) {
                 d1Var2.d();
             }
             view.setOnLongClickListener(null);
@@ -109,33 +109,33 @@ public class d1 implements View.OnLongClickListener, View.OnHoverListener, View.
     private boolean i(MotionEvent motionEvent) {
         int x10 = (int) motionEvent.getX();
         int y10 = (int) motionEvent.getY();
-        if (!this.f1652u && Math.abs(x10 - this.f1648q) <= this.f1645i && Math.abs(y10 - this.f1649r) <= this.f1645i) {
+        if (!this.f1621u && Math.abs(x10 - this.f1617q) <= this.f1614i && Math.abs(y10 - this.f1618r) <= this.f1614i) {
             return false;
         }
-        this.f1648q = x10;
-        this.f1649r = y10;
-        this.f1652u = false;
+        this.f1617q = x10;
+        this.f1618r = y10;
+        this.f1621u = false;
         return true;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void d() {
-        if (f1642w == this) {
-            f1642w = null;
-            e1 e1Var = this.f1650s;
+        if (f1611w == this) {
+            f1611w = null;
+            e1 e1Var = this.f1619s;
             if (e1Var != null) {
                 e1Var.c();
-                this.f1650s = null;
+                this.f1619s = null;
                 c();
-                this.f1643d.removeOnAttachStateChangeListener(this);
+                this.f1612d.removeOnAttachStateChangeListener(this);
             } else {
                 Log.e("TooltipCompatHandler", "sActiveHandler.mPopup == null");
             }
         }
-        if (f1641v == this) {
+        if (f1610v == this) {
             f(null);
         }
-        this.f1643d.removeCallbacks(this.f1647p);
+        this.f1612d.removeCallbacks(this.f1616p);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -143,24 +143,24 @@ public class d1 implements View.OnLongClickListener, View.OnHoverListener, View.
         long longPressTimeout;
         long j10;
         long j11;
-        if (!this.f1643d.isAttachedToWindow()) {
+        if (!this.f1612d.isAttachedToWindow()) {
             return;
         }
         f(null);
-        d1 d1Var = f1642w;
+        d1 d1Var = f1611w;
         if (d1Var != null) {
             d1Var.d();
         }
-        f1642w = this;
-        this.f1651t = z10;
-        e1 e1Var = new e1(this.f1643d.getContext());
-        this.f1650s = e1Var;
-        e1Var.e(this.f1643d, this.f1648q, this.f1649r, this.f1651t, this.f1644e);
-        this.f1643d.addOnAttachStateChangeListener(this);
-        if (this.f1651t) {
+        f1611w = this;
+        this.f1620t = z10;
+        e1 e1Var = new e1(this.f1612d.getContext());
+        this.f1619s = e1Var;
+        e1Var.e(this.f1612d, this.f1617q, this.f1618r, this.f1620t, this.f1613e);
+        this.f1612d.addOnAttachStateChangeListener(this);
+        if (this.f1620t) {
             j11 = 2500;
         } else {
-            if ((androidx.core.view.h0.L(this.f1643d) & 1) == 1) {
+            if ((androidx.core.view.h0.L(this.f1612d) & 1) == 1) {
                 longPressTimeout = ViewConfiguration.getLongPressTimeout();
                 j10 = 3000;
             } else {
@@ -169,16 +169,16 @@ public class d1 implements View.OnLongClickListener, View.OnHoverListener, View.
             }
             j11 = j10 - longPressTimeout;
         }
-        this.f1643d.removeCallbacks(this.f1647p);
-        this.f1643d.postDelayed(this.f1647p, j11);
+        this.f1612d.removeCallbacks(this.f1616p);
+        this.f1612d.postDelayed(this.f1616p, j11);
     }
 
     @Override // android.view.View.OnHoverListener
     public boolean onHover(View view, MotionEvent motionEvent) {
-        if (this.f1650s != null && this.f1651t) {
+        if (this.f1619s != null && this.f1620t) {
             return false;
         }
-        AccessibilityManager accessibilityManager = (AccessibilityManager) this.f1643d.getContext().getSystemService("accessibility");
+        AccessibilityManager accessibilityManager = (AccessibilityManager) this.f1612d.getContext().getSystemService("accessibility");
         if (accessibilityManager.isEnabled() && accessibilityManager.isTouchExplorationEnabled()) {
             return false;
         }
@@ -188,7 +188,7 @@ public class d1 implements View.OnLongClickListener, View.OnHoverListener, View.
                 c();
                 d();
             }
-        } else if (this.f1643d.isEnabled() && this.f1650s == null && i(motionEvent)) {
+        } else if (this.f1612d.isEnabled() && this.f1619s == null && i(motionEvent)) {
             f(this);
         }
         return false;
@@ -196,8 +196,8 @@ public class d1 implements View.OnLongClickListener, View.OnHoverListener, View.
 
     @Override // android.view.View.OnLongClickListener
     public boolean onLongClick(View view) {
-        this.f1648q = view.getWidth() / 2;
-        this.f1649r = view.getHeight() / 2;
+        this.f1617q = view.getWidth() / 2;
+        this.f1618r = view.getHeight() / 2;
         h(true);
         return true;
     }

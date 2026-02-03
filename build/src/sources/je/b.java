@@ -12,37 +12,37 @@ import qd.u0;
 public abstract class b implements com.google.android.exoplayer2.trackselection.g {
 
     /* renamed from: a  reason: collision with root package name */
-    protected final u0 f31720a;
+    protected final u0 f31516a;
 
     /* renamed from: b  reason: collision with root package name */
-    protected final int f31721b;
+    protected final int f31517b;
 
     /* renamed from: c  reason: collision with root package name */
-    protected final int[] f31722c;
+    protected final int[] f31518c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f31723d;
+    private final int f31519d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Format[] f31724e;
+    private final Format[] f31520e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final long[] f31725f;
+    private final long[] f31521f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f31726g;
+    private int f31522g;
 
     public b(u0 u0Var, int... iArr) {
         this(u0Var, iArr, 0);
     }
 
     public static /* synthetic */ int t(Format format, Format format2) {
-        return format2.f12331s - format.f12331s;
+        return format2.f11299s - format.f11299s;
     }
 
     @Override // com.google.android.exoplayer2.trackselection.g
     public boolean a(int i10, long j10) {
-        if (this.f31725f[i10] > j10) {
+        if (this.f31521f[i10] > j10) {
             return true;
         }
         return false;
@@ -50,12 +50,12 @@ public abstract class b implements com.google.android.exoplayer2.trackselection.
 
     @Override // je.l
     public final Format d(int i10) {
-        return this.f31724e[i10];
+        return this.f31520e[i10];
     }
 
     @Override // je.l
     public final int e(int i10) {
-        return this.f31722c[i10];
+        return this.f31518c[i10];
     }
 
     public boolean equals(Object obj) {
@@ -64,7 +64,7 @@ public abstract class b implements com.google.android.exoplayer2.trackselection.
         }
         if (obj != null && getClass() == obj.getClass()) {
             b bVar = (b) obj;
-            if (this.f31720a == bVar.f31720a && Arrays.equals(this.f31722c, bVar.f31722c)) {
+            if (this.f31516a == bVar.f31516a && Arrays.equals(this.f31518c, bVar.f31518c)) {
                 return true;
             }
         }
@@ -75,7 +75,7 @@ public abstract class b implements com.google.android.exoplayer2.trackselection.
     public boolean f(int i10, long j10) {
         long elapsedRealtime = SystemClock.elapsedRealtime();
         boolean a10 = a(i10, elapsedRealtime);
-        for (int i11 = 0; i11 < this.f31721b && !a10; i11++) {
+        for (int i11 = 0; i11 < this.f31517b && !a10; i11++) {
             if (i11 != i10 && !a(i11, elapsedRealtime)) {
                 a10 = true;
             } else {
@@ -85,22 +85,22 @@ public abstract class b implements com.google.android.exoplayer2.trackselection.
         if (!a10) {
             return false;
         }
-        long[] jArr = this.f31725f;
+        long[] jArr = this.f31521f;
         jArr[i10] = Math.max(jArr[i10], w0.b(elapsedRealtime, j10, LongCompanionObject.MAX_VALUE));
         return true;
     }
 
     public int hashCode() {
-        if (this.f31726g == 0) {
-            this.f31726g = (System.identityHashCode(this.f31720a) * 31) + Arrays.hashCode(this.f31722c);
+        if (this.f31522g == 0) {
+            this.f31522g = (System.identityHashCode(this.f31516a) * 31) + Arrays.hashCode(this.f31518c);
         }
-        return this.f31726g;
+        return this.f31522g;
     }
 
     @Override // je.l
     public final int j(int i10) {
-        for (int i11 = 0; i11 < this.f31721b; i11++) {
-            if (this.f31722c[i11] == i10) {
+        for (int i11 = 0; i11 < this.f31517b; i11++) {
+            if (this.f31518c[i11] == i10) {
                 return i11;
             }
         }
@@ -109,12 +109,12 @@ public abstract class b implements com.google.android.exoplayer2.trackselection.
 
     @Override // je.l
     public final u0 k() {
-        return this.f31720a;
+        return this.f31516a;
     }
 
     @Override // je.l
     public final int length() {
-        return this.f31722c.length;
+        return this.f31518c.length;
     }
 
     @Override // com.google.android.exoplayer2.trackselection.g
@@ -124,8 +124,8 @@ public abstract class b implements com.google.android.exoplayer2.trackselection.
 
     @Override // je.l
     public final int o(Format format) {
-        for (int i10 = 0; i10 < this.f31721b; i10++) {
-            if (this.f31724e[i10] == format) {
+        for (int i10 = 0; i10 < this.f31517b; i10++) {
+            if (this.f31520e[i10] == format) {
                 return i10;
             }
         }
@@ -134,39 +134,39 @@ public abstract class b implements com.google.android.exoplayer2.trackselection.
 
     @Override // com.google.android.exoplayer2.trackselection.g
     public final int p() {
-        return this.f31722c[c()];
+        return this.f31518c[c()];
     }
 
     @Override // com.google.android.exoplayer2.trackselection.g
     public final Format q() {
-        return this.f31724e[c()];
+        return this.f31520e[c()];
     }
 
     public b(u0 u0Var, int[] iArr, int i10) {
         int i11 = 0;
         ne.a.g(iArr.length > 0);
-        this.f31723d = i10;
-        this.f31720a = (u0) ne.a.e(u0Var);
+        this.f31519d = i10;
+        this.f31516a = (u0) ne.a.e(u0Var);
         int length = iArr.length;
-        this.f31721b = length;
-        this.f31724e = new Format[length];
+        this.f31517b = length;
+        this.f31520e = new Format[length];
         for (int i12 = 0; i12 < iArr.length; i12++) {
-            this.f31724e[i12] = u0Var.c(iArr[i12]);
+            this.f31520e[i12] = u0Var.c(iArr[i12]);
         }
-        Arrays.sort(this.f31724e, new Comparator() { // from class: je.a
+        Arrays.sort(this.f31520e, new Comparator() { // from class: je.a
             @Override // java.util.Comparator
             public final int compare(Object obj, Object obj2) {
                 return b.t((Format) obj, (Format) obj2);
             }
         });
-        this.f31722c = new int[this.f31721b];
+        this.f31518c = new int[this.f31517b];
         while (true) {
-            int i13 = this.f31721b;
+            int i13 = this.f31517b;
             if (i11 < i13) {
-                this.f31722c[i11] = u0Var.d(this.f31724e[i11]);
+                this.f31518c[i11] = u0Var.d(this.f31520e[i11]);
                 i11++;
             } else {
-                this.f31725f = new long[i13];
+                this.f31521f = new long[i13];
                 return;
             }
         }

@@ -5,71 +5,71 @@ import java.util.Arrays;
 final class u {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f21649a;
+    private final int f20508a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f21650b;
+    private boolean f20509b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f21651c;
+    private boolean f20510c;
 
     /* renamed from: d  reason: collision with root package name */
-    public byte[] f21652d;
+    public byte[] f20511d;
 
     /* renamed from: e  reason: collision with root package name */
-    public int f21653e;
+    public int f20512e;
 
     public u(int i10, int i11) {
-        this.f21649a = i10;
+        this.f20508a = i10;
         byte[] bArr = new byte[i11 + 3];
-        this.f21652d = bArr;
+        this.f20511d = bArr;
         bArr[2] = 1;
     }
 
     public void a(byte[] bArr, int i10, int i11) {
-        if (!this.f21650b) {
+        if (!this.f20509b) {
             return;
         }
         int i12 = i11 - i10;
-        byte[] bArr2 = this.f21652d;
+        byte[] bArr2 = this.f20511d;
         int length = bArr2.length;
-        int i13 = this.f21653e;
+        int i13 = this.f20512e;
         if (length < i13 + i12) {
-            this.f21652d = Arrays.copyOf(bArr2, (i13 + i12) * 2);
+            this.f20511d = Arrays.copyOf(bArr2, (i13 + i12) * 2);
         }
-        System.arraycopy(bArr, i10, this.f21652d, this.f21653e, i12);
-        this.f21653e += i12;
+        System.arraycopy(bArr, i10, this.f20511d, this.f20512e, i12);
+        this.f20512e += i12;
     }
 
     public boolean b(int i10) {
-        if (!this.f21650b) {
+        if (!this.f20509b) {
             return false;
         }
-        this.f21653e -= i10;
-        this.f21650b = false;
-        this.f21651c = true;
+        this.f20512e -= i10;
+        this.f20509b = false;
+        this.f20510c = true;
         return true;
     }
 
     public boolean c() {
-        return this.f21651c;
+        return this.f20510c;
     }
 
     public void d() {
-        this.f21650b = false;
-        this.f21651c = false;
+        this.f20509b = false;
+        this.f20510c = false;
     }
 
     public void e(int i10) {
         boolean z10 = true;
-        ne.a.g(!this.f21650b);
-        if (i10 != this.f21649a) {
+        ne.a.g(!this.f20509b);
+        if (i10 != this.f20508a) {
             z10 = false;
         }
-        this.f21650b = z10;
+        this.f20509b = z10;
         if (z10) {
-            this.f21653e = 3;
-            this.f21651c = false;
+            this.f20512e = 3;
+            this.f20510c = false;
         }
     }
 }

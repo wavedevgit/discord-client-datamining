@@ -6,7 +6,7 @@ import kotlin.text.StringsKt;
 public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final boolean f32770a;
+    private static final boolean f32168a;
 
     static {
         String str;
@@ -29,12 +29,12 @@ public abstract class f {
                 }
             }
         }
-        f32770a = z10;
+        f32168a = z10;
     }
 
     public static final p a(t tVar) {
         int i10 = Build.VERSION.SDK_INT;
-        if (i10 >= 26 && !f32770a) {
+        if (i10 >= 26 && !f32168a) {
             if (i10 != 26 && i10 != 27) {
                 return new r(true);
             }

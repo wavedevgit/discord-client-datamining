@@ -106,74 +106,74 @@ public final class ActivityRichPresenceInviteEmbedView extends ConstraintLayout 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setActivityRichPresenceInviteEmbed_dJIpDCQ$lambda$10(String str, String str2, String str3, String str4) {
         Intrinsics.checkNotNullParameter(str2, "<unused var>");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setActivityRichPresenceInviteEmbed_dJIpDCQ$lambda$11(CommandMentionContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setActivityRichPresenceInviteEmbed_dJIpDCQ$lambda$12(CommandMentionContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setActivityRichPresenceInviteEmbed_dJIpDCQ$lambda$14(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setActivityRichPresenceInviteEmbed_dJIpDCQ$lambda$15(InlineCodeContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setActivityRichPresenceInviteEmbed_dJIpDCQ$lambda$16(EmojiContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setActivityRichPresenceInviteEmbed_dJIpDCQ$lambda$17(SoundmojiContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setActivityRichPresenceInviteEmbed_dJIpDCQ$lambda$5(LinkContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setActivityRichPresenceInviteEmbed_dJIpDCQ$lambda$6(String str, String str2, String str3) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setActivityRichPresenceInviteEmbed_dJIpDCQ$lambda$7(String str, String str2, String str3, String str4) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setActivityRichPresenceInviteEmbed_dJIpDCQ$lambda$8(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setActivityRichPresenceInviteEmbed_dJIpDCQ$lambda$9(String str, String str2) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
         Intrinsics.checkNotNullParameter(str2, "<unused var>");
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     private final void setCoverImage(String str) {
@@ -263,8 +263,8 @@ public final class ActivityRichPresenceInviteEmbedView extends ConstraintLayout 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit showHiddenContent_2dg2Uz0$lambda$23(Function2 function2, String str, LinkContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
-        function2.invoke(MessageId.m1086boximpl(str), node);
-        return Unit.f33074a;
+        function2.invoke(MessageId.m1085boximpl(str), node);
+        return Unit.f32464a;
     }
 
     private final void showNormalContent() {
@@ -293,8 +293,8 @@ public final class ActivityRichPresenceInviteEmbedView extends ConstraintLayout 
             m682showHiddenContent2dg2Uz0(margins, structurableText, str9, function2 == null ? new Function2<MessageId, LinkContentNode, Unit>() { // from class: com.discord.chat.presentation.message.view.ActivityRichPresenceInviteEmbedView$setActivityRichPresenceInviteEmbed$1
                 @Override // kotlin.jvm.functions.Function2
                 public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-                    m684invokentcYbpo(((MessageId) obj).m1095unboximpl(), (LinkContentNode) obj2);
-                    return Unit.f33074a;
+                    m684invokentcYbpo(((MessageId) obj).m1094unboximpl(), (LinkContentNode) obj2);
+                    return Unit.f32464a;
                 }
 
                 /* renamed from: invoke-ntcYbpo  reason: not valid java name */
@@ -362,7 +362,7 @@ public final class ActivityRichPresenceInviteEmbedView extends ConstraintLayout 
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit unit;
-                    unit = Unit.f33074a;
+                    unit = Unit.f32464a;
                     return unit;
                 }
             } : function0, function15 == null ? new Function1() { // from class: com.discord.chat.presentation.message.view.d
@@ -389,8 +389,8 @@ public final class ActivityRichPresenceInviteEmbedView extends ConstraintLayout 
             } : function17, function18 == null ? new Function1<MessageId, Unit>() { // from class: com.discord.chat.presentation.message.view.ActivityRichPresenceInviteEmbedView$setActivityRichPresenceInviteEmbed$14
                 @Override // kotlin.jvm.functions.Function1
                 public /* bridge */ /* synthetic */ Object invoke(Object obj) {
-                    m685invoke1xi1bu0(((MessageId) obj).m1095unboximpl());
-                    return Unit.f33074a;
+                    m685invoke1xi1bu0(((MessageId) obj).m1094unboximpl());
+                    return Unit.f32464a;
                 }
 
                 /* renamed from: invoke-1xi1bu0  reason: not valid java name */

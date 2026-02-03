@@ -8,25 +8,25 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a extends PlatformBitmapFactory {
 
     /* renamed from: a  reason: collision with root package name */
-    private final va.d f32816a;
+    private final va.d f32214a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final na.a f32817b;
+    private final na.a f32215b;
 
     public a(va.d bitmapPool, na.a closeableReferenceFactory) {
         Intrinsics.checkNotNullParameter(bitmapPool, "bitmapPool");
         Intrinsics.checkNotNullParameter(closeableReferenceFactory, "closeableReferenceFactory");
-        this.f32816a = bitmapPool;
-        this.f32817b = closeableReferenceFactory;
+        this.f32214a = bitmapPool;
+        this.f32215b = closeableReferenceFactory;
     }
 
     @Override // com.facebook.imagepipeline.bitmaps.PlatformBitmapFactory
     public CloseableReference d(int i10, int i11, Bitmap.Config bitmapConfig) {
         Intrinsics.checkNotNullParameter(bitmapConfig, "bitmapConfig");
-        Bitmap bitmap = (Bitmap) this.f32816a.get(cb.d.i(i10, i11, bitmapConfig));
+        Bitmap bitmap = (Bitmap) this.f32214a.get(cb.d.i(i10, i11, bitmapConfig));
         if (bitmap.getAllocationByteCount() >= i10 * i11 * cb.d.h(bitmapConfig)) {
             bitmap.reconfigure(i10, i11, bitmapConfig);
-            CloseableReference c10 = this.f32817b.c(bitmap, this.f32816a);
+            CloseableReference c10 = this.f32215b.c(bitmap, this.f32214a);
             Intrinsics.checkNotNullExpressionValue(c10, "create(...)");
             return c10;
         }

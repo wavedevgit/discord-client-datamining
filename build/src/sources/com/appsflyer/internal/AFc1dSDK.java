@@ -45,10 +45,10 @@ public final class AFc1dSDK implements AFc1bSDK {
     private AFg1rSDK copydefault;
 
     /* renamed from: d  reason: collision with root package name */
-    private AFi1sSDK f8877d;
+    private AFi1sSDK f7845d;
 
     /* renamed from: e  reason: collision with root package name */
-    private AFj1eSDK f8878e;
+    private AFj1eSDK f7846e;
     private AFd1mSDK equals;
     private AFa1hSDK force;
     private AFc1eSDK getLevel;
@@ -57,17 +57,17 @@ public final class AFc1dSDK implements AFc1bSDK {
     private AFe1nSDK hashCode;
 
     /* renamed from: i  reason: collision with root package name */
-    private AFg1sSDK f8879i;
+    private AFg1sSDK f7847i;
     private AFd1ySDK registerClient;
     private AFh1tSDK toString;
     private AFi1lSDK unregisterClient;
 
     /* renamed from: v  reason: collision with root package name */
-    private AFa1bSDK f8880v;
+    private AFa1bSDK f7848v;
     private AFg1xSDK values;
 
     /* renamed from: w  reason: collision with root package name */
-    private AFb1aSDK f8881w;
+    private AFb1aSDK f7849w;
     private String afErrorLogForExcManagerOnly = null;
     public final AFc1gSDK getMonetizationNetwork = new AFc1gSDK();
 
@@ -116,13 +116,13 @@ public final class AFc1dSDK implements AFc1bSDK {
     @NonNull
     private synchronized AFj1eSDK AFPurchaseType() {
         try {
-            if (this.f8878e == null) {
-                this.f8878e = new AFj1eSDK(getCurrencyIso4217Code());
+            if (this.f7846e == null) {
+                this.f7846e = new AFj1eSDK(getCurrencyIso4217Code());
             }
         } catch (Throwable th2) {
             throw th2;
         }
-        return this.f8878e;
+        return this.f7846e;
     }
 
     @NonNull
@@ -249,15 +249,15 @@ public final class AFc1dSDK implements AFc1bSDK {
     @Override // com.appsflyer.internal.AFc1bSDK
     @NonNull
     public final AFb1aSDK afDebugLog() {
-        if (this.f8881w == null) {
+        if (this.f7849w == null) {
             ScheduledExecutorService level = getLevel();
             AFa1rSDK i10 = i();
             if (this.afInfoLog == null) {
                 this.afInfoLog = new AFi1nSDK();
             }
-            this.f8881w = new AFb1cSDK(level, i10, this.afInfoLog);
+            this.f7849w = new AFb1cSDK(level, i10, this.afInfoLog);
         }
-        return this.f8881w;
+        return this.f7849w;
     }
 
     @Override // com.appsflyer.internal.AFc1bSDK
@@ -371,10 +371,10 @@ public final class AFc1dSDK implements AFc1bSDK {
                     this.unregisterClient = new AFi1gSDK();
                 }
                 AFi1lSDK aFi1lSDK = this.unregisterClient;
-                if (this.f8879i == null) {
-                    this.f8879i = new AFg1wSDK();
+                if (this.f7847i == null) {
+                    this.f7847i = new AFg1wSDK();
                 }
-                AFg1sSDK aFg1sSDK = this.f8879i;
+                AFg1sSDK aFg1sSDK = this.f7847i;
                 if (this.copy == null) {
                     Context context2 = this.getMonetizationNetwork.getRevenue;
                     if (context2 != null) {
@@ -391,15 +391,15 @@ public final class AFc1dSDK implements AFc1bSDK {
                 AFh1tSDK component3 = component3();
                 AFc1oSDK component2 = component2();
                 AFc1pSDK currencyIso4217Code = getCurrencyIso4217Code();
-                if (this.f8877d == null) {
+                if (this.f7845d == null) {
                     Context context3 = this.getMonetizationNetwork.getRevenue;
                     if (context3 != null) {
-                        this.f8877d = new AFi1sSDK(context3);
+                        this.f7845d = new AFi1sSDK(context3);
                     } else {
                         throw new IllegalStateException("Context must be set via setContext method before calling this dependency.");
                     }
                 }
-                AFi1sSDK aFi1sSDK = this.f8877d;
+                AFi1sSDK aFi1sSDK = this.f7845d;
                 AFf1cSDK AFKeystoreWrapper = AFKeystoreWrapper();
                 AFc1gSDK registerClient = registerClient();
                 AFg1xSDK AFPurchaseDetails = AFPurchaseDetails();
@@ -580,13 +580,13 @@ public final class AFc1dSDK implements AFc1bSDK {
     @NonNull
     public final synchronized AFa1bSDK unregisterClient() {
         try {
-            if (this.f8880v == null) {
-                this.f8880v = new AFa1aSDK(registerClient());
+            if (this.f7848v == null) {
+                this.f7848v = new AFa1aSDK(registerClient());
             }
         } catch (Throwable th2) {
             throw th2;
         }
-        return this.f8880v;
+        return this.f7848v;
     }
 
     @Override // com.appsflyer.internal.AFc1bSDK
@@ -595,7 +595,7 @@ public final class AFc1dSDK implements AFc1bSDK {
         try {
             if (this.afRDLog == null) {
                 Object[] objArr = {getCurrencyIso4217Code(), registerClient(), AFKeystoreWrapper()};
-                Map map = AFi1hSDK.f8892d;
+                Map map = AFi1hSDK.f7860d;
                 Object obj = map.get(-737518627);
                 if (obj == null) {
                     obj = ((Class) AFi1hSDK.getCurrencyIso4217Code((char) (ViewConfiguration.getKeyRepeatDelay() >> 16), 36 - (ExpandableListView.getPackedPositionForGroup(0) > 0L ? 1 : (ExpandableListView.getPackedPositionForGroup(0) == 0L ? 0 : -1)), TextUtils.getCapsMode("", 0, 0))).getDeclaredConstructor(AFc1pSDK.class, AFc1gSDK.class, AFf1cSDK.class);
@@ -617,15 +617,15 @@ public final class AFc1dSDK implements AFc1bSDK {
     @Override // com.appsflyer.internal.AFc1bSDK
     @NonNull
     public final AFi1sSDK w() {
-        if (this.f8877d == null) {
+        if (this.f7845d == null) {
             Context context = this.getMonetizationNetwork.getRevenue;
             if (context != null) {
-                this.f8877d = new AFi1sSDK(context);
+                this.f7845d = new AFi1sSDK(context);
             } else {
                 throw new IllegalStateException("Context must be set via setContext method before calling this dependency.");
             }
         }
-        return this.f8877d;
+        return this.f7845d;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

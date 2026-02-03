@@ -5,16 +5,16 @@ import android.os.CancellationSignal;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f51611a;
+    private boolean f51833a;
 
     /* renamed from: b  reason: collision with root package name */
-    private a f51612b;
+    private a f51834b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Object f51613c;
+    private Object f51835c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f51614d;
+    private boolean f51836d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface a {
@@ -22,7 +22,7 @@ public final class d {
     }
 
     private void c() {
-        while (this.f51614d) {
+        while (this.f51836d) {
             try {
                 wait();
             } catch (InterruptedException unused) {
@@ -33,19 +33,19 @@ public final class d {
     public void a() {
         synchronized (this) {
             try {
-                if (this.f51611a) {
+                if (this.f51833a) {
                     return;
                 }
-                this.f51611a = true;
-                this.f51614d = true;
-                a aVar = this.f51612b;
-                Object obj = this.f51613c;
+                this.f51833a = true;
+                this.f51836d = true;
+                a aVar = this.f51834b;
+                Object obj = this.f51835c;
                 if (aVar != null) {
                     try {
                         aVar.onCancel();
                     } catch (Throwable th2) {
                         synchronized (this) {
-                            this.f51614d = false;
+                            this.f51836d = false;
                             notifyAll();
                             throw th2;
                         }
@@ -55,7 +55,7 @@ public final class d {
                     ((CancellationSignal) obj).cancel();
                 }
                 synchronized (this) {
-                    this.f51614d = false;
+                    this.f51836d = false;
                     notifyAll();
                 }
             } finally {
@@ -67,11 +67,11 @@ public final class d {
         synchronized (this) {
             try {
                 c();
-                if (this.f51612b == aVar) {
+                if (this.f51834b == aVar) {
                     return;
                 }
-                this.f51612b = aVar;
-                if (this.f51611a && aVar != null) {
+                this.f51834b = aVar;
+                if (this.f51833a && aVar != null) {
                     aVar.onCancel();
                 }
             } finally {

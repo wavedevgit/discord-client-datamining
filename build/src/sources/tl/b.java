@@ -8,33 +8,33 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ZoomEngine f49929a;
+    private final ZoomEngine f50140a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f49930b;
+    private final List f50141b;
 
     public b(ZoomEngine engine) {
         Intrinsics.checkNotNullParameter(engine, "engine");
-        this.f49929a = engine;
-        this.f49930b = new ArrayList();
+        this.f50140a = engine;
+        this.f50141b = new ArrayList();
     }
 
     public final void a(ZoomEngine.c listener) {
         Intrinsics.checkNotNullParameter(listener, "listener");
-        if (!this.f49930b.contains(listener)) {
-            this.f49930b.add(listener);
+        if (!this.f50141b.contains(listener)) {
+            this.f50141b.add(listener);
         }
     }
 
     public final void b() {
-        for (ZoomEngine.c cVar : this.f49930b) {
-            cVar.onIdle(this.f49929a);
+        for (ZoomEngine.c cVar : this.f50141b) {
+            cVar.onIdle(this.f50140a);
         }
     }
 
     public final void c() {
-        for (ZoomEngine.c cVar : this.f49930b) {
-            ZoomEngine zoomEngine = this.f49929a;
+        for (ZoomEngine.c cVar : this.f50141b) {
+            ZoomEngine zoomEngine = this.f50140a;
             cVar.onUpdate(zoomEngine, zoomEngine.y());
         }
     }

@@ -39,11 +39,11 @@ public abstract class b {
     }
 
     public static final long i(long j10, int i10) {
-        return Duration.l((j10 << 1) + i10);
+        return Duration.k((j10 << 1) + i10);
     }
 
     public static final long j(long j10) {
-        return Duration.l((j10 << 1) + 1);
+        return Duration.k((j10 << 1) + 1);
     }
 
     public static final long k(long j10) {
@@ -54,7 +54,7 @@ public abstract class b {
     }
 
     public static final long l(long j10) {
-        return Duration.l(j10 << 1);
+        return Duration.k(j10 << 1);
     }
 
     public static final long m(long j10) {
@@ -80,7 +80,7 @@ public abstract class b {
         boolean z11;
         int length = str.length();
         if (length != 0) {
-            Duration.a aVar = Duration.f36073e;
+            Duration.a aVar = Duration.f35463e;
             long c10 = aVar.c();
             char charAt3 = str.charAt(0);
             int i12 = (charAt3 == '+' || charAt3 == '-') ? 1 : 0;
@@ -95,7 +95,7 @@ public abstract class b {
                         throw new IllegalArgumentException();
                     }
                     boolean z14 = false;
-                    fs.b bVar = null;
+                    hs.b bVar = null;
                     while (i13 < length) {
                         if (str.charAt(i13) != 'T') {
                             int i14 = i13;
@@ -126,12 +126,12 @@ public abstract class b {
                                 if (length2 >= 0 && length2 < str.length()) {
                                     char charAt5 = str.charAt(length2);
                                     i13 = length2 + 1;
-                                    fs.b d10 = d.d(charAt5, z14);
+                                    hs.b d10 = d.d(charAt5, z14);
                                     if (bVar != null && bVar.compareTo(d10) <= 0) {
                                         throw new IllegalArgumentException("Unexpected order of duration components");
                                     }
                                     int h02 = StringsKt.h0(substring, '.', 0, false, 6, null);
-                                    if (d10 == fs.b.f25570p && h02 > 0) {
+                                    if (d10 == hs.b.f28135p && h02 > 0) {
                                         Intrinsics.checkNotNull(substring, "null cannot be cast to non-null type java.lang.String");
                                         String substring2 = substring.substring(0, h02);
                                         Intrinsics.checkNotNullExpressionValue(substring2, "substring(...)");
@@ -180,7 +180,7 @@ public abstract class b {
                             i10 = length;
                         }
                         boolean z16 = false;
-                        fs.b bVar2 = null;
+                        hs.b bVar2 = null;
                         while (i12 < i10) {
                             if (z16 && z15) {
                                 while (i12 < str.length() && str.charAt(i12) == ' ') {
@@ -204,7 +204,7 @@ public abstract class b {
                                 String substring5 = str.substring(length3, i17);
                                 Intrinsics.checkNotNullExpressionValue(substring5, "substring(...)");
                                 i12 = length3 + substring5.length();
-                                fs.b e10 = d.e(substring5);
+                                hs.b e10 = d.e(substring5);
                                 if (bVar2 != null && bVar2.compareTo(e10) <= 0) {
                                     throw new IllegalArgumentException("Unexpected order of duration components");
                                 }
@@ -278,34 +278,34 @@ public abstract class b {
         return Long.parseLong(str);
     }
 
-    public static final long r(double d10, fs.b unit) {
+    public static final long r(double d10, hs.b unit) {
         Intrinsics.checkNotNullParameter(unit, "unit");
-        double a10 = c.a(d10, unit, fs.b.f25567e);
+        double a10 = c.a(d10, unit, hs.b.f28132e);
         if (!Double.isNaN(a10)) {
-            long d11 = yr.a.d(a10);
+            long d11 = as.a.d(a10);
             if (-4611686018426999999L <= d11 && d11 < 4611686018427000000L) {
                 return l(d11);
             }
-            return k(yr.a.d(c.a(d10, unit, fs.b.f25569o)));
+            return k(as.a.d(c.a(d10, unit, hs.b.f28134o)));
         }
         throw new IllegalArgumentException("Duration value cannot be NaN.");
     }
 
-    public static final long s(int i10, fs.b unit) {
+    public static final long s(int i10, hs.b unit) {
         Intrinsics.checkNotNullParameter(unit, "unit");
-        if (unit.compareTo(fs.b.f25570p) <= 0) {
-            return l(c.c(i10, unit, fs.b.f25567e));
+        if (unit.compareTo(hs.b.f28135p) <= 0) {
+            return l(c.c(i10, unit, hs.b.f28132e));
         }
         return t(i10, unit);
     }
 
-    public static final long t(long j10, fs.b unit) {
+    public static final long t(long j10, hs.b unit) {
         Intrinsics.checkNotNullParameter(unit, "unit");
-        fs.b bVar = fs.b.f25567e;
+        hs.b bVar = hs.b.f28132e;
         long c10 = c.c(4611686018426999999L, bVar, unit);
         if ((-c10) <= j10 && j10 <= c10) {
             return l(c.c(j10, unit, bVar));
         }
-        return j(kotlin.ranges.d.o(c.b(j10, unit, fs.b.f25569o), -4611686018427387903L, 4611686018427387903L));
+        return j(kotlin.ranges.d.o(c.b(j10, unit, hs.b.f28134o), -4611686018427387903L, 4611686018427387903L));
     }
 }

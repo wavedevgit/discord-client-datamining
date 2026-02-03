@@ -56,9 +56,9 @@ public final class NextStep_GovernmentId_AssetConfig_CapturePageJsonAdapter exte
         RemoteImage remoteImage7 = null;
         RemoteImage remoteImage8 = null;
         while (reader.hasNext()) {
-            switch (reader.t0(this.options)) {
+            switch (reader.A0(this.options)) {
                 case -1:
-                    reader.F0();
+                    reader.E0();
                     reader.P();
                     break;
                 case 0:
@@ -114,7 +114,7 @@ public final class NextStep_GovernmentId_AssetConfig_CapturePageJsonAdapter exte
         RemoteImage remoteImage21 = remoteImage;
         Constructor<NextStep.GovernmentId.AssetConfig.CapturePage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.GovernmentId.AssetConfig.CapturePage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, tm.c.f49935c);
+            constructor = NextStep.GovernmentId.AssetConfig.CapturePage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, vm.c.f51691c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -128,21 +128,21 @@ public final class NextStep_GovernmentId_AssetConfig_CapturePageJsonAdapter exte
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (capturePage != null) {
             writer.l();
-            writer.t0("idFrontPictograph");
+            writer.A0("idFrontPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, capturePage.getIdFrontPictograph());
-            writer.t0("idBackPictograph");
+            writer.A0("idBackPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, capturePage.getIdBackPictograph());
-            writer.t0("barcodePdf417Pictograph");
+            writer.A0("barcodePdf417Pictograph");
             this.nullableRemoteImageAdapter.toJson(writer, capturePage.getBarcodePdf417Pictograph());
-            writer.t0("passportFrontPictograph");
+            writer.A0("passportFrontPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, capturePage.getPassportFrontPictograph());
-            writer.t0("passportSignaturePictograph");
+            writer.A0("passportSignaturePictograph");
             this.nullableRemoteImageAdapter.toJson(writer, capturePage.getPassportSignaturePictograph());
-            writer.t0("idFrontHelpModalPictograph");
+            writer.A0("idFrontHelpModalPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, capturePage.getIdFrontHelpModalPictograph());
-            writer.t0("idBackHelpModalPictograph");
+            writer.A0("idBackHelpModalPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, capturePage.getIdBackHelpModalPictograph());
-            writer.t0("barcodeHelpModalPictograph");
+            writer.A0("barcodeHelpModalPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, capturePage.getBarcodeHelpModalPictograph());
             writer.E();
             return;

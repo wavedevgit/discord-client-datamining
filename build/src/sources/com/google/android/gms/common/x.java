@@ -4,5 +4,5 @@ package com.google.android.gms.common;
 public abstract class x {
 
     /* renamed from: a  reason: collision with root package name */
-    static final u[] f14492a = {y.f14495c, y.f14496d};
+    static final u[] f13460a = {y.f13463c, y.f13464d};
 }

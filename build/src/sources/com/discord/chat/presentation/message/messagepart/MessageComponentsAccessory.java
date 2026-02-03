@@ -89,7 +89,7 @@ public final class MessageComponentsAccessory extends MessageAccessory {
         }
         if (obj instanceof MessageComponentsAccessory) {
             MessageComponentsAccessory messageComponentsAccessory = (MessageComponentsAccessory) obj;
-            return MessageId.m1090equalsimpl0(this.messageId, messageComponentsAccessory.messageId) && Intrinsics.areEqual(this.margins, messageComponentsAccessory.margins) && Intrinsics.areEqual(this.message, messageComponentsAccessory.message) && Intrinsics.areEqual(this.messageComponents, messageComponentsAccessory.messageComponents) && this.constrainedWidth == messageComponentsAccessory.constrainedWidth;
+            return MessageId.m1089equalsimpl0(this.messageId, messageComponentsAccessory.messageId) && Intrinsics.areEqual(this.margins, messageComponentsAccessory.margins) && Intrinsics.areEqual(this.message, messageComponentsAccessory.message) && Intrinsics.areEqual(this.messageComponents, messageComponentsAccessory.messageComponents) && this.constrainedWidth == messageComponentsAccessory.constrainedWidth;
         }
         return false;
     }
@@ -121,17 +121,17 @@ public final class MessageComponentsAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (((((((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + this.message.hashCode()) * 31) + this.messageComponents.hashCode()) * 31) + Integer.hashCode(this.constrainedWidth);
+        return (((((((MessageId.m1090hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + this.message.hashCode()) * 31) + this.messageComponents.hashCode()) * 31) + Integer.hashCode(this.constrainedWidth);
     }
 
     @NotNull
     public String toString() {
-        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.messageId);
         MessageMargins messageMargins = this.margins;
         Message message = this.message;
         List<Component> list = this.messageComponents;
         int i10 = this.constrainedWidth;
-        return "MessageComponentsAccessory(messageId=" + m1093toStringimpl + ", margins=" + messageMargins + ", message=" + message + ", messageComponents=" + list + ", constrainedWidth=" + i10 + ")";
+        return "MessageComponentsAccessory(messageId=" + m1092toStringimpl + ", margins=" + messageMargins + ", message=" + message + ", messageComponents=" + list + ", constrainedWidth=" + i10 + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

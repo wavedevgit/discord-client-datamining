@@ -6,15 +6,15 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public abstract class a implements CoroutineContext.Element {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final C0779a f55360d = new C0779a(null);
+    public static final C0773a f55498d = new C0773a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final int f55361e = 8;
+    public static final int f55499e = 8;
 
     /* renamed from: z0.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0779a implements CoroutineContext.b {
-        public /* synthetic */ C0779a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0773a implements CoroutineContext.b {
+        public /* synthetic */ C0773a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
@@ -22,7 +22,7 @@ public abstract class a implements CoroutineContext.Element {
             return "CompositionErrorContext";
         }
 
-        private C0779a() {
+        private C0773a() {
         }
     }
 }

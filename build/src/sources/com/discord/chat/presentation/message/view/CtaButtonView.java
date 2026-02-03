@@ -55,7 +55,7 @@ public final class CtaButtonView extends LinearLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void setButtonCallback_JjTCmh4$lambda$0(Function3 function3, long j10, String str, String str2, View view) {
-        function3.invoke(ChannelId.m1060boximpl(j10), MessageId.m1086boximpl(str), str2);
+        function3.invoke(ChannelId.m1059boximpl(j10), MessageId.m1085boximpl(str), str2);
     }
 
     /* JADX INFO: Access modifiers changed from: private */

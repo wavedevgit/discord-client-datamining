@@ -9,7 +9,7 @@ public interface Sink extends Closeable, Flushable {
 
     void flush();
 
-    Timeout timeout();
+    void t0(Buffer buffer, long j10);
 
-    void v0(Buffer buffer, long j10);
+    Timeout timeout();
 }

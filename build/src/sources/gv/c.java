@@ -1,19 +1,20 @@
 package gv;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class c {
-    public static c a(int i10) {
-        return new bv.b(-1, i10, false);
+public class c extends p {
+
+    /* renamed from: g  reason: collision with root package name */
+    private char f26653g;
+
+    @Override // gv.r
+    public void a(y yVar) {
+        yVar.s(this);
     }
 
-    public static c b(int i10) {
-        return new bv.b(i10, -1, false);
+    public char p() {
+        return this.f26653g;
     }
 
-    public static c c() {
-        return new bv.b(-1, -1, true);
-    }
-
-    public static c d() {
-        return null;
+    public void q(char c10) {
+        this.f26653g = c10;
     }
 }

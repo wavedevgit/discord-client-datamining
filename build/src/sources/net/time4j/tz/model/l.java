@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import kt.a0;
+import mt.a0;
 import net.time4j.tz.m;
 import net.time4j.tz.p;
 import net.time4j.tz.q;
@@ -12,7 +12,7 @@ import net.time4j.tz.q;
 public abstract class l implements m, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    static final String f40775d = System.getProperty("line.separator");
+    static final String f40814d = System.getProperty("line.separator");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static long f(int i10) {
@@ -75,8 +75,8 @@ public abstract class l implements m, Serializable {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public static long j(ht.a aVar, ht.g gVar) {
-        return ht.c.i(a0.UNIX.l(ht.b.j(aVar.f(), aVar.r(), aVar.g()), a0.MODIFIED_JULIAN_DATE), 86400L) + (gVar.h() * 3600) + (gVar.e() * 60) + gVar.d();
+    public static long j(kt.a aVar, kt.g gVar) {
+        return kt.c.i(a0.UNIX.q(kt.b.j(aVar.f(), aVar.s(), aVar.g()), a0.MODIFIED_JULIAN_DATE), 86400L) + (gVar.h() * 3600) + (gVar.e() * 60) + gVar.d();
     }
 
     @Override // net.time4j.tz.m

@@ -29,10 +29,10 @@ import java.util.concurrent.ConcurrentHashMap;
 public class c implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ConcurrentHashMap f29890d = new ConcurrentHashMap();
+    private final ConcurrentHashMap f30251d = new ConcurrentHashMap();
 
     /* renamed from: e  reason: collision with root package name */
-    protected final io.sentry.util.a f29891e = new io.sentry.util.a();
+    protected final io.sentry.util.a f30252e = new io.sentry.util.a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -42,78 +42,78 @@ public class c implements w1 {
             c cVar = new c();
             e3Var.r();
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String m02 = e3Var.m0();
-                m02.getClass();
+                String l02 = e3Var.l0();
+                l02.getClass();
                 char c10 = 65535;
-                switch (m02.hashCode()) {
+                switch (l02.hashCode()) {
                     case -1335157162:
-                        if (m02.equals("device")) {
+                        if (l02.equals("device")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case -895679987:
-                        if (m02.equals("spring")) {
+                        if (l02.equals("spring")) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case -340323263:
-                        if (m02.equals("response")) {
+                        if (l02.equals("response")) {
                             c10 = 2;
                             break;
                         }
                         break;
                     case -309425751:
-                        if (m02.equals("profile")) {
+                        if (l02.equals("profile")) {
                             c10 = 3;
                             break;
                         }
                         break;
                     case -191501435:
-                        if (m02.equals("feedback")) {
+                        if (l02.equals("feedback")) {
                             c10 = 4;
                             break;
                         }
                         break;
                     case 3556:
-                        if (m02.equals("os")) {
+                        if (l02.equals("os")) {
                             c10 = 5;
                             break;
                         }
                         break;
                     case 96801:
-                        if (m02.equals("app")) {
+                        if (l02.equals("app")) {
                             c10 = 6;
                             break;
                         }
                         break;
                     case 102572:
-                        if (m02.equals("gpu")) {
+                        if (l02.equals("gpu")) {
                             c10 = 7;
                             break;
                         }
                         break;
                     case 97513095:
-                        if (m02.equals("flags")) {
+                        if (l02.equals("flags")) {
                             c10 = '\b';
                             break;
                         }
                         break;
                     case 110620997:
-                        if (m02.equals(SharedPreferencesKey.TRACE)) {
+                        if (l02.equals(SharedPreferencesKey.TRACE)) {
                             c10 = '\t';
                             break;
                         }
                         break;
                     case 150940456:
-                        if (m02.equals("browser")) {
+                        if (l02.equals("browser")) {
                             c10 = '\n';
                             break;
                         }
                         break;
                     case 1550962648:
-                        if (m02.equals("runtime")) {
+                        if (l02.equals("runtime")) {
                             c10 = 11;
                             break;
                         }
@@ -139,7 +139,7 @@ public class c implements w1 {
                         cVar.u(new n.a().a(e3Var, iLogger));
                         break;
                     case 6:
-                        cVar.o(new a.C0402a().a(e3Var, iLogger));
+                        cVar.o(new a.C0401a().a(e3Var, iLogger));
                         break;
                     case 7:
                         cVar.t(new j.a().a(e3Var, iLogger));
@@ -161,7 +161,7 @@ public class c implements w1 {
                         if (V1 == null) {
                             break;
                         } else {
-                            cVar.l(m02, V1);
+                            cVar.l(l02, V1);
                             break;
                         }
                 }
@@ -186,18 +186,18 @@ public class c implements w1 {
         if (obj == null) {
             return false;
         }
-        return this.f29890d.containsKey(obj);
+        return this.f30251d.containsKey(obj);
     }
 
     public Set b() {
-        return this.f29890d.entrySet();
+        return this.f30251d.entrySet();
     }
 
     public Object c(Object obj) {
         if (obj == null) {
             return null;
         }
-        return this.f29890d.get(obj);
+        return this.f30251d.get(obj);
     }
 
     public io.sentry.protocol.a d() {
@@ -210,7 +210,7 @@ public class c implements w1 {
 
     public boolean equals(Object obj) {
         if (obj != null && (obj instanceof c)) {
-            return this.f29890d.equals(((c) obj).f29890d);
+            return this.f30251d.equals(((c) obj).f30251d);
         }
         return false;
     }
@@ -228,7 +228,7 @@ public class c implements w1 {
     }
 
     public int hashCode() {
-        return this.f29890d.hashCode();
+        return this.f30251d.hashCode();
     }
 
     public z i() {
@@ -240,7 +240,7 @@ public class c implements w1 {
     }
 
     public Enumeration k() {
-        return this.f29890d.keys();
+        return this.f30251d.keys();
     }
 
     public Object l(String str, Object obj) {
@@ -248,23 +248,23 @@ public class c implements w1 {
             return null;
         }
         if (obj == null) {
-            return this.f29890d.remove(str);
+            return this.f30251d.remove(str);
         }
-        return this.f29890d.put(str, obj);
+        return this.f30251d.put(str, obj);
     }
 
     public void m(c cVar) {
         if (cVar == null) {
             return;
         }
-        this.f29890d.putAll(cVar.f29890d);
+        this.f30251d.putAll(cVar.f30251d);
     }
 
     public Object n(Object obj) {
         if (obj == null) {
             return null;
         }
-        return this.f29890d.remove(obj);
+        return this.f30251d.remove(obj);
     }
 
     public void o(io.sentry.protocol.a aVar) {
@@ -315,7 +315,7 @@ public class c implements w1 {
     }
 
     public void w(p pVar) {
-        a1 a10 = this.f29891e.a();
+        a1 a10 = this.f30252e.a();
         try {
             l("response", pVar);
             if (a10 != null) {

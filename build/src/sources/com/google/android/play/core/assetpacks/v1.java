@@ -3,24 +3,24 @@ package com.google.android.play.core.assetpacks;
 public final class v1 implements th.t {
 
     /* renamed from: a  reason: collision with root package name */
-    private final th.w f16701a;
+    private final th.w f15669a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final th.w f16702b;
+    private final th.w f15670b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final th.w f16703c;
+    private final th.w f15671c;
 
     public v1(th.w wVar, th.w wVar2, th.w wVar3) {
-        this.f16701a = wVar;
-        this.f16702b = wVar2;
-        this.f16703c = wVar3;
+        this.f15669a = wVar;
+        this.f15670b = wVar2;
+        this.f15671c = wVar3;
     }
 
     @Override // th.w
     public final /* bridge */ /* synthetic */ Object a() {
-        th.w wVar = this.f16703c;
-        th.w wVar2 = this.f16702b;
-        return new u1((r2) this.f16701a.a(), (y1) wVar2.a(), (m3) wVar.a());
+        th.w wVar = this.f15671c;
+        th.w wVar2 = this.f15670b;
+        return new u1((r2) this.f15669a.a(), (y1) wVar2.a(), (m3) wVar.a());
     }
 }

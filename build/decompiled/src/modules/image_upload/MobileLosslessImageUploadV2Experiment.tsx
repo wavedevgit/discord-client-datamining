@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/image_upload/MobileLosslessImageUploadV2Experiment.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun37650: for (var _fun37650_ip = 0;;) switch (_fun37650_ip) {
+        _fun37737: for (var _fun37737_ip = 0;;) switch (_fun37737_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.location;
@@ -65,16 +65,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.isInHoldout;
                 var1 = {};
                 if (var2) {
-                    _fun37650_ip = 98;
-                    continue _fun37650
+                    _fun37737_ip = 98;
+                    continue _fun37737
                 }
             case 77:
                 var2 = _closure1_slot2;
                 var0 = var2.getConfig;
                 var1.location = var3;
                 var0 = var0.bind(var2)(var1);
-                _fun37650_ip = 107;
-                continue _fun37650;
+                _fun37737_ip = 107;
+                continue _fun37737;
             case 98:
                 var2 = false;
                 var1.enabled = var2;

@@ -4,7 +4,10 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import bq.p;
+import aq.b4;
+import aq.m5;
+import aq.o1;
+import aq.y3;
 import com.facebook.react.views.textinput.ReactEditTextInputConnectionWrapper;
 import com.google.android.material.textfield.TextInputLayout;
 import com.withpersona.sdk2.inquiry.network.dto.ui.components.InputInternationalDb;
@@ -12,9 +15,10 @@ import com.withpersona.sdk2.inquiry.network.dto.ui.styling.InputSelectComponentS
 import com.withpersona.sdk2.inquiry.network.dto.ui.styling.InputTextBasedComponentStyle;
 import com.withpersona.sdk2.inquiry.network.dto.ui.styling.TextBasedComponentStyle;
 import com.withpersona.sdk2.inquiry.steps.ui.components.b;
-import dq.a0;
-import dq.f0;
-import dq.o;
+import dq.p;
+import fq.a0;
+import fq.f0;
+import fq.o;
 import java.util.Iterator;
 import java.util.List;
 import kotlin.Unit;
@@ -23,11 +27,7 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
-import wm.u;
-import yp.b4;
-import yp.m5;
-import yp.o1;
-import yp.y3;
+import ym.u;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class c {
     public static final /* synthetic */ b4 h(b.c cVar) {
@@ -47,7 +47,7 @@ public abstract class c {
         Intrinsics.checkNotNullParameter(config, "config");
         final p c10 = p.c(uiComponentHelper.b());
         InputInternationalDb.Attributes attributes = config.getAttributes();
-        TextView textView = c10.f7498h;
+        TextView textView = c10.f20814h;
         String str4 = null;
         if (attributes != null) {
             str = attributes.getLabel();
@@ -55,30 +55,30 @@ public abstract class c {
             str = null;
         }
         textView.setText(str);
-        TextInputLayout textInputLayout = c10.f7493c;
+        TextInputLayout textInputLayout = c10.f20809c;
         if (attributes != null) {
             str2 = attributes.getLabelIdbCountry();
         } else {
             str2 = null;
         }
         textInputLayout.setHint(str2);
-        TextInputLayout textInputLayout2 = c10.f7496f;
+        TextInputLayout textInputLayout2 = c10.f20812f;
         if (attributes != null) {
             str3 = attributes.getLabelIdbType();
         } else {
             str3 = null;
         }
         textInputLayout2.setHint(str3);
-        TextInputLayout textInputLayout3 = c10.f7499i;
+        TextInputLayout textInputLayout3 = c10.f20815i;
         if (attributes != null) {
             str4 = attributes.getLabelIdbValue();
         }
         textInputLayout3.setHint(str4);
-        EditText editText = c10.f7499i.getEditText();
+        EditText editText = c10.f20815i.getEditText();
         if (editText != null) {
             u.b(bVar.r(), editText);
         }
-        uiComponentHelper.d(new Function0() { // from class: yp.f1
+        uiComponentHelper.d(new Function0() { // from class: aq.f1
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit k10;
@@ -97,27 +97,27 @@ public abstract class c {
         if (styles != null) {
             InputSelectComponentStyle inputSelectStyle = styles.getInputSelectStyle();
             if (inputSelectStyle != null) {
-                TextInputLayout idbCountryInput = pVar.f7493c;
+                TextInputLayout idbCountryInput = pVar.f20809c;
                 Intrinsics.checkNotNullExpressionValue(idbCountryInput, "idbCountryInput");
                 o.i(idbCountryInput, inputSelectStyle);
-                TextInputLayout idbIdTypeInput = pVar.f7496f;
+                TextInputLayout idbIdTypeInput = pVar.f20812f;
                 Intrinsics.checkNotNullExpressionValue(idbIdTypeInput, "idbIdTypeInput");
                 o.i(idbIdTypeInput, inputSelectStyle);
             }
             InputTextBasedComponentStyle inputTextStyle = styles.getInputTextStyle();
             if (inputTextStyle != null) {
-                TextInputLayout idbValueInput = pVar.f7499i;
+                TextInputLayout idbValueInput = pVar.f20815i;
                 Intrinsics.checkNotNullExpressionValue(idbValueInput, "idbValueInput");
                 a0.k(idbValueInput, inputTextStyle);
             }
             TextBasedComponentStyle textStyle = styles.getTextStyle();
             if (textStyle != null) {
-                TextView idbDescription = pVar.f7495e;
+                TextView idbDescription = pVar.f20811e;
                 Intrinsics.checkNotNullExpressionValue(idbDescription, "idbDescription");
                 f0.n(idbDescription, textStyle, null, 2, null);
             }
         }
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     public static final b4 l(b.c cVar) {
@@ -141,9 +141,9 @@ public abstract class c {
         Intrinsics.checkNotNullParameter(binding, "binding");
         Intrinsics.checkNotNullParameter(onCountryInputClick, "onCountryInputClick");
         Intrinsics.checkNotNullParameter(onIdTypeInputClick, "onIdTypeInputClick");
-        EditText editText = binding.f7493c.getEditText();
+        EditText editText = binding.f20809c.getEditText();
         if (editText != null) {
-            editText.setText(CollectionsKt.x0(bVar.f().b(), ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, new Function1() { // from class: yp.g1
+            editText.setText(CollectionsKt.x0(bVar.f().b(), ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, new Function1() { // from class: aq.g1
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj2) {
                     CharSequence s10;
@@ -152,9 +152,9 @@ public abstract class c {
                 }
             }, 30, null));
         }
-        EditText editText2 = binding.f7496f.getEditText();
+        EditText editText2 = binding.f20812f.getEditText();
         if (editText2 != null) {
-            editText2.setText(CollectionsKt.x0(bVar.o().b(), ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, new Function1() { // from class: yp.h1
+            editText2.setText(CollectionsKt.x0(bVar.o().b(), ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, new Function1() { // from class: aq.h1
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj2) {
                     CharSequence t10;
@@ -170,9 +170,9 @@ public abstract class c {
         boolean i12 = bVar.i();
         boolean k10 = bVar.k();
         if (t10 == null) {
-            binding.f7496f.setEnabled(false);
+            binding.f20812f.setEnabled(false);
         } else {
-            binding.f7496f.setEnabled(true);
+            binding.f20812f.setEnabled(true);
         }
         if (t10 == null && e10 != null && e10.size() == 1) {
             bVar.f().c(CollectionsKt.e(l((b.c) CollectionsKt.o0(e10))));
@@ -186,14 +186,14 @@ public abstract class c {
                 k10 = true;
             }
         }
-        TextInputLayout textInputLayout = binding.f7493c;
+        TextInputLayout textInputLayout = binding.f20809c;
         if (i12) {
             i10 = 8;
         } else {
             i10 = 0;
         }
         textInputLayout.setVisibility(i10);
-        TextInputLayout textInputLayout2 = binding.f7496f;
+        TextInputLayout textInputLayout2 = binding.f20812f;
         if (k10) {
             i11 = 8;
         } else {
@@ -201,7 +201,7 @@ public abstract class c {
         }
         textInputLayout2.setVisibility(i11);
         if (t10 != null && u10 != null) {
-            binding.f7499i.setEnabled(true);
+            binding.f20815i.setEnabled(true);
             List c10 = bVar.c();
             String str7 = null;
             if (c10 != null) {
@@ -222,7 +222,7 @@ public abstract class c {
             } else {
                 idType = null;
             }
-            TextInputLayout idbValueInput = binding.f7499i;
+            TextInputLayout idbValueInput = binding.f20815i;
             Intrinsics.checkNotNullExpressionValue(idbValueInput, "idbValueInput");
             if (idType != null) {
                 str4 = idType.getMask();
@@ -246,52 +246,52 @@ public abstract class c {
                 str6 = null;
             }
             if (str6 != null && !StringsKt.k0(str6)) {
-                binding.f7495e.setVisibility(0);
-                TextView textView = binding.f7495e;
+                binding.f20811e.setVisibility(0);
+                TextView textView = binding.f20811e;
                 if (idType != null) {
                     str7 = idType.getDescription();
                 }
                 textView.setText(str7);
             } else {
-                binding.f7495e.setVisibility(8);
+                binding.f20811e.setVisibility(8);
             }
         } else {
-            binding.f7499i.setEnabled(false);
-            binding.f7495e.setVisibility(8);
+            binding.f20815i.setEnabled(false);
+            binding.f20811e.setVisibility(8);
         }
-        binding.f7493c.setOnClickListener(new View.OnClickListener() { // from class: yp.i1
+        binding.f20809c.setOnClickListener(new View.OnClickListener() { // from class: aq.i1
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 com.withpersona.sdk2.inquiry.steps.ui.components.c.o(Function0.this, view);
             }
         });
-        EditText editText3 = binding.f7493c.getEditText();
+        EditText editText3 = binding.f20809c.getEditText();
         if (editText3 != null) {
-            editText3.setOnClickListener(new View.OnClickListener() { // from class: yp.j1
+            editText3.setOnClickListener(new View.OnClickListener() { // from class: aq.j1
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     com.withpersona.sdk2.inquiry.steps.ui.components.c.p(Function0.this, view);
                 }
             });
         }
-        binding.f7496f.setOnClickListener(new View.OnClickListener() { // from class: yp.k1
+        binding.f20812f.setOnClickListener(new View.OnClickListener() { // from class: aq.k1
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 com.withpersona.sdk2.inquiry.steps.ui.components.c.q(Function0.this, view);
             }
         });
-        EditText editText4 = binding.f7496f.getEditText();
+        EditText editText4 = binding.f20812f.getEditText();
         if (editText4 != null) {
-            editText4.setOnClickListener(new View.OnClickListener() { // from class: yp.l1
+            editText4.setOnClickListener(new View.OnClickListener() { // from class: aq.l1
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     com.withpersona.sdk2.inquiry.steps.ui.components.c.r(Function0.this, view);
                 }
             });
         }
-        binding.f7493c.setError(str);
-        binding.f7496f.setError(str2);
-        binding.f7499i.setError(str3);
+        binding.f20809c.setError(str);
+        binding.f20812f.setError(str2);
+        binding.f20815i.setError(str3);
     }
 
     public static final void o(Function0 function0, View view) {

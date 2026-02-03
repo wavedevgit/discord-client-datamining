@@ -3,36 +3,36 @@ package ng;
 public final class h8 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ma f41148a;
+    private final ma f41187a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final e8 f41149b;
+    private final e8 f41188b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final z7 f41150c;
+    private final z7 f41189c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ h8(f8 f8Var, g8 g8Var) {
         ma maVar;
         e8 e8Var;
         z7 z7Var;
-        maVar = f8Var.f41086a;
-        this.f41148a = maVar;
-        e8Var = f8Var.f41087b;
-        this.f41149b = e8Var;
-        z7Var = f8Var.f41088c;
-        this.f41150c = z7Var;
+        maVar = f8Var.f41125a;
+        this.f41187a = maVar;
+        e8Var = f8Var.f41126b;
+        this.f41188b = e8Var;
+        z7Var = f8Var.f41127c;
+        this.f41189c = z7Var;
     }
 
     public final z7 a() {
-        return this.f41150c;
+        return this.f41189c;
     }
 
     public final e8 b() {
-        return this.f41149b;
+        return this.f41188b;
     }
 
     public final ma c() {
-        return this.f41148a;
+        return this.f41187a;
     }
 }

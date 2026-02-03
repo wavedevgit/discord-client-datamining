@@ -46,15 +46,15 @@ public final class AttributeStyles_InputRadioGroupFontSizeStyleJsonAdapter exten
         StyleElements.Measurement measurement2 = null;
         StyleElements.Measurement measurement3 = null;
         while (reader.hasNext()) {
-            int t02 = reader.t0(this.options);
-            if (t02 == -1) {
-                reader.F0();
+            int A0 = reader.A0(this.options);
+            if (A0 == -1) {
+                reader.E0();
                 reader.P();
-            } else if (t02 == 0) {
+            } else if (A0 == 0) {
                 measurement = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (t02 == 1) {
+            } else if (A0 == 1) {
                 measurement2 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (t02 == 2) {
+            } else if (A0 == 2) {
                 measurement3 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
             }
         }
@@ -67,11 +67,11 @@ public final class AttributeStyles_InputRadioGroupFontSizeStyleJsonAdapter exten
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputRadioGroupFontSizeStyle != null) {
             writer.l();
-            writer.t0("base");
+            writer.A0("base");
             this.nullableMeasurementAdapter.toJson(writer, inputRadioGroupFontSizeStyle.getBase());
-            writer.t0("description");
+            writer.A0("description");
             this.nullableMeasurementAdapter.toJson(writer, inputRadioGroupFontSizeStyle.getDescription());
-            writer.t0("error");
+            writer.A0("error");
             this.nullableMeasurementAdapter.toJson(writer, inputRadioGroupFontSizeStyle.getError());
             writer.E();
             return;

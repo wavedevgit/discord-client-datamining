@@ -4,25 +4,25 @@ package androidx.datastore.preferences.protobuf;
 public final class b1 implements m0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final o0 f3618a;
+    private final o0 f3587a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f3619b;
+    private final String f3588b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Object[] f3620c;
+    private final Object[] f3589c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f3621d;
+    private final int f3590d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b1(o0 o0Var, String str, Object[] objArr) {
-        this.f3618a = o0Var;
-        this.f3619b = str;
-        this.f3620c = objArr;
+        this.f3587a = o0Var;
+        this.f3588b = str;
+        this.f3589c = objArr;
         char charAt = str.charAt(0);
         if (charAt < 55296) {
-            this.f3621d = charAt;
+            this.f3590d = charAt;
             return;
         }
         int i10 = charAt & 8191;
@@ -36,7 +36,7 @@ public final class b1 implements m0 {
                 i11 += 13;
                 i12 = i13;
             } else {
-                this.f3621d = i10 | (charAt2 << i11);
+                this.f3590d = i10 | (charAt2 << i11);
                 return;
             }
         }
@@ -44,7 +44,7 @@ public final class b1 implements m0 {
 
     @Override // androidx.datastore.preferences.protobuf.m0
     public boolean a() {
-        if ((this.f3621d & 2) == 2) {
+        if ((this.f3590d & 2) == 2) {
             return true;
         }
         return false;
@@ -52,12 +52,12 @@ public final class b1 implements m0 {
 
     @Override // androidx.datastore.preferences.protobuf.m0
     public o0 b() {
-        return this.f3618a;
+        return this.f3587a;
     }
 
     @Override // androidx.datastore.preferences.protobuf.m0
     public y0 c() {
-        if ((this.f3621d & 1) == 1) {
+        if ((this.f3590d & 1) == 1) {
             return y0.PROTO2;
         }
         return y0.PROTO3;
@@ -65,11 +65,11 @@ public final class b1 implements m0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Object[] d() {
-        return this.f3620c;
+        return this.f3589c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public String e() {
-        return this.f3619b;
+        return this.f3588b;
     }
 }

@@ -1,8 +1,16 @@
 package lv;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-@Retention(RetentionPolicy.RUNTIME)
+import android.os.Handler;
+import android.os.Looper;
+import java.util.concurrent.Executor;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public @interface a {
+final class a implements Executor {
+
+    /* renamed from: d  reason: collision with root package name */
+    private final Handler f37344d = new Handler(Looper.getMainLooper());
+
+    @Override // java.util.concurrent.Executor
+    public void execute(Runnable runnable) {
+        this.f37344d.post(runnable);
+    }
 }

@@ -5,58 +5,58 @@ import ui.c;
 final class o3 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final o3 f41381a = new o3();
+    static final o3 f41420a = new o3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41382b;
+    private static final ui.c f41421b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41383c;
+    private static final ui.c f41422c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41384d;
+    private static final ui.c f41423d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f41385e;
+    private static final ui.c f41424e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f41386f;
+    private static final ui.c f41425f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final ui.c f41387g;
+    private static final ui.c f41426g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final ui.c f41388h;
+    private static final ui.c f41427h;
 
     static {
         c.b a10 = ui.c.a("durationMs");
         f fVar = new f();
         fVar.a(1);
-        f41382b = a10.b(fVar.b()).a();
+        f41421b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("imageSource");
         f fVar2 = new f();
         fVar2.a(2);
-        f41383c = a11.b(fVar2.b()).a();
+        f41422c = a11.b(fVar2.b()).a();
         c.b a12 = ui.c.a("imageFormat");
         f fVar3 = new f();
         fVar3.a(3);
-        f41384d = a12.b(fVar3.b()).a();
+        f41423d = a12.b(fVar3.b()).a();
         c.b a13 = ui.c.a("imageByteSize");
         f fVar4 = new f();
         fVar4.a(4);
-        f41385e = a13.b(fVar4.b()).a();
+        f41424e = a13.b(fVar4.b()).a();
         c.b a14 = ui.c.a("imageWidth");
         f fVar5 = new f();
         fVar5.a(5);
-        f41386f = a14.b(fVar5.b()).a();
+        f41425f = a14.b(fVar5.b()).a();
         c.b a15 = ui.c.a("imageHeight");
         f fVar6 = new f();
         fVar6.a(6);
-        f41387g = a15.b(fVar6.b()).a();
+        f41426g = a15.b(fVar6.b()).a();
         c.b a16 = ui.c.a("rotationDegrees");
         f fVar7 = new f();
         fVar7.a(7);
-        f41388h = a16.b(fVar7.b()).a();
+        f41427h = a16.b(fVar7.b()).a();
     }
 
     private o3() {
@@ -66,12 +66,12 @@ final class o3 implements ui.d {
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         z7 z7Var = (z7) obj;
         ui.e eVar = (ui.e) obj2;
-        eVar.b(f41382b, z7Var.g());
-        eVar.b(f41383c, z7Var.b());
-        eVar.b(f41384d, z7Var.a());
-        eVar.b(f41385e, z7Var.c());
-        eVar.b(f41386f, z7Var.e());
-        eVar.b(f41387g, z7Var.d());
-        eVar.b(f41388h, z7Var.f());
+        eVar.b(f41421b, z7Var.g());
+        eVar.b(f41422c, z7Var.b());
+        eVar.b(f41423d, z7Var.a());
+        eVar.b(f41424e, z7Var.c());
+        eVar.b(f41425f, z7Var.e());
+        eVar.b(f41426g, z7Var.d());
+        eVar.b(f41427h, z7Var.f());
     }
 }

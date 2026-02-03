@@ -5,37 +5,37 @@ import ui.c;
 final class s1 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final s1 f41477a = new s1();
+    static final s1 f41516a = new s1();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41478b;
+    private static final ui.c f41517b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41479c;
+    private static final ui.c f41518c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41480d;
+    private static final ui.c f41519d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f41481e;
+    private static final ui.c f41520e;
 
     static {
         c.b a10 = ui.c.a("errorCode");
         f fVar = new f();
         fVar.a(1);
-        f41478b = a10.b(fVar.b()).a();
+        f41517b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("isColdCall");
         f fVar2 = new f();
         fVar2.a(2);
-        f41479c = a11.b(fVar2.b()).a();
+        f41518c = a11.b(fVar2.b()).a();
         c.b a12 = ui.c.a("imageInfo");
         f fVar3 = new f();
         fVar3.a(3);
-        f41480d = a12.b(fVar3.b()).a();
+        f41519d = a12.b(fVar3.b()).a();
         c.b a13 = ui.c.a("detectorOptions");
         f fVar4 = new f();
         fVar4.a(4);
-        f41481e = a13.b(fVar4.b()).a();
+        f41520e = a13.b(fVar4.b()).a();
     }
 
     private s1() {

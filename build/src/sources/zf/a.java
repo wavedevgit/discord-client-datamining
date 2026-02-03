@@ -7,25 +7,25 @@ import android.os.Parcel;
 public abstract class a implements IInterface {
 
     /* renamed from: c  reason: collision with root package name */
-    private final IBinder f55802c;
+    private final IBinder f55940c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f55803d = "com.google.android.gms.ads.identifier.internal.IAdvertisingIdService";
+    private final String f55941d = "com.google.android.gms.ads.identifier.internal.IAdvertisingIdService";
 
     /* JADX INFO: Access modifiers changed from: protected */
     public a(IBinder iBinder, String str) {
-        this.f55802c = iBinder;
+        this.f55940c = iBinder;
     }
 
     @Override // android.os.IInterface
     public final IBinder asBinder() {
-        return this.f55802c;
+        return this.f55940c;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final Parcel e() {
         Parcel obtain = Parcel.obtain();
-        obtain.writeInterfaceToken(this.f55803d);
+        obtain.writeInterfaceToken(this.f55941d);
         return obtain;
     }
 
@@ -34,7 +34,7 @@ public abstract class a implements IInterface {
         Parcel obtain = Parcel.obtain();
         try {
             try {
-                this.f55802c.transact(i10, parcel, obtain, 0);
+                this.f55940c.transact(i10, parcel, obtain, 0);
                 obtain.readException();
                 return obtain;
             } catch (RuntimeException e10) {

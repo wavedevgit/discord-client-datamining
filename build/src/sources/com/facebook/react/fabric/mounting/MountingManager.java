@@ -244,7 +244,7 @@ public final class MountingManager {
         throw new IllegalStateException("Required value was null.");
     }
 
-    @jr.c
+    @lr.c
     public final void receiveCommand(int i10, int i11, int i12, @NotNull ReadableArray commandArgs) {
         Intrinsics.checkNotNullParameter(commandArgs, "commandArgs");
         UiThreadUtil.assertOnUiThread();

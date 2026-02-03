@@ -74,9 +74,9 @@ public final class NextStep_Selfie_CapturePageJsonAdapter extends h {
             String str25 = str8;
             if (reader.hasNext()) {
                 String str26 = str9;
-                switch (reader.t0(this.options)) {
+                switch (reader.A0(this.options)) {
                     case -1:
-                        reader.F0();
+                        reader.E0();
                         reader.P();
                         str9 = str26;
                         str = str18;
@@ -109,7 +109,7 @@ public final class NextStep_Selfie_CapturePageJsonAdapter extends h {
                             str7 = str24;
                             break;
                         } else {
-                            throw tm.c.x("selfieHintTakePhoto", "selfieHintTakePhoto", reader);
+                            throw vm.c.x("selfieHintTakePhoto", "selfieHintTakePhoto", reader);
                         }
                     case 2:
                         str3 = (String) this.stringAdapter.fromJson(reader);
@@ -123,7 +123,7 @@ public final class NextStep_Selfie_CapturePageJsonAdapter extends h {
                             str7 = str24;
                             break;
                         } else {
-                            throw tm.c.x("selfieHintCenterFace", "selfieHintCenterFace", reader);
+                            throw vm.c.x("selfieHintCenterFace", "selfieHintCenterFace", reader);
                         }
                     case 3:
                         str4 = (String) this.stringAdapter.fromJson(reader);
@@ -137,7 +137,7 @@ public final class NextStep_Selfie_CapturePageJsonAdapter extends h {
                             str7 = str24;
                             break;
                         } else {
-                            throw tm.c.x("selfieHintFaceTooClose", "selfieHintFaceTooClose", reader);
+                            throw vm.c.x("selfieHintFaceTooClose", "selfieHintFaceTooClose", reader);
                         }
                     case 4:
                         str5 = (String) this.stringAdapter.fromJson(reader);
@@ -151,7 +151,7 @@ public final class NextStep_Selfie_CapturePageJsonAdapter extends h {
                             str7 = str24;
                             break;
                         } else {
-                            throw tm.c.x("selfieHintFaceTooFar", "selfieHintFaceTooFar", reader);
+                            throw vm.c.x("selfieHintFaceTooFar", "selfieHintFaceTooFar", reader);
                         }
                     case 5:
                         str6 = (String) this.stringAdapter.fromJson(reader);
@@ -165,7 +165,7 @@ public final class NextStep_Selfie_CapturePageJsonAdapter extends h {
                             str7 = str24;
                             break;
                         } else {
-                            throw tm.c.x("selfieHintMultipleFaces", "selfieHintMultipleFaces", reader);
+                            throw vm.c.x("selfieHintMultipleFaces", "selfieHintMultipleFaces", reader);
                         }
                     case 6:
                         str7 = (String) this.stringAdapter.fromJson(reader);
@@ -179,7 +179,7 @@ public final class NextStep_Selfie_CapturePageJsonAdapter extends h {
                             str6 = str23;
                             break;
                         } else {
-                            throw tm.c.x("selfieHintFaceIncomplete", "selfieHintFaceIncomplete", reader);
+                            throw vm.c.x("selfieHintFaceIncomplete", "selfieHintFaceIncomplete", reader);
                         }
                     case 7:
                         str8 = (String) this.stringAdapter.fromJson(reader);
@@ -194,12 +194,12 @@ public final class NextStep_Selfie_CapturePageJsonAdapter extends h {
                             str7 = str24;
                             continue;
                         } else {
-                            throw tm.c.x("selfieHintPoseNotCenter", "selfieHintPoseNotCenter", reader);
+                            throw vm.c.x("selfieHintPoseNotCenter", "selfieHintPoseNotCenter", reader);
                         }
                     case 8:
                         str9 = (String) this.stringAdapter.fromJson(reader);
                         if (str9 == null) {
-                            throw tm.c.x("selfieHintLookLeft", "selfieHintLookLeft", reader);
+                            throw vm.c.x("selfieHintLookLeft", "selfieHintLookLeft", reader);
                         }
                         str = str18;
                         str2 = str19;
@@ -212,7 +212,7 @@ public final class NextStep_Selfie_CapturePageJsonAdapter extends h {
                     case 9:
                         str10 = (String) this.stringAdapter.fromJson(reader);
                         if (str10 == null) {
-                            throw tm.c.x("selfieHintLookRight", "selfieHintLookRight", reader);
+                            throw vm.c.x("selfieHintLookRight", "selfieHintLookRight", reader);
                         }
                         str9 = str26;
                         str = str18;
@@ -226,7 +226,7 @@ public final class NextStep_Selfie_CapturePageJsonAdapter extends h {
                     case 10:
                         str11 = (String) this.stringAdapter.fromJson(reader);
                         if (str11 == null) {
-                            throw tm.c.x("selfieHintHoldStill", "selfieHintHoldStill", reader);
+                            throw vm.c.x("selfieHintHoldStill", "selfieHintHoldStill", reader);
                         }
                         str9 = str26;
                         str = str18;
@@ -330,25 +330,25 @@ public final class NextStep_Selfie_CapturePageJsonAdapter extends h {
                                                     if (str11 != null) {
                                                         return new NextStep.Selfie.CapturePage(str18, str19, str20, str21, str22, str23, str24, str25, str27, str10, str11, str12, str13, str14, str15, str16, str17);
                                                     }
-                                                    throw tm.c.o("selfieHintHoldStill", "selfieHintHoldStill", reader);
+                                                    throw vm.c.o("selfieHintHoldStill", "selfieHintHoldStill", reader);
                                                 }
-                                                throw tm.c.o("selfieHintLookRight", "selfieHintLookRight", reader);
+                                                throw vm.c.o("selfieHintLookRight", "selfieHintLookRight", reader);
                                             }
-                                            throw tm.c.o("selfieHintLookLeft", "selfieHintLookLeft", reader);
+                                            throw vm.c.o("selfieHintLookLeft", "selfieHintLookLeft", reader);
                                         }
-                                        throw tm.c.o("selfieHintPoseNotCenter", "selfieHintPoseNotCenter", reader);
+                                        throw vm.c.o("selfieHintPoseNotCenter", "selfieHintPoseNotCenter", reader);
                                     }
-                                    throw tm.c.o("selfieHintFaceIncomplete", "selfieHintFaceIncomplete", reader);
+                                    throw vm.c.o("selfieHintFaceIncomplete", "selfieHintFaceIncomplete", reader);
                                 }
-                                throw tm.c.o("selfieHintMultipleFaces", "selfieHintMultipleFaces", reader);
+                                throw vm.c.o("selfieHintMultipleFaces", "selfieHintMultipleFaces", reader);
                             }
-                            throw tm.c.o("selfieHintFaceTooFar", "selfieHintFaceTooFar", reader);
+                            throw vm.c.o("selfieHintFaceTooFar", "selfieHintFaceTooFar", reader);
                         }
-                        throw tm.c.o("selfieHintFaceTooClose", "selfieHintFaceTooClose", reader);
+                        throw vm.c.o("selfieHintFaceTooClose", "selfieHintFaceTooClose", reader);
                     }
-                    throw tm.c.o("selfieHintCenterFace", "selfieHintCenterFace", reader);
+                    throw vm.c.o("selfieHintCenterFace", "selfieHintCenterFace", reader);
                 }
-                throw tm.c.o("selfieHintTakePhoto", "selfieHintTakePhoto", reader);
+                throw vm.c.o("selfieHintTakePhoto", "selfieHintTakePhoto", reader);
             }
         }
     }
@@ -358,39 +358,39 @@ public final class NextStep_Selfie_CapturePageJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (capturePage != null) {
             writer.l();
-            writer.t0("title");
+            writer.A0("title");
             this.nullableStringAdapter.toJson(writer, capturePage.getTitle());
-            writer.t0("selfieHintTakePhoto");
+            writer.A0("selfieHintTakePhoto");
             this.stringAdapter.toJson(writer, capturePage.getSelfieHintTakePhoto());
-            writer.t0("selfieHintCenterFace");
+            writer.A0("selfieHintCenterFace");
             this.stringAdapter.toJson(writer, capturePage.getSelfieHintCenterFace());
-            writer.t0("selfieHintFaceTooClose");
+            writer.A0("selfieHintFaceTooClose");
             this.stringAdapter.toJson(writer, capturePage.getSelfieHintFaceTooClose());
-            writer.t0("selfieHintFaceTooFar");
+            writer.A0("selfieHintFaceTooFar");
             this.stringAdapter.toJson(writer, capturePage.getSelfieHintFaceTooFar());
-            writer.t0("selfieHintMultipleFaces");
+            writer.A0("selfieHintMultipleFaces");
             this.stringAdapter.toJson(writer, capturePage.getSelfieHintMultipleFaces());
-            writer.t0("selfieHintFaceIncomplete");
+            writer.A0("selfieHintFaceIncomplete");
             this.stringAdapter.toJson(writer, capturePage.getSelfieHintFaceIncomplete());
-            writer.t0("selfieHintPoseNotCenter");
+            writer.A0("selfieHintPoseNotCenter");
             this.stringAdapter.toJson(writer, capturePage.getSelfieHintPoseNotCenter());
-            writer.t0("selfieHintLookLeft");
+            writer.A0("selfieHintLookLeft");
             this.stringAdapter.toJson(writer, capturePage.getSelfieHintLookLeft());
-            writer.t0("selfieHintLookRight");
+            writer.A0("selfieHintLookRight");
             this.stringAdapter.toJson(writer, capturePage.getSelfieHintLookRight());
-            writer.t0("selfieHintHoldStill");
+            writer.A0("selfieHintHoldStill");
             this.stringAdapter.toJson(writer, capturePage.getSelfieHintHoldStill());
-            writer.t0("autoCaptureOn");
+            writer.A0("autoCaptureOn");
             this.nullableStringAdapter.toJson(writer, capturePage.getAutoCaptureOn());
-            writer.t0("captureSuccess");
+            writer.A0("captureSuccess");
             this.nullableStringAdapter.toJson(writer, capturePage.getCaptureSuccess());
-            writer.t0("selfieHintCenterFaceDescription");
+            writer.A0("selfieHintCenterFaceDescription");
             this.nullableStringAdapter.toJson(writer, capturePage.getSelfieHintCenterFaceDescription());
-            writer.t0("selfieHintLookLeftDescription");
+            writer.A0("selfieHintLookLeftDescription");
             this.nullableStringAdapter.toJson(writer, capturePage.getSelfieHintLookLeftDescription());
-            writer.t0("selfieHintLookRightDescription");
+            writer.A0("selfieHintLookRightDescription");
             this.nullableStringAdapter.toJson(writer, capturePage.getSelfieHintLookRightDescription());
-            writer.t0("cameraLoadingTitle");
+            writer.A0("cameraLoadingTitle");
             this.nullableStringAdapter.toJson(writer, capturePage.getCameraLoadingTitle());
             writer.E();
             return;

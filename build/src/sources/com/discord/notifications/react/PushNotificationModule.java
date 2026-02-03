@@ -23,7 +23,6 @@ import com.facebook.react.uimanager.ViewProps;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.o0;
@@ -34,6 +33,7 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.StringsKt;
+import lr.v;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\n\n\u0002\u0010\b\n\u0002\b\u0003\u0018\u0000 ,2\u00020\u0001:\u0001,B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\b\u0010\b\u001a\u00020\tH\u0016J\b\u0010\n\u001a\u00020\u000bH\u0007J\u0010\u0010\f\u001a\u00020\u000b2\u0006\u0010\r\u001a\u00020\tH\u0007J\u0010\u0010\u000e\u001a\u00020\u000b2\u0006\u0010\u000f\u001a\u00020\tH\u0007J\u0010\u0010\u0010\u001a\u00020\u000b2\u0006\u0010\u0011\u001a\u00020\tH\u0007J\u0010\u0010\u0012\u001a\u00020\u000b2\u0006\u0010\u0013\u001a\u00020\u0014H\u0007J\u001c\u0010\u0015\u001a\u00020\u000b2\b\u0010\u0016\u001a\u0004\u0018\u00010\t2\b\u0010\u0017\u001a\u0004\u0018\u00010\tH\u0007J\b\u0010\u0018\u001a\u00020\u000bH\u0007J\u0010\u0010\u0019\u001a\u00020\u000b2\u0006\u0010\u001a\u001a\u00020\u001bH\u0007J\u0010\u0010\u001c\u001a\u00020\u000b2\u0006\u0010\u0013\u001a\u00020\u0014H\u0007J\u0010\u0010\u001d\u001a\u00020\u000b2\u0006\u0010\u001e\u001a\u00020\u001fH\u0007J\u0010\u0010 \u001a\u00020\u000b2\u0006\u0010\u0013\u001a\u00020\u0014H\u0007J\u0010\u0010!\u001a\u00020\u000b2\u0006\u0010\u001e\u001a\u00020\u001fH\u0007J\u0010\u0010\"\u001a\u00020\u000b2\u0006\u0010\u0013\u001a\u00020\u0014H\u0007J\u0010\u0010#\u001a\u00020\u000b2\u0006\u0010\u001e\u001a\u00020\u001fH\u0007J\u0010\u0010$\u001a\u00020\u000b2\u0006\u0010%\u001a\u00020\u001fH\u0007J\u0010\u0010&\u001a\u00020\u000b2\u0006\u0010\u0013\u001a\u00020\u0014H\u0007J\u0010\u0010'\u001a\u00020\u000b2\u0006\u0010\u0011\u001a\u00020\tH\u0007J\u0010\u0010(\u001a\u00020\u000b2\u0006\u0010)\u001a\u00020*H\u0007J\b\u0010+\u001a\u00020\u000bH\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006-"}, d2 = {"Lcom/discord/notifications/react/PushNotificationModule;", "Lcom/facebook/react/bridge/ReactContextBaseJavaModule;", "reactContext", "Lcom/facebook/react/bridge/ReactApplicationContext;", "<init>", "(Lcom/facebook/react/bridge/ReactApplicationContext;)V", "reactEvents", "Lcom/discord/reactevents/ReactEvents;", "getName", "", "onRegisterNotificationToken", "", "handleDirectReplySuccess", "notificationString", "markNotificationAsDirectReply", "channelId", "registerEventListener", "type", "getInitialNotification", BaseJavaModule.METHOD_TYPE_PROMISE, "Lcom/facebook/react/bridge/Promise;", "setCurrentUser", NotificationRenderer.USERNAME, "userId", "clearAllNotifications", "presentLocalNotification", "details", "Lcom/facebook/react/bridge/ReadableMap;", "getSoundsEnabled", "setSoundsEnabled", ViewProps.ENABLED, "", "getVibrationsEnabled", "setVibrationsEnabled", "getLightsEnabled", "setLightsEnabled", "setNotifyEveryTime", "notifyEveryTime", "shouldNotifyEveryTime", "addListener", "removeListeners", "count", "", "updateAuthState", "Companion", "notification_react_androidRelease"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nPushNotificationModule.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PushNotificationModule.kt\ncom/discord/notifications/react/PushNotificationModule\n+ 2 Maps.kt\nkotlin/collections/MapsKt__MapsKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,180:1\n506#2,7:181\n465#2:188\n415#2:189\n1252#3,4:190\n*S KotlinDebug\n*F\n+ 1 PushNotificationModule.kt\ncom/discord/notifications/react/PushNotificationModule\n*L\n112#1:181,7\n113#1:188\n113#1:189\n113#1:190,4\n*E\n"})
@@ -95,21 +95,21 @@ public final class PushNotificationModule extends ReactContextBaseJavaModule {
     public static final Unit registerEventListener$lambda$2(PushNotificationModule pushNotificationModule, String token) {
         Intrinsics.checkNotNullParameter(token, "token");
         pushNotificationModule.reactEvents.emitModuleEvent(pushNotificationModule.reactContext, new RegisterEvent(token));
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit registerEventListener$lambda$3(PushNotificationModule pushNotificationModule, Map notification) {
         Intrinsics.checkNotNullParameter(notification, "notification");
         pushNotificationModule.reactEvents.emitModuleEvent(pushNotificationModule.reactContext, new NotificationEvent(notification));
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit registerEventListener$lambda$4(PushNotificationModule pushNotificationModule, Map notification) {
         Intrinsics.checkNotNullParameter(notification, "notification");
         pushNotificationModule.reactEvents.emitModuleEvent(pushNotificationModule.reactContext, new LocalNotificationEvent(notification));
-        return Unit.f33074a;
+        return Unit.f32464a;
     }
 
     private final void updateAuthState() {

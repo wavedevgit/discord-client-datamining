@@ -5,25 +5,25 @@ import java.io.Serializable;
 final class i0 extends n implements Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    final Object f45373d;
+    final Object f45331d;
 
     /* renamed from: e  reason: collision with root package name */
-    final Object f45374e;
+    final Object f45332e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i0(Object obj, Object obj2) {
-        this.f45373d = obj;
-        this.f45374e = obj2;
+        this.f45331d = obj;
+        this.f45332e = obj2;
     }
 
     @Override // pg.n, java.util.Map.Entry
     public final Object getKey() {
-        return this.f45373d;
+        return this.f45331d;
     }
 
     @Override // pg.n, java.util.Map.Entry
     public final Object getValue() {
-        return this.f45374e;
+        return this.f45332e;
     }
 
     @Override // java.util.Map.Entry

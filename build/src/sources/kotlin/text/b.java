@@ -12,43 +12,43 @@ import kotlin.sequences.Sequence;
 public final class b implements Sequence {
 
     /* renamed from: a  reason: collision with root package name */
-    private final CharSequence f36001a;
+    private final CharSequence f35391a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f36002b;
+    private final int f35392b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f36003c;
+    private final int f35393c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Function2 f36004d;
+    private final Function2 f35394d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a implements Iterator, KMappedMarker {
 
         /* renamed from: d  reason: collision with root package name */
-        private int f36005d = -1;
+        private int f35395d = -1;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f36006e;
+        private int f35396e;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f36007i;
+        private int f35397i;
 
         /* renamed from: o  reason: collision with root package name */
-        private IntRange f36008o;
+        private IntRange f35398o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f36009p;
+        private int f35399p;
 
         a() {
-            int m10 = kotlin.ranges.d.m(b.this.f36002b, 0, b.this.f36001a.length());
-            this.f36006e = m10;
-            this.f36007i = m10;
+            int m10 = kotlin.ranges.d.m(b.this.f35392b, 0, b.this.f35391a.length());
+            this.f35396e = m10;
+            this.f35397i = m10;
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:9:0x0020, code lost:
-            if (r0 < r6.f36010q.f36003c) goto L13;
+            if (r0 < r6.f35400q.f35393c) goto L13;
          */
         /*
             Code decompiled incorrectly, please refer to instructions dump.
@@ -57,12 +57,12 @@ public final class b implements Sequence {
         private final void a() {
             /*
                 r6 = this;
-                int r0 = r6.f36007i
+                int r0 = r6.f35397i
                 r1 = 0
                 if (r0 >= 0) goto Lb
-                r6.f36005d = r1
+                r6.f35395d = r1
                 r0 = 0
-                r6.f36008o = r0
+                r6.f35398o = r0
                 return
             Lb:
                 kotlin.text.b r0 = kotlin.text.b.this
@@ -70,46 +70,46 @@ public final class b implements Sequence {
                 r2 = -1
                 r3 = 1
                 if (r0 <= 0) goto L22
-                int r0 = r6.f36009p
+                int r0 = r6.f35399p
                 int r0 = r0 + r3
-                r6.f36009p = r0
+                r6.f35399p = r0
                 kotlin.text.b r4 = kotlin.text.b.this
                 int r4 = kotlin.text.b.d(r4)
                 if (r0 >= r4) goto L30
             L22:
-                int r0 = r6.f36007i
+                int r0 = r6.f35397i
                 kotlin.text.b r4 = kotlin.text.b.this
                 java.lang.CharSequence r4 = kotlin.text.b.c(r4)
                 int r4 = r4.length()
                 if (r0 <= r4) goto L46
             L30:
                 kotlin.ranges.IntRange r0 = new kotlin.ranges.IntRange
-                int r1 = r6.f36006e
+                int r1 = r6.f35396e
                 kotlin.text.b r4 = kotlin.text.b.this
                 java.lang.CharSequence r4 = kotlin.text.b.c(r4)
                 int r4 = kotlin.text.StringsKt__StringsKt.c0(r4)
                 r0.<init>(r1, r4)
-                r6.f36008o = r0
-                r6.f36007i = r2
+                r6.f35398o = r0
+                r6.f35397i = r2
                 goto L9b
             L46:
                 kotlin.text.b r0 = kotlin.text.b.this
                 kotlin.jvm.functions.Function2 r0 = kotlin.text.b.b(r0)
                 kotlin.text.b r4 = kotlin.text.b.this
                 java.lang.CharSequence r4 = kotlin.text.b.c(r4)
-                int r5 = r6.f36007i
+                int r5 = r6.f35397i
                 java.lang.Integer r5 = java.lang.Integer.valueOf(r5)
                 java.lang.Object r0 = r0.invoke(r4, r5)
                 kotlin.Pair r0 = (kotlin.Pair) r0
                 if (r0 != 0) goto L76
                 kotlin.ranges.IntRange r0 = new kotlin.ranges.IntRange
-                int r1 = r6.f36006e
+                int r1 = r6.f35396e
                 kotlin.text.b r4 = kotlin.text.b.this
                 java.lang.CharSequence r4 = kotlin.text.b.c(r4)
                 int r4 = kotlin.text.StringsKt__StringsKt.c0(r4)
                 r0.<init>(r1, r4)
-                r6.f36008o = r0
-                r6.f36007i = r2
+                r6.f35398o = r0
+                r6.f35397i = r2
                 goto L9b
             L76:
                 java.lang.Object r2 = r0.a()
@@ -118,18 +118,18 @@ public final class b implements Sequence {
                 java.lang.Object r0 = r0.b()
                 java.lang.Number r0 = (java.lang.Number) r0
                 int r0 = r0.intValue()
-                int r4 = r6.f36006e
+                int r4 = r6.f35396e
                 kotlin.ranges.IntRange r4 = kotlin.ranges.d.u(r4, r2)
-                r6.f36008o = r4
+                r6.f35398o = r4
                 int r2 = r2 + r0
-                r6.f36006e = r2
+                r6.f35396e = r2
                 if (r0 != 0) goto L98
                 r1 = r3
             L98:
                 int r2 = r2 + r1
-                r6.f36007i = r2
+                r6.f35397i = r2
             L9b:
-                r6.f36005d = r3
+                r6.f35395d = r3
                 return
             */
             throw new UnsupportedOperationException("Method not decompiled: kotlin.text.b.a.a():void");
@@ -138,14 +138,14 @@ public final class b implements Sequence {
         @Override // java.util.Iterator
         /* renamed from: b */
         public IntRange next() {
-            if (this.f36005d == -1) {
+            if (this.f35395d == -1) {
                 a();
             }
-            if (this.f36005d != 0) {
-                IntRange intRange = this.f36008o;
+            if (this.f35395d != 0) {
+                IntRange intRange = this.f35398o;
                 Intrinsics.checkNotNull(intRange, "null cannot be cast to non-null type kotlin.ranges.IntRange");
-                this.f36008o = null;
-                this.f36005d = -1;
+                this.f35398o = null;
+                this.f35395d = -1;
                 return intRange;
             }
             throw new NoSuchElementException();
@@ -153,10 +153,10 @@ public final class b implements Sequence {
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            if (this.f36005d == -1) {
+            if (this.f35395d == -1) {
                 a();
             }
-            if (this.f36005d == 1) {
+            if (this.f35395d == 1) {
                 return true;
             }
             return false;
@@ -171,10 +171,10 @@ public final class b implements Sequence {
     public b(CharSequence input, int i10, int i11, Function2 getNextMatch) {
         Intrinsics.checkNotNullParameter(input, "input");
         Intrinsics.checkNotNullParameter(getNextMatch, "getNextMatch");
-        this.f36001a = input;
-        this.f36002b = i10;
-        this.f36003c = i11;
-        this.f36004d = getNextMatch;
+        this.f35391a = input;
+        this.f35392b = i10;
+        this.f35393c = i11;
+        this.f35394d = getNextMatch;
     }
 
     @Override // kotlin.sequences.Sequence

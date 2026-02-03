@@ -6,7 +6,7 @@ public interface c {
     public static final class a implements c {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final a f19467a = new a();
+        public static final a f18449a = new a();
 
         private a() {
         }
@@ -16,14 +16,14 @@ public interface c {
     public static final class b implements c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f19468a;
+        private final int f18450a;
 
         public b(int i10) {
-            this.f19468a = i10;
+            this.f18450a = i10;
         }
 
         public final int a() {
-            return this.f19468a;
+            return this.f18450a;
         }
     }
 }

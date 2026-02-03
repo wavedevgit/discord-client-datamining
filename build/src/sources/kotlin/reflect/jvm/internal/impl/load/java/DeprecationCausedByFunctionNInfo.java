@@ -9,11 +9,11 @@ import org.jetbrains.annotations.NotNull;
 public final class DeprecationCausedByFunctionNInfo extends DescriptorBasedDeprecationInfo {
 
     /* renamed from: d  reason: collision with root package name */
-    private final DeclarationDescriptor f33758d;
+    private final DeclarationDescriptor f33148d;
 
     public DeprecationCausedByFunctionNInfo(@NotNull DeclarationDescriptor target) {
         Intrinsics.checkNotNullParameter(target, "target");
-        this.f33758d = target;
+        this.f33148d = target;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.deprecation.DeprecationInfo

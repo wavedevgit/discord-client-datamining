@@ -1,24 +1,18 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = {
-        106: '*',
-        107: '+',
-        109: '-',
-        110: '.',
-        111: '/',
-        186: ';',
-        187: '=',
-        188: ',',
-        189: '-',
-        190: '.',
-        191: '/',
-        192: '`',
-        219: '[',
-        220: '\\',
-        221: ']',
-        222: "'"
+    var1 = function(arg0, arg1) { // Environment: var0
+        var4 = this;
+        var3 = var4.bind;
+        var2 = arg0;
+        var1 = function() { // Environment: var0
+            var0 = undefined;
+            return var0;
+        };
+        var0 = arg1;
+        var0 = var3.bind(var4)(var2, var1, var0);
+        return var0;
     };
-    var0 = module;
+    var0 = arg4;
     var0.exports = var1;
     var0 = undefined;
     return var0;

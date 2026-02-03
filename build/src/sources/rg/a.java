@@ -6,10 +6,10 @@ import android.os.Looper;
 public final class a extends Handler {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Looper f48500a;
+    private final Looper f48809a;
 
     public a(Looper looper) {
         super(looper);
-        this.f48500a = Looper.getMainLooper();
+        this.f48809a = Looper.getMainLooper();
     }
 }

@@ -1,103 +1,98 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = function arg0, arg1() {
-        var0 = global;
-        var2 = var0.Error;
-        var0 = var0.HermesInternal;
-        var6 = var0.concat;
-        var11 = '[react-native-svg] You are trying to import a ';
-        var10 = arg1;
-        var9 = ' `';
-        var8 = arg0;
-        var7 = '` that has been moved to a sub-package. Change your import from `react-native-svg` to `react-native-svg/css`.';
-        var1 = var11[var6](var10, var9, var8, var7, var6);
-        var0 = undefined;
-        var0 = var2.bind(var0)(var1);
-        throw var0;
-    };
-    var _closure1_slot0 = var2;
-    var3 = global;
-    var6 = var3.Object;
-    var5 = var6.defineProperty;
+    var5 = require;
+    var2 = exports;
+    var7 = dependencyMap;
+    var0 = global;
+    var8 = var0.Object;
+    var6 = var8.defineProperty;
     var4 = {};
-    var3 = true;
-    var4.value = var3;
-    var3 = '__esModule';
-    var3 = var5.bind(var6)(var1, var3, var4);
-    var1.showErrorCSS = var2;
-    var2 = function() {
-        var3 = _closure1_slot0;
-        var0 = undefined;
-        var2 = 'SvgCss';
-        var1 = 'component';
-        var1 = var3.bind(var0)(var2, var1);
-        return var0;
+    var13 = true;
+    var4.value = var13;
+    var1 = '__esModule';
+    var1 = var6.bind(var8)(var2, var1, var4);
+    var1 = {};
+    var6 = 'RNSVGText';
+    var1.uiViewClassName = var6;
+    var4 = {};
+    var8 = {};
+    var9 = 'onSvgLayout';
+    var8.registrationName = var9;
+    var4.topSvgLayout = var8;
+    var1.directEventTypes = var4;
+    var10 = var0.Object;
+    var9 = var10.assign;
+    var8 = {
+        'name': true,
+        'opacity': true,
+        'matrix': true,
+        'mask': true,
+        'markerStart': true,
+        'markerMid': true,
+        'markerEnd': true,
+        'clipPath': true,
+        'clipRule': true,
+        'responsible': true,
+        'display': true,
+        'pointerEvents': true,
+        'color': null,
+        'fill': true,
+        'fillOpacity': true,
+        'fillRule': true,
+        'stroke': true,
+        'strokeOpacity': true,
+        'strokeWidth': true,
+        'strokeLinecap': true,
+        'strokeLinejoin': true,
+        'strokeDasharray': true,
+        'strokeDashoffset': true,
+        'strokeMiterlimit': true,
+        'vectorEffect': true,
+        'propList': true,
+        'filter': true,
+        'fontSize': true,
+        'fontWeight': true,
+        'font': true,
+        'dx': true,
+        'dy': true,
+        'x': true,
+        'y': true,
+        'rotate': true,
+        'inlineSize': true,
+        'textLength': true,
+        'baselineShift': true,
+        'lengthAdjust': true,
+        'alignmentBaseline': true,
+        'verticalAlign': true
     };
-    var1.SvgCss = var2;
-    var2 = function() {
-        var3 = _closure1_slot0;
-        var0 = undefined;
-        var2 = 'SvgCssUri';
-        var1 = 'component';
-        var1 = var3.bind(var0)(var2, var1);
-        return var0;
-    };
-    var1.SvgCssUri = var2;
-    var2 = function() {
-        var3 = _closure1_slot0;
-        var0 = undefined;
-        var2 = 'SvgWithCss';
-        var1 = 'component';
-        var1 = var3.bind(var0)(var2, var1);
-        return var0;
-    };
-    var1.SvgWithCss = var2;
-    var2 = function() {
-        var3 = _closure1_slot0;
-        var0 = undefined;
-        var2 = 'SvgWithCssUri';
-        var1 = 'component';
-        var1 = var3.bind(var0)(var2, var1);
-        return var0;
-    };
-    var1.SvgWithCssUri = var2;
-    var2 = function() {
-        var3 = _closure1_slot0;
-        var0 = undefined;
-        var2 = 'inlineStyles';
-        var1 = 'function';
-        var1 = var3.bind(var0)(var2, var1);
-        return var0;
-    };
-    var1.inlineStyles = var2;
-    var2 = function() {
-        var3 = _closure1_slot0;
-        var0 = undefined;
-        var2 = 'LocalSvg';
-        var1 = 'component';
-        var1 = var3.bind(var0)(var2, var1);
-        return var0;
-    };
-    var1.LocalSvg = var2;
-    var2 = function() {
-        var3 = _closure1_slot0;
-        var0 = undefined;
-        var2 = 'WithLocalSvg';
-        var1 = 'component';
-        var1 = var3.bind(var0)(var2, var1);
-        return var0;
-    };
-    var1.WithLocalSvg = var2;
-    var0 = function() {
-        var3 = _closure1_slot0;
-        var0 = undefined;
-        var2 = 'loadLocalRawResource';
-        var1 = 'function';
-        var1 = var3.bind(var0)(var2, var1);
-        return var0;
-    };
-    var1.loadLocalRawResource = var0;
+    var4 = {};
+    var0 = 0;
+    var11 = var7[var0];
     var0 = undefined;
+    var11 = var5.bind(var0)(var11);
+    var11 = var11.default;
+    var4.process = var11;
+    var8.color = var4;
+    var4 = 1;
+    var4 = var7[var4];
+    var12 = var5.bind(var0)(var4);
+    var11 = var12.ConditionallyIgnoredEventHandlers;
+    var4 = {};
+    var4.onSvgLayout = var13;
+    var4 = var11.bind(var12)(var4);
+    var4 = var9.bind(var10)(var8, var4);
+    var1.validAttributes = var4;
+    var _closure1_slot0 = var1;
+    var4 = 2;
+    var4 = var7[var4];
+    var5 = var5.bind(var0)(var4);
+    var4 = var5.get;
+    var3 = function() { // Environment: var3
+        var0 = _closure1_slot0;
+        return var0;
+    };
+    var3 = var4.bind(var5)(var6, var3);
+    var2.default = var3;
+    var2.__INTERNAL_VIEW_CONFIG = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [38, 110, 42]);
