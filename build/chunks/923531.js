@@ -8,12 +8,12 @@ n.d(e, {
     cV: () => E,
     fq: () => y,
     hO: () => N,
-    i6: () => _,
+    i6: () => c,
     jp: () => d,
-    k5: () => f,
+    k5: () => A,
     kN: () => I,
-    mV: () => c,
-    u7: () => A
+    mV: () => _,
+    u7: () => f
 }), n(896048), n(638769);
 var i = n(989349),
     l = n.n(i),
@@ -36,7 +36,7 @@ let d = () => ({
         yesterday: s.intl.string(u.default.s3qSVt),
         days: u.default.f1UJiC
     },
-    _ = (t, e, n) => {
+    c = (t, e, n) => {
         let i = l()().diff(l()(t), "s"),
             r = e(),
             a = l()(t).format("LL");
@@ -44,7 +44,7 @@ let d = () => ({
             days: Math.min(Math.floor(i / 86400), null != n ? n : 999)
         })
     },
-    c = (t, e) => {
+    _ = (t, e) => {
         let n = l()().diff(l()(t), "s"),
             i = e(),
             r = l()(t).format("LL");
@@ -60,8 +60,8 @@ let d = () => ({
     },
     T = t => t.display_type === o.NV.USER_ADD || t.display_type === o.NV.USER_INTERACTION || t.display_type === o.NV.USER_CALLED,
     S = t => t.display_type === o.NV.GUILD_ADD || t.display_type === o.NV.GUILD_INTERACTION,
-    A = t => t.display_type === o.NV.PURCHASES,
-    f = t => {
+    f = t => t.display_type === o.NV.PURCHASES,
+    A = t => {
         for (let e of Object.values(o.NV))
             if (e.toString() === t) return e
     },

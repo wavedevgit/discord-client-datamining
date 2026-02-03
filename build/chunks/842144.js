@@ -1,6 +1,6 @@
 /** chunk id: 842144, original params: t,e,n (module,exports,require) **/
 n.d(e, {
-    A: () => c
+    A: () => _
 });
 var i, l, r = n(311907),
     a = n(873298),
@@ -9,7 +9,7 @@ var i, l, r = n(311907),
 let s = !1,
     d = {},
     E = {};
-class _ extends(l = r.Ay.Store) {
+class c extends(l = r.Ay.Store) {
     getSettings(t) {
         return d[t]
     }
@@ -30,13 +30,13 @@ class _ extends(l = r.Ay.Store) {
     get isLoading() {
         return s
     }
-}(i = "displayName") in _ ? Object.defineProperty(_, i, {
+}(i = "displayName") in c ? Object.defineProperty(c, i, {
     value: "FamilyCenterControlledSettingsStore",
     enumerable: !0,
     configurable: !0,
     writable: !0
-}) : _[i] = "FamilyCenterControlledSettingsStore";
-let c = new _(o.h, {
+}) : c[i] = "FamilyCenterControlledSettingsStore";
+let _ = new c(o.h, {
     FAMILY_CENTER_TEEN_SETTINGS_FETCH_START: function() {
         s = !0
     },
