@@ -18,8 +18,9 @@ public final class rc extends mc {
         this.f41476o = i10;
     }
 
+    /* JADX INFO: Access modifiers changed from: package-private */
     @Override // ng.mc, ng.la
-    final int b(Object[] objArr, int i10) {
+    public final int b(Object[] objArr, int i10) {
         System.arraycopy(this.f41475i, 0, objArr, 0, this.f41476o);
         return this.f41476o;
     }
