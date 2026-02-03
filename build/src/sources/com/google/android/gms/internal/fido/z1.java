@@ -1,9 +1,8 @@
 package com.google.android.gms.internal.fido;
 
 import java.util.Iterator;
-/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class z1 extends h1 {
+final class z1 extends h1 {
 
     /* renamed from: i  reason: collision with root package name */
     final transient Object f14789i;
