@@ -1,8 +1,8 @@
-/** chunk id: 593032, original params: e,r,a (module,exports,require) **/
-a.d(r, {
-    A: () => i
+/** chunk id: 593032, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => r
 });
-let t = (0, a(945810).mj)({
+let n = (0, i(945810).mj)({
     name: "2025-12-katsudon",
     kind: "user",
     defaultConfig: {
@@ -18,13 +18,13 @@ let t = (0, a(945810).mj)({
     }
 });
 
-function i(e) {
+function r(e) {
     let {
-        location: r
+        location: t
     } = e, {
-        enabled: a
-    } = t.useConfig({
-        location: r
+        enabled: i
+    } = n.useConfig({
+        location: t
     });
-    return a
+    return i
 }

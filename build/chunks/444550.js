@@ -211,7 +211,7 @@ let j = i.forwardRef(function(e, t) {
         active: eT,
         loadableOptions: l,
         debounceTime: Z
-    }), ek = i.useMemo(() => M(ex, d), [ex, d]), eU = i.useMemo(() => ek.map(e => e.value), [ek]), eG = ek[ek.length - 1], eF = (0, f.A)(eG), eV = i.useId(), eB = i.useId(), eH = i.useCallback(e => {
+    }), ek = i.useMemo(() => M(ex, d), [ex, d]), eU = i.useMemo(() => ek.map(e => e.value), [ek]), eG = ek[ek.length - 1], eV = (0, f.A)(eG), eF = i.useId(), eB = i.useId(), eH = i.useCallback(e => {
         eT === e || k || (eC(e), e ? null == S || S() : null == C || C())
     }, [k, C, S, eT]), eY = i.useCallback(e => {
         eT && !e && eH(!1)
@@ -257,7 +257,7 @@ let j = i.forwardRef(function(e, t) {
         eX = (0, f.A)(ex);
     i.useEffect(() => {
         let e = eX.current,
-            t = eF.current;
+            t = eV.current;
         eT && null != t && !eM && requestAnimationFrame(() => {
             let n = eD.current,
                 r = e.indexOf(t);
@@ -266,7 +266,7 @@ let j = i.forwardRef(function(e, t) {
                 row: r
             })
         })
-    }, [eT, eM, eX, eF]), i.useEffect(() => {
+    }, [eT, eM, eX, eV]), i.useEffect(() => {
         if (eT) {
             var e;
             null == (e = eA.current) || e.scrollIntoView()
@@ -285,11 +285,11 @@ let j = i.forwardRef(function(e, t) {
             }
             eS(null != (t = e.focusedItemId()) ? t : null)
         } else {
-            let t = eF.current,
+            let t = eV.current,
                 n = null != t ? String(t.value) : null;
             e.setFocus(n), eS(null)
         }
-    }, [eT, eM, eQ, eF]), i.useLayoutEffect(() => {
+    }, [eT, eM, eQ, eV]), i.useLayoutEffect(() => {
         eT || (O ? ew("") : null != eG && ew(eG.label))
     }, [O, eG, eT]), i.useLayoutEffect(() => {
         O && ew("")
@@ -339,7 +339,7 @@ let j = i.forwardRef(function(e, t) {
         {
             focusPreviousItem: e6,
             focusNextItem: e4
-        } = F(e3, eA, ek);
+        } = V(e3, eA, ek);
     return (0, r.jsxs)(u.hD, {
         navigator: eZ,
         children: [(0, r.jsx)(g.Y, {
@@ -359,7 +359,7 @@ let j = i.forwardRef(function(e, t) {
                     loading: eM,
                     multi: !!O,
                     listRef: eD,
-                    listId: eV,
+                    listId: eF,
                     maxVisibleItems: B,
                     width: null != z && "auto" !== z ? z : ev,
                     selectedValues: eU,
@@ -457,7 +457,7 @@ let j = i.forwardRef(function(e, t) {
                                             activeDescendant: eI,
                                             placeholder: R,
                                             inputId: i,
-                                            listboxId: eV,
+                                            listboxId: eF,
                                             navigatorId: eB,
                                             selectValue: function(e) {
                                                 let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
@@ -504,7 +504,7 @@ let j = i.forwardRef(function(e, t) {
                 }))
             }
         }), ek.length > 0 && null != eu && (0, r.jsx)("div", {
-            children: (0, r.jsx)(V, {
+            children: (0, r.jsx)(F, {
                 listRef: e3,
                 selectedOptions: ek,
                 selectValue: function(e) {
@@ -711,7 +711,7 @@ function G(e, t) {
     return (e.compareDocumentPosition(t) & n) === n
 }
 
-function F(e, t, n) {
+function V(e, t, n) {
     let r = i.useMemo(() => (0, l.C)({
             getFocusableElements() {
                 let t = e.current;
@@ -757,7 +757,7 @@ function F(e, t, n) {
     }
 }
 
-function V(e) {
+function F(e) {
     let {
         selectedOptions: t,
         selectValue: n,
@@ -920,9 +920,9 @@ function W(e) {
         focusPreviousItem: b,
         focusNextItem: O,
         focusLastItem: v
-    } = F(y, f, a);
+    } = V(y, f, a);
     return (0, r.jsxs)(r.Fragment, {
-        children: [a.length > 0 && !m && (0, r.jsx)(V, {
+        children: [a.length > 0 && !m && (0, r.jsx)(F, {
             listRef: y,
             selectedOptions: a,
             renderOptionPrefix: p,

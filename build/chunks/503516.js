@@ -106,7 +106,7 @@ let k = e => {
         setSelectedSkuId: j,
         selectedSkuPricePreview: k,
         paymentSourceId: U,
-        skuPricePreviewsById: V,
+        skuPricePreviewsById: F,
         skusById: B
     } = (0, S.P5)(), H = (0, i.bG)([O.default], () => O.default.getCurrentUser()), {
         enabled: Y,
@@ -129,7 +129,7 @@ let k = e => {
             }), null != T && Z(T, e), j(e)
         },
         X = e => {
-            let t = V[e],
+            let t = F[e],
                 n = null;
             if (null != t) {
                 var i;
@@ -184,7 +184,7 @@ let k = e => {
                 selectedSkuPricePreview: k,
                 paymentSourceId: U,
                 selectedSkuId: M,
-                skuPricePreviewsById: V,
+                skuPricePreviewsById: F,
                 skusById: B
             });
             return L === w.vQ.USER_PROFILE_WISHLIST || L === w.vQ.DM_CHANNEL_WISHLIST ? (0, r.jsxs)("div", {
@@ -202,7 +202,7 @@ let k = e => {
                     hideProfilePreview: !0
                 }), (0, r.jsx)("div", {
                     className: P.fi,
-                    children: (0, r.jsx)(F, {
+                    children: (0, r.jsx)(V, {
                         handleClose: n,
                         selectedSkuId: M
                     })
@@ -319,7 +319,7 @@ function G(e) {
     })
 }
 
-function F(e) {
+function V(e) {
     let {
         handleClose: t,
         selectedSkuId: n

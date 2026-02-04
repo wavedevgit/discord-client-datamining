@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     ZR: () => W,
-    gj: () => V
+    gj: () => F
 }), n(896048), n(321073), n(638769);
 var r = n(627968),
     i = n(64700),
@@ -50,7 +50,7 @@ function G(e, t, n) {
     }) : e[t] = n, e
 }
 
-function F(e) {
+function V(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -62,9 +62,9 @@ function F(e) {
     }
     return e
 }
-let V = {
+let F = {
     key: h.pn.GIFT_CUSTOMIZATION,
-    renderStep: e => (0, r.jsx)(K, F({}, e)),
+    renderStep: e => (0, r.jsx)(K, V({}, e)),
     options: {
         isLargeModal: !0,
         useBreadcrumbLabel: () => k.intl.string(k.t["W685+b"])
@@ -131,9 +131,9 @@ let W = e => {
     } = (0, p.Pv)(), {
         selectedSkuId: v,
         application: S
-    } = (0, _.P5)(), N = (0, s.bG)([A.default], () => A.default.getCurrentUser()), w = H(null == N ? void 0 : N.id, o, y), L = (0, s.bG)([I.A], () => null != v ? I.A.get(v) : null, [v]), x = (0, C.fq)(L), G = (0, C.xf)(L), F = (0, P.j)(L, {
+    } = (0, _.P5)(), N = (0, s.bG)([A.default], () => A.default.getCurrentUser()), w = H(null == N ? void 0 : N.id, o, y), L = (0, s.bG)([I.A], () => null != v ? I.A.get(v) : null, [v]), x = (0, C.fq)(L), G = (0, C.xf)(L), V = (0, P.j)(L, {
         shouldFetchIfMissing: !0
-    }), V = async (e, t) => {}, B = () => (0, r.jsx)(g.A, {
+    }), F = async (e, t) => {}, B = () => (0, r.jsx)(g.A, {
         onTextChange: e => null == a ? void 0 : a(e),
         pendingText: i,
         currentText: i,
@@ -144,7 +144,7 @@ let W = e => {
         giftRecipient: o
     }) : (0, r.jsx)(u.A, {
         selectedSkuId: v,
-        validateSelectedGift: V,
+        validateSelectedGift: F,
         recipients: w
     }), W = e => {
         null != h && h(null == e ? void 0 : e)
@@ -205,10 +205,10 @@ let W = e => {
         })
     }, Z = () => (0, r.jsxs)("div", {
         className: U.Tc,
-        children: [Y(), B(), q(), null != F && null != L && (0, r.jsx)(z, {
+        children: [Y(), B(), q(), null != V && null != L && (0, r.jsx)(z, {
             handleClose: n,
             sku: L,
-            guild: F
+            guild: V
         })]
     });
     return {

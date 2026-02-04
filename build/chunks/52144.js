@@ -28,7 +28,7 @@ function E(e) {
     } = e, E = (0, s.bG)([m.default], () => m.default.getCurrentUser()), O = i.useRef(null), y = (0, s.bG)([g.Ay], () => (null == E ? void 0 : E.id) != null && g.Ay.getMentionCount(E.id, A.P.NOTIFICATION_CENTER) > 0), {
         titlebarIconSize: I,
         titlebarHoverHighlight: v
-    } = (0, p.p)({
+    } = (0, p.pz)({
         location: "RecentsButton"
     }), S = "sm" === I ? "refresh_sm" : "md", C = i.useMemo(() => (0, r.jsx)(u.K$s, {
         size: S,

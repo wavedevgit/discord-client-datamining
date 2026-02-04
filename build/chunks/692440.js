@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
     DP: () => B,
-    Lw: () => V,
+    Lw: () => F,
     _J: () => M,
-    m0: () => F,
+    m0: () => V,
     mT: () => j,
     sw: () => x,
     tC: () => H,
@@ -326,7 +326,7 @@ function G(e) {
     })
 }
 
-function F(e) {
+function V(e) {
     let {
         premiumSubscription: t,
         proratedInvoice: n,
@@ -374,7 +374,7 @@ function F(e) {
         })]
     })
 }
-let V = (e, t) => {
+let F = (e, t) => {
     let {
         isCustomGift: n,
         isPrepaidPaymentSource: r
@@ -395,7 +395,7 @@ function B(e) {
         tax: s,
         taxInclusive: l,
         currency: c
-    } = o, u = o.total, f = u - s, p = (0, E.$g)(f, c), _ = (0, E.$g)(u, c), h = V(t, {
+    } = o, u = o.total, f = u - s, p = (0, E.$g)(f, c), _ = (0, E.$g)(u, c), h = F(t, {
         isCustomGift: a,
         isPrepaidPaymentSource: i
     });

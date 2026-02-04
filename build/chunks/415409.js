@@ -231,8 +231,8 @@ class k extends i.Component {
             isEditorIdle: k,
             currentAutocompleteType: U,
             "aria-describedby": G,
-            "aria-labelledby": F,
-            accessibilityLabel: V,
+            "aria-labelledby": V,
+            accessibilityLabel: F,
             showValueWhenDisabled: B
         } = this.props, {
             submitting: H,
@@ -246,7 +246,7 @@ class k extends i.Component {
             id: P,
             placeholder: this.getPlaceholder(),
             required: L,
-            accessibilityLabel: V,
+            accessibilityLabel: F,
             disabled: d || !1,
             submitting: H,
             isEdit: y === O.oU.EDIT,
@@ -281,7 +281,7 @@ class k extends i.Component {
             "aria-activedescendant": null != (i = Y.activeDescendant) ? i : void 0,
             "aria-invalid": l.length > M,
             "aria-describedby": G,
-            "aria-labelledby": F,
+            "aria-labelledby": V,
             "aria-autocomplete": "list"
         }, K = b ? (0, r.jsx)(T.A, x(D({
             ref: this.ref

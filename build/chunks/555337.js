@@ -39,7 +39,7 @@ function G(e, t, n) {
     }) : e[t] = n, e
 }
 
-function F(e) {
+function V(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -52,7 +52,7 @@ function F(e) {
     return e
 }
 
-function V(e, t) {
+function F(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
@@ -64,7 +64,7 @@ function V(e, t) {
 }
 
 function B(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
+    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
@@ -222,7 +222,7 @@ function eN(e) {
     W.forEach(t => {
         if (null != c && e.hasOwnProperty(t)) {
             let n = e[t];
-            void 0 !== n && (c = B(F({}, c), {
+            void 0 !== n && (c = B(V({}, c), {
                 [t]: n
             }))
         }
@@ -252,11 +252,11 @@ function eR(e) {
 }
 
 function eP(e) {
-    ep = F({}, ep), delete ep[e.code]
+    ep = V({}, ep), delete ep[e.code]
 }
 
 function eD(e) {
-    ep = B(F({}, ep), {
+    ep = B(V({}, ep), {
         [e.invite.code]: ew(e.invite)
     })
 }
@@ -304,7 +304,7 @@ function ek(e) {
             return
         }
         let t = o = e,
-            n = F({}, s);
+            n = V({}, s);
         Y.forEach(r => {
             if (!K.has(r) && ("rulesChannelId" !== r && "publicUpdatesChannelId" !== r || n[r] !== U.SP) && "features" !== r) {
                 if ("ownerConfiguredContentLevel" === r) {
@@ -329,14 +329,14 @@ function eG(e) {
     u = null != t ? t : null
 }
 
-function eF(e) {
+function eV(e) {
     let {
         guildId: t
     } = e;
     if (!eh(t)) return !1
 }
 
-function eV(e) {
+function eF(e) {
     let {
         guildId: t
     } = e;
@@ -444,9 +444,9 @@ function e1(e) {
         guildId: t,
         categoryId: n
     } = e;
-    null != s && t === s.id && (ec = B(F({}, ec), {
+    null != s && t === s.id && (ec = B(V({}, ec), {
         secondaryCategoryIds: [...ec.secondaryCategoryIds, n]
-    }), el = B(F({}, el), {
+    }), el = B(V({}, el), {
         secondaryCategoryIds: [...el.secondaryCategoryIds, n]
     }))
 }
@@ -457,9 +457,9 @@ function e2(e) {
         categoryId: r
     } = e;
     if (null == s || n !== s.id) return;
-    let i = ec.secondaryCategoryIds.indexOf(r); - 1 !== i && ((t = [...ec.secondaryCategoryIds]).splice(i, 1), ec = B(F({}, ec), {
+    let i = ec.secondaryCategoryIds.indexOf(r); - 1 !== i && ((t = [...ec.secondaryCategoryIds]).splice(i, 1), ec = B(V({}, ec), {
         secondaryCategoryIds: t
-    })), -1 !== (i = el.secondaryCategoryIds.indexOf(r)) && ((t = [...el.secondaryCategoryIds]).splice(i, 1), el = B(F({}, el), {
+    })), -1 !== (i = el.secondaryCategoryIds.indexOf(r)) && ((t = [...el.secondaryCategoryIds]).splice(i, 1), el = B(V({}, el), {
         secondaryCategoryIds: t
     }))
 }
@@ -483,7 +483,7 @@ function e6(e) {
         socialLinks: l,
         about: c
     } = e;
-    null != s && t === s.id && (ec = B(F({}, ec), {
+    null != s && t === s.id && (ec = B(V({}, ec), {
         primaryCategoryId: null != n ? n : ec.primaryCategoryId,
         keywords: null != r ? r : ec.keywords,
         emojiDiscoverabilityEnabled: null != i ? i : ec.emojiDiscoverabilityEnabled,
@@ -664,8 +664,8 @@ let tn = new tt(O.h, __OVERLAY__ ? {} : {
     GUILD_SETTINGS_SLOWMODE_PERMISSION_MIGRATED: eQ,
     GUILD_BAN_ADD: eM,
     GUILD_BAN_REMOVE: ej,
-    GUILD_ROLE_CREATE: eF,
-    GUILD_ROLE_UPDATE: eV,
+    GUILD_ROLE_CREATE: eV,
+    GUILD_ROLE_UPDATE: eF,
     GUILD_ROLE_DELETE: eB,
     GUILD_UPDATE: ek,
     GUILD_DELETE: eU,

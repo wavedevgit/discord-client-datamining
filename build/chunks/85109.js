@@ -1,7 +1,7 @@
 /** chunk id: 85109, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => V
+    A: () => F
 }), n(65821), n(896048);
 var r, i = n(311907),
     a = n(713402),
@@ -220,7 +220,7 @@ function G(e) {
     } = e;
     E.add(t.saveData.messageId)
 }
-class F extends(r = i.Ay.Store) {
+class V extends(r = i.Ay.Store) {
     initialize() {
         this.waitFor(l.default)
     }
@@ -269,8 +269,8 @@ class F extends(r = i.Ay.Store) {
         return null != n && null != n.saveData.dueAt
     }
 }
-u(F, "displayName", "SavedMessagesStore");
-let V = new F(o.h, {
+u(V, "displayName", "SavedMessagesStore");
+let F = new V(o.h, {
     POST_CONNECTION_OPEN: S,
     LOGOUT: T,
     SAVED_MESSAGES_UPDATE: C,

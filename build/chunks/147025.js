@@ -65,7 +65,7 @@ function C(e) {
     }), j = [], k = !v.isDM() || void 0 === v.recipients || v.recipients.length > 1, U = (0, o.bG)([g.default], () => k ? null : g.default.getUser(v.recipients[0])), G = (0, c.H)({
         channel: v,
         chatInputType: m
-    }), F = (null == (t = m.submit) ? void 0 : t.button) != null && ((null == (n = m.submit) ? void 0 : n.ignorePreference) || P);
+    }), V = (null == (t = m.submit) ? void 0 : t.button) != null && ((null == (n = m.submit) ? void 0 : n.ignorePreference) || P);
     return (!a.Fr && ((null == (p = m.gifts) ? void 0 : p.button) != null && null == L && !M && (null == U || E.Ay.isPremiumEligible(U)) && j.push((0, r.jsx)(T, {
         disabled: O,
         channel: v
@@ -84,7 +84,7 @@ function C(e) {
     }, "emoji")), G && j.push((0, r.jsx)(f.A, {
         channelId: v.id,
         type: m
-    }, "appLauncher")), F && j.push((0, r.jsx)(A.A, {
+    }, "appLauncher")), V && j.push((0, r.jsx)(A.A, {
         onClick: C,
         disabled: O || D
     }, "submit")), 0 === j.length) ? null : (0, r.jsx)("div", {

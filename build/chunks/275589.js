@@ -40,9 +40,9 @@ var r = n(627968),
     k = n(698279),
     U = n(985018),
     G = n(780465),
-    F = n(911385);
+    V = n(911385);
 
-function V(e, t, n) {
+function F(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -58,7 +58,7 @@ function B(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            V(e, t, n[t])
+            F(e, t, n[t])
         })
     }
     return e
@@ -179,7 +179,7 @@ let W = (0, I.xI)(s.A.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
             onSelectSticker: a,
             channel: S,
             currentUser: C
-        }), [F, V] = i.useState(!1), B = i.useCallback(e => {
+        }), [V, F] = i.useState(!1), B = i.useCallback(e => {
             b.tP.updateSetting(Array.from(e))
         }, []), H = i.useCallback(e => {
             let t = m[e];
@@ -327,10 +327,10 @@ let W = (0, I.xI)(s.A.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
                     className: G.Ij,
                     guildId: n.id,
                     channel: S,
-                    shouldTrackUpsellViewed: !F,
-                    setTrackedUpsellViewed: V
+                    shouldTrackUpsellViewed: !V,
+                    setTrackedUpsellViewed: F
                 }, "sticker-picker-empty-guild-inline-upsell-".concat(n.id))
-            }, [g, t, E, S, F]),
+            }, [g, t, E, S, V]),
             sectionFooterHeight: i.useCallback(e => {
                 let n = g[e],
                     r = t.has(n.id);
@@ -359,7 +359,7 @@ let W = (0, I.xI)(s.A.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
             renderRow: M,
             renderSection: j,
             renderSectionFooter: k,
-            sectionFooterHeight: V,
+            sectionFooterHeight: F,
             renderSectionHeader: B,
             sectionHeaderHeight: H
         } = e_({
@@ -432,7 +432,7 @@ let W = (0, I.xI)(s.A.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
                 children: [null != l && 0 === l.sendable.length && 0 === l.sendableWithPremium.length ? (0, r.jsx)(c.A, {
                     message: U.intl.string(U.t["zc+LQd"]),
                     className: G.__invalid_noSearchResultsContainer,
-                    noResultsImageURL: F,
+                    noResultsImageURL: V,
                     suggestions: (0, r.jsx)(ef, {
                         onSuggestionClick: e => (0, m.Ri)(e, !0)
                     })
@@ -448,7 +448,7 @@ let W = (0, I.xI)(s.A.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
                     rowCountBySection: v,
                     rowHeight: s > W ? ei : ea,
                     sectionHeaderHeight: H,
-                    sectionFooterHeight: V,
+                    sectionFooterHeight: F,
                     stickyHeaders: !0,
                     ref: C
                 }), (0, r.jsx)(x.A, {

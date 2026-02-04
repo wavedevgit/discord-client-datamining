@@ -202,7 +202,7 @@ function P() {
 }
 
 function D() {
-    F()
+    V()
 }
 
 function L(e) {
@@ -262,7 +262,7 @@ function G(e) {
     delete A[t.id]
 }
 
-function F() {
+function V() {
     A = {};
     let e = _.A.getAllVoiceStates();
     h.default.keys(e).forEach(t => {
@@ -271,9 +271,9 @@ function F() {
         })
     })
 }
-class V extends(r = o.Ay.Store) {
+class F extends(r = o.Ay.Store) {
     initialize() {
-        F(), this.waitFor(u.default, d.A, f.Ay, p.default, _.A), this.syncWith([p.default], j)
+        V(), this.waitFor(u.default, d.A, f.Ay, p.default, _.A), this.syncWith([p.default], j)
     }
     getVoiceStates(e) {
         return I(null != e ? e : g.ME).getVoiceStates()
@@ -299,8 +299,8 @@ class V extends(r = o.Ay.Store) {
         return I(null != e ? e : g.ME).getVersion()
     }
 }
-E(V, "displayName", "SortedVoiceStateStore");
-let B = new V(l.h, {
+E(F, "displayName", "SortedVoiceStateStore");
+let B = new F(l.h, {
     CONNECTION_OPEN: P,
     OVERLAY_INITIALIZE: D,
     VOICE_CHANNEL_SELECT: M,

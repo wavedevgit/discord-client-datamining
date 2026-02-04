@@ -10,8 +10,8 @@ var n = r(627968),
     s = r(937008),
     c = r(156312),
     d = r(166532),
-    p = r(639289),
-    u = r(674619),
+    u = r(639289),
+    p = r(674619),
     b = r(927578),
     m = r(480254),
     _ = r(232392),
@@ -78,11 +78,11 @@ let C = e => {
         value: r,
         children: (0, n.jsx)(c.PaymentContextProvider, {
             activeSubscription: o,
-            stepConfigs: (0, u.E)(),
+            stepConfigs: (0, p.E)(),
             skuIDs: [],
             breadcrumbs: [d.pn.CONFIRM],
             children: (0, n.jsx)(s.Mq, {
-                children: (0, n.jsx)(p.A, {
+                children: (0, n.jsx)(u.A, {
                     isConfirmationStep: O === _.g.SUCCESS,
                     isEligibleForWowMoment: !h,
                     shouldPrefetchWowMoment: !h,

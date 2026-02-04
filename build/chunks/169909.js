@@ -43,8 +43,8 @@ var r = n(627968),
     k = n(786115),
     U = n(346446),
     G = n(717048),
-    F = n(652215),
-    V = n(838541),
+    V = n(652215),
+    F = n(838541),
     B = n(985018),
     H = n(880445),
     Y = n(291071),
@@ -437,7 +437,7 @@ function eo(e) {
                 onAnimationEnd: () => n ? null : u(!1),
                 children: (0, r.jsx)(S.A, {
                     src: l,
-                    mediaLayoutType: V.dG.MOSAIC,
+                    mediaLayoutType: F.dG.MOSAIC,
                     loop: !0,
                     autoPlay: !0,
                     muted: !0
@@ -505,7 +505,7 @@ function ec(e) {
     } = (0, g.A)(t);
     return {
         onClickAppCard: i.useCallback(e => {
-            e.stopPropagation(), (0, A.zV)(F.HAw.APPLICATION_COMMAND_SECTION_SELECTED, {
+            e.stopPropagation(), (0, A.zV)(V.HAw.APPLICATION_COMMAND_SECTION_SELECTED, {
                 application_id: t.id,
                 section_name: n,
                 search_results_position: r,

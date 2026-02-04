@@ -33,20 +33,20 @@ function b(e) {
         selectedSkuId: b
     } = (0, d.P5)(), [O, v] = i.useState(n), [A, I] = i.useState(), [S, T] = i.useState(!1), C = (0, u.Ik)(O), N = m;
     C && (N = null != f ? f : h);
-    let [w, R] = i.useState(N), P = (0, l.JW)(), [D, L] = i.useState(), [x, M] = i.useState(t && (0, u.lo)(O) === u.tB.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == c ? _.intl.string(_.t.ZkOo1U) : c), [j, k] = i.useState(void 0), [U, G] = i.useState(void 0), F = (0, u.Vt)(b, t), [V, B] = i.useState(!1), [H, Y] = i.useState(!1), [W, K] = i.useState(), z = i.useCallback(e => {
+    let [w, R] = i.useState(N), P = (0, l.JW)(), [D, L] = i.useState(), [x, M] = i.useState(t && (0, u.lo)(O) === u.tB.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == c ? _.intl.string(_.t.ZkOo1U) : c), [j, k] = i.useState(void 0), [U, G] = i.useState(void 0), V = (0, u.Vt)(b, t), [F, B] = i.useState(!1), [H, Y] = i.useState(!1), [W, K] = i.useState(), z = i.useCallback(e => {
         let {
             onSubscriptionConfirmation: t
         } = e;
-        return Y(!0), (0, s.UN)(O, F).then(() => {
+        return Y(!0), (0, s.UN)(O, V).then(() => {
             Y(!1), null == t || t(), B(!0)
         }).catch(e => {
             Y(!1), K(e), B(!0)
         })
-    }, [O, F, Y, B, K]), q = (0, a.yK)([o.A], () => o.A.recommendedGiftSkuIds);
+    }, [O, V, Y, B, K]), q = (0, a.yK)([o.A], () => o.A.recommendedGiftSkuIds);
     return (0, r.jsx)(g.Provider, {
         value: {
             isGift: t,
-            giftCode: F,
+            giftCode: V,
             giftMessage: c,
             giftRecipient: O,
             setGiftRecipient: v,
@@ -63,7 +63,7 @@ function b(e) {
             selectedGiftStyle: w,
             setSelectedGiftStyle: R,
             sendGiftMessage: z,
-            hasSentMessage: V,
+            hasSentMessage: F,
             isSendingMessage: H,
             giftMessageError: W,
             recommendedGiftSkuIds: q,

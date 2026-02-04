@@ -23,7 +23,7 @@ let m = c.GY.binds["0"],
             firstElementFocusJumpSectionProps: i = {}
         } = e, {
             titlebarIconSize: c
-        } = (0, u.p)({
+        } = (0, u.pz)({
             location: "BackForwardButtons"
         }), {
             canGoBack: A,

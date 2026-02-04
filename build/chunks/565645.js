@@ -101,8 +101,8 @@ function T(e) {
         registerInnerRef: D,
         registerAnimatedElementRef: L,
         surrogate: x
-    } = e, M = A(e, ["src", "alt", "className", "emojiId", "emojiName", "channelId", "messageId", "animated", "size", "isInteracting", "shouldAnimate", "onMouseEnter", "onMouseLeave", "canSelect", "autoplay", "registerInnerRef", "registerAnimatedElementRef", "surrogate"]), [j, k] = i.useState(!1), [U, G] = i.useState(void 0), F = i.useRef(void 0), {
-        triggerAnimation: V,
+    } = e, M = A(e, ["src", "alt", "className", "emojiId", "emojiName", "channelId", "messageId", "animated", "size", "isInteracting", "shouldAnimate", "onMouseEnter", "onMouseLeave", "canSelect", "autoplay", "registerInnerRef", "registerAnimatedElementRef", "surrogate"]), [j, k] = i.useState(!1), [U, G] = i.useState(void 0), V = i.useRef(void 0), {
+        triggerAnimation: F,
         untriggerAnimation: B
     } = i.useContext(u.wE), H = p.Sf.useSetting(), Y = S(), W = null == P ? H : P, K = E.Ec[I], z = i.useRef(null), q = i.useMemo(() => {
         if (null != a) return a;
@@ -117,12 +117,12 @@ function T(e) {
         if (null != _) return m.Ay.getURL(_);
         throw Error("Unknown Src for Emoji")
     }, [O, W, f, _, K, Y, j, T, C, a]), Z = i.useCallback(() => {
-        null != q && (F.current = (0, d.yt)(q, e => {
+        null != q && (V.current = (0, d.yt)(q, e => {
             e || G(Date.now())
         }))
     }, [q]), Q = i.useCallback(e => {
-        O && k(!0), null == f && V(_), null == N || N(e)
-    }, [O, _, N, V, f]), X = i.useCallback(e => {
+        O && k(!0), null == f && F(_), null == N || N(e)
+    }, [O, _, N, F, f]), X = i.useCallback(e => {
         O && k(!1), null == f && B(_), null == w || w(e)
     }, [O, f, _, w, B]), J = i.useMemo(() => {
         let e = null != f && "" !== f ? {
@@ -142,7 +142,7 @@ function T(e) {
     }, [c, f, _, Q, X, Z, M, I]);
     i.useEffect(() => () => {
         var e;
-        return null == (e = F.current) ? void 0 : e.call(F)
+        return null == (e = V.current) ? void 0 : e.call(V)
     }, []);
     let $ = i.useCallback(e => {
             z.current = e, null == D || D(e), null == L || L(e)

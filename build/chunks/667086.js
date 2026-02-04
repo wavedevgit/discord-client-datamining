@@ -51,7 +51,7 @@ function N(e) {
         backForwardButtons: x,
         titlebarIconSize: P,
         titlebarHoverHighlight: w
-    } = (0, h.p)({
+    } = (0, h.pz)({
         location: "NotificationsInboxTitleBarButton"
     }), L = (0, r.jsx)(d.XFE, {
         className: I.icon,

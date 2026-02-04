@@ -37,10 +37,10 @@ var r = n(257943),
     k = new T(M) !== M,
     U = h.MISSED_STICKY,
     G = h.UNSUPPORTED_Y,
-    F = r && (!k || U || A || I || E(function() {
+    V = r && (!k || U || A || I || E(function() {
         return j[S] = !1, T(M) !== M || T(j) === j || "/a/i" !== String(T(M, "i"))
     })),
-    V = function(e) {
+    F = function(e) {
         for (var t, n = e.length, r = 0, i = "", a = !1; r <= n; r++) {
             if ("\\" === (t = R(e, r))) {
                 i += t + R(e, ++r);
@@ -71,7 +71,7 @@ var r = n(257943),
         }
         return [i, a]
     };
-if (o("RegExp", F)) {
+if (o("RegExp", V)) {
     for (var H = function(e, t) {
             var n, r, i, a, o, c, u = d(C, this),
                 h = f(e),
@@ -79,7 +79,7 @@ if (o("RegExp", F)) {
                 g = [],
                 E = e;
             if (!u && h && m && e.constructor === H) return e;
-            if ((h || d(C, e)) && (e = e.source, m && (t = _(E))), e = void 0 === e ? "" : p(e), t = void 0 === t ? "" : p(t), E = e, A && "dotAll" in M && (r = !!t && D(t, "s") > -1) && (t = P(t, /s/g, "")), n = t, U && "sticky" in M && (i = !!t && D(t, "y") > -1) && G && (t = P(t, /y/g, "")), I && (e = (a = B(e))[0], g = a[1]), o = s(T(e, t), u ? this : C, H), (r || i || g.length) && (c = b(o), r && (c.dotAll = !0, c.raw = H(V(e), n)), i && (c.sticky = !0), g.length && (c.groups = g)), e !== E) try {
+            if ((h || d(C, e)) && (e = e.source, m && (t = _(E))), e = void 0 === e ? "" : p(e), t = void 0 === t ? "" : p(t), E = e, A && "dotAll" in M && (r = !!t && D(t, "s") > -1) && (t = P(t, /s/g, "")), n = t, U && "sticky" in M && (i = !!t && D(t, "y") > -1) && G && (t = P(t, /y/g, "")), I && (e = (a = B(e))[0], g = a[1]), o = s(T(e, t), u ? this : C, H), (r || i || g.length) && (c = b(o), r && (c.dotAll = !0, c.raw = H(F(e), n)), i && (c.sticky = !0), g.length && (c.groups = g)), e !== E) try {
                 l(o, "source", "" === E ? "(?:)" : E)
             } catch (e) {}
             return o

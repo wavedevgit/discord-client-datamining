@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
     MS: () => u,
-    OE: () => f,
-    Qb: () => p
+    OE: () => d,
+    Qb: () => f
 });
 var r = n(73153),
     i = n(824865),
@@ -20,28 +20,29 @@ function u(e, t) {
         action: t
     })
 }
-let d = () => (0, s.J)({
-    location: "NavHistoryActionCreators"
-});
 
-function f(e) {
+function d(e) {
     if (!(0, a.TX)()) return;
     if (o.default.track(c.HAw.APP_BACK_FORWARD_NAVIGATED, {
             nav_direction: -1,
             nav_trigger: e
-        }), !d()) return void(0, a.aX)();
+        }), !(0, s.vY)({
+            location: e
+        })) return void(0, a.aX)();
     let t = l.A.backDestination;
     null != t && (0, a.pX)(t.path, {
         source: i.A.USER_NAVIGATED_BACK
     })
 }
 
-function p(e) {
+function f(e) {
     if (!(0, a.TX)()) return;
     if (o.default.track(c.HAw.APP_BACK_FORWARD_NAVIGATED, {
             nav_direction: 1,
             nav_trigger: e
-        }), !d()) return void(0, a.sY)();
+        }), !(0, s.vY)({
+            location: e
+        })) return void(0, a.sY)();
     let t = l.A.forwardDestination;
     null != t && (0, a.pX)(t.path, {
         source: i.A.USER_NAVIGATED_FORWARD

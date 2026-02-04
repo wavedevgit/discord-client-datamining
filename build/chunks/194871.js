@@ -81,7 +81,7 @@ function G(e, t) {
     return t.some(t => t.platforms.includes(e))
 }
 
-function F(e) {
+function V(e) {
     let {
         build_id: t,
         target_build_id: n,
@@ -192,7 +192,7 @@ function F(e) {
     throw Error("Invalid Dispatch State. state=".concat(e.state.type))
 }
 
-function V(e) {
+function F(e) {
     return e.type === y.WTw.INSTALLING || e.type === y.WTw.UPDATING || e.type === y.WTw.REPAIRING ? e.networkProgress : null
 }
 
@@ -253,8 +253,8 @@ function X(e) {
     for (let e in r)
         for (let t in r[e]) {
             let o = (0, _.gW)(e, t);
-            if (n[o] = F(r[e][t]), null != C[o]) {
-                let e = Q(n, o, V);
+            if (n[o] = V(r[e][t]), null != C[o]) {
+                let e = Q(n, o, F);
                 e > 0 && z(P += e);
                 let r = Q(n, o, B);
                 r > 0 && Z(D += r);

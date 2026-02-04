@@ -127,8 +127,8 @@ function k(e) {
         planError: k,
         onPurchaseError: U,
         baseAnalyticsData: G,
-        flowStartTime: F,
-        trialId: V,
+        flowStartTime: V,
+        trialId: F,
         planGroup: B,
         analyticsLocation: H,
         purchaseTokenAuthState: Y,
@@ -165,7 +165,7 @@ function k(e) {
     } = (0, A.Pv)(), ey = (0, h.Mq)(X), eb = (0, O.lo)(eg), eO = {};
     eO.gift_style = ep, eO.reward_sku_ids = ey && null != eE ? [eE] : [], eb === O.tB.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && (l()(null != eg, "Gift recipient must be set at purchase review step for these gift options."), eO.recipient_id = eg.id, eO.custom_message = e_, eO.emoji_id = null == eh ? void 0 : eh.id, eO.emoji_name = (null == eh ? void 0 : eh.id) == null ? null == eh ? void 0 : eh.surrogates : void 0, eO.sound_id = null == em ? void 0 : em.soundId);
     let ev = null == X ? void 0 : X.id,
-        eA = (0, T.$o)(V, J.paymentSourceId, ev),
+        eA = (0, T.$o)(F, J.paymentSourceId, ev),
         {
             analyticsLocations: eI
         } = (0, d.Ay)(),
@@ -200,10 +200,10 @@ function k(e) {
             baseAnalyticsData: G,
             analyticsLocation: H,
             analyticsLocations: eI,
-            flowStartTime: F,
+            flowStartTime: V,
             subscriptionPlan: X,
             planGroup: B,
-            trialId: V,
+            trialId: F,
             priceOptions: J,
             paymentSource: eS,
             isPrepaidPaymentPastDue: eL,
@@ -220,9 +220,9 @@ function k(e) {
             invoicePreview: ec,
             orderId: ex
         })
-    }, eF = {
+    }, eV = {
         baseAnalyticsData: G,
-        flowStartTime: F,
+        flowStartTime: V,
         makePurchase: eG,
         onNext: s,
         onPurchaseError: U,
@@ -230,13 +230,13 @@ function k(e) {
         paymentSourceId: en,
         purchaseTokenAuthState: Y,
         setPurchaseState: n
-    }, eV = i.useRef(eF);
+    }, eF = i.useRef(eV);
     i.useEffect(() => {
-        eV.current = eF
+        eF.current = eV
     }), i.useEffect(() => {
         let {
             makePurchase: e
-        } = eV.current;
+        } = eF.current;
         eA && !ef && null == t && e()
     }, [eA, ef, t]);
     let {

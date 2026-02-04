@@ -54,8 +54,8 @@ var r = n(110259),
     k = n(977997),
     U = n(954571),
     G = n(403362),
-    F = n(499785),
-    V = n(811024),
+    V = n(499785),
+    F = n(811024),
     B = n(933958),
     H = n(383497),
     Y = n(969151),
@@ -231,7 +231,7 @@ function ec(e, t) {
     let n = (null == t ? void 0 : t.type) === ee.rbe.GUILD_VOICE,
         r = y.A.getApplication(e),
         i = null != r && (0, a.Lt)(r.flags, ee.gfo.EMBEDDED),
-        o = (0, V.AX)(t);
+        o = (0, F.AX)(t);
     return n && i || o
 }
 async function eu(e) {
@@ -413,7 +413,7 @@ async function ed(e) {
                 result: "failure",
                 reason: 8
             }
-        } else if (!(0, V.pE)(p) || !n) return {
+        } else if (!(0, F.pE)(p) || !n) return {
             result: "failure",
             reason: 9
         }
@@ -432,7 +432,7 @@ async function ed(e) {
         oldFormErrors: !0,
         rejectWithError: !0
     };
-    return null != i ? (await F.A.post(eo({
+    return null != i ? (await V.A.post(eo({
         url: ee.Rsh.ACTIVITY_CHANNEL_LAUNCH(i, n),
         body: {
             session_id: l,
@@ -563,7 +563,7 @@ async function em(e) {
         let e = void 0 !== o && "" !== o ? {
                 guild_id: o
             } : void 0,
-            t = await F.A.get({
+            t = await V.A.get({
                 url: ee.Rsh.ACTIVITY_SHELF,
                 query: e,
                 trackedActionData: {

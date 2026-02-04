@@ -66,8 +66,8 @@ let O = e => {
         plan: k,
         isPrepaid: U,
         discountInvoiceItems: G,
-        premiumPlanOptions: F,
-        shouldAllowPlanSelect: V,
+        premiumPlanOptions: V,
+        shouldAllowPlanSelect: F,
         isCustomGift: B,
         hidePersonalInformation: H,
         hasEntitlements: Y,
@@ -127,15 +127,15 @@ let O = e => {
             giftRecipient: R,
             isPremiumGroupPurchase: Z
         }),
-        ea = V ? (0, r.jsx)(m.XH, {
+        ea = F ? (0, r.jsx)(m.XH, {
             selectedPlanId: n,
             priceOptions: y,
-            planOptions: F,
+            planOptions: V,
             eligibleForMultiMonthPlans: !1,
             subscriptionPeriodEnd: D,
             discountInvoiceItems: G
         }) : void 0,
-        eo = V ? void 0 : (0, r.jsx)(l.f7, b({}, ei));
+        eo = F ? void 0 : (0, r.jsx)(l.f7, b({}, ei));
     return (0, r.jsx)(s.rg, {
         upperInlineNoticeContent: et,
         planSelectContent: ea,

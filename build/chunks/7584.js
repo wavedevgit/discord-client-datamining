@@ -176,9 +176,9 @@ function k(e) {
 }
 let U = String.fromCodePoint(917631),
     G = String.fromCodePoint(127988),
-    F = RegExp("^[\\u{E0061}-\\u{E007A}]$", "u");
+    V = RegExp("^[\\u{E0061}-\\u{E007A}]$", "u");
 
-function V(e, t) {
+function F(e, t) {
     var n;
     if (!0 !== t && !M(e)) return [{
         type: "text",
@@ -191,7 +191,7 @@ function V(e, t) {
         let t = a[e];
         if (null != r && "" !== r)
             if (t === U) t = r + t, r = "";
-            else if (F.test(t)) {
+            else if (V.test(t)) {
             r += t;
             continue
         } else i.push(k(r)), r = "";
@@ -213,12 +213,12 @@ function V(e, t) {
 }
 
 function B(e) {
-    return V(e).map(e => "text" === e.type ? e.text : e.emojiName).join("")
+    return F(e).map(e => "text" === e.type ? e.text : e.emojiName).join("")
 }
 
 function H(e) {
     if (!M(e)) return null;
-    let t = V(e, !0).map(e => "text" === e.type ? e.text : e.emojiName).join("");
+    let t = F(e, !0).map(e => "text" === e.type ? e.text : e.emojiName).join("");
     return t === e ? null : t
 }
 
@@ -248,7 +248,7 @@ let z = {
     contentHasUnicodeOrEmoji: M,
     translateInlineEmojiToSurrogates: j,
     maybeTranslateSurrogatesToInlineEmoji: H,
-    findInlineEmojisFromSurrogates: V,
+    findInlineEmojisFromSurrogates: F,
     translateSurrogatesToInlineEmoji: B,
     convertNameToSurrogate: Y,
     convertSurrogateToName: W,

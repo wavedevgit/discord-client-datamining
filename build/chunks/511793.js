@@ -102,12 +102,12 @@ let x = (0, h.Fe)({
         webpackId: 885338,
         name: "VerifyConnectedAccountError"
     }),
-    F = (0, h.Fe)({
+    V = (0, h.Fe)({
         createPromise: () => Promise.all([n.e("34917"), n.e("52986")]).then(n.bind(n, 97649)),
         webpackId: 97649,
         name: "LinkConnectedAccount"
     }),
-    V = (0, h.Fe)({
+    F = (0, h.Fe)({
         createPromise: () => n.e("65893").then(n.bind(n, 599128)),
         webpackId: 599128,
         name: "LinkAuthorize"
@@ -276,10 +276,10 @@ class ei extends i.Component {
                 component: z
             }), (0, r.jsx)(_.A, {
                 path: N.BVt.CONNECTION_LINK(":type"),
-                component: F
+                component: V
             }), (0, r.jsx)(_.A, {
                 path: N.BVt.CONNECTION_LINK_AUTHORIZE(":type"),
-                component: V
+                component: F
             }), (0, r.jsx)(_.A, {
                 path: N.BVt.ACTIVATE,
                 component: B

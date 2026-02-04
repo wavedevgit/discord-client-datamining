@@ -5,7 +5,7 @@ n.d(t, {
     K7: () => Y,
     MK: () => B,
     N5: () => D,
-    R_: () => F,
+    R_: () => V,
     Rq: () => Q,
     Xr: () => W,
     Xy: () => k,
@@ -19,7 +19,7 @@ n.d(t, {
     iq: () => U,
     mG: () => J,
     sp: () => H,
-    tR: () => V,
+    tR: () => F,
     zi: () => Z
 });
 var r = n(627968),
@@ -106,7 +106,7 @@ function R(e, t) {
 }
 let P = {
     [c.ContentInventoryEntryType.TOP_ARTIST]: [K],
-    [c.ContentInventoryEntryType.PLAYED_GAME]: [U, G, k, q, V, Y, z, H, B],
+    [c.ContentInventoryEntryType.PLAYED_GAME]: [U, G, k, q, F, Y, z, H, B],
     [c.ContentInventoryEntryType.TOP_GAME]: [W],
     [c.ContentInventoryEntryType.WATCHED_MEDIA]: [Z, Q],
     [c.ContentInventoryEntryType.LAUNCHED_ACTIVITY]: [U, G, k, q, z, B]
@@ -223,7 +223,7 @@ function G(e) {
     })
 }
 
-function F(e) {
+function V(e) {
     let {
         entry: t,
         hovered: n
@@ -246,7 +246,7 @@ function F(e) {
     })
 }
 
-function V(e) {
+function F(e) {
     let {
         entry: t
     } = e, {

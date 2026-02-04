@@ -216,7 +216,7 @@ e.exports = function(e) {
             className: "title.function",
             relevance: 0
         },
-        F = {
+        V = {
             begin: c.concat(/\./, c.lookahead(c.concat(d, /(?![0-9A-Za-z$_(])/))),
             end: d,
             excludeBegin: !0,
@@ -224,7 +224,7 @@ e.exports = function(e) {
             className: "property",
             relevance: 0
         },
-        V = {
+        F = {
             match: [/get|set/, /\s+/, d, /(?=\()/],
             className: {
                 1: "keyword",
@@ -328,7 +328,7 @@ e.exports = function(e) {
         }, {
             match: /\.\.\./,
             relevance: 0
-        }, F, {
+        }, V, {
             match: "\\$" + d,
             relevance: 0
         }, {
@@ -337,7 +337,7 @@ e.exports = function(e) {
                 1: "title.function"
             },
             contains: [D]
-        }, G, k, L, V, {
+        }, G, k, L, F, {
             match: /\$[(.]/
         }]
     }

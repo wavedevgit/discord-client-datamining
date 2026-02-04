@@ -78,11 +78,11 @@ function G(e) {
     }
 }
 
-function F() {
-    P = !0, T = S, V()
+function V() {
+    P = !0, T = S, F()
 }
 
-function V() {
+function F() {
     var e;
     if (C = null != (e = g.A.getIdleSince()) ? e : 0, R = g.A.isAFK(), P) S = T;
     else if (I) S = v.clD.INVISIBLE;
@@ -101,15 +101,15 @@ function V() {
 }
 
 function B(e) {
-    return I = e.invisible, V()
+    return I = e.invisible, F()
 }
 
 function H() {
-    return I = !1, V()
+    return I = !1, F()
 }
 
 function Y() {
-    P = !1, T = v.clD.UNKNOWN, V(), b.A.setCurrentUserOnConnectionOpen(S, x)
+    P = !1, T = v.clD.UNKNOWN, F(), b.A.setCurrentUserOnConnectionOpen(S, x)
 }
 
 function W() {
@@ -117,7 +117,7 @@ function W() {
 }
 class K extends(r = c.Ay.Store) {
     initialize() {
-        this.waitFor(m.A, g.A, E.A, y.A, b.A, O.A, f.A, _.A), this.syncWith([y.A], V)
+        this.waitFor(m.A, g.A, E.A, y.A, b.A, O.A, f.A, _.A), this.syncWith([y.A], F)
     }
     getLocalPresence() {
         return {
@@ -156,25 +156,25 @@ class K extends(r = c.Ay.Store) {
 }
 A(K, "displayName", "SelfPresenceStore");
 let z = new K(u.h, {
-    START_SESSION: V,
+    START_SESSION: F,
     CONNECTION_OPEN: W,
     CONNECTION_OPEN_SUPPLEMENTAL: Y,
     OVERLAY_INITIALIZE: Y,
-    CONNECTION_CLOSED: V,
-    IDLE: V,
-    AFK: V,
-    RUNNING_GAMES_CHANGE: V,
-    STREAMING_UPDATE: V,
-    USER_SETTINGS_PROTO_UPDATE: V,
-    LOCAL_ACTIVITY_UPDATE: V,
-    SPOTIFY_PLAYER_STATE: V,
-    SPOTIFY_PLAYER_PLAY: V,
-    USER_CONNECTIONS_UPDATE: V,
-    SESSIONS_REPLACE: V,
-    RPC_APP_DISCONNECTED: V,
-    LIBRARY_FETCH_SUCCESS: V,
-    LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: V,
-    LOGOUT: F,
+    CONNECTION_CLOSED: F,
+    IDLE: F,
+    AFK: F,
+    RUNNING_GAMES_CHANGE: F,
+    STREAMING_UPDATE: F,
+    USER_SETTINGS_PROTO_UPDATE: F,
+    LOCAL_ACTIVITY_UPDATE: F,
+    SPOTIFY_PLAYER_STATE: F,
+    SPOTIFY_PLAYER_PLAY: F,
+    USER_CONNECTIONS_UPDATE: F,
+    SESSIONS_REPLACE: F,
+    RPC_APP_DISCONNECTED: F,
+    LIBRARY_FETCH_SUCCESS: F,
+    LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: F,
+    LOGOUT: V,
     FORCE_INVISIBLE: B,
     WINDOW_FOCUS: H
 })

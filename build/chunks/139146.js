@@ -151,8 +151,8 @@ function S(e) {
     let G = i.useCallback(e => {
             e.stopPropagation(), null == I || I(), R || w.enabled ? R && x && M(!1) : M(!0), D()
         }, [I, D, R, w.enabled, x]),
-        F = R ? E.intl.string(E.t.yr9TTf) : E.intl.string(E.t["8DkMEQ"]),
-        V = !R && !x,
+        V = R ? E.intl.string(E.t.yr9TTf) : E.intl.string(E.t["8DkMEQ"]),
+        F = !R && !x,
         B = i.useCallback(e => {
             e.target === e.currentTarget && x && requestAnimationFrame(() => M(!1))
         }, [x]),
@@ -162,9 +162,9 @@ function S(e) {
             height: s,
             width: s
         }) : (0, r.jsxs)("div", {
-            className: o()(y.zc, V && y.QX),
+            className: o()(y.zc, F && y.QX),
             children: [(0, r.jsx)("span", {
-                className: o()(y.P0, V && y.bP),
+                className: o()(y.P0, F && y.bP),
                 children: (0, r.jsx)(k, {
                     colorClass: null != e ? e : U,
                     size: "custom",
@@ -182,8 +182,8 @@ function S(e) {
             })]
         });
     return (h || R) && null != C ? p ? (0, r.jsx)(u.m_, {
-        text: null != b ? b : F,
-        "aria-label": null != b ? b : F,
+        text: null != b ? b : V,
+        "aria-label": null != b ? b : V,
         children: (0, r.jsx)(d.DUT, {
             className: o()(y.ij, y.NY, a),
             innerRef: L,
@@ -199,23 +199,23 @@ function S(e) {
     }) : N ? (0, r.jsx)(u.un, {
         title: E.intl.string(E.t["47Rhc3"]),
         body: E.intl.string(E.t.PXjA0b),
-        "aria-label": F,
+        "aria-label": V,
         children: (0, r.jsx)(d.DUT, {
             className: o()(y.ij, a),
             innerRef: L,
             onClick: G,
-            "aria-label": F,
+            "aria-label": V,
             "aria-busy": P,
             children: H()
         })
     }) : (0, r.jsx)(u.m_, {
-        text: null != b ? b : F,
-        "aria-label": null != b ? b : F,
+        text: null != b ? b : V,
+        "aria-label": null != b ? b : V,
         children: (0, r.jsx)(d.DUT, {
             className: o()(y.ij, a),
             innerRef: L,
             onClick: G,
-            "aria-label": F,
+            "aria-label": V,
             "aria-busy": P,
             children: H()
         })

@@ -36,8 +36,8 @@ var r = n(292528),
     k = "[object RegExp]",
     U = "[object Set]",
     G = "[object String]",
-    F = "[object Symbol]",
-    V = "[object WeakMap]",
+    V = "[object Symbol]",
+    F = "[object WeakMap]",
     B = "[object ArrayBuffer]",
     H = "[object DataView]",
     Y = "[object Float32Array]",
@@ -62,18 +62,18 @@ function ee(e, t, n, N, w, R) {
         if (P = h(e), !x) return c(e, P)
     } else {
         var G = _(e),
-            F = G == D || G == L;
+            V = G == D || G == L;
         if (y(e)) return l(e, x);
-        if (G == j || G == C || F && !w) {
-            if (P = M || F ? {} : g(e), !x) return M ? d(e, s(P, e)) : u(e, o(P, e))
+        if (G == j || G == C || V && !w) {
+            if (P = M || V ? {} : g(e), !x) return M ? d(e, s(P, e)) : u(e, o(P, e))
         } else {
             if (!$[G]) return w ? e : {};
             P = m(e, G, x)
         }
     }
     R || (R = new r);
-    var V = R.get(e);
-    if (V) return V;
+    var F = R.get(e);
+    if (F) return F;
     R.set(e, P), v(e) ? e.forEach(function(r) {
         P.add(ee(r, t, n, r, e, R))
     }) : b(e) && e.forEach(function(r, i) {
@@ -85,4 +85,4 @@ function ee(e, t, n, N, w, R) {
         H && (r = e[i = r]), a(P, i, ee(r, t, n, i, e, R))
     }), P
 }
-$[C] = $[N] = $[B] = $[H] = $[w] = $[R] = $[Y] = $[W] = $[K] = $[z] = $[q] = $[x] = $[M] = $[j] = $[k] = $[U] = $[G] = $[F] = $[Z] = $[Q] = $[X] = $[J] = !0, $[P] = $[D] = $[V] = !1, e.exports = ee
+$[C] = $[N] = $[B] = $[H] = $[w] = $[R] = $[Y] = $[W] = $[K] = $[z] = $[q] = $[x] = $[M] = $[j] = $[k] = $[U] = $[G] = $[V] = $[Z] = $[Q] = $[X] = $[J] = !0, $[P] = $[D] = $[F] = !1, e.exports = ee

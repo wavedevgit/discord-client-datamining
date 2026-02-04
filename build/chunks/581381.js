@@ -117,14 +117,14 @@ function G(e) {
         })
     }
 }
-let F = (e, t) => {
+let V = (e, t) => {
     if (0 !== e.length) {
         if (t) return void(0, O.jd)(e);
         (0, O.j1)(e[0].channel_id, e.map(e => e.id))
     }
 };
 
-function V(e) {
+function F(e) {
     return null == x[M(e)]
 }
 
@@ -132,7 +132,7 @@ function B(e, t) {
     let {
         forceBatchScan: n = !1,
         jitter: r = !1
-    } = null != t ? t : {}, i = (null == t ? void 0 : t.isMessageUpdate) ? e.filter(e => (0, T.s9)(e) && (0, T.mS)(e)).filter(V) : e.filter(e => (0, T.s9)(e)).filter(V);
+    } = null != t ? t : {}, i = (null == t ? void 0 : t.isMessageUpdate) ? e.filter(e => (0, T.s9)(e) && (0, T.mS)(e)).filter(F) : e.filter(e => (0, T.s9)(e)).filter(F);
     i.forEach(e => {
         let t = M(e);
         null == x[t] && (d.A.increment({
@@ -146,8 +146,8 @@ function B(e, t) {
     });
     let a = n || new Set(i.map(e => e.channel_id)).size > 1;
     r ? setTimeout(() => {
-        F(i.filter(e => null != x[M(e)]), a)
-    }, Math.random() * L) : F(i, a)
+        V(i.filter(e => null != x[M(e)]), a)
+    }, Math.random() * L) : V(i, a)
 }
 
 function H(e) {

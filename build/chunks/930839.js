@@ -15,7 +15,8 @@ var r = n(110259),
         CURRENT_USER_UPDATE: e => r.AnalyticsActionHandlers.handleConnectionOpen(e),
         CONNECTION_CLOSED: () => r.AnalyticsActionHandlers.handleConnectionClosed(),
         FINGERPRINT: () => r.AnalyticsActionHandlers.handleFingerprint(),
-        TRACK: e => r.AnalyticsActionHandlers.handleTrack(e)
+        TRACK: e => r.AnalyticsActionHandlers.handleTrack(e),
+        SET_ANALYTICS_TOKEN: e => r.AnalyticsActionHandlers.handleSetAnalyticsToken(e)
     },
     TRACKING_URL: c.Rsh.TRACK,
     waitFor: [l.default],

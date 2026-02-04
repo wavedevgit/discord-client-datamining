@@ -144,7 +144,7 @@ function v(e) {
             left: null != (r = null == (t = x.current) ? void 0 : t.scrollLeft) ? r : 0
         }
     });
-    let F = e => {
+    let V = e => {
             if (n.isFocused) {
                 e.currentTarget.contains(e.target) || n.setFocused(!1);
                 return
@@ -166,7 +166,7 @@ function v(e) {
                 }
             }
         },
-        V = e => {
+        F = e => {
             e.currentTarget.contains(e.relatedTarget) || n.setFocused(!1)
         },
         B = (0, E.useRef)(!1);
@@ -234,8 +234,8 @@ function v(e) {
     });
     let Z = {
             onKeyDown: U,
-            onFocus: F,
-            onBlur: V,
+            onFocus: V,
+            onBlur: F,
             onMouseDown(e) {
                 x.current === e.target && e.preventDefault()
             }

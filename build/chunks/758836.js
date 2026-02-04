@@ -10,10 +10,10 @@ n.d(t, {
     O0: () => B,
     PI: () => E,
     Pf: () => O,
-    QB: () => V,
+    QB: () => F,
     Tq: () => b,
     Vk: () => W,
-    _6: () => F,
+    _6: () => V,
     ck: () => R,
     cw: () => N,
     dF: () => C,
@@ -77,8 +77,8 @@ let k = {
     },
     U = new Set(Object.values(k)),
     G = e => U.has(e),
-    F = [c.q.AVATAR_DECORATION, c.q.PROFILE_EFFECT, c.q.NAMEPLATE, c.q.BUNDLE],
-    V = [{
+    V = [c.q.AVATAR_DECORATION, c.q.PROFILE_EFFECT, c.q.NAMEPLATE, c.q.BUNDLE],
+    F = [{
         sortType: d.$.RELEVANCE,
         sortDirection: u.A.DESC
     }, {

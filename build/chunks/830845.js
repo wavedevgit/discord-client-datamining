@@ -208,7 +208,7 @@ function T(e) {
         return C + p(e)
     }
 
-    function F(e, r) {
+    function V(e, r) {
         var i = "PUSH",
             a = _(e, r, w(), Q.location);
         R.confirmTransitionTo(a, i, h, function(e) {
@@ -234,7 +234,7 @@ function T(e) {
         })
     }
 
-    function V(e, r) {
+    function F(e, r) {
         var i = "REPLACE",
             a = _(e, r, w(), Q.location);
         R.confirmTransitionTo(a, i, h, function(e) {
@@ -297,8 +297,8 @@ function T(e) {
         action: "POP",
         location: k,
         createHref: G,
-        push: F,
-        replace: V,
+        push: V,
+        replace: F,
         go: B,
         goBack: H,
         goForward: Y,
@@ -403,8 +403,8 @@ function L(e) {
 
     function j(e) {
         var t = J.location,
-            n = F.lastIndexOf(p(t)); - 1 === n && (n = 0);
-        var r = F.lastIndexOf(p(e)); - 1 === r && (r = 0);
+            n = V.lastIndexOf(p(t)); - 1 === n && (n = 0);
+        var r = V.lastIndexOf(p(e)); - 1 === r && (r = 0);
         var i = n - r;
         i && (S = !0, Y(i))
     }
@@ -412,9 +412,9 @@ function L(e) {
         U = y(k);
     k !== U && D(U);
     var G = v(),
-        F = [p(G)];
+        V = [p(G)];
 
-    function V(e) {
+    function F(e) {
         var t = document.querySelector("base"),
             n = "";
         return t && t.getAttribute("href") && (n = w(window.location.href)), n + "#" + y(f + p(e))
@@ -430,9 +430,9 @@ function L(e) {
                     a = R() !== i;
                 if (a) {
                     T = t, P(i);
-                    var o = F.lastIndexOf(p(J.location)),
-                        s = F.slice(0, o + 1);
-                    s.push(t), F = s, I({
+                    var o = V.lastIndexOf(p(J.location)),
+                        s = V.slice(0, o + 1);
+                    s.push(t), V = s, I({
                         action: n,
                         location: r
                     })
@@ -450,7 +450,7 @@ function L(e) {
                     i = y(f + t),
                     a = R() !== i;
                 a && (T = t, D(i));
-                var o = F.indexOf(p(J.location)); - 1 !== o && (F[o] = t), I({
+                var o = V.indexOf(p(J.location)); - 1 !== o && (V[o] = t), I({
                     action: n,
                     location: r
                 })
@@ -496,7 +496,7 @@ function L(e) {
         length: t.length,
         action: "POP",
         location: G,
-        createHref: V,
+        createHref: F,
         push: B,
         replace: H,
         go: Y,

@@ -45,7 +45,7 @@ function T(e) {
         {
             guildTitleIconSize: U,
             guildIconSize: G
-        } = (0, p.p)({
+        } = (0, p.pz)({
             location: "GuildTitle"
         }),
         {

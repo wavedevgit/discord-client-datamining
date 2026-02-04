@@ -115,13 +115,13 @@ function G(e) {
     return U(t.id)
 }
 
-function F(e) {
+function V(e) {
     let {
         channel: t
     } = e;
     return S === t.parent_id && !!(0, f.yr)(t.id) && void U(t.id)
 }
-let V = [];
+let F = [];
 class B extends(i = u.Ay.Store) {
     initialize() {
         this.waitFor(h.A, E.A, m.Ay)
@@ -139,14 +139,14 @@ class B extends(i = u.Ay.Store) {
         return S === e && T === t && (0, c._)(r, n) && w === i ? O : (R(), !1)
     }
     getThreads(e, t, n, i) {
-        return S === e && T === t && (0, c._)(r, n) && w === i ? C : V
+        return S === e && T === t && (0, c._)(r, n) && w === i ? C : F
     }
 }
 y(B, "displayName", "ArchivedThreadsStore");
 let H = new B(d.h, {
     CONNECTION_OPEN: R,
     THREAD_DELETE: G,
-    THREAD_UPDATE: F,
+    THREAD_UPDATE: V,
     CHANNEL_DELETE: k,
     LOAD_ARCHIVED_THREADS: D,
     LOAD_ARCHIVED_THREADS_SUCCESS: L,

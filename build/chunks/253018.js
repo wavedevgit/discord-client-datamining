@@ -74,8 +74,8 @@ var b = new WeakMap,
     k = new WeakMap,
     U = new WeakMap,
     G = new WeakMap,
-    F = new WeakMap,
-    V = Symbol("placeholder"),
+    V = new WeakMap,
+    F = Symbol("placeholder"),
     B = Symbol("mark-placeholder"),
     H = globalThis.Text,
     Y = e => e && e.ownerDocument && e.ownerDocument.defaultView || null,
@@ -463,7 +463,7 @@ var b = new WeakMap,
     eI = (e, t) => {
         var n = g(e, eO),
             r = g(t, ev);
-        return e[V] === t[V] && eA(n, r)
+        return e[F] === t[F] && eA(n, r)
     },
     eS = (e, t) => {
         if (e.length !== t.length) return !1;
@@ -552,10 +552,10 @@ var b = new WeakMap,
         }, []), (0, c.useEffect)(() => {
             var e = null == l ? void 0 : l.current;
             if (e ? I.set(u, e) : I.delete(u), d.current ? (d.current.disconnect(), e && d.current.observe(e)) : e && (d.current = new(window.ResizeObserver || f.tb)(() => {
-                    var e = F.get(u);
+                    var e = V.get(u);
                     null == e || e()
                 }), d.current.observe(e)), !e && s.current) {
-                var t = F.get(u);
+                var t = V.get(u);
                 null == t || t()
             }
             return s.current = l.current, () => {
@@ -568,7 +568,7 @@ var b = new WeakMap,
             parent: i,
             text: r
         });
-        if (t[V]) {
+        if (t[F]) {
             var _ = {
                 children: t.placeholder,
                 attributes: {
@@ -598,7 +598,7 @@ var b = new WeakMap,
             text: r
         })
     },
-    eM = c.memo(ex, (e, t) => t.parent === e.parent && t.isLast === e.isLast && t.renderLeaf === e.renderLeaf && t.renderPlaceholder === e.renderPlaceholder && t.text === e.text && d.EY.equals(t.leaf, e.leaf) && t.leaf[V] === e.leaf[V]),
+    eM = c.memo(ex, (e, t) => t.parent === e.parent && t.isLast === e.isLast && t.renderLeaf === e.renderLeaf && t.renderPlaceholder === e.renderPlaceholder && t.text === e.text && d.EY.equals(t.leaf, e.leaf) && t.leaf[F] === e.leaf[F]),
     ej = e => {
         var {
             attributes: t,
@@ -640,7 +640,7 @@ var b = new WeakMap,
         var {
             decorations: t,
             element: n,
-            renderElement: r = e => c.createElement(eV, Object.assign({}, e)),
+            renderElement: r = e => c.createElement(eF, Object.assign({}, e)),
             renderPlaceholder: a,
             renderLeaf: o,
             selection: s
@@ -692,8 +692,8 @@ var b = new WeakMap,
             decorations: t
         })
     },
-    eF = c.memo(eG, (e, t) => e.element === t.element && e.renderElement === t.renderElement && e.renderLeaf === t.renderLeaf && e.renderPlaceholder === t.renderPlaceholder && eS(e.decorations, t.decorations) && (e.selection === t.selection || !!e.selection && !!t.selection && d.Q6.equals(e.selection, t.selection))),
-    eV = e => {
+    eV = c.memo(eG, (e, t) => e.element === t.element && e.renderElement === t.renderElement && e.renderLeaf === t.renderLeaf && e.renderPlaceholder === t.renderPlaceholder && eS(e.decorations, t.decorations) && (e.selection === t.selection || !!e.selection && !!t.selection && d.Q6.equals(e.selection, t.selection))),
+    eF = e => {
         var {
             attributes: t,
             children: n,
@@ -731,7 +731,7 @@ var b = new WeakMap,
             d.Hg.isElement(m) ? f.push(c.createElement(eY.Provider, {
                 key: "provider-".concat(g.id),
                 value: !!y
-            }, c.createElement(eF, {
+            }, c.createElement(eV, {
                 decorations: v,
                 element: m,
                 key: g.id,
@@ -1462,8 +1462,8 @@ function th(e) {
                             text: x
                         };
                         if (x && c && "insertCompositionText" === n) {
-                            var F = c.start + c.text.search(/\S|$/);
-                            G.start + G.text.search(/\S|$/) === F + 1 && G.end === c.start + c.text.length ? (G.start -= 1, c = null, T()) : c = !1
+                            var V = c.start + c.text.search(/\S|$/);
+                            G.start + G.text.search(/\S|$/) === V + 1 && G.end === c.start + c.text.length ? (G.start -= 1, c = null, T()) : c = !1
                         } else c = "insertText" === n && (null === c ? G : !!(c && d.Q6.isCollapsed(r)) && c.end + c.text.length === j.offset && tu(tu({}, c), {}, {
                             text: c.text + x
                         }));
@@ -1496,7 +1496,7 @@ function th(e) {
     }, C = e => {
         if (!(b() || y()) && e.some(n => ei(t, n, e))) {
             var n;
-            null == (n = F.get(t)) || n()
+            null == (n = V.get(t)) || n()
         }
     };
     return {
@@ -1647,7 +1647,7 @@ var tN = e => c.createElement(c.Fragment, null, eK(e)),
                 receivedUserInput: H
             } = tA(),
             [, W] = (0, c.useReducer)(e => e + 1, 0);
-        F.set(N, W), w.set(N, p);
+        V.set(N, W), w.set(N, p);
         var q = (0, c.useMemo)(() => ({
             isDraggingInternally: !1,
             isUpdatingSelection: !1,
@@ -1880,7 +1880,7 @@ var tN = e => c.createElement(c.Fragment, null, eK(e)),
         if (f && 1 === N.children.length && 1 === Array.from(d.bP.texts(N)).length && "" === d.bP.string(N) && !L) {
             var en = d.KE.start(N, []);
             et.push({
-                [V]: !0,
+                [F]: !0,
                 placeholder: f,
                 anchor: en,
                 focus: en
@@ -2315,7 +2315,7 @@ function tk(e) {
 var tU = (0, c.createContext)({}),
     tG = (e, t) => e === t;
 
-function tF(e) {
+function tV(e) {
     var t = (0, c.useRef)([]).current,
         n = (0, c.useRef)({
             editor: e
@@ -2333,14 +2333,14 @@ function tF(e) {
         onChange: r
     }
 }
-var tV = ["editor", "children", "onChange", "value"],
+var tF = ["editor", "children", "onChange", "value"],
     tB = e => {
         var {
             editor: t,
             children: n,
             onChange: r,
             value: i
-        } = e, a = g(e, tV), o = (0, c.useRef)(!1), [s, l] = c.useState(() => {
+        } = e, a = g(e, tF), o = (0, c.useRef)(!1), [s, l] = c.useState(() => {
             if (!d.bP.isNodeList(i)) throw Error("[Slate] value is invalid! Expected a list of elements but got: ".concat(d.h6.stringify(i)));
             if (!d.KE.isEditor(t)) throw Error("[Slate] editor is invalid! You passed: ".concat(d.h6.stringify(t)));
             return t.children = i, Object.assign(t, a), {
@@ -2350,7 +2350,7 @@ var tV = ["editor", "children", "onChange", "value"],
         }), {
             selectorContext: u,
             onChange: f
-        } = tF(t), p = (0, c.useCallback)(() => {
+        } = tV(t), p = (0, c.useCallback)(() => {
             r && r(t.children), l(e => ({
                 v: e.v + 1,
                 editor: t

@@ -34,15 +34,15 @@ var c = n(507240),
     k = n(626584),
     U = n(927813),
     G = n(316501),
-    F = n(338816);
+    V = n(338816);
 x.default.cssDebuggingEnabled && n.e("42592").then(n.t.bind(n, 196995, 19)), (0, G.pF)();
-let V = 5 * U.A.Millis.MINUTE,
+let F = 5 * U.A.Millis.MINUTE,
     B = document.getElementById("app-mount");
 d()(null != B, "Could not find app-mount"), B.className = __OVERLAY__ ? "" : M.l;
 let H = (0, c.createRoot)(B),
     Y = {
         "/oauth2/authorize": I.A,
-        "/one-time": F.A
+        "/one-time": V.A
     };
 
 function W(e, t, n) {
@@ -78,7 +78,7 @@ else if (null != window.require && null == window.DiscordNative) K(f.A.OutdatedC
 else {
     if (document.addEventListener("scroll", e => e.preventDefault()), S.isPlatformEmbedded) {
         window.onbeforeunload = () => v.Ay.beforeUnload(), v.Ay.on("HELP_OPEN", () => window.open(b.A.getCommunityURL()));
-        let e = new w.J_(V, () => v.Ay.purgeMemory());
+        let e = new w.J_(F, () => v.Ay.purgeMemory());
         v.Ay.on("MAIN_WINDOW_BLUR", () => {
             e.delay(), v.Ay.setFocused(!1), (0, C.XC)(window, !1)
         }), v.Ay.on("MAIN_WINDOW_FOCUS", () => {

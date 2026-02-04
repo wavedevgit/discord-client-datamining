@@ -98,9 +98,9 @@ let S = {},
     k = new Set,
     U = new Set,
     G = {},
-    F = {};
+    V = {};
 
-function V(e, t) {
+function F(e, t) {
     var n;
     let r = S[e],
         i = null != (n = null == r ? void 0 : r.channel_overrides) ? n : {},
@@ -148,13 +148,13 @@ function H(e) {
         let t = r[e];
         o.Lt(t.flags, b.vv.OPT_IN_ENABLED) ? n.add(e) : n.delete(e)
     }
-    Object.keys(r).length > 0 ? F[e] = n : delete F[e]
+    Object.keys(r).length > 0 ? V[e] = n : delete V[e]
 }
 
 function Y(e, t) {
     var n;
     let r = S[e];
-    V(e, v({
+    F(e, v({
         channel_overrides: null != (n = null == r ? void 0 : r.channel_overrides) ? n : {}
     }, t))
 }
@@ -183,7 +183,7 @@ function z(e, t) {
     var n;
     let r = S[e],
         i = null != (n = null == r ? void 0 : r.channel_overrides) ? n : {};
-    V(e, {
+    F(e, {
         channel_overrides: null == r ? t : v({}, i, t)
     })
 }
@@ -232,7 +232,7 @@ function $(e) {
     let t = new Set;
     for (let n in e.userGuildSettings.entries.forEach(e => {
             let n = e;
-            "channel_overrides" in n || (n.channel_overrides = {}), V(e.guild_id, n), null != e.guild_id && t.add(e.guild_id)
+            "channel_overrides" in n || (n.channel_overrides = {}), F(e.guild_id, n), null != e.guild_id && t.add(e.guild_id)
         }), S) t.has(n) || B(n, S[n])
 }
 
@@ -267,7 +267,7 @@ function er(e) {
         userGuildSettings: t
     } = e;
     t.forEach(e => {
-        V(e.guild_id, v({
+        F(e.guild_id, v({
             channel_overrides: {}
         }, e))
     })
@@ -307,7 +307,7 @@ function es(e) {
         guildId: t
     } = e;
     if (null == t) return !1;
-    delete G[t], delete F[t]
+    delete G[t], delete V[t]
 }
 
 function el(e) {
@@ -496,7 +496,7 @@ class e_ extends(r = s.Ay.PersistedStore) {
         let i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
         if (null == e) return !1;
         if (u.A.isFullServerPreview(e)) return u.A.isChannelOptedIn(e, t);
-        if (i && null != F[e]) return F[e].has(t);
+        if (i && null != V[e]) return V[e].has(t);
         let a = null != (n = null == (r = this.getChannelOverrides(e)[t]) ? void 0 : r.flags) ? n : 0;
         return o.Lt(a, b.vv.OPT_IN_ENABLED)
     }
@@ -505,7 +505,7 @@ class e_ extends(r = s.Ay.PersistedStore) {
         return u.A.isFullServerPreview(e) ? null != (n = u.A.getViewingChannels(e)) ? n : U : null != (t = M[e]) ? t : U
     }
     getOptedInChannelsWithPendingUpdates(e) {
-        return F[e]
+        return V[e]
     }
     getPendingChannelUpdates(e) {
         return G[e]

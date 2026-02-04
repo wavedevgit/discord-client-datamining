@@ -61,7 +61,7 @@ let E = (e, t, n, r) => {
             let e = u.Ay.getIntervalForInvoice(T);
             t = e.intervalType, n = e.intervalCount, l = (0, d.CE)((0, d.$g)(T.total, T.currency), t, n), y = (0, d.CE)((0, d.$g)(T.subtotal, T.currency), t, n)
         } else null != b && (t = b.interval, n = b.intervalCount);
-        let F = (0, a.Ro)({
+        let V = (0, a.Ro)({
                 purchaseType: w || p.VVm.SUBSCRIPTION,
                 plan: b,
                 premiumSubscription: null == L ? null : L,
@@ -70,12 +70,12 @@ let E = (e, t, n, r) => {
                 planGroup: G,
                 isPrepaidPaymentSource: !1
             }),
-            V = m.intl.format(m.t.Y2Rkqc, {
-                primaryText: F,
+            F = m.intl.format(m.t.Y2Rkqc, {
+                primaryText: V,
                 paidURL: p.X7G.PAID_TERMS
             }),
             B = m.intl.format(m.t.H2uH5b, {
-                primaryText: F,
+                primaryText: V,
                 paidURL: p.X7G.PAID_TERMS
             }),
             H = "",
@@ -111,19 +111,19 @@ let E = (e, t, n, r) => {
                     throw Error("Unexpected interval: ".concat(t))
             } else if (w === p.VVm.ONE_TIME) switch (R) {
                 case p.EZt.COLLECTIBLES:
-                    Y = V, H = O ? m.intl.format(m.t.Amdf8X, {
+                    Y = F, H = O ? m.intl.format(m.t.Amdf8X, {
                         paidURL: p.X7G.PAID_TERMS
                     }) : m.intl.format(m.t["40vM4o"], {
                         paidURL: p.X7G.PAID_TERMS
                     });
                     break;
                 case p.EZt.GUILD_PRODUCT:
-                    Y = V, H = m.intl.format(m.t["GEAQ+u"], {
+                    Y = F, H = m.intl.format(m.t["GEAQ+u"], {
                         paidURL: p.X7G.PAID_TERMS
                     });
                     break;
                 case p.EZt.SOCIAL_LAYER_GAME_ITEM:
-                    Y = V;
+                    Y = F;
                     let W = U ? m.t.f6Ngwm : m.t.VCR6hI,
                         K = O || !0 === j ? W : m.t.CVITgq;
                     H = m.intl.format(K, {
@@ -132,7 +132,7 @@ let E = (e, t, n, r) => {
                     break;
                 default:
                     Y = B, H = m.intl.string(m.t["9/siSQ"])
-            } else if (null == b || O) switch (O && (Y = V), t) {
+            } else if (null == b || O) switch (O && (Y = F), t) {
                 case h.WT.MONTH:
                     H = O ? m.intl.string(m.t.IjNapk) : m.intl.string(m.t["/sGXPr"]), H = O ? m.intl.string(m.t.IjNapk) : 1 === n ? m.intl.string(m.t["/sGXPr"]) : m.intl.formatToPlainString(m.t.Fqjihk, {
                         intervalCount: n

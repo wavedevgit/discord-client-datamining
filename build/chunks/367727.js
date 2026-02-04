@@ -1,32 +1,31 @@
 /** chunk id: 367727, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    $l: () => K,
+    $l: () => W,
     D4: () => U,
     D8: () => k,
     En: () => D,
     FZ: () => L,
     G4: () => R,
-    J8: () => W,
+    J8: () => Y,
     R2: () => C,
-    Sx: () => Y,
+    Sx: () => H,
     Tg: () => v,
     Uu: () => S,
-    Vh: () => F,
+    Vh: () => V,
     X0: () => B,
-    YV: () => V,
+    YV: () => F,
     bQ: () => A,
     cN: () => j,
-    d6: () => H,
     fb: () => P,
     gG: () => N,
     iC: () => M,
     j6: () => x,
-    qr: () => z,
+    qr: () => K,
     rZ: () => w,
     rw: () => O,
     ss: () => I,
-    uh: () => q,
+    uh: () => z,
     wH: () => T
 }), n(896048);
 var r = n(311907),
@@ -226,7 +225,7 @@ function U(e, t) {
 }
 let G = new Set([i.M.ACCOUNT_LINK_INVITE_FRIENDS, i.M.POST_ACCOUNT_CONNECTION_RTC_POPOVER, i.M.ACCOUNT_LINK_PROMPT]);
 
-function F(e, t, n, r) {
+function V(e, t, n, r) {
     if ((0, h.dD)(e) || _.A.hasUserHitDCCap(e, null == t ? void 0 : t.guildId)) return;
     let o = d.A.getConfig({
         location: "requestMarkDismissibleContentAsShown"
@@ -254,8 +253,8 @@ function F(e, t, n, r) {
     }))
 }
 
-function V(e, t) {
-    ((0, h.dD)(e) || t.forceTrack) && Z(e, t), (0, p.Xw)(e)
+function F(e, t) {
+    ((0, h.dD)(e) || t.forceTrack) && q(e, t), (0, p.Xw)(e)
 }
 
 function B(e, t) {
@@ -265,39 +264,35 @@ function B(e, t) {
         groupName: null == t ? void 0 : t.groupName
     }, n)
 }
-async function H(e, t) {
-    let n = (0, E.c)(e);
-    await K(e, n, t)
-}
 
-function Y(e, t) {
+function H(e, t) {
     var n, r;
     let i = null == (r = s.A.getGuildDismissedContentState(t)) ? void 0 : r[e];
     return (null != (n = null == i ? void 0 : i.numTimesDismissed) ? n : 0) + 1
 }
 
-function W(e, t) {
+function Y(e, t) {
     var n, r;
     if (null != t.numTimesDismissed) return t.numTimesDismissed;
     let i = null == (r = s.A.settings.userContent) ? void 0 : r.recurringDismissibleContentStates[e];
     return (null != (n = null == i ? void 0 : i.numTimesDismissed) ? n : 0) + 1
 }
+async function W(e, t, n) {
+    let r = Y(e, n);
+    F(e, n), await A(e, t, r), B(e, n)
+}
 async function K(e, t, n) {
-    let r = W(e, n);
-    V(e, n), await A(e, t, r), B(e, n)
+    let r = Y(e, n);
+    F(e, n), await S(e, t, r), B(e, n)
 }
-async function z(e, t, n) {
-    let r = W(e, n);
-    V(e, n), await S(e, t, r), B(e, n)
-}
-async function q(e, t) {
-    let n = W(e, t);
-    V(e, t), await I(e, n), B(e, t)
+async function z(e, t) {
+    let n = Y(e, t);
+    F(e, t), await I(e, n), B(e, t)
 }
 
-function Z(e, t) {
+function q(e, t) {
     var n;
-    let [r] = (0, h.oF)(), a = _.A.getRenderedAtTimestamp(e), o = new Date, s = null == a ? null : o.getTime() - a, c = (null == t ? void 0 : t.guildId) != null ? Y(e, t.guildId) : W(e, null != t ? t : {});
+    let [r] = (0, h.oF)(), a = _.A.getRenderedAtTimestamp(e), o = new Date, s = null == a ? null : o.getTime() - a, c = (null == t ? void 0 : t.guildId) != null ? H(e, t.guildId) : Y(e, null != t ? t : {});
     l.default.track(b.HAw.DISMISSIBLE_CONTENT_DISMISSED, {
         type: i.M[e],
         action: null != (n = null == t ? void 0 : t.dismissAction) ? n : y.i.UNKNOWN,

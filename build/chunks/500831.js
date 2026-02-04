@@ -75,7 +75,7 @@ let H = i.memo(function() {
     }), {
         backForwardButtons: s,
         titlebarIconSize: _
-    } = (0, m.p)({
+    } = (0, m.pz)({
         location: "AppTitleBar"
     }), {
         hasBugReporterAccess: v

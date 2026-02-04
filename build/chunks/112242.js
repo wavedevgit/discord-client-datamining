@@ -64,8 +64,8 @@ function k(e) {
         handlePaymentSourceAdd: U
     } = e, {
         application: G,
-        purchaseState: F,
-        paymentSourceId: V,
+        purchaseState: V,
+        paymentSourceId: F,
         setPaymentSourceId: B,
         setHasAcceptedTerms: H,
         skusById: Y,
@@ -98,17 +98,17 @@ function k(e) {
     let es = Y[K],
         el = null == es ? void 0 : es.eligiblePaymentGateways,
         ec = W[K],
-        eu = null != V ? V : I.B,
+        eu = null != F ? F : I.B,
         ed = J.length > 0,
         ef = null != ec ? null != (t = ec[eu]) ? t : ed ? ec[I.B] : null : null;
     o()(null != es, "SKU must exist and be fetched."), o()(null != G, "Application must exist.");
     let ep = (0, c.bG)([h.A, S.A], () => S.A.inTestModeForApplication(G.id) || h.A.inDevModeForApplication(G.id), [G.id]),
         e_ = (0, c.bG)([v.A], () => v.A.enabled),
         eh = s.M.EEA_COUNTRIES.has(A.A.ipCountryCodeWithFallback),
-        em = F === R.h.PURCHASING || F === R.h.COMPLETED,
-        eg = null != (n = J.find(e => e.id === V)) ? n : null,
+        em = V === R.h.PURCHASING || V === R.h.COMPLETED,
+        eg = null != (n = J.find(e => e.id === F)) ? n : null,
         eE = null != eg ? eg.type : null,
-        ey = null != el && el.length > 0 && (V === I.B || null === eE) && X ? y.f.SELECT_PAYMENT_METHOD : void 0,
+        ey = null != el && el.length > 0 && (F === I.B || null === eE) && X ? y.f.SELECT_PAYMENT_METHOD : void 0,
         eb = es.productLine === L.EZt.SOCIAL_LAYER_GAME_ITEM,
         eO = en && !eb;
     return (0, r.jsxs)("div", {
@@ -149,7 +149,7 @@ function k(e) {
             }), (0, r.jsx)(p.A, {
                 label: x.intl.string(x.t["mmDvV+"]),
                 paymentSources: J,
-                selectedPaymentSourceId: V,
+                selectedPaymentSourceId: F,
                 onChange: k,
                 onPaymentSourceAdd: U,
                 hidePersonalInformation: e_,

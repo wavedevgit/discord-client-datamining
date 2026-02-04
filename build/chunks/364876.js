@@ -2,9 +2,9 @@
 t.d(n, {
     _: () => E
 });
-var l = t(627968);
+var r = t(627968);
 t(64700);
-var r = t(877624),
+var l = t(877624),
     i = t(311907),
     s = t(397927),
     a = t(937008),
@@ -18,7 +18,7 @@ var r = t(877624),
 function E() {
     var e;
     let n = (0, i.bG)([u.A], () => {
-            let e = u.A.getMarketingComponentByType(r.C.GIFT_CUSTOMIZATION_BANNER);
+            let e = u.A.getMarketingComponentByType(l.C.GIFT_CUSTOMIZATION_BANNER);
             return null == e || "giftCustomizationBanner" !== e.properties.properties.oneofKind ? null : e.properties.properties.giftCustomizationBanner
         }),
         {
@@ -36,18 +36,18 @@ function E() {
         j = (0, c.gc)(null != g ? g : void 0);
     null != j && (j.backgroundSize = "cover, auto", j.backgroundPosition = "right center, 0% 0%");
     let h = (0, c.x)(j, P);
-    return null == n || null == t ? null : (0, l.jsxs)("div", {
+    return null == n || null == t ? null : (0, r.jsxs)("div", {
         className: m.qD,
         style: h,
-        children: [(0, l.jsx)("div", {
+        children: [(0, r.jsx)("div", {
             className: m.my,
-            children: (0, l.jsx)(d.A, {
+            children: (0, r.jsx)(d.A, {
                 claimableRewards: t,
                 maxRewardImageSrc: null != E ? E : "",
                 size: s._3J.SIZE_40,
                 imageScaling: 1.25
             })
-        }), (0, l.jsx)(s.Text, {
+        }), (0, r.jsx)(s.Text, {
             variant: "text-md/medium",
             className: m._M,
             color: "always-white",

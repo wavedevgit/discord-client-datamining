@@ -518,17 +518,17 @@ function G(e, t) {
     return p.call(r)
 }
 
-function F(e, t) {
+function V(e, t) {
     return G(e, t)
 }
 
-function V(e, t, n) {
+function F(e, t, n) {
     if (void 0 !== n) {
         var n = new e_(eE(n)),
             r = n.localeMatcher;
         if (void 0 !== r && "lookup" !== (r = String(r)) && "best fit" !== r) throw RangeError('matcher should be "lookup" or "best fit"')
     }
-    if (void 0 === r || "best fit" === r) var i = F(e, t);
+    if (void 0 === r || "best fit" === r) var i = V(e, t);
     else var i = G(e, t);
     for (var a in i) c.call(i, a) && u(i, a, {
         writable: !1,
@@ -986,7 +986,7 @@ function ef(e) {
         n = arguments[1],
         r = this["[[availableLocales]]"],
         i = x(e);
-    return t.exp.test(t.input), V(r, i, n)
+    return t.exp.test(t.input), F(r, i, n)
 }
 
 function ep(e, t, n, r, i) {

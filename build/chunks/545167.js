@@ -1,12 +1,13 @@
 /** chunk id: 545167, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    J: () => l,
-    p: () => s
+    pz: () => l,
+    vY: () => u
 });
 var r = n(600975),
-    i = n(723702);
-let a = (0, r.C)({
+    i = n(945810),
+    a = n(723702);
+let o = (0, r.C)({
     kind: "user",
     id: "2025-08_back_forward",
     label: "Back Forward",
@@ -40,20 +41,33 @@ let a = (0, r.C)({
     }]
 });
 
-function o() {
+function s() {
     return {
         autoTrackExposure: !0,
-        disable: !(0, i.isDesktop)()
+        disable: !(0, a.isDesktop)()
     }
 }
 
-function s(e) {
-    return a.useExperiment(e, o())
-}
-
 function l(e) {
+    return o.useExperiment(e, s())
+}
+let c = (0, i.mj)({
+    name: "2026-02-bf-browser",
+    kind: "user",
+    defaultConfig: {
+        allowEnhancedNav: !0
+    },
+    variations: {
+        1: {
+            allowEnhancedNav: !1
+        }
+    }
+});
+
+function u(e) {
+    if (!(0, a.isDesktop)()) return !1;
     let {
-        backForwardButtons: t
-    } = a.getCurrentConfig(e, o());
+        allowEnhancedNav: t
+    } = c.getConfig(e);
     return t
 }

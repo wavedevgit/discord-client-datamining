@@ -17,7 +17,7 @@ n.d(t, {
     FP: () => ey,
     Fs: () => eA,
     GQ: () => th,
-    GZ: () => F,
+    GZ: () => V,
     Gu: () => tM,
     HB: () => e7,
     HS: () => eb,
@@ -27,7 +27,7 @@ n.d(t, {
     LM: () => tE,
     M2: () => ej,
     Mo: () => eO,
-    N8: () => tF,
+    N8: () => tV,
     ND: () => ec,
     NG: () => e3,
     NJ: () => e5,
@@ -54,7 +54,7 @@ n.d(t, {
     Tp: () => tg,
     U8: () => tk,
     Ux: () => el,
-    Vr: () => eF,
+    Vr: () => eV,
     Xb: () => ef,
     Xc: () => ea,
     Y6: () => t_,
@@ -83,7 +83,7 @@ n.d(t, {
     gM: () => X,
     gR: () => e_,
     gx: () => tC,
-    hI: () => eV,
+    hI: () => eF,
     he: () => eH,
     iA: () => e8,
     ii: () => tc,
@@ -100,7 +100,7 @@ n.d(t, {
     o: () => eu,
     p8: () => e4,
     pD: () => ez,
-    qN: () => tV,
+    qN: () => tF,
     qv: () => tx,
     rf: () => T,
     rk: () => tr,
@@ -368,7 +368,7 @@ let G = "u" < typeof FinalizationRegistry ? {
     register: () => {},
     unregister: () => {}
 } : new FinalizationRegistry(e => r.__wbg_fluxapi_free(e >>> 0, 1));
-class F {
+class V {
     __destroy_into_raw() {
         let e = this.__wbg_ptr;
         return this.__wbg_ptr = 0, G.unregister(this), e
@@ -403,14 +403,14 @@ class F {
         return this.__wbg_ptr = e >>> 0, G.register(this, this.__wbg_ptr, this), this
     }
 }
-let V = "u" < typeof FinalizationRegistry ? {
+let F = "u" < typeof FinalizationRegistry ? {
     register: () => {},
     unregister: () => {}
 } : new FinalizationRegistry(e => r.__wbg_intounderlyingbytesource_free(e >>> 0, 1));
 class B {
     __destroy_into_raw() {
         let e = this.__wbg_ptr;
-        return this.__wbg_ptr = 0, V.unregister(this), e
+        return this.__wbg_ptr = 0, F.unregister(this), e
     }
     free() {
         let e = this.__destroy_into_raw();
@@ -761,11 +761,11 @@ function eG() {
     }, arguments)
 }
 
-function eF(e, t) {
+function eV(e, t) {
     return Function(_(e, t))
 }
 
-function eV(e, t, n) {
+function eF(e, t, n) {
     return new Uint8Array(e, t >>> 0, n >>> 0)
 }
 
@@ -1052,11 +1052,11 @@ function tG(e, t) {
     f().setFloat64(e + 8, g(r) ? 0 : r, !0), f().setInt32(e + 0, !g(r), !0)
 }
 
-function tF(e) {
+function tV(e) {
     return e
 }
 
-function tV(e, t) {
+function tF(e, t) {
     let n = t,
         i = "string" == typeof n ? n : void 0;
     var o = g(i) ? 0 : u(i, r.__wbindgen_malloc, r.__wbindgen_realloc),

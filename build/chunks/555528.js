@@ -477,7 +477,7 @@ function R(e, t) {
     let r = n.findIndex(e => e.id === t);
     if (r === n.length - 1) return !1;
     n.push(n.splice(r, 1)[0]);
-    for (let e = 0; e < n.length; e++) V(n[e], e);
+    for (let e = 0; e < n.length; e++) F(n[e], e);
     return !0
 }
 
@@ -597,7 +597,7 @@ function G(e) {
     })
 }
 
-function F(e) {
+function V(e) {
     let {
         widgetType: t,
         defaultConfig: n
@@ -605,7 +605,7 @@ function F(e) {
     I[t] = E({}, I[t], n)
 }
 
-function V(e, t) {
+function F(e, t) {
     i = b(E({}, i), {
         [e.id]: e.set("zIndex", t)
     })
@@ -880,5 +880,5 @@ let q = new z(d.h, {
     LAYOUT_CREATE_WIDGETS: G,
     LAYOUT_SET_WIDGET_META: P,
     LAYOUT_SHOW_OVERLAY_EXTRAS_HINT: j,
-    LAYOUT_SET_DEFAULT_CONFIG: F
+    LAYOUT_SET_DEFAULT_CONFIG: V
 })

@@ -76,11 +76,11 @@ let m = "x-science-test",
     U = null,
     G = null;
 
-function F() {
+function V() {
     C = 0, N = 0, w = 0, D = 0, L = Number.MAX_SAFE_INTEGER, x = 0, M = 0, P = Date.now(), R = T
 }
 
-function V(e) {
+function F(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1;
     return e + t
 }
@@ -90,7 +90,8 @@ let B = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         handleConnectionOpen: () => {},
         handleConnectionClosed: () => {},
         handleFingerprint: () => {},
-        handleTrack: () => {}
+        handleTrack: () => {},
+        handleSetAnalyticsToken: () => {}
     },
     W = [],
     K = null,
@@ -134,17 +135,17 @@ let B = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         function $() {
             if (K = null, !X()) return Promise.resolve();
             let e = W.slice();
-            W = [], D = V(D);
+            W = [], D = F(D);
             let t = e.length;
-            L = Math.min(L, t), x = Math.max(x, t), M = V(M, t);
+            L = Math.min(L, t), x = Math.max(x, t), M = F(M, t);
             let n = ee(e);
             return n.then(() => {
                 e.forEach(e => {
                     var t;
                     null == (t = e.resolve) || t.call(e)
-                }), N = V(N)
+                }), N = F(N)
             }, t => {
-                W.unshift(...e), w = V(w);
+                W.unshift(...e), w = F(w);
                 let {
                     message: n
                 } = t.body || t;
@@ -200,7 +201,7 @@ let B = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
                     launch_signature: Z()
                 }
             };
-            return F(), ee([e], d.mX.CLIENT_TELEMETRY)
+            return V(), ee([e], d.mX.CLIENT_TELEMETRY)
         }
 
         function en() {
@@ -275,7 +276,7 @@ let B = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
                 }, l = Q(s);
                 if (null != l && (s.properties.client_uuid = H.generate(l)), W.push(s), W.length > E) {
                     let e = W.length - E;
-                    C = V(C, e), W = W.slice(-E)
+                    C = F(C, e), W = W.slice(-E)
                 }
                 r ? J({
                     shouldFlushOnNextTick: !0
@@ -283,6 +284,14 @@ let B = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
                     shouldFlushOnNextTick: !1
                 })
             }), !1
+        }, Y.handleSetAnalyticsToken = function(e) {
+            let {
+                analyticsToken: t,
+                userId: n
+            } = e;
+            return null == r && null != t && (r = t, i = n, J({
+                shouldFlushOnNextTick: !1
+            })), !1
         };
         class ea extends(t = l.Ay.Store) {
             initialize() {

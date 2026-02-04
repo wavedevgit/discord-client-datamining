@@ -1,7 +1,7 @@
 /** chunk id: 729551, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => V
+    A: () => F
 }), n(321073), n(733351);
 var r = n(627968),
     i = n(64700),
@@ -115,7 +115,7 @@ function G(e) {
     })
 }
 
-function F(e) {
+function V(e) {
     let {
         textVariant: t,
         className: n
@@ -127,7 +127,7 @@ function F(e) {
     })
 }
 
-function V(e) {
+function F(e) {
     let {
         user: t,
         activities: n,
@@ -143,7 +143,7 @@ function V(e) {
     } = e;
     (0, f.A)(null == t ? void 0 : t.id);
     let k = (null == a ? void 0 : a.discoverable) !== !1 ? a : null,
-        V = (0, _.AO)(k),
+        F = (0, _.AO)(k),
         B = (0, m.v)("ActivityStatus", l),
         H = i.useMemo(() => {
             var e, t;
@@ -168,10 +168,10 @@ function V(e) {
                     type: t,
                     name: n
                 } = e;
-                return t !== w.$pd.CUSTOM_STATUS && t !== w.$pd.HANG_STATUS && n !== (null == V ? void 0 : V.name)
+                return t !== w.$pd.CUSTOM_STATUS && t !== w.$pd.HANG_STATUS && n !== (null == F ? void 0 : F.name)
             })) ? e : [], (e, t) => null != e.application_id && null != t.application_id && e.application_id === t.application_id || null != e.name && null != t.name && e.name === t.name)
-        }, [n, null == V ? void 0 : V.name]),
-        Z = null == n ? void 0 : n.find(e => e.name === (null == V ? void 0 : V.name)),
+        }, [n, null == F ? void 0 : F.name]),
+        Z = null == n ? void 0 : n.find(e => e.name === (null == F ? void 0 : F.name)),
         Q = (null == t ? void 0 : t.bot) === !0,
         X = (0, c.bG)([O.A], () => O.A.isBlockedOrIgnored(null == t ? void 0 : t.id)),
         J = (null == H ? void 0 : H.state) != null,
@@ -291,13 +291,13 @@ function V(e) {
         });
     return null != W ? (0, r.jsxs)("div", {
         className: ec,
-        children: [ed(), et > 0 && (0, r.jsx)(F, {
+        children: [ed(), et > 0 && (0, r.jsx)(V, {
             textVariant: "text-".concat(A, "/normal"),
             className: p
         }), el(), D && (0, r.jsx)(I.A, {})]
     }) : (0, r.jsxs)("div", {
         className: ec,
-        children: [el(), (null != H || null != z) && et > 0 && (0, r.jsx)(F, {
+        children: [el(), (null != H || null != z) && et > 0 && (0, r.jsx)(V, {
             textVariant: "text-".concat(A, "/normal"),
             className: p
         }), eu(), D && (0, r.jsx)(I.A, {})]

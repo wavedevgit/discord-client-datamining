@@ -1,7 +1,7 @@
 /** chunk id: 332408, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => V
+    A: () => F
 }), n(896048), n(801541);
 var r = n(627968),
     i = n(64700),
@@ -103,7 +103,7 @@ let k = () => (0, r.jsx)("div", {
             fullWidth: !0
         })
     },
-    F = e => {
+    V = e => {
         let {
             markAsDismissed: t,
             isCoachmark: n
@@ -147,7 +147,7 @@ let k = () => (0, r.jsx)("div", {
         })
     };
 
-function V(e) {
+function F(e) {
     let {
         markAsDismissed: t,
         showClientThemesCoachmark: n
@@ -190,7 +190,7 @@ function V(e) {
                             isCoachmark: n
                         })]
                     })
-                }), (0, r.jsx)(F, {
+                }), (0, r.jsx)(V, {
                     markAsDismissed: t,
                     isCoachmark: n
                 })]

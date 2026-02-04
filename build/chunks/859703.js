@@ -11,8 +11,8 @@ var D, L = n(735438),
     k = n(73153),
     U = n(927813),
     G = n(341915),
-    F = n(405670),
-    V = n(302654),
+    V = n(405670),
+    F = n(302654),
     B = n(943849),
     H = n(710969),
     Y = n(229006),
@@ -330,14 +330,14 @@ function eG(e) {
     }), ek(t.questId)
 }
 
-function eF(e) {
+function eV(e) {
     let {
         questId: t
     } = e;
     ek(t)
 }
 
-function eV(e) {
+function eF(e) {
     let {
         streamKey: t
     } = e;
@@ -369,7 +369,7 @@ function eH(e) {
     } = e;
     es(t.questId, {
         userStatus: t
-    }), null == t.claimedAt && (O = new Map(O)).delete(t.questId), null == t.enrolledAt && ((S = new Map(S)).delete(t.questId), F.Ay.getState().resetQuest(t.questId));
+    }), null == t.claimedAt && (O = new Map(O)).delete(t.questId), null == t.enrolledAt && ((S = new Map(S)).delete(t.questId), V.Ay.getState().resetQuest(t.questId));
     let n = u.get(t.questId);
     if (null != n) {
         let e = (0, H.Ic)(n);
@@ -406,7 +406,7 @@ function ez(e) {
     let {
         questId: t
     } = e;
-    X.has(t) && X.delete(t), F.Ay.getState().resetQuest(t)
+    X.has(t) && X.delete(t), V.Ay.getState().resetQuest(t)
 }
 
 function eq(e) {
@@ -425,7 +425,7 @@ function eq(e) {
     _ = Date.now(), i = !1, (a = new Map(a)).set(n, !1);
     let {
         enableNewRequestBehavior: p
-    } = V.A.getConfig({
+    } = F.A.getConfig({
         location: "handleFetchQuestToDeliverSuccess"
     });
     if (p) {
@@ -686,10 +686,10 @@ let e9 = new e8(k.h, {
         QUESTS_CLAIM_REWARD_FAILURE: ej,
         QUESTS_DISMISS_CONTENT_BEGIN: eU,
         QUESTS_DISMISS_CONTENT_SUCCESS: eG,
-        QUESTS_DISMISS_CONTENT_FAILURE: eF,
+        QUESTS_DISMISS_CONTENT_FAILURE: eV,
         QUESTS_USER_STATUS_UPDATE: eB,
         STREAM_CLOSE: eT,
-        QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: eV,
+        QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: eF,
         QUESTS_PREVIEW_UPDATE_SUCCESS: eH,
         QUESTS_DELIVERY_OVERRIDE: eY,
         QUESTS_SELECT_TASK_PLATFORM: eW,

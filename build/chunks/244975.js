@@ -76,8 +76,8 @@ function D(e) {
         context: k,
         glowUp: U,
         modalClassName: G,
-        modalContentClassName: F,
-        artContainerClassName: V,
+        modalContentClassName: V,
+        artContainerClassName: F,
         artClassName: B,
         headerClassName: H,
         bodyClassName: Y,
@@ -178,7 +178,7 @@ function D(e) {
                 }
             })
         },
-        eC = et ? o()(C.JS, C.OV, V) : o()(C.JS, V),
+        eC = et ? o()(C.JS, C.OV, F) : o()(C.JS, F),
         eN = null;
     return null != eh.artURL ? eN = (0, r.jsx)("img", {
         className: o()(B, C.Qw),
@@ -200,7 +200,7 @@ function D(e) {
         }), (0, r.jsx)(c.$mQ, {
             "data-migration-pending": !0,
             scrollbarType: "none",
-            className: o()(eo ? C.es : C.Qs, !ey && F),
+            className: o()(eo ? C.es : C.Qs, !ey && V),
             children: er ? (0, r.jsx)(c.y$y, {}) : ey ? (0, r.jsx)(v.Ay, {
                 onClose: K,
                 type: D,

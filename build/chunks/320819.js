@@ -48,7 +48,7 @@ function P(e) {
     } = (0, i.cf)([l.A], () => ({
         relationshipType: l.A.getRelationshipType(t.id),
         originApplicationId: l.A.getOriginApplicationId(t.id)
-    })), F = (0, o.fi)(t.id), V = (0, i.bG)([c.A], () => c.A.hidePersonalInformation), B = t.id === n.id, H = (null == P ? void 0 : P.widgets) != null && P.widgets.length > 0, Y = (0, d.TW)(n);
+    })), V = (0, o.fi)(t.id), F = (0, i.bG)([c.A], () => c.A.hidePersonalInformation), B = t.id === n.id, H = (null == P ? void 0 : P.widgets) != null && P.widgets.length > 0, Y = (0, d.TW)(n);
     return (0, r.jsxs)(a.HOs, {
         fade: !0,
         className: R.rf,
@@ -70,7 +70,7 @@ function P(e) {
                 themeType: N.d.POPOUT,
                 onClose: j
             }),
-            nicknameIcons: V ? null : (0, r.jsx)(v.A, {
+            nicknameIcons: F ? null : (0, r.jsx)(v.A, {
                 userId: t.id,
                 isVisible: L,
                 onOpenProfile: x
@@ -82,7 +82,7 @@ function P(e) {
                 channelId: M,
                 applicationId: G
             })
-        }), F.map(e => (0, r.jsx)(b.A.Overlay, {
+        }), V.map(e => (0, r.jsx)(b.A.Overlay, {
             children: (0, r.jsx)(h.A, {
                 user: t,
                 isGameRelationship: !0,
@@ -112,7 +112,7 @@ function P(e) {
         }) : (0, r.jsx)(A.A, {
             user: t,
             bio: null == P ? void 0 : P.bio,
-            hidePersonalInformation: V,
+            hidePersonalInformation: F,
             onClose: j
         }), H && (0, r.jsx)(y.A, {
             user: t,

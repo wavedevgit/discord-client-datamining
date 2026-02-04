@@ -79,8 +79,8 @@ if (j && !k) {
     U = parseInt(e) > 10 || parseInt(t) >= 15063
 }
 let G = new d.A("NotificationUtils"),
-    F = j && U || "Chrome" === s().name && 47 > parseFloat(s().version) || "Firefox" === s().name && 52 > parseFloat(s().version);
-async function V() {
+    V = j && U || "Chrome" === s().name && 47 > parseFloat(s().version) || "Firefox" === s().name && 52 > parseFloat(s().version);
+async function F() {
     if (null === c.A || void 0 === c.A ? void 0 : c.A.features.supports("notifications")) try {
         return await R.Ay.invoke("NOTIFICATIONS_GET_SETTINGS")
     } catch (e) {
@@ -101,7 +101,7 @@ function H(e) {
     return null
 }
 async function Y() {
-    let e = await V();
+    let e = await F();
     return (null == e ? void 0 : e.authorizationStatus) === "authorized" && (null == e ? void 0 : e.sound) === !0
 }
 
@@ -199,7 +199,7 @@ function X(e) {
 }
 async function J() {
     if (null === c.A || void 0 === c.A ? void 0 : c.A.features.supports("notifications")) {
-        let e = await V();
+        let e = await F();
         return (null == e ? void 0 : e.authorizationStatus) === "authorized" || (null == e ? void 0 : e.authorizationStatus) === "provisional"
     }
     return null != Z && "granted" === Z.permission
@@ -207,7 +207,7 @@ async function J() {
 async function $() {
     if (null === c.A || void 0 === c.A ? void 0 : c.A.features.supports("notifications")) {
         var e;
-        return (null == (e = await V()) ? void 0 : e.authorizationStatus) !== "undetermined"
+        return (null == (e = await F()) ? void 0 : e.authorizationStatus) !== "undetermined"
     }
     return null != Z && "default" !== Z.permission
 }
@@ -219,7 +219,7 @@ function ee(e) {
 }
 async function et(e, t, n, r, i) {
     var a, o, s, c, d, f, g;
-    let E, y = await V(),
+    let E, y = await F(),
         D = (null == y ? void 0 : y.authorizationStatus) === "authorized" || (null == y ? void 0 : y.authorizationStatus) === "provisional",
         x = null != y ? D : await J(),
         k = D,
@@ -247,7 +247,7 @@ async function et(e, t, n, r, i) {
             var n;
             null == (n = i.onShown) || n.call(i), i.omitViewTracking || (T.default.track(P.HAw.NOTIFICATION_ACTION, L({
                 action: "VIEW"
-            }, t)), T.default.track(P.HAw.NOTIFICATION_VIEWED, q)), F && setTimeout(() => e.close(), 5e3)
+            }, t)), T.default.track(P.HAw.NOTIFICATION_VIEWED, q)), V && setTimeout(() => e.close(), 5e3)
         };
     if (null == i.sound || $ || (ee(i.sound, null != (s = i.volume) ? s : 1, i.soundpack), r.ping = !0), i.isUserAvatar && null != e && (e = await (0, m.w)(e)), j && v.A.taskbarFlash && R.Ay.flashFrame(!0), k) {
         let a = {

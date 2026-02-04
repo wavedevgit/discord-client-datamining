@@ -232,8 +232,8 @@ function M(e) {
         }, [U, o.id]);
     if (k === b._.NONE) return null;
     let {
-        IconComponent: F,
-        backgroundDarkColor: V,
+        IconComponent: V,
+        backgroundDarkColor: F,
         backgroundLightColor: B,
         foregroundDarkColor: H,
         foregroundLightColor: Y,
@@ -241,10 +241,10 @@ function M(e) {
         premiumForegroundColor: K,
         sizeAdjustment: z
     } = D[k];
-    if (null == F) return null;
+    if (null == V) return null;
     j.premium && (n = K, a = W);
     let q = (0, c.Mw)(M) ? H : Y,
-        Z = (0, c.Mw)(M) ? V : B;
+        Z = (0, c.Mw)(M) ? F : B;
     n = null != n ? n : q, a = null != a ? a : Z;
     let Q = Math.floor(.75 * P) - (null != z ? z : 0);
     return (0, r.jsx)(u.STz, {
@@ -266,7 +266,7 @@ function M(e) {
                 color: null != a ? a : I,
                 stroke: v,
                 size: P,
-                children: (0, r.jsx)(F, {
+                children: (0, r.jsx)(V, {
                     size: "custom",
                     width: Q,
                     height: Q,

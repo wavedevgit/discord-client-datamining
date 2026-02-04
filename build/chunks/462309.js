@@ -70,7 +70,7 @@ function T(e) {
         isGift: M,
         selectedGiftStyle: j,
         giftRecipient: k
-    } = (0, m.Pv)(), U = (null == w ? void 0 : w.productLine) === y.EZt.COLLECTIBLES, G = (null == w ? void 0 : w.productLine) === y.EZt.SOCIAL_LAYER_GAME_ITEM, F = M && (0, h.Ik)(k) && A === E.pn.CONFIRM && null != j && !U && !G, V = null != t && null != A, B = [E.pn.SKU_SELECT, E.pn.SELECT_FREE_SKU], H = null != A && !B.includes(A) && null != a, {
+    } = (0, m.Pv)(), U = (null == w ? void 0 : w.productLine) === y.EZt.COLLECTIBLES, G = (null == w ? void 0 : w.productLine) === y.EZt.SOCIAL_LAYER_GAME_ITEM, V = M && (0, h.Ik)(k) && A === E.pn.CONFIRM && null != j && !U && !G, F = null != t && null != A, B = [E.pn.SKU_SELECT, E.pn.SELECT_FREE_SKU], H = null != A && !B.includes(A) && null != a, {
         enabled: Y
     } = (0, l.T0)({
         location: "PaymentModalHeader"
@@ -86,7 +86,7 @@ function T(e) {
             return (0, r.jsx)(u.s3, I({}, e))
         }
         let e = null;
-        return F ? e = (0, r.jsxs)("div", {
+        return V ? e = (0, r.jsxs)("div", {
             className: v.kL,
             children: [(0, r.jsx)(f.A, {
                 defaultAnimationState: d.oA.LOOP,
@@ -97,7 +97,7 @@ function T(e) {
                 className: v.b,
                 "data-migration-pending": !0
             })]
-        }) : V ? e = t(null != T ? T : null, n, A) : N === O.VV.ONE_TIME ? e = (0, r.jsx)(_.fs, {
+        }) : F ? e = t(null != T ? T : null, n, A) : N === O.VV.ONE_TIME ? e = (0, r.jsx)(_.fs, {
             step: A,
             onClose: n
         }) : H && (o()(S(a, b.WN), "invalid sku id: ".concat(a)), e = (0, r.jsx)(p.A, {
@@ -114,5 +114,5 @@ function T(e) {
             isDisplayingWowMomentConfirmation: P,
             isPremiumGroupPurchase: D
         })), e
-    }, [Y, j, n, C, t, T, w, a, A, L, x, F, H, V, N, M, k, R, P, D])
+    }, [Y, j, n, C, t, T, w, a, A, L, x, V, H, F, N, M, k, R, P, D])
 }

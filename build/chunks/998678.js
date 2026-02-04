@@ -41,8 +41,8 @@ var r = n(627968),
     k = n(825755),
     U = n(153084),
     G = n(295405),
-    F = n(293700),
-    V = n(67480),
+    V = n(293700),
+    F = n(67480),
     B = n(723702),
     H = n(71532),
     Y = n(427262),
@@ -243,7 +243,7 @@ function eO(e) {
             breadcrumpSteps: C,
             currentBreadcrumpStep: j,
             header: U,
-            analyticsData: F,
+            analyticsData: V,
             analyticsLocation: W,
             hideBreadcrumbs: q = !1,
             usePaymentModalStep: X = !1,
@@ -293,7 +293,7 @@ function eO(e) {
                 }
         }
     }
-    let [ej, ek] = i.useState(eA), [eU, eG] = i.useState(null), [eF, eV] = i.useState(eM(eA)), eB = (0, l.bG)([k.A], () => k.A.redirectedPaymentSourceId), eH = (0, l.bG)([Q.A], () => Q.A.cashAppPayComponent), eY = {
+    let [ej, ek] = i.useState(eA), [eU, eG] = i.useState(null), [eV, eF] = i.useState(eM(eA)), eB = (0, l.bG)([k.A], () => k.A.redirectedPaymentSourceId), eH = (0, l.bG)([Q.A], () => Q.A.cashAppPayComponent), eY = {
         completeSteps: tu,
         setIsSubmittingCurrentStep: h.setIsSubmittingCurrentStep
     }, eW = i.useRef(eY);
@@ -346,7 +346,7 @@ function eO(e) {
         p24BankState: ti,
         setP24BankState: ta,
         selectedSkuId: to
-    } = h, ts = null != to ? to : "", tl = (0, l.bG)([V.A], () => V.A.get(ts), [ts]), tc = null == tl || null == (t = tl.eligiblePaymentGateways) ? void 0 : t.map(e => e.valueOf());
+    } = h, ts = null != to ? to : "", tl = (0, l.bG)([F.A], () => F.A.get(ts), [ts]), tc = null == tl || null == (t = tl.eligiblePaymentGateways) ? void 0 : t.map(e => e.valueOf());
 
     function tu(e) {
         eQ(e.id), ez(e)
@@ -391,28 +391,28 @@ function eO(e) {
             let tN = (e, t) => {
                     switch (e) {
                         case J.he.CARD:
-                            ei ? eK(w.pn.AWAITING_BROWSER_CHECKOUT) : (eV(eS), eK(w.pn.CREDIT_CARD_INFORMATION));
+                            ei ? eK(w.pn.AWAITING_BROWSER_CHECKOUT) : (eF(eS), eK(w.pn.CREDIT_CARD_INFORMATION));
                             break;
                         case J.he.PAYPAL:
-                            eV(eT), eK(w.pn.PAYPAL_INFORMATION);
+                            eF(eT), eK(w.pn.PAYPAL_INFORMATION);
                             break;
                         case J.he.VENMO:
-                            eV(ew), eK(w.pn.VENMO_INFORMATION);
+                            eF(ew), eK(w.pn.VENMO_INFORMATION);
                             break;
                         case J.he.PAYMENT_REQUEST:
-                            ei && "googlePay" === t ? eK(w.pn.AWAITING_BROWSER_CHECKOUT_GOOGLE_PAY) : ei && "applePay" === t ? eK(w.pn.AWAITING_BROWSER_CHECKOUT_APPLE_PAY) : (eV(eN), eK(w.pn.PAYMENT_REQUEST_INFORMATION));
+                            ei && "googlePay" === t ? eK(w.pn.AWAITING_BROWSER_CHECKOUT_GOOGLE_PAY) : ei && "applePay" === t ? eK(w.pn.AWAITING_BROWSER_CHECKOUT_APPLE_PAY) : (eF(eN), eK(w.pn.PAYMENT_REQUEST_INFORMATION));
                             break;
                         case J.he.PRZELEWY24:
-                            eV(eP), eK(w.pn.PRZELEWY24_INFORMATION);
+                            eF(eP), eK(w.pn.PRZELEWY24_INFORMATION);
                             break;
                         case J.he.EPS:
-                            eV(eD), eK(w.pn.EPS_INFORMATION);
+                            eF(eD), eK(w.pn.EPS_INFORMATION);
                             break;
                         case J.he.IDEAL:
-                            eV(eC), eK(w.pn.IDEAL_INFORMATION);
+                            eF(eC), eK(w.pn.IDEAL_INFORMATION);
                             break;
                         case J.he.CASH_APP:
-                            eV(eL), eK(w.pn.CASH_APP_INFORMATION);
+                            eF(eL), eK(w.pn.CASH_APP_INFORMATION);
                             break;
                         case J.he.GIROPAY:
                         case J.he.PAYSAFE_CARD:
@@ -422,7 +422,7 @@ function eO(e) {
                         case J.he.KAKAOPAY:
                         case J.he.GOPAY_WALLET:
                         case J.he.BANCONTACT:
-                            eV({
+                            eF({
                                 steps: [...g, ...K.GC, ...E],
                                 methodType: e
                             }), eK(w.pn.ADDRESS)
@@ -432,10 +432,10 @@ function eO(e) {
                 tw = (e, t) => {
                     e3(e => ea(er({}, e), {
                         info: t
-                    })), eV(eN), tu(e)
+                    })), eF(eN), tu(e)
                 };
             const tR = () => {
-                eV(eR), eK(w.pn.PAYMENT_TYPE)
+                eF(eR), eK(w.pn.PAYMENT_TYPE)
             };
             let tP = async (e, t) => {
                 if ((0, p.mf)(e), null == e) return void tR();
@@ -502,7 +502,7 @@ function eO(e) {
                         steps: e,
                         methodType: t
                     } = ex[tE];
-                    if (eV({
+                    if (eF({
                             steps: e,
                             methodType: t === J.he.UNKNOWN ? tE : t
                         }), tE === J.he.PAYMENT_REQUEST) {
@@ -591,10 +591,10 @@ function eO(e) {
         case w.pn.AWAITING_BROWSER_CHECKOUT_GOOGLE_PAY:
         case w.pn.AWAITING_BROWSER_CHECKOUT_APPLE_PAY:
             let tj = () => {
-                    eV(eS), eK(ev ? w.pn.PAYMENT_ELEMENT : w.pn.CREDIT_CARD_INFORMATION)
+                    eF(eS), eK(ev ? w.pn.PAYMENT_ELEMENT : w.pn.CREDIT_CARD_INFORMATION)
                 },
                 tk = () => {
-                    ev ? (tb(), null == y || y()) : (eV(eR), eK(w.pn.PAYMENT_TYPE))
+                    ev ? (tb(), null == y || y()) : (eF(eR), eK(w.pn.PAYMENT_TYPE))
                 };
             n = (0, r.jsx)("div", {
                 className: ee.rf,
@@ -679,14 +679,14 @@ function eO(e) {
             });
             break;
         case w.pn.PAYPAL_INFORMATION:
-            let tF = 0 !== e7.length && null != e8;
+            let tV = 0 !== e7.length && null != e8;
             n = (0, r.jsx)(ep, {});
-            let tV = tC(J.he.PAYPAL, tE);
+            let tF = tC(J.he.PAYPAL, tE);
             o = (0, r.jsx)(eb, {
-                onBack: tV,
+                onBack: tF,
                 primaryCTA: P.A.CTAType.CONTINUE,
-                primaryText: tF ? $.intl.string($.t.PDTjLN) : $.intl.string($.t.Djzd7L),
-                onPrimary: () => tF ? eK(w.pn.ADDRESS) : (0, f.$e)()
+                primaryText: tV ? $.intl.string($.t.PDTjLN) : $.intl.string($.t.Djzd7L),
+                onPrimary: () => tV ? eK(w.pn.ADDRESS) : (0, f.$e)()
             });
             break;
         case w.pn.VENMO_INFORMATION:
@@ -722,7 +722,7 @@ function eO(e) {
             let tz = ev && null != tE,
                 tq = async () => {
                     e6(!0);
-                    let e = tz ? tE : eF.methodType,
+                    let e = tz ? tE : eV.methodType,
                         t = [eu, tO.current, {
                             billingAddress: e2.info,
                             paymentSourceType: null != e ? e : J.he.UNKNOWN,
@@ -820,7 +820,7 @@ function eO(e) {
                     }
                     e4 || e6(!1)
                 };
-            switch (eF.methodType) {
+            switch (eV.methodType) {
                 case J.he.CARD:
                     _ = w.pn.CREDIT_CARD_INFORMATION, u = J.he.CARD;
                     break;
@@ -840,7 +840,7 @@ function eO(e) {
                 case J.he.KAKAOPAY:
                 case J.he.GOPAY_WALLET:
                 case J.he.BANCONTACT:
-                    _ = w.pn.PAYMENT_TYPE, u = eF.methodType;
+                    _ = w.pn.PAYMENT_TYPE, u = eV.methodType;
                     break;
                 case J.he.EPS:
                     _ = w.pn.EPS_INFORMATION, u = J.he.EPS;
@@ -890,7 +890,7 @@ function eO(e) {
             fillParent: !0,
             overrideKey: tQ,
             step: ej,
-            steps: eF.steps,
+            steps: eV.steps,
             sideMargin: 20,
             children: [null != eU && (0, r.jsx)("div", {
                 className: ee.Ns,
@@ -900,10 +900,10 @@ function eO(e) {
                 })
             }), tZ && (0, r.jsx)(T.e4, {
                 step: ej,
-                analyticsContext: null != F ? {
+                analyticsContext: null != V ? {
                     activitySessionId: eO,
                     contextMetadata: ey,
-                    analyticsData: F
+                    analyticsData: V
                 } : void 0,
                 paymentElementSelectedType: tE,
                 elementsRef: tO,
@@ -929,7 +929,7 @@ function eO(e) {
             children: tJ
         })]
     }) : (0, r.jsx)(z.A, {
-        steps: null != C ? C : eF.steps,
+        steps: null != C ? C : eV.steps,
         currentStep: null != j ? j : ej,
         overrideKey: tQ,
         paymentError: h.paymentError,
@@ -978,7 +978,7 @@ function ev(e) {
             u.h.unsubscribe("BRAINTREE_TOKENIZE_PAYPAL_SUCCESS", e), (0, p.ET)()
         }
     }, []);
-    let [R, P] = i.useState(!1), [D, L] = i.useState(!1), [x, M] = i.useState(null), j = i.useRef(null), V = (0, l.bG)([U.A], () => U.A.isAwaitingAuthentication), [B, H] = (0, l.yK)([F.A], () => [F.A.purchaseTokenAuthState, F.A.purchaseTokenHash]);
+    let [R, P] = i.useState(!1), [D, L] = i.useState(!1), [x, M] = i.useState(null), j = i.useRef(null), F = (0, l.bG)([U.A], () => U.A.isAwaitingAuthentication), [B, H] = (0, l.yK)([V.A], () => [V.A.purchaseTokenAuthState, V.A.purchaseTokenHash]);
     return i.useEffect(() => {
         null != x && null != j.current && j.current.scrollIntoView({
             behavior: "smooth"
@@ -1007,7 +1007,7 @@ function ev(e) {
         purchaseError: x,
         setPurchaseError: M,
         purchaseErrorBlockRef: j,
-        isAuthenticating: V,
+        isAuthenticating: F,
         purchaseTokenAuthState: B,
         purchaseTokenHash: H,
         epsBankState: E,

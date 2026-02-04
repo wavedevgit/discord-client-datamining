@@ -115,8 +115,8 @@ let G = a.Ay.connectStores([b.A, s.Ay, C.A, O.A, I.A, T.A, S.A, f.A, v.Ay, _.A],
         j = null != x && !(0, u.A)(M, I.A, T.A),
         U = s.Ay.getActivityPanelMode(),
         G = j && U === R.Gd.PANEL,
-        F = null != x && null != M && (null == (n = f.A.getSelectedParticipant(M)) ? void 0 : n.type) === P.lp.ACTIVITY,
-        V = _.A.getConnectedFrame(),
+        V = null != x && null != M && (null == (n = f.A.getSelectedParticipant(M)) ? void 0 : n.type) === P.lp.ACTIVITY,
+        F = _.A.getConnectedFrame(),
         B = _.A.getFrameLayoutMode() === D.y.FOCUSED,
         H = null != g,
         Y = H ? b.A.getWindow(g) : null,
@@ -133,7 +133,7 @@ let G = a.Ay.connectStores([b.A, s.Ay, C.A, O.A, I.A, T.A, S.A, f.A, v.Ay, _.A],
         }) ? e - (0, p.LI)({
             isPopoutWindow: H
         }) : e;
-    m = null != x && L || H && j || H && null != V ? null : H || !A || j || null != V ? null != x && G ? null != (r = S.A.pipActivityWindow) ? r : S.A.pipVideoWindow : null != V && B ? null != (i = null != (a = S.A.pipFrameWindow) ? a : S.A.pipVideoWindow) ? i : S.A.pipActivityWindow : null != (o = null != (d = null != (h = S.A.pipHavenWindow) ? h : S.A.pipVideoWindow) ? d : S.A.pipActivityWindow) ? o : S.A.pipFrameWindow : null;
+    m = null != x && L || H && j || H && null != F ? null : H || !A || j || null != F ? null != x && G ? null != (r = S.A.pipActivityWindow) ? r : S.A.pipVideoWindow : null != F && B ? null != (i = null != (a = S.A.pipFrameWindow) ? a : S.A.pipVideoWindow) ? i : S.A.pipActivityWindow : null != (o = null != (d = null != (h = S.A.pipHavenWindow) ? h : S.A.pipVideoWindow) ? d : S.A.pipActivityWindow) ? o : S.A.pipFrameWindow : null;
     let Z = Array.from(S.A.pipWindows.values()),
         Q = S.A.pipWidth(P.R8.VIDEO),
         X = Z.find(e => e.component === w.o1q.VIDEO),
@@ -144,7 +144,7 @@ let G = a.Ay.connectStores([b.A, s.Ay, C.A, O.A, I.A, T.A, S.A, f.A, v.Ay, _.A],
         en = T.A.getVoiceChannelId(),
         er = T.A.getChannelId() === en,
         ei = null != en && f.A.getChatOpen(en),
-        ea = G || F,
+        ea = G || V,
         eo = ea && null != x && (0, l.q)(x.applicationId),
         es = !ea && null != m && er && ei;
     return {

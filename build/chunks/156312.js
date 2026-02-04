@@ -42,8 +42,8 @@ var r = n(627968),
     k = n(552574),
     U = n(935630),
     G = n(988023),
-    F = n(289333),
-    V = n(252293),
+    V = n(289333),
+    F = n(252293),
     B = n(615310),
     H = n(87952),
     Y = n(814626),
@@ -134,7 +134,7 @@ function er(e) {
         paymentSourceId: eA,
         isGift: ei,
         excludeSubscriptionPlansBySKU: ed
-    }), eD = (0, F.A)(), [eL, ex] = i.useState(!1), {
+    }), eD = (0, V.A)(), [eL, ex] = i.useState(!1), {
         step: eM,
         setStep: ej,
         steps: ek,
@@ -143,7 +143,7 @@ function er(e) {
     } = (0, B.A)({
         stepConfigs: et,
         breadcrumbs: en
-    }), [eF, eV] = (0, G.A)(eM), {
+    }), [eV, eF] = (0, G.A)(eM), {
         paymentError: eB,
         paymentAuthenticationState: eH
     } = (0, k.A)(), {
@@ -189,7 +189,7 @@ function er(e) {
         hasFetchedSkus: tE,
         skuPricePreviewsById: ty,
         previewErrorsById: tb
-    } = (0, V.A)({
+    } = (0, F.A)({
         applicationId: null != el ? el : q.tv,
         skuIDs: er,
         currentPaymentSourceId: eA,
@@ -226,9 +226,9 @@ function er(e) {
         } = (0, u.cf)([y.A], () => ({
             isDisplayingWowMomentConfirmation: y.A.isDisplayingWowMomentConfirmation
         })),
-        tF = tU ? Z.Ot : void 0,
+        tV = tU ? Z.Ot : void 0,
         {
-            enabled: tV
+            enabled: tF
         } = (0, E.Y)({
             location: "PaymentContext"
         }),
@@ -247,7 +247,7 @@ function er(e) {
     return (0, r.jsx)(ee.Provider, {
         value: $(X({
             stripe: eh,
-            paymentElementsEnabled: tV,
+            paymentElementsEnabled: tF,
             contextMetadata: ez,
             blockedPayments: em,
             activeSubscription: J,
@@ -275,8 +275,8 @@ function er(e) {
             stepConfigs: et,
             breadcrumbs: eU,
             previousStepRef: eG,
-            purchaseState: eF,
-            setPurchaseState: eV,
+            purchaseState: eV,
+            setPurchaseState: eF,
             paymentAuthenticationState: eH,
             paymentError: eB,
             purchaseError: eY,
@@ -333,7 +333,7 @@ function er(e) {
             inReverseTrial: tk,
             enablePremiumBrandRefresh: tU,
             isDisplayingWowMomentConfirmation: tG,
-            premiumBrandRefreshBackgroundClassName: tF,
+            premiumBrandRefreshBackgroundClassName: tV,
             wasTier2PremiumBeforePurchase: ep,
             customCheckoutFlow: tH,
             isPremiumGroupPurchase: tY,
