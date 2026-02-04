@@ -14,6 +14,9 @@ export default async function downloadWebjs(): Promise<Build> {
         versionHash: html.match(/VERSION_HASH":"(?<versionHash>[a-f0-9]{40})"/)
             .groups?.versionHash,
         webjs: await getText(asset(html.match(/web\.[a-f0-9]{16}\.js/)[0])),
+        libdiscore: await getText(
+            asset(html.match(/libdiscore-wasm-fetch\.[a-f0-9]{16}\.js/)[0]),
+        ),
         entryChunk: '',
         modules: { js: {}, css: {} },
         classes: {},

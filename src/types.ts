@@ -19,6 +19,10 @@ export interface Build {
      */
     entryChunk: string;
     /**
+     * Wasm File path
+     */
+    libdiscore: string;
+    /**
      * Modules mappings (module id -> hash, path = [hash].js or [hash].css)
      */
     modules: { js: Record<string, string>; css: Record<string, string> };

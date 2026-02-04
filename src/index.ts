@@ -5,6 +5,7 @@ import getClassesNames from './tasks/getClassesNames.js';
 import getDepGraph from './tasks/getDepGraph.js';
 import getEndpoints from './tasks/getEndpoints.js';
 import getIntlStrings from './tasks/getIntlStrings.js';
+import getLibDiscore from './tasks/getLibDiscore.js';
 import { Build } from './types.js';
 import { convertMillisHumanReadable, perf, writeFile } from './utils/index.js';
 
@@ -55,6 +56,14 @@ async function main() {
         'get classes names from css files',
         async () => {
             await getClassesNames(build);
+        },
+        tasks,
+    );
+
+    await perf<void>(
+        'get libdiscore wasm file and decompile it',
+        async () => {
+            await getLibDiscore(build);
         },
         tasks,
     );

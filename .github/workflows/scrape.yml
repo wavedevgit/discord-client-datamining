@@ -25,6 +25,7 @@ jobs:
             - run: npm init -y
             - name: Run script
               run: |
+                  sudo apt install wabt
                   npm i && npm run build && npm run start
                   npx js-beautify "build/chunks/*.js" -r
                   npx js-beautify "build/assets/*.css" -r
