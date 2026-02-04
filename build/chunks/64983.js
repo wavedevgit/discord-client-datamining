@@ -13,10 +13,10 @@ var r = n(627968),
     d = n(83241),
     p = n(926466),
     h = n(652215),
-    g = n(985018),
-    m = n(978927);
+    f = n(985018),
+    g = n(978927);
 
-function f(e) {
+function m(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -43,7 +43,7 @@ let A = a().debounce(c.Ay.trackWithMetadata, 500),
             image: a,
             type: d,
             imageMarginX: p,
-            imageMarginTop: f,
+            imageMarginTop: m,
             trackingSource: _,
             undismissable: b,
             onDismissed: E,
@@ -60,7 +60,7 @@ let A = a().debounce(c.Ay.trackWithMetadata, 500),
         let v = null;
         "function" == typeof y ? v = y() : null != y && (v = (0, r.jsx)(s.$n, {
             "data-migration-pending": !0,
-            className: m.HM,
+            className: g.HM,
             size: s.$n.Sizes.SMALL,
             onClick: () => {
                 null != d && u.default.track(h.HAw.CHANNEL_NOTICE_CTA_CLICKED, {
@@ -75,37 +75,37 @@ let A = a().debounce(c.Ay.trackWithMetadata, 500),
         }));
         let S = null != p ? "".concat(p, "px") : "16px";
         return (0, r.jsxs)("div", {
-            className: m.kX,
+            className: g.kX,
             children: [!0 === b ? null : (0, r.jsx)(o.DUT, {
                 onClick: () => {
                     c.Ay.trackWithMetadata(h.HAw.CHANNEL_NOTICE_CLOSED, {
                         notice_type: d
                     }), null == E || E()
                 },
-                className: m.VN,
-                "aria-label": g.intl.string(g.t.WAI6xu),
+                className: g.VN,
+                "aria-label": f.intl.string(f.t.WAI6xu),
                 children: (0, r.jsx)(o.PGe, {
                     size: "md",
                     color: "currentColor",
-                    className: m.ut
+                    className: g.ut
                 })
             }), (0, r.jsx)("div", {
-                className: m.ZS,
+                className: g.ZS,
                 style: {
-                    marginTop: "".concat(f, "px"),
+                    marginTop: "".concat(m, "px"),
                     marginLeft: S,
                     marginRight: S
                 },
                 children: (0, r.jsx)("img", {
-                    className: m.Sl,
+                    className: g.Sl,
                     src: a,
                     alt: ""
                 })
             }), (0, r.jsxs)("div", {
-                className: m.iU,
+                className: g.iU,
                 children: [null != n ? (0, r.jsx)(o.Heading, {
                     variant: "heading-md/semibold",
-                    className: m.DD,
+                    className: g.DD,
                     children: n
                 }) : null, (0, r.jsx)(o.Text, {
                     variant: "text-sm/normal",
@@ -118,5 +118,5 @@ let A = a().debounce(c.Ay.trackWithMetadata, 500),
         let {
             showRedesignedChannelNotice: t
         } = (0, d.P)(!0);
-        return t ? (0, r.jsx)(p.A, f({}, e)) : (0, r.jsx)(_, f({}, e))
+        return t ? (0, r.jsx)(p.A, m({}, e)) : (0, r.jsx)(_, m({}, e))
     }

@@ -234,11 +234,11 @@ function G(e) {
     null != r && (null == t || r.channelId !== t) && w(), C = n
 }
 
-function V(e) {
+function F(e) {
     return e.state === _.g6G.ACTIVE && null != r && r.resetBackoff("App state is active"), !1
 }
 
-function F(e) {
+function V(e) {
     return e.state === _.S7L.RTC_CONNECTED && (I = !0), !0
 }
 
@@ -390,7 +390,7 @@ m(q, "displayName", "RTCConnectionStore");
 let Z = new q(s.h, __OVERLAY__ ? {} : {
     CONNECTION_OPEN: R,
     CONNECTION_CLOSED: P,
-    RTC_CONNECTION_STATE: F,
+    RTC_CONNECTION_STATE: V,
     RTC_CONNECTION_PING: H,
     RTC_CONNECTION_LOSS_RATE: H,
     RTC_CONNECTION_UPDATE_ID: W,
@@ -410,7 +410,7 @@ let Z = new q(s.h, __OVERLAY__ ? {} : {
     CHANNEL_DELETE: U,
     THREAD_DELETE: U,
     CALL_DELETE: k,
-    APP_STATE_UPDATE: V,
+    APP_STATE_UPDATE: F,
     RTC_DEBUG_SET_SIMULCAST_OVERRIDE: K
 });
 Promise.resolve().then(n.bind(n, 954571)).then(e => {

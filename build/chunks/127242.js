@@ -145,14 +145,14 @@ function G() {
     null != E && (clearInterval(E), E = null)
 }
 
-function V(e) {
+function F(e) {
     let {
         enabled: t,
         mode: n
     } = e;
     t ? g.add(n) : g.delete(n), g = new Set(g)
 }
-let F = 300;
+let V = 300;
 
 function B() {
     null == E && (E = setInterval(() => {
@@ -160,7 +160,7 @@ function B() {
         null == m || null == (e = m.getDebuggingState) || e.call(m, e => {
             o()(r, e) || (r = e, Q.emitChange())
         })
-    }, F))
+    }, V))
 }
 
 function H(e) {
@@ -233,7 +233,7 @@ let Q = new Z(c.h, __OVERLAY__ || !_.OX ? {} : {
         OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS: W,
         OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED: K,
         OVERLAY_SET_STATE_DEBUGGING: H,
-        OVERLAY_RENDER_DEBUG_MODE: V,
+        OVERLAY_RENDER_DEBUG_MODE: F,
         OVERLAY_SET_DETAILED_LOGGING: Y,
         OVERLAY_ADD_DEBUG_BREADCRUMB: z,
         OVERLAY_SET_MODULE_LOGGING: q

@@ -96,14 +96,14 @@ function G() {
     return R = null, !0
 }
 
-function V() {
+function F() {
     G() && (m.A.addBreadcrumb({
         category: N,
         message: "Stopping Analytics Heartbeat"
     }), (0, l.p)())
 }
 
-function F() {
+function V() {
     var e;
     let t = null != (e = f.A.getIdleSince()) ? e : 0;
     return {
@@ -129,7 +129,7 @@ async function B() {
     let r = A({
         client_heartbeat_initialization_timestamp: t.createdAtTimestamp,
         client_heartbeat_version: I
-    }, (0, g.Q)(), F());
+    }, (0, g.Q)(), V());
     _.default.track(O.HAw.CLIENT_HEARTBEAT, r), L = performance.now(), (0, l.p)()
 }
 
@@ -157,7 +157,7 @@ function K() {
 }
 
 function z() {
-    K() ? U() : V(), J()
+    K() ? U() : F(), J()
 }
 
 function q() {
@@ -186,7 +186,7 @@ function X() {
     o.w.remove(C), x = {
         state: "loaded",
         session: null
-    }, V(), L = 0
+    }, F(), L = 0
 }
 
 function J() {

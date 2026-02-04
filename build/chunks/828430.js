@@ -14,9 +14,9 @@ var i = n(397927),
     d = n(967198),
     p = n(323073),
     h = n(329972),
-    g = n(784578),
-    m = n(204925),
-    f = n(652215),
+    f = n(784578),
+    g = n(204925),
+    m = n(652215),
     A = n(835002);
 
 function _(e) {
@@ -68,30 +68,30 @@ class b extends a.A {
                 source: t
             }, n))
         }, {
-            modalKey: m.Uy,
-            onCloseRequest: f.tEg,
+            modalKey: g.Uy,
+            onCloseRequest: m.tEg,
             backdropStyle: (0, s.lU)(t) ? i.F2Z.LIGHTBOX : void 0
         })
     }
     handleAgeGateSuccess() {
-        o.A.showSuccessToast(A.OB.EXISTING_USER_AGE_GATE_SUCCESS), (0, i.OoC)(m.Uy)
+        o.A.showSuccessToast(A.OB.EXISTING_USER_AGE_GATE_SUCCESS), (0, i.OoC)(g.Uy)
     }
     handleAgeGateFailure(e) {
         let {
             underageMessage: t
         } = e;
-        (0, i.zbz)(m.Uy, e => (0, r.jsx)(g.default, _({
+        (0, i.zbz)(g.Uy, e => (0, r.jsx)(f.default, _({
             underageMessage: t
         }, e)))
     }
     handleAgeGateModalClose() {
-        (0, i.OoC)(m.Uy)
+        (0, i.OoC)(g.Uy)
     }
     handleGuildUpdate(e) {
         let {
             guild: t
         } = e, n = d.A.getGuildId();
-        if (null != n && t.id === n && (t.owner_configured_content_level === f.ftr.AGE_RESTRICTED || (0, h.v)("age_gate_manager") && c.uA.has(t.nsfw_level))) return void(0, p.kK)(t.id, null)
+        if (null != n && t.id === n && (t.owner_configured_content_level === m.ftr.AGE_RESTRICTED || (0, h.v)("age_gate_manager") && c.uA.has(t.nsfw_level))) return void(0, p.kK)(t.id, null)
     }
 }
 let E = new b

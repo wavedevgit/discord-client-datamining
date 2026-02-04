@@ -1,6 +1,6 @@
 /** chunk id: 212371, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 }), n(896048);
 var r = n(73153),
     i = n(827343),
@@ -21,7 +21,7 @@ function h(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class g extends a.A {
+class f extends a.A {
     _initialize() {
         r.h.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
     }
@@ -45,4 +45,4 @@ class g extends a.A {
         })
     }
 }
-let m = new g
+let g = new f

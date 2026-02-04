@@ -1,6 +1,6 @@
 /** chunk id: 38894, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 });
 var r = n(627968),
     i = n(64700),
@@ -14,7 +14,7 @@ var r = n(627968),
     p = n(166641),
     h = n(324580);
 
-function g(e) {
+function f(e) {
     let {
         onScroll: t,
         onGuildCardSeen: n,
@@ -42,18 +42,18 @@ function g(e) {
     })
 }
 
-function m(e) {
+function g(e) {
     let {
         tab: t,
         onScroll: n,
         onGuildCardSeen: a,
         onGuildCardClick: s
-    } = e, p = (0, u.Ub)(t), g = (0, l.bG)([c.A], () => {
+    } = e, p = (0, u.Ub)(t), f = (0, l.bG)([c.A], () => {
         var e;
         return null != (e = c.A.getGuildIds({
             categoryId: p
         })) ? e : h.VX
-    }), m = (0, l.bG)([c.A], () => {
+    }), g = (0, l.bG)([c.A], () => {
         var e;
         return null == (e = c.A.getIsFetching({
             categoryId: p
@@ -65,15 +65,15 @@ function m(e) {
         })
     }, [p]), (0, r.jsx)(d.A, {
         tab: t,
-        guildIds: g,
-        loading: m,
+        guildIds: f,
+        loading: g,
         onScroll: n,
         onGuildCardSeen: a,
         onGuildCardClick: s
     })
 }
 
-function f(e) {
+function m(e) {
     let {
         selectedTab: t,
         onScroll: n,
@@ -87,7 +87,7 @@ function f(e) {
             })
         }, [t]), t) {
         case h.o.FEATURED:
-            return (0, r.jsx)(g, {
+            return (0, r.jsx)(f, {
                 tab: t,
                 onScroll: n,
                 onGuildCardClick: o,
@@ -98,7 +98,7 @@ function f(e) {
         case h.o.ENTERTAINMENT:
         case h.o.TECH:
         case h.o.EDUCATION:
-            return (0, r.jsx)(m, {
+            return (0, r.jsx)(g, {
                 tab: t,
                 onScroll: n,
                 onGuildCardClick: o,

@@ -1,10 +1,10 @@
 /** chunk id: 546983, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     Au: () => A,
-    d5: () => g,
-    j7: () => m,
+    d5: () => f,
+    j7: () => g,
     kS: () => h,
-    l6: () => f
+    l6: () => m
 });
 var r = n(684013),
     i = n(833551),
@@ -21,7 +21,7 @@ function h(e) {
     return null != e && !!i.default.isOverlayOOPEnabledForPid(e) && l.A.isReady(e)
 }
 
-function g(e) {
+function f(e) {
     return null == e ? {
         lock: d.FXj,
         context: d.BRT.APP
@@ -37,14 +37,14 @@ function g(e) {
         context: d.BRT.APP
     })
 }
-let m = async (e, t, n) => {
+let g = async (e, t, n) => {
     if ((0, c.sq)(e, t), (null == n || "" === n) && (0, c.IR)(t)) return e.authorization.scopes = [u.LQ, u.kw], Promise.resolve();
     if (null == n || "" === n) return Promise.reject(new o.A({
         closeCode: d.YI$.INVALID_CLIENTID
     }, "No Client ID Specified"));
     let r = a.Ay.releaseChannel !== d.BIo.CANARY && !p.includes(n) && e.transport !== u.z4.POST_MESSAGE;
     return await (0, c.e2)(n, r), (0, c.uM)(e, n, t)
-}, f = () => (0, c.BB)(e => {
+}, m = () => (0, c.BB)(e => {
     let t = [];
     return null != e.modeOptions.shortcut && Array.isArray(e.modeOptions.shortcut) && (t = e.modeOptions.shortcut.map(e => {
         var t;

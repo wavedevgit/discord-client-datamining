@@ -1,6 +1,6 @@
 /** chunk id: 885969, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 }), n(65821), n(896048), n(457529);
 var r = n(86980),
     i = n(793574),
@@ -13,12 +13,12 @@ var r = n(86980),
     d = n(613057),
     p = n(652215),
     h = n(788868);
-let g = [i.A.RPC];
+let f = [i.A.RPC];
 
-function m(e, t) {
+function g(e, t) {
     let n = {
         subscriptionTier: h.pe.TIER_2,
-        analyticsLocations: g,
+        analyticsLocations: f,
         analyticsObject: t
     };
     switch (e) {
@@ -30,7 +30,7 @@ function m(e, t) {
             throw Error("Unexpected app context: ".concat(e))
     }
 }
-let f = {
+let m = {
     [p.e$_.START_PURCHASE]: {
         [d.sm.ANY]: [d.VH, d.hj],
         validation: e => (0, s.A)(e).required().keys({
@@ -57,7 +57,7 @@ let f = {
             if (null == (0, o.A)()) throw new a.A({
                 errorCode: p.Lw6.INVALID_CHANNEL
             }, "Invalid channel");
-            let f = {
+            let m = {
                 page: p.liQ.IN_APP
             };
             return (async () => {
@@ -65,9 +65,9 @@ let f = {
                     let e = await (0, r.j)({
                         applicationId: l,
                         skuId: n,
-                        openPremiumPaymentModal: () => m(h, f),
-                        analyticsLocations: g,
-                        analyticsLocationObject: f,
+                        openPremiumPaymentModal: () => g(h, m),
+                        analyticsLocations: f,
+                        analyticsLocationObject: m,
                         context: h
                     });
                     return s(), e
@@ -104,7 +104,7 @@ let f = {
                 lock: r,
                 context: i
             } = (0, u.d5)(t.transport !== d.z4.POST_MESSAGE ? n : null);
-            return m(i, {
+            return g(i, {
                 page: p.liQ.IN_APP
             }).then(() => {
                 r()

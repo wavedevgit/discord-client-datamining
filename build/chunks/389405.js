@@ -1,6 +1,6 @@
 /** chunk id: 389405, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 }), n(747238), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -13,13 +13,13 @@ var r = n(627968),
     d = n(394727),
     p = n(652215),
     h = n(613057),
-    g = n(985018),
-    m = n(742249);
+    f = n(985018),
+    g = n(742249);
 
-function f(e) {
+function m(e) {
     let {
         applicationId: t
-    } = e.match.params, [f, A] = i.useState(!1), _ = i.useRef(!1), [b, E] = i.useState(null), O = !u.isPlatformEmbedded && !a.Fr && !f, y = i.useMemo(() => (0, l.A)(), []);
+    } = e.match.params, [m, A] = i.useState(!1), _ = i.useRef(!1), [b, E] = i.useState(null), O = !u.isPlatformEmbedded && !a.Fr && !m, y = i.useMemo(() => (0, l.A)(), []);
     return (i.useEffect(() => {
         O && !0 !== _.current && (Promise.resolve().then(n.bind(n, 129014)).then(e => {
             let {
@@ -50,23 +50,23 @@ function f(e) {
             }).then(() => n.disconnect())
         }), _.current = !0)
     }, [t, O, y]), O && !1 !== b) ? !0 === b ? (0, r.jsxs)("div", {
-        className: m.k,
+        className: g.k,
         children: [(0, r.jsx)(o.Heading, {
             variant: "heading-xxl/bold",
-            children: g.intl.string(g.t.csrAMJ)
+            children: f.intl.string(f.t.csrAMJ)
         }), (0, r.jsx)(o.Text, {
             variant: "text-xs/semibold",
-            children: g.intl.string(g.t["m1+IBn"])
+            children: f.intl.string(f.t["m1+IBn"])
         }), (0, r.jsx)(s.$nd, {
             variant: "primary",
-            text: g.intl.string(g.t.fIv16B),
+            text: f.intl.string(f.t.fIv16B),
             onClick: () => A(!0)
         })]
     }) : (0, r.jsxs)("div", {
-        className: m.k,
+        className: g.k,
         children: [(0, r.jsx)(o.Heading, {
             variant: "heading-xxl/bold",
-            children: g.intl.string(g.t["Z+hCVU"])
+            children: f.intl.string(f.t["Z+hCVU"])
         }), (0, r.jsx)(o.y$y, {})]
     }) : (0, r.jsx)(d.A, function(e) {
         for (var t = 1; t < arguments.length; t++) {

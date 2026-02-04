@@ -1,6 +1,6 @@
 /** chunk id: 968930, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => f
 });
 var r = n(73153),
     i = n(631670),
@@ -29,16 +29,16 @@ class h extends l.A {
                 isTryItOut: h
             } = e;
             if (h) return void(0, c.e$)(t);
-            let g = u.default.getCurrentUser(),
-                m = null != r ? a.zq : i.zq,
-                f = d.Ay.canUseAnimatedAvatar(g);
-            if (f || "image/gif" !== n.type) return void m(t);
-            if (null == g) return;
+            let f = u.default.getCurrentUser(),
+                g = null != r ? a.zq : i.zq,
+                m = d.Ay.canUseAnimatedAvatar(f);
+            if (m || "image/gif" !== n.type) return void g(t);
+            if (null == f) return;
             let A = (0, o.V7)({
-                userId: g.id,
+                userId: f.id,
                 image: t
             });
-            if (!f) return void(0, s.G)({
+            if (!m) return void(0, s.G)({
                 uploadType: p.HL.AVATAR,
                 imageSrc: A,
                 analyticsSource: l
@@ -53,8 +53,8 @@ class h extends l.A {
             if (i) return void(0, c.xe)(l);
             let o = u.default.getCurrentUser(),
                 h = null != n ? a.Iz : c.Iz,
-                g = d.Ay.canUsePremiumProfileCustomization(o);
-            d.Ay.canUsePremiumProfileCustomization(o) ? h(l) : null == o || g || (0, s.G)({
+                f = d.Ay.canUsePremiumProfileCustomization(o);
+            d.Ay.canUsePremiumProfileCustomization(o) ? h(l) : null == o || f || (0, s.G)({
                 uploadType: p.HL.BANNER,
                 imageSrc: l,
                 analyticsSource: r
@@ -62,4 +62,4 @@ class h extends l.A {
         })(e) : void 0
     }
 }
-let g = new h
+let f = new h

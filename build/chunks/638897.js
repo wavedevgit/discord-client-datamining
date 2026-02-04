@@ -75,11 +75,11 @@ function v(e, t, n) {
         hidePersonalInformation: f.A.hidePersonalInformation
     }), [P, D, j]), {
         activeCommand: G,
-        activeCommandOption: V
+        activeCommandOption: F
     } = (0, a.cf)([s.A], () => ({
         activeCommand: s.A.getActiveCommand(P.id),
         activeCommandOption: s.A.getActiveOption(P.id)
-    })), F = (0, h.A)({
+    })), V = (0, h.A)({
         navId: "channel-autocomplete",
         scrollerRef: n,
         state: L,
@@ -87,9 +87,9 @@ function v(e, t, n) {
     }), B = null == (I = e.editorRef.current) ? void 0 : I.getCurrentWord(), H = null == (S = e.editorRef.current) ? void 0 : S.getSlateEditor(), Y = null;
     null != H && (Y = null != (w = null == (R = c.VW.getSelectedParentOfType(H, _.mk)) ? void 0 : R[0]) ? w : null);
     let W = O(y({}, e), {
-            navigator: F,
+            navigator: V,
             activeCommand: G,
-            activeCommandOption: V,
+            activeCommandOption: F,
             activeInlineAutocompleteInput: Y,
             canMentionUsers: null != (E = null == (T = D.users) ? void 0 : T.allowMentioning) && E,
             canMentionEveryone: k,
@@ -99,9 +99,9 @@ function v(e, t, n) {
             currentWord: null != (b = null == B ? void 0 : B.word) ? b : "",
             currentWordIsAtStart: (null == B ? void 0 : B.isAtStart) === !0,
             currentFullWord: null != (v = null == B ? void 0 : B.fullWord) ? v : "",
-            optionText: null != V ? (0, o.AA)({
-                [V.name]: null != (A = null == (C = e.editorRef.current) ? void 0 : C.getCurrentCommandOptionValue()) ? A : []
-            }, V.name) : ""
+            optionText: null != F ? (0, o.AA)({
+                [F.name]: null != (A = null == (C = e.editorRef.current) ? void 0 : C.getCurrentCommandOptionValue()) ? A : []
+            }, F.name) : ""
         }),
         [K] = r.useState(() => new _.Ay(W));
     return r.useEffect(() => {
@@ -121,5 +121,5 @@ function v(e, t, n) {
                 for (let n of t) n.removeChangeListener(e)
             }
         }
-    }, [K, null == (N = L.query) ? void 0 : N.typeInfo]), [L, K, F]
+    }, [K, null == (N = L.query) ? void 0 : N.typeInfo]), [L, K, V]
 }

@@ -1,13 +1,13 @@
 /** chunk id: 295102, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => x
 }), n(896048);
 var i = n(627968),
     r = n(442433),
     l = n(383501),
     a = n(589051),
-    s = n(547463),
-    o = n(620851),
+    o = n(547463),
+    s = n(620851),
     u = n(646881),
     c = n(97548),
     d = n(324093),
@@ -16,15 +16,15 @@ var i = n(627968),
     f = n(218670),
     g = n(709747),
     m = n(479207),
-    y = n(393172),
-    A = n(968898),
-    v = n(196295),
-    b = n(187667);
+    A = n(393172),
+    y = n(968898),
+    O = n(196295),
+    v = n(187667);
 n(392164);
-var E = n(652215),
-    O = n(985018);
+var b = n(652215),
+    E = n(985018);
 
-function x(e) {
+function _(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             i = Object.keys(n);
@@ -43,7 +43,7 @@ function x(e) {
     return e
 }
 
-function _(e, t) {
+function S(e, t) {
     return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -55,8 +55,8 @@ function _(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let S = {
-    [E.uss.VIDEO]: {
+let x = {
+    [b.uss.VIDEO]: {
         renderWidget(e) {
             let {
                 widget: t,
@@ -64,7 +64,7 @@ let S = {
                 size: r,
                 padding: l,
                 borderWidth: a,
-                showEmpty: s
+                showEmpty: o
             } = e;
             return (0, h.cv)(t) ? (0, i.jsx)(m.A, {
                 id: t.id,
@@ -72,34 +72,34 @@ let S = {
                 widget: t,
                 height: "auto" === r.height ? 0 : r.height - 2 * l - 2 * a,
                 width: "auto" === r.width ? 0 : r.width - 2 * l - 2 * a,
-                showEmpty: s,
+                showEmpty: o,
                 padding: l,
                 borderWidth: a
             }) : null
         },
-        renderTitle: () => (0, i.jsx)(A.Pl, {
-            children: O.intl.string(O.t.UPvOia)
+        renderTitle: () => (0, i.jsx)(y.Pl, {
+            children: E.intl.string(E.t.UPvOia)
         }),
         renderButtons: e => (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(A.CS, {
+            children: [(0, i.jsx)(y.CS, {
                 onClick: t => {
                     (0, h.cv)(e) && (0, r.L3)(t, async () => {
                         let {
                             default: t
                         } = await n.e("78238").then(n.bind(n, 440173));
-                        return n => (0, i.jsx)(t, _(x({}, n), {
+                        return n => (0, i.jsx)(t, S(_({}, n), {
                             widget: e
                         }))
                     })
                 }
-            }), (0, i.jsx)(A.O0, {
+            }), (0, i.jsx)(y.O0, {
                 id: e.id,
                 pinned: e.pinned
             })]
         }),
         resizeValidation: m.r
     },
-    [E.uss.VOICE_V3]: {
+    [b.uss.VOICE_V3]: {
         renderWidget(e) {
             var t;
             let {
@@ -108,68 +108,68 @@ let S = {
                 locked: l,
                 showEmpty: a
             } = e;
-            return (0, h.ZO)(n) ? (0, i.jsx)(y.Ay, {
+            return (0, h.ZO)(n) ? (0, i.jsx)(A.Ay, {
                 anchorLeft: r,
                 id: n.id,
                 locked: l,
                 pinned: n.pinned,
-                widget: E.uss.VOICE_V3,
+                widget: b.uss.VOICE_V3,
                 maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : 8,
                 isPreviewingInGame: !1,
                 showEmpty: a
             }) : null
         },
-        renderTitle: () => (0, i.jsx)(A.Pl, {
-            children: O.intl.string(O.t.nFv3Gb)
+        renderTitle: () => (0, i.jsx)(y.Pl, {
+            children: E.intl.string(E.t.nFv3Gb)
         }),
         renderButtons: e => (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(A.CS, {
+            children: [(0, i.jsx)(y.CS, {
                 onClick: e => {
                     (0, r.L3)(e, async () => {
                         let {
                             default: e
                         } = await n.e("34901").then(n.bind(n, 51444));
-                        return t => (0, i.jsx)(e, x({}, t))
+                        return t => (0, i.jsx)(e, _({}, t))
                     })
                 }
-            }), (0, i.jsx)(A.O0, {
+            }), (0, i.jsx)(y.O0, {
                 id: e.id,
                 pinned: e.pinned
             })]
         })
     },
-    [E.uss.CLICK_ZONE_DEBUG]: {
+    [b.uss.CLICK_ZONE_DEBUG]: {
         renderWidget(e) {
             let {
                 widget: t,
                 locked: n
             } = e;
-            return (0, i.jsx)(o.A, {
+            return (0, i.jsx)(s.A, {
                 id: t.id,
                 locked: n,
                 pinned: t.pinned
             })
         },
-        renderTitle: () => (0, i.jsx)(A.Pl, {
+        renderTitle: () => (0, i.jsx)(y.Pl, {
             children: "Click Zone Tester"
         }),
         renderButtons: e => (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(A.CS, {
+            children: [(0, i.jsx)(y.CS, {
                 onClick: e => {
                     (0, r.L3)(e, async () => {
                         let {
                             default: e
                         } = await n.e("49170").then(n.bind(n, 508457));
-                        return t => (0, i.jsx)(e, x({}, t))
+                        return t => (0, i.jsx)(e, _({}, t))
                     })
                 }
-            }), (0, i.jsx)(A.O0, {
+            }), (0, i.jsx)(y.O0, {
                 id: e.id,
                 pinned: e.pinned
             })]
         })
     },
-    [E.uss.PERFORMANCE_DEBUG]: {
+    [b.uss.PERFORMANCE_DEBUG]: {
         renderWidget(e) {
             let {
                 widget: t,
@@ -183,15 +183,15 @@ let S = {
                 pinned: t.pinned
             })
         },
-        renderTitle: () => (0, i.jsx)(A.Pl, {
+        renderTitle: () => (0, i.jsx)(y.Pl, {
             children: "Overlay Performance"
         }),
-        renderButtons: e => (0, i.jsx)(A.O0, {
+        renderButtons: e => (0, i.jsx)(y.O0, {
             id: e.id,
             pinned: e.pinned
         })
     },
-    [E.uss.GO_LIVE]: {
+    [b.uss.GO_LIVE]: {
         renderWidget(e) {
             var t;
             let {
@@ -199,8 +199,8 @@ let S = {
                 locked: r,
                 size: l,
                 dragStart: a,
-                anchorTop: s,
-                anchorLeft: o,
+                anchorTop: o,
+                anchorLeft: s,
                 showEmpty: u,
                 padding: d,
                 borderWidth: p
@@ -211,8 +211,8 @@ let S = {
                 pinned: n.pinned,
                 opacity: n.opacity,
                 size: l,
-                anchorTop: s,
-                anchorLeft: o,
+                anchorTop: o,
+                anchorLeft: s,
                 widget: n,
                 isPreviewingInGame: !1,
                 dragStart: a,
@@ -222,28 +222,28 @@ let S = {
                 showEmpty: u
             }) : null
         },
-        renderTitle: e => (0, i.jsx)(A.we, {
+        renderTitle: e => (0, i.jsx)(y.we, {
             widgetId: e.id,
-            children: O.intl.string(O.t["386XRo"])
+            children: E.intl.string(E.t["386XRo"])
         }),
         renderButtons(e) {
             var t;
             return (0, h.dO)(e) ? (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(A.CS, {
+                children: [(0, i.jsx)(y.CS, {
                     onClick: t => {
                         (0, h.dO)(e) && (0, r.L3)(t, async () => {
                             let {
                                 default: t
                             } = await n.e("21289").then(n.bind(n, 543824));
-                            return n => (0, i.jsx)(t, _(x({}, n), {
+                            return n => (0, i.jsx)(t, S(_({}, n), {
                                 widget: e
                             }))
                         })
                     }
-                }), (0, i.jsx)(A.GQ, {
+                }), (0, i.jsx)(y.GQ, {
                     widgetId: e.id,
                     showAllStreams: null == (t = e.meta.showAllStreams) || t
-                }), (0, i.jsx)(A.O0, {
+                }), (0, i.jsx)(y.O0, {
                     id: e.id,
                     pinned: e.pinned
                 })]
@@ -251,7 +251,7 @@ let S = {
         },
         resizeValidation: d.OL
     },
-    [E.uss.QUICK_ACTIONS]: {
+    [b.uss.QUICK_ACTIONS]: {
         renderWidget(e) {
             let {
                 locked: t
@@ -261,54 +261,54 @@ let S = {
             })
         }
     },
-    [E.uss.NOTIFICATIONS]: {
+    [b.uss.NOTIFICATIONS]: {
         renderWidget(e) {
             let {
                 locked: t,
                 showEmpty: n,
                 widget: r
             } = e;
-            return (0, i.jsx)(v.A, {
+            return (0, i.jsx)(O.A, {
                 pinned: r.pinned,
                 locked: t,
                 showEmpty: n
             })
         },
-        renderTitle: () => (0, i.jsx)(A.Pl, {
-            children: O.intl.string(O.t.gnKWdS)
+        renderTitle: () => (0, i.jsx)(y.Pl, {
+            children: E.intl.string(E.t.gnKWdS)
         }),
         renderButtons: e => (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(A.CS, {
+            children: [(0, i.jsx)(y.CS, {
                 onClick: e => {
                     (0, r.L3)(e, async () => {
                         let {
                             default: e
                         } = await n.e("51607").then(n.bind(n, 320490));
-                        return t => (0, i.jsx)(e, x({}, t))
+                        return t => (0, i.jsx)(e, _({}, t))
                     })
                 }
-            }), (0, i.jsx)(A.O0, {
+            }), (0, i.jsx)(y.O0, {
                 id: e.id,
                 pinned: e.pinned
             })]
         })
     },
-    [E.uss.ACTIVITY]: {
+    [b.uss.ACTIVITY]: {
         renderWidget(e) {
             let {
                 locked: t
             } = e;
-            return (0, i.jsx)(s.Ay, {
+            return (0, i.jsx)(o.Ay, {
                 locked: t
             })
         },
-        renderTitle: () => (0, i.jsx)(A.Pl, {
-            children: O.intl.string(O.t["6gwSFY"])
+        renderTitle: () => (0, i.jsx)(y.Pl, {
+            children: E.intl.string(E.t["6gwSFY"])
         }),
         renderButtons: () => null,
         predicate: () => !(0, a.NI)("WidgetRenderConfig").hasFriendList
     },
-    [E.uss.FRIENDS]: {
+    [b.uss.FRIENDS]: {
         renderWidget(e) {
             let {
                 locked: t
@@ -317,13 +317,13 @@ let S = {
                 locked: t
             })
         },
-        renderTitle: () => (0, i.jsx)(A.Pl, {
-            children: O.intl.string(O.t.TdEu5X)
+        renderTitle: () => (0, i.jsx)(y.Pl, {
+            children: E.intl.string(E.t.TdEu5X)
         }),
         renderButtons: () => null,
         predicate: () => (0, a.NI)("WidgetRenderConfig").hasFriendList
     },
-    [E.uss.TEXT_CHAT_V3]: {
+    [b.uss.TEXT_CHAT_V3]: {
         renderWidget(e) {
             let {
                 locked: t,
@@ -336,13 +336,13 @@ let S = {
                 dragging: r
             })
         },
-        renderTitle: () => (0, i.jsx)(A.Pl, {
-            children: O.intl.string(O.t["/VQax8"])
+        renderTitle: () => (0, i.jsx)(y.Pl, {
+            children: E.intl.string(E.t["/VQax8"])
         }),
         renderButtons: () => null,
         predicate: () => (0, a.NI)("WidgetRenderConfig").hasChat,
         containerRenderGate: {
-            stores: [l.A, b.A],
+            stores: [l.A, v.A],
             shouldRender(e) {
                 var t;
                 let {
@@ -350,7 +350,7 @@ let S = {
                 } = e;
                 if (n) return !1;
                 let i = null != (t = l.A.getChannelId()) ? t : null,
-                    [r] = b.A.getSessionEntries(),
+                    [r] = v.A.getSessionEntries(),
                     a = r.length > 0;
                 return null != i || a
             }

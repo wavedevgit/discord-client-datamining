@@ -1,6 +1,6 @@
 /** chunk id: 72800, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => f
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -31,7 +31,7 @@ let h = i.memo(function(e) {
     })
 });
 
-function g() {
+function f() {
     let e = (0, s.bG)([c.A], () => c.A.getGuildId()),
         t = (0, u.RX)(e),
         [n, i] = (0, o.kn)(Object.values(t).filter(e => {

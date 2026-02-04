@@ -14,7 +14,7 @@ var r, i = n(735438),
     p = n(792205),
     h = n(731854);
 
-function g(e, t, n) {
+function f(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -22,10 +22,10 @@ function g(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let m = {
+let g = {
         ignoredDevices: {}
     },
-    f = m,
+    m = g,
     A = !1,
     _ = {},
     b = {},
@@ -59,10 +59,10 @@ function S(e, t, n) {
 }
 class C extends(r = a.Ay.DeviceSettingsStore) {
     initialize(e) {
-        this.waitFor(u.A, c.A), f = null != e ? e : m
+        this.waitFor(u.A, c.A), m = null != e ? e : g
     }
     getUserAgnosticState() {
-        return f
+        return m
     }
     get initialized() {
         return A
@@ -83,7 +83,7 @@ class C extends(r = a.Ay.DeviceSettingsStore) {
         return y
     }
 }
-g(C, "displayName", "ConnectedDeviceStore"), g(C, "persistKey", "ConnectedDeviceStore"), g(C, "migrations", [e => {
+f(C, "displayName", "ConnectedDeviceStore"), f(C, "persistKey", "ConnectedDeviceStore"), f(C, "migrations", [e => {
     if (null == e.ignoredDevices) {
         var t, n;
         return t = function(e) {
@@ -93,7 +93,7 @@ g(C, "displayName", "ConnectedDeviceStore"), g(C, "persistKey", "ConnectedDevice
                 "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                     return Object.getOwnPropertyDescriptor(n, e).enumerable
                 }))), r.forEach(function(t) {
-                    g(e, t, n[t])
+                    f(e, t, n[t])
                 })
             }
             return e
@@ -178,9 +178,9 @@ let N = new C(s.h, {
         let {
             displayName: t
         } = e;
-        f.ignoredDevices[t] = !0, delete E[t]
+        m.ignoredDevices[t] = !0, delete E[t]
     },
     CONNECTED_DEVICE_NEVER_SHOW_MODAL: function() {
-        E = {}, f.neverShowModal = !0
+        E = {}, m.neverShowModal = !0
     }
 })

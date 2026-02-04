@@ -1,6 +1,6 @@
 /** chunk id: 731667, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => f
 }), n(896048);
 var r, i, l = n(311907),
     a = n(73153),
@@ -30,7 +30,7 @@ class h extends(r = l.Ay.Store) {
     configurable: !0,
     writable: !0
 }) : h[i] = "HubLinkNoticeStore";
-let g = new h(a.h, {
+let f = new h(a.h, {
     CONNECTION_OPEN: function(e) {
         for (let t of e.guilds)
             if (d(t.id)) return !0;

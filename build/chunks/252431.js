@@ -251,11 +251,11 @@ function G(e) {
     }) : e)), (r === h.eA$.BLOCKED || a) && (b.notifCenterLocalItems = b.notifCenterLocalItems.filter(e => !k(e, p.Uo.INCOMING_FRIEND_REQUESTS, n) && !k(e, p.Uo.INCOMING_FRIEND_REQUESTS_ACCEPTED, n) && !k(e, p.Uo.INCOMING_GAME_FRIEND_REQUESTS, n) && !k(e, p.Uo.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, n)))
 }
 
-function V(e) {
+function F(e) {
     b.notifCenterLocalItems = b.notifCenterLocalItems.filter(t => !k(t, p.Uo.INCOMING_FRIEND_REQUESTS, e.relationship.id) && !k(t, p.Uo.INCOMING_FRIEND_REQUESTS_ACCEPTED, e.relationship.id))
 }
 
-function F(e) {
+function V(e) {
     let {
         gameRelationship: t
     } = e, {
@@ -389,8 +389,8 @@ let q = new z(a.h, {
     NOTIFICATION_CENTER_TAB_FOCUSED: j,
     RELATIONSHIP_ADD: G,
     RELATIONSHIP_UPDATE: G,
-    RELATIONSHIP_REMOVE: V,
-    GAME_RELATIONSHIP_ADD: F,
+    RELATIONSHIP_REMOVE: F,
+    GAME_RELATIONSHIP_ADD: V,
     GAME_RELATIONSHIP_REMOVE: B,
     NOTIFICATION_CENTER_ITEM_COMPLETED: H,
     SET_RECENT_MENTIONS_FILTER: () => A(),

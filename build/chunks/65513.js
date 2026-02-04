@@ -14,9 +14,9 @@ var r = n(627968),
     d = n(770178),
     p = n(975807),
     h = n(151252),
-    g = n(859703),
-    m = n(341915),
-    f = n(579473),
+    f = n(859703),
+    g = n(341915),
+    m = n(579473),
     A = n(561844),
     _ = n(590202),
     b = n(415441),
@@ -71,7 +71,7 @@ function S(e) {
                     className: v.LY,
                     asset: {
                         url: t.url,
-                        mimetype: (0, f.vm)(t.url),
+                        mimetype: (0, m.vm)(t.url),
                         isAnimated: !1
                     },
                     assetId: t.url
@@ -81,7 +81,7 @@ function S(e) {
                     className: v.LY,
                     asset: {
                         url: n.url,
-                        mimetype: (0, f.vm)(n.url),
+                        mimetype: (0, m.vm)(n.url),
                         isAnimated: !0
                     },
                     assetId: n.url
@@ -95,7 +95,7 @@ function C(e) {
     let {
         config: t,
         onQuestCtaClick: n
-    } = e, l = (0, s.zy)(), f = (0, s.W6)(), {
+    } = e, l = (0, s.zy)(), m = (0, s.W6)(), {
         enabled: b
     } = (0, h.Z)({
         location: y.rE.QUEST_HOME_DESKTOP
@@ -103,12 +103,12 @@ function C(e) {
         e.contentRect.width < 500 ? N("display-md") : N("display-lg")
     }, []), j = (0, d.w)(T, [], {
         fireOnMount: !0
-    }), x = (0, c.bG)([g.A], () => g.A.quests);
+    }), x = (0, c.bG)([f.A], () => f.A.quests);
     return (0, r.jsx)(E.R, {
         adContentId: t.campaignId,
         adCreativeType: o.p.QUEST_HOME_HEROES,
-        questContent: m.uF.QUEST_HOME_TAKEOVER,
-        sourceQuestContent: m.uF.QUEST_HOME_TAKEOVER,
+        questContent: g.uF.QUEST_HOME_TAKEOVER,
+        sourceQuestContent: g.uF.QUEST_HOME_TAKEOVER,
         children: e => (0, r.jsx)("div", {
             className: a()(v.iE, "theme-midnight", {
                 [v.Qx]: !b
@@ -158,9 +158,9 @@ function C(e) {
                                     (0, p.A)(t.ctaSponsorUrl.url), (0, A.vK)({
                                         adContentId: t.campaignId,
                                         adCreativeType: o.p.QUEST_HOME_HEROES,
-                                        questContent: m.uF.QUEST_HOME_TAKEOVER,
+                                        questContent: g.uF.QUEST_HOME_TAKEOVER,
                                         questContentCTA: _.Cy.OPEN_GAME_LINK,
-                                        sourceQuestContent: m.uF.QUEST_HOME_TAKEOVER
+                                        sourceQuestContent: g.uF.QUEST_HOME_TAKEOVER
                                     })
                                 },
                                 size: "md",
@@ -169,7 +169,7 @@ function C(e) {
                             }), t.ctaQuests.map((e, i) => x.has(e.questId) ? (0, r.jsx)(u.Button, {
                                 onClick: () => {
                                     var r, i;
-                                    f.replace((r = function(e) {
+                                    m.replace((r = function(e) {
                                         for (var t = 1; t < arguments.length; t++) {
                                             var n = null != arguments[t] ? arguments[t] : {},
                                                 r = Object.keys(n);
@@ -204,9 +204,9 @@ function C(e) {
                                     }), (0, A.vK)({
                                         adContentId: t.campaignId,
                                         adCreativeType: o.p.QUEST_HOME_HEROES,
-                                        questContent: m.uF.QUEST_HOME_TAKEOVER,
+                                        questContent: g.uF.QUEST_HOME_TAKEOVER,
                                         questContentCTA: _.Cy.VIEW_QUESTS,
-                                        sourceQuestContent: m.uF.QUEST_HOME_TAKEOVER
+                                        sourceQuestContent: g.uF.QUEST_HOME_TAKEOVER
                                     })
                                 },
                                 size: "md",

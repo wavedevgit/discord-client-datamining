@@ -13,29 +13,29 @@ var r = n(735438),
     d = n(954571),
     p = n(139675),
     h = n(927813),
-    g = n(636401),
-    m = n(629471),
-    f = n(613057),
+    f = n(636401),
+    g = n(629471),
+    m = n(613057),
     A = n(652215);
 let _ = ["1402418171662569542"],
     b = {
         [A.e$_.SET_ACTIVITY]: {
             scope: {
-                [f.sm.ANY]: [l.F.RPC, l.F.RPC_ACTIVITIES_WRITE, f.hj]
+                [m.sm.ANY]: [l.F.RPC, l.F.RPC_ACTIVITIES_WRITE, m.hj]
             },
-            validation: e => (0, m.A)(e).required().keys({
+            validation: e => (0, g.A)(e).required().keys({
                 pid: e.number().min(0),
-                activity: (0, m.A)(e).keys({
+                activity: (0, g.A)(e).keys({
                     name: e.string().min(1).max(128),
                     state: e.string().min(2).max(128),
                     state_url: e.string().uri().min(1).max(256),
                     details: e.string().min(2).max(128),
                     details_url: e.string().uri().min(1).max(256),
-                    timestamps: (0, m.A)(e).keys({
+                    timestamps: (0, g.A)(e).keys({
                         start: e.number().min(1),
                         end: e.number().min(1)
                     }),
-                    assets: (0, m.A)(e).keys({
+                    assets: (0, g.A)(e).keys({
                         large_image: e.string().min(1).max(300),
                         large_text: e.string().min(2).max(128),
                         large_url: e.string().uri().min(1).max(256),
@@ -44,17 +44,17 @@ let _ = ["1402418171662569542"],
                         small_url: e.string().uri().min(1).max(256),
                         invite_cover_image: e.string().min(1).max(300)
                     }),
-                    party: (0, m.A)(e).keys({
+                    party: (0, g.A)(e).keys({
                         id: e.string().min(2).max(128),
                         size: e.array().items(e.number().min(0)).length(2),
                         privacy: e.number().default(A.KIY.PRIVATE).valid([A.KIY.PRIVATE, A.KIY.PUBLIC])
                     }),
-                    secrets: (0, m.A)(e).keys({
+                    secrets: (0, g.A)(e).keys({
                         match: e.string().min(2).max(128),
                         join: e.string().min(2).max(128),
                         spectate: e.string().min(2).max(128)
                     }),
-                    buttons: e.array().items((0, m.A)(e).keys({
+                    buttons: e.array().items((0, g.A)(e).keys({
                         label: e.string().min(1).max(32).required(),
                         url: e.string().uri().min(1).max(512).required()
                     })).min(1).max(2),
@@ -69,28 +69,28 @@ let _ = ["1402418171662569542"],
                 let l, {
                     socket: a,
                     args: {
-                        pid: m,
+                        pid: g,
                         activity: b
                     },
                     isSocketConnected: E
                 } = e;
-                if (![f.z4.IPC, f.z4.WEBSOCKET, f.z4.POST_MESSAGE].includes(a.transport)) throw new g.A({
+                if (![m.z4.IPC, m.z4.WEBSOCKET, m.z4.POST_MESSAGE].includes(a.transport)) throw new f.A({
                     errorCode: A.Lw6.INVALID_COMMAND
                 }, 'command not available from "'.concat(a.transport, '" transport'));
-                if (null == m && f.z4.IPC === a.transport) throw new g.A({
+                if (null == g && m.z4.IPC === a.transport) throw new f.A({
                     errorCode: A.Lw6.INVALID_COMMAND
                 }, "nonzero pid required");
                 if (null == b) return s.h.dispatch({
                     type: "LOCAL_ACTIVITY_UPDATE",
                     socketId: a.id,
-                    pid: m,
+                    pid: g,
                     activity: b
                 }), Promise.resolve(b);
                 let O = {};
                 b.name || (b.name = a.application.name);
                 let y = a.application.id;
                 b.application_id = y;
-                let I = a.transport === f.z4.POST_MESSAGE;
+                let I = a.transport === m.z4.POST_MESSAGE;
                 b.platform = I ? A.yTV.EMBEDDED : A.yTV.DESKTOP;
                 let v = c.A.getApplication(null != y ? y : void 0),
                     S = null != (t = b.instance) && t,
@@ -108,13 +108,13 @@ let _ = ["1402418171662569542"],
                 } = b;
                 if (null == L && (b.type = A.$pd.PLAYING), null != x) {
                     let e = i().values(x).filter(e => !!e);
-                    if (null != j && i().intersection(e, [j.id]).length > 0 && !_.includes(a.application.id)) throw new g.A({
+                    if (null != j && i().intersection(e, [j.id]).length > 0 && !_.includes(a.application.id)) throw new f.A({
                         errorCode: A.Lw6.INVALID_ACTIVITY_SECRET
                     }, "secrets cannot match the party id");
-                    if (i().uniq(e).length < e.length) throw new g.A({
+                    if (i().uniq(e).length < e.length) throw new f.A({
                         errorCode: A.Lw6.INVALID_ACTIVITY_SECRET
                     }, "secrets must be unique");
-                    if (null != w) throw new g.A({
+                    if (null != w) throw new f.A({
                         errorCode: A.Lw6.INVALID_ACTIVITY_SECRET
                     }, "secrets cannot currently be sent with buttons")
                 }
@@ -132,7 +132,7 @@ let _ = ["1402418171662569542"],
                     s.h.dispatch({
                         type: "LOCAL_ACTIVITY_UPDATE",
                         socketId: a.id,
-                        pid: m,
+                        pid: g,
                         activity: b,
                         partyPrivacy: C
                     });

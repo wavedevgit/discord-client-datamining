@@ -13,9 +13,9 @@ var r = n(627968),
     d = n(742077),
     p = n(954571),
     h = n(144914),
-    g = n(765258),
-    m = n(192771),
-    f = n(652215),
+    f = n(765258),
+    g = n(192771),
+    m = n(652215),
     A = n(985018),
     _ = n(231566);
 
@@ -59,7 +59,7 @@ function O(e) {
                     children: e.libraryApplication.getBranchedName(e.application)
                 }), null != t ? (0, r.jsx)("div", {
                     className: _.ME,
-                    children: f.gG4[t]
+                    children: m.gG4[t]
                 }) : null]
             }), (0, r.jsx)(s.DUT, {
                 className: _.P5,
@@ -89,7 +89,7 @@ class y extends i.PureComponent {
         u.Pf.updateSetting(e)
     }
     trackRestoreApplication(e, t) {
-        p.default.track(f.HAw.APPLICATION_SETTINGS_UPDATED, E({
+        p.default.track(m.HAw.APPLICATION_SETTINGS_UPDATED, E({
             hidden_enabled: t
         }, e.getAnalyticsData()))
     }
@@ -113,7 +113,7 @@ class y extends i.PureComponent {
                     description: A.intl.string(A.t.cpYp0H),
                     checked: n,
                     onChange: this.handleToggleShortcutStartMenu
-                }), (0, r.jsx)(s.cGx, {}), (0, r.jsx)(m.A, {})]
+                }), (0, r.jsx)(s.cGx, {}), (0, r.jsx)(g.A, {})]
             }) : null, (0, r.jsx)(O, {
                 restoreApplication: this.handleRestoreHiddenLibraryApplication,
                 applicationViewItems: e
@@ -122,8 +122,8 @@ class y extends i.PureComponent {
     }
     render() {
         return (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(g.A, {
-                currentRoute: f.BVt.APPLICATION_LIBRARY_SETTINGS
+            children: [(0, r.jsx)(f.A, {
+                currentRoute: m.BVt.APPLICATION_LIBRARY_SETTINGS
             }), (0, r.jsx)(s.ArX, {
                 className: _.XG,
                 children: this.renderBody()
@@ -132,8 +132,8 @@ class y extends i.PureComponent {
     }
     constructor(...e) {
         super(...e), b(this, "handleRestoreHiddenLibraryApplication", e => {
-            let t = l.PQ(e.getFlags(), f.hM6.HIDDEN);
-            o.V(e.id, e.branchId, t), this.trackRestoreApplication(e, l.Lt(t, f.hM6.HIDDEN))
+            let t = l.PQ(e.getFlags(), m.hM6.HIDDEN);
+            o.V(e.id, e.branchId, t), this.trackRestoreApplication(e, l.Lt(t, m.hM6.HIDDEN))
         })
     }
 }

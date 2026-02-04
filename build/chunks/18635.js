@@ -13,9 +13,9 @@ var r = n(627968),
     d = n(944791),
     p = n(711950),
     h = n(726249),
-    g = n(915089),
-    m = n(346084),
-    f = n(742589),
+    f = n(915089),
+    g = n(346084),
+    m = n(742589),
     A = n(95550),
     _ = n(608881),
     b = n(210714),
@@ -57,7 +57,7 @@ let x = function(e) {
             section: P,
             rows: w
         } = (0, o.cf)([O.Ay], () => O.Ay.getState()),
-        L = (0, o.bG)([m.A], () => m.A.getSuggestionCount()),
+        L = (0, o.bG)([g.A], () => g.A.getSuggestionCount()),
         R = i.useMemo(() => w.getRelationshipCounts(), [w]);
     i.useEffect(() => {
         null != t && p.A.setInitialSection(t), 0 === R[S.eA$.FRIEND] && 0 === R[S.eA$.PENDING_INCOMING] && 0 === R[S.eA$.PENDING_OUTGOING] && 0 === R[S.eA$.BLOCKED] && p.A.transitionToSection(S.m3P.ADD_FRIEND)
@@ -67,8 +67,8 @@ let x = function(e) {
                 explicit: !0
             })
         },
-        M = (0, g.GV)(),
-        k = (0, g.GV)(),
+        M = (0, f.GV)(),
+        k = (0, f.GV)(),
         U = [{
             id: S.m3P.ONLINE,
             show: w.filter(S.m3P.ONLINE).length > 0,
@@ -128,19 +128,19 @@ let x = function(e) {
             location: N.intl.string(N.t.TdEu5X)
         }), (0, r.jsx)(c.NPJ, {
             theme: A,
-            children: e => (0, r.jsxs)(f.A, {
+            children: e => (0, r.jsxs)(m.A, {
                 className: e,
                 toolbar: (0, r.jsx)(j, {}),
                 role: "navigation",
                 "aria-labelledby": M,
                 scrollable: !0,
-                children: [(0, r.jsx)(f.A.Icon, {
+                children: [(0, r.jsx)(m.A.Icon, {
                     icon: c.$yI,
                     "aria-hidden": !0
-                }), (0, r.jsx)(f.A.Title, {
+                }), (0, r.jsx)(m.A.Title, {
                     id: M,
                     children: N.intl.string(N.t.TdEu5X)
-                }), (0, r.jsx)(f.A.Divider, {}), (0, r.jsx)(c.VQ0, {
+                }), (0, r.jsx)(m.A.Divider, {}), (0, r.jsx)(c.VQ0, {
                     "aria-label": N.intl.string(N.t.TdEu5X),
                     selectedItem: P,
                     type: "top-pill",

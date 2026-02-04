@@ -1,6 +1,6 @@
 /** chunk id: 767521, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var r = n(627968),
     i = n(64700),
@@ -13,30 +13,30 @@ var r = n(627968),
     d = n(544028),
     p = n(652215),
     h = n(985018),
-    g = n(882773);
-let m = function() {
+    f = n(882773);
+let g = function() {
     let {
         analyticsLocations: e
     } = (0, c.Ay)(), t = (0, l.bG)([d.A], () => d.A.theme), n = i.useRef(null);
     i.useEffect(() => {
         null == n.current && (n.current = t)
     }, [t]);
-    let m = (0, s.rdh)(a.A.colors.BACKGROUND_BASE_LOW, p.NJ8.LIGHT),
-        f = (0, s.rdh)(a.A.colors.BACKGROUND_BASE_LOW, p.NJ8.DARKER),
+    let g = (0, s.rdh)(a.A.colors.BACKGROUND_BASE_LOW, p.NJ8.LIGHT),
+        m = (0, s.rdh)(a.A.colors.BACKGROUND_BASE_LOW, p.NJ8.DARKER),
         A = (0, s.rdh)(a.A.colors.BACKGROUND_BASE_LOW, p.NJ8.MIDNIGHT),
         _ = i.useMemo(() => [{
             theme: p.NJ8.LIGHT,
             label: h.t.K2sFfo,
-            color: m.hex()
+            color: g.hex()
         }, {
             theme: p.NJ8.DARKER,
             label: h.t.b8Cei3,
-            color: f.hex()
+            color: m.hex()
         }, {
             theme: p.NJ8.MIDNIGHT,
             label: h.t.Do4ZJx,
             color: A.hex()
-        }], [m, f, A]),
+        }], [g, m, A]),
         b = i.useCallback(t => {
             (0, u.X8)({
                 isPersisted: !0,
@@ -50,21 +50,21 @@ let m = function() {
             null != n.current && b(n.current)
         }, [b]);
     return (0, r.jsx)("div", {
-        className: g.N,
+        className: f.N,
         children: (0, r.jsxs)("div", {
-            className: g.t7,
+            className: f.t7,
             children: [_.map(e => (0, r.jsxs)("button", {
                 type: "button",
-                className: g.Du,
+                className: f.Du,
                 onClick: () => b(e.theme),
                 "aria-label": h.intl.string(e.label),
                 children: [(0, r.jsx)("div", {
-                    className: "".concat(g.WT, " ").concat(t === e.theme ? g.TA : ""),
+                    className: "".concat(f.WT, " ").concat(t === e.theme ? f.TA : ""),
                     style: {
                         backgroundColor: e.color
                     }
                 }), (0, r.jsx)("span", {
-                    className: g.i,
+                    className: f.i,
                     children: h.intl.string(e.label)
                 })]
             }, e.theme)), (0, r.jsx)(s.K0, {

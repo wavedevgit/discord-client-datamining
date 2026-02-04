@@ -14,9 +14,9 @@ var i = n(503698),
     d = n(729904),
     p = n(963169),
     h = n(985018),
-    g = n(88808);
-let m = c.GY.binds["0"],
-    f = c.M$.binds["0"],
+    f = n(88808);
+let g = c.GY.binds["0"],
+    m = c.M$.binds["0"],
     A = e => {
         var t, n;
         let {
@@ -33,12 +33,12 @@ let m = c.GY.binds["0"],
             canGoForward: d.A.canGoForward
         }));
         return (0, r.jsxs)("div", {
-            className: g.y_,
+            className: f.y_,
             children: [(0, r.jsx)(s.m_, {
                 ariaHidden: !0,
                 shouldShow: A,
                 text: h.intl.string(h.t.B9vzIP),
-                keyboardShortcut: m,
+                keyboardShortcut: g,
                 children: (0, r.jsx)(o.DUT, (t = function(e) {
                     for (var t = 1; t < arguments.length; t++) {
                         var n = null != arguments[t] ? arguments[t] : {},
@@ -59,8 +59,8 @@ let m = c.GY.binds["0"],
                 }({
                     "aria-label": h.intl.string(h.t.B9vzIP),
                     "aria-disabled": !A,
-                    className: l()(g.x6, g.aX, {
-                        [g.r9]: !A
+                    className: l()(f.x6, f.aX, {
+                        [f.r9]: !A
                     }),
                     onClick: () => (0, p.OE)("nav_button")
                 }, i), n = n = {
@@ -82,12 +82,12 @@ let m = c.GY.binds["0"],
                 ariaHidden: !0,
                 shouldShow: _,
                 text: h.intl.string(h.t["9KJ29e"]),
-                keyboardShortcut: f,
+                keyboardShortcut: m,
                 children: (0, r.jsx)(o.DUT, {
                     "aria-label": h.intl.string(h.t["9KJ29e"]),
                     "aria-disabled": !_,
-                    className: l()(g.x6, g.sY, {
-                        [g.r9]: !_
+                    className: l()(f.x6, f.sY, {
+                        [f.r9]: !_
                     }),
                     onClick: () => (0, p.Qb)("nav_button"),
                     children: (0, r.jsx)(o.EdP, {

@@ -14,9 +14,9 @@ var i = n(179771),
     d = n(334738),
     p = n(181658),
     h = n(646865),
-    g = n(795816),
-    m = n(851907),
-    f = n(980142),
+    f = n(795816),
+    g = n(851907),
+    m = n(980142),
     A = n(572946),
     _ = n(293588),
     b = n(267102),
@@ -45,7 +45,7 @@ async function G(e, t, n, r) {
     if (null == l || null == l.secrets || !(0, P.px)(r, l.party, l.secrets)) throw new x.A({
         errorCode: k.Lw6.NO_ELIGIBLE_ACTIVITY
     }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
-    let a = (0, f.A)(l, v.A);
+    let a = (0, m.A)(l, v.A);
     if (a) {
         let {
             lock: t
@@ -182,7 +182,7 @@ let V = {
                 channel: l,
                 guild: a,
                 frame: o
-            } = (0, R.W)(), u = (0, m.Ay)({
+            } = (0, R.W)(), u = (0, g.Ay)({
                 application: t.application,
                 channelId: null == l ? void 0 : l.id
             }), d = null != u ? E.A.getWindow(u) : void 0;
@@ -280,7 +280,7 @@ let V = {
                         l()
                     }), n.document.body.addEventListener("focus", l, !0), n.document.body.appendChild(i), i.click()
                 }(async n => {
-                    let l = await (0, g.CS)(r, i, n);
+                    let l = await (0, f.CS)(r, i, n);
                     (0, C.Vq)(l) && (0, C.Vq)(l.url) && !(l instanceof p.A) ? e({
                         image_url: l.url
                     }): t(l)
@@ -352,8 +352,8 @@ let V = {
             if (!(0, l.Lt)(null != (t = r.application.flags) ? t : 0, k.gfo.EMBEDDED)) throw new x.A({
                 errorCode: k.Lw6.INVALID_COMMAND
             }, "This application cannot access this API");
-            let g = (0, L.A)();
-            if (null == g && c) throw new x.A({
+            let f = (0, L.A)();
+            if (null == f && c) throw new x.A({
                 errorCode: k.Lw6.INVALID_COMMAND
             }, "No channel found");
             if (null !== a || null !== o || null !== u) {
@@ -380,7 +380,7 @@ let V = {
                     l = s.SYi;
                 (E.A.getWindowOpen(k.MLl.ACTIVITY_POPOUT) || r.context === k.BRT.POPOUT) && (l = s.KX8), (0, _.m)({
                     applicationId: h,
-                    channel: g,
+                    channel: f,
                     command: {
                         name: i,
                         options: d

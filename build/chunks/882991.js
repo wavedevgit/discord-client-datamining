@@ -1,6 +1,6 @@
 /** chunk id: 882991, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 }), n(896048);
 var r = n(627968);
 n(64700);
@@ -22,7 +22,7 @@ function p(e, t, n) {
     }) : e[t] = n, e
 }
 let h = "STAGE_INVITED_TO_SPEAK_MODAL";
-class g extends a.A {
+class f extends a.A {
     _initialize() {
         l.h.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
     }
@@ -34,16 +34,16 @@ class g extends a.A {
             var t;
             let {
                 voiceStates: l
-            } = e, a = s.default.getId(), g = null == (t = c.A.getSession()) ? void 0 : t.sessionId, m = l.find(e => e.userId === a && e.sessionId === g);
-            if (null == m) return;
-            let f = m.channelId;
-            if (null == f) {
+            } = e, a = s.default.getId(), f = null == (t = c.A.getSession()) ? void 0 : t.sessionId, g = l.find(e => e.userId === a && e.sessionId === f);
+            if (null == g) return;
+            let m = g.channelId;
+            if (null == m) {
                 (0, i.kBI)(h) && (0, i.OoC)(h);
                 return
             }
-            let A = o.A.getChannel(f);
+            let A = o.A.getChannel(m);
             if (!(null == A ? void 0 : A.isGuildStageVoice())) return;
-            let _ = (0, u.eY)(m) === u.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+            let _ = (0, u.eY)(g) === u.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
             if (null != A && _) {
                 if ((0, i.kBI)(h)) return;
                 (0, i.mMO)(async () => {
@@ -84,4 +84,4 @@ class g extends a.A {
         })
     }
 }
-let m = new g
+let g = new f

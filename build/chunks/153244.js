@@ -1,6 +1,6 @@
 /** chunk id: 153244, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 });
 var r = n(627968),
     i = n(64700),
@@ -13,9 +13,9 @@ var r = n(627968),
     d = n(104440),
     p = n(652215),
     h = n(985018),
-    g = n(509826);
+    f = n(509826);
 
-function m() {
+function g() {
     return (0, r.jsxs)(l.dO, {
         children: [(0, r.jsx)(s.A, {
             path: p.BVt.APPLICATION_LIBRARY_SETTINGS,
@@ -39,13 +39,13 @@ function m() {
         })]
     })
 }
-let f = i.memo(function() {
+let m = i.memo(function() {
     return i.useEffect(() => {
         (0, c.d)("application_library")
     }, []), (0, r.jsxs)("div", {
-        className: g.k,
+        className: f.k,
         children: [(0, r.jsx)(o.HI, {
             location: h.intl.string(h.t.cw57ar)
-        }), (0, r.jsx)(m, {})]
+        }), (0, r.jsx)(g, {})]
     })
 })

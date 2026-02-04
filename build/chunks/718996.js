@@ -1,6 +1,6 @@
 /** chunk id: 718996, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -13,9 +13,9 @@ var r = n(627968),
     d = n(361908),
     p = n(249584),
     h = n(791295),
-    g = n(49999);
+    f = n(49999);
 
-function m(e) {
+function g(e) {
     let {
         renderPopout: t,
         renderGuildHeaderDropdownButton: n
@@ -36,69 +36,69 @@ function m(e) {
         })
     })
 }
-let f = i.memo(function(e) {
+let m = i.memo(function(e) {
     let {
         contentTypes: t,
         guild: n,
         renderGuildHeaderDropdownButton: i
-    } = e, [a, f] = (0, s.kn)(t, g.m.GUILD_HEADER_TOOLTIPS);
+    } = e, [a, m] = (0, s.kn)(t, f.m.GUILD_HEADER_TOOLTIPS);
     return (0, r.jsx)(r.Fragment, {
         children: (() => {
             switch (a) {
                 case l.M.GUILD_POWERUP_PERKS_COACHMARK:
-                    return (0, r.jsx)(m, {
+                    return (0, r.jsx)(g, {
                         renderPopout: e => (0, r.jsx)(p.UB, {
                             guildId: n.id,
-                            markAsDismissed: f,
+                            markAsDismissed: m,
                             channelRowRef: e
                         }),
                         renderGuildHeaderDropdownButton: i
                     });
                 case l.M.GAME_SERVER_HOSTING_NEW_PERK_AVAILABLE_COACHMARK:
-                    return (0, r.jsx)(m, {
+                    return (0, r.jsx)(g, {
                         renderPopout: e => (0, r.jsx)(p.K8, {
                             guildId: n.id,
-                            markAsDismissed: f,
+                            markAsDismissed: m,
                             channelRowRef: e
                         }),
                         renderGuildHeaderDropdownButton: i
                     });
                 case l.M.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL:
-                    return (0, r.jsx)(m, {
+                    return (0, r.jsx)(g, {
                         renderPopout: e => (0, r.jsx)(o.A, {
                             guildId: n.id,
-                            markAsDismissed: f,
+                            markAsDismissed: m,
                             targetElementRef: e
                         }),
                         renderGuildHeaderDropdownButton: i
                     });
                 case l.M.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL:
-                    return (0, r.jsx)(m, {
+                    return (0, r.jsx)(g, {
                         renderPopout: e => (0, r.jsx)(h.A, {
                             guild: n,
-                            markAsDismissed: f,
+                            markAsDismissed: m,
                             targetElementRef: e
                         }),
                         renderGuildHeaderDropdownButton: i
                     });
                 case l.M.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP:
-                    return (0, r.jsx)(m, {
+                    return (0, r.jsx)(g, {
                         renderPopout: (0, r.jsx)(u.A, {
-                            markAsDismissed: f
+                            markAsDismissed: m
                         }),
                         renderGuildHeaderDropdownButton: i
                     });
                 case l.M.MEDIA_CHANNEL_UPSELL:
                     return (0, r.jsx)(d.A, {
                         guildId: n.id,
-                        markAsDismissed: f,
+                        markAsDismissed: m,
                         renderTargetElement: i
                     });
                 case l.M.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL:
-                    return (0, r.jsx)(m, {
+                    return (0, r.jsx)(g, {
                         renderPopout: e => (0, r.jsx)(c.A, {
                             guildId: n.id,
-                            markAsDismissed: f,
+                            markAsDismissed: m,
                             targetElementRef: e
                         }),
                         renderGuildHeaderDropdownButton: i

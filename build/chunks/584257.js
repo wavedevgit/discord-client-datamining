@@ -1,6 +1,6 @@
 /** chunk id: 584257, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => f
 }), n(896048);
 var r = n(73153),
     i = n(272355),
@@ -46,18 +46,18 @@ class h extends i.A {
             if (!c.A.isEnabled()) return !1;
             let h = l.default.getId();
             if ((null == d ? void 0 : d.find(e => e.id === h)) != null ? (0, a._)(o.sn.PING_ME) : (null != (t = null == d ? void 0 : d.length) ? t : 0) > 0 && (null == r ? void 0 : r.id) === h && (0, a._)(o.sn.PING_SOMEONE), !(0, u.gN)(null == r ? void 0 : r.id, h, i, p)) return !1;
-            let g = u.Ay.getMostRecentMessageCombo(n),
+            let f = u.Ay.getMostRecentMessageCombo(n),
                 {
-                    combo: m
-                } = null != g ? g : {};
-            if (null == m) return !1;
+                    combo: g
+                } = null != f ? f : {};
+            if (null == g) return !1;
             Object.values(o.sn).forEach(e => {
                 if (null != s.A.getUnlocked(e)) return;
                 let t = (0, o.vM)(e),
                     n = null == t ? void 0 : t.checkUnlock;
-                null == n || !1 !== n(m) && (0, a._)(e)
+                null == n || !1 !== n(g) && (0, a._)(e)
             })
         })
     }
 }
-let g = new h
+let f = new h

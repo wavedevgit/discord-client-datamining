@@ -1,6 +1,6 @@
 /** chunk id: 716600, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    t: () => m
+    t: () => g
 });
 var r = n(627968);
 n(64700);
@@ -14,10 +14,10 @@ var i = n(934551),
     d = n(498470),
     p = n(652215),
     h = n(985018),
-    g = n(787076);
+    f = n(787076);
 
-function m(e) {
-    var t, n, m, f;
+function g(e) {
+    var t, n, g, m;
     let {
         componentId: A,
         promotionId: _,
@@ -28,14 +28,14 @@ function m(e) {
         isLightTheme: I
     } = e, v = "AnnouncementModalVariant1_".concat(A), {
         onClose: S
-    } = E, C = null != (t = null == (n = b.button) ? void 0 : n.copy) ? t : h.intl.string(h.t.YScQSF), N = (null == (m = b.button) ? void 0 : m.buttonAction) === l.dz.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", T = (0, d.h)({
-        buttonAction: null == (f = b.button) ? void 0 : f.buttonAction,
+    } = E, C = null != (t = null == (n = b.button) ? void 0 : n.copy) ? t : h.intl.string(h.t.YScQSF), N = (null == (g = b.button) ? void 0 : g.buttonAction) === l.dz.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", T = (0, d.h)({
+        buttonAction: null == (m = b.button) ? void 0 : m.buttonAction,
         analyticsLocations: O,
         analyticsLocation: y,
         onClose: S
     }), j = "" !== b.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
         children: ["\xa0", (0, r.jsx)(s.MzZ, {
-            className: g.$T,
+            className: f.$T,
             href: c.A.getArticleURL(b.helpArticleId),
             children: h.intl.string(h.t["sBp+u0"])
         })]
@@ -53,7 +53,7 @@ function m(e) {
     });
     let P = "" !== b.modalTopPill ? () => (0, r.jsx)(u.R, {
         text: b.modalTopPill,
-        className: g.ON
+        className: f.ON
     }) : void 0;
     return {
         componentId: A,

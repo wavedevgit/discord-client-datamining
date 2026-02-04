@@ -6,8 +6,8 @@ n.d(t, {
 var i, r = n(627968),
     l = n(64700),
     a = n(311907),
-    s = n(397927),
-    o = n(263063),
+    o = n(397927),
+    s = n(263063),
     u = n(290863),
     c = n(102983),
     d = n(912156),
@@ -17,9 +17,9 @@ function p(e, t) {
     switch (t) {
         case "user":
         case "groupDm":
-            return 24 === e ? s._3J.SIZE_24 : s._3J.SIZE_40;
+            return 24 === e ? o._3J.SIZE_24 : o._3J.SIZE_40;
         case "guild":
-            return 24 === e ? o.A.Sizes.SMALLER : o.A.Sizes.MEDIUM;
+            return 24 === e ? s.A.Sizes.SMALLER : s.A.Sizes.MEDIUM;
         case "default":
             return 24 === e ? "sm" : "md";
         default:
@@ -35,26 +35,26 @@ let f = l.memo(function(e) {
         isSelected: f = !1,
         size: g = 24,
         isTyping: m = !1,
-        mentionCount: y = 0,
-        isMentionLowImportance: A = !1
-    } = e, v = null != (t = null == i ? void 0 : i.isPrivate()) && t, b = null != (n = null == i ? void 0 : i.isMultiUserDM()) && n, E = null == l ? void 0 : l.id, O = (0, a.bG)([u.A], () => null != E ? u.A.getStatus(E) : null, [E]), x = (0, a.bG)([u.A], () => null != E && u.A.isMobileOnline(E), [E]);
-    if (v || b) return (0, r.jsx)(c.h, {
+        mentionCount: A = 0,
+        isMentionLowImportance: y = !1
+    } = e, O = null != (t = null == i ? void 0 : i.isPrivate()) && t, v = null != (n = null == i ? void 0 : i.isMultiUserDM()) && n, b = null == l ? void 0 : l.id, E = (0, a.bG)([u.A], () => null != b ? u.A.getStatus(b) : null, [b]), _ = (0, a.bG)([u.A], () => null != b && u.A.isMobileOnline(b), [b]);
+    if (O || v) return (0, r.jsx)(c.h, {
         channel: null != i ? i : null,
         user: l,
         "aria-hidden": !0,
         size: p(g, "user"),
-        status: O,
-        isMobile: x,
+        status: E,
+        isMobile: _,
         isTyping: m,
-        mentionCount: y,
-        isMentionLowImportance: A
+        mentionCount: A,
+        isMentionLowImportance: y
     });
-    if (null == h) return (0, r.jsx)(s.oyn, {
+    if (null == h) return (0, r.jsx)(o.oyn, {
         size: p(g, "default"),
-        color: s.LU0.colors.INTERACTIVE_ICON_DEFAULT
+        color: o.LU0.colors.INTERACTIVE_ICON_DEFAULT
     });
     {
-        if (null == i) return (0, r.jsx)(o.A, {
+        if (null == i) return (0, r.jsx)(s.A, {
             guild: h,
             size: p(g, "guild"),
             active: !0,

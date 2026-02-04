@@ -1,6 +1,6 @@
 /** chunk id: 79746, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 }), n(896048);
 var r = n(451988),
     i = n(73153),
@@ -21,8 +21,8 @@ function h(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let g = a.default.getToken();
-class m extends l.A {
+let f = a.default.getToken();
+class g extends l.A {
     _initialize() {
         this.focusedOrForegrounded = (0, d.R)(), a.default.addChangeListener(this.handleAuthenticationChange), i.h.subscribe("WINDOW_FOCUS", this.handleWindowFocus), i.h.subscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), i.h.subscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), i.h.subscribe("LOGIN_SUCCESS", this.handleLogin), i.h.subscribe("LOGOUT", this.handleLogout), this.scheduleHeartbeatTracking()
     }
@@ -65,7 +65,7 @@ class m extends l.A {
             }), t.heartbeatInterval.stop())
         }), h(this, "scheduleHeartbeatTracking", function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "DEFAULT";
-            if (t.focusedOrForegrounded && null != g) try {
+            if (t.focusedOrForegrounded && null != f) try {
                 t.startAnalyticHeartbeat()
             } catch (e) {
                 c.A.captureException(e)
@@ -88,8 +88,8 @@ class m extends l.A {
             this.focusedOrForegrounded = t === p.g6G.ACTIVE, this.scheduleHeartbeatTracking("APP_STATE_UPDATE")
         }), h(this, "handleAuthenticationChange", () => {
             let e = a.default.getToken();
-            g !== e && (g = e, (0, u.Db)(), this.stopAnalyticHeartbeat()), this.scheduleHeartbeatTracking()
+            f !== e && (f = e, (0, u.Db)(), this.stopAnalyticHeartbeat()), this.scheduleHeartbeatTracking()
         })
     }
 }
-let f = new m
+let m = new g

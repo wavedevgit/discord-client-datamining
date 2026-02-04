@@ -1,6 +1,6 @@
 /** chunk id: 953062, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => f
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -13,14 +13,14 @@ var r = n(627968),
     d = n(49999),
     p = n(985018),
     h = n(318012);
-let g = e => {
+let f = e => {
     let {
         isSelected: t,
         discountOffer: n
-    } = e, [l, g] = (0, c.kn)([s.M.CHURN_DISCOUNT_PREMIUM_TAB_BADGE], void 0, !0);
+    } = e, [l, f] = (0, c.kn)([s.M.CHURN_DISCOUNT_PREMIUM_TAB_BADGE], void 0, !0);
     return (i.useEffect(() => {
-        t && l === s.M.CHURN_DISCOUNT_PREMIUM_TAB_BADGE && g(d.i.TAKE_ACTION)
-    }, [t, g, l]), l === s.M.CHURN_DISCOUNT_PREMIUM_TAB_BADGE) ? (0, r.jsx)(u.MA, {
+        t && l === s.M.CHURN_DISCOUNT_PREMIUM_TAB_BADGE && f(d.i.TAKE_ACTION)
+    }, [t, f, l]), l === s.M.CHURN_DISCOUNT_PREMIUM_TAB_BADGE) ? (0, r.jsx)(u.MA, {
         badgeCopy: p.intl.format(p.t.AYcXGW, {
             discountOfferAmount: n.discount.amount
         }).toString(),

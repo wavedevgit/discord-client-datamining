@@ -8,17 +8,17 @@ var r, i, l, a = n(311907),
     d = n(973522),
     p = n(15285),
     h = n(617617),
-    g = n(927813),
-    m = n(674378),
-    f = n(961350),
+    f = n(927813),
+    g = n(674378),
+    m = n(961350),
     A = n(760751),
     _ = n(189081),
     b = n(383501),
     E = n(309010),
     O = n(652215);
 let y = "ActivityTrackingStore",
-    I = 30 * g.A.Millis.MINUTE,
-    v = 5 * g.A.Millis.MINUTE,
+    I = 30 * f.A.Millis.MINUTE,
+    v = 5 * f.A.Millis.MINUTE,
     S = null != (r = s.w.get(y)) ? r : {},
     C = {},
     N = !1;
@@ -35,9 +35,9 @@ function j(e) {
         n = Date.now(),
         r = null != e.updatedAt ? n - e.updatedAt : 0;
     r > I + v && (r = 0);
-    let i = (0, m.kv)(e.applicationId, _.A),
+    let i = (0, g.kv)(e.applicationId, _.A),
         l = E.A.getVoiceChannelId(),
-        a = f.default.getSessionId(),
+        a = m.default.getSessionId(),
         c = b.A.getMediaSessionId();
     u.A.updateActivity({
         applicationId: e.applicationId,
@@ -82,7 +82,7 @@ function P() {
 }
 class w extends(i = a.Ay.Store) {
     initialize() {
-        this.waitFor(f.default, A.A, _.A, b.A, p.Ay, E.A, h.A), this.syncWith([h.A], x)
+        this.waitFor(m.default, A.A, _.A, b.A, p.Ay, E.A, h.A), this.syncWith([h.A], x)
     }
     getActivities() {
         return S

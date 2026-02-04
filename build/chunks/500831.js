@@ -14,9 +14,9 @@ var r = n(627968),
     d = n(587895),
     p = n(875444),
     h = n(770031),
-    g = n(932340),
-    m = n(545167),
-    f = n(420936),
+    f = n(932340),
+    g = n(545167),
+    m = n(420936),
     A = n(733738),
     _ = n(27169),
     b = n(871432),
@@ -70,12 +70,12 @@ let H = i.memo(function() {
     }), {
         titlebarFastTravel: n,
         quickSwitcherInsteadOfTitle: l
-    } = (0, f.t)({
+    } = (0, m.t)({
         location: "AppTitleBar"
     }), {
         backForwardButtons: s,
         titlebarIconSize: _
-    } = (0, m.pz)({
+    } = (0, g.pz)({
         location: "AppTitleBar"
     }), {
         hasBugReporterAccess: v
@@ -127,7 +127,7 @@ let H = i.memo(function() {
                     trailing: (0, r.jsxs)(r.Fragment, {
                         children: [(0, r.jsx)(b.A, {
                             className: Q
-                        }), H ? (0, r.jsx)(w.A, {}) : null, (0, r.jsx)(g.A, {
+                        }), H ? (0, r.jsx)(w.A, {}) : null, (0, r.jsx)(f.A, {
                             canShowReminder: !0,
                             className: Q
                         }), K && (0, r.jsx)(T.A, (i = function(e) {

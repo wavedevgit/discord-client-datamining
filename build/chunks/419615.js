@@ -1,6 +1,6 @@
 /** chunk id: 419615, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var r = n(119966),
     i = n(478437),
@@ -13,9 +13,9 @@ var r = n(119966),
     d = n(954843),
     p = n(613057),
     h = n(652215),
-    g = n(818348);
-let m = {
-    [g.e$.INVITE_USER_EMBEDDED]: (0, s.T)(g.e$.INVITE_USER_EMBEDDED, {
+    f = n(818348);
+let g = {
+    [f.e$.INVITE_USER_EMBEDDED]: (0, s.T)(f.e$.INVITE_USER_EMBEDDED, {
         scope: {
             [p.sm.ANY]: [a.F.RELATIONSHIPS_READ]
         },
@@ -29,31 +29,31 @@ let m = {
                 } = e,
                 p = n.application.id;
             if (null == p) throw new r.G({
-                errorCode: g.Lw.INVALID_COMMAND
+                errorCode: f.Lw.INVALID_COMMAND
             }, "No application.");
-            let m = c.Ay.getConnectedActivityLocation();
-            if (null == m) throw new r.G({
-                errorCode: g.Lw.NO_ELIGIBLE_ACTIVITY
+            let g = c.Ay.getConnectedActivityLocation();
+            if (null == g) throw new r.G({
+                errorCode: f.Lw.NO_ELIGIBLE_ACTIVITY
             }, "No eligible activity for application. Ensure an activity was set using setActivity.");
-            switch (m.kind) {
+            switch (g.kind) {
                 case l.T.GUILD_CHANNEL:
                 case l.T.GUILD_CHANNEL_MESSAGE:
                     t = (0, d.W)().channel;
                     break;
                 case l.T.PRIVATE_CHANNEL:
                 case l.T.PRIVATE_CHANNEL_MESSAGE:
-                    let f = u.A.getChannel(m.channel_id);
-                    if (null == f) throw new r.G({
-                        errorCode: g.Lw.INVALID_CHANNEL
+                    let m = u.A.getChannel(g.channel_id);
+                    if (null == m) throw new r.G({
+                        errorCode: f.Lw.INVALID_CHANNEL
                     }, "Invalid channel");
-                    if (f.type === i.r.DM) throw new r.G({
-                        errorCode: g.Lw.INVALID_CHANNEL
+                    if (m.type === i.r.DM) throw new r.G({
+                        errorCode: f.Lw.INVALID_CHANNEL
                     }, "Cannot send invite to a DM");
-                    t = f;
+                    t = m;
                     break;
                 default:
                     throw new r.G({
-                        errorCode: g.Lw.NO_ELIGIBLE_ACTIVITY
+                        errorCode: f.Lw.NO_ELIGIBLE_ACTIVITY
                     }, "Unsupported activity location")
             }
             try {
@@ -69,7 +69,7 @@ let m = {
                 })
             } catch (e) {
                 throw new r.G({
-                    errorCode: g.Lw.UNKNOWN_ERROR
+                    errorCode: f.Lw.UNKNOWN_ERROR
                 }, "Failed to invite user")
             }
         }

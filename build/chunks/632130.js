@@ -1,6 +1,6 @@
 /** chunk id: 632130, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 }), n(896048), n(321073);
 var r = n(339048),
     i = n(830382),
@@ -44,7 +44,7 @@ async function h(e, t) {
         }), r.filter(e => (null == e ? void 0 : e.price) != null).forEach(e => i.push(e))
     }), i
 }
-async function g(e) {
+async function f(e) {
     let {
         socket: t
     } = e;
@@ -62,7 +62,7 @@ async function g(e) {
     return [...r.filter(e => e.sku.type !== p.Puh.SUBSCRIPTION_GROUP).map(e => e.sku).filter(e => null != e.price), ...await h(n, r.map(e => e.sku))]
 }
 
-function m(e) {
+function g(e) {
     let {
         socket: t
     } = e;
@@ -73,25 +73,25 @@ function m(e) {
     }, "No application.");
     return r.LM(n)
 }
-let f = {
+let m = {
     [p.e$_.GET_SKUS]: {
         [d.sm.ANY]: [d.VH, d.hj],
-        handler: g
+        handler: f
     },
     [p.e$_.GET_ENTITLEMENTS]: {
         [d.sm.ANY]: [d.VH, d.hj],
-        handler: m
+        handler: g
     },
     [p.e$_.GET_SKUS_EMBEDDED]: {
         [d.sm.ANY]: [d.VH, d.hj],
         handler: async e => ({
-            skus: await g(e)
+            skus: await f(e)
         })
     },
     [p.e$_.GET_ENTITLEMENTS_EMBEDDED]: {
         [d.sm.ANY]: [d.VH, d.hj],
         handler: async e => ({
-            entitlements: await m(e)
+            entitlements: await g(e)
         })
     }
 }

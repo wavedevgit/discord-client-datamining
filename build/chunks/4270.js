@@ -13,9 +13,9 @@ var r = n(627968),
     d = n(964486),
     p = n(260762),
     h = n(485947),
-    g = n(831062),
-    m = n(954571),
-    f = n(336590),
+    f = n(831062),
+    g = n(954571),
+    m = n(336590),
     A = n(471271),
     _ = n(957283),
     b = n(284306),
@@ -31,7 +31,7 @@ function N() {
     let e = i.useRef(null),
         t = (0, b.A)(),
         n = (0, E.I)(),
-        l = (0, f.r)(),
+        l = (0, m.r)(),
         N = (0, u.w)(),
         T = (0, p.A)("message-requests-spam-list"),
         {
@@ -49,9 +49,9 @@ function N() {
             P(t.map(e => e.channel.id))
         }, [t, P]);
     (0, d.Ay)(() => {
-        m.default.track(v.HAw.SPAM_MESSAGE_REQUESTS_VIEWED, {
+        g.default.track(v.HAw.SPAM_MESSAGE_REQUESTS_VIEWED, {
             num_spam_message_requests: n
-        }), g.A.increment({
+        }), f.A.increment({
             name: o.K.SPAM_MESSAGE_REQUEST_VIEW
         })
     });

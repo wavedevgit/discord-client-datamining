@@ -13,9 +13,9 @@ var r = n(665260),
     d = n(93151),
     p = n(587895),
     h = n(780964),
-    g = n(954571),
-    m = n(353835),
-    f = n(307600),
+    f = n(954571),
+    g = n(353835),
+    m = n(307600),
     A = n(723702),
     _ = n(636401),
     b = n(90924),
@@ -46,23 +46,23 @@ let v = new Set([I.AM, I.eK]),
                     let e = new URL(n).toString();
                     if (A.isPlatformEmbedded) {
                         let e = (0, a.f)() ? y.MLl.ACTIVITY_POPOUT : null;
-                        m.A.focus(e, !0)
+                        g.A.focus(e, !0)
                     }
                     let s = p.A.getApplication(null == (i = t.application) ? void 0 : i.id),
                         h = (0, u.H)(null == r ? void 0 : r.location);
-                    if (await (0, d.u)(null == s ? void 0 : s.id, e)) return (0, l.A)(e), g.default.track(y.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+                    if (await (0, d.u)(null == s ? void 0 : s.id, e)) return (0, l.A)(e), f.default.track(y.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
                         application_id: null == (c = t.application) ? void 0 : c.id,
                         url: e,
                         opened: !0
                     }), Promise.resolve({
                         opened: !0
                     });
-                    return new Promise(n => (0, f.h)({
+                    return new Promise(n => (0, m.h)({
                         href: e,
                         shouldConfirm: !0,
                         onConfirm: () => {
                             var r;
-                            (0, l.A)(e), g.default.track(y.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+                            (0, l.A)(e), f.default.track(y.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
                                 application_id: null == (r = t.application) ? void 0 : r.id,
                                 url: e,
                                 opened: !0
@@ -72,7 +72,7 @@ let v = new Set([I.AM, I.eK]),
                         },
                         onCancel: () => {
                             var r;
-                            g.default.track(y.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+                            f.default.track(y.HAw.RPC_OPEN_EXTERNAL_LINK_CALLED, {
                                 application_id: null == (r = t.application) ? void 0 : r.id,
                                 url: e,
                                 opened: !1

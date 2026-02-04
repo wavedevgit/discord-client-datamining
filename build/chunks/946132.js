@@ -1,16 +1,16 @@
 /** chunk id: 946132, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => f
 }), n(896048);
-var r = n(311907),
-    i = n(73153),
-    l = n(640631),
+var l = n(311907),
+    r = n(73153),
+    i = n(640631),
     s = n(626584),
     a = n(734057),
-    u = n(320501),
-    o = n(595766);
+    o = n(320501),
+    u = n(595766);
 
-function d(e, t, n) {
+function c(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -18,32 +18,32 @@ function d(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let c = -1 / 0,
+let d = -1 / 0,
     h = new s.A("MessagePreviewStore");
-class f extends r.Ay.Store {
+class g extends l.Ay.Store {
     initialize() {
-        this.waitFor(a.A, u.A)
+        this.waitFor(a.A, o.A)
     }
     isLatest(e, t) {
         var n;
-        let r = this.guilds.get(null != e ? e : null);
-        return null != (n = null == r ? void 0 : r.isLatest(t, this.generation)) && n
+        let l = this.guilds.get(null != e ? e : null);
+        return null != (n = null == l ? void 0 : l.isLatest(t, this.generation)) && n
     }
     isLocalFetchNeeded(e) {
         var t, n;
         return null == (t = null == (n = this.guilds.get(e)) ? void 0 : n.localNeeded) || t
     }
     message(e, t) {
-        var n, r;
-        return null != (n = null == (r = this.guilds.get(e)) ? void 0 : r.messageRecord(t)) ? n : null
+        var n, l;
+        return null != (n = null == (l = this.guilds.get(e)) ? void 0 : l.messageRecord(t)) ? n : null
     }
     data(e) {
-        return this.guilds.has(e) || this.guilds.set(e, new o.x), this.guilds.get(e)
+        return this.guilds.has(e) || this.guilds.set(e, new u.x), this.guilds.get(e)
     }
     handleOneGuildCreate(e) {
         var t, n;
-        let r = this.data(e.id);
-        r.putMany(null != (t = e.lastMessages) ? t : [], this.generation), r.putMany(null != (n = e.threadMessages) ? n : [], this.generation), null != e.lastMessages && (r.localNeeded = !1)
+        let l = this.data(e.id);
+        l.putMany(null != (t = e.lastMessages) ? t : [], this.generation), l.putMany(null != (n = e.threadMessages) ? n : [], this.generation), null != e.lastMessages && (l.localNeeded = !1)
     }
     handleConnectionOpen(e) {
         for (let t of (this.generation += 1, e.guilds)) this.handleOneGuildCreate(t)
@@ -61,22 +61,22 @@ class f extends r.Ay.Store {
     }
     handleMessageDelete(e) {
         var t, n;
-        let r = null != (t = e.guildId) ? t : null;
-        if ((null == (n = this.data(r)) ? void 0 : n.messageId(e.channelId)) === e.id) {
-            let t = u.A.getMessages(e.channelId),
+        let l = null != (t = e.guildId) ? t : null;
+        if ((null == (n = this.data(l)) ? void 0 : n.messageId(e.channelId)) === e.id) {
+            let t = o.A.getMessages(e.channelId),
                 n = t.hasMoreAfter ? null : t.last();
-            null != n ? this.data(r).put(e.channelId, n, this.generation) : this.data(r).delete(e.channelId)
+            null != n ? this.data(l).put(e.channelId, n, this.generation) : this.data(l).delete(e.channelId)
         }
     }
     handleMessageUpdate(e) {
         var t;
         let n = null != (t = e.guildId) ? t : null,
-            r = e.message.channel_id,
-            i = e.message.id;
-        if (null == r || null == i) return !1;
-        let l = this.data(n);
-        if ((null == l ? void 0 : l.messageId(r)) !== i) return !1;
-        null == l || l.update(e.message)
+            l = e.message.channel_id,
+            r = e.message.id;
+        if (null == l || null == r) return !1;
+        let i = this.data(n);
+        if ((null == i ? void 0 : i.messageId(l)) !== r) return !1;
+        null == i || i.update(e.message)
     }
     handleThreadListSync(e) {
         var t;
@@ -84,15 +84,15 @@ class f extends r.Ay.Store {
     }
     handleLoadMessagesSuccess(e) {
         var t, n;
-        let r = a.A.getBasicChannel(e.channelId);
-        if (null == r) return !1;
-        (0, l.D)(e.messages), e.isAfter || e.isBefore || e.hasMoreAfter ? this.data(r.guild_id).putNew(e.channelId, null != (n = e.messages[0]) ? n : null, this.generation) : this.data(r.guild_id).put(e.channelId, null != (t = e.messages[0]) ? t : null, this.generation)
+        let l = a.A.getBasicChannel(e.channelId);
+        if (null == l) return !1;
+        (0, i.D)(e.messages), e.isAfter || e.isBefore || e.hasMoreAfter ? this.data(l.guild_id).putNew(e.channelId, null != (n = e.messages[0]) ? n : null, this.generation) : this.data(l.guild_id).put(e.channelId, null != (t = e.messages[0]) ? t : null, this.generation)
     }
     handleLocalMessagesLoaded(e) {
         let t = a.A.getBasicChannel(e.channelId);
         if (null != t) {
             var n;
-            (0, l.D)(e.messages), this.data(t.guild_id).putNew(e.channelId, null != (n = e.messages[0]) ? n : null, c)
+            (0, i.D)(e.messages), this.data(t.guild_id).putNew(e.channelId, null != (n = e.messages[0]) ? n : null, d)
         }
     }
     handleMessagePreviewsLoaded(e) {
@@ -103,14 +103,14 @@ class f extends r.Ay.Store {
     handleMessagePreviewsLocallyLoaded(e) {
         h.verbose("adding local previews (guildId: ".concat(e.guildId, ", messages: ").concat(e.messages.length, ")"));
         let t = this.data(e.guildId);
-        for (let [n, r] of e.messages) t.has(n) || t.put(n, r, c);
+        for (let [n, l] of e.messages) t.has(n) || t.put(n, l, d);
         t.localNeeded = !1
     }
     handleLogout(e) {
         this.guilds.clear()
     }
     constructor() {
-        super(i.h, {
+        super(r.h, {
             CONNECTION_OPEN: e => this.handleConnectionOpen(e),
             GUILD_CREATE: e => this.handleGuildCreate(e),
             GUILD_DELETE: e => this.handleGuildDelete(e),
@@ -123,7 +123,7 @@ class f extends r.Ay.Store {
             MESSAGE_PREVIEWS_LOCALLY_LOADED: e => this.handleMessagePreviewsLocallyLoaded(e),
             MESSAGE_UPDATE: e => this.handleMessageUpdate(e),
             THREAD_LIST_SYNC: e => this.handleThreadListSync(e)
-        }), d(this, "guilds", new Map), d(this, "generation", 0)
+        }), c(this, "guilds", new Map), c(this, "generation", 0)
     }
 }
-let g = new f
+let f = new g

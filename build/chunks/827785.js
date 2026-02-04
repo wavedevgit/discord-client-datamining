@@ -1,7 +1,7 @@
 /** chunk id: 827785, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ez: () => V,
+    Ez: () => F,
     gZ: () => j
 }), n(896048), n(733351), n(65821);
 var r = n(284009),
@@ -308,7 +308,8 @@ let x = n(743361).A,
             },
             get displayDescription() {
                 return w.intl.string(w.t.WTSzVu)
-            }
+            },
+            maxLength: T.zzC
         }],
         predicate: e => {
             let {
@@ -692,7 +693,7 @@ let x = n(743361).A,
         }
     }],
     G = k.filter(e => ["gif", "tenor", "tts", "me", "tableflip", "unflip", "shrug", "spoiler", "nick"].includes(e.untranslatedName)),
-    V = (e, t, n) => {
+    F = (e, t, n) => {
         let r = t ? k : G;
         return r.filter(t => e.includes(t.type) && (!n || t.inputType === I.y$.BUILT_IN_TEXT || t.inputType === I.y$.BUILT_IN_INTEGRATION))
     }

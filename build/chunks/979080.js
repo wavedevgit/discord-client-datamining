@@ -1,6 +1,6 @@
 /** chunk id: 979080, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    H: () => f,
+    H: () => m,
     default: () => A
 });
 var r = n(627968);
@@ -15,10 +15,10 @@ var i = n(65412),
     d = n(688810),
     p = n(826673),
     h = n(728458),
-    g = n(716600),
-    m = n(848295);
+    f = n(716600),
+    g = n(848295);
 
-function f(e) {
+function m(e) {
     let {
         promotionId: t,
         content: n,
@@ -43,9 +43,9 @@ function A(e) {
         location: a
     } = (0, o.p)(), {
         analyticsLocations: p
-    } = (0, d.Ay)(u.A.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL), f = (0, c.Ay)(), A = (0, s.qB1)(f);
+    } = (0, d.Ay)(u.A.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL), m = (0, c.Ay)(), A = (0, s.qB1)(m);
     if ("announcementModalVariant1" === l.properties.oneofKind) {
-        let e = (0, g.t)({
+        let e = (0, f.t)({
             componentId: t,
             promotionId: n,
             content: l.properties.announcementModalVariant1,
@@ -54,7 +54,7 @@ function A(e) {
             analyticsLocation: a,
             isLightTheme: A
         });
-        return (0, r.jsx)(m.A, function(e) {
+        return (0, r.jsx)(g.A, function(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                     r = Object.keys(n);

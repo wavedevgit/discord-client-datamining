@@ -1,6 +1,6 @@
 /** chunk id: 825869, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    v: () => g
+    v: () => f
 });
 var r = n(627968),
     i = n(64700),
@@ -14,18 +14,18 @@ var r = n(627968),
     p = n(985018),
     h = n(173801);
 
-function g(e) {
+function f(e) {
     let {
         active: t,
         user: n,
-        channel: g
-    } = e, m = (0, c.k)(), f = i.useCallback(() => {
+        channel: f
+    } = e, g = (0, c.k)(), m = i.useCallback(() => {
         (0, l.showToast)((0, l.createToast)(p.intl.string(p.t["EDYbS+"]), l.ToastType.FAILURE))
     }, []), A = i.useCallback(() => {
         s.A.closeChannelSidebar(o.fe)
     }, []), _ = i.useCallback(() => {
-        s.A.closeChannelSidebar(o.fe), m && (0, a.iN)(g.id)
-    }, [g.id, m]), {
+        s.A.closeChannelSidebar(o.fe), g && (0, a.iN)(f.id)
+    }, [f.id, g]), {
         acceptMessageRequest: b,
         rejectMessageRequest: E,
         isAcceptLoading: O,
@@ -37,12 +37,12 @@ function g(e) {
         user: n,
         onAcceptSuccess: _,
         onRejectSuccess: A,
-        onError: f
+        onError: m
     }), C = O || y || I || v || S;
     return (0, r.jsxs)("div", {
         className: h.kL,
         children: [(0, r.jsx)(d.A, {
-            channel: g,
+            channel: f,
             otherUser: n,
             active: t
         }), (0, r.jsxs)("div", {
@@ -55,7 +55,7 @@ function g(e) {
                     size: "sm",
                     text: p.intl.string(p.t.B2nygW),
                     onClick: e => {
-                        e.stopPropagation(), E(g.id)
+                        e.stopPropagation(), E(f.id)
                     },
                     disabled: C,
                     loading: y || S
@@ -68,7 +68,7 @@ function g(e) {
                     size: "sm",
                     text: p.intl.string(p.t.Kz8Pwr),
                     onClick: e => {
-                        e.stopPropagation(), b(g.id)
+                        e.stopPropagation(), b(f.id)
                     },
                     disabled: C,
                     loading: O || I || v

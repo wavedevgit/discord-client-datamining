@@ -14,9 +14,9 @@ var r = n(627968),
     d = n(490415),
     p = n(456412),
     h = n(441271),
-    g = n(915967),
-    m = n(775121),
-    f = n(268218),
+    f = n(915967),
+    g = n(775121),
+    m = n(268218),
     A = n(670735),
     _ = n(976860),
     b = n(210714),
@@ -35,7 +35,7 @@ function C(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let N = (0, f.Fe)({
+let N = (0, m.Fe)({
     createPromise: () => Promise.all([n.e("19846"), n.e("41031")]).then(n.bind(n, 554238)),
     webpackId: 554238
 });
@@ -48,10 +48,10 @@ class j extends i.PureComponent {
     componentDidMount() {
         (0, o.N)(this.props.location), this.stopListeningToHistory = (0, _.JK)().listen(e => {
             e.pathname.startsWith(I.BVt.APPLICATION_STORE) && (0, o.N)(e)
-        }), this.props.isAuthenticated && (0, c.$o)(), m.A.disable(), m.A.setLayout(h.E), m.A.enable(), (0, b.d)("application_store")
+        }), this.props.isAuthenticated && (0, c.$o)(), g.A.disable(), g.A.setLayout(h.E), g.A.enable(), (0, b.d)("application_store")
     }
     componentWillUnmount() {
-        null != this.stopListeningToHistory && this.stopListeningToHistory(), m.A.disable(), m.A.setLayout(g.zR), m.A.enable()
+        null != this.stopListeningToHistory && this.stopListeningToHistory(), g.A.disable(), g.A.setLayout(f.zR), g.A.enable()
     }
     renderCustomErrorMessage() {
         return (0, r.jsxs)("div", {

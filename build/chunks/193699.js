@@ -1,6 +1,6 @@
 /** chunk id: 193699, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var r = n(627968);
 n(64700);
@@ -14,18 +14,18 @@ var i = n(503698),
     d = n(652215),
     p = n(49999),
     h = n(985018),
-    g = n(786983);
+    f = n(786983);
 
-function m(e) {
+function g(e) {
     let {
         className: t,
         markAsDismissed: n
     } = e;
     return (0, r.jsxs)(o.A, {
-        className: l()(g.Nr, t),
+        className: l()(f.Nr, t),
         children: [(0, r.jsx)(a.Heading, {
             variant: "heading-md/semibold",
-            className: g.wx,
+            className: f.wx,
             children: h.intl.string(h.t.HcbnMM)
         }), (0, r.jsx)(a.Text, {
             variant: "text-sm/normal",
@@ -37,7 +37,7 @@ function m(e) {
                 }
             })
         }), (0, r.jsxs)("div", {
-            className: g.UD,
+            className: f.UD,
             children: [(0, r.jsx)(a.Button, {
                 variant: "primary",
                 size: "sm",

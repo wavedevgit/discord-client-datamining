@@ -14,9 +14,9 @@ var i = n(562465),
     d = n(469778),
     p = n(147964),
     h = n(927813),
-    g = n(837921),
-    m = n(636401),
-    f = n(613057),
+    f = n(837921),
+    g = n(636401),
+    m = n(613057),
     A = n(652215);
 
 function _(e) {
@@ -53,7 +53,7 @@ function b(e, t) {
 let E = 10 * h.A.Millis.SECOND,
     O = {
         [A.e$_.VALIDATE_APPLICATION]: {
-            scope: f.hj,
+            scope: m.hj,
             handler(e) {
                 let {
                     socket: t
@@ -61,28 +61,28 @@ let E = 10 * h.A.Millis.SECOND,
                 try {
                     var o;
                     let e;
-                    if (null == i) throw new m.A({
+                    if (null == i) throw new g.A({
                         errorCode: A.Lw6.INVALID_COMMAND
                     }, "No application.");
                     let t = c.A.getApplication(i);
-                    if (null == t) throw new m.A({
+                    if (null == t) throw new g.A({
                         errorCode: A.Lw6.INVALID_ENTITLEMENT
                     }, "SKU does not exist.");
                     let n = t.primarySkuId;
-                    if (null == n) throw new m.A({
+                    if (null == n) throw new g.A({
                         errorCode: A.Lw6.INVALID_ENTITLEMENT
                     }, "SKU does not exist.");
                     return Promise.race([(o = t.id, e = d.A.isEntitledToSku(u.default.getCurrentUser(), n, o), null != e ? Promise.resolve(e) : (0, s.LM)(o).then(() => !0 === d.A.isEntitledToSku(u.default.getCurrentUser(), n, o))).then(e => {
-                        if (!e) throw new m.A({
+                        if (!e) throw new g.A({
                             errorCode: A.Lw6.INVALID_ENTITLEMENT
                         }, "User does not have entitlement.")
                     }), (0, l.BK)(E).then(() => {
-                        throw new m.A({
+                        throw new g.A({
                             errorCode: A.Lw6.INVALID_ENTITLEMENT
                         }, "Timed out fetching entitlement.")
                     })])
                 } catch (e) {
-                    throw e.code === A.Lw6.INVALID_ENTITLEMENT && (g.Ay.focus(null, !0), (0, a.mMO)(async () => {
+                    throw e.code === A.Lw6.INVALID_ENTITLEMENT && (f.Ay.focus(null, !0), (0, a.mMO)(async () => {
                         let {
                             default: e
                         } = await n.e("26766").then(n.bind(n, 448701));
@@ -94,12 +94,12 @@ let E = 10 * h.A.Millis.SECOND,
             }
         },
         [A.e$_.GET_ENTITLEMENT_TICKET]: {
-            scope: f.hj,
+            scope: m.hj,
             handler(e) {
                 let {
                     socket: t
                 } = e, l = t.application.id;
-                if (null == l) throw new m.A({
+                if (null == l) throw new g.A({
                     errorCode: A.Lw6.INVALID_COMMAND
                 }, "No application.");
                 return i.Bo.post({
@@ -116,7 +116,7 @@ let E = 10 * h.A.Millis.SECOND,
                     } = e;
                     return t
                 }).catch(e => {
-                    throw g.Ay.focus(null, !0), (0, a.mMO)(async () => {
+                    throw f.Ay.focus(null, !0), (0, a.mMO)(async () => {
                         let {
                             default: e
                         } = await n.e("26766").then(n.bind(n, 448701));

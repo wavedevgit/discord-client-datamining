@@ -3,7 +3,7 @@
 n.d(t, {
     Ay: () => Q,
     UB: () => z,
-    _0: () => V,
+    _0: () => F,
     dv: () => W,
     kw: () => Y
 }), n(896048), n(747238), n(812715), n(65821), n(457529), n(321073);
@@ -76,11 +76,11 @@ let D = new Set(["discord_erlpack", "discord_game_utils", "discord_rpc", "discor
     k = /(\.[a-zA-Z0-9]+)%3A.+$/,
     U = /[^a-zA-Z0-9]/g,
     G = /\.[^.]*$/;
-var V = function(e) {
+var F = function(e) {
     return e.SAVED = "saved", e.CANCELED = "canceled", e.ERRORED = "errored", e
 }({});
 
-function F(e) {
+function V(e) {
     try {
         let t = decodeURIComponent(e);
         return (t = (t = t.replace(j, "$1")).replace(/(.+)@([a-zA-Z0-9]+)$/, "$1.$2")).replace(M, "_")
@@ -340,7 +340,7 @@ let Z = {
             let c = m.A.toURLSafe(e);
             if (null == c) return "errored";
             let u = null != (r = c.pathname.split("/").pop()) ? r : "unknown";
-            u = F(u);
+            u = V(u);
             let d = c.searchParams.get("format");
             if (null != d) {
                 let e = d.replace(U, "").toLowerCase();
@@ -372,7 +372,7 @@ let Z = {
             let r = m.A.toURLSafe(e);
             if (null == r) return null;
             let i = null != (n = null != t ? t : r.pathname.split("/").pop()) ? n : "unknown";
-            null == t && (i = F(i));
+            null == t && (i = V(i));
             let a = await B(e),
                 o = E.from(a),
                 s = await A.fileManager.saveWithDialog(o, i, void 0);

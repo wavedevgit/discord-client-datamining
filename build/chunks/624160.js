@@ -13,9 +13,9 @@ var r = n(627968),
     d = n(635344),
     p = n(735321),
     h = n(384377),
-    g = n(492280),
-    m = n(939899),
-    f = n(518477),
+    f = n(492280),
+    g = n(939899),
+    m = n(518477),
     A = n(985018),
     _ = n(369134);
 let b = {
@@ -99,7 +99,7 @@ function E(e) {
                 return e
             }({
                 action: "WIDGET_ADDED"
-            }, n.getProfileEditAnalyticsOptions())), (0, h.XA)(f.jM.WIDGET_ADDED), null == l || l())
+            }, n.getProfileEditAnalyticsOptions())), (0, h.XA)(m.jM.WIDGET_ADDED), null == l || l())
         }, [c, n, d, l]),
         v = null == O ? void 0 : O(n);
     return (0, r.jsxs)("div", {
@@ -113,19 +113,19 @@ function E(e) {
                 let e = A(n);
                 switch (e.variant) {
                     case "details":
-                        return (0, r.jsx)(g.E, {
+                        return (0, r.jsx)(f.E, {
                             className: _.xR,
                             applicationId: e.applicationId,
                             size: s
                         });
                     case "grid":
-                        return (0, r.jsx)(g.l, {
+                        return (0, r.jsx)(f.l, {
                             className: _.xR,
                             applicationIds: e.applicationIds,
                             size: s
                         });
                     case "application-widget":
-                        return (0, r.jsx)(m.A, {
+                        return (0, r.jsx)(g.A, {
                             applicationId: e.applicationId,
                             size: s
                         });
@@ -153,7 +153,7 @@ function E(e) {
                     }) : null]
                 })]
             })]
-        }), "application-widget" === (t = A(n)).variant ? (0, r.jsx)(m.R, {
+        }), "application-widget" === (t = A(n)).variant ? (0, r.jsx)(g.R, {
             applicationId: t.applicationId,
             size: s
         }) : null]

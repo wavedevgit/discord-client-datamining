@@ -6,7 +6,7 @@ n.d(t, {
     Oz: () => er,
     QA: () => J,
     Zc: () => W,
-    cf: () => F,
+    cf: () => V,
     d5: () => Q,
     e0: () => en,
     hJ: () => H,
@@ -14,7 +14,7 @@ n.d(t, {
     m6: () => Y,
     navigateToQuestHome: () => K,
     q$: () => ee,
-    rx: () => V,
+    rx: () => F,
     z6: () => q
 });
 var r = n(627968);
@@ -91,7 +91,7 @@ function k(e, t) {
 let U = "in-app",
     G = "Discord Widget";
 
-function V(e) {
+function F(e) {
     let {
         quest: t,
         sourceQuestContent: i
@@ -107,7 +107,7 @@ function V(e) {
     })
 }
 
-function F(e, t, i) {
+function V(e, t, i) {
     (0, s.mMO)(async () => {
         let {
             default: a

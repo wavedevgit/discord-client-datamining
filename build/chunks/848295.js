@@ -13,9 +13,9 @@ var r = n(627968),
     d = n(732955),
     p = n(397927),
     h = n(775602),
-    g = n(139286),
-    m = n(871751),
-    f = n(259407),
+    f = n(139286),
+    g = n(871751),
+    m = n(259407),
     A = n(915089),
     _ = n(607470),
     b = n(367727),
@@ -134,7 +134,7 @@ function w(e) {
             r = ea.current;
         return es.current && (Z(n += t), eo.current || $(r += t)), Q(e), [n, r]
     }
-    return (0, g.A)({
+    return (0, f.A)({
         type: s.ImpressionTypes.MODAL,
         name: s.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
         properties: {
@@ -245,13 +245,13 @@ function w(e) {
                             default: e.isDefault
                         }, e.locale)
                     })
-                }) : "embed" === w.type ? (0, r.jsx)(m.rr, {
+                }) : "embed" === w.type ? (0, r.jsx)(g.rr, {
                     className: a()(C.Ki, L),
                     allowFullScreen: !1,
                     href: w.href,
                     thumbnail: w.thumbnail,
                     video: w.embed,
-                    provider: f.mt.YOUTUBE,
+                    provider: m.mt.YOUTUBE,
                     maxWidth: w.embed.width,
                     maxHeight: w.embed.height,
                     renderVideoComponent: E.$o,

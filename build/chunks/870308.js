@@ -1,6 +1,6 @@
 /** chunk id: 870308, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => f
 }), n(896048);
 var r = n(64700),
     i = n(379197),
@@ -13,13 +13,13 @@ var r = n(64700),
     d = n(212407),
     p = n(158216),
     h = n(49999);
-let g = () => {
+let f = () => {
     var e;
     let t = (0, a.bG)([u.A], () => u.A.getMarketingBySurface(i.R.DESKTOP_SHOP_BUTTON)),
         n = !(0, o.ueM)(),
-        [g, m] = (0, c.RF)(n ? s.M.COLLECTIBLES_SHOP_ENTRY_MARKETING : null, null != (e = null == t ? void 0 : t.version) ? e : 0, void 0, !0),
-        f = (0, d.bv)(t),
-        A = null != g ? ((e, t) => {
+        [f, g] = (0, c.RF)(n ? s.M.COLLECTIBLES_SHOP_ENTRY_MARKETING : null, null != (e = null == t ? void 0 : t.version) ? e : 0, void 0, !0),
+        m = (0, d.bv)(t),
+        A = null != f ? ((e, t) => {
             var n, r, i, a, s, o, c, u;
             if ((null == t ? void 0 : t.type) === l.G.COACHTIP || e.hasPreviewAssets) {
                 let i = null != t ? {
@@ -89,10 +89,10 @@ let g = () => {
                 }
             }
             return null
-        })(f, t) : null,
+        })(m, t) : null,
         _ = r.useCallback(() => {
-            null != A && m(h.i.AUTO)
-        }, [A, m]);
+            null != A && g(h.i.AUTO)
+        }, [A, g]);
     return {
         shopButtonDisplayOptions: A,
         dismissShopButtonDC: _

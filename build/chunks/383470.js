@@ -1,6 +1,6 @@
 /** chunk id: 383470, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 }), n(321073);
 var r = n(627968),
     i = n(64700),
@@ -13,19 +13,19 @@ var r = n(627968),
     d = n(599907),
     p = n(652215),
     h = n(27740);
-let g = {
+let f = {
     page: p.liQ.GUILD_DISCOVERY,
     object: p.ZSU.CARD,
     section: p.JJy.DISCOVER_POPULAR
 };
 
-function m(e) {
+function g(e) {
     let {
         tab: t,
         guildIds: n,
         loading: p,
-        onScroll: m,
-        onGuildCardClick: f,
+        onScroll: g,
+        onGuildCardClick: m,
         onGuildCardSeen: A
     } = e, _ = (0, u.kc)(t), b = (0, u.Ot)(t), E = (0, u.UW)(t), O = (0, u.Ub)(t), y = i.useMemo(() => {
         let e = p ? 30 : n.length,
@@ -35,14 +35,14 @@ function m(e) {
             t.push((0, r.jsx)(d.jO, {
                 guildId: null != (i = n[a]) ? i : null,
                 index: a,
-                onClick: e => f(e, a, O, g),
+                onClick: e => m(e, a, O, f),
                 onView: e => A(e, O)
             }, null != (l = n[a]) ? l : a))
         }
         return t
-    }, [O, n, p, f, A]);
+    }, [O, n, p, m, A]);
     return (0, r.jsxs)(c.A, {
-        onScroll: m,
+        onScroll: g,
         children: [(0, r.jsx)(s.A, {
             title: _,
             description: b,

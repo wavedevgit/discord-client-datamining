@@ -43,8 +43,8 @@ var r = n(627968),
     k = n(788868),
     U = n(652215),
     G = n(818348),
-    V = n(985018),
-    F = n(329221);
+    F = n(985018),
+    V = n(329221);
 
 function B(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -106,8 +106,8 @@ function z(e, t) {
 }
 
 function q(e, t) {
-    let n = V.intl.string(V.t.BYa62u),
-        r = V.intl.string(V.t.CDa6Dq),
+    let n = F.intl.string(F.t.BYa62u),
+        r = F.intl.string(F.t.CDa6Dq),
         i = (() => {
             switch (e.interval) {
                 case k.WT.YEAR:
@@ -122,18 +122,18 @@ function q(e, t) {
         case k.pe.TIER_0:
             switch (a) {
                 case k.pe.TIER_1:
-                    return V.intl.string(V.t.q6mxDS);
+                    return F.intl.string(F.t.q6mxDS);
                 case k.pe.TIER_2:
-                    return V.intl.string(V.t.seZVS0);
+                    return F.intl.string(F.t.seZVS0);
                 default:
                     return i
             }
         case k.pe.TIER_1:
             switch (a) {
                 case k.pe.TIER_0:
-                    return V.intl.string(V.t["7+u2zg"]);
+                    return F.intl.string(F.t["7+u2zg"]);
                 case k.pe.TIER_2:
-                    return V.intl.string(V.t.NG2qcc);
+                    return F.intl.string(F.t.NG2qcc);
                 default:
                     return i
             }
@@ -141,9 +141,9 @@ function q(e, t) {
             switch (a) {
                 case k.pe.TIER_0:
                 case k.pe.TIER_1:
-                    return V.intl.string(V.t["eB0/w9"]);
+                    return F.intl.string(F.t["eB0/w9"]);
                 case k.pe.TIER_2:
-                    return e.interval === k.WT.MONTH ? V.intl.formatToPlainString(V.t.RqUv86, {
+                    return e.interval === k.WT.MONTH ? F.intl.formatToPlainString(F.t.RqUv86, {
                         numFreeGuildSubscriptions: k.M4
                     }) : i;
                 default:
@@ -157,7 +157,7 @@ let Z = () => {
         let {
             userTrialOffer: e
         } = (0, h.P5)(), t = null == e ? void 0 : e.subscription_trial;
-        return i.useMemo(() => (null == t ? void 0 : t.interval) === k.WT.DAY ? (null == t ? void 0 : t.interval_count) > 7 ? V.intl.string(V.t.Z1V2cs) : V.intl.string(V.t.MI1rHs) : V.intl.string(V.t["+S5lrV"]), [t])
+        return i.useMemo(() => (null == t ? void 0 : t.interval) === k.WT.DAY ? (null == t ? void 0 : t.interval_count) > 7 ? F.intl.string(F.t.Z1V2cs) : F.intl.string(F.t.MI1rHs) : F.intl.string(F.t["+S5lrV"]), [t])
     },
     Q = e => {
         var t, n, r, a;
@@ -182,10 +182,10 @@ let Z = () => {
             giftRecipient: M,
             selectedGiftStyle: j,
             customGiftMessage: U,
-            setCustomGiftMessage: V,
-            claimableRewards: F,
+            setCustomGiftMessage: F,
+            claimableRewards: V,
             setSelectedGiftingPromotionReward: B
-        } = (0, _.Pv)(), H = (0, C.kz)(w, x && (0, b.Ik)(M), F), Y = (0, E.tA)({
+        } = (0, _.Pv)(), H = (0, C.kz)(w, x && (0, b.Ik)(M), V), Y = (0, E.tA)({
             location: "PremiumPlanSelectStep",
             giftRecipient: M,
             isGift: x
@@ -213,8 +213,8 @@ let Z = () => {
                 }
             }
         }, [er, x, f, z, J]), i.useEffect(() => {
-            H && null != F && F.length > 0 && B(F[0])
-        }, [F, B, H]);
+            H && null != V && V.length > 0 && B(V[0])
+        }, [V, B, H]);
         let ei = (0, l._u)(),
             {
                 ref: ea
@@ -245,7 +245,7 @@ let Z = () => {
             isGift: x,
             giftRecipient: M,
             customGiftMessage: U,
-            setCustomGiftMessage: V,
+            setCustomGiftMessage: F,
             selectedGiftStyle: j,
             isEligibleForBOGOPromotion: Q,
             isEligibleForTrial: D,
@@ -265,9 +265,9 @@ let Z = () => {
         } = e;
         return (0, r.jsxs)("div", {
             children: [(0, r.jsx)("div", {
-                className: F.T
+                className: V.T
             }), (0, r.jsx)(R.Sd, {
-                label: V.intl.string(V.t.txajQG),
+                label: F.intl.string(F.t.txajQG),
                 value: (0, r.jsx)(P.A, {
                     price: i.amount,
                     currency: i.currency,
@@ -275,7 +275,7 @@ let Z = () => {
                     intervalCount: n.intervalCount,
                     isPrepaidPaymentSource: t
                 }),
-                className: F.M3
+                className: V.M3
             })]
         })
     },
@@ -297,25 +297,25 @@ let Z = () => {
             warningComponent: g
         } = e, E = () => {
             if ((0, b.lo)(t) === b.tB.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null != i) return (0, r.jsx)(L.A, {
-                className: F.iX,
-                innerClassName: F.pt,
+                className: V.iX,
+                innerClassName: V.pt,
                 onTextChange: e => i(e),
                 pendingText: n,
                 currentText: n
             })
         }, y = e => (0, r.jsx)(c.D0$, {
-            label: V.intl.string(V.t["3E5hXj"]),
+            label: F.intl.string(F.t["3E5hXj"]),
             children: e
         });
         if ((0, b.Ik)(t)) return (0, r.jsxs)("div", {
-            className: F.mh,
+            className: V.mh,
             children: [(0, r.jsx)("div", {
-                className: F.MU,
+                className: V.MU,
                 children: null != a && (0, r.jsx)(x.t, {})
             }), (0, r.jsxs)("div", {
-                className: F.Tc,
+                className: V.Tc,
                 children: [(0, r.jsx)(j.Z, {
-                    className: f ? F.KW : void 0,
+                    className: f ? V.KW : void 0,
                     giftRecipient: t
                 }), E(), y(m), g, !o && (0, r.jsx)(p.A, {
                     onClose: _
@@ -324,9 +324,9 @@ let Z = () => {
         });
         let O = l && h;
         return (0, r.jsxs)("div", {
-            className: F.Du,
+            className: V.Du,
             children: [(0, r.jsx)(j.Z, {
-                className: f ? F.KW : void 0,
+                className: f ? V.KW : void 0,
                 giftRecipient: t
             }), y(m), O && null != u && null != d && (0, r.jsx)(X, {
                 selectedPlan: u,
@@ -471,23 +471,23 @@ function en(e) {
         discountInvoiceItems: d
     }), ee = Z(), en = (e, n, i) => {
         if (!j) return (0, r.jsx)("div", {
-            className: F.VZ,
-            children: V.intl.string(V.t.a19jpU)
+            className: V.VZ,
+            children: F.intl.string(F.t.a19jpU)
         });
         if (n) {
             let t = (null == e ? void 0 : e.trial_id) === k.Dw;
             return (0, r.jsxs)("div", {
                 children: [(0, r.jsx)(c.Text, {
                     variant: "text-sm/normal",
-                    className: F.Tz,
-                    children: t ? V.intl.format(V.t.nG95hA, {
+                    className: V.Tz,
+                    children: t ? F.intl.format(F.t.nG95hA, {
                         endDate: s
-                    }) : V.intl.format(V.t.s4E7kb, {
+                    }) : F.intl.format(F.t.s4E7kb, {
                         trialEnd: s,
                         trialPeriod: ee
                     })
                 }), (0, r.jsx)("hr", {
-                    className: F.RA
+                    className: V.RA
                 })]
             })
         }
@@ -496,14 +496,14 @@ function en(e) {
             return (0, r.jsxs)("div", {
                 children: [(0, r.jsx)(c.Text, {
                     variant: "text-sm/normal",
-                    className: F.Tz,
-                    children: V.intl.format(V.t["nG7g/E"], {
+                    className: V.Tz,
+                    children: F.intl.format(F.t["nG7g/E"], {
                         numMonths: null != (a = null == w ? void 0 : w.discount.user_usage_limit) ? a : "",
                         discountedPrice: (0, A.$g)(P.amount - B, P.currency),
                         regularPrice: (0, A.$g)(P.amount, P.currency)
                     })
                 }), (0, r.jsx)("hr", {
-                    className: F.RA
+                    className: V.RA
                 })]
             })
         }
@@ -522,7 +522,7 @@ function en(e) {
         isPlansEligibleForDiscount: R,
         discountAmountOff: B
     }), ei = () => z && null != K ? (0, r.jsx)(u.A, {
-        message: V.intl.formatToPlainString(V.t["9hnZoK"], {
+        message: F.intl.formatToPlainString(F.t["9hnZoK"], {
             kunaPriceWithCurrency: (0, A.$g)(7.5345 * K.amount, G.Yr.HRK)
         })
     }) : null, {
@@ -553,7 +553,7 @@ function en(e) {
     let es = !I && !R && $ && l,
         el = !(I && ea);
     return (0, r.jsxs)("div", {
-        className: F.Du,
+        className: V.Du,
         children: [ea && (0, r.jsx)(D.vi, {
             fractionalPremiumInfo: eo,
             enablePremiumBrandRefresh: !0,
@@ -561,7 +561,7 @@ function en(e) {
             trialPeriod: I ? ee : void 0,
             trialEnd: I ? s : void 0
         }), null != y && !ea && !x && (0, r.jsx)("div", {
-            className: F.G3,
+            className: V.G3,
             children: q(y, _)
         }), el && en(M, I, R), er(), es && null != g && null != K && (0, r.jsx)(X, {
             selectedPlan: g,
@@ -569,7 +569,7 @@ function en(e) {
             intervalType: g.interval,
             isPrepaid: H
         }), ei(), !j && l && (0, r.jsx)(u.A, {
-            message: V.intl.format(V.t.Om31w8, {
+            message: F.intl.format(F.t.Om31w8, {
                 documentationLink: O.A.getArticleURL(U.MVz.LOCALIZED_PRICING)
             })
         })]

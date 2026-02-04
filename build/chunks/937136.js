@@ -1,5 +1,5 @@
 /** chunk id: 937136, original params: e,t,n (module,exports,require) **/
-function i(e, t, n) {
+function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -46,6 +46,6 @@ class r {
         }
     }
     constructor() {
-        i(this, "pending", new Set), i(this, "fetching", new Set)
+        l(this, "pending", new Set), l(this, "fetching", new Set)
     }
 }

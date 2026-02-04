@@ -1,13 +1,13 @@
 /** chunk id: 925159, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => x
 });
 var i = n(627968),
     r = n(397927),
     l = n(684013),
     a = n(966327),
-    s = n(587895),
-    o = n(15285),
+    o = n(587895),
+    s = n(15285),
     u = n(769015),
     c = n(734057),
     d = n(309010),
@@ -16,49 +16,49 @@ var i = n(627968),
     f = n(41984),
     g = n(589051),
     m = n(592598),
-    y = n(395011),
-    A = n(222506),
-    v = n(145567),
-    b = n(581730),
-    E = n(672396),
-    O = n(652215),
-    x = n(985018),
-    _ = n(976723);
+    A = n(395011),
+    y = n(222506),
+    O = n(145567),
+    v = n(581730),
+    b = n(672396),
+    E = n(652215),
+    _ = n(985018),
+    S = n(976723);
 
-function S(e, t, n) {
-    var S;
-    if (m.A.isNotificationDisabled(E.KS.NowPlayingNotification)) return null;
+function x(e, t, n) {
+    var x;
+    if (m.A.isNotificationDisabled(b.KS.NowPlayingNotification)) return null;
     let I = h.default.getUser(e);
     if (null == I) return null;
     let j = d.A.getCurrentlySelectedChannelId(),
-        T = c.A.getChannel(j),
-        C = s.A.getApplication(t),
-        N = o.Ay.getRunningGames().find(e => e.id === t),
-        w = null != (S = null == N ? void 0 : N.name) ? S : null == C ? void 0 : C.name,
-        P = (0, p.mG)(null == T ? void 0 : T.guild_id, null == T ? void 0 : T.id, I),
+        C = c.A.getChannel(j),
+        T = o.A.getApplication(t),
+        w = s.Ay.getRunningGames().find(e => e.id === t),
+        N = null != (x = null == w ? void 0 : w.name) ? x : null == T ? void 0 : T.name,
+        P = (0, p.mG)(null == C ? void 0 : C.guild_id, null == C ? void 0 : C.id, I),
         D = (0, i.jsxs)("div", {
-            className: _.Ql,
+            className: S.Ql,
             children: [(0, i.jsx)("div", {
-                className: _.bf,
+                className: S.bf,
                 children: (0, i.jsx)(a.A, {
                     user: I,
                     "aria-hidden": !0,
                     size: r._3J.SIZE_24
                 })
             }), (0, i.jsx)("div", {
-                className: _.rf,
+                className: S.rf,
                 children: (0, i.jsx)(r.Text, {
                     variant: "text-sm/medium",
                     color: "interactive-text-default",
-                    className: _.G3,
-                    children: x.intl.format(x.t["q7/rgv"], {
+                    className: S.G3,
+                    children: _.intl.format(_.t["q7/rgv"], {
                         username: null != P ? P : I.username,
-                        gameName: w,
-                        gameIcon: () => null != C || null != N ? (0, i.jsx)(u.A, {
-                            game: C,
-                            pid: null == N ? void 0 : N.pid,
+                        gameName: N,
+                        gameIcon: () => null != T || null != w ? (0, i.jsx)(u.A, {
+                            game: T,
+                            pid: null == w ? void 0 : w.pid,
                             size: u.M.XSMALL,
-                            className: _.Gt
+                            className: S.Gt
                         }) : null
                     })
                 })
@@ -66,46 +66,46 @@ function S(e, t, n) {
         }),
         {
             trackView: R,
-            trackClick: k
-        } = (0, b.Y9)(E.KS.NowPlayingNotification, {
-            notif_type: E.KS.NowPlayingNotification,
+            trackClick: L
+        } = (0, v.Y9)(b.KS.NowPlayingNotification, {
+            notif_type: b.KS.NowPlayingNotification,
             notif_user_id: I.id,
             activity_type: n.type,
-            activity_name: null != w ? w : n.name
+            activity_name: null != N ? N : n.name
         }),
         {
-            hasChat: M
+            hasChat: k
         } = (0, g.NI)("nowPlayingNotification");
     return {
         body: D,
-        className: _.dn,
-        wrapperClassName: _.P6,
-        animationWrapperClassName: _.VG,
+        className: S.dn,
+        wrapperClassName: S.P6,
+        animationWrapperClassName: S.VG,
         maxBodyLines: 1,
-        disableClickableRegions: !M,
+        disableClickableRegions: !k,
         onNotificationShow: () => {
             R()
         },
         onNotificationClick: (e, t) => {
-            M && (async () => {
+            k && (async () => {
                 try {
-                    let e = await (0, v.D$)({
+                    let e = await (0, O.D$)({
                         target: {
-                            kind: v.bB.DM_USER,
+                            kind: O.bB.DM_USER,
                             userId: I.id,
                             messageId: null
                         },
                         source: f.B9.NOTIFICATION_CLICK,
-                        widgetType: O.uss.NOTIFICATIONS
+                        widgetType: E.uss.NOTIFICATIONS
                     });
                     if (null == e) return;
-                    let n = y.A.getTargetPID();
-                    A.A.isInputLocked(n) ? (k("unlock"), l.A.setInputLocked(!1, n)) : k("jump"), l.A.updateNotificationStatus(t, O.yFH.DISMISSED)
+                    let n = A.A.getTargetPID();
+                    y.A.isInputLocked(n) ? (L("unlock"), l.A.setInputLocked(!1, n)) : L("jump"), l.A.updateNotificationStatus(t, E.yFH.DISMISSED)
                 } catch (e) {}
             })()
         },
         onDismissClick: () => {
-            k("dismiss")
+            L("dismiss")
         }
     }
 }

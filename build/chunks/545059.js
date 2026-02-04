@@ -1,13 +1,13 @@
 /** chunk id: 545059, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => s
 });
-var i = n(835245),
+var l = n(835245),
     r = n(73153),
-    l = n(870391);
-let a = {
+    i = n(870391);
+let s = {
     createGroup(e) {
-        let t = (0, i.A)();
+        let t = (0, l.A)();
         return r.h.dispatch({
             type: "CREATE_FRIEND_GROUP",
             groupId: t,
@@ -50,7 +50,7 @@ let a = {
         })
     },
     toggleUserInGroup(e, t) {
-        let n = l.A.getGroup(e);
+        let n = i.A.getGroup(e);
         null != n && (n.userIds.includes(t) ? this.removeUsersFromGroup(e, t) : this.addUsersToGroup(e, t))
     }
 }

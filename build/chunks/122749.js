@@ -6,8 +6,8 @@ var i = n(387755),
     r = n(684013),
     l = n(956793),
     a = n(571694),
-    s = n(47167),
-    o = n(994500),
+    o = n(47167),
+    s = n(994500),
     u = n(287809),
     c = n(621436),
     d = n(581730),
@@ -16,13 +16,13 @@ var i = n(387755),
     f = n(985018);
 
 function g(e) {
-    let t = (0, s.m1)(e, u.default, o.A),
+    let t = (0, o.m1)(e, u.default, s.A),
         n = f.intl.string(f.t.ssrVzG),
         g = (0, a.Y)(e),
         m = (0, c.A)(e),
         {
-            trackView: y,
-            trackClick: A
+            trackView: A,
+            trackClick: y
         } = (0, d.Y9)(h.KS.IncomingCall, {
             notif_type: h.KS.IncomingCall,
             notif_user_id: m,
@@ -37,10 +37,10 @@ function g(e) {
         confirmText: f.intl.string(f.t["0D/6Rz"]),
         cancelText: f.intl.string(f.t.BVN4pL),
         onNotificationShow: () => {
-            y()
+            A()
         },
         onConfirmClick: (t, n) => {
-            if (A("join"), p.kvI.CALLABLE.has(e.type)) i.A.call(e.id, !1, !1);
+            if (y("join"), p.kvI.CALLABLE.has(e.type)) i.A.call(e.id, !1, !1);
             else {
                 if (e.type !== p.rbe.GUILD_VOICE) return;
                 l.default.selectVoiceChannel(e.id)
@@ -53,10 +53,10 @@ function g(e) {
             })
         },
         onCancelClick: () => {
-            A("decline"), i.A.stopRinging(e.id)
+            y("decline"), i.A.stopRinging(e.id)
         },
         onDismissClick: () => {
-            A("dismiss")
+            y("dismiss")
         }
     }
 }

@@ -13,9 +13,9 @@ var r = n(627968),
     d = n(990078),
     p = n(582754),
     h = n(421380),
-    g = n(397927),
-    m = n(73153),
-    f = n(442433),
+    f = n(397927),
+    g = n(73153),
+    m = n(442433),
     A = n(92077),
     _ = n(979604),
     b = n(707606),
@@ -262,9 +262,9 @@ class W extends i.PureComponent {
         } = e;
         return (0, r.jsxs)(y.A, {
             direction: y.A.Direction.VERTICAL,
-            children: [(0, r.jsx)(g.iCB, {
+            children: [(0, r.jsx)(f.iCB, {
                 percent: t,
-                size: g.iCB.Sizes.SMALL,
+                size: f.iCB.Sizes.SMALL,
                 foregroundColor: n,
                 foregroundGradientColor: null != i ? [i[0], i[1]] : void 0,
                 animate: this.isFocused
@@ -281,9 +281,9 @@ class W extends i.PureComponent {
         } = e;
         return (0, r.jsxs)(y.A, {
             direction: y.A.Direction.VERTICAL,
-            children: [(0, r.jsx)(g.LvI, {
+            children: [(0, r.jsx)(f.LvI, {
                 percents: t,
-                size: g.LvI.Sizes.SMALL,
+                size: f.LvI.Sizes.SMALL,
                 foregroundColors: V,
                 animate: this.isFocused
             }), (0, r.jsx)("div", {
@@ -457,12 +457,12 @@ class W extends i.PureComponent {
     }
 }
 let q = () => (0, r.jsx)(B, {
-        icon: g.udU,
+        icon: f.udU,
         tooltip: M.intl.string(M.t.YGm6SZ),
         onClick: () => A.U()
     }),
     z = () => (0, r.jsx)(B, {
-        icon: g.E$n,
+        icon: f.E$n,
         tooltip: M.intl.string(M.t.TVAd5J),
         onClick: () => A.v7()
     }),
@@ -471,7 +471,7 @@ let q = () => (0, r.jsx)(B, {
             item: t
         } = e;
         return (0, r.jsx)(B, {
-            icon: g.z$m,
+            icon: f.z$m,
             tooltip: M.intl.string(M.t["Eqb+LN"]),
             onClick: () => A.BO(t.applicationId, t.branchId)
         })
@@ -481,7 +481,7 @@ let q = () => (0, r.jsx)(B, {
             item: t
         } = e;
         return (0, r.jsx)(B, {
-            icon: g.PGe,
+            icon: f.PGe,
             tooltip: M.intl.string(M.t["0lFmC9"]),
             onClick: () => A.ZT(t.applicationId, t.branchId)
         })
@@ -544,7 +544,7 @@ class J extends i.PureComponent {
             applications: e
         } = this.props;
         e.forEach(e => {
-            e.finished && m.h.wait(() => {
+            e.finished && g.h.wait(() => {
                 A.Vt(e.applicationId, e.branchId)
             })
         }), window.removeEventListener("resize", this.throttledUpdateHeight), this.isUnmounted = !0
@@ -592,7 +592,7 @@ class J extends i.PureComponent {
                 },
                 rowProps: {
                     onContextMenu: (e, t) => {
-                        f.L3(e, async () => {
+                        m.L3(e, async () => {
                             let {
                                 default: e
                             } = await n.e("881").then(n.bind(n, 163368));

@@ -1,14 +1,14 @@
 /** chunk id: 823901, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    H: () => O,
-    y: () => E
+    H: () => E,
+    y: () => b
 }), n(896048);
 var i = n(627968),
     r = n(64700),
     l = n(311907),
     a = n(397927),
-    s = n(258585),
-    o = n(279250),
+    o = n(258585),
+    s = n(279250),
     u = n(880144),
     c = n(72432),
     d = n(929921),
@@ -17,36 +17,36 @@ var i = n(627968),
     f = n(430452),
     g = n(576705),
     m = n(309010),
-    y = n(287809),
-    A = n(652215),
-    v = n(753070),
-    b = n(985018);
+    A = n(287809),
+    y = n(652215),
+    O = n(753070),
+    v = n(985018);
 
-function E(e) {
+function b(e) {
     let {
         pid: t,
         analyticsLocation: n,
         allowOneClickGoLive: i = !1,
         onBeforeShowModal: a,
-        onOneClickGoLive: s,
+        onOneClickGoLive: o,
         appContext: c
-    } = e, d = (0, l.bG)([m.A], () => m.A.getVoiceChannelId()), A = (0, l.bG)([h.A], () => h.A.getChannel(d), [d]), v = (0, l.bG)([y.default], () => y.default.getCurrentUser()), b = (0, l.bG)([f.A], () => (0, u.A)(f.A)), E = (0, l.bG)([p.A, g.A], () => null != A && (0, o.vz)(A, p.A, g.A));
+    } = e, d = (0, l.bG)([m.A], () => m.A.getVoiceChannelId()), y = (0, l.bG)([h.A], () => h.A.getChannel(d), [d]), O = (0, l.bG)([A.default], () => A.default.getCurrentUser()), v = (0, l.bG)([f.A], () => (0, u.A)(f.A)), b = (0, l.bG)([p.A, g.A], () => null != y && (0, s.vz)(y, p.A, g.A));
     return r.useCallback(async () => {
-        await x({
+        await _({
             pid: t,
             voiceChannelId: d,
-            user: v,
-            canGoLive: b,
-            canStream: E,
+            user: O,
+            canGoLive: v,
+            canStream: b,
             analyticsLocation: n,
             allowOneClickGoLive: i,
             onBeforeShowModal: a,
-            onOneClickGoLive: s,
+            onOneClickGoLive: o,
             appContext: c
         })
-    }, [t, d, v, b, E, n, i, a, s, c])
+    }, [t, d, O, v, b, n, i, a, o, c])
 }
-async function O(e) {
+async function E(e) {
     let {
         pid: t,
         analyticsLocation: n,
@@ -54,13 +54,13 @@ async function O(e) {
         onBeforeShowModal: r,
         onOneClickGoLive: l,
         appContext: a
-    } = e, s = m.A.getVoiceChannelId(), c = h.A.getChannel(s), d = y.default.getCurrentUser(), A = null != c && (0, o.vz)(c, p.A, g.A), v = (0, u.A)(f.A);
-    await x({
+    } = e, o = m.A.getVoiceChannelId(), c = h.A.getChannel(o), d = A.default.getCurrentUser(), y = null != c && (0, s.vz)(c, p.A, g.A), O = (0, u.A)(f.A);
+    await _({
         pid: t,
-        voiceChannelId: s,
+        voiceChannelId: o,
         user: d,
-        canGoLive: v,
-        canStream: A,
+        canGoLive: O,
+        canStream: y,
         analyticsLocation: n,
         allowOneClickGoLive: i,
         onBeforeShowModal: r,
@@ -68,28 +68,28 @@ async function O(e) {
         appContext: a
     })
 }
-async function x(e) {
+async function _(e) {
     let {
         pid: t,
         voiceChannelId: r,
         user: l,
-        canGoLive: o,
+        canGoLive: s,
         canStream: u,
         allowOneClickGoLive: h,
         onBeforeShowModal: p,
         onOneClickGoLive: f,
         appContext: g
     } = e;
-    if (o && u) {
+    if (s && u) {
         if (h && null !== r) {
             let e = d.A.getState().preset;
-            if (e === v.jQ.PRESET_DOCUMENTS) {
+            if (e === O.jQ.PRESET_DOCUMENTS) {
                 let {
                     allowAutoQuality: t
-                } = (0, s.eO)({
+                } = (0, o.eO)({
                     location: "overlay _goLive"
                 });
-                e = t ? v.jQ.PRESET_AUTO : v.jQ.PRESET_VIDEO
+                e = t ? O.jQ.PRESET_AUTO : O.jQ.PRESET_VIDEO
             }
             let [n] = await (0, c.A)(t, {
                 preset: e
@@ -99,8 +99,8 @@ async function x(e) {
                 return
             }
         }
-        if (null == l) return void(0, a.showToast)((0, a.createToast)(b.intl.string(b.t.OKnWyb), a.ToastType.FAILURE, {
-            appContext: A.BRT.OVERLAY
+        if (null == l) return void(0, a.showToast)((0, a.createToast)(v.intl.string(v.t.OKnWyb), a.ToastType.FAILURE, {
+            appContext: y.BRT.OVERLAY
         }));
         null == p || p(), (0, a.mMO)(async () => {
             let {

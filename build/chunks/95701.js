@@ -12,7 +12,7 @@ n.d(t, {
     Lt: () => ek,
     MK: () => k,
     OU: () => R,
-    OY: () => eV,
+    OY: () => eF,
     QE: () => D,
     TA: () => e_,
     UE: () => eG,
@@ -24,7 +24,7 @@ n.d(t, {
     cq: () => ex,
     createChannelRecord: () => eH,
     fT: () => z,
-    gV: () => F,
+    gV: () => V,
     ig: () => H,
     jb: () => eb,
     k: () => ei,
@@ -140,10 +140,10 @@ let U = new Set([m.rbe.DM, m.rbe.GROUP_DM, m.rbe.GUILD_TEXT, m.rbe.GUILD_ANNOUNC
 function G(e) {
     return U.has(e)
 }
-let V = new Set([m.rbe.DM, m.rbe.GROUP_DM, m.rbe.GUILD_VOICE, m.rbe.GUILD_STAGE_VOICE, m.rbe.PUBLIC_THREAD, m.rbe.PRIVATE_THREAD]);
+let F = new Set([m.rbe.DM, m.rbe.GROUP_DM, m.rbe.GUILD_VOICE, m.rbe.GUILD_STAGE_VOICE, m.rbe.PUBLIC_THREAD, m.rbe.PRIVATE_THREAD]);
 
-function F(e) {
-    return V.has(e)
+function V(e) {
+    return F.has(e)
 }
 let B = new Set([m.rbe.GUILD_TEXT, m.rbe.GUILD_ANNOUNCEMENT, m.rbe.ANNOUNCEMENT_THREAD, m.rbe.PUBLIC_THREAD, m.rbe.PRIVATE_THREAD, m.rbe.GUILD_DIRECTORY, m.rbe.GUILD_FORUM, m.rbe.GUILD_MEDIA, m.rbe.DM, m.rbe.GROUP_DM]);
 
@@ -329,7 +329,7 @@ class ey extends em {
         return this.type === m.rbe.GUILD_CATEGORY
     }
     isVocal() {
-        return F(this.type)
+        return V(this.type)
     }
     isGuildVocal() {
         return P(this.type)
@@ -754,10 +754,10 @@ function eG(e, t) {
     return (null != (n = eU[null != (r = e.type) ? r : m.rbe.GUILD_TEXT]) ? n : eb.fromServer)(e, t)
 }
 
-function eV(e) {
+function eF(e) {
     return eH(e)
 }
-let eF = {
+let eV = {
     [m.rbe.DM]: eM,
     [m.rbe.GROUP_DM]: ej,
     [m.rbe.GUILD_TEXT]: eN,
@@ -776,11 +776,11 @@ let eF = {
 
 function eB(e) {
     var t, n;
-    let r = null != (t = eF[null != (n = e.type) ? n : m.rbe.GUILD_TEXT]) ? t : eb;
+    let r = null != (t = eV[null != (n = e.type) ? n : m.rbe.GUILD_TEXT]) ? t : eb;
     return (0, f.pp)(e, r)
 }
 
 function eH(e) {
     var t, n;
-    return new(null != (t = eF[null != (n = e.type) ? n : m.rbe.GUILD_TEXT]) ? t : eb)(eg(e))
+    return new(null != (t = eV[null != (n = e.type) ? n : m.rbe.GUILD_TEXT]) ? t : eb)(eg(e))
 }

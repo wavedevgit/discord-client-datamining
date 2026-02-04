@@ -1,19 +1,19 @@
 /** chunk id: 336148, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    X: () => a
+    X: () => s
 });
-var i = n(311907),
+var l = n(311907),
     r = n(741961),
-    l = n(287809);
+    i = n(287809);
 
-function a(e) {
-    return (0, i.bG)([r.A, l.default], () => {
+function s(e) {
+    return (0, l.bG)([r.A, i.default], () => {
         var t, n;
         if (null == e) return !1;
-        let i = null != (t = null == (n = l.default.getCurrentUser()) ? void 0 : n.id) ? t : null,
-            a = r.A.getTypingUsers(e.id);
-        for (let e in a)
-            if (e !== i) return !0;
+        let l = null != (t = null == (n = i.default.getCurrentUser()) ? void 0 : n.id) ? t : null,
+            s = r.A.getTypingUsers(e.id);
+        for (let e in s)
+            if (e !== l) return !0;
         return !1
     }, [e])
 }

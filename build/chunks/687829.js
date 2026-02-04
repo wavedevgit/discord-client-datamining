@@ -47,8 +47,8 @@ async function h() {
             electron_process_memory_private_and_shared: [null != (s = null == (T = U.unknown) ? void 0 : T.wss_kb) ? s : -1, null != (c = null == (C = U.main) ? void 0 : C.wss_kb) ? c : -1, null != (u = null == (N = U.renderer) ? void 0 : N.wss_kb) ? u : -1, null != (d = null == (w = U.gpu) ? void 0 : w.wss_kb) ? d : -1, null != (f = null == (R = U.crashpad) ? void 0 : R.wss_kb) ? f : -1, null != (p = null == (P = U.utility) ? void 0 : P.wss_kb) ? p : -1],
             electron_process_type_count: [null != (_ = null == (D = U.unknown) ? void 0 : D.proc_count) ? _ : 0, null != (h = null == (L = U.main) ? void 0 : L.proc_count) ? h : 0, null != (m = null == (x = U.renderer) ? void 0 : x.proc_count) ? m : 0, null != (g = null == (M = U.gpu) ? void 0 : M.proc_count) ? g : 0, null != (E = null == (j = U.crashpad) ? void 0 : j.proc_count) ? E : 0, null != (y = null == (k = U.utility) ? void 0 : k.proc_count) ? y : 0]
         },
-        V = await (0, i.w)();
-    return null != V && (null != V.cpu_memory && (G.system_memory_total = V.cpu_memory / 1024), null != V.cpu_memory_avail && (G.system_memory_available = V.cpu_memory_avail / 1024)), G
+        F = await (0, i.w)();
+    return null != F && (null != F.cpu_memory && (G.system_memory_total = F.cpu_memory / 1024), null != F.cpu_memory_avail && (G.system_memory_available = F.cpu_memory_avail / 1024)), G
 }
 
 function m() {

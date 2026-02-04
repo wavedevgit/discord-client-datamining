@@ -21,9 +21,9 @@ function h(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let g = o.Ay.requireModule("discord_rpc").RPCIPC,
-    m = new s.A("RPCServer:IPC"),
-    f = {
+let f = o.Ay.requireModule("discord_rpc").RPCIPC,
+    g = new s.A("RPCServer:IPC"),
+    m = {
         HANDSHAKE: 0,
         FRAME: 1,
         CLOSE: 2,
@@ -41,13 +41,13 @@ function _(e) {
 
 function b(e) {
     return new Promise((t, n) => {
-        "string" == typeof e && (e = g.net.createConnection(e));
+        "string" == typeof e && (e = f.net.createConnection(e));
         let r = new O(e, "json");
         e.on("data", t => {
             try {
                 r.read(t)
             } catch (t) {
-                e.end(E(f.CLOSE, {
+                e.end(E(m.CLOSE, {
                     code: 1003,
                     message: t.message
                 })), e.destroy()
@@ -55,7 +55,7 @@ function b(e) {
         });
         let i = () => {
                 try {
-                    e.end(E(f.CLOSE, {
+                    e.end(E(m.CLOSE, {
                         code: p.YI$.CLOSE_NORMAL,
                         message: "test client going away"
                     })), e.destroy()
@@ -70,7 +70,7 @@ function b(e) {
             }, e => {
                 throw i(), e
             });
-        return e.write(E(f.PING, a().uniqueId())), l.then(t, n)
+        return e.write(E(m.PING, a().uniqueId())), l.then(t, n)
     })
 }
 
@@ -86,10 +86,10 @@ class O extends u.A {
         return e.copy(i, 0, t, n), i
     }
     send(e) {
-        m.info("Socket Emit: ".concat(this.id), (0, c.A)(e)), this.socket.write(E(f.FRAME, e))
+        g.info("Socket Emit: ".concat(this.id), (0, c.A)(e)), this.socket.write(E(m.FRAME, e))
     }
     close(e, t) {
-        this.socket.end(E(f.CLOSE, {
+        this.socket.end(E(m.CLOSE, {
             code: e,
             message: t
         })), this.socket.destroy()
@@ -106,7 +106,7 @@ class O extends u.A {
                 if (this.currentHeader = {
                         opcode: this.messageBuffer.readInt32LE(0),
                         size: this.messageBuffer.readInt32LE(4)
-                    }, !Object.values(f).includes(this.currentHeader.opcode) || this.currentHeader.size < 0) throw Error("protocol error");
+                    }, !Object.values(m).includes(this.currentHeader.opcode) || this.currentHeader.size < 0) throw Error("protocol error");
                 if (this.currentHeader.size > 3145728) throw Error("message too large");
                 this.messageBuffer = this.copyBuffer(this.messageBuffer, 8, this.messageBuffer.byteLength)
             }
@@ -118,21 +118,21 @@ class O extends u.A {
     }
     dispatchMessage(e, t, n) {
         switch (t) {
-            case f.PING:
-                e.emit("ping", n), e.write(E(f.PONG, n));
+            case m.PING:
+                e.emit("ping", n), e.write(E(m.PONG, n));
                 break;
-            case f.PONG:
+            case m.PONG:
                 e.emit("pong", n);
                 break;
-            case f.HANDSHAKE:
+            case m.HANDSHAKE:
                 this.handleHandshake(e, n), e.emit("handshake", n);
                 break;
-            case f.FRAME:
+            case m.FRAME:
                 if (!_(e)) throw Error("did not handshake");
                 e.emit("request", n);
                 break;
-            case f.CLOSE:
-                e.end(E(f.CLOSE, {
+            case m.CLOSE:
+                e.end(E(m.CLOSE, {
                     code: p.YI$.CLOSE_NORMAL,
                     message: "client disconnect"
                 })), e.destroy()
@@ -150,9 +150,9 @@ class y extends i.EventEmitter {
     handleConnection(e) {
         let t = new O(e, "json"),
             n = setTimeout(() => {
-                m.warn("Handshake timeout for connection, closing socket");
+                g.warn("Handshake timeout for connection, closing socket");
                 try {
-                    e.end(E(f.CLOSE, {
+                    e.end(E(m.CLOSE, {
                         code: p.YI$.CLOSE_ABNORMAL,
                         message: "Handshake timeout"
                     }))
@@ -166,7 +166,7 @@ class y extends i.EventEmitter {
             try {
                 t.read(r.Buffer.from(i))
             } catch (t) {
-                clearTimeout(n), m.error("Socket Error: ".concat(t.message)), e.end(E(f.CLOSE, {
+                clearTimeout(n), g.error("Socket Error: ".concat(t.message)), e.end(E(m.CLOSE, {
                     code: p.YI$.CLOSE_UNSUPPORTED,
                     message: t.message
                 })), e.destroy()
@@ -174,11 +174,11 @@ class y extends i.EventEmitter {
         }), e.once("handshake", () => {
             clearTimeout(n);
             let r = t.clientId;
-            m.info("Socket Opened: ".concat(t.id)), e.on("error", e => m.error("Socket Error: ".concat(e.message))), e.on("close", () => {
-                m.info("Socket Close: ".concat(t.id)), this.emit("disconnect", t)
+            g.info("Socket Opened: ".concat(t.id)), e.on("error", e => g.error("Socket Error: ".concat(e.message))), e.on("close", () => {
+                g.info("Socket Close: ".concat(t.id)), this.emit("disconnect", t)
             }), (0, d.j7)(t, null, r).then(() => {
                 e.on("request", e => {
-                    m.info("Socket Message: ".concat(t.id), (0, c.A)(e)), this.emit("request", t, e)
+                    g.info("Socket Message: ".concat(t.id), (0, c.A)(e)), this.emit("request", t, e)
                 }), this.emit("connect", t)
             }).catch(e => {
                 let {
@@ -191,10 +191,10 @@ class y extends i.EventEmitter {
     }
     constructor() {
         super();
-        const e = g.net.createServer(e => this.handleConnection(e));
-        e.on("error", e => m.error("Error: ".concat(e.message))), g.getAvailableSocket(b).then(t => {
+        const e = f.net.createServer(e => this.handleConnection(e));
+        e.on("error", e => g.error("Error: ".concat(e.message))), f.getAvailableSocket(b).then(t => {
             e.listen(t, () => {
-                ("function" == typeof e.listening ? e.listening() : e.listening) && m.info("Starting on ".concat(e.address()))
+                ("function" == typeof e.listening ? e.listening() : e.listening) && g.info("Starting on ".concat(e.address()))
             })
         })
     }

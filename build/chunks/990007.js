@@ -13,9 +13,9 @@ var r = n(488428),
     d = n(506774),
     p = n(73153),
     h = n(587895),
-    g = n(224750),
-    m = n(716965),
-    f = n(671523),
+    f = n(224750),
+    g = n(716965),
+    m = n(671523),
     A = n(337095),
     _ = n(611010),
     b = n(287809),
@@ -106,7 +106,7 @@ async function j(e, t, n) {
         [o, {
             disclosures: c,
             allAcked: u
-        }] = await Promise.all([(0, m.qY)({
+        }] = await Promise.all([(0, g.qY)({
             clientId: d,
             scopes: G,
             responseType: p,
@@ -116,7 +116,7 @@ async function j(e, t, n) {
             state: C,
             integrationType: l,
             signal: k
-        }), (0, g.vG)(d)])
+        }), (0, f.vG)(d)])
     } catch (t) {
         let {
             body: e
@@ -125,8 +125,8 @@ async function j(e, t, n) {
             errorCode: v.Lw6.OAUTH2_ERROR
         }, "OAuth2 Authorization Error: ".concat((null == e ? void 0 : e.message) || "Unknown Error"))
     }
-    if (L === f.l.NONE && null != o && o.authorized && u) try {
-        return (await (0, m.Gq)({
+    if (L === m.l.NONE && null != o && o.authorized && u) try {
+        return (await (0, g.Gq)({
             authorize: !0,
             clientId: d,
             scopes: G,

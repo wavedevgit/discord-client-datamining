@@ -21,10 +21,10 @@ function p(e) {
         var e;
         let t = null == (e = s.A.getLastClipsSession()) ? void 0 : e.newClipIds;
         return null == t ? null : s.A.getClips().filter(e => t.includes(e.id))[0]
-    }), g = (0, u.j)(h), m = i.useCallback(() => {
+    }), f = (0, u.j)(h), g = i.useCallback(() => {
         (0, c.jA)()
     }, []);
-    return null == h ? null : h.type !== o.nQ.SCREENSHOT && h.type !== o.nQ.VOICE_CLIP && null != g ? (0, r.jsx)(a.HZ, {
+    return null == h ? null : h.type !== o.nQ.SCREENSHOT && h.type !== o.nQ.VOICE_CLIP && null != f ? (0, r.jsx)(a.HZ, {
         targetElementRef: {
             current: n
         },
@@ -33,7 +33,7 @@ function p(e) {
         body: d.intl.format(d.t["+qxkzC"], {
             count: p.newClipIds.length
         }),
-        assetUrl: g,
+        assetUrl: f,
         disableMediaViewer: !0,
         caretConfig: {
             align: "center"
@@ -42,7 +42,7 @@ function p(e) {
             text: d.intl.string(d.t.tQPBml),
             onClick: t
         },
-        onRequestClose: m
+        onRequestClose: g
     }) : (0, r.jsx)(a.AM, {
         targetElementRef: {
             current: n
@@ -63,6 +63,6 @@ function p(e) {
             text: d.intl.string(d.t.tQPBml),
             onClick: t
         }],
-        onRequestClose: m
+        onRequestClose: g
     })
 }

@@ -42,8 +42,8 @@ var r = n(627968),
     k = n(635071),
     U = n(860227),
     G = n(449859),
-    V = n(855344),
-    F = n(812299),
+    F = n(855344),
+    V = n(812299),
     B = n(109054),
     H = n(652215),
     Y = n(985018),
@@ -148,7 +148,7 @@ let ee = i.memo(function(e) {
         preview: y,
         subscribeToGroupId: b,
         hideGuildTag: v
-    } = e, A = (0, j.Ay)(t, n), I = i.useMemo(() => (0, F.y)({
+    } = e, A = (0, j.Ay)(t, n), I = i.useMemo(() => (0, V.y)({
         message: t,
         channel: a,
         user: null == t ? void 0 : t.author,
@@ -161,7 +161,7 @@ let ee = i.memo(function(e) {
         autoInvert: !0,
         nudgeAlignIntoViewport: !0,
         position: "right",
-        renderPopout: () => (0, r.jsx)(V.A, {
+        renderPopout: () => (0, r.jsx)(F.A, {
             roleIcon: l,
             guild: T
         }),
@@ -285,11 +285,11 @@ function en(e) {
         var e;
         return null != (e = o.displayCompactAvatars) ? e : N.Ay.displayCompactAvatars
     }), U = (0, B.A)(h), G = g ? X : J, {
-        pendingAvatarDecoration: V
+        pendingAvatarDecoration: F
     } = (0, I.A)({
         guildId: l
-    }), F = (0, y.lw)({
-        pendingValue: h.author.id === (null == j ? void 0 : j.id) ? V : void 0,
+    }), V = (0, y.lw)({
+        pendingValue: h.author.id === (null == j ? void 0 : j.id) ? F : void 0,
         userValue: null == (t = h.author) ? void 0 : t.avatarDecoration,
         guildValue: null == m ? void 0 : m.guildMemberAvatarDecoration,
         guildId: l
@@ -302,7 +302,7 @@ function en(e) {
         guildId: l,
         size: G,
         animateOnHover: null != E ? !R : !b,
-        avatarDecorationOverride: F,
+        avatarDecorationOverride: V,
         showPending: !0
     }), z = h.isInteractionPlaceholder(), Z = i.useMemo(() => {
         var e, t;
@@ -470,7 +470,7 @@ let eo = i.memo(function(e) {
         }), P = (0, c.bG)([N.Ay], () => {
             var t;
             return null != (t = e.displayCompactAvatars) ? t : N.Ay.displayCompactAvatars
-        }), D = i.useMemo(() => (0, F.k)({
+        }), D = i.useMemo(() => (0, V.k)({
             message: t,
             channel: y,
             user: null == t ? void 0 : t.author,
@@ -479,7 +479,7 @@ let eo = i.memo(function(e) {
         }), [t, y, a]), L = (0, c.bG)([w.A], () => ea(a, P, p, w.A.getGuild(e.guildId)), [a, P, p, e.guildId]), x = i.useMemo(() => {
             let e = [];
             return (0, l.Lt)(t.flags, H.pr7.SUPPRESS_NOTIFICATIONS) && e.push((0, r.jsx)(v.A, {}, "suppress-notifications")), e
-        }, [t]), M = (0, U.d$)(t, _), j = (0, U.xl)(t), k = h ? "".concat(M) : "".concat(M, " ").concat(j), G = (null == n ? void 0 : n.state) === b.a.LOADED ? (0, U.nS)(t) : void 0, V = !0 !== h;
+        }, [t]), M = (0, U.d$)(t, _), j = (0, U.xl)(t), k = h ? "".concat(M) : "".concat(M, " ").concat(j), G = (null == n ? void 0 : n.state) === b.a.LOADED ? (0, U.nS)(t) : void 0, F = !0 !== h;
         return (0, r.jsx)(er, {
             message: t,
             avatar: C,
@@ -512,7 +512,7 @@ let eo = i.memo(function(e) {
                 [W.hB]: null != D || x.length > 0
             }),
             compact: a,
-            showTimestamp: V,
+            showTimestamp: F,
             showTimestampOnHover: f,
             ariaLabelledBy: k,
             ariaDescribedBy: G,

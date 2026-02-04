@@ -1,7 +1,7 @@
 /** chunk id: 278115, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => V
+    A: () => F
 }), n(228524), n(896048), n(264879);
 var r = n(627968),
     i = n(64700),
@@ -85,7 +85,7 @@ function x(e) {
         onClose: D
     } = e, {
         analyticsLocations: x
-    } = (0, p.Ay)(), M = n !== S.b_.INACTIVE, j = (0, m.A)(t), k = (0, c.bG)([d.A], () => d.A.useReducedMotion), U = i.useRef(null), [G, V] = i.useState(!1), [F, B] = i.useState(!1), H = F, Y = F && null != O && "" !== O && !k ? O : E, W = i.useCallback(() => {
+    } = (0, p.Ay)(), M = n !== S.b_.INACTIVE, j = (0, m.A)(t), k = (0, c.bG)([d.A], () => d.A.useReducedMotion), U = i.useRef(null), [G, F] = i.useState(!1), [V, B] = i.useState(!1), H = V, Y = V && null != O && "" !== O && !k ? O : E, W = i.useCallback(() => {
         let e = b.A.getGuild(t);
         null != e && (0, v.g)({
             analyticsLocation: {
@@ -117,7 +117,7 @@ function x(e) {
         transform: H ? "translateY(0)" : "translateY(16px)",
         config: z
     }), J = i.useCallback(e => {
-        e && V(!0)
+        e && F(!0)
     }, []), $ = (0, l.K)(J), ee = N.skuId === I.W5;
     return (0, r.jsxs)("div", {
         className: o()(w.Nr, {
@@ -285,4 +285,4 @@ let j = 3,
         })
     });
 G.displayName = "GuildBoostingMarketingPerkCards";
-let V = G
+let F = G

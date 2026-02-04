@@ -13,9 +13,9 @@ var r = n(627968),
     d = n(976860),
     p = n(67480),
     h = n(652215),
-    g = n(190323);
+    f = n(190323);
 
-function m(e, t, n) {
+function g(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -23,7 +23,7 @@ function m(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class f extends i.PureComponent {
+class m extends i.PureComponent {
     componentDidMount() {
         let {
             sku: e,
@@ -55,7 +55,7 @@ class f extends i.PureComponent {
         })
     }
     constructor(...e) {
-        super(...e), m(this, "handleClick", e => {
+        super(...e), g(this, "handleClick", e => {
             let {
                 sku: t
             } = this.props;
@@ -68,8 +68,8 @@ class f extends i.PureComponent {
                     }
                 }
             })
-        }), m(this, "renderCustomBreadcrumb", (e, t) => (0, r.jsx)(u.A.Title, {
-            className: t ? null : g.Q,
+        }), g(this, "renderCustomBreadcrumb", (e, t) => (0, r.jsx)(u.A.Title, {
+            className: t ? null : f.Q,
             muted: !t,
             children: e.label
         }))
@@ -84,4 +84,4 @@ let A = (0, o.A)(l.Ay.connectStores([c.A, p.A], e => {
         isFetchingPrimarySku: null != r && p.A.isFetching(r),
         primarySku: null != r ? p.A.get(r) : null
     }
-})(f))
+})(m))

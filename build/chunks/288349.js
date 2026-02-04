@@ -1,6 +1,6 @@
 /** chunk id: 288349, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 }), n(896048);
 var r = n(627968);
 n(64700);
@@ -32,9 +32,9 @@ function p(e) {
     return e
 }
 let h = "premium_tier_gradient",
-    g = "smaller_sparkle_gradient";
+    f = "smaller_sparkle_gradient";
 
-function m(e) {
+function g(e) {
     var t, n;
     let {
         width: i = 14,
@@ -84,7 +84,7 @@ function m(e) {
                 })]
             })
         }), (0, r.jsxs)("linearGradient", {
-            id: g,
+            id: f,
             x1: "-4.95474",
             y1: "5.44067",
             x2: "11.2384",
@@ -115,25 +115,25 @@ function m(e) {
     }), t))
 }
 
-function f(e) {
+function m(e) {
     let {
         className: t,
         startsAt: n,
         endsAt: i,
         messageStyle: c,
         upperCase: p,
-        showSparkles: f
+        showSparkles: m
     } = e, [A] = (0, o.Bo)(a.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL, {
         showAfterTimestamp: n.valueOf(),
         cooldownDurationMs: 0
     }), _ = (0, s.Ay)(i, c);
     return "" === _ ? null : (p && (_ = _.toUpperCase()), (0, r.jsxs)("div", {
         className: l()(t, d.Iv),
-        children: [f ? (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(m, {
+        children: [m ? (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)(g, {
                 foreground: d.QX,
-                color: "url(#".concat(g, ")")
-            }), (0, r.jsx)(m, {
+                color: "url(#".concat(f, ")")
+            }), (0, r.jsx)(g, {
                 foreground: d.J0,
                 color: "url(#".concat(h, ")")
             })]

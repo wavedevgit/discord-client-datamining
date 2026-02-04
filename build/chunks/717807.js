@@ -13,21 +13,21 @@ var r = n(627968),
     d = n(161319),
     p = n(385327),
     h = n(788868),
-    g = n(652215),
-    m = n(985018),
-    f = n(174872);
+    f = n(652215),
+    g = n(985018),
+    m = n(174872);
 let A = e => {
     var t;
     let {
         targetElementRef: n
-    } = e, A = (0, i.bG)([c.default], () => c.default.getCurrentUser()), _ = !1 === u.Ay.isPremiumExactly(A, h.PremiumTypes.TIER_2), b = (null == A || null == (t = A.premiumState) ? void 0 : t.premiumSource) === l.fE.FRACTIONAL_NITRO && (null == A ? void 0 : A.premiumState.premiumSubscriptionType) !== l.jK.TIER_2, E = !0 === (null == A || _ || b) ? m.intl.string(m.t.E1ONHQ) : m.intl.string(m.t.CMKNhr);
+    } = e, A = (0, i.bG)([c.default], () => c.default.getCurrentUser()), _ = !1 === u.Ay.isPremiumExactly(A, h.PremiumTypes.TIER_2), b = (null == A || null == (t = A.premiumState) ? void 0 : t.premiumSource) === l.fE.FRACTIONAL_NITRO && (null == A ? void 0 : A.premiumState.premiumSubscriptionType) !== l.jK.TIER_2, E = !0 === (null == A || _ || b) ? g.intl.string(g.t.E1ONHQ) : g.intl.string(g.t.CMKNhr);
     return (0, r.jsx)(a.AM, {
         targetElementRef: n,
-        title: m.intl.string(m.t["V8J+16"]),
+        title: g.intl.string(g.t["V8J+16"]),
         body: E,
         graphic: {
             type: "image",
-            src: f.A
+            src: m.A
         },
         badge: {
             type: "beta",
@@ -41,9 +41,9 @@ let A = e => {
             align: "start"
         },
         actions: [{
-            text: m.intl.string(m.t["CDdYB/"]),
+            text: g.intl.string(g.t["CDdYB/"]),
             onClick: () => {
-                (0, o.A)(g.BVt.NITRO_HOME), (0, d.uE)({
+                (0, o.A)(f.BVt.NITRO_HOME), (0, d.uE)({
                     analyticsLocations: [s.A.HOME_PAGE_PREMIUM_TAB]
                 }), (0, p.Es)()
             }

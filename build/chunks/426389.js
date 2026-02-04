@@ -13,9 +13,9 @@ var r = n(627968),
     d = n(73153),
     p = n(829219),
     h = n(859703),
-    g = n(341915),
-    m = n(843490),
-    f = n(890687),
+    f = n(341915),
+    g = n(843490),
+    m = n(890687),
     A = n(639214),
     _ = n(814793),
     b = n(219271),
@@ -51,21 +51,21 @@ let D = 15 * v.A.Millis.MINUTE,
         }), {
             partiedMembers: p,
             applicationStreams: h,
-            currentActivities: g,
-            voiceChannels: m
-        } = t, f = p.length, A = h.length, _ = g.length, b = m.length > 0, E = i.useCallback(() => {
-            let e = g.filter(e => {
+            currentActivities: f,
+            voiceChannels: g
+        } = t, m = p.length, A = h.length, _ = f.length, b = g.length > 0, E = i.useCallback(() => {
+            let e = f.filter(e => {
                 var t, n;
                 return (null == (t = e.game) ? void 0 : t.name) != null && (0, I.isGameApplicationType)(null == (n = e.game) ? void 0 : n.type)
             }).map(e => e.game.name);
             I.default.track(P.HAw.NOW_PLAYING_CARD_HOVERED, {
-                num_users: f,
+                num_users: m,
                 num_streams: A,
                 num_activities: _,
                 in_voice_channel: b,
                 games_detected: e
             })
-        }, [f, A, _, b, g]), O = i.useMemo(() => o()(E, D), [E]);
+        }, [m, A, _, b, f]), O = i.useMemo(() => o()(E, D), [E]);
         return null != c || null != d ? (0, r.jsx)(u.YNO, {
             targetElementRef: s,
             position: "left",
@@ -138,7 +138,7 @@ function U() {
         needsRefresh: E.A.shouldFetch(),
         fetching: E.A.isFetching(),
         currentUser: O.default.getCurrentUser()
-    })), s = (0, c.bG)([h.A], () => h.A.quests), o = (0, f.oH)(Array.from(s.values()));
+    })), s = (0, c.bG)([h.A], () => h.A.quests), o = (0, m.oH)(Array.from(s.values()));
     i.useEffect(() => (d.h.wait(() => S.O()), () => {
         d.h.wait(() => S.v())
     }), [null == a ? void 0 : a.id]), i.useEffect(() => {
@@ -146,7 +146,7 @@ function U() {
     }, [n, l]);
     let {
         use_api_call: b
-    } = m.M.getConfig({
+    } = g.M.getConfig({
         location: "NowPlaying"
     }), {
         questsByPartyId: I,
@@ -170,9 +170,9 @@ function U() {
         }
     }, [e, s, o]), C = i.useMemo(() => new Set(Array.from(v.values())), [v]);
     i.useEffect(() => {
-        b && C.size > 0 && (0, p.yO)(Array.from(C), g.uF.ACTIVITY_PANEL, "NowPlaying")
+        b && C.size > 0 && (0, p.yO)(Array.from(C), f.uF.ACTIVITY_PANEL, "NowPlaying")
     }, [C, b]);
-    let N = (0, c.bG)([h.A], () => h.A.earnedQuestForPlacement.get(g.uF.ACTIVITY_PANEL), []),
+    let N = (0, c.bG)([h.A], () => h.A.earnedQuestForPlacement.get(f.uF.ACTIVITY_PANEL), []),
         T = i.useMemo(() => {
             if (!b) return I;
             if (null == N) return new Map;

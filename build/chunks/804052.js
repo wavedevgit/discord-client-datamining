@@ -1,6 +1,6 @@
 /** chunk id: 804052, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => f
 }), n(228524);
 var r = n(627968),
     i = n(64700),
@@ -45,7 +45,7 @@ let p = e => {
             })]
         })
     };
-class g extends i.Component {
+class f extends i.Component {
     render() {
         let {
             reason: e,

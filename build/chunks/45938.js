@@ -16,7 +16,7 @@ n.d(t, {
     e_: () => Q,
     lo: () => j,
     n$: () => z,
-    pF: () => F,
+    pF: () => V,
     tB: () => M,
     u1: () => X,
     v3: () => K
@@ -94,10 +94,10 @@ function G(e) {
     }
 }
 
-function V(e) {
+function F(e) {
     return e.replace(/[^A-Za-z0-9]/g, "")
 }
-let F = e => {
+let V = e => {
         var t;
         return (null == e ? void 0 : e.type) === h.lAJ.CUSTOM_GIFT && (null == e || null == (t = e.embeds) ? void 0 : t.length) === 1 && (null == e ? void 0 : e.embeds[0].type) === h.Auw.GIFT
     },
@@ -105,8 +105,8 @@ let F = e => {
         let t;
         if (null == e) return [];
         let n = new Set;
-        for (; null != (t = A.exec(e)) && n.size < O;) n.add(V(t[1]));
-        for (; null != (t = S.exec(e)) && n.size < O;) n.add(V(t[t.length - 1]));
+        for (; null != (t = A.exec(e)) && n.size < O;) n.add(F(t[1]));
+        for (; null != (t = S.exec(e)) && n.size < O;) n.add(F(t[t.length - 1]));
         return Array.from(n)
     };
 

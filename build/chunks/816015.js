@@ -13,10 +13,10 @@ var r = n(627968),
     d = n(820284),
     p = n(341338),
     h = n(998515),
-    g = n(652215),
-    m = n(58682);
+    f = n(652215),
+    g = n(58682);
 
-function f(e, t, n) {
+function m(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -30,10 +30,10 @@ class A extends i.Component {
     }
     render() {
         return null != this.props.skuId ? (0, r.jsx)(d.A, {
-            page: g.liQ.CHANNEL_STORE_LISTING,
+            page: f.liQ.CHANNEL_STORE_LISTING,
             root: !0,
             children: (0, r.jsx)("div", {
-                className: m.gE,
+                className: g.gE,
                 children: (0, r.jsx)(l.qh, {
                     path: "*",
                     render: this.renderApplicationListing
@@ -42,13 +42,13 @@ class A extends i.Component {
         }) : null
     }
     constructor(...e) {
-        super(...e), f(this, "fetchStoreListing", e => {
+        super(...e), m(this, "fetchStoreListing", e => {
             let {
                 channel: t,
                 inputSkuId: n
             } = this.props;
             return null != e ? s.A.fetchChannelStoreListing(t.id, e) : null != n ? s.A.fetchChannelStoreListing(t.id, n) : s.A.fetchChannelStoreListing(t.id)
-        }), f(this, "renderApplicationListing", e => {
+        }), m(this, "renderApplicationListing", e => {
             let {
                 location: t
             } = e, {

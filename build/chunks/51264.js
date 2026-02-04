@@ -1,6 +1,6 @@
 /** chunk id: 51264, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -13,39 +13,39 @@ var r = n(627968),
     d = n(380610),
     p = n(828184),
     h = n(985018),
-    g = n(908874);
-let m = "isHideDevBanner",
-    f = () => {
+    f = n(908874);
+let g = "isHideDevBanner",
+    m = () => {
         var e;
-        let [t, n] = (0, i.useState)((null == (e = o.w.get(m, "false")) ? void 0 : e.toString()) === "true"), l = (0, s.bG)([u.A], () => {
+        let [t, n] = (0, i.useState)((null == (e = o.w.get(g, "false")) ? void 0 : e.toString()) === "true"), l = (0, s.bG)([u.A], () => {
             var e;
             return (0, d.kK)() ? null == (e = u.A.getCurrentBuildOverride().overrides) ? void 0 : e.discord_web : null
         });
         if (t) return null;
-        let f = () => {
-                o.w.set(m, !0), n(!0)
+        let m = () => {
+                o.w.set(g, !0), n(!0)
             },
             A = () => (0, r.jsx)(c.DUT, {
-                onClick: f,
-                className: g.b,
+                onClick: m,
+                className: f.b,
                 "aria-label": h.intl.string(h.t.WAI6xu),
                 children: (0, r.jsx)(c.PGe, {
                     size: "md",
                     color: "currentColor",
-                    className: g.ut
+                    className: f.ut
                 })
             });
         return null != l ? (0, r.jsxs)("div", {
-            className: a()(g.Wz, g.DM),
+            className: a()(f.Wz, f.DM),
             children: [(0, r.jsx)(p.A, {
-                className: g.Kk
+                className: f.Kk
             }), h.intl.string(h.t.Wj3LW4), (0, r.jsx)(A, {})]
         }) : "staging" === window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, r.jsxs)("div", {
-            className: a()(g.Wz, g.mr),
+            className: a()(f.Wz, f.mr),
             children: [(0, r.jsx)(p.A, {
-                className: g.Kk
+                className: f.Kk
             }), h.intl.format(h.t.uyrfYF, {
-                buildNumber: "492969"
+                buildNumber: "493031"
             }), (0, r.jsx)(A, {})]
         }) : null
     }

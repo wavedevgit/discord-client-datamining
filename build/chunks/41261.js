@@ -1,6 +1,6 @@
 /** chunk id: 41261, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 });
 var r = n(627968);
 n(64700);
@@ -14,20 +14,20 @@ var i = n(503698),
     d = n(30529),
     p = n(544105),
     h = n(985018),
-    g = n(839549);
+    f = n(839549);
 
-function m(e) {
+function g(e) {
     let {
         platform: t
     } = e;
     return t === p.f$.XBOX ? (0, r.jsx)(u.A, {
-        className: g.Kk
+        className: f.Kk
     }) : t === p.f$.PLAYSTATION ? (0, r.jsx)(c.A, {
-        className: g.Kk
+        className: f.Kk
     }) : null
 }
 
-function f(e) {
+function m(e) {
     let {
         voiceState: t,
         awaitingRemoteSessionInfo: n
@@ -36,14 +36,14 @@ function f(e) {
         return null == (n = o.A.getSessionById(null != (e = null == t ? void 0 : t.sessionId) ? e : "")) ? void 0 : n.clientInfo.os
     }), u = null != i ? i : c;
     if (null == u || !p.hv.has(u)) return null;
-    let f = null != n,
-        A = f ? u === p.f$.XBOX ? h.intl.string(h.t.UjA4HX) : h.intl.string(h.t.QCw1oW) : u === p.f$.XBOX ? h.intl.format(h.t["ynEs/Y"], {}) : h.intl.format(h.t.TZ17Bg, {});
+    let m = null != n,
+        A = m ? u === p.f$.XBOX ? h.intl.string(h.t.UjA4HX) : h.intl.string(h.t.QCw1oW) : u === p.f$.XBOX ? h.intl.format(h.t["ynEs/Y"], {}) : h.intl.format(h.t.TZ17Bg, {});
     return (0, r.jsxs)("div", {
-        className: l()(g.zr, f ? g.jI : g.aW),
-        children: [(0, r.jsx)(m, {
+        className: l()(f.zr, m ? f.jI : f.aW),
+        children: [(0, r.jsx)(g, {
             platform: u
         }), (0, r.jsx)(s.Text, {
-            color: f ? "text-strong" : "always-white",
+            color: m ? "text-strong" : "always-white",
             variant: "text-xs/medium",
             children: A
         })]

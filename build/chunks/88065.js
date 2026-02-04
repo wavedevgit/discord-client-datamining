@@ -13,9 +13,9 @@ var r = n(735438),
     d = n(260509),
     p = n(616356),
     h = n(734057),
-    g = n(696451),
-    m = n(71393),
-    f = n(430452),
+    f = n(696451),
+    g = n(71393),
+    m = n(430452),
     A = n(383501),
     _ = n(287809),
     b = n(977997),
@@ -72,7 +72,7 @@ let L = {
                     guild_id: t
                 }
             } = e;
-            if (null == m.A.getGuild(t)) throw new E.A({
+            if (null == g.A.getGuild(t)) throw new E.A({
                 errorCode: T.Lw6.INVALID_GUILD
             }, "Invalid guild id: ".concat(t));
             return e => {
@@ -80,7 +80,7 @@ let L = {
                 let {
                     prevState: r,
                     dispatch: l
-                } = e, a = m.A.getGuild(t);
+                } = e, a = g.A.getGuild(t);
                 if (null == a) return;
                 let s = {
                     guild: {
@@ -355,7 +355,7 @@ let L = {
                     prevState: n,
                     dispatch: r
                 } = e, i = {
-                    currentGuildMember: g.Ay.getSelfMember(t)
+                    currentGuildMember: f.Ay.getSelfMember(t)
                 };
                 return null == i.currentGuildMember || null != n && (0, s.A)(i, n) || r((0, S.A)(i.currentGuildMember)), i
             }
@@ -401,7 +401,7 @@ let L = {
                 prevState: t,
                 dispatch: n
             } = e, r = {
-                active: f.A.isVideoEnabled()
+                active: m.A.isVideoEnabled()
             };
             return i().isEqual(r, t) || n(r), r
         }

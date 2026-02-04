@@ -41,8 +41,8 @@ var r = n(627968),
     k = n(822123),
     U = n(141862),
     G = n(316884),
-    V = n(370968),
-    F = n(653145),
+    F = n(370968),
+    V = n(653145),
     B = n(624751),
     H = n(867738),
     Y = n(484333),
@@ -245,8 +245,8 @@ let ec = (e, t) => {
             ek = i.useRef(""),
             eU = (0, S.RQ)(e => e.searchQuery),
             eG = i.useRef(null),
-            eV = i.useRef(null),
-            eF = i.useRef(null);
+            eF = i.useRef(null),
+            eV = i.useRef(null);
         null == c && null != ex && (c = ex);
         let eB = null != (n = null != (a = null == c ? void 0 : c.getGuildId()) ? a : f) ? n : null,
             [eH, eY] = i.useState(!1),
@@ -366,11 +366,11 @@ let ec = (e, t) => {
                 columnCounts: tt,
                 onSelectEmoji: en,
                 emojiGrid: te,
-                emojiList: eV,
+                emojiList: eF,
                 channelGuildId: eB,
                 isBurstReaction: eH
             });
-        ed(ec, eV), ef(ec, e1, eF, eD), i.useEffect(() => {
+        ed(ec, eF), ef(ec, e1, eV, eD), i.useEffect(() => {
             eg || (0, S.Ri)("")
         }, [eg]), i.useEffect(() => (x.default.track(Q.HAw.OPEN_POPOUT, et({
             type: null != eX ? eX : "Emoji Picker",
@@ -408,7 +408,7 @@ let ec = (e, t) => {
             onClose: () => ej(null),
             guildId: eM.guildId,
             emojiId: eM.emojiId
-        }) : eH && !eK && (s = (0, r.jsx)(V.A, {
+        }) : eH && !eK && (s = (0, r.jsx)(F.A, {
             onDismiss: () => eY(!1)
         }));
         let tp = (e, t) => {
@@ -418,16 +418,16 @@ let ec = (e, t) => {
             },
             t_ = () => {
                 var e;
-                eY(!eH), null == (e = eF.current) || e.focus()
+                eY(!eH), null == (e = eV.current) || e.focus()
             },
             th = (0, r.jsx)(H.A, {
                 channel: c,
                 pickerIntention: l,
-                emojiListRef: eV,
+                emojiListRef: eF,
                 onKeyDown: e => {
                     null == tc || tc(e), null == eP || eP(e)
                 },
-                searchBarRef: eF,
+                searchBarRef: eV,
                 onFocus: eR,
                 autoFocus: eD,
                 accessory: eL,
@@ -476,7 +476,7 @@ let ec = (e, t) => {
                                 collapsedSections: e4,
                                 diversitySurrogate: e1,
                                 emojiGrid: te,
-                                emojiListRef: eV,
+                                emojiListRef: eF,
                                 emojiSize: T,
                                 getEmojiItemProps: to,
                                 getEmojiRowProps: ts,
@@ -503,9 +503,9 @@ let ec = (e, t) => {
                         pickerIntention: l,
                         channel: c
                     }), s]
-                }), eA ? null : (0, r.jsx)(F.A, {
+                }), eA ? null : (0, r.jsx)(V.A, {
                     className: o()($.jv, eC),
-                    emojiListRef: eV,
+                    emojiListRef: eF,
                     sectionDescriptors: e9,
                     intention: l,
                     channel: c,

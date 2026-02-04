@@ -1,6 +1,6 @@
 /** chunk id: 418616, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var r = n(627968),
     i = n(64700),
@@ -13,12 +13,12 @@ var r = n(627968),
     d = n(965660),
     p = n(324580),
     h = n(985018),
-    g = n(678042);
+    f = n(678042);
 
-function m(e) {
+function g(e) {
     let {
         loadId: t
-    } = e, n = (0, l.bG)([s.default], () => (0, d.Kv)([s.default])), m = u.A.useField("languageCode"), f = i.useCallback(e => {
+    } = e, n = (0, l.bG)([s.default], () => (0, d.Kv)([s.default])), g = u.A.useField("languageCode"), m = i.useCallback(e => {
         u.A.setState({
             languageCode: e
         });
@@ -37,14 +37,14 @@ function m(e) {
         label: e.name
     })), []);
     return (0, r.jsx)("div", {
-        className: g.k,
+        className: f.k,
         children: (0, r.jsx)(a.ZiE, {
             selectionMode: "single",
             label: h.intl.string(h.t.Ng5cTK),
             hideLabel: !0,
-            value: null != m ? m : n,
+            value: null != g ? g : n,
             options: A,
-            onSelectionChange: f
+            onSelectionChange: m
         })
     })
 }

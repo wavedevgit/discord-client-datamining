@@ -1,6 +1,6 @@
 /** chunk id: 164554, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => f
 });
 var r = n(627968),
     i = n(64700),
@@ -14,14 +14,14 @@ var r = n(627968),
     p = n(49370),
     h = n(985018);
 
-function g(e) {
+function f(e) {
     let {
         targetElementRef: t,
         dismissPopover: n,
-        children: g
-    } = e, m = i.useCallback(() => {
+        children: f
+    } = e, g = i.useCallback(() => {
         n(d.i.TAKE_ACTION), (0, c.pX)("".concat(u.BVt.NITRO_HOME, "?section=orbs"))
-    }, [n]), f = (0, r.jsx)(a.AM, {
+    }, [n]), m = (0, r.jsx)(a.AM, {
         targetElementRef: t,
         onRequestClose: () => n(d.i.USER_DISMISS),
         graphic: {
@@ -44,7 +44,7 @@ function g(e) {
         actions: [{
             text: h.intl.string(h.t.RzWDqY),
             icon: s.tvc,
-            onClick: m
+            onClick: g
         }],
         gradientColor: {
             type: "custom",
@@ -54,7 +54,7 @@ function g(e) {
     });
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-            children: g
-        }), f]
+            children: f
+        }), m]
     })
 }

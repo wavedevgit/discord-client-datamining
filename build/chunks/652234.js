@@ -13,9 +13,9 @@ var r = n(627968),
     d = n(629016),
     p = n(994500),
     h = n(287809),
-    g = n(403362),
-    m = n(901133),
-    f = n(507133),
+    f = n(403362),
+    g = n(901133),
+    m = n(507133),
     A = n(985018);
 
 function _(e, t, n) {
@@ -39,7 +39,7 @@ class b extends i.PureComponent {
             host: t,
             party: n
         } = this.props;
-        return this.hasParty(n) && null != e ? (0, r.jsx)(m.A, {
+        return this.hasParty(n) && null != e ? (0, r.jsx)(g.A, {
             currentUser: e,
             host: t,
             party: n,
@@ -85,7 +85,7 @@ class b extends i.PureComponent {
             let {
                 party: e
             } = this.props;
-            return (0, r.jsx)(f.A, {
+            return (0, r.jsx)(m.A, {
                 party: e,
                 header: A.intl.formatToPlainString(A.t.I9et1z, {
                     count: e.length
@@ -101,7 +101,7 @@ let E = s.Ay.connectStores([u.A, h.default, p.A, d.A], () => {
         l = [];
     if (null != n ? (e = h.default.getUser(n.userId), t = n.partyId) : null != r && null != r.party && null != r.party.id && (e = i, t = r.party.id), null != t) {
         var s;
-        l = a()(Array.from(null != (s = d.A.getParty(t)) ? s : [])).map(e => h.default.getUser(e)).filter(g.Vq).orderBy([t => null == e || e.id === t.id, e => p.A.isFriend(e.id)], ["desc", "desc"]).value()
+        l = a()(Array.from(null != (s = d.A.getParty(t)) ? s : [])).map(e => h.default.getUser(e)).filter(f.Vq).orderBy([t => null == e || e.id === t.id, e => p.A.isFriend(e.id)], ["desc", "desc"]).value()
     }
     return {
         currentUser: i,

@@ -266,11 +266,11 @@ function G(e) {
     }), t.setGroups(e.groups)
 }
 
-function V() {
+function F() {
     U.reset()
 }
 
-function F(e) {
+function V(e) {
     let {
         guild: t
     } = e;
@@ -340,10 +340,10 @@ class Z extends(r = c.Ay.Store) {
 }
 S(Z, "displayName", "ChannelMemberStore");
 let Q = new Z(u.h, {
-    CONNECTION_OPEN: V,
-    OVERLAY_INITIALIZE: V,
+    CONNECTION_OPEN: F,
+    OVERLAY_INITIALIZE: F,
     GUILD_MEMBER_LIST_UPDATE: G,
-    GUILD_UPDATE: F,
+    GUILD_UPDATE: V,
     GUILD_DELETE: B,
     GUILD_ROLE_UPDATE: H,
     GUILD_MEMBER_UPDATE: Y,

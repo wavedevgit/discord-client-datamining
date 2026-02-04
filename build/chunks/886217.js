@@ -1,7 +1,7 @@
 /** chunk id: 886217, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Ok: () => m,
-    _B: () => g
+    Ok: () => g,
+    _B: () => f
 });
 var r = n(627968),
     i = n(311907),
@@ -15,7 +15,7 @@ var r = n(627968),
     p = n(478677),
     h = n(985018);
 
-function g() {
+function f() {
     return [{
         value: "quest_bar",
         label: h.intl.string(h.t.rjVPdM)
@@ -36,35 +36,35 @@ function g() {
         label: h.intl.string(h.t.L2mlUb)
     }]
 }
-let m = e => {
+let g = e => {
     let {
         questId: t,
         selectedSections: n
     } = e, h = (0, i.bG)([l.A], () => l.A.getQuest(t));
     if (null != (0, i.bG)([l.A], () => l.A.getFetchQuestPreviewError(t)) || null == h) return null;
-    let g = e => null == n || 0 === n.length || n.includes(e);
+    let f = e => null == n || 0 === n.length || n.includes(e);
     return (0, r.jsxs)(r.Fragment, {
-        children: [g("quest_bar") && (0, r.jsxs)(r.Fragment, {
+        children: [f("quest_bar") && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(o.A, {
                 quest: h
             }), (0, r.jsx)(a.c, {})]
-        }), g("home_card") && (0, r.jsxs)(r.Fragment, {
+        }), f("home_card") && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(d._, {
                 quest: h
             }), (0, r.jsx)(a.c, {})]
-        }), g("share_embed") && (0, r.jsxs)(r.Fragment, {
+        }), f("share_embed") && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(u.A, {
                 questId: h.id
             }), (0, r.jsx)(a.c, {})]
-        }), g("channel_call_header") && (0, r.jsxs)(r.Fragment, {
+        }), f("channel_call_header") && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(c.n, {
                 quest: h
             }), (0, r.jsx)(a.c, {})]
-        }), g("members_list") && (0, r.jsxs)(r.Fragment, {
+        }), f("members_list") && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(p.A, {
                 quest: h
             }), (0, r.jsx)(a.c, {})]
-        }), g("activity_panel") && (0, r.jsxs)(r.Fragment, {
+        }), f("activity_panel") && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(s.A, {
                 quest: h
             }), (0, r.jsx)(a.c, {})]

@@ -1,6 +1,6 @@
 /** chunk id: 575613, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g,
+    A: () => f,
     J: () => p
 }), n(896048);
 var r = n(627968),
@@ -110,7 +110,7 @@ class h extends i.PureComponent {
         })
     }
 }
-let g = l.Ay.connectStores([c.A], e => {
+let f = l.Ay.connectStores([c.A], e => {
     let {
         skuId: t
     } = e;

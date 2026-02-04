@@ -1,6 +1,6 @@
 /** chunk id: 619036, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => f
 }), n(896048);
 var r = n(627968);
 n(64700);
@@ -21,13 +21,13 @@ function h() {
         i = o.A.getOutputDeviceId();
     if (c.A.getState().neverShowModal || l().isEmpty(c.A.lastDeviceConnected)) return;
     let h = (0, c.x)(o.A.getInputDevices()[t]),
-        g = (0, c.x)(o.A.getOutputDevices()[i]);
-    if (l().some(c.A.lastDeviceConnected, e => d.has(e.displayName) || e.displayName === h || e.displayName === g)) return;
-    let m = l().some(c.A.lastDeviceConnected, e => s.A.isCertified(c.A.inputDevices[e.displayName]) || s.A.isCertified(c.A.outputDevices[e.displayName]));
-    if ((t === u.dx && c.A.lastInputSystemDevice.justChanged || i === u.dx && c.A.lastOutputSystemDevice.justChanged) && !m) return;
-    let f = l().first(Object.keys(c.A.lastDeviceConnected)),
-        A = null != f && "" !== f ? c.A.lastDeviceConnected[f] : null;
-    null == A || c.A.getState().ignoredDevices[A.displayName] || (c.A.initialized && null != f && (s.A.isCertified(c.A.inputDevices[f]) ? e = s.A.getCertifiedDevice(c.A.inputDevices[f]) : s.A.isCertified(c.A.outputDevices[f]) && (e = s.A.getCertifiedDevice(c.A.outputDevices[f]))), (0, a.mMO)(async () => {
+        f = (0, c.x)(o.A.getOutputDevices()[i]);
+    if (l().some(c.A.lastDeviceConnected, e => d.has(e.displayName) || e.displayName === h || e.displayName === f)) return;
+    let g = l().some(c.A.lastDeviceConnected, e => s.A.isCertified(c.A.inputDevices[e.displayName]) || s.A.isCertified(c.A.outputDevices[e.displayName]));
+    if ((t === u.dx && c.A.lastInputSystemDevice.justChanged || i === u.dx && c.A.lastOutputSystemDevice.justChanged) && !g) return;
+    let m = l().first(Object.keys(c.A.lastDeviceConnected)),
+        A = null != m && "" !== m ? c.A.lastDeviceConnected[m] : null;
+    null == A || c.A.getState().ignoredDevices[A.displayName] || (c.A.initialized && null != m && (s.A.isCertified(c.A.inputDevices[m]) ? e = s.A.getCertifiedDevice(c.A.inputDevices[m]) : s.A.isCertified(c.A.outputDevices[m]) && (e = s.A.getCertifiedDevice(c.A.outputDevices[m]))), (0, a.mMO)(async () => {
         let {
             default: t
         } = await n.e("68386").then(n.bind(n, 347961));
@@ -47,7 +47,7 @@ function h() {
         modalKey: p
     }))
 }
-let g = {
+let f = {
     init() {
         c.A.addChangeListener(h)
     }

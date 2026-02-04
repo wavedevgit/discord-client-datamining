@@ -1,6 +1,6 @@
 /** chunk id: 860768, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -21,7 +21,7 @@ function h(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class g extends i.PureComponent {
+class f extends i.PureComponent {
     render() {
         let e = "".concat(d.intl.string(d.t.VWqWZQ), "\n").concat(d.intl.string(d.t["0Lgb/K"]));
         return (0, r.jsx)(o.A, {
@@ -82,4 +82,4 @@ class g extends i.PureComponent {
         })
     }
 }
-let m = g
+let g = f

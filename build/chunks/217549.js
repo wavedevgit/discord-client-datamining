@@ -13,9 +13,9 @@ var r = n(627968),
     d = n(765379),
     p = n(61330),
     h = n(15285),
-    g = n(651743),
-    m = n(780964),
-    f = n(840065),
+    f = n(651743),
+    g = n(780964),
+    m = n(840065),
     A = n(962173),
     _ = n(134861),
     b = n(189081),
@@ -73,7 +73,7 @@ function j(e) {
         });
         return n || !i ? null : (0, r.jsx)(a.Drp, {
             id: "xbox-connect",
-            action: () => (0, f.openUserSettings)(m.X.CONNECTIONS_PANEL, {
+            action: () => (0, m.openUserSettings)(g.X.CONNECTIONS_PANEL, {
                 section: v.nc_.CONNECTIONS
             }),
             label: S.intl.formatToPlainString(S.t.XWSHTb, {
@@ -84,7 +84,7 @@ function j(e) {
         let {
             currentActivities: t
         } = e, n = i.useContext(O.AnalyticsContext);
-        return (0, l.yK)([h.Ay, b.A, g.A, E.A, _.A], () => t.filter(e => !(0, d.A)(e.activity)).map(e => {
+        return (0, l.yK)([h.Ay, b.A, f.A, E.A, _.A], () => t.filter(e => !(0, d.A)(e.activity)).map(e => {
             let {
                 activity: t,
                 game: r
@@ -94,13 +94,13 @@ function j(e) {
                 canJoin: null != t && (0, u.A)(t, v.jUm.JOIN) && t.type === v.$pd.PLAYING,
                 canPlay: (0, y.A)({
                     LibraryApplicationStore: b.A,
-                    LaunchableGameStore: g.A,
+                    LaunchableGameStore: f.A,
                     DispatchApplicationStore: E.A,
                     ConnectedAppsStore: _.A,
                     applicationId: r.id,
                     branchId: null != i ? i.branchId : null
                 }),
-                isLaunching: g.A.launchingGames.has(r.id),
+                isLaunching: f.A.launchingGames.has(r.id),
                 isRunning: h.Ay.getRunningVerifiedApplicationIds().includes(r.id),
                 location: n.location
             })

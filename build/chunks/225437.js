@@ -1,6 +1,6 @@
 /** chunk id: 225437, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var r, i = n(311907),
     l = n(506774),
@@ -52,7 +52,7 @@ function h(e) {
         [t]: !1
     })
 }
-class g extends(r = i.Ay.Store) {
+class f extends(r = i.Ay.Store) {
     shouldShowGuildTemplateDirtyTooltip(e) {
         var t;
         return null != (t = d[e]) && t
@@ -61,8 +61,8 @@ class g extends(r = i.Ay.Store) {
         return !p
     }
 }
-s(g, "displayName", "GuildTemplateTooltipStore");
-let m = new g(a.h, {
+s(f, "displayName", "GuildTemplateTooltipStore");
+let g = new f(a.h, {
     GUILD_TEMPLATE_DIRTY_TOOLTIP_REFRESH: function(e) {
         let {
             guildTemplate: t

@@ -114,11 +114,11 @@ function G() {
     s = void 0, l = void 0, c = void 0, d = void 0, o = void 0
 }
 
-function V() {
+function F() {
     v = {}
 }
 
-function F() {
+function V() {
     k(), I()
 }
 class B extends(h = g.Ay.Store) {
@@ -191,7 +191,7 @@ class B extends(h = g.Ay.Store) {
 b(B, "displayName", "GuildIdentitySettingsStore");
 let H = new B(E.h, {
     GUILD_IDENTITY_SETTINGS_INIT: A,
-    GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: F,
+    GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: V,
     GUILD_IDENTITY_SETTINGS_SET_GUILD: T,
     GUILD_IDENTITY_SETTINGS_SUBMIT: S,
     GUILD_IDENTITY_SETTINGS_SUBMIT_FAILURE: C,
@@ -208,5 +208,5 @@ let H = new B(E.h, {
     GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES: G,
     GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: k,
     GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: k,
-    GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS: V
+    GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS: F
 })

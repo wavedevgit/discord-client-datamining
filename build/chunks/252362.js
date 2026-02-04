@@ -1,6 +1,6 @@
 /** chunk id: 252362, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => f
 });
 var r = n(627968),
     i = n(64700),
@@ -13,16 +13,16 @@ var r = n(627968),
     d = n(979286),
     p = n(652215),
     h = n(985018);
-let g = e => {
+let f = e => {
     let {
         displayOptions: t,
         targetElementRef: n,
-        onRequestClose: g,
-        onClick: m
+        onRequestClose: f,
+        onClick: g
     } = e, {
-        analyticsLocations: f
-    } = (0, c.Ay)(o.A.HOME_PAGE_SHOP_TAB), A = (0, s.Ay)(), _ = (0, a.Mw)(A) ? t.assetDark : t.assetLight, b = i.useRef(g);
-    return b.current = g, i.useEffect(() => () => {
+        analyticsLocations: m
+    } = (0, c.Ay)(o.A.HOME_PAGE_SHOP_TAB), A = (0, s.Ay)(), _ = (0, a.Mw)(A) ? t.assetDark : t.assetLight, b = i.useRef(f);
+    return b.current = f, i.useEffect(() => () => {
         var e;
         null == (e = b.current) || e.call(b)
     }, []), (0, r.jsx)(l.AM, {
@@ -43,12 +43,12 @@ let g = e => {
             text: h.intl.string(h.t.fYfGgK),
             variant: "primary",
             onClick: () => {
-                null == m || m(), (0, u.pX)(p.BVt.COLLECTIBLES_SHOP), (0, d.Cz)({
-                    analyticsLocations: f,
+                null == g || g(), (0, u.pX)(p.BVt.COLLECTIBLES_SHOP), (0, d.Cz)({
+                    analyticsLocations: m,
                     analyticsSource: o.A.HOME_PAGE_SHOP_TAB
                 })
             }
         }],
-        onRequestClose: g
+        onRequestClose: f
     })
 }

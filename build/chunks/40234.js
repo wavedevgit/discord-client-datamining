@@ -15,7 +15,7 @@ var i = n(377802),
     p = n(42473),
     h = n(985018);
 
-function g(e) {
+function f(e) {
     var t, n;
     let {
         tooltipText: l,
@@ -64,11 +64,11 @@ function g(e) {
     }), t))
 }
 
-function m(e) {
+function g(e) {
     let {
         channel: t
     } = e;
-    return (0, r.jsx)(g, {
+    return (0, r.jsx)(f, {
         tooltipText: h.intl.string(h.t.SMKyih),
         onClick: () => {
             (0, d.A)(t) ? (0, u.j3)(t) : l.default.disconnect()
@@ -76,11 +76,11 @@ function m(e) {
     })
 }
 
-function f(e) {
+function m(e) {
     let {
         channel: t
     } = e;
-    return (0, r.jsx)(g, {
+    return (0, r.jsx)(f, {
         tooltipText: h.intl.string(h.t["6vrfgt"]),
         onClick: () => {
             (0, c.A)(t) ? (0, o.Py)(t) : l.default.disconnect()
@@ -92,9 +92,9 @@ function A(e) {
     let {
         channel: t
     } = e;
-    return t.isGuildStageVoice() ? (0, r.jsx)(m, {
+    return t.isGuildStageVoice() ? (0, r.jsx)(g, {
         channel: t
-    }) : (0, r.jsx)(f, {
+    }) : (0, r.jsx)(m, {
         channel: t
     })
 }

@@ -1,23 +1,23 @@
 /** chunk id: 602582, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => A
 }), n(896048);
-var i = n(735438),
-    r = n.n(i),
-    l = n(562465),
-    a = n(73153),
-    s = n(439372),
+var l = n(735438),
+    r = n.n(l),
+    i = n(562465),
+    s = n(73153),
+    a = n(439372),
     o = n(723176),
     u = n(626584),
     c = n(142120);
 n(95701);
 var d = n(961350),
     h = n(734057),
-    p = n(946132),
+    g = n(946132),
     f = n(937136),
-    g = n(652215);
+    p = n(652215);
 
-function m(e, t, n) {
+function I(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -25,47 +25,47 @@ function m(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let y = new u.A("MessagePreviewManager");
-class A extends s.A {
+let m = new u.A("MessagePreviewManager");
+class E extends a.A {
     addWant(e) {
         h.A.getBasicChannel(e)
     }
     async fetchLocal(e) {
-        if (!(!p.A.isLocalFetchNeeded(e) || this.localFetching.has(e))) try {
+        if (!(!g.A.isLocalFetchNeeded(e) || this.localFetching.has(e))) try {
             var t;
-            y.verbose("fetching local previews (via: database, guild_id: ".concat(e, ")")), this.localFetching.add(e);
+            m.verbose("fetching local previews (via: database, guild_id: ".concat(e, ")")), this.localFetching.add(e);
             let n = d.default.getId(),
-                i = await (null == (t = o.A.messages()) ? void 0 : t.getMostRecents(e));
-            null != i && n === d.default.getId() && a.h.dispatch({
+                l = await (null == (t = o.A.messages()) ? void 0 : t.getMostRecents(e));
+            null != l && n === d.default.getId() && s.h.dispatch({
                 type: "MESSAGE_PREVIEWS_LOCALLY_LOADED",
                 guildId: e,
-                messages: i.map(e => {
+                messages: l.map(e => {
                     let [t, n] = e;
                     return [t, n.message]
                 })
             })
         } catch (e) {
-            y.log("couldn't fetch local previews (error: ".concat(e, ")"))
+            m.log("couldn't fetch local previews (error: ".concat(e, ")"))
         } finally {
             this.localFetching.delete(e)
         }
     }
     fetchGuilds(e, t) {
         let n = t.nextWants(1e3);
-        return 0 === n.length ? Promise.resolve() : t.try(n, () => (y.verbose("fetching guild previews (via: gateway, guild_id: ".concat(e, ", channel_ids: ").concat(n.join(", "), ")")), c.A.getSocket().requestLastMessages(e, n), Promise.resolve()))
+        return 0 === n.length ? Promise.resolve() : t.try(n, () => (m.verbose("fetching guild previews (via: gateway, guild_id: ".concat(e, ", channel_ids: ").concat(n.join(", "), ")")), c.A.getSocket().requestLastMessages(e, n), Promise.resolve()))
     }
     fetchDms(e) {
         let t = e.nextWants(30);
         return 0 === t.length ? Promise.resolve() : e.try(t, async () => {
-            y.verbose("fetching dm previews (via: http, channel_ids: ".concat(t.join(", "), ")"));
-            let e = (await l.Bo.post({
-                url: g.Rsh.MESSAGE_PREVIEWS,
+            m.verbose("fetching dm previews (via: http, channel_ids: ".concat(t.join(", "), ")"));
+            let e = (await i.Bo.post({
+                url: p.Rsh.MESSAGE_PREVIEWS,
                 body: {
                     channel_ids: t
                 },
                 rejectWithError: !1
             })).body;
-            a.h.dispatch({
+            s.h.dispatch({
                 type: "MESSAGE_PREVIEWS_LOADED",
                 guildId: null,
                 messages: e
@@ -74,7 +74,7 @@ class A extends s.A {
     }
     syncChannel(e, t) {
         let n = this.remote.get(e);
-        null != n && p.A.isLatest(e, t) && n.removeWant(t)
+        null != n && g.A.isLatest(e, t) && n.removeWant(t)
     }
     getOrCreate(e) {
         return this.remote.has(e) || this.remote.set(e, new f.p), this.remote.get(e)
@@ -114,21 +114,21 @@ class A extends s.A {
     }
     handleMessagesLoaded(e) {
         var t, n;
-        let i = h.A.getBasicChannel(e.channelId),
-            r = null != (t = null == i ? void 0 : i.guild_id) ? t : null;
-        if (null != i)
+        let l = h.A.getBasicChannel(e.channelId),
+            r = null != (t = null == l ? void 0 : l.guild_id) ? t : null;
+        if (null != l)
             for (let t of null != (n = e.messages) ? n : []) this.syncChannel(r, t.channel_id)
     }
     handleThreadListSync(e) {
         let t = this.remote.get(e.guildId);
         if (null != t) {
             var n;
-            for (let i of null != (n = e.mostRecentMessages) ? n : []) t.removeWant(i.channel_id)
+            for (let l of null != (n = e.mostRecentMessages) ? n : []) t.removeWant(l.channel_id)
         }
     }
     constructor(...e) {
         var t;
-        super(...e), t = this, m(this, "remote", new Map), m(this, "remoteTicking", !1), m(this, "tickQueued", !1), m(this, "localFetching", new Set), m(this, "actions", {
+        super(...e), t = this, I(this, "remote", new Map), I(this, "remoteTicking", !1), I(this, "tickQueued", !1), I(this, "localFetching", new Set), I(this, "actions", {
             CONNECTION_OPEN_SUPPLEMENTAL: () => this.handleConnectionOpenSupplemental(),
             CONNECTION_RESUMED: () => this.handleConnectionResumed(),
             GUILD_CREATE: e => this.handleGuildCreate(e),
@@ -140,7 +140,7 @@ class A extends s.A {
             MESSAGE_DELETE: e => this.handleMessageDelete(e),
             MESSAGE_UPDATE: e => this.handleMessageUpdate(e),
             THREAD_LIST_SYNC: e => this.handleThreadListSync(e)
-        }), m(this, "remoteTick", r().debounce(async function() {
+        }), I(this, "remoteTick", r().debounce(async function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0;
             if (!c.A.isConnected()) {
                 t.tickQueued = !0;
@@ -152,10 +152,10 @@ class A extends s.A {
                     for (let [e, n] of(t.remoteTicking = !0, t.remote)) await (null == e ? t.fetchDms(n) : t.fetchGuilds(e, n));
                     t.cleanup(), t.remoteTicking = !1
                 } catch (n) {
-                    y.log("couldn't fetch message previews (attempt: ".concat(e, ", error: ").concat(n, ")")), t.remoteTicking = !1, t.remoteTick(e + 1)
+                    m.log("couldn't fetch message previews (attempt: ".concat(e, ", error: ").concat(n, ")")), t.remoteTicking = !1, t.remoteTick(e + 1)
                 }
             }
         }, 100))
     }
 }
-let v = new A
+let A = new E

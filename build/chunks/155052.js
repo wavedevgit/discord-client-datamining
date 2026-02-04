@@ -1,13 +1,13 @@
 /** chunk id: 155052, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => O
 }), n(321073), n(896048);
 var i = n(627968),
     r = n(64700),
     l = n(311907),
     a = n(397927),
-    s = n(555528),
-    o = n(531685),
+    o = n(555528),
+    s = n(531685),
     u = n(365971),
     c = n(243612),
     d = n(582240),
@@ -38,32 +38,32 @@ function m(e) {
     return e.widget.id
 }
 
-function y(e, t, n, r) {
-    var l, s;
-    return n === a.wLy.YEETED ? null : (0, i.jsx)(d.A, (l = g({}, t), s = s = {
+function A(e, t, n, r) {
+    var l, o;
+    return n === a.wLy.YEETED ? null : (0, i.jsx)(d.A, (l = g({}, t), o = o = {
         transitionState: n,
         cleanUp: r
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
             var i = Object.getOwnPropertySymbols(e);
             n.push.apply(n, i)
         }
         return n
-    })(Object(s)).forEach(function(e) {
-        Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(s, e))
+    })(Object(o)).forEach(function(e) {
+        Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
     }), l), e)
 }
-let A = [],
-    v = r.memo(function(e) {
+let y = [],
+    O = r.memo(function(e) {
         let {
             className: t
-        } = e, n = (0, p.A)(), d = (0, l.bG)([o.A], () => o.A.windowSize((0, u.Q2)(n))), v = (0, l.bG)([s.A], () => {
-            let e = s.A.getLayout(f.G);
-            if (null == e) return A;
+        } = e, n = (0, p.A)(), d = (0, l.bG)([s.A], () => s.A.windowSize((0, u.Q2)(n))), O = (0, l.bG)([o.A], () => {
+            let e = o.A.getLayout(f.G);
+            if (null == e) return y;
             let t = [];
             for (let n of e.widgets) {
-                let e = s.A.getWidget(n);
+                let e = o.A.getWidget(n);
                 if (null == e) continue;
                 let i = h.A[e.type];
                 null != i && (null == i.predicate || i.predicate()) && t.push(g({
@@ -71,15 +71,15 @@ let A = [],
                 }, i))
             }
             return t
-        }, [], c.VC), b = r.useCallback(e => (0, i.jsx)("div", {
+        }, [], c.VC), v = r.useCallback(e => (0, i.jsx)("div", {
             className: t,
             style: d,
             children: e
         }), [t, d]);
         return (0, i.jsx)(a.Fai, {
-            items: v,
-            renderItem: y,
+            items: O,
+            renderItem: A,
             getItemKey: m,
-            wrapChildren: b
+            wrapChildren: v
         })
     })

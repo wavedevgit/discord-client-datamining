@@ -1,6 +1,6 @@
 /** chunk id: 120006, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 });
 var r = n(627968),
     i = n(64700),
@@ -13,37 +13,37 @@ var r = n(627968),
     d = n(396415),
     p = n(652215),
     h = n(985018),
-    g = n(605540);
+    f = n(605540);
 
-function m(e, t, n) {
+function g(e, t, n) {
     return (0, r.jsxs)("button", {
-        className: g.kL,
+        className: f.kL,
         onClick: n,
         children: ["function" == typeof e ? (0, r.jsx)("div", {
-            className: g.Kk,
+            className: f.Kk,
             children: (0, r.jsx)(e, {
-                className: g.__invalid_iconInner,
+                className: f.__invalid_iconInner,
                 color: l.LU0.colors.WHITE.css
             })
         }) : (0, r.jsx)("img", {
-            className: g.Kk,
+            className: f.Kk,
             alt: "",
             src: e
         }), (0, r.jsx)(l.Text, {
-            className: g.Qq,
+            className: f.Qq,
             variant: "text-md/medium",
             children: t
         }), (0, r.jsx)(d.A, {
-            className: g.UE
+            className: f.UE
         })]
     }, t)
 }
 
-function f() {
+function m() {
     let e = o.A.getGuildsArray().filter(e => e.features.has(p.GuildFeatures.HUB));
     return (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsxs)("header", {
-            className: g.wx,
+            className: f.wx,
             children: [(0, r.jsx)(l.Heading, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
@@ -54,8 +54,8 @@ function f() {
                 children: h.intl.string(h.t.DwevPs)
             })]
         }), (0, r.jsxs)("div", {
-            className: g.Vg,
-            children: [e.map(e => m(u.Ay.getGuildIconURL({
+            className: f.Vg,
+            children: [e.map(e => g(u.Ay.getGuildIconURL({
                 id: e.id,
                 icon: e.icon,
                 size: 240
@@ -64,7 +64,7 @@ function f() {
                 t = e.id, c.default.track(p.HAw.ADD_FRIEND_OTHER_PLACES_HUB_CLICKED, {
                     guild_id: t
                 }), (0, s.u)(t)
-            })), m(l.QGJ, h.intl.string(h.t.AhKnz4), () => {
+            })), g(l.QGJ, h.intl.string(h.t.AhKnz4), () => {
                 c.default.track(p.HAw.ADD_FRIEND_OTHER_PLACES_DISCOVERY_CLICKED), (0, a.pX)(p.BVt.GUILD_DISCOVERY)
             })]
         })]

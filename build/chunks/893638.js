@@ -13,8 +13,8 @@ var r = n(627968),
     d = n(69175),
     p = n(652215),
     h = n(985018),
-    g = n(388756);
-let m = [{
+    f = n(388756);
+let g = [{
         feature: p.x0t.SINGLE_PLAYER,
         getText: () => h.intl.string(h.t["V+/FjO"]),
         getTooltip: () => h.intl.string(h.t["w+X9sT"]),
@@ -80,26 +80,26 @@ let m = [{
         getTooltip: () => h.intl.string(h.t.VudViJ),
         IconComponent: d.A
     }],
-    f = e => {
+    m = e => {
         let {
             IconComponent: t,
             text: n,
             tooltip: i
         } = e;
         return (0, r.jsxs)("div", {
-            className: g.nM,
+            className: f.nM,
             children: [(0, r.jsx)(l.m, {
                 text: i,
                 children: (0, r.jsx)(t, {
-                    className: g.AD
+                    className: f.AD
                 })
             }), (0, r.jsx)("span", {
-                className: g.oo,
+                className: f.oo,
                 children: n
             }), (0, r.jsx)(a.A9s, {
                 size: "md",
                 color: "currentColor",
-                className: g.$8
+                className: f.$8
             })]
         })
     };
@@ -107,7 +107,7 @@ class A extends i.PureComponent {
     render() {
         let {
             sku: e
-        } = this.props, t = m.filter(t => {
+        } = this.props, t = g.filter(t => {
             let {
                 feature: n
             } = t;
@@ -119,14 +119,14 @@ class A extends i.PureComponent {
                 getText: i,
                 getTooltip: l
             } = e;
-            return (0, r.jsx)(f, {
+            return (0, r.jsx)(m, {
                 IconComponent: n,
                 text: i(),
                 tooltip: l()
             }, t)
         });
         return 0 === t.length ? null : (0, r.jsxs)("div", {
-            className: g.qT,
+            className: f.qT,
             children: [(0, r.jsx)(s.A, {
                 children: h.intl.string(h.t.XXENra)
             }), t]

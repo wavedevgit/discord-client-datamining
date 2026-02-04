@@ -55,12 +55,12 @@ function G(e) {
     e.isSwitchingAccount && I.OV.handleAccountSwitch(), P.verbose("Closing socket because of logout"), I.sZ.close()
 }
 
-function V() {
+function F() {
     return P.verbose("session refresh dispatched", {
         isEstablished: I.sZ.isSessionEstablished()
     }), !!I.sZ.isSessionEstablished() && (I.sZ.close(), I.sZ.connect())
 }
-async function F(e) {
+async function V(e) {
     L = Date.now(), x = e.sessionId, I.OV.handleConnectionOpen();
     let t = {},
         n = y.A.getVoiceChannelId();
@@ -328,11 +328,11 @@ class ey extends(r = o.Ay.Store) {
 w(ey, "displayName", "GatewayConnectionStore");
 let eb = new ey(s.h, {
     START_SESSION: U,
-    LOGIN_SUCCESS: V,
+    LOGIN_SUCCESS: F,
     LOGOUT: G,
     CLEAR_CACHES: Y,
     CONNECTION_OPEN: e => {
-        F(e)
+        V(e)
     },
     CONNECTION_RESUMED: H,
     CONNECTION_CLOSED: B,

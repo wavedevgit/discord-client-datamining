@@ -22,17 +22,17 @@ function h(e, t, n) {
     }) : e[t] = n, e
 }
 n(518959);
-let g = (0, o.Fe)({
+let f = (0, o.Fe)({
         createPromise: () => n.e("71138").then(n.bind(n, 140539)),
         webpackId: 140539,
         name: "PopoutWindowChannelCall"
     }),
-    m = (0, o.Fe)({
+    g = (0, o.Fe)({
         createPromise: () => n.e("36133").then(n.bind(n, 943472)),
         webpackId: 943472,
         name: "PopoutWindowCallTile"
     }),
-    f = (0, o.Fe)({
+    m = (0, o.Fe)({
         createPromise: () => n.e("36308").then(n.bind(n, 911315)),
         webpackId: 911315,
         name: "PopoutWindowStageChannelCall"
@@ -58,10 +58,10 @@ class b extends a.A {
         let {
             channel: t
         } = e;
-        u.open(d.MLl.CHANNEL_CALL_POPOUT, e => t.isGuildStageVoice() ? (0, r.jsx)(f, {
+        u.open(d.MLl.CHANNEL_CALL_POPOUT, e => t.isGuildStageVoice() ? (0, r.jsx)(m, {
             windowKey: e,
             channelId: t.id
-        }) : (0, r.jsx)(g, {
+        }) : (0, r.jsx)(f, {
             windowKey: e,
             channelId: t.id
         }), {
@@ -109,7 +109,7 @@ class b extends a.A {
                 channelId: t,
                 participantId: n
             } = e, i = (0, s.A)(t, n);
-            u.open(i, e => (0, r.jsx)(m, {
+            u.open(i, e => (0, r.jsx)(g, {
                 windowKey: e,
                 channelId: t,
                 participantId: n

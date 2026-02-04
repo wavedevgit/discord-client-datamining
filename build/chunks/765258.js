@@ -1,6 +1,6 @@
 /** chunk id: 765258, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => f
 });
 var r = n(627968),
     i = n(64700),
@@ -13,11 +13,11 @@ var r = n(627968),
     d = n(985018),
     p = n(436292);
 let h = (0, c.S)() || !1,
-    g = i.memo(function(e) {
+    f = i.memo(function(e) {
         let {
             currentRoute: t,
             renderToolbar: n
-        } = e, c = i.useContext(o.AnalyticsContext), g = h || t === u.BVt.APPLICATION_LIBRARY_SETTINGS;
+        } = e, c = i.useContext(o.AnalyticsContext), f = h || t === u.BVt.APPLICATION_LIBRARY_SETTINGS;
         return (0, r.jsxs)(a.A, {
             className: p.$,
             toolbar: null == n ? void 0 : n(),
@@ -69,7 +69,7 @@ let h = (0, c.S)() || !1,
                 children: [(0, r.jsx)(l.VQ0.Item, {
                     id: u.BVt.APPLICATION_LIBRARY,
                     children: d.intl.string(d.t.p7ARTB)
-                }), g ? (0, r.jsx)(l.VQ0.Item, {
+                }), f ? (0, r.jsx)(l.VQ0.Item, {
                     id: u.BVt.APPLICATION_LIBRARY_SETTINGS,
                     children: d.intl.string(d.t["3D5yo/"])
                 }) : null]

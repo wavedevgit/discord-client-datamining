@@ -1,7 +1,7 @@
 /** chunk id: 544420, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => V
+    A: () => F
 }), n(896048), n(747238), n(65821);
 var r = n(488428),
     i = n(110259),
@@ -190,7 +190,7 @@ async function G(e) {
         error: f
     }), Promise.reject(f))
 }
-let V = {
+let F = {
     addGame(e, t) {
         c.h.dispatch({
             type: "RUNNING_GAME_ADD_OVERRIDE",

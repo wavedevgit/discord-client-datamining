@@ -1,8 +1,8 @@
 /** chunk id: 247683, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => F,
-    d5: () => V,
+    Ay: () => V,
+    d5: () => F,
     uG: () => U
 }), n(896048);
 var r = n(627968),
@@ -435,7 +435,7 @@ class G extends i.PureComponent {
     }
 }
 
-function V() {
+function F() {
     let {
         renderWindow: e
     } = i.useContext(m.Ay), t = e.document, [n] = i.useState(() => new c.R(() => t.createElement("img"), e => {
@@ -455,7 +455,7 @@ function V() {
         videoPool: r
     }
 }
-let F = function(e) {
-    let t = V();
+let V = function(e) {
+    let t = F();
     return (0, r.jsx)(G, S({}, e, t))
 }

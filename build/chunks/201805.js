@@ -6,7 +6,7 @@ n.d(t, {
     TQ: () => G,
     Xf: () => x,
     _c: () => k,
-    c9: () => V,
+    c9: () => F,
     dN: () => U,
     ix: () => L
 }), n(896048);
@@ -313,7 +313,7 @@ function G(e) {
     }
 }
 
-function V(e) {
+function F(e) {
     let {
         location: t
     } = e, {
@@ -333,7 +333,7 @@ function V(e) {
         hasLoadedQuestBar: 0 !== r && 0 !== i
     }
 }
-let F = {
+let V = {
     leading: !0,
     trailing: !1
 };
@@ -346,5 +346,5 @@ function B(e) {
     } = e;
     return (0, l.I)(i.useCallback(() => {
         t && ((0, v.Xm)(n, r), (0, s.showToast)((0, s.createToast)(D.intl.string(D.t["+5kSoW"]), s.ToastType.SUCCESS)))
-    }, [t, n, r]), 3e3, [], F)
+    }, [t, n, r]), 3e3, [], V)
 }

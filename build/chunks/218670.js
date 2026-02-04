@@ -7,15 +7,15 @@ n(64700);
 var r = n(503698),
     l = n.n(r),
     a = n(311907),
-    s = n(734057),
-    o = n(309010),
+    o = n(734057),
+    s = n(309010),
     u = n(494566),
     c = n(5172);
 
 function d(e) {
     let {
         locked: t
-    } = e, n = (0, a.bG)([o.A], () => o.A.getVoiceChannelId()), r = (0, a.bG)([s.A], () => s.A.getChannel(n)), d = null != r;
+    } = e, n = (0, a.bG)([s.A], () => s.A.getVoiceChannelId()), r = (0, a.bG)([o.A], () => o.A.getChannel(n)), d = null != r;
     return (0, i.jsxs)("div", {
         className: l()({
             [c.KE]: !0,

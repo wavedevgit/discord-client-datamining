@@ -13,9 +13,9 @@ var r = n(627968),
     d = n(442433),
     p = n(793574),
     h = n(70730),
-    g = n(777426),
-    m = n(976860),
-    f = n(734057),
+    f = n(777426),
+    g = n(976860),
+    m = n(734057),
     A = n(430452),
     _ = n(994500),
     b = n(427262),
@@ -56,13 +56,13 @@ function P(e) {
             joinCall: !0,
             joinCallVideo: !0
         })
-    }, [t.id]), g = i.useCallback(() => {
+    }, [t.id]), f = i.useCallback(() => {
         E.A.removeFriend({
             userId: t.id,
             applicationId: l ? n : null,
             location: "Friends"
         })
-    }, [n, l, t.id]), m = i.useCallback(() => {
+    }, [n, l, t.id]), g = i.useCallback(() => {
         let e = l ? T.intl.string(T.t.RLcE6x) : T.intl.string(T.t.cvSt1J);
         c.A.show({
             title: T.intl.formatToPlainString(T.t.fPLvZd, {
@@ -74,16 +74,16 @@ function P(e) {
             confirmText: e,
             confirmVariant: "critical-primary",
             cancelText: T.intl.string(T.t["ETE/oC"]),
-            onConfirm: g
+            onConfirm: f
         })
-    }, [g, l, t]), f = (0, s.bG)([A.A], () => A.A.supports(N.O5.VIDEO)), _ = t.isProvisional, O = l ? T.intl.string(T.t.RLcE6x) : T.intl.string(T.t.cvSt1J);
+    }, [f, l, t]), m = (0, s.bG)([A.A], () => A.A.supports(N.O5.VIDEO)), _ = t.isProvisional, O = l ? T.intl.string(T.t.RLcE6x) : T.intl.string(T.t.cvSt1J);
     return (0, r.jsxs)(o.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "friend-row",
         "aria-label": T.intl.string(T.t.liqwPJ),
         onClose: d.Z_,
         onSelect: a,
-        children: [!_ && f ? (0, r.jsx)(o.Drp, {
+        children: [!_ && m ? (0, r.jsx)(o.Drp, {
             id: "start-video-call",
             label: T.intl.string(T.t.oCqlGG),
             action: h
@@ -94,7 +94,7 @@ function P(e) {
         }), (0, r.jsx)(o.Drp, {
             id: "remove-friend",
             label: O,
-            action: m,
+            action: g,
             color: "danger"
         })]
     })
@@ -117,12 +117,12 @@ class w extends i.PureComponent {
             isVR: s,
             isGameRelationship: c,
             giftIntentType: u,
-            hasFriendAnniversarySection: m,
-            sectionIndex: f
+            hasFriendAnniversarySection: g,
+            sectionIndex: m
         } = this.props, {
             isActiveRow: A
         } = this.state;
-        return (0, h.p)(p.A.FRIENDS_LIST) && u === C.np.FRIEND_ANNIVERSARY && m && 0 === f ? (0, r.jsx)(g.A, {
+        return (0, h.p)(p.A.FRIENDS_LIST) && u === C.np.FRIEND_ANNIVERSARY && g && 0 === m ? (0, r.jsx)(f.A, {
             ref: this.peopleListItemRef,
             isFocused: t,
             isActive: A,
@@ -185,8 +185,8 @@ class w extends i.PureComponent {
                 user: t
             } = this.props;
             e.stopPropagation();
-            let n = a().find(f.A.getMutablePrivateChannels(), e => e.type === S.rbe.DM && e.getRecipientId() === t.id);
-            null != n ? (0, m.pX)(S.BVt.CHANNEL(S.ME, n.id)) : u.A.openPrivateChannel({
+            let n = a().find(m.A.getMutablePrivateChannels(), e => e.type === S.rbe.DM && e.getRecipientId() === t.id);
+            null != n ? (0, g.pX)(S.BVt.CHANNEL(S.ME, n.id)) : u.A.openPrivateChannel({
                 recipientIds: t.id
             })
         }), x(this, "handleOpenActionsMenu", e => {

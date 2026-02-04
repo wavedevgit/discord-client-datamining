@@ -1,6 +1,6 @@
 /** chunk id: 110434, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 }), n(65821);
 var r, i = n(627968);
 n(64700);
@@ -13,7 +13,7 @@ var l = n(503698),
     d = n(985018),
     p = n(208744),
     h = ((r = h || {})[r.STAFF_NOTES = 1] = "STAFF_NOTES", r);
-let g = s.Ay.connectStores([u.A], () => ({
+let f = s.Ay.connectStores([u.A], () => ({
         animate: u.A.isFocused()
     }))(e => {
         let {
@@ -39,7 +39,7 @@ let g = s.Ay.connectStores([u.A], () => ({
             })]
         })
     }),
-    m = e => {
+    g = e => {
         let {
             data: t,
             className: n
@@ -52,7 +52,7 @@ let g = s.Ay.connectStores([u.A], () => ({
             } = t.staffNotes;
             return null == e ? null : (0, i.jsxs)("div", {
                 className: n,
-                children: [(0, i.jsx)(g, {
+                children: [(0, i.jsx)(f, {
                     user: e,
                     className: p.wx
                 }), (0, i.jsx)("div", {
@@ -63,5 +63,5 @@ let g = s.Ay.connectStores([u.A], () => ({
         }
         throw Error("Unknown type")
     };
-m.Types = h;
-let f = m
+g.Types = h;
+let m = g

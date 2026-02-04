@@ -76,10 +76,10 @@ let R = {},
     U = 75,
     G = 25;
 
-function V() {
+function F() {
     j = h.A.getProps().results.filter(e => e.type === p.rD.TEXT_CHANNEL && 0 === e.record.type).map(e => e.record.id)
 }
-class F extends(s = u.Ay.PersistedStore) {
+class V extends(s = u.Ay.PersistedStore) {
     getState() {
         return {
             shouldShowTopicsBar: r
@@ -87,7 +87,7 @@ class F extends(s = u.Ay.PersistedStore) {
     }
     initialize(e) {
         var t;
-        r = null == (t = null == e ? void 0 : e.shouldShowTopicsBar) || t, this.waitFor(m.A, _.A, g.A, h.A, E.Ay, y.A, b.Ay, O.default), this.syncWith([h.A], V)
+        r = null == (t = null == e ? void 0 : e.shouldShowTopicsBar) || t, this.waitFor(m.A, _.A, g.A, h.A, E.Ay, y.A, b.Ay, O.default), this.syncWith([h.A], F)
     }
     allSummaries() {
         return R
@@ -168,8 +168,8 @@ function B(e, t, n, r) {
     let i = null == t || t < n;
     return !(null == e || e > r) && !i
 }
-T(F, "persistKey", "SummaryStore");
-let H = new F(d.h, {
+T(V, "persistKey", "SummaryStore");
+let H = new V(d.h, {
     CONNECTION_OPEN: () => !1,
     CHANNEL_SELECT(e) {
         let {

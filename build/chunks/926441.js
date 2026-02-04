@@ -13,15 +13,15 @@ var r = n(64700),
     d = n(458294),
     p = n(803224),
     h = n(994500),
-    g = n(503509),
-    m = n(723702),
-    f = n(837921),
+    f = n(503509),
+    g = n(723702),
+    m = n(837921),
     A = n(726249),
     _ = n(652215),
     b = n(985018);
 let E = new Set(["Blink", "Gecko", "WebKit"]),
     O = _.tEg;
-if (m.isPlatformEmbedded) O = e => f.Ay.setBadge(e);
+if (g.isPlatformEmbedded) O = e => m.Ay.setBadge(e);
 else if (E.has(s().layout)) {
     let e = new(l())({
         animation: "none"
@@ -34,7 +34,7 @@ else if (E.has(s().layout)) {
 }
 
 function y() {
-    let e = (0, o.bG)([g.A], () => g.A.hasIncomingCalls()),
+    let e = (0, o.bG)([f.A], () => f.A.hasIncomingCalls()),
         t = (0, o.bG)([d.default, h.A, p.A, c.A], () => {
             let e = d.default.getTotalMentionCount(),
                 t = (0, u.dH)([h.A, c.A]),
@@ -45,7 +45,7 @@ function y() {
         });
     r.useEffect(() => {
         if (!e) return;
-        let t = f.Ay.bounceDock("critical"),
+        let t = m.Ay.bounceDock("critical"),
             n = (0, A.iA)({
                 messages: [b.intl.string(b.t["fk1/bX"])],
                 count: 50

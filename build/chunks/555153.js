@@ -6,18 +6,18 @@ var i = n(627968),
     r = n(64700),
     l = n(554146),
     a = n(397927),
-    s = n(379848),
-    o = n(49999),
+    o = n(379848),
+    s = n(49999),
     u = n(985018),
     c = n(477545);
 
 function d(e) {
     let {
         locked: t
-    } = e, [n, d] = (0, s.kn)(t ? [] : [l.M.OVERLAY_OOP_WELCOME_BACKGROUND_NUX], void 0, !0);
+    } = e, [n, d] = (0, o.kn)(t ? [] : [l.M.OVERLAY_OOP_WELCOME_BACKGROUND_NUX], void 0, !0);
     return (r.useEffect(() => {
         if (!t && n === l.M.OVERLAY_OOP_WELCOME_BACKGROUND_NUX) return () => {
-            n === l.M.OVERLAY_OOP_WELCOME_BACKGROUND_NUX && d(o.i.AUTO_DISMISS)
+            n === l.M.OVERLAY_OOP_WELCOME_BACKGROUND_NUX && d(s.i.AUTO_DISMISS)
         }
     }, [t, d, n]), t || n !== l.M.OVERLAY_OOP_WELCOME_BACKGROUND_NUX) ? null : (0, i.jsx)("div", {
         className: c.A,

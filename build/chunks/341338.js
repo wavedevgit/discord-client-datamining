@@ -1,6 +1,6 @@
 /** chunk id: 341338, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => eg
+    A: () => ef
 }), n(65821), n(228524), n(321073), n(667532), n(896048), n(938796);
 var r = n(627968),
     i = n(64700),
@@ -13,9 +13,9 @@ var r = n(627968),
     d = n(582754),
     p = n(421380),
     h = n(397927),
-    g = n(73153),
-    m = n(436946),
-    f = n(339048),
+    f = n(73153),
+    g = n(436946),
+    m = n(339048),
     A = n(800342),
     _ = n(820284),
     b = n(774334),
@@ -119,7 +119,7 @@ class eh extends i.PureComponent {
             } = l.state;
             this._analyticsSource = e, this._extraAnalyticsProperties = t
         } else this._analyticsSource = ea.$OG;
-        (null == t || t.isSlimDirectoryVersion()) && a(), null != e && (n || i || (0, f.LM)(e.applicationId), r && g.h.wait(() => (0, m.n)(e.applicationId))), this.trackViewed(), this.replaceUrlWithSlug()
+        (null == t || t.isSlimDirectoryVersion()) && a(), null != e && (n || i || (0, m.LM)(e.applicationId), r && f.h.wait(() => (0, g.n)(e.applicationId))), this.trackViewed(), this.replaceUrlWithSlug()
     }
     componentDidUpdate(e) {
         let {
@@ -137,7 +137,7 @@ class eh extends i.PureComponent {
                 slug: a
             }), (t !== e.locale || i !== e.skuId) && o(), r && !e.shouldFetchStatistics) {
             if (null == n) throw Error("Unexpected missing sku");
-            g.h.wait(() => (0, m.n)(n.applicationId))
+            f.h.wait(() => (0, g.n)(n.applicationId))
         }(i !== e.skuId || l !== e.storeListingId) && (this._trackedViewed = !1), this.trackViewed(), this.replaceUrlWithSlug()
     }
     componentWillUnmount() {
@@ -593,7 +593,7 @@ class eh extends i.PureComponent {
         })
     }
 }
-let eg = (0, E.A)((0, O.A)(o.Ay.connectStores([M.A, w.A, P.default, B.A, G.A, U.A, V.A, y.A, I.A, D.A, L.A, k.A], e => {
+let ef = (0, E.A)((0, O.A)(o.Ay.connectStores([M.A, w.A, P.default, B.A, G.A, U.A, V.A, y.A, I.A, D.A, L.A, k.A], e => {
     let t, n, r, {
         inputSkuId: i,
         applicationId: l,

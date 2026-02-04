@@ -51,14 +51,14 @@ n.d(t, {
     _3: () => k,
     _6: () => eb,
     _8: () => eQ,
-    _Z: () => eV,
+    _Z: () => eF,
     _z: () => j,
     b0: () => M,
     bm: () => U,
     cU: () => ec,
     cj: () => e_,
     dG: () => ei,
-    dm: () => eF,
+    dm: () => eV,
     e: () => W,
     eK: () => b,
     eh: () => eP,
@@ -89,8 +89,8 @@ n.d(t, {
     uh: () => G,
     vL: () => et,
     vf: () => el,
-    wv: () => V,
-    xM: () => F
+    wv: () => F,
+    xM: () => V
 }), n(896048);
 var r = n(735438),
     i = n(311907),
@@ -218,11 +218,11 @@ let I = (0, u.c$)("notifications", "enableVoiceActivityNotifications", e => {
     G = (0, u.c$)("voiceAndVideo", "disableStreamPreviews", e => null == e ? void 0 : e.value, e => o._t.create({
         value: e
     })),
-    V = (0, u.c$)("notifications", "notifyFriendsOnGoLive", e => null == e ? void 0 : e.value, e => o._t.create({
+    F = (0, u.c$)("notifications", "notifyFriendsOnGoLive", e => null == e ? void 0 : e.value, e => o._t.create({
         value: e
     })),
-    F = "0",
-    B = (0, u.c$)("notifications", "notificationCenterAckedBeforeId", e => null != e ? e : F, e => e),
+    V = "0",
+    B = (0, u.c$)("notifications", "notificationCenterAckedBeforeId", e => null != e ? e : V, e => e),
     H = (0, u.c$)("gameLibrary", "installShortcutDesktop", e => {
         var t;
         return null != (t = null == e ? void 0 : e.value) && t
@@ -551,14 +551,14 @@ let eR = (0, u.Mt)((0, u.c$)("appearance", "developerMode", e => null != e && e,
     ineligibleDefault: a.AN.OFF,
     eligibleDefault: () => a.AN.ON_FOR_LARGE_GUILDS
 });
-let eV = (0, u.c6)({
+let eF = (0, u.c6)({
         baseSetting: (0, u.c$)("privacy", "defaultGuildsActivityRestrictedV2", e => e === a.Qd.ACTIVITY_STATUS_UNSET ? null : e, e => null != e ? e : a.Qd.ACTIVITY_STATUS_OFF),
         isEligible: () => (0, c.oK)("user_settings"),
         useIsEligible: () => (0, c.ty)("user_settings"),
         ineligibleDefault: a.Qd.ACTIVITY_STATUS_OFF,
         eligibleDefault: () => a.Qd.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS
     }),
-    eF = (0, u.c$)("privacy", "familyCenterEnabledV2", e => null == e ? void 0 : e.value, e => o._t.create({
+    eV = (0, u.c$)("privacy", "familyCenterEnabledV2", e => null == e ? void 0 : e.value, e => o._t.create({
         value: e
     })),
     eB = (0, u.c$)("privacy", "hideLegacyUsername", e => {

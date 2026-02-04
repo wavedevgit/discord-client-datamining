@@ -14,9 +14,9 @@ var i = n(397927),
     d = n(309010),
     p = n(532624),
     h = n(518647),
-    g = n(796774),
-    m = n(209932),
-    f = n(123973),
+    f = n(796774),
+    g = n(209932),
+    m = n(123973),
     A = n(102597),
     _ = n(904054),
     b = n(857179),
@@ -52,26 +52,26 @@ class v extends h.A {
                 r = arguments.length > 2 ? arguments[2] : void 0,
                 i = arguments.length > 3 ? arguments[3] : void 0,
                 l = null != i && d.A.getVoiceChannelId() === i;
-            if ((null == i || l) && !u.A.isDeaf() && !m.A.isLocalSoundboardMuted(r)) try {
+            if ((null == i || l) && !u.A.isDeaf() && !g.A.isLocalSoundboardMuted(r)) try {
                 let i = {
                     soundKey: "".concat(r, "-").concat(e),
                     soundURL: (0, A.A)(e),
                     soundVolume: (0, _.A)(n),
-                    reportSoundStartedPlaying: () => (0, g.dZ)(e, r)
+                    reportSoundStartedPlaying: () => (0, f.dZ)(e, r)
                 };
                 u.A.supports(O.O5.SAMPLE_PLAYBACK) ? await (0, b.o)(i) : await (0, b.G)(i, t.playingSoundsWeb)
             } catch (e) {
                 I.warn("Error playing soundboard sound: ".concat(e.message))
             } finally {
-                (0, g.g0)(e, r)
+                (0, f.g0)(e, r)
             }
         }), y(this, "_handleOverlaySoundboardSoundsFetchRequest", () => {
-            (0, g.E7)()
+            (0, f.E7)()
         }), y(this, "_handleOpenEducationModal", (e, t) => {
             if (null == e) return;
             let l = c.A.getChannel(t),
                 a = p.Ay.getKeybindForAction(E.hCu.SOUNDBOARD_HOLD);
-            null != l && (0, f.A)(l) && null != a && o.A.hasHotspot(s._2.SOUNDBOARD_WHEEL_EDUCATION_MODAL) && (0, i.mMO)(async () => {
+            null != l && (0, m.A)(l) && null != a && o.A.hasHotspot(s._2.SOUNDBOARD_WHEEL_EDUCATION_MODAL) && (0, i.mMO)(async () => {
                 let {
                     default: t
                 } = await n.e("51143").then(n.bind(n, 888762));

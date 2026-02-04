@@ -40,8 +40,8 @@ var r = n(627968),
     k = n(446929),
     U = n(692440),
     G = n(788868),
-    V = n(88001),
-    F = n(652215),
+    F = n(88001),
+    V = n(652215),
     B = n(519412),
     H = n(985018),
     Y = n(314654),
@@ -140,7 +140,7 @@ function Q(e) {
             defaultPlanId: ei
         }), [er, n, ei, ea]);
     t = Z || ey ? H.intl.string(H.t.nyzoFb) : ec ? H.intl.formatToPlainString(B.default["3m9DJK"], {
-        premiumGroupProductName: (0, V.DP)()
+        premiumGroupProductName: (0, F.DP)()
     }) : (0, R.ys)(D) ? (0, R.ff)(n, ep) : H.intl.formatToPlainString(H.t["sBpy9/"], {
         planName: ep.name
     });
@@ -252,7 +252,7 @@ function Q(e) {
                     planGroup: K
                 }),
                 forceShow: !0,
-                showPricingLink: ep.currency !== F.Yri.USD,
+                showPricingLink: ep.currency !== V.Yri.USD,
                 showWithdrawalWaiver: em,
                 disabled: eg,
                 subscriptionPlan: ep,
@@ -428,7 +428,7 @@ function $(e) {
             planGroup: s
         }),
         forceShow: !0,
-        showPricingLink: a.currency !== F.Yri.USD,
+        showPricingLink: a.currency !== V.Yri.USD,
         showWithdrawalWaiver: f,
         disabled: u,
         subscriptionPlan: a,
@@ -537,7 +537,7 @@ function et(e) {
     if (null == h) return (0, r.jsx)("div", {
         children: (0, r.jsx)(d.y$y, {})
     });
-    t = n.type === F.rzx.PREMIUM ? (0, R.Mn)(a.id) : a.name;
+    t = n.type === V.rzx.PREMIUM ? (0, R.Mn)(a.id) : a.name;
     let E = (0, R.J$)(c.paymentSourceId),
         y = h.subscriptionPeriodStart;
     return l.fractionalState === G.xc.FP_SUB_PAUSED && (y = l.endsAt.toDate()), (0, r.jsxs)("div", {

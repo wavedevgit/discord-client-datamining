@@ -40,8 +40,8 @@ var r = n(627968),
     k = n(822123),
     U = n(535622),
     G = n(724511),
-    V = n(484333),
-    F = n(923861),
+    F = n(484333),
+    V = n(923861),
     B = n(732139),
     H = n(652215),
     Y = n(698279),
@@ -112,7 +112,7 @@ let q = 0,
             let {
                 columnIndex: t,
                 visibleRowIndex: n
-            } = e, r = e.type === V.bm.SOUNDMOJI ? null : e.type === V.bm.EMOJI ? (0, L.N)(e.emoji) : e.name;
+            } = e, r = e.type === F.bm.SOUNDMOJI ? null : e.type === F.bm.EMOJI ? (0, L.N)(e.emoji) : e.name;
             el.current !== H.An1 && window.cancelAnimationFrame(el.current), el.current = window.requestAnimationFrame(() => {
                 E.Om.setInspectedExpressionPosition(t, n, b.t.MOUSE_EVENT), E.Om.setSearchPlaceholder(r), el.current = H.An1
             })
@@ -125,7 +125,7 @@ let q = 0,
                         animate: !0
                     })
                 };
-            return (0, r.jsx)(F.A, {
+            return (0, r.jsx)(V.A, {
                 emojiDescriptors: n,
                 emojiSize: s,
                 surrogateCodePoint: ec,
@@ -260,7 +260,7 @@ let q = 0,
             messageId: j,
             isBurstReaction: k,
             listHeaderClassName: U
-        } = e, G = i.useRef(!1), F = E.Om.useStore(e => e.activeCategoryIndex), B = (0, y.RQ)(e => e.searchQuery), Y = R.Sf.useSetting(), Z = (0, u.bG)([P.default], () => P.default.getCurrentUser()), Q = (0, x.ki)(Z), {
+        } = e, G = i.useRef(!1), V = E.Om.useStore(e => e.activeCategoryIndex), B = (0, y.RQ)(e => e.searchQuery), Y = R.Sf.useSetting(), Z = (0, u.bG)([P.default], () => P.default.getCurrentUser()), Q = (0, x.ki)(Z), {
             location: X
         } = (0, h.p)(), {
             analyticsLocations: J
@@ -304,7 +304,7 @@ let q = 0,
             nitroLockedSectionStates: f,
             setUpsellGlowOpacity: ei
         }), eE = (0, v.Fk)({
-            activeCategoryIndex: F,
+            activeCategoryIndex: V,
             isScrolling: G,
             listRef: a,
             onActiveCategoryIndexChange: em,
@@ -314,7 +314,7 @@ let q = 0,
         });
         (0, v.FV)({
             searchQuery: B,
-            activeCategoryIndex: F,
+            activeCategoryIndex: V,
             listRef: a
         });
         let ey = i.useCallback(e => {
@@ -334,7 +334,7 @@ let q = 0,
                 nitroTierName: e,
                 onClick: () => {
                     d({
-                        type: V.a2.PREMIUM,
+                        type: F.a2.PREMIUM,
                         emojiDescriptor: void 0
                     })
                 }

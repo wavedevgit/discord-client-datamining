@@ -14,9 +14,9 @@ var i = n(311907),
     d = n(954921),
     p = n(278539),
     h = n(571694),
-    g = n(994500),
-    m = n(427262),
-    f = n(837921),
+    f = n(994500),
+    g = n(427262),
+    m = n(837921),
     A = n(800583),
     _ = n(999068),
     b = n(122943),
@@ -48,7 +48,7 @@ let y = e => {
             })]
         })
     },
-    I = f.Ay.getEnableHardwareAcceleration() ? a.JsQ : a.euF;
+    I = m.Ay.getEnableHardwareAcceleration() ? a.JsQ : a.euF;
 
 function v(e) {
     var t;
@@ -56,7 +56,7 @@ function v(e) {
         channel: n,
         otherUser: l,
         active: u
-    } = e, f = (0, i.bG)([o.A], () => o.A.useReducedMotion), _ = (0, i.bG)([g.A], () => null == l ? null : g.A.getNickname(l.id)), v = !f && u, S = (0, A.j)(n), {
+    } = e, m = (0, i.bG)([o.A], () => o.A.useReducedMotion), _ = (0, i.bG)([f.A], () => null == l ? null : f.A.getNickname(l.id)), v = !m && u, S = (0, A.j)(n), {
         avatarDecorationSrc: C
     } = (0, p.A)({
         user: l,
@@ -80,7 +80,7 @@ function v(e) {
                     showAccountIdentifier: !0,
                     className: O.I8,
                     usernameClass: O.Xh,
-                    discriminatorClass: null != m.Ay.getGlobalName(l) ? O.vl : O.D2
+                    discriminatorClass: null != g.Ay.getGlobalName(l) ? O.vl : O.D2
                 }), (0, r.jsx)(a.Text, {
                     className: O.L7,
                     color: "text-muted",

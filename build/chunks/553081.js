@@ -27,13 +27,13 @@ var r = n(627968),
     T = n(131168),
     I = n(511484),
     N = n(703982),
-    j = n(326736),
-    y = n(810036),
-    v = n(160116),
-    P = n(530060),
-    R = n(891858),
-    D = n(807676),
-    L = n(322631),
+    j = n(891858),
+    y = n(807676),
+    v = n(322631),
+    P = n(568031),
+    R = n(518491),
+    D = n(157839),
+    L = n(235365),
     w = n(994763),
     M = n(788868),
     G = n(652215),
@@ -86,31 +86,31 @@ let H = e => {
                         onChange: e => et(e),
                         threshold: .1,
                         active: !0,
-                        children: (0, r.jsx)(v.A, {
+                        children: (0, r.jsx)(R.A, {
                             buttonVisibilityRef: J,
                             className: k.v1,
                             enablePremiumBrandRefresh: ec,
                             userDiscountOffer: q,
                             discountedPrice: er
                         })
-                    }), (0, r.jsx)(j.A, {
-                        variant: L.cJ.WHATS_NEW,
+                    }), (0, r.jsx)(D.A, {
+                        variant: v.cJ.WHATS_NEW,
                         className: k.Iw,
                         noBackground: !0,
                         leftAlignHeaders: !0
-                    }), null != W && K && (0, r.jsx)(P.A, {
+                    }), null != W && K && (0, r.jsx)(L.A, {
                         location: _.A.PREMIUM_MARKETING_NITRO_HOME_ORBS_SECTION,
                         sectionRef: l
-                    }), (0, r.jsx)(j.A, {
+                    }), (0, r.jsx)(D.A, {
                         className: k.xU,
-                        variant: L.cJ.PERKS_DISCOVERABILITY,
+                        variant: v.cJ.PERKS_DISCOVERABILITY,
                         noBackground: !0,
                         leftAlignHeaders: !0,
-                        showAllPerksButton: (0, r.jsx)(D.A, {
+                        showAllPerksButton: (0, r.jsx)(y.A, {
                             setIsAllPerksVisible: $,
-                            previousComponent: L.A2.HOME
+                            previousComponent: v.A2.HOME
                         })
-                    }), (0, r.jsx)(y.A, {
+                    }), (0, r.jsx)(P.A, {
                         className: k.Zy,
                         location: _.A.PREMIUM_MARKETING_GIFT_SECTION,
                         analyticsLocation: {
@@ -144,10 +144,10 @@ let H = e => {
                 churnDiscountOffer: q,
                 discountedPrice: er
             })]
-        }), (0, r.jsx)(R.A, {
+        }), (0, r.jsx)(j.A, {
             isAllPerksVisible: Q,
             setIsAllPerksVisible: $,
-            previousComponent: L.A2.HOME,
+            previousComponent: v.A2.HOME,
             enablePremiumBrandRefresh: ec
         })]
     }) : (0, r.jsx)("div", {

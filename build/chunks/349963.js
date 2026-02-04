@@ -13,9 +13,9 @@ var r = n(299855),
     d = n(430452),
     p = n(576705),
     h = n(309010),
-    g = n(157257),
-    m = n(723702),
-    f = n(279250),
+    f = n(157257),
+    g = n(723702),
+    m = n(279250),
     A = n(880144),
     _ = n(997630),
     b = n(905552),
@@ -29,10 +29,10 @@ function O() {
         r = c.A.getChannel(n);
     if (null == r) return !1;
     let O = r.getGuildId();
-    if (!(0, f.vz)(r, u.A, p.A, !1)) return !1;
-    if (d.A.getUseSystemScreensharePicker())(0, m.isMac)() && i().satisfies(null === a.A || void 0 === a.A ? void 0 : a.A.os.release, E.WZ) ? (0, _.a)() : (0, _.a)("window");
+    if (!(0, m.vz)(r, u.A, p.A, !1)) return !1;
+    if (d.A.getUseSystemScreensharePicker())(0, g.isMac)() && i().satisfies(null === a.A || void 0 === a.A ? void 0 : a.A.os.release, E.WZ) ? (0, _.a)() : (0, _.a)("window");
     else {
-        let n = (0, b.A)(s.Ay, g.A);
+        let n = (0, b.A)(s.Ay, f.A);
         if (null == n || n.isLauncher && !e) return !1;
         (0, l.XI)(O, r.id, {
             pid: n.pid,

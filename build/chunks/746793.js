@@ -13,9 +13,9 @@ var r = n(627968),
     d = n(397927),
     p = n(785796),
     h = n(775602),
-    g = n(142120),
-    m = n(552122),
-    f = n(400492),
+    f = n(142120),
+    g = n(552122),
+    m = n(400492),
     A = n(312671),
     _ = n(210714),
     b = n(773669),
@@ -40,7 +40,7 @@ class j extends i.PureComponent {
     createSound() {
         let {
             soundpack: e
-        } = this.props, t = (0, f.aN)("discodo", e);
+        } = this.props, t = (0, m.aN)("discodo", e);
         return t.volume = 1, t
     }
     componentDidMount() {
@@ -201,7 +201,7 @@ class j extends i.PureComponent {
             })];
             return b.default.locale.startsWith("en-") && e.push(C.intl.string(C.t.dQ9Wqk)), e[o().random(e.length - 1)]
         }()), T(this, "_eventLoadingText", function() {
-            let e = m.A.getLoadingTips();
+            let e = g.A.getLoadingTips();
             if (null != e && e.length > 0) return e[o().random(e.length - 1)]
         }()), T(this, "handleReady", () => {
             this.setState({
@@ -227,9 +227,9 @@ class j extends i.PureComponent {
         }, this._connectedSound.volume = 1
     }
 }
-let x = c.Ay.connectStores([g.A, E.A, A.A, h.A], () => ({
-    isTryingToConnect: g.A.isTryingToConnect(),
-    connected: g.A.isConnected(),
+let x = c.Ay.connectStores([f.A, E.A, A.A, h.A], () => ({
+    isTryingToConnect: f.A.isTryingToConnect(),
+    connected: f.A.isConnected(),
     incident: E.A.getIncident(),
     soundpack: A.A.getSoundpack(),
     reducedMotion: h.A.useReducedMotion

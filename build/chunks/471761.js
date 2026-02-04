@@ -13,17 +13,17 @@ var r = n(627968),
     d = n(379103),
     p = n(652215),
     h = n(985018);
-let g = (0, o.kHD)(u.A),
-    m = (0, o.kHD)(d.A),
-    f = new Set([p.VX0.PUSHING, p.VX0.PULLING]),
+let f = (0, o.kHD)(u.A),
+    g = (0, o.kHD)(d.A),
+    m = new Set([p.VX0.PUSHING, p.VX0.PULLING]),
     A = Object.freeze({
-        [p.VX0.DONE]: g,
-        [p.VX0.PLANNING]: g,
-        [p.VX0.PREPARING]: g,
+        [p.VX0.DONE]: f,
+        [p.VX0.PLANNING]: f,
+        [p.VX0.PREPARING]: f,
         [p.VX0.PUSHING]: o.JMY,
         [p.VX0.PULLING]: o.s3U,
-        [p.VX0.CONFLICT]: g,
-        [p.VX0.ERROR]: g
+        [p.VX0.CONFLICT]: f,
+        [p.VX0.ERROR]: f
     });
 class _ extends i.PureComponent {
     componentDidMount() {
@@ -87,8 +87,8 @@ class _ extends i.PureComponent {
         } = this.props, i = null == e ? {
             type: p.VX0.DONE
         } : e, l = this.getIsRecentlySynced();
-        (f.has(i.type) || l) && (t.id, this.getStop(i, l));
-        let a = l ? m : A[i.type];
+        (m.has(i.type) || l) && (t.id, this.getStop(i, l));
+        let a = l ? g : A[i.type];
         return (0, r.jsx)(s.m, {
             text: this.getTooltip(i, l),
             children: (0, r.jsx)(a, {

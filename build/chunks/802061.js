@@ -22,7 +22,7 @@ function h(e, t) {
     let n = p[e];
     return !(null == n || n.has(t)) && (p[e] = new Set(n.add(t)), !0)
 }
-class g extends(r = i.Ay.PersistedStore) {
+class f extends(r = i.Ay.PersistedStore) {
     initialize(e) {
         this.waitFor(a.default, s.A, o.A), p = {}, null != e && c.default.keys(e).forEach(t => {
             let n = e[t];
@@ -40,7 +40,7 @@ class g extends(r = i.Ay.PersistedStore) {
         return p
     }
 }
-d(g, "displayName", "GuildProgressStore"), d(g, "persistKey", "GuildProgressStore"), new g(l.h, {
+d(f, "displayName", "GuildProgressStore"), d(f, "persistKey", "GuildProgressStore"), new f(l.h, {
     CONNECTION_OPEN: function() {
         let e = [];
         c.default.keys(p).forEach(t => {

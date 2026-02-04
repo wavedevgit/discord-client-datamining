@@ -7,8 +7,8 @@ n(64700);
 var r = n(503698),
     l = n.n(r),
     a = n(397927),
-    s = n(994322),
-    o = n(584111);
+    o = n(994322),
+    s = n(584111);
 
 function u(e) {
     let {
@@ -16,11 +16,11 @@ function u(e) {
         keybind: n,
         className: r,
         IconComponent: u
-    } = e, c = (0, s.F)();
+    } = e, c = (0, o.F)();
     return (0, i.jsxs)("div", {
-        className: l()(o.UD, r),
+        className: l()(s.UD, r),
         children: [(0, i.jsx)(a.DUT, {
-            className: o.x6,
+            className: s.x6,
             onClick: t,
             "aria-hidden": !0,
             children: (0, i.jsx)(u, {
@@ -29,7 +29,7 @@ function u(e) {
                 "aria-hidden": !0
             })
         }), null != n && c ? (0, i.jsx)(a.Text, {
-            className: o.P,
+            className: s.P,
             "aria-hidden": !0,
             variant: "text-xxs/bold",
             color: "interactive-text-default",

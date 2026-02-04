@@ -13,9 +13,9 @@ var r = n(627968),
     d = n(397927),
     p = n(73153),
     h = n(442433),
-    g = n(512155),
-    m = n(475743),
-    f = n(793574),
+    f = n(512155),
+    g = n(475743),
+    m = n(793574),
     A = n(688810),
     _ = n(665037),
     b = n(771781),
@@ -209,7 +209,7 @@ class ed extends i.PureComponent {
             bannerVisible: u,
             bannerVisibleHeight: p,
             communityInfoVisible: h
-        } = this.state, g = i || l || a;
+        } = this.state, f = i || l || a;
         return null == t ? null : (0, r.jsx)(A.f5, {
             value: s,
             children: (0, r.jsx)(d.QCx, {
@@ -238,7 +238,7 @@ class ed extends i.PureComponent {
                         guildBanner: this.getGuildBannerHash(),
                         onClick: this.handleHeaderMenuToggle,
                         onContextMenu: this.handleHeaderContextMenu,
-                        disableBannerAnimation: g,
+                        disableBannerAnimation: f,
                         animationOverlayHeight: p
                     }, a), {
                         children: this.renderGuildHeaderNotices(n)
@@ -451,7 +451,7 @@ function ep(e) {
         hideSelectedChannel: l,
         selectedChannelId: c
     } = e, u = (0, s.bG)([V.A], () => V.A.getGuild(n));
-    (0, g.Tc)(n);
+    (0, f.Tc)(n);
     let p = (0, O.A)(n),
         h = (0, s.bG)([k.A], () => k.A.getGuildDimensions(n).scrollTo),
         C = (0, s.bG)([Y.A], () => Y.A.getChannelId()),
@@ -463,16 +463,16 @@ function ep(e) {
         } = (0, T.y)(u),
         q = (0, b.Ay)(e => e.currentlyShown.has(o.M.NAGBAR_NOTICE_CONNECT_PLAYSTATION)),
         [z, Q] = i.useState(!q),
-        X = (0, m.A)(n),
+        X = (0, g.A)(n),
         {
             analyticsLocations: Z
-        } = (0, A.Ay)(f.A.GUILD_HEADER);
+        } = (0, A.Ay)(m.A.GUILD_HEADER);
     i.useEffect(() => {
         n !== X && Q(!q)
     }, [n, X, q]);
     let [J, en] = (0, b.Ay)(e => [ee.cA.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(et.m.GUILD_HEADER_TOOLTIPS)], a.x), er = (0, _.A)(u), ei = (0, d.red)(d.DXt), el = (0, s.bG)([B.A], () => B.A.hasLayers()), ea = (0, s.bG)([D.A], () => D.A.shouldShow(ec)), es = (0, S.A)(n), eo = (null == u ? void 0 : u.features.has($.GuildFeatures.HUB)) === !0, eu = j && (null == u ? void 0 : u.features.has($.GuildFeatures.DISCOVERABLE)) === !0, ep = (0, s.bG)([N.A, B.A], () => null != u && null != R && j && !B.A.hasLayers() && N.A.shouldShowGuildTemplateDirtyTooltip(n)), eh = (0, s.bG)([M.A], () => M.A.getChannel(c)), {
-        isPopoutOpen: eg
-    } = (0, y.S)(), em = null != (t = null == u ? void 0 : u.features.has($.GuildFeatures.COMMUNITY)) && t, ef = W.Ay.isNewUser(R), eA = z && !ef;
+        isPopoutOpen: ef
+    } = (0, y.S)(), eg = null != (t = null == u ? void 0 : u.features.has($.GuildFeatures.COMMUNITY)) && t, em = W.Ay.isNewUser(R), eA = z && !em;
     (0, I.A)(u);
     let e_ = (0, E.JZ)(o.M.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
         eb = (0, x.A)(n),
@@ -505,10 +505,10 @@ function ep(e) {
         showGuildTemplateDirtyTooltip: ep,
         showRoleSubscriptionUpsell: es,
         showHubPrivacySettingsTooltip: eo,
-        showNewUnreadsBar: em,
+        showNewUnreadsBar: eg,
         showMediaChannelUpsell: eb,
         showTierTemplatesUpsell: eE,
-        isHeaderPopoutOpen: eg,
+        isHeaderPopoutOpen: ef,
         enableStudyGroup: G,
         isGuildHeaderDismissibleTooltipShown: en,
         canShowCoachMarkAtBottom: z,

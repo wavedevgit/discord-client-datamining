@@ -14,16 +14,16 @@ var i = n(397927),
     d = n(375492),
     p = n(461213),
     h = n(636401),
-    g = n(90924),
-    m = n(629471),
-    f = n(546983),
+    f = n(90924),
+    g = n(629471),
+    m = n(546983),
     A = n(613057),
     _ = n(652215);
 let b = new u.A("RPCCommandsOverlay"),
     E = {
         [_.e$_.SET_OVERLAY_LOCKED]: {
             scope: A.hj,
-            validation: e => (0, m.A)(e).required().keys({
+            validation: e => (0, g.A)(e).required().keys({
                 locked: e.boolean().required(),
                 pid: e.number().min(0).required()
             }),
@@ -48,7 +48,7 @@ let b = new u.A("RPCCommandsOverlay"),
         },
         [_.e$_.OPEN_OVERLAY_ACTIVITY_INVITE]: {
             scope: A.hj,
-            validation: e => (0, m.A)(e).required().keys({
+            validation: e => (0, g.A)(e).required().keys({
                 type: e.number().required().valid([_.xL.JOIN]),
                 pid: e.number().min(0).required()
             }),
@@ -64,13 +64,13 @@ let b = new u.A("RPCCommandsOverlay"),
                     errorCode: _.Lw6.INVALID_COMMAND
                 }, "No application.");
                 let l = d.A.getApplicationActivity(i);
-                if (null == l || null == l.secrets || !(0, g.px)(n, l.party, l.secrets)) throw new h.A({
+                if (null == l || null == l.secrets || !(0, f.px)(n, l.party, l.secrets)) throw new h.A({
                     errorCode: _.Lw6.NO_ELIGIBLE_ACTIVITY
                 }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
                 let {
                     lock: s,
                     context: o
-                } = (0, f.d5)(r), u = (0, c.A)(l, p.A);
+                } = (0, m.d5)(r), u = (0, c.A)(l, p.A);
                 return (0, a.qf)(l, u, o).then(() => {
                     if (s(), u) throw new h.A({
                         errorCode: _.Lw6.NO_ELIGIBLE_ACTIVITY
@@ -80,7 +80,7 @@ let b = new u.A("RPCCommandsOverlay"),
         },
         [_.e$_.OPEN_OVERLAY_GUILD_INVITE]: {
             scope: A.hj,
-            validation: e => (0, m.A)(e).required().keys({
+            validation: e => (0, g.A)(e).required().keys({
                 code: e.string().required(),
                 pid: e.number().min(0).required()
             }),
@@ -106,7 +106,7 @@ let b = new u.A("RPCCommandsOverlay"),
                     let {
                         context: i,
                         lock: a
-                    } = (0, f.d5)(n);
+                    } = (0, m.d5)(n);
                     return new Promise(e => {
                         l.h.dispatch({
                             type: "INVITE_MODAL_OPEN",
@@ -121,7 +121,7 @@ let b = new u.A("RPCCommandsOverlay"),
         },
         [_.e$_.OPEN_OVERLAY_VOICE_SETTINGS]: {
             scope: A.hj,
-            validation: e => (0, m.A)(e).required().keys({
+            validation: e => (0, g.A)(e).required().keys({
                 pid: e.number().min(0).required()
             }),
             handler(e) {
@@ -137,7 +137,7 @@ let b = new u.A("RPCCommandsOverlay"),
                 let {
                     lock: s,
                     context: o
-                } = (0, f.d5)(t);
+                } = (0, m.d5)(t);
                 return new Promise(e => {
                     (0, i.mMO)(async () => {
                         let {

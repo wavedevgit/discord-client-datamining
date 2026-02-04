@@ -1,7 +1,7 @@
 /** chunk id: 612391, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f,
-    g: () => g
+    A: () => m,
+    g: () => f
 });
 var r, i, l, a, s = n(627968),
     o = n(64700),
@@ -10,8 +10,8 @@ var r, i, l, a, s = n(627968),
     d = n(830382),
     p = n(79387),
     h = n(985018),
-    g = ((r = {}).SHORT = "SHORT", r.LONG = "LONG", r);
-class m extends(a = o.PureComponent) {
+    f = ((r = {}).SHORT = "SHORT", r.LONG = "LONG", r);
+class g extends(a = o.PureComponent) {
     getText(e, t) {
         if (429 === e.status) switch (t) {
             case "SHORT":
@@ -43,12 +43,12 @@ class m extends(a = o.PureComponent) {
 }
 l = {
     messageStyle: "LONG"
-}, (i = "defaultProps") in m ? Object.defineProperty(m, i, {
+}, (i = "defaultProps") in g ? Object.defineProperty(g, i, {
     value: l,
     enumerable: !0,
     configurable: !0,
     writable: !0
-}) : m[i] = l;
-let f = c.Ay.connectStores([p.A], () => ({
+}) : g[i] = l;
+let m = c.Ay.connectStores([p.A], () => ({
     purchaseError: p.A.error
-}))(m)
+}))(g)

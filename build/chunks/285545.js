@@ -1,6 +1,6 @@
 /** chunk id: 285545, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    i: () => m
+    i: () => g
 }), n(896048), n(321073);
 var r = n(64700),
     i = n(311907),
@@ -13,13 +13,13 @@ var r = n(64700),
     d = n(859524),
     p = n(639040),
     h = n(567061),
-    g = n(118972);
+    f = n(118972);
 
-function m(e) {
+function g(e) {
     let {
         showDot: t,
         notificationItem: n
-    } = e, [m, f] = r.useState(!1), {
+    } = e, [g, m] = r.useState(!1), {
         unreadItems: A,
         readItems: _,
         allUnreadItemsHydrated: b
@@ -54,13 +54,13 @@ function m(e) {
     r.useEffect(() => {
         if (y || O || null == j || null == T || T === j) return;
         let e = Date.now();
-        e - N > g.N && (a.A.gravityScrollEvent(e), s.k.trackFeedFirstScrollStarted())
+        e - N > f.N && (a.A.gravityScrollEvent(e), s.k.trackFeedFirstScrollStarted())
     }, [y, N, j, T, C, O]);
     let x = r.useCallback(e => {
             let {
                 viewableItems: t
             } = e;
-            if (t.some(e => "end" === e.item.data.kind) && f(!0), 0 === t.length) return;
+            if (t.some(e => "end" === e.item.data.kind) && m(!0), 0 === t.length) return;
             S(t);
             let n = [],
                 r = (0, d.P0)(t),
@@ -77,7 +77,7 @@ function m(e) {
                 id: e.id,
                 type: (0, u.xG)(e)
             })), E)
-        }, [E, f]),
+        }, [E, m]),
         P = r.useCallback(e => {
             let {
                 viewableItems: t
@@ -210,7 +210,7 @@ function m(e) {
         loading: O,
         version: E,
         visibleItemIds: v,
-        endVisible: m,
+        endVisible: g,
         isRefreshing: y,
         handleOnRefresh: R,
         stickyHeaderIndices: M,

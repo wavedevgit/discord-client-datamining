@@ -1,10 +1,10 @@
 /** chunk id: 542080, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => i
 });
-var i = n(353640),
+var l = n(353640),
     r = n(499867);
-let l = (0, i.v)()((0, r.Zr)(e => ({
+let i = (0, l.v)()((0, r.Zr)(e => ({
     showSuggestions: !0,
     setShowSuggestions: t => e({
         showSuggestions: t

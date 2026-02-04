@@ -13,9 +13,9 @@ var r = n(627968),
     d = n(342296),
     p = n(636585),
     h = n(975571),
-    g = n(42473),
-    m = n(994314),
-    f = n(485599),
+    f = n(42473),
+    g = n(994314),
+    m = n(485599),
     A = n(652215),
     _ = n(985018),
     b = n(308685);
@@ -64,11 +64,11 @@ class I extends i.PureComponent {
     }
     renderTitle() {
         return (0, r.jsxs)("div", {
-            children: [(0, r.jsx)(f.A, {
+            children: [(0, r.jsx)(m.A, {
                 children: this.isHost() ? _.intl.formatToPlainString(_.t["6UJ7mh"], {
                     count: this.props.party.length
                 }) : _.intl.string(_.t.RZufbH)
-            }), (0, r.jsx)(m.A, {
+            }), (0, r.jsx)(g.A, {
                 children: _.intl.string(_.t["0ZHLIi"])
             })]
         })
@@ -77,14 +77,14 @@ class I extends i.PureComponent {
         let {
             onStopListening: e
         } = this.props;
-        return this.isHost() ? null : (0, r.jsx)(g.A, {
+        return this.isHost() ? null : (0, r.jsx)(f.A, {
             tooltipText: _.intl.string(_.t.LeZSpz),
             onClick: e,
             icon: o.PGe
         })
     }
     renderHelpIcon() {
-        return this.isHost() ? (0, r.jsx)(g.A, {
+        return this.isHost() ? (0, r.jsx)(f.A, {
             tooltipText: _.intl.string(_.t.U7N2Hs),
             onClick: () => {
                 window.open(h.A.getArticleURL(A.MVz.SPOTIFY_CONNECTION), "_blank")

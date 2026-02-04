@@ -1,6 +1,6 @@
 /** chunk id: 844358, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -13,12 +13,12 @@ var r = n(627968),
     d = n(652215),
     p = n(613057),
     h = n(985018),
-    g = n(742249);
+    f = n(742249);
 
-function m(e) {
+function g(e) {
     let {
         applicationId: t
-    } = e, [m, f] = i.useState(null), [A, _] = i.useState(!1), b = i.useRef(!1), E = !u.isPlatformEmbedded && !a.Fr, O = i.useMemo(() => (0, l.A)(), []);
+    } = e, [g, m] = i.useState(null), [A, _] = i.useState(!1), b = i.useRef(!1), E = !u.isPlatformEmbedded && !a.Fr, O = i.useMemo(() => (0, l.A)(), []);
     if (i.useEffect(() => {
             E && !0 !== b.current ? (Promise.resolve().then(n.bind(n, 129014)).then(e => {
                 let {
@@ -33,15 +33,15 @@ function m(e) {
                     }
                 }).then(e => {
                     let t = null != e && e;
-                    f(t), t || _(!0)
+                    m(t), t || _(!0)
                 }).catch(() => {
-                    f(!1), _(!0)
+                    m(!1), _(!0)
                 }).then(() => n.disconnect())
             }), b.current = !0) : E || _(!0)
         }, [t, E, O]), A) return (0, r.jsx)(c.A, {});
-    if (E && !1 !== m)
-        if (!0 === m) return (0, r.jsxs)("div", {
-            className: g.k,
+    if (E && !1 !== g)
+        if (!0 === g) return (0, r.jsxs)("div", {
+            className: f.k,
             children: [(0, r.jsx)(o.Heading, {
                 variant: "heading-xxl/bold",
                 children: h.intl.string(h.t.csrAMJ)
@@ -55,7 +55,7 @@ function m(e) {
             })]
         });
         else return (0, r.jsxs)("div", {
-            className: g.k,
+            className: f.k,
             children: [(0, r.jsx)(o.Heading, {
                 variant: "heading-xxl/bold",
                 children: h.intl.string(h.t["Z+hCVU"])

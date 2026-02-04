@@ -2,11 +2,11 @@
 n.d(t, {
     D: () => d
 }), n(896048);
-var i = n(627968),
+var l = n(627968),
     r = n(64700),
-    l = n(503698),
-    a = n.n(l),
-    s = n(837381),
+    i = n(503698),
+    s = n.n(i),
+    a = n(837381),
     o = n(193663),
     u = n(576420),
     c = n(783346);
@@ -14,80 +14,80 @@ var i = n(627968),
 function d(e) {
     var t, n;
     let {
-        listItemId: l,
+        listItemId: i,
         isVisuallyOffline: d = !1,
         recentlyAddedTimestampMs: h = null,
-        outerRef: p,
+        outerRef: g,
         leftIndicator: f,
-        avatar: g,
-        primaryText: m,
-        secondaryText: y,
-        rightActions: A,
-        onClick: v,
-        onContextMenu: b,
-        onMouseEnter: E,
-        onMouseLeave: O,
-        className: x,
-        rowInnerClassName: _
-    } = e, S = (0, s.rm)(l), [I, j] = r.useState(!1), T = r.useRef(null), [C, N] = r.useState(!1);
+        avatar: p,
+        primaryText: I,
+        secondaryText: m,
+        rightActions: E,
+        onClick: A,
+        onContextMenu: y,
+        onMouseEnter: S,
+        onMouseLeave: v,
+        className: O,
+        rowInnerClassName: b
+    } = e, N = (0, a.rm)(i), [T, _] = r.useState(!1), C = r.useRef(null), [x, D] = r.useState(!1);
     return r.useEffect(() => {
-        if (null == h || T.current === h) return;
-        T.current = h;
+        if (null == h || C.current === h) return;
+        C.current = h;
         let e = Date.now();
-        h > e || e - h > u.WS || N(!0)
-    }, [h]), (0, i.jsxs)("div", {
-        ref: p,
-        className: a()(c.nM, x, {
+        h > e || e - h > u.WS || D(!0)
+    }, [h]), (0, l.jsxs)("div", {
+        ref: g,
+        className: s()(c.nM, O, {
             [c.SS]: d
         }),
         onAnimationEnd: e => {
-            "friendsWidgetRowRecentlyAdded" === e.animationName && N(!1)
+            "friendsWidgetRowRecentlyAdded" === e.animationName && D(!1)
         },
-        children: [null != f ? (0, i.jsx)("div", {
+        children: [null != f ? (0, l.jsx)("div", {
             className: c.oT,
             children: f
-        }) : null, (0, i.jsx)(o.A, (t = function(e) {
+        }) : null, (0, l.jsx)(o.A, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
-                    i = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                    l = Object.keys(n);
+                "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                     return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), i.forEach(function(t) {
-                    var i;
-                    i = n[t], t in e ? Object.defineProperty(e, t, {
-                        value: i,
+                }))), l.forEach(function(t) {
+                    var l;
+                    l = n[t], t in e ? Object.defineProperty(e, t, {
+                        value: l,
                         enumerable: !0,
                         configurable: !0,
                         writable: !0
-                    }) : e[t] = i
+                    }) : e[t] = l
                 })
             }
             return e
         }({
-            innerClassName: a()(c.bL, _),
-            className: C ? c.fc : void 0,
-            onClick: v,
-            onContextMenu: b,
+            innerClassName: s()(c.bL, b),
+            className: x ? c.fc : void 0,
+            onClick: A,
+            onContextMenu: y,
             onMouseEnter: e => {
-                j(!0), null == E || E(e)
+                _(!0), null == S || S(e)
             },
             onMouseLeave: e => {
-                j(!1), null == O || O(e)
+                _(!1), null == v || v(e)
             },
-            avatar: g,
-            name: m,
-            subText: y,
-            hovered: I
-        }, S), n = n = {
-            children: null != A ? (0, i.jsx)("div", {
+            avatar: p,
+            name: I,
+            subText: m,
+            hovered: T
+        }, N), n = n = {
+            children: null != E ? (0, l.jsx)("div", {
                 className: c.cm,
-                children: A(I)
+                children: E(T)
             }) : null
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
-                var i = Object.getOwnPropertySymbols(e);
-                n.push.apply(n, i)
+                var l = Object.getOwnPropertySymbols(e);
+                n.push.apply(n, l)
             }
             return n
         })(Object(n)).forEach(function(e) {

@@ -1,6 +1,6 @@
 /** chunk id: 466444, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => f
 }), n(896048);
 var r = n(179771),
     i = n(827343),
@@ -20,7 +20,7 @@ function h(e) {
     }, "No application.");
     return t
 }
-let g = {
+let f = {
     [d.e$_.SET_VOICE_SETTINGS_2]: {
         scope: u.hj,
         validation: e => (0, c.A)(e).required().keys({

@@ -7,10 +7,10 @@ n.d(t, {
     TZ: () => P,
     Tp: () => U,
     XI: () => R,
-    Xd: () => V,
+    Xd: () => F,
     Xi: () => k,
     a8: () => G,
-    dA: () => F,
+    dA: () => V,
     nO: () => B,
     vN: () => j
 });
@@ -200,13 +200,13 @@ async function G(e) {
     } catch (e) {}
 }
 
-function V(e) {
+function F(e) {
     !0 !== e.noTrack && (0, v.K2)(e.preset, e.resolution, e.frameRate), s.h.dispatch(N({
         type: "STREAM_UPDATE_SETTINGS"
     }, e))
 }
 
-function F(e, t) {
+function V(e, t) {
     o.Bo.patch({
         url: S.Rsh.STREAM(e),
         body: {

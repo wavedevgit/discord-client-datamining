@@ -5,7 +5,7 @@ n.d(t, {
     br: () => eu,
     l7: () => ec,
     rL: () => eo,
-    st: () => F,
+    st: () => V,
     tl: () => er,
     ts: () => el
 }), n(591487), n(727858), n(747238), n(812715), n(866193), n(896048), n(321073);
@@ -39,8 +39,8 @@ let C = 10,
     k = /^\/channels\/([0-9]+)\/shop$/,
     U = /^\/quests\/([0-9-]+)\/?$/,
     G = /^\/oauth2\/authorize/,
-    V = /^#itemSkuId=([0-9]+)$/,
-    F = /dev:\/\/[\w-.~:\/?#\[\]@!$&'()*+,;=%]+/i,
+    F = /^#itemSkuId=([0-9]+)$/,
+    V = /dev:\/\/[\w-.~:\/?#\[\]@!$&'()*+,;=%]+/i,
     B = X(window.GLOBAL_ENV.INVITE_HOST),
     H = X(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
     Y = X(null != (r = window.GLOBAL_ENV.WEBAPP_ENDPOINT) ? r : "//canary.".concat(T.U2_)),
@@ -141,7 +141,7 @@ function es(e) {
     let t = new Set,
         n = [],
         r = J(e = e.replace(Q, (e, t, n, r) => null == n ? "".concat(t, "http://").concat(r) : e)).match(I.A.URL_REGEX),
-        i = e.match(F);
+        i = e.match(V);
     if (null == (r = (null != r ? r : []).concat(null != i ? i : [])) || 0 === r.length) return [];
     for (let e of r) {
         var a, o, s, l;
@@ -208,7 +208,7 @@ function es(e) {
         let P = el(e);
         if (null != P && d(S.I.QUESTS_EMBED, P), "/shop" === u) {
             let e = null != r.query ? (0, _.parse)(r.query).tab : null,
-                t = null == (l = r.hash) ? void 0 : l.match(V);
+                t = null == (l = r.hash) ? void 0 : l.match(F);
             d(S.I.COLLECTIBLES_SHOP, "".concat(null != e ? e : "", "-").concat(null != (s = null == t ? void 0 : t[1]) ? s : ""))
         }
     }

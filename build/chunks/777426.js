@@ -13,9 +13,9 @@ var r = n(627968),
     d = n(793574),
     p = n(688810),
     h = n(139286),
-    g = n(532794),
-    m = n(414711),
-    f = n(187696),
+    f = n(532794),
+    g = n(414711),
+    m = n(187696),
     A = n(723690),
     _ = n(21119),
     b = n(594832),
@@ -81,7 +81,7 @@ function T(e) {
                 object: S.ZSU.BUTTON_CTA,
                 objectType: S.AnalyticsObjectTypes.GIFT
             }
-        }) : (0, g.A)({
+        }) : (0, f.A)({
             isGift: !0,
             initialPlanId: null,
             giftRecipient: k,
@@ -95,7 +95,7 @@ function T(e) {
             }
         })
     };
-    return (0, r.jsx)(m.A, {
+    return (0, r.jsx)(g.A, {
         ref: t,
         isFocused: l,
         isActive: T,
@@ -112,7 +112,7 @@ function T(e) {
                 isMobile: L,
                 isVR: R,
                 subText: (0, r.jsxs)(r.Fragment, {
-                    children: [(0, r.jsx)(f.A, {
+                    children: [(0, r.jsx)(m.A, {
                         hovered: e,
                         activities: x,
                         applicationStream: P,

@@ -1,6 +1,6 @@
 /** chunk id: 541041, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => f
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -54,7 +54,7 @@ class h extends i.PureComponent {
             })
     }
 }
-let g = l.Ay.connectStores([o.A], e => {
+let f = l.Ay.connectStores([o.A], e => {
     let {
         guild: t
     } = e;

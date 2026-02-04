@@ -14,9 +14,9 @@ var i = n(397927),
     d = n(136179),
     p = n(250253),
     h = n(406140),
-    g = n(652215),
-    m = n(985018),
-    f = n(510465);
+    f = n(652215),
+    g = n(985018),
+    m = n(510465);
 let A = e => {
     var t, n;
     let {
@@ -25,7 +25,7 @@ let A = e => {
     (0, o.A)({
         guildId: A.id,
         groupListingId: null == _ ? void 0 : _.id,
-        location: g.ThZ.ROLE_SUBSCRIPTIONS_TAB,
+        location: f.ThZ.ROLE_SUBSCRIPTIONS_TAB,
         relevantSubscriptionListingIds: null == _ ? void 0 : _.subscription_listings_ids
     });
     let {
@@ -35,14 +35,14 @@ let A = e => {
     } = a.d0(null != (t = null == _ ? void 0 : _.id) ? t : null, A.id);
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)(h.A, {
-            title: m.intl.format(m.t["rm+ojA"], {
+            title: g.intl.format(g.t["rm+ojA"], {
                 serverName: A.name
             }),
             description: null != O ? O : null,
             coverImageAsset: null != (n = null == E ? void 0 : E.cover_image_asset) ? n : null,
             guild: A,
             children: [null != _ ? (0, r.jsx)(c.A, {
-                className: f.Ds,
+                className: m.Ds,
                 groupListingId: _.id,
                 subscription: b
             }) : null, (0, r.jsx)(u.A, {
@@ -57,7 +57,7 @@ let A = e => {
                         guildId: A.id,
                         groupListingId: null != (t = null == _ ? void 0 : _.id) ? t : "",
                         listingId: e,
-                        analyticsLocation: g.ThZ.ROLE_SUBSCRIPTIONS_TAB
+                        analyticsLocation: f.ThZ.ROLE_SUBSCRIPTIONS_TAB
                     }, e)
                 })
             })

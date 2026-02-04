@@ -11,7 +11,7 @@ var i = n(812729),
     l = n(839214),
     a = n(652896);
 
-function s(e) {
+function o(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             i = Object.keys(n);
@@ -30,7 +30,7 @@ function s(e) {
     return e
 }
 
-function o(e, t) {
+function s(e, t) {
     return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -60,8 +60,8 @@ function h(e, t) {
     let n = (0, a._z)(e);
     u.setState(e => {
         var i;
-        return o(s({}, e), {
-            streams: o(s({}, e.streams), {
+        return s(o({}, e), {
+            streams: s(o({}, e.streams), {
                 [n]: {
                     zoom: t,
                     fitOverride: null == (i = e.streams[n]) ? void 0 : i.fitOverride
@@ -75,8 +75,8 @@ function p(e, t) {
     let n = (0, a._z)(e);
     u.setState(e => {
         var i;
-        return o(s({}, e), {
-            streams: o(s({}, e.streams), {
+        return s(o({}, e), {
+            streams: s(o({}, e.streams), {
                 [n]: {
                     zoom: null == (i = e.streams[n]) ? void 0 : i.zoom,
                     fitOverride: t

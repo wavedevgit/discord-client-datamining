@@ -1,6 +1,6 @@
 /** chunk id: 673310, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => f
 });
 var r = n(627968),
     i = n(64700),
@@ -14,7 +14,7 @@ var r = n(627968),
     p = n(652215),
     h = n(277716);
 
-function g(e) {
+function f(e) {
     let {
         item: t
     } = e, n = i.useCallback(e => {

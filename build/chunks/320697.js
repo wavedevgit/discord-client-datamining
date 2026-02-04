@@ -47,8 +47,8 @@ let P = {},
     k = !1,
     U = !1,
     G = A.default.fromTimestamp(Date.now()),
-    V = !0,
-    F = null,
+    F = !0,
+    V = null,
     B = null,
     H = !0;
 
@@ -127,7 +127,7 @@ function z() {
 }
 
 function q() {
-    P = {}, D = null, L = [], x = new T.A, M = !1, j = !1, k = !1, G = A.default.fromTimestamp(Date.now()), V = !0, U = !1, B = null, F = null
+    P = {}, D = null, L = [], x = new T.A, M = !1, j = !1, k = !1, G = A.default.fromTimestamp(Date.now()), F = !0, U = !1, B = null, V = null
 }
 
 function Z() {
@@ -242,7 +242,7 @@ function ea(e) {
         hasMoreToLoad: n,
         analyticsPayload: r
     } = e;
-    M = !1, t ? U = !0 : (null != n && (V = n), k = !0), B = null != r ? r : null
+    M = !1, t ? U = !0 : (null != n && (F = n), k = !0), B = null != r ? r : null
 }
 
 function eo(e) {
@@ -253,7 +253,7 @@ function eo(e) {
     return null != (null == (t = (0, I.GE)({
         location: "NotificationsInboxStore.canLoadMore",
         autoTrackExposure: !1
-    })) ? void 0 : t.notificationCenterVariant) && null != D && !M && !j && (!n || !U) && V
+    })) ? void 0 : t.notificationCenterVariant) && null != D && !M && !j && (!n || !U) && F
 }
 
 function es() {
@@ -268,7 +268,7 @@ function el(e) {
     } = e, i = (0, I.GE)({
         location: "handleInboxItemClick"
     }).notificationCenterVariant;
-    F = r && i === I.U5.SIDEBAR ? {
+    V = r && i === I.U5.SIDEBAR ? {
         channelId: n,
         messageId: t
     } : null
@@ -282,7 +282,7 @@ function ec(e) {
     (0, S.zo)({
         channelId: t,
         id: n
-    }, F) && (F = null)
+    }, V) && (V = null)
 }
 
 function eu() {
@@ -290,7 +290,7 @@ function eu() {
 }
 
 function ed() {
-    F = null
+    V = null
 }
 
 function ef(e) {
@@ -372,7 +372,7 @@ class eE extends(r = o.Ay.Store) {
         return G
     }
     get hasMoreToLoad() {
-        return V
+        return F
     }
     get isLoading() {
         return M
@@ -384,10 +384,10 @@ class eE extends(r = o.Ay.Store) {
         return U
     }
     get isLoadingComplete() {
-        return !M && !V
+        return !M && !F
     }
     get selectedItemInfo() {
-        return F
+        return V
     }
     get currentRequestAnalyticsPayload() {
         return B

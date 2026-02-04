@@ -48,8 +48,8 @@ let b = 1048576,
     k = 64,
     U = 4 * b,
     G = 30 * f.A.Millis.MINUTE,
-    V = 8 * b,
-    F = 60 * f.A.Millis.MINUTE,
+    F = 8 * b,
+    V = 60 * f.A.Millis.MINUTE,
     B = "lastMemoryUsageRestart",
     H = +f.A.Millis.DAY,
     Y = +f.A.Millis.MINUTE,
@@ -158,7 +158,7 @@ class X extends a.A {
     doRestartIfNeeded(e) {
         if (e < U) return;
         let t = performance.now() - this._startupTime;
-        if (t < F) return;
+        if (t < V) return;
         let n = i.w.get(B);
         if (null != n && n.timestamp >= Date.now() - H) return;
         let {
@@ -169,7 +169,7 @@ class X extends a.A {
         });
         a && setTimeout(() => {
             let n = !0;
-            if (e < V || !o) {
+            if (e < F || !o) {
                 let e = l.A.getIdleSince();
                 if (null == e || e > Date.now() - G || null != u.A.getRTCConnection()) return
             } else n = !1;

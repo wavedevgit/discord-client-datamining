@@ -1,6 +1,6 @@
 /** chunk id: 15438, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => f
 }), n(896048);
 var r, i, l = n(311907),
     a = n(506774),
@@ -30,7 +30,7 @@ class h extends(r = l.Ay.Store) {
     configurable: !0,
     writable: !0
 }) : h[i] = "MaxMemberCountChannelNoticeStore";
-let g = new h(s.h, {
+let f = new h(s.h, {
     MAX_MEMBER_COUNT_NOTICE_DISMISS: function(e) {
         let t = e.guildId;
         if (!p[d.n5X.MAX_MEMBER_COUNT].has(t)) return p[d.n5X.MAX_MEMBER_COUNT].add(t), a.w.set(d.n5X.MAX_MEMBER_COUNT, p[d.n5X.MAX_MEMBER_COUNT]), !0

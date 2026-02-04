@@ -13,9 +13,9 @@ var r = n(627968),
     d = n(506999),
     p = n(212165),
     h = n(599907),
-    g = n(985018),
-    m = n(27740),
-    f = n(541318);
+    f = n(985018),
+    g = n(27740),
+    m = n(541318);
 let A = function(e) {
     let {
         onScroll: t
@@ -57,18 +57,18 @@ let A = function(e) {
     return (0, r.jsxs)(u.A, {
         onScroll: t,
         children: [(0, r.jsx)(o.A, {
-            title: g.intl.string(g.t.X5xPlb),
-            description: g.intl.string(g.t["F/IQCI"]),
+            title: f.intl.string(f.t.X5xPlb),
+            description: f.intl.string(f.t["F/IQCI"]),
             children: (0, r.jsx)(s.A, {})
         }), (0, r.jsxs)(c.A, {
             children: [n.length > 0 ? (0, r.jsxs)(r.Fragment, {
                 children: [(0, r.jsx)(l.Heading, {
-                    className: m.G,
+                    className: g.G,
                     variant: "heading-lg/semibold",
                     color: "text-strong",
-                    children: g.intl.string(g.t["2DfZIQ"])
+                    children: f.intl.string(f.t["2DfZIQ"])
                 }), (0, r.jsxs)("div", {
-                    className: m.Q,
+                    className: g.Q,
                     children: [A.map(e => (0, r.jsx)(h.nO, {
                         guild: e,
                         onClick: () => a.A.transitionToGuildSync(e.id)
@@ -77,24 +77,24 @@ let A = function(e) {
                     })]
                 })]
             }) : (0, r.jsx)("div", {
-                className: m.Q,
+                className: g.Q,
                 children: (0, r.jsx)(d.A, {
                     hasHub: !1
                 })
             }), (0, r.jsx)("div", {
-                className: f.yF
+                className: m.yF
             }), (0, r.jsxs)("div", {
-                className: f.ed,
+                className: m.ed,
                 children: [(0, r.jsxs)(l.Text, {
-                    className: f.Qq,
+                    className: m.Qq,
                     variant: "text-sm/medium",
                     color: "text-default",
-                    children: [g.intl.string(g.t.O1k9XX), " "]
+                    children: [f.intl.string(f.t.O1k9XX), " "]
                 }), (0, r.jsx)(l.Text, {
-                    className: f.Qq,
+                    className: m.Qq,
                     variant: "text-sm/medium",
                     color: "text-default",
-                    children: g.intl.string(g.t.FV5dvh)
+                    children: f.intl.string(f.t.FV5dvh)
                 })]
             })]
         })]

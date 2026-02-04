@@ -6,24 +6,24 @@ var i = n(486020),
     r = n(592598),
     l = n(581730),
     a = n(672396),
-    s = n(652215),
-    o = n(985018);
+    o = n(652215),
+    s = n(985018);
 
 function u(e, t) {
     if (r.A.isNotificationDisabled(a.KS.ActivityUserJoin)) return null;
     let n = e.username,
-        u = o.intl.format(o.t["Yk+uYG"], {
+        u = s.intl.format(s.t["Yk+uYG"], {
             username: ""
         }),
         c = (0, i.ku)(e),
-        d = o.intl.string(o.t.WRj1Wn),
+        d = s.intl.string(s.t.WRj1Wn),
         {
             trackView: h,
             trackClick: p
         } = (0, l.Y9)(a.KS.ActivityUserJoin, {
             notif_type: a.KS.ActivityUserJoin,
             notif_user_id: e.id,
-            activity_type: s.xL.JOIN,
+            activity_type: o.xL.JOIN,
             activity_name: t.name
         });
     return {

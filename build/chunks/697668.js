@@ -66,8 +66,8 @@ function D(e) {
         setPopoutRef: k,
         disableUserProfileLink: U = __OVERLAY__,
         newAnalyticsLocations: G = [],
-        disableAutoFocus: V = !1,
-        onClickContainer: F
+        disableAutoFocus: F = !1,
+        onClickContainer: V
     } = e, {
         analyticsLocations: B
     } = (0, l.Ay)([...G, s.A.USER_PROFILE_POPOUT]), H = (0, d.aL)(), Y = (0, _.pb)({
@@ -99,7 +99,7 @@ function D(e) {
                 }, Y))
             }
         }),
-        X = V ? "div" : o.lGe,
+        X = F ? "div" : o.lGe,
         J = (0, c.GV)(),
         $ = p.Ay.useName(R, D, t);
     return (0, r.jsx)(l.f5, {
@@ -113,7 +113,7 @@ function D(e) {
             children: (0, r.jsxs)(X, {
                 ref: z,
                 "aria-labelledby": J,
-                onClick: F,
+                onClick: V,
                 children: [(0, r.jsx)(o.AC4, {
                     children: (0, r.jsx)(o.H, {
                         id: J,
@@ -165,7 +165,7 @@ function D(e) {
                         guildId: R,
                         channelId: D,
                         onClose: j,
-                        disableAutoFocus: V
+                        disableAutoFocus: F
                     })]
                 })]
             })

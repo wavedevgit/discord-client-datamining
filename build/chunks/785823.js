@@ -3,7 +3,7 @@
 let r;
 n.d(t, {
     Ay: () => H,
-    Bk: () => F,
+    Bk: () => V,
     ER: () => I,
     Oj: () => W,
     ZA: () => r,
@@ -259,11 +259,11 @@ function G(e) {
     }
 }
 
-function V(e) {
+function F(e) {
     return null == e ? null : e
 }
 
-function F(e) {
+function V(e) {
     var t;
     let n = N(e, c.E.NOTIFICATION_TYPE),
         r = N(e, c.E.JOIN_ATTEMPTS),
@@ -274,7 +274,7 @@ function F(e) {
         l = N(e, c.E.DECISION_ID),
         u = N(e, c.E.SUSPICIOUS_MENTION_ACTIVITY_UNTIL);
     return {
-        notificationType: null != (t = V(n)) ? t : void 0,
+        notificationType: null != (t = F(n)) ? t : void 0,
         joinAttempts: null != r ? parseInt(r) : void 0,
         raidDatetime: null != i ? new Date(i) : void 0,
         dmsSent: null != a ? parseInt(a) : void 0,

@@ -13,10 +13,10 @@ var r = n(627968),
     d = n(576705),
     p = n(231608),
     h = n(954571),
-    g = n(652215),
-    m = n(985018);
+    f = n(652215),
+    g = n(985018);
 
-function f(e) {
+function m(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -51,31 +51,31 @@ function A(e, t) {
 function _(e) {
     let t = i.useContext(h.AnalyticsContext),
         n = e.voiceChannels[0],
-        _ = (0, l.bG)([d.A], () => null != n && d.A.can(g.xBc.CONNECT, n.channel));
+        _ = (0, l.bG)([d.A], () => null != n && d.A.can(f.xBc.CONNECT, n.channel));
     return null == n ? null : [(0, r.jsx)(a.Drp, {
         id: "join-voice",
         action: function() {
-            (0, c.iN)(n.channel.id), s.default.selectVoiceChannel(n.channel.id), o.Ay.trackWithMetadata(g.HAw.ACTIVITY_FEED_VOICE_CHANNEL_VISITED, f({
-                source: A(f({}, t.location), {
-                    object: g.ZSU.LIST_ITEM
+            (0, c.iN)(n.channel.id), s.default.selectVoiceChannel(n.channel.id), o.Ay.trackWithMetadata(f.HAw.ACTIVITY_FEED_VOICE_CHANNEL_VISITED, m({
+                source: A(m({}, t.location), {
+                    object: f.ZSU.LIST_ITEM
                 }),
                 guild_id: n.guild.id,
                 channel_id: n.channel.id
             }, (0, p.o)(e)))
         },
-        label: m.intl.string(m.t["8yOlh9"]),
+        label: g.intl.string(g.t["8yOlh9"]),
         disabled: !_
     }, "join-voice"), (0, r.jsx)(a.Drp, {
         id: "goto-server",
         action: function() {
-            (0, u.u)(n.guild.id), o.Ay.trackWithMetadata(g.HAw.ACTIVITY_FEED_GUILD_VISITED, f({
-                source: A(f({}, t.location), {
-                    object: g.ZSU.LIST_ITEM
+            (0, u.u)(n.guild.id), o.Ay.trackWithMetadata(f.HAw.ACTIVITY_FEED_GUILD_VISITED, m({
+                source: A(m({}, t.location), {
+                    object: f.ZSU.LIST_ITEM
                 }),
                 guild_id: n.guild.id,
                 af_recently_played: !1
             }, (0, p.o)(e)))
         },
-        label: m.intl.string(m.t.RGgqm1)
+        label: g.intl.string(g.t.RGgqm1)
     }, "goto-server")]
 }

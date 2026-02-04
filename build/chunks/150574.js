@@ -13,9 +13,9 @@ var r = n(627968),
     d = n(397927),
     p = n(765671),
     h = n(736653),
-    g = n(291661),
-    m = n(607470),
-    f = n(287809),
+    f = n(291661),
+    g = n(607470),
+    m = n(287809),
     A = n(954571),
     _ = n(341915),
     b = n(890687),
@@ -31,7 +31,7 @@ let T = (0, i.memo)(function(e) {
     var t, n, l, T, j, x;
     let {
         quest: P
-    } = e, [w, L] = (0, i.useState)(!1), [R, D] = (0, i.useState)(24), [M, k] = (0, i.useState)(!1), U = (0, i.useRef)(null), G = (0, i.useRef)(null), V = (0, i.useRef)(null), B = (0, c.bG)([f.default], () => f.default.getCurrentUser()), {
+    } = e, [w, L] = (0, i.useState)(!1), [R, D] = (0, i.useState)(24), [M, k] = (0, i.useState)(!1), U = (0, i.useRef)(null), G = (0, i.useRef)(null), V = (0, i.useRef)(null), B = (0, c.bG)([m.default], () => m.default.getCurrentUser()), {
         ref: H,
         height: F = 0
     } = (0, p.Ay)(), Y = (0, h.Ay)(), K = (0, b.S5)(null == (l = P.userStatus) ? void 0 : l.claimedAt, {
@@ -123,7 +123,7 @@ let T = (0, i.memo)(function(e) {
                 style: {
                     top: R
                 },
-                children: (0, r.jsx)(g.A, {
+                children: (0, r.jsx)(f.A, {
                     avatarDecorationOverride: J,
                     user: B,
                     guildId: null,
@@ -135,7 +135,7 @@ let T = (0, i.memo)(function(e) {
                 className: N.Sl,
                 isAnimated: w,
                 questName: P.config.messages.questName
-            }) : et.isAnimated ? (0, r.jsx)(m.A, {
+            }) : et.isAnimated ? (0, r.jsx)(g.A, {
                 className: N.JU,
                 autoPlay: !1,
                 children: (0, r.jsx)("source", {

@@ -132,11 +132,11 @@ e.exports = function(e) {
             end: r(/"/, e),
             contains: [M(e), k(e)]
         }),
-        V = {
+        F = {
             className: "string",
             variants: [U(), U("#"), U("##"), U("###"), G(), G("#"), G("##"), G("###")]
         },
-        F = [e.BACKSLASH_ESCAPE, {
+        V = [e.BACKSLASH_ESCAPE, {
             begin: /\[/,
             end: /\]/,
             relevance: 0,
@@ -145,7 +145,7 @@ e.exports = function(e) {
         B = {
             begin: /\/[^\s](?=[^/\n]*\/)/,
             end: /\//,
-            contains: F
+            contains: V
         },
         H = e => {
             let t = r(e, /\//),
@@ -153,7 +153,7 @@ e.exports = function(e) {
             return {
                 begin: t,
                 end: n,
-                contains: [...F, {
+                contains: [...V, {
                     scope: "comment",
                     begin: `#(?!.*${n})`,
                     end: /$/
@@ -182,7 +182,7 @@ e.exports = function(e) {
                     begin: /\(/,
                     end: /\)/,
                     keywords: A,
-                    contains: [...P, x, V]
+                    contains: [...P, x, F]
                 }]
             }
         }, {
@@ -229,7 +229,7 @@ e.exports = function(e) {
                 match: r(b, /\s*:/),
                 keywords: "_|0",
                 relevance: 0
-            }, ...h, Y, ...N, ...w, ...P, x, V, ...K, ...z, q]
+            }, ...h, Y, ...N, ...w, ...P, x, F, ...K, ...z, q]
         },
         X = {
             begin: /</,
@@ -252,7 +252,7 @@ e.exports = function(e) {
                     className: "params",
                     match: b
                 }]
-            }, ...h, ...N, ...P, x, V, ...z, q, Q],
+            }, ...h, ...N, ...P, x, F, ...z, q, Q],
             endsParent: !0,
             illegal: /["']/
         },
@@ -323,10 +323,10 @@ e.exports = function(e) {
                 relevance: 0
             }]
         };
-    for (let e of V.variants) {
+    for (let e of F.variants) {
         let t = e.contains.find(e => "interpol" === e.label);
         t.keywords = C;
-        let n = [...N, ...w, ...P, x, V, ...K];
+        let n = [...N, ...w, ...P, x, F, ...K];
         t.contains = [...n, {
             begin: /\(/,
             end: /\)/,
@@ -341,6 +341,6 @@ e.exports = function(e) {
             end: /$/,
             contains: [...h],
             relevance: 0
-        }, Y, ...N, ...w, ...P, x, V, ...K, ...z, q, Q]
+        }, Y, ...N, ...w, ...P, x, F, ...K, ...z, q, Q]
     }
 }

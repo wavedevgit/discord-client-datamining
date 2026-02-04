@@ -1,6 +1,6 @@
 /** chunk id: 822082, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => f
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -44,13 +44,13 @@ function h(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let g = function(e) {
+let f = function(e) {
     let {
         index: t,
         children: l,
-        user: g,
-        channel: m,
-        onClick: f,
+        user: f,
+        channel: g,
+        onClick: m,
         isFocused: A,
         isActive: _,
         onOtherHover: b,
@@ -61,7 +61,7 @@ let g = function(e) {
         y(!1)
     };
     return (0, r.jsx)(o.tG, {
-        id: m.id,
+        id: g.id,
         children: e => (0, r.jsx)(c.vN3, {
             offset: {
                 left: -8,
@@ -73,12 +73,12 @@ let g = function(e) {
                     [d.CJ]: 0 === t
                 }),
                 onContextMenu: e => {
-                    null != g && (v(!0), (0, u.L3)(e, async () => {
+                    null != f && (v(!0), (0, u.L3)(e, async () => {
                         let {
                             default: e
                         } = await Promise.all([n.e("97262"), n.e("32418"), n.e("22252")]).then(n.bind(n, 668569));
                         return t => (0, r.jsx)(e, h(p({}, t), {
-                            user: g
+                            user: f
                         }))
                     }, {
                         onClose: () => {
@@ -88,7 +88,7 @@ let g = function(e) {
                 },
                 onMouseEnter: S,
                 onMouseLeave: C,
-                onClick: null != f ? f : void 0,
+                onClick: null != m ? m : void 0,
                 style: {
                     LIST_ROW_HEIGHT: 73,
                     opacity: 1

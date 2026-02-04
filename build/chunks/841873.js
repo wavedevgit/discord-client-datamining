@@ -17,23 +17,24 @@ n.d(t, {
     FP: () => ey,
     Fs: () => eA,
     GQ: () => th,
-    GZ: () => V,
+    GZ: () => F,
     Gu: () => tM,
     HB: () => e7,
     HS: () => eb,
     Hz: () => eI,
     Jp: () => en,
+    K7: () => tS,
     LC: () => tI,
     LM: () => tE,
     M2: () => ej,
+    Mn: () => tT,
     Mo: () => eO,
-    N8: () => tV,
+    N8: () => tF,
     ND: () => ec,
     NG: () => e3,
     NJ: () => e5,
     Ng: () => ty,
     Nh: () => te,
-    Nv: () => tT,
     Oy: () => Z,
     PJ: () => tn,
     PR: () => tD,
@@ -54,7 +55,8 @@ n.d(t, {
     Tp: () => tg,
     U8: () => tk,
     Ux: () => el,
-    Vr: () => eV,
+    Vr: () => eF,
+    W8: () => tC,
     Xb: () => ef,
     Xc: () => ea,
     Y6: () => t_,
@@ -71,7 +73,6 @@ n.d(t, {
     cV: () => q,
     ce: () => tO,
     cy: () => ei,
-    dM: () => tS,
     dS: () => e1,
     dz: () => eg,
     eF: () => tA,
@@ -82,8 +83,7 @@ n.d(t, {
     gG: () => ev,
     gM: () => X,
     gR: () => e_,
-    gx: () => tC,
-    hI: () => eF,
+    hI: () => eV,
     he: () => eH,
     iA: () => e8,
     ii: () => tc,
@@ -100,9 +100,9 @@ n.d(t, {
     o: () => eu,
     p8: () => e4,
     pD: () => ez,
-    qN: () => tF,
+    qN: () => tV,
     qv: () => tx,
-    rf: () => T,
+    rf: () => C,
     rk: () => tr,
     rl: () => tN,
     s5: () => em,
@@ -128,7 +128,7 @@ n.d(t, {
     x0: () => tf,
     x6: () => er,
     xV: () => tm,
-    xy: () => v,
+    xy: () => T,
     yc: () => tB,
     yq: () => eW,
     zE: () => tR
@@ -266,13 +266,8 @@ function O(e) {
 }
 
 function v(e) {
-    let t, n;
-    try {
-        let i = r.generateLaunchSignature(e);
-        return t = i[0], n = i[1], _(i[0], i[1])
-    } finally {
-        r.__wbindgen_free(t, n, 1)
-    }
+    let t = r.__wbindgen_export_4.get(e);
+    return r.__externref_table_dealloc(e), t
 }
 
 function A() {
@@ -287,13 +282,18 @@ function S(e, t) {
     return r.rustMultiply(e, t)
 }
 
-function T(e, t, n, i, a) {
-    r.installLogCallback(e, t, n, i, a)
+function T(e) {
+    let t, n;
+    try {
+        let i = r.generateLaunchSignature(e);
+        return t = i[0], n = i[1], _(i[0], i[1])
+    } finally {
+        r.__wbindgen_free(t, n, 1)
+    }
 }
 
-function C(e) {
-    let t = r.__wbindgen_export_4.get(e);
-    return r.__externref_table_dealloc(e), t
+function C(e, t, n, i, a) {
+    r.installLogCallback(e, t, n, i, a)
 }
 
 function N(e, t) {
@@ -305,11 +305,11 @@ function w(e, t) {
 }
 
 function R(e, t, n) {
-    r.closure628_externref_shim(e, t, n)
+    r.closure719_externref_shim(e, t, n)
 }
 
 function P(e, t, n, i) {
-    r.closure664_externref_shim(e, t, n, i)
+    r.closure755_externref_shim(e, t, n, i)
 }
 let D = ["bytes"],
     L = ["omit", "same-origin", "include"],
@@ -368,7 +368,7 @@ let G = "u" < typeof FinalizationRegistry ? {
     register: () => {},
     unregister: () => {}
 } : new FinalizationRegistry(e => r.__wbg_fluxapi_free(e >>> 0, 1));
-class V {
+class F {
     __destroy_into_raw() {
         let e = this.__wbg_ptr;
         return this.__wbg_ptr = 0, G.unregister(this), e
@@ -379,8 +379,8 @@ class V {
     }
     connectStore(e) {
         let t = r.fluxapi_connectStore(this.__wbg_ptr, e);
-        if (t[2]) throw C(t[1]);
-        return C(t[0])
+        if (t[2]) throw v(t[1]);
+        return v(t[0])
     }
     dispatchAction(e, t) {
         let n = u(e, r.__wbindgen_malloc, r.__wbindgen_realloc),
@@ -403,14 +403,14 @@ class V {
         return this.__wbg_ptr = e >>> 0, G.register(this, this.__wbg_ptr, this), this
     }
 }
-let F = "u" < typeof FinalizationRegistry ? {
+let V = "u" < typeof FinalizationRegistry ? {
     register: () => {},
     unregister: () => {}
 } : new FinalizationRegistry(e => r.__wbg_intounderlyingbytesource_free(e >>> 0, 1));
 class B {
     __destroy_into_raw() {
         let e = this.__wbg_ptr;
-        return this.__wbg_ptr = 0, F.unregister(this), e
+        return this.__wbg_ptr = 0, V.unregister(this), e
     }
     free() {
         let e = this.__destroy_into_raw();
@@ -761,11 +761,11 @@ function eG() {
     }, arguments)
 }
 
-function eV(e, t) {
+function eF(e, t) {
     return Function(_(e, t))
 }
 
-function eF(e, t, n) {
+function eV(e, t, n) {
     return new Uint8Array(e, t >>> 0, n >>> 0)
 }
 
@@ -986,15 +986,15 @@ function tI(e) {
 }
 
 function tS(e, t, n) {
-    return b(e, t, 442, N)
+    return b(e, t, 533, N)
 }
 
 function tT(e, t, n) {
-    return b(e, t, 482, w)
+    return b(e, t, 573, w)
 }
 
 function tC(e, t, n) {
-    return b(e, t, 629, R)
+    return b(e, t, 720, R)
 }
 
 function tN(e, t) {
@@ -1052,11 +1052,11 @@ function tG(e, t) {
     f().setFloat64(e + 8, g(r) ? 0 : r, !0), f().setInt32(e + 0, !g(r), !0)
 }
 
-function tV(e) {
+function tF(e) {
     return e
 }
 
-function tF(e, t) {
+function tV(e, t) {
     let n = t,
         i = "string" == typeof n ? n : void 0;
     var o = g(i) ? 0 : u(i, r.__wbindgen_malloc, r.__wbindgen_realloc),

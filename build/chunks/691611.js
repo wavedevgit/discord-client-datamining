@@ -13,9 +13,9 @@ var r = n(627968),
     d = n(141468),
     p = n(763754),
     h = n(491182),
-    g = n(860227),
-    m = n(538355),
-    f = n(699352),
+    f = n(860227),
+    g = n(538355),
+    m = n(699352),
     A = n(715628),
     _ = n(752636),
     b = n(675722),
@@ -77,7 +77,7 @@ let N = i.memo(function(e) {
         content: B,
         hasSpoilerEmbeds: H,
         hasBailedAst: F
-    } = (0, m.A)(N, {
+    } = (0, g.A)(N, {
         hideSimpleEmbedContent: P,
         allowList: G || V,
         allowHeading: G || V,
@@ -86,7 +86,7 @@ let N = i.memo(function(e) {
     }), Y = (0, s.rm)(N.id), K = (0, p.Ay)(N), W = (0, o.bG)([O.A], () => N.hasFlag(I.pr7.HAS_THREAD) && O.A.getChannel(y.default.castMessageIdAsChannelId(N.id))), q = (0, c.$7)({
         guildId: w.guild_id,
         roleId: K.iconRoleId
-    }), z = (0, g.fF)(N), Q = (0, g.ZD)(N);
+    }), z = (0, f.fF)(N), Q = (0, f.ZD)(N);
     return (0, r.jsx)(h.A, C({
         compact: !1,
         className: a()(T, v.i, {
@@ -107,7 +107,7 @@ let N = i.memo(function(e) {
             hideTimestamp: !0,
             hideGuildTag: !1
         }),
-        childrenAccessories: e.hideAccessories ? void 0 : (0, f.J)(e, H, F),
+        childrenAccessories: e.hideAccessories ? void 0 : (0, m.J)(e, H, F),
         childrenMessageContent: (0, A.A)(e, B),
         childrenSystemMessage: (0, b.A)((i = C({}, e), l = l = {
             disableInteraction: U

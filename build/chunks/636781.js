@@ -1,6 +1,6 @@
 /** chunk id: 636781, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var r = n(627968);
 n(64700);
@@ -15,7 +15,7 @@ var i = n(92674),
     p = n(48686),
     h = n(652215);
 
-function g(e) {
+function f(e) {
     let {
         channel: t,
         guild: n
@@ -35,11 +35,11 @@ function g(e) {
         })
     })
 }
-let m = function(e) {
+let g = function(e) {
     let {
         guild: t
     } = e, n = (0, l.bG)([o.Ay], () => o.Ay.getChannels(t.id)[o.vM][0]), i = (0, l.bG)([c.A], () => null != n && c.A.can(h.xBc.CONNECT, n.channel));
-    return t.features.has(h.GuildFeatures.HUB) && null != n && i ? (0, r.jsx)(g, {
+    return t.features.has(h.GuildFeatures.HUB) && null != n && i ? (0, r.jsx)(f, {
         channel: n.channel,
         guild: t
     }) : null

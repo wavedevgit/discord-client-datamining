@@ -13,9 +13,9 @@ var r = n(627968),
     d = n(448368),
     p = n(302031),
     h = n(253932),
-    g = n(576705),
-    m = n(994500),
-    f = n(978914),
+    f = n(576705),
+    g = n(994500),
+    m = n(978914),
     A = n(652215),
     _ = n(838541),
     b = n(985018),
@@ -28,13 +28,13 @@ let y = i.memo(function(e) {
         loaded: n,
         error: l,
         message: y
-    } = (0, f.I)(t), {
+    } = (0, m.I)(t), {
         isBlocked: I,
         isIgnored: v
-    } = (0, s.cf)([m.A], () => ({
-        isBlocked: null != y && m.A.isBlockedForMessage(y),
-        isIgnored: null != y && m.A.isIgnoredForMessage(y)
-    }), [y]), S = (0, s.bG)([g.A], () => g.A.can(A.xBc.MANAGE_MESSAGES, t)), C = h.gs.useSetting(), {
+    } = (0, s.cf)([g.A], () => ({
+        isBlocked: null != y && g.A.isBlockedForMessage(y),
+        isIgnored: null != y && g.A.isIgnoredForMessage(y)
+    }), [y]), S = (0, s.bG)([f.A], () => f.A.can(A.xBc.MANAGE_MESSAGES, t)), C = h.gs.useSetting(), {
         content: N
     } = i.useMemo(() => (null == y ? void 0 : y.content) != null && "" !== y.content ? (0, u.Ay)(y, {
         formatInline: !0,

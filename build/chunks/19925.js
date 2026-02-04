@@ -1,7 +1,7 @@
 /** chunk id: 19925, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     I: () => h,
-    X: () => g
+    X: () => f
 }), n(733351);
 var r = n(64700),
     i = n(311907),
@@ -27,7 +27,7 @@ function h(e) {
     }), h = (0, i.bG)([o.A], () => {
         var e;
         return null != (e = o.A.getIsFetching(u)) && e
-    }), g = c.A.useField("resultsQuery"), m = g !== n, f = r.useCallback(() => {
+    }), f = c.A.useField("resultsQuery"), g = f !== n, m = r.useCallback(() => {
         let e = o.A.getGuildIds(u),
             n = o.A.getTotal(u);
         if (null == e || null == n) return;
@@ -43,14 +43,14 @@ function h(e) {
     }, [t, u]);
     return r.useMemo(() => ({
         guildIds: d,
-        loading: m || h,
-        searchResultsQuery: g,
-        loadMore: f,
+        loading: g || h,
+        searchResultsQuery: f,
+        loadMore: m,
         searchCategoryId: l
-    }), [d, m, h, g, f, l])
+    }), [d, g, h, f, m, l])
 }
 
-function g(e) {
+function f(e) {
     let {
         loadId: t
     } = e, n = d.A.useField("isSearchVisible"), i = c.A.useField("query");

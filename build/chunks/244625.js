@@ -13,9 +13,9 @@ var r = n(627968),
     d = n(734057),
     p = n(71393),
     h = n(287809),
-    g = n(661191),
-    m = n(652215),
-    f = n(985018),
+    f = n(661191),
+    g = n(652215),
+    m = n(985018),
     A = n(310633);
 
 function _(e) {
@@ -56,11 +56,11 @@ function _(e) {
         switch (n.data.kind) {
             case "message":
             case "forumThread":
-                return g.default.extractTimestamp(n.data.message.id);
+                return f.default.extractTimestamp(n.data.message.id);
             case "guildEvent":
-                return g.default.extractTimestamp(n.data.eventId);
+                return f.default.extractTimestamp(n.data.eventId);
             case "generatedCandidate":
-                return g.default.extractTimestamp(n.data.item.content_id);
+                return f.default.extractTimestamp(n.data.item.content_id);
             default:
                 return n.timestamp
         }
@@ -110,21 +110,21 @@ function _(e) {
                     let e = (() => {
                         switch (n.data.kind) {
                             case "message":
-                                if (n.channelType === m.rbe.GUILD_ANNOUNCEMENT) return f.intl.string(f.t["8P08G9"]);
-                                return f.intl.string(f.t.hMFMY9);
+                                if (n.channelType === g.rbe.GUILD_ANNOUNCEMENT) return m.intl.string(m.t["8P08G9"]);
+                                return m.intl.string(m.t.hMFMY9);
                             case "generatedCandidate":
-                                return f.intl.string(f.t.ljgIO9);
+                                return m.intl.string(m.t.ljgIO9);
                             case "guildEvent":
-                                return f.intl.string(f.t["6pFsLQ"]);
+                                return m.intl.string(m.t["6pFsLQ"]);
                             case "forumThread":
-                                return f.intl.string(f.t.bYNuVx);
+                                return m.intl.string(m.t.bYNuVx);
                             case "contentInventory":
                                 switch (n.data.content.content_type) {
                                     case l.ContentInventoryEntryType.CUSTOM_STATUS:
-                                        return f.intl.string(f.t.fxOLPR);
+                                        return m.intl.string(m.t.fxOLPR);
                                     case l.ContentInventoryEntryType.TOP_GAME:
                                     case l.ContentInventoryEntryType.PLAYED_GAME:
-                                        return f.intl.string(f.t.ktOTRQ);
+                                        return m.intl.string(m.t.ktOTRQ);
                                     default:
                                         return "".concat(n.data.content.content_type)
                                 }
@@ -148,7 +148,7 @@ function _(e) {
                                 children: e
                             }), (0, r.jsx)("span", {
                                 className: A.o4,
-                                children: f.intl.string(f.t.CHUAYk)
+                                children: m.intl.string(m.t.CHUAYk)
                             }), (0, r.jsxs)("span", {
                                 className: A.o4,
                                 children: [null != t && (0, r.jsx)(t, {

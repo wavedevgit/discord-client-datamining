@@ -1,6 +1,6 @@
 /** chunk id: 787331, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var r = n(627968);
 n(64700);
@@ -14,14 +14,14 @@ var i = n(397927),
     d = n(723690),
     p = n(652215),
     h = n(985018),
-    g = n(276991);
+    f = n(276991);
 
-function m(e) {
+function g(e) {
     let {
         user: t,
         nickname: n,
-        status: m,
-        isFocused: f
+        status: g,
+        isFocused: m
     } = e, {
         analyticsLocations: A
     } = (0, a.Ay)(), _ = e => {
@@ -35,9 +35,9 @@ function m(e) {
         })
     }, b = e => {
         null == e || e.stopPropagation(), s.A.ignore(t.id)
-    }, E = m === p.clD.OFFLINE ? p.clD.UNKNOWN : m;
+    }, E = g === p.clD.OFFLINE ? p.clD.UNKNOWN : g;
     return (0, r.jsx)(u.A, {
-        isFocused: f,
+        isFocused: m,
         user: t,
         onClick: () => (0, o.openUserProfileModal)({
             userId: t.id,
@@ -60,15 +60,15 @@ function m(e) {
                 })]
             });
             return (0, r.jsxs)("div", {
-                className: g.a,
+                className: f.a,
                 children: [(0, r.jsx)(d.A, {
                     user: t,
                     hovered: e,
                     status: E,
                     subText: n,
-                    className: g.__invalid_userInfo
+                    className: f.__invalid_userInfo
                 }), (0, r.jsx)("div", {
-                    className: g.o,
+                    className: f.o,
                     children: l
                 })]
             })
