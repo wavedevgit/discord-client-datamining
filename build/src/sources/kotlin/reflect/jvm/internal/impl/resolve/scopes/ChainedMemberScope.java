@@ -41,8 +41,7 @@ public final class ChainedMemberScope implements MemberScope {
             this();
         }
 
-        @NotNull
-        public final MemberScope create(@NotNull String debugName, @NotNull Iterable<? extends MemberScope> scopes) {
+        public final MemberScope create(String debugName, Iterable<? extends MemberScope> scopes) {
             Intrinsics.checkNotNullParameter(debugName, "debugName");
             Intrinsics.checkNotNullParameter(scopes, "scopes");
             SmartList smartList = new SmartList();
