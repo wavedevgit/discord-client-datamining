@@ -203,7 +203,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure1_slot7;
                     var2 = var2.NOT_FETCHED;
                     if (!(var3 === var2)) {
-                        _fun95780_ip = 116;
+                        _fun95780_ip = 112;
                         continue _fun95780
                     }
                 case 34:
@@ -227,7 +227,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var3.requestMembersById;
                     var1 = false;
                     var1 = var2.bind(var3)(var5, var4, var1);
-                case 116:
+                case 112:
                     return var0;
             }
         };

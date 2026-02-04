@@ -1409,7 +1409,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var6 = this;
                         var0 = var6.enableNative;
                         if (!var0) {
-                            _fun10252_ip = 165;
+                            _fun10252_ip = 167;
                             continue _fun10252
                         }
                     case 18:
@@ -1427,7 +1427,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = null;
                         var2 = null;
                         if (!var12) {
-                            _fun10252_ip = 149;
+                            _fun10252_ip = 151;
                             continue _fun10252
                         }
                     case 54:
@@ -1450,11 +1450,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = var1.bind(var6)(var4);
                         var1 = var6._serializeObject;
                         var2 = var1.bind(var6)(var5);
-                    case 149:
+                    case 151:
                         var1 = _closure1_slot6;
                         var0 = var1.setUser;
                         var0 = var0.bind(var1)(var3, var2);
-                    case 165:
+                    case 167:
                         var0 = undefined;
                         return var0;
                 }

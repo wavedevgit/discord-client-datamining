@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var3);
     var6 = var7.createStyles;
     var3 = function(arg0) { // Environment: var1
-        _fun111568: for (var _fun111568_ip = 0;;) switch (_fun111568_ip) {
+        _fun111567: for (var _fun111567_ip = 0;;) switch (_fun111567_ip) {
             case 0:
                 var2 = arg0;
                 var0 = {};
@@ -51,13 +51,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var7.bind(var5)(var4);
                 var7 = var4.colors;
                 if (var2) {
-                    _fun111568_ip = 118;
-                    continue _fun111568
+                    _fun111567_ip = 118;
+                    continue _fun111567
                 }
             case 110:
                 var4 = var7.WHITE;
-                _fun111568_ip = 124;
-                continue _fun111568;
+                _fun111567_ip = 124;
+                continue _fun111567;
             case 118:
                 var4 = var7.INTERACTIVE_TEXT_DEFAULT;
             case 124:
@@ -86,13 +86,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var4.bind(var5)(var3);
                 var3 = var3.colors;
                 if (var2) {
-                    _fun111568_ip = 238;
-                    continue _fun111568
+                    _fun111567_ip = 238;
+                    continue _fun111567
                 }
             case 230:
                 var2 = var3.WHITE;
-                _fun111568_ip = 244;
-                continue _fun111568;
+                _fun111567_ip = 244;
+                continue _fun111567;
             case 238:
                 var2 = var3.CONTROL_BRAND_FOREGROUND;
             case 244:

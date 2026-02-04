@@ -1,99 +1,25 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var0 = global;
-    var2 = var0.IntlMessageFormat;
-    var1 = var2.__addLocaleData;
-    var0 = {};
-    var3 = 'hi';
-    var0.locale = var3;
-    var3 = function arg0, arg1() {
-        _fun112213: for (var _fun112213_ip = 0;;) switch (_fun112213_ip) {
-            case 0:
-                var5 = arg0;
-                var0 = arg1;
-                if (var0) {
-                    _fun112213_ip = 44;
-                    continue _fun112213
-                }
-            case 9:
-                var0 = 0;
-                var1 = var5 >= var0;
-                var2 = 'other';
-                var0 = var2;
-                if (!var1) {
-                    _fun112213_ip = 42;
-                    continue _fun112213
-                }
-            case 25:
-                var1 = 1;
-                var1 = var5 <= var1;
-                var0 = var2;
-                if (!var1) {
-                    _fun112213_ip = 42;
-                    continue _fun112213
-                }
-            case 38:
-                var0 = 'one';
-            case 42:
-                _fun112213_ip = 134;
-                continue _fun112213;
-            case 44:
-                var1 = 1;
-                var2 = var1 == var5;
-                var1 = 'one';
-                if (var2) {
-                    _fun112213_ip = 131;
-                    continue _fun112213
-                }
-            case 58:
-                var2 = 2;
-                var3 = var2 == var5;
-                var4 = 'two';
-                var2 = var4;
-                if (var3) {
-                    _fun112213_ip = 128;
-                    continue _fun112213
-                }
-            case 77:
-                var3 = 3;
-                var3 = var3 == var5;
-                var2 = var4;
-                if (var3) {
-                    _fun112213_ip = 128;
-                    continue _fun112213
-                }
-            case 90:
-                var3 = 4;
-                var4 = var3 == var5;
-                var3 = 'few';
-                if (var4) {
-                    _fun112213_ip = 125;
-                    continue _fun112213
-                }
-            case 104:
-                var4 = 6;
-                var5 = var4 == var5;
-                var4 = 'other';
-                if (!var5) {
-                    _fun112213_ip = 122;
-                    continue _fun112213
-                }
-            case 118:
-                var4 = 'many';
-            case 122:
-                var3 = var4;
-            case 125:
-                var2 = var3;
-            case 128:
-                var1 = var2;
-            case 131:
-                var0 = var1;
-            case 134:
-                return var0;
-        }
-    };
-    var0.pluralRuleFunction = var3;
-    var0 = var1.bind(var2)(var0);
+    var2 = exports;
+    var1 = global;
+    var4 = var1.RegExp;
     var0 = undefined;
+    var3 = '^(?:(?:[a-z]{2,3}(?:-[a-z]{3}(?:-[a-z]{3}){0,2})?|[a-z]{4}|[a-z]{5,8})(?:-[a-z]{4})?(?:-(?:[a-z]{2}|\\d{3}))?(?:-(?:[a-z0-9]{5,8}|\\d[a-z0-9]{3}))*(?:-[0-9a-wy-z](?:-[a-z0-9]{2,8})+)*(?:-x(?:-[a-z0-9]{1,8})+)?|x(?:-[a-z0-9]{1,8})+|(?:(?:en-GB-oed|i-(?:ami|bnn|default|enochian|hak|klingon|lux|mingo|navajo|pwn|tao|tay|tsu)|sgn-(?:BE-FR|BE-NL|CH-DE))|(?:art-lojban|cel-gaulish|no-bok|no-nyn|zh-(?:guoyu|hakka|min|min-nan|xiang))))$';
+    var7 = 'i';
+    var5 = var4.bind(var0)(var3, var7);
+    var4 = var1.RegExp;
+    var3 = '^(?!x).*?-((?:[a-z0-9]{5,8}|\\d[a-z0-9]{3}))-(?:\\w{4,8}-(?!x-))*\\1\\b';
+    var4 = var4.bind(var0)(var3, var7);
+    var6 = var1.RegExp;
+    var3 = '^(?!x).*?-([0-9a-wy-z])-(?:\\w+-(?!x-))*\\1\\b';
+    var3 = var6.bind(var0)(var3, var7);
+    var7 = var1.RegExp;
+    var6 = '-[0-9a-wy-z](?:-[a-z0-9]{2,8})+';
+    var1 = 'ig';
+    var1 = var7.bind(var0)(var6, var1);
+    var2.expBCP47Syntax = var5;
+    var2.expVariantDupes = var4;
+    var2.expSingletonDupes = var3;
+    var2.expExtSequences = var1;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

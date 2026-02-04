@@ -721,13 +721,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var17 == var20;
                 var17 = undefined;
                 if (var18) {
-                    _fun80890_ip = 1065;
+                    _fun80890_ip = 1061;
                     continue _fun80890
                 }
-            case 1055:
+            case 1051:
                 var18 = var20.getAnyErrorMessage;
                 var17 = var18.bind(var20)();
-            case 1065:
+            case 1061:
                 var10.error = var17;
                 var17 = function() {
                     var0 = global;

@@ -12,14 +12,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = _closure1_slot2;
         var2 = function*(arg0, arg1) { // Environment: var2
             var0 = function*(arg0, arg1) { // Original name: ?anon_0_, environment: var0
-                _fun113074: for (var _fun113074_ip = 0;;) switch (_fun113074_ip) {
+                _fun113060: for (var _fun113060_ip = 0;;) switch (_fun113060_ip) {
                     case 0:
                         StartGenerator();
                         var1 = arg1;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun113074_ip = 593;
-                            continue _fun113074
+                            _fun113060_ip = 593;
+                            continue _fun113060
                         }
                     case 13:
                         var22 = var1.rating;
@@ -36,8 +36,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 60:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun113074_ip = 590;
-                            continue _fun113074
+                            _fun113060_ip = 590;
+                            continue _fun113060
                         }
                     case 69:
                         var6 = _closure1_slot3;
@@ -90,8 +90,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 278:
                         ResumeGenerator(result_out_reg = 2, return_bool_out_reg = 6);
                         if (var6) {
-                            _fun113074_ip = 587;
-                            continue _fun113074
+                            _fun113060_ip = 587;
+                            continue _fun113060
                         }
                     case 287:
                         var6 = _closure1_slot0;
@@ -105,8 +105,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var23 = var11 != var22;
                         var21 = 'no response';
                         if (!var23) {
-                            _fun113074_ip = 332;
-                            continue _fun113074
+                            _fun113060_ip = 332;
+                            continue _fun113060
                         }
                     case 329:
                         var21 = var22;
@@ -140,8 +140,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var16 = var11 == var15;
                         var13 = undefined;
                         if (var16) {
-                            _fun113074_ip = 492;
-                            continue _fun113074
+                            _fun113060_ip = 492;
+                            continue _fun113060
                         }
                     case 487:
                         var13 = var15.name;
@@ -150,8 +150,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var15 = var11 == var14;
                         var13 = undefined;
                         if (var15) {
-                            _fun113074_ip = 511;
-                            continue _fun113074
+                            _fun113060_ip = 511;
+                            continue _fun113060
                         }
                     case 506:
                         var13 = var14.name;
@@ -160,8 +160,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var13 = var11 == var12;
                         var11 = undefined;
                         if (var13) {
-                            _fun113074_ip = 532;
-                            continue _fun113074
+                            _fun113060_ip = 532;
+                            continue _fun113060
                         }
                     case 527:
                         var11 = var12.name;

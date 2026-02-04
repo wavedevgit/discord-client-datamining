@@ -1132,136 +1132,153 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot34 = var12;
-    var11 = function arg0, arg1, arg2() {
+    var11 = function arg0, arg1, arg2, arg3() {
         _fun37147: for (var _fun37147_ip = 0;;) switch (_fun37147_ip) {
             case 0:
-                var8 = arg0;
-                var6 = arg1;
+                var9 = arg0;
+                var7 = arg1;
                 var0 = arg2;
-                var3 = _closure1_slot0;
-                var4 = _closure1_slot2;
-                var1 = 12;
-                var1 = var4[var1];
-                var5 = undefined;
-                var3 = var3.bind(var5)(var1);
-                var1 = var3.isIOS;
-                var1 = var1.bind(var3)();
-                if (var1) {
-                    _fun37147_ip = 51;
-                    continue _fun37147
-                }
-            case 47:
-                var1 = false;
-                return var1;
-            case 51:
-                var1 = _closure1_slot33;
-                var3 = var1.bind(var5)(var8, var6);
-                var1 = null;
-                if (var3) {
-                    _fun37147_ip = 138;
-                    continue _fun37147
-                }
-            case 66:
-                var4 = var8.match;
-                var3 = /^(assets-library|file):\\/\\ / . + ( & ext = | \.)(hei[cf] | jpe ? g | dng) $ / i;
-                var3 = var4.bind(var8)(var3);
-                var3 = var1 != var3;
-                if (var3) {
-                    _fun37147_ip = 136;
-                    continue _fun37147
-                }
-            case 98:
-                var7 = var8.match;
-                var4 = /^(assets-library|file):\\/\\ / . + ( & ext = | \.) png$ / i;
-                var4 = var7.bind(var8)(var4);
-                var4 = var1 == var4;
-                if (var4) {
-                    _fun37147_ip = 133;
-                    continue _fun37147
-                }
-            case 130:
-                var4 = !var0;
-            case 133:
-                var3 = !var4;
-            case 136:
-                return var3;
-            case 138:
-                if (!(var1 != var6)) {
-                    _fun37147_ip = 314;
-                    continue _fun37147
-                }
-            case 145:
-                var4 = var6.lastIndexOf;
-                var3 = '.';
-                var7 = var4.bind(var6)(var3);
-                var3 = -1;
-                if (!(var3 !== var7)) {
-                    _fun37147_ip = 310;
-                    continue _fun37147
-                }
-            case 173:
-                var4 = var6.substring;
-                var3 = 1;
-                var3 = var7 + var3;
-                var4 = var4.bind(var6)(var3);
-                var3 = var4.toLowerCase;
-                var3 = var3.bind(var4)();
-                var4 = 'png';
-                if (!(var4 !== var3)) {
-                    _fun37147_ip = 299;
-                    continue _fun37147
-                }
-            case 209:
-                var7 = _closure1_slot1;
-                var4 = _closure1_slot2;
-                var6 = 18;
-                var4 = var4[var6];
-                var7 = var7.bind(var5)(var4);
-                var4 = var7.isExtensionAnimated;
-                var4 = var4.bind(var7)(var3);
-                if (var4) {
-                    _fun37147_ip = 295;
-                    continue _fun37147
-                }
-            case 245:
-                var4 = _closure1_slot1;
-                var2 = _closure1_slot2;
-                var2 = var2[var6];
-                var4 = var4.bind(var5)(var2);
-                var2 = var4.getSupportedExtensions;
+                var1 = arg3;
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot2;
+                var2 = 12;
+                var2 = var5[var2];
+                var6 = undefined;
+                var4 = var4.bind(var6)(var2);
+                var2 = var4.isIOS;
                 var2 = var2.bind(var4)();
-                if (!(var1 !== var2)) {
-                    _fun37147_ip = 302;
+                if (var2) {
+                    _fun37147_ip = 54;
                     continue _fun37147
                 }
-            case 278:
-                var1 = var2.has;
-                var1 = var1.bind(var2)(var3);
-                if (!var1) {
-                    _fun37147_ip = 302;
+            case 50:
+                var2 = false;
+                return var2;
+            case 54:
+                var2 = _closure1_slot33;
+                var4 = var2.bind(var6)(var9, var7);
+                var2 = null;
+                if (var4) {
+                    _fun37147_ip = 150;
                     continue _fun37147
                 }
-            case 291:
-                var1 = true;
-                return var1;
-            case 295:
-                var1 = false;
-                return var1;
-            case 299:
+            case 69:
+                var5 = var9.match;
+                var4 = /^(assets-library|file):\\/\\ / . + ( & ext = | \.)(hei[cf] | jpe ? g | dng) $ / i;
+                var4 = var5.bind(var9)(var4);
+                var4 = var2 != var4;
+                if (var4) {
+                    _fun37147_ip = 148;
+                    continue _fun37147
+                }
+            case 101:
+                var8 = var9.match;
+                var5 = /^(assets-library|file):\\/\\ / . + ( & ext = | \.) png$ / i;
+                var5 = var8.bind(var9)(var5);
+                var5 = var2 == var5;
+                if (var5) {
+                    _fun37147_ip = 145;
+                    continue _fun37147
+                }
+            case 133:
+                var8 = !var0;
+                if (!var8) {
+                    _fun37147_ip = 142;
+                    continue _fun37147
+                }
+            case 139:
+                var8 = !var1;
+            case 142:
+                var5 = var8;
+            case 145:
+                var4 = !var5;
+            case 148:
+                return var4;
+            case 150:
+                if (!(var2 != var7)) {
+                    _fun37147_ip = 333;
+                    continue _fun37147
+                }
+            case 157:
+                var5 = var7.lastIndexOf;
+                var4 = '.';
+                var8 = var5.bind(var7)(var4);
+                var4 = -1;
+                if (!(var4 !== var8)) {
+                    _fun37147_ip = 329;
+                    continue _fun37147
+                }
+            case 185:
+                var5 = var7.substring;
+                var4 = 1;
+                var4 = var8 + var4;
+                var5 = var5.bind(var7)(var4);
+                var4 = var5.toLowerCase;
+                var4 = var4.bind(var5)();
+                var5 = 'png';
+                if (!(var5 !== var4)) {
+                    _fun37147_ip = 311;
+                    continue _fun37147
+                }
+            case 221:
+                var8 = _closure1_slot1;
+                var5 = _closure1_slot2;
+                var7 = 18;
+                var5 = var5[var7];
+                var8 = var8.bind(var6)(var5);
+                var5 = var8.isExtensionAnimated;
+                var5 = var5.bind(var8)(var4);
+                if (var5) {
+                    _fun37147_ip = 307;
+                    continue _fun37147
+                }
+            case 257:
+                var5 = _closure1_slot1;
+                var3 = _closure1_slot2;
+                var3 = var3[var7];
+                var5 = var5.bind(var6)(var3);
+                var3 = var5.getSupportedExtensions;
+                var3 = var3.bind(var5)();
+                if (!(var2 !== var3)) {
+                    _fun37147_ip = 317;
+                    continue _fun37147
+                }
+            case 290:
+                var2 = var3.has;
+                var2 = var2.bind(var3)(var4);
+                if (!var2) {
+                    _fun37147_ip = 317;
+                    continue _fun37147
+                }
+            case 303:
+                var2 = true;
+                return var2;
+            case 307:
+                var2 = false;
+                return var2;
+            case 311:
+                if (var1) {
+                    _fun37147_ip = 325;
+                    continue _fun37147
+                }
+            case 314:
                 if (var0) {
-                    _fun37147_ip = 306;
+                    _fun37147_ip = 321;
                     continue _fun37147
                 }
-            case 302:
+            case 317:
                 var0 = false;
                 return var0;
-            case 306:
+            case 321:
                 var0 = true;
                 return var0;
-            case 310:
+            case 325:
+                var0 = true;
+                return var0;
+            case 329:
                 var0 = false;
                 return var0;
-            case 314:
+            case 333:
                 var0 = false;
                 return var0;
         }
@@ -3633,15 +3650,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = arg0;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun37184_ip = 909;
+                            _fun37184_ip = 917;
                             continue _fun37184
                         }
                     case 13:
                         var3 = var1.uri;
                         var9 = var1.filename;
-                        var15 = var1.isLowQuality;
+                        var16 = var1.isLowQuality;
                         var2 = var1.compressionQuality;
-                        var4 = var1.mobileLosslessImageEnabled;
+                        var15 = var1.mobileLosslessImageEnabled;
                         var13 = var1.useEnhancedConversion;
                         var12 = var1.useJpegliEncoder;
                         var11 = var1.targetWidth;
@@ -3651,60 +3668,60 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 70:
                         return var7;
                     case 72:
-                        ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 5);
-                        if (var5) {
-                            _fun37184_ip = 906;
+                        ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 4);
+                        if (var4) {
+                            _fun37184_ip = 914;
                             continue _fun37184
                         }
                     case 81:
                         var17 = var3;
-                        var10 = _closure1_slot0;
-                        var8 = _closure1_slot2;
+                        var8 = _closure1_slot0;
+                        var4 = _closure1_slot2;
                         var14 = 12;
-                        var8 = var8[var14];
-                        var10 = var10.bind(var7)(var8);
-                        var8 = var10.isIOS;
-                        var8 = var8.bind(var10)();
-                        if (!var8) {
+                        var4 = var4[var14];
+                        var8 = var8.bind(var7)(var4);
+                        var4 = var8.isIOS;
+                        var4 = var4.bind(var8)();
+                        if (!var4) {
                             _fun37184_ip = 141;
                             continue _fun37184
                         }
                     case 120:
-                        var16 = var17.match;
-                        var10 = _closure1_slot22;
-                        var16 = var16.bind(var17)(var10);
-                        var10 = null;
-                        var8 = var10 != var16;
+                        var10 = var17.match;
+                        var8 = _closure1_slot22;
+                        var10 = var10.bind(var17)(var8);
+                        var8 = null;
+                        var4 = var8 != var10;
                     case 141:
-                        if (var8) {
-                            _fun37184_ip = 792;
+                        if (var4) {
+                            _fun37184_ip = 800;
                             continue _fun37184
                         }
                     case 147:
                         var17 = var3;
-                        var10 = _closure1_slot0;
-                        var8 = _closure1_slot2;
-                        var8 = var8[var14];
-                        var10 = var10.bind(var7)(var8);
-                        var8 = var10.isIOS;
-                        var8 = var8.bind(var10)();
-                        if (!var8) {
+                        var8 = _closure1_slot0;
+                        var4 = _closure1_slot2;
+                        var4 = var4[var14];
+                        var8 = var8.bind(var7)(var4);
+                        var4 = var8.isIOS;
+                        var4 = var4.bind(var8)();
+                        if (!var4) {
                             _fun37184_ip = 201;
                             continue _fun37184
                         }
                     case 180:
-                        var16 = var17.match;
-                        var10 = _closure1_slot23;
-                        var16 = var16.bind(var17)(var10);
-                        var10 = null;
-                        var8 = var10 != var16;
+                        var10 = var17.match;
+                        var8 = _closure1_slot23;
+                        var10 = var10.bind(var17)(var8);
+                        var8 = null;
+                        var4 = var8 != var10;
                     case 201:
-                        if (var8) {
-                            _fun37184_ip = 723;
+                        if (var4) {
+                            _fun37184_ip = 731;
                             continue _fun37184
                         }
                     case 207:
-                        if (!var4) {
+                        if (!var15) {
                             _fun37184_ip = 374;
                             continue _fun37184
                         }
@@ -3727,7 +3744,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 233:
                         ResumeGenerator(result_out_reg = 4, return_bool_out_reg = 8);
                         if (var8) {
-                            _fun37184_ip = 720;
+                            _fun37184_ip = 728;
                             continue _fun37184
                         }
                     case 242:
@@ -3738,52 +3755,56 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 248: // try_start_0
                         var10 = {};
                         var8 = _closure1_slot6;
-                        var17 = var8.MediaManager;
-                        var16 = var17.getLosslessImageData;
+                        var18 = var8.MediaManager;
+                        var17 = var18.getLosslessImageData;
                         var8 = var3;
-                        var8 = var16.bind(var17)(var8);
+                        var8 = var17.bind(var18)(var8);
                         SaveGenerator(address = 280);
                     case 278:
                         return var8;
                     case 280:
-                        ResumeGenerator(result_out_reg = 8, return_bool_out_reg = 16);
-                        if (var16) {
+                        ResumeGenerator(result_out_reg = 8, return_bool_out_reg = 17);
+                        if (var17) {
                             _fun37184_ip = 331;
                             continue _fun37184
                         }
                     case 286:
                         var10.path = var8;
-                        var17 = _closure1_slot0;
-                        var18 = _closure1_slot2;
-                        var16 = 30;
-                        var16 = var18[var16];
-                        var16 = var17.bind(var7)(var16);
-                        var16 = var16.ImageEncoder;
-                        var16 = var16.PASSTHROUGH;
-                        var10.encoderUsed = var16;
+                        var18 = _closure1_slot0;
+                        var19 = _closure1_slot2;
+                        var17 = 30;
+                        var17 = var19[var17];
+                        var17 = var18.bind(var7)(var17);
+                        var17 = var17.ImageEncoder;
+                        var17 = var17.PASSTHROUGH;
+                        var10.encoderUsed = var17;
                     case 328: // try_end0
                         return var10;
                     case 331:
                         return var8;
                     case 334: // catch_target0
-                        CatchBlockStart(arg_register = 18);
-                        var16 = _closure1_slot21;
-                        var10 = var16.error;
+                        CatchBlockStart(arg_register = 19);
+                        var17 = _closure1_slot21;
+                        var10 = var17.error;
                         var8 = global;
                         var8 = var8.HermesInternal;
-                        var17 = var8.concat;
+                        var18 = var8.concat;
                         var8 = 'getLosslessImageData failed, falling through to JPEG conversion: ';
-                        var8 = var17.bind(var8)(var18);
-                        var8 = var10.bind(var16)(var8);
+                        var8 = var18.bind(var8)(var19);
+                        var8 = var10.bind(var17)(var8);
                     case 374:
                         var10 = _closure1_slot35;
-                        var8 = var3;
-                        var8 = var10.bind(var7)(var8, var9, var15);
+                        var23 = var3;
+                        var24 = undefined;
+                        var22 = var9;
+                        var21 = var16;
+                        var20 = var15;
+                        var8 = var24[var10](var23, var22, var21, var20, var19);
                         if (var8) {
-                            _fun37184_ip = 578;
+                            _fun37184_ip = 586;
                             continue _fun37184
                         }
-                    case 394:
+                    case 402:
                         var16 = var3;
                         var10 = _closure1_slot0;
                         var8 = _closure1_slot2;
@@ -3794,76 +3815,76 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var10 = !var8;
                         var8 = !var10;
                         if (var10) {
-                            _fun37184_ip = 520;
+                            _fun37184_ip = 528;
                             continue _fun37184
                         }
-                    case 433:
+                    case 441:
                         var10 = _closure1_slot33;
                         var10 = var10.bind(var7)(var16, var9);
                         var15 = null;
                         if (var10) {
-                            _fun37184_ip = 479;
+                            _fun37184_ip = 487;
                             continue _fun37184
                         }
-                    case 448:
+                    case 456:
                         var14 = var16.match;
                         var10 = /^assets-library:\\/\\ / . + & ext = gif$ / i;
                         var10 = var14.bind(var16)(var10);
                         var10 = var15 != var10;
-                        _fun37184_ip = 517;
+                        _fun37184_ip = 525;
                         continue _fun37184;
-                    case 479:
+                    case 487:
                         var16 = var15 == var9;
                         var14 = undefined;
                         if (var16) {
-                            _fun37184_ip = 513;
+                            _fun37184_ip = 521;
                             continue _fun37184
                         }
-                    case 488:
+                    case 496:
                         var17 = var9.match;
                         var16 = /\.gif$/i;
                         var14 = var17.bind(var9)(var16);
-                    case 513:
+                    case 521:
                         var10 = var15 != var14;
-                    case 517:
+                    case 525:
                         var8 = var10;
-                    case 520:
+                    case 528:
                         if (var8) {
-                            _fun37184_ip = 528;
+                            _fun37184_ip = 536;
                             continue _fun37184
                         }
-                    case 523:
+                    case 531:
                         var8 = null;
                         return var8;
-                    case 528:
+                    case 536:
                         var14 = _closure1_slot28;
                         var10 = var3;
                         var8 = 'convertToGIFFilePath';
                         var8 = var14.bind(var7)(var8, var10);
-                        SaveGenerator(address = 551);
-                    case 549:
+                        SaveGenerator(address = 559);
+                    case 557:
                         return var8;
-                    case 551:
+                    case 559:
                         ResumeGenerator(result_out_reg = 8, return_bool_out_reg = 10);
                         if (var10) {
-                            _fun37184_ip = 575;
+                            _fun37184_ip = 583;
                             continue _fun37184
                         }
-                    case 557:
+                    case 565:
                         var10 = null;
                         if (!var8) {
-                            _fun37184_ip = 572;
+                            _fun37184_ip = 580;
                             continue _fun37184
                         }
-                    case 562:
+                    case 570:
                         var14 = {};
                         var14.path = var8;
                         var10 = var14;
-                    case 572:
+                    case 580:
                         return var10;
-                    case 575:
+                    case 583:
                         return var8;
-                    case 578:
+                    case 586:
                         var8 = _closure1_slot34;
                         var10 = var3;
                         var14 = var8.bind(var7)(var10, var9);
@@ -3877,60 +3898,60 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var8.targetHeight = var6;
                         var6 = 'convertToJPEG';
                         var6 = var9.bind(var7)(var6, var10, var8);
-                        SaveGenerator(address = 646);
-                    case 644:
+                        SaveGenerator(address = 654);
+                    case 652:
                         return var6;
-                    case 646:
+                    case 654:
                         ResumeGenerator(result_out_reg = 6, return_bool_out_reg = 8);
                         if (var8) {
-                            _fun37184_ip = 717;
+                            _fun37184_ip = 725;
                             continue _fun37184
                         }
-                    case 652:
+                    case 660:
                         var8 = null;
                         var10 = var8 == var6;
                         var9 = undefined;
                         if (var10) {
-                            _fun37184_ip = 669;
+                            _fun37184_ip = 677;
                             continue _fun37184
                         }
-                    case 663:
+                    case 671:
                         var9 = var6.path;
-                    case 669:
+                    case 677:
                         var11 = var6;
                         if (!(var8 != var9)) {
-                            _fun37184_ip = 679;
+                            _fun37184_ip = 687;
                             continue _fun37184
                         }
-                    case 676:
+                    case 684:
                         var11 = var9;
-                    case 679:
+                    case 687:
                         var9 = var8 == var6;
                         var10 = undefined;
                         if (var9) {
-                            _fun37184_ip = 694;
+                            _fun37184_ip = 702;
                             continue _fun37184
                         }
-                    case 688:
+                    case 696:
                         var10 = var6.encoderUsed;
-                    case 694:
+                    case 702:
                         var8 = null;
                         if (!var11) {
-                            _fun37184_ip = 714;
+                            _fun37184_ip = 722;
                             continue _fun37184
                         }
-                    case 699:
+                    case 707:
                         var9 = {};
                         var9.path = var11;
                         var9.encoderUsed = var10;
                         var8 = var9;
-                    case 714:
+                    case 722:
                         return var8;
-                    case 717:
+                    case 725:
                         return var6;
-                    case 720:
+                    case 728:
                         return var4;
-                    case 723:
+                    case 731:
                         var8 = _closure1_slot28;
                         var10 = var3;
                         var9 = var10.replace;
@@ -3939,30 +3960,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var6 = var9.bind(var10)(var6, var4);
                         var4 = 'convertBase64ToGIF';
                         var4 = var8.bind(var7)(var4, var6);
-                        SaveGenerator(address = 765);
-                    case 763:
+                        SaveGenerator(address = 773);
+                    case 771:
                         return var4;
-                    case 765:
+                    case 773:
                         ResumeGenerator(result_out_reg = 4, return_bool_out_reg = 6);
                         if (var6) {
-                            _fun37184_ip = 789;
+                            _fun37184_ip = 797;
                             continue _fun37184
                         }
-                    case 771:
+                    case 779:
                         var6 = null;
                         if (!var4) {
-                            _fun37184_ip = 786;
+                            _fun37184_ip = 794;
                             continue _fun37184
                         }
-                    case 776:
+                    case 784:
                         var8 = {};
                         var8.path = var4;
                         var6 = var8;
-                    case 786:
+                    case 794:
                         return var6;
-                    case 789:
+                    case 797:
                         return var4;
-                    case 792:
+                    case 800:
                         var6 = _closure1_slot28;
                         var9 = var3;
                         var8 = var9.replace;
@@ -3973,22 +3994,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3.compressionQuality = var2;
                         var2 = 'convertBase64ToJPEG';
                         var2 = var6.bind(var7)(var2, var4, var3);
-                        SaveGenerator(address = 842);
-                    case 840:
+                        SaveGenerator(address = 850);
+                    case 848:
                         return var2;
-                    case 842:
+                    case 850:
                         ResumeGenerator(result_out_reg = 2, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun37184_ip = 903;
+                            _fun37184_ip = 911;
                             continue _fun37184
                         }
-                    case 848:
+                    case 856:
                         var3 = null;
                         if (!var2) {
-                            _fun37184_ip = 900;
+                            _fun37184_ip = 908;
                             continue _fun37184
                         }
-                    case 853:
+                    case 861:
                         var4 = {};
                         var4.path = var2;
                         var6 = _closure1_slot0;
@@ -4000,13 +4021,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5 = var5.NATIVE;
                         var4.encoderUsed = var5;
                         var3 = var4;
-                    case 900:
+                    case 908:
                         return var3;
-                    case 903:
+                    case 911:
                         return var2;
-                    case 906:
+                    case 914:
                         return var1;
-                    case 909:
+                    case 917:
                         return var0;
                 }
             };

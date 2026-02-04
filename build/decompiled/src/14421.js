@@ -4,41 +4,65 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var0.IntlMessageFormat;
     var2 = var3.__addLocaleData;
     var1 = {};
-    var4 = 'tr';
-    var1.locale = var4;
+    var5 = 'zh';
+    var1.locale = var5;
+    var5 = function arg0, arg1() {
+        var0 = 'other';
+        return var0;
+    };
+    var1.pluralRuleFunction = var5;
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'zh-Hans',
+        'parentLocale': 'zh'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'zh-Hans-HK',
+        'parentLocale': 'zh-Hans'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'zh-Hans-MO',
+        'parentLocale': 'zh-Hans'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'zh-Hans-SG',
+        'parentLocale': 'zh-Hans'
+    };
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {};
+    var5 = 'zh-Hant';
+    var1.locale = var5;
     var4 = function arg0, arg1() {
-        _fun112204: for (var _fun112204_ip = 0;;) switch (_fun112204_ip) {
-            case 0:
-                var1 = 'other';
-                var2 = arg1;
-                var0 = var1;
-                if (var2) {
-                    _fun112204_ip = 33;
-                    continue _fun112204
-                }
-            case 13:
-                var3 = 1;
-                var2 = arg0;
-                var2 = var3 == var2;
-                if (!var2) {
-                    _fun112204_ip = 30;
-                    continue _fun112204
-                }
-            case 26:
-                var1 = 'one';
-            case 30:
-                var0 = var1;
-            case 33:
-                return var0;
-        }
+        var0 = 'other';
+        return var0;
     };
     var1.pluralRuleFunction = var4;
+    var1 = var2.bind(var3)(var1);
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {
+        'locale': 'zh-Hant-HK',
+        'parentLocale': 'zh-Hant'
+    };
     var1 = var2.bind(var3)(var1);
     var2 = var0.IntlMessageFormat;
     var1 = var2.__addLocaleData;
     var0 = {
-        'locale': 'tr-CY',
-        'parentLocale': 'tr'
+        'locale': 'zh-Hant-MO',
+        'parentLocale': 'zh-Hant-HK'
     };
     var0 = var1.bind(var2)(var0);
     var0 = undefined;

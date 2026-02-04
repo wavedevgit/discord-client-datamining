@@ -255,7 +255,7 @@ public final class MainApplication extends TTILoggingApplication implements Reac
         I18nUtil.Companion.getInstance().allowRTL(mainApplication, false);
         TTIMetrics.record$default(tTIMetrics, "I18nUtil.allowRtl()", 0L, null, false, 14, null);
         BundleUpdater.OtaBundle bundle = BundleUpdater.Companion.instance().getBundle();
-        CrashReporting.INSTANCE.init(mainApplication, (bundle == null || (r0 = bundle.getReleaseName()) == null) ? "discord_android@316.3.0-2+316203" : "discord_android@316.3.0-2+316203");
+        CrashReporting.INSTANCE.init(mainApplication, (bundle == null || (r0 = bundle.getReleaseName()) == null) ? "discord_android@316.4.0-2+316204" : "discord_android@316.4.0-2+316204");
         TTIMetrics.record$default(tTIMetrics, "CrashReporting.init()", 0L, null, false, 14, null);
         ForegroundServiceStartGuard.INSTANCE.setLogger(new Function2() { // from class: com.discord.a
             @Override // kotlin.jvm.functions.Function2

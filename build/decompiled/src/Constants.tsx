@@ -12185,6 +12185,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var90.SCREENSHARE_FAILED = var43;
             var43 = 'perk_discoverability_card_cta_clicked';
             var90.PERK_DISCOVERABILITY_CARD_CTA_CLICKED = var43;
+            var43 = 'premium_tenure_rewards_orbs_cta_clicked';
+            var90.PREMIUM_TENURE_REWARDS_ORBS_CTA_CLICKED = var43;
             var43 = 'premium_whats_new_box_cta_clicked';
             var90.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED = var43;
             var43 = 'premium_whats_new_view_time';
@@ -12599,6 +12601,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var90.GIF_FAVORITED = var43;
             var43 = 'gif_unfavorited';
             var90.GIF_UNFAVORITED = var43;
+            var43 = 'message_sent_with_gif';
+            var90.MESSAGE_SENT_WITH_GIF = var43;
             var43 = 'guild_discovery_viewed';
             var90.GUILD_DISCOVERY_VIEWED = var43;
             var43 = 'guild_discovery_search_failed';
@@ -16711,28 +16715,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var231 = var221[var236];
             var234 = var220.bind(var0)(var231);
             for (var231 in var234)
-                case 62216: {
-                    case 62225: var238 = var231;
+                case 62240: {
+                    case 62249: var238 = var231;
                     var237 = var221[var236];
                     var237 = var220.bind(var0)(var237);
                     var237 = var237[var238];
                     var2[var238] = var237;
-                    _fun7396_ip = 62216;
+                    _fun7396_ip = 62240;
                     continue _fun7396;
                 }
-        case 62247:
+        case 62271:
             var230 = var221[var230];
             var235 = var220.bind(var0)(var230);
             var233 = var235;
             for (var230 in var233)
-                case 62267: {
-                    case 62276: var237 = var230;
+                case 62291: {
+                    case 62300: var237 = var230;
                     var236 = var235[var237];
                     var2[var237] = var236;
-                    _fun7396_ip = 62267;
+                    _fun7396_ip = 62291;
                     continue _fun7396;
                 }
-        case 62289:
+        case 62313:
             var2.Routes = var229;
             var2.ME = var228;
             var2.FAVORITES = var227;

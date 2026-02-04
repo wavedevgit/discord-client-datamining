@@ -80,56 +80,56 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = ['userSelect', 'enableContextMenu', 'touchAction'];
                 var3 = var0[Symbol.iterator];
                 var0 = var3().next;
-            case 117:
+            case 115:
                 var11 = var0().value;
                 var10 = var3;
                 if (!(var10 !== var4)) {
-                    _fun44926_ip = 208;
+                    _fun44926_ip = 206;
                     continue _fun44926
                 }
-            case 128: // try_start_1
+            case 126: // try_start_1
                 var8 = var11;
                 var10 = var6;
                 var10 = var10[var11];
                 var9 = var10;
                 if (!(var4 !== var10)) {
-                    _fun44926_ip = 199;
+                    _fun44926_ip = 197;
                     continue _fun44926
                 }
-            case 145:
+            case 143:
                 var11 = var7;
                 var10 = var11.toGestureArray;
                 var12 = var10.bind(var11)();
                 var10 = var12;
                 var11 = var10[Symbol.iterator];
                 var10 = var11().next;
-            case 164:
+            case 162:
                 var12 = var10().value;
                 var13 = var11;
                 if (!(var13 !== var4)) {
-                    _fun44926_ip = 199;
+                    _fun44926_ip = 197;
                     continue _fun44926
                 }
-            case 175: // try_start_0
+            case 173: // try_start_0
                 var15 = var12.config;
                 var13 = var8;
                 var12 = var9;
                 var15[var13] = var12;
-            case 190: // try_end0
-                _fun44926_ip = 164;
+            case 188: // try_end0
+                _fun44926_ip = 162;
                 continue _fun44926;
-            case 192: // catch_target0
+            case 190: // catch_target0
                 CatchBlockStart(arg_register = 10);
                 var11.return();
                 throw var10;
-            case 199: // try_end1
-                _fun44926_ip = 117;
+            case 197: // try_end1
+                _fun44926_ip = 115;
                 continue _fun44926;
-            case 201: // catch_target1
+            case 199: // catch_target1
                 CatchBlockStart(arg_register = 0);
                 var3.return();
                 throw var0;
-            case 208:
+            case 206:
                 var6 = _closure1_slot5;
                 var3 = new Array(1);
                 var3[0] = var14;
@@ -201,17 +201,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var7.bind(var10)(var3, var9);
                 var12 = var3.firstRender;
                 if (var12) {
-                    _fun44926_ip = 455;
+                    _fun44926_ip = 453;
                     continue _fun44926
                 }
-            case 449:
+            case 447:
                 var12 = var3.forceRebuildReanimatedEvent;
-            case 455:
+            case 453:
                 if (var12) {
-                    _fun44926_ip = 490;
+                    _fun44926_ip = 488;
                     continue _fun44926
                 }
-            case 458:
+            case 456:
                 var11 = _closure1_slot0;
                 var14 = _closure1_slot2;
                 var10 = 7;
@@ -219,7 +219,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var11 = var11.bind(var4)(var10);
                 var10 = var11.needsToReattach;
                 var12 = var10.bind(var11)(var6, var13);
-            case 490:
+            case 488:
                 var3.forceRebuildReanimatedEvent = var8;
                 var3 = _closure1_slot0;
                 var8 = _closure1_slot2;
@@ -321,19 +321,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var8[var1];
                 var1 = var2.bind(var4)(var1);
                 if (var0) {
-                    _fun44926_ip = 671;
+                    _fun44926_ip = 669;
                     continue _fun44926
                 }
-            case 642:
+            case 640:
                 var2 = var1.Wrap;
                 var0 = {};
                 var0.ref = var7;
                 var8 = var5.children;
                 var0.children = var8;
                 var0 = var3.bind(var4)(var2, var0);
-                _fun44926_ip = 709;
+                _fun44926_ip = 707;
                 continue _fun44926;
-            case 671:
+            case 669:
                 var2 = var1.AnimatedWrap;
                 var1 = {};
                 var1.ref = var7;
@@ -342,7 +342,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var5.children;
                 var1.children = var5;
                 var0 = var3.bind(var4)(var2, var1);
-            case 709:
+            case 707:
                 return var0;
         }
     };

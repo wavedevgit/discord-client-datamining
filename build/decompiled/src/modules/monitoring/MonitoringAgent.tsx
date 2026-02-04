@@ -400,8 +400,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = {};
                     var5.metrics = var6;
                     var6 = {
-                        'built_at': '1770168629605',
-                        'build_number': '5117'
+                        'built_at': '1770185915371',
+                        'build_number': '5120'
                     };
                     var5.client_info = var6;
                     var2.body = var5;

@@ -14530,7 +14530,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                         var3 = var0.data;
                                                         var3 = var3.view_id;
                                                         if (!var3) {
-                                                            _fun83865_ip = 386;
+                                                            _fun83865_ip = 384;
                                                             continue _fun83865
                                                         }
                                                     case 25:
@@ -14587,7 +14587,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                     case 143:
                                                         var3 = var4.video_source_is_live;
                                                         if (var3) {
-                                                            _fun83865_ip = 179;
+                                                            _fun83865_ip = 177;
                                                             continue _fun83865
                                                         }
                                                     case 152:
@@ -14601,22 +14601,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                             return var0;
                                                         };
                                                         var1 = var3.bind(var5)(var1);
-                                                    case 179:
+                                                    case 177:
                                                         var1 = var4.video_source_url;
                                                         if (var1) {
-                                                            _fun83865_ip = 196;
+                                                            _fun83865_ip = 194;
                                                             continue _fun83865
                                                         }
-                                                    case 188:
+                                                    case 186:
                                                         var1 = var4.player_source_url;
-                                                    case 196:
+                                                    case 194:
                                                         var4.video_source_url = var1;
                                                         var1 = var4.video_source_url;
                                                         if (!var1) {
-                                                            _fun83865_ip = 271;
+                                                            _fun83865_ip = 269;
                                                             continue _fun83865
                                                         }
-                                                    case 211:
+                                                    case 209:
                                                         var5 = _closure1_slot121;
                                                         var3 = _closure1_slot38;
                                                         var1 = var4.video_source_url;
@@ -14629,7 +14629,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                         var3 = var5[var3];
                                                         var4.video_source_domain = var3;
                                                         var4.video_source_hostname = var1;
-                                                    case 271:
+                                                    case 269:
                                                         var1 = delete var4.ad_request_id;
                                                         var3 = var0.playbackEventDispatcher;
                                                         var1 = var3.send;
@@ -14646,22 +14646,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                         var1 = var3.has;
                                                         var1 = var1.bind(var3)(var2);
                                                         if (var1) {
-                                                            _fun83865_ip = 366;
+                                                            _fun83865_ip = 364;
                                                             continue _fun83865
                                                         }
-                                                    case 354:
+                                                    case 352:
                                                         var1 = var0._restartHeartBeat;
                                                         var1 = var1.bind(var0)();
-                                                    case 366:
+                                                    case 364:
                                                         var1 = 'viewend';
                                                         if (!(var1 === var2)) {
-                                                            _fun83865_ip = 386;
+                                                            _fun83865_ip = 384;
                                                             continue _fun83865
                                                         }
-                                                    case 376:
+                                                    case 374:
                                                         var0 = var0.data;
                                                         var0 = delete var0.view_id;
-                                                    case 386:
+                                                    case 384:
                                                         var0 = undefined;
                                                         return var0;
                                                 }

@@ -64,4 +64,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.showGuildSettingsModalStickerInfoActionSheet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3278, 14736, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3278, 14733, 1307, 2]);

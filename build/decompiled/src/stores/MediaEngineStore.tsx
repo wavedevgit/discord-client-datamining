@@ -11884,7 +11884,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _closure1_slot78 = var2;
                 var1 = var1.unmute;
                 if (!var1) {
-                    _fun30458_ip = 49;
+                    _fun30458_ip = 45;
                     continue _fun30458
                 }
             case 24:
@@ -11895,7 +11895,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'deaf': false
                 };
                 var1 = var3.bind(var2)(var1);
-            case 49:
+            case 45:
                 var2 = _closure1_slot72;
                 var1 = var2.eachConnection;
                 var0 = _closure1_slot148;

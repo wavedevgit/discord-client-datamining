@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/ScreenXIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun111614: for (var _fun111614_ip = 0;;) switch (_fun111614_ip) {
+        _fun111613: for (var _fun111613_ip = 0;;) switch (_fun111613_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun111614_ip = 53;
-                    continue _fun111614
+                    _fun111613_ip = 53;
+                    continue _fun111613
                 }
             case 19:
                 var1 = _closure1_slot1;

@@ -21,4 +21,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var3.bind(var0)(var1);
     var2.AnimatedCircularProgress = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [14382, 14383]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [14379, 14380]);

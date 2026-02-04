@@ -78,22 +78,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = _closure1_slot3;
         var4 = var8.useCallback;
         var2 = function(arg0) { // Environment: var0
-            _fun113089: for (var _fun113089_ip = 0;;) switch (_fun113089_ip) {
+            _fun113075: for (var _fun113075_ip = 0;;) switch (_fun113075_ip) {
                 case 0:
                     var0 = arg0;
                     var2 = var0.rating;
                     var1 = null;
                     var0 = var1 != var2;
                     if (!var0) {
-                        _fun113089_ip = 22;
-                        continue _fun113089
+                        _fun113075_ip = 22;
+                        continue _fun113075
                     }
                 case 18:
                     var0 = var1 != var2;
                 case 22:
                     if (!var0) {
-                        _fun113089_ip = 60;
-                        continue _fun113089
+                        _fun113075_ip = 60;
+                        continue _fun113075
                     }
                 case 25:
                     var2 = _closure1_slot0;

@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/interaction_components/native/layouts/LabelLayoutComponent.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun113438: for (var _fun113438_ip = 0;;) switch (_fun113438_ip) {
+        _fun113424: for (var _fun113424_ip = 0;;) switch (_fun113424_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.label;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.ComponentType;
                 var0 = var0.CHECKBOX;
                 if (!(var1 !== var0)) {
-                    _fun113438_ip = 208;
-                    continue _fun113438
+                    _fun113424_ip = 208;
+                    continue _fun113424
                 }
             case 96:
                 var5 = _closure1_slot3;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var5.bind(var2)(var7, var6);
                 var0.children = var6;
                 var0 = var5.bind(var2)(var1, var0);
-                _fun113438_ip = 220;
-                continue _fun113438;
+                _fun113424_ip = 220;
+                continue _fun113424;
             case 208:
                 var1 = 'label-child';
                 var0 = var3.bind(var2)(var4, var1);

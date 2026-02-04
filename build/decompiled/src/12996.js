@@ -145,7 +145,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var0.Headers;
                 var2 = var8.bind(var9)(var4, var2);
                 if (var2) {
-                    _fun99774_ip = 694;
+                    _fun99774_ip = 692;
                     continue _fun99774
                 }
             case 414:
@@ -233,10 +233,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2[0] = var11;
                 var2 = var9.bind(var10)(var8, var2);
                 if (!var3) {
-                    _fun99774_ip = 692;
+                    _fun99774_ip = 690;
                     continue _fun99774
                 }
-            case 647:
+            case 645:
                 var9 = var2.push;
                 var10 = _closure1_slot0;
                 var8 = _closure1_slot1;
@@ -247,9 +247,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8[0] = var10;
                 var8[1] = var3;
                 var8 = var9.bind(var2)(var8);
-            case 692:
+            case 690:
                 return var2;
-            case 694:
+            case 692:
                 var0 = var0.Headers;
                 var2 = var0.prototype;
                 var2 = Object.create(var2, {
@@ -265,10 +265,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = 'sentry-trace';
                 var2 = var4.bind(var0)(var2, var7);
                 if (!var3) {
-                    _fun99774_ip = 777;
+                    _fun99774_ip = 775;
                     continue _fun99774
                 }
-            case 742:
+            case 740:
                 var2 = var0.append;
                 var4 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -276,7 +276,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var4.bind(var5)(var1);
                 var1 = var1.BAGGAGE_HEADER_NAME;
                 var1 = var2.bind(var0)(var1, var3);
-            case 777:
+            case 775:
                 return var0;
         }
     };

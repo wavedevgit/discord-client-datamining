@@ -48,8 +48,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot10 = var4;
     var4 = var3.MAX_MESSAGE_LENGTH;
     var _closure1_slot11 = var4;
-    var3 = var3.ME;
-    var _closure1_slot12 = var3;
+    var4 = var3.ME;
+    var _closure1_slot12 = var4;
+    var18 = var3.DISPLAY_NAME_MAX_LENGTH;
     var3 = 6;
     var3 = var8[var3];
     var3 = var7.bind(var0)(var3);
@@ -224,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         set: var0,
         enumerable: true
     });
-    var20 = {
+    var21 = {
         'name': 'message',
         'displayName': 'message'
     };
@@ -232,8 +233,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var16 = var7.bind(var0)(var16);
     var16 = var16.ApplicationCommandOptionType;
     var16 = var16.STRING;
-    var20.type = var16;
-    var18 = function() {
+    var21.type = var16;
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -250,12 +251,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var16 = 'description';
-    Object.defineProperty(var20, var16, {
-        get: var18,
+    Object.defineProperty(var21, var16, {
+        get: var20,
         set: var0,
         enumerable: true
     });
-    var18 = function() {
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -271,15 +272,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var1.bind(var2)(var0);
         return var0;
     };
-    Object.defineProperty(var20, var15, {
-        get: var18,
+    Object.defineProperty(var21, var15, {
+        get: var20,
         set: var0,
         enumerable: true
     });
-    var18 = new Array(1);
-    var18[0] = var20;
-    var9.options = var18;
-    var18 = function arg0() {
+    var20 = new Array(1);
+    var20[0] = var21;
+    var9.options = var20;
+    var20 = function arg0() {
         _fun61326: for (var _fun61326_ip = 0;;) switch (_fun61326_ip) {
             case 0:
                 var0 = {};
@@ -310,7 +311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var9.execute = var18;
+    var9.execute = var20;
     var4[var3] = var9;
     var3 = var3 + var10;
     var9 = {
@@ -318,19 +319,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'untranslatedName': 'tableflip',
         'displayName': 'tableflip'
     };
-    var18 = var8[var14];
-    var18 = var7.bind(var0)(var18);
-    var18 = var18.ApplicationCommandType;
-    var18 = var18.CHAT;
-    var9.type = var18;
-    var18 = var8[var17];
-    var18 = var7.bind(var0)(var18);
-    var18 = var18.ApplicationCommandInputType;
-    var18 = var18.BUILT_IN_TEXT;
-    var9.inputType = var18;
-    var18 = var11.BUILT_IN;
-    var9.applicationId = var18;
-    var18 = function() {
+    var20 = var8[var14];
+    var20 = var7.bind(var0)(var20);
+    var20 = var20.ApplicationCommandType;
+    var20 = var20.CHAT;
+    var9.type = var20;
+    var20 = var8[var17];
+    var20 = var7.bind(var0)(var20);
+    var20 = var20.ApplicationCommandInputType;
+    var20 = var20.BUILT_IN_TEXT;
+    var9.inputType = var20;
+    var20 = var11.BUILT_IN;
+    var9.applicationId = var20;
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -347,11 +348,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     Object.defineProperty(var9, var12, {
-        get: var18,
+        get: var20,
         set: var0,
         enumerable: true
     });
-    var18 = function() {
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -368,20 +369,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     Object.defineProperty(var9, var15, {
-        get: var18,
+        get: var20,
         set: var0,
         enumerable: true
     });
-    var20 = {
+    var21 = {
         'name': 'message',
         'displayName': 'message'
     };
-    var18 = var8[var14];
-    var18 = var7.bind(var0)(var18);
-    var18 = var18.ApplicationCommandOptionType;
-    var18 = var18.STRING;
-    var20.type = var18;
-    var18 = function() {
+    var20 = var8[var14];
+    var20 = var7.bind(var0)(var20);
+    var20 = var20.ApplicationCommandOptionType;
+    var20 = var20.STRING;
+    var21.type = var20;
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -397,12 +398,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var1.bind(var2)(var0);
         return var0;
     };
-    Object.defineProperty(var20, var16, {
-        get: var18,
+    Object.defineProperty(var21, var16, {
+        get: var20,
         set: var0,
         enumerable: true
     });
-    var18 = function() {
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -418,15 +419,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var1.bind(var2)(var0);
         return var0;
     };
-    Object.defineProperty(var20, var15, {
-        get: var18,
+    Object.defineProperty(var21, var15, {
+        get: var20,
         set: var0,
         enumerable: true
     });
-    var18 = new Array(1);
-    var18[0] = var20;
-    var9.options = var18;
-    var18 = function arg0() {
+    var20 = new Array(1);
+    var20[0] = var21;
+    var9.options = var20;
+    var20 = function arg0() {
         _fun61331: for (var _fun61331_ip = 0;;) switch (_fun61331_ip) {
             case 0:
                 var0 = {};
@@ -457,7 +458,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var9.execute = var18;
+    var9.execute = var20;
     var4[var3] = var9;
     var3 = var3 + var10;
     var9 = {
@@ -465,19 +466,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'untranslatedName': 'unflip',
         'displayName': 'unflip'
     };
-    var18 = var8[var14];
-    var18 = var7.bind(var0)(var18);
-    var18 = var18.ApplicationCommandType;
-    var18 = var18.CHAT;
-    var9.type = var18;
-    var18 = var8[var17];
-    var18 = var7.bind(var0)(var18);
-    var18 = var18.ApplicationCommandInputType;
-    var18 = var18.BUILT_IN_TEXT;
-    var9.inputType = var18;
-    var18 = var11.BUILT_IN;
-    var9.applicationId = var18;
-    var18 = function() {
+    var20 = var8[var14];
+    var20 = var7.bind(var0)(var20);
+    var20 = var20.ApplicationCommandType;
+    var20 = var20.CHAT;
+    var9.type = var20;
+    var20 = var8[var17];
+    var20 = var7.bind(var0)(var20);
+    var20 = var20.ApplicationCommandInputType;
+    var20 = var20.BUILT_IN_TEXT;
+    var9.inputType = var20;
+    var20 = var11.BUILT_IN;
+    var9.applicationId = var20;
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -494,11 +495,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     Object.defineProperty(var9, var12, {
-        get: var18,
+        get: var20,
         set: var0,
         enumerable: true
     });
-    var18 = function() {
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -515,20 +516,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     Object.defineProperty(var9, var15, {
-        get: var18,
+        get: var20,
         set: var0,
         enumerable: true
     });
-    var20 = {
+    var21 = {
         'name': 'message',
         'displayName': 'message'
     };
-    var18 = var8[var14];
-    var18 = var7.bind(var0)(var18);
-    var18 = var18.ApplicationCommandOptionType;
-    var18 = var18.STRING;
-    var20.type = var18;
-    var18 = function() {
+    var20 = var8[var14];
+    var20 = var7.bind(var0)(var20);
+    var20 = var20.ApplicationCommandOptionType;
+    var20 = var20.STRING;
+    var21.type = var20;
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -544,12 +545,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var1.bind(var2)(var0);
         return var0;
     };
-    Object.defineProperty(var20, var16, {
-        get: var18,
+    Object.defineProperty(var21, var16, {
+        get: var20,
         set: var0,
         enumerable: true
     });
-    var18 = function() {
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -565,15 +566,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var1.bind(var2)(var0);
         return var0;
     };
-    Object.defineProperty(var20, var15, {
-        get: var18,
+    Object.defineProperty(var21, var15, {
+        get: var20,
         set: var0,
         enumerable: true
     });
-    var18 = new Array(1);
-    var18[0] = var20;
-    var9.options = var18;
-    var18 = function arg0() {
+    var20 = new Array(1);
+    var20[0] = var21;
+    var9.options = var20;
+    var20 = function arg0() {
         _fun61336: for (var _fun61336_ip = 0;;) switch (_fun61336_ip) {
             case 0:
                 var0 = {};
@@ -604,7 +605,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var9.execute = var18;
+    var9.execute = var20;
     var4[var3] = var9;
     var3 = var3 + var10;
     var9 = {
@@ -612,19 +613,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'untranslatedName': 'tts',
         'displayName': 'tts'
     };
-    var18 = var8[var14];
-    var18 = var7.bind(var0)(var18);
-    var18 = var18.ApplicationCommandType;
-    var18 = var18.CHAT;
-    var9.type = var18;
-    var18 = var8[var17];
-    var18 = var7.bind(var0)(var18);
-    var18 = var18.ApplicationCommandInputType;
-    var18 = var18.BUILT_IN_TEXT;
-    var9.inputType = var18;
-    var18 = var11.BUILT_IN;
-    var9.applicationId = var18;
-    var18 = function() {
+    var20 = var8[var14];
+    var20 = var7.bind(var0)(var20);
+    var20 = var20.ApplicationCommandType;
+    var20 = var20.CHAT;
+    var9.type = var20;
+    var20 = var8[var17];
+    var20 = var7.bind(var0)(var20);
+    var20 = var20.ApplicationCommandInputType;
+    var20 = var20.BUILT_IN_TEXT;
+    var9.inputType = var20;
+    var20 = var11.BUILT_IN;
+    var9.applicationId = var20;
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -641,11 +642,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     Object.defineProperty(var9, var12, {
-        get: var18,
+        get: var20,
         set: var0,
         enumerable: true
     });
-    var18 = function() {
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -662,20 +663,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     Object.defineProperty(var9, var15, {
-        get: var18,
+        get: var20,
         set: var0,
         enumerable: true
     });
-    var20 = {
+    var21 = {
         'name': 'message',
         'displayName': 'message'
     };
-    var18 = var8[var14];
-    var18 = var7.bind(var0)(var18);
-    var18 = var18.ApplicationCommandOptionType;
-    var18 = var18.STRING;
-    var20.type = var18;
-    var18 = function() {
+    var20 = var8[var14];
+    var20 = var7.bind(var0)(var20);
+    var20 = var20.ApplicationCommandOptionType;
+    var20 = var20.STRING;
+    var21.type = var20;
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -691,12 +692,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var1.bind(var2)(var0);
         return var0;
     };
-    Object.defineProperty(var20, var16, {
-        get: var18,
+    Object.defineProperty(var21, var16, {
+        get: var20,
         set: var0,
         enumerable: true
     });
-    var18 = function() {
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -712,16 +713,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var1.bind(var2)(var0);
         return var0;
     };
-    Object.defineProperty(var20, var15, {
-        get: var18,
+    Object.defineProperty(var21, var15, {
+        get: var20,
         set: var0,
         enumerable: true
     });
-    var20.required = var13;
-    var18 = new Array(1);
-    var18[0] = var20;
-    var9.options = var18;
-    var18 = function arg0() {
+    var21.required = var13;
+    var20 = new Array(1);
+    var20[0] = var21;
+    var9.options = var20;
+    var20 = function arg0() {
         _fun61341: for (var _fun61341_ip = 0;;) switch (_fun61341_ip) {
             case 0:
                 var0 = arg0;
@@ -766,8 +767,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var9.predicate = var18;
-    var18 = function arg0() {
+    var9.predicate = var20;
+    var20 = function arg0() {
         _fun61342: for (var _fun61342_ip = 0;;) switch (_fun61342_ip) {
             case 0:
                 var0 = {};
@@ -792,7 +793,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var9.execute = var18;
+    var9.execute = var20;
     var4[var3] = var9;
     var3 = var3 + var10;
     var9 = {
@@ -800,19 +801,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'untranslatedName': 'me',
         'displayName': 'me'
     };
-    var18 = var8[var14];
-    var18 = var7.bind(var0)(var18);
-    var18 = var18.ApplicationCommandType;
-    var18 = var18.CHAT;
-    var9.type = var18;
-    var18 = var8[var17];
-    var18 = var7.bind(var0)(var18);
-    var18 = var18.ApplicationCommandInputType;
-    var18 = var18.BUILT_IN_TEXT;
-    var9.inputType = var18;
-    var18 = var11.BUILT_IN;
-    var9.applicationId = var18;
-    var18 = function() {
+    var20 = var8[var14];
+    var20 = var7.bind(var0)(var20);
+    var20 = var20.ApplicationCommandType;
+    var20 = var20.CHAT;
+    var9.type = var20;
+    var20 = var8[var17];
+    var20 = var7.bind(var0)(var20);
+    var20 = var20.ApplicationCommandInputType;
+    var20 = var20.BUILT_IN_TEXT;
+    var9.inputType = var20;
+    var20 = var11.BUILT_IN;
+    var9.applicationId = var20;
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -829,11 +830,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     Object.defineProperty(var9, var12, {
-        get: var18,
+        get: var20,
         set: var0,
         enumerable: true
     });
-    var18 = function() {
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -850,20 +851,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     Object.defineProperty(var9, var15, {
-        get: var18,
+        get: var20,
         set: var0,
         enumerable: true
     });
-    var20 = {
+    var21 = {
         'name': 'message',
         'displayName': 'message'
     };
-    var18 = var8[var14];
-    var18 = var7.bind(var0)(var18);
-    var18 = var18.ApplicationCommandOptionType;
-    var18 = var18.STRING;
-    var20.type = var18;
-    var18 = function() {
+    var20 = var8[var14];
+    var20 = var7.bind(var0)(var20);
+    var20 = var20.ApplicationCommandOptionType;
+    var20 = var20.STRING;
+    var21.type = var20;
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -879,12 +880,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var1.bind(var2)(var0);
         return var0;
     };
-    Object.defineProperty(var20, var16, {
-        get: var18,
+    Object.defineProperty(var21, var16, {
+        get: var20,
         set: var0,
         enumerable: true
     });
-    var18 = function() {
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -900,16 +901,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var1.bind(var2)(var0);
         return var0;
     };
-    Object.defineProperty(var20, var15, {
-        get: var18,
+    Object.defineProperty(var21, var15, {
+        get: var20,
         set: var0,
         enumerable: true
     });
-    var20.required = var13;
-    var18 = new Array(1);
-    var18[0] = var20;
-    var9.options = var18;
-    var18 = function arg0() {
+    var21.required = var13;
+    var20 = new Array(1);
+    var20[0] = var21;
+    var9.options = var20;
+    var20 = function arg0() {
         _fun61347: for (var _fun61347_ip = 0;;) switch (_fun61347_ip) {
             case 0:
                 var0 = {};
@@ -937,7 +938,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var9.execute = var18;
+    var9.execute = var20;
     var4[var3] = var9;
     var3 = var3 + var10;
     var9 = {
@@ -945,19 +946,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'untranslatedName': 'spoiler',
         'displayName': 'spoiler'
     };
-    var18 = var8[var14];
-    var18 = var7.bind(var0)(var18);
-    var18 = var18.ApplicationCommandType;
-    var18 = var18.CHAT;
-    var9.type = var18;
-    var18 = var8[var17];
-    var18 = var7.bind(var0)(var18);
-    var18 = var18.ApplicationCommandInputType;
-    var18 = var18.BUILT_IN_TEXT;
-    var9.inputType = var18;
-    var18 = var11.BUILT_IN;
-    var9.applicationId = var18;
-    var18 = function() {
+    var20 = var8[var14];
+    var20 = var7.bind(var0)(var20);
+    var20 = var20.ApplicationCommandType;
+    var20 = var20.CHAT;
+    var9.type = var20;
+    var20 = var8[var17];
+    var20 = var7.bind(var0)(var20);
+    var20 = var20.ApplicationCommandInputType;
+    var20 = var20.BUILT_IN_TEXT;
+    var9.inputType = var20;
+    var20 = var11.BUILT_IN;
+    var9.applicationId = var20;
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -974,11 +975,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     Object.defineProperty(var9, var12, {
-        get: var18,
+        get: var20,
         set: var0,
         enumerable: true
     });
-    var18 = function() {
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -995,20 +996,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     Object.defineProperty(var9, var15, {
-        get: var18,
+        get: var20,
         set: var0,
         enumerable: true
     });
-    var20 = {
+    var21 = {
         'name': 'message',
         'displayName': 'message'
     };
-    var18 = var8[var14];
-    var18 = var7.bind(var0)(var18);
-    var18 = var18.ApplicationCommandOptionType;
-    var18 = var18.STRING;
-    var20.type = var18;
-    var18 = function() {
+    var20 = var8[var14];
+    var20 = var7.bind(var0)(var20);
+    var20 = var20.ApplicationCommandOptionType;
+    var20 = var20.STRING;
+    var21.type = var20;
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -1024,12 +1025,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var1.bind(var2)(var0);
         return var0;
     };
-    Object.defineProperty(var20, var16, {
-        get: var18,
+    Object.defineProperty(var21, var16, {
+        get: var20,
         set: var0,
         enumerable: true
     });
-    var18 = function() {
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -1045,16 +1046,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var1.bind(var2)(var0);
         return var0;
     };
-    Object.defineProperty(var20, var15, {
-        get: var18,
+    Object.defineProperty(var21, var15, {
+        get: var20,
         set: var0,
         enumerable: true
     });
-    var20.required = var13;
-    var18 = new Array(1);
-    var18[0] = var20;
-    var9.options = var18;
-    var18 = function arg0() {
+    var21.required = var13;
+    var20 = new Array(1);
+    var20[0] = var21;
+    var9.options = var20;
+    var20 = function arg0() {
         _fun61352: for (var _fun61352_ip = 0;;) switch (_fun61352_ip) {
             case 0:
                 var4 = _closure1_slot15;
@@ -1081,7 +1082,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var9.execute = var18;
+    var9.execute = var20;
     var4[var3] = var9;
     var3 = var3 + var10;
     var9 = {
@@ -1089,19 +1090,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'untranslatedName': 'nick',
         'displayName': 'nick'
     };
-    var18 = var8[var14];
-    var18 = var7.bind(var0)(var18);
-    var18 = var18.ApplicationCommandType;
-    var18 = var18.CHAT;
-    var9.type = var18;
-    var18 = var8[var17];
-    var18 = var7.bind(var0)(var18);
-    var18 = var18.ApplicationCommandInputType;
-    var18 = var18.BUILT_IN;
-    var9.inputType = var18;
-    var18 = var11.BUILT_IN;
-    var9.applicationId = var18;
-    var18 = function() {
+    var20 = var8[var14];
+    var20 = var7.bind(var0)(var20);
+    var20 = var20.ApplicationCommandType;
+    var20 = var20.CHAT;
+    var9.type = var20;
+    var20 = var8[var17];
+    var20 = var7.bind(var0)(var20);
+    var20 = var20.ApplicationCommandInputType;
+    var20 = var20.BUILT_IN;
+    var9.inputType = var20;
+    var20 = var11.BUILT_IN;
+    var9.applicationId = var20;
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -1118,11 +1119,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     Object.defineProperty(var9, var12, {
-        get: var18,
+        get: var20,
         set: var0,
         enumerable: true
     });
-    var18 = function() {
+    var20 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -1139,7 +1140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     Object.defineProperty(var9, var15, {
-        get: var18,
+        get: var20,
         set: var0,
         enumerable: true
     });
@@ -1147,12 +1148,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'name': 'new_nick',
         'displayName': 'new_nick'
     };
-    var18 = var8[var14];
-    var18 = var7.bind(var0)(var18);
-    var18 = var18.ApplicationCommandOptionType;
-    var18 = var18.STRING;
-    var20.type = var18;
-    var18 = function() {
+    var21 = var8[var14];
+    var21 = var7.bind(var0)(var21);
+    var21 = var21.ApplicationCommandOptionType;
+    var21 = var21.STRING;
+    var20.type = var21;
+    var21 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -1169,11 +1170,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     Object.defineProperty(var20, var16, {
-        get: var18,
+        get: var21,
         set: var0,
         enumerable: true
     });
-    var18 = function() {
+    var21 = function() {
         var4 = _closure1_slot0;
         var5 = _closure1_slot2;
         var0 = 9;
@@ -1190,10 +1191,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     Object.defineProperty(var20, var15, {
-        get: var18,
+        get: var21,
         set: var0,
         enumerable: true
     });
+    var20.maxLength = var18;
     var18 = new Array(1);
     var18[0] = var20;
     var9.options = var18;

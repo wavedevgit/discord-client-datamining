@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = function() {
             _fun83518: for (var _fun83518_ip = 0;;) switch (_fun83518_ip) {
                 case 0:
-                    var0 = '5117';
+                    var0 = '5120';
                     return var0;
                 case 8:
                     CatchBlockStart(arg_register = 0);

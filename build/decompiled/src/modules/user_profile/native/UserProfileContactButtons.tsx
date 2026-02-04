@@ -112,24 +112,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = copyDataProperties(var13, var12, var11);
                 var1 = false;
                 if (!(var1 !== var2)) {
-                    _fun92069_ip = 69;
-                    continue _fun92069
-                }
-            case 62:
-                var5 = 'secondary';
-                if (!var0) {
                     _fun92069_ip = 73;
                     continue _fun92069
                 }
-            case 69:
-                var5 = 'primary';
-            case 73:
-                var0 = 'primary';
-                if (!(var0 !== var5)) {
-                    _fun92069_ip = 119;
+            case 66:
+                var5 = 'secondary';
+                if (!var0) {
+                    _fun92069_ip = 77;
                     continue _fun92069
                 }
-            case 81:
+            case 73:
+                var5 = 'primary';
+            case 77:
+                var0 = 'primary';
+                if (!(var0 !== var5)) {
+                    _fun92069_ip = 123;
+                    continue _fun92069
+                }
+            case 85:
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 7;
@@ -138,9 +138,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var0)(var1);
                 var0 = var0.colors;
                 var10 = var0.CONTROL_SECONDARY_TEXT_DEFAULT;
-                _fun92069_ip = 155;
+                _fun92069_ip = 159;
                 continue _fun92069;
-            case 119:
+            case 123:
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
                 var0 = 7;
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var0)(var1);
                 var0 = var0.colors;
                 var10 = var0.WHITE;
-            case 155:
+            case 159:
                 var3 = _closure1_slot6;
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot2;

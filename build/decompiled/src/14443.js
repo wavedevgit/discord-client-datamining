@@ -96,7 +96,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var5)(var3);
     var _closure1_slot9 = var3;
     var1 = function arg0() {
-        _fun112379: for (var _fun112379_ip = 0;;) switch (_fun112379_ip) {
+        _fun112365: for (var _fun112365_ip = 0;;) switch (_fun112365_ip) {
             case 0:
                 var1 = arg0;
                 var6 = var1.onMessage;
@@ -117,8 +117,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot4 = var11;
                 var15 = var8;
                 if (var15) {
-                    _fun112379_ip = 102;
-                    continue _fun112379
+                    _fun112365_ip = 102;
+                    continue _fun112365
                 }
             case 96:
                 var15 = 'missing-sitekey';
@@ -133,8 +133,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var1 + var2;
                 var14 = var2;
                 if (!var5) {
-                    _fun112379_ip = 163;
-                    continue _fun112379
+                    _fun112365_ip = 163;
+                    continue _fun112365
                 }
             case 149:
                 var1 = '&hl=';
@@ -145,8 +145,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = 'object';
                 var1 = var14;
                 if (!(var2 === var5)) {
-                    _fun112379_ip = 187;
-                    continue _fun112379
+                    _fun112365_ip = 187;
+                    continue _fun112365
                 }
             case 177:
                 var2 = '&custom=true';
@@ -155,8 +155,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot5 = var1;
                 var2 = var13;
                 if (!var13) {
-                    _fun112379_ip = 205;
-                    continue _fun112379
+                    _fun112365_ip = 205;
+                    continue _fun112365
                 }
             case 197:
                 var1 = 'string';
@@ -164,8 +164,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 205:
                 var1 = var13;
                 if (!var2) {
-                    _fun112379_ip = 239;
-                    continue _fun112379
+                    _fun112365_ip = 239;
+                    continue _fun112365
                 }
             case 211:
                 var2 = var7.HermesInternal;
@@ -177,8 +177,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 239:
                 var2 = var11;
                 if (!var2) {
-                    _fun112379_ip = 256;
-                    continue _fun112379
+                    _fun112365_ip = 256;
+                    continue _fun112365
                 }
             case 245:
                 var13 = 'string';
@@ -186,8 +186,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var13 === var5;
             case 256:
                 if (!var2) {
-                    _fun112379_ip = 284;
-                    continue _fun112379
+                    _fun112365_ip = 284;
+                    continue _fun112365
                 }
             case 259:
                 var2 = var7.HermesInternal;
@@ -203,13 +203,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2[2] = var1;
                 var3 = undefined;
                 var1 = function() { // Environment: var12
-                    _fun112380: for (var _fun112380_ip = 0;;) switch (_fun112380_ip) {
+                    _fun112366: for (var _fun112366_ip = 0;;) switch (_fun112366_ip) {
                         case 0:
                             var11 = _closure2_slot5;
                             var10 = _closure2_slot0;
                             if (var10) {
-                                _fun112380_ip = 18;
-                                continue _fun112380
+                                _fun112366_ip = 18;
+                                continue _fun112366
                             }
                         case 14:
                             var10 = '';
@@ -268,7 +268,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var13 = ['*'];
                 var0.originWhitelist = var13;
                 var12 = function arg0() {
-                    _fun112382: for (var _fun112382_ip = 0;;) switch (_fun112382_ip) {
+                    _fun112368: for (var _fun112368_ip = 0;;) switch (_fun112368_ip) {
                         case 0:
                             var1 = arg0;
                             var4 = var1.url;
@@ -279,8 +279,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var0 = 'https://www.hcaptcha.com';
                             var0 = var0 !== var2;
                             if (var0) {
-                                _fun112382_ip = 62;
-                                continue _fun112382
+                                _fun112368_ip = 62;
+                                continue _fun112368
                             }
                         case 37:
                             var3 = _closure1_slot4;

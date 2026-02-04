@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = arg1;
                         var0 = var2.bind(var7)(var4, var0);
                         if (!var0) {
-                            _fun96375_ip = 222;
+                            _fun96375_ip = 226;
                             continue _fun96375
                         }
                     case 27:
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = var5.bind(var6)(var4);
                         var1.shouldRestrictUpdatingRoleSubscriptionSettings = var4;
                         var0 = var2.bind(var3)(var1);
-                    case 222:
+                    case 226:
                         return var0;
                 }
             };

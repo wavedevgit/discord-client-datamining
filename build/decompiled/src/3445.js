@@ -3867,75 +3867,75 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1 = 'object';
             var0 = typeof var3;
             if (!(var1 === var0)) {
-                _fun29454_ip = 35;
+                _fun29454_ip = 32;
                 continue _fun29454
             }
         case 23:
             var1 = undefined;
             var0 = arg4;
             if (!(var1 === var0)) {
-                _fun29454_ip = 157;
+                _fun29454_ip = 152;
                 continue _fun29454
             }
-        case 35:
+        case 32:
             var0 = global;
             var5 = var0.define;
             var6 = 'function';
             var5 = typeof var5;
             if (!(var6 === var5)) {
-                _fun29454_ip = 69;
+                _fun29454_ip = 66;
                 continue _fun29454
             }
-        case 54:
+        case 51:
             var5 = var0.define;
             var5 = var5.amd;
             if (var5) {
-                _fun29454_ip = 131;
+                _fun29454_ip = 128;
                 continue _fun29454
             }
-        case 69:
+        case 66:
             var5 = var0.globalThis;
             var6 = 'undefined';
             var5 = typeof var5;
             if (!(var6 === var5)) {
-                _fun29454_ip = 97;
+                _fun29454_ip = 94;
+                continue _fun29454
+            }
+        case 83:
+            if (var4) {
+                _fun29454_ip = 92;
                 continue _fun29454
             }
         case 86:
-            if (var4) {
-                _fun29454_ip = 95;
-                continue _fun29454
-            }
-        case 89:
             var4 = var0.self;
-        case 95:
-            _fun29454_ip = 103;
+        case 92:
+            _fun29454_ip = 100;
             continue _fun29454;
-        case 97:
+        case 94:
             var4 = var0.globalThis;
-        case 103:
+        case 100:
             var6 = {};
             var4.ReactStripe = var6;
             var5 = var4.React;
             var4 = undefined;
             var4 = var2.bind(var4)(var6, var5);
-            _fun29454_ip = 180;
+            _fun29454_ip = 175;
             continue _fun29454;
-        case 131:
+        case 128:
             var5 = var0.define;
             var4 = undefined;
             var0 = ['exports', 'react'];
             var0 = var5.bind(var4)(var0, var2);
-            _fun29454_ip = 180;
+            _fun29454_ip = 175;
             continue _fun29454;
-        case 157:
+        case 152:
             var4 = arg6;
             var0 = 0;
             var4 = var4[var0];
             var0 = arg1;
             var0 = var0.bind(var1)(var4);
             var0 = var2.bind(var1)(var3, var0);
-        case 180:
+        case 175:
             var0 = undefined;
             return var0;
     }

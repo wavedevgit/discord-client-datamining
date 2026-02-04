@@ -655,7 +655,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = _closure2_slot2;
                             var0 = null;
                             if (var1) {
-                                _fun104308_ip = 843;
+                                _fun104308_ip = 859;
                                 continue _fun104308
                             }
                         case 15:
@@ -663,7 +663,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var1.kind;
                             var1 = 'ownStatus';
                             if (!(var1 !== var2)) {
-                                _fun104308_ip = 441;
+                                _fun104308_ip = 449;
                                 continue _fun104308
                             }
                         case 37:
@@ -764,9 +764,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5[1] = var6;
                             var2.children = var5;
                             var1 = var4.bind(var1)(var3, var2);
-                            _fun104308_ip = 840;
+                            _fun104308_ip = 856;
                             continue _fun104308;
-                        case 441:
+                        case 449:
                             var5 = _closure1_slot9;
                             var4 = _closure1_slot10;
                             var3 = {};
@@ -864,9 +864,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6[1] = var7;
                             var3.children = var6;
                             var1 = var5.bind(var2)(var4, var3);
-                        case 840:
+                        case 856:
                             var0 = var1;
-                        case 843:
+                        case 859:
                             return var0;
                     }
                 };

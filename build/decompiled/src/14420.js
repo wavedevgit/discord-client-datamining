@@ -4,11 +4,32 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var0.IntlMessageFormat;
     var1 = var2.__addLocaleData;
     var0 = {};
-    var3 = 'th';
+    var3 = 'vi';
     var0.locale = var3;
     var3 = function arg0, arg1() {
-        var0 = 'other';
-        return var0;
+        _fun112194: for (var _fun112194_ip = 0;;) switch (_fun112194_ip) {
+            case 0:
+                var2 = 'other';
+                var1 = arg1;
+                var0 = var2;
+                if (!var1) {
+                    _fun112194_ip = 33;
+                    continue _fun112194
+                }
+            case 13:
+                var3 = 1;
+                var1 = arg0;
+                var1 = var3 == var1;
+                var0 = var2;
+                if (!var1) {
+                    _fun112194_ip = 33;
+                    continue _fun112194
+                }
+            case 29:
+                var0 = 'one';
+            case 33:
+                return var0;
+        }
     };
     var0.pluralRuleFunction = var3;
     var0 = var1.bind(var2)(var0);

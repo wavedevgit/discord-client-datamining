@@ -239,17 +239,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4 != var7;
                 var2 = null;
                 if (!var0) {
-                    _fun90056_ip = 101;
+                    _fun90056_ip = 97;
                     continue _fun90056
                 }
-            case 64:
+            case 60:
                 var0 = var4 != var3;
                 var2 = null;
                 if (!var0) {
-                    _fun90056_ip = 101;
+                    _fun90056_ip = 97;
                     continue _fun90056
                 }
-            case 73:
+            case 69:
                 var0 = {};
                 var6 = _closure1_slot4;
                 var4 = undefined;
@@ -257,7 +257,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.backgroundColor = var4;
                 var0.cornerRadius = var3;
                 var2 = var0;
-            case 101:
+            case 97:
                 var0 = {};
                 var4 = _closure1_slot4;
                 var3 = undefined;

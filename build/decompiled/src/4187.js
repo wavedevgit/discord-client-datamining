@@ -821,12 +821,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = arg0;
                 var0 = var1[var0];
                 if (var0) {
-                    _fun38205_ip = 28;
+                    _fun38205_ip = 24;
                     continue _fun38205
                 }
-            case 24:
+            case 20:
                 var0 = 'Unknown';
-            case 28:
+            case 24:
                 return var0;
         }
     };
@@ -845,12 +845,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = arg0;
                 var0 = var1[var0];
                 if (var0) {
-                    _fun38206_ip = 28;
+                    _fun38206_ip = 24;
                     continue _fun38206
                 }
-            case 24:
+            case 20:
                 var0 = 'Unknown';
-            case 28:
+            case 24:
                 return var0;
         }
     };
