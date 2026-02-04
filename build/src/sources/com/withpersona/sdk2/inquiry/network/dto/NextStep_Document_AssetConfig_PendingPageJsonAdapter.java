@@ -68,7 +68,7 @@ public final class NextStep_Document_AssetConfig_PendingPageJsonAdapter extends 
         }
         Constructor<NextStep.Document.AssetConfig.PendingPage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.Document.AssetConfig.PendingPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, Integer.TYPE, vm.c.f51691c);
+            constructor = NextStep.Document.AssetConfig.PendingPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, Integer.TYPE, vm.c.f51688c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

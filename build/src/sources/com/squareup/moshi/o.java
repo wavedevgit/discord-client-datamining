@@ -218,45 +218,14 @@ public final class o extends m {
                 }
                 J0();
             }
-        } else if (i11 != 3 && i11 != 5) {
-            if (i11 == 4) {
-                iArr[i10 - 1] = 5;
-                int Z02 = Z0(true);
-                this.f17547s.readByte();
-                if (Z02 != 58) {
-                    if (Z02 == 61) {
-                        J0();
-                        if (this.f17546r.B0(1L) && this.f17547s.D0(0L) == 62) {
-                            this.f17547s.readByte();
-                        }
-                    } else {
-                        throw F0("Expected ':'");
-                    }
-                }
-            } else if (i11 == 6) {
-                iArr[i10 - 1] = 7;
-            } else if (i11 == 7) {
-                if (Z0(false) == -1) {
-                    this.f17548t = 18;
-                    return 18;
-                }
-                J0();
-            } else if (i11 == 9) {
-                this.f17552x.h();
-                this.f17552x = null;
-                this.f17524d--;
-                return M0();
-            } else if (i11 == 8) {
-                throw new IllegalStateException("JsonReader is closed");
-            }
-        } else {
+        } else if (i11 == 3 || i11 == 5) {
             iArr[i10 - 1] = 4;
             if (i11 == 5) {
-                int Z03 = Z0(true);
+                int Z02 = Z0(true);
                 this.f17547s.readByte();
-                if (Z03 != 44) {
-                    if (Z03 != 59) {
-                        if (Z03 == 125) {
+                if (Z02 != 44) {
+                    if (Z02 != 59) {
+                        if (Z02 == 125) {
                             this.f17548t = 2;
                             return 2;
                         }
@@ -265,84 +234,109 @@ public final class o extends m {
                     J0();
                 }
             }
-            int Z04 = Z0(true);
-            if (Z04 != 34) {
-                if (Z04 != 39) {
-                    if (Z04 != 125) {
-                        J0();
-                        if (Y0((char) Z04)) {
-                            this.f17548t = 14;
-                            return 14;
-                        }
-                        throw F0("Expected name");
-                    } else if (i11 != 5) {
-                        this.f17547s.readByte();
-                        this.f17548t = 2;
-                        return 2;
-                    } else {
-                        throw F0("Expected name");
-                    }
-                }
+            int Z03 = Z0(true);
+            if (Z03 == 34) {
+                this.f17547s.readByte();
+                this.f17548t = 13;
+                return 13;
+            } else if (Z03 == 39) {
                 this.f17547s.readByte();
                 J0();
                 this.f17548t = 12;
                 return 12;
+            } else if (Z03 != 125) {
+                J0();
+                if (Y0((char) Z03)) {
+                    this.f17548t = 14;
+                    return 14;
+                }
+                throw F0("Expected name");
+            } else if (i11 != 5) {
+                this.f17547s.readByte();
+                this.f17548t = 2;
+                return 2;
+            } else {
+                throw F0("Expected name");
             }
+        } else if (i11 == 4) {
+            iArr[i10 - 1] = 5;
+            int Z04 = Z0(true);
             this.f17547s.readByte();
-            this.f17548t = 13;
-            return 13;
+            if (Z04 != 58) {
+                if (Z04 == 61) {
+                    J0();
+                    if (this.f17546r.B0(1L) && this.f17547s.D0(0L) == 62) {
+                        this.f17547s.readByte();
+                    }
+                } else {
+                    throw F0("Expected ':'");
+                }
+            }
+        } else if (i11 == 6) {
+            iArr[i10 - 1] = 7;
+        } else if (i11 == 7) {
+            if (Z0(false) == -1) {
+                this.f17548t = 18;
+                return 18;
+            }
+            J0();
+        } else if (i11 == 9) {
+            this.f17552x.h();
+            this.f17552x = null;
+            this.f17524d--;
+            return M0();
+        } else if (i11 == 8) {
+            throw new IllegalStateException("JsonReader is closed");
         }
         int Z05 = Z0(true);
-        if (Z05 != 34) {
-            if (Z05 != 39) {
-                if (Z05 != 44 && Z05 != 59) {
-                    if (Z05 != 91) {
-                        if (Z05 != 93) {
-                            if (Z05 != 123) {
-                                int y12 = y1();
-                                if (y12 != 0) {
-                                    return y12;
-                                }
-                                int A1 = A1();
-                                if (A1 != 0) {
-                                    return A1;
-                                }
-                                if (Y0(this.f17547s.D0(0L))) {
-                                    J0();
-                                    this.f17548t = 10;
-                                    return 10;
-                                }
-                                throw F0("Expected value");
-                            }
-                            this.f17547s.readByte();
-                            this.f17548t = 1;
-                            return 1;
-                        } else if (i11 == 1) {
-                            this.f17547s.readByte();
-                            this.f17548t = 4;
-                            return 4;
-                        }
-                    } else {
-                        this.f17547s.readByte();
-                        this.f17548t = 3;
-                        return 3;
-                    }
-                }
-                if (i11 != 1 && i11 != 2) {
-                    throw F0("Unexpected value");
-                }
-                J0();
-                this.f17548t = 7;
-                return 7;
-            }
+        if (Z05 == 34) {
+            this.f17547s.readByte();
+            this.f17548t = 9;
+            return 9;
+        } else if (Z05 == 39) {
             J0();
             this.f17547s.readByte();
             this.f17548t = 8;
             return 8;
+        } else {
+            if (Z05 != 44 && Z05 != 59) {
+                if (Z05 == 91) {
+                    this.f17547s.readByte();
+                    this.f17548t = 3;
+                    return 3;
+                } else if (Z05 != 93) {
+                    if (Z05 != 123) {
+                        int y12 = y1();
+                        if (y12 != 0) {
+                            return y12;
+                        }
+                        int A1 = A1();
+                        if (A1 != 0) {
+                            return A1;
+                        }
+                        if (Y0(this.f17547s.D0(0L))) {
+                            J0();
+                            this.f17548t = 10;
+                            return 10;
+                        }
+                        throw F0("Expected value");
+                    }
+                    this.f17547s.readByte();
+                    this.f17548t = 1;
+                    return 1;
+                } else if (i11 == 1) {
+                    this.f17547s.readByte();
+                    this.f17548t = 4;
+                    return 4;
+                }
+            }
+            if (i11 != 1 && i11 != 2) {
+                throw F0("Unexpected value");
+            }
+            J0();
+            this.f17548t = 7;
+            return 7;
         }
-        this.f17547s.readByte();
-        this.f17548t = 9;
-        return 9;
     }
 
     private int R0(String str, m.b bVar) {

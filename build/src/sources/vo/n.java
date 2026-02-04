@@ -3,10 +3,10 @@ package vo;
 public final class n implements wq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.withpersona.sdk2.inquiry.internal.network.f f51737a;
+    private final com.withpersona.sdk2.inquiry.internal.network.f f51734a;
 
     public n(com.withpersona.sdk2.inquiry.internal.network.f fVar) {
-        this.f51737a = fVar;
+        this.f51734a = fVar;
     }
 
     public static n a(com.withpersona.sdk2.inquiry.internal.network.f fVar) {
@@ -20,6 +20,6 @@ public final class n implements wq.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public String get() {
-        return c(this.f51737a);
+        return c(this.f51734a);
     }
 }

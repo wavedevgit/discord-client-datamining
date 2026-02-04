@@ -8,23 +8,23 @@ import ne.w0;
 public final class v {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Pattern f49993c = Pattern.compile("^ [0-9a-fA-F]{8} ([0-9a-fA-F]{8}) ([0-9a-fA-F]{8})");
+    private static final Pattern f49990c = Pattern.compile("^ [0-9a-fA-F]{8} ([0-9a-fA-F]{8}) ([0-9a-fA-F]{8})");
 
     /* renamed from: a  reason: collision with root package name */
-    public int f49994a = -1;
+    public int f49991a = -1;
 
     /* renamed from: b  reason: collision with root package name */
-    public int f49995b = -1;
+    public int f49992b = -1;
 
     private boolean b(String str) {
-        Matcher matcher = f49993c.matcher(str);
+        Matcher matcher = f49990c.matcher(str);
         if (matcher.find()) {
             try {
                 int parseInt = Integer.parseInt((String) w0.j(matcher.group(1)), 16);
                 int parseInt2 = Integer.parseInt((String) w0.j(matcher.group(2)), 16);
                 if (parseInt > 0 || parseInt2 > 0) {
-                    this.f49994a = parseInt;
-                    this.f49995b = parseInt2;
+                    this.f49991a = parseInt;
+                    this.f49992b = parseInt2;
                     return true;
                 }
                 return false;
@@ -36,7 +36,7 @@ public final class v {
     }
 
     public boolean a() {
-        if (this.f49994a != -1 && this.f49995b != -1) {
+        if (this.f49991a != -1 && this.f49992b != -1) {
             return true;
         }
         return false;
@@ -68,8 +68,8 @@ public final class v {
         if (i11 <= 0 && i12 <= 0) {
             return false;
         }
-        this.f49994a = i11;
-        this.f49995b = i12;
+        this.f49991a = i11;
+        this.f49992b = i12;
         return true;
     }
 }

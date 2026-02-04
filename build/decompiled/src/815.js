@@ -16,21 +16,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = 4;
     var1.XHR_READYSTATE_DONE = var2;
     var0 = function() {
-        _fun8708: for (var _fun8708_ip = 0;;) switch (_fun8708_ip) {
+        _fun8710: for (var _fun8710_ip = 0;;) switch (_fun8710_ip) {
             case 0:
                 var4 = undefined;
                 var2 = undefined;
                 var0 = arguments.length;
                 var1 = 0;
                 if (!(var0 > var1)) {
-                    _fun8708_ip = 21;
-                    continue _fun8708
+                    _fun8710_ip = 21;
+                    continue _fun8710
                 }
             case 13:
                 var0 = arguments[var1];
                 if (!(var4 === var0)) {
-                    _fun8708_ip = 49;
-                    continue _fun8708
+                    _fun8710_ip = 49;
+                    continue _fun8710
                 }
             case 21:
                 var3 = _closure1_slot0;
@@ -38,15 +38,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var0[var1];
                 var0 = var3.bind(var4)(var0);
                 var0 = var0.RN_GLOBAL_OBJ;
-                _fun8708_ip = 53;
-                continue _fun8708;
+                _fun8710_ip = 53;
+                continue _fun8710;
             case 49:
                 var0 = arguments[var1];
             case 53:
                 var1 = var0.XMLHttpRequest;
                 if (var1) {
-                    _fun8708_ip = 66;
-                    continue _fun8708
+                    _fun8710_ip = 66;
+                    continue _fun8710
                 }
             case 62:
                 var1 = null;
@@ -65,8 +65,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var0.open;
                 var1 = var1.__sentry_original__;
                 if (!var1) {
-                    _fun8708_ip = 125;
-                    continue _fun8708
+                    _fun8710_ip = 125;
+                    continue _fun8710
                 }
             case 107:
                 var1 = var0.open;
@@ -76,8 +76,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var0.send;
                 var1 = var1.__sentry_original__;
                 if (!var1) {
-                    _fun8708_ip = 158;
-                    continue _fun8708
+                    _fun8710_ip = 158;
+                    continue _fun8710
                 }
             case 140:
                 var1 = var0.send;

@@ -6,7 +6,7 @@ public interface b {
     public static final class a implements b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final a f48021a = new a();
+        public static final a f48018a = new a();
 
         private a() {
         }
@@ -32,7 +32,7 @@ public interface b {
     public static final class C0581b implements b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final C0581b f48022a = new C0581b();
+        public static final C0581b f48019a = new C0581b();
 
         private C0581b() {
         }
@@ -57,7 +57,7 @@ public interface b {
     public static final class c implements b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final c f48023a = new c();
+        public static final c f48020a = new c();
 
         private c() {
         }
@@ -82,7 +82,7 @@ public interface b {
     public static final class d implements b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final d f48024a = new d();
+        public static final d f48021a = new d();
 
         private d() {
         }

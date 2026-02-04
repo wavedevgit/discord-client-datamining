@@ -160,7 +160,7 @@ public class BackStackContainer extends FrameLayout {
     public static final void d(View view, Function0 doStart) {
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(doStart, "doStart");
-        d.a.e(d.f56075n, view, null, 2, null);
+        d.a.e(d.f56072n, view, null, 2, null);
         doStart.invoke();
     }
 
@@ -228,7 +228,7 @@ public class BackStackContainer extends FrameLayout {
         Object c12 = d10.c();
         Context context = getContext();
         Intrinsics.checkNotNullExpressionValue(context, "this.context");
-        View c13 = f0.c((e0) c11.a(e0.f54602a), c12, c11, context, this, new h0() { // from class: an.b
+        View c13 = f0.c((e0) c11.a(e0.f54599a), c12, c11, context, this, new h0() { // from class: an.b
             @Override // ym.h0
             public final void a(View view2, Function0 function0) {
                 BackStackContainer.d(view2, function0);
@@ -253,7 +253,7 @@ public class BackStackContainer extends FrameLayout {
             }
         }
         b(currentView, c13, z10);
-        if (currentView != null && (c10 = d.f56075n.c(currentView)) != null) {
+        if (currentView != null && (c10 = d.f56072n.c(currentView)) != null) {
             c10.j();
         }
         this.f17666e = d10;
@@ -263,8 +263,8 @@ public class BackStackContainer extends FrameLayout {
     protected void onAttachedToWindow() {
         Object c10;
         super.onAttachedToWindow();
-        u3.f c11 = zm.c.f56074a.c(this);
-        g.a aVar = g.f54610a;
+        u3.f c11 = zm.c.f56071a.c(this);
+        g.a aVar = g.f54607a;
         j0 d10 = k0.d(this);
         if (d10 == null) {
             c10 = null;

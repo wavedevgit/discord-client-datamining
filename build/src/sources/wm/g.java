@@ -5,22 +5,22 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f52540a;
+    private final Object f52537a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final m f52541b;
+    private final m f52538b;
 
     public g(Object obj, m snapshot) {
         Intrinsics.checkNotNullParameter(snapshot, "snapshot");
-        this.f52540a = obj;
-        this.f52541b = snapshot;
+        this.f52537a = obj;
+        this.f52538b = snapshot;
     }
 
     public final Object a() {
-        return this.f52540a;
+        return this.f52537a;
     }
 
     public final m b() {
-        return this.f52541b;
+        return this.f52538b;
     }
 }

@@ -14,43 +14,18 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var6.bind(var7)(var4, var0, var5);
     var0 = function() {
-        _fun97496: for (var _fun97496_ip = 0;;) switch (_fun97496_ip) {
-            case 0:
-                var1 = null;
-                var0 = null;
-            case 4: // try_start_0
-                var2 = _closure1_slot2;
-                var4 = var2.Dimensions;
-                var3 = var4.get;
-                var2 = 'screen';
-                var1 = var3.bind(var4)(var2);
-            case 31: // try_end0
-                _fun97496_ip = 35;
-                continue _fun97496;
-            case 33: // catch_target0
-                CatchBlockStart(arg_register = 2);
-            case 35: // try_start_1
-                var2 = _closure1_slot2;
-                var4 = var2.Dimensions;
-                var3 = var4.get;
-                var2 = 'window';
-                var0 = var3.bind(var4)(var2);
-            case 62: // try_end1
-                _fun97496_ip = 66;
-                continue _fun97496;
-            case 64: // catch_target1
-                CatchBlockStart(arg_register = 2);
-            case 66:
-                var4 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var2 = 1;
-                var2 = var3[var2];
-                var3 = undefined;
-                var2 = var4.bind(var3)(var2);
-                var2 = var2.getReactNativeDimensionsWithDimensions;
-                var0 = var2.bind(var3)(var1, var0);
-                return var0;
-        }
+        var3 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var1 = 1;
+        var1 = var2[var1];
+        var2 = undefined;
+        var1 = var3.bind(var2)(var1);
+        var1 = var1.getReactNativeVersionWithModules;
+        var0 = _closure1_slot2;
+        var0 = var0.Platform;
+        var0 = var0.constants;
+        var0 = var1.bind(var2)(var0);
+        return var0;
     };
     var4.default = var0;
     var0 = 0;

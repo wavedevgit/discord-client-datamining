@@ -6,24 +6,24 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Location f50207a;
+    private final Location f50204a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final c f50208b;
+    private final c f50205b;
 
     public b(Location location, c precision) {
         Intrinsics.checkNotNullParameter(location, "location");
         Intrinsics.checkNotNullParameter(precision, "precision");
-        this.f50207a = location;
-        this.f50208b = precision;
+        this.f50204a = location;
+        this.f50205b = precision;
     }
 
     public final Location a() {
-        return this.f50207a;
+        return this.f50204a;
     }
 
     public final c b() {
-        return this.f50208b;
+        return this.f50205b;
     }
 
     public boolean equals(Object obj) {
@@ -34,19 +34,19 @@ public final class b {
             return false;
         }
         b bVar = (b) obj;
-        if (Intrinsics.areEqual(this.f50207a, bVar.f50207a) && this.f50208b == bVar.f50208b) {
+        if (Intrinsics.areEqual(this.f50204a, bVar.f50204a) && this.f50205b == bVar.f50205b) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (this.f50207a.hashCode() * 31) + this.f50208b.hashCode();
+        return (this.f50204a.hashCode() * 31) + this.f50205b.hashCode();
     }
 
     public String toString() {
-        Location location = this.f50207a;
-        c cVar = this.f50208b;
+        Location location = this.f50204a;
+        c cVar = this.f50205b;
         return "GpsData(location=" + location + ", precision=" + cVar + ")";
     }
 }

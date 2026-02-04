@@ -17,19 +17,19 @@ public abstract /* synthetic */ class y {
     public static final class a implements FlowCollector {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ h f52594d;
+        final /* synthetic */ h f52591d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Function1 f52595e;
+        final /* synthetic */ Function1 f52592e;
 
         public a(h hVar, Function1 function1) {
-            this.f52594d = hVar;
-            this.f52595e = function1;
+            this.f52591d = hVar;
+            this.f52592e = function1;
         }
 
         @Override // kotlinx.coroutines.flow.FlowCollector
         public Object emit(Object obj, Continuation continuation) {
-            Object m10 = w.m(this.f52594d, (r) this.f52595e.invoke(obj), continuation);
+            Object m10 = w.m(this.f52591d, (r) this.f52592e.invoke(obj), continuation);
             if (m10 == rr.b.f()) {
                 return m10;
             }
@@ -41,30 +41,30 @@ public abstract /* synthetic */ class y {
     public static final class b extends r {
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ r f52596c;
+        final /* synthetic */ r f52593c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ CancellableContinuation f52597d;
+        final /* synthetic */ CancellableContinuation f52594d;
 
         b(r rVar, CancellableContinuation cancellableContinuation) {
-            this.f52596c = rVar;
-            this.f52597d = cancellableContinuation;
+            this.f52593c = rVar;
+            this.f52594d = cancellableContinuation;
         }
 
         @Override // wm.r
         public void a(r.c cVar) {
             Intrinsics.checkNotNullParameter(cVar, "<this>");
-            if (!this.f52597d.a()) {
+            if (!this.f52594d.a()) {
                 return;
             }
-            this.f52596c.a(cVar);
-            CancellableContinuation cancellableContinuation = this.f52597d;
+            this.f52593c.a(cVar);
+            CancellableContinuation cancellableContinuation = this.f52594d;
             Result.a aVar = Result.f32461e;
             cancellableContinuation.resumeWith(Result.b(Unit.f32464a));
         }
 
         public String toString() {
-            return "sendAndAwaitApplication(" + this.f52596c + ')';
+            return "sendAndAwaitApplication(" + this.f52593c + ')';
         }
     }
 

@@ -1,6 +1,6 @@
 // ../discord_common/js/packages/performance-utils/index.js
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun7229: for (var _fun7229_ip = 0;;) switch (_fun7229_ip) {
+    _fun7231: for (var _fun7231_ip = 0;;) switch (_fun7231_ip) {
         case 0:
             var0 = global;
             var11 = require;
@@ -31,8 +31,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var11 = var9.now;
             var9 = null;
             if (!(var9 == var11)) {
-                _fun7229_ip = 114;
-                continue _fun7229
+                _fun7231_ip = 114;
+                continue _fun7231
             }
         case 95:
             var11 = var8.Date;
@@ -54,8 +54,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var11.now = var9;
         case 114: // try_end0
-            _fun7229_ip = 118;
-            continue _fun7229;
+            _fun7231_ip = 118;
+            continue _fun7231;
         case 116: // catch_target0
             CatchBlockStart(arg_register = 9);
         case 118:
@@ -68,21 +68,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var11 = var12;
             var9 = null;
             if (!(var9 == var12)) {
-                _fun7229_ip = 170;
-                continue _fun7229
+                _fun7231_ip = 170;
+                continue _fun7231
             }
         case 150:
             var9 = var10;
             var12 = var9.performance;
             var9 = var12.now;
             var9 = var9.bind(var12)();
-            _fun7229_ip = 173;
-            continue _fun7229;
+            _fun7231_ip = 173;
+            continue _fun7231;
         case 170:
             var9 = var11;
         case 173: // try_end1
-            _fun7229_ip = 192;
-            continue _fun7229;
+            _fun7231_ip = 192;
+            continue _fun7231;
         case 175: // catch_target1
             CatchBlockStart(arg_register = 11);
             var12 = var8.Date;
@@ -98,17 +98,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var9 = var11;
             var10 = null;
             if (!(var10 == var11)) {
-                _fun7229_ip = 223;
-                continue _fun7229
+                _fun7231_ip = 223;
+                continue _fun7231
             }
         case 221:
-            _fun7229_ip = 226;
-            continue _fun7229;
+            _fun7231_ip = 226;
+            continue _fun7231;
         case 223:
             var7 = var9;
         case 226: // try_end2
-            _fun7229_ip = 245;
-            continue _fun7229;
+            _fun7231_ip = 245;
+            continue _fun7231;
         case 228: // catch_target2
             CatchBlockStart(arg_register = 9);
             var9 = var8.Date;
@@ -121,8 +121,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var7 = var7.timing;
             var8 = null;
             if (!(var8 == var7)) {
-                _fun7229_ip = 298;
-                continue _fun7229
+                _fun7231_ip = 298;
+                continue _fun7231
             }
         case 269: // try_start_3
             var7 = var2;
@@ -132,8 +132,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var7.navigationStart = var10;
             var9.timing = var7;
         case 294: // try_end3
-            _fun7229_ip = 298;
-            continue _fun7229;
+            _fun7231_ip = 298;
+            continue _fun7231;
         case 296: // catch_target3
             CatchBlockStart(arg_register = 7);
         case 298:
@@ -141,8 +141,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var7 = var7.performance;
             var7 = var7.timeOrigin;
             if (!(var8 == var7)) {
-                _fun7229_ip = 339;
-                continue _fun7229
+                _fun7231_ip = 339;
+                continue _fun7231
             }
         case 317: // try_start_4
             var7 = var2;
@@ -150,8 +150,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var7 = var3;
             var8.timeOrigin = var7;
         case 335: // try_end4
-            _fun7229_ip = 339;
-            continue _fun7229;
+            _fun7231_ip = 339;
+            continue _fun7231;
         case 337: // catch_target4
             CatchBlockStart(arg_register = 7);
         case 339:

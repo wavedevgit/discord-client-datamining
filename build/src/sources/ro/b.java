@@ -11,18 +11,18 @@ import po.g2;
 public final class b implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final View f49045a;
+    private final View f49042a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final View f49046b;
+    public final View f49043b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final FrameLayout f49047c;
+    public final FrameLayout f49044c;
 
     private b(View view, View view2, FrameLayout frameLayout) {
-        this.f49045a = view;
-        this.f49046b = view2;
-        this.f49047c = frameLayout;
+        this.f49042a = view;
+        this.f49043b = view2;
+        this.f49044c = frameLayout;
     }
 
     public static b a(View view) {
@@ -48,6 +48,6 @@ public final class b implements ViewBinding {
 
     @Override // androidx.viewbinding.ViewBinding
     public View getRoot() {
-        return this.f49045a;
+        return this.f49042a;
     }
 }

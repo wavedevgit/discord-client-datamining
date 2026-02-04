@@ -9,15 +9,15 @@ import wg.k;
 final class d extends v5 {
 
     /* renamed from: c  reason: collision with root package name */
-    final /* synthetic */ k f51596c;
+    final /* synthetic */ k f51593c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d(a aVar, k kVar) {
-        this.f51596c = kVar;
+        this.f51593c = kVar;
     }
 
     @Override // com.google.android.gms.internal.fido.w5
     public final void O(Status status, PendingIntent pendingIntent) {
-        r.a(status, pendingIntent, this.f51596c);
+        r.a(status, pendingIntent, this.f51593c);
     }
 }

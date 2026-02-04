@@ -10,9 +10,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var2, var0, var1);
     var1 = {};
-    var6 = 'KeyboardBackgroundView';
+    var6 = 'KeyboardGestureArea';
     var1.uiViewClassName = var6;
-    var0 = {};
+    var0 = {
+        'interpolator': true,
+        'showOnSwipeUp': true,
+        'enableSwipeToDismiss': true,
+        'offset': true,
+        'textInputNativeID': true
+    };
     var1.validAttributes = var0;
     var _closure1_slot0 = var1;
     var4 = dependencyMap;

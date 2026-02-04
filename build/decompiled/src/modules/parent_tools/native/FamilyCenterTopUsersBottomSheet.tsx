@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
-        _fun82437: for (var _fun82437_ip = 0;;) switch (_fun82437_ip) {
+        _fun82454: for (var _fun82454_ip = 0;;) switch (_fun82454_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.userActivity;
@@ -19,8 +19,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var2.bind(var3)(var0);
                 var0 = null;
                 if (!(var0 != var8)) {
-                    _fun82437_ip = 219;
-                    continue _fun82437
+                    _fun82454_ip = 219;
+                    continue _fun82454
                 }
             case 42:
                 var10 = _closure1_slot0;

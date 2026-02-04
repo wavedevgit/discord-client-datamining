@@ -4,16 +4,16 @@ package rk;
 public final class e extends i {
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f48836c;
+    private final String f48833c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f48837d;
+    private final String f48834d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e(gk.a aVar, String str, String str2) {
         super(aVar);
-        this.f48836c = str2;
-        this.f48837d = str;
+        this.f48833c = str2;
+        this.f48834d = str;
     }
 
     private void k(StringBuilder sb2, int i10) {
@@ -22,7 +22,7 @@ public final class e extends i {
             return;
         }
         sb2.append('(');
-        sb2.append(this.f48836c);
+        sb2.append(this.f48833c);
         sb2.append(')');
         int i11 = f10 % 32;
         int i12 = f10 / 32;
@@ -57,7 +57,7 @@ public final class e extends i {
     @Override // rk.i
     protected void h(StringBuilder sb2, int i10) {
         sb2.append('(');
-        sb2.append(this.f48837d);
+        sb2.append(this.f48834d);
         sb2.append(i10 / 100000);
         sb2.append(')');
     }

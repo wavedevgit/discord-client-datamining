@@ -21,7 +21,7 @@ public final class a {
         Editable editable2;
         Editable editable3;
         Intrinsics.checkNotNullParameter(view, "view");
-        TextInputLayout textInputLayout = (TextInputLayout) view.findViewById(e.f55207u0);
+        TextInputLayout textInputLayout = (TextInputLayout) view.findViewById(e.f55204u0);
         TextInputLayout textInputLayout2 = (TextInputLayout) view.findViewById(e.B0);
         TextInputLayout textInputLayout3 = (TextInputLayout) view.findViewById(e.L);
         EditText editText = ((TextInputLayout) view.findViewById(e.G)).getEditText();

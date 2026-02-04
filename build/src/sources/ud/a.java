@@ -6,29 +6,29 @@ import java.util.List;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public final long f50497a;
+    public final long f50494a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f50498b;
+    public final int f50495b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final List f50499c;
+    public final List f50496c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final List f50500d;
+    public final List f50497d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final List f50501e;
+    public final List f50498e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final List f50502f;
+    public final List f50499f;
 
     public a(long j10, int i10, List list, List list2, List list3, List list4) {
-        this.f50497a = j10;
-        this.f50498b = i10;
-        this.f50499c = Collections.unmodifiableList(list);
-        this.f50500d = Collections.unmodifiableList(list2);
-        this.f50501e = Collections.unmodifiableList(list3);
-        this.f50502f = Collections.unmodifiableList(list4);
+        this.f50494a = j10;
+        this.f50495b = i10;
+        this.f50496c = Collections.unmodifiableList(list);
+        this.f50497d = Collections.unmodifiableList(list2);
+        this.f50498e = Collections.unmodifiableList(list3);
+        this.f50499f = Collections.unmodifiableList(list4);
     }
 }

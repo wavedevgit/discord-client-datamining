@@ -60,13 +60,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/content_inventory/memberlist/useTimestampTickedNow.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun62570: for (var _fun62570_ip = 0;;) switch (_fun62570_ip) {
+        _fun62587: for (var _fun62587_ip = 0;;) switch (_fun62587_ip) {
             case 0:
                 var1 = arguments[0];
                 var6 = undefined;
                 if (!(var1 === var6)) {
-                    _fun62570_ip = 13;
-                    continue _fun62570
+                    _fun62587_ip = 13;
+                    continue _fun62587
                 }
             case 11:
                 var1 = {};
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var1.hovered;
                 var1 = var1.isAppFocused;
                 if (!(var1 === var6)) {
-                    _fun62570_ip = 35;
-                    continue _fun62570
+                    _fun62587_ip = 35;
+                    continue _fun62587
                 }
             case 33:
                 var1 = true;
@@ -120,13 +120,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var8.bind(var9)(var7, var4);
                 var1 = !var1;
                 if (var1) {
-                    _fun62570_ip = 158;
-                    continue _fun62570
+                    _fun62587_ip = 158;
+                    continue _fun62587
                 }
             case 149:
                 if (!var4) {
-                    _fun62570_ip = 155;
-                    continue _fun62570
+                    _fun62587_ip = 155;
+                    continue _fun62587
                 }
             case 152:
                 var4 = !var5;
@@ -141,13 +141,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.Millis;
                 var5 = var4.SECOND;
                 if (var1) {
-                    _fun62570_ip = 198;
-                    continue _fun62570
+                    _fun62587_ip = 198;
+                    continue _fun62587
                 }
             case 193:
                 var6 = var5;
-                _fun62570_ip = 205;
-                continue _fun62570;
+                _fun62587_ip = 205;
+                continue _fun62587;
             case 198:
                 var4 = 15;
                 var6 = var4 * var5;

@@ -8,16 +8,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private final u f48427a;
+    private final u f48424a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Set f48428b;
+    private final Set f48425b;
 
     public m(u database) {
         Intrinsics.checkNotNullParameter(database, "database");
-        this.f48427a = database;
+        this.f48424a = database;
         Set newSetFromMap = Collections.newSetFromMap(new IdentityHashMap());
         Intrinsics.checkNotNullExpressionValue(newSetFromMap, "newSetFromMap(IdentityHashMap())");
-        this.f48428b = newSetFromMap;
+        this.f48425b = newSetFromMap;
     }
 }

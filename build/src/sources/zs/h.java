@@ -20,16 +20,16 @@ import ts.c;
 public final class h implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final h f56143a = new h();
+    public static final h f56140a = new h();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Lazy f56144b = l.b(o.f37120e, a.f56145d);
+    private static final Lazy f56141b = l.b(o.f37120e, a.f56142d);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class a extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f56145d = new a();
+        public static final a f56142d = new a();
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: zs.h$a$a  reason: collision with other inner class name */
@@ -37,7 +37,7 @@ public final class h implements KSerializer {
         public static final class C0792a extends Lambda implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final C0792a f56146d = new C0792a();
+            public static final C0792a f56143d = new C0792a();
 
             C0792a() {
                 super(1);
@@ -62,7 +62,7 @@ public final class h implements KSerializer {
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final SerialDescriptor invoke() {
-            return ct.j.c("kotlinx.datetime.MonthBased", new SerialDescriptor[0], C0792a.f56146d);
+            return ct.j.c("kotlinx.datetime.MonthBased", new SerialDescriptor[0], C0792a.f56143d);
         }
     }
 
@@ -78,12 +78,12 @@ public final class h implements KSerializer {
         kotlinx.serialization.encoding.c b10 = decoder.b(descriptor);
         boolean z10 = true;
         if (b10.p()) {
-            i10 = b10.i(f56143a.getDescriptor(), 0);
+            i10 = b10.i(f56140a.getDescriptor(), 0);
         } else {
             i10 = 0;
             boolean z11 = false;
             while (true) {
-                h hVar = f56143a;
+                h hVar = f56140a;
                 int o10 = b10.o(hVar.getDescriptor());
                 if (o10 != -1) {
                     if (o10 == 0) {
@@ -114,12 +114,12 @@ public final class h implements KSerializer {
         Intrinsics.checkNotNullParameter(value, "value");
         SerialDescriptor descriptor = getDescriptor();
         CompositeEncoder b10 = encoder.b(descriptor);
-        b10.w(f56143a.getDescriptor(), 0, value.d());
+        b10.w(f56140a.getDescriptor(), 0, value.d());
         b10.c(descriptor);
     }
 
     @Override // kotlinx.serialization.KSerializer, at.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return (SerialDescriptor) f56144b.getValue();
+        return (SerialDescriptor) f56141b.getValue();
     }
 }

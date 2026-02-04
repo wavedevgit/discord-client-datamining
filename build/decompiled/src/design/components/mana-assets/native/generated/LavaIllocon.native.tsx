@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/LavaIllocon.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52719: for (var _fun52719_ip = 0;;) switch (_fun52719_ip) {
+        _fun52722: for (var _fun52722_ip = 0;;) switch (_fun52722_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.size;
                 var3 = undefined;
                 if (!(var7 === var3)) {
-                    _fun52719_ip = 32;
-                    continue _fun52719
+                    _fun52722_ip = 32;
+                    continue _fun52722
                 }
             case 29:
                 var7 = 64;

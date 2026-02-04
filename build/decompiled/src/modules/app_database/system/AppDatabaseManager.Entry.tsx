@@ -54,14 +54,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'load';
         var0.key = var5;
         var5 = function() {
-            _fun93078: for (var _fun93078_ip = 0;;) switch (_fun93078_ip) {
+            _fun93095: for (var _fun93095_ip = 0;;) switch (_fun93095_ip) {
                 case 0:
                     var1 = this;
                     var2 = var1.module;
                     var0 = null;
                     if (!(var0 == var2)) {
-                        _fun93078_ip = 37;
-                        continue _fun93078
+                        _fun93095_ip = 37;
+                        continue _fun93095
                     }
                 case 15:
                     var2 = var1.definition;
@@ -79,14 +79,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'reset';
         var0.key = var5;
         var5 = function() {
-            _fun93079: for (var _fun93079_ip = 0;;) switch (_fun93079_ip) {
+            _fun93096: for (var _fun93096_ip = 0;;) switch (_fun93096_ip) {
                 case 0:
                     var0 = this;
                     var1 = var0.module;
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun93079_ip = 27;
-                        continue _fun93079
+                        _fun93096_ip = 27;
+                        continue _fun93096
                     }
                 case 15:
                     var0 = var1.resetInMemoryState;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'execute';
         var0.key = var5;
         var5 = function arg0, arg1() {
-            _fun93080: for (var _fun93080_ip = 0;;) switch (_fun93080_ip) {
+            _fun93097: for (var _fun93097_ip = 0;;) switch (_fun93097_ip) {
                 case 0:
                     var4 = arg0;
                     var1 = this;
@@ -111,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var1.module;
                     var0 = null;
                     if (!(var0 != var2)) {
-                        _fun93080_ip = 68;
-                        continue _fun93080
+                        _fun93097_ip = 68;
+                        continue _fun93097
                     }
                 case 28:
                     var1 = var1.module;
@@ -120,8 +120,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var4.type;
                     var2 = var3[var1];
                     if (!(var0 != var2)) {
-                        _fun93080_ip = 68;
-                        continue _fun93080
+                        _fun93097_ip = 68;
+                        continue _fun93097
                     }
                 case 53:
                     var1 = var2.call;

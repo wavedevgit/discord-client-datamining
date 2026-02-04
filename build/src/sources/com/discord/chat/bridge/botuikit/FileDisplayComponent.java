@@ -25,7 +25,7 @@ public final class FileDisplayComponent extends Component implements Spoilerable
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8243id;
+    private final String f8242id;
     private final boolean isSpoiler;
     @NotNull
     private final String name;
@@ -59,7 +59,7 @@ public final class FileDisplayComponent extends Component implements Spoilerable
             v1.b(i10, 127, FileDisplayComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f8243id = str;
+        this.f8242id = str;
         this.file = unfurledMediaItem;
         this.name = str2;
         this.size = str3;
@@ -82,7 +82,7 @@ public final class FileDisplayComponent extends Component implements Spoilerable
             i10 = fileDisplayComponent.type;
         }
         if ((i11 & 2) != 0) {
-            str = fileDisplayComponent.f8243id;
+            str = fileDisplayComponent.f8242id;
         }
         if ((i11 & 4) != 0) {
             unfurledMediaItem = fileDisplayComponent.file;
@@ -185,7 +185,7 @@ public final class FileDisplayComponent extends Component implements Spoilerable
 
     @NotNull
     public final String component2() {
-        return this.f8243id;
+        return this.f8242id;
     }
 
     @NotNull
@@ -226,7 +226,7 @@ public final class FileDisplayComponent extends Component implements Spoilerable
         }
         if (obj instanceof FileDisplayComponent) {
             FileDisplayComponent fileDisplayComponent = (FileDisplayComponent) obj;
-            return this.type == fileDisplayComponent.type && Intrinsics.areEqual(this.f8243id, fileDisplayComponent.f8243id) && Intrinsics.areEqual(this.file, fileDisplayComponent.file) && Intrinsics.areEqual(this.name, fileDisplayComponent.name) && Intrinsics.areEqual(this.size, fileDisplayComponent.size) && this.isSpoiler == fileDisplayComponent.isSpoiler && Intrinsics.areEqual(this.spoilerDescription, fileDisplayComponent.spoilerDescription);
+            return this.type == fileDisplayComponent.type && Intrinsics.areEqual(this.f8242id, fileDisplayComponent.f8242id) && Intrinsics.areEqual(this.file, fileDisplayComponent.file) && Intrinsics.areEqual(this.name, fileDisplayComponent.name) && Intrinsics.areEqual(this.size, fileDisplayComponent.size) && this.isSpoiler == fileDisplayComponent.isSpoiler && Intrinsics.areEqual(this.spoilerDescription, fileDisplayComponent.spoilerDescription);
         }
         return false;
     }
@@ -239,7 +239,7 @@ public final class FileDisplayComponent extends Component implements Spoilerable
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f8243id;
+        return this.f8242id;
     }
 
     @NotNull
@@ -272,7 +272,7 @@ public final class FileDisplayComponent extends Component implements Spoilerable
     }
 
     public int hashCode() {
-        int hashCode = ((((((((((Integer.hashCode(this.type) * 31) + this.f8243id.hashCode()) * 31) + this.file.hashCode()) * 31) + this.name.hashCode()) * 31) + this.size.hashCode()) * 31) + Boolean.hashCode(this.isSpoiler)) * 31;
+        int hashCode = ((((((((((Integer.hashCode(this.type) * 31) + this.f8242id.hashCode()) * 31) + this.file.hashCode()) * 31) + this.name.hashCode()) * 31) + this.size.hashCode()) * 31) + Boolean.hashCode(this.isSpoiler)) * 31;
         String str = this.spoilerDescription;
         return hashCode + (str == null ? 0 : str.hashCode());
     }
@@ -284,7 +284,7 @@ public final class FileDisplayComponent extends Component implements Spoilerable
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f8243id;
+        String str = this.f8242id;
         UnfurledMediaItem unfurledMediaItem = this.file;
         String str2 = this.name;
         String str3 = this.size;
@@ -306,7 +306,7 @@ public final class FileDisplayComponent extends Component implements Spoilerable
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(size, "size");
         this.type = i10;
-        this.f8243id = id2;
+        this.f8242id = id2;
         this.file = file;
         this.name = name;
         this.size = size;

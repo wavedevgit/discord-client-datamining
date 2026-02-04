@@ -1,144 +1,95 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var2 = exports;
+    var5 = require;
+    var8 = exports;
+    var2 = dependencyMap;
+    var _closure1_slot0 = var5;
+    var _closure1_slot1 = var8;
+    var _closure1_slot2 = var2;
     var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var4 = {};
+    var3 = true;
+    var4.value = var3;
+    var3 = '__esModule';
+    var3 = var6.bind(var7)(var8, var3, var4);
     var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var1 = {};
-    var0 = true;
-    var1.value = var0;
-    var0 = '__esModule';
-    var0 = var3.bind(var4)(var2, var0, var1);
+    var3 = var4.keys;
+    var0 = 0;
+    var2 = var2[var0];
     var0 = undefined;
-    var2.default = var0;
-    var1 = function arg0() {
-        _fun97625: for (var _fun97625_ip = 0;;) switch (_fun97625_ip) {
+    var2 = var5.bind(var0)(var2);
+    var3 = var3.bind(var4)(var2);
+    var2 = var3.forEach;
+    var1 = function(arg0) { // Environment: var1
+        _fun97594: for (var _fun97594_ip = 0;;) switch (_fun97594_ip) {
             case 0:
-                var0 = arg0;
-                var2 = var0.createSocket;
-                var4 = var0.host;
-                var3 = var0.port;
-                var0 = var0.onCommand;
-                var1 = null;
-                if (!(var1 == var2)) {
-                    _fun97625_ip = 69;
-                    continue _fun97625
+                var4 = arg0;
+                var _closure2_slot0 = var4;
+                var0 = 'default';
+                var0 = var0 !== var4;
+                if (!var0) {
+                    _fun97594_ip = 28;
+                    continue _fun97594
                 }
-            case 33:
-                var1 = global;
-                var5 = var1.Error;
-                var1 = var5.prototype;
-                var2 = Object.create(var1, {
-                    constructor: {
-                        value: var5
-                    }
-                });
-                var6 = 'invalid createSocket function';
-                var7 = var2;
-                var1 = new var7[var5](var6, var5);
-                var1 = var1 instanceof Object ? var1 : var2;
-                throw var1;
-            case 69:
-                var2 = 'string';
-                var1 = typeof var4;
-                var1 = var2 === var1;
+            case 20:
+                var1 = '__esModule';
+                var0 = var1 !== var4;
+            case 28:
+                if (!var0) {
+                    _fun97594_ip = 128;
+                    continue _fun97594
+                }
+            case 31:
+                var1 = _closure1_slot1;
+                var1 = var4 in var1;
                 if (!var1) {
-                    _fun97625_ip = 86;
-                    continue _fun97625
+                    _fun97594_ip = 82;
+                    continue _fun97594
                 }
-            case 83:
-                var1 = var4;
-            case 86:
-                if (!var1) {
-                    _fun97625_ip = 97;
-                    continue _fun97625
-                }
-            case 89:
-                var2 = '';
-                var1 = var2 !== var4;
-            case 97:
+            case 45:
+                var2 = _closure1_slot1;
+                var3 = var2[var4];
+                var7 = _closure1_slot0;
+                var6 = _closure1_slot2;
+                var2 = 0;
+                var6 = var6[var2];
+                var2 = undefined;
+                var2 = var7.bind(var2)(var6);
+                var2 = var2[var4];
+                var1 = var3 === var2;
+            case 82:
                 if (var1) {
-                    _fun97625_ip = 136;
-                    continue _fun97625
+                    _fun97594_ip = 128;
+                    continue _fun97594
                 }
-            case 100:
+            case 85:
                 var1 = global;
-                var4 = var1.Error;
-                var1 = var4.prototype;
-                var2 = Object.create(var1, {
-                    constructor: {
-                        value: var4
-                    }
-                });
-                var6 = 'invalid host';
-                var7 = var2;
-                var1 = new var7[var4](var6, var5);
-                var1 = var1 instanceof Object ? var1 : var2;
-                throw var1;
-            case 136:
-                var2 = 'number';
-                var1 = typeof var3;
-                var1 = var2 === var1;
-                if (!var1) {
-                    _fun97625_ip = 157;
-                    continue _fun97625
-                }
-            case 150:
-                var2 = 1;
-                var1 = var3 >= var2;
-            case 157:
-                if (!var1) {
-                    _fun97625_ip = 170;
-                    continue _fun97625
-                }
-            case 160:
-                var2 = 65535;
-                var1 = var3 <= var2;
-            case 170:
-                if (var1) {
-                    _fun97625_ip = 209;
-                    continue _fun97625
-                }
-            case 173:
-                var1 = global;
-                var3 = var1.Error;
-                var1 = var3.prototype;
-                var2 = Object.create(var1, {
-                    constructor: {
-                        value: var3
-                    }
-                });
-                var6 = 'invalid port';
-                var7 = var2;
-                var1 = new var7[var3](var6, var5);
-                var1 = var1 instanceof Object ? var1 : var2;
-                throw var1;
-            case 209:
-                var1 = 'function';
-                var0 = typeof var0;
-                if (!(var1 !== var0)) {
-                    _fun97625_ip = 256;
-                    continue _fun97625
-                }
-            case 220:
-                var0 = global;
-                var2 = var0.Error;
-                var0 = var2.prototype;
-                var1 = Object.create(var0, {
-                    constructor: {
-                        value: var2
-                    }
-                });
-                var6 = 'invalid onCommand handler';
-                var7 = var1;
-                var0 = new var7[var2](var6, var5);
-                var0 = var0 instanceof Object ? var0 : var1;
-                throw var0;
-            case 256:
+                var3 = var1.Object;
+                var2 = var3.defineProperty;
+                var1 = _closure1_slot1;
+                var0 = {};
+                var6 = true;
+                var0.enumerable = var6;
+                var5 = function() {
+                    var2 = _closure1_slot0;
+                    var1 = _closure1_slot2;
+                    var0 = 0;
+                    var1 = var1[var0];
+                    var0 = undefined;
+                    var1 = var2.bind(var0)(var1);
+                    var0 = _closure2_slot0;
+                    var0 = var1[var0];
+                    return var0;
+                };
+                var0.get = var5;
+                var0 = var2.bind(var3)(var1, var4, var0);
+            case 128:
                 var0 = undefined;
                 return var0;
         }
     };
-    var2.default = var1;
+    var1 = var2.bind(var3)(var1);
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12752]);

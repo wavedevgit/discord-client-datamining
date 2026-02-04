@@ -134,7 +134,7 @@ public final class g {
             pm.c cVar = pm.c.f46169a;
             ThemedReactContext themedReactContext = gVar.f31797c;
             if (themedReactContext != null) {
-                view3 = gm.f.c(themedReactContext);
+                view3 = gm.f.b(themedReactContext);
             }
             List g10 = cVar.g(view3);
             int indexOf = g10.indexOf(view2);

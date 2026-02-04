@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = var6.bind(var7)(var1);
             var1 = var2.useAnimatedStyle;
             var0 = function() {
-                _fun48322: for (var _fun48322_ip = 0;;) switch (_fun48322_ip) {
+                _fun48325: for (var _fun48325_ip = 0;;) switch (_fun48325_ip) {
                     case 0:
                         var0 = {};
                         var3 = _closure1_slot0;
@@ -153,14 +153,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var11 = var12.withSpring;
                         var2 = _closure3_slot0;
                         if (var2) {
-                            _fun48322_ip = 54;
-                            continue _fun48322
+                            _fun48325_ip = 54;
+                            continue _fun48325
                         }
                     case 42:
                         var2 = _closure3_slot2;
                         var10 = var2.borderColor;
-                        _fun48322_ip = 64;
-                        continue _fun48322;
+                        _fun48325_ip = 64;
+                        continue _fun48325;
                     case 54:
                         var2 = _closure3_slot1;
                         var10 = var2.borderColor;
@@ -179,14 +179,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = var4.withSpring;
                         var2 = _closure3_slot0;
                         if (var2) {
-                            _fun48322_ip = 140;
-                            continue _fun48322
+                            _fun48325_ip = 140;
+                            continue _fun48325
                         }
                     case 129:
                         var2 = _closure3_slot2;
                         var2 = var2.backgroundColor;
-                        _fun48322_ip = 149;
-                        continue _fun48322;
+                        _fun48325_ip = 149;
+                        continue _fun48325;
                     case 140:
                         var6 = _closure3_slot1;
                         var2 = var6.backgroundColor;
@@ -237,13 +237,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = var7.bind(var6)(var1);
             var1 = var2.useAnimatedStyle;
             var0 = function() {
-                _fun48324: for (var _fun48324_ip = 0;;) switch (_fun48324_ip) {
+                _fun48327: for (var _fun48327_ip = 0;;) switch (_fun48327_ip) {
                     case 0:
                         var0 = _closure3_slot0;
                         var6 = 0.5;
                         if (!var0) {
-                            _fun48324_ip = 23;
-                            continue _fun48324
+                            _fun48327_ip = 23;
+                            continue _fun48327
                         }
                     case 20:
                         var6 = 1;
@@ -259,8 +259,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = _closure3_slot1;
                         var11 = 0;
                         if (!var2) {
-                            _fun48324_ip = 67;
-                            continue _fun48324
+                            _fun48327_ip = 67;
+                            continue _fun48327
                         }
                     case 64:
                         var11 = 1;
@@ -281,8 +281,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var9 = _closure3_slot1;
                         var3 = 1;
                         if (var9) {
-                            _fun48324_ip = 139;
-                            continue _fun48324
+                            _fun48327_ip = 139;
+                            continue _fun48327
                         }
                     case 136:
                         var3 = var6;

@@ -5,10 +5,10 @@ import android.util.AttributeSet;
 import androidx.annotation.NonNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class CircularProgressIndicator extends a {
-    public static final int A = yg.j.f54263q;
+    public static final int A = yg.j.f54260q;
 
     public CircularProgressIndicator(@NonNull Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, yg.b.f54091g);
+        this(context, attributeSet, yg.b.f54088g);
     }
 
     private void s() {

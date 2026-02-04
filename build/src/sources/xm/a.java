@@ -3,8 +3,8 @@ package xm;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private e f53398a = new e();
+    private e f53395a = new e();
 
     /* renamed from: b  reason: collision with root package name */
-    private e f53399b = new e();
+    private e f53396b = new e();
 }

@@ -9,11 +9,11 @@ import tc.b0;
 public final class j implements b0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final byte[] f49971a = new byte[RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT];
+    private final byte[] f49968a = new byte[RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT];
 
     @Override // tc.b0
     public int c(le.j jVar, int i10, boolean z10, int i11) {
-        int read = jVar.read(this.f49971a, 0, Math.min(this.f49971a.length, i10));
+        int read = jVar.read(this.f49968a, 0, Math.min(this.f49968a.length, i10));
         if (read == -1) {
             if (z10) {
                 return -1;

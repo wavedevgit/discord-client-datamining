@@ -11,53 +11,53 @@ public class d extends hf.a {
     public static final Parcelable.Creator<d> CREATOR = new g1();
 
     /* renamed from: d  reason: collision with root package name */
-    private final c0 f52251d;
+    private final c0 f52248d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final i1 f52252e;
+    private final i1 f52249e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final e f52253i;
+    private final e f52250i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final k1 f52254o;
+    private final k1 f52251o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final String f52255p;
+    private final String f52252p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d(c0 c0Var, i1 i1Var, e eVar, k1 k1Var, String str) {
-        this.f52251d = c0Var;
-        this.f52252e = i1Var;
-        this.f52253i = eVar;
-        this.f52254o = k1Var;
-        this.f52255p = str;
+        this.f52248d = c0Var;
+        this.f52249e = i1Var;
+        this.f52250i = eVar;
+        this.f52251o = k1Var;
+        this.f52252p = str;
     }
 
     public e b() {
-        return this.f52253i;
+        return this.f52250i;
     }
 
     public c0 c() {
-        return this.f52251d;
+        return this.f52248d;
     }
 
     public final JSONObject d() {
         try {
             JSONObject jSONObject = new JSONObject();
-            e eVar = this.f52253i;
+            e eVar = this.f52250i;
             if (eVar != null) {
                 jSONObject.put("credProps", eVar.c());
             }
-            c0 c0Var = this.f52251d;
+            c0 c0Var = this.f52248d;
             if (c0Var != null) {
                 jSONObject.put("uvm", c0Var.c());
             }
-            k1 k1Var = this.f52254o;
+            k1 k1Var = this.f52251o;
             if (k1Var != null) {
                 jSONObject.put("prf", k1Var.b());
             }
-            String str = this.f52255p;
+            String str = this.f52252p;
             if (str != null) {
                 jSONObject.put("txAuthSimple", str);
             }
@@ -72,14 +72,14 @@ public class d extends hf.a {
             return false;
         }
         d dVar = (d) obj;
-        if (!gf.o.a(this.f52251d, dVar.f52251d) || !gf.o.a(this.f52252e, dVar.f52252e) || !gf.o.a(this.f52253i, dVar.f52253i) || !gf.o.a(this.f52254o, dVar.f52254o) || !gf.o.a(this.f52255p, dVar.f52255p)) {
+        if (!gf.o.a(this.f52248d, dVar.f52248d) || !gf.o.a(this.f52249e, dVar.f52249e) || !gf.o.a(this.f52250i, dVar.f52250i) || !gf.o.a(this.f52251o, dVar.f52251o) || !gf.o.a(this.f52252p, dVar.f52252p)) {
             return false;
         }
         return true;
     }
 
     public int hashCode() {
-        return gf.o.b(this.f52251d, this.f52252e, this.f52253i, this.f52254o, this.f52255p);
+        return gf.o.b(this.f52248d, this.f52249e, this.f52250i, this.f52251o, this.f52252p);
     }
 
     public final String toString() {
@@ -91,10 +91,10 @@ public class d extends hf.a {
     public void writeToParcel(Parcel parcel, int i10) {
         int a10 = hf.c.a(parcel);
         hf.c.q(parcel, 1, c(), i10, false);
-        hf.c.q(parcel, 2, this.f52252e, i10, false);
+        hf.c.q(parcel, 2, this.f52249e, i10, false);
         hf.c.q(parcel, 3, b(), i10, false);
-        hf.c.q(parcel, 4, this.f52254o, i10, false);
-        hf.c.s(parcel, 5, this.f52255p, false);
+        hf.c.q(parcel, 4, this.f52251o, i10, false);
+        hf.c.s(parcel, 5, this.f52252p, false);
         hf.c.b(parcel, a10);
     }
 }

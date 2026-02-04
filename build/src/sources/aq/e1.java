@@ -40,7 +40,7 @@ public abstract class e1 {
                 textMonths = CollectionsKt.l();
             }
             Context a10 = uiComponentHelper.a();
-            int i10 = yp.f.f55224g;
+            int i10 = yp.f.f55221g;
             if (styles != null && (inputSelectStyle = styles.getInputSelectStyle()) != null) {
                 textBasedComponentStyle = inputSelectStyle.getTextBasedStyle();
             } else {

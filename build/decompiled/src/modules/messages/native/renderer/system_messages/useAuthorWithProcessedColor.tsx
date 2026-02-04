@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/useAuthorWithProcessedColor.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun55534: for (var _fun55534_ip = 0;;) switch (_fun55534_ip) {
+        _fun55537: for (var _fun55537_ip = 0;;) switch (_fun55537_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -48,8 +48,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var3 != var7;
                 var3 = undefined;
                 if (!var6) {
-                    _fun55534_ip = 89;
-                    continue _fun55534
+                    _fun55537_ip = 89;
+                    continue _fun55537
                 }
             case 80:
                 var6 = _closure1_slot2;
@@ -70,43 +70,45 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getMessageAuthorWithProcessedColor = var3;
     var1 = function arg0, arg1() {
-        _fun55535: for (var _fun55535_ip = 0;;) switch (_fun55535_ip) {
+        _fun55538: for (var _fun55538_ip = 0;;) switch (_fun55538_ip) {
             case 0:
-                var2 = _closure1_slot0;
+                var1 = _closure1_slot0;
                 var3 = _closure1_slot1;
                 var0 = 1;
                 var0 = var3[var0];
-                var4 = undefined;
-                var5 = var2.bind(var4)(var0);
-                var3 = var5.getUserAuthor;
-                var2 = arg0;
+                var5 = undefined;
+                var4 = var1.bind(var5)(var0);
+                var3 = var4.getUserAuthor;
+                var1 = arg0;
                 var0 = arg1;
-                var0 = var3.bind(var5)(var2, var0);
-                var2 = var0.nick;
-                var6 = var0.colorString;
-                var3 = var0.colorStrings;
+                var0 = var3.bind(var4)(var1, var0);
+                var3 = var0.nick;
+                var7 = var0.colorString;
+                var4 = var0.colorStrings;
+                var1 = var0.guildId;
                 var0 = {};
-                var0.nick = var2;
-                var2 = null;
-                var5 = var2 != var6;
-                var2 = undefined;
-                if (!var5) {
-                    _fun55535_ip = 88;
-                    continue _fun55535
+                var0.nick = var3;
+                var3 = null;
+                var6 = var3 != var7;
+                var3 = undefined;
+                if (!var6) {
+                    _fun55538_ip = 93;
+                    continue _fun55538
                 }
-            case 79:
-                var5 = _closure1_slot2;
-                var2 = var5.bind(var4)(var6);
-            case 88:
-                var0.colorString = var2;
-                var2 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var1 = 2;
-                var1 = var5[var1];
-                var2 = var2.bind(var4)(var1);
-                var1 = var2.processColorStrings;
-                var1 = var1.bind(var2)(var3);
-                var0.colorStrings = var1;
+            case 84:
+                var6 = _closure1_slot2;
+                var3 = var6.bind(var5)(var7);
+            case 93:
+                var0.colorString = var3;
+                var3 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var2 = 2;
+                var2 = var6[var2];
+                var3 = var3.bind(var5)(var2);
+                var2 = var3.processColorStrings;
+                var2 = var2.bind(var3)(var4);
+                var0.colorStrings = var2;
+                var0.guildId = var1;
                 return var0;
         }
     };

@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/game_update/native/GameUpdateFeedbackModule.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun118098: for (var _fun118098_ip = 0;;) switch (_fun118098_ip) {
+        _fun118111: for (var _fun118111_ip = 0;;) switch (_fun118111_ip) {
             case 0:
                 var0 = arg0;
                 var12 = var0.gameName;
@@ -123,8 +123,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var11 != var12;
                 var11 = '';
                 if (!var13) {
-                    _fun118098_ip = 209;
-                    continue _fun118098
+                    _fun118111_ip = 209;
+                    continue _fun118111
                 }
             case 206:
                 var11 = var12;
@@ -155,8 +155,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = 'interested';
                 var11 = var16;
                 if (!(var12 === var18)) {
-                    _fun118098_ip = 323;
-                    continue _fun118098
+                    _fun118111_ip = 323;
+                    continue _fun118111
                 }
             case 319:
                 var11 = 'active';
@@ -224,8 +224,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = {};
                 var17 = 'not_interested';
                 if (!(var17 === var18)) {
-                    _fun118098_ip = 513;
-                    continue _fun118098
+                    _fun118111_ip = 513;
+                    continue _fun118111
                 }
             case 507:
                 var16 = 'destructive';
@@ -291,4 +291,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.GameUpdateFeedbackModule = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 660, 33, 1297, 3941, 1234, 2532, 4084, 13583, 795, 13585, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 660, 33, 1297, 3941, 1234, 2532, 4084, 13584, 795, 13586, 2]);

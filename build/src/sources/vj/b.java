@@ -5,20 +5,20 @@ import android.media.Image;
 final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Image f51629a;
+    private final Image f51626a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(Image image) {
-        this.f51629a = image;
+        this.f51626a = image;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final Image a() {
-        return this.f51629a;
+        return this.f51626a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final Image.Plane[] b() {
-        return this.f51629a.getPlanes();
+        return this.f51626a.getPlanes();
     }
 }

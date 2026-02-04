@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/friends/screens/SuggestedFriendsScreen.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun108644: for (var _fun108644_ip = 0;;) switch (_fun108644_ip) {
+        _fun108657: for (var _fun108657_ip = 0;;) switch (_fun108657_ip) {
             case 0:
                 var0 = _closure1_slot9;
                 var3 = undefined;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7[2] = var11;
                 var7[3] = var2;
                 var2 = function(arg0, arg1) { // Environment: var1
-                    _fun108647: for (var _fun108647_ip = 0;;) switch (_fun108647_ip) {
+                    _fun108660: for (var _fun108660_ip = 0;;) switch (_fun108660_ip) {
                         case 0:
                             var3 = arg1;
                             var _closure3_slot0 = var3;
@@ -155,23 +155,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = var5 == var2;
                             var4 = undefined;
                             if (var7) {
-                                _fun108647_ip = 41;
-                                continue _fun108647
+                                _fun108660_ip = 41;
+                                continue _fun108660
                             }
                         case 35:
                             var4 = var2.mutualFriendsCount;
                         case 41:
                             var4 = var5 != var4;
                             if (!var4) {
-                                _fun108647_ip = 69;
-                                continue _fun108647
+                                _fun108660_ip = 69;
+                                continue _fun108660
                             }
                         case 48:
                             var5 = var5 == var2;
                             var6 = undefined;
                             if (var5) {
-                                _fun108647_ip = 63;
-                                continue _fun108647
+                                _fun108660_ip = 63;
+                                continue _fun108660
                             }
                         case 57:
                             var6 = var2.mutualFriendsCount;
@@ -190,8 +190,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0.type = var3;
                             var3 = 'contactSuggestionNoMutualCount';
                             if (!var4) {
-                                _fun108647_ip = 118;
-                                continue _fun108647
+                                _fun108660_ip = 118;
+                                continue _fun108660
                             }
                         case 112:
                             var3 = 'contactSuggestionMutualCount';
@@ -285,8 +285,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var14.length;
                 var8 = 0;
                 if (!(var8 === var10)) {
-                    _fun108644_ip = 449;
-                    continue _fun108644
+                    _fun108657_ip = 449;
+                    continue _fun108657
                 }
             case 327:
                 var11 = _closure1_slot7;
@@ -316,8 +316,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var11.bind(var3)(var16, var15);
                 var8.children = var15;
                 var8 = var11.bind(var3)(var10, var8);
-                _fun108644_ip = 523;
-                continue _fun108644;
+                _fun108657_ip = 523;
+                continue _fun108657;
             case 449:
                 var11 = _closure1_slot7;
                 var10 = _closure1_slot0;
@@ -347,4 +347,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 5726, 5579, 795, 13222, 7350, 14012, 8724, 9096, 9171, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 5726, 5579, 795, 13224, 7353, 14013, 8727, 9099, 9174, 1234, 2]);

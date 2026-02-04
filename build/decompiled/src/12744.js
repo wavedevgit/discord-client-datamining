@@ -1,161 +1,88 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = require;
     var1 = exports;
-    var4 = dependencyMap;
-    var5 = function arg0() {
-        _fun97537: for (var _fun97537_ip = 0;;) switch (_fun97537_ip) {
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = function arg0, arg1() {
+        _fun97514: for (var _fun97514_ip = 0;;) switch (_fun97514_ip) {
             case 0:
-                var2 = arg0;
-                if (!var2) {
-                    _fun97537_ip = 18;
-                    continue _fun97537
-                }
-            case 6:
-                var1 = var2.__esModule;
-                var0 = var2;
-                if (var1) {
-                    _fun97537_ip = 27;
-                    continue _fun97537
-                }
-            case 18:
+                var4 = arg0;
+                var3 = arg1;
+                var1 = undefined;
+                var0 = undefined;
+            case 10: // try_start_0
                 var1 = {};
-                var1.default = var2;
-                var0 = var1;
-            case 27:
+                var0 = {};
+                var2 = var4;
+                if (!var2) {
+                    _fun97514_ip = 105;
+                    continue _fun97514
+                }
+            case 20:
+                var2 = {};
+                var5 = global;
+                var8 = var5.Math;
+                var7 = var8.ceil;
+                var6 = var4.width;
+                var6 = var7.bind(var8)(var6);
+                var2.screenWidth = var6;
+                var7 = var5.Math;
+                var6 = var7.ceil;
+                var5 = var4.height;
+                var5 = var6.bind(var7)(var5);
+                var2.screenHeight = var5;
+                var5 = var4.scale;
+                var2.screenScale = var5;
+                var4 = var4.fontScale;
+                var2.screenFontScale = var4;
+                var1 = var2;
+            case 105:
+                var2 = var3;
+                if (!var2) {
+                    _fun97514_ip = 198;
+                    continue _fun97514
+                }
+            case 111:
+                var2 = {};
+                var4 = global;
+                var7 = var4.Math;
+                var6 = var7.ceil;
+                var5 = var3.width;
+                var5 = var6.bind(var7)(var5);
+                var2.windowWidth = var5;
+                var6 = var4.Math;
+                var5 = var6.ceil;
+                var4 = var3.height;
+                var4 = var5.bind(var6)(var4);
+                var2.windowHeight = var4;
+                var4 = var3.scale;
+                var2.windowScale = var4;
+                var3 = var3.fontScale;
+                var2.windowFontScale = var3;
+                var0 = var2;
+            case 198:
+                var2 = global;
+                var4 = var2.Object;
+                var3 = var4.assign;
+                var2 = var1;
+                var1 = var0;
+                var0 = {};
+                var0 = var3.bind(var4)(var0, var2, var1);
+            case 226: // try_end0
+                return var0;
+            case 228: // catch_target0
+                CatchBlockStart(arg_register = 0);
+                var0 = null;
                 return var0;
         }
     };
-    var0 = global;
-    var8 = var0.Object;
-    var7 = var8.defineProperty;
-    var6 = {};
-    var0 = true;
-    var6.value = var0;
-    var0 = '__esModule';
-    var0 = var7.bind(var8)(var1, var0, var6);
-    var0 = function() {
-        var0 = function() {
-            var0 = _closure1_slot1;
-            var1 = var0.default;
-            var0 = undefined;
-            var0 = var1.bind(var0)();
-            var _closure3_slot0 = var0;
-            var0 = {};
-            var1 = function arg0() {
-                _fun97540: for (var _fun97540_ip = 0;;) switch (_fun97540_ip) {
-                    case 0:
-                        var0 = arg0;
-                        var1 = var0.type;
-                        var3 = 'overlay';
-                        if (!(var3 === var1)) {
-                            _fun97540_ip = 41;
-                            continue _fun97540
-                        }
-                    case 16:
-                        var2 = _closure3_slot0;
-                        var1 = var2.emit;
-                        var0 = var0.payload;
-                        var0 = var1.bind(var2)(var3, var0);
-                    case 41:
-                        var0 = undefined;
-                        return var0;
-                }
-            };
-            var0.onCommand = var1;
-            var1 = {};
-            var2 = function arg0() {
-                var1 = arg0;
-                var _closure4_slot0 = var1;
-                var0 = function() { // Environment: var0
-                    _fun97542: for (var _fun97542_ip = 0;;) switch (_fun97542_ip) {
-                        case 0:
-                            var3 = undefined;
-                            var1 = undefined;
-                            var2 = arguments.length;
-                            var0 = 0;
-                            if (!(var2 > var0)) {
-                                _fun97542_ip = 21;
-                                continue _fun97542
-                            }
-                        case 13:
-                            var2 = arguments[var0];
-                            if (!(var3 === var2)) {
-                                _fun97542_ip = 25;
-                                continue _fun97542
-                            }
-                        case 21:
-                            var10 = {};
-                            _fun97542_ip = 29;
-                            continue _fun97542;
-                        case 25:
-                            var10 = arguments[var0];
-                        case 29:
-                            var0 = _closure1_slot3;
-                            var2 = var0.jsxs;
-                            var0 = _closure1_slot0;
-                            var1 = var0.View;
-                            var0 = {};
-                            var4 = {};
-                            var6 = 1;
-                            var4.flex = var6;
-                            var0.style = var4;
-                            var4 = _closure1_slot3;
-                            var7 = var4.jsx;
-                            var6 = _closure4_slot0;
-                            var4 = global;
-                            var9 = var4.Object;
-                            var8 = var9.assign;
-                            var4 = {};
-                            var4 = var8.bind(var9)(var4, var10);
-                            var6 = var7.bind(var3)(var6, var4);
-                            var4 = new Array(2);
-                            var4[0] = var6;
-                            var6 = _closure1_slot3;
-                            var7 = var6.jsx;
-                            var5 = _closure1_slot2;
-                            var6 = var5.default;
-                            var5 = {};
-                            var8 = _closure3_slot0;
-                            var5.emitter = var8;
-                            var5 = var7.bind(var3)(var6, var5);
-                            var4[1] = var5;
-                            var0.children = var4;
-                            var0 = var2.bind(var3)(var1, var0);
-                            return var0;
-                    }
-                };
-                return var0;
-            };
-            var1.overlay = var2;
-            var0.features = var1;
-            return var0;
-        };
-        return var0;
-    };
-    var1.default = var0;
-    var0 = 0;
-    var1 = var4[var0];
+    var1.getReactNativeDimensionsWithDimensions = var0;
     var0 = undefined;
-    var1 = var3.bind(var0)(var1);
-    var1 = var5.bind(var0)(var1);
-    var1 = 1;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var _closure1_slot0 = var1;
-    var1 = 2;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var5.bind(var0)(var1);
-    var _closure1_slot1 = var1;
-    var1 = 3;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var5.bind(var0)(var1);
-    var _closure1_slot2 = var1;
-    var1 = 4;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var _closure1_slot3 = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 12745, 12746, 33]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

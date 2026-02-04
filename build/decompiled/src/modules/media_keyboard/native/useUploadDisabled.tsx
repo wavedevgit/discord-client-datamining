@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = _closure1_slot4;
         var1[1] = var4;
         var0 = function() { // Environment: var0
-            _fun108316: for (var _fun108316_ip = 0;;) switch (_fun108316_ip) {
+            _fun108329: for (var _fun108329_ip = 0;;) switch (_fun108329_ip) {
                 case 0:
                     var5 = _closure1_slot4;
                     var2 = var5.getUploads;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot5;
                     var0 = var1 >= var0;
                     if (var0) {
-                        _fun108316_ip = 154;
-                        continue _fun108316
+                        _fun108329_ip = 154;
+                        continue _fun108329
                     }
                 case 57:
                     var1 = _closure2_slot0;
@@ -86,16 +86,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
                     var1 = var2 === var1;
                     if (var1) {
-                        _fun108316_ip = 151;
-                        continue _fun108316
+                        _fun108329_ip = 151;
+                        continue _fun108329
                     }
                 case 101:
                     var5 = _closure2_slot0;
                     var2 = var5.isPrivate;
                     var2 = var2.bind(var5)();
                     if (var2) {
-                        _fun108316_ip = 148;
-                        continue _fun108316
+                        _fun108329_ip = 148;
+                        continue _fun108329
                     }
                 case 118:
                     var6 = _closure1_slot3;

@@ -127,10 +127,10 @@ public final class o0 implements ym.c0 {
             context2 = context;
         }
         ip.a c10 = ip.a.c(LayoutInflater.from(context2).cloneInContext(context));
-        if (initialRendering.n() != vn.a.f51702i) {
+        if (initialRendering.n() != vn.a.f51699i) {
             Context applicationContext = context.getApplicationContext();
             Intrinsics.checkNotNullExpressionValue(applicationContext, "getApplicationContext(...)");
-            rn.m b10 = rn.j.b(applicationContext, rn.n.f49015d);
+            rn.m b10 = rn.j.b(applicationContext, rn.n.f49012d);
             if (b10 == null) {
                 initialRendering.h().invoke(new pn.s0());
                 Camera2PreviewView camera2Preview = c10.f30965c;

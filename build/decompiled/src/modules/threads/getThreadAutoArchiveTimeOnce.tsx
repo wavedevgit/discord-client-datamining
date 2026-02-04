@@ -7,14 +7,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var1 = function arg0() {
-        _fun41314: for (var _fun41314_ip = 0;;) switch (_fun41314_ip) {
+        _fun41317: for (var _fun41317_ip = 0;;) switch (_fun41317_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.threadMetadata;
                 var2 = null;
                 if (!(var2 != var1)) {
-                    _fun41314_ip = 175;
-                    continue _fun41314
+                    _fun41317_ip = 175;
+                    continue _fun41317
                 }
             case 18:
                 var5 = _closure1_slot2;
@@ -22,8 +22,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0.id;
                 var4 = var4.bind(var5)(var3);
                 if (!(var2 == var4)) {
-                    _fun41314_ip = 50;
-                    continue _fun41314
+                    _fun41317_ip = 50;
+                    continue _fun41317
                 }
             case 45:
                 var4 = var0.id;
@@ -41,8 +41,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2 != var1;
                 var2 = 0;
                 if (!var1) {
-                    _fun41314_ip = 154;
-                    continue _fun41314
+                    _fun41317_ip = 154;
+                    continue _fun41317
                 }
             case 104:
                 var1 = global;
@@ -93,14 +93,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/threads/getThreadAutoArchiveTimeOnce.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun41315: for (var _fun41315_ip = 0;;) switch (_fun41315_ip) {
+        _fun41318: for (var _fun41318_ip = 0;;) switch (_fun41318_ip) {
             case 0:
                 var3 = arg0;
                 var1 = var3.threadMetadata;
                 var0 = null;
                 if (!(var0 != var1)) {
-                    _fun41315_ip = 83;
-                    continue _fun41315
+                    _fun41318_ip = 83;
+                    continue _fun41318
                 }
             case 15:
                 var0 = var3.threadMetadata;

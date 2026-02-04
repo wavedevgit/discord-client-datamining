@@ -28,7 +28,7 @@ public final class SectionComponent extends BaseLayoutComponent {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8251id;
+    private final String f8250id;
     private final int type;
     @NotNull
     public static final Companion Companion = new Companion(null);
@@ -65,7 +65,7 @@ public final class SectionComponent extends BaseLayoutComponent {
             v1.b(i10, 27, SectionComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f8251id = str;
+        this.f8250id = str;
         if ((i10 & 4) == 0) {
             this.errorText = null;
         } else {
@@ -85,7 +85,7 @@ public final class SectionComponent extends BaseLayoutComponent {
             i10 = sectionComponent.type;
         }
         if ((i11 & 2) != 0) {
-            str = sectionComponent.f8251id;
+            str = sectionComponent.f8250id;
         }
         if ((i11 & 4) != 0) {
             str2 = sectionComponent.errorText;
@@ -120,7 +120,7 @@ public final class SectionComponent extends BaseLayoutComponent {
 
     @NotNull
     public final String component2() {
-        return this.f8251id;
+        return this.f8250id;
     }
 
     public final String component3() {
@@ -151,7 +151,7 @@ public final class SectionComponent extends BaseLayoutComponent {
         }
         if (obj instanceof SectionComponent) {
             SectionComponent sectionComponent = (SectionComponent) obj;
-            return this.type == sectionComponent.type && Intrinsics.areEqual(this.f8251id, sectionComponent.f8251id) && Intrinsics.areEqual(this.errorText, sectionComponent.errorText) && Intrinsics.areEqual(this.components, sectionComponent.components) && Intrinsics.areEqual(this.accessory, sectionComponent.accessory);
+            return this.type == sectionComponent.type && Intrinsics.areEqual(this.f8250id, sectionComponent.f8250id) && Intrinsics.areEqual(this.errorText, sectionComponent.errorText) && Intrinsics.areEqual(this.components, sectionComponent.components) && Intrinsics.areEqual(this.accessory, sectionComponent.accessory);
         }
         return false;
     }
@@ -174,7 +174,7 @@ public final class SectionComponent extends BaseLayoutComponent {
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f8251id;
+        return this.f8250id;
     }
 
     @Override // com.discord.chat.bridge.botuikit.Component
@@ -183,7 +183,7 @@ public final class SectionComponent extends BaseLayoutComponent {
     }
 
     public int hashCode() {
-        int hashCode = ((Integer.hashCode(this.type) * 31) + this.f8251id.hashCode()) * 31;
+        int hashCode = ((Integer.hashCode(this.type) * 31) + this.f8250id.hashCode()) * 31;
         String str = this.errorText;
         return ((((hashCode + (str == null ? 0 : str.hashCode())) * 31) + this.components.hashCode()) * 31) + this.accessory.hashCode();
     }
@@ -191,7 +191,7 @@ public final class SectionComponent extends BaseLayoutComponent {
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f8251id;
+        String str = this.f8250id;
         String str2 = this.errorText;
         List<SectionChildComponent<?>> list = this.components;
         SectionAccessory<?> sectionAccessory = this.accessory;
@@ -210,7 +210,7 @@ public final class SectionComponent extends BaseLayoutComponent {
         Intrinsics.checkNotNullParameter(components, "components");
         Intrinsics.checkNotNullParameter(accessory, "accessory");
         this.type = i10;
-        this.f8251id = id2;
+        this.f8250id = id2;
         this.errorText = str;
         this.components = components;
         this.accessory = accessory;

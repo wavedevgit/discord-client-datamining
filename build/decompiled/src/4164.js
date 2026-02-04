@@ -2,15 +2,15 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
     var2 = function arg0() {
-        _fun38020: for (var _fun38020_ip = 0;;) switch (_fun38020_ip) {
+        _fun38022: for (var _fun38022_ip = 0;;) switch (_fun38022_ip) {
             case 0:
                 var0 = arg0;
                 var1 = this;
                 var2 = 'MetadataMissingError';
                 var1.name = var2;
                 if (var0) {
-                    _fun38020_ip = 25;
-                    continue _fun38020
+                    _fun38022_ip = 25;
+                    continue _fun38022
                 }
             case 19:
                 var0 = 'No Exif data';

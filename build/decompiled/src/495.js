@@ -14,15 +14,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
     var0 = function arg0() {
-        _fun6416: for (var _fun6416_ip = 0;;) switch (_fun6416_ip) {
+        _fun6418: for (var _fun6418_ip = 0;;) switch (_fun6418_ip) {
             case 0:
                 var3 = arg0;
                 var1 = 'string';
                 var0 = typeof var3;
                 var0 = var1 === var0;
                 if (!var0) {
-                    _fun6416_ip = 51;
-                    continue _fun6416
+                    _fun6418_ip = 51;
+                    continue _fun6418
                 }
             case 17:
                 var4 = _closure1_slot0;

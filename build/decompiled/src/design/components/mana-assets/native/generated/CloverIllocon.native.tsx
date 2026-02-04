@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/CloverIllocon.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52479: for (var _fun52479_ip = 0;;) switch (_fun52479_ip) {
+        _fun52482: for (var _fun52482_ip = 0;;) switch (_fun52482_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.size;
                 var3 = undefined;
                 if (!(var7 === var3)) {
-                    _fun52479_ip = 32;
-                    continue _fun52479
+                    _fun52482_ip = 32;
+                    continue _fun52482
                 }
             case 29:
                 var7 = 64;

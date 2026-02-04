@@ -5,7 +5,7 @@ import android.util.SparseIntArray;
 public final class j {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final j f51257a = new j();
+    public static final j f51254a = new j();
 
     private j() {
     }

@@ -27,13 +27,13 @@ import zo.b;
 public final class b extends j {
 
     /* renamed from: q  reason: collision with root package name */
-    public static final a f56112q = new a(null);
+    public static final a f56109q = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements c0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ ym.f f56113a;
+        private final /* synthetic */ ym.f f56110a;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: zo.b$a$a  reason: collision with other inner class name */
@@ -66,7 +66,7 @@ public final class b extends j {
             Intrinsics.checkNotNullParameter(initialEnv, "initialEnv");
             Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
             b bVar = new b(contextForNewView, null, 0, 0, 14, null);
-            bVar.setId(g.f56121b);
+            bVar.setId(g.f56118b);
             bVar.setLayoutParams(new ViewGroup.LayoutParams(-1, -1));
             g0.a(bVar, initialRendering, initialEnv, new C0787a(bVar));
             return bVar;
@@ -78,16 +78,16 @@ public final class b extends j {
             Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
             Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
             Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-            return this.f56113a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+            return this.f56110a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
         }
 
         @Override // ym.c0
         public KClass getType() {
-            return this.f56113a.getType();
+            return this.f56110a.getType();
         }
 
         private a() {
-            this.f56113a = new ym.f(Reflection.getOrCreateKotlinClass(c.class), new Function4() { // from class: zo.a
+            this.f56110a = new ym.f(Reflection.getOrCreateKotlinClass(c.class), new Function4() { // from class: zo.a
                 @Override // kotlin.jvm.functions.Function4
                 public final Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
                     View c10;
@@ -113,7 +113,7 @@ public final class b extends j {
         while (true) {
             if (it.hasNext()) {
                 obj = it.next();
-                if (((View) obj).getTag(g.f56120a) instanceof Integer) {
+                if (((View) obj).getTag(g.f56117a) instanceof Integer) {
                     break;
                 }
             } else {
@@ -123,7 +123,7 @@ public final class b extends j {
         }
         View view2 = (View) obj;
         if (view2 != null) {
-            obj2 = view2.getTag(g.f56120a);
+            obj2 = view2.getTag(g.f56117a);
         } else {
             obj2 = null;
         }

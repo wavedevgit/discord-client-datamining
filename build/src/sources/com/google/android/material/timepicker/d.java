@@ -36,10 +36,10 @@ public abstract class d extends ConstraintLayout {
 
     public d(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        LayoutInflater.from(context).inflate(h.f54209i, this);
+        LayoutInflater.from(context).inflate(h.f54206i, this);
         h0.r0(this, i());
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, k.f54339g5, i10, 0);
-        this.f15233e = obtainStyledAttributes.getDimensionPixelSize(k.f54349h5, 0);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, k.f54336g5, i10, 0);
+        this.f15233e = obtainStyledAttributes.getDimensionPixelSize(k.f54346h5, 0);
         this.f15232d = new Runnable() { // from class: com.google.android.material.timepicker.c
             @Override // java.lang.Runnable
             public final void run() {
@@ -53,7 +53,7 @@ public abstract class d extends ConstraintLayout {
         Iterator it = list.iterator();
         float f10 = 0.0f;
         while (it.hasNext()) {
-            constraintSet.i(((View) it.next()).getId(), yg.f.f54172c, i10, f10);
+            constraintSet.i(((View) it.next()).getId(), yg.f.f54169c, i10, f10);
             f10 += 360.0f / list.size();
         }
     }
@@ -110,8 +110,8 @@ public abstract class d extends ConstraintLayout {
         HashMap hashMap = new HashMap();
         for (int i10 = 0; i10 < getChildCount(); i10++) {
             View childAt = getChildAt(i10);
-            if (childAt.getId() != yg.f.f54172c && !m(childAt)) {
-                int i11 = (Integer) childAt.getTag(yg.f.f54182m);
+            if (childAt.getId() != yg.f.f54169c && !m(childAt)) {
+                int i11 = (Integer) childAt.getTag(yg.f.f54179m);
                 if (i11 == null) {
                     i11 = 1;
                 }

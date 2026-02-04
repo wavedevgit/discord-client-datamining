@@ -869,11 +869,26 @@ public class SurfaceMountingManager {
         if (isStopped()) {
             return;
         }
+        if (ReactNativeFeatureFlags.useSilenceErrorSMMViewNotFound()) {
+            ViewState nullableViewState = getNullableViewState(i10);
+            if (nullableViewState != null && nullableViewState.mView != null) {
+                nullableViewState.mCurrentProps = new ReactStylesDiffMap(readableMap);
+                View view = nullableViewState.mView;
+                if (view == null) {
+                    SoftAssertions.assertUnreachable("Unable to find view for tag [" + i10 + "] when updating props. view not present on viewState");
+                    return;
+                }
+                ((ViewManager) db.a.c(nullableViewState.mViewManager)).updateProperties(view, nullableViewState.mCurrentProps);
+                return;
+            }
+            SoftAssertions.assertUnreachable("Unable to find view for tag [" + i10 + "] when updating props. viewState not found");
+            return;
+        }
         ViewState viewState = getViewState(i10);
         viewState.mCurrentProps = new ReactStylesDiffMap(readableMap);
-        View view = viewState.mView;
-        if (view != null) {
-            ((ViewManager) db.a.c(viewState.mViewManager)).updateProperties(view, viewState.mCurrentProps);
+        View view2 = viewState.mView;
+        if (view2 != null) {
+            ((ViewManager) db.a.c(viewState.mViewManager)).updateProperties(view2, viewState.mCurrentProps);
             return;
         }
         throw new IllegalStateException("Unable to find view for tag [" + i10 + "]");

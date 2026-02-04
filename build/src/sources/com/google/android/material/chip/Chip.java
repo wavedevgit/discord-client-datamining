@@ -46,7 +46,7 @@ import yg.k;
 import zg.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class Chip extends f implements a.InterfaceC0165a, n, Checkable {
-    private static final int H = j.f54262p;
+    private static final int H = j.f54259p;
     private static final Rect I = new Rect();
     private static final int[] J = {16842913};
     private static final int[] K = {16842911};
@@ -186,7 +186,7 @@ public class Chip extends f implements a.InterfaceC0165a, n, Checkable {
                 } else {
                     CharSequence text = Chip.this.getText();
                     Context context = Chip.this.getContext();
-                    int i11 = i.f54234k;
+                    int i11 = i.f54231k;
                     if (!TextUtils.isEmpty(text)) {
                         str = text;
                     }
@@ -211,7 +211,7 @@ public class Chip extends f implements a.InterfaceC0165a, n, Checkable {
     }
 
     public Chip(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, yg.b.f54089f);
+        this(context, attributeSet, yg.b.f54086f);
     }
 
     private void A() {
@@ -365,8 +365,8 @@ public class Chip extends f implements a.InterfaceC0165a, n, Checkable {
     }
 
     private void o(Context context, AttributeSet attributeSet, int i10) {
-        TypedArray i11 = l.i(context, attributeSet, k.f54493x0, i10, H, new int[0]);
-        this.f14443y = i11.getBoolean(k.f54305d1, false);
+        TypedArray i11 = l.i(context, attributeSet, k.f54490x0, i10, H, new int[0]);
+        this.f14443y = i11.getBoolean(k.f54302d1, false);
         this.A = (int) Math.ceil(i11.getDimension(k.R0, (float) Math.ceil(o.d(getContext(), 48))));
         i11.recycle();
     }
@@ -1664,13 +1664,13 @@ public class Chip extends f implements a.InterfaceC0165a, n, Checkable {
             r6.setChipDrawable(r7)
             float r1 = androidx.core.view.h0.u(r6)
             r7.W(r1)
-            int[] r2 = yg.k.f54493x0
+            int[] r2 = yg.k.f54490x0
             r1 = 0
             int[] r5 = new int[r1]
             r1 = r8
             r3 = r9
             android.content.res.TypedArray r8 = com.google.android.material.internal.l.i(r0, r1, r2, r3, r4, r5)
-            int r9 = yg.k.f54355i1
+            int r9 = yg.k.f54352i1
             boolean r9 = r8.hasValue(r9)
             r8.recycle()
             com.google.android.material.chip.Chip$c r8 = new com.google.android.material.chip.Chip$c

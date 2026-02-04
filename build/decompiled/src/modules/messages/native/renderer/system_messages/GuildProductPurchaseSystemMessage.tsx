@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/GuildProductPurchaseSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun55919: for (var _fun55919_ip = 0;;) switch (_fun55919_ip) {
+        _fun55922: for (var _fun55922_ip = 0;;) switch (_fun55922_ip) {
             case 0:
                 var0 = arg0;
                 var4 = {};
@@ -68,23 +68,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = undefined;
                 var12 = undefined;
                 if (var5) {
-                    _fun55919_ip = 122;
-                    continue _fun55919
+                    _fun55922_ip = 122;
+                    continue _fun55922
                 }
             case 101:
                 var1 = var1.guild_product_purchase;
                 var5 = var0 == var1;
                 var12 = undefined;
                 if (var5) {
-                    _fun55919_ip = 122;
-                    continue _fun55919
+                    _fun55922_ip = 122;
+                    continue _fun55922
                 }
             case 116:
                 var12 = var1.product_name;
             case 122:
                 if (!(var0 != var12)) {
-                    _fun55919_ip = 511;
-                    continue _fun55919
+                    _fun55922_ip = 511;
+                    continue _fun55922
                 }
             case 129:
                 var1 = var4.message;
@@ -97,8 +97,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0 == var7;
                 var14 = undefined;
                 if (var5) {
-                    _fun55919_ip = 183;
-                    continue _fun55919
+                    _fun55922_ip = 183;
+                    continue _fun55922
                 }
             case 173:
                 var5 = var7.getGuildId;
@@ -118,19 +118,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var8.bind(var3)(var5);
                 var8 = var9.ensureAvatarSource;
                 if (!(var0 != var15)) {
-                    _fun55919_ip = 252;
-                    continue _fun55919
+                    _fun55922_ip = 252;
+                    continue _fun55922
                 }
             case 248:
                 if (!(var0 == var14)) {
-                    _fun55919_ip = 265;
-                    continue _fun55919
+                    _fun55922_ip = 265;
+                    continue _fun55922
                 }
             case 252:
                 var5 = var6.getAvatarSource;
                 var5 = var5.bind(var6)(var3);
-                _fun55919_ip = 317;
-                continue _fun55919;
+                _fun55922_ip = 317;
+                continue _fun55922;
             case 265:
                 var11 = _closure1_slot0;
                 var13 = _closure1_slot2;

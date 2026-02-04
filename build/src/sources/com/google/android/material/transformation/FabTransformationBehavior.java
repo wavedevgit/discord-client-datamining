@@ -154,12 +154,12 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
         RectF rectF2 = this.f15252p;
         Q(view, rectF);
         V(view2, rectF2);
-        int i10 = iVar.f55962a & 7;
+        int i10 = iVar.f55959a & 7;
         if (i10 != 1) {
             if (i10 != 3) {
                 if (i10 != 5) {
                     f10 = 0.0f;
-                    return f10 + iVar.f55963b;
+                    return f10 + iVar.f55960b;
                 }
                 centerX = rectF2.right;
                 centerX2 = rectF.right;
@@ -172,7 +172,7 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
             centerX2 = rectF.centerX();
         }
         f10 = centerX - centerX2;
-        return f10 + iVar.f55963b;
+        return f10 + iVar.f55960b;
     }
 
     private float T(View view, View view2, i iVar) {
@@ -183,12 +183,12 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
         RectF rectF2 = this.f15252p;
         Q(view, rectF);
         V(view2, rectF2);
-        int i10 = iVar.f55962a & 112;
+        int i10 = iVar.f55959a & 112;
         if (i10 != 16) {
             if (i10 != 48) {
                 if (i10 != 80) {
                     f10 = 0.0f;
-                    return f10 + iVar.f55964c;
+                    return f10 + iVar.f55961c;
                 }
                 centerY = rectF2.bottom;
                 centerY2 = rectF.bottom;
@@ -201,7 +201,7 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
             centerY2 = rectF.centerY();
         }
         f10 = centerY - centerY2;
-        return f10 + iVar.f55964c;
+        return f10 + iVar.f55961c;
     }
 
     private float U(b bVar, h hVar, float f10, float f11) {
@@ -227,11 +227,11 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
         }
         if (z10) {
             if (!z11) {
-                d.f55950a.set(O, Float.valueOf(0.0f));
+                d.f55947a.set(O, Float.valueOf(0.0f));
             }
-            ofFloat = ObjectAnimator.ofFloat(O, d.f55950a, 1.0f);
+            ofFloat = ObjectAnimator.ofFloat(O, d.f55947a, 1.0f);
         } else {
-            ofFloat = ObjectAnimator.ofFloat(O, d.f55950a, 0.0f);
+            ofFloat = ObjectAnimator.ofFloat(O, d.f55947a, 0.0f);
         }
         bVar.f15260a.e("contentFade").a(ofFloat);
         list.add(ofFloat);

@@ -366,8 +366,8 @@ public final class c implements AnalyticsListener, d.a {
     }
 
     private static int j(m mVar) {
-        for (int i10 = 0; i10 < mVar.f48747o; i10++) {
-            UUID uuid = mVar.n(i10).f48749e;
+        for (int i10 = 0; i10 < mVar.f48744o; i10++) {
+            UUID uuid = mVar.n(i10).f48746e;
             if (uuid.equals(lc.d.f36655d)) {
                 return 3;
             }

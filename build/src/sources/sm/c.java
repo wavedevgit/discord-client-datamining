@@ -14,10 +14,10 @@ import lr.l;
 public final class c extends JSPointerDispatcher {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f49551b = new a(null);
+    public static final a f49548b = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Lazy f49552a;
+    private final Lazy f49549a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -33,7 +33,7 @@ public final class c extends JSPointerDispatcher {
     public c(ViewGroup viewGroup) {
         super(viewGroup);
         Intrinsics.checkNotNullParameter(viewGroup, "viewGroup");
-        this.f49552a = l.a(new Function0() { // from class: sm.b
+        this.f49549a = l.a(new Function0() { // from class: sm.b
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Method g10;
@@ -44,7 +44,7 @@ public final class c extends JSPointerDispatcher {
     }
 
     private final Method e() {
-        return (Method) this.f49552a.getValue();
+        return (Method) this.f49549a.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */

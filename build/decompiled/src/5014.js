@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = exports;
     var4 = dependencyMap;
     var0 = function() {
-        _fun45071: for (var _fun45071_ip = 0;;) switch (_fun45071_ip) {
+        _fun45074: for (var _fun45074_ip = 0;;) switch (_fun45074_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -25,8 +25,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun45071_ip = 74;
-                continue _fun45071;
+                _fun45074_ip = 74;
+                continue _fun45074;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -82,14 +82,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot6 = var3;
     var3 = function() { // Environment: var1
         var0 = function arg0, arg1() {
-            _fun45075: for (var _fun45075_ip = 0;;) switch (_fun45075_ip) {
+            _fun45078: for (var _fun45078_ip = 0;;) switch (_fun45078_ip) {
                 case 0:
                     var4 = arg0;
                     var0 = arg1;
                     var1 = undefined;
                     if (!(var1 !== var0)) {
-                        _fun45075_ip = 58;
-                        continue _fun45075
+                        _fun45078_ip = 58;
+                        continue _fun45078
                     }
                 case 12:
                     var3 = {};
@@ -101,8 +101,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var0.translationY;
                     var0 = var1 - var0;
                     var3.changeY = var0;
-                    _fun45075_ip = 85;
-                    continue _fun45075;
+                    _fun45078_ip = 85;
+                    continue _fun45078;
                 case 58:
                     var0 = {};
                     var1 = var4.translationX;
@@ -136,7 +136,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.ContinousBaseGesture;
     var1 = function(arg0) { // Environment: var1
         var3 = function() {
-            _fun45077: for (var _fun45077_ip = 0;;) switch (_fun45077_ip) {
+            _fun45080: for (var _fun45080_ip = 0;;) switch (_fun45080_ip) {
                 case 0:
                     var3 = this;
                     var0 = _closure1_slot0;
@@ -149,14 +149,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = _closure1_slot8;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun45077_ip = 62;
-                        continue _fun45077
+                        _fun45080_ip = 62;
+                        continue _fun45080
                     }
                 case 49:
                     var0 = var8.apply;
                     var0 = var0.bind(var8)(var3, var2);
-                    _fun45077_ip = 100;
-                    continue _fun45077;
+                    _fun45080_ip = 100;
+                    continue _fun45080;
                 case 62:
                     var5 = global;
                     var7 = var5.Reflect;
@@ -185,145 +185,6 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = 'activeOffsetY';
         var4.key = var0;
         var0 = function arg0() {
-            _fun45078: for (var _fun45078_ip = 0;;) switch (_fun45078_ip) {
-                case 0:
-                    var3 = arg0;
-                    var0 = this;
-                    var1 = global;
-                    var2 = var1.Array;
-                    var1 = var2.isArray;
-                    var2 = var1.bind(var2)(var3);
-                    var1 = 0;
-                    if (var2) {
-                        _fun45078_ip = 59;
-                        continue _fun45078
-                    }
-                case 29:
-                    if (!(!(var3 < var1))) {
-                        _fun45078_ip = 46;
-                        continue _fun45078
-                    }
-                case 33:
-                    var2 = var0.config;
-                    var2.activeOffsetYEnd = var3;
-                    _fun45078_ip = 92;
-                    continue _fun45078;
-                case 46:
-                    var2 = var0.config;
-                    var2.activeOffsetYStart = var3;
-                    _fun45078_ip = 92;
-                    continue _fun45078;
-                case 59:
-                    var2 = var0.config;
-                    var1 = var3[var1];
-                    var2.activeOffsetYStart = var1;
-                    var2 = var0.config;
-                    var1 = 1;
-                    var1 = var3[var1];
-                    var2.activeOffsetYEnd = var1;
-                case 92:
-                    return var0;
-            }
-        };
-        var4.value = var0;
-        var0 = new Array(14);
-        var0[0] = var4;
-        var4 = {};
-        var6 = 'activeOffsetX';
-        var4.key = var6;
-        var6 = function arg0() {
-            _fun45079: for (var _fun45079_ip = 0;;) switch (_fun45079_ip) {
-                case 0:
-                    var3 = arg0;
-                    var0 = this;
-                    var1 = global;
-                    var2 = var1.Array;
-                    var1 = var2.isArray;
-                    var2 = var1.bind(var2)(var3);
-                    var1 = 0;
-                    if (var2) {
-                        _fun45079_ip = 59;
-                        continue _fun45079
-                    }
-                case 29:
-                    if (!(!(var3 < var1))) {
-                        _fun45079_ip = 46;
-                        continue _fun45079
-                    }
-                case 33:
-                    var2 = var0.config;
-                    var2.activeOffsetXEnd = var3;
-                    _fun45079_ip = 92;
-                    continue _fun45079;
-                case 46:
-                    var2 = var0.config;
-                    var2.activeOffsetXStart = var3;
-                    _fun45079_ip = 92;
-                    continue _fun45079;
-                case 59:
-                    var2 = var0.config;
-                    var1 = var3[var1];
-                    var2.activeOffsetXStart = var1;
-                    var2 = var0.config;
-                    var1 = 1;
-                    var1 = var3[var1];
-                    var2.activeOffsetXEnd = var1;
-                case 92:
-                    return var0;
-            }
-        };
-        var4.value = var6;
-        var0[1] = var4;
-        var4 = {};
-        var6 = 'failOffsetY';
-        var4.key = var6;
-        var6 = function arg0() {
-            _fun45080: for (var _fun45080_ip = 0;;) switch (_fun45080_ip) {
-                case 0:
-                    var3 = arg0;
-                    var0 = this;
-                    var1 = global;
-                    var2 = var1.Array;
-                    var1 = var2.isArray;
-                    var2 = var1.bind(var2)(var3);
-                    var1 = 0;
-                    if (var2) {
-                        _fun45080_ip = 59;
-                        continue _fun45080
-                    }
-                case 29:
-                    if (!(!(var3 < var1))) {
-                        _fun45080_ip = 46;
-                        continue _fun45080
-                    }
-                case 33:
-                    var2 = var0.config;
-                    var2.failOffsetYEnd = var3;
-                    _fun45080_ip = 92;
-                    continue _fun45080;
-                case 46:
-                    var2 = var0.config;
-                    var2.failOffsetYStart = var3;
-                    _fun45080_ip = 92;
-                    continue _fun45080;
-                case 59:
-                    var2 = var0.config;
-                    var1 = var3[var1];
-                    var2.failOffsetYStart = var1;
-                    var2 = var0.config;
-                    var1 = 1;
-                    var1 = var3[var1];
-                    var2.failOffsetYEnd = var1;
-                case 92:
-                    return var0;
-            }
-        };
-        var4.value = var6;
-        var0[2] = var4;
-        var4 = {};
-        var6 = 'failOffsetX';
-        var4.key = var6;
-        var6 = function arg0() {
             _fun45081: for (var _fun45081_ip = 0;;) switch (_fun45081_ip) {
                 case 0:
                     var3 = arg0;
@@ -344,14 +205,153 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 case 33:
                     var2 = var0.config;
-                    var2.failOffsetXEnd = var3;
+                    var2.activeOffsetYEnd = var3;
                     _fun45081_ip = 92;
                     continue _fun45081;
                 case 46:
                     var2 = var0.config;
-                    var2.failOffsetXStart = var3;
+                    var2.activeOffsetYStart = var3;
                     _fun45081_ip = 92;
                     continue _fun45081;
+                case 59:
+                    var2 = var0.config;
+                    var1 = var3[var1];
+                    var2.activeOffsetYStart = var1;
+                    var2 = var0.config;
+                    var1 = 1;
+                    var1 = var3[var1];
+                    var2.activeOffsetYEnd = var1;
+                case 92:
+                    return var0;
+            }
+        };
+        var4.value = var0;
+        var0 = new Array(14);
+        var0[0] = var4;
+        var4 = {};
+        var6 = 'activeOffsetX';
+        var4.key = var6;
+        var6 = function arg0() {
+            _fun45082: for (var _fun45082_ip = 0;;) switch (_fun45082_ip) {
+                case 0:
+                    var3 = arg0;
+                    var0 = this;
+                    var1 = global;
+                    var2 = var1.Array;
+                    var1 = var2.isArray;
+                    var2 = var1.bind(var2)(var3);
+                    var1 = 0;
+                    if (var2) {
+                        _fun45082_ip = 59;
+                        continue _fun45082
+                    }
+                case 29:
+                    if (!(!(var3 < var1))) {
+                        _fun45082_ip = 46;
+                        continue _fun45082
+                    }
+                case 33:
+                    var2 = var0.config;
+                    var2.activeOffsetXEnd = var3;
+                    _fun45082_ip = 92;
+                    continue _fun45082;
+                case 46:
+                    var2 = var0.config;
+                    var2.activeOffsetXStart = var3;
+                    _fun45082_ip = 92;
+                    continue _fun45082;
+                case 59:
+                    var2 = var0.config;
+                    var1 = var3[var1];
+                    var2.activeOffsetXStart = var1;
+                    var2 = var0.config;
+                    var1 = 1;
+                    var1 = var3[var1];
+                    var2.activeOffsetXEnd = var1;
+                case 92:
+                    return var0;
+            }
+        };
+        var4.value = var6;
+        var0[1] = var4;
+        var4 = {};
+        var6 = 'failOffsetY';
+        var4.key = var6;
+        var6 = function arg0() {
+            _fun45083: for (var _fun45083_ip = 0;;) switch (_fun45083_ip) {
+                case 0:
+                    var3 = arg0;
+                    var0 = this;
+                    var1 = global;
+                    var2 = var1.Array;
+                    var1 = var2.isArray;
+                    var2 = var1.bind(var2)(var3);
+                    var1 = 0;
+                    if (var2) {
+                        _fun45083_ip = 59;
+                        continue _fun45083
+                    }
+                case 29:
+                    if (!(!(var3 < var1))) {
+                        _fun45083_ip = 46;
+                        continue _fun45083
+                    }
+                case 33:
+                    var2 = var0.config;
+                    var2.failOffsetYEnd = var3;
+                    _fun45083_ip = 92;
+                    continue _fun45083;
+                case 46:
+                    var2 = var0.config;
+                    var2.failOffsetYStart = var3;
+                    _fun45083_ip = 92;
+                    continue _fun45083;
+                case 59:
+                    var2 = var0.config;
+                    var1 = var3[var1];
+                    var2.failOffsetYStart = var1;
+                    var2 = var0.config;
+                    var1 = 1;
+                    var1 = var3[var1];
+                    var2.failOffsetYEnd = var1;
+                case 92:
+                    return var0;
+            }
+        };
+        var4.value = var6;
+        var0[2] = var4;
+        var4 = {};
+        var6 = 'failOffsetX';
+        var4.key = var6;
+        var6 = function arg0() {
+            _fun45084: for (var _fun45084_ip = 0;;) switch (_fun45084_ip) {
+                case 0:
+                    var3 = arg0;
+                    var0 = this;
+                    var1 = global;
+                    var2 = var1.Array;
+                    var1 = var2.isArray;
+                    var2 = var1.bind(var2)(var3);
+                    var1 = 0;
+                    if (var2) {
+                        _fun45084_ip = 59;
+                        continue _fun45084
+                    }
+                case 29:
+                    if (!(!(var3 < var1))) {
+                        _fun45084_ip = 46;
+                        continue _fun45084
+                    }
+                case 33:
+                    var2 = var0.config;
+                    var2.failOffsetXEnd = var3;
+                    _fun45084_ip = 92;
+                    continue _fun45084;
+                case 46:
+                    var2 = var0.config;
+                    var2.failOffsetXStart = var3;
+                    _fun45084_ip = 92;
+                    continue _fun45084;
                 case 59:
                     var2 = var0.config;
                     var1 = var3[var1];
@@ -484,7 +484,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1.changeEventCalculator = var0;
             var9 = _closure2_slot0;
             var3 = function arg0, arg1, arg2, arg3() {
-                _fun45092: for (var _fun45092_ip = 0;;) switch (_fun45092_ip) {
+                _fun45095: for (var _fun45095_ip = 0;;) switch (_fun45095_ip) {
                     case 0:
                         var4 = arg0;
                         var6 = arg2;
@@ -496,8 +496,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var7 = var0 & var2;
                         var0 = var4;
                         if (!var7) {
-                            _fun45092_ip = 44;
-                            continue _fun45092
+                            _fun45095_ip = 44;
+                            continue _fun45095
                         }
                     case 39:
                         var0 = var4.prototype;
@@ -511,16 +511,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = var0 & var2;
                         var0 = var4;
                         if (!var2) {
-                            _fun45092_ip = 98;
-                            continue _fun45092
+                            _fun45095_ip = 98;
+                            continue _fun45095
                         }
                     case 79:
                         var3 = 'function';
                         var2 = typeof var4;
                         var0 = var4;
                         if (!(var3 === var2)) {
-                            _fun45092_ip = 98;
-                            continue _fun45092
+                            _fun45095_ip = 98;
+                            continue _fun45095
                         }
                     case 93:
                         var0 = function(arg0) { // Environment: var1

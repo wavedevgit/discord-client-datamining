@@ -7,13 +7,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = /^\s+/;
     var _closure1_slot2 = var1;
     var1 = function arg0() {
-        _fun6951: for (var _fun6951_ip = 0;;) switch (_fun6951_ip) {
+        _fun6953: for (var _fun6953_ip = 0;;) switch (_fun6953_ip) {
             case 0:
                 var5 = arg0;
                 var0 = var5;
                 if (!var0) {
-                    _fun6951_ip = 75;
-                    continue _fun6951
+                    _fun6953_ip = 75;
+                    continue _fun6953
                 }
             case 9:
                 var4 = var5.slice;

@@ -13,16 +13,16 @@ public abstract class c {
     class a implements Supplier {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Throwable f53817a;
+        final /* synthetic */ Throwable f53814a;
 
         a(Throwable th2) {
-            this.f53817a = th2;
+            this.f53814a = th2;
         }
 
         @Override // com.facebook.common.internal.Supplier
         /* renamed from: a */
         public DataSource get() {
-            return c.b(this.f53817a);
+            return c.b(this.f53814a);
         }
     }
 
@@ -44,10 +44,10 @@ public abstract class c {
     public static class d {
 
         /* renamed from: a  reason: collision with root package name */
-        public Object f53821a;
+        public Object f53818a;
 
         private d() {
-            this.f53821a = null;
+            this.f53818a = null;
         }
     }
 
@@ -75,9 +75,9 @@ public abstract class c {
         } else if (!countDownLatch.await(j10, timeUnit)) {
             throw new TimeoutException();
         }
-        Object obj = dVar2.f53821a;
+        Object obj = dVar2.f53818a;
         if (obj == null) {
-            return dVar.f53821a;
+            return dVar.f53818a;
         }
         throw ((Throwable) obj);
     }
@@ -87,31 +87,31 @@ public abstract class c {
     public class b implements e {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ d f53818a;
+        final /* synthetic */ d f53815a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ CountDownLatch f53819b;
+        final /* synthetic */ CountDownLatch f53816b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ d f53820c;
+        final /* synthetic */ d f53817c;
 
         b(d dVar, CountDownLatch countDownLatch, d dVar2) {
-            this.f53818a = dVar;
-            this.f53819b = countDownLatch;
-            this.f53820c = dVar2;
+            this.f53815a = dVar;
+            this.f53816b = countDownLatch;
+            this.f53817c = dVar2;
         }
 
         @Override // y8.e
         public void onCancellation(DataSource dataSource) {
-            this.f53819b.countDown();
+            this.f53816b.countDown();
         }
 
         @Override // y8.e
         public void onFailure(DataSource dataSource) {
             try {
-                this.f53820c.f53821a = dataSource.b();
+                this.f53817c.f53818a = dataSource.b();
             } finally {
-                this.f53819b.countDown();
+                this.f53816b.countDown();
             }
         }
 
@@ -121,9 +121,9 @@ public abstract class c {
                 return;
             }
             try {
-                this.f53818a.f53821a = dataSource.getResult();
+                this.f53815a.f53818a = dataSource.getResult();
             } finally {
-                this.f53819b.countDown();
+                this.f53816b.countDown();
             }
         }
 

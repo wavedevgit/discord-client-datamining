@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7[18] = var11;
         var7[19] = var10;
         var5 = function() { // Environment: var5
-            _fun27465: for (var _fun27465_ip = 0;;) switch (_fun27465_ip) {
+            _fun27467: for (var _fun27467_ip = 0;;) switch (_fun27467_ip) {
                 case 0:
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
@@ -114,140 +114,140 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure2_slot0;
                     var5 = null;
                     if (!(var5 == var3)) {
-                        _fun27465_ip = 58;
-                        continue _fun27465
+                        _fun27467_ip = 58;
+                        continue _fun27467
                     }
                 case 46:
                     var3 = _closure2_slot10;
                     var3 = var3.theme;
-                    _fun27465_ip = 62;
-                    continue _fun27465;
+                    _fun27467_ip = 62;
+                    continue _fun27467;
                 case 58:
                     var3 = _closure2_slot0;
                 case 62:
                     var0.theme = var3;
                     var3 = _closure2_slot1;
                     if (!(var5 == var3)) {
-                        _fun27465_ip = 87;
-                        continue _fun27465
+                        _fun27467_ip = 87;
+                        continue _fun27467
                     }
                 case 75:
                     var3 = _closure2_slot10;
                     var3 = var3.primaryColor;
-                    _fun27465_ip = 91;
-                    continue _fun27465;
+                    _fun27467_ip = 91;
+                    continue _fun27467;
                 case 87:
                     var3 = _closure2_slot1;
                 case 91:
                     var0.primaryColor = var3;
                     var3 = _closure2_slot2;
                     if (!(var5 == var3)) {
-                        _fun27465_ip = 116;
-                        continue _fun27465
+                        _fun27467_ip = 116;
+                        continue _fun27467
                     }
                 case 104:
                     var3 = _closure2_slot10;
                     var3 = var3.secondaryColor;
-                    _fun27465_ip = 120;
-                    continue _fun27465;
+                    _fun27467_ip = 120;
+                    continue _fun27467;
                 case 116:
                     var3 = _closure2_slot2;
                 case 120:
                     var0.secondaryColor = var3;
                     var3 = _closure2_slot3;
                     if (!(var5 == var3)) {
-                        _fun27465_ip = 145;
-                        continue _fun27465
+                        _fun27467_ip = 145;
+                        continue _fun27467
                     }
                 case 133:
                     var3 = _closure2_slot10;
                     var3 = var3.gradient;
-                    _fun27465_ip = 149;
-                    continue _fun27465;
+                    _fun27467_ip = 149;
+                    continue _fun27467;
                 case 145:
                     var3 = _closure2_slot3;
                 case 149:
                     var0.gradient = var3;
                     var3 = _closure2_slot4;
                     if (!(var5 == var3)) {
-                        _fun27465_ip = 173;
-                        continue _fun27465
+                        _fun27467_ip = 173;
+                        continue _fun27467
                     }
                 case 162:
                     var3 = _closure2_slot10;
                     var3 = var3.flags;
-                    _fun27465_ip = 177;
-                    continue _fun27465;
+                    _fun27467_ip = 177;
+                    continue _fun27467;
                 case 173:
                     var3 = _closure2_slot4;
                 case 177:
                     var0.flags = var3;
                     var3 = _closure2_slot5;
                     if (!(var5 == var3)) {
-                        _fun27465_ip = 201;
-                        continue _fun27465
+                        _fun27467_ip = 201;
+                        continue _fun27467
                     }
                 case 189:
                     var3 = _closure2_slot10;
                     var3 = var3.contrast;
-                    _fun27465_ip = 205;
-                    continue _fun27465;
+                    _fun27467_ip = 205;
+                    continue _fun27467;
                 case 201:
                     var3 = _closure2_slot5;
                 case 205:
                     var0.contrast = var3;
                     var3 = _closure2_slot6;
                     if (!(var5 == var3)) {
-                        _fun27465_ip = 230;
-                        continue _fun27465
+                        _fun27467_ip = 230;
+                        continue _fun27467
                     }
                 case 218:
                     var3 = _closure2_slot10;
                     var3 = var3.saturation;
-                    _fun27465_ip = 234;
-                    continue _fun27465;
+                    _fun27467_ip = 234;
+                    continue _fun27467;
                 case 230:
                     var3 = _closure2_slot6;
                 case 234:
                     var0.saturation = var3;
                     var3 = _closure2_slot7;
                     if (!(var5 == var3)) {
-                        _fun27465_ip = 259;
-                        continue _fun27465
+                        _fun27467_ip = 259;
+                        continue _fun27467
                     }
                 case 247:
                     var3 = _closure2_slot10;
                     var3 = var3.density;
-                    _fun27465_ip = 263;
-                    continue _fun27465;
+                    _fun27467_ip = 263;
+                    continue _fun27467;
                 case 259:
                     var3 = _closure2_slot7;
                 case 263:
                     var0.density = var3;
                     var3 = _closure2_slot8;
                     if (!(var5 == var3)) {
-                        _fun27465_ip = 288;
-                        continue _fun27465
+                        _fun27467_ip = 288;
+                        continue _fun27467
                     }
                 case 276:
                     var3 = _closure2_slot10;
                     var3 = var3.disableAdaptiveTheme;
-                    _fun27465_ip = 292;
-                    continue _fun27465;
+                    _fun27467_ip = 292;
+                    continue _fun27467;
                 case 288:
                     var3 = _closure2_slot8;
                 case 292:
                     var0.disableAdaptiveTheme = var3;
                     var3 = _closure2_slot9;
                     if (!(var5 == var3)) {
-                        _fun27465_ip = 317;
-                        continue _fun27465
+                        _fun27467_ip = 317;
+                        continue _fun27467
                     }
                 case 305:
                     var3 = _closure2_slot10;
                     var3 = var3.reduceAdaptiveTheme;
-                    _fun27465_ip = 321;
-                    continue _fun27465;
+                    _fun27467_ip = 321;
+                    continue _fun27467;
                 case 317:
                     var3 = _closure2_slot9;
                 case 321:

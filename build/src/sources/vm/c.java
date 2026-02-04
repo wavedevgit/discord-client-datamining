@@ -28,28 +28,28 @@ import java.util.Set;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final Set f51689a;
+    public static final Set f51686a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final Type[] f51690b;
+    public static final Type[] f51687b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final Class f51691c;
+    public static final Class f51688c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Class f51692d;
+    private static final Class f51689d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Map f51693e;
+    private static final Map f51690e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements GenericArrayType {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Type f51694d;
+        private final Type f51691d;
 
         public a(Type type) {
-            this.f51694d = c.a(type);
+            this.f51691d = c.a(type);
         }
 
         public boolean equals(Object obj) {
@@ -61,15 +61,15 @@ public abstract class c {
 
         @Override // java.lang.reflect.GenericArrayType
         public Type getGenericComponentType() {
-            return this.f51694d;
+            return this.f51691d;
         }
 
         public int hashCode() {
-            return this.f51694d.hashCode();
+            return this.f51691d.hashCode();
         }
 
         public String toString() {
-            return c.v(this.f51694d) + "[]";
+            return c.v(this.f51691d) + "[]";
         }
     }
 
@@ -77,13 +77,13 @@ public abstract class c {
     public static final class b implements ParameterizedType {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Type f51695d;
+        private final Type f51692d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Type f51696e;
+        private final Type f51693e;
 
         /* renamed from: i  reason: collision with root package name */
-        public final Type[] f51697i;
+        public final Type[] f51694i;
 
         public b(Type type, Type type2, Type... typeArr) {
             Type a10;
@@ -102,16 +102,16 @@ public abstract class c {
             } else {
                 a10 = c.a(type);
             }
-            this.f51695d = a10;
-            this.f51696e = c.a(type2);
-            this.f51697i = (Type[]) typeArr.clone();
+            this.f51692d = a10;
+            this.f51693e = c.a(type2);
+            this.f51694i = (Type[]) typeArr.clone();
             int i10 = 0;
             while (true) {
-                Type[] typeArr2 = this.f51697i;
+                Type[] typeArr2 = this.f51694i;
                 if (i10 < typeArr2.length) {
                     typeArr2[i10].getClass();
-                    c.b(this.f51697i[i10]);
-                    Type[] typeArr3 = this.f51697i;
+                    c.b(this.f51694i[i10]);
+                    Type[] typeArr3 = this.f51694i;
                     typeArr3[i10] = c.a(typeArr3[i10]);
                     i10++;
                 } else {
@@ -129,34 +129,34 @@ public abstract class c {
 
         @Override // java.lang.reflect.ParameterizedType
         public Type[] getActualTypeArguments() {
-            return (Type[]) this.f51697i.clone();
+            return (Type[]) this.f51694i.clone();
         }
 
         @Override // java.lang.reflect.ParameterizedType
         public Type getOwnerType() {
-            return this.f51695d;
+            return this.f51692d;
         }
 
         @Override // java.lang.reflect.ParameterizedType
         public Type getRawType() {
-            return this.f51696e;
+            return this.f51693e;
         }
 
         public int hashCode() {
-            return (Arrays.hashCode(this.f51697i) ^ this.f51696e.hashCode()) ^ c.g(this.f51695d);
+            return (Arrays.hashCode(this.f51694i) ^ this.f51693e.hashCode()) ^ c.g(this.f51692d);
         }
 
         public String toString() {
-            StringBuilder sb2 = new StringBuilder((this.f51697i.length + 1) * 30);
-            sb2.append(c.v(this.f51696e));
-            if (this.f51697i.length == 0) {
+            StringBuilder sb2 = new StringBuilder((this.f51694i.length + 1) * 30);
+            sb2.append(c.v(this.f51693e));
+            if (this.f51694i.length == 0) {
                 return sb2.toString();
             }
             sb2.append("<");
-            sb2.append(c.v(this.f51697i[0]));
-            for (int i10 = 1; i10 < this.f51697i.length; i10++) {
+            sb2.append(c.v(this.f51694i[0]));
+            for (int i10 = 1; i10 < this.f51694i.length; i10++) {
                 sb2.append(", ");
-                sb2.append(c.v(this.f51697i[i10]));
+                sb2.append(c.v(this.f51694i[i10]));
             }
             sb2.append(">");
             return sb2.toString();
@@ -168,10 +168,10 @@ public abstract class c {
     public static final class C0683c implements WildcardType {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Type f51698d;
+        private final Type f51695d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Type f51699e;
+        private final Type f51696e;
 
         public C0683c(Type[] typeArr, Type[] typeArr2) {
             if (typeArr2.length <= 1) {
@@ -180,16 +180,16 @@ public abstract class c {
                         typeArr2[0].getClass();
                         c.b(typeArr2[0]);
                         if (typeArr[0] == Object.class) {
-                            this.f51699e = c.a(typeArr2[0]);
-                            this.f51698d = Object.class;
+                            this.f51696e = c.a(typeArr2[0]);
+                            this.f51695d = Object.class;
                             return;
                         }
                         throw new IllegalArgumentException();
                     }
                     typeArr[0].getClass();
                     c.b(typeArr[0]);
-                    this.f51699e = null;
-                    this.f51698d = c.a(typeArr[0]);
+                    this.f51696e = null;
+                    this.f51695d = c.a(typeArr[0]);
                     return;
                 }
                 throw new IllegalArgumentException();
@@ -206,33 +206,33 @@ public abstract class c {
 
         @Override // java.lang.reflect.WildcardType
         public Type[] getLowerBounds() {
-            Type type = this.f51699e;
-            return type != null ? new Type[]{type} : c.f51690b;
+            Type type = this.f51696e;
+            return type != null ? new Type[]{type} : c.f51687b;
         }
 
         @Override // java.lang.reflect.WildcardType
         public Type[] getUpperBounds() {
-            return new Type[]{this.f51698d};
+            return new Type[]{this.f51695d};
         }
 
         public int hashCode() {
             int i10;
-            Type type = this.f51699e;
+            Type type = this.f51696e;
             if (type != null) {
                 i10 = type.hashCode() + 31;
             } else {
                 i10 = 1;
             }
-            return i10 ^ (this.f51698d.hashCode() + 31);
+            return i10 ^ (this.f51695d.hashCode() + 31);
         }
 
         public String toString() {
-            if (this.f51699e != null) {
-                return "? super " + c.v(this.f51699e);
-            } else if (this.f51698d == Object.class) {
+            if (this.f51696e != null) {
+                return "? super " + c.v(this.f51696e);
+            } else if (this.f51695d == Object.class) {
                 return "?";
             } else {
-                return "? extends " + c.v(this.f51698d);
+                return "? extends " + c.v(this.f51695d);
             }
         }
     }
@@ -246,10 +246,10 @@ public abstract class c {
     static {
         /*
             java.util.Set r0 = java.util.Collections.EMPTY_SET
-            vm.c.f51689a = r0
+            vm.c.f51686a = r0
             r0 = 0
             java.lang.reflect.Type[] r0 = new java.lang.reflect.Type[r0]
-            vm.c.f51690b = r0
+            vm.c.f51687b = r0
             r0 = 0
             java.lang.String r1 = getKotlinMetadataClassName()     // Catch: java.lang.ClassNotFoundException -> L13
             java.lang.Class r1 = java.lang.Class.forName(r1)     // Catch: java.lang.ClassNotFoundException -> L13
@@ -257,10 +257,10 @@ public abstract class c {
         L13:
             r1 = r0
         L14:
-            vm.c.f51692d = r1
+            vm.c.f51689d = r1
             java.lang.Class<kotlin.jvm.internal.DefaultConstructorMarker> r0 = kotlin.jvm.internal.DefaultConstructorMarker.class
         L18:
-            vm.c.f51691c = r0
+            vm.c.f51688c = r0
             java.util.LinkedHashMap r0 = new java.util.LinkedHashMap
             r1 = 16
             r0.<init>(r1)
@@ -292,7 +292,7 @@ public abstract class c {
             java.lang.Class<java.lang.Void> r2 = java.lang.Void.class
             r0.put(r1, r2)
             java.util.Map r0 = java.util.Collections.unmodifiableMap(r0)
-            vm.c.f51693e = r0
+            vm.c.f51690e = r0
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: vm.c.<clinit>():void");
@@ -458,7 +458,7 @@ public abstract class c {
     }
 
     public static boolean i(Class cls) {
-        Class<? extends Annotation> cls2 = f51692d;
+        Class<? extends Annotation> cls2 = f51689d;
         if (cls2 != null && cls.isAnnotationPresent(cls2)) {
             return true;
         }
@@ -490,7 +490,7 @@ public abstract class c {
         if (linkedHashSet != null) {
             return Collections.unmodifiableSet(linkedHashSet);
         }
-        return f51689a;
+        return f51686a;
     }
 
     public static String m(String str, g gVar) {

@@ -65,4 +65,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.VoiceCallTriggerPoint = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1591, 7104, 14488, 3963, 3614, 14489, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1591, 7107, 14489, 3963, 3614, 14490, 2]);

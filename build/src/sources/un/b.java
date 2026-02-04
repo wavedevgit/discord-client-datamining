@@ -11,57 +11,57 @@ import un.a;
 public final class b implements un.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final SensorManager f50758a;
+    private final SensorManager f50755a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Sensor f50759b;
+    private final Sensor f50756b;
 
     /* renamed from: c  reason: collision with root package name */
-    private long f50760c;
+    private long f50757c;
 
     /* renamed from: d  reason: collision with root package name */
-    private double f50761d;
+    private double f50758d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f50762e;
+    private boolean f50759e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final a f50763f;
+    private final a f50760f;
 
     public b(Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
         Object systemService = context.getSystemService("sensor");
         Intrinsics.checkNotNull(systemService, "null cannot be cast to non-null type android.hardware.SensorManager");
         SensorManager sensorManager = (SensorManager) systemService;
-        this.f50758a = sensorManager;
-        this.f50759b = sensorManager.getDefaultSensor(4);
-        this.f50763f = new a();
+        this.f50755a = sensorManager;
+        this.f50756b = sensorManager.getDefaultSensor(4);
+        this.f50760f = new a();
     }
 
     @Override // un.a
     public a.C0638a a() {
         double d10;
-        long j10 = this.f50760c;
+        long j10 = this.f50757c;
         if (j10 == 0) {
             d10 = 0.0d;
         } else {
-            d10 = this.f50761d / j10;
+            d10 = this.f50758d / j10;
         }
         return new a.C0638a(d10);
     }
 
     @Override // un.a
     public void b() {
-        this.f50758a.unregisterListener(this.f50763f);
+        this.f50755a.unregisterListener(this.f50760f);
     }
 
     @Override // un.a
     public void c() {
-        if (!this.f50762e) {
-            this.f50762e = true;
-            Sensor sensor = this.f50759b;
+        if (!this.f50759e) {
+            this.f50759e = true;
+            Sensor sensor = this.f50756b;
             if (sensor != null) {
-                this.f50758a.registerListener(this.f50763f, sensor, 100000);
+                this.f50755a.registerListener(this.f50760f, sensor, 100000);
             }
         }
     }
@@ -79,8 +79,8 @@ public final class b implements un.a {
                 float f11 = fArr[1];
                 float f12 = fArr[2];
                 b bVar = b.this;
-                bVar.f50761d = ((bVar.f50761d * b.this.f50760c) + (((Math.abs(f10) + Math.abs(f11)) + Math.abs(f12)) / 3.0d)) / (b.this.f50760c + 1);
-                b.this.f50760c++;
+                bVar.f50758d = ((bVar.f50758d * b.this.f50757c) + (((Math.abs(f10) + Math.abs(f11)) + Math.abs(f12)) / 3.0d)) / (b.this.f50757c + 1);
+                b.this.f50757c++;
             }
         }
 

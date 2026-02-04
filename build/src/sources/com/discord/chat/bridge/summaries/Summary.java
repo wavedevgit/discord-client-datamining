@@ -37,7 +37,7 @@ public final class Summary {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8280id;
+    private final String f8279id;
     @NotNull
     private final List<UserId> people;
     @NotNull
@@ -86,7 +86,7 @@ public final class Summary {
     /* renamed from: copy-H5KhIT0$default  reason: not valid java name */
     public static /* synthetic */ Summary m426copyH5KhIT0$default(Summary summary, String str, String str2, String str3, List list, String str4, String str5, int i10, long j10, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            str = summary.f8280id;
+            str = summary.f8279id;
         }
         if ((i11 & 2) != 0) {
             str2 = summary.topic;
@@ -120,7 +120,7 @@ public final class Summary {
 
     public static final /* synthetic */ void write$Self$chat_release(Summary summary, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         Lazy[] lazyArr = $childSerializers;
-        compositeEncoder.y(serialDescriptor, 0, summary.f8280id);
+        compositeEncoder.y(serialDescriptor, 0, summary.f8279id);
         compositeEncoder.y(serialDescriptor, 1, summary.topic);
         compositeEncoder.y(serialDescriptor, 2, summary.summShort);
         compositeEncoder.D(serialDescriptor, 3, (at.o) lazyArr[3].getValue(), summary.people);
@@ -133,7 +133,7 @@ public final class Summary {
 
     @NotNull
     public final String component1() {
-        return this.f8280id;
+        return this.f8279id;
     }
 
     @NotNull
@@ -190,7 +190,7 @@ public final class Summary {
         }
         if (obj instanceof Summary) {
             Summary summary = (Summary) obj;
-            return Intrinsics.areEqual(this.f8280id, summary.f8280id) && Intrinsics.areEqual(this.topic, summary.topic) && Intrinsics.areEqual(this.summShort, summary.summShort) && Intrinsics.areEqual(this.people, summary.people) && MessageId.m1089equalsimpl0(this.startId, summary.startId) && MessageId.m1089equalsimpl0(this.endId, summary.endId) && this.count == summary.count && ChannelId.m1063equalsimpl0(this.channelId, summary.channelId);
+            return Intrinsics.areEqual(this.f8279id, summary.f8279id) && Intrinsics.areEqual(this.topic, summary.topic) && Intrinsics.areEqual(this.summShort, summary.summShort) && Intrinsics.areEqual(this.people, summary.people) && MessageId.m1089equalsimpl0(this.startId, summary.startId) && MessageId.m1089equalsimpl0(this.endId, summary.endId) && this.count == summary.count && ChannelId.m1063equalsimpl0(this.channelId, summary.channelId);
         }
         return false;
     }
@@ -212,7 +212,7 @@ public final class Summary {
 
     @NotNull
     public final String getId() {
-        return this.f8280id;
+        return this.f8279id;
     }
 
     @NotNull
@@ -237,12 +237,12 @@ public final class Summary {
     }
 
     public int hashCode() {
-        return (((((((((((((this.f8280id.hashCode() * 31) + this.topic.hashCode()) * 31) + this.summShort.hashCode()) * 31) + this.people.hashCode()) * 31) + MessageId.m1090hashCodeimpl(this.startId)) * 31) + MessageId.m1090hashCodeimpl(this.endId)) * 31) + Integer.hashCode(this.count)) * 31) + ChannelId.m1064hashCodeimpl(this.channelId);
+        return (((((((((((((this.f8279id.hashCode() * 31) + this.topic.hashCode()) * 31) + this.summShort.hashCode()) * 31) + this.people.hashCode()) * 31) + MessageId.m1090hashCodeimpl(this.startId)) * 31) + MessageId.m1090hashCodeimpl(this.endId)) * 31) + Integer.hashCode(this.count)) * 31) + ChannelId.m1064hashCodeimpl(this.channelId);
     }
 
     @NotNull
     public String toString() {
-        String str = this.f8280id;
+        String str = this.f8279id;
         String str2 = this.topic;
         String str3 = this.summShort;
         List<UserId> list = this.people;
@@ -261,7 +261,7 @@ public final class Summary {
         if (255 != (i10 & SetSpanOperation.SPAN_MAX_PRIORITY)) {
             v1.b(i10, SetSpanOperation.SPAN_MAX_PRIORITY, Summary$$serializer.INSTANCE.getDescriptor());
         }
-        this.f8280id = str;
+        this.f8279id = str;
         this.topic = str2;
         this.summShort = str3;
         this.people = list;
@@ -278,7 +278,7 @@ public final class Summary {
         Intrinsics.checkNotNullParameter(people, "people");
         Intrinsics.checkNotNullParameter(startId, "startId");
         Intrinsics.checkNotNullParameter(endId, "endId");
-        this.f8280id = id2;
+        this.f8279id = id2;
         this.topic = topic;
         this.summShort = summShort;
         this.people = people;

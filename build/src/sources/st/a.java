@@ -10,16 +10,16 @@ import nt.p;
 public final class a implements o {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f49623a;
+    private static final Map f49620a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final p f49624b;
+    private static final p f49621b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Map f49625c;
+    private static final Map f49622c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final p f49626d;
+    private static final p f49623d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: st.a$a  reason: collision with other inner class name */
@@ -27,17 +27,17 @@ public final class a implements o {
     public static /* synthetic */ class C0614a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f49627a;
+        static final /* synthetic */ int[] f49624a;
 
         static {
             int[] iArr = new int[k.values().length];
-            f49627a = iArr;
+            f49624a = iArr;
             try {
                 iArr[k.CARDINALS.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f49627a[k.ORDINALS.ordinal()] = 2;
+                f49624a[k.ORDINALS.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
         }
@@ -48,14 +48,14 @@ public final class a implements o {
     public static class b extends p {
 
         /* renamed from: g  reason: collision with root package name */
-        private final int f49628g;
+        private final int f49625g;
 
         /* synthetic */ b(int i10, C0614a c0614a) {
             this(i10);
         }
 
         private b(int i10) {
-            this.f49628g = i10;
+            this.f49625g = i10;
         }
     }
 
@@ -64,21 +64,21 @@ public final class a implements o {
     public static class c extends p {
 
         /* renamed from: g  reason: collision with root package name */
-        private final int f49629g;
+        private final int f49626g;
 
         /* synthetic */ c(int i10, C0614a c0614a) {
             this(i10);
         }
 
         private c(int i10) {
-            this.f49629g = i10;
+            this.f49626g = i10;
         }
     }
 
     static {
         HashMap hashMap = new HashMap(140);
-        f49623a = hashMap;
-        f49624b = new b(0, null);
+        f49620a = hashMap;
+        f49621b = new b(0, null);
         HashMap hashMap2 = new HashMap();
         b(hashMap2, "bm bo dz id ig ii in ja jbo jv jw kde kea km ko lkt", -1);
         b(hashMap2, "lo ms my nqo root sah ses sg th to vi wo yo zh", -1);
@@ -115,8 +115,8 @@ public final class a implements o {
         b(hashMap2, "kw", 26);
         hashMap.putAll(hashMap2);
         HashMap hashMap3 = new HashMap(140);
-        f49625c = hashMap3;
-        f49626d = new c(0, null);
+        f49622c = hashMap3;
+        f49623d = new c(0, null);
         HashMap hashMap4 = new HashMap();
         c(hashMap4, "sv", 1);
         c(hashMap4, "fil fr ga hy lo mo ms ro tl vi", 2);
@@ -160,17 +160,17 @@ public final class a implements o {
         Map map;
         p pVar;
         p pVar2;
-        int i10 = C0614a.f49627a[kVar.ordinal()];
+        int i10 = C0614a.f49624a[kVar.ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
-                map = f49625c;
-                pVar = f49626d;
+                map = f49622c;
+                pVar = f49623d;
             } else {
                 throw new UnsupportedOperationException(kVar.name());
             }
         } else {
-            map = f49623a;
-            pVar = f49624b;
+            map = f49620a;
+            pVar = f49621b;
         }
         String country = locale.getCountry();
         if (!country.isEmpty()) {

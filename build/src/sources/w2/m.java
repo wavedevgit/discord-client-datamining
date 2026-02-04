@@ -31,43 +31,43 @@ import ms.l0;
 public final class m implements w2.f {
 
     /* renamed from: k  reason: collision with root package name */
-    public static final a f51875k = new a(null);
+    public static final a f51872k = new a(null);
 
     /* renamed from: l  reason: collision with root package name */
-    private static final Set f51876l = new LinkedHashSet();
+    private static final Set f51873l = new LinkedHashSet();
 
     /* renamed from: m  reason: collision with root package name */
-    private static final Object f51877m = new Object();
+    private static final Object f51874m = new Object();
 
     /* renamed from: a  reason: collision with root package name */
-    private final Function0 f51878a;
+    private final Function0 f51875a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final w2.k f51879b;
+    private final w2.k f51876b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final w2.b f51880c;
+    private final w2.b f51877c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final CoroutineScope f51881d;
+    private final CoroutineScope f51878d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Flow f51882e;
+    private final Flow f51879e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f51883f;
+    private final String f51880f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Lazy f51884g;
+    private final Lazy f51881g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final MutableStateFlow f51885h;
+    private final MutableStateFlow f51882h;
 
     /* renamed from: i  reason: collision with root package name */
-    private List f51886i;
+    private List f51883i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final w2.l f51887j;
+    private final w2.l f51884j;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -76,11 +76,11 @@ public final class m implements w2.f {
         }
 
         public final Set a() {
-            return m.f51876l;
+            return m.f51873l;
         }
 
         public final Object b() {
-            return m.f51877m;
+            return m.f51874m;
         }
 
         private a() {
@@ -95,15 +95,15 @@ public final class m implements w2.f {
         public static final class a extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final w2.n f51888a;
+            private final w2.n f51885a;
 
             public a(w2.n nVar) {
                 super(null);
-                this.f51888a = nVar;
+                this.f51885a = nVar;
             }
 
             public w2.n a() {
-                return this.f51888a;
+                return this.f51885a;
             }
         }
 
@@ -112,16 +112,16 @@ public final class m implements w2.f {
         public static final class C0691b extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final Function2 f51889a;
+            private final Function2 f51886a;
 
             /* renamed from: b  reason: collision with root package name */
-            private final CompletableDeferred f51890b;
+            private final CompletableDeferred f51887b;
 
             /* renamed from: c  reason: collision with root package name */
-            private final w2.n f51891c;
+            private final w2.n f51888c;
 
             /* renamed from: d  reason: collision with root package name */
-            private final CoroutineContext f51892d;
+            private final CoroutineContext f51889d;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public C0691b(Function2 transform, CompletableDeferred ack, w2.n nVar, CoroutineContext callerContext) {
@@ -129,26 +129,26 @@ public final class m implements w2.f {
                 Intrinsics.checkNotNullParameter(transform, "transform");
                 Intrinsics.checkNotNullParameter(ack, "ack");
                 Intrinsics.checkNotNullParameter(callerContext, "callerContext");
-                this.f51889a = transform;
-                this.f51890b = ack;
-                this.f51891c = nVar;
-                this.f51892d = callerContext;
+                this.f51886a = transform;
+                this.f51887b = ack;
+                this.f51888c = nVar;
+                this.f51889d = callerContext;
             }
 
             public final CompletableDeferred a() {
-                return this.f51890b;
+                return this.f51887b;
             }
 
             public final CoroutineContext b() {
-                return this.f51892d;
+                return this.f51889d;
             }
 
             public w2.n c() {
-                return this.f51891c;
+                return this.f51888c;
             }
 
             public final Function2 d() {
-                return this.f51889a;
+                return this.f51886a;
             }
         }
 
@@ -165,33 +165,33 @@ public final class m implements w2.f {
     public static final class c extends OutputStream {
 
         /* renamed from: d  reason: collision with root package name */
-        private final FileOutputStream f51893d;
+        private final FileOutputStream f51890d;
 
         public c(FileOutputStream fileOutputStream) {
             Intrinsics.checkNotNullParameter(fileOutputStream, "fileOutputStream");
-            this.f51893d = fileOutputStream;
+            this.f51890d = fileOutputStream;
         }
 
         @Override // java.io.OutputStream, java.io.Flushable
         public void flush() {
-            this.f51893d.flush();
+            this.f51890d.flush();
         }
 
         @Override // java.io.OutputStream
         public void write(int i10) {
-            this.f51893d.write(i10);
+            this.f51890d.write(i10);
         }
 
         @Override // java.io.OutputStream
         public void write(byte[] b10) {
             Intrinsics.checkNotNullParameter(b10, "b");
-            this.f51893d.write(b10);
+            this.f51890d.write(b10);
         }
 
         @Override // java.io.OutputStream
         public void write(byte[] bytes, int i10, int i11) {
             Intrinsics.checkNotNullParameter(bytes, "bytes");
-            this.f51893d.write(bytes, i10, i11);
+            this.f51890d.write(bytes, i10, i11);
         }
 
         @Override // java.io.OutputStream, java.io.Closeable, java.lang.AutoCloseable
@@ -213,9 +213,9 @@ public final class m implements w2.f {
 
         public final void invoke(Throwable th2) {
             if (th2 != null) {
-                m.this.f51885h.setValue(new w2.h(th2));
+                m.this.f51882h.setValue(new w2.h(th2));
             }
-            a aVar = m.f51875k;
+            a aVar = m.f51872k;
             Object b10 = aVar.b();
             m mVar = m.this;
             synchronized (b10) {
@@ -229,7 +229,7 @@ public final class m implements w2.f {
     static final class e extends Lambda implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final e f51895d = new e();
+        public static final e f51892d = new e();
 
         e() {
             super(2);
@@ -257,10 +257,10 @@ public final class m implements w2.f {
     static final class f extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f51896d;
+        int f51893d;
 
         /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f51897e;
+        /* synthetic */ Object f51894e;
 
         f(Continuation continuation) {
             super(2, continuation);
@@ -269,15 +269,15 @@ public final class m implements w2.f {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             f fVar = new f(continuation);
-            fVar.f51897e = obj;
+            fVar.f51894e = obj;
             return fVar;
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:13:0x0030, code lost:
-            if (r4.f51898i.r((w2.m.b.a) r5, r4) == r0) goto L15;
+            if (r4.f51895i.r((w2.m.b.a) r5, r4) == r0) goto L15;
          */
         /* JADX WARN: Code restructure failed: missing block: B:18:0x0041, code lost:
-            if (r4.f51898i.s((w2.m.b.C0691b) r5, r4) == r0) goto L15;
+            if (r4.f51895i.s((w2.m.b.C0691b) r5, r4) == r0) goto L15;
          */
         /* JADX WARN: Code restructure failed: missing block: B:19:0x0043, code lost:
             return r0;
@@ -291,7 +291,7 @@ public final class m implements w2.f {
             /*
                 r4 = this;
                 java.lang.Object r0 = rr.b.f()
-                int r1 = r4.f51896d
+                int r1 = r4.f51893d
                 r2 = 2
                 r3 = 1
                 if (r1 == 0) goto L1b
@@ -308,13 +308,13 @@ public final class m implements w2.f {
                 goto L44
             L1b:
                 kotlin.c.b(r5)
-                java.lang.Object r5 = r4.f51897e
+                java.lang.Object r5 = r4.f51894e
                 w2.m$b r5 = (w2.m.b) r5
                 boolean r1 = r5 instanceof w2.m.b.a
                 if (r1 == 0) goto L33
                 w2.m r1 = w2.m.this
                 w2.m$b$a r5 = (w2.m.b.a) r5
-                r4.f51896d = r3
+                r4.f51893d = r3
                 java.lang.Object r5 = w2.m.h(r1, r5, r4)
                 if (r5 != r0) goto L44
                 goto L43
@@ -323,7 +323,7 @@ public final class m implements w2.f {
                 if (r1 == 0) goto L44
                 w2.m r1 = w2.m.this
                 w2.m$b$b r5 = (w2.m.b.C0691b) r5
-                r4.f51896d = r2
+                r4.f51893d = r2
                 java.lang.Object r5 = w2.m.i(r1, r5, r4)
                 if (r5 != r0) goto L44
             L43:
@@ -346,44 +346,44 @@ public final class m implements w2.f {
     static final class g extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f51899d;
+        int f51896d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f51900e;
+        private /* synthetic */ Object f51897e;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f51902d;
+            int f51899d;
 
             /* renamed from: e  reason: collision with root package name */
-            /* synthetic */ Object f51903e;
+            /* synthetic */ Object f51900e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ w2.n f51904i;
+            final /* synthetic */ w2.n f51901i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(w2.n nVar, Continuation continuation) {
                 super(2, continuation);
-                this.f51904i = nVar;
+                this.f51901i = nVar;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                a aVar = new a(this.f51904i, continuation);
-                aVar.f51903e = obj;
+                a aVar = new a(this.f51901i, continuation);
+                aVar.f51900e = obj;
                 return aVar;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 rr.b.f();
-                if (this.f51902d == 0) {
+                if (this.f51899d == 0) {
                     kotlin.c.b(obj);
-                    w2.n nVar = (w2.n) this.f51903e;
-                    w2.n nVar2 = this.f51904i;
+                    w2.n nVar = (w2.n) this.f51900e;
+                    w2.n nVar2 = this.f51901i;
                     boolean z10 = false;
                     if (!(nVar2 instanceof w2.c) && !(nVar2 instanceof w2.h) && nVar == nVar2) {
                         z10 = true;
@@ -404,23 +404,23 @@ public final class m implements w2.f {
         public static final class b implements Flow {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ Flow f51905d;
+            final /* synthetic */ Flow f51902d;
 
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
             public static final class a implements FlowCollector {
 
                 /* renamed from: d  reason: collision with root package name */
-                final /* synthetic */ FlowCollector f51906d;
+                final /* synthetic */ FlowCollector f51903d;
 
                 /* renamed from: w2.m$g$b$a$a  reason: collision with other inner class name */
                 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
                 public static final class C0692a extends kotlin.coroutines.jvm.internal.d {
 
                     /* renamed from: d  reason: collision with root package name */
-                    /* synthetic */ Object f51907d;
+                    /* synthetic */ Object f51904d;
 
                     /* renamed from: e  reason: collision with root package name */
-                    int f51908e;
+                    int f51905e;
 
                     public C0692a(Continuation continuation) {
                         super(continuation);
@@ -428,14 +428,14 @@ public final class m implements w2.f {
 
                     @Override // kotlin.coroutines.jvm.internal.a
                     public final Object invokeSuspend(Object obj) {
-                        this.f51907d = obj;
-                        this.f51908e |= Integer.MIN_VALUE;
+                        this.f51904d = obj;
+                        this.f51905e |= Integer.MIN_VALUE;
                         return a.this.emit(null, this);
                     }
                 }
 
                 public a(FlowCollector flowCollector) {
-                    this.f51906d = flowCollector;
+                    this.f51903d = flowCollector;
                 }
 
                 /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
@@ -452,20 +452,20 @@ public final class m implements w2.f {
                         if (r0 == 0) goto L13
                         r0 = r6
                         w2.m$g$b$a$a r0 = (w2.m.g.b.a.C0692a) r0
-                        int r1 = r0.f51908e
+                        int r1 = r0.f51905e
                         r2 = -2147483648(0xffffffff80000000, float:-0.0)
                         r3 = r1 & r2
                         if (r3 == 0) goto L13
                         int r1 = r1 - r2
-                        r0.f51908e = r1
+                        r0.f51905e = r1
                         goto L18
                     L13:
                         w2.m$g$b$a$a r0 = new w2.m$g$b$a$a
                         r0.<init>(r6)
                     L18:
-                        java.lang.Object r6 = r0.f51907d
+                        java.lang.Object r6 = r0.f51904d
                         java.lang.Object r1 = rr.b.f()
-                        int r2 = r0.f51908e
+                        int r2 = r0.f51905e
                         r3 = 1
                         if (r2 == 0) goto L31
                         if (r2 != r3) goto L29
@@ -478,7 +478,7 @@ public final class m implements w2.f {
                         throw r5
                     L31:
                         kotlin.c.b(r6)
-                        kotlinx.coroutines.flow.FlowCollector r6 = r4.f51906d
+                        kotlinx.coroutines.flow.FlowCollector r6 = r4.f51903d
                         w2.n r5 = (w2.n) r5
                         boolean r2 = r5 instanceof w2.j
                         if (r2 != 0) goto L6f
@@ -488,7 +488,7 @@ public final class m implements w2.f {
                         if (r2 == 0) goto L56
                         w2.c r5 = (w2.c) r5
                         java.lang.Object r5 = r5.b()
-                        r0.f51908e = r3
+                        r0.f51905e = r3
                         java.lang.Object r5 = r6.emit(r5, r0)
                         if (r5 != r1) goto L53
                         return r1
@@ -520,12 +520,12 @@ public final class m implements w2.f {
             }
 
             public b(Flow flow) {
-                this.f51905d = flow;
+                this.f51902d = flow;
             }
 
             @Override // kotlinx.coroutines.flow.Flow
             public Object collect(FlowCollector flowCollector, Continuation continuation) {
-                Object collect = this.f51905d.collect(new a(flowCollector), continuation);
+                Object collect = this.f51902d.collect(new a(flowCollector), continuation);
                 if (collect == rr.b.f()) {
                     return collect;
                 }
@@ -540,14 +540,14 @@ public final class m implements w2.f {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             g gVar = new g(continuation);
-            gVar.f51900e = obj;
+            gVar.f51897e = obj;
             return gVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = rr.b.f();
-            int i10 = this.f51899d;
+            int i10 = this.f51896d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -556,13 +556,13 @@ public final class m implements w2.f {
                 }
             } else {
                 kotlin.c.b(obj);
-                FlowCollector flowCollector = (FlowCollector) this.f51900e;
-                w2.n nVar = (w2.n) m.this.f51885h.getValue();
+                FlowCollector flowCollector = (FlowCollector) this.f51897e;
+                w2.n nVar = (w2.n) m.this.f51882h.getValue();
                 if (!(nVar instanceof w2.c)) {
-                    m.this.f51887j.e(new b.a(nVar));
+                    m.this.f51884j.e(new b.a(nVar));
                 }
-                b bVar = new b(ms.g.n(m.this.f51885h, new a(nVar, null)));
-                this.f51899d = 1;
+                b bVar = new b(ms.g.n(m.this.f51882h, new a(nVar, null)));
+                this.f51896d = 1;
                 if (ms.g.o(flowCollector, bVar, this) == f10) {
                     return f10;
                 }
@@ -585,9 +585,9 @@ public final class m implements w2.f {
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final File invoke() {
-            File file = (File) m.this.f51878a.invoke();
+            File file = (File) m.this.f51875a.invoke();
             String it = file.getAbsolutePath();
-            a aVar = m.f51875k;
+            a aVar = m.f51872k;
             synchronized (aVar.b()) {
                 if (!aVar.a().contains(it)) {
                     Set a10 = aVar.a();
@@ -606,19 +606,19 @@ public final class m implements w2.f {
     public static final class i extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f51911d;
+        Object f51908d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f51912e;
+        Object f51909e;
 
         /* renamed from: i  reason: collision with root package name */
-        Object f51913i;
+        Object f51910i;
 
         /* renamed from: o  reason: collision with root package name */
-        /* synthetic */ Object f51914o;
+        /* synthetic */ Object f51911o;
 
         /* renamed from: q  reason: collision with root package name */
-        int f51916q;
+        int f51913q;
 
         i(Continuation continuation) {
             super(continuation);
@@ -626,8 +626,8 @@ public final class m implements w2.f {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f51914o = obj;
-            this.f51916q |= Integer.MIN_VALUE;
+            this.f51911o = obj;
+            this.f51913q |= Integer.MIN_VALUE;
             return m.this.s(null, this);
         }
     }
@@ -637,28 +637,28 @@ public final class m implements w2.f {
     public static final class j extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f51917d;
+        Object f51914d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f51918e;
+        Object f51915e;
 
         /* renamed from: i  reason: collision with root package name */
-        Object f51919i;
+        Object f51916i;
 
         /* renamed from: o  reason: collision with root package name */
-        Object f51920o;
+        Object f51917o;
 
         /* renamed from: p  reason: collision with root package name */
-        Object f51921p;
+        Object f51918p;
 
         /* renamed from: q  reason: collision with root package name */
-        Object f51922q;
+        Object f51919q;
 
         /* renamed from: r  reason: collision with root package name */
-        /* synthetic */ Object f51923r;
+        /* synthetic */ Object f51920r;
 
         /* renamed from: t  reason: collision with root package name */
-        int f51925t;
+        int f51922t;
 
         j(Continuation continuation) {
             super(continuation);
@@ -666,8 +666,8 @@ public final class m implements w2.f {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f51923r = obj;
-            this.f51925t |= Integer.MIN_VALUE;
+            this.f51920r = obj;
+            this.f51922t |= Integer.MIN_VALUE;
             return m.this.t(this);
         }
     }
@@ -676,41 +676,41 @@ public final class m implements w2.f {
     public static final class k implements w2.i {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Mutex f51926a;
+        final /* synthetic */ Mutex f51923a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ Ref.BooleanRef f51927b;
+        final /* synthetic */ Ref.BooleanRef f51924b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ Ref.ObjectRef f51928c;
+        final /* synthetic */ Ref.ObjectRef f51925c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ m f51929d;
+        final /* synthetic */ m f51926d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static final class a extends kotlin.coroutines.jvm.internal.d {
 
             /* renamed from: d  reason: collision with root package name */
-            Object f51930d;
+            Object f51927d;
 
             /* renamed from: e  reason: collision with root package name */
-            Object f51931e;
+            Object f51928e;
 
             /* renamed from: i  reason: collision with root package name */
-            Object f51932i;
+            Object f51929i;
 
             /* renamed from: o  reason: collision with root package name */
-            Object f51933o;
+            Object f51930o;
 
             /* renamed from: p  reason: collision with root package name */
-            Object f51934p;
+            Object f51931p;
 
             /* renamed from: q  reason: collision with root package name */
-            /* synthetic */ Object f51935q;
+            /* synthetic */ Object f51932q;
 
             /* renamed from: s  reason: collision with root package name */
-            int f51937s;
+            int f51934s;
 
             a(Continuation continuation) {
                 super(continuation);
@@ -718,17 +718,17 @@ public final class m implements w2.f {
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
-                this.f51935q = obj;
-                this.f51937s |= Integer.MIN_VALUE;
+                this.f51932q = obj;
+                this.f51934s |= Integer.MIN_VALUE;
                 return k.this.a(null, this);
             }
         }
 
         k(Mutex mutex, Ref.BooleanRef booleanRef, Ref.ObjectRef objectRef, m mVar) {
-            this.f51926a = mutex;
-            this.f51927b = booleanRef;
-            this.f51928c = objectRef;
-            this.f51929d = mVar;
+            this.f51923a = mutex;
+            this.f51924b = booleanRef;
+            this.f51925c = objectRef;
+            this.f51926d = mVar;
         }
 
         /* JADX WARN: Multi-variable type inference failed */
@@ -757,13 +757,13 @@ public final class m implements w2.f {
     public static final class l extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f51938d;
+        Object f51935d;
 
         /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f51939e;
+        /* synthetic */ Object f51936e;
 
         /* renamed from: o  reason: collision with root package name */
-        int f51941o;
+        int f51938o;
 
         l(Continuation continuation) {
             super(continuation);
@@ -771,8 +771,8 @@ public final class m implements w2.f {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f51939e = obj;
-            this.f51941o |= Integer.MIN_VALUE;
+            this.f51936e = obj;
+            this.f51938o |= Integer.MIN_VALUE;
             return m.this.u(this);
         }
     }
@@ -783,13 +783,13 @@ public final class m implements w2.f {
     public static final class C0693m extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f51942d;
+        Object f51939d;
 
         /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f51943e;
+        /* synthetic */ Object f51940e;
 
         /* renamed from: o  reason: collision with root package name */
-        int f51945o;
+        int f51942o;
 
         C0693m(Continuation continuation) {
             super(continuation);
@@ -797,8 +797,8 @@ public final class m implements w2.f {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f51943e = obj;
-            this.f51945o |= Integer.MIN_VALUE;
+            this.f51940e = obj;
+            this.f51942o |= Integer.MIN_VALUE;
             return m.this.v(this);
         }
     }
@@ -808,19 +808,19 @@ public final class m implements w2.f {
     public static final class n extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f51946d;
+        Object f51943d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f51947e;
+        Object f51944e;
 
         /* renamed from: i  reason: collision with root package name */
-        Object f51948i;
+        Object f51945i;
 
         /* renamed from: o  reason: collision with root package name */
-        /* synthetic */ Object f51949o;
+        /* synthetic */ Object f51946o;
 
         /* renamed from: q  reason: collision with root package name */
-        int f51951q;
+        int f51948q;
 
         n(Continuation continuation) {
             super(continuation);
@@ -828,8 +828,8 @@ public final class m implements w2.f {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f51949o = obj;
-            this.f51951q |= Integer.MIN_VALUE;
+            this.f51946o = obj;
+            this.f51948q |= Integer.MIN_VALUE;
             return m.this.w(this);
         }
     }
@@ -839,16 +839,16 @@ public final class m implements w2.f {
     public static final class o extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f51952d;
+        Object f51949d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f51953e;
+        Object f51950e;
 
         /* renamed from: i  reason: collision with root package name */
-        /* synthetic */ Object f51954i;
+        /* synthetic */ Object f51951i;
 
         /* renamed from: p  reason: collision with root package name */
-        int f51956p;
+        int f51953p;
 
         o(Continuation continuation) {
             super(continuation);
@@ -856,8 +856,8 @@ public final class m implements w2.f {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f51954i = obj;
-            this.f51956p |= Integer.MIN_VALUE;
+            this.f51951i = obj;
+            this.f51953p |= Integer.MIN_VALUE;
             return m.this.x(this);
         }
     }
@@ -867,19 +867,19 @@ public final class m implements w2.f {
     public static final class p extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f51957d;
+        Object f51954d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f51958e;
+        Object f51955e;
 
         /* renamed from: i  reason: collision with root package name */
-        Object f51959i;
+        Object f51956i;
 
         /* renamed from: o  reason: collision with root package name */
-        /* synthetic */ Object f51960o;
+        /* synthetic */ Object f51957o;
 
         /* renamed from: q  reason: collision with root package name */
-        int f51962q;
+        int f51959q;
 
         p(Continuation continuation) {
             super(continuation);
@@ -887,8 +887,8 @@ public final class m implements w2.f {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f51960o = obj;
-            this.f51962q |= Integer.MIN_VALUE;
+            this.f51957o = obj;
+            this.f51959q |= Integer.MIN_VALUE;
             return m.this.y(null, null, this);
         }
     }
@@ -898,30 +898,30 @@ public final class m implements w2.f {
     public static final class q extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f51963d;
+        int f51960d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Function2 f51964e;
+        final /* synthetic */ Function2 f51961e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Object f51965i;
+        final /* synthetic */ Object f51962i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         q(Function2 function2, Object obj, Continuation continuation) {
             super(2, continuation);
-            this.f51964e = function2;
-            this.f51965i = obj;
+            this.f51961e = function2;
+            this.f51962i = obj;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new q(this.f51964e, this.f51965i, continuation);
+            return new q(this.f51961e, this.f51962i, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = rr.b.f();
-            int i10 = this.f51963d;
+            int i10 = this.f51960d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -930,9 +930,9 @@ public final class m implements w2.f {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             kotlin.c.b(obj);
-            Function2 function2 = this.f51964e;
-            Object obj2 = this.f51965i;
-            this.f51963d = 1;
+            Function2 function2 = this.f51961e;
+            Object obj2 = this.f51962i;
+            this.f51960d = 1;
             Object invoke = function2.invoke(obj2, this);
             if (invoke == f10) {
                 return f10;
@@ -951,25 +951,25 @@ public final class m implements w2.f {
     public static final class r extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f51966d;
+        Object f51963d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f51967e;
+        Object f51964e;
 
         /* renamed from: i  reason: collision with root package name */
-        Object f51968i;
+        Object f51965i;
 
         /* renamed from: o  reason: collision with root package name */
-        Object f51969o;
+        Object f51966o;
 
         /* renamed from: p  reason: collision with root package name */
-        Object f51970p;
+        Object f51967p;
 
         /* renamed from: q  reason: collision with root package name */
-        /* synthetic */ Object f51971q;
+        /* synthetic */ Object f51968q;
 
         /* renamed from: s  reason: collision with root package name */
-        int f51973s;
+        int f51970s;
 
         r(Continuation continuation) {
             super(continuation);
@@ -977,8 +977,8 @@ public final class m implements w2.f {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f51971q = obj;
-            this.f51973s |= Integer.MIN_VALUE;
+            this.f51968q = obj;
+            this.f51970s |= Integer.MIN_VALUE;
             return m.this.z(null, this);
         }
     }
@@ -989,16 +989,16 @@ public final class m implements w2.f {
         Intrinsics.checkNotNullParameter(initTasksList, "initTasksList");
         Intrinsics.checkNotNullParameter(corruptionHandler, "corruptionHandler");
         Intrinsics.checkNotNullParameter(scope, "scope");
-        this.f51878a = produceFile;
-        this.f51879b = serializer;
-        this.f51880c = corruptionHandler;
-        this.f51881d = scope;
-        this.f51882e = ms.g.v(new g(null));
-        this.f51883f = ".tmp";
-        this.f51884g = lr.l.a(new h());
-        this.f51885h = l0.a(w2.o.f51974a);
-        this.f51886i = CollectionsKt.h1(initTasksList);
-        this.f51887j = new w2.l(scope, new d(), e.f51895d, new f(null));
+        this.f51875a = produceFile;
+        this.f51876b = serializer;
+        this.f51877c = corruptionHandler;
+        this.f51878d = scope;
+        this.f51879e = ms.g.v(new g(null));
+        this.f51880f = ".tmp";
+        this.f51881g = lr.l.a(new h());
+        this.f51882h = l0.a(w2.o.f51971a);
+        this.f51883i = CollectionsKt.h1(initTasksList);
+        this.f51884j = new w2.l(scope, new d(), e.f51892d, new f(null));
     }
 
     private final void p(File file) {
@@ -1014,12 +1014,12 @@ public final class m implements w2.f {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final File q() {
-        return (File) this.f51884g.getValue();
+        return (File) this.f51881g.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final Object r(b.a aVar, Continuation continuation) {
-        w2.n nVar = (w2.n) this.f51885h.getValue();
+        w2.n nVar = (w2.n) this.f51882h.getValue();
         if (!(nVar instanceof w2.c)) {
             if (nVar instanceof w2.j) {
                 if (nVar == aVar.a()) {
@@ -1029,7 +1029,7 @@ public final class m implements w2.f {
                     }
                     return Unit.f32464a;
                 }
-            } else if (Intrinsics.areEqual(nVar, w2.o.f51974a)) {
+            } else if (Intrinsics.areEqual(nVar, w2.o.f51971a)) {
                 Object v11 = v(continuation);
                 if (v11 == rr.b.f()) {
                     return v11;
@@ -1101,24 +1101,24 @@ public final class m implements w2.f {
             if (r0 == 0) goto L13
             r0 = r5
             w2.m$l r0 = (w2.m.l) r0
-            int r1 = r0.f51941o
+            int r1 = r0.f51938o
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f51941o = r1
+            r0.f51938o = r1
             goto L18
         L13:
             w2.m$l r0 = new w2.m$l
             r0.<init>(r5)
         L18:
-            java.lang.Object r5 = r0.f51939e
+            java.lang.Object r5 = r0.f51936e
             java.lang.Object r1 = rr.b.f()
-            int r2 = r0.f51941o
+            int r2 = r0.f51938o
             r3 = 1
             if (r2 == 0) goto L37
             if (r2 != r3) goto L2f
-            java.lang.Object r0 = r0.f51938d
+            java.lang.Object r0 = r0.f51935d
             w2.m r0 = (w2.m) r0
             kotlin.c.b(r5)     // Catch: java.lang.Throwable -> L2d
             goto L45
@@ -1132,8 +1132,8 @@ public final class m implements w2.f {
             throw r5
         L37:
             kotlin.c.b(r5)
-            r0.f51938d = r4     // Catch: java.lang.Throwable -> L48
-            r0.f51941o = r3     // Catch: java.lang.Throwable -> L48
+            r0.f51935d = r4     // Catch: java.lang.Throwable -> L48
+            r0.f51938o = r3     // Catch: java.lang.Throwable -> L48
             java.lang.Object r5 = r4.t(r0)     // Catch: java.lang.Throwable -> L48
             if (r5 != r1) goto L45
             return r1
@@ -1144,7 +1144,7 @@ public final class m implements w2.f {
             r5 = move-exception
             r0 = r4
         L4a:
-            kotlinx.coroutines.flow.MutableStateFlow r0 = r0.f51885h
+            kotlinx.coroutines.flow.MutableStateFlow r0 = r0.f51882h
             w2.j r1 = new w2.j
             r1.<init>(r5)
             r0.setValue(r1)
@@ -1167,24 +1167,24 @@ public final class m implements w2.f {
             if (r0 == 0) goto L13
             r0 = r5
             w2.m$m r0 = (w2.m.C0693m) r0
-            int r1 = r0.f51945o
+            int r1 = r0.f51942o
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f51945o = r1
+            r0.f51942o = r1
             goto L18
         L13:
             w2.m$m r0 = new w2.m$m
             r0.<init>(r5)
         L18:
-            java.lang.Object r5 = r0.f51943e
+            java.lang.Object r5 = r0.f51940e
             java.lang.Object r1 = rr.b.f()
-            int r2 = r0.f51945o
+            int r2 = r0.f51942o
             r3 = 1
             if (r2 == 0) goto L37
             if (r2 != r3) goto L2f
-            java.lang.Object r0 = r0.f51942d
+            java.lang.Object r0 = r0.f51939d
             w2.m r0 = (w2.m) r0
             kotlin.c.b(r5)     // Catch: java.lang.Throwable -> L2d
             goto L51
@@ -1198,8 +1198,8 @@ public final class m implements w2.f {
             throw r5
         L37:
             kotlin.c.b(r5)
-            r0.f51942d = r4     // Catch: java.lang.Throwable -> L45
-            r0.f51945o = r3     // Catch: java.lang.Throwable -> L45
+            r0.f51939d = r4     // Catch: java.lang.Throwable -> L45
+            r0.f51942o = r3     // Catch: java.lang.Throwable -> L45
             java.lang.Object r5 = r4.t(r0)     // Catch: java.lang.Throwable -> L45
             if (r5 != r1) goto L51
             return r1
@@ -1207,7 +1207,7 @@ public final class m implements w2.f {
             r5 = move-exception
             r0 = r4
         L47:
-            kotlinx.coroutines.flow.MutableStateFlow r0 = r0.f51885h
+            kotlinx.coroutines.flow.MutableStateFlow r0 = r0.f51882h
             w2.j r1 = new w2.j
             r1.<init>(r5)
             r0.setValue(r1)
@@ -1240,28 +1240,28 @@ public final class m implements w2.f {
             if (r0 == 0) goto L13
             r0 = r6
             w2.m$n r0 = (w2.m.n) r0
-            int r1 = r0.f51951q
+            int r1 = r0.f51948q
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f51951q = r1
+            r0.f51948q = r1
             goto L18
         L13:
             w2.m$n r0 = new w2.m$n
             r0.<init>(r6)
         L18:
-            java.lang.Object r6 = r0.f51949o
+            java.lang.Object r6 = r0.f51946o
             java.lang.Object r1 = rr.b.f()
-            int r2 = r0.f51951q
+            int r2 = r0.f51948q
             r3 = 1
             if (r2 == 0) goto L3f
             if (r2 != r3) goto L37
-            java.lang.Object r1 = r0.f51948i
+            java.lang.Object r1 = r0.f51945i
             java.lang.Throwable r1 = (java.lang.Throwable) r1
-            java.lang.Object r2 = r0.f51947e
+            java.lang.Object r2 = r0.f51944e
             java.io.Closeable r2 = (java.io.Closeable) r2
-            java.lang.Object r0 = r0.f51946d
+            java.lang.Object r0 = r0.f51943d
             w2.m r0 = (w2.m) r0
             kotlin.c.b(r6)     // Catch: java.lang.Throwable -> L35
             goto L5f
@@ -1278,12 +1278,12 @@ public final class m implements w2.f {
             java.io.FileInputStream r2 = new java.io.FileInputStream     // Catch: java.io.FileNotFoundException -> L6d
             java.io.File r6 = r5.q()     // Catch: java.io.FileNotFoundException -> L6d
             r2.<init>(r6)     // Catch: java.io.FileNotFoundException -> L6d
-            w2.k r6 = r5.f51879b     // Catch: java.lang.Throwable -> L65
-            r0.f51946d = r5     // Catch: java.lang.Throwable -> L65
-            r0.f51947e = r2     // Catch: java.lang.Throwable -> L65
+            w2.k r6 = r5.f51876b     // Catch: java.lang.Throwable -> L65
+            r0.f51943d = r5     // Catch: java.lang.Throwable -> L65
+            r0.f51944e = r2     // Catch: java.lang.Throwable -> L65
             r4 = 0
-            r0.f51948i = r4     // Catch: java.lang.Throwable -> L65
-            r0.f51951q = r3     // Catch: java.lang.Throwable -> L65
+            r0.f51945i = r4     // Catch: java.lang.Throwable -> L65
+            r0.f51948q = r3     // Catch: java.lang.Throwable -> L65
             java.lang.Object r6 = r6.c(r2, r0)     // Catch: java.lang.Throwable -> L65
             if (r6 != r1) goto L5d
             return r1
@@ -1312,7 +1312,7 @@ public final class m implements w2.f {
             java.io.File r1 = r0.q()
             boolean r1 = r1.exists()
             if (r1 != 0) goto L80
-            w2.k r6 = r0.f51879b
+            w2.k r6 = r0.f51876b
             java.lang.Object r6 = r6.a()
             return r6
         L80:
@@ -1338,20 +1338,20 @@ public final class m implements w2.f {
             if (r0 == 0) goto L13
             r0 = r8
             w2.m$o r0 = (w2.m.o) r0
-            int r1 = r0.f51956p
+            int r1 = r0.f51953p
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f51956p = r1
+            r0.f51953p = r1
             goto L18
         L13:
             w2.m$o r0 = new w2.m$o
             r0.<init>(r8)
         L18:
-            java.lang.Object r8 = r0.f51954i
+            java.lang.Object r8 = r0.f51951i
             java.lang.Object r1 = rr.b.f()
-            int r2 = r0.f51956p
+            int r2 = r0.f51953p
             r3 = 3
             r4 = 2
             r5 = 1
@@ -1359,8 +1359,8 @@ public final class m implements w2.f {
             if (r2 == r5) goto L4b
             if (r2 == r4) goto L3f
             if (r2 != r3) goto L37
-            java.lang.Object r1 = r0.f51953e
-            java.lang.Object r0 = r0.f51952d
+            java.lang.Object r1 = r0.f51950e
+            java.lang.Object r0 = r0.f51949d
             w2.a r0 = (w2.a) r0
             kotlin.c.b(r8)     // Catch: java.io.IOException -> L35
             return r1
@@ -1373,14 +1373,14 @@ public final class m implements w2.f {
             r8.<init>(r0)
             throw r8
         L3f:
-            java.lang.Object r2 = r0.f51953e
+            java.lang.Object r2 = r0.f51950e
             w2.a r2 = (w2.a) r2
-            java.lang.Object r4 = r0.f51952d
+            java.lang.Object r4 = r0.f51949d
             w2.m r4 = (w2.m) r4
             kotlin.c.b(r8)
             goto L79
         L4b:
-            java.lang.Object r2 = r0.f51952d
+            java.lang.Object r2 = r0.f51949d
             w2.m r2 = (w2.m) r2
             kotlin.c.b(r8)     // Catch: w2.a -> L53
             return r8
@@ -1389,8 +1389,8 @@ public final class m implements w2.f {
             goto L66
         L55:
             kotlin.c.b(r8)
-            r0.f51952d = r7     // Catch: w2.a -> L64
-            r0.f51956p = r5     // Catch: w2.a -> L64
+            r0.f51949d = r7     // Catch: w2.a -> L64
+            r0.f51953p = r5     // Catch: w2.a -> L64
             java.lang.Object r8 = r7.w(r0)     // Catch: w2.a -> L64
             if (r8 != r1) goto L63
             goto L85
@@ -1400,10 +1400,10 @@ public final class m implements w2.f {
             r8 = move-exception
             r2 = r7
         L66:
-            w2.b r5 = r2.f51880c
-            r0.f51952d = r2
-            r0.f51953e = r8
-            r0.f51956p = r4
+            w2.b r5 = r2.f51877c
+            r0.f51949d = r2
+            r0.f51950e = r8
+            r0.f51953p = r4
             java.lang.Object r4 = r5.a(r8, r0)
             if (r4 != r1) goto L75
             goto L85
@@ -1413,9 +1413,9 @@ public final class m implements w2.f {
             r8 = r4
             r4 = r6
         L79:
-            r0.f51952d = r2     // Catch: java.io.IOException -> L87
-            r0.f51953e = r8     // Catch: java.io.IOException -> L87
-            r0.f51956p = r3     // Catch: java.io.IOException -> L87
+            r0.f51949d = r2     // Catch: java.io.IOException -> L87
+            r0.f51950e = r8     // Catch: java.io.IOException -> L87
+            r0.f51953p = r3     // Catch: java.io.IOException -> L87
             java.lang.Object r0 = r4.z(r8, r0)     // Catch: java.io.IOException -> L87
             if (r0 != r1) goto L86
         L85:
@@ -1450,28 +1450,28 @@ public final class m implements w2.f {
             if (r0 == 0) goto L13
             r0 = r10
             w2.m$p r0 = (w2.m.p) r0
-            int r1 = r0.f51962q
+            int r1 = r0.f51959q
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f51962q = r1
+            r0.f51959q = r1
             goto L18
         L13:
             w2.m$p r0 = new w2.m$p
             r0.<init>(r10)
         L18:
-            java.lang.Object r10 = r0.f51960o
+            java.lang.Object r10 = r0.f51957o
             java.lang.Object r1 = rr.b.f()
-            int r2 = r0.f51962q
+            int r2 = r0.f51959q
             r3 = 0
             r4 = 2
             r5 = 1
             if (r2 == 0) goto L49
             if (r2 == r5) goto L3b
             if (r2 != r4) goto L33
-            java.lang.Object r8 = r0.f51958e
-            java.lang.Object r9 = r0.f51957d
+            java.lang.Object r8 = r0.f51955e
+            java.lang.Object r9 = r0.f51954d
             w2.m r9 = (w2.m) r9
             kotlin.c.b(r10)
             goto L8e
@@ -1481,26 +1481,26 @@ public final class m implements w2.f {
             r8.<init>(r9)
             throw r8
         L3b:
-            java.lang.Object r8 = r0.f51959i
-            java.lang.Object r9 = r0.f51958e
+            java.lang.Object r8 = r0.f51956i
+            java.lang.Object r9 = r0.f51955e
             w2.c r9 = (w2.c) r9
-            java.lang.Object r2 = r0.f51957d
+            java.lang.Object r2 = r0.f51954d
             w2.m r2 = (w2.m) r2
             kotlin.c.b(r10)
             goto L73
         L49:
             kotlin.c.b(r10)
-            kotlinx.coroutines.flow.MutableStateFlow r10 = r7.f51885h
+            kotlinx.coroutines.flow.MutableStateFlow r10 = r7.f51882h
             java.lang.Object r10 = r10.getValue()
             w2.c r10 = (w2.c) r10
             r10.a()
             java.lang.Object r2 = r10.b()
             w2.m$q r6 = new w2.m$q
             r6.<init>(r8, r2, r3)
-            r0.f51957d = r7
-            r0.f51958e = r10
-            r0.f51959i = r2
-            r0.f51962q = r5
+            r0.f51954d = r7
+            r0.f51955e = r10
+            r0.f51956i = r2
+            r0.f51959q = r5
             java.lang.Object r8 = js.g.g(r9, r6, r0)
             if (r8 != r1) goto L6f
             goto L8b
@@ -1515,10 +1515,10 @@ public final class m implements w2.f {
             if (r9 == 0) goto L7d
             return r8
         L7d:
-            r0.f51957d = r2
-            r0.f51958e = r10
-            r0.f51959i = r3
-            r0.f51962q = r4
+            r0.f51954d = r2
+            r0.f51955e = r10
+            r0.f51956i = r3
+            r0.f51959q = r4
             java.lang.Object r8 = r2.z(r10, r0)
             if (r8 != r1) goto L8c
         L8b:
@@ -1527,7 +1527,7 @@ public final class m implements w2.f {
             r8 = r10
             r9 = r2
         L8e:
-            kotlinx.coroutines.flow.MutableStateFlow r9 = r9.f51885h
+            kotlinx.coroutines.flow.MutableStateFlow r9 = r9.f51882h
             w2.c r10 = new w2.c
             if (r8 == 0) goto L99
             int r0 = r8.hashCode()
@@ -1545,13 +1545,13 @@ public final class m implements w2.f {
     @Override // w2.f
     public Object a(Function2 function2, Continuation continuation) {
         CompletableDeferred b10 = js.q.b(null, 1, null);
-        this.f51887j.e(new b.C0691b(function2, b10, (w2.n) this.f51885h.getValue(), continuation.getContext()));
+        this.f51884j.e(new b.C0691b(function2, b10, (w2.n) this.f51882h.getValue(), continuation.getContext()));
         return b10.V(continuation);
     }
 
     @Override // w2.f
     public Flow getData() {
-        return this.f51882e;
+        return this.f51879e;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -1571,32 +1571,32 @@ public final class m implements w2.f {
             if (r0 == 0) goto L13
             r0 = r9
             w2.m$r r0 = (w2.m.r) r0
-            int r1 = r0.f51973s
+            int r1 = r0.f51970s
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f51973s = r1
+            r0.f51970s = r1
             goto L18
         L13:
             w2.m$r r0 = new w2.m$r
             r0.<init>(r9)
         L18:
-            java.lang.Object r9 = r0.f51971q
+            java.lang.Object r9 = r0.f51968q
             java.lang.Object r1 = rr.b.f()
-            int r2 = r0.f51973s
+            int r2 = r0.f51970s
             r3 = 1
             if (r2 == 0) goto L48
             if (r2 != r3) goto L40
-            java.lang.Object r8 = r0.f51970p
+            java.lang.Object r8 = r0.f51967p
             java.io.FileOutputStream r8 = (java.io.FileOutputStream) r8
-            java.lang.Object r1 = r0.f51969o
+            java.lang.Object r1 = r0.f51966o
             java.lang.Throwable r1 = (java.lang.Throwable) r1
-            java.lang.Object r2 = r0.f51968i
+            java.lang.Object r2 = r0.f51965i
             java.io.Closeable r2 = (java.io.Closeable) r2
-            java.lang.Object r3 = r0.f51967e
+            java.lang.Object r3 = r0.f51964e
             java.io.File r3 = (java.io.File) r3
-            java.lang.Object r0 = r0.f51966d
+            java.lang.Object r0 = r0.f51963d
             w2.m r0 = (w2.m) r0
             kotlin.c.b(r9)     // Catch: java.lang.Throwable -> L3d
             goto L89
@@ -1615,21 +1615,21 @@ public final class m implements w2.f {
             java.io.File r9 = new java.io.File
             java.io.File r2 = r7.q()
             java.lang.String r2 = r2.getAbsolutePath()
-            java.lang.String r4 = r7.f51883f
+            java.lang.String r4 = r7.f51880f
             java.lang.String r2 = kotlin.jvm.internal.Intrinsics.stringPlus(r2, r4)
             r9.<init>(r2)
             java.io.FileOutputStream r2 = new java.io.FileOutputStream     // Catch: java.io.IOException -> Lc9
             r2.<init>(r9)     // Catch: java.io.IOException -> Lc9
-            w2.k r4 = r7.f51879b     // Catch: java.lang.Throwable -> Lc1
+            w2.k r4 = r7.f51876b     // Catch: java.lang.Throwable -> Lc1
             w2.m$c r5 = new w2.m$c     // Catch: java.lang.Throwable -> Lc1
             r5.<init>(r2)     // Catch: java.lang.Throwable -> Lc1
-            r0.f51966d = r7     // Catch: java.lang.Throwable -> Lc1
-            r0.f51967e = r9     // Catch: java.lang.Throwable -> Lc1
-            r0.f51968i = r2     // Catch: java.lang.Throwable -> Lc1
+            r0.f51963d = r7     // Catch: java.lang.Throwable -> Lc1
+            r0.f51964e = r9     // Catch: java.lang.Throwable -> Lc1
+            r0.f51965i = r2     // Catch: java.lang.Throwable -> Lc1
             r6 = 0
-            r0.f51969o = r6     // Catch: java.lang.Throwable -> Lc1
-            r0.f51970p = r2     // Catch: java.lang.Throwable -> Lc1
-            r0.f51973s = r3     // Catch: java.lang.Throwable -> Lc1
+            r0.f51966o = r6     // Catch: java.lang.Throwable -> Lc1
+            r0.f51967p = r2     // Catch: java.lang.Throwable -> Lc1
+            r0.f51970s = r3     // Catch: java.lang.Throwable -> Lc1
             java.lang.Object r8 = r4.b(r8, r5, r0)     // Catch: java.lang.Throwable -> Lc1
             if (r8 != r1) goto L85
             return r1

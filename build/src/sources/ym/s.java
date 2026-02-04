@@ -14,19 +14,19 @@ public abstract class s {
     static final class a extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Parcelable f54692d;
+        final /* synthetic */ Parcelable f54689d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(Parcelable parcelable) {
             super(1);
-            this.f54692d = parcelable;
+            this.f54689d = parcelable;
         }
 
         public final void a(BufferedSink bufferedSink) {
             Intrinsics.checkNotNullParameter(bufferedSink, "bufferedSink");
             Parcel obtain = Parcel.obtain();
             Intrinsics.checkNotNullExpressionValue(obtain, "obtain()");
-            obtain.writeParcelable(this.f54692d, 0);
+            obtain.writeParcelable(this.f54689d, 0);
             byte[] byteArray = obtain.marshall();
             Intrinsics.checkNotNullExpressionValue(byteArray, "byteArray");
             bufferedSink.write(byteArray);
@@ -42,6 +42,6 @@ public abstract class s {
 
     public static final wm.i a(Parcelable parcelable) {
         Intrinsics.checkNotNullParameter(parcelable, "<this>");
-        return wm.i.f52542c.c(new a(parcelable));
+        return wm.i.f52539c.c(new a(parcelable));
     }
 }

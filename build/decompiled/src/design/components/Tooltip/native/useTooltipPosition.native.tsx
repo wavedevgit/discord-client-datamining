@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Tooltip/native/useTooltipPosition.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1, arg2, arg3() {
-        _fun57519: for (var _fun57519_ip = 0;;) switch (_fun57519_ip) {
+        _fun57536: for (var _fun57536_ip = 0;;) switch (_fun57536_ip) {
             case 0:
                 var7 = arg0;
                 var5 = arg1;
@@ -38,8 +38,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot3 = var8;
                 var1 = undefined;
                 if (!(var4 === var1)) {
-                    _fun57519_ip = 41;
-                    continue _fun57519
+                    _fun57536_ip = 41;
+                    continue _fun57536
                 }
             case 39:
                 var4 = 0;
@@ -54,19 +54,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[3] = var5;
                 var1[4] = var4;
                 var0 = function() { // Environment: var0
-                    _fun57520: for (var _fun57520_ip = 0;;) switch (_fun57520_ip) {
+                    _fun57537: for (var _fun57537_ip = 0;;) switch (_fun57537_ip) {
                         case 0:
                             var0 = _closure2_slot0;
                             var1 = null;
                             if (!(var1 != var0)) {
-                                _fun57520_ip = 211;
-                                continue _fun57520
+                                _fun57537_ip = 211;
+                                continue _fun57537
                             }
                         case 16:
                             var0 = _closure2_slot1;
                             if (!(var1 != var0)) {
-                                _fun57520_ip = 211;
-                                continue _fun57520
+                                _fun57537_ip = 211;
+                                continue _fun57537
                             }
                         case 27:
                             var0 = _closure2_slot0;
@@ -90,23 +90,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = var1 - var0;
                             var0 = 12;
                             if (!(!(var6 < var0))) {
-                                _fun57520_ip = 146;
-                                continue _fun57520
+                                _fun57537_ip = 146;
+                                continue _fun57537
                             }
                         case 118:
                             var10 = var6 + var8;
                             var9 = var7 - var0;
                             var1 = 0;
                             if (!(var10 > var9)) {
-                                _fun57520_ip = 150;
-                                continue _fun57520
+                                _fun57537_ip = 150;
+                                continue _fun57537
                             }
                         case 132:
                             var7 = var7 - var6;
                             var7 = var7 - var8;
                             var1 = var7 - var0;
-                            _fun57520_ip = 150;
-                            continue _fun57520;
+                            _fun57537_ip = 150;
+                            continue _fun57537;
                         case 146:
                             var1 = var0 - var6;
                         case 150:
@@ -116,15 +116,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = _closure2_slot3;
                             var6 = 'top';
                             if (!(var6 !== var7)) {
-                                _fun57520_ip = 187;
-                                continue _fun57520
+                                _fun57537_ip = 187;
+                                continue _fun57537
                             }
                         case 173:
                             var6 = var4 + var2;
                             var2 = _closure2_slot4;
                             var2 = var6 + var2;
-                            _fun57520_ip = 199;
-                            continue _fun57520;
+                            _fun57537_ip = 199;
+                            continue _fun57537;
                         case 187:
                             var4 = var4 - var5;
                             var3 = _closure2_slot4;

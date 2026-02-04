@@ -80,7 +80,7 @@ public abstract class LinkContextData {
             @NotNull
 
             /* renamed from: id  reason: collision with root package name */
-            private final String f8262id;
+            private final String f8261id;
             private final String loggingName;
 
             @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¨\u0006\u0007"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindDismissMessage$DismissedMessage$Companion;", "", "<init>", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindDismissMessage$DismissedMessage;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
@@ -106,7 +106,7 @@ public abstract class LinkContextData {
             /* renamed from: copy-8a0ehIg$default  reason: not valid java name */
             public static /* synthetic */ DismissedMessage m302copy8a0ehIg$default(DismissedMessage dismissedMessage, String str, long j10, String str2, DismissedMessageAuthor dismissedMessageAuthor, int i10, Object obj) {
                 if ((i10 & 1) != 0) {
-                    str = dismissedMessage.f8262id;
+                    str = dismissedMessage.f8261id;
                 }
                 if ((i10 & 2) != 0) {
                     j10 = dismissedMessage.channelId;
@@ -125,7 +125,7 @@ public abstract class LinkContextData {
             }
 
             public static final /* synthetic */ void write$Self$chat_release(DismissedMessage dismissedMessage, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-                compositeEncoder.D(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1085boximpl(dismissedMessage.f8262id));
+                compositeEncoder.D(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1085boximpl(dismissedMessage.f8261id));
                 compositeEncoder.D(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, ChannelId.m1059boximpl(dismissedMessage.channelId));
                 if (compositeEncoder.z(serialDescriptor, 2) || dismissedMessage.loggingName != null) {
                     compositeEncoder.s(serialDescriptor, 2, n2.f20978a, dismissedMessage.loggingName);
@@ -136,7 +136,7 @@ public abstract class LinkContextData {
             @NotNull
             /* renamed from: component1-3Eiw7ao  reason: not valid java name */
             public final String m304component13Eiw7ao() {
-                return this.f8262id;
+                return this.f8261id;
             }
 
             /* renamed from: component2-o4g7jtM  reason: not valid java name */
@@ -167,7 +167,7 @@ public abstract class LinkContextData {
                 }
                 if (obj instanceof DismissedMessage) {
                     DismissedMessage dismissedMessage = (DismissedMessage) obj;
-                    return MessageId.m1089equalsimpl0(this.f8262id, dismissedMessage.f8262id) && ChannelId.m1063equalsimpl0(this.channelId, dismissedMessage.channelId) && Intrinsics.areEqual(this.loggingName, dismissedMessage.loggingName) && Intrinsics.areEqual(this.author, dismissedMessage.author);
+                    return MessageId.m1089equalsimpl0(this.f8261id, dismissedMessage.f8261id) && ChannelId.m1063equalsimpl0(this.channelId, dismissedMessage.channelId) && Intrinsics.areEqual(this.loggingName, dismissedMessage.loggingName) && Intrinsics.areEqual(this.author, dismissedMessage.author);
                 }
                 return false;
             }
@@ -185,7 +185,7 @@ public abstract class LinkContextData {
             @NotNull
             /* renamed from: getId-3Eiw7ao  reason: not valid java name */
             public final String m308getId3Eiw7ao() {
-                return this.f8262id;
+                return this.f8261id;
             }
 
             public final String getLoggingName() {
@@ -193,14 +193,14 @@ public abstract class LinkContextData {
             }
 
             public int hashCode() {
-                int m1090hashCodeimpl = ((MessageId.m1090hashCodeimpl(this.f8262id) * 31) + ChannelId.m1064hashCodeimpl(this.channelId)) * 31;
+                int m1090hashCodeimpl = ((MessageId.m1090hashCodeimpl(this.f8261id) * 31) + ChannelId.m1064hashCodeimpl(this.channelId)) * 31;
                 String str = this.loggingName;
                 return ((m1090hashCodeimpl + (str == null ? 0 : str.hashCode())) * 31) + this.author.hashCode();
             }
 
             @NotNull
             public String toString() {
-                String m1092toStringimpl = MessageId.m1092toStringimpl(this.f8262id);
+                String m1092toStringimpl = MessageId.m1092toStringimpl(this.f8261id);
                 String m1066toStringimpl = ChannelId.m1066toStringimpl(this.channelId);
                 String str = this.loggingName;
                 DismissedMessageAuthor dismissedMessageAuthor = this.author;
@@ -215,7 +215,7 @@ public abstract class LinkContextData {
                 if (11 != (i10 & 11)) {
                     v1.b(i10, 11, LinkContextData$BindDismissMessage$DismissedMessage$$serializer.INSTANCE.getDescriptor());
                 }
-                this.f8262id = str;
+                this.f8261id = str;
                 this.channelId = channelId.m1068unboximpl();
                 if ((i10 & 4) == 0) {
                     this.loggingName = null;
@@ -228,7 +228,7 @@ public abstract class LinkContextData {
             private DismissedMessage(String id2, long j10, String str, DismissedMessageAuthor author) {
                 Intrinsics.checkNotNullParameter(id2, "id");
                 Intrinsics.checkNotNullParameter(author, "author");
-                this.f8262id = id2;
+                this.f8261id = id2;
                 this.channelId = j10;
                 this.loggingName = str;
                 this.author = author;
@@ -2517,7 +2517,7 @@ public abstract class LinkContextData {
             @NotNull
 
             /* renamed from: id  reason: collision with root package name */
-            private final String f8263id;
+            private final String f8262id;
             private final String loggingName;
 
             @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¨\u0006\u0007"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindUserSurvey$SurveyMessage$Companion;", "", "<init>", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindUserSurvey$SurveyMessage;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
@@ -2543,7 +2543,7 @@ public abstract class LinkContextData {
             /* renamed from: copy-Eqy5D80$default  reason: not valid java name */
             public static /* synthetic */ SurveyMessage m365copyEqy5D80$default(SurveyMessage surveyMessage, String str, long j10, String str2, int i10, Object obj) {
                 if ((i10 & 1) != 0) {
-                    str = surveyMessage.f8263id;
+                    str = surveyMessage.f8262id;
                 }
                 if ((i10 & 2) != 0) {
                     j10 = surveyMessage.channelId;
@@ -2559,7 +2559,7 @@ public abstract class LinkContextData {
             }
 
             public static final /* synthetic */ void write$Self$chat_release(SurveyMessage surveyMessage, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-                compositeEncoder.D(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1085boximpl(surveyMessage.f8263id));
+                compositeEncoder.D(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1085boximpl(surveyMessage.f8262id));
                 compositeEncoder.D(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, ChannelId.m1059boximpl(surveyMessage.channelId));
                 if (compositeEncoder.z(serialDescriptor, 2) || surveyMessage.loggingName != null) {
                     compositeEncoder.s(serialDescriptor, 2, n2.f20978a, surveyMessage.loggingName);
@@ -2569,7 +2569,7 @@ public abstract class LinkContextData {
             @NotNull
             /* renamed from: component1-3Eiw7ao  reason: not valid java name */
             public final String m367component13Eiw7ao() {
-                return this.f8263id;
+                return this.f8262id;
             }
 
             /* renamed from: component2-o4g7jtM  reason: not valid java name */
@@ -2594,7 +2594,7 @@ public abstract class LinkContextData {
                 }
                 if (obj instanceof SurveyMessage) {
                     SurveyMessage surveyMessage = (SurveyMessage) obj;
-                    return MessageId.m1089equalsimpl0(this.f8263id, surveyMessage.f8263id) && ChannelId.m1063equalsimpl0(this.channelId, surveyMessage.channelId) && Intrinsics.areEqual(this.loggingName, surveyMessage.loggingName);
+                    return MessageId.m1089equalsimpl0(this.f8262id, surveyMessage.f8262id) && ChannelId.m1063equalsimpl0(this.channelId, surveyMessage.channelId) && Intrinsics.areEqual(this.loggingName, surveyMessage.loggingName);
                 }
                 return false;
             }
@@ -2607,7 +2607,7 @@ public abstract class LinkContextData {
             @NotNull
             /* renamed from: getId-3Eiw7ao  reason: not valid java name */
             public final String m371getId3Eiw7ao() {
-                return this.f8263id;
+                return this.f8262id;
             }
 
             public final String getLoggingName() {
@@ -2615,14 +2615,14 @@ public abstract class LinkContextData {
             }
 
             public int hashCode() {
-                int m1090hashCodeimpl = ((MessageId.m1090hashCodeimpl(this.f8263id) * 31) + ChannelId.m1064hashCodeimpl(this.channelId)) * 31;
+                int m1090hashCodeimpl = ((MessageId.m1090hashCodeimpl(this.f8262id) * 31) + ChannelId.m1064hashCodeimpl(this.channelId)) * 31;
                 String str = this.loggingName;
                 return m1090hashCodeimpl + (str == null ? 0 : str.hashCode());
             }
 
             @NotNull
             public String toString() {
-                String m1092toStringimpl = MessageId.m1092toStringimpl(this.f8263id);
+                String m1092toStringimpl = MessageId.m1092toStringimpl(this.f8262id);
                 String m1066toStringimpl = ChannelId.m1066toStringimpl(this.channelId);
                 String str = this.loggingName;
                 return "SurveyMessage(id=" + m1092toStringimpl + ", channelId=" + m1066toStringimpl + ", loggingName=" + str + ")";
@@ -2636,7 +2636,7 @@ public abstract class LinkContextData {
                 if (3 != (i10 & 3)) {
                     v1.b(i10, 3, LinkContextData$BindUserSurvey$SurveyMessage$$serializer.INSTANCE.getDescriptor());
                 }
-                this.f8263id = str;
+                this.f8262id = str;
                 this.channelId = channelId.m1068unboximpl();
                 if ((i10 & 4) == 0) {
                     this.loggingName = null;
@@ -2647,7 +2647,7 @@ public abstract class LinkContextData {
 
             private SurveyMessage(String id2, long j10, String str) {
                 Intrinsics.checkNotNullParameter(id2, "id");
-                this.f8263id = id2;
+                this.f8262id = id2;
                 this.channelId = j10;
                 this.loggingName = str;
             }

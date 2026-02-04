@@ -7,15 +7,15 @@ import mg.zh;
 public final class o implements tj.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final zh f50682a;
+    private final zh f50679a;
 
     public o(zh zhVar) {
-        this.f50682a = zhVar;
+        this.f50679a = zhVar;
     }
 
     @Override // tj.a
     public final Rect a() {
-        zh zhVar = this.f50682a;
+        zh zhVar = this.f50679a;
         if (zhVar.f38839p != null) {
             int i10 = 0;
             int i11 = Integer.MIN_VALUE;
@@ -42,21 +42,21 @@ public final class o implements tj.a {
 
     @Override // tj.a
     public final String b() {
-        return this.f50682a.f38836e;
+        return this.f50679a.f38836e;
     }
 
     @Override // tj.a
     public final int c() {
-        return this.f50682a.f38838o;
+        return this.f50679a.f38838o;
     }
 
     @Override // tj.a
     public final Point[] d() {
-        return this.f50682a.f38839p;
+        return this.f50679a.f38839p;
     }
 
     @Override // tj.a
     public final int getFormat() {
-        return this.f50682a.f38835d;
+        return this.f50679a.f38835d;
     }
 }

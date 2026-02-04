@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/native/ApplicationIconAndName.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun90851: for (var _fun90851_ip = 0;;) switch (_fun90851_ip) {
+        _fun90868: for (var _fun90868_ip = 0;;) switch (_fun90868_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.application;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var0.useComma;
                 var3 = undefined;
                 if (!(var8 === var3)) {
-                    _fun90851_ip = 34;
-                    continue _fun90851
+                    _fun90868_ip = 34;
+                    continue _fun90868
                 }
             case 32:
                 var8 = false;
@@ -100,8 +100,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = '';
                 var13 = var11;
                 if (!var15) {
-                    _fun90851_ip = 132;
-                    continue _fun90851
+                    _fun90868_ip = 132;
+                    continue _fun90868
                 }
             case 129:
                 var13 = var14;
@@ -126,8 +126,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var9.name;
                 var9 = var11;
                 if (!var8) {
-                    _fun90851_ip = 219;
-                    continue _fun90851
+                    _fun90868_ip = 219;
+                    continue _fun90868
                 }
             case 213:
                 var9 = ', ';

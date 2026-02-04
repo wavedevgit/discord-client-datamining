@@ -2,7 +2,7 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var0 = module;
     var1 = function arg0() {
-        _fun45730: for (var _fun45730_ip = 0;;) switch (_fun45730_ip) {
+        _fun45733: for (var _fun45733_ip = 0;;) switch (_fun45733_ip) {
             case 0:
                 var2 = arg0;
                 var0 = global;
@@ -10,8 +10,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = 'undefined';
                 var1 = typeof var1;
                 if (!(var3 !== var1)) {
-                    _fun45730_ip = 43;
-                    continue _fun45730
+                    _fun45733_ip = 43;
+                    continue _fun45733
                 }
             case 21:
                 var1 = var0.Symbol;
@@ -19,15 +19,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var2[var1];
                 var1 = null;
                 if (!(var1 == var3)) {
-                    _fun45730_ip = 59;
-                    continue _fun45730
+                    _fun45733_ip = 59;
+                    continue _fun45733
                 }
             case 43:
                 var3 = var2["@@iterator"];
                 var1 = null;
                 if (!(var1 == var3)) {
-                    _fun45730_ip = 59;
-                    continue _fun45730
+                    _fun45733_ip = 59;
+                    continue _fun45733
                 }
             case 55:
                 var1 = undefined;

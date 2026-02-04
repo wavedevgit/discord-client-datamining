@@ -10,13 +10,13 @@ import xu.c;
 public final class d implements nu.b, c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f53579a = new d();
+    public static final d f53576a = new d();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class a extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f53580d = new a();
+        public static final a f53577d = new a();
 
         a() {
             super(1);
@@ -39,6 +39,6 @@ public final class d implements nu.b, c {
 
     @Override // nu.b
     public Object f(Object obj, Object obj2) {
-        return a(obj, a.f53580d);
+        return a(obj, a.f53577d);
     }
 }

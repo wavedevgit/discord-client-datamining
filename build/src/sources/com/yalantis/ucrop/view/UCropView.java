@@ -71,11 +71,11 @@ public class UCropView extends FrameLayout {
 
     public UCropView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        LayoutInflater.from(context).inflate(e.f48112d, (ViewGroup) this, true);
-        this.f19533d = (GestureCropImageView) findViewById(qq.d.f48084b);
-        OverlayView overlayView = (OverlayView) findViewById(qq.d.f48107y);
+        LayoutInflater.from(context).inflate(e.f48109d, (ViewGroup) this, true);
+        this.f19533d = (GestureCropImageView) findViewById(qq.d.f48081b);
+        OverlayView overlayView = (OverlayView) findViewById(qq.d.f48104y);
         this.f19534e = overlayView;
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, h.f48122e);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, h.f48119e);
         overlayView.g(obtainStyledAttributes);
         this.f19533d.y(obtainStyledAttributes);
         obtainStyledAttributes.recycle();

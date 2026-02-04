@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/notifications/settings/native/NotificationSettingsChannel.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun70054: for (var _fun70054_ip = 0;;) switch (_fun70054_ip) {
+        _fun70071: for (var _fun70071_ip = 0;;) switch (_fun70071_ip) {
             case 0:
                 var13 = arg0;
                 var _closure2_slot0 = var13;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = _closure1_slot3;
                 var7 = var10.useLayoutEffect;
                 var2 = function() { // Environment: var0
-                    _fun70055: for (var _fun70055_ip = 0;;) switch (_fun70055_ip) {
+                    _fun70072: for (var _fun70072_ip = 0;;) switch (_fun70072_ip) {
                         case 0:
                             var4 = _closure2_slot3;
                             var2 = var4.setOptions;
@@ -139,8 +139,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = _closure2_slot0;
                             var1 = var1.inGuildContext;
                             if (!var1) {
-                                _fun70055_ip = 155;
-                                continue _fun70055
+                                _fun70072_ip = 155;
+                                continue _fun70072
                             }
                         case 90:
                             var2 = _closure2_slot3;
@@ -260,8 +260,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.style = var4;
                 var6 = var11.muted;
                 if (!var6) {
-                    _fun70054_ip = 458;
-                    continue _fun70054
+                    _fun70071_ip = 458;
+                    continue _fun70071
                 }
             case 322:
                 var8 = _closure1_slot6;
@@ -338,8 +338,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var7.isForumLikeChannel;
                 var6 = var6.bind(var7)();
                 if (!var6) {
-                    _fun70054_ip = 693;
-                    continue _fun70054
+                    _fun70071_ip = 693;
+                    continue _fun70071
                 }
             case 636:
                 var10 = _closure1_slot6;
@@ -361,8 +361,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.inherited;
                 var5 = !var5;
                 if (!var5) {
-                    _fun70054_ip = 836;
-                    continue _fun70054
+                    _fun70071_ip = 836;
+                    continue _fun70071
                 }
             case 712:
                 var8 = _closure1_slot6;
@@ -403,4 +403,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4303, 33, 1297, 671, 8762, 1234, 1469, 4705, 4698, 4695, 566, 5378, 8764, 8765, 8771, 8778, 8784, 4084, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4303, 33, 1297, 671, 8765, 1234, 1469, 4705, 4698, 4695, 566, 5378, 8767, 8768, 8774, 8781, 8787, 4084, 2]);

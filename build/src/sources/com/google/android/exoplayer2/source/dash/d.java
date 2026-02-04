@@ -35,7 +35,7 @@ final class d implements m0 {
     public d(f fVar, Format format, boolean z10) {
         this.f12446d = format;
         this.f12450p = fVar;
-        this.f12448i = fVar.f50538b;
+        this.f12448i = fVar.f50535b;
         e(fVar, z10);
     }
 
@@ -67,7 +67,7 @@ final class d implements m0 {
                 this.f12452r = i11 + 1;
             }
             if ((i10 & 4) == 0) {
-                byte[] a10 = this.f12447e.a(this.f12450p.f50537a[i11]);
+                byte[] a10 = this.f12447e.a(this.f12450p.f50534a[i11]);
                 fVar.u(a10.length);
                 fVar.f47497i.put(a10);
             }
@@ -97,7 +97,7 @@ final class d implements m0 {
         }
         this.f12449o = z10;
         this.f12450p = fVar;
-        long[] jArr = fVar.f50538b;
+        long[] jArr = fVar.f50535b;
         this.f12448i = jArr;
         long j11 = this.f12453s;
         if (j11 != -9223372036854775807L) {

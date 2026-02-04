@@ -7,13 +7,13 @@ import java.util.Map;
 final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f50100a = new HashMap();
+    private final Map f50097a = new HashMap();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int[] a() {
         ArrayList arrayList = new ArrayList();
         int i10 = -1;
-        for (Map.Entry entry : this.f50100a.entrySet()) {
+        for (Map.Entry entry : this.f50097a.entrySet()) {
             if (((Integer) entry.getValue()).intValue() > i10) {
                 i10 = ((Integer) entry.getValue()).intValue();
                 arrayList.clear();
@@ -27,10 +27,10 @@ final class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void b(int i10) {
-        Integer num = (Integer) this.f50100a.get(Integer.valueOf(i10));
+        Integer num = (Integer) this.f50097a.get(Integer.valueOf(i10));
         if (num == null) {
             num = 0;
         }
-        this.f50100a.put(Integer.valueOf(i10), Integer.valueOf(num.intValue() + 1));
+        this.f50097a.put(Integer.valueOf(i10), Integer.valueOf(num.intValue() + 1));
     }
 }

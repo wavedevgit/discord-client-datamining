@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_launcher/native/screens/application_view/app/FrecencyCommandsSection.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun107969: for (var _fun107969_ip = 0;;) switch (_fun107969_ip) {
+        _fun107982: for (var _fun107982_ip = 0;;) switch (_fun107982_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.context;
@@ -105,14 +105,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[0] = var5;
                 var1[1] = var0;
                 var0 = function() { // Environment: var6
-                    _fun107970: for (var _fun107970_ip = 0;;) switch (_fun107970_ip) {
+                    _fun107983: for (var _fun107983_ip = 0;;) switch (_fun107983_ip) {
                         case 0:
                             var0 = _closure2_slot6;
                             var1 = var0.length;
                             var0 = 0;
                             if (!(var0 !== var1)) {
-                                _fun107970_ip = 118;
-                                continue _fun107970
+                                _fun107983_ip = 118;
+                                continue _fun107983
                             }
                         case 18:
                             var6 = _closure1_slot0;
@@ -147,8 +147,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 0;
                 var0 = null;
                 if (!(var1 !== var2)) {
-                    _fun107969_ip = 363;
-                    continue _fun107969
+                    _fun107982_ip = 363;
+                    continue _fun107982
                 }
             case 184:
                 var3 = _closure1_slot7;
@@ -241,4 +241,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 13931, 13946, 4302, 7734, 3941, 1234, 4547, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 13932, 13947, 4302, 7737, 3941, 1234, 4547, 2]);

@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = exports;
     var4 = dependencyMap;
     var0 = function() {
-        _fun48667: for (var _fun48667_ip = 0;;) switch (_fun48667_ip) {
+        _fun48670: for (var _fun48670_ip = 0;;) switch (_fun48670_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -25,8 +25,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun48667_ip = 74;
-                continue _fun48667;
+                _fun48670_ip = 74;
+                continue _fun48670;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -79,7 +79,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.Component;
     var1 = function(arg0) { // Environment: var1
         var2 = function() {
-            _fun48671: for (var _fun48671_ip = 0;;) switch (_fun48671_ip) {
+            _fun48674: for (var _fun48674_ip = 0;;) switch (_fun48674_ip) {
                 case 0:
                     var4 = this;
                     var3 = undefined;
@@ -103,16 +103,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = 0;
                     var10 = var2 < var6;
                     if (!var10) {
-                        _fun48671_ip = 87;
-                        continue _fun48671
+                        _fun48674_ip = 87;
+                        continue _fun48674
                     }
                 case 72:
                     var10 = arguments[var2];
                     var8[var2] = var10;
                     var2 = var2 + 1;
                     if (var2 < var6) {
-                        _fun48671_ip = 72;
-                        continue _fun48671
+                        _fun48674_ip = 72;
+                        continue _fun48674
                     }
                 case 87:
                     var2 = _closure2_slot0;
@@ -125,20 +125,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = _closure1_slot5;
                     var0 = var0.bind(var3)();
                     if (var0) {
-                        _fun48671_ip = 142;
-                        continue _fun48671
+                        _fun48674_ip = 142;
+                        continue _fun48674
                     }
                 case 129:
                     var0 = var9.apply;
                     var0 = var0.bind(var9)(var4, var6);
-                    _fun48671_ip = 181;
-                    continue _fun48671;
+                    _fun48674_ip = 181;
+                    continue _fun48674;
                 case 142:
                     var8 = var7.Reflect;
                     var7 = var8.construct;
                     if (var6) {
-                        _fun48671_ip = 160;
-                        continue _fun48671
+                        _fun48674_ip = 160;
+                        continue _fun48674
                     }
                 case 156:
                     var6 = new Array(0);
@@ -161,14 +161,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     };
                     var0.refMethod = var2;
                     var1 = function(arg0) { // Environment: var1
-                        _fun48673: for (var _fun48673_ip = 0;;) switch (_fun48673_ip) {
+                        _fun48676: for (var _fun48676_ip = 0;;) switch (_fun48676_ip) {
                             case 0:
                                 var0 = _closure3_slot0;
                                 var2 = var0.root;
                                 var0 = null;
                                 if (!(var0 != var2)) {
-                                    _fun48673_ip = 33;
-                                    continue _fun48673
+                                    _fun48676_ip = 33;
+                                    continue _fun48676
                                 }
                             case 19:
                                 var1 = var2.setNativeProps;

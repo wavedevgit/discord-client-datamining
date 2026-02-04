@@ -43,10 +43,10 @@ public final class v implements ViewBinding {
     }
 
     public static v a(View view) {
-        int i10 = yp.e.f55166a;
+        int i10 = yp.e.f55163a;
         TextView textView = (TextView) e4.a.a(view, i10);
         if (textView != null) {
-            i10 = yp.e.f55214y;
+            i10 = yp.e.f55211y;
             ImageView imageView = (ImageView) e4.a.a(view, i10);
             if (imageView != null) {
                 i10 = yp.e.E;
@@ -55,10 +55,10 @@ public final class v implements ViewBinding {
                     i10 = yp.e.V;
                     TextView textView3 = (TextView) e4.a.a(view, i10);
                     if (textView3 != null) {
-                        i10 = yp.e.f55213x0;
+                        i10 = yp.e.f55210x0;
                         MaterialCardView materialCardView = (MaterialCardView) e4.a.a(view, i10);
                         if (materialCardView != null) {
-                            i10 = yp.e.f55215y0;
+                            i10 = yp.e.f55212y0;
                             ImageView imageView2 = (ImageView) e4.a.a(view, i10);
                             if (imageView2 != null) {
                                 return new v((ConstraintLayout) view, textView, imageView, textView2, textView3, materialCardView, imageView2);
@@ -76,7 +76,7 @@ public final class v implements ViewBinding {
     }
 
     public static v d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(yp.f.f55240w, viewGroup, false);
+        View inflate = layoutInflater.inflate(yp.f.f55237w, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }

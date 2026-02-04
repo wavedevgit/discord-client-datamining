@@ -125,9 +125,9 @@ public class TimePickerView extends ConstraintLayout {
     public TimePickerView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
         this.f15224q = new a();
-        LayoutInflater.from(context).inflate(h.f54212l, this);
-        this.f15222o = (ClockFaceView) findViewById(yg.f.f54180k);
-        MaterialButtonToggleGroup materialButtonToggleGroup = (MaterialButtonToggleGroup) findViewById(yg.f.f54183n);
+        LayoutInflater.from(context).inflate(h.f54209l, this);
+        this.f15222o = (ClockFaceView) findViewById(yg.f.f54177k);
+        MaterialButtonToggleGroup materialButtonToggleGroup = (MaterialButtonToggleGroup) findViewById(yg.f.f54180n);
         this.f15223p = materialButtonToggleGroup;
         materialButtonToggleGroup.b(new MaterialButtonToggleGroup.d() { // from class: com.google.android.material.timepicker.f
             @Override // com.google.android.material.button.MaterialButtonToggleGroup.d
@@ -135,9 +135,9 @@ public class TimePickerView extends ConstraintLayout {
                 TimePickerView.this.getClass();
             }
         });
-        this.f15219d = (Chip) findViewById(yg.f.f54186q);
-        this.f15220e = (Chip) findViewById(yg.f.f54184o);
-        this.f15221i = (ClockHandView) findViewById(yg.f.f54181l);
+        this.f15219d = (Chip) findViewById(yg.f.f54183q);
+        this.f15220e = (Chip) findViewById(yg.f.f54181o);
+        this.f15221i = (ClockHandView) findViewById(yg.f.f54178l);
         l();
         k();
     }

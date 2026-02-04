@@ -10,22 +10,22 @@ public interface b0 {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f49900a;
+        public final int f49897a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final byte[] f49901b;
+        public final byte[] f49898b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f49902c;
+        public final int f49899c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f49903d;
+        public final int f49900d;
 
         public a(int i10, byte[] bArr, int i11, int i12) {
-            this.f49900a = i10;
-            this.f49901b = bArr;
-            this.f49902c = i11;
-            this.f49903d = i12;
+            this.f49897a = i10;
+            this.f49898b = bArr;
+            this.f49899c = i11;
+            this.f49900d = i12;
         }
 
         public boolean equals(Object obj) {
@@ -34,7 +34,7 @@ public interface b0 {
             }
             if (obj != null && a.class == obj.getClass()) {
                 a aVar = (a) obj;
-                if (this.f49900a == aVar.f49900a && this.f49902c == aVar.f49902c && this.f49903d == aVar.f49903d && Arrays.equals(this.f49901b, aVar.f49901b)) {
+                if (this.f49897a == aVar.f49897a && this.f49899c == aVar.f49899c && this.f49900d == aVar.f49900d && Arrays.equals(this.f49898b, aVar.f49898b)) {
                     return true;
                 }
             }
@@ -42,7 +42,7 @@ public interface b0 {
         }
 
         public int hashCode() {
-            return (((((this.f49900a * 31) + Arrays.hashCode(this.f49901b)) * 31) + this.f49902c) * 31) + this.f49903d;
+            return (((((this.f49897a * 31) + Arrays.hashCode(this.f49898b)) * 31) + this.f49899c) * 31) + this.f49900d;
         }
     }
 

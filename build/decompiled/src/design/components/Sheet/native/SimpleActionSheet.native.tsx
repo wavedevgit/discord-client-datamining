@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var1 = function arg0() {
-        _fun61917: for (var _fun61917_ip = 0;;) switch (_fun61917_ip) {
+        _fun61934: for (var _fun61934_ip = 0;;) switch (_fun61934_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.hideActionSheet;
@@ -26,8 +26,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = null;
                 var6 = var11 != var15;
                 if (!var6) {
-                    _fun61917_ip = 210;
-                    continue _fun61917
+                    _fun61934_ip = 210;
+                    continue _fun61934
                 }
             case 74:
                 var9 = _closure1_slot2;
@@ -48,8 +48,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var11 != var12;
                 var11 = null;
                 if (!var12) {
-                    _fun61917_ip = 199;
-                    continue _fun61917
+                    _fun61934_ip = 199;
+                    continue _fun61934
                 }
             case 151:
                 var14 = _closure1_slot2;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var9 = var10.map;
                 var8 = function(arg0, arg1) { // Environment: var8
-                    _fun61918: for (var _fun61918_ip = 0;;) switch (_fun61918_ip) {
+                    _fun61935: for (var _fun61935_ip = 0;;) switch (_fun61935_ip) {
                         case 0:
                             var1 = arg0;
                             var5 = var1.label;
@@ -110,8 +110,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.icon = var6;
                             var6 = 'default';
                             if (!var7) {
-                                _fun61918_ip = 128;
-                                continue _fun61918
+                                _fun61935_ip = 128;
+                                continue _fun61935
                             }
                         case 124:
                             var6 = 'danger';
@@ -170,4 +170,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var1;
     var2.SimpleActionSheet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 5208, 5211, 5209, 7732, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 5208, 5211, 5209, 7735, 2]);

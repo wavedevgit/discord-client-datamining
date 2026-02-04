@@ -52,8 +52,8 @@ final class b {
             z10 = false;
         }
         b2.e.b(z10, "Cannot create a CalendarItemStyle with a styleResId of 0");
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(i10, yg.k.f54505y3);
-        Rect rect = new Rect(obtainStyledAttributes.getDimensionPixelOffset(yg.k.f54514z3, 0), obtainStyledAttributes.getDimensionPixelOffset(yg.k.B3, 0), obtainStyledAttributes.getDimensionPixelOffset(yg.k.A3, 0), obtainStyledAttributes.getDimensionPixelOffset(yg.k.C3, 0));
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(i10, yg.k.f54502y3);
+        Rect rect = new Rect(obtainStyledAttributes.getDimensionPixelOffset(yg.k.f54511z3, 0), obtainStyledAttributes.getDimensionPixelOffset(yg.k.B3, 0), obtainStyledAttributes.getDimensionPixelOffset(yg.k.A3, 0), obtainStyledAttributes.getDimensionPixelOffset(yg.k.C3, 0));
         ColorStateList a10 = lh.c.a(context, obtainStyledAttributes, yg.k.D3);
         ColorStateList a11 = lh.c.a(context, obtainStyledAttributes, yg.k.I3);
         ColorStateList a12 = lh.c.a(context, obtainStyledAttributes, yg.k.G3);

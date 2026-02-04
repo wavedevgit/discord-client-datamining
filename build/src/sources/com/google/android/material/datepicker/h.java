@@ -72,11 +72,11 @@ class h extends BaseAdapter {
     public View getView(int i10, View view, ViewGroup viewGroup) {
         TextView textView = (TextView) view;
         if (view == null) {
-            textView = (TextView) LayoutInflater.from(viewGroup.getContext()).inflate(yg.h.f54215o, viewGroup, false);
+            textView = (TextView) LayoutInflater.from(viewGroup.getContext()).inflate(yg.h.f54212o, viewGroup, false);
         }
         this.f14507d.set(7, b(i10));
         textView.setText(this.f14507d.getDisplayName(7, f14506o, textView.getResources().getConfiguration().locale));
-        textView.setContentDescription(String.format(viewGroup.getContext().getString(yg.i.f54235l), this.f14507d.getDisplayName(7, 2, Locale.getDefault())));
+        textView.setContentDescription(String.format(viewGroup.getContext().getString(yg.i.f54232l), this.f14507d.getDisplayName(7, 2, Locale.getDefault())));
         return textView;
     }
 

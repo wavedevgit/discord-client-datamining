@@ -11,7 +11,7 @@ public abstract class c {
     public static final a f32554d = new a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final c f32555e = tr.b.f50235a.b();
+    private static final c f32555e = tr.b.f50232a.b();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends c implements Serializable {

@@ -6,24 +6,24 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f55274a;
+    private final Map f55271a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f55275b;
+    private final Map f55272b;
 
     public b(Map standardOperations, Map functionalOperations) {
         Intrinsics.checkNotNullParameter(standardOperations, "standardOperations");
         Intrinsics.checkNotNullParameter(functionalOperations, "functionalOperations");
-        this.f55274a = standardOperations;
-        this.f55275b = functionalOperations;
+        this.f55271a = standardOperations;
+        this.f55272b = functionalOperations;
     }
 
     public final Map a() {
-        return this.f55275b;
+        return this.f55272b;
     }
 
     public final Map b() {
-        return this.f55274a;
+        return this.f55271a;
     }
 
     public boolean equals(Object obj) {
@@ -34,19 +34,19 @@ public final class b {
             return false;
         }
         b bVar = (b) obj;
-        if (Intrinsics.areEqual(this.f55274a, bVar.f55274a) && Intrinsics.areEqual(this.f55275b, bVar.f55275b)) {
+        if (Intrinsics.areEqual(this.f55271a, bVar.f55271a) && Intrinsics.areEqual(this.f55272b, bVar.f55272b)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (this.f55274a.hashCode() * 31) + this.f55275b.hashCode();
+        return (this.f55271a.hashCode() * 31) + this.f55272b.hashCode();
     }
 
     public String toString() {
-        Map map = this.f55274a;
-        Map map2 = this.f55275b;
+        Map map = this.f55271a;
+        Map map2 = this.f55272b;
         return "LogicOperations(standardOperations=" + map + ", functionalOperations=" + map2 + ")";
     }
 }

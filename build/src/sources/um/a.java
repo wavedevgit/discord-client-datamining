@@ -10,40 +10,40 @@ import vm.c;
 public final class a extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    final Class f50737a;
+    final Class f50734a;
 
     /* renamed from: b  reason: collision with root package name */
-    final String[] f50738b;
+    final String[] f50735b;
 
     /* renamed from: c  reason: collision with root package name */
-    final Enum[] f50739c;
+    final Enum[] f50736c;
 
     /* renamed from: d  reason: collision with root package name */
-    final m.b f50740d;
+    final m.b f50737d;
 
     /* renamed from: e  reason: collision with root package name */
-    final boolean f50741e;
+    final boolean f50738e;
 
     /* renamed from: f  reason: collision with root package name */
-    final Enum f50742f;
+    final Enum f50739f;
 
     a(Class cls, Enum r42, boolean z10) {
-        this.f50737a = cls;
-        this.f50742f = r42;
-        this.f50741e = z10;
+        this.f50734a = cls;
+        this.f50739f = r42;
+        this.f50738e = z10;
         try {
             Enum[] enumArr = (Enum[]) cls.getEnumConstants();
-            this.f50739c = enumArr;
-            this.f50738b = new String[enumArr.length];
+            this.f50736c = enumArr;
+            this.f50735b = new String[enumArr.length];
             int i10 = 0;
             while (true) {
-                Enum[] enumArr2 = this.f50739c;
+                Enum[] enumArr2 = this.f50736c;
                 if (i10 < enumArr2.length) {
                     String name = enumArr2[i10].name();
-                    this.f50738b[i10] = c.n(name, cls.getField(name));
+                    this.f50735b[i10] = c.n(name, cls.getField(name));
                     i10++;
                 } else {
-                    this.f50740d = m.b.a(this.f50738b);
+                    this.f50737d = m.b.a(this.f50735b);
                     return;
                 }
             }
@@ -59,37 +59,37 @@ public final class a extends h {
     @Override // com.squareup.moshi.h
     /* renamed from: b */
     public Enum fromJson(m mVar) {
-        int C0 = mVar.C0(this.f50740d);
+        int C0 = mVar.C0(this.f50737d);
         if (C0 != -1) {
-            return this.f50739c[C0];
+            return this.f50736c[C0];
         }
         String q10 = mVar.q();
-        if (this.f50741e) {
+        if (this.f50738e) {
             if (mVar.E() == m.c.STRING) {
                 mVar.P();
-                return this.f50742f;
+                return this.f50739f;
             }
             throw new j("Expected a string but was " + mVar.E() + " at path " + q10);
         }
         String f12 = mVar.f1();
-        throw new j("Expected one of " + Arrays.asList(this.f50738b) + " but was " + f12 + " at path " + q10);
+        throw new j("Expected one of " + Arrays.asList(this.f50735b) + " but was " + f12 + " at path " + q10);
     }
 
     @Override // com.squareup.moshi.h
     /* renamed from: c */
     public void toJson(t tVar, Enum r32) {
         if (r32 != null) {
-            tVar.x1(this.f50738b[r32.ordinal()]);
+            tVar.x1(this.f50735b[r32.ordinal()]);
             return;
         }
         throw new NullPointerException("value was null! Wrap in .nullSafe() to write nullable values.");
     }
 
     public a d(Enum r42) {
-        return new a(this.f50737a, r42, true);
+        return new a(this.f50734a, r42, true);
     }
 
     public String toString() {
-        return "EnumJsonAdapter(" + this.f50737a.getName() + ")";
+        return "EnumJsonAdapter(" + this.f50734a.getName() + ")";
     }
 }

@@ -29,29 +29,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/powerups/utils/getGuildPowerupsBoostInfoText.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun102327: for (var _fun102327_ip = 0;;) switch (_fun102327_ip) {
+        _fun102340: for (var _fun102340_ip = 0;;) switch (_fun102340_ip) {
             case 0:
                 var4 = arg0;
                 var2 = arg1;
                 var1 = _closure1_slot3;
                 var1 = var1.AVAILABLE;
                 if (!(var1 !== var2)) {
-                    _fun102327_ip = 192;
-                    continue _fun102327
+                    _fun102340_ip = 192;
+                    continue _fun102340
                 }
             case 26:
                 var1 = _closure1_slot3;
                 var1 = var1.SPENT;
                 if (!(var1 !== var2)) {
-                    _fun102327_ip = 121;
-                    continue _fun102327
+                    _fun102340_ip = 121;
+                    continue _fun102340
                 }
             case 40:
                 var1 = _closure1_slot3;
                 var1 = var1.TOTAL;
                 if (!(var1 !== var2)) {
-                    _fun102327_ip = 58;
-                    continue _fun102327
+                    _fun102340_ip = 58;
+                    continue _fun102340
                 }
             case 54:
                 var1 = undefined;

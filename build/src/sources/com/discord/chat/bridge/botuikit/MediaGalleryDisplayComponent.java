@@ -21,7 +21,7 @@ public final class MediaGalleryDisplayComponent extends Component {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8248id;
+    private final String f8247id;
     @NotNull
     private final List<MediaGalleryItem> items;
     private final int type;
@@ -60,7 +60,7 @@ public final class MediaGalleryDisplayComponent extends Component {
             v1.b(i10, 7, MediaGalleryDisplayComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f8248id = str;
+        this.f8247id = str;
         this.items = list;
     }
 
@@ -75,7 +75,7 @@ public final class MediaGalleryDisplayComponent extends Component {
             i10 = mediaGalleryDisplayComponent.type;
         }
         if ((i11 & 2) != 0) {
-            str = mediaGalleryDisplayComponent.f8248id;
+            str = mediaGalleryDisplayComponent.f8247id;
         }
         if ((i11 & 4) != 0) {
             list = mediaGalleryDisplayComponent.items;
@@ -96,7 +96,7 @@ public final class MediaGalleryDisplayComponent extends Component {
 
     @NotNull
     public final String component2() {
-        return this.f8248id;
+        return this.f8247id;
     }
 
     @NotNull
@@ -117,7 +117,7 @@ public final class MediaGalleryDisplayComponent extends Component {
         }
         if (obj instanceof MediaGalleryDisplayComponent) {
             MediaGalleryDisplayComponent mediaGalleryDisplayComponent = (MediaGalleryDisplayComponent) obj;
-            return this.type == mediaGalleryDisplayComponent.type && Intrinsics.areEqual(this.f8248id, mediaGalleryDisplayComponent.f8248id) && Intrinsics.areEqual(this.items, mediaGalleryDisplayComponent.items);
+            return this.type == mediaGalleryDisplayComponent.type && Intrinsics.areEqual(this.f8247id, mediaGalleryDisplayComponent.f8247id) && Intrinsics.areEqual(this.items, mediaGalleryDisplayComponent.items);
         }
         return false;
     }
@@ -125,7 +125,7 @@ public final class MediaGalleryDisplayComponent extends Component {
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f8248id;
+        return this.f8247id;
     }
 
     @NotNull
@@ -139,13 +139,13 @@ public final class MediaGalleryDisplayComponent extends Component {
     }
 
     public int hashCode() {
-        return (((Integer.hashCode(this.type) * 31) + this.f8248id.hashCode()) * 31) + this.items.hashCode();
+        return (((Integer.hashCode(this.type) * 31) + this.f8247id.hashCode()) * 31) + this.items.hashCode();
     }
 
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f8248id;
+        String str = this.f8247id;
         List<MediaGalleryItem> list = this.items;
         return "MediaGalleryDisplayComponent(type=" + i10 + ", id=" + str + ", items=" + list + ")";
     }
@@ -156,7 +156,7 @@ public final class MediaGalleryDisplayComponent extends Component {
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(items, "items");
         this.type = i10;
-        this.f8248id = id2;
+        this.f8247id = id2;
         this.items = items;
     }
 }

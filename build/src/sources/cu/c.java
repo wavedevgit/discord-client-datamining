@@ -30,7 +30,7 @@ public abstract class c {
         public DateFormat initialValue() {
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss 'GMT'", Locale.US);
             simpleDateFormat.setLenient(false);
-            simpleDateFormat.setTimeZone(xt.e.f53572f);
+            simpleDateFormat.setTimeZone(xt.e.f53569f);
             return simpleDateFormat;
         }
     }
@@ -60,7 +60,7 @@ public abstract class c {
                     DateFormat dateFormat = dateFormatArr[i10];
                     if (dateFormat == null) {
                         dateFormat = new SimpleDateFormat(f19860b[i10], Locale.US);
-                        dateFormat.setTimeZone(xt.e.f53572f);
+                        dateFormat.setTimeZone(xt.e.f53569f);
                         dateFormatArr[i10] = dateFormat;
                     }
                     parsePosition.setIndex(0);

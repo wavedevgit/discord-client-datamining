@@ -7,15 +7,15 @@ import x.y0;
 public class b0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final TorchFlashRequiredFor3aUpdateQuirk f50305a;
+    private final TorchFlashRequiredFor3aUpdateQuirk f50302a;
 
     public b0(d2 d2Var) {
-        this.f50305a = (TorchFlashRequiredFor3aUpdateQuirk) d2Var.b(TorchFlashRequiredFor3aUpdateQuirk.class);
+        this.f50302a = (TorchFlashRequiredFor3aUpdateQuirk) d2Var.b(TorchFlashRequiredFor3aUpdateQuirk.class);
     }
 
     public boolean a() {
         boolean z10;
-        TorchFlashRequiredFor3aUpdateQuirk torchFlashRequiredFor3aUpdateQuirk = this.f50305a;
+        TorchFlashRequiredFor3aUpdateQuirk torchFlashRequiredFor3aUpdateQuirk = this.f50302a;
         if (torchFlashRequiredFor3aUpdateQuirk != null && torchFlashRequiredFor3aUpdateQuirk.f()) {
             z10 = true;
         } else {

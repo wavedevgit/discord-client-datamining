@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guilds_bar/native/utils/transitionGuildsBarToGuildOrOpenSelectedChannel.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun100984: for (var _fun100984_ip = 0;;) switch (_fun100984_ip) {
+        _fun101000: for (var _fun101000_ip = 0;;) switch (_fun101000_ip) {
             case 0:
                 var5 = arg0;
                 var3 = _closure1_slot0;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2 == var9;
                 var4 = undefined;
                 if (var3) {
-                    _fun100984_ip = 58;
-                    continue _fun100984
+                    _fun101000_ip = 58;
+                    continue _fun101000
                 }
             case 48:
                 var3 = var9.isReady;
@@ -47,8 +47,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = true;
                 var3 = undefined;
                 if (!(var7 === var4)) {
-                    _fun100984_ip = 195;
-                    continue _fun100984
+                    _fun101000_ip = 195;
+                    continue _fun101000
                 }
             case 69:
                 var6 = _closure1_slot0;
@@ -63,48 +63,48 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var2 != var4;
                 var3 = undefined;
                 if (!var6) {
-                    _fun100984_ip = 195;
-                    continue _fun100984
+                    _fun101000_ip = 195;
+                    continue _fun101000
                 }
             case 119:
                 var8 = var4.params;
                 var9 = var2 == var8;
                 var6 = undefined;
                 if (var9) {
-                    _fun100984_ip = 140;
-                    continue _fun100984
+                    _fun101000_ip = 140;
+                    continue _fun101000
                 }
             case 134:
                 var6 = var8.drawerOpen;
             case 140:
                 var3 = undefined;
                 if (!(var7 !== var6)) {
-                    _fun100984_ip = 195;
-                    continue _fun100984
+                    _fun101000_ip = 195;
+                    continue _fun101000
                 }
             case 146:
                 var7 = var4.params;
                 var8 = var2 == var7;
                 var6 = undefined;
                 if (var8) {
-                    _fun100984_ip = 166;
-                    continue _fun100984
+                    _fun101000_ip = 166;
+                    continue _fun101000
                 }
             case 161:
                 var6 = var7.guildId;
             case 166:
                 var3 = undefined;
                 if (!(var6 === var5)) {
-                    _fun100984_ip = 195;
-                    continue _fun100984
+                    _fun101000_ip = 195;
+                    continue _fun101000
                 }
             case 172:
                 var6 = var4.params;
                 var7 = var2 == var6;
                 var4 = undefined;
                 if (var7) {
-                    _fun100984_ip = 192;
-                    continue _fun100984
+                    _fun101000_ip = 192;
+                    continue _fun101000
                 }
             case 187:
                 var4 = var6.channelId;
@@ -112,8 +112,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var4;
             case 195:
                 if (!(var2 == var3)) {
-                    _fun100984_ip = 232;
-                    continue _fun100984
+                    _fun101000_ip = 232;
+                    continue _fun101000
                 }
             case 199:
                 var4 = _closure1_slot0;
@@ -123,8 +123,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.bind(var0)(var2);
                 var2 = var4.transitionToGuild;
                 var2 = var2.bind(var4)(var5);
-                _fun100984_ip = 263;
-                continue _fun100984;
+                _fun101000_ip = 263;
+                continue _fun101000;
             case 232:
                 var2 = _closure1_slot0;
                 var4 = _closure1_slot1;

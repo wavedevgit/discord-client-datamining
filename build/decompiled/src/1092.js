@@ -15,21 +15,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
     var0 = function() {
-        _fun12004: for (var _fun12004_ip = 0;;) switch (_fun12004_ip) {
+        _fun12006: for (var _fun12006_ip = 0;;) switch (_fun12006_ip) {
             case 0:
                 var0 = undefined;
                 var2 = undefined;
                 var3 = arguments.length;
                 var1 = 0;
                 if (!(var3 > var1)) {
-                    _fun12004_ip = 21;
-                    continue _fun12004
+                    _fun12006_ip = 21;
+                    continue _fun12006
                 }
             case 13:
                 var3 = arguments[var1];
                 if (!(var0 === var3)) {
-                    _fun12004_ip = 53;
-                    continue _fun12004
+                    _fun12006_ip = 53;
+                    continue _fun12006
                 }
             case 21:
                 var4 = _closure1_slot0;
@@ -38,15 +38,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var4.bind(var0)(var3);
                 var3 = var4.getClient;
                 var3 = var3.bind(var4)();
-                _fun12004_ip = 57;
-                continue _fun12004;
+                _fun12006_ip = 57;
+                continue _fun12006;
             case 53:
                 var3 = arguments[var1];
             case 57:
                 var1 = null;
                 if (!(var1 != var3)) {
-                    _fun12004_ip = 80;
-                    continue _fun12004
+                    _fun12006_ip = 80;
+                    continue _fun12006
                 }
             case 63:
                 var2 = var3.emit;

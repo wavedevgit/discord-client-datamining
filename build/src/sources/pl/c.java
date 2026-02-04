@@ -170,16 +170,16 @@ public final class c implements i {
         Number number3;
         Number d10;
         Integer num = -1;
-        if (mediaFormat == null || (number = rl.e.f48869a.a(mediaFormat, num)) == null) {
+        if (mediaFormat == null || (number = rl.e.f48866a.a(mediaFormat, num)) == null) {
             number = num;
         }
-        if (mediaFormat2 == null || (number2 = rl.e.f48869a.a(mediaFormat2, num)) == null) {
+        if (mediaFormat2 == null || (number2 = rl.e.f48866a.a(mediaFormat2, num)) == null) {
             number2 = num;
         }
-        if (mediaFormat == null || (number3 = rl.e.f48869a.d(mediaFormat, num)) == null) {
+        if (mediaFormat == null || (number3 = rl.e.f48866a.d(mediaFormat, num)) == null) {
             number3 = num;
         }
-        if (mediaFormat2 != null && (d10 = rl.e.f48869a.d(mediaFormat2, num)) != null) {
+        if (mediaFormat2 != null && (d10 = rl.e.f48866a.d(mediaFormat2, num)) != null) {
             num = d10;
         }
         int i10 = this.f46133f;

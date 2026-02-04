@@ -39,7 +39,7 @@ import yg.j;
 public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c implements jh.b {
 
     /* renamed from: t0  reason: collision with root package name */
-    private static final int f14182t0 = j.f54253g;
+    private static final int f14182t0 = j.f54250g;
     private boolean A;
     private boolean B;
     private boolean C;
@@ -697,7 +697,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
             k0(view, i10);
             int i11 = 6;
             if (!this.f14188e && this.X != 6) {
-                this.f14207r0.put(i10, b0(view, yg.i.f54224a, 6));
+                this.f14207r0.put(i10, b0(view, yg.i.f54221a, 6));
             }
             if (this.U && D0() && this.X != 5) {
                 H0(view, AccessibilityNodeInfoCompat.a.f3332y, 5);
@@ -1449,7 +1449,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
             view.setFitsSystemWindows(true);
         }
         if (this.f14192h0 == null) {
-            this.f14208s = coordinatorLayout.getResources().getDimensionPixelSize(yg.d.f54127b);
+            this.f14208s = coordinatorLayout.getResources().getDimensionPixelSize(yg.d.f54124b);
             b1(view);
             h0.L0(view, new com.google.android.material.bottomsheet.c(view));
             this.f14192h0 = new WeakReference(view);
@@ -1798,8 +1798,8 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
         if (obtainStyledAttributes.hasValue(yg.k.W)) {
             this.f14212v = lh.c.a(context, obtainStyledAttributes, yg.k.W);
         }
-        if (obtainStyledAttributes.hasValue(yg.k.f54412o0)) {
-            this.K = k.e(context, attributeSet, yg.b.f54085d, f14182t0).m();
+        if (obtainStyledAttributes.hasValue(yg.k.f54409o0)) {
+            this.K = k.e(context, attributeSet, yg.b.f54082d, f14182t0).m();
         }
         m0(context);
         n0();
@@ -1810,34 +1810,34 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
         if (obtainStyledAttributes.hasValue(yg.k.U)) {
             R0(obtainStyledAttributes.getDimensionPixelSize(yg.k.U, -1));
         }
-        TypedValue peekValue = obtainStyledAttributes.peekValue(yg.k.f54294c0);
+        TypedValue peekValue = obtainStyledAttributes.peekValue(yg.k.f54291c0);
         if (peekValue != null && (i10 = peekValue.data) == -1) {
             T0(i10);
         } else {
-            T0(obtainStyledAttributes.getDimensionPixelSize(yg.k.f54294c0, -1));
+            T0(obtainStyledAttributes.getDimensionPixelSize(yg.k.f54291c0, -1));
         }
-        Q0(obtainStyledAttributes.getBoolean(yg.k.f54284b0, false));
-        O0(obtainStyledAttributes.getBoolean(yg.k.f54334g0, false));
+        Q0(obtainStyledAttributes.getBoolean(yg.k.f54281b0, false));
+        O0(obtainStyledAttributes.getBoolean(yg.k.f54331g0, false));
         N0(obtainStyledAttributes.getBoolean(yg.k.Z, true));
-        X0(obtainStyledAttributes.getBoolean(yg.k.f54324f0, false));
+        X0(obtainStyledAttributes.getBoolean(yg.k.f54321f0, false));
         L0(obtainStyledAttributes.getBoolean(yg.k.X, true));
-        V0(obtainStyledAttributes.getInt(yg.k.f54304d0, 0));
-        P0(obtainStyledAttributes.getFloat(yg.k.f54274a0, 0.5f));
+        V0(obtainStyledAttributes.getInt(yg.k.f54301d0, 0));
+        P0(obtainStyledAttributes.getFloat(yg.k.f54271a0, 0.5f));
         TypedValue peekValue2 = obtainStyledAttributes.peekValue(yg.k.Y);
         if (peekValue2 != null && peekValue2.type == 16) {
             M0(peekValue2.data);
         } else {
             M0(obtainStyledAttributes.getDimensionPixelOffset(yg.k.Y, 0));
         }
-        W0(obtainStyledAttributes.getInt(yg.k.f54314e0, 500));
-        this.A = obtainStyledAttributes.getBoolean(yg.k.f54374k0, false);
-        this.B = obtainStyledAttributes.getBoolean(yg.k.f54384l0, false);
-        this.C = obtainStyledAttributes.getBoolean(yg.k.f54394m0, false);
-        this.D = obtainStyledAttributes.getBoolean(yg.k.f54403n0, true);
-        this.E = obtainStyledAttributes.getBoolean(yg.k.f54344h0, false);
-        this.F = obtainStyledAttributes.getBoolean(yg.k.f54354i0, false);
-        this.G = obtainStyledAttributes.getBoolean(yg.k.f54364j0, false);
-        this.J = obtainStyledAttributes.getBoolean(yg.k.f54421p0, true);
+        W0(obtainStyledAttributes.getInt(yg.k.f54311e0, 500));
+        this.A = obtainStyledAttributes.getBoolean(yg.k.f54371k0, false);
+        this.B = obtainStyledAttributes.getBoolean(yg.k.f54381l0, false);
+        this.C = obtainStyledAttributes.getBoolean(yg.k.f54391m0, false);
+        this.D = obtainStyledAttributes.getBoolean(yg.k.f54400n0, true);
+        this.E = obtainStyledAttributes.getBoolean(yg.k.f54341h0, false);
+        this.F = obtainStyledAttributes.getBoolean(yg.k.f54351i0, false);
+        this.G = obtainStyledAttributes.getBoolean(yg.k.f54361j0, false);
+        this.J = obtainStyledAttributes.getBoolean(yg.k.f54418p0, true);
         obtainStyledAttributes.recycle();
         this.f14200o = ViewConfiguration.get(context).getScaledMaximumFlingVelocity();
     }

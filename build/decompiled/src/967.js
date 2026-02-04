@@ -15,14 +15,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
     var2 = function arg0, arg1() {
-        _fun9968: for (var _fun9968_ip = 0;;) switch (_fun9968_ip) {
+        _fun9970: for (var _fun9970_ip = 0;;) switch (_fun9970_ip) {
             case 0:
                 var5 = arg0;
                 var0 = arg1;
                 var1 = var0.error;
                 if (!var1) {
-                    _fun9968_ip = 142;
-                    continue _fun9968
+                    _fun9970_ip = 142;
+                    continue _fun9970
                 }
             case 17:
                 var4 = var5.setStatus;
@@ -38,8 +38,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var0.error;
                 var6 = var6.type;
                 if (var6) {
-                    _fun9968_ip = 79;
-                    continue _fun9968
+                    _fun9970_ip = 79;
+                    continue _fun9970
                 }
             case 73:
                 var6 = 'internal_error';

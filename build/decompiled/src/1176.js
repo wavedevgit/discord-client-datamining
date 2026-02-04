@@ -18,13 +18,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.LogBox;
     var _closure1_slot0 = var3;
     var1 = function arg0() {
-        _fun12826: for (var _fun12826_ip = 0;;) switch (_fun12826_ip) {
+        _fun12828: for (var _fun12828_ip = 0;;) switch (_fun12828_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1;
                 if (!var0) {
-                    _fun12826_ip = 21;
-                    continue _fun12826
+                    _fun12828_ip = 21;
+                    continue _fun12828
                 }
             case 9:
                 var3 = var1.major;
@@ -32,8 +32,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var2 === var3;
             case 21:
                 if (!var0) {
-                    _fun12826_ip = 37;
-                    continue _fun12826
+                    _fun12828_ip = 37;
+                    continue _fun12828
                 }
             case 24:
                 var2 = var1.minor;
@@ -41,8 +41,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var2 < var1;
             case 37:
                 if (!var0) {
-                    _fun12826_ip = 68;
-                    continue _fun12826
+                    _fun12828_ip = 68;
+                    continue _fun12828
                 }
             case 40:
                 var2 = _closure1_slot0;

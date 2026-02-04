@@ -13,8 +13,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'width': 40,
         'height': 40.5,
         'scales': null,
-        'hash': 'a3768a48fee4076951a25e660d265530',
-        'name': 'role_subscription_benefit_wise_avatar',
+        'hash': '0839bdcd20fab094e9db3928575b1df5',
+        'name': 'role_subscription_benefit_avatar_1',
         'type': 'png'
     };
     var4 = [2, 3];

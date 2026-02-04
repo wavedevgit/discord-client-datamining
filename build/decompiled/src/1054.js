@@ -23,13 +23,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = arg0;
         var1 = var2.forEach;
         var0 = function(arg0) { // Environment: var0
-            _fun10822: for (var _fun10822_ip = 0;;) switch (_fun10822_ip) {
+            _fun10824: for (var _fun10824_ip = 0;;) switch (_fun10824_ip) {
                 case 0:
                     var0 = arg0;
                     var1 = var0.interactionId;
                     if (!var1) {
-                        _fun10822_ip = 114;
-                        continue _fun10822
+                        _fun10824_ip = 114;
+                        continue _fun10824
                     }
                 case 12:
                     var2 = global;
@@ -47,8 +47,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     _closure1_slot5 = var2;
                     var0 = 0;
                     if (!var2) {
-                        _fun10822_ip = 110;
-                        continue _fun10822
+                        _fun10824_ip = 110;
+                        continue _fun10824
                     }
                 case 84:
                     var3 = _closure1_slot5;
@@ -71,26 +71,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot6 = var2;
     var2 = function() {
-        _fun10823: for (var _fun10823_ip = 0;;) switch (_fun10823_ip) {
+        _fun10825: for (var _fun10825_ip = 0;;) switch (_fun10825_ip) {
             case 0:
                 var0 = _closure1_slot2;
                 if (var0) {
-                    _fun10823_ip = 31;
-                    continue _fun10823
+                    _fun10825_ip = 31;
+                    continue _fun10825
                 }
             case 10:
                 var0 = global;
                 var0 = var0.performance;
                 var0 = var0.interactionCount;
                 if (var0) {
-                    _fun10823_ip = 29;
-                    continue _fun10823
+                    _fun10825_ip = 29;
+                    continue _fun10825
                 }
             case 27:
                 var0 = 0;
             case 29:
-                _fun10823_ip = 35;
-                continue _fun10823;
+                _fun10825_ip = 35;
+                continue _fun10825;
             case 31:
                 var0 = _closure1_slot3;
             case 35:
@@ -99,22 +99,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.getInteractionCount = var2;
     var0 = function() {
-        _fun10824: for (var _fun10824_ip = 0;;) switch (_fun10824_ip) {
+        _fun10826: for (var _fun10826_ip = 0;;) switch (_fun10826_ip) {
             case 0:
                 var0 = global;
                 var1 = var0.performance;
                 var0 = 'interactionCount';
                 var0 = var0 in var1;
                 if (var0) {
-                    _fun10824_ip = 26;
-                    continue _fun10824
+                    _fun10826_ip = 26;
+                    continue _fun10826
                 }
             case 19:
                 var0 = _closure1_slot2;
             case 26:
                 if (var0) {
-                    _fun10824_ip = 88;
-                    continue _fun10824
+                    _fun10826_ip = 88;
+                    continue _fun10826
                 }
             case 29:
                 var3 = _closure1_slot0;

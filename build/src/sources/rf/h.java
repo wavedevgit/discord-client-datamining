@@ -26,7 +26,7 @@ public final class h extends ef.d implements qf.b {
 
     @Override // qf.b
     public final Task a() {
-        Task p10 = p(q.a().d(ig.d.f28392a).b(g.f48808a).e(28601).a());
+        Task p10 = p(q.a().d(ig.d.f28392a).b(g.f48805a).e(28601).a());
         Intrinsics.checkNotNullExpressionValue(p10, "doRead(\n      TaskApiCal…Y)\n        .build()\n    )");
         return p10;
     }

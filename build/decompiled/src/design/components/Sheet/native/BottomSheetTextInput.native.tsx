@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var0.TextInput;
         var0 = {};
         var7 = function arg0() {
-            _fun48190: for (var _fun48190_ip = 0;;) switch (_fun48190_ip) {
+            _fun48193: for (var _fun48193_ip = 0;;) switch (_fun48193_ip) {
                 case 0:
                     var2 = arg0;
                     var1 = _closure2_slot1;
@@ -90,21 +90,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = 'function';
                     var1 = typeof var1;
                     if (!(var3 !== var1)) {
-                        _fun48190_ip = 53;
-                        continue _fun48190
+                        _fun48193_ip = 53;
+                        continue _fun48193
                     }
                 case 31:
                     var3 = _closure2_slot0;
                     var1 = null;
                     if (!(var1 != var3)) {
-                        _fun48190_ip = 64;
-                        continue _fun48190
+                        _fun48193_ip = 64;
+                        continue _fun48193
                     }
                 case 41:
                     var1 = _closure2_slot0;
                     var1.current = var2;
-                    _fun48190_ip = 64;
-                    continue _fun48190;
+                    _fun48193_ip = 64;
+                    continue _fun48193;
                 case 53:
                     var1 = _closure2_slot0;
                     var0 = undefined;

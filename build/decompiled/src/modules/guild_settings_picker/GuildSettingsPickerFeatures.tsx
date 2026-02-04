@@ -169,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_settings_picker/GuildSettingsPickerFeatures.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun96352: for (var _fun96352_ip = 0;;) switch (_fun96352_ip) {
+        _fun96368: for (var _fun96368_ip = 0;;) switch (_fun96368_ip) {
             case 0:
                 var8 = arg0;
                 var5 = _closure1_slot3;
@@ -179,8 +179,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = undefined;
                 var0 = undefined;
                 if (var7) {
-                    _fun96352_ip = 38;
-                    continue _fun96352
+                    _fun96368_ip = 38;
+                    continue _fun96368
                 }
             case 30:
                 var7 = _closure1_slot5;
@@ -199,16 +199,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3 == var0;
                 var2 = undefined;
                 if (var5) {
-                    _fun96352_ip = 114;
-                    continue _fun96352
+                    _fun96368_ip = 114;
+                    continue _fun96368
                 }
             case 89:
                 var5 = var0.useIsGuildSupported;
                 var5 = var3 == var5;
                 var2 = undefined;
                 if (var5) {
-                    _fun96352_ip = 114;
-                    continue _fun96352
+                    _fun96368_ip = 114;
+                    continue _fun96368
                 }
             case 104:
                 var5 = var0.useIsGuildSupported;
@@ -220,8 +220,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var2;
                 var4 = copyDataProperties(var10, var9);
                 if (!(var3 == var0)) {
-                    _fun96352_ip = 137;
-                    continue _fun96352
+                    _fun96368_ip = 137;
+                    continue _fun96368
                 }
             case 135:
                 var0 = {};
@@ -248,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.canCreateGuild;
                 var0.canCreateGuild = var2;
                 var1 = function arg0, arg1() {
-                    _fun96353: for (var _fun96353_ip = 0;;) switch (_fun96353_ip) {
+                    _fun96369: for (var _fun96369_ip = 0;;) switch (_fun96369_ip) {
                         case 0:
                             var5 = arg0;
                             var4 = arg1;
@@ -256,8 +256,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = undefined;
                             var0 = var0.bind(var3)(var5, var4);
                             if (!var0) {
-                                _fun96353_ip = 55;
-                                continue _fun96353
+                                _fun96369_ip = 55;
+                                continue _fun96369
                             }
                         case 24:
                             var6 = _closure2_slot1;
@@ -265,8 +265,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = var2 == var6;
                             var2 = undefined;
                             if (var6) {
-                                _fun96353_ip = 49;
-                                continue _fun96353
+                                _fun96369_ip = 49;
+                                continue _fun96369
                             }
                         case 39:
                             var1 = _closure2_slot1;
@@ -284,4 +284,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGuildSettingsPickerFeature = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 3091, 12556, 12557, 12559, 1234, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 3091, 12558, 12559, 12561, 1234, 566, 2]);

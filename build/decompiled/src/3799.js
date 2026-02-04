@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var1;
     var1 = function() { // Environment: var0
         var0 = function arg0, arg1, arg2() {
-            _fun33910: for (var _fun33910_ip = 0;;) switch (_fun33910_ip) {
+            _fun33912: for (var _fun33912_ip = 0;;) switch (_fun33912_ip) {
                 case 0:
                     var1 = arg0;
                     var9 = arg1;
@@ -64,34 +64,34 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1.lastTimestamp = var9;
                     var9 = var0.clamp;
                     if (!var9) {
-                        _fun33910_ip = 244;
-                        continue _fun33910
+                        _fun33912_ip = 244;
+                        continue _fun33912
                     }
                 case 198:
                     if (!(var6 < var2)) {
-                        _fun33910_ip = 221;
-                        continue _fun33910
+                        _fun33912_ip = 221;
+                        continue _fun33912
                     }
                 case 202:
                     var10 = var1.current;
                     var9 = var0.clamp;
                     var9 = var9[var2];
                     if (!(!(var10 <= var9))) {
-                        _fun33910_ip = 310;
-                        continue _fun33910
+                        _fun33912_ip = 310;
+                        continue _fun33912
                     }
                 case 221:
                     if (!(var6 > var2)) {
-                        _fun33910_ip = 244;
-                        continue _fun33910
+                        _fun33912_ip = 244;
+                        continue _fun33912
                     }
                 case 225:
                     var9 = var1.current;
                     var6 = var0.clamp;
                     var6 = var6[var4];
                     if (!(!(var9 >= var6))) {
-                        _fun33910_ip = 290;
-                        continue _fun33910
+                        _fun33912_ip = 290;
+                        continue _fun33912
                     }
                 case 244:
                     var6 = var5.Math;

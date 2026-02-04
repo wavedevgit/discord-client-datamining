@@ -1,7 +1,7 @@
 // uikit-native/PassthroughTouchView.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun44524: for (var _fun44524_ip = 0;;) switch (_fun44524_ip) {
+    _fun44527: for (var _fun44527_ip = 0;;) switch (_fun44527_ip) {
         case 0:
             var4 = require;
             var2 = exports;
@@ -34,14 +34,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var7.isAndroid;
             var3 = var3.bind(var7)();
             if (var3) {
-                _fun44524_ip = 136;
-                continue _fun44524
+                _fun44527_ip = 136;
+                continue _fun44527
             }
         case 123:
             var3 = 'PassthroughTouchView';
             var3 = var6.bind(var0)(var3);
-            _fun44524_ip = 151;
-            continue _fun44524;
+            _fun44527_ip = 151;
+            continue _fun44527;
         case 136:
             var6 = 4;
             var7 = var5[var6];

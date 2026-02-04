@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/user_settings/native/shared/InfoBox.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun56815: for (var _fun56815_ip = 0;;) switch (_fun56815_ip) {
+        _fun56857: for (var _fun56857_ip = 0;;) switch (_fun56857_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.children;
@@ -104,8 +104,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0.look;
                 var3 = undefined;
                 if (!(var5 === var3)) {
-                    _fun56815_ip = 38;
-                    continue _fun56815
+                    _fun56857_ip = 38;
+                    continue _fun56857
                 }
             case 25:
                 var0 = _closure1_slot7;

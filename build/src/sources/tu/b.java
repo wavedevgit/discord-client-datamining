@@ -6,7 +6,7 @@ import wu.d;
 public final class b implements nu.b, wu.d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f50297a = new b();
+    public static final b f50294a = new b();
 
     private b() {
     }

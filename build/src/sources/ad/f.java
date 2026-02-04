@@ -292,7 +292,7 @@ public final class f implements k {
             this.f500q = h10;
             this.f491h.q(h10);
             b0 b0Var = this.f493j;
-            Format.b Q = new Format.b().g0(this.f487d.f39992b).Y(RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT).J(this.f487d.f39995e).h0(this.f487d.f39994d).P(this.f488e.f49994a).Q(this.f488e.f49995b);
+            Format.b Q = new Format.b().g0(this.f487d.f39992b).Y(RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT).J(this.f487d.f39995e).h0(this.f487d.f39994d).P(this.f488e.f49991a).Q(this.f488e.f49992b);
             if ((this.f484a & 8) != 0) {
                 metadata = null;
             } else {

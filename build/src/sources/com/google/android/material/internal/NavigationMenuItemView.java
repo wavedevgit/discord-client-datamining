@@ -74,7 +74,7 @@ public class NavigationMenuItemView extends d implements k.a {
     private void setActionView(View view) {
         if (view != null) {
             if (this.L == null) {
-                this.L = (FrameLayout) ((ViewStub) findViewById(yg.f.f54176g)).inflate();
+                this.L = (FrameLayout) ((ViewStub) findViewById(yg.f.f54173g)).inflate();
             }
             if (view.getParent() != null) {
                 ((ViewGroup) view.getParent()).removeView(view);
@@ -192,7 +192,7 @@ public class NavigationMenuItemView extends d implements k.a {
             drawable.setBounds(0, 0, i10, i10);
         } else if (this.H) {
             if (this.P == null) {
-                Drawable f10 = q1.j.f(getResources(), yg.e.f54169k, getContext().getTheme());
+                Drawable f10 = q1.j.f(getResources(), yg.e.f54166k, getContext().getTheme());
                 this.P = f10;
                 if (f10 != null) {
                     int i11 = this.G;
@@ -253,9 +253,9 @@ public class NavigationMenuItemView extends d implements k.a {
         a aVar = new a();
         this.Q = aVar;
         setOrientation(0);
-        LayoutInflater.from(context).inflate(yg.h.f54204d, (ViewGroup) this, true);
-        setIconSize(context.getResources().getDimensionPixelSize(yg.d.f54133e));
-        CheckedTextView checkedTextView = (CheckedTextView) findViewById(yg.f.f54177h);
+        LayoutInflater.from(context).inflate(yg.h.f54201d, (ViewGroup) this, true);
+        setIconSize(context.getResources().getDimensionPixelSize(yg.d.f54130e));
+        CheckedTextView checkedTextView = (CheckedTextView) findViewById(yg.f.f54174h);
         this.K = checkedTextView;
         checkedTextView.setDuplicateParentStateEnabled(true);
         h0.n0(checkedTextView, aVar);

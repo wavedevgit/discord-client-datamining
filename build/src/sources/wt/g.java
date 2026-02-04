@@ -7,7 +7,7 @@ import okio.ByteString;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g f52760a = new g();
+    public static final g f52757a = new g();
 
     private g() {
     }

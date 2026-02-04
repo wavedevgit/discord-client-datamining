@@ -61,12 +61,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var10.id;
         var2[1] = var1;
         var1 = function() { // Environment: var0
-            _fun102112: for (var _fun102112_ip = 0;;) switch (_fun102112_ip) {
+            _fun102125: for (var _fun102125_ip = 0;;) switch (_fun102125_ip) {
                 case 0:
                     var1 = _closure2_slot1;
                     if (!var1) {
-                        _fun102112_ip = 55;
-                        continue _fun102112
+                        _fun102125_ip = 55;
+                        continue _fun102125
                     }
                 case 10:
                     var3 = _closure1_slot1;
@@ -90,12 +90,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[0] = var10;
         var1[1] = var9;
         var0 = function() { // Environment: var0
-            _fun102113: for (var _fun102113_ip = 0;;) switch (_fun102113_ip) {
+            _fun102126: for (var _fun102126_ip = 0;;) switch (_fun102126_ip) {
                 case 0:
                     var0 = _closure2_slot1;
                     if (var0) {
-                        _fun102113_ip = 55;
-                        continue _fun102113
+                        _fun102126_ip = 55;
+                        continue _fun102126
                     }
                 case 10:
                     var3 = _closure1_slot1;
@@ -192,4 +192,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getScaledGuildProgressButtonHeight = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4870, 33, 6977, 10248, 10252, 5380, 13311, 1234, 10257, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4870, 33, 6980, 10251, 10255, 5380, 13312, 1234, 10260, 2]);

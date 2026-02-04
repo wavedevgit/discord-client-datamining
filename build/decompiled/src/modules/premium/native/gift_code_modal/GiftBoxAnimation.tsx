@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/native/gift_code_modal/GiftBoxAnimation.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56944: for (var _fun56944_ip = 0;;) switch (_fun56944_ip) {
+        _fun56986: for (var _fun56986_ip = 0;;) switch (_fun56986_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.giftStyle;
@@ -64,8 +64,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.bind(var6)(var3, var0);
                 var0 = null;
                 if (!(var0 != var8)) {
-                    _fun56944_ip = 437;
-                    continue _fun56944
+                    _fun56986_ip = 437;
+                    continue _fun56986
                 }
             case 73:
                 var6 = _closure1_slot0;
@@ -241,4 +241,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 1623, 33, 566, 3459, 6925, 6926, 6927, 6928, 6929, 6930, 6931, 6932, 6933, 6934, 6935, 6599, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 1623, 33, 566, 3459, 6930, 6931, 6932, 6933, 6934, 6935, 6936, 6937, 6938, 6939, 6940, 6599, 2]);

@@ -1183,22 +1183,22 @@ public final class w implements ym.k {
         Context context = this.f27572b.getRoot().getContext();
         Camera2PreviewView camera2Preview = this.f27572b.f30988e;
         Intrinsics.checkNotNullExpressionValue(camera2Preview, "camera2Preview");
-        if (aVar.x() != vn.a.f51702i) {
+        if (aVar.x() != vn.a.f51699i) {
             Context applicationContext = context.getApplicationContext();
             Intrinsics.checkNotNullExpressionValue(applicationContext, "getApplicationContext(...)");
             int i10 = b.f27600b[aVar.g().ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 == 3) {
-                        nVar = rn.n.f49017i;
+                        nVar = rn.n.f49014i;
                     } else {
                         throw new lr.p();
                     }
                 } else {
-                    nVar = rn.n.f49016e;
+                    nVar = rn.n.f49013e;
                 }
             } else {
-                nVar = rn.n.f49015d;
+                nVar = rn.n.f49012d;
             }
             rn.m b10 = rn.j.b(applicationContext, nVar);
             if (b10 == null) {

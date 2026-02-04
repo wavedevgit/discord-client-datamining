@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var8.VOICE;
     var1.parent = var8;
     var8 = function() {
-        _fun84810: for (var _fun84810_ip = 0;;) switch (_fun84810_ip) {
+        _fun84827: for (var _fun84827_ip = 0;;) switch (_fun84827_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -76,8 +76,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot3;
                 var0 = var0.PUSH_TO_TALK;
                 if (!(var2 !== var0)) {
-                    _fun84810_ip = 128;
-                    continue _fun84810
+                    _fun84827_ip = 128;
+                    continue _fun84827
                 }
             case 71:
                 var4 = _closure1_slot0;
@@ -92,8 +92,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.t;
                 var0 = var0.cHCEOJ;
                 var0 = var2.bind(var3)(var0);
-                _fun84810_ip = 183;
-                continue _fun84810;
+                _fun84827_ip = 183;
+                continue _fun84827;
             case 128:
                 var4 = _closure1_slot0;
                 var6 = _closure1_slot1;
@@ -145,4 +145,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3476, 7005, 3510, 566, 1234, 8996, 10845, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3476, 7008, 3510, 566, 1234, 8999, 10848, 2]);

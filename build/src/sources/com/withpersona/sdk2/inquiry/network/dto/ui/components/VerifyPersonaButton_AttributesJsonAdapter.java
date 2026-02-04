@@ -133,7 +133,7 @@ public final class VerifyPersonaButton_AttributesJsonAdapter extends h {
         String str9 = str;
         Constructor<VerifyPersonaButton.Attributes> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = VerifyPersonaButton.Attributes.class.getDeclaredConstructor(String.class, Button.ButtonType.class, String.class, Integer.class, String.class, JsonLogicBoolean.class, JsonLogicBoolean.class, Integer.TYPE, c.f51691c);
+            constructor = VerifyPersonaButton.Attributes.class.getDeclaredConstructor(String.class, Button.ButtonType.class, String.class, Integer.class, String.class, JsonLogicBoolean.class, JsonLogicBoolean.class, Integer.TYPE, c.f51688c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

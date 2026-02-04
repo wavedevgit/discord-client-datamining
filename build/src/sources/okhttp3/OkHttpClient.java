@@ -182,7 +182,7 @@ public class OkHttpClient implements Cloneable, Call.Factory {
         this.B = null;
         this.H = null;
         this.C = null;
-        this.G = wt.c.f52750d;
+        this.G = wt.c.f52747d;
         P();
     }
 
@@ -213,7 +213,7 @@ public class OkHttpClient implements Cloneable, Call.Factory {
                 if (this.B == null) {
                     if (this.H == null) {
                         if (this.C == null) {
-                            if (Intrinsics.areEqual(this.G, wt.c.f52750d)) {
+                            if (Intrinsics.areEqual(this.G, wt.c.f52747d)) {
                                 return;
                             }
                             throw new IllegalStateException("Check failed.");
@@ -479,12 +479,12 @@ public class OkHttpClient implements Cloneable, Call.Factory {
             this.f44058d = new ArrayList();
             this.f44059e = xt.e.g(e.f44264b);
             this.f44060f = true;
-            wt.a aVar = wt.a.f52746b;
+            wt.a aVar = wt.a.f52743b;
             this.f44061g = aVar;
             this.f44062h = true;
             this.f44063i = true;
             this.f44064j = CookieJar.f43980b;
-            this.f44066l = wt.h.f52762b;
+            this.f44066l = wt.h.f52759b;
             this.f44069o = aVar;
             SocketFactory socketFactory = SocketFactory.getDefault();
             Intrinsics.checkNotNullExpressionValue(socketFactory, "getDefault()");
@@ -493,7 +493,7 @@ public class OkHttpClient implements Cloneable, Call.Factory {
             this.f44073s = aVar2.a();
             this.f44074t = aVar2.b();
             this.f44075u = ju.d.f32009a;
-            this.f44076v = wt.c.f52750d;
+            this.f44076v = wt.c.f52747d;
             this.f44079y = 10000;
             this.f44080z = 10000;
             this.A = 10000;

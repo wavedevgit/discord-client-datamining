@@ -21,7 +21,7 @@ public final class SeparatorDisplayComponent extends Component {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8252id;
+    private final String f8251id;
     @NotNull
     private final SeparatorSpacingSize spacing;
     private final int type;
@@ -49,7 +49,7 @@ public final class SeparatorDisplayComponent extends Component {
             v1.b(i10, 15, SeparatorDisplayComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f8252id = str;
+        this.f8251id = str;
         this.divider = z10;
         this.spacing = separatorSpacingSize;
     }
@@ -59,7 +59,7 @@ public final class SeparatorDisplayComponent extends Component {
             i10 = separatorDisplayComponent.type;
         }
         if ((i11 & 2) != 0) {
-            str = separatorDisplayComponent.f8252id;
+            str = separatorDisplayComponent.f8251id;
         }
         if ((i11 & 4) != 0) {
             z10 = separatorDisplayComponent.divider;
@@ -83,7 +83,7 @@ public final class SeparatorDisplayComponent extends Component {
 
     @NotNull
     public final String component2() {
-        return this.f8252id;
+        return this.f8251id;
     }
 
     public final boolean component3() {
@@ -108,7 +108,7 @@ public final class SeparatorDisplayComponent extends Component {
         }
         if (obj instanceof SeparatorDisplayComponent) {
             SeparatorDisplayComponent separatorDisplayComponent = (SeparatorDisplayComponent) obj;
-            return this.type == separatorDisplayComponent.type && Intrinsics.areEqual(this.f8252id, separatorDisplayComponent.f8252id) && this.divider == separatorDisplayComponent.divider && this.spacing == separatorDisplayComponent.spacing;
+            return this.type == separatorDisplayComponent.type && Intrinsics.areEqual(this.f8251id, separatorDisplayComponent.f8251id) && this.divider == separatorDisplayComponent.divider && this.spacing == separatorDisplayComponent.spacing;
         }
         return false;
     }
@@ -120,7 +120,7 @@ public final class SeparatorDisplayComponent extends Component {
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f8252id;
+        return this.f8251id;
     }
 
     @NotNull
@@ -134,13 +134,13 @@ public final class SeparatorDisplayComponent extends Component {
     }
 
     public int hashCode() {
-        return (((((Integer.hashCode(this.type) * 31) + this.f8252id.hashCode()) * 31) + Boolean.hashCode(this.divider)) * 31) + this.spacing.hashCode();
+        return (((((Integer.hashCode(this.type) * 31) + this.f8251id.hashCode()) * 31) + Boolean.hashCode(this.divider)) * 31) + this.spacing.hashCode();
     }
 
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f8252id;
+        String str = this.f8251id;
         boolean z10 = this.divider;
         SeparatorSpacingSize separatorSpacingSize = this.spacing;
         return "SeparatorDisplayComponent(type=" + i10 + ", id=" + str + ", divider=" + z10 + ", spacing=" + separatorSpacingSize + ")";
@@ -152,7 +152,7 @@ public final class SeparatorDisplayComponent extends Component {
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(spacing, "spacing");
         this.type = i10;
-        this.f8252id = id2;
+        this.f8251id = id2;
         this.divider = z10;
         this.spacing = spacing;
     }

@@ -14,7 +14,7 @@ public class b implements s {
         if (((String) dVar.b(cVar, "iso8601")).equals("julian")) {
             return net.time4j.history.d.C;
         }
-        mt.c cVar2 = rt.a.f49113a;
+        mt.c cVar2 = rt.a.f49110a;
         if (dVar.a(cVar2)) {
             return (net.time4j.history.d) dVar.c(cVar2);
         }
@@ -70,7 +70,7 @@ public class b implements s {
                     return qVar.E(f0.f40491z, d10);
                 } else if (qVar.q(dVar.h())) {
                     int j11 = qVar.j(dVar.h());
-                    p pVar = rt.c.f49124p;
+                    p pVar = rt.c.f49121p;
                     if (qVar.q(pVar)) {
                         j10 = qVar.j(pVar);
                     }

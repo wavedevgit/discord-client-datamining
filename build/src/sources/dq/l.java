@@ -32,7 +32,7 @@ public final class l implements ViewBinding {
     }
 
     public static l d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(yp.f.f55230m, viewGroup, false);
+        View inflate = layoutInflater.inflate(yp.f.f55227m, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }

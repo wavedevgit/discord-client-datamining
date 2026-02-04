@@ -8,19 +8,19 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final b f50135c = new b(null);
+    public static final b f50132c = new b(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final String f50136d;
+    private static final String f50133d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ZoomLogger f50137e;
+    private static final ZoomLogger f50134e;
 
     /* renamed from: a  reason: collision with root package name */
-    private final InterfaceC0624a f50138a;
+    private final InterfaceC0624a f50135a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f50139b;
+    private int f50136b;
 
     /* renamed from: tl.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -50,15 +50,15 @@ public final class a {
 
     static {
         String TAG = a.class.getSimpleName();
-        f50136d = TAG;
+        f50133d = TAG;
         ZoomLogger.a aVar = ZoomLogger.f16907b;
         Intrinsics.checkNotNullExpressionValue(TAG, "TAG");
-        f50137e = aVar.a(TAG);
+        f50134e = aVar.a(TAG);
     }
 
     public a(InterfaceC0624a callback) {
         Intrinsics.checkNotNullParameter(callback, "callback");
-        this.f50138a = callback;
+        this.f50135a = callback;
     }
 
     private final boolean g(int i10) {
@@ -70,20 +70,20 @@ public final class a {
 
     private final int j(MotionEvent motionEvent) {
         int actionMasked;
-        ZoomLogger zoomLogger = f50137e;
+        ZoomLogger zoomLogger = f50134e;
         zoomLogger.f("processTouchEvent:", "start.");
         if (a()) {
             return 2;
         }
-        boolean g10 = this.f50138a.g(motionEvent);
+        boolean g10 = this.f50135a.g(motionEvent);
         zoomLogger.f("processTouchEvent:", "scaleResult:", Boolean.valueOf(g10));
         if (!d()) {
-            g10 |= this.f50138a.f(motionEvent);
+            g10 |= this.f50135a.f(motionEvent);
             zoomLogger.f("processTouchEvent:", "flingResult:", Boolean.valueOf(g10));
         }
         if (e() && ((actionMasked = motionEvent.getActionMasked()) == 1 || actionMasked == 3)) {
             zoomLogger.b("processTouchEvent:", "up event while scrolling, dispatching endScrollGesture.");
-            this.f50138a.e();
+            this.f50135a.e();
         }
         if (g10 && !c()) {
             zoomLogger.f("processTouchEvent:", "returning: TOUCH_STEAL");
@@ -99,15 +99,15 @@ public final class a {
     }
 
     private final boolean o(int i10) {
-        ZoomLogger zoomLogger = f50137e;
+        ZoomLogger zoomLogger = f50134e;
         zoomLogger.f("trySetState:", p(i10));
-        if (!this.f50138a.h(i10)) {
+        if (!this.f50135a.h(i10)) {
             return false;
         }
-        if (i10 == this.f50139b && !g(i10)) {
+        if (i10 == this.f50136b && !g(i10)) {
             return true;
         }
-        int i11 = this.f50139b;
+        int i11 = this.f50136b;
         if (i10 != 0) {
             if (i10 != 1) {
                 if (i10 != 2) {
@@ -121,11 +121,11 @@ public final class a {
                 return false;
             }
         } else {
-            this.f50138a.b();
+            this.f50135a.b();
         }
-        this.f50138a.a(i11);
+        this.f50135a.a(i11);
         zoomLogger.b("setState:", p(i10));
-        this.f50139b = i10;
+        this.f50136b = i10;
         return true;
     }
 
@@ -149,35 +149,35 @@ public final class a {
     }
 
     public final boolean a() {
-        if (this.f50139b == 3) {
+        if (this.f50136b == 3) {
             return true;
         }
         return false;
     }
 
     public final boolean b() {
-        if (this.f50139b == 4) {
+        if (this.f50136b == 4) {
             return true;
         }
         return false;
     }
 
     public final boolean c() {
-        if (this.f50139b == 0) {
+        if (this.f50136b == 0) {
             return true;
         }
         return false;
     }
 
     public final boolean d() {
-        if (this.f50139b == 2) {
+        if (this.f50136b == 2) {
             return true;
         }
         return false;
     }
 
     public final boolean e() {
-        if (this.f50139b == 1) {
+        if (this.f50136b == 1) {
             return true;
         }
         return false;

@@ -14,13 +14,13 @@ public abstract class j0 {
     public static final class b extends j0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Object f54645a;
+        private final Object f54642a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final a0 f54646b;
+        private final a0 f54643b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Function2 f54647c;
+        private final Function2 f54644c;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public b(Object showing, a0 environment, Function2 showRendering) {
@@ -28,25 +28,25 @@ public abstract class j0 {
             Intrinsics.checkNotNullParameter(showing, "showing");
             Intrinsics.checkNotNullParameter(environment, "environment");
             Intrinsics.checkNotNullParameter(showRendering, "showRendering");
-            this.f54645a = showing;
-            this.f54646b = environment;
-            this.f54647c = showRendering;
+            this.f54642a = showing;
+            this.f54643b = environment;
+            this.f54644c = showRendering;
         }
 
         @Override // ym.j0
         public a0 a() {
-            return this.f54646b;
+            return this.f54643b;
         }
 
         @Override // ym.j0
         public Function2 b() {
-            return this.f54647c;
+            return this.f54644c;
         }
 
         @Override // ym.j0
         /* renamed from: d */
         public Object c() {
-            return this.f54645a;
+            return this.f54642a;
         }
 
         public boolean equals(Object obj) {
@@ -86,16 +86,16 @@ public abstract class j0 {
     public static final class a extends j0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Object f54640a;
+        private final Object f54637a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final a0 f54641b;
+        private final a0 f54638b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Function2 f54642c;
+        private final Function2 f54639c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final Function1 f54643d;
+        private final Function1 f54640d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: ym.j0$a$a  reason: collision with other inner class name */
@@ -103,7 +103,7 @@ public abstract class j0 {
         public static final class C0751a extends Lambda implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final C0751a f54644d = new C0751a();
+            public static final C0751a f54641d = new C0751a();
 
             C0751a() {
                 super(1);
@@ -136,7 +136,7 @@ public abstract class j0 {
         }
 
         public /* synthetic */ a(Object obj, a0 a0Var, Function2 function2, Function1 function1, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-            this(obj, a0Var, function2, (i10 & 8) != 0 ? C0751a.f54644d : function1);
+            this(obj, a0Var, function2, (i10 & 8) != 0 ? C0751a.f54641d : function1);
         }
 
         public static /* synthetic */ a e(a aVar, Object obj, a0 a0Var, Function2 function2, Function1 function1, int i10, Object obj2) {
@@ -150,19 +150,19 @@ public abstract class j0 {
                 function2 = aVar.b();
             }
             if ((i10 & 8) != 0) {
-                function1 = aVar.f54643d;
+                function1 = aVar.f54640d;
             }
             return aVar.d(obj, a0Var, function2, function1);
         }
 
         @Override // ym.j0
         public a0 a() {
-            return this.f54641b;
+            return this.f54638b;
         }
 
         @Override // ym.j0
         public Function2 b() {
-            return this.f54642c;
+            return this.f54639c;
         }
 
         public final a d(Object showing, a0 environment, Function2 showRendering, Function1 starter) {
@@ -181,7 +181,7 @@ public abstract class j0 {
                 return false;
             }
             a aVar = (a) obj;
-            if (Intrinsics.areEqual(c(), aVar.c()) && Intrinsics.areEqual(a(), aVar.a()) && Intrinsics.areEqual(b(), aVar.b()) && Intrinsics.areEqual(this.f54643d, aVar.f54643d)) {
+            if (Intrinsics.areEqual(c(), aVar.c()) && Intrinsics.areEqual(a(), aVar.a()) && Intrinsics.areEqual(b(), aVar.b()) && Intrinsics.areEqual(this.f54640d, aVar.f54640d)) {
                 return true;
             }
             return false;
@@ -190,19 +190,19 @@ public abstract class j0 {
         @Override // ym.j0
         /* renamed from: f */
         public Object c() {
-            return this.f54640a;
+            return this.f54637a;
         }
 
         public final Function1 g() {
-            return this.f54643d;
+            return this.f54640d;
         }
 
         public int hashCode() {
-            return (((((c().hashCode() * 31) + a().hashCode()) * 31) + b().hashCode()) * 31) + this.f54643d.hashCode();
+            return (((((c().hashCode() * 31) + a().hashCode()) * 31) + b().hashCode()) * 31) + this.f54640d.hashCode();
         }
 
         public String toString() {
-            return "New(showing=" + c() + ", environment=" + a() + ", showRendering=" + b() + ", starter=" + this.f54643d + ')';
+            return "New(showing=" + c() + ", environment=" + a() + ", showRendering=" + b() + ", starter=" + this.f54640d + ')';
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -212,10 +212,10 @@ public abstract class j0 {
             Intrinsics.checkNotNullParameter(environment, "environment");
             Intrinsics.checkNotNullParameter(showRendering, "showRendering");
             Intrinsics.checkNotNullParameter(starter, "starter");
-            this.f54640a = showing;
-            this.f54641b = environment;
-            this.f54642c = showRendering;
-            this.f54643d = starter;
+            this.f54637a = showing;
+            this.f54638b = environment;
+            this.f54639c = showRendering;
+            this.f54640d = starter;
         }
     }
 

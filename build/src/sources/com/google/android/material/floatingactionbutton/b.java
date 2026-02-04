@@ -26,7 +26,7 @@ import oh.n;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class b {
-    static final TimeInterpolator D = zg.a.f55946c;
+    static final TimeInterpolator D = zg.a.f55943c;
     private static final int E = yg.b.F;
     private static final int F = yg.b.P;
     private static final int G = yg.b.G;
@@ -488,8 +488,8 @@ public abstract class b {
         ofFloat.addUpdateListener(new d(this.f14663w.getAlpha(), f10, this.f14663w.getScaleX(), f11, this.f14663w.getScaleY(), this.f14657q, f12, new Matrix(this.B)));
         arrayList.add(ofFloat);
         zg.b.a(animatorSet, arrayList);
-        animatorSet.setDuration(jh.g.f(this.f14663w.getContext(), i10, this.f14663w.getContext().getResources().getInteger(yg.g.f54197b)));
-        animatorSet.setInterpolator(jh.g.g(this.f14663w.getContext(), i11, zg.a.f55945b));
+        animatorSet.setDuration(jh.g.f(this.f14663w.getContext(), i10, this.f14663w.getContext().getResources().getInteger(yg.g.f54194b)));
+        animatorSet.setInterpolator(jh.g.g(this.f14663w.getContext(), i11, zg.a.f55942b));
         return animatorSet;
     }
 

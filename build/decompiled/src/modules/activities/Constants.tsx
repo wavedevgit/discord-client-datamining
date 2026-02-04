@@ -322,31 +322,31 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES = var4;
     var2.SUPPORTED_ACTIVITIES_CHANNEL_TYPES = var3;
     var3 = function arg0() {
-        _fun29697: for (var _fun29697_ip = 0;;) switch (_fun29697_ip) {
+        _fun29699: for (var _fun29699_ip = 0;;) switch (_fun29699_ip) {
             case 0:
                 var1 = arg0;
                 var0 = 'tiktok';
                 if (!(var0 !== var1)) {
-                    _fun29697_ip = 67;
-                    continue _fun29697
+                    _fun29699_ip = 67;
+                    continue _fun29699
                 }
             case 11:
                 var0 = 'photos';
                 if (!(var0 !== var1)) {
-                    _fun29697_ip = 59;
-                    continue _fun29697
+                    _fun29699_ip = 59;
+                    continue _fun29699
                 }
             case 21:
                 var0 = 'snapchat';
                 if (!(var0 !== var1)) {
-                    _fun29697_ip = 51;
-                    continue _fun29697
+                    _fun29699_ip = 51;
+                    continue _fun29699
                 }
             case 31:
                 var0 = 'instagram';
                 if (!(var0 !== var1)) {
-                    _fun29697_ip = 43;
-                    continue _fun29697
+                    _fun29699_ip = 43;
+                    continue _fun29699
                 }
             case 39:
                 var0 = undefined;

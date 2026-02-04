@@ -20,40 +20,40 @@ import x.g1;
 public final class g1 extends x1 {
 
     /* renamed from: x  reason: collision with root package name */
-    public static final b f52817x = new b();
+    public static final b f52814x = new b();
 
     /* renamed from: y  reason: collision with root package name */
-    private static final Executor f52818y = c0.a.d();
+    private static final Executor f52815y = c0.a.d();
 
     /* renamed from: p  reason: collision with root package name */
-    private c f52819p;
+    private c f52816p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Executor f52820q;
+    private Executor f52817q;
 
     /* renamed from: r  reason: collision with root package name */
-    i2.b f52821r;
+    i2.b f52818r;
 
     /* renamed from: s  reason: collision with root package name */
-    private a0.w0 f52822s;
+    private a0.w0 f52819s;
 
     /* renamed from: t  reason: collision with root package name */
-    private j0.l0 f52823t;
+    private j0.l0 f52820t;
 
     /* renamed from: u  reason: collision with root package name */
-    w1 f52824u;
+    w1 f52821u;
 
     /* renamed from: v  reason: collision with root package name */
-    private j0.t0 f52825v;
+    private j0.t0 f52822v;
 
     /* renamed from: w  reason: collision with root package name */
-    private i2.c f52826w;
+    private i2.c f52823w;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a implements x2.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final a0.r1 f52827a;
+        private final a0.r1 f52824a;
 
         public a() {
             this(a0.r1.Z());
@@ -65,7 +65,7 @@ public final class g1 extends x1 {
 
         @Override // x.a0
         public a0.q1 a() {
-            return this.f52827a;
+            return this.f52824a;
         }
 
         public g1 c() {
@@ -77,7 +77,7 @@ public final class g1 extends x1 {
         @Override // a0.x2.a
         /* renamed from: e */
         public a0.x1 b() {
-            return new a0.x1(a0.w1.Y(this.f52827a));
+            return new a0.x1(a0.w1.Y(this.f52824a));
         }
 
         public a f(y2.b bVar) {
@@ -128,7 +128,7 @@ public final class g1 extends x1 {
         }
 
         private a(a0.r1 r1Var) {
-            this.f52827a = r1Var;
+            this.f52824a = r1Var;
             Class cls = (Class) r1Var.e(e0.m.G, null);
             if (cls != null && !cls.equals(g1.class)) {
                 throw new IllegalArgumentException("Invalid target class configuration for " + this + ": " + cls);
@@ -146,24 +146,24 @@ public final class g1 extends x1 {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private static final m0.c f52828a;
+        private static final m0.c f52825a;
 
         /* renamed from: b  reason: collision with root package name */
-        private static final a0.x1 f52829b;
+        private static final a0.x1 f52826b;
 
         /* renamed from: c  reason: collision with root package name */
-        private static final z f52830c;
+        private static final z f52827c;
 
         static {
             m0.c a10 = new c.a().d(m0.a.f37564c).f(m0.d.f37576c).a();
-            f52828a = a10;
-            z zVar = z.f53041c;
-            f52830c = zVar;
-            f52829b = new a().i(2).j(0).h(a10).g(zVar).b();
+            f52825a = a10;
+            z zVar = z.f53038c;
+            f52827c = zVar;
+            f52826b = new a().i(2).j(0).h(a10).g(zVar).b();
         }
 
         public a0.x1 a() {
-            return f52829b;
+            return f52826b;
         }
     }
 
@@ -174,7 +174,7 @@ public final class g1 extends x1 {
 
     g1(a0.x1 x1Var) {
         super(x1Var);
-        this.f52820q = f52818y;
+        this.f52817q = f52815y;
     }
 
     public static /* synthetic */ void Y(g1 g1Var, i2 i2Var, i2.g gVar) {
@@ -186,10 +186,10 @@ public final class g1 extends x1 {
     }
 
     private void a0(i2.b bVar, m2 m2Var) {
-        if (this.f52819p != null) {
-            bVar.m(this.f52822s, m2Var.b(), p(), n());
+        if (this.f52816p != null) {
+            bVar.m(this.f52819s, m2Var.b(), p(), n());
         }
-        i2.c cVar = this.f52826w;
+        i2.c cVar = this.f52823w;
         if (cVar != null) {
             cVar.b();
         }
@@ -199,32 +199,32 @@ public final class g1 extends x1 {
                 g1.Y(g1.this, i2Var, gVar);
             }
         });
-        this.f52826w = cVar2;
+        this.f52823w = cVar2;
         bVar.r(cVar2);
     }
 
     private void b0() {
-        i2.c cVar = this.f52826w;
+        i2.c cVar = this.f52823w;
         if (cVar != null) {
             cVar.b();
-            this.f52826w = null;
+            this.f52823w = null;
         }
-        a0.w0 w0Var = this.f52822s;
+        a0.w0 w0Var = this.f52819s;
         if (w0Var != null) {
             w0Var.d();
-            this.f52822s = null;
+            this.f52819s = null;
         }
-        j0.t0 t0Var = this.f52825v;
+        j0.t0 t0Var = this.f52822v;
         if (t0Var != null) {
             t0Var.f();
-            this.f52825v = null;
+            this.f52822v = null;
         }
-        j0.l0 l0Var = this.f52823t;
+        j0.l0 l0Var = this.f52820t;
         if (l0Var != null) {
             l0Var.i();
-            this.f52823t = null;
+            this.f52820t = null;
         }
-        this.f52824u = null;
+        this.f52821u = null;
     }
 
     private i2.b c0(a0.x1 x1Var, m2 m2Var) {
@@ -234,7 +234,7 @@ public final class g1 extends x1 {
         Objects.requireNonNull(g10);
         a0.e0 e0Var = g10;
         b0();
-        if (this.f52823t == null) {
+        if (this.f52820t == null) {
             z10 = true;
         } else {
             z10 = false;
@@ -244,18 +244,18 @@ public final class g1 extends x1 {
         boolean q10 = e0Var.q();
         Rect d02 = d0(m2Var.e());
         Objects.requireNonNull(d02);
-        this.f52823t = new j0.l0(1, 34, m2Var, v10, q10, d02, r(e0Var, C(e0Var)), d(), i0(e0Var));
+        this.f52820t = new j0.l0(1, 34, m2Var, v10, q10, d02, r(e0Var, C(e0Var)), d(), i0(e0Var));
         l();
-        this.f52823t.e(new Runnable() { // from class: x.d1
+        this.f52820t.e(new Runnable() { // from class: x.d1
             @Override // java.lang.Runnable
             public final void run() {
                 g1.this.G();
             }
         });
-        w1 k10 = this.f52823t.k(e0Var);
-        this.f52824u = k10;
-        this.f52822s = k10.m();
-        if (this.f52819p != null) {
+        w1 k10 = this.f52820t.k(e0Var);
+        this.f52821u = k10;
+        this.f52819s = k10.m();
+        if (this.f52816p != null) {
             e0();
         }
         i2.b p10 = i2.b.p(x1Var, m2Var.e());
@@ -280,9 +280,9 @@ public final class g1 extends x1 {
 
     private void e0() {
         f0();
-        final c cVar = (c) b2.e.g(this.f52819p);
-        final w1 w1Var = (w1) b2.e.g(this.f52824u);
-        this.f52820q.execute(new Runnable() { // from class: x.e1
+        final c cVar = (c) b2.e.g(this.f52816p);
+        final w1 w1Var = (w1) b2.e.g(this.f52821u);
+        this.f52817q.execute(new Runnable() { // from class: x.e1
             @Override // java.lang.Runnable
             public final void run() {
                 g1.c.this.a(w1Var);
@@ -292,7 +292,7 @@ public final class g1 extends x1 {
 
     private void f0() {
         a0.e0 g10 = g();
-        j0.l0 l0Var = this.f52823t;
+        j0.l0 l0Var = this.f52820t;
         if (g10 != null && l0Var != null) {
             l0Var.y(r(g10, C(g10)), d());
         }
@@ -308,7 +308,7 @@ public final class g1 extends x1 {
     private void j0(a0.x1 x1Var, m2 m2Var) {
         List a10;
         i2.b c02 = c0(x1Var, m2Var);
-        this.f52821r = c02;
+        this.f52818r = c02;
         a10 = d0.a(new Object[]{c02.o()});
         V(a10);
     }
@@ -322,8 +322,8 @@ public final class g1 extends x1 {
     @Override // x.x1
     protected m2 N(a0.r0 r0Var) {
         List a10;
-        this.f52821r.g(r0Var);
-        a10 = d0.a(new Object[]{this.f52821r.o()});
+        this.f52818r.g(r0Var);
+        a10 = d0.a(new Object[]{this.f52818r.o()});
         V(a10);
         return e().g().d(r0Var).a();
     }
@@ -348,12 +348,12 @@ public final class g1 extends x1 {
     public void g0(Executor executor, c cVar) {
         b0.p.a();
         if (cVar == null) {
-            this.f52819p = null;
+            this.f52816p = null;
             F();
             return;
         }
-        this.f52819p = cVar;
-        this.f52820q = executor;
+        this.f52816p = cVar;
+        this.f52817q = executor;
         if (f() != null) {
             j0((a0.x1) j(), e());
             G();
@@ -362,12 +362,12 @@ public final class g1 extends x1 {
     }
 
     public void h0(c cVar) {
-        g0(f52818y, cVar);
+        g0(f52815y, cVar);
     }
 
     @Override // x.x1
     public x2 k(boolean z10, y2 y2Var) {
-        b bVar = f52817x;
+        b bVar = f52814x;
         a0.r0 a10 = y2Var.a(bVar.a().L(), 1);
         if (z10) {
             a10 = a0.r0.E(a10, bVar.a());

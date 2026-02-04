@@ -74,7 +74,7 @@ public class e implements d {
                 i10 = 0;
             }
             if (imageDecodeOptions.f10049g) {
-                f j02 = f.j0(d(cVar, config, i10), n.f49369d, 0);
+                f j02 = f.j0(d(cVar, config, i10), n.f49366d, 0);
                 CloseableReference.N(null);
                 CloseableReference.V(null);
                 return j02;

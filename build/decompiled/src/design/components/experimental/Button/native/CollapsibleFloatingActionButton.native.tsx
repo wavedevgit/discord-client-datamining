@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/experimental/Button/native/CollapsibleFloatingActionButton.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun57564: for (var _fun57564_ip = 0;;) switch (_fun57564_ip) {
+        _fun57581: for (var _fun57581_ip = 0;;) switch (_fun57581_ip) {
             case 0:
                 var3 = arg0;
                 var13 = var3.icon;
@@ -219,8 +219,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.bind(var6)(var13);
                 var6 = var13;
                 if (!var2) {
-                    _fun57564_ip = 178;
-                    continue _fun57564
+                    _fun57581_ip = 178;
+                    continue _fun57581
                 }
             case 125:
                 var12 = _closure1_slot3;
@@ -239,8 +239,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0 != var11;
                 var2 = undefined;
                 if (!var7) {
-                    _fun57564_ip = 196;
-                    continue _fun57564
+                    _fun57581_ip = 196;
+                    continue _fun57581
                 }
             case 187:
                 var7 = {};
@@ -252,8 +252,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7[0] = var3;
                 var7[1] = var2;
                 if (!(var0 == var9)) {
-                    _fun57564_ip = 352;
-                    continue _fun57564
+                    _fun57581_ip = 352;
+                    continue _fun57581
                 }
             case 221:
                 var3 = _closure1_slot4;
@@ -286,8 +286,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = 'pillStyle';
                 var0[var10] = var11;
                 var0 = var3.bind(var4)(var2, var0);
-                _fun57564_ip = 414;
-                continue _fun57564;
+                _fun57581_ip = 414;
+                continue _fun57581;
             case 352:
                 var3 = _closure1_slot4;
                 var2 = _closure1_slot8;
@@ -310,4 +310,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.CollapsibleFloatingActionButton = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 4088, 1297, 3720, 4081, 4087, 4085, 7032, 671, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 4088, 1297, 3720, 4081, 4087, 4085, 7035, 671, 2]);

@@ -35,7 +35,7 @@ public final class b implements p9.b {
 
         /* JADX INFO: Access modifiers changed from: private */
         public final CloseableReference c(CloseableReference closeableReference) {
-            f j02 = f.j0(closeableReference, n.f49369d, 0);
+            f j02 = f.j0(closeableReference, n.f49366d, 0);
             Intrinsics.checkNotNullExpressionValue(j02, "of(...)");
             return CloseableReference.J0(j02);
         }

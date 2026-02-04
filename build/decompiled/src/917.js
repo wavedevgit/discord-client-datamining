@@ -11,14 +11,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.value = var5;
     var0 = var3.bind(var4)(var1, var2, var0);
     var0 = function arg0() {
-        _fun9583: for (var _fun9583_ip = 0;;) switch (_fun9583_ip) {
+        _fun9585: for (var _fun9585_ip = 0;;) switch (_fun9585_ip) {
             case 0:
                 var2 = arg0;
                 var0 = 'warning';
                 var1 = 'warn';
                 if (!(var1 !== var2)) {
-                    _fun9583_ip = 48;
-                    continue _fun9583
+                    _fun9585_ip = 48;
+                    continue _fun9585
                 }
             case 15:
                 var3 = ['fatal', 'error', 'warning', 'log', 'info', 'debug'];
@@ -26,8 +26,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var1.bind(var3)(var2);
                 var1 = 'log';
                 if (!var3) {
-                    _fun9583_ip = 45;
-                    continue _fun9583
+                    _fun9585_ip = 45;
+                    continue _fun9585
                 }
             case 42:
                 var1 = var2;

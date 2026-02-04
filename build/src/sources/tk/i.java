@@ -5,13 +5,13 @@ import java.lang.reflect.Array;
 abstract class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final float[][] f50133a = (float[][]) Array.newInstance(Float.TYPE, sk.a.f49536b.length, 8);
+    private static final float[][] f50130a = (float[][]) Array.newInstance(Float.TYPE, sk.a.f49533b.length, 8);
 
     static {
         int i10;
         int i11 = 0;
         while (true) {
-            int[] iArr = sk.a.f49536b;
+            int[] iArr = sk.a.f49533b;
             if (i11 < iArr.length) {
                 int i12 = iArr[i11];
                 int i13 = i12 & 1;
@@ -25,7 +25,7 @@ abstract class i {
                             i12 >>= 1;
                         }
                     }
-                    f50133a[i11][7 - i14] = f10 / 17.0f;
+                    f50130a[i11][7 - i14] = f10 / 17.0f;
                     i14++;
                     i13 = i10;
                 }
@@ -63,7 +63,7 @@ abstract class i {
         int i11 = -1;
         int i12 = 0;
         while (true) {
-            float[][] fArr2 = f50133a;
+            float[][] fArr2 = f50130a;
             if (i12 < fArr2.length) {
                 float[] fArr3 = fArr2[i12];
                 float f11 = 0.0f;
@@ -75,7 +75,7 @@ abstract class i {
                     }
                 }
                 if (f11 < f10) {
-                    i11 = sk.a.f49536b[i12];
+                    i11 = sk.a.f49533b[i12];
                     f10 = f11;
                 }
                 i12++;

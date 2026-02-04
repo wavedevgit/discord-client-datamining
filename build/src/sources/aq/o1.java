@@ -24,7 +24,7 @@ public abstract class o1 {
         EditText editText2;
         Intrinsics.checkNotNullParameter(textInputLayout, "<this>");
         Intrinsics.checkNotNullParameter(newState, "newState");
-        Object tag = textInputLayout.getTag(yp.e.f55169b0);
+        Object tag = textInputLayout.getTag(yp.e.f55166b0);
         TextWatcher textWatcher = null;
         if (tag instanceof y3) {
             y3Var = (y3) tag;
@@ -34,7 +34,7 @@ public abstract class o1 {
         if (Intrinsics.areEqual(y3Var, newState)) {
             return;
         }
-        textInputLayout.setTag(yp.e.f55169b0, newState);
+        textInputLayout.setTag(yp.e.f55166b0, newState);
         CharSequence d10 = newState.d();
         if (d10 != null && (editText2 = textInputLayout.getEditText()) != null) {
             editText2.setText(d10);
@@ -50,7 +50,7 @@ public abstract class o1 {
         }
         if (Intrinsics.areEqual(newState.e(), Boolean.TRUE) && (b10 = newState.b()) != null) {
             textInputLayout.setEndIconMode(-1);
-            textInputLayout.setEndIconDrawable(androidx.core.content.a.e(textInputLayout.getContext(), yp.d.f55164d));
+            textInputLayout.setEndIconDrawable(androidx.core.content.a.e(textInputLayout.getContext(), yp.d.f55161d));
             textInputLayout.setEndIconContentDescription(textInputLayout.getContext().getString(ep.e.R));
             EditText editText3 = textInputLayout.getEditText();
             if (editText3 != null) {
@@ -63,7 +63,7 @@ public abstract class o1 {
                 }
             });
         }
-        Object tag2 = textInputLayout.getTag(yp.e.f55183i0);
+        Object tag2 = textInputLayout.getTag(yp.e.f55180i0);
         if (tag2 instanceof z3) {
             textWatcher = (z3) tag2;
         }
@@ -77,7 +77,7 @@ public abstract class o1 {
             if (editText4 != null) {
                 editText4.addTextChangedListener(z3Var);
             }
-            textInputLayout.setTag(yp.e.f55183i0, z3Var);
+            textInputLayout.setTag(yp.e.f55180i0, z3Var);
         }
     }
 
@@ -107,9 +107,9 @@ public abstract class o1 {
         }
         Context context = textInputLayout.getContext();
         if (z10) {
-            i10 = yp.d.f55163c;
+            i10 = yp.d.f55160c;
         } else {
-            i10 = yp.d.f55164d;
+            i10 = yp.d.f55161d;
         }
         textInputLayout.setEndIconDrawable(androidx.core.content.a.e(context, i10));
     }

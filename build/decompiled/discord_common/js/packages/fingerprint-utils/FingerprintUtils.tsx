@@ -31,14 +31,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.extractId = var3;
     var1 = function arg0() {
-        _fun6406: for (var _fun6406_ip = 0;;) switch (_fun6406_ip) {
+        _fun6408: for (var _fun6408_ip = 0;;) switch (_fun6408_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 var1 = var0 == var3;
                 if (var1) {
-                    _fun6406_ip = 26;
-                    continue _fun6406
+                    _fun6408_ip = 26;
+                    continue _fun6408
                 }
             case 12:
                 var2 = _closure1_slot0;

@@ -1560,8 +1560,8 @@ public abstract class b {
                 long X03 = w0.X0(j18 - jArr[i13], oVar.f6511f.K, oVar.f6508c);
                 long X04 = w0.X0(j17 - X02, oVar.f6511f.K, oVar.f6508c);
                 if ((X03 != j10 || X04 != j10) && X03 <= 2147483647L && X04 <= 2147483647L) {
-                    vVar.f49994a = (int) X03;
-                    vVar.f49995b = (int) X04;
+                    vVar.f49991a = (int) X03;
+                    vVar.f49992b = (int) X04;
                     w0.Z0(jArr, 1000000L, oVar.f6508c);
                     return new r(oVar, jArr9, iArr13, i18, jArr, iArr2, w0.X0(oVar.f6513h[i13], 1000000L, oVar.f6509d));
                 }

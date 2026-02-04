@@ -6,15 +6,15 @@ import kotlin.jvm.internal.Intrinsics;
 public final class j implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Function1 f53562a;
+    private final Function1 f53559a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f53563b;
+    private final int f53560b;
 
     public j(Function1 number, int i10) {
         Intrinsics.checkNotNullParameter(number, "number");
-        this.f53562a = number;
-        this.f53563b = i10;
+        this.f53559a = number;
+        this.f53560b = i10;
         if (i10 >= 0) {
             if (i10 <= 9) {
                 return;

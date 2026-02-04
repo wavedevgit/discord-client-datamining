@@ -86,22 +86,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/video_calls/native/components/ScreenshareTile.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun64416: for (var _fun64416_ip = 0;;) switch (_fun64416_ip) {
+        _fun64433: for (var _fun64433_ip = 0;;) switch (_fun64433_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.onSingleTap;
                 var3 = undefined;
                 if (!(var4 === var3)) {
-                    _fun64416_ip = 22;
-                    continue _fun64416
+                    _fun64433_ip = 22;
+                    continue _fun64433
                 }
             case 15:
                 var4 = _closure1_slot5;
             case 22:
                 var2 = var0.onDoubleTap;
                 if (!(var2 === var3)) {
-                    _fun64416_ip = 39;
-                    continue _fun64416
+                    _fun64433_ip = 39;
+                    continue _fun64433
                 }
             case 32:
                 var2 = _closure1_slot5;
@@ -187,4 +187,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 7999, 4961, 8000, 8001, 3941, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 8002, 4961, 8003, 8004, 3941, 1234, 2]);

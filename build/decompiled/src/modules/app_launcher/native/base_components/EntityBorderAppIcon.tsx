@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_launcher/native/base_components/EntityBorderAppIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun82593: for (var _fun82593_ip = 0;;) switch (_fun82593_ip) {
+        _fun82610: for (var _fun82610_ip = 0;;) switch (_fun82610_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.iconSource;
@@ -83,16 +83,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.iconSize;
                 var3 = undefined;
                 if (!(var2 === var3)) {
-                    _fun82593_ip = 36;
-                    continue _fun82593
+                    _fun82610_ip = 36;
+                    continue _fun82610
                 }
             case 33:
                 var2 = 32;
             case 36:
                 var1 = var0.iconBorderRadius;
                 if (!(var1 === var3)) {
-                    _fun82593_ip = 53;
-                    continue _fun82593
+                    _fun82610_ip = 53;
+                    continue _fun82610
                 }
             case 46:
                 var1 = _closure1_slot4;

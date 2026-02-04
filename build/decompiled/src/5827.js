@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
     var0 = function arg0, arg1() {
-        _fun51367: for (var _fun51367_ip = 0;;) switch (_fun51367_ip) {
+        _fun51370: for (var _fun51370_ip = 0;;) switch (_fun51370_ip) {
             case 0:
                 var0 = arg0;
                 var4 = arg1;
@@ -27,26 +27,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var1.bind(var2)(var4);
                 var3 = 'vertical';
                 if (!(var3 !== var4)) {
-                    _fun51367_ip = 84;
-                    continue _fun51367
+                    _fun51370_ip = 84;
+                    continue _fun51370
                 }
             case 43:
                 var3 = 'vertical-inverted';
                 if (!(var3 !== var4)) {
-                    _fun51367_ip = 84;
-                    continue _fun51367
+                    _fun51370_ip = 84;
+                    continue _fun51370
                 }
             case 53:
                 var3 = 'horizontal';
                 if (!(var3 !== var4)) {
-                    _fun51367_ip = 73;
-                    continue _fun51367
+                    _fun51370_ip = 73;
+                    continue _fun51370
                 }
             case 61:
                 var3 = 'horizontal-inverted';
                 if (!(var3 !== var4)) {
-                    _fun51367_ip = 73;
-                    continue _fun51367
+                    _fun51370_ip = 73;
+                    continue _fun51370
                 }
             case 71:
                 return var2;

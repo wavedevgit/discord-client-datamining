@@ -10,34 +10,34 @@ import kotlin.jvm.internal.Intrinsics;
 public final class x implements x3.j, x3.i {
 
     /* renamed from: t  reason: collision with root package name */
-    public static final a f48532t = new a(null);
+    public static final a f48529t = new a(null);
 
     /* renamed from: u  reason: collision with root package name */
-    public static final TreeMap f48533u = new TreeMap();
+    public static final TreeMap f48530u = new TreeMap();
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f48534d;
+    private final int f48531d;
 
     /* renamed from: e  reason: collision with root package name */
-    private volatile String f48535e;
+    private volatile String f48532e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final long[] f48536i;
+    public final long[] f48533i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final double[] f48537o;
+    public final double[] f48534o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final String[] f48538p;
+    public final String[] f48535p;
 
     /* renamed from: q  reason: collision with root package name */
-    public final byte[][] f48539q;
+    public final byte[][] f48536q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final int[] f48540r;
+    private final int[] f48537r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f48541s;
+    private int f48538s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -47,7 +47,7 @@ public final class x implements x3.j, x3.i {
 
         public final x a(String query, int i10) {
             Intrinsics.checkNotNullParameter(query, "query");
-            TreeMap treeMap = x.f48533u;
+            TreeMap treeMap = x.f48530u;
             synchronized (treeMap) {
                 Map.Entry ceilingEntry = treeMap.ceilingEntry(Integer.valueOf(i10));
                 if (ceilingEntry != null) {
@@ -65,7 +65,7 @@ public final class x implements x3.j, x3.i {
         }
 
         public final void b() {
-            TreeMap treeMap = x.f48533u;
+            TreeMap treeMap = x.f48530u;
             if (treeMap.size() > 15) {
                 int size = treeMap.size() - 10;
                 Iterator it = treeMap.descendingKeySet().iterator();
@@ -92,14 +92,14 @@ public final class x implements x3.j, x3.i {
     }
 
     public static final x l(String str, int i10) {
-        return f48532t.a(str, i10);
+        return f48529t.a(str, i10);
     }
 
     public final void B() {
-        TreeMap treeMap = f48533u;
+        TreeMap treeMap = f48530u;
         synchronized (treeMap) {
-            treeMap.put(Integer.valueOf(this.f48534d), this);
-            f48532t.b();
+            treeMap.put(Integer.valueOf(this.f48531d), this);
+            f48529t.b();
             Unit unit = Unit.f32464a;
         }
     }
@@ -107,24 +107,24 @@ public final class x implements x3.j, x3.i {
     @Override // x3.i
     public void D1(int i10, byte[] value) {
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f48540r[i10] = 5;
-        this.f48539q[i10] = value;
+        this.f48537r[i10] = 5;
+        this.f48536q[i10] = value;
     }
 
     @Override // x3.i
     public void P1(int i10) {
-        this.f48540r[i10] = 1;
+        this.f48537r[i10] = 1;
     }
 
     @Override // x3.i
     public void T(int i10, double d10) {
-        this.f48540r[i10] = 3;
-        this.f48537o[i10] = d10;
+        this.f48537r[i10] = 3;
+        this.f48534o[i10] = d10;
     }
 
     @Override // x3.j
     public String a() {
-        String str = this.f48535e;
+        String str = this.f48532e;
         if (str != null) {
             return str;
         }
@@ -138,13 +138,13 @@ public final class x implements x3.j, x3.i {
         if (1 <= n10) {
             int i10 = 1;
             while (true) {
-                int i11 = this.f48540r[i10];
+                int i11 = this.f48537r[i10];
                 if (i11 != 1) {
                     if (i11 != 2) {
                         if (i11 != 3) {
                             if (i11 != 4) {
                                 if (i11 == 5) {
-                                    byte[] bArr = this.f48539q[i10];
+                                    byte[] bArr = this.f48536q[i10];
                                     if (bArr != null) {
                                         statement.D1(i10, bArr);
                                     } else {
@@ -152,7 +152,7 @@ public final class x implements x3.j, x3.i {
                                     }
                                 }
                             } else {
-                                String str = this.f48538p[i10];
+                                String str = this.f48535p[i10];
                                 if (str != null) {
                                     statement.h1(i10, str);
                                 } else {
@@ -160,10 +160,10 @@ public final class x implements x3.j, x3.i {
                                 }
                             }
                         } else {
-                            statement.T(i10, this.f48537o[i10]);
+                            statement.T(i10, this.f48534o[i10]);
                         }
                     } else {
-                        statement.w1(i10, this.f48536i[i10]);
+                        statement.w1(i10, this.f48533i[i10]);
                     }
                 } else {
                     statement.P1(i10);
@@ -180,34 +180,34 @@ public final class x implements x3.j, x3.i {
     @Override // x3.i
     public void h1(int i10, String value) {
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f48540r[i10] = 4;
-        this.f48538p[i10] = value;
+        this.f48537r[i10] = 4;
+        this.f48535p[i10] = value;
     }
 
     public int n() {
-        return this.f48541s;
+        return this.f48538s;
     }
 
     @Override // x3.i
     public void w1(int i10, long j10) {
-        this.f48540r[i10] = 2;
-        this.f48536i[i10] = j10;
+        this.f48537r[i10] = 2;
+        this.f48533i[i10] = j10;
     }
 
     public final void x(String query, int i10) {
         Intrinsics.checkNotNullParameter(query, "query");
-        this.f48535e = query;
-        this.f48541s = i10;
+        this.f48532e = query;
+        this.f48538s = i10;
     }
 
     private x(int i10) {
-        this.f48534d = i10;
+        this.f48531d = i10;
         int i11 = i10 + 1;
-        this.f48540r = new int[i11];
-        this.f48536i = new long[i11];
-        this.f48537o = new double[i11];
-        this.f48538p = new String[i11];
-        this.f48539q = new byte[i11];
+        this.f48537r = new int[i11];
+        this.f48533i = new long[i11];
+        this.f48534o = new double[i11];
+        this.f48535p = new String[i11];
+        this.f48536q = new byte[i11];
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable

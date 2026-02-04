@@ -10,10 +10,10 @@ import xk.j;
 public class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final gk.b f54568a;
+    private final gk.b f54565a;
 
     public c(gk.b bVar) {
-        this.f54568a = bVar;
+        this.f54565a = bVar;
     }
 
     private float b(p pVar, p pVar2) {
@@ -134,7 +134,7 @@ public class c {
                     cVar = this;
                     i22 = abs;
                 }
-                if (z11 == cVar.f54568a.e(i20, i21)) {
+                if (z11 == cVar.f54565a.e(i20, i21)) {
                     if (i29 == 2) {
                         return hk.a.b(i27, i28, i14, i15);
                     }
@@ -174,9 +174,9 @@ public class c {
         if (i15 < 0) {
             f10 = i10 / (i10 - i15);
             i15 = 0;
-        } else if (i15 >= this.f54568a.l()) {
-            f10 = ((this.f54568a.l() - 1) - i10) / (i15 - i10);
-            i15 = this.f54568a.l() - 1;
+        } else if (i15 >= this.f54565a.l()) {
+            f10 = ((this.f54565a.l() - 1) - i10) / (i15 - i10);
+            i15 = this.f54565a.l() - 1;
         } else {
             f10 = 1.0f;
         }
@@ -184,9 +184,9 @@ public class c {
         int i17 = (int) (f12 - ((i13 - i11) * f10));
         if (i17 < 0) {
             f11 = f12 / (i11 - i17);
-        } else if (i17 >= this.f54568a.i()) {
-            f11 = ((this.f54568a.i() - 1) - i11) / (i17 - i11);
-            i16 = this.f54568a.i() - 1;
+        } else if (i17 >= this.f54565a.i()) {
+            f11 = ((this.f54565a.i() - 1) - i11) / (i17 - i11);
+            i16 = this.f54565a.i() - 1;
         } else {
             i16 = i17;
             f11 = 1.0f;
@@ -202,19 +202,19 @@ public class c {
         if (map != null) {
             android.support.v4.media.session.b.a(map.get(ck.e.NEED_RESULT_POINT_CALLBACK));
         }
-        return g(new e(this.f54568a, null).g(map));
+        return g(new e(this.f54565a, null).g(map));
     }
 
     protected final a f(float f10, int i10, int i11, float f11) {
         int i12 = (int) (f11 * f10);
         int max = Math.max(0, i10 - i12);
-        int min = Math.min(this.f54568a.l() - 1, i10 + i12) - max;
+        int min = Math.min(this.f54565a.l() - 1, i10 + i12) - max;
         float f12 = 3.0f * f10;
         if (min >= f12) {
             int max2 = Math.max(0, i11 - i12);
-            int min2 = Math.min(this.f54568a.i() - 1, i11 + i12) - max2;
+            int min2 = Math.min(this.f54565a.i() - 1, i11 + i12) - max2;
             if (min2 >= f12) {
-                return new b(this.f54568a, max, max2, min, min2, f10, null).c();
+                return new b(this.f54565a, max, max2, min, min2, f10, null).c();
             }
             throw k.a();
         }
@@ -246,7 +246,7 @@ public class c {
                 }
             }
             aVar = null;
-            return new g(h(this.f54568a, d(b10, c10, a10, aVar, c11), c11), aVar == null ? new p[]{a10, b10, c10} : new p[]{a10, b10, c10, aVar});
+            return new g(h(this.f54565a, d(b10, c10, a10, aVar, c11), c11), aVar == null ? new p[]{a10, b10, c10} : new p[]{a10, b10, c10, aVar});
         }
         throw k.a();
     }

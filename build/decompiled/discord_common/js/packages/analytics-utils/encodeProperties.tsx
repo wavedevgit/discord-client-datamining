@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = '../discord_common/js/packages/analytics-utils/encodeProperties.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function arg0() {
-        _fun7322: for (var _fun7322_ip = 0;;) switch (_fun7322_ip) {
+        _fun7324: for (var _fun7324_ip = 0;;) switch (_fun7324_ip) {
             case 0:
                 var0 = arg0;
             case 3: // try_start_0

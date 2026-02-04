@@ -31,7 +31,7 @@ public final class RememberCommandQueueKt {
         }
         aVar.i(1494017499);
         Object d10 = aVar.d();
-        if (d10 == a.f51790a.a()) {
+        if (d10 == a.f51787a.a()) {
             d10 = e0.b(null, null, 2, null);
             aVar.c(d10);
         }
@@ -65,7 +65,7 @@ public final class RememberCommandQueueKt {
         LifecycleOwner lifecycleOwner = (LifecycleOwner) aVar.f(b.c());
         aVar.i(-592937361);
         Object d10 = aVar.d();
-        if (d10 == a.f51790a.a()) {
+        if (d10 == a.f51787a.a()) {
             try {
                 Result.a aVar2 = kotlin.Result.f32461e;
                 b10 = kotlin.Result.b(new CommandQueue());

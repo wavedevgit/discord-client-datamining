@@ -6,7 +6,7 @@ import com.facebook.react.views.text.internal.span.SetSpanOperation;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ThreadLocal f48319a = new ThreadLocal();
+    private static final ThreadLocal f48316a = new ThreadLocal();
 
     public static void a(int i10, int i11, int i12, double[] dArr) {
         double pow;
@@ -117,7 +117,7 @@ public abstract class c {
     }
 
     private static double[] k() {
-        ThreadLocal threadLocal = f48319a;
+        ThreadLocal threadLocal = f48316a;
         double[] dArr = (double[]) threadLocal.get();
         if (dArr == null) {
             double[] dArr2 = new double[3];

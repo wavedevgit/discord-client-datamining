@@ -5,16 +5,16 @@ import z.y0;
 final class g extends y0.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f55379a;
+    private final int f55376a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final x.o0 f55380b;
+    private final x.o0 f55377b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g(int i10, x.o0 o0Var) {
-        this.f55379a = i10;
+        this.f55376a = i10;
         if (o0Var != null) {
-            this.f55380b = o0Var;
+            this.f55377b = o0Var;
             return;
         }
         throw new NullPointerException("Null imageCaptureException");
@@ -22,12 +22,12 @@ final class g extends y0.b {
 
     @Override // z.y0.b
     x.o0 a() {
-        return this.f55380b;
+        return this.f55377b;
     }
 
     @Override // z.y0.b
     int b() {
-        return this.f55379a;
+        return this.f55376a;
     }
 
     public boolean equals(Object obj) {
@@ -36,7 +36,7 @@ final class g extends y0.b {
         }
         if (obj instanceof y0.b) {
             y0.b bVar = (y0.b) obj;
-            if (this.f55379a == bVar.b() && this.f55380b.equals(bVar.a())) {
+            if (this.f55376a == bVar.b() && this.f55377b.equals(bVar.a())) {
                 return true;
             }
         }
@@ -44,10 +44,10 @@ final class g extends y0.b {
     }
 
     public int hashCode() {
-        return ((this.f55379a ^ 1000003) * 1000003) ^ this.f55380b.hashCode();
+        return ((this.f55376a ^ 1000003) * 1000003) ^ this.f55377b.hashCode();
     }
 
     public String toString() {
-        return "CaptureError{requestId=" + this.f55379a + ", imageCaptureException=" + this.f55380b + "}";
+        return "CaptureError{requestId=" + this.f55376a + ", imageCaptureException=" + this.f55377b + "}";
     }
 }

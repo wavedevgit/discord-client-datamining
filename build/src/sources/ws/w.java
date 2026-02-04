@@ -8,7 +8,7 @@ public abstract class w {
     public static final v a(List predicates) {
         Intrinsics.checkNotNullParameter(predicates, "predicates");
         if (predicates.isEmpty()) {
-            return a0.f52692a;
+            return a0.f52689a;
         }
         if (predicates.size() == 1) {
             return (v) CollectionsKt.Q0(predicates);

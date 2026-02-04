@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function arg0() {
-        _fun105453: for (var _fun105453_ip = 0;;) switch (_fun105453_ip) {
+        _fun105466: for (var _fun105466_ip = 0;;) switch (_fun105466_ip) {
             case 0:
                 var0 = arg0;
                 var13 = var0.muted;
@@ -27,16 +27,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var0.bind(var3)(var6);
                 var0 = null;
                 if (!(var0 != var12)) {
-                    _fun105453_ip = 246;
-                    continue _fun105453
+                    _fun105466_ip = 246;
+                    continue _fun105466
                 }
             case 88:
                 var6 = var12.type;
                 var3 = 'voice';
                 var8 = var3 === var6;
                 if (!var8) {
-                    _fun105453_ip = 107;
-                    continue _fun105453
+                    _fun105466_ip = 107;
+                    continue _fun105466
                 }
             case 104:
                 var8 = var2;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.content = var12;
                 var12 = var0 != var13;
                 if (!var12) {
-                    _fun105453_ip = 188;
-                    continue _fun105453
+                    _fun105466_ip = 188;
+                    continue _fun105466
                 }
             case 185:
                 var12 = var13;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/shared_components/guild_channels/ChannelSubtitle.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun105454: for (var _fun105454_ip = 0;;) switch (_fun105454_ip) {
+        _fun105467: for (var _fun105467_ip = 0;;) switch (_fun105467_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.subtitle;
@@ -126,8 +126,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var0.connected;
                 var0 = null;
                 if (!(var0 != var7)) {
-                    _fun105454_ip = 258;
-                    continue _fun105454
+                    _fun105467_ip = 258;
+                    continue _fun105467
                 }
             case 46:
                 var6 = {
@@ -151,8 +151,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = 1;
                 var1 = {};
                 if (var9) {
-                    _fun105454_ip = 130;
-                    continue _fun105454
+                    _fun105467_ip = 130;
+                    continue _fun105467
                 }
             case 126:
                 var3 = _closure1_slot2;
@@ -162,8 +162,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = 'string';
                 var1 = typeof var7;
                 if (!(var3 !== var1)) {
-                    _fun105454_ip = 200;
-                    continue _fun105454
+                    _fun105467_ip = 200;
+                    continue _fun105467
                 }
             case 149:
                 var4 = _closure1_slot3;
@@ -177,8 +177,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.connected = var8;
                 var1.textProps = var6;
                 var1 = var4.bind(var5)(var3, var1);
-                _fun105454_ip = 256;
-                continue _fun105454;
+                _fun105467_ip = 256;
+                continue _fun105467;
             case 200:
                 var4 = _closure1_slot3;
                 var3 = _closure1_slot0;
@@ -202,4 +202,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.renderChannelSubtitle = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 8800, 33, 8801, 3941, 13406, 8798, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 8803, 33, 8804, 3941, 13407, 8801, 2]);

@@ -11,7 +11,7 @@ public class e extends g {
         super(list);
         int i10 = 0;
         for (int i11 = 0; i11 < list.size(); i11++) {
-            s5.d dVar = (s5.d) ((y5.a) list.get(i11)).f53743b;
+            s5.d dVar = (s5.d) ((y5.a) list.get(i11)).f53740b;
             if (dVar != null) {
                 i10 = Math.max(i10, dVar.f());
             }
@@ -23,7 +23,7 @@ public class e extends g {
     @Override // o5.a
     /* renamed from: q */
     public s5.d i(y5.a aVar, float f10) {
-        this.f42372i.g((s5.d) aVar.f53743b, (s5.d) aVar.f53744c, f10);
+        this.f42372i.g((s5.d) aVar.f53740b, (s5.d) aVar.f53741c, f10);
         return this.f42372i;
     }
 }

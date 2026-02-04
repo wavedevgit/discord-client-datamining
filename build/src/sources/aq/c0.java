@@ -88,7 +88,7 @@ public abstract class c0 {
         }
         InputText inputText = new InputText("can_access_code", attributes5, inputTextBasedComponentStyle);
         final TextInputLayout b10 = i2.b(new InputTextComponent(inputText), uiComponentHelper, inputText, governmentIdNfcScanComponent.c());
-        b10.setId(yp.e.f55171c0);
+        b10.setId(yp.e.f55168c0);
         linearLayout.addView(b10);
         GovernmentIdNfcScan.Attributes attributes6 = config.getAttributes();
         if (attributes6 != null) {
@@ -123,7 +123,7 @@ public abstract class c0 {
         }
         InputText inputText2 = new InputText("doc_number", attributes10, inputTextBasedComponentStyle2);
         final TextInputLayout b11 = i2.b(new InputTextComponent(inputText2), uiComponentHelper, inputText2, governmentIdNfcScanComponent.g());
-        b11.setId(yp.e.f55175e0);
+        b11.setId(yp.e.f55172e0);
         linearLayout.addView(b11);
         GovernmentIdNfcScan.Attributes attributes11 = config.getAttributes();
         if (attributes11 != null) {
@@ -160,7 +160,7 @@ public abstract class c0 {
         }
         InputDate inputDate = new InputDate("dob", inputDateComponentStyle, attributes15);
         final ConstraintLayout b12 = e1.b(new InputDateComponent(inputDate), uiComponentHelper, governmentIdNfcScanComponent.f(), inputDate);
-        b12.setId(yp.e.f55173d0);
+        b12.setId(yp.e.f55170d0);
         linearLayout.addView(b12);
         GovernmentIdNfcScan.Attributes attributes16 = config.getAttributes();
         if (attributes16 != null) {
@@ -196,7 +196,7 @@ public abstract class c0 {
         }
         InputDate inputDate2 = new InputDate(GovernmentIdNfcScan.expirationDateName, inputDateComponentStyle2, attributes20);
         final ConstraintLayout b13 = e1.b(new InputDateComponent(inputDate2), uiComponentHelper, governmentIdNfcScanComponent.i(), inputDate2);
-        b13.setId(yp.e.f55179g0);
+        b13.setId(yp.e.f55176g0);
         linearLayout.addView(b13);
         GovernmentIdNfcScan.Attributes attributes21 = config.getAttributes();
         BasicButtonAttributes basicButtonAttributes = new BasicButtonAttributes((attributes21 == null || (r10 = attributes21.getLaunchButtonText()) == null) ? "" : "", Button.ButtonType.PRIMARY, null, null, null, null, 60, null);
@@ -208,7 +208,7 @@ public abstract class c0 {
         }
         SubmitButton submitButton = new SubmitButton(GovernmentIdNfcScan.launchButtonName, basicButtonAttributes, buttonSubmitComponentStyle);
         ButtonWithLoadingIndicator a10 = d5.a(new c5(submitButton), uiComponentHelper, submitButton);
-        a10.setId(yp.e.f55181h0);
+        a10.setId(yp.e.f55178h0);
         linearLayout.addView(a10);
         GovernmentIdNfcScan.Attributes attributes22 = config.getAttributes();
         if (attributes22 != null) {
@@ -229,7 +229,7 @@ public abstract class c0 {
             });
         }
         final TextView textView = new TextView(linearLayout.getContext());
-        textView.setId(yp.e.f55177f0);
+        textView.setId(yp.e.f55174f0);
         uiComponentHelper.d(new Function0() { // from class: aq.b0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {

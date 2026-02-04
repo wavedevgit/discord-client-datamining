@@ -13,16 +13,16 @@ import w5.c;
 public abstract class w {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f51186a = c.a.a("w", "h", "ip", "op", "fr", "v", "layers", "assets", "fonts", "chars", "markers");
+    private static final c.a f51183a = c.a.a("w", "h", "ip", "op", "fr", "v", "layers", "assets", "fonts", "chars", "markers");
 
     /* renamed from: b  reason: collision with root package name */
-    static c.a f51187b = c.a.a(StackTraceHelper.ID_KEY, "layers", "w", "h", "p", "u");
+    static c.a f51184b = c.a.a(StackTraceHelper.ID_KEY, "layers", "w", "h", "p", "u");
 
     /* renamed from: c  reason: collision with root package name */
-    private static final c.a f51188c = c.a.a("list");
+    private static final c.a f51185c = c.a.a("list");
 
     /* renamed from: d  reason: collision with root package name */
-    private static final c.a f51189d = c.a.a("cm", "tm", "dr");
+    private static final c.a f51186d = c.a.a("cm", "tm", "dr");
 
     public static l5.i a(w5.c cVar) {
         float f10;
@@ -43,7 +43,7 @@ public abstract class w {
         int i10 = 0;
         int i11 = 0;
         while (cVar2.hasNext()) {
-            switch (cVar2.B(f51186a)) {
+            switch (cVar2.B(f51183a)) {
                 case 0:
                     i10 = cVar.nextInt();
                     cVar2 = cVar;
@@ -109,7 +109,7 @@ public abstract class w {
             String str2 = null;
             String str3 = null;
             while (cVar.hasNext()) {
-                int B = cVar.B(f51187b);
+                int B = cVar.B(f51184b);
                 if (B != 0) {
                     if (B != 1) {
                         if (B != 2) {
@@ -166,7 +166,7 @@ public abstract class w {
     private static void d(w5.c cVar, Map map) {
         cVar.r();
         while (cVar.hasNext()) {
-            if (cVar.B(f51188c) != 0) {
+            if (cVar.B(f51185c) != 0) {
                 cVar.E();
                 cVar.P();
             } else {
@@ -206,7 +206,7 @@ public abstract class w {
             String str = null;
             float f11 = 0.0f;
             while (cVar.hasNext()) {
-                int B = cVar.B(f51189d);
+                int B = cVar.B(f51186d);
                 if (B != 0) {
                     if (B != 1) {
                         if (B != 2) {

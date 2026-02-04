@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var3;
     var0 = function arg0, arg1, arg2() {
-        _fun87859: for (var _fun87859_ip = 0;;) switch (_fun87859_ip) {
+        _fun87876: for (var _fun87876_ip = 0;;) switch (_fun87876_ip) {
             case 0:
                 var2 = arg2;
                 var0 = arg1;
@@ -26,8 +26,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.top;
                 var1 = var1 - var0;
                 if (!(var2 >= var1)) {
-                    _fun87859_ip = 64;
-                    continue _fun87859
+                    _fun87876_ip = 64;
+                    continue _fun87876
                 }
             case 61:
                 var1 = var2;

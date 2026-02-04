@@ -51,10 +51,10 @@ public final class c implements ViewBinding {
                 i10 = yp.e.L;
                 TextInputLayout textInputLayout2 = (TextInputLayout) e4.a.a(view, i10);
                 if (textInputLayout2 != null) {
-                    i10 = yp.e.f55207u0;
+                    i10 = yp.e.f55204u0;
                     TextInputLayout textInputLayout3 = (TextInputLayout) e4.a.a(view, i10);
                     if (textInputLayout3 != null) {
-                        i10 = yp.e.f55209v0;
+                        i10 = yp.e.f55206v0;
                         TextInputEditText textInputEditText2 = (TextInputEditText) e4.a.a(view, i10);
                         if (textInputEditText2 != null) {
                             i10 = yp.e.B0;
@@ -75,7 +75,7 @@ public final class c implements ViewBinding {
     }
 
     public static c d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(yp.f.f55220c, viewGroup, false);
+        View inflate = layoutInflater.inflate(yp.f.f55217c, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }

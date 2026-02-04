@@ -53,6 +53,6 @@ public final class d extends gf.g {
 
     @Override // gf.c
     public final com.google.android.gms.common.d[] u() {
-        return te.h.f50021b;
+        return te.h.f50018b;
     }
 }

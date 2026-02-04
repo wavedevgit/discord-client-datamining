@@ -6,10 +6,10 @@ import rn.g;
 public final class i implements g.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f48981a;
+    private final h f48978a;
 
     i(h hVar) {
-        this.f48981a = hVar;
+        this.f48978a = hVar;
     }
 
     public static wq.h b(h hVar) {
@@ -18,6 +18,6 @@ public final class i implements g.a {
 
     @Override // rn.g.a
     public g a(m mVar, Camera2PreviewView camera2PreviewView, b bVar, vn.a aVar, oq.a aVar2, boolean z10) {
-        return this.f48981a.b(mVar, camera2PreviewView, bVar, aVar, aVar2, z10);
+        return this.f48978a.b(mVar, camera2PreviewView, bVar, aVar, aVar2, z10);
     }
 }

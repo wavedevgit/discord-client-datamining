@@ -3,11 +3,11 @@ package xm;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private long f53427a;
+    private long f53424a;
 
     public final long a() {
-        long j10 = this.f53427a;
-        this.f53427a = 1 + j10;
+        long j10 = this.f53424a;
+        this.f53424a = 1 + j10;
         return j10;
     }
 }

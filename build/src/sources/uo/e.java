@@ -6,11 +6,11 @@ public final class e implements wq.d {
     private static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final e f50817a = new e();
+        static final e f50814a = new e();
     }
 
     public static e a() {
-        return a.f50817a;
+        return a.f50814a;
     }
 
     public static d c() {

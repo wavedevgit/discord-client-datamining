@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = function arg0() {
-        _fun29069: for (var _fun29069_ip = 0;;) switch (_fun29069_ip) {
+        _fun29071: for (var _fun29071_ip = 0;;) switch (_fun29071_ip) {
             case 0:
                 var5 = arg0;
                 var2 = var5;
@@ -13,8 +13,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = 'function';
                 var5 = typeof var5;
                 if (!(var6 !== var5)) {
-                    _fun29069_ip = 35;
-                    continue _fun29069
+                    _fun29071_ip = 35;
+                    continue _fun29071
                 }
             case 33:
                 return var4;
@@ -23,14 +23,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var7.call;
                 var4 = 'f';
                 var2 = function(arg0, arg1, arg2) { // Environment: var1
-                    _fun29070: for (var _fun29070_ip = 0;;) switch (_fun29070_ip) {
+                    _fun29072: for (var _fun29072_ip = 0;;) switch (_fun29072_ip) {
                         case 0:
                             var1 = 'object';
                             var0 = arg2;
                             var0 = typeof var0;
                             if (!(var1 !== var0)) {
-                                _fun29070_ip = 23;
-                                continue _fun29070
+                                _fun29072_ip = 23;
+                                continue _fun29072
                             }
                         case 14:
                             var0 = false;
@@ -54,29 +54,29 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var2 = 'x';
                 var2 = var6.bind(var7)(var5, var4, var2);
-            case 87: // try_end0
-                _fun29069_ip = 93;
-                continue _fun29069;
-            case 89: // catch_target0
+            case 89: // try_end0
+                _fun29071_ip = 95;
+                continue _fun29071;
+            case 91: // catch_target0
                 CatchBlockStart(arg_register = 2);
                 var3 = true;
-            case 93:
+            case 95:
                 var2 = !var3;
                 if (var3) {
-                    _fun29069_ip = 103;
-                    continue _fun29069
+                    _fun29071_ip = 105;
+                    continue _fun29071
                 }
-            case 99:
+            case 101:
                 var2 = _closure2_slot0;
-            case 103:
+            case 105:
                 var0 = var2;
                 if (!var2) {
-                    _fun29069_ip = 113;
-                    continue _fun29069
+                    _fun29071_ip = 115;
+                    continue _fun29071
                 }
-            case 109:
+            case 111:
                 var0 = _closure2_slot1;
-            case 113:
+            case 115:
                 return var0;
         }
     };

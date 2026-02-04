@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/native/ActivityShelfBadge.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun107669: for (var _fun107669_ip = 0;;) switch (_fun107669_ip) {
+        _fun107682: for (var _fun107682_ip = 0;;) switch (_fun107682_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.labelType;
@@ -126,8 +126,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.bind(var4)();
                 var0 = null;
                 if (!(var0 == var8)) {
-                    _fun107669_ip = 40;
-                    continue _fun107669
+                    _fun107682_ip = 40;
+                    continue _fun107682
                 }
             case 34:
                 var8 = var7.badge;
@@ -140,8 +140,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EmbeddedActivityLabelTypes;
                 var1 = var1.NEW;
                 if (!(var2 !== var1)) {
-                    _fun107669_ip = 284;
-                    continue _fun107669
+                    _fun107682_ip = 284;
+                    continue _fun107682
                 }
             case 79:
                 var3 = _closure1_slot0;
@@ -152,8 +152,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.UPDATED;
                 var0 = null;
                 if (!(var2 === var1)) {
-                    _fun107669_ip = 279;
-                    continue _fun107669
+                    _fun107682_ip = 279;
+                    continue _fun107682
                 }
             case 117:
                 var3 = _closure1_slot3;
@@ -194,8 +194,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.children = var6;
                 var0 = var3.bind(var4)(var2, var1);
             case 279:
-                _fun107669_ip = 444;
-                continue _fun107669;
+                _fun107682_ip = 444;
+                continue _fun107682;
             case 284:
                 var3 = _closure1_slot3;
                 var2 = _closure1_slot2;

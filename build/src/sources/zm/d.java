@@ -12,20 +12,20 @@ import kotlin.jvm.internal.Lambda;
 public interface d extends LifecycleOwner {
 
     /* renamed from: n */
-    public static final a f56075n = a.f56076a;
+    public static final a f56072n = a.f56073a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: a */
-        static final /* synthetic */ a f56076a = new a();
+        static final /* synthetic */ a f56073a = new a();
 
         /* renamed from: zm.d$a$a */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class C0786a extends Lambda implements Function1 {
 
             /* renamed from: d */
-            public static final C0786a f56077d = new C0786a();
+            public static final C0786a f56074d = new C0786a();
 
             C0786a() {
                 super(1);
@@ -35,7 +35,7 @@ public interface d extends LifecycleOwner {
             /* renamed from: a */
             public final Lifecycle invoke(View v10) {
                 Intrinsics.checkNotNullParameter(v10, "v");
-                return a.f56076a.b(v10);
+                return a.f56073a.b(v10);
             }
         }
 
@@ -52,7 +52,7 @@ public interface d extends LifecycleOwner {
             } else {
                 view2 = null;
             }
-            if (view2 != null && (a10 = c.f56074a.a(view2)) != null) {
+            if (view2 != null && (a10 = c.f56071a.a(view2)) != null) {
                 lifecycle = a10.getLifecycle();
             }
             if (lifecycle != null) {
@@ -63,7 +63,7 @@ public interface d extends LifecycleOwner {
 
         public static /* synthetic */ void e(a aVar, View view, Function1 function1, int i10, Object obj) {
             if ((i10 & 2) != 0) {
-                function1 = C0786a.f56077d;
+                function1 = C0786a.f56074d;
             }
             aVar.d(view, function1);
         }

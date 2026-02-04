@@ -325,7 +325,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getIgnoreUserFeedbackOptions = var6;
     var2.AgeVerificationFeedbackReasons = var5;
     var4 = function arg0() {
-        _fun52273: for (var _fun52273_ip = 0;;) switch (_fun52273_ip) {
+        _fun52276: for (var _fun52276_ip = 0;;) switch (_fun52276_ip) {
             case 0:
                 var0 = {};
                 var4 = _closure1_slot6;
@@ -395,8 +395,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.AGE_VERIFICATION_SURVEY_MODAL_CLOSE;
                 var0 = arg0;
                 if (!(var0 !== var1)) {
-                    _fun52273_ip = 477;
-                    continue _fun52273
+                    _fun52276_ip = 477;
+                    continue _fun52276
                 }
             case 312:
                 var0 = new Array(2);
@@ -435,8 +435,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var6.bind(var10)(var4);
                 var1.label = var4;
                 var0[var2] = var1;
-                _fun52273_ip = 640;
-                continue _fun52273;
+                _fun52276_ip = 640;
+                continue _fun52276;
             case 477:
                 var1 = new Array(2);
                 var15 = 0;

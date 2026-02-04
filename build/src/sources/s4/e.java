@@ -15,12 +15,12 @@ import p4.z;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f49183a;
+    private static final String f49180a;
 
     static {
         String i10 = m.i("DiagnosticsWrkr");
         Intrinsics.checkNotNullExpressionValue(i10, "tagWithPrefix(\"DiagnosticsWrkr\")");
-        f49183a = i10;
+        f49180a = i10;
     }
 
     private static final String c(u uVar, String str, Integer num, String str2) {

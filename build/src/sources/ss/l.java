@@ -9,26 +9,26 @@ import os.e0;
 public final class l extends b0 {
 
     /* renamed from: p  reason: collision with root package name */
-    private final /* synthetic */ AtomicReferenceArray f49622p;
+    private final /* synthetic */ AtomicReferenceArray f49619p;
 
     public l(long j10, l lVar, int i10) {
         super(j10, lVar, i10);
         int i11;
-        i11 = k.f49621f;
-        this.f49622p = new AtomicReferenceArray(i11);
+        i11 = k.f49618f;
+        this.f49619p = new AtomicReferenceArray(i11);
     }
 
     @Override // os.b0
     public int r() {
         int i10;
-        i10 = k.f49621f;
+        i10 = k.f49618f;
         return i10;
     }
 
     @Override // os.b0
     public void s(int i10, Throwable th2, CoroutineContext coroutineContext) {
         e0 e0Var;
-        e0Var = k.f49620e;
+        e0Var = k.f49617e;
         v().set(i10, e0Var);
         t();
     }
@@ -38,6 +38,6 @@ public final class l extends b0 {
     }
 
     public final /* synthetic */ AtomicReferenceArray v() {
-        return this.f49622p;
+        return this.f49619p;
     }
 }

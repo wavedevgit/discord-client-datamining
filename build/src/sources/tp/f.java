@@ -24,9 +24,9 @@ public abstract class f {
                 location = null;
             }
             if (a10 == 0) {
-                cVar = c.f50210e;
+                cVar = c.f50207e;
             } else if (a11 == 0) {
-                cVar = c.f50209d;
+                cVar = c.f50206d;
             } else {
                 cVar = null;
             }

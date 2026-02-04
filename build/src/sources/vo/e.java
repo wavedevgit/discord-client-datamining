@@ -5,14 +5,14 @@ import lv.a0;
 public final class e implements wq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.withpersona.sdk2.inquiry.internal.network.f f51723a;
+    private final com.withpersona.sdk2.inquiry.internal.network.f f51720a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final wq.h f51724b;
+    private final wq.h f51721b;
 
     public e(com.withpersona.sdk2.inquiry.internal.network.f fVar, wq.h hVar) {
-        this.f51723a = fVar;
-        this.f51724b = hVar;
+        this.f51720a = fVar;
+        this.f51721b = hVar;
     }
 
     public static e a(com.withpersona.sdk2.inquiry.internal.network.f fVar, wq.h hVar) {
@@ -26,6 +26,6 @@ public final class e implements wq.d {
     @Override // javax.inject.Provider
     /* renamed from: c */
     public ao.b get() {
-        return b(this.f51723a, (a0) this.f51724b.get());
+        return b(this.f51720a, (a0) this.f51721b.get());
     }
 }

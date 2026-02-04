@@ -48,21 +48,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var2.bind(var3)(var1);
         var1 = var2.useAnimatedStyle;
         var0 = function() {
-            _fun70159: for (var _fun70159_ip = 0;;) switch (_fun70159_ip) {
+            _fun70176: for (var _fun70176_ip = 0;;) switch (_fun70176_ip) {
                 case 0:
                     var0 = _closure2_slot0;
                     var1 = 'number';
                     var0 = typeof var0;
                     if (!(var1 !== var0)) {
-                        _fun70159_ip = 33;
-                        continue _fun70159
+                        _fun70176_ip = 33;
+                        continue _fun70176
                     }
                 case 18:
                     var1 = _closure2_slot0;
                     var0 = var1.get;
                     var1 = var0.bind(var1)();
-                    _fun70159_ip = 37;
-                    continue _fun70159;
+                    _fun70176_ip = 37;
+                    continue _fun70176;
                 case 33:
                     var1 = _closure2_slot0;
                 case 37:
@@ -282,7 +282,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/in_app_notifications/native/Notification.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun70160: for (var _fun70160_ip = 0;;) switch (_fun70160_ip) {
+        _fun70177: for (var _fun70177_ip = 0;;) switch (_fun70177_ip) {
             case 0:
                 var0 = arg0;
                 var11 = var0.icon;
@@ -302,8 +302,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var14 != var19;
                 var5 = null;
                 if (!var4) {
-                    _fun70160_ip = 232;
-                    continue _fun70160
+                    _fun70177_ip = 232;
+                    continue _fun70177
                 }
             case 79:
                 var7 = _closure1_slot8;
@@ -370,8 +370,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var14 != var18;
                 var17 = null;
                 if (!var19) {
-                    _fun70160_ip = 341;
-                    continue _fun70160
+                    _fun70177_ip = 341;
+                    continue _fun70177
                 }
             case 338:
                 var17 = var18;
@@ -403,8 +403,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = new Array(2);
                 var11[0] = var15;
                 if (!(var14 == var12)) {
-                    _fun70160_ip = 495;
-                    continue _fun70160
+                    _fun70177_ip = 499;
+                    continue _fun70177
                 }
             case 449:
                 var15 = _closure1_slot7;
@@ -420,7 +420,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var13.children = var16;
                 var12 = var15.bind(var3)(var14, var13);
-            case 495:
+            case 499:
                 var11[1] = var12;
                 var9.children = var11;
                 var9 = var7.bind(var3)(var10, var9);
@@ -435,7 +435,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.Notification = var3;
     var1 = function arg0() {
-        _fun70161: for (var _fun70161_ip = 0;;) switch (_fun70161_ip) {
+        _fun70178: for (var _fun70178_ip = 0;;) switch (_fun70178_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.children;
@@ -464,8 +464,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = null;
                 var10 = var8 != var12;
                 if (!var10) {
-                    _fun70161_ip = 131;
-                    continue _fun70161
+                    _fun70178_ip = 131;
+                    continue _fun70178
                 }
             case 110:
                 var11 = _closure1_slot7;

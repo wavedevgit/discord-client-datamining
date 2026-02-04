@@ -31,7 +31,7 @@ import yg.j;
 import zg.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class FloatingActionButton extends p implements hh.a, n, CoordinatorLayout.b {
-    private static final int C = j.f54254h;
+    private static final int C = j.f54251h;
     private final hh.b A;
     private com.google.android.material.floatingactionbutton.b B;
 
@@ -138,7 +138,7 @@ public class FloatingActionButton extends p implements hh.a, n, CoordinatorLayou
     }
 
     public FloatingActionButton(@NonNull Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, yg.b.f54109u);
+        this(context, attributeSet, yg.b.f54106u);
     }
 
     private com.google.android.material.floatingactionbutton.b e() {
@@ -153,9 +153,9 @@ public class FloatingActionButton extends p implements hh.a, n, CoordinatorLayou
         Resources resources = getResources();
         if (i10 != -1) {
             if (i10 != 1) {
-                return resources.getDimensionPixelSize(d.f54131d);
+                return resources.getDimensionPixelSize(d.f54128d);
             }
-            return resources.getDimensionPixelSize(d.f54129c);
+            return resources.getDimensionPixelSize(d.f54126c);
         } else if (Math.max(resources.getConfiguration().screenWidthDp, resources.getConfiguration().screenHeightDp) < 470) {
             return g(1);
         } else {
@@ -732,8 +732,8 @@ public class FloatingActionButton extends p implements hh.a, n, CoordinatorLayou
 
         public BaseBehavior(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, yg.k.f54326f2);
-            this.f14622e = obtainStyledAttributes.getBoolean(yg.k.f54336g2, true);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, yg.k.f54323f2);
+            this.f14622e = obtainStyledAttributes.getBoolean(yg.k.f54333g2, true);
             obtainStyledAttributes.recycle();
         }
     }
@@ -771,7 +771,7 @@ public class FloatingActionButton extends p implements hh.a, n, CoordinatorLayou
             r5 = 0
             android.graphics.PorterDuff$Mode r13 = com.google.android.material.internal.o.i(r13, r5)
             r10.f14608i = r13
-            int r13 = yg.k.f54296c2
+            int r13 = yg.k.f54293c2
             android.content.res.ColorStateList r13 = lh.c.a(r0, r12, r13)
             r10.f14611q = r13
             int r13 = yg.k.X1
@@ -788,18 +788,18 @@ public class FloatingActionButton extends p implements hh.a, n, CoordinatorLayou
             float r13 = r12.getDimension(r13, r2)
             int r5 = yg.k.Z1
             float r5 = r12.getDimension(r5, r2)
-            int r6 = yg.k.f54286b2
+            int r6 = yg.k.f54283b2
             float r2 = r12.getDimension(r6, r2)
-            int r6 = yg.k.f54316e2
+            int r6 = yg.k.f54313e2
             boolean r6 = r12.getBoolean(r6, r11)
             r10.f14617w = r6
             android.content.res.Resources r6 = r10.getResources()
             int r7 = yg.d.X
             int r6 = r6.getDimensionPixelSize(r7)
-            int r7 = yg.k.f54276a2
+            int r7 = yg.k.f54273a2
             int r7 = r12.getDimensionPixelSize(r7, r11)
             r10.setMaxImageSize(r7)
-            int r7 = yg.k.f54306d2
+            int r7 = yg.k.f54303d2
             zg.g r7 = zg.g.b(r0, r12, r7)
             int r8 = yg.k.Y1
             zg.g r8 = zg.g.b(r0, r12, r8)

@@ -36,7 +36,7 @@ import yg.j;
 import yg.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
-    private static final int K = j.f54252f;
+    private static final int K = j.f54249f;
     private ValueAnimator A;
     private ValueAnimator.AnimatorUpdateListener B;
     private final List C;
@@ -296,7 +296,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
             if (valueAnimator2 == null) {
                 ValueAnimator valueAnimator3 = new ValueAnimator();
                 this.f14085x = valueAnimator3;
-                valueAnimator3.setInterpolator(zg.a.f55948e);
+                valueAnimator3.setInterpolator(zg.a.f55945e);
                 this.f14085x.addUpdateListener(new a(coordinatorLayout, appBarLayout));
             } else {
                 valueAnimator2.cancel();
@@ -688,7 +688,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
                 int bottom = childAt.getBottom() + I;
                 if (childAt.getTop() + I <= 0 && bottom >= 0) {
                     if (parcelable == null) {
-                        parcelable = u2.a.f50388e;
+                        parcelable = u2.a.f50385e;
                     }
                     c cVar = new c(parcelable);
                     if (I == 0) {
@@ -1027,8 +1027,8 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
 
         public ScrollingViewBehavior(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, k.f54408n5);
-            S(obtainStyledAttributes.getDimensionPixelSize(k.f54417o5, 0));
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, k.f54405n5);
+            S(obtainStyledAttributes.getDimensionPixelSize(k.f54414o5, 0));
             obtainStyledAttributes.recycle();
         }
     }
@@ -1211,7 +1211,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
     }
 
     private void l(final oh.g gVar, final ColorStateList colorStateList, final ColorStateList colorStateList2) {
-        final Integer f10 = eh.a.f(getContext(), yg.b.f54103o);
+        final Integer f10 = eh.a.f(getContext(), yg.b.f54100o);
         this.B = new ValueAnimator.AnimatorUpdateListener() { // from class: com.google.android.material.appbar.a
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
@@ -1236,7 +1236,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
         BaseBehavior.c cVar;
         Behavior behavior = this.J;
         if (behavior != null && this.f14069e != -1 && this.f14073q == 0) {
-            cVar = behavior.x0(u2.a.f50388e, this);
+            cVar = behavior.x0(u2.a.f50385e, this);
         } else {
             cVar = null;
         }
@@ -1546,15 +1546,15 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
         int[] iArr = this.F;
         int[] onCreateDrawableState = super.onCreateDrawableState(i10 + iArr.length);
         boolean z10 = this.f14077u;
-        int i13 = yg.b.f54086d0;
+        int i13 = yg.b.f54083d0;
         if (!z10) {
             i13 = -i13;
         }
         iArr[0] = i13;
         if (z10 && this.f14078v) {
-            i11 = yg.b.f54088e0;
+            i11 = yg.b.f54085e0;
         } else {
-            i11 = -yg.b.f54088e0;
+            i11 = -yg.b.f54085e0;
         }
         iArr[1] = i11;
         int i14 = yg.b.Z;
@@ -1836,7 +1836,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
     }
 
     public AppBarLayout(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, yg.b.f54079a);
+        this(context, attributeSet, yg.b.f54076a);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */
@@ -1867,11 +1867,11 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.b {
         public d(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
             this.f14102a = 1;
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, k.f54474v);
-            this.f14102a = obtainStyledAttributes.getInt(k.f54492x, 0);
-            f(obtainStyledAttributes.getInt(k.f54483w, 0));
-            if (obtainStyledAttributes.hasValue(k.f54501y)) {
-                this.f14104c = AnimationUtils.loadInterpolator(context, obtainStyledAttributes.getResourceId(k.f54501y, 0));
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, k.f54471v);
+            this.f14102a = obtainStyledAttributes.getInt(k.f54489x, 0);
+            f(obtainStyledAttributes.getInt(k.f54480w, 0));
+            if (obtainStyledAttributes.hasValue(k.f54498y)) {
+                this.f14104c = AnimationUtils.loadInterpolator(context, obtainStyledAttributes.getResourceId(k.f54498y, 0));
             }
             obtainStyledAttributes.recycle();
         }

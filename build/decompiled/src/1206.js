@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun13138: for (var _fun13138_ip = 0;;) switch (_fun13138_ip) {
+    _fun13140: for (var _fun13140_ip = 0;;) switch (_fun13140_ip) {
         case 0:
             var8 = require;
             var2 = exports;
@@ -89,21 +89,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var7 = function arg0() {
-                _fun13143: for (var _fun13143_ip = 0;;) switch (_fun13143_ip) {
+                _fun13145: for (var _fun13145_ip = 0;;) switch (_fun13145_ip) {
                     case 0:
                         var0 = _closure1_slot1;
                         var4 = var0.hasViewManagerConfig;
                         var3 = null;
                         var0 = undefined;
                         if (!(var3 !== var4)) {
-                            _fun13143_ip = 45;
-                            continue _fun13143
+                            _fun13145_ip = 45;
+                            continue _fun13145
                         }
                     case 21:
                         var0 = undefined;
                         if (!(var0 !== var4)) {
-                            _fun13143_ip = 45;
-                            continue _fun13143
+                            _fun13145_ip = 45;
+                            continue _fun13145
                         }
                     case 27:
                         var3 = var4.call;
@@ -120,15 +120,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var5 = var11.isExpoGo;
             var5 = var5.bind(var11)();
             if (var5) {
-                _fun13138_ip = 187;
-                continue _fun13138
+                _fun13140_ip = 187;
+                continue _fun13140
             }
         case 143:
             var13 = 'RNSentryReplayMask';
             var5 = var7.bind(var0)(var13);
             if (!var5) {
-                _fun13138_ip = 187;
-                continue _fun13138
+                _fun13140_ip = 187;
+                continue _fun13140
             }
         case 157:
             var5 = 4;
@@ -142,8 +142,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var5 = var11.bind(var12)(var13, var5);
-            _fun13138_ip = 251;
-            continue _fun13138;
+            _fun13140_ip = 251;
+            continue _fun13140;
         case 187:
             var11 = 3;
             var11 = var9[var11];
@@ -164,15 +164,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var10 = var11.isExpoGo;
             var10 = var10.bind(var11)();
             if (var10) {
-                _fun13138_ip = 317;
-                continue _fun13138
+                _fun13140_ip = 317;
+                continue _fun13140
             }
         case 273:
             var11 = 'RNSentryReplayUnmask';
             var7 = var7.bind(var0)(var11);
             if (!var7) {
-                _fun13138_ip = 317;
-                continue _fun13138
+                _fun13140_ip = 317;
+                continue _fun13140
             }
         case 287:
             var7 = 4;
@@ -186,8 +186,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var4 = var7.bind(var10)(var11, var4);
-            _fun13138_ip = 381;
-            continue _fun13138;
+            _fun13140_ip = 381;
+            continue _fun13140;
         case 317:
             var7 = 3;
             var7 = var9[var7];

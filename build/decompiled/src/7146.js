@@ -1,146 +1,88 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var2 = exports;
-    var4 = dependencyMap;
+    var1 = exports;
     var0 = global;
-    var6 = var0.Object;
-    var5 = var6.defineProperty;
-    var3 = {};
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
     var0 = true;
-    var3.value = var0;
+    var2.value = var0;
     var0 = '__esModule';
-    var0 = var5.bind(var6)(var2, var0, var3);
-    var0 = 0;
-    var5 = var4[var0];
-    var3 = metroImportDefault;
-    var0 = undefined;
-    var3 = var3.bind(var0)(var5);
-    var _closure1_slot0 = var3;
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var6 = {};
+    var7 = 0;
+    var6.UNKNOWN_REPLACEMENT_MODE = var7;
+    var0 = 'UNKNOWN_REPLACEMENT_MODE';
+    var6[var7] = var0;
     var3 = 1;
-    var4 = var4[var3];
-    var3 = require;
-    var3 = var3.bind(var0)(var4);
-    var3 = var3.NativeModules;
-    var3 = var3.RNIapAmazonModule;
-    var _closure1_slot1 = var3;
-    var1 = function() { // Environment: var1
-        var3 = _closure1_slot0;
-        var2 = undefined;
-        var1 = function*(arg0) { // Environment: var0
-            var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun58475: for (var _fun58475_ip = 0;;) switch (_fun58475_ip) {
-                    case 0:
-                        StartGenerator();
-                        var2 = arg0;
-                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
-                        if (var1) {
-                            _fun58475_ip = 103;
-                            continue _fun58475
-                        }
-                    case 12:
-                        var1 = undefined;
-                        var _closure4_slot0 = var1;
-                        var4 = _closure1_slot1;
-                        if (!var4) {
-                            _fun58475_ip = 97;
-                            continue _fun58475
-                        }
-                    case 28:
-                        var4 = _closure1_slot1;
-                        var1 = var4.getUser;
-                        var1 = var1.bind(var4)();
-                        SaveGenerator(address = 46);
-                    case 44:
-                        return var1;
-                    case 46:
-                        ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 4);
-                        if (var4) {
-                            _fun58475_ip = 100;
-                            continue _fun58475
-                        }
-                    case 52:
-                        var5 = var1.userMarketplaceAmazon;
-                        var4 = {
-                            'CA': 'CAD',
-                            'ES': 'EUR',
-                            'AU': 'AUD',
-                            'DE': 'EUR',
-                            'IN': 'INR',
-                            'US': 'USD',
-                            'JP': 'JPY',
-                            'GB': 'GBP',
-                            'IT': 'EUR',
-                            'BR': 'BRL',
-                            'FR': 'EUR'
-                        };
-                        var4 = var4[var5];
-                        _closure4_slot0 = var4;
-                        var4 = var2.forEach;
-                        var3 = function(arg0) { // Environment: var3
-                            _fun58476: for (var _fun58476_ip = 0;;) switch (_fun58476_ip) {
-                                case 0:
-                                    var1 = arg0;
-                                    var2 = _closure4_slot0;
-                                    if (!var2) {
-                                        _fun58476_ip = 72;
-                                        continue _fun58476
-                                    }
-                                case 13:
-                                    var2 = var1.originalPrice;
-                                    var0 = _closure4_slot0;
-                                    var1.currency = var0;
-                                    var3 = null;
-                                    var5 = var3 != var2;
-                                    var0 = '0.0';
-                                    var4 = var0;
-                                    if (!var5) {
-                                        _fun58476_ip = 50;
-                                        continue _fun58476
-                                    }
-                                case 47:
-                                    var4 = var2;
-                                case 50:
-                                    var1.price = var4;
-                                    var3 = var3 != var2;
-                                    if (!var3) {
-                                        _fun58476_ip = 66;
-                                        continue _fun58476
-                                    }
-                                case 63:
-                                    var0 = var2;
-                                case 66:
-                                    var1.localizedPrice = var0;
-                                case 72:
-                                    var0 = undefined;
-                                    return var0;
-                            }
-                        };
-                        var3 = var4.bind(var2)(var3);
-                    case 97:
-                        return var2;
-                    case 100:
-                        return var1;
-                    case 103:
-                        return var0;
-                }
-            };
-            return var0;
-        };
-        var1 = var3.bind(var2)(var1);
-        var _closure2_slot0 = var1;
-        var0 = function arg0() {
-            var0 = undefined;
-            var3 = _closure2_slot0;
-            var2 = var3.apply;
-            var0 = arguments;
-            var1 = var0;
-            var0 = this;
-            var0 = var2.bind(var3)(var0, var1);
-            return var0;
-        };
-        return var0;
-    };
-    var1 = var1.bind(var0)();
-    var2.fillProductsWithAdditionalData = var1;
+    var6.WITH_TIME_PRORATION = var3;
+    var0 = 'WITH_TIME_PRORATION';
+    var6[var3] = var0;
+    var2 = 2;
+    var6.CHARGE_PRORATED_PRICE = var2;
+    var0 = 'CHARGE_PRORATED_PRICE';
+    var6[var2] = var0;
+    var4 = 3;
+    var6.WITHOUT_PRORATION = var4;
+    var0 = 'WITHOUT_PRORATION';
+    var6[var4] = var0;
+    var4 = 5;
+    var6.CHARGE_FULL_PRICE = var4;
+    var0 = 'CHARGE_FULL_PRICE';
+    var6[var4] = var0;
+    var4 = 6;
+    var6.DEFERRED = var4;
+    var0 = 'DEFERRED';
+    var6[var4] = var0;
+    var5 = {};
+    var5.UNSPECIFIED_STATE = var7;
+    var0 = 'UNSPECIFIED_STATE';
+    var5[var7] = var0;
+    var5.PURCHASED = var3;
+    var0 = 'PURCHASED';
+    var5[var3] = var0;
+    var5.PENDING = var2;
+    var0 = 'PENDING';
+    var5[var2] = var0;
+    var4 = {};
+    var4.NOT_SET = var7;
+    var0 = 'NOT_SET';
+    var4[var7] = var0;
+    var4.GOOGLE_PLAY = var3;
+    var0 = 'GOOGLE_PLAY';
+    var4[var3] = var0;
+    var4.AMAZON = var2;
+    var0 = 'AMAZON';
+    var4[var2] = var0;
+    var3 = {};
+    var0 = 'subs';
+    var3.subs = var0;
+    var0 = 'sub';
+    var3.sub = var0;
+    var0 = 'inapp';
+    var3.inapp = var0;
+    var0 = 'iap';
+    var3.iap = var0;
+    var2 = {};
+    var0 = 'PURCHASE';
+    var2.PURCHASE = var0;
+    var0 = 'RENEWAL';
+    var2.RENEWAL = var0;
+    var0 = {};
+    var7 = 'android';
+    var0.android = var7;
+    var7 = 'amazon';
+    var0.amazon = var7;
+    var7 = 'ios';
+    var0.ios = var7;
+    var1.ReplacementModesAndroid = var6;
+    var1.PurchaseStateAndroid = var5;
+    var5 = 'iap-promoted-product';
+    var1.PROMOTED_PRODUCT = var5;
+    var1.InstallSourceAndroid = var4;
+    var1.ProductType = var3;
+    var1.TransactionReason = var2;
+    var1.SubscriptionPlatform = var0;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 27]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

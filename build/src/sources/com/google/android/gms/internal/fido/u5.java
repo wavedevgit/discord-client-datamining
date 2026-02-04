@@ -48,7 +48,7 @@ public final class u5 extends gf.g {
 
     @Override // gf.c
     public final com.google.android.gms.common.d[] u() {
-        return new com.google.android.gms.common.d[]{uf.b.f50621b, uf.b.f50620a};
+        return new com.google.android.gms.common.d[]{uf.b.f50618b, uf.b.f50617a};
     }
 
     @Override // gf.c

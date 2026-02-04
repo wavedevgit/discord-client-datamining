@@ -6,32 +6,32 @@ import ym.g;
 public final class d implements g {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object f52610b;
+    private final Object f52607b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f52611c;
+    private final boolean f52608c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f52612d;
+    private final String f52609d;
 
     public d(Object screen, boolean z10, String name) {
         Intrinsics.checkNotNullParameter(screen, "screen");
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f52610b = screen;
-        this.f52611c = z10;
-        this.f52612d = name;
+        this.f52607b = screen;
+        this.f52608c = z10;
+        this.f52609d = name;
     }
 
     public final Object a() {
-        return this.f52610b;
+        return this.f52607b;
     }
 
     public final boolean b() {
-        return this.f52611c;
+        return this.f52608c;
     }
 
     @Override // ym.g
     public String c() {
-        return this.f52612d;
+        return this.f52609d;
     }
 }

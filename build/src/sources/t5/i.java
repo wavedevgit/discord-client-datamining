@@ -67,21 +67,21 @@ public class i extends t5.b {
     public static /* synthetic */ class c {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f49797a;
+        static final /* synthetic */ int[] f49794a;
 
         static {
             int[] iArr = new int[b.a.values().length];
-            f49797a = iArr;
+            f49794a = iArr;
             try {
                 iArr[b.a.LEFT_ALIGN.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f49797a[b.a.RIGHT_ALIGN.ordinal()] = 2;
+                f49794a[b.a.RIGHT_ALIGN.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f49797a[b.a.CENTER.ordinal()] = 3;
+                f49794a[b.a.CENTER.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
@@ -109,25 +109,25 @@ public class i extends t5.b {
         a10.a(this);
         i(a10);
         k u10 = eVar.u();
-        if (u10 != null && (aVar2 = u10.f48562a) != null) {
+        if (u10 != null && (aVar2 = u10.f48559a) != null) {
             o5.a a11 = aVar2.a();
             this.O = a11;
             a11.a(this);
             i(this.O);
         }
-        if (u10 != null && (aVar = u10.f48563b) != null) {
+        if (u10 != null && (aVar = u10.f48560b) != null) {
             o5.a a12 = aVar.a();
             this.Q = a12;
             a12.a(this);
             i(this.Q);
         }
-        if (u10 != null && (bVar2 = u10.f48564c) != null) {
+        if (u10 != null && (bVar2 = u10.f48561c) != null) {
             o5.a a13 = bVar2.a();
             this.S = a13;
             a13.a(this);
             i(this.S);
         }
-        if (u10 != null && (bVar = u10.f48565d) != null) {
+        if (u10 != null && (bVar = u10.f48562d) != null) {
             o5.a a14 = bVar.a();
             this.U = a14;
             a14.a(this);
@@ -185,10 +185,10 @@ public class i extends t5.b {
                 this.H.setColor(bVar.f47405i);
             }
         }
-        if (this.f49749x.h() == null) {
+        if (this.f49746x.h() == null) {
             intValue = 100;
         } else {
-            intValue = ((Integer) this.f49749x.h().h()).intValue();
+            intValue = ((Integer) this.f49746x.h().h()).intValue();
         }
         int i11 = (((intValue * SetSpanOperation.SPAN_MAX_PRIORITY) / 100) * i10) / SetSpanOperation.SPAN_MAX_PRIORITY;
         this.G.setAlpha(i11);
@@ -576,7 +576,7 @@ public class i extends t5.b {
         if (pointF2 != null) {
             f13 = pointF2.x;
         }
-        int i11 = c.f49797a[bVar.f47400d.ordinal()];
+        int i11 = c.f49794a[bVar.f47400d.ordinal()];
         if (i11 != 1) {
             if (i11 != 2) {
                 if (i11 == 3) {
@@ -764,19 +764,19 @@ public class i extends t5.b {
     public static class d {
 
         /* renamed from: a  reason: collision with root package name */
-        private String f49798a;
+        private String f49795a;
 
         /* renamed from: b  reason: collision with root package name */
-        private float f49799b;
+        private float f49796b;
 
         private d() {
-            this.f49798a = "";
-            this.f49799b = 0.0f;
+            this.f49795a = "";
+            this.f49796b = 0.0f;
         }
 
         void c(String str, float f10) {
-            this.f49798a = str;
-            this.f49799b = f10;
+            this.f49795a = str;
+            this.f49796b = f10;
         }
 
         /* synthetic */ d(a aVar) {

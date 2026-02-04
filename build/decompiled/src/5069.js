@@ -38,7 +38,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.code = var5;
     var _closure1_slot7 = var4;
     var1 = function arg0() {
-        _fun45483: for (var _fun45483_ip = 0;;) switch (_fun45483_ip) {
+        _fun45486: for (var _fun45486_ip = 0;;) switch (_fun45486_ip) {
             case 0:
                 var0 = arg0;
                 var16 = var0.animatedFooterPosition;
@@ -47,8 +47,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = undefined;
                 var18 = 0;
                 if (!(var4 !== var1)) {
-                    _fun45483_ip = 32;
-                    continue _fun45483
+                    _fun45486_ip = 32;
+                    continue _fun45486
                 }
             case 29:
                 var18 = var1;
@@ -76,7 +76,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var15 = var3.bind(var4)(var6);
                 var12 = var15.useAnimatedStyle;
                 var7 = function() {
-                    _fun45484: for (var _fun45484_ip = 0;;) switch (_fun45484_ip) {
+                    _fun45487: for (var _fun45487_ip = 0;;) switch (_fun45487_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var1 = var2.get;
@@ -94,8 +94,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = var2.SHOWN;
                             var5 = var1;
                             if (!(var3 !== var2)) {
-                                _fun45484_ip = 81;
-                                continue _fun45484
+                                _fun45487_ip = 81;
+                                continue _fun45487
                             }
                         case 73:
                             var0 = _closure2_slot1;
@@ -189,8 +189,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3.useBoundingClientRect;
                 var2 = var2.bind(var3)(var8, var10);
                 if (!(var0 !== var5)) {
-                    _fun45483_ip = 380;
-                    continue _fun45483
+                    _fun45486_ip = 380;
+                    continue _fun45486
                 }
             case 329:
                 var3 = _closure1_slot6;

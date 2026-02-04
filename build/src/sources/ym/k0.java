@@ -46,7 +46,7 @@ public abstract class k0 {
 
     public static final j0 d(View view) {
         Intrinsics.checkNotNullParameter(view, "<this>");
-        Object tag = view.getTag(q.f54665e);
+        Object tag = view.getTag(q.f54662e);
         if (tag instanceof j0) {
             return (j0) tag;
         }
@@ -56,6 +56,6 @@ public abstract class k0 {
     public static final void e(View view, j0 value) {
         Intrinsics.checkNotNullParameter(view, "<this>");
         Intrinsics.checkNotNullParameter(value, "value");
-        view.setTag(q.f54665e, value);
+        view.setTag(q.f54662e, value);
     }
 }

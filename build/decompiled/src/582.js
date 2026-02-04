@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun6946: for (var _fun6946_ip = 0;;) switch (_fun6946_ip) {
+    _fun6948: for (var _fun6948_ip = 0;;) switch (_fun6948_ip) {
         case 0:
             var4 = require;
             var5 = dependencyMap;
@@ -17,8 +17,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var4.bind(var0)(var2);
             var2 = undefined;
             if (!var6) {
-                _fun6946_ip = 73;
-                continue _fun6946
+                _fun6948_ip = 73;
+                continue _fun6948
             }
         case 58:
             var3 = var5[var3];
@@ -27,7 +27,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         case 73:
             var _closure1_slot2 = var2;
             var2 = function arg0() {
-                _fun6947: for (var _fun6947_ip = 0;;) switch (_fun6947_ip) {
+                _fun6949: for (var _fun6949_ip = 0;;) switch (_fun6949_ip) {
                     case 0:
                         var7 = arg0;
                         var3 = var7;
@@ -48,8 +48,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var7[var6] = var8;
                         var5 = true;
                     case 59: // try_end0
-                        _fun6947_ip = 63;
-                        continue _fun6947;
+                        _fun6949_ip = 63;
+                        continue _fun6949;
                     case 61: // catch_target0
                         CatchBlockStart(arg_register = 6);
                     case 63:
@@ -58,19 +58,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var6 = var3;
                         var0 = var7.bind(var8)(var6);
                         if (!var5) {
-                            _fun6947_ip = 100;
-                            continue _fun6947
+                            _fun6949_ip = 100;
+                            continue _fun6949
                         }
                     case 83:
                         var2 = _closure1_slot2;
                         if (var4) {
-                            _fun6947_ip = 96;
-                            continue _fun6947
+                            _fun6949_ip = 96;
+                            continue _fun6949
                         }
                     case 90:
                         var4 = delete var3[var2];
-                        _fun6947_ip = 100;
-                        continue _fun6947;
+                        _fun6949_ip = 100;
+                        continue _fun6949;
                     case 96:
                         var3[var2] = var1;
                     case 100:

@@ -7,22 +7,22 @@ import os.h0;
 public abstract class j {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final String f48182a = f0.e("kotlinx.coroutines.scheduler.default.name", "DefaultDispatcher");
+    public static final String f48179a = f0.e("kotlinx.coroutines.scheduler.default.name", "DefaultDispatcher");
 
     /* renamed from: b  reason: collision with root package name */
-    public static final long f48183b;
+    public static final long f48180b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final int f48184c;
+    public static final int f48181c;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final int f48185d;
+    public static final int f48182d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final long f48186e;
+    public static final long f48183e;
 
     /* renamed from: f  reason: collision with root package name */
-    public static g f48187f;
+    public static g f48184f;
 
     static {
         long f10;
@@ -30,15 +30,15 @@ public abstract class j {
         int e11;
         long f11;
         f10 = h0.f("kotlinx.coroutines.scheduler.resolution.ns", 100000L, 0L, 0L, 12, null);
-        f48183b = f10;
+        f48180b = f10;
         e10 = h0.e("kotlinx.coroutines.scheduler.core.pool.size", kotlin.ranges.d.d(f0.a(), 2), 1, 0, 8, null);
-        f48184c = e10;
+        f48181c = e10;
         e11 = h0.e("kotlinx.coroutines.scheduler.max.pool.size", 2097150, 0, 2097150, 4, null);
-        f48185d = e11;
+        f48182d = e11;
         TimeUnit timeUnit = TimeUnit.SECONDS;
         f11 = h0.f("kotlinx.coroutines.scheduler.keep.alive.sec", 60L, 0L, 0L, 12, null);
-        f48186e = timeUnit.toNanos(f11);
-        f48187f = e.f48173a;
+        f48183e = timeUnit.toNanos(f11);
+        f48184f = e.f48170a;
     }
 
     public static final h b(Runnable runnable, long j10, boolean z10) {

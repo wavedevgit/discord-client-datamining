@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/Checkbox.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun44618: for (var _fun44618_ip = 0;;) switch (_fun44618_ip) {
+        _fun44621: for (var _fun44621_ip = 0;;) switch (_fun44621_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.style;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = _closure1_slot0;
                 var5 = _closure1_slot1;
                 if (var1) {
-                    _fun44618_ip = 65;
-                    continue _fun44618
+                    _fun44621_ip = 65;
+                    continue _fun44621
                 }
             case 42:
                 var1 = 4;
@@ -59,8 +59,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var6.bind(var1)(var4);
                 var0.source = var1;
                 var1 = var0;
-                _fun44618_ip = 86;
-                continue _fun44618;
+                _fun44621_ip = 86;
+                continue _fun44621;
             case 65:
                 var4 = 3;
                 var5 = var5[var4];

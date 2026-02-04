@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
     var0 = function arg0, arg1, arg2, arg3, arg4() {
-        _fun9389: for (var _fun9389_ip = 0;;) switch (_fun9389_ip) {
+        _fun9391: for (var _fun9391_ip = 0;;) switch (_fun9391_ip) {
             case 0:
                 var0 = arg1;
                 var5 = arg2;
@@ -39,15 +39,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = null;
                 var2 = var2 != var5;
                 if (!var2) {
-                    _fun9389_ip = 72;
-                    continue _fun9389
+                    _fun9391_ip = 72;
+                    continue _fun9391
                 }
             case 66:
                 var2 = var5.sdk;
             case 72:
                 if (!var2) {
-                    _fun9389_ip = 115;
-                    continue _fun9389
+                    _fun9391_ip = 115;
+                    continue _fun9391
                 }
             case 75:
                 var2 = {};
@@ -60,15 +60,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3.sdk = var2;
             case 115:
                 if (!var1) {
-                    _fun9389_ip = 121;
-                    continue _fun9389
+                    _fun9391_ip = 121;
+                    continue _fun9391
                 }
             case 118:
                 var1 = var4;
             case 121:
                 if (!var1) {
-                    _fun9389_ip = 165;
-                    continue _fun9389
+                    _fun9391_ip = 165;
+                    continue _fun9391
                 }
             case 124:
                 var5 = _closure1_slot0;
@@ -82,8 +82,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3.dsn = var1;
             case 165:
                 if (!var0) {
-                    _fun9389_ip = 174;
-                    continue _fun9389
+                    _fun9391_ip = 174;
+                    continue _fun9391
                 }
             case 168:
                 var3.trace = var0;

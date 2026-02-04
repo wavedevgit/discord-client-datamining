@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/video_calls/native/useBottomVoiceControlsSheetWidth.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun63032: for (var _fun63032_ip = 0;;) switch (_fun63032_ip) {
+        _fun63049: for (var _fun63049_ip = 0;;) switch (_fun63049_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var0 = undefined;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.width;
                 var2 = _closure1_slot2;
                 if (!(var0 > var2)) {
-                    _fun63032_ip = 30;
-                    continue _fun63032
+                    _fun63049_ip = 30;
+                    continue _fun63049
                 }
             case 26:
                 var0 = _closure1_slot1;
@@ -51,4 +51,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 7883, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 7886, 2]);

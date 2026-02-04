@@ -23,7 +23,7 @@ public final class TextDisplayComponent extends Component {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8254id;
+    private final String f8253id;
     private final int type;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¨\u0006\u0007"}, d2 = {"Lcom/discord/chat/bridge/botuikit/TextDisplayComponent$Companion;", "", "<init>", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/chat/bridge/botuikit/TextDisplayComponent;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
@@ -49,7 +49,7 @@ public final class TextDisplayComponent extends Component {
             v1.b(i10, 7, TextDisplayComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f8254id = str;
+        this.f8253id = str;
         this.content = structurableText;
     }
 
@@ -58,7 +58,7 @@ public final class TextDisplayComponent extends Component {
             i10 = textDisplayComponent.type;
         }
         if ((i11 & 2) != 0) {
-            str = textDisplayComponent.f8254id;
+            str = textDisplayComponent.f8253id;
         }
         if ((i11 & 4) != 0) {
             structurableText = textDisplayComponent.content;
@@ -78,7 +78,7 @@ public final class TextDisplayComponent extends Component {
 
     @NotNull
     public final String component2() {
-        return this.f8254id;
+        return this.f8253id;
     }
 
     @NotNull
@@ -99,7 +99,7 @@ public final class TextDisplayComponent extends Component {
         }
         if (obj instanceof TextDisplayComponent) {
             TextDisplayComponent textDisplayComponent = (TextDisplayComponent) obj;
-            return this.type == textDisplayComponent.type && Intrinsics.areEqual(this.f8254id, textDisplayComponent.f8254id) && Intrinsics.areEqual(this.content, textDisplayComponent.content);
+            return this.type == textDisplayComponent.type && Intrinsics.areEqual(this.f8253id, textDisplayComponent.f8253id) && Intrinsics.areEqual(this.content, textDisplayComponent.content);
         }
         return false;
     }
@@ -112,7 +112,7 @@ public final class TextDisplayComponent extends Component {
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f8254id;
+        return this.f8253id;
     }
 
     @Override // com.discord.chat.bridge.botuikit.Component
@@ -121,13 +121,13 @@ public final class TextDisplayComponent extends Component {
     }
 
     public int hashCode() {
-        return (((Integer.hashCode(this.type) * 31) + this.f8254id.hashCode()) * 31) + this.content.hashCode();
+        return (((Integer.hashCode(this.type) * 31) + this.f8253id.hashCode()) * 31) + this.content.hashCode();
     }
 
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f8254id;
+        String str = this.f8253id;
         StructurableText structurableText = this.content;
         return "TextDisplayComponent(type=" + i10 + ", id=" + str + ", content=" + structurableText + ")";
     }
@@ -138,7 +138,7 @@ public final class TextDisplayComponent extends Component {
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(content, "content");
         this.type = i10;
-        this.f8254id = id2;
+        this.f8253id = id2;
         this.content = content;
     }
 }

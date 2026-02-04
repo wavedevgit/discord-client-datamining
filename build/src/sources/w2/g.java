@@ -9,7 +9,7 @@ import kotlinx.coroutines.CoroutineScope;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g f51862a = new g();
+    public static final g f51859a = new g();
 
     private g() {
     }
@@ -19,6 +19,6 @@ public final class g {
         Intrinsics.checkNotNullParameter(migrations, "migrations");
         Intrinsics.checkNotNullParameter(scope, "scope");
         Intrinsics.checkNotNullParameter(produceFile, "produceFile");
-        return new m(produceFile, serializer, CollectionsKt.e(e.f51845a.b(migrations)), new x2.a(), scope);
+        return new m(produceFile, serializer, CollectionsKt.e(e.f51842a.b(migrations)), new x2.a(), scope);
     }
 }

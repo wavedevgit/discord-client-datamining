@@ -9,8 +9,8 @@ sdkInfo:
 packageInfo:
   forcedPackageId: 127
 versionInfo:
-  versionCode: 316202
-  versionName: 316.2 - Alpha
+  versionCode: 316203
+  versionName: 316.3 - Alpha
 doNotCompress:
 - arsc
 - jpg

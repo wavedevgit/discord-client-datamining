@@ -229,7 +229,7 @@ public final class h0 implements tc.k {
                 this.f20279p = false;
                 a(0L, 0L);
                 if (lVar.getPosition() != 0) {
-                    yVar.f50001a = 0L;
+                    yVar.f49998a = 0L;
                     return 1;
                 }
             }
@@ -381,7 +381,7 @@ public final class h0 implements tc.k {
         this.f20270g = new SparseArray();
         this.f20268e = new SparseIntArray();
         this.f20273j = new f0(i11);
-        this.f20275l = tc.m.f49972l;
+        this.f20275l = tc.m.f49969l;
         this.f20282s = -1;
         x();
     }

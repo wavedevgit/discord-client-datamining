@@ -539,14 +539,14 @@ public final class a extends e {
             zd.b g10 = ((C0006a) this.f521l.get(i11)).g(Integer.MIN_VALUE);
             arrayList.add(g10);
             if (g10 != null) {
-                i10 = Math.min(i10, g10.f55881t);
+                i10 = Math.min(i10, g10.f55878t);
             }
         }
         ArrayList arrayList2 = new ArrayList(size);
         for (int i12 = 0; i12 < size; i12++) {
             zd.b bVar = (zd.b) arrayList.get(i12);
             if (bVar != null) {
-                if (bVar.f55881t != i10) {
+                if (bVar.f55878t != i10) {
                     bVar = (zd.b) ne.a.e(((C0006a) this.f521l.get(i12)).g(i10));
                 }
                 arrayList2.add(bVar);

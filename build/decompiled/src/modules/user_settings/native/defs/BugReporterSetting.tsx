@@ -60,15 +60,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var10.BugIcon;
     var3.IconComponent = var10;
     var9 = function() {
-        _fun88007: for (var _fun88007_ip = 0;;) switch (_fun88007_ip) {
+        _fun88024: for (var _fun88024_ip = 0;;) switch (_fun88024_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var1 = var2.getField;
                 var0 = 'isReportOpen';
                 var0 = var1.bind(var2)(var0);
                 if (var0) {
-                    _fun88007_ip = 116;
-                    continue _fun88007
+                    _fun88024_ip = 116;
+                    continue _fun88024
                 }
             case 25:
                 var2 = _closure1_slot3;
@@ -111,4 +111,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.useBugReporterExperimentSettingPredicate = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8751, 4561, 8823, 1307, 9762, 8996, 1234, 11378, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8754, 4561, 8826, 1307, 9765, 8999, 1234, 11381, 2]);

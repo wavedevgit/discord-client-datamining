@@ -1325,7 +1325,7 @@ public final class v4 extends wm.k {
         Intrinsics.checkNotNullParameter(componentParams, "componentParams");
         g3.a aVar2 = (g3.a) g3Var;
         v4Var.Q0(uiComponent, z10, aVar2);
-        if (bVar.l().b() != tp.a.f50204i && !aVar2.g()) {
+        if (bVar.l().b() != tp.a.f50201i && !aVar2.g()) {
             wm.h c10 = aVar.c();
             d11 = wm.z.d(v4Var, null, new Function1() { // from class: kq.m3
                 @Override // kotlin.jvm.functions.Function1
@@ -2103,13 +2103,13 @@ public final class v4 extends wm.k {
             if (aVar.i() != null) {
                 L0(renderProps, aVar, context, aVar.i());
             }
-            if (renderProps.l().c() == tp.e.f50214d) {
+            if (renderProps.l().c() == tp.e.f50211d) {
                 d0Var = cp.d0.f19646i;
             } else {
                 d0Var = cp.d0.f19647o;
             }
             cp.d0 d0Var2 = d0Var;
-            if (renderProps.l().b() == tp.a.f50203e) {
+            if (renderProps.l().b() == tp.a.f50200e) {
                 z11 = true;
             } else {
                 z11 = false;

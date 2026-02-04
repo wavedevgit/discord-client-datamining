@@ -26,9 +26,9 @@ public final class h0 implements h2 {
         @Override // x.i1
         public i1.c e(i1.b bVar) {
             if (bVar.a() == 1) {
-                return i1.c.f52845d;
+                return i1.c.f52842d;
             }
-            return i1.c.f52846e;
+            return i1.c.f52843e;
         }
     }
 
@@ -59,12 +59,12 @@ public final class h0 implements h2 {
                 if (b10 instanceof n0.b) {
                     x.y0.c("CameraX", "The device might underreport the amount of the cameras. Finish the initialize task since we are already reaching the maximum number of retries.");
                     if (((n0.b) b10).a() > 0) {
-                        return i1.c.f52848g;
+                        return i1.c.f52845g;
                     }
                 }
-                return i1.c.f52845d;
+                return i1.c.f52842d;
             }
-            return i1.c.f52846e;
+            return i1.c.f52843e;
         }
     }
 

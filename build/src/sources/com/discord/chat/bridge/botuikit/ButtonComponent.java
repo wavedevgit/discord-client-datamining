@@ -26,7 +26,7 @@ public final class ButtonComponent extends BaseActionComponent {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8237id;
+    private final String f8236id;
     private final String label;
     private final String skuId;
     @NotNull
@@ -59,7 +59,7 @@ public final class ButtonComponent extends BaseActionComponent {
             v1.b(i10, 39, ButtonComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f8237id = str;
+        this.f8236id = str;
         this.state = actionComponentState;
         if ((i10 & 8) == 0) {
             this.customId = null;
@@ -99,7 +99,7 @@ public final class ButtonComponent extends BaseActionComponent {
             i10 = buttonComponent.type;
         }
         if ((i11 & 2) != 0) {
-            str = buttonComponent.f8237id;
+            str = buttonComponent.f8236id;
         }
         if ((i11 & 4) != 0) {
             actionComponentState = buttonComponent.state;
@@ -169,7 +169,7 @@ public final class ButtonComponent extends BaseActionComponent {
 
     @NotNull
     public final String component2() {
-        return this.f8237id;
+        return this.f8236id;
     }
 
     @NotNull
@@ -216,7 +216,7 @@ public final class ButtonComponent extends BaseActionComponent {
         }
         if (obj instanceof ButtonComponent) {
             ButtonComponent buttonComponent = (ButtonComponent) obj;
-            return this.type == buttonComponent.type && Intrinsics.areEqual(this.f8237id, buttonComponent.f8237id) && this.state == buttonComponent.state && Intrinsics.areEqual(this.customId, buttonComponent.customId) && Intrinsics.areEqual(this.label, buttonComponent.label) && this.style == buttonComponent.style && this.disabled == buttonComponent.disabled && Intrinsics.areEqual(this.emoji, buttonComponent.emoji) && Intrinsics.areEqual(this.url, buttonComponent.url) && Intrinsics.areEqual(this.skuId, buttonComponent.skuId);
+            return this.type == buttonComponent.type && Intrinsics.areEqual(this.f8236id, buttonComponent.f8236id) && this.state == buttonComponent.state && Intrinsics.areEqual(this.customId, buttonComponent.customId) && Intrinsics.areEqual(this.label, buttonComponent.label) && this.style == buttonComponent.style && this.disabled == buttonComponent.disabled && Intrinsics.areEqual(this.emoji, buttonComponent.emoji) && Intrinsics.areEqual(this.url, buttonComponent.url) && Intrinsics.areEqual(this.skuId, buttonComponent.skuId);
         }
         return false;
     }
@@ -237,7 +237,7 @@ public final class ButtonComponent extends BaseActionComponent {
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f8237id;
+        return this.f8236id;
     }
 
     public final String getLabel() {
@@ -269,7 +269,7 @@ public final class ButtonComponent extends BaseActionComponent {
     }
 
     public int hashCode() {
-        int hashCode = ((((Integer.hashCode(this.type) * 31) + this.f8237id.hashCode()) * 31) + this.state.hashCode()) * 31;
+        int hashCode = ((((Integer.hashCode(this.type) * 31) + this.f8236id.hashCode()) * 31) + this.state.hashCode()) * 31;
         String str = this.customId;
         int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
         String str2 = this.label;
@@ -285,7 +285,7 @@ public final class ButtonComponent extends BaseActionComponent {
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f8237id;
+        String str = this.f8236id;
         ActionComponentState actionComponentState = this.state;
         String str2 = this.customId;
         String str3 = this.label;
@@ -308,7 +308,7 @@ public final class ButtonComponent extends BaseActionComponent {
         Intrinsics.checkNotNullParameter(state, "state");
         Intrinsics.checkNotNullParameter(style, "style");
         this.type = i10;
-        this.f8237id = id2;
+        this.f8236id = id2;
         this.state = state;
         this.customId = str;
         this.label = str2;

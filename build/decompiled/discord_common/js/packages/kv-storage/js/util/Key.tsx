@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = '../discord_common/js/packages/kv-storage/js/util/Key.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0, arg1() {
-        _fun18588: for (var _fun18588_ip = 0;;) switch (_fun18588_ip) {
+        _fun18590: for (var _fun18590_ip = 0;;) switch (_fun18590_ip) {
             case 0:
                 var5 = arg0;
                 var4 = arg1;
@@ -31,8 +31,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.isArray;
                 var0 = var0.bind(var2)(var4);
                 if (var0) {
-                    _fun18588_ip = 57;
-                    continue _fun18588
+                    _fun18590_ip = 57;
+                    continue _fun18590
                 }
             case 27:
                 var0 = new Array(1);
@@ -43,8 +43,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0[var3] = var4;
                 var2 = 1;
                 var2 = var3 + var2;
-                _fun18588_ip = 86;
-                continue _fun18588;
+                _fun18590_ip = 86;
+                continue _fun18590;
             case 57:
                 var2 = new Array(0);
                 var7 = 0;
@@ -59,8 +59,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0.length;
                 var2 = 1;
                 if (!(var3 >= var2)) {
-                    _fun18588_ip = 137;
-                    continue _fun18588
+                    _fun18590_ip = 137;
+                    continue _fun18590
                 }
             case 98:
                 var3 = var0.length;
@@ -72,8 +72,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5.bind(var2)(var4);
                 var2 = var2.MAXIMUM_KEY_BITS;
                 if (!(!(var3 <= var2))) {
-                    _fun18588_ip = 217;
-                    continue _fun18588
+                    _fun18590_ip = 217;
+                    continue _fun18590
                 }
             case 137:
                 var3 = var1.Error;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.combineKey = var3;
     var1 = function arg0, arg1() {
-        _fun18589: for (var _fun18589_ip = 0;;) switch (_fun18589_ip) {
+        _fun18591: for (var _fun18591_ip = 0;;) switch (_fun18591_ip) {
             case 0:
                 var5 = arg0;
                 var4 = arg1;
@@ -111,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.isArray;
                 var0 = var0.bind(var2)(var4);
                 if (var0) {
-                    _fun18589_ip = 57;
-                    continue _fun18589
+                    _fun18591_ip = 57;
+                    continue _fun18591
                 }
             case 27:
                 var0 = new Array(1);
@@ -123,8 +123,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0[var3] = var4;
                 var2 = 1;
                 var2 = var3 + var2;
-                _fun18589_ip = 86;
-                continue _fun18589;
+                _fun18591_ip = 86;
+                continue _fun18591;
             case 57:
                 var2 = new Array(0);
                 var7 = 0;
@@ -145,8 +145,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5.bind(var2)(var4);
                 var2 = var2.MAXIMUM_KEY_BITS;
                 if (!(!(var3 <= var2))) {
-                    _fun18589_ip = 205;
-                    continue _fun18589
+                    _fun18591_ip = 205;
+                    continue _fun18591
                 }
             case 125:
                 var3 = var1.Error;

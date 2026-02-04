@@ -95,4 +95,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.onImageDescriptionSettingValueChange = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3197, 7005, 1348, 10998, 8996, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3197, 7008, 1348, 11001, 8999, 1234, 2]);

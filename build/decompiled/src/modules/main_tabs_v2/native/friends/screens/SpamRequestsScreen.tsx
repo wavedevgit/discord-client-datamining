@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/friends/screens/SpamRequestsScreen.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun108713: for (var _fun108713_ip = 0;;) switch (_fun108713_ip) {
+        _fun108726: for (var _fun108726_ip = 0;;) switch (_fun108726_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.navigation;
@@ -202,8 +202,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var4.length;
                 var1 = 0;
                 if (!(var1 === var7)) {
-                    _fun108713_ip = 329;
-                    continue _fun108713
+                    _fun108726_ip = 329;
+                    continue _fun108726
                 }
             case 317:
                 var1 = var2.goBack;
@@ -230,4 +230,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3100, 1621, 8895, 660, 33, 5726, 5579, 566, 14020, 5214, 481, 7350, 9096, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3100, 1621, 8898, 660, 33, 5726, 5579, 566, 14021, 5214, 481, 7353, 9099, 2]);

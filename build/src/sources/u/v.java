@@ -6,13 +6,13 @@ import androidx.camera.camera2.internal.compat.quirk.Preview3AThreadCrashQuirk;
 public class v {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f50331a;
+    private final boolean f50328a;
 
     public v(d2 d2Var) {
-        this.f50331a = d2Var.a(Preview3AThreadCrashQuirk.class);
+        this.f50328a = d2Var.a(Preview3AThreadCrashQuirk.class);
     }
 
     public boolean a() {
-        return this.f50331a;
+        return this.f50328a;
     }
 }

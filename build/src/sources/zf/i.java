@@ -3,7 +3,7 @@ package zf;
 public abstract class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private static volatile h f55943a = new g();
+    private static volatile h f55940a = new g();
 
     public static void a() {
     }

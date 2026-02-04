@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/custom_status/experiments/CustomStatusPushExperiment.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun85704: for (var _fun85704_ip = 0;;) switch (_fun85704_ip) {
+        _fun85721: for (var _fun85721_ip = 0;;) switch (_fun85721_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = var3.useConfig;
@@ -82,8 +82,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var3)(var1);
                 var1 = var1.enabled;
                 if (var0) {
-                    _fun85704_ip = 65;
-                    continue _fun85704
+                    _fun85721_ip = 65;
+                    continue _fun85721
                 }
             case 62:
                 var0 = var1;

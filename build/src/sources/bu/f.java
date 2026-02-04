@@ -233,7 +233,7 @@ public final class f extends f.c implements wt.e {
 
     private final boolean G(HttpUrl httpUrl) {
         okhttp3.g gVar;
-        if (xt.e.f53574h && !Thread.holdsLock(this)) {
+        if (xt.e.f53571h && !Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + this);
         }
         HttpUrl l10 = this.f6825d.a().l();
@@ -337,7 +337,7 @@ public final class f extends f.c implements wt.e {
                     Object obj = d10.get(0);
                     Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type java.security.cert.X509Certificate");
                     X509Certificate x509Certificate = (X509Certificate) obj;
-                    throw new SSLPeerUnverifiedException(StringsKt.l("\n              |Hostname " + a10.l().i() + " not verified:\n              |    certificate: " + wt.c.f52749c.a(x509Certificate) + "\n              |    DN: " + x509Certificate.getSubjectDN().getName() + "\n              |    subjectAltNames: " + ju.d.f32009a.a(x509Certificate) + "\n              ", null, 1, null));
+                    throw new SSLPeerUnverifiedException(StringsKt.l("\n              |Hostname " + a10.l().i() + " not verified:\n              |    certificate: " + wt.c.f52746c.a(x509Certificate) + "\n              |    DN: " + x509Certificate.getSubjectDN().getName() + "\n              |    subjectAltNames: " + ju.d.f32009a.a(x509Certificate) + "\n              ", null, 1, null));
                 }
                 throw new SSLPeerUnverifiedException("Hostname " + a10.l().i() + " not verified (no certificates)");
             }
@@ -352,7 +352,7 @@ public final class f extends f.c implements wt.e {
             this.f6831j = x.d(x.l(sSLSocket));
             this.f6832k = x.c(x.h(sSLSocket));
             if (str != null) {
-                jVar = wt.j.f52765e.a(str);
+                jVar = wt.j.f52762e.a(str);
             } else {
                 jVar = wt.j.HTTP_1_1;
             }
@@ -434,7 +434,7 @@ public final class f extends f.c implements wt.e {
 
     private final Request l() {
         Request b10 = new Request.Builder().m(this.f6825d.a().l()).g("CONNECT", null).e("Host", xt.e.T(this.f6825d.a().l(), true)).e("Proxy-Connection", "Keep-Alive").e("User-Agent", "okhttp/4.12.0").b();
-        Request a10 = this.f6825d.a().h().a(this.f6825d, new Response.a().r(b10).p(wt.j.HTTP_1_1).g(407).m("Preemptive Authenticate").b(xt.e.f53569c).s(-1L).q(-1L).j("Proxy-Authenticate", "OkHttp-Preemptive").c());
+        Request a10 = this.f6825d.a().h().a(this.f6825d, new Response.a().r(b10).p(wt.j.HTTP_1_1).g(407).m("Preemptive Authenticate").b(xt.e.f53566c).s(-1L).q(-1L).j("Proxy-Authenticate", "OkHttp-Preemptive").c());
         if (a10 == null) {
             return b10;
         }
@@ -583,7 +583,7 @@ public final class f extends f.c implements wt.e {
 
     public final boolean t(okhttp3.a address, List list) {
         Intrinsics.checkNotNullParameter(address, "address");
-        if (xt.e.f53574h && !Thread.holdsLock(this)) {
+        if (xt.e.f53571h && !Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + this);
         } else if (this.f6839r.size() >= this.f6838q || this.f6833l || !this.f6825d.a().d(address)) {
             return false;
@@ -633,7 +633,7 @@ public final class f extends f.c implements wt.e {
 
     public final boolean u(boolean z10) {
         long j10;
-        if (xt.e.f53574h && Thread.holdsLock(this)) {
+        if (xt.e.f53571h && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         long nanoTime = System.nanoTime();

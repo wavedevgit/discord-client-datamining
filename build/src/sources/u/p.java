@@ -10,14 +10,14 @@ import p.a;
 public abstract class p {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final Rational f50321a = new Rational(16, 9);
+    public static final Rational f50318a = new Rational(16, 9);
 
     private static boolean a(Size size, Rational rational) {
         return rational.equals(new Rational(size.getWidth(), size.getHeight()));
     }
 
     public static void b(Size size, i2.b bVar) {
-        if (((PreviewPixelHDRnetQuirk) androidx.camera.camera2.internal.compat.quirk.b.b(PreviewPixelHDRnetQuirk.class)) == null || a(size, f50321a)) {
+        if (((PreviewPixelHDRnetQuirk) androidx.camera.camera2.internal.compat.quirk.b.b(PreviewPixelHDRnetQuirk.class)) == null || a(size, f50318a)) {
             return;
         }
         a.C0555a c0555a = new a.C0555a();

@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/ThreadStarterSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun55878: for (var _fun55878_ip = 0;;) switch (_fun55878_ip) {
+        _fun55881: for (var _fun55881_ip = 0;;) switch (_fun55881_ip) {
             case 0:
                 var4 = arg0;
                 var0 = var4.message;
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.LOADED;
                 var0 = null;
                 if (!(var5 !== var1)) {
-                    _fun55878_ip = 218;
-                    continue _fun55878
+                    _fun55881_ip = 218;
+                    continue _fun55881
                 }
             case 124:
                 var1 = {};

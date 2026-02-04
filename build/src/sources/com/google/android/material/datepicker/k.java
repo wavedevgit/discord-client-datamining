@@ -135,8 +135,8 @@ public final class k<S> extends DialogFragment {
 
     private static Drawable A(Context context) {
         StateListDrawable stateListDrawable = new StateListDrawable();
-        stateListDrawable.addState(new int[]{16842912}, g.a.b(context, yg.e.f54161c));
-        stateListDrawable.addState(new int[0], g.a.b(context, yg.e.f54162d));
+        stateListDrawable.addState(new int[]{16842912}, g.a.b(context, yg.e.f54158c));
+        stateListDrawable.addState(new int[0], g.a.b(context, yg.e.f54159d));
         return stateListDrawable;
     }
 
@@ -144,7 +144,7 @@ public final class k<S> extends DialogFragment {
         if (this.K) {
             return;
         }
-        View findViewById = requireView().findViewById(yg.f.f54178i);
+        View findViewById = requireView().findViewById(yg.f.f54175i);
         com.google.android.material.internal.c.a(window, true, com.google.android.material.internal.o.e(findViewById), null);
         h0.D0(findViewById, new a(findViewById.getLayoutParams().height, findViewById, findViewById.getPaddingTop()));
         this.K = true;
@@ -227,7 +227,7 @@ public final class k<S> extends DialogFragment {
     }
 
     static boolean M(Context context, int i10) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(lh.b.d(context, yg.b.f54114z, i.class.getCanonicalName()), new int[]{i10});
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(lh.b.d(context, yg.b.f54111z, i.class.getCanonicalName()), new int[]{i10});
         boolean z10 = obtainStyledAttributes.getBoolean(0, false);
         obtainStyledAttributes.recycle();
         return z10;
@@ -247,7 +247,7 @@ public final class k<S> extends DialogFragment {
         P();
         O(F());
         FragmentTransaction r10 = getChildFragmentManager().r();
-        r10.n(yg.f.f54195z, this.f14552q);
+        r10.n(yg.f.f54192z, this.f14552q);
         r10.i();
         this.f14552q.x(new b());
     }
@@ -266,9 +266,9 @@ public final class k<S> extends DialogFragment {
     private void Q(CheckableImageButton checkableImageButton) {
         String string;
         if (this.f14558w == 1) {
-            string = checkableImageButton.getContext().getString(yg.i.f54241r);
+            string = checkableImageButton.getContext().getString(yg.i.f54238r);
         } else {
-            string = checkableImageButton.getContext().getString(yg.i.f54243t);
+            string = checkableImageButton.getContext().getString(yg.i.f54240t);
         }
         this.H.setContentDescription(string);
     }
@@ -332,9 +332,9 @@ public final class k<S> extends DialogFragment {
         Dialog dialog = new Dialog(requireContext(), H(requireContext()));
         Context context = dialog.getContext();
         this.f14557v = J(context);
-        this.I = new oh.g(context, null, yg.b.f54114z, yg.j.f54268v);
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(null, yg.k.f54415o3, yg.b.f54114z, yg.j.f54268v);
-        int color = obtainStyledAttributes.getColor(yg.k.f54424p3, 0);
+        this.I = new oh.g(context, null, yg.b.f54111z, yg.j.f54265v);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(null, yg.k.f54412o3, yg.b.f54111z, yg.j.f54265v);
+        int color = obtainStyledAttributes.getColor(yg.k.f54421p3, 0);
         obtainStyledAttributes.recycle();
         this.I.N(context);
         this.I.X(ColorStateList.valueOf(color));
@@ -346,14 +346,14 @@ public final class k<S> extends DialogFragment {
     public final View onCreateView(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
         int i10;
         if (this.f14557v) {
-            i10 = yg.h.f54223w;
+            i10 = yg.h.f54220w;
         } else {
-            i10 = yg.h.f54222v;
+            i10 = yg.h.f54219v;
         }
         View inflate = layoutInflater.inflate(i10, viewGroup);
         Context context = inflate.getContext();
         if (this.f14557v) {
-            inflate.findViewById(yg.f.f54195z).setLayoutParams(new LinearLayout.LayoutParams(G(context), -2));
+            inflate.findViewById(yg.f.f54192z).setLayoutParams(new LinearLayout.LayoutParams(G(context), -2));
         } else {
             inflate.findViewById(yg.f.A).setLayoutParams(new LinearLayout.LayoutParams(G(context), -1));
         }
@@ -363,7 +363,7 @@ public final class k<S> extends DialogFragment {
         this.H = (CheckableImageButton) inflate.findViewById(yg.f.H);
         this.F = (TextView) inflate.findViewById(yg.f.I);
         I(context);
-        this.J = (Button) inflate.findViewById(yg.f.f54173d);
+        this.J = (Button) inflate.findViewById(yg.f.f54170d);
         C();
         throw null;
     }

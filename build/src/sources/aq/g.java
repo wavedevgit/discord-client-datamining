@@ -18,7 +18,7 @@ public abstract class g {
             return null;
         }
         final ShapeableImageView shapeableImageView = new ShapeableImageView(a10);
-        shapeableImageView.setImageResource(yp.d.f55162b);
+        shapeableImageView.setImageResource(yp.d.f55159b);
         shapeableImageView.setAdjustViewBounds(true);
         int dimension = (int) a10.getResources().getDimension(mp.k.f38967b);
         shapeableImageView.setPadding(dimension, shapeableImageView.getPaddingTop(), dimension, shapeableImageView.getPaddingBottom());

@@ -17,13 +17,13 @@ import qn.a;
 public final class j implements e {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f48000c = new a(null);
+    public static final a f47997c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final byte[] f48001a = new byte[PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS];
+    private final byte[] f47998a = new byte[PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS];
 
     /* renamed from: b  reason: collision with root package name */
-    private final Size f48002b = new Size(0, 0);
+    private final Size f47999b = new Size(0, 0);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -50,9 +50,9 @@ public final class j implements e {
         long j10 = 0;
         for (int i13 = rect.top; i13 < i12; i13++) {
             byteBuffer.position((i13 * i10) + rect.left);
-            byteBuffer.get(this.f48001a, 0, width2);
+            byteBuffer.get(this.f47998a, 0, width2);
             for (int i14 = 0; i14 < width2; i14++) {
-                int i15 = this.f48001a[i14] & 255;
+                int i15 = this.f47998a[i14] & 255;
                 j10 += i15;
                 jArr[i15] = jArr[i15] + 1;
             }
@@ -120,9 +120,9 @@ public final class j implements e {
         long j10 = 0;
         for (int i13 = rect.top; i13 < i12; i13++) {
             byteBuffer.position((i13 * i10) + rect.left);
-            byteBuffer.get(this.f48001a, 0, width2);
+            byteBuffer.get(this.f47998a, 0, width2);
             for (int i14 = 0; i14 < width2; i14++) {
-                int i15 = (this.f48001a[i14] & 255) - i11;
+                int i15 = (this.f47998a[i14] & 255) - i11;
                 j10 += i15 * i15;
             }
         }
@@ -144,12 +144,12 @@ public final class j implements e {
             i0 b10 = b(buffer, width, height, rect);
             if (b10 == null) {
                 Result.a aVar = Result.f32461e;
-                return Result.b(a.b.f47978a);
+                return Result.b(a.b.f47975a);
             }
             Result.a aVar2 = Result.f32461e;
             return Result.b(new a.e(b10));
         }
         Result.a aVar3 = Result.f32461e;
-        return Result.b(a.b.f47978a);
+        return Result.b(a.b.f47975a);
     }
 }

@@ -15,43 +15,43 @@ import mg.zh;
 final class p implements l {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f50683a;
+    private boolean f50680a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Context f50684b;
+    private final Context f50681b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final mg.i f50685c;
+    private final mg.i f50682c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final nk f50686d;
+    private final nk f50683d;
 
     /* renamed from: e  reason: collision with root package name */
-    private mg.k f50687e;
+    private mg.k f50684e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p(Context context, rj.b bVar, nk nkVar) {
         mg.i iVar = new mg.i();
-        this.f50685c = iVar;
-        this.f50684b = context;
+        this.f50682c = iVar;
+        this.f50681b = context;
         iVar.f38048d = bVar.a();
-        this.f50686d = nkVar;
+        this.f50683d = nkVar;
     }
 
     @Override // uj.l
     public final boolean a() {
-        if (this.f50687e == null) {
+        if (this.f50684e == null) {
             try {
-                mg.k d02 = mg.m.e(DynamiteModule.d(this.f50684b, DynamiteModule.f13467b, "com.google.android.gms.vision.dynamite").c("com.google.android.gms.vision.barcode.ChimeraNativeBarcodeDetectorCreator")).d0(sf.b.S0(this.f50684b), this.f50685c);
-                this.f50687e = d02;
-                if (d02 == null && !this.f50683a) {
+                mg.k d02 = mg.m.e(DynamiteModule.d(this.f50681b, DynamiteModule.f13467b, "com.google.android.gms.vision.dynamite").c("com.google.android.gms.vision.barcode.ChimeraNativeBarcodeDetectorCreator")).d0(sf.b.S0(this.f50681b), this.f50682c);
+                this.f50684e = d02;
+                if (d02 == null && !this.f50680a) {
                     Log.d("LegacyBarcodeScanner", "Request optional module download.");
-                    pj.l.c(this.f50684b, "barcode");
-                    this.f50683a = true;
-                    b.e(this.f50686d, xe.OPTIONAL_MODULE_NOT_AVAILABLE);
+                    pj.l.c(this.f50681b, "barcode");
+                    this.f50680a = true;
+                    b.e(this.f50683d, xe.OPTIONAL_MODULE_NOT_AVAILABLE);
                     throw new lj.a("Waiting for the barcode module to be downloaded. Please wait.", 14);
                 }
-                b.e(this.f50686d, xe.NO_ERROR);
+                b.e(this.f50683d, xe.NO_ERROR);
                 return false;
             } catch (RemoteException e10) {
                 throw new lj.a("Failed to create legacy barcode detector.", 13, e10);
@@ -65,10 +65,10 @@ final class p implements l {
     @Override // uj.l
     public final List c(vj.a aVar) {
         zh[] U0;
-        if (this.f50687e == null) {
+        if (this.f50684e == null) {
             a();
         }
-        mg.k kVar = this.f50687e;
+        mg.k kVar = this.f50684e;
         if (kVar != null) {
             mg.k kVar2 = (mg.k) q.l(kVar);
             mg.o oVar = new mg.o(aVar.l(), aVar.h(), 0, 0L, wj.b.a(aVar.k()));
@@ -107,14 +107,14 @@ final class p implements l {
 
     @Override // uj.l
     public final void zzb() {
-        mg.k kVar = this.f50687e;
+        mg.k kVar = this.f50684e;
         if (kVar != null) {
             try {
                 kVar.S0();
             } catch (RemoteException e10) {
                 Log.e("LegacyBarcodeScanner", "Failed to release legacy barcode detector.", e10);
             }
-            this.f50687e = null;
+            this.f50684e = null;
         }
     }
 }

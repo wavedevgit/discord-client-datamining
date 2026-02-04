@@ -190,7 +190,7 @@ public class AndroidResourceLoader extends kt.d {
         static {
             st.c cVar = new st.c();
             f40285a = cVar;
-            f40286b = Collections.singleton(st.f.f49649d);
+            f40286b = Collections.singleton(st.f.f49646d);
             f40287c = Collections.singletonList(new st.i());
             f40288d = Collections.unmodifiableList(Arrays.asList(cVar, new net.time4j.calendar.service.b()));
         }

@@ -18,7 +18,7 @@ public final class UnknownComponent extends Component {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8256id;
+    private final String f8255id;
     private final int type;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¨\u0006\u0007"}, d2 = {"Lcom/discord/chat/bridge/botuikit/UnknownComponent$Companion;", "", "<init>", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/chat/bridge/botuikit/UnknownComponent;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
@@ -46,7 +46,7 @@ public final class UnknownComponent extends Component {
             i10 = unknownComponent.type;
         }
         if ((i11 & 2) != 0) {
-            str = unknownComponent.f8256id;
+            str = unknownComponent.f8255id;
         }
         return unknownComponent.copy(i10, str);
     }
@@ -66,7 +66,7 @@ public final class UnknownComponent extends Component {
 
     @NotNull
     public final String component2() {
-        return this.f8256id;
+        return this.f8255id;
     }
 
     @NotNull
@@ -81,7 +81,7 @@ public final class UnknownComponent extends Component {
         }
         if (obj instanceof UnknownComponent) {
             UnknownComponent unknownComponent = (UnknownComponent) obj;
-            return this.type == unknownComponent.type && Intrinsics.areEqual(this.f8256id, unknownComponent.f8256id);
+            return this.type == unknownComponent.type && Intrinsics.areEqual(this.f8255id, unknownComponent.f8255id);
         }
         return false;
     }
@@ -89,7 +89,7 @@ public final class UnknownComponent extends Component {
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f8256id;
+        return this.f8255id;
     }
 
     @Override // com.discord.chat.bridge.botuikit.Component
@@ -98,13 +98,13 @@ public final class UnknownComponent extends Component {
     }
 
     public int hashCode() {
-        return (Integer.hashCode(this.type) * 31) + this.f8256id.hashCode();
+        return (Integer.hashCode(this.type) * 31) + this.f8255id.hashCode();
     }
 
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f8256id;
+        String str = this.f8255id;
         return "UnknownComponent(type=" + i10 + ", id=" + str + ")";
     }
 
@@ -112,9 +112,9 @@ public final class UnknownComponent extends Component {
         super(null);
         this.type = (i10 & 1) == 0 ? 0 : i11;
         if ((i10 & 2) == 0) {
-            this.f8256id = "-1";
+            this.f8255id = "-1";
         } else {
-            this.f8256id = str;
+            this.f8255id = str;
         }
     }
 
@@ -127,6 +127,6 @@ public final class UnknownComponent extends Component {
         super(null);
         Intrinsics.checkNotNullParameter(id2, "id");
         this.type = i10;
-        this.f8256id = id2;
+        this.f8255id = id2;
     }
 }

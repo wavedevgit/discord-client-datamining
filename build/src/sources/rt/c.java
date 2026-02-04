@@ -6,28 +6,28 @@ import nt.d;
 public class c extends d {
 
     /* renamed from: p  reason: collision with root package name */
-    public static final p f49124p = new c("YEAR_OF_DISPLAY", 0, 1, 9999);
+    public static final p f49121p = new c("YEAR_OF_DISPLAY", 0, 1, 9999);
     private static final long serialVersionUID = 1;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient char f49125e;
+    private final transient char f49122e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient Integer f49126i;
+    private final transient Integer f49123i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient Integer f49127o;
+    private final transient Integer f49124o;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public c(String str, char c10, int i10, int i11) {
         super(str);
-        this.f49125e = c10;
-        this.f49126i = Integer.valueOf(i10);
-        this.f49127o = Integer.valueOf(i11);
+        this.f49122e = c10;
+        this.f49123i = Integer.valueOf(i10);
+        this.f49124o = Integer.valueOf(i11);
     }
 
     private Object readResolve() {
-        return f49124p;
+        return f49121p;
     }
 
     @Override // mt.p
@@ -43,18 +43,18 @@ public class c extends d {
     @Override // mt.p
     /* renamed from: F */
     public Integer f() {
-        return this.f49127o;
+        return this.f49124o;
     }
 
     @Override // mt.p
     /* renamed from: G */
     public Integer A() {
-        return this.f49126i;
+        return this.f49123i;
     }
 
     @Override // mt.e, mt.p
     public char d() {
-        return this.f49125e;
+        return this.f49122e;
     }
 
     @Override // mt.p

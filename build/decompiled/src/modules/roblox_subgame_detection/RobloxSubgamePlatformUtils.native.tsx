@@ -28,13 +28,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = undefined;
         var0 = function*() { // Environment: var0
             var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun32053: for (var _fun32053_ip = 0;;) switch (_fun32053_ip) {
+                _fun32055: for (var _fun32055_ip = 0;;) switch (_fun32055_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun32053_ip = 126;
-                            continue _fun32053
+                            _fun32055_ip = 126;
+                            continue _fun32055
                         }
                     case 7:
                         var3 = _closure1_slot0;
@@ -52,8 +52,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 53:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun32053_ip = 123;
-                            continue _fun32053
+                            _fun32055_ip = 123;
+                            continue _fun32055
                         }
                     case 59:
                         var3 = _closure1_slot0;
@@ -62,15 +62,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var5[var2];
                         var5 = var3.bind(var4)(var2);
                         if (var1) {
-                            _fun32053_ip = 102;
-                            continue _fun32053
+                            _fun32055_ip = 102;
+                            continue _fun32055
                         }
                     case 82:
                         var3 = var5.ROBLOX_DEFERRED_WEB_URL;
                         var2 = _closure2_slot0;
                         var2 = var3.bind(var5)(var2);
-                        _fun32053_ip = 120;
-                        continue _fun32053;
+                        _fun32055_ip = 120;
+                        continue _fun32055;
                     case 102:
                         var4 = var5.ROBLOX_PROTOCOL_URL;
                         var3 = _closure2_slot0;

@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/profile_customization/native/BioText.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun61261: for (var _fun61261_ip = 0;;) switch (_fun61261_ip) {
+        _fun61278: for (var _fun61278_ip = 0;;) switch (_fun61278_ip) {
             case 0:
                 var2 = arg0;
                 var7 = var2.placeholder;
@@ -159,8 +159,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var2.textVariant;
                 var4 = undefined;
                 if (!(var16 === var4)) {
-                    _fun61261_ip = 54;
-                    continue _fun61261
+                    _fun61278_ip = 54;
+                    continue _fun61278
                 }
             case 48:
                 var16 = 'text-md/normal';
@@ -193,8 +193,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 0;
                 var15 = var0 === var2;
                 if (!var15) {
-                    _fun61261_ip = 143;
-                    continue _fun61261
+                    _fun61278_ip = 143;
+                    continue _fun61278
                 }
             case 115:
                 var2 = _closure1_slot1;
@@ -212,20 +212,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var4)(var0);
                 var0 = var0.bind(var4)(var1);
                 if (var0) {
-                    _fun61261_ip = 272;
-                    continue _fun61261
+                    _fun61278_ip = 272;
+                    continue _fun61278
                 }
             case 171:
                 if (!var15) {
-                    _fun61261_ip = 183;
-                    continue _fun61261
+                    _fun61278_ip = 183;
+                    continue _fun61278
                 }
             case 174:
                 var0 = null;
                 var1 = var0 == var7;
                 if (var1) {
-                    _fun61261_ip = 267;
-                    continue _fun61261
+                    _fun61278_ip = 267;
+                    continue _fun61278
                 }
             case 183:
                 var3 = _closure1_slot8;
@@ -239,8 +239,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.variant = var16;
                 var8 = 'text-default';
                 if (!var15) {
-                    _fun61261_ip = 233;
-                    continue _fun61261
+                    _fun61278_ip = 233;
+                    continue _fun61278
                 }
             case 227:
                 var8 = 'text-muted';
@@ -250,8 +250,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var10.text;
                 var1.style = var8;
                 if (!var15) {
-                    _fun61261_ip = 257;
-                    continue _fun61261
+                    _fun61278_ip = 257;
+                    continue _fun61278
                 }
             case 254:
                 var5 = var7;
@@ -259,8 +259,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.children = var5;
                 var0 = var3.bind(var4)(var2, var1);
             case 267:
-                _fun61261_ip = 599;
-                continue _fun61261;
+                _fun61278_ip = 599;
+                continue _fun61278;
             case 272:
                 var3 = _closure1_slot7;
                 var2 = _closure1_slot9;
@@ -276,8 +276,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = 'text-default';
                 var5 = var12;
                 if (!var15) {
-                    _fun61261_ip = 331;
-                    continue _fun61261
+                    _fun61278_ip = 331;
+                    continue _fun61278
                 }
             case 325:
                 var5 = 'text-muted';
@@ -314,8 +314,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = {};
                 var7.variant = var16;
                 if (!var15) {
-                    _fun61261_ip = 480;
-                    continue _fun61261
+                    _fun61278_ip = 480;
+                    continue _fun61278
                 }
             case 474:
                 var12 = 'text-muted';

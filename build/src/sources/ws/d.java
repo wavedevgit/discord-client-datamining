@@ -7,20 +7,20 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f52706a = new ArrayList();
+    private final List f52703a = new ArrayList();
 
     public final void a(o format) {
         Intrinsics.checkNotNullParameter(format, "format");
         if (format instanceof s) {
-            this.f52706a.add(format);
+            this.f52703a.add(format);
         } else if (format instanceof h) {
             for (s sVar : ((h) format).c()) {
-                this.f52706a.add(sVar);
+                this.f52703a.add(sVar);
             }
         }
     }
 
     public final h b() {
-        return new h(this.f52706a);
+        return new h(this.f52703a);
     }
 }

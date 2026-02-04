@@ -7,31 +7,31 @@ import kotlin.enums.EnumEntries;
 public final class h0 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final h0 f50892d = new h0("NONE", 0);
+    public static final h0 f50889d = new h0("NONE", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final h0 f50893e = new h0("ZERO", 1);
+    public static final h0 f50890e = new h0("ZERO", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final h0 f50894i = new h0("SPACE", 2);
+    public static final h0 f50891i = new h0("SPACE", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ h0[] f50895o;
+    private static final /* synthetic */ h0[] f50892o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f50896p;
+    private static final /* synthetic */ EnumEntries f50893p;
 
     static {
         h0[] a10 = a();
-        f50895o = a10;
-        f50896p = sr.a.a(a10);
+        f50892o = a10;
+        f50893p = sr.a.a(a10);
     }
 
     private h0(String str, int i10) {
     }
 
     private static final /* synthetic */ h0[] a() {
-        return new h0[]{f50892d, f50893e, f50894i};
+        return new h0[]{f50889d, f50890e, f50891i};
     }
 
     public static h0 valueOf(String str) {
@@ -39,6 +39,6 @@ public final class h0 {
     }
 
     public static h0[] values() {
-        return (h0[]) f50895o.clone();
+        return (h0[]) f50892o.clone();
     }
 }

@@ -13,22 +13,22 @@ import kotlin.sequences.Sequence;
 public final class i implements Sequence {
 
     /* renamed from: a  reason: collision with root package name */
-    private final File f52666a;
+    private final File f52663a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final FileWalkDirection f52667b;
+    private final FileWalkDirection f52664b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Function1 f52668c;
+    private final Function1 f52665c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Function1 f52669d;
+    private final Function1 f52666d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Function2 f52670e;
+    private final Function2 f52667e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f52671f;
+    private final int f52668f;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -44,71 +44,71 @@ public final class i implements Sequence {
     private final class b extends kotlin.collections.c {
 
         /* renamed from: i  reason: collision with root package name */
-        private final ArrayDeque f52672i;
+        private final ArrayDeque f52669i;
 
         /* JADX INFO: Access modifiers changed from: private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public final class a extends a {
 
             /* renamed from: b  reason: collision with root package name */
-            private boolean f52674b;
+            private boolean f52671b;
 
             /* renamed from: c  reason: collision with root package name */
-            private File[] f52675c;
+            private File[] f52672c;
 
             /* renamed from: d  reason: collision with root package name */
-            private int f52676d;
+            private int f52673d;
 
             /* renamed from: e  reason: collision with root package name */
-            private boolean f52677e;
+            private boolean f52674e;
 
             /* renamed from: f  reason: collision with root package name */
-            final /* synthetic */ b f52678f;
+            final /* synthetic */ b f52675f;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public a(b bVar, File rootDir) {
                 super(rootDir);
                 Intrinsics.checkNotNullParameter(rootDir, "rootDir");
-                this.f52678f = bVar;
+                this.f52675f = bVar;
             }
 
             @Override // wr.i.c
             public File b() {
-                if (!this.f52677e && this.f52675c == null) {
-                    Function1 function1 = i.this.f52668c;
+                if (!this.f52674e && this.f52672c == null) {
+                    Function1 function1 = i.this.f52665c;
                     if (function1 != null && !((Boolean) function1.invoke(a())).booleanValue()) {
                         return null;
                     }
                     File[] listFiles = a().listFiles();
-                    this.f52675c = listFiles;
+                    this.f52672c = listFiles;
                     if (listFiles == null) {
-                        Function2 function2 = i.this.f52670e;
+                        Function2 function2 = i.this.f52667e;
                         if (function2 != null) {
                             function2.invoke(a(), new wr.a(a(), null, "Cannot list files in a directory", 2, null));
                         }
-                        this.f52677e = true;
+                        this.f52674e = true;
                     }
                 }
-                File[] fileArr = this.f52675c;
+                File[] fileArr = this.f52672c;
                 if (fileArr != null) {
-                    int i10 = this.f52676d;
+                    int i10 = this.f52673d;
                     Intrinsics.checkNotNull(fileArr);
                     if (i10 < fileArr.length) {
-                        File[] fileArr2 = this.f52675c;
+                        File[] fileArr2 = this.f52672c;
                         Intrinsics.checkNotNull(fileArr2);
-                        int i11 = this.f52676d;
-                        this.f52676d = i11 + 1;
+                        int i11 = this.f52673d;
+                        this.f52673d = i11 + 1;
                         return fileArr2[i11];
                     }
                 }
-                if (this.f52674b) {
-                    Function1 function12 = i.this.f52669d;
+                if (this.f52671b) {
+                    Function1 function12 = i.this.f52666d;
                     if (function12 != null) {
                         function12.invoke(a());
                     }
                     return null;
                 }
-                this.f52674b = true;
+                this.f52671b = true;
                 return a();
             }
         }
@@ -118,24 +118,24 @@ public final class i implements Sequence {
         private final class C0710b extends c {
 
             /* renamed from: b  reason: collision with root package name */
-            private boolean f52679b;
+            private boolean f52676b;
 
             /* renamed from: c  reason: collision with root package name */
-            final /* synthetic */ b f52680c;
+            final /* synthetic */ b f52677c;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public C0710b(b bVar, File rootFile) {
                 super(rootFile);
                 Intrinsics.checkNotNullParameter(rootFile, "rootFile");
-                this.f52680c = bVar;
+                this.f52677c = bVar;
             }
 
             @Override // wr.i.c
             public File b() {
-                if (this.f52679b) {
+                if (this.f52676b) {
                     return null;
                 }
-                this.f52679b = true;
+                this.f52676b = true;
                 return a();
             }
         }
@@ -145,22 +145,22 @@ public final class i implements Sequence {
         public final class c extends a {
 
             /* renamed from: b  reason: collision with root package name */
-            private boolean f52681b;
+            private boolean f52678b;
 
             /* renamed from: c  reason: collision with root package name */
-            private File[] f52682c;
+            private File[] f52679c;
 
             /* renamed from: d  reason: collision with root package name */
-            private int f52683d;
+            private int f52680d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ b f52684e;
+            final /* synthetic */ b f52681e;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public c(b bVar, File rootDir) {
                 super(rootDir);
                 Intrinsics.checkNotNullParameter(rootDir, "rootDir");
-                this.f52684e = bVar;
+                this.f52681e = bVar;
             }
 
             /* JADX WARN: Code restructure failed: missing block: B:30:0x007e, code lost:
@@ -174,10 +174,10 @@ public final class i implements Sequence {
             public java.io.File b() {
                 /*
                     r9 = this;
-                    boolean r0 = r9.f52681b
+                    boolean r0 = r9.f52678b
                     r1 = 0
                     if (r0 != 0) goto L28
-                    wr.i$b r0 = r9.f52684e
+                    wr.i$b r0 = r9.f52681e
                     wr.i r0 = wr.i.this
                     kotlin.jvm.functions.Function1 r0 = wr.i.d(r0)
                     if (r0 == 0) goto L20
@@ -189,19 +189,19 @@ public final class i implements Sequence {
                     return r1
                 L20:
                     r0 = 1
-                    r9.f52681b = r0
+                    r9.f52678b = r0
                     java.io.File r0 = r9.a()
                     return r0
                 L28:
-                    java.io.File[] r0 = r9.f52682c
+                    java.io.File[] r0 = r9.f52679c
                     if (r0 == 0) goto L47
-                    int r2 = r9.f52683d
+                    int r2 = r9.f52680d
                     kotlin.jvm.internal.Intrinsics.checkNotNull(r0)
                     int r0 = r0.length
                     if (r2 >= r0) goto L35
                     goto L47
                 L35:
-                    wr.i$b r0 = r9.f52684e
+                    wr.i$b r0 = r9.f52681e
                     wr.i r0 = wr.i.this
                     kotlin.jvm.functions.Function1 r0 = wr.i.f(r0)
                     if (r0 == 0) goto L46
@@ -210,13 +210,13 @@ public final class i implements Sequence {
                 L46:
                     return r1
                 L47:
-                    java.io.File[] r0 = r9.f52682c
+                    java.io.File[] r0 = r9.f52679c
                     if (r0 != 0) goto L92
                     java.io.File r0 = r9.a()
                     java.io.File[] r0 = r0.listFiles()
-                    r9.f52682c = r0
+                    r9.f52679c = r0
                     if (r0 != 0) goto L76
-                    wr.i$b r0 = r9.f52684e
+                    wr.i$b r0 = r9.f52681e
                     wr.i r0 = wr.i.this
                     kotlin.jvm.functions.Function2 r0 = wr.i.e(r0)
                     if (r0 == 0) goto L76
@@ -230,13 +230,13 @@ public final class i implements Sequence {
                     r3.<init>(r4, r5, r6, r7, r8)
                     r0.invoke(r2, r3)
                 L76:
-                    java.io.File[] r0 = r9.f52682c
+                    java.io.File[] r0 = r9.f52679c
                     if (r0 == 0) goto L80
                     kotlin.jvm.internal.Intrinsics.checkNotNull(r0)
                     int r0 = r0.length
                     if (r0 != 0) goto L92
                 L80:
-                    wr.i$b r0 = r9.f52684e
+                    wr.i$b r0 = r9.f52681e
                     wr.i r0 = wr.i.this
                     kotlin.jvm.functions.Function1 r0 = wr.i.f(r0)
                     if (r0 == 0) goto L91
@@ -245,11 +245,11 @@ public final class i implements Sequence {
                 L91:
                     return r1
                 L92:
-                    java.io.File[] r0 = r9.f52682c
+                    java.io.File[] r0 = r9.f52679c
                     kotlin.jvm.internal.Intrinsics.checkNotNull(r0)
-                    int r1 = r9.f52683d
+                    int r1 = r9.f52680d
                     int r2 = r1 + 1
-                    r9.f52683d = r2
+                    r9.f52680d = r2
                     r0 = r0[r1]
                     return r0
                 */
@@ -261,7 +261,7 @@ public final class i implements Sequence {
         public /* synthetic */ class d {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final /* synthetic */ int[] f52685a;
+            public static final /* synthetic */ int[] f52682a;
 
             static {
                 int[] iArr = new int[FileWalkDirection.values().length];
@@ -273,24 +273,24 @@ public final class i implements Sequence {
                     iArr[FileWalkDirection.f32547e.ordinal()] = 2;
                 } catch (NoSuchFieldError unused2) {
                 }
-                f52685a = iArr;
+                f52682a = iArr;
             }
         }
 
         public b() {
             ArrayDeque arrayDeque = new ArrayDeque();
-            this.f52672i = arrayDeque;
-            if (i.this.f52666a.isDirectory()) {
-                arrayDeque.push(e(i.this.f52666a));
-            } else if (i.this.f52666a.isFile()) {
-                arrayDeque.push(new C0710b(this, i.this.f52666a));
+            this.f52669i = arrayDeque;
+            if (i.this.f52663a.isDirectory()) {
+                arrayDeque.push(e(i.this.f52663a));
+            } else if (i.this.f52663a.isFile()) {
+                arrayDeque.push(new C0710b(this, i.this.f52663a));
             } else {
                 b();
             }
         }
 
         private final a e(File file) {
-            int i10 = d.f52685a[i.this.f52667b.ordinal()];
+            int i10 = d.f52682a[i.this.f52664b.ordinal()];
             if (i10 != 1) {
                 if (i10 == 2) {
                     return new a(this, file);
@@ -303,17 +303,17 @@ public final class i implements Sequence {
         private final File f() {
             File b10;
             while (true) {
-                c cVar = (c) this.f52672i.peek();
+                c cVar = (c) this.f52669i.peek();
                 if (cVar == null) {
                     return null;
                 }
                 b10 = cVar.b();
                 if (b10 == null) {
-                    this.f52672i.pop();
-                } else if (Intrinsics.areEqual(b10, cVar.a()) || !b10.isDirectory() || this.f52672i.size() >= i.this.f52671f) {
+                    this.f52669i.pop();
+                } else if (Intrinsics.areEqual(b10, cVar.a()) || !b10.isDirectory() || this.f52669i.size() >= i.this.f52668f) {
                     break;
                 } else {
-                    this.f52672i.push(e(b10));
+                    this.f52669i.push(e(b10));
                 }
             }
             return b10;
@@ -335,27 +335,27 @@ public final class i implements Sequence {
     public static abstract class c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final File f52686a;
+        private final File f52683a;
 
         public c(File root) {
             Intrinsics.checkNotNullParameter(root, "root");
-            this.f52686a = root;
+            this.f52683a = root;
         }
 
         public final File a() {
-            return this.f52686a;
+            return this.f52683a;
         }
 
         public abstract File b();
     }
 
     private i(File file, FileWalkDirection fileWalkDirection, Function1 function1, Function1 function12, Function2 function2, int i10) {
-        this.f52666a = file;
-        this.f52667b = fileWalkDirection;
-        this.f52668c = function1;
-        this.f52669d = function12;
-        this.f52670e = function2;
-        this.f52671f = i10;
+        this.f52663a = file;
+        this.f52664b = fileWalkDirection;
+        this.f52665c = function1;
+        this.f52666d = function12;
+        this.f52667e = function2;
+        this.f52668f = i10;
     }
 
     @Override // kotlin.sequences.Sequence

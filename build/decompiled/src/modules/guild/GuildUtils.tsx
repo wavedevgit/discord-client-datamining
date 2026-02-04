@@ -23,14 +23,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild/GuildUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun74260: for (var _fun74260_ip = 0;;) switch (_fun74260_ip) {
+        _fun74277: for (var _fun74277_ip = 0;;) switch (_fun74277_ip) {
             case 0:
                 var3 = arg0;
                 var _closure2_slot0 = var3;
                 var1 = null;
                 if (!(var1 != var3)) {
-                    _fun74260_ip = 67;
-                    continue _fun74260
+                    _fun74277_ip = 67;
+                    continue _fun74277
                 }
             case 15:
                 var4 = _closure1_slot0;

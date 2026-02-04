@@ -532,8 +532,8 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     private void u1(AttributeSet attributeSet, int i10, int i11) {
-        TypedArray i12 = l.i(this.f14465r0, attributeSet, k.f54493x0, i10, i11, new int[0]);
-        this.T0 = i12.hasValue(k.f54355i1);
+        TypedArray i12 = l.i(this.f14465r0, attributeSet, k.f54490x0, i10, i11, new int[0]);
+        this.T0 = i12.hasValue(k.f54352i1);
         b2(lh.c.a(this.f14465r0, i12, k.V0));
         F1(lh.c.a(this.f14465r0, i12, k.I0));
         T1(i12.getDimension(k.Q0, 0.0f));
@@ -542,10 +542,10 @@ public class a extends g implements Drawable.Callback, j.b {
         }
         X1(lh.c.a(this.f14465r0, i12, k.T0));
         Z1(i12.getDimension(k.U0, 0.0f));
-        y2(lh.c.a(this.f14465r0, i12, k.f54345h1));
+        y2(lh.c.a(this.f14465r0, i12, k.f54342h1));
         D2(i12.getText(k.C0));
-        d f10 = lh.c.f(this.f14465r0, i12, k.f54502y0);
-        f10.l(i12.getDimension(k.f54511z0, f10.j()));
+        d f10 = lh.c.f(this.f14465r0, i12, k.f54499y0);
+        f10.l(i12.getDimension(k.f54508z0, f10.j()));
         E2(f10);
         int i13 = i12.getInt(k.A0, 0);
         if (i13 != 1) {
@@ -568,12 +568,12 @@ public class a extends g implements Drawable.Callback, j.b {
             P1(lh.c.a(this.f14465r0, i12, k.O0));
         }
         N1(i12.getDimension(k.N0, -1.0f));
-        o2(i12.getBoolean(k.f54295c1, false));
+        o2(i12.getBoolean(k.f54292c1, false));
         if (attributeSet != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "closeIconEnabled") != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "closeIconVisible") == null) {
             o2(i12.getBoolean(k.X0, false));
         }
         c2(lh.c.d(this.f14465r0, i12, k.W0));
-        m2(lh.c.a(this.f14465r0, i12, k.f54285b1));
+        m2(lh.c.a(this.f14465r0, i12, k.f54282b1));
         h2(i12.getDimension(k.Z0, 0.0f));
         x1(i12.getBoolean(k.D0, false));
         E1(i12.getBoolean(k.H0, false));
@@ -584,14 +584,14 @@ public class a extends g implements Drawable.Callback, j.b {
         if (i12.hasValue(k.G0)) {
             B1(lh.c.a(this.f14465r0, i12, k.G0));
         }
-        B2(zg.g.b(this.f14465r0, i12, k.f54365j1));
-        r2(zg.g.b(this.f14465r0, i12, k.f54315e1));
+        B2(zg.g.b(this.f14465r0, i12, k.f54362j1));
+        r2(zg.g.b(this.f14465r0, i12, k.f54312e1));
         V1(i12.getDimension(k.S0, 0.0f));
-        v2(i12.getDimension(k.f54335g1, 0.0f));
-        t2(i12.getDimension(k.f54325f1, 0.0f));
-        J2(i12.getDimension(k.f54385l1, 0.0f));
-        G2(i12.getDimension(k.f54375k1, 0.0f));
-        j2(i12.getDimension(k.f54275a1, 0.0f));
+        v2(i12.getDimension(k.f54332g1, 0.0f));
+        t2(i12.getDimension(k.f54322f1, 0.0f));
+        J2(i12.getDimension(k.f54382l1, 0.0f));
+        G2(i12.getDimension(k.f54372k1, 0.0f));
+        j2(i12.getDimension(k.f54272a1, 0.0f));
         e2(i12.getDimension(k.Y0, 0.0f));
         J1(i12.getDimension(k.K0, 0.0f));
         x2(i12.getDimensionPixelSize(k.B0, Integer.MAX_VALUE));

@@ -12,7 +12,7 @@ public final class p implements Parcelable {
     public static final a CREATOR = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final wm.m f54660d;
+    private final wm.m f54657d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -28,7 +28,7 @@ public final class p implements Parcelable {
             byte[] createByteArray = parcel.createByteArray();
             Intrinsics.checkNotNull(createByteArray);
             Intrinsics.checkNotNullExpressionValue(createByteArray, "parcel.createByteArray()!!");
-            return new p(wm.m.f52555c.a(ByteString.a.j(aVar, createByteArray, 0, 0, 3, null)));
+            return new p(wm.m.f52552c.a(ByteString.a.j(aVar, createByteArray, 0, 0, 3, null)));
         }
 
         @Override // android.os.Parcelable.Creator
@@ -43,11 +43,11 @@ public final class p implements Parcelable {
 
     public p(wm.m snapshot) {
         Intrinsics.checkNotNullParameter(snapshot, "snapshot");
-        this.f54660d = snapshot;
+        this.f54657d = snapshot;
     }
 
     public final wm.m a() {
-        return this.f54660d;
+        return this.f54657d;
     }
 
     @Override // android.os.Parcelable
@@ -58,6 +58,6 @@ public final class p implements Parcelable {
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeByteArray(this.f54660d.c().L());
+        dest.writeByteArray(this.f54657d.c().L());
     }
 }

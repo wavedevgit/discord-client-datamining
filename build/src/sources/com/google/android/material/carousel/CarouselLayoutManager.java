@@ -148,7 +148,7 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
         @Override // androidx.recyclerview.widget.RecyclerView.ItemDecoration
         public void onDrawOver(Canvas canvas, RecyclerView recyclerView, RecyclerView.State state) {
             super.onDrawOver(canvas, recyclerView, state);
-            this.f14373a.setStrokeWidth(recyclerView.getResources().getDimension(yg.d.f54146n));
+            this.f14373a.setStrokeWidth(recyclerView.getResources().getDimension(yg.d.f54143n));
             for (f.c cVar : this.f14374b) {
                 this.f14373a.setColor(r1.c.c(-65281, -16776961, cVar.f14405c));
                 if (((CarouselLayoutManager) recyclerView.getLayoutManager()).d()) {
@@ -558,9 +558,9 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
 
     private void i0(Context context, AttributeSet attributeSet) {
         if (attributeSet != null) {
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, k.f54466u0);
-            h0(obtainStyledAttributes.getInt(k.f54475v0, 0));
-            setOrientation(obtainStyledAttributes.getInt(k.f54389l5, 0));
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, k.f54463u0);
+            h0(obtainStyledAttributes.getInt(k.f54472v0, 0));
+            setOrientation(obtainStyledAttributes.getInt(k.f54386l5, 0));
             obtainStyledAttributes.recycle();
         }
     }

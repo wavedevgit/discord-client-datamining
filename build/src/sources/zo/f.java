@@ -8,11 +8,11 @@ public final class f implements wq.d {
     private static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final f f56119a = new f();
+        static final f f56116a = new f();
     }
 
     public static f a() {
-        return a.f56119a;
+        return a.f56116a;
     }
 
     public static Set c() {

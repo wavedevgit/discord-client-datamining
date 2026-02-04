@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/native/MobileTrialUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function() {
-        _fun57809: for (var _fun57809_ip = 0;;) switch (_fun57809_ip) {
+        _fun57826: for (var _fun57826_ip = 0;;) switch (_fun57826_ip) {
             case 0:
                 var5 = _closure1_slot0;
                 var6 = _closure1_slot1;
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var4 = var0 == var3;
                 if (var4) {
-                    _fun57809_ip = 97;
-                    continue _fun57809
+                    _fun57826_ip = 97;
+                    continue _fun57826
                 }
             case 91:
                 var2 = var3.expires_at;
@@ -59,15 +59,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 != var2;
                 var0 = var0 != var3;
                 if (!var0) {
-                    _fun57809_ip = 111;
-                    continue _fun57809
+                    _fun57826_ip = 111;
+                    continue _fun57826
                 }
             case 108:
                 var0 = !var2;
             case 111:
                 if (!var0) {
-                    _fun57809_ip = 117;
-                    continue _fun57809
+                    _fun57826_ip = 117;
+                    continue _fun57826
                 }
             case 114:
                 var0 = !var1;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useShouldShowPremiumTrialUserSettingsAvatarBadge = var3;
     var1 = function() {
-        _fun57810: for (var _fun57810_ip = 0;;) switch (_fun57810_ip) {
+        _fun57827: for (var _fun57827_ip = 0;;) switch (_fun57827_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -91,16 +91,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3 == var2;
                 var1 = undefined;
                 if (var5) {
-                    _fun57810_ip = 67;
-                    continue _fun57810
+                    _fun57827_ip = 67;
+                    continue _fun57827
                 }
             case 46:
                 var2 = var2.subscription_trial;
                 var3 = var3 == var2;
                 var1 = undefined;
                 if (var3) {
-                    _fun57810_ip = 67;
-                    continue _fun57810
+                    _fun57827_ip = 67;
+                    continue _fun57827
                 }
             case 61:
                 var1 = var2.sku_id;

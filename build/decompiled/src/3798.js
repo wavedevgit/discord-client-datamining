@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var1;
     var1 = function() { // Environment: var0
         var0 = function arg0, arg1, arg2() {
-            _fun33907: for (var _fun33907_ip = 0;;) switch (_fun33907_ip) {
+            _fun33909: for (var _fun33909_ip = 0;;) switch (_fun33909_ip) {
                 case 0:
                     var1 = arg0;
                     var0 = arg1;
@@ -51,8 +51,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var7 < var2;
                     var7 = var10;
                     if (!var2) {
-                        _fun33907_ip = 137;
-                        continue _fun33907
+                        _fun33909_ip = 137;
+                        continue _fun33909
                     }
                 case 135:
                     var7 = 0;
@@ -61,8 +61,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var2[var11];
                     var2 = var4 < var2;
                     if (var2) {
-                        _fun33907_ip = 168;
-                        continue _fun33907
+                        _fun33909_ip = 168;
+                        continue _fun33909
                     }
                 case 154:
                     var12 = var3.clamp;
@@ -71,8 +71,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 case 168:
                     var13 = 0;
                     if (!var2) {
-                        _fun33907_ip = 187;
-                        continue _fun33907
+                        _fun33909_ip = 187;
+                        continue _fun33909
                     }
                 case 173:
                     var2 = var3.clamp;
@@ -103,14 +103,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var12 = var9.bind(var12)(var13);
                     var9 = 0.1;
                     if (!(!(var12 > var9))) {
-                        _fun33907_ip = 383;
-                        continue _fun33907
+                        _fun33909_ip = 383;
+                        continue _fun33909
                     }
                 case 306:
                     var9 = var1.springActive;
                     if (var9) {
-                        _fun33907_ip = 363;
-                        continue _fun33907
+                        _fun33909_ip = 363;
+                        continue _fun33909
                     }
                 case 315:
                     var9 = var8.Math;
@@ -122,8 +122,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var6 = var9.bind(var10)(var6);
                     var6 = var6.VELOCITY_EPS;
                     if (!(var8 < var6)) {
-                        _fun33907_ip = 391;
-                        continue _fun33907
+                        _fun33909_ip = 391;
+                        continue _fun33909
                     }
                 case 359:
                     var6 = true;

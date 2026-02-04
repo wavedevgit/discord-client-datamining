@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.VideoQuestStartCtaExperimentVariant = var4;
     var2.VideoQuestStartCtaExperiment = var3;
     var1 = function arg0() {
-        _fun78977: for (var _fun78977_ip = 0;;) switch (_fun78977_ip) {
+        _fun78994: for (var _fun78994_ip = 0;;) switch (_fun78994_ip) {
             case 0:
                 var3 = _closure1_slot4;
                 var2 = var3.getConfig;
@@ -82,8 +82,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
                 if (var4) {
-                    _fun78977_ip = 103;
-                    continue _fun78977
+                    _fun78994_ip = 103;
+                    continue _fun78994
                 }
             case 50:
                 var4 = 3;
@@ -110,8 +110,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot3;
                 var0 = var0.WATCH_WITH_TIME;
                 if (!(var2 !== var0)) {
-                    _fun78977_ip = 209;
-                    continue _fun78977
+                    _fun78994_ip = 209;
+                    continue _fun78994
                 }
             case 150:
                 var4 = _closure1_slot0;
@@ -126,8 +126,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.t;
                 var0 = var0["6fpk4L"];
                 var0 = var2.bind(var3)(var0);
-                _fun78977_ip = 292;
-                continue _fun78977;
+                _fun78994_ip = 292;
+                continue _fun78994;
             case 209:
                 var6 = _closure1_slot0;
                 var5 = _closure1_slot1;

@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
     var2 = function() {
-        _fun9577: for (var _fun9577_ip = 0;;) switch (_fun9577_ip) {
+        _fun9579: for (var _fun9579_ip = 0;;) switch (_fun9579_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -18,8 +18,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = 'console';
                 var2 = var2 in var3;
                 if (!var2) {
-                    _fun9577_ip = 85;
-                    continue _fun9577
+                    _fun9579_ip = 85;
+                    continue _fun9579
                 }
             case 42:
                 var2 = _closure1_slot0;
@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var1.CONSOLE_LEVELS;
                 var2 = var3.forEach;
                 var1 = function(arg0) { // Environment: var1
-                    _fun9578: for (var _fun9578_ip = 0;;) switch (_fun9578_ip) {
+                    _fun9580: for (var _fun9580_ip = 0;;) switch (_fun9580_ip) {
                         case 0:
                             var5 = arg0;
                             var _closure3_slot0 = var5;
@@ -44,8 +44,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = var3.console;
                             var3 = var5 in var3;
                             if (!var3) {
-                                _fun9578_ip = 112;
-                                continue _fun9578
+                                _fun9580_ip = 112;
+                                continue _fun9580
                             }
                         case 53:
                             var6 = _closure1_slot0;
@@ -70,7 +70,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var0 = arg0;
                                 var2[var1] = var0;
                                 var0 = function() { // Environment: var0
-                                    _fun9580: for (var _fun9580_ip = 0;;) switch (_fun9580_ip) {
+                                    _fun9582: for (var _fun9582_ip = 0;;) switch (_fun9582_ip) {
                                         case 0:
                                             var0 = undefined;
                                             var5 = undefined;
@@ -91,16 +91,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var6 = var2 < var3;
                                             var1 = 0;
                                             if (!var6) {
-                                                _fun9580_ip = 64;
-                                                continue _fun9580
+                                                _fun9582_ip = 64;
+                                                continue _fun9582
                                             }
                                         case 49:
                                             var6 = arguments[var1];
                                             var4[var1] = var6;
                                             var1 = var1 + 1;
                                             if (var1 < var3) {
-                                                _fun9580_ip = 49;
-                                                continue _fun9580
+                                                _fun9582_ip = 49;
+                                                continue _fun9582
                                             }
                                         case 64:
                                             var9 = {};
@@ -121,8 +121,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var3 = var2[var3];
                                             var2 = null;
                                             if (!(var2 != var3)) {
-                                                _fun9580_ip = 190;
-                                                continue _fun9580
+                                                _fun9582_ip = 190;
+                                                continue _fun9582
                                             }
                                         case 147:
                                             var2 = var3.apply;

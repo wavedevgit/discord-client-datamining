@@ -28,13 +28,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = 'voice';
         var0.currentType = var2;
         var2 = function() {
-            _fun100738: for (var _fun100738_ip = 0;;) switch (_fun100738_ip) {
+            _fun100754: for (var _fun100754_ip = 0;;) switch (_fun100754_ip) {
                 case 0:
                     var1 = _closure1_slot0;
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun100738_ip = 32;
-                        continue _fun100738
+                        _fun100754_ip = 32;
+                        continue _fun100754
                     }
                 case 13:
                     var0 = global;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var0.setInterval;
                     var0 = undefined;
                     var3 = function() { // Environment: var1
-                        _fun100739: for (var _fun100739_ip = 0;;) switch (_fun100739_ip) {
+                        _fun100755: for (var _fun100755_ip = 0;;) switch (_fun100755_ip) {
                             case 0:
                                 var2 = _closure2_slot1;
                                 var0 = undefined;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = {};
                                 var3 = 'voice';
                                 if (!(var3 === var4)) {
-                                    _fun100739_ip = 37;
-                                    continue _fun100739
+                                    _fun100755_ip = 37;
+                                    continue _fun100755
                                 }
                             case 33:
                                 var3 = 'activity';
@@ -76,13 +76,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0.startTimer = var2;
         var1 = function() {
-            _fun100740: for (var _fun100740_ip = 0;;) switch (_fun100740_ip) {
+            _fun100756: for (var _fun100756_ip = 0;;) switch (_fun100756_ip) {
                 case 0:
                     var2 = _closure1_slot0;
                     var0 = null;
                     if (!(var0 != var2)) {
-                        _fun100740_ip = 36;
-                        continue _fun100740
+                        _fun100756_ip = 36;
+                        continue _fun100756
                     }
                 case 13:
                     var2 = global;

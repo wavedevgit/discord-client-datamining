@@ -15,16 +15,16 @@ public final class f extends ef.d implements xf.e {
     public static final class a extends c {
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ k f54071c;
+        final /* synthetic */ k f54068c;
 
         a(k kVar) {
-            this.f54071c = kVar;
+            this.f54068c = kVar;
         }
 
         @Override // yf.a
         public void i(Status status, xf.g gVar) {
             Intrinsics.checkNotNullParameter(status, "status");
-            r.a(status, gVar, this.f54071c);
+            r.a(status, gVar, this.f54068c);
         }
     }
 

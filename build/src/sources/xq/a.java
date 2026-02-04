@@ -8,7 +8,7 @@ import ov.o;
 public final class a implements b, o {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f53545a = new a();
+    public static final a f53542a = new a();
 
     private a() {
     }

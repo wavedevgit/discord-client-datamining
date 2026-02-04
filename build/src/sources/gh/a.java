@@ -27,7 +27,7 @@ public class a {
     private final float f26225e;
 
     public a(Context context) {
-        this(b.b(context, yg.b.f54107s, false), eh.a.b(context, yg.b.f54106r, 0), eh.a.b(context, yg.b.f54105q, 0), eh.a.b(context, yg.b.f54103o, 0), context.getResources().getDisplayMetrics().density);
+        this(b.b(context, yg.b.f54104s, false), eh.a.b(context, yg.b.f54103r, 0), eh.a.b(context, yg.b.f54102q, 0), eh.a.b(context, yg.b.f54100o, 0), context.getResources().getDisplayMetrics().density);
     }
 
     private boolean e(int i10) {

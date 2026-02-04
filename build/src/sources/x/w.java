@@ -26,18 +26,18 @@ public final class w implements e0.m {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final a0.r1 f52969a;
+        private final a0.r1 f52966a;
 
         public a() {
             this(a0.r1.Z());
         }
 
         private a0.q1 b() {
-            return this.f52969a;
+            return this.f52966a;
         }
 
         public w a() {
-            return new w(a0.w1.Y(this.f52969a));
+            return new w(a0.w1.Y(this.f52966a));
         }
 
         public a c(c0.a aVar) {
@@ -69,7 +69,7 @@ public final class w implements e0.m {
         }
 
         private a(a0.r1 r1Var) {
-            this.f52969a = r1Var;
+            this.f52966a = r1Var;
             Class cls = (Class) r1Var.e(e0.m.G, null);
             if (cls != null && !cls.equals(v.class)) {
                 throw new IllegalArgumentException("Invalid target class configuration for " + this + ": " + cls);
@@ -104,7 +104,7 @@ public final class w implements e0.m {
     }
 
     public i1 a0() {
-        i1 i1Var = (i1) this.I.e(R, i1.f52841b);
+        i1 i1Var = (i1) this.I.e(R, i1.f52838b);
         Objects.requireNonNull(i1Var);
         return i1Var;
     }

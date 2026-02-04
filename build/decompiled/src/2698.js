@@ -93,7 +93,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = ['noll', 'en', 'två', 'tre', 'fyra', 'fem', 'sex', 'sju', 'åtta', 'nio', 'tio', 'elva', 'tolv'];
     var _closure1_slot1 = var3;
     var2 = function arg0, arg1, arg2() {
-        _fun22288: for (var _fun22288_ip = 0;;) switch (_fun22288_ip) {
+        _fun22290: for (var _fun22290_ip = 0;;) switch (_fun22290_ip) {
             case 0:
                 var8 = arg1;
                 var1 = arg2;
@@ -104,49 +104,49 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = typeof var2;
                 var3 = var2;
                 if (!(var5 !== var4)) {
-                    _fun22288_ip = 164;
-                    continue _fun22288
+                    _fun22290_ip = 164;
+                    continue _fun22290
                 }
             case 37:
                 var4 = 1;
                 if (!(var4 !== var8)) {
-                    _fun22288_ip = 155;
-                    continue _fun22288
+                    _fun22290_ip = 155;
+                    continue _fun22290
                 }
             case 44:
                 if (!var1) {
-                    _fun22288_ip = 58;
-                    continue _fun22288
+                    _fun22290_ip = 58;
+                    continue _fun22290
                 }
             case 47:
                 var4 = var1.onlyNumeric;
                 if (var4) {
-                    _fun22288_ip = 115;
-                    continue _fun22288
+                    _fun22290_ip = 115;
+                    continue _fun22290
                 }
             case 58:
                 var6 = var2.other;
                 var5 = var6.replace;
                 var4 = 13;
                 if (!(!(var8 < var4))) {
-                    _fun22288_ip = 93;
-                    continue _fun22288
+                    _fun22290_ip = 93;
+                    continue _fun22290
                 }
             case 76:
                 var4 = global;
                 var7 = var4.String;
                 var4 = undefined;
                 var4 = var7.bind(var4)(var8);
-                _fun22288_ip = 101;
-                continue _fun22288;
+                _fun22290_ip = 101;
+                continue _fun22290;
             case 93:
                 var0 = _closure1_slot1;
                 var4 = var0[var8];
             case 101:
                 var0 = '{{count}}';
                 var0 = var5.bind(var6)(var0, var4);
-                _fun22288_ip = 153;
-                continue _fun22288;
+                _fun22290_ip = 153;
+                continue _fun22290;
             case 115:
                 var7 = var2.other;
                 var6 = var7.replace;
@@ -157,8 +157,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = '{{count}}';
                 var0 = var6.bind(var7)(var4, var5);
             case 153:
-                _fun22288_ip = 161;
-                continue _fun22288;
+                _fun22290_ip = 161;
+                continue _fun22290;
             case 155:
                 var0 = var2.one;
             case 161:
@@ -167,34 +167,34 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = null;
                 var0 = var3;
                 if (!(var2 != var1)) {
-                    _fun22288_ip = 231;
-                    continue _fun22288
+                    _fun22290_ip = 231;
+                    continue _fun22290
                 }
             case 173:
                 var2 = var1.addSuffix;
                 var0 = var3;
                 if (!var2) {
-                    _fun22288_ip = 231;
-                    continue _fun22288
+                    _fun22290_ip = 231;
+                    continue _fun22290
                 }
             case 185:
                 var2 = var1.comparison;
                 if (!var2) {
-                    _fun22288_ip = 206;
-                    continue _fun22288
+                    _fun22290_ip = 206;
+                    continue _fun22290
                 }
             case 194:
                 var2 = var1.comparison;
                 var1 = 0;
                 if (!(!(var2 > var1))) {
-                    _fun22288_ip = 218;
-                    continue _fun22288
+                    _fun22290_ip = 218;
+                    continue _fun22290
                 }
             case 206:
                 var1 = ' sedan';
                 var1 = var3 + var1;
-                _fun22288_ip = 228;
-                continue _fun22288;
+                _fun22290_ip = 228;
+                continue _fun22290;
             case 218:
                 var2 = 'om ';
                 var1 = var2 + var3;

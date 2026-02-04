@@ -3,26 +3,26 @@ package sq;
 public class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f49584a;
+    private int f49581a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f49585b;
+    private int f49582b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f49586c;
+    private int f49583c;
 
     public c(int i10, int i11, int i12) {
-        this.f49584a = i10;
-        this.f49585b = i11;
-        this.f49586c = i12;
+        this.f49581a = i10;
+        this.f49582b = i11;
+        this.f49583c = i12;
     }
 
     public int a() {
-        return this.f49585b;
+        return this.f49582b;
     }
 
     public int b() {
-        return this.f49586c;
+        return this.f49583c;
     }
 
     public boolean equals(Object obj) {
@@ -31,7 +31,7 @@ public class c {
         }
         if (obj != null && getClass() == obj.getClass()) {
             c cVar = (c) obj;
-            if (this.f49584a == cVar.f49584a && this.f49585b == cVar.f49585b && this.f49586c == cVar.f49586c) {
+            if (this.f49581a == cVar.f49581a && this.f49582b == cVar.f49582b && this.f49583c == cVar.f49583c) {
                 return true;
             }
         }
@@ -39,6 +39,6 @@ public class c {
     }
 
     public int hashCode() {
-        return (((this.f49584a * 31) + this.f49585b) * 31) + this.f49586c;
+        return (((this.f49581a * 31) + this.f49582b) * 31) + this.f49583c;
     }
 }

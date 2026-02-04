@@ -5,10 +5,10 @@ import com.withpersona.sdk2.inquiry.FallbackMode;
 public final class e implements wq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f50166a;
+    private final c f50163a;
 
     public e(c cVar) {
-        this.f50166a = cVar;
+        this.f50163a = cVar;
     }
 
     public static e a(c cVar) {
@@ -22,6 +22,6 @@ public final class e implements wq.d {
     @Override // javax.inject.Provider
     /* renamed from: c */
     public FallbackMode get() {
-        return b(this.f50166a);
+        return b(this.f50163a);
     }
 }

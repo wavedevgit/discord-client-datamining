@@ -16,24 +16,24 @@ public abstract class a {
     public static final class C0745a implements Flow {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Flow f54579d;
+        final /* synthetic */ Flow f54576d;
 
         /* renamed from: ym.a$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class C0746a implements FlowCollector {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ FlowCollector f54580d;
+            final /* synthetic */ FlowCollector f54577d;
 
             /* renamed from: ym.a$a$a$a  reason: collision with other inner class name */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
             public static final class C0747a extends kotlin.coroutines.jvm.internal.d {
 
                 /* renamed from: d  reason: collision with root package name */
-                /* synthetic */ Object f54581d;
+                /* synthetic */ Object f54578d;
 
                 /* renamed from: e  reason: collision with root package name */
-                int f54582e;
+                int f54579e;
 
                 public C0747a(Continuation continuation) {
                     super(continuation);
@@ -41,14 +41,14 @@ public abstract class a {
 
                 @Override // kotlin.coroutines.jvm.internal.a
                 public final Object invokeSuspend(Object obj) {
-                    this.f54581d = obj;
-                    this.f54582e |= Integer.MIN_VALUE;
+                    this.f54578d = obj;
+                    this.f54579e |= Integer.MIN_VALUE;
                     return C0746a.this.emit(null, this);
                 }
             }
 
             public C0746a(FlowCollector flowCollector) {
-                this.f54580d = flowCollector;
+                this.f54577d = flowCollector;
             }
 
             /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
@@ -65,20 +65,20 @@ public abstract class a {
                     if (r0 == 0) goto L13
                     r0 = r6
                     ym.a$a$a$a r0 = (ym.a.C0745a.C0746a.C0747a) r0
-                    int r1 = r0.f54582e
+                    int r1 = r0.f54579e
                     r2 = -2147483648(0xffffffff80000000, float:-0.0)
                     r3 = r1 & r2
                     if (r3 == 0) goto L13
                     int r1 = r1 - r2
-                    r0.f54582e = r1
+                    r0.f54579e = r1
                     goto L18
                 L13:
                     ym.a$a$a$a r0 = new ym.a$a$a$a
                     r0.<init>(r6)
                 L18:
-                    java.lang.Object r6 = r0.f54581d
+                    java.lang.Object r6 = r0.f54578d
                     java.lang.Object r1 = rr.b.f()
-                    int r2 = r0.f54582e
+                    int r2 = r0.f54579e
                     r3 = 1
                     if (r2 == 0) goto L31
                     if (r2 != r3) goto L29
@@ -91,10 +91,10 @@ public abstract class a {
                     throw r5
                 L31:
                     kotlin.c.b(r6)
-                    kotlinx.coroutines.flow.FlowCollector r6 = r4.f54580d
+                    kotlinx.coroutines.flow.FlowCollector r6 = r4.f54577d
                     wm.g r5 = (wm.g) r5
                     java.lang.Object r5 = r5.a()
-                    r0.f54582e = r3
+                    r0.f54579e = r3
                     java.lang.Object r5 = r6.emit(r5, r0)
                     if (r5 != r1) goto L45
                     return r1
@@ -107,12 +107,12 @@ public abstract class a {
         }
 
         public C0745a(Flow flow) {
-            this.f54579d = flow;
+            this.f54576d = flow;
         }
 
         @Override // kotlinx.coroutines.flow.Flow
         public Object collect(FlowCollector flowCollector, Continuation continuation) {
-            Object collect = this.f54579d.collect(new C0746a(flowCollector), continuation);
+            Object collect = this.f54576d.collect(new C0746a(flowCollector), continuation);
             if (collect == rr.b.f()) {
                 return collect;
             }
@@ -124,34 +124,34 @@ public abstract class a {
     static final class b extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f54584d;
+        int f54581d;
 
         /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f54585e;
+        /* synthetic */ Object f54582e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ androidx.lifecycle.b0 f54586i;
+        final /* synthetic */ androidx.lifecycle.b0 f54583i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(androidx.lifecycle.b0 b0Var, Continuation continuation) {
             super(2, continuation);
-            this.f54586i = b0Var;
+            this.f54583i = b0Var;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            b bVar = new b(this.f54586i, continuation);
-            bVar.f54585e = obj;
+            b bVar = new b(this.f54583i, continuation);
+            bVar.f54582e = obj;
             return bVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             rr.b.f();
-            if (this.f54584d == 0) {
+            if (this.f54581d == 0) {
                 kotlin.c.b(obj);
-                wm.g gVar = (wm.g) this.f54585e;
-                androidx.lifecycle.b0 b0Var = this.f54586i;
+                wm.g gVar = (wm.g) this.f54582e;
+                androidx.lifecycle.b0 b0Var = this.f54583i;
                 if (b0Var != null) {
                     b0Var.h("com.squareup.workflow1.ui.renderWorkflowIn-snapshot", new p(gVar.b()));
                 }

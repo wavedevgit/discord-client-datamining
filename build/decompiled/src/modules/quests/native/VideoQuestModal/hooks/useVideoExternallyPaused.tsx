@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/quests/native/VideoQuestModal/hooks/useVideoExternallyPaused.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun84109: for (var _fun84109_ip = 0;;) switch (_fun84109_ip) {
+        _fun84126: for (var _fun84126_ip = 0;;) switch (_fun84126_ip) {
             case 0:
                 var3 = arg1;
                 var7 = _closure1_slot0;
@@ -83,38 +83,38 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var6.isIOS;
                 var0 = var0.bind(var6)();
                 if (!var0) {
-                    _fun84109_ip = 203;
-                    continue _fun84109
+                    _fun84126_ip = 203;
+                    continue _fun84126
                 }
             case 200:
                 var0 = var3;
             case 203:
                 if (var0) {
-                    _fun84109_ip = 212;
-                    continue _fun84109
+                    _fun84126_ip = 212;
+                    continue _fun84126
                 }
             case 206:
                 var3 = null;
                 var0 = var3 != var5;
             case 212:
                 if (var0) {
-                    _fun84109_ip = 221;
-                    continue _fun84109
+                    _fun84126_ip = 221;
+                    continue _fun84126
                 }
             case 215:
                 var3 = null;
                 var0 = var3 != var4;
             case 221:
                 if (var0) {
-                    _fun84109_ip = 227;
-                    continue _fun84109
+                    _fun84126_ip = 227;
+                    continue _fun84126
                 }
             case 224:
                 var0 = var2;
             case 227:
                 if (var0) {
-                    _fun84109_ip = 233;
-                    continue _fun84109
+                    _fun84126_ip = 233;
+                    continue _fun84126
                 }
             case 230:
                 var0 = var1;

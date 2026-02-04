@@ -9,80 +9,98 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var0;
     var0 = '__esModule';
     var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = function arg0, arg1() {
-        _fun97498: for (var _fun97498_ip = 0;;) switch (_fun97498_ip) {
+    var0 = function arg0() {
+        _fun97510: for (var _fun97510_ip = 0;;) switch (_fun97510_ip) {
             case 0:
                 var4 = arg0;
-                var3 = arg1;
+                var3 = undefined;
+                var2 = undefined;
                 var1 = undefined;
+                var5 = undefined;
                 var0 = undefined;
-            case 10: // try_start_0
-                var1 = {};
-                var0 = {};
-                var2 = var4;
-                if (!var2) {
-                    _fun97498_ip = 105;
-                    continue _fun97498
+            case 13: // try_start_0
+                var6 = var4;
+                if (var6) {
+                    _fun97510_ip = 23;
+                    continue _fun97510
                 }
-            case 20:
-                var2 = {};
-                var5 = global;
-                var8 = var5.Math;
-                var7 = var8.ceil;
-                var6 = var4.width;
-                var6 = var7.bind(var8)(var6);
-                var2.screenWidth = var6;
-                var7 = var5.Math;
-                var6 = var7.ceil;
-                var5 = var4.height;
-                var5 = var6.bind(var7)(var5);
-                var2.screenHeight = var5;
-                var5 = var4.scale;
-                var2.screenScale = var5;
-                var4 = var4.fontScale;
-                var2.screenFontScale = var4;
-                var1 = var2;
-            case 105:
-                var2 = var3;
-                if (!var2) {
-                    _fun97498_ip = 198;
-                    continue _fun97498
+            case 19: // try_end0
+                var6 = null;
+                return var6;
+            case 23: // try_start_1
+                var6 = var4;
+                var6 = var6.reactNativeVersion;
+                if (var6) {
+                    _fun97510_ip = 39;
+                    continue _fun97510
                 }
-            case 111:
-                var2 = {};
-                var4 = global;
-                var7 = var4.Math;
-                var6 = var7.ceil;
-                var5 = var3.width;
-                var5 = var6.bind(var7)(var5);
-                var2.windowWidth = var5;
-                var6 = var4.Math;
-                var5 = var6.ceil;
-                var4 = var3.height;
-                var4 = var5.bind(var6)(var4);
-                var2.windowHeight = var4;
-                var4 = var3.scale;
-                var2.windowScale = var4;
-                var3 = var3.fontScale;
-                var2.windowFontScale = var3;
-                var0 = var2;
-            case 198:
-                var2 = global;
-                var4 = var2.Object;
-                var3 = var4.assign;
-                var2 = var1;
+            case 35: // try_end1
+                var6 = null;
+                return var6;
+            case 39: // try_start_2
+                var6 = var4;
+                var4 = var6.reactNativeVersion;
+                var4 = var4.major;
+                var3 = var4;
+                var7 = var6.reactNativeVersion;
+                var2 = var7.minor;
+                var7 = var6.reactNativeVersion;
+                var1 = var7.patch;
+                var6 = var6.reactNativeVersion;
+                var5 = var6.prerelease;
+                var6 = 'number';
+                var4 = typeof var4;
+                if (!(var6 === var4)) {
+                    _fun97510_ip = 221;
+                    continue _fun97510
+                }
+            case 104:
+                var6 = new Array(0);
+                var0 = var6;
+                var4 = var6.push;
+                var15 = var3;
+                var13 = var2;
+                var11 = var1;
+                var1 = global;
+                var2 = var1.HermesInternal;
+                var7 = var2.concat;
+                var2 = '';
+                var3 = '.';
+                var16 = var2;
+                var14 = var3;
+                var12 = var3;
+                var3 = var16[var7](var15, var14, var13, var12, var11, var10);
+                var3 = var4.bind(var6)(var3);
+                var3 = var5;
+                if (!var3) {
+                    _fun97510_ip = 206;
+                    continue _fun97510
+                }
+            case 170:
+                var4 = var0;
+                var3 = var4.push;
+                var6 = var5;
+                var1 = var1.HermesInternal;
+                var5 = var1.concat;
+                var1 = '-';
+                var1 = var5.bind(var1)(var6);
+                var1 = var3.bind(var4)(var1);
+            case 206:
                 var1 = var0;
-                var0 = {};
-                var0 = var3.bind(var4)(var0, var2, var1);
-            case 226: // try_end0
+                var0 = var1.join;
+                var0 = var0.bind(var1)(var2);
+            case 219: // try_end2
                 return var0;
-            case 228: // catch_target0
+            case 221:
+                var0 = null;
+                return var0;
+            case 225: // catch_target0 // catch_target1 // catch_target2
                 CatchBlockStart(arg_register = 0);
                 var0 = null;
                 return var0;
         }
     };
-    var1.getReactNativeDimensionsWithDimensions = var0;
+    var1.getReactNativeVersionWithModules = var0;
     var0 = undefined;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

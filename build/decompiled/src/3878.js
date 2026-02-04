@@ -45,7 +45,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = var3.bind(var4)(var2);
         var3 = var4.forEach;
         var2 = function(arg0) { // Environment: var1
-            _fun34986: for (var _fun34986_ip = 0;;) switch (_fun34986_ip) {
+            _fun34988: for (var _fun34988_ip = 0;;) switch (_fun34988_ip) {
                 case 0:
                     var0 = arg0;
                     var2 = var0.workletEventHandler;
@@ -59,14 +59,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var3.WorkletEventHandler;
                     var3 = var2 instanceof var3;
                     if (!var3) {
-                        _fun34986_ip = 73;
-                        continue _fun34986
+                        _fun34988_ip = 73;
+                        continue _fun34988
                     }
                 case 52:
                     var3 = var2.eventNames;
                     var2 = var3.forEach;
                     var1 = function(arg0) { // Environment: var1
-                        _fun34987: for (var _fun34987_ip = 0;;) switch (_fun34987_ip) {
+                        _fun34989: for (var _fun34989_ip = 0;;) switch (_fun34989_ip) {
                             case 0:
                                 var3 = arg0;
                                 var2 = _closure2_slot1;
@@ -76,8 +76,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var4 = var0[var3];
                                 var2 = _closure2_slot2;
                                 if (var4) {
-                                    _fun34987_ip = 62;
-                                    continue _fun34987
+                                    _fun34989_ip = 62;
+                                    continue _fun34989
                                 }
                             case 38:
                                 var4 = _closure3_slot0;
@@ -85,8 +85,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var4 = new Array(1);
                                 var4[0] = var5;
                                 var2[var3] = var4;
-                                _fun34987_ip = 86;
-                                continue _fun34987;
+                                _fun34989_ip = 86;
+                                continue _fun34989;
                             case 62:
                                 var5 = var2[var3];
                                 var4 = var5.push;
@@ -131,7 +131,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var3 = var7.bind(var3)(var2);
         var2 = var3.useEvent;
         var1 = function arg0() {
-            _fun34988: for (var _fun34988_ip = 0;;) switch (_fun34988_ip) {
+            _fun34990: for (var _fun34990_ip = 0;;) switch (_fun34990_ip) {
                 case 0:
                     var1 = arg0;
                     var _closure3_slot0 = var1;
@@ -139,8 +139,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var1.eventName;
                     var3 = var4[var3];
                     if (!var3) {
-                        _fun34988_ip = 58;
-                        continue _fun34988
+                        _fun34990_ip = 58;
+                        continue _fun34990
                     }
                 case 29:
                     var2 = _closure2_slot2;

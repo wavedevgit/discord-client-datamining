@@ -111,9 +111,9 @@ public abstract class BaseTransientBottomBar {
 
     /* renamed from: y  reason: collision with root package name */
     private final AccessibilityManager f14956y;
-    private static final TimeInterpolator A = zg.a.f55945b;
-    private static final TimeInterpolator B = zg.a.f55944a;
-    private static final TimeInterpolator C = zg.a.f55947d;
+    private static final TimeInterpolator A = zg.a.f55942b;
+    private static final TimeInterpolator B = zg.a.f55941a;
+    private static final TimeInterpolator C = zg.a.f55944d;
     private static final boolean E = false;
     private static final int[] F = {yg.b.W};
     private static final String G = BaseTransientBottomBar.class.getSimpleName();
@@ -623,19 +623,19 @@ public abstract class BaseTransientBottomBar {
             super(rh.a.c(context, attributeSet, 0, 0), attributeSet);
             Context context2 = getContext();
             TypedArray obtainStyledAttributes = context2.obtainStyledAttributes(attributeSet, yg.k.U5);
-            if (obtainStyledAttributes.hasValue(yg.k.f54290b6)) {
-                h0.v0(this, obtainStyledAttributes.getDimensionPixelSize(yg.k.f54290b6, 0));
+            if (obtainStyledAttributes.hasValue(yg.k.f54287b6)) {
+                h0.v0(this, obtainStyledAttributes.getDimensionPixelSize(yg.k.f54287b6, 0));
             }
             this.f14985i = obtainStyledAttributes.getInt(yg.k.X5, 0);
-            if (obtainStyledAttributes.hasValue(yg.k.f54310d6) || obtainStyledAttributes.hasValue(yg.k.f54320e6)) {
+            if (obtainStyledAttributes.hasValue(yg.k.f54307d6) || obtainStyledAttributes.hasValue(yg.k.f54317e6)) {
                 this.f14984e = oh.k.e(context2, attributeSet, 0, 0).m();
             }
             this.f14986o = obtainStyledAttributes.getFloat(yg.k.Y5, 1.0f);
             setBackgroundTintList(lh.c.a(context2, obtainStyledAttributes, yg.k.Z5));
-            setBackgroundTintMode(com.google.android.material.internal.o.i(obtainStyledAttributes.getInt(yg.k.f54280a6, -1), PorterDuff.Mode.SRC_IN));
+            setBackgroundTintMode(com.google.android.material.internal.o.i(obtainStyledAttributes.getInt(yg.k.f54277a6, -1), PorterDuff.Mode.SRC_IN));
             this.f14987p = obtainStyledAttributes.getFloat(yg.k.W5, 1.0f);
             this.f14988q = obtainStyledAttributes.getDimensionPixelSize(yg.k.V5, -1);
-            this.f14989r = obtainStyledAttributes.getDimensionPixelSize(yg.k.f54300c6, -1);
+            this.f14989r = obtainStyledAttributes.getDimensionPixelSize(yg.k.f54297c6, -1);
             obtainStyledAttributes.recycle();
             setOnTouchListener(f14982w);
             setFocusable(true);
@@ -645,7 +645,7 @@ public abstract class BaseTransientBottomBar {
         }
 
         private Drawable d() {
-            int k10 = eh.a.k(this, yg.b.f54103o, yg.b.f54099k, getBackgroundOverlayColorAlpha());
+            int k10 = eh.a.k(this, yg.b.f54100o, yg.b.f54096k, getBackgroundOverlayColorAlpha());
             oh.k kVar = this.f14984e;
             Drawable z10 = kVar != null ? BaseTransientBottomBar.z(k10, kVar) : BaseTransientBottomBar.y(k10, getResources());
             if (this.f14990s != null) {
@@ -1023,7 +1023,7 @@ public abstract class BaseTransientBottomBar {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static GradientDrawable y(int i10, Resources resources) {
-        float dimension = resources.getDimension(yg.d.f54132d0);
+        float dimension = resources.getDimension(yg.d.f54129d0);
         GradientDrawable gradientDrawable = new GradientDrawable();
         gradientDrawable.setShape(0);
         gradientDrawable.setCornerRadius(dimension);
@@ -1064,9 +1064,9 @@ public abstract class BaseTransientBottomBar {
 
     protected int H() {
         if (K()) {
-            return yg.h.f54220t;
+            return yg.h.f54217t;
         }
-        return yg.h.f54202b;
+        return yg.h.f54199b;
     }
 
     protected boolean K() {

@@ -26,7 +26,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
     private final String displayName;
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8273id;
+    private final String f8272id;
     private final String name;
     @NotNull
     private final String src;
@@ -59,9 +59,9 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
         this.src = str2;
         this.displayName = str3;
         if ((i10 & 8) == 0) {
-            this.f8273id = null;
+            this.f8272id = null;
         } else {
-            this.f8273id = str4;
+            this.f8272id = str4;
         }
         if ((i10 & 16) == 0) {
             this.animated = null;
@@ -81,7 +81,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
             str3 = messageReactionEmoji.displayName;
         }
         if ((i10 & 8) != 0) {
-            str4 = messageReactionEmoji.f8273id;
+            str4 = messageReactionEmoji.f8272id;
         }
         if ((i10 & 16) != 0) {
             bool = messageReactionEmoji.animated;
@@ -120,7 +120,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
     }
 
     public final String component4() {
-        return this.f8273id;
+        return this.f8272id;
     }
 
     public final Boolean component5() {
@@ -140,7 +140,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
         }
         if (obj instanceof MessageReactionEmoji) {
             MessageReactionEmoji messageReactionEmoji = (MessageReactionEmoji) obj;
-            return Intrinsics.areEqual(this.name, messageReactionEmoji.name) && Intrinsics.areEqual(this.src, messageReactionEmoji.src) && Intrinsics.areEqual(this.displayName, messageReactionEmoji.displayName) && Intrinsics.areEqual(this.f8273id, messageReactionEmoji.f8273id) && Intrinsics.areEqual(this.animated, messageReactionEmoji.animated);
+            return Intrinsics.areEqual(this.name, messageReactionEmoji.name) && Intrinsics.areEqual(this.src, messageReactionEmoji.src) && Intrinsics.areEqual(this.displayName, messageReactionEmoji.displayName) && Intrinsics.areEqual(this.f8272id, messageReactionEmoji.f8272id) && Intrinsics.areEqual(this.animated, messageReactionEmoji.animated);
         }
         return false;
     }
@@ -163,7 +163,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
 
     @Override // com.discord.reactions.ReactionView.Emoji
     public String getId() {
-        return this.f8273id;
+        return this.f8272id;
     }
 
     @Override // com.discord.reactions.ReactionView.Emoji
@@ -185,7 +185,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
     public int hashCode() {
         String str = this.name;
         int hashCode = (((((str == null ? 0 : str.hashCode()) * 31) + this.src.hashCode()) * 31) + this.displayName.hashCode()) * 31;
-        String str2 = this.f8273id;
+        String str2 = this.f8272id;
         int hashCode2 = (hashCode + (str2 == null ? 0 : str2.hashCode())) * 31;
         Boolean bool = this.animated;
         return hashCode2 + (bool != null ? bool.hashCode() : 0);
@@ -202,7 +202,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
         String str = this.name;
         String str2 = this.src;
         String str3 = this.displayName;
-        String str4 = this.f8273id;
+        String str4 = this.f8272id;
         Boolean bool = this.animated;
         return "MessageReactionEmoji(name=" + str + ", src=" + str2 + ", displayName=" + str3 + ", id=" + str4 + ", animated=" + bool + ")";
     }
@@ -213,7 +213,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
         this.name = str;
         this.src = src;
         this.displayName = displayName;
-        this.f8273id = str2;
+        this.f8272id = str2;
         this.animated = bool;
     }
 

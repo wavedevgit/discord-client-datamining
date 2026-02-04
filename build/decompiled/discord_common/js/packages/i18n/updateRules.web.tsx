@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = var1;
         var4 = copyDataProperties(var8, var7);
         var2 = function arg0, arg1, arg2() {
-            _fun112284: for (var _fun112284_ip = 0;;) switch (_fun112284_ip) {
+            _fun112297: for (var _fun112297_ip = 0;;) switch (_fun112297_ip) {
                 case 0:
                     var1 = arg0;
                     var0 = arg2;
@@ -86,27 +86,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var1.context;
                     var5 = null;
                     if (!(var5 != var3)) {
-                        _fun112284_ip = 78;
-                        continue _fun112284
+                        _fun112297_ip = 78;
+                        continue _fun112297
                     }
                 case 19:
                     var4 = var1.context;
                     var3 = var1.target;
                     var3 = var4[var3];
                     if (!var3) {
-                        _fun112284_ip = 46;
-                        continue _fun112284
+                        _fun112297_ip = 46;
+                        continue _fun112297
                     }
                 case 37:
                     var4 = var3.onClick;
                     if (var4) {
-                        _fun112284_ip = 54;
-                        continue _fun112284
+                        _fun112297_ip = 54;
+                        continue _fun112297
                     }
                 case 46:
                     var2.onClick = var3;
-                    _fun112284_ip = 78;
-                    continue _fun112284;
+                    _fun112297_ip = 78;
+                    continue _fun112297;
                 case 54:
                     var4 = var3.onClick;
                     var2.onClick = var4;
@@ -115,8 +115,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 78:
                     var3 = var2.onClick;
                     if (!(var5 == var3)) {
-                        _fun112284_ip = 158;
-                        continue _fun112284
+                        _fun112297_ip = 158;
+                        continue _fun112297
                     }
                 case 88:
                     var6 = _closure1_slot0;
@@ -130,8 +130,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var6.bind(var7)(var4);
                     var5 = var5 != var4;
                     if (!var5) {
-                        _fun112284_ip = 140;
-                        continue _fun112284
+                        _fun112297_ip = 140;
+                        continue _fun112297
                     }
                 case 137:
                     var3 = var4;

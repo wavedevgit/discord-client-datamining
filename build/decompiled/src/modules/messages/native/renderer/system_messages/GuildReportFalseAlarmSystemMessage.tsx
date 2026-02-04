@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/GuildReportFalseAlarmSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun55952: for (var _fun55952_ip = 0;;) switch (_fun55952_ip) {
+        _fun55955: for (var _fun55955_ip = 0;;) switch (_fun55955_ip) {
             case 0:
                 var7 = arg0;
                 var14 = var7.message;
@@ -80,8 +80,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = 'username';
                 var1 = null;
                 if (!(var6 === var10)) {
-                    _fun55952_ip = 231;
-                    continue _fun55952
+                    _fun55955_ip = 231;
+                    continue _fun55955
                 }
             case 228:
                 var1 = var9;
@@ -90,8 +90,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.roleColor = var9;
                 var1 = null;
                 if (!var15) {
-                    _fun55952_ip = 249;
-                    continue _fun55952
+                    _fun55955_ip = 249;
+                    continue _fun55955
                 }
             case 246:
                 var1 = var11;
@@ -100,8 +100,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 'dot';
                 var1 = var1 === var10;
                 if (!var1) {
-                    _fun55952_ip = 269;
-                    continue _fun55952
+                    _fun55955_ip = 269;
+                    continue _fun55955
                 }
             case 265:
                 var1 = var4 != var9;
@@ -156,8 +156,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4 != var3;
                 var4 = null;
                 if (!var5) {
-                    _fun55952_ip = 491;
-                    continue _fun55952
+                    _fun55955_ip = 491;
+                    continue _fun55955
                 }
             case 488:
                 var4 = var3;

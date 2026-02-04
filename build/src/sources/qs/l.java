@@ -9,19 +9,19 @@ import kotlin.jvm.internal.Ref;
 public final class l {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f48189b = AtomicReferenceFieldUpdater.newUpdater(l.class, Object.class, "lastScheduledTask$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f48186b = AtomicReferenceFieldUpdater.newUpdater(l.class, Object.class, "lastScheduledTask$volatile");
 
     /* renamed from: c  reason: collision with root package name */
-    private static final /* synthetic */ AtomicIntegerFieldUpdater f48190c = AtomicIntegerFieldUpdater.newUpdater(l.class, "producerIndex$volatile");
+    private static final /* synthetic */ AtomicIntegerFieldUpdater f48187c = AtomicIntegerFieldUpdater.newUpdater(l.class, "producerIndex$volatile");
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ AtomicIntegerFieldUpdater f48191d = AtomicIntegerFieldUpdater.newUpdater(l.class, "consumerIndex$volatile");
+    private static final /* synthetic */ AtomicIntegerFieldUpdater f48188d = AtomicIntegerFieldUpdater.newUpdater(l.class, "consumerIndex$volatile");
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ AtomicIntegerFieldUpdater f48192e = AtomicIntegerFieldUpdater.newUpdater(l.class, "blockingTasksInBuffer$volatile");
+    private static final /* synthetic */ AtomicIntegerFieldUpdater f48189e = AtomicIntegerFieldUpdater.newUpdater(l.class, "blockingTasksInBuffer$volatile");
 
     /* renamed from: a  reason: collision with root package name */
-    private final AtomicReferenceArray f48193a = new AtomicReferenceArray((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+    private final AtomicReferenceArray f48190a = new AtomicReferenceArray((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
     private volatile /* synthetic */ int blockingTasksInBuffer$volatile;
     private volatile /* synthetic */ int consumerIndex$volatile;
     private volatile /* synthetic */ Object lastScheduledTask$volatile;
@@ -31,37 +31,37 @@ public final class l {
         if (e() == 127) {
             return hVar;
         }
-        if (hVar.f48180e) {
-            f48192e.incrementAndGet(this);
+        if (hVar.f48177e) {
+            f48189e.incrementAndGet(this);
         }
-        int i10 = f48190c.get(this) & 127;
-        while (this.f48193a.get(i10) != null) {
+        int i10 = f48187c.get(this) & 127;
+        while (this.f48190a.get(i10) != null) {
             Thread.yield();
         }
-        this.f48193a.lazySet(i10, hVar);
-        f48190c.incrementAndGet(this);
+        this.f48190a.lazySet(i10, hVar);
+        f48187c.incrementAndGet(this);
         return null;
     }
 
     private final void c(h hVar) {
-        if (hVar != null && hVar.f48180e) {
-            f48192e.decrementAndGet(this);
+        if (hVar != null && hVar.f48177e) {
+            f48189e.decrementAndGet(this);
         }
     }
 
     private final int e() {
-        return f48190c.get(this) - f48191d.get(this);
+        return f48187c.get(this) - f48188d.get(this);
     }
 
     private final h m() {
         h hVar;
         while (true) {
-            int i10 = f48191d.get(this);
-            if (i10 - f48190c.get(this) == 0) {
+            int i10 = f48188d.get(this);
+            if (i10 - f48187c.get(this) == 0) {
                 return null;
             }
             int i11 = i10 & 127;
-            if (f48191d.compareAndSet(this, i10, i10 + 1) && (hVar = (h) this.f48193a.getAndSet(i11, null)) != null) {
+            if (f48188d.compareAndSet(this, i10, i10 + 1) && (hVar = (h) this.f48190a.getAndSet(i11, null)) != null) {
                 c(hVar);
                 return hVar;
             }
@@ -80,12 +80,12 @@ public final class l {
     private final h o(boolean z10) {
         h hVar;
         do {
-            hVar = (h) f48189b.get(this);
-            if (hVar == null || hVar.f48180e != z10) {
-                int i10 = f48191d.get(this);
-                int i11 = f48190c.get(this);
+            hVar = (h) f48186b.get(this);
+            if (hVar == null || hVar.f48177e != z10) {
+                int i10 = f48188d.get(this);
+                int i11 = f48187c.get(this);
                 while (i10 != i11) {
-                    if (z10 && f48192e.get(this) == 0) {
+                    if (z10 && f48189e.get(this) == 0) {
                         return null;
                     }
                     i11--;
@@ -96,19 +96,19 @@ public final class l {
                 }
                 return null;
             }
-        } while (!androidx.concurrent.futures.b.a(f48189b, this, hVar, null));
+        } while (!androidx.concurrent.futures.b.a(f48186b, this, hVar, null));
         return hVar;
     }
 
     private final h p(int i10) {
-        int i11 = f48191d.get(this);
-        int i12 = f48190c.get(this);
+        int i11 = f48188d.get(this);
+        int i12 = f48187c.get(this);
         boolean z10 = true;
         if (i10 != 1) {
             z10 = false;
         }
         while (i11 != i12) {
-            if (z10 && f48192e.get(this) == 0) {
+            if (z10 && f48189e.get(this) == 0) {
                 return null;
             }
             int i13 = i11 + 1;
@@ -124,12 +124,12 @@ public final class l {
 
     private final h q(int i10, boolean z10) {
         int i11 = i10 & 127;
-        h hVar = (h) this.f48193a.get(i11);
-        if (hVar == null || hVar.f48180e != z10 || !ls.l.a(this.f48193a, i11, hVar, null)) {
+        h hVar = (h) this.f48190a.get(i11);
+        if (hVar == null || hVar.f48177e != z10 || !ls.l.a(this.f48190a, i11, hVar, null)) {
             return null;
         }
         if (z10) {
-            f48192e.decrementAndGet(this);
+            f48189e.decrementAndGet(this);
         }
         return hVar;
     }
@@ -139,11 +139,11 @@ public final class l {
         ?? r02;
         int i11;
         do {
-            r02 = (h) f48189b.get(this);
+            r02 = (h) f48186b.get(this);
             if (r02 == 0) {
                 return -2L;
             }
-            if (r02.f48180e) {
+            if (r02.f48177e) {
                 i11 = 1;
             } else {
                 i11 = 2;
@@ -151,12 +151,12 @@ public final class l {
             if ((i11 & i10) == 0) {
                 return -2L;
             }
-            long a10 = j.f48187f.a() - r02.f48179d;
-            long j10 = j.f48183b;
+            long a10 = j.f48184f.a() - r02.f48176d;
+            long j10 = j.f48180b;
             if (a10 < j10) {
                 return j10 - a10;
             }
-        } while (!androidx.concurrent.futures.b.a(f48189b, this, r02, null));
+        } while (!androidx.concurrent.futures.b.a(f48186b, this, r02, null));
         objectRef.element = r02;
         return -1L;
     }
@@ -165,7 +165,7 @@ public final class l {
         if (z10) {
             return b(hVar);
         }
-        h hVar2 = (h) f48189b.getAndSet(this, hVar);
+        h hVar2 = (h) f48186b.getAndSet(this, hVar);
         if (hVar2 == null) {
             return null;
         }
@@ -173,14 +173,14 @@ public final class l {
     }
 
     public final int i() {
-        if (f48189b.get(this) != null) {
+        if (f48186b.get(this) != null) {
             return e() + 1;
         }
         return e();
     }
 
     public final void j(d dVar) {
-        h hVar = (h) f48189b.getAndSet(this, null);
+        h hVar = (h) f48186b.getAndSet(this, null);
         if (hVar != null) {
             dVar.a(hVar);
         }
@@ -189,7 +189,7 @@ public final class l {
     }
 
     public final h k() {
-        h hVar = (h) f48189b.getAndSet(this, null);
+        h hVar = (h) f48186b.getAndSet(this, null);
         if (hVar == null) {
             return m();
         }

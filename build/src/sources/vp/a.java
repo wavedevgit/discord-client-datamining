@@ -8,19 +8,19 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Window f51743a;
+    private final Window f51740a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f51744b;
+    private final boolean f51741b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f51745c;
+    private final boolean f51742c;
 
     public a(Window window, boolean z10, boolean z11) {
         Intrinsics.checkNotNullParameter(window, "window");
-        this.f51743a = window;
-        this.f51744b = z10;
-        this.f51745c = z11;
+        this.f51740a = window;
+        this.f51741b = z10;
+        this.f51742c = z11;
     }
 
     private final void b(Window window, int i10) {
@@ -30,7 +30,7 @@ public final class a {
         double d11 = r1.c.d(-16777216, rgb);
         WindowInsetsControllerCompat windowInsetsControllerCompat = new WindowInsetsControllerCompat(window, window.getDecorView());
         boolean z11 = false;
-        if (this.f51744b) {
+        if (this.f51741b) {
             if (d10 < d11) {
                 z10 = true;
             } else {
@@ -38,7 +38,7 @@ public final class a {
             }
             windowInsetsControllerCompat.d(z10);
         }
-        if (this.f51745c) {
+        if (this.f51742c) {
             if (d10 < d11) {
                 z11 = true;
             }
@@ -47,6 +47,6 @@ public final class a {
     }
 
     public final void a(int i10) {
-        b(this.f51743a, i10);
+        b(this.f51740a, i10);
     }
 }

@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/DownloadIllocon.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52569: for (var _fun52569_ip = 0;;) switch (_fun52569_ip) {
+        _fun52572: for (var _fun52572_ip = 0;;) switch (_fun52572_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.size;
                 var3 = undefined;
                 if (!(var7 === var3)) {
-                    _fun52569_ip = 32;
-                    continue _fun52569
+                    _fun52572_ip = 32;
+                    continue _fun52572
                 }
             case 29:
                 var7 = 64;

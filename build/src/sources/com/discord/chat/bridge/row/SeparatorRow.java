@@ -29,7 +29,7 @@ public final class SeparatorRow extends Row {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8274id;
+    private final String f8273id;
     private final int index;
     private final Boolean isBeforeContent;
     private final Boolean scrollTo;
@@ -62,7 +62,7 @@ public final class SeparatorRow extends Row {
         this.changeType = changeType;
         this.index = i11;
         this.text = str;
-        this.f8274id = str2;
+        this.f8273id = str2;
         this.color = i12;
         if ((i10 & 32) == 0) {
             this.scrollTo = null;
@@ -92,7 +92,7 @@ public final class SeparatorRow extends Row {
             str = separatorRow.text;
         }
         if ((i12 & 8) != 0) {
-            str2 = separatorRow.f8274id;
+            str2 = separatorRow.f8273id;
         }
         if ((i12 & 16) != 0) {
             i11 = separatorRow.color;
@@ -117,7 +117,7 @@ public final class SeparatorRow extends Row {
         compositeEncoder.D(serialDescriptor, 0, ChangeType.Serializer.INSTANCE, separatorRow.getChangeType());
         compositeEncoder.w(serialDescriptor, 1, separatorRow.getIndex());
         compositeEncoder.y(serialDescriptor, 2, separatorRow.text);
-        compositeEncoder.y(serialDescriptor, 3, separatorRow.f8274id);
+        compositeEncoder.y(serialDescriptor, 3, separatorRow.f8273id);
         compositeEncoder.w(serialDescriptor, 4, separatorRow.color);
         if (compositeEncoder.z(serialDescriptor, 5) || separatorRow.scrollTo != null) {
             compositeEncoder.s(serialDescriptor, 5, h.f20942a, separatorRow.scrollTo);
@@ -146,7 +146,7 @@ public final class SeparatorRow extends Row {
 
     @NotNull
     public final String component4() {
-        return this.f8274id;
+        return this.f8273id;
     }
 
     public final int component5() {
@@ -179,7 +179,7 @@ public final class SeparatorRow extends Row {
         }
         if (obj instanceof SeparatorRow) {
             SeparatorRow separatorRow = (SeparatorRow) obj;
-            return this.changeType == separatorRow.changeType && this.index == separatorRow.index && Intrinsics.areEqual(this.text, separatorRow.text) && Intrinsics.areEqual(this.f8274id, separatorRow.f8274id) && this.color == separatorRow.color && Intrinsics.areEqual(this.scrollTo, separatorRow.scrollTo) && Intrinsics.areEqual(this.isBeforeContent, separatorRow.isBeforeContent) && Intrinsics.areEqual(this.summary, separatorRow.summary);
+            return this.changeType == separatorRow.changeType && this.index == separatorRow.index && Intrinsics.areEqual(this.text, separatorRow.text) && Intrinsics.areEqual(this.f8273id, separatorRow.f8273id) && this.color == separatorRow.color && Intrinsics.areEqual(this.scrollTo, separatorRow.scrollTo) && Intrinsics.areEqual(this.isBeforeContent, separatorRow.isBeforeContent) && Intrinsics.areEqual(this.summary, separatorRow.summary);
         }
         return false;
     }
@@ -196,7 +196,7 @@ public final class SeparatorRow extends Row {
 
     @NotNull
     public final String getId() {
-        return this.f8274id;
+        return this.f8273id;
     }
 
     @Override // com.discord.chat.bridge.row.Row
@@ -218,7 +218,7 @@ public final class SeparatorRow extends Row {
     }
 
     public int hashCode() {
-        int hashCode = ((((((((this.changeType.hashCode() * 31) + Integer.hashCode(this.index)) * 31) + this.text.hashCode()) * 31) + this.f8274id.hashCode()) * 31) + Integer.hashCode(this.color)) * 31;
+        int hashCode = ((((((((this.changeType.hashCode() * 31) + Integer.hashCode(this.index)) * 31) + this.text.hashCode()) * 31) + this.f8273id.hashCode()) * 31) + Integer.hashCode(this.color)) * 31;
         Boolean bool = this.scrollTo;
         int hashCode2 = (hashCode + (bool == null ? 0 : bool.hashCode())) * 31;
         Boolean bool2 = this.isBeforeContent;
@@ -236,7 +236,7 @@ public final class SeparatorRow extends Row {
         ChangeType changeType = this.changeType;
         int i10 = this.index;
         String str = this.text;
-        String str2 = this.f8274id;
+        String str2 = this.f8273id;
         int i11 = this.color;
         Boolean bool = this.scrollTo;
         Boolean bool2 = this.isBeforeContent;
@@ -257,7 +257,7 @@ public final class SeparatorRow extends Row {
         this.changeType = changeType;
         this.index = i10;
         this.text = text;
-        this.f8274id = id2;
+        this.f8273id = id2;
         this.color = i11;
         this.scrollTo = bool;
         this.isBeforeContent = bool2;

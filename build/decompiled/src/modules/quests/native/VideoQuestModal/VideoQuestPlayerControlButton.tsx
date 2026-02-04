@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var3;
     var3 = var6.memo;
     var1 = function(arg0) { // Environment: var1
-        _fun84028: for (var _fun84028_ip = 0;;) switch (_fun84028_ip) {
+        _fun84045: for (var _fun84045_ip = 0;;) switch (_fun84045_ip) {
             case 0:
                 var2 = arg0;
                 var9 = var2.style;
@@ -99,8 +99,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6[0] = var10;
                 var10 = var5.disabled;
                 if (!var10) {
-                    _fun84028_ip = 111;
-                    continue _fun84028
+                    _fun84045_ip = 111;
+                    continue _fun84045
                 }
             case 106:
                 var10 = var8.disabled;

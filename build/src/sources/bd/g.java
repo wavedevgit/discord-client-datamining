@@ -1588,7 +1588,7 @@ public class g implements tc.k {
         this.f6445x = -9223372036854775807L;
         this.f6444w = -9223372036854775807L;
         this.f6446y = -9223372036854775807L;
-        this.E = tc.m.f49972l;
+        this.E = tc.m.f49969l;
         this.F = new b0[0];
         this.G = new b0[0];
     }

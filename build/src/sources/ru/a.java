@@ -6,7 +6,7 @@ import java.util.List;
 public final class a implements nu.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f49128a = new a();
+    public static final a f49125a = new a();
 
     private a() {
     }
@@ -26,7 +26,7 @@ public final class a implements nu.b {
     public List f(Object obj, Object obj2) {
         ArrayList arrayList = new ArrayList();
         for (Object obj3 : sv.a.c(obj)) {
-            if (!f49128a.b(c.f49130a.f(obj3, obj2))) {
+            if (!f49125a.b(c.f49127a.f(obj3, obj2))) {
                 obj3 = null;
             }
             if (obj3 != null) {

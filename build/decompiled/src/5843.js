@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun51514: for (var _fun51514_ip = 0;;) switch (_fun51514_ip) {
+    _fun51517: for (var _fun51517_ip = 0;;) switch (_fun51517_ip) {
         case 0:
             var6 = require;
             var10 = exports;
@@ -47,13 +47,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var4.bind(var0)(var3);
             var _closure1_slot2 = var3;
         case 176: // try_end0
-            _fun51514_ip = 180;
-            continue _fun51514;
+            _fun51517_ip = 180;
+            continue _fun51517;
         case 178: // catch_target0
             CatchBlockStart(arg_register = 3);
         case 180:
             var3 = function arg0() {
-                _fun51515: for (var _fun51515_ip = 0;;) switch (_fun51515_ip) {
+                _fun51518: for (var _fun51518_ip = 0;;) switch (_fun51518_ip) {
                     case 0:
                         var3 = arg0;
                         var8 = var3.enabled;
@@ -64,8 +64,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = _closure1_slot2;
                         var0 = null;
                         if (!(var0 == var2)) {
-                            _fun51515_ip = 74;
-                            continue _fun51515
+                            _fun51518_ip = 74;
+                            continue _fun51518
                         }
                     case 37:
                         var3 = _closure1_slot5;
@@ -76,8 +76,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var0 = {};
                         var0 = var5.bind(var6)(var0, var7);
                         var0 = var3.bind(var4)(var2, var0);
-                        _fun51515_ip = 119;
-                        continue _fun51515;
+                        _fun51518_ip = 119;
+                        continue _fun51518;
                     case 74:
                         var3 = _closure1_slot5;
                         var1 = _closure1_slot2;
@@ -95,7 +95,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var2.MaybeScreenContainer = var3;
             var1 = function arg0() {
-                _fun51516: for (var _fun51516_ip = 0;;) switch (_fun51516_ip) {
+                _fun51519: for (var _fun51519_ip = 0;;) switch (_fun51519_ip) {
                     case 0:
                         var3 = arg0;
                         var9 = var3.enabled;
@@ -107,8 +107,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = _closure1_slot2;
                         var0 = null;
                         if (!(var0 == var2)) {
-                            _fun51516_ip = 80;
-                            continue _fun51516
+                            _fun51519_ip = 80;
+                            continue _fun51519
                         }
                     case 43:
                         var3 = _closure1_slot5;
@@ -119,8 +119,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var0 = {};
                         var0 = var5.bind(var6)(var0, var7);
                         var0 = var3.bind(var4)(var2, var0);
-                        _fun51516_ip = 130;
-                        continue _fun51516;
+                        _fun51519_ip = 130;
+                        continue _fun51519;
                     case 80:
                         var3 = _closure1_slot5;
                         var1 = _closure1_slot2;

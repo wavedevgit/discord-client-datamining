@@ -104,7 +104,7 @@ public class p extends s {
         this.f15105o = LongCompanionObject.MAX_VALUE;
         this.f15096f = jh.g.f(rVar.getContext(), yg.b.L, 67);
         this.f15095e = jh.g.f(rVar.getContext(), yg.b.L, 50);
-        this.f15097g = jh.g.g(rVar.getContext(), yg.b.Q, zg.a.f55944a);
+        this.f15097g = jh.g.g(rVar.getContext(), yg.b.Q, zg.a.f55941a);
     }
 
     public static /* synthetic */ void A(p pVar) {
@@ -266,16 +266,16 @@ public class p extends s {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public int c() {
-        return yg.i.f54230g;
+        return yg.i.f54227g;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public int d() {
         if (f15094s) {
-            return yg.e.f54166h;
+            return yg.e.f54163h;
         }
-        return yg.e.f54167i;
+        return yg.e.f54164i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

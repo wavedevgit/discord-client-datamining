@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun44901: for (var _fun44901_ip = 0;;) switch (_fun44901_ip) {
+    _fun44904: for (var _fun44904_ip = 0;;) switch (_fun44904_ip) {
         case 0:
             var13 = require;
             var8 = metroImportDefault;
@@ -9,7 +9,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot0 = var13;
             var _closure1_slot1 = var14;
             var0 = function() {
-                _fun44902: for (var _fun44902_ip = 0;;) switch (_fun44902_ip) {
+                _fun44905: for (var _fun44905_ip = 0;;) switch (_fun44905_ip) {
                     case 0:
                     case 2: // try_start_0
                         var1 = global;
@@ -30,8 +30,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = !var1;
                         var _closure2_slot0 = var1;
                     case 70: // try_end0
-                        _fun44902_ip = 74;
-                        continue _fun44902;
+                        _fun44905_ip = 74;
+                        continue _fun44905;
                     case 72: // catch_target0
                         CatchBlockStart(arg_register = 1);
                     case 74:
@@ -90,7 +90,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = var4.Component;
             var1 = function(arg0) { // Environment: var1
                 var3 = function() {
-                    _fun44906: for (var _fun44906_ip = 0;;) switch (_fun44906_ip) {
+                    _fun44909: for (var _fun44909_ip = 0;;) switch (_fun44909_ip) {
                         case 0:
                             var3 = this;
                             var2 = undefined;
@@ -104,16 +104,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var0 = _closure1_slot7;
                             var0 = var0.bind(var2)();
                             if (var0) {
-                                _fun44906_ip = 69;
-                                continue _fun44906
+                                _fun44909_ip = 69;
+                                continue _fun44909
                             }
                         case 51:
                             var6 = var8.apply;
                             var4 = arguments;
                             var0 = var4;
                             var0 = var6.bind(var8)(var3, var0);
-                            _fun44906_ip = 105;
-                            continue _fun44906;
+                            _fun44909_ip = 105;
+                            continue _fun44909;
                         case 69:
                             var6 = global;
                             var7 = var6.Reflect;
@@ -176,15 +176,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = null;
             var1 = var9;
             if (!(var4 != var6)) {
-                _fun44901_ip = 311;
-                continue _fun44901
+                _fun44904_ip = 311;
+                continue _fun44904
             }
         case 223:
             var7 = var6.forceTouchAvailable;
             var1 = var9;
             if (!var7) {
-                _fun44901_ip = 311;
-                continue _fun44901
+                _fun44904_ip = 311;
+                continue _fun44904
             }
         case 235:
             var7 = 9;
@@ -209,15 +209,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var7 = var4 == var6;
             var4 = undefined;
             if (var7) {
-                _fun44901_ip = 326;
-                continue _fun44901
+                _fun44904_ip = 326;
+                continue _fun44904
             }
         case 320:
             var4 = var6.forceTouchAvailable;
         case 326:
             if (var4) {
-                _fun44901_ip = 331;
-                continue _fun44901
+                _fun44904_ip = 331;
+                continue _fun44904
             }
         case 329:
             var4 = false;

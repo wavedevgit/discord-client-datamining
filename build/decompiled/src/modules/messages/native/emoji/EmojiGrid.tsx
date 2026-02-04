@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var7)(var3);
     var _closure1_slot5 = var3;
     var3 = function arg0() {
-        _fun74266: for (var _fun74266_ip = 0;;) switch (_fun74266_ip) {
+        _fun74283: for (var _fun74283_ip = 0;;) switch (_fun74283_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.guildEmoji;
@@ -82,8 +82,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var0.id;
                 var6 = null;
                 if (!(var6 != var8)) {
-                    _fun74266_ip = 121;
-                    continue _fun74266
+                    _fun74283_ip = 121;
+                    continue _fun74283
                 }
             case 59:
                 var8 = _closure1_slot1;
@@ -100,8 +100,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = 48;
                 var6.size = var10;
                 var6 = var8.bind(var9)(var6);
-                _fun74266_ip = 157;
-                continue _fun74266;
+                _fun74283_ip = 157;
+                continue _fun74283;
             case 121:
                 var8 = _closure1_slot1;
                 var9 = _closure1_slot2;
@@ -132,15 +132,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/emoji/EmojiGrid.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun74267: for (var _fun74267_ip = 0;;) switch (_fun74267_ip) {
+        _fun74284: for (var _fun74284_ip = 0;;) switch (_fun74284_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.expressionSourceGuild;
                 var2 = var0.doNotDisplayEmojiIds;
                 var3 = undefined;
                 if (!(var2 === var3)) {
-                    _fun74267_ip = 27;
-                    continue _fun74267
+                    _fun74284_ip = 27;
+                    continue _fun74284
                 }
             case 23:
                 var2 = new Array(0);
@@ -148,16 +148,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot0 = var2;
                 var9 = var0.numberToShow;
                 if (!(var9 === var3)) {
-                    _fun74267_ip = 46;
-                    continue _fun74267
+                    _fun74284_ip = 46;
+                    continue _fun74284
                 }
             case 43:
                 var9 = 10;
             case 46:
                 var2 = var0.maxPerRow;
                 if (!(var2 === var3)) {
-                    _fun74267_ip = 59;
-                    continue _fun74267
+                    _fun74284_ip = 59;
+                    continue _fun74284
                 }
             case 56:
                 var2 = 5;
@@ -182,15 +182,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var0 == var1;
                 var10 = undefined;
                 if (var8) {
-                    _fun74267_ip = 141;
-                    continue _fun74267
+                    _fun74284_ip = 141;
+                    continue _fun74284
                 }
             case 135:
                 var10 = var1.emojis;
             case 141:
                 if (!(var0 == var10)) {
-                    _fun74267_ip = 149;
-                    continue _fun74267
+                    _fun74284_ip = 149;
+                    continue _fun74284
                 }
             case 145:
                 var10 = new Array(0);
@@ -280,4 +280,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.EmojiGrid = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3108, 1417, 5769, 9328, 8564, 9341, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3108, 1417, 5769, 9331, 8567, 9344, 2]);

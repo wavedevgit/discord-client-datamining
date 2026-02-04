@@ -53,7 +53,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var5)(var3);
     var _closure1_slot4 = var3;
     var1 = function arg0() {
-        _fun51277: for (var _fun51277_ip = 0;;) switch (_fun51277_ip) {
+        _fun51280: for (var _fun51280_ip = 0;;) switch (_fun51280_ip) {
             case 0:
                 var2 = arg0;
                 var8 = var2.visible;
@@ -75,8 +75,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var10 = 'none';
                 var4 = var10;
                 if (!var8) {
-                    _fun51277_ip = 87;
-                    continue _fun51277
+                    _fun51280_ip = 87;
+                    continue _fun51280
                 }
             case 83:
                 var4 = 'auto';
@@ -89,8 +89,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     'removeClippedSubviews': true
                 };
                 if (!var8) {
-                    _fun51277_ip = 121;
-                    continue _fun51277
+                    _fun51280_ip = 121;
+                    continue _fun51280
                 }
             case 117:
                 var10 = 'auto';
@@ -98,13 +98,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4.pointerEvents = var10;
                 var9 = _closure1_slot4;
                 if (var8) {
-                    _fun51277_ip = 141;
-                    continue _fun51277
+                    _fun51280_ip = 141;
+                    continue _fun51280
                 }
             case 133:
                 var8 = var9.detached;
-                _fun51277_ip = 147;
-                continue _fun51277;
+                _fun51280_ip = 147;
+                continue _fun51280;
             case 141:
                 var8 = var9.attached;
             case 147:

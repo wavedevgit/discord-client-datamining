@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
     var2 = function arg0() {
-        _fun12887: for (var _fun12887_ip = 0;;) switch (_fun12887_ip) {
+        _fun12889: for (var _fun12889_ip = 0;;) switch (_fun12889_ip) {
             case 0:
                 var0 = arg0;
                 var5 = undefined;
@@ -23,19 +23,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = arguments.length;
                 var3 = 1;
                 if (!(var2 > var3)) {
-                    _fun12887_ip = 31;
-                    continue _fun12887
+                    _fun12889_ip = 31;
+                    continue _fun12889
                 }
             case 23:
                 var2 = arguments[var3];
                 if (!(var5 === var2)) {
-                    _fun12887_ip = 35;
-                    continue _fun12887
+                    _fun12889_ip = 35;
+                    continue _fun12889
                 }
             case 31:
                 var2 = {};
-                _fun12887_ip = 39;
-                continue _fun12887;
+                _fun12889_ip = 39;
+                continue _fun12889;
             case 35:
                 var2 = arguments[var3];
             case 39:
@@ -43,12 +43,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = 'function';
                 var2 = typeof var0;
                 if (!(var3 === var2)) {
-                    _fun12887_ip = 59;
-                    continue _fun12887
+                    _fun12889_ip = 59;
+                    continue _fun12889
                 }
             case 54:
                 var0 = function() { // Environment: var1
-                    _fun12888: for (var _fun12888_ip = 0;;) switch (_fun12888_ip) {
+                    _fun12890: for (var _fun12890_ip = 0;;) switch (_fun12890_ip) {
                         case 0:
                             var0 = undefined;
                             var2 = undefined;
@@ -72,8 +72,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = _closure2_slot1;
                             var4 = var4.loggerMessage;
                             if (var4) {
-                                _fun12888_ip = 122;
-                                continue _fun12888
+                                _fun12890_ip = 122;
+                                continue _fun12890
                             }
                         case 80:
                             var4 = _closure2_slot0;
@@ -84,8 +84,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var8 = 'The ';
                             var4 = ' callback threw an error';
                             var4 = var9.bind(var8)(var10, var4);
-                            _fun12888_ip = 132;
-                            continue _fun12888;
+                            _fun12890_ip = 132;
+                            continue _fun12890;
                         case 122:
                             var7 = _closure2_slot1;
                             var4 = var7.loggerMessage;
@@ -95,8 +95,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = var3 <= var1;
                             var0 = undefined;
                             if (var3) {
-                                _fun12888_ip = 154;
-                                continue _fun12888
+                                _fun12890_ip = 154;
+                                continue _fun12890
                             }
                         case 150:
                             var0 = arguments[var1];
@@ -110,17 +110,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.safeFactory = var2;
     var0 = function arg0() {
-        _fun12889: for (var _fun12889_ip = 0;;) switch (_fun12889_ip) {
+        _fun12891: for (var _fun12891_ip = 0;;) switch (_fun12891_ip) {
             case 0:
                 var0 = arg0;
                 var _closure2_slot0 = var0;
                 if (!var0) {
-                    _fun12889_ip = 17;
-                    continue _fun12889
+                    _fun12891_ip = 17;
+                    continue _fun12891
                 }
             case 12:
                 var0 = function() { // Environment: var1
-                    _fun12890: for (var _fun12890_ip = 0;;) switch (_fun12890_ip) {
+                    _fun12892: for (var _fun12892_ip = 0;;) switch (_fun12892_ip) {
                         case 0:
                             var3 = undefined;
                             var0 = undefined;

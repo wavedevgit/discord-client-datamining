@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/FlagIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun71596: for (var _fun71596_ip = 0;;) switch (_fun71596_ip) {
+        _fun71613: for (var _fun71613_ip = 0;;) switch (_fun71613_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun71596_ip = 53;
-                    continue _fun71596
+                    _fun71613_ip = 53;
+                    continue _fun71613
                 }
             case 19:
                 var1 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.FlagIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3150, 8944, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3150, 8947, 2]);

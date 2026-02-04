@@ -3,25 +3,25 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = module;
     var _closure1_slot0 = var0;
     var1 = function arg0() {
-        _fun45669: for (var _fun45669_ip = 0;;) switch (_fun45669_ip) {
+        _fun45672: for (var _fun45672_ip = 0;;) switch (_fun45672_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = global;
                 var1 = var3.Object;
                 var1 = var1.setPrototypeOf;
                 if (var1) {
-                    _fun45669_ip = 33;
-                    continue _fun45669
+                    _fun45672_ip = 33;
+                    continue _fun45672
                 }
             case 24:
                 var1 = function(arg0) { // Environment: var1
-                    _fun45670: for (var _fun45670_ip = 0;;) switch (_fun45670_ip) {
+                    _fun45673: for (var _fun45673_ip = 0;;) switch (_fun45673_ip) {
                         case 0:
                             var3 = arg0;
                             var0 = var3.__proto__;
                             if (var0) {
-                                _fun45670_ip = 31;
-                                continue _fun45670
+                                _fun45673_ip = 31;
+                                continue _fun45673
                             }
                         case 12:
                             var1 = global;
@@ -32,8 +32,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             return var0;
                     }
                 };
-                _fun45669_ip = 54;
-                continue _fun45669;
+                _fun45672_ip = 54;
+                continue _fun45672;
             case 33:
                 var3 = var3.Object;
                 var4 = var3.getPrototypeOf;

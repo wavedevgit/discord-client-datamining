@@ -7,34 +7,34 @@ import kotlin.enums.EnumEntries;
 public final class o {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final o f49107d = new o("SUCCESSFUL", 0);
+    public static final o f49104d = new o("SUCCESSFUL", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final o f49108e = new o("REREGISTER", 1);
+    public static final o f49105e = new o("REREGISTER", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final o f49109i = new o("CANCELLED", 2);
+    public static final o f49106i = new o("CANCELLED", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    public static final o f49110o = new o("ALREADY_SELECTED", 3);
+    public static final o f49107o = new o("ALREADY_SELECTED", 3);
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ o[] f49111p;
+    private static final /* synthetic */ o[] f49108p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f49112q;
+    private static final /* synthetic */ EnumEntries f49109q;
 
     static {
         o[] a10 = a();
-        f49111p = a10;
-        f49112q = sr.a.a(a10);
+        f49108p = a10;
+        f49109q = sr.a.a(a10);
     }
 
     private o(String str, int i10) {
     }
 
     private static final /* synthetic */ o[] a() {
-        return new o[]{f49107d, f49108e, f49109i, f49110o};
+        return new o[]{f49104d, f49105e, f49106i, f49107o};
     }
 
     public static o valueOf(String str) {
@@ -42,6 +42,6 @@ public final class o {
     }
 
     public static o[] values() {
-        return (o[]) f49111p.clone();
+        return (o[]) f49108p.clone();
     }
 }

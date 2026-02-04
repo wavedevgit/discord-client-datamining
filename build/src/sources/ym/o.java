@@ -12,16 +12,16 @@ import kotlin.reflect.KClass;
 public final class o implements c0 {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final o f54657b = new o();
+    public static final o f54654b = new o();
 
     /* renamed from: a  reason: collision with root package name */
-    private final /* synthetic */ i f54658a = new i(Reflection.getOrCreateKotlinClass(n.class), a.f54659d, null, null, 12, null);
+    private final /* synthetic */ i f54655a = new i(Reflection.getOrCreateKotlinClass(n.class), a.f54656d, null, null, 12, null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static final class a extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f54659d = new a();
+        public static final a f54656d = new a();
 
         a() {
             super(1);
@@ -44,11 +44,11 @@ public final class o implements c0 {
         Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
         Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
         Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-        return this.f54658a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+        return this.f54655a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
     }
 
     @Override // ym.c0
     public KClass getType() {
-        return this.f54658a.getType();
+        return this.f54655a.getType();
     }
 }

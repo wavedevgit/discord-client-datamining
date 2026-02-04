@@ -3,14 +3,14 @@ package xn;
 public final class e implements wq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f53482a;
+    private final c f53479a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final wq.h f53483b;
+    private final wq.h f53480b;
 
     public e(c cVar, wq.h hVar) {
-        this.f53482a = cVar;
-        this.f53483b = hVar;
+        this.f53479a = cVar;
+        this.f53480b = hVar;
     }
 
     public static e a(c cVar, wq.h hVar) {
@@ -24,6 +24,6 @@ public final class e implements wq.d {
     @Override // javax.inject.Provider
     /* renamed from: c */
     public a get() {
-        return b(this.f53482a, (j) this.f53483b.get());
+        return b(this.f53479a, (j) this.f53480b.get());
     }
 }

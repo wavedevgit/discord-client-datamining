@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/premium_marketing/utils/PremiumNitroHomeUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun59559: for (var _fun59559_ip = 0;;) switch (_fun59559_ip) {
+        _fun59576: for (var _fun59576_ip = 0;;) switch (_fun59576_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.nativeEvent;
@@ -39,8 +39,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.contentSize;
                 var0 = var1.current;
                 if (var0) {
-                    _fun59559_ip = 123;
-                    continue _fun59559
+                    _fun59576_ip = 123;
+                    continue _fun59576
                 }
             case 47:
                 var4 = global;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3 < var2;
             case 123:
                 if (var0) {
-                    _fun59559_ip = 186;
-                    continue _fun59559
+                    _fun59576_ip = 186;
+                    continue _fun59576
                 }
             case 126:
                 var4 = _closure1_slot0;

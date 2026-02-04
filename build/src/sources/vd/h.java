@@ -10,7 +10,7 @@ import ne.s0;
 public interface h {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final h f51427a = new d();
+    public static final h f51424a = new d();
 
     j a(Uri uri, Format format, List list, s0 s0Var, Map map, tc.l lVar, t1 t1Var);
 }

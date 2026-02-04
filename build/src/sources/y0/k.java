@@ -12,37 +12,37 @@ import y0.h;
 public abstract class k {
 
     /* renamed from: b */
-    private static final long f53621b = 0;
+    private static final long f53618b = 0;
 
     /* renamed from: e */
-    private static h f53624e;
+    private static h f53621e;
 
     /* renamed from: f */
-    private static long f53625f;
+    private static long f53622f;
 
     /* renamed from: g */
-    private static final f f53626g;
+    private static final f f53623g;
 
     /* renamed from: h */
-    private static final m f53627h;
+    private static final m f53624h;
 
     /* renamed from: i */
-    private static List f53628i;
+    private static List f53625i;
 
     /* renamed from: j */
-    private static List f53629j;
+    private static List f53626j;
 
     /* renamed from: k */
-    private static final b f53630k;
+    private static final b f53627k;
 
     /* renamed from: l */
-    private static final e f53631l;
+    private static final e f53628l;
 
     /* renamed from: m */
-    private static x0.a f53632m;
+    private static x0.a f53629m;
 
     /* renamed from: a */
-    private static final Function1 f53620a = new Function1() { // from class: y0.j
+    private static final Function1 f53617a = new Function1() { // from class: y0.j
         @Override // kotlin.jvm.functions.Function1
         public final Object invoke(Object obj) {
             Unit f10;
@@ -52,40 +52,40 @@ public abstract class k {
     };
 
     /* renamed from: c */
-    private static final x0.b f53622c = new x0.b();
+    private static final x0.b f53619c = new x0.b();
 
     /* renamed from: d */
-    private static final Object f53623d = new Object();
+    private static final Object f53620d = new Object();
 
     static {
-        h.a aVar = h.f53608p;
-        f53624e = aVar.a();
+        h.a aVar = h.f53605p;
+        f53621e = aVar.a();
         long j10 = 1;
-        f53625f = i.c(1) + j10;
-        f53626g = new f();
-        f53627h = new m();
-        f53628i = CollectionsKt.l();
-        f53629j = CollectionsKt.l();
-        long j11 = f53625f;
-        f53625f = j10 + j11;
+        f53622f = i.c(1) + j10;
+        f53623g = new f();
+        f53624h = new m();
+        f53625i = CollectionsKt.l();
+        f53626j = CollectionsKt.l();
+        long j11 = f53622f;
+        f53622f = j10 + j11;
         b bVar = new b(j11, aVar.a());
-        f53624e = f53624e.i(bVar.d());
-        f53630k = bVar;
-        f53631l = bVar;
-        f53632m = new x0.a(0);
+        f53621e = f53621e.i(bVar.d());
+        f53627k = bVar;
+        f53628l = bVar;
+        f53629m = new x0.a(0);
     }
 
     public static final /* synthetic */ List b() {
-        return f53629j;
+        return f53626j;
     }
 
     public static final /* synthetic */ long c() {
-        return f53621b;
+        return f53618b;
     }
 
     public static final p d(p pVar) {
         p l10;
-        e.a aVar = e.f53597d;
+        e.a aVar = e.f53594d;
         e a10 = aVar.a();
         p l11 = l(pVar, a10.d(), a10.a());
         if (l11 == null) {
@@ -103,9 +103,9 @@ public abstract class k {
     }
 
     public static final e e() {
-        e eVar = (e) f53622c.a();
+        e eVar = (e) f53619c.a();
         if (eVar == null) {
-            return f53630k;
+            return f53627k;
         }
         return eVar;
     }
@@ -115,7 +115,7 @@ public abstract class k {
     }
 
     public static final Object g() {
-        return f53623d;
+        return f53620d;
     }
 
     public static final p h(p pVar, n nVar) {
@@ -179,7 +179,7 @@ public abstract class k {
 
     public static final p m(p pVar, n nVar) {
         p l10;
-        e.a aVar = e.f53597d;
+        e.a aVar = e.f53594d;
         e a10 = aVar.a();
         Function1 b10 = a10.b();
         if (b10 != null) {
@@ -206,17 +206,17 @@ public abstract class k {
         int a10;
         long h10 = hVar.h(j10);
         synchronized (g()) {
-            a10 = f53626g.a(h10);
+            a10 = f53623g.a(h10);
         }
         return a10;
     }
 
     private static final p o(n nVar) {
-        long d10 = f53626g.d(f53625f) - 1;
-        h a10 = h.f53608p.a();
+        long d10 = f53623g.d(f53622f) - 1;
+        h a10 = h.f53605p.a();
         p pVar = null;
         for (p b10 = nVar.b(); b10 != null; b10 = b10.b()) {
-            if (b10.c() != f53621b) {
+            if (b10.c() != f53618b) {
                 if (q(b10, d10, a10)) {
                     if (pVar == null) {
                         pVar = b10;
@@ -231,7 +231,7 @@ public abstract class k {
     }
 
     private static final boolean p(long j10, long j11, h hVar) {
-        if (j11 != f53621b && Intrinsics.compare(j11, j10) <= 0 && !hVar.g(j11)) {
+        if (j11 != f53618b && Intrinsics.compare(j11, j10) <= 0 && !hVar.g(j11)) {
             return true;
         }
         return false;

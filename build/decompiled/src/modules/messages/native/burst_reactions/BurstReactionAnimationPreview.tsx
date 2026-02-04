@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/burst_reactions/BurstReactionAnimationPreview.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun54647: for (var _fun54647_ip = 0;;) switch (_fun54647_ip) {
+        _fun54650: for (var _fun54650_ip = 0;;) switch (_fun54650_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.channelId;
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.BURST;
                 var0 = null;
                 if (!(var3 === var2)) {
-                    _fun54647_ip = 120;
-                    continue _fun54647
+                    _fun54650_ip = 120;
+                    continue _fun54650
                 }
             case 68:
                 var3 = _closure1_slot3;

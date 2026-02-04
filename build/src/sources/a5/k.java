@@ -100,10 +100,10 @@ public final class k implements h {
                         if (u10) {
                             drawable = new BitmapDrawable(g10.getResources(), n.f32186a.a(drawable, this.f420b.f(), this.f420b.o(), this.f420b.n(), this.f420b.c()));
                         }
-                        return new f(drawable, u10, x4.h.f53113i);
+                        return new f(drawable, u10, x4.h.f53110i);
                     }
                     TypedValue typedValue2 = new TypedValue();
-                    return new l(u.g(x.d(x.k(resourcesForApplication.openRawResource(intValue, typedValue2))), g10, new v(authority, intValue, typedValue2.density)), j10, x4.h.f53113i);
+                    return new l(u.g(x.d(x.k(resourcesForApplication.openRawResource(intValue, typedValue2))), g10, new v(authority, intValue, typedValue2.density)), j10, x4.h.f53110i);
                 }
                 b(this.f419a);
                 throw new lr.h();

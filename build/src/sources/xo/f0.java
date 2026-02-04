@@ -8,29 +8,29 @@ import kotlin.jvm.internal.Intrinsics;
 public final class f0 extends ActivityResultLauncher {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ActivityResultContract f53519a;
+    private final ActivityResultContract f53516a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ActivityResultCallback f53520b;
+    private final ActivityResultCallback f53517b;
 
     /* renamed from: c  reason: collision with root package name */
-    private ActivityResultLauncher f53521c;
+    private ActivityResultLauncher f53518c;
 
     public f0(ActivityResultContract contract, ActivityResultCallback callback) {
         Intrinsics.checkNotNullParameter(contract, "contract");
         Intrinsics.checkNotNullParameter(callback, "callback");
-        this.f53519a = contract;
-        this.f53520b = callback;
+        this.f53516a = contract;
+        this.f53517b = callback;
     }
 
     @Override // androidx.activity.result.ActivityResultLauncher
     public ActivityResultContract a() {
-        return this.f53519a;
+        return this.f53516a;
     }
 
     @Override // androidx.activity.result.ActivityResultLauncher
     public void c(Object obj, androidx.core.app.d dVar) {
-        ActivityResultLauncher activityResultLauncher = this.f53521c;
+        ActivityResultLauncher activityResultLauncher = this.f53518c;
         if (activityResultLauncher != null) {
             activityResultLauncher.c(obj, dVar);
         }
@@ -38,7 +38,7 @@ public final class f0 extends ActivityResultLauncher {
 
     @Override // androidx.activity.result.ActivityResultLauncher
     public void d() {
-        ActivityResultLauncher activityResultLauncher = this.f53521c;
+        ActivityResultLauncher activityResultLauncher = this.f53518c;
         if (activityResultLauncher != null) {
             activityResultLauncher.d();
         }
@@ -46,6 +46,6 @@ public final class f0 extends ActivityResultLauncher {
 
     public final void e(d.b activityResultCaller) {
         Intrinsics.checkNotNullParameter(activityResultCaller, "activityResultCaller");
-        this.f53521c = activityResultCaller.registerForActivityResult(a(), this.f53520b);
+        this.f53518c = activityResultCaller.registerForActivityResult(a(), this.f53517b);
     }
 }

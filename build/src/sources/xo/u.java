@@ -6,14 +6,14 @@ import kotlin.jvm.internal.Intrinsics;
 public final class u {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ActivityResultLauncher f53536a;
+    private final ActivityResultLauncher f53533a;
 
     public u(ActivityResultLauncher requestPermissionResultLauncher) {
         Intrinsics.checkNotNullParameter(requestPermissionResultLauncher, "requestPermissionResultLauncher");
-        this.f53536a = requestPermissionResultLauncher;
+        this.f53533a = requestPermissionResultLauncher;
     }
 
     public final ActivityResultLauncher a() {
-        return this.f53536a;
+        return this.f53533a;
     }
 }

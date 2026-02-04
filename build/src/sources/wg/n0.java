@@ -6,25 +6,25 @@ import java.util.concurrent.Callable;
 public final class n0 implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ m0 f52420d;
+    final /* synthetic */ m0 f52417d;
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ Callable f52421e;
+    final /* synthetic */ Callable f52418e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n0(m0 m0Var, Callable callable) {
-        this.f52420d = m0Var;
-        this.f52421e = callable;
+        this.f52417d = m0Var;
+        this.f52418e = callable;
     }
 
     @Override // java.lang.Runnable
     public final void run() {
         try {
-            this.f52420d.t(this.f52421e.call());
+            this.f52417d.t(this.f52418e.call());
         } catch (Exception e10) {
-            this.f52420d.s(e10);
+            this.f52417d.s(e10);
         } catch (Throwable th2) {
-            this.f52420d.s(new RuntimeException(th2));
+            this.f52417d.s(new RuntimeException(th2));
         }
     }
 }

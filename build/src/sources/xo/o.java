@@ -6,14 +6,14 @@ import kotlin.jvm.internal.Intrinsics;
 public final class o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ActivityResultLauncher f53528a;
+    private final ActivityResultLauncher f53525a;
 
     public o(ActivityResultLauncher openDocumentResultLauncher) {
         Intrinsics.checkNotNullParameter(openDocumentResultLauncher, "openDocumentResultLauncher");
-        this.f53528a = openDocumentResultLauncher;
+        this.f53525a = openDocumentResultLauncher;
     }
 
     public final ActivityResultLauncher a() {
-        return this.f53528a;
+        return this.f53525a;
     }
 }

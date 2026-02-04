@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = module;
     var _closure1_slot0 = var0;
     var1 = function() {
-        _fun45763: for (var _fun45763_ip = 0;;) switch (_fun45763_ip) {
+        _fun45766: for (var _fun45766_ip = 0;;) switch (_fun45766_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -24,8 +24,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun45763_ip = 74;
-                continue _fun45763;
+                _fun45766_ip = 74;
+                continue _fun45766;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:

@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'isValid';
         var0.key = var5;
         var5 = function() {
-            _fun42843: for (var _fun42843_ip = 0;;) switch (_fun42843_ip) {
+            _fun42846: for (var _fun42846_ip = 0;;) switch (_fun42846_ip) {
                 case 0:
                     var1 = this;
                     var0 = var1.games;
@@ -122,8 +122,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = 0;
                     var0 = var2 > var0;
                     if (!var0) {
-                        _fun42843_ip = 78;
-                        continue _fun42843
+                        _fun42846_ip = 78;
+                        continue _fun42846
                     }
                 case 23:
                     var2 = var1.games;
@@ -148,23 +148,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'isEqual';
         var0.key = var5;
         var5 = function arg0() {
-            _fun42844: for (var _fun42844_ip = 0;;) switch (_fun42844_ip) {
+            _fun42847: for (var _fun42847_ip = 0;;) switch (_fun42847_ip) {
                 case 0:
                     var3 = arg0;
                     var2 = this;
                     var0 = _closure2_slot0;
                     var0 = var3 instanceof var0;
                     if (!var0) {
-                        _fun42844_ip = 95;
-                        continue _fun42844
+                        _fun42847_ip = 95;
+                        continue _fun42847
                     }
                 case 20:
                     var4 = var3.type;
                     var1 = var2.type;
                     var1 = var4 === var1;
                     if (!var1) {
-                        _fun42844_ip = 92;
-                        continue _fun42844
+                        _fun42847_ip = 92;
+                        continue _fun42847
                     }
                 case 37:
                     var6 = _closure1_slot0;

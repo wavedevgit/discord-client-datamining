@@ -51,7 +51,7 @@ public final class VideoCaptureConfig {
         boolean z11;
         boolean z12 = false;
         boolean z13 = true;
-        if (this.f19027b.contains(NextStep.Selfie.CaptureFileType.Video) && CollectionsKt.firstOrNull(this.f19028c) == a.f51700d) {
+        if (this.f19027b.contains(NextStep.Selfie.CaptureFileType.Video) && CollectionsKt.firstOrNull(this.f19028c) == a.f51697d) {
             z10 = true;
         } else {
             z10 = false;
@@ -63,7 +63,7 @@ public final class VideoCaptureConfig {
         }
         if (z10 && !z11) {
             List list = this.f19028c;
-            a aVar = a.f51701e;
+            a aVar = a.f51698e;
             if (list.contains(aVar)) {
                 if (f.e(context)) {
                     Result.a aVar2 = Result.f32461e;
@@ -80,7 +80,7 @@ public final class VideoCaptureConfig {
                             return Result.b(c.a(new RuntimeException()));
                         }
                         Result.a aVar4 = Result.f32461e;
-                        return Result.b(a.f51702i);
+                        return Result.b(a.f51699i);
                     }
                 }
             }
@@ -92,7 +92,7 @@ public final class VideoCaptureConfig {
         }
         if (z13) {
             List list3 = this.f19028c;
-            a aVar6 = a.f51701e;
+            a aVar6 = a.f51698e;
             if (list3.contains(aVar6)) {
                 return Result.b(aVar6);
             }
@@ -102,12 +102,12 @@ public final class VideoCaptureConfig {
         }
         if (z12) {
             Result.a aVar7 = Result.f32461e;
-            return Result.b(a.f51702i);
+            return Result.b(a.f51699i);
         }
         Result.a aVar8 = Result.f32461e;
         a aVar9 = (a) CollectionsKt.firstOrNull(this.f19028c);
         if (aVar9 == null) {
-            aVar9 = a.f51702i;
+            aVar9 = a.f51699i;
         }
         return Result.b(aVar9);
     }
@@ -142,7 +142,7 @@ public final class VideoCaptureConfig {
         Throwable e10 = Result.e(f10);
         if (e10 == null) {
             a aVar2 = (a) f10;
-            if (aVar2 != a.f51700d && aVar2 != a.f51701e) {
+            if (aVar2 != a.f51697d && aVar2 != a.f51698e) {
                 z10 = false;
             } else {
                 z10 = true;
@@ -169,7 +169,7 @@ public final class VideoCaptureConfig {
             return e(bool, bool2, applicationContext);
         }
         Result.a aVar = Result.f32461e;
-        return Result.b(a.f51702i);
+        return Result.b(a.f51699i);
     }
 
     public int hashCode() {

@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var8.bind(var9)(var7);
     var2.FULLSCREEN_AGE_VERIFICATION_ENTRY_POINTS = var6;
     var5 = function(arg0) { // Environment: var5
-        _fun52070: for (var _fun52070_ip = 0;;) switch (_fun52070_ip) {
+        _fun52073: for (var _fun52073_ip = 0;;) switch (_fun52073_ip) {
             case 0:
                 var0 = arg0;
                 var _closure2_slot0 = var0;
@@ -116,8 +116,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.title = var0;
                 var0 = null;
                 if (var3) {
-                    _fun52070_ip = 165;
-                    continue _fun52070
+                    _fun52073_ip = 165;
+                    continue _fun52073
                 }
             case 111:
                 var9 = _closure1_slot0;

@@ -12,37 +12,37 @@ import kotlin.ranges.d;
 public final class b extends wl.a {
 
     /* renamed from: j  reason: collision with root package name */
-    public static final a f52485j = new a(null);
+    public static final a f52482j = new a(null);
 
     /* renamed from: k  reason: collision with root package name */
-    private static final String f52486k;
+    private static final String f52483k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final ZoomLogger f52487l;
+    private static final ZoomLogger f52484l;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ZoomEngine f52488b;
+    private final ZoomEngine f52485b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f52489c;
+    private boolean f52486c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f52490d;
+    private boolean f52487d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f52491e;
+    private boolean f52488e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f52492f;
+    private boolean f52489f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f52493g;
+    private int f52490g;
 
     /* renamed from: h  reason: collision with root package name */
-    private OverPanRangeProvider f52494h;
+    private OverPanRangeProvider f52491h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final ScaledPoint f52495i;
+    private final ScaledPoint f52492i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -59,56 +59,56 @@ public final class b extends wl.a {
     public static final class C0699b {
 
         /* renamed from: a  reason: collision with root package name */
-        private int f52496a;
+        private int f52493a;
 
         /* renamed from: b  reason: collision with root package name */
-        private int f52497b;
+        private int f52494b;
 
         /* renamed from: c  reason: collision with root package name */
-        private int f52498c;
+        private int f52495c;
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f52499d;
+        private boolean f52496d;
 
         public final int a() {
-            return this.f52497b;
+            return this.f52494b;
         }
 
         public final int b() {
-            return this.f52498c;
+            return this.f52495c;
         }
 
         public final int c() {
-            return this.f52496a;
+            return this.f52493a;
         }
 
         public final boolean d() {
-            return this.f52499d;
+            return this.f52496d;
         }
 
         public final void e(int i10) {
-            this.f52497b = i10;
+            this.f52494b = i10;
         }
 
         public final void f(boolean z10) {
-            this.f52499d = z10;
+            this.f52496d = z10;
         }
 
         public final void g(int i10) {
-            this.f52498c = i10;
+            this.f52495c = i10;
         }
 
         public final void h(int i10) {
-            this.f52496a = i10;
+            this.f52493a = i10;
         }
     }
 
     static {
         String TAG = b.class.getSimpleName();
-        f52486k = TAG;
+        f52483k = TAG;
         ZoomLogger.a aVar = ZoomLogger.f16907b;
         Intrinsics.checkNotNullExpressionValue(TAG, "TAG");
-        f52487l = aVar.a(TAG);
+        f52484l = aVar.a(TAG);
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -116,14 +116,14 @@ public final class b extends wl.a {
         super(provider);
         Intrinsics.checkNotNullParameter(engine, "engine");
         Intrinsics.checkNotNullParameter(provider, "provider");
-        this.f52488b = engine;
-        this.f52489c = true;
-        this.f52490d = true;
-        this.f52491e = true;
-        this.f52492f = true;
-        this.f52493g = 51;
-        this.f52494h = OverPanRangeProvider.f16870b;
-        this.f52495i = new ScaledPoint(0.0f, 0.0f, 3, null);
+        this.f52485b = engine;
+        this.f52486c = true;
+        this.f52487d = true;
+        this.f52488e = true;
+        this.f52489f = true;
+        this.f52490g = 51;
+        this.f52491h = OverPanRangeProvider.f16870b;
+        this.f52492i = new ScaledPoint(0.0f, 0.0f, 3, null);
     }
 
     public final float b(int i10, float f10, boolean z10) {
@@ -176,9 +176,9 @@ public final class b extends wl.a {
             o10 = a12.o();
         }
         if (z10) {
-            z12 = this.f52489c;
+            z12 = this.f52486c;
         } else {
-            z12 = this.f52490d;
+            z12 = this.f52487d;
         }
         float f12 = 0.0f;
         if (z12 && z11) {
@@ -191,9 +191,9 @@ public final class b extends wl.a {
             f10 = 0.0f;
         }
         if (z10) {
-            e10 = com.otaliastudios.zoom.a.f16912a.d(this.f52493g, 0);
+            e10 = com.otaliastudios.zoom.a.f16912a.d(this.f52490g, 0);
         } else {
-            e10 = com.otaliastudios.zoom.a.f16912a.e(this.f52493g, 0);
+            e10 = com.otaliastudios.zoom.a.f16912a.e(this.f52490g, 0);
         }
         if (o10 <= l10) {
             f11 = l10 - o10;
@@ -238,9 +238,9 @@ public final class b extends wl.a {
         boolean z11 = false;
         int c10 = (int) c(z10, false);
         if (z10) {
-            b10 = com.otaliastudios.zoom.a.f16912a.a(this.f52493g);
+            b10 = com.otaliastudios.zoom.a.f16912a.a(this.f52490g);
         } else {
-            b10 = com.otaliastudios.zoom.a.f16912a.b(this.f52493g);
+            b10 = com.otaliastudios.zoom.a.f16912a.b(this.f52490g);
         }
         if (i12 > i11) {
             output.h(-(i12 - i11));
@@ -261,84 +261,84 @@ public final class b extends wl.a {
     }
 
     public final int e() {
-        return this.f52493g;
+        return this.f52490g;
     }
 
     public final ScaledPoint f() {
-        this.f52495i.g(Float.valueOf(c(true, false)), Float.valueOf(c(false, false)));
-        return this.f52495i;
+        this.f52492i.g(Float.valueOf(c(true, false)), Float.valueOf(c(false, false)));
+        return this.f52492i;
     }
 
     public final boolean g() {
-        return this.f52489c;
+        return this.f52486c;
     }
 
     public final boolean h() {
-        return this.f52491e;
+        return this.f52488e;
     }
 
     public final float i() {
-        float a10 = this.f52494h.a(this.f52488b, true);
+        float a10 = this.f52491h.a(this.f52485b, true);
         if (a10 < 0.0f) {
-            f52487l.g("Received negative maxHorizontalOverPan value, coercing to 0");
+            f52484l.g("Received negative maxHorizontalOverPan value, coercing to 0");
             return d.c(a10, 0.0f);
         }
         return a10;
     }
 
     public final float j() {
-        float a10 = this.f52494h.a(this.f52488b, false);
+        float a10 = this.f52491h.a(this.f52485b, false);
         if (a10 < 0.0f) {
-            f52487l.g("Received negative maxVerticalOverPan value, coercing to 0");
+            f52484l.g("Received negative maxVerticalOverPan value, coercing to 0");
             return d.c(a10, 0.0f);
         }
         return a10;
     }
 
     public final boolean k() {
-        return this.f52490d;
+        return this.f52487d;
     }
 
     public final boolean l() {
-        return this.f52492f;
+        return this.f52489f;
     }
 
     public boolean m() {
-        if (!this.f52491e && !this.f52492f) {
+        if (!this.f52488e && !this.f52489f) {
             return false;
         }
         return true;
     }
 
     public boolean n() {
-        if (!this.f52489c && !this.f52490d) {
+        if (!this.f52486c && !this.f52487d) {
             return false;
         }
         return true;
     }
 
     public final void o(int i10) {
-        this.f52493g = i10;
+        this.f52490g = i10;
     }
 
     public final void p(boolean z10) {
-        this.f52489c = z10;
+        this.f52486c = z10;
     }
 
     public final void q(boolean z10) {
-        this.f52491e = z10;
+        this.f52488e = z10;
     }
 
     public final void r(OverPanRangeProvider overPanRangeProvider) {
         Intrinsics.checkNotNullParameter(overPanRangeProvider, "<set-?>");
-        this.f52494h = overPanRangeProvider;
+        this.f52491h = overPanRangeProvider;
     }
 
     public final void s(boolean z10) {
-        this.f52490d = z10;
+        this.f52487d = z10;
     }
 
     public final void t(boolean z10) {
-        this.f52492f = z10;
+        this.f52489f = z10;
     }
 }

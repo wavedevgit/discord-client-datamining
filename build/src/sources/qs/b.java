@@ -10,16 +10,16 @@ import os.h0;
 public final class b extends s implements Executor {
 
     /* renamed from: o  reason: collision with root package name */
-    public static final b f48170o = new b();
+    public static final b f48167o = new b();
 
     /* renamed from: p  reason: collision with root package name */
-    private static final CoroutineDispatcher f48171p;
+    private static final CoroutineDispatcher f48168p;
 
     static {
         int e10;
-        k kVar = k.f48188i;
+        k kVar = k.f48185i;
         e10 = h0.e("kotlinx.coroutines.io.parallelism", kotlin.ranges.d.d(64, f0.a()), 0, 0, 12, null);
-        f48171p = CoroutineDispatcher.c2(kVar, e10, null, 2, null);
+        f48168p = CoroutineDispatcher.c2(kVar, e10, null, 2, null);
     }
 
     private b() {
@@ -27,17 +27,17 @@ public final class b extends s implements Executor {
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
     public void E1(CoroutineContext coroutineContext, Runnable runnable) {
-        f48171p.E1(coroutineContext, runnable);
+        f48168p.E1(coroutineContext, runnable);
     }
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
     public void U1(CoroutineContext coroutineContext, Runnable runnable) {
-        f48171p.U1(coroutineContext, runnable);
+        f48168p.U1(coroutineContext, runnable);
     }
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
     public CoroutineDispatcher b2(int i10, String str) {
-        return k.f48188i.b2(i10, str);
+        return k.f48185i.b2(i10, str);
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable

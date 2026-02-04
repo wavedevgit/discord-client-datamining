@@ -16,30 +16,30 @@ import kotlin.reflect.KClass;
 public final class z implements c0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KClass f54713a;
+    private final KClass f54710a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Function3 f54714b;
+    private final Function3 f54711b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Function1 f54715c;
+    private final Function1 f54712c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static final class a extends Lambda implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ k f54716d;
+        final /* synthetic */ k f54713d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(k kVar) {
             super(2);
-            this.f54716d = kVar;
+            this.f54713d = kVar;
         }
 
         public final void a(Object rendering, a0 environment) {
             Intrinsics.checkNotNullParameter(rendering, "rendering");
             Intrinsics.checkNotNullParameter(environment, "environment");
-            this.f54716d.a(rendering, environment);
+            this.f54713d.a(rendering, environment);
         }
 
         @Override // kotlin.jvm.functions.Function2
@@ -53,9 +53,9 @@ public final class z implements c0 {
         Intrinsics.checkNotNullParameter(type, "type");
         Intrinsics.checkNotNullParameter(bindingInflater, "bindingInflater");
         Intrinsics.checkNotNullParameter(runnerConstructor, "runnerConstructor");
-        this.f54713a = type;
-        this.f54714b = bindingInflater;
-        this.f54715c = runnerConstructor;
+        this.f54710a = type;
+        this.f54711b = bindingInflater;
+        this.f54712c = runnerConstructor;
     }
 
     @Override // ym.c0
@@ -63,13 +63,13 @@ public final class z implements c0 {
         Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
         Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
         Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-        Function3 function3 = this.f54714b;
+        Function3 function3 = this.f54711b;
         LayoutInflater a10 = l.a(contextForNewView, viewGroup);
         Intrinsics.checkNotNullExpressionValue(a10, "contextForNewView.viewBi…LayoutInflater(container)");
         ViewBinding viewBinding = (ViewBinding) function3.invoke(a10, viewGroup, Boolean.FALSE);
         View root = viewBinding.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "binding.root");
-        g0.a(root, initialRendering, initialViewEnvironment, new a((k) this.f54715c.invoke(viewBinding)));
+        g0.a(root, initialRendering, initialViewEnvironment, new a((k) this.f54712c.invoke(viewBinding)));
         View root2 = viewBinding.getRoot();
         Intrinsics.checkNotNullExpressionValue(root2, "bindingInflater(contextF…    }\n      }\n      .root");
         return root2;
@@ -77,6 +77,6 @@ public final class z implements c0 {
 
     @Override // ym.c0
     public KClass getType() {
-        return this.f54713a;
+        return this.f54710a;
     }
 }

@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/a11y/native/setAccessibilityFocusPrevious.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun92943: for (var _fun92943_ip = 0;;) switch (_fun92943_ip) {
+        _fun92960: for (var _fun92960_ip = 0;;) switch (_fun92960_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -38,8 +38,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.isIOS;
                 var2 = var2.bind(var3)();
                 if (!var2) {
-                    _fun92943_ip = 60;
-                    continue _fun92943
+                    _fun92960_ip = 60;
+                    continue _fun92960
                 }
             case 38:
                 var1 = _closure1_slot2;

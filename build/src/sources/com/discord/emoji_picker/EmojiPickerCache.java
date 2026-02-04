@@ -36,7 +36,7 @@ import kotlinx.serialization.json.JsonObject;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0006\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0000\u0018\u0000  2\u00020\u0001:\u0002\u001f B\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0004\b\u0006\u0010\u0007J\b\u0010\u0013\u001a\u00020\u0012H\u0007J\u0014\u0010\u0014\u001a\u00020\u00122\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u0005H\u0007J\u000e\u0010\u0016\u001a\u00020\u0012H\u0082@¢\u0006\u0002\u0010\u0017J\u000e\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\u001a0\u0019H\u0002J\u001c\u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\u001a0\u00192\u0006\u0010\u001c\u001a\u00020\u001dH\u0082@¢\u0006\u0002\u0010\u001eR\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00030\tX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\rX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u000e\u001a\u0004\u0018\u00010\u000fX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u00120\u0011X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006!"}, d2 = {"Lcom/discord/emoji_picker/EmojiPickerCache;", "", "listener", "Lcom/discord/emoji_picker/EmojiPickerCache$Listener;", "emojiCoreData", "Lcom/discord/emoji_picker/EmojiPickerItemData$CoreData;", "<init>", "(Lcom/discord/emoji_picker/EmojiPickerCache$Listener;Lcom/discord/emoji_picker/EmojiPickerItemData$CoreData;)V", "emojiPickerListener", "Ljava/lang/ref/WeakReference;", "emojiJsonConfig", "Lkotlinx/serialization/json/Json;", "emojiCoroutineScope", "Lkotlinx/coroutines/CoroutineScope;", "emojiFetchJob", "Lkotlinx/coroutines/Job;", "emojiFetchEvents", "Lkotlinx/coroutines/flow/MutableSharedFlow;", "", "invalidate", "refreshEmojis", "emojiCodeData", "refreshDatabaseEmojis", "(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "buildEmojis", "", "Lcom/discord/emoji_picker/EmojiPickerItem;", "buildEmojisUnicode", "context", "Landroid/content/Context;", "(Landroid/content/Context;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Listener", "Companion", "emoji_picker_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nEmojiPickerCache.kt\nKotlin\n*S Kotlin\n*F\n+ 1 EmojiPickerCache.kt\ncom/discord/emoji_picker/EmojiPickerCache\n+ 2 ThreadUtils.kt\ncom/discord/misc/utilities/threading/ThreadUtilsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 4 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,186:1\n25#2,8:187\n1#3:195\n1878#4,2:196\n1563#4:198\n1634#4,3:199\n1056#4:202\n1869#4,2:203\n1880#4:205\n1878#4,2:206\n1869#4,2:208\n1880#4:210\n*S KotlinDebug\n*F\n+ 1 EmojiPickerCache.kt\ncom/discord/emoji_picker/EmojiPickerCache\n*L\n70#1:187,8\n90#1:196,2\n109#1:198\n109#1:199,3\n128#1:202\n133#1:203,2\n90#1:205\n156#1:206,2\n158#1:208,2\n156#1:210\n*E\n"})
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class EmojiPickerCache {
     @NotNull
     public static final Companion Companion = new Companion(null);
@@ -56,7 +56,7 @@ public final class EmojiPickerCache {
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
     @kotlin.coroutines.jvm.internal.e(c = "com.discord.emoji_picker.EmojiPickerCache$1", f = "EmojiPickerCache.kt", l = {42}, m = "invokeSuspend")
     /* renamed from: com.discord.emoji_picker.EmojiPickerCache$1  reason: invalid class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     static final class AnonymousClass1 extends kotlin.coroutines.jvm.internal.k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         int label;
 
@@ -109,7 +109,7 @@ public final class EmojiPickerCache {
     }
 
     @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\t\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082T¢\u0006\u0002\n\u0000¨\u0006\u0006"}, d2 = {"Lcom/discord/emoji_picker/EmojiPickerCache$Companion;", "", "<init>", "()V", "DEBOUNCE_INTERVAL", "", "emoji_picker_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
             this();
@@ -120,7 +120,7 @@ public final class EmojiPickerCache {
     }
 
     @Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\bf\u0018\u00002\u00020\u0001J$\u0010\u0002\u001a\u00020\u00032\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u00052\f\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005H'J\b\u0010\b\u001a\u00020\tH&¨\u0006\n"}, d2 = {"Lcom/discord/emoji_picker/EmojiPickerCache$Listener;", "", "onEmojisUpdated", "", "emojis", "", "Lcom/discord/emoji_picker/EmojiPickerItem;", "emojisUnicode", "onContext", "Landroid/content/Context;", "emoji_picker_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface Listener {
         @NotNull
         Context onContext();

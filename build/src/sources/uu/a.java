@@ -8,7 +8,7 @@ import uu.b;
 public final class a implements nu.b, b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f51038a = new a();
+    public static final a f51035a = new a();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: uu.a$a  reason: collision with other inner class name */
@@ -16,7 +16,7 @@ public final class a implements nu.b, b {
     public static final class C0670a extends Lambda implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final C0670a f51039d = new C0670a();
+        public static final C0670a f51036d = new C0670a();
 
         C0670a() {
             super(2);
@@ -78,6 +78,6 @@ public final class a implements nu.b, b {
     @Override // nu.b
     /* renamed from: i */
     public Boolean f(Object obj, Object obj2) {
-        return Boolean.valueOf(h(obj, C0670a.f51039d));
+        return Boolean.valueOf(h(obj, C0670a.f51036d));
     }
 }

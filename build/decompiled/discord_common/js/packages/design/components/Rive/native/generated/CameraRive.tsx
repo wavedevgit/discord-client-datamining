@@ -55,15 +55,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = '../discord_common/js/packages/design/components/Rive/native/generated/CameraRive.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun27473: for (var _fun27473_ip = 0;;) switch (_fun27473_ip) {
+        _fun27475: for (var _fun27475_ip = 0;;) switch (_fun27475_ip) {
             case 0:
                 var2 = arg0;
                 var0 = var2.artboard;
                 var8 = 'Icon Camera';
                 var3 = undefined;
                 if (!(var3 !== var0)) {
-                    _fun27473_ip = 22;
-                    continue _fun27473
+                    _fun27475_ip = 22;
+                    continue _fun27475
                 }
             case 19:
                 var8 = var0;
@@ -72,8 +72,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.defaultViewModelInstance;
                 var6 = 'CamOff';
                 if (!(var3 !== var0)) {
-                    _fun27473_ip = 47;
-                    continue _fun27473
+                    _fun27475_ip = 47;
+                    continue _fun27475
                 }
             case 44:
                 var6 = var0;

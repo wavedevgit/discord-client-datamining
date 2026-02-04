@@ -24,7 +24,7 @@ public final class PollMediaEmoji {
     private final String displayName;
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8271id;
+    private final String f8270id;
     @NotNull
     private final String name;
 
@@ -48,7 +48,7 @@ public final class PollMediaEmoji {
         if (3 != (i10 & 3)) {
             v1.b(i10, 3, PollMediaEmoji$$serializer.INSTANCE.getDescriptor());
         }
-        this.f8271id = str;
+        this.f8270id = str;
         this.name = str2;
         if ((i10 & 4) == 0) {
             this.displayName = null;
@@ -64,7 +64,7 @@ public final class PollMediaEmoji {
 
     public static /* synthetic */ PollMediaEmoji copy$default(PollMediaEmoji pollMediaEmoji, String str, String str2, String str3, boolean z10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = pollMediaEmoji.f8271id;
+            str = pollMediaEmoji.f8270id;
         }
         if ((i10 & 2) != 0) {
             str2 = pollMediaEmoji.name;
@@ -80,7 +80,7 @@ public final class PollMediaEmoji {
 
     public static final /* synthetic */ void write$Self$chat_release(PollMediaEmoji pollMediaEmoji, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         n2 n2Var = n2.f20978a;
-        compositeEncoder.s(serialDescriptor, 0, n2Var, pollMediaEmoji.f8271id);
+        compositeEncoder.s(serialDescriptor, 0, n2Var, pollMediaEmoji.f8270id);
         compositeEncoder.y(serialDescriptor, 1, pollMediaEmoji.name);
         if (compositeEncoder.z(serialDescriptor, 2) || pollMediaEmoji.displayName != null) {
             compositeEncoder.s(serialDescriptor, 2, n2Var, pollMediaEmoji.displayName);
@@ -91,7 +91,7 @@ public final class PollMediaEmoji {
     }
 
     public final String component1() {
-        return this.f8271id;
+        return this.f8270id;
     }
 
     @NotNull
@@ -119,7 +119,7 @@ public final class PollMediaEmoji {
         }
         if (obj instanceof PollMediaEmoji) {
             PollMediaEmoji pollMediaEmoji = (PollMediaEmoji) obj;
-            return Intrinsics.areEqual(this.f8271id, pollMediaEmoji.f8271id) && Intrinsics.areEqual(this.name, pollMediaEmoji.name) && Intrinsics.areEqual(this.displayName, pollMediaEmoji.displayName) && this.animated == pollMediaEmoji.animated;
+            return Intrinsics.areEqual(this.f8270id, pollMediaEmoji.f8270id) && Intrinsics.areEqual(this.name, pollMediaEmoji.name) && Intrinsics.areEqual(this.displayName, pollMediaEmoji.displayName) && this.animated == pollMediaEmoji.animated;
         }
         return false;
     }
@@ -133,7 +133,7 @@ public final class PollMediaEmoji {
     }
 
     public final String getId() {
-        return this.f8271id;
+        return this.f8270id;
     }
 
     @NotNull
@@ -142,7 +142,7 @@ public final class PollMediaEmoji {
     }
 
     public int hashCode() {
-        String str = this.f8271id;
+        String str = this.f8270id;
         int hashCode = (((str == null ? 0 : str.hashCode()) * 31) + this.name.hashCode()) * 31;
         String str2 = this.displayName;
         return ((hashCode + (str2 != null ? str2.hashCode() : 0)) * 31) + Boolean.hashCode(this.animated);
@@ -151,7 +151,7 @@ public final class PollMediaEmoji {
     @NotNull
     public final RenderableEmoji renderable() {
         Long t10;
-        String str = this.f8271id;
+        String str = this.f8270id;
         if (str != null && (t10 = StringsKt.t(str)) != null) {
             long longValue = t10.longValue();
             RenderableEmoji.Companion companion = RenderableEmoji.Companion;
@@ -170,7 +170,7 @@ public final class PollMediaEmoji {
 
     @NotNull
     public String toString() {
-        String str = this.f8271id;
+        String str = this.f8270id;
         String str2 = this.name;
         String str3 = this.displayName;
         boolean z10 = this.animated;
@@ -179,7 +179,7 @@ public final class PollMediaEmoji {
 
     public PollMediaEmoji(String str, @NotNull String name, String str2, boolean z10) {
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f8271id = str;
+        this.f8270id = str;
         this.name = name;
         this.displayName = str2;
         this.animated = z10;

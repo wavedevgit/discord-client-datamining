@@ -65,7 +65,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'get';
         var0.key = var5;
         var5 = function arg0() {
-            _fun10161: for (var _fun10161_ip = 0;;) switch (_fun10161_ip) {
+            _fun10163: for (var _fun10163_ip = 0;;) switch (_fun10163_ip) {
                 case 0:
                     var3 = arg0;
                     var1 = this;
@@ -74,8 +74,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var0.bind(var2)(var3);
                     var2 = undefined;
                     if (!(var2 === var0)) {
-                        _fun10161_ip = 30;
-                        continue _fun10161
+                        _fun10163_ip = 30;
+                        continue _fun10163
                     }
                 case 28:
                     return var2;
@@ -95,15 +95,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'set';
         var0.key = var5;
         var5 = function arg0, arg1() {
-            _fun10162: for (var _fun10162_ip = 0;;) switch (_fun10162_ip) {
+            _fun10164: for (var _fun10164_ip = 0;;) switch (_fun10164_ip) {
                 case 0:
                     var0 = this;
                     var1 = var0._cache;
                     var2 = var1.size;
                     var1 = var0._maxSize;
                     if (!(var2 >= var1)) {
-                        _fun10162_ip = 69;
-                        continue _fun10162
+                        _fun10164_ip = 69;
+                        continue _fun10164
                     }
                 case 24:
                     var2 = var0._cache;
@@ -131,7 +131,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'remove';
         var0.key = var5;
         var5 = function arg0() {
-            _fun10163: for (var _fun10163_ip = 0;;) switch (_fun10163_ip) {
+            _fun10165: for (var _fun10165_ip = 0;;) switch (_fun10165_ip) {
                 case 0:
                     var3 = arg0;
                     var1 = this;
@@ -139,8 +139,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var2.get;
                     var0 = var0.bind(var2)(var3);
                     if (!var0) {
-                        _fun10163_ip = 41;
-                        continue _fun10163
+                        _fun10165_ip = 41;
+                        continue _fun10165
                     }
                 case 25:
                     var2 = var1._cache;

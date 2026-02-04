@@ -3,17 +3,17 @@ package tc;
 public final class a0 {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a0 f49897c = new a0(0, 0);
+    public static final a0 f49894c = new a0(0, 0);
 
     /* renamed from: a  reason: collision with root package name */
-    public final long f49898a;
+    public final long f49895a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final long f49899b;
+    public final long f49896b;
 
     public a0(long j10, long j11) {
-        this.f49898a = j10;
-        this.f49899b = j11;
+        this.f49895a = j10;
+        this.f49896b = j11;
     }
 
     public boolean equals(Object obj) {
@@ -22,7 +22,7 @@ public final class a0 {
         }
         if (obj != null && a0.class == obj.getClass()) {
             a0 a0Var = (a0) obj;
-            if (this.f49898a == a0Var.f49898a && this.f49899b == a0Var.f49899b) {
+            if (this.f49895a == a0Var.f49895a && this.f49896b == a0Var.f49896b) {
                 return true;
             }
         }
@@ -30,10 +30,10 @@ public final class a0 {
     }
 
     public int hashCode() {
-        return (((int) this.f49898a) * 31) + ((int) this.f49899b);
+        return (((int) this.f49895a) * 31) + ((int) this.f49896b);
     }
 
     public String toString() {
-        return "[timeUs=" + this.f49898a + ", position=" + this.f49899b + "]";
+        return "[timeUs=" + this.f49895a + ", position=" + this.f49896b + "]";
     }
 }

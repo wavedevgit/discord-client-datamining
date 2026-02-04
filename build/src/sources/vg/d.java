@@ -3,7 +3,7 @@ package vg;
 final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    int f51620a;
+    int f51617a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ d(c cVar) {

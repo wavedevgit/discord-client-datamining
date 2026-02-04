@@ -32,8 +32,8 @@ public class m extends a {
     public Path i(y5.a aVar, float f10) {
         s5.o oVar;
         Path path;
-        s5.o oVar2 = (s5.o) aVar.f53743b;
-        s5.o oVar3 = (s5.o) aVar.f53744c;
+        s5.o oVar2 = (s5.o) aVar.f53740b;
+        s5.o oVar3 = (s5.o) aVar.f53741c;
         s5.o oVar4 = this.f42385i;
         if (oVar3 == null) {
             oVar = oVar2;
@@ -59,8 +59,8 @@ public class m extends a {
                 x5.i.h(oVar3, this.f42388l);
             }
             y5.c cVar = this.f42353e;
-            float f11 = aVar.f53748g;
-            float floatValue = aVar.f53749h.floatValue();
+            float f11 = aVar.f53745g;
+            float floatValue = aVar.f53746h.floatValue();
             Path path2 = this.f42387k;
             if (oVar3 == null) {
                 path = path2;

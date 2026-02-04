@@ -3,11 +3,11 @@ package xb;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f53214a;
+    private final String f53211a;
 
     private c(String str) {
         if (str != null) {
-            this.f53214a = str;
+            this.f53211a = str;
             return;
         }
         throw new NullPointerException("name is null");
@@ -18,7 +18,7 @@ public final class c {
     }
 
     public String a() {
-        return this.f53214a;
+        return this.f53211a;
     }
 
     public boolean equals(Object obj) {
@@ -28,14 +28,14 @@ public final class c {
         if (!(obj instanceof c)) {
             return false;
         }
-        return this.f53214a.equals(((c) obj).f53214a);
+        return this.f53211a.equals(((c) obj).f53211a);
     }
 
     public int hashCode() {
-        return this.f53214a.hashCode() ^ 1000003;
+        return this.f53211a.hashCode() ^ 1000003;
     }
 
     public String toString() {
-        return "Encoding{name=\"" + this.f53214a + "\"}";
+        return "Encoding{name=\"" + this.f53211a + "\"}";
     }
 }

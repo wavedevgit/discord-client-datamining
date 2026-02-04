@@ -6,23 +6,23 @@ import java.util.List;
 public final class e implements j {
 
     /* renamed from: a  reason: collision with root package name */
-    private final j f52131a;
+    private final j f52128a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f52132b;
+    private final List f52129b;
 
     public e(j jVar, List list) {
-        this.f52131a = jVar;
-        this.f52132b = list;
+        this.f52128a = jVar;
+        this.f52129b = list;
     }
 
     @Override // wd.j
     public j.a a(g gVar, f fVar) {
-        return new pd.b(this.f52131a.a(gVar, fVar), this.f52132b);
+        return new pd.b(this.f52128a.a(gVar, fVar), this.f52129b);
     }
 
     @Override // wd.j
     public j.a b() {
-        return new pd.b(this.f52131a.b(), this.f52132b);
+        return new pd.b(this.f52128a.b(), this.f52129b);
     }
 }

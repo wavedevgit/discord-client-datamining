@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var3;
     var3 = function() { // Environment: var1
         var0 = function arg0() {
-            _fun110700: for (var _fun110700_ip = 0;;) switch (_fun110700_ip) {
+            _fun110713: for (var _fun110713_ip = 0;;) switch (_fun110713_ip) {
                 case 0:
                     var0 = arg0;
                     var3 = var0.windowWidth;
@@ -36,8 +36,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var2.min;
                     var0 = var3;
                     if (var6) {
-                        _fun110700_ip = 78;
-                        continue _fun110700
+                        _fun110713_ip = 78;
+                        continue _fun110713
                     }
                 case 46:
                     var7 = var5.Math;
@@ -93,4 +93,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getMaxPanelWidth = var3;
     var2.getPanelX = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [11816, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [11819, 2]);

@@ -44,7 +44,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var4.bind(var0)(var3);
     var3 = var4.componentWithRef;
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun34861: for (var _fun34861_ip = 0;;) switch (_fun34861_ip) {
+        _fun34863: for (var _fun34863_ip = 0;;) switch (_fun34863_ip) {
             case 0:
                 var5 = arg0;
                 var7 = arg1;
@@ -55,8 +55,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var2.bind(var3)(var5, var1);
                 var1 = null;
                 if (!(var1 === var7)) {
-                    _fun34861_ip = 69;
-                    continue _fun34861
+                    _fun34863_ip = 69;
+                    continue _fun34863
                 }
             case 39:
                 var2 = _closure1_slot0;
@@ -68,8 +68,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var1.bind(var2)();
             case 69:
                 if (!var4) {
-                    _fun34861_ip = 104;
-                    continue _fun34861
+                    _fun34863_ip = 104;
+                    continue _fun34863
                 }
             case 72:
                 var2 = _closure1_slot0;
@@ -83,8 +83,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = 'scrollEventThrottle';
                 var1 = var1 in var6;
                 if (var1) {
-                    _fun34861_ip = 124;
-                    continue _fun34861
+                    _fun34863_ip = 124;
+                    continue _fun34863
                 }
             case 115:
                 var1 = 1;

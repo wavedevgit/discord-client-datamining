@@ -25,23 +25,23 @@ import mg.ze;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final SparseArray f50641a;
+    private static final SparseArray f50638a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SparseArray f50642b;
+    private static final SparseArray f50639b;
 
     /* renamed from: c  reason: collision with root package name */
-    static final AtomicReference f50643c;
+    static final AtomicReference f50640c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Map f50644d;
+    private static final Map f50641d;
 
     static {
         SparseArray sparseArray = new SparseArray();
-        f50641a = sparseArray;
+        f50638a = sparseArray;
         SparseArray sparseArray2 = new SparseArray();
-        f50642b = sparseArray2;
-        f50643c = new AtomicReference();
+        f50639b = sparseArray2;
+        f50640c = new AtomicReference();
         sparseArray.put(-1, kf.FORMAT_UNKNOWN);
         sparseArray.put(1, kf.FORMAT_CODE_128);
         sparseArray.put(2, kf.FORMAT_CODE_39);
@@ -70,7 +70,7 @@ public abstract class b {
         sparseArray2.put(11, lf.TYPE_CALENDAR_EVENT);
         sparseArray2.put(12, lf.TYPE_DRIVER_LICENSE);
         HashMap hashMap = new HashMap();
-        f50644d = hashMap;
+        f50641d = hashMap;
         hashMap.put(1, tj.CODE_128);
         hashMap.put(2, tj.CODE_39);
         hashMap.put(4, tj.CODE_93);
@@ -87,7 +87,7 @@ public abstract class b {
     }
 
     public static kf a(int i10) {
-        kf kfVar = (kf) f50641a.get(i10);
+        kf kfVar = (kf) f50638a.get(i10);
         if (kfVar == null) {
             return kf.FORMAT_UNKNOWN;
         }
@@ -95,7 +95,7 @@ public abstract class b {
     }
 
     public static lf b(int i10) {
-        lf lfVar = (lf) f50642b.get(i10);
+        lf lfVar = (lf) f50639b.get(i10);
         if (lfVar == null) {
             return lf.TYPE_UNKNOWN;
         }
@@ -106,9 +106,9 @@ public abstract class b {
         int a10 = bVar.a();
         f1 f1Var = new f1();
         if (a10 == 0) {
-            f1Var.f(f50644d.values());
+            f1Var.f(f50641d.values());
         } else {
-            for (Map.Entry entry : f50644d.entrySet()) {
+            for (Map.Entry entry : f50641d.entrySet()) {
                 if ((((Integer) entry.getKey()).intValue() & a10) != 0) {
                     f1Var.e((tj) entry.getValue());
                 }
@@ -150,7 +150,7 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean f() {
-        AtomicReference atomicReference = f50643c;
+        AtomicReference atomicReference = f50640c;
         if (atomicReference.get() != null) {
             return ((Boolean) atomicReference.get()).booleanValue();
         }

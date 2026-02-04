@@ -491,7 +491,7 @@ public abstract class y {
                 tVar.E();
                 return;
             }
-            this.f17653a.e(a(cls), vm.c.f51689a).toJson(tVar, obj);
+            this.f17653a.e(a(cls), vm.c.f51686a).toJson(tVar, obj);
         }
 
         public String toString() {

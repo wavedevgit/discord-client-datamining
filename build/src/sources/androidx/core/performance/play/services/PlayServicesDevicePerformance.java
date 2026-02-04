@@ -497,7 +497,7 @@ public final class PlayServicesDevicePerformance {
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public PlayServicesDevicePerformance(Context context) {
-        this(context, qf.a.f47810a.a(context), z2.c.b(z2.c.f55563a, null, null, null, new a(context), 7, null));
+        this(context, qf.a.f47810a.a(context), z2.c.b(z2.c.f55560a, null, null, null, new a(context), 7, null));
         Intrinsics.checkNotNullParameter(context, "context");
     }
 }

@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.resetWarningCache = var2;
     var1 = function() { // Environment: var0
         var2 = function arg0, arg1, arg2, arg3, arg4, arg5() {
-            _fun45893: for (var _fun45893_ip = 0;;) switch (_fun45893_ip) {
+            _fun45896: for (var _fun45896_ip = 0;;) switch (_fun45896_ip) {
                 case 0:
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
@@ -27,8 +27,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var2.bind(var0)(var1);
                     var1 = arg5;
                     if (!(var1 === var2)) {
-                        _fun45893_ip = 33;
-                        continue _fun45893
+                        _fun45896_ip = 33;
+                        continue _fun45896
                     }
                 case 31:
                     return var0;

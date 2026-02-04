@@ -15,7 +15,7 @@ import yg.j;
 public class MaterialDivider extends View {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final int f14598q = j.f54269w;
+    private static final int f14598q = j.f54266w;
 
     /* renamed from: d  reason: collision with root package name */
     private final g f14599d;
@@ -147,25 +147,25 @@ public class MaterialDivider extends View {
             oh.g r7 = new oh.g
             r7.<init>()
             r6.f14599d = r7
-            int[] r2 = yg.k.f54338g4
+            int[] r2 = yg.k.f54335g4
             r7 = 0
             int[] r5 = new int[r7]
             r1 = r8
             r3 = r9
             android.content.res.TypedArray r8 = com.google.android.material.internal.l.i(r0, r1, r2, r3, r4, r5)
-            int r9 = yg.k.f54378k4
+            int r9 = yg.k.f54375k4
             android.content.res.Resources r1 = r6.getResources()
-            int r2 = yg.d.f54155w
+            int r2 = yg.d.f54152w
             int r1 = r1.getDimensionPixelSize(r2)
             int r9 = r8.getDimensionPixelSize(r9, r1)
             r6.f14600e = r9
-            int r9 = yg.k.f54368j4
+            int r9 = yg.k.f54365j4
             int r9 = r8.getDimensionPixelOffset(r9, r7)
             r6.f14602o = r9
-            int r9 = yg.k.f54358i4
+            int r9 = yg.k.f54355i4
             int r7 = r8.getDimensionPixelOffset(r9, r7)
             r6.f14603p = r7
-            int r7 = yg.k.f54348h4
+            int r7 = yg.k.f54345h4
             android.content.res.ColorStateList r7 = lh.c.a(r0, r8, r7)
             int r7 = r7.getDefaultColor()
             r6.setDividerColor(r7)

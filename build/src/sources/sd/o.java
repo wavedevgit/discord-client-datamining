@@ -5,7 +5,7 @@ import java.util.NoSuchElementException;
 public interface o {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final o f49462a = new a();
+    public static final o f49459a = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements o {

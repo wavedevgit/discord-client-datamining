@@ -19,11 +19,11 @@ import okhttp3.HttpUrl;
 public final class i implements CookieJar {
 
     /* renamed from: c  reason: collision with root package name */
-    private final CookieHandler f52764c;
+    private final CookieHandler f52761c;
 
     public i(CookieHandler cookieHandler) {
         Intrinsics.checkNotNullParameter(cookieHandler, "cookieHandler");
-        this.f52764c = cookieHandler;
+        this.f52761c = cookieHandler;
     }
 
     private final List a(HttpUrl httpUrl, String str) {
@@ -56,7 +56,7 @@ public final class i implements CookieJar {
     public List loadForRequest(HttpUrl url) {
         Intrinsics.checkNotNullParameter(url, "url");
         try {
-            Map<String, List<String>> cookieHeaders = this.f52764c.get(url.t(), o0.i());
+            Map<String, List<String>> cookieHeaders = this.f52761c.get(url.t(), o0.i());
             Intrinsics.checkNotNullExpressionValue(cookieHeaders, "cookieHeaders");
             ArrayList arrayList = null;
             for (Map.Entry<String, List<String>> entry : cookieHeaders.entrySet()) {
@@ -103,7 +103,7 @@ public final class i implements CookieJar {
             arrayList.add(xt.b.a((Cookie) it.next(), true));
         }
         try {
-            this.f52764c.put(url.t(), o0.f(v.a("Set-Cookie", arrayList)));
+            this.f52761c.put(url.t(), o0.f(v.a("Set-Cookie", arrayList)));
         } catch (IOException e10) {
             gu.h g10 = gu.h.f26650a.g();
             StringBuilder sb2 = new StringBuilder();

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function arg0() {
-        _fun8283: for (var _fun8283_ip = 0;;) switch (_fun8283_ip) {
+        _fun8285: for (var _fun8285_ip = 0;;) switch (_fun8285_ip) {
             case 0:
                 var2 = arg0;
                 var4 = _closure1_slot0;
@@ -16,8 +16,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var4.bind(var1)(var3);
                 var3 = var3.bind(var1)(var2);
                 if (var3) {
-                    _fun8283_ip = 39;
-                    continue _fun8283
+                    _fun8285_ip = 39;
+                    continue _fun8285
                 }
             case 35:
                 var3 = false;
@@ -32,24 +32,24 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = '[object Function]';
                 var0 = var0 == var2;
                 if (var0) {
-                    _fun8283_ip = 85;
-                    continue _fun8283
+                    _fun8285_ip = 85;
+                    continue _fun8285
                 }
             case 75:
                 var1 = '[object GeneratorFunction]';
                 var0 = var1 == var2;
             case 85:
                 if (var0) {
-                    _fun8283_ip = 98;
-                    continue _fun8283
+                    _fun8285_ip = 98;
+                    continue _fun8285
                 }
             case 88:
                 var1 = '[object AsyncFunction]';
                 var0 = var1 == var2;
             case 98:
                 if (var0) {
-                    _fun8283_ip = 111;
-                    continue _fun8283
+                    _fun8285_ip = 111;
+                    continue _fun8285
                 }
             case 101:
                 var1 = '[object Proxy]';

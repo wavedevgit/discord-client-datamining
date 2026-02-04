@@ -6,7 +6,7 @@ public interface h {
     public static final class a implements h {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final a f48034a = new a();
+        public static final a f48031a = new a();
 
         private a() {
         }
@@ -31,7 +31,7 @@ public interface h {
     public static final class b implements h {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final b f48035a = new b();
+        public static final b f48032a = new b();
 
         private b() {
         }
@@ -56,32 +56,32 @@ public interface h {
     public static final class c implements h {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f48036a;
+        private final int f48033a;
 
         public c(int i10) {
-            this.f48036a = i10;
+            this.f48033a = i10;
         }
 
         public final int a() {
-            return this.f48036a;
+            return this.f48033a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof c) && this.f48036a == ((c) obj).f48036a) {
+            if ((obj instanceof c) && this.f48033a == ((c) obj).f48033a) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return Integer.hashCode(this.f48036a);
+            return Integer.hashCode(this.f48033a);
         }
 
         public String toString() {
-            int i10 = this.f48036a;
+            int i10 = this.f48033a;
             return "Check(pageIndex=" + i10 + ")";
         }
     }
@@ -90,32 +90,32 @@ public interface h {
     public static final class d implements h {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f48037a;
+        private final int f48034a;
 
         public d(int i10) {
-            this.f48037a = i10;
+            this.f48034a = i10;
         }
 
         public final int a() {
-            return this.f48037a;
+            return this.f48034a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof d) && this.f48037a == ((d) obj).f48037a) {
+            if ((obj instanceof d) && this.f48034a == ((d) obj).f48034a) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return Integer.hashCode(this.f48037a);
+            return Integer.hashCode(this.f48034a);
         }
 
         public String toString() {
-            int i10 = this.f48037a;
+            int i10 = this.f48034a;
             return "CheckUpload(pageIndex=" + i10 + ")";
         }
     }
@@ -124,7 +124,7 @@ public interface h {
     public static final class e implements h {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final e f48038a = new e();
+        public static final e f48035a = new e();
 
         private e() {
         }
@@ -149,32 +149,32 @@ public interface h {
     public static final class f implements h {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f48039a;
+        private final int f48036a;
 
         public f(int i10) {
-            this.f48039a = i10;
+            this.f48036a = i10;
         }
 
         public final int a() {
-            return this.f48039a;
+            return this.f48036a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof f) && this.f48039a == ((f) obj).f48039a) {
+            if ((obj instanceof f) && this.f48036a == ((f) obj).f48036a) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return Integer.hashCode(this.f48039a);
+            return Integer.hashCode(this.f48036a);
         }
 
         public String toString() {
-            int i10 = this.f48039a;
+            int i10 = this.f48036a;
             return "Prompt(pageIndex=" + i10 + ")";
         }
     }
@@ -183,7 +183,7 @@ public interface h {
     public static final class g implements h {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final g f48040a = new g();
+        public static final g f48037a = new g();
 
         private g() {
         }
@@ -209,32 +209,32 @@ public interface h {
     public static final class C0582h implements h {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f48041a;
+        private final int f48038a;
 
         public C0582h(int i10) {
-            this.f48041a = i10;
+            this.f48038a = i10;
         }
 
         public final int a() {
-            return this.f48041a;
+            return this.f48038a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof C0582h) && this.f48041a == ((C0582h) obj).f48041a) {
+            if ((obj instanceof C0582h) && this.f48038a == ((C0582h) obj).f48038a) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return Integer.hashCode(this.f48041a);
+            return Integer.hashCode(this.f48038a);
         }
 
         public String toString() {
-            int i10 = this.f48041a;
+            int i10 = this.f48038a;
             return "TakePhoto(pageIndex=" + i10 + ")";
         }
     }

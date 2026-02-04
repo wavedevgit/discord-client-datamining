@@ -19,7 +19,7 @@ import yg.j;
 import yg.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class ExtendedFloatingActionButton extends MaterialButton implements CoordinatorLayout.b {
-    private static final int F = j.f54266t;
+    private static final int F = j.f54263t;
     static final Property G = new a(Float.class, "width");
     static final Property H = new b(Float.class, "height");
     static final Property I = new c(Float.class, ViewProps.PADDING_START);

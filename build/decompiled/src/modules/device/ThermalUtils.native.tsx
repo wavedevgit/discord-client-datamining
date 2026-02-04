@@ -1,7 +1,7 @@
 // modules/device/ThermalUtils.native.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun63992: for (var _fun63992_ip = 0;;) switch (_fun63992_ip) {
+    _fun64009: for (var _fun64009_ip = 0;;) switch (_fun64009_ip) {
         case 0:
             var4 = require;
             var8 = metroImportDefault;
@@ -31,13 +31,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = var9.isAndroid;
             var6 = var6.bind(var9)();
             if (var6) {
-                _fun63992_ip = 120;
-                continue _fun63992
+                _fun64009_ip = 120;
+                continue _fun64009
             }
         case 112:
             var1 = var1.DCDDeviceThermalStateManager;
-            _fun63992_ip = 132;
-            continue _fun63992;
+            _fun64009_ip = 132;
+            continue _fun64009;
         case 120:
             var6 = 2;
             var6 = var5[var6];
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = var4.bind(var0)(var1);
             var6 = var7.create;
             var1 = function(arg0) { // Environment: var3
-                _fun63993: for (var _fun63993_ip = 0;;) switch (_fun63993_ip) {
+                _fun64010: for (var _fun64010_ip = 0;;) switch (_fun64010_ip) {
                     case 0:
                         var1 = arg0;
                         var _closure2_slot0 = var1;
@@ -77,14 +77,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2 = _closure2_slot0;
                                 var1 = undefined;
                                 var0 = function(arg0) { // Environment: var0
-                                    _fun63996: for (var _fun63996_ip = 0;;) switch (_fun63996_ip) {
+                                    _fun64013: for (var _fun64013_ip = 0;;) switch (_fun64013_ip) {
                                         case 0:
                                             var0 = arg0;
                                             var3 = var0.rawThermalState;
                                             var1 = _closure3_slot0;
                                             if (!(var3 !== var1)) {
-                                                _fun63996_ip = 34;
-                                                continue _fun63996
+                                                _fun64013_ip = 34;
+                                                continue _fun64013
                                             }
                                         case 20:
                                             var1 = {};
@@ -111,16 +111,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = var4.isAndroid;
                         var3 = var3.bind(var4)();
                         if (var3) {
-                            _fun63993_ip = 78;
-                            continue _fun63993
+                            _fun64010_ip = 78;
+                            continue _fun64010
                         }
                     case 56:
                         var3 = _closure1_slot3;
                         var4 = var3.DCDDeviceThermalStateManager;
                         var3 = var4.getThermalState;
                         var4 = var3.bind(var4)();
-                        _fun63993_ip = 197;
-                        continue _fun63993;
+                        _fun64010_ip = 197;
+                        continue _fun64010;
                     case 78:
                         var6 = global;
                         var7 = var6.parseInt;
@@ -134,15 +134,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7 = var7.bind(var1)(var3);
                         var3 = 29;
                         if (!(!(var7 >= var3))) {
-                            _fun63993_ip = 147;
-                            continue _fun63993
+                            _fun64010_ip = 147;
+                            continue _fun64010
                         }
                     case 128:
                         var7 = var6.Promise;
                         var3 = var7.resolve;
                         var3 = var3.bind(var7)(var1);
-                        _fun63993_ip = 194;
-                        continue _fun63993;
+                        _fun64010_ip = 194;
+                        continue _fun64010;
                     case 147:
                         var8 = var6.Promise;
                         var7 = var8.resolve;
@@ -218,4 +218,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.default = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 478, 7945, 1309, 629, 802, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 478, 7948, 1309, 629, 802, 2]);

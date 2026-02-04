@@ -23,16 +23,16 @@ import st.e;
 public class b implements s {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ConcurrentMap f51034a = new ConcurrentHashMap();
+    private static final ConcurrentMap f51031a = new ConcurrentHashMap();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Set f51035b;
+    private static final Set f51032b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Map f51036c;
+    private static final Map f51033c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Map f51037d;
+    private static final Map f51034d;
 
     static {
         HashSet hashSet = new HashSet();
@@ -45,10 +45,10 @@ public class b implements s {
         hashSet.add("UTC0");
         hashSet.add("Universal");
         hashSet.add("Zulu");
-        f51035b = Collections.unmodifiableSet(hashSet);
+        f51032b = Collections.unmodifiableSet(hashSet);
         HashMap hashMap = new HashMap();
         g(hashMap, "data/zone1970.tab");
-        f51036c = Collections.unmodifiableMap(hashMap);
+        f51033c = Collections.unmodifiableMap(hashMap);
         HashMap hashMap2 = new HashMap();
         a(hashMap2, "CL", "America/Santiago");
         a(hashMap2, "CN", "Asia/Shanghai");
@@ -61,7 +61,7 @@ public class b implements s {
         a(hashMap2, "PT", "Europe/Lisbon");
         a(hashMap2, "UA", "Europe/Kiev");
         a(hashMap2, "UZ", "Asia/Tashkent");
-        f51037d = Collections.unmodifiableMap(hashMap2);
+        f51034d = Collections.unmodifiableMap(hashMap2);
     }
 
     private static void a(Map map, String str, String str2) {
@@ -145,12 +145,12 @@ public class b implements s {
                 linkedHashSet.add("Pacific/Honolulu");
                 return Collections.unmodifiableSet(linkedHashSet);
             }
-            String str = (String) f51037d.get(country);
+            String str = (String) f51034d.get(country);
             if (str != null) {
                 return Collections.singleton(str);
             }
         }
-        Set set = (Set) f51036c.get(country);
+        Set set = (Set) f51033c.get(country);
         if (set == null) {
             return Collections.EMPTY_SET;
         }
@@ -171,10 +171,10 @@ public class b implements s {
 
     @Override // net.time4j.tz.s
     public String f(String str, net.time4j.tz.d dVar, Locale locale) {
-        if (f51035b.contains(str)) {
+        if (f51032b.contains(str)) {
             return "";
         }
-        Map map = (Map) f51034a.get(locale);
+        Map map = (Map) f51031a.get(locale);
         if (map == null) {
             String[][] zoneStrings = DateFormatSymbols.getInstance(locale).getZoneStrings();
             HashMap hashMap = new HashMap();
@@ -186,7 +186,7 @@ public class b implements s {
                 enumMap.put((EnumMap) net.time4j.tz.d.SHORT_DAYLIGHT_TIME, (net.time4j.tz.d) strArr[4]);
                 hashMap.put(strArr[0], enumMap);
             }
-            map = (Map) f51034a.putIfAbsent(locale, hashMap);
+            map = (Map) f51031a.putIfAbsent(locale, hashMap);
             if (map == null) {
                 map = hashMap;
             }

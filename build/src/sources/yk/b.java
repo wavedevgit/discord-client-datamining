@@ -8,37 +8,37 @@ import java.util.List;
 final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final gk.b f54560a;
+    private final gk.b f54557a;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f54562c;
+    private final int f54559c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f54563d;
+    private final int f54560d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f54564e;
+    private final int f54561e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f54565f;
+    private final int f54562f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final float f54566g;
+    private final float f54563g;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f54561b = new ArrayList(5);
+    private final List f54558b = new ArrayList(5);
 
     /* renamed from: h  reason: collision with root package name */
-    private final int[] f54567h = new int[3];
+    private final int[] f54564h = new int[3];
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(gk.b bVar, int i10, int i11, int i12, int i13, float f10, q qVar) {
-        this.f54560a = bVar;
-        this.f54562c = i10;
-        this.f54563d = i11;
-        this.f54564e = i12;
-        this.f54565f = i13;
-        this.f54566g = f10;
+        this.f54557a = bVar;
+        this.f54559c = i10;
+        this.f54560d = i11;
+        this.f54561e = i12;
+        this.f54562f = i13;
+        this.f54563g = f10;
     }
 
     private static float a(int[] iArr, int i10) {
@@ -46,9 +46,9 @@ final class b {
     }
 
     private float b(int i10, int i11, int i12, int i13) {
-        gk.b bVar = this.f54560a;
+        gk.b bVar = this.f54557a;
         int i14 = bVar.i();
-        int[] iArr = this.f54567h;
+        int[] iArr = this.f54564h;
         iArr[0] = 0;
         iArr[1] = 0;
         iArr[2] = 0;
@@ -101,7 +101,7 @@ final class b {
     }
 
     private boolean d(int[] iArr) {
-        float f10 = this.f54566g;
+        float f10 = this.f54563g;
         float f11 = f10 / 2.0f;
         for (int i10 = 0; i10 < 3; i10++) {
             if (Math.abs(f10 - iArr[i10]) >= f11) {
@@ -117,12 +117,12 @@ final class b {
         float b10 = b(i10, (int) a10, iArr[1] * 2, i12);
         if (!Float.isNaN(b10)) {
             float f10 = ((iArr[0] + iArr[1]) + iArr[2]) / 3.0f;
-            for (a aVar : this.f54561b) {
+            for (a aVar : this.f54558b) {
                 if (aVar.f(f10, b10, a10)) {
                     return aVar.g(b10, a10, f10);
                 }
             }
-            this.f54561b.add(new a(a10, b10, f10));
+            this.f54558b.add(new a(a10, b10, f10));
             return null;
         }
         return null;
@@ -133,10 +133,10 @@ final class b {
         int i10;
         a e10;
         a e11;
-        int i11 = this.f54562c;
-        int i12 = this.f54565f;
-        int i13 = this.f54564e + i11;
-        int i14 = this.f54563d + (i12 / 2);
+        int i11 = this.f54559c;
+        int i12 = this.f54562f;
+        int i13 = this.f54561e + i11;
+        int i14 = this.f54560d + (i12 / 2);
         int[] iArr = new int[3];
         for (int i15 = 0; i15 < i12; i15++) {
             if ((i15 & 1) == 0) {
@@ -149,12 +149,12 @@ final class b {
             iArr[1] = 0;
             iArr[2] = 0;
             int i17 = i11;
-            while (i17 < i13 && !this.f54560a.e(i17, i16)) {
+            while (i17 < i13 && !this.f54557a.e(i17, i16)) {
                 i17++;
             }
             int i18 = 0;
             while (i17 < i13) {
-                if (this.f54560a.e(i17, i16)) {
+                if (this.f54557a.e(i17, i16)) {
                     if (i18 == 1) {
                         iArr[1] = iArr[1] + 1;
                     } else if (i18 == 2) {
@@ -181,8 +181,8 @@ final class b {
                 return e10;
             }
         }
-        if (!this.f54561b.isEmpty()) {
-            return (a) this.f54561b.get(0);
+        if (!this.f54558b.isEmpty()) {
+            return (a) this.f54558b.get(0);
         }
         throw k.a();
     }

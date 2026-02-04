@@ -123,7 +123,7 @@ public final class LocationDataJsonAdapter extends h {
         String str24 = str;
         Constructor constructor = this.f19419d;
         if (constructor == null) {
-            constructor = LocationData.class.getDeclaredConstructor(String.class, String.class, String.class, String.class, String.class, String.class, String.class, String.class, Integer.TYPE, c.f51691c);
+            constructor = LocationData.class.getDeclaredConstructor(String.class, String.class, String.class, String.class, String.class, String.class, String.class, String.class, Integer.TYPE, c.f51688c);
             this.f19419d = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

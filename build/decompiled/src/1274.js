@@ -12,15 +12,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var2.DEFAULT_FORMAT_CONFIG = var0;
     var1 = function arg0, arg1() {
-        _fun13739: for (var _fun13739_ip = 0;;) switch (_fun13739_ip) {
+        _fun13741: for (var _fun13741_ip = 0;;) switch (_fun13741_ip) {
             case 0:
                 var3 = arg1;
                 var0 = null;
                 var1 = var0 == var3;
                 var0 = undefined;
                 if (var1) {
-                    _fun13739_ip = 19;
-                    continue _fun13739
+                    _fun13741_ip = 19;
+                    continue _fun13741
                 }
             case 14:
                 var0 = var3.format;
@@ -28,8 +28,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = 'string';
                 var0 = typeof var0;
                 if (!(var1 !== var0)) {
-                    _fun13739_ip = 32;
-                    continue _fun13739
+                    _fun13741_ip = 32;
+                    continue _fun13741
                 }
             case 30:
                 return var3;

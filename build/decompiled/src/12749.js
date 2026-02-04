@@ -1,95 +1,108 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
-    var8 = exports;
-    var2 = dependencyMap;
-    var _closure1_slot0 = var5;
-    var _closure1_slot1 = var8;
-    var _closure1_slot2 = var2;
+    var2 = exports;
     var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
-    var4 = {};
-    var3 = true;
-    var4.value = var3;
-    var3 = '__esModule';
-    var3 = var6.bind(var7)(var8, var3, var4);
-    var4 = var0.Object;
-    var3 = var4.keys;
-    var0 = 0;
-    var2 = var2[var0];
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var2, var0, var3);
     var0 = undefined;
-    var2 = var5.bind(var0)(var2);
-    var3 = var3.bind(var4)(var2);
-    var2 = var3.forEach;
-    var1 = function(arg0) { // Environment: var1
+    var2.default = var0;
+    var3 = {};
+    var4 = 'http://localhost:8081';
+    var3.url = var4;
+    var _closure1_slot0 = var3;
+    var1 = function() {
         _fun97578: for (var _fun97578_ip = 0;;) switch (_fun97578_ip) {
             case 0:
-                var4 = arg0;
-                var _closure2_slot0 = var4;
-                var0 = 'default';
-                var0 = var0 !== var4;
-                if (!var0) {
-                    _fun97578_ip = 28;
-                    continue _fun97578
-                }
-            case 20:
-                var1 = '__esModule';
-                var0 = var1 !== var4;
-            case 28:
-                if (!var0) {
-                    _fun97578_ip = 128;
-                    continue _fun97578
-                }
-            case 31:
-                var1 = _closure1_slot1;
-                var1 = var4 in var1;
-                if (!var1) {
-                    _fun97578_ip = 82;
-                    continue _fun97578
-                }
-            case 45:
-                var2 = _closure1_slot1;
-                var3 = var2[var4];
-                var7 = _closure1_slot0;
-                var6 = _closure1_slot2;
+                var4 = undefined;
+                var3 = undefined;
+                var1 = arguments.length;
                 var2 = 0;
-                var6 = var6[var2];
-                var2 = undefined;
-                var2 = var7.bind(var2)(var6);
-                var2 = var2[var4];
-                var1 = var3 === var2;
-            case 82:
-                if (var1) {
-                    _fun97578_ip = 128;
+                if (!(var1 > var2)) {
+                    _fun97578_ip = 23;
                     continue _fun97578
                 }
-            case 85:
-                var1 = global;
-                var3 = var1.Object;
-                var2 = var3.defineProperty;
-                var1 = _closure1_slot1;
-                var0 = {};
-                var6 = true;
-                var0.enumerable = var6;
-                var5 = function() {
-                    var2 = _closure1_slot0;
-                    var1 = _closure1_slot2;
-                    var0 = 0;
-                    var1 = var1[var0];
-                    var0 = undefined;
-                    var1 = var2.bind(var0)(var1);
-                    var0 = _closure2_slot0;
-                    var0 = var1[var0];
+            case 15:
+                var1 = arguments[var2];
+                if (!(var4 === var1)) {
+                    _fun97578_ip = 27;
+                    continue _fun97578
+                }
+            case 23:
+                var1 = {};
+                _fun97578_ip = 31;
+                continue _fun97578;
+            case 27:
+                var1 = arguments[var2];
+            case 31:
+                var _closure2_slot0 = var1;
+                var0 = function() { // Environment: var0
+                    var0 = global;
+                    var5 = var0.Object;
+                    var4 = var5.assign;
+                    var3 = _closure1_slot0;
+                    var2 = _closure2_slot0;
+                    var0 = {};
+                    var0 = var4.bind(var5)(var0, var3, var2);
+                    var _closure3_slot0 = var0;
+                    var0 = {};
+                    var1 = function arg0() {
+                        _fun97580: for (var _fun97580_ip = 0;;) switch (_fun97580_ip) {
+                            case 0:
+                                var0 = arg0;
+                                var2 = var0.type;
+                                var1 = 'editor.open';
+                                if (!(var1 === var2)) {
+                                    _fun97580_ip = 146;
+                                    continue _fun97580
+                                }
+                            case 21:
+                                var0 = var0.payload;
+                                var2 = var0.file;
+                                var1 = var0.lineNumber;
+                                var0 = _closure3_slot0;
+                                var6 = var0.url;
+                                var0 = global;
+                                var3 = var0.HermesInternal;
+                                var5 = var3.concat;
+                                var4 = '';
+                                var3 = '/open-stack-frame';
+                                var3 = var5.bind(var4)(var6, var3);
+                                var5 = {};
+                                var5.file = var2;
+                                if (var1) {
+                                    _fun97580_ip = 93;
+                                    continue _fun97580
+                                }
+                            case 90:
+                                var1 = 1;
+                            case 93:
+                                var5.lineNumber = var1;
+                                var2 = var0.fetch;
+                                var1 = {};
+                                var4 = 'POST';
+                                var1.method = var4;
+                                var4 = var0.JSON;
+                                var0 = var4.stringify;
+                                var0 = var0.bind(var4)(var5);
+                                var1.body = var0;
+                                var0 = undefined;
+                                var0 = var2.bind(var0)(var3, var1);
+                            case 146:
+                                var0 = undefined;
+                                return var0;
+                        }
+                    };
+                    var0.onCommand = var1;
                     return var0;
                 };
-                var0.get = var5;
-                var0 = var2.bind(var3)(var1, var4, var0);
-            case 128:
-                var0 = undefined;
                 return var0;
         }
     };
-    var1 = var2.bind(var3)(var1);
+    var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12750]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

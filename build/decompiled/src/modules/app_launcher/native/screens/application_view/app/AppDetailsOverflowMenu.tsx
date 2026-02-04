@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_launcher/native/screens/application_view/app/AppDetailsOverflowMenu.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun107917: for (var _fun107917_ip = 0;;) switch (_fun107917_ip) {
+        _fun107930: for (var _fun107930_ip = 0;;) switch (_fun107930_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.application;
@@ -56,16 +56,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.canInstallApplication;
                 var0 = var0.bind(var2)(var7);
                 if (!var0) {
-                    _fun107917_ip = 100;
-                    continue _fun107917
+                    _fun107930_ip = 100;
+                    continue _fun107930
                 }
             case 94:
                 var2 = null;
                 var0 = var2 != var3;
             case 100:
                 if (!var0) {
-                    _fun107917_ip = 207;
-                    continue _fun107917
+                    _fun107930_ip = 207;
+                    continue _fun107930
                 }
             case 103:
                 var2 = var6.push;
@@ -109,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.getSetting;
                 var0 = var0.bind(var2)();
                 if (!var0) {
-                    _fun107917_ip = 352;
-                    continue _fun107917
+                    _fun107930_ip = 352;
+                    continue _fun107930
                 }
             case 246:
                 var2 = var6.push;
@@ -158,8 +158,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = 0;
                 var0 = null;
                 if (!(var2 !== var3)) {
-                    _fun107917_ip = 418;
-                    continue _fun107917
+                    _fun107930_ip = 418;
+                    continue _fun107930
                 }
             case 365:
                 var3 = _closure1_slot3;
@@ -226,4 +226,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 4673, 7810, 1234, 10910, 1348, 5291, 3147, 7727, 8945, 7508, 8169, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 4673, 7813, 1234, 10913, 1348, 5291, 3147, 7730, 8948, 7511, 8172, 2]);

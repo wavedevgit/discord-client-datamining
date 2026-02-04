@@ -10,33 +10,33 @@ import android.view.animation.DecelerateInterpolator;
 public class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private long f55957a;
+    private long f55954a;
 
     /* renamed from: b  reason: collision with root package name */
-    private long f55958b;
+    private long f55955b;
 
     /* renamed from: c  reason: collision with root package name */
-    private TimeInterpolator f55959c;
+    private TimeInterpolator f55956c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f55960d;
+    private int f55957d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f55961e;
+    private int f55958e;
 
     public h(long j10, long j11) {
-        this.f55959c = null;
-        this.f55960d = 0;
-        this.f55961e = 1;
-        this.f55957a = j10;
-        this.f55958b = j11;
+        this.f55956c = null;
+        this.f55957d = 0;
+        this.f55958e = 1;
+        this.f55954a = j10;
+        this.f55955b = j11;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static h b(ValueAnimator valueAnimator) {
         h hVar = new h(valueAnimator.getStartDelay(), valueAnimator.getDuration(), f(valueAnimator));
-        hVar.f55960d = valueAnimator.getRepeatCount();
-        hVar.f55961e = valueAnimator.getRepeatMode();
+        hVar.f55957d = valueAnimator.getRepeatCount();
+        hVar.f55958e = valueAnimator.getRepeatMode();
         return hVar;
     }
 
@@ -44,14 +44,14 @@ public class h {
         TimeInterpolator interpolator = valueAnimator.getInterpolator();
         if (!(interpolator instanceof AccelerateDecelerateInterpolator) && interpolator != null) {
             if (interpolator instanceof AccelerateInterpolator) {
-                return a.f55946c;
+                return a.f55943c;
             }
             if (interpolator instanceof DecelerateInterpolator) {
-                return a.f55947d;
+                return a.f55944d;
             }
             return interpolator;
         }
-        return a.f55945b;
+        return a.f55942b;
     }
 
     public void a(Animator animator) {
@@ -66,19 +66,19 @@ public class h {
     }
 
     public long c() {
-        return this.f55957a;
+        return this.f55954a;
     }
 
     public long d() {
-        return this.f55958b;
+        return this.f55955b;
     }
 
     public TimeInterpolator e() {
-        TimeInterpolator timeInterpolator = this.f55959c;
+        TimeInterpolator timeInterpolator = this.f55956c;
         if (timeInterpolator != null) {
             return timeInterpolator;
         }
-        return a.f55945b;
+        return a.f55942b;
     }
 
     public boolean equals(Object obj) {
@@ -96,11 +96,11 @@ public class h {
     }
 
     public int g() {
-        return this.f55960d;
+        return this.f55957d;
     }
 
     public int h() {
-        return this.f55961e;
+        return this.f55958e;
     }
 
     public int hashCode() {
@@ -112,10 +112,10 @@ public class h {
     }
 
     public h(long j10, long j11, TimeInterpolator timeInterpolator) {
-        this.f55960d = 0;
-        this.f55961e = 1;
-        this.f55957a = j10;
-        this.f55958b = j11;
-        this.f55959c = timeInterpolator;
+        this.f55957d = 0;
+        this.f55958e = 1;
+        this.f55954a = j10;
+        this.f55955b = j11;
+        this.f55956c = timeInterpolator;
     }
 }

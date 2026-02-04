@@ -17,14 +17,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.bind(var0)(var2);
     var _closure1_slot0 = var2;
     var2 = function arg0() {
-        _fun29042: for (var _fun29042_ip = 0;;) switch (_fun29042_ip) {
+        _fun29044: for (var _fun29044_ip = 0;;) switch (_fun29044_ip) {
             case 0:
                 var3 = this;
                 var2 = _closure1_slot0;
                 var1 = undefined;
                 if (!(var1 === var3)) {
-                    _fun29042_ip = 24;
-                    continue _fun29042
+                    _fun29044_ip = 24;
+                    continue _fun29044
                 }
             case 16:
                 var0 = global;

@@ -13,13 +13,13 @@ public class a {
         @NotNull
 
         /* renamed from: a  reason: collision with root package name */
-        public static final C0628a f50232a = new C0628a();
+        public static final C0628a f50229a = new C0628a();
 
         /* renamed from: b  reason: collision with root package name */
-        public static final Method f50233b;
+        public static final Method f50230b;
 
         /* renamed from: c  reason: collision with root package name */
-        public static final Method f50234c;
+        public static final Method f50231c;
 
         static {
             Method method;
@@ -46,7 +46,7 @@ public class a {
                     break;
                 }
             }
-            f50233b = method2;
+            f50230b = method2;
             int length2 = methods.length;
             while (true) {
                 if (i10 >= length2) {
@@ -59,7 +59,7 @@ public class a {
                 }
                 i10++;
             }
-            f50234c = method;
+            f50231c = method;
         }
 
         private C0628a() {
@@ -69,7 +69,7 @@ public class a {
     public void a(Throwable cause, Throwable exception) {
         Intrinsics.checkNotNullParameter(cause, "cause");
         Intrinsics.checkNotNullParameter(exception, "exception");
-        Method method = C0628a.f50233b;
+        Method method = C0628a.f50230b;
         if (method != null) {
             method.invoke(cause, exception);
         }

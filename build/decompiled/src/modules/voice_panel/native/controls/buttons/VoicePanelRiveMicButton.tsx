@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_panel/native/controls/buttons/VoicePanelRiveMicButton.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun68214: for (var _fun68214_ip = 0;;) switch (_fun68214_ip) {
+        _fun68231: for (var _fun68231_ip = 0;;) switch (_fun68231_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.color;
@@ -65,8 +65,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.dataBinding = var6;
                 var6 = 'On';
                 if (!var7) {
-                    _fun68214_ip = 110;
-                    continue _fun68214
+                    _fun68231_ip = 110;
+                    continue _fun68231
                 }
             case 104:
                 var6 = 'Off';

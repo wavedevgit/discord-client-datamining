@@ -203,14 +203,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getQuestDockExpandedWidth = var4;
     var2.getQuestDockClosedWidth = var3;
     var1 = function arg0() {
-        _fun46865: for (var _fun46865_ip = 0;;) switch (_fun46865_ip) {
+        _fun46868: for (var _fun46868_ip = 0;;) switch (_fun46868_ip) {
             case 0:
                 var2 = arg0;
                 var0 = null;
                 var0 = var0 != var2;
                 if (!var0) {
-                    _fun46865_ip = 44;
-                    continue _fun46865
+                    _fun46868_ip = 44;
+                    continue _fun46868
                 }
             case 12:
                 var1 = global;

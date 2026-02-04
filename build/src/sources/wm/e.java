@@ -9,7 +9,7 @@ import wm.t;
 public final class e implements t {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f52534a = new e();
+    public static final e f52531a = new e();
 
     private e() {
     }

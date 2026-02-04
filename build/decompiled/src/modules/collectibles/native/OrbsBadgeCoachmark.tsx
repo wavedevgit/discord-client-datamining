@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function arg0() {
-        _fun59734: for (var _fun59734_ip = 0;;) switch (_fun59734_ip) {
+        _fun59751: for (var _fun59751_ip = 0;;) switch (_fun59751_ip) {
             case 0:
                 var1 = arg0;
                 var1 = var1.disabled;
@@ -157,7 +157,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = !var2;
                     var0.visible = var2;
                     var2 = function() {
-                        _fun59736: for (var _fun59736_ip = 0;;) switch (_fun59736_ip) {
+                        _fun59753: for (var _fun59753_ip = 0;;) switch (_fun59753_ip) {
                             case 0:
                                 var2 = _closure1_slot0;
                                 var1 = _closure1_slot2;
@@ -169,15 +169,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3 = var1.bind(var2)();
                                 var1 = null;
                                 if (!(var1 != var3)) {
-                                    _fun59736_ip = 74;
-                                    continue _fun59736
+                                    _fun59753_ip = 74;
+                                    continue _fun59753
                                 }
                             case 41:
                                 var1 = var3.isReady;
                                 var1 = var1.bind(var3)();
                                 if (!var1) {
-                                    _fun59736_ip = 74;
-                                    continue _fun59736
+                                    _fun59753_ip = 74;
+                                    continue _fun59753
                                 }
                             case 54:
                                 var2 = var3.setParams;
@@ -205,8 +205,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var4)(var0, var2);
                 var0 = null;
                 if (var1) {
-                    _fun59734_ip = 83;
-                    continue _fun59734
+                    _fun59751_ip = 83;
+                    continue _fun59751
                 }
             case 74:
                 var1 = {};
@@ -218,4 +218,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useOrbsBadgeCoachmark = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 7373, 1234, 3920, 7016, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 7376, 1234, 3920, 7019, 2]);

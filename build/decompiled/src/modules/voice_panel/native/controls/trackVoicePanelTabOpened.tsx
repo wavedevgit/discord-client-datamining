@@ -43,15 +43,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/voice_panel/native/controls/trackVoicePanelTabOpened.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0, arg1, arg2() {
-        _fun111479: for (var _fun111479_ip = 0;;) switch (_fun111479_ip) {
+        _fun111492: for (var _fun111492_ip = 0;;) switch (_fun111492_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot2;
                 var0 = var2.hasUnread;
                 var5 = var0.bind(var2)(var3);
                 if (var5) {
-                    _fun111479_ip = 45;
-                    continue _fun111479
+                    _fun111492_ip = 45;
+                    continue _fun111492
                 }
             case 24:
                 var2 = _closure1_slot2;

@@ -16,7 +16,7 @@ import org.webrtc.MediaStreamTrack;
 public abstract class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f48870a = "g";
+    private static final String f48867a = "g";
 
     public static int a(ol.e eVar, int i10) {
         MediaFormat trackFormat = eVar.getTrackFormat(i10);
@@ -88,7 +88,7 @@ public abstract class g {
             int c10 = c(trackFormat);
             long d10 = d(bVar);
             if (d10 < 0) {
-                Log.d(f48870a, "Track duration is not available, using maximum duration");
+                Log.d(f48867a, "Track duration is not available, using maximum duration");
                 d10 = j10;
             }
             String f11 = f(trackFormat);
@@ -100,7 +100,7 @@ public abstract class g {
                 }
             }
             if (c10 < 0) {
-                Log.d(f48870a, "Bitrate is not available, cannot use that track to estimate size");
+                Log.d(f48867a, "Bitrate is not available, cannot use that track to estimate size");
                 c10 = 0;
             }
             f10 += c10 * f.a(d10);
@@ -143,17 +143,17 @@ public abstract class g {
                         try {
                             assetFileDescriptor.close();
                         } catch (IOException e102) {
-                            Log.e(f48870a, "Unable to close file descriptor from targetFile: " + uri, e102);
+                            Log.e(f48867a, "Unable to close file descriptor from targetFile: " + uri, e102);
                         }
                     }
                 }
             } catch (FileNotFoundException | IllegalStateException e11) {
-                Log.e(f48870a, "Unable to extract length from targetFile: " + uri, e11);
+                Log.e(f48867a, "Unable to extract length from targetFile: " + uri, e11);
                 if (assetFileDescriptor != null) {
                     try {
                         assetFileDescriptor.close();
                     } catch (IOException e12) {
-                        Log.e(f48870a, "Unable to close file descriptor from targetFile: " + uri, e12);
+                        Log.e(f48867a, "Unable to close file descriptor from targetFile: " + uri, e12);
                     }
                 }
                 return -1L;

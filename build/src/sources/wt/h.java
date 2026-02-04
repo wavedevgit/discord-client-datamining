@@ -8,16 +8,16 @@ import kotlin.jvm.internal.Intrinsics;
 public interface h {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f52761a = a.f52763a;
+    public static final a f52758a = a.f52760a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final h f52762b = new a.C0715a();
+    public static final h f52759b = new a.C0715a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ a f52763a = new a();
+        static final /* synthetic */ a f52760a = new a();
 
         /* renamed from: wt.h$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */

@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/explicit_media_redaction/native/ExplicitMediaSettingsActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun81774: for (var _fun81774_ip = 0;;) switch (_fun81774_ip) {
+        _fun81791: for (var _fun81791_ip = 0;;) switch (_fun81791_ip) {
             case 0:
                 var0 = arg0;
                 var16 = var0.title;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var12;
                 var0 = function(arg0) { // Environment: var10
-                    _fun81775: for (var _fun81775_ip = 0;;) switch (_fun81775_ip) {
+                    _fun81792: for (var _fun81792_ip = 0;;) switch (_fun81792_ip) {
                         case 0:
                             var1 = arg0;
                             var _closure3_slot0 = var1;
@@ -93,8 +93,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1.bind(var2)(var0);
                             var0 = null;
                             if (!(var0 != var1)) {
-                                _fun81775_ip = 83;
-                                continue _fun81775
+                                _fun81792_ip = 83;
+                                continue _fun81792
                             }
                         case 39:
                             var0 = var1.onPress;
@@ -145,8 +145,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = {};
                 var15 = null;
                 if (!(var15 == var13)) {
-                    _fun81774_ip = 233;
-                    continue _fun81774
+                    _fun81791_ip = 233;
+                    continue _fun81791
                 }
             case 201:
                 var15 = _closure1_slot0;

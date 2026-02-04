@@ -126,14 +126,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.generateColorVariants = var3;
     var3 = function arg0() {
-        _fun18159: for (var _fun18159_ip = 0;;) switch (_fun18159_ip) {
+        _fun18161: for (var _fun18161_ip = 0;;) switch (_fun18161_ip) {
             case 0:
                 var2 = arg0;
                 var0 = null;
                 var1 = var0 == var2;
                 if (var1) {
-                    _fun18159_ip = 52;
-                    continue _fun18159
+                    _fun18161_ip = 52;
+                    continue _fun18161
                 }
             case 12:
                 var1 = {};
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.parseServerDisplayNameStyles = var3;
     var3 = function() {
-        _fun18160: for (var _fun18160_ip = 0;;) switch (_fun18160_ip) {
+        _fun18162: for (var _fun18162_ip = 0;;) switch (_fun18162_ip) {
             case 0:
                 var2 = _closure1_slot5;
                 var0 = global;
@@ -182,8 +182,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.DisplayNameEffect;
                 var1 = var1.GRADIENT;
                 if (!(var2 !== var1)) {
-                    _fun18160_ip = 203;
-                    continue _fun18160
+                    _fun18162_ip = 203;
+                    continue _fun18162
                 }
             case 143:
                 var5 = _closure1_slot3;
@@ -198,8 +198,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5[var1];
                 var1 = new Array(1);
                 var1[0] = var5;
-                _fun18160_ip = 278;
-                continue _fun18160;
+                _fun18162_ip = 278;
+                continue _fun18162;
             case 203:
                 var4 = _closure1_slot4;
                 var6 = var0.Math;
@@ -227,13 +227,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.generateRandomDisplayNameStyles = var3;
     var1 = function arg0() {
-        _fun18161: for (var _fun18161_ip = 0;;) switch (_fun18161_ip) {
+        _fun18163: for (var _fun18163_ip = 0;;) switch (_fun18163_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 if (!(var0 != var3)) {
-                    _fun18161_ip = 64;
-                    continue _fun18161
+                    _fun18163_ip = 64;
+                    continue _fun18163
                 }
             case 9:
                 var2 = var3.replace;

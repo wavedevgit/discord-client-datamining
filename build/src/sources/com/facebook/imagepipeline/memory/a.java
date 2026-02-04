@@ -93,7 +93,7 @@ public abstract class a implements r8.f {
         this.f10230c = zVar2;
         this.f10236i = (a0) j.g(a0Var);
         this.f10231d = new SparseArray();
-        if (zVar2.f51315f) {
+        if (zVar2.f51312f) {
             r();
         } else {
             v(new SparseIntArray(0));
@@ -121,7 +121,7 @@ public abstract class a implements r8.f {
         this.f10231d.clear();
         for (int i10 = 0; i10 < sparseIntArray.size(); i10++) {
             int keyAt = sparseIntArray.keyAt(i10);
-            this.f10231d.put(keyAt, new com.facebook.imagepipeline.memory.b(p(keyAt), sparseIntArray.valueAt(i10), 0, this.f10230c.f51315f));
+            this.f10231d.put(keyAt, new com.facebook.imagepipeline.memory.b(p(keyAt), sparseIntArray.valueAt(i10), 0, this.f10230c.f51312f));
         }
     }
 
@@ -131,7 +131,7 @@ public abstract class a implements r8.f {
 
     private synchronized void r() {
         try {
-            SparseIntArray sparseIntArray = this.f10230c.f51312c;
+            SparseIntArray sparseIntArray = this.f10230c.f51309c;
             if (sparseIntArray != null) {
                 j(sparseIntArray);
                 this.f10233f = false;
@@ -147,11 +147,11 @@ public abstract class a implements r8.f {
         try {
             j.g(sparseIntArray);
             this.f10231d.clear();
-            SparseIntArray sparseIntArray2 = this.f10230c.f51312c;
+            SparseIntArray sparseIntArray2 = this.f10230c.f51309c;
             if (sparseIntArray2 != null) {
                 for (int i10 = 0; i10 < sparseIntArray2.size(); i10++) {
                     int keyAt = sparseIntArray2.keyAt(i10);
-                    this.f10231d.put(keyAt, new com.facebook.imagepipeline.memory.b(p(keyAt), sparseIntArray2.valueAt(i10), sparseIntArray.get(keyAt, 0), this.f10230c.f51315f));
+                    this.f10231d.put(keyAt, new com.facebook.imagepipeline.memory.b(p(keyAt), sparseIntArray2.valueAt(i10), sparseIntArray.get(keyAt, 0), this.f10230c.f51312f));
                 }
                 this.f10233f = false;
             } else {
@@ -228,7 +228,7 @@ public abstract class a implements r8.f {
                     }
                     return obj;
                 }
-                throw new c(this.f10230c.f51310a, this.f10234g.f10239b, this.f10235h.f10239b, p11);
+                throw new c(this.f10230c.f51307a, this.f10234g.f10239b, this.f10235h.f10239b, p11);
             } finally {
             }
         }
@@ -239,13 +239,13 @@ public abstract class a implements r8.f {
             return true;
         }
         z zVar = this.f10230c;
-        int i11 = zVar.f51310a;
+        int i11 = zVar.f51307a;
         int i12 = this.f10234g.f10239b;
         if (i10 > i11 - i12) {
             this.f10236i.g();
             return false;
         }
-        int i13 = zVar.f51311b;
+        int i13 = zVar.f51308b;
         if (i10 > i13 - (i12 + this.f10235h.f10239b)) {
             y(i13 - i10);
         }
@@ -382,7 +382,7 @@ public abstract class a implements r8.f {
 
     synchronized boolean t() {
         boolean z10;
-        if (this.f10234g.f10239b + this.f10235h.f10239b > this.f10230c.f51311b) {
+        if (this.f10234g.f10239b + this.f10235h.f10239b > this.f10230c.f51308b) {
             z10 = true;
         } else {
             z10 = false;
@@ -399,7 +399,7 @@ public abstract class a implements r8.f {
     }
 
     com.facebook.imagepipeline.memory.b x(int i10) {
-        return new com.facebook.imagepipeline.memory.b(p(i10), Integer.MAX_VALUE, 0, this.f10230c.f51315f);
+        return new com.facebook.imagepipeline.memory.b(p(i10), Integer.MAX_VALUE, 0, this.f10230c.f51312f);
     }
 
     synchronized void y(int i10) {
@@ -438,7 +438,7 @@ public abstract class a implements r8.f {
 
     synchronized void z() {
         if (t()) {
-            y(this.f10230c.f51311b);
+            y(this.f10230c.f51308b);
         }
     }
 

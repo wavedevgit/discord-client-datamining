@@ -543,10 +543,10 @@ public final class Format implements g {
             int i10 = 0;
             while (true) {
                 rc.m mVar = format.f11306z;
-                if (i10 >= mVar.f48747o) {
+                if (i10 >= mVar.f48744o) {
                     break;
                 }
-                UUID uuid = mVar.n(i10).f48749e;
+                UUID uuid = mVar.n(i10).f48746e;
                 if (uuid.equals(lc.d.f36653b)) {
                     linkedHashSet.add("cenc");
                 } else if (uuid.equals(lc.d.f36654c)) {

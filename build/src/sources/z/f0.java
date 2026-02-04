@@ -67,7 +67,7 @@ public final class f0 implements j0.y {
         } else {
             j10 = null;
         }
-        if (y.f55482g.b(a10)) {
+        if (y.f55479g.b(a10)) {
             b2.e.h(j10, "JPEG image must have exif.");
             return c(b10, j10, a10);
         }

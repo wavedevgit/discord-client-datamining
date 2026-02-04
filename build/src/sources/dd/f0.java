@@ -48,7 +48,7 @@ final class f0 {
         int min = (int) Math.min(this.f20241a, lVar.getLength());
         long j10 = 0;
         if (lVar.getPosition() != j10) {
-            yVar.f50001a = j10;
+            yVar.f49998a = j10;
             return 1;
         }
         this.f20243c.Q(min);
@@ -77,7 +77,7 @@ final class f0 {
         int min = (int) Math.min(this.f20241a, length);
         long j10 = length - min;
         if (lVar.getPosition() != j10) {
-            yVar.f50001a = j10;
+            yVar.f49998a = j10;
             return 1;
         }
         this.f20243c.Q(min);

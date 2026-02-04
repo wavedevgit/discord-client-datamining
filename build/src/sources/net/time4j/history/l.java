@@ -638,13 +638,13 @@ final class l extends rt.c implements pt.a {
                     int J = J(N, N2, i11);
                     if (jVar.p() && J != Integer.MAX_VALUE) {
                         if (qVar != null) {
-                            qVar.C(rt.c.f49124p, N);
+                            qVar.C(rt.c.f49121p, N);
                         }
                         index3 = index4;
                         N = J;
                     } else if (Math.abs(N2 - N) <= i11) {
                         if (qVar != null) {
-                            qVar.C(rt.c.f49124p, N);
+                            qVar.C(rt.c.f49121p, N);
                         }
                         N = N2;
                         index3 = index4;

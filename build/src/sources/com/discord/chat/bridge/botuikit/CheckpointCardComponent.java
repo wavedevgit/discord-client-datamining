@@ -21,7 +21,7 @@ public final class CheckpointCardComponent extends Component {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8239id;
+    private final String f8238id;
     private final int type;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¨\u0006\u0007"}, d2 = {"Lcom/discord/chat/bridge/botuikit/CheckpointCardComponent$Companion;", "", "<init>", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/chat/bridge/botuikit/CheckpointCardComponent;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
@@ -47,7 +47,7 @@ public final class CheckpointCardComponent extends Component {
             v1.b(i10, 7, CheckpointCardComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f8239id = str;
+        this.f8238id = str;
         this.checkpointData = checkpointDataV2025;
     }
 
@@ -56,7 +56,7 @@ public final class CheckpointCardComponent extends Component {
             i10 = checkpointCardComponent.type;
         }
         if ((i11 & 2) != 0) {
-            str = checkpointCardComponent.f8239id;
+            str = checkpointCardComponent.f8238id;
         }
         if ((i11 & 4) != 0) {
             checkpointDataV2025 = checkpointCardComponent.checkpointData;
@@ -76,7 +76,7 @@ public final class CheckpointCardComponent extends Component {
 
     @NotNull
     public final String component2() {
-        return this.f8239id;
+        return this.f8238id;
     }
 
     @NotNull
@@ -97,7 +97,7 @@ public final class CheckpointCardComponent extends Component {
         }
         if (obj instanceof CheckpointCardComponent) {
             CheckpointCardComponent checkpointCardComponent = (CheckpointCardComponent) obj;
-            return this.type == checkpointCardComponent.type && Intrinsics.areEqual(this.f8239id, checkpointCardComponent.f8239id) && Intrinsics.areEqual(this.checkpointData, checkpointCardComponent.checkpointData);
+            return this.type == checkpointCardComponent.type && Intrinsics.areEqual(this.f8238id, checkpointCardComponent.f8238id) && Intrinsics.areEqual(this.checkpointData, checkpointCardComponent.checkpointData);
         }
         return false;
     }
@@ -110,7 +110,7 @@ public final class CheckpointCardComponent extends Component {
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f8239id;
+        return this.f8238id;
     }
 
     @Override // com.discord.chat.bridge.botuikit.Component
@@ -119,13 +119,13 @@ public final class CheckpointCardComponent extends Component {
     }
 
     public int hashCode() {
-        return (((Integer.hashCode(this.type) * 31) + this.f8239id.hashCode()) * 31) + this.checkpointData.hashCode();
+        return (((Integer.hashCode(this.type) * 31) + this.f8238id.hashCode()) * 31) + this.checkpointData.hashCode();
     }
 
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f8239id;
+        String str = this.f8238id;
         CheckpointDataV2025 checkpointDataV2025 = this.checkpointData;
         return "CheckpointCardComponent(type=" + i10 + ", id=" + str + ", checkpointData=" + checkpointDataV2025 + ")";
     }
@@ -136,7 +136,7 @@ public final class CheckpointCardComponent extends Component {
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(checkpointData, "checkpointData");
         this.type = i10;
-        this.f8239id = id2;
+        this.f8238id = id2;
         this.checkpointData = checkpointData;
     }
 }

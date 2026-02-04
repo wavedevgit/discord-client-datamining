@@ -104,7 +104,7 @@ public final class l1 implements ym.k {
         }
 
         private a() {
-            k.a aVar = ym.k.f54648a;
+            k.a aVar = ym.k.f54645a;
             this.f27338a = new ym.z(Reflection.getOrCreateKotlinClass(x5.d.b.class), C0353a.f27339d, b.f27340d);
         }
     }
@@ -194,18 +194,18 @@ public final class l1 implements ym.k {
         int parseColor = Color.parseColor("#022050");
         Context context = this.f27336b.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        themeableLottieAnimationView.I(parseColor, mp.s.d(context, yg.b.f54101m, null, false, 6, null));
+        themeableLottieAnimationView.I(parseColor, mp.s.d(context, yg.b.f54098m, null, false, 6, null));
         ThemeableLottieAnimationView themeableLottieAnimationView2 = this.f27336b.f31015e;
         int parseColor2 = Color.parseColor("#AA85FF");
         Context context2 = this.f27336b.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context2, "getContext(...)");
-        themeableLottieAnimationView2.I(parseColor2, mp.s.d(context2, yg.b.f54102n, null, false, 6, null));
+        themeableLottieAnimationView2.I(parseColor2, mp.s.d(context2, yg.b.f54099n, null, false, 6, null));
         Context context3 = this.f27336b.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context3, "getContext(...)");
-        int d10 = mp.s.d(context3, yg.b.f54102n, null, false, 6, null);
+        int d10 = mp.s.d(context3, yg.b.f54099n, null, false, 6, null);
         Context context4 = this.f27336b.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context4, "getContext(...)");
-        this.f27336b.f31015e.I(Color.parseColor("#DBCCFF"), r1.c.c(d10, mp.s.d(context4, yg.b.f54103o, null, false, 6, null), 0.66f));
+        this.f27336b.f31015e.I(Color.parseColor("#DBCCFF"), r1.c.c(d10, mp.s.d(context4, yg.b.f54100o, null, false, 6, null), 0.66f));
     }
 
     @Override // ym.k

@@ -6,10 +6,10 @@ import yo.e;
 public final class g implements e.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final f f55157a;
+    private final f f55154a;
 
     g(f fVar) {
-        this.f55157a = fVar;
+        this.f55154a = fVar;
     }
 
     public static h b(f fVar) {
@@ -18,6 +18,6 @@ public final class g implements e.a {
 
     @Override // yo.e.a
     public e a(String str) {
-        return this.f55157a.b(str);
+        return this.f55154a.b(str);
     }
 }

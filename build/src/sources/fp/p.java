@@ -103,7 +103,7 @@ public final class p implements ym.k {
         }
 
         private a() {
-            k.a aVar = ym.k.f54648a;
+            k.a aVar = ym.k.f54645a;
             this.f24360a = new z(Reflection.getOrCreateKotlinClass(i.class), C0324a.f24361d, b.f24362d);
         }
     }
@@ -117,7 +117,7 @@ public final class p implements ym.k {
         if (this.f24359c != null) {
             return;
         }
-        final Dialog dialog = new Dialog(context, yg.j.f54250d);
+        final Dialog dialog = new Dialog(context, yg.j.f54247d);
         gp.a c10 = gp.a.c(LayoutInflater.from(dialog.getContext()));
         Intrinsics.checkNotNullExpressionValue(c10, "inflate(...)");
         dialog.setContentView(c10.getRoot());

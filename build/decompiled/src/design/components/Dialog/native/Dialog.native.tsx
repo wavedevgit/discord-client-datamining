@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Dialog/native/Dialog.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun37486: for (var _fun37486_ip = 0;;) switch (_fun37486_ip) {
+        _fun37488: for (var _fun37488_ip = 0;;) switch (_fun37488_ip) {
             case 0:
                 var2 = arg0;
                 var6 = var2.dialogKey;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.accessibilityViewIsModal = var9;
                 var0.onAccessibilityEscape = var8;
                 if (!(var7 != var6)) {
-                    _fun37486_ip = 128;
-                    continue _fun37486
+                    _fun37488_ip = 128;
+                    continue _fun37488
                 }
             case 125:
                 var5 = var6;

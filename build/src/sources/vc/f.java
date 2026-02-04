@@ -7,14 +7,14 @@ import ne.h0;
 final class f implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    public final s f51376a;
+    public final s f51373a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f51377b;
+    private final int f51374b;
 
     private f(int i10, s sVar) {
-        this.f51377b = i10;
-        this.f51376a = sVar;
+        this.f51374b = i10;
+        this.f51373a = sVar;
     }
 
     private static a a(int i10, int i11, h0 h0Var) {
@@ -59,7 +59,7 @@ final class f implements a {
     }
 
     public a b(Class cls) {
-        t0 it = this.f51376a.iterator();
+        t0 it = this.f51373a.iterator();
         while (it.hasNext()) {
             a aVar = (a) it.next();
             if (aVar.getClass() == cls) {
@@ -71,6 +71,6 @@ final class f implements a {
 
     @Override // vc.a
     public int getType() {
-        return this.f51377b;
+        return this.f51374b;
     }
 }

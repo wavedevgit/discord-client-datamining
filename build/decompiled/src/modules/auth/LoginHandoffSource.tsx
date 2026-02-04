@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.LoginHandoffSource = var3;
     var1 = function arg0() {
-        _fun50738: for (var _fun50738_ip = 0;;) switch (_fun50738_ip) {
+        _fun50741: for (var _fun50741_ip = 0;;) switch (_fun50741_ip) {
             case 0:
                 var0 = global;
                 var2 = var0.decodeURIComponent;
@@ -57,16 +57,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.bind(var4)(var3);
                 var4 = null;
                 if (!(var4 != var2)) {
-                    _fun50738_ip = 77;
-                    continue _fun50738
+                    _fun50741_ip = 77;
+                    continue _fun50741
                 }
             case 58:
                 var4 = var2.channelId;
                 var2 = _closure1_slot4;
                 var2 = var2.ROLE_SUBSCRIPTIONS;
                 if (!(var4 !== var2)) {
-                    _fun50738_ip = 127;
-                    continue _fun50738
+                    _fun50741_ip = 127;
+                    continue _fun50741
                 }
             case 77:
                 var6 = _closure1_slot2;
@@ -77,15 +77,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5.bind(var6)(var4, var2);
                 var0 = undefined;
                 if (!(var3 === var2)) {
-                    _fun50738_ip = 125;
-                    continue _fun50738
+                    _fun50741_ip = 125;
+                    continue _fun50741
                 }
             case 115:
                 var2 = _closure1_slot5;
                 var0 = var2.ROLE_SUBSCRIPTION_SETTING;
             case 125:
-                _fun50738_ip = 137;
-                continue _fun50738;
+                _fun50741_ip = 137;
+                continue _fun50741;
             case 127:
                 var1 = _closure1_slot5;
                 var0 = var1.ROLE_SUBSCRIPTION;

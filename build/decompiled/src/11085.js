@@ -1,102 +1,75 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var0 = module;
-    var _closure1_slot0 = var0;
-    var1 = function() {
-        _fun86034: for (var _fun86034_ip = 0;;) switch (_fun86034_ip) {
-            case 0:
-                var0 = undefined;
-                var3 = _closure1_slot0;
-                var4 = global;
-                var2 = var4.Object;
-                var2 = var2.assign;
-                if (var2) {
-                    _fun86034_ip = 36;
-                    continue _fun86034
-                }
-            case 25:
-                var2 = function(arg0) { // Environment: var2
-                    _fun86035: for (var _fun86035_ip = 0;;) switch (_fun86035_ip) {
-                        case 0:
-                            var0 = arg0;
-                            var4 = undefined;
-                            var1 = arguments.length;
-                            var2 = 1;
-                            var1 = var2 < var1;
-                            var3 = undefined;
-                            if (!var1) {
-                                _fun86035_ip = 104;
-                                continue _fun86035
-                            }
-                        case 20:
-                            var10 = arguments[var2];
-                            var8 = var10;
-                            var1 = var3;
-                            var3 = var1;
-                            for (var5 in var8)
-                                case 41: {
-                                    var3 = var1;
-                                    case 53: var11 = var5;
-                                    var12 = {};
-                                    var13 = var12.hasOwnProperty;
-                                    var12 = var13.call;
-                                    var12 = var12.bind(var13)(var10, var11);
-                                    var1 = var11;
-                                    if (!var12) {
-                                        _fun86035_ip = 41;
-                                        continue _fun86035
-                                    }
-                                    case 81: var12 = var10[var11];
-                                    var0[var11] = var12;
-                                    var1 = var11;
-                                    _fun86035_ip = 41;
-                                    continue _fun86035;
-                                }
-                        case 94:
-                            var2 = var2 + 1;
-                            var1 = arguments.length;
-                            if (var2 < var1) {
-                                _fun86035_ip = 20;
-                                continue _fun86035
-                            }
-                        case 104:
-                            return var0;
-                    }
-                };
-                _fun86034_ip = 56;
-                continue _fun86034;
-            case 36:
-                var4 = var4.Object;
-                var5 = var4.assign;
-                var4 = var5.bind;
-                var2 = var4.bind(var5)();
-            case 56:
-                _closure1_slot1 = var2;
-                var3.exports = var2;
-                var2 = _closure1_slot0;
-                var4 = var2.exports;
-                var3 = true;
-                var4.__esModule = var3;
-                var3 = var2.exports;
-                var2 = var2.exports;
-                var3.default = var2;
-                var3 = _closure1_slot1;
-                var2 = var3.apply;
-                var0 = arguments;
-                var1 = var0;
-                var0 = null;
-                var0 = var2.bind(var3)(var0, var1);
-                return var0;
-        }
-    };
-    var _closure1_slot1 = var1;
-    var0.exports = var1;
-    var2 = var0.exports;
-    var1 = true;
-    var2.__esModule = var1;
-    var1 = var0.exports;
-    var0 = var0.exports;
-    var1.default = var0;
+    var2 = exports;
+    var0 = global;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var1 = {};
+    var3 = true;
+    var1.value = var3;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var2, var0, var1);
     var0 = undefined;
+    var2.PLAY_MODE = var0;
+    var2.PAUSE_MODE = var0;
+    var2.MUTE_MODE = var0;
+    var2.UNMUTE_MODE = var0;
+    var2.PLAYER_STATES_NAMES = var0;
+    var2.PLAYER_STATES = var0;
+    var2.PLAYER_ERROR_NAMES = var0;
+    var2.PLAYER_ERROR = var0;
+    var2.CUSTOM_USER_AGENT = var0;
+    var2.DEFAULT_BASE_URL = var0;
+    var2.PLAY_MODE = var3;
+    var1 = false;
+    var2.PAUSE_MODE = var1;
+    var2.MUTE_MODE = var3;
+    var2.UNMUTE_MODE = var1;
+    var3 = {
+        'UNSTARTED': 'unstarted',
+        'ENDED': 'ended',
+        'PLAYING': 'playing',
+        'PAUSED': 'paused',
+        'BUFFERING': 'buffering',
+        'VIDEO_CUED': 'video cued'
+    };
+    var2.PLAYER_STATES_NAMES = var3;
+    var1 = {};
+    var4 = var3.UNSTARTED;
+    var1['-1'] = var4;
+    var4 = var3.ENDED;
+    var1[0] = var4;
+    var4 = var3.PLAYING;
+    var1[1] = var4;
+    var4 = var3.PAUSED;
+    var1[2] = var4;
+    var4 = var3.BUFFERING;
+    var1[3] = var4;
+    var3 = var3.VIDEO_CUED;
+    var1[5] = var3;
+    var2.PLAYER_STATES = var1;
+    var3 = {
+        'INVALID_PARAMETER': 'invalid_parameter',
+        'HTML5_ERROR': 'HTML5_error',
+        'VIDEO_NOT_FOUND': 'video_not_found',
+        'EMBED_NOT_ALLOWED': 'embed_not_allowed'
+    };
+    var2.PLAYER_ERROR_NAMES = var3;
+    var1 = {};
+    var4 = var3.INVALID_PARAMETER;
+    var1[2] = var4;
+    var4 = var3.HTML5_ERROR;
+    var1[5] = var4;
+    var4 = var3.VIDEO_NOT_FOUND;
+    var1[100] = var4;
+    var4 = var3.EMBED_NOT_ALLOWED;
+    var1[101] = var4;
+    var3 = var3.EMBED_NOT_ALLOWED;
+    var1[150] = var3;
+    var2.PLAYER_ERROR = var1;
+    var1 = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36';
+    var2.CUSTOM_USER_AGENT = var1;
+    var1 = 'https://lonelycpp.github.io/react-native-youtube-iframe/iframe.html';
+    var2.DEFAULT_BASE_URL = var1;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

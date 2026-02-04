@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var1;
     var1 = {};
     var6 = function arg0() {
-        _fun27204: for (var _fun27204_ip = 0;;) switch (_fun27204_ip) {
+        _fun27206: for (var _fun27206_ip = 0;;) switch (_fun27206_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot0;
@@ -36,16 +36,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.isAndroid;
                 var0 = var0.bind(var2)();
                 if (var0) {
-                    _fun27204_ip = 64;
-                    continue _fun27204
+                    _fun27206_ip = 64;
+                    continue _fun27206
                 }
             case 41:
                 var0 = _closure1_slot3;
                 var2 = var0.DCDLinkingManager;
                 var0 = var2.tryOpenUrlAsUniversalLink;
                 var0 = var0.bind(var2)(var3);
-                _fun27204_ip = 95;
-                continue _fun27204;
+                _fun27206_ip = 95;
+                continue _fun27206;
             case 64:
                 var2 = _closure1_slot1;
                 var5 = _closure1_slot2;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.tryOpenUrlAsUniversalLink = var6;
     var3 = function arg0() {
-        _fun27205: for (var _fun27205_ip = 0;;) switch (_fun27205_ip) {
+        _fun27207: for (var _fun27207_ip = 0;;) switch (_fun27207_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot0;
@@ -72,16 +72,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.isAndroid;
                 var0 = var0.bind(var2)();
                 if (var0) {
-                    _fun27205_ip = 64;
-                    continue _fun27205
+                    _fun27207_ip = 64;
+                    continue _fun27207
                 }
             case 41:
                 var0 = _closure1_slot3;
                 var2 = var0.DCDLinkingManager;
                 var0 = var2.tryOpenScheme;
                 var0 = var0.bind(var2)(var3);
-                _fun27205_ip = 95;
-                continue _fun27205;
+                _fun27207_ip = 95;
+                continue _fun27207;
             case 64:
                 var2 = _closure1_slot1;
                 var5 = _closure1_slot2;

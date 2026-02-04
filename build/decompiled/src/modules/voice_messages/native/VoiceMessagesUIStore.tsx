@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setVoiceMessageAnimationState = var3;
     var3 = function arg0() {
-        _fun89318: for (var _fun89318_ip = 0;;) switch (_fun89318_ip) {
+        _fun89335: for (var _fun89335_ip = 0;;) switch (_fun89335_ip) {
             case 0:
                 var6 = arg0;
                 var3 = _closure1_slot5;
@@ -218,8 +218,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var2.currWaveHeight;
                 var2 = null;
                 if (!(var2 != var7)) {
-                    _fun89318_ip = 120;
-                    continue _fun89318
+                    _fun89335_ip = 120;
+                    continue _fun89335
                 }
             case 70:
                 var3 = var7.set;
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.hideVoiceMessagesTooltip = var3;
     var3 = function() {
-        _fun89324: for (var _fun89324_ip = 0;;) switch (_fun89324_ip) {
+        _fun89341: for (var _fun89341_ip = 0;;) switch (_fun89341_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -341,8 +341,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2.currWaveHeight;
                 var2 = null;
                 if (!(var2 != var3)) {
-                    _fun89324_ip = 113;
-                    continue _fun89324
+                    _fun89341_ip = 113;
+                    continue _fun89341
                 }
             case 71:
                 var2 = var3.set;
@@ -433,4 +433,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setIsUsingHoldGesture = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [11603, 629, 3720, 802, 4081, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [11606, 629, 3720, 802, 4081, 2]);

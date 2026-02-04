@@ -11,55 +11,55 @@ import java.util.Map;
 abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final char[] f53359a = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ $%*+-./:".toCharArray();
+    private static final char[] f53356a = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ $%*+-./:".toCharArray();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f53360a;
+        static final /* synthetic */ int[] f53357a;
 
         static {
             int[] iArr = new int[h.values().length];
-            f53360a = iArr;
+            f53357a = iArr;
             try {
                 iArr[h.NUMERIC.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f53360a[h.ALPHANUMERIC.ordinal()] = 2;
+                f53357a[h.ALPHANUMERIC.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f53360a[h.BYTE.ordinal()] = 3;
+                f53357a[h.BYTE.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f53360a[h.KANJI.ordinal()] = 4;
+                f53357a[h.KANJI.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f53360a[h.TERMINATOR.ordinal()] = 5;
+                f53357a[h.TERMINATOR.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f53360a[h.FNC1_FIRST_POSITION.ordinal()] = 6;
+                f53357a[h.FNC1_FIRST_POSITION.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f53360a[h.FNC1_SECOND_POSITION.ordinal()] = 7;
+                f53357a[h.FNC1_SECOND_POSITION.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f53360a[h.STRUCTURED_APPEND.ordinal()] = 8;
+                f53357a[h.STRUCTURED_APPEND.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f53360a[h.ECI.ordinal()] = 9;
+                f53357a[h.ECI.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                f53360a[h.HANZI.ordinal()] = 10;
+                f53357a[h.HANZI.ordinal()] = 10;
             } catch (NoSuchFieldError unused10) {
             }
         }
@@ -92,7 +92,7 @@ abstract class d {
                 } else {
                     a10 = h.a(cVar.d(4));
                 }
-                int[] iArr = a.f53360a;
+                int[] iArr = a.f53357a;
                 switch (iArr[a10.ordinal()]) {
                     case 5:
                         hVar = a10;
@@ -370,7 +370,7 @@ abstract class d {
     }
 
     private static char h(int i10) {
-        char[] cArr = f53359a;
+        char[] cArr = f53356a;
         if (i10 < cArr.length) {
             return cArr[i10];
         }

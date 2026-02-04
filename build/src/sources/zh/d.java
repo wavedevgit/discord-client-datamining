@@ -5,16 +5,16 @@ import android.app.PendingIntent;
 final class d extends b {
 
     /* renamed from: d  reason: collision with root package name */
-    private final PendingIntent f55965d;
+    private final PendingIntent f55962d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f55966e;
+    private final boolean f55963e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d(PendingIntent pendingIntent, boolean z10) {
         if (pendingIntent != null) {
-            this.f55965d = pendingIntent;
-            this.f55966e = z10;
+            this.f55962d = pendingIntent;
+            this.f55963e = z10;
             return;
         }
         throw new NullPointerException("Null pendingIntent");
@@ -22,12 +22,12 @@ final class d extends b {
 
     @Override // zh.b
     final PendingIntent a() {
-        return this.f55965d;
+        return this.f55962d;
     }
 
     @Override // zh.b
     final boolean b() {
-        return this.f55966e;
+        return this.f55963e;
     }
 
     public final boolean equals(Object obj) {
@@ -36,7 +36,7 @@ final class d extends b {
         }
         if (obj instanceof b) {
             b bVar = (b) obj;
-            if (this.f55965d.equals(bVar.a()) && this.f55966e == bVar.b()) {
+            if (this.f55962d.equals(bVar.a()) && this.f55963e == bVar.b()) {
                 return true;
             }
         }
@@ -45,8 +45,8 @@ final class d extends b {
 
     public final int hashCode() {
         int i10;
-        int hashCode = (this.f55965d.hashCode() ^ 1000003) * 1000003;
-        if (true != this.f55966e) {
+        int hashCode = (this.f55962d.hashCode() ^ 1000003) * 1000003;
+        if (true != this.f55963e) {
             i10 = 1237;
         } else {
             i10 = 1231;
@@ -55,8 +55,8 @@ final class d extends b {
     }
 
     public final String toString() {
-        String obj = this.f55965d.toString();
-        boolean z10 = this.f55966e;
+        String obj = this.f55962d.toString();
+        boolean z10 = this.f55963e;
         return "ReviewInfo{pendingIntent=" + obj + ", isNoOp=" + z10 + "}";
     }
 }

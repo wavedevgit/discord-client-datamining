@@ -8,28 +8,28 @@ import os.e0;
 public abstract class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Function3 f49100a = a.f49106d;
+    private static final Function3 f49097a = a.f49103d;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final e0 f49101b = new e0("STATE_REG");
+    private static final e0 f49098b = new e0("STATE_REG");
 
     /* renamed from: c  reason: collision with root package name */
-    private static final e0 f49102c = new e0("STATE_COMPLETED");
+    private static final e0 f49099c = new e0("STATE_COMPLETED");
 
     /* renamed from: d  reason: collision with root package name */
-    private static final e0 f49103d = new e0("STATE_CANCELLED");
+    private static final e0 f49100d = new e0("STATE_CANCELLED");
 
     /* renamed from: e  reason: collision with root package name */
-    private static final e0 f49104e = new e0("NO_RESULT");
+    private static final e0 f49101e = new e0("NO_RESULT");
 
     /* renamed from: f  reason: collision with root package name */
-    private static final e0 f49105f = new e0("PARAM_CLAUSE_0");
+    private static final e0 f49102f = new e0("PARAM_CLAUSE_0");
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class a implements Function3 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f49106d = new a();
+        public static final a f49103d = new a();
 
         a() {
         }
@@ -47,19 +47,19 @@ public abstract class m {
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 == 3) {
-                        return o.f49110o;
+                        return o.f49107o;
                     }
                     throw new IllegalStateException(("Unexpected internal result: " + i10).toString());
                 }
-                return o.f49109i;
+                return o.f49106i;
             }
-            return o.f49108e;
+            return o.f49105e;
         }
-        return o.f49107d;
+        return o.f49104d;
     }
 
     public static final e0 i() {
-        return f49105f;
+        return f49102f;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

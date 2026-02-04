@@ -10,19 +10,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var5.bind(var6)(var3, var0, var4);
     var0 = function arg0() {
-        _fun22738: for (var _fun22738_ip = 0;;) switch (_fun22738_ip) {
+        _fun22740: for (var _fun22740_ip = 0;;) switch (_fun22740_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot0;
                 if (var2) {
-                    _fun22738_ip = 23;
-                    continue _fun22738
+                    _fun22740_ip = 23;
+                    continue _fun22740
                 }
             case 13:
                 var0 = _closure1_slot1;
                 var0 = var1[var0];
-                _fun22738_ip = 27;
-                continue _fun22738;
+                _fun22740_ip = 27;
+                continue _fun22740;
             case 23:
                 var0 = var1[var2];
             case 27:
@@ -41,21 +41,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var2.floor;
     var0.floor = var2;
     var2 = function arg0() {
-        _fun22739: for (var _fun22739_ip = 0;;) switch (_fun22739_ip) {
+        _fun22741: for (var _fun22741_ip = 0;;) switch (_fun22741_ip) {
             case 0:
                 var3 = arg0;
                 var0 = 0;
                 if (!(!(var3 < var0))) {
-                    _fun22739_ip = 30;
-                    continue _fun22739
+                    _fun22741_ip = 30;
+                    continue _fun22741
                 }
             case 9:
                 var0 = global;
                 var1 = var0.Math;
                 var0 = var1.floor;
                 var0 = var0.bind(var1)(var3);
-                _fun22739_ip = 49;
-                continue _fun22739;
+                _fun22741_ip = 49;
+                continue _fun22741;
             case 30:
                 var1 = global;
                 var2 = var1.Math;

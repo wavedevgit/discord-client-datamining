@@ -20,7 +20,7 @@ import oh.n;
 import yg.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class ShapeableImageView extends m implements n {
-    private static final int D = j.f54271y;
+    private static final int D = j.f54268y;
     private int A;
     private int B;
     private boolean C;

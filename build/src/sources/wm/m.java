@@ -14,13 +14,13 @@ import okio.ByteString;
 public final class m {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f52555c = new a(null);
+    public static final a f52552c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Lazy f52556a;
+    private final Lazy f52553a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Lazy f52557b;
+    private final Lazy f52554b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -31,24 +31,24 @@ public final class m {
         public static final class C0704a extends Lambda implements Function0 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ BufferedSource f52558d;
+            final /* synthetic */ BufferedSource f52555d;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             C0704a(BufferedSource bufferedSource) {
                 super(0);
-                this.f52558d = bufferedSource;
+                this.f52555d = bufferedSource;
             }
 
             @Override // kotlin.jvm.functions.Function0
             /* renamed from: a */
             public final Map invoke() {
-                int readInt = this.f52558d.readInt();
-                BufferedSource bufferedSource = this.f52558d;
+                int readInt = this.f52555d.readInt();
+                BufferedSource bufferedSource = this.f52555d;
                 Map d10 = o0.d(readInt);
                 int i10 = 0;
                 while (i10 < readInt) {
                     i10++;
-                    d10.put(xm.k.f53466c.a(j.a(bufferedSource)), m.f52555c.a(j.a(bufferedSource)));
+                    d10.put(xm.k.f53463c.a(j.a(bufferedSource)), m.f52552c.a(j.a(bufferedSource)));
                 }
                 return o0.b(d10);
             }
@@ -61,7 +61,7 @@ public final class m {
         public final m a(ByteString bytes) {
             Intrinsics.checkNotNullParameter(bytes, "bytes");
             Buffer a22 = new Buffer().a2(bytes);
-            return new m(i.f52542c.b(j.a(a22)), new C0704a(a22));
+            return new m(i.f52539c.b(j.a(a22)), new C0704a(a22));
         }
 
         private a() {
@@ -72,18 +72,18 @@ public final class m {
     static final class b extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ i f52559d;
+        final /* synthetic */ i f52556d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(i iVar) {
             super(0);
-            this.f52559d = iVar;
+            this.f52556d = iVar;
         }
 
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final i invoke() {
-            i iVar = this.f52559d;
+            i iVar = this.f52556d;
             if (iVar == null || iVar.b().G() == 0) {
                 return null;
             }
@@ -94,16 +94,16 @@ public final class m {
     public m(i iVar, Function0 childTreeSnapshots) {
         Intrinsics.checkNotNullParameter(childTreeSnapshots, "childTreeSnapshots");
         lr.o oVar = lr.o.f37121i;
-        this.f52556a = lr.l.b(oVar, new b(iVar));
-        this.f52557b = lr.l.b(oVar, childTreeSnapshots);
+        this.f52553a = lr.l.b(oVar, new b(iVar));
+        this.f52554b = lr.l.b(oVar, childTreeSnapshots);
     }
 
     public final Map a() {
-        return (Map) this.f52557b.getValue();
+        return (Map) this.f52554b.getValue();
     }
 
     public final i b() {
-        return (i) this.f52556a.getValue();
+        return (i) this.f52553a.getValue();
     }
 
     /* JADX WARN: Removed duplicated region for block: B:29:0x0060 A[SYNTHETIC] */

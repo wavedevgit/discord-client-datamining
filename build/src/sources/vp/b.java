@@ -6,7 +6,7 @@ import ym.b0;
 public final class b extends b0 {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final b f51746b = new b();
+    public static final b f51743b = new b();
 
     private b() {
         super(Reflection.getOrCreateKotlinClass(a.class));

@@ -24,13 +24,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/notification_center/NotificationCenterUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Environment: var1
-        _fun38538: for (var _fun38538_ip = 0;;) switch (_fun38538_ip) {
+        _fun38540: for (var _fun38540_ip = 0;;) switch (_fun38540_ip) {
             case 0:
                 var3 = arguments[1];
                 var2 = undefined;
                 if (!(var3 === var2)) {
-                    _fun38538_ip = 11;
-                    continue _fun38538
+                    _fun38540_ip = 11;
+                    continue _fun38540
                 }
             case 9:
                 var3 = true;
@@ -48,13 +48,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4[var6];
                 var4 = var5.bind(var2)(var4);
                 if (var3) {
-                    _fun38538_ip = 71;
-                    continue _fun38538
+                    _fun38540_ip = 71;
+                    continue _fun38540
                 }
             case 63:
                 var3 = var4.getFullFormatter;
-                _fun38538_ip = 77;
-                continue _fun38538;
+                _fun38540_ip = 77;
+                continue _fun38540;
             case 71:
                 var3 = var4.getAbbreviatedFormatter;
             case 77:
@@ -65,14 +65,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getRelativeTimestamp = var3;
     var3 = function(arg0, arg1) { // Environment: var1
-        _fun38539: for (var _fun38539_ip = 0;;) switch (_fun38539_ip) {
+        _fun38541: for (var _fun38541_ip = 0;;) switch (_fun38541_ip) {
             case 0:
                 var2 = arg0;
                 var5 = arg1;
                 var0 = var2.acked;
                 if (var0) {
-                    _fun38539_ip = 99;
-                    continue _fun38539
+                    _fun38541_ip = 99;
+                    continue _fun38541
                 }
             case 15:
                 var4 = _closure1_slot0;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.NOTIFICATION_CENTER_ACKED_BEFORE_ID_UNSET;
                 var1 = var5 !== var1;
                 if (!var1) {
-                    _fun38539_ip = 96;
-                    continue _fun38539
+                    _fun38541_ip = 96;
+                    continue _fun38541
                 }
             case 53:
                 var4 = _closure1_slot1;
@@ -271,7 +271,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.mobileNativeUpdateAvailableLocalItem = var3;
     var1 = function(arg0) { // Environment: var1
-        _fun38543: for (var _fun38543_ip = 0;;) switch (_fun38543_ip) {
+        _fun38545: for (var _fun38545_ip = 0;;) switch (_fun38545_ip) {
             case 0:
                 var2 = arg0;
                 var3 = var2.type;
@@ -285,8 +285,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.RECENT_MENTION;
                 var0 = var3 === var0;
                 if (var0) {
-                    _fun38543_ip = 90;
-                    continue _fun38543
+                    _fun38545_ip = 90;
+                    continue _fun38545
                 }
             case 52:
                 var2 = var2.type;

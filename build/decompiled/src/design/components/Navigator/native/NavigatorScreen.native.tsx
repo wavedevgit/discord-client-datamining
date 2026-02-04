@@ -26,7 +26,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot2 = var3;
     var3 = var6.memo;
     var1 = function(arg0) { // Environment: var1
-        _fun51544: for (var _fun51544_ip = 0;;) switch (_fun51544_ip) {
+        _fun51547: for (var _fun51547_ip = 0;;) switch (_fun51547_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.screen;
@@ -46,8 +46,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = null;
                 var2 = var6 != var1;
                 if (!var2) {
-                    _fun51544_ip = 89;
-                    continue _fun51544
+                    _fun51547_ip = 89;
+                    continue _fun51547
                 }
             case 85:
                 var6 = var1.bind(var3)();

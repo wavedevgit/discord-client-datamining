@@ -154,8 +154,8 @@ public final class e implements Handler.Callback {
 
         public void i(f fVar) {
             long j10 = this.f12469d;
-            if (j10 == -9223372036854775807L || fVar.f49425h > j10) {
-                this.f12469d = fVar.f49425h;
+            if (j10 == -9223372036854775807L || fVar.f49422h > j10) {
+                this.f12469d = fVar.f49422h;
             }
             e.this.m(fVar);
         }
@@ -163,7 +163,7 @@ public final class e implements Handler.Callback {
         public boolean j(f fVar) {
             boolean z10;
             long j10 = this.f12469d;
-            if (j10 != -9223372036854775807L && j10 < fVar.f49424g) {
+            if (j10 != -9223372036854775807L && j10 < fVar.f49421g) {
                 z10 = true;
             } else {
                 z10 = false;
@@ -231,7 +231,7 @@ public final class e implements Handler.Callback {
     private void p() {
         Iterator it = this.f12458p.entrySet().iterator();
         while (it.hasNext()) {
-            if (((Long) ((Map.Entry) it.next()).getKey()).longValue() < this.f12459q.f50514h) {
+            if (((Long) ((Map.Entry) it.next()).getKey()).longValue() < this.f12459q.f50511h) {
                 it.remove();
             }
         }
@@ -253,13 +253,13 @@ public final class e implements Handler.Callback {
     boolean j(long j10) {
         ud.c cVar = this.f12459q;
         boolean z10 = false;
-        if (!cVar.f50510d) {
+        if (!cVar.f50507d) {
             return false;
         }
         if (this.f12462t) {
             return true;
         }
-        Map.Entry e10 = e(cVar.f50514h);
+        Map.Entry e10 = e(cVar.f50511h);
         if (e10 != null && ((Long) e10.getValue()).longValue() < j10) {
             this.f12460r = ((Long) e10.getKey()).longValue();
             l();
@@ -280,7 +280,7 @@ public final class e implements Handler.Callback {
     }
 
     boolean n(boolean z10) {
-        if (!this.f12459q.f50510d) {
+        if (!this.f12459q.f50507d) {
             return false;
         }
         if (this.f12462t) {

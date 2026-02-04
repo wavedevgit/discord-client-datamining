@@ -155,7 +155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/stage_channels/native/components/StageAudienceNotificationSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun53134: for (var _fun53134_ip = 0;;) switch (_fun53134_ip) {
+        _fun53137: for (var _fun53137_ip = 0;;) switch (_fun53137_ip) {
             case 0:
                 var1 = arg0;
                 var1 = var1.channelId;
@@ -184,8 +184,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var15 == var0;
                 var18 = undefined;
                 if (var1) {
-                    _fun53134_ip = 92;
-                    continue _fun53134
+                    _fun53137_ip = 92;
+                    continue _fun53137
                 }
             case 86:
                 var18 = var0.privacy_level;
@@ -372,8 +372,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13[2] = var21;
                 var15 = null;
                 if (!(var18 === var17)) {
-                    _fun53134_ip = 1054;
-                    continue _fun53134
+                    _fun53137_ip = 1054;
+                    continue _fun53137
                 }
             case 874:
                 var18 = _closure1_slot7;

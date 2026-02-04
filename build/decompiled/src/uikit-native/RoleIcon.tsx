@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/RoleIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun55911: for (var _fun55911_ip = 0;;) switch (_fun55911_ip) {
+        _fun55914: for (var _fun55914_ip = 0;;) switch (_fun55914_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.source;
@@ -44,8 +44,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.size;
                 var4 = undefined;
                 if (!(var1 === var4)) {
-                    _fun55911_ip = 28;
-                    continue _fun55911
+                    _fun55914_ip = 28;
+                    continue _fun55914
                 }
             case 25:
                 var1 = 20;
@@ -66,15 +66,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.unicodeEmojiRoleIcon = var0;
                 var0 = null;
                 if (!(var0 == var6)) {
-                    _fun55911_ip = 180;
-                    continue _fun55911
+                    _fun55914_ip = 180;
+                    continue _fun55914
                 }
             case 84:
                 var1 = var0 != var7;
                 var0 = null;
                 if (!var1) {
-                    _fun55911_ip = 178;
-                    continue _fun55911
+                    _fun55914_ip = 178;
+                    continue _fun55914
                 }
             case 93:
                 var3 = _closure1_slot3;
@@ -97,8 +97,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.children = var7;
                 var0 = var3.bind(var4)(var2, var1);
             case 178:
-                _fun55911_ip = 213;
-                continue _fun55911;
+                _fun55914_ip = 213;
+                continue _fun55914;
             case 180:
                 var3 = _closure1_slot3;
                 var2 = _closure1_slot2;

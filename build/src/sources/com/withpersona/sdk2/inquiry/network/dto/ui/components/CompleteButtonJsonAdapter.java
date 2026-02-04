@@ -86,7 +86,7 @@ public final class CompleteButtonJsonAdapter extends h {
         }
         Constructor<CompleteButton> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = CompleteButton.class.getDeclaredConstructor(String.class, BasicButtonAttributes.class, ButtonCompleteComponentStyle.class, Integer.TYPE, c.f51691c);
+            constructor = CompleteButton.class.getDeclaredConstructor(String.class, BasicButtonAttributes.class, ButtonCompleteComponentStyle.class, Integer.TYPE, c.f51688c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

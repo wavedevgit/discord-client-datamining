@@ -6,15 +6,15 @@ import kotlin.jvm.internal.Intrinsics;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final bu.g f52759a;
+    private final bu.g f52756a;
 
     public f(bu.g delegate) {
         Intrinsics.checkNotNullParameter(delegate, "delegate");
-        this.f52759a = delegate;
+        this.f52756a = delegate;
     }
 
     public final bu.g a() {
-        return this.f52759a;
+        return this.f52756a;
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */

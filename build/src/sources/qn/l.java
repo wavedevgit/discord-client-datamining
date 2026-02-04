@@ -17,7 +17,7 @@ import qn.b;
 public final class l implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Lazy f48003a = lr.l.a(new Function0() { // from class: qn.k
+    private final Lazy f48000a = lr.l.a(new Function0() { // from class: qn.k
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             zj.c d10;
@@ -27,7 +27,7 @@ public final class l implements e {
     });
 
     private final zj.c c() {
-        return (zj.c) this.f48003a.getValue();
+        return (zj.c) this.f48000a.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -47,12 +47,12 @@ public final class l implements e {
             Intrinsics.checkNotNullExpressionValue(a10, "getText(...)");
             if (Intrinsics.areEqual(a10, "")) {
                 Result.a aVar2 = Result.f32461e;
-                return Result.b(a.b.f47978a);
+                return Result.b(a.b.f47975a);
             }
             p0 e10 = p0.f46299p.e(a10);
             if (e10 == null) {
                 Result.a aVar3 = Result.f32461e;
-                return Result.b(a.b.f47978a);
+                return Result.b(a.b.f47975a);
             }
             Result.a aVar4 = Result.f32461e;
             return Result.b(new a.C0578a(new g.a(e10.i(), e10.h(), e10.f(), e10.g())));

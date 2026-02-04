@@ -20,7 +20,7 @@ import kotlin.jvm.internal.SourceDebugExtension;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000m\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0007\n\u0002\b\u0018\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0006*\u00016\b\u0000\u0018\u0000 @2\u00020\u0001:\u0002A@B}\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004\u0012\u0006\u0010\u0007\u001a\u00020\u0006\u0012\u0006\u0010\t\u001a\u00020\b\u0012\u0012\u0010\r\u001a\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\f0\n\u0012\f\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\f0\u000e\u0012\u0018\u0010\u0012\u001a\u0014\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u0011\u0012\u0004\u0012\u00020\f0\u0010\u0012\u0018\u0010\u0014\u001a\u0014\u0012\u0004\u0012\u00020\u0013\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\f0\u0010¢\u0006\u0004\b\u0015\u0010\u0016J\u0017\u0010\u0019\u001a\u00020\f2\u0006\u0010\u0018\u001a\u00020\u0017H\u0002¢\u0006\u0004\b\u0019\u0010\u001aJ#\u0010\u001c\u001a\u00020\f2\u0012\u0010\u001b\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\f0\nH\u0002¢\u0006\u0004\b\u001c\u0010\u001dJ\u0013\u0010\u001e\u001a\u00020\u000b*\u00020\u0002H\u0002¢\u0006\u0004\b\u001e\u0010\u001fJ\u0017\u0010 \u001a\u00020\f2\u0006\u0010\t\u001a\u00020\bH\u0007¢\u0006\u0004\b \u0010!J\u000f\u0010\"\u001a\u00020\fH\u0007¢\u0006\u0004\b\"\u0010#J\u000f\u0010$\u001a\u00020\fH\u0007¢\u0006\u0004\b$\u0010#J'\u0010(\u001a\u00020\f2\u0006\u0010%\u001a\u00020\b2\u0006\u0010&\u001a\u00020\u00112\u0006\u0010'\u001a\u00020\bH\u0007¢\u0006\u0004\b(\u0010)R\u0014\u0010\u0003\u001a\u00020\u00028\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0003\u0010*R\u0014\u0010\u0005\u001a\u00020\u00048\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0005\u0010+R\u0014\u0010\u0007\u001a\u00020\u00068\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0007\u0010,R\u0016\u0010\t\u001a\u00020\b8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\t\u0010-R\u0014\u0010.\u001a\u00020\u000b8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b.\u0010/R\u0014\u00101\u001a\u0002008\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b1\u00102R\u0014\u00104\u001a\u0002038\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b4\u00105R\u0014\u00107\u001a\u0002068\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b7\u00108R\u0016\u00109\u001a\u00020\u00118\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b9\u0010:R\u0016\u0010;\u001a\u00020\u00118\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b;\u0010:R\u0014\u0010=\u001a\u00020<8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b=\u0010>R\u0016\u0010?\u001a\u00020\b8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b?\u0010-¨\u0006B"}, d2 = {"Lcom/discord/emoji_picker/EmojiPickerScroller;", "", "Landroidx/recyclerview/widget/RecyclerView;", "recyclerView", "Lcom/discord/emoji_picker/EmojiPickerViewAdapter;", "emojiPickerViewAdapter", "Landroidx/recyclerview/widget/GridLayoutManager;", "emojiPickerLayoutManager", "", "scrollFastVelocity", "Lkotlin/Function1;", "Lcom/discord/emoji_picker/EmojiPickerScroller$ScrollEvent;", "", "onScrolled", "Lkotlin/Function0;", "onScrollStateChanged", "Lkotlin/Function2;", "", "onDragStateChanged", "Landroid/view/View;", "onStickyHeaderRender", "<init>", "(Landroidx/recyclerview/widget/RecyclerView;Lcom/discord/emoji_picker/EmojiPickerViewAdapter;Landroidx/recyclerview/widget/GridLayoutManager;ILkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;)V", "", "velocity", "onScrollVelocityChanged", "(F)V", "onUpdate", "findFirstHeaderIndex", "(Lkotlin/jvm/functions/Function1;)V", "computeScrollEvent", "(Landroidx/recyclerview/widget/RecyclerView;)Lcom/discord/emoji_picker/EmojiPickerScroller$ScrollEvent;", "setScrollFastVelocity", "(I)V", "bind", "()V", "unbind", "index", "animated", "itemType", "scrollToItemAtIndex", "(IZI)V", "Landroidx/recyclerview/widget/RecyclerView;", "Lcom/discord/emoji_picker/EmojiPickerViewAdapter;", "Landroidx/recyclerview/widget/GridLayoutManager;", "I", "scrollEvent", "Lcom/discord/emoji_picker/EmojiPickerScroller$ScrollEvent;", "Lcom/discord/recycler_view/scroller/Scroller;", "scroller", "Lcom/discord/recycler_view/scroller/Scroller;", "Lcom/discord/recycler_view/scroll/DebouncedVelocityTrackingScrollListener;", "scrollListenerVelocityTracker", "Lcom/discord/recycler_view/scroll/DebouncedVelocityTrackingScrollListener;", "com/discord/emoji_picker/EmojiPickerScroller$scrollListenerDebounced$1", "scrollListenerDebounced", "Lcom/discord/emoji_picker/EmojiPickerScroller$scrollListenerDebounced$1;", "scrollVelocityTrackingPaused", "Z", "scrollJumpingToPosition", "Landroid/view/View$OnLayoutChangeListener;", "scrollViewLayoutChanged", "Landroid/view/View$OnLayoutChangeListener;", "firstHeaderPosition", "Companion", "ScrollEvent", "emoji_picker_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nEmojiPickerScroller.kt\nKotlin\n*S Kotlin\n*F\n+ 1 EmojiPickerScroller.kt\ncom/discord/emoji_picker/EmojiPickerScroller\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,204:1\n1#2:205\n*E\n"})
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class EmojiPickerScroller {
     @NotNull
     public static final Companion Companion = new Companion(null);
@@ -48,7 +48,7 @@ public final class EmojiPickerScroller {
     private final Scroller scroller;
 
     @Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\t\n\u0002\b\u0002\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0005X\u0082T¢\u0006\u0002\n\u0000¨\u0006\u0007"}, d2 = {"Lcom/discord/emoji_picker/EmojiPickerScroller$Companion;", "", "<init>", "()V", "SCROLL_DEBOUNCE_TIME", "", "SCROLL_VELOCITY_DEBOUNCE_TIME", "emoji_picker_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
             this();
@@ -59,7 +59,7 @@ public final class EmojiPickerScroller {
     }
 
     @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u001d\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001BC\u0012\b\b\u0002\u0010\u0002\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0004\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0005\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0007\u001a\u00020\u0003\u0012\b\b\u0002\u0010\b\u001a\u00020\u0003¢\u0006\u0004\b\t\u0010\nJ\t\u0010\u0019\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001a\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001b\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001c\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001d\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001e\u001a\u00020\u0003HÆ\u0003JE\u0010\u001f\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00032\b\b\u0002\u0010\u0006\u001a\u00020\u00032\b\b\u0002\u0010\u0007\u001a\u00020\u00032\b\b\u0002\u0010\b\u001a\u00020\u0003HÆ\u0001J\u0013\u0010 \u001a\u00020!2\b\u0010\"\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010#\u001a\u00020\u0003HÖ\u0001J\t\u0010$\u001a\u00020%HÖ\u0001R\u001a\u0010\u0002\u001a\u00020\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000b\u0010\f\"\u0004\b\r\u0010\u000eR\u001a\u0010\u0004\u001a\u00020\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000f\u0010\f\"\u0004\b\u0010\u0010\u000eR\u001a\u0010\u0005\u001a\u00020\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0011\u0010\f\"\u0004\b\u0012\u0010\u000eR\u001a\u0010\u0006\u001a\u00020\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0013\u0010\f\"\u0004\b\u0014\u0010\u000eR\u001a\u0010\u0007\u001a\u00020\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0015\u0010\f\"\u0004\b\u0016\u0010\u000eR\u001a\u0010\b\u001a\u00020\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\f\"\u0004\b\u0018\u0010\u000e¨\u0006&"}, d2 = {"Lcom/discord/emoji_picker/EmojiPickerScroller$ScrollEvent;", "", "x", "", "y", "width", "height", "contentWidth", "contentHeight", "<init>", "(IIIIII)V", "getX", "()I", "setX", "(I)V", "getY", "setY", "getWidth", "setWidth", "getHeight", "setHeight", "getContentWidth", "setContentWidth", "getContentHeight", "setContentHeight", "component1", "component2", "component3", "component4", "component5", "component6", "copy", "equals", "", "other", "hashCode", "toString", "", "emoji_picker_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class ScrollEvent {
         private int contentHeight;
         private int contentWidth;
@@ -67,10 +67,10 @@ public final class EmojiPickerScroller {
         private int width;
 
         /* renamed from: x  reason: collision with root package name */
-        private int f8925x;
+        private int f8924x;
 
         /* renamed from: y  reason: collision with root package name */
-        private int f8926y;
+        private int f8925y;
 
         public ScrollEvent() {
             this(0, 0, 0, 0, 0, 0, 63, null);
@@ -78,10 +78,10 @@ public final class EmojiPickerScroller {
 
         public static /* synthetic */ ScrollEvent copy$default(ScrollEvent scrollEvent, int i10, int i11, int i12, int i13, int i14, int i15, int i16, Object obj) {
             if ((i16 & 1) != 0) {
-                i10 = scrollEvent.f8925x;
+                i10 = scrollEvent.f8924x;
             }
             if ((i16 & 2) != 0) {
-                i11 = scrollEvent.f8926y;
+                i11 = scrollEvent.f8925y;
             }
             if ((i16 & 4) != 0) {
                 i12 = scrollEvent.width;
@@ -101,11 +101,11 @@ public final class EmojiPickerScroller {
         }
 
         public final int component1() {
-            return this.f8925x;
+            return this.f8924x;
         }
 
         public final int component2() {
-            return this.f8926y;
+            return this.f8925y;
         }
 
         public final int component3() {
@@ -135,7 +135,7 @@ public final class EmojiPickerScroller {
             }
             if (obj instanceof ScrollEvent) {
                 ScrollEvent scrollEvent = (ScrollEvent) obj;
-                return this.f8925x == scrollEvent.f8925x && this.f8926y == scrollEvent.f8926y && this.width == scrollEvent.width && this.height == scrollEvent.height && this.contentWidth == scrollEvent.contentWidth && this.contentHeight == scrollEvent.contentHeight;
+                return this.f8924x == scrollEvent.f8924x && this.f8925y == scrollEvent.f8925y && this.width == scrollEvent.width && this.height == scrollEvent.height && this.contentWidth == scrollEvent.contentWidth && this.contentHeight == scrollEvent.contentHeight;
             }
             return false;
         }
@@ -157,15 +157,15 @@ public final class EmojiPickerScroller {
         }
 
         public final int getX() {
-            return this.f8925x;
+            return this.f8924x;
         }
 
         public final int getY() {
-            return this.f8926y;
+            return this.f8925y;
         }
 
         public int hashCode() {
-            return (((((((((Integer.hashCode(this.f8925x) * 31) + Integer.hashCode(this.f8926y)) * 31) + Integer.hashCode(this.width)) * 31) + Integer.hashCode(this.height)) * 31) + Integer.hashCode(this.contentWidth)) * 31) + Integer.hashCode(this.contentHeight);
+            return (((((((((Integer.hashCode(this.f8924x) * 31) + Integer.hashCode(this.f8925y)) * 31) + Integer.hashCode(this.width)) * 31) + Integer.hashCode(this.height)) * 31) + Integer.hashCode(this.contentWidth)) * 31) + Integer.hashCode(this.contentHeight);
         }
 
         public final void setContentHeight(int i10) {
@@ -185,17 +185,17 @@ public final class EmojiPickerScroller {
         }
 
         public final void setX(int i10) {
-            this.f8925x = i10;
+            this.f8924x = i10;
         }
 
         public final void setY(int i10) {
-            this.f8926y = i10;
+            this.f8925y = i10;
         }
 
         @NotNull
         public String toString() {
-            int i10 = this.f8925x;
-            int i11 = this.f8926y;
+            int i10 = this.f8924x;
+            int i11 = this.f8925y;
             int i12 = this.width;
             int i13 = this.height;
             int i14 = this.contentWidth;
@@ -204,8 +204,8 @@ public final class EmojiPickerScroller {
         }
 
         public ScrollEvent(int i10, int i11, int i12, int i13, int i14, int i15) {
-            this.f8925x = i10;
-            this.f8926y = i11;
+            this.f8924x = i10;
+            this.f8925y = i11;
             this.width = i12;
             this.height = i13;
             this.contentWidth = i14;

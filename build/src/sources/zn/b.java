@@ -10,25 +10,25 @@ import yn.y2;
 public final class b implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f56092a;
+    private final ConstraintLayout f56089a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ThemeableLottieAnimationView f56093b;
+    public final ThemeableLottieAnimationView f56090b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final MaterialCardView f56094c;
+    public final MaterialCardView f56091c;
 
     private b(ConstraintLayout constraintLayout, ThemeableLottieAnimationView themeableLottieAnimationView, MaterialCardView materialCardView) {
-        this.f56092a = constraintLayout;
-        this.f56093b = themeableLottieAnimationView;
-        this.f56094c = materialCardView;
+        this.f56089a = constraintLayout;
+        this.f56090b = themeableLottieAnimationView;
+        this.f56091c = materialCardView;
     }
 
     public static b a(View view) {
-        int i10 = y2.f55095a;
+        int i10 = y2.f55092a;
         ThemeableLottieAnimationView themeableLottieAnimationView = (ThemeableLottieAnimationView) e4.a.a(view, i10);
         if (themeableLottieAnimationView != null) {
-            i10 = y2.f55099e;
+            i10 = y2.f55096e;
             MaterialCardView materialCardView = (MaterialCardView) e4.a.a(view, i10);
             if (materialCardView != null) {
                 return new b((ConstraintLayout) view, themeableLottieAnimationView, materialCardView);
@@ -40,6 +40,6 @@ public final class b implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f56092a;
+        return this.f56089a;
     }
 }

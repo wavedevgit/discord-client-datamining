@@ -489,7 +489,7 @@ public abstract class w3 {
                 } else {
                     ThemeableLottieAnimationView lottieView = c24.f44401b;
                     Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
-                    fq.g.g(lottieView, Integer.valueOf(mp.s.d(a10, yg.b.f54101m, null, false, 6, null)), Integer.valueOf(mp.s.d(a10, yg.b.f54102n, null, false, 6, null)), null, new String[]{"#190052"}, new String[]{"#F1EBFF", "#8552FF"}, new String[]{"#FFFFFF"});
+                    fq.g.g(lottieView, Integer.valueOf(mp.s.d(a10, yg.b.f54098m, null, false, 6, null)), Integer.valueOf(mp.s.d(a10, yg.b.f54099n, null, false, 6, null)), null, new String[]{"#190052"}, new String[]{"#F1EBFF", "#8552FF"}, new String[]{"#FFFFFF"});
                 }
                 uiComponentHelper.d(new Function0() { // from class: aq.m2
                     @Override // kotlin.jvm.functions.Function0
@@ -526,7 +526,7 @@ public abstract class w3 {
                 } else {
                     ThemeableLottieAnimationView lottieView2 = c25.f44401b;
                     Intrinsics.checkNotNullExpressionValue(lottieView2, "lottieView");
-                    fq.g.g(lottieView2, Integer.valueOf(mp.s.d(a10, yg.b.f54101m, null, false, 6, null)), Integer.valueOf(mp.s.d(a10, yg.b.f54102n, null, false, 6, null)), null, new String[]{"#02214F", "#190051"}, new String[]{"#E5E5EA"}, new String[0]);
+                    fq.g.g(lottieView2, Integer.valueOf(mp.s.d(a10, yg.b.f54098m, null, false, 6, null)), Integer.valueOf(mp.s.d(a10, yg.b.f54099n, null, false, 6, null)), null, new String[]{"#02214F", "#190051"}, new String[]{"#E5E5EA"}, new String[0]);
                     eVar = c25;
                     break;
                 }
@@ -545,7 +545,7 @@ public abstract class w3 {
                 } else {
                     ThemeableLottieAnimationView lottieView3 = c26.f44401b;
                     Intrinsics.checkNotNullExpressionValue(lottieView3, "lottieView");
-                    fq.g.g(lottieView3, Integer.valueOf(mp.s.d(a10, yg.b.f54101m, null, false, 6, null)), null, null, new String[]{"#280087"}, new String[0], new String[0]);
+                    fq.g.g(lottieView3, Integer.valueOf(mp.s.d(a10, yg.b.f54098m, null, false, 6, null)), null, null, new String[]{"#280087"}, new String[0], new String[0]);
                 }
                 uiComponentHelper.d(new Function0() { // from class: aq.r2
                     @Override // kotlin.jvm.functions.Function0
@@ -573,7 +573,7 @@ public abstract class w3 {
                 } else {
                     ThemeableLottieAnimationView lottieView4 = c27.f44401b;
                     Intrinsics.checkNotNullExpressionValue(lottieView4, "lottieView");
-                    fq.g.g(lottieView4, Integer.valueOf(mp.s.d(a10, yg.b.f54101m, null, false, 6, null)), Integer.valueOf(mp.s.d(a10, yg.b.f54102n, null, false, 6, null)), null, new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
+                    fq.g.g(lottieView4, Integer.valueOf(mp.s.d(a10, yg.b.f54098m, null, false, 6, null)), Integer.valueOf(mp.s.d(a10, yg.b.f54099n, null, false, 6, null)), null, new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
                 }
                 uiComponentHelper.d(new Function0() { // from class: aq.t2
                     @Override // kotlin.jvm.functions.Function0
@@ -601,7 +601,7 @@ public abstract class w3 {
                 } else {
                     ThemeableLottieAnimationView lottieView5 = c28.f44401b;
                     Intrinsics.checkNotNullExpressionValue(lottieView5, "lottieView");
-                    fq.g.g(lottieView5, Integer.valueOf(mp.s.d(a10, yg.b.f54101m, null, false, 6, null)), Integer.valueOf(mp.s.d(a10, yg.b.f54102n, null, false, 6, null)), null, new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
+                    fq.g.g(lottieView5, Integer.valueOf(mp.s.d(a10, yg.b.f54098m, null, false, 6, null)), Integer.valueOf(mp.s.d(a10, yg.b.f54099n, null, false, 6, null)), null, new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
                 }
                 uiComponentHelper.d(new Function0() { // from class: aq.v2
                     @Override // kotlin.jvm.functions.Function0
@@ -629,7 +629,7 @@ public abstract class w3 {
                 } else {
                     ThemeableLottieAnimationView lottieView6 = c29.f44401b;
                     Intrinsics.checkNotNullExpressionValue(lottieView6, "lottieView");
-                    fq.g.g(lottieView6, Integer.valueOf(mp.s.d(a10, yg.b.f54101m, null, false, 6, null)), Integer.valueOf(mp.s.d(a10, yg.b.f54102n, null, false, 6, null)), null, new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
+                    fq.g.g(lottieView6, Integer.valueOf(mp.s.d(a10, yg.b.f54098m, null, false, 6, null)), Integer.valueOf(mp.s.d(a10, yg.b.f54099n, null, false, 6, null)), null, new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
                 }
                 uiComponentHelper.d(new Function0() { // from class: aq.y2
                     @Override // kotlin.jvm.functions.Function0
@@ -657,7 +657,7 @@ public abstract class w3 {
                 } else {
                     ThemeableLottieAnimationView lottieView7 = c30.f44401b;
                     Intrinsics.checkNotNullExpressionValue(lottieView7, "lottieView");
-                    fq.g.g(lottieView7, Integer.valueOf(mp.s.d(a10, yg.b.f54101m, null, false, 6, null)), Integer.valueOf(mp.s.d(a10, yg.b.f54102n, null, false, 6, null)), null, new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
+                    fq.g.g(lottieView7, Integer.valueOf(mp.s.d(a10, yg.b.f54098m, null, false, 6, null)), Integer.valueOf(mp.s.d(a10, yg.b.f54099n, null, false, 6, null)), null, new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
                 }
                 uiComponentHelper.d(new Function0() { // from class: aq.b3
                     @Override // kotlin.jvm.functions.Function0
@@ -685,7 +685,7 @@ public abstract class w3 {
                 } else {
                     ThemeableLottieAnimationView lottieView8 = c31.f44401b;
                     Intrinsics.checkNotNullExpressionValue(lottieView8, "lottieView");
-                    fq.g.g(lottieView8, Integer.valueOf(mp.s.d(a10, yg.b.f54101m, null, false, 6, null)), Integer.valueOf(mp.s.d(a10, yg.b.f54102n, null, false, 6, null)), null, new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
+                    fq.g.g(lottieView8, Integer.valueOf(mp.s.d(a10, yg.b.f54098m, null, false, 6, null)), Integer.valueOf(mp.s.d(a10, yg.b.f54099n, null, false, 6, null)), null, new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
                 }
                 uiComponentHelper.d(new Function0() { // from class: aq.d3
                     @Override // kotlin.jvm.functions.Function0
@@ -699,7 +699,7 @@ public abstract class w3 {
                 break;
             case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
                 final op.e c32 = op.e.c(uiComponentHelper.b());
-                c32.f44401b.setImageResource(yp.d.f55161a);
+                c32.f44401b.setImageResource(yp.d.f55158a);
                 if (config.getStyles() != null) {
                     ThemeableLottieAnimationView lottieView9 = c32.f44401b;
                     Intrinsics.checkNotNullExpressionValue(lottieView9, "lottieView");
@@ -747,7 +747,7 @@ public abstract class w3 {
                 break;
             case 28:
                 op.e c33 = op.e.c(uiComponentHelper.b());
-                c33.f44401b.setImageResource(yp.d.f55165e);
+                c33.f44401b.setImageResource(yp.d.f55162e);
                 eVar = c33;
                 if (config.getStyles() != null) {
                     ThemeableLottieAnimationView lottieView10 = c33.f44401b;

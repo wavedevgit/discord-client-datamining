@@ -20,7 +20,7 @@ public final class e {
     public static final b f6152h = new b(null);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final e f6153i = new e(new c(xt.e.N(xt.e.f53575i + " TaskRunner", true)));
+    public static final e f6153i = new e(new c(xt.e.N(xt.e.f53572i + " TaskRunner", true)));
 
     /* renamed from: j  reason: collision with root package name */
     private static final Logger f6154j;
@@ -171,7 +171,7 @@ public final class e {
     }
 
     private final void c(au.a aVar, long j10) {
-        if (xt.e.f53574h && !Thread.holdsLock(this)) {
+        if (xt.e.f53571h && !Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + this);
         }
         au.d d10 = aVar.d();
@@ -194,7 +194,7 @@ public final class e {
     }
 
     private final void e(au.a aVar) {
-        if (xt.e.f53574h && !Thread.holdsLock(this)) {
+        if (xt.e.f53571h && !Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + this);
         }
         aVar.g(-1L);
@@ -208,7 +208,7 @@ public final class e {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void j(au.a aVar) {
-        if (xt.e.f53574h && Thread.holdsLock(this)) {
+        if (xt.e.f53571h && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         Thread currentThread = Thread.currentThread();
@@ -233,7 +233,7 @@ public final class e {
 
     public final au.a d() {
         boolean z10;
-        if (xt.e.f53574h && !Thread.holdsLock(this)) {
+        if (xt.e.f53571h && !Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + this);
         }
         while (!this.f6160f.isEmpty()) {
@@ -310,7 +310,7 @@ public final class e {
 
     public final void h(au.d taskQueue) {
         Intrinsics.checkNotNullParameter(taskQueue, "taskQueue");
-        if (xt.e.f53574h && !Thread.holdsLock(this)) {
+        if (xt.e.f53571h && !Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + this);
         }
         if (taskQueue.c() == null) {

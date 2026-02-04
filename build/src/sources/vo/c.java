@@ -5,30 +5,30 @@ import android.content.Context;
 public final class c implements wq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final wq.h f51706a;
+    private final wq.h f51703a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final wq.h f51707b;
+    private final wq.h f51704b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final wq.h f51708c;
+    private final wq.h f51705c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final wq.h f51709d;
+    private final wq.h f51706d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final wq.h f51710e;
+    private final wq.h f51707e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final wq.h f51711f;
+    private final wq.h f51708f;
 
     public c(wq.h hVar, wq.h hVar2, wq.h hVar3, wq.h hVar4, wq.h hVar5, wq.h hVar6) {
-        this.f51706a = hVar;
-        this.f51707b = hVar2;
-        this.f51708c = hVar3;
-        this.f51709d = hVar4;
-        this.f51710e = hVar5;
-        this.f51711f = hVar6;
+        this.f51703a = hVar;
+        this.f51704b = hVar2;
+        this.f51705c = hVar3;
+        this.f51706d = hVar4;
+        this.f51707e = hVar5;
+        this.f51708f = hVar6;
     }
 
     public static c a(wq.h hVar, wq.h hVar2, wq.h hVar3, wq.h hVar4, wq.h hVar5, wq.h hVar6) {
@@ -42,6 +42,6 @@ public final class c implements wq.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public com.withpersona.sdk2.inquiry.internal.network.e get() {
-        return c((Context) this.f51706a.get(), (r) this.f51707b.get(), (to.i) this.f51708c.get(), (fp.c) this.f51709d.get(), (xn.a) this.f51710e.get(), (uo.a) this.f51711f.get());
+        return c((Context) this.f51703a.get(), (r) this.f51704b.get(), (to.i) this.f51705c.get(), (fp.c) this.f51706d.get(), (xn.a) this.f51707e.get(), (uo.a) this.f51708f.get());
     }
 }

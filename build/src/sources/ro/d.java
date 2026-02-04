@@ -10,10 +10,10 @@ import po.g2;
 public final class d implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final FrameLayout f49050a;
+    private final FrameLayout f49047a;
 
     private d(FrameLayout frameLayout) {
-        this.f49050a = frameLayout;
+        this.f49047a = frameLayout;
     }
 
     public static d a(View view) {
@@ -34,6 +34,6 @@ public final class d implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public FrameLayout getRoot() {
-        return this.f49050a;
+        return this.f49047a;
     }
 }

@@ -7,9 +7,9 @@ import mg.yd;
 public final /* synthetic */ class j {
 
     /* renamed from: a  reason: collision with root package name */
-    public final /* synthetic */ k f50664a;
+    public final /* synthetic */ k f50661a;
 
     public final ck a(Object obj, int i10, yd ydVar) {
-        return this.f50664a.k((e3) obj, i10, ydVar);
+        return this.f50661a.k((e3) obj, i10, ydVar);
     }
 }

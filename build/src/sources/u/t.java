@@ -19,17 +19,17 @@ import u.t;
 public class t {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f50326a;
+    private final boolean f50323a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f50327b = Collections.synchronizedList(new ArrayList());
+    private final List f50324b = Collections.synchronizedList(new ArrayList());
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a extends CameraCaptureSession.CaptureCallback {
 
         /* renamed from: a  reason: collision with root package name */
-        final ListenableFuture f50328a = androidx.concurrent.futures.c.a(new c.InterfaceC0028c() { // from class: u.s
+        final ListenableFuture f50325a = androidx.concurrent.futures.c.a(new c.InterfaceC0028c() { // from class: u.s
             @Override // androidx.concurrent.futures.c.InterfaceC0028c
             public final Object a(c.a aVar) {
                 return t.a.a(t.a.this, aVar);
@@ -37,21 +37,21 @@ public class t {
         });
 
         /* renamed from: b  reason: collision with root package name */
-        c.a f50329b;
+        c.a f50326b;
 
         a() {
         }
 
         public static /* synthetic */ Object a(a aVar, c.a aVar2) {
-            aVar.f50329b = aVar2;
+            aVar.f50326b = aVar2;
             return "RequestCompleteListener[" + aVar + "]";
         }
 
         private void b() {
-            c.a aVar = this.f50329b;
+            c.a aVar = this.f50326b;
             if (aVar != null) {
                 aVar.c(null);
-                this.f50329b = null;
+                this.f50326b = null;
             }
         }
 
@@ -82,13 +82,13 @@ public class t {
     }
 
     public t(boolean z10) {
-        this.f50326a = z10;
+        this.f50323a = z10;
     }
 
     public static /* synthetic */ void a(t tVar, a aVar, ListenableFuture listenableFuture) {
         tVar.getClass();
         Log.d("RequestMonitor", "RequestListener " + aVar + " done " + tVar);
-        tVar.f50327b.remove(listenableFuture);
+        tVar.f50324b.remove(listenableFuture);
     }
 
     public static /* synthetic */ Void b(List list) {
@@ -97,8 +97,8 @@ public class t {
 
     private CameraCaptureSession.CaptureCallback c() {
         final a aVar = new a();
-        final ListenableFuture listenableFuture = aVar.f50328a;
-        this.f50327b.add(listenableFuture);
+        final ListenableFuture listenableFuture = aVar.f50325a;
+        this.f50324b.add(listenableFuture);
         Log.d("RequestMonitor", "RequestListener " + aVar + " monitoring " + this);
         listenableFuture.a(new Runnable() { // from class: u.r
             @Override // java.lang.Runnable
@@ -117,10 +117,10 @@ public class t {
     }
 
     public ListenableFuture e() {
-        if (this.f50327b.isEmpty()) {
+        if (this.f50324b.isEmpty()) {
             return d0.n.p(null);
         }
-        return d0.n.s(d0.n.x(d0.n.w(new ArrayList(this.f50327b)), new Function() { // from class: u.q
+        return d0.n.s(d0.n.x(d0.n.w(new ArrayList(this.f50324b)), new Function() { // from class: u.q
             @Override // androidx.arch.core.util.Function
             public final Object apply(Object obj) {
                 return t.b((List) obj);
@@ -129,11 +129,11 @@ public class t {
     }
 
     public boolean f() {
-        return this.f50326a;
+        return this.f50323a;
     }
 
     public void g() {
-        LinkedList linkedList = new LinkedList(this.f50327b);
+        LinkedList linkedList = new LinkedList(this.f50324b);
         while (!linkedList.isEmpty()) {
             ListenableFuture listenableFuture = (ListenableFuture) linkedList.poll();
             Objects.requireNonNull(listenableFuture);

@@ -37,12 +37,12 @@ public final class a extends View implements SubtitleView.a {
 
     private static zd.b b(zd.b bVar) {
         b.C0784b p10 = bVar.b().k(-3.4028235E38f).l(Integer.MIN_VALUE).p(null);
-        if (bVar.f55878q == 0) {
-            p10.h(1.0f - bVar.f55877p, 0);
+        if (bVar.f55875q == 0) {
+            p10.h(1.0f - bVar.f55874p, 0);
         } else {
-            p10.h((-bVar.f55877p) - 1.0f, 1);
+            p10.h((-bVar.f55874p) - 1.0f, 1);
         }
-        int i10 = bVar.f55879r;
+        int i10 = bVar.f55876r;
         if (i10 != 0) {
             if (i10 == 2) {
                 p10.i(0);
@@ -85,7 +85,7 @@ public final class a extends View implements SubtitleView.a {
                         if (bVar.A != Integer.MIN_VALUE) {
                             bVar = b(bVar);
                         }
-                        ((f) this.f12867d.get(i11)).b(bVar, this.f12871p, f10, i.f(bVar.f55886y, bVar.f55887z, height, i10), this.f12872q, canvas, paddingLeft, paddingTop, width, paddingBottom);
+                        ((f) this.f12867d.get(i11)).b(bVar, this.f12871p, f10, i.f(bVar.f55883y, bVar.f55884z, height, i10), this.f12872q, canvas, paddingLeft, paddingTop, width, paddingBottom);
                     }
                 }
             }

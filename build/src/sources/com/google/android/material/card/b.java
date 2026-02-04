@@ -147,13 +147,13 @@ public class b {
         gVar.N(materialCardView.getContext());
         gVar.c0(-12303292);
         k.b v10 = gVar.D().v();
-        TypedArray obtainStyledAttributes = materialCardView.getContext().obtainStyledAttributes(attributeSet, yg.k.f54448s0, i10, j.f54247a);
-        if (obtainStyledAttributes.hasValue(yg.k.f54457t0)) {
-            v10.o(obtainStyledAttributes.getDimension(yg.k.f54457t0, 0.0f));
+        TypedArray obtainStyledAttributes = materialCardView.getContext().obtainStyledAttributes(attributeSet, yg.k.f54445s0, i10, j.f54244a);
+        if (obtainStyledAttributes.hasValue(yg.k.f54454t0)) {
+            v10.o(obtainStyledAttributes.getDimension(yg.k.f54454t0, 0.0f));
         }
         this.f14330d = new g();
         Y(v10.m());
-        this.f14348v = jh.g.g(materialCardView.getContext(), yg.b.Q, zg.a.f55944a);
+        this.f14348v = jh.g.g(materialCardView.getContext(), yg.b.Q, zg.a.f55941a);
         this.f14349w = jh.g.f(materialCardView.getContext(), yg.b.K, ReactImageView.REMOTE_IMAGE_FADE_DURATION_MS);
         this.f14350x = jh.g.f(materialCardView.getContext(), yg.b.J, ReactImageView.REMOTE_IMAGE_FADE_DURATION_MS);
         obtainStyledAttributes.recycle();
@@ -366,7 +366,7 @@ public class b {
         ColorStateList a11 = c.a(this.f14327a.getContext(), typedArray, yg.k.R3);
         this.f14337k = a11;
         if (a11 == null) {
-            this.f14337k = ColorStateList.valueOf(eh.a.d(this.f14327a, yg.b.f54095i));
+            this.f14337k = ColorStateList.valueOf(eh.a.d(this.f14327a, yg.b.f54092i));
         }
         M(c.a(this.f14327a.getContext(), typedArray, yg.k.L3));
         k0();

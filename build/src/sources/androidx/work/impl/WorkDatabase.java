@@ -25,8 +25,8 @@ public abstract class WorkDatabase extends r3.u {
         public static final x3.h c(Context context, h.b configuration) {
             Intrinsics.checkNotNullParameter(context, "$context");
             Intrinsics.checkNotNullParameter(configuration, "configuration");
-            h.b.a a10 = h.b.f53084f.a(context);
-            a10.d(configuration.f53086b).c(configuration.f53087c).e(true).a(true);
+            h.b.a a10 = h.b.f53081f.a(context);
+            a10.d(configuration.f53083b).c(configuration.f53084c).e(true).a(true);
             return new y3.f().a(a10.b());
         }
 

@@ -133,7 +133,7 @@ public final class l implements ym.b {
         this.f19700d = permission;
         this.f19701e = z10;
         this.f19702i = function1;
-        k.a aVar = ym.k.f54648a;
+        k.a aVar = ym.k.f54645a;
         this.f19703o = new ym.z(Reflection.getOrCreateKotlinClass(l.class), b.f19707d, new a());
     }
 

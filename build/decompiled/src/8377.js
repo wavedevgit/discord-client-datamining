@@ -1,164 +1,133 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun67665: for (var _fun67665_ip = 0;;) switch (_fun67665_ip) {
-        case 0:
-            var1 = {};
-            var2 = function arg0() {
-                _fun67666: for (var _fun67666_ip = 0;;) switch (_fun67666_ip) {
-                    case 0:
-                        var1 = arg0;
-                        var0 = 1;
-                        if (!(!(var1 < var0))) {
-                            _fun67666_ip = 29;
-                            continue _fun67666
-                        }
-                    case 10:
-                        var0 = _closure1_slot0;
-                        var0 = var0.LOG_TABLE;
-                        var0 = var0[var1];
-                        return var0;
-                    case 29:
-                        var0 = global;
-                        var2 = var0.Error;
-                        var0 = 'glog(';
-                        var3 = var0 + var1;
-                        var0 = var2.prototype;
-                        var1 = Object.create(var0, {
-                            constructor: {
-                                value: var2
-                            }
-                        });
-                        var0 = ')';
-                        var4 = var3 + var0;
-                        var5 = var1;
-                        var0 = new var5[var2](var4, var3);
-                        var0 = var0 instanceof Object ? var0 : var1;
-                        throw var0;
-                }
-            };
-            var1.glog = var2;
-            var2 = function arg0() {
-                _fun67667: for (var _fun67667_ip = 0;;) switch (_fun67667_ip) {
-                    case 0:
-                        var0 = arg0;
-                        var3 = 255;
-                        var2 = 0;
-                        var1 = var0;
-                        if (!(var1 < var2)) {
-                            _fun67667_ip = 26;
-                            continue _fun67667
-                        }
-                    case 15:
-                        var0 = var0 + var3;
-                        var1 = var0;
-                        if (var1 < var2) {
-                            _fun67667_ip = 15;
-                            continue _fun67667
-                        }
-                    case 26:
-                        var2 = 256;
-                        var0 = var1;
-                        var1 = var0;
-                        if (!(var1 >= var2)) {
-                            _fun67667_ip = 53;
-                            continue _fun67667
-                        }
-                    case 42:
-                        var0 = var0 - var3;
-                        var1 = var0;
-                        if (var1 >= var2) {
-                            _fun67667_ip = 42;
-                            continue _fun67667
-                        }
-                    case 53:
-                        var0 = _closure1_slot0;
-                        var0 = var0.EXP_TABLE;
-                        var0 = var0[var1];
-                        return var0;
-                }
-            };
-            var1.gexp = var2;
-            var2 = global;
-            var3 = var2.Array;
-            var4 = var3.prototype;
-            var4 = Object.create(var4, {
-                constructor: {
-                    value: var3
-                }
-            });
-            var9 = 256;
-            var14 = var4;
-            var13 = var9;
-            var3 = new var14[var3](var13, var12);
-            var3 = var3 instanceof Object ? var3 : var4;
-            var1.EXP_TABLE = var3;
-            var2 = var2.Array;
-            var3 = var2.prototype;
-            var3 = Object.create(var3, {
-                constructor: {
-                    value: var2
-                }
-            });
-            var14 = var3;
-            var2 = new var14[var2](var13, var12);
-            var2 = var2 instanceof Object ? var2 : var3;
-            var1.LOG_TABLE = var2;
-            var _closure1_slot0 = var1;
-            var10 = 1;
-            var7 = 8;
-            var6 = 4;
-            var5 = 5;
-            var4 = 6;
-            var2 = 255;
-            var0 = 0;
-        case 125:
-            var11 = var1.EXP_TABLE;
-            var3 = var10 << var0;
-            var11[var0] = var3;
-            var0 = var0 + 1;
-            var3 = var7;
-            if (var0 < var3) {
-                _fun67665_ip = 125;
-                continue _fun67665
+    var1 = function() {
+        var1 = this;
+        var0 = global;
+        var0 = var0.Array;
+        var2 = var0.prototype;
+        var2 = Object.create(var2, {
+            constructor: {
+                value: var0
             }
-        case 149:
-            var10 = var1.EXP_TABLE;
-            var11 = var1.EXP_TABLE;
-            var0 = var3 - var6;
-            var11 = var11[var0];
-            var12 = var1.EXP_TABLE;
-            var0 = var3 - var5;
-            var0 = var12[var0];
-            var11 = var11 ^ var0;
-            var12 = var1.EXP_TABLE;
-            var0 = var3 - var4;
-            var0 = var12[var0];
-            var11 = var11 ^ var0;
-            var12 = var1.EXP_TABLE;
-            var0 = var3 - var7;
-            var0 = var12[var0];
-            var0 = var11 ^ var0;
-            var10[var3] = var0;
-            var3 = var3 + 1;
-            var0 = 0;
-            if (var3 < var9) {
-                _fun67665_ip = 149;
-                continue _fun67665
-            }
-        case 236:
-            var4 = var1.LOG_TABLE;
-            var3 = var1.EXP_TABLE;
-            var3 = var3[var0];
-            var4[var3] = var0;
-            var0 = var0 + 1;
-            if (var0 < var2) {
-                _fun67665_ip = 236;
-                continue _fun67665
-            }
-        case 263:
-            var0 = arg4;
-            var0.exports = var1;
-            var0 = undefined;
-            return var0;
-    }
+        });
+        var3 = var2;
+        var0 = new var3[var0](var2);
+        var0 = var0 instanceof Object ? var0 : var2;
+        var1.buffer = var0;
+        var0 = 0;
+        var1.length = var0;
+        var0 = undefined;
+        return var0;
+    };
+    var0 = {};
+    var3 = function arg0() {
+        var2 = arg0;
+        var0 = global;
+        var4 = var0.Math;
+        var3 = var4.floor;
+        var0 = 8;
+        var1 = var2 / var0;
+        var3 = var3.bind(var4)(var1);
+        var1 = this;
+        var1 = var1.buffer;
+        var1 = var1[var3];
+        var2 = var2 % var0;
+        var0 = 7;
+        var0 = var0 - var2;
+        var0 = var1 >>> var0;
+        var1 = 1;
+        var0 = var0 & var1;
+        var0 = var1 === var0;
+        return var0;
+    };
+    var0.get = var3;
+    var3 = function arg0, arg1() {
+        _fun67664: for (var _fun67664_ip = 0;;) switch (_fun67664_ip) {
+            case 0:
+                var4 = arg0;
+                var3 = arg1;
+                var2 = this;
+                var1 = 0;
+                var5 = var1 < var3;
+                var0 = 1;
+                if (!var5) {
+                    _fun67664_ip = 58;
+                    continue _fun67664
+                }
+            case 20:
+                var6 = var2.putBit;
+                var5 = var3 - var1;
+                var5 = var5 - var0;
+                var5 = var4 >>> var5;
+                var5 = var5 & var0;
+                var5 = var0 === var5;
+                var5 = var6.bind(var2)(var5);
+                var1 = var1 + 1;
+                if (var1 < var3) {
+                    _fun67664_ip = 20;
+                    continue _fun67664
+                }
+            case 58:
+                var0 = undefined;
+                return var0;
+        }
+    };
+    var0.put = var3;
+    var3 = function() {
+        var0 = this;
+        var0 = var0.length;
+        return var0;
+    };
+    var0.getLengthInBits = var3;
+    var2 = function arg0() {
+        _fun67666: for (var _fun67666_ip = 0;;) switch (_fun67666_ip) {
+            case 0:
+                var1 = this;
+                var0 = global;
+                var3 = var0.Math;
+                var2 = var3.floor;
+                var0 = var1.length;
+                var5 = 8;
+                var0 = var0 / var5;
+                var3 = var2.bind(var3)(var0);
+                var0 = var1.buffer;
+                var0 = var0.length;
+                if (!(var0 <= var3)) {
+                    _fun67666_ip = 66;
+                    continue _fun67666
+                }
+            case 48:
+                var4 = var1.buffer;
+                var2 = var4.push;
+                var0 = 0;
+                var0 = var2.bind(var4)(var0);
+            case 66:
+                var0 = arg0;
+                if (!var0) {
+                    _fun67666_ip = 106;
+                    continue _fun67666
+                }
+            case 72:
+                var2 = var1.buffer;
+                var4 = var2[var3];
+                var0 = var1.length;
+                var5 = var0 % var5;
+                var0 = 128;
+                var0 = var0 >>> var5;
+                var0 = var4 | var0;
+                var2[var3] = var0;
+            case 106:
+                var0 = var1.length;
+                var0 = var0 + 1;
+                var1.length = var0;
+                var0 = undefined;
+                return var0;
+        }
+    };
+    var0.putBit = var2;
+    var1.prototype = var0;
+    var0 = arg4;
+    var0.exports = var1;
+    var0 = undefined;
+    return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

@@ -8,35 +8,35 @@ public final class l extends hf.a {
     public static final Parcelable.Creator<l> CREATOR = new m();
 
     /* renamed from: d  reason: collision with root package name */
-    final int f50631d;
+    final int f50628d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final com.google.android.gms.common.b f50632e;
+    private final com.google.android.gms.common.b f50629e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final p0 f50633i;
+    private final p0 f50630i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public l(int i10, com.google.android.gms.common.b bVar, p0 p0Var) {
-        this.f50631d = i10;
-        this.f50632e = bVar;
-        this.f50633i = p0Var;
+        this.f50628d = i10;
+        this.f50629e = bVar;
+        this.f50630i = p0Var;
     }
 
     public final com.google.android.gms.common.b b() {
-        return this.f50632e;
+        return this.f50629e;
     }
 
     public final p0 c() {
-        return this.f50633i;
+        return this.f50630i;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
         int a10 = hf.c.a(parcel);
-        hf.c.l(parcel, 1, this.f50631d);
-        hf.c.q(parcel, 2, this.f50632e, i10, false);
-        hf.c.q(parcel, 3, this.f50633i, i10, false);
+        hf.c.l(parcel, 1, this.f50628d);
+        hf.c.q(parcel, 2, this.f50629e, i10, false);
+        hf.c.q(parcel, 3, this.f50630i, i10, false);
         hf.c.b(parcel, a10);
     }
 }

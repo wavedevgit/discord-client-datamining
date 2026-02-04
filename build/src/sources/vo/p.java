@@ -6,10 +6,10 @@ import ym.e0;
 public final class p implements wq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final wq.h f51740a;
+    private final wq.h f51737a;
 
     public p(wq.h hVar) {
-        this.f51740a = hVar;
+        this.f51737a = hVar;
     }
 
     public static p a(wq.h hVar) {
@@ -23,6 +23,6 @@ public final class p implements wq.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public e0 get() {
-        return c((Set) this.f51740a.get());
+        return c((Set) this.f51737a.get());
     }
 }

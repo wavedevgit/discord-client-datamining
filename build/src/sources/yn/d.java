@@ -14,13 +14,13 @@ public abstract class d implements Parcelable {
         public static final Parcelable.Creator<a> CREATOR = new C0757a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f54759d;
+        private final String f54756d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final yn.a f54760e;
+        private final yn.a f54757e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final int f54761i;
+        private final int f54758i;
 
         /* renamed from: yn.d$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -45,13 +45,13 @@ public abstract class d implements Parcelable {
 
         public static /* synthetic */ a b(a aVar, String str, yn.a aVar2, int i10, int i11, Object obj) {
             if ((i11 & 1) != 0) {
-                str = aVar.f54759d;
+                str = aVar.f54756d;
             }
             if ((i11 & 2) != 0) {
-                aVar2 = aVar.f54760e;
+                aVar2 = aVar.f54757e;
             }
             if ((i11 & 4) != 0) {
-                i10 = aVar.f54761i;
+                i10 = aVar.f54758i;
             }
             return aVar.a(str, aVar2, i10);
         }
@@ -63,11 +63,11 @@ public abstract class d implements Parcelable {
         }
 
         public final String c() {
-            return this.f54759d;
+            return this.f54756d;
         }
 
         public final yn.a d() {
-            return this.f54760e;
+            return this.f54757e;
         }
 
         @Override // android.os.Parcelable
@@ -76,7 +76,7 @@ public abstract class d implements Parcelable {
         }
 
         public final int e() {
-            return this.f54761i;
+            return this.f54758i;
         }
 
         public boolean equals(Object obj) {
@@ -93,26 +93,26 @@ public abstract class d implements Parcelable {
                 return false;
             }
             Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type com.withpersona.sdk2.inquiry.document.DocumentFile.Local");
-            return Intrinsics.areEqual(this.f54759d, ((a) obj).f54759d);
+            return Intrinsics.areEqual(this.f54756d, ((a) obj).f54756d);
         }
 
         public int hashCode() {
-            return this.f54759d.hashCode();
+            return this.f54756d.hashCode();
         }
 
         public String toString() {
-            String str = this.f54759d;
-            yn.a aVar = this.f54760e;
-            int i10 = this.f54761i;
+            String str = this.f54756d;
+            yn.a aVar = this.f54757e;
+            int i10 = this.f54758i;
             return "Local(absoluteFilePath=" + str + ", captureMethod=" + aVar + ", uploadProgress=" + i10 + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f54759d);
-            this.f54760e.writeToParcel(dest, i10);
-            dest.writeInt(this.f54761i);
+            dest.writeString(this.f54756d);
+            this.f54757e.writeToParcel(dest, i10);
+            dest.writeInt(this.f54758i);
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -120,9 +120,9 @@ public abstract class d implements Parcelable {
             super(null);
             Intrinsics.checkNotNullParameter(absoluteFilePath, "absoluteFilePath");
             Intrinsics.checkNotNullParameter(captureMethod, "captureMethod");
-            this.f54759d = absoluteFilePath;
-            this.f54760e = captureMethod;
-            this.f54761i = i10;
+            this.f54756d = absoluteFilePath;
+            this.f54757e = captureMethod;
+            this.f54758i = i10;
         }
     }
 
@@ -132,16 +132,16 @@ public abstract class d implements Parcelable {
         public static final Parcelable.Creator<b> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f54762d;
+        private final String f54759d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f54763e;
+        private final String f54760e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final String f54764i;
+        private final String f54761i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final String f54765o;
+        private final String f54762o;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -164,26 +164,26 @@ public abstract class d implements Parcelable {
             super(null);
             Intrinsics.checkNotNullParameter(remoteUrl, "remoteUrl");
             Intrinsics.checkNotNullParameter(documentFileId, "documentFileId");
-            this.f54762d = str;
-            this.f54763e = str2;
-            this.f54764i = remoteUrl;
-            this.f54765o = documentFileId;
+            this.f54759d = str;
+            this.f54760e = str2;
+            this.f54761i = remoteUrl;
+            this.f54762o = documentFileId;
         }
 
         public final String a() {
-            return this.f54762d;
+            return this.f54759d;
         }
 
         public final String b() {
-            return this.f54765o;
+            return this.f54762o;
         }
 
         public final String c() {
-            return this.f54763e;
+            return this.f54760e;
         }
 
         public final String d() {
-            return this.f54764i;
+            return this.f54761i;
         }
 
         @Override // android.os.Parcelable
@@ -199,7 +199,7 @@ public abstract class d implements Parcelable {
                 return false;
             }
             b bVar = (b) obj;
-            if (Intrinsics.areEqual(this.f54762d, bVar.f54762d) && Intrinsics.areEqual(this.f54763e, bVar.f54763e) && Intrinsics.areEqual(this.f54764i, bVar.f54764i) && Intrinsics.areEqual(this.f54765o, bVar.f54765o)) {
+            if (Intrinsics.areEqual(this.f54759d, bVar.f54759d) && Intrinsics.areEqual(this.f54760e, bVar.f54760e) && Intrinsics.areEqual(this.f54761i, bVar.f54761i) && Intrinsics.areEqual(this.f54762o, bVar.f54762o)) {
                 return true;
             }
             return false;
@@ -207,7 +207,7 @@ public abstract class d implements Parcelable {
 
         public int hashCode() {
             int hashCode;
-            String str = this.f54762d;
+            String str = this.f54759d;
             int i10 = 0;
             if (str == null) {
                 hashCode = 0;
@@ -215,28 +215,28 @@ public abstract class d implements Parcelable {
                 hashCode = str.hashCode();
             }
             int i11 = hashCode * 31;
-            String str2 = this.f54763e;
+            String str2 = this.f54760e;
             if (str2 != null) {
                 i10 = str2.hashCode();
             }
-            return ((((i11 + i10) * 31) + this.f54764i.hashCode()) * 31) + this.f54765o.hashCode();
+            return ((((i11 + i10) * 31) + this.f54761i.hashCode()) * 31) + this.f54762o.hashCode();
         }
 
         public String toString() {
-            String str = this.f54762d;
-            String str2 = this.f54763e;
-            String str3 = this.f54764i;
-            String str4 = this.f54765o;
+            String str = this.f54759d;
+            String str2 = this.f54760e;
+            String str3 = this.f54761i;
+            String str4 = this.f54762o;
             return "Remote(absoluteFilePath=" + str + ", filename=" + str2 + ", remoteUrl=" + str3 + ", documentFileId=" + str4 + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f54762d);
-            dest.writeString(this.f54763e);
-            dest.writeString(this.f54764i);
-            dest.writeString(this.f54765o);
+            dest.writeString(this.f54759d);
+            dest.writeString(this.f54760e);
+            dest.writeString(this.f54761i);
+            dest.writeString(this.f54762o);
         }
     }
 

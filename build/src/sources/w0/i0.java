@@ -5,7 +5,7 @@ import kotlin.jvm.internal.Intrinsics;
 final class i0 implements a0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final i0 f51811a = new i0();
+    public static final i0 f51808a = new i0();
 
     private i0() {
     }

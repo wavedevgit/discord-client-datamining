@@ -7,16 +7,16 @@ import kotlin.reflect.KClass;
 public final class y implements e0 {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f54712b;
+    private final Map f54709b;
 
     private y(Map map) {
-        this.f54712b = map;
+        this.f54709b = map;
     }
 
     @Override // ym.e0
     public c0 a(KClass renderingType) {
         Intrinsics.checkNotNullParameter(renderingType, "renderingType");
-        Object obj = this.f54712b.get(renderingType);
+        Object obj = this.f54709b.get(renderingType);
         if (obj instanceof c0) {
             return (c0) obj;
         }

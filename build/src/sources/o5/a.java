@@ -260,7 +260,7 @@ public abstract class a {
     public float d() {
         y5.a b10 = b();
         if (b10 != null && !b10.i()) {
-            return b10.f53745d.getInterpolation(e());
+            return b10.f53742d.getInterpolation(e());
         }
         return 0.0f;
     }
@@ -288,9 +288,9 @@ public abstract class a {
             return this.f42354f;
         }
         y5.a b10 = b();
-        Interpolator interpolator = b10.f53746e;
-        if (interpolator != null && b10.f53747f != null) {
-            i10 = j(b10, e10, interpolator.getInterpolation(e10), b10.f53747f.getInterpolation(e10));
+        Interpolator interpolator = b10.f53743e;
+        if (interpolator != null && b10.f53744f != null) {
+            i10 = j(b10, e10, interpolator.getInterpolation(e10), b10.f53744f.getInterpolation(e10));
         } else {
             i10 = i(b10, d());
         }

@@ -16,54 +16,54 @@ import java.util.concurrent.Executor;
 public final class p {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f49151a;
+    private final c f49148a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static final class b implements c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f49154a;
+        private final List f49151a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final CameraCaptureSession.StateCallback f49155b;
+        private final CameraCaptureSession.StateCallback f49152b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Executor f49156c;
+        private final Executor f49153c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f49157d;
+        private final int f49154d;
 
         /* renamed from: e  reason: collision with root package name */
-        private i f49158e = null;
+        private i f49155e = null;
 
         /* renamed from: f  reason: collision with root package name */
-        private CaptureRequest f49159f = null;
+        private CaptureRequest f49156f = null;
 
         b(int i10, List list, Executor executor, CameraCaptureSession.StateCallback stateCallback) {
-            this.f49157d = i10;
-            this.f49154a = Collections.unmodifiableList(new ArrayList(list));
-            this.f49155b = stateCallback;
-            this.f49156c = executor;
+            this.f49154d = i10;
+            this.f49151a = Collections.unmodifiableList(new ArrayList(list));
+            this.f49152b = stateCallback;
+            this.f49153c = executor;
         }
 
         @Override // s.p.c
         public Executor a() {
-            return this.f49156c;
+            return this.f49153c;
         }
 
         @Override // s.p.c
         public i b() {
-            return this.f49158e;
+            return this.f49155e;
         }
 
         @Override // s.p.c
         public CameraCaptureSession.StateCallback c() {
-            return this.f49155b;
+            return this.f49152b;
         }
 
         @Override // s.p.c
         public List d() {
-            return this.f49154a;
+            return this.f49151a;
         }
 
         @Override // s.p.c
@@ -77,9 +77,9 @@ public final class p {
             }
             if (obj instanceof b) {
                 b bVar = (b) obj;
-                if (Objects.equals(this.f49158e, bVar.f49158e) && this.f49157d == bVar.f49157d && this.f49154a.size() == bVar.f49154a.size()) {
-                    for (int i10 = 0; i10 < this.f49154a.size(); i10++) {
-                        if (!((j) this.f49154a.get(i10)).equals(bVar.f49154a.get(i10))) {
+                if (Objects.equals(this.f49155e, bVar.f49155e) && this.f49154d == bVar.f49154d && this.f49151a.size() == bVar.f49151a.size()) {
+                    for (int i10 = 0; i10 < this.f49151a.size(); i10++) {
+                        if (!((j) this.f49151a.get(i10)).equals(bVar.f49151a.get(i10))) {
                             return false;
                         }
                     }
@@ -91,8 +91,8 @@ public final class p {
 
         @Override // s.p.c
         public void f(i iVar) {
-            if (this.f49157d != 1) {
-                this.f49158e = iVar;
+            if (this.f49154d != 1) {
+                this.f49155e = iVar;
                 return;
             }
             throw new UnsupportedOperationException("Method not supported for high speed session types");
@@ -100,26 +100,26 @@ public final class p {
 
         @Override // s.p.c
         public int g() {
-            return this.f49157d;
+            return this.f49154d;
         }
 
         @Override // s.p.c
         public void h(CaptureRequest captureRequest) {
-            this.f49159f = captureRequest;
+            this.f49156f = captureRequest;
         }
 
         public int hashCode() {
             int hashCode;
-            int hashCode2 = this.f49154a.hashCode() ^ 31;
+            int hashCode2 = this.f49151a.hashCode() ^ 31;
             int i10 = (hashCode2 << 5) - hashCode2;
-            i iVar = this.f49158e;
+            i iVar = this.f49155e;
             if (iVar == null) {
                 hashCode = 0;
             } else {
                 hashCode = iVar.hashCode();
             }
             int i11 = hashCode ^ i10;
-            return this.f49157d ^ ((i11 << 5) - i11);
+            return this.f49154d ^ ((i11 << 5) - i11);
         }
     }
 
@@ -144,9 +144,9 @@ public final class p {
 
     public p(int i10, List list, Executor executor, CameraCaptureSession.StateCallback stateCallback) {
         if (Build.VERSION.SDK_INT < 28) {
-            this.f49151a = new b(i10, list, executor, stateCallback);
+            this.f49148a = new b(i10, list, executor, stateCallback);
         } else {
-            this.f49151a = new a(i10, list, executor, stateCallback);
+            this.f49148a = new a(i10, list, executor, stateCallback);
         }
     }
 
@@ -169,112 +169,112 @@ public final class p {
     }
 
     public Executor a() {
-        return this.f49151a.a();
+        return this.f49148a.a();
     }
 
     public i b() {
-        return this.f49151a.b();
+        return this.f49148a.b();
     }
 
     public List c() {
-        return this.f49151a.d();
+        return this.f49148a.d();
     }
 
     public int d() {
-        return this.f49151a.g();
+        return this.f49148a.g();
     }
 
     public CameraCaptureSession.StateCallback e() {
-        return this.f49151a.c();
+        return this.f49148a.c();
     }
 
     public boolean equals(Object obj) {
         if (!(obj instanceof p)) {
             return false;
         }
-        return this.f49151a.equals(((p) obj).f49151a);
+        return this.f49148a.equals(((p) obj).f49148a);
     }
 
     public void f(i iVar) {
-        this.f49151a.f(iVar);
+        this.f49148a.f(iVar);
     }
 
     public void g(CaptureRequest captureRequest) {
-        this.f49151a.h(captureRequest);
+        this.f49148a.h(captureRequest);
     }
 
     public int hashCode() {
-        return this.f49151a.hashCode();
+        return this.f49148a.hashCode();
     }
 
     public Object j() {
-        return this.f49151a.e();
+        return this.f49148a.e();
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static final class a implements c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final SessionConfiguration f49152a;
+        private final SessionConfiguration f49149a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final List f49153b;
+        private final List f49150b;
 
         a(Object obj) {
             SessionConfiguration sessionConfiguration = (SessionConfiguration) obj;
-            this.f49152a = sessionConfiguration;
-            this.f49153b = Collections.unmodifiableList(p.i(sessionConfiguration.getOutputConfigurations()));
+            this.f49149a = sessionConfiguration;
+            this.f49150b = Collections.unmodifiableList(p.i(sessionConfiguration.getOutputConfigurations()));
         }
 
         @Override // s.p.c
         public Executor a() {
-            return this.f49152a.getExecutor();
+            return this.f49149a.getExecutor();
         }
 
         @Override // s.p.c
         public i b() {
-            return i.b(this.f49152a.getInputConfiguration());
+            return i.b(this.f49149a.getInputConfiguration());
         }
 
         @Override // s.p.c
         public CameraCaptureSession.StateCallback c() {
-            return this.f49152a.getStateCallback();
+            return this.f49149a.getStateCallback();
         }
 
         @Override // s.p.c
         public List d() {
-            return this.f49153b;
+            return this.f49150b;
         }
 
         @Override // s.p.c
         public Object e() {
-            return this.f49152a;
+            return this.f49149a;
         }
 
         public boolean equals(Object obj) {
             if (!(obj instanceof a)) {
                 return false;
             }
-            return Objects.equals(this.f49152a, ((a) obj).f49152a);
+            return Objects.equals(this.f49149a, ((a) obj).f49149a);
         }
 
         @Override // s.p.c
         public void f(i iVar) {
-            this.f49152a.setInputConfiguration((InputConfiguration) iVar.a());
+            this.f49149a.setInputConfiguration((InputConfiguration) iVar.a());
         }
 
         @Override // s.p.c
         public int g() {
-            return this.f49152a.getSessionType();
+            return this.f49149a.getSessionType();
         }
 
         @Override // s.p.c
         public void h(CaptureRequest captureRequest) {
-            this.f49152a.setSessionParameters(captureRequest);
+            this.f49149a.setSessionParameters(captureRequest);
         }
 
         public int hashCode() {
-            return this.f49152a.hashCode();
+            return this.f49149a.hashCode();
         }
 
         a(int i10, List list, Executor executor, CameraCaptureSession.StateCallback stateCallback) {

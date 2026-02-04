@@ -2,13 +2,13 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var0 = module;
     var1 = function arg0() {
-        _fun45667: for (var _fun45667_ip = 0;;) switch (_fun45667_ip) {
+        _fun45670: for (var _fun45670_ip = 0;;) switch (_fun45670_ip) {
             case 0:
                 var0 = arg0;
                 var1 = undefined;
                 if (!(var1 !== var0)) {
-                    _fun45667_ip = 11;
-                    continue _fun45667
+                    _fun45670_ip = 11;
+                    continue _fun45670
                 }
             case 9:
                 return var0;

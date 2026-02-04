@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/core/openUserSettings.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun51990: for (var _fun51990_ip = 0;;) switch (_fun51990_ip) {
+        _fun51993: for (var _fun51993_ip = 0;;) switch (_fun51993_ip) {
             case 0:
                 var4 = arg0;
                 var2 = _closure1_slot0;
@@ -46,16 +46,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = null;
                 var1 = var6 != var3;
                 if (!var1) {
-                    _fun51990_ip = 57;
-                    continue _fun51990
+                    _fun51993_ip = 57;
+                    continue _fun51993
                 }
             case 47:
                 var2 = var3.isReady;
                 var1 = var2.bind(var3)();
             case 57:
                 if (!var1) {
-                    _fun51990_ip = 199;
-                    continue _fun51990
+                    _fun51993_ip = 199;
+                    continue _fun51993
                 }
             case 63:
                 var2 = _closure1_slot1;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.type = var7;
                 var7 = var4.screen;
                 if (!(var6 == var7)) {
-                    _fun51990_ip = 118;
-                    continue _fun51990
+                    _fun51993_ip = 118;
+                    continue _fun51993
                 }
             case 108:
                 var8 = _closure1_slot3;
@@ -81,8 +81,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var6 != var7;
                 var6 = null;
                 if (!var8) {
-                    _fun51990_ip = 140;
-                    continue _fun51990
+                    _fun51993_ip = 140;
+                    continue _fun51993
                 }
             case 137:
                 var6 = var7;

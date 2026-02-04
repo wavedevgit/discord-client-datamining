@@ -146,7 +146,7 @@ public final class j extends Fragment {
                     if (aVar.b()) {
                         this.f18528d.J(aVar);
                     } else {
-                        e.a aVar2 = qo.e.f48018i;
+                        e.a aVar2 = qo.e.f48015i;
                         FragmentManager childFragmentManager = this.f18528d.getChildFragmentManager();
                         Intrinsics.checkNotNullExpressionValue(childFragmentManager, "getChildFragmentManager(...)");
                         aVar2.a(childFragmentManager, this.f18528d.getTheme(), aVar);
@@ -705,7 +705,7 @@ public final class j extends Fragment {
         i0 i0Var = new i0(requireContext2, null, 2, null);
         Lifecycle lifecycle = getLifecycle();
         Intrinsics.checkNotNullExpressionValue(lifecycle, "<get-lifecycle>(...)");
-        i0.b(i0Var, lifecycle, G().C(H()), null, new ym.a0(o0.m(lr.v.a(e0.f54602a, G().E()), lr.v.a(vp.b.f51746b, b10.f()))), 4, null);
+        i0.b(i0Var, lifecycle, G().C(H()), null, new ym.a0(o0.m(lr.v.a(e0.f54599a, G().E()), lr.v.a(vp.b.f51743b, b10.f()))), 4, null);
         ro.d dVar2 = this.f18522o;
         if (dVar2 == null) {
             Intrinsics.throwUninitializedPropertyAccessException("binding");

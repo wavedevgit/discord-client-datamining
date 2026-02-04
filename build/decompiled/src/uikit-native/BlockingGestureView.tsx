@@ -1,7 +1,7 @@
 // uikit-native/BlockingGestureView.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun51564: for (var _fun51564_ip = 0;;) switch (_fun51564_ip) {
+    _fun51567: for (var _fun51567_ip = 0;;) switch (_fun51567_ip) {
         case 0:
             var4 = require;
             var2 = exports;
@@ -25,8 +25,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var6.isAndroid;
             var3 = var3.bind(var6)();
             if (!var3) {
-                _fun51564_ip = 99;
-                continue _fun51564
+                _fun51567_ip = 99;
+                continue _fun51567
             }
         case 84:
             var3 = 2;

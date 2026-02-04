@@ -27,7 +27,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8241id;
+    private final String f8240id;
     private final boolean isSpoiler;
     private final Void obscureOrNull;
     private final String spoilerDescription;
@@ -69,7 +69,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
             v1.b(i10, 107, ContainerComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f8241id = str;
+        this.f8240id = str;
         if ((i10 & 4) == 0) {
             this.errorText = null;
         } else {
@@ -110,7 +110,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
             i10 = containerComponent.type;
         }
         if ((i11 & 2) != 0) {
-            str = containerComponent.f8241id;
+            str = containerComponent.f8240id;
         }
         if ((i11 & 4) != 0) {
             str2 = containerComponent.errorText;
@@ -250,7 +250,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
 
     @NotNull
     public final String component2() {
-        return this.f8241id;
+        return this.f8240id;
     }
 
     public final String component3() {
@@ -291,7 +291,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
         }
         if (obj instanceof ContainerComponent) {
             ContainerComponent containerComponent = (ContainerComponent) obj;
-            return this.type == containerComponent.type && Intrinsics.areEqual(this.f8241id, containerComponent.f8241id) && Intrinsics.areEqual(this.errorText, containerComponent.errorText) && Intrinsics.areEqual(this.components, containerComponent.components) && Intrinsics.areEqual(this.accentColor, containerComponent.accentColor) && this.isSpoiler == containerComponent.isSpoiler && Intrinsics.areEqual(this.spoilerDescription, containerComponent.spoilerDescription) && Intrinsics.areEqual(this.themedBackgroundColor, containerComponent.themedBackgroundColor);
+            return this.type == containerComponent.type && Intrinsics.areEqual(this.f8240id, containerComponent.f8240id) && Intrinsics.areEqual(this.errorText, containerComponent.errorText) && Intrinsics.areEqual(this.components, containerComponent.components) && Intrinsics.areEqual(this.accentColor, containerComponent.accentColor) && this.isSpoiler == containerComponent.isSpoiler && Intrinsics.areEqual(this.spoilerDescription, containerComponent.spoilerDescription) && Intrinsics.areEqual(this.themedBackgroundColor, containerComponent.themedBackgroundColor);
         }
         return false;
     }
@@ -313,7 +313,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f8241id;
+        return this.f8240id;
     }
 
     @Override // com.discord.chat.bridge.spoiler.SpoilerableData
@@ -340,7 +340,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
     }
 
     public int hashCode() {
-        int hashCode = ((Integer.hashCode(this.type) * 31) + this.f8241id.hashCode()) * 31;
+        int hashCode = ((Integer.hashCode(this.type) * 31) + this.f8240id.hashCode()) * 31;
         String str = this.errorText;
         int hashCode2 = (((hashCode + (str == null ? 0 : str.hashCode())) * 31) + this.components.hashCode()) * 31;
         Integer num = this.accentColor;
@@ -358,7 +358,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f8241id;
+        String str = this.f8240id;
         String str2 = this.errorText;
         List<Component> list = this.components;
         Integer num = this.accentColor;
@@ -384,7 +384,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(components, "components");
         this.type = i10;
-        this.f8241id = id2;
+        this.f8240id = id2;
         this.errorText = str;
         this.components = components;
         this.accentColor = num;

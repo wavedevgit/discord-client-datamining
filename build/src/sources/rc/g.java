@@ -28,79 +28,79 @@ import rc.u;
 public class g implements n {
 
     /* renamed from: a  reason: collision with root package name */
-    public final List f48647a;
+    public final List f48644a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final b0 f48648b;
+    private final b0 f48645b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final a f48649c;
+    private final a f48646c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final b f48650d;
+    private final b f48647d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f48651e;
+    private final int f48648e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final boolean f48652f;
+    private final boolean f48649f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f48653g;
+    private final boolean f48650g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final HashMap f48654h;
+    private final HashMap f48651h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final ne.j f48655i;
+    private final ne.j f48652i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final com.google.android.exoplayer2.upstream.h f48656j;
+    private final com.google.android.exoplayer2.upstream.h f48653j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final t1 f48657k;
+    private final t1 f48654k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final j0 f48658l;
+    private final j0 f48655l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final UUID f48659m;
+    private final UUID f48656m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final Looper f48660n;
+    private final Looper f48657n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final e f48661o;
+    private final e f48658o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f48662p;
+    private int f48659p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f48663q;
+    private int f48660q;
 
     /* renamed from: r  reason: collision with root package name */
-    private HandlerThread f48664r;
+    private HandlerThread f48661r;
 
     /* renamed from: s  reason: collision with root package name */
-    private c f48665s;
+    private c f48662s;
 
     /* renamed from: t  reason: collision with root package name */
-    private qc.b f48666t;
+    private qc.b f48663t;
 
     /* renamed from: u  reason: collision with root package name */
-    private n.a f48667u;
+    private n.a f48664u;
 
     /* renamed from: v  reason: collision with root package name */
-    private byte[] f48668v;
+    private byte[] f48665v;
 
     /* renamed from: w  reason: collision with root package name */
-    private byte[] f48669w;
+    private byte[] f48666w;
 
     /* renamed from: x  reason: collision with root package name */
-    private b0.a f48670x;
+    private b0.a f48667x;
 
     /* renamed from: y  reason: collision with root package name */
-    private b0.d f48671y;
+    private b0.d f48668y;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface a {
@@ -123,7 +123,7 @@ public class g implements n {
     public class c extends Handler {
 
         /* renamed from: a  reason: collision with root package name */
-        private boolean f48672a;
+        private boolean f48669a;
 
         public c(Looper looper) {
             super(looper);
@@ -132,28 +132,28 @@ public class g implements n {
         private boolean a(Message message, k0 k0Var) {
             IOException fVar;
             d dVar = (d) message.obj;
-            if (!dVar.f48675b) {
+            if (!dVar.f48672b) {
                 return false;
             }
-            int i10 = dVar.f48678e + 1;
-            dVar.f48678e = i10;
-            if (i10 > g.this.f48656j.b(3)) {
+            int i10 = dVar.f48675e + 1;
+            dVar.f48675e = i10;
+            if (i10 > g.this.f48653j.b(3)) {
                 return false;
             }
-            LoadEventInfo loadEventInfo = new LoadEventInfo(dVar.f48674a, k0Var.f48734d, k0Var.f48735e, k0Var.f48736i, SystemClock.elapsedRealtime(), SystemClock.elapsedRealtime() - dVar.f48676c, k0Var.f48737o);
+            LoadEventInfo loadEventInfo = new LoadEventInfo(dVar.f48671a, k0Var.f48731d, k0Var.f48732e, k0Var.f48733i, SystemClock.elapsedRealtime(), SystemClock.elapsedRealtime() - dVar.f48673c, k0Var.f48734o);
             MediaLoadData mediaLoadData = new MediaLoadData(3);
             if (k0Var.getCause() instanceof IOException) {
                 fVar = (IOException) k0Var.getCause();
             } else {
                 fVar = new f(k0Var.getCause());
             }
-            long a10 = g.this.f48656j.a(new h.c(loadEventInfo, mediaLoadData, fVar, dVar.f48678e));
+            long a10 = g.this.f48653j.a(new h.c(loadEventInfo, mediaLoadData, fVar, dVar.f48675e));
             if (a10 == -9223372036854775807L) {
                 return false;
             }
             synchronized (this) {
                 try {
-                    if (this.f48672a) {
+                    if (this.f48669a) {
                         return false;
                     }
                     sendMessageDelayed(Message.obtain(message), a10);
@@ -170,7 +170,7 @@ public class g implements n {
 
         public synchronized void c() {
             removeCallbacksAndMessages(null);
-            this.f48672a = true;
+            this.f48669a = true;
         }
 
         /* JADX WARN: Multi-variable type inference failed */
@@ -183,12 +183,12 @@ public class g implements n {
                 int i10 = message.what;
                 if (i10 != 0) {
                     if (i10 == 1) {
-                        bArr = g.this.f48658l.a(g.this.f48659m, (b0.a) dVar.f48677d);
+                        bArr = g.this.f48655l.a(g.this.f48656m, (b0.a) dVar.f48674d);
                     } else {
                         throw new RuntimeException();
                     }
                 } else {
-                    bArr = g.this.f48658l.b(g.this.f48659m, (b0.d) dVar.f48677d);
+                    bArr = g.this.f48655l.b(g.this.f48656m, (b0.d) dVar.f48674d);
                 }
             } catch (k0 e10) {
                 boolean a10 = a(message, e10);
@@ -200,11 +200,11 @@ public class g implements n {
                 ne.y.j("DefaultDrmSession", "Key/provisioning request produced an unexpected exception. Not retrying.", e11);
                 bArr = e11;
             }
-            g.this.f48656j.d(dVar.f48674a);
+            g.this.f48653j.d(dVar.f48671a);
             synchronized (this) {
                 try {
-                    if (!this.f48672a) {
-                        g.this.f48661o.obtainMessage(message.what, Pair.create(dVar.f48677d, bArr)).sendToTarget();
+                    if (!this.f48669a) {
+                        g.this.f48658o.obtainMessage(message.what, Pair.create(dVar.f48674d, bArr)).sendToTarget();
                     }
                 } finally {
                 }
@@ -217,25 +217,25 @@ public class g implements n {
     public static final class d {
 
         /* renamed from: a  reason: collision with root package name */
-        public final long f48674a;
+        public final long f48671a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final boolean f48675b;
+        public final boolean f48672b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final long f48676c;
+        public final long f48673c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final Object f48677d;
+        public final Object f48674d;
 
         /* renamed from: e  reason: collision with root package name */
-        public int f48678e;
+        public int f48675e;
 
         public d(long j10, boolean z10, long j11, Object obj) {
-            this.f48674a = j10;
-            this.f48675b = z10;
-            this.f48676c = j11;
-            this.f48677d = obj;
+            this.f48671a = j10;
+            this.f48672b = z10;
+            this.f48673c = j11;
+            this.f48674d = obj;
         }
     }
 
@@ -270,43 +270,43 @@ public class g implements n {
         if (i10 == 1 || i10 == 3) {
             ne.a.e(bArr);
         }
-        this.f48659m = uuid;
-        this.f48649c = aVar;
-        this.f48650d = bVar;
-        this.f48648b = b0Var;
-        this.f48651e = i10;
-        this.f48652f = z10;
-        this.f48653g = z11;
+        this.f48656m = uuid;
+        this.f48646c = aVar;
+        this.f48647d = bVar;
+        this.f48645b = b0Var;
+        this.f48648e = i10;
+        this.f48649f = z10;
+        this.f48650g = z11;
         if (bArr != null) {
-            this.f48669w = bArr;
-            this.f48647a = null;
+            this.f48666w = bArr;
+            this.f48644a = null;
         } else {
-            this.f48647a = Collections.unmodifiableList((List) ne.a.e(list));
+            this.f48644a = Collections.unmodifiableList((List) ne.a.e(list));
         }
-        this.f48654h = hashMap;
-        this.f48658l = j0Var;
-        this.f48655i = new ne.j();
-        this.f48656j = hVar;
-        this.f48657k = t1Var;
-        this.f48662p = 2;
-        this.f48660n = looper;
-        this.f48661o = new e(looper);
+        this.f48651h = hashMap;
+        this.f48655l = j0Var;
+        this.f48652i = new ne.j();
+        this.f48653j = hVar;
+        this.f48654k = t1Var;
+        this.f48659p = 2;
+        this.f48657n = looper;
+        this.f48658o = new e(looper);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void C(Object obj, Object obj2) {
-        if (obj == this.f48671y) {
-            if (this.f48662p == 2 || u()) {
-                this.f48671y = null;
+        if (obj == this.f48668y) {
+            if (this.f48659p == 2 || u()) {
+                this.f48668y = null;
                 if (obj2 instanceof Exception) {
-                    this.f48649c.a((Exception) obj2, false);
+                    this.f48646c.a((Exception) obj2, false);
                     return;
                 }
                 try {
-                    this.f48648b.e((byte[]) obj2);
-                    this.f48649c.c();
+                    this.f48645b.e((byte[]) obj2);
+                    this.f48646c.c();
                 } catch (Exception e10) {
-                    this.f48649c.a(e10, true);
+                    this.f48646c.a(e10, true);
                 }
             }
         }
@@ -317,21 +317,21 @@ public class g implements n {
             return true;
         }
         try {
-            byte[] c10 = this.f48648b.c();
-            this.f48668v = c10;
-            this.f48648b.m(c10, this.f48657k);
-            this.f48666t = this.f48648b.h(this.f48668v);
-            this.f48662p = 3;
+            byte[] c10 = this.f48645b.c();
+            this.f48665v = c10;
+            this.f48645b.m(c10, this.f48654k);
+            this.f48663t = this.f48645b.h(this.f48665v);
+            this.f48659p = 3;
             q(new ne.i() { // from class: rc.b
                 @Override // ne.i
                 public final void accept(Object obj) {
                     ((u.a) obj).k(r1);
                 }
             });
-            ne.a.e(this.f48668v);
+            ne.a.e(this.f48665v);
             return true;
         } catch (NotProvisionedException unused) {
-            this.f48649c.b(this);
+            this.f48646c.b(this);
             return false;
         } catch (Exception e10) {
             v(e10, 1);
@@ -341,8 +341,8 @@ public class g implements n {
 
     private void E(byte[] bArr, int i10, boolean z10) {
         try {
-            this.f48670x = this.f48648b.l(bArr, this.f48647a, i10, this.f48654h);
-            ((c) w0.j(this.f48665s)).b(1, ne.a.e(this.f48670x), z10);
+            this.f48667x = this.f48645b.l(bArr, this.f48644a, i10, this.f48651h);
+            ((c) w0.j(this.f48662s)).b(1, ne.a.e(this.f48667x), z10);
         } catch (Exception e10) {
             x(e10, true);
         }
@@ -350,7 +350,7 @@ public class g implements n {
 
     private boolean G() {
         try {
-            this.f48648b.d(this.f48668v, this.f48669w);
+            this.f48645b.d(this.f48665v, this.f48666w);
             return true;
         } catch (Exception e10) {
             v(e10, 1);
@@ -359,43 +359,43 @@ public class g implements n {
     }
 
     private void H() {
-        if (Thread.currentThread() != this.f48660n.getThread()) {
-            ne.y.j("DefaultDrmSession", "DefaultDrmSession accessed on the wrong thread.\nCurrent thread: " + Thread.currentThread().getName() + "\nExpected thread: " + this.f48660n.getThread().getName(), new IllegalStateException());
+        if (Thread.currentThread() != this.f48657n.getThread()) {
+            ne.y.j("DefaultDrmSession", "DefaultDrmSession accessed on the wrong thread.\nCurrent thread: " + Thread.currentThread().getName() + "\nExpected thread: " + this.f48657n.getThread().getName(), new IllegalStateException());
         }
     }
 
     private void q(ne.i iVar) {
-        for (u.a aVar : this.f48655i.D0()) {
+        for (u.a aVar : this.f48652i.D0()) {
             iVar.accept(aVar);
         }
     }
 
     private void r(boolean z10) {
-        if (!this.f48653g) {
-            byte[] bArr = (byte[]) w0.j(this.f48668v);
-            int i10 = this.f48651e;
+        if (!this.f48650g) {
+            byte[] bArr = (byte[]) w0.j(this.f48665v);
+            int i10 = this.f48648e;
             if (i10 != 0 && i10 != 1) {
                 if (i10 != 2) {
                     if (i10 == 3) {
-                        ne.a.e(this.f48669w);
-                        ne.a.e(this.f48668v);
-                        E(this.f48669w, 3, z10);
+                        ne.a.e(this.f48666w);
+                        ne.a.e(this.f48665v);
+                        E(this.f48666w, 3, z10);
                     }
-                } else if (this.f48669w == null || G()) {
+                } else if (this.f48666w == null || G()) {
                     E(bArr, 2, z10);
                 }
-            } else if (this.f48669w == null) {
+            } else if (this.f48666w == null) {
                 E(bArr, 1, z10);
-            } else if (this.f48662p != 4 && !G()) {
+            } else if (this.f48659p != 4 && !G()) {
             } else {
                 long s10 = s();
-                if (this.f48651e == 0 && s10 <= 60) {
+                if (this.f48648e == 0 && s10 <= 60) {
                     ne.y.b("DefaultDrmSession", "Offline license has expired or will expire soon. Remaining seconds: " + s10);
                     E(bArr, 2, z10);
                 } else if (s10 <= 0) {
                     v(new i0(), 2);
                 } else {
-                    this.f48662p = 4;
+                    this.f48659p = 4;
                     q(new ne.i() { // from class: rc.c
                         @Override // ne.i
                         public final void accept(Object obj) {
@@ -408,7 +408,7 @@ public class g implements n {
     }
 
     private long s() {
-        if (!lc.d.f36655d.equals(this.f48659m)) {
+        if (!lc.d.f36655d.equals(this.f48656m)) {
             return LongCompanionObject.MAX_VALUE;
         }
         Pair pair = (Pair) ne.a.e(m0.b(this));
@@ -416,7 +416,7 @@ public class g implements n {
     }
 
     private boolean u() {
-        int i10 = this.f48662p;
+        int i10 = this.f48659p;
         if (i10 != 3 && i10 != 4) {
             return false;
         }
@@ -424,7 +424,7 @@ public class g implements n {
     }
 
     private void v(final Exception exc, int i10) {
-        this.f48667u = new n.a(exc, y.a(exc, i10));
+        this.f48664u = new n.a(exc, y.a(exc, i10));
         ne.y.d("DefaultDrmSession", "DRM session error", exc);
         q(new ne.i() { // from class: rc.d
             @Override // ne.i
@@ -432,23 +432,23 @@ public class g implements n {
                 ((u.a) obj).l(exc);
             }
         });
-        if (this.f48662p != 4) {
-            this.f48662p = 1;
+        if (this.f48659p != 4) {
+            this.f48659p = 1;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void w(Object obj, Object obj2) {
-        if (obj == this.f48670x && u()) {
-            this.f48670x = null;
+        if (obj == this.f48667x && u()) {
+            this.f48667x = null;
             if (obj2 instanceof Exception) {
                 x((Exception) obj2, false);
                 return;
             }
             try {
                 byte[] bArr = (byte[]) obj2;
-                if (this.f48651e == 3) {
-                    this.f48648b.k((byte[]) w0.j(this.f48669w), bArr);
+                if (this.f48648e == 3) {
+                    this.f48645b.k((byte[]) w0.j(this.f48666w), bArr);
                     q(new ne.i() { // from class: rc.e
                         @Override // ne.i
                         public final void accept(Object obj3) {
@@ -457,12 +457,12 @@ public class g implements n {
                     });
                     return;
                 }
-                byte[] k10 = this.f48648b.k(this.f48668v, bArr);
-                int i10 = this.f48651e;
-                if ((i10 == 2 || (i10 == 0 && this.f48669w != null)) && k10 != null && k10.length != 0) {
-                    this.f48669w = k10;
+                byte[] k10 = this.f48645b.k(this.f48665v, bArr);
+                int i10 = this.f48648e;
+                if ((i10 == 2 || (i10 == 0 && this.f48666w != null)) && k10 != null && k10.length != 0) {
+                    this.f48666w = k10;
                 }
-                this.f48662p = 4;
+                this.f48659p = 4;
                 q(new ne.i() { // from class: rc.f
                     @Override // ne.i
                     public final void accept(Object obj3) {
@@ -478,7 +478,7 @@ public class g implements n {
     private void x(Exception exc, boolean z10) {
         int i10;
         if (exc instanceof NotProvisionedException) {
-            this.f48649c.b(this);
+            this.f48646c.b(this);
             return;
         }
         if (z10) {
@@ -490,8 +490,8 @@ public class g implements n {
     }
 
     private void y() {
-        if (this.f48651e == 0 && this.f48662p == 4) {
-            w0.j(this.f48668v);
+        if (this.f48648e == 0 && this.f48659p == 4) {
+            w0.j(this.f48665v);
             r(false);
         }
     }
@@ -516,110 +516,110 @@ public class g implements n {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void F() {
-        this.f48671y = this.f48648b.b();
-        ((c) w0.j(this.f48665s)).b(0, ne.a.e(this.f48671y), true);
+        this.f48668y = this.f48645b.b();
+        ((c) w0.j(this.f48662s)).b(0, ne.a.e(this.f48668y), true);
     }
 
     @Override // rc.n
     public final UUID a() {
         H();
-        return this.f48659m;
+        return this.f48656m;
     }
 
     @Override // rc.n
     public void b(u.a aVar) {
         H();
-        int i10 = this.f48663q;
+        int i10 = this.f48660q;
         if (i10 <= 0) {
             ne.y.c("DefaultDrmSession", "release() called on a session that's already fully released.");
             return;
         }
         int i11 = i10 - 1;
-        this.f48663q = i11;
+        this.f48660q = i11;
         if (i11 == 0) {
-            this.f48662p = 0;
-            ((e) w0.j(this.f48661o)).removeCallbacksAndMessages(null);
-            ((c) w0.j(this.f48665s)).c();
-            this.f48665s = null;
-            ((HandlerThread) w0.j(this.f48664r)).quit();
-            this.f48664r = null;
-            this.f48666t = null;
-            this.f48667u = null;
-            this.f48670x = null;
-            this.f48671y = null;
-            byte[] bArr = this.f48668v;
+            this.f48659p = 0;
+            ((e) w0.j(this.f48658o)).removeCallbacksAndMessages(null);
+            ((c) w0.j(this.f48662s)).c();
+            this.f48662s = null;
+            ((HandlerThread) w0.j(this.f48661r)).quit();
+            this.f48661r = null;
+            this.f48663t = null;
+            this.f48664u = null;
+            this.f48667x = null;
+            this.f48668y = null;
+            byte[] bArr = this.f48665v;
             if (bArr != null) {
-                this.f48648b.j(bArr);
-                this.f48668v = null;
+                this.f48645b.j(bArr);
+                this.f48665v = null;
             }
         }
         if (aVar != null) {
-            this.f48655i.d(aVar);
-            if (this.f48655i.c(aVar) == 0) {
+            this.f48652i.d(aVar);
+            if (this.f48652i.c(aVar) == 0) {
                 aVar.m();
             }
         }
-        this.f48650d.b(this, this.f48663q);
+        this.f48647d.b(this, this.f48660q);
     }
 
     @Override // rc.n
     public boolean c() {
         H();
-        return this.f48652f;
+        return this.f48649f;
     }
 
     @Override // rc.n
     public final qc.b d() {
         H();
-        return this.f48666t;
+        return this.f48663t;
     }
 
     @Override // rc.n
     public void e(u.a aVar) {
         H();
         boolean z10 = false;
-        if (this.f48663q < 0) {
-            ne.y.c("DefaultDrmSession", "Session reference count less than zero: " + this.f48663q);
-            this.f48663q = 0;
+        if (this.f48660q < 0) {
+            ne.y.c("DefaultDrmSession", "Session reference count less than zero: " + this.f48660q);
+            this.f48660q = 0;
         }
         if (aVar != null) {
-            this.f48655i.b(aVar);
+            this.f48652i.b(aVar);
         }
-        int i10 = this.f48663q + 1;
-        this.f48663q = i10;
+        int i10 = this.f48660q + 1;
+        this.f48660q = i10;
         if (i10 == 1) {
-            if (this.f48662p == 2) {
+            if (this.f48659p == 2) {
                 z10 = true;
             }
             ne.a.g(z10);
             HandlerThread handlerThread = new HandlerThread("ExoPlayer:DrmRequestHandler");
-            this.f48664r = handlerThread;
+            this.f48661r = handlerThread;
             handlerThread.start();
-            this.f48665s = new c(this.f48664r.getLooper());
+            this.f48662s = new c(this.f48661r.getLooper());
             if (D()) {
                 r(true);
             }
-        } else if (aVar != null && u() && this.f48655i.c(aVar) == 1) {
-            aVar.k(this.f48662p);
+        } else if (aVar != null && u() && this.f48652i.c(aVar) == 1) {
+            aVar.k(this.f48659p);
         }
-        this.f48650d.a(this, this.f48663q);
+        this.f48647d.a(this, this.f48660q);
     }
 
     @Override // rc.n
     public Map g() {
         H();
-        byte[] bArr = this.f48668v;
+        byte[] bArr = this.f48665v;
         if (bArr == null) {
             return null;
         }
-        return this.f48648b.a(bArr);
+        return this.f48645b.a(bArr);
     }
 
     @Override // rc.n
     public final n.a getError() {
         H();
-        if (this.f48662p == 1) {
-            return this.f48667u;
+        if (this.f48659p == 1) {
+            return this.f48664u;
         }
         return null;
     }
@@ -627,18 +627,18 @@ public class g implements n {
     @Override // rc.n
     public final int getState() {
         H();
-        return this.f48662p;
+        return this.f48659p;
     }
 
     @Override // rc.n
     public boolean h(String str) {
         H();
-        return this.f48648b.i((byte[]) ne.a.i(this.f48668v), str);
+        return this.f48645b.i((byte[]) ne.a.i(this.f48665v), str);
     }
 
     public boolean t(byte[] bArr) {
         H();
-        return Arrays.equals(this.f48668v, bArr);
+        return Arrays.equals(this.f48665v, bArr);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

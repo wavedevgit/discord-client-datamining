@@ -135,4 +135,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createSegmentedControl = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8997, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [9000, 2]);

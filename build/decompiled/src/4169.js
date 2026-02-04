@@ -15,14 +15,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
     var3 = function arg0() {
-        _fun38057: for (var _fun38057_ip = 0;;) switch (_fun38057_ip) {
+        _fun38059: for (var _fun38059_ip = 0;;) switch (_fun38059_ip) {
             case 0:
                 var4 = arg0;
                 var1 = !var4;
                 var0 = !var1;
                 if (var1) {
-                    _fun38057_ip = 25;
-                    continue _fun38057
+                    _fun38059_ip = 25;
+                    continue _fun38059
                 }
             case 12:
                 var2 = var4.byteLength;
@@ -30,8 +30,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var2 >= var1;
             case 25:
                 if (!var0) {
-                    _fun38057_ip = 95;
-                    continue _fun38057
+                    _fun38059_ip = 95;
+                    continue _fun38059
                 }
             case 28:
                 var1 = var4.getUint16;
@@ -55,7 +55,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var0.isTiffFile = var3;
     var2 = function() {
-        _fun38058: for (var _fun38058_ip = 0;;) switch (_fun38058_ip) {
+        _fun38060: for (var _fun38060_ip = 0;;) switch (_fun38060_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -65,8 +65,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var2.bind(var0)(var1);
                 var0 = var0.USE_EXIF;
                 if (var0) {
-                    _fun38058_ip = 38;
-                    continue _fun38058
+                    _fun38060_ip = 38;
+                    continue _fun38060
                 }
             case 34:
                 var0 = {};

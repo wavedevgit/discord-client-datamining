@@ -15,19 +15,19 @@ public interface b extends Parcelable {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Map f55160a = new LinkedHashMap();
+        private final Map f55157a = new LinkedHashMap();
 
         public final a a(String str, Function1 cb2) {
             Intrinsics.checkNotNullParameter(cb2, "cb");
             if (str == null) {
                 return this;
             }
-            this.f55160a.put(str, cb2);
+            this.f55157a.put(str, cb2);
             return this;
         }
 
         public final List b() {
-            return o0.A(this.f55160a);
+            return o0.A(this.f55157a);
         }
     }
 

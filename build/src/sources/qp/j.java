@@ -8,7 +8,7 @@ public interface j {
     public static final class a implements j {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final a f48052a = new a();
+        public static final a f48049a = new a();
 
         private a() {
         }
@@ -33,7 +33,7 @@ public interface j {
     public static final class b implements j {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final b f48053a = new b();
+        public static final b f48050a = new b();
 
         private b() {
         }
@@ -58,28 +58,28 @@ public interface j {
     public static final class c implements j {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f48054a;
+        private final String f48051a;
 
         public c(String str) {
-            this.f48054a = str;
+            this.f48051a = str;
         }
 
         public final String a() {
-            return this.f48054a;
+            return this.f48051a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof c) && Intrinsics.areEqual(this.f48054a, ((c) obj).f48054a)) {
+            if ((obj instanceof c) && Intrinsics.areEqual(this.f48051a, ((c) obj).f48051a)) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            String str = this.f48054a;
+            String str = this.f48051a;
             if (str == null) {
                 return 0;
             }
@@ -87,7 +87,7 @@ public interface j {
         }
 
         public String toString() {
-            String str = this.f48054a;
+            String str = this.f48051a;
             return "LeadInAnimation(pose=" + str + ")";
         }
     }
@@ -96,7 +96,7 @@ public interface j {
     public static final class d implements j {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final d f48055a = new d();
+        public static final d f48052a = new d();
 
         private d() {
         }
@@ -121,7 +121,7 @@ public interface j {
     public static final class e implements j {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final e f48056a = new e();
+        public static final e f48053a = new e();
 
         private e() {
         }
@@ -146,28 +146,28 @@ public interface j {
     public static final class f implements j {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f48057a;
+        private final String f48054a;
 
         public f(String str) {
-            this.f48057a = str;
+            this.f48054a = str;
         }
 
         public final String a() {
-            return this.f48057a;
+            return this.f48054a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof f) && Intrinsics.areEqual(this.f48057a, ((f) obj).f48057a)) {
+            if ((obj instanceof f) && Intrinsics.areEqual(this.f48054a, ((f) obj).f48054a)) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            String str = this.f48057a;
+            String str = this.f48054a;
             if (str == null) {
                 return 0;
             }
@@ -175,7 +175,7 @@ public interface j {
         }
 
         public String toString() {
-            String str = this.f48057a;
+            String str = this.f48054a;
             return "TakePhoto(pose=" + str + ")";
         }
     }

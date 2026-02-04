@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Navigator/native/PostponeRender.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun51550: for (var _fun51550_ip = 0;;) switch (_fun51550_ip) {
+        _fun51553: for (var _fun51553_ip = 0;;) switch (_fun51553_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.postpone;
@@ -94,12 +94,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var10[var8];
                 var8 = var9.bind(var3)(var8);
                 var7 = function() { // Environment: var7
-                    _fun51551: for (var _fun51551_ip = 0;;) switch (_fun51551_ip) {
+                    _fun51554: for (var _fun51554_ip = 0;;) switch (_fun51554_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             if (var2) {
-                                _fun51551_ip = 16;
-                                continue _fun51551
+                                _fun51554_ip = 16;
+                                continue _fun51554
                             }
                         case 12:
                             var2 = undefined;
@@ -123,14 +123,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var3.bind(var4)(var1);
                             var2.current = var1;
                             var0 = function() { // Environment: var0
-                                _fun51553: for (var _fun51553_ip = 0;;) switch (_fun51553_ip) {
+                                _fun51556: for (var _fun51556_ip = 0;;) switch (_fun51556_ip) {
                                     case 0:
                                         var0 = _closure2_slot2;
                                         var1 = var0.current;
                                         var0 = null;
                                         if (!(var0 != var1)) {
-                                            _fun51553_ip = 28;
-                                            continue _fun51553
+                                            _fun51556_ip = 28;
+                                            continue _fun51556
                                         }
                                     case 18:
                                         var0 = var1.cancel;
@@ -145,8 +145,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var7 = var8.bind(var3)(var7);
                 if (!var2) {
-                    _fun51550_ip = 174;
-                    continue _fun51550
+                    _fun51553_ip = 174;
+                    continue _fun51553
                 }
             case 136:
                 var8 = _closure1_slot6;
@@ -160,8 +160,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var8.bind(var3)(var7, var2);
             case 174:
                 if (var1) {
-                    _fun51550_ip = 199;
-                    continue _fun51550
+                    _fun51553_ip = 199;
+                    continue _fun51553
                 }
             case 177:
                 var2 = _closure1_slot1;
@@ -169,8 +169,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 9;
                 var1 = var7[var1];
                 var2 = var2.bind(var3)(var1);
-                _fun51550_ip = 203;
-                continue _fun51550;
+                _fun51553_ip = 203;
+                continue _fun51553;
             case 199:
                 var2 = _closure1_slot5;
             case 203:

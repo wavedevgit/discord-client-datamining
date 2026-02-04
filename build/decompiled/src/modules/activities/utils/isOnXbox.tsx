@@ -30,15 +30,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/isOnXbox.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun62479: for (var _fun62479_ip = 0;;) switch (_fun62479_ip) {
+        _fun62496: for (var _fun62496_ip = 0;;) switch (_fun62496_ip) {
             case 0:
                 var3 = arg0;
                 var4 = null;
                 var0 = var4 == var3;
                 var5 = undefined;
                 if (var0) {
-                    _fun62479_ip = 20;
-                    continue _fun62479
+                    _fun62496_ip = 20;
+                    continue _fun62496
                 }
             case 14:
                 var5 = var3.application_id;
@@ -46,15 +46,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot0;
                 var0 = var5 === var0;
                 if (var0) {
-                    _fun62479_ip = 63;
-                    continue _fun62479
+                    _fun62496_ip = 63;
+                    continue _fun62496
                 }
             case 34:
                 var4 = var4 == var3;
                 var2 = undefined;
                 if (var4) {
-                    _fun62479_ip = 49;
-                    continue _fun62479
+                    _fun62496_ip = 49;
+                    continue _fun62496
                 }
             case 43:
                 var2 = var3.platform;

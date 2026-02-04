@@ -33,14 +33,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/refresh/form/FormCheckmark.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun44622: for (var _fun44622_ip = 0;;) switch (_fun44622_ip) {
+        _fun44625: for (var _fun44625_ip = 0;;) switch (_fun44625_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.selected;
                 var0 = null;
                 if (!var1) {
-                    _fun44622_ip = 88;
-                    continue _fun44622
+                    _fun44625_ip = 88;
+                    continue _fun44625
                 }
             case 14:
                 var4 = _closure1_slot3;

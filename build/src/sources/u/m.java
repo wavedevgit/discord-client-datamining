@@ -8,14 +8,14 @@ import x.b1;
 public class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private final d2 f50315a;
+    private final d2 f50312a;
 
     public m(d2 d2Var) {
-        this.f50315a = d2Var;
+        this.f50312a = d2Var;
     }
 
     public PointF a(b1 b1Var, int i10) {
-        if (i10 == 1 && this.f50315a.a(AfRegionFlipHorizontallyQuirk.class)) {
+        if (i10 == 1 && this.f50312a.a(AfRegionFlipHorizontallyQuirk.class)) {
             return new PointF(1.0f - b1Var.c(), b1Var.d());
         }
         return new PointF(b1Var.c(), b1Var.d());

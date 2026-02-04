@@ -15,29 +15,29 @@ import kotlin.jvm.internal.Intrinsics;
 public final class e extends ReactViewGroup {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ThemedReactContext f49553d;
+    private final ThemedReactContext f49550d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final EventDispatcher f49554e;
+    private final EventDispatcher f49551e;
 
     /* renamed from: i  reason: collision with root package name */
-    private WindowManager f49555i;
+    private WindowManager f49552i;
 
     /* renamed from: o  reason: collision with root package name */
-    private f f49556o;
+    private f f49553o;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public e(ThemedReactContext reactContext) {
         super(reactContext);
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
-        this.f49553d = reactContext;
+        this.f49550d = reactContext;
         EventDispatcher eventDispatcherForReactTag = UIManagerHelper.getEventDispatcherForReactTag(reactContext, getId());
-        this.f49554e = eventDispatcherForReactTag;
+        this.f49551e = eventDispatcherForReactTag;
         Object systemService = reactContext.getSystemService("window");
         Intrinsics.checkNotNull(systemService, "null cannot be cast to non-null type android.view.WindowManager");
-        this.f49555i = (WindowManager) systemService;
+        this.f49552i = (WindowManager) systemService;
         f fVar = new f(reactContext);
-        this.f49556o = fVar;
+        this.f49553o = fVar;
         fVar.setEventDispatcher$react_native_keyboard_controller_release(eventDispatcherForReactTag);
     }
 
@@ -49,17 +49,17 @@ public final class e extends ReactViewGroup {
     @Override // android.view.ViewGroup
     public void addView(View view, int i10) {
         UiThreadUtil.assertOnUiThread();
-        this.f49556o.addView(view, i10);
+        this.f49553o.addView(view, i10);
     }
 
     public final void c() {
-        if (this.f49556o.c()) {
-            this.f49555i.removeView(this.f49556o);
+        if (this.f49553o.c()) {
+            this.f49552i.removeView(this.f49553o);
         }
     }
 
     public final void d() {
-        this.f49555i.addView(this.f49556o, new WindowManager.LayoutParams(-1, -1, 1000, 520, -3));
+        this.f49552i.addView(this.f49553o, new WindowManager.LayoutParams(-1, -1, 1000, 520, -3));
     }
 
     @Override // android.view.View
@@ -70,16 +70,16 @@ public final class e extends ReactViewGroup {
 
     @Override // android.view.ViewGroup
     public View getChildAt(int i10) {
-        return this.f49556o.getChildAt(i10);
+        return this.f49553o.getChildAt(i10);
     }
 
     @Override // android.view.ViewGroup
     public int getChildCount() {
-        return this.f49556o.getChildCount();
+        return this.f49553o.getChildCount();
     }
 
     public final StateWrapper getStateWrapper() {
-        return this.f49556o.getStateWrapper$react_native_keyboard_controller_release();
+        return this.f49553o.getStateWrapper$react_native_keyboard_controller_release();
     }
 
     @Override // android.view.ViewGroup, android.view.View
@@ -92,18 +92,18 @@ public final class e extends ReactViewGroup {
     public void removeView(View view) {
         UiThreadUtil.assertOnUiThread();
         if (view != null) {
-            this.f49556o.removeView(view);
+            this.f49553o.removeView(view);
         }
     }
 
     @Override // com.facebook.react.views.view.ReactViewGroup, android.view.ViewGroup
     public void removeViewAt(int i10) {
         UiThreadUtil.assertOnUiThread();
-        this.f49556o.removeView(getChildAt(i10));
+        this.f49553o.removeView(getChildAt(i10));
     }
 
     public final void setStateWrapper(StateWrapper stateWrapper) {
-        this.f49556o.setStateWrapper$react_native_keyboard_controller_release(stateWrapper);
+        this.f49553o.setStateWrapper$react_native_keyboard_controller_release(stateWrapper);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

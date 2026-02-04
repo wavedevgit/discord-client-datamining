@@ -96,13 +96,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var10 = 200;
     var8.duration = var10;
     var9 = function arg0() {
-        _fun51511: for (var _fun51511_ip = 0;;) switch (_fun51511_ip) {
+        _fun51514: for (var _fun51514_ip = 0;;) switch (_fun51514_ip) {
             case 0:
                 var4 = arg0;
                 var0 = 1;
                 if (!(var0 !== var4)) {
-                    _fun51511_ip = 33;
-                    continue _fun51511
+                    _fun51514_ip = 33;
+                    continue _fun51514
                 }
             case 10:
                 var1 = global;

@@ -23,7 +23,7 @@ public final class ConnectionsRoleTag {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8260id;
+    private final String f8259id;
     @NotNull
     private final String name;
 
@@ -47,7 +47,7 @@ public final class ConnectionsRoleTag {
         if (15 != (i10 & 15)) {
             v1.b(i10, 15, ConnectionsRoleTag$$serializer.INSTANCE.getDescriptor());
         }
-        this.f8260id = str;
+        this.f8259id = str;
         this.name = str2;
         this.backgroundColor = i11;
         this.iconColor = i12;
@@ -55,7 +55,7 @@ public final class ConnectionsRoleTag {
 
     public static /* synthetic */ ConnectionsRoleTag copy$default(ConnectionsRoleTag connectionsRoleTag, String str, String str2, int i10, int i11, int i12, Object obj) {
         if ((i12 & 1) != 0) {
-            str = connectionsRoleTag.f8260id;
+            str = connectionsRoleTag.f8259id;
         }
         if ((i12 & 2) != 0) {
             str2 = connectionsRoleTag.name;
@@ -70,7 +70,7 @@ public final class ConnectionsRoleTag {
     }
 
     public static final /* synthetic */ void write$Self$chat_release(ConnectionsRoleTag connectionsRoleTag, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        compositeEncoder.y(serialDescriptor, 0, connectionsRoleTag.f8260id);
+        compositeEncoder.y(serialDescriptor, 0, connectionsRoleTag.f8259id);
         compositeEncoder.y(serialDescriptor, 1, connectionsRoleTag.name);
         compositeEncoder.w(serialDescriptor, 2, connectionsRoleTag.backgroundColor);
         compositeEncoder.w(serialDescriptor, 3, connectionsRoleTag.iconColor);
@@ -78,7 +78,7 @@ public final class ConnectionsRoleTag {
 
     @NotNull
     public final String component1() {
-        return this.f8260id;
+        return this.f8259id;
     }
 
     @NotNull
@@ -107,7 +107,7 @@ public final class ConnectionsRoleTag {
         }
         if (obj instanceof ConnectionsRoleTag) {
             ConnectionsRoleTag connectionsRoleTag = (ConnectionsRoleTag) obj;
-            return Intrinsics.areEqual(this.f8260id, connectionsRoleTag.f8260id) && Intrinsics.areEqual(this.name, connectionsRoleTag.name) && this.backgroundColor == connectionsRoleTag.backgroundColor && this.iconColor == connectionsRoleTag.iconColor;
+            return Intrinsics.areEqual(this.f8259id, connectionsRoleTag.f8259id) && Intrinsics.areEqual(this.name, connectionsRoleTag.name) && this.backgroundColor == connectionsRoleTag.backgroundColor && this.iconColor == connectionsRoleTag.iconColor;
         }
         return false;
     }
@@ -122,7 +122,7 @@ public final class ConnectionsRoleTag {
 
     @NotNull
     public final String getId() {
-        return this.f8260id;
+        return this.f8259id;
     }
 
     @NotNull
@@ -131,12 +131,12 @@ public final class ConnectionsRoleTag {
     }
 
     public int hashCode() {
-        return (((((this.f8260id.hashCode() * 31) + this.name.hashCode()) * 31) + Integer.hashCode(this.backgroundColor)) * 31) + Integer.hashCode(this.iconColor);
+        return (((((this.f8259id.hashCode() * 31) + this.name.hashCode()) * 31) + Integer.hashCode(this.backgroundColor)) * 31) + Integer.hashCode(this.iconColor);
     }
 
     @NotNull
     public String toString() {
-        String str = this.f8260id;
+        String str = this.f8259id;
         String str2 = this.name;
         int i10 = this.backgroundColor;
         int i11 = this.iconColor;
@@ -146,7 +146,7 @@ public final class ConnectionsRoleTag {
     public ConnectionsRoleTag(@NotNull String id2, @NotNull String name, int i10, int i11) {
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f8260id = id2;
+        this.f8259id = id2;
         this.name = name;
         this.backgroundColor = i10;
         this.iconColor = i11;

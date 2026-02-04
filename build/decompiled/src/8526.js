@@ -1,211 +1,67 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = global;
-    var5 = var2.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = {};
-    var3 = 'function pnpm_reanimatedNativeTs1(event){const{handlers,context}=this.__closure;const{onKeyboardMoveStart:onKeyboardMoveStart,onKeyboardMove:onKeyboardMove,onKeyboardMoveEnd:onKeyboardMoveEnd,onKeyboardMoveInteractive:onKeyboardMoveInteractive}=handlers;if(onKeyboardMoveStart&&event.eventName.endsWith("onKeyboardMoveStart")){onKeyboardMoveStart(event,context);}if(onKeyboardMove&&event.eventName.endsWith("onKeyboardMove")){onKeyboardMove(event,context);}if(onKeyboardMoveEnd&&event.eventName.endsWith("onKeyboardMoveEnd")){onKeyboardMoveEnd(event,context);}if(onKeyboardMoveInteractive&&event.eventName.endsWith("onKeyboardMoveInteractive")){onKeyboardMoveInteractive(event,context);}}';
-    var2.code = var3;
-    var _closure1_slot2 = var2;
-    var2 = {};
-    var3 = 'function pnpm_reanimatedNativeTs2(event){const{handlers,context}=this.__closure;const{onFocusedInputLayoutChanged:onFocusedInputLayoutChanged}=handlers;if(onFocusedInputLayoutChanged&&event.eventName.endsWith("onFocusedInputLayoutChanged")){onFocusedInputLayoutChanged(event,context);}}';
-    var2.code = var3;
-    var _closure1_slot3 = var2;
-    var2 = function arg0, arg1() {
-        var7 = arg0;
-        var _closure2_slot0 = var7;
-        var5 = _closure1_slot0;
-        var8 = _closure1_slot1;
-        var2 = 0;
-        var4 = var8[var2];
-        var3 = undefined;
-        var9 = var5.bind(var3)(var4);
-        var6 = var9.useHandler;
-        var4 = arg1;
-        var4 = var6.bind(var9)(var7, var4);
-        var6 = var4.context;
-        var _closure2_slot1 = var6;
-        var4 = var4.doDependenciesDiffer;
-        var2 = var8[var2];
-        var3 = var5.bind(var3)(var2);
-        var2 = var3.useEvent;
-        var1 = function arg0() {
-            _fun68454: for (var _fun68454_ip = 0;;) switch (_fun68454_ip) {
-                case 0:
-                    var3 = arg0;
-                    var1 = _closure2_slot0;
-                    var7 = var1.onKeyboardMoveStart;
-                    var6 = var1.onKeyboardMove;
-                    var5 = var1.onKeyboardMoveEnd;
-                    var2 = var1.onKeyboardMoveInteractive;
-                    var1 = var7;
-                    if (!var1) {
-                        _fun68454_ip = 61;
-                        continue _fun68454
-                    }
-                case 40:
-                    var9 = var3.eventName;
-                    var8 = var9.endsWith;
-                    var4 = 'onKeyboardMoveStart';
-                    var1 = var8.bind(var9)(var4);
-                case 61:
-                    if (!var1) {
-                        _fun68454_ip = 76;
-                        continue _fun68454
-                    }
-                case 64:
-                    var4 = _closure2_slot1;
-                    var1 = undefined;
-                    var1 = var7.bind(var1)(var3, var4);
-                case 76:
-                    var1 = var6;
-                    if (!var1) {
-                        _fun68454_ip = 103;
-                        continue _fun68454
-                    }
-                case 82:
-                    var8 = var3.eventName;
-                    var7 = var8.endsWith;
-                    var4 = 'onKeyboardMove';
-                    var1 = var7.bind(var8)(var4);
-                case 103:
-                    if (!var1) {
-                        _fun68454_ip = 118;
-                        continue _fun68454
-                    }
-                case 106:
-                    var4 = _closure2_slot1;
-                    var1 = undefined;
-                    var1 = var6.bind(var1)(var3, var4);
-                case 118:
-                    var1 = var5;
-                    if (!var1) {
-                        _fun68454_ip = 145;
-                        continue _fun68454
-                    }
-                case 124:
-                    var7 = var3.eventName;
-                    var6 = var7.endsWith;
-                    var4 = 'onKeyboardMoveEnd';
-                    var1 = var6.bind(var7)(var4);
-                case 145:
-                    if (!var1) {
-                        _fun68454_ip = 160;
-                        continue _fun68454
-                    }
-                case 148:
-                    var4 = _closure2_slot1;
-                    var1 = undefined;
-                    var1 = var5.bind(var1)(var3, var4);
-                case 160:
-                    var1 = var2;
-                    if (!var1) {
-                        _fun68454_ip = 187;
-                        continue _fun68454
-                    }
-                case 166:
-                    var6 = var3.eventName;
-                    var5 = var6.endsWith;
-                    var4 = 'onKeyboardMoveInteractive';
-                    var1 = var5.bind(var6)(var4);
-                case 187:
-                    if (!var1) {
-                        _fun68454_ip = 202;
-                        continue _fun68454
-                    }
-                case 190:
-                    var1 = _closure2_slot1;
-                    var0 = undefined;
-                    var0 = var2.bind(var0)(var3, var1);
-                case 202:
-                    var0 = undefined;
-                    return var0;
-            }
-        };
-        var5 = {};
-        var5.handlers = var7;
-        var5.context = var6;
-        var1.__closure = var5;
-        var5 = 6092807753388.0;
-        var1.__workletHash = var5;
-        var0 = _closure1_slot2;
-        var1.__initData = var0;
-        var0 = ['onKeyboardMoveStart', 'onKeyboardMove', 'onKeyboardMoveEnd', 'onKeyboardMoveInteractive'];
-        var0 = var2.bind(var3)(var1, var0, var4);
-        return var0;
-    };
-    var1.useAnimatedKeyboardHandler = var2;
-    var0 = function arg0, arg1() {
-        var7 = arg0;
-        var _closure2_slot0 = var7;
-        var5 = _closure1_slot0;
-        var8 = _closure1_slot1;
-        var2 = 0;
-        var4 = var8[var2];
-        var3 = undefined;
-        var9 = var5.bind(var3)(var4);
-        var6 = var9.useHandler;
-        var4 = arg1;
-        var4 = var6.bind(var9)(var7, var4);
-        var6 = var4.context;
-        var _closure2_slot1 = var6;
-        var4 = var4.doDependenciesDiffer;
-        var2 = var8[var2];
-        var3 = var5.bind(var3)(var2);
-        var2 = var3.useEvent;
-        var1 = function arg0() {
-            _fun68456: for (var _fun68456_ip = 0;;) switch (_fun68456_ip) {
-                case 0:
-                    var3 = arg0;
-                    var1 = _closure2_slot0;
-                    var2 = var1.onFocusedInputLayoutChanged;
-                    var1 = var2;
-                    if (!var1) {
-                        _fun68456_ip = 43;
-                        continue _fun68456
-                    }
-                case 22:
-                    var6 = var3.eventName;
-                    var5 = var6.endsWith;
-                    var4 = 'onFocusedInputLayoutChanged';
-                    var1 = var5.bind(var6)(var4);
-                case 43:
-                    if (!var1) {
-                        _fun68456_ip = 58;
-                        continue _fun68456
-                    }
-                case 46:
-                    var1 = _closure2_slot1;
-                    var0 = undefined;
-                    var0 = var2.bind(var0)(var3, var1);
-                case 58:
-                    var0 = undefined;
-                    return var0;
-            }
-        };
-        var5 = {};
-        var5.handlers = var7;
-        var5.context = var6;
-        var1.__closure = var5;
-        var5 = 9976853307145.0;
-        var1.__workletHash = var5;
-        var0 = _closure1_slot3;
-        var1.__initData = var0;
-        var0 = ['onFocusedInputLayoutChanged'];
-        var0 = var2.bind(var3)(var1, var0, var4);
-        return var0;
-    };
-    var1.useFocusedInputLayoutHandler = var0;
+    var4 = require;
+    var2 = exports;
+    var5 = dependencyMap;
+    var0 = 0;
+    var3 = var5[var0];
     var0 = undefined;
+    var3 = var4.bind(var0)(var3);
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot0 = var3;
+    var3 = function arg0() {
+        var0 = undefined;
+        return var0;
+    };
+    var2.controlEdgeToEdgeValues = var3;
+    var1 = function() {
+        _fun68461: for (var _fun68461_ip = 0;;) switch (_fun68461_ip) {
+            case 0:
+                var0 = _closure1_slot0;
+                var3 = var0.TurboModuleRegistry;
+                var1 = var3.get;
+                var0 = 'RNEdgeToEdge';
+                var0 = var1.bind(var3)(var0);
+                var1 = null;
+                var0 = var1 != var0;
+                if (var0) {
+                    _fun68461_ip = 108;
+                    continue _fun68461
+                }
+            case 38:
+                var2 = _closure1_slot0;
+                var4 = var2.TurboModuleRegistry;
+                var3 = var4.get;
+                var2 = 'DeviceInfo';
+                var4 = var3.bind(var4)(var2);
+                var5 = var1 == var4;
+                var3 = undefined;
+                if (var5) {
+                    _fun68461_ip = 77;
+                    continue _fun68461
+                }
+            case 71:
+                var3 = var4.getConstants;
+            case 77:
+                var1 = var1 == var3;
+                var2 = undefined;
+                if (var1) {
+                    _fun68461_ip = 102;
+                    continue _fun68461
+                }
+            case 86:
+                var1 = var3.call;
+                var1 = var1.bind(var3)(var4);
+                var2 = var1.isEdgeToEdge;
+            case 102:
+                var1 = true;
+                var0 = var1 === var2;
+            case 108:
+                return var0;
+        }
+    };
+    var2.isEdgeToEdge = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3721]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 27]);

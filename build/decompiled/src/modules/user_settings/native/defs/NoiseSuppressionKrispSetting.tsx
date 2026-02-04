@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var8.VOICE;
     var1.parent = var8;
     var8 = function() {
-        _fun84857: for (var _fun84857_ip = 0;;) switch (_fun84857_ip) {
+        _fun84874: for (var _fun84874_ip = 0;;) switch (_fun84874_ip) {
             case 0:
                 var5 = _closure1_slot0;
                 var6 = _closure1_slot1;
@@ -87,23 +87,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.bind(var4)(var1);
                 var1 = var1.NoiseSuppressionOpt;
                 if (var2) {
-                    _fun84857_ip = 140;
-                    continue _fun84857
+                    _fun84874_ip = 140;
+                    continue _fun84874
                 }
             case 121:
                 if (var0) {
-                    _fun84857_ip = 132;
-                    continue _fun84857
+                    _fun84874_ip = 132;
+                    continue _fun84874
                 }
             case 124:
                 var0 = var1.NONE;
-                _fun84857_ip = 138;
-                continue _fun84857;
+                _fun84874_ip = 138;
+                continue _fun84874;
             case 132:
                 var0 = var1.STANDARD;
             case 138:
-                _fun84857_ip = 146;
-                continue _fun84857;
+                _fun84874_ip = 146;
+                continue _fun84874;
             case 140:
                 var0 = var1.KRISP;
             case 146:
@@ -234,4 +234,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3476, 7005, 566, 10853, 1234, 8996, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3476, 7008, 566, 10856, 1234, 8999, 2]);

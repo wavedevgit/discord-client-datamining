@@ -22,12 +22,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var2 instanceof Object ? var2 : var3;
     var _closure1_slot1 = var2;
     var0 = function() {
-        _fun6411: for (var _fun6411_ip = 0;;) switch (_fun6411_ip) {
+        _fun6413: for (var _fun6413_ip = 0;;) switch (_fun6413_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 if (var1) {
-                    _fun6411_ip = 116;
-                    continue _fun6411
+                    _fun6413_ip = 116;
+                    continue _fun6413
                 }
             case 10:
                 var1 = global;
@@ -36,16 +36,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = typeof var2;
                 var2 = var3 !== var2;
                 if (!var2) {
-                    _fun6411_ip = 44;
-                    continue _fun6411
+                    _fun6413_ip = 44;
+                    continue _fun6413
                 }
             case 32:
                 var3 = var1.crypto;
                 var2 = var3.getRandomValues;
             case 44:
                 if (!var2) {
-                    _fun6411_ip = 75;
-                    continue _fun6411
+                    _fun6413_ip = 75;
+                    continue _fun6413
                 }
             case 47:
                 var3 = var1.crypto;
@@ -56,8 +56,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 75:
                 var _closure1_slot0 = var2;
                 if (var2) {
-                    _fun6411_ip = 116;
-                    continue _fun6411
+                    _fun6413_ip = 116;
+                    continue _fun6413
                 }
             case 82:
                 var3 = var1.Error;

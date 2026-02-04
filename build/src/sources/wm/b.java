@@ -7,29 +7,29 @@ import wm.r;
 final class b extends r {
 
     /* renamed from: c  reason: collision with root package name */
-    private final o f52518c;
+    private final o f52515c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f52519d;
+    private final String f52516d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Object f52520e;
+    private final Object f52517e;
 
     public b(o worker, String renderKey, Object obj) {
         Intrinsics.checkNotNullParameter(worker, "worker");
         Intrinsics.checkNotNullParameter(renderKey, "renderKey");
-        this.f52518c = worker;
-        this.f52519d = renderKey;
-        this.f52520e = obj;
+        this.f52515c = worker;
+        this.f52516d = renderKey;
+        this.f52517e = obj;
     }
 
     @Override // wm.r
     public void a(r.c cVar) {
         Intrinsics.checkNotNullParameter(cVar, "<this>");
-        cVar.d(this.f52520e);
+        cVar.d(this.f52517e);
     }
 
     public String toString() {
-        return ((Object) Reflection.getOrCreateKotlinClass(b.class).getQualifiedName()) + "(worker=" + this.f52518c + ", key=\"" + this.f52519d + "\")";
+        return ((Object) Reflection.getOrCreateKotlinClass(b.class).getQualifiedName()) + "(worker=" + this.f52515c + ", key=\"" + this.f52516d + "\")";
     }
 }

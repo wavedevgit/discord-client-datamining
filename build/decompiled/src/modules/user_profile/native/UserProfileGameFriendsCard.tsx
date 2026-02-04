@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/native/UserProfileGameFriendsCard.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun91987: for (var _fun91987_ip = 0;;) switch (_fun91987_ip) {
+        _fun92004: for (var _fun92004_ip = 0;;) switch (_fun92004_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.applicationIds;
@@ -73,8 +73,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var6.length;
                 var2 = 0;
                 if (!(var2 !== var0)) {
-                    _fun91987_ip = 586;
-                    continue _fun91987
+                    _fun92004_ip = 586;
+                    continue _fun92004
                 }
             case 101:
                 var0 = 'text-md/normal';
@@ -82,15 +82,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var6.length;
                 var1 = 1;
                 if (!(var1 !== var0)) {
-                    _fun91987_ip = 358;
-                    continue _fun91987
+                    _fun92004_ip = 358;
+                    continue _fun92004
                 }
             case 126:
                 var7 = var6.length;
                 var0 = 2;
                 if (!(var0 !== var7)) {
-                    _fun91987_ip = 270;
-                    continue _fun91987
+                    _fun92004_ip = 270;
+                    continue _fun92004
                 }
             case 141:
                 var0 = var6.length;
@@ -161,8 +161,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var0.applicationNameLast = var7;
                 var6 = var2.bind(var6)(var1, var0);
-                _fun91987_ip = 430;
-                continue _fun91987;
+                _fun92004_ip = 430;
+                continue _fun92004;
             case 270:
                 var1 = _closure1_slot0;
                 var10 = _closure1_slot2;
@@ -223,8 +223,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var0.applicationName2 = var10;
                 var6 = var2.bind(var7)(var1, var0);
-                _fun91987_ip = 430;
-                continue _fun91987;
+                _fun92004_ip = 430;
+                continue _fun92004;
             case 358:
                 var1 = _closure1_slot0;
                 var10 = _closure1_slot2;
@@ -307,4 +307,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 6879, 1234, 11801, 7739, 3941, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 6884, 1234, 11804, 7742, 3941, 2]);

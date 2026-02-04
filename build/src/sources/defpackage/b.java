@@ -1,6 +1,6 @@
 package defpackage;
 /* renamed from: b  reason: default package */
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class b implements nu.b {
 
     /* renamed from: a  reason: collision with root package name */

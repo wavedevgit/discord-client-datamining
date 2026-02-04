@@ -23,34 +23,34 @@ import mg.xe;
 public final class n implements l {
 
     /* renamed from: h  reason: collision with root package name */
-    private static final i1 f50674h = i1.h("com.google.android.gms.vision.barcode", "com.google.android.gms.tflite_dynamite");
+    private static final i1 f50671h = i1.h("com.google.android.gms.vision.barcode", "com.google.android.gms.tflite_dynamite");
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f50675a;
+    private boolean f50672a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f50676b;
+    private boolean f50673b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f50677c;
+    private boolean f50674c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Context f50678d;
+    private final Context f50675d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final rj.b f50679e;
+    private final rj.b f50676e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final nk f50680f;
+    private final nk f50677f;
 
     /* renamed from: g  reason: collision with root package name */
-    private cm f50681g;
+    private cm f50678g;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n(Context context, rj.b bVar, nk nkVar) {
-        this.f50678d = context;
-        this.f50679e = bVar;
-        this.f50680f = nkVar;
+        this.f50675d = context;
+        this.f50676e = bVar;
+        this.f50677f = nkVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -63,49 +63,49 @@ public final class n implements l {
 
     @Override // uj.l
     public final boolean a() {
-        if (this.f50681g != null) {
-            return this.f50676b;
+        if (this.f50678g != null) {
+            return this.f50673b;
         }
-        if (b(this.f50678d)) {
-            this.f50676b = true;
+        if (b(this.f50675d)) {
+            this.f50673b = true;
             try {
-                this.f50681g = d(DynamiteModule.f13468c, "com.google.mlkit.dynamite.barcode", "com.google.mlkit.vision.barcode.bundled.internal.ThickBarcodeScannerCreator");
+                this.f50678g = d(DynamiteModule.f13468c, "com.google.mlkit.dynamite.barcode", "com.google.mlkit.vision.barcode.bundled.internal.ThickBarcodeScannerCreator");
             } catch (RemoteException e10) {
                 throw new lj.a("Failed to create thick barcode scanner.", 13, e10);
             } catch (DynamiteModule.a e11) {
                 throw new lj.a("Failed to load the bundled barcode module.", 13, e11);
             }
         } else {
-            this.f50676b = false;
-            if (!pj.l.a(this.f50678d, f50674h)) {
-                if (!this.f50677c) {
-                    pj.l.d(this.f50678d, i1.h("barcode", "tflite_dynamite"));
-                    this.f50677c = true;
+            this.f50673b = false;
+            if (!pj.l.a(this.f50675d, f50671h)) {
+                if (!this.f50674c) {
+                    pj.l.d(this.f50675d, i1.h("barcode", "tflite_dynamite"));
+                    this.f50674c = true;
                 }
-                b.e(this.f50680f, xe.OPTIONAL_MODULE_NOT_AVAILABLE);
+                b.e(this.f50677f, xe.OPTIONAL_MODULE_NOT_AVAILABLE);
                 throw new lj.a("Waiting for the barcode module to be downloaded. Please wait.", 14);
             }
             try {
-                this.f50681g = d(DynamiteModule.f13467b, "com.google.android.gms.vision.barcode", "com.google.android.gms.vision.barcode.mlkit.BarcodeScannerCreator");
+                this.f50678g = d(DynamiteModule.f13467b, "com.google.android.gms.vision.barcode", "com.google.android.gms.vision.barcode.mlkit.BarcodeScannerCreator");
             } catch (RemoteException | DynamiteModule.a e12) {
-                b.e(this.f50680f, xe.OPTIONAL_MODULE_INIT_ERROR);
+                b.e(this.f50677f, xe.OPTIONAL_MODULE_INIT_ERROR);
                 throw new lj.a("Failed to create thin barcode scanner.", 13, e12);
             }
         }
-        b.e(this.f50680f, xe.NO_ERROR);
-        return this.f50676b;
+        b.e(this.f50677f, xe.NO_ERROR);
+        return this.f50673b;
     }
 
     @Override // uj.l
     public final List c(vj.a aVar) {
-        if (this.f50681g == null) {
+        if (this.f50678g == null) {
             a();
         }
-        cm cmVar = (cm) q.l(this.f50681g);
-        if (!this.f50675a) {
+        cm cmVar = (cm) q.l(this.f50678g);
+        if (!this.f50672a) {
             try {
                 cmVar.T0();
-                this.f50675a = true;
+                this.f50672a = true;
             } catch (RemoteException e10) {
                 throw new lj.a("Failed to init barcode scanner.", 13, e10);
             }
@@ -128,12 +128,12 @@ public final class n implements l {
 
     final cm d(DynamiteModule.b bVar, String str, String str2) {
         boolean z10;
-        fm e10 = em.e(DynamiteModule.d(this.f50678d, bVar, str).c(str2));
-        rj.b bVar2 = this.f50679e;
-        sf.a S0 = sf.b.S0(this.f50678d);
+        fm e10 = em.e(DynamiteModule.d(this.f50675d, bVar, str).c(str2));
+        rj.b bVar2 = this.f50676e;
+        sf.a S0 = sf.b.S0(this.f50675d);
         int a10 = bVar2.a();
         if (!bVar2.d()) {
-            this.f50679e.b();
+            this.f50676e.b();
             z10 = false;
         } else {
             z10 = true;
@@ -143,15 +143,15 @@ public final class n implements l {
 
     @Override // uj.l
     public final void zzb() {
-        cm cmVar = this.f50681g;
+        cm cmVar = this.f50678g;
         if (cmVar != null) {
             try {
                 cmVar.U0();
             } catch (RemoteException e10) {
                 Log.e("DecoupledBarcodeScanner", "Failed to release barcode scanner.", e10);
             }
-            this.f50681g = null;
-            this.f50675a = false;
+            this.f50678g = null;
+            this.f50672a = false;
         }
     }
 }

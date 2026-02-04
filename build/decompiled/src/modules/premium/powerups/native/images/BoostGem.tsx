@@ -35,22 +35,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/powerups/native/images/BoostGem.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun102414: for (var _fun102414_ip = 0;;) switch (_fun102414_ip) {
+        _fun102427: for (var _fun102427_ip = 0;;) switch (_fun102427_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun102414_ip = 17;
-                    continue _fun102414
+                    _fun102427_ip = 17;
+                    continue _fun102427
                 }
             case 14:
                 var9 = 39;
             case 17:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun102414_ip = 29;
-                    continue _fun102414
+                    _fun102427_ip = 29;
+                    continue _fun102427
                 }
             case 26:
                 var7 = 66;

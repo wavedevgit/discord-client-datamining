@@ -7,46 +7,46 @@ import kotlin.jvm.internal.Intrinsics;
 public final class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final okhttp3.a f52774a;
+    private final okhttp3.a f52771a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Proxy f52775b;
+    private final Proxy f52772b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final InetSocketAddress f52776c;
+    private final InetSocketAddress f52773c;
 
     public k(okhttp3.a address, Proxy proxy, InetSocketAddress socketAddress) {
         Intrinsics.checkNotNullParameter(address, "address");
         Intrinsics.checkNotNullParameter(proxy, "proxy");
         Intrinsics.checkNotNullParameter(socketAddress, "socketAddress");
-        this.f52774a = address;
-        this.f52775b = proxy;
-        this.f52776c = socketAddress;
+        this.f52771a = address;
+        this.f52772b = proxy;
+        this.f52773c = socketAddress;
     }
 
     public final okhttp3.a a() {
-        return this.f52774a;
+        return this.f52771a;
     }
 
     public final Proxy b() {
-        return this.f52775b;
+        return this.f52772b;
     }
 
     public final boolean c() {
-        if (this.f52774a.k() != null && this.f52775b.type() == Proxy.Type.HTTP) {
+        if (this.f52771a.k() != null && this.f52772b.type() == Proxy.Type.HTTP) {
             return true;
         }
         return false;
     }
 
     public final InetSocketAddress d() {
-        return this.f52776c;
+        return this.f52773c;
     }
 
     public boolean equals(Object obj) {
         if (obj instanceof k) {
             k kVar = (k) obj;
-            if (Intrinsics.areEqual(kVar.f52774a, this.f52774a) && Intrinsics.areEqual(kVar.f52775b, this.f52775b) && Intrinsics.areEqual(kVar.f52776c, this.f52776c)) {
+            if (Intrinsics.areEqual(kVar.f52771a, this.f52771a) && Intrinsics.areEqual(kVar.f52772b, this.f52772b) && Intrinsics.areEqual(kVar.f52773c, this.f52773c)) {
                 return true;
             }
             return false;
@@ -55,10 +55,10 @@ public final class k {
     }
 
     public int hashCode() {
-        return ((((527 + this.f52774a.hashCode()) * 31) + this.f52775b.hashCode()) * 31) + this.f52776c.hashCode();
+        return ((((527 + this.f52771a.hashCode()) * 31) + this.f52772b.hashCode()) * 31) + this.f52773c.hashCode();
     }
 
     public String toString() {
-        return "Route{" + this.f52776c + '}';
+        return "Route{" + this.f52773c + '}';
     }
 }

@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activate_device/ActivateDeviceUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun96303: for (var _fun96303_ip = 0;;) switch (_fun96303_ip) {
+        _fun96319: for (var _fun96319_ip = 0;;) switch (_fun96319_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot0;
@@ -39,8 +39,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.ConsoleOAuthApplications;
                 var0 = var0.PLAYSTATION_APPLICATION_ID;
                 if (!(var3 !== var0)) {
-                    _fun96303_ip = 91;
-                    continue _fun96303
+                    _fun96319_ip = 91;
+                    continue _fun96319
                 }
             case 44:
                 var2 = _closure1_slot0;
@@ -51,14 +51,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.PLAYSTATION_STAGING_APPLICATION_ID;
                 var0 = null;
                 if (!(var3 === var2)) {
-                    _fun96303_ip = 101;
-                    continue _fun96303
+                    _fun96319_ip = 101;
+                    continue _fun96319
                 }
             case 79:
                 var2 = _closure1_slot2;
                 var0 = var2.PLAYSTATION_STAGING;
-                _fun96303_ip = 101;
-                continue _fun96303;
+                _fun96319_ip = 101;
+                continue _fun96319;
             case 91:
                 var1 = _closure1_slot2;
                 var0 = var1.PLAYSTATION;

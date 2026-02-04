@@ -222,7 +222,7 @@ public class j0 {
             iArr4[0] = bVar.f47668a - ((int) (j14 - bVar.f47669b));
         }
         b0.a aVar2 = (b0.a) ne.w0.j(bVar.f47670c);
-        cVar.c(i12, iArr2, iArr4, aVar2.f49901b, cVar.f47484a, aVar2.f49900a, aVar2.f49902c, aVar2.f49903d);
+        cVar.c(i12, iArr2, iArr4, aVar2.f49898b, cVar.f47484a, aVar2.f49897a, aVar2.f49899c, aVar2.f49900d);
         long j15 = bVar.f47669b;
         int i15 = (int) (j14 - j15);
         bVar.f47669b = j15 + i15;

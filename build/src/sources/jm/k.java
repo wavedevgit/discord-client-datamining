@@ -227,10 +227,12 @@ public final class k extends x0.b implements v, n {
         boolean z10;
         boolean z11;
         boolean z12;
+        boolean z13;
         Intrinsics.checkNotNullParameter(v10, "v");
         Intrinsics.checkNotNullParameter(insets, "insets");
+        km.a aVar = km.a.f32427a;
+        km.a.c(aVar, m.a(), "onApplyWindowInsets (eventView callback invoked)", null, 4, null);
         double g10 = g();
-        boolean z13 = false;
         if (this.f31818s && k()) {
             z10 = true;
         } else {
@@ -248,13 +250,15 @@ public final class k extends x0.b implements v, n {
         }
         if (this.f31816q == g10) {
             z13 = true;
+        } else {
+            z13 = false;
         }
         if (!z11 && !this.f31820u) {
-            km.a.c(km.a.f32427a, m.a(), "IME changed without animation – sending synthetic events", null, 4, null);
+            km.a.c(aVar, m.a(), "IME changed without animation – sending synthetic events", null, 4, null);
             p(Double.valueOf(g10), Boolean.valueOf(k()));
         }
         if (z12 && !z13 && !m.b()) {
-            km.a.c(km.a.f32427a, m.a(), "onApplyWindowInsets: " + this.f31816q + " -> " + g10, null, 4, null);
+            km.a.c(aVar, m.a(), "onApplyWindowInsets: " + this.f31816q + " -> " + g10, null, 4, null);
             g gVar = this.A;
             if (gVar != null) {
                 gVar.l();

@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/safety_hub/native/ClassificationEvidence.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun79948: for (var _fun79948_ip = 0;;) switch (_fun79948_ip) {
+        _fun79965: for (var _fun79965_ip = 0;;) switch (_fun79965_ip) {
             case 0:
                 var0 = arg0;
                 var10 = var0.flaggedContent;
@@ -97,8 +97,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 0;
                 var0 = null;
                 if (!(var1 !== var2)) {
-                    _fun79948_ip = 251;
-                    continue _fun79948
+                    _fun79965_ip = 251;
+                    continue _fun79965
                 }
             case 38:
                 var3 = _closure1_slot5;
@@ -156,4 +156,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 4886, 671, 3941, 1234, 10162, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 4886, 671, 3941, 1234, 10165, 2]);

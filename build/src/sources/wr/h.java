@@ -6,13 +6,13 @@ import java.io.IOException;
 public class h extends IOException {
 
     /* renamed from: d  reason: collision with root package name */
-    private final File f52663d;
+    private final File f52660d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final File f52664e;
+    private final File f52661e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f52665i;
+    private final String f52662i;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
@@ -26,9 +26,9 @@ public class h extends IOException {
             kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r2, r0)
             java.lang.String r0 = wr.d.a(r2, r3, r4)
             r1.<init>(r0)
-            r1.f52663d = r2
-            r1.f52664e = r3
-            r1.f52665i = r4
+            r1.f52660d = r2
+            r1.f52661e = r3
+            r1.f52662i = r4
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: wr.h.<init>(java.io.File, java.io.File, java.lang.String):void");

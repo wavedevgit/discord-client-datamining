@@ -37,13 +37,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = undefined;
         var0 = function*() { // Environment: var0
             var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun53731: for (var _fun53731_ip = 0;;) switch (_fun53731_ip) {
+                _fun53734: for (var _fun53734_ip = 0;;) switch (_fun53734_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun53731_ip = 107;
-                            continue _fun53731
+                            _fun53734_ip = 107;
+                            continue _fun53734
                         }
                     case 7:
                         var6 = _closure1_slot3;
@@ -55,8 +55,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3.guildId = var7;
                         var3 = var5.bind(var6)(var4, var3);
                         if (!var3) {
-                            _fun53731_ip = 99;
-                            continue _fun53731
+                            _fun53734_ip = 99;
+                            continue _fun53734
                         }
                     case 52:
                         var4 = _closure1_slot0;
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 93:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun53731_ip = 104;
-                            continue _fun53731
+                            _fun53734_ip = 104;
+                            continue _fun53734
                         }
                     case 99:
                         var2 = undefined;

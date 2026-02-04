@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = _closure2_slot0;
             var1 = var2.filter;
             var0 = function(arg0) { // Environment: var0
-                _fun102919: for (var _fun102919_ip = 0;;) switch (_fun102919_ip) {
+                _fun102932: for (var _fun102932_ip = 0;;) switch (_fun102932_ip) {
                     case 0:
                         var2 = arg0;
                         var3 = var2.type;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = var0.INCOMING_FRIEND_REQUESTS;
                         var0 = var3 === var0;
                         if (var0) {
-                            _fun102919_ip = 90;
-                            continue _fun102919
+                            _fun102932_ip = 90;
+                            continue _fun102932
                         }
                     case 52:
                         var6 = var2.type;
@@ -85,8 +85,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = var6 === var3;
                     case 90:
                         if (var0) {
-                            _fun102919_ip = 131;
-                            continue _fun102919
+                            _fun102932_ip = 131;
+                            continue _fun102932
                         }
                     case 93:
                         var2 = var2.type;

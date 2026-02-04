@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/hooks/useBadges.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun57139: for (var _fun57139_ip = 0;;) switch (_fun57139_ip) {
+        _fun57181: for (var _fun57181_ip = 0;;) switch (_fun57181_ip) {
             case 0:
                 var4 = arg0;
                 var2 = arg1;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var6.useSetting;
                 var3 = var3.bind(var6)();
                 if (!(var5 !== var2)) {
-                    _fun57139_ip = 56;
-                    continue _fun57139
+                    _fun57181_ip = 56;
+                    continue _fun57181
                 }
             case 53:
                 var3 = var2;
@@ -81,31 +81,31 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var7.bind(var8)(var2, var0);
                 var0 = null;
                 if (!(var0 != var4)) {
-                    _fun57139_ip = 245;
-                    continue _fun57139
+                    _fun57181_ip = 245;
+                    continue _fun57181
                 }
             case 147:
                 var7 = var0 == var4;
                 var5 = undefined;
                 if (var7) {
-                    _fun57139_ip = 166;
-                    continue _fun57139
+                    _fun57181_ip = 166;
+                    continue _fun57181
                 }
             case 156:
                 var7 = var4.getBadges;
                 var5 = var7.bind(var4)();
             case 166:
                 if (!(var0 == var5)) {
-                    _fun57139_ip = 174;
-                    continue _fun57139
+                    _fun57181_ip = 174;
+                    continue _fun57181
                 }
             case 170:
                 var5 = new Array(0);
             case 174:
                 var0 = var0 != var6;
                 if (!var0) {
-                    _fun57139_ip = 195;
-                    continue _fun57139
+                    _fun57181_ip = 195;
+                    continue _fun57181
                 }
             case 181:
                 var6 = var6.id;
@@ -113,16 +113,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var6 === var4;
             case 195:
                 if (!var0) {
-                    _fun57139_ip = 201;
-                    continue _fun57139
+                    _fun57181_ip = 201;
+                    continue _fun57181
                 }
             case 198:
                 var0 = var3;
             case 201:
                 var3 = var5;
                 if (!var0) {
-                    _fun57139_ip = 222;
-                    continue _fun57139
+                    _fun57181_ip = 222;
+                    continue _fun57181
                 }
             case 207:
                 var4 = var5.filter;
@@ -137,13 +137,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 222:
                 var0 = var3;
                 if (!var2) {
-                    _fun57139_ip = 243;
-                    continue _fun57139
+                    _fun57181_ip = 243;
+                    continue _fun57181
                 }
             case 228:
                 var2 = var3.map;
                 var1 = function(arg0) { // Environment: var1
-                    _fun57143: for (var _fun57143_ip = 0;;) switch (_fun57143_ip) {
+                    _fun57185: for (var _fun57185_ip = 0;;) switch (_fun57185_ip) {
                         case 0:
                             var1 = arg0;
                             var0 = {};
@@ -153,13 +153,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var1.id;
                             var2 = 'legacy_username';
                             if (!(var3 !== var2)) {
-                                _fun57143_ip = 35;
-                                continue _fun57143
+                                _fun57185_ip = 35;
+                                continue _fun57185
                             }
                         case 28:
                             var2 = var1.description;
-                            _fun57143_ip = 97;
-                            continue _fun57143;
+                            _fun57185_ip = 97;
+                            continue _fun57185;
                         case 35:
                             var6 = _closure1_slot0;
                             var7 = _closure1_slot1;

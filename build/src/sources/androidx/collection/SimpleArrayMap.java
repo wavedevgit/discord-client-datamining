@@ -110,8 +110,8 @@ public class SimpleArrayMap {
 
     public void clear() {
         if (this.f2191i > 0) {
-            this.f2189d = a.f51050a;
-            this.f2190e = a.f51052c;
+            this.f2189d = a.f51047a;
+            this.f2190e = a.f51049c;
             this.f2191i = 0;
         }
         if (this.f2191i <= 0) {
@@ -478,13 +478,13 @@ public class SimpleArrayMap {
         int[] iArr;
         Object[] objArr;
         if (i10 == 0) {
-            iArr = a.f51050a;
+            iArr = a.f51047a;
         } else {
             iArr = new int[i10];
         }
         this.f2189d = iArr;
         if (i10 == 0) {
-            objArr = a.f51052c;
+            objArr = a.f51049c;
         } else {
             objArr = new Object[i10 << 1];
         }

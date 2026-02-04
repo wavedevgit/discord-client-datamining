@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
     var1 = function arg0, arg1, arg2() {
-        _fun45761: for (var _fun45761_ip = 0;;) switch (_fun45761_ip) {
+        _fun45764: for (var _fun45764_ip = 0;;) switch (_fun45764_ip) {
             case 0:
                 var7 = arg0;
                 var2 = arg2;
@@ -19,8 +19,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var5.bind(var4)(var1);
                 var1 = var1.bind(var4)();
                 if (var1) {
-                    _fun45761_ip = 138;
-                    continue _fun45761
+                    _fun45764_ip = 140;
+                    continue _fun45764
                 }
             case 39:
                 var6 = [null];
@@ -41,10 +41,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = new var11[var1](var10);
                 var1 = var1 instanceof Object ? var1 : var5;
                 if (!var2) {
-                    _fun45761_ip = 136;
-                    continue _fun45761
+                    _fun45764_ip = 138;
+                    continue _fun45764
                 }
-            case 105:
+            case 107:
                 var5 = _closure1_slot0;
                 var6 = _closure1_slot1;
                 var3 = 1;
@@ -52,9 +52,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var5.bind(var4)(var3);
                 var2 = var2.prototype;
                 var2 = var3.bind(var4)(var1, var2);
-            case 136:
-                return var1;
             case 138:
+                return var1;
+            case 140:
                 var1 = global;
                 var1 = var1.Reflect;
                 var3 = var1.construct;

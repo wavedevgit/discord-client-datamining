@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.restoreFailedUpload = var6;
     var6 = function arg0, arg1() {
-        _fun78842: for (var _fun78842_ip = 0;;) switch (_fun78842_ip) {
+        _fun78859: for (var _fun78859_ip = 0;;) switch (_fun78859_ip) {
             case 0:
                 var1 = arg1;
                 var5 = _closure1_slot0;
@@ -72,8 +72,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var2.bind(var5)(var1);
                 var1 = null;
                 if (!(var1 != var5)) {
-                    _fun78842_ip = 198;
-                    continue _fun78842
+                    _fun78859_ip = 198;
+                    continue _fun78859
                 }
             case 86:
                 var7 = _closure1_slot2;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var6.bind(var7)(var2, var1);
                 var1 = '';
                 if (!(var1 === var2)) {
-                    _fun78842_ip = 198;
-                    continue _fun78842
+                    _fun78859_ip = 198;
+                    continue _fun78859
                 }
             case 125:
                 var2 = _closure1_slot0;

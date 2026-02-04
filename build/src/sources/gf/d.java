@@ -57,7 +57,7 @@ public final class d {
         private String f26091d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final tg.a f26092e = tg.a.f50024u;
+        private final tg.a f26092e = tg.a.f50021u;
 
         public d a() {
             return new d(this.f26088a, this.f26089b, null, 0, null, this.f26090c, this.f26091d, this.f26092e, false);
@@ -102,7 +102,7 @@ public final class d {
         this.f26082e = i10;
         this.f26084g = str;
         this.f26085h = str2;
-        this.f26086i = aVar == null ? tg.a.f50024u : aVar;
+        this.f26086i = aVar == null ? tg.a.f50021u : aVar;
         HashSet hashSet = new HashSet(unmodifiableSet);
         Iterator it = map.values().iterator();
         if (!it.hasNext()) {

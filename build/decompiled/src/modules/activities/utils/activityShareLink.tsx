@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/activityShareLink.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1, arg2() {
-        _fun98117: for (var _fun98117_ip = 0;;) switch (_fun98117_ip) {
+        _fun98133: for (var _fun98133_ip = 0;;) switch (_fun98133_ip) {
             case 0:
                 var5 = arg0;
                 var1 = false;
@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var6)(var2);
                 var3 = var2.URL_REGEX;
                 var2 = function(arg0) { // Environment: var0
-                    _fun98118: for (var _fun98118_ip = 0;;) switch (_fun98118_ip) {
+                    _fun98134: for (var _fun98134_ip = 0;;) switch (_fun98134_ip) {
                         case 0:
                             var3 = arg0;
                             var _closure3_slot0 = var3;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             };
                             var1 = var1.bind(var2)(var0);
                             if (!var1) {
-                                _fun98118_ip = 46;
-                                continue _fun98118
+                                _fun98134_ip = 46;
+                                continue _fun98134
                             }
                         case 37:
                             var0 = true;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 46:
                             var0 = var3;
                             if (var1) {
-                                _fun98118_ip = 75;
-                                continue _fun98118
+                                _fun98134_ip = 75;
+                                continue _fun98134
                             }
                         case 52:
                             var1 = global;
@@ -88,8 +88,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure2_slot0;
                 var0 = var5;
                 if (var2) {
-                    _fun98117_ip = 183;
-                    continue _fun98117
+                    _fun98133_ip = 183;
+                    continue _fun98133
                 }
             case 71:
                 var2 = _closure1_slot0;

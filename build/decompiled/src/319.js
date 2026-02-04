@@ -141,58 +141,58 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var8 = var5[var1];
                         var9 = var2.bind(var3)(var8);
                         var8 = var7.defaultSource;
-                        var12 = var9.bind(var3)(var8);
+                        var11 = var9.bind(var3)(var8);
                         var1 = var5[var1];
                         var2 = var2.bind(var3)(var1);
                         var1 = var7.loadingIndicatorSource;
-                        var11 = var2.bind(var3)(var1);
-                        var1 = var7.children;
+                        var1 = var2.bind(var3)(var1);
+                        var5 = var7.children;
                         var2 = null;
-                        if (!(var2 == var1)) {
-                            _fun4861_ip = 1048;
+                        if (!(var2 == var5)) {
+                            _fun4861_ip = 1038;
                             continue _fun4861
                         }
                     case 145:
-                        var1 = var7.defaultSource;
-                        if (!(var2 != var1)) {
+                        var5 = var7.defaultSource;
+                        if (!(var2 != var5)) {
                             _fun4861_ip = 168;
                             continue _fun4861
                         }
                     case 155:
-                        var1 = var7.loadingIndicatorSource;
-                        if (!(var2 == var1)) {
-                            _fun4861_ip = 1012;
+                        var5 = var7.loadingIndicatorSource;
+                        if (!(var2 == var5)) {
+                            _fun4861_ip = 1002;
                             continue _fun4861
                         }
                     case 168:
                         var8 = global;
-                        var5 = var8.Array;
-                        var1 = var5.isArray;
-                        var1 = var1.bind(var5)(var14);
-                        if (var1) {
+                        var9 = var8.Array;
+                        var5 = var9.isArray;
+                        var5 = var5.bind(var9)(var14);
+                        if (var5) {
                             _fun4861_ip = 314;
                             continue _fun4861
                         }
                     case 192:
-                        var5 = var14.uri;
-                        var1 = '';
-                        if (!(var1 === var5)) {
+                        var9 = var14.uri;
+                        var5 = '';
+                        if (!(var5 === var9)) {
                             _fun4861_ip = 227;
                             continue _fun4861
                         }
                     case 205:
-                        var9 = var8.console;
-                        var5 = var9.warn;
-                        var1 = 'source.uri should not be an empty string';
-                        var1 = var5.bind(var9)(var1);
+                        var10 = var8.console;
+                        var9 = var10.warn;
+                        var5 = 'source.uri should not be an empty string';
+                        var5 = var9.bind(var10)(var5);
                     case 227:
-                        var9 = var14.width;
-                        if (!(var2 == var9)) {
+                        var10 = var14.width;
+                        if (!(var2 == var10)) {
                             _fun4861_ip = 241;
                             continue _fun4861
                         }
                     case 236:
-                        var9 = var7.width;
+                        var10 = var7.width;
                     case 241:
                         var5 = var14.height;
                         if (!(var2 == var5)) {
@@ -202,20 +202,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 250:
                         var5 = var7.height;
                     case 255:
-                        var1 = {};
-                        var1.width = var9;
-                        var1.height = var5;
+                        var9 = {};
+                        var9.width = var10;
+                        var9.height = var5;
                         var5 = new Array(3);
-                        var5[0] = var1;
-                        var1 = _closure1_slot8;
-                        var1 = var1.base;
-                        var5[1] = var1;
-                        var1 = var7.style;
-                        var5[2] = var1;
+                        var5[0] = var9;
+                        var9 = _closure1_slot8;
+                        var9 = var9.base;
+                        var5[1] = var9;
+                        var9 = var7.style;
+                        var5[2] = var9;
                         var _closure2_slot0 = var5;
-                        var1 = new Array(1);
-                        var1[0] = var14;
-                        var _closure2_slot1 = var1;
+                        var12 = new Array(1);
+                        var12[0] = var14;
+                        var _closure2_slot1 = var12;
                         _fun4861_ip = 355;
                         continue _fun4861;
                     case 314:
@@ -228,7 +228,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         _closure2_slot0 = var9;
                         _closure2_slot1 = var14;
                         var5 = var9;
-                        var1 = var14;
+                        var12 = var14;
                     case 355:
                         var13 = var7.onLoadStart;
                         var17 = var7.onLoad;
@@ -262,10 +262,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var13 = !var13;
                         var13 = !var13;
                         var8.shouldNotifyLoadEvents = var13;
-                        var8.src = var1;
-                        var8.source = var1;
+                        var8.src = var12;
+                        var8.source = var12;
                         var13 = var2 == var14;
-                        var1 = undefined;
+                        var12 = undefined;
                         if (var13) {
                             _fun4861_ip = 464;
                             continue _fun4861
@@ -274,15 +274,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var13 = 0;
                         var13 = var14[var13];
                         var15 = var2 == var13;
-                        var1 = undefined;
+                        var12 = undefined;
                         if (var15) {
                             _fun4861_ip = 464;
                             continue _fun4861
                         }
                     case 458:
-                        var1 = var13.headers;
+                        var12 = var13.headers;
                     case 464:
-                        if (var1) {
+                        if (var12) {
                             _fun4861_ip = 485;
                             continue _fun4861
                         }
@@ -296,174 +296,172 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 476:
                         var13 = var14.headers;
                     case 482:
-                        var1 = var13;
+                        var12 = var13;
                     case 485:
-                        var8.headers = var1;
-                        var1 = null;
-                        if (!var12) {
-                            _fun4861_ip = 500;
+                        var8.headers = var12;
+                        if (var11) {
+                            _fun4861_ip = 495;
                             continue _fun4861
                         }
+                    case 493:
+                        var11 = null;
                     case 495:
-                        var1 = var12.uri;
-                    case 500:
-                        var8.defaultSource = var1;
-                        var1 = null;
-                        if (!var11) {
-                            _fun4861_ip = 515;
+                        var8.defaultSource = var11;
+                        if (var1) {
+                            _fun4861_ip = 505;
                             continue _fun4861
                         }
-                    case 510:
-                        var1 = var11.uri;
-                    case 515:
+                    case 503:
+                        var1 = null;
+                    case 505:
                         var8.loadingIndicatorSrc = var1;
                         var1 = var7["aria-label"];
+                        if (!(var2 == var1)) {
+                            _fun4861_ip = 525;
+                            continue _fun4861
+                        }
+                    case 520:
+                        var1 = var7.accessibilityLabel;
+                    case 525:
                         if (!(var2 == var1)) {
                             _fun4861_ip = 535;
                             continue _fun4861
                         }
-                    case 530:
-                        var1 = var7.accessibilityLabel;
-                    case 535:
-                        if (!(var2 == var1)) {
-                            _fun4861_ip = 545;
-                            continue _fun4861
-                        }
-                    case 539:
+                    case 529:
                         var1 = var7.alt;
-                    case 545:
+                    case 535:
                         var8.accessibilityLabel = var1;
                         var11 = var2 == var7;
                         var1 = undefined;
                         if (var11) {
-                            _fun4861_ip = 564;
+                            _fun4861_ip = 554;
+                            continue _fun4861
+                        }
+                    case 548:
+                        var1 = var7["aria-labelledby"];
+                    case 554:
+                        if (!(var2 == var1)) {
+                            _fun4861_ip = 576;
                             continue _fun4861
                         }
                     case 558:
-                        var1 = var7["aria-labelledby"];
-                    case 564:
-                        if (!(var2 == var1)) {
-                            _fun4861_ip = 586;
-                            continue _fun4861
-                        }
-                    case 568:
                         var12 = var2 == var7;
                         var11 = undefined;
                         if (var12) {
-                            _fun4861_ip = 583;
+                            _fun4861_ip = 573;
                             continue _fun4861
                         }
-                    case 577:
+                    case 567:
                         var11 = var7.accessibilityLabelledBy;
-                    case 583:
+                    case 573:
                         var1 = var11;
-                    case 586:
+                    case 576:
                         var8.accessibilityLabelledBy = var1;
                         var1 = var7.alt;
                         var1 = var3 !== var1;
                         if (var1) {
-                            _fun4861_ip = 609;
+                            _fun4861_ip = 599;
                             continue _fun4861
                         }
-                    case 604:
+                    case 594:
                         var1 = var7.accessible;
-                    case 609:
+                    case 599:
                         var8.accessible = var1;
                         var1 = {};
                         var11 = var7["aria-busy"];
                         if (!(var2 == var11)) {
-                            _fun4861_ip = 649;
+                            _fun4861_ip = 639;
                             continue _fun4861
                         }
-                    case 625:
+                    case 615:
                         var13 = var7.accessibilityState;
                         var14 = var2 == var13;
                         var12 = undefined;
                         if (var14) {
-                            _fun4861_ip = 646;
+                            _fun4861_ip = 636;
                             continue _fun4861
                         }
-                    case 640:
+                    case 630:
                         var12 = var13.busy;
-                    case 646:
+                    case 636:
                         var11 = var12;
-                    case 649:
+                    case 639:
                         var1.busy = var11;
                         var11 = var7["aria-checked"];
                         if (!(var2 == var11)) {
-                            _fun4861_ip = 688;
+                            _fun4861_ip = 678;
                             continue _fun4861
                         }
-                    case 664:
+                    case 654:
                         var13 = var7.accessibilityState;
                         var14 = var2 == var13;
                         var12 = undefined;
                         if (var14) {
-                            _fun4861_ip = 685;
+                            _fun4861_ip = 675;
                             continue _fun4861
                         }
-                    case 679:
+                    case 669:
                         var12 = var13.checked;
-                    case 685:
+                    case 675:
                         var11 = var12;
-                    case 688:
+                    case 678:
                         var1.checked = var11;
                         var11 = var7["aria-disabled"];
                         if (!(var2 == var11)) {
-                            _fun4861_ip = 726;
+                            _fun4861_ip = 716;
                             continue _fun4861
                         }
-                    case 703:
+                    case 693:
                         var13 = var7.accessibilityState;
                         var14 = var2 == var13;
                         var12 = undefined;
                         if (var14) {
-                            _fun4861_ip = 723;
+                            _fun4861_ip = 713;
                             continue _fun4861
                         }
-                    case 718:
+                    case 708:
                         var12 = var13.disabled;
-                    case 723:
+                    case 713:
                         var11 = var12;
-                    case 726:
+                    case 716:
                         var1.disabled = var11;
                         var11 = var7["aria-expanded"];
                         if (!(var2 == var11)) {
-                            _fun4861_ip = 764;
+                            _fun4861_ip = 754;
                             continue _fun4861
                         }
-                    case 740:
+                    case 730:
                         var13 = var7.accessibilityState;
                         var14 = var2 == var13;
                         var12 = undefined;
                         if (var14) {
-                            _fun4861_ip = 761;
+                            _fun4861_ip = 751;
                             continue _fun4861
                         }
-                    case 755:
+                    case 745:
                         var12 = var13.expanded;
-                    case 761:
+                    case 751:
                         var11 = var12;
-                    case 764:
+                    case 754:
                         var1.expanded = var11;
                         var11 = var7["aria-selected"];
                         if (!(var2 == var11)) {
-                            _fun4861_ip = 803;
+                            _fun4861_ip = 793;
                             continue _fun4861
                         }
-                    case 779:
+                    case 769:
                         var13 = var7.accessibilityState;
                         var14 = var2 == var13;
                         var12 = undefined;
                         if (var14) {
-                            _fun4861_ip = 800;
+                            _fun4861_ip = 790;
                             continue _fun4861
                         }
-                    case 794:
+                    case 784:
                         var12 = var13.selected;
-                    case 800:
+                    case 790:
                         var11 = var12;
-                    case 803:
+                    case 793:
                         var1.selected = var11;
                         var8.accessibilityState = var1;
                         var1 = {};
@@ -483,43 +481,43 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var10 = var2 == var5;
                         var1 = undefined;
                         if (var10) {
-                            _fun4861_ip = 888;
+                            _fun4861_ip = 878;
                             continue _fun4861
                         }
-                    case 882:
+                    case 872:
                         var1 = var5.objectFit;
-                    case 888:
+                    case 878:
                         var1 = var8.bind(var9)(var1);
                         if (var1) {
-                            _fun4861_ip = 901;
+                            _fun4861_ip = 891;
                             continue _fun4861
                         }
-                    case 896:
+                    case 886:
                         var1 = var7.resizeMode;
-                    case 901:
+                    case 891:
                         if (var1) {
-                            _fun4861_ip = 921;
+                            _fun4861_ip = 911;
                             continue _fun4861
                         }
-                    case 904:
+                    case 894:
                         var7 = var2 == var5;
                         var2 = undefined;
                         if (var7) {
+                            _fun4861_ip = 908;
+                            continue _fun4861
+                        }
+                    case 903:
+                        var2 = var5.resizeMode;
+                    case 908:
+                        var1 = var2;
+                    case 911:
+                        if (var1) {
                             _fun4861_ip = 918;
                             continue _fun4861
                         }
-                    case 913:
-                        var2 = var5.resizeMode;
-                    case 918:
-                        var1 = var2;
-                    case 921:
-                        if (var1) {
-                            _fun4861_ip = 928;
-                            continue _fun4861
-                        }
-                    case 924:
+                    case 914:
                         var1 = 'cover';
-                    case 928:
+                    case 918:
                         var _closure2_slot3 = var1;
                         var2 = _closure1_slot0;
                         var5 = _closure1_slot2;
@@ -629,7 +627,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var0.children = var4;
                         var0 = var2.bind(var3)(var1, var0);
                         return var0;
-                    case 1012:
+                    case 1002:
                         var0 = global;
                         var2 = var0.Error;
                         var0 = var2.prototype;
@@ -643,7 +641,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var0 = new var22[var2](var21, var20);
                         var0 = var0 instanceof Object ? var0 : var1;
                         throw var0;
-                    case 1048:
+                    case 1038:
                         var0 = global;
                         var2 = var0.Error;
                         var0 = var2.prototype;

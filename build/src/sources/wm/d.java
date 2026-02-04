@@ -14,10 +14,10 @@ import wm.t;
 public final class d implements wm.a, h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final wm.a f52524a;
+    private final wm.a f52521a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final t.b f52525b;
+    private final t.b f52522b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static final class a extends Lambda implements Function4 {
@@ -31,7 +31,7 @@ public final class d implements wm.a, h {
             Intrinsics.checkNotNullParameter(iChild, "iChild");
             Intrinsics.checkNotNullParameter(iKey, "iKey");
             Intrinsics.checkNotNullParameter(iHandler, "iHandler");
-            return d.this.f52524a.b(iChild, obj, iKey, iHandler);
+            return d.this.f52521a.b(iChild, obj, iKey, iHandler);
         }
     }
 
@@ -43,26 +43,26 @@ public final class d implements wm.a, h {
         public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f52528d;
+            int f52525d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ Function1 f52529e;
+            final /* synthetic */ Function1 f52526e;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(Function1 function1, Continuation continuation) {
                 super(2, continuation);
-                this.f52529e = function1;
+                this.f52526e = function1;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                return new a(this.f52529e, continuation);
+                return new a(this.f52526e, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 Object f10 = rr.b.f();
-                int i10 = this.f52528d;
+                int i10 = this.f52525d;
                 if (i10 != 0) {
                     if (i10 == 1) {
                         kotlin.c.b(obj);
@@ -71,8 +71,8 @@ public final class d implements wm.a, h {
                     }
                 } else {
                     kotlin.c.b(obj);
-                    Function1 function1 = this.f52529e;
-                    this.f52528d = 1;
+                    Function1 function1 = this.f52526e;
+                    this.f52525d = 1;
                     if (function1.invoke(this) == f10) {
                         return f10;
                     }
@@ -93,7 +93,7 @@ public final class d implements wm.a, h {
         public final void a(String iKey, Function1 iSideEffect) {
             Intrinsics.checkNotNullParameter(iKey, "iKey");
             Intrinsics.checkNotNullParameter(iSideEffect, "iSideEffect");
-            d.this.f52524a.a(iKey, new a(iSideEffect, null));
+            d.this.f52521a.a(iKey, new a(iSideEffect, null));
         }
 
         @Override // kotlin.jvm.functions.Function2
@@ -107,30 +107,30 @@ public final class d implements wm.a, h {
     static final class c extends kotlin.coroutines.jvm.internal.k implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f52530d;
+        int f52527d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Function2 f52531e;
+        final /* synthetic */ Function2 f52528e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ d f52532i;
+        final /* synthetic */ d f52529i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         c(Function2 function2, d dVar, Continuation continuation) {
             super(1, continuation);
-            this.f52531e = function2;
-            this.f52532i = dVar;
+            this.f52528e = function2;
+            this.f52529i = dVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Continuation continuation) {
-            return new c(this.f52531e, this.f52532i, continuation);
+            return new c(this.f52528e, this.f52529i, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = rr.b.f();
-            int i10 = this.f52530d;
+            int i10 = this.f52527d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -139,9 +139,9 @@ public final class d implements wm.a, h {
                 }
             } else {
                 kotlin.c.b(obj);
-                Function2 function2 = this.f52531e;
+                Function2 function2 = this.f52528e;
                 CoroutineScope a10 = kotlinx.coroutines.i.a(getContext());
-                this.f52530d = 1;
+                this.f52527d = 1;
                 if (function2.invoke(a10, this) == f10) {
                     return f10;
                 }
@@ -165,7 +165,7 @@ public final class d implements wm.a, h {
 
         public final void a(r interceptedAction) {
             Intrinsics.checkNotNullParameter(interceptedAction, "interceptedAction");
-            d.this.f52524a.c().d(interceptedAction);
+            d.this.f52521a.c().d(interceptedAction);
         }
 
         @Override // kotlin.jvm.functions.Function1
@@ -178,15 +178,15 @@ public final class d implements wm.a, h {
     public d(wm.a baseRenderContext, t.b interceptor) {
         Intrinsics.checkNotNullParameter(baseRenderContext, "baseRenderContext");
         Intrinsics.checkNotNullParameter(interceptor, "interceptor");
-        this.f52524a = baseRenderContext;
-        this.f52525b = interceptor;
+        this.f52521a = baseRenderContext;
+        this.f52522b = interceptor;
     }
 
     @Override // wm.a
     public void a(String key, Function2 sideEffect) {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(sideEffect, "sideEffect");
-        this.f52525b.c(key, new c(sideEffect, this, null), new b());
+        this.f52522b.c(key, new c(sideEffect, this, null), new b());
     }
 
     @Override // wm.a
@@ -194,14 +194,14 @@ public final class d implements wm.a, h {
         Intrinsics.checkNotNullParameter(child, "child");
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(handler, "handler");
-        return this.f52525b.a(child, obj, key, handler, new a());
+        return this.f52522b.a(child, obj, key, handler, new a());
     }
 
     @Override // wm.h
     /* renamed from: f */
     public void d(r value) {
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f52525b.b(value, new C0702d());
+        this.f52522b.b(value, new C0702d());
     }
 
     @Override // wm.a

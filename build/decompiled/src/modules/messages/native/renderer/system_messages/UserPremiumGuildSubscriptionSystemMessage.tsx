@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/UserPremiumGuildSubscriptionSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun55670: for (var _fun55670_ip = 0;;) switch (_fun55670_ip) {
+        _fun55673: for (var _fun55673_ip = 0;;) switch (_fun55673_ip) {
             case 0:
                 var3 = arg0;
                 var11 = var3.message;
@@ -55,8 +55,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var5.bind(var6)(var7, var0, var15);
                 var0 = {};
                 if (!(!(var9 > var4))) {
-                    _fun55670_ip = 312;
-                    continue _fun55670
+                    _fun55673_ip = 312;
+                    continue _fun55673
                 }
             case 138:
                 var5 = _closure1_slot0;
@@ -82,8 +82,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = 'username';
                 var13 = null;
                 if (!(var19 === var15)) {
-                    _fun55670_ip = 236;
-                    continue _fun55670
+                    _fun55673_ip = 236;
+                    continue _fun55673
                 }
             case 233:
                 var13 = var14;
@@ -92,8 +92,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.roleColor = var14;
                 var13 = null;
                 if (!var17) {
-                    _fun55670_ip = 254;
-                    continue _fun55670
+                    _fun55673_ip = 254;
+                    continue _fun55673
                 }
             case 251:
                 var13 = var16;
@@ -102,8 +102,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = 'dot';
                 var13 = var13 === var15;
                 if (!var13) {
-                    _fun55670_ip = 274;
-                    continue _fun55670
+                    _fun55673_ip = 274;
+                    continue _fun55673
                 }
             case 270:
                 var13 = var18 != var14;
@@ -115,8 +115,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.medium = var13;
                 var4.usernameOnClick = var8;
                 var4 = var6.bind(var7)(var5, var4);
-                _fun55670_ip = 488;
-                continue _fun55670;
+                _fun55673_ip = 488;
+                continue _fun55673;
             case 312:
                 var6 = _closure1_slot0;
                 var13 = _closure1_slot2;
@@ -141,8 +141,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = 'username';
                 var12 = null;
                 if (!(var18 === var15)) {
-                    _fun55670_ip = 412;
-                    continue _fun55670
+                    _fun55673_ip = 412;
+                    continue _fun55673
                 }
             case 409:
                 var12 = var14;
@@ -151,8 +151,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10.roleColor = var14;
                 var12 = null;
                 if (!var17) {
-                    _fun55670_ip = 430;
-                    continue _fun55670
+                    _fun55673_ip = 430;
+                    continue _fun55673
                 }
             case 427:
                 var12 = var16;
@@ -161,8 +161,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = 'dot';
                 var12 = var12 === var15;
                 if (!var12) {
-                    _fun55670_ip = 450;
-                    continue _fun55670
+                    _fun55673_ip = 450;
+                    continue _fun55673
                 }
             case 446:
                 var12 = var13 != var14;

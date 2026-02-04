@@ -25,7 +25,7 @@ public final class StaticChannelMentionType {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8265id;
+    private final String f8264id;
     public static final StaticChannelMentionType Home = new StaticChannelMentionType("Home", 0, "home");
     public static final StaticChannelMentionType Guide = new StaticChannelMentionType("Guide", 1, "guide");
     public static final StaticChannelMentionType Customize = new StaticChannelMentionType("Customize", 2, "customize");
@@ -117,7 +117,7 @@ public final class StaticChannelMentionType {
     }
 
     private StaticChannelMentionType(String str, int i10, String str2) {
-        this.f8265id = str2;
+        this.f8264id = str2;
     }
 
     @NotNull
@@ -135,6 +135,6 @@ public final class StaticChannelMentionType {
 
     @NotNull
     public final String getId() {
-        return this.f8265id;
+        return this.f8264id;
     }
 }

@@ -52,26 +52,26 @@ public class o extends g {
         q5.b bVar;
         y5.c cVar = this.f42353e;
         if (cVar != null) {
-            float f11 = aVar.f53748g;
-            Float f12 = aVar.f53749h;
+            float f11 = aVar.f53745g;
+            Float f12 = aVar.f53746h;
             if (f12 == null) {
                 floatValue = Float.MAX_VALUE;
             } else {
                 floatValue = f12.floatValue();
             }
-            Object obj2 = aVar.f53743b;
+            Object obj2 = aVar.f53740b;
             q5.b bVar2 = (q5.b) obj2;
-            Object obj3 = aVar.f53744c;
+            Object obj3 = aVar.f53741c;
             if (obj3 == null) {
                 bVar = (q5.b) obj2;
             } else {
                 bVar = (q5.b) obj3;
             }
             return (q5.b) cVar.b(f11, floatValue, bVar2, bVar, f10, d(), f());
-        } else if (f10 == 1.0f && (obj = aVar.f53744c) != null) {
+        } else if (f10 == 1.0f && (obj = aVar.f53741c) != null) {
             return (q5.b) obj;
         } else {
-            return (q5.b) aVar.f53743b;
+            return (q5.b) aVar.f53740b;
         }
     }
 

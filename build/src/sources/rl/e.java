@@ -9,7 +9,7 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f48869a = new a(null);
+    public static final a f48866a = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -86,10 +86,10 @@ public abstract class e {
     }
 
     public static final Number a(MediaFormat mediaFormat, Number number) {
-        return f48869a.b(mediaFormat, number);
+        return f48866a.b(mediaFormat, number);
     }
 
     public static final Number b(MediaFormat mediaFormat, String str) {
-        return f48869a.c(mediaFormat, str);
+        return f48866a.c(mediaFormat, str);
     }
 }

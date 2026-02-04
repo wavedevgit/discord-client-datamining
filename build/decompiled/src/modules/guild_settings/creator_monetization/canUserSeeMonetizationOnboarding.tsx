@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_settings/creator_monetization/canUserSeeMonetizationOnboarding.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun49983: for (var _fun49983_ip = 0;;) switch (_fun49983_ip) {
+        _fun49986: for (var _fun49986_ip = 0;;) switch (_fun49986_ip) {
             case 0:
                 var3 = arg0;
                 var9 = var3.ownerId;
@@ -39,8 +39,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = undefined;
                 var8 = undefined;
                 if (var2) {
-                    _fun49983_ip = 43;
-                    continue _fun49983
+                    _fun49986_ip = 43;
+                    continue _fun49986
                 }
             case 38:
                 var8 = var1.id;

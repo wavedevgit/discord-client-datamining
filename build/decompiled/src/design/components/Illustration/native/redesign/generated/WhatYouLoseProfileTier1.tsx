@@ -113,4 +113,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.WhatYouLoseProfileTier1 = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 7253, 7254, 7255, 7256, 3206, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 7256, 7257, 7258, 7259, 3206, 2]);

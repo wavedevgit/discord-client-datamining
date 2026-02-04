@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/ThreadIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun44325: for (var _fun44325_ip = 0;;) switch (_fun44325_ip) {
+        _fun44328: for (var _fun44328_ip = 0;;) switch (_fun44328_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun44325_ip = 53;
-                    continue _fun44325
+                    _fun44328_ip = 53;
+                    continue _fun44328
                 }
             case 19:
                 var1 = _closure1_slot1;

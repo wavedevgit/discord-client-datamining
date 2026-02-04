@@ -95,7 +95,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.almostXYears = var4;
     var _closure1_slot2 = var3;
     var2 = function arg0, arg1, arg2() {
-        _fun24147: for (var _fun24147_ip = 0;;) switch (_fun24147_ip) {
+        _fun24149: for (var _fun24149_ip = 0;;) switch (_fun24149_ip) {
             case 0:
                 var7 = arg1;
                 var1 = arg2;
@@ -106,14 +106,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = typeof var2;
                 var3 = var2;
                 if (!(var5 !== var4)) {
-                    _fun24147_ip = 107;
-                    continue _fun24147
+                    _fun24149_ip = 107;
+                    continue _fun24149
                 }
             case 34:
                 var4 = 1;
                 if (!(var4 !== var7)) {
-                    _fun24147_ip = 98;
-                    continue _fun24147
+                    _fun24149_ip = 98;
+                    continue _fun24149
                 }
             case 41:
                 var6 = var2.other;
@@ -128,8 +128,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var0.bind(var4)(var7);
                 var0 = '{{count}}';
                 var0 = var5.bind(var6)(var0, var4);
-                _fun24147_ip = 104;
-                continue _fun24147;
+                _fun24149_ip = 104;
+                continue _fun24149;
             case 98:
                 var0 = var2.one;
             case 104:
@@ -138,34 +138,34 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = null;
                 var0 = var3;
                 if (!(var2 != var1)) {
-                    _fun24147_ip = 174;
-                    continue _fun24147
+                    _fun24149_ip = 174;
+                    continue _fun24149
                 }
             case 116:
                 var2 = var1.addSuffix;
                 var0 = var3;
                 if (!var2) {
-                    _fun24147_ip = 174;
-                    continue _fun24147
+                    _fun24149_ip = 174;
+                    continue _fun24149
                 }
             case 128:
                 var2 = var1.comparison;
                 if (!var2) {
-                    _fun24147_ip = 149;
-                    continue _fun24147
+                    _fun24149_ip = 149;
+                    continue _fun24149
                 }
             case 137:
                 var2 = var1.comparison;
                 var1 = 0;
                 if (!(!(var2 > var1))) {
-                    _fun24147_ip = 161;
-                    continue _fun24147
+                    _fun24149_ip = 161;
+                    continue _fun24149
                 }
             case 149:
                 var1 = ' पहले';
                 var1 = var3 + var1;
-                _fun24147_ip = 171;
-                continue _fun24147;
+                _fun24149_ip = 171;
+                continue _fun24149;
             case 161:
                 var2 = 'मे ';
                 var1 = var3 + var2;

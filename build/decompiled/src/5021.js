@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = exports;
     var4 = dependencyMap;
     var0 = function() {
-        _fun45156: for (var _fun45156_ip = 0;;) switch (_fun45156_ip) {
+        _fun45159: for (var _fun45159_ip = 0;;) switch (_fun45159_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -25,8 +25,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun45156_ip = 74;
-                continue _fun45156;
+                _fun45159_ip = 74;
+                continue _fun45159;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -102,7 +102,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.ContinousBaseGesture;
     var1 = function(arg0) { // Environment: var1
         var3 = function() {
-            _fun45162: for (var _fun45162_ip = 0;;) switch (_fun45162_ip) {
+            _fun45165: for (var _fun45165_ip = 0;;) switch (_fun45165_ip) {
                 case 0:
                     var3 = this;
                     var0 = _closure1_slot0;
@@ -115,14 +115,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = _closure1_slot8;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun45162_ip = 62;
-                        continue _fun45162
+                        _fun45165_ip = 62;
+                        continue _fun45165
                     }
                 case 49:
                     var0 = var8.apply;
                     var0 = var0.bind(var8)(var3, var2);
-                    _fun45162_ip = 100;
-                    continue _fun45162;
+                    _fun45165_ip = 100;
+                    continue _fun45165;
                 case 62:
                     var5 = global;
                     var7 = var5.Reflect;
@@ -155,7 +155,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1.changeEventCalculator = var0;
             var9 = _closure2_slot0;
             var3 = function arg0, arg1, arg2, arg3() {
-                _fun45164: for (var _fun45164_ip = 0;;) switch (_fun45164_ip) {
+                _fun45167: for (var _fun45167_ip = 0;;) switch (_fun45167_ip) {
                     case 0:
                         var4 = arg0;
                         var6 = arg2;
@@ -167,8 +167,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var7 = var0 & var2;
                         var0 = var4;
                         if (!var7) {
-                            _fun45164_ip = 44;
-                            continue _fun45164
+                            _fun45167_ip = 44;
+                            continue _fun45167
                         }
                     case 39:
                         var0 = var4.prototype;
@@ -182,16 +182,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = var0 & var2;
                         var0 = var4;
                         if (!var2) {
-                            _fun45164_ip = 98;
-                            continue _fun45164
+                            _fun45167_ip = 98;
+                            continue _fun45167
                         }
                     case 79:
                         var3 = 'function';
                         var2 = typeof var4;
                         var0 = var4;
                         if (!(var3 === var2)) {
-                            _fun45164_ip = 98;
-                            continue _fun45164
+                            _fun45167_ip = 98;
+                            continue _fun45167
                         }
                     case 93:
                         var0 = function(arg0) { // Environment: var1

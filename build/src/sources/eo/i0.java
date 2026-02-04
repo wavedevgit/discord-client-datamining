@@ -107,7 +107,7 @@ public final class i0 implements ym.c0 {
             context2 = context;
         }
         io.b c10 = io.b.c(LayoutInflater.from(context2).cloneInContext(context));
-        if (initialRendering.G() != vn.a.f51701e && initialRendering.G() != vn.a.f51700d) {
+        if (initialRendering.G() != vn.a.f51698e && initialRendering.G() != vn.a.f51697d) {
             z.a h10 = initialRendering.h();
             PreviewView previewView = c10.f28547y;
             Intrinsics.checkNotNullExpressionValue(previewView, "previewView");
@@ -116,7 +116,7 @@ public final class i0 implements ym.c0 {
         } else {
             Context applicationContext = context.getApplicationContext();
             Intrinsics.checkNotNullExpressionValue(applicationContext, "getApplicationContext(...)");
-            rn.m b10 = rn.j.b(applicationContext, rn.n.f49016e);
+            rn.m b10 = rn.j.b(applicationContext, rn.n.f49013e);
             if (b10 == null) {
                 initialRendering.x().invoke(new pn.s0());
                 Camera2PreviewView camera2Preview = c10.f28525c;

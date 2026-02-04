@@ -5,18 +5,18 @@ import okhttp3.OkHttpClient;
 public class k {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final k f48136b = new k();
+    public static final k f48133b = new k();
 
     /* renamed from: a  reason: collision with root package name */
-    private OkHttpClient f48137a;
+    private OkHttpClient f48134a;
 
     private k() {
     }
 
     public OkHttpClient a() {
-        if (this.f48137a == null) {
-            this.f48137a = new OkHttpClient();
+        if (this.f48134a == null) {
+            this.f48134a = new OkHttpClient();
         }
-        return this.f48137a;
+        return this.f48134a;
     }
 }

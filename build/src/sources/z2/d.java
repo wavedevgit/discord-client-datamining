@@ -10,30 +10,30 @@ public abstract class d {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f55565a;
+        private final String f55562a;
 
         public a(String name) {
             Intrinsics.checkNotNullParameter(name, "name");
-            this.f55565a = name;
+            this.f55562a = name;
         }
 
         public final String a() {
-            return this.f55565a;
+            return this.f55562a;
         }
 
         public boolean equals(Object obj) {
             if (obj instanceof a) {
-                return Intrinsics.areEqual(this.f55565a, ((a) obj).f55565a);
+                return Intrinsics.areEqual(this.f55562a, ((a) obj).f55562a);
             }
             return false;
         }
 
         public int hashCode() {
-            return this.f55565a.hashCode();
+            return this.f55562a.hashCode();
         }
 
         public String toString() {
-            return this.f55565a;
+            return this.f55562a;
         }
     }
 

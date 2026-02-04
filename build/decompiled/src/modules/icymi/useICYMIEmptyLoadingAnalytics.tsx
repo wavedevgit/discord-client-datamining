@@ -41,26 +41,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[0] = var1;
         var2[1] = var4;
         var1 = function() { // Environment: var0
-            _fun103944: for (var _fun103944_ip = 0;;) switch (_fun103944_ip) {
+            _fun103957: for (var _fun103957_ip = 0;;) switch (_fun103957_ip) {
                 case 0:
                     var1 = _closure2_slot1;
                     if (!var1) {
-                        _fun103944_ip = 189;
-                        continue _fun103944
+                        _fun103957_ip = 189;
+                        continue _fun103957
                     }
                 case 13:
                     var2 = _closure2_slot0;
                     var1 = _closure2_slot2;
                     if (var2) {
-                        _fun103944_ip = 125;
-                        continue _fun103944
+                        _fun103957_ip = 125;
+                        continue _fun103957
                     }
                 case 24:
                     var3 = var1.current;
                     var2 = null;
                     if (!(var2 != var3)) {
-                        _fun103944_ip = 189;
-                        continue _fun103944
+                        _fun103957_ip = 189;
+                        continue _fun103957
                     }
                 case 38:
                     var3 = global;
@@ -82,8 +82,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3.dwellTimeMs = var6;
                     var3 = var4.bind(var5)(var3);
                     var0.current = var2;
-                    _fun103944_ip = 189;
-                    continue _fun103944;
+                    _fun103957_ip = 189;
+                    continue _fun103957;
                 case 125:
                     var0 = global;
                     var2 = var0.Date;
@@ -109,20 +109,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var4;
         var0 = function() { // Environment: var0
-            _fun103945: for (var _fun103945_ip = 0;;) switch (_fun103945_ip) {
+            _fun103958: for (var _fun103958_ip = 0;;) switch (_fun103958_ip) {
                 case 0:
                     var1 = _closure2_slot1;
                     if (var1) {
-                        _fun103945_ip = 110;
-                        continue _fun103945
+                        _fun103958_ip = 110;
+                        continue _fun103958
                     }
                 case 10:
                     var1 = _closure2_slot2;
                     var2 = var1.current;
                     var1 = null;
                     if (!(var1 != var2)) {
-                        _fun103945_ip = 110;
-                        continue _fun103945
+                        _fun103958_ip = 110;
+                        continue _fun103958
                     }
                 case 25:
                     var2 = global;
@@ -155,4 +155,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useICYMIEmptyLoadingAnalytics = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 8889, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 8892, 2]);

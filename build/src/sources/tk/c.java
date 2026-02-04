@@ -6,31 +6,31 @@ import ck.p;
 final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final gk.b f50101a;
+    private final gk.b f50098a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final p f50102b;
+    private final p f50099b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final p f50103c;
+    private final p f50100c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final p f50104d;
+    private final p f50101d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final p f50105e;
+    private final p f50102e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f50106f;
+    private final int f50103f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f50107g;
+    private final int f50104g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final int f50108h;
+    private final int f50105h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f50109i;
+    private final int f50106i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(gk.b bVar, p pVar, p pVar2, p pVar3, p pVar4) {
@@ -47,15 +47,15 @@ final class c {
             pVar3 = new p(bVar.l() - 1, pVar.d());
             pVar4 = new p(bVar.l() - 1, pVar2.d());
         }
-        this.f50101a = bVar;
-        this.f50102b = pVar;
-        this.f50103c = pVar2;
-        this.f50104d = pVar3;
-        this.f50105e = pVar4;
-        this.f50106f = (int) Math.min(pVar.c(), pVar2.c());
-        this.f50107g = (int) Math.max(pVar3.c(), pVar4.c());
-        this.f50108h = (int) Math.min(pVar.d(), pVar3.d());
-        this.f50109i = (int) Math.max(pVar2.d(), pVar4.d());
+        this.f50098a = bVar;
+        this.f50099b = pVar;
+        this.f50100c = pVar2;
+        this.f50101d = pVar3;
+        this.f50102e = pVar4;
+        this.f50103f = (int) Math.min(pVar.c(), pVar2.c());
+        this.f50104g = (int) Math.max(pVar3.c(), pVar4.c());
+        this.f50105h = (int) Math.min(pVar.d(), pVar3.d());
+        this.f50106i = (int) Math.max(pVar2.d(), pVar4.d());
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -66,7 +66,7 @@ final class c {
         if (cVar2 == null) {
             return cVar;
         }
-        return new c(cVar.f50101a, cVar.f50102b, cVar.f50103c, cVar2.f50104d, cVar2.f50105e);
+        return new c(cVar.f50098a, cVar.f50099b, cVar.f50100c, cVar2.f50101d, cVar2.f50102e);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -79,10 +79,10 @@ final class c {
     public tk.c a(int r13, int r14, boolean r15) {
         /*
             r12 = this;
-            ck.p r0 = r12.f50102b
-            ck.p r1 = r12.f50103c
-            ck.p r2 = r12.f50104d
-            ck.p r3 = r12.f50105e
+            ck.p r0 = r12.f50099b
+            ck.p r1 = r12.f50100c
+            ck.p r2 = r12.f50101d
+            ck.p r3 = r12.f50102e
             if (r13 <= 0) goto L2a
             if (r15 == 0) goto Le
             r4 = r0
@@ -115,18 +115,18 @@ final class c {
         L2c:
             if (r14 <= 0) goto L5d
             if (r15 == 0) goto L33
-            ck.p r13 = r12.f50103c
+            ck.p r13 = r12.f50100c
             goto L35
         L33:
-            ck.p r13 = r12.f50105e
+            ck.p r13 = r12.f50102e
         L35:
             float r0 = r13.d()
             int r0 = (int) r0
             int r0 = r0 + r14
-            gk.b r14 = r12.f50101a
+            gk.b r14 = r12.f50098a
             int r14 = r14.i()
             if (r0 < r14) goto L4b
-            gk.b r14 = r12.f50101a
+            gk.b r14 = r12.f50098a
             int r14 = r14.i()
             int r0 = r14 + (-1)
         L4b:
@@ -148,7 +148,7 @@ final class c {
             goto L58
         L5f:
             tk.c r6 = new tk.c
-            gk.b r7 = r12.f50101a
+            gk.b r7 = r12.f50098a
             r6.<init>(r7, r8, r9, r10, r11)
             return r6
         */
@@ -157,54 +157,54 @@ final class c {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p b() {
-        return this.f50103c;
+        return this.f50100c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p c() {
-        return this.f50105e;
+        return this.f50102e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int d() {
-        return this.f50107g;
+        return this.f50104g;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int e() {
-        return this.f50109i;
+        return this.f50106i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int f() {
-        return this.f50106f;
+        return this.f50103f;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int g() {
-        return this.f50108h;
+        return this.f50105h;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p h() {
-        return this.f50102b;
+        return this.f50099b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p i() {
-        return this.f50104d;
+        return this.f50101d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(c cVar) {
-        this.f50101a = cVar.f50101a;
-        this.f50102b = cVar.f50102b;
-        this.f50103c = cVar.f50103c;
-        this.f50104d = cVar.f50104d;
-        this.f50105e = cVar.f50105e;
-        this.f50106f = cVar.f50106f;
-        this.f50107g = cVar.f50107g;
-        this.f50108h = cVar.f50108h;
-        this.f50109i = cVar.f50109i;
+        this.f50098a = cVar.f50098a;
+        this.f50099b = cVar.f50099b;
+        this.f50100c = cVar.f50100c;
+        this.f50101d = cVar.f50101d;
+        this.f50102e = cVar.f50102e;
+        this.f50103f = cVar.f50103f;
+        this.f50104g = cVar.f50104g;
+        this.f50105h = cVar.f50105h;
+        this.f50106i = cVar.f50106i;
     }
 }

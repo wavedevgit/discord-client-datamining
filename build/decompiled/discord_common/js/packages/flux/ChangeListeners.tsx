@@ -63,42 +63,42 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.remove = var3;
             var1 = function(arg0) { // Environment: var1
-                _fun6888: for (var _fun6888_ip = 0;;) switch (_fun6888_ip) {
+                _fun6890: for (var _fun6890_ip = 0;;) switch (_fun6890_ip) {
                     case 0:
                         var2 = arg0;
                         var3 = arguments[1];
                         var _closure4_slot0 = var2;
                         var0 = undefined;
                         if (!(var3 === var0)) {
-                            _fun6888_ip = 20;
-                            continue _fun6888
+                            _fun6890_ip = 20;
+                            continue _fun6890
                         }
                     case 18:
                         var3 = true;
                     case 20:
                         var _closure4_slot1 = var0;
                         if (!var3) {
-                            _fun6888_ip = 37;
-                            continue _fun6888
+                            _fun6890_ip = 37;
+                            continue _fun6890
                         }
                     case 27:
                         var3 = var2.bind(var0)();
                         var2 = false;
                         if (!(var2 !== var3)) {
-                            _fun6888_ip = 63;
-                            continue _fun6888
+                            _fun6890_ip = 63;
+                            continue _fun6890
                         }
                     case 37:
                         var3 = function() {
-                            _fun6889: for (var _fun6889_ip = 0;;) switch (_fun6889_ip) {
+                            _fun6891: for (var _fun6891_ip = 0;;) switch (_fun6891_ip) {
                                 case 0:
                                     var2 = _closure4_slot0;
                                     var0 = undefined;
                                     var3 = var2.bind(var0)();
                                     var2 = false;
                                     if (!(var2 === var3)) {
-                                        _fun6889_ip = 41;
-                                        continue _fun6889
+                                        _fun6891_ip = 41;
+                                        continue _fun6891
                                     }
                                 case 19:
                                     var3 = _closure3_slot0;

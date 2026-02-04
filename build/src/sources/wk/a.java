@@ -15,10 +15,10 @@ import xk.i;
 public class a implements m {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final p[] f52482b = new p[0];
+    private static final p[] f52479b = new p[0];
 
     /* renamed from: a  reason: collision with root package name */
-    private final e f52483a = new e();
+    private final e f52480a = new e();
 
     private static gk.b b(gk.b bVar) {
         int[] k10 = bVar.k();
@@ -106,11 +106,11 @@ public class a implements m {
         p[] b10;
         gk.e eVar;
         if (map != null && map.containsKey(ck.e.PURE_BARCODE)) {
-            eVar = this.f52483a.b(b(cVar.a()), map);
-            b10 = f52482b;
+            eVar = this.f52480a.b(b(cVar.a()), map);
+            b10 = f52479b;
         } else {
             g e10 = new yk.c(cVar.a()).e(map);
-            gk.e b11 = this.f52483a.b(e10.a(), map);
+            gk.e b11 = this.f52480a.b(e10.a(), map);
             b10 = e10.b();
             eVar = b11;
         }

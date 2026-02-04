@@ -3,31 +3,31 @@ package ub;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public boolean f50458a;
+    public boolean f50455a;
 
     /* renamed from: b  reason: collision with root package name */
-    public int f50459b;
+    public int f50456b;
 
     /* renamed from: c  reason: collision with root package name */
-    public long f50460c;
+    public long f50457c;
 
     /* renamed from: d  reason: collision with root package name */
-    public long f50461d;
+    public long f50458d;
 
     /* renamed from: e  reason: collision with root package name */
-    public int f50462e;
+    public int f50459e;
 
     /* renamed from: f  reason: collision with root package name */
-    public int f50463f;
+    public int f50460f;
 
     /* renamed from: g  reason: collision with root package name */
-    public int f50464g;
+    public int f50461g;
 
     /* renamed from: h  reason: collision with root package name */
-    public int f50465h;
+    public int f50462h;
 
     /* renamed from: i  reason: collision with root package name */
-    public int f50466i;
+    public int f50463i;
 
     public abstract c a(long j10, int i10);
 

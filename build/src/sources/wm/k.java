@@ -10,23 +10,23 @@ public abstract class k implements q {
     public final class a implements wm.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ wm.a f52548a;
+        private final /* synthetic */ wm.a f52545a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ k f52549b;
+        final /* synthetic */ k f52546b;
 
         public a(k this$0, wm.a baseContext) {
             Intrinsics.checkNotNullParameter(this$0, "this$0");
             Intrinsics.checkNotNullParameter(baseContext, "baseContext");
-            this.f52549b = this$0;
-            this.f52548a = baseContext;
+            this.f52546b = this$0;
+            this.f52545a = baseContext;
         }
 
         @Override // wm.a
         public void a(String key, Function2 sideEffect) {
             Intrinsics.checkNotNullParameter(key, "key");
             Intrinsics.checkNotNullParameter(sideEffect, "sideEffect");
-            this.f52548a.a(key, sideEffect);
+            this.f52545a.a(key, sideEffect);
         }
 
         @Override // wm.a
@@ -34,12 +34,12 @@ public abstract class k implements q {
             Intrinsics.checkNotNullParameter(child, "child");
             Intrinsics.checkNotNullParameter(key, "key");
             Intrinsics.checkNotNullParameter(handler, "handler");
-            return this.f52548a.b(child, obj, key, handler);
+            return this.f52545a.b(child, obj, key, handler);
         }
 
         @Override // wm.a
         public h c() {
-            return this.f52548a.c();
+            return this.f52545a.c();
         }
     }
 

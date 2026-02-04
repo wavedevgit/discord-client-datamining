@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.Platform;
     var1 = function arg0() {
-        _fun45004: for (var _fun45004_ip = 0;;) switch (_fun45004_ip) {
+        _fun45007: for (var _fun45007_ip = 0;;) switch (_fun45007_ip) {
             case 0:
                 var3 = arg0;
                 var0 = undefined;
@@ -44,13 +44,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var4.bind(var0)(var3);
                 var4 = var7.ghQueueMicrotask;
                 var3 = function() { // Environment: var1
-                    _fun45005: for (var _fun45005_ip = 0;;) switch (_fun45005_ip) {
+                    _fun45008: for (var _fun45008_ip = 0;;) switch (_fun45008_ip) {
                         case 0:
                             var1 = _closure2_slot0;
                             var1 = var1.isMounted;
                             if (!var1) {
-                                _fun45005_ip = 30;
-                                continue _fun45005
+                                _fun45008_ip = 30;
+                                continue _fun45008
                             }
                         case 16:
                             var1 = _closure2_slot1;
@@ -73,8 +73,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var18 = var13().value;
                 var14 = var4;
                 if (!(var14 !== var0)) {
-                    _fun45004_ip = 292;
-                    continue _fun45004
+                    _fun45007_ip = 292;
+                    continue _fun45007
                 }
             case 134: // try_start_0
                 var15 = _closure1_slot0;
@@ -106,8 +106,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var14 = var14.testId;
                 var14 = var16.bind(var17)(var15, var18, var14);
             case 280: // try_end0
-                _fun45004_ip = 120;
-                continue _fun45004;
+                _fun45007_ip = 120;
+                continue _fun45007;
             case 285: // catch_target0
                 CatchBlockStart(arg_register = 3);
                 var4.return();
@@ -119,13 +119,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var4.bind(var0)(var3);
                 var4 = var6.ghQueueMicrotask;
                 var3 = function() { // Environment: var1
-                    _fun45006: for (var _fun45006_ip = 0;;) switch (_fun45006_ip) {
+                    _fun45009: for (var _fun45009_ip = 0;;) switch (_fun45009_ip) {
                         case 0:
                             var1 = _closure2_slot0;
                             var1 = var1.isMounted;
                             if (!var1) {
-                                _fun45006_ip = 191;
-                                continue _fun45006
+                                _fun45009_ip = 191;
+                                continue _fun45009
                             }
                         case 19:
                             var0 = _closure2_slot2;
@@ -140,8 +140,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var16 = var6().value;
                             var7 = var4;
                             if (!(var7 !== var2)) {
-                                _fun45006_ip = 164;
-                                continue _fun45006
+                                _fun45009_ip = 164;
+                                continue _fun45009
                             }
                         case 54: // try_start_0
                             var9 = _closure1_slot1;
@@ -165,8 +165,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var7 = var13.bind(var14)(var12, var11, var7);
                             var7 = var9.bind(var10)(var8, var7);
                         case 155: // try_end0
-                            _fun45006_ip = 43;
-                            continue _fun45006;
+                            _fun45009_ip = 43;
+                            continue _fun45009;
                         case 157: // catch_target0
                             CatchBlockStart(arg_register = 1);
                             var4.return();
@@ -193,8 +193,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var12 = var7().value;
                 var13 = var4;
                 if (!(var13 !== var0)) {
-                    _fun45004_ip = 486;
-                    continue _fun45004
+                    _fun45007_ip = 486;
+                    continue _fun45007
                 }
             case 351: // try_start_1
                 var11 = var12;
@@ -205,13 +205,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var12 = var14.bind(var0)(var12);
                 var12 = var12.ActionType;
                 if (var13) {
-                    _fun45004_ip = 394;
-                    continue _fun45004
+                    _fun45007_ip = 394;
+                    continue _fun45007
                 }
             case 386:
                 var18 = var12.JS_FUNCTION_NEW_API;
-                _fun45004_ip = 400;
-                continue _fun45004;
+                _fun45007_ip = 400;
+                continue _fun45007;
             case 394:
                 var18 = var12.REANIMATED_WORKLET;
             case 400:
@@ -231,8 +231,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var12 = var13.gestureWillMount;
                 var12 = var12.bind(var13)(var14);
             case 474: // try_end1
-                _fun45004_ip = 337;
-                continue _fun45004;
+                _fun45007_ip = 337;
+                continue _fun45007;
             case 479: // catch_target1
                 CatchBlockStart(arg_register = 3);
                 var4.return();
@@ -241,8 +241,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2.attachedGestures = var5;
                 var3 = var2.animatedHandlers;
                 if (!var3) {
-                    _fun45004_ip = 543;
-                    continue _fun45004
+                    _fun45007_ip = 543;
+                    continue _fun45007
                 }
             case 501:
                 var2 = var2.animatedHandlers;

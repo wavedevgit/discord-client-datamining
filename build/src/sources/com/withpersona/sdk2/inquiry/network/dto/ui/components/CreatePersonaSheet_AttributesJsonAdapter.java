@@ -86,7 +86,7 @@ public final class CreatePersonaSheet_AttributesJsonAdapter extends h {
         }
         Constructor<CreatePersonaSheet.Attributes> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = CreatePersonaSheet.Attributes.class.getDeclaredConstructor(CreatePersonaSheet.Pages.class, String.class, Boolean.class, Integer.TYPE, c.f51691c);
+            constructor = CreatePersonaSheet.Attributes.class.getDeclaredConstructor(CreatePersonaSheet.Pages.class, String.class, Boolean.class, Integer.TYPE, c.f51688c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

@@ -277,7 +277,7 @@ public class x {
                 String str2 = (String) b2.e.g((String) e10.f6245b);
                 if (!str.contains("GL_EXT_YUV_target")) {
                     y0.l("OpenGlRenderer", "Device does not support GL_EXT_YUV_target. Fallback to SDR.");
-                    zVar = x.z.f53042d;
+                    zVar = x.z.f53039d;
                 }
                 this.f31354f = l0.d.k(str2, zVar);
                 a10.d(str);

@@ -21,7 +21,7 @@ import rc.m;
 public final class g0 implements b0 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final b0.c f48680d = new b0.c() { // from class: rc.d0
+    public static final b0.c f48677d = new b0.c() { // from class: rc.d0
         @Override // rc.b0.c
         public final b0 a(UUID uuid) {
             return g0.n(uuid);
@@ -29,13 +29,13 @@ public final class g0 implements b0 {
     };
 
     /* renamed from: a  reason: collision with root package name */
-    private final UUID f48681a;
+    private final UUID f48678a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final MediaDrm f48682b;
+    private final MediaDrm f48679b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f48683c;
+    private int f48680c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static class a {
@@ -56,10 +56,10 @@ public final class g0 implements b0 {
     private g0(UUID uuid) {
         ne.a.e(uuid);
         ne.a.b(!lc.d.f36653b.equals(uuid), "Use C.CLEARKEY_UUID instead");
-        this.f48681a = uuid;
+        this.f48678a = uuid;
         MediaDrm mediaDrm = new MediaDrm(u(uuid));
-        this.f48682b = mediaDrm;
-        this.f48683c = 1;
+        this.f48679b = mediaDrm;
+        this.f48680c = 1;
         if (lc.d.f36655d.equals(uuid) && z()) {
             w(mediaDrm);
         }
@@ -221,15 +221,15 @@ public final class g0 implements b0 {
             int i10 = 0;
             for (int i11 = 0; i11 < list.size(); i11++) {
                 m.b bVar2 = (m.b) list.get(i11);
-                byte[] bArr = (byte[]) ne.a.e(bVar2.f48752p);
-                if (w0.c(bVar2.f48751o, bVar.f48751o) && w0.c(bVar2.f48750i, bVar.f48750i) && bd.l.c(bArr)) {
+                byte[] bArr = (byte[]) ne.a.e(bVar2.f48749p);
+                if (w0.c(bVar2.f48748o, bVar.f48748o) && w0.c(bVar2.f48747i, bVar.f48747i) && bd.l.c(bArr)) {
                     i10 += bArr.length;
                 }
             }
             byte[] bArr2 = new byte[i10];
             int i12 = 0;
             for (int i13 = 0; i13 < list.size(); i13++) {
-                byte[] bArr3 = (byte[]) ne.a.e(((m.b) list.get(i13)).f48752p);
+                byte[] bArr3 = (byte[]) ne.a.e(((m.b) list.get(i13)).f48749p);
                 int length = bArr3.length;
                 System.arraycopy(bArr3, 0, bArr2, i12, length);
                 i12 += length;
@@ -238,7 +238,7 @@ public final class g0 implements b0 {
         }
         for (int i14 = 0; i14 < list.size(); i14++) {
             m.b bVar3 = (m.b) list.get(i14);
-            int g10 = bd.l.g((byte[]) ne.a.e(bVar3.f48752p));
+            int g10 = bd.l.g((byte[]) ne.a.e(bVar3.f48749p));
             int i15 = w0.f40197a;
             if ((i15 < 23 && g10 == 0) || (i15 >= 23 && g10 == 1)) {
                 return bVar3;
@@ -253,34 +253,34 @@ public final class g0 implements b0 {
 
     @Override // rc.b0
     public Map a(byte[] bArr) {
-        return this.f48682b.queryKeyStatus(bArr);
+        return this.f48679b.queryKeyStatus(bArr);
     }
 
     @Override // rc.b0
     public b0.d b() {
-        MediaDrm.ProvisionRequest provisionRequest = this.f48682b.getProvisionRequest();
+        MediaDrm.ProvisionRequest provisionRequest = this.f48679b.getProvisionRequest();
         return new b0.d(provisionRequest.getData(), provisionRequest.getDefaultUrl());
     }
 
     @Override // rc.b0
     public byte[] c() {
-        return this.f48682b.openSession();
+        return this.f48679b.openSession();
     }
 
     @Override // rc.b0
     public void d(byte[] bArr, byte[] bArr2) {
-        this.f48682b.restoreKeys(bArr, bArr2);
+        this.f48679b.restoreKeys(bArr, bArr2);
     }
 
     @Override // rc.b0
     public void e(byte[] bArr) {
-        this.f48682b.provideProvisionResponse(bArr);
+        this.f48679b.provideProvisionResponse(bArr);
     }
 
     @Override // rc.b0
     public void f(final b0.b bVar) {
         MediaDrm.OnEventListener onEventListener;
-        MediaDrm mediaDrm = this.f48682b;
+        MediaDrm mediaDrm = this.f48679b;
         if (bVar == null) {
             onEventListener = null;
         } else {
@@ -302,10 +302,10 @@ public final class g0 implements b0 {
     @Override // rc.b0
     public boolean i(byte[] bArr, String str) {
         if (w0.f40197a >= 31) {
-            return a.a(this.f48682b, str);
+            return a.a(this.f48679b, str);
         }
         try {
-            MediaCrypto mediaCrypto = new MediaCrypto(this.f48681a, bArr);
+            MediaCrypto mediaCrypto = new MediaCrypto(this.f48678a, bArr);
             try {
                 return mediaCrypto.requiresSecureDecoderComponent(str);
             } finally {
@@ -318,15 +318,15 @@ public final class g0 implements b0 {
 
     @Override // rc.b0
     public void j(byte[] bArr) {
-        this.f48682b.closeSession(bArr);
+        this.f48679b.closeSession(bArr);
     }
 
     @Override // rc.b0
     public byte[] k(byte[] bArr, byte[] bArr2) {
-        if (lc.d.f36654c.equals(this.f48681a)) {
+        if (lc.d.f36654c.equals(this.f48678a)) {
             bArr2 = rc.a.b(bArr2);
         }
-        return this.f48682b.provideKeyResponse(bArr, bArr2);
+        return this.f48679b.provideKeyResponse(bArr, bArr2);
     }
 
     @Override // rc.b0
@@ -336,19 +336,19 @@ public final class g0 implements b0 {
         String str;
         int i11;
         if (list != null) {
-            bVar = y(this.f48681a, list);
-            bArr2 = s(this.f48681a, (byte[]) ne.a.e(bVar.f48752p));
-            str = t(this.f48681a, bVar.f48751o);
+            bVar = y(this.f48678a, list);
+            bArr2 = s(this.f48678a, (byte[]) ne.a.e(bVar.f48749p));
+            str = t(this.f48678a, bVar.f48748o);
         } else {
             bVar = null;
             bArr2 = null;
             str = null;
         }
-        MediaDrm.KeyRequest keyRequest = this.f48682b.getKeyRequest(bArr, bArr2, str, i10, hashMap);
-        byte[] r10 = r(this.f48681a, keyRequest.getData());
+        MediaDrm.KeyRequest keyRequest = this.f48679b.getKeyRequest(bArr, bArr2, str, i10, hashMap);
+        byte[] r10 = r(this.f48678a, keyRequest.getData());
         String q10 = q(keyRequest.getDefaultUrl());
-        if (TextUtils.isEmpty(q10) && bVar != null && !TextUtils.isEmpty(bVar.f48750i)) {
-            q10 = bVar.f48750i;
+        if (TextUtils.isEmpty(q10) && bVar != null && !TextUtils.isEmpty(bVar.f48747i)) {
+            q10 = bVar.f48747i;
         }
         if (w0.f40197a >= 23) {
             i11 = keyRequest.getRequestType();
@@ -362,7 +362,7 @@ public final class g0 implements b0 {
     public void m(byte[] bArr, t1 t1Var) {
         if (w0.f40197a >= 31) {
             try {
-                a.b(this.f48682b, bArr, t1Var);
+                a.b(this.f48679b, bArr, t1Var);
             } catch (UnsupportedOperationException unused) {
                 ne.y.i("FrameworkMediaDrm", "setLogSessionId failed.");
             }
@@ -371,10 +371,10 @@ public final class g0 implements b0 {
 
     @Override // rc.b0
     public synchronized void release() {
-        int i10 = this.f48683c - 1;
-        this.f48683c = i10;
+        int i10 = this.f48680c - 1;
+        this.f48680c = i10;
         if (i10 == 0) {
-            this.f48682b.release();
+            this.f48679b.release();
         }
     }
 
@@ -382,15 +382,15 @@ public final class g0 implements b0 {
     /* renamed from: v */
     public c0 h(byte[] bArr) {
         boolean z10;
-        if (w0.f40197a < 21 && lc.d.f36655d.equals(this.f48681a) && "L3".equals(x("securityLevel"))) {
+        if (w0.f40197a < 21 && lc.d.f36655d.equals(this.f48678a) && "L3".equals(x("securityLevel"))) {
             z10 = true;
         } else {
             z10 = false;
         }
-        return new c0(u(this.f48681a), bArr, z10);
+        return new c0(u(this.f48678a), bArr, z10);
     }
 
     public String x(String str) {
-        return this.f48682b.getPropertyString(str);
+        return this.f48679b.getPropertyString(str);
     }
 }

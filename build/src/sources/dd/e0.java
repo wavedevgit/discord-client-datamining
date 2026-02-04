@@ -56,7 +56,7 @@ final class e0 extends tc.a {
             if (j14 != -9223372036854775807L) {
                 return a.e.f(j14, j11 + j12);
             }
-            return a.e.f49893d;
+            return a.e.f49890d;
         }
 
         @Override // tc.a.f

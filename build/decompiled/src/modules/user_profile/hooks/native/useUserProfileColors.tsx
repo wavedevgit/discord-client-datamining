@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/hooks/native/useUserProfileColors.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun57136: for (var _fun57136_ip = 0;;) switch (_fun57136_ip) {
+        _fun57178: for (var _fun57178_ip = 0;;) switch (_fun57178_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.theme;
@@ -110,18 +110,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.statusBackground = var3;
                 var3 = null;
                 if (!(var3 != var5)) {
-                    _fun57136_ip = 602;
-                    continue _fun57136
+                    _fun57178_ip = 602;
+                    continue _fun57178
                 }
             case 366:
                 if (!(var3 != var14)) {
-                    _fun57136_ip = 602;
-                    continue _fun57136
+                    _fun57178_ip = 602;
+                    continue _fun57178
                 }
             case 373:
                 if (!(var3 != var1)) {
-                    _fun57136_ip = 602;
-                    continue _fun57136
+                    _fun57178_ip = 602;
+                    continue _fun57178
                 }
             case 380:
                 var7 = var1.sectionBox;
@@ -135,8 +135,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var4.calculateOverlayedColor;
                 var1 = var13;
                 if (!var10) {
-                    _fun57136_ip = 433;
-                    continue _fun57136
+                    _fun57178_ip = 433;
+                    continue _fun57178
                 }
             case 430:
                 var1 = var6;
@@ -184,4 +184,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useUserProfileColors = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 3246, 5385, 566, 3151, 671, 6960, 668, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 3246, 5385, 566, 3151, 671, 6965, 668, 2]);

@@ -507,7 +507,7 @@ public final class ImagePipelineConfig implements r {
 
         /* JADX INFO: Access modifiers changed from: private */
         public final void j(x8.b bVar, com.facebook.imagepipeline.core.a aVar, x8.a aVar2) {
-            x8.c.f53199c = bVar;
+            x8.c.f53196c = bVar;
             aVar.z();
             if (aVar2 != null) {
                 bVar.a(aVar2);

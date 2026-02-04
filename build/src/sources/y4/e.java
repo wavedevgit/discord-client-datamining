@@ -11,19 +11,19 @@ import y4.c;
 public final class e implements y4.a {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f53735e = new a(null);
+    public static final a f53732e = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f53736a;
+    private final long f53733a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final c0 f53737b;
+    private final c0 f53734b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f53738c;
+    private final h f53735c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final y4.c f53739d;
+    private final y4.c f53736d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -40,21 +40,21 @@ public final class e implements y4.a {
     public static final class b implements a.b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final c.b f53740a;
+        private final c.b f53737a;
 
         public b(c.b bVar) {
-            this.f53740a = bVar;
+            this.f53737a = bVar;
         }
 
         @Override // y4.a.b
         public void a() {
-            this.f53740a.a();
+            this.f53737a.a();
         }
 
         @Override // y4.a.b
         /* renamed from: c */
         public c b() {
-            c.d c10 = this.f53740a.c();
+            c.d c10 = this.f53737a.c();
             if (c10 != null) {
                 return new c(c10);
             }
@@ -63,12 +63,12 @@ public final class e implements y4.a {
 
         @Override // y4.a.b
         public c0 getData() {
-            return this.f53740a.f(1);
+            return this.f53737a.f(1);
         }
 
         @Override // y4.a.b
         public c0 getMetadata() {
-            return this.f53740a.f(0);
+            return this.f53737a.f(0);
         }
     }
 
@@ -77,16 +77,16 @@ public final class e implements y4.a {
     public static final class c implements a.c {
 
         /* renamed from: d  reason: collision with root package name */
-        private final c.d f53741d;
+        private final c.d f53738d;
 
         public c(c.d dVar) {
-            this.f53741d = dVar;
+            this.f53738d = dVar;
         }
 
         @Override // y4.a.c
         /* renamed from: a */
         public b C1() {
-            c.b a10 = this.f53741d.a();
+            c.b a10 = this.f53738d.a();
             if (a10 != null) {
                 return new b(a10);
             }
@@ -95,25 +95,25 @@ public final class e implements y4.a {
 
         @Override // java.io.Closeable, java.lang.AutoCloseable
         public void close() {
-            this.f53741d.close();
+            this.f53738d.close();
         }
 
         @Override // y4.a.c
         public c0 getData() {
-            return this.f53741d.h(1);
+            return this.f53738d.h(1);
         }
 
         @Override // y4.a.c
         public c0 getMetadata() {
-            return this.f53741d.h(0);
+            return this.f53738d.h(0);
         }
     }
 
     public e(long j10, c0 c0Var, h hVar, CoroutineDispatcher coroutineDispatcher) {
-        this.f53736a = j10;
-        this.f53737b = c0Var;
-        this.f53738c = hVar;
-        this.f53739d = new y4.c(getFileSystem(), c(), coroutineDispatcher, d(), 1, 2);
+        this.f53733a = j10;
+        this.f53734b = c0Var;
+        this.f53735c = hVar;
+        this.f53736d = new y4.c(getFileSystem(), c(), coroutineDispatcher, d(), 1, 2);
     }
 
     private final String e(String str) {
@@ -122,7 +122,7 @@ public final class e implements y4.a {
 
     @Override // y4.a
     public a.b a(String str) {
-        c.b J0 = this.f53739d.J0(e(str));
+        c.b J0 = this.f53736d.J0(e(str));
         if (J0 != null) {
             return new b(J0);
         }
@@ -131,7 +131,7 @@ public final class e implements y4.a {
 
     @Override // y4.a
     public a.c b(String str) {
-        c.d M0 = this.f53739d.M0(e(str));
+        c.d M0 = this.f53736d.M0(e(str));
         if (M0 != null) {
             return new c(M0);
         }
@@ -139,15 +139,15 @@ public final class e implements y4.a {
     }
 
     public c0 c() {
-        return this.f53737b;
+        return this.f53734b;
     }
 
     public long d() {
-        return this.f53736a;
+        return this.f53733a;
     }
 
     @Override // y4.a
     public h getFileSystem() {
-        return this.f53738c;
+        return this.f53735c;
     }
 }

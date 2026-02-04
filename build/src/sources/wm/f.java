@@ -18,32 +18,32 @@ public abstract class f {
     static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f52535d;
+        int f52532d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f52536e;
+        private /* synthetic */ Object f52533e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ xm.m f52537i;
+        final /* synthetic */ xm.m f52534i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ MutableStateFlow f52538o;
+        final /* synthetic */ MutableStateFlow f52535o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ Function2 f52539p;
+        final /* synthetic */ Function2 f52536p;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(xm.m mVar, MutableStateFlow mutableStateFlow, Function2 function2, Continuation continuation) {
             super(2, continuation);
-            this.f52537i = mVar;
-            this.f52538o = mutableStateFlow;
-            this.f52539p = function2;
+            this.f52534i = mVar;
+            this.f52535o = mutableStateFlow;
+            this.f52536p = function2;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            a aVar = new a(this.f52537i, this.f52538o, this.f52539p, continuation);
-            aVar.f52536e = obj;
+            a aVar = new a(this.f52534i, this.f52535o, this.f52536p, continuation);
+            aVar.f52533e = obj;
             return aVar;
         }
 
@@ -65,13 +65,13 @@ public abstract class f {
             /*
                 r7 = this;
                 java.lang.Object r0 = rr.b.f()
-                int r1 = r7.f52535d
+                int r1 = r7.f52532d
                 r2 = 2
                 r3 = 1
                 if (r1 == 0) goto L26
                 if (r1 == r3) goto L1e
                 if (r1 != r2) goto L16
-                java.lang.Object r1 = r7.f52536e
+                java.lang.Object r1 = r7.f52533e
                 kotlinx.coroutines.CoroutineScope r1 = (kotlinx.coroutines.CoroutineScope) r1
                 kotlin.c.b(r8)
                 goto L5b
@@ -81,20 +81,20 @@ public abstract class f {
                 r8.<init>(r0)
                 throw r8
             L1e:
-                java.lang.Object r1 = r7.f52536e
+                java.lang.Object r1 = r7.f52533e
                 kotlinx.coroutines.CoroutineScope r1 = (kotlinx.coroutines.CoroutineScope) r1
                 kotlin.c.b(r8)
                 goto L43
             L26:
                 kotlin.c.b(r8)
-                java.lang.Object r8 = r7.f52536e
+                java.lang.Object r8 = r7.f52533e
                 kotlinx.coroutines.CoroutineScope r8 = (kotlinx.coroutines.CoroutineScope) r8
             L2d:
                 boolean r1 = kotlinx.coroutines.i.i(r8)
                 if (r1 == 0) goto L6e
-                xm.m r1 = r7.f52537i
-                r7.f52536e = r8
-                r7.f52535d = r3
+                xm.m r1 = r7.f52534i
+                r7.f52533e = r8
+                r7.f52532d = r3
                 java.lang.Object r1 = r1.f(r7)
                 if (r1 != r0) goto L40
                 goto L6d
@@ -109,8 +109,8 @@ public abstract class f {
                 kotlin.Unit r8 = kotlin.Unit.f32464a
                 return r8
             L4e:
-                kotlinx.coroutines.flow.MutableStateFlow r4 = r7.f52538o
-                xm.m r5 = r7.f52537i
+                kotlinx.coroutines.flow.MutableStateFlow r4 = r7.f52535o
+                xm.m r5 = r7.f52534i
                 wm.g r5 = r5.g()
                 r4.setValue(r5)
                 if (r8 != 0) goto L5d
@@ -118,10 +118,10 @@ public abstract class f {
                 r8 = r1
                 goto L2d
             L5d:
-                kotlin.jvm.functions.Function2 r4 = r7.f52539p
+                kotlin.jvm.functions.Function2 r4 = r7.f52536p
                 java.lang.Object r8 = r8.a()
-                r7.f52536e = r1
-                r7.f52535d = r2
+                r7.f52533e = r1
+                r7.f52532d = r2
                 java.lang.Object r8 = r4.invoke(r8, r7)
                 if (r8 != r0) goto L5b
             L6d:

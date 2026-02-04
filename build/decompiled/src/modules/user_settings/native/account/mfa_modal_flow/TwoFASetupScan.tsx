@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/account/mfa_modal_flow/TwoFASetupScan.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun81590: for (var _fun81590_ip = 0;;) switch (_fun81590_ip) {
+        _fun81607: for (var _fun81607_ip = 0;;) switch (_fun81607_ip) {
             case 0:
                 var1 = arg0;
                 var20 = var1.totpSecret;
@@ -219,14 +219,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var16.bind(var3)(var13);
                 var13 = var13.t;
                 if (var12) {
-                    _fun81590_ip = 604;
-                    continue _fun81590
+                    _fun81607_ip = 604;
+                    continue _fun81607
                 }
             case 591:
                 var12 = var13.OpuAlK;
                 var12 = var14.bind(var15)(var12);
-                _fun81590_ip = 615;
-                continue _fun81590;
+                _fun81607_ip = 615;
+                continue _fun81607;
             case 604:
                 var13 = var13.mGZ66D;
                 var12 = var14.bind(var15)(var13);
@@ -245,4 +245,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 33, 1297, 671, 5291, 10394, 10390, 4734, 4876, 1234, 5378, 4902, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 33, 1297, 671, 5291, 10397, 10393, 4734, 4876, 1234, 5378, 4902, 2]);

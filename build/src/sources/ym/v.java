@@ -7,31 +7,31 @@ import kotlinx.coroutines.flow.MutableStateFlow;
 final class v implements t {
 
     /* renamed from: a  reason: collision with root package name */
-    private final MutableStateFlow f54708a;
+    private final MutableStateFlow f54705a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Flow f54709b;
+    private final Flow f54706b;
 
     public v(String initialValue) {
         Intrinsics.checkNotNullParameter(initialValue, "initialValue");
         MutableStateFlow a10 = ms.l0.a(initialValue);
-        this.f54708a = a10;
-        this.f54709b = ms.g.m(a10, 1);
+        this.f54705a = a10;
+        this.f54706b = ms.g.m(a10, 1);
     }
 
     @Override // ym.t
     public Flow a() {
-        return this.f54709b;
+        return this.f54706b;
     }
 
     @Override // ym.t
     public String b() {
-        return (String) this.f54708a.getValue();
+        return (String) this.f54705a.getValue();
     }
 
     @Override // ym.t
     public void c(String value) {
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f54708a.setValue(value);
+        this.f54705a.setValue(value);
     }
 }

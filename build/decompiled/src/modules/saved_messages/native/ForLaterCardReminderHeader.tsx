@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/saved_messages/native/ForLaterCardReminderHeader.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun76190: for (var _fun76190_ip = 0;;) switch (_fun76190_ip) {
+        _fun76207: for (var _fun76207_ip = 0;;) switch (_fun76207_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.savedMessage;
@@ -117,8 +117,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var0 == var1;
                 var10 = undefined;
                 if (var12) {
-                    _fun76190_ip = 85;
-                    continue _fun76190
+                    _fun76207_ip = 85;
+                    continue _fun76207
                 }
             case 73:
                 var12 = var1.saveData;
@@ -139,14 +139,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.saveData;
                 var1 = var1.dueAt;
                 if (!(var0 != var1)) {
-                    _fun76190_ip = 401;
-                    continue _fun76190
+                    _fun76207_ip = 401;
+                    continue _fun76207
                 }
             case 163:
                 var12 = 'mobile-text-heading-primary';
                 if (!var2) {
-                    _fun76190_ip = 178;
-                    continue _fun76190
+                    _fun76207_ip = 178;
+                    continue _fun76207
                 }
             case 172:
                 var12 = 'text-feedback-critical';
@@ -158,13 +158,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.bind(var4)(var1);
                 var1 = var1.colors;
                 if (var2) {
-                    _fun76190_ip = 214;
-                    continue _fun76190
+                    _fun76207_ip = 214;
+                    continue _fun76207
                 }
             case 206:
                 var15 = var1.INTERACTIVE_TEXT_DEFAULT;
-                _fun76190_ip = 220;
-                continue _fun76190;
+                _fun76207_ip = 220;
+                continue _fun76207;
             case 214:
                 var15 = var1.TEXT_FEEDBACK_CRITICAL;
             case 220:
@@ -218,4 +218,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ForLaterCardReminderHeader = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 671, 9649, 3274, 3941, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 671, 9652, 3274, 3941, 2]);

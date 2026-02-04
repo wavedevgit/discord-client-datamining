@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = var0.statesWillNeverBeEqual;
         var10 = function() { // Environment: var0
             var0 = function(arg0, arg1) { // Environment: var0
-                _fun96359: for (var _fun96359_ip = 0;;) switch (_fun96359_ip) {
+                _fun96375: for (var _fun96375_ip = 0;;) switch (_fun96375_ip) {
                     case 0:
                         var4 = arg0;
                         var2 = _closure1_slot3;
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = arg1;
                         var0 = var2.bind(var7)(var4, var0);
                         if (!var0) {
-                            _fun96359_ip = 226;
-                            continue _fun96359
+                            _fun96375_ip = 222;
+                            continue _fun96375
                         }
                     case 27:
                         var6 = _closure1_slot0;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = var5.bind(var6)(var4);
                         var1.shouldRestrictUpdatingRoleSubscriptionSettings = var4;
                         var0 = var2.bind(var3)(var1);
-                    case 226:
+                    case 222:
                         return var0;
                 }
             };

@@ -17,13 +17,13 @@ import kotlin.jvm.internal.Ref;
 public final class t implements o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ys.a f55321a;
+    private final ys.a f55318a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f55322b;
+    private final String f55319b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final a f55323c;
+    private final a f55320c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class b implements Comparator {
@@ -37,25 +37,25 @@ public final class t implements o {
     static final class c extends Lambda implements Function0 {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ CharSequence f55327e;
+        final /* synthetic */ CharSequence f55324e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ int f55328i;
+        final /* synthetic */ int f55325i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ Ref.IntRef f55329o;
+        final /* synthetic */ Ref.IntRef f55326o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         c(CharSequence charSequence, int i10, Ref.IntRef intRef) {
             super(0);
-            this.f55327e = charSequence;
-            this.f55328i = i10;
-            this.f55329o = intRef;
+            this.f55324e = charSequence;
+            this.f55325i = i10;
+            this.f55326o = intRef;
         }
 
         @Override // kotlin.jvm.functions.Function0
         public final String invoke() {
-            return "Expected " + t.this.f55322b + " but got " + this.f55327e.subSequence(this.f55328i, this.f55329o.element).toString();
+            return "Expected " + t.this.f55319b + " but got " + this.f55324e.subSequence(this.f55325i, this.f55326o.element).toString();
         }
     }
 
@@ -63,18 +63,18 @@ public final class t implements o {
     public static final class d extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Comparable f55330d;
+        final /* synthetic */ Comparable f55327d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public d(Comparable comparable) {
             super(1);
-            this.f55330d = comparable;
+            this.f55327d = comparable;
         }
 
         @Override // kotlin.jvm.functions.Function1
         /* renamed from: a */
         public final Integer invoke(Object obj) {
-            return Integer.valueOf(or.a.d((String) ((Pair) obj).c(), this.f55330d));
+            return Integer.valueOf(or.a.d((String) ((Pair) obj).c(), this.f55327d));
         }
     }
 
@@ -82,14 +82,14 @@ public final class t implements o {
         Intrinsics.checkNotNullParameter(strings, "strings");
         Intrinsics.checkNotNullParameter(setter, "setter");
         Intrinsics.checkNotNullParameter(whatThisExpects, "whatThisExpects");
-        this.f55321a = setter;
-        this.f55322b = whatThisExpects;
-        this.f55323c = new a(null, false, 3, null);
+        this.f55318a = setter;
+        this.f55319b = whatThisExpects;
+        this.f55320c = new a(null, false, 3, null);
         Iterator it = strings.iterator();
         while (it.hasNext()) {
             String str = (String) it.next();
             if (str.length() > 0) {
-                a aVar = this.f55323c;
+                a aVar = this.f55320c;
                 int length = str.length();
                 for (int i10 = 0; i10 < length; i10++) {
                     char charAt = str.charAt(i10);
@@ -109,10 +109,10 @@ public final class t implements o {
                     throw new IllegalArgumentException(("The string '" + str + "' was passed several times").toString());
                 }
             } else {
-                throw new IllegalArgumentException(("Found an empty string in " + this.f55322b).toString());
+                throw new IllegalArgumentException(("Found an empty string in " + this.f55319b).toString());
             }
         }
-        b(this.f55323c);
+        b(this.f55320c);
     }
 
     private static final void b(a aVar) {
@@ -149,7 +149,7 @@ public final class t implements o {
             r11 = this;
             java.lang.String r0 = "input"
             kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r13, r0)
-            ys.t$a r0 = r11.f55323c
+            ys.t$a r0 = r11.f55320c
             kotlin.jvm.internal.Ref$IntRef r1 = new kotlin.jvm.internal.Ref$IntRef
             r1.<init>()
             r1.element = r14
@@ -195,7 +195,7 @@ public final class t implements o {
         L5e:
             r5 = r13
             if (r2 == 0) goto L78
-            ys.a r13 = r11.f55321a
+            ys.a r13 = r11.f55318a
             int r0 = r2.intValue()
             java.lang.CharSequence r0 = r5.subSequence(r14, r0)
             java.lang.String r0 = r0.toString()
@@ -203,7 +203,7 @@ public final class t implements o {
             java.lang.Object r12 = ys.p.b(r13, r12, r0, r14, r1)
             return r12
         L78:
-            ys.k$a r12 = ys.k.f55299a
+            ys.k$a r12 = ys.k.f55296a
             ys.t$c r13 = new ys.t$c
             r13.<init>(r5, r14, r1)
             java.lang.Object r12 = r12.a(r14, r13)
@@ -217,27 +217,27 @@ public final class t implements o {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f55324a;
+        private final List f55321a;
 
         /* renamed from: b  reason: collision with root package name */
-        private boolean f55325b;
+        private boolean f55322b;
 
         public a(List children, boolean z10) {
             Intrinsics.checkNotNullParameter(children, "children");
-            this.f55324a = children;
-            this.f55325b = z10;
+            this.f55321a = children;
+            this.f55322b = z10;
         }
 
         public final List a() {
-            return this.f55324a;
+            return this.f55321a;
         }
 
         public final boolean b() {
-            return this.f55325b;
+            return this.f55322b;
         }
 
         public final void c(boolean z10) {
-            this.f55325b = z10;
+            this.f55322b = z10;
         }
 
         public /* synthetic */ a(List list, boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {

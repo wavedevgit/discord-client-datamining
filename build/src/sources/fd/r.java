@@ -917,7 +917,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
             }
             UUID uuid = lc.d.f36656e;
             if (!uuid.equals(nVar.a()) && !uuid.equals(nVar2.a())) {
-                if (c0Var.f48643c) {
+                if (c0Var.f48640c) {
                     h10 = false;
                 } else {
                     h10 = nVar2.h(format.f11303w);
@@ -1138,7 +1138,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
         qc.b d10 = this.P.d();
         if (d10 instanceof c0) {
             try {
-                this.Q.setMediaDrmSession(((c0) d10).f48642b);
+                this.Q.setMediaDrmSession(((c0) d10).f48639b);
             } catch (MediaCryptoException e10) {
                 throw G(e10, this.M, 6006);
             }
@@ -1255,9 +1255,9 @@ public abstract class r extends com.google.android.exoplayer2.f {
                     } else if (d10 instanceof c0) {
                         c0 c0Var = (c0) d10;
                         try {
-                            MediaCrypto mediaCrypto = new MediaCrypto(c0Var.f48641a, c0Var.f48642b);
+                            MediaCrypto mediaCrypto = new MediaCrypto(c0Var.f48638a, c0Var.f48639b);
                             this.Q = mediaCrypto;
-                            if (!c0Var.f48643c && mediaCrypto.requiresSecureDecoderComponent(str)) {
+                            if (!c0Var.f48640c && mediaCrypto.requiresSecureDecoderComponent(str)) {
                                 z10 = true;
                             } else {
                                 z10 = false;
@@ -1268,7 +1268,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
                         }
                     }
                 }
-                if (c0.f48640d && (d10 instanceof c0)) {
+                if (c0.f48637d && (d10 instanceof c0)) {
                     int state = this.O.getState();
                     if (state != 1) {
                         if (state != 4) {
@@ -1276,7 +1276,7 @@ public abstract class r extends com.google.android.exoplayer2.f {
                         }
                     } else {
                         n.a aVar = (n.a) ne.a.e(this.O.getError());
-                        throw G(aVar, this.M, aVar.f48753d);
+                        throw G(aVar, this.M, aVar.f48750d);
                     }
                 }
             }

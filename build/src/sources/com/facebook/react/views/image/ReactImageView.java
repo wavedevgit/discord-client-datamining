@@ -32,9 +32,9 @@ import com.facebook.imagepipeline.request.Postprocessor;
 import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
+import com.facebook.react.bridge.SoftAssertions;
 import com.facebook.react.common.annotations.VisibleForTesting;
 import com.facebook.react.common.build.ReactBuildConfig;
-import com.facebook.react.devsupport.StackTraceHelper;
 import com.facebook.react.internal.featureflags.ReactNativeNewArchitectureFeatureFlags;
 import com.facebook.react.modules.fresco.ImageCacheControl;
 import com.facebook.react.modules.fresco.ReactNetworkImageRequest;
@@ -62,8 +62,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import org.jetbrains.annotations.NotNull;
 import w8.f;
-@Metadata(d1 = {"\u0000Ê\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0010\u0007\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\r\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0010!\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u0000 \u0094\u00012\u00020\u0001:\u0004\u0095\u0001\u0094\u0001B;\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0016\u0010\u0005\u001a\u0012\u0012\u0002\b\u0003\u0012\u0002\b\u0003\u0012\u0002\b\u0003\u0012\u0002\b\u00030\u0004\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010\t\u001a\u0004\u0018\u00010\b¢\u0006\u0004\b\n\u0010\u000bJ\u0019\u0010\u000f\u001a\u00020\u000e2\b\u0010\r\u001a\u0004\u0018\u00010\fH\u0002¢\u0006\u0004\b\u000f\u0010\u0010J\u0017\u0010\u0012\u001a\u00020\u00112\u0006\u0010\r\u001a\u00020\u000eH\u0002¢\u0006\u0004\b\u0012\u0010\u0013J\u0017\u0010\u0017\u001a\u00020\u00162\u0006\u0010\u0015\u001a\u00020\u0014H\u0002¢\u0006\u0004\b\u0017\u0010\u0018J\u000f\u0010\u0019\u001a\u00020\u0014H\u0002¢\u0006\u0004\b\u0019\u0010\u001aJ\u000f\u0010\u001b\u001a\u00020\u0016H\u0002¢\u0006\u0004\b\u001b\u0010\u001cJ\u0017\u0010\u001f\u001a\u00020\u00142\u0006\u0010\u001e\u001a\u00020\u001dH\u0002¢\u0006\u0004\b\u001f\u0010 J\u0019\u0010\"\u001a\u00020\u00162\b\u0010!\u001a\u0004\u0018\u00010\fH\u0002¢\u0006\u0004\b\"\u0010#J\u0017\u0010$\u001a\u00020\u00162\b\u0010\t\u001a\u0004\u0018\u00010\b¢\u0006\u0004\b$\u0010%J\u0015\u0010'\u001a\u00020\u00162\u0006\u0010&\u001a\u00020\u0014¢\u0006\u0004\b'\u0010\u0018J\u0015\u0010)\u001a\u00020\u00162\u0006\u0010(\u001a\u00020\u0014¢\u0006\u0004\b)\u0010\u0018J\u0015\u0010,\u001a\u00020\u00162\u0006\u0010+\u001a\u00020*¢\u0006\u0004\b,\u0010-J\u0017\u00100\u001a\u00020\u00162\u0006\u0010/\u001a\u00020.H\u0016¢\u0006\u0004\b0\u00101J\u0015\u00103\u001a\u00020\u00162\u0006\u00102\u001a\u00020.¢\u0006\u0004\b3\u00101J\u0015\u00105\u001a\u00020\u00162\u0006\u00104\u001a\u00020.¢\u0006\u0004\b5\u00101J\u0015\u00107\u001a\u00020\u00162\u0006\u00106\u001a\u00020*¢\u0006\u0004\b7\u0010-J\u0015\u00109\u001a\u00020\u00162\u0006\u00108\u001a\u00020*¢\u0006\u0004\b9\u0010-J\u001d\u00109\u001a\u00020\u00162\u0006\u00108\u001a\u00020*2\u0006\u0010:\u001a\u00020.¢\u0006\u0004\b9\u0010;J\u0015\u0010>\u001a\u00020\u00162\u0006\u0010=\u001a\u00020<¢\u0006\u0004\b>\u0010?J\u0015\u0010B\u001a\u00020\u00162\u0006\u0010A\u001a\u00020@¢\u0006\u0004\bB\u0010CJ\u0015\u0010F\u001a\u00020\u00162\u0006\u0010E\u001a\u00020D¢\u0006\u0004\bF\u0010GJ\u0015\u0010I\u001a\u00020\u00162\u0006\u0010H\u001a\u00020*¢\u0006\u0004\bI\u0010-J\u0017\u0010L\u001a\u00020\u00162\b\u0010K\u001a\u0004\u0018\u00010J¢\u0006\u0004\bL\u0010MJ\u0017\u0010O\u001a\u00020\u00162\b\u0010N\u001a\u0004\u0018\u00010\f¢\u0006\u0004\bO\u0010#J\u0017\u0010P\u001a\u00020\u00162\b\u0010N\u001a\u0004\u0018\u00010\f¢\u0006\u0004\bP\u0010#J\u0015\u0010R\u001a\u00020\u00162\u0006\u0010Q\u001a\u00020\u0014¢\u0006\u0004\bR\u0010\u0018J\u0015\u0010T\u001a\u00020\u00162\u0006\u0010S\u001a\u00020.¢\u0006\u0004\bT\u00101J\u0017\u0010W\u001a\u00020\u00162\b\u0010V\u001a\u0004\u0018\u00010U¢\u0006\u0004\bW\u0010XJ\u000f\u0010Y\u001a\u00020\u0014H\u0016¢\u0006\u0004\bY\u0010\u001aJ\u0017\u0010\\\u001a\u00020\u00162\u0006\u0010[\u001a\u00020ZH\u0016¢\u0006\u0004\b\\\u0010]J\r\u0010^\u001a\u00020\u0016¢\u0006\u0004\b^\u0010\u001cJ\u001f\u0010b\u001a\u00020\u00162\u000e\u0010a\u001a\n\u0012\u0004\u0012\u00020`\u0018\u00010_H\u0007¢\u0006\u0004\bb\u0010cJ/\u0010h\u001a\u00020\u00162\u0006\u0010d\u001a\u00020.2\u0006\u0010e\u001a\u00020.2\u0006\u0010f\u001a\u00020.2\u0006\u0010g\u001a\u00020.H\u0014¢\u0006\u0004\bh\u0010iR$\u0010\u0005\u001a\u0012\u0012\u0002\b\u0003\u0012\u0002\b\u0003\u0012\u0002\b\u0003\u0012\u0002\b\u00030\u00048\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0005\u0010jR\u0016\u0010\u0007\u001a\u0004\u0018\u00010\u00068\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0007\u0010kR\u0018\u0010\t\u001a\u0004\u0018\u00010\b8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\t\u0010lR\u001a\u0010K\u001a\b\u0012\u0004\u0012\u00020\u001d0m8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bK\u0010nR$\u0010\u001e\u001a\u0004\u0018\u00010\u001d8\u0000@\u0000X\u0080\u000e¢\u0006\u0012\n\u0004\b\u001e\u0010o\u001a\u0004\bp\u0010q\"\u0004\br\u0010sR\u0018\u0010t\u001a\u0004\u0018\u00010\u001d8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bt\u0010oR\u0018\u0010v\u001a\u0004\u0018\u00010u8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bv\u0010wR\u0018\u0010x\u001a\u0004\u0018\u00010u8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bx\u0010wR\u0016\u00104\u001a\u00020.8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b4\u0010yR\u0016\u0010=\u001a\u00020<8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b=\u0010zR\u0016\u0010A\u001a\u00020@8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bA\u0010{R\u0016\u0010|\u001a\u00020\u00148\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b|\u0010}R\u0016\u0010&\u001a\u00020\u00148\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b&\u0010}R\u001d\u0010\u007f\u001a\b\u0018\u00010~R\u00020\u00008\u0002@\u0002X\u0082\u000e¢\u0006\u0007\n\u0005\b\u007f\u0010\u0080\u0001R\u001c\u0010\u0082\u0001\u001a\u0005\u0018\u00010\u0081\u00018\u0002@\u0002X\u0082\u000e¢\u0006\b\n\u0006\b\u0082\u0001\u0010\u0083\u0001R\"\u0010\u0085\u0001\u001a\u000b\u0012\u0004\u0012\u00020`\u0018\u00010\u0084\u00018\u0002@\u0002X\u0082\u000e¢\u0006\b\n\u0006\b\u0085\u0001\u0010\u0086\u0001R!\u0010\u0087\u0001\u001a\n\u0012\u0004\u0012\u00020`\u0018\u00010_8\u0002@\u0002X\u0082\u000e¢\u0006\b\n\u0006\b\u0087\u0001\u0010\u0088\u0001R\u0018\u0010\u0089\u0001\u001a\u00020.8\u0002@\u0002X\u0082\u000e¢\u0006\u0007\n\u0005\b\u0089\u0001\u0010yR\u0018\u0010\u008a\u0001\u001a\u00020\u00148\u0002@\u0002X\u0082\u000e¢\u0006\u0007\n\u0005\b\u008a\u0001\u0010}R\u0019\u0010V\u001a\u0004\u0018\u00010U8\u0002@\u0002X\u0082\u000e¢\u0006\u0007\n\u0005\bV\u0010\u008b\u0001R\u0019\u0010\u008c\u0001\u001a\u00020*8\u0002@\u0002X\u0082\u000e¢\u0006\b\n\u0006\b\u008c\u0001\u0010\u008d\u0001R\u0017\u0010E\u001a\u00020D8\u0002@\u0002X\u0082\u000e¢\u0006\u0007\n\u0005\bE\u0010\u008e\u0001R\u0016\u0010\u008f\u0001\u001a\u00020\u00148BX\u0082\u0004¢\u0006\u0007\u001a\u0005\b\u008f\u0001\u0010\u001aR\u001a\u0010\u0093\u0001\u001a\u0005\u0018\u00010\u0090\u00018BX\u0082\u0004¢\u0006\b\u001a\u0006\b\u0091\u0001\u0010\u0092\u0001¨\u0006\u0096\u0001"}, d2 = {"Lcom/facebook/react/views/image/ReactImageView;", "Lcom/facebook/drawee/view/b;", "Landroid/content/Context;", "context", "Lcom/facebook/drawee/controller/AbstractDraweeControllerBuilder;", "draweeControllerBuilder", "Lcom/facebook/react/views/image/GlobalImageLoadListener;", "globalImageLoadListener", "", "callerContext", "<init>", "(Landroid/content/Context;Lcom/facebook/drawee/controller/AbstractDraweeControllerBuilder;Lcom/facebook/react/views/image/GlobalImageLoadListener;Ljava/lang/Object;)V", "", "cacheControl", "Lcom/facebook/react/modules/fresco/ImageCacheControl;", "computeCacheControl", "(Ljava/lang/String;)Lcom/facebook/react/modules/fresco/ImageCacheControl;", "Lcom/facebook/imagepipeline/request/ImageRequest$RequestLevel;", "computeRequestLevel", "(Lcom/facebook/react/modules/fresco/ImageCacheControl;)Lcom/facebook/imagepipeline/request/ImageRequest$RequestLevel;", "", "doResize", "", "maybeUpdateViewFromRequest", "(Z)V", "hasMultipleSources", "()Z", "setSourceImage", "()V", "Lcom/facebook/react/views/imagehelper/ImageSource;", "imageSource", "shouldResize", "(Lcom/facebook/react/views/imagehelper/ImageSource;)Z", "uri", "warnImageSource", "(Ljava/lang/String;)V", "updateCallerContext", "(Ljava/lang/Object;)V", "useSmallCache", "setUseSmallCache", "shouldNotify", "setShouldNotifyLoadEvents", "", "blurRadius", "setBlurRadius", "(F)V", "", ViewProps.BACKGROUND_COLOR, "setBackgroundColor", "(I)V", ViewProps.BORDER_COLOR, "setBorderColor", "overlayColor", "setOverlayColor", ViewProps.BORDER_WIDTH, "setBorderWidth", "borderRadius", "setBorderRadius", ViewProps.POSITION, "(FI)V", "Lcom/facebook/drawee/drawable/ScalingUtils$ScaleType;", "scaleType", "setScaleType", "(Lcom/facebook/drawee/drawable/ScalingUtils$ScaleType;)V", "Landroid/graphics/Shader$TileMode;", "tileMode", "setTileMode", "(Landroid/graphics/Shader$TileMode;)V", "Lcom/facebook/react/views/image/ImageResizeMethod;", ViewProps.RESIZE_METHOD, "setResizeMethod", "(Lcom/facebook/react/views/image/ImageResizeMethod;)V", "multiplier", "setResizeMultiplier", "Lcom/facebook/react/bridge/ReadableArray;", "sources", "setSource", "(Lcom/facebook/react/bridge/ReadableArray;)V", StackTraceHelper.NAME_KEY, "setDefaultSource", "setLoadingIndicatorSource", ViewProps.ENABLED, "setProgressiveRenderingEnabled", "durationMs", "setFadeDuration", "Lcom/facebook/react/bridge/ReadableMap;", "headers", "setHeaders", "(Lcom/facebook/react/bridge/ReadableMap;)V", "hasOverlappingRendering", "Landroid/graphics/Canvas;", "canvas", "onDraw", "(Landroid/graphics/Canvas;)V", "maybeUpdateView", "Lcom/facebook/drawee/controller/ControllerListener;", "Lcom/facebook/imagepipeline/image/ImageInfo;", "controllerListener", "setControllerListener", "(Lcom/facebook/drawee/controller/ControllerListener;)V", "w", "h", "oldw", "oldh", "onSizeChanged", "(IIII)V", "Lcom/facebook/drawee/controller/AbstractDraweeControllerBuilder;", "Lcom/facebook/react/views/image/GlobalImageLoadListener;", "Ljava/lang/Object;", "", "Ljava/util/List;", "Lcom/facebook/react/views/imagehelper/ImageSource;", "getImageSource$ReactAndroid_release", "()Lcom/facebook/react/views/imagehelper/ImageSource;", "setImageSource$ReactAndroid_release", "(Lcom/facebook/react/views/imagehelper/ImageSource;)V", "cachedImageSource", "Landroid/graphics/drawable/Drawable;", "defaultImageDrawable", "Landroid/graphics/drawable/Drawable;", "loadingImageDrawable", "I", "Lcom/facebook/drawee/drawable/ScalingUtils$ScaleType;", "Landroid/graphics/Shader$TileMode;", "isDirty", "Z", "Lcom/facebook/react/views/image/ReactImageView$TilePostprocessor;", "tilePostprocessor", "Lcom/facebook/react/views/image/ReactImageView$TilePostprocessor;", "Lcom/facebook/imagepipeline/postprocessors/IterativeBoxBlurPostProcessor;", "iterativeBoxBlurPostProcessor", "Lcom/facebook/imagepipeline/postprocessors/IterativeBoxBlurPostProcessor;", "Lcom/facebook/react/views/image/ReactImageDownloadListener;", "downloadListener", "Lcom/facebook/react/views/image/ReactImageDownloadListener;", "controllerForTesting", "Lcom/facebook/drawee/controller/ControllerListener;", "fadeDurationMs", "progressiveRenderingEnabled", "Lcom/facebook/react/bridge/ReadableMap;", "resizeMultiplier", "F", "Lcom/facebook/react/views/image/ImageResizeMethod;", "isTiled", "Lcom/facebook/imagepipeline/common/ResizeOptions;", "getResizeOptions", "()Lcom/facebook/imagepipeline/common/ResizeOptions;", "resizeOptions", "Companion", "TilePostprocessor", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-@SourceDebugExtension({"SMAP\nReactImageView.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ReactImageView.kt\ncom/facebook/react/views/image/ReactImageView\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,676:1\n1#2:677\n*E\n"})
+@Metadata(d1 = {"\u0000Ê\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0010\n\u0002\u0010\u0007\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\r\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0010!\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u0000 \u0097\u00012\u00020\u0001:\u0004\u0098\u0001\u0097\u0001B;\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0016\u0010\u0005\u001a\u0012\u0012\u0002\b\u0003\u0012\u0002\b\u0003\u0012\u0002\b\u0003\u0012\u0002\b\u00030\u0004\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010\t\u001a\u0004\u0018\u00010\b¢\u0006\u0004\b\n\u0010\u000bJ\u0019\u0010\u000f\u001a\u00020\u000e2\b\u0010\r\u001a\u0004\u0018\u00010\fH\u0002¢\u0006\u0004\b\u000f\u0010\u0010J\u0017\u0010\u0012\u001a\u00020\u00112\u0006\u0010\r\u001a\u00020\u000eH\u0002¢\u0006\u0004\b\u0012\u0010\u0013J\u0017\u0010\u0017\u001a\u00020\u00162\u0006\u0010\u0015\u001a\u00020\u0014H\u0002¢\u0006\u0004\b\u0017\u0010\u0018J\u000f\u0010\u0019\u001a\u00020\u0014H\u0002¢\u0006\u0004\b\u0019\u0010\u001aJ!\u0010\u001f\u001a\u00020\u001e2\u0006\u0010\u001c\u001a\u00020\u001b2\b\b\u0002\u0010\u001d\u001a\u00020\u0014H\u0002¢\u0006\u0004\b\u001f\u0010 J\u000f\u0010!\u001a\u00020\u0016H\u0002¢\u0006\u0004\b!\u0010\"J\u0017\u0010$\u001a\u00020\u00142\u0006\u0010#\u001a\u00020\u001eH\u0002¢\u0006\u0004\b$\u0010%J\u0019\u0010'\u001a\u00020\u00162\b\u0010&\u001a\u0004\u0018\u00010\fH\u0002¢\u0006\u0004\b'\u0010(J\u0017\u0010)\u001a\u00020\u00162\b\u0010\t\u001a\u0004\u0018\u00010\b¢\u0006\u0004\b)\u0010*J\u0015\u0010,\u001a\u00020\u00162\u0006\u0010+\u001a\u00020\u0014¢\u0006\u0004\b,\u0010\u0018J\u0015\u0010.\u001a\u00020\u00162\u0006\u0010-\u001a\u00020\u0014¢\u0006\u0004\b.\u0010\u0018J\u0015\u00101\u001a\u00020\u00162\u0006\u00100\u001a\u00020/¢\u0006\u0004\b1\u00102J\u0017\u00105\u001a\u00020\u00162\u0006\u00104\u001a\u000203H\u0016¢\u0006\u0004\b5\u00106J\u0015\u00108\u001a\u00020\u00162\u0006\u00107\u001a\u000203¢\u0006\u0004\b8\u00106J\u0015\u0010:\u001a\u00020\u00162\u0006\u00109\u001a\u000203¢\u0006\u0004\b:\u00106J\u0015\u0010<\u001a\u00020\u00162\u0006\u0010;\u001a\u00020/¢\u0006\u0004\b<\u00102J\u0015\u0010>\u001a\u00020\u00162\u0006\u0010=\u001a\u00020/¢\u0006\u0004\b>\u00102J\u001d\u0010>\u001a\u00020\u00162\u0006\u0010=\u001a\u00020/2\u0006\u0010?\u001a\u000203¢\u0006\u0004\b>\u0010@J\u0015\u0010C\u001a\u00020\u00162\u0006\u0010B\u001a\u00020A¢\u0006\u0004\bC\u0010DJ\u0015\u0010G\u001a\u00020\u00162\u0006\u0010F\u001a\u00020E¢\u0006\u0004\bG\u0010HJ\u0015\u0010K\u001a\u00020\u00162\u0006\u0010J\u001a\u00020I¢\u0006\u0004\bK\u0010LJ\u0015\u0010N\u001a\u00020\u00162\u0006\u0010M\u001a\u00020/¢\u0006\u0004\bN\u00102J\u0017\u0010Q\u001a\u00020\u00162\b\u0010P\u001a\u0004\u0018\u00010O¢\u0006\u0004\bQ\u0010RJ\u0017\u0010S\u001a\u00020\u00162\b\u0010\u001c\u001a\u0004\u0018\u00010\u001b¢\u0006\u0004\bS\u0010TJ\u0017\u0010U\u001a\u00020\u00162\b\u0010\u001c\u001a\u0004\u0018\u00010\u001b¢\u0006\u0004\bU\u0010TJ\u0015\u0010W\u001a\u00020\u00162\u0006\u0010V\u001a\u00020\u0014¢\u0006\u0004\bW\u0010\u0018J\u0015\u0010Y\u001a\u00020\u00162\u0006\u0010X\u001a\u000203¢\u0006\u0004\bY\u00106J\u0017\u0010[\u001a\u00020\u00162\b\u0010Z\u001a\u0004\u0018\u00010\u001b¢\u0006\u0004\b[\u0010TJ\u000f\u0010\\\u001a\u00020\u0014H\u0016¢\u0006\u0004\b\\\u0010\u001aJ\u0017\u0010_\u001a\u00020\u00162\u0006\u0010^\u001a\u00020]H\u0016¢\u0006\u0004\b_\u0010`J\r\u0010a\u001a\u00020\u0016¢\u0006\u0004\ba\u0010\"J\u001f\u0010e\u001a\u00020\u00162\u000e\u0010d\u001a\n\u0012\u0004\u0012\u00020c\u0018\u00010bH\u0007¢\u0006\u0004\be\u0010fJ/\u0010k\u001a\u00020\u00162\u0006\u0010g\u001a\u0002032\u0006\u0010h\u001a\u0002032\u0006\u0010i\u001a\u0002032\u0006\u0010j\u001a\u000203H\u0014¢\u0006\u0004\bk\u0010lR$\u0010\u0005\u001a\u0012\u0012\u0002\b\u0003\u0012\u0002\b\u0003\u0012\u0002\b\u0003\u0012\u0002\b\u00030\u00048\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0005\u0010mR\u0016\u0010\u0007\u001a\u0004\u0018\u00010\u00068\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0007\u0010nR\u0018\u0010\t\u001a\u0004\u0018\u00010\b8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\t\u0010oR\u001a\u0010P\u001a\b\u0012\u0004\u0012\u00020\u001e0p8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\bP\u0010qR$\u0010#\u001a\u0004\u0018\u00010\u001e8\u0000@\u0000X\u0080\u000e¢\u0006\u0012\n\u0004\b#\u0010r\u001a\u0004\bs\u0010t\"\u0004\bu\u0010vR\u0018\u0010w\u001a\u0004\u0018\u00010\u001e8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bw\u0010rR\u0018\u0010y\u001a\u0004\u0018\u00010x8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\by\u0010zR\u0018\u0010{\u001a\u0004\u0018\u00010x8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b{\u0010zR\u0016\u00109\u001a\u0002038\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b9\u0010|R\u0016\u0010B\u001a\u00020A8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bB\u0010}R\u0016\u0010F\u001a\u00020E8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bF\u0010~R\u0017\u0010\u007f\u001a\u00020\u00148\u0002@\u0002X\u0082\u000e¢\u0006\u0007\n\u0005\b\u007f\u0010\u0080\u0001R\u0017\u0010+\u001a\u00020\u00148\u0002@\u0002X\u0082\u000e¢\u0006\u0007\n\u0005\b+\u0010\u0080\u0001R \u0010\u0082\u0001\u001a\t\u0018\u00010\u0081\u0001R\u00020\u00008\u0002@\u0002X\u0082\u000e¢\u0006\b\n\u0006\b\u0082\u0001\u0010\u0083\u0001R\u001c\u0010\u0085\u0001\u001a\u0005\u0018\u00010\u0084\u00018\u0002@\u0002X\u0082\u000e¢\u0006\b\n\u0006\b\u0085\u0001\u0010\u0086\u0001R\"\u0010\u0088\u0001\u001a\u000b\u0012\u0004\u0012\u00020c\u0018\u00010\u0087\u00018\u0002@\u0002X\u0082\u000e¢\u0006\b\n\u0006\b\u0088\u0001\u0010\u0089\u0001R!\u0010\u008a\u0001\u001a\n\u0012\u0004\u0012\u00020c\u0018\u00010b8\u0002@\u0002X\u0082\u000e¢\u0006\b\n\u0006\b\u008a\u0001\u0010\u008b\u0001R\u0018\u0010\u008c\u0001\u001a\u0002038\u0002@\u0002X\u0082\u000e¢\u0006\u0007\n\u0005\b\u008c\u0001\u0010|R\u0019\u0010\u008d\u0001\u001a\u00020\u00148\u0002@\u0002X\u0082\u000e¢\u0006\b\n\u0006\b\u008d\u0001\u0010\u0080\u0001R\u0019\u0010Z\u001a\u0004\u0018\u00010\u001b8\u0002@\u0002X\u0082\u000e¢\u0006\u0007\n\u0005\bZ\u0010\u008e\u0001R\u0019\u0010\u008f\u0001\u001a\u00020/8\u0002@\u0002X\u0082\u000e¢\u0006\b\n\u0006\b\u008f\u0001\u0010\u0090\u0001R\u0017\u0010J\u001a\u00020I8\u0002@\u0002X\u0082\u000e¢\u0006\u0007\n\u0005\bJ\u0010\u0091\u0001R\u0016\u0010\u0092\u0001\u001a\u00020\u00148BX\u0082\u0004¢\u0006\u0007\u001a\u0005\b\u0092\u0001\u0010\u001aR\u001a\u0010\u0096\u0001\u001a\u0005\u0018\u00010\u0093\u00018BX\u0082\u0004¢\u0006\b\u001a\u0006\b\u0094\u0001\u0010\u0095\u0001¨\u0006\u0099\u0001"}, d2 = {"Lcom/facebook/react/views/image/ReactImageView;", "Lcom/facebook/drawee/view/b;", "Landroid/content/Context;", "context", "Lcom/facebook/drawee/controller/AbstractDraweeControllerBuilder;", "draweeControllerBuilder", "Lcom/facebook/react/views/image/GlobalImageLoadListener;", "globalImageLoadListener", "", "callerContext", "<init>", "(Landroid/content/Context;Lcom/facebook/drawee/controller/AbstractDraweeControllerBuilder;Lcom/facebook/react/views/image/GlobalImageLoadListener;Ljava/lang/Object;)V", "", "cacheControl", "Lcom/facebook/react/modules/fresco/ImageCacheControl;", "computeCacheControl", "(Ljava/lang/String;)Lcom/facebook/react/modules/fresco/ImageCacheControl;", "Lcom/facebook/imagepipeline/request/ImageRequest$RequestLevel;", "computeRequestLevel", "(Lcom/facebook/react/modules/fresco/ImageCacheControl;)Lcom/facebook/imagepipeline/request/ImageRequest$RequestLevel;", "", "doResize", "", "maybeUpdateViewFromRequest", "(Z)V", "hasMultipleSources", "()Z", "Lcom/facebook/react/bridge/ReadableMap;", "source", "includeSize", "Lcom/facebook/react/views/imagehelper/ImageSource;", "readableMapToImageSource", "(Lcom/facebook/react/bridge/ReadableMap;Z)Lcom/facebook/react/views/imagehelper/ImageSource;", "setSourceImage", "()V", "imageSource", "shouldResize", "(Lcom/facebook/react/views/imagehelper/ImageSource;)Z", "uri", "warnImageSource", "(Ljava/lang/String;)V", "updateCallerContext", "(Ljava/lang/Object;)V", "useSmallCache", "setUseSmallCache", "shouldNotify", "setShouldNotifyLoadEvents", "", "blurRadius", "setBlurRadius", "(F)V", "", ViewProps.BACKGROUND_COLOR, "setBackgroundColor", "(I)V", ViewProps.BORDER_COLOR, "setBorderColor", "overlayColor", "setOverlayColor", ViewProps.BORDER_WIDTH, "setBorderWidth", "borderRadius", "setBorderRadius", ViewProps.POSITION, "(FI)V", "Lcom/facebook/drawee/drawable/ScalingUtils$ScaleType;", "scaleType", "setScaleType", "(Lcom/facebook/drawee/drawable/ScalingUtils$ScaleType;)V", "Landroid/graphics/Shader$TileMode;", "tileMode", "setTileMode", "(Landroid/graphics/Shader$TileMode;)V", "Lcom/facebook/react/views/image/ImageResizeMethod;", ViewProps.RESIZE_METHOD, "setResizeMethod", "(Lcom/facebook/react/views/image/ImageResizeMethod;)V", "multiplier", "setResizeMultiplier", "Lcom/facebook/react/bridge/ReadableArray;", "sources", "setSource", "(Lcom/facebook/react/bridge/ReadableArray;)V", "setDefaultSource", "(Lcom/facebook/react/bridge/ReadableMap;)V", "setLoadingIndicatorSource", ViewProps.ENABLED, "setProgressiveRenderingEnabled", "durationMs", "setFadeDuration", "headers", "setHeaders", "hasOverlappingRendering", "Landroid/graphics/Canvas;", "canvas", "onDraw", "(Landroid/graphics/Canvas;)V", "maybeUpdateView", "Lcom/facebook/drawee/controller/ControllerListener;", "Lcom/facebook/imagepipeline/image/ImageInfo;", "controllerListener", "setControllerListener", "(Lcom/facebook/drawee/controller/ControllerListener;)V", "w", "h", "oldw", "oldh", "onSizeChanged", "(IIII)V", "Lcom/facebook/drawee/controller/AbstractDraweeControllerBuilder;", "Lcom/facebook/react/views/image/GlobalImageLoadListener;", "Ljava/lang/Object;", "", "Ljava/util/List;", "Lcom/facebook/react/views/imagehelper/ImageSource;", "getImageSource$ReactAndroid_release", "()Lcom/facebook/react/views/imagehelper/ImageSource;", "setImageSource$ReactAndroid_release", "(Lcom/facebook/react/views/imagehelper/ImageSource;)V", "cachedImageSource", "Landroid/graphics/drawable/Drawable;", "defaultImageDrawable", "Landroid/graphics/drawable/Drawable;", "loadingImageDrawable", "I", "Lcom/facebook/drawee/drawable/ScalingUtils$ScaleType;", "Landroid/graphics/Shader$TileMode;", "isDirty", "Z", "Lcom/facebook/react/views/image/ReactImageView$TilePostprocessor;", "tilePostprocessor", "Lcom/facebook/react/views/image/ReactImageView$TilePostprocessor;", "Lcom/facebook/imagepipeline/postprocessors/IterativeBoxBlurPostProcessor;", "iterativeBoxBlurPostProcessor", "Lcom/facebook/imagepipeline/postprocessors/IterativeBoxBlurPostProcessor;", "Lcom/facebook/react/views/image/ReactImageDownloadListener;", "downloadListener", "Lcom/facebook/react/views/image/ReactImageDownloadListener;", "controllerForTesting", "Lcom/facebook/drawee/controller/ControllerListener;", "fadeDurationMs", "progressiveRenderingEnabled", "Lcom/facebook/react/bridge/ReadableMap;", "resizeMultiplier", "F", "Lcom/facebook/react/views/image/ImageResizeMethod;", "isTiled", "Lcom/facebook/imagepipeline/common/ResizeOptions;", "getResizeOptions", "()Lcom/facebook/imagepipeline/common/ResizeOptions;", "resizeOptions", "Companion", "TilePostprocessor", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+@SourceDebugExtension({"SMAP\nReactImageView.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ReactImageView.kt\ncom/facebook/react/views/image/ReactImageView\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,685:1\n1#2:686\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class ReactImageView extends b {
     public static final int REMOTE_IMAGE_FADE_DURATION_MS = 300;
@@ -100,7 +100,7 @@ public final class ReactImageView extends b {
     private static final Matrix tileMatrix = new Matrix();
 
     @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u0010\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0002R\u000e\u0010\u0004\u001a\u00020\u0005X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\f"}, d2 = {"Lcom/facebook/react/views/image/ReactImageView$Companion;", "", "<init>", "()V", "REMOTE_IMAGE_FADE_DURATION_MS", "", "tileMatrix", "Landroid/graphics/Matrix;", "buildHierarchy", "Lcom/facebook/drawee/generic/GenericDraweeHierarchy;", "context", "Landroid/content/Context;", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-    @SourceDebugExtension({"SMAP\nReactImageView.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ReactImageView.kt\ncom/facebook/react/views/image/ReactImageView$Companion\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,676:1\n1#2:677\n*E\n"})
+    @SourceDebugExtension({"SMAP\nReactImageView.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ReactImageView.kt\ncom/facebook/react/views/image/ReactImageView$Companion\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,685:1\n1#2:686\n*E\n"})
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -372,6 +372,55 @@ public final class ReactImageView extends b {
         abstractDraweeControllerBuilder.z();
     }
 
+    private final ImageSource readableMapToImageSource(ReadableMap readableMap, boolean z10) {
+        ImageSource imageSource;
+        double d10;
+        boolean z11;
+        ImageCacheControl computeCacheControl = computeCacheControl(readableMap.getString("cache"));
+        String string = readableMap.getString("uri");
+        if (z10) {
+            double d11 = 0.0d;
+            if (readableMap.hasKey("width")) {
+                d10 = readableMap.getDouble("width");
+            } else {
+                d10 = 0.0d;
+            }
+            if (readableMap.hasKey("height")) {
+                d11 = readableMap.getDouble("height");
+            }
+            double d12 = d11;
+            if (readableMap.hasKey("isForceCached")) {
+                z11 = readableMap.getBoolean("isForceCached");
+            } else {
+                z11 = false;
+            }
+            boolean z12 = z11;
+            double d13 = d10;
+            Context context = getContext();
+            Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
+            imageSource = new ImageSource(context, string, d13, d12, computeCacheControl, z12);
+        } else {
+            Context context2 = getContext();
+            Intrinsics.checkNotNullExpressionValue(context2, "getContext(...)");
+            imageSource = new ImageSource(context2, string, 0.0d, 0.0d, computeCacheControl, false, 44, null);
+        }
+        if (Intrinsics.areEqual(Uri.EMPTY, imageSource.getUri())) {
+            warnImageSource(string);
+            ImageSource.Companion companion = ImageSource.Companion;
+            Context context3 = getContext();
+            Intrinsics.checkNotNullExpressionValue(context3, "getContext(...)");
+            return companion.getTransparentBitmapImageSource(context3);
+        }
+        return imageSource;
+    }
+
+    static /* synthetic */ ImageSource readableMapToImageSource$default(ReactImageView reactImageView, ReadableMap readableMap, boolean z10, int i10, Object obj) {
+        if ((i10 & 2) != 0) {
+            z10 = false;
+        }
+        return reactImageView.readableMapToImageSource(readableMap, z10);
+    }
+
     private final void setSourceImage() {
         this.imageSource = null;
         if (this.sources.isEmpty()) {
@@ -539,12 +588,20 @@ public final class ReactImageView extends b {
         maybeUpdateView();
     }
 
-    public final void setDefaultSource(String str) {
-        Context context = getContext();
-        Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        Drawable resourceDrawable = ResourceDrawableIdHelper.getResourceDrawable(context, str);
-        if (!Intrinsics.areEqual(this.defaultImageDrawable, resourceDrawable)) {
-            this.defaultImageDrawable = resourceDrawable;
+    public final void setDefaultSource(ReadableMap readableMap) {
+        Drawable drawable;
+        if (readableMap != null) {
+            ImageSource readableMapToImageSource = readableMapToImageSource(readableMap, false);
+            Uri uri = readableMapToImageSource.getUri();
+            SoftAssertions.assertCondition(!readableMapToImageSource.isResource(), "ReactImageView: Only local resources can be used as default image. Uri: " + uri);
+            Context context = getContext();
+            Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
+            drawable = ResourceDrawableIdHelper.getResourceDrawable(context, readableMapToImageSource.getSource());
+        } else {
+            drawable = null;
+        }
+        if (!Intrinsics.areEqual(this.defaultImageDrawable, drawable)) {
+            this.defaultImageDrawable = drawable;
             this.isDirty = true;
         }
     }
@@ -561,15 +618,20 @@ public final class ReactImageView extends b {
         this.imageSource = imageSource;
     }
 
-    public final void setLoadingIndicatorSource(String str) {
-        com.facebook.drawee.drawable.b bVar;
-        Context context = getContext();
-        Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        Drawable resourceDrawable = ResourceDrawableIdHelper.getResourceDrawable(context, str);
-        if (resourceDrawable != null) {
-            bVar = new com.facebook.drawee.drawable.b(resourceDrawable, 1000);
+    public final void setLoadingIndicatorSource(ReadableMap readableMap) {
+        Drawable drawable;
+        com.facebook.drawee.drawable.b bVar = null;
+        if (readableMap != null) {
+            ImageSource readableMapToImageSource = readableMapToImageSource(readableMap, false);
+            SoftAssertions.assertCondition(!readableMapToImageSource.isResource(), "ReactImageView: Only local resources can be used as default image. Uri: " + readableMapToImageSource.getUri());
+            Context context = getContext();
+            Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
+            drawable = ResourceDrawableIdHelper.getResourceDrawable(context, readableMapToImageSource.getSource());
         } else {
-            bVar = null;
+            drawable = null;
+        }
+        if (drawable != null) {
+            bVar = new com.facebook.drawee.drawable.b(drawable, 1000);
         }
         if (!Intrinsics.areEqual(this.loadingImageDrawable, bVar)) {
             this.loadingImageDrawable = bVar;
@@ -687,25 +749,12 @@ public final class ReactImageView extends b {
     }
 
     public final void setSource(ReadableArray readableArray) {
-        boolean z10;
-        double d10;
         ArrayList arrayList = new ArrayList();
         if (readableArray != null && readableArray.size() != 0) {
             if (readableArray.size() == 1) {
                 ReadableMap map = readableArray.getMap(0);
                 if (map != null) {
-                    ImageCacheControl computeCacheControl = computeCacheControl(map.getString("cache"));
-                    Context context = getContext();
-                    Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-                    ImageSource imageSource = new ImageSource(context, map.getString("uri"), 0.0d, 0.0d, computeCacheControl, false, 44, null);
-                    if (Intrinsics.areEqual(Uri.EMPTY, imageSource.getUri())) {
-                        warnImageSource(map.getString("uri"));
-                        ImageSource.Companion companion = ImageSource.Companion;
-                        Context context2 = getContext();
-                        Intrinsics.checkNotNullExpressionValue(context2, "getContext(...)");
-                        imageSource = companion.getTransparentBitmapImageSource(context2);
-                    }
-                    arrayList.add(imageSource);
+                    arrayList.add(readableMapToImageSource(map, false));
                 } else {
                     throw new IllegalStateException("Required value was null.");
                 }
@@ -714,41 +763,15 @@ public final class ReactImageView extends b {
                 for (int i10 = 0; i10 < size; i10++) {
                     ReadableMap map2 = readableArray.getMap(i10);
                     if (map2 != null) {
-                        ImageCacheControl computeCacheControl2 = computeCacheControl(map2.getString("cache"));
-                        String string = map2.getString("uri");
-                        if (map2.hasKey("isForceCached")) {
-                            z10 = map2.getBoolean("isForceCached");
-                        } else {
-                            z10 = false;
-                        }
-                        double d11 = 0.0d;
-                        if (map2.hasKey("width")) {
-                            d10 = map2.getDouble("width");
-                        } else {
-                            d10 = 0.0d;
-                        }
-                        if (map2.hasKey("height")) {
-                            d11 = map2.getDouble("height");
-                        }
-                        Context context3 = getContext();
-                        Intrinsics.checkNotNullExpressionValue(context3, "getContext(...)");
-                        ImageSource imageSource2 = new ImageSource(context3, string, d10, d11, computeCacheControl2, z10);
-                        if (Intrinsics.areEqual(Uri.EMPTY, imageSource2.getUri())) {
-                            warnImageSource(string);
-                            ImageSource.Companion companion2 = ImageSource.Companion;
-                            Context context4 = getContext();
-                            Intrinsics.checkNotNullExpressionValue(context4, "getContext(...)");
-                            imageSource2 = companion2.getTransparentBitmapImageSource(context4);
-                        }
-                        arrayList.add(imageSource2);
+                        arrayList.add(readableMapToImageSource(map2, true));
                     }
                 }
             }
         } else {
-            ImageSource.Companion companion3 = ImageSource.Companion;
-            Context context5 = getContext();
-            Intrinsics.checkNotNullExpressionValue(context5, "getContext(...)");
-            arrayList.add(companion3.getTransparentBitmapImageSource(context5));
+            ImageSource.Companion companion = ImageSource.Companion;
+            Context context = getContext();
+            Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
+            arrayList.add(companion.getTransparentBitmapImageSource(context));
         }
         if (Intrinsics.areEqual(this.sources, arrayList)) {
             return;

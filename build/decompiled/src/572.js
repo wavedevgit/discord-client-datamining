@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function arg0, arg1, arg2() {
-        _fun6923: for (var _fun6923_ip = 0;;) switch (_fun6923_ip) {
+        _fun6925: for (var _fun6925_ip = 0;;) switch (_fun6925_ip) {
             case 0:
                 var4 = arg0;
                 var3 = arg1;
@@ -13,8 +13,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = 'function';
                 var0 = typeof var4;
                 if (!(var1 === var0)) {
-                    _fun6923_ip = 161;
-                    continue _fun6923
+                    _fun6925_ip = 161;
+                    continue _fun6925
                 }
             case 23:
                 var5 = _closure1_slot0;
@@ -27,16 +27,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = true;
                 var5 = true;
                 if (!var7) {
-                    _fun6923_ip = 115;
-                    continue _fun6923
+                    _fun6925_ip = 115;
+                    continue _fun6925
                 }
             case 59:
                 var7 = 'leading';
                 var9 = var7 in var8;
                 var7 = true;
                 if (!var9) {
-                    _fun6923_ip = 84;
-                    continue _fun6923
+                    _fun6925_ip = 84;
+                    continue _fun6925
                 }
             case 72:
                 var9 = var8.leading;
@@ -47,8 +47,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9 = var9 in var8;
                 var1 = true;
                 if (!var9) {
-                    _fun6923_ip = 109;
-                    continue _fun6923
+                    _fun6925_ip = 109;
+                    continue _fun6925
                 }
             case 97:
                 var8 = var8.trailing;

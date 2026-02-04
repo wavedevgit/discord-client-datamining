@@ -7,13 +7,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function() {
-        _fun47206: for (var _fun47206_ip = 0;;) switch (_fun47206_ip) {
+        _fun47209: for (var _fun47209_ip = 0;;) switch (_fun47209_ip) {
             case 0:
                 var1 = arguments[0];
                 var0 = undefined;
                 if (!(var1 === var0)) {
-                    _fun47206_ip = 16;
-                    continue _fun47206
+                    _fun47209_ip = 16;
+                    continue _fun47209
                 }
             case 9:
                 var1 = _closure1_slot2;

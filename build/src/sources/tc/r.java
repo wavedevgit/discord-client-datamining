@@ -15,10 +15,10 @@ public abstract class r {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public t f49975a;
+        public t f49972a;
 
         public a(t tVar) {
-            this.f49975a = tVar;
+            this.f49972a = tVar;
         }
     }
 
@@ -74,22 +74,22 @@ public abstract class r {
         int h10 = g0Var.h(7);
         int h11 = g0Var.h(24) + 4;
         if (h10 == 0) {
-            aVar.f49975a = h(lVar);
+            aVar.f49972a = h(lVar);
             return g10;
         }
-        t tVar = aVar.f49975a;
+        t tVar = aVar.f49972a;
         if (tVar != null) {
             if (h10 == 3) {
-                aVar.f49975a = tVar.b(g(lVar, h11));
+                aVar.f49972a = tVar.b(g(lVar, h11));
                 return g10;
             } else if (h10 == 4) {
-                aVar.f49975a = tVar.c(j(lVar, h11));
+                aVar.f49972a = tVar.c(j(lVar, h11));
                 return g10;
             } else if (h10 == 6) {
                 h0 h0Var = new h0(h11);
                 lVar.readFully(h0Var.e(), 0, h11);
                 h0Var.V(4);
-                aVar.f49975a = tVar.a(ji.s.s(jd.a.a(h0Var)));
+                aVar.f49972a = tVar.a(ji.s.s(jd.a.a(h0Var)));
                 return g10;
             } else {
                 lVar.k(h11);
@@ -151,6 +151,6 @@ public abstract class r {
         h0 h0Var = new h0(i10);
         lVar.readFully(h0Var.e(), 0, i10);
         h0Var.V(4);
-        return Arrays.asList(e0.i(h0Var, false, false).f49936b);
+        return Arrays.asList(e0.i(h0Var, false, false).f49933b);
     }
 }

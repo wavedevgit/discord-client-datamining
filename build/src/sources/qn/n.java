@@ -9,10 +9,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class n implements e {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f48004b = new a(null);
+    public static final a f48001b = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final HashMap f48005a;
+    private final HashMap f48002a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -29,13 +29,13 @@ public final class n implements e {
     public static final class b extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f48006d;
+        Object f48003d;
 
         /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f48007e;
+        /* synthetic */ Object f48004e;
 
         /* renamed from: o  reason: collision with root package name */
-        int f48009o;
+        int f48006o;
 
         b(Continuation continuation) {
             super(continuation);
@@ -43,8 +43,8 @@ public final class n implements e {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f48007e = obj;
-            this.f48009o |= Integer.MIN_VALUE;
+            this.f48004e = obj;
+            this.f48006o |= Integer.MIN_VALUE;
             Object a10 = n.this.a(null, null, this);
             if (a10 == rr.b.f()) {
                 return a10;
@@ -55,7 +55,7 @@ public final class n implements e {
 
     public n() {
         b();
-        this.f48005a = new HashMap();
+        this.f48002a = new HashMap();
     }
 
     private final m b() {

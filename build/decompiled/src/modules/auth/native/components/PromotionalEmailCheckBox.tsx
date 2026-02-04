@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/auth/native/components/PromotionalEmailCheckBox.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun100517: for (var _fun100517_ip = 0;;) switch (_fun100517_ip) {
+        _fun100533: for (var _fun100533_ip = 0;;) switch (_fun100533_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.style;
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot0 = var10;
                 var0 = null;
                 if (!var1) {
-                    _fun100517_ip = 345;
-                    continue _fun100517
+                    _fun100533_ip = 345;
+                    continue _fun100533
                 }
             case 63:
                 var3 = _closure1_slot6;

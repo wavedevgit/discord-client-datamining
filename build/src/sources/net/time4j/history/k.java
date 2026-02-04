@@ -106,7 +106,7 @@ final class k extends nt.d implements t {
         mt.c cVar = nt.a.f42032g;
         v vVar = v.WIDE;
         v vVar2 = (v) dVar.b(cVar, vVar);
-        mt.c cVar2 = rt.a.f49115c;
+        mt.c cVar2 = rt.a.f49112c;
         Boolean bool = Boolean.FALSE;
         String str = "a";
         if (((Boolean) dVar.b(cVar2, bool)).booleanValue()) {
@@ -117,7 +117,7 @@ final class k extends nt.d implements t {
             return c10.o(this, str);
         }
         nt.b d10 = nt.b.d((Locale) dVar.b(nt.a.f42028c, Locale.ROOT));
-        if (((Boolean) dVar.b(rt.a.f49114b, bool)).booleanValue()) {
+        if (((Boolean) dVar.b(rt.a.f49111b, bool)).booleanValue()) {
             if (vVar2 == vVar) {
                 str = "w";
             }

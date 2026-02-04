@@ -14,7 +14,7 @@ public abstract class u2 {
         List<String> list2 = list;
         ArrayList arrayList = new ArrayList(CollectionsKt.w(list2, 10));
         for (String str : list2) {
-            arrayList.add(new d.a(str, a.f54717e, 0, 4, null));
+            arrayList.add(new d.a(str, a.f54714e, 0, 4, null));
         }
         return arrayList;
     }

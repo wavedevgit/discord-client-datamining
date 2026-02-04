@@ -42,7 +42,7 @@ public abstract class c {
         } else {
             Context context = viewGroup.getContext();
             Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-            d10 = mp.s.d(context, yg.b.f54103o, null, false, 6, null);
+            d10 = mp.s.d(context, yg.b.f54100o, null, false, 6, null);
         }
         viewGroup.setBackgroundTintList(ColorStateList.valueOf(d10));
         if (stepStyle != null) {

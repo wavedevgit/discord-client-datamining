@@ -274,7 +274,7 @@ public final class j {
         boolean t10 = renderProps.t();
         up.a b10 = this.f35613d.b();
         Function1 k10 = m6.k(context);
-        vn.a aVar = vn.a.f51701e;
+        vn.a aVar = vn.a.f51698e;
         return j2.f(renderProps, context, null, c10, null, null, false, c0364c, m6.v(renderProps), t10, b10, new Function0() { // from class: kp.c
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {

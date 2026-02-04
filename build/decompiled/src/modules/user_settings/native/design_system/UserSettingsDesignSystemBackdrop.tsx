@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/design_system/UserSettingsDesignSystemBackdrop.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun88304: for (var _fun88304_ip = 0;;) switch (_fun88304_ip) {
+        _fun88321: for (var _fun88321_ip = 0;;) switch (_fun88321_ip) {
             case 0:
                 var12 = function() {
                     var2 = _closure2_slot1;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var6.bind(var3)(var1);
                 var1 = var2.useAnimatedStyle;
                 var0 = function() {
-                    _fun88306: for (var _fun88306_ip = 0;;) switch (_fun88306_ip) {
+                    _fun88323: for (var _fun88323_ip = 0;;) switch (_fun88323_ip) {
                         case 0:
                             var0 = {};
                             var3 = _closure1_slot0;
@@ -202,8 +202,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = _closure2_slot0;
                             var3 = 0;
                             if (!var2) {
-                                _fun88306_ip = 47;
-                                continue _fun88306
+                                _fun88323_ip = 47;
+                                continue _fun88323
                             }
                         case 44:
                             var3 = 1;
@@ -291,8 +291,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(2);
                 var4[0] = var6;
                 if (!var5) {
-                    _fun88304_ip = 654;
-                    continue _fun88304
+                    _fun88321_ip = 654;
+                    continue _fun88321
                 }
             case 419:
                 var8 = _closure1_slot6;

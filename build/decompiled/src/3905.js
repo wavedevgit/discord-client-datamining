@@ -72,7 +72,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot3 = var4;
     var4 = function() { // Environment: var1
         var0 = function arg0() {
-            _fun35181: for (var _fun35181_ip = 0;;) switch (_fun35181_ip) {
+            _fun35183: for (var _fun35183_ip = 0;;) switch (_fun35183_ip) {
                 case 0:
                     var3 = arg0;
                     var1 = ['swipeRight', 'swipeLeft', 'horizontalSwipe'];
@@ -80,8 +80,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var0.bind(var1)(var3);
                     var0 = 'x';
                     if (var1) {
-                        _fun35181_ip = 62;
-                        continue _fun35181
+                        _fun35183_ip = 62;
+                        continue _fun35183
                     }
                 case 30:
                     var2 = ['swipeUp', 'swipeDown', 'verticalSwipe'];
@@ -89,8 +89,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var1.bind(var2)(var3);
                     var1 = undefined;
                     if (!var2) {
-                        _fun35181_ip = 59;
-                        continue _fun35181
+                        _fun35183_ip = 59;
+                        continue _fun35183
                     }
                 case 55:
                     var1 = 'y';

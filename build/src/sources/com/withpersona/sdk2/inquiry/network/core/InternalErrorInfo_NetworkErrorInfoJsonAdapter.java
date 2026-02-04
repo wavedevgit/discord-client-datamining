@@ -83,7 +83,7 @@ public final class InternalErrorInfo_NetworkErrorInfoJsonAdapter extends h {
         }
         Constructor<InternalErrorInfo.NetworkErrorInfo> constructor = this.constructorRef;
         if (constructor == null) {
-            Class cls = vm.c.f51691c;
+            Class cls = vm.c.f51688c;
             Class cls2 = Integer.TYPE;
             constructor = InternalErrorInfo.NetworkErrorInfo.class.getDeclaredConstructor(cls2, String.class, Boolean.TYPE, ErrorResponse.Error.class, cls2, cls);
             this.constructorRef = constructor;

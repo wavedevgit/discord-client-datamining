@@ -300,7 +300,7 @@ public class g extends Drawable implements n {
 
     public static g m(Context context, float f10, ColorStateList colorStateList) {
         if (colorStateList == null) {
-            colorStateList = ColorStateList.valueOf(eh.a.c(context, yg.b.f54103o, g.class.getSimpleName()));
+            colorStateList = ColorStateList.valueOf(eh.a.c(context, yg.b.f54100o, g.class.getSimpleName()));
         }
         g gVar = new g();
         gVar.N(context);

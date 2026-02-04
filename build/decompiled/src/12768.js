@@ -1,59 +1,126 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
+    var2 = exports;
+    var0 = require;
+    var _closure1_slot0 = var0;
+    var0 = dependencyMap;
+    var _closure1_slot1 = var0;
     var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var2 = {};
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
     var0 = true;
-    var2.value = var0;
+    var3.value = var0;
     var0 = '__esModule';
-    var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = function arg0() {
-        _fun97741: for (var _fun97741_ip = 0;;) switch (_fun97741_ip) {
-            case 0:
-                var2 = arg0;
-                var1 = var2.match;
-                var0 = /^(?:https?:\\/\\ / ) ? (\[
-            [ ^ \]
-        ] + \] | [ ^ \/:\s]+)(?::\d+)?(?:[\/?#]|$)/;
-            var2 = var1.bind(var2)(var0);
-            var0 = null;
-            var1 = var0 == var2;
-            var0 = undefined;
-            if (var1) {
-                _fun97741_ip = 46;
-                continue _fun97741
-            }
-            case 39:
-            var1 = 1;
-            var0 = var2[var1];
-            case 46:
-            var2 = 'string';
-            var1 = typeof var0;
-            if (!(var2 === var1)) {
-                _fun97741_ip = 59;
-                continue _fun97741
-            }
-            case 57:
-            return var0;
-            case 59:
-            var0 = global;
-            var2 = var0.Error;
-            var0 = var2.prototype;
-            var1 = Object.create(var0, {
-                constructor: {
-                    value: var2
-                }
-            });
-            var3 = 'Invalid URL - host not found';
-            var4 = var1;
-            var0 = new var4[var2](var3, var2);
-            var0 = var0 instanceof Object ? var0 : var1;
-            throw var0;
-        }
-    };
-    var1.getHostFromUrl = var0;
+    var0 = var4.bind(var5)(var2, var0, var3);
     var0 = undefined;
+    var2.default = var0;
+    var1 = function() {
+        var0 = function(arg0) { // Environment: var0
+            var0 = arg0;
+            var4 = _closure1_slot0;
+            var3 = _closure1_slot1;
+            var2 = 0;
+            var2 = var3[var2];
+            var3 = undefined;
+            var2 = var4.bind(var3)(var2);
+            var2 = var2.assertHasLoggerPlugin;
+            var2 = var2.bind(var3)(var0);
+            var _closure3_slot0 = var0;
+            var0 = {};
+            var1 = function() {
+                var1 = global;
+                var2 = var1.console;
+                var2 = var2.log;
+                var _closure4_slot0 = var2;
+                var3 = var1.console;
+                var2 = function() { // Environment: var0
+                    var0 = undefined;
+                    var1 = undefined;
+                    var4 = _closure4_slot0;
+                    var3 = var4.apply;
+                    var1 = arguments;
+                    var2 = var1;
+                    var2 = var3.bind(var4)(var0, var2);
+                    var4 = _closure3_slot0;
+                    var3 = var4.log;
+                    var2 = var3.apply;
+                    var1 = var2.bind(var3)(var4, var1);
+                    return var0;
+                };
+                var3.log = var2;
+                var2 = var1.console;
+                var2 = var2.warn;
+                var _closure4_slot1 = var2;
+                var3 = var1.console;
+                var2 = function() { // Environment: var0
+                    _fun97752: for (var _fun97752_ip = 0;;) switch (_fun97752_ip) {
+                        case 0:
+                            var0 = undefined;
+                            var5 = undefined;
+                            var3 = _closure4_slot1;
+                            var2 = var3.apply;
+                            var5 = arguments;
+                            var1 = var5;
+                            var1 = var2.bind(var3)(var0, var1);
+                            var3 = _closure3_slot0;
+                            var2 = var3.warn;
+                            var1 = arguments.length;
+                            var4 = 0;
+                            var6 = var1 <= var4;
+                            var1 = undefined;
+                            if (var6) {
+                                _fun97752_ip = 57;
+                                continue _fun97752
+                            }
+                        case 53:
+                            var1 = arguments[var4];
+                        case 57:
+                            var1 = var2.bind(var3)(var1);
+                            return var0;
+                    }
+                };
+                var3.warn = var2;
+                var2 = var1.console;
+                var2 = var2.debug;
+                var _closure4_slot2 = var2;
+                var1 = var1.console;
+                var0 = function() { // Environment: var0
+                    _fun97753: for (var _fun97753_ip = 0;;) switch (_fun97753_ip) {
+                        case 0:
+                            var0 = undefined;
+                            var5 = undefined;
+                            var3 = _closure4_slot2;
+                            var2 = var3.apply;
+                            var5 = arguments;
+                            var1 = var5;
+                            var1 = var2.bind(var3)(var0, var1);
+                            var3 = _closure3_slot0;
+                            var2 = var3.debug;
+                            var1 = arguments.length;
+                            var4 = 0;
+                            var6 = var1 <= var4;
+                            var1 = undefined;
+                            if (var6) {
+                                _fun97753_ip = 58;
+                                continue _fun97753
+                            }
+                        case 54:
+                            var1 = arguments[var4];
+                        case 58:
+                            var1 = var2.bind(var3)(var1);
+                            return var0;
+                    }
+                };
+                var1.debug = var0;
+                var0 = undefined;
+                return var0;
+            };
+            var0.onConnect = var1;
+            return var0;
+        };
+        return var0;
+    };
+    var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12751]);

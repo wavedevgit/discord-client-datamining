@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/share/native/ShareFooterLayout.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun73117: for (var _fun73117_ip = 0;;) switch (_fun73117_ip) {
+        _fun73134: for (var _fun73134_ip = 0;;) switch (_fun73134_ip) {
             case 0:
                 var0 = arg0;
                 var15 = var0.preview;
@@ -197,8 +197,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var9 != var15;
                 var5 = null;
                 if (!var4) {
-                    _fun73117_ip = 341;
-                    continue _fun73117
+                    _fun73134_ip = 341;
+                    continue _fun73134
                 }
             case 283:
                 var7 = _closure1_slot6;
@@ -235,8 +235,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8[0] = var11;
                 var9 = var9 != var13;
                 if (!var9) {
-                    _fun73117_ip = 471;
-                    continue _fun73117
+                    _fun73134_ip = 471;
+                    continue _fun73134
                 }
             case 418:
                 var12 = _closure1_slot4;

@@ -8,11 +8,11 @@ var5 = require;
         var _closure1_slot1 = var0;
         var _closure1_slot2 = var6;
         var0 = function arg0() {
-            _fun48541: for(var _fun48541_ip = 0; ; ) switch(_fun48541_ip) {
+            _fun48544: for(var _fun48544_ip = 0; ; ) switch(_fun48544_ip) {
 case 0:
                 var4 = arg0;
                 var0 = null;
-                if(!var4) { _fun48541_ip = 65; continue _fun48541 }
+                if(!var4) { _fun48544_ip = 65; continue _fun48544 }
 case 8:
                 var3 = var4.split;
                 var2 = _closure1_slot9;
@@ -32,7 +32,7 @@ case 65:
         };
         var _closure1_slot11 = var0;
         var3 = function arg0() {
-            _fun48542: for(var _fun48542_ip = 0; ; ) switch(_fun48542_ip) {
+            _fun48545: for(var _fun48545_ip = 0; ; ) switch(_fun48545_ip) {
 case 0:
                 var0 = arg0;
                 var21 = var0.fontData;
@@ -80,7 +80,7 @@ case 0:
                 var5 = 'string';
                 var0 = typeof var2;
                 var3 = var2;
-                if(!(var5 === var0)) { _fun48542_ip = 470; continue _fun48542 }
+                if(!(var5 === var0)) { _fun48545_ip = 470; continue _fun48545 }
 case 238:
                 var0 = global;
                 var0 = var0.Object;
@@ -89,17 +89,17 @@ case 238:
                 var5 = var6.call;
                 var0 = _closure1_slot10;
                 var0 = var5.bind(var6)(var0, var2);
-                if(var0) { _fun48542_ip = 459; continue _fun48542 }
+                if(var0) { _fun48545_ip = 459; continue _fun48545 }
 case 278:
                 var5 = _closure1_slot6;
                 var0 = var5.exec;
                 var10 = var0.bind(var5)(var2);
-                if(var10) { _fun48542_ip = 311; continue _fun48542 }
+                if(var10) { _fun48545_ip = 311; continue _fun48545 }
 case 296:
                 var5 = _closure1_slot10;
                 var0 = null;
                 var5[var2] = var0;
-                _fun48542_ip = 467; continue _fun48542;
+                _fun48545_ip = 467; continue _fun48545;
 case 311:
                 var11 = /bold/;
                 var8 = var11.exec;
@@ -113,19 +113,19 @@ case 311:
                 var6 = _closure1_slot10;
                 var5 = {};
                 var7 = var10[var7];
-                if(var7) { _fun48542_ip = 388; continue _fun48542 }
+                if(var7) { _fun48545_ip = 388; continue _fun48545 }
 case 385:
                 var7 = 12;
 case 388:
                 var5.fontSize = var7;
                 var7 = 'normal';
                 var11 = var7;
-                if(!var12) { _fun48542_ip = 407; continue _fun48542 }
+                if(!var12) { _fun48545_ip = 407; continue _fun48545 }
 case 403:
                 var11 = 'bold';
 case 407:
                 var5.fontWeight = var11;
-                if(!var8) { _fun48542_ip = 419; continue _fun48542 }
+                if(!var8) { _fun48545_ip = 419; continue _fun48545 }
 case 415:
                 var7 = 'italic';
 case 419:
@@ -138,7 +138,7 @@ case 419:
                 var6[var2] = var5;
                 var5 = _closure1_slot10;
                 var0 = var5[var2];
-                _fun48542_ip = 467; continue _fun48542;
+                _fun48545_ip = 467; continue _fun48545;
 case 459:
                 var1 = _closure1_slot10;
                 var0 = var1[var2];
@@ -155,16 +155,16 @@ case 470:
         };
         var _closure1_slot12 = var3;
         var0 = function arg0() {
-            _fun48543: for(var _fun48543_ip = 0; ; ) switch(_fun48543_ip) {
+            _fun48546: for(var _fun48546_ip = 0; ; ) switch(_fun48546_ip) {
 case 0:
                 var6 = arg0;
                 var2 = typeof var6;
                 var0 = 'string';
-                if(!(var0 !== var2)) { _fun48543_ip = 25; continue _fun48543 }
+                if(!(var0 !== var2)) { _fun48546_ip = 25; continue _fun48546 }
 case 14:
                 var1 = 'number';
                 var0 = var6;
-                if(!(var1 === var2)) { _fun48543_ip = 63; continue _fun48543 }
+                if(!(var1 === var2)) { _fun48546_ip = 63; continue _fun48546 }
 case 25:
                 var4 = _closure1_slot5;
                 var3 = _closure1_slot3;
@@ -213,7 +213,7 @@ case 63:
         var4 = {};
         var _closure1_slot10 = var4;
         var4 = function arg0, arg1() {
-            _fun48544: for(var _fun48544_ip = 0; ; ) switch(_fun48544_ip) {
+            _fun48547: for(var _fun48547_ip = 0; ; ) switch(_fun48547_ip) {
 case 0:
                 var5 = arg0;
                 var10 = var5.x;
@@ -228,34 +228,34 @@ case 0:
                 var1 = var5.alignmentBaseline;
                 var11 = typeof var15;
                 var0 = 'string';
-                if(!(var0 !== var11)) { _fun48544_ip = 149; continue _fun48544 }
+                if(!(var0 !== var11)) { _fun48547_ip = 149; continue _fun48547 }
 case 71:
                 var0 = 'number';
-                if(!(var0 !== var11)) { _fun48544_ip = 149; continue _fun48544 }
+                if(!(var0 !== var11)) { _fun48547_ip = 149; continue _fun48547 }
 case 79:
                 var12 = _closure1_slot4;
                 var11 = var12.count;
                 var12 = var11.bind(var12)(var15);
                 var11 = 1;
-                if(!(!(var12 > var11))) { _fun48544_ip = 128; continue _fun48544 }
+                if(!(!(var12 > var11))) { _fun48547_ip = 128; continue _fun48547 }
 case 104:
                 var11 = global;
                 var12 = var11.Array;
                 var11 = var12.isArray;
                 var12 = var11.bind(var12)(var15);
                 var11 = var15;
-                if(!var12) { _fun48544_ip = 147; continue _fun48544 }
+                if(!var12) { _fun48547_ip = 147; continue _fun48547 }
 case 128:
                 var13 = _closure1_slot4;
                 var12 = var13.map;
                 var0 = _closure1_slot13;
                 var11 = var12.bind(var13)(var15, var0);
 case 147:
-                _fun48544_ip = 198; continue _fun48544;
+                _fun48547_ip = 198; continue _fun48547;
 case 149:
                 var12 = arg1;
                 var0 = null;
-                if(!var12) { _fun48544_ip = 195; continue _fun48544 }
+                if(!var12) { _fun48547_ip = 195; continue _fun48547 }
 case 157:
                 var16 = _closure1_slot5;
                 var14 = _closure1_slot3;
@@ -271,7 +271,7 @@ case 195:
 case 198:
                 var0 = {};
                 var12 = null;
-                if(!(var12 === var11)) { _fun48544_ip = 221; continue _fun48544 }
+                if(!(var12 === var11)) { _fun48547_ip = 221; continue _fun48547 }
 case 206:
                 var13 = global;
                 var14 = var13.String;

@@ -80,8 +80,8 @@ public class f extends s {
         };
         this.f15075e = jh.g.f(rVar.getContext(), yg.b.L, 100);
         this.f15076f = jh.g.f(rVar.getContext(), yg.b.L, 150);
-        this.f15077g = jh.g.g(rVar.getContext(), yg.b.Q, zg.a.f55944a);
-        this.f15078h = jh.g.g(rVar.getContext(), yg.b.P, zg.a.f55947d);
+        this.f15077g = jh.g.g(rVar.getContext(), yg.b.Q, zg.a.f55941a);
+        this.f15078h = jh.g.g(rVar.getContext(), yg.b.P, zg.a.f55944d);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -192,13 +192,13 @@ public class f extends s {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public int c() {
-        return yg.i.f54228e;
+        return yg.i.f54225e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public int d() {
-        return yg.e.f54168j;
+        return yg.e.f54165j;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

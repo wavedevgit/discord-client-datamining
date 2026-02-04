@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var7;
     var4 = function arg0() {
-        _fun18391: for (var _fun18391_ip = 0;;) switch (_fun18391_ip) {
+        _fun18393: for (var _fun18393_ip = 0;;) switch (_fun18393_ip) {
             case 0:
                 var3 = arg0;
                 var1 = var3.name;
@@ -22,8 +22,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.INVALID_PALETTE_KEY;
                 var0 = var1 !== var0;
                 if (!var0) {
-                    _fun18391_ip = 120;
-                    continue _fun18391
+                    _fun18393_ip = 120;
+                    continue _fun18393
                 }
             case 46:
                 var2 = var3.name;
@@ -34,16 +34,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.CUSTOM_PALETTE_KEY;
                 var1 = var2 !== var1;
                 if (var1) {
-                    _fun18391_ip = 117;
-                    continue _fun18391
+                    _fun18393_ip = 117;
+                    continue _fun18393
                 }
             case 81:
                 var6 = _closure1_slot6;
                 var2 = var3.darkBackground;
                 var2 = var6.bind(var5)(var2);
                 if (!var2) {
-                    _fun18391_ip = 114;
-                    continue _fun18391
+                    _fun18393_ip = 114;
+                    continue _fun18393
                 }
             case 99:
                 var4 = _closure1_slot6;
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.ThemeTypes;
     var _closure1_slot3 = var3;
     var3 = function arg0() {
-        _fun18393: for (var _fun18393_ip = 0;;) switch (_fun18393_ip) {
+        _fun18395: for (var _fun18395_ip = 0;;) switch (_fun18395_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var0 = _closure1_slot2;
@@ -94,8 +94,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2[var0];
                 var2 = null;
                 if (!(var2 == var0)) {
-                    _fun18393_ip = 67;
-                    continue _fun18393
+                    _fun18395_ip = 67;
+                    continue _fun18395
                 }
             case 44:
                 var2 = _closure1_slot0;
@@ -115,15 +115,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/nameplates/utils.tsx';
     var5 = var6.bind(var7)(var5);
     var5 = function arg0, arg1() {
-        _fun18394: for (var _fun18394_ip = 0;;) switch (_fun18394_ip) {
+        _fun18396: for (var _fun18396_ip = 0;;) switch (_fun18396_ip) {
             case 0:
                 var0 = arg0;
                 var3 = _closure1_slot5;
                 var2 = undefined;
                 var3 = var3.bind(var2)(var0);
                 if (var3) {
-                    _fun18394_ip = 22;
-                    continue _fun18394
+                    _fun18396_ip = 22;
+                    continue _fun18396
                 }
             case 20:
                 return var2;
@@ -132,13 +132,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.LIGHT;
                 var1 = arg1;
                 if (!(var1 !== var2)) {
-                    _fun18394_ip = 47;
-                    continue _fun18394
+                    _fun18396_ip = 47;
+                    continue _fun18396
                 }
             case 39:
                 var4 = var0.darkBackground;
-                _fun18394_ip = 53;
-                continue _fun18394;
+                _fun18396_ip = 53;
+                continue _fun18396;
             case 47:
                 var4 = var0.lightBackground;
             case 53:
@@ -300,14 +300,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getNameplateSampleUsers = var3;
     var1 = function(arg0) { // Environment: var1
-        _fun18397: for (var _fun18397_ip = 0;;) switch (_fun18397_ip) {
+        _fun18399: for (var _fun18399_ip = 0;;) switch (_fun18399_ip) {
             case 0:
                 var2 = arg0;
                 var0 = null;
                 var1 = var0 == var2;
                 if (var1) {
-                    _fun18397_ip = 63;
-                    continue _fun18397
+                    _fun18399_ip = 63;
+                    continue _fun18399
                 }
             case 12:
                 var1 = {};

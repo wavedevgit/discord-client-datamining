@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = 'function pnpm_interpolateColorTs1(value,inputRange,colors,options){const{interpolate,Extrapolation,hsvToColor}=this.__closure;let h=0;const{useCorrectedHSVInterpolation=true}=options;if(useCorrectedHSVInterpolation){const correctedInputRange=[inputRange[0]];const originalH=colors.h;const correctedH=[originalH[0]];for(let i=1;i<originalH.length;++i){const d=originalH[i]-originalH[i-1];if(originalH[i]>originalH[i-1]&&d>0.5){correctedInputRange.push(inputRange[i]);correctedInputRange.push(inputRange[i]+0.00001);correctedH.push(originalH[i]-1);correctedH.push(originalH[i]);}else if(originalH[i]<originalH[i-1]&&d<-0.5){correctedInputRange.push(inputRange[i]);correctedInputRange.push(inputRange[i]+0.00001);correctedH.push(originalH[i]+1);correctedH.push(originalH[i]);}else{correctedInputRange.push(inputRange[i]);correctedH.push(originalH[i]);}}h=(interpolate(value,correctedInputRange,correctedH,Extrapolation.CLAMP)+1)%1;}else{h=interpolate(value,inputRange,colors.h,Extrapolation.CLAMP);}const s=interpolate(value,inputRange,colors.s,Extrapolation.CLAMP);const v=interpolate(value,inputRange,colors.v,Extrapolation.CLAMP);const a=interpolate(value,inputRange,colors.a,Extrapolation.CLAMP);return hsvToColor(h,s,v,a);}';
     var4.code = var0;
     var3 = function arg0, arg1, arg2, arg3() {
-        _fun35061: for (var _fun35061_ip = 0;;) switch (_fun35061_ip) {
+        _fun35063: for (var _fun35063_ip = 0;;) switch (_fun35063_ip) {
             case 0:
                 var11 = arg0;
                 var10 = arg1;
@@ -28,13 +28,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var0.useCorrectedHSVInterpolation;
                 var6 = undefined;
                 if (!(var6 !== var0)) {
-                    _fun35061_ip = 101;
-                    continue _fun35061
+                    _fun35063_ip = 101;
+                    continue _fun35063
                 }
             case 26:
                 if (var0) {
-                    _fun35061_ip = 101;
-                    continue _fun35061
+                    _fun35063_ip = 101;
+                    continue _fun35063
                 }
             case 29:
                 var5 = _closure1_slot0;
@@ -52,8 +52,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var20 = var11;
                 var19 = var10;
                 var5 = var21[var3](var20, var19, var18, var17, var16);
-                _fun35061_ip = 488;
-                continue _fun35061;
+                _fun35063_ip = 488;
+                continue _fun35063;
             case 101:
                 var12 = 0;
                 var0 = var10[var12];
@@ -71,8 +71,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = 0.5;
                 var3 = var1;
                 if (!var0) {
-                    _fun35061_ip = 417;
-                    continue _fun35061
+                    _fun35063_ip = 417;
+                    continue _fun35063
                 }
             case 183:
                 var15 = var14[var3];
@@ -83,26 +83,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var15 = var3 - var1;
                 var15 = var14[var15];
                 if (!(var16 > var15)) {
-                    _fun35061_ip = 219;
-                    continue _fun35061
+                    _fun35063_ip = 219;
+                    continue _fun35063
                 }
             case 215:
                 if (!(!(var0 > var4))) {
-                    _fun35061_ip = 338;
-                    continue _fun35061
+                    _fun35063_ip = 338;
+                    continue _fun35063
                 }
             case 219:
                 var16 = var14[var3];
                 var15 = var3 - var1;
                 var15 = var14[var15];
                 if (!(var16 < var15)) {
-                    _fun35061_ip = 239;
-                    continue _fun35061
+                    _fun35063_ip = 239;
+                    continue _fun35063
                 }
             case 235:
                 if (!(!(var0 < var9))) {
-                    _fun35061_ip = 272;
-                    continue _fun35061
+                    _fun35063_ip = 272;
+                    continue _fun35063
                 }
             case 239:
                 var15 = var8.push;
@@ -111,8 +111,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var15 = var7.push;
                 var0 = var14[var3];
                 var0 = var15.bind(var7)(var0);
-                _fun35061_ip = 402;
-                continue _fun35061;
+                _fun35063_ip = 402;
+                continue _fun35063;
             case 272:
                 var15 = var8.push;
                 var0 = var10[var3];
@@ -128,8 +128,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var15 = var7.push;
                 var0 = var14[var3];
                 var0 = var15.bind(var7)(var0);
-                _fun35061_ip = 402;
-                continue _fun35061;
+                _fun35063_ip = 402;
+                continue _fun35063;
             case 338:
                 var15 = var8.push;
                 var0 = var10[var3];
@@ -149,8 +149,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var3 + 1;
                 var0 = var14.length;
                 if (var3 < var0) {
-                    _fun35061_ip = 183;
-                    continue _fun35061
+                    _fun35063_ip = 183;
+                    continue _fun35063
                 }
             case 417:
                 var9 = _closure1_slot0;
@@ -299,7 +299,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = 'function pnpm_interpolateColorTs4(value,inputRange,colors,options){const{toLinearSpace,interpolate,Extrapolation,rgbaColor,toGammaSpace}=this.__closure;const{gamma=2.2}=options;let{r:outputR,g:outputG,b:outputB}=colors;if(gamma!==1){outputR=toLinearSpace(outputR,gamma);outputG=toLinearSpace(outputG,gamma);outputB=toLinearSpace(outputB,gamma);}const r=interpolate(value,inputRange,outputR,Extrapolation.CLAMP);const g=interpolate(value,inputRange,outputG,Extrapolation.CLAMP);const b=interpolate(value,inputRange,outputB,Extrapolation.CLAMP);const a=interpolate(value,inputRange,colors.a,Extrapolation.CLAMP);if(gamma===1){return rgbaColor(r,g,b,a);}return rgbaColor(toGammaSpace(r,gamma),toGammaSpace(g,gamma),toGammaSpace(b,gamma),a);}';
     var4.code = var3;
     var3 = function arg0, arg1, arg2, arg3() {
-        _fun35065: for (var _fun35065_ip = 0;;) switch (_fun35065_ip) {
+        _fun35067: for (var _fun35067_ip = 0;;) switch (_fun35067_ip) {
             case 0:
                 var11 = arg0;
                 var10 = arg1;
@@ -309,8 +309,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var12 = 2.2;
                 var7 = undefined;
                 if (!(var7 !== var0)) {
-                    _fun35065_ip = 37;
-                    continue _fun35065
+                    _fun35067_ip = 37;
+                    continue _fun35067
                 }
             case 34:
                 var12 = var0;
@@ -323,8 +323,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9 = var1;
                 var15 = var4;
                 if (!(var8 !== var12)) {
-                    _fun35065_ip = 94;
-                    continue _fun35065
+                    _fun35067_ip = 94;
+                    continue _fun35067
                 }
             case 69:
                 var0 = _closure1_slot4;
@@ -384,8 +384,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var18 = var10;
                 var3 = var20[var3](var19, var18, var17, var16, var15);
                 if (!(var8 !== var12)) {
-                    _fun35065_ip = 384;
-                    continue _fun35065
+                    _fun35067_ip = 384;
+                    continue _fun35067
                 }
             case 321:
                 var2 = _closure1_slot0;
@@ -402,8 +402,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var18 = var2;
                 var16 = var3;
                 var0 = var20[var10](var19, var18, var17, var16, var15);
-                _fun35065_ip = 426;
-                continue _fun35065;
+                _fun35067_ip = 426;
+                continue _fun35067;
             case 384:
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot2;
@@ -551,7 +551,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = "function pnpm_interpolateColorTs6(colors,convFromRgb){const{processColor,red,green,blue,opacity}=this.__closure;const ch1=[];const ch2=[];const ch3=[];const alpha=[];for(let i=0;i<colors.length;i++){const color=colors[i];const processedColor=processColor(color);if(typeof processedColor==='number'){const convertedColor=convFromRgb({r:red(processedColor),g:green(processedColor),b:blue(processedColor)});ch1.push(convertedColor.ch1);ch2.push(convertedColor.ch2);ch3.push(convertedColor.ch3);alpha.push(opacity(processedColor));}}return{ch1:ch1,ch2:ch2,ch3:ch3,alpha:alpha};}";
     var3.code = var4;
     var11 = function arg0, arg1() {
-        _fun35067: for (var _fun35067_ip = 0;;) switch (_fun35067_ip) {
+        _fun35069: for (var _fun35069_ip = 0;;) switch (_fun35069_ip) {
             case 0:
                 var11 = arg0;
                 var10 = arg1;
@@ -566,8 +566,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = undefined;
                 var5 = 'number';
                 if (!var0) {
-                    _fun35067_ip = 273;
-                    continue _fun35067
+                    _fun35069_ip = 273;
+                    continue _fun35069
                 }
             case 51:
                 var13 = var11[var9];
@@ -579,8 +579,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var14 = var0.bind(var12)(var13);
                 var0 = typeof var14;
                 if (!(var5 === var0)) {
-                    _fun35067_ip = 258;
-                    continue _fun35067
+                    _fun35069_ip = 258;
+                    continue _fun35069
                 }
             case 93:
                 var12 = {};
@@ -621,8 +621,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9 = var9 + 1;
                 var0 = var11.length;
                 if (var9 < var0) {
-                    _fun35067_ip = 51;
-                    continue _fun35067
+                    _fun35069_ip = 51;
+                    continue _fun35069
                 }
             case 273:
                 var0 = {};
@@ -804,7 +804,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot12 = var3;
     var3 = function() { // Environment: var1
         var0 = function arg0, arg1, arg2() {
-            _fun35075: for (var _fun35075_ip = 0;;) switch (_fun35075_ip) {
+            _fun35077: for (var _fun35077_ip = 0;;) switch (_fun35077_ip) {
                 case 0:
                     var5 = arg0;
                     var4 = arg1;
@@ -817,15 +817,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = 'RGB';
                     var9 = var0;
                     if (!var1) {
-                        _fun35075_ip = 48;
-                        continue _fun35075
+                        _fun35077_ip = 48;
+                        continue _fun35077
                     }
                 case 33:
                     var1 = arguments[var7];
                     var9 = var0;
                     if (!(var3 !== var1)) {
-                        _fun35075_ip = 48;
-                        continue _fun35075
+                        _fun35077_ip = 48;
+                        continue _fun35077
                     }
                 case 44:
                     var9 = arguments[var7];
@@ -833,37 +833,37 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = arguments.length;
                     var1 = 4;
                     if (!(var2 > var1)) {
-                        _fun35075_ip = 66;
-                        continue _fun35075
+                        _fun35077_ip = 66;
+                        continue _fun35077
                     }
                 case 58:
                     var2 = arguments[var1];
                     if (!(var3 === var2)) {
-                        _fun35075_ip = 70;
-                        continue _fun35075
+                        _fun35077_ip = 70;
+                        continue _fun35077
                     }
                 case 66:
                     var2 = {};
-                    _fun35075_ip = 74;
-                    continue _fun35075;
+                    _fun35077_ip = 74;
+                    continue _fun35077;
                 case 70:
                     var2 = arguments[var1];
                 case 74:
                     var1 = 'HSV';
                     if (!(var1 !== var9)) {
-                        _fun35075_ip = 249;
-                        continue _fun35075
+                        _fun35077_ip = 249;
+                        continue _fun35077
                     }
                 case 87:
                     if (!(var0 !== var9)) {
-                        _fun35075_ip = 216;
-                        continue _fun35075
+                        _fun35077_ip = 216;
+                        continue _fun35077
                     }
                 case 94:
                     var0 = 'LAB';
                     if (!(var0 !== var9)) {
-                        _fun35075_ip = 183;
-                        continue _fun35075
+                        _fun35077_ip = 183;
+                        continue _fun35077
                     }
                 case 104:
                     var1 = _closure1_slot0;
@@ -958,46 +958,46 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.interpolateColor = var4;
     var2.ColorSpace = var3;
     var1 = function arg0, arg1() {
-        _fun35076: for (var _fun35076_ip = 0;;) switch (_fun35076_ip) {
+        _fun35078: for (var _fun35078_ip = 0;;) switch (_fun35078_ip) {
             case 0:
                 var6 = undefined;
                 var1 = undefined;
                 var2 = arguments.length;
                 var0 = 2;
                 if (!(var2 > var0)) {
-                    _fun35076_ip = 22;
-                    continue _fun35076
+                    _fun35078_ip = 22;
+                    continue _fun35078
                 }
             case 14:
                 var2 = arguments[var0];
                 if (!(var6 === var2)) {
-                    _fun35076_ip = 37;
-                    continue _fun35076
+                    _fun35078_ip = 37;
+                    continue _fun35078
                 }
             case 22:
                 var2 = _closure1_slot13;
                 var4 = var2.RGB;
-                _fun35076_ip = 41;
-                continue _fun35076;
+                _fun35078_ip = 41;
+                continue _fun35078;
             case 37:
                 var4 = arguments[var0];
             case 41:
                 var2 = arguments.length;
                 var0 = 3;
                 if (!(var2 > var0)) {
-                    _fun35076_ip = 59;
-                    continue _fun35076
+                    _fun35078_ip = 59;
+                    continue _fun35078
                 }
             case 51:
                 var2 = arguments[var0];
                 if (!(var6 === var2)) {
-                    _fun35076_ip = 63;
-                    continue _fun35076
+                    _fun35078_ip = 63;
+                    continue _fun35078
                 }
             case 59:
                 var3 = {};
-                _fun35076_ip = 67;
-                continue _fun35076;
+                _fun35078_ip = 67;
+                continue _fun35078;
             case 63:
                 var3 = arguments[var0];
             case 67:

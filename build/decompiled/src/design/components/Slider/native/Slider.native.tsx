@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Slider/native/Slider.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun88421: for (var _fun88421_ip = 0;;) switch (_fun88421_ip) {
+        _fun88438: for (var _fun88438_ip = 0;;) switch (_fun88438_ip) {
             case 0:
                 var3 = arg0;
                 var16 = var3.startIcon;
@@ -120,13 +120,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[0] = var14;
                 var1[1] = var7;
                 var0 = function(arg0) { // Environment: var0
-                    _fun88422: for (var _fun88422_ip = 0;;) switch (_fun88422_ip) {
+                    _fun88439: for (var _fun88439_ip = 0;;) switch (_fun88439_ip) {
                         case 0:
                             var1 = _closure2_slot1;
                             var2 = null;
                             if (!(var2 != var1)) {
-                                _fun88422_ip = 71;
-                                continue _fun88422
+                                _fun88439_ip = 71;
+                                continue _fun88439
                             }
                         case 13:
                             var4 = _closure1_slot0;
@@ -145,8 +145,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 71:
                             var1 = _closure2_slot0;
                             if (!(var2 != var1)) {
-                                _fun88422_ip = 93;
-                                continue _fun88422
+                                _fun88439_ip = 93;
+                                continue _fun88439
                             }
                         case 79:
                             var2 = _closure2_slot0;
@@ -167,8 +167,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5 != var16;
                 var7 = null;
                 if (!var4) {
-                    _fun88421_ip = 184;
-                    continue _fun88421
+                    _fun88438_ip = 184;
+                    continue _fun88438
                 }
             case 154:
                 var11 = _closure1_slot5;
@@ -217,8 +217,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var5 != var9;
                 var5 = null;
                 if (!var7) {
-                    _fun88421_ip = 373;
-                    continue _fun88421
+                    _fun88438_ip = 373;
+                    continue _fun88438
                 }
             case 343:
                 var8 = _closure1_slot5;

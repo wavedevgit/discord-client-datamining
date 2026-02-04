@@ -180,7 +180,7 @@ public abstract class ReactActivity extends com.facebook.react.ReactActivity {
             this.patchedResources = resources;
         }
         super.onConfigurationChanged(newConfig);
-        b.f51323o.a(this, newConfig);
+        b.f51320o.a(this, newConfig);
         Context applicationContext = getApplicationContext();
         Intrinsics.checkNotNullExpressionValue(applicationContext, "getApplicationContext(...)");
         FontScaleUtilsKt.setFontScaleDeprecated(applicationContext);

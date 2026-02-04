@@ -9,25 +9,25 @@ import us.c;
 public final class y extends us.a {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final b f51018b = new b(null);
+    public static final b f51015b = new b(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final ws.f f51019a;
+    private final ws.f f51016a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a implements us.b, c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ws.d f51020a;
+        private final ws.d f51017a;
 
         public a(ws.d actualBuilder) {
             Intrinsics.checkNotNullParameter(actualBuilder, "actualBuilder");
-            this.f51020a = actualBuilder;
+            this.f51017a = actualBuilder;
         }
 
         @Override // us.b
         public ws.d a() {
-            return this.f51020a;
+            return this.f51017a;
         }
 
         @Override // us.b
@@ -98,19 +98,19 @@ public final class y extends us.a {
     public y(ws.f actualFormat) {
         super(null);
         Intrinsics.checkNotNullParameter(actualFormat, "actualFormat");
-        this.f51019a = actualFormat;
+        this.f51016a = actualFormat;
     }
 
     @Override // us.a
     public ws.f b() {
-        return this.f51019a;
+        return this.f51016a;
     }
 
     @Override // us.a
     /* renamed from: e */
     public v c() {
         v vVar;
-        vVar = z.f51023c;
+        vVar = z.f51020c;
         return vVar;
     }
 

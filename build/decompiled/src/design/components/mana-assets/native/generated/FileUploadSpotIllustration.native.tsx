@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/FileUploadSpotIllustration.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52599: for (var _fun52599_ip = 0;;) switch (_fun52599_ip) {
+        _fun52602: for (var _fun52602_ip = 0;;) switch (_fun52602_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun52599_ip = 35;
-                    continue _fun52599
+                    _fun52602_ip = 35;
+                    continue _fun52602
                 }
             case 29:
                 var9 = 288;
             case 35:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun52599_ip = 47;
-                    continue _fun52599
+                    _fun52602_ip = 47;
+                    continue _fun52602
                 }
             case 44:
                 var7 = 162;

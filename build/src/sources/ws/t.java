@@ -13,26 +13,26 @@ import kotlin.jvm.internal.Lambda;
 public final class t implements s {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f52727a;
+    private final String f52724a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final o f52728b;
+    private final o f52725b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f52729c;
+    private final List f52726c;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
 
         /* renamed from: c  reason: collision with root package name */
-        public static final C0711a f52730c = new C0711a(null);
+        public static final C0711a f52727c = new C0711a(null);
 
         /* renamed from: a  reason: collision with root package name */
-        private final ws.b f52731a;
+        private final ws.b f52728a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Object f52732b;
+        private final Object f52729b;
 
         /* renamed from: ws.t$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -59,8 +59,8 @@ public final class t implements s {
         }
 
         private a(ws.b bVar, Object obj) {
-            this.f52731a = bVar;
-            this.f52732b = obj;
+            this.f52728a = bVar;
+            this.f52729b = obj;
         }
     }
 
@@ -97,8 +97,8 @@ public final class t implements s {
         }
 
         public final void a(Object obj) {
-            for (a aVar : t.this.f52729c) {
-                aVar.f52731a.c(obj, aVar.f52732b);
+            for (a aVar : t.this.f52726c) {
+                aVar.f52728a.c(obj, aVar.f52729b);
             }
         }
 
@@ -113,8 +113,8 @@ public final class t implements s {
         List b10;
         Intrinsics.checkNotNullParameter(onZero, "onZero");
         Intrinsics.checkNotNullParameter(format, "format");
-        this.f52727a = onZero;
-        this.f52728b = format;
+        this.f52724a = onZero;
+        this.f52725b = format;
         b10 = p.b(format);
         List<l> list = b10;
         ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
@@ -124,33 +124,33 @@ public final class t implements s {
         List<n> e02 = CollectionsKt.e0(arrayList);
         ArrayList arrayList2 = new ArrayList(CollectionsKt.w(e02, 10));
         for (n nVar : e02) {
-            arrayList2.add(a.f52730c.a(nVar));
+            arrayList2.add(a.f52727c.a(nVar));
         }
-        this.f52729c = arrayList2;
+        this.f52726c = arrayList2;
     }
 
     @Override // ws.o
     public xs.e a() {
-        xs.e a10 = this.f52728b.a();
-        List<a> list = this.f52729c;
+        xs.e a10 = this.f52725b.a();
+        List<a> list = this.f52726c;
         ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
         for (a aVar : list) {
-            arrayList.add(new g(aVar.f52732b, new u(aVar.f52731a)));
+            arrayList.add(new g(aVar.f52729b, new u(aVar.f52728a)));
         }
         v a11 = w.a(arrayList);
         if (a11 instanceof a0) {
-            return new xs.c(this.f52727a);
+            return new xs.c(this.f52724a);
         }
-        return new xs.b(CollectionsKt.o(lr.v.a(new b(a11), new xs.c(this.f52727a)), lr.v.a(new c(a0.f52692a), a10)));
+        return new xs.b(CollectionsKt.o(lr.v.a(new b(a11), new xs.c(this.f52724a)), lr.v.a(new c(a0.f52689a), a10)));
     }
 
     @Override // ws.o
     public ys.q b() {
         List e10;
         List l10 = CollectionsKt.l();
-        ys.q b10 = this.f52728b.b();
-        ys.q b11 = new j(this.f52727a).b();
-        if (this.f52729c.isEmpty()) {
+        ys.q b10 = this.f52725b.b();
+        ys.q b11 = new j(this.f52724a).b();
+        if (this.f52726c.isEmpty()) {
             e10 = CollectionsKt.l();
         } else {
             e10 = CollectionsKt.e(new ys.u(new d()));
@@ -159,13 +159,13 @@ public final class t implements s {
     }
 
     public final o d() {
-        return this.f52728b;
+        return this.f52725b;
     }
 
     public boolean equals(Object obj) {
         if (obj instanceof t) {
             t tVar = (t) obj;
-            if (Intrinsics.areEqual(this.f52727a, tVar.f52727a) && Intrinsics.areEqual(this.f52728b, tVar.f52728b)) {
+            if (Intrinsics.areEqual(this.f52724a, tVar.f52724a) && Intrinsics.areEqual(this.f52725b, tVar.f52725b)) {
                 return true;
             }
             return false;
@@ -174,10 +174,10 @@ public final class t implements s {
     }
 
     public int hashCode() {
-        return (this.f52727a.hashCode() * 31) + this.f52728b.hashCode();
+        return (this.f52724a.hashCode() * 31) + this.f52725b.hashCode();
     }
 
     public String toString() {
-        return "Optional(" + this.f52727a + ", " + this.f52728b + ')';
+        return "Optional(" + this.f52724a + ", " + this.f52725b + ')';
     }
 }

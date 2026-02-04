@@ -8,7 +8,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c implements nu.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f49711a = new c();
+    public static final c f49708a = new c();
 
     private c() {
     }
@@ -35,7 +35,7 @@ public final class c implements nu.b {
         d dVar;
         try {
             Result.a aVar = Result.f32461e;
-            Integer a10 = f49711a.a(list);
+            Integer a10 = f49708a.a(list);
             if (a10 != null) {
                 int intValue = a10.intValue();
                 List c10 = sv.a.c(list.get(0));

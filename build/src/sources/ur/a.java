@@ -12,10 +12,10 @@ public class a extends tr.a {
         @NotNull
 
         /* renamed from: a  reason: collision with root package name */
-        public static final C0650a f50858a = new C0650a();
+        public static final C0650a f50855a = new C0650a();
 
         /* renamed from: b  reason: collision with root package name */
-        public static final Integer f50859b;
+        public static final Integer f50856b;
 
         static {
             Integer num;
@@ -30,13 +30,13 @@ public class a extends tr.a {
                 if (num != null && num.intValue() > 0) {
                     num2 = num;
                 }
-                f50859b = num2;
+                f50856b = num2;
             }
             num = null;
             if (num != null) {
                 num2 = num;
             }
-            f50859b = num2;
+            f50856b = num2;
         }
 
         private C0650a() {
@@ -44,7 +44,7 @@ public class a extends tr.a {
     }
 
     private final boolean c(int i10) {
-        Integer num = C0650a.f50859b;
+        Integer num = C0650a.f50856b;
         if (num != null && num.intValue() < i10) {
             return false;
         }

@@ -83,7 +83,7 @@ public abstract class r0 {
         });
         InputCheckbox.InputCheckboxComponentStyle styles = config.getStyles();
         if (styles != null && (textColorHighlight = styles.getTextColorHighlight()) != null && (base = textColorHighlight.getBase()) != null && (base2 = base.getBase()) != null && (value = base2.getValue()) != null) {
-            binding.f20784b.setButtonTintList(new ColorStateList(new int[][]{new int[]{-16842910}, new int[]{-16842912}, new int[]{16842912}}, new int[]{r1.c.l(mp.s.d(a10, yg.b.f54099k, null, false, 6, null), (int) (q1.j.h(a10.getResources(), yg.d.f54156x) * ((float) SetSpanOperation.SPAN_MAX_PRIORITY))), mp.s.d(a10, yg.b.f54099k, null, false, 6, null), value.intValue()}));
+            binding.f20784b.setButtonTintList(new ColorStateList(new int[][]{new int[]{-16842910}, new int[]{-16842912}, new int[]{16842912}}, new int[]{r1.c.l(mp.s.d(a10, yg.b.f54096k, null, false, 6, null), (int) (q1.j.h(a10.getResources(), yg.d.f54153x) * ((float) SetSpanOperation.SPAN_MAX_PRIORITY))), mp.s.d(a10, yg.b.f54096k, null, false, 6, null), value.intValue()}));
         }
         uiComponentHelper.d(new Function0() { // from class: aq.q0
             @Override // kotlin.jvm.functions.Function0

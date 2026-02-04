@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var4.jsx;
     var _closure1_slot5 = var4;
     var1 = function arg0, arg1() {
-        _fun45564: for (var _fun45564_ip = 0;;) switch (_fun45564_ip) {
+        _fun45567: for (var _fun45567_ip = 0;;) switch (_fun45567_ip) {
             case 0:
                 var2 = arg0;
                 var11 = var2.nativeGesture;
@@ -68,8 +68,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var2.bind(var4)(var1, var0);
                 var0 = var5;
                 if (!var7) {
-                    _fun45564_ip = 232;
-                    continue _fun45564
+                    _fun45567_ip = 232;
+                    continue _fun45567
                 }
             case 145:
                 var3 = _closure1_slot5;

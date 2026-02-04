@@ -9,7 +9,7 @@ import p.a;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f49131a = new b();
+    public static final b f49128a = new b();
 
     private b() {
     }

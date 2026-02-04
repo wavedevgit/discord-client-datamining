@@ -8,7 +8,7 @@ import l5.y;
 public class c implements y {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Set f53164a = new HashSet();
+    private static final Set f53161a = new HashSet();
 
     @Override // l5.y
     public void a(String str) {
@@ -29,7 +29,7 @@ public class c implements y {
 
     @Override // l5.y
     public void d(String str, Throwable th2) {
-        Set set = f53164a;
+        Set set = f53161a;
         if (set.contains(str)) {
             return;
         }

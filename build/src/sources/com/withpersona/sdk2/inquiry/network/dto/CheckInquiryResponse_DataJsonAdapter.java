@@ -91,7 +91,7 @@ public final class CheckInquiryResponse_DataJsonAdapter extends h {
         }
         Constructor<CheckInquiryResponse.Data> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = CheckInquiryResponse.Data.class.getDeclaredConstructor(String.class, String.class, CheckInquiryResponse.Attributes.class, Integer.TYPE, vm.c.f51691c);
+            constructor = CheckInquiryResponse.Data.class.getDeclaredConstructor(String.class, String.class, CheckInquiryResponse.Attributes.class, Integer.TYPE, vm.c.f51688c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

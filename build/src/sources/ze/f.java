@@ -8,16 +8,16 @@ import java.net.URL;
 public final class f implements Runnable {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final kf.a f55927i = new kf.a("RevokeAccessOperation", new String[0]);
+    private static final kf.a f55924i = new kf.a("RevokeAccessOperation", new String[0]);
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f55928d;
+    private final String f55925d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ff.p f55929e = new ff.p(null);
+    private final ff.p f55926e = new ff.p(null);
 
     public f(String str) {
-        this.f55928d = gf.q.f(str);
+        this.f55925d = gf.q.f(str);
     }
 
     public static ef.g a(String str) {
@@ -26,29 +26,29 @@ public final class f implements Runnable {
         }
         f fVar = new f(str);
         new Thread(fVar).start();
-        return fVar.f55929e;
+        return fVar.f55926e;
     }
 
     @Override // java.lang.Runnable
     public final void run() {
         Status status = Status.f13388s;
         try {
-            String str = this.f55928d;
+            String str = this.f55925d;
             HttpURLConnection httpURLConnection = (HttpURLConnection) new URL("https://accounts.google.com/o/oauth2/revoke?token=" + str).openConnection();
             httpURLConnection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
             int responseCode = httpURLConnection.getResponseCode();
             if (responseCode == 200) {
                 status = Status.f13386q;
             } else {
-                f55927i.b("Unable to revoke access!", new Object[0]);
+                f55924i.b("Unable to revoke access!", new Object[0]);
             }
-            kf.a aVar = f55927i;
+            kf.a aVar = f55924i;
             aVar.a("Response Code: " + responseCode, new Object[0]);
         } catch (IOException e10) {
-            f55927i.b("IOException when revoking access: ".concat(String.valueOf(e10.toString())), new Object[0]);
+            f55924i.b("IOException when revoking access: ".concat(String.valueOf(e10.toString())), new Object[0]);
         } catch (Exception e11) {
-            f55927i.b("Exception when revoking access: ".concat(String.valueOf(e11.toString())), new Object[0]);
+            f55924i.b("Exception when revoking access: ".concat(String.valueOf(e11.toString())), new Object[0]);
         }
-        this.f55929e.setResult(status);
+        this.f55926e.setResult(status);
     }
 }

@@ -22,15 +22,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/media_engine/AsyncAudioDeviceExperiment.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun94440: for (var _fun94440_ip = 0;;) switch (_fun94440_ip) {
+        _fun94457: for (var _fun94457_ip = 0;;) switch (_fun94457_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.location;
                 var5 = var0.autoTrackExposure;
                 var4 = undefined;
                 if (!(var5 === var4)) {
-                    _fun94440_ip = 22;
-                    continue _fun94440
+                    _fun94457_ip = 22;
+                    continue _fun94457
                 }
             case 20:
                 var5 = true;

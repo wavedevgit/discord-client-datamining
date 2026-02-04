@@ -1,7 +1,7 @@
 // utils/ReleaseChannelUtils.native.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun39218: for (var _fun39218_ip = 0;;) switch (_fun39218_ip) {
+    _fun39220: for (var _fun39220_ip = 0;;) switch (_fun39220_ip) {
         case 0:
             var5 = require;
             var2 = exports;
@@ -28,8 +28,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var4.isAndroid;
             var7 = var3.bind(var4)();
             if (!var7) {
-                _fun39218_ip = 123;
-                continue _fun39218
+                _fun39220_ip = 123;
+                continue _fun39220
             }
         case 98:
             var4 = var1.indexOf;
@@ -39,8 +39,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = var3 === var4;
         case 123:
             if (!var7) {
-                _fun39218_ip = 151;
-                continue _fun39218
+                _fun39220_ip = 151;
+                continue _fun39220
             }
         case 126:
             var4 = var1.indexOf;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var9 = -1;
             var8 = var9 !== var3;
             if (var8) {
-                _fun39218_ip = 208;
-                continue _fun39218
+                _fun39220_ip = 208;
+                continue _fun39220
             }
         case 187:
             var10 = var1.indexOf;
@@ -68,13 +68,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         case 208:
             var3 = !var8;
             if (var8) {
-                _fun39218_ip = 223;
-                continue _fun39218
+                _fun39220_ip = 223;
+                continue _fun39220
             }
         case 214:
             if (var4) {
-                _fun39218_ip = 220;
-                continue _fun39218
+                _fun39220_ip = 220;
+                continue _fun39220
             }
         case 217:
             var4 = var7;

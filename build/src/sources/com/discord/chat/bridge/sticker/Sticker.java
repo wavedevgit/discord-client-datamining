@@ -30,7 +30,7 @@ public final class Sticker {
     private final Integer height;
 
     /* renamed from: id  reason: collision with root package name */
-    private final long f8279id;
+    private final long f8278id;
     @NotNull
     private final String name;
     private final int renderMode;
@@ -58,7 +58,7 @@ public final class Sticker {
         if (415 != (i10 & 415)) {
             v1.b(i10, 415, Sticker$$serializer.INSTANCE.getDescriptor());
         }
-        this.f8279id = j10;
+        this.f8278id = j10;
         this.formatType = stickerFormatType;
         this.name = str;
         this.asset = str2;
@@ -79,7 +79,7 @@ public final class Sticker {
 
     public static /* synthetic */ Sticker copy$default(Sticker sticker, long j10, StickerFormatType stickerFormatType, String str, String str2, String str3, Integer num, Integer num2, int i10, String str4, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            j10 = sticker.f8279id;
+            j10 = sticker.f8278id;
         }
         long j11 = j10;
         if ((i11 & 2) != 0) {
@@ -96,7 +96,7 @@ public final class Sticker {
     }
 
     public static final /* synthetic */ void write$Self$chat_release(Sticker sticker, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        compositeEncoder.E(serialDescriptor, 0, sticker.f8279id);
+        compositeEncoder.E(serialDescriptor, 0, sticker.f8278id);
         compositeEncoder.D(serialDescriptor, 1, StickerFormatType.StickerFormatTypeSerializer.INSTANCE, sticker.formatType);
         compositeEncoder.y(serialDescriptor, 2, sticker.name);
         compositeEncoder.y(serialDescriptor, 3, sticker.asset);
@@ -112,7 +112,7 @@ public final class Sticker {
     }
 
     public final long component1() {
-        return this.f8279id;
+        return this.f8278id;
     }
 
     @NotNull
@@ -168,7 +168,7 @@ public final class Sticker {
         }
         if (obj instanceof Sticker) {
             Sticker sticker = (Sticker) obj;
-            return this.f8279id == sticker.f8279id && this.formatType == sticker.formatType && Intrinsics.areEqual(this.name, sticker.name) && Intrinsics.areEqual(this.asset, sticker.asset) && Intrinsics.areEqual(this.url, sticker.url) && Intrinsics.areEqual(this.width, sticker.width) && Intrinsics.areEqual(this.height, sticker.height) && this.renderMode == sticker.renderMode && Intrinsics.areEqual(this.accessibilityLabel, sticker.accessibilityLabel);
+            return this.f8278id == sticker.f8278id && this.formatType == sticker.formatType && Intrinsics.areEqual(this.name, sticker.name) && Intrinsics.areEqual(this.asset, sticker.asset) && Intrinsics.areEqual(this.url, sticker.url) && Intrinsics.areEqual(this.width, sticker.width) && Intrinsics.areEqual(this.height, sticker.height) && this.renderMode == sticker.renderMode && Intrinsics.areEqual(this.accessibilityLabel, sticker.accessibilityLabel);
         }
         return false;
     }
@@ -193,7 +193,7 @@ public final class Sticker {
     }
 
     public final long getId() {
-        return this.f8279id;
+        return this.f8278id;
     }
 
     @NotNull
@@ -215,7 +215,7 @@ public final class Sticker {
     }
 
     public int hashCode() {
-        int hashCode = ((((((((Long.hashCode(this.f8279id) * 31) + this.formatType.hashCode()) * 31) + this.name.hashCode()) * 31) + this.asset.hashCode()) * 31) + this.url.hashCode()) * 31;
+        int hashCode = ((((((((Long.hashCode(this.f8278id) * 31) + this.formatType.hashCode()) * 31) + this.name.hashCode()) * 31) + this.asset.hashCode()) * 31) + this.url.hashCode()) * 31;
         Integer num = this.width;
         int hashCode2 = (hashCode + (num == null ? 0 : num.hashCode())) * 31;
         Integer num2 = this.height;
@@ -224,7 +224,7 @@ public final class Sticker {
 
     @NotNull
     public String toString() {
-        long j10 = this.f8279id;
+        long j10 = this.f8278id;
         StickerFormatType stickerFormatType = this.formatType;
         String str = this.name;
         String str2 = this.asset;
@@ -242,7 +242,7 @@ public final class Sticker {
         Intrinsics.checkNotNullParameter(asset, "asset");
         Intrinsics.checkNotNullParameter(url, "url");
         Intrinsics.checkNotNullParameter(accessibilityLabel, "accessibilityLabel");
-        this.f8279id = j10;
+        this.f8278id = j10;
         this.formatType = formatType;
         this.name = name;
         this.asset = asset;

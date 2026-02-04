@@ -38,30 +38,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var1;
     var1 = {};
     var6 = function() {
-        _fun117615: for (var _fun117615_ip = 0;;) switch (_fun117615_ip) {
+        _fun117628: for (var _fun117628_ip = 0;;) switch (_fun117628_ip) {
             case 0:
                 var1 = _closure1_slot4;
                 var0 = var1.getRTCConnection;
                 var2 = var0.bind(var1)();
                 var0 = null;
                 if (!(var0 != var2)) {
-                    _fun117615_ip = 332;
-                    continue _fun117615
+                    _fun117628_ip = 332;
+                    continue _fun117628
                 }
             case 26:
                 var1 = var2.getMediaEngineConnectionId;
                 var5 = var1.bind(var2)();
                 if (!(var0 != var5)) {
-                    _fun117615_ip = 330;
-                    continue _fun117615
+                    _fun117628_ip = 330;
+                    continue _fun117628
                 }
             case 43:
                 var4 = _closure1_slot3;
                 var1 = var4.isVideoEnabled;
                 var1 = var1.bind(var4)();
                 if (var1) {
-                    _fun117615_ip = 62;
-                    continue _fun117615
+                    _fun117628_ip = 62;
+                    continue _fun117628
                 }
             case 60:
                 return var0;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4.getLastNonZeroRemoteVideoSinkWantsTime;
                 var4 = var1.bind(var4)();
                 if (!(var0 != var4)) {
-                    _fun117615_ip = 112;
-                    continue _fun117615
+                    _fun117628_ip = 112;
+                    continue _fun117628
                 }
             case 80:
                 var1 = global;
@@ -81,15 +81,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var1 - var4;
                 var1 = _closure1_slot5;
                 if (!(!(var4 < var1))) {
-                    _fun117615_ip = 328;
-                    continue _fun117615
+                    _fun117628_ip = 328;
+                    continue _fun117628
                 }
             case 112:
                 var1 = var2.hasActiveRemoteWants;
                 var1 = var1.bind(var2)();
                 if (var1) {
-                    _fun117615_ip = 127;
-                    continue _fun117615
+                    _fun117628_ip = 127;
+                    continue _fun117628
                 }
             case 125:
                 return var0;
@@ -108,16 +108,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var0 == var2;
                 var1 = null;
                 if (var4) {
-                    _fun117615_ip = 326;
-                    continue _fun117615
+                    _fun117628_ip = 326;
+                    continue _fun117628
                 }
             case 187:
                 var4 = var2.short;
                 var5 = var4.frameRate;
                 var4 = 10;
                 if (!(!(var5 < var4))) {
-                    _fun117615_ip = 227;
-                    continue _fun117615
+                    _fun117628_ip = 227;
+                    continue _fun117628
                 }
             case 206:
                 var2 = var2.long;
@@ -125,8 +125,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2 < var4;
                 var2 = undefined;
                 if (!var4) {
-                    _fun117615_ip = 323;
-                    continue _fun117615
+                    _fun117628_ip = 323;
+                    continue _fun117628
                 }
             case 227:
                 var4 = {};
@@ -184,4 +184,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.AVErrorCameraSendLowFPSDefinition = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1216, 3476, 3518, 667, 14984, 8005, 14981, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1216, 3476, 3518, 667, 14985, 8008, 14982, 2]);

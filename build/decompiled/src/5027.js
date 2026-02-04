@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var9;
     var0 = function() {
-        _fun45218: for (var _fun45218_ip = 0;;) switch (_fun45218_ip) {
+        _fun45221: for (var _fun45221_ip = 0;;) switch (_fun45221_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -28,8 +28,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun45218_ip = 74;
-                continue _fun45218;
+                _fun45221_ip = 74;
+                continue _fun45221;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -100,7 +100,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot10 = var1;
     var1 = function(arg0) { // Environment: var3
         var3 = function() {
-            _fun45222: for (var _fun45222_ip = 0;;) switch (_fun45222_ip) {
+            _fun45225: for (var _fun45225_ip = 0;;) switch (_fun45225_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -114,16 +114,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = _closure1_slot11;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun45222_ip = 69;
-                        continue _fun45222
+                        _fun45225_ip = 69;
+                        continue _fun45225
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun45222_ip = 105;
-                    continue _fun45222;
+                    _fun45225_ip = 105;
+                    continue _fun45225;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -148,37 +148,37 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = 'getExtraButtonProps';
         var4.key = var0;
         var0 = function() {
-            _fun45223: for (var _fun45223_ip = 0;;) switch (_fun45223_ip) {
+            _fun45226: for (var _fun45226_ip = 0;;) switch (_fun45226_ip) {
                 case 0:
                     var1 = this;
                     var0 = {};
                     var2 = var1.props;
                     var2 = var2.background;
                     if (!var2) {
-                        _fun45223_ip = 108;
-                        continue _fun45223
+                        _fun45226_ip = 108;
+                        continue _fun45226
                     }
                 case 19:
                     var4 = var2.type;
                     var3 = 'RippleAndroid';
                     if (!(var3 !== var4)) {
-                        _fun45223_ip = 73;
-                        continue _fun45223
+                        _fun45226_ip = 73;
+                        continue _fun45226
                     }
                 case 34:
                     var4 = var2.type;
                     var3 = 'ThemeAttrAndroid';
                     if (!(var3 === var4)) {
-                        _fun45223_ip = 96;
-                        continue _fun45223
+                        _fun45226_ip = 96;
+                        continue _fun45226
                     }
                 case 49:
                     var4 = var2.attribute;
                     var3 = 'selectableItemBackgroundBorderless';
                     var3 = var3 === var4;
                     var0.borderless = var3;
-                    _fun45223_ip = 96;
-                    continue _fun45223;
+                    _fun45226_ip = 96;
+                    continue _fun45226;
                 case 73:
                     var3 = var2.borderless;
                     var0.borderless = var3;
@@ -201,15 +201,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var6 = 'render';
         var4.key = var6;
         var5 = function() {
-            _fun45224: for (var _fun45224_ip = 0;;) switch (_fun45224_ip) {
+            _fun45227: for (var _fun45227_ip = 0;;) switch (_fun45227_ip) {
                 case 0:
                     var8 = this;
                     var5 = var8.props;
                     var0 = var5.style;
                     var3 = undefined;
                     if (!(var3 === var0)) {
-                        _fun45224_ip = 21;
-                        continue _fun45224
+                        _fun45227_ip = 21;
+                        continue _fun45227
                     }
                 case 19:
                     var0 = {};

@@ -7,12 +7,12 @@ public class m extends f {
     public m(i iVar, d dVar, int i10) {
         ByteOrder byteOrder;
         ByteBuffer allocate = ByteBuffer.allocate(8);
-        if (dVar.f50458a) {
+        if (dVar.f50455a) {
             byteOrder = ByteOrder.BIG_ENDIAN;
         } else {
             byteOrder = ByteOrder.LITTLE_ENDIAN;
         }
         allocate.order(byteOrder);
-        this.f50471a = iVar.L(allocate, dVar.f50461d + (i10 * dVar.f50464g) + 44);
+        this.f50468a = iVar.L(allocate, dVar.f50458d + (i10 * dVar.f50461g) + 44);
     }
 }

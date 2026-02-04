@@ -3,15 +3,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = module;
     var _closure1_slot0 = var0;
     var1 = function arg0, arg1() {
-        _fun28010: for (var _fun28010_ip = 0;;) switch (_fun28010_ip) {
+        _fun28012: for (var _fun28012_ip = 0;;) switch (_fun28012_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = global;
                 var1 = var3.Object;
                 var1 = var1.setPrototypeOf;
                 if (var1) {
-                    _fun28010_ip = 33;
-                    continue _fun28010
+                    _fun28012_ip = 33;
+                    continue _fun28012
                 }
             case 24:
                 var1 = function(arg0, arg1) { // Environment: var1
@@ -20,8 +20,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0.__proto__ = var1;
                     return var0;
                 };
-                _fun28010_ip = 54;
-                continue _fun28010;
+                _fun28012_ip = 54;
+                continue _fun28012;
             case 33:
                 var3 = var3.Object;
                 var4 = var3.setPrototypeOf;

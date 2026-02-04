@@ -121,23 +121,23 @@ public class d {
     }
 
     public d(Context context, int i10) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(i10, k.f54418o6);
-        l(obtainStyledAttributes.getDimension(k.f54427p6, 0.0f));
-        k(c.a(context, obtainStyledAttributes, k.f54454s6));
-        this.f36945a = c.a(context, obtainStyledAttributes, k.f54463t6);
-        this.f36946b = c.a(context, obtainStyledAttributes, k.f54472u6);
-        this.f36949e = obtainStyledAttributes.getInt(k.f54445r6, 0);
-        this.f36950f = obtainStyledAttributes.getInt(k.f54436q6, 1);
-        int e10 = c.e(obtainStyledAttributes, k.A6, k.f54517z6);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(i10, k.f54415o6);
+        l(obtainStyledAttributes.getDimension(k.f54424p6, 0.0f));
+        k(c.a(context, obtainStyledAttributes, k.f54451s6));
+        this.f36945a = c.a(context, obtainStyledAttributes, k.f54460t6);
+        this.f36946b = c.a(context, obtainStyledAttributes, k.f54469u6);
+        this.f36949e = obtainStyledAttributes.getInt(k.f54442r6, 0);
+        this.f36950f = obtainStyledAttributes.getInt(k.f54433q6, 1);
+        int e10 = c.e(obtainStyledAttributes, k.A6, k.f54514z6);
         this.f36959o = obtainStyledAttributes.getResourceId(e10, 0);
         this.f36948d = obtainStyledAttributes.getString(e10);
         this.f36951g = obtainStyledAttributes.getBoolean(k.B6, false);
-        this.f36947c = c.a(context, obtainStyledAttributes, k.f54481v6);
-        this.f36952h = obtainStyledAttributes.getFloat(k.f54490w6, 0.0f);
-        this.f36953i = obtainStyledAttributes.getFloat(k.f54499x6, 0.0f);
-        this.f36954j = obtainStyledAttributes.getFloat(k.f54508y6, 0.0f);
+        this.f36947c = c.a(context, obtainStyledAttributes, k.f54478v6);
+        this.f36952h = obtainStyledAttributes.getFloat(k.f54487w6, 0.0f);
+        this.f36953i = obtainStyledAttributes.getFloat(k.f54496x6, 0.0f);
+        this.f36954j = obtainStyledAttributes.getFloat(k.f54505y6, 0.0f);
         obtainStyledAttributes.recycle();
-        TypedArray obtainStyledAttributes2 = context.obtainStyledAttributes(i10, k.f54515z4);
+        TypedArray obtainStyledAttributes2 = context.obtainStyledAttributes(i10, k.f54512z4);
         this.f36955k = obtainStyledAttributes2.hasValue(k.A4);
         this.f36956l = obtainStyledAttributes2.getFloat(k.A4, 0.0f);
         obtainStyledAttributes2.recycle();

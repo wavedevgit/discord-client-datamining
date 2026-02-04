@@ -43,10 +43,10 @@ public final class R {
         public static int _discord_common_js_shared_images_flags_vi = 0x7f080044;
         public static int _discord_common_js_shared_images_flags_zhcn = 0x7f080045;
         public static int _discord_common_js_shared_images_flags_zhtw = 0x7f080046;
-        public static int _node_modules_pnpm_reactnavigationelements1330_patch_hashx6y77xpsvirc6p4el4z6ye2qk4_pmkld4fvhglxpwv55m452a5chy_node_modules_reactnavigation_elements_src_assets_backicon = 0x7f080047;
-        public static int _node_modules_pnpm_reactnavigationelements1330_patch_hashx6y77xpsvirc6p4el4z6ye2qk4_pmkld4fvhglxpwv55m452a5chy_node_modules_reactnavigation_elements_src_assets_backiconmask = 0x7f080048;
-        public static int _node_modules_pnpm_reactnavigationelements1331_pmkld4fvhglxpwv55m452a5chy_node_modules_reactnavigation_elements_src_assets_backicon = 0x7f080049;
-        public static int _node_modules_pnpm_reactnavigationelements1331_pmkld4fvhglxpwv55m452a5chy_node_modules_reactnavigation_elements_src_assets_backiconmask = 0x7f08004a;
+        public static int _node_modules_pnpm_reactnavigationelements1330_patch_hashx6y77xpsvirc6p4el4z6ye2qk4_zmtmt3mgnbhstajt5q4aq3nypi_node_modules_reactnavigation_elements_src_assets_backicon = 0x7f080047;
+        public static int _node_modules_pnpm_reactnavigationelements1330_patch_hashx6y77xpsvirc6p4el4z6ye2qk4_zmtmt3mgnbhstajt5q4aq3nypi_node_modules_reactnavigation_elements_src_assets_backiconmask = 0x7f080048;
+        public static int _node_modules_pnpm_reactnavigationelements1331_zmtmt3mgnbhstajt5q4aq3nypi_node_modules_reactnavigation_elements_src_assets_backicon = 0x7f080049;
+        public static int _node_modules_pnpm_reactnavigationelements1331_zmtmt3mgnbhstajt5q4aq3nypi_node_modules_reactnavigation_elements_src_assets_backiconmask = 0x7f08004a;
         public static int design_components_icon_native_redesign_generated_images_accessibilityicon = 0x7f0800c1;
         public static int design_components_icon_native_redesign_generated_images_achievementsicon = 0x7f0800c2;
         public static int design_components_icon_native_redesign_generated_images_analyticsicon = 0x7f0800c3;

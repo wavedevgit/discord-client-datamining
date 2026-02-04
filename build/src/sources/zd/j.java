@@ -5,7 +5,7 @@ import com.google.android.exoplayer2.Format;
 public interface j {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final j f55915a = new a();
+    public static final j f55912a = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements j {

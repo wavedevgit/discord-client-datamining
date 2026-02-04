@@ -54,48 +54,48 @@ import okio.Source;
 public abstract class e {
 
     /* renamed from: a */
-    public static final byte[] f53567a;
+    public static final byte[] f53564a;
 
     /* renamed from: b */
-    public static final Headers f53568b = Headers.f43989e.i(new String[0]);
+    public static final Headers f53565b = Headers.f43989e.i(new String[0]);
 
     /* renamed from: c */
-    public static final ResponseBody f53569c;
+    public static final ResponseBody f53566c;
 
     /* renamed from: d */
-    public static final RequestBody f53570d;
+    public static final RequestBody f53567d;
 
     /* renamed from: e */
-    private static final a0 f53571e;
+    private static final a0 f53568e;
 
     /* renamed from: f */
-    public static final TimeZone f53572f;
+    public static final TimeZone f53569f;
 
     /* renamed from: g */
-    private static final Regex f53573g;
+    private static final Regex f53570g;
 
     /* renamed from: h */
-    public static final boolean f53574h;
+    public static final boolean f53571h;
 
     /* renamed from: i */
-    public static final String f53575i;
+    public static final String f53572i;
 
     static {
         byte[] bArr = new byte[0];
-        f53567a = bArr;
-        f53569c = ResponseBody.Companion.i(ResponseBody.Companion, bArr, null, 1, null);
-        f53570d = RequestBody.Companion.p(RequestBody.Companion, bArr, null, 0, 0, 7, null);
+        f53564a = bArr;
+        f53566c = ResponseBody.Companion.i(ResponseBody.Companion, bArr, null, 1, null);
+        f53567d = RequestBody.Companion.p(RequestBody.Companion, bArr, null, 0, 0, 7, null);
         a0.a aVar = a0.f37256o;
         ByteString.a aVar2 = ByteString.f44307o;
-        f53571e = aVar.d(aVar2.e("efbbbf"), aVar2.e("feff"), aVar2.e("fffe"), aVar2.e("0000ffff"), aVar2.e("ffff0000"));
+        f53568e = aVar.d(aVar2.e("efbbbf"), aVar2.e("feff"), aVar2.e("fffe"), aVar2.e("0000ffff"), aVar2.e("ffff0000"));
         TimeZone timeZone = DesugarTimeZone.getTimeZone("GMT");
         Intrinsics.checkNotNull(timeZone);
-        f53572f = timeZone;
-        f53573g = new Regex("([0-9a-fA-F]*:[0-9a-fA-F:.]*)|([\\d.]+)");
-        f53574h = false;
+        f53569f = timeZone;
+        f53570g = new Regex("([0-9a-fA-F]*:[0-9a-fA-F:.]*)|([\\d.]+)");
+        f53571h = false;
         String name = OkHttpClient.class.getName();
         Intrinsics.checkNotNullExpressionValue(name, "OkHttpClient::class.java.name");
-        f53575i = StringsKt.D0(StringsKt.B0(name, "okhttp3."), "Client");
+        f53572i = StringsKt.D0(StringsKt.B0(name, "okhttp3."), "Client");
     }
 
     public static /* synthetic */ int A(String str, int i10, int i11, int i12, Object obj) {
@@ -239,7 +239,7 @@ public abstract class e {
     public static final Charset J(BufferedSource bufferedSource, Charset charset) {
         Intrinsics.checkNotNullParameter(bufferedSource, "<this>");
         Intrinsics.checkNotNullParameter(charset, "default");
-        int U0 = bufferedSource.U0(f53571e);
+        int U0 = bufferedSource.U0(f53568e);
         if (U0 != -1) {
             if (U0 != 0) {
                 if (U0 != 1) {
@@ -513,7 +513,7 @@ public abstract class e {
 
     public static final boolean i(String str) {
         Intrinsics.checkNotNullParameter(str, "<this>");
-        return f53573g.i(str);
+        return f53570g.i(str);
     }
 
     public static final boolean j(HttpUrl httpUrl, HttpUrl other) {

@@ -1,89 +1,71 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun68509: for (var _fun68509_ip = 0;;) switch (_fun68509_ip) {
-        case 0:
-            var9 = require;
-            var8 = exports;
-            var7 = dependencyMap;
-            var0 = global;
-            var10 = var0.Object;
-            var2 = var10.defineProperty;
-            var1 = {};
-            var0 = true;
-            var1.value = var0;
-            var0 = '__esModule';
-            var0 = var2.bind(var10)(var8, var0, var1);
-            var2 = 0;
-            var1 = var7[var2];
-            var0 = undefined;
-            var5 = var9.bind(var0)(var1);
-            for (var1 in var5)
-                case 62: {
-                    case 71: var11 = var1;
-                    var10 = var7[var2];
-                    var10 = var9.bind(var0)(var10);
-                    var10 = var10[var11];
-                    var8[var11] = var10;
-                    _fun68509_ip = 62;
-                    continue _fun68509;
-                }
-        case 93:
-            var2 = 1;
-            var1 = var7[var2];
-            var5 = var9.bind(var0)(var1);
-            for (var1 in var5)
-                case 113: {
-                    case 122: var11 = var1;
-                    var10 = var7[var2];
-                    var10 = var9.bind(var0)(var10);
-                    var10 = var10[var11];
-                    var8[var11] = var10;
-                    _fun68509_ip = 113;
-                    continue _fun68509;
-                }
-        case 144:
-            var2 = 2;
-            var1 = var7[var2];
-            var5 = var9.bind(var0)(var1);
-            for (var1 in var5)
-                case 164: {
-                    case 173: var11 = var1;
-                    var10 = var7[var2];
-                    var10 = var9.bind(var0)(var10);
-                    var10 = var10[var11];
-                    var8[var11] = var10;
-                    _fun68509_ip = 164;
-                    continue _fun68509;
-                }
-        case 195:
-            var2 = 3;
-            var1 = var7[var2];
-            var5 = var9.bind(var0)(var1);
-            for (var1 in var5)
-                case 215: {
-                    case 224: var11 = var1;
-                    var10 = var7[var2];
-                    var10 = var9.bind(var0)(var10);
-                    var10 = var10[var11];
-                    var8[var11] = var10;
-                    _fun68509_ip = 215;
-                    continue _fun68509;
-                }
-        case 246:
-            var2 = 4;
-            var1 = var7[var2];
-            var5 = var9.bind(var0)(var1);
-            for (var1 in var5)
-                case 266: {
-                    case 275: var11 = var1;
-                    var10 = var7[var2];
-                    var10 = var9.bind(var0)(var10);
-                    var10 = var10[var11];
-                    var8[var11] = var10;
-                    _fun68509_ip = 266;
-                    continue _fun68509;
-                }
-        case 297:
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8534, 8535, 8536, 8537, 8538]);
+    var1 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = {};
+    var3 = 48;
+    var0.SOFT_INPUT_ADJUST_NOTHING = var3;
+    var2 = 'SOFT_INPUT_ADJUST_NOTHING';
+    var0[var3] = var2;
+    var3 = 32;
+    var0.SOFT_INPUT_ADJUST_PAN = var3;
+    var2 = 'SOFT_INPUT_ADJUST_PAN';
+    var0[var3] = var2;
+    var3 = 16;
+    var0.SOFT_INPUT_ADJUST_RESIZE = var3;
+    var2 = 'SOFT_INPUT_ADJUST_RESIZE';
+    var0[var3] = var2;
+    var3 = 0;
+    var0.SOFT_INPUT_ADJUST_UNSPECIFIED = var3;
+    var2 = 'SOFT_INPUT_ADJUST_UNSPECIFIED';
+    var0[var3] = var2;
+    var4 = 256;
+    var0.SOFT_INPUT_IS_FORWARD_NAVIGATION = var4;
+    var2 = 'SOFT_INPUT_IS_FORWARD_NAVIGATION';
+    var0[var4] = var2;
+    var4 = 240;
+    var0.SOFT_INPUT_MASK_ADJUST = var4;
+    var2 = 'SOFT_INPUT_MASK_ADJUST';
+    var0[var4] = var2;
+    var4 = 15;
+    var0.SOFT_INPUT_MASK_STATE = var4;
+    var2 = 'SOFT_INPUT_MASK_STATE';
+    var0[var4] = var2;
+    var4 = 512;
+    var0.SOFT_INPUT_MODE_CHANGED = var4;
+    var2 = 'SOFT_INPUT_MODE_CHANGED';
+    var0[var4] = var2;
+    var4 = 3;
+    var0.SOFT_INPUT_STATE_ALWAYS_HIDDEN = var4;
+    var2 = 'SOFT_INPUT_STATE_ALWAYS_HIDDEN';
+    var0[var4] = var2;
+    var4 = 5;
+    var0.SOFT_INPUT_STATE_ALWAYS_VISIBLE = var4;
+    var2 = 'SOFT_INPUT_STATE_ALWAYS_VISIBLE';
+    var0[var4] = var2;
+    var4 = 2;
+    var0.SOFT_INPUT_STATE_HIDDEN = var4;
+    var2 = 'SOFT_INPUT_STATE_HIDDEN';
+    var0[var4] = var2;
+    var4 = 1;
+    var0.SOFT_INPUT_STATE_UNCHANGED = var4;
+    var2 = 'SOFT_INPUT_STATE_UNCHANGED';
+    var0[var4] = var2;
+    var0.SOFT_INPUT_STATE_UNSPECIFIED = var3;
+    var2 = 'SOFT_INPUT_STATE_UNSPECIFIED';
+    var0[var3] = var2;
+    var3 = 4;
+    var0.SOFT_INPUT_STATE_VISIBLE = var3;
+    var2 = 'SOFT_INPUT_STATE_VISIBLE';
+    var0[var3] = var2;
+    var1.AndroidSoftInputModes = var0;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

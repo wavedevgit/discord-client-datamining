@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/explicit_media_redaction/hooks/useExplicitContentSettingsOrDefault.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function() { // Environment: var1
-        _fun81763: for (var _fun81763_ip = 0;;) switch (_fun81763_ip) {
+        _fun81780: for (var _fun81780_ip = 0;;) switch (_fun81780_ip) {
             case 0:
                 var6 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = new Array(1);
                 var3[0] = var0;
                 var0 = function() { // Environment: var0
-                    _fun81764: for (var _fun81764_ip = 0;;) switch (_fun81764_ip) {
+                    _fun81781: for (var _fun81781_ip = 0;;) switch (_fun81781_ip) {
                         case 0:
                             var0 = _closure1_slot2;
                             var0 = var0.settings;
@@ -50,15 +50,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = undefined;
                             var0 = undefined;
                             if (var5) {
-                                _fun81764_ip = 38;
-                                continue _fun81764
+                                _fun81781_ip = 38;
+                                continue _fun81781
                             }
                         case 32:
                             var0 = var4.explicitContentSettings;
                         case 38:
                             if (!(var2 == var0)) {
-                                _fun81764_ip = 72;
-                                continue _fun81764
+                                _fun81781_ip = 72;
+                                continue _fun81781
                             }
                         case 42:
                             var2 = _closure1_slot0;
@@ -83,8 +83,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var6 == var5;
                 var9 = undefined;
                 if (var10) {
-                    _fun81763_ip = 97;
-                    continue _fun81763
+                    _fun81780_ip = 97;
+                    continue _fun81780
                 }
             case 91:
                 var9 = var5.explicitContentGuilds;
@@ -101,8 +101,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var6 == var5;
                 var9 = undefined;
                 if (var10) {
-                    _fun81763_ip = 152;
-                    continue _fun81763
+                    _fun81780_ip = 152;
+                    continue _fun81780
                 }
             case 146:
                 var9 = var5.explicitContentNonFriendDm;
@@ -125,8 +125,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6 == var5;
                 var4 = undefined;
                 if (var6) {
-                    _fun81763_ip = 226;
-                    continue _fun81763
+                    _fun81780_ip = 226;
+                    continue _fun81780
                 }
             case 220:
                 var4 = var5.explicitContentFriendDm;
@@ -139,7 +139,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useExplicitContentSettingOrDefault = var3;
     var1 = function() { // Environment: var1
-        _fun81765: for (var _fun81765_ip = 0;;) switch (_fun81765_ip) {
+        _fun81782: for (var _fun81782_ip = 0;;) switch (_fun81782_ip) {
             case 0:
                 var6 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = new Array(1);
                 var3[0] = var0;
                 var0 = function() { // Environment: var0
-                    _fun81766: for (var _fun81766_ip = 0;;) switch (_fun81766_ip) {
+                    _fun81783: for (var _fun81783_ip = 0;;) switch (_fun81783_ip) {
                         case 0:
                             var0 = _closure1_slot2;
                             var0 = var0.settings;
@@ -162,15 +162,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = undefined;
                             var0 = undefined;
                             if (var5) {
-                                _fun81766_ip = 38;
-                                continue _fun81766
+                                _fun81783_ip = 38;
+                                continue _fun81783
                             }
                         case 32:
                             var0 = var4.goreContentSettings;
                         case 38:
                             if (!(var2 == var0)) {
-                                _fun81766_ip = 72;
-                                continue _fun81766
+                                _fun81783_ip = 72;
+                                continue _fun81783
                             }
                         case 42:
                             var2 = _closure1_slot0;
@@ -195,8 +195,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var6 == var5;
                 var9 = undefined;
                 if (var10) {
-                    _fun81765_ip = 97;
-                    continue _fun81765
+                    _fun81782_ip = 97;
+                    continue _fun81782
                 }
             case 91:
                 var9 = var5.goreContentGuilds;
@@ -213,8 +213,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var6 == var5;
                 var9 = undefined;
                 if (var10) {
-                    _fun81765_ip = 152;
-                    continue _fun81765
+                    _fun81782_ip = 152;
+                    continue _fun81782
                 }
             case 146:
                 var9 = var5.goreContentNonFriendDm;
@@ -237,8 +237,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6 == var5;
                 var4 = undefined;
                 if (var6) {
-                    _fun81765_ip = 226;
-                    continue _fun81765
+                    _fun81782_ip = 226;
+                    continue _fun81782
                 }
             case 220:
                 var4 = var5.goreContentFriendDm;

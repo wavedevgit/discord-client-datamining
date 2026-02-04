@@ -97,7 +97,7 @@ public final class e implements Call {
         public final void a(ExecutorService executorService) {
             Intrinsics.checkNotNullParameter(executorService, "executorService");
             Dispatcher s10 = this.f6820i.k().s();
-            if (xt.e.f53574h && Thread.holdsLock(s10)) {
+            if (xt.e.f53571h && Thread.holdsLock(s10)) {
                 throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + s10);
             }
             try {
@@ -262,7 +262,7 @@ public final class e implements Call {
 
     private final IOException d(IOException iOException) {
         Socket w10;
-        boolean z10 = xt.e.f53574h;
+        boolean z10 = xt.e.f53571h;
         if (z10 && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
@@ -337,7 +337,7 @@ public final class e implements Call {
 
     public final void c(f connection) {
         Intrinsics.checkNotNullParameter(connection, "connection");
-        if (xt.e.f53574h && !Thread.holdsLock(connection)) {
+        if (xt.e.f53571h && !Thread.holdsLock(connection)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + connection);
         } else if (this.f6812u == null) {
             this.f6812u = connection;
@@ -627,7 +627,7 @@ public final class e implements Call {
     public final Socket w() {
         f fVar = this.f6812u;
         Intrinsics.checkNotNull(fVar);
-        if (xt.e.f53574h && !Thread.holdsLock(fVar)) {
+        if (xt.e.f53571h && !Thread.holdsLock(fVar)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + fVar);
         }
         List n10 = fVar.n();

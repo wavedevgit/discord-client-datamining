@@ -140,4 +140,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.PlayStationTwoWayLinkUpsell = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 1297, 1684, 10594, 1234, 4704, 10597, 1358, 5856, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 1297, 1684, 10597, 1234, 4704, 10600, 1358, 5856, 2]);

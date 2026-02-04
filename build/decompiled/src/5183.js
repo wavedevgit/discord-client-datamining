@@ -48,7 +48,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2.averageFPS = var3;
             var2.clearAnimationNumber = var3;
             var1 = function() { // Environment: var1
-                _fun46333: for (var _fun46333_ip = 0;;) switch (_fun46333_ip) {
+                _fun46336: for (var _fun46336_ip = 0;;) switch (_fun46336_ip) {
                     case 0:
                         var5 = _closure3_slot0;
                         var1 = var5.frameCount;
@@ -65,8 +65,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var4 = 0;
                         var2 = 0;
                         if (!(var7 > var2)) {
-                            _fun46333_ip = 81;
-                            continue _fun46333
+                            _fun46336_ip = 81;
+                            continue _fun46336
                         }
                     case 67:
                         var6 = _closure3_slot0;
@@ -88,8 +88,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var5 = var2 / var3;
                         var2 = 1;
                         if (!(var5 >= var2)) {
-                            _fun46333_ip = 271;
-                            continue _fun46333
+                            _fun46336_ip = 271;
+                            continue _fun46336
                         }
                     case 154:
                         var2 = _closure3_slot0;
@@ -145,14 +145,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'startTracking';
         var0.key = var5;
         var5 = function() {
-            _fun46335: for (var _fun46335_ip = 0;;) switch (_fun46335_ip) {
+            _fun46338: for (var _fun46338_ip = 0;;) switch (_fun46338_ip) {
                 case 0:
                     var1 = this;
                     var2 = var1.startTime;
                     var0 = 0;
                     if (!(var0 === var2)) {
-                        _fun46335_ip = 79;
-                        continue _fun46335
+                        _fun46338_ip = 79;
+                        continue _fun46338
                     }
                 case 15:
                     var0 = global;
@@ -191,7 +191,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'stopAndGetData';
         var0.key = var5;
         var4 = function() {
-            _fun46336: for (var _fun46336_ip = 0;;) switch (_fun46336_ip) {
+            _fun46339: for (var _fun46339_ip = 0;;) switch (_fun46339_ip) {
                 case 0:
                     var1 = this;
                     var0 = global;
@@ -203,8 +203,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var0.Number;
                     var0 = var0.MAX_SAFE_INTEGER;
                     if (!(var2 === var0)) {
-                        _fun46336_ip = 70;
-                        continue _fun46336
+                        _fun46339_ip = 70;
+                        continue _fun46339
                     }
                 case 46:
                     var0 = var1.averageFPS;

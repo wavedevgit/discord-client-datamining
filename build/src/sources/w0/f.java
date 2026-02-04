@@ -5,9 +5,9 @@ import kotlin.jvm.functions.Function1;
 final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Function1 f51809a;
+    private final Function1 f51806a;
 
     public f(Function1 function1) {
-        this.f51809a = function1;
+        this.f51806a = function1;
     }
 }

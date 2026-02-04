@@ -75,7 +75,7 @@ public final class InquiryField_BooleanFieldJsonAdapter extends h {
         }
         Constructor<InquiryField.BooleanField> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = InquiryField.BooleanField.class.getDeclaredConstructor(Boolean.class, String.class, Integer.TYPE, vm.c.f51691c);
+            constructor = InquiryField.BooleanField.class.getDeclaredConstructor(Boolean.class, String.class, Integer.TYPE, vm.c.f51688c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

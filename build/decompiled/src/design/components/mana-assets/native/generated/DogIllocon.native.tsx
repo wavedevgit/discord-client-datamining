@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/DogIllocon.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52563: for (var _fun52563_ip = 0;;) switch (_fun52563_ip) {
+        _fun52566: for (var _fun52566_ip = 0;;) switch (_fun52566_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.size;
                 var3 = undefined;
                 if (!(var7 === var3)) {
-                    _fun52563_ip = 32;
-                    continue _fun52563
+                    _fun52566_ip = 32;
+                    continue _fun52566
                 }
             case 29:
                 var7 = 64;

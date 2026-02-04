@@ -16,7 +16,7 @@ import ui.g;
 public final class d implements vi.b {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.d f52448e = new ui.d() { // from class: wi.a
+    private static final ui.d f52445e = new ui.d() { // from class: wi.a
         @Override // ui.d
         public final void a(Object obj, Object obj2) {
             d.c(obj, (ui.e) obj2);
@@ -24,7 +24,7 @@ public final class d implements vi.b {
     };
 
     /* renamed from: f  reason: collision with root package name */
-    private static final f f52449f = new f() { // from class: wi.b
+    private static final f f52446f = new f() { // from class: wi.b
         @Override // ui.f
         public final void a(Object obj, Object obj2) {
             ((g) obj2).a((String) obj);
@@ -32,7 +32,7 @@ public final class d implements vi.b {
     };
 
     /* renamed from: g  reason: collision with root package name */
-    private static final f f52450g = new f() { // from class: wi.c
+    private static final f f52447g = new f() { // from class: wi.c
         @Override // ui.f
         public final void a(Object obj, Object obj2) {
             ((g) obj2).c(((Boolean) obj).booleanValue());
@@ -40,19 +40,19 @@ public final class d implements vi.b {
     };
 
     /* renamed from: h  reason: collision with root package name */
-    private static final b f52451h = new b(null);
+    private static final b f52448h = new b(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f52452a = new HashMap();
+    private final Map f52449a = new HashMap();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f52453b = new HashMap();
+    private final Map f52450b = new HashMap();
 
     /* renamed from: c  reason: collision with root package name */
-    private ui.d f52454c = f52448e;
+    private ui.d f52451c = f52445e;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f52455d = false;
+    private boolean f52452d = false;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements ui.a {
@@ -61,7 +61,7 @@ public final class d implements vi.b {
 
         @Override // ui.a
         public void a(Object obj, Writer writer) {
-            e eVar = new e(writer, d.this.f52452a, d.this.f52453b, d.this.f52454c, d.this.f52455d);
+            e eVar = new e(writer, d.this.f52449a, d.this.f52450b, d.this.f52451c, d.this.f52452d);
             eVar.h(obj, false);
             eVar.p();
         }
@@ -81,11 +81,11 @@ public final class d implements vi.b {
     private static final class b implements f {
 
         /* renamed from: a  reason: collision with root package name */
-        private static final DateFormat f52457a;
+        private static final DateFormat f52454a;
 
         static {
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", Locale.US);
-            f52457a = simpleDateFormat;
+            f52454a = simpleDateFormat;
             simpleDateFormat.setTimeZone(DesugarTimeZone.getTimeZone("UTC"));
         }
 
@@ -95,7 +95,7 @@ public final class d implements vi.b {
         @Override // ui.f
         /* renamed from: b */
         public void a(Date date, g gVar) {
-            gVar.a(f52457a.format(date));
+            gVar.a(f52454a.format(date));
         }
 
         /* synthetic */ b(a aVar) {
@@ -104,9 +104,9 @@ public final class d implements vi.b {
     }
 
     public d() {
-        m(String.class, f52449f);
-        m(Boolean.class, f52450g);
-        m(Date.class, f52451h);
+        m(String.class, f52446f);
+        m(Boolean.class, f52447g);
+        m(Date.class, f52448h);
     }
 
     public static /* synthetic */ void c(Object obj, ui.e eVar) {
@@ -123,21 +123,21 @@ public final class d implements vi.b {
     }
 
     public d k(boolean z10) {
-        this.f52455d = z10;
+        this.f52452d = z10;
         return this;
     }
 
     @Override // vi.b
     /* renamed from: l */
     public d a(Class cls, ui.d dVar) {
-        this.f52452a.put(cls, dVar);
-        this.f52453b.remove(cls);
+        this.f52449a.put(cls, dVar);
+        this.f52450b.remove(cls);
         return this;
     }
 
     public d m(Class cls, f fVar) {
-        this.f52453b.put(cls, fVar);
-        this.f52452a.remove(cls);
+        this.f52450b.put(cls, fVar);
+        this.f52449a.remove(cls);
         return this;
     }
 }

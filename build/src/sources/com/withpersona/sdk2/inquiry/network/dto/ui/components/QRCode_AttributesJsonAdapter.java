@@ -74,7 +74,7 @@ public final class QRCode_AttributesJsonAdapter extends h {
         }
         Constructor<QRCode.Attributes> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = QRCode.Attributes.class.getDeclaredConstructor(String.class, JsonLogicBoolean.class, Integer.TYPE, c.f51691c);
+            constructor = QRCode.Attributes.class.getDeclaredConstructor(String.class, JsonLogicBoolean.class, Integer.TYPE, c.f51688c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

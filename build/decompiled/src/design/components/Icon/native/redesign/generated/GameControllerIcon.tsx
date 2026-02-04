@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/GameControllerIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun47666: for (var _fun47666_ip = 0;;) switch (_fun47666_ip) {
+        _fun47669: for (var _fun47669_ip = 0;;) switch (_fun47669_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun47666_ip = 53;
-                    continue _fun47666
+                    _fun47669_ip = 53;
+                    continue _fun47669
                 }
             case 19:
                 var1 = _closure1_slot1;

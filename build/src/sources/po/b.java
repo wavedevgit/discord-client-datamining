@@ -48,13 +48,13 @@ public abstract class b {
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
-                    return tp.a.f50204i;
+                    return tp.a.f50201i;
                 }
                 throw new lr.p();
             }
-            return tp.a.f50203e;
+            return tp.a.f50200e;
         }
-        return tp.a.f50202d;
+        return tp.a.f50199d;
     }
 
     public static final tp.e b(CreateInquirySessionResponse.GpsPrecisionRequirement gpsPrecisionRequirement) {
@@ -62,10 +62,10 @@ public abstract class b {
         int i10 = a.f46415b[gpsPrecisionRequirement.ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
-                return tp.e.f50214d;
+                return tp.e.f50211d;
             }
             throw new lr.p();
         }
-        return tp.e.f50215e;
+        return tp.e.f50212e;
     }
 }

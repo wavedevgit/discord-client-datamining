@@ -8,22 +8,22 @@ public final class j extends hf.a {
     public static final Parcelable.Creator<j> CREATOR = new k();
 
     /* renamed from: d  reason: collision with root package name */
-    final int f50629d;
+    final int f50626d;
 
     /* renamed from: e  reason: collision with root package name */
-    final n0 f50630e;
+    final n0 f50627e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j(int i10, n0 n0Var) {
-        this.f50629d = i10;
-        this.f50630e = n0Var;
+        this.f50626d = i10;
+        this.f50627e = n0Var;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
         int a10 = hf.c.a(parcel);
-        hf.c.l(parcel, 1, this.f50629d);
-        hf.c.q(parcel, 2, this.f50630e, i10, false);
+        hf.c.l(parcel, 1, this.f50626d);
+        hf.c.q(parcel, 2, this.f50627e, i10, false);
         hf.c.b(parcel, a10);
     }
 }

@@ -21,7 +21,7 @@ import zj.a;
 public final class i implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Lazy f47998a = lr.l.a(new Function0() { // from class: qn.g
+    private final Lazy f47995a = lr.l.a(new Function0() { // from class: qn.g
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             xj.d d10;
@@ -31,7 +31,7 @@ public final class i implements e {
     });
 
     /* renamed from: b  reason: collision with root package name */
-    private final Lazy f47999b = lr.l.a(new Function0() { // from class: qn.h
+    private final Lazy f47996b = lr.l.a(new Function0() { // from class: qn.h
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             zj.c g10;
@@ -48,11 +48,11 @@ public final class i implements e {
     }
 
     private final xj.d e() {
-        return (xj.d) this.f47998a.getValue();
+        return (xj.d) this.f47995a.getValue();
     }
 
     private final zj.c f() {
-        return (zj.c) this.f47999b.getValue();
+        return (zj.c) this.f47996b.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -76,7 +76,7 @@ public final class i implements e {
             xj.a aVar = (xj.a) CollectionsKt.q0((List) l10, 0);
             if (aVar == null) {
                 Result.a aVar2 = Result.f32461e;
-                return Result.b(a.b.f47978a);
+                return Result.b(a.b.f47975a);
             }
             List b10 = ((zj.a) g11.l()).b();
             Intrinsics.checkNotNullExpressionValue(b10, "getTextBlocks(...)");
@@ -94,7 +94,7 @@ public final class i implements e {
             }
             if (CollectionsKt.y(arrayList).size() < 5) {
                 Result.a aVar3 = Result.f32461e;
-                return Result.b(a.b.f47978a);
+                return Result.b(a.b.f47975a);
             }
             Rect rect2 = new Rect(0, 0, f10.l(), f10.h());
             rect2.inset(1, 1);
@@ -105,7 +105,7 @@ public final class i implements e {
                 return Result.b(new a.d(new h0(a10)));
             }
             Result.a aVar5 = Result.f32461e;
-            return Result.b(a.b.f47978a);
+            return Result.b(a.b.f47975a);
         } catch (ExecutionException unused) {
             Result.a aVar6 = Result.f32461e;
             return Result.b(kotlin.c.a(new b.a()));

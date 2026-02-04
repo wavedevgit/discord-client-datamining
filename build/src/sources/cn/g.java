@@ -146,7 +146,7 @@ public abstract class g extends FrameLayout {
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final zm.d invoke() {
-            zm.d c10 = zm.d.f56075n.c(g.this);
+            zm.d c10 = zm.d.f56072n.c(g.this);
             if (c10 != null) {
                 return c10;
             }
@@ -270,10 +270,10 @@ public abstract class g extends FrameLayout {
             } else {
                 a0Var = viewEnvironment;
                 b10 = b(obj, a0Var);
-                b10.k(ym.g.f54610a.a(obj, String.valueOf(i10)));
+                b10.k(ym.g.f54607a.a(obj, String.valueOf(i10)));
                 b11 = h.b(b10.d());
                 if (b11 != null) {
-                    zm.d.f56075n.d(b11, new e());
+                    zm.d.f56072n.d(b11, new e());
                     this.f7363o.h(b11, b10.g());
                     b11.addOnAttachStateChangeListener(new f(b10, this));
                 }
@@ -301,8 +301,8 @@ public abstract class g extends FrameLayout {
     protected void onAttachedToWindow() {
         Object c10;
         super.onAttachedToWindow();
-        u3.f c11 = zm.c.f56074a.c(this);
-        g.a aVar = ym.g.f54610a;
+        u3.f c11 = zm.c.f56071a.c(this);
+        g.a aVar = ym.g.f54607a;
         j0 d10 = k0.d(this);
         if (d10 == null) {
             c10 = null;
@@ -482,7 +482,7 @@ public abstract class g extends FrameLayout {
             View b10;
             zm.d c10;
             b10 = h.b(this.f7366c);
-            if (b10 != null && (c10 = zm.d.f56075n.c(b10)) != null) {
+            if (b10 != null && (c10 = zm.d.f56072n.c(b10)) != null) {
                 c10.j();
             }
             this.f7366c.dismiss();
@@ -541,7 +541,7 @@ public abstract class g extends FrameLayout {
 
         public final void i(b keyAndBundle) {
             Intrinsics.checkNotNullParameter(keyAndBundle, "keyAndBundle");
-            if (Intrinsics.areEqual(g.a.b(ym.g.f54610a, this.f7364a, null, 2, null), keyAndBundle.b())) {
+            if (Intrinsics.areEqual(g.a.b(ym.g.f54607a, this.f7364a, null, 2, null), keyAndBundle.b())) {
                 Window window = this.f7366c.getWindow();
                 Intrinsics.checkNotNull(window);
                 window.restoreHierarchyState(keyAndBundle.a());
@@ -552,7 +552,7 @@ public abstract class g extends FrameLayout {
             Window window = this.f7366c.getWindow();
             Intrinsics.checkNotNull(window);
             Bundle saved = window.saveHierarchyState();
-            String b10 = g.a.b(ym.g.f54610a, this.f7364a, null, 2, null);
+            String b10 = g.a.b(ym.g.f54607a, this.f7364a, null, 2, null);
             Intrinsics.checkNotNullExpressionValue(saved, "saved");
             return new b(b10, saved);
         }

@@ -51,7 +51,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var6 = var15.bind(var1)(var5);
         var5 = var6.useDerivedValue;
         var4 = function() {
-            _fun45491: for (var _fun45491_ip = 0;;) switch (_fun45491_ip) {
+            _fun45494: for (var _fun45494_ip = 0;;) switch (_fun45494_ip) {
                 case 0:
                     var1 = _closure2_slot1;
                     var0 = var1.get;
@@ -64,8 +64,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var4.bind(var7)(var3);
                     var3 = var3.INITIAL_HANDLE_HEIGHT;
                     if (!(var1 !== var3)) {
-                        _fun45491_ip = 197;
-                        continue _fun45491
+                        _fun45494_ip = 197;
+                        continue _fun45494
                     }
                 case 54:
                     var4 = _closure2_slot5;
@@ -98,8 +98,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var5 = var0.SHOWN;
                     var0 = var3;
                     if (!(var6 === var5)) {
-                        _fun45491_ip = 187;
-                        continue _fun45491
+                        _fun45494_ip = 187;
+                        continue _fun45494
                     }
                 case 183:
                     var0 = var3 - var4;

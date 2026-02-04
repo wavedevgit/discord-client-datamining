@@ -9,12 +9,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/images/native/premium/upsell',
-        'width': 261.5,
-        'height': 152,
+        'httpServerLocation': '/assets/modules/stickers/native/images',
+        'width': 77.5,
+        'height': 72,
         'scales': null,
-        'hash': '5691c33dd2c3544121435e1c3a569b50',
-        'name': 'img_nitro_longer_message_upsell_light',
+        'hash': '215c6cf6cc2b74cad508b12b0e602266',
+        'name': 'empty',
         'type': 'png'
     };
     var4 = [2, 3];

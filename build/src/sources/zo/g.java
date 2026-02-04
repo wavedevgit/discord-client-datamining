@@ -3,8 +3,8 @@ package zo;
 public abstract class g {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f56120a = 2131362790;
+    public static int f56117a = 2131362790;
 
     /* renamed from: b  reason: collision with root package name */
-    public static int f56121b = 2131362802;
+    public static int f56118b = 2131362802;
 }

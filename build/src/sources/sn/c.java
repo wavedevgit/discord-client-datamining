@@ -6,24 +6,24 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Rect f49564a;
+    private final Rect f49561a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Rect f49565b;
+    private final Rect f49562b;
 
     public c(Rect region, Rect viewport) {
         Intrinsics.checkNotNullParameter(region, "region");
         Intrinsics.checkNotNullParameter(viewport, "viewport");
-        this.f49564a = region;
-        this.f49565b = viewport;
+        this.f49561a = region;
+        this.f49562b = viewport;
     }
 
     public final Rect a() {
-        return this.f49564a;
+        return this.f49561a;
     }
 
     public final Rect b() {
-        return this.f49565b;
+        return this.f49562b;
     }
 
     public boolean equals(Object obj) {
@@ -34,19 +34,19 @@ public final class c {
             return false;
         }
         c cVar = (c) obj;
-        if (Intrinsics.areEqual(this.f49564a, cVar.f49564a) && Intrinsics.areEqual(this.f49565b, cVar.f49565b)) {
+        if (Intrinsics.areEqual(this.f49561a, cVar.f49561a) && Intrinsics.areEqual(this.f49562b, cVar.f49562b)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (this.f49564a.hashCode() * 31) + this.f49565b.hashCode();
+        return (this.f49561a.hashCode() * 31) + this.f49562b.hashCode();
     }
 
     public String toString() {
-        Rect rect = this.f49564a;
-        Rect rect2 = this.f49565b;
+        Rect rect = this.f49561a;
+        Rect rect2 = this.f49562b;
         return "ViewfinderInfo(region=" + rect + ", viewport=" + rect2 + ")";
     }
 }

@@ -7,20 +7,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var1 = function arg0, arg1() {
-        _fun48143: for (var _fun48143_ip = 0;;) switch (_fun48143_ip) {
+        _fun48146: for (var _fun48146_ip = 0;;) switch (_fun48146_ip) {
             case 0:
                 var2 = arg1;
                 var0 = arg0;
                 var0 = var0.isClearable;
                 if (!var0) {
-                    _fun48143_ip = 24;
-                    continue _fun48143
+                    _fun48146_ip = 24;
+                    continue _fun48146
                 }
             case 15:
                 var0 = var2.hasValue;
                 if (var0) {
-                    _fun48143_ip = 28;
-                    continue _fun48143
+                    _fun48146_ip = 28;
+                    continue _fun48146
                 }
             case 24:
                 var0 = undefined;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'design/components/Input/native/useInputClearButton.native.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0, arg1() {
-        _fun48144: for (var _fun48144_ip = 0;;) switch (_fun48144_ip) {
+        _fun48147: for (var _fun48147_ip = 0;;) switch (_fun48147_ip) {
             case 0:
                 var3 = _closure1_slot4;
                 var4 = undefined;
@@ -102,8 +102,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var2 = var0 != var5;
                 if (!var2) {
-                    _fun48144_ip = 73;
-                    continue _fun48144
+                    _fun48147_ip = 73;
+                    continue _fun48147
                 }
             case 30:
                 var3 = _closure1_slot3;

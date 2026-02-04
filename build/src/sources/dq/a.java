@@ -60,21 +60,21 @@ public final class a implements ViewBinding {
     public static a a(View view) {
         View a10;
         View a11;
-        int i10 = yp.e.f55192n;
+        int i10 = yp.e.f55189n;
         FrameLayout frameLayout = (FrameLayout) e4.a.a(view, i10);
         if (frameLayout != null) {
             i10 = yp.e.X;
             LinearLayout linearLayout = (LinearLayout) e4.a.a(view, i10);
             if (linearLayout != null && (a10 = e4.a.a(view, (i10 = yp.e.Y))) != null) {
-                i10 = yp.e.f55199q0;
+                i10 = yp.e.f55196q0;
                 RecyclerView recyclerView = (RecyclerView) e4.a.a(view, i10);
                 if (recyclerView != null) {
-                    i10 = yp.e.f55203s0;
+                    i10 = yp.e.f55200s0;
                     TextInputEditText textInputEditText = (TextInputEditText) e4.a.a(view, i10);
                     if (textInputEditText != null) {
-                        i10 = yp.e.f55205t0;
+                        i10 = yp.e.f55202t0;
                         TextInputLayout textInputLayout = (TextInputLayout) e4.a.a(view, i10);
-                        if (textInputLayout != null && (a11 = e4.a.a(view, (i10 = yp.e.f55211w0))) != null) {
+                        if (textInputLayout != null && (a11 = e4.a.a(view, (i10 = yp.e.f55208w0))) != null) {
                             i10 = yp.e.A0;
                             TextView textView = (TextView) e4.a.a(view, i10);
                             if (textView != null) {
@@ -93,7 +93,7 @@ public final class a implements ViewBinding {
     }
 
     public static a c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(yp.f.f55218a, viewGroup, false);
+        View inflate = layoutInflater.inflate(yp.f.f55215a, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }

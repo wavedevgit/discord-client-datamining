@@ -4,15 +4,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0
-            _fun28338: for (var _fun28338_ip = 0;;) switch (_fun28338_ip) {
+            _fun28340: for (var _fun28340_ip = 0;;) switch (_fun28340_ip) {
                 case 0:
                     var2 = arg0;
                     var0 = null;
                     var1 = var0 == var2;
                     var0 = undefined;
                     if (var1) {
-                        _fun28338_ip = 25;
-                        continue _fun28338
+                        _fun28340_ip = 25;
+                        continue _fun28340
                     }
                 case 14:
                     var1 = _closure2_slot0;

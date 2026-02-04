@@ -33,30 +33,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/collectibles/native/NitroIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun87588: for (var _fun87588_ip = 0;;) switch (_fun87588_ip) {
+        _fun87605: for (var _fun87605_ip = 0;;) switch (_fun87605_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun87588_ip = 17;
-                    continue _fun87588
+                    _fun87605_ip = 17;
+                    continue _fun87605
                 }
             case 14:
                 var9 = 106;
             case 17:
                 var8 = var0.height;
                 if (!(var8 === var3)) {
-                    _fun87588_ip = 29;
-                    continue _fun87588
+                    _fun87605_ip = 29;
+                    continue _fun87605
                 }
             case 26:
                 var8 = 26;
             case 29:
                 var6 = var0.color;
                 if (!(var6 === var3)) {
-                    _fun87588_ip = 44;
-                    continue _fun87588
+                    _fun87605_ip = 44;
+                    continue _fun87605
                 }
             case 38:
                 var6 = '#ffffff';

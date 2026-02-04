@@ -101,7 +101,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/forums/native/composer/ForumComposerHeader.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun73996: for (var _fun73996_ip = 0;;) switch (_fun73996_ip) {
+        _fun74013: for (var _fun74013_ip = 0;;) switch (_fun74013_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.height;
@@ -194,8 +194,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var21 = '';
                 if (!(var21 === var18)) {
-                    _fun73996_ip = 416;
-                    continue _fun73996
+                    _fun74013_ip = 416;
+                    continue _fun74013
                 }
             case 362:
                 var24 = _closure1_slot0;
@@ -237,8 +237,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var6 == var9;
                 var10 = undefined;
                 if (var12) {
-                    _fun73996_ip = 538;
-                    continue _fun73996
+                    _fun74013_ip = 538;
+                    continue _fun74013
                 }
             case 527:
                 var9 = var9.topic;
@@ -248,8 +248,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var10 > var9;
                 var6 = null;
                 if (!var9) {
-                    _fun73996_ip = 683;
-                    continue _fun73996
+                    _fun74013_ip = 683;
+                    continue _fun74013
                 }
             case 552:
                 var10 = _closure1_slot5;

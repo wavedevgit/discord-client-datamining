@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
     var0 = function arg0() {
-        _fun6423: for (var _fun6423_ip = 0;;) switch (_fun6423_ip) {
+        _fun6425: for (var _fun6425_ip = 0;;) switch (_fun6425_ip) {
             case 0:
                 var11 = arg0;
                 var1 = _closure1_slot0;
@@ -26,8 +26,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var0.bind(var9)(var11);
                 var1 = global;
                 if (var0) {
-                    _fun6423_ip = 56;
-                    continue _fun6423
+                    _fun6425_ip = 56;
+                    continue _fun6425
                 }
             case 37:
                 var2 = var1.TypeError;

@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/notifications/settings/native/NotificationSettingsMockChannels.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun70132: for (var _fun70132_ip = 0;;) switch (_fun70132_ip) {
+        _fun70149: for (var _fun70149_ip = 0;;) switch (_fun70149_ip) {
             case 0:
                 var1 = _closure1_slot7;
                 var3 = undefined;
@@ -146,8 +146,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.unreadSetting;
                 var1 = var1.ALL_MESSAGES;
                 if (!(var2 === var1)) {
-                    _fun70132_ip = 317;
-                    continue _fun70132
+                    _fun70149_ip = 317;
+                    continue _fun70149
                 }
             case 294:
                 var1 = 1;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.style = var5;
                 var5 = var6.map;
                 var4 = function(arg0) { // Environment: var4
-                    _fun70133: for (var _fun70133_ip = 0;;) switch (_fun70133_ip) {
+                    _fun70150: for (var _fun70150_ip = 0;;) switch (_fun70150_ip) {
                         case 0:
                             var0 = arg0;
                             var4 = _closure1_slot6;
@@ -207,8 +207,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var12 = var11.ONLY_MENTIONS;
                             var11 = undefined;
                             if (!(var13 === var12)) {
-                                _fun70133_ip = 182;
-                                continue _fun70133
+                                _fun70150_ip = 182;
+                                continue _fun70150
                             }
                         case 176:
                             var11 = 'text-muted';
@@ -235,8 +235,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var12 = var11.ONLY_MENTIONS;
                             var11 = undefined;
                             if (!(var13 === var12)) {
-                                _fun70133_ip = 279;
-                                continue _fun70133
+                                _fun70150_ip = 279;
+                                continue _fun70150
                             }
                         case 273:
                             var11 = 'text-muted';
@@ -260,8 +260,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var10 = var0.badged;
                             var9 = 0;
                             if (!var10) {
-                                _fun70133_ip = 360;
-                                continue _fun70133
+                                _fun70150_ip = 360;
+                                continue _fun70150
                             }
                         case 357:
                             var9 = 1;
@@ -283,4 +283,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4304, 33, 1297, 671, 1234, 8780, 4846, 3941, 8642, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4304, 33, 1297, 671, 1234, 8783, 4846, 3941, 8645, 2]);

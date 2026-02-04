@@ -86,7 +86,7 @@ public final class CombinedStepButtonJsonAdapter extends h {
         }
         Constructor<CombinedStepButton> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = CombinedStepButton.class.getDeclaredConstructor(String.class, BasicButtonAttributes.class, ButtonCombinedStepComponentStyle.class, Integer.TYPE, c.f51691c);
+            constructor = CombinedStepButton.class.getDeclaredConstructor(String.class, BasicButtonAttributes.class, ButtonCombinedStepComponentStyle.class, Integer.TYPE, c.f51688c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

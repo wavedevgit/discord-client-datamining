@@ -6,7 +6,7 @@ var13 = dependencyMap;
 var _closure1_slot0 = var12;
 var _closure1_slot1 = var13;
 var0 = function arg0, arg1, arg2, arg3() {
-    _fun10947: for (var _fun10947_ip = 0;;) switch (_fun10947_ip) {
+    _fun10949: for (var _fun10949_ip = 0;;) switch (_fun10949_ip) {
         case 0:
             var2 = arg1;
             var3 = arg2;
@@ -16,8 +16,8 @@ var0 = function arg0, arg1, arg2, arg3() {
             var0.filename = var4;
             var4 = '<anonymous>';
             if (!(var4 === var2)) {
-                _fun10947_ip = 60;
-                continue _fun10947
+                _fun10949_ip = 60;
+                continue _fun10949
             }
         case 29:
             var6 = _closure1_slot0;
@@ -33,15 +33,15 @@ var0 = function arg0, arg1, arg2, arg3() {
             var0.in_app = var2;
             var2 = undefined;
             if (!(var2 !== var3)) {
-                _fun10947_ip = 84;
-                continue _fun10947
+                _fun10949_ip = 84;
+                continue _fun10949
             }
         case 78:
             var0.lineno = var3;
         case 84:
             if (!(var2 !== var1)) {
-                _fun10947_ip = 94;
-                continue _fun10947
+                _fun10949_ip = 94;
+                continue _fun10949
             }
         case 88:
             var0.colno = var1;
@@ -74,31 +74,31 @@ var1 = /at (.+?) ?\(data:(.+?),/;
 var _closure1_slot6 = var1;
 var8 = [30];
 var1 = function arg0() {
-    _fun10948: for (var _fun10948_ip = 0;;) switch (_fun10948_ip) {
+    _fun10950: for (var _fun10950_ip = 0;;) switch (_fun10950_ip) {
         case 0:
             var5 = arg0;
             var1 = var5.match;
             var0 = _closure1_slot6;
             var2 = var1.bind(var5)(var0);
             if (var2) {
-                _fun10948_ip = 373;
-                continue _fun10948
+                _fun10950_ip = 373;
+                continue _fun10950
             }
         case 27:
             var1 = _closure1_slot3;
             var0 = var1.exec;
             var4 = var0.bind(var1)(var5);
             if (var4) {
-                _fun10948_ip = 293;
-                continue _fun10948
+                _fun10950_ip = 293;
+                continue _fun10950
             }
         case 48:
             var1 = _closure1_slot4;
             var0 = var1.exec;
             var10 = var0.bind(var1)(var5);
             if (var10) {
-                _fun10948_ip = 70;
-                continue _fun10948
+                _fun10950_ip = 70;
+                continue _fun10950
             }
         case 66:
             var0 = undefined;
@@ -107,8 +107,8 @@ var1 = function arg0() {
             var6 = 2;
             var0 = var10[var6];
             if (!var0) {
-                _fun10948_ip = 160;
-                continue _fun10948
+                _fun10950_ip = 160;
+                continue _fun10950
             }
         case 80:
             var5 = var10[var6];
@@ -117,8 +117,8 @@ var1 = function arg0() {
             var1 = var1.bind(var5)(var0);
             var0 = 0;
             if (!(var0 === var1)) {
-                _fun10948_ip = 160;
-                continue _fun10948
+                _fun10950_ip = 160;
+                continue _fun10950
             }
         case 105:
             var5 = _closure1_slot5;
@@ -126,8 +126,8 @@ var1 = function arg0() {
             var0 = var10[var6];
             var1 = var1.bind(var5)(var0);
             if (!var1) {
-                _fun10948_ip = 160;
-                continue _fun10948
+                _fun10950_ip = 160;
+                continue _fun10950
             }
         case 127:
             var0 = 1;
@@ -144,8 +144,8 @@ var1 = function arg0() {
             var1 = 1;
             var5 = var10[var1];
             if (var5) {
-                _fun10948_ip = 199;
-                continue _fun10948
+                _fun10950_ip = 199;
+                continue _fun10950
             }
         case 174:
             var9 = _closure1_slot0;
@@ -168,8 +168,8 @@ var1 = function arg0() {
             var9 = var10[var0];
             var1 = undefined;
             if (!var9) {
-                _fun10948_ip = 254;
-                continue _fun10948
+                _fun10950_ip = 254;
+                continue _fun10950
             }
         case 247:
             var0 = var10[var0];
@@ -179,8 +179,8 @@ var1 = function arg0() {
             var11 = var10[var9];
             var0 = undefined;
             if (!var11) {
-                _fun10948_ip = 273;
-                continue _fun10948
+                _fun10950_ip = 273;
+                continue _fun10950
             }
         case 266:
             var9 = var10[var9];
@@ -240,15 +240,15 @@ var1 = /(\S+) line (\d+)(?: > eval line \d+)* > eval/i;
 var _closure1_slot8 = var1;
 var5 = [50];
 var1 = function arg0() {
-    _fun10949: for (var _fun10949_ip = 0;;) switch (_fun10949_ip) {
+    _fun10951: for (var _fun10951_ip = 0;;) switch (_fun10951_ip) {
         case 0:
             var3 = _closure1_slot7;
             var1 = var3.exec;
             var0 = arg0;
             var7 = var1.bind(var3)(var0);
             if (var7) {
-                _fun10949_ip = 28;
-                continue _fun10949
+                _fun10951_ip = 28;
+                continue _fun10951
             }
         case 24:
             var0 = undefined;
@@ -257,8 +257,8 @@ var1 = function arg0() {
             var0 = 3;
             var1 = var7[var0];
             if (!var1) {
-                _fun10949_ip = 142;
-                continue _fun10949
+                _fun10951_ip = 142;
+                continue _fun10951
             }
         case 38:
             var4 = var7[var0];
@@ -267,8 +267,8 @@ var1 = function arg0() {
             var3 = var3.bind(var4)(var1);
             var1 = -1;
             if (!(var3 > var1)) {
-                _fun10949_ip = 142;
-                continue _fun10949
+                _fun10951_ip = 142;
+                continue _fun10951
             }
         case 69:
             var4 = _closure1_slot8;
@@ -276,15 +276,15 @@ var1 = function arg0() {
             var1 = var7[var0];
             var3 = var3.bind(var4)(var1);
             if (!var3) {
-                _fun10949_ip = 142;
-                continue _fun10949
+                _fun10951_ip = 142;
+                continue _fun10951
             }
         case 91:
             var1 = 1;
             var4 = var7[var1];
             if (var4) {
-                _fun10949_ip = 105;
-                continue _fun10949
+                _fun10951_ip = 105;
+                continue _fun10951
             }
         case 101:
             var4 = 'eval';
@@ -304,8 +304,8 @@ var1 = function arg0() {
             var1 = 1;
             var3 = var7[var1];
             if (var3) {
-                _fun10949_ip = 181;
-                continue _fun10949
+                _fun10951_ip = 181;
+                continue _fun10951
             }
         case 156:
             var6 = _closure1_slot0;
@@ -329,8 +329,8 @@ var1 = function arg0() {
             var6 = var7[var0];
             var1 = undefined;
             if (!var6) {
-                _fun10949_ip = 239;
-                continue _fun10949
+                _fun10951_ip = 239;
+                continue _fun10951
             }
         case 232:
             var0 = var7[var0];
@@ -340,8 +340,8 @@ var1 = function arg0() {
             var8 = var7[var6];
             var0 = undefined;
             if (!var8) {
-                _fun10949_ip = 258;
-                continue _fun10949
+                _fun10951_ip = 258;
+                continue _fun10951
             }
         case 251:
             var6 = var7[var6];
@@ -361,7 +361,7 @@ var1 = /^\s*at (?:((?:\[object object\])?.+) )?\(?((?:[-a-z]+):.*?):(\d+)(?::(\d
 var _closure1_slot9 = var1;
 var1 = [40];
 var3 = function arg0() {
-    _fun10950: for (var _fun10950_ip = 0;;) switch (_fun10950_ip) {
+    _fun10952: for (var _fun10952_ip = 0;;) switch (_fun10952_ip) {
         case 0:
             var3 = _closure1_slot9;
             var2 = var3.exec;
@@ -370,8 +370,8 @@ var3 = function arg0() {
             var6 = undefined;
             var0 = undefined;
             if (!var8) {
-                _fun10950_ip = 119;
-                continue _fun10950
+                _fun10952_ip = 119;
+                continue _fun10952
             }
         case 28:
             var5 = _closure1_slot13;
@@ -380,8 +380,8 @@ var3 = function arg0() {
             var7 = 1;
             var3 = var8[var7];
             if (var3) {
-                _fun10950_ip = 72;
-                continue _fun10950
+                _fun10952_ip = 72;
+                continue _fun10952
             }
         case 49:
             var2 = _closure1_slot0;
@@ -397,8 +397,8 @@ var3 = function arg0() {
             var9 = var8[var7];
             var1 = undefined;
             if (!var9) {
-                _fun10950_ip = 101;
-                continue _fun10950
+                _fun10952_ip = 101;
+                continue _fun10952
             }
         case 94:
             var7 = var8[var7];
@@ -419,7 +419,7 @@ var3 = / line (\d+).*script (?:in )?(\S+)(?:: in function (\S+))?$/i;
 var _closure1_slot10 = var3;
 var4 = [10];
 var3 = function arg0() {
-    _fun10951: for (var _fun10951_ip = 0;;) switch (_fun10951_ip) {
+    _fun10953: for (var _fun10953_ip = 0;;) switch (_fun10953_ip) {
         case 0:
             var3 = _closure1_slot10;
             var2 = var3.exec;
@@ -428,8 +428,8 @@ var3 = function arg0() {
             var5 = undefined;
             var0 = undefined;
             if (!var6) {
-                _fun10951_ip = 92;
-                continue _fun10951
+                _fun10953_ip = 92;
+                continue _fun10953
             }
         case 28:
             var4 = _closure1_slot13;
@@ -438,8 +438,8 @@ var3 = function arg0() {
             var2 = 3;
             var2 = var6[var2];
             if (var2) {
-                _fun10951_ip = 75;
-                continue _fun10951
+                _fun10953_ip = 75;
+                continue _fun10953
             }
         case 49:
             var7 = _closure1_slot0;
@@ -462,7 +462,7 @@ var3 = / line (\d+), column (\d+)\s*(?:in (?:<anonymous function: ([^>]+)>|([^)]
 var _closure1_slot11 = var3;
 var3 = [20];
 var6 = function arg0() {
-    _fun10952: for (var _fun10952_ip = 0;;) switch (_fun10952_ip) {
+    _fun10954: for (var _fun10954_ip = 0;;) switch (_fun10954_ip) {
         case 0:
             var3 = _closure1_slot11;
             var2 = var3.exec;
@@ -471,8 +471,8 @@ var6 = function arg0() {
             var6 = undefined;
             var0 = undefined;
             if (!var7) {
-                _fun10952_ip = 117;
-                continue _fun10952
+                _fun10954_ip = 117;
+                continue _fun10954
             }
         case 28:
             var5 = _closure1_slot13;
@@ -481,16 +481,16 @@ var6 = function arg0() {
             var2 = 3;
             var3 = var7[var2];
             if (var3) {
-                _fun10952_ip = 56;
-                continue _fun10952
+                _fun10954_ip = 56;
+                continue _fun10954
             }
         case 49:
             var2 = 4;
             var3 = var7[var2];
         case 56:
             if (var3) {
-                _fun10952_ip = 85;
-                continue _fun10952
+                _fun10954_ip = 85;
+                continue _fun10954
             }
         case 59:
             var2 = _closure1_slot0;
@@ -527,7 +527,7 @@ var6 = var13[var6];
 var6 = var12.bind(var0)(var6);
 var6 = var9.bind(var11)(var6, var7);
 var9 = function arg0, arg1() {
-    _fun10953: for (var _fun10953_ip = 0;;) switch (_fun10953_ip) {
+    _fun10955: for (var _fun10955_ip = 0;;) switch (_fun10955_ip) {
         case 0:
             var6 = arg0;
             var5 = arg1;
@@ -540,27 +540,27 @@ var9 = function arg0, arg1() {
             var0 = 'safari-web-extension';
             var0 = var1.bind(var6)(var0);
             if (var2) {
-                _fun10953_ip = 74;
-                continue _fun10953
+                _fun10955_ip = 74;
+                continue _fun10955
             }
         case 53:
             if (!(var3 === var0)) {
-                _fun10953_ip = 74;
-                continue _fun10953
+                _fun10955_ip = 74;
+                continue _fun10955
             }
         case 57:
             var0 = new Array(2);
             var0[0] = var6;
             var0[1] = var5;
-            _fun10953_ip = 197;
-            continue _fun10953;
+            _fun10955_ip = 197;
+            continue _fun10955;
         case 74:
             var1 = var6.indexOf;
             var4 = '@';
             var1 = var1.bind(var6)(var4);
             if (!(var3 === var1)) {
-                _fun10953_ip = 126;
-                continue _fun10953
+                _fun10955_ip = 126;
+                continue _fun10955
             }
         case 93:
             var7 = _closure1_slot0;
@@ -570,8 +570,8 @@ var9 = function arg0, arg1() {
             var1 = undefined;
             var1 = var7.bind(var1)(var3);
             var3 = var1.UNKNOWN_FUNCTION;
-            _fun10953_ip = 142;
-            continue _fun10953;
+            _fun10955_ip = 142;
+            continue _fun10955;
         case 126:
             var1 = var6.split;
             var4 = var1.bind(var6)(var4);
@@ -584,14 +584,14 @@ var9 = function arg0, arg1() {
             var3 = var3.HermesInternal;
             var4 = var3.concat;
             if (var2) {
-                _fun10953_ip = 179;
-                continue _fun10953
+                _fun10955_ip = 179;
+                continue _fun10955
             }
         case 166:
             var2 = 'safari-web-extension:';
             var2 = var4.bind(var2)(var5);
-            _fun10953_ip = 190;
-            continue _fun10953;
+            _fun10955_ip = 190;
+            continue _fun10955;
         case 179:
             var3 = 'safari-extension:';
             var2 = var4.bind(var3)(var5);

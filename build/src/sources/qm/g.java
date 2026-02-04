@@ -7,9 +7,9 @@ import lr.v;
 public abstract class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f47976a = o0.m(v.a("linear", new im.c()), v.a("ios", new im.b()));
+    private static final Map f47973a = o0.m(v.a("linear", new im.c()), v.a("ios", new im.b()));
 
     public static final Map a() {
-        return f47976a;
+        return f47973a;
     }
 }

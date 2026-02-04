@@ -27,35 +27,35 @@ import og.wa;
 public final class i extends pj.f {
 
     /* renamed from: j  reason: collision with root package name */
-    static final AtomicBoolean f54539j = new AtomicBoolean(true);
+    static final AtomicBoolean f54536j = new AtomicBoolean(true);
 
     /* renamed from: k  reason: collision with root package name */
-    private static final wj.d f54540k = wj.d.b();
+    private static final wj.d f54537k = wj.d.b();
 
     /* renamed from: d  reason: collision with root package name */
-    private final xj.e f54541d;
+    private final xj.e f54538d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final qd f54542e;
+    private final qd f54539e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final sd f54543f;
+    private final sd f54540f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final c f54544g;
+    private final c f54541g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f54545h;
+    private boolean f54542h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final wj.a f54546i = new wj.a();
+    private final wj.a f54543i = new wj.a();
 
     public i(qd qdVar, xj.e eVar, c cVar) {
         q.m(eVar, "FaceDetectorOptions can not be null");
-        this.f54541d = eVar;
-        this.f54542e = qdVar;
-        this.f54544g = cVar;
-        this.f54543f = sd.a(pj.i.c().b());
+        this.f54538d = eVar;
+        this.f54539e = qdVar;
+        this.f54541g = cVar;
+        this.f54540f = sd.a(pj.i.c().b());
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -69,7 +69,7 @@ public final class i extends pj.f {
     private final synchronized void n(final ca caVar, long j10, final vj.a aVar, final int i10, final int i11) {
         int i12;
         final long elapsedRealtime = SystemClock.elapsedRealtime() - j10;
-        this.f54542e.f(new od() { // from class: yj.g
+        this.f54539e.f(new od() { // from class: yj.g
             @Override // og.od
             public final ed zza() {
                 return i.this.j(elapsedRealtime, caVar, i10, i11, aVar);
@@ -77,13 +77,13 @@ public final class i extends pj.f {
         }, da.ON_DEVICE_FACE_DETECT);
         o2 o2Var = new o2();
         o2Var.c(caVar);
-        o2Var.d(Boolean.valueOf(f54539j.get()));
+        o2Var.d(Boolean.valueOf(f54536j.get()));
         o2Var.a(Integer.valueOf(i10));
         o2Var.e(Integer.valueOf(i11));
-        o2Var.b(k.a(this.f54541d));
+        o2Var.b(k.a(this.f54538d));
         final q2 f10 = o2Var.f();
         final h hVar = new h(this);
-        final qd qdVar = this.f54542e;
+        final qd qdVar = this.f54539e;
         final da daVar = da.AGGREGATED_ON_DEVICE_FACE_DETECTION;
         pj.g.d().execute(new Runnable(daVar, f10, elapsedRealtime, hVar, null) { // from class: og.ld
 
@@ -105,9 +105,9 @@ public final class i extends pj.f {
             }
         });
         long currentTimeMillis = System.currentTimeMillis();
-        boolean z10 = this.f54545h;
+        boolean z10 = this.f54542h;
         long j11 = currentTimeMillis - elapsedRealtime;
-        sd sdVar = this.f54543f;
+        sd sdVar = this.f54540f;
         if (true != z10) {
             i12 = 24303;
         } else {
@@ -118,18 +118,18 @@ public final class i extends pj.f {
 
     @Override // pj.k
     public final synchronized void b() {
-        this.f54545h = this.f54544g.b();
+        this.f54542h = this.f54541g.b();
     }
 
     @Override // pj.k
     public final synchronized void d() {
         ba baVar;
         try {
-            this.f54544g.zzb();
-            f54539j.set(true);
-            qd qdVar = this.f54542e;
+            this.f54541g.zzb();
+            f54536j.set(true);
+            qd qdVar = this.f54539e;
             ea eaVar = new ea();
-            if (this.f54545h) {
+            if (this.f54542h) {
                 baVar = ba.TYPE_THICK;
             } else {
                 baVar = ba.TYPE_THIN;
@@ -149,15 +149,15 @@ public final class i extends pj.f {
         t9 t9Var = new t9();
         t9Var.c(Long.valueOf(j10));
         t9Var.d(caVar);
-        t9Var.e(Boolean.valueOf(f54539j.get()));
+        t9Var.e(Boolean.valueOf(f54536j.get()));
         Boolean bool = Boolean.TRUE;
         t9Var.a(bool);
         t9Var.b(bool);
         uaVar.g(t9Var.f());
-        uaVar.e(k.a(this.f54541d));
+        uaVar.e(k.a(this.f54538d));
         uaVar.d(Integer.valueOf(i10));
         uaVar.h(Integer.valueOf(i11));
-        wj.d dVar = f54540k;
+        wj.d dVar = f54537k;
         int c10 = dVar.c(aVar);
         int d10 = dVar.d(aVar);
         o9 o9Var = new o9();
@@ -187,7 +187,7 @@ public final class i extends pj.f {
         uaVar.f(o9Var.d());
         wa i12 = uaVar.i();
         ea eaVar = new ea();
-        if (this.f54545h) {
+        if (this.f54542h) {
             baVar = ba.TYPE_THICK;
         } else {
             baVar = ba.TYPE_THIN;
@@ -201,7 +201,7 @@ public final class i extends pj.f {
     public final /* synthetic */ ed k(q2 q2Var, int i10, e9 e9Var) {
         ba baVar;
         ea eaVar = new ea();
-        if (this.f54545h) {
+        if (this.f54542h) {
             baVar = ba.TYPE_THICK;
         } else {
             baVar = ba.TYPE_THIN;

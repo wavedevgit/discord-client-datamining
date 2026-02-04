@@ -10,19 +10,19 @@ import java.util.Map;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int[] f51630a = {0, 4, 1, 5};
+    private static final int[] f51627a = {0, 4, 1, 5};
 
     /* renamed from: b  reason: collision with root package name */
-    private static final int[] f51631b = {6, 2, 7, 3};
+    private static final int[] f51628b = {6, 2, 7, 3};
 
     /* renamed from: c  reason: collision with root package name */
-    private static final int[] f51632c = {8, 1, 1, 1, 1, 1, 1, 3};
+    private static final int[] f51629c = {8, 1, 1, 1, 1, 1, 1, 3};
 
     /* renamed from: d  reason: collision with root package name */
-    private static final int[] f51633d = {7, 1, 1, 3, 1, 1, 1, 2, 1};
+    private static final int[] f51630d = {7, 1, 1, 3, 1, 1, 1, 2, 1};
 
     /* renamed from: e  reason: collision with root package name */
-    private static final int[] f51634e = {0, 180, 270, 90};
+    private static final int[] f51631e = {0, 180, 270, 90};
 
     private static gk.b a(gk.b bVar, int i10) {
         if (i10 % 360 == 0) {
@@ -152,7 +152,7 @@ public abstract class a {
     public static b d(c cVar, Map map, boolean z10) {
         int[] iArr;
         gk.b a10 = cVar.a();
-        for (int i10 : f51634e) {
+        for (int i10 : f51631e) {
             gk.b a11 = a(a10, i10);
             List c10 = c(z10, a11);
             if (!c10.isEmpty()) {
@@ -274,7 +274,7 @@ public abstract class a {
         int i13 = 10;
         int i14 = i10;
         int i15 = i11;
-        b(pVarArr, f(bVar, i12, l10, i14, i15, 10, f51632c), f51630a);
+        b(pVarArr, f(bVar, i12, l10, i14, i15, 10, f51629c), f51627a);
         p pVar = pVarArr[4];
         if (pVar != null) {
             int c10 = (int) pVar.c();
@@ -286,7 +286,7 @@ public abstract class a {
             i14 = d10;
             i15 = c10;
         }
-        b(pVarArr, f(bVar, i12, l10, i14, i15, i13, f51633d), f51631b);
+        b(pVarArr, f(bVar, i12, l10, i14, i15, i13, f51630d), f51628b);
         return pVarArr;
     }
 

@@ -75,19 +75,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[1] = var5;
         var1[2] = var4;
         var0 = function() { // Environment: var0
-            _fun107804: for (var _fun107804_ip = 0;;) switch (_fun107804_ip) {
+            _fun107817: for (var _fun107817_ip = 0;;) switch (_fun107817_ip) {
                 case 0:
                     var0 = _closure2_slot0;
                     if (!var0) {
-                        _fun107804_ip = 14;
-                        continue _fun107804
+                        _fun107817_ip = 14;
+                        continue _fun107817
                     }
                 case 10:
                     var0 = _closure2_slot1;
                 case 14:
                     if (!var0) {
-                        _fun107804_ip = 38;
-                        continue _fun107804
+                        _fun107817_ip = 38;
+                        continue _fun107817
                     }
                 case 17:
                     var2 = _closure2_slot2;
@@ -96,8 +96,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var2 === var1;
                 case 38:
                     if (!var0) {
-                        _fun107804_ip = 76;
-                        continue _fun107804
+                        _fun107817_ip = 76;
+                        continue _fun107817
                     }
                 case 41:
                     var2 = _closure1_slot0;
@@ -119,4 +119,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useFetchDeveloperActivityShelfItems = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 7221, 7910, 1348, 566, 7912, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 7224, 7913, 1348, 566, 7915, 2]);

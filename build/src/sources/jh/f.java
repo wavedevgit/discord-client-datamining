@@ -48,9 +48,9 @@ public class f extends jh.a {
     public f(View view) {
         super(view);
         Resources resources = view.getResources();
-        this.f31576g = resources.getDimension(yg.d.f54144l);
-        this.f31577h = resources.getDimension(yg.d.f54143k);
-        this.f31578i = resources.getDimension(yg.d.f54145m);
+        this.f31576g = resources.getDimension(yg.d.f54141l);
+        this.f31577h = resources.getDimension(yg.d.f54140k);
+        this.f31578i = resources.getDimension(yg.d.f54142m);
     }
 
     private boolean g(int i10, int i11) {

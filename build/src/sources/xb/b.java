@@ -3,16 +3,16 @@ package xb;
 final class b extends f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Integer f53213a;
+    private final Integer f53210a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(Integer num) {
-        this.f53213a = num;
+        this.f53210a = num;
     }
 
     @Override // xb.f
     public Integer a() {
-        return this.f53213a;
+        return this.f53210a;
     }
 
     public boolean equals(Object obj) {
@@ -22,7 +22,7 @@ final class b extends f {
         if (!(obj instanceof f)) {
             return false;
         }
-        Integer num = this.f53213a;
+        Integer num = this.f53210a;
         Integer a10 = ((f) obj).a();
         if (num == null) {
             if (a10 == null) {
@@ -35,7 +35,7 @@ final class b extends f {
 
     public int hashCode() {
         int hashCode;
-        Integer num = this.f53213a;
+        Integer num = this.f53210a;
         if (num == null) {
             hashCode = 0;
         } else {
@@ -45,6 +45,6 @@ final class b extends f {
     }
 
     public String toString() {
-        return "ProductData{productId=" + this.f53213a + "}";
+        return "ProductData{productId=" + this.f53210a + "}";
     }
 }

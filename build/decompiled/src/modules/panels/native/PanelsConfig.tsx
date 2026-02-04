@@ -18,14 +18,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var1;
     var1 = function() { // Environment: var0
         var0 = function arg0() {
-            _fun100686: for (var _fun100686_ip = 0;;) switch (_fun100686_ip) {
+            _fun100702: for (var _fun100702_ip = 0;;) switch (_fun100702_ip) {
                 case 0:
                     var1 = arg0;
                     var2 = null;
                     var0 = var2 != var1;
                     if (!var0) {
-                        _fun100686_ip = 21;
-                        continue _fun100686
+                        _fun100702_ip = 21;
+                        continue _fun100702
                     }
                 case 12:
                     var1 = var1.duration;

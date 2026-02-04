@@ -62,31 +62,31 @@ public class n extends a {
         Float f13 = null;
         if (this.f42394m != null && (b11 = this.f42392k.b()) != null) {
             float d10 = this.f42392k.d();
-            Float f14 = b11.f53749h;
+            Float f14 = b11.f53746h;
             y5.c cVar = this.f42394m;
-            float f15 = b11.f53748g;
+            float f15 = b11.f53745g;
             if (f14 == null) {
                 floatValue2 = f15;
             } else {
                 floatValue2 = f14.floatValue();
             }
             f11 = f10;
-            f12 = (Float) cVar.b(f15, floatValue2, (Float) b11.f53743b, (Float) b11.f53744c, f10, f10, d10);
+            f12 = (Float) cVar.b(f15, floatValue2, (Float) b11.f53740b, (Float) b11.f53741c, f10, f10, d10);
         } else {
             f11 = f10;
             f12 = null;
         }
         if (this.f42395n != null && (b10 = this.f42393l.b()) != null) {
             float d11 = this.f42393l.d();
-            Float f16 = b10.f53749h;
+            Float f16 = b10.f53746h;
             y5.c cVar2 = this.f42395n;
-            float f17 = b10.f53748g;
+            float f17 = b10.f53745g;
             if (f16 == null) {
                 floatValue = f17;
             } else {
                 floatValue = f16.floatValue();
             }
-            f13 = (Float) cVar2.b(f17, floatValue, (Float) b10.f53743b, (Float) b10.f53744c, f11, f11, d11);
+            f13 = (Float) cVar2.b(f17, floatValue, (Float) b10.f53740b, (Float) b10.f53741c, f11, f11, d11);
         }
         if (f12 == null) {
             this.f42391j.set(this.f42390i.x, 0.0f);

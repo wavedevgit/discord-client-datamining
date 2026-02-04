@@ -14,10 +14,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a extends ArrayAdapter {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f56122d;
+    private final List f56119d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final TextBasedComponentStyle f56123e;
+    private final TextBasedComponentStyle f56120e;
 
     /* renamed from: zp.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -44,12 +44,12 @@ public final class a extends ArrayAdapter {
         super(context, i10, objects);
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(objects, "objects");
-        this.f56122d = objects;
-        this.f56123e = textBasedComponentStyle;
+        this.f56119d = objects;
+        this.f56120e = textBasedComponentStyle;
     }
 
     public final List a() {
-        return this.f56122d;
+        return this.f56119d;
     }
 
     @Override // android.widget.ArrayAdapter, android.widget.Filterable
@@ -63,7 +63,7 @@ public final class a extends ArrayAdapter {
         Intrinsics.checkNotNullParameter(parent, "parent");
         View view2 = super.getView(i10, view, parent);
         Intrinsics.checkNotNullExpressionValue(view2, "getView(...)");
-        TextBasedComponentStyle textBasedComponentStyle = this.f56123e;
+        TextBasedComponentStyle textBasedComponentStyle = this.f56120e;
         if (textBasedComponentStyle != null) {
             if (view2 instanceof TextView) {
                 textView = (TextView) view2;

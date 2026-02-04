@@ -3,18 +3,18 @@ package rm;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f48871a;
+    private final int f48868a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f48872b;
+    private final int f48869b;
 
     public a(int i10, int i11) {
-        this.f48871a = i10;
-        this.f48872b = i11;
+        this.f48868a = i10;
+        this.f48869b = i11;
     }
 
     public final int a() {
-        return c.c(this.f48871a, this.f48872b);
+        return c.c(this.f48868a, this.f48869b);
     }
 
     public boolean equals(Object obj) {
@@ -25,19 +25,19 @@ public final class a {
             return false;
         }
         a aVar = (a) obj;
-        if (this.f48871a == aVar.f48871a && this.f48872b == aVar.f48872b) {
+        if (this.f48868a == aVar.f48868a && this.f48869b == aVar.f48869b) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (Integer.hashCode(this.f48871a) * 31) + Integer.hashCode(this.f48872b);
+        return (Integer.hashCode(this.f48868a) * 31) + Integer.hashCode(this.f48869b);
     }
 
     public String toString() {
-        int i10 = this.f48871a;
-        int i11 = this.f48872b;
+        int i10 = this.f48868a;
+        int i11 = this.f48869b;
         return "ColorProperties(color=" + i10 + ", tone=" + i11 + ")";
     }
 }

@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
     var0 = function arg0, arg1, arg2() {
-        _fun45010: for (var _fun45010_ip = 0;;) switch (_fun45010_ip) {
+        _fun45013: for (var _fun45013_ip = 0;;) switch (_fun45013_ip) {
             case 0:
                 var3 = arg0;
                 var2 = arg1;
@@ -31,8 +31,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = undefined;
                 var5 = 0;
                 if (!var4) {
-                    _fun45010_ip = 158;
-                    continue _fun45010
+                    _fun45013_ip = 158;
+                    continue _fun45013
                 }
             case 50:
                 var4 = var3.attachedGestures;
@@ -47,8 +47,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9 = var8.handlerTag;
                 var8 = var4.handlerTag;
                 if (!(var9 !== var8)) {
-                    _fun45010_ip = 146;
-                    continue _fun45010
+                    _fun45013_ip = 146;
+                    continue _fun45013
                 }
             case 108:
                 var9 = var7[var5];
@@ -62,8 +62,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var5 + 1;
                 var4 = var7.length;
                 if (var5 < var4) {
-                    _fun45010_ip = 50;
-                    continue _fun45010
+                    _fun45013_ip = 50;
+                    continue _fun45013
                 }
             case 158:
                 var3 = var3.attachedGestures;
@@ -75,21 +75,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var3.bind(var0)(var2);
                 var2 = var3.ghQueueMicrotask;
                 var1 = function() { // Environment: var1
-                    _fun45011: for (var _fun45011_ip = 0;;) switch (_fun45011_ip) {
+                    _fun45014: for (var _fun45014_ip = 0;;) switch (_fun45014_ip) {
                         case 0:
                             var0 = _closure2_slot0;
                             var0 = var0.isMounted;
                             if (!var0) {
-                                _fun45011_ip = 464;
-                                continue _fun45011
+                                _fun45014_ip = 464;
+                                continue _fun45014
                             }
                         case 21:
                             var2 = _closure2_slot2;
                             var0 = _closure2_slot0;
                             var0 = var0.attachedGestures;
                             if (!(var2 === var0)) {
-                                _fun45011_ip = 464;
-                                continue _fun45011
+                                _fun45014_ip = 464;
+                                continue _fun45014
                             }
                         case 42:
                             var0 = _closure2_slot2;
@@ -107,8 +107,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var7 = 0;
                             var5 = var8;
                             if (!var6) {
-                                _fun45011_ip = 371;
-                                continue _fun45011
+                                _fun45014_ip = 371;
+                                continue _fun45014
                             }
                         case 100:
                             var6 = _closure2_slot2;
@@ -121,16 +121,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var6 = var6.gestureId;
                             var6 = var13 !== var6;
                             if (!var6) {
-                                _fun45011_ip = 173;
-                                continue _fun45011
+                                _fun45014_ip = 173;
+                                continue _fun45014
                             }
                         case 147:
                             var13 = _closure2_slot1;
                             var13 = var13[var7];
                             var13 = var13.shouldUseReanimated;
                             if (var13) {
-                                _fun45011_ip = 170;
-                                continue _fun45011
+                                _fun45014_ip = 170;
+                                continue _fun45014
                             }
                         case 164:
                             var13 = var17.shouldUseReanimated;
@@ -138,8 +138,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var6 = var13;
                         case 173:
                             if (!var6) {
-                                _fun45011_ip = 178;
-                                continue _fun45011
+                                _fun45014_ip = 178;
+                                continue _fun45014
                             }
                         case 176:
                             var8 = true;
@@ -182,20 +182,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var6 = var6.length;
                             var5 = var8;
                             if (var7 < var6) {
-                                _fun45011_ip = 100;
-                                continue _fun45011
+                                _fun45014_ip = 100;
+                                continue _fun45014
                             }
                         case 371:
                             var6 = _closure2_slot0;
                             var6 = var6.animatedHandlers;
                             if (!var6) {
-                                _fun45011_ip = 437;
-                                continue _fun45011
+                                _fun45014_ip = 437;
+                                continue _fun45014
                             }
                         case 384:
                             if (!var5) {
-                                _fun45011_ip = 437;
-                                continue _fun45011
+                                _fun45014_ip = 437;
+                                continue _fun45014
                             }
                         case 387:
                             var7 = _closure2_slot2;

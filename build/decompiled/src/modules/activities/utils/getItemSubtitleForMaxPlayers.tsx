@@ -22,13 +22,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/getItemSubtitleForMaxPlayers.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun107965: for (var _fun107965_ip = 0;;) switch (_fun107965_ip) {
+        _fun107978: for (var _fun107978_ip = 0;;) switch (_fun107978_ip) {
             case 0:
                 var5 = arg0;
                 var7 = 0;
                 if (!(!(var5 > var7))) {
-                    _fun107965_ip = 70;
-                    continue _fun107965
+                    _fun107978_ip = 70;
+                    continue _fun107978
                 }
             case 9:
                 var4 = _closure1_slot0;
@@ -43,8 +43,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.t;
                 var0 = var0.s1vQIL;
                 var0 = var1.bind(var2)(var0);
-                _fun107965_ip = 137;
-                continue _fun107965;
+                _fun107978_ip = 137;
+                continue _fun107978;
             case 70:
                 var6 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -66,13 +66,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var3 = function arg0() {
-        _fun107966: for (var _fun107966_ip = 0;;) switch (_fun107966_ip) {
+        _fun107979: for (var _fun107979_ip = 0;;) switch (_fun107979_ip) {
             case 0:
                 var3 = arg0;
                 var6 = 0;
                 if (!(!(var3 > var6))) {
-                    _fun107966_ip = 68;
-                    continue _fun107966
+                    _fun107979_ip = 68;
+                    continue _fun107979
                 }
             case 9:
                 var5 = _closure1_slot0;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.t;
                 var0 = var0.zMNEiF;
                 var0 = var1.bind(var2)(var0);
-                _fun107966_ip = 92;
-                continue _fun107966;
+                _fun107979_ip = 92;
+                continue _fun107979;
             case 68:
                 var1 = global;
                 var1 = var1.HermesInternal;
@@ -101,13 +101,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getItemSubtitleForMaxPlayersShort = var3;
     var1 = function arg0() {
-        _fun107967: for (var _fun107967_ip = 0;;) switch (_fun107967_ip) {
+        _fun107980: for (var _fun107980_ip = 0;;) switch (_fun107980_ip) {
             case 0:
                 var3 = arg0;
                 var6 = 0;
                 if (!(!(var3 > var6))) {
-                    _fun107967_ip = 68;
-                    continue _fun107967
+                    _fun107980_ip = 68;
+                    continue _fun107980
                 }
             case 9:
                 var5 = _closure1_slot0;
@@ -122,8 +122,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.t;
                 var0 = var0.zMNEiF;
                 var0 = var1.bind(var2)(var0);
-                _fun107967_ip = 92;
-                continue _fun107967;
+                _fun107980_ip = 92;
+                continue _fun107980;
             case 68:
                 var1 = global;
                 var1 = var1.HermesInternal;

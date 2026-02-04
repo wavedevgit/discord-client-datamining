@@ -200,7 +200,7 @@ public final class k extends FrameLayout implements SubtitleView.a {
         ArrayList arrayList2 = new ArrayList();
         for (int i11 = 0; i11 < list.size(); i11++) {
             zd.b bVar2 = (zd.b) list.get(i11);
-            if (bVar2.f55876o != null) {
+            if (bVar2.f55873o != null) {
                 arrayList.add(bVar2);
             } else {
                 arrayList2.add(bVar2);

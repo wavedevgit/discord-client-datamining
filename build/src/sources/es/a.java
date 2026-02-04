@@ -13,7 +13,7 @@ import kotlin.reflect.KCallable;
 import kotlin.reflect.KFunction;
 import kotlin.reflect.KProperty;
 import kotlin.reflect.e;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public abstract class a {
     public static final boolean a(KCallable kCallable) {
         boolean z10;

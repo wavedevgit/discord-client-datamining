@@ -355,7 +355,7 @@ public class l0 implements tc.b0 {
                 if (vVar != null) {
                     bVar = vVar.e(this.f47646e, this.B);
                 } else {
-                    bVar = v.b.f48775a;
+                    bVar = v.b.f48772a;
                 }
                 this.f47644c.a(G(), new c((Format) ne.a.e(this.B), bVar));
             }

@@ -14,7 +14,7 @@ import ms.j0;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Lazy f52604a = l.a(new Function0() { // from class: wn.b
+    private static final Lazy f52601a = l.a(new Function0() { // from class: wn.b
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             BroadcastReceiver e10;
@@ -34,7 +34,7 @@ public abstract class c {
     }
 
     private static final BroadcastReceiver c() {
-        return (BroadcastReceiver) f52604a.getValue();
+        return (BroadcastReceiver) f52601a.getValue();
     }
 
     public static final void d(Context context) {
@@ -45,7 +45,7 @@ public abstract class c {
             return;
         }
         IntentFilter intentFilter = new IntentFilter();
-        for (String str : a.f52602a.a()) {
+        for (String str : a.f52599a.a()) {
             intentFilter.addAction(str);
         }
         if (Build.VERSION.SDK_INT >= 33) {

@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot9 = var3;
     var3 = var6.memo;
     var1 = function arg0() {
-        _fun90996: for (var _fun90996_ip = 0;;) switch (_fun90996_ip) {
+        _fun91013: for (var _fun91013_ip = 0;;) switch (_fun91013_ip) {
             case 0:
                 var1 = arg0;
                 var5 = var1.shown;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var10.bind(var3)(var2);
                 var4 = var6.useAnimatedStyle;
                 var2 = function() {
-                    _fun90997: for (var _fun90997_ip = 0;;) switch (_fun90997_ip) {
+                    _fun91014: for (var _fun91014_ip = 0;;) switch (_fun91014_ip) {
                         case 0:
                             var0 = {};
                             var2 = _closure2_slot0;
@@ -118,15 +118,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var1.bind(var2)();
                             var1 = 0;
                             if (!var2) {
-                                _fun90997_ip = 49;
-                                continue _fun90997
+                                _fun91014_ip = 49;
+                                continue _fun91014
                             }
                         case 23:
                             var3 = _closure1_slot7;
                             var2 = 1;
                             if (!var3) {
-                                _fun90997_ip = 46;
-                                continue _fun90997
+                                _fun91014_ip = 46;
+                                continue _fun91014
                             }
                         case 36:
                             var2 = 0.7;
@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var10.bind(var3)(var1);
                 var1 = var2.useAnimatedProps;
                 var0 = function() {
-                    _fun90998: for (var _fun90998_ip = 0;;) switch (_fun90998_ip) {
+                    _fun91015: for (var _fun91015_ip = 0;;) switch (_fun91015_ip) {
                         case 0:
                             var0 = {};
                             var3 = _closure1_slot0;
@@ -166,8 +166,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var1.bind(var4)();
                             var1 = 0;
                             if (!var4) {
-                                _fun90998_ip = 63;
-                                continue _fun90998
+                                _fun91015_ip = 63;
+                                continue _fun91015
                             }
                         case 53:
                             var1 = 0.3;
@@ -221,8 +221,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var8.bind(var10)(var15);
                 var8 = 'light';
                 if (!var10) {
-                    _fun90996_ip = 335;
-                    continue _fun90996
+                    _fun91013_ip = 335;
+                    continue _fun91013
                 }
             case 331:
                 var8 = 'dark';
@@ -267,13 +267,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var12.bind(var14)(var15);
                 var13 = _closure1_slot6;
                 if (var12) {
-                    _fun90996_ip = 514;
-                    continue _fun90996
+                    _fun91013_ip = 514;
+                    continue _fun91013
                 }
             case 506:
                 var12 = var13.strokeAltLight;
-                _fun90996_ip = 520;
-                continue _fun90996;
+                _fun91013_ip = 520;
+                continue _fun91013;
             case 514:
                 var12 = var13.strokeAlt;
             case 520:

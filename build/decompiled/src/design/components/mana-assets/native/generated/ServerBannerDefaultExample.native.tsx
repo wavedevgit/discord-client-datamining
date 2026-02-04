@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/ServerBannerDefaultExample.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52881: for (var _fun52881_ip = 0;;) switch (_fun52881_ip) {
+        _fun52884: for (var _fun52884_ip = 0;;) switch (_fun52884_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun52881_ip = 35;
-                    continue _fun52881
+                    _fun52884_ip = 35;
+                    continue _fun52884
                 }
             case 29:
                 var9 = 300;
             case 35:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun52881_ip = 47;
-                    continue _fun52881
+                    _fun52884_ip = 47;
+                    continue _fun52884
                 }
             case 44:
                 var7 = 156;

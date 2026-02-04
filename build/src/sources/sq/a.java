@@ -7,13 +7,13 @@ public class a implements Parcelable {
     public static final Parcelable.Creator<a> CREATOR = new C0613a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f49574d;
+    private final String f49571d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final float f49575e;
+    private final float f49572e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final float f49576i;
+    private final float f49573i;
 
     /* renamed from: sq.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -35,21 +35,21 @@ public class a implements Parcelable {
     }
 
     public a(String str, float f10, float f11) {
-        this.f49574d = str;
-        this.f49575e = f10;
-        this.f49576i = f11;
+        this.f49571d = str;
+        this.f49572e = f10;
+        this.f49573i = f11;
     }
 
     public String a() {
-        return this.f49574d;
+        return this.f49571d;
     }
 
     public float b() {
-        return this.f49575e;
+        return this.f49572e;
     }
 
     public float c() {
-        return this.f49576i;
+        return this.f49573i;
     }
 
     @Override // android.os.Parcelable
@@ -59,14 +59,14 @@ public class a implements Parcelable {
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f49574d);
-        parcel.writeFloat(this.f49575e);
-        parcel.writeFloat(this.f49576i);
+        parcel.writeString(this.f49571d);
+        parcel.writeFloat(this.f49572e);
+        parcel.writeFloat(this.f49573i);
     }
 
     protected a(Parcel parcel) {
-        this.f49574d = parcel.readString();
-        this.f49575e = parcel.readFloat();
-        this.f49576i = parcel.readFloat();
+        this.f49571d = parcel.readString();
+        this.f49572e = parcel.readFloat();
+        this.f49573i = parcel.readFloat();
     }
 }

@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/self_mod/stranger_danger/hooks/useStrangerDangerWarning.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun76998: for (var _fun76998_ip = 0;;) switch (_fun76998_ip) {
+        _fun77015: for (var _fun77015_ip = 0;;) switch (_fun77015_ip) {
             case 0:
                 var8 = arg0;
                 var6 = _closure1_slot0;
@@ -78,8 +78,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var6 == var9;
                 var6 = undefined;
                 if (var7) {
-                    _fun76998_ip = 183;
-                    continue _fun76998
+                    _fun77015_ip = 183;
+                    continue _fun77015
                 }
             case 173:
                 var7 = var9.isStaff;
@@ -96,29 +96,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = 0;
                 var2 = var7 > var2;
                 if (var5) {
-                    _fun76998_ip = 234;
-                    continue _fun76998
+                    _fun77015_ip = 234;
+                    continue _fun77015
                 }
             case 228:
                 var5 = true;
                 if (!(var5 === var6)) {
-                    _fun76998_ip = 245;
-                    continue _fun76998
+                    _fun77015_ip = 245;
+                    continue _fun77015
                 }
             case 234:
                 if (var4) {
-                    _fun76998_ip = 245;
-                    continue _fun76998
+                    _fun77015_ip = 245;
+                    continue _fun77015
                 }
             case 237:
                 if (var3) {
-                    _fun76998_ip = 245;
-                    continue _fun76998
+                    _fun77015_ip = 245;
+                    continue _fun77015
                 }
             case 240:
                 if (var2) {
-                    _fun76998_ip = 245;
-                    continue _fun76998
+                    _fun77015_ip = 245;
+                    continue _fun77015
                 }
             case 243:
                 return var1;
@@ -128,4 +128,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useStrangerDangerWarning = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 9011, 566, 9812, 9813, 9169, 6508, 9010, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 9014, 566, 9815, 9816, 9172, 6508, 9013, 2]);

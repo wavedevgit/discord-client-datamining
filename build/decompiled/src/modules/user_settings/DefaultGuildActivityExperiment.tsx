@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.DefaultGuildActivityExperiment = var4;
     var2.DefaultGuildActivityExperimentNewUsers = var3;
     var3 = function(arg0) { // Environment: var1
-        _fun96687: for (var _fun96687_ip = 0;;) switch (_fun96687_ip) {
+        _fun96703: for (var _fun96703_ip = 0;;) switch (_fun96703_ip) {
             case 0:
                 var2 = arg0;
                 var5 = _closure1_slot2;
@@ -85,8 +85,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4.bind(var5)(var3, var0);
                 var0 = var0.enabled;
                 if (var0) {
-                    _fun96687_ip = 79;
-                    continue _fun96687
+                    _fun96703_ip = 79;
+                    continue _fun96703
                 }
             case 45:
                 var5 = _closure1_slot3;
@@ -99,8 +99,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.enabled;
             case 79:
                 if (var0) {
-                    _fun96687_ip = 139;
-                    continue _fun96687
+                    _fun96703_ip = 139;
+                    continue _fun96703
                 }
             case 82:
                 var5 = _closure1_slot0;
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isEligibleForDefaultGuildActivity = var3;
     var1 = function(arg0) { // Environment: var1
-        _fun96688: for (var _fun96688_ip = 0;;) switch (_fun96688_ip) {
+        _fun96704: for (var _fun96704_ip = 0;;) switch (_fun96704_ip) {
             case 0:
                 var2 = arg0;
                 var5 = _closure1_slot2;
@@ -156,15 +156,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.GUILD_ACTIVITY_STATUS;
                 var1 = var3.bind(var4)(var1);
                 if (var0) {
-                    _fun96688_ip = 139;
-                    continue _fun96688
+                    _fun96704_ip = 139;
+                    continue _fun96704
                 }
             case 136:
                 var0 = var2;
             case 139:
                 if (var0) {
-                    _fun96688_ip = 145;
-                    continue _fun96688
+                    _fun96704_ip = 145;
+                    continue _fun96704
                 }
             case 142:
                 var0 = var1;

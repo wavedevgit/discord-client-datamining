@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/ShinyButton.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun61599: for (var _fun61599_ip = 0;;) switch (_fun61599_ip) {
+        _fun61616: for (var _fun61616_ip = 0;;) switch (_fun61616_ip) {
             case 0:
                 var5 = arg0;
                 var8 = var5.style;
@@ -101,8 +101,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var5.shineDisabled;
                 var3 = undefined;
                 if (!(var0 === var3)) {
-                    _fun61599_ip = 43;
-                    continue _fun61599
+                    _fun61616_ip = 43;
+                    continue _fun61616
                 }
             case 41:
                 var0 = false;
@@ -221,13 +221,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var13.bind(var3)(var1);
                 var2 = var10.useAnimatedStyle;
                 var1 = function() {
-                    _fun61605: for (var _fun61605_ip = 0;;) switch (_fun61605_ip) {
+                    _fun61622: for (var _fun61622_ip = 0;;) switch (_fun61622_ip) {
                         case 0:
                             var2 = _closure2_slot6;
                             var0 = null;
                             if (!(var0 != var2)) {
-                                _fun61605_ip = 218;
-                                continue _fun61605
+                                _fun61622_ip = 218;
+                                continue _fun61622
                             }
                         case 16:
                             var0 = {};
@@ -274,8 +274,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = new Array(1);
                             var1[0] = var2;
                             var0.transform = var1;
-                            _fun61605_ip = 248;
-                            continue _fun61605;
+                            _fun61622_ip = 248;
+                            continue _fun61622;
                         case 218:
                             var1 = {};
                             var3 = {};
@@ -339,41 +339,41 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = 'disabled';
                 var0[var5] = var6;
                 var5 = function() {
-                    _fun61606: for (var _fun61606_ip = 0;;) switch (_fun61606_ip) {
+                    _fun61623: for (var _fun61623_ip = 0;;) switch (_fun61623_ip) {
                         case 0:
                             var1 = _closure2_slot0;
                             var0 = null;
                             if (var1) {
-                                _fun61606_ip = 256;
-                                continue _fun61606
+                                _fun61623_ip = 256;
+                                continue _fun61623
                             }
                         case 15:
                             var1 = _closure2_slot1;
                             var0 = null;
                             if (var1) {
-                                _fun61606_ip = 256;
-                                continue _fun61606
+                                _fun61623_ip = 256;
+                                continue _fun61623
                             }
                         case 27:
                             var1 = _closure2_slot8;
                             var0 = null;
                             if (var1) {
-                                _fun61606_ip = 256;
-                                continue _fun61606
+                                _fun61623_ip = 256;
+                                continue _fun61623
                             }
                         case 39:
                             var1 = _closure2_slot2;
                             var0 = null;
                             if (var1) {
-                                _fun61606_ip = 256;
-                                continue _fun61606
+                                _fun61623_ip = 256;
+                                continue _fun61623
                             }
                         case 51:
                             var1 = _closure2_slot9;
                             var0 = null;
                             if (!var1) {
-                                _fun61606_ip = 256;
-                                continue _fun61606
+                                _fun61623_ip = 256;
+                                continue _fun61623
                             }
                         case 63:
                             var4 = _closure1_slot7;

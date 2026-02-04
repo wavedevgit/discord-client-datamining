@@ -154,8 +154,8 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorL
         this.f14149i = g.f(view.getContext(), f14145v, 175);
         Context context = view.getContext();
         int i11 = f14146w;
-        this.f14150o = g.g(context, i11, zg.a.f55947d);
-        this.f14151p = g.g(view.getContext(), i11, zg.a.f55946c);
+        this.f14150o = g.g(context, i11, zg.a.f55944d);
+        this.f14151p = g.g(view.getContext(), i11, zg.a.f55943c);
         return super.p(coordinatorLayout, view, i10);
     }
 

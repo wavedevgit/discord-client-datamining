@@ -70,18 +70,18 @@ public class k {
         if (i11 != 0) {
             contextThemeWrapper = new ContextThemeWrapper(contextThemeWrapper, i11);
         }
-        TypedArray obtainStyledAttributes = contextThemeWrapper.obtainStyledAttributes(yg.k.f54444r5);
+        TypedArray obtainStyledAttributes = contextThemeWrapper.obtainStyledAttributes(yg.k.f54441r5);
         try {
-            int i12 = obtainStyledAttributes.getInt(yg.k.f54453s5, 0);
-            int i13 = obtainStyledAttributes.getInt(yg.k.f54480v5, i12);
-            int i14 = obtainStyledAttributes.getInt(yg.k.f54489w5, i12);
-            int i15 = obtainStyledAttributes.getInt(yg.k.f54471u5, i12);
-            int i16 = obtainStyledAttributes.getInt(yg.k.f54462t5, i12);
-            oh.c m10 = m(obtainStyledAttributes, yg.k.f54498x5, cVar);
+            int i12 = obtainStyledAttributes.getInt(yg.k.f54450s5, 0);
+            int i13 = obtainStyledAttributes.getInt(yg.k.f54477v5, i12);
+            int i14 = obtainStyledAttributes.getInt(yg.k.f54486w5, i12);
+            int i15 = obtainStyledAttributes.getInt(yg.k.f54468u5, i12);
+            int i16 = obtainStyledAttributes.getInt(yg.k.f54459t5, i12);
+            oh.c m10 = m(obtainStyledAttributes, yg.k.f54495x5, cVar);
             oh.c m11 = m(obtainStyledAttributes, yg.k.A5, m10);
             oh.c m12 = m(obtainStyledAttributes, yg.k.B5, m10);
-            oh.c m13 = m(obtainStyledAttributes, yg.k.f54516z5, m10);
-            return new b().z(i13, m11).E(i14, m12).u(i15, m13).q(i16, m(obtainStyledAttributes, yg.k.f54507y5, m10));
+            oh.c m13 = m(obtainStyledAttributes, yg.k.f54513z5, m10);
+            return new b().z(i13, m11).E(i14, m12).u(i15, m13).q(i16, m(obtainStyledAttributes, yg.k.f54504y5, m10));
         } finally {
             obtainStyledAttributes.recycle();
         }
@@ -96,9 +96,9 @@ public class k {
     }
 
     public static b g(Context context, AttributeSet attributeSet, int i10, int i11, oh.c cVar) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, yg.k.f54416o4, i10, i11);
-        int resourceId = obtainStyledAttributes.getResourceId(yg.k.f54425p4, 0);
-        int resourceId2 = obtainStyledAttributes.getResourceId(yg.k.f54434q4, 0);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, yg.k.f54413o4, i10, i11);
+        int resourceId = obtainStyledAttributes.getResourceId(yg.k.f54422p4, 0);
+        int resourceId2 = obtainStyledAttributes.getResourceId(yg.k.f54431q4, 0);
         obtainStyledAttributes.recycle();
         return d(context, resourceId, resourceId2, cVar);
     }

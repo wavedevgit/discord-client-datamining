@@ -15,19 +15,19 @@ import wg.k;
 public class a extends ef.d {
 
     /* renamed from: k  reason: collision with root package name */
-    private static final a.g f51590k;
+    private static final a.g f51587k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final ef.a f51591l;
+    private static final ef.a f51588l;
 
     static {
         a.g gVar = new a.g();
-        f51590k = gVar;
-        f51591l = new ef.a("Fido.FIDO2_API", new t5(), gVar);
+        f51587k = gVar;
+        f51588l = new ef.a("Fido.FIDO2_API", new t5(), gVar);
     }
 
     public a(Activity activity) {
-        super(activity, f51591l, a.d.f21485c, new ff.a());
+        super(activity, f51588l, a.d.f21485c, new ff.a());
     }
 
     public Task C(final r rVar) {

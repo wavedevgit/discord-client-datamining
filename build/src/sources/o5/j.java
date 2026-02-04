@@ -37,12 +37,12 @@ public class j extends g {
         i iVar = (i) aVar;
         Path k10 = iVar.k();
         if (k10 == null) {
-            return (PointF) aVar.f53743b;
+            return (PointF) aVar.f53740b;
         }
         y5.c cVar = this.f42353e;
         if (cVar != null) {
             f11 = f10;
-            PointF pointF = (PointF) cVar.b(iVar.f53748g, iVar.f53749h.floatValue(), (PointF) iVar.f53743b, (PointF) iVar.f53744c, e(), f11, f());
+            PointF pointF = (PointF) cVar.b(iVar.f53745g, iVar.f53746h.floatValue(), (PointF) iVar.f53740b, (PointF) iVar.f53741c, e(), f11, f());
             if (pointF != null) {
                 return pointF;
             }

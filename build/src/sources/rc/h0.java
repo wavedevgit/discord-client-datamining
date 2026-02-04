@@ -16,16 +16,16 @@ import rc.b0;
 public final class h0 implements j0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final DataSource.Factory f48726a;
+    private final DataSource.Factory f48723a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f48727b;
+    private final String f48724b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f48728c;
+    private final boolean f48725c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f48729d;
+    private final Map f48726d;
 
     public h0(String str, boolean z10, DataSource.Factory factory) {
         boolean z11;
@@ -35,10 +35,10 @@ public final class h0 implements j0 {
             z11 = true;
         }
         ne.a.a(z11);
-        this.f48726a = factory;
-        this.f48727b = str;
-        this.f48728c = z10;
-        this.f48729d = new HashMap();
+        this.f48723a = factory;
+        this.f48724b = str;
+        this.f48725c = z10;
+        this.f48726d = new HashMap();
     }
 
     private static byte[] c(DataSource.Factory factory, String str, byte[] bArr, Map map) {
@@ -83,8 +83,8 @@ public final class h0 implements j0 {
     public byte[] a(UUID uuid, b0.a aVar) {
         String str;
         String b10 = aVar.b();
-        if (this.f48728c || TextUtils.isEmpty(b10)) {
-            b10 = this.f48727b;
+        if (this.f48725c || TextUtils.isEmpty(b10)) {
+            b10 = this.f48724b;
         }
         if (!TextUtils.isEmpty(b10)) {
             HashMap hashMap = new HashMap();
@@ -100,10 +100,10 @@ public final class h0 implements j0 {
             if (uuid2.equals(uuid)) {
                 hashMap.put("SOAPAction", "http://schemas.microsoft.com/DRM/2007/03/protocols/AcquireLicense");
             }
-            synchronized (this.f48729d) {
-                hashMap.putAll(this.f48729d);
+            synchronized (this.f48726d) {
+                hashMap.putAll(this.f48726d);
             }
-            return c(this.f48726a, b10, aVar.a(), hashMap);
+            return c(this.f48723a, b10, aVar.a(), hashMap);
         }
         a.b bVar = new a.b();
         Uri uri = Uri.EMPTY;
@@ -112,14 +112,14 @@ public final class h0 implements j0 {
 
     @Override // rc.j0
     public byte[] b(UUID uuid, b0.d dVar) {
-        return c(this.f48726a, dVar.b() + "&signedRequest=" + w0.E(dVar.a()), null, Collections.EMPTY_MAP);
+        return c(this.f48723a, dVar.b() + "&signedRequest=" + w0.E(dVar.a()), null, Collections.EMPTY_MAP);
     }
 
     public void e(String str, String str2) {
         ne.a.e(str);
         ne.a.e(str2);
-        synchronized (this.f48729d) {
-            this.f48729d.put(str, str2);
+        synchronized (this.f48726d) {
+            this.f48726d.put(str, str2);
         }
     }
 }

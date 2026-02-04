@@ -1,74 +1,25 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun96840: for (var _fun96840_ip = 0;;) switch (_fun96840_ip) {
-        case 0:
-            var4 = require;
-            var5 = dependencyMap;
-            var _closure1_slot0 = var4;
-            var _closure1_slot1 = var5;
-            var0 = global;
-            var2 = var0.Object;
-            var _closure1_slot2 = var2;
-            var0 = 0;
-            var3 = var5[var0];
-            var0 = undefined;
-            var6 = var4.bind(var0)(var3);
-            var3 = '';
-            var3 = var3.split;
-            var3 = var6.bind(var0)(var3);
-            var _closure1_slot3 = var3;
-            var3 = 1;
-            var3 = var5[var3];
-            var4 = var4.bind(var0)(var3);
-            var3 = function() { // Environment: var1
-                var2 = _closure1_slot2;
-                var1 = undefined;
-                var0 = 'z';
-                var2 = var2.bind(var1)(var0);
-                var1 = var2.propertyIsEnumerable;
-                var0 = 0;
-                var0 = var1.bind(var2)(var0);
+    var1 = function(arg0) { // Environment: var0
+        _fun96853: for (var _fun96853_ip = 0;;) switch (_fun96853_ip) {
+            case 0:
+                var0 = arg0;
+            case 3: // try_start_0
+                var1 = var0;
+                var0 = undefined;
+                var0 = var1.bind(var0)();
+                var0 = !var0;
+            case 15: // try_end0
                 var0 = !var0;
                 return var0;
-            };
-            var3 = var4.bind(var0)(var3);
-            if (!var3) {
-                _fun96840_ip = 93;
-                continue _fun96840
-            }
-        case 86:
-            var2 = function(arg0) { // Environment: var1
-                _fun96842: for (var _fun96842_ip = 0;;) switch (_fun96842_ip) {
-                    case 0:
-                        var4 = arg0;
-                        var2 = _closure1_slot0;
-                        var3 = _closure1_slot1;
-                        var0 = 2;
-                        var0 = var3[var0];
-                        var3 = undefined;
-                        var0 = var2.bind(var3)(var0);
-                        var2 = var0.bind(var3)(var4);
-                        var0 = 'String';
-                        if (!(var0 !== var2)) {
-                            _fun96842_ip = 52;
-                            continue _fun96842
-                        }
-                    case 41:
-                        var0 = _closure1_slot2;
-                        var0 = var0.bind(var3)(var4);
-                        _fun96842_ip = 66;
-                        continue _fun96842;
-                    case 52:
-                        var2 = _closure1_slot3;
-                        var1 = '';
-                        var0 = var2.bind(var3)(var4, var1);
-                    case 66:
-                        return var0;
-                }
-            };
-        case 93:
-            var1 = arg4;
-            var1.exports = var2;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12647, 12644, 12649]);
+            case 20: // catch_target0
+                CatchBlockStart(arg_register = 0);
+                var0 = true;
+                return var0;
+        }
+    };
+    var0 = arg4;
+    var0.exports = var1;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

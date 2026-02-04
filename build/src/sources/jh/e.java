@@ -32,8 +32,8 @@ public class e extends jh.a {
     public e(View view) {
         super(view);
         Resources resources = view.getResources();
-        this.f31573g = resources.getDimension(yg.d.f54141i);
-        this.f31574h = resources.getDimension(yg.d.f54142j);
+        this.f31573g = resources.getDimension(yg.d.f54138i);
+        this.f31574h = resources.getDimension(yg.d.f54139j);
     }
 
     private Animator g() {

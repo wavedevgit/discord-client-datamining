@@ -10,16 +10,16 @@ import kotlin.reflect.KClass;
 public final class f implements c0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KClass f54604a;
+    private final KClass f54601a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Function4 f54605b;
+    private final Function4 f54602b;
 
     public f(KClass type, Function4 viewConstructor) {
         Intrinsics.checkNotNullParameter(type, "type");
         Intrinsics.checkNotNullParameter(viewConstructor, "viewConstructor");
-        this.f54604a = type;
-        this.f54605b = viewConstructor;
+        this.f54601a = type;
+        this.f54602b = viewConstructor;
     }
 
     @Override // ym.c0
@@ -27,11 +27,11 @@ public final class f implements c0 {
         Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
         Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
         Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-        return (View) this.f54605b.invoke(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+        return (View) this.f54602b.invoke(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
     }
 
     @Override // ym.c0
     public KClass getType() {
-        return this.f54604a;
+        return this.f54601a;
     }
 }

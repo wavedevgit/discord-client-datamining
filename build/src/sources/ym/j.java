@@ -14,13 +14,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class j implements View.OnAttachStateChangeListener, DefaultLifecycleObserver {
 
     /* renamed from: d  reason: collision with root package name */
-    private final View f54636d;
+    private final View f54633d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Function0 f54637e;
+    private final Function0 f54634e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final a f54638i;
+    private final a f54635i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends OnBackPressedCallback {
@@ -37,20 +37,20 @@ public final class j implements View.OnAttachStateChangeListener, DefaultLifecyc
     public j(View view, Function0 handler) {
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(handler, "handler");
-        this.f54636d = view;
-        this.f54637e = handler;
-        this.f54638i = new a();
+        this.f54633d = view;
+        this.f54634e = handler;
+        this.f54635i = new a();
     }
 
     public final Function0 a() {
-        return this.f54637e;
+        return this.f54634e;
     }
 
     public final void b() {
         Lifecycle lifecycle;
-        this.f54638i.remove();
-        this.f54636d.removeOnAttachStateChangeListener(this);
-        LifecycleOwner a10 = r0.a(this.f54636d);
+        this.f54635i.remove();
+        this.f54633d.removeOnAttachStateChangeListener(this);
+        LifecycleOwner a10 = r0.a(this.f54633d);
         if (a10 == null || (lifecycle = a10.getLifecycle()) == null) {
             return;
         }
@@ -66,8 +66,8 @@ public final class j implements View.OnAttachStateChangeListener, DefaultLifecyc
     @Override // android.view.View.OnAttachStateChangeListener
     public void onViewAttachedToWindow(View attachedView) {
         Intrinsics.checkNotNullParameter(attachedView, "attachedView");
-        if (this.f54636d == attachedView) {
-            this.f54638i.setEnabled(true);
+        if (this.f54633d == attachedView) {
+            this.f54635i.setEnabled(true);
             return;
         }
         throw new IllegalArgumentException("Failed requirement.");
@@ -76,8 +76,8 @@ public final class j implements View.OnAttachStateChangeListener, DefaultLifecyc
     @Override // android.view.View.OnAttachStateChangeListener
     public void onViewDetachedFromWindow(View detachedView) {
         Intrinsics.checkNotNullParameter(detachedView, "detachedView");
-        if (this.f54636d == detachedView) {
-            this.f54638i.setEnabled(false);
+        if (this.f54633d == detachedView) {
+            this.f54635i.setEnabled(false);
             return;
         }
         throw new IllegalArgumentException("Failed requirement.");
@@ -85,16 +85,16 @@ public final class j implements View.OnAttachStateChangeListener, DefaultLifecyc
 
     public final void start() {
         Lifecycle lifecycle;
-        Context context = this.f54636d.getContext();
+        Context context = this.f54633d.getContext();
         Intrinsics.checkNotNullExpressionValue(context, "view.context");
         androidx.activity.z b10 = e.b(context);
         if (b10 != null) {
-            b10.getOnBackPressedDispatcher().h(b10, this.f54638i);
-            this.f54636d.addOnAttachStateChangeListener(this);
-            if (this.f54636d.isAttachedToWindow()) {
-                onViewAttachedToWindow(this.f54636d);
+            b10.getOnBackPressedDispatcher().h(b10, this.f54635i);
+            this.f54633d.addOnAttachStateChangeListener(this);
+            if (this.f54633d.isAttachedToWindow()) {
+                onViewAttachedToWindow(this.f54633d);
             }
-            LifecycleOwner a10 = r0.a(this.f54636d);
+            LifecycleOwner a10 = r0.a(this.f54633d);
             if (a10 == null || (lifecycle = a10.getLifecycle()) == null) {
                 return;
             }

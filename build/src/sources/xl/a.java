@@ -5,10 +5,10 @@ import android.media.ExifInterface;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    Float f53396a;
+    Float f53393a;
 
     /* renamed from: b  reason: collision with root package name */
-    Float f53397b;
+    Float f53394b;
 
     public a(ExifInterface exifInterface) {
         String attribute = exifInterface.getAttribute("GPSLatitude");
@@ -17,14 +17,14 @@ public class a {
         String attribute4 = exifInterface.getAttribute("GPSLongitudeRef");
         if (attribute != null && attribute2 != null && attribute3 != null && attribute4 != null) {
             if (attribute2.equals("N")) {
-                this.f53396a = a(attribute);
+                this.f53393a = a(attribute);
             } else {
-                this.f53396a = Float.valueOf(0.0f - a(attribute).floatValue());
+                this.f53393a = Float.valueOf(0.0f - a(attribute).floatValue());
             }
             if (attribute4.equals("E")) {
-                this.f53397b = a(attribute3);
+                this.f53394b = a(attribute3);
             } else {
-                this.f53397b = Float.valueOf(0.0f - a(attribute3).floatValue());
+                this.f53394b = Float.valueOf(0.0f - a(attribute3).floatValue());
             }
         }
     }
@@ -42,10 +42,10 @@ public class a {
     }
 
     public Float b() {
-        return this.f53396a;
+        return this.f53393a;
     }
 
     public Float c() {
-        return this.f53397b;
+        return this.f53394b;
     }
 }

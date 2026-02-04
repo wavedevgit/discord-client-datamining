@@ -11,19 +11,19 @@ import kotlinx.coroutines.flow.FlowCollector;
 public final class l implements o {
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f52550b;
+    private final long f52547b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f52551c;
+    private final String f52548c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f52552d;
+        int f52549d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f52553e;
+        private /* synthetic */ Object f52550e;
 
         a(Continuation continuation) {
             super(2, continuation);
@@ -32,7 +32,7 @@ public final class l implements o {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             a aVar = new a(continuation);
-            aVar.f52553e = obj;
+            aVar.f52550e = obj;
             return aVar;
         }
 
@@ -54,7 +54,7 @@ public final class l implements o {
             /*
                 r6 = this;
                 java.lang.Object r0 = rr.b.f()
-                int r1 = r6.f52552d
+                int r1 = r6.f52549d
                 r2 = 2
                 r3 = 1
                 if (r1 == 0) goto L22
@@ -68,27 +68,27 @@ public final class l implements o {
                 r7.<init>(r0)
                 throw r7
             L1a:
-                java.lang.Object r1 = r6.f52553e
+                java.lang.Object r1 = r6.f52550e
                 kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
                 kotlin.c.b(r7)
                 goto L3b
             L22:
                 kotlin.c.b(r7)
-                java.lang.Object r7 = r6.f52553e
+                java.lang.Object r7 = r6.f52550e
                 r1 = r7
                 kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
                 wm.l r7 = wm.l.this
                 long r4 = wm.l.b(r7)
-                r6.f52553e = r1
-                r6.f52552d = r3
+                r6.f52550e = r1
+                r6.f52549d = r3
                 java.lang.Object r7 = js.i0.a(r4, r6)
                 if (r7 != r0) goto L3b
                 goto L48
             L3b:
                 kotlin.Unit r7 = kotlin.Unit.f32464a
                 r3 = 0
-                r6.f52553e = r3
-                r6.f52552d = r2
+                r6.f52550e = r3
+                r6.f52549d = r2
                 java.lang.Object r7 = r1.emit(r7, r6)
                 if (r7 != r0) goto L49
             L48:
@@ -108,14 +108,14 @@ public final class l implements o {
 
     public l(long j10, String key) {
         Intrinsics.checkNotNullParameter(key, "key");
-        this.f52550b = j10;
-        this.f52551c = key;
+        this.f52547b = j10;
+        this.f52548c = key;
     }
 
     @Override // wm.o
     public boolean a(o otherWorker) {
         Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
-        if ((otherWorker instanceof l) && Intrinsics.areEqual(((l) otherWorker).f52551c, this.f52551c)) {
+        if ((otherWorker instanceof l) && Intrinsics.areEqual(((l) otherWorker).f52548c, this.f52548c)) {
             return true;
         }
         return false;
@@ -129,14 +129,14 @@ public final class l implements o {
             return false;
         }
         l lVar = (l) obj;
-        if (this.f52550b == lVar.f52550b && Intrinsics.areEqual(this.f52551c, lVar.f52551c)) {
+        if (this.f52547b == lVar.f52547b && Intrinsics.areEqual(this.f52548c, lVar.f52548c)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (Long.hashCode(this.f52550b) * 31) + this.f52551c.hashCode();
+        return (Long.hashCode(this.f52547b) * 31) + this.f52548c.hashCode();
     }
 
     @Override // wm.o
@@ -145,6 +145,6 @@ public final class l implements o {
     }
 
     public String toString() {
-        return "TimerWorker(delayMs=" + this.f52550b + ", key=" + this.f52551c + ')';
+        return "TimerWorker(delayMs=" + this.f52547b + ", key=" + this.f52548c + ')';
     }
 }

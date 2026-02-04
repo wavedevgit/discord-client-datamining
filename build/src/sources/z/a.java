@@ -5,16 +5,16 @@ import z.i;
 final class a extends i.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final j0.z f55346a;
+    private final j0.z f55343a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f55347b;
+    private final int f55344b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(j0.z zVar, int i10) {
         if (zVar != null) {
-            this.f55346a = zVar;
-            this.f55347b = i10;
+            this.f55343a = zVar;
+            this.f55344b = i10;
             return;
         }
         throw new NullPointerException("Null packet");
@@ -22,12 +22,12 @@ final class a extends i.b {
 
     @Override // z.i.b
     int a() {
-        return this.f55347b;
+        return this.f55344b;
     }
 
     @Override // z.i.b
     j0.z b() {
-        return this.f55346a;
+        return this.f55343a;
     }
 
     public boolean equals(Object obj) {
@@ -36,7 +36,7 @@ final class a extends i.b {
         }
         if (obj instanceof i.b) {
             i.b bVar = (i.b) obj;
-            if (this.f55346a.equals(bVar.b()) && this.f55347b == bVar.a()) {
+            if (this.f55343a.equals(bVar.b()) && this.f55344b == bVar.a()) {
                 return true;
             }
         }
@@ -44,10 +44,10 @@ final class a extends i.b {
     }
 
     public int hashCode() {
-        return ((this.f55346a.hashCode() ^ 1000003) * 1000003) ^ this.f55347b;
+        return ((this.f55343a.hashCode() ^ 1000003) * 1000003) ^ this.f55344b;
     }
 
     public String toString() {
-        return "In{packet=" + this.f55346a + ", jpegQuality=" + this.f55347b + "}";
+        return "In{packet=" + this.f55343a + ", jpegQuality=" + this.f55344b + "}";
     }
 }

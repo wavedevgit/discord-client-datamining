@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.subscribeGuild = var4;
     var2.subscribeChannel = var3;
     var1 = function arg0() {
-        _fun61988: for (var _fun61988_ip = 0;;) switch (_fun61988_ip) {
+        _fun62005: for (var _fun62005_ip = 0;;) switch (_fun62005_ip) {
             case 0:
                 var2 = arg0;
                 var4 = var2.guildId;
@@ -145,13 +145,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.rowHeight;
                 var _closure2_slot0 = var2;
                 var6 = function arg0() {
-                    _fun61989: for (var _fun61989_ip = 0;;) switch (_fun61989_ip) {
+                    _fun62006: for (var _fun62006_ip = 0;;) switch (_fun62006_ip) {
                         case 0:
                             var1 = arguments[1];
                             var0 = undefined;
                             if (!(var1 === var0)) {
-                                _fun61989_ip = 11;
-                                continue _fun61989
+                                _fun62006_ip = 11;
+                                continue _fun62006
                             }
                         case 9:
                             var1 = 0;
@@ -207,8 +207,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 0;
                 var13 = var9;
                 if (!(var13 > var1)) {
-                    _fun61988_ip = 126;
-                    continue _fun61988
+                    _fun62005_ip = 126;
+                    continue _fun62005
                 }
             case 102:
                 var5 = global;
@@ -233,14 +233,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.MINIMUM_RANGE;
                 var5 = var8 * var5;
                 if (!(var5 <= var6)) {
-                    _fun61988_ip = 210;
-                    continue _fun61988
+                    _fun62005_ip = 210;
+                    continue _fun62005
                 }
             case 201:
                 var5 = var7.bind(var0)(var5);
                 if (var5 <= var6) {
-                    _fun61988_ip = 201;
-                    continue _fun61988
+                    _fun62005_ip = 201;
+                    continue _fun62005
                 }
             case 210:
                 var1 = _closure1_slot3;

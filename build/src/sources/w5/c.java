@@ -12,38 +12,38 @@ import okio.ByteString;
 public abstract class c implements Closeable {
 
     /* renamed from: r  reason: collision with root package name */
-    private static final String[] f52017r = new String[IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT];
+    private static final String[] f52014r = new String[IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT];
 
     /* renamed from: d  reason: collision with root package name */
-    int f52018d;
+    int f52015d;
 
     /* renamed from: e  reason: collision with root package name */
-    int[] f52019e = new int[32];
+    int[] f52016e = new int[32];
 
     /* renamed from: i  reason: collision with root package name */
-    String[] f52020i = new String[32];
+    String[] f52017i = new String[32];
 
     /* renamed from: o  reason: collision with root package name */
-    int[] f52021o = new int[32];
+    int[] f52018o = new int[32];
 
     /* renamed from: p  reason: collision with root package name */
-    boolean f52022p;
+    boolean f52019p;
 
     /* renamed from: q  reason: collision with root package name */
-    boolean f52023q;
+    boolean f52020q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final String[] f52024a;
+        final String[] f52021a;
 
         /* renamed from: b  reason: collision with root package name */
-        final a0 f52025b;
+        final a0 f52022b;
 
         private a(String[] strArr, a0 a0Var) {
-            this.f52024a = strArr;
-            this.f52025b = a0Var;
+            this.f52021a = strArr;
+            this.f52022b = a0Var;
         }
 
         public static a a(String... strArr) {
@@ -78,9 +78,9 @@ public abstract class c implements Closeable {
 
     static {
         for (int i10 = 0; i10 <= 31; i10++) {
-            f52017r[i10] = String.format("\\u%04x", Integer.valueOf(i10));
+            f52014r[i10] = String.format("\\u%04x", Integer.valueOf(i10));
         }
-        String[] strArr = f52017r;
+        String[] strArr = f52014r;
         strArr[34] = "\\\"";
         strArr[92] = "\\\\";
         strArr[9] = "\\t";
@@ -98,7 +98,7 @@ public abstract class c implements Closeable {
     */
     public static void F(okio.BufferedSink r7, java.lang.String r8) {
         /*
-            java.lang.String[] r0 = w5.c.f52017r
+            java.lang.String[] r0 = w5.c.f52014r
             r1 = 34
             r7.writeByte(r1)
             int r2 = r8.length()
@@ -170,7 +170,7 @@ public abstract class c implements Closeable {
     public abstract int nextInt();
 
     public final String q() {
-        return d.a(this.f52018d, this.f52019e, this.f52020i, this.f52021o);
+        return d.a(this.f52015d, this.f52016e, this.f52017i, this.f52018o);
     }
 
     public abstract void r();
@@ -181,22 +181,22 @@ public abstract class c implements Closeable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void x(int i10) {
-        int i11 = this.f52018d;
-        int[] iArr = this.f52019e;
+        int i11 = this.f52015d;
+        int[] iArr = this.f52016e;
         if (i11 == iArr.length) {
             if (i11 != 256) {
-                this.f52019e = Arrays.copyOf(iArr, iArr.length * 2);
-                String[] strArr = this.f52020i;
-                this.f52020i = (String[]) Arrays.copyOf(strArr, strArr.length * 2);
-                int[] iArr2 = this.f52021o;
-                this.f52021o = Arrays.copyOf(iArr2, iArr2.length * 2);
+                this.f52016e = Arrays.copyOf(iArr, iArr.length * 2);
+                String[] strArr = this.f52017i;
+                this.f52017i = (String[]) Arrays.copyOf(strArr, strArr.length * 2);
+                int[] iArr2 = this.f52018o;
+                this.f52018o = Arrays.copyOf(iArr2, iArr2.length * 2);
             } else {
                 throw new w5.a("Nesting too deep at " + q());
             }
         }
-        int[] iArr3 = this.f52019e;
-        int i12 = this.f52018d;
-        this.f52018d = i12 + 1;
+        int[] iArr3 = this.f52016e;
+        int i12 = this.f52015d;
+        this.f52015d = i12 + 1;
         iArr3[i12] = i10;
     }
 

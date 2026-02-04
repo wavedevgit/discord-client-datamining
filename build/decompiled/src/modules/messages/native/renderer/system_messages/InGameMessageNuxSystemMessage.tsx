@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/InGameMessageNuxSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun55969: for (var _fun55969_ip = 0;;) switch (_fun55969_ip) {
+        _fun55972: for (var _fun55972_ip = 0;;) switch (_fun55972_ip) {
             case 0:
                 var4 = arg0;
                 var2 = var4.message;
@@ -53,16 +53,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var0 != var9;
                 var1 = '';
                 if (!var10) {
-                    _fun55969_ip = 81;
-                    continue _fun55969
+                    _fun55972_ip = 81;
+                    continue _fun55972
                 }
             case 78:
                 var1 = var9;
             case 81:
                 var1 = var5.bind(var6)(var1);
                 if (!(var0 != var1)) {
-                    _fun55969_ip = 357;
-                    continue _fun55969
+                    _fun55972_ip = 357;
+                    continue _fun55972
                 }
             case 93:
                 var9 = {};

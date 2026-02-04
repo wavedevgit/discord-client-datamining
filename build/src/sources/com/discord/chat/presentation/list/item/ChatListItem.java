@@ -16,7 +16,7 @@ public abstract class ChatListItem {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8322id;
+    private final String f8321id;
     @NotNull
     private final Lazy recyclerItemId$delegate;
 
@@ -31,7 +31,7 @@ public abstract class ChatListItem {
 
     @NotNull
     public String getId() {
-        return this.f8322id;
+        return this.f8321id;
     }
 
     public final long getRecyclerItemId() {
@@ -39,7 +39,7 @@ public abstract class ChatListItem {
     }
 
     private ChatListItem(String str) {
-        this.f8322id = str;
+        this.f8321id = str;
         this.recyclerItemId$delegate = l.b(o.f37121i, new Function0() { // from class: u6.a
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {

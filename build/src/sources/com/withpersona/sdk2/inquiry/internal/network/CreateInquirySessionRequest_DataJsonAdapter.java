@@ -64,7 +64,7 @@ public final class CreateInquirySessionRequest_DataJsonAdapter extends com.squar
         }
         Constructor constructor = this.f18762c;
         if (constructor == null) {
-            constructor = CreateInquirySessionRequest.Data.class.getDeclaredConstructor(String.class, Integer.TYPE, vm.c.f51691c);
+            constructor = CreateInquirySessionRequest.Data.class.getDeclaredConstructor(String.class, Integer.TYPE, vm.c.f51688c);
             this.f18762c = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

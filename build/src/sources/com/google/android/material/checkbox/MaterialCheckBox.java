@@ -30,8 +30,8 @@ import yg.j;
 import yg.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class MaterialCheckBox extends f {
-    private static final int J = j.f54264r;
-    private static final int[] K = {yg.b.f54084c0};
+    private static final int J = j.f54261r;
+    private static final int[] K = {yg.b.f54081c0};
     private static final int[] L;
     private static final int[][] M;
     private static final int N;
@@ -172,14 +172,14 @@ public class MaterialCheckBox extends f {
     }
 
     static {
-        int i10 = yg.b.f54082b0;
+        int i10 = yg.b.f54079b0;
         L = new int[]{i10};
         M = new int[][]{new int[]{16842910, i10}, new int[]{16842910, 16842912}, new int[]{16842910, -16842912}, new int[]{-16842910, 16842912}, new int[]{-16842910, -16842912}};
         N = Resources.getSystem().getIdentifier("btn_check_material_anim", "drawable", "android");
     }
 
     public MaterialCheckBox(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, yg.b.f54087e);
+        this(context, attributeSet, yg.b.f54084e);
     }
 
     private boolean d(v0 v0Var) {
@@ -210,22 +210,22 @@ public class MaterialCheckBox extends f {
     private String getButtonStateDescription() {
         int i10 = this.C;
         if (i10 == 1) {
-            return getResources().getString(i.f54231h);
+            return getResources().getString(i.f54228h);
         }
         if (i10 == 0) {
-            return getResources().getString(i.f54233j);
+            return getResources().getString(i.f54230j);
         }
-        return getResources().getString(i.f54232i);
+        return getResources().getString(i.f54229i);
     }
 
     private ColorStateList getMaterialThemeColorsTintList() {
         if (this.f14423r == null) {
             int[][] iArr = M;
             int[] iArr2 = new int[iArr.length];
-            int d10 = eh.a.d(this, yg.b.f54093h);
-            int d11 = eh.a.d(this, yg.b.f54097j);
-            int d12 = eh.a.d(this, yg.b.f54103o);
-            int d13 = eh.a.d(this, yg.b.f54099k);
+            int d10 = eh.a.d(this, yg.b.f54090h);
+            int d11 = eh.a.d(this, yg.b.f54094j);
+            int d12 = eh.a.d(this, yg.b.f54100o);
+            int d13 = eh.a.d(this, yg.b.f54096k);
             iArr2[0] = eh.a.j(d12, d11, 1.0f);
             iArr2[1] = eh.a.j(d12, d10, 1.0f);
             iArr2[2] = eh.a.j(d12, d13, 0.54f);
@@ -257,8 +257,8 @@ public class MaterialCheckBox extends f {
             }
             Drawable drawable = this.f14428w;
             if ((drawable instanceof AnimatedStateListDrawable) && (cVar = this.H) != null) {
-                ((AnimatedStateListDrawable) drawable).addTransition(yg.f.f54171b, yg.f.V, cVar, false);
-                ((AnimatedStateListDrawable) this.f14428w).addTransition(yg.f.f54179j, yg.f.V, this.H, false);
+                ((AnimatedStateListDrawable) drawable).addTransition(yg.f.f54168b, yg.f.V, cVar, false);
+                ((AnimatedStateListDrawable) this.f14428w).addTransition(yg.f.f54176j, yg.f.V, this.H, false);
             }
         }
     }
@@ -567,7 +567,7 @@ public class MaterialCheckBox extends f {
             r8.<init>()
             r7.f14422q = r8
             android.content.Context r8 = r7.getContext()
-            int r0 = yg.e.f54164f
+            int r0 = yg.e.f54161f
             androidx.vectordrawable.graphics.drawable.c r8 = androidx.vectordrawable.graphics.drawable.c.a(r8, r0)
             r7.H = r8
             com.google.android.material.checkbox.MaterialCheckBox$a r8 = new com.google.android.material.checkbox.MaterialCheckBox$a
@@ -597,13 +597,13 @@ public class MaterialCheckBox extends f {
             boolean r10 = r7.d(r9)
             if (r10 == 0) goto L7b
             super.setButtonDrawable(r8)
-            int r8 = yg.e.f54163e
+            int r8 = yg.e.f54160e
             android.graphics.drawable.Drawable r8 = g.a.b(r0, r8)
             r7.f14428w = r8
             r7.f14430y = r1
             android.graphics.drawable.Drawable r8 = r7.f14429x
             if (r8 != 0) goto L7b
-            int r8 = yg.e.f54165g
+            int r8 = yg.e.f54162g
             android.graphics.drawable.Drawable r8 = g.a.b(r0, r8)
             r7.f14429x = r8
         L7b:
@@ -616,22 +616,22 @@ public class MaterialCheckBox extends f {
             android.graphics.PorterDuff$Mode r10 = android.graphics.PorterDuff.Mode.SRC_IN
             android.graphics.PorterDuff$Mode r8 = com.google.android.material.internal.o.i(r8, r10)
             r7.B = r8
-            int r8 = yg.k.f54318e4
+            int r8 = yg.k.f54315e4
             boolean r8 = r9.a(r8, r6)
             r7.f14424s = r8
-            int r8 = yg.k.f54278a4
+            int r8 = yg.k.f54275a4
             boolean r8 = r9.a(r8, r1)
             r7.f14425t = r8
-            int r8 = yg.k.f54308d4
+            int r8 = yg.k.f54305d4
             boolean r8 = r9.a(r8, r6)
             r7.f14426u = r8
-            int r8 = yg.k.f54298c4
+            int r8 = yg.k.f54295c4
             java.lang.CharSequence r8 = r9.p(r8)
             r7.f14427v = r8
-            int r8 = yg.k.f54288b4
+            int r8 = yg.k.f54285b4
             boolean r8 = r9.s(r8)
             if (r8 == 0) goto Lc3
-            int r8 = yg.k.f54288b4
+            int r8 = yg.k.f54285b4
             int r8 = r9.k(r8, r6)
             r7.setCheckedState(r8)
         Lc3:

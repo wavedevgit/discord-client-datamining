@@ -14,53 +14,53 @@ import yn.y2;
 public final class d implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f56105a;
+    private final ConstraintLayout f56102a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final MaterialCardView f56106b;
+    public final MaterialCardView f56103b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final TextView f56107c;
+    public final TextView f56104c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final ImageView f56108d;
+    public final ImageView f56105d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final LinearLayout f56109e;
+    public final LinearLayout f56106e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final CircularProgressIndicator f56110f;
+    public final CircularProgressIndicator f56107f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final ThemeableLottieAnimationView f56111g;
+    public final ThemeableLottieAnimationView f56108g;
 
     private d(ConstraintLayout constraintLayout, MaterialCardView materialCardView, TextView textView, ImageView imageView, LinearLayout linearLayout, CircularProgressIndicator circularProgressIndicator, ThemeableLottieAnimationView themeableLottieAnimationView) {
-        this.f56105a = constraintLayout;
-        this.f56106b = materialCardView;
-        this.f56107c = textView;
-        this.f56108d = imageView;
-        this.f56109e = linearLayout;
-        this.f56110f = circularProgressIndicator;
-        this.f56111g = themeableLottieAnimationView;
+        this.f56102a = constraintLayout;
+        this.f56103b = materialCardView;
+        this.f56104c = textView;
+        this.f56105d = imageView;
+        this.f56106e = linearLayout;
+        this.f56107f = circularProgressIndicator;
+        this.f56108g = themeableLottieAnimationView;
     }
 
     public static d a(View view) {
-        int i10 = y2.f55099e;
+        int i10 = y2.f55096e;
         MaterialCardView materialCardView = (MaterialCardView) e4.a.a(view, i10);
         if (materialCardView != null) {
-            i10 = y2.f55102h;
+            i10 = y2.f55099h;
             TextView textView = (TextView) e4.a.a(view, i10);
             if (textView != null) {
-                i10 = y2.f55103i;
+                i10 = y2.f55100i;
                 ImageView imageView = (ImageView) e4.a.a(view, i10);
                 if (imageView != null) {
-                    i10 = y2.f55104j;
+                    i10 = y2.f55101j;
                     LinearLayout linearLayout = (LinearLayout) e4.a.a(view, i10);
                     if (linearLayout != null) {
-                        i10 = y2.f55106l;
+                        i10 = y2.f55103l;
                         CircularProgressIndicator circularProgressIndicator = (CircularProgressIndicator) e4.a.a(view, i10);
                         if (circularProgressIndicator != null) {
-                            i10 = y2.f55109o;
+                            i10 = y2.f55106o;
                             ThemeableLottieAnimationView themeableLottieAnimationView = (ThemeableLottieAnimationView) e4.a.a(view, i10);
                             if (themeableLottieAnimationView != null) {
                                 return new d((ConstraintLayout) view, materialCardView, textView, imageView, linearLayout, circularProgressIndicator, themeableLottieAnimationView);
@@ -76,6 +76,6 @@ public final class d implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f56105a;
+        return this.f56102a;
     }
 }

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function() {
-        _fun109773: for (var _fun109773_ip = 0;;) switch (_fun109773_ip) {
+        _fun109786: for (var _fun109786_ip = 0;;) switch (_fun109786_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun109773_ip = 76;
-                continue _fun109773;
+                _fun109786_ip = 76;
+                continue _fun109786;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = null;
     var _closure1_slot10 = var6;
     var6 = function() {
-        _fun109776: for (var _fun109776_ip = 0;;) switch (_fun109776_ip) {
+        _fun109789: for (var _fun109789_ip = 0;;) switch (_fun109789_ip) {
             case 0:
                 var4 = null;
                 _closure1_slot10 = var4;
@@ -123,91 +123,74 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.isAndroid;
                 var1 = var1.bind(var3)();
                 if (!var1) {
-                    _fun109776_ip = 207;
-                    continue _fun109776
+                    _fun109789_ip = 147;
+                    continue _fun109789
                 }
-            case 53:
-                var3 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var1 = 8;
-                var1 = var5[var1];
-                var1 = var3.bind(var0)(var1);
-                var5 = var1.GooglePlayPriceChangeNoticeKSExperiment;
-                var3 = var5.getCurrentConfig;
-                var1 = {};
-                var6 = 'GooglePlayPriceChangeStore.onInitializeSync';
-                var1.location = var6;
-                var1 = var3.bind(var5)(var1);
-                var1 = var1.enabled;
-                if (var1) {
-                    _fun109776_ip = 207;
-                    continue _fun109776
-                }
-            case 110:
+            case 50:
                 var3 = _closure1_slot7;
                 var1 = var3.getPremiumSubscription;
                 var5 = var1.bind(var3)();
                 var3 = var4 == var5;
                 var1 = undefined;
                 if (var3) {
-                    _fun109776_ip = 139;
-                    continue _fun109776
+                    _fun109789_ip = 79;
+                    continue _fun109789
                 }
-            case 133:
+            case 73:
                 var1 = var5.priceChange;
-            case 139:
+            case 79:
                 var3 = var4 != var5;
                 if (!var3) {
-                    _fun109776_ip = 165;
-                    continue _fun109776
+                    _fun109789_ip = 105;
+                    continue _fun109789
                 }
-            case 146:
+            case 86:
                 var7 = _closure1_slot8;
                 var6 = var7.has;
                 var5 = var5.status;
                 var3 = var6.bind(var7)(var5);
-            case 165:
+            case 105:
                 if (!var3) {
-                    _fun109776_ip = 172;
-                    continue _fun109776
+                    _fun109789_ip = 112;
+                    continue _fun109789
                 }
-            case 168:
+            case 108:
                 var3 = var4 != var1;
-            case 172:
+            case 112:
                 if (!var3) {
-                    _fun109776_ip = 183;
-                    continue _fun109776
+                    _fun109789_ip = 123;
+                    continue _fun109789
                 }
-            case 175:
+            case 115:
                 var3 = var1.isInFuture;
-            case 183:
+            case 123:
                 if (!var3) {
-                    _fun109776_ip = 194;
-                    continue _fun109776
+                    _fun109789_ip = 134;
+                    continue _fun109789
                 }
-            case 186:
+            case 126:
                 var3 = var1.isPriceIncrease;
-            case 194:
+            case 134:
                 if (!var3) {
-                    _fun109776_ip = 207;
-                    continue _fun109776
+                    _fun109789_ip = 147;
+                    continue _fun109789
                 }
-            case 197:
+            case 137:
                 _closure1_slot10 = var1;
                 var1 = true;
                 _closure1_slot9 = var1;
-            case 207:
+            case 147:
                 return var0;
         }
     };
     var _closure1_slot11 = var6;
-    var6 = 9;
+    var6 = 8;
     var6 = var5[var6];
     var6 = var3.bind(var0)(var6);
     var6 = var6.Store;
     var1 = function(arg0) { // Environment: var1
         var3 = function() {
-            _fun109778: for (var _fun109778_ip = 0;;) switch (_fun109778_ip) {
+            _fun109791: for (var _fun109791_ip = 0;;) switch (_fun109791_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -221,16 +204,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot12;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun109778_ip = 69;
-                        continue _fun109778
+                        _fun109791_ip = 69;
+                        continue _fun109791
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun109778_ip = 105;
-                    continue _fun109778;
+                    _fun109791_ip = 105;
+                    continue _fun109791;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -274,31 +257,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'shouldShowGooglePlayPriceChange';
         var4.key = var6;
         var6 = function() {
-            _fun109780: for (var _fun109780_ip = 0;;) switch (_fun109780_ip) {
-                case 0:
-                    var3 = _closure1_slot0;
-                    var2 = _closure1_slot1;
-                    var0 = 8;
-                    var2 = var2[var0];
-                    var0 = undefined;
-                    var0 = var3.bind(var0)(var2);
-                    var3 = var0.GooglePlayPriceChangeNoticeKSExperiment;
-                    var2 = var3.getCurrentConfig;
-                    var0 = {};
-                    var4 = 'GooglePlayPriceChangeStore.shouldShowGooglePlayPriceChange';
-                    var0.location = var4;
-                    var0 = var2.bind(var3)(var0);
-                    var0 = var0.enabled;
-                    var0 = !var0;
-                    if (!var0) {
-                        _fun109780_ip = 69;
-                        continue _fun109780
-                    }
-                case 65:
-                    var0 = _closure1_slot9;
-                case 69:
-                    return var0;
-            }
+            var0 = _closure1_slot9;
+            return var0;
         };
         var4.get = var6;
         var0[1] = var4;
@@ -306,31 +266,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'priceChangeRecord';
         var4.key = var6;
         var5 = function() {
-            _fun109781: for (var _fun109781_ip = 0;;) switch (_fun109781_ip) {
-                case 0:
-                    var3 = _closure1_slot0;
-                    var2 = _closure1_slot1;
-                    var0 = 8;
-                    var2 = var2[var0];
-                    var0 = undefined;
-                    var0 = var3.bind(var0)(var2);
-                    var3 = var0.GooglePlayPriceChangeNoticeKSExperiment;
-                    var2 = var3.getCurrentConfig;
-                    var0 = {};
-                    var4 = 'GooglePlayPriceChangeStore.priceChangeRecord';
-                    var0.location = var4;
-                    var0 = var2.bind(var3)(var0);
-                    var2 = var0.enabled;
-                    var0 = null;
-                    if (var2) {
-                        _fun109781_ip = 68;
-                        continue _fun109781
-                    }
-                case 64:
-                    var0 = _closure1_slot10;
-                case 68:
-                    return var0;
-            }
+            var0 = _closure1_slot10;
+            return var0;
         };
         var4.get = var5;
         var0[2] = var4;
@@ -340,7 +277,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var1.bind(var0)(var6);
     var1 = 'GooglePlayPriceChangeStore';
     var7.displayName = var1;
-    var1 = 10;
+    var1 = 9;
     var1 = var5[var1];
     var12 = var3.bind(var0)(var1);
     var1 = var7.prototype;
@@ -353,7 +290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13 = var3;
     var1 = new var13[var7](var12, var11, var10);
     var1 = var1 instanceof Object ? var1 : var3;
-    var3 = 11;
+    var3 = 10;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -361,4 +298,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 3117, 660, 478, 12465, 566, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 3117, 660, 478, 566, 806, 2]);

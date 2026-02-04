@@ -102,7 +102,7 @@ public final class WorkflowViewStub extends View {
     public static final void d(View view, Function0 doStart) {
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(doStart, "doStart");
-        d.a.e(d.f56075n, view, null, 2, null);
+        d.a.e(d.f56072n, view, null, 2, null);
         doStart.invoke();
     }
 
@@ -123,12 +123,12 @@ public final class WorkflowViewStub extends View {
             ViewGroup viewGroup2 = viewGroup;
             if (viewGroup2 != null) {
                 View view2 = this.f17659d;
-                if (view2 != this && (c10 = d.f56075n.c(view2)) != null) {
+                if (view2 != this && (c10 = d.f56072n.c(view2)) != null) {
                     c10.j();
                 }
                 Context context = viewGroup2.getContext();
                 Intrinsics.checkNotNullExpressionValue(context, "parent.context");
-                View c11 = f0.c((e0) viewEnvironment.a(e0.f54602a), rendering, viewEnvironment, context, viewGroup2, new h0() { // from class: ym.l0
+                View c11 = f0.c((e0) viewEnvironment.a(e0.f54599a), rendering, viewEnvironment, context, viewGroup2, new h0() { // from class: ym.l0
                     @Override // ym.h0
                     public final void a(View view3, Function0 function0) {
                         WorkflowViewStub.d(view3, function0);

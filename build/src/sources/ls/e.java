@@ -1778,10 +1778,10 @@ public class e implements ls.g {
         } else if (obj instanceof rs.l) {
             Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlinx.coroutines.selects.SelectImplementation<*>");
             rs.o x10 = ((rs.k) obj).x(this, Unit.f32464a);
-            if (x10 == rs.o.f49108e) {
+            if (x10 == rs.o.f49105e) {
                 mVar.w(i10);
             }
-            if (x10 == rs.o.f49107d) {
+            if (x10 == rs.o.f49104d) {
                 return true;
             }
             return false;

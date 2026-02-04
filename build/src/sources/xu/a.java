@@ -11,14 +11,14 @@ import zu.b;
 public final class a implements nu.b, c, zu.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f53576a = new a();
+    public static final a f53573a = new a();
 
     /* renamed from: xu.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class C0727a extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final C0727a f53577d = new C0727a();
+        public static final C0727a f53574d = new C0727a();
 
         C0727a() {
             super(1);
@@ -45,6 +45,6 @@ public final class a implements nu.b, c, zu.b {
 
     @Override // nu.b
     public Object f(Object obj, Object obj2) {
-        return a(b(obj), C0727a.f53577d);
+        return a(b(obj), C0727a.f53574d);
     }
 }

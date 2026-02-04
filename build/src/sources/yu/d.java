@@ -8,13 +8,13 @@ import yu.e;
 public final class d implements nu.b, e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f55344a = new d();
+    public static final d f55341a = new d();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class a extends Lambda implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f55345d = new a();
+        public static final a f55342d = new a();
 
         a() {
             super(2);
@@ -60,7 +60,7 @@ public final class d implements nu.b, e {
 
     @Override // nu.b
     public Object f(Object obj, Object obj2) {
-        return Boolean.valueOf(e(sv.a.c(obj), a.f55345d));
+        return Boolean.valueOf(e(sv.a.c(obj), a.f55342d));
     }
 
     @Override // ou.b

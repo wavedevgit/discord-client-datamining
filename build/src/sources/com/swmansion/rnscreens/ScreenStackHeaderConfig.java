@@ -16,7 +16,6 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
 import com.facebook.react.bridge.JSApplicationIllegalArgumentException;
 import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.uimanager.PointerEvents;
@@ -300,163 +299,134 @@ public final class ScreenStackHeaderConfig extends e implements ReactPointerEven
     }
 
     public final void l() {
-        boolean z10;
-        FragmentActivity fragmentActivity;
-        boolean z11;
-        ImageView imageView;
         Drawable navigationIcon;
         n0 screenFragment;
         n0 screenFragment2;
-        ReactContext reactContext;
+        ReactContext o10;
         ScreenStack screenStack = getScreenStack();
-        if (screenStack != null && !Intrinsics.areEqual(screenStack.getTopScreen(), getParent())) {
-            z10 = false;
-        } else {
-            z10 = true;
-        }
+        boolean z10 = screenStack == null || Intrinsics.areEqual(screenStack.getTopScreen(), getParent());
         if (this.J && z10 && !this.F) {
             n0 screenFragment3 = getScreenFragment();
-            if (screenFragment3 != null) {
-                fragmentActivity = screenFragment3.getActivity();
-            } else {
-                fragmentActivity = null;
+            AppCompatActivity appCompatActivity = (AppCompatActivity) (screenFragment3 != null ? screenFragment3.getActivity() : null);
+            if (appCompatActivity == null) {
+                return;
             }
-            AppCompatActivity appCompatActivity = (AppCompatActivity) fragmentActivity;
-            if (appCompatActivity != null) {
-                String str = this.f17822z;
-                if (str != null) {
-                    if (Intrinsics.areEqual(str, "rtl")) {
-                        this.f17816t.setLayoutDirection(1);
-                    } else if (Intrinsics.areEqual(this.f17822z, "ltr")) {
-                        this.f17816t.setLayoutDirection(0);
-                    }
+            String str = this.f17822z;
+            if (str != null) {
+                if (Intrinsics.areEqual(str, "rtl")) {
+                    this.f17816t.setLayoutDirection(1);
+                } else if (Intrinsics.areEqual(this.f17822z, "ltr")) {
+                    this.f17816t.setLayoutDirection(0);
                 }
-                Screen screen = getScreen();
-                if (screen != null) {
-                    if (getContext() instanceof ReactContext) {
-                        Context context = getContext();
-                        Intrinsics.checkNotNull(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
-                        reactContext = (ReactContext) context;
-                    } else {
-                        ScreenFragmentWrapper fragmentWrapper = screen.getFragmentWrapper();
-                        if (fragmentWrapper != null) {
-                            reactContext = fragmentWrapper.o();
-                        } else {
-                            reactContext = null;
-                        }
-                    }
-                    v0.f17979a.x(screen, appCompatActivity, reactContext);
+            }
+            Screen screen = getScreen();
+            if (screen != null) {
+                if (getContext() instanceof ReactContext) {
+                    Context context = getContext();
+                    Intrinsics.checkNotNull(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
+                    o10 = (ReactContext) context;
+                } else {
+                    ScreenFragmentWrapper fragmentWrapper = screen.getFragmentWrapper();
+                    o10 = fragmentWrapper != null ? fragmentWrapper.o() : null;
                 }
-                if (this.f17817u) {
-                    if (this.f17816t.getParent() != null && (screenFragment2 = getScreenFragment()) != null) {
-                        screenFragment2.i0();
-                        return;
-                    }
+                v0.f17979a.x(screen, appCompatActivity, o10);
+            }
+            if (this.f17817u) {
+                if (this.f17816t.getParent() == null || (screenFragment2 = getScreenFragment()) == null) {
                     return;
                 }
-                if (this.f17816t.getParent() == null && (screenFragment = getScreenFragment()) != null) {
-                    screenFragment.o0(this.f17816t);
-                }
-                appCompatActivity.setSupportActionBar(this.f17816t);
-                ActionBar supportActionBar = appCompatActivity.getSupportActionBar();
-                if (supportActionBar != null) {
-                    n0 screenFragment4 = getScreenFragment();
-                    if (screenFragment4 != null && screenFragment4.T() && !this.D) {
-                        z11 = true;
-                    } else {
-                        z11 = false;
-                    }
-                    supportActionBar.s(z11);
-                    supportActionBar.w(this.f17819w);
-                    if (TextUtils.isEmpty(this.f17819w)) {
-                        this.N = true;
-                    }
-                    this.f17816t.V();
-                    this.f17816t.setNavigationOnClickListener(this.M);
-                    n0 screenFragment5 = getScreenFragment();
-                    if (screenFragment5 != null) {
-                        screenFragment5.p0(this.E);
-                    }
-                    n0 screenFragment6 = getScreenFragment();
-                    if (screenFragment6 != null) {
-                        screenFragment6.q0(this.f17818v);
-                    }
-                    TextView a10 = O.a(this.f17816t);
-                    int i10 = this.f17820x;
-                    if (i10 != 0) {
-                        this.f17816t.setTitleTextColor(i10);
-                    }
-                    if (a10 != null) {
-                        String str2 = this.f17821y;
-                        if (str2 != null || this.B > 0) {
-                            int i11 = this.B;
-                            AssetManager assets = getContext().getAssets();
-                            Intrinsics.checkNotNullExpressionValue(assets, "getAssets(...)");
-                            a10.setTypeface(ReactTypefaceUtils.applyStyles(null, 0, i11, str2, assets));
-                        }
-                        float f10 = this.A;
-                        if (f10 > 0.0f) {
-                            a10.setTextSize(f10);
-                        }
-                    }
-                    Integer num = this.C;
-                    if (num != null) {
-                        this.f17816t.setBackgroundColor(num.intValue());
-                    }
-                    if (this.I != 0 && (navigationIcon = this.f17816t.getNavigationIcon()) != null) {
-                        navigationIcon.setColorFilter(new PorterDuffColorFilter(this.I, PorterDuff.Mode.SRC_ATOP));
-                    }
-                    for (int childCount = this.f17816t.getChildCount() - 1; -1 < childCount; childCount--) {
-                        if (this.f17816t.getChildAt(childCount) instanceof q0) {
-                            this.f17816t.removeViewAt(childCount);
-                        }
-                    }
-                    int size = this.f17815s.size();
-                    for (int i12 = 0; i12 < size; i12++) {
-                        Object obj = this.f17815s.get(i12);
-                        Intrinsics.checkNotNullExpressionValue(obj, "get(...)");
-                        q0 q0Var = (q0) obj;
-                        q0.a type = q0Var.getType();
-                        if (type == q0.a.f17946o) {
-                            View childAt = q0Var.getChildAt(0);
-                            if (childAt instanceof ImageView) {
-                                imageView = (ImageView) childAt;
-                            } else {
-                                imageView = null;
-                            }
-                            if (imageView != null) {
-                                supportActionBar.u(imageView.getDrawable());
-                            } else {
-                                throw new JSApplicationIllegalArgumentException("Back button header config view should have Image as first child");
-                            }
-                        } else {
-                            Toolbar.g gVar = new Toolbar.g(-2, -1);
-                            int i13 = b.f17823a[type.ordinal()];
-                            if (i13 != 1) {
-                                if (i13 != 2) {
-                                    if (i13 == 3) {
-                                        ((ViewGroup.MarginLayoutParams) gVar).width = -1;
-                                        gVar.f906a = 1;
-                                        this.f17816t.setTitle((CharSequence) null);
-                                    }
-                                } else {
-                                    gVar.f906a = 8388613;
-                                }
-                            } else {
-                                if (!this.G) {
-                                    this.f17816t.setNavigationIcon((Drawable) null);
-                                }
-                                this.f17816t.setTitle((CharSequence) null);
-                                gVar.f906a = 8388611;
-                            }
-                            q0Var.setLayoutParams(gVar);
-                            this.f17816t.addView(q0Var);
-                        }
-                    }
-                    return;
-                }
-                throw new IllegalArgumentException("Required value was null.");
+                screenFragment2.i0();
+                return;
             }
+            if (this.f17816t.getParent() == null && (screenFragment = getScreenFragment()) != null) {
+                screenFragment.o0(this.f17816t);
+            }
+            appCompatActivity.setSupportActionBar(this.f17816t);
+            ActionBar supportActionBar = appCompatActivity.getSupportActionBar();
+            if (supportActionBar != null) {
+                n0 screenFragment4 = getScreenFragment();
+                supportActionBar.s((screenFragment4 == null || !screenFragment4.T() || this.D) ? false : true);
+                supportActionBar.w(this.f17819w);
+                if (TextUtils.isEmpty(this.f17819w)) {
+                    this.N = true;
+                }
+                this.f17816t.V();
+                this.f17816t.setNavigationOnClickListener(this.M);
+                n0 screenFragment5 = getScreenFragment();
+                if (screenFragment5 != null) {
+                    screenFragment5.p0(this.E);
+                }
+                n0 screenFragment6 = getScreenFragment();
+                if (screenFragment6 != null) {
+                    screenFragment6.q0(this.f17818v);
+                }
+                TextView a10 = O.a(this.f17816t);
+                int i10 = this.f17820x;
+                if (i10 != 0) {
+                    this.f17816t.setTitleTextColor(i10);
+                }
+                if (a10 != null) {
+                    String str2 = this.f17821y;
+                    if (str2 != null || this.B > 0) {
+                        int i11 = this.B;
+                        AssetManager assets = getContext().getAssets();
+                        Intrinsics.checkNotNullExpressionValue(assets, "getAssets(...)");
+                        a10.setTypeface(ReactTypefaceUtils.applyStyles(null, 0, i11, str2, assets));
+                    }
+                    float f10 = this.A;
+                    if (f10 > 0.0f) {
+                        a10.setTextSize(f10);
+                    }
+                }
+                Integer num = this.C;
+                if (num != null) {
+                    this.f17816t.setBackgroundColor(num.intValue());
+                }
+                if (this.I != 0 && (navigationIcon = this.f17816t.getNavigationIcon()) != null) {
+                    navigationIcon.setColorFilter(new PorterDuffColorFilter(this.I, PorterDuff.Mode.SRC_ATOP));
+                }
+                for (int childCount = this.f17816t.getChildCount() - 1; -1 < childCount; childCount--) {
+                    if (this.f17816t.getChildAt(childCount) instanceof q0) {
+                        this.f17816t.removeViewAt(childCount);
+                    }
+                }
+                int size = this.f17815s.size();
+                for (int i12 = 0; i12 < size; i12++) {
+                    Object obj = this.f17815s.get(i12);
+                    Intrinsics.checkNotNullExpressionValue(obj, "get(...)");
+                    q0 q0Var = (q0) obj;
+                    q0.a type = q0Var.getType();
+                    if (type == q0.a.f17946o) {
+                        View childAt = q0Var.getChildAt(0);
+                        ImageView imageView = childAt instanceof ImageView ? (ImageView) childAt : null;
+                        if (imageView != null) {
+                            supportActionBar.u(imageView.getDrawable());
+                        } else {
+                            throw new JSApplicationIllegalArgumentException("Back button header config view should have Image as first child");
+                        }
+                    } else {
+                        Toolbar.g gVar = new Toolbar.g(-2, -1);
+                        int i13 = b.f17823a[type.ordinal()];
+                        if (i13 == 1) {
+                            if (!this.G) {
+                                this.f17816t.setNavigationIcon((Drawable) null);
+                            }
+                            this.f17816t.setTitle((CharSequence) null);
+                            gVar.f906a = 8388611;
+                        } else if (i13 == 2) {
+                            gVar.f906a = 8388613;
+                        } else if (i13 == 3) {
+                            ((ViewGroup.MarginLayoutParams) gVar).width = -1;
+                            gVar.f906a = 1;
+                            this.f17816t.setTitle((CharSequence) null);
+                        }
+                        q0Var.setLayoutParams(gVar);
+                        this.f17816t.addView(q0Var);
+                    }
+                }
+                return;
+            }
+            throw new IllegalArgumentException("Required value was null.");
         }
     }
 

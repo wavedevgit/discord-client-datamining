@@ -3,10 +3,10 @@ package qp;
 public final class g implements wq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final f f48033a;
+    private final f f48030a;
 
     public g(f fVar) {
-        this.f48033a = fVar;
+        this.f48030a = fVar;
     }
 
     public static g a(f fVar) {
@@ -20,6 +20,6 @@ public final class g implements wq.d {
     @Override // javax.inject.Provider
     /* renamed from: c */
     public e get() {
-        return b(this.f48033a);
+        return b(this.f48030a);
     }
 }

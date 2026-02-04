@@ -20,7 +20,7 @@ public final class ContentInventoryEntryComponent extends Component {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8242id;
+    private final String f8241id;
     private final int type;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¨\u0006\u0007"}, d2 = {"Lcom/discord/chat/bridge/botuikit/ContentInventoryEntryComponent$Companion;", "", "<init>", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/chat/bridge/botuikit/ContentInventoryEntryComponent;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
@@ -46,7 +46,7 @@ public final class ContentInventoryEntryComponent extends Component {
             v1.b(i10, 3, ContentInventoryEntryComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f8242id = str;
+        this.f8241id = str;
         if ((i10 & 4) == 0) {
             this.contentInventoryEntry = null;
         } else {
@@ -59,7 +59,7 @@ public final class ContentInventoryEntryComponent extends Component {
             i10 = contentInventoryEntryComponent.type;
         }
         if ((i11 & 2) != 0) {
-            str = contentInventoryEntryComponent.f8242id;
+            str = contentInventoryEntryComponent.f8241id;
         }
         if ((i11 & 4) != 0) {
             contentInventoryEntry = contentInventoryEntryComponent.contentInventoryEntry;
@@ -81,7 +81,7 @@ public final class ContentInventoryEntryComponent extends Component {
 
     @NotNull
     public final String component2() {
-        return this.f8242id;
+        return this.f8241id;
     }
 
     public final ContentInventoryEntry component3() {
@@ -100,7 +100,7 @@ public final class ContentInventoryEntryComponent extends Component {
         }
         if (obj instanceof ContentInventoryEntryComponent) {
             ContentInventoryEntryComponent contentInventoryEntryComponent = (ContentInventoryEntryComponent) obj;
-            return this.type == contentInventoryEntryComponent.type && Intrinsics.areEqual(this.f8242id, contentInventoryEntryComponent.f8242id) && Intrinsics.areEqual(this.contentInventoryEntry, contentInventoryEntryComponent.contentInventoryEntry);
+            return this.type == contentInventoryEntryComponent.type && Intrinsics.areEqual(this.f8241id, contentInventoryEntryComponent.f8241id) && Intrinsics.areEqual(this.contentInventoryEntry, contentInventoryEntryComponent.contentInventoryEntry);
         }
         return false;
     }
@@ -112,7 +112,7 @@ public final class ContentInventoryEntryComponent extends Component {
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f8242id;
+        return this.f8241id;
     }
 
     @Override // com.discord.chat.bridge.botuikit.Component
@@ -121,7 +121,7 @@ public final class ContentInventoryEntryComponent extends Component {
     }
 
     public int hashCode() {
-        int hashCode = ((Integer.hashCode(this.type) * 31) + this.f8242id.hashCode()) * 31;
+        int hashCode = ((Integer.hashCode(this.type) * 31) + this.f8241id.hashCode()) * 31;
         ContentInventoryEntry contentInventoryEntry = this.contentInventoryEntry;
         return hashCode + (contentInventoryEntry == null ? 0 : contentInventoryEntry.hashCode());
     }
@@ -129,7 +129,7 @@ public final class ContentInventoryEntryComponent extends Component {
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f8242id;
+        String str = this.f8241id;
         ContentInventoryEntry contentInventoryEntry = this.contentInventoryEntry;
         return "ContentInventoryEntryComponent(type=" + i10 + ", id=" + str + ", contentInventoryEntry=" + contentInventoryEntry + ")";
     }
@@ -143,7 +143,7 @@ public final class ContentInventoryEntryComponent extends Component {
         super(null);
         Intrinsics.checkNotNullParameter(id2, "id");
         this.type = i10;
-        this.f8242id = id2;
+        this.f8241id = id2;
         this.contentInventoryEntry = contentInventoryEntry;
     }
 }

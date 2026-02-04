@@ -20,19 +20,19 @@ import zi.j;
 public class f implements i, j {
 
     /* renamed from: a  reason: collision with root package name */
-    private final bj.b f55990a;
+    private final bj.b f55987a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Context f55991b;
+    private final Context f55988b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final bj.b f55992c;
+    private final bj.b f55989c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Set f55993d;
+    private final Set f55990d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Executor f55994e;
+    private final Executor f55991e;
 
     private f(final Context context, final String str, Set set, bj.b bVar, Executor executor) {
         this(new bj.b() { // from class: zi.c
@@ -47,7 +47,7 @@ public class f implements i, j {
         String byteArrayOutputStream;
         synchronized (fVar) {
             try {
-                k kVar = (k) fVar.f55990a.get();
+                k kVar = (k) fVar.f55987a.get();
                 List c10 = kVar.c();
                 kVar.b();
                 JSONArray jSONArray = new JSONArray();
@@ -85,7 +85,7 @@ public class f implements i, j {
 
     public static /* synthetic */ Void f(f fVar) {
         synchronized (fVar) {
-            ((k) fVar.f55990a.get()).k(System.currentTimeMillis(), ((jj.i) fVar.f55992c.get()).a());
+            ((k) fVar.f55987a.get()).k(System.currentTimeMillis(), ((jj.i) fVar.f55989c.get()).a());
         }
         return null;
     }
@@ -102,10 +102,10 @@ public class f implements i, j {
 
     @Override // zi.i
     public Task a() {
-        if (!w1.j.a(this.f55991b)) {
+        if (!w1.j.a(this.f55988b)) {
             return m.f("");
         }
-        return m.c(this.f55994e, new Callable() { // from class: zi.d
+        return m.c(this.f55991e, new Callable() { // from class: zi.d
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 return f.c(f.this);
@@ -116,7 +116,7 @@ public class f implements i, j {
     @Override // zi.j
     public synchronized j.a b(String str) {
         long currentTimeMillis = System.currentTimeMillis();
-        k kVar = (k) this.f55990a.get();
+        k kVar = (k) this.f55987a.get();
         if (kVar.i(currentTimeMillis)) {
             kVar.g();
             return j.a.GLOBAL;
@@ -125,13 +125,13 @@ public class f implements i, j {
     }
 
     public Task h() {
-        if (this.f55993d.size() <= 0) {
+        if (this.f55990d.size() <= 0) {
             return m.f(null);
         }
-        if (!w1.j.a(this.f55991b)) {
+        if (!w1.j.a(this.f55988b)) {
             return m.f(null);
         }
-        return m.c(this.f55994e, new Callable() { // from class: zi.e
+        return m.c(this.f55991e, new Callable() { // from class: zi.e
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 return f.f(f.this);
@@ -140,10 +140,10 @@ public class f implements i, j {
     }
 
     f(bj.b bVar, Set set, Executor executor, bj.b bVar2, Context context) {
-        this.f55990a = bVar;
-        this.f55993d = set;
-        this.f55994e = executor;
-        this.f55992c = bVar2;
-        this.f55991b = context;
+        this.f55987a = bVar;
+        this.f55990d = set;
+        this.f55991e = executor;
+        this.f55989c = bVar2;
+        this.f55988b = context;
     }
 }

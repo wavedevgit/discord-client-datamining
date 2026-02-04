@@ -22,7 +22,7 @@ public final class ErrorMessage extends MessageBase {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8232id;
+    private final String f8231id;
     @NotNull
     private final String stackTrace;
 
@@ -49,7 +49,7 @@ public final class ErrorMessage extends MessageBase {
     /* renamed from: copy-ntcYbpo$default  reason: not valid java name */
     public static /* synthetic */ ErrorMessage m223copyntcYbpo$default(ErrorMessage errorMessage, String str, String str2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = errorMessage.f8232id;
+            str = errorMessage.f8231id;
         }
         if ((i10 & 2) != 0) {
             str2 = errorMessage.stackTrace;
@@ -59,14 +59,14 @@ public final class ErrorMessage extends MessageBase {
 
     public static final /* synthetic */ void write$Self$chat_release(ErrorMessage errorMessage, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         MessageBase.write$Self(errorMessage, compositeEncoder, serialDescriptor);
-        compositeEncoder.D(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1085boximpl(errorMessage.f8232id));
+        compositeEncoder.D(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1085boximpl(errorMessage.f8231id));
         compositeEncoder.y(serialDescriptor, 1, errorMessage.stackTrace);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
     public final String m224component13Eiw7ao() {
-        return this.f8232id;
+        return this.f8231id;
     }
 
     @NotNull
@@ -88,7 +88,7 @@ public final class ErrorMessage extends MessageBase {
         }
         if (obj instanceof ErrorMessage) {
             ErrorMessage errorMessage = (ErrorMessage) obj;
-            return MessageId.m1089equalsimpl0(this.f8232id, errorMessage.f8232id) && Intrinsics.areEqual(this.stackTrace, errorMessage.stackTrace);
+            return MessageId.m1089equalsimpl0(this.f8231id, errorMessage.f8231id) && Intrinsics.areEqual(this.stackTrace, errorMessage.stackTrace);
         }
         return false;
     }
@@ -96,7 +96,7 @@ public final class ErrorMessage extends MessageBase {
     @NotNull
     /* renamed from: getId-3Eiw7ao  reason: not valid java name */
     public final String m226getId3Eiw7ao() {
-        return this.f8232id;
+        return this.f8231id;
     }
 
     @NotNull
@@ -105,12 +105,12 @@ public final class ErrorMessage extends MessageBase {
     }
 
     public int hashCode() {
-        return (MessageId.m1090hashCodeimpl(this.f8232id) * 31) + this.stackTrace.hashCode();
+        return (MessageId.m1090hashCodeimpl(this.f8231id) * 31) + this.stackTrace.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1092toStringimpl = MessageId.m1092toStringimpl(this.f8232id);
+        String m1092toStringimpl = MessageId.m1092toStringimpl(this.f8231id);
         String str = this.stackTrace;
         return "ErrorMessage(id=" + m1092toStringimpl + ", stackTrace=" + str + ")";
     }
@@ -125,7 +125,7 @@ public final class ErrorMessage extends MessageBase {
         if (3 != (i10 & 3)) {
             v1.b(i10, 3, ErrorMessage$$serializer.INSTANCE.getDescriptor());
         }
-        this.f8232id = str;
+        this.f8231id = str;
         this.stackTrace = str2;
     }
 
@@ -134,7 +134,7 @@ public final class ErrorMessage extends MessageBase {
         super(null);
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(stackTrace, "stackTrace");
-        this.f8232id = id2;
+        this.f8231id = id2;
         this.stackTrace = stackTrace;
     }
 }

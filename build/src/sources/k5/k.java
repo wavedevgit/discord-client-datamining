@@ -52,19 +52,19 @@ public abstract class k {
         static {
             int[] iArr = new int[x4.h.values().length];
             try {
-                iArr[x4.h.f53111d.ordinal()] = 1;
+                iArr[x4.h.f53108d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[x4.h.f53112e.ordinal()] = 2;
+                iArr[x4.h.f53109e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[x4.h.f53113i.ordinal()] = 3;
+                iArr[x4.h.f53110i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                iArr[x4.h.f53114o.ordinal()] = 4;
+                iArr[x4.h.f53111o.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             f32180a = iArr;
@@ -204,7 +204,7 @@ public abstract class k {
         if (aVar instanceof b5.c) {
             return ((b5.c) aVar).e();
         }
-        return v4.c.f51077b;
+        return v4.c.f51074b;
     }
 
     public static final String h(Uri uri) {
@@ -238,7 +238,7 @@ public abstract class k {
 
     public static final g5.v l(View view) {
         g5.v vVar;
-        Object tag = view.getTag(w4.a.f52016a);
+        Object tag = view.getTag(w4.a.f52013a);
         g5.v vVar2 = null;
         if (tag instanceof g5.v) {
             vVar = (g5.v) tag;
@@ -248,14 +248,14 @@ public abstract class k {
         if (vVar == null) {
             synchronized (view) {
                 try {
-                    Object tag2 = view.getTag(w4.a.f52016a);
+                    Object tag2 = view.getTag(w4.a.f52013a);
                     if (tag2 instanceof g5.v) {
                         vVar2 = (g5.v) tag2;
                     }
                     if (vVar2 == null) {
                         vVar2 = new g5.v(view);
                         view.addOnAttachStateChangeListener(vVar2);
-                        view.setTag(w4.a.f52016a, vVar2);
+                        view.setTag(w4.a.f52013a, vVar2);
                     }
                 } finally {
                 }

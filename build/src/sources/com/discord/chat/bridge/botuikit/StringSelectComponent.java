@@ -38,7 +38,7 @@ public final class StringSelectComponent extends SelectComponent {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8253id;
+    private final String f8252id;
     private final int maxValues;
     private final int minValues;
     @NotNull
@@ -92,7 +92,7 @@ public final class StringSelectComponent extends SelectComponent {
             v1.b(i10, 1743, StringSelectComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f8253id = str;
+        this.f8252id = str;
         this.state = actionComponentState;
         this.customId = str2;
         if ((i10 & 16) == 0) {
@@ -131,7 +131,7 @@ public final class StringSelectComponent extends SelectComponent {
             i10 = stringSelectComponent.type;
         }
         if ((i13 & 2) != 0) {
-            str = stringSelectComponent.f8253id;
+            str = stringSelectComponent.f8252id;
         }
         if ((i13 & 4) != 0) {
             actionComponentState = stringSelectComponent.state;
@@ -211,7 +211,7 @@ public final class StringSelectComponent extends SelectComponent {
 
     @NotNull
     public final String component2() {
-        return this.f8253id;
+        return this.f8252id;
     }
 
     @NotNull
@@ -260,7 +260,7 @@ public final class StringSelectComponent extends SelectComponent {
         }
         if (obj instanceof StringSelectComponent) {
             StringSelectComponent stringSelectComponent = (StringSelectComponent) obj;
-            return this.type == stringSelectComponent.type && Intrinsics.areEqual(this.f8253id, stringSelectComponent.f8253id) && this.state == stringSelectComponent.state && Intrinsics.areEqual(this.customId, stringSelectComponent.customId) && Intrinsics.areEqual(this.placeholder, stringSelectComponent.placeholder) && Intrinsics.areEqual(this.accessibilityLabel, stringSelectComponent.accessibilityLabel) && this.minValues == stringSelectComponent.minValues && this.maxValues == stringSelectComponent.maxValues && this.disabled == stringSelectComponent.disabled && Intrinsics.areEqual(this.options, stringSelectComponent.options) && Intrinsics.areEqual(this.selectedOptions, stringSelectComponent.selectedOptions);
+            return this.type == stringSelectComponent.type && Intrinsics.areEqual(this.f8252id, stringSelectComponent.f8252id) && this.state == stringSelectComponent.state && Intrinsics.areEqual(this.customId, stringSelectComponent.customId) && Intrinsics.areEqual(this.placeholder, stringSelectComponent.placeholder) && Intrinsics.areEqual(this.accessibilityLabel, stringSelectComponent.accessibilityLabel) && this.minValues == stringSelectComponent.minValues && this.maxValues == stringSelectComponent.maxValues && this.disabled == stringSelectComponent.disabled && Intrinsics.areEqual(this.options, stringSelectComponent.options) && Intrinsics.areEqual(this.selectedOptions, stringSelectComponent.selectedOptions);
         }
         return false;
     }
@@ -284,7 +284,7 @@ public final class StringSelectComponent extends SelectComponent {
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f8253id;
+        return this.f8252id;
     }
 
     @Override // com.discord.chat.bridge.botuikit.SelectComponent
@@ -335,7 +335,7 @@ public final class StringSelectComponent extends SelectComponent {
     }
 
     public int hashCode() {
-        int hashCode = ((((((Integer.hashCode(this.type) * 31) + this.f8253id.hashCode()) * 31) + this.state.hashCode()) * 31) + this.customId.hashCode()) * 31;
+        int hashCode = ((((((Integer.hashCode(this.type) * 31) + this.f8252id.hashCode()) * 31) + this.state.hashCode()) * 31) + this.customId.hashCode()) * 31;
         String str = this.placeholder;
         int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
         String str2 = this.accessibilityLabel;
@@ -345,7 +345,7 @@ public final class StringSelectComponent extends SelectComponent {
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f8253id;
+        String str = this.f8252id;
         ActionComponentState actionComponentState = this.state;
         String str2 = this.customId;
         String str3 = this.placeholder;
@@ -371,7 +371,7 @@ public final class StringSelectComponent extends SelectComponent {
         Intrinsics.checkNotNullParameter(options, "options");
         Intrinsics.checkNotNullParameter(selectedOptions, "selectedOptions");
         this.type = i10;
-        this.f8253id = id2;
+        this.f8252id = id2;
         this.state = state;
         this.customId = customId;
         this.placeholder = str;

@@ -13,11 +13,11 @@ public class d extends g {
 
     float r(y5.a aVar, float f10) {
         float f11;
-        if (aVar.f53743b != null && aVar.f53744c != null) {
+        if (aVar.f53740b != null && aVar.f53741c != null) {
             y5.c cVar = this.f42353e;
             if (cVar != null) {
                 f11 = f10;
-                Float f12 = (Float) cVar.b(aVar.f53748g, aVar.f53749h.floatValue(), (Float) aVar.f53743b, (Float) aVar.f53744c, f11, e(), f());
+                Float f12 = (Float) cVar.b(aVar.f53745g, aVar.f53746h.floatValue(), (Float) aVar.f53740b, (Float) aVar.f53741c, f11, e(), f());
                 if (f12 != null) {
                     return f12.floatValue();
                 }

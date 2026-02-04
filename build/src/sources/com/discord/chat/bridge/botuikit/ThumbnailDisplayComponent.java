@@ -29,7 +29,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8255id;
+    private final String f8254id;
     private final boolean isObscure;
     private final boolean isObscureAwaitingScan;
     private final boolean isSpoiler;
@@ -67,7 +67,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
             v1.b(i10, 16375, ThumbnailDisplayComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f8255id = str;
+        this.f8254id = str;
         this.media = unfurledMediaItem;
         if ((i10 & 8) == 0) {
             this.description = null;
@@ -247,7 +247,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
 
     @NotNull
     public final String component2() {
-        return this.f8255id;
+        return this.f8254id;
     }
 
     @NotNull
@@ -294,7 +294,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
         }
         if (obj instanceof ThumbnailDisplayComponent) {
             ThumbnailDisplayComponent thumbnailDisplayComponent = (ThumbnailDisplayComponent) obj;
-            return this.type == thumbnailDisplayComponent.type && Intrinsics.areEqual(this.f8255id, thumbnailDisplayComponent.f8255id) && Intrinsics.areEqual(this.media, thumbnailDisplayComponent.media) && Intrinsics.areEqual(this.description, thumbnailDisplayComponent.description) && this.isSpoiler == thumbnailDisplayComponent.isSpoiler && Intrinsics.areEqual(this.spoilerDescription, thumbnailDisplayComponent.spoilerDescription) && this.isObscure == thumbnailDisplayComponent.isObscure && this.isObscureAwaitingScan == thumbnailDisplayComponent.isObscureAwaitingScan && this.obscureHideControls == thumbnailDisplayComponent.obscureHideControls && this.obscureIsOpaque == thumbnailDisplayComponent.obscureIsOpaque && Intrinsics.areEqual(this.obscureDescription, thumbnailDisplayComponent.obscureDescription) && Intrinsics.areEqual(this.verifyAge, thumbnailDisplayComponent.verifyAge) && Intrinsics.areEqual(this.descriptionHint, thumbnailDisplayComponent.descriptionHint) && Intrinsics.areEqual(this.accessibilityRole, thumbnailDisplayComponent.accessibilityRole);
+            return this.type == thumbnailDisplayComponent.type && Intrinsics.areEqual(this.f8254id, thumbnailDisplayComponent.f8254id) && Intrinsics.areEqual(this.media, thumbnailDisplayComponent.media) && Intrinsics.areEqual(this.description, thumbnailDisplayComponent.description) && this.isSpoiler == thumbnailDisplayComponent.isSpoiler && Intrinsics.areEqual(this.spoilerDescription, thumbnailDisplayComponent.spoilerDescription) && this.isObscure == thumbnailDisplayComponent.isObscure && this.isObscureAwaitingScan == thumbnailDisplayComponent.isObscureAwaitingScan && this.obscureHideControls == thumbnailDisplayComponent.obscureHideControls && this.obscureIsOpaque == thumbnailDisplayComponent.obscureIsOpaque && Intrinsics.areEqual(this.obscureDescription, thumbnailDisplayComponent.obscureDescription) && Intrinsics.areEqual(this.verifyAge, thumbnailDisplayComponent.verifyAge) && Intrinsics.areEqual(this.descriptionHint, thumbnailDisplayComponent.descriptionHint) && Intrinsics.areEqual(this.accessibilityRole, thumbnailDisplayComponent.accessibilityRole);
         }
         return false;
     }
@@ -316,7 +316,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f8255id;
+        return this.f8254id;
     }
 
     @NotNull
@@ -360,7 +360,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
     }
 
     public int hashCode() {
-        int hashCode = ((((Integer.hashCode(this.type) * 31) + this.f8255id.hashCode()) * 31) + this.media.hashCode()) * 31;
+        int hashCode = ((((Integer.hashCode(this.type) * 31) + this.f8254id.hashCode()) * 31) + this.media.hashCode()) * 31;
         String str = this.description;
         int hashCode2 = (((hashCode + (str == null ? 0 : str.hashCode())) * 31) + Boolean.hashCode(this.isSpoiler)) * 31;
         String str2 = this.spoilerDescription;
@@ -386,7 +386,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f8255id;
+        String str = this.f8254id;
         UnfurledMediaItem unfurledMediaItem = this.media;
         String str2 = this.description;
         boolean z10 = this.isSpoiler;
@@ -414,7 +414,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
         Intrinsics.checkNotNullParameter(descriptionHint, "descriptionHint");
         Intrinsics.checkNotNullParameter(accessibilityRole, "accessibilityRole");
         this.type = i10;
-        this.f8255id = id2;
+        this.f8254id = id2;
         this.media = media;
         this.description = str;
         this.isSpoiler = z10;

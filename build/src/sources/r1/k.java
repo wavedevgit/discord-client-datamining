@@ -23,27 +23,27 @@ import z1.g;
 public abstract class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final r f48325a;
+    private static final r f48322a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final LruCache f48326b;
+    private static final LruCache f48323b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static Paint f48327c;
+    private static Paint f48324c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a extends g.c {
 
         /* renamed from: a  reason: collision with root package name */
-        private j.f f48328a;
+        private j.f f48325a;
 
         public a(j.f fVar) {
-            this.f48328a = fVar;
+            this.f48325a = fVar;
         }
 
         @Override // z1.g.c
         public void a(int i10) {
-            j.f fVar = this.f48328a;
+            j.f fVar = this.f48325a;
             if (fVar != null) {
                 fVar.f(i10);
             }
@@ -51,7 +51,7 @@ public abstract class k {
 
         @Override // z1.g.c
         public void b(Typeface typeface) {
-            j.f fVar = this.f48328a;
+            j.f fVar = this.f48325a;
             if (fVar != null) {
                 fVar.g(typeface);
             }
@@ -62,20 +62,20 @@ public abstract class k {
         c4.a.c("TypefaceCompat static init");
         int i10 = Build.VERSION.SDK_INT;
         if (i10 >= 31) {
-            f48325a = new q();
+            f48322a = new q();
         } else if (i10 >= 29) {
-            f48325a = new p();
+            f48322a = new p();
         } else if (i10 >= 28) {
-            f48325a = new o();
+            f48322a = new o();
         } else if (i10 >= 26) {
-            f48325a = new n();
+            f48322a = new n();
         } else if (m.k()) {
-            f48325a = new m();
+            f48322a = new m();
         } else {
-            f48325a = new l();
+            f48322a = new l();
         }
-        f48326b = new LruCache(16);
-        f48327c = null;
+        f48323b = new LruCache(16);
+        f48324c = null;
         c4.a.f();
     }
 
@@ -89,7 +89,7 @@ public abstract class k {
     public static Typeface b(Context context, CancellationSignal cancellationSignal, g.b[] bVarArr, int i10) {
         c4.a.c("TypefaceCompat.createFromFontInfo");
         try {
-            return f48325a.b(context, cancellationSignal, bVarArr, i10);
+            return f48322a.b(context, cancellationSignal, bVarArr, i10);
         } finally {
             c4.a.f();
         }
@@ -98,7 +98,7 @@ public abstract class k {
     public static Typeface c(Context context, CancellationSignal cancellationSignal, List list, int i10) {
         c4.a.c("TypefaceCompat.createFromFontInfoWithFallback");
         try {
-            return f48325a.c(context, cancellationSignal, list, i10);
+            return f48322a.c(context, cancellationSignal, list, i10);
         } finally {
             c4.a.f();
         }
@@ -115,7 +115,7 @@ public abstract class k {
                 if (fVar != null) {
                     fVar.d(i14, handler);
                 }
-                f48326b.f(f(resources, i10, str, i11, i12), i14);
+                f48323b.f(f(resources, i10, str, i11, i12), i14);
                 return i14;
             }
             if (!z10 ? fVar == null : eVar.a() == 0) {
@@ -130,7 +130,7 @@ public abstract class k {
             }
             a10 = z1.g.c(context, eVar.b(), i12, z11, i13, j.f.e(handler), new a(fVar));
         } else {
-            a10 = f48325a.a(context, (g.c) bVar, resources, i12);
+            a10 = f48322a.a(context, (g.c) bVar, resources, i12);
             if (fVar != null) {
                 if (a10 != null) {
                     fVar.d(a10, handler);
@@ -140,15 +140,15 @@ public abstract class k {
             }
         }
         if (a10 != null) {
-            f48326b.f(f(resources, i10, str, i11, i12), a10);
+            f48323b.f(f(resources, i10, str, i11, i12), a10);
         }
         return a10;
     }
 
     public static Typeface e(Context context, Resources resources, int i10, String str, int i11, int i12) {
-        Typeface e10 = f48325a.e(context, resources, i10, str, i12);
+        Typeface e10 = f48322a.e(context, resources, i10, str, i12);
         if (e10 != null) {
-            f48326b.f(f(resources, i10, str, i11, i12), e10);
+            f48323b.f(f(resources, i10, str, i11, i12), e10);
         }
         return e10;
     }
@@ -158,7 +158,7 @@ public abstract class k {
     }
 
     public static Typeface g(Resources resources, int i10, String str, int i11, int i12) {
-        return (Typeface) f48326b.d(f(resources, i10, str, i11, i12));
+        return (Typeface) f48323b.d(f(resources, i10, str, i11, i12));
     }
 
     public static Typeface h(String str) {
@@ -230,12 +230,12 @@ public abstract class k {
     }
 
     public static Font j(Typeface typeface) {
-        if (f48327c == null) {
-            f48327c = new Paint();
+        if (f48324c == null) {
+            f48324c = new Paint();
         }
-        f48327c.setTextSize(10.0f);
-        f48327c.setTypeface(typeface);
-        PositionedGlyphs shapeTextRun = TextRunShaper.shapeTextRun((CharSequence) " ", 0, 1, 0, 1, 0.0f, 0.0f, false, f48327c);
+        f48324c.setTextSize(10.0f);
+        f48324c.setTypeface(typeface);
+        PositionedGlyphs shapeTextRun = TextRunShaper.shapeTextRun((CharSequence) " ", 0, 1, 0, 1, 0.0f, 0.0f, false, f48324c);
         if (shapeTextRun.glyphCount() == 0) {
             return null;
         }

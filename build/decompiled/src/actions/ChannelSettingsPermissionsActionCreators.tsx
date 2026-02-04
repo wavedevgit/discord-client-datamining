@@ -14,7 +14,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = _closure1_slot3;
         var2 = function*(arg0, arg1, arg2, arg3) { // Environment: var2
             var0 = function*(arg0, arg1, arg2, arg3) { // Original name: ?anon_0_, environment: var0
-                _fun65733: for (var _fun65733_ip = 0;;) switch (_fun65733_ip) {
+                _fun65750: for (var _fun65750_ip = 0;;) switch (_fun65750_ip) {
                     case 0:
                         StartGenerator();
                         var3 = arg0;
@@ -23,21 +23,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var6 = arg3;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun65733_ip = 165;
-                            continue _fun65733
+                            _fun65750_ip = 165;
+                            continue _fun65750
                         }
                     case 22:
                         var1 = var3.getGuildId;
                         var1 = var1.bind(var3)();
                         var2 = null;
                         if (!(var2 != var1)) {
-                            _fun65733_ip = 98;
-                            continue _fun65733
+                            _fun65750_ip = 98;
+                            continue _fun65750
                         }
                     case 38:
                         if (!(var8 === var1)) {
-                            _fun65733_ip = 98;
-                            continue _fun65733
+                            _fun65750_ip = 98;
+                            continue _fun65750
                         }
                     case 42:
                         var4 = _closure1_slot0;
@@ -54,13 +54,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 84:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun65733_ip = 162;
-                            continue _fun65733
+                            _fun65750_ip = 162;
+                            continue _fun65750
                         }
                     case 90:
                         if (var1) {
-                            _fun65733_ip = 98;
-                            continue _fun65733
+                            _fun65750_ip = 98;
+                            continue _fun65750
                         }
                     case 93:
                         var2 = false;
@@ -131,28 +131,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = arg0;
             var _closure3_slot0 = var1;
             var1 = function() {
-                _fun65736: for (var _fun65736_ip = 0;;) switch (_fun65736_ip) {
+                _fun65753: for (var _fun65753_ip = 0;;) switch (_fun65753_ip) {
                     case 0:
                         var1 = _closure2_slot1;
                         var1 = var1.length;
                         var2 = 0;
                         if (!(var2 === var1)) {
-                            _fun65736_ip = 34;
-                            continue _fun65736
+                            _fun65753_ip = 34;
+                            continue _fun65753
                         }
                     case 18:
                         var1 = _closure2_slot2;
                         var1 = var1.length;
                         if (!(var2 !== var1)) {
-                            _fun65736_ip = 241;
-                            continue _fun65736
+                            _fun65753_ip = 241;
+                            continue _fun65753
                         }
                     case 34:
                         var1 = _closure2_slot1;
                         var1 = var1.length;
                         if (!(!(var1 > var2))) {
-                            _fun65736_ip = 143;
-                            continue _fun65736
+                            _fun65753_ip = 143;
+                            continue _fun65753
                         }
                     case 47:
                         var2 = _closure2_slot2;
@@ -160,8 +160,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = var1.bind(var2)();
                         var1 = null;
                         if (!(var1 != var4)) {
-                            _fun65736_ip = 128;
-                            continue _fun65736
+                            _fun65753_ip = 128;
+                            continue _fun65753
                         }
                     case 67:
                         var3 = _closure1_slot1;
@@ -176,8 +176,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var3.then;
                         var1 = _closure3_slot1;
                         var1 = var2.bind(var3)(var1, var1);
-                        _fun65736_ip = 222;
-                        continue _fun65736;
+                        _fun65753_ip = 222;
+                        continue _fun65753;
                     case 128:
                         var2 = _closure3_slot1;
                         var1 = undefined;
@@ -189,8 +189,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = var1.bind(var2)();
                         var1 = null;
                         if (!(var1 != var3)) {
-                            _fun65736_ip = 226;
-                            continue _fun65736
+                            _fun65753_ip = 226;
+                            continue _fun65753
                         }
                     case 163:
                         var4 = _closure1_slot1;
@@ -341,4 +341,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.savePermissionUpdates = var3;
     var2.saveAndClearPermissionUpdates = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 8135, 806, 3945, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 8138, 806, 3945, 2]);

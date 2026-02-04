@@ -5,10 +5,10 @@ import androidx.lifecycle.b0;
 public final class g implements wq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f50169a;
+    private final c f50166a;
 
     public g(c cVar) {
-        this.f50169a = cVar;
+        this.f50166a = cVar;
     }
 
     public static g a(c cVar) {
@@ -22,6 +22,6 @@ public final class g implements wq.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public b0 get() {
-        return c(this.f50169a);
+        return c(this.f50166a);
     }
 }

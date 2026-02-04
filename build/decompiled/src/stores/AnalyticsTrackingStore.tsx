@@ -115,6 +115,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var10.TRACK = var11;
+    var11 = function arg0() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 2;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var2 = var0.AnalyticsActionHandlers;
+        var1 = var2.handleSetAnalyticsToken;
+        var0 = arg0;
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var10.SET_ANALYTICS_TOKEN = var11;
     var1.actionHandler = var10;
     var9 = var9.TRACK;
     var1.TRACKING_URL = var9;
@@ -134,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var0.bind(var1)();
         var1 = var2.then;
         var0 = function(arg0) { // Environment: var0
-            _fun39793: for (var _fun39793_ip = 0;;) switch (_fun39793_ip) {
+            _fun39796: for (var _fun39796_ip = 0;;) switch (_fun39796_ip) {
                 case 0:
                     var2 = arg0;
                     var0 = {};
@@ -142,8 +156,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var1 == var2;
                     var1 = undefined;
                     if (var3) {
-                        _fun39793_ip = 22;
-                        continue _fun39793
+                        _fun39796_ip = 22;
+                        continue _fun39796
                     }
                 case 16:
                     var1 = var2.uuid;

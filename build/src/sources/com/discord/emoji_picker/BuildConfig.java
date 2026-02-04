@@ -1,5 +1,5 @@
 package com.discord.emoji_picker;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class BuildConfig {
     public static final String BUILD_TYPE = "release";
     public static final boolean DEBUG = false;

@@ -300,14 +300,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isIndexPageTab = var17;
     var17 = function(arg0) { // Environment: var11
-        _fun28295: for (var _fun28295_ip = 0;;) switch (_fun28295_ip) {
+        _fun28297: for (var _fun28297_ip = 0;;) switch (_fun28297_ip) {
             case 0:
                 var2 = arg0;
                 var0 = null;
                 var0 = var0 != var2;
                 if (!var0) {
-                    _fun28295_ip = 29;
-                    continue _fun28295
+                    _fun28297_ip = 29;
+                    continue _fun28297
                 }
             case 12:
                 var1 = _closure1_slot0;
@@ -315,8 +315,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2 !== var1;
             case 29:
                 if (!var0) {
-                    _fun28295_ip = 49;
-                    continue _fun28295
+                    _fun28297_ip = 49;
+                    continue _fun28297
                 }
             case 32:
                 var1 = _closure1_slot0;

@@ -10,13 +10,13 @@ abstract class e {
     public static String a(Context context, long j10, boolean z10, boolean z11, boolean z12) {
         String d10 = d(j10);
         if (z10) {
-            d10 = String.format(context.getString(yg.i.f54240q), d10);
+            d10 = String.format(context.getString(yg.i.f54237q), d10);
         }
         if (z11) {
-            return String.format(context.getString(yg.i.f54239p), d10);
+            return String.format(context.getString(yg.i.f54236p), d10);
         }
         if (z12) {
-            return String.format(context.getString(yg.i.f54236m), d10);
+            return String.format(context.getString(yg.i.f54233m), d10);
         }
         return d10;
     }
@@ -39,9 +39,9 @@ abstract class e {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static String e(Context context, int i10) {
         if (t.g().get(1) == i10) {
-            return String.format(context.getString(yg.i.f54237n), Integer.valueOf(i10));
+            return String.format(context.getString(yg.i.f54234n), Integer.valueOf(i10));
         }
-        return String.format(context.getString(yg.i.f54238o), Integer.valueOf(i10));
+        return String.format(context.getString(yg.i.f54235o), Integer.valueOf(i10));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

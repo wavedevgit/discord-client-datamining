@@ -220,7 +220,7 @@ public final class f implements Closeable {
             Intrinsics.checkNotNullParameter(sink, "sink");
             o(socket);
             if (this.f22752a) {
-                str = xt.e.f53575i + ' ' + peerName;
+                str = xt.e.f53572i + ' ' + peerName;
             } else {
                 str = "MockWebServer " + peerName;
             }
@@ -774,7 +774,7 @@ public final class f implements Closeable {
         Object[] objArr;
         Intrinsics.checkNotNullParameter(connectionCode, "connectionCode");
         Intrinsics.checkNotNullParameter(streamCode, "streamCode");
-        if (xt.e.f53574h && Thread.holdsLock(this)) {
+        if (xt.e.f53571h && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         try {
@@ -961,7 +961,7 @@ public final class f implements Closeable {
                 int i10 = this.f22741p;
                 intRef.element = i10;
                 Unit unit = Unit.f32464a;
-                this.K.B(i10, statusCode, xt.e.f53567a);
+                this.K.B(i10, statusCode, xt.e.f53564a);
             }
         }
     }
@@ -1343,7 +1343,7 @@ public final class f implements Closeable {
             }
             B1.w(source, i11);
             if (z10) {
-                B1.x(xt.e.f53568b, true);
+                B1.x(xt.e.f53565b, true);
             }
         }
 

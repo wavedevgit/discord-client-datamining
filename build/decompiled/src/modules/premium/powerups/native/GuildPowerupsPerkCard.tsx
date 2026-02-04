@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/powerups/native/GuildPowerupsPerkCard.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun102498: for (var _fun102498_ip = 0;;) switch (_fun102498_ip) {
+        _fun102511: for (var _fun102511_ip = 0;;) switch (_fun102511_ip) {
             case 0:
                 var2 = arg0;
                 var18 = var2.title;
@@ -101,8 +101,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var2.isImageAnimated;
                 var3 = undefined;
                 if (!(var14 === var3)) {
-                    _fun102498_ip = 33;
-                    continue _fun102498
+                    _fun102511_ip = 33;
+                    continue _fun102511
                 }
             case 31:
                 var14 = true;
@@ -144,13 +144,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.isThemeDark;
                 var0 = var0.bind(var1)(var2);
                 if (var0) {
-                    _fun102498_ip = 168;
-                    continue _fun102498
+                    _fun102511_ip = 168;
+                    continue _fun102511
                 }
             case 156:
                 var15 = ['#0f101100', '#0f10111a'];
-                _fun102498_ip = 178;
-                continue _fun102498;
+                _fun102511_ip = 178;
+                continue _fun102511;
             case 168:
                 var15 = ['#0f101100', '#0f101166'];
             case 178:
@@ -175,8 +175,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var10.imageContainer;
                 var4.style = var6;
                 if (!(var16 == var7)) {
-                    _fun102498_ip = 320;
-                    continue _fun102498
+                    _fun102511_ip = 320;
+                    continue _fun102511
                 }
             case 264:
                 var11 = _closure1_slot4;
@@ -189,8 +189,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var16 != var19;
                 var16 = '';
                 if (!var20) {
-                    _fun102498_ip = 304;
-                    continue _fun102498
+                    _fun102511_ip = 304;
+                    continue _fun102511
                 }
             case 301:
                 var16 = var19;
@@ -272,4 +272,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3246, 3206, 13382, 13366, 4098, 3941, 13367, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3246, 3206, 13383, 13367, 4098, 3941, 13368, 2]);

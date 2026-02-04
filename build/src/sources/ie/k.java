@@ -53,7 +53,7 @@ final class k implements zd.g {
             if (jArr[i11] <= j10 && j10 < jArr[i11 + 1]) {
                 e eVar = (e) this.f28385d.get(i10);
                 zd.b bVar = eVar.f28355a;
-                if (bVar.f55877p == -3.4028235E38f) {
+                if (bVar.f55874p == -3.4028235E38f) {
                     arrayList2.add(eVar);
                 } else {
                     arrayList.add(bVar);

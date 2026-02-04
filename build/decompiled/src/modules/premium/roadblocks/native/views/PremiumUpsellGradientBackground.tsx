@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/roadblocks/native/views/PremiumUpsellGradientBackground.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun68664: for (var _fun68664_ip = 0;;) switch (_fun68664_ip) {
+        _fun68681: for (var _fun68681_ip = 0;;) switch (_fun68681_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.useTier0UpsellContent;
@@ -81,8 +81,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.end = var4;
                 var4 = true;
                 if (!(var4 !== var6)) {
-                    _fun68664_ip = 152;
-                    continue _fun68664
+                    _fun68681_ip = 152;
+                    continue _fun68681
                 }
             case 121:
                 var6 = _closure1_slot0;
@@ -91,8 +91,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var6.bind(var3)(var4);
                 var4 = var4.Gradients;
                 var4 = var4.PREMIUM_TIER_2_TRI_COLOR;
-                _fun68664_ip = 181;
-                continue _fun68664;
+                _fun68681_ip = 181;
+                continue _fun68681;
             case 152:
                 var6 = _closure1_slot0;
                 var5 = _closure1_slot2;

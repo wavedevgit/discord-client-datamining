@@ -22,71 +22,71 @@ import wd.f;
 class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f51395a;
+    private final h f51392a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final DataSource f51396b;
+    private final DataSource f51393b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final DataSource f51397c;
+    private final DataSource f51394c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final s f51398d;
+    private final s f51395d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Uri[] f51399e;
+    private final Uri[] f51396e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Format[] f51400f;
+    private final Format[] f51397f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final wd.k f51401g;
+    private final wd.k f51398g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final u0 f51402h;
+    private final u0 f51399h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final List f51403i;
+    private final List f51400i;
 
     /* renamed from: k  reason: collision with root package name */
-    private final t1 f51405k;
+    private final t1 f51402k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final long f51406l;
+    private final long f51403l;
 
     /* renamed from: m  reason: collision with root package name */
-    private boolean f51407m;
+    private boolean f51404m;
 
     /* renamed from: o  reason: collision with root package name */
-    private IOException f51409o;
+    private IOException f51406o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Uri f51410p;
+    private Uri f51407p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f51411q;
+    private boolean f51408q;
 
     /* renamed from: r  reason: collision with root package name */
-    private com.google.android.exoplayer2.trackselection.g f51412r;
+    private com.google.android.exoplayer2.trackselection.g f51409r;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f51414t;
+    private boolean f51411t;
 
     /* renamed from: j  reason: collision with root package name */
-    private final vd.e f51404j = new vd.e(4);
+    private final vd.e f51401j = new vd.e(4);
 
     /* renamed from: n  reason: collision with root package name */
-    private byte[] f51408n = w0.f40202f;
+    private byte[] f51405n = w0.f40202f;
 
     /* renamed from: s  reason: collision with root package name */
-    private long f51413s = -9223372036854775807L;
+    private long f51410s = -9223372036854775807L;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a extends sd.l {
 
         /* renamed from: l  reason: collision with root package name */
-        private byte[] f51415l;
+        private byte[] f51412l;
 
         public a(DataSource dataSource, com.google.android.exoplayer2.upstream.a aVar, Format format, int i10, Object obj, byte[] bArr) {
             super(dataSource, aVar, 3, format, i10, obj, bArr);
@@ -94,11 +94,11 @@ class f {
 
         @Override // sd.l
         protected void g(byte[] bArr, int i10) {
-            this.f51415l = Arrays.copyOf(bArr, i10);
+            this.f51412l = Arrays.copyOf(bArr, i10);
         }
 
         public byte[] j() {
-            return this.f51415l;
+            return this.f51412l;
         }
     }
 
@@ -106,22 +106,22 @@ class f {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public sd.f f51416a;
+        public sd.f f51413a;
 
         /* renamed from: b  reason: collision with root package name */
-        public boolean f51417b;
+        public boolean f51414b;
 
         /* renamed from: c  reason: collision with root package name */
-        public Uri f51418c;
+        public Uri f51415c;
 
         public b() {
             a();
         }
 
         public void a() {
-            this.f51416a = null;
-            this.f51417b = false;
-            this.f51418c = null;
+            this.f51413a = null;
+            this.f51414b = false;
+            this.f51415c = null;
         }
     }
 
@@ -130,32 +130,32 @@ class f {
     public static final class c extends sd.b {
 
         /* renamed from: e  reason: collision with root package name */
-        private final List f51419e;
+        private final List f51416e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final long f51420f;
+        private final long f51417f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final String f51421g;
+        private final String f51418g;
 
         public c(String str, long j10, List list) {
             super(0L, list.size() - 1);
-            this.f51421g = str;
-            this.f51420f = j10;
-            this.f51419e = list;
+            this.f51418g = str;
+            this.f51417f = j10;
+            this.f51416e = list;
         }
 
         @Override // sd.o
         public long a() {
             c();
-            return this.f51420f + ((f.e) this.f51419e.get((int) d())).f52163p;
+            return this.f51417f + ((f.e) this.f51416e.get((int) d())).f52160p;
         }
 
         @Override // sd.o
         public long b() {
             c();
-            f.e eVar = (f.e) this.f51419e.get((int) d());
-            return this.f51420f + eVar.f52163p + eVar.f52161i;
+            f.e eVar = (f.e) this.f51416e.get((int) d());
+            return this.f51417f + eVar.f52160p + eVar.f52158i;
         }
     }
 
@@ -163,16 +163,16 @@ class f {
     private static final class d extends je.b {
 
         /* renamed from: h  reason: collision with root package name */
-        private int f51422h;
+        private int f51419h;
 
         public d(u0 u0Var, int[] iArr) {
             super(u0Var, iArr);
-            this.f51422h = o(u0Var.c(iArr[0]));
+            this.f51419h = o(u0Var.c(iArr[0]));
         }
 
         @Override // com.google.android.exoplayer2.trackselection.g
         public int c() {
-            return this.f51422h;
+            return this.f51419h;
         }
 
         @Override // com.google.android.exoplayer2.trackselection.g
@@ -183,12 +183,12 @@ class f {
         @Override // com.google.android.exoplayer2.trackselection.g
         public void l(long j10, long j11, long j12, List list, sd.o[] oVarArr) {
             long elapsedRealtime = SystemClock.elapsedRealtime();
-            if (!a(this.f51422h, elapsedRealtime)) {
+            if (!a(this.f51419h, elapsedRealtime)) {
                 return;
             }
             for (int i10 = this.f31517b - 1; i10 >= 0; i10--) {
                 if (!a(i10, elapsedRealtime)) {
-                    this.f51422h = i10;
+                    this.f51419h = i10;
                     return;
                 }
             }
@@ -206,60 +206,60 @@ class f {
     public static final class e {
 
         /* renamed from: a  reason: collision with root package name */
-        public final f.e f51423a;
+        public final f.e f51420a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final long f51424b;
+        public final long f51421b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f51425c;
+        public final int f51422c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final boolean f51426d;
+        public final boolean f51423d;
 
         public e(f.e eVar, long j10, int i10) {
             boolean z10;
-            this.f51423a = eVar;
-            this.f51424b = j10;
-            this.f51425c = i10;
-            if ((eVar instanceof f.b) && ((f.b) eVar).f52153x) {
+            this.f51420a = eVar;
+            this.f51421b = j10;
+            this.f51422c = i10;
+            if ((eVar instanceof f.b) && ((f.b) eVar).f52150x) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            this.f51426d = z10;
+            this.f51423d = z10;
         }
     }
 
     public f(h hVar, wd.k kVar, Uri[] uriArr, Format[] formatArr, g gVar, c0 c0Var, s sVar, long j10, List list, t1 t1Var, le.g gVar2) {
-        this.f51395a = hVar;
-        this.f51401g = kVar;
-        this.f51399e = uriArr;
-        this.f51400f = formatArr;
-        this.f51398d = sVar;
-        this.f51406l = j10;
-        this.f51403i = list;
-        this.f51405k = t1Var;
+        this.f51392a = hVar;
+        this.f51398g = kVar;
+        this.f51396e = uriArr;
+        this.f51397f = formatArr;
+        this.f51395d = sVar;
+        this.f51403l = j10;
+        this.f51400i = list;
+        this.f51402k = t1Var;
         DataSource a10 = gVar.a(1);
-        this.f51396b = a10;
+        this.f51393b = a10;
         if (c0Var != null) {
             a10.j(c0Var);
         }
-        this.f51397c = gVar.a(3);
-        this.f51402h = new u0(formatArr);
+        this.f51394c = gVar.a(3);
+        this.f51399h = new u0(formatArr);
         ArrayList arrayList = new ArrayList();
         for (int i10 = 0; i10 < uriArr.length; i10++) {
             if ((formatArr[i10].f11296p & 16384) == 0) {
                 arrayList.add(Integer.valueOf(i10));
             }
         }
-        this.f51412r = new d(this.f51402h, li.e.l(arrayList));
+        this.f51409r = new d(this.f51399h, li.e.l(arrayList));
     }
 
     private static Uri d(wd.f fVar, f.e eVar) {
         String str;
-        if (eVar != null && (str = eVar.f52165r) != null) {
-            return ne.u0.e(fVar.f52196a, str);
+        if (eVar != null && (str = eVar.f52162r) != null) {
+            return ne.u0.e(fVar.f52193a, str);
         }
         return null;
     }
@@ -272,53 +272,53 @@ class f {
         int i10 = -1;
         if (iVar != null && !z10) {
             if (iVar.h()) {
-                if (iVar.f51432o == -1) {
+                if (iVar.f51429o == -1) {
                     j13 = iVar.g();
                 } else {
-                    j13 = iVar.f49461j;
+                    j13 = iVar.f49458j;
                 }
                 Long valueOf = Long.valueOf(j13);
-                int i11 = iVar.f51432o;
+                int i11 = iVar.f51429o;
                 if (i11 != -1) {
                     i10 = i11 + 1;
                 }
                 return new Pair(valueOf, Integer.valueOf(i10));
             }
-            return new Pair(Long.valueOf(iVar.f49461j), Integer.valueOf(iVar.f51432o));
+            return new Pair(Long.valueOf(iVar.f49458j), Integer.valueOf(iVar.f51429o));
         }
-        long j14 = fVar.f52150u + j10;
-        if (iVar != null && !this.f51411q) {
-            j11 = iVar.f49424g;
+        long j14 = fVar.f52147u + j10;
+        if (iVar != null && !this.f51408q) {
+            j11 = iVar.f49421g;
         }
-        if (!fVar.f52144o && j11 >= j14) {
-            return new Pair(Long.valueOf(fVar.f52140k + fVar.f52147r.size()), -1);
+        if (!fVar.f52141o && j11 >= j14) {
+            return new Pair(Long.valueOf(fVar.f52137k + fVar.f52144r.size()), -1);
         }
         long j15 = j11 - j10;
-        List list2 = fVar.f52147r;
+        List list2 = fVar.f52144r;
         Long valueOf2 = Long.valueOf(j15);
         int i12 = 0;
-        if (this.f51401g.h() && iVar != null) {
+        if (this.f51398g.h() && iVar != null) {
             z11 = false;
         } else {
             z11 = true;
         }
         int f10 = w0.f(list2, valueOf2, true, z11);
-        long j16 = f10 + fVar.f52140k;
+        long j16 = f10 + fVar.f52137k;
         if (f10 >= 0) {
-            f.d dVar = (f.d) fVar.f52147r.get(f10);
-            if (j15 < dVar.f52163p + dVar.f52161i) {
-                list = dVar.f52158x;
+            f.d dVar = (f.d) fVar.f52144r.get(f10);
+            if (j15 < dVar.f52160p + dVar.f52158i) {
+                list = dVar.f52155x;
             } else {
-                list = fVar.f52148s;
+                list = fVar.f52145s;
             }
             while (true) {
                 if (i12 >= list.size()) {
                     break;
                 }
                 f.b bVar = (f.b) list.get(i12);
-                if (j15 < bVar.f52163p + bVar.f52161i) {
-                    if (bVar.f52152w) {
-                        if (list == fVar.f52148s) {
+                if (j15 < bVar.f52160p + bVar.f52158i) {
+                    if (bVar.f52149w) {
+                        if (list == fVar.f52145s) {
                             j12 = 1;
                         } else {
                             j12 = 0;
@@ -335,59 +335,59 @@ class f {
     }
 
     private static e g(wd.f fVar, long j10, int i10) {
-        int i11 = (int) (j10 - fVar.f52140k);
-        if (i11 == fVar.f52147r.size()) {
+        int i11 = (int) (j10 - fVar.f52137k);
+        if (i11 == fVar.f52144r.size()) {
             if (i10 == -1) {
                 i10 = 0;
             }
-            if (i10 >= fVar.f52148s.size()) {
+            if (i10 >= fVar.f52145s.size()) {
                 return null;
             }
-            return new e((f.e) fVar.f52148s.get(i10), j10, i10);
+            return new e((f.e) fVar.f52145s.get(i10), j10, i10);
         }
-        f.d dVar = (f.d) fVar.f52147r.get(i11);
+        f.d dVar = (f.d) fVar.f52144r.get(i11);
         if (i10 == -1) {
             return new e(dVar, j10, -1);
         }
-        if (i10 < dVar.f52158x.size()) {
-            return new e((f.e) dVar.f52158x.get(i10), j10, i10);
+        if (i10 < dVar.f52155x.size()) {
+            return new e((f.e) dVar.f52155x.get(i10), j10, i10);
         }
         int i12 = i11 + 1;
-        if (i12 < fVar.f52147r.size()) {
-            return new e((f.e) fVar.f52147r.get(i12), j10 + 1, -1);
+        if (i12 < fVar.f52144r.size()) {
+            return new e((f.e) fVar.f52144r.get(i12), j10 + 1, -1);
         }
-        if (fVar.f52148s.isEmpty()) {
+        if (fVar.f52145s.isEmpty()) {
             return null;
         }
-        return new e((f.e) fVar.f52148s.get(0), j10 + 1, 0);
+        return new e((f.e) fVar.f52145s.get(0), j10 + 1, 0);
     }
 
     static List i(wd.f fVar, long j10, int i10) {
-        int i11 = (int) (j10 - fVar.f52140k);
-        if (i11 >= 0 && fVar.f52147r.size() >= i11) {
+        int i11 = (int) (j10 - fVar.f52137k);
+        if (i11 >= 0 && fVar.f52144r.size() >= i11) {
             ArrayList arrayList = new ArrayList();
             int i12 = 0;
-            if (i11 < fVar.f52147r.size()) {
+            if (i11 < fVar.f52144r.size()) {
                 if (i10 != -1) {
-                    f.d dVar = (f.d) fVar.f52147r.get(i11);
+                    f.d dVar = (f.d) fVar.f52144r.get(i11);
                     if (i10 == 0) {
                         arrayList.add(dVar);
-                    } else if (i10 < dVar.f52158x.size()) {
-                        List list = dVar.f52158x;
+                    } else if (i10 < dVar.f52155x.size()) {
+                        List list = dVar.f52155x;
                         arrayList.addAll(list.subList(i10, list.size()));
                     }
                     i11++;
                 }
-                List list2 = fVar.f52147r;
+                List list2 = fVar.f52144r;
                 arrayList.addAll(list2.subList(i11, list2.size()));
                 i10 = 0;
             }
-            if (fVar.f52143n != -9223372036854775807L) {
+            if (fVar.f52140n != -9223372036854775807L) {
                 if (i10 != -1) {
                     i12 = i10;
                 }
-                if (i12 < fVar.f52148s.size()) {
-                    List list3 = fVar.f52148s;
+                if (i12 < fVar.f52145s.size()) {
+                    List list3 = fVar.f52145s;
                     arrayList.addAll(list3.subList(i12, list3.size()));
                 }
             }
@@ -400,16 +400,16 @@ class f {
         if (uri == null) {
             return null;
         }
-        byte[] c10 = this.f51404j.c(uri);
+        byte[] c10 = this.f51401j.c(uri);
         if (c10 != null) {
-            this.f51404j.b(uri, c10);
+            this.f51401j.b(uri, c10);
             return null;
         }
-        return new a(this.f51397c, new a.b().i(uri).b(1).e(ji.t.j()).a(), this.f51400f[i10], this.f51412r.r(), this.f51412r.h(), this.f51408n);
+        return new a(this.f51394c, new a.b().i(uri).b(1).e(ji.t.j()).a(), this.f51397f[i10], this.f51409r.r(), this.f51409r.h(), this.f51405n);
     }
 
     private long s(long j10) {
-        long j11 = this.f51413s;
+        long j11 = this.f51410s;
         if (j11 == -9223372036854775807L) {
             return -9223372036854775807L;
         }
@@ -418,12 +418,12 @@ class f {
 
     private void w(wd.f fVar) {
         long e10;
-        if (fVar.f52144o) {
+        if (fVar.f52141o) {
             e10 = -9223372036854775807L;
         } else {
-            e10 = fVar.e() - this.f51401g.c();
+            e10 = fVar.e() - this.f51398g.c();
         }
-        this.f51413s = e10;
+        this.f51410s = e10;
     }
 
     public sd.o[] a(i iVar, long j10) {
@@ -432,27 +432,27 @@ class f {
         if (iVar == null) {
             d10 = -1;
         } else {
-            d10 = this.f51402h.d(iVar.f49421d);
+            d10 = this.f51399h.d(iVar.f49418d);
         }
         int i10 = d10;
-        int length = this.f51412r.length();
+        int length = this.f51409r.length();
         sd.o[] oVarArr = new sd.o[length];
         for (int i11 = 0; i11 < length; i11++) {
-            int e10 = this.f51412r.e(i11);
-            Uri uri = this.f51399e[e10];
-            if (!this.f51401g.g(uri)) {
-                oVarArr[i11] = sd.o.f49462a;
+            int e10 = this.f51409r.e(i11);
+            Uri uri = this.f51396e[e10];
+            if (!this.f51398g.g(uri)) {
+                oVarArr[i11] = sd.o.f49459a;
             } else {
-                wd.f m10 = this.f51401g.m(uri, false);
+                wd.f m10 = this.f51398g.m(uri, false);
                 ne.a.e(m10);
-                long c10 = m10.f52137h - this.f51401g.c();
+                long c10 = m10.f52134h - this.f51398g.c();
                 if (e10 != i10) {
                     z10 = true;
                 } else {
                     z10 = false;
                 }
                 Pair f10 = f(iVar, z10, m10, c10, j10);
-                oVarArr[i11] = new c(m10.f52196a, c10, i(m10, ((Long) f10.first).longValue(), ((Integer) f10.second).intValue()));
+                oVarArr[i11] = new c(m10.f52193a, c10, i(m10, ((Long) f10.first).longValue(), ((Integer) f10.second).intValue()));
             }
         }
         return oVarArr;
@@ -461,20 +461,20 @@ class f {
     public long b(long j10, t0 t0Var) {
         wd.f fVar;
         long j11;
-        int c10 = this.f51412r.c();
-        Uri[] uriArr = this.f51399e;
+        int c10 = this.f51409r.c();
+        Uri[] uriArr = this.f51396e;
         if (c10 < uriArr.length && c10 != -1) {
-            fVar = this.f51401g.m(uriArr[this.f51412r.p()], true);
+            fVar = this.f51398g.m(uriArr[this.f51409r.p()], true);
         } else {
             fVar = null;
         }
-        if (fVar != null && !fVar.f52147r.isEmpty() && fVar.f52198c) {
-            long c11 = fVar.f52137h - this.f51401g.c();
+        if (fVar != null && !fVar.f52144r.isEmpty() && fVar.f52195c) {
+            long c11 = fVar.f52134h - this.f51398g.c();
             long j12 = j10 - c11;
-            int f10 = w0.f(fVar.f52147r, Long.valueOf(j12), true, true);
-            long j13 = ((f.d) fVar.f52147r.get(f10)).f52163p;
-            if (f10 != fVar.f52147r.size() - 1) {
-                j11 = ((f.d) fVar.f52147r.get(f10 + 1)).f52163p;
+            int f10 = w0.f(fVar.f52144r, Long.valueOf(j12), true, true);
+            long j13 = ((f.d) fVar.f52144r.get(f10)).f52160p;
+            if (f10 != fVar.f52144r.size() - 1) {
+                j11 = ((f.d) fVar.f52144r.get(f10 + 1)).f52160p;
             } else {
                 j11 = j13;
             }
@@ -485,27 +485,27 @@ class f {
 
     public int c(i iVar) {
         List list;
-        if (iVar.f51432o == -1) {
+        if (iVar.f51429o == -1) {
             return 1;
         }
-        wd.f fVar = (wd.f) ne.a.e(this.f51401g.m(this.f51399e[this.f51402h.d(iVar.f49421d)], false));
-        int i10 = (int) (iVar.f49461j - fVar.f52140k);
+        wd.f fVar = (wd.f) ne.a.e(this.f51398g.m(this.f51396e[this.f51399h.d(iVar.f49418d)], false));
+        int i10 = (int) (iVar.f49458j - fVar.f52137k);
         if (i10 < 0) {
             return 1;
         }
-        if (i10 < fVar.f52147r.size()) {
-            list = ((f.d) fVar.f52147r.get(i10)).f52158x;
+        if (i10 < fVar.f52144r.size()) {
+            list = ((f.d) fVar.f52144r.get(i10)).f52155x;
         } else {
-            list = fVar.f52148s;
+            list = fVar.f52145s;
         }
-        if (iVar.f51432o >= list.size()) {
+        if (iVar.f51429o >= list.size()) {
             return 2;
         }
-        f.b bVar = (f.b) list.get(iVar.f51432o);
-        if (bVar.f52153x) {
+        f.b bVar = (f.b) list.get(iVar.f51429o);
+        if (bVar.f52150x) {
             return 0;
         }
-        if (w0.c(Uri.parse(ne.u0.d(fVar.f52196a, bVar.f52159d)), iVar.f49419b.f12943a)) {
+        if (w0.c(Uri.parse(ne.u0.d(fVar.f52193a, bVar.f52156d)), iVar.f49416b.f12943a)) {
             return 1;
         }
         return 2;
@@ -524,45 +524,45 @@ class f {
         if (iVar == null) {
             d10 = -1;
         } else {
-            d10 = this.f51402h.d(iVar.f49421d);
+            d10 = this.f51399h.d(iVar.f49418d);
         }
         long j12 = j11 - j10;
         long s10 = s(j10);
-        if (iVar != null && !this.f51411q) {
+        if (iVar != null && !this.f51408q) {
             long d11 = iVar.d();
             j12 = Math.max(0L, j12 - d11);
             if (s10 != -9223372036854775807L) {
                 s10 = Math.max(0L, s10 - d11);
             }
         }
-        this.f51412r.l(j10, j12, s10, list, a(iVar, j11));
-        int p10 = this.f51412r.p();
+        this.f51409r.l(j10, j12, s10, list, a(iVar, j11));
+        int p10 = this.f51409r.p();
         if (d10 != p10) {
             z11 = true;
         } else {
             z11 = false;
         }
-        Uri uri = this.f51399e[p10];
-        if (!this.f51401g.g(uri)) {
-            bVar.f51418c = uri;
-            this.f51414t &= uri.equals(this.f51410p);
-            this.f51410p = uri;
+        Uri uri = this.f51396e[p10];
+        if (!this.f51398g.g(uri)) {
+            bVar.f51415c = uri;
+            this.f51411t &= uri.equals(this.f51407p);
+            this.f51407p = uri;
             return;
         }
-        wd.f m10 = this.f51401g.m(uri, true);
+        wd.f m10 = this.f51398g.m(uri, true);
         ne.a.e(m10);
-        this.f51411q = m10.f52198c;
+        this.f51408q = m10.f52195c;
         w(m10);
-        long c10 = m10.f52137h - this.f51401g.c();
+        long c10 = m10.f52134h - this.f51398g.c();
         Pair f10 = f(iVar, z11, m10, c10, j11);
         long longValue = ((Long) f10.first).longValue();
         int intValue = ((Integer) f10.second).intValue();
         int i11 = d10;
-        if (longValue < m10.f52140k && iVar != null && z11) {
-            uri = this.f51399e[i11];
-            m10 = this.f51401g.m(uri, true);
+        if (longValue < m10.f52137k && iVar != null && z11) {
+            uri = this.f51396e[i11];
+            m10 = this.f51398g.m(uri, true);
             ne.a.e(m10);
-            c10 = m10.f52137h - this.f51401g.c();
+            c10 = m10.f52134h - this.f51398g.c();
             Pair f11 = f(iVar, false, m10, c10, j11);
             longValue = ((Long) f11.first).longValue();
             intValue = ((Integer) f11.second).intValue();
@@ -572,70 +572,70 @@ class f {
         }
         Uri uri2 = uri;
         wd.f fVar = m10;
-        if (longValue < fVar.f52140k) {
-            this.f51409o = new qd.b();
+        if (longValue < fVar.f52137k) {
+            this.f51406o = new qd.b();
             return;
         }
         e g10 = g(fVar, longValue, intValue);
         if (g10 == null) {
-            if (!fVar.f52144o) {
-                bVar.f51418c = uri2;
-                this.f51414t &= uri2.equals(this.f51410p);
-                this.f51410p = uri2;
+            if (!fVar.f52141o) {
+                bVar.f51415c = uri2;
+                this.f51411t &= uri2.equals(this.f51407p);
+                this.f51407p = uri2;
                 return;
-            } else if (!z10 && !fVar.f52147r.isEmpty()) {
-                g10 = new e((f.e) v.c(fVar.f52147r), (fVar.f52140k + fVar.f52147r.size()) - 1, -1);
+            } else if (!z10 && !fVar.f52144r.isEmpty()) {
+                g10 = new e((f.e) v.c(fVar.f52144r), (fVar.f52137k + fVar.f52144r.size()) - 1, -1);
             } else {
-                bVar.f51417b = true;
+                bVar.f51414b = true;
                 return;
             }
         }
-        this.f51414t = false;
-        this.f51410p = null;
-        Uri d12 = d(fVar, g10.f51423a.f52160e);
+        this.f51411t = false;
+        this.f51407p = null;
+        Uri d12 = d(fVar, g10.f51420a.f52157e);
         sd.f l10 = l(d12, i10, true, null);
-        bVar.f51416a = l10;
+        bVar.f51413a = l10;
         if (l10 == null) {
-            Uri d13 = d(fVar, g10.f51423a);
+            Uri d13 = d(fVar, g10.f51420a);
             sd.f l11 = l(d13, i10, false, null);
-            bVar.f51416a = l11;
+            bVar.f51413a = l11;
             if (l11 == null) {
                 long j13 = c10;
                 boolean w10 = i.w(iVar, uri2, fVar, g10, j13);
-                if (w10 && g10.f51426d) {
+                if (w10 && g10.f51423d) {
                     return;
                 }
-                bVar.f51416a = i.j(this.f51395a, this.f51396b, this.f51400f[i10], j13, fVar, g10, uri2, this.f51403i, this.f51412r.r(), this.f51412r.h(), this.f51407m, this.f51398d, this.f51406l, iVar, this.f51404j.a(d13), this.f51404j.a(d12), w10, this.f51405k, null);
+                bVar.f51413a = i.j(this.f51392a, this.f51393b, this.f51397f[i10], j13, fVar, g10, uri2, this.f51400i, this.f51409r.r(), this.f51409r.h(), this.f51404m, this.f51395d, this.f51403l, iVar, this.f51401j.a(d13), this.f51401j.a(d12), w10, this.f51402k, null);
             }
         }
     }
 
     public int h(long j10, List list) {
-        if (this.f51409o == null && this.f51412r.length() >= 2) {
-            return this.f51412r.n(j10, list);
+        if (this.f51406o == null && this.f51409r.length() >= 2) {
+            return this.f51409r.n(j10, list);
         }
         return list.size();
     }
 
     public u0 j() {
-        return this.f51402h;
+        return this.f51399h;
     }
 
     public com.google.android.exoplayer2.trackselection.g k() {
-        return this.f51412r;
+        return this.f51409r;
     }
 
     public boolean m(sd.f fVar, long j10) {
-        com.google.android.exoplayer2.trackselection.g gVar = this.f51412r;
-        return gVar.f(gVar.j(this.f51402h.d(fVar.f49421d)), j10);
+        com.google.android.exoplayer2.trackselection.g gVar = this.f51409r;
+        return gVar.f(gVar.j(this.f51399h.d(fVar.f49418d)), j10);
     }
 
     public void n() {
-        IOException iOException = this.f51409o;
+        IOException iOException = this.f51406o;
         if (iOException == null) {
-            Uri uri = this.f51410p;
-            if (uri != null && this.f51414t) {
-                this.f51401g.b(uri);
+            Uri uri = this.f51407p;
+            if (uri != null && this.f51411t) {
+                this.f51398g.b(uri);
                 return;
             }
             return;
@@ -644,14 +644,14 @@ class f {
     }
 
     public boolean o(Uri uri) {
-        return w0.s(this.f51399e, uri);
+        return w0.s(this.f51396e, uri);
     }
 
     public void p(sd.f fVar) {
         if (fVar instanceof a) {
             a aVar = (a) fVar;
-            this.f51408n = aVar.h();
-            this.f51404j.b(aVar.f49419b.f12943a, (byte[]) ne.a.e(aVar.j()));
+            this.f51405n = aVar.h();
+            this.f51401j.b(aVar.f49416b.f12943a, (byte[]) ne.a.e(aVar.j()));
         }
     }
 
@@ -659,7 +659,7 @@ class f {
         int j11;
         int i10 = 0;
         while (true) {
-            Uri[] uriArr = this.f51399e;
+            Uri[] uriArr = this.f51396e;
             if (i10 < uriArr.length) {
                 if (uriArr[i10].equals(uri)) {
                     break;
@@ -670,32 +670,32 @@ class f {
                 break;
             }
         }
-        if (i10 == -1 || (j11 = this.f51412r.j(i10)) == -1) {
+        if (i10 == -1 || (j11 = this.f51409r.j(i10)) == -1) {
             return true;
         }
-        this.f51414t |= uri.equals(this.f51410p);
-        if (j10 != -9223372036854775807L && (!this.f51412r.f(j11, j10) || !this.f51401g.k(uri, j10))) {
+        this.f51411t |= uri.equals(this.f51407p);
+        if (j10 != -9223372036854775807L && (!this.f51409r.f(j11, j10) || !this.f51398g.k(uri, j10))) {
             return false;
         }
         return true;
     }
 
     public void r() {
-        this.f51409o = null;
+        this.f51406o = null;
     }
 
     public void t(boolean z10) {
-        this.f51407m = z10;
+        this.f51404m = z10;
     }
 
     public void u(com.google.android.exoplayer2.trackselection.g gVar) {
-        this.f51412r = gVar;
+        this.f51409r = gVar;
     }
 
     public boolean v(long j10, sd.f fVar, List list) {
-        if (this.f51409o != null) {
+        if (this.f51406o != null) {
             return false;
         }
-        return this.f51412r.b(j10, fVar, list);
+        return this.f51409r.b(j10, fVar, list);
     }
 }

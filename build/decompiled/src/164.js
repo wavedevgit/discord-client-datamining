@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var5.bind(var4)(var1);
                 var1 = var1.bind(var4)();
                 if (var1) {
-                    _fun2469_ip = 138;
+                    _fun2469_ip = 140;
                     continue _fun2469
                 }
             case 39:
@@ -41,10 +41,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = new var11[var1](var10);
                 var1 = var1 instanceof Object ? var1 : var5;
                 if (!var2) {
-                    _fun2469_ip = 136;
+                    _fun2469_ip = 138;
                     continue _fun2469
                 }
-            case 105:
+            case 107:
                 var5 = _closure1_slot0;
                 var6 = _closure1_slot1;
                 var3 = 1;
@@ -52,9 +52,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var5.bind(var4)(var3);
                 var2 = var2.prototype;
                 var2 = var3.bind(var4)(var1, var2);
-            case 136:
-                return var1;
             case 138:
+                return var1;
+            case 140:
                 var1 = global;
                 var1 = var1.Reflect;
                 var3 = var1.construct;

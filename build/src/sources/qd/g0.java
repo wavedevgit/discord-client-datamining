@@ -164,7 +164,7 @@ public final class g0 implements p, tc.m, i.b, i.f, l0.d {
 
         /* JADX INFO: Access modifiers changed from: private */
         public void j(long j10, long j11) {
-            this.f47587g.f50001a = j10;
+            this.f47587g.f49998a = j10;
             this.f47590j = j11;
             this.f47589i = true;
             this.f47593m = false;
@@ -191,7 +191,7 @@ public final class g0 implements p, tc.m, i.b, i.f, l0.d {
             int i10 = 0;
             while (i10 == 0 && !this.f47588h) {
                 try {
-                    long j10 = this.f47587g.f50001a;
+                    long j10 = this.f47587g.f49998a;
                     com.google.android.exoplayer2.upstream.a i11 = i(j10);
                     this.f47591k = i11;
                     long b10 = this.f47583c.b(i11);
@@ -233,12 +233,12 @@ public final class g0 implements p, tc.m, i.b, i.f, l0.d {
                     if (i10 == 1) {
                         i10 = 0;
                     } else if (this.f47584d.d() != -1) {
-                        this.f47587g.f50001a = this.f47584d.d();
+                        this.f47587g.f49998a = this.f47584d.d();
                     }
                     le.o.a(this.f47583c);
                 } catch (Throwable th2) {
                     if (i10 != 1 && this.f47584d.d() != -1) {
-                        this.f47587g.f50001a = this.f47584d.d();
+                        this.f47587g.f49998a = this.f47584d.d();
                     }
                     le.o.a(this.f47583c);
                     throw th2;
@@ -569,7 +569,7 @@ public final class g0 implements p, tc.m, i.b, i.f, l0.d {
             ne.a.g(P());
             long j10 = this.K;
             if (j10 == -9223372036854775807L || this.S <= j10) {
-                aVar.j(((tc.z) ne.a.e(this.J)).e(this.S).f50002a.f49899b, this.S);
+                aVar.j(((tc.z) ne.a.e(this.J)).e(this.S).f49999a.f49896b, this.S);
                 for (l0 l0Var : this.D) {
                     l0Var.a0(this.S);
                 }
@@ -746,7 +746,7 @@ public final class g0 implements p, tc.m, i.b, i.f, l0.d {
             return 0L;
         }
         z.a e10 = this.J.e(j10);
-        return t0Var.a(j10, e10.f50002a.f49898a, e10.f50003b.f49898a);
+        return t0Var.a(j10, e10.f49999a.f49895a, e10.f50000b.f49895a);
     }
 
     @Override // qd.p, qd.n0

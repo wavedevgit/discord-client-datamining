@@ -6,19 +6,19 @@ import xk.j;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private h f56059a;
+    private h f56056a;
 
     /* renamed from: b  reason: collision with root package name */
-    private xk.f f56060b;
+    private xk.f f56057b;
 
     /* renamed from: c  reason: collision with root package name */
-    private j f56061c;
+    private j f56058c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f56062d = -1;
+    private int f56059d = -1;
 
     /* renamed from: e  reason: collision with root package name */
-    private b f56063e;
+    private b f56060e;
 
     public static boolean b(int i10) {
         if (i10 >= 0 && i10 < 8) {
@@ -28,45 +28,45 @@ public final class g {
     }
 
     public b a() {
-        return this.f56063e;
+        return this.f56060e;
     }
 
     public void c(xk.f fVar) {
-        this.f56060b = fVar;
+        this.f56057b = fVar;
     }
 
     public void d(int i10) {
-        this.f56062d = i10;
+        this.f56059d = i10;
     }
 
     public void e(b bVar) {
-        this.f56063e = bVar;
+        this.f56060e = bVar;
     }
 
     public void f(h hVar) {
-        this.f56059a = hVar;
+        this.f56056a = hVar;
     }
 
     public void g(j jVar) {
-        this.f56061c = jVar;
+        this.f56058c = jVar;
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder((int) androidx.recyclerview.widget.h.DEFAULT_DRAG_ANIMATION_DURATION);
         sb2.append("<<\n");
         sb2.append(" mode: ");
-        sb2.append(this.f56059a);
+        sb2.append(this.f56056a);
         sb2.append("\n ecLevel: ");
-        sb2.append(this.f56060b);
+        sb2.append(this.f56057b);
         sb2.append("\n version: ");
-        sb2.append(this.f56061c);
+        sb2.append(this.f56058c);
         sb2.append("\n maskPattern: ");
-        sb2.append(this.f56062d);
-        if (this.f56063e == null) {
+        sb2.append(this.f56059d);
+        if (this.f56060e == null) {
             sb2.append("\n matrix: null\n");
         } else {
             sb2.append("\n matrix:\n");
-            sb2.append(this.f56063e);
+            sb2.append(this.f56060e);
         }
         sb2.append(">>\n");
         return sb2.toString();

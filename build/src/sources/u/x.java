@@ -8,19 +8,19 @@ import java.util.Comparator;
 public class x {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Size f50333b = new Size(320, 240);
+    private static final Size f50330b = new Size(320, 240);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Comparator f50334c = new b0.d();
+    private static final Comparator f50331c = new b0.d();
 
     /* renamed from: a  reason: collision with root package name */
-    private final RepeatingStreamConstraintForVideoRecordingQuirk f50335a = (RepeatingStreamConstraintForVideoRecordingQuirk) androidx.camera.camera2.internal.compat.quirk.b.b(RepeatingStreamConstraintForVideoRecordingQuirk.class);
+    private final RepeatingStreamConstraintForVideoRecordingQuirk f50332a = (RepeatingStreamConstraintForVideoRecordingQuirk) androidx.camera.camera2.internal.compat.quirk.b.b(RepeatingStreamConstraintForVideoRecordingQuirk.class);
 
     public Size[] a(Size[] sizeArr) {
-        if (this.f50335a != null && RepeatingStreamConstraintForVideoRecordingQuirk.c()) {
+        if (this.f50332a != null && RepeatingStreamConstraintForVideoRecordingQuirk.c()) {
             ArrayList arrayList = new ArrayList();
             for (Size size : sizeArr) {
-                if (f50334c.compare(size, f50333b) >= 0) {
+                if (f50331c.compare(size, f50330b) >= 0) {
                     arrayList.add(size);
                 }
             }

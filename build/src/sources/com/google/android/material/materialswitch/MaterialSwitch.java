@@ -17,10 +17,10 @@ import yg.j;
 public class MaterialSwitch extends SwitchCompat {
 
     /* renamed from: y  reason: collision with root package name */
-    private static final int f14814y = j.f54257k;
+    private static final int f14814y = j.f54254k;
 
     /* renamed from: z  reason: collision with root package name */
-    private static final int[] f14815z = {b.f54090f0};
+    private static final int[] f14815z = {b.f54087f0};
 
     /* renamed from: d  reason: collision with root package name */
     private Drawable f14816d;
@@ -294,33 +294,33 @@ public class MaterialSwitch extends SwitchCompat {
             android.content.res.ColorStateList r2 = super.getTrackTintList()
             r7.f14824t = r2
             super.setTrackTintList(r1)
-            int[] r2 = yg.k.f54443r4
+            int[] r2 = yg.k.f54440r4
             r6 = 0
             int[] r5 = new int[r6]
             r1 = r9
             r3 = r10
             androidx.appcompat.widget.v0 r9 = com.google.android.material.internal.l.j(r0, r1, r2, r3, r4, r5)
-            int r10 = yg.k.f54452s4
+            int r10 = yg.k.f54449s4
             android.graphics.drawable.Drawable r10 = r9.g(r10)
             r7.f14817e = r10
-            int r10 = yg.k.f54461t4
+            int r10 = yg.k.f54458t4
             int r10 = r9.f(r10, r8)
             r7.f14818i = r10
-            int r10 = yg.k.f54470u4
+            int r10 = yg.k.f54467u4
             android.content.res.ColorStateList r10 = r9.c(r10)
             r7.f14822r = r10
-            int r10 = yg.k.f54479v4
+            int r10 = yg.k.f54476v4
             int r10 = r9.k(r10, r8)
             android.graphics.PorterDuff$Mode r0 = android.graphics.PorterDuff.Mode.SRC_IN
             android.graphics.PorterDuff$Mode r10 = com.google.android.material.internal.o.i(r10, r0)
             r7.f14823s = r10
-            int r10 = yg.k.f54488w4
+            int r10 = yg.k.f54485w4
             android.graphics.drawable.Drawable r10 = r9.g(r10)
             r7.f14820p = r10
-            int r10 = yg.k.f54497x4
+            int r10 = yg.k.f54494x4
             android.content.res.ColorStateList r10 = r9.c(r10)
             r7.f14825u = r10
-            int r10 = yg.k.f54506y4
+            int r10 = yg.k.f54503y4
             int r8 = r9.k(r10, r8)
             android.graphics.PorterDuff$Mode r8 = com.google.android.material.internal.o.i(r8, r0)
             r7.f14826v = r8

@@ -11,8 +11,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         '__packager_asset': true,
         'httpServerLocation': '/assets/modules/holidays/assets',
         'scales': null,
-        'hash': '69a0ecf46982cea47de18b3e75dfe8f5',
-        'name': 'snowsgiving_loading_light',
+        'hash': '7209f284854b7ea1e5642c91fd2e43d4',
+        'name': 'snowsgiving_loading_dark',
         'type': 'webm'
     };
     var4 = [1];

@@ -8,22 +8,22 @@ import yo.e;
 public final class c implements wq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f50813a;
+    private final h f50810a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f50814b;
+    private final h f50811b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f50815c;
+    private final h f50812c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final h f50816d;
+    private final h f50813d;
 
     public c(h hVar, h hVar2, h hVar3, h hVar4) {
-        this.f50813a = hVar;
-        this.f50814b = hVar2;
-        this.f50815c = hVar3;
-        this.f50816d = hVar4;
+        this.f50810a = hVar;
+        this.f50811b = hVar2;
+        this.f50812c = hVar3;
+        this.f50813d = hVar4;
     }
 
     public static c a(h hVar, h hVar2, h hVar3, h hVar4) {
@@ -37,6 +37,6 @@ public final class c implements wq.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public a get() {
-        return c((Context) this.f50813a.get(), (e.a) this.f50814b.get(), (f) this.f50815c.get(), (CoroutineDispatcher) this.f50816d.get());
+        return c((Context) this.f50810a.get(), (e.a) this.f50811b.get(), (f) this.f50812c.get(), (CoroutineDispatcher) this.f50813d.get());
     }
 }

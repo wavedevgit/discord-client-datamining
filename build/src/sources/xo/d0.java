@@ -5,10 +5,10 @@ import androidx.activity.result.ActivityResultLauncher;
 public final class d0 implements wq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a0 f53511a;
+    private final a0 f53508a;
 
     public d0(a0 a0Var) {
-        this.f53511a = a0Var;
+        this.f53508a = a0Var;
     }
 
     public static d0 a(a0 a0Var) {
@@ -22,6 +22,6 @@ public final class d0 implements wq.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public ActivityResultLauncher get() {
-        return c(this.f53511a);
+        return c(this.f53508a);
     }
 }

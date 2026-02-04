@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var4.bind(var0)(var6);
     var7 = var8.createStyles;
     var6 = function(arg0) { // Environment: var1
-        _fun66278: for (var _fun66278_ip = 0;;) switch (_fun66278_ip) {
+        _fun66295: for (var _fun66295_ip = 0;;) switch (_fun66295_ip) {
             case 0:
                 var0 = {};
                 var1 = {};
@@ -64,8 +64,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = 'experimental_Small';
                 var4 = arg0;
                 if (!(var5 === var4)) {
-                    _fun66278_ip = 63;
-                    continue _fun66278
+                    _fun66295_ip = 63;
+                    continue _fun66295
                 }
             case 60:
                 var2 = var3;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/SegmentedControl/native/SegmentedControlItem.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun66279: for (var _fun66279_ip = 0;;) switch (_fun66279_ip) {
+        _fun66296: for (var _fun66296_ip = 0;;) switch (_fun66296_ip) {
             case 0:
                 var2 = arg0;
                 var10 = var2.label;
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var9.bind(var3)(var1);
                 var1 = var2.useAnimatedStyle;
                 var0 = function() {
-                    _fun66281: for (var _fun66281_ip = 0;;) switch (_fun66281_ip) {
+                    _fun66298: for (var _fun66298_ip = 0;;) switch (_fun66298_ip) {
                         case 0:
                             var1 = _closure2_slot3;
                             var5 = var1.inactive;
@@ -183,29 +183,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1.bind(var8)();
                             var1 = var6.bind(var7)(var1);
                             if (!(var4 !== var2)) {
-                                _fun66281_ip = 111;
-                                continue _fun66281
+                                _fun66298_ip = 111;
+                                continue _fun66298
                             }
                         case 80:
                             if (var3) {
-                                _fun66281_ip = 99;
-                                continue _fun66281
+                                _fun66298_ip = 99;
+                                continue _fun66298
                             }
                         case 83:
                             if (!(var1 === var2)) {
-                                _fun66281_ip = 121;
-                                continue _fun66281
+                                _fun66298_ip = 121;
+                                continue _fun66298
                             }
                         case 87:
                             var1 = _closure2_slot3;
                             var5 = var1.active;
-                            _fun66281_ip = 121;
-                            continue _fun66281;
+                            _fun66298_ip = 121;
+                            continue _fun66298;
                         case 99:
                             var1 = _closure2_slot3;
                             var5 = var1.inactive;
-                            _fun66281_ip = 121;
-                            continue _fun66281;
+                            _fun66298_ip = 121;
+                            continue _fun66298;
                         case 111:
                             var0 = _closure2_slot3;
                             var5 = var0.pressed;
@@ -278,8 +278,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = 'experimental_Large';
                 var11 = undefined;
                 if (!(var12 === var13)) {
-                    _fun66279_ip = 397;
-                    continue _fun66279
+                    _fun66296_ip = 397;
+                    continue _fun66296
                 }
             case 387:
                 var11 = 1.5;
@@ -297,4 +297,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.SegmentedControlItem = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 8190, 3720, 4081, 3941, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 8193, 3720, 4081, 3941, 2]);

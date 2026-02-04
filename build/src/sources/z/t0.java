@@ -13,55 +13,55 @@ import java.util.Objects;
 public final class t0 implements androidx.camera.core.n {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Object f55451d;
+    private final Object f55448d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f55452e;
+    private final int f55449e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f55453i;
+    private final int f55450i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Rect f55454o;
+    private final Rect f55451o;
 
     /* renamed from: p  reason: collision with root package name */
-    n.a[] f55455p;
+    n.a[] f55452p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final x.p0 f55456q;
+    private final x.p0 f55453q;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public class a implements n.a {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ int f55457a;
+        final /* synthetic */ int f55454a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ int f55458b;
+        final /* synthetic */ int f55455b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ ByteBuffer f55459c;
+        final /* synthetic */ ByteBuffer f55456c;
 
         a(int i10, int i11, ByteBuffer byteBuffer) {
-            this.f55457a = i10;
-            this.f55458b = i11;
-            this.f55459c = byteBuffer;
+            this.f55454a = i10;
+            this.f55455b = i11;
+            this.f55456c = byteBuffer;
         }
 
         @Override // androidx.camera.core.n.a
         public ByteBuffer e() {
-            return this.f55459c;
+            return this.f55456c;
         }
 
         @Override // androidx.camera.core.n.a
         public int f() {
-            return this.f55457a;
+            return this.f55454a;
         }
 
         @Override // androidx.camera.core.n.a
         public int g() {
-            return this.f55458b;
+            return this.f55455b;
         }
     }
 
@@ -70,23 +70,23 @@ public final class t0 implements androidx.camera.core.n {
     public class b implements x.p0 {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ long f55460a;
+        final /* synthetic */ long f55457a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ int f55461b;
+        final /* synthetic */ int f55458b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ Matrix f55462c;
+        final /* synthetic */ Matrix f55459c;
 
         b(long j10, int i10, Matrix matrix) {
-            this.f55460a = j10;
-            this.f55461b = i10;
-            this.f55462c = matrix;
+            this.f55457a = j10;
+            this.f55458b = i10;
+            this.f55459c = matrix;
         }
 
         @Override // x.p0
         public long a() {
-            return this.f55460a;
+            return this.f55457a;
         }
 
         @Override // x.p0
@@ -101,7 +101,7 @@ public final class t0 implements androidx.camera.core.n {
 
         @Override // x.p0
         public int d() {
-            return this.f55461b;
+            return this.f55458b;
         }
     }
 
@@ -111,8 +111,8 @@ public final class t0 implements androidx.camera.core.n {
 
     private void a() {
         boolean z10;
-        synchronized (this.f55451d) {
-            if (this.f55455p != null) {
+        synchronized (this.f55448d) {
+            if (this.f55452p != null) {
                 z10 = true;
             } else {
                 z10 = false;
@@ -131,7 +131,7 @@ public final class t0 implements androidx.camera.core.n {
 
     @Override // androidx.camera.core.n
     public Image A() {
-        synchronized (this.f55451d) {
+        synchronized (this.f55448d) {
             a();
         }
         return null;
@@ -139,18 +139,18 @@ public final class t0 implements androidx.camera.core.n {
 
     @Override // androidx.camera.core.n, java.lang.AutoCloseable
     public void close() {
-        synchronized (this.f55451d) {
+        synchronized (this.f55448d) {
             a();
-            this.f55455p = null;
+            this.f55452p = null;
         }
     }
 
     @Override // androidx.camera.core.n
     public n.a[] d1() {
         n.a[] aVarArr;
-        synchronized (this.f55451d) {
+        synchronized (this.f55448d) {
             a();
-            n.a[] aVarArr2 = this.f55455p;
+            n.a[] aVarArr2 = this.f55452p;
             Objects.requireNonNull(aVarArr2);
             aVarArr = aVarArr2;
         }
@@ -159,7 +159,7 @@ public final class t0 implements androidx.camera.core.n {
 
     @Override // androidx.camera.core.n
     public int getFormat() {
-        synchronized (this.f55451d) {
+        synchronized (this.f55448d) {
             a();
         }
         return 1;
@@ -168,9 +168,9 @@ public final class t0 implements androidx.camera.core.n {
     @Override // androidx.camera.core.n
     public int getHeight() {
         int i10;
-        synchronized (this.f55451d) {
+        synchronized (this.f55448d) {
             a();
-            i10 = this.f55453i;
+            i10 = this.f55450i;
         }
         return i10;
     }
@@ -178,9 +178,9 @@ public final class t0 implements androidx.camera.core.n {
     @Override // androidx.camera.core.n
     public int getWidth() {
         int i10;
-        synchronized (this.f55451d) {
+        synchronized (this.f55448d) {
             a();
-            i10 = this.f55452e;
+            i10 = this.f55449e;
         }
         return i10;
     }
@@ -188,20 +188,20 @@ public final class t0 implements androidx.camera.core.n {
     @Override // androidx.camera.core.n
     public x.p0 z() {
         x.p0 p0Var;
-        synchronized (this.f55451d) {
+        synchronized (this.f55448d) {
             a();
-            p0Var = this.f55456q;
+            p0Var = this.f55453q;
         }
         return p0Var;
     }
 
     @Override // androidx.camera.core.n
     public void z0(Rect rect) {
-        synchronized (this.f55451d) {
+        synchronized (this.f55448d) {
             try {
                 a();
                 if (rect != null) {
-                    this.f55454o.set(rect);
+                    this.f55451o.set(rect);
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -214,12 +214,12 @@ public final class t0 implements androidx.camera.core.n {
     }
 
     public t0(ByteBuffer byteBuffer, int i10, int i11, int i12, Rect rect, int i13, Matrix matrix, long j10) {
-        this.f55451d = new Object();
-        this.f55452e = i11;
-        this.f55453i = i12;
-        this.f55454o = rect;
-        this.f55456q = h(j10, i13, matrix);
+        this.f55448d = new Object();
+        this.f55449e = i11;
+        this.f55450i = i12;
+        this.f55451o = rect;
+        this.f55453q = h(j10, i13, matrix);
         byteBuffer.rewind();
-        this.f55455p = new n.a[]{l(byteBuffer, i11 * i10, i10)};
+        this.f55452p = new n.a[]{l(byteBuffer, i11 * i10, i10)};
     }
 }

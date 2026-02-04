@@ -13,10 +13,10 @@ public abstract class e {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Function0 f50837a;
+        final /* synthetic */ Function0 f50834a;
 
         a(Function0 function0) {
-            this.f50837a = function0;
+            this.f50834a = function0;
         }
     }
 

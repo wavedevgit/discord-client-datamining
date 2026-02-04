@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = exports;
     var6 = dependencyMap;
     var0 = function() {
-        _fun45749: for (var _fun45749_ip = 0;;) switch (_fun45749_ip) {
+        _fun45752: for (var _fun45752_ip = 0;;) switch (_fun45752_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -25,8 +25,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun45749_ip = 74;
-                continue _fun45749;
+                _fun45752_ip = 74;
+                continue _fun45752;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -79,7 +79,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
         var2 = function arg0() {
-            _fun45753: for (var _fun45753_ip = 0;;) switch (_fun45753_ip) {
+            _fun45756: for (var _fun45756_ip = 0;;) switch (_fun45756_ip) {
                 case 0:
                     var1 = arg0;
                     var4 = this;
@@ -103,14 +103,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = _closure1_slot5;
                     var0 = var0.bind(var3)();
                     if (var0) {
-                        _fun45753_ip = 113;
-                        continue _fun45753
+                        _fun45756_ip = 113;
+                        continue _fun45756
                     }
                 case 100:
                     var0 = var8.apply;
                     var0 = var0.bind(var8)(var4, var9);
-                    _fun45753_ip = 145;
-                    continue _fun45753;
+                    _fun45756_ip = 145;
+                    continue _fun45756;
                 case 113:
                     var7 = var6.Reflect;
                     var6 = var7.construct;

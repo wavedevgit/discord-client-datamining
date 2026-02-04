@@ -117,7 +117,7 @@ public abstract class Timeline implements g {
         public boolean f11596q;
 
         /* renamed from: r  reason: collision with root package name */
-        private rd.c f11597r = rd.c.f48776r;
+        private rd.c f11597r = rd.c.f48773r;
 
         /* JADX INFO: Access modifiers changed from: private */
         public static b c(Bundle bundle) {
@@ -128,9 +128,9 @@ public abstract class Timeline implements g {
             boolean z10 = bundle.getBoolean(f11588v, false);
             Bundle bundle2 = bundle.getBundle(f11589w);
             if (bundle2 != null) {
-                cVar = (rd.c) rd.c.f48782x.a(bundle2);
+                cVar = (rd.c) rd.c.f48779x.a(bundle2);
             } else {
-                cVar = rd.c.f48776r;
+                cVar = rd.c.f48773r;
             }
             rd.c cVar2 = cVar;
             b bVar = new b();
@@ -139,13 +139,13 @@ public abstract class Timeline implements g {
         }
 
         public int d(int i10) {
-            return this.f11597r.c(i10).f48797e;
+            return this.f11597r.c(i10).f48794e;
         }
 
         public long e(int i10, int i11) {
             c.a c10 = this.f11597r.c(i10);
-            if (c10.f48797e != -1) {
-                return c10.f48801q[i11];
+            if (c10.f48794e != -1) {
+                return c10.f48798q[i11];
             }
             return -9223372036854775807L;
         }
@@ -164,7 +164,7 @@ public abstract class Timeline implements g {
         }
 
         public int f() {
-            return this.f11597r.f48784e;
+            return this.f11597r.f48781e;
         }
 
         public int g(long j10) {
@@ -195,23 +195,23 @@ public abstract class Timeline implements g {
         }
 
         public long i(int i10) {
-            return this.f11597r.c(i10).f48796d;
+            return this.f11597r.c(i10).f48793d;
         }
 
         public long j() {
-            return this.f11597r.f48785i;
+            return this.f11597r.f48782i;
         }
 
         public int k(int i10, int i11) {
             c.a c10 = this.f11597r.c(i10);
-            if (c10.f48797e != -1) {
-                return c10.f48800p[i11];
+            if (c10.f48794e != -1) {
+                return c10.f48797p[i11];
             }
             return 0;
         }
 
         public long l(int i10) {
-            return this.f11597r.c(i10).f48802r;
+            return this.f11597r.c(i10).f48799r;
         }
 
         public long m() {
@@ -235,7 +235,7 @@ public abstract class Timeline implements g {
         }
 
         public int r() {
-            return this.f11597r.f48787p;
+            return this.f11597r.f48784p;
         }
 
         public boolean s(int i10) {
@@ -250,11 +250,11 @@ public abstract class Timeline implements g {
         }
 
         public boolean u(int i10) {
-            return this.f11597r.c(i10).f48803s;
+            return this.f11597r.c(i10).f48800s;
         }
 
         public b v(Object obj, Object obj2, int i10, long j10, long j11) {
-            return w(obj, obj2, i10, j10, j11, rd.c.f48776r, false);
+            return w(obj, obj2, i10, j10, j11, rd.c.f48773r, false);
         }
 
         public b w(Object obj, Object obj2, int i10, long j10, long j11, rd.c cVar, boolean z10) {

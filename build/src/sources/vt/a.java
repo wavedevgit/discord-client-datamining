@@ -12,46 +12,46 @@ import java.nio.channels.FileChannel;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static boolean f51752a = false;
+    public static boolean f51749a = false;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final int f51753b = d(new byte[]{102, 114, 101, 101});
+    private static final int f51750b = d(new byte[]{102, 114, 101, 101});
 
     /* renamed from: c  reason: collision with root package name */
-    private static final int f51754c = d(new byte[]{106, 117, 110, 107});
+    private static final int f51751c = d(new byte[]{106, 117, 110, 107});
 
     /* renamed from: d  reason: collision with root package name */
-    private static final int f51755d = d(new byte[]{109, 100, 97, 116});
+    private static final int f51752d = d(new byte[]{109, 100, 97, 116});
 
     /* renamed from: e  reason: collision with root package name */
-    private static final int f51756e = d(new byte[]{109, 111, 111, 118});
+    private static final int f51753e = d(new byte[]{109, 111, 111, 118});
 
     /* renamed from: f  reason: collision with root package name */
-    private static final int f51757f = d(new byte[]{112, 110, 111, 116});
+    private static final int f51754f = d(new byte[]{112, 110, 111, 116});
 
     /* renamed from: g  reason: collision with root package name */
-    private static final int f51758g = d(new byte[]{115, 107, 105, 112});
+    private static final int f51755g = d(new byte[]{115, 107, 105, 112});
 
     /* renamed from: h  reason: collision with root package name */
-    private static final int f51759h = d(new byte[]{119, 105, 100, 101});
+    private static final int f51756h = d(new byte[]{119, 105, 100, 101});
 
     /* renamed from: i  reason: collision with root package name */
-    private static final int f51760i = d(new byte[]{80, 73, 67, 84});
+    private static final int f51757i = d(new byte[]{80, 73, 67, 84});
 
     /* renamed from: j  reason: collision with root package name */
-    private static final int f51761j = d(new byte[]{102, 116, 121, 112});
+    private static final int f51758j = d(new byte[]{102, 116, 121, 112});
 
     /* renamed from: k  reason: collision with root package name */
-    private static final int f51762k = d(new byte[]{117, 117, 105, 100});
+    private static final int f51759k = d(new byte[]{117, 117, 105, 100});
 
     /* renamed from: l  reason: collision with root package name */
-    private static final int f51763l = d(new byte[]{99, 109, 111, 118});
+    private static final int f51760l = d(new byte[]{99, 109, 111, 118});
 
     /* renamed from: m  reason: collision with root package name */
-    private static final int f51764m = d(new byte[]{115, 116, 99, 111});
+    private static final int f51761m = d(new byte[]{115, 116, 99, 111});
 
     /* renamed from: n  reason: collision with root package name */
-    private static final int f51765n = d(new byte[]{99, 111, 54, 52});
+    private static final int f51762n = d(new byte[]{99, 111, 54, 52});
 
     /* renamed from: vt.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -121,7 +121,7 @@ public abstract class a {
     }
 
     private static void e(String str, Object... objArr) {
-        if (f51752a) {
+        if (f51749a) {
             PrintStream printStream = System.err;
             printStream.println("QtFastStart: " + String.format(str, objArr));
         }

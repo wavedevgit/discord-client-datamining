@@ -13,24 +13,24 @@ public final class a implements Parcelable {
     public static final Parcelable.Creator<a> CREATOR;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f50202d = new a("REQUIRED", 0);
+    public static final a f50199d = new a("REQUIRED", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f50203e = new a("OPTIONAL", 1);
+    public static final a f50200e = new a("OPTIONAL", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f50204i = new a("NONE", 2);
+    public static final a f50201i = new a("NONE", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ a[] f50205o;
+    private static final /* synthetic */ a[] f50202o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f50206p;
+    private static final /* synthetic */ EnumEntries f50203p;
 
     static {
         a[] a10 = a();
-        f50205o = a10;
-        f50206p = sr.a.a(a10);
+        f50202o = a10;
+        f50203p = sr.a.a(a10);
         CREATOR = new Parcelable.Creator() { // from class: tp.a.a
             @Override // android.os.Parcelable.Creator
             /* renamed from: a */
@@ -51,7 +51,7 @@ public final class a implements Parcelable {
     }
 
     private static final /* synthetic */ a[] a() {
-        return new a[]{f50202d, f50203e, f50204i};
+        return new a[]{f50199d, f50200e, f50201i};
     }
 
     public static a valueOf(String str) {
@@ -59,7 +59,7 @@ public final class a implements Parcelable {
     }
 
     public static a[] values() {
-        return (a[]) f50205o.clone();
+        return (a[]) f50202o.clone();
     }
 
     @Override // android.os.Parcelable

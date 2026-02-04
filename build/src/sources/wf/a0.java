@@ -9,25 +9,25 @@ public class a0 extends hf.a {
     public static final Parcelable.Creator<a0> CREATOR = new b1();
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f52235d;
+    private final boolean f52232d;
 
     public a0(boolean z10) {
-        this.f52235d = z10;
+        this.f52232d = z10;
     }
 
     public boolean b() {
-        return this.f52235d;
+        return this.f52232d;
     }
 
     public boolean equals(Object obj) {
-        if (!(obj instanceof a0) || this.f52235d != ((a0) obj).f52235d) {
+        if (!(obj instanceof a0) || this.f52232d != ((a0) obj).f52232d) {
             return false;
         }
         return true;
     }
 
     public int hashCode() {
-        return gf.o.b(Boolean.valueOf(this.f52235d));
+        return gf.o.b(Boolean.valueOf(this.f52232d));
     }
 
     @Override // android.os.Parcelable

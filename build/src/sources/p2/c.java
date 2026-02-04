@@ -407,7 +407,7 @@ public final class c extends m2.b {
                 m2.b.e(this.f44853j, new d());
                 return;
             }
-            a.c cVar = r2.a.f48347a;
+            a.c cVar = r2.a.f48344a;
             d0 b10 = cVar.b(intent);
             if (b10 != null) {
                 m2.b.e(this.f44853j, new e(b10));
@@ -427,7 +427,7 @@ public final class c extends m2.b {
         if (CredentialProviderPlayServicesImpl.Companion.a(cancellationSignal)) {
             return;
         }
-        Task i10 = xf.f.f53260a.a(this.f44850g).i(p(request));
+        Task i10 = xf.f.f53257a.a(this.f44850g).i(p(request));
         final g gVar = new g(cancellationSignal, this);
         i10.g(new wg.g() { // from class: p2.a
             @Override // wg.g

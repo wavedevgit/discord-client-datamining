@@ -29,23 +29,23 @@ import yn.r2;
 public final class t implements ym.k {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f55021c = new a(null);
+    public static final a f55018c = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final zn.c f55022b;
+    private final zn.c f55019b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements ym.c0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ ym.c0 f55023a;
+        private final /* synthetic */ ym.c0 f55020a;
 
         /* renamed from: yn.t$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         /* synthetic */ class C0764a extends FunctionReferenceImpl implements Function3 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final C0764a f55024d = new C0764a();
+            public static final C0764a f55021d = new C0764a();
 
             C0764a() {
                 super(3, zn.c.class, "inflate", "inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/withpersona/sdk2/inquiry/document/databinding/Pi2DocumentReviewBinding;", 0);
@@ -66,7 +66,7 @@ public final class t implements ym.k {
         /* synthetic */ class b extends FunctionReferenceImpl implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final b f55025d = new b();
+            public static final b f55022d = new b();
 
             b() {
                 super(1, t.class, "<init>", "<init>(Lcom/withpersona/sdk2/inquiry/document/databinding/Pi2DocumentReviewBinding;)V", 0);
@@ -90,23 +90,23 @@ public final class t implements ym.k {
             Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
             Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
             Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-            return this.f55023a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+            return this.f55020a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
         }
 
         @Override // ym.c0
         public KClass getType() {
-            return this.f55023a.getType();
+            return this.f55020a.getType();
         }
 
         private a() {
-            k.a aVar = ym.k.f54648a;
-            this.f55023a = new ym.z(Reflection.getOrCreateKotlinClass(r2.d.b.class), C0764a.f55024d, b.f55025d);
+            k.a aVar = ym.k.f54645a;
+            this.f55020a = new ym.z(Reflection.getOrCreateKotlinClass(r2.d.b.class), C0764a.f55021d, b.f55022d);
         }
     }
 
     public t(zn.c binding) {
         Intrinsics.checkNotNullParameter(binding, "binding");
-        this.f55022b = binding;
+        this.f55019b = binding;
         CoordinatorLayout root = binding.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         wp.f.d(root, false, false, false, false, 15, null);
@@ -121,37 +121,37 @@ public final class t implements ym.k {
         Integer backgroundColorValue;
         if (documentStepStyle != null && (backgroundColorValue = documentStepStyle.getBackgroundColorValue()) != null) {
             int intValue = backgroundColorValue.intValue();
-            this.f55022b.getRoot().setBackgroundColor(intValue);
+            this.f55019b.getRoot().setBackgroundColor(intValue);
             vp.c.a(a0Var, intValue);
         }
         if (documentStepStyle != null) {
-            Context context = this.f55022b.getRoot().getContext();
+            Context context = this.f55019b.getRoot().getContext();
             Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
             Drawable a10 = hq.c.a(documentStepStyle, context);
             if (a10 != null) {
-                this.f55022b.getRoot().setBackground(a10);
+                this.f55019b.getRoot().setBackground(a10);
             }
         }
         if (documentStepStyle != null && (headerButtonColorValue = documentStepStyle.getHeaderButtonColorValue()) != null) {
-            this.f55022b.f56100f.setControlsColor(headerButtonColorValue.intValue());
+            this.f55019b.f56097f.setControlsColor(headerButtonColorValue.intValue());
         }
         if (documentStepStyle != null && (titleStyleValue = documentStepStyle.getTitleStyleValue()) != null) {
-            TextView title = this.f55022b.f56104j;
+            TextView title = this.f55019b.f56101j;
             Intrinsics.checkNotNullExpressionValue(title, "title");
             fq.f0.n(title, titleStyleValue, null, 2, null);
         }
         if (documentStepStyle != null && (textStyleValue = documentStepStyle.getTextStyleValue()) != null) {
-            TextView body = this.f55022b.f56096b;
+            TextView body = this.f55019b.f56093b;
             Intrinsics.checkNotNullExpressionValue(body, "body");
             fq.f0.n(body, textStyleValue, null, 2, null);
         }
         if (documentStepStyle != null && (disclaimerStyleValue = documentStepStyle.getDisclaimerStyleValue()) != null) {
-            TextView disclaimer = this.f55022b.f56098d;
+            TextView disclaimer = this.f55019b.f56095d;
             Intrinsics.checkNotNullExpressionValue(disclaimer, "disclaimer");
             fq.f0.n(disclaimer, disclaimerStyleValue, null, 2, null);
         }
         if (documentStepStyle != null && (buttonPrimaryStyleValue = documentStepStyle.getButtonPrimaryStyleValue()) != null) {
-            Button submitButton = this.f55022b.f56103i;
+            Button submitButton = this.f55019b.f56100i;
             Intrinsics.checkNotNullExpressionValue(submitButton, "submitButton");
             fq.e.f(submitButton, buttonPrimaryStyleValue, false, false, 6, null);
         }
@@ -190,20 +190,20 @@ public final class t implements ym.k {
         boolean z10;
         Intrinsics.checkNotNullParameter(rendering, "rendering");
         Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-        zn.c cVar = this.f55022b;
-        cVar.f56104j.setText(rendering.r());
+        zn.c cVar = this.f55019b;
+        cVar.f56101j.setText(rendering.r());
         String n10 = rendering.n();
         if (n10 != null) {
-            dr.e.b(this.f55022b.getRoot().getContext()).c(cVar.f56096b, n10);
+            dr.e.b(this.f55019b.getRoot().getContext()).c(cVar.f56093b, n10);
         }
-        cVar.f56098d.setText(rendering.c());
-        if (cVar.f56101g.getAdapter() == null) {
-            Context context = this.f55022b.getRoot().getContext();
+        cVar.f56095d.setText(rendering.c());
+        if (cVar.f56098g.getAdapter() == null) {
+            Context context = this.f55019b.getRoot().getContext();
             Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
             xVar = new x(context, rendering.f(), rendering.m(), rendering.o());
-            cVar.f56101g.setAdapter(xVar);
+            cVar.f56098g.setAdapter(xVar);
         } else {
-            RecyclerView.Adapter adapter = cVar.f56101g.getAdapter();
+            RecyclerView.Adapter adapter = cVar.f56098g.getAdapter();
             Intrinsics.checkNotNull(adapter, "null cannot be cast to non-null type com.withpersona.sdk2.inquiry.document.DocumentTileAdapter");
             xVar = (x) adapter;
         }
@@ -221,9 +221,9 @@ public final class t implements ym.k {
                 return h10;
             }
         });
-        cVar.f56103i.setText(rendering.q());
-        cVar.f56103i.setEnabled(rendering.p());
-        cVar.f56103i.setOnClickListener(new View.OnClickListener() { // from class: yn.q
+        cVar.f56100i.setText(rendering.q());
+        cVar.f56100i.setEnabled(rendering.p());
+        cVar.f56100i.setOnClickListener(new View.OnClickListener() { // from class: yn.q
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 t.i(r2.d.b.this, view);
@@ -246,14 +246,14 @@ public final class t implements ym.k {
                 return k10;
             }
         };
-        Pi2NavigationBar navigationBar = cVar.f56100f;
+        Pi2NavigationBar navigationBar = cVar.f56097f;
         Intrinsics.checkNotNullExpressionValue(navigationBar, "navigationBar");
         CoordinatorLayout root = cVar.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         up.e.b(g10, function0, function02, navigationBar, root);
-        CoordinatorLayout root2 = this.f55022b.getRoot();
+        CoordinatorLayout root2 = this.f55019b.getRoot();
         Intrinsics.checkNotNullExpressionValue(root2, "getRoot(...)");
-        mp.z.a(root2, rendering.e(), rendering.j(), this.f55022b.f56103i, 4, 10000);
+        mp.z.a(root2, rendering.e(), rendering.j(), this.f55019b.f56100i, 4, 10000);
         f(rendering.o(), viewEnvironment);
     }
 }

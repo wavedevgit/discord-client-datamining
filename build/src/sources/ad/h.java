@@ -101,7 +101,7 @@ final class h implements g {
     public z.a e(long j10) {
         int i10 = w0.i(this.f504a, j10, true, true);
         a0 a0Var = new a0(this.f504a[i10], this.f505b[i10]);
-        if (a0Var.f49898a < j10 && i10 != this.f504a.length - 1) {
+        if (a0Var.f49895a < j10 && i10 != this.f504a.length - 1) {
             int i11 = i10 + 1;
             return new z.a(a0Var, new a0(this.f504a[i11], this.f505b[i11]));
         }

@@ -25,12 +25,12 @@ public class k extends g {
     public PointF j(y5.a aVar, float f10, float f11, float f12) {
         Object obj;
         PointF pointF;
-        Object obj2 = aVar.f53743b;
-        if (obj2 != null && (obj = aVar.f53744c) != null) {
+        Object obj2 = aVar.f53740b;
+        if (obj2 != null && (obj = aVar.f53741c) != null) {
             PointF pointF2 = (PointF) obj2;
             PointF pointF3 = (PointF) obj;
             y5.c cVar = this.f42353e;
-            if (cVar != null && (pointF = (PointF) cVar.b(aVar.f53748g, aVar.f53749h.floatValue(), pointF2, pointF3, f10, e(), f())) != null) {
+            if (cVar != null && (pointF = (PointF) cVar.b(aVar.f53745g, aVar.f53746h.floatValue(), pointF2, pointF3, f10, e(), f())) != null) {
                 return pointF;
             }
             PointF pointF4 = this.f42383i;

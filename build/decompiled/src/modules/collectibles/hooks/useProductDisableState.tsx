@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/collectibles/hooks/useProductDisableState.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun87617: for (var _fun87617_ip = 0;;) switch (_fun87617_ip) {
+        _fun87634: for (var _fun87634_ip = 0;;) switch (_fun87634_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(1);
                 var4[0] = var0;
                 var0 = function() { // Environment: var0
-                    _fun87618: for (var _fun87618_ip = 0;;) switch (_fun87618_ip) {
+                    _fun87635: for (var _fun87635_ip = 0;;) switch (_fun87635_ip) {
                         case 0:
                             var1 = _closure1_slot2;
                             var0 = var1.getPremiumSubscription;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var1 == var0;
                             var1 = undefined;
                             if (var2) {
-                                _fun87618_ip = 34;
-                                continue _fun87618
+                                _fun87635_ip = 34;
+                                continue _fun87635
                             }
                         case 28:
                             var1 = var0.isPurchasedExternally;
@@ -68,23 +68,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.PREMIUM_TIER_2_3_DAY;
                 var0 = arg0;
                 if (!(var0 !== var1)) {
-                    _fun87617_ip = 104;
-                    continue _fun87617
+                    _fun87634_ip = 104;
+                    continue _fun87634
                 }
             case 88:
                 var0 = {
                     'isDisabled': false,
                     'disabledReason': null
                 };
-                _fun87617_ip = 181;
-                continue _fun87617;
+                _fun87634_ip = 181;
+                continue _fun87634;
             case 104:
                 var1 = {};
                 var1.isDisabled = var4;
                 var2 = null;
                 if (!var4) {
-                    _fun87617_ip = 173;
-                    continue _fun87617
+                    _fun87634_ip = 173;
+                    continue _fun87634
                 }
             case 116:
                 var6 = _closure1_slot0;

@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 public class d extends Property {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final Property f55950a = new d("childrenAlpha");
+    public static final Property f55947a = new d("childrenAlpha");
 
     private d(String str) {
         super(Float.class, str);

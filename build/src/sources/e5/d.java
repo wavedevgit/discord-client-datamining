@@ -243,7 +243,7 @@ public final class d {
     }
 
     public final q g(b.a aVar, g5.h hVar, c.b bVar, c.C0277c c0277c) {
-        return new q(new BitmapDrawable(hVar.l().getResources(), c0277c.a()), hVar, x4.h.f53111d, bVar, b(c0277c), d(c0277c), k.t(aVar));
+        return new q(new BitmapDrawable(hVar.l().getResources(), c0277c.a()), hVar, x4.h.f53108d, bVar, b(c0277c), d(c0277c), k.t(aVar));
     }
 
     public final boolean h(c.b bVar, g5.h hVar, a.b bVar2) {

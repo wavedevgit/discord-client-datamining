@@ -10,22 +10,22 @@ import us.o;
 public final class l extends us.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ws.f f50944a;
+    private final ws.f f50941a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a implements b, d, e, o.b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ws.d f50945a;
+        private final ws.d f50942a;
 
         public a(ws.d actualBuilder) {
             Intrinsics.checkNotNullParameter(actualBuilder, "actualBuilder");
-            this.f50945a = actualBuilder;
+            this.f50942a = actualBuilder;
         }
 
         @Override // us.b
         public ws.d a() {
-            return this.f50945a;
+            return this.f50942a;
         }
 
         @Override // us.b
@@ -150,19 +150,19 @@ public final class l extends us.a {
     public l(ws.f actualFormat) {
         super(null);
         Intrinsics.checkNotNullParameter(actualFormat, "actualFormat");
-        this.f50944a = actualFormat;
+        this.f50941a = actualFormat;
     }
 
     @Override // us.a
     public ws.f b() {
-        return this.f50944a;
+        return this.f50941a;
     }
 
     @Override // us.a
     /* renamed from: e */
     public k c() {
         k kVar;
-        kVar = m.f50960b;
+        kVar = m.f50957b;
         return kVar;
     }
 

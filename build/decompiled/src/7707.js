@@ -1,157 +1,139 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var6 = require;
-    var7 = dependencyMap;
-    var0 = global;
-    var5 = var0.Object;
-    var4 = var5.assign;
-    var0 = 0;
-    var1 = var7[var0];
+    var1 = require;
+    var _closure1_slot0 = var1;
+    var1 = dependencyMap;
+    var _closure1_slot1 = var1;
+    var4 = function arg0, arg1, arg2, arg3, arg4, arg5() {
+        _fun61863: for (var _fun61863_ip = 0;;) switch (_fun61863_ip) {
+            case 0:
+                var2 = arg2;
+                var3 = arg3;
+                var7 = arg4;
+                var5 = arg5;
+                var0 = arg1;
+                var4 = var0[var2];
+                var6 = null;
+                if (!(var6 != var4)) {
+                    _fun61863_ip = 193;
+                    continue _fun61863
+                }
+            case 28:
+                var9 = typeof var4;
+                var8 = undefined;
+                var1 = 'number';
+                var0 = undefined;
+                if (!(var1 !== var9)) {
+                    _fun61863_ip = 191;
+                    continue _fun61863
+                }
+            case 46:
+                var1 = 'string';
+                var0 = undefined;
+                if (!(var1 === var9)) {
+                    _fun61863_ip = 191;
+                    continue _fun61863
+                }
+            case 59:
+                var9 = _closure1_slot0;
+                var10 = _closure1_slot1;
+                var1 = 0;
+                var1 = var10[var1];
+                var1 = var9.bind(var8)(var1);
+                var1 = var1.bind(var8)(var4);
+                var0 = undefined;
+                if (!(var6 === var1)) {
+                    _fun61863_ip = 191;
+                    continue _fun61863
+                }
+            case 92:
+                var1 = global;
+                var6 = var1.Error;
+                var1 = 'Invalid ';
+                var9 = var1 + var7;
+                var8 = var5;
+                if (var5) {
+                    _fun61863_ip = 119;
+                    continue _fun61863
+                }
+            case 116:
+                var8 = var2;
+            case 119:
+                var1 = ' `';
+                var1 = var9 + var1;
+                var8 = var1 + var8;
+                var1 = '` supplied to `';
+                var1 = var8 + var1;
+                var8 = var1 + var3;
+                var1 = '`: ';
+                var1 = var8 + var1;
+                var8 = var1 + var4;
+                var1 = var6.prototype;
+                var4 = Object.create(var1, {
+                    constructor: {
+                        value: var6
+                    }
+                });
+                var1 = "\nValid color formats are\n  - '#f0f' (#rgb)\n  - '#f0fc' (#rgba)\n  - '#ff00ff' (#rrggbb)\n  - '#ff00ff00' (#rrggbbaa)\n  - 'rgb(255, 255, 255)'\n  - 'rgba(255, 255, 255, 1.0)'\n  - 'hsl(360, 100%, 100%)'\n  - 'hsla(360, 100%, 100%, 1.0)'\n  - 'transparent'\n  - 'red'\n  - 0xff00ff00 (0xrrggbbaa)\n";
+                var11 = var8 + var1;
+                var12 = var4;
+                var1 = new var12[var6](var11, var10);
+                var0 = var1 instanceof Object ? var1 : var4;
+            case 191:
+                _fun61863_ip = 286;
+                continue _fun61863;
+            case 193:
+                var4 = arg0;
+                var1 = undefined;
+                if (!var4) {
+                    _fun61863_ip = 283;
+                    continue _fun61863
+                }
+            case 201:
+                var4 = global;
+                var4 = var4.Error;
+                var6 = 'Required ';
+                var6 = var6 + var7;
+                if (var5) {
+                    _fun61863_ip = 225;
+                    continue _fun61863
+                }
+            case 222:
+                var5 = var2;
+            case 225:
+                var2 = ' `';
+                var2 = var6 + var2;
+                var5 = var2 + var5;
+                var2 = '` was not specified in `';
+                var2 = var5 + var2;
+                var5 = var2 + var3;
+                var2 = var4.prototype;
+                var3 = Object.create(var2, {
+                    constructor: {
+                        value: var4
+                    }
+                });
+                var2 = '`.';
+                var11 = var5 + var2;
+                var12 = var3;
+                var2 = new var12[var4](var11, var10);
+                var1 = var2 instanceof Object ? var2 : var3;
+            case 283:
+                var0 = var1;
+            case 286:
+                return var0;
+        }
+    };
+    var1 = var4.bind;
+    var3 = null;
+    var0 = false;
+    var1 = var1.bind(var4)(var3, var0);
+    var2 = var4.bind;
+    var0 = true;
+    var0 = var2.bind(var4)(var3, var0);
+    var1.isRequired = var0;
+    var0 = arg4;
+    var0.exports = var1;
     var0 = undefined;
-    var3 = var6.bind(var0)(var1);
-    var2 = {};
-    var1 = 1;
-    var1 = var7[var1];
-    var8 = var6.bind(var0)(var1);
-    var1 = 2;
-    var1 = var7[var1];
-    var1 = var6.bind(var0)(var1);
-    var1 = var8.bind(var0)(var1);
-    var2.style = var1;
-    var1 = 3;
-    var8 = var7[var1];
-    var10 = var6.bind(var0)(var8);
-    var9 = var10.oneOfType;
-    var8 = var7[var1];
-    var12 = var6.bind(var0)(var8);
-    var11 = var12.shape;
-    var8 = {};
-    var13 = var7[var1];
-    var13 = var6.bind(var0)(var13);
-    var13 = var13.string;
-    var8.uri = var13;
-    var13 = var7[var1];
-    var15 = var6.bind(var0)(var13);
-    var14 = var15.objectOf;
-    var13 = var7[var1];
-    var13 = var6.bind(var0)(var13);
-    var13 = var13.string;
-    var13 = var14.bind(var15)(var13);
-    var8.headers = var13;
-    var11 = var11.bind(var12)(var8);
-    var8 = new Array(3);
-    var8[0] = var11;
-    var11 = var7[var1];
-    var11 = var6.bind(var0)(var11);
-    var11 = var11.number;
-    var8[1] = var11;
-    var11 = var7[var1];
-    var13 = var6.bind(var0)(var11);
-    var12 = var13.arrayOf;
-    var11 = var7[var1];
-    var15 = var6.bind(var0)(var11);
-    var14 = var15.shape;
-    var11 = {};
-    var16 = var7[var1];
-    var16 = var6.bind(var0)(var16);
-    var16 = var16.string;
-    var11.uri = var16;
-    var16 = var7[var1];
-    var16 = var6.bind(var0)(var16);
-    var16 = var16.number;
-    var11.width = var16;
-    var16 = var7[var1];
-    var16 = var6.bind(var0)(var16);
-    var16 = var16.number;
-    var11.height = var16;
-    var16 = var7[var1];
-    var18 = var6.bind(var0)(var16);
-    var17 = var18.objectOf;
-    var16 = var7[var1];
-    var16 = var6.bind(var0)(var16);
-    var16 = var16.string;
-    var16 = var17.bind(var18)(var16);
-    var11.headers = var16;
-    var11 = var14.bind(var15)(var11);
-    var11 = var12.bind(var13)(var11);
-    var8[2] = var11;
-    var8 = var9.bind(var10)(var8);
-    var2.source = var8;
-    var8 = var7[var1];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.number;
-    var2.blurRadius = var8;
-    var8 = var7[var1];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.number;
-    var2.defaultSource = var8;
-    var8 = var7[var1];
-    var10 = var6.bind(var0)(var8);
-    var9 = var10.oneOfType;
-    var8 = var7[var1];
-    var12 = var6.bind(var0)(var8);
-    var11 = var12.shape;
-    var8 = {};
-    var13 = var7[var1];
-    var13 = var6.bind(var0)(var13);
-    var13 = var13.string;
-    var8.uri = var13;
-    var11 = var11.bind(var12)(var8);
-    var8 = new Array(2);
-    var8[0] = var11;
-    var11 = var7[var1];
-    var11 = var6.bind(var0)(var11);
-    var11 = var11.number;
-    var8[1] = var11;
-    var8 = var9.bind(var10)(var8);
-    var2.loadingIndicatorSource = var8;
-    var8 = var7[var1];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.bool;
-    var2.progressiveRenderingEnabled = var8;
-    var8 = var7[var1];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.number;
-    var2.fadeDuration = var8;
-    var8 = var7[var1];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.string;
-    var2.internal_analyticTag = var8;
-    var8 = var7[var1];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.func;
-    var2.onLoadStart = var8;
-    var8 = var7[var1];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.func;
-    var2.onError = var8;
-    var8 = var7[var1];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.func;
-    var2.onLoad = var8;
-    var8 = var7[var1];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.func;
-    var2.onLoadEnd = var8;
-    var8 = var7[var1];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.string;
-    var2.testID = var8;
-    var8 = var7[var1];
-    var10 = var6.bind(var0)(var8);
-    var9 = var10.oneOf;
-    var8 = ['auto', 'resize', 'scale'];
-    var8 = var9.bind(var10)(var8);
-    var2.resizeMethod = var8;
-    var1 = var7[var1];
-    var7 = var6.bind(var0)(var1);
-    var6 = var7.oneOf;
-    var1 = ['cover', 'contain', 'stretch', 'repeat', 'center'];
-    var1 = var6.bind(var7)(var1);
-    var2.resizeMode = var1;
-    var1 = {};
-    var2 = var4.bind(var5)(var1, var3, var2);
-    var1 = module;
-    var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7708, 7709, 7716, 3220]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7708]);

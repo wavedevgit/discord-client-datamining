@@ -29,13 +29,13 @@ public final class j implements ViewBinding {
     }
 
     public static j a(View view) {
-        int i10 = yp.e.f55200r;
+        int i10 = yp.e.f55197r;
         LinearLayout linearLayout = (LinearLayout) e4.a.a(view, i10);
         if (linearLayout != null) {
-            i10 = yp.e.f55202s;
+            i10 = yp.e.f55199s;
             TextView textView = (TextView) e4.a.a(view, i10);
             if (textView != null) {
-                i10 = yp.e.f55204t;
+                i10 = yp.e.f55201t;
                 TextView textView2 = (TextView) e4.a.a(view, i10);
                 if (textView2 != null) {
                     return new j((LinearLayout) view, linearLayout, textView, textView2);
@@ -50,7 +50,7 @@ public final class j implements ViewBinding {
     }
 
     public static j d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(yp.f.f55228k, viewGroup, false);
+        View inflate = layoutInflater.inflate(yp.f.f55225k, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }

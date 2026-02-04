@@ -13,8 +13,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'width': 24.5,
         'height': 24,
         'scales': null,
-        'hash': '17237a5c49ea745b655cbec7c093406d',
-        'name': 'emoji-positive',
+        'hash': '684bf0782561b9ed2466dcb8144cf582',
+        'name': 'emoji-neutral',
         'type': 'png'
     };
     var4 = [2, 3];

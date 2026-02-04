@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun6435: for (var _fun6435_ip = 0;;) switch (_fun6435_ip) {
+    _fun6437: for (var _fun6437_ip = 0;;) switch (_fun6437_ip) {
         case 0:
             var1 = exports;
             var3 = global;
@@ -17,16 +17,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = typeof var2;
             var2 = var4 !== var2;
             if (!var2) {
-                _fun6435_ip = 69;
-                continue _fun6435
+                _fun6437_ip = 69;
+                continue _fun6437
             }
         case 57:
             var4 = var3.crypto;
             var2 = var4.randomUUID;
         case 69:
             if (!var2) {
-                _fun6435_ip = 100;
-                continue _fun6435
+                _fun6437_ip = 100;
+                continue _fun6437
             }
         case 72:
             var4 = var3.crypto;

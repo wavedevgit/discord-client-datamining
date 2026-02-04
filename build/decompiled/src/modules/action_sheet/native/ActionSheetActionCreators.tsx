@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var1;
     var3 = {};
     var7 = function arg0, arg1, arg2, arg3() {
-        _fun28274: for (var _fun28274_ip = 0;;) switch (_fun28274_ip) {
+        _fun28276: for (var _fun28276_ip = 0;;) switch (_fun28276_ip) {
             case 0:
                 var4 = arg0;
                 var1 = arg1;
@@ -108,14 +108,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.Promise;
                 var1 = var4 instanceof var1;
                 if (var1) {
-                    _fun28274_ip = 49;
-                    continue _fun28274
+                    _fun28276_ip = 49;
+                    continue _fun28276
                 }
             case 41:
                 var1 = undefined;
                 var2 = var4.bind(var1)();
-                _fun28274_ip = 64;
-                continue _fun28274;
+                _fun28276_ip = 64;
+                continue _fun28276;
             case 49:
                 var3 = var4.then;
                 var1 = function(arg0) { // Environment: var0
@@ -127,18 +127,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 64:
                 var1 = var2.then;
                 var0 = function(arg0) { // Environment: var0
-                    _fun28276: for (var _fun28276_ip = 0;;) switch (_fun28276_ip) {
+                    _fun28278: for (var _fun28278_ip = 0;;) switch (_fun28278_ip) {
                         case 0:
                             var1 = _closure2_slot1;
                             var0 = null;
                             if (!(var0 == var1)) {
-                                _fun28276_ip = 17;
-                                continue _fun28276
+                                _fun28278_ip = 17;
+                                continue _fun28278
                             }
                         case 13:
                             var8 = {};
-                            _fun28276_ip = 21;
-                            continue _fun28276;
+                            _fun28278_ip = 21;
+                            continue _fun28278;
                         case 17:
                             var8 = _closure2_slot1;
                         case 21:

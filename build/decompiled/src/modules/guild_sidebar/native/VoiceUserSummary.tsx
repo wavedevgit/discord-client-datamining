@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var4;
     var4 = var7.memo;
     var3 = function(arg0) { // Environment: var3
-        _fun102095: for (var _fun102095_ip = 0;;) switch (_fun102095_ip) {
+        _fun102108: for (var _fun102108_ip = 0;;) switch (_fun102108_ip) {
             case 0:
                 var0 = arg0;
                 var10 = var0.users;
@@ -120,8 +120,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var3)();
                 var15 = null;
                 if (!var0) {
-                    _fun102095_ip = 91;
-                    continue _fun102095
+                    _fun102108_ip = 91;
+                    continue _fun102108
                 }
             case 85:
                 var15 = var14.transparentBorder;
@@ -137,13 +137,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot3;
                 var0 = {};
                 if (var6) {
-                    _fun102095_ip = 141;
-                    continue _fun102095
+                    _fun102108_ip = 141;
+                    continue _fun102108
                 }
             case 134:
                 var11 = var14.container;
-                _fun102095_ip = 147;
-                continue _fun102095;
+                _fun102108_ip = 147;
+                continue _fun102108;
             case 141:
                 var11 = var14.containerNoPadding;
             case 147:
@@ -153,13 +153,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.style = var6;
                 var6 = _closure1_slot4;
                 if (!var5) {
-                    _fun102095_ip = 173;
-                    continue _fun102095
+                    _fun102108_ip = 173;
+                    continue _fun102108
                 }
             case 170:
                 if (var4) {
-                    _fun102095_ip = 201;
-                    continue _fun102095
+                    _fun102108_ip = 201;
+                    continue _fun102108
                 }
             case 173:
                 var5 = _closure1_slot0;
@@ -168,8 +168,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var7[var4];
                 var4 = var5.bind(var3)(var4);
                 var5 = var4.VoiceNormalIcon;
-                _fun102095_ip = 227;
-                continue _fun102095;
+                _fun102108_ip = 227;
+                continue _fun102108;
             case 201:
                 var7 = _closure1_slot0;
                 var11 = _closure1_slot2;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.items = var10;
                 var5.max = var9;
                 var8 = function arg0, arg1() {
-                    _fun102096: for (var _fun102096_ip = 0;;) switch (_fun102096_ip) {
+                    _fun102109: for (var _fun102109_ip = 0;;) switch (_fun102109_ip) {
                         case 0:
                             var3 = _closure1_slot4;
                             var1 = _closure1_slot1;
@@ -234,8 +234,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = arg1;
                             var4 = undefined;
                             if (var6) {
-                                _fun102096_ip = 90;
-                                continue _fun102096
+                                _fun102109_ip = 90;
+                                continue _fun102109
                             }
                         case 86:
                             var4 = _closure1_slot6;
@@ -263,4 +263,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.VOICE_USER_SUMMARY_HEIGHT = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 5454, 1297, 4872, 8725, 8910, 4860, 4863, 8069, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 5454, 1297, 4872, 8728, 8913, 4860, 4863, 8072, 2]);

@@ -2454,7 +2454,7 @@ public final class t0 implements Handler.Callback, p.a, q.a, o1.d, i.a, s1.a {
         } catch (qd.b e14) {
             G(e14, RNCWebViewManager.COMMAND_CLEAR_HISTORY);
         } catch (n.a e15) {
-            G(e15, e15.f48753d);
+            G(e15, e15.f48750d);
         } catch (IOException e16) {
             G(e16, 2000);
         }

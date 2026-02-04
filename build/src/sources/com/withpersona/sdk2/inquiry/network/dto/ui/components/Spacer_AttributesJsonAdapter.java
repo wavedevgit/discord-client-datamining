@@ -74,7 +74,7 @@ public final class Spacer_AttributesJsonAdapter extends h {
         }
         Constructor<Spacer.Attributes> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = Spacer.Attributes.class.getDeclaredConstructor(String.class, JsonLogicBoolean.class, Integer.TYPE, c.f51691c);
+            constructor = Spacer.Attributes.class.getDeclaredConstructor(String.class, JsonLogicBoolean.class, Integer.TYPE, c.f51688c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

@@ -23,65 +23,65 @@ import org.jetbrains.annotations.NotNull;
 public final class i0 extends FrameLayout {
 
     /* renamed from: d */
-    private final WorkflowViewStub f54621d;
+    private final WorkflowViewStub f54618d;
 
     /* renamed from: e */
-    private SparseArray f54622e;
+    private SparseArray f54619e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class b extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d */
-        int f54624d;
+        int f54621d;
 
         /* renamed from: e */
-        final /* synthetic */ Lifecycle f54625e;
+        final /* synthetic */ Lifecycle f54622e;
 
         /* renamed from: i */
-        final /* synthetic */ Lifecycle.State f54626i;
+        final /* synthetic */ Lifecycle.State f54623i;
 
         /* renamed from: o */
-        final /* synthetic */ Flow f54627o;
+        final /* synthetic */ Flow f54624o;
 
         /* renamed from: p */
-        final /* synthetic */ i0 f54628p;
+        final /* synthetic */ i0 f54625p;
 
         /* renamed from: q */
-        final /* synthetic */ a0 f54629q;
+        final /* synthetic */ a0 f54626q;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
             /* renamed from: d */
-            int f54630d;
+            int f54627d;
 
             /* renamed from: e */
-            final /* synthetic */ Flow f54631e;
+            final /* synthetic */ Flow f54628e;
 
             /* renamed from: i */
-            final /* synthetic */ i0 f54632i;
+            final /* synthetic */ i0 f54629i;
 
             /* renamed from: o */
-            final /* synthetic */ a0 f54633o;
+            final /* synthetic */ a0 f54630o;
 
             /* renamed from: ym.i0$b$a$a */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
             public static final class C0750a implements FlowCollector {
 
                 /* renamed from: d */
-                final /* synthetic */ i0 f54634d;
+                final /* synthetic */ i0 f54631d;
 
                 /* renamed from: e */
-                final /* synthetic */ a0 f54635e;
+                final /* synthetic */ a0 f54632e;
 
                 public C0750a(i0 i0Var, a0 a0Var) {
-                    this.f54634d = i0Var;
-                    this.f54635e = a0Var;
+                    this.f54631d = i0Var;
+                    this.f54632e = a0Var;
                 }
 
                 @Override // kotlinx.coroutines.flow.FlowCollector
                 public Object emit(Object obj, Continuation continuation) {
-                    this.f54634d.c(obj, this.f54635e);
+                    this.f54631d.c(obj, this.f54632e);
                     return Unit.f32464a;
                 }
             }
@@ -89,20 +89,20 @@ public final class i0 extends FrameLayout {
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(Flow flow, i0 i0Var, a0 a0Var, Continuation continuation) {
                 super(2, continuation);
-                this.f54631e = flow;
-                this.f54632i = i0Var;
-                this.f54633o = a0Var;
+                this.f54628e = flow;
+                this.f54629i = i0Var;
+                this.f54630o = a0Var;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                return new a(this.f54631e, this.f54632i, this.f54633o, continuation);
+                return new a(this.f54628e, this.f54629i, this.f54630o, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 Object f10 = rr.b.f();
-                int i10 = this.f54630d;
+                int i10 = this.f54627d;
                 if (i10 != 0) {
                     if (i10 == 1) {
                         kotlin.c.b(obj);
@@ -111,9 +111,9 @@ public final class i0 extends FrameLayout {
                     }
                 } else {
                     kotlin.c.b(obj);
-                    Flow flow = this.f54631e;
-                    C0750a c0750a = new C0750a(this.f54632i, this.f54633o);
-                    this.f54630d = 1;
+                    Flow flow = this.f54628e;
+                    C0750a c0750a = new C0750a(this.f54629i, this.f54630o);
+                    this.f54627d = 1;
                     if (flow.collect(c0750a, this) == f10) {
                         return f10;
                     }
@@ -130,22 +130,22 @@ public final class i0 extends FrameLayout {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(Lifecycle lifecycle, Lifecycle.State state, Flow flow, i0 i0Var, a0 a0Var, Continuation continuation) {
             super(2, continuation);
-            this.f54625e = lifecycle;
-            this.f54626i = state;
-            this.f54627o = flow;
-            this.f54628p = i0Var;
-            this.f54629q = a0Var;
+            this.f54622e = lifecycle;
+            this.f54623i = state;
+            this.f54624o = flow;
+            this.f54625p = i0Var;
+            this.f54626q = a0Var;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new b(this.f54625e, this.f54626i, this.f54627o, this.f54628p, this.f54629q, continuation);
+            return new b(this.f54622e, this.f54623i, this.f54624o, this.f54625p, this.f54626q, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = rr.b.f();
-            int i10 = this.f54624d;
+            int i10 = this.f54621d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -154,10 +154,10 @@ public final class i0 extends FrameLayout {
                 }
             } else {
                 kotlin.c.b(obj);
-                Lifecycle lifecycle = this.f54625e;
-                Lifecycle.State state = this.f54626i;
-                a aVar = new a(this.f54627o, this.f54628p, this.f54629q, null);
-                this.f54624d = 1;
+                Lifecycle lifecycle = this.f54622e;
+                Lifecycle.State state = this.f54623i;
+                a aVar = new a(this.f54624o, this.f54625p, this.f54626q, null);
+                this.f54621d = 1;
                 if (androidx.lifecycle.z.a(lifecycle, state, aVar, this) == f10) {
                     return f10;
                 }
@@ -196,13 +196,13 @@ public final class i0 extends FrameLayout {
     public final void c(Object newRendering, a0 environment) {
         Intrinsics.checkNotNullParameter(newRendering, "newRendering");
         Intrinsics.checkNotNullParameter(environment, "environment");
-        this.f54621d.c(newRendering, environment);
-        SparseArray<Parcelable> sparseArray = this.f54622e;
+        this.f54618d.c(newRendering, environment);
+        SparseArray<Parcelable> sparseArray = this.f54619e;
         if (sparseArray == null) {
             return;
         }
-        this.f54622e = null;
-        this.f54621d.getActual().restoreHierarchyState(sparseArray);
+        this.f54619e = null;
+        this.f54618d.getActual().restoreHierarchyState(sparseArray);
     }
 
     @Override // android.view.View
@@ -215,7 +215,7 @@ public final class i0 extends FrameLayout {
             aVar = null;
         }
         if (aVar != null) {
-            this.f54622e = aVar.a();
+            this.f54619e = aVar.a();
             super.onRestoreInstanceState(((a) parcelable).getSuperState());
             unit = Unit.f32464a;
         }
@@ -229,7 +229,7 @@ public final class i0 extends FrameLayout {
         Parcelable onSaveInstanceState = super.onSaveInstanceState();
         Intrinsics.checkNotNull(onSaveInstanceState);
         SparseArray<Parcelable> sparseArray = new SparseArray<>();
-        this.f54621d.getActual().saveHierarchyState(sparseArray);
+        this.f54618d.getActual().saveHierarchyState(sparseArray);
         return new a(onSaveInstanceState, sparseArray);
     }
 
@@ -239,7 +239,7 @@ public final class i0 extends FrameLayout {
         public static final C0749a CREATOR = new C0749a(null);
 
         /* renamed from: d */
-        private final SparseArray f54623d;
+        private final SparseArray f54620d;
 
         /* renamed from: ym.i0$a$a */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -269,18 +269,18 @@ public final class i0 extends FrameLayout {
         public a(Parcelable parcelable, SparseArray childState) {
             super(parcelable);
             Intrinsics.checkNotNullParameter(childState, "childState");
-            this.f54623d = childState;
+            this.f54620d = childState;
         }
 
         public final SparseArray a() {
-            return this.f54623d;
+            return this.f54620d;
         }
 
         @Override // android.view.View.BaseSavedState, android.view.AbsSavedState, android.os.Parcelable
         public void writeToParcel(Parcel out, int i10) {
             Intrinsics.checkNotNullParameter(out, "out");
             super.writeToParcel(out, i10);
-            out.writeSparseArray(this.f54623d);
+            out.writeSparseArray(this.f54620d);
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -290,7 +290,7 @@ public final class i0 extends FrameLayout {
             SparseArray readSparseArray = source.readSparseArray(a.class.getClassLoader());
             Intrinsics.checkNotNull(readSparseArray);
             Intrinsics.checkNotNullExpressionValue(readSparseArray, "source.readSparseArray(S…class.java.classLoader)!!");
-            this.f54623d = readSparseArray;
+            this.f54620d = readSparseArray;
         }
     }
 
@@ -299,11 +299,11 @@ public final class i0 extends FrameLayout {
         super(context, attributeSet);
         Intrinsics.checkNotNullParameter(context, "context");
         if (getId() == -1) {
-            setId(q.f54664d);
+            setId(q.f54661d);
         }
         WorkflowViewStub workflowViewStub = new WorkflowViewStub(context, null, 0, 0, 14, null);
         workflowViewStub.setUpdatesVisibility(false);
         addView(workflowViewStub, new ViewGroup.LayoutParams(-1, -1));
-        this.f54621d = workflowViewStub;
+        this.f54618d = workflowViewStub;
     }
 }

@@ -31,7 +31,7 @@ import yg.j;
 public class MaterialButton extends e implements Checkable, n {
     private static final int[] C = {16842911};
     private static final int[] D = {16842912};
-    private static final int E = j.f54260n;
+    private static final int E = j.f54257n;
     private boolean A;
     private int B;
 
@@ -813,7 +813,7 @@ public class MaterialButton extends e implements Checkable, n {
     }
 
     public MaterialButton(@NonNull Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, yg.b.f54112x);
+        this(context, attributeSet, yg.b.f54109x);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */
@@ -839,28 +839,28 @@ public class MaterialButton extends e implements Checkable, n {
             r1 = r8
             r3 = r9
             android.content.res.TypedArray r8 = com.google.android.material.internal.l.i(r0, r1, r2, r3, r4, r5)
-            int r9 = yg.k.f54287b3
+            int r9 = yg.k.f54284b3
             int r9 = r8.getDimensionPixelSize(r9, r7)
             r6.f14273y = r9
-            int r9 = yg.k.f54317e3
+            int r9 = yg.k.f54314e3
             r2 = -1
             int r9 = r8.getInt(r9, r2)
             android.graphics.PorterDuff$Mode r2 = android.graphics.PorterDuff.Mode.SRC_IN
             android.graphics.PorterDuff$Mode r9 = com.google.android.material.internal.o.i(r9, r2)
             r6.f14266r = r9
             android.content.Context r9 = r6.getContext()
-            int r2 = yg.k.f54307d3
+            int r2 = yg.k.f54304d3
             android.content.res.ColorStateList r9 = lh.c.a(r9, r8, r2)
             r6.f14267s = r9
             android.content.Context r9 = r6.getContext()
             int r2 = yg.k.Z2
             android.graphics.drawable.Drawable r9 = lh.c.d(r9, r8, r2)
             r6.f14268t = r9
-            int r9 = yg.k.f54277a3
+            int r9 = yg.k.f54274a3
             r2 = 1
             int r9 = r8.getInteger(r9, r2)
             r6.B = r9
-            int r9 = yg.k.f54297c3
+            int r9 = yg.k.f54294c3
             int r9 = r8.getDimensionPixelSize(r9, r7)
             r6.f14270v = r9
             oh.k$b r9 = oh.k.e(r0, r1, r3, r4)

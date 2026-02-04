@@ -58,7 +58,7 @@ public final class g {
         this.f6848a = i10;
         this.f6849b = timeUnit.toNanos(j10);
         this.f6850c = taskRunner.i();
-        this.f6851d = new b(xt.e.f53575i + " ConnectionPool");
+        this.f6851d = new b(xt.e.f53572i + " ConnectionPool");
         this.f6852e = new ConcurrentLinkedQueue();
         if (j10 > 0) {
             return;
@@ -67,7 +67,7 @@ public final class g {
     }
 
     private final int d(f fVar, long j10) {
-        if (xt.e.f53574h && !Thread.holdsLock(fVar)) {
+        if (xt.e.f53571h && !Thread.holdsLock(fVar)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + fVar);
         }
         List n10 = fVar.n();
@@ -170,7 +170,7 @@ public final class g {
 
     public final boolean c(f connection) {
         Intrinsics.checkNotNullParameter(connection, "connection");
-        if (xt.e.f53574h && !Thread.holdsLock(connection)) {
+        if (xt.e.f53571h && !Thread.holdsLock(connection)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + connection);
         } else if (!connection.p() && this.f6848a != 0) {
             au.d.j(this.f6850c, this.f6851d, 0L, 2, null);
@@ -187,7 +187,7 @@ public final class g {
 
     public final void e(f connection) {
         Intrinsics.checkNotNullParameter(connection, "connection");
-        if (xt.e.f53574h && !Thread.holdsLock(connection)) {
+        if (xt.e.f53571h && !Thread.holdsLock(connection)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + connection);
         }
         this.f6852e.add(connection);

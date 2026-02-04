@@ -11,15 +11,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var3.bind(var4)(var1, var0, var2);
     var0 = {};
     var2 = function() {
-        _fun38333: for (var _fun38333_ip = 0;;) switch (_fun38333_ip) {
+        _fun38335: for (var _fun38335_ip = 0;;) switch (_fun38335_ip) {
             case 0:
                 var0 = global;
                 var1 = var0.TextDecoder;
                 var2 = 'undefined';
                 var1 = typeof var1;
                 if (!(var2 === var1)) {
-                    _fun38333_ip = 23;
-                    continue _fun38333
+                    _fun38335_ip = 23;
+                    continue _fun38335
                 }
             case 19:
                 var1 = undefined;

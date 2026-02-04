@@ -68,7 +68,7 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_UnknownE
         }
         Constructor<GenericFileUploadErrorResponse.DocumentErrorResponse.UnknownError> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = GenericFileUploadErrorResponse.DocumentErrorResponse.UnknownError.class.getDeclaredConstructor(String.class, String.class, ErrorDetails.class, Integer.TYPE, vm.c.f51691c);
+            constructor = GenericFileUploadErrorResponse.DocumentErrorResponse.UnknownError.class.getDeclaredConstructor(String.class, String.class, ErrorDetails.class, Integer.TYPE, vm.c.f51688c);
             this.constructorRef = constructor;
         }
         return constructor.newInstance(str, str2, errorDetails, Integer.valueOf(i10), null);

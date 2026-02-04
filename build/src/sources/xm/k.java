@@ -11,13 +11,13 @@ import wm.w;
 public final class k {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f53466c = new a(null);
+    public static final a f53463c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final s f53467a;
+    private final s f53464a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f53468b;
+    private final String f53465b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -29,7 +29,7 @@ public final class k {
             Intrinsics.checkNotNullParameter(bytes, "bytes");
             Buffer buffer = new Buffer();
             buffer.a2(bytes);
-            return new k(s.f52578f.a(wm.j.a(buffer)), wm.j.b(buffer));
+            return new k(s.f52575f.a(wm.j.a(buffer)), wm.j.b(buffer));
         }
 
         private a() {
@@ -39,29 +39,29 @@ public final class k {
     public k(s identifier, String name) {
         Intrinsics.checkNotNullParameter(identifier, "identifier");
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f53467a = identifier;
-        this.f53468b = name;
+        this.f53464a = identifier;
+        this.f53465b = name;
     }
 
     public final s a() {
-        return this.f53467a;
+        return this.f53464a;
     }
 
     public final String b() {
-        return this.f53468b;
+        return this.f53465b;
     }
 
     public final boolean c(q otherWorkflow, String otherName) {
         Intrinsics.checkNotNullParameter(otherWorkflow, "otherWorkflow");
         Intrinsics.checkNotNullParameter(otherName, "otherName");
-        if (Intrinsics.areEqual(this.f53467a, w.j(otherWorkflow)) && Intrinsics.areEqual(this.f53468b, otherName)) {
+        if (Intrinsics.areEqual(this.f53464a, w.j(otherWorkflow)) && Intrinsics.areEqual(this.f53465b, otherName)) {
             return true;
         }
         return false;
     }
 
     public final ByteString d() {
-        ByteString e10 = this.f53467a.e();
+        ByteString e10 = this.f53464a.e();
         if (e10 == null) {
             return null;
         }
@@ -79,18 +79,18 @@ public final class k {
             return false;
         }
         k kVar = (k) obj;
-        if (Intrinsics.areEqual(this.f53467a, kVar.f53467a) && Intrinsics.areEqual(this.f53468b, kVar.f53468b)) {
+        if (Intrinsics.areEqual(this.f53464a, kVar.f53464a) && Intrinsics.areEqual(this.f53465b, kVar.f53465b)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (this.f53467a.hashCode() * 31) + this.f53468b.hashCode();
+        return (this.f53464a.hashCode() * 31) + this.f53465b.hashCode();
     }
 
     public String toString() {
-        return "WorkflowNodeId(identifier=" + this.f53467a + ", name=" + this.f53468b + ')';
+        return "WorkflowNodeId(identifier=" + this.f53464a + ", name=" + this.f53465b + ')';
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */

@@ -6,14 +6,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.toString;
     var _closure1_slot0 = var1;
     var1 = function arg0() {
-        _fun28319: for (var _fun28319_ip = 0;;) switch (_fun28319_ip) {
+        _fun28321: for (var _fun28321_ip = 0;;) switch (_fun28321_ip) {
             case 0:
                 var2 = arg0;
                 var0 = var2;
                 var1 = null;
                 if (!(var1 != var2)) {
-                    _fun28319_ip = 43;
-                    continue _fun28319
+                    _fun28321_ip = 43;
+                    continue _fun28321
                 }
             case 12: // try_start_0
                 var3 = _closure1_slot0;

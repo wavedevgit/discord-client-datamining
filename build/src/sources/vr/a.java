@@ -12,10 +12,10 @@ public class a extends ur.a {
         @NotNull
 
         /* renamed from: a  reason: collision with root package name */
-        public static final C0684a f51747a = new C0684a();
+        public static final C0684a f51744a = new C0684a();
 
         /* renamed from: b  reason: collision with root package name */
-        public static final Integer f51748b;
+        public static final Integer f51745b;
 
         static {
             Integer num;
@@ -30,13 +30,13 @@ public class a extends ur.a {
                 if (num != null && num.intValue() > 0) {
                     num2 = num;
                 }
-                f51748b = num2;
+                f51745b = num2;
             }
             num = null;
             if (num != null) {
                 num2 = num;
             }
-            f51748b = num2;
+            f51745b = num2;
         }
 
         private C0684a() {
@@ -44,7 +44,7 @@ public class a extends ur.a {
     }
 
     private final boolean c(int i10) {
-        Integer num = C0684a.f51748b;
+        Integer num = C0684a.f51745b;
         if (num != null && num.intValue() < i10) {
             return false;
         }

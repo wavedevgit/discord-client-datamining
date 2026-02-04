@@ -38,6 +38,6 @@ public final class e implements h {
         } else {
             drawable = this.f392a;
         }
-        return new f(drawable, u10, x4.h.f53112e);
+        return new f(drawable, u10, x4.h.f53109e);
     }
 }

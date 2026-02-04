@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/age_assurance/AgeVerificationLanguageUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0, arg1() {
-        _fun41160: for (var _fun41160_ip = 0;;) switch (_fun41160_ip) {
+        _fun41163: for (var _fun41163_ip = 0;;) switch (_fun41163_ip) {
             case 0:
                 var0 = arg0;
                 var1 = arg1;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var4)(var2);
                 var2 = var2.enabled;
                 if (!var2) {
-                    _fun41160_ip = 68;
-                    continue _fun41160
+                    _fun41163_ip = 68;
+                    continue _fun41163
                 }
             case 65:
                 var0 = var1;
@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getUpdatedAgeVerificationString = var3;
     var1 = function arg0, arg1() {
-        _fun41161: for (var _fun41161_ip = 0;;) switch (_fun41161_ip) {
+        _fun41164: for (var _fun41164_ip = 0;;) switch (_fun41164_ip) {
             case 0:
                 var0 = arg0;
                 var1 = arg1;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var4)(var2);
                 var2 = var2.enabled;
                 if (!var2) {
-                    _fun41161_ip = 68;
-                    continue _fun41161
+                    _fun41164_ip = 68;
+                    continue _fun41164
                 }
             case 65:
                 var0 = var1;

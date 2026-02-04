@@ -30,7 +30,7 @@ public class SnackbarContentLayout extends LinearLayout implements a {
 
     public SnackbarContentLayout(@NonNull Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f14996i = g.g(context, yg.b.P, zg.a.f55945b);
+        this.f14996i = g.g(context, yg.b.P, zg.a.f55942b);
     }
 
     private static void d(View view, int i10, int i11) {
@@ -83,7 +83,7 @@ public class SnackbarContentLayout extends LinearLayout implements a {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void c(float f10) {
         if (f10 != 1.0f) {
-            this.f14995e.setTextColor(eh.a.j(eh.a.d(this, yg.b.f54103o), this.f14995e.getCurrentTextColor(), f10));
+            this.f14995e.setTextColor(eh.a.j(eh.a.d(this, yg.b.f54100o), this.f14995e.getCurrentTextColor(), f10));
         }
     }
 
@@ -107,8 +107,8 @@ public class SnackbarContentLayout extends LinearLayout implements a {
         boolean z10;
         super.onMeasure(i10, i11);
         if (getOrientation() != 1) {
-            int dimensionPixelSize = getResources().getDimensionPixelSize(d.f54137g);
-            int dimensionPixelSize2 = getResources().getDimensionPixelSize(d.f54135f);
+            int dimensionPixelSize = getResources().getDimensionPixelSize(d.f54134g);
+            int dimensionPixelSize2 = getResources().getDimensionPixelSize(d.f54132f);
             Layout layout = this.f14994d.getLayout();
             if (layout != null && layout.getLineCount() > 1) {
                 z10 = true;

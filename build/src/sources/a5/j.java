@@ -322,9 +322,9 @@ public final class j implements h {
 
     private final x4.h k(Response response) {
         if (response.J0() != null) {
-            return x4.h.f53114o;
+            return x4.h.f53111o;
         }
-        return x4.h.f53113i;
+        return x4.h.f53110i;
     }
 
     private final r l(ResponseBody responseBody) {

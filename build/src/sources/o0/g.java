@@ -194,7 +194,7 @@ public final class g {
             Object next = it.next();
             Intrinsics.checkNotNullExpressionValue(next, "cameraSelector.cameraFilterSet");
             x.n nVar = (x.n) next;
-            if (!Intrinsics.areEqual(nVar.a(), x.n.f52864a)) {
+            if (!Intrinsics.areEqual(nVar.a(), x.n.f52861a)) {
                 y a10 = b1.a(nVar.a());
                 Context context = this.f42180g;
                 Intrinsics.checkNotNull(context);
@@ -304,7 +304,7 @@ public final class g {
         try {
             if (r() != 2) {
                 v(1);
-                x0 DEFAULT = x0.f53000f;
+                x0 DEFAULT = x0.f52997f;
                 Intrinsics.checkNotNullExpressionValue(DEFAULT, "DEFAULT");
                 Intrinsics.checkNotNullExpressionValue(DEFAULT, "DEFAULT");
                 z1 c10 = useCaseGroup.c();

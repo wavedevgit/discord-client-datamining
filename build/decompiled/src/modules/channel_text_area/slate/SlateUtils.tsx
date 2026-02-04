@@ -3,18 +3,18 @@
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
     var3 = function arg0() {
-        _fun54343: for (var _fun54343_ip = 0;;) switch (_fun54343_ip) {
+        _fun54346: for (var _fun54346_ip = 0;;) switch (_fun54346_ip) {
             case 0:
                 var3 = arg0;
                 var0 = '';
                 if (!(var0 === var3)) {
-                    _fun54343_ip = 20;
-                    continue _fun54343
+                    _fun54346_ip = 20;
+                    continue _fun54346
                 }
             case 11:
                 var0 = _closure1_slot0;
-                _fun54343_ip = 51;
-                continue _fun54343;
+                _fun54346_ip = 51;
+                continue _fun54346;
             case 20:
                 var2 = var3.split;
                 var1 = '\n';
@@ -110,56 +110,56 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.createState = var4;
     var2.toRichValue = var3;
     var1 = function arg0() {
-        _fun54347: for (var _fun54347_ip = 0;;) switch (_fun54347_ip) {
+        _fun54350: for (var _fun54350_ip = 0;;) switch (_fun54350_ip) {
             case 0:
                 var1 = arg0;
                 var9 = var1.type;
                 var2 = 'userMention';
                 if (!(var2 !== var9)) {
-                    _fun54347_ip = 311;
-                    continue _fun54347
+                    _fun54350_ip = 311;
+                    continue _fun54350
                 }
             case 21:
                 var3 = 'channelMention';
                 if (!(var3 !== var9)) {
-                    _fun54347_ip = 294;
-                    continue _fun54347
+                    _fun54350_ip = 294;
+                    continue _fun54350
                 }
             case 32:
                 var4 = 'soundboard';
                 if (!(var4 !== var9)) {
-                    _fun54347_ip = 266;
-                    continue _fun54347
+                    _fun54350_ip = 266;
+                    continue _fun54350
                 }
             case 43:
                 var5 = 'roleMention';
                 if (!(var5 !== var9)) {
-                    _fun54347_ip = 247;
-                    continue _fun54347
+                    _fun54350_ip = 247;
+                    continue _fun54350
                 }
             case 54:
                 var6 = 'textMention';
                 if (!(var6 !== var9)) {
-                    _fun54347_ip = 230;
-                    continue _fun54347
+                    _fun54350_ip = 230;
+                    continue _fun54350
                 }
             case 67:
                 var7 = 'emoji';
                 if (!(var7 !== var9)) {
-                    _fun54347_ip = 190;
-                    continue _fun54347
+                    _fun54350_ip = 190;
+                    continue _fun54350
                 }
             case 75:
                 var8 = 'customEmoji';
                 if (!(var8 !== var9)) {
-                    _fun54347_ip = 133;
-                    continue _fun54347
+                    _fun54350_ip = 133;
+                    continue _fun54350
                 }
             case 83:
                 var0 = 'testInlineVoid';
                 if (!(var0 !== var9)) {
-                    _fun54347_ip = 97;
-                    continue _fun54347
+                    _fun54350_ip = 97;
+                    continue _fun54350
                 }
             case 93:
                 var0 = null;

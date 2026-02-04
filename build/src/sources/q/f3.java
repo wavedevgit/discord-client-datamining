@@ -100,7 +100,7 @@ final class f3 {
     }
 
     private static boolean e(x.z zVar) {
-        return Objects.equals(zVar, x.z.f53041c);
+        return Objects.equals(zVar, x.z.f53038c);
     }
 
     private static boolean f(x.z zVar) {
@@ -128,7 +128,7 @@ final class f3 {
         int b10 = zVar.b();
         int a10 = zVar.a();
         if (b10 == 1 && a10 == 0) {
-            x.z zVar3 = x.z.f53042d;
+            x.z zVar3 = x.z.f53039d;
             if (!set.contains(zVar3)) {
                 return null;
             }
@@ -144,7 +144,7 @@ final class f3 {
             x.y0.a("DynamicRangeResolver", String.format("Resolved dynamic range for use case %s from concurrently bound use case.\n%s\n->\n%s", str, zVar, c11));
             return c11;
         }
-        x.z zVar4 = x.z.f53042d;
+        x.z zVar4 = x.z.f53039d;
         if (b(zVar, zVar4, set)) {
             x.y0.a("DynamicRangeResolver", String.format("Resolved dynamic range for use case %s to no compatible HDR dynamic ranges.\n%s\n->\n%s", str, zVar, zVar4));
             return zVar4;
@@ -159,7 +159,7 @@ final class f3 {
             } else {
                 zVar2 = null;
             }
-            linkedHashSet.add(x.z.f53044f);
+            linkedHashSet.add(x.z.f53041f);
             x.z c12 = c(zVar, linkedHashSet, set);
             if (c12 != null) {
                 if (c12.equals(zVar2)) {
@@ -175,7 +175,7 @@ final class f3 {
         while (it.hasNext()) {
             x.z zVar5 = (x.z) it.next();
             b2.e.j(zVar5.e(), "Candidate dynamic range must be fully specified.");
-            if (!zVar5.equals(x.z.f53042d) && a(zVar, zVar5)) {
+            if (!zVar5.equals(x.z.f53039d) && a(zVar, zVar5)) {
                 x.y0.a("DynamicRangeResolver", String.format("Resolved dynamic range for use case %s from validated dynamic range constraints or supported HDR dynamic ranges.\n%s\n->\n%s", str, zVar, zVar5));
                 return zVar5;
             }

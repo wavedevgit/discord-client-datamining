@@ -1,7 +1,7 @@
 // ../discord_common/js/packages/design/shared.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun27753: for (var _fun27753_ip = 0;;) switch (_fun27753_ip) {
+    _fun27755: for (var _fun27755_ip = 0;;) switch (_fun27755_ip) {
         case 0:
             var9 = require;
             var8 = exports;
@@ -31,8 +31,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun27753_ip = 90;
-                    continue _fun27753;
+                    _fun27755_ip = 90;
+                    continue _fun27755;
                 }
         case 121:
             var2 = 2;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun27753_ip = 141;
-                    continue _fun27753;
+                    _fun27755_ip = 141;
+                    continue _fun27755;
                 }
         case 172:
             var1 = 3;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 204: var11 = var1;
                     var10 = var6[var11];
                     var8[var11] = var10;
-                    _fun27753_ip = 195;
-                    continue _fun27753;
+                    _fun27755_ip = 195;
+                    continue _fun27755;
                 }
         case 217:
             var2 = 4;
@@ -72,8 +72,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun27753_ip = 237;
-                    continue _fun27753;
+                    _fun27755_ip = 237;
+                    continue _fun27755;
                 }
         case 268:
             var2 = 5;
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun27753_ip = 288;
-                    continue _fun27753;
+                    _fun27755_ip = 288;
+                    continue _fun27755;
                 }
         case 319:
             var2 = 6;
@@ -100,8 +100,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun27753_ip = 339;
-                    continue _fun27753;
+                    _fun27755_ip = 339;
+                    continue _fun27755;
                 }
         case 370:
             var2 = 7;
@@ -114,8 +114,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun27753_ip = 390;
-                    continue _fun27753;
+                    _fun27755_ip = 390;
+                    continue _fun27755;
                 }
         case 421:
             var2 = 8;
@@ -128,8 +128,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun27753_ip = 441;
-                    continue _fun27753;
+                    _fun27755_ip = 441;
+                    continue _fun27755;
                 }
         case 472:
             return var0;

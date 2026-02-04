@@ -57,7 +57,7 @@ public class h extends b {
     public void e(RectF rectF, Matrix matrix, boolean z10) {
         super.e(rectF, matrix, z10);
         this.D.set(0.0f, 0.0f, this.H.r(), this.H.q());
-        this.f49740o.mapRect(this.D);
+        this.f49737o.mapRect(this.D);
         rectF.set(this.D);
     }
 
@@ -78,10 +78,10 @@ public class h extends b {
             } else {
                 this.E.setColor(this.H.p());
             }
-            if (this.f49749x.h() == null) {
+            if (this.f49746x.h() == null) {
                 intValue = 100;
             } else {
-                intValue = ((Integer) this.f49749x.h().h()).intValue();
+                intValue = ((Integer) this.f49746x.h().h()).intValue();
             }
             int i11 = (int) ((i10 / 255.0f) * (((alpha / 255.0f) * intValue) / 100.0f) * 255.0f);
             this.E.setAlpha(i11);

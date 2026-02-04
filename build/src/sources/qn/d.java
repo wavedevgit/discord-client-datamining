@@ -23,13 +23,13 @@ import rj.b;
 public final class d implements e {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f47984b = new a(null);
+    public static final a f47981b = new a(null);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final float[] f47985c = {-0.15f, -0.15f, -0.15f, -0.15f, 2.2f, -0.15f, -0.15f, -0.15f, -0.15f};
+    private static final float[] f47982c = {-0.15f, -0.15f, -0.15f, -0.15f, 2.2f, -0.15f, -0.15f, -0.15f, -0.15f};
 
     /* renamed from: a  reason: collision with root package name */
-    private final Lazy f47986a = lr.l.a(new Function0() { // from class: qn.c
+    private final Lazy f47983a = lr.l.a(new Function0() { // from class: qn.c
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             rj.a c10;
@@ -56,12 +56,12 @@ public final class d implements e {
     }
 
     private final rj.a d() {
-        return (rj.a) this.f47986a.getValue();
+        return (rj.a) this.f47983a.getValue();
     }
 
     private final Bitmap e(Bitmap bitmap) {
         try {
-            return Toolkit.b(Toolkit.f15857a, bitmap, f47985c, null, 4, null);
+            return Toolkit.b(Toolkit.f15857a, bitmap, f47982c, null, 4, null);
         } catch (UnsatisfiedLinkError unused) {
             return null;
         }
@@ -72,7 +72,7 @@ public final class d implements e {
         Bitmap e10 = j0Var.e();
         if (e10 == null) {
             Result.a aVar = Result.f32461e;
-            return Result.b(a.b.f47978a);
+            return Result.b(a.b.f47975a);
         }
         Bitmap e11 = e(e10);
         if (e11 != null) {
@@ -89,19 +89,19 @@ public final class d implements e {
             sj.a aVar2 = (sj.a) CollectionsKt.q0((List) l10, 0);
             if (aVar2 == null) {
                 Result.a aVar3 = Result.f32461e;
-                return Result.b(a.b.f47978a);
+                return Result.b(a.b.f47975a);
             }
             String d10 = aVar2.d();
             if (d10 == null) {
                 Result.a aVar4 = Result.f32461e;
-                return Result.b(a.b.f47978a);
+                return Result.b(a.b.f47975a);
             } else if (aVar2.c() == 2048) {
                 g.b bVar = new g.b(d10);
                 Rect rect2 = new Rect(0, 0, j0Var.f().l(), j0Var.f().h());
                 Rect a11 = aVar2.a();
                 if (a11 == null) {
                     Result.a aVar5 = Result.f32461e;
-                    return Result.b(a.b.f47978a);
+                    return Result.b(a.b.f47975a);
                 }
                 rect2.inset(1, 1);
                 if (rect2.contains(a11)) {
@@ -109,10 +109,10 @@ public final class d implements e {
                     return Result.b(new a.C0578a(bVar));
                 }
                 Result.a aVar7 = Result.f32461e;
-                return Result.b(a.b.f47978a);
+                return Result.b(a.b.f47975a);
             } else {
                 Result.a aVar8 = Result.f32461e;
-                return Result.b(a.b.f47978a);
+                return Result.b(a.b.f47975a);
             }
         } catch (ExecutionException unused) {
             Result.a aVar9 = Result.f32461e;

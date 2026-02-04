@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/utils/getHigherContrastColor.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun73055: for (var _fun73055_ip = 0;;) switch (_fun73055_ip) {
+        _fun73072: for (var _fun73072_ip = 0;;) switch (_fun73072_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.backgroundColor;
@@ -44,8 +44,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = typeof var9;
                 var6 = var9;
                 if (!(var4 === var3)) {
-                    _fun73055_ip = 86;
-                    continue _fun73055
+                    _fun73072_ip = 86;
+                    continue _fun73072
                 }
             case 58:
                 var5 = _closure1_slot0;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = typeof var1;
                 var10 = var1;
                 if (!(var4 === var3)) {
-                    _fun73055_ip = 124;
-                    continue _fun73055
+                    _fun73072_ip = 124;
+                    continue _fun73072
                 }
             case 96:
                 var5 = _closure1_slot0;
@@ -72,8 +72,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = typeof var0;
                 var5 = var0;
                 if (!(var4 === var3)) {
-                    _fun73055_ip = 162;
-                    continue _fun73055
+                    _fun73072_ip = 162;
+                    continue _fun73072
                 }
             case 134:
                 var4 = _closure1_slot0;
@@ -94,8 +94,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4.getContrast;
                 var2 = var2.bind(var4)(var6, var5);
                 if (!(var3 > var2)) {
-                    _fun73055_ip = 219;
-                    continue _fun73055
+                    _fun73072_ip = 219;
+                    continue _fun73072
                 }
             case 216:
                 var0 = var1;

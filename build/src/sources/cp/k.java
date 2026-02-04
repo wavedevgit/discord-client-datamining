@@ -117,7 +117,7 @@ public final class k implements ym.b {
         this.f19689p = onPositiveButtonClick;
         this.f19690q = negativeButtonText;
         this.f19691r = onNegativeButtonClick;
-        k.a aVar = ym.k.f54648a;
+        k.a aVar = ym.k.f54645a;
         this.f19692s = new ym.z(Reflection.getOrCreateKotlinClass(k.class), b.f19694d, new Function1() { // from class: cp.a
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
@@ -195,9 +195,9 @@ public final class k implements ym.b {
         } else {
             Context context = bVar.getRoot().getContext();
             Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-            d10 = mp.s.d(context, yg.b.f54103o, null, false, 6, null);
+            d10 = mp.s.d(context, yg.b.f54100o, null, false, 6, null);
         }
-        bVar.getRoot().setTag(zo.g.f56120a, Integer.valueOf(d10));
+        bVar.getRoot().setTag(zo.g.f56117a, Integer.valueOf(d10));
     }
 
     /* JADX INFO: Access modifiers changed from: private */

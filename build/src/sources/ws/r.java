@@ -9,13 +9,13 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class r implements l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b0 f52723a;
+    private final b0 f52720a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f52724b;
+    private final List f52721b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f52725c;
+    private final String f52722c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private final class a implements ys.a {
@@ -26,17 +26,17 @@ public abstract class r implements l {
         /* renamed from: d */
         public String c(Object obj, String newValue) {
             Intrinsics.checkNotNullParameter(newValue, "newValue");
-            Integer num = (Integer) r.this.g().b().c(obj, Integer.valueOf(r.this.f52724b.indexOf(newValue) + r.this.g().g()));
+            Integer num = (Integer) r.this.g().b().c(obj, Integer.valueOf(r.this.f52721b.indexOf(newValue) + r.this.g().g()));
             if (num != null) {
                 r rVar = r.this;
-                return (String) rVar.f52724b.get(num.intValue() - rVar.g().g());
+                return (String) rVar.f52721b.get(num.intValue() - rVar.g().g());
             }
             return null;
         }
 
         @Override // ys.a
         public String getName() {
-            return r.this.f52725c;
+            return r.this.f52722c;
         }
     }
 
@@ -56,9 +56,9 @@ public abstract class r implements l {
         Intrinsics.checkNotNullParameter(field, "field");
         Intrinsics.checkNotNullParameter(values, "values");
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f52723a = field;
-        this.f52724b = values;
-        this.f52725c = name;
+        this.f52720a = field;
+        this.f52721b = values;
+        this.f52722c = name;
         if (values.size() == (field.f() - field.g()) + 1) {
             return;
         }
@@ -67,10 +67,10 @@ public abstract class r implements l {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final String h(Object obj) {
-        int intValue = ((Number) this.f52723a.b().b(obj)).intValue();
-        String str = (String) CollectionsKt.q0(this.f52724b, intValue - this.f52723a.g());
+        int intValue = ((Number) this.f52720a.b().b(obj)).intValue();
+        String str = (String) CollectionsKt.q0(this.f52721b, intValue - this.f52720a.g());
         if (str == null) {
-            return "The value " + intValue + " of " + this.f52723a.getName() + " does not have a corresponding string representation";
+            return "The value " + intValue + " of " + this.f52720a.getName() + " does not have a corresponding string representation";
         }
         return str;
     }
@@ -83,15 +83,15 @@ public abstract class r implements l {
     @Override // ws.l
     public ys.q b() {
         a aVar = new a();
-        return new ys.q(CollectionsKt.e(new ys.t(this.f52724b, aVar, "one of " + this.f52724b + " for " + this.f52725c)), CollectionsKt.l());
+        return new ys.q(CollectionsKt.e(new ys.t(this.f52721b, aVar, "one of " + this.f52721b + " for " + this.f52722c)), CollectionsKt.l());
     }
 
     @Override // ws.l
     public /* bridge */ /* synthetic */ n c() {
-        return this.f52723a;
+        return this.f52720a;
     }
 
     public final b0 g() {
-        return this.f52723a;
+        return this.f52720a;
     }
 }

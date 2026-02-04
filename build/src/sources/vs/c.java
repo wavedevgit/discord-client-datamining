@@ -3,7 +3,7 @@ package vs;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int[] f51751a = {1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000};
+    private static final int[] f51748a = {1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000};
 
     public static final int a(long j10) {
         if (j10 > 2147483647L) {
@@ -16,6 +16,6 @@ public abstract class c {
     }
 
     public static final int[] b() {
-        return f51751a;
+        return f51748a;
     }
 }

@@ -16,22 +16,22 @@ import rj.b;
 public final class g extends wj.e implements rj.a {
 
     /* renamed from: x  reason: collision with root package name */
-    private static final rj.b f50651x = new b.a().a();
+    private static final rj.b f50648x = new b.a().a();
 
     /* renamed from: s  reason: collision with root package name */
-    private final boolean f50652s;
+    private final boolean f50649s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final rj.b f50653t;
+    private final rj.b f50650t;
 
     /* renamed from: u  reason: collision with root package name */
-    final cl f50654u;
+    final cl f50651u;
 
     /* renamed from: v  reason: collision with root package name */
-    private int f50655v;
+    private int f50652v;
 
     /* renamed from: w  reason: collision with root package name */
-    private boolean f50656w;
+    private boolean f50653w;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -39,9 +39,9 @@ public final class g extends wj.e implements rj.a {
         super(kVar, executor);
         we weVar;
         bVar.b();
-        this.f50653t = bVar;
+        this.f50650t = bVar;
         boolean f10 = b.f();
-        this.f50652s = f10;
+        this.f50649s = f10;
         mf mfVar = new mf();
         mfVar.i(b.c(bVar));
         of j10 = mfVar.j();
@@ -54,7 +54,7 @@ public final class g extends wj.e implements rj.a {
         zeVar.e(weVar);
         zeVar.g(j10);
         nkVar.d(qk.f(zeVar, 1), ye.ON_DEVICE_BARCODE_CREATE);
-        this.f50654u = null;
+        this.f50651u = null;
     }
 
     private final Task L(Task task, final int i10, final int i11) {
@@ -73,7 +73,7 @@ public final class g extends wj.e implements rj.a {
 
     @Override // ef.f
     public final com.google.android.gms.common.d[] a() {
-        return this.f50652s ? pj.l.f46052a : new com.google.android.gms.common.d[]{pj.l.f46053b};
+        return this.f50649s ? pj.l.f46052a : new com.google.android.gms.common.d[]{pj.l.f46053b};
     }
 
     @Override // wj.e, java.io.Closeable, java.lang.AutoCloseable, rj.a

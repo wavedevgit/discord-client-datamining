@@ -6,25 +6,25 @@ import kotlin.jvm.internal.MutablePropertyReference1Impl;
 final class g0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g0 f50882a = new g0();
+    public static final g0 f50879a = new g0();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c f50883b;
+    private static final c f50880b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ws.b0 f50884c;
+    private static final ws.b0 f50881c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ws.b0 f50885d;
+    private static final ws.b0 f50882d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ws.b0 f50886e;
+    private static final ws.b0 f50883e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class c implements ws.m {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ws.x f50889a = new ws.x(new MutablePropertyReference1Impl() { // from class: us.g0.c.a
+        private final ws.x f50886a = new ws.x(new MutablePropertyReference1Impl() { // from class: us.g0.c.a
             @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
             public Object get(Object obj) {
                 return ((n0) obj).isNegative();
@@ -42,7 +42,7 @@ final class g0 {
         @Override // ws.m
         /* renamed from: b */
         public ws.x isNegative() {
-            return this.f50889a;
+            return this.f50886a;
         }
 
         @Override // ws.m
@@ -83,8 +83,8 @@ final class g0 {
 
     static {
         c cVar = new c();
-        f50883b = cVar;
-        f50884c = new ws.b0(new ws.x(new MutablePropertyReference1Impl() { // from class: us.g0.d
+        f50880b = cVar;
+        f50881c = new ws.b0(new ws.x(new MutablePropertyReference1Impl() { // from class: us.g0.d
             @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
             public Object get(Object obj) {
                 return ((n0) obj).b();
@@ -95,7 +95,7 @@ final class g0 {
                 ((n0) obj).q((Integer) obj2);
             }
         }), 0, 18, null, 0, cVar, 8, null);
-        f50885d = new ws.b0(new ws.x(new MutablePropertyReference1Impl() { // from class: us.g0.a
+        f50882d = new ws.b0(new ws.x(new MutablePropertyReference1Impl() { // from class: us.g0.a
             @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
             public Object get(Object obj) {
                 return ((n0) obj).k();
@@ -106,7 +106,7 @@ final class g0 {
                 ((n0) obj).m((Integer) obj2);
             }
         }), 0, 59, null, 0, cVar, 8, null);
-        f50886e = new ws.b0(new ws.x(new MutablePropertyReference1Impl() { // from class: us.g0.b
+        f50883e = new ws.b0(new ws.x(new MutablePropertyReference1Impl() { // from class: us.g0.b
             @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
             public Object get(Object obj) {
                 return ((n0) obj).w();
@@ -123,14 +123,14 @@ final class g0 {
     }
 
     public final ws.b0 a() {
-        return f50885d;
+        return f50882d;
     }
 
     public final ws.b0 b() {
-        return f50886e;
+        return f50883e;
     }
 
     public final ws.b0 c() {
-        return f50884c;
+        return f50881c;
     }
 }

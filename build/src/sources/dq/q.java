@@ -26,7 +26,7 @@ public final class q implements ViewBinding {
     }
 
     public static q a(View view) {
-        int i10 = yp.e.f55194o;
+        int i10 = yp.e.f55191o;
         MaterialCheckBox materialCheckBox = (MaterialCheckBox) e4.a.a(view, i10);
         if (materialCheckBox != null) {
             i10 = yp.e.V;
@@ -39,7 +39,7 @@ public final class q implements ViewBinding {
     }
 
     public static q c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(yp.f.f55235r, viewGroup, false);
+        View inflate = layoutInflater.inflate(yp.f.f55232r, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }

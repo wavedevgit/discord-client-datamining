@@ -24,7 +24,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8236id;
+    private final String f8235id;
     private final int type;
     @NotNull
     public static final Companion Companion = new Companion(null);
@@ -61,7 +61,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
             v1.b(i10, 11, ActionRowComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f8236id = str;
+        this.f8235id = str;
         if ((i10 & 4) == 0) {
             this.errorText = null;
         } else {
@@ -81,7 +81,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
             i10 = actionRowComponent.type;
         }
         if ((i11 & 2) != 0) {
-            str = actionRowComponent.f8236id;
+            str = actionRowComponent.f8235id;
         }
         if ((i11 & 4) != 0) {
             str2 = actionRowComponent.errorText;
@@ -108,7 +108,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
 
     @NotNull
     public final String component2() {
-        return this.f8236id;
+        return this.f8235id;
     }
 
     public final String component3() {
@@ -133,7 +133,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
         }
         if (obj instanceof ActionRowComponent) {
             ActionRowComponent actionRowComponent = (ActionRowComponent) obj;
-            return this.type == actionRowComponent.type && Intrinsics.areEqual(this.f8236id, actionRowComponent.f8236id) && Intrinsics.areEqual(this.errorText, actionRowComponent.errorText) && Intrinsics.areEqual(this.components, actionRowComponent.components);
+            return this.type == actionRowComponent.type && Intrinsics.areEqual(this.f8235id, actionRowComponent.f8235id) && Intrinsics.areEqual(this.errorText, actionRowComponent.errorText) && Intrinsics.areEqual(this.components, actionRowComponent.components);
         }
         return false;
     }
@@ -151,7 +151,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f8236id;
+        return this.f8235id;
     }
 
     @Override // com.discord.chat.bridge.botuikit.Component
@@ -160,7 +160,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
     }
 
     public int hashCode() {
-        int hashCode = ((Integer.hashCode(this.type) * 31) + this.f8236id.hashCode()) * 31;
+        int hashCode = ((Integer.hashCode(this.type) * 31) + this.f8235id.hashCode()) * 31;
         String str = this.errorText;
         return ((hashCode + (str == null ? 0 : str.hashCode())) * 31) + this.components.hashCode();
     }
@@ -168,7 +168,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f8236id;
+        String str = this.f8235id;
         String str2 = this.errorText;
         List<Component> list = this.components;
         return "ActionRowComponent(type=" + i10 + ", id=" + str + ", errorText=" + str2 + ", components=" + list + ")";
@@ -185,7 +185,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(components, "components");
         this.type = i10;
-        this.f8236id = id2;
+        this.f8235id = id2;
         this.errorText = str;
         this.components = components;
     }

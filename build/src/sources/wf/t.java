@@ -11,18 +11,18 @@ public class t extends hf.a {
     public static final Parcelable.Creator<t> CREATOR = new v0();
 
     /* renamed from: d  reason: collision with root package name */
-    private final v f52358d;
+    private final v f52355d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final k f52359e;
+    private final k f52356e;
 
     public t(String str, int i10) {
         gf.q.l(str);
         try {
-            this.f52358d = v.a(str);
+            this.f52355d = v.a(str);
             gf.q.l(Integer.valueOf(i10));
             try {
-                this.f52359e = k.a(i10);
+                this.f52356e = k.a(i10);
             } catch (k.a e10) {
                 throw new IllegalArgumentException(e10);
             }
@@ -32,11 +32,11 @@ public class t extends hf.a {
     }
 
     public int b() {
-        return this.f52359e.b();
+        return this.f52356e.b();
     }
 
     public String c() {
-        return this.f52358d.toString();
+        return this.f52355d.toString();
     }
 
     public boolean equals(Object obj) {
@@ -44,19 +44,19 @@ public class t extends hf.a {
             return false;
         }
         t tVar = (t) obj;
-        if (!this.f52358d.equals(tVar.f52358d) || !this.f52359e.equals(tVar.f52359e)) {
+        if (!this.f52355d.equals(tVar.f52355d) || !this.f52356e.equals(tVar.f52356e)) {
             return false;
         }
         return true;
     }
 
     public int hashCode() {
-        return gf.o.b(this.f52358d, this.f52359e);
+        return gf.o.b(this.f52355d, this.f52356e);
     }
 
     public final String toString() {
-        k kVar = this.f52359e;
-        String valueOf = String.valueOf(this.f52358d);
+        k kVar = this.f52356e;
+        String valueOf = String.valueOf(this.f52355d);
         String valueOf2 = String.valueOf(kVar);
         return "PublicKeyCredentialParameters{\n type=" + valueOf + ", \n algorithm=" + valueOf2 + "\n }";
     }

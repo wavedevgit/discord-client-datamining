@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/ChannelPinnedMessageSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun55569: for (var _fun55569_ip = 0;;) switch (_fun55569_ip) {
+        _fun55572: for (var _fun55572_ip = 0;;) switch (_fun55572_ip) {
             case 0:
                 var3 = arg0;
                 var9 = var3.message;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = 'username';
                 var10 = null;
                 if (!(var16 === var13)) {
-                    _fun55569_ip = 208;
-                    continue _fun55569
+                    _fun55572_ip = 208;
+                    continue _fun55572
                 }
             case 205:
                 var10 = var12;
@@ -81,8 +81,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.roleColor = var12;
                 var10 = null;
                 if (!var15) {
-                    _fun55569_ip = 226;
-                    continue _fun55569
+                    _fun55572_ip = 226;
+                    continue _fun55572
                 }
             case 223:
                 var10 = var14;
@@ -91,8 +91,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = 'dot';
                 var10 = var10 === var13;
                 if (!var10) {
-                    _fun55569_ip = 246;
-                    continue _fun55569
+                    _fun55572_ip = 246;
+                    continue _fun55572
                 }
             case 242:
                 var10 = var11 != var12;

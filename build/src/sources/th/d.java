@@ -5,11 +5,11 @@ import java.util.concurrent.atomic.AtomicReference;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final AtomicReference f50044a = new AtomicReference(null);
+    private static final AtomicReference f50041a = new AtomicReference(null);
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static c a() {
-        android.support.v4.media.session.b.a(f50044a.get());
+        android.support.v4.media.session.b.a(f50041a.get());
         return null;
     }
 }

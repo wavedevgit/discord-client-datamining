@@ -8,19 +8,19 @@ import kotlin.jvm.internal.Intrinsics;
 public final class t extends ws.k {
 
     /* renamed from: g  reason: collision with root package name */
-    public static final a f50995g = new a(null);
+    public static final a f50992g = new a(null);
 
     /* renamed from: h  reason: collision with root package name */
-    private static final List f50996h = CollectionsKt.o(0, 0, 0, 0, 0, 0, 0, 0, 0);
+    private static final List f50993h = CollectionsKt.o(0, 0, 0, 0, 0, 0, 0, 0, 0);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final List f50997i = CollectionsKt.o(2, 1, 0, 2, 1, 0, 2, 1, 0);
+    private static final List f50994i = CollectionsKt.o(2, 1, 0, 2, 1, 0, 2, 1, 0);
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f50998e;
+    private final int f50995e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f50999f;
+    private final int f50996f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -33,13 +33,13 @@ public final class t extends ws.k {
     }
 
     public /* synthetic */ t(int i10, int i11, List list, int i12, DefaultConstructorMarker defaultConstructorMarker) {
-        this(i10, i11, (i12 & 4) != 0 ? f50996h : list);
+        this(i10, i11, (i12 & 4) != 0 ? f50993h : list);
     }
 
     public boolean equals(Object obj) {
         if (obj instanceof t) {
             t tVar = (t) obj;
-            if (this.f50998e == tVar.f50998e && this.f50999f == tVar.f50999f) {
+            if (this.f50995e == tVar.f50995e && this.f50996f == tVar.f50996f) {
                 return true;
             }
             return false;
@@ -48,14 +48,14 @@ public final class t extends ws.k {
     }
 
     public int hashCode() {
-        return (this.f50998e * 31) + this.f50999f;
+        return (this.f50995e * 31) + this.f50996f;
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public t(int i10, int i11, List zerosToAdd) {
-        super(l0.f50946a.a(), i10, i11, zerosToAdd);
+        super(l0.f50943a.a(), i10, i11, zerosToAdd);
         Intrinsics.checkNotNullParameter(zerosToAdd, "zerosToAdd");
-        this.f50998e = i10;
-        this.f50999f = i11;
+        this.f50995e = i10;
+        this.f50996f = i11;
     }
 }

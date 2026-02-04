@@ -6,22 +6,22 @@ import com.withpersona.sdk2.inquiry.FallbackMode;
 public final class j implements wq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final wq.h f50197a;
+    private final wq.h f50194a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final wq.h f50198b;
+    private final wq.h f50195b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final wq.h f50199c;
+    private final wq.h f50196c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final wq.h f50200d;
+    private final wq.h f50197d;
 
     public j(wq.h hVar, wq.h hVar2, wq.h hVar3, wq.h hVar4) {
-        this.f50197a = hVar;
-        this.f50198b = hVar2;
-        this.f50199c = hVar3;
-        this.f50200d = hVar4;
+        this.f50194a = hVar;
+        this.f50195b = hVar2;
+        this.f50196c = hVar3;
+        this.f50197d = hVar4;
     }
 
     public static j a(wq.h hVar, wq.h hVar2, wq.h hVar3, wq.h hVar4) {
@@ -35,6 +35,6 @@ public final class j implements wq.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public i get() {
-        return c((FallbackMode) this.f50197a.get(), (a) this.f50198b.get(), (po.f) this.f50199c.get(), (w) this.f50200d.get());
+        return c((FallbackMode) this.f50194a.get(), (a) this.f50195b.get(), (po.f) this.f50196c.get(), (w) this.f50197d.get());
     }
 }

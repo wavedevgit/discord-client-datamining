@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = undefined;
             var3 = var4.bind(var0)(var2, var3);
             var1 = function() { // Environment: var1
-                _fun7127: for (var _fun7127_ip = 0;;) switch (_fun7127_ip) {
+                _fun7129: for (var _fun7129_ip = 0;;) switch (_fun7129_ip) {
                     case 0:
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot1;
@@ -46,8 +46,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = _closure3_slot0;
                         var3 = var3.storeVersionHandled;
                         if (!(var3 !== var2)) {
-                            _fun7127_ip = 72;
-                            continue _fun7127
+                            _fun7129_ip = 72;
+                            continue _fun7129
                         }
                     case 52:
                         var1 = _closure3_slot0;
@@ -77,13 +77,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = var1.stores;
             var1 = var2.forEach;
             var0 = function(arg0, arg1) { // Environment: var0
-                _fun7129: for (var _fun7129_ip = 0;;) switch (_fun7129_ip) {
+                _fun7131: for (var _fun7131_ip = 0;;) switch (_fun7131_ip) {
                     case 0:
                         var2 = arg0;
                         var0 = null;
                         if (!(var0 != var2)) {
-                            _fun7129_ip = 37;
-                            continue _fun7129
+                            _fun7131_ip = 37;
+                            continue _fun7131
                         }
                     case 9:
                         var1 = var2.addReactChangeListener;

@@ -15,13 +15,13 @@ public abstract class u {
     public static final class a extends k {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ t f52587a;
+        final /* synthetic */ t f52584a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ k f52588b;
+        final /* synthetic */ k f52585b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ t.c f52589c;
+        final /* synthetic */ t.c f52586c;
 
         /* renamed from: wm.u$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -53,20 +53,20 @@ public abstract class u {
         static final class c extends Lambda implements Function3 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ k.a f52590d;
+            final /* synthetic */ k.a f52587d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ k f52591e;
+            final /* synthetic */ k f52588e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ a f52592i;
+            final /* synthetic */ a f52589i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             c(k.a aVar, k kVar, a aVar2) {
                 super(3);
-                this.f52590d = aVar;
-                this.f52591e = kVar;
-                this.f52592i = aVar2;
+                this.f52587d = aVar;
+                this.f52588e = kVar;
+                this.f52589i = aVar2;
             }
 
             @Override // kotlin.jvm.functions.Function3
@@ -76,12 +76,12 @@ public abstract class u {
                 if (bVar == null) {
                     dVar = null;
                 } else {
-                    dVar = new wm.d(this.f52590d, bVar);
+                    dVar = new wm.d(this.f52587d, bVar);
                 }
                 if (dVar == null) {
-                    dVar = this.f52590d;
+                    dVar = this.f52587d;
                 }
-                return this.f52591e.f(obj, obj2, w.a(dVar, this.f52592i));
+                return this.f52588e.f(obj, obj2, w.a(dVar, this.f52589i));
             }
         }
 
@@ -99,34 +99,34 @@ public abstract class u {
         }
 
         a(t tVar, k kVar, t.c cVar) {
-            this.f52587a = tVar;
-            this.f52588b = kVar;
-            this.f52589c = cVar;
+            this.f52584a = tVar;
+            this.f52585b = kVar;
+            this.f52586c = cVar;
         }
 
         @Override // wm.k
         public Object d(Object obj, i iVar) {
-            return this.f52587a.a(obj, iVar, new C0705a(this.f52588b), this.f52589c);
+            return this.f52584a.a(obj, iVar, new C0705a(this.f52585b), this.f52586c);
         }
 
         @Override // wm.k
         public Object e(Object obj, Object obj2, Object obj3) {
-            return this.f52587a.d(obj, obj2, obj3, new b(this.f52588b), this.f52589c);
+            return this.f52584a.d(obj, obj2, obj3, new b(this.f52585b), this.f52586c);
         }
 
         @Override // wm.k
         public Object f(Object obj, Object obj2, k.a context) {
             Intrinsics.checkNotNullParameter(context, "context");
-            return this.f52587a.b(obj, obj2, context, new c(context, this.f52588b, this), this.f52589c);
+            return this.f52584a.b(obj, obj2, context, new c(context, this.f52585b, this), this.f52586c);
         }
 
         @Override // wm.k
         public i g(Object obj) {
-            return this.f52587a.e(obj, new d(this.f52588b), this.f52589c);
+            return this.f52584a.e(obj, new d(this.f52585b), this.f52586c);
         }
 
         public String toString() {
-            return "InterceptedWorkflow(" + this.f52588b + ", " + this + "@intercept)";
+            return "InterceptedWorkflow(" + this.f52585b + ", " + this + "@intercept)";
         }
     }
 
@@ -134,7 +134,7 @@ public abstract class u {
         Intrinsics.checkNotNullParameter(tVar, "<this>");
         Intrinsics.checkNotNullParameter(workflow, "workflow");
         Intrinsics.checkNotNullParameter(workflowSession, "workflowSession");
-        if (tVar == e.f52534a) {
+        if (tVar == e.f52531a) {
             return workflow;
         }
         return new a(tVar, workflow, workflowSession);

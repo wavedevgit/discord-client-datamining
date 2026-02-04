@@ -1,55 +1,63 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun96904: for (var _fun96904_ip = 0;;) switch (_fun96904_ip) {
+    _fun96916: for (var _fun96916_ip = 0;;) switch (_fun96916_ip) {
         case 0:
-            var1 = {};
-            var1 = var1.propertyIsEnumerable;
-            var2 = global;
-            var2 = var2.Object;
-            var2 = var2.getOwnPropertyDescriptor;
-            var _closure1_slot0 = var2;
-            if (!var2) {
-                _fun96904_ip = 57;
-                continue _fun96904
-            }
-        case 31:
-            var5 = var1.call;
-            var4 = {};
-            var3 = 2;
-            var4[1] = var3;
+            var5 = require;
+            var6 = dependencyMap;
+            var _closure1_slot0 = var5;
+            var _closure1_slot1 = var6;
+            var4 = 0;
+            var2 = var6[var4];
+            var0 = undefined;
+            var7 = var5.bind(var0)(var2);
             var3 = 1;
-            var3 = var5.bind(var1)(var4, var3);
-            var2 = !var3;
-        case 57:
+            var2 = var6[var3];
+            var2 = var5.bind(var0)(var2);
+            var2 = var2.document;
+            var2 = var7.bind(var0)(var2);
             if (!var2) {
-                _fun96904_ip = 67;
-                continue _fun96904
+                _fun96916_ip = 90;
+                continue _fun96916
             }
-        case 60:
-            var1 = function arg0() {
-                _fun96905: for (var _fun96905_ip = 0;;) switch (_fun96905_ip) {
+        case 55:
+            var4 = var6[var4];
+            var4 = var5.bind(var0)(var4);
+            var3 = var6[var3];
+            var3 = var5.bind(var0)(var3);
+            var3 = var3.document;
+            var3 = var3.createElement;
+            var2 = var4.bind(var0)(var3);
+        case 90:
+            var _closure1_slot2 = var2;
+            var2 = function(arg0) { // Environment: var1
+                _fun96917: for (var _fun96917_ip = 0;;) switch (_fun96917_ip) {
                     case 0:
-                        var3 = _closure1_slot0;
-                        var2 = undefined;
-                        var1 = this;
-                        var0 = arg0;
-                        var1 = var3.bind(var2)(var1, var0);
-                        var2 = !var1;
-                        var0 = !var2;
-                        if (var2) {
-                            _fun96905_ip = 35;
-                            continue _fun96905
+                        var0 = _closure1_slot2;
+                        if (var0) {
+                            _fun96917_ip = 14;
+                            continue _fun96917
                         }
-                    case 30:
-                        var0 = var1.enumerable;
-                    case 35:
+                    case 10:
+                        var0 = {};
+                        _fun96917_ip = 56;
+                        continue _fun96917;
+                    case 14:
+                        var3 = _closure1_slot0;
+                        var2 = _closure1_slot1;
+                        var1 = 1;
+                        var2 = var2[var1];
+                        var1 = undefined;
+                        var1 = var3.bind(var1)(var2);
+                        var3 = var1.document;
+                        var2 = var3.createElement;
+                        var1 = arg0;
+                        var0 = var2.bind(var3)(var1);
+                    case 56:
                         return var0;
                 }
             };
-        case 67:
-            var0 = arg5;
-            var0.f = var1;
-            var0 = undefined;
+            var1 = arg4;
+            var1.exports = var2;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12667, 12642]);

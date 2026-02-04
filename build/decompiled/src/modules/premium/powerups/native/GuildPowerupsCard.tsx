@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/powerups/native/GuildPowerupsCard.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun102489: for (var _fun102489_ip = 0;;) switch (_fun102489_ip) {
+        _fun102502: for (var _fun102502_ip = 0;;) switch (_fun102502_ip) {
             case 0:
                 var2 = arg0;
                 var8 = var2.children;
@@ -141,8 +141,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var11 == var9;
                 var13 = undefined;
                 if (var12) {
-                    _fun102489_ip = 103;
-                    continue _fun102489
+                    _fun102502_ip = 103;
+                    continue _fun102502
                 }
             case 98:
                 var13 = var9.type;
@@ -150,8 +150,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = 'active';
                 var12 = var12 === var13;
                 if (!var12) {
-                    _fun102489_ip = 120;
-                    continue _fun102489
+                    _fun102502_ip = 120;
+                    continue _fun102502
                 }
             case 114:
                 var12 = var10.cardActive;
@@ -160,8 +160,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var11 == var9;
                 var13 = undefined;
                 if (var12) {
-                    _fun102489_ip = 138;
-                    continue _fun102489
+                    _fun102502_ip = 138;
+                    continue _fun102502
                 }
             case 133:
                 var13 = var9.type;
@@ -169,8 +169,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = 'expiring';
                 var12 = var12 === var13;
                 if (!var12) {
-                    _fun102489_ip = 157;
-                    continue _fun102489
+                    _fun102502_ip = 157;
+                    continue _fun102502
                 }
             case 151:
                 var12 = var10.cardExpiring;
@@ -179,8 +179,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var11 == var9;
                 var11 = undefined;
                 if (var12) {
-                    _fun102489_ip = 175;
-                    continue _fun102489
+                    _fun102502_ip = 175;
+                    continue _fun102502
                 }
             case 170:
                 var11 = var9.type;
@@ -188,8 +188,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = 'removing';
                 var9 = var9 === var11;
                 if (!var9) {
-                    _fun102489_ip = 194;
-                    continue _fun102489
+                    _fun102502_ip = 194;
+                    continue _fun102502
                 }
             case 188:
                 var9 = var10.cardRemoving;

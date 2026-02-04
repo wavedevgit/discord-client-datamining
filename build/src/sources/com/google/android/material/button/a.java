@@ -144,7 +144,7 @@ public class a {
             if (n10 != null) {
                 float f11 = this.f14304h;
                 if (this.f14310n) {
-                    i10 = eh.a.d(this.f14297a, b.f54103o);
+                    i10 = eh.a.d(this.f14297a, b.f54100o);
                 } else {
                     i10 = 0;
                 }
@@ -171,7 +171,7 @@ public class a {
         gVar2.setTint(0);
         float f10 = this.f14304h;
         if (this.f14310n) {
-            i10 = eh.a.d(this.f14297a, b.f54103o);
+            i10 = eh.a.d(this.f14297a, b.f54100o);
         } else {
             i10 = 0;
         }
@@ -340,14 +340,14 @@ public class a {
             z(this.f14298b.w(dimensionPixelSize));
             this.f14312p = true;
         }
-        this.f14304h = typedArray.getDimensionPixelSize(yg.k.f54347h3, 0);
+        this.f14304h = typedArray.getDimensionPixelSize(yg.k.f54344h3, 0);
         this.f14305i = o.i(typedArray.getInt(yg.k.W2, -1), PorterDuff.Mode.SRC_IN);
         this.f14306j = c.a(this.f14297a.getContext(), typedArray, yg.k.V2);
-        this.f14307k = c.a(this.f14297a.getContext(), typedArray, yg.k.f54337g3);
-        this.f14308l = c.a(this.f14297a.getContext(), typedArray, yg.k.f54327f3);
+        this.f14307k = c.a(this.f14297a.getContext(), typedArray, yg.k.f54334g3);
+        this.f14308l = c.a(this.f14297a.getContext(), typedArray, yg.k.f54324f3);
         this.f14313q = typedArray.getBoolean(yg.k.U2, false);
         this.f14316t = typedArray.getDimensionPixelSize(yg.k.Y2, 0);
-        this.f14314r = typedArray.getBoolean(yg.k.f54357i3, true);
+        this.f14314r = typedArray.getBoolean(yg.k.f54354i3, true);
         int E = h0.E(this.f14297a);
         int paddingTop = this.f14297a.getPaddingTop();
         int D = h0.D(this.f14297a);

@@ -161,7 +161,7 @@ public final class b implements Closeable, Flushable {
         private final Headers e(Headers headers, Headers headers2) {
             Set d10 = d(headers2);
             if (d10.isEmpty()) {
-                return xt.e.f53568b;
+                return xt.e.f53565b;
             }
             Headers.a aVar = new Headers.a();
             int size = headers.size();

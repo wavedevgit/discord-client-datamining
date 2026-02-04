@@ -44,7 +44,7 @@ public final class d {
     }
 
     public final void a() {
-        if (xt.e.f53574h && Thread.holdsLock(this)) {
+        if (xt.e.f53571h && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         synchronized (this.f6146a) {
@@ -184,7 +184,7 @@ public final class d {
     }
 
     public final void n() {
-        if (xt.e.f53574h && Thread.holdsLock(this)) {
+        if (xt.e.f53571h && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         synchronized (this.f6146a) {

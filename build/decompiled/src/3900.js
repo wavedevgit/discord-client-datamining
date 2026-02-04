@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun35156: for (var _fun35156_ip = 0;;) switch (_fun35156_ip) {
+    _fun35158: for (var _fun35158_ip = 0;;) switch (_fun35158_ip) {
         case 0:
             var5 = require;
             var2 = exports;
@@ -23,13 +23,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot3 = var0;
             var1 = function() { // Environment: var4
                 var0 = function arg0, arg1() {
-                    _fun35158: for (var _fun35158_ip = 0;;) switch (_fun35158_ip) {
+                    _fun35160: for (var _fun35160_ip = 0;;) switch (_fun35160_ip) {
                         case 0:
                             var0 = global;
                             var1 = var0._WORKLET;
                             if (var1) {
-                                _fun35158_ip = 59;
-                                continue _fun35158
+                                _fun35160_ip = 59;
+                                continue _fun35160
                             }
                         case 14:
                             var3 = _closure1_slot1;
@@ -42,8 +42,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = var3.warn;
                             var1 = 'You can not use setGestureState in non-worklet function.';
                             var1 = var2.bind(var3)(var1);
-                            _fun35158_ip = 83;
-                            continue _fun35158;
+                            _fun35160_ip = 83;
+                            continue _fun35160;
                         case 59:
                             var3 = _closure1_slot0;
                             var2 = var3._setGestureState;
@@ -79,8 +79,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var7 = var8.shouldBeUseWeb;
             var7 = var7.bind(var8)();
             if (!var7) {
-                _fun35156_ip = 176;
-                continue _fun35156
+                _fun35158_ip = 176;
+                continue _fun35158
             }
         case 110:
             var7 = var6[var3];
@@ -88,8 +88,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var7 = var8.isJest;
             var7 = var7.bind(var8)();
             if (var7) {
-                _fun35156_ip = 168;
-                continue _fun35156
+                _fun35158_ip = 168;
+                continue _fun35158
             }
         case 132:
             var3 = var6[var3];
@@ -97,8 +97,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var5.isChromeDebugger;
             var3 = var3.bind(var5)();
             if (var3) {
-                _fun35156_ip = 161;
-                continue _fun35156
+                _fun35158_ip = 161;
+                continue _fun35158
             }
         case 154:
             var3 = function() {
@@ -114,8 +114,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var2.bind(var3)(var1);
                 return var0;
             };
-            _fun35156_ip = 166;
-            continue _fun35156;
+            _fun35158_ip = 166;
+            continue _fun35158;
         case 161:
             var3 = function() {
                 var2 = _closure1_slot1;
@@ -131,8 +131,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
         case 166:
-            _fun35156_ip = 173;
-            continue _fun35156;
+            _fun35158_ip = 173;
+            continue _fun35158;
         case 168:
             var3 = function() {
                 var2 = _closure1_slot1;

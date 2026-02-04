@@ -16,24 +16,24 @@ public abstract class b {
     public static final class a extends BottomSheetBehavior.g {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Function0 f52614a;
+        final /* synthetic */ Function0 f52611a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ View f52615b;
+        final /* synthetic */ View f52612b;
 
         a(Function0 function0, View view) {
-            this.f52614a = function0;
-            this.f52615b = view;
+            this.f52611a = function0;
+            this.f52612b = view;
         }
 
         @Override // com.google.android.material.bottomsheet.BottomSheetBehavior.g
         public void b(View bottomSheet, float f10) {
             View view;
             Intrinsics.checkNotNullParameter(bottomSheet, "bottomSheet");
-            if (f10 > 0.0f && (view = this.f52615b) != null) {
+            if (f10 > 0.0f && (view = this.f52612b) != null) {
                 view.setVisibility(0);
             }
-            View view2 = this.f52615b;
+            View view2 = this.f52612b;
             if (view2 != null) {
                 view2.setAlpha(kotlin.ranges.d.c(f10, 0.0f));
             }
@@ -43,8 +43,8 @@ public abstract class b {
         public void c(View bottomSheet, int i10) {
             Intrinsics.checkNotNullParameter(bottomSheet, "bottomSheet");
             if (i10 == 4 || i10 == 5) {
-                this.f52614a.invoke();
-                View view = this.f52615b;
+                this.f52611a.invoke();
+                View view = this.f52612b;
                 if (view != null) {
                     view.setVisibility(8);
                 }

@@ -3,22 +3,22 @@ package ud;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f50503a;
+    public final String f50500a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final String f50504b;
+    public final String f50501b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f50505c;
+    public final int f50502c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f50506d;
+    public final int f50503d;
 
     public b(String str, String str2, int i10, int i11) {
-        this.f50503a = str;
-        this.f50504b = str2;
-        this.f50505c = i10;
-        this.f50506d = i11;
+        this.f50500a = str;
+        this.f50501b = str2;
+        this.f50502c = i10;
+        this.f50503d = i11;
     }
 
     public boolean equals(Object obj) {
@@ -29,13 +29,13 @@ public final class b {
             return false;
         }
         b bVar = (b) obj;
-        if (this.f50505c == bVar.f50505c && this.f50506d == bVar.f50506d && ii.j.a(this.f50503a, bVar.f50503a) && ii.j.a(this.f50504b, bVar.f50504b)) {
+        if (this.f50502c == bVar.f50502c && this.f50503d == bVar.f50503d && ii.j.a(this.f50500a, bVar.f50500a) && ii.j.a(this.f50501b, bVar.f50501b)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return ii.j.b(this.f50503a, this.f50504b, Integer.valueOf(this.f50505c), Integer.valueOf(this.f50506d));
+        return ii.j.b(this.f50500a, this.f50501b, Integer.valueOf(this.f50502c), Integer.valueOf(this.f50503d));
     }
 }

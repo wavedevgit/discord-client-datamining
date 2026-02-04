@@ -117,4 +117,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.useHighlightNotifications = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 7005, 660, 566, 8996, 1234, 11052, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 7008, 660, 566, 8999, 1234, 11055, 2]);

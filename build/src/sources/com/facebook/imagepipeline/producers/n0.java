@@ -92,7 +92,7 @@ public class n0 implements w0 {
             if (bitmap == null) {
                 return null;
             }
-            sa.f p12 = sa.f.p1(bitmap, ka.e.a(), sa.n.f49369d, 0);
+            sa.f p12 = sa.f.p1(bitmap, ka.e.a(), sa.n.f49366d, 0);
             this.f10456r.B("image_format", "thumbnail");
             p12.A0(this.f10456r.getExtras());
             return CloseableReference.J0(p12);

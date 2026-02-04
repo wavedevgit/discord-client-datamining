@@ -19,18 +19,18 @@ import java.util.Set;
 public class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final SharedPreferences f56001a;
+    private final SharedPreferences f55998a;
 
     public k(Context context, String str) {
-        this.f56001a = context.getSharedPreferences("FirebaseHeartBeat" + str, 0);
+        this.f55998a = context.getSharedPreferences("FirebaseHeartBeat" + str, 0);
     }
 
     private synchronized void a() {
         try {
-            long j10 = this.f56001a.getLong("fire-count", 0L);
+            long j10 = this.f55998a.getLong("fire-count", 0L);
             String str = "";
             String str2 = null;
-            for (Map.Entry<String, ?> entry : this.f56001a.getAll().entrySet()) {
+            for (Map.Entry<String, ?> entry : this.f55998a.getAll().entrySet()) {
                 if (entry.getValue() instanceof Set) {
                     for (String str3 : (Set) entry.getValue()) {
                         if (str2 != null && str2.compareTo(str3) <= 0) {
@@ -40,9 +40,9 @@ public class k {
                     }
                 }
             }
-            HashSet hashSet = new HashSet(this.f56001a.getStringSet(str, new HashSet()));
+            HashSet hashSet = new HashSet(this.f55998a.getStringSet(str, new HashSet()));
             hashSet.remove(str2);
-            this.f56001a.edit().putStringSet(str, hashSet).putLong("fire-count", j10 - 1).commit();
+            this.f55998a.edit().putStringSet(str, hashSet).putLong("fire-count", j10 - 1).commit();
         } catch (Throwable th2) {
             throw th2;
         }
@@ -56,7 +56,7 @@ public class k {
     }
 
     private synchronized String e(String str) {
-        for (Map.Entry<String, ?> entry : this.f56001a.getAll().entrySet()) {
+        for (Map.Entry<String, ?> entry : this.f55998a.getAll().entrySet()) {
             if (entry.getValue() instanceof Set) {
                 for (String str2 : (Set) entry.getValue()) {
                     if (str.equals(str2)) {
@@ -75,12 +75,12 @@ public class k {
             if (e10 == null) {
                 return;
             }
-            HashSet hashSet = new HashSet(this.f56001a.getStringSet(e10, new HashSet()));
+            HashSet hashSet = new HashSet(this.f55998a.getStringSet(e10, new HashSet()));
             hashSet.remove(str);
             if (hashSet.isEmpty()) {
-                this.f56001a.edit().remove(e10).commit();
+                this.f55998a.edit().remove(e10).commit();
             } else {
-                this.f56001a.edit().putStringSet(e10, hashSet).commit();
+                this.f55998a.edit().putStringSet(e10, hashSet).commit();
             }
         } catch (Throwable th2) {
             throw th2;
@@ -89,17 +89,17 @@ public class k {
 
     private synchronized void m(String str, String str2) {
         h(str2);
-        HashSet hashSet = new HashSet(this.f56001a.getStringSet(str, new HashSet()));
+        HashSet hashSet = new HashSet(this.f55998a.getStringSet(str, new HashSet()));
         hashSet.add(str2);
-        this.f56001a.edit().putStringSet(str, hashSet).commit();
+        this.f55998a.edit().putStringSet(str, hashSet).commit();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public synchronized void b() {
         try {
-            SharedPreferences.Editor edit = this.f56001a.edit();
+            SharedPreferences.Editor edit = this.f55998a.edit();
             int i10 = 0;
-            for (Map.Entry<String, ?> entry : this.f56001a.getAll().entrySet()) {
+            for (Map.Entry<String, ?> entry : this.f55998a.getAll().entrySet()) {
                 if (entry.getValue() instanceof Set) {
                     String d10 = d(System.currentTimeMillis());
                     String key = entry.getKey();
@@ -129,7 +129,7 @@ public class k {
         ArrayList arrayList;
         try {
             arrayList = new ArrayList();
-            for (Map.Entry<String, ?> entry : this.f56001a.getAll().entrySet()) {
+            for (Map.Entry<String, ?> entry : this.f55998a.getAll().entrySet()) {
                 if (entry.getValue() instanceof Set) {
                     HashSet hashSet = new HashSet((Set) entry.getValue());
                     hashSet.remove(d(System.currentTimeMillis()));
@@ -152,7 +152,7 @@ public class k {
     /* JADX INFO: Access modifiers changed from: package-private */
     public synchronized void g() {
         String d10 = d(System.currentTimeMillis());
-        this.f56001a.edit().putString("last-used-date", d10).commit();
+        this.f55998a.edit().putString("last-used-date", d10).commit();
         h(d10);
     }
 
@@ -162,21 +162,21 @@ public class k {
     }
 
     synchronized boolean j(String str, long j10) {
-        if (this.f56001a.contains(str)) {
-            if (!f(this.f56001a.getLong(str, -1L), j10)) {
-                this.f56001a.edit().putLong(str, j10).commit();
+        if (this.f55998a.contains(str)) {
+            if (!f(this.f55998a.getLong(str, -1L), j10)) {
+                this.f55998a.edit().putLong(str, j10).commit();
                 return true;
             }
             return false;
         }
-        this.f56001a.edit().putLong(str, j10).commit();
+        this.f55998a.edit().putLong(str, j10).commit();
         return true;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public synchronized void k(long j10, String str) {
         String d10 = d(j10);
-        if (this.f56001a.getString("last-used-date", "").equals(d10)) {
+        if (this.f55998a.getString("last-used-date", "").equals(d10)) {
             String e10 = e(d10);
             if (e10 == null) {
                 return;
@@ -187,17 +187,17 @@ public class k {
             m(str, d10);
             return;
         }
-        long j11 = this.f56001a.getLong("fire-count", 0L);
+        long j11 = this.f55998a.getLong("fire-count", 0L);
         if (j11 + 1 == 30) {
             a();
-            j11 = this.f56001a.getLong("fire-count", 0L);
+            j11 = this.f55998a.getLong("fire-count", 0L);
         }
-        HashSet hashSet = new HashSet(this.f56001a.getStringSet(str, new HashSet()));
+        HashSet hashSet = new HashSet(this.f55998a.getStringSet(str, new HashSet()));
         hashSet.add(d10);
-        this.f56001a.edit().putStringSet(str, hashSet).putLong("fire-count", j11 + 1).putString("last-used-date", d10).commit();
+        this.f55998a.edit().putStringSet(str, hashSet).putLong("fire-count", j11 + 1).putString("last-used-date", d10).commit();
     }
 
     synchronized void l(long j10) {
-        this.f56001a.edit().putLong("fire-global", j10).commit();
+        this.f55998a.edit().putLong("fire-global", j10).commit();
     }
 }

@@ -39,78 +39,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = 'getConstants';
     var3[var9] = var10;
     var10 = function arg0() {
-        _fun30568: for (var _fun30568_ip = 0;;) switch (_fun30568_ip) {
-            case 0:
-                var3 = arg0;
-                var1 = 'string';
-                var0 = typeof var3;
-                if (!(var1 !== var0)) {
-                    _fun30568_ip = 52;
-                    continue _fun30568
-                }
-            case 14:
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 1;
-                var1 = var1[var0];
-                var0 = undefined;
-                var1 = var2.bind(var0)(var1);
-                var0 = var1.setInputDevice;
-                var0 = var0.bind(var1)(var3);
-                _fun30568_ip = 90;
-                continue _fun30568;
-            case 52:
-                var4 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var1 = 1;
-                var2 = var2[var1];
-                var1 = undefined;
-                var2 = var4.bind(var1)(var2);
-                var1 = var2.setInputDeviceById;
-                var0 = var1.bind(var2)(var3);
-            case 90:
-                return var0;
-        }
-    };
-    var9 = 'setInputDevice';
-    var3[var9] = var10;
-    var10 = function arg0() {
-        _fun30569: for (var _fun30569_ip = 0;;) switch (_fun30569_ip) {
-            case 0:
-                var3 = arg0;
-                var1 = 'string';
-                var0 = typeof var3;
-                if (!(var1 !== var0)) {
-                    _fun30569_ip = 52;
-                    continue _fun30569
-                }
-            case 14:
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 1;
-                var1 = var1[var0];
-                var0 = undefined;
-                var1 = var2.bind(var0)(var1);
-                var0 = var1.setOutputDevice;
-                var0 = var0.bind(var1)(var3);
-                _fun30569_ip = 90;
-                continue _fun30569;
-            case 52:
-                var4 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var1 = 1;
-                var2 = var2[var1];
-                var1 = undefined;
-                var2 = var4.bind(var1)(var2);
-                var1 = var2.setOutputDeviceById;
-                var0 = var1.bind(var2)(var3);
-            case 90:
-                return var0;
-        }
-    };
-    var9 = 'setOutputDevice';
-    var3[var9] = var10;
-    var10 = function arg0() {
         _fun30570: for (var _fun30570_ip = 0;;) switch (_fun30570_ip) {
             case 0:
                 var3 = arg0;
@@ -127,10 +55,82 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1[var0];
                 var0 = undefined;
                 var1 = var2.bind(var0)(var1);
-                var0 = var1.setVideoInputDevice;
+                var0 = var1.setInputDevice;
                 var0 = var0.bind(var1)(var3);
                 _fun30570_ip = 90;
                 continue _fun30570;
+            case 52:
+                var4 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var1 = 1;
+                var2 = var2[var1];
+                var1 = undefined;
+                var2 = var4.bind(var1)(var2);
+                var1 = var2.setInputDeviceById;
+                var0 = var1.bind(var2)(var3);
+            case 90:
+                return var0;
+        }
+    };
+    var9 = 'setInputDevice';
+    var3[var9] = var10;
+    var10 = function arg0() {
+        _fun30571: for (var _fun30571_ip = 0;;) switch (_fun30571_ip) {
+            case 0:
+                var3 = arg0;
+                var1 = 'string';
+                var0 = typeof var3;
+                if (!(var1 !== var0)) {
+                    _fun30571_ip = 52;
+                    continue _fun30571
+                }
+            case 14:
+                var2 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 1;
+                var1 = var1[var0];
+                var0 = undefined;
+                var1 = var2.bind(var0)(var1);
+                var0 = var1.setOutputDevice;
+                var0 = var0.bind(var1)(var3);
+                _fun30571_ip = 90;
+                continue _fun30571;
+            case 52:
+                var4 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var1 = 1;
+                var2 = var2[var1];
+                var1 = undefined;
+                var2 = var4.bind(var1)(var2);
+                var1 = var2.setOutputDeviceById;
+                var0 = var1.bind(var2)(var3);
+            case 90:
+                return var0;
+        }
+    };
+    var9 = 'setOutputDevice';
+    var3[var9] = var10;
+    var10 = function arg0() {
+        _fun30572: for (var _fun30572_ip = 0;;) switch (_fun30572_ip) {
+            case 0:
+                var3 = arg0;
+                var1 = 'string';
+                var0 = typeof var3;
+                if (!(var1 !== var0)) {
+                    _fun30572_ip = 52;
+                    continue _fun30572
+                }
+            case 14:
+                var2 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 1;
+                var1 = var1[var0];
+                var0 = undefined;
+                var1 = var2.bind(var0)(var1);
+                var0 = var1.setVideoInputDevice;
+                var0 = var0.bind(var1)(var3);
+                _fun30572_ip = 90;
+                continue _fun30572;
             case 52:
                 var4 = _closure1_slot0;
                 var2 = _closure1_slot1;

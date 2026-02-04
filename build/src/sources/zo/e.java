@@ -8,7 +8,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f56118a = new a(null);
+    public static final a f56115a = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -17,7 +17,7 @@ public abstract class e {
         }
 
         public final Set a() {
-            return x0.i(b.f56112q, BackStackContainer.f17664i);
+            return x0.i(b.f56109q, BackStackContainer.f17664i);
         }
 
         private a() {
@@ -25,6 +25,6 @@ public abstract class e {
     }
 
     public static final Set a() {
-        return f56118a.a();
+        return f56115a.a();
     }
 }

@@ -14,34 +14,34 @@ import po.g2;
 public final class a implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f49038a;
+    private final ConstraintLayout f49035a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ConstraintLayout f49039b;
+    public final ConstraintLayout f49036b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final Button f49040c;
+    public final Button f49037c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final Flow f49041d;
+    public final Flow f49038d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final TextView f49042e;
+    public final TextView f49039e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final TextView f49043f;
+    public final TextView f49040f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final Button f49044g;
+    public final Button f49041g;
 
     private a(ConstraintLayout constraintLayout, ConstraintLayout constraintLayout2, Button button, Flow flow, TextView textView, TextView textView2, Button button2) {
-        this.f49038a = constraintLayout;
-        this.f49039b = constraintLayout2;
-        this.f49040c = button;
-        this.f49041d = flow;
-        this.f49042e = textView;
-        this.f49043f = textView2;
-        this.f49044g = button2;
+        this.f49035a = constraintLayout;
+        this.f49036b = constraintLayout2;
+        this.f49037c = button;
+        this.f49038d = flow;
+        this.f49039e = textView;
+        this.f49040f = textView2;
+        this.f49041g = button2;
     }
 
     public static a a(View view) {
@@ -81,6 +81,6 @@ public final class a implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f49038a;
+        return this.f49035a;
     }
 }

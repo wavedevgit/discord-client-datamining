@@ -66,7 +66,7 @@ public final class i implements ym.k {
         }
 
         private a() {
-            k.a aVar = ym.k.f54648a;
+            k.a aVar = ym.k.f54645a;
             this.f18516a = new ym.m(Reflection.getOrCreateKotlinClass(n.d.a.class), g2.f46488d, C0227a.f18517d);
         }
     }

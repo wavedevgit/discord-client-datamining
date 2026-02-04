@@ -29,7 +29,7 @@ public final class UserSelectComponent extends SearchableSelectComponent {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8257id;
+    private final String f8256id;
     private final int maxValues;
     private final int minValues;
     private final String placeholder;
@@ -73,7 +73,7 @@ public final class UserSelectComponent extends SearchableSelectComponent {
             v1.b(i10, 719, UserSelectComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f8257id = str;
+        this.f8256id = str;
         this.state = actionComponentState;
         this.customId = str2;
         if ((i10 & 16) == 0) {
@@ -106,7 +106,7 @@ public final class UserSelectComponent extends SearchableSelectComponent {
             i10 = userSelectComponent.type;
         }
         if ((i13 & 2) != 0) {
-            str = userSelectComponent.f8257id;
+            str = userSelectComponent.f8256id;
         }
         if ((i13 & 4) != 0) {
             actionComponentState = userSelectComponent.state;
@@ -174,7 +174,7 @@ public final class UserSelectComponent extends SearchableSelectComponent {
 
     @NotNull
     public final String component2() {
-        return this.f8257id;
+        return this.f8256id;
     }
 
     @NotNull
@@ -222,7 +222,7 @@ public final class UserSelectComponent extends SearchableSelectComponent {
         }
         if (obj instanceof UserSelectComponent) {
             UserSelectComponent userSelectComponent = (UserSelectComponent) obj;
-            return this.type == userSelectComponent.type && Intrinsics.areEqual(this.f8257id, userSelectComponent.f8257id) && this.state == userSelectComponent.state && Intrinsics.areEqual(this.customId, userSelectComponent.customId) && Intrinsics.areEqual(this.placeholder, userSelectComponent.placeholder) && Intrinsics.areEqual(this.accessibilityLabel, userSelectComponent.accessibilityLabel) && this.minValues == userSelectComponent.minValues && this.maxValues == userSelectComponent.maxValues && this.disabled == userSelectComponent.disabled && Intrinsics.areEqual(this.selectedOptions, userSelectComponent.selectedOptions);
+            return this.type == userSelectComponent.type && Intrinsics.areEqual(this.f8256id, userSelectComponent.f8256id) && this.state == userSelectComponent.state && Intrinsics.areEqual(this.customId, userSelectComponent.customId) && Intrinsics.areEqual(this.placeholder, userSelectComponent.placeholder) && Intrinsics.areEqual(this.accessibilityLabel, userSelectComponent.accessibilityLabel) && this.minValues == userSelectComponent.minValues && this.maxValues == userSelectComponent.maxValues && this.disabled == userSelectComponent.disabled && Intrinsics.areEqual(this.selectedOptions, userSelectComponent.selectedOptions);
         }
         return false;
     }
@@ -246,7 +246,7 @@ public final class UserSelectComponent extends SearchableSelectComponent {
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f8257id;
+        return this.f8256id;
     }
 
     @Override // com.discord.chat.bridge.botuikit.SelectComponent
@@ -282,7 +282,7 @@ public final class UserSelectComponent extends SearchableSelectComponent {
     }
 
     public int hashCode() {
-        int hashCode = ((((((Integer.hashCode(this.type) * 31) + this.f8257id.hashCode()) * 31) + this.state.hashCode()) * 31) + this.customId.hashCode()) * 31;
+        int hashCode = ((((((Integer.hashCode(this.type) * 31) + this.f8256id.hashCode()) * 31) + this.state.hashCode()) * 31) + this.customId.hashCode()) * 31;
         String str = this.placeholder;
         int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
         String str2 = this.accessibilityLabel;
@@ -292,7 +292,7 @@ public final class UserSelectComponent extends SearchableSelectComponent {
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f8257id;
+        String str = this.f8256id;
         ActionComponentState actionComponentState = this.state;
         String str2 = this.customId;
         String str3 = this.placeholder;
@@ -316,7 +316,7 @@ public final class UserSelectComponent extends SearchableSelectComponent {
         Intrinsics.checkNotNullParameter(customId, "customId");
         Intrinsics.checkNotNullParameter(selectedOptions, "selectedOptions");
         this.type = i10;
-        this.f8257id = id2;
+        this.f8256id = id2;
         this.state = state;
         this.customId = customId;
         this.placeholder = str;

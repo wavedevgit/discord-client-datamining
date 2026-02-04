@@ -3,10 +3,8 @@ package com.discord.notifications.api;
 import at.m;
 import com.discord.notifications.api.DirectReplyMessage;
 import com.discord.notifications.renderer.NotificationRenderer;
-import com.discord.primitives.ApplicationId;
 import com.discord.primitives.ChannelId;
 import com.discord.primitives.ChannelId$$serializer;
-import com.discord.primitives.GuildId;
 import com.discord.primitives.MessageId;
 import com.discord.primitives.MessageId$$serializer;
 import com.discord.primitives.UserId;
@@ -16,7 +14,6 @@ import dt.n2;
 import dt.p0;
 import dt.v1;
 import java.util.List;
-import java.util.Map;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
@@ -101,7 +98,7 @@ public final class DirectReplyMessage {
             }
             Integer num2 = num;
             String avatar = directReplyMessage.getAuthor().getAvatar();
-            return new NotificationData(NotificationData.TYPE_MESSAGE_CREATE, m992getId3Eiw7ao, (Integer) null, (String) null, type, content, (Long) null, channelType, directReplyMessage.getChannelName(), ChannelId.m1059boximpl(m991getChannelIdo4g7jtM), (String) null, (String) null, (ChannelId) null, (Integer) null, (String) null, l10, UserId.m1137boximpl(m996getIdre6GcUE), str, (String) null, num2, avatar, (String) null, (String) null, (Integer) null, (GuildId) null, directReplyMessage.getGuildName(), (String) null, (String) null, (Integer) null, (String) null, (ApplicationId) null, (String) null, (String) null, (NotificationMessage) null, (String) null, (Integer) null, true, true, (UserId) null, (String) null, (String) null, (String) null, (String) null, (String) null, (String) null, (Boolean) null, (String) null, (String) null, (Integer) null, (Integer) null, (Integer) null, (String) null, false, (Map) null, false, (String) null, (String) null, (String) null, (String) null, (String) null, (String) null, (Integer) null, (String) null, -35357620, 2147483599, (DefaultConstructorMarker) null);
+            return new NotificationData(NotificationData.TYPE_MESSAGE_CREATE, m992getId3Eiw7ao, null, null, type, content, null, channelType, directReplyMessage.getChannelName(), ChannelId.m1059boximpl(m991getChannelIdo4g7jtM), null, null, null, null, null, l10, UserId.m1137boximpl(m996getIdre6GcUE), str, null, num2, avatar, null, null, null, null, directReplyMessage.getGuildName(), null, null, null, null, null, null, null, null, null, null, true, true, null, null, null, null, null, null, null, null, null, null, null, null, null, null, false, null, false, null, null, null, null, null, null, null, null, null, -35357620, -49, null);
         }
 
         private Companion() {

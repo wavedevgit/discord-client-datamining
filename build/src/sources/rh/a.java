@@ -9,13 +9,13 @@ import yg.b;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int[] f48810a = {16842752, b.f54096i0};
+    private static final int[] f48807a = {16842752, b.f54093i0};
 
     /* renamed from: b  reason: collision with root package name */
-    private static final int[] f48811b = {b.E};
+    private static final int[] f48808b = {b.E};
 
     private static int a(Context context, AttributeSet attributeSet) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f48810a);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f48807a);
         int resourceId = obtainStyledAttributes.getResourceId(0, 0);
         int resourceId2 = obtainStyledAttributes.getResourceId(1, 0);
         obtainStyledAttributes.recycle();
@@ -26,7 +26,7 @@ public abstract class a {
     }
 
     private static int b(Context context, AttributeSet attributeSet, int i10, int i11) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f48811b, i10, i11);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f48808b, i10, i11);
         int resourceId = obtainStyledAttributes.getResourceId(0, 0);
         obtainStyledAttributes.recycle();
         return resourceId;

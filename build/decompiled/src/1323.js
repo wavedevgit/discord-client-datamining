@@ -31,17 +31,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.ignoreUnknownFields = var4;
     var _closure1_slot2 = var3;
     var3 = function arg0() {
-        _fun14884: for (var _fun14884_ip = 0;;) switch (_fun14884_ip) {
+        _fun14886: for (var _fun14886_ip = 0;;) switch (_fun14886_ip) {
             case 0:
                 var4 = arg0;
                 if (var4) {
-                    _fun14884_ip = 15;
-                    continue _fun14884
+                    _fun14886_ip = 15;
+                    continue _fun14886
                 }
             case 6:
                 var0 = _closure1_slot2;
-                _fun14884_ip = 60;
-                continue _fun14884;
+                _fun14886_ip = 60;
+                continue _fun14886;
             case 15:
                 var1 = global;
                 var3 = var1.Object;
@@ -58,17 +58,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.jsonReadOptions = var3;
     var3 = function arg0() {
-        _fun14885: for (var _fun14885_ip = 0;;) switch (_fun14885_ip) {
+        _fun14887: for (var _fun14887_ip = 0;;) switch (_fun14887_ip) {
             case 0:
                 var4 = arg0;
                 if (var4) {
-                    _fun14885_ip = 15;
-                    continue _fun14885
+                    _fun14887_ip = 15;
+                    continue _fun14887
                 }
             case 6:
                 var0 = _closure1_slot1;
-                _fun14885_ip = 60;
-                continue _fun14885;
+                _fun14887_ip = 60;
+                continue _fun14887;
             case 15:
                 var1 = global;
                 var3 = var1.Object;
@@ -85,7 +85,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.jsonWriteOptions = var3;
     var1 = function arg0, arg1() {
-        _fun14886: for (var _fun14886_ip = 0;;) switch (_fun14886_ip) {
+        _fun14888: for (var _fun14888_ip = 0;;) switch (_fun14888_ip) {
             case 0:
                 var9 = arg0;
                 var8 = arg1;
@@ -105,20 +105,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = undefined;
                 var2 = undefined;
                 if (var10) {
-                    _fun14886_ip = 79;
-                    continue _fun14886
+                    _fun14888_ip = 79;
+                    continue _fun14888
                 }
             case 73:
                 var2 = var9.typeRegistry;
             case 79:
                 if (!(var7 !== var2)) {
-                    _fun14886_ip = 87;
-                    continue _fun14886
+                    _fun14888_ip = 87;
+                    continue _fun14888
                 }
             case 83:
                 if (!(var6 === var2)) {
-                    _fun14886_ip = 91;
-                    continue _fun14886
+                    _fun14888_ip = 91;
+                    continue _fun14888
                 }
             case 87:
                 var2 = new Array(0);
@@ -128,20 +128,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9 = var7 == var8;
                 var1 = undefined;
                 if (var9) {
-                    _fun14886_ip = 115;
-                    continue _fun14886
+                    _fun14888_ip = 115;
+                    continue _fun14888
                 }
             case 109:
                 var1 = var8.typeRegistry;
             case 115:
                 if (!(var7 !== var1)) {
-                    _fun14886_ip = 123;
-                    continue _fun14886
+                    _fun14888_ip = 123;
+                    continue _fun14888
                 }
             case 119:
                 if (!(var6 === var1)) {
-                    _fun14886_ip = 127;
-                    continue _fun14886
+                    _fun14888_ip = 127;
+                    continue _fun14888
                 }
             case 123:
                 var1 = new Array(0);

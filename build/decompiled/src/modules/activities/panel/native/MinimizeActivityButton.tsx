@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var3;
     var3 = var6.memo;
     var1 = function arg0() {
-        _fun110415: for (var _fun110415_ip = 0;;) switch (_fun110415_ip) {
+        _fun110428: for (var _fun110428_ip = 0;;) switch (_fun110428_ip) {
             case 0:
                 var1 = arg0;
                 var7 = var1.activityName;
@@ -72,14 +72,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = undefined;
                 var5 = var0.bind(var4)();
                 if (!(var4 !== var7)) {
-                    _fun110415_ip = 79;
-                    continue _fun110415
+                    _fun110428_ip = 79;
+                    continue _fun110428
                 }
             case 68:
                 var0 = '';
                 if (!(var0 === var7)) {
-                    _fun110415_ip = 215;
-                    continue _fun110415
+                    _fun110428_ip = 215;
+                    continue _fun110428
                 }
             case 79:
                 var2 = _closure1_slot6;
@@ -115,8 +115,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.accessibilityLabel = var3;
                 var0.onPress = var8;
                 var0 = var2.bind(var4)(var1, var0);
-                _fun110415_ip = 391;
-                continue _fun110415;
+                _fun110428_ip = 391;
+                continue _fun110428;
             case 215:
                 var3 = _closure1_slot6;
                 var2 = _closure1_slot4;
@@ -172,4 +172,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7914, 33, 1297, 4084, 7368, 1234, 7508, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7917, 33, 1297, 4084, 7371, 1234, 7511, 2]);

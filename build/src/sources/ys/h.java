@@ -13,13 +13,13 @@ import kotlin.jvm.internal.Ref;
 public final class h implements o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f55287a;
+    private final List f55284a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f55288b;
+    private final int f55285b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f55289c;
+    private final boolean f55286c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class a extends Lambda implements Function0 {
@@ -37,21 +37,21 @@ public final class h implements o {
     static final class b extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Ref.IntRef f55291d;
+        final /* synthetic */ Ref.IntRef f55288d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ h f55292e;
+        final /* synthetic */ h f55289e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(Ref.IntRef intRef, h hVar) {
             super(0);
-            this.f55291d = intRef;
-            this.f55292e = hVar;
+            this.f55288d = intRef;
+            this.f55289e = hVar;
         }
 
         @Override // kotlin.jvm.functions.Function0
         public final String invoke() {
-            return "Only found " + this.f55291d.element + " digits in a row, but need to parse " + this.f55292e.d();
+            return "Only found " + this.f55288d.element + " digits in a row, but need to parse " + this.f55289e.d();
         }
     }
 
@@ -59,29 +59,29 @@ public final class h implements o {
     static final class c extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ String f55293d;
+        final /* synthetic */ String f55290d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ h f55294e;
+        final /* synthetic */ h f55291e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ int f55295i;
+        final /* synthetic */ int f55292i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ g f55296o;
+        final /* synthetic */ g f55293o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         c(String str, h hVar, int i10, g gVar) {
             super(0);
-            this.f55293d = str;
-            this.f55294e = hVar;
-            this.f55295i = i10;
-            this.f55296o = gVar;
+            this.f55290d = str;
+            this.f55291e = hVar;
+            this.f55292i = i10;
+            this.f55293o = gVar;
         }
 
         @Override // kotlin.jvm.functions.Function0
         public final String invoke() {
-            return "Can not interpret the string '" + this.f55293d + "' as " + ((e) this.f55294e.c().get(this.f55295i)).c() + ": " + this.f55296o.a();
+            return "Can not interpret the string '" + this.f55290d + "' as " + ((e) this.f55291e.c().get(this.f55292i)).c() + ": " + this.f55293o.a();
         }
     }
 
@@ -95,7 +95,7 @@ public final class h implements o {
         boolean z14;
         boolean z15;
         Intrinsics.checkNotNullParameter(consumers, "consumers");
-        this.f55287a = consumers;
+        this.f55284a = consumers;
         Iterator it = consumers.iterator();
         int i12 = 0;
         while (true) {
@@ -109,8 +109,8 @@ public final class h implements o {
             }
             i12 += i13;
         }
-        this.f55288b = i12;
-        List<e> list = this.f55287a;
+        this.f55285b = i12;
+        List<e> list = this.f55284a;
         if (!(list instanceof Collection) || !list.isEmpty()) {
             for (e eVar : list) {
                 if (eVar.b() == null) {
@@ -120,8 +120,8 @@ public final class h implements o {
             }
         }
         z10 = false;
-        this.f55289c = z10;
-        List<e> list2 = this.f55287a;
+        this.f55286c = z10;
+        List<e> list2 = this.f55284a;
         if (!(list2 instanceof Collection) || !list2.isEmpty()) {
             for (e eVar2 : list2) {
                 Integer b11 = eVar2.b();
@@ -145,7 +145,7 @@ public final class h implements o {
         }
         z12 = true;
         if (z12) {
-            List<e> list3 = this.f55287a;
+            List<e> list3 = this.f55284a;
             if ((list3 instanceof Collection) && list3.isEmpty()) {
                 i11 = 0;
             } else {
@@ -168,7 +168,7 @@ public final class h implements o {
             }
             if (!z14) {
                 ArrayList<e> arrayList = new ArrayList();
-                for (Object obj : this.f55287a) {
+                for (Object obj : this.f55284a) {
                     if (((e) obj).b() == null) {
                         z15 = true;
                     } else {
@@ -192,7 +192,7 @@ public final class h implements o {
     /* JADX INFO: Access modifiers changed from: private */
     public final String d() {
         String str;
-        List<e> list = this.f55287a;
+        List<e> list = this.f55284a;
         ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
         for (e eVar : list) {
             StringBuilder sb2 = new StringBuilder();
@@ -207,48 +207,48 @@ public final class h implements o {
             sb2.append(eVar.c());
             arrayList.add(sb2.toString());
         }
-        if (this.f55289c) {
-            return "a number with at least " + this.f55288b + " digits: " + arrayList;
+        if (this.f55286c) {
+            return "a number with at least " + this.f55285b + " digits: " + arrayList;
         }
-        return "a number with exactly " + this.f55288b + " digits: " + arrayList;
+        return "a number with exactly " + this.f55285b + " digits: " + arrayList;
     }
 
     @Override // ys.o
     public Object a(Object obj, CharSequence input, int i10) {
         int i11;
         Intrinsics.checkNotNullParameter(input, "input");
-        if (this.f55288b + i10 > input.length()) {
-            return k.f55299a.a(i10, new a());
+        if (this.f55285b + i10 > input.length()) {
+            return k.f55296a.a(i10, new a());
         }
         Ref.IntRef intRef = new Ref.IntRef();
         while (intRef.element + i10 < input.length() && vs.d.b(input.charAt(intRef.element + i10))) {
             intRef.element++;
         }
-        if (intRef.element < this.f55288b) {
-            return k.f55299a.a(i10, new b(intRef, this));
+        if (intRef.element < this.f55285b) {
+            return k.f55296a.a(i10, new b(intRef, this));
         }
-        int size = this.f55287a.size();
+        int size = this.f55284a.size();
         int i12 = 0;
         while (i12 < size) {
-            Integer b10 = ((e) this.f55287a.get(i12)).b();
+            Integer b10 = ((e) this.f55284a.get(i12)).b();
             if (b10 != null) {
                 i11 = b10.intValue();
             } else {
-                i11 = (intRef.element - this.f55288b) + 1;
+                i11 = (intRef.element - this.f55285b) + 1;
             }
             int i13 = i11 + i10;
-            g a10 = ((e) this.f55287a.get(i12)).a(obj, input, i10, i13);
+            g a10 = ((e) this.f55284a.get(i12)).a(obj, input, i10, i13);
             if (a10 != null) {
-                return k.f55299a.a(i10, new c(input.subSequence(i10, i13).toString(), this, i12, a10));
+                return k.f55296a.a(i10, new c(input.subSequence(i10, i13).toString(), this, i12, a10));
             }
             i12++;
             i10 = i13;
         }
-        return k.f55299a.b(i10);
+        return k.f55296a.b(i10);
     }
 
     public final List c() {
-        return this.f55287a;
+        return this.f55284a;
     }
 
     public String toString() {

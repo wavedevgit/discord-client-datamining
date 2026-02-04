@@ -6,23 +6,23 @@ import kotlin.coroutines.CoroutineContext;
 final class v implements u, q {
 
     /* renamed from: d  reason: collision with root package name */
-    private final /* synthetic */ q f51821d;
+    private final /* synthetic */ q f51818d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final CoroutineContext f51822e;
+    private final CoroutineContext f51819e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f51823d;
+        Object f51820d;
 
         /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f51824e;
+        /* synthetic */ Object f51821e;
 
         /* renamed from: o  reason: collision with root package name */
-        int f51826o;
+        int f51823o;
 
         a(Continuation continuation) {
             super(continuation);
@@ -30,15 +30,15 @@ final class v implements u, q {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f51824e = obj;
-            this.f51826o |= Integer.MIN_VALUE;
+            this.f51821e = obj;
+            this.f51823o |= Integer.MIN_VALUE;
             return v.this.f2(null, this);
         }
     }
 
     public v(q qVar, CoroutineContext coroutineContext) {
-        this.f51821d = qVar;
-        this.f51822e = coroutineContext;
+        this.f51818d = qVar;
+        this.f51819e = coroutineContext;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
@@ -55,20 +55,20 @@ final class v implements u, q {
             if (r0 == 0) goto L13
             r0 = r6
             w0.v$a r0 = (w0.v.a) r0
-            int r1 = r0.f51826o
+            int r1 = r0.f51823o
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f51826o = r1
+            r0.f51823o = r1
             goto L18
         L13:
             w0.v$a r0 = new w0.v$a
             r0.<init>(r6)
         L18:
-            java.lang.Object r6 = r0.f51824e
+            java.lang.Object r6 = r0.f51821e
             java.lang.Object r1 = rr.b.f()
-            int r2 = r0.f51826o
+            int r2 = r0.f51823o
             r3 = 1
             if (r2 == 0) goto L37
             if (r2 == r3) goto L2d
@@ -77,7 +77,7 @@ final class v implements u, q {
             r5.<init>(r6)
             throw r5
         L2d:
-            java.lang.Object r5 = r0.f51823d
+            java.lang.Object r5 = r0.f51820d
             kotlin.jvm.functions.Function0 r5 = (kotlin.jvm.functions.Function0) r5
             kotlin.c.b(r6)     // Catch: java.lang.Throwable -> L35
             goto L5a
@@ -86,8 +86,8 @@ final class v implements u, q {
             goto L60
         L37:
             kotlin.c.b(r6)
-            r0.f51823d = r5     // Catch: java.lang.Throwable -> L35
-            r0.f51826o = r3     // Catch: java.lang.Throwable -> L35
+            r0.f51820d = r5     // Catch: java.lang.Throwable -> L35
+            r0.f51823o = r3     // Catch: java.lang.Throwable -> L35
             kotlinx.coroutines.e r6 = new kotlinx.coroutines.e     // Catch: java.lang.Throwable -> L35
             kotlin.coroutines.Continuation r2 = rr.b.c(r0)     // Catch: java.lang.Throwable -> L35
             r6.<init>(r2, r3)     // Catch: java.lang.Throwable -> L35
@@ -112,16 +112,16 @@ final class v implements u, q {
 
     @Override // kotlinx.coroutines.CoroutineScope
     public CoroutineContext getCoroutineContext() {
-        return this.f51822e;
+        return this.f51819e;
     }
 
     @Override // w0.q, w0.g0
     public Object getValue() {
-        return this.f51821d.getValue();
+        return this.f51818d.getValue();
     }
 
     @Override // w0.q
     public void setValue(Object obj) {
-        this.f51821d.setValue(obj);
+        this.f51818d.setValue(obj);
     }
 }

@@ -3,43 +3,43 @@ package x5;
 public class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String[] f53170a = new String[5];
+    private final String[] f53167a = new String[5];
 
     /* renamed from: b  reason: collision with root package name */
-    private final long[] f53171b = new long[5];
+    private final long[] f53168b = new long[5];
 
     /* renamed from: c  reason: collision with root package name */
-    private int f53172c = 0;
+    private int f53169c = 0;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f53173d = 0;
+    private int f53170d = 0;
 
     public void a(String str) {
-        int i10 = this.f53172c;
+        int i10 = this.f53169c;
         if (i10 == 5) {
-            this.f53173d++;
+            this.f53170d++;
             return;
         }
-        this.f53170a[i10] = str;
-        this.f53171b[i10] = System.nanoTime();
+        this.f53167a[i10] = str;
+        this.f53168b[i10] = System.nanoTime();
         w1.i.a(str);
-        this.f53172c++;
+        this.f53169c++;
     }
 
     public float b(String str) {
-        int i10 = this.f53173d;
+        int i10 = this.f53170d;
         if (i10 > 0) {
-            this.f53173d = i10 - 1;
+            this.f53170d = i10 - 1;
             return 0.0f;
         }
-        int i11 = this.f53172c - 1;
-        this.f53172c = i11;
+        int i11 = this.f53169c - 1;
+        this.f53169c = i11;
         if (i11 != -1) {
-            if (str.equals(this.f53170a[i11])) {
+            if (str.equals(this.f53167a[i11])) {
                 w1.i.b();
-                return ((float) (System.nanoTime() - this.f53171b[this.f53172c])) / 1000000.0f;
+                return ((float) (System.nanoTime() - this.f53168b[this.f53169c])) / 1000000.0f;
             }
-            throw new IllegalStateException("Unbalanced trace call " + str + ". Expected " + this.f53170a[this.f53172c] + ".");
+            throw new IllegalStateException("Unbalanced trace call " + str + ". Expected " + this.f53167a[this.f53169c] + ".");
         }
         throw new IllegalStateException("Can't end trace section. There are none.");
     }

@@ -130,7 +130,7 @@ public final class i {
             boolean z10;
             boolean z11;
             i iVar = i.this;
-            if (xt.e.f53574h && Thread.holdsLock(iVar)) {
+            if (xt.e.f53571h && Thread.holdsLock(iVar)) {
                 throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + iVar);
             }
             i iVar2 = i.this;
@@ -179,7 +179,7 @@ public final class i {
         @Override // okio.Sink, java.io.Flushable
         public void flush() {
             i iVar = i.this;
-            if (xt.e.f53574h && Thread.holdsLock(iVar)) {
+            if (xt.e.f53571h && Thread.holdsLock(iVar)) {
                 throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + iVar);
             }
             i iVar2 = i.this;
@@ -205,7 +205,7 @@ public final class i {
         public void t0(Buffer source, long j10) {
             Intrinsics.checkNotNullParameter(source, "source");
             i iVar = i.this;
-            if (xt.e.f53574h && Thread.holdsLock(iVar)) {
+            if (xt.e.f53571h && Thread.holdsLock(iVar)) {
                 throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + iVar);
             }
             this.f22836e.t0(source, j10);
@@ -248,7 +248,7 @@ public final class i {
 
         private final void B(long j10) {
             i iVar = i.this;
-            if (xt.e.f53574h && Thread.holdsLock(iVar)) {
+            if (xt.e.f53571h && Thread.holdsLock(iVar)) {
                 throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + iVar);
             }
             i.this.g().w2(j10);
@@ -286,7 +286,7 @@ public final class i {
             boolean z12;
             Intrinsics.checkNotNullParameter(source, "source");
             i iVar = i.this;
-            if (xt.e.f53574h && Thread.holdsLock(iVar)) {
+            if (xt.e.f53571h && Thread.holdsLock(iVar)) {
                 throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + iVar);
             }
             long j11 = j10;
@@ -532,7 +532,7 @@ public final class i {
     }
 
     private final boolean e(eu.b bVar, IOException iOException) {
-        if (xt.e.f53574h && Thread.holdsLock(this)) {
+        if (xt.e.f53571h && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         synchronized (this) {
@@ -607,7 +607,7 @@ public final class i {
     public final void b() {
         boolean z10;
         boolean u10;
-        if (xt.e.f53574h && Thread.holdsLock(this)) {
+        if (xt.e.f53571h && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         synchronized (this) {
@@ -768,7 +768,7 @@ public final class i {
 
     public final void w(BufferedSource source, int i10) {
         Intrinsics.checkNotNullParameter(source, "source");
-        if (xt.e.f53574h && Thread.holdsLock(this)) {
+        if (xt.e.f53571h && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         this.f22829i.l(source, i10);
@@ -784,7 +784,7 @@ public final class i {
             r2 = this;
             java.lang.String r0 = "headers"
             kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r3, r0)
-            boolean r0 = xt.e.f53574h
+            boolean r0 = xt.e.f53571h
             if (r0 == 0) goto L37
             boolean r0 = java.lang.Thread.holdsLock(r2)
             if (r0 != 0) goto L10

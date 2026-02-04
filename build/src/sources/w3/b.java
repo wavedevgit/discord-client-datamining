@@ -27,19 +27,19 @@ abstract class b {
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final String f52013a;
+        final String f52010a;
 
         /* renamed from: b  reason: collision with root package name */
-        final String f52014b;
+        final String f52011b;
 
         /* renamed from: c  reason: collision with root package name */
-        final ShortcutInfoCompat f52015c;
+        final ShortcutInfoCompat f52012c;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public a(ShortcutInfoCompat shortcutInfoCompat, String str, String str2) {
-            this.f52015c = shortcutInfoCompat;
-            this.f52013a = str;
-            this.f52014b = str2;
+            this.f52012c = shortcutInfoCompat;
+            this.f52010a = str;
+            this.f52011b = str2;
         }
     }
 
@@ -65,7 +65,7 @@ abstract class b {
                     int next = newPullParser.next();
                     if (next == 1) {
                         break;
-                    } else if (next == 2 && newPullParser.getName().equals("target") && (e10 = e(newPullParser, context)) != null && (shortcutInfoCompat = e10.f52015c) != null) {
+                    } else if (next == 2 && newPullParser.getName().equals("target") && (e10 = e(newPullParser, context)) != null && (shortcutInfoCompat = e10.f52012c) != null) {
                         aVar.put(shortcutInfoCompat.g(), e10);
                     }
                 }
@@ -225,7 +225,7 @@ abstract class b {
 
     private static void j(XmlSerializer xmlSerializer, a aVar) {
         xmlSerializer.startTag(null, "target");
-        ShortcutInfoCompat shortcutInfoCompat = aVar.f52015c;
+        ShortcutInfoCompat shortcutInfoCompat = aVar.f52012c;
         g(xmlSerializer, StackTraceHelper.ID_KEY, shortcutInfoCompat.g());
         g(xmlSerializer, "short_label", shortcutInfoCompat.o().toString());
         g(xmlSerializer, "rank", Integer.toString(shortcutInfoCompat.n()));
@@ -238,11 +238,11 @@ abstract class b {
         if (shortcutInfoCompat.c() != null) {
             g(xmlSerializer, "component", shortcutInfoCompat.c().flattenToString());
         }
-        if (!TextUtils.isEmpty(aVar.f52013a)) {
-            g(xmlSerializer, "icon_resource_name", aVar.f52013a);
+        if (!TextUtils.isEmpty(aVar.f52010a)) {
+            g(xmlSerializer, "icon_resource_name", aVar.f52010a);
         }
-        if (!TextUtils.isEmpty(aVar.f52014b)) {
-            g(xmlSerializer, "icon_bitmap_path", aVar.f52014b);
+        if (!TextUtils.isEmpty(aVar.f52011b)) {
+            g(xmlSerializer, "icon_bitmap_path", aVar.f52011b);
         }
         for (Intent intent : shortcutInfoCompat.i()) {
             i(xmlSerializer, intent);

@@ -74,7 +74,7 @@ public final class Dispatcher {
     private final boolean k() {
         int i10;
         boolean z10;
-        if (xt.e.f53574h && Thread.holdsLock(this)) {
+        if (xt.e.f53571h && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         ArrayList arrayList = new ArrayList();
@@ -162,7 +162,7 @@ public final class Dispatcher {
             if (this.f43985d == null) {
                 TimeUnit timeUnit = TimeUnit.SECONDS;
                 SynchronousQueue synchronousQueue = new SynchronousQueue();
-                this.f43985d = new ThreadPoolExecutor(0, Integer.MAX_VALUE, 60L, timeUnit, synchronousQueue, xt.e.N(xt.e.f53575i + " Dispatcher", false));
+                this.f43985d = new ThreadPoolExecutor(0, Integer.MAX_VALUE, 60L, timeUnit, synchronousQueue, xt.e.N(xt.e.f53572i + " Dispatcher", false));
             }
             executorService = this.f43985d;
             Intrinsics.checkNotNull(executorService);

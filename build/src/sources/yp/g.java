@@ -17,13 +17,13 @@ public final class g implements Parcelable {
     public static final Parcelable.Creator<g> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f55243d;
+    private final List f55240d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f55244e;
+    private final List f55241e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final StepStyles.UiStepStyle f55245i;
+    private final StepStyles.UiStepStyle f55242i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -59,31 +59,31 @@ public final class g implements Parcelable {
 
     public g(List list, List componentConfigs, StepStyles.UiStepStyle uiStepStyle) {
         Intrinsics.checkNotNullParameter(componentConfigs, "componentConfigs");
-        this.f55243d = list;
-        this.f55244e = componentConfigs;
-        this.f55245i = uiStepStyle;
+        this.f55240d = list;
+        this.f55241e = componentConfigs;
+        this.f55242i = uiStepStyle;
     }
 
     public static /* synthetic */ g c(g gVar, List list, List list2, StepStyles.UiStepStyle uiStepStyle, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            list = gVar.f55243d;
+            list = gVar.f55240d;
         }
         if ((i10 & 2) != 0) {
-            list2 = gVar.f55244e;
+            list2 = gVar.f55241e;
         }
         if ((i10 & 4) != 0) {
-            uiStepStyle = gVar.f55245i;
+            uiStepStyle = gVar.f55242i;
         }
         return gVar.b(list, list2, uiStepStyle);
     }
 
     public final List C0() {
-        return this.f55244e;
+        return this.f55241e;
     }
 
     public final Drawable a(Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
-        StepStyles.UiStepStyle uiStepStyle = this.f55245i;
+        StepStyles.UiStepStyle uiStepStyle = this.f55242i;
         if (uiStepStyle != null) {
             return hq.c.a(uiStepStyle, context);
         }
@@ -99,7 +99,7 @@ public final class g implements Parcelable {
         StepStyles.StepBackgroundColorStyle backgroundColor;
         StyleElements.SimpleElementColor base;
         StyleElements.SimpleElementColorValue base2;
-        StepStyles.UiStepStyle uiStepStyle = this.f55245i;
+        StepStyles.UiStepStyle uiStepStyle = this.f55242i;
         if (uiStepStyle != null && (backgroundColor = uiStepStyle.getBackgroundColor()) != null && (base = backgroundColor.getBase()) != null && (base2 = base.getBase()) != null) {
             return base2.getValue();
         }
@@ -115,7 +115,7 @@ public final class g implements Parcelable {
         AttributeStyles.HeaderButtonColorStyle headerButtonColor;
         StyleElements.SimpleElementColor headerButton;
         StyleElements.SimpleElementColorValue base;
-        StepStyles.UiStepStyle uiStepStyle = this.f55245i;
+        StepStyles.UiStepStyle uiStepStyle = this.f55242i;
         if (uiStepStyle != null && (headerButtonColor = uiStepStyle.getHeaderButtonColor()) != null && (headerButton = headerButtonColor.getHeaderButton()) != null && (base = headerButton.getBase()) != null) {
             return base.getValue();
         }
@@ -130,14 +130,14 @@ public final class g implements Parcelable {
             return false;
         }
         g gVar = (g) obj;
-        if (Intrinsics.areEqual(this.f55243d, gVar.f55243d) && Intrinsics.areEqual(this.f55244e, gVar.f55244e) && Intrinsics.areEqual(this.f55245i, gVar.f55245i)) {
+        if (Intrinsics.areEqual(this.f55240d, gVar.f55240d) && Intrinsics.areEqual(this.f55241e, gVar.f55241e) && Intrinsics.areEqual(this.f55242i, gVar.f55242i)) {
             return true;
         }
         return false;
     }
 
     public final StyleElements.PositionType f() {
-        StepStyles.UiStepStyle uiStepStyle = this.f55245i;
+        StepStyles.UiStepStyle uiStepStyle = this.f55242i;
         if (uiStepStyle != null) {
             return uiStepStyle.getPageLevelVerticalAlignment();
         }
@@ -145,24 +145,24 @@ public final class g implements Parcelable {
     }
 
     public final List getComponents() {
-        return this.f55243d;
+        return this.f55240d;
     }
 
     public final StepStyles.UiStepStyle getStyles() {
-        return this.f55245i;
+        return this.f55242i;
     }
 
     public int hashCode() {
         int hashCode;
-        List list = this.f55243d;
+        List list = this.f55240d;
         int i10 = 0;
         if (list == null) {
             hashCode = 0;
         } else {
             hashCode = list.hashCode();
         }
-        int hashCode2 = ((hashCode * 31) + this.f55244e.hashCode()) * 31;
-        StepStyles.UiStepStyle uiStepStyle = this.f55245i;
+        int hashCode2 = ((hashCode * 31) + this.f55241e.hashCode()) * 31;
+        StepStyles.UiStepStyle uiStepStyle = this.f55242i;
         if (uiStepStyle != null) {
             i10 = uiStepStyle.hashCode();
         }
@@ -170,16 +170,16 @@ public final class g implements Parcelable {
     }
 
     public String toString() {
-        List list = this.f55243d;
-        List list2 = this.f55244e;
-        StepStyles.UiStepStyle uiStepStyle = this.f55245i;
+        List list = this.f55240d;
+        List list2 = this.f55241e;
+        StepStyles.UiStepStyle uiStepStyle = this.f55242i;
         return "UiComponentScreen(components=" + list + ", componentConfigs=" + list2 + ", styles=" + uiStepStyle + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        List<Parcelable> list = this.f55243d;
+        List<Parcelable> list = this.f55240d;
         if (list == null) {
             dest.writeInt(0);
         } else {
@@ -189,11 +189,11 @@ public final class g implements Parcelable {
                 dest.writeParcelable(parcelable, i10);
             }
         }
-        List<Parcelable> list2 = this.f55244e;
+        List<Parcelable> list2 = this.f55241e;
         dest.writeInt(list2.size());
         for (Parcelable parcelable2 : list2) {
             dest.writeParcelable(parcelable2, i10);
         }
-        dest.writeParcelable(this.f55245i, i10);
+        dest.writeParcelable(this.f55242i, i10);
     }
 }

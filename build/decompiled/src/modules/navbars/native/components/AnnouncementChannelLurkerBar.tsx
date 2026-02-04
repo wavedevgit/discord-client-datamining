@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var9.bind(var3)(var5);
         var5 = {};
         var12 = function() {
-            _fun76836: for (var _fun76836_ip = 0;;) switch (_fun76836_ip) {
+            _fun76853: for (var _fun76853_ip = 0;;) switch (_fun76853_ip) {
                 case 0:
                     var1 = _closure2_slot0;
                     var3 = var1.id;
@@ -111,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var0.bind(var1)();
                     var0 = null;
                     if (!(var0 != var2)) {
-                        _fun76836_ip = 65;
-                        continue _fun76836
+                        _fun76853_ip = 65;
+                        continue _fun76853
                     }
                 case 28:
                     var4 = _closure1_slot0;
@@ -164,4 +164,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var1;
     var2.AnnouncementChannelLurkerBar = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3941, 1234, 4873, 9781, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3941, 1234, 4873, 9784, 2]);

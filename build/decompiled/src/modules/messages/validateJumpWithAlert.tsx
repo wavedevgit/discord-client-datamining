@@ -41,23 +41,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/validateJumpWithAlert.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun76140: for (var _fun76140_ip = 0;;) switch (_fun76140_ip) {
+        _fun76157: for (var _fun76157_ip = 0;;) switch (_fun76157_ip) {
             case 0:
                 var11 = arg0;
                 var1 = _closure1_slot5;
                 var0 = var1.isBlockedForMessage;
                 var0 = var0.bind(var1)(var11);
                 if (var0) {
-                    _fun76140_ip = 859;
-                    continue _fun76140
+                    _fun76157_ip = 859;
+                    continue _fun76157
                 }
             case 27:
                 var1 = _closure1_slot5;
                 var0 = var1.isIgnoredForMessage;
                 var0 = var0.bind(var1)(var11);
                 if (var0) {
-                    _fun76140_ip = 646;
-                    continue _fun76140
+                    _fun76157_ip = 646;
+                    continue _fun76157
                 }
             case 48:
                 var1 = _closure1_slot0;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.isSpam;
                 var0 = var0.bind(var1)(var11);
                 if (var0) {
-                    _fun76140_ip = 88;
-                    continue _fun76140
+                    _fun76157_ip = 88;
+                    continue _fun76157
                 }
             case 84:
                 var0 = true;
@@ -84,16 +84,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0 == var4;
                 var0 = undefined;
                 if (var1) {
-                    _fun76140_ip = 128;
-                    continue _fun76140
+                    _fun76157_ip = 128;
+                    continue _fun76157
                 }
             case 118:
                 var1 = var4.isPrivate;
                 var0 = var1.bind(var4)();
             case 128:
                 if (var0) {
-                    _fun76140_ip = 378;
-                    continue _fun76140
+                    _fun76157_ip = 378;
+                    continue _fun76157
                 }
             case 134:
                 var2 = _closure1_slot4;
@@ -102,8 +102,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.MODERATE_MEMBERS;
                 var0 = var1.bind(var2)(var0, var4);
                 if (var0) {
-                    _fun76140_ip = 378;
-                    continue _fun76140
+                    _fun76157_ip = 378;
+                    continue _fun76157
                 }
             case 166:
                 var1 = _closure1_slot1;
@@ -150,8 +150,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5.bind(var6)(var4);
                 var0.confirmText = var4;
                 var0 = var1.bind(var2)(var0);
-                _fun76140_ip = 642;
-                continue _fun76140;
+                _fun76157_ip = 642;
+                continue _fun76157;
             case 378:
                 var1 = _closure1_slot1;
                 var9 = _closure1_slot2;

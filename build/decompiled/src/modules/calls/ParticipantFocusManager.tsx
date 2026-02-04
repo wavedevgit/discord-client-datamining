@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var4 = dependencyMap;
     var0 = function() {
-        _fun114026: for (var _fun114026_ip = 0;;) switch (_fun114026_ip) {
+        _fun114039: for (var _fun114039_ip = 0;;) switch (_fun114039_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -26,8 +26,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun114026_ip = 76;
-                continue _fun114026;
+                _fun114039_ip = 76;
+                continue _fun114039;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
         var3 = function arg0() {
-            _fun114030: for (var _fun114030_ip = 0;;) switch (_fun114030_ip) {
+            _fun114043: for (var _fun114043_ip = 0;;) switch (_fun114043_ip) {
                 case 0:
                     var4 = this;
                     var12 = 0;
@@ -106,14 +106,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot7;
                     var0 = var0.bind(var3)();
                     if (var0) {
-                        _fun114030_ip = 84;
-                        continue _fun114030
+                        _fun114043_ip = 84;
+                        continue _fun114043
                     }
                 case 71:
                     var0 = var8.apply;
                     var0 = var0.bind(var8)(var4, var9);
-                    _fun114030_ip = 118;
-                    continue _fun114030;
+                    _fun114043_ip = 118;
+                    continue _fun114043;
                 case 84:
                     var5 = global;
                     var7 = var5.Reflect;
@@ -153,15 +153,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'handleFocusParticipant';
         var4.key = var5;
         var0 = function() {
-            _fun114031: for (var _fun114031_ip = 0;;) switch (_fun114031_ip) {
+            _fun114044: for (var _fun114044_ip = 0;;) switch (_fun114044_ip) {
                 case 0:
                     var2 = _closure1_slot5;
                     var0 = var2.getChannelId;
                     var5 = var0.bind(var2)();
                     var0 = null;
                     if (!(var0 != var5)) {
-                        _fun114031_ip = 115;
-                        continue _fun114031
+                        _fun114044_ip = 115;
+                        continue _fun114044
                     }
                 case 25:
                     var4 = _closure1_slot6;
@@ -174,22 +174,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var2.getRTCConnection;
                     var2 = var1.bind(var2)();
                     if (!(var0 != var2)) {
-                        _fun114031_ip = 115;
-                        continue _fun114031
+                        _fun114044_ip = 115;
+                        continue _fun114044
                     }
                 case 73:
                     var1 = var2.setSelectedParticipant;
                     var4 = var5.find;
                     var3 = function(arg0) { // Environment: var3
-                        _fun114032: for (var _fun114032_ip = 0;;) switch (_fun114032_ip) {
+                        _fun114045: for (var _fun114045_ip = 0;;) switch (_fun114045_ip) {
                             case 0:
                                 var1 = arg0;
                                 var2 = var1.id;
                                 var0 = _closure3_slot0;
                                 var0 = var2 === var0;
                                 if (!var0) {
-                                    _fun114032_ip = 31;
-                                    continue _fun114032
+                                    _fun114045_ip = 31;
+                                    continue _fun114045
                                 }
                             case 22:
                                 var1 = var1.localVideoDisabled;
@@ -202,8 +202,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var0 == var3;
                     var0 = undefined;
                     if (var4) {
-                        _fun114031_ip = 110;
-                        continue _fun114031
+                        _fun114044_ip = 110;
+                        continue _fun114044
                     }
                 case 105:
                     var0 = var3.id;

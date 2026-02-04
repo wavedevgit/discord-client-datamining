@@ -11,7 +11,7 @@ import p.a;
 public class a0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f50302a;
+    private final boolean f50299a;
 
     public a0() {
         boolean z10;
@@ -20,7 +20,7 @@ public class a0 {
         } else {
             z10 = false;
         }
-        this.f50302a = z10;
+        this.f50299a = z10;
     }
 
     public p0 a(p0 p0Var) {
@@ -37,7 +37,7 @@ public class a0 {
     }
 
     public boolean b(List list, boolean z10) {
-        if (this.f50302a && z10) {
+        if (this.f50299a && z10) {
             Iterator it = list.iterator();
             while (it.hasNext()) {
                 Integer num = (Integer) ((CaptureRequest) it.next()).get(CaptureRequest.FLASH_MODE);

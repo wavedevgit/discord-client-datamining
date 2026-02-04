@@ -41,7 +41,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.isMP3 = var0;
     var2.isWAV = var0;
     var4 = function arg0, arg1() {
-        _fun37886: for (var _fun37886_ip = 0;;) switch (_fun37886_ip) {
+        _fun37888: for (var _fun37888_ip = 0;;) switch (_fun37888_ip) {
             case 0:
                 var5 = arg1;
                 var1 = _closure1_slot0;
@@ -63,24 +63,24 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var0;
                 var0 = !var1;
                 if (!var1) {
-                    _fun37886_ip = 121;
-                    continue _fun37886
+                    _fun37888_ip = 121;
+                    continue _fun37888
                 }
             case 86:
                 var1 = null;
                 var6 = var1 == var5;
                 var1 = undefined;
                 if (var6) {
-                    _fun37886_ip = 103;
-                    continue _fun37886
+                    _fun37888_ip = 103;
+                    continue _fun37888
                 }
             case 97:
                 var1 = var5.excludeSimilarTypes;
             case 103:
                 var1 = !var1;
                 if (!var1) {
-                    _fun37886_ip = 118;
-                    continue _fun37886
+                    _fun37888_ip = 118;
+                    continue _fun37888
                 }
             case 109:
                 var2 = _closure1_slot2;

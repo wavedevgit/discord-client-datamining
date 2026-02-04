@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_member_verification/native/components/alerts/MemberVerificationAlert.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun60057: for (var _fun60057_ip = 0;;) switch (_fun60057_ip) {
+        _fun60074: for (var _fun60074_ip = 0;;) switch (_fun60074_ip) {
             case 0:
                 var2 = arg0;
                 var14 = var2.header;
@@ -125,8 +125,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6 != var15;
                 var7 = null;
                 if (!var5) {
-                    _fun60057_ip = 174;
-                    continue _fun60057
+                    _fun60074_ip = 174;
+                    continue _fun60074
                 }
             case 128:
                 var11 = _closure1_slot4;
@@ -163,8 +163,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var6 != var12;
                 var6 = null;
                 if (!var7) {
-                    _fun60057_ip = 321;
-                    continue _fun60057
+                    _fun60074_ip = 321;
+                    continue _fun60074
                 }
             case 259:
                 var11 = _closure1_slot4;

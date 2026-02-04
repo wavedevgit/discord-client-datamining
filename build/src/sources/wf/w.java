@@ -10,34 +10,34 @@ public class w extends hf.a {
     public static final Parcelable.Creator<w> CREATOR = new y0();
 
     /* renamed from: d  reason: collision with root package name */
-    private final v4 f52366d;
+    private final v4 f52363d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f52367e;
+    private final String f52364e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f52368i;
+    private final String f52365i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f52369o;
+    private final String f52366o;
 
     public w(v4 v4Var, String str, String str2, String str3) {
-        this.f52366d = (v4) gf.q.l(v4Var);
-        this.f52367e = (String) gf.q.l(str);
-        this.f52368i = str2;
-        this.f52369o = (String) gf.q.l(str3);
+        this.f52363d = (v4) gf.q.l(v4Var);
+        this.f52364e = (String) gf.q.l(str);
+        this.f52365i = str2;
+        this.f52366o = (String) gf.q.l(str3);
     }
 
     public String b() {
-        return this.f52369o;
+        return this.f52366o;
     }
 
     public String c() {
-        return this.f52368i;
+        return this.f52365i;
     }
 
     public byte[] d() {
-        return this.f52366d.n();
+        return this.f52363d.n();
     }
 
     public boolean equals(Object obj) {
@@ -45,23 +45,23 @@ public class w extends hf.a {
             return false;
         }
         w wVar = (w) obj;
-        if (!gf.o.a(this.f52366d, wVar.f52366d) || !gf.o.a(this.f52367e, wVar.f52367e) || !gf.o.a(this.f52368i, wVar.f52368i) || !gf.o.a(this.f52369o, wVar.f52369o)) {
+        if (!gf.o.a(this.f52363d, wVar.f52363d) || !gf.o.a(this.f52364e, wVar.f52364e) || !gf.o.a(this.f52365i, wVar.f52365i) || !gf.o.a(this.f52366o, wVar.f52366o)) {
             return false;
         }
         return true;
     }
 
     public String getName() {
-        return this.f52367e;
+        return this.f52364e;
     }
 
     public int hashCode() {
-        return gf.o.b(this.f52366d, this.f52367e, this.f52368i, this.f52369o);
+        return gf.o.b(this.f52363d, this.f52364e, this.f52365i, this.f52366o);
     }
 
     public final String toString() {
-        String b10 = com.google.android.gms.common.util.c.b(this.f52366d.n());
-        return "PublicKeyCredentialUserEntity{\n id=" + b10 + ", \n name='" + this.f52367e + "', \n icon='" + this.f52368i + "', \n displayName='" + this.f52369o + "'}";
+        String b10 = com.google.android.gms.common.util.c.b(this.f52363d.n());
+        return "PublicKeyCredentialUserEntity{\n id=" + b10 + ", \n name='" + this.f52364e + "', \n icon='" + this.f52365i + "', \n displayName='" + this.f52366o + "'}";
     }
 
     @Override // android.os.Parcelable

@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/SnowIllocon.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52959: for (var _fun52959_ip = 0;;) switch (_fun52959_ip) {
+        _fun52962: for (var _fun52962_ip = 0;;) switch (_fun52962_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.size;
                 var3 = undefined;
                 if (!(var7 === var3)) {
-                    _fun52959_ip = 32;
-                    continue _fun52959
+                    _fun52962_ip = 32;
+                    continue _fun52962
                 }
             case 29:
                 var7 = 64;

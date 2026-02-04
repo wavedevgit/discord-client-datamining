@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public abstract class j {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final uk.a f50134a = new uk.a();
+    private static final uk.a f50131a = new uk.a();
 
     private static c a(h hVar) {
         int[] j10;
@@ -119,7 +119,7 @@ public abstract class j {
 
     private static int e(int[] iArr, int[] iArr2, int i10) {
         if ((iArr2 == null || iArr2.length <= (i10 / 2) + 3) && i10 >= 0 && i10 <= 512) {
-            return f50134a.a(iArr, i10, iArr2);
+            return f50131a.a(iArr, i10, iArr2);
         }
         throw ck.d.a();
     }

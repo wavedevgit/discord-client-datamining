@@ -5,10 +5,10 @@ import wq.h;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f55156a;
+    private final h f55153a;
 
     public f(h hVar) {
-        this.f55156a = hVar;
+        this.f55153a = hVar;
     }
 
     public static f a(h hVar) {
@@ -20,6 +20,6 @@ public final class f {
     }
 
     public e b(String str) {
-        return c((b) this.f55156a.get(), str);
+        return c((b) this.f55153a.get(), str);
     }
 }

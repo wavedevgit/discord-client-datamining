@@ -8,30 +8,30 @@ import kotlinx.coroutines.CoroutineScope;
 public final class l implements js.z {
 
     /* renamed from: d  reason: collision with root package name */
-    private final CoroutineContext f51812d;
+    private final CoroutineContext f51809d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Function2 f51813e;
+    private final Function2 f51810e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final CoroutineScope f51814i;
+    private final CoroutineScope f51811i;
 
     public l(CoroutineContext coroutineContext, Function2 function2) {
         CoroutineContext coroutineContext2;
-        this.f51812d = coroutineContext;
-        this.f51813e = function2;
-        if (coroutineContext.l(z0.a.f55498d) != null) {
+        this.f51809d = coroutineContext;
+        this.f51810e = function2;
+        if (coroutineContext.l(z0.a.f55495d) != null) {
             coroutineContext2 = this;
         } else {
             coroutineContext2 = kotlin.coroutines.e.f32538d;
         }
-        this.f51814i = kotlinx.coroutines.i.a(coroutineContext.V0(coroutineContext2));
+        this.f51811i = kotlinx.coroutines.i.a(coroutineContext.V0(coroutineContext2));
     }
 
     @Override // js.z
     public void R0(CoroutineContext coroutineContext, Throwable th2) {
-        android.support.v4.media.session.b.a(coroutineContext.l(z0.a.f55498d));
-        js.z zVar = (js.z) this.f51812d.l(js.z.f32000f);
+        android.support.v4.media.session.b.a(coroutineContext.l(z0.a.f55495d));
+        js.z zVar = (js.z) this.f51809d.l(js.z.f32000f);
         if (zVar != null) {
             zVar.R0(coroutineContext, th2);
             return;

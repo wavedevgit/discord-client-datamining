@@ -29,22 +29,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/labs/LabFeatureActions.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun85888: for (var _fun85888_ip = 0;;) switch (_fun85888_ip) {
+        _fun85905: for (var _fun85905_ip = 0;;) switch (_fun85905_ip) {
             case 0:
                 var5 = arg0;
                 var1 = arguments[1];
                 var0 = undefined;
                 if (!(var1 === var0)) {
-                    _fun85888_ip = 19;
-                    continue _fun85888
+                    _fun85905_ip = 19;
+                    continue _fun85905
                 }
             case 12:
                 var1 = _closure1_slot3;
             case 19:
                 var4 = var1.enabled;
                 if (!(var4 === var0)) {
-                    _fun85888_ip = 48;
-                    continue _fun85888
+                    _fun85905_ip = 48;
+                    continue _fun85905
                 }
             case 28:
                 var2 = _closure1_slot2;
@@ -69,4 +69,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.toggleLabFeature = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8880, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8883, 806, 2]);

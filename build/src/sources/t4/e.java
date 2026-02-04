@@ -5,7 +5,7 @@ import java.util.List;
 public final class e implements nu.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f49718a = new e();
+    public static final e f49715a = new e();
 
     private e() {
     }

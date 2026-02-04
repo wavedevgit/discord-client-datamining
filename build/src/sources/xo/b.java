@@ -6,14 +6,14 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ActivityResultLauncher f53510a;
+    private final ActivityResultLauncher f53507a;
 
     public b(ActivityResultLauncher customTabsLauncher) {
         Intrinsics.checkNotNullParameter(customTabsLauncher, "customTabsLauncher");
-        this.f53510a = customTabsLauncher;
+        this.f53507a = customTabsLauncher;
     }
 
     public final ActivityResultLauncher a() {
-        return this.f53510a;
+        return this.f53507a;
     }
 }

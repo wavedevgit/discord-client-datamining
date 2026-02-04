@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function() { // Environment: var0
-            _fun60025: for (var _fun60025_ip = 0;;) switch (_fun60025_ip) {
+            _fun60042: for (var _fun60042_ip = 0;;) switch (_fun60042_ip) {
                 case 0:
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot3;
@@ -119,8 +119,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure2_slot0;
                     var2 = null;
                     if (!(var2 != var3)) {
-                        _fun60025_ip = 56;
-                        continue _fun60025
+                        _fun60042_ip = 56;
+                        continue _fun60042
                     }
                 case 48:
                     var1 = _closure2_slot0;
@@ -266,7 +266,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.openMemberVerificationPendingAlert = var5;
     var2.openMemberVerificationCancelPendingAlert = var4;
     var4 = function(arg0) { // Environment: var1
-        _fun60034: for (var _fun60034_ip = 0;;) switch (_fun60034_ip) {
+        _fun60051: for (var _fun60051_ip = 0;;) switch (_fun60051_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.guildId;
@@ -287,8 +287,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var7.bind(var0)(var3);
                 var3 = var3.Button;
                 if (var2) {
-                    _fun60034_ip = 152;
-                    continue _fun60034
+                    _fun60051_ip = 152;
+                    continue _fun60051
                 }
             case 85:
                 var2 = {};
@@ -306,8 +306,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var8.bind(var9)(var7);
                 var2.text = var7;
                 var2.onPress = var6;
-                _fun60034_ip = 237;
-                continue _fun60034;
+                _fun60051_ip = 237;
+                continue _fun60051;
             case 152:
                 var6 = {};
                 var10 = _closure1_slot0;
@@ -521,4 +521,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openMemberVerificationIncompleteAlert = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1582, 3936, 7421, 1307, 7423, 7427, 4084, 1234, 7428, 7589, 7591, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1582, 3936, 7424, 1307, 7426, 7430, 4084, 1234, 7431, 7592, 7594, 2]);

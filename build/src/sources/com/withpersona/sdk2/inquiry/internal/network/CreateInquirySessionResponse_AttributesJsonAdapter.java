@@ -81,7 +81,7 @@ public final class CreateInquirySessionResponse_AttributesJsonAdapter extends co
         }
         Constructor constructor = this.f18780e;
         if (constructor == null) {
-            constructor = CreateInquirySessionResponse.Attributes.class.getDeclaredConstructor(CreateInquirySessionResponse.GpsCollectionRequirement.class, CreateInquirySessionResponse.GpsPrecisionRequirement.class, String.class, Integer.TYPE, vm.c.f51691c);
+            constructor = CreateInquirySessionResponse.Attributes.class.getDeclaredConstructor(CreateInquirySessionResponse.GpsCollectionRequirement.class, CreateInquirySessionResponse.GpsPrecisionRequirement.class, String.class, Integer.TYPE, vm.c.f51688c);
             this.f18780e = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

@@ -1,7 +1,7 @@
 // modules/premium/game_server/GameServerConstants.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun78560: for (var _fun78560_ip = 0;;) switch (_fun78560_ip) {
+    _fun78577: for (var _fun78577_ip = 0;;) switch (_fun78577_ip) {
         case 0:
             var10 = require;
             var2 = exports;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = '1425215263548117002';
             var4 = 'production';
             if (!(var4 !== var3)) {
-                _fun78560_ip = 276;
-                continue _fun78560
+                _fun78577_ip = 276;
+                continue _fun78577
             }
         case 233:
             var3 = var13.window;
@@ -68,8 +68,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = '1415025086791942144';
             var5 = 'staging';
             if (!(var5 === var12)) {
-                _fun78560_ip = 273;
-                continue _fun78560
+                _fun78577_ip = 273;
+                continue _fun78577
             }
         case 267:
             var3 = '1415044199572832256';
@@ -80,8 +80,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var3.GLOBAL_ENV;
             var3 = var3.PROJECT_ENV;
             if (!(var4 !== var3)) {
-                _fun78560_ip = 350;
-                continue _fun78560
+                _fun78577_ip = 350;
+                continue _fun78577
             }
         case 298:
             var3 = var13.window;
@@ -89,18 +89,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var3.PROJECT_ENV;
             var3 = 'staging';
             if (!(var3 !== var4)) {
-                _fun78560_ip = 338;
-                continue _fun78560
+                _fun78577_ip = 338;
+                continue _fun78577
             }
         case 326:
             var5 = ['1', '2'];
-            _fun78560_ip = 348;
-            continue _fun78560;
+            _fun78577_ip = 348;
+            continue _fun78577;
         case 338:
             var5 = ['356875570916753438', '1458563423670501376'];
         case 348:
-            _fun78560_ip = 360;
-            continue _fun78560;
+            _fun78577_ip = 360;
+            continue _fun78577;
         case 350:
             var5 = ['1402418491272986635', '1458530944955973852'];
         case 360:
@@ -120,8 +120,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var13 = var1.STAGING;
             var1 = 'https://discord.shockbyte.com/support';
             if (!(var14 === var13)) {
-                _fun78560_ip = 442;
-                continue _fun78560
+                _fun78577_ip = 442;
+                continue _fun78577
             }
         case 436:
             var1 = 'https://purple-prod.shockbyte.dev/support';
@@ -175,4 +175,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.GAME_SERVER_POWERUP_SKU_ID = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1627, 9972, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1627, 9975, 2]);

@@ -7,10 +7,10 @@ import wq.h;
 public final class c implements d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f50765a;
+    private final h f50762a;
 
     public c(h hVar) {
-        this.f50765a = hVar;
+        this.f50762a = hVar;
     }
 
     public static c a(h hVar) {
@@ -24,6 +24,6 @@ public final class c implements d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public b get() {
-        return c((Context) this.f50765a.get());
+        return c((Context) this.f50762a.get());
     }
 }

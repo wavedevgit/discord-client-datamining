@@ -86,7 +86,7 @@ public final class LocalImageJsonAdapter extends h {
         }
         Constructor<LocalImage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = LocalImage.class.getDeclaredConstructor(String.class, LocalImage.Attributes.class, LocalImageComponentStyle.class, Integer.TYPE, c.f51691c);
+            constructor = LocalImage.class.getDeclaredConstructor(String.class, LocalImage.Attributes.class, LocalImageComponentStyle.class, Integer.TYPE, c.f51688c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

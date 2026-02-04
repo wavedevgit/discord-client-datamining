@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_communication_disabled/GuildDisableCommunicationActionCreators.native.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun79554: for (var _fun79554_ip = 0;;) switch (_fun79554_ip) {
+        _fun79571: for (var _fun79571_ip = 0;;) switch (_fun79571_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.guildId;
@@ -48,8 +48,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0.bind(var2)(var3);
                 var0 = null;
                 if (!(var0 != var5)) {
-                    _fun79554_ip = 126;
-                    continue _fun79554
+                    _fun79571_ip = 126;
+                    continue _fun79571
                 }
             case 43:
                 var3 = _closure1_slot1;
@@ -141,4 +141,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openEnableCommunication = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1621, 33, 4561, 10109, 1307, 3936, 10112, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1621, 33, 4561, 10112, 1307, 3936, 10115, 2]);

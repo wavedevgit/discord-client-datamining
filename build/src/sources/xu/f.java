@@ -8,7 +8,7 @@ import zu.a;
 public final class f implements nu.b, zu.a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final f f53583a = new f();
+    public static final f f53580a = new f();
 
     private f() {
     }

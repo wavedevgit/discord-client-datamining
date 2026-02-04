@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/AvatarNellyExample.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52392: for (var _fun52392_ip = 0;;) switch (_fun52392_ip) {
+        _fun52395: for (var _fun52395_ip = 0;;) switch (_fun52395_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun52392_ip = 32;
-                    continue _fun52392
+                    _fun52395_ip = 32;
+                    continue _fun52395
                 }
             case 29:
                 var9 = 100;
             case 32:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun52392_ip = 44;
-                    continue _fun52392
+                    _fun52395_ip = 44;
+                    continue _fun52395
                 }
             case 41:
                 var7 = 100;

@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/display_name_styles/hooks/useDisplayNameStylesEnabled.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun36705: for (var _fun36705_ip = 0;;) switch (_fun36705_ip) {
+        _fun36707: for (var _fun36707_ip = 0;;) switch (_fun36707_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.location;
@@ -66,13 +66,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.DisplayNameStylesContext;
                 var2 = var3.bind(var4)(var2);
                 if (!var0) {
-                    _fun36705_ip = 134;
-                    continue _fun36705
+                    _fun36707_ip = 134;
+                    continue _fun36707
                 }
             case 122:
                 if (var1) {
-                    _fun36705_ip = 131;
-                    continue _fun36705
+                    _fun36707_ip = 131;
+                    continue _fun36707
                 }
             case 125:
                 var1 = var2.overrideSettings;

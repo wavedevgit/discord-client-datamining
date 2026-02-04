@@ -54,10 +54,10 @@ public class o extends RecyclerView.Adapter {
 
         b(LinearLayout linearLayout, boolean z10) {
             super(linearLayout);
-            TextView textView = (TextView) linearLayout.findViewById(yg.f.f54192w);
+            TextView textView = (TextView) linearLayout.findViewById(yg.f.f54189w);
             this.f14588d = textView;
             h0.o0(textView, true);
-            this.f14589e = (MaterialCalendarGridView) linearLayout.findViewById(yg.f.f54188s);
+            this.f14589e = (MaterialCalendarGridView) linearLayout.findViewById(yg.f.f54185s);
             if (!z10) {
                 textView.setVisibility(8);
             }
@@ -109,7 +109,7 @@ public class o extends RecyclerView.Adapter {
     public void onBindViewHolder(b bVar, int i10) {
         m p10 = this.f14583a.m().p(i10);
         bVar.f14588d.setText(p10.k());
-        MaterialCalendarGridView materialCalendarGridView = (MaterialCalendarGridView) bVar.f14589e.findViewById(yg.f.f54188s);
+        MaterialCalendarGridView materialCalendarGridView = (MaterialCalendarGridView) bVar.f14589e.findViewById(yg.f.f54185s);
         if (materialCalendarGridView.getAdapter2() != null && p10.equals(materialCalendarGridView.getAdapter2().f14579d)) {
             materialCalendarGridView.invalidate();
             materialCalendarGridView.getAdapter2().o(materialCalendarGridView);
@@ -124,7 +124,7 @@ public class o extends RecyclerView.Adapter {
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter
     /* renamed from: f */
     public b onCreateViewHolder(ViewGroup viewGroup, int i10) {
-        LinearLayout linearLayout = (LinearLayout) LayoutInflater.from(viewGroup.getContext()).inflate(yg.h.f54217q, viewGroup, false);
+        LinearLayout linearLayout = (LinearLayout) LayoutInflater.from(viewGroup.getContext()).inflate(yg.h.f54214q, viewGroup, false);
         if (k.J(viewGroup.getContext())) {
             linearLayout.setLayoutParams(new RecyclerView.LayoutParams(-1, this.f14585c));
             return new b(linearLayout, true);

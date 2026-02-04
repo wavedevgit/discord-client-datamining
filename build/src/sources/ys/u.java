@@ -6,17 +6,17 @@ import kotlin.jvm.internal.Intrinsics;
 public final class u implements o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Function1 f55331a;
+    private final Function1 f55328a;
 
     public u(Function1 operation) {
         Intrinsics.checkNotNullParameter(operation, "operation");
-        this.f55331a = operation;
+        this.f55328a = operation;
     }
 
     @Override // ys.o
     public Object a(Object obj, CharSequence input, int i10) {
         Intrinsics.checkNotNullParameter(input, "input");
-        this.f55331a.invoke(obj);
-        return k.f55299a.b(i10);
+        this.f55328a.invoke(obj);
+        return k.f55296a.b(i10);
     }
 }

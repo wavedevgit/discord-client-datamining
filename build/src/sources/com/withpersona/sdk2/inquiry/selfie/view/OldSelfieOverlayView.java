@@ -673,24 +673,24 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
         int parseColor = Color.parseColor("#022050");
         Context context2 = b10.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context2, "getContext(...)");
-        themeableLottieAnimationView.I(parseColor, s.d(context2, yg.b.f54101m, null, false, 6, null));
+        themeableLottieAnimationView.I(parseColor, s.d(context2, yg.b.f54098m, null, false, 6, null));
         int parseColor2 = Color.parseColor("#AA85FF");
         Context context3 = b10.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context3, "getContext(...)");
-        themeableLottieAnimationView.I(parseColor2, s.d(context3, yg.b.f54102n, null, false, 6, null));
+        themeableLottieAnimationView.I(parseColor2, s.d(context3, yg.b.f54099n, null, false, 6, null));
         int parseColor3 = Color.parseColor("#280087");
         Context context4 = b10.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context4, "getContext(...)");
-        themeableLottieAnimationView.I(parseColor3, s.d(context4, yg.b.f54101m, null, false, 6, null));
+        themeableLottieAnimationView.I(parseColor3, s.d(context4, yg.b.f54098m, null, false, 6, null));
         int parseColor4 = Color.parseColor("#8552FF");
         Context context5 = b10.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context5, "getContext(...)");
-        themeableLottieAnimationView.I(parseColor4, s.d(context5, yg.b.f54102n, null, false, 6, null));
+        themeableLottieAnimationView.I(parseColor4, s.d(context5, yg.b.f54099n, null, false, 6, null));
         Context context6 = b10.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context6, "getContext(...)");
-        int d10 = s.d(context6, yg.b.f54102n, null, false, 6, null);
+        int d10 = s.d(context6, yg.b.f54099n, null, false, 6, null);
         Context context7 = b10.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context7, "getContext(...)");
-        themeableLottieAnimationView.I(Color.parseColor("#DBCCFF"), r1.c.c(d10, s.d(context7, yg.b.f54103o, null, false, 6, null), 0.66f));
+        themeableLottieAnimationView.I(Color.parseColor("#DBCCFF"), r1.c.c(d10, s.d(context7, yg.b.f54100o, null, false, 6, null), 0.66f));
     }
 }

@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/NitroCoinSpotIllustration.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52755: for (var _fun52755_ip = 0;;) switch (_fun52755_ip) {
+        _fun52758: for (var _fun52758_ip = 0;;) switch (_fun52758_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun52755_ip = 35;
-                    continue _fun52755
+                    _fun52758_ip = 35;
+                    continue _fun52758
                 }
             case 29:
                 var9 = 288;
             case 35:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun52755_ip = 47;
-                    continue _fun52755
+                    _fun52758_ip = 47;
+                    continue _fun52758
                 }
             case 44:
                 var7 = 192;

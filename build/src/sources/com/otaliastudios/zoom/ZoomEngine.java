@@ -527,7 +527,7 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
     }
 
     public void M(float f10, float f11, float f12, boolean z10) {
-        vl.c a10 = vl.c.f51663l.a(new d(this.f16889s.u(f10), f11, f12));
+        vl.c a10 = vl.c.f51660l.a(new d(this.f16889s.u(f10), f11, f12));
         if (z10) {
             this.f16890t.f(a10);
             return;
@@ -568,7 +568,7 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
     }
 
     public void Q(float f10, float f11, boolean z10) {
-        vl.c a10 = vl.c.f51663l.a(new e(f10, f11));
+        vl.c a10 = vl.c.f51660l.a(new e(f10, f11));
         if (z10) {
             this.f16890t.f(a10);
             return;
@@ -582,7 +582,7 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
     }
 
     public void S(float f10, boolean z10) {
-        vl.c a10 = vl.c.f51663l.a(new g(f10));
+        vl.c a10 = vl.c.f51660l.a(new g(f10));
         if (z10) {
             this.f16890t.f(a10);
             return;

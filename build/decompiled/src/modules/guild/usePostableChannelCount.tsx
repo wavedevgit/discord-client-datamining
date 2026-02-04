@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild/usePostableChannelCount.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun107082: for (var _fun107082_ip = 0;;) switch (_fun107082_ip) {
+        _fun107095: for (var _fun107095_ip = 0;;) switch (_fun107095_ip) {
             case 0:
                 var0 = arg0;
                 var _closure2_slot0 = var0;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var0;
                 var0 = function() { // Environment: var1
-                    _fun107083: for (var _fun107083_ip = 0;;) switch (_fun107083_ip) {
+                    _fun107096: for (var _fun107096_ip = 0;;) switch (_fun107096_ip) {
                         case 0:
                             var3 = _closure1_slot3;
                             var2 = var3.getChannels;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var1[var0];
                             var1 = null;
                             if (!(var1 == var0)) {
-                                _fun107083_ip = 43;
-                                continue _fun107083
+                                _fun107096_ip = 43;
+                                continue _fun107096
                             }
                         case 39:
                             var0 = new Array(0);
@@ -82,8 +82,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.length;
                 var0 = 0;
                 if (!(var0 !== var2)) {
-                    _fun107082_ip = 106;
-                    continue _fun107082
+                    _fun107095_ip = 106;
+                    continue _fun107095
                 }
             case 84:
                 var2 = var3.filter;

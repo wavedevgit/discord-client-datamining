@@ -27,7 +27,7 @@ public enum b implements Parcelable {
     };
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f52239d;
+    private final String f52236d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class a extends Exception {
@@ -37,13 +37,13 @@ public enum b implements Parcelable {
     }
 
     b(String str) {
-        this.f52239d = str;
+        this.f52236d = str;
     }
 
     public static b a(String str) {
         b[] values;
         for (b bVar : values()) {
-            if (str.equals(bVar.f52239d)) {
+            if (str.equals(bVar.f52236d)) {
                 return bVar;
             }
         }
@@ -57,11 +57,11 @@ public enum b implements Parcelable {
 
     @Override // java.lang.Enum
     public String toString() {
-        return this.f52239d;
+        return this.f52236d;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f52239d);
+        parcel.writeString(this.f52236d);
     }
 }

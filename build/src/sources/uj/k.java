@@ -26,36 +26,36 @@ import mg.ze;
 public final class k extends pj.f {
 
     /* renamed from: j  reason: collision with root package name */
-    private static final wj.d f50665j = wj.d.b();
+    private static final wj.d f50662j = wj.d.b();
 
     /* renamed from: k  reason: collision with root package name */
-    static boolean f50666k = true;
+    static boolean f50663k = true;
 
     /* renamed from: d  reason: collision with root package name */
-    private final rj.b f50667d;
+    private final rj.b f50664d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final l f50668e;
+    private final l f50665e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final nk f50669f;
+    private final nk f50666f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final pk f50670g;
+    private final pk f50667g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final wj.a f50671h = new wj.a();
+    private final wj.a f50668h = new wj.a();
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f50672i;
+    private boolean f50669i;
 
     public k(pj.i iVar, rj.b bVar, l lVar, nk nkVar) {
         q.m(iVar, "MlKitContext can not be null");
         q.m(bVar, "BarcodeScannerOptions can not be null");
-        this.f50667d = bVar;
-        this.f50668e = lVar;
-        this.f50669f = nkVar;
-        this.f50670g = pk.a(iVar.b());
+        this.f50664d = bVar;
+        this.f50665e = lVar;
+        this.f50666f = nkVar;
+        this.f50667g = pk.a(iVar.b());
     }
 
     private final void m(final xe xeVar, long j10, final vj.a aVar, List list) {
@@ -71,7 +71,7 @@ public final class k extends pj.f {
             }
         }
         final long elapsedRealtime = SystemClock.elapsedRealtime() - j10;
-        this.f50669f.f(new mk() { // from class: uj.i
+        this.f50666f.f(new mk() { // from class: uj.i
             @Override // mg.mk
             public final ck zza() {
                 return k.this.j(elapsedRealtime, xeVar, f1Var, f1Var2, aVar);
@@ -79,13 +79,13 @@ public final class k extends pj.f {
         }, ye.ON_DEVICE_BARCODE_DETECT);
         c3 c3Var = new c3();
         c3Var.e(xeVar);
-        c3Var.f(Boolean.valueOf(f50666k));
-        c3Var.g(b.c(this.f50667d));
+        c3Var.f(Boolean.valueOf(f50663k));
+        c3Var.g(b.c(this.f50664d));
         c3Var.c(f1Var.g());
         c3Var.d(f1Var2.g());
         final e3 h10 = c3Var.h();
         final j jVar = new j(this);
-        final nk nkVar = this.f50669f;
+        final nk nkVar = this.f50666f;
         final ye yeVar = ye.AGGREGATED_ON_DEVICE_BARCODE_DETECTION;
         pj.g.d().execute(new Runnable() { // from class: mg.lk
             @Override // java.lang.Runnable
@@ -94,9 +94,9 @@ public final class k extends pj.f {
             }
         });
         long currentTimeMillis = System.currentTimeMillis();
-        boolean z10 = this.f50672i;
+        boolean z10 = this.f50669i;
         long j11 = currentTimeMillis - elapsedRealtime;
-        pk pkVar = this.f50670g;
+        pk pkVar = this.f50667g;
         if (true != z10) {
             i10 = 24301;
         } else {
@@ -107,25 +107,25 @@ public final class k extends pj.f {
 
     @Override // pj.k
     public final synchronized void b() {
-        this.f50672i = this.f50668e.a();
+        this.f50669i = this.f50665e.a();
     }
 
     @Override // pj.k
     public final synchronized void d() {
         we weVar;
         try {
-            this.f50668e.zzb();
-            f50666k = true;
+            this.f50665e.zzb();
+            f50663k = true;
             ze zeVar = new ze();
-            if (this.f50672i) {
+            if (this.f50669i) {
                 weVar = we.TYPE_THICK;
             } else {
                 weVar = we.TYPE_THIN;
             }
-            nk nkVar = this.f50669f;
+            nk nkVar = this.f50666f;
             zeVar.e(weVar);
             mf mfVar = new mf();
-            mfVar.i(b.c(this.f50667d));
+            mfVar.i(b.c(this.f50664d));
             zeVar.g(mfVar.j());
             nkVar.d(qk.e(zeVar), ye.ON_DEVICE_BARCODE_CLOSE);
         } catch (Throwable th2) {
@@ -141,16 +141,16 @@ public final class k extends pj.f {
         je jeVar = new je();
         jeVar.c(Long.valueOf(j10));
         jeVar.d(xeVar);
-        jeVar.e(Boolean.valueOf(f50666k));
+        jeVar.e(Boolean.valueOf(f50663k));
         Boolean bool = Boolean.TRUE;
         jeVar.a(bool);
         jeVar.b(bool);
         mfVar.h(jeVar.f());
-        mfVar.i(b.c(this.f50667d));
+        mfVar.i(b.c(this.f50664d));
         mfVar.e(f1Var.g());
         mfVar.f(f1Var2.g());
         int g10 = aVar.g();
-        int d10 = f50665j.d(aVar);
+        int d10 = f50662j.d(aVar);
         ce ceVar = new ce();
         if (g10 != -1) {
             if (g10 != 35) {
@@ -177,7 +177,7 @@ public final class k extends pj.f {
         ceVar.b(Integer.valueOf(d10));
         mfVar.g(ceVar.d());
         ze zeVar = new ze();
-        if (this.f50672i) {
+        if (this.f50669i) {
             weVar = we.TYPE_THICK;
         } else {
             weVar = we.TYPE_THIN;
@@ -191,7 +191,7 @@ public final class k extends pj.f {
     public final /* synthetic */ ck k(e3 e3Var, int i10, yd ydVar) {
         we weVar;
         ze zeVar = new ze();
-        if (this.f50672i) {
+        if (this.f50669i) {
             weVar = we.TYPE_THICK;
         } else {
             weVar = we.TYPE_THIN;
@@ -213,16 +213,16 @@ public final class k extends pj.f {
         xe xeVar;
         try {
             try {
-                wj.a aVar3 = this.f50671h;
+                wj.a aVar3 = this.f50668h;
                 long elapsedRealtime = SystemClock.elapsedRealtime();
                 aVar3.a(aVar);
                 try {
-                    List c10 = this.f50668e.c(aVar);
+                    List c10 = this.f50665e.c(aVar);
                     kVar = this;
                     aVar2 = aVar;
                     try {
                         kVar.m(xe.NO_ERROR, elapsedRealtime, aVar2, c10);
-                        f50666k = false;
+                        f50663k = false;
                         return c10;
                     } catch (lj.a e10) {
                         e = e10;

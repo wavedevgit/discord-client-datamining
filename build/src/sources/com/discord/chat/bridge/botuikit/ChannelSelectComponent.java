@@ -35,7 +35,7 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8238id;
+    private final String f8237id;
     private final int maxValues;
     private final int minValues;
     private final String placeholder;
@@ -87,7 +87,7 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
             v1.b(i10, 719, ChannelSelectComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f8238id = str;
+        this.f8237id = str;
         this.state = actionComponentState;
         this.customId = str2;
         if ((i10 & 16) == 0) {
@@ -130,7 +130,7 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
             i10 = channelSelectComponent.type;
         }
         if ((i13 & 2) != 0) {
-            str = channelSelectComponent.f8238id;
+            str = channelSelectComponent.f8237id;
         }
         if ((i13 & 4) != 0) {
             actionComponentState = channelSelectComponent.state;
@@ -211,7 +211,7 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
 
     @NotNull
     public final String component2() {
-        return this.f8238id;
+        return this.f8237id;
     }
 
     @NotNull
@@ -259,7 +259,7 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
         }
         if (obj instanceof ChannelSelectComponent) {
             ChannelSelectComponent channelSelectComponent = (ChannelSelectComponent) obj;
-            return this.type == channelSelectComponent.type && Intrinsics.areEqual(this.f8238id, channelSelectComponent.f8238id) && this.state == channelSelectComponent.state && Intrinsics.areEqual(this.customId, channelSelectComponent.customId) && Intrinsics.areEqual(this.placeholder, channelSelectComponent.placeholder) && Intrinsics.areEqual(this.accessibilityLabel, channelSelectComponent.accessibilityLabel) && this.minValues == channelSelectComponent.minValues && this.maxValues == channelSelectComponent.maxValues && this.disabled == channelSelectComponent.disabled && Intrinsics.areEqual(this.selectedOptions, channelSelectComponent.selectedOptions) && Intrinsics.areEqual(this.channelTypes, channelSelectComponent.channelTypes);
+            return this.type == channelSelectComponent.type && Intrinsics.areEqual(this.f8237id, channelSelectComponent.f8237id) && this.state == channelSelectComponent.state && Intrinsics.areEqual(this.customId, channelSelectComponent.customId) && Intrinsics.areEqual(this.placeholder, channelSelectComponent.placeholder) && Intrinsics.areEqual(this.accessibilityLabel, channelSelectComponent.accessibilityLabel) && this.minValues == channelSelectComponent.minValues && this.maxValues == channelSelectComponent.maxValues && this.disabled == channelSelectComponent.disabled && Intrinsics.areEqual(this.selectedOptions, channelSelectComponent.selectedOptions) && Intrinsics.areEqual(this.channelTypes, channelSelectComponent.channelTypes);
         }
         return false;
     }
@@ -287,7 +287,7 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f8238id;
+        return this.f8237id;
     }
 
     @Override // com.discord.chat.bridge.botuikit.SelectComponent
@@ -323,7 +323,7 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
     }
 
     public int hashCode() {
-        int hashCode = ((((((Integer.hashCode(this.type) * 31) + this.f8238id.hashCode()) * 31) + this.state.hashCode()) * 31) + this.customId.hashCode()) * 31;
+        int hashCode = ((((((Integer.hashCode(this.type) * 31) + this.f8237id.hashCode()) * 31) + this.state.hashCode()) * 31) + this.customId.hashCode()) * 31;
         String str = this.placeholder;
         int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
         String str2 = this.accessibilityLabel;
@@ -335,7 +335,7 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f8238id;
+        String str = this.f8237id;
         ActionComponentState actionComponentState = this.state;
         String str2 = this.customId;
         String str3 = this.placeholder;
@@ -360,7 +360,7 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
         Intrinsics.checkNotNullParameter(customId, "customId");
         Intrinsics.checkNotNullParameter(selectedOptions, "selectedOptions");
         this.type = i10;
-        this.f8238id = id2;
+        this.f8237id = id2;
         this.state = state;
         this.customId = customId;
         this.placeholder = str;

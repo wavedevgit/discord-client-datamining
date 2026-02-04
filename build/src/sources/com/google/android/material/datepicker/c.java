@@ -34,15 +34,15 @@ public final class c {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(Context context) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(lh.b.d(context, yg.b.f54114z, i.class.getCanonicalName()), yg.k.f54415o3);
-        this.f14497a = b.a(context, obtainStyledAttributes.getResourceId(yg.k.f54451s3, 0));
-        this.f14503g = b.a(context, obtainStyledAttributes.getResourceId(yg.k.f54433q3, 0));
-        this.f14498b = b.a(context, obtainStyledAttributes.getResourceId(yg.k.f54442r3, 0));
-        this.f14499c = b.a(context, obtainStyledAttributes.getResourceId(yg.k.f54460t3, 0));
-        ColorStateList a10 = lh.c.a(context, obtainStyledAttributes, yg.k.f54469u3);
-        this.f14500d = b.a(context, obtainStyledAttributes.getResourceId(yg.k.f54487w3, 0));
-        this.f14501e = b.a(context, obtainStyledAttributes.getResourceId(yg.k.f54478v3, 0));
-        this.f14502f = b.a(context, obtainStyledAttributes.getResourceId(yg.k.f54496x3, 0));
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(lh.b.d(context, yg.b.f54111z, i.class.getCanonicalName()), yg.k.f54412o3);
+        this.f14497a = b.a(context, obtainStyledAttributes.getResourceId(yg.k.f54448s3, 0));
+        this.f14503g = b.a(context, obtainStyledAttributes.getResourceId(yg.k.f54430q3, 0));
+        this.f14498b = b.a(context, obtainStyledAttributes.getResourceId(yg.k.f54439r3, 0));
+        this.f14499c = b.a(context, obtainStyledAttributes.getResourceId(yg.k.f54457t3, 0));
+        ColorStateList a10 = lh.c.a(context, obtainStyledAttributes, yg.k.f54466u3);
+        this.f14500d = b.a(context, obtainStyledAttributes.getResourceId(yg.k.f54484w3, 0));
+        this.f14501e = b.a(context, obtainStyledAttributes.getResourceId(yg.k.f54475v3, 0));
+        this.f14502f = b.a(context, obtainStyledAttributes.getResourceId(yg.k.f54493x3, 0));
         Paint paint = new Paint();
         this.f14504h = paint;
         paint.setColor(a10.getDefaultColor());

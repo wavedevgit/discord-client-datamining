@@ -32,7 +32,7 @@ import yg.j;
 public class MaterialButtonToggleGroup extends LinearLayout {
 
     /* renamed from: v  reason: collision with root package name */
-    private static final int f14276v = j.f54267u;
+    private static final int f14276v = j.f54264u;
 
     /* renamed from: d  reason: collision with root package name */
     private final List f14277d;
@@ -182,7 +182,7 @@ public class MaterialButtonToggleGroup extends LinearLayout {
     }
 
     public MaterialButtonToggleGroup(@NonNull Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, yg.b.f54113y);
+        this(context, attributeSet, yg.b.f54110y);
     }
 
     private void c() {
@@ -587,24 +587,24 @@ public class MaterialButtonToggleGroup extends LinearLayout {
             r0.<init>()
             r6.f14286u = r0
             android.content.Context r0 = r6.getContext()
-            int[] r2 = yg.k.f54367j3
+            int[] r2 = yg.k.f54364j3
             int[] r5 = new int[r7]
             r1 = r8
             r3 = r9
             android.content.res.TypedArray r8 = com.google.android.material.internal.l.i(r0, r1, r2, r3, r4, r5)
-            int r9 = yg.k.f54406n3
+            int r9 = yg.k.f54403n3
             boolean r9 = r8.getBoolean(r9, r7)
             r6.setSingleSelection(r9)
-            int r9 = yg.k.f54387l3
+            int r9 = yg.k.f54384l3
             r0 = -1
             int r9 = r8.getResourceId(r9, r0)
             r6.f14285t = r9
-            int r9 = yg.k.f54397m3
+            int r9 = yg.k.f54394m3
             boolean r7 = r8.getBoolean(r9, r7)
             r6.f14284s = r7
             r7 = 1
             r6.setChildrenDrawingOrderEnabled(r7)
-            int r9 = yg.k.f54377k3
+            int r9 = yg.k.f54374k3
             boolean r9 = r8.getBoolean(r9, r7)
             r6.setEnabled(r9)
             r8.recycle()

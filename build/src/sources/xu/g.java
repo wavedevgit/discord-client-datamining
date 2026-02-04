@@ -12,13 +12,13 @@ import zu.b;
 public final class g implements nu.b, c, zu.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g f53584a = new g();
+    public static final g f53581a = new g();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class a extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f53585d = new a();
+        public static final a f53582d = new a();
 
         a() {
             super(1);
@@ -57,7 +57,7 @@ public final class g implements nu.b, c, zu.b {
         int size = c10.size();
         if (size != 0) {
             if (size != 1) {
-                return a(b(obj), a.f53585d);
+                return a(b(obj), a.f53582d);
             }
             return CollectionsKt.o0(c10);
         }

@@ -8,7 +8,7 @@ public final class m0 {
     public static final m0 f31967a = new m0();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final CoroutineDispatcher f31968b = qs.c.f48172t;
+    private static final CoroutineDispatcher f31968b = qs.c.f48169t;
 
     /* renamed from: c  reason: collision with root package name */
     private static final CoroutineDispatcher f31969c = kotlinx.coroutines.h0.f35519i;
@@ -21,7 +21,7 @@ public final class m0 {
     }
 
     public static final CoroutineDispatcher b() {
-        return qs.b.f48170o;
+        return qs.b.f48167o;
     }
 
     public static final c1 c() {

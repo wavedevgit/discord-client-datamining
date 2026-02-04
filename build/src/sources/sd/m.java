@@ -8,45 +8,45 @@ import sd.g;
 public final class m extends f {
 
     /* renamed from: j  reason: collision with root package name */
-    private final g f49457j;
+    private final g f49454j;
 
     /* renamed from: k  reason: collision with root package name */
-    private g.b f49458k;
+    private g.b f49455k;
 
     /* renamed from: l  reason: collision with root package name */
-    private long f49459l;
+    private long f49456l;
 
     /* renamed from: m  reason: collision with root package name */
-    private volatile boolean f49460m;
+    private volatile boolean f49457m;
 
     public m(DataSource dataSource, com.google.android.exoplayer2.upstream.a aVar, Format format, int i10, Object obj, g gVar) {
         super(dataSource, aVar, 2, format, i10, obj, -9223372036854775807L, -9223372036854775807L);
-        this.f49457j = gVar;
+        this.f49454j = gVar;
     }
 
     @Override // com.google.android.exoplayer2.upstream.i.e
     public void b() {
-        if (this.f49459l == 0) {
-            this.f49457j.e(this.f49458k, -9223372036854775807L, -9223372036854775807L);
+        if (this.f49456l == 0) {
+            this.f49454j.e(this.f49455k, -9223372036854775807L, -9223372036854775807L);
         }
         try {
-            com.google.android.exoplayer2.upstream.a e10 = this.f49419b.e(this.f49459l);
-            a0 a0Var = this.f49426i;
+            com.google.android.exoplayer2.upstream.a e10 = this.f49416b.e(this.f49456l);
+            a0 a0Var = this.f49423i;
             tc.e eVar = new tc.e(a0Var, e10.f12949g, a0Var.b(e10));
-            while (!this.f49460m && this.f49457j.a(eVar)) {
+            while (!this.f49457m && this.f49454j.a(eVar)) {
             }
-            this.f49459l = eVar.getPosition() - this.f49419b.f12949g;
+            this.f49456l = eVar.getPosition() - this.f49416b.f12949g;
         } finally {
-            le.o.a(this.f49426i);
+            le.o.a(this.f49423i);
         }
     }
 
     @Override // com.google.android.exoplayer2.upstream.i.e
     public void c() {
-        this.f49460m = true;
+        this.f49457m = true;
     }
 
     public void g(g.b bVar) {
-        this.f49458k = bVar;
+        this.f49455k = bVar;
     }
 }

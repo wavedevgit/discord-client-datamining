@@ -36,7 +36,7 @@ public class i {
     public static i d(Context context) {
         i e10;
         synchronized (f46043b) {
-            e10 = e(context, wg.l.f52410a);
+            e10 = e(context, wg.l.f52407a);
         }
         return e10;
     }

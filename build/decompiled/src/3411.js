@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun29148: for (var _fun29148_ip = 0;;) switch (_fun29148_ip) {
+    _fun29150: for (var _fun29150_ip = 0;;) switch (_fun29150_ip) {
         case 0:
             var0 = global;
             var1 = var0.Reflect;
@@ -8,16 +8,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1 = typeof var1;
             var1 = var2 !== var1;
             if (!var1) {
-                _fun29148_ip = 33;
-                continue _fun29148
+                _fun29150_ip = 33;
+                continue _fun29150
             }
         case 21:
             var0 = var0.Reflect;
             var1 = var0.setPrototypeOf;
         case 33:
             if (var1) {
-                _fun29148_ip = 38;
-                continue _fun29148
+                _fun29150_ip = 38;
+                continue _fun29150
             }
         case 36:
             var1 = null;

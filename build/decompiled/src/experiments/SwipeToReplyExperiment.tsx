@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'experiments/SwipeToReplyExperiment.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun77486: for (var _fun77486_ip = 0;;) switch (_fun77486_ip) {
+        _fun77503: for (var _fun77503_ip = 0;;) switch (_fun77503_ip) {
             case 0:
                 var2 = _closure1_slot1;
                 var4 = _closure1_slot2;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.bind(var1)();
                 var0 = !var2;
                 if (var2) {
-                    _fun77486_ip = 78;
-                    continue _fun77486
+                    _fun77503_ip = 78;
+                    continue _fun77503
                 }
             case 75:
                 var0 = !var1;
@@ -60,4 +60,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsMessageSwipeActionsEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [9844, 9846, 8994, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [9847, 9849, 8997, 2]);

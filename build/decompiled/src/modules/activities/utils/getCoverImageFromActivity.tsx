@@ -27,23 +27,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/getCoverImageFromActivity.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun92535: for (var _fun92535_ip = 0;;) switch (_fun92535_ip) {
+        _fun92552: for (var _fun92552_ip = 0;;) switch (_fun92552_ip) {
             case 0:
                 var2 = arg0;
                 var3 = null;
                 var1 = var3 == var2;
                 var0 = null;
                 if (var1) {
-                    _fun92535_ip = 119;
-                    continue _fun92535
+                    _fun92552_ip = 119;
+                    continue _fun92552
                 }
             case 14:
                 var1 = var2.assets;
                 var1 = var3 == var1;
                 var0 = null;
                 if (var1) {
-                    _fun92535_ip = 119;
-                    continue _fun92535
+                    _fun92552_ip = 119;
+                    continue _fun92552
                 }
             case 29:
                 var1 = var2.assets;
@@ -51,8 +51,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3 == var1;
                 var0 = null;
                 if (var1) {
-                    _fun92535_ip = 119;
-                    continue _fun92535
+                    _fun92552_ip = 119;
+                    continue _fun92552
                 }
             case 50:
                 var5 = _closure1_slot0;

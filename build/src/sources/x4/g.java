@@ -6,9 +6,9 @@ import x4.r;
 public final class g extends r.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Uri f53110a;
+    private final Uri f53107a;
 
     public g(Uri uri) {
-        this.f53110a = uri;
+        this.f53107a = uri;
     }
 }

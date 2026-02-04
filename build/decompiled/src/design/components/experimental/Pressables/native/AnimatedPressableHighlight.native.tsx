@@ -1,7 +1,7 @@
 // design/components/experimental/Pressables/native/AnimatedPressableHighlight.native.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun44577: for (var _fun44577_ip = 0;;) switch (_fun44577_ip) {
+    _fun44580: for (var _fun44580_ip = 0;;) switch (_fun44580_ip) {
         case 0:
             var4 = require;
             var6 = metroImportDefault;
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var6.isAndroid;
             var1 = var1.bind(var6)();
             if (var1) {
-                _fun44577_ip = 198;
-                continue _fun44577
+                _fun44580_ip = 198;
+                continue _fun44580
             }
         case 191:
             var1 = function arg0() {
@@ -98,11 +98,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var3)(var1, var0);
                 return var0;
             };
-            _fun44577_ip = 203;
-            continue _fun44577;
+            _fun44580_ip = 203;
+            continue _fun44580;
         case 198:
             var1 = function arg0() {
-                _fun44578: for (var _fun44578_ip = 0;;) switch (_fun44578_ip) {
+                _fun44581: for (var _fun44581_ip = 0;;) switch (_fun44581_ip) {
                     case 0:
                         var3 = arg0;
                         var5 = var3.children;
@@ -138,15 +138,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var10 = var8 == var9;
                         var8 = undefined;
                         if (var10) {
-                            _fun44578_ip = 142;
-                            continue _fun44578
+                            _fun44581_ip = 142;
+                            continue _fun44581
                         }
                     case 136:
                         var8 = var9.cornerRadius;
                     case 142:
                         var2[1] = var8;
                         var1 = function() { // Environment: var1
-                            _fun44579: for (var _fun44579_ip = 0;;) switch (_fun44579_ip) {
+                            _fun44582: for (var _fun44582_ip = 0;;) switch (_fun44582_ip) {
                                 case 0:
                                     var0 = {};
                                     var2 = _closure2_slot1;
@@ -157,8 +157,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var4 = var1 == var3;
                                     var2 = undefined;
                                     if (var4) {
-                                        _fun44579_ip = 40;
-                                        continue _fun44579
+                                        _fun44582_ip = 40;
+                                        continue _fun44582
                                     }
                                 case 34:
                                     var2 = var3.cornerRadius;
@@ -166,8 +166,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var3 = var1 != var2;
                                     var1 = 12;
                                     if (!var3) {
-                                        _fun44579_ip = 53;
-                                        continue _fun44579
+                                        _fun44582_ip = 53;
+                                        continue _fun44582
                                     }
                                 case 50:
                                     var1 = var2;

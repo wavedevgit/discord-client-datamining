@@ -24,22 +24,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = '\u2069';
     var2.PDI = var1;
     var1 = function arg0() {
-        _fun49376: for (var _fun49376_ip = 0;;) switch (_fun49376_ip) {
+        _fun49379: for (var _fun49379_ip = 0;;) switch (_fun49379_ip) {
             case 0:
                 var2 = arg0;
                 var1 = null;
                 var0 = var2;
                 if (!(var1 != var2)) {
-                    _fun49376_ip = 46;
-                    continue _fun49376
+                    _fun49379_ip = 46;
+                    continue _fun49379
                 }
             case 12:
                 var3 = var2.length;
                 var1 = 0;
                 var0 = var2;
                 if (!(var1 !== var3)) {
-                    _fun49376_ip = 46;
-                    continue _fun49376
+                    _fun49379_ip = 46;
+                    continue _fun49379
                 }
             case 26:
                 var1 = '\u2068';

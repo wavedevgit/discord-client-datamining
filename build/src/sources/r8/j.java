@@ -5,29 +5,29 @@ import java.io.InputStream;
 public class j extends InputStream {
 
     /* renamed from: d  reason: collision with root package name */
-    final h f48593d;
+    final h f48590d;
 
     /* renamed from: e  reason: collision with root package name */
-    int f48594e;
+    int f48591e;
 
     /* renamed from: i  reason: collision with root package name */
-    int f48595i;
+    int f48592i;
 
     public j(h hVar) {
         o8.j.b(Boolean.valueOf(!hVar.isClosed()));
-        this.f48593d = (h) o8.j.g(hVar);
-        this.f48594e = 0;
-        this.f48595i = 0;
+        this.f48590d = (h) o8.j.g(hVar);
+        this.f48591e = 0;
+        this.f48592i = 0;
     }
 
     @Override // java.io.InputStream
     public int available() {
-        return this.f48593d.size() - this.f48594e;
+        return this.f48590d.size() - this.f48591e;
     }
 
     @Override // java.io.InputStream
     public void mark(int i10) {
-        this.f48595i = this.f48594e;
+        this.f48592i = this.f48591e;
     }
 
     @Override // java.io.InputStream
@@ -40,15 +40,15 @@ public class j extends InputStream {
         if (available() <= 0) {
             return -1;
         }
-        h hVar = this.f48593d;
-        int i10 = this.f48594e;
-        this.f48594e = i10 + 1;
+        h hVar = this.f48590d;
+        int i10 = this.f48591e;
+        this.f48591e = i10 + 1;
         return hVar.w(i10) & 255;
     }
 
     @Override // java.io.InputStream
     public void reset() {
-        this.f48594e = this.f48595i;
+        this.f48591e = this.f48592i;
     }
 
     @Override // java.io.InputStream
@@ -61,7 +61,7 @@ public class j extends InputStream {
         }
         o8.j.b(Boolean.valueOf(z10));
         int min = Math.min((int) j10, available());
-        this.f48594e += min;
+        this.f48591e += min;
         return min;
     }
 
@@ -81,8 +81,8 @@ public class j extends InputStream {
                 return 0;
             }
             int min = Math.min(available, i11);
-            this.f48593d.o(this.f48594e, bArr, i10, min);
-            this.f48594e += min;
+            this.f48590d.o(this.f48591e, bArr, i10, min);
+            this.f48591e += min;
             return min;
         }
         throw new ArrayIndexOutOfBoundsException("length=" + bArr.length + "; regionStart=" + i10 + "; regionLength=" + i11);

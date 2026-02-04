@@ -744,7 +744,6 @@ public final class SelfieOverlayView extends FrameLayout {
         float f10;
         float f11;
         float f12;
-        boolean z10;
         f fVar = this.R;
         d dVar = this.T;
         if (fVar != null) {
@@ -787,11 +786,7 @@ public final class SelfieOverlayView extends FrameLayout {
         this.G.setColor(r1.c.c(this.f19089q, this.f19090r, f14));
         this.H.setColor(r1.c.c(this.f19089q, this.f19090r, f15));
         this.I.setColor(r1.c.c(this.f19089q, this.f19090r, f16));
-        if (this.N == f17 && this.O == f18) {
-            z10 = false;
-        } else {
-            z10 = true;
-        }
+        boolean z10 = (this.N == f17 && this.O == f18) ? false : true;
         this.N = f17;
         this.O = f18;
         Paint paint = this.F;

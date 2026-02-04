@@ -395,9 +395,9 @@ public abstract class b4 {
                 }, 11776, null);
             }
         } else if (h4Var == null) {
-            if (aVar2 == vn.a.f51700d && !(action.c() instanceof n1.f) && !(action.c() instanceof n1.i)) {
+            if (aVar2 == vn.a.f51697d && !(action.c() instanceof n1.f) && !(action.c() instanceof n1.i)) {
                 kVar2 = new n1.f((h4) CollectionsKt.z0(list), list2, list, i11, v(action, z10), str, c4Var, vVar);
-            } else if (aVar2 == vn.a.f51701e && !(action.c() instanceof n1.e) && !(action.c() instanceof n1.i)) {
+            } else if (aVar2 == vn.a.f51698e && !(action.c() instanceof n1.e) && !(action.c() instanceof n1.i)) {
                 kVar2 = new n1.e(c4Var, list2, (h4) CollectionsKt.z0(list), list, i11, v(action, z10), str, new lo.c(list2, aVar.h(), aVar.i()), 0L, false, 768, null);
             } else {
                 kVar2 = new n1.k(c4Var, list2, null, list, i11, v(action, z10), str, new lo.c(list2, aVar.h(), aVar.i()), str2, vVar, 4, null);

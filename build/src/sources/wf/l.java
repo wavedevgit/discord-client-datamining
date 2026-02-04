@@ -11,14 +11,14 @@ public enum l implements a {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f52294d;
+    private final int f52291d;
 
     l(int i10) {
-        this.f52294d = i10;
+        this.f52291d = i10;
     }
 
     @Override // wf.a
     public int a() {
-        return this.f52294d;
+        return this.f52291d;
     }
 }

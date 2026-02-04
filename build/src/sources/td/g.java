@@ -7,7 +7,7 @@ import ud.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class g {
     public static com.google.android.exoplayer2.upstream.a a(j jVar, String str, i iVar, int i10, Map map) {
-        return new a.b().i(iVar.b(str)).h(iVar.f50552a).g(iVar.f50553b).f(b(jVar, iVar)).b(i10).e(map).a();
+        return new a.b().i(iVar.b(str)).h(iVar.f50549a).g(iVar.f50550b).f(b(jVar, iVar)).b(i10).e(map).a();
     }
 
     public static String b(j jVar, i iVar) {
@@ -15,6 +15,6 @@ public abstract class g {
         if (k10 != null) {
             return k10;
         }
-        return iVar.b(((ud.b) jVar.f50558c.get(0)).f50503a).toString();
+        return iVar.b(((ud.b) jVar.f50555c.get(0)).f50500a).toString();
     }
 }

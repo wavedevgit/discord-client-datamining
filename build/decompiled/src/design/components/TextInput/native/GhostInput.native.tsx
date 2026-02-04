@@ -31,21 +31,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var3);
     var6 = var7.createStyles;
     var3 = function() { // Environment: var1
-        _fun88269: for (var _fun88269_ip = 0;;) switch (_fun88269_ip) {
+        _fun88286: for (var _fun88286_ip = 0;;) switch (_fun88286_ip) {
             case 0:
                 var6 = arguments[0];
                 var4 = arguments[1];
                 var5 = undefined;
                 if (!(var6 === var5)) {
-                    _fun88269_ip = 16;
-                    continue _fun88269
+                    _fun88286_ip = 16;
+                    continue _fun88286
                 }
             case 12:
                 var6 = 'lg';
             case 16:
                 if (!(var4 === var5)) {
-                    _fun88269_ip = 24;
-                    continue _fun88269
+                    _fun88286_ip = 24;
+                    continue _fun88286
                 }
             case 20:
                 var4 = 'default';
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = copyDataProperties(var12, var11);
                 var3 = 'error';
                 if (!(var3 !== var4)) {
-                    _fun88269_ip = 150;
-                    continue _fun88269
+                    _fun88286_ip = 150;
+                    continue _fun88286
                 }
             case 117:
                 var4 = _closure1_slot1;
@@ -82,8 +82,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var4.bind(var5)(var3);
                 var3 = var3.colors;
                 var3 = var3.TEXT_DEFAULT;
-                _fun88269_ip = 181;
-                continue _fun88269;
+                _fun88286_ip = 181;
+                continue _fun88286;
             case 150:
                 var4 = _closure1_slot1;
                 var6 = _closure1_slot2;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/TextInput/native/GhostInput.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun88270: for (var _fun88270_ip = 0;;) switch (_fun88270_ip) {
+        _fun88287: for (var _fun88287_ip = 0;;) switch (_fun88287_ip) {
             case 0:
                 var5 = arg0;
                 var1 = _closure1_slot0;
@@ -136,8 +136,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var5.isCentered;
                 var12 = var3 === var0;
                 if (var12) {
-                    _fun88270_ip = 86;
-                    continue _fun88270
+                    _fun88287_ip = 86;
+                    continue _fun88287
                 }
             case 83:
                 var12 = var0;
@@ -145,8 +145,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var5.autoFocus;
                 var8 = var3 === var0;
                 if (var8) {
-                    _fun88270_ip = 102;
-                    continue _fun88270
+                    _fun88287_ip = 102;
+                    continue _fun88287
                 }
             case 99:
                 var8 = var0;
@@ -174,8 +174,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6[0] = var5;
                 var5 = undefined;
                 if (!var12) {
-                    _fun88270_ip = 205;
-                    continue _fun88270
+                    _fun88287_ip = 205;
+                    continue _fun88287
                 }
             case 199:
                 var5 = var9.centeredContainerStyle;

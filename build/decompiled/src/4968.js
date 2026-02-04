@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun44826: for (var _fun44826_ip = 0;;) switch (_fun44826_ip) {
+    _fun44829: for (var _fun44829_ip = 0;;) switch (_fun44829_ip) {
         case 0:
             var4 = require;
             var12 = exports;
@@ -29,8 +29,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = var10[var4];
             var1 = var9.bind(var0)(var4);
         case 85: // try_end0
-            _fun44826_ip = 91;
-            continue _fun44826;
+            _fun44829_ip = 91;
+            continue _fun44829;
         case 87: // catch_target0
             CatchBlockStart(arg_register = 4);
             var1 = undefined;
@@ -41,15 +41,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var9 = var9 != var10;
             var4 = var9;
             if (!var9) {
-                _fun44826_ip = 115;
-                continue _fun44826
+                _fun44829_ip = 115;
+                continue _fun44829
             }
         case 109:
             var4 = var6.useSharedValue;
         case 115:
             if (var4) {
-                _fun44826_ip = 120;
-                continue _fun44826
+                _fun44829_ip = 120;
+                continue _fun44829
             }
         case 118:
             var1 = undefined;
@@ -62,16 +62,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var0 === var6;
             var4 = var6;
             if (var6) {
-                _fun44826_ip = 157;
-                continue _fun44826
+                _fun44829_ip = 157;
+                continue _fun44829
             }
         case 148:
             var6 = var1;
             var4 = var6.setGestureState;
         case 157:
             if (var4) {
-                _fun44826_ip = 230;
-                continue _fun44826
+                _fun44829_ip = 230;
+                continue _fun44829
             }
         case 160:
             var4 = var1;

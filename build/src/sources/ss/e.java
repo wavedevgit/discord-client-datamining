@@ -17,10 +17,10 @@ import ss.e;
 public class e extends i implements Mutex {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f49599i = AtomicReferenceFieldUpdater.newUpdater(e.class, Object.class, "owner$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f49596i = AtomicReferenceFieldUpdater.newUpdater(e.class, Object.class, "owner$volatile");
 
     /* renamed from: h  reason: collision with root package name */
-    private final Function3 f49600h;
+    private final Function3 f49597h;
     private volatile /* synthetic */ Object owner$volatile;
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -28,69 +28,69 @@ public class e extends i implements Mutex {
     public final class a implements CancellableContinuation, w1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public final kotlinx.coroutines.e f49601d;
+        public final kotlinx.coroutines.e f49598d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final Object f49602e;
+        public final Object f49599e;
 
         public a(kotlinx.coroutines.e eVar, Object obj) {
-            this.f49601d = eVar;
-            this.f49602e = obj;
+            this.f49598d = eVar;
+            this.f49599e = obj;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final Unit j(e eVar, a aVar, Throwable th2) {
-            eVar.c(aVar.f49602e);
+            eVar.c(aVar.f49599e);
             return Unit.f32464a;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final Unit m(e eVar, a aVar, Throwable th2, Unit unit, CoroutineContext coroutineContext) {
-            e.w().set(eVar, aVar.f49602e);
-            eVar.c(aVar.f49602e);
+            e.w().set(eVar, aVar.f49599e);
+            eVar.c(aVar.f49599e);
             return Unit.f32464a;
         }
 
         @Override // kotlinx.coroutines.CancellableContinuation
         public boolean a() {
-            return this.f49601d.a();
+            return this.f49598d.a();
         }
 
         @Override // kotlinx.coroutines.CancellableContinuation
         public void c(Function1 function1) {
-            this.f49601d.c(function1);
+            this.f49598d.c(function1);
         }
 
         @Override // kotlinx.coroutines.CancellableContinuation
         public Object e(Throwable th2) {
-            return this.f49601d.e(th2);
+            return this.f49598d.e(th2);
         }
 
         @Override // kotlinx.coroutines.CancellableContinuation
         public void f(CoroutineDispatcher coroutineDispatcher, Throwable th2) {
-            this.f49601d.f(coroutineDispatcher, th2);
+            this.f49598d.f(coroutineDispatcher, th2);
         }
 
         @Override // kotlinx.coroutines.CancellableContinuation
         public boolean g(Throwable th2) {
-            return this.f49601d.g(th2);
+            return this.f49598d.g(th2);
         }
 
         @Override // kotlin.coroutines.Continuation
         public CoroutineContext getContext() {
-            return this.f49601d.getContext();
+            return this.f49598d.getContext();
         }
 
         @Override // js.w1
         public void h(b0 b0Var, int i10) {
-            this.f49601d.h(b0Var, i10);
+            this.f49598d.h(b0Var, i10);
         }
 
         @Override // kotlinx.coroutines.CancellableContinuation
         /* renamed from: i */
         public void p(Unit unit, Function3 function3) {
-            e.w().set(e.this, this.f49602e);
-            kotlinx.coroutines.e eVar = this.f49601d;
+            e.w().set(e.this, this.f49599e);
+            kotlinx.coroutines.e eVar = this.f49598d;
             final e eVar2 = e.this;
             eVar.R(unit, new Function1() { // from class: ss.d
                 @Override // kotlin.jvm.functions.Function1
@@ -104,20 +104,20 @@ public class e extends i implements Mutex {
 
         @Override // kotlinx.coroutines.CancellableContinuation
         public boolean isCompleted() {
-            return this.f49601d.isCompleted();
+            return this.f49598d.isCompleted();
         }
 
         @Override // kotlinx.coroutines.CancellableContinuation
         /* renamed from: k */
         public void q(CoroutineDispatcher coroutineDispatcher, Unit unit) {
-            this.f49601d.q(coroutineDispatcher, unit);
+            this.f49598d.q(coroutineDispatcher, unit);
         }
 
         @Override // kotlinx.coroutines.CancellableContinuation
         /* renamed from: l */
         public Object t(Unit unit, Object obj, Function3 function3) {
             final e eVar = e.this;
-            Object t10 = this.f49601d.t(unit, obj, new Function3() { // from class: ss.c
+            Object t10 = this.f49598d.t(unit, obj, new Function3() { // from class: ss.c
                 @Override // kotlin.jvm.functions.Function3
                 public final Object invoke(Object obj2, Object obj3, Object obj4) {
                     Unit m10;
@@ -126,19 +126,19 @@ public class e extends i implements Mutex {
                 }
             });
             if (t10 != null) {
-                e.w().set(e.this, this.f49602e);
+                e.w().set(e.this, this.f49599e);
             }
             return t10;
         }
 
         @Override // kotlin.coroutines.Continuation
         public void resumeWith(Object obj) {
-            this.f49601d.resumeWith(obj);
+            this.f49598d.resumeWith(obj);
         }
 
         @Override // kotlinx.coroutines.CancellableContinuation
         public void w(Object obj) {
-            this.f49601d.w(obj);
+            this.f49598d.w(obj);
         }
     }
 
@@ -146,12 +146,12 @@ public class e extends i implements Mutex {
         super(1, z10 ? 1 : 0);
         e0 e0Var;
         if (!z10) {
-            e0Var = f.f49604a;
+            e0Var = f.f49601a;
         } else {
             e0Var = null;
         }
         this.owner$volatile = e0Var;
-        this.f49600h = new Function3() { // from class: ss.a
+        this.f49597h = new Function3() { // from class: ss.a
             @Override // kotlin.jvm.functions.Function3
             public final Object invoke(Object obj, Object obj2, Object obj3) {
                 Function3 C;
@@ -221,19 +221,19 @@ public class e extends i implements Mutex {
                 return 1;
             }
         }
-        f49599i.set(this, obj);
+        f49596i.set(this, obj);
         return 0;
     }
 
     public static final /* synthetic */ AtomicReferenceFieldUpdater w() {
-        return f49599i;
+        return f49596i;
     }
 
     private final int y(Object obj) {
         e0 e0Var;
         while (z()) {
-            Object obj2 = f49599i.get(this);
-            e0Var = f.f49604a;
+            Object obj2 = f49596i.get(this);
+            e0Var = f.f49601a;
             if (obj2 != e0Var) {
                 if (obj2 == obj) {
                     return 1;
@@ -268,12 +268,12 @@ public class e extends i implements Mutex {
         e0 e0Var;
         e0 e0Var2;
         while (z()) {
-            Object obj2 = f49599i.get(this);
-            e0Var = f.f49604a;
+            Object obj2 = f49596i.get(this);
+            e0Var = f.f49601a;
             if (obj2 != e0Var) {
                 if (obj2 == obj || obj == null) {
-                    AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f49599i;
-                    e0Var2 = f.f49604a;
+                    AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f49596i;
+                    e0Var2 = f.f49601a;
                     if (androidx.concurrent.futures.b.a(atomicReferenceFieldUpdater, this, obj2, e0Var2)) {
                         release();
                         return;
@@ -287,7 +287,7 @@ public class e extends i implements Mutex {
     }
 
     public String toString() {
-        return "Mutex@" + js.e0.b(this) + "[isLocked=" + z() + ",owner=" + f49599i.get(this) + ']';
+        return "Mutex@" + js.e0.b(this) + "[isLocked=" + z() + ",owner=" + f49596i.get(this) + ']';
     }
 
     public boolean z() {

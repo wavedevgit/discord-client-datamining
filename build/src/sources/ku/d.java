@@ -265,7 +265,7 @@ public final class d implements WebSocket, g.a {
                     }
                 }
                 try {
-                    d.this.r(xt.e.f53575i + " WebSocket " + this.f36215e.n().q(), n10);
+                    d.this.r(xt.e.f53572i + " WebSocket " + this.f36215e.n().q(), n10);
                     d.this.q().onOpen(d.this, response);
                     d.this.t();
                 } catch (Exception e10) {
@@ -361,7 +361,7 @@ public final class d implements WebSocket, g.a {
     }
 
     private final void u() {
-        if (xt.e.f53574h && !Thread.holdsLock(this)) {
+        if (xt.e.f53571h && !Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + this);
         }
         au.a aVar = this.f36188i;

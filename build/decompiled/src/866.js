@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
     var0 = function arg0, arg1, arg2() {
-        _fun9140: for (var _fun9140_ip = 0;;) switch (_fun9140_ip) {
+        _fun9142: for (var _fun9142_ip = 0;;) switch (_fun9142_ip) {
             case 0:
                 var1 = arg0;
                 var11 = arg1;
@@ -29,8 +29,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var4.hasSpansEnabled;
                 var3 = var3.bind(var4)(var1);
                 if (var3) {
-                    _fun9140_ip = 62;
-                    continue _fun9140
+                    _fun9142_ip = 62;
+                    continue _fun9142
                 }
             case 50:
                 var3 = new Array(1);
@@ -42,33 +42,33 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9 = 'function';
                 var3 = typeof var3;
                 if (!(var9 !== var3)) {
-                    _fun9140_ip = 123;
-                    continue _fun9140
+                    _fun9142_ip = 123;
+                    continue _fun9142
                 }
             case 79:
                 var3 = var11.parentSampled;
                 if (!(var2 === var3)) {
-                    _fun9140_ip = 113;
-                    continue _fun9140
+                    _fun9142_ip = 113;
+                    continue _fun9142
                 }
             case 89:
                 var6 = var1.tracesSampleRate;
                 var3 = undefined;
                 var4 = undefined;
                 if (!(var2 !== var6)) {
-                    _fun9140_ip = 170;
-                    continue _fun9140
+                    _fun9142_ip = 170;
+                    continue _fun9142
                 }
             case 103:
                 var3 = var1.tracesSampleRate;
                 var4 = true;
-                _fun9140_ip = 170;
-                continue _fun9140;
+                _fun9142_ip = 170;
+                continue _fun9142;
             case 113:
                 var3 = var11.parentSampled;
                 var4 = undefined;
-                _fun9140_ip = 170;
-                continue _fun9140;
+                _fun9142_ip = 170;
+                continue _fun9142;
             case 123:
                 var6 = var1.tracesSampler;
                 var7 = global;
@@ -76,7 +76,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8 = var10.assign;
                 var7 = {};
                 var5 = function arg0() {
-                    _fun9141: for (var _fun9141_ip = 0;;) switch (_fun9141_ip) {
+                    _fun9143: for (var _fun9143_ip = 0;;) switch (_fun9143_ip) {
                         case 0:
                             var0 = arg0;
                             var2 = _closure2_slot0;
@@ -84,8 +84,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = 'number';
                             var2 = typeof var2;
                             if (!(var3 !== var2)) {
-                                _fun9141_ip = 75;
-                                continue _fun9141
+                                _fun9143_ip = 75;
+                                continue _fun9143
                             }
                         case 27:
                             var2 = _closure2_slot0;
@@ -93,8 +93,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = 'boolean';
                             var2 = typeof var2;
                             if (!(var3 === var2)) {
-                                _fun9141_ip = 73;
-                                continue _fun9141
+                                _fun9143_ip = 73;
+                                continue _fun9143
                             }
                         case 48:
                             var2 = global;
@@ -104,8 +104,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = undefined;
                             var0 = var4.bind(var2)(var3);
                         case 73:
-                            _fun9141_ip = 85;
-                            continue _fun9141;
+                            _fun9143_ip = 85;
+                            continue _fun9143;
                         case 75:
                             var1 = _closure2_slot0;
                             var0 = var1.parentSampleRate;
@@ -127,13 +127,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var6.parseSampleRate;
                 var5 = var5.bind(var6)(var3);
                 if (!(var2 !== var5)) {
-                    _fun9140_ip = 464;
-                    continue _fun9140
+                    _fun9142_ip = 464;
+                    continue _fun9142
                 }
             case 208:
                 if (var5) {
-                    _fun9140_ip = 331;
-                    continue _fun9140
+                    _fun9142_ip = 331;
+                    continue _fun9142
                 }
             case 211:
                 var7 = _closure1_slot0;
@@ -143,8 +143,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var7.bind(var2)(var6);
                 var6 = var6.DEBUG_BUILD;
                 if (!var6) {
-                    _fun9140_ip = 311;
-                    continue _fun9140
+                    _fun9142_ip = 311;
+                    continue _fun9142
                 }
             case 240:
                 var7 = _closure1_slot0;
@@ -158,8 +158,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8 = 'a negative sampling decision was inherited or tracesSampleRate is set to 0';
                 var1 = typeof var1;
                 if (!(var9 === var1)) {
-                    _fun9140_ip = 296;
-                    continue _fun9140
+                    _fun9142_ip = 296;
+                    continue _fun9142
                 }
             case 290:
                 var8 = 'tracesSampler returned 0 or false';
@@ -178,8 +178,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = arg2;
                 var6 = var1 < var5;
                 if (var6) {
-                    _fun9140_ip = 446;
-                    continue _fun9140
+                    _fun9142_ip = 446;
+                    continue _fun9142
                 }
             case 341:
                 var7 = _closure1_slot0;
@@ -189,8 +189,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var7.bind(var2)(var1);
                 var1 = var1.DEBUG_BUILD;
                 if (!var1) {
-                    _fun9140_ip = 446;
-                    continue _fun9140
+                    _fun9142_ip = 446;
+                    continue _fun9142
                 }
             case 370:
                 var7 = _closure1_slot0;
@@ -223,8 +223,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var4.bind(var2)(var1);
                 var1 = var1.DEBUG_BUILD;
                 if (!var1) {
-                    _fun9140_ip = 602;
-                    continue _fun9140
+                    _fun9142_ip = 602;
+                    continue _fun9142
                 }
             case 493:
                 var1 = _closure1_slot0;

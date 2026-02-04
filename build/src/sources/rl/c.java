@@ -21,16 +21,16 @@ import org.webrtc.PeerConnection;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static Map f48867a = new HashMap();
+    private static Map f48864a = new HashMap();
 
     static {
         int i10 = Build.VERSION.SDK_INT;
-        f48867a.put("video/avc", i10 >= 27 ? new int[]{65536, 1, 4, 2, 524288, 8, 16, 32, 64} : new int[]{1, 4, 2, 8, 16, 32, 64});
-        f48867a.put("video/x-vnd.on2.vp8", new int[]{1});
-        f48867a.put("video/hevc", i10 >= 29 ? new int[]{1, 2, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT, 8192} : new int[]{1, 2, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT});
-        f48867a.put("video/x-vnd.on2.vp9", i10 >= 29 ? new int[]{1, 2, 4, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT, 16384, 8, 8192, PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS} : new int[]{1, 2, 4, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT, 8, 8192});
+        f48864a.put("video/avc", i10 >= 27 ? new int[]{65536, 1, 4, 2, 524288, 8, 16, 32, 64} : new int[]{1, 4, 2, 8, 16, 32, 64});
+        f48864a.put("video/x-vnd.on2.vp8", new int[]{1});
+        f48864a.put("video/hevc", i10 >= 29 ? new int[]{1, 2, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT, 8192} : new int[]{1, 2, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT});
+        f48864a.put("video/x-vnd.on2.vp9", i10 >= 29 ? new int[]{1, 2, 4, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT, 16384, 8, 8192, PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS} : new int[]{1, 2, 4, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT, 8, 8192});
         if (i10 >= 29) {
-            f48867a.put("video/av01", new int[]{1, 2, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT, 8192});
+            f48864a.put("video/av01", new int[]{1, 2, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT, 8192});
         }
     }
 

@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
     var2 = function arg0, arg1() {
-        _fun38330: for (var _fun38330_ip = 0;;) switch (_fun38330_ip) {
+        _fun38332: for (var _fun38332_ip = 0;;) switch (_fun38332_ip) {
             case 0:
                 var1 = arg0;
                 var0 = arg1;
@@ -30,14 +30,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var4.bind(var5)();
                 var2 = var4;
                 if (!(var3 !== var4)) {
-                    _fun38330_ip = 144;
-                    continue _fun38330
+                    _fun38332_ip = 144;
+                    continue _fun38332
                 }
             case 48:
                 var4 = var1;
                 if (!(var3 !== var4)) {
-                    _fun38330_ip = 144;
-                    continue _fun38330
+                    _fun38332_ip = 144;
+                    continue _fun38332
                 }
             case 55: // try_start_0
                 var4 = var2;
@@ -57,16 +57,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var1.DataView;
                 var5 = var6 instanceof var5;
                 if (var5) {
-                    _fun38330_ip = 126;
-                    continue _fun38330
+                    _fun38332_ip = 126;
+                    continue _fun38332
                 }
             case 105:
                 var6 = var1.Uint8Array;
                 var5 = var6.from;
                 var1 = var0;
                 var1 = var5.bind(var6)(var1);
-                _fun38330_ip = 135;
-                continue _fun38330;
+                _fun38332_ip = 135;
+                continue _fun38332;
             case 126:
                 var5 = var0;
                 var1 = var5.buffer;
@@ -100,8 +100,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var4.bind(var3)(var0);
                 var0 = var2.bind(var3)(var0);
             case 208: // try_end1
-                _fun38330_ip = 215;
-                continue _fun38330;
+                _fun38332_ip = 215;
+                continue _fun38332;
             case 210: // catch_target1
                 CatchBlockStart(arg_register = 2);
                 var0 = var1;

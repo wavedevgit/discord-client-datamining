@@ -5,16 +5,16 @@ import x.q;
 final class b extends q {
 
     /* renamed from: a  reason: collision with root package name */
-    private final q.b f52780a;
+    private final q.b f52777a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final q.a f52781b;
+    private final q.a f52778b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(q.b bVar, q.a aVar) {
         if (bVar != null) {
-            this.f52780a = bVar;
-            this.f52781b = aVar;
+            this.f52777a = bVar;
+            this.f52778b = aVar;
             return;
         }
         throw new NullPointerException("Null type");
@@ -22,12 +22,12 @@ final class b extends q {
 
     @Override // x.q
     public q.a c() {
-        return this.f52781b;
+        return this.f52778b;
     }
 
     @Override // x.q
     public q.b d() {
-        return this.f52780a;
+        return this.f52777a;
     }
 
     public boolean equals(Object obj) {
@@ -37,7 +37,7 @@ final class b extends q {
         }
         if (obj instanceof q) {
             q qVar = (q) obj;
-            if (this.f52780a.equals(qVar.d()) && ((aVar = this.f52781b) != null ? aVar.equals(qVar.c()) : qVar.c() == null)) {
+            if (this.f52777a.equals(qVar.d()) && ((aVar = this.f52778b) != null ? aVar.equals(qVar.c()) : qVar.c() == null)) {
                 return true;
             }
         }
@@ -46,8 +46,8 @@ final class b extends q {
 
     public int hashCode() {
         int hashCode;
-        int hashCode2 = (this.f52780a.hashCode() ^ 1000003) * 1000003;
-        q.a aVar = this.f52781b;
+        int hashCode2 = (this.f52777a.hashCode() ^ 1000003) * 1000003;
+        q.a aVar = this.f52778b;
         if (aVar == null) {
             hashCode = 0;
         } else {
@@ -57,6 +57,6 @@ final class b extends q {
     }
 
     public String toString() {
-        return "CameraState{type=" + this.f52780a + ", error=" + this.f52781b + "}";
+        return "CameraState{type=" + this.f52777a + ", error=" + this.f52778b + "}";
     }
 }

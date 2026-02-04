@@ -476,7 +476,7 @@ public final class a {
             d0(f10);
             f11 = f10;
         }
-        TimeInterpolator timeInterpolator = zg.a.f55945b;
+        TimeInterpolator timeInterpolator = zg.a.f55942b;
         Q(1.0f - G(0.0f, 1.0f, 1.0f - f10, timeInterpolator));
         Y(G(1.0f, 0.0f, f10, timeInterpolator));
         if (this.f14753o != this.f14751n) {

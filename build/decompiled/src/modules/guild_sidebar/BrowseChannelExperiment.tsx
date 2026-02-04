@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.BrowseChannelExperiment = var3;
     var1 = function arg0() {
-        _fun95355: for (var _fun95355_ip = 0;;) switch (_fun95355_ip) {
+        _fun95372: for (var _fun95372_ip = 0;;) switch (_fun95372_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = var2.useExperiment;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var2)(var0);
                 var0 = var0.alwaysShowDirectory;
                 if (var0) {
-                    _fun95355_ip = 43;
-                    continue _fun95355
+                    _fun95372_ip = 43;
+                    continue _fun95372
                 }
             case 37:
                 var1 = arg0;

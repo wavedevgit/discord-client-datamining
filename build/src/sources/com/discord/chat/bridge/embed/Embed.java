@@ -48,7 +48,7 @@ public final class Embed implements SpoilerableData {
     private final String iconURL;
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8266id;
+    private final String f8265id;
     private final EmbedMedia image;
     private final List<EmbedMedia> images;
     private final String messageSendError;
@@ -122,9 +122,9 @@ public final class Embed implements SpoilerableData {
         this.type = embedType;
         String str15 = null;
         if ((i10 & 2) == 0) {
-            this.f8266id = null;
+            this.f8265id = null;
         } else {
-            this.f8266id = str;
+            this.f8265id = str;
         }
         if ((i10 & 4) == 0) {
             this.author = null;
@@ -340,7 +340,7 @@ public final class Embed implements SpoilerableData {
         EmbedMedia embedMedia4;
         EmbedThumbnail embedThumbnail2;
         EmbedType embedType2 = (i11 & 1) != 0 ? embed.type : embedType;
-        String str23 = (i11 & 2) != 0 ? embed.f8266id : str;
+        String str23 = (i11 & 2) != 0 ? embed.f8265id : str;
         EmbedAuthor embedAuthor3 = (i11 & 4) != 0 ? embed.author : embedAuthor;
         EmbedProvider embedProvider3 = (i11 & 8) != 0 ? embed.provider : embedProvider;
         String str24 = (i11 & 16) != 0 ? embed.rawTitle : str2;
@@ -500,7 +500,7 @@ public final class Embed implements SpoilerableData {
     }
 
     public final String component2() {
-        return this.f8266id;
+        return this.f8265id;
     }
 
     public final String component20() {
@@ -595,7 +595,7 @@ public final class Embed implements SpoilerableData {
         }
         if (obj instanceof Embed) {
             Embed embed = (Embed) obj;
-            return this.type == embed.type && Intrinsics.areEqual(this.f8266id, embed.f8266id) && Intrinsics.areEqual(this.author, embed.author) && Intrinsics.areEqual(this.provider, embed.provider) && Intrinsics.areEqual(this.rawTitle, embed.rawTitle) && Intrinsics.areEqual(this.title, embed.title) && Intrinsics.areEqual(this.fields, embed.fields) && Intrinsics.areEqual(this.url, embed.url) && Intrinsics.areEqual(this.rawDescription, embed.rawDescription) && Intrinsics.areEqual(this.description, embed.description) && Intrinsics.areEqual(this.image, embed.image) && Intrinsics.areEqual(this.images, embed.images) && Intrinsics.areEqual(this.video, embed.video) && Intrinsics.areEqual(this.thumbnail, embed.thumbnail) && Intrinsics.areEqual(this.numAttachments, embed.numAttachments) && Intrinsics.areEqual(this.attachmentsSize, embed.attachmentsSize) && Intrinsics.areEqual(this.messageSendError, embed.messageSendError) && Intrinsics.areEqual(this.disableBackgroundColor, embed.disableBackgroundColor) && Intrinsics.areEqual(this.footer, embed.footer) && Intrinsics.areEqual(this.spoiler, embed.spoiler) && Intrinsics.areEqual(this.obscure, embed.obscure) && Intrinsics.areEqual(this.obscureAwaitingScan, embed.obscureAwaitingScan) && Intrinsics.areEqual(this.obscureHideControls, embed.obscureHideControls) && Intrinsics.areEqual(this.obscureIsOpaque, embed.obscureIsOpaque) && Intrinsics.areEqual(this.verifyAge, embed.verifyAge) && Intrinsics.areEqual(this.iconURL, embed.iconURL) && this.failureState == embed.failureState && Intrinsics.areEqual(this.providerColor, embed.providerColor) && Intrinsics.areEqual(this.borderLeftColor, embed.borderLeftColor) && Intrinsics.areEqual(this.headerTextColor, embed.headerTextColor) && this.bodyTextColor == embed.bodyTextColor && Intrinsics.areEqual(this.backgroundColor, embed.backgroundColor);
+            return this.type == embed.type && Intrinsics.areEqual(this.f8265id, embed.f8265id) && Intrinsics.areEqual(this.author, embed.author) && Intrinsics.areEqual(this.provider, embed.provider) && Intrinsics.areEqual(this.rawTitle, embed.rawTitle) && Intrinsics.areEqual(this.title, embed.title) && Intrinsics.areEqual(this.fields, embed.fields) && Intrinsics.areEqual(this.url, embed.url) && Intrinsics.areEqual(this.rawDescription, embed.rawDescription) && Intrinsics.areEqual(this.description, embed.description) && Intrinsics.areEqual(this.image, embed.image) && Intrinsics.areEqual(this.images, embed.images) && Intrinsics.areEqual(this.video, embed.video) && Intrinsics.areEqual(this.thumbnail, embed.thumbnail) && Intrinsics.areEqual(this.numAttachments, embed.numAttachments) && Intrinsics.areEqual(this.attachmentsSize, embed.attachmentsSize) && Intrinsics.areEqual(this.messageSendError, embed.messageSendError) && Intrinsics.areEqual(this.disableBackgroundColor, embed.disableBackgroundColor) && Intrinsics.areEqual(this.footer, embed.footer) && Intrinsics.areEqual(this.spoiler, embed.spoiler) && Intrinsics.areEqual(this.obscure, embed.obscure) && Intrinsics.areEqual(this.obscureAwaitingScan, embed.obscureAwaitingScan) && Intrinsics.areEqual(this.obscureHideControls, embed.obscureHideControls) && Intrinsics.areEqual(this.obscureIsOpaque, embed.obscureIsOpaque) && Intrinsics.areEqual(this.verifyAge, embed.verifyAge) && Intrinsics.areEqual(this.iconURL, embed.iconURL) && this.failureState == embed.failureState && Intrinsics.areEqual(this.providerColor, embed.providerColor) && Intrinsics.areEqual(this.borderLeftColor, embed.borderLeftColor) && Intrinsics.areEqual(this.headerTextColor, embed.headerTextColor) && this.bodyTextColor == embed.bodyTextColor && Intrinsics.areEqual(this.backgroundColor, embed.backgroundColor);
         }
         return false;
     }
@@ -649,7 +649,7 @@ public final class Embed implements SpoilerableData {
     }
 
     public final String getId() {
-        return this.f8266id;
+        return this.f8265id;
     }
 
     public final EmbedMedia getImage() {
@@ -741,7 +741,7 @@ public final class Embed implements SpoilerableData {
 
     public int hashCode() {
         int hashCode = this.type.hashCode() * 31;
-        String str = this.f8266id;
+        String str = this.f8265id;
         int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
         EmbedAuthor embedAuthor = this.author;
         int hashCode3 = (hashCode2 + (embedAuthor == null ? 0 : embedAuthor.hashCode())) * 31;
@@ -806,7 +806,7 @@ public final class Embed implements SpoilerableData {
     @NotNull
     public String toString() {
         EmbedType embedType = this.type;
-        String str = this.f8266id;
+        String str = this.f8265id;
         EmbedAuthor embedAuthor = this.author;
         EmbedProvider embedProvider = this.provider;
         String str2 = this.rawTitle;
@@ -844,7 +844,7 @@ public final class Embed implements SpoilerableData {
         String str12 = str8;
         Intrinsics.checkNotNullParameter(type, "type");
         this.type = type;
-        this.f8266id = str;
+        this.f8265id = str;
         this.author = embedAuthor;
         this.provider = embedProvider;
         this.rawTitle = str2;

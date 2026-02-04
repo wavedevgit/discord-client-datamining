@@ -48,7 +48,7 @@ public final class Attachment implements SpoilerableData {
     private final String hint;
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f8234id;
+    private final String f8233id;
     private final boolean isAnimated;
     private final boolean isSpoiler;
     private final Integer mediaViewerBufferForPlaybackAfterRebufferMs;
@@ -113,9 +113,9 @@ public final class Attachment implements SpoilerableData {
             v1.a(new int[]{i10, i11}, new int[]{154, 0}, Attachment$$serializer.INSTANCE.getDescriptor());
         }
         if ((i10 & 1) == 0) {
-            this.f8234id = null;
+            this.f8233id = null;
         } else {
-            this.f8234id = str;
+            this.f8233id = str;
         }
         this.url = str2;
         if ((i10 & 4) == 0) {
@@ -520,7 +520,7 @@ public final class Attachment implements SpoilerableData {
     }
 
     public final String component1() {
-        return this.f8234id;
+        return this.f8233id;
     }
 
     public final String component10() {
@@ -676,7 +676,7 @@ public final class Attachment implements SpoilerableData {
         }
         if (obj instanceof Attachment) {
             Attachment attachment = (Attachment) obj;
-            return Intrinsics.areEqual(this.f8234id, attachment.f8234id) && Intrinsics.areEqual(this.url, attachment.url) && Intrinsics.areEqual(this.videoUrl, attachment.videoUrl) && Intrinsics.areEqual(this.filename, attachment.filename) && Intrinsics.areEqual(this.size, attachment.size) && Intrinsics.areEqual(this.sourceWidth, attachment.sourceWidth) && Intrinsics.areEqual(this.sourceHeight, attachment.sourceHeight) && this.isSpoiler == attachment.isSpoiler && Intrinsics.areEqual(this.spoiler, attachment.spoiler) && Intrinsics.areEqual(this.description, attachment.description) && Intrinsics.areEqual(this.hint, attachment.hint) && Intrinsics.areEqual(this.role, attachment.role) && this.showDescription == attachment.showDescription && Intrinsics.areEqual(this.progress, attachment.progress) && Intrinsics.areEqual(this.uploaderId, attachment.uploaderId) && Intrinsics.areEqual(this.uploaderItemId, attachment.uploaderItemId) && Intrinsics.areEqual(this.placeholder, attachment.placeholder) && Intrinsics.areEqual(this.placeholderVersion, attachment.placeholderVersion) && Intrinsics.areEqual(this.backgroundColor, attachment.backgroundColor) && Intrinsics.areEqual(this.attachmentTagText, attachment.attachmentTagText) && Intrinsics.areEqual(this.attachmentTagBackgroundColor, attachment.attachmentTagBackgroundColor) && Intrinsics.areEqual(this.attachmentTagTextColor, attachment.attachmentTagTextColor) && Intrinsics.areEqual(this.attachmentTagIconType, attachment.attachmentTagIconType) && Intrinsics.areEqual(this.attachmentType, attachment.attachmentType) && Intrinsics.areEqual(this.obscure, attachment.obscure) && Intrinsics.areEqual(this.obscureDescription, attachment.obscureDescription) && Intrinsics.areEqual(this.obscureAwaitingScan, attachment.obscureAwaitingScan) && Intrinsics.areEqual(this.obscureHideControls, attachment.obscureHideControls) && Intrinsics.areEqual(this.obscureIsOpaque, attachment.obscureIsOpaque) && Intrinsics.areEqual(this.verifyAge, attachment.verifyAge) && Intrinsics.areEqual((Object) this.durationSecs, (Object) attachment.durationSecs) && Intrinsics.areEqual(this.waveform, attachment.waveform) && this.isAnimated == attachment.isAnimated && Intrinsics.areEqual(this.mediaViewerBufferForPlaybackMs, attachment.mediaViewerBufferForPlaybackMs) && Intrinsics.areEqual(this.mediaViewerBufferForPlaybackAfterRebufferMs, attachment.mediaViewerBufferForPlaybackAfterRebufferMs) && Intrinsics.areEqual(this.mediaViewerMinBufferMs, attachment.mediaViewerMinBufferMs) && Intrinsics.areEqual(this.mediaViewerMaxBufferMs, attachment.mediaViewerMaxBufferMs) && Intrinsics.areEqual(this.mediaViewerEnableDecoderFallback, attachment.mediaViewerEnableDecoderFallback) && Intrinsics.areEqual(this.mediaViewerEnableAsyncBufferQueueing, attachment.mediaViewerEnableAsyncBufferQueueing) && Intrinsics.areEqual(this.srcIsAnimated, attachment.srcIsAnimated);
+            return Intrinsics.areEqual(this.f8233id, attachment.f8233id) && Intrinsics.areEqual(this.url, attachment.url) && Intrinsics.areEqual(this.videoUrl, attachment.videoUrl) && Intrinsics.areEqual(this.filename, attachment.filename) && Intrinsics.areEqual(this.size, attachment.size) && Intrinsics.areEqual(this.sourceWidth, attachment.sourceWidth) && Intrinsics.areEqual(this.sourceHeight, attachment.sourceHeight) && this.isSpoiler == attachment.isSpoiler && Intrinsics.areEqual(this.spoiler, attachment.spoiler) && Intrinsics.areEqual(this.description, attachment.description) && Intrinsics.areEqual(this.hint, attachment.hint) && Intrinsics.areEqual(this.role, attachment.role) && this.showDescription == attachment.showDescription && Intrinsics.areEqual(this.progress, attachment.progress) && Intrinsics.areEqual(this.uploaderId, attachment.uploaderId) && Intrinsics.areEqual(this.uploaderItemId, attachment.uploaderItemId) && Intrinsics.areEqual(this.placeholder, attachment.placeholder) && Intrinsics.areEqual(this.placeholderVersion, attachment.placeholderVersion) && Intrinsics.areEqual(this.backgroundColor, attachment.backgroundColor) && Intrinsics.areEqual(this.attachmentTagText, attachment.attachmentTagText) && Intrinsics.areEqual(this.attachmentTagBackgroundColor, attachment.attachmentTagBackgroundColor) && Intrinsics.areEqual(this.attachmentTagTextColor, attachment.attachmentTagTextColor) && Intrinsics.areEqual(this.attachmentTagIconType, attachment.attachmentTagIconType) && Intrinsics.areEqual(this.attachmentType, attachment.attachmentType) && Intrinsics.areEqual(this.obscure, attachment.obscure) && Intrinsics.areEqual(this.obscureDescription, attachment.obscureDescription) && Intrinsics.areEqual(this.obscureAwaitingScan, attachment.obscureAwaitingScan) && Intrinsics.areEqual(this.obscureHideControls, attachment.obscureHideControls) && Intrinsics.areEqual(this.obscureIsOpaque, attachment.obscureIsOpaque) && Intrinsics.areEqual(this.verifyAge, attachment.verifyAge) && Intrinsics.areEqual((Object) this.durationSecs, (Object) attachment.durationSecs) && Intrinsics.areEqual(this.waveform, attachment.waveform) && this.isAnimated == attachment.isAnimated && Intrinsics.areEqual(this.mediaViewerBufferForPlaybackMs, attachment.mediaViewerBufferForPlaybackMs) && Intrinsics.areEqual(this.mediaViewerBufferForPlaybackAfterRebufferMs, attachment.mediaViewerBufferForPlaybackAfterRebufferMs) && Intrinsics.areEqual(this.mediaViewerMinBufferMs, attachment.mediaViewerMinBufferMs) && Intrinsics.areEqual(this.mediaViewerMaxBufferMs, attachment.mediaViewerMaxBufferMs) && Intrinsics.areEqual(this.mediaViewerEnableDecoderFallback, attachment.mediaViewerEnableDecoderFallback) && Intrinsics.areEqual(this.mediaViewerEnableAsyncBufferQueueing, attachment.mediaViewerEnableAsyncBufferQueueing) && Intrinsics.areEqual(this.srcIsAnimated, attachment.srcIsAnimated);
         }
         return false;
     }
@@ -734,7 +734,7 @@ public final class Attachment implements SpoilerableData {
     }
 
     public final String getId() {
-        return this.f8234id;
+        return this.f8233id;
     }
 
     public final Integer getMediaViewerBufferForPlaybackAfterRebufferMs() {
@@ -867,7 +867,7 @@ public final class Attachment implements SpoilerableData {
     }
 
     public int hashCode() {
-        String str = this.f8234id;
+        String str = this.f8233id;
         int hashCode = (((str == null ? 0 : str.hashCode()) * 31) + this.url.hashCode()) * 31;
         String str2 = this.videoUrl;
         int hashCode2 = (((((hashCode + (str2 == null ? 0 : str2.hashCode())) * 31) + this.filename.hashCode()) * 31) + this.size.hashCode()) * 31;
@@ -947,7 +947,7 @@ public final class Attachment implements SpoilerableData {
 
     @NotNull
     public String toString() {
-        String str = this.f8234id;
+        String str = this.f8233id;
         String str2 = this.url;
         String str3 = this.videoUrl;
         String str4 = this.filename;

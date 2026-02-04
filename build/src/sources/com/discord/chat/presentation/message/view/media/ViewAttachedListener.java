@@ -37,7 +37,7 @@ public final class ViewAttachedListener implements View.OnAttachStateChangeListe
         this.view = view;
         this.viewAttached = viewAttached;
         this.viewScrolling = viewScrolling;
-        this.isAttachedDelay = view.getResources().getInteger(g.f54199d);
+        this.isAttachedDelay = view.getResources().getInteger(g.f54196d);
         this.isAttachedRunnable = new Runnable() { // from class: a7.a
             @Override // java.lang.Runnable
             public final void run() {

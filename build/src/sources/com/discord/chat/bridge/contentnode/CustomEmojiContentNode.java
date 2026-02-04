@@ -22,7 +22,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
     private final String frozenSrc;
 
     /* renamed from: id */
-    private final long f8261id;
+    private final long f8260id;
     private final boolean jumboable;
     @NotNull
     private final String src;
@@ -49,7 +49,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
         if (15 != (i10 & 15)) {
             v1.b(i10, 15, CustomEmojiContentNode$$serializer.INSTANCE.getDescriptor());
         }
-        this.f8261id = j10;
+        this.f8260id = j10;
         this.alt = str;
         this.src = str2;
         this.frozenSrc = str3;
@@ -62,7 +62,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
 
     public static /* synthetic */ CustomEmojiContentNode copy$default(CustomEmojiContentNode customEmojiContentNode, long j10, String str, String str2, String str3, boolean z10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            j10 = customEmojiContentNode.f8261id;
+            j10 = customEmojiContentNode.f8260id;
         }
         long j11 = j10;
         if ((i10 & 2) != 0) {
@@ -85,7 +85,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
 
     public static final /* synthetic */ void write$Self$chat_release(CustomEmojiContentNode customEmojiContentNode, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         EmojiContentNode.write$Self(customEmojiContentNode, compositeEncoder, serialDescriptor);
-        compositeEncoder.E(serialDescriptor, 0, customEmojiContentNode.f8261id);
+        compositeEncoder.E(serialDescriptor, 0, customEmojiContentNode.f8260id);
         compositeEncoder.y(serialDescriptor, 1, customEmojiContentNode.alt);
         compositeEncoder.y(serialDescriptor, 2, customEmojiContentNode.src);
         compositeEncoder.y(serialDescriptor, 3, customEmojiContentNode.frozenSrc);
@@ -95,7 +95,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
     }
 
     public final long component1() {
-        return this.f8261id;
+        return this.f8260id;
     }
 
     @NotNull
@@ -131,7 +131,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
         }
         if (obj instanceof CustomEmojiContentNode) {
             CustomEmojiContentNode customEmojiContentNode = (CustomEmojiContentNode) obj;
-            return this.f8261id == customEmojiContentNode.f8261id && Intrinsics.areEqual(this.alt, customEmojiContentNode.alt) && Intrinsics.areEqual(this.src, customEmojiContentNode.src) && Intrinsics.areEqual(this.frozenSrc, customEmojiContentNode.frozenSrc) && this.jumboable == customEmojiContentNode.jumboable;
+            return this.f8260id == customEmojiContentNode.f8260id && Intrinsics.areEqual(this.alt, customEmojiContentNode.alt) && Intrinsics.areEqual(this.src, customEmojiContentNode.src) && Intrinsics.areEqual(this.frozenSrc, customEmojiContentNode.frozenSrc) && this.jumboable == customEmojiContentNode.jumboable;
         }
         return false;
     }
@@ -147,7 +147,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
     }
 
     public final long getId() {
-        return this.f8261id;
+        return this.f8260id;
     }
 
     @Override // com.discord.chat.presentation.textutils.Jumboable
@@ -161,12 +161,12 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
     }
 
     public int hashCode() {
-        return (((((((Long.hashCode(this.f8261id) * 31) + this.alt.hashCode()) * 31) + this.src.hashCode()) * 31) + this.frozenSrc.hashCode()) * 31) + Boolean.hashCode(this.jumboable);
+        return (((((((Long.hashCode(this.f8260id) * 31) + this.alt.hashCode()) * 31) + this.src.hashCode()) * 31) + this.frozenSrc.hashCode()) * 31) + Boolean.hashCode(this.jumboable);
     }
 
     @NotNull
     public String toString() {
-        long j10 = this.f8261id;
+        long j10 = this.f8260id;
         String str = this.alt;
         String str2 = this.src;
         String str3 = this.frozenSrc;
@@ -184,7 +184,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
         Intrinsics.checkNotNullParameter(alt, "alt");
         Intrinsics.checkNotNullParameter(src, "src");
         Intrinsics.checkNotNullParameter(frozenSrc, "frozenSrc");
-        this.f8261id = j10;
+        this.f8260id = j10;
         this.alt = alt;
         this.src = src;
         this.frozenSrc = frozenSrc;

@@ -127,7 +127,7 @@ public final class y implements ym.b {
         this.f22431x = governmentIdStepStyle;
         this.f22432y = remoteImage;
         this.f22433z = i10;
-        k.a aVar = ym.k.f54648a;
+        k.a aVar = ym.k.f54645a;
         this.B = new ym.z(Reflection.getOrCreateKotlinClass(y.class), a.f22434d, new Function1() { // from class: eo.s
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {

@@ -11,35 +11,35 @@ import xk.j;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int[] f56026a = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 36, -1, -1, -1, 37, 38, -1, -1, -1, -1, 39, 40, -1, 41, 42, 43, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 44, -1, -1, -1, -1, -1, -1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, -1, -1, -1, -1, -1};
+    private static final int[] f56023a = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 36, -1, -1, -1, 37, 38, -1, -1, -1, -1, 39, 40, -1, 41, 42, 43, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 44, -1, -1, -1, -1, -1, -1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, -1, -1, -1, -1, -1};
 
     /* renamed from: b  reason: collision with root package name */
-    static final Charset f56027b = StandardCharsets.ISO_8859_1;
+    static final Charset f56024b = StandardCharsets.ISO_8859_1;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f56028a;
+        static final /* synthetic */ int[] f56025a;
 
         static {
             int[] iArr = new int[h.values().length];
-            f56028a = iArr;
+            f56025a = iArr;
             try {
                 iArr[h.NUMERIC.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f56028a[h.ALPHANUMERIC.ordinal()] = 2;
+                f56025a[h.ALPHANUMERIC.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f56028a[h.BYTE.ordinal()] = 3;
+                f56025a[h.BYTE.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f56028a[h.KANJI.ordinal()] = 4;
+                f56025a[h.KANJI.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
         }
@@ -78,7 +78,7 @@ public abstract class c {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void c(String str, h hVar, gk.a aVar, Charset charset) {
-        int i10 = a.f56028a[hVar.ordinal()];
+        int i10 = a.f56025a[hVar.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
@@ -309,7 +309,7 @@ public abstract class c {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static int p(int i10) {
-        int[] iArr = f56026a;
+        int[] iArr = f56023a;
         if (i10 < iArr.length) {
             return iArr[i10];
         }

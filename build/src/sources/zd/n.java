@@ -33,7 +33,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
     private long Q;
 
     public n(m mVar, Looper looper) {
-        this(mVar, looper, j.f55915a);
+        this(mVar, looper, j.f55912a);
     }
 
     private void a0() {
@@ -299,7 +299,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
                                 } else {
                                     Format format = this.D.f36709b;
                                     if (format != null) {
-                                        kVar.f55916t = format.A;
+                                        kVar.f55913t = format.A;
                                         kVar.v();
                                         this.G &= !kVar.q();
                                     } else {

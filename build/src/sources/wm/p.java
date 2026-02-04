@@ -11,47 +11,47 @@ import wm.k;
 public final class p extends k implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KType f52565a;
+    private final KType f52562a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f52566b;
+    private final String f52563b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final s f52567c;
+    private final s f52564c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f52568d;
+        int f52565d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ o f52569e;
+        final /* synthetic */ o f52566e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ p f52570i;
+        final /* synthetic */ p f52567i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ k.a f52571o;
+        final /* synthetic */ k.a f52568o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(o oVar, p pVar, k.a aVar, Continuation continuation) {
             super(2, continuation);
-            this.f52569e = oVar;
-            this.f52570i = pVar;
-            this.f52571o = aVar;
+            this.f52566e = oVar;
+            this.f52567i = pVar;
+            this.f52568o = aVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new a(this.f52569e, this.f52570i, this.f52571o, continuation);
+            return new a(this.f52566e, this.f52567i, this.f52568o, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = rr.b.f();
-            int i10 = this.f52568d;
+            int i10 = this.f52565d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -60,10 +60,10 @@ public final class p extends k implements c {
                 }
             } else {
                 kotlin.c.b(obj);
-                o oVar = this.f52569e;
-                String str = this.f52570i.f52566b;
-                h c10 = this.f52571o.c();
-                this.f52568d = 1;
+                o oVar = this.f52566e;
+                String str = this.f52567i.f52563b;
+                h c10 = this.f52568o.c();
+                this.f52565d = 1;
                 if (w.k(oVar, str, c10, this) == f10) {
                     return f10;
                 }
@@ -80,19 +80,19 @@ public final class p extends k implements c {
     public p(KType workerType, String key) {
         Intrinsics.checkNotNullParameter(workerType, "workerType");
         Intrinsics.checkNotNullParameter(key, "key");
-        this.f52565a = workerType;
-        this.f52566b = key;
-        this.f52567c = w.n(workerType);
+        this.f52562a = workerType;
+        this.f52563b = key;
+        this.f52564c = w.n(workerType);
     }
 
     @Override // wm.c
     public String a() {
-        return Intrinsics.stringPlus("worker ", this.f52565a);
+        return Intrinsics.stringPlus("worker ", this.f52562a);
     }
 
     @Override // wm.c
     public s c() {
-        return this.f52567c;
+        return this.f52564c;
     }
 
     @Override // wm.k

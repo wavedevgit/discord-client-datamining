@@ -87,7 +87,7 @@ public final class b implements mt.d {
             }
         }
         if (iVar == null) {
-            iVar = st.f.f49649d;
+            iVar = st.f.f49646d;
         }
         f44570i = iVar;
         if (Boolean.getBoolean("net.time4j.format.iso.decimal.dot")) {

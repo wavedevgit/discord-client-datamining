@@ -11,7 +11,7 @@ public abstract class p5 {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(fontName, "fontName");
         String str = fontName + ".ttf";
-        c.a aVar = wp.c.f52616a;
+        c.a aVar = wp.c.f52613a;
         if (aVar.a().containsKey(str)) {
             typeface = (Typeface) aVar.a().get(str);
         } else {
@@ -26,7 +26,7 @@ public abstract class p5 {
                 typeface = null;
             }
         }
-        wp.c.f52616a.a().put(str, typeface);
+        wp.c.f52613a.a().put(str, typeface);
         return typeface;
     }
 }

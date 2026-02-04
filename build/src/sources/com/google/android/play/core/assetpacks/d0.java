@@ -81,13 +81,13 @@ public final class d0 extends th.j0 {
         }
         final Bundle bundleExtra2 = intent.getBundleExtra("com.google.android.play.core.assetpacks.receiver.EXTRA_SESSION_STATE");
         if (bundleExtra2 == null) {
-            this.f50051a.b("Empty bundle received from broadcast.", new Object[0]);
+            this.f50048a.b("Empty bundle received from broadcast.", new Object[0]);
             return;
         }
         ArrayList<String> stringArrayList = bundleExtra2.getStringArrayList("pack_names");
         if (stringArrayList != null && stringArrayList.size() == 1) {
             final AssetPackState c10 = AssetPackState.c(bundleExtra2, stringArrayList.get(0), this.f15330j, this.f15331k);
-            this.f50051a.a("ListenerRegistryBroadcastReceiver.onReceive: %s", c10);
+            this.f50048a.a("ListenerRegistryBroadcastReceiver.onReceive: %s", c10);
             PendingIntent pendingIntent = (PendingIntent) bundleExtra2.getParcelable("confirmation_intent");
             if (pendingIntent != null) {
                 this.f15329i.a(pendingIntent);
@@ -106,6 +106,6 @@ public final class d0 extends th.j0 {
             });
             return;
         }
-        this.f50051a.b("Corrupt bundle received from broadcast.", new Object[0]);
+        this.f50048a.b("Corrupt bundle received from broadcast.", new Object[0]);
     }
 }

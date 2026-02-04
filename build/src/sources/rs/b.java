@@ -12,13 +12,13 @@ import kotlin.jvm.internal.TypeIntrinsics;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f49068a;
+    private final long f49065a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     /* synthetic */ class a extends FunctionReferenceImpl implements Function3 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f49069d = new a();
+        public static final a f49066d = new a();
 
         a() {
             super(3, b.class, "register", "register(Lkotlinx/coroutines/selects/SelectInstance;Ljava/lang/Object;)V", 0);
@@ -36,12 +36,12 @@ public final class b {
     }
 
     public b(long j10) {
-        this.f49068a = j10;
+        this.f49065a = j10;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void d(final l lVar, Object obj) {
-        if (this.f49068a <= 0) {
+        if (this.f49065a <= 0) {
             lVar.d(Unit.f32464a);
             return;
         }
@@ -54,7 +54,7 @@ public final class b {
         Intrinsics.checkNotNull(lVar, "null cannot be cast to non-null type kotlinx.coroutines.selects.SelectImplementation<*>");
         k kVar = (k) lVar;
         CoroutineContext context = kVar.getContext();
-        kVar.n(i0.c(context).D0(this.f49068a, runnable, context));
+        kVar.n(i0.c(context).D0(this.f49065a, runnable, context));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -63,7 +63,7 @@ public final class b {
     }
 
     public final f c() {
-        a aVar = a.f49069d;
+        a aVar = a.f49066d;
         Intrinsics.checkNotNull(aVar, "null cannot be cast to non-null type kotlin.Function3<@[ParameterName(name = \"clauseObject\")] kotlin.Any, @[ParameterName(name = \"select\")] kotlinx.coroutines.selects.SelectInstance<*>, @[ParameterName(name = \"param\")] kotlin.Any?, kotlin.Unit>");
         return new g(this, (Function3) TypeIntrinsics.beforeCheckcastToFunctionOfArity(aVar, 3), null, 4, null);
     }

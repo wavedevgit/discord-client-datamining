@@ -8,29 +8,29 @@ import kotlin.text.StringsKt;
 public final class j implements s {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f52714a;
+    private final String f52711a;
 
     public j(String string) {
         Intrinsics.checkNotNullParameter(string, "string");
-        this.f52714a = string;
+        this.f52711a = string;
     }
 
     @Override // ws.o
     public xs.e a() {
-        return new xs.c(this.f52714a);
+        return new xs.c(this.f52711a);
     }
 
     @Override // ws.o
     public ys.q b() {
         String str;
         List a10;
-        if (this.f52714a.length() == 0) {
+        if (this.f52711a.length() == 0) {
             a10 = CollectionsKt.l();
         } else {
             List c10 = CollectionsKt.c();
             String str2 = "";
-            if (vs.d.b(this.f52714a.charAt(0))) {
-                String str3 = this.f52714a;
+            if (vs.d.b(this.f52711a.charAt(0))) {
+                String str3 = this.f52711a;
                 int length = str3.length();
                 int i10 = 0;
                 while (true) {
@@ -45,7 +45,7 @@ public final class j implements s {
                     }
                 }
                 c10.add(new ys.h(CollectionsKt.e(new ys.b(str3))));
-                String str4 = this.f52714a;
+                String str4 = this.f52711a;
                 int length2 = str4.length();
                 int i11 = 0;
                 while (true) {
@@ -61,7 +61,7 @@ public final class j implements s {
                     }
                 }
             } else {
-                str = this.f52714a;
+                str = this.f52711a;
             }
             if (str.length() > 0) {
                 if (vs.d.b(str.charAt(str.length() - 1))) {
@@ -101,17 +101,17 @@ public final class j implements s {
     }
 
     public boolean equals(Object obj) {
-        if ((obj instanceof j) && Intrinsics.areEqual(this.f52714a, ((j) obj).f52714a)) {
+        if ((obj instanceof j) && Intrinsics.areEqual(this.f52711a, ((j) obj).f52711a)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f52714a.hashCode();
+        return this.f52711a.hashCode();
     }
 
     public String toString() {
-        return "ConstantFormatStructure(" + this.f52714a + ')';
+        return "ConstantFormatStructure(" + this.f52711a + ')';
     }
 }

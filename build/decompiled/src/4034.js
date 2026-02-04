@@ -23,7 +23,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var4;
     var2.isNativePlatformSupported = var3;
     var3 = function() {
-        _fun37375: for (var _fun37375_ip = 0;;) switch (_fun37375_ip) {
+        _fun37377: for (var _fun37377_ip = 0;;) switch (_fun37377_ip) {
             case 0:
                 var0 = undefined;
                 var3 = undefined;
@@ -31,8 +31,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = 0;
                 var4 = var1 > var2;
                 if (!var4) {
-                    _fun37375_ip = 24;
-                    continue _fun37375
+                    _fun37377_ip = 24;
+                    continue _fun37377
                 }
             case 16:
                 var1 = arguments[var2];
@@ -40,16 +40,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 24:
                 var1 = !var4;
                 if (!var4) {
-                    _fun37375_ip = 34;
-                    continue _fun37375
+                    _fun37377_ip = 34;
+                    continue _fun37377
                 }
             case 30:
                 var1 = arguments[var2];
             case 34:
                 _closure1_slot1 = var1;
                 if (!var1) {
-                    _fun37375_ip = 68;
-                    continue _fun37375
+                    _fun37377_ip = 68;
+                    continue _fun37377
                 }
             case 44:
                 var4 = _closure1_slot0;
@@ -59,8 +59,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var2;
             case 68:
                 if (!var1) {
-                    _fun37375_ip = 95;
-                    continue _fun37375
+                    _fun37377_ip = 95;
+                    continue _fun37377
                 }
             case 71:
                 var1 = global;
@@ -74,7 +74,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.enableScreens = var3;
     var3 = function() {
-        _fun37376: for (var _fun37376_ip = 0;;) switch (_fun37376_ip) {
+        _fun37378: for (var _fun37378_ip = 0;;) switch (_fun37378_ip) {
             case 0:
                 var0 = undefined;
                 var3 = undefined;
@@ -82,8 +82,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = 0;
                 var4 = var2 > var1;
                 if (!var4) {
-                    _fun37376_ip = 24;
-                    continue _fun37376
+                    _fun37378_ip = 24;
+                    continue _fun37378
                 }
             case 16:
                 var2 = arguments[var1];
@@ -91,8 +91,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 24:
                 var2 = !var4;
                 if (!var4) {
-                    _fun37376_ip = 34;
-                    continue _fun37376
+                    _fun37378_ip = 34;
+                    continue _fun37378
                 }
             case 30:
                 var2 = arguments[var1];

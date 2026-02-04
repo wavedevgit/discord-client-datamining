@@ -14,68 +14,68 @@ import t9.l;
 public final class f implements r9.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final o9.d f48611a;
+    private final o9.d f48608a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final p9.c f48612b;
+    private final p9.c f48609b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final k f48613c;
+    private final k f48610c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f48614d;
+    private final boolean f48611d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f48615e;
+    private final String f48612e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f48616f;
+    private final int f48613f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f48617g;
+    private final int f48614g;
 
     /* renamed from: h  reason: collision with root package name */
-    private j f48618h;
+    private j f48615h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f48619i;
+    private final int f48616i;
 
     /* renamed from: j  reason: collision with root package name */
-    private int f48620j;
+    private int f48617j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final a f48621k;
+    private final a f48618k;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a implements i {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f48622a;
+        private final int f48619a;
 
         a() {
-            this.f48622a = f.this.f48619i;
+            this.f48619a = f.this.f48616i;
         }
 
         @Override // t9.i
         public int a() {
-            return f.this.f48620j;
+            return f.this.f48617j;
         }
 
         @Override // t9.i
         public void b(int i10) {
-            if (i10 != f.this.f48620j) {
+            if (i10 != f.this.f48617j) {
                 f fVar = f.this;
-                fVar.f48620j = kotlin.ranges.d.m(i10, 1, fVar.f48619i);
+                fVar.f48617j = kotlin.ranges.d.m(i10, 1, fVar.f48616i);
                 j m10 = f.this.m();
                 if (m10 != null) {
-                    m10.d(f.this.f48620j);
+                    m10.d(f.this.f48617j);
                 }
             }
         }
 
         @Override // t9.i
         public int c() {
-            return this.f48622a;
+            return this.f48619a;
         }
     }
 
@@ -83,25 +83,25 @@ public final class f implements r9.a {
         Intrinsics.checkNotNullParameter(animationInformation, "animationInformation");
         Intrinsics.checkNotNullParameter(bitmapFrameRenderer, "bitmapFrameRenderer");
         Intrinsics.checkNotNullParameter(frameLoaderFactory, "frameLoaderFactory");
-        this.f48611a = animationInformation;
-        this.f48612b = bitmapFrameRenderer;
-        this.f48613c = frameLoaderFactory;
-        this.f48614d = z10;
-        this.f48615e = str == null ? String.valueOf(hashCode()) : str;
-        this.f48616f = animationInformation.n();
-        this.f48617g = animationInformation.g();
+        this.f48608a = animationInformation;
+        this.f48609b = bitmapFrameRenderer;
+        this.f48610c = frameLoaderFactory;
+        this.f48611d = z10;
+        this.f48612e = str == null ? String.valueOf(hashCode()) : str;
+        this.f48613f = animationInformation.n();
+        this.f48614g = animationInformation.g();
         int l10 = l(animationInformation);
-        this.f48619i = l10;
-        this.f48620j = l10;
-        this.f48621k = new a();
+        this.f48616i = l10;
+        this.f48617j = l10;
+        this.f48618k = new a();
     }
 
     private final g k(int i10, int i11) {
-        if (!this.f48614d) {
-            return new g(this.f48616f, this.f48617g);
+        if (!this.f48611d) {
+            return new g(this.f48613f, this.f48614g);
         }
-        int i12 = this.f48616f;
-        int i13 = this.f48617g;
+        int i12 = this.f48613f;
+        int i13 = this.f48614g;
         if (i10 < i12 || i11 < i13) {
             double d10 = i12 / i13;
             if (i11 > i10) {
@@ -121,10 +121,10 @@ public final class f implements r9.a {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final j m() {
-        if (this.f48618h == null) {
-            this.f48618h = this.f48613c.b(this.f48615e, this.f48612b, this.f48611a);
+        if (this.f48615h == null) {
+            this.f48615h = this.f48610c.b(this.f48612e, this.f48609b, this.f48608a);
         }
-        return this.f48618h;
+        return this.f48615h;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -134,7 +134,7 @@ public final class f implements r9.a {
 
     @Override // r9.a
     public void a(int i10, int i11, Function0 function0) {
-        if (i10 > 0 && i11 > 0 && this.f48616f > 0 && this.f48617g > 0) {
+        if (i10 > 0 && i11 > 0 && this.f48613f > 0 && this.f48614g > 0) {
             g k10 = k(i10, i11);
             j m10 = m();
             if (m10 != null) {
@@ -175,7 +175,7 @@ public final class f implements r9.a {
             lVar = null;
         }
         if (lVar != null) {
-            t9.e.f49817a.h(this.f48621k, lVar);
+            t9.e.f49814a.h(this.f48618k, lVar);
         }
         if (lVar == null) {
             return null;
@@ -187,9 +187,9 @@ public final class f implements r9.a {
     public void d() {
         j m10 = m();
         if (m10 != null) {
-            k.f49846d.b(this.f48615e, m10);
+            k.f49843d.b(this.f48612e, m10);
         }
-        this.f48618h = null;
+        this.f48615h = null;
     }
 
     @Override // r9.a
