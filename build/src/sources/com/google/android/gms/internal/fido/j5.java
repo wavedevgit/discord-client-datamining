@@ -51,8 +51,9 @@ public final class j5 extends l5 {
         return "\"" + this.f13638d + "\"";
     }
 
+    /* JADX INFO: Access modifiers changed from: protected */
     @Override // com.google.android.gms.internal.fido.l5
-    protected final int zza() {
+    public final int zza() {
         return l5.e((byte) 96);
     }
 }
