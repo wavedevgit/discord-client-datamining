@@ -69,5 +69,5 @@ e.exports = function(e, r) {
                 break
             }
         while (a < o && s < c);
-        a -= A = m >> 3, m -= A << 3, h &= (1 << m) - 1, e.next_in = a, e.next_out = s, e.avail_in = a < o ? 5 + (o - a) : 5 - (a - o), e.avail_out = s < c ? 257 + (c - s) : 257 - (s - c), i.hold = h, i.bits = m
+    a -= A = m >> 3, m -= A << 3, h &= (1 << m) - 1, e.next_in = a, e.next_out = s, e.avail_in = a < o ? 5 + (o - a) : 5 - (a - o), e.avail_out = s < c ? 257 + (c - s) : 257 - (s - c), i.hold = h, i.bits = m
 }

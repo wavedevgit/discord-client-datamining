@@ -1907,6 +1907,7 @@ let a = (n = "file:///ci/build/discord/discord/discord_common/js/packages/libdav
                     var o = n.clone();
                     return this.destructor(r), o
                 }
+
             function a() {
                 return this.isSmartPointer ? rB(this.registeredClass.instancePrototype, {
                     ptrType: this.pointeeType,
