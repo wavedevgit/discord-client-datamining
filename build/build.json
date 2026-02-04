@@ -1,7 +1,7 @@
 {
-    "builtAt": 1770245736561,
-    "buildNumber": 493443,
-    "versionHash": "b98cbc6340aeecd34327dae014b66ad10ed7329f",
+    "builtAt": 1770248234814,
+    "buildNumber": 493499,
+    "versionHash": "7bce1437298f30f4e3e130f6cb09fd2e6f216f0b",
     "libdiscore": "https://canary.discord.com/assets/bdd631c3d636df5b.module.wasm",
     "entryChunk": "329563",
     "modules": {
