@@ -1,5 +1,4 @@
 import { exec } from 'node:child_process';
-import { rm } from 'node:fs/promises';
 
 import { Build } from '../types.js';
 import { writeFile } from '../utils/fs.js';
@@ -35,8 +34,6 @@ export default async function getLibDiscore(build: Build): Promise<void> {
 
         console.log('done.');
         console.log('saved pseudo-C of libdiscore  to:', cFile);
-        await rm(watFile);
-        await rm(wasmFile);
     } catch (err) {
         console.error('failed:', err.message);
         process.exit(1);
