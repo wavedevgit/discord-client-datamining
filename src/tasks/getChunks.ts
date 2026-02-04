@@ -41,7 +41,7 @@ export default async function getChunks(build: Build): Promise<void> {
     // we find the index of the { character
     const start = build.libdiscore.indexOf(startMatch) + 1;
     // find } before ,l={};function
-    const end = build.libdiscore.indexOf(endMatch) - 1;
+    const end = build.libdiscore.indexOf(endMatch);
     // libdiscore
     await saveChunks(
         await getChunksByCode(

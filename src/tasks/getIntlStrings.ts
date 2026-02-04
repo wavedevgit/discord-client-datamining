@@ -11,7 +11,7 @@ export default async function getIntlStrings(build: Build): Promise<void> {
     const enUSChunks = new Set<string>();
 
     for (const chunkId of chunks) {
-        if (chunkId === 'readme.md') continue;
+        if (chunkId === 'readme.md' || chunkId === 'libdiscore') continue;
         const content = await chunk(chunkId.replace('.js', ''));
         // skip ones without a createLoader reference
         if (!content.includes('createLoader:')) continue;
