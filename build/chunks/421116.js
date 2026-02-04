@@ -27,8 +27,8 @@ var r = n(627968),
     T = n(84483),
     I = n(407775),
     N = n(501007),
-    j = n(26010),
-    y = n(54009),
+    y = n(26010),
+    j = n(54009),
     v = n(252711),
     P = n(584767),
     R = n(191430),
@@ -94,17 +94,17 @@ let Z = () => {
             whatsNew: eT,
             bestOfNitro: eI,
             plans: eN,
-            compare: ej
+            compare: ey
         } = ex,
-        ey = ef ? W : K,
+        ej = ef ? W : K,
         ev = (0, r.jsxs)("div", {
-            className: s()(ey.container, ey.responsiveContainer, {
-                [ey.containerBackground]: ef || $,
+            className: s()(ej.container, ej.responsiveContainer, {
+                [ej.containerBackground]: ef || $,
                 [W.fadeInFromTop]: !J && ef
             }),
             "data-cy": "tier-0-marketing-page",
             children: [ef && (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(y.A, {
+                children: [(0, r.jsx)(j.A, {
                     className: W.topOfPageGradient
                 }), (0, r.jsx)(U.A, {
                     navBarSections: ex,
@@ -119,9 +119,9 @@ let Z = () => {
                     alt: ""
                 })]
             }), (0, r.jsxs)("div", {
-                className: ey.sectionsContainer,
+                className: ej.sectionsContainer,
                 children: [(0, r.jsx)("div", {
-                    className: ey.heroHeadingContainer,
+                    className: ej.heroHeadingContainer,
                     ref: eS.ref,
                     children: (0, r.jsx)(c.L, {
                         innerRef: Z,
@@ -141,28 +141,28 @@ let Z = () => {
                         })
                     })
                 }), em && (0, r.jsx)("div", {
-                    className: ey.promoBannerContainer,
+                    className: ej.promoBannerContainer,
                     children: (0, r.jsx)(S.A, {
                         variant: S.c.APPLICATION_NITRO_HOME
                     })
                 }), (0, r.jsx)("div", {
-                    className: ey.whatsNewSectionContainer,
+                    className: ej.whatsNewSectionContainer,
                     ref: eT.ref,
-                    children: (0, r.jsx)(j.Ct, {
+                    children: (0, r.jsx)(y.Ct, {
                         shouldLoadVideo: eo,
                         isReducedMotion: J,
                         enablePremiumBrandRefreshDesign: ef
                     })
                 }), (0, r.jsx)("div", {
-                    className: ey.bestOfNitroSectionContainer,
+                    className: ej.bestOfNitroSectionContainer,
                     ref: eI.ref,
-                    children: (0, r.jsx)(j.oO, {
+                    children: (0, r.jsx)(y.oO, {
                         shouldLoadVideo: eo,
                         isReducedMotion: J,
                         enablePremiumBrandRefreshDesign: ef
                     })
                 }), (0, r.jsx)("div", {
-                    className: ey.premiumTierCardsContainer,
+                    className: ej.premiumTierCardsContainer,
                     ref: eN.ref,
                     children: (0, r.jsx)(c.L, {
                         innerRef: l,
@@ -177,8 +177,8 @@ let Z = () => {
                         })
                     })
                 }), (0, r.jsx)("div", {
-                    className: ey.planComparisonTableContainer,
-                    ref: ej.ref,
+                    className: ej.planComparisonTableContainer,
+                    ref: ey.ref,
                     children: ef ? (0, r.jsx)(w.A, {}) : (0, r.jsx)(P.A, {})
                 })]
             }), !ef && (0, r.jsx)(v.A, {
@@ -195,7 +195,7 @@ let Z = () => {
                 },
                 children: (0, r.jsx)("div", {
                     ref: X,
-                    className: ey.bottomOfPageVisibilitySensor
+                    className: ej.bottomOfPageVisibilitySensor
                 })
             }), (0, r.jsx)(c.L, {
                 innerRef: q,
@@ -216,7 +216,7 @@ let Z = () => {
                     isVisible: eb && eo,
                     subscriptionTier: ep,
                     isEligibleForBogoPromotion: em
-                }), (0, r.jsx)(y.A, {
+                }), (0, r.jsx)(j.A, {
                     className: W.bottomOfPageGradient
                 })]
             })]
@@ -224,7 +224,7 @@ let Z = () => {
     return (0, r.jsx)(u.NPJ, {
         theme: ef ? Y.NJ.DARKER : Q,
         children: e => (0, r.jsx)(u.GtU, {
-            className: s()(ey.scroller, e),
+            className: s()(ej.scroller, e),
             ref: t,
             children: ev
         })

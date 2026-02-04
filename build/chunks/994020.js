@@ -1,6 +1,6 @@
 /** chunk id: 994020, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    g: () => j,
+    g: () => y,
     x: () => N
 }), n(896048), n(321073);
 var r = n(64700),
@@ -29,14 +29,14 @@ var r = n(64700),
 let I = 21552 == n.j ? [a.Ay, o.A, d.Ay, u.A, _.A, m.A, g.A, f.A, b.A, h.Ay, E.A, O.Ay] : null;
 
 function N() {
-    let [e, t] = r.useState(() => j());
+    let [e, t] = r.useState(() => y());
     return r.useEffect(() => {
-        let e = l().throttle(() => t(j()), 100);
+        let e = l().throttle(() => t(y()), 100);
         return I.forEach(t => t.addChangeListener(e)), () => I.forEach(t => t.removeChangeListener(e))
     }, []), e
 }
 
-function j() {
+function y() {
     let e = o.A.getFavoriteChannels(),
         t = O.Ay.isGuildCollapsed(S.V),
         n = E.A.getChannelId(),
@@ -124,12 +124,12 @@ function j() {
                 }
             }
         }).value(),
-        j = {
+        y = {
             isEmpty: () => !0,
             getRows: () => [],
             getRow: () => null
         },
-        y = {
+        j = {
             isEmpty: () => !0,
             getRows: () => [],
             getRow: () => null
@@ -156,8 +156,8 @@ function j() {
                 channel: n.channelList[t]
             }
         },
-        getGuildActionSection: () => j,
-        getChannelNoticeSection: () => y,
+        getGuildActionSection: () => y,
+        getChannelNoticeSection: () => j,
         getFirstVoiceChannel: () => null,
         getSectionRowsFromChannel(e) {
             let t = [I, ...N];

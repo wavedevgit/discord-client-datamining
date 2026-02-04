@@ -6,6 +6,7 @@ function i(e) {
     r = e
 }
 n.d(t, {
+    $T: () => tS,
     BF: () => ta,
     CF: () => tl,
     CI: () => tb,
@@ -23,11 +24,9 @@ n.d(t, {
     HS: () => eb,
     Hz: () => eI,
     Jp: () => en,
-    K7: () => tS,
     LC: () => tI,
     LM: () => tE,
     M2: () => ej,
-    Mn: () => tT,
     Mo: () => eO,
     N8: () => tF,
     ND: () => ec,
@@ -38,7 +37,7 @@ n.d(t, {
     Oy: () => Z,
     PJ: () => tn,
     PR: () => tD,
-    Ph: () => A,
+    Ph: () => S,
     Py: () => tU,
     QH: () => ep,
     QR: () => tL,
@@ -55,8 +54,8 @@ n.d(t, {
     Tp: () => tg,
     U8: () => tk,
     Ux: () => el,
+    Vo: () => tC,
     Vr: () => eF,
-    W8: () => tC,
     Xb: () => ef,
     Xc: () => ea,
     Y6: () => t_,
@@ -69,6 +68,7 @@ n.d(t, {
     _m: () => eJ,
     aI: () => eM,
     bL: () => tP,
+    c$: () => tT,
     c6: () => eL,
     cV: () => q,
     ce: () => tO,
@@ -102,14 +102,14 @@ n.d(t, {
     pD: () => ez,
     qN: () => tV,
     qv: () => tx,
-    rf: () => C,
+    rf: () => v,
     rk: () => tr,
     rl: () => tN,
     s5: () => em,
     sQ: () => ed,
     sW: () => tG,
     ss: () => ts,
-    t7: () => S,
+    t7: () => C,
     tZ: () => eQ,
     uo: () => eC,
     uw: () => tt,
@@ -118,7 +118,7 @@ n.d(t, {
     vF: () => eT,
     vU: () => tj,
     vV: () => ek,
-    vb: () => I,
+    vb: () => T,
     w2: () => e9,
     w6: () => tu,
     w9: () => es,
@@ -128,7 +128,7 @@ n.d(t, {
     x0: () => tf,
     x6: () => er,
     xV: () => tm,
-    xy: () => T,
+    xy: () => I,
     yc: () => tB,
     yq: () => eW,
     zE: () => tR
@@ -265,24 +265,16 @@ function O(e) {
     return e instanceof Error ? "".concat(e.name, ": ").concat(e.message, "\n").concat(e.stack) : t
 }
 
-function v(e) {
+function v(e, t, n, i, a) {
+    r.installLogCallback(e, t, n, i, a)
+}
+
+function A(e) {
     let t = r.__wbindgen_export_4.get(e);
     return r.__externref_table_dealloc(e), t
 }
 
-function A() {
-    return r.initLibdiscore()
-}
-
-function I() {
-    r.crash()
-}
-
-function S(e, t) {
-    return r.rustMultiply(e, t)
-}
-
-function T(e) {
+function I(e) {
     let t, n;
     try {
         let i = r.generateLaunchSignature(e);
@@ -292,8 +284,16 @@ function T(e) {
     }
 }
 
-function C(e, t, n, i, a) {
-    r.installLogCallback(e, t, n, i, a)
+function S() {
+    return r.initLibdiscore()
+}
+
+function T() {
+    r.crash()
+}
+
+function C(e, t) {
+    return r.rustMultiply(e, t)
 }
 
 function N(e, t) {
@@ -305,11 +305,11 @@ function w(e, t) {
 }
 
 function R(e, t, n) {
-    r.closure719_externref_shim(e, t, n)
+    r.closure725_externref_shim(e, t, n)
 }
 
 function P(e, t, n, i) {
-    r.closure755_externref_shim(e, t, n, i)
+    r.closure761_externref_shim(e, t, n, i)
 }
 let D = ["bytes"],
     L = ["omit", "same-origin", "include"],
@@ -379,8 +379,8 @@ class F {
     }
     connectStore(e) {
         let t = r.fluxapi_connectStore(this.__wbg_ptr, e);
-        if (t[2]) throw v(t[1]);
-        return v(t[0])
+        if (t[2]) throw A(t[1]);
+        return A(t[0])
     }
     dispatchAction(e, t) {
         let n = u(e, r.__wbindgen_malloc, r.__wbindgen_realloc),
@@ -986,15 +986,15 @@ function tI(e) {
 }
 
 function tS(e, t, n) {
-    return b(e, t, 533, N)
+    return b(e, t, 539, N)
 }
 
 function tT(e, t, n) {
-    return b(e, t, 573, w)
+    return b(e, t, 579, w)
 }
 
 function tC(e, t, n) {
-    return b(e, t, 720, R)
+    return b(e, t, 726, R)
 }
 
 function tN(e, t) {

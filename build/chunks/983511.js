@@ -27,8 +27,8 @@ var r = n(627968),
     T = n(927578),
     I = n(580630),
     N = n(802790),
-    j = n(788868),
-    y = n(818348),
+    y = n(788868),
+    j = n(818348),
     v = n(985018),
     P = n(397415);
 
@@ -44,7 +44,7 @@ function R(e) {
         endDate: t.currentPeriodEnd
     });
     t.isPurchasedExternally && null != t.paymentGateway ? c = v.intl.format(v.t.HbpFLg, {
-        paymentGatewayName: y.qm[t.paymentGateway],
+        paymentGatewayName: j.qm[t.paymentGateway],
         subscriptionManagementLink: (0, T.tW)(t.paymentGateway, "SUBSCRIPTION_MANAGEMENT")
     }) : t.isPausedForFractionalPremium ? c = v.intl.format(v.t.Hzqe6y, {
         expirationDate: n.endsAt.toDate()
@@ -98,7 +98,7 @@ function L(e) {
         onBack: u,
         onNext: m,
         onClose: O
-    } = e, [C, S] = i.useState(!1), [y, R] = i.useState(null), [L, w] = i.useMemo(() => {
+    } = e, [C, S] = i.useState(!1), [j, R] = i.useState(null), [L, w] = i.useMemo(() => {
         try {
             return [(0, f.v)(s, -1), !1]
         } catch (e) {
@@ -119,7 +119,7 @@ function L(e) {
         let e = x.A.get(s.planId);
         return {
             premiumSubscriptionPlan: e,
-            premiumGuildPlan: null != e ? x.A.getForSkuAndInterval((0, T.mH)(j.pe.GUILD), e.interval, e.intervalCount) : null
+            premiumGuildPlan: null != e ? x.A.getForSkuAndInterval((0, T.mH)(y.pe.GUILD), e.interval, e.intervalCount) : null
         }
     }), {
         analyticsLocations: k
@@ -142,18 +142,18 @@ function L(e) {
             let {
                 planId: t
             } = e;
-            return !j.pW.has(t)
+            return !y.pW.has(t)
         }) && null == s.renewalMutations || (null == (l = s.renewalMutations) ? void 0 : l.items.find(e => {
             let {
                 planId: t
             } = e;
-            return !j.pW.has(t)
+            return !y.pW.has(t)
         })) != null,
         Y = L.some(e => {
             let {
                 planId: t
             } = e;
-            return j.pW.has(t)
+            return y.pW.has(t)
         }),
         W = F || Y ? V.total - B.total : -B.total,
         {
@@ -172,11 +172,11 @@ function L(e) {
         }), (0, r.jsxs)(c.$mQ, {
             "data-migration-pending": !0,
             className: P.rf,
-            children: [null !== y && (0, r.jsx)("div", {
+            children: [null !== j && (0, r.jsx)("div", {
                 className: P.z3,
                 children: (0, r.jsx)(c.wx6, {
                     type: "critical",
-                    children: y
+                    children: j
                 })
             }), (0, r.jsx)("div", {
                 children: Z

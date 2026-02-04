@@ -28,8 +28,8 @@ var r = n(627968),
     T = n(531260),
     I = n(160946),
     N = n(459793),
-    j = n(721668),
-    y = n(976860),
+    y = n(721668),
+    j = n(976860),
     v = n(780964),
     P = n(12901),
     R = n(840065),
@@ -190,7 +190,7 @@ function em() {
                         G.default.track(ei.HAw.PREMIUM_SETTINGS_INTERACTED, {
                             cta_type: ec,
                             target: ed
-                        }), (0, P.default)(), (0, y.pX)(ei.BVt.APPLICATION_STORE)
+                        }), (0, P.default)(), (0, j.pX)(ei.BVt.APPLICATION_STORE)
                     },
                     variant: "overlay-secondary",
                     fullWidth: !0,
@@ -207,7 +207,7 @@ function em() {
                         G.default.track(ei.HAw.PREMIUM_SETTINGS_INTERACTED, {
                             cta_type: ec,
                             target: ed
-                        }), (0, P.default)(), (0, y.pX)(ei.BVt.APPLICATION_STORE)
+                        }), (0, P.default)(), (0, j.pX)(ei.BVt.APPLICATION_STORE)
                     },
                     text: el.intl.string(el.t.VR2iVB),
                     size: "md"
@@ -343,22 +343,22 @@ let ef = function() {
             return null == e || "billingSettingsNitroGiftBanner" !== e.properties.properties.oneofKind ? null : e.properties.properties.billingSettingsNitroGiftBanner
         }),
         O = !(c.Fr || c.v1) && null != g,
-        y = (0, u.bG)([D.A], () => D.A.enabled),
+        j = (0, u.bG)([D.A], () => D.A.enabled),
         v = i.useRef(null);
     (0, z.i)();
     let P = (0, K.m)();
     i.useEffect(() => {
         f.h.wait(async () => {
-            y || e || await Promise.all([b.hP(), b.$o(), (0, h.zS)(null, null, ei.tF5.DISCOVERY)]), p(!1)
+            j || e || await Promise.all([b.hP(), b.$o(), (0, h.zS)(null, null, ei.tF5.DISCOVERY)]), p(!1)
         })
-    }, [y, e]);
+    }, [j, e]);
     let [R, M] = i.useState(!1);
-    if (y) return (0, r.jsx)(E.A, {});
+    if (j) return (0, r.jsx)(E.A, {});
     if (e) return (0, r.jsx)(N.uK, {});
     let U = s && null !== l && a,
         k = m.fetched && m.isFractionalPremiumActive,
         B = null == n ? void 0 : n.isPremiumWithPremiumGroup();
-    if (!U && !k && !o && !B) return (0, r.jsx)(j.A, {
+    if (!U && !k && !o && !B) return (0, r.jsx)(y.A, {
         title: el.intl.string(el.t.dyq9TR),
         note: null
     });

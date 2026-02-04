@@ -27,8 +27,8 @@ var r = n(627968),
     T = n(101058),
     I = n(836602),
     N = n(814390),
-    j = n(351906),
-    y = n(287809),
+    y = n(351906),
+    j = n(287809),
     v = n(954571),
     P = n(927578),
     R = n(897358),
@@ -72,11 +72,11 @@ function k(e, t) {
 
 function B() {
     var e;
-    let t = (0, a.bG)([y.default], () => {
-            let e = y.default.getCurrentUser();
+    let t = (0, a.bG)([j.default], () => {
+            let e = j.default.getCurrentUser();
             return s()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
         }),
-        n = (0, a.bG)([j.A], () => j.A.hidePersonalInformation),
+        n = (0, a.bG)([y.A], () => y.A.hidePersonalInformation),
         l = (0, a.cf)([I.A], () => k(U({}, I.A.getPendingChanges()), {
             showNotice: I.A.showNotice()
         })),

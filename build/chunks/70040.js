@@ -28,8 +28,8 @@ var r = n(627968),
     T = n(544028),
     I = n(253932),
     N = n(358776),
-    j = n(12901),
-    y = n(652215),
+    y = n(12901),
+    j = n(652215),
     v = n(49999),
     P = n(788868),
     R = n(985018),
@@ -38,7 +38,7 @@ let L = () => {
         (0, f.Dr)(s.M.CLIENT_THEMES_SPARKLE_PREVIEW, {
             dismissAction: v.i.PRIMARY,
             forceTrack: !0
-        }), (0, A.nf)(A.HP.CLIENT_THEMES), (0, j.default)()
+        }), (0, A.nf)(A.HP.CLIENT_THEMES), (0, y.default)()
     },
     w = () => {
         var e, t;
@@ -51,7 +51,7 @@ let L = () => {
             A = (0, O.U9)(d, P.pe.TIER_2),
             f = (0, N.dk)("UserSettingsAppearanceClientThemes");
         i.useEffect(() => {
-            a && S.default.track(y.HAw.PREMIUM_UPSELL_VIEWED, {
+            a && S.default.track(j.HAw.PREMIUM_UPSELL_VIEWED, {
                 type: P.e.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
                 location_stack: s
             })
@@ -90,8 +90,8 @@ let L = () => {
                                 subscriptionTier: P.pe.TIER_2,
                                 defaultTextOverride: e,
                                 premiumModalAnalyticsLocation: {
-                                    object: y.ZSU.BUTTON_CTA,
-                                    objectType: y.AnalyticsObjectTypes.BUY
+                                    object: j.ZSU.BUTTON_CTA,
+                                    objectType: j.AnalyticsObjectTypes.BUY
                                 },
                                 fullWidth: !0
                             })]
@@ -126,13 +126,13 @@ function M() {
             gradientPreset: p.A.gradientPreset
         })),
         s = null != I.eh.useSetting().customUserThemeSettings;
-    return t !== y.NJ8.LIGHT ? null : (0, r.jsxs)(r.Fragment, {
+    return t !== j.NJ8.LIGHT ? null : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(o.cGx, {
             gap: 24
         }), (0, r.jsx)(o.dOG, {
             label: R.intl.string(R.t.yF54Ks),
             checked: e && (0, a.qB)(t) && !n,
-            disabled: t !== y.NJ8.LIGHT || n || null != i || s,
+            disabled: t !== j.NJ8.LIGHT || n || null != i || s,
             onChange: c.LO
         }), (0, r.jsx)(o.cGx, {
             gap: 24

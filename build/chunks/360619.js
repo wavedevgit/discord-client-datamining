@@ -30,8 +30,8 @@ var r = n(64700),
     T = n(80422),
     I = n(64313),
     N = n(897358),
-    j = n(253932),
-    y = n(368631),
+    y = n(253932),
+    j = n(368631),
     v = n(682262),
     P = n(987281),
     R = n(531525),
@@ -63,7 +63,7 @@ function w() {
         }),
         H = (0, i.bG)([O.A], () => O.A.hasLibraryApplication()),
         V = (0, i.bG)([h.default], () => h.default.hasTOTPEnabled()),
-        F = j.Q_.useSetting(),
+        F = y.Q_.useSetting(),
         Y = (0, c.A)(),
         W = null == (t = (0, d.A)()) || t,
         K = (null == (l = (0, A.G)()) ? void 0 : l.length) > 0,
@@ -83,7 +83,7 @@ function w() {
             autoTrackExposure: !1
         }),
         $ = (0, s.i)("useGenerateUserSettingsSections");
-    return r.useMemo(() => (0, y.zj)({
+    return r.useMemo(() => (0, j.zj)({
         unseenGiftCount: E,
         showPrepaidPaymentPastDueWarning: N,
         searchParams: P,

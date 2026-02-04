@@ -27,8 +27,8 @@ var r = n(627968),
     T = n(131168),
     I = n(511484),
     N = n(703982),
-    j = n(891858),
-    y = n(807676),
+    y = n(891858),
+    j = n(807676),
     v = n(322631),
     P = n(568031),
     R = n(518491),
@@ -106,7 +106,7 @@ let H = e => {
                         variant: v.cJ.PERKS_DISCOVERABILITY,
                         noBackground: !0,
                         leftAlignHeaders: !0,
-                        showAllPerksButton: (0, r.jsx)(y.A, {
+                        showAllPerksButton: (0, r.jsx)(j.A, {
                             setIsAllPerksVisible: $,
                             previousComponent: v.A2.HOME
                         })
@@ -144,7 +144,7 @@ let H = e => {
                 churnDiscountOffer: q,
                 discountedPrice: er
             })]
-        }), (0, r.jsx)(j.A, {
+        }), (0, r.jsx)(y.A, {
             isAllPerksVisible: Q,
             setIsAllPerksVisible: $,
             previousComponent: v.A2.HOME,

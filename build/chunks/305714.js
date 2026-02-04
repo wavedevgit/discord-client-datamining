@@ -28,7 +28,7 @@ let E = i.forwardRef((e, t) => {
         subscriptionTier: x
     } = e, {
         analyticsLocations: C
-    } = (0, c.Ay)(o.A.PREMIUM_MARKETING_FOOTER_CTA), S = (0, _.ar)(), T = (0, u.TM)(), I = i.useRef(null), [N, j] = i.useState(!1);
+    } = (0, c.Ay)(o.A.PREMIUM_MARKETING_FOOTER_CTA), S = (0, _.ar)(), T = (0, u.TM)(), I = i.useRef(null), [N, y] = i.useState(!1);
     return i.useEffect(() => {
         !l || O || N || null == I.current || I.current.play()
     }, [l, O, N]), (0, r.jsx)(c.f5, {
@@ -56,7 +56,7 @@ let E = i.forwardRef((e, t) => {
                     poster: b.A,
                     className: A.dV,
                     onEnded: () => {
-                        j(!0)
+                        y(!0)
                     },
                     ref: I,
                     children: (0, r.jsx)("source", {

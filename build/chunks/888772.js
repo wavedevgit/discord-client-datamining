@@ -27,9 +27,9 @@ var r = n(627968),
     T = n(896498),
     I = n(205806),
     N = n(473169),
-    j = n(525351);
+    y = n(525351);
 
-function y(e) {
+function j(e) {
     let {
         header: t,
         description: n,
@@ -81,20 +81,20 @@ function v() {
                 })]
             }), (0, r.jsx)("img", {
                 className: I._u,
-                src: j,
+                src: y,
                 alt: S.intl.string(C.default["r+PDmu"])
             })]
         }), (0, r.jsxs)("div", {
             className: I.Ci,
-            children: [(0, r.jsx)(y, {
+            children: [(0, r.jsx)(j, {
                 header: S.intl.string(C.default["7xxAni"]),
                 description: S.intl.string(C.default["1M9So2"]),
                 stepNumber: 1
-            }), (0, r.jsx)(y, {
+            }), (0, r.jsx)(j, {
                 header: S.intl.string(C.default["AXgx+a"]),
                 description: S.intl.string(C.default.GzMFnb),
                 stepNumber: 2
-            }), (0, r.jsx)(y, {
+            }), (0, r.jsx)(j, {
                 header: S.intl.string(C.default.MZn1tG),
                 description: S.intl.string(C.default["8rLBxD"]),
                 stepNumber: 3
@@ -124,7 +124,7 @@ function P() {
             }), e ? null : (0, r.jsx)(f.A, {})]
         }), (0, r.jsx)("img", {
             className: I._u,
-            src: j,
+            src: y,
             alt: S.intl.string(C.default["r+PDmu"])
         })]
     })

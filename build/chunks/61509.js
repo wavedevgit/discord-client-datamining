@@ -26,8 +26,8 @@ var r, i = n(627968),
     T = n(250627),
     I = n(871109),
     N = n(571654),
-    j = n(411342),
-    y = n(179499),
+    y = n(411342),
+    j = n(179499),
     v = n(22007),
     P = n(95035),
     R = n(337095),
@@ -178,7 +178,7 @@ function eA(e) {
         guildProductListingId: l
     } = e, s = (0, T.Qi)(r, l, {
         requireCurrentGuild: !1
-    }), a = (0, p.bG)([I.A], () => I.A.getGuildProductFetchState(l) === I.e.FETCHING), o = null == s ? void 0 : s.role_id, c = (0, p.bG)([H.A], () => null != o ? H.A.getRole(r, o) : void 0, [r, o]), d = (0, y.A)({
+    }), a = (0, p.bG)([I.A], () => I.A.getGuildProductFetchState(l) === I.e.FETCHING), o = null == s ? void 0 : s.role_id, c = (0, p.bG)([H.A], () => null != o ? H.A.getRole(r, o) : void 0, [r, o]), d = (0, j.A)({
         guildId: r,
         productId: l
     }), u = (null != (t = null == s || null == (n = s.attachments) ? void 0 : n.length) ? t : 0) > 0, _ = null != c;
@@ -202,7 +202,7 @@ function eA(e) {
                 color: "text-default",
                 className: el.yE,
                 children: ei.intl.string(ei.t.gWBNet)
-            }), (0, i.jsx)(j.A, {
+            }), (0, i.jsx)(y.A, {
                 role: c
             })]
         })]
@@ -851,12 +851,12 @@ function eb(e) {
             return null == l ? null : null != (e = F.default.getUser(null != (t = null == (i = l.user) ? void 0 : i.id) ? t : null)) ? e : null == l ? void 0 : l.user
         }, [r]),
         {
-            analyticsLocations: j
+            analyticsLocations: y
         } = (0, h.Ay)(b.A.BILLING_SETTINGS_BILLING);
     return (0, i.jsx)(ef, {
         applicationStatistics: m,
         application: _ ? x : S,
-        analyticsLocations: j,
+        analyticsLocations: y,
         guild: C,
         stickerPack: null,
         paymentSources: A,

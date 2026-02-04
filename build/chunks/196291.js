@@ -27,8 +27,8 @@ var r = n(627968),
     T = n(230084),
     I = n(180020),
     N = n(212168),
-    j = n(730588),
-    y = n(63675),
+    y = n(730588),
+    j = n(63675),
     v = n(253604),
     P = n(652215),
     R = n(788868),
@@ -143,7 +143,7 @@ function M(e) {
                             variant: "text-sm/normal",
                             children: L.intl.string(L.t.xeEC20)
                         })]
-                    }), (0, r.jsx)(y.A, {
+                    }), (0, r.jsx)(j.A, {
                         className: w.fz,
                         user: M,
                         pendingAvatarSrc: (0, b.V7)({
@@ -154,7 +154,7 @@ function M(e) {
                         onThemeColorsChange: h.a,
                         showPremiumIcon: !1,
                         preventDisabled: !0
-                    }), (0, r.jsx)(j.A, {
+                    }), (0, r.jsx)(y.A, {
                         className: w.fz,
                         isTryItOut: !0,
                         showRemoveBannerButton: null != W,

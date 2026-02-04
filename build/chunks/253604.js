@@ -50,7 +50,7 @@ function u(e) {
             })
         }
         return e
-    })({}, o.A.getPendingChanges(), o.A.getTryItOutChanges())), j = (0, a.V7)({
+    })({}, o.A.getPendingChanges(), o.A.getTryItOutChanges())), y = (0, a.V7)({
         userId: u.id,
         image: null != S ? S : g
     });
@@ -61,7 +61,7 @@ function u(e) {
         pendingBio: x,
         pendingBanner: null != (t = null != T ? T : A) ? t : n(636763),
         pendingDisplayNameStyles: null != N ? N : h,
-        pendingAvatar: j,
+        pendingAvatar: y,
         pendingThemeColors: null != C ? C : E,
         pendingAvatarDecoration: void 0 !== I ? I : f,
         pendingProfileEffect: b,

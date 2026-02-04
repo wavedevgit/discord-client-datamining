@@ -28,16 +28,16 @@ var i = n(284009),
     T = n(207803),
     I = n(836602),
     N = n(622543),
-    j = n(950191),
-    y = n(287809),
+    y = n(950191),
+    j = n(287809),
     v = n(927578),
     P = n(985018),
     R = n(264671);
 
 function D() {
     var e, t, n, i, D, L, w, M;
-    let G = (0, s.bG)([y.default], () => {
-            let e = y.default.getCurrentUser();
+    let G = (0, s.bG)([j.default], () => {
+            let e = j.default.getCurrentUser();
             return l()(null != e, "DefaultCustomizationSections: user cannot be undefined"), e
         }),
         U = (0, s.bG)([N.A], () => N.A.getUserProfile(G.id)),
@@ -94,7 +94,7 @@ function D() {
         J = v.Ay.canUsePremiumProfileCustomization(G),
         Q = (0, u.z5)(k, G.avatar),
         $ = (0, u.Ac)(H, null == U ? void 0 : U.banner),
-        ee = (0, j.Ay)(G.id),
+        ee = (0, y.Ay)(G.id),
         et = null == ee ? void 0 : ee.getLegacyUsername(),
         en = (null != (e = null == (w = Z.global_name) ? void 0 : w.length) ? e : 0) > 0 ? Z.global_name : null != (t = null == q ? void 0 : q.nick) ? t : [],
         er = (null != (n = null == (M = Z.bio) ? void 0 : M.length) ? n : 0) > 0 ? Z.bio : null != (i = null == q ? void 0 : q.bio) ? i : [],

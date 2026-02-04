@@ -25,15 +25,15 @@ var r, i, l = n(735438),
     T = n(403362),
     I = n(661191),
     N = n(32603),
-    j = n(355097);
-let y = null,
+    y = n(355097);
+let j = null,
     v = null,
     P = new N.Ay;
 
 function R() {
     let e = C.A.getChannelId(),
         t = C.A.getVoiceChannelId();
-    return y = e, v = t, P.clear()
+    return j = e, v = t, P.clear()
 }
 
 function D(e) {
@@ -85,10 +85,10 @@ function U(e) {
 function k() {
     let e = C.A.getChannelId(),
         t = C.A.getVoiceChannelId(),
-        n = y !== e || v !== t;
-    return !!n && (s()([y, v, e, t]).uniq().forEach(e => {
+        n = j !== e || v !== t;
+    return !!n && (s()([j, v, e, t]).uniq().forEach(e => {
         null != e && P.nonPositionalChannelIdUpdate(e) && (n = !0)
-    }), y = e, v = t, !0)
+    }), j = e, v = t, !0)
 }
 
 function B(e) {
@@ -315,7 +315,7 @@ let W = new Y(o.h, {
         let {
             settings: n
         } = e;
-        if (n.type !== j.oD.PRELOADED_USER_SETTINGS) return !1;
+        if (n.type !== y.oD.PRELOADED_USER_SETTINGS) return !1;
         let r = null == (t = n.proto.guilds) ? void 0 : t.guilds,
             i = !1;
         return null != r && I.default.keys(r).forEach(e => {
@@ -340,6 +340,6 @@ let W = new Y(o.h, {
         return n
     },
     WINDOW_FOCUS: function() {
-        return null != y && P.nonPositionalChannelIdUpdate(y)
+        return null != j && P.nonPositionalChannelIdUpdate(j)
     }
 })

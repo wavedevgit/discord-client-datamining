@@ -28,8 +28,8 @@ var i = n(284009),
     T = n(927578),
     I = n(427262),
     N = n(159001),
-    j = n(833336),
-    y = n(684732),
+    y = n(833336),
+    j = n(684732),
     v = n(168917),
     P = n(746706),
     R = n(788868),
@@ -52,7 +52,7 @@ function w(e) {
         pendingThemeColors: Y,
         errors: W,
         guild: K
-    } = (0, s.cf)([j.A], () => {
+    } = (0, s.cf)([y.A], () => {
         let {
             pendingAvatar: e,
             pendingNickname: t,
@@ -60,7 +60,7 @@ function w(e) {
             pendingPronouns: r,
             pendingBanner: i,
             pendingThemeColors: l
-        } = j.A.getAllPending();
+        } = y.A.getAllPending();
         return {
             pendingAvatar: e,
             pendingNickname: t,
@@ -68,8 +68,8 @@ function w(e) {
             pendingBio: n,
             pendingPronouns: r,
             pendingThemeColors: l,
-            errors: j.A.getErrors(),
-            guild: j.A.getGuild()
+            errors: y.A.getErrors(),
+            guild: y.A.getGuild()
         }
     }), z = (0, O.V7)({
         userId: G.id,
@@ -82,7 +82,7 @@ function w(e) {
         Q = T.Ay.canUsePremiumProfileCustomization(G),
         $ = (0, u.z5)(k, null == q ? void 0 : q.avatar),
         ee = (0, u.Ac)(H, null == J ? void 0 : J.banner),
-        et = (0, y.lS)(Y, null == J ? void 0 : J.themeColors),
+        et = (0, j.lS)(Y, null == J ? void 0 : J.themeColors),
         en = null != (t = null == J ? void 0 : J.bio) ? t : "",
         er = null != (n = null == J ? void 0 : J.pronouns) ? n : "",
         ei = (e, t, n) => {
@@ -101,7 +101,7 @@ function w(e) {
             sectionTitle: D.intl.string(D.t["+T3RI/"]),
             errors: null == W ? void 0 : W.pronouns,
             onPronounsChange: e => {
-                (0, y.d7)(e, er)
+                (0, j.d7)(e, er)
             },
             pendingPronouns: F,
             currentPronouns: er
@@ -175,7 +175,7 @@ function w(e) {
                 pendingAvatarSrc: z,
                 pendingColors: Y,
                 onThemeColorsChange: e => {
-                    (0, y.wx)(e, null == J ? void 0 : J.themeColors)
+                    (0, j.wx)(e, null == J ? void 0 : J.themeColors)
                 },
                 guildId: null == Z ? void 0 : Z.id,
                 showResetThemeButton: et
@@ -191,7 +191,7 @@ function w(e) {
                         })
                     })]
                 }),
-                onBioChange: e => (0, y.Rn)(e, en),
+                onBioChange: e => (0, j.Rn)(e, en),
                 errors: null != (w = null == W ? void 0 : W.bio) ? w : null == X ? void 0 : X.bio,
                 pendingBio: V,
                 currentBio: en,

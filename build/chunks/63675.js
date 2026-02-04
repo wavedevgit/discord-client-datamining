@@ -39,7 +39,7 @@ function b(e) {
         displayProfile: S,
         pendingThemeColors: i,
         isPreview: !0
-    }), N = p.Ay.canUsePremiumProfileCustomization(t), j = null != n ? n : t.getAvatarURL(h, 80), y = (0, c.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), v = (0, d.rh)(j, y, !1);
+    }), N = p.Ay.canUsePremiumProfileCustomization(t), y = null != n ? n : t.getAvatarURL(h, 80), j = (0, c.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), v = (0, d.rh)(y, j, !1);
     if (null == T || null == I) return null;
     let P = e => {
         s(a()(e, null == S ? void 0 : S.themeColors) ? void 0 : e)
