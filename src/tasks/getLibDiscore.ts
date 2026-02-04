@@ -15,12 +15,14 @@ export default async function getLibDiscore(build: Build): Promise<void> {
     build.libdiscore = asset(id + '.module.wasm');
     await writeFile(
         './libdiscore.wasm',
-        await fetch(asset('./build/' + id + '.module.wasm'), {
-            headers: {
-                'user-agent':
-                    'Mozilla/5.0 (Linux; arm_64; Android 10; Nokia 3.1 Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 YaBrowser/20.4.3.90.00 SA/1 Mobile Safari/537.36',
-            },
-        }),
+        await (
+            await fetch(asset('./build/' + id + '.module.wasm'), {
+                headers: {
+                    'user-agent':
+                        'Mozilla/5.0 (Linux; arm_64; Android 10; Nokia 3.1 Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 YaBrowser/20.4.3.90.00 SA/1 Mobile Safari/537.36',
+                },
+            })
+        ).arrayBuffer(),
     );
     const wasmFile = './build/' + id + '.module.wasm';
     const watFile = wasmFile.replace(/\.wasm$/, '.wat');
