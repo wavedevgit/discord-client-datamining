@@ -1,2 +1,14 @@
 /** chunk id: 767709, original params: t,e,r (module,exports,require) **/
-var n=r(739305),o=r(410323),i=r(514575),a=r(412405),u=n.aTypedArray,c=n.getTypedArrayConstructor,s=n.exportTypedArrayMethod,f=o(n.TypedArrayPrototype.sort);s("toSorted",function(t){void 0!==t&&i(t);var e=u(this);return f(a(c(e),e),t)})
+var n = r(739305),
+    o = r(410323),
+    i = r(514575),
+    a = r(412405),
+    u = n.aTypedArray,
+    c = n.getTypedArrayConstructor,
+    s = n.exportTypedArrayMethod,
+    f = o(n.TypedArrayPrototype.sort);
+s("toSorted", function(t) {
+    void 0 !== t && i(t);
+    var e = u(this);
+    return f(a(c(e), e), t)
+})

@@ -1,2 +1,9 @@
 /** chunk id: 988366, original params: t,e (module,exports,require) **/
-var r={}.propertyIsEnumerable,n=Object.getOwnPropertyDescriptor;e.f=n&&!r.call({1:2},1)?function(t){var e=n(this,t);return!!e&&e.enumerable}:r
+var r = {}.propertyIsEnumerable,
+    n = Object.getOwnPropertyDescriptor;
+e.f = n && !r.call({
+    1: 2
+}, 1) ? function(t) {
+    var e = n(this, t);
+    return !!e && e.enumerable
+} : r

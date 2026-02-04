@@ -1,2 +1,9 @@
 /** chunk id: 745730, original params: t,e,r (module,exports,require) **/
-var n=r(860511),o=r(257943),i=Object.getOwnPropertyDescriptor;t.exports=function(t){if(!o)return n[t];var e=i(n,t);return e&&e.value}
+var n = r(860511),
+    o = r(257943),
+    i = Object.getOwnPropertyDescriptor;
+t.exports = function(t) {
+    if (!o) return n[t];
+    var e = i(n, t);
+    return e && e.value
+}

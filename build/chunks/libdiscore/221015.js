@@ -1,2 +1,10 @@
 /** chunk id: 221015, original params: t,e,r (module,exports,require) **/
-var n=r(517737),o=r(514575),i=r(630017),a=n(n.bind);t.exports=function(t,e){return o(t),void 0===e?t:i?a(t,e):function(){return t.apply(e,arguments)}}
+var n = r(517737),
+    o = r(514575),
+    i = r(630017),
+    a = n(n.bind);
+t.exports = function(t, e) {
+    return o(t), void 0 === e ? t : i ? a(t, e) : function() {
+        return t.apply(e, arguments)
+    }
+}

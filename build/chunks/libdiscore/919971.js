@@ -1,2 +1,7 @@
 /** chunk id: 919971, original params: t,e,r (module,exports,require) **/
-var n=r(503628),o=r(860511).RegExp;t.exports=n(function(){var t=o("(?<a>b)","g");return"b"!==t.exec("b").groups.a||"bc"!=="b".replace(t,"$<a>c")})
+var n = r(503628),
+    o = r(860511).RegExp;
+t.exports = n(function() {
+    var t = o("(?<a>b)", "g");
+    return "b" !== t.exec("b").groups.a || "bc" !== "b".replace(t, "$<a>c")
+})

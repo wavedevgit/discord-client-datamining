@@ -1,2 +1,15 @@
 /** chunk id: 458680, original params: t,e,r (module,exports,require) **/
-var n=r(19167),o=r(598349),i=r(321727),a=r(828027);t.exports=Object.setPrototypeOf||("__proto__"in{}?function(){var t,e=!1,r={};try{(t=n(Object.prototype,"__proto__","set"))(r,[]),e=r instanceof Array}catch(t){}return function(r,n){return i(r),a(n),o(r)&&(e?t(r,n):r.__proto__=n),r}}():void 0)
+var n = r(19167),
+    o = r(598349),
+    i = r(321727),
+    a = r(828027);
+t.exports = Object.setPrototypeOf || ("__proto__" in {} ? function() {
+    var t, e = !1,
+        r = {};
+    try {
+        (t = n(Object.prototype, "__proto__", "set"))(r, []), e = r instanceof Array
+    } catch (t) {}
+    return function(r, n) {
+        return i(r), a(n), o(r) && (e ? t(r, n) : r.__proto__ = n), r
+    }
+}() : void 0)

@@ -1,2 +1,39 @@
 /** chunk id: 204357, original params: t (module,exports,require) **/
-var e=Array,r=Math.abs,n=Math.pow,o=Math.floor,i=Math.log,a=Math.LN2;t.exports={pack:function(t,u,c){var s,f,_,l=e(c),p=8*c-u-1,d=(1<<p)-1,g=d>>1,b=23===u?n(2,-24)-n(2,-77):0,y=+(t<0||0===t&&1/t<0),h=0;for((t=r(t))!=t||t===1/0?(f=+(t!=t),s=d):(_=n(2,-(s=o(i(t)/a))),t*_<1&&(s--,_*=2),s+g>=1?t+=b/_:t+=b*n(2,1-g),t*_>=2&&(s++,_/=2),s+g>=d?(f=0,s=d):s+g>=1?(f=(t*_-1)*n(2,u),s+=g):(f=t*n(2,g-1)*n(2,u),s=0));u>=8;)l[h++]=255&f,f/=256,u-=8;for(s=s<<u|f,p+=u;p>0;)l[h++]=255&s,s/=256,p-=8;return l[h-1]|=128*y,l},unpack:function(t,e){var r,o=t.length,i=8*o-e-1,a=(1<<i)-1,u=a>>1,c=i-7,s=o-1,f=t[s--],_=127&f;for(f>>=7;c>0;)_=256*_+t[s--],c-=8;for(r=_&(1<<-c)-1,_>>=-c,c+=e;c>0;)r=256*r+t[s--],c-=8;if(0===_)_=1-u;else{if(_===a)return r?NaN:f?-1/0:1/0;r+=n(2,e),_-=u}return(f?-1:1)*r*n(2,_-e)}}
+var e = Array,
+    r = Math.abs,
+    n = Math.pow,
+    o = Math.floor,
+    i = Math.log,
+    a = Math.LN2;
+t.exports = {
+    pack: function(t, u, c) {
+        var s, f, _, l = e(c),
+            p = 8 * c - u - 1,
+            d = (1 << p) - 1,
+            g = d >> 1,
+            b = 23 === u ? n(2, -24) - n(2, -77) : 0,
+            y = +(t < 0 || 0 === t && 1 / t < 0),
+            h = 0;
+        for ((t = r(t)) != t || t === 1 / 0 ? (f = +(t != t), s = d) : (_ = n(2, -(s = o(i(t) / a))), t * _ < 1 && (s--, _ *= 2), s + g >= 1 ? t += b / _ : t += b * n(2, 1 - g), t * _ >= 2 && (s++, _ /= 2), s + g >= d ? (f = 0, s = d) : s + g >= 1 ? (f = (t * _ - 1) * n(2, u), s += g) : (f = t * n(2, g - 1) * n(2, u), s = 0)); u >= 8;) l[h++] = 255 & f, f /= 256, u -= 8;
+        for (s = s << u | f, p += u; p > 0;) l[h++] = 255 & s, s /= 256, p -= 8;
+        return l[h - 1] |= 128 * y, l
+    },
+    unpack: function(t, e) {
+        var r, o = t.length,
+            i = 8 * o - e - 1,
+            a = (1 << i) - 1,
+            u = a >> 1,
+            c = i - 7,
+            s = o - 1,
+            f = t[s--],
+            _ = 127 & f;
+        for (f >>= 7; c > 0;) _ = 256 * _ + t[s--], c -= 8;
+        for (r = _ & (1 << -c) - 1, _ >>= -c, c += e; c > 0;) r = 256 * r + t[s--], c -= 8;
+        if (0 === _) _ = 1 - u;
+        else {
+            if (_ === a) return r ? NaN : f ? -1 / 0 : 1 / 0;
+            r += n(2, e), _ -= u
+        }
+        return (f ? -1 : 1) * r * n(2, _ - e)
+    }
+}

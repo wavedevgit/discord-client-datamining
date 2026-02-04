@@ -1,2 +1,16 @@
 /** chunk id: 273802, original params: t,e,r (module,exports,require) **/
-var n=r(860511),o=r(503628),i=r(927241),a=r(739305).NATIVE_ARRAY_BUFFER_VIEWS,u=n.ArrayBuffer,c=n.Int8Array;t.exports=!a||!o(function(){c(1)})||!o(function(){new c(-1)})||!i(function(t){new c,new c(null),new c(1.5),new c(t)},!0)||o(function(){return 1!==new c(new u(2),1,void 0).length})
+var n = r(860511),
+    o = r(503628),
+    i = r(927241),
+    a = r(739305).NATIVE_ARRAY_BUFFER_VIEWS,
+    u = n.ArrayBuffer,
+    c = n.Int8Array;
+t.exports = !a || !o(function() {
+    c(1)
+}) || !o(function() {
+    new c(-1)
+}) || !i(function(t) {
+    new c, new c(null), new c(1.5), new c(t)
+}, !0) || o(function() {
+    return 1 !== new c(new u(2), 1, void 0).length
+})

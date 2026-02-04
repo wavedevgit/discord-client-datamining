@@ -1,2 +1,10 @@
 /** chunk id: 485155, original params: t,e,r (module,exports,require) **/
-var n=r(313400),o=r(4940);t.exports=function(t,e,r){return r.get&&n(r.get,e,{getter:!0}),r.set&&n(r.set,e,{setter:!0}),o.f(t,e,r)}
+var n = r(313400),
+    o = r(4940);
+t.exports = function(t, e, r) {
+    return r.get && n(r.get, e, {
+        getter: !0
+    }), r.set && n(r.set, e, {
+        setter: !0
+    }), o.f(t, e, r)
+}

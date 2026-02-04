@@ -1,2 +1,12 @@
 /** chunk id: 949186, original params: t,e,r (module,exports,require) **/
-var n=r(410323),o=Error,i=n("".replace),a=String(new o("zxcasd").stack),u=/\n\s*at [^:]*:[^\n]*/,c=u.test(a);t.exports=function(t,e){if(c&&"string"==typeof t&&!o.prepareStackTrace)for(;e--;)t=i(t,u,"");return t}
+var n = r(410323),
+    o = Error,
+    i = n("".replace),
+    a = String(new o("zxcasd").stack),
+    u = /\n\s*at [^:]*:[^\n]*/,
+    c = u.test(a);
+t.exports = function(t, e) {
+    if (c && "string" == typeof t && !o.prepareStackTrace)
+        for (; e--;) t = i(t, u, "");
+    return t
+}

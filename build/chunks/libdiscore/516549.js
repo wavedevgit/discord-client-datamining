@@ -1,2 +1,9 @@
 /** chunk id: 516549, original params: t,e,r (module,exports,require) **/
-var n=r(257943),o=r(503628);t.exports=n&&o(function(){return 42!==Object.defineProperty(function(){},"prototype",{value:42,writable:!1}).prototype})
+var n = r(257943),
+    o = r(503628);
+t.exports = n && o(function() {
+    return 42 !== Object.defineProperty(function() {}, "prototype", {
+        value: 42,
+        writable: !1
+    }).prototype
+})

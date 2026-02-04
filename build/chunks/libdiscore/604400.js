@@ -1,2 +1,7 @@
 /** chunk id: 604400, original params: t,e,r (module,exports,require) **/
-var n=r(503628),o=r(231977);t.exports=!n(function(){var t=Error("a");return!("stack"in t)||(Object.defineProperty(t,"stack",o(1,7)),7!==t.stack)})
+var n = r(503628),
+    o = r(231977);
+t.exports = !n(function() {
+    var t = Error("a");
+    return !("stack" in t) || (Object.defineProperty(t, "stack", o(1, 7)), 7 !== t.stack)
+})

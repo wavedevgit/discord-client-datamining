@@ -1,2 +1,11 @@
 /** chunk id: 794729, original params: t,e,r (module,exports,require) **/
-var n=r(120394),o=r(370001),i=RangeError;t.exports=function(t){if(void 0===t)return 0;var e=n(t),r=o(e);if(e!==r)throw new i("Wrong length or index");return r}
+var n = r(120394),
+    o = r(370001),
+    i = RangeError;
+t.exports = function(t) {
+    if (void 0 === t) return 0;
+    var e = n(t),
+        r = o(e);
+    if (e !== r) throw new i("Wrong length or index");
+    return r
+}

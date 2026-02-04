@@ -1,2 +1,37 @@
 /** chunk id: 43902, original params: t,e,r (module,exports,require) **/
-var n=r(230606),o=r(210140),i=r(706938),a=r(524152),u=r(458680),c=r(517771),s=r(878765),f=r(486724),_=r(862784),l=r(573467),p=r(770652),d=r(257943),g=r(105712);t.exports=function(t,e,r,b){var y="stackTraceLimit",h=b?2:1,w=t.split("."),v=w[w.length-1],m=n.apply(null,w);if(m){var x=m.prototype;if(!g&&o(x,"cause")&&delete x.cause,!r)return m;var A=n("Error"),S=e(function(t,e){var r=_(b?e:t,void 0),n=b?new m(t):new m;return void 0!==r&&i(n,"message",r),p(n,S,n.stack,2),this&&a(x,this)&&f(n,this,S),arguments.length>h&&l(n,arguments[h]),n});if(S.prototype=x,"Error"!==v?u?u(S,A):c(S,A,{name:!0}):d&&y in m&&(s(S,m,y),s(S,m,"prepareStackTrace")),c(S,m),!g)try{x.name!==v&&i(x,"name",v),x.constructor=S}catch(t){}return S}}
+var n = r(230606),
+    o = r(210140),
+    i = r(706938),
+    a = r(524152),
+    u = r(458680),
+    c = r(517771),
+    s = r(878765),
+    f = r(486724),
+    _ = r(862784),
+    l = r(573467),
+    p = r(770652),
+    d = r(257943),
+    g = r(105712);
+t.exports = function(t, e, r, b) {
+    var y = "stackTraceLimit",
+        h = b ? 2 : 1,
+        w = t.split("."),
+        v = w[w.length - 1],
+        m = n.apply(null, w);
+    if (m) {
+        var x = m.prototype;
+        if (!g && o(x, "cause") && delete x.cause, !r) return m;
+        var A = n("Error"),
+            S = e(function(t, e) {
+                var r = _(b ? e : t, void 0),
+                    n = b ? new m(t) : new m;
+                return void 0 !== r && i(n, "message", r), p(n, S, n.stack, 2), this && a(x, this) && f(n, this, S), arguments.length > h && l(n, arguments[h]), n
+            });
+        if (S.prototype = x, "Error" !== v ? u ? u(S, A) : c(S, A, {
+                name: !0
+            }) : d && y in m && (s(S, m, y), s(S, m, "prepareStackTrace")), c(S, m), !g) try {
+            x.name !== v && i(x, "name", v), x.constructor = S
+        } catch (t) {}
+        return S
+    }
+}

@@ -1,2 +1,12 @@
 /** chunk id: 814113, original params: t,e,r (module,exports,require) **/
-var n=r(257943),o=r(210140),i=Function.prototype,a=n&&Object.getOwnPropertyDescriptor,u=o(i,"name"),c=u&&(!n||n&&a(i,"name").configurable);t.exports={EXISTS:u,PROPER:u&&"something"===(function(){}).name,CONFIGURABLE:c}
+var n = r(257943),
+    o = r(210140),
+    i = Function.prototype,
+    a = n && Object.getOwnPropertyDescriptor,
+    u = o(i, "name"),
+    c = u && (!n || n && a(i, "name").configurable);
+t.exports = {
+    EXISTS: u,
+    PROPER: u && "something" === (function() {}).name,
+    CONFIGURABLE: c
+}
