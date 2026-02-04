@@ -1,0 +1,2 @@
+/** chunk id: 274574, original params: t,e,r (module,exports,require) **/
+var n=r(230606),o=r(485155),i=r(380744),a=r(257943),u=i("species");t.exports=function(t){var e=n(t);a&&e&&!e[u]&&o(e,u,{configurable:!0,get:function(){return this}})}

@@ -1,0 +1,2 @@
+/** chunk id: 192585, original params: t,e,r (module,exports,require) **/
+var n=r(557939),o=r(860511),i=r(736260),a=r(514575),u=r(627),c=r(503628),s=r(257943);n({global:!0,enumerable:!0,dontCallGetSet:!0,forced:c(function(){return s&&1!==Object.getOwnPropertyDescriptor(o,"queueMicrotask").value.length})},{queueMicrotask:function(t){u(arguments.length,1),i(a(t))}})

@@ -1,0 +1,2 @@
+/** chunk id: 557939, original params: t,e,r (module,exports,require) **/
+var n=r(860511),o=r(873078).f,i=r(706938),a=r(693655),u=r(88388),c=r(517771),s=r(521351);t.exports=function(t,e){var r,f,_,l,p,d=t.target,g=t.global,b=t.stat;if(r=g?n:b?n[d]||u(d,{}):n[d]&&n[d].prototype)for(f in e){if(l=e[f],_=t.dontCallGetSet?(p=o(r,f))&&p.value:r[f],!s(g?f:d+(b?".":"#")+f,t.forced)&&void 0!==_){if(typeof l==typeof _)continue;c(l,_)}(t.sham||_&&_.sham)&&i(l,"sham",!0),a(r,f,l,t)}}

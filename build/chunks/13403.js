@@ -49,8 +49,8 @@ function R(e) {
         } = e,
         q = (0, c.Ag)(G),
         {
-            iconSrc: J,
-            name: Q
+            iconSrc: Q,
+            name: J
         } = function(e, t) {
             var n, r, i, l;
             let {
@@ -110,7 +110,7 @@ function R(e) {
         } = (0, p.RD)(G),
         eo = (0, d.z)(es, ea),
         ec = !(0, j.A)(Y, z, G.id),
-        eu = (0, E.n$)(Q, null == (n = z.activity) ? void 0 : n.type, ec),
+        eu = (0, E.n$)(J, null == (n = z.activity) ? void 0 : n.type, ec),
         ed = i.useRef(null),
         ep = (0, l.bG)([v.A], () => v.A.getMessages(B.id)),
         em = () => {
@@ -148,7 +148,7 @@ function R(e) {
     return ec ? (0, r.jsx)(T.A, {
         message: z,
         application: G,
-        applicationName: Q,
+        applicationName: J,
         channel: B,
         header: eu,
         currentUserId: F,
@@ -157,7 +157,7 @@ function R(e) {
         tryWithGdnAction: et,
         staticBannerSrc: X,
         onClickContent: er,
-        iconSrc: J,
+        iconSrc: Q,
         onView: W,
         presenceActivity: Y,
         analyticsLocations: U,
@@ -168,7 +168,7 @@ function R(e) {
     }) : (0, r.jsx)(N.A, {
         message: z,
         application: G,
-        applicationName: Q,
+        applicationName: J,
         channel: B,
         header: eu,
         currentUserId: F,
@@ -177,7 +177,7 @@ function R(e) {
         tryWithGdnAction: et,
         staticBannerSrc: X,
         onClickContent: er,
-        iconSrc: J,
+        iconSrc: Q,
         onView: W,
         presenceActivity: Y,
         currentUserPresenceActivity: H,

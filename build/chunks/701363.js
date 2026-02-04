@@ -23,10 +23,10 @@ var l = n(627968),
     y = n(960076),
     S = n(901517),
     x = n(397244),
-    A = n(714114),
-    h = n(729551),
-    v = n(709066),
-    O = n(262295),
+    h = n(714114),
+    A = n(729551),
+    O = n(709066),
+    v = n(262295),
     E = n(343328),
     j = n(963027),
     T = n(571694),
@@ -209,7 +209,7 @@ let en = Y.Ay.getEnableHardwareAcceleration() ? m.JsQ : m.euF,
                     },
                     className: X.nf
                 }, x), {
-                    children: [(0, l.jsx)(O.A, {
+                    children: [(0, l.jsx)(v.A, {
                         muted: !1,
                         avatar: (0, l.jsx)(r, {
                             size: "refresh_sm",
@@ -231,7 +231,7 @@ function eu(e) {
         user: a,
         activities: _,
         applicationStream: S,
-        voiceChannel: A,
+        voiceChannel: h,
         isTyping: L,
         status: U,
         isMobile: B,
@@ -248,13 +248,13 @@ function eu(e) {
         userId: null == a ? void 0 : a.id,
         size: m._3J.SIZE_32,
         animateOnHover: !(o || es || ec || e_)
-    }), ex = t.isMultiUserDM(), eA = t.isSystemDM(), eh = !ex && !eA && t.type === $.rbe.DM, ev = eh && (null == a ? void 0 : a.primaryGuild) != null, eO = (0, p.bG)([V.Ay], () => V.Ay.isChannelMuted(t.getGuildId(), t.id)), {
+    }), ex = t.isMultiUserDM(), eh = t.isSystemDM(), eA = !ex && !eh && t.type === $.rbe.DM, eO = eA && (null == a ? void 0 : a.primaryGuild) != null, ev = (0, p.bG)([V.Ay], () => V.Ay.isChannelMuted(t.getGuildId(), t.id)), {
         ignored: eE,
         blocked: ej
     } = (0, p.cf)([q.A], () => ({
         ignored: q.A.isIgnored(t.getRecipientId()),
         blocked: q.A.isBlocked(t.getRecipientId())
-    })), eT = eh && eE, eC = eh && ej, eN = (eO || eT || eC) && !(o || es), ew = (0, p.bG)([H.Ay], () => H.Ay.getMentionCount(t.id) > 0), eI = (0, C.Ay)(t), eP = (0, p.bG)([M.A], () => M.A.isFavorite(t.id)), eM = r.useRef(null), eR = null != W && (o || es || e_), eD = () => {
+    })), eT = eA && eE, eC = eA && ej, eN = (ev || eT || eC) && !(o || es), ew = (0, p.bG)([H.Ay], () => H.Ay.getMentionCount(t.id) > 0), eI = (0, C.Ay)(t), eP = (0, p.bG)([M.A], () => M.A.isFavorite(t.id)), eM = r.useRef(null), eR = null != W && (o || es || e_), eD = () => {
         eu(!0)
     }, eL = () => {
         eu(!1)
@@ -329,7 +329,7 @@ function eu(e) {
         effectDisplayType: es || o || e_ ? I.G.ANIMATED : I.G.PLAIN,
         loop: es,
         boldFontOpacity: .9
-    }), eV = ev ? (0, l.jsxs)(l.Fragment, {
+    }), eV = eO ? (0, l.jsxs)(l.Fragment, {
         children: [eW, (0, l.jsx)(D.Ay, {
             primaryGuild: null == a ? void 0 : a.primaryGuild,
             userId: null == a ? void 0 : a.id,
@@ -346,7 +346,7 @@ function eu(e) {
         unread: ew
     }), (0, j.r2)({
         channel: t,
-        muted: eO,
+        muted: ev,
         userStatus: U
     })].filter(Boolean).join(", ");
     return (0, l.jsx)(d.tG, {
@@ -395,7 +395,7 @@ function eu(e) {
                         className: X.nf,
                         "aria-label": eY
                     }, r), {
-                        children: (0, l.jsx)(O.A, {
+                        children: (0, l.jsx)(v.A, {
                             ref: ez,
                             avatar: (() => {
                                 let e = m._3J.SIZE_32;
@@ -442,11 +442,11 @@ function eu(e) {
                                 activities: _,
                                 status: U,
                                 applicationStream: S,
-                                voiceChannel: A
-                            }) ? (0, l.jsx)(h.A, {
+                                voiceChannel: h
+                            }) ? (0, l.jsx)(A.A, {
                                 user: a,
                                 activities: _,
-                                voiceChannel: A,
+                                voiceChannel: h,
                                 applicationStream: S,
                                 animateEmoji: es || ec || e_,
                                 textClassName: X.XD,
@@ -458,9 +458,9 @@ function eu(e) {
                                 }),
                                 children: eV
                             }),
-                            decorators: t.isSystemDM() ? (0, l.jsx)(v.A, {
+                            decorators: t.isSystemDM() ? (0, l.jsx)(O.A, {
                                 className: X.G$,
-                                type: v.A.Types.SYSTEM_DM,
+                                type: O.A.Types.SYSTEM_DM,
                                 verified: !0
                             }) : null,
                             withDisplayNameStyles: eK
@@ -507,7 +507,7 @@ let ec = 21552 == n.j ? e => {
         location: "PrivateChannel"
     }), {
         voiceChannel: u
-    } = (0, A.A)({
+    } = (0, h.A)({
         userId: i
     }), c = (0, L.r)({
         user: o

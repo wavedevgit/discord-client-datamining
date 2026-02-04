@@ -138,18 +138,18 @@ function T(e, t) {
         showResults: K
     } = P, Y = (0, b.aw)(H), q = E.intl.formatToPlainString(E.t.XRkuof, {
         count: Y
-    }), J = Math.max(...T.map(e => {
+    }), Q = Math.max(...T.map(e => {
         var t, n;
         let r = C(H, "".concat(e.answer_id));
         return null != (t = null == r || null == (n = r.count_details) ? void 0 : n.vote) ? t : 0
-    })), Q = T.map(e => {
+    })), J = T.map(e => {
         var t, n, l;
         let o, u = "".concat(e.answer_id),
             d = C(H, u),
             p = null != (t = null == d || null == (l = d.count_details) ? void 0 : l.vote) ? t : 0,
             m = 0 === Y ? 0 : p / Y,
             _ = V.has(u),
-            h = p >= J && 0 !== p,
+            h = p >= Q && 0 !== p,
             b = U && null != (n = null == d ? void 0 : d.me_vote) && n,
             y = (o = {
                 didSelfVote: b,
@@ -309,7 +309,7 @@ function T(e, t) {
     return {
         question: h.question,
         promptLabel: en,
-        answers: Q,
+        answers: J,
         answersInteraction: (0, r.YW)({
             tapShouldOpenVotersModal: W,
             canTapAnswers: w,

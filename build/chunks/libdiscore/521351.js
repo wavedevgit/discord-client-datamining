@@ -1,0 +1,2 @@
+/** chunk id: 521351, original params: t,e,r (module,exports,require) **/
+var n=r(503628),o=r(339626),i=/#|\.prototype\./,a=function(t,e){var r=c[u(t)];return r===f||r!==s&&(o(e)?n(e):!!e)},u=a.normalize=function(t){return String(t).replace(i,".").toLowerCase()},c=a.data={},s=a.NATIVE="N",f=a.POLYFILL="P";t.exports=a

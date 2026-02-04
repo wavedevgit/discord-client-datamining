@@ -50,11 +50,11 @@ function O(e) {
         {
             analyticsLocations: Y
         } = (0, d.Ay)(u.A.INVITE_EMBED),
-        [q, J] = i.useState(!1),
-        Q = i.useCallback(() => J(!1), []),
+        [q, Q] = i.useState(!1),
+        J = i.useCallback(() => Q(!1), []),
         X = i.useRef(null),
         Z = i.useCallback(() => {
-            J(!0), (0, c.Pq)(K, "show profile", Y)
+            Q(!0), (0, c.Pq)(K, "show profile", Y)
         }, [K, Y]),
         $ = i.useCallback(() => {
             let e = "noop";
@@ -83,7 +83,7 @@ function O(e) {
             guildId: N.id,
             name: N.name,
             shouldShow: q,
-            onRequestClose: Q,
+            onRequestClose: J,
             targetElementRef: X,
             children: () => (0, r.jsx)(f.A.GuildName, {
                 guild: N,

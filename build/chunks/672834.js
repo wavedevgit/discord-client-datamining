@@ -48,8 +48,8 @@ var r = n(627968),
     K = n(562153),
     Y = n(728458),
     q = n(661191),
-    J = n(465364),
-    Q = n(877923),
+    Q = n(465364),
+    J = n(877923),
     X = n(291812),
     Z = n(898401),
     $ = n(447215),
@@ -699,7 +699,7 @@ let eD = Object.freeze({
                 message: t,
                 channel: n
             } = e, i = t.giftingPrompt, a = (0, l.bG)([V.default], () => V.default.getUser(null == i ? void 0 : i.recipientUserId));
-            return null == i || null == a ? null : (0, r.jsx)(Q.A, {
+            return null == i || null == a ? null : (0, r.jsx)(J.A, {
                 giftIntentType: i.giftIntentType,
                 recipientUser: a,
                 channel: n
@@ -797,7 +797,7 @@ let eD = Object.freeze({
         }
         return (0, r.jsx)(X.Ay, {
             message: t,
-            content: (0, J.Ay)(t).content,
+            content: (0, Q.Ay)(t).content,
             compact: null != i && i,
             children: (0, r.jsx)(s, {
                 message: t,

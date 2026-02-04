@@ -1,6 +1,6 @@
 /** chunk id: 475073, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => Q
+    A: () => J
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -414,8 +414,8 @@ class q extends i.Component {
         })
     }
 }
-let J = (0, f.A)((0, m.A)(q)),
-    Q = function(e) {
+let Q = (0, f.A)((0, m.A)(q)),
+    J = function(e) {
         let {
             code: t,
             author: n
@@ -426,7 +426,7 @@ let J = (0, f.A)((0, m.A)(q)),
             giftCode: S.A.get(t),
             resolved: S.A.getIsResolved(t)
         })), a = (0, c.bG)([N.default], () => null != i && null != i.userId ? N.default.getUser(i.userId) : null), s = (0, c.bG)([P.A], () => null != i ? P.A.get(i.skuId) : null), o = (0, c.bG)([T.A], () => null != s && (null == i ? void 0 : i.entitlementBranches) != null ? D.YI(i.entitlementBranches, s, T.A) : null), u = (0, _.h)(null == s ? void 0 : s.applicationId), d = (0, M.zz)(null == i ? void 0 : i.subscriptionPlanId), p = (0, c.bG)([I.default], () => null != i ? I.default.getId() === i.userId : I.default.getId() === n.id);
-        return (0, r.jsx)(J, W(z({}, e), {
+        return (0, r.jsx)(Q, W(z({}, e), {
             skuApplication: u,
             giftCode: i,
             resolved: l,

@@ -49,8 +49,8 @@ var r, i = n(627968),
     K = n(46054),
     Y = n(731068),
     q = n(619517),
-    J = n(207133),
-    Q = n(480191),
+    Q = n(207133),
+    J = n(480191),
     X = n(269849),
     Z = n(704413),
     $ = n(695206),
@@ -103,9 +103,9 @@ var r, i = n(627968),
     eK = n(581619),
     eY = n(652215),
     eq = n(985018),
-    eJ = n(867525);
+    eQ = n(867525);
 
-function eQ(e, t, n) {
+function eJ(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -121,7 +121,7 @@ function eX(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            eQ(e, t, n[t])
+            eJ(e, t, n[t])
         })
     }
     return e
@@ -156,7 +156,7 @@ let e$ = [eY.Auw.GIFV],
             src: n,
             url: t,
             format: d.TL.IMAGE,
-            className: eJ.jj
+            className: eQ.jj
         }) : null
     };
 class e7 extends(r = l.Component) {
@@ -212,7 +212,7 @@ class e7 extends(r = l.Component) {
                 return null
         }
         return (0, i.jsx)("div", {
-            className: eJ.od,
+            className: eQ.od,
             children: r
         })
     }
@@ -303,7 +303,7 @@ class e7 extends(r = l.Component) {
             giftInfo: s
         } = e, o = e_.default.getCurrentUser();
         return null != o && t.length > 0 ? t.map(e => (0, i.jsx)("div", {
-            className: eJ.zv,
+            className: eQ.zv,
             children: (0, i.jsx)(g.A, {
                 code: e,
                 author: n,
@@ -506,7 +506,7 @@ class e7 extends(r = l.Component) {
     }
     renderThreadRoleMentionWarning(e) {
         if (e.hasFlag(eY.pr7.FAILED_TO_MENTION_SOME_ROLES_IN_THREAD) && this.props.isCurrentUser && !(Date.now() - ev.default.extractTimestamp(e.id) >= e0)) return (0, i.jsx)("div", {
-            className: eJ.xM,
+            className: eQ.xM,
             children: eq.intl.string(eq.t.ma8Rs0)
         })
     }
@@ -531,7 +531,7 @@ class e7 extends(r = l.Component) {
             children: [(0, i.jsx)(m.Text, {
                 variant: "text-md/normal",
                 color: "text-default",
-                className: eJ.IX,
+                className: eQ.IX,
                 children: eq.intl.string(eq.t["vXZ+Fo"])
             }), (0, i.jsx)(m.Text, {
                 variant: "text-md/normal",
@@ -568,7 +568,7 @@ class e7 extends(r = l.Component) {
             children: (0, i.jsx)(m.Text, {
                 variant: "text-md/normal",
                 color: "text-default",
-                className: eJ.IX,
+                className: eQ.IX,
                 children: eq.intl.string(eq.t.faHmO3)
             })
         })
@@ -593,7 +593,7 @@ class e7 extends(r = l.Component) {
         })
     }
     renderMediaPostEmbeds(e) {
-        return e.embeds.flatMap(t => t.type !== eY.Auw.POST_PREVIEW || null == t.url ? [] : (0, i.jsx)(Q.A, {
+        return e.embeds.flatMap(t => t.type !== eY.Auw.POST_PREVIEW || null == t.url ? [] : (0, i.jsx)(J.A, {
             embedUrl: t.url,
             message: e,
             channel: this.props.channel
@@ -618,7 +618,7 @@ class e7 extends(r = l.Component) {
         if (null != t) return (0, i.jsx)($.A, {
             message: e,
             poll: t,
-            className: eJ.PM
+            className: eQ.PM
         })
     }
     renderShareClientTheme(e) {
@@ -655,16 +655,16 @@ class e7 extends(r = l.Component) {
         } = this.state, o = this.renderEditedTag(t, r), c = this.renderCodedLinks(t), u = this.renderGiftCodes(t), d = this.renderAttachments(t), p = this.renderCtaButton(), m = this.renderEmbeds(t), f = this.renderActivityInvite(t), g = this.renderReactions(t), _ = this.renderPublishBump(t), h = this.renderEphemeralAccessories(t), b = this.renderStickersAccessories(t), y = this.renderThreadAccessories(t), A = this.renderComponentAccessories(t), v = this.renderThreadRoleMentionWarning(t), O = this.renderEmbeddedApplicationInstanceEmbed(t), x = this.renderInteractionPremiumUpsell(t), E = this.renderMediaPostEmbeds(t), j = this.renderSafetyPolicyNotice(t), C = this.renderSafetySystemNotification(t), I = this.renderMediaObscureNotice(t), S = this.renderPoll(t, n), T = this.renderForwardedMessage(t), N = this.renderReportedMessage(t), P = this.renderShareClientTheme(t);
         return null == c && null == d && null == m && null == f && null == g && null == u && null == _ && null == h && null == b && null == y && null == A && null == O && null == v && null == E && null == j && null != x && null == S && null == T && null == N && null == P ? null : (0, i.jsxs)("div", {
             id: (0, eM.XL)(t),
-            className: s()(e, eJ.kL),
+            className: s()(e, eQ.kL),
             children: [N, T, v, S, P, c, u, E, d, p, m, I, f, b, A, O, x, o, g, _, h, l && this.renderSuppressConfirmModal(), a && this.renderRemoveAttachmentConfirmModal(), y, j, C]
         })
     }
     constructor(...e) {
-        super(...e), eQ(this, "state", {
+        super(...e), eJ(this, "state", {
             showSuppressModal: !1,
             showRemoveAttachmentModal: !1,
             attachmentToDelete: null
-        }), eQ(this, "getAcceptInviteContext", e => {
+        }), eJ(this, "getAcceptInviteContext", e => {
             let {
                 channel: t,
                 message: n
@@ -676,7 +676,7 @@ class e7 extends(r = l.Component) {
                 location_channel_type: t.type,
                 location_message_id: n.id
             }
-        }), eQ(this, "renderEmbed", (e, t, n, r) => {
+        }), eJ(this, "renderEmbed", (e, t, n, r) => {
             var l, a, s, o;
             let {
                 gifAutoPlay: c,
@@ -704,16 +704,16 @@ class e7 extends(r = l.Component) {
                     shouldAgeVerify: null != f && f
                 }, n))
             }, e.id)
-        }), eQ(this, "renderEmbedTitle", (e, t) => e.type !== eY.Auw.RICH ? t : (null != e.url && "" !== e.url ? K.A.parseEmbedTitleWithoutLinks : K.A.parseEmbedTitle)(t, !0, {
+        }), eJ(this, "renderEmbedTitle", (e, t) => e.type !== eY.Auw.RICH ? t : (null != e.url && "" !== e.url ? K.A.parseEmbedTitleWithoutLinks : K.A.parseEmbedTitle)(t, !0, {
             channelId: this.props.channel.id
-        })), eQ(this, "renderEmbedDescription", (e, t, n) => e.type === eY.Auw.RICH ? K.A.parse(t, !0, {
+        })), eJ(this, "renderEmbedDescription", (e, t, n) => e.type === eY.Auw.RICH ? K.A.parse(t, !0, {
             channelId: this.props.channel.id,
             allowLinks: !0,
             allowEmojiLinks: !0,
             allowList: this.props.showListsAndHeaders,
             allowHeading: !n && this.props.showListsAndHeaders,
             previewLinkTarget: this.props.showMaskedLinks
-        }) : t), eQ(this, "handleEmbedSuppressed", e => {
+        }) : t), eJ(this, "handleEmbedSuppressed", e => {
             let {
                 channel: t,
                 message: n
@@ -721,7 +721,7 @@ class e7 extends(r = l.Component) {
             e.shiftKey ? f.A.suppressEmbeds(t.id, n.id) : this.setState({
                 showSuppressModal: !0
             })
-        }), eQ(this, "handleRemoveAttachment", e => {
+        }), eJ(this, "handleRemoveAttachment", e => {
             let t = e.originalItem;
             this.setState({
                 showRemoveAttachmentModal: !0,
@@ -757,7 +757,7 @@ function e9(e) {
         communicationDisabled: v,
         isActiveChannelOrUnarchivableThread: O,
         isAutomodQuarantined: A
-    }), T = (0, W.S)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), P = (0, J.A)(null == n ? void 0 : n.id), w = (0, Z.A)(r), R = (0, N.P)(r), D = (0, eC.z)(n), L = (0, ex._f)(r.id, r.channel_id), U = (0, S._R)();
+    }), T = (0, W.S)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), P = (0, Q.A)(null == n ? void 0 : n.id), w = (0, Z.A)(r), R = (0, N.P)(r), D = (0, eC.z)(n), L = (0, ex._f)(r.id, r.channel_id), U = (0, S._R)();
     return (0, i.jsx)(e7, eZ(eX(eZ(eX({
         canSuppressEmbeds: x,
         canDeleteAttachments: E
@@ -783,7 +783,7 @@ function e9(e) {
         shouldAgeVerify: U
     }))
 }
-eQ(e7, "defaultProps", {
+eJ(e7, "defaultProps", {
     renderEmbeds: !0,
     compact: !1
 });
@@ -813,7 +813,7 @@ let e6 = e => {
             }(e, t), Object.getOwnPropertySymbols)
             for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
         return l
-    }(e, ["message", "channel", "disableReactionReads", "renderThreadAccessory", "disableReactionCreates", "disableReactionUpdates", "disableComponentInteractivity"]), d = eu.X6.useSetting(), p = eu.hD.useSetting(), m = eu.rs.useSetting(), f = eu.kt.useSetting(), g = (0, W.S)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), _ = (0, J.A)(null == r ? void 0 : r.id), h = (0, N.P)(n), b = (0, ex._f)(n.id, n.channel_id), y = (0, Z.A)(n);
+    }(e, ["message", "channel", "disableReactionReads", "renderThreadAccessory", "disableReactionCreates", "disableReactionUpdates", "disableComponentInteractivity"]), d = eu.X6.useSetting(), p = eu.hD.useSetting(), m = eu.rs.useSetting(), f = eu.kt.useSetting(), g = (0, W.S)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), _ = (0, Q.A)(null == r ? void 0 : r.id), h = (0, N.P)(n), b = (0, ex._f)(n.id, n.channel_id), y = (0, Z.A)(n);
     return (0, i.jsx)(e7, eZ(eX({}, u), {
         message: n,
         channel: r,

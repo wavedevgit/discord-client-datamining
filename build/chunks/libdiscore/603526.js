@@ -1,0 +1,2 @@
+/** chunk id: 603526, original params: t,e,r (module,exports,require) **/
+var n=r(503628),o=r(860511).RegExp,i=n(function(){var t=o("a","y");return t.lastIndex=2,null!==t.exec("abcd")}),a=i||n(function(){return!o("a","y").sticky});t.exports={BROKEN_CARET:i||n(function(){var t=o("^r","gy");return t.lastIndex=2,null!==t.exec("str")}),MISSED_STICKY:a,UNSUPPORTED_Y:i}

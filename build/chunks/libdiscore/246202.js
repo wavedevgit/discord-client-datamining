@@ -1,0 +1,2 @@
+/** chunk id: 246202, original params: t (module,exports,require) **/
+var e=function(){this.head=null,this.tail=null};e.prototype={add:function(t){var e={item:t,next:null},r=this.tail;r?r.next=e:this.head=e,this.tail=e},get:function(){var t=this.head;if(t)return null===(this.head=t.next)&&(this.tail=null),t.item}},t.exports=e

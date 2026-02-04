@@ -75,7 +75,7 @@ function k(e) {
         channel: B
     } = e, F = i.useRef(null), H = i.useRef(null), V = (0, T.D)(U, G), {
         setPopout: z
-    } = (0, y.A)(G.id, P.Fd), W = (0, b.VL)(G, B, z, !0), K = O.kt.useSetting(), Y = (0, I.j)(), [q, J] = i.useState(!1), [Q, X] = i.useState((null == V ? void 0 : V.coverImage) == null), Z = (0, o.bG)([x.Ay, E.default], () => {
+    } = (0, y.A)(G.id, P.Fd), W = (0, b.VL)(G, B, z, !0), K = O.kt.useSetting(), Y = (0, I.j)(), [q, Q] = i.useState(!1), [J, X] = i.useState((null == V ? void 0 : V.coverImage) == null), Z = (0, o.bG)([x.Ay, E.default], () => {
         var e;
         return x.Ay.isMember(null == V ? void 0 : V.guildId, null == (e = E.default.getCurrentUser()) ? void 0 : e.id)
     }, [V]), $ = (0, o.bG)([x.Ay], () => (null == V ? void 0 : V.authorId) != null ? x.Ay.getMember(V.guildId, V.authorId) : null), ee = (0, m.A)((null == $ ? void 0 : $.avatarDecoration) != null ? null == $ ? void 0 : $.avatarDecoration : null == V || null == (l = V.user) ? void 0 : l.avatarDecoration), [et, en, er] = i.useMemo(() => {
@@ -84,10 +84,10 @@ function k(e) {
     }, [$]), ei = (0, A.gn)(null == $ ? void 0 : $.guildId, null != (t = null == V ? void 0 : V.authorId) ? t : void 0, en), {
         reducedMotion: el
     } = i.useContext(u.CZY), [ea, es] = i.useState(!1), eo = i.useCallback(() => {
-        J(!0)
-    }, [J]), ec = i.useCallback(() => {
-        J(!1)
-    }, [J]), eu = i.useCallback(async () => {
+        Q(!0)
+    }, [Q]), ec = i.useCallback(() => {
+        Q(!1)
+    }, [Q]), eu = i.useCallback(async () => {
         null != V && ((0, p.zV)(N.HAw.MEDIA_POST_PREVIEW_EMBED_CLICKED, {
             media_post_id: V.threadId,
             channel_id: B.id,
@@ -115,7 +115,7 @@ function k(e) {
             className: R.iT,
             onMouseEnter: eo,
             onMouseLeave: ec,
-            children: [!Q && (!0 === V.shouldShowBlurredThumbnailImage ? (0, r.jsx)("img", {
+            children: [!J && (!0 === V.shouldShowBlurredThumbnailImage ? (0, r.jsx)("img", {
                 src: D,
                 alt: w.intl.string(w.t.rIbh8H),
                 className: a()(R.xn, {

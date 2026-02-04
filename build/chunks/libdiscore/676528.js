@@ -1,0 +1,2 @@
+/** chunk id: 676528, original params: t,e,r (module,exports,require) **/
+var n=r(860511),o=r(65978),i=r(647055),a=function(t){return o.slice(0,t.length)===t};t.exports=a("Bun/")?"BUN":a("Cloudflare-Workers")?"CLOUDFLARE":a("Deno/")?"DENO":a("Node.js/")?"NODE":n.Bun&&"string"==typeof Bun.version?"BUN":n.Deno&&"object"==typeof Deno.version?"DENO":"process"===i(n.process)?"NODE":n.window&&n.document?"BROWSER":"REST"

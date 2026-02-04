@@ -78,9 +78,9 @@ let f = r.forwardRef(function(e, t) {
             onMouseLeave: y,
             "aria-label": S,
             "aria-checked": x,
-            role: A,
-            plated: h
-        } = e, v = "function" == typeof c ? (0, l.jsx)(c, {
+            role: h,
+            plated: A
+        } = e, O = "function" == typeof c ? (0, l.jsx)(c, {
             width: 20,
             height: 20,
             size: "custom",
@@ -100,8 +100,8 @@ let f = r.forwardRef(function(e, t) {
                 [_.Xr]: f,
                 [_.r9]: s,
                 [_.Sn]: !s,
-                [_.ZQ]: h,
-                [_.OH]: f && h
+                [_.ZQ]: A,
+                [_.OH]: f && A
             }),
             onClick: e => {
                 null != o && o(e)
@@ -110,7 +110,7 @@ let f = r.forwardRef(function(e, t) {
             onMouseEnter: g,
             onMouseLeave: y,
             onContextMenu: r,
-            role: A,
+            role: h,
             "aria-checked": x,
             focusProps: {
                 offset: {
@@ -124,8 +124,8 @@ let f = r.forwardRef(function(e, t) {
                 width: 20,
                 height: 20,
                 mask: d.Ay.Masks.PANEL_BUTTON,
-                children: v
-            }) : v, n]
+                children: O
+            }) : O, n]
         })
     }),
     g = r.forwardRef(function(e, t) {

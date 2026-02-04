@@ -111,7 +111,7 @@ function D(e) {
         q = i.useCallback(() => {
             (0, c.pX)(T.BVt.QUEST_PREVIEW_TOOL_2(e.quest.id))
         }, [e.quest.id]),
-        J = e.shouldShowDisclosure && e.quest.id !== S.Fw;
+        Q = e.shouldShowDisclosure && e.quest.id !== S.Fw;
     return (0, r.jsxs)(a.W1t, {
         "data-menu-migrated": !0,
         variant: "fixed",
@@ -162,7 +162,7 @@ function D(e) {
                     type: "icon",
                     icon: a.r2v
                 }
-            }), J && (0, r.jsx)(a.Drp, {
+            }), Q && (0, r.jsx)(a.Drp, {
                 id: "display-disclosure",
                 label: P.intl.string(P.t.GcsZKJ),
                 action: () => {

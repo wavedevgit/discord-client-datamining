@@ -1,0 +1,2 @@
+/** chunk id: 486724, original params: t,e,r (module,exports,require) **/
+var n=r(339626),o=r(598349),i=r(458680);t.exports=function(t,e,r){var a,u;return i&&n(a=e.constructor)&&a!==r&&o(u=a.prototype)&&u!==r.prototype&&i(t,u),t}

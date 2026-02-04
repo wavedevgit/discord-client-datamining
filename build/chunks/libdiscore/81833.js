@@ -1,0 +1,2 @@
+/** chunk id: 81833, original params: t,e,r (module,exports,require) **/
+var n=r(106769),o=r(523317),i=Math.abs;t.exports=function(t,e,r,a){var u=+t,c=i(u),s=n(u);if(c<a)return s*o(c/a/e)*a*e;var f=(1+e/2220446049250313e-31)*c,_=f-(f-c);return _>r||_!=_?1/0*s:s*_}
