@@ -4,8 +4,9 @@ import com.discord.misc.utilities.chat_view_types.ChatViewRecyclerTypes;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.TreeMap;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-abstract class m5 {
+public abstract class m5 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static final l5 a(InputStream inputStream, o5 o5Var) {
         try {
