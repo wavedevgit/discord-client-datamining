@@ -1,7 +1,6 @@
 package com.google.android.gms.internal.fido;
-/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class x extends j0 {
+final class x extends j0 {
 
     /* renamed from: d  reason: collision with root package name */
     static final x f14146d = new x();

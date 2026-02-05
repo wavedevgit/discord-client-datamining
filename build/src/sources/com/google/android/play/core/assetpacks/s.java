@@ -17,25 +17,19 @@ final class s extends o {
 
     @Override // com.google.android.play.core.assetpacks.o, wh.d0
     public final void g(Bundle bundle) {
-        wh.v0 v0Var;
-        wh.k0 k0Var;
-        v0Var = this.f15991e.f16087e;
-        v0Var.u(this.f15936c);
+        this.f15991e.f16087e.u(this.f15936c);
         int i10 = bundle.getInt("error_code");
-        k0Var = x.f16081g;
-        k0Var.b("onError(%d)", Integer.valueOf(i10));
+        x.f16081g.b("onError(%d)", Integer.valueOf(i10));
         this.f15936c.d(new a(i10));
     }
 
     @Override // com.google.android.play.core.assetpacks.o, wh.d0
     public final void j0(Bundle bundle, Bundle bundle2) {
         AtomicBoolean atomicBoolean;
-        wh.k0 k0Var;
         super.j0(bundle, bundle2);
         atomicBoolean = this.f15991e.f16088f;
         if (!atomicBoolean.compareAndSet(true, false)) {
-            k0Var = x.f16081g;
-            k0Var.e("Expected keepingAlive to be true, but was false.", new Object[0]);
+            x.f16081g.e("Expected keepingAlive to be true, but was false.", new Object[0]);
         }
         if (bundle.getBoolean("keep_alive")) {
             this.f15991e.f();
