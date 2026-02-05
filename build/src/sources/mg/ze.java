@@ -2,25 +2,25 @@ package mg;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class ze {
 
-    /* renamed from: a  reason: collision with root package name */
+    /* renamed from: a */
     private aj f38490a;
 
-    /* renamed from: b  reason: collision with root package name */
+    /* renamed from: b */
     private ye f38491b;
 
-    /* renamed from: c  reason: collision with root package name */
+    /* renamed from: c */
     private we f38492c;
 
-    /* renamed from: d  reason: collision with root package name */
+    /* renamed from: d */
     private of f38493d;
 
-    /* renamed from: e  reason: collision with root package name */
+    /* renamed from: e */
     private rf f38494e;
 
-    /* renamed from: f  reason: collision with root package name */
+    /* renamed from: f */
     private g3 f38495f;
 
-    /* renamed from: g  reason: collision with root package name */
+    /* renamed from: g */
     private pi f38496g;
 
     public final ze d(g3 g3Var) {
