@@ -28,11 +28,16 @@ final class u extends o {
 
     @Override // com.google.android.play.core.assetpacks.o, wh.d0
     public final void g(Bundle bundle) {
-        this.f16041h.f16086d.u(this.f15936c);
-        x.f16081g.b("onError(%d), retrying notifyModuleCompleted...", Integer.valueOf(bundle.getInt("error_code")));
-        int i10 = this.f16040g;
-        if (i10 > 0) {
-            this.f16041h.k(this.f16038e, this.f16039f, i10 - 1);
+        wh.v0 v0Var;
+        wh.k0 k0Var;
+        v0Var = this.f16041h.f16086d;
+        v0Var.u(this.f15936c);
+        int i10 = bundle.getInt("error_code");
+        k0Var = x.f16081g;
+        k0Var.b("onError(%d), retrying notifyModuleCompleted...", Integer.valueOf(i10));
+        int i11 = this.f16040g;
+        if (i11 > 0) {
+            this.f16041h.k(this.f16038e, this.f16039f, i11 - 1);
         }
     }
 }
